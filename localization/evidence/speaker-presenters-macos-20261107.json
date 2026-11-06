@@ -1,0 +1,353 @@
+{
+  "schema": 1,
+  "platform": "macos",
+  "buildVersion": "9/12/2026_a93aa21a",
+  "assets": {
+    "level0": "4cabf35993c6726ab29e5cb24a1ce74a0fdf3d8061b0de3437415e56bcfa72f7",
+    "level1": "6af2815f16cba00e935fe110023ec91421c7d4107c5d8d31f55b70039b17d618",
+    "level2": "8a65d8f397e103abf65a6c9daba7668a4efe8c70fbe36f6b6eed676aaa99d808",
+    "level3": "32805c0339b0b67b4cc1dd27f8e150419e3f7374132d630921700281a14b833e",
+    "level4": "1aeac3e3368bbf5d3198dd6aee5f0969677a13b162158bb592655fdef03ef030",
+    "level5": "3241f65111d9639a3e1434e4d5e7dd9aa946eac554675dc4627093638e0341c8",
+    "level6": "975954bc0796ab7b60f06f075b3b0ad8ce367d07cede726d53847b61fbe112f6",
+    "sharedassets0.assets": "40713b00ce12582eebc427c0104e59becf438eb15803725b2248be3471a96aeb",
+    "sharedassets1.assets": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+    "sharedassets2.assets": "82300da2892d572a7dac2602489874c130e93cd093112450dc1c03948c15872e",
+    "sharedassets3.assets": "22f6f6316b9ff73a5ff3042b82ada4af70fc80ce24a02f26d69b613f0a18d158",
+    "sharedassets4.assets": "00f71e4e71abefa25cd13cb9d99f5678e7b257ece9910c7face27a56d37ad8f7",
+    "sharedassets5.assets": "ffdfdeeeb4f793e6cc2425810f182a322e8bf41da7dfac32dddda1aab1bbd9a1",
+    "sharedassets6.assets": "38f5e76e01b5f5bae985b7c7b45477ff1888ec7a62265b2393911e59dcceaffc",
+    "resources.assets": "fd20278f865e51fba3c1a922777031afb2a5d2d00fc10ee682296e32cc071974",
+    "globalgamemanagers.assets": "391640e8e7df097a0d377c7a16552975d4821688841ea3460ec99587f4061d9e",
+    "globalgamemanagers": "2f3813fddc22b6c6285099f173b922d782e2f06d659482d9373849e3bbb9794b"
+  },
+  "presenters": [
+    {
+      "asset": "level1",
+      "objectId": 4011,
+      "class": "LinePresenter",
+      "rawSha256": "d2fcec6961ddbe917b3916898c4a010173e045409678b830c73b92e4e6c95455",
+      "fields": {
+        "lineText": {
+          "m_FileID": 0,
+          "m_PathID": 3899
+        },
+        "showCharacterNameInLine": 1,
+        "characterNameText": {
+          "m_FileID": 0,
+          "m_PathID": 3900
+        },
+        "characterNameContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "nonNullTargets": {
+        "lineText": {
+          "objectId": 3899,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "ace876d592a71bf984742bfee7d17cfe2f4adcd21a5f4957afbdf5012c48a8d4"
+        },
+        "characterNameText": {
+          "objectId": 3900,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "b59dcb3cbe61334c9946db3c9f1e7d492900397c09e7488dfb945a772cb9b89c"
+        }
+      }
+    },
+    {
+      "asset": "level1",
+      "objectId": 4284,
+      "class": "OptionsPresenter",
+      "rawSha256": "e773fe6b87330127d2284eb9763e31654e64565ea8f09701908770640be44f91",
+      "fields": {
+        "showsLastLine": 0,
+        "lastLineText": {
+          "m_FileID": 0,
+          "m_PathID": 3906
+        },
+        "lastLineContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "lastLineCharacterNameText": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "lastLineCharacterNameContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "nonNullTargets": {
+        "lastLineText": {
+          "objectId": 3906,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "2bd6e99cd9e7b118f8b6ee0d26394457596052fe73f8154198334dca701491b2"
+        }
+      }
+    },
+    {
+      "asset": "level3",
+      "objectId": 1562,
+      "class": "LinePresenter",
+      "rawSha256": "eb07c511f49879826f96caa6e3cc2df430b4fad79b1b0148c11ac2a815422026",
+      "fields": {
+        "lineText": {
+          "m_FileID": 0,
+          "m_PathID": 1495
+        },
+        "showCharacterNameInLine": 1,
+        "characterNameText": {
+          "m_FileID": 0,
+          "m_PathID": 1494
+        },
+        "characterNameContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "nonNullTargets": {
+        "lineText": {
+          "objectId": 1495,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "a81721d2a27d822435c442289dc96992c91415b4fbf3b45b785131cdfbf7b053"
+        },
+        "characterNameText": {
+          "objectId": 1494,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "852cddfea0f3e91a22b37fe294883cc4ad46c368d6b0d0da160d3ab0b143f1bf"
+        }
+      }
+    },
+    {
+      "asset": "level3",
+      "objectId": 1651,
+      "class": "OptionsPresenter",
+      "rawSha256": "49c1b7c316f337a585fa9a3f18aa864ea9f8d01fbaed9a5d60f373c8f944dc67",
+      "fields": {
+        "showsLastLine": 0,
+        "lastLineText": {
+          "m_FileID": 0,
+          "m_PathID": 1497
+        },
+        "lastLineContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "lastLineCharacterNameText": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "lastLineCharacterNameContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "nonNullTargets": {
+        "lastLineText": {
+          "objectId": 1497,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "99909ebddb58dae2130fc5971ec95e0070e58ec9f802aea0d3f3316661ebd295"
+        }
+      }
+    },
+    {
+      "asset": "level4",
+      "objectId": 2030,
+      "class": "LinePresenter",
+      "rawSha256": "d6bb5e1cd16d96aa63e63abca242fbd6ff075d9164efe276188eef47630ff1ad",
+      "fields": {
+        "lineText": {
+          "m_FileID": 0,
+          "m_PathID": 1959
+        },
+        "showCharacterNameInLine": 1,
+        "characterNameText": {
+          "m_FileID": 0,
+          "m_PathID": 1958
+        },
+        "characterNameContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "nonNullTargets": {
+        "lineText": {
+          "objectId": 1959,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "6f581f3c876de17652f7a78af57388fb303bc00a6d6a33d384f259fe77e3aa3e"
+        },
+        "characterNameText": {
+          "objectId": 1958,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "d78a5c2dc1ac4b0d27c670ce10b585564b04d2519239e8237a43db02bc4dd328"
+        }
+      }
+    },
+    {
+      "asset": "level4",
+      "objectId": 2125,
+      "class": "OptionsPresenter",
+      "rawSha256": "3b45efce30bbd5a369e3e1a9974fb6abb96b46d1122ab1f5cc16f561db7142ff",
+      "fields": {
+        "showsLastLine": 0,
+        "lastLineText": {
+          "m_FileID": 0,
+          "m_PathID": 1961
+        },
+        "lastLineContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "lastLineCharacterNameText": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "lastLineCharacterNameContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "nonNullTargets": {
+        "lastLineText": {
+          "objectId": 1961,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "0ce5d67d3358223fdc5088c99c5a2639d8397f376d131ea6a51eaf13e3caedc1"
+        }
+      }
+    },
+    {
+      "asset": "level5",
+      "objectId": 1628,
+      "class": "LinePresenter",
+      "rawSha256": "a5b9f5a0e47b16b437873c0b55d7eda65eb672f115033da4154f0be2c3528d40",
+      "fields": {
+        "lineText": {
+          "m_FileID": 0,
+          "m_PathID": 1520
+        },
+        "showCharacterNameInLine": 1,
+        "characterNameText": {
+          "m_FileID": 0,
+          "m_PathID": 1519
+        },
+        "characterNameContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "nonNullTargets": {
+        "lineText": {
+          "objectId": 1520,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "425b5bf306c4d4fc28454ad31894239e3bab2a30301d87da1b643963e7540f45"
+        },
+        "characterNameText": {
+          "objectId": 1519,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "9746ef79ba69d576d436de746be16b90811eccb60d7a7b6ee1efd8c62e8f4a33"
+        }
+      }
+    },
+    {
+      "asset": "level5",
+      "objectId": 1726,
+      "class": "OptionsPresenter",
+      "rawSha256": "dc5a12c69af0ff4ac46baae7599750ceb90b3385b8781264fc753ac72ab740a9",
+      "fields": {
+        "showsLastLine": 0,
+        "lastLineText": {
+          "m_FileID": 0,
+          "m_PathID": 1522
+        },
+        "lastLineContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "lastLineCharacterNameText": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "lastLineCharacterNameContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "nonNullTargets": {
+        "lastLineText": {
+          "objectId": 1522,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "03d2de0e9e83b1eb2b3372f21f8efb237fa662e15633d3180dec2b22d77fd0e7"
+        }
+      }
+    },
+    {
+      "asset": "level6",
+      "objectId": 1562,
+      "class": "LinePresenter",
+      "rawSha256": "20e78a2806fd85c29f538215158e4e5f15348e0f9fcf6f11cea01be96e5b6829",
+      "fields": {
+        "lineText": {
+          "m_FileID": 0,
+          "m_PathID": 1492
+        },
+        "showCharacterNameInLine": 1,
+        "characterNameText": {
+          "m_FileID": 0,
+          "m_PathID": 1491
+        },
+        "characterNameContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "nonNullTargets": {
+        "lineText": {
+          "objectId": 1492,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "c8acf6bd259e8041e021e09aa1446169caffff61bbcba4fdd47b728a6c61572d"
+        },
+        "characterNameText": {
+          "objectId": 1491,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "a050595c9ca3f92aa69c81a2827a38e5c78bbb37d89b5a3e118a0548cdd8ef46"
+        }
+      }
+    },
+    {
+      "asset": "level6",
+      "objectId": 1650,
+      "class": "OptionsPresenter",
+      "rawSha256": "b7c89d697021463dba2ba9bffe364cb7d725d0171a1eef7cd892e407d5bbf831",
+      "fields": {
+        "showsLastLine": 0,
+        "lastLineText": {
+          "m_FileID": 0,
+          "m_PathID": 1494
+        },
+        "lastLineContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "lastLineCharacterNameText": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "lastLineCharacterNameContainer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "nonNullTargets": {
+        "lastLineText": {
+          "objectId": 1494,
+          "script": "TMPro.TextMeshProUGUI",
+          "rawSha256": "75989a3198b0696c47e8c41ce09148bf419ce7cab7dd953440e87748cb173c4f"
+        }
+      }
+    }
+  ],
+  "unresolvedScripts": [],
+  "limitations": "Serialized presenter fields in 17 source assets only. Awake can change references, runtime code or other assets may replace presenters, and rendering or event consumers are not established."
+}

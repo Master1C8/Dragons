@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "platform": "macos",
+  "assemblyCount": 170,
+  "managedInventorySha256": "b3186bc39207255e937f5856be09906dc1a428d83a964d5f368f30861e32603c",
+  "directCharacterNameGetterReferences": [
+    {
+      "assembly": "YarnSpinner.Unity.dll",
+      "method": "System.Void Yarn.Unity.LinePresenter/\u003CRunLineAsync\u003Ed__23::MoveNext()",
+      "offset": 224,
+      "opcode": "callvirt",
+      "nextOpcode": "call",
+      "nextOperand": "System.Boolean System.String::IsNullOrWhiteSpace(System.String)"
+    },
+    {
+      "assembly": "YarnSpinner.Unity.dll",
+      "method": "System.Void Yarn.Unity.LinePresenter/\u003CRunLineAsync\u003Ed__23::MoveNext()",
+      "offset": 274,
+      "opcode": "callvirt",
+      "nextOpcode": "callvirt",
+      "nextOperand": "System.Void TMPro.TMP_Text::set_text(System.String)"
+    },
+    {
+      "assembly": "YarnSpinner.Unity.dll",
+      "method": "System.Void Yarn.Unity.OptionsPresenter/\u003CRunOptionsAsync\u003Ed__18::MoveNext()",
+      "offset": 547,
+      "opcode": "callvirt",
+      "nextOpcode": "call",
+      "nextOperand": "System.Boolean System.String::IsNullOrWhiteSpace(System.String)"
+    },
+    {
+      "assembly": "YarnSpinner.Unity.dll",
+      "method": "System.Void Yarn.Unity.OptionsPresenter/\u003CRunOptionsAsync\u003Ed__18::MoveNext()",
+      "offset": 624,
+      "opcode": "callvirt",
+      "nextOpcode": "callvirt",
+      "nextOperand": "System.Void TMPro.TMP_Text::set_text(System.String)"
+    }
+  ],
+  "awakeNameSetup": [
+    {
+      "offset": 0,
+      "opcode": "ldarg.0",
+      "operand": null
+    },
+    {
+      "offset": 1,
+      "opcode": "ldfld",
+      "operand": "UnityEngine.GameObject Yarn.Unity.LinePresenter::characterNameContainer"
+    },
+    {
+      "offset": 6,
+      "opcode": "ldnull",
+      "operand": null
+    },
+    {
+      "offset": 7,
+      "opcode": "call",
+      "operand": "System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)"
+    },
+    {
+      "offset": 12,
+      "opcode": "brfalse.s",
+      "operand": "IL_002d: ldarg.0"
+    },
+    {
+      "offset": 14,
+      "opcode": "ldarg.0",
+      "operand": null
+    },
+    {
+      "offset": 15,
+      "opcode": "ldfld",
+      "operand": "TMPro.TMP_Text Yarn.Unity.LinePresenter::characterNameText"
+    },
+    {
+      "offset": 20,
+      "opcode": "ldnull",
+      "operand": null
+    },
+    {
+      "offset": 21,
+      "opcode": "call",
+      "operand": "System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)"
+    },
+    {
+      "offset": 26,
+      "opcode": "brfalse.s",
+      "operand": "IL_002d: ldarg.0"
+    },
+    {
+      "offset": 28,
+      "opcode": "ldarg.0",
+      "operand": null
+    },
+    {
+      "offset": 29,
+      "opcode": "ldarg.0",
+      "operand": null
+    },
+    {
+      "offset": 30,
+      "opcode": "ldfld",
+      "operand": "TMPro.TMP_Text Yarn.Unity.LinePresenter::characterNameText"
+    },
+    {
+      "offset": 35,
+      "opcode": "callvirt",
+      "operand": "UnityEngine.GameObject UnityEngine.Component::get_gameObject()"
+    },
+    {
+      "offset": 40,
+      "opcode": "stfld",
+      "operand": "UnityEngine.GameObject Yarn.Unity.LinePresenter::characterNameContainer"
+    }
+  ],
+  "limitations": "Direct IL references in pinned root Managed/*.dll only. Reflection, dynamically loaded assemblies, parsed text access without this getter, other assets and runtime mutation are not covered."
+}
