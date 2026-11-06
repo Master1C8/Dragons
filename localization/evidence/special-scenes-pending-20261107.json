@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "status": "incomplete",
+  "sourceContextMap": "localization/evidence/yarn-context-map-20261107.json",
+  "sourceContextMapSha256": "20d8c7305831a2b98adffad5798e64cb194c37e40039d1525dde122b0c061555",
+  "discoveryCoverage": {
+    "inspected": "Selected Yarn bytecode ID bindings and embedded state variables",
+    "pending": [
+      "Full scene and branch semantics",
+      "Remaining Yarn nodes and special mechanisms",
+      "Other resource families, UI, media and code"
+    ],
+    "excluded": [
+      "Text baked into textures, at owner request"
+    ]
+  },
+  "cases": [
+    {
+      "id": "yarn-alexander-question-once-state",
+      "title": "Alexander questions linked to once-state keys",
+      "category": "choice/state identity",
+      "sourceStatus": "needs-review",
+      "node": "Alexander_questions",
+      "sourceBuilds": [
+        "macos",
+        "windows"
+      ],
+      "mappings": [
+        {
+          "lineId": "line:21c0526b",
+          "controlVariable": "$Yarn.Internal.Once.line:21c0526b",
+          "initialValue": false,
+          "readInstructionIndex": 8,
+          "optionInstructionIndex": 11,
+          "writeInstructionIndex": 114,
+          "optionDestination": 112
+        },
+        {
+          "lineId": "line:72a9b5bb",
+          "controlVariable": "$Yarn.Internal.Once.line:72a9b5bb",
+          "initialValue": false,
+          "readInstructionIndex": 20,
+          "optionInstructionIndex": 23,
+          "writeInstructionIndex": 227,
+          "optionDestination": 225
+        },
+        {
+          "lineId": "line:838cdf1b",
+          "controlVariable": "$Yarn.Internal.Once.line:838cdf1b",
+          "initialValue": false,
+          "readInstructionIndex": 16,
+          "optionInstructionIndex": 19,
+          "writeInstructionIndex": 184,
+          "optionDestination": 182
+        },
+        {
+          "lineId": "line:a5a8a9d5",
+          "controlVariable": "$Yarn.Internal.Once.line:a5a8a9d5",
+          "initialValue": false,
+          "readInstructionIndex": 24,
+          "optionInstructionIndex": 27,
+          "writeInstructionIndex": 258,
+          "optionDestination": 256
+        },
+        {
+          "lineId": "line:c2bdc402",
+          "controlVariable": "$Yarn.Internal.Once.line:c2bdc402",
+          "initialValue": false,
+          "readInstructionIndex": 12,
+          "optionInstructionIndex": 15,
+          "writeInstructionIndex": 142,
+          "optionDestination": 140
+        },
+        {
+          "lineId": "line:daa040eb",
+          "controlVariable": "$Yarn.Internal.Once.line:daa040eb",
+          "initialValue": false,
+          "readInstructionIndex": 4,
+          "optionInstructionIndex": 7,
+          "writeInstructionIndex": 71,
+          "optionDestination": 69
+        },
+        {
+          "lineId": "line:fc7aaaa0",
+          "controlVariable": "$Yarn.Internal.Once.line:fc7aaaa0",
+          "initialValue": false,
+          "readInstructionIndex": 0,
+          "optionInstructionIndex": 3,
+          "writeInstructionIndex": 36,
+          "optionDestination": 34
+        }
+      ],
+      "observed": "The listed conditional AddOption instructions share line IDs embedded in initialized boolean variables read and written by the same node. Both pinned builds have the same listed instruction positions.",
+      "invariant": "Preserve complete control-variable names, line IDs and branch destinations exactly; review actual choice availability and results before accepting locale behavior.",
+      "dependencies": "Full question text, branch dialogue and all related state consumers are not yet traced.",
+      "adaptationRoute": "Translate display strings independently of exact control identities; full dependency and locale decision remain pending.",
+      "acceptanceScenarios": [
+        "A fresh state displays the choices permitted by the original conditions.",
+        "After selection, state and subsequent availability match the original behavior.",
+        "Changed control variable or destination is rejected before packaging."
+      ],
+      "statuses": {
+        "sourceAnalysis": "needs-review",
+        "editorial": "not-started",
+        "adapter": "needs-review",
+        "structural": "not-started",
+        "runtimeVisual": "not-run"
+      }
+    }
+  ]
+}
