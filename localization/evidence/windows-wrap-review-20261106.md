@@ -1,0 +1,5 @@
+# Synthetic Windows long-dialogue review
+
+On 2026-11-06 an independently authorized gpt-6.1-terra reviewer (high) inspected two prepared views of one CrossOver screenshot. Original `localization/work/windows-wrap-dialogue.png` SHA-256 `53b153f9a6e4f442a5dbeb0648cca1c63108832e6dad6222b63519cd931ecee2` is 2048 × 1592. The WebP80 full preview SHA-256 `86f0cd2649f71307f047ecb8546fa9dc64b7ee90514558a40155d82c08b01785` is 1280 × 995. The source-pixel crop SHA-256 `26427259a4cc4aa02f5ddfab3417b1b368ead87a3041f8cb687bf66afa632902` uses bounds `(250, 1300, 1000, 100)` with no upscaling. All three hashes matched.
+
+The reviewer transcribed three lines, ending in `789.`, without obvious missing glyphs, clipping, overlap or broken-word wrapping. The crop showed distinct `Ъъ` and `Ьь`. Comparing the transcription with the synthetic locale confirms the visible Cyrillic words, letters and numeric ending match; exact apostrophe and quote punctuation remains uncertain in the prepared views. A window title bar was visible. This is visual evidence for one synthetic CrossOver frame, not proof of uninstrumented entry, native Windows, all long strings or complete localization.
