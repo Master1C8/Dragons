@@ -1,0 +1,832 @@
+{
+  "schema": 1,
+  "unityVersion": "6000.3.14f1",
+  "sourceHashes": {
+    "globalgamemanagers.assets": "391640e8e7df097a0d377c7a16552975d4821688841ea3460ec99587f4061d9e",
+    "sharedassets0.assets": "40713b00ce12582eebc427c0104e59becf438eb15803725b2248be3471a96aeb",
+    "sharedassets1.assets": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+    "level0": "4cabf35993c6726ab29e5cb24a1ce74a0fdf3d8061b0de3437415e56bcfa72f7",
+    "level1": "6af2815f16cba00e935fe110023ec91421c7d4107c5d8d31f55b70039b17d618",
+    "Managed/Unity.TextMeshPro.dll": "a25a11167a5a7339d611c364a6525fc172d19fe5caa6aa95d6866fd1d36d0743",
+    "Managed/YarnSpinner.Unity.dll": "54953f9c071aa3ca5b52eb8b12b8e0bedc73f7665a506c61acbef0c58ac340ef"
+  },
+  "managedGeneratorInputs": [
+    [
+      "Assembly-CSharp.dll",
+      "f9c4ccc1b10f95270d6d0d63a5e150865a070eca353a6c16fa74930f993f7bcb"
+    ],
+    [
+      "GatorDragonGamesExtensions.dll",
+      "f03ff2be85225649ae740217d67c1d7fe7814be392594baa5d0840504b277f46"
+    ],
+    [
+      "MackySoft.SerializeReferenceExtensions.dll",
+      "2f34820b36ab6337d2dfc47e8d4c52b98153a5af1895657e088fec264a1d0d66"
+    ],
+    [
+      "Microsoft.CSharp.dll",
+      "b42ed17d15f1038451449ca3ca09e7ae210911e107e2f0df088085d72536c6f1"
+    ],
+    [
+      "Mono.Security.dll",
+      "9e1ee8aae5bd05678188ca27e20a4ec814b7994628b234ce9f61d11ec1689b2c"
+    ],
+    [
+      "Naelstrof.Extensions.dll",
+      "a3dd955d1ad60e13ac33cef09a4cd65f3361a7cd5dc342bfcbabc9309f237ab6"
+    ],
+    [
+      "Naelstrof.Splines.dll",
+      "fe1a021b9b47acd964412a9385d58041441e394332450961ac53e4feb9c5fa4d"
+    ],
+    [
+      "Naelstrof.UnityScriptableSettings.dll",
+      "a16b7a3a94bd62e059694a311f68dec012aa66696a6eff9880ceb9087e6c915d"
+    ],
+    [
+      "NaelstrofRaliv.DynamicPenetrationForGames.dll",
+      "a690cf6a2459d6777789c2fdbc8cf14de8f3eef3a3f8921df687c6afaac8c03e"
+    ],
+    [
+      "Newtonsoft.Json.dll",
+      "a56146202232958f46bd6a28b5a7da166aea123ee0d646735a46e5c341dfbf1f"
+    ],
+    [
+      "RalivIK.dll",
+      "24f535a82d90d3cf137ecfd4530109357fbe300809ed94483fe3b0b1faa20d22"
+    ],
+    [
+      "System.ComponentModel.Composition.dll",
+      "df9a2edcf7dc26e76a0b3333c57012fff098429795a549f93ca820b1cd61e0c3"
+    ],
+    [
+      "System.Configuration.dll",
+      "5b1f4640b3811f5738d4c146418f0cfb699758a7e54c4392a53538b05f0471f9"
+    ],
+    [
+      "System.Core.dll",
+      "fa54d687939c37632cbfdf58a917359fcf4c8f7fc50b5296066b29f4970e45d5"
+    ],
+    [
+      "System.Data.DataSetExtensions.dll",
+      "950c992936c7a8a38dee6f26df74ffef9558c15a548c2b4b8c5c65fd78e98dae"
+    ],
+    [
+      "System.Data.dll",
+      "d7b740da3db30c43c9da2e12627a5eebbd768a25e8380057414023ee55dbd955"
+    ],
+    [
+      "System.Drawing.dll",
+      "275820b8fc0ce206aea535d99baf4239a4f931362171865fafd4c2bca0e4598c"
+    ],
+    [
+      "System.EnterpriseServices.dll",
+      "5a31d89b8df790868057f6d5bbc80baffbf8406720c2137f72b69f57e0070dd6"
+    ],
+    [
+      "System.IO.Compression.FileSystem.dll",
+      "dd1e9c18db03b74c1aef2803a448007224d71af0b01c0eaefd8a76c57641ba18"
+    ],
+    [
+      "System.IO.Compression.dll",
+      "958ca1fb588831aa358a5c16595f16d1df1d7fa5479090256121e30de1f3d5f6"
+    ],
+    [
+      "System.IO.Hashing.dll",
+      "ac7ac3e83805b0b621c48b90543dc733c9a89106835278618357d6187e3da74e"
+    ],
+    [
+      "System.Memory.dll",
+      "c4f030a2cba7da7cdcf493257c24560e203d355904aee490d645a935842f834a"
+    ],
+    [
+      "System.Net.Http.dll",
+      "cb4ba464bdf95ccb0400b4785cd9eca9a7fd12d465a2b2ca7353c88cc6072db0"
+    ],
+    [
+      "System.Numerics.dll",
+      "487e95bdf1283afa133542719de3d34755082dccceb1641efc37e9b23d1a1543"
+    ],
+    [
+      "System.Runtime.CompilerServices.Unsafe.dll",
+      "01748200f2400c742aa689f1f5101bd6298efdfd92c00c18f4fa473847235ba9"
+    ],
+    [
+      "System.Runtime.Serialization.dll",
+      "f353a75a03a536404799ba0f7475927ec5609fa8aa13fd65b72397663233466c"
+    ],
+    [
+      "System.Runtime.dll",
+      "fbc8607d8c4312460f5234c1950a74d098ff8cab5abcc1a093e55b2bbed75d30"
+    ],
+    [
+      "System.Security.dll",
+      "9219198d99d65a6c1521993b19f5d95c0cb92cfbef86906ce87ca5f02ec2e5fe"
+    ],
+    [
+      "System.ServiceModel.Internals.dll",
+      "0124bc4e15cdc22deb1af2c8fe883b2e1e52ca6259402ea0791af4b1f668296f"
+    ],
+    [
+      "System.Transactions.dll",
+      "43ba682f51eba35f03aa29502f000c69ec1adfb8e536175cd09ad17ec621fe65"
+    ],
+    [
+      "System.Xml.Linq.dll",
+      "fb5890a3eb9af9f47c1f82c4ffed999db009b0190e5d6cd901196c6c85dd5dc8"
+    ],
+    [
+      "System.Xml.dll",
+      "30526ecd71fd66f90f0976b07450d267cb741946feceed5d94c0875a5f027802"
+    ],
+    [
+      "System.dll",
+      "412df491e8177b04463364748bd203ef70151de56f7d8d33edae26dcbc903985"
+    ],
+    [
+      "Unity.AI.Navigation.dll",
+      "ef49a60bb57e4151c88904e9a9bdd96ea73518ff98259a653361912ec368e10e"
+    ],
+    [
+      "Unity.Addressables.dll",
+      "b5be404e541be5681fed4c3e3936118c22cecde048f9f7dd89e7ba2afea11297"
+    ],
+    [
+      "Unity.Burst.Unsafe.dll",
+      "9d9c1ff52411decbee5d9f0d1cd61ebeaa222077aa77a52101ea3debafae98e2"
+    ],
+    [
+      "Unity.Burst.dll",
+      "f979fda96e877f4fe267f24bfdf072f8687cc725d76850dd936b089f715e9cbe"
+    ],
+    [
+      "Unity.Collections.LowLevel.ILSupport.dll",
+      "ff50383f807f9692e4913b97e47d86fefcb8faa33d6d48cd3e3fd6fc7ffb448d"
+    ],
+    [
+      "Unity.Collections.dll",
+      "d5205fe2a4971c145df85b32854b845f160892199f055499193791a4c7f1c973"
+    ],
+    [
+      "Unity.InputSystem.ForUI.dll",
+      "da632a026067a53f4540bcf306878671f7b5054e8df8d525f4abef7b07ed150f"
+    ],
+    [
+      "Unity.InputSystem.dll",
+      "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec"
+    ],
+    [
+      "Unity.InternalAPIEngineBridge.004.dll",
+      "43f8c853877d5a67e2d37b43d35d1a8596a9287aef7e20170bc23b2d43aa5b6f"
+    ],
+    [
+      "Unity.InternalAPIEngineBridge.013.dll",
+      "1da9ccdc72768e4b6093c5df10c70c10a8826f6f47261db56a9399c4e2b12f98"
+    ],
+    [
+      "Unity.Localization.dll",
+      "4ec3456f7a84c4ee36c8a7c91a1dacfe672d894ffd321773bf1a61067387e3c0"
+    ],
+    [
+      "Unity.Mathematics.dll",
+      "b574345fdb29d328b434e5866de9a993d2e82fd598cf34b00febe5cb429128d6"
+    ],
+    [
+      "Unity.MemoryProfiler.dll",
+      "252399551018fc9fccd1dac4d4c1677ebd4d8b47f197919cba6f21e07cca9d8d"
+    ],
+    [
+      "Unity.Multiplayer.Center.Common.dll",
+      "1d8c74405b04bddbff002e8bc7ec5b0e605e8128261cb62e604ba9a3bf6f2822"
+    ],
+    [
+      "Unity.Profiling.Core.dll",
+      "4437d0da8aa7fd30739f7ade0b3bb54e2d2f195fdf6d2f77a405a6ab815f5ea3"
+    ],
+    [
+      "Unity.RenderPipeline.Universal.ShaderLibrary.dll",
+      "3b5780d6dcfa25370c42b3f2dd5452bceae35a1f2ae356d831666c6d1d052763"
+    ],
+    [
+      "Unity.RenderPipelines.Core.Runtime.Shared.dll",
+      "292846d0255fa495d109cc103e30cc2e383d8743ac53b0d1580eb2557bf56a2c"
+    ],
+    [
+      "Unity.RenderPipelines.Core.Runtime.dll",
+      "120ab52e9422f673a846702206efe900dfe8230a87f38cf698ff13dd86ae57c6"
+    ],
+    [
+      "Unity.RenderPipelines.Core.ShaderLibrary.dll",
+      "ca1f2ee8bc1ba2db3ec0b2540e4f6742208287b903553e17e89c8c0f6e9770c4"
+    ],
+    [
+      "Unity.RenderPipelines.GPUDriven.Runtime.dll",
+      "02eeb97e1a5a029a50417c53a2b80e61675430650cdcd568f059c42a3a84b2d2"
+    ],
+    [
+      "Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll",
+      "843d311bfe11f8089dd5adf3cea43b012bfa833396472d399c83969675d1ce4f"
+    ],
+    [
+      "Unity.RenderPipelines.Universal.2D.Runtime.dll",
+      "e5070b21ca3df9285511cf8e32bc503596742c132d614b04317981b138ab2181"
+    ],
+    [
+      "Unity.RenderPipelines.Universal.Config.Runtime.dll",
+      "3aeecaf5019ab61d693704d886f639d73747fde9fb9a8432f4a7fe34ebfc64fa"
+    ],
+    [
+      "Unity.RenderPipelines.Universal.Runtime.dll",
+      "aa71a0ed287579775196ac4db0d355d4ee54b713f508b9df3e4893f89ccf9e44"
+    ],
+    [
+      "Unity.RenderPipelines.Universal.Shaders.dll",
+      "a63fa378a6dac77c6c2bcbee54d222f8b30dad18fbba637dd06b6dbf82440271"
+    ],
+    [
+      "Unity.ResourceManager.dll",
+      "4cbf40425c6e2d1fa6f6ae2b378662c1a5231cab957272a1b8c34d5cf1d6492f"
+    ],
+    [
+      "Unity.ScriptableBuildPipeline.dll",
+      "7c1f8d9eca9d6f590009a78c37ca578ac5a03ef60cd3c2f33c67242472e639e2"
+    ],
+    [
+      "Unity.TextMeshPro.dll",
+      "a25a11167a5a7339d611c364a6525fc172d19fe5caa6aa95d6866fd1d36d0743"
+    ],
+    [
+      "Unity.UnifiedRayTracing.Runtime.dll",
+      "61aea5d2541d07168062996a7f503b5d02d3c464a81d33def3c13efbcd038c7f"
+    ],
+    [
+      "Unity.VisualEffectGraph.Runtime.dll",
+      "00edb4075b1a4e56ab11cd34b2f26ad3945fa5121b13c1eddefdf4c67a4ddc08"
+    ],
+    [
+      "UnityEngine.AIModule.dll",
+      "7bf82ce3d6e9e8ac08f28e1c6fe9a8e5340a7a4294f75fa19c197884786597d8"
+    ],
+    [
+      "UnityEngine.ARModule.dll",
+      "fe2a81de85327aba56bb8109be3c3bda1b0571d59552573eb14d9f5d44b3e6af"
+    ],
+    [
+      "UnityEngine.AccessibilityModule.dll",
+      "516183b84dcc7ae412805b055f58e315a794c6436055bcc4cbd9110c99d39fe8"
+    ],
+    [
+      "UnityEngine.AdaptivePerformanceModule.dll",
+      "637c87ceab1976ed22a058f9cbabc7d1f69495b3b3019e2d39712a85db6b1f4f"
+    ],
+    [
+      "UnityEngine.AndroidJNIModule.dll",
+      "cab4a6a320a8045a7c9120fa390a3a9c00c2d424e7703cdc4898f8de66dfb154"
+    ],
+    [
+      "UnityEngine.AnimationModule.dll",
+      "f7a192e7b178ef7dcfe2672bf71a36b8eefb230805fbee50b099807e64f52afe"
+    ],
+    [
+      "UnityEngine.AssetBundleModule.dll",
+      "14cdac46d79e0a857ee6fd845ef104fea88fe59795b2bdccbf3ba191c8e3f5c6"
+    ],
+    [
+      "UnityEngine.AudioModule.dll",
+      "b75da7d76c0ab716212facba3e91265b318a1e417bd79b24050fb58b1549bbf4"
+    ],
+    [
+      "UnityEngine.ClothModule.dll",
+      "a6a8aa0f9c1579b27b2b44fb1f2e859a946141a513d2ae6ce945fe61480e8ed4"
+    ],
+    [
+      "UnityEngine.ClusterInputModule.dll",
+      "ff2dc7ab780e9d7185a7f5eca052047a970b89189b68f15e3fcd5c31daf8d608"
+    ],
+    [
+      "UnityEngine.ClusterRendererModule.dll",
+      "916beb62676accb380ac6d8a18d46ec6b43261f8fe6624e306e7c43a1e5253e5"
+    ],
+    [
+      "UnityEngine.ContentLoadModule.dll",
+      "aced063ea5abdf17e048f2715566b90e86f1e00dbfb8353c255e986c48a3b80a"
+    ],
+    [
+      "UnityEngine.CoreModule.dll",
+      "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937"
+    ],
+    [
+      "UnityEngine.CrashReportingModule.dll",
+      "2f830f5abd41da58b1c165ed879a297e6ae1b20cadb414bee7ebbf7a5ac3ab21"
+    ],
+    [
+      "UnityEngine.DSPGraphModule.dll",
+      "41b71ff2b24d07946d55b78d35a2412e740de7c8b0190ab07eb626007b67c32e"
+    ],
+    [
+      "UnityEngine.DirectorModule.dll",
+      "018c4d8cfc1977454771aaa7c95ef1d8e6ed1b270658f0e78403b47a4e91fda8"
+    ],
+    [
+      "UnityEngine.GIModule.dll",
+      "6989884b818e9d169d55dbb0087aed94fe955e30257993d612cbb4395ffe8d2c"
+    ],
+    [
+      "UnityEngine.GameCenterModule.dll",
+      "8a03338f362fa4433b70031fe47e340433ea85e4fd52d99ffbbe951f657704ba"
+    ],
+    [
+      "UnityEngine.GraphicsStateCollectionSerializerModule.dll",
+      "c882222f5dbdf9d557a0260702aeabaa7c7847af71b8876d64eb807dbd78189f"
+    ],
+    [
+      "UnityEngine.GridModule.dll",
+      "c450d6fef76a2ea900d36f20785c54e4c3d04700a859f8b6bc7372d0033e06c6"
+    ],
+    [
+      "UnityEngine.HierarchyCoreModule.dll",
+      "8606da23c82bb937a907de84cd33090b7562cd131a50aa90ec9f49fbdff7ecd3"
+    ],
+    [
+      "UnityEngine.HierarchyModule.dll",
+      "a5736551567fe82a3f50ee98b24ae443f89ef10cbb9d8f9e8a8ef97e3e18c758"
+    ],
+    [
+      "UnityEngine.HotReloadModule.dll",
+      "c927d8bf16fd0fb3b2f7ddd281b04e00594e0b60c5f2d5363e3642704ec124ae"
+    ],
+    [
+      "UnityEngine.IMGUIModule.dll",
+      "539d80a85f18e1b71b67a0760e4b918d6b08c4c2324d14d809d0b3e1a712673f"
+    ],
+    [
+      "UnityEngine.IdentifiersModule.dll",
+      "651337fd863b7be110f83498cfcb03dce897968c7afa8563e731becb57f35ccf"
+    ],
+    [
+      "UnityEngine.ImageConversionModule.dll",
+      "dc7d930114f8e725e530bfdeb487cfe2d8f03d510fb5d22d01383f3965acce30"
+    ],
+    [
+      "UnityEngine.InputForUIModule.dll",
+      "3efceb4cee765d6538f34dd021e0977941c254f5f68e18763112b3cb28e1012e"
+    ],
+    [
+      "UnityEngine.InputLegacyModule.dll",
+      "87dc297df8917f109b18952059375b735d291d3be3634c21183e51587d759c94"
+    ],
+    [
+      "UnityEngine.InputModule.dll",
+      "fa037d697d7140cbc48710f11f742acc8bb44eaa14d53d52c9465ee157f6774c"
+    ],
+    [
+      "UnityEngine.InsightsModule.dll",
+      "1a842b872492daa04cca215b3590bfe3208b96b9c4d62ef6f09e1c7b79ba925e"
+    ],
+    [
+      "UnityEngine.JSONSerializeModule.dll",
+      "a5a2fe98a7f08ec94ba3c1172006e190011ee700090a7d40cd06b11d1d8e6df3"
+    ],
+    [
+      "UnityEngine.LocalizationModule.dll",
+      "16901354856d8955824b3fc8a6dced02cb21cff25ebcde270df09936ffef1b8a"
+    ],
+    [
+      "UnityEngine.MarshallingModule.dll",
+      "058ae730e306e9180261b9672fda412ab2b36810bee32192a0c7b88861e3b21c"
+    ],
+    [
+      "UnityEngine.MultiplayerModule.dll",
+      "69c9544ba891e0a30fadf32f3ac873763c68d34d88221db59d5680e126cbd834"
+    ],
+    [
+      "UnityEngine.ParticleSystemModule.dll",
+      "9337e658621acda167ff557d9d79daa240e50e01419d76a2b62432937eaa9646"
+    ],
+    [
+      "UnityEngine.PerformanceReportingModule.dll",
+      "7cb9d6170c87f20b75e7ecb1008e2c90fe5bddef006c0cfb359f40313bcdcc27"
+    ],
+    [
+      "UnityEngine.Physics2DModule.dll",
+      "d7b15caada01f3a4eb13c74e20c49ca7f0c7335a672603fb9e50cd2badc5c0f4"
+    ],
+    [
+      "UnityEngine.PhysicsBackendPhysXModule.dll",
+      "4147c81370b0d7fd0adc21db3e4b3125f1e92628cf24987cc1f280e9aca963d0"
+    ],
+    [
+      "UnityEngine.PhysicsModule.dll",
+      "863e307a3bc79a621d7e22526b2da8b62d0d35039f7d4d9e01e85187c1285b3c"
+    ],
+    [
+      "UnityEngine.PropertiesModule.dll",
+      "cc804e9f2c9636cbeda6c91cc55ba06f6af901d6049e619a7649df81ab552a23"
+    ],
+    [
+      "UnityEngine.RenderAs2DModule.dll",
+      "84de16e21dd85bfef5b828a45cfef8516a17f02e8c5069a428e86f2cacd0bf8e"
+    ],
+    [
+      "UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+      "ae709f2d10fa398e7d1d4f1207b25380efcb2a5f73765606e4cfbecc2eac3abf"
+    ],
+    [
+      "UnityEngine.ScreenCaptureModule.dll",
+      "d140079566daf5c48954cab3914eb137f30d56b50fe0c380ae83e71cf8cff4da"
+    ],
+    [
+      "UnityEngine.ShaderRuntimeModule.dll",
+      "81214753a398261a473f62cd39e2a7400b5272bdd7ddfccc4a0d2488b3ba9b40"
+    ],
+    [
+      "UnityEngine.ShaderVariantAnalyticsModule.dll",
+      "873f47af330eecf8bab9c1da7484f0ab81e02ff9648e8c0a6e2ee3d4358376c9"
+    ],
+    [
+      "UnityEngine.SharedInternalsModule.dll",
+      "6c064543372635d26979e732e7581883ff1f0a02e890d83a8c1875e1068d1285"
+    ],
+    [
+      "UnityEngine.SpriteMaskModule.dll",
+      "c8596f7e0eed258e28e340da9489afbe9415f752cec81600ebef3060e3781e08"
+    ],
+    [
+      "UnityEngine.SpriteShapeModule.dll",
+      "5e8964c0a8a9c81245b8f6fd064bb9e92c057656a09651a127a75a59f1d9cae4"
+    ],
+    [
+      "UnityEngine.StreamingModule.dll",
+      "31b7172940b214e949f07efa6da5ea8acd01254e5fe411685a955c2f60a4005a"
+    ],
+    [
+      "UnityEngine.SubstanceModule.dll",
+      "7b9ca1540347723027c5f09ab6b27b6a5ad3d1a83e59729d0fccc7c052ade378"
+    ],
+    [
+      "UnityEngine.SubsystemsModule.dll",
+      "3e819ca7c4b58c4e405418f7eedc1a957d6ce0076bfcae884a6f5a29c0ef4eb2"
+    ],
+    [
+      "UnityEngine.TLSModule.dll",
+      "c3af922bc7159a12e7f5d9b73618113fcf1e354c1869f8dc24fa430d94436f08"
+    ],
+    [
+      "UnityEngine.TerrainModule.dll",
+      "ad897b33e9697bb0e20f90a5fcd7ec7538f01594c77848d05bfebd224601c580"
+    ],
+    [
+      "UnityEngine.TerrainPhysicsModule.dll",
+      "e15096886fafa6b503c15e0b44f8a6380092a61930c778adea5362af0a1f082b"
+    ],
+    [
+      "UnityEngine.TextCoreFontEngineModule.dll",
+      "c696e4a4db438d29bb5a138b2eb301ecae8ed6b88ab8c3245e0d3a27bdc2d337"
+    ],
+    [
+      "UnityEngine.TextCoreTextEngineModule.dll",
+      "746123b00558b86573317ec8318836caa09ece16a62ef6bac2c13713eea8738a"
+    ],
+    [
+      "UnityEngine.TextRenderingModule.dll",
+      "4ff8d78de2014cd7cd6e49cd40e48563842b7f6f09d03c89ab2be07656aeea3b"
+    ],
+    [
+      "UnityEngine.TilemapModule.dll",
+      "1f6d14fdf3ed19582219d8bd04dfc3ff9e44c7d09717d5d20d7d49a714ae2493"
+    ],
+    [
+      "UnityEngine.UI.dll",
+      "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4"
+    ],
+    [
+      "UnityEngine.UIElementsModule.dll",
+      "39ec79a4425417ce8c70b108f66cf2ecb0e158230241f89ceb8a658e60b026ae"
+    ],
+    [
+      "UnityEngine.UIModule.dll",
+      "6d43e6d441c4081647824d4e991e16f28a884f0fbda60056348071eb7299f80c"
+    ],
+    [
+      "UnityEngine.UmbraModule.dll",
+      "e19b00989fbacefab2c035a29ad1df13f0ca5d5593c0d432eb34eee182739caa"
+    ],
+    [
+      "UnityEngine.UnityAnalyticsCommonModule.dll",
+      "01a1c860e5fa4b221ed9c11e95699510a93f783f1f3e204348bf780498e98d53"
+    ],
+    [
+      "UnityEngine.UnityAnalyticsModule.dll",
+      "0485edb52f582ae6a8e23d9d1cf090245741bb9916c99df2bcadb8f6f44aa9a0"
+    ],
+    [
+      "UnityEngine.UnityConnectModule.dll",
+      "db98e936138665f19b5039c5cced89fde7a2ac843d5f35e98aeb23c8cc94b7a5"
+    ],
+    [
+      "UnityEngine.UnityConsentModule.dll",
+      "3b7ea9f90904182bf67ffc00c63996e885e180a6fb30c501df77df18d6800ab2"
+    ],
+    [
+      "UnityEngine.UnityCurlModule.dll",
+      "41c2eb9fd37d9ec175fc418da6b2f9642c6c51cee85ce427523008316682d46e"
+    ],
+    [
+      "UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "125de569f9cfcc2e4c2cd7a87f0b4a52a9c776f094b5cbb7def7fbdf669c97ee"
+    ],
+    [
+      "UnityEngine.UnityWebRequestAudioModule.dll",
+      "e3c3df7981748cd984c1afe4f130bdcbe3e55a2124366ebeafe22c3bda5ce2c1"
+    ],
+    [
+      "UnityEngine.UnityWebRequestModule.dll",
+      "756469ac88e2ff09ae86eb9d70658d4b4122d501c72ad16768c8c488fcdc7928"
+    ],
+    [
+      "UnityEngine.UnityWebRequestTextureModule.dll",
+      "b791cb1370861933da9b6e734b9dc807a10005a62074b591be49ddabb74f7c5c"
+    ],
+    [
+      "UnityEngine.UnityWebRequestWWWModule.dll",
+      "1a4931d8e558ec311c9929cb5b6e808c14f835b5ab76e3a786ec58a42039c920"
+    ],
+    [
+      "UnityEngine.VFXModule.dll",
+      "870c19c6710fd0bd6d55d08932437b1f8f80247ede505da80dd7c673336a46de"
+    ],
+    [
+      "UnityEngine.VRModule.dll",
+      "406a7343ad8034d960e3c3ea3645625b64e9bbb0ceaf49b11ba6748365bbfa01"
+    ],
+    [
+      "UnityEngine.VectorGraphicsModule.dll",
+      "3a345b4b050edeb51d5f6725f965f1741cc97e7c02ba1162cae276bd9fa4c263"
+    ],
+    [
+      "UnityEngine.VehiclesModule.dll",
+      "8a3d4d05fe4515bb385bee55bac6c6281bdb877287d22dbd5f27dd027517a1ac"
+    ],
+    [
+      "UnityEngine.VideoModule.dll",
+      "4226551bbd9de3688466ed090c979295e7576407a9611aa784848df5b017b571"
+    ],
+    [
+      "UnityEngine.VirtualTexturingModule.dll",
+      "9630894b15843a49657dc20a9a67b0ec54a3d49f34aae0855e4f22dbda17b35e"
+    ],
+    [
+      "UnityEngine.WindModule.dll",
+      "26f510961ea856ccdfe74909b7ded618c09aa33407323e3b3211031bdfa421aa"
+    ],
+    [
+      "UnityEngine.XRModule.dll",
+      "cf40670235fd04a1d88e0f311daa1bbdc6edad4a8085b6fea24128964985e6c9"
+    ],
+    [
+      "UnityEngine.dll",
+      "ab403e2b29c6482354f4818e59df4f3d8e84288cda30a6c398f2138249df3e40"
+    ],
+    [
+      "YarnSpinner.Compiler.dll",
+      "b2b788670d68db66c84b13f22f1acca83ae7d612b67c812faf04a49c7f10fa8e"
+    ],
+    [
+      "YarnSpinner.Unity.dll",
+      "54953f9c071aa3ca5b52eb8b12b8e0bedc73f7665a506c61acbef0c58ac340ef"
+    ],
+    [
+      "YarnSpinner.dll",
+      "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e"
+    ],
+    [
+      "com.alelievr.NodeGraphProcessor.Runtime.dll",
+      "1cc46cbaf2503624bead7313b7da003603c6c1c6215c6185d7de4519fb882460"
+    ],
+    [
+      "com.gator-dragon-games.jigglephysics.dll",
+      "a0517adfd1c6b425a2f8113374ae6b346c75fe95ad5d64e9da5954b269a3fc0b"
+    ],
+    [
+      "com.gator-dragon-games.physics-audio.dll",
+      "e1c8eaf5b876e1c890a4c7e678c38be895380eae1c41bd00ed951d25ff71206a"
+    ],
+    [
+      "com.naelstrof-raliv.fluid-rendering-for-games.dll",
+      "aecfaa0ecec18a15c044238113d6e6feb2452a9d25c726f27583698f541090ae"
+    ],
+    [
+      "com.naelstrof.orbitcam.dll",
+      "3159dea93d750b459a5ec68ae6587f1807e48781f01e5392e5ca5f21625ab31b"
+    ],
+    [
+      "com.naelstrof.skinnedmeshdecals.dll",
+      "20552df9a1bf2c9aa0b43b16f14817efcd3a3a77f515ce0d9a1b7630a93f5188"
+    ],
+    [
+      "com.naelstrof.spherecast.dll",
+      "eb885cc2e8d469d427e16768ee5565eb9b5587423b04a185580e67603c4eca07"
+    ],
+    [
+      "com.rlabrecque.steamworks.net.dll",
+      "4b717deacb91a0c8526b8a68e9c4659f50e75ccc0c7f918b635d9cdc8d4bd21e"
+    ],
+    [
+      "mscorlib.dll",
+      "f9729f62da790666685cfc30b0a7f231f5150a98e5dc9bd72e66bdbe142593bc"
+    ],
+    [
+      "netstandard.dll",
+      "bf0b7eac9010b75413e4ec1a07a3453bc6a68eeb8e916fbed7c1f2777841f7c7"
+    ]
+  ],
+  "presenter": {
+    "asset": "level1",
+    "pathId": 4011,
+    "lineText": 3899,
+    "characterNameText": 3900
+  },
+  "optionsPresenter": {
+    "asset": "level1",
+    "pathId": 4284,
+    "lastLineText": 3906,
+    "optionPrefabAsset": "sharedassets1.assets",
+    "optionPrefabPathId": 10894,
+    "optionTextPathId": 11117
+  },
+  "roles": [
+    {
+      "asset": "level0",
+      "pathId": 5201,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 20.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level0",
+      "pathId": 5202,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 20.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level0",
+      "pathId": 5203,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 36.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level0",
+      "pathId": 5204,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 20.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level0",
+      "pathId": 5205,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 20.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level0",
+      "pathId": 5206,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 20.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level0",
+      "pathId": 5207,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 20.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level0",
+      "pathId": 5208,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 36.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level0",
+      "pathId": 5209,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 20.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level0",
+      "pathId": 5210,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 20.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level0",
+      "pathId": 5211,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 18.0,
+      "autoSizing": 1,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level0",
+      "pathId": 5212,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 20.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level1",
+      "pathId": 3899,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 40.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level1",
+      "pathId": 3900,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 32.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "level1",
+      "pathId": 3906,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 32.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    },
+    {
+      "asset": "sharedassets1.assets",
+      "pathId": 11117,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 627,
+      "fontSize": 36.0,
+      "autoSizing": 0,
+      "overflowMode": 0
+    }
+  ],
+  "primary": {
+    "pathId": 627,
+    "name": "LiberationSans SDF",
+    "populationMode": 0,
+    "characterCount": 250,
+    "fallbacks": [
+      {
+        "m_FileID": 0,
+        "m_PathID": 626
+      }
+    ]
+  },
+  "fallback": {
+    "pathId": 626,
+    "name": "LiberationSans SDF - Fallback",
+    "populationMode": 1,
+    "sourceFont": {
+      "m_FileID": 0,
+      "m_PathID": 300
+    },
+    "initialCharacterCount": 0
+  },
+  "sourceFont": {
+    "pathId": 300,
+    "name": "LiberationSans",
+    "sha256": "e5b0af421ea2bfbc1ac8d251d647268087ae82786234c57f757d1f0b90fa8b49",
+    "russianAlphabetMissing": ""
+  },
+  "limitation": "Static mapping and cmap only; in-game glyph readability, clipping and progression require separate verification."
+}

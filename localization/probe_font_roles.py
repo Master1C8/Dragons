@@ -17,6 +17,7 @@ from ui_locale import ASSETS, GLOBAL_HASH
 EXPECTED_FILES = {
     'globalgamemanagers.assets': GLOBAL_HASH,
     'sharedassets0.assets': ASSETS['sharedassets0.assets'],
+    'sharedassets1.assets': ASSETS['sharedassets1.assets'],
     'level0': ASSETS['level0'],
     'level1': ASSETS['level1'],
     'Managed/Unity.TextMeshPro.dll': 'a25a11167a5a7339d611c364a6525fc172d19fe5caa6aa95d6866fd1d36d0743',
@@ -77,7 +78,7 @@ def inspect(data):
         manifest.append([path.name, digest(raw)])
         generator.load_dll(raw)
     envs = {}
-    for name in ('sharedassets0.assets', 'level0', 'level1'):
+    for name in ('sharedassets0.assets', 'sharedassets1.assets', 'level0', 'level1'):
         envs[name] = UnityPy.load(str(data / name))
         envs[name].path = str(data)
 
@@ -92,6 +93,8 @@ def inspect(data):
         tree = read_tree(item, generator)
         pointer = tree['m_fontAsset']
         file_id = pointer['m_FileID']
+        if file_id < 0 or file_id > len(item.assets_file.externals):
+            raise ValueError(f'invalid font external reference: {name}#{path_id}')
         owner = name if file_id == 0 else item.assets_file.externals[file_id - 1].path.replace('\\', '/').rsplit('/', 1)[-1]
         return {'asset': name, 'pathId': path_id, 'fontAsset': owner,
                 'fontPathId': pointer['m_PathID'], 'fontSize': tree['m_fontSize'],
@@ -107,11 +110,27 @@ def inspect(data):
     if (presenter['lineText'] != {'m_FileID': 0, 'm_PathID': 3899}
             or presenter['characterNameText'] != {'m_FileID': 0, 'm_PathID': 3900}):
         raise ValueError('dialogue presenter links changed')
-    roles = [role('level0', i) for i in range(5201, 5213)] + [role('level1', i) for i in (3899, 3900)]
+    options_obj = obj('level1', 4284)
+    options = read_tree(options_obj, generator)
+    prefab = options['optionViewPrefab']
+    if prefab['m_FileID'] <= 0 or prefab['m_FileID'] > len(options_obj.assets_file.externals):
+        raise ValueError('choice prefab external reference changed')
+    prefab_owner = options_obj.assets_file.externals[prefab['m_FileID'] - 1].path.replace('\\', '/').rsplit('/', 1)[-1]
+    option_item = read_tree(obj('sharedassets1.assets', 10894), generator)
+    if (prefab_owner != 'sharedassets1.assets' or prefab['m_PathID'] != 10894
+            or options['lastLineText'] != {'m_FileID': 0, 'm_PathID': 3906}
+            or option_item['text'] != {'m_FileID': 0, 'm_PathID': 11117}):
+        raise ValueError('choice presenter links changed')
+    roles = ([role('level0', i) for i in range(5201, 5213)]
+             + [role('level1', i) for i in (3899, 3900, 3906)]
+             + [role('sharedassets1.assets', 11117)])
     return {
         'schema': 1, 'unityVersion': '6000.3.14f1', 'sourceHashes': EXPECTED_FILES,
         'managedGeneratorInputs': manifest,
         'presenter': {'asset': 'level1', 'pathId': 4011, 'lineText': 3899, 'characterNameText': 3900},
+        'optionsPresenter': {'asset': 'level1', 'pathId': 4284, 'lastLineText': 3906,
+                             'optionPrefabAsset': prefab_owner, 'optionPrefabPathId': 10894,
+                             'optionTextPathId': 11117},
         'roles': roles,
         'primary': {'pathId': 627, 'name': primary['m_Name'], 'populationMode': primary['m_AtlasPopulationMode'],
                     'characterCount': len(primary['m_CharacterTable']), 'fallbacks': primary['m_FallbackFontAssetTable']},

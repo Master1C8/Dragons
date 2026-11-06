@@ -120,7 +120,8 @@ other UI types and texture lettering are not covered by this mechanism.
 
   It reports the managed files used to generate schemas, selected dialogue and
   menu component pointers, fallback chain and source-font cmap. The saved result
-  for the pinned macOS build is `localization/evidence/font-roles-20261106.json`.
+  for the pinned macOS build, including choice text, is
+  `localization/evidence/font-roles-choices-20261106.json`.
   Static font metadata and cmap coverage do not establish in-game readability,
   clipping or glyph rendering. The tool reads the installed source and does not
   extract or redistribute its font file.
