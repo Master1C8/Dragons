@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "platform": "windows",
+  "buildVersion": "9/9/2026_ee944596",
+  "assets": {
+    "level0": "55a296caa23347190faa063efdaab4cf5a37e00bdbffa455729b4aa346cddae0",
+    "level1": "203725518656d04df3341248a7d24bc27551ebd6c03e582977869f0acfc5a459",
+    "level2": "d8b5b6b96a2372e36087edb0a5e3e1fa6ccc2e0d1684698be2221771f02f438e",
+    "level3": "2443af34e7c6f2136ca58b0aa712a1c35ce13e60567e963ac7224575fa9d4eb1",
+    "level4": "2253e49bca20fa74c12d90eb6c9bd4eadf9ca83f36bcb451f41d7e71fd9bbc28",
+    "level5": "ecbae7085b8126e5a77087e1b60a9fb3568032bbae0818106f22640d0242530e",
+    "level6": "7312f5011f3222b623e0f06acc5107bcdc72a8487780d9fd5249446fd42be608",
+    "sharedassets0.assets": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3",
+    "sharedassets1.assets": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+    "sharedassets2.assets": "53589194e2754251d918167309117c038e4e0f9acd0e3c571940c979a6d73f7b",
+    "sharedassets3.assets": "87cbffdff5f7018d80f54df3eecf39f4b73f048dcfd4dca6a09a8e64b5d24ded",
+    "sharedassets4.assets": "0d055aac49c3344a50e68632b197d6c5fce701a8236a55a90d620b38978b8681",
+    "sharedassets5.assets": "a95e106be4a3fe2438a7b12e43f14d3d5efa4ce0d32fc20209e634657587c2b9",
+    "sharedassets6.assets": "11becb0784a1fbd113181c918937ecb7df0701bd6422ef4e04f610626aa1a169",
+    "resources.assets": "e48266e661438a4186de78f4aad660707c57b511153dd6199f293b503f958ae8",
+    "globalgamemanagers.assets": "910358d16b824bfd4b8398fea8c0295b5660471bb13a6708655096097bb0f018",
+    "globalgamemanagers": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6"
+  },
+  "versionDisplays": [
+    {
+      "asset": "level0",
+      "componentId": 5356,
+      "gameObjectId": 572,
+      "gameObjectName": "VersionText",
+      "componentRawSha256": "9dd96d53277bf93cb3401b32a52e21f23891ac7175ac03ea311ea71e32da301e",
+      "text": {
+        "objectId": 5190,
+        "class": "TextMeshProUGUI",
+        "textSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8",
+        "rawSha256": "d9a8bbc871bc15e21fd5d2ecbdc67f5e8b9118fac2578f92874aa7e1865465de"
+      }
+    },
+    {
+      "asset": "level1",
+      "componentId": 4280,
+      "gameObjectId": 50,
+      "gameObjectName": "VersionText",
+      "componentRawSha256": "93b895f9d361c85b7a9ca39621b6953ede6cb1ffab0565ef467b77fd93e983b1",
+      "text": {
+        "objectId": 3858,
+        "class": "TextMeshProUGUI",
+        "textSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8",
+        "rawSha256": "04d2829d87aa5497a785e53e5104a26b900442429991de6782d5e0f9a999721a"
+      }
+    },
+    {
+      "asset": "level2",
+      "componentId": 761,
+      "gameObjectId": 207,
+      "gameObjectName": "VersionText",
+      "componentRawSha256": "d107f808e9a1f2534eb6391f41b3b44770e763df6695f3771b8e8338121ca05d",
+      "text": {
+        "objectId": 710,
+        "class": "TextMeshProUGUI",
+        "textSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8",
+        "rawSha256": "7f7852511022815b93e88ce5c520647421a851af56a3dc347428473ba1e8e681"
+      }
+    },
+    {
+      "asset": "level3",
+      "componentId": 1512,
+      "gameObjectId": 432,
+      "gameObjectName": "VersionText",
+      "componentRawSha256": "722877ef181561161f8715b531caff9bae027df805057373539f40d708fb0cce",
+      "text": {
+        "objectId": 1453,
+        "class": "TextMeshProUGUI",
+        "textSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8",
+        "rawSha256": "74bfc7e4d4209b502871933e6a18dae64e3195e4f708f317dd17c80676b68aa9"
+      }
+    },
+    {
+      "asset": "level4",
+      "componentId": 1977,
+      "gameObjectId": 606,
+      "gameObjectName": "VersionText",
+      "componentRawSha256": "008fbf00a30584e33bf50f4984720db8c3bc9e7300639460afa5e3a6e7b77597",
+      "text": {
+        "objectId": 1917,
+        "class": "TextMeshProUGUI",
+        "textSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8",
+        "rawSha256": "e179f3bc75283775687ac3241a8a7b2c0159abf61cdbf89dc744e836db7fe50d"
+      }
+    },
+    {
+      "asset": "level5",
+      "componentId": 1580,
+      "gameObjectId": 462,
+      "gameObjectName": "VersionText",
+      "componentRawSha256": "49fb8accd0d8029e9e45273faf91646e432e58e9ea323b5ff6b6e6cc520c1157",
+      "text": {
+        "objectId": 1478,
+        "class": "TextMeshProUGUI",
+        "textSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8",
+        "rawSha256": "126656752d6e5712f43463d783ed5f7697ebf5e3f5ab27736f35552e6c1b5b99"
+      }
+    },
+    {
+      "asset": "level6",
+      "componentId": 1506,
+      "gameObjectId": 473,
+      "gameObjectName": "VersionText",
+      "componentRawSha256": "ce5b48a2c3deb0f0cc27280e4e8c75670e87b807b9be339f2ae4f777a9c5d480",
+      "text": {
+        "objectId": 1450,
+        "class": "TextMeshProUGUI",
+        "textSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8",
+        "rawSha256": "3d978551c2562a0fbd64a1b6f37fd95221eb2ca4d3ceb35e2db112fea66d8079"
+      }
+    }
+  ],
+  "unresolvedScripts": [],
+  "limitations": "Colocated serialized components only. GetComponent resolution, execution timing, runtime mutation and visibility remain unverified."
+}

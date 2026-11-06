@@ -16,6 +16,8 @@ The 63 remaining Conrad-prefixed nodes add 521 disjoint read IDs. At that checkp
 
 The fourth reading receipt now covers the remaining 42 line-bearing Yarn nodes and 444 IDs. Together the four disjoint receipts bind all 184 line-bearing nodes and 1,839 IDs in the paired Yarn export; 11 non-line nodes, controls, other resource families, special-scene decisions and complete source classification remain open. See `localization/evidence/yarn-text-reading-20261107.md`.
 
+The known 162 paired TMP UI fields and available settings backup strings have had a bounded source reading. Seven version placeholders in each build are colocated with `VersionNumber` components whose inspected `Start` assigns `Application.version`; actual runtime visibility remains open. See `localization/evidence/ui-reading-version-consumers-20261107.md`.
+
 ## Scope and process binding
 
 Source language English; requested locale `ru` → runtime `ru` selected at build time, replacing the English Yarn table in a separate build. This prototype is not an in-game language selector. Owner decisions: player and franchise contact use neutral wording; Alexander uses masculine forms; Igwyx is referred to with masculine forms without asserting gender; Max uses neutral forms without asserting gender. These rules do not establish other characters' gender or complete roster coverage.
