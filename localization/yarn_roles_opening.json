@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "sourceExportSha256": "52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995",
+  "scope": "Manually read Start, Ryan_1_PhoneTutorial, Ryan_1_intro, Ryan_1_required, Ryan_1_nag and Ryan_1_Outro. Roles identify source function, not runtime reachability or final translation readiness.",
+  "groups": [
+    {
+      "node": "Start",
+      "kind": "line",
+      "role": "demo-dialogue-candidate",
+      "ids": [
+        "line:737184f5",
+        "line:e26c3b65",
+        "line:bdb4f59c",
+        "line:2b84f2eb",
+        "line:88119675",
+        "line:1e219102",
+        "line:a470989b",
+        "line:32409fec",
+        "line:a35d207c",
+        "line:356d270b",
+        "line:5643ba3d",
+        "line:c073bd4a",
+        "line:7a22b4d3",
+        "line:ec12b3a4",
+        "line:4f87d73a",
+        "line:d9b7d04d",
+        "line:63e6d9d4",
+        "line:f5d6dea3",
+        "line:64cb6133",
+        "line:f2fb6644",
+        "line:1772a124"
+      ],
+      "reason": "Test-script dialogue and numbered sample lines. Start is a configured runner node; do not exclude it as unreachable. Preserve visible numbers."
+    },
+    {
+      "node": "Start",
+      "kind": "option",
+      "role": "demo-choice-candidate",
+      "ids": [
+        "line:745c3c12",
+        "line:91d5fb72",
+        "line:07e5fc05"
+      ],
+      "reason": "Three response choices in the test-script node; retain distinct option destinations and unresolved runtime scope."
+    },
+    {
+      "node": "Ryan_1_PhoneTutorial",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:a99c515c",
+        "line:e216aee0",
+        "line:d7b3cd09",
+        "line:4183ca7e",
+        "line:6de2c490",
+        "line:fcff7b00",
+        "line:6acf7c77",
+        "line:1976bc60",
+        "line:3517b28e"
+      ],
+      "reason": "Franchise contact's spoken tutorial prompts and responses. Preserve franchise number, markup and conditions; builds contain source wording differences."
+    },
+    {
+      "node": "Ryan_1_PhoneTutorial",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:7426a997"
+      ],
+      "reason": "Standalone ellipsis in the tutorial conversation; retain as a distinct dialogue beat and review target punctuation in context."
+    },
+    {
+      "node": "Ryan_1_PhoneTutorial",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:ce77a00e",
+        "line:5847a779",
+        "line:fbd2c3e7",
+        "line:8f46bb17",
+        "line:a327b5f9"
+      ],
+      "reason": "Player replies with distinct source instructions and destinations; preserve the applicable conditional branches."
+    },
+    {
+      "node": "Ryan_1_intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:a8779ebf",
+        "line:55e3dd36",
+        "line:efb2d4af",
+        "line:7982d3d8",
+        "line:4c27b031",
+        "line:6046bedf",
+        "line:f15b014f",
+        "line:676b0638",
+        "line:ae83cfb6",
+        "line:9b26ac5f",
+        "line:0d16ab28"
+      ],
+      "reason": "Ryan greets the player and asks to enter; preserve self-introduction, separate utterances, branch responses and relevant Yip misunderstanding."
+    },
+    {
+      "node": "Ryan_1_intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:c3d3da41",
+        "line:da17b746",
+        "line:f676b9a8",
+        "line:82e2c158",
+        "line:14d2c62f",
+        "line:38b3c8c1"
+      ],
+      "reason": "Player replies retain distinct option destinations, the established game name, and the Yip misunderstanding."
+    },
+    {
+      "node": "Ryan_1_required",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:c9e7bb1e",
+        "line:eb6ae4c3",
+        "line:7d5ae3b4",
+        "line:513bed5a",
+        "line:f2ae89c4",
+        "line:649e8eb3"
+      ],
+      "reason": "Ryan discusses washing and relaxation; preserve the two distinct responses and their subsequent dialogue."
+    },
+    {
+      "node": "Ryan_1_required",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:decf872a"
+      ],
+      "reason": "Standalone ellipsis following Ryan’s remarks; retain the dialogue beat and review target punctuation in context."
+    },
+    {
+      "node": "Ryan_1_required",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:5fd7bc69",
+        "line:c70bea2d"
+      ],
+      "reason": "Player replies distinguish certified status from recent experience and have different source destinations."
+    },
+    {
+      "node": "Ryan_1_nag",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:71b651dd",
+        "line:e78656aa"
+      ],
+      "reason": "Ryan asks the player to approach; conditional runtime visibility is not established."
+    },
+    {
+      "node": "Ryan_1_Outro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:65a41bc5",
+        "line:f4b9a455",
+        "line:87006442",
+        "line:ab616aac",
+        "line:9ec40945",
+        "line:08f40e32",
+        "line:b2a507ab",
+        "line:b588bf4c"
+      ],
+      "reason": "Ryan’s farewell includes distinct answers and a Yip callback; preserve branch destinations and its sound-linked terminology."
+    },
+    {
+      "node": "Ryan_1_Outro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:6289a322",
+        "line:11306335",
+        "line:3d516ddb",
+        "line:249500dc"
+      ],
+      "reason": "Player farewell choices, including the Yip callback and gate response; preserve source choice identities and destinations."
+    }
+  ]
+}

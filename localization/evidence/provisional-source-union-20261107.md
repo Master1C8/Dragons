@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v6-20261107.json`
-has SHA-256 `7001b3a1e2da59b77758cb3e672943b120f46d9342d34933650932fdeda47a21`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v8-20261107.json`
+has SHA-256 `52103dbf23391d57a907b889e1d06056b1ac7ca0c7907d89c5269e5b4b40e5d0`.
 Its 5,204 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -47,6 +47,13 @@ that a literal is visible. See `managed-engine-strings-20261107.md`. The output
 was reproduced byte-for-byte; comparison to v5 SHA-256
 `bb8216c3d1d88150afb0800110bb12a50642ac731b4e30c3985a94d33b04451e`
 verified that all 4,048 pre-existing records remain exactly equal by ID.
+
+The v8 recipe adds manually reviewed source-function roles for 79 IDs in six
+opening/test and first-Ryan nodes, with full scoped ID/kind reconciliation; see
+`opening-source-roles-20261107.md`. Both v8 runs were byte-identical. Against v6
+(`7001b3a1e2da59b77758cb3e672943b120f46d9342d34933650932fdeda47a21`),
+exactly these 79 roles changed and all other records remained identical. An
+intermediate v7 covered only the first 39 and was superseded before handoff.
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are

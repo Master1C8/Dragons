@@ -41,6 +41,17 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertEqual(sample['role'], 'preserve-exactly-pending-source-role')
         self.assertEqual(sum(r['role'] == 'preserve-exactly-pending-source-role' for r in result['entries']), 16)
         self.assertEqual(sum(r.get('preserveExactPrefix') is not None for r in result['entries']), 18)
+        self.assertEqual(entries['yarn:line:a99c515c']['role'], 'dialogue-candidate')
+        self.assertEqual(entries['yarn:line:ce77a00e']['role'], 'choice-candidate')
+        self.assertEqual(entries['yarn:line:7426a997']['role'], 'dialogue-punctuation-candidate')
+        self.assertEqual(entries['yarn:line:2b84f2eb']['role'], 'demo-dialogue-candidate')
+        self.assertEqual(entries['yarn:line:745c3c12']['role'], 'demo-choice-candidate')
+        opening_roles = {'demo-dialogue-candidate', 'demo-choice-candidate', 'dialogue-candidate',
+                         'dialogue-punctuation-candidate', 'choice-candidate'}
+        self.assertEqual(entries['yarn:line:14d2c62f']['role'], 'choice-candidate')
+        self.assertEqual(entries['yarn:line:decf872a']['role'], 'dialogue-punctuation-candidate')
+        self.assertEqual(sum(r['role'] in opening_roles for r in result['entries'] if r['family'] == 'yarn'), 79)
+        self.assertEqual(result['openingRoleManifestSha256'], inventory.OPENING_ROLES_SHA)
         mac_only = entries['settings:LookInvertY:label']
         self.assertEqual(mac_only['source']['macos'], 'Invert Look Y')
         self.assertIsNone(mac_only['source']['windows'])
@@ -83,6 +94,20 @@ class SourceInventoryUnitTests(unittest.TestCase):
         row['hierarchy'][-1] = 'Description'
         with self.assertRaisesRegex(ValueError, 'credit-name source or hierarchy mismatch'):
             inventory.bind_credit_names(changed_roles, manifest, ui)
+
+    @unittest.skipUnless((WORK / 'yarn-paired-scenes.json').is_file(), 'pinned Yarn export required')
+    def test_opening_roles_require_exact_scope_and_instruction_kind(self):
+        scenes = inventory.load_pinned(WORK / 'yarn-paired-scenes.json', inventory.FILES['yarn-paired-scenes.json'])
+        manifest = inventory.load_pinned(ROOT / 'yarn_roles_opening.json', inventory.OPENING_ROLES_SHA)
+        self.assertEqual(len(inventory.bind_opening_roles(scenes, manifest)), 79)
+        wrong_kind = copy.deepcopy(manifest)
+        wrong_kind['groups'][0]['kind'] = 'option'
+        with self.assertRaisesRegex(ValueError, 'opening role identity or kind mismatch'):
+            inventory.bind_opening_roles(scenes, wrong_kind)
+        missing = copy.deepcopy(manifest)
+        missing['groups'][0]['ids'].pop()
+        with self.assertRaisesRegex(ValueError, 'opening source coverage mismatch'):
+            inventory.bind_opening_roles(scenes, missing)
 
 
 if __name__ == '__main__':

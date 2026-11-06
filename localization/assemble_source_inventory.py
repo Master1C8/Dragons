@@ -31,6 +31,7 @@ INPUT_ACTION_SHA = {
     'windows': 'dd06623f942b4b5619a278f51ba7dc9c6de5845752d7776e4d06c7b86455a998',
 }
 YARN_PROTECTED_SHA = 'bff5f4ce3b270dedf77f31518a3bb75efe72d93617796baeff71cbebb5872be3'
+OPENING_ROLES_SHA = 'ad01a97ccffb6ea648bd5df90d42416e3c528f649f3fd4a5b5881a3c6a322025'
 
 
 def load_pinned(path, expected):
@@ -78,6 +79,29 @@ def bind_credit_names(roles, manifest, ui):
     return matched
 
 
+def bind_opening_roles(scenes, manifest):
+    if manifest.get('schema') != 1 or manifest.get('sourceExportSha256') != FILES['yarn-paired-scenes.json']:
+        raise ValueError('opening-role source binding mismatch')
+    known = {'demo-dialogue-candidate', 'demo-choice-candidate', 'dialogue-candidate',
+             'dialogue-punctuation-candidate', 'choice-candidate'}
+    scoped_nodes = {'Start', 'Ryan_1_PhoneTutorial', 'Ryan_1_intro', 'Ryan_1_required', 'Ryan_1_nag', 'Ryan_1_Outro'}
+    source = {row['id']: (node, row['kind']) for node in scoped_nodes for row in scenes['scenes'][node]}
+    if len(source) != 79:
+        raise ValueError('opening source identity count mismatch')
+    matched = {}
+    for group in manifest['groups']:
+        if (group['node'] not in scoped_nodes or group['role'] not in known or
+                not group.get('reason') or not isinstance(group['ids'], list)):
+            raise ValueError('invalid opening role group')
+        for key in group['ids']:
+            if key in matched or source.get(key) != (group['node'], group['kind']):
+                raise ValueError('opening role identity or kind mismatch')
+            matched[key] = group['role']
+    if matched.keys() != source.keys():
+        raise ValueError('opening source coverage mismatch')
+    return matched
+
+
 def build(work, roles_path):
     work = Path(work)
     docs = {name: load_pinned(work / name, expected) for name, expected in FILES.items()}
@@ -90,6 +114,10 @@ def build(work, roles_path):
     if len(full) != 16 or len(prefixes) != 18 or full.keys() & prefixes.keys():
         raise ValueError('protected Yarn identity mismatch')
     scenes, ui, settings = docs['yarn-paired-scenes.json'], docs['ui-windows-all.json'], docs['settings-paired-source.json']
+    opening = load_pinned(Path(__file__).with_name('yarn_roles_opening.json'), OPENING_ROLES_SHA)
+    opening_roles = bind_opening_roles(scenes, opening)
+    if opening_roles.keys() & (full.keys() | prefixes.keys()):
+        raise ValueError('opening roles overlap protected Yarn bindings')
     credit_manifest = load_pinned(credits.MANIFEST, credits.MANIFEST_SHA256)
     protected_names = bind_credit_names(roles, credit_manifest, ui)
     records = {}
@@ -104,7 +132,8 @@ def build(work, roles_path):
                     for p in ('macos', 'windows'))):
                 raise ValueError('protected Yarn prefix binding changed')
             put(records, {'id': 'yarn:' + key, 'family': 'yarn',
-                          'role': 'preserve-exactly-pending-source-role' if key in full else 'needs-classification',
+                          'role': ('preserve-exactly-pending-source-role' if key in full else
+                                   opening_roles.get(key, 'needs-classification')),
                           'node': node, 'instructionIndex': row['instructionIndex'], 'kind': row['kind'],
                           'instruction': {k: row[k] for k in ('substitutionCount', 'destination', 'hasCondition') if k in row},
                           'preserveExactPrefix': prefixes[key]['expectedPrefix'] if key in prefixes else None,
@@ -199,6 +228,7 @@ def build(work, roles_path):
     return {'schema': 1, 'status': 'provisional-not-translation-ready', 'builds': scenes['builds'],
             'sourceExportsSha256': FILES, 'uiRolesSha256': ROLES_SHA, 'inputActionReportsSha256': INPUT_ACTION_SHA,
             'yarnProtectedReportSha256': YARN_PROTECTED_SHA, 'creditNameManifestSha256': credits.MANIFEST_SHA256,
+            'openingRoleManifestSha256': OPENING_ROLES_SHA,
             'familyCounts': counts,
             'entries': list(records.values()),
             'limitations': 'Provisional union of pinned discovery exports. Managed occurrences are build-specific and unpaired; roles, runtime visibility, other assemblies/resources, full exact-preservation contract, special-scene decisions and independent review remain incomplete. Texture text is excluded by owner decision.'}

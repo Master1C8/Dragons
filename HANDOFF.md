@@ -4,7 +4,9 @@ Updated 2026-11-07. Canonical checkout: `/Users/antonkrutov/Desktop/Dragons`, br
 
 Both UI adapters now reject changes to 34 source-bound contributor-name fields in `level2`, while leaving credit descriptions separately translatable. The pinned manifest and both original builds were tested; see `localization/evidence/credit-name-preservation-20261107.md`. This is one bounded preservation safeguard, not a complete classification or a translated corpus.
 
-The provisional source-union v6 includes those 34 paired credit fields and, as unclassified occurrences, the complete string literals from two additional pinned UI libraries in both builds. The reproducible output and version comparisons are recorded in `localization/evidence/provisional-source-union-20261107.md`; all broader source-readiness gates remain open.
+The provisional source-union v6 added those 34 paired credit fields and, as unclassified occurrences, the complete string literals from two additional pinned UI libraries in both builds. The current output and version comparisons are recorded in `localization/evidence/provisional-source-union-20261107.md`; all broader source-readiness gates remain open.
+
+The provisional source-union v8 now records manually read dialogue/choice roles for 79 IDs in the configured `Start` test node and the first Ryan tutorial, introduction, conversation, reminder and farewell. Their source identities and branch kinds are pinned in `localization/yarn_roles_opening.json`; see `localization/evidence/opening-source-roles-20261107.md`. This is preliminary source classification, not translated text or an exhaustive visible-text denominator.
 
 Current speaker-display finding: a test-only synthetic mapping executed in an instrumented macOS Unity copy and returned `Жж`; a separate frame and source-pixel crop remain too faint for visual confirmation. This is not a release adapter. Complete source classification, preservation, special-scene and glossary gates remain open, and no ordinary Russian game-text translation has started. Details: `localization/evidence/speaker-display-synthetic-20261107.md`.
 
