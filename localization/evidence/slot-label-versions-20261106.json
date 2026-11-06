@@ -1,0 +1,65 @@
+{
+  "macos": {
+    "version": "9/12/2026_a93aa21a",
+    "globalScripts": "391640e8e7df097a0d377c7a16552975d4821688841ea3460ec99587f4061d9e",
+    "level0": "4cabf35993c6726ab29e5cb24a1ce74a0fdf3d8061b0de3437415e56bcfa72f7",
+    "labels": {
+      "GreyedSlotSelect/NewSlot1": {
+        "key": "level0#5212",
+        "source": "New"
+      },
+      "GreyedSlotSelect/NewSlot2": {
+        "key": "level0#5201",
+        "source": "New"
+      },
+      "GreyedSlotSelect/NewSlot3": {
+        "key": "level0#5210",
+        "source": "New"
+      },
+      "NewSlotSelect/NewSlot1": {
+        "key": "level0#5205",
+        "source": "New"
+      },
+      "NewSlotSelect/NewSlot2": {
+        "key": "level0#5204",
+        "source": "New"
+      },
+      "NewSlotSelect/NewSlot3": {
+        "key": "level0#5207",
+        "source": "New"
+      }
+    }
+  },
+  "windows": {
+    "version": "9/9/2026_ee944596",
+    "globalScripts": "910358d16b824bfd4b8398fea8c0295b5660471bb13a6708655096097bb0f018",
+    "level0": "55a296caa23347190faa063efdaab4cf5a37e00bdbffa455729b4aa346cddae0",
+    "labels": {
+      "GreyedSlotSelect/NewSlot1": {
+        "key": "level0#5191",
+        "source": "New"
+      },
+      "GreyedSlotSelect/NewSlot2": {
+        "key": "level0#5180",
+        "source": "New"
+      },
+      "GreyedSlotSelect/NewSlot3": {
+        "key": "level0#5189",
+        "source": "New"
+      },
+      "NewSlotSelect/NewSlot1": {
+        "key": "level0#5184",
+        "source": "New"
+      },
+      "NewSlotSelect/NewSlot2": {
+        "key": "level0#5183",
+        "source": "New"
+      },
+      "NewSlotSelect/NewSlot3": {
+        "key": "level0#5186",
+        "source": "New"
+      }
+    }
+  },
+  "scope": "Six serialized New labels only. Matching hierarchy and source text do not prove runtime visibility, behavior, renderer equivalence or full game compatibility."
+}
