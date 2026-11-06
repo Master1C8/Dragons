@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "platform": "mac",
+  "globalScriptAssetSha256": "391640e8e7df097a0d377c7a16552975d4821688841ea3460ec99587f4061d9e",
+  "unityPyVersion": "1.25.4",
+  "assets": {
+    "sharedassets2.assets": {
+      "sha256": "82300da2892d572a7dac2602489874c130e93cd093112450dc1c03948c15872e",
+      "objectCounts": {
+        "AnimationClip": 9,
+        "AnimatorController": 3,
+        "AudioClip": 1,
+        "Material": 1,
+        "PreloadData": 1,
+        "Sprite": 38,
+        "Texture2D": 38
+      },
+      "selectedComponentCounts": {},
+      "unresolvedScriptReferenceIds": []
+    },
+    "sharedassets3.assets": {
+      "sha256": "22f6f6316b9ff73a5ff3042b82ada4af70fc80ce24a02f26d69b613f0a18d158",
+      "objectCounts": {
+        "AnimationClip": 6,
+        "AnimatorController": 3,
+        "AudioClip": 19,
+        "Avatar": 1,
+        "Cubemap": 5,
+        "LightProbes": 1,
+        "Material": 6,
+        "Mesh": 22,
+        "MonoBehaviour": 10,
+        "PreloadData": 1,
+        "Sprite": 2,
+        "Texture2D": 50
+      },
+      "selectedComponentCounts": {},
+      "unresolvedScriptReferenceIds": []
+    },
+    "sharedassets4.assets": {
+      "sha256": "00f71e4e71abefa25cd13cb9d99f5678e7b257ece9910c7face27a56d37ad8f7",
+      "objectCounts": {
+        "AnimationClip": 4,
+        "AnimatorController": 2,
+        "AudioClip": 1,
+        "Cubemap": 4,
+        "LightProbes": 1,
+        "Material": 1,
+        "Mesh": 11,
+        "MonoBehaviour": 1,
+        "PreloadData": 1,
+        "Texture2D": 42
+      },
+      "selectedComponentCounts": {},
+      "unresolvedScriptReferenceIds": []
+    },
+    "sharedassets5.assets": {
+      "sha256": "ffdfdeeeb4f793e6cc2425810f182a322e8bf41da7dfac32dddda1aab1bbd9a1",
+      "objectCounts": {
+        "AnimationClip": 10,
+        "AnimatorController": 3,
+        "ComputeShader": 6,
+        "Cubemap": 7,
+        "LightProbes": 1,
+        "Material": 5,
+        "Mesh": 57,
+        "MonoBehaviour": 8,
+        "PreloadData": 1,
+        "Shader": 2,
+        "Texture2D": 47,
+        "VisualEffectAsset": 1
+      },
+      "selectedComponentCounts": {},
+      "unresolvedScriptReferenceIds": []
+    },
+    "sharedassets6.assets": {
+      "sha256": "38f5e76e01b5f5bae985b7c7b45477ff1888ec7a62265b2393911e59dcceaffc",
+      "objectCounts": {
+        "AnimationClip": 4,
+        "AnimatorController": 2,
+        "Cubemap": 4,
+        "LightProbes": 1,
+        "Material": 1,
+        "Mesh": 6,
+        "MonoBehaviour": 6,
+        "PreloadData": 1,
+        "Texture2D": 14
+      },
+      "selectedComponentCounts": {},
+      "unresolvedScriptReferenceIds": []
+    }
+  },
+  "limitations": "Selected classes and serialized object types only. Other MonoBehaviour fields, dynamic and generated text, texture text, runtime reachability and other asset families are not classified."
+}
