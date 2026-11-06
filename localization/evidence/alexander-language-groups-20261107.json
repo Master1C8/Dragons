@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "builds": {
+    "macos": {
+      "build": {
+        "version": "9/12/2026_a93aa21a",
+        "localization": 10623,
+        "project": 10719,
+        "globalSha256": "2f3813fddc22b6c6285099f173b922d782e2f06d659482d9373849e3bbb9794b",
+        "assetSha256": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+        "localizationSha256": "9baafe5b3c36e63042cc0d02b2c755580e142447cea13f946d485a342c269853",
+        "projectSha256": "1487cbd825c98488ce00492dc7c9c5c2c3475657e9a7719e9c1de49b5f2c1189"
+      },
+      "programSha256": "a67bbfc37dca0b29b1be740e36b570e9d524a46ef2fdf5574e0f58278c0ff1e6",
+      "groups": {
+        "proletarian-register": {
+          "node": "Alexander_1_required",
+          "nodeSha256": "6a81388796611aecd05e6be20078732c5ca343a10520028ea69baa00f10372e7",
+          "lines": [
+            {
+              "id": "line:73e4789c",
+              "instructionIndex": 4,
+              "sourceSha256": "8bb197f659df9e127962b94264ce5698ca75f24a69348b86c4ea7ba12c7b2be2"
+            },
+            {
+              "id": "line:e5d47feb",
+              "instructionIndex": 5,
+              "sourceSha256": "c3971608b1a13f1b061ae3f6e3ecaec315ff8584d121b7c451f1ce561f329186"
+            },
+            {
+              "id": "line:8512365e",
+              "instructionIndex": 6,
+              "sourceSha256": "3afdda2c098fc8346a9f2e0ba06ec9c6188411cf78cc7934cfd8b666ce632f55"
+            },
+            {
+              "id": "line:74c9c07b",
+              "instructionIndex": 12,
+              "sourceSha256": "90d6678c9549b1e05f5c7c9149305ae45f96455f5b54ef8f8df12c9350650052"
+            },
+            {
+              "id": "line:e2f9c70c",
+              "instructionIndex": 13,
+              "sourceSha256": "55c80016618e1bc590671909a197d052d0f67d1be3fe7750ac59ce80d6e44366"
+            },
+            {
+              "id": "line:13223129",
+              "instructionIndex": 18,
+              "sourceSha256": "02fa2a969117817768136c1c315c27eb75279a85dac1771a488fd965ecc30fd1"
+            },
+            {
+              "id": "line:a97338b0",
+              "instructionIndex": 21,
+              "sourceSha256": "32e117cdd1f56f3f2e1a79e57f080aa0c9429bc9d59c650a302bd7dda1a9b710"
+            }
+          ]
+        },
+        "teacher-professor-correction": {
+          "node": "Alexander_1_intro",
+          "nodeSha256": "8e2750ed45ec7681e424f0dd7fc05937db897078b5cbe651a974940dcca1e493",
+          "lines": [
+            {
+              "id": "line:9aa97614",
+              "instructionIndex": 18,
+              "sourceSha256": "f5b90500599eaa0afd4a91c152e24e978176bb457a7826a61301f3a8c4b69519"
+            },
+            {
+              "id": "line:393c128a",
+              "instructionIndex": 19,
+              "sourceSha256": "26f8788d21d9fd7d5d27585863679ae5a9b34c14172f5967f3b0201e010e1e0c"
+            },
+            {
+              "id": "line:155d1c64",
+              "instructionIndex": 20,
+              "sourceSha256": "7cc55c8bb6442b938f154450be7542fcafe9cf32bf48277e2a4cbffd8c783d75"
+            },
+            {
+              "id": "line:af0c15fd",
+              "instructionIndex": 28,
+              "sourceSha256": "c9b9bda16ee1d4684c57e2cd168f3ea9b31fc459d2ac19b09045198464808f95"
+            },
+            {
+              "id": "line:836d1b13",
+              "instructionIndex": 33,
+              "sourceSha256": "8569efc4ed5a6273140c2b6ec0ab8d99f4398210808fbb7c0cbbae4fbcc21350"
+            },
+            {
+              "id": "line:1270a483",
+              "instructionIndex": 37,
+              "sourceSha256": "57c2b1f349d8b9e913f23716137d92de62e717de009c64bbdb9b16dd88a1f339"
+            }
+          ]
+        }
+      }
+    },
+    "windows": {
+      "build": {
+        "version": "9/9/2026_ee944596",
+        "localization": 10611,
+        "project": 10707,
+        "globalSha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+        "assetSha256": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+        "localizationSha256": "7000b2b93b09f6a7b916e5f57c0dc6cf21ca9e6f9ddbfbc485bce704e8ce28d6",
+        "projectSha256": "f91af8c801958185885c2fc9adf3dfd5188b713c4f1ef264659e44292630b3b5"
+      },
+      "programSha256": "cbaaba712e0cc699d0cdf98f4b8b86060c666d6196fa91cd0a9d9a237c104466",
+      "groups": {
+        "proletarian-register": {
+          "node": "Alexander_1_required",
+          "nodeSha256": "6a81388796611aecd05e6be20078732c5ca343a10520028ea69baa00f10372e7",
+          "lines": [
+            {
+              "id": "line:73e4789c",
+              "instructionIndex": 4,
+              "sourceSha256": "f8d26c6d83205a5d225009d4b5f7548963d7a531a514feb84c870a43c569c530"
+            },
+            {
+              "id": "line:e5d47feb",
+              "instructionIndex": 5,
+              "sourceSha256": "c3971608b1a13f1b061ae3f6e3ecaec315ff8584d121b7c451f1ce561f329186"
+            },
+            {
+              "id": "line:8512365e",
+              "instructionIndex": 6,
+              "sourceSha256": "3afdda2c098fc8346a9f2e0ba06ec9c6188411cf78cc7934cfd8b666ce632f55"
+            },
+            {
+              "id": "line:74c9c07b",
+              "instructionIndex": 12,
+              "sourceSha256": "90d6678c9549b1e05f5c7c9149305ae45f96455f5b54ef8f8df12c9350650052"
+            },
+            {
+              "id": "line:e2f9c70c",
+              "instructionIndex": 13,
+              "sourceSha256": "55c80016618e1bc590671909a197d052d0f67d1be3fe7750ac59ce80d6e44366"
+            },
+            {
+              "id": "line:13223129",
+              "instructionIndex": 18,
+              "sourceSha256": "02fa2a969117817768136c1c315c27eb75279a85dac1771a488fd965ecc30fd1"
+            },
+            {
+              "id": "line:a97338b0",
+              "instructionIndex": 21,
+              "sourceSha256": "32e117cdd1f56f3f2e1a79e57f080aa0c9429bc9d59c650a302bd7dda1a9b710"
+            }
+          ]
+        },
+        "teacher-professor-correction": {
+          "node": "Alexander_1_intro",
+          "nodeSha256": "8e2750ed45ec7681e424f0dd7fc05937db897078b5cbe651a974940dcca1e493",
+          "lines": [
+            {
+              "id": "line:9aa97614",
+              "instructionIndex": 18,
+              "sourceSha256": "f5b90500599eaa0afd4a91c152e24e978176bb457a7826a61301f3a8c4b69519"
+            },
+            {
+              "id": "line:393c128a",
+              "instructionIndex": 19,
+              "sourceSha256": "26f8788d21d9fd7d5d27585863679ae5a9b34c14172f5967f3b0201e010e1e0c"
+            },
+            {
+              "id": "line:155d1c64",
+              "instructionIndex": 20,
+              "sourceSha256": "7cc55c8bb6442b938f154450be7542fcafe9cf32bf48277e2a4cbffd8c783d75"
+            },
+            {
+              "id": "line:af0c15fd",
+              "instructionIndex": 28,
+              "sourceSha256": "c9b9bda16ee1d4684c57e2cd168f3ea9b31fc459d2ac19b09045198464808f95"
+            },
+            {
+              "id": "line:836d1b13",
+              "instructionIndex": 33,
+              "sourceSha256": "8569efc4ed5a6273140c2b6ec0ab8d99f4398210808fbb7c0cbbae4fbcc21350"
+            },
+            {
+              "id": "line:1270a483",
+              "instructionIndex": 37,
+              "sourceSha256": "57c2b1f349d8b9e913f23716137d92de62e717de009c64bbdb9b16dd88a1f339"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "limitations": "Static source bindings and two specific choice paths; no natural reachability, runtime behavior, complete semantic discovery or target wording is established."
+}

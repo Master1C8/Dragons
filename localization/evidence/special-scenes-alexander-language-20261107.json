@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "status": "incomplete",
+  "sourceGroupInventory": "localization/evidence/alexander-language-groups-20261107.json",
+  "sourceGroupInventorySha256": "4ea4eea0d6fdba66138a4a4d9019920baecd836a801b033fbdc1447e57f21183",
+  "discoveryCoverage": "Two candidates identified during a reading of Alexander-named Yarn nodes. This is not exhaustive special-scene discovery; non-Alexander nodes, non-Yarn resources and runtime behavior remain pending. Texture text is excluded by owner decision.",
+  "cases": [
+    {
+      "id": "alexander-proletarian-register",
+      "title": "Proletarian register and confused response",
+      "node": "Alexander_1_required",
+      "sourceLineIds": ["line:73e4789c", "line:e5d47feb", "line:8512365e", "line:74c9c07b", "line:e2f9c70c", "line:13223129", "line:a97338b0"],
+      "observedSourceBehavior": "Alexander describes the setting as proletarian. One option stumbles over the unfamiliar word and asks for its meaning, after which he apologizes and rephrases; the other thanks him and he comments on public access. Both paths converge. The macOS and Windows first line differs in the spelling of environment; both retain the same operative term.",
+      "branchControls": [{"choiceId": "line:e5d47feb", "destination": 11, "continuationIds": ["line:74c9c07b", "line:e2f9c70c"]}, {"choiceId": "line:8512365e", "destination": 15, "continuationIds": ["line:13223129", "line:a97338b0"]}],
+      "invariant": "Preserve the class-register contrast, the attempted repetition of the operative term in the confused choice, the later clarification and the distinct polite response; keep the original option identities and markup.",
+      "adaptationRoute": "Review all seven IDs as one group against the approved Russian glossary; decide the actual term, its interrupted form and the plain clarification together before ordinary translation.",
+      "nonTextDependencies": "Static dialogue and facial commands are recorded in the instruction export. Actual timing, rendering and runtime path behavior are not verified.",
+      "acceptanceScenarios": ["Both options lead to their original respective continuations and converge.", "Reject a target in which the confused fragment is unrelated to Alexander's chosen term or the clarification changes its meaning."],
+      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "needs-review", "structural": "partial", "runtimeVisual": "not-run"}
+    },
+    {
+      "id": "alexander-teacher-professor-correction",
+      "title": "Teacher and professor correction",
+      "node": "Alexander_1_intro",
+      "sourceLineIds": ["line:9aa97614", "line:393c128a", "line:155d1c64", "line:af0c15fd", "line:836d1b13", "line:1270a483"],
+      "observedSourceBehavior": "After Alexander asks for a swift wash, one option calls him a teacher and he corrects this to professor before continuing. The other option offers to open the gate and he thanks the player. The paths converge before his next apology.",
+      "branchControls": [{"choiceId": "line:393c128a", "destination": 25, "continuationIds": ["line:af0c15fd"]}, {"choiceId": "line:155d1c64", "destination": 30, "continuationIds": ["line:836d1b13"]}],
+      "invariant": "Keep the teacher/professor distinction and Alexander's interruption as a correction, while retaining both option identities and the common continuation.",
+      "adaptationRoute": "Review the choice and correction together against the approved Russian character glossary; author both paths before ordinary translation.",
+      "nonTextDependencies": "Static dialogue and facial commands are present; runtime timing and presentation have not been verified.",
+      "acceptanceScenarios": ["Selecting the teacher option produces the professor correction; selecting the gate option produces thanks.", "Reject a translation that labels the teacher option professor and makes the subsequent correction meaningless."],
+      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "needs-review", "structural": "partial", "runtimeVisual": "not-run"}
+    }
+  ]
+}
