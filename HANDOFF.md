@@ -22,6 +22,8 @@ A follow-up diagnostic captures the formerly hidden location-decoding exceptions
 
 An ID-specific synthetic speaker-display probe now handles the exceptional Alexander colon line only when its line ID, complete raw source and parsed name all match. Both pinned parsers and provider ID assignments were checked in a desktop harness; see `localization/evidence/alexander-colon-synthetic-20261107.md`. The probe does not change the protected source text, does not cover inline fallback, and is not a translated or player-ready implementation.
 
+An isolated macOS Unity test now exercised that exact synthetic helper through the game's built-in line provider: its log recorded the marker after a test-only forced node pointed one instruction at the original Alexander line. The prepared frame's label was too faint to verify visually. See `localization/evidence/alexander-colon-runtime-20261107.md`; this is not the natural Alexander branch, Russian wording or a visual pass.
+
 Managed text-sink discovery now scans all pinned root managed DLLs and the source-pinned TMP dropdown configurations in both builds. Unity's built-in text defaults are retained as needs-review; static scope and exact findings are in `localization/evidence/managed-text-sinks-20261107.md`.
 
 A standalone Yarn-only preservation check now compares the complete source object inventory and exact authorized target values in synthetic macOS and Windows assets, including byte-identical compiled program objects. Combined UI/Yarn changes and other source families are not yet covered; the complete preserve-exact gate remains open. See `localization/evidence/yarn-preservation-check-20261107.md`.
