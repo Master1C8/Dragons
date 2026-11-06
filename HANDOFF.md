@@ -6,6 +6,8 @@ Current speaker-display finding: a test-only synthetic mapping executed in an in
 
 Managed text-sink discovery now scans all pinned root managed DLLs and the source-pinned TMP dropdown configurations in both builds. Unity's built-in text defaults are retained as needs-review; static scope and exact findings are in `localization/evidence/managed-text-sinks-20261107.md`.
 
+A standalone Yarn-only preservation check now compares the complete source object inventory and exact authorized target values in synthetic macOS and Windows assets, including byte-identical compiled program objects. Combined UI/Yarn changes and other source families are not yet covered; the complete preserve-exact gate remains open. See `localization/evidence/yarn-preservation-check-20261107.md`.
+
 ## Scope and process binding
 
 Source language English; requested locale `ru` → runtime `ru` selected at build time, replacing the English Yarn table in a separate build. This prototype is not an in-game language selector. Owner decisions: player and franchise contact use neutral wording; Alexander uses masculine forms; Igwyx is referred to with masculine forms without asserting gender; Max uses neutral forms without asserting gender. These rules do not establish other characters' gender or complete roster coverage.
