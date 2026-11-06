@@ -20,6 +20,8 @@ The local binary Addressables catalogs now have a reproducible diagnostic key li
 
 A follow-up diagnostic captures the formerly hidden location-decoding exceptions and reads 13 partial locations in each catalog. It maps the English locale and nine shader paths to the previously inventoried local bundle containers, but three bundle option records fail native `Hash128` conversion and remain incomplete. See `localization/evidence/addressable-catalog-locations-20261107.md`; no runtime loading or full catalog completeness is inferred.
 
+An ID-specific synthetic speaker-display probe now handles the exceptional Alexander colon line only when its line ID, complete raw source and parsed name all match. Both pinned parsers and provider ID assignments were checked in a desktop harness; see `localization/evidence/alexander-colon-synthetic-20261107.md`. The probe does not change the protected source text, does not cover inline fallback, and is not a translated or player-ready implementation.
+
 Managed text-sink discovery now scans all pinned root managed DLLs and the source-pinned TMP dropdown configurations in both builds. Unity's built-in text defaults are retained as needs-review; static scope and exact findings are in `localization/evidence/managed-text-sinks-20261107.md`.
 
 A standalone Yarn-only preservation check now compares the complete source object inventory and exact authorized target values in synthetic macOS and Windows assets, including byte-identical compiled program objects. Combined UI/Yarn changes and other source families are not yet covered; the complete preserve-exact gate remains open. See `localization/evidence/yarn-preservation-check-20261107.md`.
