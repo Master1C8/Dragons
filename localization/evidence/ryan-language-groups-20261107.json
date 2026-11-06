@@ -1,0 +1,1188 @@
+{
+  "schema": 1,
+  "builds": {
+    "macos": {
+      "build": {
+        "version": "9/12/2026_a93aa21a",
+        "localization": 10623,
+        "project": 10719,
+        "globalSha256": "2f3813fddc22b6c6285099f173b922d782e2f06d659482d9373849e3bbb9794b",
+        "assetSha256": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+        "localizationSha256": "9baafe5b3c36e63042cc0d02b2c755580e142447cea13f946d485a342c269853",
+        "projectSha256": "1487cbd825c98488ce00492dc7c9c5c2c3475657e9a7719e9c1de49b5f2c1189"
+      },
+      "programSha256": "a67bbfc37dca0b29b1be740e36b570e9d524a46ef2fdf5574e0f58278c0ff1e6",
+      "groups": {
+        "editor-route-prompt": {
+          "node": "Ryan_4_intro",
+          "nodeSha256": "89398eaf5f98938c30d9217f95837c3bb1ab994b61482108c11f47c18c8308b6",
+          "instructionSpans": [
+            [
+              4,
+              28
+            ]
+          ],
+          "lines": [
+            {
+              "id": "line:dbab7a39",
+              "instructionIndex": 9,
+              "kind": "line",
+              "sourceSha256": "379060351b7eda00f4c86374c402b2a074ec4517f6ac0c84b8319385e7092539"
+            },
+            {
+              "id": "line:4ab6c5a9",
+              "instructionIndex": 10,
+              "kind": "option",
+              "sourceSha256": "8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d"
+            },
+            {
+              "id": "line:dc86c2de",
+              "instructionIndex": 11,
+              "kind": "option",
+              "sourceSha256": "9390298f3fb0c5b160498935d79cb139aef28e1c47358b4bbba61862b9c26e59"
+            }
+          ],
+          "choiceDestinations": [
+            {
+              "instructionIndex": 10,
+              "id": "line:4ab6c5a9",
+              "destination": 16
+            },
+            {
+              "instructionIndex": 11,
+              "id": "line:dc86c2de",
+              "destination": 21
+            }
+          ]
+        },
+        "mouth-full-speech": {
+          "node": "Ryan_4_intro",
+          "nodeSha256": "89398eaf5f98938c30d9217f95837c3bb1ab994b61482108c11f47c18c8308b6",
+          "instructionSpans": [
+            [
+              28,
+              60
+            ]
+          ],
+          "lines": [
+            {
+              "id": "line:390f05be",
+              "instructionIndex": 30,
+              "kind": "option",
+              "sourceSha256": "578f5563ae25f1ce05645399f40f01daea8a5289ac2e3104bc88df60bc5eefb3"
+            },
+            {
+              "id": "line:af3f02c9",
+              "instructionIndex": 31,
+              "kind": "option",
+              "sourceSha256": "c03386d6c9efb92af54f07168d78268528760512cf1dc1eedfc3659dace7767f"
+            },
+            {
+              "id": "line:156e0b50",
+              "instructionIndex": 42,
+              "kind": "line",
+              "sourceSha256": "d85dcd17cab55fde8384c0e2d173cb334e7bbe9d9ebacfe74db9743d726c61f2"
+            },
+            {
+              "id": "line:835e0c27",
+              "instructionIndex": 45,
+              "kind": "line",
+              "sourceSha256": "b9c2f8ae41c83ebe4f9b0272ef34549963fb800314eefe531dae7ca9949627db"
+            },
+            {
+              "id": "line:20cb68b9",
+              "instructionIndex": 46,
+              "kind": "line",
+              "sourceSha256": "696058e475fae76ad0a899219fc8592ce45fbd24a5e1634701ec864921c3c22f"
+            },
+            {
+              "id": "line:b6fb6fce",
+              "instructionIndex": 47,
+              "kind": "option",
+              "sourceSha256": "1f843189eaccc2b66389fa9ae3661d5ace4e12f0695fa00b2e36cebbeba5a6c0"
+            },
+            {
+              "id": "line:0caa6657",
+              "instructionIndex": 48,
+              "kind": "option",
+              "sourceSha256": "9cc8b0255238b35e0aee3000893f3a394df6e4b4cc19924daffbd7833ced2690"
+            },
+            {
+              "id": "line:9a9a6120",
+              "instructionIndex": 59,
+              "kind": "line",
+              "sourceSha256": "1facde273315d6364f7263755aa546ddc8a5ffc0ba75f904fedf7f61a37bf6e2"
+            }
+          ],
+          "choiceDestinations": [
+            {
+              "instructionIndex": 30,
+              "id": "line:390f05be",
+              "destination": 36
+            },
+            {
+              "instructionIndex": 31,
+              "id": "line:af3f02c9",
+              "destination": 38
+            },
+            {
+              "instructionIndex": 47,
+              "id": "line:b6fb6fce",
+              "destination": 53
+            },
+            {
+              "instructionIndex": 48,
+              "id": "line:0caa6657",
+              "destination": 55
+            }
+          ]
+        },
+        "salmon-guy-dragon": {
+          "node": "Ryan_5_Required_ryan_romanced",
+          "nodeSha256": "8ac6ebc619846e1db9c7d878ba29b4ad61723b6fb4bb32649d64fd0363213fc1",
+          "instructionSpans": [
+            [
+              0,
+              11
+            ],
+            [
+              47,
+              73
+            ]
+          ],
+          "lines": [
+            {
+              "id": "line:d9652dff",
+              "instructionIndex": 0,
+              "kind": "line",
+              "sourceSha256": "e61676df3c022293b0423559df0e83e613331e7f45cd53135328af5b93cc77fd"
+            },
+            {
+              "id": "line:7af04961",
+              "instructionIndex": 3,
+              "kind": "line",
+              "sourceSha256": "c022fa54258553ea7c1bca70ee0403e98569d0bb0d08c93352ca1f187626abb6"
+            },
+            {
+              "id": "line:ecc04e16",
+              "instructionIndex": 6,
+              "kind": "option",
+              "sourceSha256": "6c0884e4717c5d5b25da73ae82524d4b9fb6cf0faf8aa977680c783f97797350"
+            },
+            {
+              "id": "line:81905be1",
+              "instructionIndex": 7,
+              "kind": "option",
+              "sourceSha256": "bbedb233b6bbe2ea65110fefbd03583f06693d4a5b5e2c9caaa417e6a5465670"
+            },
+            {
+              "id": "line:412ba249",
+              "instructionIndex": 8,
+              "kind": "option",
+              "sourceSha256": "fb57b97d646f43c9ec4cfbaf50325879b9151c6fc59702f351ccf2001e4f2abe"
+            },
+            {
+              "id": "line:bd66082e",
+              "instructionIndex": 9,
+              "kind": "option",
+              "sourceSha256": "d2c0f4718541c24017053ea9bc6d5b4c0e58ba4a5a605971baed15f955fb48e1"
+            },
+            {
+              "id": "line:108de471",
+              "instructionIndex": 48,
+              "kind": "line",
+              "sourceSha256": "25f86d817a092ae107e0ea0c36fd69793ae98f63bb946ae75be6e65ba8ca04f7"
+            },
+            {
+              "id": "line:86bde306",
+              "instructionIndex": 49,
+              "kind": "line",
+              "sourceSha256": "38ae2aec596ab3566be636c1276b6ff47a58d9fa513b54fe0c706a0d49a755ee"
+            },
+            {
+              "id": "line:e5937e30",
+              "instructionIndex": 50,
+              "kind": "option",
+              "sourceSha256": "d7456d9e85366bc9a0ebeabb67da5a76945e23f4fb023cce881d4a1fe7131176"
+            },
+            {
+              "id": "line:fc571337",
+              "instructionIndex": 51,
+              "kind": "option",
+              "sourceSha256": "925a663e1b23d966ebf11d0fdef47b7a77f16d48de0fd5fdf00964f0cec338f4"
+            },
+            {
+              "id": "line:73a37947",
+              "instructionIndex": 57,
+              "kind": "line",
+              "sourceSha256": "14d1fddd0115ee0d129e03b0bf5ce4e5f20a5836490e76b2e4586311a2510dba"
+            },
+            {
+              "id": "line:c9f270de",
+              "instructionIndex": 58,
+              "kind": "line",
+              "sourceSha256": "6b59acab736bd3499c75dfa2f3b33448d1ad4d5960aad8d22201adbfa7cca9e1"
+            },
+            {
+              "id": "line:5fc277a9",
+              "instructionIndex": 61,
+              "kind": "line",
+              "sourceSha256": "334998266afc2476dbb133dbe1582662b1b8c689c1a0e005cc8790aa759b7e20"
+            },
+            {
+              "id": "line:6a671440",
+              "instructionIndex": 66,
+              "kind": "line",
+              "sourceSha256": "a02af61e18efb0f0335a6ec55cefe08398c58f473ea6a40d086ba8a93bcd85ab"
+            },
+            {
+              "id": "line:d0361dd9",
+              "instructionIndex": 67,
+              "kind": "line",
+              "sourceSha256": "cf73a93aa04fdd02aca53302cdcf46373e1c38b8013fd9e98236e53693c48436"
+            },
+            {
+              "id": "line:46061aae",
+              "instructionIndex": 68,
+              "kind": "line",
+              "sourceSha256": "8771d66a0a1ace3eb439075850a653f7facb9178c1ae2497f3e851e232f76b30"
+            },
+            {
+              "id": "line:d71ba53e",
+              "instructionIndex": 71,
+              "kind": "line",
+              "sourceSha256": "8cceef523eb8c739622a738e73c0f6c6a0746194a8786889105a66cb84ab770e"
+            }
+          ],
+          "choiceDestinations": [
+            {
+              "instructionIndex": 7,
+              "id": "line:81905be1",
+              "destination": 47
+            },
+            {
+              "instructionIndex": 50,
+              "id": "line:e5937e30",
+              "destination": 56
+            },
+            {
+              "instructionIndex": 51,
+              "id": "line:fc571337",
+              "destination": 65
+            }
+          ]
+        },
+        "movie-title-choices": {
+          "node": "Ryan_5_Required_ryan_romanced",
+          "nodeSha256": "8ac6ebc619846e1db9c7d878ba29b4ad61723b6fb4bb32649d64fd0363213fc1",
+          "instructionSpans": [
+            [
+              0,
+              11
+            ],
+            [
+              84,
+              125
+            ]
+          ],
+          "lines": [
+            {
+              "id": "line:d9652dff",
+              "instructionIndex": 0,
+              "kind": "line",
+              "sourceSha256": "e61676df3c022293b0423559df0e83e613331e7f45cd53135328af5b93cc77fd"
+            },
+            {
+              "id": "line:7af04961",
+              "instructionIndex": 3,
+              "kind": "line",
+              "sourceSha256": "c022fa54258553ea7c1bca70ee0403e98569d0bb0d08c93352ca1f187626abb6"
+            },
+            {
+              "id": "line:ecc04e16",
+              "instructionIndex": 6,
+              "kind": "option",
+              "sourceSha256": "6c0884e4717c5d5b25da73ae82524d4b9fb6cf0faf8aa977680c783f97797350"
+            },
+            {
+              "id": "line:81905be1",
+              "instructionIndex": 7,
+              "kind": "option",
+              "sourceSha256": "bbedb233b6bbe2ea65110fefbd03583f06693d4a5b5e2c9caaa417e6a5465670"
+            },
+            {
+              "id": "line:412ba249",
+              "instructionIndex": 8,
+              "kind": "option",
+              "sourceSha256": "fb57b97d646f43c9ec4cfbaf50325879b9151c6fc59702f351ccf2001e4f2abe"
+            },
+            {
+              "id": "line:bd66082e",
+              "instructionIndex": 9,
+              "kind": "option",
+              "sourceSha256": "d2c0f4718541c24017053ea9bc6d5b4c0e58ba4a5a605971baed15f955fb48e1"
+            },
+            {
+              "id": "line:2b560f59",
+              "instructionIndex": 85,
+              "kind": "line",
+              "sourceSha256": "3ee865676f6e4c9903fd4e855996034d731c7d27799b0aa56ab48db3f4824adb"
+            },
+            {
+              "id": "line:910706c0",
+              "instructionIndex": 88,
+              "kind": "line",
+              "sourceSha256": "435234dd4f3b10333f2ff6f8073fc320d6abc73d926adea81845138b699d0c89"
+            },
+            {
+              "id": "line:073701b7",
+              "instructionIndex": 91,
+              "kind": "line",
+              "sourceSha256": "0ef6ac4a015fbebd9788ed363d98b7f55443656c5915b6a1309edb000ad0db22"
+            },
+            {
+              "id": "line:962abe27",
+              "instructionIndex": 92,
+              "kind": "option",
+              "sourceSha256": "070ff9504dd2e237d15b68ed1e7795c144b21a292a3f8364aaecdcef25c7544d"
+            },
+            {
+              "id": "line:f1c14f75",
+              "instructionIndex": 93,
+              "kind": "option",
+              "sourceSha256": "b64ebbe5369b5bbf283d5dafff07dffd086f9b528974d447dad5e3755210dee0"
+            },
+            {
+              "id": "line:7e352505",
+              "instructionIndex": 94,
+              "kind": "option",
+              "sourceSha256": "45afe74b37ed6bb00238a3f9f101f494fea81f5885af35f7b10c5e52cff55cd3"
+            },
+            {
+              "id": "line:001ab950",
+              "instructionIndex": 100,
+              "kind": "line",
+              "sourceSha256": "a881cd2440d1325255c1764f822c8595605ae7f3b6963e8b3964102bd6d12141"
+            },
+            {
+              "id": "line:67f14802",
+              "instructionIndex": 103,
+              "kind": "line",
+              "sourceSha256": "1976e7477a26b6802bad7bcaa8915ab5ac8cd493ee46a065ae282e58ac75015d"
+            },
+            {
+              "id": "line:4b9046ec",
+              "instructionIndex": 108,
+              "kind": "line",
+              "sourceSha256": "00712e7d97f1872a74541e373e213e1789f0cf01b8f812a878039e572f6e7b96"
+            },
+            {
+              "id": "line:dda0419b",
+              "instructionIndex": 111,
+              "kind": "line",
+              "sourceSha256": "037e3c0c446d2b14c8c40beba2a407b9f05a5482542066932d24e02d94131718"
+            },
+            {
+              "id": "line:e8052272",
+              "instructionIndex": 116,
+              "kind": "line",
+              "sourceSha256": "b1ac5509459ca2a45b91c2366ad9d968fec580d49f859c476fc72af78f38ad60"
+            },
+            {
+              "id": "line:52542beb",
+              "instructionIndex": 119,
+              "kind": "line",
+              "sourceSha256": "1976e7477a26b6802bad7bcaa8915ab5ac8cd493ee46a065ae282e58ac75015d"
+            },
+            {
+              "id": "line:c4642c9c",
+              "instructionIndex": 123,
+              "kind": "line",
+              "sourceSha256": "eb547bf48bc9637ecc76e9ef0471df88d1e54b08e61c89e080f5f8f4287f2265"
+            }
+          ],
+          "choiceDestinations": [
+            {
+              "instructionIndex": 9,
+              "id": "line:bd66082e",
+              "destination": 84
+            },
+            {
+              "instructionIndex": 92,
+              "id": "line:962abe27",
+              "destination": 99
+            },
+            {
+              "instructionIndex": 93,
+              "id": "line:f1c14f75",
+              "destination": 107
+            },
+            {
+              "instructionIndex": 94,
+              "id": "line:7e352505",
+              "destination": 115
+            }
+          ]
+        },
+        "conrad-height-euphemism": {
+          "node": "ryan_food_dialogue",
+          "nodeSha256": "03bf2da4fb5edb2f1eda00716d1848aa555fec665f366c4004862da8255127e5",
+          "instructionSpans": [
+            [
+              128,
+              161
+            ],
+            [
+              238,
+              270
+            ]
+          ],
+          "lines": [
+            {
+              "id": "line:8b7915f4",
+              "instructionIndex": 128,
+              "kind": "line",
+              "sourceSha256": "cbe8e4adc9ca52df78d99c8e95c7e65eb0e64fcf764f58a7f0c05a496442d3c8"
+            },
+            {
+              "id": "line:31281c6d",
+              "instructionIndex": 129,
+              "kind": "option",
+              "sourceSha256": "ca545deecbd9950d272b4d5c621b568b68df758a4cb01240c9148b0e7552a90d"
+            },
+            {
+              "id": "line:a7181b1a",
+              "instructionIndex": 130,
+              "kind": "option",
+              "sourceSha256": "4a94ef80ae21582a9c6fc3481b08c4fbda52f71907abdf819c7ce3900f1e29d3"
+            },
+            {
+              "id": "line:3605a48a",
+              "instructionIndex": 139,
+              "kind": "line",
+              "sourceSha256": "0ea02ee3f0c5673dc9adea66bf4a50e9cdd6ec5deb6926714d66796cf32acb62"
+            },
+            {
+              "id": "line:a035a3fd",
+              "instructionIndex": 140,
+              "kind": "option",
+              "sourceSha256": "58b69c47fed8b38fcd7629d01f2944abb6865286f56944c367d87002cdb8099a"
+            },
+            {
+              "id": "line:69dd6a73",
+              "instructionIndex": 141,
+              "kind": "option",
+              "sourceSha256": "3ae2d547c997ca012669ccf32b5325a1527967e2986cac83ff0757aa832e7e2e"
+            },
+            {
+              "id": "line:45bc649d",
+              "instructionIndex": 147,
+              "kind": "line",
+              "sourceSha256": "474246952e0d1e5099be8ed2036d69959b4d54211e8edcc6f9911c315f55a59a"
+            },
+            {
+              "id": "line:d38c63ea",
+              "instructionIndex": 150,
+              "kind": "line",
+              "sourceSha256": "ed2ece6040ec8b40e2aa23adc24949dd1a82e41cd1cd2bb922cb4fe2604bff3d"
+            },
+            {
+              "id": "line:ffed6d04",
+              "instructionIndex": 157,
+              "kind": "line",
+              "sourceSha256": "c0fb8d4f932701986d67caf0459f865b41057035830fa67699996b97c931b550"
+            },
+            {
+              "id": "line:d9c91bca",
+              "instructionIndex": 238,
+              "kind": "line",
+              "sourceSha256": "c2acc8d962a0c936c50f5f66e84271adc77b439657c4b521e700b4f55eee0549"
+            },
+            {
+              "id": "line:48d4a45a",
+              "instructionIndex": 239,
+              "kind": "option",
+              "sourceSha256": "2374bdd10aea40ba23fe3f1266210a5b2a2c472f420c567a55036c2b92ea9856"
+            },
+            {
+              "id": "line:dee4a32d",
+              "instructionIndex": 240,
+              "kind": "option",
+              "sourceSha256": "58a5e5a5a9482e96df0e59d20682c6491aabc43d9c0f6e7a1a8cf84c5d9b1ffc"
+            },
+            {
+              "id": "line:b90f527f",
+              "instructionIndex": 249,
+              "kind": "line",
+              "sourceSha256": "3d14bcafbc3f21c6d2134116b9909d541b8a1ab408b0403bffda6d0000806e5b"
+            },
+            {
+              "id": "line:2f3f5508",
+              "instructionIndex": 250,
+              "kind": "option",
+              "sourceSha256": "882d8b921688234c3b48789d4223616c50803bb110bbaa71744854d10e2adfe6"
+            },
+            {
+              "id": "line:a0cb3f78",
+              "instructionIndex": 251,
+              "kind": "option",
+              "sourceSha256": "1ce76f0141c9f53bb58249e0f545b5bf5a21632edc67045f47016bdb9b1171b4"
+            },
+            {
+              "id": "line:956e5c91",
+              "instructionIndex": 257,
+              "kind": "line",
+              "sourceSha256": "eeedcdd5eaa1311039929d8aca4294d8a6e612eaed0114a6ff5c402151e9157f"
+            },
+            {
+              "id": "line:035e5be6",
+              "instructionIndex": 260,
+              "kind": "line",
+              "sourceSha256": "dcfc67b1e58c5a4951eb11d31a77c16eb0d8e99882a34961a6c6a965513f598a"
+            },
+            {
+              "id": "line:36fb380f",
+              "instructionIndex": 267,
+              "kind": "line",
+              "sourceSha256": "94ff2c4b836f0aef6610e6526c8290fce0d44d6f91debfe8ff21bc758b18e11d"
+            }
+          ],
+          "choiceDestinations": [
+            {
+              "instructionIndex": 129,
+              "id": "line:31281c6d",
+              "destination": 135
+            },
+            {
+              "instructionIndex": 130,
+              "id": "line:a7181b1a",
+              "destination": 137
+            },
+            {
+              "instructionIndex": 140,
+              "id": "line:a035a3fd",
+              "destination": 146
+            },
+            {
+              "instructionIndex": 141,
+              "id": "line:69dd6a73",
+              "destination": 154
+            },
+            {
+              "instructionIndex": 239,
+              "id": "line:48d4a45a",
+              "destination": 245
+            },
+            {
+              "instructionIndex": 240,
+              "id": "line:dee4a32d",
+              "destination": 247
+            },
+            {
+              "instructionIndex": 250,
+              "id": "line:2f3f5508",
+              "destination": 256
+            },
+            {
+              "instructionIndex": 251,
+              "id": "line:a0cb3f78",
+              "destination": 264
+            }
+          ]
+        }
+      }
+    },
+    "windows": {
+      "build": {
+        "version": "9/9/2026_ee944596",
+        "localization": 10611,
+        "project": 10707,
+        "globalSha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+        "assetSha256": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+        "localizationSha256": "7000b2b93b09f6a7b916e5f57c0dc6cf21ca9e6f9ddbfbc485bce704e8ce28d6",
+        "projectSha256": "f91af8c801958185885c2fc9adf3dfd5188b713c4f1ef264659e44292630b3b5"
+      },
+      "programSha256": "cbaaba712e0cc699d0cdf98f4b8b86060c666d6196fa91cd0a9d9a237c104466",
+      "groups": {
+        "editor-route-prompt": {
+          "node": "Ryan_4_intro",
+          "nodeSha256": "89398eaf5f98938c30d9217f95837c3bb1ab994b61482108c11f47c18c8308b6",
+          "instructionSpans": [
+            [
+              4,
+              28
+            ]
+          ],
+          "lines": [
+            {
+              "id": "line:dbab7a39",
+              "instructionIndex": 9,
+              "kind": "line",
+              "sourceSha256": "379060351b7eda00f4c86374c402b2a074ec4517f6ac0c84b8319385e7092539"
+            },
+            {
+              "id": "line:4ab6c5a9",
+              "instructionIndex": 10,
+              "kind": "option",
+              "sourceSha256": "8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d"
+            },
+            {
+              "id": "line:dc86c2de",
+              "instructionIndex": 11,
+              "kind": "option",
+              "sourceSha256": "9390298f3fb0c5b160498935d79cb139aef28e1c47358b4bbba61862b9c26e59"
+            }
+          ],
+          "choiceDestinations": [
+            {
+              "instructionIndex": 10,
+              "id": "line:4ab6c5a9",
+              "destination": 16
+            },
+            {
+              "instructionIndex": 11,
+              "id": "line:dc86c2de",
+              "destination": 21
+            }
+          ]
+        },
+        "mouth-full-speech": {
+          "node": "Ryan_4_intro",
+          "nodeSha256": "89398eaf5f98938c30d9217f95837c3bb1ab994b61482108c11f47c18c8308b6",
+          "instructionSpans": [
+            [
+              28,
+              60
+            ]
+          ],
+          "lines": [
+            {
+              "id": "line:390f05be",
+              "instructionIndex": 30,
+              "kind": "option",
+              "sourceSha256": "578f5563ae25f1ce05645399f40f01daea8a5289ac2e3104bc88df60bc5eefb3"
+            },
+            {
+              "id": "line:af3f02c9",
+              "instructionIndex": 31,
+              "kind": "option",
+              "sourceSha256": "c03386d6c9efb92af54f07168d78268528760512cf1dc1eedfc3659dace7767f"
+            },
+            {
+              "id": "line:156e0b50",
+              "instructionIndex": 42,
+              "kind": "line",
+              "sourceSha256": "d85dcd17cab55fde8384c0e2d173cb334e7bbe9d9ebacfe74db9743d726c61f2"
+            },
+            {
+              "id": "line:835e0c27",
+              "instructionIndex": 45,
+              "kind": "line",
+              "sourceSha256": "b9c2f8ae41c83ebe4f9b0272ef34549963fb800314eefe531dae7ca9949627db"
+            },
+            {
+              "id": "line:20cb68b9",
+              "instructionIndex": 46,
+              "kind": "line",
+              "sourceSha256": "696058e475fae76ad0a899219fc8592ce45fbd24a5e1634701ec864921c3c22f"
+            },
+            {
+              "id": "line:b6fb6fce",
+              "instructionIndex": 47,
+              "kind": "option",
+              "sourceSha256": "1f843189eaccc2b66389fa9ae3661d5ace4e12f0695fa00b2e36cebbeba5a6c0"
+            },
+            {
+              "id": "line:0caa6657",
+              "instructionIndex": 48,
+              "kind": "option",
+              "sourceSha256": "9cc8b0255238b35e0aee3000893f3a394df6e4b4cc19924daffbd7833ced2690"
+            },
+            {
+              "id": "line:9a9a6120",
+              "instructionIndex": 59,
+              "kind": "line",
+              "sourceSha256": "1facde273315d6364f7263755aa546ddc8a5ffc0ba75f904fedf7f61a37bf6e2"
+            }
+          ],
+          "choiceDestinations": [
+            {
+              "instructionIndex": 30,
+              "id": "line:390f05be",
+              "destination": 36
+            },
+            {
+              "instructionIndex": 31,
+              "id": "line:af3f02c9",
+              "destination": 38
+            },
+            {
+              "instructionIndex": 47,
+              "id": "line:b6fb6fce",
+              "destination": 53
+            },
+            {
+              "instructionIndex": 48,
+              "id": "line:0caa6657",
+              "destination": 55
+            }
+          ]
+        },
+        "salmon-guy-dragon": {
+          "node": "Ryan_5_Required_ryan_romanced",
+          "nodeSha256": "8ac6ebc619846e1db9c7d878ba29b4ad61723b6fb4bb32649d64fd0363213fc1",
+          "instructionSpans": [
+            [
+              0,
+              11
+            ],
+            [
+              47,
+              73
+            ]
+          ],
+          "lines": [
+            {
+              "id": "line:d9652dff",
+              "instructionIndex": 0,
+              "kind": "line",
+              "sourceSha256": "e61676df3c022293b0423559df0e83e613331e7f45cd53135328af5b93cc77fd"
+            },
+            {
+              "id": "line:7af04961",
+              "instructionIndex": 3,
+              "kind": "line",
+              "sourceSha256": "c022fa54258553ea7c1bca70ee0403e98569d0bb0d08c93352ca1f187626abb6"
+            },
+            {
+              "id": "line:ecc04e16",
+              "instructionIndex": 6,
+              "kind": "option",
+              "sourceSha256": "6c0884e4717c5d5b25da73ae82524d4b9fb6cf0faf8aa977680c783f97797350"
+            },
+            {
+              "id": "line:81905be1",
+              "instructionIndex": 7,
+              "kind": "option",
+              "sourceSha256": "bbedb233b6bbe2ea65110fefbd03583f06693d4a5b5e2c9caaa417e6a5465670"
+            },
+            {
+              "id": "line:412ba249",
+              "instructionIndex": 8,
+              "kind": "option",
+              "sourceSha256": "fb57b97d646f43c9ec4cfbaf50325879b9151c6fc59702f351ccf2001e4f2abe"
+            },
+            {
+              "id": "line:bd66082e",
+              "instructionIndex": 9,
+              "kind": "option",
+              "sourceSha256": "d2c0f4718541c24017053ea9bc6d5b4c0e58ba4a5a605971baed15f955fb48e1"
+            },
+            {
+              "id": "line:108de471",
+              "instructionIndex": 48,
+              "kind": "line",
+              "sourceSha256": "25f86d817a092ae107e0ea0c36fd69793ae98f63bb946ae75be6e65ba8ca04f7"
+            },
+            {
+              "id": "line:86bde306",
+              "instructionIndex": 49,
+              "kind": "line",
+              "sourceSha256": "38ae2aec596ab3566be636c1276b6ff47a58d9fa513b54fe0c706a0d49a755ee"
+            },
+            {
+              "id": "line:e5937e30",
+              "instructionIndex": 50,
+              "kind": "option",
+              "sourceSha256": "d7456d9e85366bc9a0ebeabb67da5a76945e23f4fb023cce881d4a1fe7131176"
+            },
+            {
+              "id": "line:fc571337",
+              "instructionIndex": 51,
+              "kind": "option",
+              "sourceSha256": "925a663e1b23d966ebf11d0fdef47b7a77f16d48de0fd5fdf00964f0cec338f4"
+            },
+            {
+              "id": "line:73a37947",
+              "instructionIndex": 57,
+              "kind": "line",
+              "sourceSha256": "14d1fddd0115ee0d129e03b0bf5ce4e5f20a5836490e76b2e4586311a2510dba"
+            },
+            {
+              "id": "line:c9f270de",
+              "instructionIndex": 58,
+              "kind": "line",
+              "sourceSha256": "6b59acab736bd3499c75dfa2f3b33448d1ad4d5960aad8d22201adbfa7cca9e1"
+            },
+            {
+              "id": "line:5fc277a9",
+              "instructionIndex": 61,
+              "kind": "line",
+              "sourceSha256": "334998266afc2476dbb133dbe1582662b1b8c689c1a0e005cc8790aa759b7e20"
+            },
+            {
+              "id": "line:6a671440",
+              "instructionIndex": 66,
+              "kind": "line",
+              "sourceSha256": "a02af61e18efb0f0335a6ec55cefe08398c58f473ea6a40d086ba8a93bcd85ab"
+            },
+            {
+              "id": "line:d0361dd9",
+              "instructionIndex": 67,
+              "kind": "line",
+              "sourceSha256": "cf73a93aa04fdd02aca53302cdcf46373e1c38b8013fd9e98236e53693c48436"
+            },
+            {
+              "id": "line:46061aae",
+              "instructionIndex": 68,
+              "kind": "line",
+              "sourceSha256": "8771d66a0a1ace3eb439075850a653f7facb9178c1ae2497f3e851e232f76b30"
+            },
+            {
+              "id": "line:d71ba53e",
+              "instructionIndex": 71,
+              "kind": "line",
+              "sourceSha256": "8cceef523eb8c739622a738e73c0f6c6a0746194a8786889105a66cb84ab770e"
+            }
+          ],
+          "choiceDestinations": [
+            {
+              "instructionIndex": 7,
+              "id": "line:81905be1",
+              "destination": 47
+            },
+            {
+              "instructionIndex": 50,
+              "id": "line:e5937e30",
+              "destination": 56
+            },
+            {
+              "instructionIndex": 51,
+              "id": "line:fc571337",
+              "destination": 65
+            }
+          ]
+        },
+        "movie-title-choices": {
+          "node": "Ryan_5_Required_ryan_romanced",
+          "nodeSha256": "8ac6ebc619846e1db9c7d878ba29b4ad61723b6fb4bb32649d64fd0363213fc1",
+          "instructionSpans": [
+            [
+              0,
+              11
+            ],
+            [
+              84,
+              125
+            ]
+          ],
+          "lines": [
+            {
+              "id": "line:d9652dff",
+              "instructionIndex": 0,
+              "kind": "line",
+              "sourceSha256": "e61676df3c022293b0423559df0e83e613331e7f45cd53135328af5b93cc77fd"
+            },
+            {
+              "id": "line:7af04961",
+              "instructionIndex": 3,
+              "kind": "line",
+              "sourceSha256": "c022fa54258553ea7c1bca70ee0403e98569d0bb0d08c93352ca1f187626abb6"
+            },
+            {
+              "id": "line:ecc04e16",
+              "instructionIndex": 6,
+              "kind": "option",
+              "sourceSha256": "6c0884e4717c5d5b25da73ae82524d4b9fb6cf0faf8aa977680c783f97797350"
+            },
+            {
+              "id": "line:81905be1",
+              "instructionIndex": 7,
+              "kind": "option",
+              "sourceSha256": "bbedb233b6bbe2ea65110fefbd03583f06693d4a5b5e2c9caaa417e6a5465670"
+            },
+            {
+              "id": "line:412ba249",
+              "instructionIndex": 8,
+              "kind": "option",
+              "sourceSha256": "fb57b97d646f43c9ec4cfbaf50325879b9151c6fc59702f351ccf2001e4f2abe"
+            },
+            {
+              "id": "line:bd66082e",
+              "instructionIndex": 9,
+              "kind": "option",
+              "sourceSha256": "d2c0f4718541c24017053ea9bc6d5b4c0e58ba4a5a605971baed15f955fb48e1"
+            },
+            {
+              "id": "line:2b560f59",
+              "instructionIndex": 85,
+              "kind": "line",
+              "sourceSha256": "3ee865676f6e4c9903fd4e855996034d731c7d27799b0aa56ab48db3f4824adb"
+            },
+            {
+              "id": "line:910706c0",
+              "instructionIndex": 88,
+              "kind": "line",
+              "sourceSha256": "435234dd4f3b10333f2ff6f8073fc320d6abc73d926adea81845138b699d0c89"
+            },
+            {
+              "id": "line:073701b7",
+              "instructionIndex": 91,
+              "kind": "line",
+              "sourceSha256": "0ef6ac4a015fbebd9788ed363d98b7f55443656c5915b6a1309edb000ad0db22"
+            },
+            {
+              "id": "line:962abe27",
+              "instructionIndex": 92,
+              "kind": "option",
+              "sourceSha256": "070ff9504dd2e237d15b68ed1e7795c144b21a292a3f8364aaecdcef25c7544d"
+            },
+            {
+              "id": "line:f1c14f75",
+              "instructionIndex": 93,
+              "kind": "option",
+              "sourceSha256": "b64ebbe5369b5bbf283d5dafff07dffd086f9b528974d447dad5e3755210dee0"
+            },
+            {
+              "id": "line:7e352505",
+              "instructionIndex": 94,
+              "kind": "option",
+              "sourceSha256": "45afe74b37ed6bb00238a3f9f101f494fea81f5885af35f7b10c5e52cff55cd3"
+            },
+            {
+              "id": "line:001ab950",
+              "instructionIndex": 100,
+              "kind": "line",
+              "sourceSha256": "a881cd2440d1325255c1764f822c8595605ae7f3b6963e8b3964102bd6d12141"
+            },
+            {
+              "id": "line:67f14802",
+              "instructionIndex": 103,
+              "kind": "line",
+              "sourceSha256": "1976e7477a26b6802bad7bcaa8915ab5ac8cd493ee46a065ae282e58ac75015d"
+            },
+            {
+              "id": "line:4b9046ec",
+              "instructionIndex": 108,
+              "kind": "line",
+              "sourceSha256": "00712e7d97f1872a74541e373e213e1789f0cf01b8f812a878039e572f6e7b96"
+            },
+            {
+              "id": "line:dda0419b",
+              "instructionIndex": 111,
+              "kind": "line",
+              "sourceSha256": "037e3c0c446d2b14c8c40beba2a407b9f05a5482542066932d24e02d94131718"
+            },
+            {
+              "id": "line:e8052272",
+              "instructionIndex": 116,
+              "kind": "line",
+              "sourceSha256": "b1ac5509459ca2a45b91c2366ad9d968fec580d49f859c476fc72af78f38ad60"
+            },
+            {
+              "id": "line:52542beb",
+              "instructionIndex": 119,
+              "kind": "line",
+              "sourceSha256": "1976e7477a26b6802bad7bcaa8915ab5ac8cd493ee46a065ae282e58ac75015d"
+            },
+            {
+              "id": "line:c4642c9c",
+              "instructionIndex": 123,
+              "kind": "line",
+              "sourceSha256": "eb547bf48bc9637ecc76e9ef0471df88d1e54b08e61c89e080f5f8f4287f2265"
+            }
+          ],
+          "choiceDestinations": [
+            {
+              "instructionIndex": 9,
+              "id": "line:bd66082e",
+              "destination": 84
+            },
+            {
+              "instructionIndex": 92,
+              "id": "line:962abe27",
+              "destination": 99
+            },
+            {
+              "instructionIndex": 93,
+              "id": "line:f1c14f75",
+              "destination": 107
+            },
+            {
+              "instructionIndex": 94,
+              "id": "line:7e352505",
+              "destination": 115
+            }
+          ]
+        },
+        "conrad-height-euphemism": {
+          "node": "ryan_food_dialogue",
+          "nodeSha256": "03bf2da4fb5edb2f1eda00716d1848aa555fec665f366c4004862da8255127e5",
+          "instructionSpans": [
+            [
+              128,
+              161
+            ],
+            [
+              238,
+              270
+            ]
+          ],
+          "lines": [
+            {
+              "id": "line:8b7915f4",
+              "instructionIndex": 128,
+              "kind": "line",
+              "sourceSha256": "cbe8e4adc9ca52df78d99c8e95c7e65eb0e64fcf764f58a7f0c05a496442d3c8"
+            },
+            {
+              "id": "line:31281c6d",
+              "instructionIndex": 129,
+              "kind": "option",
+              "sourceSha256": "ca545deecbd9950d272b4d5c621b568b68df758a4cb01240c9148b0e7552a90d"
+            },
+            {
+              "id": "line:a7181b1a",
+              "instructionIndex": 130,
+              "kind": "option",
+              "sourceSha256": "4a94ef80ae21582a9c6fc3481b08c4fbda52f71907abdf819c7ce3900f1e29d3"
+            },
+            {
+              "id": "line:3605a48a",
+              "instructionIndex": 139,
+              "kind": "line",
+              "sourceSha256": "0ea02ee3f0c5673dc9adea66bf4a50e9cdd6ec5deb6926714d66796cf32acb62"
+            },
+            {
+              "id": "line:a035a3fd",
+              "instructionIndex": 140,
+              "kind": "option",
+              "sourceSha256": "58b69c47fed8b38fcd7629d01f2944abb6865286f56944c367d87002cdb8099a"
+            },
+            {
+              "id": "line:69dd6a73",
+              "instructionIndex": 141,
+              "kind": "option",
+              "sourceSha256": "3ae2d547c997ca012669ccf32b5325a1527967e2986cac83ff0757aa832e7e2e"
+            },
+            {
+              "id": "line:45bc649d",
+              "instructionIndex": 147,
+              "kind": "line",
+              "sourceSha256": "474246952e0d1e5099be8ed2036d69959b4d54211e8edcc6f9911c315f55a59a"
+            },
+            {
+              "id": "line:d38c63ea",
+              "instructionIndex": 150,
+              "kind": "line",
+              "sourceSha256": "fc4c4ac0587e24dbcc8fb89e55989c4057bcba3e7444ac18b58191964f64a6a0"
+            },
+            {
+              "id": "line:ffed6d04",
+              "instructionIndex": 157,
+              "kind": "line",
+              "sourceSha256": "c0fb8d4f932701986d67caf0459f865b41057035830fa67699996b97c931b550"
+            },
+            {
+              "id": "line:d9c91bca",
+              "instructionIndex": 238,
+              "kind": "line",
+              "sourceSha256": "c2acc8d962a0c936c50f5f66e84271adc77b439657c4b521e700b4f55eee0549"
+            },
+            {
+              "id": "line:48d4a45a",
+              "instructionIndex": 239,
+              "kind": "option",
+              "sourceSha256": "2374bdd10aea40ba23fe3f1266210a5b2a2c472f420c567a55036c2b92ea9856"
+            },
+            {
+              "id": "line:dee4a32d",
+              "instructionIndex": 240,
+              "kind": "option",
+              "sourceSha256": "58a5e5a5a9482e96df0e59d20682c6491aabc43d9c0f6e7a1a8cf84c5d9b1ffc"
+            },
+            {
+              "id": "line:b90f527f",
+              "instructionIndex": 249,
+              "kind": "line",
+              "sourceSha256": "3d14bcafbc3f21c6d2134116b9909d541b8a1ab408b0403bffda6d0000806e5b"
+            },
+            {
+              "id": "line:2f3f5508",
+              "instructionIndex": 250,
+              "kind": "option",
+              "sourceSha256": "882d8b921688234c3b48789d4223616c50803bb110bbaa71744854d10e2adfe6"
+            },
+            {
+              "id": "line:a0cb3f78",
+              "instructionIndex": 251,
+              "kind": "option",
+              "sourceSha256": "871f43cb596daa3951d7c20e159accdb032c75cb640b9e61d5821f970e67c958"
+            },
+            {
+              "id": "line:956e5c91",
+              "instructionIndex": 257,
+              "kind": "line",
+              "sourceSha256": "eeedcdd5eaa1311039929d8aca4294d8a6e612eaed0114a6ff5c402151e9157f"
+            },
+            {
+              "id": "line:035e5be6",
+              "instructionIndex": 260,
+              "kind": "line",
+              "sourceSha256": "dcfc67b1e58c5a4951eb11d31a77c16eb0d8e99882a34961a6c6a965513f598a"
+            },
+            {
+              "id": "line:36fb380f",
+              "instructionIndex": 267,
+              "kind": "line",
+              "sourceSha256": "70300517b020a458d938da2e599713eb492a0aed8e3733187c6ca12ef725243c"
+            }
+          ],
+          "choiceDestinations": [
+            {
+              "instructionIndex": 129,
+              "id": "line:31281c6d",
+              "destination": 135
+            },
+            {
+              "instructionIndex": 130,
+              "id": "line:a7181b1a",
+              "destination": 137
+            },
+            {
+              "instructionIndex": 140,
+              "id": "line:a035a3fd",
+              "destination": 146
+            },
+            {
+              "instructionIndex": 141,
+              "id": "line:69dd6a73",
+              "destination": 154
+            },
+            {
+              "instructionIndex": 239,
+              "id": "line:48d4a45a",
+              "destination": 245
+            },
+            {
+              "instructionIndex": 240,
+              "id": "line:dee4a32d",
+              "destination": 247
+            },
+            {
+              "instructionIndex": 250,
+              "id": "line:2f3f5508",
+              "destination": 256
+            },
+            {
+              "instructionIndex": 251,
+              "id": "line:a0cb3f78",
+              "destination": 264
+            }
+          ]
+        }
+      }
+    }
+  },
+  "limitations": "Selected static scene spans and branch controls only. Surrounding route conditions, runtime reachability, other sources, target wording and editorial review remain open."
+}

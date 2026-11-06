@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "status": "incomplete",
+  "sourceGroupInventory": "localization/evidence/ryan-language-groups-20261107.json",
+  "sourceGroupInventorySha256": "cf1f5a203bfa2f6e41357dbb2799fee702e3494412ba53a598d5eae6181b0891",
+  "discoveryCoverage": "Five candidates identified in a coordinator reading of Ryan-named macOS Yarn nodes and bound to both builds. This is not exhaustive discovery, independent review or proof of runtime reachability. Other source families and route conditions need review; texture text is excluded by owner decision.",
+  "cases": [
+    {
+      "id": "editor-route-prompt",
+      "node": "Ryan_4_intro",
+      "sourceLineIds": ["line:dbab7a39", "line:4ab6c5a9", "line:dc86c2de"],
+      "observedSourceBehavior": "An $isEditor-conditioned prompt asks whether Ryan was suggested to Conrad. Its two choices write opposite values to $suggested_ryan_to_conrad before the scene continues.",
+      "invariant": "Keep the condition, yes/no branch identities and opposite state writes exact; do not silently remove these source IDs or infer that the prompt is visible in a released build.",
+      "adaptationRoute": "Determine final source scope and runtime behavior before deciding whether these labels need a target representation. Preserve all program controls and investigate dependencies in the romance registry.",
+      "nonTextDependencies": "The $isEditor and $suggested_ryan_to_conrad variables and instructions are source controls; code-side initialization and other runtime mutations require separate confirmation.",
+      "acceptanceScenarios": ["Under a controlled editor-state probe, each choice must write the original corresponding boolean.", "Reject any edit that swaps yes/no choices or rewrites the source control variable."],
+      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "needs-review", "structural": "partial", "runtimeVisual": "not-run"}
+    },
+    {
+      "id": "mouth-full-speech",
+      "node": "Ryan_4_intro",
+      "sourceLineIds": ["line:390f05be", "line:af3f02c9", "line:156e0b50", "line:835e0c27", "line:20cb68b9", "line:b6fb6fce", "line:0caa6657", "line:9a9a6120"],
+      "observedSourceBehavior": "Ryan carries a picnic basket in his mouth and several words are deliberately distorted; the player asks about his mouth and then agrees to open the gate.",
+      "invariant": "Keep the basket and full-mouth cause intelligible, consistently retain impaired speech including the final thanks, and preserve both sets of option identities.",
+      "adaptationRoute": "Prepare and review the entire exchange in Russian after the glossary gate; invent an intelligible speech effect rather than copying English spelling mechanically.",
+      "nonTextDependencies": "Basket, character pose and facial commands are relevant but have not been verified at runtime. The earlier editor-conditional flag prompt is separately registered as editor-route-prompt.",
+      "acceptanceScenarios": ["Exercise both opening replies and both gate replies, followed by the distorted thanks.", "Reject text that makes the speech distortion unexplained or fails to convey the basket."],
+      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "needs-review", "structural": "partial", "runtimeVisual": "not-run"}
+    },
+    {
+      "id": "salmon-guy-dragon",
+      "node": "Ryan_5_Required_ryan_romanced",
+      "sourceLineIds": ["line:d9652dff", "line:7af04961", "line:ecc04e16", "line:81905be1", "line:412ba249", "line:bd66082e", "line:108de471", "line:86bde306", "line:e5937e30", "line:fc571337", "line:73a37947", "line:c9f270de", "line:5fc277a9", "line:6a671440", "line:d0361dd9", "line:46061aae", "line:d71ba53e"],
+      "observedSourceBehavior": "In the seafood branch Ryan describes himself as a salmon guy and immediately corrects the human expression because he is a dragon; an alternative seafood response leads elsewhere.",
+      "invariant": "Keep the preference for salmon, the self-correction joke and the distinct alternative food branch without inventing a new dietary restriction.",
+      "adaptationRoute": "Adapt setup and self-correction together in idiomatic Russian, using the approved character glossary, before ordinary translation.",
+      "nonTextDependencies": "Date route, facial commands and option identities are recorded; runtime reachability and presentation remain unverified.",
+      "acceptanceScenarios": ["Select the meal branch and both responses to the seafood question.", "Reject a setup that makes Ryan's dragon self-correction meaningless."],
+      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "needs-review", "structural": "partial", "runtimeVisual": "not-run"}
+    },
+    {
+      "id": "movie-title-choices",
+      "node": "Ryan_5_Required_ryan_romanced",
+      "sourceLineIds": ["line:d9652dff", "line:7af04961", "line:ecc04e16", "line:81905be1", "line:412ba249", "line:bd66082e", "line:2b560f59", "line:910706c0", "line:073701b7", "line:962abe27", "line:f1c14f75", "line:7e352505", "line:001ab950", "line:67f14802", "line:4b9046ec", "line:dda0419b", "line:e8052272", "line:52542beb", "line:c4642c9c"],
+      "observedSourceBehavior": "The movie branch offers three distinct fictional titles; Ryan's follow-up differs for each and refers again to the Yip-Man series in one branch.",
+      "invariant": "Keep three distinct choices, their associated reactions and the title/series connection; preserve the source numeral 2 and the existing Yip concept.",
+      "adaptationRoute": "Consult the approved title and Yip glossary entries; review possible allusions and the full set of choices and reactions together before ordinary translation.",
+      "nonTextDependencies": "The titles overlap the Yip source case and the romance route registry; conditions, runtime layout and any further cultural references require review.",
+      "acceptanceScenarios": ["Choose each movie title and verify the corresponding reaction.", "Reject a Yip-Man title inconsistent with its later series reference or a changed numeral."],
+      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "needs-review", "structural": "partial", "runtimeVisual": "not-run"}
+    },
+    {
+      "id": "conrad-height-euphemism",
+      "node": "ryan_food_dialogue",
+      "sourceLineIds": ["line:8b7915f4", "line:31281c6d", "line:a7181b1a", "line:3605a48a", "line:a035a3fd", "line:69dd6a73", "line:45bc649d", "line:d38c63ea", "line:ffed6d04", "line:d9c91bca", "line:48d4a45a", "line:dee4a32d", "line:b90f527f", "line:2f3f5508", "line:a0cb3f78", "line:956e5c91", "line:035e5be6", "line:36fb380f"],
+      "observedSourceBehavior": "Two separate relationship paths refer to Conrad as tiny; one response on each path substitutes the same euphemism, with different follow-up reactions and alternative replies.",
+      "invariant": "Preserve the recurring euphemism and its relationship to Conrad's stature while keeping the two route contexts and option identities distinct.",
+      "adaptationRoute": "Decide a consistent Russian euphemism in both spans alongside the romance-route decisions and approved character terminology.",
+      "nonTextDependencies": "The spans lie under different route flags in the romance registry; three unrelated source values in the selected ranges differ in apostrophe spelling between builds. Runtime path selection remains unverified.",
+      "acceptanceScenarios": ["Exercise the euphemism and alternative reply in each of the two relationship paths.", "Reject inconsistent euphemisms or a change that swaps route-specific reactions."],
+      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "needs-review", "structural": "partial", "runtimeVisual": "not-run"}
+    }
+  ]
+}
