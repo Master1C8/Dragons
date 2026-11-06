@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "status": "incomplete",
+  "sourceGroupInventory": "localization/evidence/conrad-language-groups-20261107.json",
+  "sourceGroupInventorySha256": "54743814ab62a4f140db3ad3bfb93415dd0efe2084cdd98dc7f29844b2ea8770",
+  "discoveryCoverage": "Three candidates identified in a coordinator reading of Conrad-named macOS Yarn nodes, then bound to both builds. This is not exhaustive special-scene discovery, independent review or evidence of runtime reachability. Non-Conrad nodes, other resource families and dynamic consumers remain pending; texture text is excluded by owner decision.",
+  "cases": [
+    {
+      "id": "dirty-double-meaning",
+      "node": "Conrad_placed_mount_3",
+      "sourceLineIds": ["line:cc6e7856", "line:5a5e7f21", "line:31fa3bdf", "line:0372e0d1", "line:a7ca3ca8", "line:1d9b3531", "line:8bab3246", "line:283e56d8", "line:be0e51af", "line:045f5836", "line:926f5f41", "line:9542e7a6"],
+      "observedSourceBehavior": "Conrad contrasts not being physically dirty with being sexually dirty, using the same word and emphatic formatting. The player has two initial replies; one leads to a conditional continuation based on an earlier activity and a further reply.",
+      "invariant": "Preserve the contrast and suggestive meaning, the deliberate shrinking drawn-out opening, exact markup and the distinct branch identities; do not make the previous-activity condition part of translated text.",
+      "adaptationRoute": "Review both meanings and all replies together using an approved Russian glossary; choose actual target wording and feasible tag placement before ordinary translation.",
+      "nonTextDependencies": "The source uses size and italic markup, face commands and the $conrad_jerked_off_3 state. Runtime rendering, visibility and all state combinations remain unverified.",
+      "acceptanceScenarios": ["Exercise both first replies and both values of the recorded previous-activity condition.", "Reject wording that collapses both meanings or removes the intended progressive visual effect."],
+      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "needs-review", "structural": "partial", "runtimeVisual": "not-run"}
+    },
+    {
+      "id": "professional-double-meaning",
+      "node": "Conrad_finished_jerkoff_3",
+      "sourceLineIds": ["line:496134bc", "line:eaf45022", "line:7cc45755", "line:c6955ecc", "line:50a559bb", "line:5788e15c", "line:c1b8e62b", "line:3063100e", "line:a6531779", "line:1c021ee0", "line:8a321997", "line:29a77d09", "line:bf977a7e", "line:05c673e7", "line:93f67490"],
+      "observedSourceBehavior": "After the player calls their work professional in one reply, Conrad says he is too and clarifies that his expertise is receiving hand jobs. Another reply leads to a different response. A state-dependent continuation follows.",
+      "invariant": "Preserve the echoed claim and delayed sexual punchline, the distinct reply and state/branch identities, and the owner's neutral player wording strategy.",
+      "adaptationRoute": "Translate and review the complete setup and response as one group after the glossary gate; do not assume gendered language for the player.",
+      "nonTextDependencies": "The state variable $conrad_jerked_off_3 is read and written in the source; other state checks, scene presentation and runtime conditions require review.",
+      "acceptanceScenarios": ["Exercise the professional reply and alternative reply without merging their continuations.", "Reject wording that makes Conrad's echoed claim or delayed clarification incoherent."],
+      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "needs-review", "structural": "partial", "runtimeVisual": "not-run"}
+    },
+    {
+      "id": "big-c-nickname",
+      "node": "Conrad_5_outro_ryan_romanced",
+      "sourceLineIds": ["line:f57fc630", "line:f2527ed7", "line:646279a0", "line:17dbb9b7", "line:81ebbec0", "line:3bbab759", "line:ad8ab02e", "line:0e1fd4b0", "line:982fd3c7", "line:255362b9", "line:227eda5e", "line:b44edd29", "line:b36365ce", "line:d04df8f8"],
+      "observedSourceBehavior": "Conrad invents the nickname big C. One player reply repeats it questioningly and Conrad abandons it; the alternate reply addresses him by name.",
+      "invariant": "Keep the nickname tied to Conrad's name, preserve the questionable self-invented nickname and both branches, and maintain the source emphasis markup.",
+      "adaptationRoute": "After the approved Russian name/glossary is ready, choose and review one nickname and its repeated form together; preserve the joke rather than mechanically retaining an unexplained Latin initial.",
+      "nonTextDependencies": "Source face commands, italic markup and route context are bound to this node; actual rendering and route reachability remain unverified.",
+      "acceptanceScenarios": ["Exercise both responses and verify the appropriate continuation and convergence.", "Reject a nickname whose repeated form or connection to the approved character name is lost."],
+      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "needs-review", "structural": "partial", "runtimeVisual": "not-run"}
+    }
+  ]
+}
