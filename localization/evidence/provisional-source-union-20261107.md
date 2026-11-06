@@ -8,9 +8,9 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The working output `localization/work/source-inventory-20261107/combined-provisional-v2-20261107.json`
-has SHA-256 `6fa14564a75d6e87ecadb700de4234b10e5ab1d1099d404760a5fe0c0e85fbea`.
-It reproduced byte-for-byte from the declared inputs. Its 4,048 records comprise
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v3-20261107.json`
+has SHA-256 `02fb2a7f8a309023a37d80f9e41d50e289feceef899fa6dd826d90ab523c6e41`.
+Its 4,048 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
 and 1,818 literal-load occurrences from three inspected managed assemblies
@@ -20,6 +20,11 @@ counts are source records, not 4,048 visible phrases, completed translations,
 or a localization denominator. Each record retains its family, source values,
 platform locations and current provisional role; Yarn records also retain
 their node, instruction index and available option/substitution attributes.
+The v3 recipe additionally pins input-action reports and identifies 56
+source-bound input-control occurrences as preserve-exactly; see
+`input-action-preservation-20261107.md`. The earlier v2 output and its
+byte-for-byte reproduction are historical under the prior recipe, SHA-256
+`6fa14564a75d6e87ecadb700de4234b10e5ab1d1099d404760a5fe0c0e85fbea`.
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only three managed assemblies are

@@ -1,0 +1,234 @@
+{
+  "schema": 1,
+  "platform": "windows",
+  "assemblySha256": "8b1b439e62bff222fbce00869a3343422c77d08e384db7ed323b5e66f44195e2",
+  "jsonLiteral": {
+    "id": "System.Void InputSystem_Actions::.ctor()#ldstr:0",
+    "offset": 75,
+    "utf8Sha256": "06bf2f316bc61099bf49a7c654fedaa9918368f856052c729726a771ca8efc34",
+    "characters": 47305,
+    "consumer": "UnityEngine.InputSystem.InputActionAsset UnityEngine.InputSystem.InputActionAsset::FromJson(System.String)",
+    "role": "preserve-exactly-input-config"
+  },
+  "mapCount": 3,
+  "actionCount": 24,
+  "references": [
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:1",
+      "name": "Player",
+      "map": "Player",
+      "offset": 97,
+      "consumer": "UnityEngine.InputSystem.InputActionMap UnityEngine.InputSystem.InputActionAsset::FindActionMap(System.String,System.Boolean)",
+      "role": "map-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:2",
+      "name": "Move",
+      "map": "Player",
+      "offset": 120,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:3",
+      "name": "Look",
+      "map": "Player",
+      "offset": 143,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:4",
+      "name": "Attack",
+      "map": "Player",
+      "offset": 166,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:5",
+      "name": "Plap",
+      "map": "Player",
+      "offset": 189,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:6",
+      "name": "Crouch",
+      "map": "Player",
+      "offset": 212,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:7",
+      "name": "Jump",
+      "map": "Player",
+      "offset": 235,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:8",
+      "name": "Previous",
+      "map": "Player",
+      "offset": 258,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:9",
+      "name": "Next",
+      "map": "Player",
+      "offset": 281,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:10",
+      "name": "Sprint",
+      "map": "Player",
+      "offset": 304,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:11",
+      "name": "Pause",
+      "map": "Player",
+      "offset": 327,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:12",
+      "name": "LookGamepad",
+      "map": "Player",
+      "offset": 350,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:13",
+      "name": "UI",
+      "map": "UI",
+      "offset": 373,
+      "consumer": "UnityEngine.InputSystem.InputActionMap UnityEngine.InputSystem.InputActionAsset::FindActionMap(System.String,System.Boolean)",
+      "role": "map-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:14",
+      "name": "Navigate",
+      "map": "UI",
+      "offset": 396,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:15",
+      "name": "Submit",
+      "map": "UI",
+      "offset": 419,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:16",
+      "name": "Cancel",
+      "map": "UI",
+      "offset": 442,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:17",
+      "name": "Point",
+      "map": "UI",
+      "offset": 465,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:18",
+      "name": "Click",
+      "map": "UI",
+      "offset": 488,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:19",
+      "name": "RightClick",
+      "map": "UI",
+      "offset": 511,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:20",
+      "name": "MiddleClick",
+      "map": "UI",
+      "offset": 534,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:21",
+      "name": "ScrollWheel",
+      "map": "UI",
+      "offset": 557,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:22",
+      "name": "TrackedDevicePosition",
+      "map": "UI",
+      "offset": 580,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:23",
+      "name": "TrackedDeviceOrientation",
+      "map": "UI",
+      "offset": 603,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:24",
+      "name": "Cheats",
+      "map": "Cheats",
+      "offset": 626,
+      "consumer": "UnityEngine.InputSystem.InputActionMap UnityEngine.InputSystem.InputActionAsset::FindActionMap(System.String,System.Boolean)",
+      "role": "map-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:25",
+      "name": "InstantSunny",
+      "map": "Cheats",
+      "offset": 649,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:26",
+      "name": "InstantRain",
+      "map": "Cheats",
+      "offset": 672,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    },
+    {
+      "id": "System.Void InputSystem_Actions::.ctor()#ldstr:27",
+      "name": "InstantNight",
+      "map": "Cheats",
+      "offset": 695,
+      "consumer": "UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionMap::FindAction(System.String,System.Boolean)",
+      "role": "action-key"
+    }
+  ],
+  "limitations": "Static pinned constructor and embedded JSON only. User-visible input hints, dynamic remapping, other input assets and runtime behavior remain unverified."
+}

@@ -21,6 +21,10 @@ FILES = {
     'managed-strings-v2-windows-yarn-unity.json': 'fa21afafe9e5b239a82723a8caacfd3d005cafa38436ad3ada5e6b0ce1f6e1ee',
 }
 ROLES_SHA = '6219fb3d833a85a61e92392fe7c002738d8b105db61f3f39d82f27153ecfefdc'
+INPUT_ACTION_SHA = {
+    'macos': '6272020c5766750fe68af6c6601c8c70c6830bc47b9a558af9b20a124d2f6daf',
+    'windows': 'dd06623f942b4b5619a278f51ba7dc9c6de5845752d7776e4d06c7b86455a998',
+}
 
 
 def load_pinned(path, expected):
@@ -40,6 +44,8 @@ def build(work, roles_path):
     work = Path(work)
     docs = {name: load_pinned(work / name, expected) for name, expected in FILES.items()}
     roles = load_pinned(roles_path, ROLES_SHA)
+    inputs = {p: load_pinned(Path(roles_path).parent / f'input-actions-{p}-20261107.json', digest)
+              for p, digest in INPUT_ACTION_SHA.items()}
     scenes, ui, settings = docs['yarn-paired-scenes.json'], docs['ui-windows-all.json'], docs['settings-paired-source.json']
     records = {}
     for node, rows in scenes['scenes'].items():
@@ -101,18 +107,37 @@ def build(work, roles_path):
                       'source': {'macos': a['text'], 'windows': b['text']},
                       'location': {'macos': f'{asset}#{object_id}', 'windows': f'{asset}#{object_id}'}})
     for platform in ('macos', 'windows'):
+        report = inputs[platform]
+        if report['platform'] != platform:
+            raise ValueError('input action platform mismatch')
+        input_records = {row['id']: row for row in [report['jsonLiteral'], *report['references']]}
+        if len(input_records) != 28:
+            raise ValueError('input action identity mismatch')
+        matched_inputs = set()
         for suffix, assembly in (('', 'Assembly-CSharp'), ('-settings', 'UnityScriptableSettings'), ('-yarn-unity', 'YarnSpinner.Unity')):
             data = docs[f'managed-strings-v2-{platform}{suffix}.json']
             if len(data['strings']) != data['sourceInstructionCount']:
                 raise ValueError('managed source occurrence count mismatch')
             for row in data['strings']:
+                role = 'needs-classification'
+                if assembly == 'Assembly-CSharp' and row['id'] in input_records:
+                    expected = input_records[row['id']]
+                    if data['assemblySha256'] != report['assemblySha256'] or row['ilOffset'] != expected['offset']:
+                        raise ValueError('input action code binding changed')
+                    if ('utf8Sha256' in expected and dl.sha(row['value'].encode('utf-8')) != expected['utf8Sha256']) or (
+                            'name' in expected and row['value'] != expected['name']):
+                        raise ValueError('input action value changed')
+                    role = 'preserve-exactly-input-control'
+                    matched_inputs.add(row['id'])
                 put(records, {'id': f'managed:{platform}:{assembly}:{row["id"]}', 'family': 'managed',
-                              'role': 'needs-classification', 'assemblySha256': data['assemblySha256'],
+                              'role': role, 'assemblySha256': data['assemblySha256'],
                               'method': row['method'], 'ilOffset': row['ilOffset'],
                               'source': {platform: row['value']}, 'location': {platform: row['id']}})
+        if matched_inputs != set(input_records):
+            raise ValueError('input action source occurrences missing')
     counts = dict(sorted(Counter(x['family'] for x in records.values()).items()))
     return {'schema': 1, 'status': 'provisional-not-translation-ready', 'builds': scenes['builds'],
-            'sourceExportsSha256': FILES, 'uiRolesSha256': ROLES_SHA, 'familyCounts': counts,
+            'sourceExportsSha256': FILES, 'uiRolesSha256': ROLES_SHA, 'inputActionReportsSha256': INPUT_ACTION_SHA, 'familyCounts': counts,
             'entries': list(records.values()),
             'limitations': 'Provisional union of pinned discovery exports. Managed occurrences are build-specific and unpaired; roles, runtime visibility, other assemblies/resources, full exact-preservation contract, special-scene decisions and independent review remain incomplete. Texture text is excluded by owner decision.'}
 

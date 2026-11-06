@@ -41,6 +41,11 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertEqual(mac_only['source']['macos'], 'Invert Look Y')
         self.assertIsNone(mac_only['source']['windows'])
         self.assertTrue(all(len(r['source']) == 1 for r in result['entries'] if r['family'] == 'managed'))
+        controls = [r for r in result['entries'] if r['role'] == 'preserve-exactly-input-control']
+        self.assertEqual(len(controls), 56)
+        self.assertEqual(sum('macos' in r['source'] for r in controls), 28)
+        self.assertEqual(sum('windows' in r['source'] for r in controls), 28)
+        self.assertTrue(all('InputSystem_Actions::.ctor()' in r['method'] for r in controls))
         self.assertEqual(len(entries), sum(result['familyCounts'].values()))
 
 
