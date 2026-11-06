@@ -133,6 +133,13 @@ runtime checks remain required.
 
 ## Optional TextMeshPro interface strings
 
+For `level2`, both platform adapters preserve the 34 source-bound contributor
+name fields exactly. They verify the complete manifest against the original UI
+strings and reject an attempted name change before writing an output. Credit
+descriptions are separate fields and remain eligible for translation. This
+guard covers only the pinned name fields, not every credit or text source; see
+`evidence/credit-name-preservation-20261107.md`.
+
 For supported serialized assets, export the TextMeshPro UI objects separately:
 
 ```sh

@@ -12,6 +12,7 @@ from pathlib import Path
 import UnityPy
 import compare_yarn_versions as versions
 import dialogue_locale as dl
+import credit_name_preservation as credits
 import map_ui_hierarchy as ui_map
 import windows_settings_locale as windows_settings
 
@@ -93,6 +94,7 @@ def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale
                                              ui_map.WINDOWS_ASSETS[asset], yarn_semantics=False)
         if code != requested_locale:
             raise ValueError('requested UI locale does not match locale file')
+        credits.validate('windows', asset, dict(zip(keys, values)), translations)
     if dialogue_locale_file is not None and asset != 'sharedassets1.assets':
         raise ValueError('dialogue can be combined only with sharedassets1.assets')
     if settings_locale_file is not None and asset != 'sharedassets0.assets':
