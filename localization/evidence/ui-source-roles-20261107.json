@@ -1,0 +1,3366 @@
+{
+  "schema": 1,
+  "builds": {
+    "macos": {
+      "globalScriptAssetSha256": "391640e8e7df097a0d377c7a16552975d4821688841ea3460ec99587f4061d9e",
+      "sourceAssets": {
+        "level0": "4cabf35993c6726ab29e5cb24a1ce74a0fdf3d8061b0de3437415e56bcfa72f7",
+        "level1": "6af2815f16cba00e935fe110023ec91421c7d4107c5d8d31f55b70039b17d618",
+        "level2": "8a65d8f397e103abf65a6c9daba7668a4efe8c70fbe36f6b6eed676aaa99d808",
+        "level3": "32805c0339b0b67b4cc1dd27f8e150419e3f7374132d630921700281a14b833e",
+        "level4": "1aeac3e3368bbf5d3198dd6aee5f0969677a13b162158bb592655fdef03ef030",
+        "level5": "3241f65111d9639a3e1434e4d5e7dd9aa946eac554675dc4627093638e0341c8",
+        "level6": "975954bc0796ab7b60f06f075b3b0ad8ce367d07cede726d53847b61fbe112f6",
+        "sharedassets0.assets": "40713b00ce12582eebc427c0104e59becf438eb15803725b2248be3471a96aeb",
+        "sharedassets1.assets": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8"
+      }
+    },
+    "windows": {
+      "globalScriptAssetSha256": "910358d16b824bfd4b8398fea8c0295b5660471bb13a6708655096097bb0f018",
+      "sourceAssets": {
+        "level0": "55a296caa23347190faa063efdaab4cf5a37e00bdbffa455729b4aa346cddae0",
+        "level1": "203725518656d04df3341248a7d24bc27551ebd6c03e582977869f0acfc5a459",
+        "level2": "d8b5b6b96a2372e36087edb0a5e3e1fa6ccc2e0d1684698be2221771f02f438e",
+        "level3": "2443af34e7c6f2136ca58b0aa712a1c35ce13e60567e963ac7224575fa9d4eb1",
+        "level4": "2253e49bca20fa74c12d90eb6c9bd4eadf9ca83f36bcb451f41d7e71fd9bbc28",
+        "level5": "ecbae7085b8126e5a77087e1b60a9fb3568032bbae0818106f22640d0242530e",
+        "level6": "7312f5011f3222b623e0f06acc5107bcdc72a8487780d9fd5249446fd42be608",
+        "sharedassets0.assets": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3",
+        "sharedassets1.assets": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231"
+      }
+    }
+  },
+  "pairedHierarchyCount": 162,
+  "roleCounts": {
+    "cheat-menu-text-needs-visibility-review": 6,
+    "credit-description-translate-candidate": 36,
+    "credit-name-preserve-candidate": 34,
+    "dialogue-option-template-runtime-replaced": 1,
+    "dialogue-presenter-template-needs-consumer-review": 15,
+    "ending-text-translate-candidate": 1,
+    "gameplay-indicator-translate-candidate": 6,
+    "menu-text-translate-candidate": 12,
+    "pause-menu-translate-candidate": 24,
+    "settings-prefab-template-needs-consumer-review": 11,
+    "slot-new-label-serialized-candidate": 3,
+    "slot-progress-runtime-replaced": 6,
+    "version-display-needs-consumer-review": 7
+  },
+  "entries": [
+    {
+      "asset": "level0",
+      "hierarchy": [
+        "Menu",
+        "Menu_DeleteSave",
+        "Container",
+        "LoadSlotSelect",
+        "Question",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level0#5208",
+        "sourceTextSha256": "fae07a8540ff237b9be2b78521f0e92acf4a680ff3c95e788fb2e99de9682cf5"
+      },
+      "windows": {
+        "id": "level0#5187",
+        "sourceTextSha256": "fae07a8540ff237b9be2b78521f0e92acf4a680ff3c95e788fb2e99de9682cf5"
+      },
+      "sameText": true,
+      "provisionalRole": "menu-text-translate-candidate"
+    },
+    {
+      "asset": "level0",
+      "hierarchy": [
+        "Menu",
+        "Menu_Loading",
+        "Container",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level0#5203",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "windows": {
+        "id": "level0#5182",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "sameText": true,
+      "provisionalRole": "menu-text-translate-candidate"
+    },
+    {
+      "asset": "level0",
+      "hierarchy": [
+        "Menu",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "macos": {
+        "id": "level0#5211",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "windows": {
+        "id": "level0#5190",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "sameText": true,
+      "provisionalRole": "version-display-needs-consumer-review"
+    },
+    {
+      "asset": "level0",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsLoad",
+        "Container",
+        "LoadSlotSelect",
+        "LoadSlot1",
+        "LoadSlot1",
+        "Images",
+        "SlotProgress"
+      ],
+      "macos": {
+        "id": "level0#5202",
+        "sourceTextSha256": "5115709d2ef65ca2f0f8a4df45ab60d896dd09da43790e9f18500905a1335a6c"
+      },
+      "windows": {
+        "id": "level0#5181",
+        "sourceTextSha256": "5115709d2ef65ca2f0f8a4df45ab60d896dd09da43790e9f18500905a1335a6c"
+      },
+      "sameText": true,
+      "provisionalRole": "slot-progress-runtime-replaced"
+    },
+    {
+      "asset": "level0",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsLoad",
+        "Container",
+        "LoadSlotSelect",
+        "LoadSlot2",
+        "LoadSlot2",
+        "Images",
+        "SlotProgress"
+      ],
+      "macos": {
+        "id": "level0#5209",
+        "sourceTextSha256": "5115709d2ef65ca2f0f8a4df45ab60d896dd09da43790e9f18500905a1335a6c"
+      },
+      "windows": {
+        "id": "level0#5188",
+        "sourceTextSha256": "5115709d2ef65ca2f0f8a4df45ab60d896dd09da43790e9f18500905a1335a6c"
+      },
+      "sameText": true,
+      "provisionalRole": "slot-progress-runtime-replaced"
+    },
+    {
+      "asset": "level0",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsLoad",
+        "Container",
+        "LoadSlotSelect",
+        "LoadSlot3",
+        "LoadSlot3",
+        "Images",
+        "SlotProgress"
+      ],
+      "macos": {
+        "id": "level0#5206",
+        "sourceTextSha256": "5115709d2ef65ca2f0f8a4df45ab60d896dd09da43790e9f18500905a1335a6c"
+      },
+      "windows": {
+        "id": "level0#5185",
+        "sourceTextSha256": "5115709d2ef65ca2f0f8a4df45ab60d896dd09da43790e9f18500905a1335a6c"
+      },
+      "sameText": true,
+      "provisionalRole": "slot-progress-runtime-replaced"
+    },
+    {
+      "asset": "level0",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsNew",
+        "Container",
+        "GreyedSlotSelect",
+        "DeletableSaveSlot",
+        "NewSlot1",
+        "NewSlot1",
+        "Images",
+        "SlotProgress"
+      ],
+      "macos": {
+        "id": "level0#5212",
+        "sourceTextSha256": "18fdd549b2ed367ac0c74cbec1214644728515b30edbcb78e7d322757a7c8359"
+      },
+      "windows": {
+        "id": "level0#5191",
+        "sourceTextSha256": "18fdd549b2ed367ac0c74cbec1214644728515b30edbcb78e7d322757a7c8359"
+      },
+      "sameText": true,
+      "provisionalRole": "slot-progress-runtime-replaced"
+    },
+    {
+      "asset": "level0",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsNew",
+        "Container",
+        "GreyedSlotSelect",
+        "DeletableSaveSlot (1)",
+        "NewSlot2",
+        "NewSlot2",
+        "Images",
+        "SlotProgress"
+      ],
+      "macos": {
+        "id": "level0#5201",
+        "sourceTextSha256": "18fdd549b2ed367ac0c74cbec1214644728515b30edbcb78e7d322757a7c8359"
+      },
+      "windows": {
+        "id": "level0#5180",
+        "sourceTextSha256": "18fdd549b2ed367ac0c74cbec1214644728515b30edbcb78e7d322757a7c8359"
+      },
+      "sameText": true,
+      "provisionalRole": "slot-progress-runtime-replaced"
+    },
+    {
+      "asset": "level0",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsNew",
+        "Container",
+        "GreyedSlotSelect",
+        "DeletableSaveSlot (2)",
+        "NewSlot3",
+        "NewSlot3",
+        "Images",
+        "SlotProgress"
+      ],
+      "macos": {
+        "id": "level0#5210",
+        "sourceTextSha256": "18fdd549b2ed367ac0c74cbec1214644728515b30edbcb78e7d322757a7c8359"
+      },
+      "windows": {
+        "id": "level0#5189",
+        "sourceTextSha256": "18fdd549b2ed367ac0c74cbec1214644728515b30edbcb78e7d322757a7c8359"
+      },
+      "sameText": true,
+      "provisionalRole": "slot-progress-runtime-replaced"
+    },
+    {
+      "asset": "level0",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsNew",
+        "Container",
+        "NewSlotSelect",
+        "DeletableSaveSlot",
+        "NewSlot1",
+        "NewSlot1",
+        "Images",
+        "SlotProgress"
+      ],
+      "macos": {
+        "id": "level0#5205",
+        "sourceTextSha256": "18fdd549b2ed367ac0c74cbec1214644728515b30edbcb78e7d322757a7c8359"
+      },
+      "windows": {
+        "id": "level0#5184",
+        "sourceTextSha256": "18fdd549b2ed367ac0c74cbec1214644728515b30edbcb78e7d322757a7c8359"
+      },
+      "sameText": true,
+      "provisionalRole": "slot-new-label-serialized-candidate"
+    },
+    {
+      "asset": "level0",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsNew",
+        "Container",
+        "NewSlotSelect",
+        "DeletableSaveSlot (1)",
+        "NewSlot2",
+        "NewSlot2",
+        "Images",
+        "SlotProgress"
+      ],
+      "macos": {
+        "id": "level0#5204",
+        "sourceTextSha256": "18fdd549b2ed367ac0c74cbec1214644728515b30edbcb78e7d322757a7c8359"
+      },
+      "windows": {
+        "id": "level0#5183",
+        "sourceTextSha256": "18fdd549b2ed367ac0c74cbec1214644728515b30edbcb78e7d322757a7c8359"
+      },
+      "sameText": true,
+      "provisionalRole": "slot-new-label-serialized-candidate"
+    },
+    {
+      "asset": "level0",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsNew",
+        "Container",
+        "NewSlotSelect",
+        "DeletableSaveSlot (2)",
+        "NewSlot3",
+        "NewSlot3",
+        "Images",
+        "SlotProgress"
+      ],
+      "macos": {
+        "id": "level0#5207",
+        "sourceTextSha256": "18fdd549b2ed367ac0c74cbec1214644728515b30edbcb78e7d322757a7c8359"
+      },
+      "windows": {
+        "id": "level0#5186",
+        "sourceTextSha256": "18fdd549b2ed367ac0c74cbec1214644728515b30edbcb78e7d322757a7c8359"
+      },
+      "sameText": true,
+      "provisionalRole": "slot-new-label-serialized-candidate"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "FPSCanvas",
+        "ProgressBars",
+        "HorizontalGroup",
+        "ProgressBarBoots",
+        "Panel",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level1#3908",
+        "sourceTextSha256": "e4e9ab13fc7111768a3063b5f47a53846eda69eecc4044dd8e880a0021fb4c87"
+      },
+      "windows": {
+        "id": "level1#3861",
+        "sourceTextSha256": "e4e9ab13fc7111768a3063b5f47a53846eda69eecc4044dd8e880a0021fb4c87"
+      },
+      "sameText": true,
+      "provisionalRole": "gameplay-indicator-translate-candidate"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "FPSCanvas",
+        "ProgressBars",
+        "HorizontalGroup",
+        "ProgressBarNeedsBandages",
+        "Panel",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level1#3907",
+        "sourceTextSha256": "b98b0ff714ab541762f4100aa807bda84b719b44463f2e1ab16cb17774655666"
+      },
+      "windows": {
+        "id": "level1#3860",
+        "sourceTextSha256": "b98b0ff714ab541762f4100aa807bda84b719b44463f2e1ab16cb17774655666"
+      },
+      "sameText": true,
+      "provisionalRole": "gameplay-indicator-translate-candidate"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "FPSCanvas",
+        "ProgressBars",
+        "HorizontalGroup",
+        "ProgressBarNeedsHandjob",
+        "Panel",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level1#3902",
+        "sourceTextSha256": "dde8c08738fe9e596aabf53fbcf3e7ff97b120fe9ec880298cf59d5ed6db34ee"
+      },
+      "windows": {
+        "id": "level1#3855",
+        "sourceTextSha256": "dde8c08738fe9e596aabf53fbcf3e7ff97b120fe9ec880298cf59d5ed6db34ee"
+      },
+      "sameText": true,
+      "provisionalRole": "gameplay-indicator-translate-candidate"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "FPSCanvas",
+        "ProgressBars",
+        "HorizontalGroup",
+        "ProgressBarNeedsTalk",
+        "Panel",
+        "Text (TMP) (1)"
+      ],
+      "macos": {
+        "id": "level1#3901",
+        "sourceTextSha256": "c9c8bf1eae99e1dc97a71c9465589ba4af21426a5a4a0249cc77439d0f10e529"
+      },
+      "windows": {
+        "id": "level1#3853",
+        "sourceTextSha256": "c9c8bf1eae99e1dc97a71c9465589ba4af21426a5a4a0249cc77439d0f10e529"
+      },
+      "sameText": true,
+      "provisionalRole": "gameplay-indicator-translate-candidate"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "FPSCanvas",
+        "ProgressBars",
+        "HorizontalGroup",
+        "ProgressBarSoapy",
+        "Panel",
+        "Text (TMP) (2)"
+      ],
+      "macos": {
+        "id": "level1#3897",
+        "sourceTextSha256": "4b36f28b2cf376779bef4a9be21a1fa381e190db1d8f9d5b871b84e81e8416f3"
+      },
+      "windows": {
+        "id": "level1#3848",
+        "sourceTextSha256": "4b36f28b2cf376779bef4a9be21a1fa381e190db1d8f9d5b871b84e81e8416f3"
+      },
+      "sameText": true,
+      "provisionalRole": "gameplay-indicator-translate-candidate"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "FPSCanvas",
+        "ProgressBars",
+        "ProgressBarClean",
+        "Panel",
+        "Text (TMP) (3)"
+      ],
+      "macos": {
+        "id": "level1#3904",
+        "sourceTextSha256": "3e49dd16f3893026764455ec2610d4cabf5fb0e47c506543598c10a94bbca204"
+      },
+      "windows": {
+        "id": "level1#3857",
+        "sourceTextSha256": "3e49dd16f3893026764455ec2610d4cabf5fb0e47c506543598c10a94bbca204"
+      },
+      "sameText": true,
+      "provisionalRole": "gameplay-indicator-translate-candidate"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Character Name"
+      ],
+      "macos": {
+        "id": "level1#3900",
+        "sourceTextSha256": "0be57f3e2869a9e55098855986ab3f436b36885640bf8b201af90efacd425706"
+      },
+      "windows": {
+        "id": "level1#3852",
+        "sourceTextSha256": "0be57f3e2869a9e55098855986ab3f436b36885640bf8b201af90efacd425706"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Text"
+      ],
+      "macos": {
+        "id": "level1#3899",
+        "sourceTextSha256": "de17e1da40675ea3c66811031390018f80784a53926f60683a93496bcbb6d1ea"
+      },
+      "windows": {
+        "id": "level1#3851",
+        "sourceTextSha256": "de17e1da40675ea3c66811031390018f80784a53926f60683a93496bcbb6d1ea"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Options Presenter",
+        "Last Line"
+      ],
+      "macos": {
+        "id": "level1#3906",
+        "sourceTextSha256": "d3626c6dc19af6125427a7afe0d5721be8b511b955443250035d067a3fd3bd7e"
+      },
+      "windows": {
+        "id": "level1#3859",
+        "sourceTextSha256": "d3626c6dc19af6125427a7afe0d5721be8b511b955443250035d067a3fd3bd7e"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Loading",
+        "Container",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level1#3903",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "windows": {
+        "id": "level1#3856",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "sameText": true,
+      "provisionalRole": "menu-text-translate-candidate"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "DELETE SAVE CHEAT",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level1#3895",
+        "sourceTextSha256": "f942d1e183d020b635794546c43b30dc4da379b9bbc0c3a1ab5f1191fdb605e1"
+      },
+      "windows": {
+        "id": "level1#3846",
+        "sourceTextSha256": "f942d1e183d020b635794546c43b30dc4da379b9bbc0c3a1ab5f1191fdb605e1"
+      },
+      "sameText": true,
+      "provisionalRole": "cheat-menu-text-needs-visibility-review"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "INSTANT CLEAN CHEAT",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level1#3896",
+        "sourceTextSha256": "8d79248dc93dd3d8e52eb029a172baa518a75fbf2625add142bb23a51b1941a1"
+      },
+      "windows": {
+        "id": "level1#3847",
+        "sourceTextSha256": "8d79248dc93dd3d8e52eb029a172baa518a75fbf2625add142bb23a51b1941a1"
+      },
+      "sameText": true,
+      "provisionalRole": "cheat-menu-text-needs-visibility-review"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "INSTANT SKIP LEVEL CHEAT",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level1#3898",
+        "sourceTextSha256": "3948d2d06c4479006b3d0b4938bc80abecabdcc4ddc63ea5d20c9632cd1bda56"
+      },
+      "windows": {
+        "id": "level1#3850",
+        "sourceTextSha256": "3948d2d06c4479006b3d0b4938bc80abecabdcc4ddc63ea5d20c9632cd1bda56"
+      },
+      "sameText": true,
+      "provisionalRole": "cheat-menu-text-needs-visibility-review"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Options",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level1#3862",
+        "sourceTextSha256": "d0db8b5e364b6989e4b8f38a2b3846b87d99a51c1592ebf35d21cc66405a8e39"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Quit",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level1#3854",
+        "sourceTextSha256": "b3eb37acb66ba4bbe8fb1ba296815daf194be94f5a5fb50dab2fb5e4a57ba29e"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Resume",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level1#3849",
+        "sourceTextSha256": "d640c7421da066618a39daf4266da5f61f66a9b1afcd626481b831a17064965d"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level1#3863",
+        "sourceTextSha256": "ffb3c5f2edc34373e178ba8721cc085fc8011b4996998d5256fa3ed3462f6f13"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level1",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "macos": {
+        "id": "level1#3905",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "windows": {
+        "id": "level1#3858",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "sameText": true,
+      "provisionalRole": "version-display-needs-consumer-review"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#698",
+        "sourceTextSha256": "0548fc94d8b0c0e619de94081dc3c284cd74b5e066bb4064256c89378fd26bf9"
+      },
+      "windows": {
+        "id": "level2#655",
+        "sourceTextSha256": "0548fc94d8b0c0e619de94081dc3c284cd74b5e066bb4064256c89378fd26bf9"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#699",
+        "sourceTextSha256": "95639378358b68d30980f84a31c1e83dd0dd6ad157186e5ea5d78c7f4f5583b4"
+      },
+      "windows": {
+        "id": "level2#656",
+        "sourceTextSha256": "95639378358b68d30980f84a31c1e83dd0dd6ad157186e5ea5d78c7f4f5583b4"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (1)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#727",
+        "sourceTextSha256": "b076d0643d8294e911d8e3e67c6bdf2a7668dcafa8558a4d36b7442783d4b055"
+      },
+      "windows": {
+        "id": "level2#684",
+        "sourceTextSha256": "b076d0643d8294e911d8e3e67c6bdf2a7668dcafa8558a4d36b7442783d4b055"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (1)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#713",
+        "sourceTextSha256": "f0c6a834a89921dfab5c9ab4784cb02a3b4be041b8507a8f48f96ef6b0ca0f63"
+      },
+      "windows": {
+        "id": "level2#670",
+        "sourceTextSha256": "f0c6a834a89921dfab5c9ab4784cb02a3b4be041b8507a8f48f96ef6b0ca0f63"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (10)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#741",
+        "sourceTextSha256": "e8f6f391109241111216aa813c0c6303955fcb63b6b5e02e64842589b075b8a5"
+      },
+      "windows": {
+        "id": "level2#698",
+        "sourceTextSha256": "e8f6f391109241111216aa813c0c6303955fcb63b6b5e02e64842589b075b8a5"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (10)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#702",
+        "sourceTextSha256": "eb272d78dafd532ba90b75ec10fdfbf94ae44337607959280729e573251eec20"
+      },
+      "windows": {
+        "id": "level2#659",
+        "sourceTextSha256": "eb272d78dafd532ba90b75ec10fdfbf94ae44337607959280729e573251eec20"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (11)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#730",
+        "sourceTextSha256": "613487dfb05f676dba565b9d1b5eb257340991411ffd6a59631fcbb5762a3fe3"
+      },
+      "windows": {
+        "id": "level2#687",
+        "sourceTextSha256": "613487dfb05f676dba565b9d1b5eb257340991411ffd6a59631fcbb5762a3fe3"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (11)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#712",
+        "sourceTextSha256": "2982fa3f366a157214b2f5d5961e8294214ea85486f683fab3735dfc6b1b9068"
+      },
+      "windows": {
+        "id": "level2#669",
+        "sourceTextSha256": "2982fa3f366a157214b2f5d5961e8294214ea85486f683fab3735dfc6b1b9068"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (12)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#742",
+        "sourceTextSha256": "9ab99ec37a06d162fbd3144c25110123713db4acc6099226f053ba27f7dafd81"
+      },
+      "windows": {
+        "id": "level2#699",
+        "sourceTextSha256": "9ab99ec37a06d162fbd3144c25110123713db4acc6099226f053ba27f7dafd81"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (12)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#726",
+        "sourceTextSha256": "2786fd46c13233d1bfefb4f7b42b86c0c348786ed69811d3ca2ca1e6c8f627f4"
+      },
+      "windows": {
+        "id": "level2#683",
+        "sourceTextSha256": "2786fd46c13233d1bfefb4f7b42b86c0c348786ed69811d3ca2ca1e6c8f627f4"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (13)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#729",
+        "sourceTextSha256": "18afcd98e101c68652e4bb5a7654231b5ad071085d6aeb8b8e80904935085785"
+      },
+      "windows": {
+        "id": "level2#686",
+        "sourceTextSha256": "18afcd98e101c68652e4bb5a7654231b5ad071085d6aeb8b8e80904935085785"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (13)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#714",
+        "sourceTextSha256": "3a6ac8a265d09d48c899d145fba35c8c526c7950422797f0a5cc7ba17a621188"
+      },
+      "windows": {
+        "id": "level2#671",
+        "sourceTextSha256": "3a6ac8a265d09d48c899d145fba35c8c526c7950422797f0a5cc7ba17a621188"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (14)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#737",
+        "sourceTextSha256": "933cacf5a48e5892c745a995709ae7384c07e95214dc6a69e3456154b018d1c7"
+      },
+      "windows": {
+        "id": "level2#694",
+        "sourceTextSha256": "933cacf5a48e5892c745a995709ae7384c07e95214dc6a69e3456154b018d1c7"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (14)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#704",
+        "sourceTextSha256": "0aac6acbbfb65b177eaa13750cdaa372916713c95e24cde5405f04a3232f6d2f"
+      },
+      "windows": {
+        "id": "level2#661",
+        "sourceTextSha256": "0aac6acbbfb65b177eaa13750cdaa372916713c95e24cde5405f04a3232f6d2f"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (15)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#735",
+        "sourceTextSha256": "9f596d75fb21be5cb7bbb52f046782b952f694d26f5c32eee62497f4fa679d82"
+      },
+      "windows": {
+        "id": "level2#692",
+        "sourceTextSha256": "9f596d75fb21be5cb7bbb52f046782b952f694d26f5c32eee62497f4fa679d82"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (15)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#707",
+        "sourceTextSha256": "353e82a33e16fb825270f1008ce4273ac0ef1d9e15a06535ef6fffcceb754fea"
+      },
+      "windows": {
+        "id": "level2#664",
+        "sourceTextSha256": "353e82a33e16fb825270f1008ce4273ac0ef1d9e15a06535ef6fffcceb754fea"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (16)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#738",
+        "sourceTextSha256": "d6de61e6e492bf6318b4df078751046c8babf45e2dd2bd26bb1b5a33a19be502"
+      },
+      "windows": {
+        "id": "level2#695",
+        "sourceTextSha256": "d6de61e6e492bf6318b4df078751046c8babf45e2dd2bd26bb1b5a33a19be502"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (16)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#705",
+        "sourceTextSha256": "0d3334cea7a844a6cbebb38572aa10335124e25c94960fdb7f4fe43817a8b973"
+      },
+      "windows": {
+        "id": "level2#662",
+        "sourceTextSha256": "0d3334cea7a844a6cbebb38572aa10335124e25c94960fdb7f4fe43817a8b973"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (17)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#733",
+        "sourceTextSha256": "8dc9ce2264ae3d372245a07135874c59d44008f8783a39747bc56cc3967299ad"
+      },
+      "windows": {
+        "id": "level2#690",
+        "sourceTextSha256": "8dc9ce2264ae3d372245a07135874c59d44008f8783a39747bc56cc3967299ad"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (17)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#709",
+        "sourceTextSha256": "0d3334cea7a844a6cbebb38572aa10335124e25c94960fdb7f4fe43817a8b973"
+      },
+      "windows": {
+        "id": "level2#666",
+        "sourceTextSha256": "0d3334cea7a844a6cbebb38572aa10335124e25c94960fdb7f4fe43817a8b973"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (18)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#750",
+        "sourceTextSha256": "5bad495eb180ad5b91e96565e7766aefc905849a043bc8145026fa6f6f0b13c8"
+      },
+      "windows": {
+        "id": "level2#707",
+        "sourceTextSha256": "5bad495eb180ad5b91e96565e7766aefc905849a043bc8145026fa6f6f0b13c8"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (18)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#716",
+        "sourceTextSha256": "49eff747f7b66f70133bfe00aa8ac2d6b0fbee5be80e52537b0163f147d20418"
+      },
+      "windows": {
+        "id": "level2#673",
+        "sourceTextSha256": "49eff747f7b66f70133bfe00aa8ac2d6b0fbee5be80e52537b0163f147d20418"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (19)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#740",
+        "sourceTextSha256": "aac48e8922ea1e584b37d59650f84f69e385f82e4bd70eda1e9bc9617152a8b2"
+      },
+      "windows": {
+        "id": "level2#697",
+        "sourceTextSha256": "aac48e8922ea1e584b37d59650f84f69e385f82e4bd70eda1e9bc9617152a8b2"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (19)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#701",
+        "sourceTextSha256": "cafbbc8744fb3f887bd61a575d202ae594e8b9400379950a2c27b20536b9b7f0"
+      },
+      "windows": {
+        "id": "level2#658",
+        "sourceTextSha256": "cafbbc8744fb3f887bd61a575d202ae594e8b9400379950a2c27b20536b9b7f0"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (2)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#751",
+        "sourceTextSha256": "dba5a6469ecc734bd257d4c10cc7463aaca4a3fd18ebe1d1fedc2ce714e2cf60"
+      },
+      "windows": {
+        "id": "level2#708",
+        "sourceTextSha256": "dba5a6469ecc734bd257d4c10cc7463aaca4a3fd18ebe1d1fedc2ce714e2cf60"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (2)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#718",
+        "sourceTextSha256": "68a1922c728bdca9f65be4b85c12fd6c330e93e6bbfe923999d9e5dbde639430"
+      },
+      "windows": {
+        "id": "level2#675",
+        "sourceTextSha256": "68a1922c728bdca9f65be4b85c12fd6c330e93e6bbfe923999d9e5dbde639430"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (20)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#749",
+        "sourceTextSha256": "6c8791dc35c51e722dcb91171e042fd040f0e3e2911b6a22ce5e0f7215274d98"
+      },
+      "windows": {
+        "id": "level2#706",
+        "sourceTextSha256": "6c8791dc35c51e722dcb91171e042fd040f0e3e2911b6a22ce5e0f7215274d98"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (20)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#719",
+        "sourceTextSha256": "519bce7bc2dab47f9794b45e2e2c4f6d63f90d340f44a80f3504d5ad9f82ed9b"
+      },
+      "windows": {
+        "id": "level2#676",
+        "sourceTextSha256": "519bce7bc2dab47f9794b45e2e2c4f6d63f90d340f44a80f3504d5ad9f82ed9b"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (21)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#745",
+        "sourceTextSha256": "a203603f60623fe04051306a09775e818cf72297830f0d4a0c01880aef59916c"
+      },
+      "windows": {
+        "id": "level2#702",
+        "sourceTextSha256": "a203603f60623fe04051306a09775e818cf72297830f0d4a0c01880aef59916c"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (21)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#723",
+        "sourceTextSha256": "efe86698eb2a615816901e0ce8248a8d1d7bb30d5813657dc1737a31f486a140"
+      },
+      "windows": {
+        "id": "level2#680",
+        "sourceTextSha256": "efe86698eb2a615816901e0ce8248a8d1d7bb30d5813657dc1737a31f486a140"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (22)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#752",
+        "sourceTextSha256": "c8449a6f5de92b036ae7f366f73ba80a30a78e638a06a7fa8bf4b2d1a09d07db"
+      },
+      "windows": {
+        "id": "level2#709",
+        "sourceTextSha256": "c8449a6f5de92b036ae7f366f73ba80a30a78e638a06a7fa8bf4b2d1a09d07db"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (22)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#717",
+        "sourceTextSha256": "0d3334cea7a844a6cbebb38572aa10335124e25c94960fdb7f4fe43817a8b973"
+      },
+      "windows": {
+        "id": "level2#674",
+        "sourceTextSha256": "0d3334cea7a844a6cbebb38572aa10335124e25c94960fdb7f4fe43817a8b973"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (23)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#732",
+        "sourceTextSha256": "abb999c4cc496598065d3fe0fa3c7f55ad2e8db78c22077e20eaf1554d99ca63"
+      },
+      "windows": {
+        "id": "level2#689",
+        "sourceTextSha256": "abb999c4cc496598065d3fe0fa3c7f55ad2e8db78c22077e20eaf1554d99ca63"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (23)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#710",
+        "sourceTextSha256": "0d3334cea7a844a6cbebb38572aa10335124e25c94960fdb7f4fe43817a8b973"
+      },
+      "windows": {
+        "id": "level2#667",
+        "sourceTextSha256": "0d3334cea7a844a6cbebb38572aa10335124e25c94960fdb7f4fe43817a8b973"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (24)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#744",
+        "sourceTextSha256": "9a467ff6688ce05289a3922bba469dfc775b753cbcdbb2022ffb5a87be61bebc"
+      },
+      "windows": {
+        "id": "level2#701",
+        "sourceTextSha256": "9a467ff6688ce05289a3922bba469dfc775b753cbcdbb2022ffb5a87be61bebc"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (24)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#724",
+        "sourceTextSha256": "b1f6f885318185f37f9ab76483eec7271f56218336ce908346f607d277ff803b"
+      },
+      "windows": {
+        "id": "level2#681",
+        "sourceTextSha256": "b1f6f885318185f37f9ab76483eec7271f56218336ce908346f607d277ff803b"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (25)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#743",
+        "sourceTextSha256": "f3fa807efb640654a873ddd113547a4ae945968bbebe836080603aa83b948273"
+      },
+      "windows": {
+        "id": "level2#700",
+        "sourceTextSha256": "f3fa807efb640654a873ddd113547a4ae945968bbebe836080603aa83b948273"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (25)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#725",
+        "sourceTextSha256": "18ea5806aee7de2c39ce7c40122762dcdcc7481546b75d054ca7b1de7eb4ce0b"
+      },
+      "windows": {
+        "id": "level2#682",
+        "sourceTextSha256": "18ea5806aee7de2c39ce7c40122762dcdcc7481546b75d054ca7b1de7eb4ce0b"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (26)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#731",
+        "sourceTextSha256": "8a09eb97a7cce77e8d7ee5c4d56504fc68a30121675b8f3488b211cc67952e70"
+      },
+      "windows": {
+        "id": "level2#688",
+        "sourceTextSha256": "8a09eb97a7cce77e8d7ee5c4d56504fc68a30121675b8f3488b211cc67952e70"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (26)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#711",
+        "sourceTextSha256": "7d3be2c5e37913a0be4392ade3c107b949cd4adb7ea3b0df9f828eb1679f5bd0"
+      },
+      "windows": {
+        "id": "level2#668",
+        "sourceTextSha256": "7d3be2c5e37913a0be4392ade3c107b949cd4adb7ea3b0df9f828eb1679f5bd0"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (3)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#748",
+        "sourceTextSha256": "cf409b6f74dd7508a2e4ed7db63e303c3788db311ac74984021850fb6af826bc"
+      },
+      "windows": {
+        "id": "level2#705",
+        "sourceTextSha256": "cf409b6f74dd7508a2e4ed7db63e303c3788db311ac74984021850fb6af826bc"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (3)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#722",
+        "sourceTextSha256": "2ed020831ca96fb6a24834731e4ef4ac877c432705339920485597b2deb51bee"
+      },
+      "windows": {
+        "id": "level2#679",
+        "sourceTextSha256": "2ed020831ca96fb6a24834731e4ef4ac877c432705339920485597b2deb51bee"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (4)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#739",
+        "sourceTextSha256": "6ffa3aeffc3db90b669605aedc1434b379a035afff94bfe7ee9ee4ce2f878099"
+      },
+      "windows": {
+        "id": "level2#696",
+        "sourceTextSha256": "6ffa3aeffc3db90b669605aedc1434b379a035afff94bfe7ee9ee4ce2f878099"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (4)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#703",
+        "sourceTextSha256": "a8d44b781e51fdee3587093954b51c3ab583ac48eab60bcb3f1021c9e2f32ae8"
+      },
+      "windows": {
+        "id": "level2#660",
+        "sourceTextSha256": "a8d44b781e51fdee3587093954b51c3ab583ac48eab60bcb3f1021c9e2f32ae8"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (5)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#736",
+        "sourceTextSha256": "068ae96dc695056f2c94564307cc90c759d3cc06c24588d25da3f0f2eb2909dc"
+      },
+      "windows": {
+        "id": "level2#693",
+        "sourceTextSha256": "068ae96dc695056f2c94564307cc90c759d3cc06c24588d25da3f0f2eb2909dc"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (5)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#706",
+        "sourceTextSha256": "130adb8b5416455de6b83cbb03aa568f29fa02df0ce6413fb7c4e57bd73d1618"
+      },
+      "windows": {
+        "id": "level2#663",
+        "sourceTextSha256": "130adb8b5416455de6b83cbb03aa568f29fa02df0ce6413fb7c4e57bd73d1618"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (6)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#734",
+        "sourceTextSha256": "9713ee2716c21c9fad82ca6946626307ad7c534786a68837e48003f838cbf545"
+      },
+      "windows": {
+        "id": "level2#691",
+        "sourceTextSha256": "9713ee2716c21c9fad82ca6946626307ad7c534786a68837e48003f838cbf545"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (6)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#708",
+        "sourceTextSha256": "6ad2a61accf9a333251efb7b12a81ba7301be42ddd8c1dcae47e1cc61055a75a"
+      },
+      "windows": {
+        "id": "level2#665",
+        "sourceTextSha256": "6ad2a61accf9a333251efb7b12a81ba7301be42ddd8c1dcae47e1cc61055a75a"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (7)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#746",
+        "sourceTextSha256": "ff087b38e9d7de21ba146a8e6ccdaa1057bcebbad05fb2114f8b542d0c9be97d"
+      },
+      "windows": {
+        "id": "level2#703",
+        "sourceTextSha256": "ff087b38e9d7de21ba146a8e6ccdaa1057bcebbad05fb2114f8b542d0c9be97d"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (7)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#721",
+        "sourceTextSha256": "a78a42eddd896aa98c45c4d023064d6b70f9ae1fcc6cb8e8d6fa04cac6df9fb6"
+      },
+      "windows": {
+        "id": "level2#678",
+        "sourceTextSha256": "a78a42eddd896aa98c45c4d023064d6b70f9ae1fcc6cb8e8d6fa04cac6df9fb6"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (8)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#728",
+        "sourceTextSha256": "4a44ba982588f650e95d8fb30b37fb2c57d525fb00aa367e97c900fa083f0b66"
+      },
+      "windows": {
+        "id": "level2#685",
+        "sourceTextSha256": "4a44ba982588f650e95d8fb30b37fb2c57d525fb00aa367e97c900fa083f0b66"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (8)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#715",
+        "sourceTextSha256": "8e0fd89cc7d12fcbfc0246671c80d9d852ee10d4b30480f5f093e4ba3931c6ac"
+      },
+      "windows": {
+        "id": "level2#672",
+        "sourceTextSha256": "8e0fd89cc7d12fcbfc0246671c80d9d852ee10d4b30480f5f093e4ba3931c6ac"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (9)",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#747",
+        "sourceTextSha256": "3a0dd39171c7b65b79e063189d14700841ccd26b36eb7415fbcb54262be1ca02"
+      },
+      "windows": {
+        "id": "level2#704",
+        "sourceTextSha256": "3a0dd39171c7b65b79e063189d14700841ccd26b36eb7415fbcb54262be1ca02"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (9)",
+        "SFX"
+      ],
+      "macos": {
+        "id": "level2#720",
+        "sourceTextSha256": "0335f28c78f070f867e06aeebc46fdfab53fcaac3f9a93a9a3cdf8f3dcd1aa65"
+      },
+      "windows": {
+        "id": "level2#677",
+        "sourceTextSha256": "0335f28c78f070f867e06aeebc46fdfab53fcaac3f9a93a9a3cdf8f3dcd1aa65"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit",
+        "Panel",
+        "Contributions"
+      ],
+      "macos": {
+        "id": "level2#700",
+        "sourceTextSha256": "bd237658a4713810be7878e0d03bbfe20551d682f07db06bae99b2259c2f6d03"
+      },
+      "windows": {
+        "id": "level2#657",
+        "sourceTextSha256": "bd237658a4713810be7878e0d03bbfe20551d682f07db06bae99b2259c2f6d03"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit",
+        "Panel",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#754",
+        "sourceTextSha256": "9a467ff6688ce05289a3922bba469dfc775b753cbcdbb2022ffb5a87be61bebc"
+      },
+      "windows": {
+        "id": "level2#711",
+        "sourceTextSha256": "9a467ff6688ce05289a3922bba469dfc775b753cbcdbb2022ffb5a87be61bebc"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (1)",
+        "Panel",
+        "Contributions"
+      ],
+      "macos": {
+        "id": "level2#758",
+        "sourceTextSha256": "f1309e22833f158e7891fad85e696ce288a2a5927e60b8e0a9235cdf5d814d91"
+      },
+      "windows": {
+        "id": "level2#716",
+        "sourceTextSha256": "f1309e22833f158e7891fad85e696ce288a2a5927e60b8e0a9235cdf5d814d91"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (1)",
+        "Panel",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#692",
+        "sourceTextSha256": "d6de61e6e492bf6318b4df078751046c8babf45e2dd2bd26bb1b5a33a19be502"
+      },
+      "windows": {
+        "id": "level2#649",
+        "sourceTextSha256": "d6de61e6e492bf6318b4df078751046c8babf45e2dd2bd26bb1b5a33a19be502"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (2)",
+        "Panel",
+        "Contributions"
+      ],
+      "macos": {
+        "id": "level2#760",
+        "sourceTextSha256": "f3d469b0ea13e32451382203310b632a5fbcc89b25557a5420fc63f54ed661ff"
+      },
+      "windows": {
+        "id": "level2#718",
+        "sourceTextSha256": "f3d469b0ea13e32451382203310b632a5fbcc89b25557a5420fc63f54ed661ff"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (2)",
+        "Panel",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#697",
+        "sourceTextSha256": "abb999c4cc496598065d3fe0fa3c7f55ad2e8db78c22077e20eaf1554d99ca63"
+      },
+      "windows": {
+        "id": "level2#654",
+        "sourceTextSha256": "abb999c4cc496598065d3fe0fa3c7f55ad2e8db78c22077e20eaf1554d99ca63"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (3)",
+        "Panel",
+        "Contributions"
+      ],
+      "macos": {
+        "id": "level2#756",
+        "sourceTextSha256": "7d1d5c7f5dc48ea4b149b38162bafcc113bffce4d1b1de080b5773db673e2c24"
+      },
+      "windows": {
+        "id": "level2#714",
+        "sourceTextSha256": "7d1d5c7f5dc48ea4b149b38162bafcc113bffce4d1b1de080b5773db673e2c24"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (3)",
+        "Panel",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#693",
+        "sourceTextSha256": "5bc426e8d81e2f4136a562fac893c2229e3faa99d97df09ab604a2f8a0c0a60c"
+      },
+      "windows": {
+        "id": "level2#650",
+        "sourceTextSha256": "5bc426e8d81e2f4136a562fac893c2229e3faa99d97df09ab604a2f8a0c0a60c"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (4)",
+        "Panel",
+        "Contributions"
+      ],
+      "macos": {
+        "id": "level2#759",
+        "sourceTextSha256": "4bf1bfd49242480801dfc099c1aaaeed678a10123a89d662a6dffc74bcc34cd6"
+      },
+      "windows": {
+        "id": "level2#717",
+        "sourceTextSha256": "4bf1bfd49242480801dfc099c1aaaeed678a10123a89d662a6dffc74bcc34cd6"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (4)",
+        "Panel",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#696",
+        "sourceTextSha256": "8dc9ce2264ae3d372245a07135874c59d44008f8783a39747bc56cc3967299ad"
+      },
+      "windows": {
+        "id": "level2#653",
+        "sourceTextSha256": "8dc9ce2264ae3d372245a07135874c59d44008f8783a39747bc56cc3967299ad"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (5)",
+        "Panel",
+        "Contributions"
+      ],
+      "macos": {
+        "id": "level2#761",
+        "sourceTextSha256": "dd3543e1d5e16d95c065a3ce2bf611205d035ce9a2ab9903f01d680ed567dd5a"
+      },
+      "windows": {
+        "id": "level2#719",
+        "sourceTextSha256": "dd3543e1d5e16d95c065a3ce2bf611205d035ce9a2ab9903f01d680ed567dd5a"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (5)",
+        "Panel",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#695",
+        "sourceTextSha256": "c8449a6f5de92b036ae7f366f73ba80a30a78e638a06a7fa8bf4b2d1a09d07db"
+      },
+      "windows": {
+        "id": "level2#652",
+        "sourceTextSha256": "c8449a6f5de92b036ae7f366f73ba80a30a78e638a06a7fa8bf4b2d1a09d07db"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (6)",
+        "Panel",
+        "Contributions"
+      ],
+      "macos": {
+        "id": "level2#757",
+        "sourceTextSha256": "6eb00b4b2614a144d41ccdf709017a675953fae2df6cfd6b397bd9e4d8708461"
+      },
+      "windows": {
+        "id": "level2#715",
+        "sourceTextSha256": "6eb00b4b2614a144d41ccdf709017a675953fae2df6cfd6b397bd9e4d8708461"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (6)",
+        "Panel",
+        "Name"
+      ],
+      "macos": {
+        "id": "level2#694",
+        "sourceTextSha256": "7e8c729e4e4ecc320cb411c4d1419bf5fbad733212d4e9491b7630aaef0b8b1c"
+      },
+      "windows": {
+        "id": "level2#651",
+        "sourceTextSha256": "7e8c729e4e4ecc320cb411c4d1419bf5fbad733212d4e9491b7630aaef0b8b1c"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-name-preserve-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Spacer",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level2#691",
+        "sourceTextSha256": "e9ef3ed08e160ae308cb9e8cd0cf24ead2f869b2df16ce4c86f52ea7b1ba9ce0"
+      },
+      "windows": {
+        "id": "level2#646",
+        "sourceTextSha256": "e9ef3ed08e160ae308cb9e8cd0cf24ead2f869b2df16ce4c86f52ea7b1ba9ce0"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "PanelThanks",
+        "ThanksForPlaying"
+      ],
+      "macos": {
+        "id": "level2#689",
+        "sourceTextSha256": "b8564290c0e0b5a8c94a149c2d943d70e152ae9fae7d54391595188fd6d2707a"
+      },
+      "windows": {
+        "id": "level2#644",
+        "sourceTextSha256": "b8564290c0e0b5a8c94a149c2d943d70e152ae9fae7d54391595188fd6d2707a"
+      },
+      "sameText": true,
+      "provisionalRole": "credit-description-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "GameOver!"
+      ],
+      "macos": {
+        "id": "level2#690",
+        "sourceTextSha256": "add48d5d462bfb1fdef6b583fc4ff17ab0215fddc12a3d7451daa106a7e21a97"
+      },
+      "windows": {
+        "id": "level2#645",
+        "sourceTextSha256": "add48d5d462bfb1fdef6b583fc4ff17ab0215fddc12a3d7451daa106a7e21a97"
+      },
+      "sameText": true,
+      "provisionalRole": "ending-text-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Loading",
+        "Container",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level2#755",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "windows": {
+        "id": "level2#712",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "sameText": true,
+      "provisionalRole": "menu-text-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "DELETE SAVE CHEAT",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level2#763",
+        "sourceTextSha256": "f942d1e183d020b635794546c43b30dc4da379b9bbc0c3a1ab5f1191fdb605e1"
+      },
+      "windows": {
+        "id": "level2#722",
+        "sourceTextSha256": "f942d1e183d020b635794546c43b30dc4da379b9bbc0c3a1ab5f1191fdb605e1"
+      },
+      "sameText": true,
+      "provisionalRole": "cheat-menu-text-needs-visibility-review"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "INSTANT CLEAN CHEAT",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level2#764",
+        "sourceTextSha256": "8d79248dc93dd3d8e52eb029a172baa518a75fbf2625add142bb23a51b1941a1"
+      },
+      "windows": {
+        "id": "level2#723",
+        "sourceTextSha256": "8d79248dc93dd3d8e52eb029a172baa518a75fbf2625add142bb23a51b1941a1"
+      },
+      "sameText": true,
+      "provisionalRole": "cheat-menu-text-needs-visibility-review"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "INSTANT SKIP LEVEL CHEAT",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level2#762",
+        "sourceTextSha256": "3948d2d06c4479006b3d0b4938bc80abecabdcc4ddc63ea5d20c9632cd1bda56"
+      },
+      "windows": {
+        "id": "level2#720",
+        "sourceTextSha256": "3948d2d06c4479006b3d0b4938bc80abecabdcc4ddc63ea5d20c9632cd1bda56"
+      },
+      "sameText": true,
+      "provisionalRole": "cheat-menu-text-needs-visibility-review"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Options",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level2#648",
+        "sourceTextSha256": "d0db8b5e364b6989e4b8f38a2b3846b87d99a51c1592ebf35d21cc66405a8e39"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Quit",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level2#713",
+        "sourceTextSha256": "b3eb37acb66ba4bbe8fb1ba296815daf194be94f5a5fb50dab2fb5e4a57ba29e"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Resume",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level2#721",
+        "sourceTextSha256": "d640c7421da066618a39daf4266da5f61f66a9b1afcd626481b831a17064965d"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level2#647",
+        "sourceTextSha256": "ffb3c5f2edc34373e178ba8721cc085fc8011b4996998d5256fa3ed3462f6f13"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level2",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "macos": {
+        "id": "level2#753",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "windows": {
+        "id": "level2#710",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "sameText": true,
+      "provisionalRole": "version-display-needs-consumer-review"
+    },
+    {
+      "asset": "level3",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Character Name"
+      ],
+      "macos": {
+        "id": "level3#1494",
+        "sourceTextSha256": "0be57f3e2869a9e55098855986ab3f436b36885640bf8b201af90efacd425706"
+      },
+      "windows": {
+        "id": "level3#1449",
+        "sourceTextSha256": "0be57f3e2869a9e55098855986ab3f436b36885640bf8b201af90efacd425706"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level3",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Text"
+      ],
+      "macos": {
+        "id": "level3#1495",
+        "sourceTextSha256": "de17e1da40675ea3c66811031390018f80784a53926f60683a93496bcbb6d1ea"
+      },
+      "windows": {
+        "id": "level3#1450",
+        "sourceTextSha256": "de17e1da40675ea3c66811031390018f80784a53926f60683a93496bcbb6d1ea"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level3",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Options Presenter",
+        "Last Line"
+      ],
+      "macos": {
+        "id": "level3#1497",
+        "sourceTextSha256": "d3626c6dc19af6125427a7afe0d5721be8b511b955443250035d067a3fd3bd7e"
+      },
+      "windows": {
+        "id": "level3#1455",
+        "sourceTextSha256": "d3626c6dc19af6125427a7afe0d5721be8b511b955443250035d067a3fd3bd7e"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level3",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Loading",
+        "Container",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level3#1498",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "windows": {
+        "id": "level3#1456",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "sameText": true,
+      "provisionalRole": "menu-text-translate-candidate"
+    },
+    {
+      "asset": "level3",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Options",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level3#1452",
+        "sourceTextSha256": "d0db8b5e364b6989e4b8f38a2b3846b87d99a51c1592ebf35d21cc66405a8e39"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level3",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Quit",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level3#1454",
+        "sourceTextSha256": "b3eb37acb66ba4bbe8fb1ba296815daf194be94f5a5fb50dab2fb5e4a57ba29e"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level3",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Resume",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level3#1458",
+        "sourceTextSha256": "d640c7421da066618a39daf4266da5f61f66a9b1afcd626481b831a17064965d"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level3",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level3#1451",
+        "sourceTextSha256": "ffb3c5f2edc34373e178ba8721cc085fc8011b4996998d5256fa3ed3462f6f13"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level3",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "macos": {
+        "id": "level3#1496",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "windows": {
+        "id": "level3#1453",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "sameText": true,
+      "provisionalRole": "version-display-needs-consumer-review"
+    },
+    {
+      "asset": "level3",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Unpaused",
+        "HoldToContinue",
+        "HoldToContinueText"
+      ],
+      "macos": {
+        "id": "level3#1499",
+        "sourceTextSha256": "4c85571cc7c91b70fb9a72d77e5baaca772db11fb6c88bb8a71ed3f8f100ab40"
+      },
+      "windows": {
+        "id": "level3#1457",
+        "sourceTextSha256": "4c85571cc7c91b70fb9a72d77e5baaca772db11fb6c88bb8a71ed3f8f100ab40"
+      },
+      "sameText": true,
+      "provisionalRole": "menu-text-translate-candidate"
+    },
+    {
+      "asset": "level4",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Character Name"
+      ],
+      "macos": {
+        "id": "level4#1958",
+        "sourceTextSha256": "0be57f3e2869a9e55098855986ab3f436b36885640bf8b201af90efacd425706"
+      },
+      "windows": {
+        "id": "level4#1913",
+        "sourceTextSha256": "0be57f3e2869a9e55098855986ab3f436b36885640bf8b201af90efacd425706"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level4",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Text"
+      ],
+      "macos": {
+        "id": "level4#1959",
+        "sourceTextSha256": "de17e1da40675ea3c66811031390018f80784a53926f60683a93496bcbb6d1ea"
+      },
+      "windows": {
+        "id": "level4#1914",
+        "sourceTextSha256": "de17e1da40675ea3c66811031390018f80784a53926f60683a93496bcbb6d1ea"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level4",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Options Presenter",
+        "Last Line"
+      ],
+      "macos": {
+        "id": "level4#1961",
+        "sourceTextSha256": "d3626c6dc19af6125427a7afe0d5721be8b511b955443250035d067a3fd3bd7e"
+      },
+      "windows": {
+        "id": "level4#1919",
+        "sourceTextSha256": "d3626c6dc19af6125427a7afe0d5721be8b511b955443250035d067a3fd3bd7e"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level4",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Loading",
+        "Container",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level4#1962",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "windows": {
+        "id": "level4#1920",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "sameText": true,
+      "provisionalRole": "menu-text-translate-candidate"
+    },
+    {
+      "asset": "level4",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Options",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level4#1916",
+        "sourceTextSha256": "d0db8b5e364b6989e4b8f38a2b3846b87d99a51c1592ebf35d21cc66405a8e39"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level4",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Quit",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level4#1918",
+        "sourceTextSha256": "b3eb37acb66ba4bbe8fb1ba296815daf194be94f5a5fb50dab2fb5e4a57ba29e"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level4",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Resume",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level4#1922",
+        "sourceTextSha256": "d640c7421da066618a39daf4266da5f61f66a9b1afcd626481b831a17064965d"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level4",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level4#1915",
+        "sourceTextSha256": "ffb3c5f2edc34373e178ba8721cc085fc8011b4996998d5256fa3ed3462f6f13"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level4",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "macos": {
+        "id": "level4#1960",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "windows": {
+        "id": "level4#1917",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "sameText": true,
+      "provisionalRole": "version-display-needs-consumer-review"
+    },
+    {
+      "asset": "level4",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Unpaused",
+        "HoldToContinue",
+        "HoldToContinueText"
+      ],
+      "macos": {
+        "id": "level4#1963",
+        "sourceTextSha256": "4c85571cc7c91b70fb9a72d77e5baaca772db11fb6c88bb8a71ed3f8f100ab40"
+      },
+      "windows": {
+        "id": "level4#1921",
+        "sourceTextSha256": "4c85571cc7c91b70fb9a72d77e5baaca772db11fb6c88bb8a71ed3f8f100ab40"
+      },
+      "sameText": true,
+      "provisionalRole": "menu-text-translate-candidate"
+    },
+    {
+      "asset": "level5",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Character Name"
+      ],
+      "macos": {
+        "id": "level5#1519",
+        "sourceTextSha256": "0be57f3e2869a9e55098855986ab3f436b36885640bf8b201af90efacd425706"
+      },
+      "windows": {
+        "id": "level5#1474",
+        "sourceTextSha256": "0be57f3e2869a9e55098855986ab3f436b36885640bf8b201af90efacd425706"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level5",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Text"
+      ],
+      "macos": {
+        "id": "level5#1520",
+        "sourceTextSha256": "de17e1da40675ea3c66811031390018f80784a53926f60683a93496bcbb6d1ea"
+      },
+      "windows": {
+        "id": "level5#1475",
+        "sourceTextSha256": "de17e1da40675ea3c66811031390018f80784a53926f60683a93496bcbb6d1ea"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level5",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Options Presenter",
+        "Last Line"
+      ],
+      "macos": {
+        "id": "level5#1522",
+        "sourceTextSha256": "d3626c6dc19af6125427a7afe0d5721be8b511b955443250035d067a3fd3bd7e"
+      },
+      "windows": {
+        "id": "level5#1480",
+        "sourceTextSha256": "d3626c6dc19af6125427a7afe0d5721be8b511b955443250035d067a3fd3bd7e"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level5",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Loading",
+        "Container",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level5#1523",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "windows": {
+        "id": "level5#1481",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "sameText": true,
+      "provisionalRole": "menu-text-translate-candidate"
+    },
+    {
+      "asset": "level5",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Options",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level5#1477",
+        "sourceTextSha256": "d0db8b5e364b6989e4b8f38a2b3846b87d99a51c1592ebf35d21cc66405a8e39"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level5",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Quit",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level5#1479",
+        "sourceTextSha256": "b3eb37acb66ba4bbe8fb1ba296815daf194be94f5a5fb50dab2fb5e4a57ba29e"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level5",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Resume",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level5#1483",
+        "sourceTextSha256": "d640c7421da066618a39daf4266da5f61f66a9b1afcd626481b831a17064965d"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level5",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level5#1476",
+        "sourceTextSha256": "ffb3c5f2edc34373e178ba8721cc085fc8011b4996998d5256fa3ed3462f6f13"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level5",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "macos": {
+        "id": "level5#1521",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "windows": {
+        "id": "level5#1478",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "sameText": true,
+      "provisionalRole": "version-display-needs-consumer-review"
+    },
+    {
+      "asset": "level5",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Unpaused",
+        "HoldToContinue",
+        "HoldToContinueText"
+      ],
+      "macos": {
+        "id": "level5#1524",
+        "sourceTextSha256": "4c85571cc7c91b70fb9a72d77e5baaca772db11fb6c88bb8a71ed3f8f100ab40"
+      },
+      "windows": {
+        "id": "level5#1482",
+        "sourceTextSha256": "4c85571cc7c91b70fb9a72d77e5baaca772db11fb6c88bb8a71ed3f8f100ab40"
+      },
+      "sameText": true,
+      "provisionalRole": "menu-text-translate-candidate"
+    },
+    {
+      "asset": "level6",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Character Name"
+      ],
+      "macos": {
+        "id": "level6#1491",
+        "sourceTextSha256": "0be57f3e2869a9e55098855986ab3f436b36885640bf8b201af90efacd425706"
+      },
+      "windows": {
+        "id": "level6#1446",
+        "sourceTextSha256": "0be57f3e2869a9e55098855986ab3f436b36885640bf8b201af90efacd425706"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level6",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Text"
+      ],
+      "macos": {
+        "id": "level6#1492",
+        "sourceTextSha256": "de17e1da40675ea3c66811031390018f80784a53926f60683a93496bcbb6d1ea"
+      },
+      "windows": {
+        "id": "level6#1447",
+        "sourceTextSha256": "de17e1da40675ea3c66811031390018f80784a53926f60683a93496bcbb6d1ea"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level6",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Options Presenter",
+        "Last Line"
+      ],
+      "macos": {
+        "id": "level6#1494",
+        "sourceTextSha256": "d3626c6dc19af6125427a7afe0d5721be8b511b955443250035d067a3fd3bd7e"
+      },
+      "windows": {
+        "id": "level6#1452",
+        "sourceTextSha256": "d3626c6dc19af6125427a7afe0d5721be8b511b955443250035d067a3fd3bd7e"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-presenter-template-needs-consumer-review"
+    },
+    {
+      "asset": "level6",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Loading",
+        "Container",
+        "Text (TMP)"
+      ],
+      "macos": {
+        "id": "level6#1495",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "windows": {
+        "id": "level6#1453",
+        "sourceTextSha256": "b6dcb96448c66497eb4c33547598e500a15266bd3b49dfd887e06c568fb6bed6"
+      },
+      "sameText": true,
+      "provisionalRole": "menu-text-translate-candidate"
+    },
+    {
+      "asset": "level6",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Options",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level6#1449",
+        "sourceTextSha256": "d0db8b5e364b6989e4b8f38a2b3846b87d99a51c1592ebf35d21cc66405a8e39"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level6",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Quit",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level6#1451",
+        "sourceTextSha256": "b3eb37acb66ba4bbe8fb1ba296815daf194be94f5a5fb50dab2fb5e4a57ba29e"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level6",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Resume",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level6#1455",
+        "sourceTextSha256": "d640c7421da066618a39daf4266da5f61f66a9b1afcd626481b831a17064965d"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level6",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Text (TMP)"
+      ],
+      "macos": null,
+      "windows": {
+        "id": "level6#1448",
+        "sourceTextSha256": "ffb3c5f2edc34373e178ba8721cc085fc8011b4996998d5256fa3ed3462f6f13"
+      },
+      "sameText": null,
+      "provisionalRole": "pause-menu-translate-candidate"
+    },
+    {
+      "asset": "level6",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "macos": {
+        "id": "level6#1493",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "windows": {
+        "id": "level6#1450",
+        "sourceTextSha256": "baff8a3b1b70ae6c8044527ceff5e120e5ae0ee4a3d5ec604e656b75230d14a8"
+      },
+      "sameText": true,
+      "provisionalRole": "version-display-needs-consumer-review"
+    },
+    {
+      "asset": "level6",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Unpaused",
+        "HoldToContinue",
+        "HoldToContinueText"
+      ],
+      "macos": {
+        "id": "level6#1496",
+        "sourceTextSha256": "4c85571cc7c91b70fb9a72d77e5baaca772db11fb6c88bb8a71ed3f8f100ab40"
+      },
+      "windows": {
+        "id": "level6#1454",
+        "sourceTextSha256": "4c85571cc7c91b70fb9a72d77e5baaca772db11fb6c88bb8a71ed3f8f100ab40"
+      },
+      "sameText": true,
+      "provisionalRole": "menu-text-translate-candidate"
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "hierarchy": [
+        "DropDownPrefab",
+        "Dropdown",
+        "OtherLabel"
+      ],
+      "macos": {
+        "id": "sharedassets0.assets#682",
+        "sourceTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "windows": {
+        "id": "sharedassets0.assets#677",
+        "sourceTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "sameText": true,
+      "provisionalRole": "settings-prefab-template-needs-consumer-review"
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "hierarchy": [
+        "DropDownPrefab",
+        "Dropdown",
+        "Template",
+        "Viewport",
+        "Content",
+        "Item",
+        "Item Label"
+      ],
+      "macos": {
+        "id": "sharedassets0.assets#656",
+        "sourceTextSha256": "ae1aceae2bd2b9efcfa80882f149b23b02191f4e0ce08193465fa426d807d4f2"
+      },
+      "windows": {
+        "id": "sharedassets0.assets#651",
+        "sourceTextSha256": "ae1aceae2bd2b9efcfa80882f149b23b02191f4e0ce08193465fa426d807d4f2"
+      },
+      "sameText": true,
+      "provisionalRole": "settings-prefab-template-needs-consumer-review"
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "hierarchy": [
+        "DropDownPrefab",
+        "Label"
+      ],
+      "macos": {
+        "id": "sharedassets0.assets#652",
+        "sourceTextSha256": "0d6fda019c2504de9240206f3a7936e49a1190354fb65f8e1c171683b476d2cf"
+      },
+      "windows": {
+        "id": "sharedassets0.assets#647",
+        "sourceTextSha256": "0d6fda019c2504de9240206f3a7936e49a1190354fb65f8e1c171683b476d2cf"
+      },
+      "sameText": true,
+      "provisionalRole": "settings-prefab-template-needs-consumer-review"
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "hierarchy": [
+        "SliderPrefab",
+        "Slider",
+        "Handle Slide Area",
+        "Handle",
+        "Panel",
+        "Amount"
+      ],
+      "macos": {
+        "id": "sharedassets0.assets#686",
+        "sourceTextSha256": "e29c9c180c6279b0b02abd6a1801c7c04082cf486ec027aa13515e4f3884bb6b"
+      },
+      "windows": {
+        "id": "sharedassets0.assets#681",
+        "sourceTextSha256": "e29c9c180c6279b0b02abd6a1801c7c04082cf486ec027aa13515e4f3884bb6b"
+      },
+      "sameText": true,
+      "provisionalRole": "settings-prefab-template-needs-consumer-review"
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "hierarchy": [
+        "SliderPrefab",
+        "Slider",
+        "Label"
+      ],
+      "macos": {
+        "id": "sharedassets0.assets#650",
+        "sourceTextSha256": "0d6fda019c2504de9240206f3a7936e49a1190354fb65f8e1c171683b476d2cf"
+      },
+      "windows": {
+        "id": "sharedassets0.assets#645",
+        "sourceTextSha256": "0d6fda019c2504de9240206f3a7936e49a1190354fb65f8e1c171683b476d2cf"
+      },
+      "sameText": true,
+      "provisionalRole": "settings-prefab-template-needs-consumer-review"
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "hierarchy": [
+        "SliderPrefab",
+        "Slider",
+        "Max"
+      ],
+      "macos": {
+        "id": "sharedassets0.assets#676",
+        "sourceTextSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+      },
+      "windows": {
+        "id": "sharedassets0.assets#671",
+        "sourceTextSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+      },
+      "sameText": true,
+      "provisionalRole": "settings-prefab-template-needs-consumer-review"
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "hierarchy": [
+        "SliderPrefab",
+        "Slider",
+        "Min"
+      ],
+      "macos": {
+        "id": "sharedassets0.assets#663",
+        "sourceTextSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+      },
+      "windows": {
+        "id": "sharedassets0.assets#658",
+        "sourceTextSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+      },
+      "sameText": true,
+      "provisionalRole": "settings-prefab-template-needs-consumer-review"
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "hierarchy": [
+        "TextInput",
+        "Label"
+      ],
+      "macos": {
+        "id": "sharedassets0.assets#653",
+        "sourceTextSha256": "0d6fda019c2504de9240206f3a7936e49a1190354fb65f8e1c171683b476d2cf"
+      },
+      "windows": {
+        "id": "sharedassets0.assets#648",
+        "sourceTextSha256": "0d6fda019c2504de9240206f3a7936e49a1190354fb65f8e1c171683b476d2cf"
+      },
+      "sameText": true,
+      "provisionalRole": "settings-prefab-template-needs-consumer-review"
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "hierarchy": [
+        "TextInput",
+        "TextInput",
+        "Text Area",
+        "Placeholder"
+      ],
+      "macos": {
+        "id": "sharedassets0.assets#666",
+        "sourceTextSha256": "a462b8c590652563cb55e5dc6e55e0b7ac0123f0a5dd70f9043bdef3d4fa5417"
+      },
+      "windows": {
+        "id": "sharedassets0.assets#661",
+        "sourceTextSha256": "a462b8c590652563cb55e5dc6e55e0b7ac0123f0a5dd70f9043bdef3d4fa5417"
+      },
+      "sameText": true,
+      "provisionalRole": "settings-prefab-template-needs-consumer-review"
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "hierarchy": [
+        "TextInput",
+        "TextInput",
+        "Text Area",
+        "Text"
+      ],
+      "macos": {
+        "id": "sharedassets0.assets#675",
+        "sourceTextSha256": "f4e48e664a603543865edc77bbc76dd1dd53dc9d0c30f651bbad7c8231091348"
+      },
+      "windows": {
+        "id": "sharedassets0.assets#670",
+        "sourceTextSha256": "f4e48e664a603543865edc77bbc76dd1dd53dc9d0c30f651bbad7c8231091348"
+      },
+      "sameText": true,
+      "provisionalRole": "settings-prefab-template-needs-consumer-review"
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "hierarchy": [
+        "TitlePrefab",
+        "Label"
+      ],
+      "macos": {
+        "id": "sharedassets0.assets#654",
+        "sourceTextSha256": "0d6fda019c2504de9240206f3a7936e49a1190354fb65f8e1c171683b476d2cf"
+      },
+      "windows": {
+        "id": "sharedassets0.assets#649",
+        "sourceTextSha256": "0d6fda019c2504de9240206f3a7936e49a1190354fb65f8e1c171683b476d2cf"
+      },
+      "sameText": true,
+      "provisionalRole": "settings-prefab-template-needs-consumer-review"
+    },
+    {
+      "asset": "sharedassets1.assets",
+      "hierarchy": [
+        "Option Item"
+      ],
+      "macos": {
+        "id": "sharedassets1.assets#11117",
+        "sourceTextSha256": "7af1b6497611cfbd904a751a55e6b3908f759414fe9f66d554943e740e7a6b67"
+      },
+      "windows": {
+        "id": "sharedassets1.assets#11105",
+        "sourceTextSha256": "7af1b6497611cfbd904a751a55e6b3908f759414fe9f66d554943e740e7a6b67"
+      },
+      "sameText": true,
+      "provisionalRole": "dialogue-option-template-runtime-replaced"
+    }
+  ],
+  "limitations": "Provisional classifications from serialized paths and pinned text hashes. They are not runtime visibility, final translation scope, editorial acceptance, exact-preservation contracts or proof of a complete UI inventory."
+}
