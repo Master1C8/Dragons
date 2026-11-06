@@ -189,6 +189,15 @@ partial output, as with the other builder steps.
 
 ## Evidence and limitations
 
+- `windows_dialogue_probe.py` produces a **test-only** Windows Yarn asset in
+  `localization/work/` from the separately pinned Windows build and a
+  Windows-source-bound synthetic locale file. It validates the game version,
+  source asset and Yarn object, rechecks the bytes consumed, and compares all
+  saved serialized objects after replacement. Existing outputs are never
+  overwritten. It is a probe, not an installer or a Windows release builder;
+  Windows UI/settings, safe packaging, full gameplay and restoration still
+  require separate validation.
+
 - The installed Windows copy investigated separately reports build
   `9/9/2026_ee944596`, while the macOS build reports `9/12/2026_a93aa21a`.
   Their Yarn tables have the same 1,839 ordered IDs but 25 source text values
