@@ -24,6 +24,8 @@ An ID-specific synthetic speaker-display probe now handles the exceptional Alexa
 
 An isolated macOS Unity test now exercised that exact synthetic helper through the game's built-in line provider: its log recorded the marker after a test-only forced node pointed one instruction at the original Alexander line. The prepared frame's label was too faint to verify visually. See `localization/evidence/alexander-colon-runtime-20261107.md`; this is not the natural Alexander branch, Russian wording or a visual pass.
 
+Two further isolated macOS synthetic runs compared the source white speaker-name color with a black test-only candidate at the same viewport. Black improved contrast but the small italic glyph identities remained uncertain on the full prepared frame. See `localization/evidence/speaker-color-comparison-20261107.md`; the candidate is not enabled in the player builder and the Russian text remains untranslated.
+
 Managed text-sink discovery now scans all pinned root managed DLLs and the source-pinned TMP dropdown configurations in both builds. Unity's built-in text defaults are retained as needs-review; static scope and exact findings are in `localization/evidence/managed-text-sinks-20261107.md`.
 
 A standalone Yarn-only preservation check now compares the complete source object inventory and exact authorized target values in synthetic macOS and Windows assets, including byte-identical compiled program objects. Combined UI/Yarn changes and other source families are not yet covered; the complete preserve-exact gate remains open. See `localization/evidence/yarn-preservation-check-20261107.md`.
