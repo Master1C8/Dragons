@@ -111,6 +111,19 @@ other UI types and texture lettering are not covered by this mechanism.
 
 ## Evidence and limitations
 
+- A read-only, source-pinned font-role probe can be run with a Python environment
+  containing `localization/font_probe_requirements.txt`:
+
+  ```sh
+  "$PYTHON" localization/probe_font_roles.py "/path/to/Drag'N Wash.app/Contents/Resources/Data"
+  ```
+
+  It reports the managed files used to generate schemas, selected dialogue and
+  menu component pointers, fallback chain and source-font cmap. The saved result
+  for the pinned macOS build is `localization/evidence/font-roles-20261106.json`.
+  Static font metadata and cmap coverage do not establish in-game readability,
+  clipping or glyph rendering. The tool reads the installed source and does not
+  extract or redistribute its font file.
 - The original Yarn object was decoded and re-encoded byte for byte. A one-line
   synthetic replacement was built and read back; all 11,392 other Unity objects
   retained identical raw bytes in the saved asset.
