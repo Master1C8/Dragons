@@ -43,9 +43,28 @@ To build a separate signed macOS app for a chosen language instead, use:
 ```
 
 The selected locale must match the file exactly. The command copies the source
-app, changes the dialogue asset and ad-hoc signs the copy. It does not
-launch it. The output uses the game's original save and preference identity if
-run; only the separate test probe described below used isolated identifiers.
+app, changes the dialogue asset and ad-hoc signs the copy. It does not launch
+it. Without `--test-profile`, the output retains the game's original save and
+preference identity; do not launch such a copy for isolated testing.
+
+For a disposable test app, append `--test-profile G6P4`, substituting a fresh
+four-character uppercase ASCII letter/digit code. The builder verifies the
+pinned original, refuses a code with existing test data/preferences, assigns
+a distinct test company, product and bundle identifier, checks each changed
+object and plist field, and adds a `vn-test-profile.json` marker. Such a build
+is **test-only**, not a player release. Its selected code may already have been
+used on another machine; choose one that is fresh for the test environment.
+The collision check is not an atomic reservation: do not build or run multiple
+test apps with the same profile code concurrently.
+The profile creates separate test data and preferences on launch. No automatic
+copy, migration or restoration of the player's save is performed. A tested
+launch reached the main menu with a distinct data directory/preferences and
+left the existing original-profile file hashes unchanged; save creation,
+normal exit, Steam integration and every possible save location are not proven.
+A failed profile build may leave a partially modified copied app because the
+global game manager, plist and marker are committed separately; inspect the
+partial output and use a new destination rather than assuming rollback.
+
 An error during copy or signing may leave a partial destination for inspection;
 remove it only after verifying its contents. A new run requires a new destination.
 The game writes `steam_appid.txt` into the app-bundle root at startup, making the

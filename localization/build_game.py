@@ -13,7 +13,7 @@ import ui_locale as ui
 ASSET_RELATIVE = Path('Contents/Resources/Data/sharedassets1.assets')
 
 
-def build(source, locale_file, requested, destination, ui_dir=None, settings_file=None):
+def build(source, locale_file, requested, destination, ui_dir=None, settings_file=None, test_profile_code=None):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -61,6 +61,11 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
     if settings_file is not None:
         import settings_locale as settings
         prepared_settings = settings.make_asset(source / 'Contents/Resources/Data', settings_file, requested)
+    profile_tool = None
+    prepared_profile = None
+    if test_profile_code is not None:
+        import isolated_profile as profile_tool
+        prepared_profile = profile_tool.prepare(source, test_profile_code)
     obj.set_raw_data(changed)
     data = env.file.save()
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -97,6 +102,9 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
             raise ValueError('unsafe settings destination; partial copy retained')
         settings_count = settings.patch_into(source / 'Contents/Resources/Data', target_settings,
                                              prepared_settings, ui_files.get(settings.ASSET))
+    profile = None
+    if prepared_profile is not None:
+        profile = profile_tool.apply(destination, prepared_profile)
     # The distribution contains a loose Steam identifier in the bundle root;
     # macOS refuses to seal a bundle with this file there. Preserve it next to
     # the executable, then sign only the copy with an ad-hoc signature.
@@ -118,6 +126,7 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
     print(json.dumps({'locale': locale, 'translated': len(translations), 'sourceEntries': len(keys),
                       'dialogueAssetSha256BeforeUi': dl.sha(data), 'uiStrings': ui_count,
                       'settingsStrings': settings_count,
+                      'testProfile': profile['code'] if profile else None,
                       'output': str(destination)}, ensure_ascii=False))
     print('Build complete. No game was installed or launched; UI coverage and font support remain unverified.')
 
@@ -130,8 +139,9 @@ def main():
     p.add_argument('--output-app', type=Path, required=True)
     p.add_argument('--ui-dir', type=Path, help='optional directory of named UI locale JSON files')
     p.add_argument('--settings-locale', type=Path, help='optional source-pinned settings locale JSON file')
+    p.add_argument('--test-profile', help='optional fresh four-character isolated test profile; not a player release')
     a = p.parse_args()
-    build(a.source_app, a.locale_file, a.locale, a.output_app, a.ui_dir, a.settings_locale)
+    build(a.source_app, a.locale_file, a.locale, a.output_app, a.ui_dir, a.settings_locale, a.test_profile)
 
 
 if __name__ == '__main__':
