@@ -60,6 +60,27 @@ class LocaleFileTests(unittest.TestCase):
         self.doc['lines'][self.keys[0]]['text'] = self.values[0]
         self.read()
 
+    def test_source_marker_guards_are_scoped_to_exact_ids_and_yarn(self):
+        for marker_id, value in module.YARN_UNRESOLVED_SOURCE_MARKERS.items():
+            with self.subTest(marker_id=marker_id):
+                self.keys, self.values = [marker_id], [value]
+                self.doc['lines'] = {marker_id: {'source': value, 'text': value}}
+                self.assertEqual(self.read()[1][marker_id], value)
+                self.doc['lines'][marker_id]['text'] = 'changed'
+                with self.assertRaisesRegex(ValueError, 'unresolved source marker must remain exact'):
+                    self.read()
+                self.path.write_text(json.dumps(self.doc, ensure_ascii=False), encoding='utf-8')
+                self.assertEqual(module.read_locale(self.path, self.keys, self.values, yarn_semantics=False)[1][marker_id], 'changed')
+        self.keys, self.values = ['line:ffffffff'], ['==']
+        self.doc['lines'] = {self.keys[0]: {'source': '==', 'text': 'changed'}}
+        self.assertEqual(self.read()[1][self.keys[0]], 'changed')
+
+    def test_rejects_stale_source_for_protected_marker(self):
+        self.keys, self.values = ['line:67fa34ad'], ['stale']
+        self.doc['lines'] = {self.keys[0]: {'source': 'stale', 'text': 'stale'}}
+        with self.assertRaisesRegex(ValueError, 'unresolved source marker must remain exact'):
+            self.read()
+
     def test_rejects_unconfigured_locale(self):
         self.doc['locale'] = 'zz'
         with self.assertRaisesRegex(ValueError, 'supported non-English'):

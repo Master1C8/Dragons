@@ -101,7 +101,10 @@ The example ID and wording are illustrative, not game data. Copy real IDs and
 exact `source` values from the export. Markup, placeholders and initial labels
 must be preserved; unknown IDs, duplicate JSON keys, changed source text and
 unsupported source versions are rejected. Entries beginning with `title:` must
-remain completely unchanged. Only one locale is built per run.
+remain completely unchanged. Ten specifically identified `==` and `---` source
+markers adjacent to title-like lines must also remain exact in Yarn translations
+while their role is unresolved; this ID-scoped rule does not apply to UI/settings.
+See `evidence/yarn-missing-targets-20261107.md`. Only one locale is built per run.
 This validation is conservative and does **not** prove all game-specific
 controls or speaker-label semantics have been identified. Source line presence
 does not prove visibility or runtime reachability.

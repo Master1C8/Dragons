@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "status": "incomplete",
+  "sourceAudit": "localization/evidence/yarn-targets-20261107.json",
+  "sourceAuditSha256": "9cd529422340084c5dda98865ad485930d8a92fb6790c77c9a7c2e66a70068e4",
+  "discoveryCoverage": "Only static named transfers and adjacent title-like source markers in one pinned Yarn project per build. Other source families and dynamic paths remain pending.",
+  "cases": [
+    {
+      "id": "yarn-missing-named-destinations",
+      "category": "missing compiled scene targets and embedded source markers",
+      "sourceStatus": "needs-review",
+      "sourceBuilds": [
+        "macos",
+        "windows"
+      ],
+      "exactTransfersAndMarkers": [
+        {
+          "node": "Alexander_Idle4",
+          "instructionIndex": 21,
+          "kind": "RunNode",
+          "target": "Alexander_Done",
+          "targetPresent": false,
+          "matchingEmbeddedTitle": {
+            "node": "Alexander_Outro",
+            "instructionIndex": 30,
+            "lineId": "line:f1ca33da",
+            "sourceSha256": "95958db076100eb88d4448c930c414cae183d371fa724d4f6a6e8beb974a75b5",
+            "adjacentRunLines": [
+              {
+                "instructionIndex": 29,
+                "lineId": "line:67fa34ad",
+                "sourceSha256": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276"
+              },
+              {
+                "instructionIndex": 31,
+                "lineId": "line:4b9b3a43",
+                "sourceSha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"
+              }
+            ]
+          }
+        },
+        {
+          "node": "ConradBeatup_Outro",
+          "instructionIndex": 21,
+          "kind": "RunNode",
+          "target": "ConradBeatup_OutroDone",
+          "targetPresent": false,
+          "matchingEmbeddedTitle": {
+            "node": "ConradBeatup_Outro",
+            "instructionIndex": 34,
+            "lineId": "line:74c28add",
+            "sourceSha256": "8f8c3127986a0017458addffb5ca722f1253adcd1b0aa92e8da8426fcf4d42ba",
+            "adjacentRunLines": [
+              {
+                "instructionIndex": 33,
+                "lineId": "line:ce938344",
+                "sourceSha256": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276"
+              },
+              {
+                "instructionIndex": 35,
+                "lineId": "line:e2f28daa",
+                "sourceSha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"
+              }
+            ]
+          }
+        },
+        {
+          "node": "Conrad_Outro",
+          "instructionIndex": 21,
+          "kind": "RunNode",
+          "target": "Conrad_OutroDone",
+          "targetPresent": false,
+          "matchingEmbeddedTitle": {
+            "node": "Conrad_Outro",
+            "instructionIndex": 34,
+            "lineId": "line:3ed2f649",
+            "sourceSha256": "01cf590e183ce38a43cb1ca17a2fa5326e8b581b5472077b2b5886f51bf83ea9",
+            "adjacentRunLines": [
+              {
+                "instructionIndex": 33,
+                "lineId": "line:a8e2f13e",
+                "sourceSha256": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276"
+              },
+              {
+                "instructionIndex": 35,
+                "lineId": "line:db5b3129",
+                "sourceSha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"
+              }
+            ]
+          }
+        },
+        {
+          "node": "RyanDate_Outro",
+          "instructionIndex": 0,
+          "kind": "RunNode",
+          "target": "RyanDate_OutroDone",
+          "targetPresent": false,
+          "matchingEmbeddedTitle": {
+            "node": "RyanDate_Outro",
+            "instructionIndex": 2,
+            "lineId": "line:722243c8",
+            "sourceSha256": "617c4e9fdb7890ae218f871437997359079c3168258324423dfc7ee8702978c6",
+            "adjacentRunLines": [
+              {
+                "instructionIndex": 1,
+                "lineId": "line:e41244bf",
+                "sourceSha256": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276"
+              },
+              {
+                "instructionIndex": 3,
+                "lineId": "line:97ab84a8",
+                "sourceSha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"
+              }
+            ]
+          }
+        },
+        {
+          "node": "RyanExploded_Outro",
+          "instructionIndex": 21,
+          "kind": "RunNode",
+          "target": "RyanExploded_OutroDone",
+          "targetPresent": false,
+          "matchingEmbeddedTitle": {
+            "node": "RyanExploded_Outro",
+            "instructionIndex": 34,
+            "lineId": "line:b4eee981",
+            "sourceSha256": "c5bae834767a347c5681a2ba94ae0da268b0dbe5c52b7a63fa1c6698f013533d",
+            "adjacentRunLines": [
+              {
+                "instructionIndex": 33,
+                "lineId": "line:22deeef6",
+                "sourceSha256": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276"
+              },
+              {
+                "instructionIndex": 35,
+                "lineId": "line:25f35611",
+                "sourceSha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"
+              }
+            ]
+          }
+        }
+      ],
+      "sourceAnalysis": "The extracted program contains five named RunNode targets absent from its node map. Matching title-like text occurs as RunLine inside other compiled nodes, bracketed by == and --- lines. Reachability and combined runtime program are not yet verified.",
+      "invariant": "Preserve exact IDs, labels, command operands, transfer destinations and marker values. Do not silently invent, remove or repair nodes.",
+      "adaptationRoute": "Investigate actual loaded program and affected execution path; decide any required repair from observed runtime evidence.",
+      "acceptanceScenarios": [
+        "Actual runtime program contains the intended targets or a verified correction preserves the original scenario behavior.",
+        "A missing required target is detected before claiming progression succeeds.",
+        "All fifteen marker IDs and source values remain exact until their roles are resolved."
+      ],
+      "statuses": {
+        "sourceAnalysis": "needs-review",
+        "editorial": "not-started",
+        "adapter": "needs-review",
+        "structural": "partial",
+        "runtimeVisual": "not-run"
+      }
+    }
+  ]
+}

@@ -16,6 +16,14 @@ SITE_LOCALES = Path.home() / 'Desktop/SiteForMods/lib/language-data/site-locales
 TOKENS = re.compile(r'<[^<>\n]*>|\{[^{}\n]*\}|\[[^\[\]\n]*\]')
 TAGS = re.compile(r'<[^<>\n]*>|\[[^\[\]\n]*\]')
 PREFIX = re.compile(r'^([A-Za-z][A-Za-z0-9_ .-]{0,40}:\s*)')
+# Source markers adjacent to embedded title-like lines in the pinned Yarn
+# programs. Their runtime role is unresolved; preserve exact values by ID.
+YARN_UNRESOLVED_SOURCE_MARKERS = {
+    'line:67fa34ad': '==', 'line:ce938344': '==',
+    'line:a8e2f13e': '==', 'line:e41244bf': '==', 'line:22deeef6': '==',
+    'line:4b9b3a43': '---', 'line:e2f28daa': '---',
+    'line:db5b3129': '---', 'line:97ab84a8': '---', 'line:25f35611': '---',
+}
 
 
 def sha(data):
@@ -124,6 +132,10 @@ def read_locale(path, keys, values, source_hash=OBJECT_HASH, *, yarn_semantics=T
             raise ValueError(f'{key}: expected exactly source and text')
         if value['source'] != source[key] or not isinstance(value['text'], str) or not value['text'].strip():
             raise ValueError(f'{key}: source mismatch or empty/non-string translation')
+        if yarn_semantics and key in YARN_UNRESOLVED_SOURCE_MARKERS:
+            expected = YARN_UNRESOLVED_SOURCE_MARKERS[key]
+            if source[key] != expected or value['text'] != expected:
+                raise ValueError(f'{key}: unresolved source marker must remain exact')
         if source[key].startswith('title:') and value['text'] != source[key]:
             raise ValueError(f'{key}: title directive must remain unchanged')
         # Yarn's line provider enables implicit character names and its parser
