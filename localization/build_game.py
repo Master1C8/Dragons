@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """Create a separate macOS game copy with a selected dialogue locale."""
 import argparse
+import ctypes
 import json
 import os
 from pathlib import Path
 import shutil
 import subprocess
+import sys
+import tempfile
 
 import dialogue_locale as dl
 import ui_locale as ui
@@ -13,8 +16,53 @@ import ui_locale as ui
 ASSET_RELATIVE = Path('Contents/Resources/Data/sharedassets1.assets')
 
 
+def rename_exclusive(source, destination):
+    """Publish a verified directory atomically without replacing an existing path."""
+    if sys.platform != 'darwin':
+        raise RuntimeError('exclusive app publication requires macOS renamex_np')
+    libc = ctypes.CDLL(None, use_errno=True)
+    rename = libc.renamex_np
+    rename.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_uint]
+    rename.restype = ctypes.c_int
+    if rename(os.fsencode(source), os.fsencode(destination), 0x00000004) != 0:
+        error = ctypes.get_errno()
+        raise OSError(error, os.strerror(error), str(destination))
+
+
 def build(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
           test_profile_code=None, test_caption_layout=False, test_slot_font=False):
+    source = source.resolve(strict=True)
+    destination = destination.absolute()
+    if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
+        raise ValueError('source and destination must be macOS .app bundles')
+    if test_caption_layout and test_profile_code is None:
+        raise ValueError('experimental settings layout requires an isolated test profile')
+    if test_slot_font and test_profile_code is None:
+        raise ValueError('experimental slot font requires an isolated test profile')
+    if destination.exists() or destination.is_symlink():
+        raise FileExistsError('destination already exists')
+    resolved = destination.resolve(strict=False)
+    if source == resolved or source in resolved.parents or resolved in source.parents:
+        raise ValueError('source and destination must not overlap')
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    stage = Path(tempfile.mkdtemp(prefix='.localization-build-', dir=destination.parent))
+    try:
+        staged_app = stage / destination.name
+        report = _build_unpublished(source, locale_file, requested, staged_app, ui_dir, settings_file,
+                                    test_profile_code, test_caption_layout, test_slot_font)
+        rename_exclusive(staged_app, destination)
+    finally:
+        shutil.rmtree(stage)
+    # This check concerns the actual published path, not the staging copy.
+    # If it fails, retain the published result for diagnosis; do not delete it.
+    subprocess.run(['codesign', '--verify', '--deep', '--strict', str(destination)], check=True)
+    report['output'] = str(destination)
+    print(json.dumps(report, ensure_ascii=False))
+    print('Build complete. No game was installed or launched; UI coverage and font support remain unverified.')
+
+
+def _build_unpublished(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
+                       test_profile_code=None, test_caption_layout=False, test_slot_font=False):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -81,7 +129,7 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
     shutil.copytree(source, destination, symlinks=True)
     target = destination / ASSET_RELATIVE
     if target.is_symlink() or destination.resolve() not in target.resolve().parents or dl.sha(target.read_bytes()) != dl.ASSET_HASH:
-        raise ValueError('copied source asset changed; partial copy retained for inspection')
+        raise ValueError('copied source asset changed')
     temporary = target.with_name('sharedassets1.localized.tmp')
     with temporary.open('xb') as f:
         f.write(data)
@@ -91,23 +139,23 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
     before = {(o.path_id, o.type.name): o for o in env.objects}
     after = {(o.path_id, o.type.name): o for o in reopened.objects}
     if len(before) != len(env.objects) or len(after) != len(reopened.objects) or before.keys() != after.keys():
-        raise ValueError('saved object inventory differs; partial copy retained for inspection')
+        raise ValueError('saved object inventory differs')
     for key, old in before.items():
         expected = changed if key[0] == dl.PATH_ID else old.get_raw_data()
         if expected != after[key].get_raw_data():
-            raise ValueError(f'saved object differs: {key}; partial copy retained')
+            raise ValueError(f'saved object differs: {key}')
     ui_count = 0
     for name, file in sorted(ui_files.items()):
         target_ui = destination / 'Contents/Resources/Data' / name
         if target_ui.is_symlink() or destination.resolve() not in target_ui.resolve().parents:
-            raise ValueError('unsafe UI destination; partial copy retained')
+            raise ValueError('unsafe UI destination')
         ui_count += ui.patch_into(source / 'Contents/Resources/Data', name, file, requested,
                                   target_ui, changed if name == 'sharedassets1.assets' else None)
     settings_count = 0
     if prepared_settings is not None:
         target_settings = destination / 'Contents/Resources/Data' / settings.ASSET
         if target_settings.is_symlink() or destination.resolve() not in target_settings.resolve().parents:
-            raise ValueError('unsafe settings destination; partial copy retained')
+            raise ValueError('unsafe settings destination')
         settings_count = settings.patch_into(source / 'Contents/Resources/Data', target_settings,
                                              prepared_settings, ui_files.get(settings.ASSET))
     layout_hash = None
@@ -115,7 +163,7 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
         import experimental_settings_layout as layout
         target_layout = destination / 'Contents/Resources/Data' / layout.ASSET
         if target_layout.is_symlink() or destination.resolve() not in target_layout.resolve().parents:
-            raise ValueError('unsafe test layout destination; partial copy retained')
+            raise ValueError('unsafe test layout destination')
         layout_hash = layout.patch_into(source / 'Contents/Resources/Data', target_layout, requested,
                                         prior_ui=ui_files.get(layout.ASSET), prepared_settings=prepared_settings)
         experiment_marker = destination / 'Contents/Resources/vn-test-layout.json'
@@ -128,7 +176,7 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
         import experimental_slot_font as slot_font
         target_slot = destination / 'Contents/Resources/Data' / slot_font.ASSET
         if target_slot.is_symlink() or destination.resolve() not in target_slot.resolve().parents:
-            raise ValueError('unsafe test slot font destination; partial copy retained')
+            raise ValueError('unsafe test slot font destination')
         slot_font_hash = slot_font.patch_into(source / 'Contents/Resources/Data', target_slot, requested,
                                               prior_ui=ui_files.get(slot_font.ASSET))
         experiment_marker = destination / 'Contents/Resources/vn-test-slot-font.json'
@@ -146,10 +194,10 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
     if steam.exists():
         target_steam = destination / 'Contents/MacOS/steam_appid.txt'
         if steam.is_symlink() or target_steam.exists() or destination.resolve() not in target_steam.parent.resolve().parents:
-            raise ValueError('ambiguous Steam identifier; partial copy retained')
+            raise ValueError('ambiguous Steam identifier')
         steam.rename(target_steam)
     else:
-        raise ValueError('missing Steam identifier; partial copy retained')
+        raise ValueError('missing Steam identifier')
     marker = destination / 'Contents/Resources/vn-localization-build.json'
     with marker.open('x', encoding='utf-8') as f:
         json.dump({'schema': 1, 'locale': locale, 'sourceAssetSha256': dl.ASSET_HASH,
@@ -157,14 +205,12 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
         f.write('\n')
     subprocess.run(['codesign', '--force', '--deep', '--sign', '-', str(destination)], check=True)
     subprocess.run(['codesign', '--verify', '--deep', '--strict', str(destination)], check=True)
-    print(json.dumps({'locale': locale, 'translated': len(translations), 'sourceEntries': len(keys),
+    return {'locale': locale, 'translated': len(translations), 'sourceEntries': len(keys),
                       'dialogueAssetSha256BeforeUi': dl.sha(data), 'uiStrings': ui_count,
                       'settingsStrings': settings_count,
                       'testProfile': profile['code'] if profile else None,
                       'testSettingsLayoutSha256': layout_hash,
-                      'testSlotFontSha256': slot_font_hash,
-                      'output': str(destination)}, ensure_ascii=False))
-    print('Build complete. No game was installed or launched; UI coverage and font support remain unverified.')
+                      'testSlotFontSha256': slot_font_hash}
 
 
 def main():

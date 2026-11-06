@@ -61,12 +61,14 @@ copy, migration or restoration of the player's save is performed. A tested
 launch reached the main menu with a distinct data directory/preferences and
 left the existing original-profile file hashes unchanged; save creation,
 normal exit, Steam integration and every possible save location are not proven.
-A failed profile build may leave a partially modified copied app because the
-global game manager, plist and marker are committed separately; inspect the
-partial output and use a new destination rather than assuming rollback.
-
-An error during copy or signing may leave a partial destination for inspection;
-remove it only after verifying its contents. A new run requires a new destination.
+The builder constructs and verifies the app in a private staging directory in
+the output parent, then uses macOS exclusive rename to publish it without
+replacing an existing destination. An ordinary exception before publication
+removes that task-owned staging directory; abrupt termination may leave it for
+inspection. Verification is repeated at the published path. If cleanup after
+publication or that final verification fails, the published app may remain for
+diagnosis and is not a successful build. Use a fresh destination after inspecting
+any retained output.
 The game writes `steam_appid.txt` into the app-bundle root at startup, making the
 ad-hoc signature invalid. Launch a generated copy through the wrapper:
 
@@ -172,9 +174,8 @@ keys such as `sharedassets0.assets#606:label` or
 `sharedassets0.assets#606:option:0`. To include it in a copied application, pass
 `--settings-locale /path/to/settings-ru.json` to `build_game.py`; it can be
 combined with `--ui-dir`. The builder verifies the exact preceding UI changes,
-then verifies the merged settings asset before replacing that one file.
-Earlier files in a partially failed app build are not rolled back: preserve and
-inspect the incomplete output, and build again at a new path.
+then verifies the merged settings asset before replacing that one file. The
+whole app remains in staging until all supplied steps and signing succeed.
 
 The settings adapter accepts only the pinned macOS source and managed schema
 inputs, round-trips each supported settings object, preserves every unrelated
@@ -197,8 +198,7 @@ It requires the font-probe dependencies in `font_probe_requirements.txt`,
 adds a signed `vn-test-slot-font.json` marker, and is disabled for normal
 builds. The five-character synthetic sample has more room in one comparison,
 but exact glyph details and real translated labels remain unverified; this is
-not an accepted release setting. A failure later in the app build can leave a
-partial output, as with the other builder steps.
+not an accepted release setting. It is applied inside the unpublished staged app.
 
 ## Evidence and limitations
 
