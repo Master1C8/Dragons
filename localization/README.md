@@ -142,6 +142,21 @@ and full menu coverage, choices and translated text remain unverified.
 
 ## Evidence and limitations
 
+- The installed Windows copy investigated separately reports build
+  `9/9/2026_ee944596`, while the macOS build reports `9/12/2026_a93aa21a`.
+  Their Yarn tables have the same 1,839 ordered IDs but 25 source text values
+  differ; three compiled Yarn nodes also differ. Reproduce the bounded,
+  read-only comparison with:
+
+  ```sh
+  "$PYTHON" localization/compare_yarn_versions.py --macos-data /path/to/mac/Data \
+    --windows-data /path/to/windows/DragNWash_Data
+  ```
+
+  The pinned result is `localization/evidence/yarn-versions-20261106.json`.
+  Matching IDs do not prove equivalent narrative meaning, runtime, UI, font,
+  save behavior or package compatibility. The macOS builder does not support
+  the Windows asset, and this comparison does not modify either installation.
 - A read-only, source-pinned font-role probe can be run with a Python environment
   containing `localization/font_probe_requirements.txt`:
 
