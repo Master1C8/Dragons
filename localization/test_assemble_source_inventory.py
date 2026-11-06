@@ -50,8 +50,11 @@ class SourceInventoryUnitTests(unittest.TestCase):
                          'dialogue-punctuation-candidate', 'choice-candidate'}
         self.assertEqual(entries['yarn:line:14d2c62f']['role'], 'choice-candidate')
         self.assertEqual(entries['yarn:line:decf872a']['role'], 'dialogue-punctuation-candidate')
-        self.assertEqual(sum(r['role'] in opening_roles for r in result['entries'] if r['family'] == 'yarn'), 79)
+        self.assertEqual(entries['yarn:line:695ef750']['role'], 'dialogue-punctuation-candidate')
+        self.assertEqual(entries['yarn:line:7cd85c8e']['role'], 'choice-candidate')
+        self.assertEqual(sum(r['role'] in opening_roles for r in result['entries'] if r['family'] == 'yarn'), 212)
         self.assertEqual(result['openingRoleManifestSha256'], inventory.OPENING_ROLES_SHA)
+        self.assertEqual(result['ryan23RoleManifestSha256'], inventory.RYAN23_ROLES_SHA)
         mac_only = entries['settings:LookInvertY:label']
         self.assertEqual(mac_only['source']['macos'], 'Invert Look Y')
         self.assertIsNone(mac_only['source']['windows'])
@@ -102,12 +105,24 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertEqual(len(inventory.bind_opening_roles(scenes, manifest)), 79)
         wrong_kind = copy.deepcopy(manifest)
         wrong_kind['groups'][0]['kind'] = 'option'
-        with self.assertRaisesRegex(ValueError, 'opening role identity or kind mismatch'):
+        with self.assertRaisesRegex(ValueError, 'invalid opening role group'):
             inventory.bind_opening_roles(scenes, wrong_kind)
         missing = copy.deepcopy(manifest)
         missing['groups'][0]['ids'].pop()
         with self.assertRaisesRegex(ValueError, 'opening source coverage mismatch'):
             inventory.bind_opening_roles(scenes, missing)
+
+    @unittest.skipUnless((WORK / 'yarn-paired-scenes.json').is_file(), 'pinned Yarn export required')
+    def test_ryan_roles_require_exact_scope_and_punctuation(self):
+        scenes = inventory.load_pinned(WORK / 'yarn-paired-scenes.json', inventory.FILES['yarn-paired-scenes.json'])
+        manifest = inventory.load_pinned(ROOT / 'yarn_roles_ryan23.json', inventory.RYAN23_ROLES_SHA)
+        self.assertEqual(len(inventory.bind_ryan23_roles(scenes, manifest)), 133)
+        wrong_punctuation = copy.deepcopy(manifest)
+        group = next(g for g in wrong_punctuation['groups'] if g['role'] == 'dialogue-punctuation-candidate')
+        other = next(g for g in wrong_punctuation['groups'] if g['node'] == group['node'] and g['role'] == 'dialogue-candidate')
+        group['ids'][0], other['ids'][0] = other['ids'][0], group['ids'][0]
+        with self.assertRaisesRegex(ValueError, 'punctuation role source mismatch'):
+            inventory.bind_ryan23_roles(scenes, wrong_punctuation)
 
 
 if __name__ == '__main__':

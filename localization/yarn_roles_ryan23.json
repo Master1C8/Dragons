@@ -1,0 +1,260 @@
+{
+  "schema": 1,
+  "sourceExportSha256": "52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995",
+  "scope": "Manually read all source text in seven Ryan 2 and 3 nodes; roles classify source function, not runtime reachability or completed translation.",
+  "groups": [
+    {
+      "node": "Ryan_2_Outro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:797ca540",
+        "line:e8611ad0",
+        "line:15f55959",
+        "line:399457b7",
+        "line:0c31345e",
+        "line:20503ab0",
+        "line:277d8257",
+        "line:54c44240",
+        "line:c2f44537",
+        "line:78a54cae",
+        "line:ee954bd9",
+        "line:4d002f47",
+        "line:616121a9",
+        "line:f75126de",
+        "line:664c994e",
+        "line:2a154290",
+        "line:bc2545e7",
+        "line:06744c7e",
+        "line:33d12f97",
+        "line:a5e128e0",
+        "line:1fb02179",
+        "line:8980260e",
+        "line:189d999e",
+        "line:6b245989",
+        "line:47455767",
+        "line:72e0348e"
+      ],
+      "reason": "Ryan discusses conflict at home and an unnamed girlfriend; preserve each branch and do not merge identities without evidence."
+    },
+    {
+      "node": "Ryan_2_Outro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:7e511da7",
+        "line:83c55e2e",
+        "line:afa450c0",
+        "line:9a013329",
+        "line:b6603dc7",
+        "line:b14d8520",
+        "line:db302830",
+        "line:90444b09",
+        "line:f07c9e39",
+        "line:8ead9ee9",
+        "line:fd145efe",
+        "line:d1755010"
+      ],
+      "reason": "Ryan discusses conflict at home and an unnamed girlfriend; preserve each branch and do not merge identities without evidence."
+    },
+    {
+      "node": "Ryan_2_intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:933efa6d",
+        "line:bf5ff483",
+        "line:b8724c64",
+        "line:2e424b13",
+        "line:4d6cd625",
+        "line:db5cd152",
+        "line:610dd8cb",
+        "line:f73ddfbc",
+        "line:c298bc55",
+        "line:eef9b2bb",
+        "line:7fe40d2b",
+        "line:0c5dcd3c",
+        "line:b60cc4a5"
+      ],
+      "reason": "Ryan returns, mentions friends and markers; preserve Yip callback and each distinct response."
+    },
+    {
+      "node": "Ryan_2_intro",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:e9d40a5c"
+      ],
+      "reason": "Ryan returns, mentions friends and markers; preserve Yip callback and each distinct response."
+    },
+    {
+      "node": "Ryan_2_intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:050efd1a",
+        "line:296ff3f4",
+        "line:54a8bb22",
+        "line:78c9b5cc",
+        "line:9a6dca4b",
+        "line:203cc3d2"
+      ],
+      "reason": "Ryan returns, mentions friends and markers; preserve Yip callback and each distinct response."
+    },
+    {
+      "node": "Ryan_2_required",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:aa0dda7b",
+        "line:105cd3e2",
+        "line:17716b05",
+        "line:e6aa9d20",
+        "line:5cfb94b9",
+        "line:cacb93ce",
+        "line:ff6ef027",
+        "line:d30ffec9",
+        "line:42124159",
+        "line:31ab814e",
+        "line:a79b8639",
+        "line:1dca8fa0",
+        "line:286fec49",
+        "line:040ee2a7"
+      ],
+      "reason": "Question-about-a-question wordplay and Ryan’s relationship concerns require the registered special-scene decisions."
+    },
+    {
+      "node": "Ryan_2_required",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:695ef750"
+      ],
+      "reason": "Question-about-a-question wordplay and Ryan’s relationship concerns require the registered special-scene decisions."
+    },
+    {
+      "node": "Ryan_2_required",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:3c3ddd0c",
+        "line:866cd495",
+        "line:81416c72",
+        "line:709a9a57",
+        "line:453ff9be",
+        "line:d422462e",
+        "line:8bfa88d7",
+        "line:be5feb3e"
+      ],
+      "reason": "Question-about-a-question wordplay and Ryan’s relationship concerns require the registered special-scene decisions."
+    },
+    {
+      "node": "Ryan_3_Outro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:3750bbf0",
+        "line:d2d97c90",
+        "line:feb8727e",
+        "line:cb1d1197",
+        "line:5d2d16e0",
+        "line:714c180e",
+        "line:7661a0e9",
+        "line:118a51bb",
+        "line:87ba56cc",
+        "line:084e3cbc"
+      ],
+      "reason": "Ryan calls the player a good friend; preserve the two choices and their separate replies, including size and italic markup."
+    },
+    {
+      "node": "Ryan_3_Outro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:44e97be7",
+        "line:68887509",
+        "line:e77c1f79",
+        "line:e051a79e",
+        "line:3deb5f55",
+        "line:abdb5822"
+      ],
+      "reason": "Ryan calls the player a good friend; preserve the two choices and their separate replies, including size and italic markup."
+    },
+    {
+      "node": "Ryan_3_intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:0d3e4054",
+        "line:215f4eba",
+        "line:2672f65d",
+        "line:4199070f",
+        "line:d7a90078",
+        "line:6df809e1",
+        "line:585d6a08",
+        "line:743c64e6",
+        "line:e20c6391",
+        "line:e521db76",
+        "line:96981b61"
+      ],
+      "reason": "Ryan hesitates and requests the gate; preserve the distinct reassurance branches."
+    },
+    {
+      "node": "Ryan_3_intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:b76f49cd",
+        "line:b042f12a",
+        "line:fbc80e96",
+        "line:ce6d6d7f",
+        "line:7311dc01",
+        "line:00a81c16"
+      ],
+      "reason": "Ryan hesitates and requests the gate; preserve the distinct reassurance branches."
+    },
+    {
+      "node": "Ryan_3_required",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:df4d3810",
+        "line:497d3f67",
+        "line:eae85bf9",
+        "line:50b95260",
+        "line:c1a4edf0",
+        "line:5794ea87",
+        "line:a28a70c6",
+        "line:8eeb7e28",
+        "line:2d7e1ab6",
+        "line:972f132f",
+        "line:0632acbf"
+      ],
+      "reason": "Ryan discusses ending a relationship and refers to a partner as she; preserve identity uncertainty and separate reply branches."
+    },
+    {
+      "node": "Ryan_3_required",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:7cd85c8e",
+        "line:c6895517",
+        "line:34ba77b1",
+        "line:18db795f",
+        "line:bb4e1dc1",
+        "line:011f1458"
+      ],
+      "reason": "Ryan discusses ending a relationship and refers to a partner as she; preserve identity uncertainty and separate reply branches."
+    },
+    {
+      "node": "Ryan_3_wont_use_mount",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:ccf87ea9",
+        "line:76a97730"
+      ],
+      "reason": "Ryan declines the current activity and leaves open the possibility of later; preserve modality."
+    }
+  ]
+}

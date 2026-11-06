@@ -8,6 +8,8 @@ The provisional source-union v6 added those 34 paired credit fields and, as uncl
 
 The provisional source-union v8 now records manually read dialogue/choice roles for 79 IDs in the configured `Start` test node and the first Ryan tutorial, introduction, conversation, reminder and farewell. Their source identities and branch kinds are pinned in `localization/yarn_roles_opening.json`; see `localization/evidence/opening-source-roles-20261107.md`. This is preliminary source classification, not translated text or an exhaustive visible-text denominator.
 
+The provisional union v9 adds 133 source roles across Ryan's second and third visit nodes, including his relationship discussion and the question-about-a-question case. See `localization/evidence/ryan23-source-roles-20261107.md`; identity, scene reachability and translation decisions remain separate gates.
+
 Current speaker-display finding: a test-only synthetic mapping executed in an instrumented macOS Unity copy and returned `Жж`; a separate frame and source-pixel crop remain too faint for visual confirmation. This is not a release adapter. Complete source classification, preservation, special-scene and glossary gates remain open, and no ordinary Russian game-text translation has started. Details: `localization/evidence/speaker-display-synthetic-20261107.md`.
 
 The presenter control-flow inspection now identifies inline and last-line fallback paths that the two-call synthetic speaker map does not cover. The pinned builds have identical inspected instructions; see `localization/evidence/speaker-presentation-flow-20261107.md`. Treat the current synthetic map as insufficient for a general player build, even though the known serialized line presenters have separate name fields.
