@@ -1,0 +1,5 @@
+# Small-window paired Cyrillic slot-label review
+
+On 2026-11-07 local time an independently authorized gpt-6.1-terra reviewer (high) inspected two views of one synthetic macOS test screenshot. The original `localization/work/slot-case-small-screen.png` was 1024 × 824, SHA-256 `fc1f9a5dd0f4bfd49bacd24c4e2b0e1d4c0223ed6c8ab2d4135fb50a33822457`. The full WebP80 preview SHA-256 was `cdb4bbf8b31a4be2bc0b765905d52ae92daa17b330399f16c03b122b16e27f58`; the WebP80 source-pixel crop SHA-256 was `14c7b8a6506185edb2b5e93b238a497229bc93838f9b9b165b5064d4e2723079`, bounds `(500, 400, 150, 260)`. Neither was upscaled; hashes matched.
+
+All three labels appeared contained with padding and without obvious overlap or clipping. Each showed four compact sign-like glyphs, but the reviewer could not reliably distinguish uppercase/lowercase or hard/soft signs against intended `ЪъЬь` at this size. Exact glyph identity remains needs-review. The larger-window case was independently reviewed in `slot-hires-review-20261106.md`; it does not remove uncertainty at this viewport.
