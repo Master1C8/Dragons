@@ -8,6 +8,8 @@ The provisional source-union v5 now includes those 34 paired fields as exact-pre
 
 Current speaker-display finding: a test-only synthetic mapping executed in an instrumented macOS Unity copy and returned `Жж`; a separate frame and source-pixel crop remain too faint for visual confirmation. This is not a release adapter. Complete source classification, preservation, special-scene and glossary gates remain open, and no ordinary Russian game-text translation has started. Details: `localization/evidence/speaker-display-synthetic-20261107.md`.
 
+The presenter control-flow inspection now identifies inline and last-line fallback paths that the two-call synthetic speaker map does not cover. The pinned builds have identical inspected instructions; see `localization/evidence/speaker-presentation-flow-20261107.md`. Treat the current synthetic map as insufficient for a general player build, even though the known serialized line presenters have separate name fields.
+
 Managed text-sink discovery now scans all pinned root managed DLLs and the source-pinned TMP dropdown configurations in both builds. Unity's built-in text defaults are retained as needs-review; static scope and exact findings are in `localization/evidence/managed-text-sinks-20261107.md`.
 
 A standalone Yarn-only preservation check now compares the complete source object inventory and exact authorized target values in synthetic macOS and Windows assets, including byte-identical compiled program objects. Combined UI/Yarn changes and other source families are not yet covered; the complete preserve-exact gate remains open. See `localization/evidence/yarn-preservation-check-20261107.md`.
