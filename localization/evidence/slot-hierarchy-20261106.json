@@ -1,0 +1,384 @@
+{
+  "schema": 1,
+  "level0Sha256": "4cabf35993c6726ab29e5cb24a1ce74a0fdf3d8061b0de3437415e56bcfa72f7",
+  "globalScriptAssetSha256": "391640e8e7df097a0d377c7a16552975d4821688841ea3460ec99587f4061d9e",
+  "componentId": 5377,
+  "fields": {
+    "slot1Button": {
+      "componentId": 5315,
+      "gameObjectChain": [
+        {
+          "id": 947,
+          "name": "NewSlot1",
+          "serializedActive": true
+        },
+        {
+          "id": 1046,
+          "name": "NewSlot1",
+          "serializedActive": true
+        },
+        {
+          "id": 595,
+          "name": "DeletableSaveSlot",
+          "serializedActive": true
+        },
+        {
+          "id": 929,
+          "name": "NewSlotSelect",
+          "serializedActive": true
+        },
+        {
+          "id": 774,
+          "name": "Container",
+          "serializedActive": true
+        },
+        {
+          "id": 961,
+          "name": "Menu_SlotsNew",
+          "serializedActive": true
+        },
+        {
+          "id": 838,
+          "name": "Menu",
+          "serializedActive": true
+        }
+      ]
+    },
+    "slot1DeleteButton": {
+      "componentId": 5263,
+      "gameObjectChain": [
+        {
+          "id": 656,
+          "name": "DeleteSlot1",
+          "serializedActive": true
+        },
+        {
+          "id": 595,
+          "name": "DeletableSaveSlot",
+          "serializedActive": true
+        },
+        {
+          "id": 929,
+          "name": "NewSlotSelect",
+          "serializedActive": true
+        },
+        {
+          "id": 774,
+          "name": "Container",
+          "serializedActive": true
+        },
+        {
+          "id": 961,
+          "name": "Menu_SlotsNew",
+          "serializedActive": true
+        },
+        {
+          "id": 838,
+          "name": "Menu",
+          "serializedActive": true
+        }
+      ]
+    },
+    "slot1Progress": {
+      "componentId": 5212,
+      "gameObjectChain": [
+        {
+          "id": 489,
+          "name": "SlotProgress",
+          "serializedActive": true
+        },
+        {
+          "id": 875,
+          "name": "Images",
+          "serializedActive": true
+        },
+        {
+          "id": 216,
+          "name": "NewSlot1",
+          "serializedActive": true
+        },
+        {
+          "id": 423,
+          "name": "NewSlot1",
+          "serializedActive": true
+        },
+        {
+          "id": 1176,
+          "name": "DeletableSaveSlot",
+          "serializedActive": true
+        },
+        {
+          "id": 682,
+          "name": "GreyedSlotSelect",
+          "serializedActive": true
+        },
+        {
+          "id": 774,
+          "name": "Container",
+          "serializedActive": true
+        },
+        {
+          "id": 961,
+          "name": "Menu_SlotsNew",
+          "serializedActive": true
+        },
+        {
+          "id": 838,
+          "name": "Menu",
+          "serializedActive": true
+        }
+      ]
+    },
+    "slot2Button": {
+      "componentId": 5340,
+      "gameObjectChain": [
+        {
+          "id": 426,
+          "name": "NewSlot2",
+          "serializedActive": true
+        },
+        {
+          "id": 214,
+          "name": "NewSlot2",
+          "serializedActive": true
+        },
+        {
+          "id": 91,
+          "name": "DeletableSaveSlot (1)",
+          "serializedActive": true
+        },
+        {
+          "id": 929,
+          "name": "NewSlotSelect",
+          "serializedActive": true
+        },
+        {
+          "id": 774,
+          "name": "Container",
+          "serializedActive": true
+        },
+        {
+          "id": 961,
+          "name": "Menu_SlotsNew",
+          "serializedActive": true
+        },
+        {
+          "id": 838,
+          "name": "Menu",
+          "serializedActive": true
+        }
+      ]
+    },
+    "slot2DeleteButton": {
+      "componentId": 5342,
+      "gameObjectChain": [
+        {
+          "id": 1120,
+          "name": "DeleteSlot2",
+          "serializedActive": true
+        },
+        {
+          "id": 91,
+          "name": "DeletableSaveSlot (1)",
+          "serializedActive": true
+        },
+        {
+          "id": 929,
+          "name": "NewSlotSelect",
+          "serializedActive": true
+        },
+        {
+          "id": 774,
+          "name": "Container",
+          "serializedActive": true
+        },
+        {
+          "id": 961,
+          "name": "Menu_SlotsNew",
+          "serializedActive": true
+        },
+        {
+          "id": 838,
+          "name": "Menu",
+          "serializedActive": true
+        }
+      ]
+    },
+    "slot2Progress": {
+      "componentId": 5201,
+      "gameObjectChain": [
+        {
+          "id": 858,
+          "name": "SlotProgress",
+          "serializedActive": true
+        },
+        {
+          "id": 664,
+          "name": "Images",
+          "serializedActive": true
+        },
+        {
+          "id": 1354,
+          "name": "NewSlot2",
+          "serializedActive": true
+        },
+        {
+          "id": 781,
+          "name": "NewSlot2",
+          "serializedActive": true
+        },
+        {
+          "id": 1217,
+          "name": "DeletableSaveSlot (1)",
+          "serializedActive": true
+        },
+        {
+          "id": 682,
+          "name": "GreyedSlotSelect",
+          "serializedActive": true
+        },
+        {
+          "id": 774,
+          "name": "Container",
+          "serializedActive": true
+        },
+        {
+          "id": 961,
+          "name": "Menu_SlotsNew",
+          "serializedActive": true
+        },
+        {
+          "id": 838,
+          "name": "Menu",
+          "serializedActive": true
+        }
+      ]
+    },
+    "slot3Button": {
+      "componentId": 5407,
+      "gameObjectChain": [
+        {
+          "id": 181,
+          "name": "NewSlot3",
+          "serializedActive": true
+        },
+        {
+          "id": 621,
+          "name": "NewSlot3",
+          "serializedActive": true
+        },
+        {
+          "id": 1092,
+          "name": "DeletableSaveSlot (2)",
+          "serializedActive": true
+        },
+        {
+          "id": 929,
+          "name": "NewSlotSelect",
+          "serializedActive": true
+        },
+        {
+          "id": 774,
+          "name": "Container",
+          "serializedActive": true
+        },
+        {
+          "id": 961,
+          "name": "Menu_SlotsNew",
+          "serializedActive": true
+        },
+        {
+          "id": 838,
+          "name": "Menu",
+          "serializedActive": true
+        }
+      ]
+    },
+    "slot3DeleteButton": {
+      "componentId": 5337,
+      "gameObjectChain": [
+        {
+          "id": 259,
+          "name": "DeleteSlot3",
+          "serializedActive": true
+        },
+        {
+          "id": 1092,
+          "name": "DeletableSaveSlot (2)",
+          "serializedActive": true
+        },
+        {
+          "id": 929,
+          "name": "NewSlotSelect",
+          "serializedActive": true
+        },
+        {
+          "id": 774,
+          "name": "Container",
+          "serializedActive": true
+        },
+        {
+          "id": 961,
+          "name": "Menu_SlotsNew",
+          "serializedActive": true
+        },
+        {
+          "id": 838,
+          "name": "Menu",
+          "serializedActive": true
+        }
+      ]
+    },
+    "slot3Progress": {
+      "componentId": 5210,
+      "gameObjectChain": [
+        {
+          "id": 1108,
+          "name": "SlotProgress",
+          "serializedActive": true
+        },
+        {
+          "id": 533,
+          "name": "Images",
+          "serializedActive": true
+        },
+        {
+          "id": 1233,
+          "name": "NewSlot3",
+          "serializedActive": true
+        },
+        {
+          "id": 719,
+          "name": "NewSlot3",
+          "serializedActive": true
+        },
+        {
+          "id": 874,
+          "name": "DeletableSaveSlot (2)",
+          "serializedActive": true
+        },
+        {
+          "id": 682,
+          "name": "GreyedSlotSelect",
+          "serializedActive": true
+        },
+        {
+          "id": 774,
+          "name": "Container",
+          "serializedActive": true
+        },
+        {
+          "id": 961,
+          "name": "Menu_SlotsNew",
+          "serializedActive": true
+        },
+        {
+          "id": 838,
+          "name": "Menu",
+          "serializedActive": true
+        }
+      ]
+    }
+  },
+  "limitations": "Serialized ancestry and initial active flags alone do not prove runtime visibility, canvas order, alpha, or accessibility."
+}
