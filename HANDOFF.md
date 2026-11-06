@@ -1,6 +1,8 @@
 # Drag'N Wash Russian localization — current state
 
-Updated 2026-11-06. Canonical checkout: `/Users/antonkrutov/Desktop/Dragons`, branch `main`. Goal: complete standard Russian localization of the verified supported builds, excluding all text baked into textures, with a reproducible package and verified runtime, installation and restoration. Do not modify the installed game or its saves during tests. Publication and deployment are separate decisions.
+Updated 2026-11-07. Canonical checkout: `/Users/antonkrutov/Desktop/Dragons`, branch `main`. Goal: complete standard Russian localization of the verified supported builds, excluding all text baked into textures, with a reproducible package and verified runtime, installation and restoration. Do not modify the installed game or its saves during tests. Publication and deployment are separate decisions.
+
+Current speaker-display finding: a test-only synthetic mapping executed in an instrumented macOS Unity copy and returned `Жж`; a separate frame and source-pixel crop remain too faint for visual confirmation. This is not a release adapter. Complete source classification, preservation, special-scene and glossary gates remain open, and no ordinary Russian game-text translation has started. Details: `localization/evidence/speaker-display-synthetic-20261107.md`.
 
 ## Scope and process binding
 

@@ -31,13 +31,36 @@ Independent review found a very faint label-like cluster at the upper-left of
 the dialogue box but could not read it or verify `Жж`, glyphs, or clipping.
 This frame therefore does not prove that either modified call executed or that
 the mapping rendered. The normal window title and mouse icon were visible.
+An independent follow-up reviewed a no-upscale 150 × 70 source-pixel crop
+at `[100, 685, 150, 70]`, WebP80 SHA-256
+`e1fac4f2fa0c55fb64a21f31145b69ee2bfea75f9d313a4adfeec24d04d1dae5`.
+The cluster resembled `Жж`, but the low contrast prevented confident glyph
+identification or a conclusive clipping assessment. The visual result remains
+needs-review.
+
+To distinguish a missing call from a display problem, a separate isolated
+`Q9R5` copy used the same bridge and synthetic payload, with the modified Yarn
+DLL additionally instrumented to log each helper return through Unity's own
+`Debug.Log`. The exact instrumented DLL SHA-256 is
+`5cc8370bdc9fed8328b350d9515b78057f1191917635979ee75ecc6fa80907d2`;
+the diagnostic-only source is `localization/tools/speaker-runtime-log-probe/`.
+The Unity log SHA-256
+`c7e5308e26c7bdcade3fa9c2e65c68e331b28b881ac10d96edcc82a123e33471`
+records `Ryan_Conrad_SexScene`, the instrumentation marker and `Жж` in that
+order. This proves that the instrumented display helper executed and returned
+that synthetic value in the test runtime. It does not prove readable pixels,
+the second speaker, the options presenter, uninstrumented behavior, or player
+gameplay. Startup exceeded the initial 35-second observation window; the same
+live process later reached the node, without a restart. Its verified PID was
+terminated, and the wrapper removed its generated Steam file and verified the
+copy's signature. Original game assemblies retained the pinned hashes.
 
 The verified test PID was terminated; the wrapper removed the matching generated
 Steam file and verified the copy's signature. The installed original macOS
 `Assembly-CSharp.dll` and `YarnSpinner.Unity.dll` still matched their pinned
 hashes. The test used a separate profile; this run did not independently compare
 all original save locations or demonstrate normal game exit. Windows Unity
-execution, actual name display, identity-dependent game behavior, full-glyph
+execution, readable name display, identity-dependent game behavior, full-glyph
 readability, normal scene entry, and player installation remain unverified.
 The unusual source line ending in a colon and the `title:` markers remain
 protected pending separate investigation. The synthetic mapping tool is not
