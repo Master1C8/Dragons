@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "testOnly": true,
+  "platform": "windows",
+  "managedInventorySha256": "9a14fcb1198ca8308ad90a38a1988367074c1f2ec8b6f0a8d97ef3d3c074fc56",
+  "patchedSha256": "4dfd4394bb9976f89d500a876fe22fbcf2b9e0f25946150b54655d48cc3b244b",
+  "checks": [
+    {
+      "source": "Ryan: TEST",
+      "identityBefore": "Ryan",
+      "display": "\u0416\u0436",
+      "identityAfter": "Ryan",
+      "body": "TEST"
+    },
+    {
+      "source": "Conrad: TEST",
+      "identityBefore": "Conrad",
+      "display": "\u042A\u044A\u042C\u044C",
+      "identityAfter": "Conrad",
+      "body": "TEST"
+    },
+    {
+      "source": "Other: TEST",
+      "identityBefore": "Other",
+      "display": "Other",
+      "identityAfter": "Other",
+      "body": "TEST"
+    },
+    {
+      "source": "Ryan2: TEST",
+      "identityBefore": "Ryan2",
+      "display": "Ryan2",
+      "identityAfter": "Ryan2",
+      "body": "TEST"
+    },
+    {
+      "source": "Ordinary phrase:",
+      "identityBefore": "Ordinary phrase",
+      "display": "Ordinary phrase",
+      "identityAfter": "Ordinary phrase",
+      "body": ""
+    },
+    {
+      "source": "The most prestigious college hosting prestigious professors like me:",
+      "identityBefore": "The most prestigious college hosting prestigious professors like me",
+      "display": "The most prestigious college hosting prestigious professors like me",
+      "identityAfter": "The most prestigious college hosting prestigious professors like me",
+      "body": ""
+    },
+    {
+      "source": "TEST",
+      "identityBefore": null,
+      "display": null,
+      "identityAfter": null,
+      "body": "TEST"
+    }
+  ],
+  "limitations": "Desktop .NET executes the actual pinned Yarn parser and patched helper via reflection. Unity UI, injected call-site execution, game runtime, rendering, font, options, and nonstandard source adaptation remain untested."
+}

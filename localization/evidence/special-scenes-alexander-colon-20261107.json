@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "status": "incomplete",
+  "sourceInventory": "localization/evidence/yarn-context-map-20261107.json",
+  "sourceInventorySha256": "20d8c7305831a2b98adffad5798e64cb194c37e40039d1525dde122b0c061555",
+  "discoveryCoverage": "One exceptional implicit-speaker source line in the Alexander_2 node. Other colon-bearing lines and remaining source families are not covered by this case.",
+  "cases": [
+    {
+      "id": "alexander-college-self-introduction",
+      "title": "College introduction split at a colon",
+      "node": "Alexander_2",
+      "nodeSha256": {"macos": "4518c325b247a32e3841ac1263ab1d060adb09074e167ee1e0d26bd8336afeae", "windows": "4518c325b247a32e3841ac1263ab1d060adb09074e167ee1e0d26bd8336afeae"},
+      "sourceLineIds": ["line:7e9389a7", "line:dd06ed39", "line:4b36ea4e", "line:f167e3d7", "line:6757e4a0", "line:f64a5b30", "line:607a5c47", "line:85f39b27", "line:13c39c50"],
+      "observedSourceBehavior": "One response asks which college, followed by the college name, a sentence ending in a colon, and a separate self-introduction. The other response has a different continuation before convergence. In the original Yarn parser the colon-ended sentence becomes the implicit character name and its text without the name is empty; the synthetic speaker mapping passes this unrecognized 67-character name through unchanged.",
+      "branchControls": [{"choiceId": "line:7e9389a7", "instructionIndex": 4, "destination": 10}, {"choiceId": "line:f64a5b30", "instructionIndex": 5, "destination": 18}],
+      "invariant": "Preserve the speaker's boast and separately paced self-introduction, both choice identities, destinations, program controls, and presentation semantics. Do not infer that the full sentence is a real character identity or drop it as metadata.",
+      "adaptationRoute": "Requires an explicitly source-bound display/presentation strategy for this ID, not ordinary replacement of the protected prefix; determine locale wording and validate name/body presentation, progression and identity behavior before considering the case ready.",
+      "nonTextDependencies": "Pinned Yarn parser, both compiled program objects and LinePresenter behavior; the current synthetic display map handles only Ryan and Conrad and has no solution for this source sentence. Actual in-game rendering, wrapping, branch entry and option behavior are unverified.",
+      "acceptanceScenarios": ["The college question leads to all four source-bound lines in the intended order, while the other choice retains its own continuation.", "A localized presentation preserves the entire boast and the subsequent Alexander self-introduction without changing the selected branch; verify actual original and localized name/body presentation before accepting it.", "A changed source prefix or unexpected identity is rejected; ordinary Ryan and Conrad identities remain unaffected."],
+      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "needs-review", "structural": "partial", "runtimeVisual": "not-run"}
+    }
+  ]
+}

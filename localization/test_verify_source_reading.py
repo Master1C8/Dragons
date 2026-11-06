@@ -46,6 +46,12 @@ class SourceReadingTests(unittest.TestCase):
         receipt = json.loads((ROOT / 'evidence/source-reading-batch-20261107.json').read_text())
         result = reading.verify(corpus.read_bytes(), receipt)
         self.assertEqual((result['nodes'], result['uniqueIds']), (44, 523))
+        alexander = json.loads((ROOT / 'evidence/source-reading-alexander-20261107.json').read_text())
+        result2 = reading.verify(corpus.read_bytes(), alexander)
+        self.assertEqual((result2['nodes'], result2['uniqueIds']), (35, 351))
+        first_ids = {key for node in receipt['nodes'] for key in node['lineIds']}
+        second_ids = {key for node in alexander['nodes'] for key in node['lineIds']}
+        self.assertTrue(first_ids.isdisjoint(second_ids))
 
 
 if __name__ == '__main__':

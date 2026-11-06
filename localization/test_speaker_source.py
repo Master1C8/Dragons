@@ -1,4 +1,5 @@
 from collections import Counter
+import hashlib
 import json
 from pathlib import Path
 import subprocess
@@ -6,10 +7,29 @@ import unittest
 
 import inventory_speaker_lines as lines
 import inventory_speaker_presenters as presenters
+import map_yarn_context as mapping
 
 MAC = Path.home() / "Documents/Drag'N Wash.app/Contents/Resources/Data"
 WIN = Path('/Volumes/KINGSTONMAC/CrossOver/Bottles/Steam/drive_c/Dragn.Wash/game/DragNWash_Data')
 TOOL = Path(__file__).parent / 'work/speaker-consumers-bin/speaker-consumers.dll'
+EVIDENCE = Path(__file__).parent / 'evidence'
+
+
+class ColonCaseBindingTests(unittest.TestCase):
+    def test_case_bindings_match_context_map(self):
+        case_file = json.loads((EVIDENCE / 'special-scenes-alexander-colon-20261107.json').read_text())
+        raw = (EVIDENCE / 'yarn-context-map-20261107.json').read_bytes()
+        self.assertEqual(hashlib.sha256(raw).hexdigest(), case_file['sourceInventorySha256'])
+        context = json.loads(raw)
+        case = case_file['cases'][0]
+        for platform in ('macos', 'windows'):
+            self.assertEqual(case['nodeSha256'][platform], context['nodeSha256'][platform][case['node']])
+            self.assertTrue(all(context['lineIds'][key][platform]['node'] == case['node']
+                                for key in case['sourceLineIds']))
+            for choice in case['branchControls']:
+                actual = context['lineIds'][choice['choiceId']][platform]
+                self.assertEqual((actual['instructionIndex'], actual['destination']),
+                                 (choice['instructionIndex'], choice['destination']))
 
 
 @unittest.skipUnless(MAC.is_dir() and WIN.is_dir(), 'both pinned builds required')
@@ -24,6 +44,15 @@ class SpeakerSourceTests(unittest.TestCase):
                                   'nonstandard-prefix-needs-review': 1})
                 unusual = next(x for x in candidates if x['provisionalRole'] == 'nonstandard-prefix-needs-review')
                 self.assertEqual((unusual['id'], unusual['bodyCharacters']), ('line:4b36ea4e', 0))
+                keys, values, _, _, locations, _, _ = mapping.load_platform(root, platform)
+                source = dict(zip(keys, values))
+                self.assertEqual(source['line:4b36ea4e'],
+                                 'The most prestigious college hosting prestigious professors like me:')
+                self.assertEqual(source['line:f167e3d7'], 'Alexander!')
+                self.assertEqual([(locations[k]['node'], locations[k]['instructionIndex'])
+                                  for k in ('line:dd06ed39', 'line:4b36ea4e', 'line:f167e3d7', 'line:6757e4a0')],
+                                 [('Alexander_2', 13), ('Alexander_2', 14), ('Alexander_2', 15), ('Alexander_2', 16)])
+                self.assertEqual([locations[k]['destination'] for k in ('line:7e9389a7', 'line:f64a5b30')], [10, 18])
                 data = presenters.inspect(root, platform)
                 self.assertFalse(data['unresolvedScripts'])
                 self.assertEqual(Counter(x['class'] for x in data['presenters']), {'LinePresenter': 5, 'OptionsPresenter': 5})

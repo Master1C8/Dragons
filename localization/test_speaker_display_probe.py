@@ -39,8 +39,11 @@ class SpeakerDisplayProbeTests(unittest.TestCase):
                         runtime = subprocess.run(['dotnet', str(RUNTIME), platform, str(managed), str(output), info['outputSha256']],
                                                  capture_output=True, text=True, check=True)
                         check = json.loads(runtime.stdout)
-                        self.assertEqual(len(check['checks']), 6)
+                        self.assertEqual(len(check['checks']), 7)
                         self.assertTrue(all(c['identityBefore'] == c['identityAfter'] for c in check['checks']))
+                        unusual = next(c for c in check['checks'] if c['source'].startswith('The most prestigious college'))
+                        self.assertEqual(unusual['body'], '')
+                        self.assertEqual(unusual['display'], unusual['source'][:-1])
                         digest = hashlib.sha256(output.read_bytes()).hexdigest()
                         collision = subprocess.run(cmd, capture_output=True, text=True)
                         self.assertNotEqual(collision.returncode, 0)

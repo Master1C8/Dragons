@@ -39,6 +39,9 @@ var cases = new[] {
     (source: "Other: TEST", original: "Other", display: "Other"),
     (source: "Ryan2: TEST", original: "Ryan2", display: "Ryan2"),
     (source: "Ordinary phrase:", original: "Ordinary phrase", display: "Ordinary phrase"),
+    (source: "The most prestigious college hosting prestigious professors like me:",
+     original: "The most prestigious college hosting prestigious professors like me",
+     display: "The most prestigious college hosting prestigious professors like me"),
     (source: "TEST", original: (string)null, display: (string)null)
 };
 var checks = new List<object>();
@@ -51,7 +54,11 @@ foreach (var sample in cases) {
     var after = (string)getter.GetValue(line);
     if (before != sample.original || after != sample.original || shown != sample.display)
         throw new InvalidOperationException($"Unexpected synthetic speaker mapping: {sample.source}");
-    checks.Add(new { sample.source, identityBefore = before, display = shown, identityAfter = after });
+    var noName = lineType.GetProperty("TextWithoutCharacterName").GetValue(line);
+    var body = (string)noName.GetType().GetProperty("Text").GetValue(noName);
+    if (sample.source.StartsWith("The most prestigious college", StringComparison.Ordinal) && body != "")
+        throw new InvalidOperationException("Unexpected nonempty body for colon-ended source line");
+    checks.Add(new { sample.source, identityBefore = before, display = shown, identityAfter = after, body });
 }
 Console.WriteLine(JsonSerializer.Serialize(new { schema = 1, testOnly = true, platform = args[0],
     managedInventorySha256 = manifests[args[0]], patchedSha256 = patchedHash, checks,
