@@ -59,6 +59,28 @@ class SettingsAdapterIntegrationTests(unittest.TestCase):
             self.assertIn('unknown line IDs: sharedassets0.assets#619:option:0', result.stderr)
             self.assertFalse(output.exists())
 
+    def test_option_translation_preserves_index_and_every_other_setting_field(self):
+        from copy import deepcopy
+        import hashlib
+        import UnityPy
+        import settings_locale as settings
+        with tempfile.TemporaryDirectory(prefix='dragnwash-setting-option-') as directory:
+            root = Path(directory)
+            locale, output = root / 'ru.json', root / 'output.assets'
+            self.write_locale(locale, 'sharedassets0.assets#606:option:1', 'On', 'ЖЮЯ 427')
+            result = self.run_adapter(locale, output)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertEqual(hashlib.sha256(output.read_bytes()).hexdigest(),
+                             '8d42bd11daf40e5ddf0b8fd310b31d27f2201ff2da49b81dbfe22afbf87b96e1')
+            _, _, original_trees, schemas, _, _ = settings.scan(SOURCE)
+            saved = UnityPy.load(str(output))
+            obj = next(o for o in saved.objects if o.path_id == 606)
+            after = obj.read_typetree(nodes=schemas[606], check_read=True)
+            self.assertEqual(after['dropdownOptions'][1]['backupString'], 'ЖЮЯ 427')
+            restored = deepcopy(after)
+            restored['dropdownOptions'][1]['backupString'] = 'On'
+            self.assertEqual(restored, original_trees[606])
+
     def test_export_inside_source_directory_is_rejected_before_reading_inputs(self):
         with tempfile.TemporaryDirectory(prefix='dragnwash-setting-source-') as directory:
             source = Path(directory)
