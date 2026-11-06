@@ -1,0 +1,20 @@
+# Managed-code string discovery
+
+The read-only .NET 8 / Mono.Cecil 0.11.6 tool `localization/tools/managed-strings/Program.cs` (SHA-256 `4671a63885e4ea44b6ea958648e1163f82c1989d9378513ae8b5187c9551e3e8`) scans every `ldstr` instruction in a selected, SHA-256-pinned managed assembly, including nested types. Its project file SHA-256 is `4aaedc36db5be19f4978b7f4f70312f2e5c82530bdd260eb7f87d49735c4d990`. The tool validates the exact Mono.Cecil DLL SHA-256 `831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf`, reads the verified source bytes from memory, rejects duplicate method/ordinal identities, and does not write to the game. Each record includes the full method signature, source-build-bound `ldstr` ordinal, method metadata token, IL offset, literal value, and calls in the next 12 instructions. Nearby calls are discovery clues, not dataflow evidence. The ordinal is not a stable cross-version identity.
+
+Local source exports under `localization/work/source-inventory-20261107/` are deliberately untracked because they contain game literals:
+
+| Pinned selector | Assembly | Literal-load occurrences | Unique literal values | Export SHA-256 |
+| --- | --- | ---: | ---: | --- |
+| `macos` | `Assembly-CSharp.dll` | 622 | 355 | `86152819357c568695ba203f2dc434bf7beaccaf1f2534fa95ea4203cdf916ed` |
+| `windows` | `Assembly-CSharp.dll` | 594 | 350 | `3c3a38efa1657c3a02aabc8ecade3db3312ce816cdafea7169ae892414b7c51c` |
+| `macos-settings` | `Naelstrof.UnityScriptableSettings.dll` | 15 | 8 | `62c9cfebe9c34f01bff27d59aa38b2a0ba690eccdaa1b2c6b521b2c4d1cf8682` |
+| `windows-settings` | `Naelstrof.UnityScriptableSettings.dll` | 15 | 8 | `cc975c8a60970047500a07488391ee0323c6fe2e0a5c881d250a7c3c48056337` |
+| `macos-yarn-unity` | `YarnSpinner.Unity.dll` | 286 | 208 | `3fba6592de02b9c1b6036d39efac47f1c7e3049fca74a0282c06aab73d50ae8e` |
+| `windows-yarn-unity` | `YarnSpinner.Unity.dll` | 286 | 208 | `fa21afafe9e5b239a82723a8caacfd3d005cafa38436ad3ada5e6e1ee` |
+
+The counts include service keys, diagnostic messages and other literals and are not a translation denominator. Six independent runs reproduced the output byte-for-byte. Supplying the Windows DLL for each macOS selector and changing one byte of the macOS game assembly each failed at the source-hash guard before producing output. A previous same-source extraction's complete `Assembly-CSharp` records matched. The source hash, tool hash and export hash bind each occurrence to its version; equal method/ordinal identities across builds are not sufficient to pair them. For example, ordinal 3 of `MenuPause::OnEvent` is `Unstick` in the pinned macOS assembly and `Quit` in Windows. Cross-version pairing needs control-flow and use-site analysis.
+
+Static IL inspection of the pinned settings DLLs confirms one false positive that a nearby-call heuristic would otherwise misclassify. In `UnityScriptableSettings.ScriptableSettingSpawner::CreateTitle`, IL `0049` gets the object name, `004e` loads `Label`, and `0053` compares them. The displayed label instead comes from `SettingGroup::GetLabel` at `005d` and `ScriptableSettingString::GetLocalizedString` at `0066`, before `TMP_Text::set_text` at `006b`. Both builds have these same inspected instructions. `Label` is a lookup identity here and must not be translated. The real settings sources are separately extracted by `settings_locale.py` and still require full classification.
+
+To reproduce, build the project with `dotnet build localization/tools/managed-strings/managed-strings.csproj -p:BaseIntermediateOutputPath=<new work obj directory>/ -o <new work binary directory>`, then run `dotnet <binary directory>/managed-strings.dll <selector> <matching original managed DLL>`, saving stdout to a new task-owned file. Package restore requires the exact Mono.Cecil 0.11.6 package; the tool verifies the loaded binary hash. Other assemblies, reflected or dynamically composed text, consumer dataflow, visibility/reachability and semantic roles remain unclassified. No source translation or game patch is produced by this probe.
