@@ -14,13 +14,15 @@ ASSET_RELATIVE = Path('Contents/Resources/Data/sharedassets1.assets')
 
 
 def build(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
-          test_profile_code=None, test_caption_layout=False):
+          test_profile_code=None, test_caption_layout=False, test_slot_font=False):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
         raise ValueError('source and destination must be macOS .app bundles')
     if test_caption_layout and test_profile_code is None:
         raise ValueError('experimental settings layout requires an isolated test profile')
+    if test_slot_font and test_profile_code is None:
+        raise ValueError('experimental slot font requires an isolated test profile')
     if destination.exists() or destination.is_symlink():
         raise FileExistsError('destination already exists')
     # Do not put outputs inside the source or recursively copy a parent of the source.
@@ -121,6 +123,19 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
             json.dump({'schema': 1, 'testOnly': True, 'assetSha256': layout_hash,
                        'rectTransformPathId': 478, 'oldHeightDelta': -13, 'newHeightDelta': -3}, f)
             f.write('\n')
+    slot_font_hash = None
+    if test_slot_font:
+        import experimental_slot_font as slot_font
+        target_slot = destination / 'Contents/Resources/Data' / slot_font.ASSET
+        if target_slot.is_symlink() or destination.resolve() not in target_slot.resolve().parents:
+            raise ValueError('unsafe test slot font destination; partial copy retained')
+        slot_font_hash = slot_font.patch_into(source / 'Contents/Resources/Data', target_slot, requested,
+                                              prior_ui=ui_files.get(slot_font.ASSET))
+        experiment_marker = destination / 'Contents/Resources/vn-test-slot-font.json'
+        with experiment_marker.open('x', encoding='utf-8') as f:
+            json.dump({'schema': 1, 'testOnly': True, 'assetSha256': slot_font_hash,
+                       'textPathIds': list(slot_font.TEXT_IDS), 'oldSize': 20, 'newSize': 18}, f)
+            f.write('\n')
     profile = None
     if prepared_profile is not None:
         profile = profile_tool.apply(destination, prepared_profile)
@@ -147,6 +162,7 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
                       'settingsStrings': settings_count,
                       'testProfile': profile['code'] if profile else None,
                       'testSettingsLayoutSha256': layout_hash,
+                      'testSlotFontSha256': slot_font_hash,
                       'output': str(destination)}, ensure_ascii=False))
     print('Build complete. No game was installed or launched; UI coverage and font support remain unverified.')
 
@@ -162,9 +178,11 @@ def main():
     p.add_argument('--test-profile', help='optional fresh four-character isolated test profile; not a player release')
     p.add_argument('--test-settings-caption-layout', action='store_true',
                    help='experimental caption height for isolated test profiles only')
+    p.add_argument('--test-slot-font', action='store_true',
+                   help='experimental slot font size for isolated test profiles only')
     a = p.parse_args()
     build(a.source_app, a.locale_file, a.locale, a.output_app, a.ui_dir, a.settings_locale,
-          a.test_profile, a.test_settings_caption_layout)
+          a.test_profile, a.test_settings_caption_layout, a.test_slot_font)
 
 
 if __name__ == '__main__':

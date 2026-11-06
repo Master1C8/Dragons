@@ -177,6 +177,16 @@ all other object bytes. It is forbidden without a test profile, adds a signed
 synthetic value became legible in a controlled comparison; long values,
 scrolling, normal input and final localized content remain unverified.
 
+For isolated tests only, `--test-slot-font` with `--test-profile` changes the
+three new-slot label font sizes from 20 to 18 in the copied `level0`, after
+validating any supplied `level0` UI locale file and every unrelated object.
+It requires the font-probe dependencies in `font_probe_requirements.txt`,
+adds a signed `vn-test-slot-font.json` marker, and is disabled for normal
+builds. The five-character synthetic sample has more room in one comparison,
+but exact glyph details and real translated labels remain unverified; this is
+not an accepted release setting. A failure later in the app build can leave a
+partial output, as with the other builder steps.
+
 ## Evidence and limitations
 
 - The installed Windows copy investigated separately reports build
