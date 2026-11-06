@@ -20,6 +20,8 @@ The 11 nodes without line/option instructions have now been inventoried and thei
 
 The known 162 paired TMP UI fields and available settings backup strings have had a bounded source reading. Seven version placeholders in each build are colocated with `VersionNumber` components whose inspected `Start` assigns `Application.version`; actual runtime visibility remains open. See `localization/evidence/ui-reading-version-consumers-20261107.md`.
 
+Local StreamingAssets now have a source-bound file inventory and separate exact comparison on two isolated copies, including 24 identical APV files per build. APV/catalog semantics and remote/dynamic resources remain unverified; this standalone check is not yet a release gate. See `localization/evidence/streaming-assets-preservation-20261107.md`.
+
 ## Scope and process binding
 
 Source language English; requested locale `ru` → runtime `ru` selected at build time, replacing the English Yarn table in a separate build. This prototype is not an in-game language selector. Owner decisions: player and franchise contact use neutral wording; Alexander uses masculine forms; Igwyx is referred to with masculine forms without asserting gender; Max uses neutral forms without asserting gender. These rules do not establish other characters' gender or complete roster coverage.

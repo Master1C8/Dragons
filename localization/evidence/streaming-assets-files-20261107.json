@@ -1,0 +1,265 @@
+{
+  "schema": 1,
+  "apvManifestSha256": "7e82d379c31e6bdfa8d1b276eb2d46be64eb551be7ca4c2a481443c70cdaf56a",
+  "builds": {
+    "macos": {
+      "build": "9/12/2026_a93aa21a",
+      "files": {
+        "APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/5579d3056bf9c86cdb5eefdfe9650c7c.bytes": {
+          "size": 343856,
+          "sha256": "aadf2d5a14b594ede702314539ac538aebe3a55bfa3e1aff02352b71b84185ed"
+        },
+        "APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/822a06367ab7598d89cedab27d6874fa.bytes": {
+          "size": 1523712,
+          "sha256": "65e1745a24df5e566d1975ef10cbf0b763dba23ed2ce5ef5002eaa55645eec49"
+        },
+        "APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/e9778d016fe7a857da36934976252cc0.bytes": {
+          "size": 6094848,
+          "sha256": "15c9938c032aa793b709c2388117d54fecc0dd78e1dd3bf8fc97a2a53a71786e"
+        },
+        "APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/eef5a004cc6d4aad1987b860d27d047c.bytes": {
+          "size": 24379392,
+          "sha256": "30f14addad064b74030993f484efb9a7e056ee658a3e2a0023b760d2080b983e"
+        },
+        "APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/5192553b64cca9a4b9c396d35a08948c.bytes": {
+          "size": 425984,
+          "sha256": "0cda71e0b87c9ab1086fbf5e23e87b23312431ade21c497bb84fb9f8e3fa75fe"
+        },
+        "APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/693e8ef14b0412d4e90c94a04dabba76.bytes": {
+          "size": 6815744,
+          "sha256": "ef86b8913089b59b4480618abd1f6b28b126ed4970533d96d88b8115e681b609"
+        },
+        "APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/76e3e3cb369765641bb29c3822cfca26.bytes": {
+          "size": 1703936,
+          "sha256": "36227597bdc61c4018bb27461c11e0d987c432518775c79353ddc3d485efe0f7"
+        },
+        "APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/fd872fa3d525a47488c04a612d257884.bytes": {
+          "size": 100448,
+          "sha256": "d2b521a6c1898da4d441904097cd6a069117a3ec9432cd234b55e53ce777205c"
+        },
+        "APVStreamingAssets/214550b190c771644990476c4001655a/0df5818ebdb28004ca23e5805e2b1bde.bytes": {
+          "size": 393216,
+          "sha256": "55d4107877216e8129f2f4e576eeb3fdff21811d909dfedd58b4a0fceb87c2bb"
+        },
+        "APVStreamingAssets/214550b190c771644990476c4001655a/1647e62895158624ebb69f83c87e205f.bytes": {
+          "size": 98304,
+          "sha256": "6cd2741512ac9c04fbcf31c795e99143ed711e433cfef93e9c3015d9172ff038"
+        },
+        "APVStreamingAssets/214550b190c771644990476c4001655a/b92f0167a5c835f4fb06c2348392367f.bytes": {
+          "size": 1572864,
+          "sha256": "c263185fc5264fd218dc67a869e3f1181747c9decce202220a70582eff3b875b"
+        },
+        "APVStreamingAssets/214550b190c771644990476c4001655a/cf36006797e606d468f3294ddce68e9e.bytes": {
+          "size": 12240,
+          "sha256": "5bf06e43b77d7cef32475c357fb64046efde74263b78a1ed6e104b1567a3e65d"
+        },
+        "APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/340adf393b3fcf94c84ba5624c1f35a3.bytes": {
+          "size": 65536,
+          "sha256": "4276e47d2da2a0d22a449223fc6d633ab4f07faf524cd72e4e867615b57a9518"
+        },
+        "APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/63e8abce55142164da4510f947d1a32c.bytes": {
+          "size": 1048576,
+          "sha256": "1411e0a88014b91fdf6c55389183bc655aa71ac164aac92be2b1a23c9797339a"
+        },
+        "APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/70cf4bcd2e5b62d4d9e5fe276af69207.bytes": {
+          "size": 13072,
+          "sha256": "2a4192203b76348a4aca5c1117541d48d5df352eb7fbcafd19116560f94aebc4"
+        },
+        "APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/850dec18f1b14be4a83f8d8b61a3e92f.bytes": {
+          "size": 262144,
+          "sha256": "3a262724c02d915132caad8fe5c4afd9f39a52261cc667a74ef9362ee143921a"
+        },
+        "APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/3fcaf4ea0a6b7b0438e67691a8d160de.bytes": {
+          "size": 65536,
+          "sha256": "38bbf23656d7006b85fa100f62bbd0fa7dd6d91f555218d9209ad506eb8fe0a2"
+        },
+        "APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/54cb5137dfccd2c41b2200b1f4b5c228.bytes": {
+          "size": 4896,
+          "sha256": "46dd9685bd027d7413e9161d100b6c031dafcc7b12a27d0443ea2259cd13bab4"
+        },
+        "APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/6d042fcfdd540ad4a94449e28bf815b2.bytes": {
+          "size": 262144,
+          "sha256": "339b36476e58bc2f0ee578637e0429dbaefe64360f7eeb67016f89220da5c429"
+        },
+        "APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/97edd8ccc91cdf94faa1b715bf1561ce.bytes": {
+          "size": 1048576,
+          "sha256": "9562cb5349db8e318dc4ad7c3c3ad21090535c00ea102475058570ac84caae26"
+        },
+        "APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/027da7a8773c17aa6bf04626d3f35b2f.bytes": {
+          "size": 409600,
+          "sha256": "cbf7f93a1f726758ceb27ec0f764abf9308b3304f9aad9bcecef051c5a7d6e4d"
+        },
+        "APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/3dd59bd47a066e21f878bc478b733baa.bytes": {
+          "size": 94592,
+          "sha256": "aff7968d0317a812fb76aa1fc3e3cf36fa7e77403ff4e99ab7905020d98c1174"
+        },
+        "APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/a3bcfd1a4a5e9c010ad60a6c8d4c5aa3.bytes": {
+          "size": 1638400,
+          "sha256": "42fb968cfe677d199013bb81327adb3d30d2ed3b2ed0350a5118142c62518723"
+        },
+        "APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/a517194473741c2c19b0478abfe4e81e.bytes": {
+          "size": 6553600,
+          "sha256": "182fd72f5e9293f415b98fb27a9e70b954b58abb408b316404b7654e91085328"
+        },
+        "aa/AddressablesLink/link.xml": {
+          "size": 1439,
+          "sha256": "b78c3cbab27ece6465e4bcc4da74f12b070a6e68b2c9ec36838d6f88cfa9842d"
+        },
+        "aa/StandaloneOSX/333908e17138c6bc348493caa4a1dab8_monoscripts_e368a6bbd9e65e516f776fec53f7147a.bundle": {
+          "size": 1591,
+          "sha256": "de52ec4cf82ca5d48562830294ba9c10fd173b2a0b11f4765093148490f96c79"
+        },
+        "aa/StandaloneOSX/localization-locales_assets_all.bundle": {
+          "size": 2006,
+          "sha256": "02f8b06d25ed3ff6b73c107fb642d395570eb4373390d04a4109115337ec73d7"
+        },
+        "aa/StandaloneOSX/unifiedraytracing_assets_all_909468e4da11be4f9133fe65d7bc7304.bundle": {
+          "size": 43682,
+          "sha256": "56fad1163d20e72ec1ad5c5cdfa84c4ca9b53c9c4e7e730d99841a6921c9ea18"
+        },
+        "aa/catalog.bin": {
+          "size": 4115,
+          "sha256": "3d7c6f7c9e89b3604293cdead97988638c85edece345682c69b61cf7b283994c"
+        },
+        "aa/catalog.hash": {
+          "size": 32,
+          "sha256": "1b9ddb598f497b6017ebb58d39bf2eb16603b5560b6991ef75b69a2c57e4ddff"
+        },
+        "aa/settings.json": {
+          "size": 858,
+          "sha256": "9f3d6bd6e67eac3ff2fb4437ade10917197594f1664c31c9cdfa7f0efce9ffd8"
+        }
+      }
+    },
+    "windows": {
+      "build": "9/9/2026_ee944596",
+      "files": {
+        "APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/5579d3056bf9c86cdb5eefdfe9650c7c.bytes": {
+          "size": 343856,
+          "sha256": "aadf2d5a14b594ede702314539ac538aebe3a55bfa3e1aff02352b71b84185ed"
+        },
+        "APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/822a06367ab7598d89cedab27d6874fa.bytes": {
+          "size": 1523712,
+          "sha256": "65e1745a24df5e566d1975ef10cbf0b763dba23ed2ce5ef5002eaa55645eec49"
+        },
+        "APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/e9778d016fe7a857da36934976252cc0.bytes": {
+          "size": 6094848,
+          "sha256": "15c9938c032aa793b709c2388117d54fecc0dd78e1dd3bf8fc97a2a53a71786e"
+        },
+        "APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/eef5a004cc6d4aad1987b860d27d047c.bytes": {
+          "size": 24379392,
+          "sha256": "30f14addad064b74030993f484efb9a7e056ee658a3e2a0023b760d2080b983e"
+        },
+        "APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/5192553b64cca9a4b9c396d35a08948c.bytes": {
+          "size": 425984,
+          "sha256": "0cda71e0b87c9ab1086fbf5e23e87b23312431ade21c497bb84fb9f8e3fa75fe"
+        },
+        "APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/693e8ef14b0412d4e90c94a04dabba76.bytes": {
+          "size": 6815744,
+          "sha256": "ef86b8913089b59b4480618abd1f6b28b126ed4970533d96d88b8115e681b609"
+        },
+        "APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/76e3e3cb369765641bb29c3822cfca26.bytes": {
+          "size": 1703936,
+          "sha256": "36227597bdc61c4018bb27461c11e0d987c432518775c79353ddc3d485efe0f7"
+        },
+        "APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/fd872fa3d525a47488c04a612d257884.bytes": {
+          "size": 100448,
+          "sha256": "d2b521a6c1898da4d441904097cd6a069117a3ec9432cd234b55e53ce777205c"
+        },
+        "APVStreamingAssets/214550b190c771644990476c4001655a/0df5818ebdb28004ca23e5805e2b1bde.bytes": {
+          "size": 393216,
+          "sha256": "55d4107877216e8129f2f4e576eeb3fdff21811d909dfedd58b4a0fceb87c2bb"
+        },
+        "APVStreamingAssets/214550b190c771644990476c4001655a/1647e62895158624ebb69f83c87e205f.bytes": {
+          "size": 98304,
+          "sha256": "6cd2741512ac9c04fbcf31c795e99143ed711e433cfef93e9c3015d9172ff038"
+        },
+        "APVStreamingAssets/214550b190c771644990476c4001655a/b92f0167a5c835f4fb06c2348392367f.bytes": {
+          "size": 1572864,
+          "sha256": "c263185fc5264fd218dc67a869e3f1181747c9decce202220a70582eff3b875b"
+        },
+        "APVStreamingAssets/214550b190c771644990476c4001655a/cf36006797e606d468f3294ddce68e9e.bytes": {
+          "size": 12240,
+          "sha256": "5bf06e43b77d7cef32475c357fb64046efde74263b78a1ed6e104b1567a3e65d"
+        },
+        "APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/340adf393b3fcf94c84ba5624c1f35a3.bytes": {
+          "size": 65536,
+          "sha256": "4276e47d2da2a0d22a449223fc6d633ab4f07faf524cd72e4e867615b57a9518"
+        },
+        "APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/63e8abce55142164da4510f947d1a32c.bytes": {
+          "size": 1048576,
+          "sha256": "1411e0a88014b91fdf6c55389183bc655aa71ac164aac92be2b1a23c9797339a"
+        },
+        "APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/70cf4bcd2e5b62d4d9e5fe276af69207.bytes": {
+          "size": 13072,
+          "sha256": "2a4192203b76348a4aca5c1117541d48d5df352eb7fbcafd19116560f94aebc4"
+        },
+        "APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/850dec18f1b14be4a83f8d8b61a3e92f.bytes": {
+          "size": 262144,
+          "sha256": "3a262724c02d915132caad8fe5c4afd9f39a52261cc667a74ef9362ee143921a"
+        },
+        "APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/3fcaf4ea0a6b7b0438e67691a8d160de.bytes": {
+          "size": 65536,
+          "sha256": "38bbf23656d7006b85fa100f62bbd0fa7dd6d91f555218d9209ad506eb8fe0a2"
+        },
+        "APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/54cb5137dfccd2c41b2200b1f4b5c228.bytes": {
+          "size": 4896,
+          "sha256": "46dd9685bd027d7413e9161d100b6c031dafcc7b12a27d0443ea2259cd13bab4"
+        },
+        "APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/6d042fcfdd540ad4a94449e28bf815b2.bytes": {
+          "size": 262144,
+          "sha256": "339b36476e58bc2f0ee578637e0429dbaefe64360f7eeb67016f89220da5c429"
+        },
+        "APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/97edd8ccc91cdf94faa1b715bf1561ce.bytes": {
+          "size": 1048576,
+          "sha256": "9562cb5349db8e318dc4ad7c3c3ad21090535c00ea102475058570ac84caae26"
+        },
+        "APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/027da7a8773c17aa6bf04626d3f35b2f.bytes": {
+          "size": 409600,
+          "sha256": "cbf7f93a1f726758ceb27ec0f764abf9308b3304f9aad9bcecef051c5a7d6e4d"
+        },
+        "APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/3dd59bd47a066e21f878bc478b733baa.bytes": {
+          "size": 94592,
+          "sha256": "aff7968d0317a812fb76aa1fc3e3cf36fa7e77403ff4e99ab7905020d98c1174"
+        },
+        "APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/a3bcfd1a4a5e9c010ad60a6c8d4c5aa3.bytes": {
+          "size": 1638400,
+          "sha256": "42fb968cfe677d199013bb81327adb3d30d2ed3b2ed0350a5118142c62518723"
+        },
+        "APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/a517194473741c2c19b0478abfe4e81e.bytes": {
+          "size": 6553600,
+          "sha256": "182fd72f5e9293f415b98fb27a9e70b954b58abb408b316404b7654e91085328"
+        },
+        "aa/AddressablesLink/link.xml": {
+          "size": 1439,
+          "sha256": "b78c3cbab27ece6465e4bcc4da74f12b070a6e68b2c9ec36838d6f88cfa9842d"
+        },
+        "aa/StandaloneWindows64/333908e17138c6bc348493caa4a1dab8_monoscripts_e368a6bbd9e65e516f776fec53f7147a.bundle": {
+          "size": 1594,
+          "sha256": "a900ba604d8f8b3ad8cbf8adc2e0fcf3a3a72f08952ac2653bbd4de096e02ce6"
+        },
+        "aa/StandaloneWindows64/localization-locales_assets_all.bundle": {
+          "size": 2007,
+          "sha256": "c859f8997d105b84d0ef8cbc3e1849e987f7c30048eea542f031b9124f361723"
+        },
+        "aa/StandaloneWindows64/unifiedraytracing_assets_all_478cdda9ad8977ca6a223e37a17c1e28.bundle": {
+          "size": 26181,
+          "sha256": "d41a972160df62c90428d9f1e302b4ca14ac09500446af5799f0f73d532c350a"
+        },
+        "aa/catalog.bin": {
+          "size": 4389,
+          "sha256": "3c384566fa98c6c20ba6d790424c97734532fb0be4403822f3a0b629d8b839fa"
+        },
+        "aa/catalog.hash": {
+          "size": 32,
+          "sha256": "6c17d41c27621743ef111e1282db058c7bb799031e4ae2f7a52cae424161add9"
+        },
+        "aa/settings.json": {
+          "size": 864,
+          "sha256": "ce0bb681a7e624b7db3df40a631ea89affe0e20387975b264bc2948a1cd376e6"
+        }
+      }
+    }
+  },
+  "limitations": "File inventory and cryptographic digests only; not a semantic decode or proof of runtime use."
+}
