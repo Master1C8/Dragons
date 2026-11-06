@@ -119,6 +119,14 @@ contract and runtime verification. The colon rule does not apply to UI and
 settings strings. Dynamically substituted values and all markup cases remain to
 be classified.
 
+## Windows TextMeshPro asset adapter
+
+`windows_ui_locale.py` builds a separate, source-pinned Windows TMP asset from a
+locale file; see `evidence/windows-ui-adapter-20261107.md` for its schema,
+safety boundary, synthetic runtime sample and limitations. It is not a complete
+Windows package and does not merge prior dialogue/settings changes. Source
+classification and final runtime checks remain required.
+
 ## Optional TextMeshPro interface strings
 
 For supported serialized assets, export the TextMeshPro UI objects separately:
