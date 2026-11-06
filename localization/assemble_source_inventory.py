@@ -20,6 +20,10 @@ FILES = {
     'managed-strings-v2-windows-settings.json': 'cc975c8a60970047500a07488391ee0323c6fe2e0a5c881d250a7c3c48056337',
     'managed-strings-v2-macos-yarn-unity.json': '3fba6592de02b9c1b6036d39efac47f1c7e3049fca74a0282c06aab73d50ae8e',
     'managed-strings-v2-windows-yarn-unity.json': 'fa21afafe9e5b239a82723a8caacfd3d005cafa38436ad3ada5e6b0ce1f6e1ee',
+    'managed-strings-v2-macos-tmp.json': '3f85b9d2458ba010fed921bcfdd46073e65ba1917c7c1b6455b63d4146802388',
+    'managed-strings-v2-windows-tmp.json': '1c258b4d54b65a9268560fc77e89a8a8221132be94e7611dad5a7c6ef8da2e19',
+    'managed-strings-v2-macos-unity-ui.json': '43506a8ce205f5c19048dcd96fed9d962fbac1b54f455cd33ae5ad2f66d77462',
+    'managed-strings-v2-windows-unity-ui.json': '5a690f36f96654e4cced458207c636ed965b1d26443b06a83e20b634e930ae74',
 }
 ROLES_SHA = '6219fb3d833a85a61e92392fe7c002738d8b105db61f3f39d82f27153ecfefdc'
 INPUT_ACTION_SHA = {
@@ -168,7 +172,9 @@ def build(work, roles_path):
         if len(input_records) != 28:
             raise ValueError('input action identity mismatch')
         matched_inputs = set()
-        for suffix, assembly in (('', 'Assembly-CSharp'), ('-settings', 'UnityScriptableSettings'), ('-yarn-unity', 'YarnSpinner.Unity')):
+        for suffix, assembly in (('', 'Assembly-CSharp'), ('-settings', 'UnityScriptableSettings'),
+                                 ('-yarn-unity', 'YarnSpinner.Unity'), ('-tmp', 'Unity.TextMeshPro'),
+                                 ('-unity-ui', 'UnityEngine.UI')):
             data = docs[f'managed-strings-v2-{platform}{suffix}.json']
             if len(data['strings']) != data['sourceInstructionCount']:
                 raise ValueError('managed source occurrence count mismatch')

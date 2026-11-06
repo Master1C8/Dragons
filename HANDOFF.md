@@ -4,7 +4,7 @@ Updated 2026-11-07. Canonical checkout: `/Users/antonkrutov/Desktop/Dragons`, br
 
 Both UI adapters now reject changes to 34 source-bound contributor-name fields in `level2`, while leaving credit descriptions separately translatable. The pinned manifest and both original builds were tested; see `localization/evidence/credit-name-preservation-20261107.md`. This is one bounded preservation safeguard, not a complete classification or a translated corpus.
 
-The provisional source-union v5 now includes those 34 paired fields as exact-preservation records, with validated source, hierarchy and platform bindings. The reproducible output and precise v4 comparison are recorded in `localization/evidence/provisional-source-union-20261107.md`; all broader source-readiness gates remain open.
+The provisional source-union v6 includes those 34 paired credit fields and, as unclassified occurrences, the complete string literals from two additional pinned UI libraries in both builds. The reproducible output and version comparisons are recorded in `localization/evidence/provisional-source-union-20261107.md`; all broader source-readiness gates remain open.
 
 Current speaker-display finding: a test-only synthetic mapping executed in an instrumented macOS Unity copy and returned `Жж`; a separate frame and source-pixel crop remain too faint for visual confirmation. This is not a release adapter. Complete source classification, preservation, special-scene and glossary gates remain open, and no ordinary Russian game-text translation has started. Details: `localization/evidence/speaker-display-synthetic-20261107.md`.
 
@@ -28,7 +28,7 @@ The known 162 paired TMP UI fields and available settings backup strings have ha
 
 Local StreamingAssets now have a source-bound file inventory and separate exact comparison on two isolated copies, including 24 identical APV files per build. APV/catalog semantics and remote/dynamic resources remain unverified; this standalone check is not yet a release gate. See `localization/evidence/streaming-assets-preservation-20261107.md`.
 
-One provisional shared source union now consolidates the pinned Yarn, UI, settings, legacy UI and selected managed-code exports. Its 4,048 source records are not a visible-text count or a translation-ready inventory; see `localization/evidence/provisional-source-union-20261107.md` for inputs, hash and remaining classification gaps.
+One provisional shared source union now consolidates the pinned Yarn, UI, settings, legacy UI and selected managed-code exports. Its 5,204 source records are not a visible-text count or a translation-ready inventory; see `localization/evidence/provisional-source-union-20261107.md` for inputs, hash and remaining classification gaps.
 
 The provisional union now marks 56 embedded input-control occurrences across the two builds preserve-exactly, backed by verified JSON loading and map/action lookup instructions. This does not classify visible control hints or complete the global preservation contract. See `localization/evidence/input-action-preservation-20261107.md`.
 

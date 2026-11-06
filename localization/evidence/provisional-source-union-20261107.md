@@ -8,15 +8,15 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v5-20261107.json`
-has SHA-256 `bb8216c3d1d88150afb0800110bb12a50642ac731b4e30c3985a94d33b04451e`.
-Its 4,048 records comprise
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v6-20261107.json`
+has SHA-256 `7001b3a1e2da59b77758cb3e672943b120f46d9342d34933650932fdeda47a21`.
+Its 5,204 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
-and 1,818 literal-load occurrences from three inspected managed assemblies
+and 2,974 literal-load occurrences from five inspected managed assemblies
 across the two builds. Managed occurrences are deliberately **not paired**
 across builds, because instruction ordinals can mean different things. The
-counts are source records, not 4,048 visible phrases, completed translations,
+counts are source records, not 5,204 visible phrases, completed translations,
 or a localization denominator. Each record retains its family, source values,
 platform locations and current provisional role; Yarn records also retain
 their node, instruction index and available option/substitution attributes.
@@ -41,8 +41,15 @@ tests exercise the positive binding and reject changed source and hierarchy.
 This classification does not establish visibility or completeness of the
 remaining credits and other sources.
 
+The v6 recipe adds all 1,156 literal-load occurrences from the two Unity UI
+assemblies across the pinned builds, without pairing platforms or presuming
+that a literal is visible. See `managed-engine-strings-20261107.md`. The output
+was reproduced byte-for-byte; comparison to v5 SHA-256
+`bb8216c3d1d88150afb0800110bb12a50642ac731b4e30c3985a94d33b04451e`
+verified that all 4,048 pre-existing records remain exactly equal by ID.
+
 The inventory is explicitly `provisional-not-translation-ready`: code literals
-and many UI values remain unclassified, only three managed assemblies are
+and many UI values remain unclassified, only five managed assemblies are
 included, and runtime-generated text, other resources, exact-preservation
 coverage, branch context, special-case decisions and independent review remain
 incomplete. Source entries may be internal keys or debug data; no entry was

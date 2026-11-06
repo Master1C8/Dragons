@@ -10,7 +10,11 @@ var builds = new Dictionary<string, string> {
     ["macos-settings"] = "a16b7a3a94bd62e059694a311f68dec012aa66696a6eff9880ceb9087e6c915d",
     ["windows-settings"] = "b6f215bc0eef09035d800a2fab01bed0a8ffeba8f85ba00cfb329ebf009c1f90",
     ["macos-yarn-unity"] = "54953f9c071aa3ca5b52eb8b12b8e0bedc73f7665a506c61acbef0c58ac340ef",
-    ["windows-yarn-unity"] = "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d"
+    ["windows-yarn-unity"] = "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d",
+    ["macos-tmp"] = "a25a11167a5a7339d611c364a6525fc172d19fe5caa6aa95d6866fd1d36d0743",
+    ["windows-tmp"] = "e22d8f83e97d0a27bed0480cfd52d13a6b26b1e74e3ad67e6a17316090ec3f9f",
+    ["macos-unity-ui"] = "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4",
+    ["windows-unity-ui"] = "e31bf1ba3ebcd9e63c1c8530d6be7799b079c4f9a5dcc29a695e4be5b26aa613"
 };
 string Hash(byte[] bytes) => Convert.ToHexString(SHA256.HashData(bytes)).ToLowerInvariant();
 if (args.Length != 2 || !builds.ContainsKey(args[0]))

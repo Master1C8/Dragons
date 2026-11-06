@@ -32,7 +32,7 @@ class SourceInventoryUnitTests(unittest.TestCase):
     def test_all_selected_source_families_and_platform_bindings(self):
         result = inventory.build(WORK, ROLES)
         self.assertEqual(result['status'], 'provisional-not-translation-ready')
-        self.assertEqual(result['familyCounts'], {'legacy-ui': 149, 'managed': 1818,
+        self.assertEqual(result['familyCounts'], {'legacy-ui': 149, 'managed': 2974,
                                                   'settings': 80, 'ui': 162, 'yarn': 1839})
         entries = {r['id']: r for r in result['entries']}
         sample = entries['yarn:line:4b36ea4e']
@@ -50,6 +50,15 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertEqual(sum('macos' in r['source'] for r in controls), 28)
         self.assertEqual(sum('windows' in r['source'] for r in controls), 28)
         self.assertTrue(all('InputSystem_Actions::.ctor()' in r['method'] for r in controls))
+        engine_rows = [r for r in result['entries'] if r['family'] == 'managed' and
+                       any(':' + assembly + ':' in r['id'] for assembly in ('Unity.TextMeshPro', 'UnityEngine.UI'))]
+        self.assertEqual(len(engine_rows), 1156)
+        self.assertTrue(all(r['role'] == 'needs-classification' for r in engine_rows))
+        for platform in ('macos', 'windows'):
+            self.assertTrue(any(r['source'].get(platform) == 'Mixed...' and
+                                'TMPro.TMP_Dropdown::.cctor()' in r['method'] for r in engine_rows))
+            self.assertTrue(any(r['source'].get(platform) == 'Enter text...' and
+                                'UnityEngine.UI.DefaultControls::CreateInputField' in r['method'] for r in engine_rows))
         names = [r for r in result['entries'] if r['role'] == 'preserve-exactly-credit-name']
         self.assertEqual(len(names), 34)
         self.assertTrue(all(r['source']['macos'] == r['source']['windows'] for r in names))
