@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "platform": "macos",
+  "assemblySha256": "f9c4ccc1b10f95270d6d0d63a5e150865a070eca353a6c16fa74930f993f7bcb",
+  "transitionReasonLiteral": "Delete Save?",
+  "occurrenceOffsets": [
+    447,
+    479,
+    511
+  ],
+  "destination": "Menu_DeleteSave",
+  "reasonFieldAccesses": [
+    "System.String MenuResponseTransition::GetReason() IL_0001 ldfld",
+    "System.Void MenuResponseTransition::.ctor(System.String,System.String,MenuTransitionData) IL_000f stfld"
+  ],
+  "getReasonReferences": [],
+  "limitations": "Static direct IL references in one pinned game assembly; reflection, other assemblies and runtime visibility are not established."
+}

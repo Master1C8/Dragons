@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "platform": "windows",
+  "assemblySha256": "8b1b439e62bff222fbce00869a3343422c77d08e384db7ed323b5e66f44195e2",
+  "transitionReasonLiteral": "Delete Save?",
+  "occurrenceOffsets": [
+    447,
+    479,
+    511
+  ],
+  "destination": "Menu_DeleteSave",
+  "reasonFieldAccesses": [
+    "System.String MenuResponseTransition::GetReason() IL_0001 ldfld",
+    "System.Void MenuResponseTransition::.ctor(System.String,System.String,MenuTransitionData) IL_000f stfld"
+  ],
+  "getReasonReferences": [],
+  "limitations": "Static direct IL references in one pinned game assembly; reflection, other assemblies and runtime visibility are not established."
+}
