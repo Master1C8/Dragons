@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "platform": "macos",
+  "buildVersion": "9/12/2026_a93aa21a",
+  "assets": {
+    "level0": "4cabf35993c6726ab29e5cb24a1ce74a0fdf3d8061b0de3437415e56bcfa72f7",
+    "level1": "6af2815f16cba00e935fe110023ec91421c7d4107c5d8d31f55b70039b17d618",
+    "level2": "8a65d8f397e103abf65a6c9daba7668a4efe8c70fbe36f6b6eed676aaa99d808",
+    "level3": "32805c0339b0b67b4cc1dd27f8e150419e3f7374132d630921700281a14b833e",
+    "level4": "1aeac3e3368bbf5d3198dd6aee5f0969677a13b162158bb592655fdef03ef030",
+    "level5": "3241f65111d9639a3e1434e4d5e7dd9aa946eac554675dc4627093638e0341c8",
+    "level6": "975954bc0796ab7b60f06f075b3b0ad8ce367d07cede726d53847b61fbe112f6",
+    "sharedassets0.assets": "40713b00ce12582eebc427c0104e59becf438eb15803725b2248be3471a96aeb",
+    "sharedassets1.assets": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+    "sharedassets2.assets": "82300da2892d572a7dac2602489874c130e93cd093112450dc1c03948c15872e",
+    "sharedassets3.assets": "22f6f6316b9ff73a5ff3042b82ada4af70fc80ce24a02f26d69b613f0a18d158",
+    "sharedassets4.assets": "00f71e4e71abefa25cd13cb9d99f5678e7b257ece9910c7face27a56d37ad8f7",
+    "sharedassets5.assets": "ffdfdeeeb4f793e6cc2425810f182a322e8bf41da7dfac32dddda1aab1bbd9a1",
+    "sharedassets6.assets": "38f5e76e01b5f5bae985b7c7b45477ff1888ec7a62265b2393911e59dcceaffc",
+    "resources.assets": "fd20278f865e51fba3c1a922777031afb2a5d2d00fc10ee682296e32cc071974",
+    "globalgamemanagers.assets": "391640e8e7df097a0d377c7a16552975d4821688841ea3460ec99587f4061d9e",
+    "globalgamemanagers": "2f3813fddc22b6c6285099f173b922d782e2f06d659482d9373849e3bbb9794b"
+  },
+  "textAssets": [
+    {
+      "asset": "resources.assets",
+      "objectId": 19,
+      "name": "PerformanceTestRunSettings",
+      "rawSha256": "8297ef234f4fa499d0356b13520d3f3e419db09f8ec69f8e4abfe6381011b192",
+      "payloadSha256": "600c5c3dab7e18e51c28aad096457da91fcf60a3eedd908b6bf30194dae2b55b",
+      "payloadBytes": 23,
+      "provisionalRole": "diagnostic-metadata-needs-consumer-review",
+      "preserveExactly": true
+    },
+    {
+      "asset": "resources.assets",
+      "objectId": 20,
+      "name": "LineBreaking Leading Characters",
+      "rawSha256": "ed7456b8000739975fa0b8368776271896cdbe7ff81c923eb3f0eefa1d59a4e8",
+      "payloadSha256": "62d3f4d5f64aaf885692d2d13a8313f6918e6e4c5aeb3990a43f614652bfd89c",
+      "payloadBytes": 95,
+      "provisionalRole": "line-break-configuration",
+      "preserveExactly": true
+    },
+    {
+      "asset": "resources.assets",
+      "objectId": 21,
+      "name": "PerformanceTestRunInfo",
+      "rawSha256": "aad732fb962b9b93b8e15ab504727b6bf421b1d62743366a03e1e8325209e583",
+      "payloadSha256": "ffeb6ae03eb78e273775210aa19827ed114c2bd57666fe8da6b7c2d731c86670",
+      "payloadBytes": 3742,
+      "provisionalRole": "diagnostic-metadata-needs-consumer-review",
+      "preserveExactly": true
+    },
+    {
+      "asset": "resources.assets",
+      "objectId": 22,
+      "name": "LineBreaking Following Characters",
+      "rawSha256": "b532d78da17863828461c8333a58c4ece4e3cba001a3a327045c51948d98dad3",
+      "payloadSha256": "3a73e5ffe2510756dd3c2e982fdc1218b4be82c6e21abde88070d6860e1bc8e6",
+      "payloadBytes": 269,
+      "provisionalRole": "line-break-configuration",
+      "preserveExactly": true
+    }
+  ],
+  "tmpSettings": {
+    "asset": "resources.assets",
+    "objectId": 1388,
+    "rawSha256": "bca05779e9bcca1b2170f522a1d90fc501405ccadd018593b7137c020e5deb29",
+    "leading": {
+      "m_FileID": 0,
+      "m_PathID": 20
+    },
+    "following": {
+      "m_FileID": 0,
+      "m_PathID": 22
+    },
+    "modernHangulRule": false
+  },
+  "limitations": "Only TextAsset objects in these seventeen serialized assets. Runtime use, diagnostic metadata consumers, managed strings, streaming/addressable contents and other resource types need separate review."
+}
