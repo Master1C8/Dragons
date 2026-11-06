@@ -52,6 +52,11 @@ class SourceReadingTests(unittest.TestCase):
         first_ids = {key for node in receipt['nodes'] for key in node['lineIds']}
         second_ids = {key for node in alexander['nodes'] for key in node['lineIds']}
         self.assertTrue(first_ids.isdisjoint(second_ids))
+        conrad = json.loads((ROOT / 'evidence/source-reading-conrad-20261107.json').read_text())
+        result3 = reading.verify(corpus.read_bytes(), conrad)
+        self.assertEqual((result3['nodes'], result3['uniqueIds']), (63, 521))
+        third_ids = {key for node in conrad['nodes'] for key in node['lineIds']}
+        self.assertTrue((first_ids | second_ids).isdisjoint(third_ids))
 
 
 if __name__ == '__main__':

@@ -12,6 +12,8 @@ A partial source reading covers 44 explicitly listed nodes and 523 IDs in both p
 
 Another 35 Alexander-prefixed nodes and 351 disjoint IDs were read; their receipt is `localization/evidence/source-reading-alexander-20261107.json`. The colon-ended introduction at `line:4b36ea4e` parses as a 67-character speaker with empty body in both source Yarn parsers under desktop .NET. Its translation/presentation needs a specific solution; see `localization/evidence/alexander-colon-introduction-20261107.md`.
 
+The 63 remaining Conrad-prefixed nodes add 521 disjoint read IDs. The three partial reading receipts now cover 142 nodes and 1,395 IDs; 42 line-bearing Yarn nodes and other resource families remain outside them. A `special endings` ambiguity has its own unapproved, source-bound case at `localization/evidence/conrad-endings-reading-20261107.md`.
+
 ## Scope and process binding
 
 Source language English; requested locale `ru` → runtime `ru` selected at build time, replacing the English Yarn table in a separate build. This prototype is not an in-game language selector. Owner decisions: player and franchise contact use neutral wording; Alexander uses masculine forms; Igwyx is referred to with masculine forms without asserting gender; Max uses neutral forms without asserting gender. These rules do not establish other characters' gender or complete roster coverage.

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "status": "incomplete",
+  "sourceInventory": "localization/evidence/yarn-context-map-20261107.json",
+  "sourceInventorySha256": "20d8c7305831a2b98adffad5798e64cb194c37e40039d1525dde122b0c061555",
+  "discoveryCoverage": "Two source nodes identified during the bounded reading of Conrad scenes; no claim of complete game-wide discovery, reverse callers or runtime reachability.",
+  "cases": [
+    {
+      "id": "conrad-special-endings",
+      "title": "Ambiguous special endings and explicit clarification",
+      "observedSourceBehavior": "Conrad uses the phrase special endings in two separate nodes. In Conrad_required_1 one option takes the words at face value, provoking his correction and explicit explanation; another asks directly about sexual services. Each has distinct responses, follow-up choices and shared continuation. Conrad_1 separately asks a similar question with three other branches.",
+      "groups": [
+        {"node": "Conrad_1", "nodeSha256": "203993dc447a6e0f99793febe5887f49c80540eb28898f28c11c523efba8853b", "sourceLineIds": ["line:9ab6ddfb", "line:f99840cd", "line:d5f94e23", "line:e05c2dca", "line:6fa847ba", "line:43c94954", "line:766c2abd"]},
+        {"node": "Conrad_required_1", "nodeSha256": "289407cad631c4c726756a6a5921a84d6b27772088abd084a220b80f16b990a4", "sourceLineIds": ["line:8a35fb7b", "line:6fbc3c1b", "line:f98c3b6c", "line:a0a0a49c", "line:43dd32f5", "line:d5ed3582", "line:7678511c", "line:e048566b", "line:5a195ff2", "line:cc295885", "line:5d34e715", "line:cb04e062", "line:3690a3eb", "line:8cc1aa72", "line:1af1ad05", "line:b964c99b", "line:2f54ceec"]}
+      ],
+      "choiceDestinations": {"line:f99840cd": 10, "line:d5f94e23": 13, "line:e05c2dca": 16, "line:f98c3b6c": 16, "line:a0a0a49c": 54, "line:7678511c": 29, "line:e048566b": 31, "line:cc295885": 43, "line:8cc1aa72": 66, "line:1af1ad05": 68},
+      "invariant": "Preserve the initially ambiguous euphemism, the player's literal response in its branch, Conrad's subsequent clarification, the direct-question alternative, character voice, and every distinct choice and destination. Avoid assuming the two nodes are both naturally reachable.",
+      "adaptationRoute": "After source and glossary readiness, decide and review the actual Russian euphemism, literal response, clarification and alternatives as one dependency group before ordinary translation.",
+      "nonTextDependencies": "Both source programs' instruction bytes, dialogue and facial commands, source markup and tested rendering. Player address follows the approved neutral strategy. Actual reachability, timing and runtime presentation remain unverified.",
+      "acceptanceScenarios": ["The literal response produces Conrad's correction before the explicit explanation; the direct response follows its own continuation.", "The three choices in Conrad_1 retain their separate original destinations.", "Reject wording that makes the literal response unrelated to the euphemism or changes the meaning of the explicit alternative."],
+      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "needs-review", "structural": "partial", "runtimeVisual": "not-run"}
+    }
+  ]
+}
