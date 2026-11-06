@@ -48,11 +48,21 @@ launch it. The output uses the game's original save and preference identity if
 run; only the separate test probe described below used isolated identifiers.
 An error during copy or signing may leave a partial destination for inspection;
 remove it only after verifying its contents. A new run requires a new destination.
-The game writes `steam_appid.txt` into the app-bundle root at startup. On macOS
-this makes the ad-hoc signature invalid after the first launch; repeated Finder
-launches are not verified. This remains an open integration defect, not a
-release-ready installer. Do not remove the Steam integration or alter the game
-assembly without separately validating its effect.
+The game writes `steam_appid.txt` into the app-bundle root at startup, making the
+ad-hoc signature invalid. Launch a generated copy through the wrapper:
+
+```sh
+"$PYTHON" localization/run_game.py "/path/to/output/DragNWash-ru.app"
+```
+
+The wrapper checks the signed build marker, verifies the signature, and removes
+the generated root file after the game exits only when its hash matches the
+preserved Steam identifier. It then verifies the signature again. It rejects an
+existing root file, a concurrent wrapper and unexpected file contents. If the
+wrapper is forcibly terminated or the machine loses power, cleanup may not run;
+preserve the file and inspect the copy instead of deleting it blindly. Direct
+Finder launch bypasses this protection and invalidates the signature. This is not
+a release-ready installer, and Steam functionality itself remains unverified.
 
 The export contains English source values keyed by line ID. A locale JSON
 contains only entries to replace; missing IDs retain English:
@@ -122,6 +132,13 @@ other UI types and texture lettering are not covered by this mechanism.
   Do not treat the output as a finished
   localization or install it over a real game without an independently verified
   integration and recovery path.
+- An isolated copy launched twice through the wrapper. Each run produced the
+  root Steam file; after exit the wrapper removed the matching file and
+  `codesign --verify --deep --strict` succeeded. The first run was terminated
+  by a targeted test signal; the second used `-batchmode -quit` and was also
+  stopped by a targeted signal after Unity did not exit on its own. Steam API
+  initialization failed because no Steam client was running, so this proves
+  signature cleanup only, not Steam support or normal player exit.
 - Embedded texture text is outside scope and is not modified.
 - This prototype does not prove compatibility with Windows, other game versions,
   different UnityPy versions or arbitrary scripts. Verify these separately.

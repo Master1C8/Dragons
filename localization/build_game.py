@@ -28,6 +28,9 @@ def build(source, locale_file, requested, destination, ui_dir=None):
         for name in subdirs + files:
             if (Path(directory) / name).is_symlink():
                 raise ValueError('source app contains a symlink; refusing to sign a potentially external target')
+    source_steam = source / 'steam_appid.txt'
+    if not source_steam.is_file() or not source_steam.read_bytes():
+        raise ValueError('source app is missing its Steam identifier')
     asset = source / ASSET_RELATIVE
     if asset.is_symlink() or not asset.is_file() or source not in asset.resolve().parents:
         raise ValueError('source asset must be a regular file')
@@ -91,6 +94,13 @@ def build(source, locale_file, requested, destination, ui_dir=None):
         if steam.is_symlink() or target_steam.exists() or destination.resolve() not in target_steam.parent.resolve().parents:
             raise ValueError('ambiguous Steam identifier; partial copy retained')
         steam.rename(target_steam)
+    else:
+        raise ValueError('missing Steam identifier; partial copy retained')
+    marker = destination / 'Contents/Resources/vn-localization-build.json'
+    with marker.open('x', encoding='utf-8') as f:
+        json.dump({'schema': 1, 'locale': locale, 'sourceAssetSha256': dl.ASSET_HASH,
+                   'steamFileSha256': dl.sha(target_steam.read_bytes())}, f, ensure_ascii=False)
+        f.write('\n')
     subprocess.run(['codesign', '--force', '--deep', '--sign', '-', str(destination)], check=True)
     subprocess.run(['codesign', '--verify', '--deep', '--strict', str(destination)], check=True)
     print(json.dumps({'locale': locale, 'translated': len(translations), 'sourceEntries': len(keys),

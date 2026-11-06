@@ -34,6 +34,7 @@ class BuildSafetyTests(unittest.TestCase):
             asset = source / module.ASSET_RELATIVE
             asset.parent.mkdir(parents=True)
             asset.write_bytes(b'fixture')
+            (source / 'steam_appid.txt').write_bytes(b'fixture')
             dest = root / 'ru.app'
             with patch.object(module.dl, 'load_asset', return_value=(None, None, b'', [], [], [])), \
                  patch.object(module.dl, 'read_locale', return_value=('fr', {})):
