@@ -16,6 +16,8 @@ The 63 remaining Conrad-prefixed nodes add 521 disjoint read IDs. At that checkp
 
 The fourth reading receipt now covers the remaining 42 line-bearing Yarn nodes and 444 IDs. Together the four disjoint receipts bind all 184 line-bearing nodes and 1,839 IDs in the paired Yarn export; 11 non-line nodes, controls, other resource families, special-scene decisions and complete source classification remain open. See `localization/evidence/yarn-text-reading-20261107.md`.
 
+The 11 nodes without line/option instructions have now been inventoried and their decoded instruction listings read. Their 25 named transfers include the previously recorded absent `Alexander_Done` target; runtime reachability and full preservation remain open. See `localization/evidence/non-line-node-analysis-20261107.md`.
+
 The known 162 paired TMP UI fields and available settings backup strings have had a bounded source reading. Seven version placeholders in each build are colocated with `VersionNumber` components whose inspected `Start` assigns `Application.version`; actual runtime visibility remains open. See `localization/evidence/ui-reading-version-consumers-20261107.md`.
 
 ## Scope and process binding

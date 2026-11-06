@@ -1,0 +1,732 @@
+{
+  "schema": 1,
+  "builds": {
+    "macos": {
+      "build": {
+        "version": "9/12/2026_a93aa21a",
+        "localization": 10623,
+        "project": 10719,
+        "globalSha256": "2f3813fddc22b6c6285099f173b922d782e2f06d659482d9373849e3bbb9794b",
+        "assetSha256": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+        "localizationSha256": "9baafe5b3c36e63042cc0d02b2c755580e142447cea13f946d485a342c269853",
+        "projectSha256": "1487cbd825c98488ce00492dc7c9c5c2c3475657e9a7719e9c1de49b5f2c1189"
+      },
+      "programSha256": "a67bbfc37dca0b29b1be740e36b570e9d524a46ef2fdf5574e0f58278c0ff1e6",
+      "totalNodeCount": 195,
+      "noLineNodes": [
+        {
+          "node": "Alexander_Idle4",
+          "nodeSha256": "0a646f630664b9af253240339631fbc24fbd870fcfc94de2cf9f295958726950",
+          "instructionCount": 34,
+          "opcodeCounts": {
+            "1": 4,
+            "7": 4,
+            "8": 4,
+            "10": 4,
+            "11": 4,
+            "12": 4,
+            "13": 4,
+            "16": 5,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 5,
+              "kind": "RunNode",
+              "target": "Alexander_Dirty",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 13,
+              "kind": "RunNode",
+              "target": "Alexander_Soapy",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 21,
+              "kind": "RunNode",
+              "target": "Alexander_Done",
+              "targetPresent": false
+            },
+            {
+              "instructionIndex": 29,
+              "kind": "RunNode",
+              "target": "Alexander_Dirty",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 32,
+              "kind": "RunNode",
+              "target": "ErrorHasOccurred",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Conrad_Outro_5",
+          "nodeSha256": "51d5802af0f1abf6e99132e4e936d146b8201f3580fffe97aa6ad8d0ccfccf19",
+          "instructionCount": 36,
+          "opcodeCounts": {
+            "1": 3,
+            "4": 6,
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 3,
+            "12": 3,
+            "13": 7,
+            "15": 1,
+            "16": 3,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 9,
+              "kind": "RunNode",
+              "target": "Conrad_5_outro_ryan_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 17,
+              "kind": "RunNode",
+              "target": "Conrad_5_outro_conrad_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 25,
+              "kind": "RunNode",
+              "target": "Conrad_5_outro_ryan_conrad_romanced",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Conrad_required_5",
+          "nodeSha256": "cc03ceeace239973a8aa9ec6d874f4fb225cc5da709fae99e665699a81ffcb8d",
+          "instructionCount": 35,
+          "opcodeCounts": {
+            "1": 3,
+            "4": 5,
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 3,
+            "12": 3,
+            "13": 7,
+            "15": 1,
+            "16": 3,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 9,
+              "kind": "RunNode",
+              "target": "Conrad_5_required_ryan_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 17,
+              "kind": "RunNode",
+              "target": "Conrad_5_required_conrad_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 25,
+              "kind": "RunNode",
+              "target": "Conrad_5_required_ryan_conrad_romanced",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Declarations",
+          "nodeSha256": "153f3abbfde13bdfcade85b9bafc0b63b7663c096b0d500107df100aeefc5a45",
+          "instructionCount": 1,
+          "opcodeCounts": {
+            "20": 1
+          },
+          "namedTransfers": []
+        },
+        {
+          "node": "RyanMuddy_Idle6",
+          "nodeSha256": "eb20c69f5276e2a8e13e0ca5c84860b7cef32fe6a6b8383d79c8ee91989eebda",
+          "instructionCount": 27,
+          "opcodeCounts": {
+            "1": 3,
+            "7": 3,
+            "8": 3,
+            "10": 3,
+            "11": 3,
+            "12": 3,
+            "13": 3,
+            "15": 1,
+            "16": 4,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 5,
+              "kind": "RunNode",
+              "target": "RyanMuddy_Dirty",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 13,
+              "kind": "RunNode",
+              "target": "RyanMuddy_Soapy",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 21,
+              "kind": "RunNode",
+              "target": "RyanMuddy_Dirty",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 24,
+              "kind": "RunNode",
+              "target": "ErrorHasOccurred",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Ryan_5_Outro",
+          "nodeSha256": "0ba0722fc6fe1e62e1078fd408c64c6721ba63eedee09091c08a3b5b35aaf1c7",
+          "instructionCount": 34,
+          "opcodeCounts": {
+            "1": 3,
+            "4": 5,
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 3,
+            "12": 3,
+            "13": 6,
+            "15": 1,
+            "16": 3,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 9,
+              "kind": "RunNode",
+              "target": "Ryan_5_Outro_ryan_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 17,
+              "kind": "RunNode",
+              "target": "Ryan_5_Outro_conrad_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 25,
+              "kind": "RunNode",
+              "target": "Ryan_5_Outro_ryan_conrad_romanced",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Ryan_5_Required",
+          "nodeSha256": "2ef0ae9bb94762e73b97f2759f520969cdbe93d4b0846262de5786bc4427e4cb",
+          "instructionCount": 33,
+          "opcodeCounts": {
+            "1": 3,
+            "4": 4,
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 3,
+            "12": 3,
+            "13": 6,
+            "15": 1,
+            "16": 3,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 9,
+              "kind": "RunNode",
+              "target": "Ryan_5_Required_ryan_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 17,
+              "kind": "RunNode",
+              "target": "Ryan_5_Required_conrad_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 25,
+              "kind": "RunNode",
+              "target": "Ryan_5_Required_ryan_conrad_romanced",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Ryan_egg",
+          "nodeSha256": "93be4f16e1cb14cc02d6f713c0ebdd79e9e9939af3a584a354b41b178b8290d9",
+          "instructionCount": 16,
+          "opcodeCounts": {
+            "4": 5,
+            "7": 1,
+            "8": 2,
+            "11": 1,
+            "12": 1,
+            "13": 3,
+            "14": 1,
+            "16": 1,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 14,
+              "kind": "RunNode",
+              "target": "Ryan_egg_dialog",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Ryan_grapes",
+          "nodeSha256": "ca46bea048d29cfd56dd5319c546388d449ebb207d16ca97076ad52134ac9ae2",
+          "instructionCount": 16,
+          "opcodeCounts": {
+            "4": 5,
+            "7": 1,
+            "8": 2,
+            "11": 1,
+            "12": 1,
+            "13": 3,
+            "14": 1,
+            "16": 1,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 14,
+              "kind": "RunNode",
+              "target": "Ryan_grapes_dialog",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Ryan_ham",
+          "nodeSha256": "4d503d2545bb4ae0016312bcc95a81aec5d6698920089bb207d01750330f0f26",
+          "instructionCount": 16,
+          "opcodeCounts": {
+            "4": 5,
+            "7": 1,
+            "8": 2,
+            "11": 1,
+            "12": 1,
+            "13": 3,
+            "14": 1,
+            "16": 1,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 14,
+              "kind": "RunNode",
+              "target": "Ryan_ham_dialog",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Ryan_melon",
+          "nodeSha256": "231cdc2ac062f6effad7beb157ecc84c9fe16edb8ba12a4291e84ec06b1c4b17",
+          "instructionCount": 14,
+          "opcodeCounts": {
+            "4": 4,
+            "7": 1,
+            "8": 2,
+            "11": 1,
+            "12": 1,
+            "13": 2,
+            "14": 1,
+            "16": 1,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 12,
+              "kind": "RunNode",
+              "target": "Ryan_melon_dialog",
+              "targetPresent": true
+            }
+          ]
+        }
+      ]
+    },
+    "windows": {
+      "build": {
+        "version": "9/9/2026_ee944596",
+        "localization": 10611,
+        "project": 10707,
+        "globalSha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+        "assetSha256": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+        "localizationSha256": "7000b2b93b09f6a7b916e5f57c0dc6cf21ca9e6f9ddbfbc485bce704e8ce28d6",
+        "projectSha256": "f91af8c801958185885c2fc9adf3dfd5188b713c4f1ef264659e44292630b3b5"
+      },
+      "programSha256": "cbaaba712e0cc699d0cdf98f4b8b86060c666d6196fa91cd0a9d9a237c104466",
+      "totalNodeCount": 195,
+      "noLineNodes": [
+        {
+          "node": "Alexander_Idle4",
+          "nodeSha256": "0a646f630664b9af253240339631fbc24fbd870fcfc94de2cf9f295958726950",
+          "instructionCount": 34,
+          "opcodeCounts": {
+            "1": 4,
+            "7": 4,
+            "8": 4,
+            "10": 4,
+            "11": 4,
+            "12": 4,
+            "13": 4,
+            "16": 5,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 5,
+              "kind": "RunNode",
+              "target": "Alexander_Dirty",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 13,
+              "kind": "RunNode",
+              "target": "Alexander_Soapy",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 21,
+              "kind": "RunNode",
+              "target": "Alexander_Done",
+              "targetPresent": false
+            },
+            {
+              "instructionIndex": 29,
+              "kind": "RunNode",
+              "target": "Alexander_Dirty",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 32,
+              "kind": "RunNode",
+              "target": "ErrorHasOccurred",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Conrad_Outro_5",
+          "nodeSha256": "51d5802af0f1abf6e99132e4e936d146b8201f3580fffe97aa6ad8d0ccfccf19",
+          "instructionCount": 36,
+          "opcodeCounts": {
+            "1": 3,
+            "4": 6,
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 3,
+            "12": 3,
+            "13": 7,
+            "15": 1,
+            "16": 3,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 9,
+              "kind": "RunNode",
+              "target": "Conrad_5_outro_ryan_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 17,
+              "kind": "RunNode",
+              "target": "Conrad_5_outro_conrad_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 25,
+              "kind": "RunNode",
+              "target": "Conrad_5_outro_ryan_conrad_romanced",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Conrad_required_5",
+          "nodeSha256": "cc03ceeace239973a8aa9ec6d874f4fb225cc5da709fae99e665699a81ffcb8d",
+          "instructionCount": 35,
+          "opcodeCounts": {
+            "1": 3,
+            "4": 5,
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 3,
+            "12": 3,
+            "13": 7,
+            "15": 1,
+            "16": 3,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 9,
+              "kind": "RunNode",
+              "target": "Conrad_5_required_ryan_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 17,
+              "kind": "RunNode",
+              "target": "Conrad_5_required_conrad_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 25,
+              "kind": "RunNode",
+              "target": "Conrad_5_required_ryan_conrad_romanced",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Declarations",
+          "nodeSha256": "153f3abbfde13bdfcade85b9bafc0b63b7663c096b0d500107df100aeefc5a45",
+          "instructionCount": 1,
+          "opcodeCounts": {
+            "20": 1
+          },
+          "namedTransfers": []
+        },
+        {
+          "node": "RyanMuddy_Idle6",
+          "nodeSha256": "eb20c69f5276e2a8e13e0ca5c84860b7cef32fe6a6b8383d79c8ee91989eebda",
+          "instructionCount": 27,
+          "opcodeCounts": {
+            "1": 3,
+            "7": 3,
+            "8": 3,
+            "10": 3,
+            "11": 3,
+            "12": 3,
+            "13": 3,
+            "15": 1,
+            "16": 4,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 5,
+              "kind": "RunNode",
+              "target": "RyanMuddy_Dirty",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 13,
+              "kind": "RunNode",
+              "target": "RyanMuddy_Soapy",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 21,
+              "kind": "RunNode",
+              "target": "RyanMuddy_Dirty",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 24,
+              "kind": "RunNode",
+              "target": "ErrorHasOccurred",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Ryan_5_Outro",
+          "nodeSha256": "0ba0722fc6fe1e62e1078fd408c64c6721ba63eedee09091c08a3b5b35aaf1c7",
+          "instructionCount": 34,
+          "opcodeCounts": {
+            "1": 3,
+            "4": 5,
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 3,
+            "12": 3,
+            "13": 6,
+            "15": 1,
+            "16": 3,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 9,
+              "kind": "RunNode",
+              "target": "Ryan_5_Outro_ryan_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 17,
+              "kind": "RunNode",
+              "target": "Ryan_5_Outro_conrad_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 25,
+              "kind": "RunNode",
+              "target": "Ryan_5_Outro_ryan_conrad_romanced",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Ryan_5_Required",
+          "nodeSha256": "2ef0ae9bb94762e73b97f2759f520969cdbe93d4b0846262de5786bc4427e4cb",
+          "instructionCount": 33,
+          "opcodeCounts": {
+            "1": 3,
+            "4": 4,
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 3,
+            "12": 3,
+            "13": 6,
+            "15": 1,
+            "16": 3,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 9,
+              "kind": "RunNode",
+              "target": "Ryan_5_Required_ryan_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 17,
+              "kind": "RunNode",
+              "target": "Ryan_5_Required_conrad_romanced",
+              "targetPresent": true
+            },
+            {
+              "instructionIndex": 25,
+              "kind": "RunNode",
+              "target": "Ryan_5_Required_ryan_conrad_romanced",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Ryan_egg",
+          "nodeSha256": "93be4f16e1cb14cc02d6f713c0ebdd79e9e9939af3a584a354b41b178b8290d9",
+          "instructionCount": 16,
+          "opcodeCounts": {
+            "4": 5,
+            "7": 1,
+            "8": 2,
+            "11": 1,
+            "12": 1,
+            "13": 3,
+            "14": 1,
+            "16": 1,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 14,
+              "kind": "RunNode",
+              "target": "Ryan_egg_dialog",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Ryan_grapes",
+          "nodeSha256": "ca46bea048d29cfd56dd5319c546388d449ebb207d16ca97076ad52134ac9ae2",
+          "instructionCount": 16,
+          "opcodeCounts": {
+            "4": 5,
+            "7": 1,
+            "8": 2,
+            "11": 1,
+            "12": 1,
+            "13": 3,
+            "14": 1,
+            "16": 1,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 14,
+              "kind": "RunNode",
+              "target": "Ryan_grapes_dialog",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Ryan_ham",
+          "nodeSha256": "4d503d2545bb4ae0016312bcc95a81aec5d6698920089bb207d01750330f0f26",
+          "instructionCount": 16,
+          "opcodeCounts": {
+            "4": 5,
+            "7": 1,
+            "8": 2,
+            "11": 1,
+            "12": 1,
+            "13": 3,
+            "14": 1,
+            "16": 1,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 14,
+              "kind": "RunNode",
+              "target": "Ryan_ham_dialog",
+              "targetPresent": true
+            }
+          ]
+        },
+        {
+          "node": "Ryan_melon",
+          "nodeSha256": "231cdc2ac062f6effad7beb157ecc84c9fe16edb8ba12a4291e84ec06b1c4b17",
+          "instructionCount": 14,
+          "opcodeCounts": {
+            "4": 4,
+            "7": 1,
+            "8": 2,
+            "11": 1,
+            "12": 1,
+            "13": 2,
+            "14": 1,
+            "16": 1,
+            "20": 1
+          },
+          "namedTransfers": [
+            {
+              "instructionIndex": 12,
+              "kind": "RunNode",
+              "target": "Ryan_melon_dialog",
+              "targetPresent": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "limitations": "Static nodes lacking RunLine/AddOption in these pinned programs. Named transfers may lead to displayed text; dynamic jumps, runtime behavior, other programs and source-role completeness are unverified."
+}
