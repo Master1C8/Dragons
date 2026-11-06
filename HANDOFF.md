@@ -4,6 +4,8 @@ Updated 2026-11-07. Canonical checkout: `/Users/antonkrutov/Desktop/Dragons`, br
 
 Current speaker-display finding: a test-only synthetic mapping executed in an instrumented macOS Unity copy and returned `Жж`; a separate frame and source-pixel crop remain too faint for visual confirmation. This is not a release adapter. Complete source classification, preservation, special-scene and glossary gates remain open, and no ordinary Russian game-text translation has started. Details: `localization/evidence/speaker-display-synthetic-20261107.md`.
 
+Managed text-sink discovery now scans all pinned root managed DLLs and the source-pinned TMP dropdown configurations in both builds. Unity's built-in text defaults are retained as needs-review; static scope and exact findings are in `localization/evidence/managed-text-sinks-20261107.md`.
+
 ## Scope and process binding
 
 Source language English; requested locale `ru` → runtime `ru` selected at build time, replacing the English Yarn table in a separate build. This prototype is not an in-game language selector. Owner decisions: player and franchise contact use neutral wording; Alexander uses masculine forms; Igwyx is referred to with masculine forms without asserting gender; Max uses neutral forms without asserting gender. These rules do not establish other characters' gender or complete roster coverage.
