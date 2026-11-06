@@ -18,6 +18,8 @@ The companion `verify_combined_settings_ui.py` verifies settings and UI changes 
 
 The local binary Addressables catalogs now have a reproducible diagnostic key listing: 24 keys per pinned build, including the English locale, three bundle keys and nine compute-shader paths. The game's catalog reader runs with a diagnostic in-memory managed memory-copy substitution; complete locations, dependencies and runtime loading remain unresolved. See `localization/evidence/addressable-catalog-keys-20261107.md`.
 
+A follow-up diagnostic captures the formerly hidden location-decoding exceptions and reads 13 partial locations in each catalog. It maps the English locale and nine shader paths to the previously inventoried local bundle containers, but three bundle option records fail native `Hash128` conversion and remain incomplete. See `localization/evidence/addressable-catalog-locations-20261107.md`; no runtime loading or full catalog completeness is inferred.
+
 Managed text-sink discovery now scans all pinned root managed DLLs and the source-pinned TMP dropdown configurations in both builds. Unity's built-in text defaults are retained as needs-review; static scope and exact findings are in `localization/evidence/managed-text-sinks-20261107.md`.
 
 A standalone Yarn-only preservation check now compares the complete source object inventory and exact authorized target values in synthetic macOS and Windows assets, including byte-identical compiled program objects. Combined UI/Yarn changes and other source families are not yet covered; the complete preserve-exact gate remains open. See `localization/evidence/yarn-preservation-check-20261107.md`.
