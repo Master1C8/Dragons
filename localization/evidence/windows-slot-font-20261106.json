@@ -4,6 +4,8 @@
   "sourceHashes": {
     "globalgamemanagers.assets": "910358d16b824bfd4b8398fea8c0295b5660471bb13a6708655096097bb0f018",
     "level0": "55a296caa23347190faa063efdaab4cf5a37e00bdbffa455729b4aa346cddae0",
+    "level1": "203725518656d04df3341248a7d24bc27551ebd6c03e582977869f0acfc5a459",
+    "sharedassets1.assets": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
     "sharedassets0.assets": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3"
   },
   "managedGeneratorInputs": [
@@ -647,6 +649,7 @@
   "managedManifestSha256": "11ababb69686eb17c8a608ade69a1540e33e3138f7f7f485f55e125a649e8e63",
   "roles": [
     {
+      "asset": "level0",
       "pathId": 5180,
       "fontAsset": "sharedassets0.assets",
       "fontPathId": 622,
@@ -654,6 +657,7 @@
       "autoSizing": 0
     },
     {
+      "asset": "level0",
       "pathId": 5183,
       "fontAsset": "sharedassets0.assets",
       "fontPathId": 622,
@@ -661,6 +665,7 @@
       "autoSizing": 0
     },
     {
+      "asset": "level0",
       "pathId": 5184,
       "fontAsset": "sharedassets0.assets",
       "fontPathId": 622,
@@ -668,6 +673,7 @@
       "autoSizing": 0
     },
     {
+      "asset": "level0",
       "pathId": 5186,
       "fontAsset": "sharedassets0.assets",
       "fontPathId": 622,
@@ -675,6 +681,7 @@
       "autoSizing": 0
     },
     {
+      "asset": "level0",
       "pathId": 5189,
       "fontAsset": "sharedassets0.assets",
       "fontPathId": 622,
@@ -682,6 +689,7 @@
       "autoSizing": 0
     },
     {
+      "asset": "level0",
       "pathId": 5191,
       "fontAsset": "sharedassets0.assets",
       "fontPathId": 622,
@@ -689,6 +697,51 @@
       "autoSizing": 0
     }
   ],
+  "dialogueRoles": [
+    {
+      "asset": "level1",
+      "pathId": 3851,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 622,
+      "fontSize": 40.0,
+      "autoSizing": 0
+    },
+    {
+      "asset": "level1",
+      "pathId": 3852,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 622,
+      "fontSize": 32.0,
+      "autoSizing": 0
+    },
+    {
+      "asset": "level1",
+      "pathId": 3859,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 622,
+      "fontSize": 32.0,
+      "autoSizing": 0
+    },
+    {
+      "asset": "sharedassets1.assets",
+      "pathId": 11105,
+      "fontAsset": "sharedassets0.assets",
+      "fontPathId": 622,
+      "fontSize": 36.0,
+      "autoSizing": 0
+    }
+  ],
+  "presenter": {
+    "pathId": 3964,
+    "lineText": 3851,
+    "characterNameText": 3852
+  },
+  "optionsPresenter": {
+    "pathId": 4228,
+    "lastLineText": 3859,
+    "optionPrefabPathId": 10882,
+    "optionTextPathId": 11105
+  },
   "primary": {
     "pathId": 622,
     "name": "LiberationSans SDF",
