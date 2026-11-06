@@ -1,0 +1,954 @@
+{
+  "schema": 1,
+  "status": "partial-source-read",
+  "pairedScenesSha256": "52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995",
+  "programSha256": {
+    "macos": "a67bbfc37dca0b29b1be740e36b570e9d524a46ef2fdf5574e0f58278c0ff1e6",
+    "windows": "cbaaba712e0cc699d0cdf98f4b8b86060c666d6196fa91cd0a9d9a237c104466"
+  },
+  "builds": {
+    "macos": {
+      "version": "9/12/2026_a93aa21a",
+      "localization": 10623,
+      "project": 10719,
+      "globalSha256": "2f3813fddc22b6c6285099f173b922d782e2f06d659482d9373849e3bbb9794b",
+      "assetSha256": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+      "localizationSha256": "9baafe5b3c36e63042cc0d02b2c755580e142447cea13f946d485a342c269853",
+      "projectSha256": "1487cbd825c98488ce00492dc7c9c5c2c3475657e9a7719e9c1de49b5f2c1189"
+    },
+    "windows": {
+      "version": "9/9/2026_ee944596",
+      "localization": 10611,
+      "project": 10707,
+      "globalSha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+      "assetSha256": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+      "localizationSha256": "7000b2b93b09f6a7b916e5f57c0dc6cf21ca9e6f9ddbfbc485bce704e8ce28d6",
+      "projectSha256": "f91af8c801958185885c2fc9adf3dfd5188b713c4f1ef264659e44292630b3b5"
+    }
+  },
+  "scope": "Coordinator read the source strings in these full listed nodes in paired build order for possible language-dependent issues. Commands, predecessors, conditions, assets, independent semantic audit, and all unlisted source families remain unreviewed. This is not an accepted full-inventory or editorial review.",
+  "nodesRead": 44,
+  "lineOccurrences": 523,
+  "uniqueLineIds": 523,
+  "nodes": [
+    {
+      "node": "DragonAlmostClean",
+      "lineIds": [
+        "line:7d791906",
+        "line:ec64a696",
+        "line:7a54a1e1",
+        "line:1dbf50b3",
+        "line:8b8f57c4"
+      ],
+      "sourceHashes": {
+        "macos": "ea06b759929c25a560e6dbbc781803b58f5cbff94d7ea32249c9e2711091ad23",
+        "windows": "ea06b759929c25a560e6dbbc781803b58f5cbff94d7ea32249c9e2711091ad23"
+      }
+    },
+    {
+      "node": "DragonAnnoyedByBuzzing",
+      "lineIds": [
+        "line:b965b4dd",
+        "line:2f55b3aa",
+        "line:9504ba33"
+      ],
+      "sourceHashes": {
+        "macos": "372294f0f33f08de6420fbd662950fdde63aa1b5cd44059266089e5e461bb7d4",
+        "windows": "372294f0f33f08de6420fbd662950fdde63aa1b5cd44059266089e5e461bb7d4"
+      }
+    },
+    {
+      "node": "DragonColdBalls",
+      "lineIds": [
+        "line:4d3233a1",
+        "line:eea7573f",
+        "line:78975048",
+        "line:c2c659d1"
+      ],
+      "sourceHashes": {
+        "macos": "497142bc05a8ba28424ece78868b877e8c3b2d10167b6251416922f92d4caf50",
+        "windows": "497142bc05a8ba28424ece78868b877e8c3b2d10167b6251416922f92d4caf50"
+      }
+    },
+    {
+      "node": "DragonConfusedAboutDismissal",
+      "lineIds": [
+        "line:63926ecd",
+        "line:f28fd15d",
+        "line:64bfd62a",
+        "line:4116f001",
+        "line:d726f776",
+        "line:fb47f998",
+        "line:6d77feef"
+      ],
+      "sourceHashes": {
+        "macos": "f89f82861cd84f9019b71c2ffe91ace623fbb065153c29d7725986422d4ca35b",
+        "windows": "f89f82861cd84f9019b71c2ffe91ace623fbb065153c29d7725986422d4ca35b"
+      }
+    },
+    {
+      "node": "DragonSatisfiedAndLeaves",
+      "lineIds": [
+        "line:f1946aab",
+        "line:67a46ddc",
+        "line:c4310942",
+        "line:52010e35",
+        "line:e85007ac"
+      ],
+      "sourceHashes": {
+        "macos": "1a7393a702e82dfbf6cb2bbb1b11b59a6363dbb6b7fb2f2e97151c6a95c9ee31",
+        "windows": "1a7393a702e82dfbf6cb2bbb1b11b59a6363dbb6b7fb2f2e97151c6a95c9ee31"
+      }
+    },
+    {
+      "node": "RyanDate_1",
+      "lineIds": [
+        "line:69ffe957",
+        "line:ffcfee20"
+      ],
+      "sourceHashes": {
+        "macos": "04f08e01c1fa476ca4d0bb7f9a061520486aec8f45f2af10c0ccfe7b2ae30ac1",
+        "windows": "04f08e01c1fa476ca4d0bb7f9a061520486aec8f45f2af10c0ccfe7b2ae30ac1"
+      }
+    },
+    {
+      "node": "RyanDate_2",
+      "lineIds": [
+        "line:bea8f1f7",
+        "line:2898f680",
+        "line:433cb27e",
+        "line:d50cb509",
+        "line:6f5dbc90"
+      ],
+      "sourceHashes": {
+        "macos": "8c70ba81e2654592fedd0f5a91983b2afa379d5d1111aacf3a232297084d0797",
+        "windows": "8c70ba81e2654592fedd0f5a91983b2afa379d5d1111aacf3a232297084d0797"
+      }
+    },
+    {
+      "node": "RyanDate_3",
+      "lineIds": [
+        "line:4944dbda",
+        "line:ead1bf44",
+        "line:7ce1b833",
+        "line:c6b0b1aa",
+        "line:5080b6dd"
+      ],
+      "sourceHashes": {
+        "macos": "1b0a58e7cc3f7d01317065af6f1daedf8e411b4eb0a7449a048299a503cae841",
+        "windows": "1b0a58e7cc3f7d01317065af6f1daedf8e411b4eb0a7449a048299a503cae841"
+      }
+    },
+    {
+      "node": "RyanDate_Idle1",
+      "lineIds": [
+        "line:3223473f"
+      ],
+      "sourceHashes": {
+        "macos": "91bdccfb91214d0183fbbafbaaafff4717e65550e02a58fd98866a2f3924206d",
+        "windows": "91bdccfb91214d0183fbbafbaaafff4717e65550e02a58fd98866a2f3924206d"
+      }
+    },
+    {
+      "node": "RyanDate_Intro",
+      "lineIds": [
+        "line:eed2cc64",
+        "line:78e2cb13",
+        "line:c2b3c28a",
+        "line:5483c5fd",
+        "line:f716a163",
+        "line:6126a614"
+      ],
+      "sourceHashes": {
+        "macos": "8d6460240a2b075251a3bff0e14d5ec02bce1f591344b000e3cb2a1910b9bfc5",
+        "windows": "8d6460240a2b075251a3bff0e14d5ec02bce1f591344b000e3cb2a1910b9bfc5"
+      }
+    },
+    {
+      "node": "RyanDate_Outro",
+      "lineIds": [
+        "line:e41244bf",
+        "line:722243c8",
+        "line:97ab84a8",
+        "line:019b83df",
+        "line:bbca8a46"
+      ],
+      "sourceHashes": {
+        "macos": "5cb73a7d4eda4717b7bd8b5aee2085d258ea75227c3e049898e44ebbe0df7b07",
+        "windows": "5cb73a7d4eda4717b7bd8b5aee2085d258ea75227c3e049898e44ebbe0df7b07"
+      }
+    },
+    {
+      "node": "RyanExploded_Intro",
+      "lineIds": [
+        "line:873a2b9a",
+        "line:110a2ced",
+        "line:3d6b2203",
+        "line:ab5b2574",
+        "line:ac769d93",
+        "line:3a469ae4",
+        "line:e02f464d",
+        "line:761f413a",
+        "line:cc4e48a3",
+        "line:5a7e4fd4",
+        "line:f9eb2b4a",
+        "line:6fdb2c3d"
+      ],
+      "sourceHashes": {
+        "macos": "5a1079c56f764bc2531caa0a60052927ee260c7848242f946059a6c6ff6a17a3",
+        "windows": "5a1079c56f764bc2531caa0a60052927ee260c7848242f946059a6c6ff6a17a3"
+      }
+    },
+    {
+      "node": "RyanExploded_Outro",
+      "lineIds": [
+        "line:22deeef6",
+        "line:b4eee981",
+        "line:25f35611",
+        "line:b3c35166",
+        "line:564a9606",
+        "line:c07a9171"
+      ],
+      "sourceHashes": {
+        "macos": "212e95e0d639ef12098b2acc8a854f82f8bcf28de1d1ca94c54699746a5b154e",
+        "windows": "212e95e0d639ef12098b2acc8a854f82f8bcf28de1d1ca94c54699746a5b154e"
+      }
+    },
+    {
+      "node": "RyanExploded_OutroDirty",
+      "lineIds": [
+        "line:fc6fdd10",
+        "line:6d726280",
+        "line:fb4265f7",
+        "line:9ca994a5",
+        "line:0a9993d2"
+      ],
+      "sourceHashes": {
+        "macos": "1b4325cb9e2f56b63d352659ef6418d5fab706d800c35fce26f89eefe150dfa0",
+        "windows": "1b4325cb9e2f56b63d352659ef6418d5fab706d800c35fce26f89eefe150dfa0"
+      }
+    },
+    {
+      "node": "RyanExploded_OutroSoapy",
+      "lineIds": [
+        "line:0979dea3",
+        "line:9f49d9d4",
+        "line:3cdcbd4a",
+        "line:aaecba3d",
+        "line:10bdb3a4"
+      ],
+      "sourceHashes": {
+        "macos": "734d5a043b65214b60ecb2392c0b0aff646166cab15a3e0f3e86fc8a75ee99ea",
+        "windows": "734d5a043b65214b60ecb2392c0b0aff646166cab15a3e0f3e86fc8a75ee99ea"
+      }
+    },
+    {
+      "node": "RyanMuddy_Dirty",
+      "lineIds": [
+        "line:f212b2de",
+        "line:4843bb47"
+      ],
+      "sourceHashes": {
+        "macos": "964d8fd2c7118f3b7b8417f49b1c2c427ae5f77525b0a7f5c9eda4e0d80f1cd4",
+        "windows": "964d8fd2c7118f3b7b8417f49b1c2c427ae5f77525b0a7f5c9eda4e0d80f1cd4"
+      }
+    },
+    {
+      "node": "RyanMuddy_Idle1",
+      "lineIds": [
+        "line:7da41ecd",
+        "line:ecb9a15d"
+      ],
+      "sourceHashes": {
+        "macos": "2048f5f3395b6e5cae7e041612d25727c9443ba85bac6e74b80cf0f2955b237b",
+        "windows": "2048f5f3395b6e5cae7e041612d25727c9443ba85bac6e74b80cf0f2955b237b"
+      }
+    },
+    {
+      "node": "RyanMuddy_Idle2",
+      "lineIds": [
+        "line:aaf3066d",
+        "line:cd18f73f"
+      ],
+      "sourceHashes": {
+        "macos": "a18f544c2047852ad1c61e382ecca4338bd1d2f70d35402d6712082843822377",
+        "windows": "a18f544c2047852ad1c61e382ecca4338bd1d2f70d35402d6712082843822377"
+      }
+    },
+    {
+      "node": "RyanMuddy_Idle3",
+      "lineIds": [
+        "line:eb019075",
+        "line:515099ec"
+      ],
+      "sourceHashes": {
+        "macos": "3c43bb94c72c726212099d2e60c33df2a91955eaf7e1b2fe9321c2d41d4e1336",
+        "windows": "3c43bb94c72c726212099d2e60c33df2a91955eaf7e1b2fe9321c2d41d4e1336"
+      }
+    },
+    {
+      "node": "RyanMuddy_Idle4",
+      "lineIds": [
+        "line:d7bcbe29",
+        "line:7429dab7"
+      ],
+      "sourceHashes": {
+        "macos": "b02cfc0f3a4e2ef3bf990621d9f6d102696002b3993fb49779209f5c81994ee9",
+        "windows": "b02cfc0f3a4e2ef3bf990621d9f6d102696002b3993fb49779209f5c81994ee9"
+      }
+    },
+    {
+      "node": "RyanMuddy_Idle5",
+      "lineIds": [
+        "line:5230bdfd",
+        "line:e861b464"
+      ],
+      "sourceHashes": {
+        "macos": "1d4798d9dd189be208895c9e8b4b981e2431d73cea98ee68c40692b3f45d783f",
+        "windows": "1d4798d9dd189be208895c9e8b4b981e2431d73cea98ee68c40692b3f45d783f"
+      }
+    },
+    {
+      "node": "RyanMuddy_Idle7",
+      "lineIds": [
+        "line:1e027369",
+        "line:8f1fccf9",
+        "line:192fcb8e"
+      ],
+      "sourceHashes": {
+        "macos": "dbf0c39ee316f6dd38fffa5ba2ec21af565758b0914c41f9d975d00b61fa7309",
+        "windows": "dbf0c39ee316f6dd38fffa5ba2ec21af565758b0914c41f9d975d00b61fa7309"
+      }
+    },
+    {
+      "node": "RyanMuddy_Idle8",
+      "lineIds": [
+        "line:2d315c6c",
+        "line:bb015b1b",
+        "line:01505282"
+      ],
+      "sourceHashes": {
+        "macos": "a4caa5cff4de9e2b11cc213a1f60976c24d8e84e9b735ccdf924b71493b96497",
+        "windows": "a4caa5cff4de9e2b11cc213a1f60976c24d8e84e9b735ccdf924b71493b96497"
+      }
+    },
+    {
+      "node": "RyanMuddy_Intro",
+      "lineIds": [
+        "line:dd4b34ae",
+        "line:4b7b33d9",
+        "line:e8ee5747",
+        "line:7ede5030",
+        "line:c48f59a9",
+        "line:52bf5ede",
+        "line:5592e639",
+        "line:c3a2e14e",
+        "line:b01b2159",
+        "line:262b262e",
+        "line:9c7a2fb7",
+        "line:0a4a28c0",
+        "line:a9df4c5e"
+      ],
+      "sourceHashes": {
+        "macos": "dee23bbbf285abed37773c4ed157fbfa4906fa52fb8694a0152dceb602b08294",
+        "windows": "dee23bbbf285abed37773c4ed157fbfa4906fa52fb8694a0152dceb602b08294"
+      }
+    },
+    {
+      "node": "RyanMuddy_Nag1",
+      "lineIds": [
+        "line:21235886",
+        "line:82b63c18"
+      ],
+      "sourceHashes": {
+        "macos": "6e18b5f66c266b269240db0d3f43fec6a489ad179e96165d70e3eda15f53bbbf",
+        "windows": "6e18b5f66c266b269240db0d3f43fec6a489ad179e96165d70e3eda15f53bbbf"
+      }
+    },
+    {
+      "node": "RyanMuddy_Nag2",
+      "lineIds": [
+        "line:c4fc9b28",
+        "line:7ead92b1"
+      ],
+      "sourceHashes": {
+        "macos": "b21c1746a537b47a33a7c7549314f862d8434600b41445743dc4be848157a16b",
+        "windows": "b21c1746a537b47a33a7c7549314f862d8434600b41445743dc4be848157a16b"
+      }
+    },
+    {
+      "node": "RyanMuddy_Nag3",
+      "lineIds": [
+        "line:58b4f5fb"
+      ],
+      "sourceHashes": {
+        "macos": "9e59aea3e3b4eac0a7b903e4d89302b9d1f1c81cef4388878018cbfce902e179",
+        "windows": "9e59aea3e3b4eac0a7b903e4d89302b9d1f1c81cef4388878018cbfce902e179"
+      }
+    },
+    {
+      "node": "RyanMuddy_NaughtyTouch",
+      "lineIds": [
+        "line:014b5da5"
+      ],
+      "sourceHashes": {
+        "macos": "6d41a5bc17503f08b78945a6b0cd6ee5f5219f48681446ebac36712d534e3607",
+        "windows": "6d41a5bc17503f08b78945a6b0cd6ee5f5219f48681446ebac36712d534e3607"
+      }
+    },
+    {
+      "node": "RyanMuddy_Outro",
+      "lineIds": [
+        "line:acb8a5aa",
+        "line:3a88a2dd",
+        "line:991dc643",
+        "line:b57cc8ad",
+        "line:b251704a",
+        "line:0f2dc134",
+        "line:234ccfda",
+        "line:2461773d",
+        "line:c1e8b05d",
+        "line:57d8b72a"
+      ],
+      "sourceHashes": {
+        "macos": "db440ca9aa1636ce4d3d52a49a5e059f532b5f1fe235f1399bf0d3a7780b7698",
+        "windows": "db440ca9aa1636ce4d3d52a49a5e059f532b5f1fe235f1399bf0d3a7780b7698"
+      }
+    },
+    {
+      "node": "RyanMuddy_SmallTalk",
+      "lineIds": [
+        "line:5f64c352",
+        "line:e535cacb",
+        "line:e218722c",
+        "line:7305cdbc",
+        "line:7428755b",
+        "line:1706e86d",
+        "line:8136ef1a"
+      ],
+      "sourceHashes": {
+        "macos": "c49908c424eb4709ccba21e77529ec7fe35fb18ae41b767b9eb4113821f7efeb",
+        "windows": "c49908c424eb4709ccba21e77529ec7fe35fb18ae41b767b9eb4113821f7efeb"
+      }
+    },
+    {
+      "node": "RyanMuddy_Soapy",
+      "lineIds": [
+        "line:2b65bf83",
+        "line:bd55b8f4",
+        "line:1ec0dc6a"
+      ],
+      "sourceHashes": {
+        "macos": "3f35d8abdd2edb9da127fb7be11d5c59ed6a09582980311408d3a60f49d9ef1b",
+        "windows": "3f35d8abdd2edb9da127fb7be11d5c59ed6a09582980311408d3a60f49d9ef1b"
+      }
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "lineIds": [
+        "line:7c56b2d8",
+        "line:ea66b5af",
+        "line:7b7b0a3f",
+        "line:ed4b0d48",
+        "line:8aa0fc1a",
+        "line:a6c1f2f4",
+        "line:1c90fb6d",
+        "line:30f1f583",
+        "line:9364911d",
+        "line:0554966a",
+        "line:bf059ff3",
+        "line:29359884",
+        "line:b8282714",
+        "line:2e182063",
+        "line:cb91e703",
+        "line:5da1e074",
+        "line:e7f0e9ed",
+        "line:fe3484ea",
+        "line:71c0ee9a",
+        "line:d2558a04",
+        "line:44658d73",
+        "line:6804839d",
+        "line:f9193c0d",
+        "line:6f293b7a",
+        "line:048d7f84",
+        "line:92bd78f3",
+        "line:28ec716a",
+        "line:bedc761d",
+        "line:e104b8e4",
+        "line:f5a81524",
+        "line:1d491283",
+        "line:8b7915f4",
+        "line:31281c6d",
+        "line:a7181b1a",
+        "line:3605a48a",
+        "line:a035a3fd",
+        "line:69dd6a73",
+        "line:45bc649d",
+        "line:d38c63ea",
+        "line:ffed6d04",
+        "line:5c78099a",
+        "line:ca480eed",
+        "line:e6290003",
+        "line:70190774",
+        "line:7734bf93",
+        "line:3b6d644d",
+        "line:ad5d633a",
+        "line:170c6aa3",
+        "line:813c6dd4",
+        "line:b4990e3d",
+        "line:22a9094a",
+        "line:0ec807a4",
+        "line:98f800d3",
+        "line:09e5bf43",
+        "line:9fd5b834",
+        "line:563d71ba",
+        "line:7a5c7f54",
+        "line:ec6c7823",
+        "line:c00d76cd",
+        "line:63981253",
+        "line:4ff91cbd",
+        "line:d9c91bca",
+        "line:48d4a45a",
+        "line:dee4a32d",
+        "line:b90f527f",
+        "line:2f3f5508",
+        "line:a0cb3f78",
+        "line:956e5c91",
+        "line:035e5be6",
+        "line:36fb380f",
+        "line:8caa3196",
+        "line:1a9a36e1",
+        "line:cd9b2a8f",
+        "line:0d20d327",
+        "line:8b878971",
+        "line:1db78e06",
+        "line:f83e4966",
+        "line:6e0e4e11",
+        "line:d45f4788",
+        "line:426f40ff",
+        "line:e1fa2461",
+        "line:77ca2316",
+        "line:5bab2df8",
+        "line:cab69268",
+        "line:5c86951f",
+        "line:a9980f5e",
+        "line:3fa80829",
+        "line:13c906c7",
+        "line:85f901b0",
+        "line:266c652e",
+        "line:b05c6259",
+        "line:0a0d6bc0",
+        "line:9c3d6cb7",
+        "line:9b10d450",
+        "line:7e991330",
+        "line:e8a91447",
+        "line:52f81dde",
+        "line:c4c81aa9",
+        "line:675d7e37",
+        "line:4b3c70d9",
+        "line:4c11c83e",
+        "line:bdca3e1b",
+        "line:f16d7940",
+        "line:dd0c77ae",
+        "line:da21cf49",
+        "line:2bfa396c",
+        "line:91ab30f5",
+        "line:079b3782",
+        "line:a40e531c",
+        "line:323e546b",
+        "line:886f5df2"
+      ],
+      "sourceHashes": {
+        "macos": "22039080e585220feef7bcc3bbbdf6c8de2107b5101166b5d8bab509bdb9d182",
+        "windows": "5f4316c93cc7a68b91a66ae99cce80ef6b24214483296cc079c9c2b2292708c5"
+      }
+    },
+    {
+      "node": "Ryan_egg_dialog",
+      "lineIds": [
+        "line:0ce8d3c2",
+        "line:53301d3b",
+        "line:e96114a2",
+        "line:7f5113d5",
+        "line:c5001a4c",
+        "line:f0a579a5",
+        "line:66957ed2",
+        "line:dcc4774b",
+        "line:4af4703c"
+      ],
+      "sourceHashes": {
+        "macos": "a701fe0d93d76687a0c88238ac61acdb38926e2eb8067ca4a2a69eadfae9ec50",
+        "windows": "a701fe0d93d76687a0c88238ac61acdb38926e2eb8067ca4a2a69eadfae9ec50"
+      }
+    },
+    {
+      "node": "Ryan_grapes_dialog",
+      "lineIds": [
+        "line:418498cf",
+        "line:13ca0a74",
+        "line:d7b49fb8",
+        "line:b05f6eea",
+        "line:a99b03ed",
+        "line:266f699d",
+        "line:9c3e6004",
+        "line:0a0e6773",
+        "line:3fab049a",
+        "line:85fa0d03",
+        "line:82d7b5e4",
+        "line:14e7b293",
+        "line:4b3f7c6a",
+        "line:f16e75f3",
+        "line:675e7284",
+        "line:dd0f7b1d",
+        "line:e8aa18f4",
+        "line:7e9a1f83",
+        "line:c4cb161a",
+        "line:52fb116d"
+      ],
+      "sourceHashes": {
+        "macos": "dfdd30488f1bde92f61bcf54ddbc051a4ddde9ceb724be083c356344a3614f57",
+        "windows": "dfdd30488f1bde92f61bcf54ddbc051a4ddde9ceb724be083c356344a3614f57"
+      }
+    },
+    {
+      "node": "Ryan_ham_dialog",
+      "lineIds": [
+        "line:202fce0c",
+        "line:c0e34d36",
+        "line:b132719c",
+        "line:270276eb",
+        "line:4f172746",
+        "line:f5462edf",
+        "line:d9272031",
+        "line:637629a8",
+        "line:56d34a41",
+        "line:7ab244af",
+        "line:ec8243d8",
+        "line:7d9ffc48"
+      ],
+      "sourceHashes": {
+        "macos": "11470d5bc766d46c3d593cc8da3feb168fa4509f6d826c3a93f048a8d9b53a0b",
+        "windows": "5b7bac4f60215ff524ac0731190b2d552d988dab755dfb929211e03ecdbbb49c"
+      }
+    },
+    {
+      "node": "Ryan_melon_dialog",
+      "lineIds": [
+        "line:8f598864",
+        "line:19698f13",
+        "line:c0161bbc",
+        "line:7a471225",
+        "line:ec771552",
+        "line:56261ccb",
+        "line:63837f22",
+        "line:f5b37855",
+        "line:4fe271cc",
+        "line:deffce5c",
+        "line:d9d276bb",
+        "line:48cfc92b",
+        "line:3b76093c",
+        "line:ad460e4b",
+        "line:22b2643b",
+        "line:171707d2",
+        "line:812700a5",
+        "line:b482634c"
+      ],
+      "sourceHashes": {
+        "macos": "7f6f96405af8d866b480e5ba18db443ad3daf6bfc24277b5b9a5ac6ed71e6f23",
+        "windows": "7f6f96405af8d866b480e5ba18db443ad3daf6bfc24277b5b9a5ac6ed71e6f23"
+      }
+    },
+    {
+      "node": "Ryan_5_intro",
+      "lineIds": [
+        "line:61c7f2d6",
+        "line:f7f7f5a1",
+        "line:5462913f",
+        "line:c2529648",
+        "line:78039fd1",
+        "line:ee3398a6",
+        "line:9b7e09b8",
+        "line:7f2e2736",
+        "line:e91e2041",
+        "line:aedb6a51",
+        "line:82ba64bf",
+        "line:148a63c8",
+        "line:38eb6d26",
+        "line:0d4e0ecf",
+        "line:b71f0756",
+        "line:212f0021",
+        "line:b032bfb1",
+        "line:2602b8c6",
+        "line:c38b7fa6",
+        "line:55bb78d1",
+        "line:efea7148",
+        "line:79da763f",
+        "line:da4f12a1",
+        "line:4c7f15d6",
+        "line:601e1b38",
+        "line:f62e1c4f",
+        "line:f103a4a8",
+        "line:6733a3df",
+        "line:d38efb75",
+        "line:45befc02",
+        "line:ffeff59b",
+        "line:69dff2ec",
+        "line:ca4a9672",
+        "line:5c7a9105",
+        "line:e62b989c",
+        "line:701b9feb",
+        "line:e106207b",
+        "line:7736270c",
+        "line:048fe71b",
+        "line:92bfe06c",
+        "line:bedeee82",
+        "line:28eee9f5",
+        "line:8b7b8d6b",
+        "line:1d4b8a1c",
+        "line:a71a8385"
+      ],
+      "sourceHashes": {
+        "macos": "37789b6c2865a7f4786f91349d56780cce03f69f20ecc4ba86918982ae5bc63b",
+        "windows": "37789b6c2865a7f4786f91349d56780cce03f69f20ecc4ba86918982ae5bc63b"
+      }
+    },
+    {
+      "node": "Conrad_Intro_4",
+      "lineIds": [
+        "line:8f64adc0",
+        "line:1954aab7",
+        "line:bac1ce29",
+        "line:2cf1c95e",
+        "line:96a0c0c7",
+        "line:0090c7b0",
+        "line:8ebd442e",
+        "line:a2b4acea",
+        "line:918d7820",
+        "line:07bd7f57",
+        "line:6c193ba9",
+        "line:fa293cde",
+        "line:e3ed51d9",
+        "line:cf8c5f37",
+        "line:40783547",
+        "line:d6483230",
+        "line:75dd56ae",
+        "line:59bc5840",
+        "line:5e91e0a7",
+        "line:c8a1e7d0",
+        "line:2d2820b0",
+        "line:a2dc4ac0",
+        "line:bb1827c7",
+        "line:01492e5e",
+        "line:97792929",
+        "line:34ec4db7",
+        "line:188d4359",
+        "line:1fa0fbbe",
+        "line:8990fcc9",
+        "line:e385b7f3",
+        "line:59d4be6a",
+        "line:cfe4b91d",
+        "line:75b5b084",
+        "line:4010d36d",
+        "line:d620d41a",
+        "line:6c71dd83",
+        "line:fa41daf4",
+        "line:6b5c6564",
+        "line:fd6c6213",
+        "line:8ed5a204",
+        "line:18e5a573",
+        "line:3484ab9d",
+        "line:0121c874",
+        "line:9711cf03",
+        "line:2d40c69a",
+        "line:dbb68858",
+        "line:f7d786b6",
+        "line:bb70c1ed",
+        "line:2a6d7e7d",
+        "line:bc5d790a",
+        "line:4d868f2f",
+        "line:61e781c1",
+        "line:c272e55f",
+        "line:5442e228"
+      ],
+      "sourceHashes": {
+        "macos": "c0ffcf099f5f9ca27b99941b0d7d5165dcb6e77d930e2513417a78293b0ba83d",
+        "windows": "c0ffcf099f5f9ca27b99941b0d7d5165dcb6e77d930e2513417a78293b0ba83d"
+      }
+    },
+    {
+      "node": "Alexander_4_intro",
+      "lineIds": [
+        "line:bcbc6373",
+        "line:06ed6aea",
+        "line:33480903",
+        "line:90dd6d9d",
+        "line:a5780e74",
+        "line:1f2907ed",
+        "line:8919009a",
+        "line:1804bf0a",
+        "line:6bbd7f1d",
+        "line:8e34b87d",
+        "line:fd8d786a",
+        "line:47dc71f3",
+        "line:d1ec7684",
+        "line:7279121a",
+        "line:5e181cf4",
+        "line:e449156d",
+        "line:c8281b83",
+        "line:5935a413",
+        "line:cf05a364",
+        "line:a8ee5236",
+        "line:b12a3f31",
+        "line:3ede5541",
+        "line:848f5cd8",
+        "line:12bf5baf",
+        "line:271a3846"
+      ],
+      "sourceHashes": {
+        "macos": "f002dd18857f575cab5f36e67a1b69c745e5835b5303defefaffc40b947ad41c",
+        "windows": "f002dd18857f575cab5f36e67a1b69c745e5835b5303defefaffc40b947ad41c"
+      }
+    },
+    {
+      "node": "Alexander_4_required",
+      "lineIds": [
+        "line:505154a4",
+        "line:c66153d3",
+        "line:577cec43",
+        "line:c14ceb34",
+        "line:807df02d",
+        "line:24c52c54",
+        "line:b2f52b23",
+        "line:08a422ba",
+        "line:9e9425cd",
+        "line:3d014153",
+        "line:11604fbd",
+        "line:ab314624",
+        "line:875048ca",
+        "line:164df75a",
+        "line:ebd9b4d3",
+        "line:7de9b3a4",
+        "line:c7b8ba3d",
+        "line:5188bd4a",
+        "line:f21dd9d4",
+        "line:de7cd73a",
+        "line:642ddea3",
+        "line:484cd04d",
+        "line:d9516fdd",
+        "line:4f6168aa",
+        "line:aae8afca",
+        "line:8689a124",
+        "line:3cd8a8bd",
+        "line:10b9a653"
+      ],
+      "sourceHashes": {
+        "macos": "603fbff59c209913da15cdbe48f25204b1de68df7052b7bd7323bb7fa612e908",
+        "windows": "603fbff59c209913da15cdbe48f25204b1de68df7052b7bd7323bb7fa612e908"
+      }
+    },
+    {
+      "node": "Alexander_5_intro",
+      "lineIds": [
+        "line:6d5ba814",
+        "line:fc461784",
+        "line:6a7610f3",
+        "line:0d9de1a1",
+        "line:9bade6d6",
+        "line:21fcef4f",
+        "line:14598ca6",
+        "line:b7cce838",
+        "line:82698bd1",
+        "line:38388248",
+        "line:ae08853f",
+        "line:3f153aaf",
+        "line:a9253dd8",
+        "line:4cacfab8",
+        "line:da9cfdcf",
+        "line:60cdf456",
+        "line:f6fdf321",
+        "line:556897bf",
+        "line:ef399e26",
+        "line:c35890c8",
+        "line:79099951",
+        "line:7e2421b6",
+        "line:e81426c1",
+        "line:8b3abbf7",
+        "line:a75bb519",
+        "line:1d0abc80",
+        "line:316bb26e"
+      ],
+      "sourceHashes": {
+        "macos": "dbaac7be1d004f6f21b05f27a00078bfe9521bae03095fc086dab83351c6aa86",
+        "windows": "dbaac7be1d004f6f21b05f27a00078bfe9521bae03095fc086dab83351c6aa86"
+      }
+    },
+    {
+      "node": "Alexander_5_required",
+      "lineIds": [
+        "line:1c856f1c",
+        "line:8ab5686b",
+        "line:681117ec",
+        "line:e0c8c57b",
+        "line:30e461f2",
+        "line:a6d46685",
+        "line:37c9d915",
+        "line:44701902",
+        "line:a1f9de62",
+        "line:d2401e75",
+        "line:fe21109b",
+        "line:5db47405",
+        "line:cb847372",
+        "line:e7e57d9c",
+        "line:71d57aeb",
+        "line:76f8c20c",
+        "line:87233429",
+        "line:1113335e",
+        "line:ab423ac7",
+        "line:3d723db0"
+      ],
+      "sourceHashes": {
+        "macos": "ddf5ca68e7d9160b0d56cf78915466418c60844424da10640efa32a763aa157e",
+        "windows": "7734013734782407eb2619b053d0bf0674f694537c62f72f6efe74796e4ea370"
+      }
+    },
+    {
+      "node": "Alexander_1",
+      "lineIds": [
+        "line:fa97376e",
+        "line:9d7cc63c"
+      ],
+      "sourceHashes": {
+        "macos": "e47bcf721f2b5714a96fc95490d38b9825bc166d8d8292ab51db94c52a70edb4",
+        "windows": "e47bcf721f2b5714a96fc95490d38b9825bc166d8d8292ab51db94c52a70edb4"
+      }
+    },
+    {
+      "node": "Alexander_1_intro",
+      "lineIds": [
+        "line:a2ba222e",
+        "line:33a79dbe",
+        "line:b6c878fa",
+        "line:a5979ac9",
+        "line:20f87f8d",
+        "line:0c997163",
+        "line:9aa97614",
+        "line:393c128a",
+        "line:155d1c64",
+        "line:af0c15fd",
+        "line:836d1b13",
+        "line:1270a483",
+        "line:8440a3f4",
+        "line:61c96494",
+        "line:ee3d0ee4",
+        "line:f7f963e3",
+        "line:4da86a7a",
+        "line:db986d0d",
+        "line:780d0993"
+      ],
+      "sourceHashes": {
+        "macos": "d652f936540e4bac317bf5ebacf3837eb8796a625a424580f0f378a43b5b078f",
+        "windows": "10bf2cd459e46f97b253fbf745c39363c97863fd824a7616d74a864ddb3b16d3"
+      }
+    }
+  ]
+}
