@@ -1,4 +1,5 @@
 import json
+import copy
 from pathlib import Path
 import tempfile
 import unittest
@@ -49,7 +50,30 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertEqual(sum('macos' in r['source'] for r in controls), 28)
         self.assertEqual(sum('windows' in r['source'] for r in controls), 28)
         self.assertTrue(all('InputSystem_Actions::.ctor()' in r['method'] for r in controls))
+        names = [r for r in result['entries'] if r['role'] == 'preserve-exactly-credit-name']
+        self.assertEqual(len(names), 34)
+        self.assertTrue(all(r['source']['macos'] == r['source']['windows'] for r in names))
+        self.assertTrue(any(r['source']['macos'] == 'hannagreen' for r in names))
+        self.assertFalse(any(r['source']['macos'] == 'GDC Bundle Part 4' for r in names))
+        self.assertEqual(result['creditNameManifestSha256'], inventory.credits.MANIFEST_SHA256)
         self.assertEqual(len(entries), sum(result['familyCounts'].values()))
+
+    @unittest.skipUnless((WORK / 'ui-windows-all.json').is_file(), 'pinned UI export required')
+    def test_credit_bindings_reject_changed_source_and_wrong_hierarchy(self):
+        roles = inventory.load_pinned(ROLES, inventory.ROLES_SHA)
+        manifest = inventory.load_pinned(inventory.credits.MANIFEST, inventory.credits.MANIFEST_SHA256)
+        ui = inventory.load_pinned(WORK / 'ui-windows-all.json', inventory.FILES['ui-windows-all.json'])
+        self.assertEqual(len(inventory.bind_credit_names(roles, manifest, ui)), 34)
+        first = manifest['entries'][0]
+        changed_ui = dict(ui)
+        changed_ui[first['ids']['windows']] += 'x'
+        with self.assertRaisesRegex(ValueError, 'credit-name source or hierarchy mismatch'):
+            inventory.bind_credit_names(roles, manifest, changed_ui)
+        changed_roles = copy.deepcopy(roles)
+        row = next(r for r in changed_roles['entries'] if r['windows']['id'] == first['ids']['windows'])
+        row['hierarchy'][-1] = 'Description'
+        with self.assertRaisesRegex(ValueError, 'credit-name source or hierarchy mismatch'):
+            inventory.bind_credit_names(changed_roles, manifest, ui)
 
 
 if __name__ == '__main__':

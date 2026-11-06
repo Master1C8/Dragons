@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 
 import dialogue_locale as dl
+import credit_name_preservation as credits
 
 FILES = {
     'yarn-paired-scenes.json': '52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995',
@@ -41,6 +42,38 @@ def put(records, record):
     records[record['id']] = record
 
 
+def bind_credit_names(roles, manifest, ui):
+    if manifest.get('sourceRoleReportSha256') != ROLES_SHA or manifest.get('asset') != 'level2':
+        raise ValueError('credit manifest role report mismatch')
+    protected = {}
+    for item in manifest['entries']:
+        key = item['ids']['windows']
+        if key in protected or dl.sha(item['source'].encode('utf-8')) != item['sourceSha256']:
+            raise ValueError('duplicate or invalid credit-name binding')
+        protected[key] = item
+    if len(protected) != 34:
+        raise ValueError('credit-name count mismatch')
+    candidates = [r for r in roles['entries'] if r['provisionalRole'] == 'credit-name-preserve-candidate']
+    if len(candidates) != len(protected):
+        raise ValueError('credit-name role count mismatch')
+    matched = set()
+    for row in candidates:
+        mac, win = row['macos'], row['windows']
+        key = win['id'] if win else None
+        if key not in protected or key in matched or not mac:
+            raise ValueError('credit-name role identity mismatch')
+        entry = protected[key]
+        if (row['asset'] != manifest['asset'] or row['hierarchy'] != entry['hierarchy'] or
+                mac['id'] != entry['ids']['macos'] or row['sameText'] is not True or
+                mac['sourceTextSha256'] != entry['sourceSha256'] or
+                win['sourceTextSha256'] != entry['sourceSha256'] or ui.get(key) != entry['source']):
+            raise ValueError('credit-name source or hierarchy mismatch')
+        matched.add(key)
+    if matched != set(protected):
+        raise ValueError('credit-name source occurrence missing')
+    return matched
+
+
 def build(work, roles_path):
     work = Path(work)
     docs = {name: load_pinned(work / name, expected) for name, expected in FILES.items()}
@@ -53,6 +86,8 @@ def build(work, roles_path):
     if len(full) != 16 or len(prefixes) != 18 or full.keys() & prefixes.keys():
         raise ValueError('protected Yarn identity mismatch')
     scenes, ui, settings = docs['yarn-paired-scenes.json'], docs['ui-windows-all.json'], docs['settings-paired-source.json']
+    credit_manifest = load_pinned(credits.MANIFEST, credits.MANIFEST_SHA256)
+    protected_names = bind_credit_names(roles, credit_manifest, ui)
     records = {}
     for node, rows in scenes['scenes'].items():
         for row in rows:
@@ -88,7 +123,8 @@ def build(work, roles_path):
             raise ValueError('macOS UI source mismatch')
         path = json.dumps([row['asset'], row['hierarchy']], ensure_ascii=False, separators=(',', ':'))
         put(records, {'id': 'ui:' + dl.sha(path.encode('utf-8')), 'family': 'ui',
-                      'role': row['provisionalRole'], 'asset': row['asset'], 'hierarchy': row['hierarchy'],
+                      'role': 'preserve-exactly-credit-name' if win['id'] in protected_names else row['provisionalRole'],
+                      'asset': row['asset'], 'hierarchy': row['hierarchy'],
                       'source': {'macos': value if mac else None, 'windows': value},
                       'location': {'macos': mac['id'] if mac else None, 'windows': win['id']}})
     if used_windows != set(ui):
@@ -156,7 +192,8 @@ def build(work, roles_path):
     counts = dict(sorted(Counter(x['family'] for x in records.values()).items()))
     return {'schema': 1, 'status': 'provisional-not-translation-ready', 'builds': scenes['builds'],
             'sourceExportsSha256': FILES, 'uiRolesSha256': ROLES_SHA, 'inputActionReportsSha256': INPUT_ACTION_SHA,
-            'yarnProtectedReportSha256': YARN_PROTECTED_SHA, 'familyCounts': counts,
+            'yarnProtectedReportSha256': YARN_PROTECTED_SHA, 'creditNameManifestSha256': credits.MANIFEST_SHA256,
+            'familyCounts': counts,
             'entries': list(records.values()),
             'limitations': 'Provisional union of pinned discovery exports. Managed occurrences are build-specific and unpaired; roles, runtime visibility, other assemblies/resources, full exact-preservation contract, special-scene decisions and independent review remain incomplete. Texture text is excluded by owner decision.'}
 
