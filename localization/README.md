@@ -201,6 +201,11 @@ partial output, as with the other builder steps.
   `localization/work/` and the three source-pinned Windows new-slot labels.
   It checks their hierarchy and preserves all other serialized objects; it is
   not a general Windows UI adapter or a player installer.
+- `windows_settings_probe.py` handles only the pinned Windows anti-aliasing
+  label and one option in a fresh test asset. It validates the managed schemas,
+  unbound text references and every saved object. It is not a general settings
+  adapter; final strings, all other settings and release installation remain
+  unverified.
 
 - The installed Windows copy investigated separately reports build
   `9/9/2026_ee944596`, while the macOS build reports `9/12/2026_a93aa21a`.
