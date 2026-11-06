@@ -112,7 +112,7 @@ class WindowsUIAdapterTests(unittest.TestCase):
         keys, values, extras, _, _, _ = versions.load(SOURCE, spec)
         source = dict(zip(keys, values))
         line = 'line:4183ca7e'
-        synthetic = "Жж Ъъ Ьь <i>'Drag'n'wash franchise 223'...</i> 123"
+        synthetic = "Жж Ъъ Ьь <i>'Drag'n'wash franchise 223'...</i>"
         yarn = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': spec['localizationSha256'],
                 'lines': {line: {'source': source[line], 'text': synthetic}}}
         ui = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': spec['assetSha256'],

@@ -23,7 +23,7 @@ class WindowsProbeTests(unittest.TestCase):
         original = dict(zip(keys, values))['line:4183ca7e']
         doc = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': probe.SPEC['localizationSha256'],
                'lines': {'line:4183ca7e': {'source': original,
-                        'text': "Жж Ъъ Ьь <i>'Drag'n'wash franchise 223'...</i> 123"}}}
+                        'text': "Жж Ъъ Ьь <i>'Drag'n'wash franchise 223'...</i>"}}}
         with tempfile.TemporaryDirectory(prefix='dragnwash-win-probe-') as folder:
             root = Path(folder)
             locale, out = root / 'probe.json', root / 'probe.assets'

@@ -15,6 +15,7 @@ PATH_ID = 10623
 SITE_LOCALES = Path.home() / 'Desktop/SiteForMods/lib/language-data/site-locales.ts'
 TOKENS = re.compile(r'<[^<>\n]*>|\{[^{}\n]*\}|\[[^\[\]\n]*\]')
 TAGS = re.compile(r'<[^<>\n]*>|\[[^\[\]\n]*\]')
+DIGITS = re.compile(r'[0-9]+')
 PREFIX = re.compile(r'^([A-Za-z][A-Za-z0-9_ .-]{0,40}:\s*)')
 # Source markers adjacent to embedded title-like lines in the pinned Yarn
 # programs. Their runtime role is unresolved; preserve exact values by ID.
@@ -113,6 +114,11 @@ def encode(original, keys, values, extras):
     return bytes(out)
 
 
+def visible_digit_runs(value):
+    """Preserve Russian source digits separately from already protected markup."""
+    return collections.Counter(DIGITS.findall(TOKENS.sub('', value)))
+
+
 def read_locale(path, keys, values, source_hash=OBJECT_HASH, *, yarn_semantics=True):
     doc = json.loads(Path(path).read_text(encoding='utf-8'), object_pairs_hook=unique_object)
     if not isinstance(doc, dict) or set(doc) != {'schema', 'locale', 'sourceObjectSha256', 'lines'}:
@@ -150,6 +156,8 @@ def read_locale(path, keys, values, source_hash=OBJECT_HASH, *, yarn_semantics=T
             raise ValueError(f'{key}: markup or placeholders differ')
         if TAGS.findall(source[key]) != TAGS.findall(value['text']):
             raise ValueError(f'{key}: markup order differs')
+        if yarn_semantics and doc['locale'] == 'ru' and visible_digit_runs(source[key]) != visible_digit_runs(value['text']):
+            raise ValueError(f'{key}: visible digit sequences differ')
         prefix = PREFIX.match(source[key])
         if prefix and not value['text'].startswith(prefix.group(1)):
             raise ValueError(f'{key}: initial label/command must remain unchanged')

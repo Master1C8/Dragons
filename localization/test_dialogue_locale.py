@@ -121,6 +121,18 @@ class LocaleFileTests(unittest.TestCase):
         self.assertEqual(module.read_locale(self.path, self.keys, self.values, yarn_semantics=True)[1][self.keys[0]],
                          self.values[0])
 
+    def test_russian_yarn_digits_are_preserved_outside_markup(self):
+        self.values = ['What does the number 7 taste like? <size=70%>']
+        self.doc['lines'][self.keys[0]] = {'source': self.values[0], 'text': 'Вопрос о 7. <size=70%>'}
+        self.assertEqual(self.read()[1][self.keys[0]], 'Вопрос о 7. <size=70%>')
+        for bad in ('Вопрос о 8. <size=70%>', 'Вопрос о семи. <size=70%>',
+                    'Вопрос о 7 и 70. <size=70%>'):
+            self.doc['lines'][self.keys[0]]['text'] = bad
+            with self.assertRaisesRegex(ValueError, 'visible digit sequences differ'):
+                self.read()
+        self.path.write_text(json.dumps(self.doc, ensure_ascii=False), encoding='utf-8')
+        self.assertIn(self.keys[0], module.read_locale(self.path, self.keys, self.values, yarn_semantics=False)[1])
+
 
 if __name__ == '__main__':
     unittest.main()

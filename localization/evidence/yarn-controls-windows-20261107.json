@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "platform": "windows",
+  "build": {
+    "version": "9/9/2026_ee944596",
+    "localization": 10611,
+    "project": 10707,
+    "globalSha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+    "assetSha256": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+    "localizationSha256": "7000b2b93b09f6a7b916e5f57c0dc6cf21ca9e6f9ddbfbc485bce704e8ce28d6",
+    "projectSha256": "f91af8c801958185885c2fc9adf3dfd5188b713c4f1ef264659e44292630b3b5"
+  },
+  "programSha256": "cbaaba712e0cc699d0cdf98f4b8b86060c666d6196fa91cd0a9d9a237c104466",
+  "nodeCount": 195,
+  "lineCount": 1839,
+  "substitutionCounts": {
+    "0": 1839
+  },
+  "numericLiteralLines": [
+    {
+      "lineId": "line:2b84f2eb",
+      "node": "Start",
+      "instructionIndex": 18,
+      "sourceSha256": "73a58edf82c7d1f9a69ec9fa370b374161b05d20adf493008dd0d1eb6b843438",
+      "digitRuns": {
+        "1": 1
+      }
+    },
+    {
+      "lineId": "line:88119675",
+      "node": "Start",
+      "instructionIndex": 19,
+      "sourceSha256": "44cd17f6b06a1e2a2426a79133bf9b3c86d2eda0705310a6a26d1b18623671bc",
+      "digitRuns": {
+        "2": 1
+      }
+    },
+    {
+      "lineId": "line:1e219102",
+      "node": "Start",
+      "instructionIndex": 20,
+      "sourceSha256": "5c7f5bd24b7aa92918ecfd4fa0cd51b9edbbac6c09b88d835941e6285021a43b",
+      "digitRuns": {
+        "3": 1
+      }
+    },
+    {
+      "lineId": "line:a470989b",
+      "node": "Start",
+      "instructionIndex": 21,
+      "sourceSha256": "182d619fd2759e9ec71de2ed3d7af2f7475b160996d7ed91e8da8aef58176e0e",
+      "digitRuns": {
+        "4": 1
+      }
+    },
+    {
+      "lineId": "line:32409fec",
+      "node": "Start",
+      "instructionIndex": 22,
+      "sourceSha256": "1631cc2062d35c854e16acf5e59c66b380be64ba0ce1dea76359badcbb5a437b",
+      "digitRuns": {
+        "5": 1
+      }
+    },
+    {
+      "lineId": "line:a35d207c",
+      "node": "Start",
+      "instructionIndex": 23,
+      "sourceSha256": "8badee5679752364ea81fd68626e14c1009117db57b330458efa504779b546d8",
+      "digitRuns": {
+        "6": 1
+      }
+    },
+    {
+      "lineId": "line:356d270b",
+      "node": "Start",
+      "instructionIndex": 24,
+      "sourceSha256": "dfd4710580ab5eb3ec58778654d9a168e8a95796223e79134601a26f700d365a",
+      "digitRuns": {
+        "7": 1
+      }
+    },
+    {
+      "lineId": "line:5643ba3d",
+      "node": "Start",
+      "instructionIndex": 25,
+      "sourceSha256": "af31c269dddcddded7b4868841d5176275eba1402e6feeffb81149ce8efdb3ba",
+      "digitRuns": {
+        "8": 1
+      }
+    },
+    {
+      "lineId": "line:c073bd4a",
+      "node": "Start",
+      "instructionIndex": 26,
+      "sourceSha256": "6da123fcc0f5c222ad18f022d594b785ca90090ca8eb38d91e077adb97fe468e",
+      "digitRuns": {
+        "9": 1
+      }
+    },
+    {
+      "lineId": "line:7a22b4d3",
+      "node": "Start",
+      "instructionIndex": 27,
+      "sourceSha256": "f9465279bddb54ade925ce663f73bac5eeb5a83b527865345ff0371055c7da76",
+      "digitRuns": {
+        "10": 1
+      }
+    },
+    {
+      "lineId": "line:ec12b3a4",
+      "node": "Start",
+      "instructionIndex": 28,
+      "sourceSha256": "46be06404c734dec4b47c422bb6f25355a209504b9f3c830701d7177503a11d3",
+      "digitRuns": {
+        "11": 1
+      }
+    },
+    {
+      "lineId": "line:4f87d73a",
+      "node": "Start",
+      "instructionIndex": 29,
+      "sourceSha256": "7e32f1603f1a85639051d3331142646bebe6c80a73038d90bb1d571df1455d8b",
+      "digitRuns": {
+        "12": 1
+      }
+    },
+    {
+      "lineId": "line:d9b7d04d",
+      "node": "Start",
+      "instructionIndex": 30,
+      "sourceSha256": "a494dfb9f1a57f33584c98afd84ee39e2084c247d2d4c60d92e50ee33dfb2671",
+      "digitRuns": {
+        "13": 1
+      }
+    },
+    {
+      "lineId": "line:63e6d9d4",
+      "node": "Start",
+      "instructionIndex": 31,
+      "sourceSha256": "f4fc9cefe23a07b76abf95b13bfbea3843b89b333d5c95258d28b29415a45d1d",
+      "digitRuns": {
+        "14": 1
+      }
+    },
+    {
+      "lineId": "line:f5d6dea3",
+      "node": "Start",
+      "instructionIndex": 32,
+      "sourceSha256": "627fb5b7002e048a3b6a1ca627806d44d7ec1b1ccba67db9637595d6524fe1d4",
+      "digitRuns": {
+        "15": 1
+      }
+    },
+    {
+      "lineId": "line:64cb6133",
+      "node": "Start",
+      "instructionIndex": 33,
+      "sourceSha256": "dc2099e76df820a2d16f5d23b9e6fc15525d8f57381e1ce739b2ef3fcde32dd5",
+      "digitRuns": {
+        "16": 1
+      }
+    },
+    {
+      "lineId": "line:f2fb6644",
+      "node": "Start",
+      "instructionIndex": 34,
+      "sourceSha256": "10082959f17563f7e7fdb613a5cf20a83ddbda352ea1395a7dd461fb09916477",
+      "digitRuns": {
+        "17": 1
+      }
+    },
+    {
+      "lineId": "line:1772a124",
+      "node": "Start",
+      "instructionIndex": 35,
+      "sourceSha256": "add98a1ef99b129084ed85a05753f88ff9f2598ba246226e25b443ff29a4f9f8",
+      "digitRuns": {
+        "18": 1
+      }
+    },
+    {
+      "lineId": "line:c2bdc402",
+      "node": "Alexander_questions",
+      "instructionIndex": 15,
+      "sourceSha256": "3fbd83d375d6fa051d6ca347b08387d78712ea8db06cded6592aae993508165e",
+      "digitRuns": {
+        "7": 1
+      }
+    },
+    {
+      "lineId": "line:a99c515c",
+      "node": "Ryan_1_PhoneTutorial",
+      "instructionIndex": 5,
+      "sourceSha256": "8a15c5bd16af8e2a847807d2210142b0d91eaea58d8630fd3a1da6c09a23f2f6",
+      "digitRuns": {
+        "223": 1
+      }
+    },
+    {
+      "lineId": "line:4183ca7e",
+      "node": "Ryan_1_PhoneTutorial",
+      "instructionIndex": 21,
+      "sourceSha256": "693491dd1e43554fe958f841c6a9e91877974e362686282708f1669f17e00733",
+      "digitRuns": {
+        "223": 1
+      }
+    },
+    {
+      "lineId": "line:7e352505",
+      "node": "Ryan_5_Required_ryan_romanced",
+      "instructionIndex": 94,
+      "sourceSha256": "45afe74b37ed6bb00238a3f9f101f494fea81f5885af35f7b10c5e52cff55cd3",
+      "digitRuns": {
+        "2": 1
+      }
+    }
+  ],
+  "limitations": "Static line/option substitution counts and ASCII digit runs outside recognized markup only. Does not interpret spelled-out numbers, runtime markup, commands, formatted values, dynamic source changes or other resource types."
+}
