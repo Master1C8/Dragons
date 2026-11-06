@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "status": "incomplete",
+  "sourceInventory": "localization/evidence/yarn-context-map-20261107.json",
+  "sourceInventorySha256": "20d8c7305831a2b98adffad5798e64cb194c37e40039d1525dde122b0c061555",
+  "discoveryCoverage": "A language-dependent exchange found in Ryan_2_required during the bounded paired-text reading. Other resource families and branch execution remain unreviewed.",
+  "cases": [
+    {
+      "id": "ryan-question-about-a-question",
+      "title": "Already asking a question",
+      "node": "Ryan_2_required",
+      "nodeSha256": "91a8f75f2ef3f4c7cf82641fed9357693b163f539a77dfb5b5e765c958427697",
+      "sourceLineIds": ["line:aa0dda7b", "line:3c3ddd0c", "line:866cd495", "line:105cd3e2", "line:81416c72", "line:709a9a57", "line:17716b05", "line:e6aa9d20", "line:5cfb94b9", "line:cacb93ce", "line:695ef750", "line:ff6ef027", "line:453ff9be", "line:d422462e", "line:d30ffec9", "line:42124159", "line:31ab814e", "line:a79b8639", "line:1dca8fa0", "line:8bfa88d7", "line:be5feb3e", "line:286fec49", "line:040ee2a7"],
+      "choiceDestinations": {"line:3c3ddd0c": 11, "line:866cd495": 13, "line:81416c72": 22, "line:709a9a57": 27, "line:453ff9be": 48, "line:d422462e": 56, "line:8bfa88d7": 73, "line:be5feb3e": 78},
+      "observedSourceBehavior": "Ryan asks permission to ask a question. One option replies that he is already asking one; he acknowledges this before explaining his relationship concern. The other option agrees directly and proceeds to the shared continuation. Later choices concern his situation and have distinct responses.",
+      "invariant": "Keep the playful logic between the initial question and the already-asking response, Ryan's acknowledgment, the alternative direct answer, the sensitive relationship discussion, and all original choice and destination identities.",
+      "adaptationRoute": "After source and glossary readiness, author and review the question, both answers and Ryan's acknowledgment together in Russian before ordinary translation, applying the approved neutral player strategy.",
+      "nonTextDependencies": "Both pinned compiled node bodies, their ordered choice destinations, facial and dialogue commands, original speaker context and eventual runtime presentation. Actual reachability and branch behavior are not established by the static map.",
+      "acceptanceScenarios": ["The playful option leads to Ryan's acknowledgment while the direct option does not, before both reach the relationship discussion.", "Reject wording in which the initial sentence is not a question or the already-asking response no longer follows logically.", "Preserve distinct later responses and do not alter branch controls."],
+      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "needs-review", "structural": "partial", "runtimeVisual": "not-run"}
+    }
+  ]
+}

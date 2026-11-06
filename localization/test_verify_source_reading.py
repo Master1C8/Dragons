@@ -57,6 +57,15 @@ class SourceReadingTests(unittest.TestCase):
         self.assertEqual((result3['nodes'], result3['uniqueIds']), (63, 521))
         third_ids = {key for node in conrad['nodes'] for key in node['lineIds']}
         self.assertTrue((first_ids | second_ids).isdisjoint(third_ids))
+        remaining = json.loads((ROOT / 'evidence/source-reading-remaining-20261107.json').read_text())
+        result4 = reading.verify(corpus.read_bytes(), remaining)
+        self.assertEqual((result4['nodes'], result4['uniqueIds']), (42, 444))
+        last_ids = {key for node in remaining['nodes'] for key in node['lineIds']}
+        self.assertTrue((first_ids | second_ids | third_ids).isdisjoint(last_ids))
+        paired = json.loads(corpus.read_bytes())
+        all_ids = {line['id'] for node in paired['scenes'].values() for line in node}
+        self.assertEqual(first_ids | second_ids | third_ids | last_ids, all_ids)
+        self.assertEqual(len(all_ids), 1839)
 
 
 if __name__ == '__main__':
