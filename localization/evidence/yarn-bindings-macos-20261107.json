@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "platform": "macos",
+  "buildVersion": "9/12/2026_a93aa21a",
+  "globalScriptsSha256": "391640e8e7df097a0d377c7a16552975d4821688841ea3460ec99587f4061d9e",
+  "scannedAssets": {
+    "level0": "4cabf35993c6726ab29e5cb24a1ce74a0fdf3d8061b0de3437415e56bcfa72f7",
+    "level1": "6af2815f16cba00e935fe110023ec91421c7d4107c5d8d31f55b70039b17d618",
+    "level2": "8a65d8f397e103abf65a6c9daba7668a4efe8c70fbe36f6b6eed676aaa99d808",
+    "level3": "32805c0339b0b67b4cc1dd27f8e150419e3f7374132d630921700281a14b833e",
+    "level4": "1aeac3e3368bbf5d3198dd6aee5f0969677a13b162158bb592655fdef03ef030",
+    "level5": "3241f65111d9639a3e1434e4d5e7dd9aa946eac554675dc4627093638e0341c8",
+    "level6": "975954bc0796ab7b60f06f075b3b0ad8ce367d07cede726d53847b61fbe112f6",
+    "sharedassets0.assets": "40713b00ce12582eebc427c0104e59becf438eb15803725b2248be3471a96aeb",
+    "sharedassets1.assets": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+    "sharedassets2.assets": "82300da2892d572a7dac2602489874c130e93cd093112450dc1c03948c15872e",
+    "sharedassets3.assets": "22f6f6316b9ff73a5ff3042b82ada4af70fc80ce24a02f26d69b613f0a18d158",
+    "sharedassets4.assets": "00f71e4e71abefa25cd13cb9d99f5678e7b257ece9910c7face27a56d37ad8f7",
+    "sharedassets5.assets": "ffdfdeeeb4f793e6cc2425810f182a322e8bf41da7dfac32dddda1aab1bbd9a1",
+    "sharedassets6.assets": "38f5e76e01b5f5bae985b7c7b45477ff1888ec7a62265b2393911e59dcceaffc",
+    "resources.assets": "fd20278f865e51fba3c1a922777031afb2a5d2d00fc10ee682296e32cc071974"
+  },
+  "projects": [
+    {
+      "asset": "sharedassets1.assets",
+      "objectId": 10719,
+      "rawSha256": "1487cbd825c98488ce00492dc7c9c5c2c3475657e9a7719e9c1de49b5f2c1189",
+      "objectName": "Project",
+      "gameObjectFileId": 0,
+      "gameObjectId": 0
+    }
+  ],
+  "runners": [
+    {
+      "asset": "level1",
+      "objectId": 4156,
+      "rawSha256": "245c0f98474838e6fa77102122f2725a8d8b5b0817c985252266306684f8435c",
+      "objectName": "",
+      "gameObjectFileId": 0,
+      "gameObjectId": 934,
+      "projectReference": {
+        "asset": "sharedassets1.assets",
+        "fileId": 3,
+        "pathId": 10719
+      },
+      "serializedAutoStart": false,
+      "startNode": "Start"
+    },
+    {
+      "asset": "level3",
+      "objectId": 1617,
+      "rawSha256": "d10e165910c57c5a5dae53dd00afe0ee6cbf169012da187c7806e8354c77fc10",
+      "objectName": "",
+      "gameObjectFileId": 0,
+      "gameObjectId": 409,
+      "projectReference": {
+        "asset": "sharedassets1.assets",
+        "fileId": 3,
+        "pathId": 10719
+      },
+      "serializedAutoStart": false,
+      "startNode": "Start"
+    },
+    {
+      "asset": "level4",
+      "objectId": 2090,
+      "rawSha256": "74abeab1bb12214373bf48eab7ab5d9a8c3c4d05e89f3865c93ca5e3d50417c3",
+      "objectName": "",
+      "gameObjectFileId": 0,
+      "gameObjectId": 565,
+      "projectReference": {
+        "asset": "sharedassets1.assets",
+        "fileId": 3,
+        "pathId": 10719
+      },
+      "serializedAutoStart": false,
+      "startNode": "Start"
+    },
+    {
+      "asset": "level5",
+      "objectId": 1689,
+      "rawSha256": "fc2d9f7260a9a0af23701f283ab5dadf4da7e90374e6579708f204b4a50edd1e",
+      "objectName": "",
+      "gameObjectFileId": 0,
+      "gameObjectId": 428,
+      "projectReference": {
+        "asset": "sharedassets1.assets",
+        "fileId": 4,
+        "pathId": 10719
+      },
+      "serializedAutoStart": false,
+      "startNode": "Start"
+    },
+    {
+      "asset": "level6",
+      "objectId": 1615,
+      "rawSha256": "2445ecaa0e584531484006a8920019bc3b66645e7b8bb5abf04b2f0dc88aaad7",
+      "objectName": "",
+      "gameObjectFileId": 0,
+      "gameObjectId": 433,
+      "projectReference": {
+        "asset": "sharedassets1.assets",
+        "fileId": 4,
+        "pathId": 10719
+      },
+      "serializedAutoStart": false,
+      "startNode": "Start"
+    }
+  ],
+  "unresolvedScriptReferences": [],
+  "limitations": "Serialized fields and selected script classes in these fifteen assets only. No runtime changes, dynamic project loading/merging, other asset families, reachability or full game behavior are established."
+}
