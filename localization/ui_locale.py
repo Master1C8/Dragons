@@ -64,7 +64,7 @@ def patch_into(source_dir, name, locale_file, requested, target, dialogue_object
     original, rows = scan(source_dir, name)
     keys = list(rows)
     values = [rows[k][2] for k in keys]
-    locale, translations = dl.read_locale(locale_file, keys, values, ASSETS[name])
+    locale, translations = dl.read_locale(locale_file, keys, values, ASSETS[name], yarn_semantics=False)
     if locale != requested:
         raise ValueError(f'UI locale {locale} does not match {requested}')
     target = Path(target)

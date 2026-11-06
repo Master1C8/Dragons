@@ -105,7 +105,7 @@ def encode(original, keys, values, extras):
     return bytes(out)
 
 
-def read_locale(path, keys, values, source_hash=OBJECT_HASH):
+def read_locale(path, keys, values, source_hash=OBJECT_HASH, *, yarn_semantics=True):
     doc = json.loads(Path(path).read_text(encoding='utf-8'), object_pairs_hook=unique_object)
     if not isinstance(doc, dict) or set(doc) != {'schema', 'locale', 'sourceObjectSha256', 'lines'}:
         raise ValueError('locale file must contain exactly schema, locale, sourceObjectSha256, lines')
@@ -126,6 +126,14 @@ def read_locale(path, keys, values, source_hash=OBJECT_HASH):
             raise ValueError(f'{key}: source mismatch or empty/non-string translation')
         if source[key].startswith('title:') and value['text'] != source[key]:
             raise ValueError(f'{key}: title directive must remain unchanged')
+        # Yarn's line provider enables implicit character names and its parser
+        # interprets text before a colon as a speaker. Until every such source
+        # case is classified, reject both new and removed delimiters in Yarn
+        # values. This rule must not be applied to unrelated UI/settings text.
+        if yarn_semantics and (':' in source[key]) != (':' in value['text']):
+            raise ValueError(f'{key}: implicit speaker delimiter presence changed')
+        if yarn_semantics and ':' in source[key] and not PREFIX.match(source[key]) and value['text'] != source[key]:
+            raise ValueError(f'{key}: unclassified colon-bearing source must remain unchanged')
         if collections.Counter(TOKENS.findall(source[key])) != collections.Counter(TOKENS.findall(value['text'])):
             raise ValueError(f'{key}: markup or placeholders differ')
         if TAGS.findall(source[key]) != TAGS.findall(value['text']):
@@ -177,7 +185,7 @@ def main():
             f.write('\n')
         print(f'Exported {len(keys)} source lines to {args.export}')
         return
-    locale, translations = read_locale(args.locale, keys, values)
+    locale, translations = read_locale(args.locale, keys, values, yarn_semantics=True)
     replacement = [translations.get(k, v) for k, v in zip(keys, values)]
     changed = encode(raw, keys, replacement, extras)
     if parse(changed) != (keys, replacement, extras):

@@ -12,6 +12,16 @@ spec.loader.exec_module(module)
 
 
 class BuildSafetyTests(unittest.TestCase):
+    def test_experimental_layout_requires_a_test_profile_before_copy(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            source = root / 'Original.app'
+            source.mkdir()
+            destination = root / 'Output.app'
+            with self.assertRaisesRegex(ValueError, 'requires an isolated test profile'):
+                module.build(source, root / 'locale.json', 'ru', destination, test_caption_layout=True)
+            self.assertFalse(destination.exists())
+
     def test_rejects_existing_destination_and_overlapping_source(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)

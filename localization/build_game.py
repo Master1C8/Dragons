@@ -13,11 +13,14 @@ import ui_locale as ui
 ASSET_RELATIVE = Path('Contents/Resources/Data/sharedassets1.assets')
 
 
-def build(source, locale_file, requested, destination, ui_dir=None, settings_file=None, test_profile_code=None):
+def build(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
+          test_profile_code=None, test_caption_layout=False):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
         raise ValueError('source and destination must be macOS .app bundles')
+    if test_caption_layout and test_profile_code is None:
+        raise ValueError('experimental settings layout requires an isolated test profile')
     if destination.exists() or destination.is_symlink():
         raise FileExistsError('destination already exists')
     # Do not put outputs inside the source or recursively copy a parent of the source.
@@ -35,7 +38,7 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
     if asset.is_symlink() or not asset.is_file() or source not in asset.resolve().parents:
         raise ValueError('source asset must be a regular file')
     env, obj, raw, keys, values, extras = dl.load_asset(asset)
-    locale, translations = dl.read_locale(locale_file, keys, values)
+    locale, translations = dl.read_locale(locale_file, keys, values, yarn_semantics=True)
     if locale != requested:
         raise ValueError(f'locale file identifies {locale}, not requested {requested}')
     replacement = [translations.get(k, v) for k, v in zip(keys, values)]
@@ -52,7 +55,7 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
             if file.is_symlink() or not file.is_file() or file.suffix != '.json' or name not in ui.ASSETS:
                 raise ValueError(f'unexpected UI locale file: {file.name}')
             _, rows = ui.scan(source / 'Contents/Resources/Data', name)
-            code, _ = dl.read_locale(file, list(rows), [r[2] for r in rows.values()], ui.ASSETS[name])
+            code, _ = dl.read_locale(file, list(rows), [r[2] for r in rows.values()], ui.ASSETS[name], yarn_semantics=False)
             if code != requested:
                 raise ValueError(f'UI locale {code} does not match {requested}')
             ui_files[name] = file
@@ -66,6 +69,9 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
     if test_profile_code is not None:
         import isolated_profile as profile_tool
         prepared_profile = profile_tool.prepare(source, test_profile_code)
+    if test_caption_layout:
+        if dl.sha((source / 'Contents/Resources/Data/sharedassets0.assets').read_bytes()) != ui.ASSETS['sharedassets0.assets']:
+            raise ValueError('unsupported settings layout experiment source')
     obj.set_raw_data(changed)
     data = env.file.save()
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -102,6 +108,19 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
             raise ValueError('unsafe settings destination; partial copy retained')
         settings_count = settings.patch_into(source / 'Contents/Resources/Data', target_settings,
                                              prepared_settings, ui_files.get(settings.ASSET))
+    layout_hash = None
+    if test_caption_layout:
+        import experimental_settings_layout as layout
+        target_layout = destination / 'Contents/Resources/Data' / layout.ASSET
+        if target_layout.is_symlink() or destination.resolve() not in target_layout.resolve().parents:
+            raise ValueError('unsafe test layout destination; partial copy retained')
+        layout_hash = layout.patch_into(source / 'Contents/Resources/Data', target_layout, requested,
+                                        prior_ui=ui_files.get(layout.ASSET), prepared_settings=prepared_settings)
+        experiment_marker = destination / 'Contents/Resources/vn-test-layout.json'
+        with experiment_marker.open('x', encoding='utf-8') as f:
+            json.dump({'schema': 1, 'testOnly': True, 'assetSha256': layout_hash,
+                       'rectTransformPathId': 478, 'oldHeightDelta': -13, 'newHeightDelta': -3}, f)
+            f.write('\n')
     profile = None
     if prepared_profile is not None:
         profile = profile_tool.apply(destination, prepared_profile)
@@ -127,6 +146,7 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
                       'dialogueAssetSha256BeforeUi': dl.sha(data), 'uiStrings': ui_count,
                       'settingsStrings': settings_count,
                       'testProfile': profile['code'] if profile else None,
+                      'testSettingsLayoutSha256': layout_hash,
                       'output': str(destination)}, ensure_ascii=False))
     print('Build complete. No game was installed or launched; UI coverage and font support remain unverified.')
 
@@ -140,8 +160,11 @@ def main():
     p.add_argument('--ui-dir', type=Path, help='optional directory of named UI locale JSON files')
     p.add_argument('--settings-locale', type=Path, help='optional source-pinned settings locale JSON file')
     p.add_argument('--test-profile', help='optional fresh four-character isolated test profile; not a player release')
+    p.add_argument('--test-settings-caption-layout', action='store_true',
+                   help='experimental caption height for isolated test profiles only')
     a = p.parse_args()
-    build(a.source_app, a.locale_file, a.locale, a.output_app, a.ui_dir, a.settings_locale, a.test_profile)
+    build(a.source_app, a.locale_file, a.locale, a.output_app, a.ui_dir, a.settings_locale,
+          a.test_profile, a.test_settings_caption_layout)
 
 
 if __name__ == '__main__':

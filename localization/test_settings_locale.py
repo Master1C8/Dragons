@@ -96,6 +96,7 @@ class SettingsAdapterIntegrationTests(unittest.TestCase):
         import shutil
         import UnityPy
         import dialogue_locale as dl
+        import experimental_settings_layout as layout
         import settings_locale as settings
         import ui_locale as ui
         with tempfile.TemporaryDirectory(prefix='dragnwash-setting-merge-') as directory:
@@ -116,6 +117,36 @@ class SettingsAdapterIntegrationTests(unittest.TestCase):
             self.assertEqual(dl.read_string(objects[650].get_raw_data(), 88)[0], 'TEST 369')
             self.assertEqual(objects[606].read_typetree(nodes=prepared[4][606], check_read=True)
                              ['label']['backupString'], 'ЖЮЯ 427')
+            layout.patch_into(SOURCE, target, 'ru', prior_ui=ui_file, prepared_settings=prepared)
+            final = UnityPy.load(str(target))
+            objects = {o.path_id: o for o in final.objects}
+            self.assertEqual(dl.read_string(objects[650].get_raw_data(), 88)[0], 'TEST 369')
+            self.assertEqual(objects[606].read_typetree(nodes=prepared[4][606], check_read=True)
+                             ['label']['backupString'], 'ЖЮЯ 427')
+            self.assertEqual(objects[478].read_typetree(check_read=True)['m_SizeDelta']['y'], -3.0)
+
+    def test_layout_experiment_requires_exact_prior_settings_and_matches_the_probe(self):
+        import hashlib
+        import shutil
+        import experimental_settings_layout as layout
+        import settings_locale as settings
+        with tempfile.TemporaryDirectory(prefix='dragnwash-layout-test-') as directory:
+            root = Path(directory)
+            locale, target = root / 'settings.json', root / 'copy.assets'
+            self.write_locale(locale, 'sharedassets0.assets#606:option:1', 'On', 'Жж Ъъ Ьь 427')
+            prepared = settings.make_asset(SOURCE, locale, 'ru')
+            shutil.copyfile(SOURCE / 'sharedassets0.assets', target)
+            self.assertEqual(settings.patch_into(SOURCE, target, prepared), 1)
+            before = hashlib.sha256(target.read_bytes()).hexdigest()
+            self.assertEqual(before, '96e3f29e601a64f575be6ee60e706eabd8afb47f6b2c6803116a773518ae52fd')
+            with self.assertRaisesRegex(ValueError, 'supported non-English locale'):
+                layout.patch_into(SOURCE, target, 'zz', prepared_settings=prepared)
+            self.assertEqual(hashlib.sha256(target.read_bytes()).hexdigest(), before)
+            with self.assertRaisesRegex(ValueError, r'unexpected layout experiment target object: \(606,'):
+                layout.patch_into(SOURCE, target, 'ru')
+            self.assertEqual(hashlib.sha256(target.read_bytes()).hexdigest(), before)
+            result = layout.patch_into(SOURCE, target, 'ru', prepared_settings=prepared)
+            self.assertEqual(result, 'a06067fa117624a04a5ccb4b2bbfb912d9f0a63ac543f730c2be974acf52ffdf')
 
 
 if __name__ == '__main__':

@@ -70,6 +70,36 @@ class LocaleFileTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'schema'):
             self.read()
 
+    def test_yarn_rejects_new_or_removed_implicit_speaker_delimiters(self):
+        self.values = ['A normal sentence']
+        self.doc['lines'][self.keys[0]] = {'source': self.values[0], 'text': 'ТЕСТ: строка'}
+        self.path.write_text(json.dumps(self.doc, ensure_ascii=False), encoding='utf-8')
+        with self.assertRaisesRegex(ValueError, 'implicit speaker delimiter presence changed'):
+            module.read_locale(self.path, self.keys, self.values, yarn_semantics=True)
+        # UI/settings are separate paths and must not inherit the Yarn rule.
+        self.assertEqual(module.read_locale(self.path, self.keys, self.values, yarn_semantics=False)[1][self.keys[0]],
+                         'ТЕСТ: строка')
+        self.doc['lines'][self.keys[0]]['text'] = 'Обычная строка'
+        self.path.write_text(json.dumps(self.doc, ensure_ascii=False), encoding='utf-8')
+        self.assertEqual(module.read_locale(self.path, self.keys, self.values, yarn_semantics=True)[1][self.keys[0]],
+                         'Обычная строка')
+        self.values = ['The title:']
+        self.doc['lines'][self.keys[0]] = {'source': self.values[0], 'text': 'Заголовок'}
+        self.path.write_text(json.dumps(self.doc, ensure_ascii=False), encoding='utf-8')
+        with self.assertRaisesRegex(ValueError, 'implicit speaker delimiter presence changed'):
+            module.read_locale(self.path, self.keys, self.values, yarn_semantics=True)
+
+    def test_unclassified_long_colon_prefix_is_held_for_review(self):
+        self.values = ['A sentence longer than forty characters before a colon:']
+        self.doc['lines'][self.keys[0]] = {'source': self.values[0], 'text': 'Длинное предложение:'}
+        self.path.write_text(json.dumps(self.doc, ensure_ascii=False), encoding='utf-8')
+        with self.assertRaisesRegex(ValueError, 'unclassified colon-bearing source'):
+            module.read_locale(self.path, self.keys, self.values, yarn_semantics=True)
+        self.doc['lines'][self.keys[0]]['text'] = self.values[0]
+        self.path.write_text(json.dumps(self.doc, ensure_ascii=False), encoding='utf-8')
+        self.assertEqual(module.read_locale(self.path, self.keys, self.values, yarn_semantics=True)[1][self.keys[0]],
+                         self.values[0])
+
 
 if __name__ == '__main__':
     unittest.main()

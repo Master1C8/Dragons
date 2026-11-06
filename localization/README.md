@@ -106,6 +106,16 @@ This validation is conservative and does **not** prove all game-specific
 controls or speaker-label semantics have been identified. Source line presence
 does not prove visibility or runtime reachability.
 
+The game's Yarn provider recognizes an implicit speaker before a colon. Until
+the source cases are classified, dialogue validation rejects adding or removing
+colon presence, preserves existing short ASCII prefixes exactly, and requires
+an unclassified long colon-bearing line to remain unchanged. These deliberately
+conservative guards can block a legitimate translation, including localized
+speaker names; do not weaken them without an explicit per-ID speaker/control
+contract and runtime verification. The colon rule does not apply to UI and
+settings strings. Dynamically substituted values and all markup cases remain to
+be classified.
+
 ## Optional TextMeshPro interface strings
 
 For supported serialized assets, export the TextMeshPro UI objects separately:
@@ -158,6 +168,14 @@ inputs, round-trips each supported settings object, preserves every unrelated
 serialized object and re-reads changed fields. It is still a prototype: runtime
 testing used an isolated, instrumented app with one artificial settings label,
 and full menu coverage, choices and translated text remain unverified.
+
+For isolated tests only, `--test-settings-caption-layout` may be combined with
+`--test-profile`. It applies the reviewed caption-height experiment to the
+copied `sharedassets0.assets`, verifies prior UI/settings edits and preserves
+all other object bytes. It is forbidden without a test profile, adds a signed
+`vn-test-layout.json` marker and remains disabled for normal builds. One
+synthetic value became legible in a controlled comparison; long values,
+scrolling, normal input and final localized content remain unverified.
 
 ## Evidence and limitations
 

@@ -133,7 +133,7 @@ def scan(data):
 
 def make_asset(data, locale_file, requested):
     env, objects, trees, nodes, lines, protected = scan(data)
-    locale, translations = dl.read_locale(locale_file, list(lines), list(lines.values()), SOURCE_HASH)
+    locale, translations = dl.read_locale(locale_file, list(lines), list(lines.values()), SOURCE_HASH, yarn_semantics=False)
     if locale != requested:
         raise ValueError(f'locale file identifies {locale}, not requested {requested}')
     before = {(o.path_id, o.type.name): o.get_raw_data() for o in env.objects}
@@ -169,7 +169,7 @@ def patch_into(source_data, target, prepared, prior_ui=None):
     if prior_ui is not None:
         _, rows = ui.scan(source_data, ASSET)
         keys = list(rows)
-        code, ui_text = dl.read_locale(prior_ui, keys, [rows[k][2] for k in keys], SOURCE_HASH)
+        code, ui_text = dl.read_locale(prior_ui, keys, [rows[k][2] for k in keys], SOURCE_HASH, yarn_semantics=False)
         if code != locale:
             raise ValueError('prior UI locale does not match settings locale')
         for key, text in ui_text.items():
