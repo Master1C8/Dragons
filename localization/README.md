@@ -1,10 +1,11 @@
 # Drag'N Wash: dialogue locale asset builder
 
-This is an offline prototype for the macOS build `9/12/2026_a93aa21a`. It
-creates one new `sharedassets1.assets` file for a selected language. It does
-not modify the installed game, install a translation, switch the game's locale,
-or translate UI, textures or game code. A new build is made from the original
-English asset for each locale; existing output files are never overwritten.
+This is an experimental builder for the macOS build `9/12/2026_a93aa21a`. It
+creates either one new `sharedassets1.assets` file or a separate `.app` copy
+for a selected language. It does not modify the installed game, install a
+translation, switch the game's locale, or translate textures or game code.
+A new build is made from the original English asset for each locale; existing
+output files are never overwritten.
 
 The game uses Unity and Yarn Spinner. The pinned Yarn localization object is
 MonoBehaviour path ID `10623`, with 1,839 ordered string IDs. The builder
@@ -17,6 +18,9 @@ selected language, not a native multilingual in-game language picker.
 - Python 3.9+ and `UnityPy==1.25.4` in an isolated environment. The local
   investigation environment used `/private/tmp/dragnwash-unitypy-venv/bin/python`;
   it is temporary and is not a durable project dependency.
+- The canonical site locale catalog at
+  `~/Desktop/SiteForMods/lib/language-data/site-locales.ts`. Builds reject an
+  unsupported or missing locale instead of selecting a fallback language.
 - Original, unmodified macOS `sharedassets1.assets` from the supported game.
   Its SHA-256 must be `f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8`.
 
@@ -30,6 +34,25 @@ for both outputs.
 "$PYTHON" localization/dialogue_locale.py "$ASSET" --export source-lines.json
 "$PYTHON" localization/dialogue_locale.py "$ASSET" --locale ru.json --output output/ru/sharedassets1.assets
 ```
+
+To build a separate signed macOS app for a chosen language instead, use:
+
+```sh
+"$PYTHON" localization/build_game.py --source-app "/path/to/Drag'N Wash.app" \
+  --locale-file ru.json --locale ru --output-app "/path/to/output/DragNWash-ru.app"
+```
+
+The selected locale must match the file exactly. The command copies the source
+app, changes the dialogue asset and ad-hoc signs the copy. It does not
+launch it. The output uses the game's original save and preference identity if
+run; only the separate test probe described below used isolated identifiers.
+An error during copy or signing may leave a partial destination for inspection;
+remove it only after verifying its contents. A new run requires a new destination.
+The game writes `steam_appid.txt` into the app-bundle root at startup. On macOS
+this makes the ad-hoc signature invalid after the first launch; repeated Finder
+launches are not verified. This remains an open integration defect, not a
+release-ready installer. Do not remove the Steam integration or alter the game
+assembly without separately validating its effect.
 
 The export contains English source values keyed by line ID. A locale JSON
 contains only entries to replace; missing IDs retain English:
@@ -54,14 +77,49 @@ This validation is conservative and does **not** prove all game-specific
 controls or speaker-label semantics have been identified. Source line presence
 does not prove visibility or runtime reachability.
 
+## Optional TextMeshPro interface strings
+
+For supported serialized assets, export the TextMeshPro UI objects separately:
+
+```sh
+"$PYTHON" localization/ui_locale.py "/path/to/Drag'N Wash.app/Contents/Resources/Data" level0 --export ui-level0-source.json
+```
+
+Supported names are `level0` through `level6`, `sharedassets0.assets` and
+`sharedassets1.assets`. For each asset to change, prepare a JSON file named
+`<asset>.json` in a UI locale directory. Its shape is the dialogue locale format
+above, except `sourceObjectSha256` is the **asset hash** from that asset's UI
+export and IDs are keys such as `level0#5201`. Then append
+`--ui-dir /path/to/ui-locale-directory` to `build_game.py`. Every file must
+identify the same requested locale. Assets not supplied stay unchanged, and
+dialogue and UI changes to `sharedassets1.assets` are merged.
+
+The export includes dynamic placeholders, numbers and names as well as text.
+It is an inventory, not a classified translation list. Review each candidate
+and preserve runtime values and proper names. Settings, code-generated text,
+other UI types and texture lettering are not covered by this mechanism.
+
 ## Evidence and limitations
 
 - The original Yarn object was decoded and re-encoded byte for byte. A one-line
   synthetic replacement was built and read back; all 11,392 other Unity objects
   retained identical raw bytes in the saved asset.
-- The installed game was not modified or launched. In-game loading, all UI and
-  settings text, save behavior, fonts, glyph coverage, shaping, bidirectional
-  text and layout are **unverified**. Do not treat the output as a finished
+- Dialogue and TextMeshPro changes in `sharedassets1.assets` were built together
+  and independently read back without one overwriting the other.
+- The installed game was not modified. A separately signed test copy, with
+  different Unity company/product identifiers, launched to the main menu and
+  entered a new game. The log confirms Yarn created its built-in localized line
+  provider, but the synthetic replacement line was not reached. A second test
+  copy displayed the synthetic UI value `TEST 427` on the save-slot screen,
+  detected through on-device OCR. A separate Cyrillic probe `ЖЮЯ 427` was also
+  recognized by OCR at that screen. OCR is not a visual acceptance check;
+  font completeness, clipping and other scripts remain unverified. The two
+  screenshot originals have SHA-256 `1d75c9c3d460b4df86c1dc4f0f145058427d82b73a7c1abf3c40cfba3c6a04fa`
+  and `61c6a6ce8a1a2b70d33d829affd44f9dde8f3324a9d0bfe66a3342e20551d8ac`.
+  Loading the replacement during dialogue,
+  complete UI and settings coverage, save behavior, fonts,
+  glyph coverage, shaping, bidirectional text and layout remain **unverified**.
+  Do not treat the output as a finished
   localization or install it over a real game without an independently verified
   integration and recovery path.
 - Embedded texture text is outside scope and is not modified.

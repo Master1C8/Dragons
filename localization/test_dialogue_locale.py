@@ -60,6 +60,16 @@ class LocaleFileTests(unittest.TestCase):
         self.doc['lines'][self.keys[0]]['text'] = self.values[0]
         self.read()
 
+    def test_rejects_unconfigured_locale(self):
+        self.doc['locale'] = 'zz'
+        with self.assertRaisesRegex(ValueError, 'supported non-English'):
+            self.read()
+
+    def test_rejects_boolean_schema(self):
+        self.doc['schema'] = True
+        with self.assertRaisesRegex(ValueError, 'schema'):
+            self.read()
+
 
 if __name__ == '__main__':
     unittest.main()

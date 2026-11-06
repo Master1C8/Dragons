@@ -12,6 +12,7 @@ import struct
 ASSET_HASH = 'f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8'
 OBJECT_HASH = '9baafe5b3c36e63042cc0d02b2c755580e142447cea13f946d485a342c269853'
 PATH_ID = 10623
+SITE_LOCALES = Path.home() / 'Desktop/SiteForMods/lib/language-data/site-locales.ts'
 TOKENS = re.compile(r'<[^<>\n]*>|\{[^{}\n]*\}|\[[^\[\]\n]*\]')
 TAGS = re.compile(r'<[^<>\n]*>|\[[^\[\]\n]*\]')
 PREFIX = re.compile(r'^([A-Za-z][A-Za-z0-9_ .-]{0,40}:\s*)')
@@ -28,6 +29,20 @@ def unique_object(pairs):
             raise ValueError(f'duplicate JSON key: {key}')
         result[key] = value
     return result
+
+
+def site_locales():
+    text = SITE_LOCALES.read_text(encoding='utf-8')
+    match = re.search(r'export const SITE_LOCALE_CODES = \[([\s\S]*?)\] as const;', text)
+    if not match:
+        raise ValueError('canonical site locale catalog has an unsupported format')
+    body = match.group(1)
+    if re.sub(r'"[A-Za-z0-9-]+"\s*,|\s+', '', body):
+        raise ValueError('canonical site locale catalog contains unexpected syntax')
+    values = re.findall(r'"([A-Za-z0-9-]+)"', body)
+    if len(values) != len(set(values)) or 'en' not in values:
+        raise ValueError('canonical site locale catalog is invalid')
+    return frozenset(values) - {'en'}
 
 
 def read_u32(data, pos):
@@ -90,14 +105,14 @@ def encode(original, keys, values, extras):
     return bytes(out)
 
 
-def read_locale(path, keys, values):
+def read_locale(path, keys, values, source_hash=OBJECT_HASH):
     doc = json.loads(Path(path).read_text(encoding='utf-8'), object_pairs_hook=unique_object)
     if not isinstance(doc, dict) or set(doc) != {'schema', 'locale', 'sourceObjectSha256', 'lines'}:
         raise ValueError('locale file must contain exactly schema, locale, sourceObjectSha256, lines')
-    if doc['schema'] != 1 or doc['sourceObjectSha256'] != OBJECT_HASH:
+    if type(doc['schema']) is not int or doc['schema'] != 1 or doc['sourceObjectSha256'] != source_hash:
         raise ValueError('unsupported schema or source fingerprint')
-    if not isinstance(doc['locale'], str) or not re.fullmatch(r'[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*', doc['locale']) or doc['locale'] == 'en':
-        raise ValueError('locale must be a non-English language code')
+    if not isinstance(doc['locale'], str) or doc['locale'] not in site_locales():
+        raise ValueError('locale must be a supported non-English site language code')
     lines = doc['lines']
     if not isinstance(lines, dict) or not lines:
         raise ValueError('lines must be a non-empty object')
