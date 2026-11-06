@@ -10,6 +10,8 @@ Current speaker-display finding: a test-only synthetic mapping executed in an in
 
 The presenter control-flow inspection now identifies inline and last-line fallback paths that the two-call synthetic speaker map does not cover. The pinned builds have identical inspected instructions; see `localization/evidence/speaker-presentation-flow-20261107.md`. Treat the current synthetic map as insufficient for a general player build, even though the known serialized line presenters have separate name fields.
 
+A bounded synthetic code probe now replaces the three `NEW` progress-field assignments in separate macOS and Windows assemblies while comparing every existing method body and preserving both menus' progress format strings. See `localization/evidence/slot-code-synthetic-20261107.md`. This is not integrated into the player builder or evidence of final display, save behavior, or actual Russian wording.
+
 Managed text-sink discovery now scans all pinned root managed DLLs and the source-pinned TMP dropdown configurations in both builds. Unity's built-in text defaults are retained as needs-review; static scope and exact findings are in `localization/evidence/managed-text-sinks-20261107.md`.
 
 A standalone Yarn-only preservation check now compares the complete source object inventory and exact authorized target values in synthetic macOS and Windows assets, including byte-identical compiled program objects. Combined UI/Yarn changes and other source families are not yet covered; the complete preserve-exact gate remains open. See `localization/evidence/yarn-preservation-check-20261107.md`.
