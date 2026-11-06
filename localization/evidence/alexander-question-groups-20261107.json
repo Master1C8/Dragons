@@ -1,0 +1,614 @@
+{
+  "schema": 1,
+  "macosProgramSha256": "a67bbfc37dca0b29b1be740e36b570e9d524a46ef2fdf5574e0f58278c0ff1e6",
+  "windowsProgramSha256": "cbaaba712e0cc699d0cdf98f4b8b86060c666d6196fa91cd0a9d9a237c104466",
+  "nodeSha256": "5b7ca45c949d907f6cfa9471d6b79ccb8ee07dca83cf008509cbfb755b606ef2",
+  "endNodeSha256": {
+    "macos": "5a35cc61fd82f304e4a6e8d02590209bbf9e2519d9442aa1c268a0a3bdb21f0d",
+    "windows": "5a35cc61fd82f304e4a6e8d02590209bbf9e2519d9442aa1c268a0a3bdb21f0d"
+  },
+  "sourceLineCount": 77,
+  "groups": [
+    {
+      "id": "teaching",
+      "questionId": "line:fc7aaaa0",
+      "questionSourceSha256": "9da08a79c3f86ee01d511f8399a000bf969b10425e8e1c039b99b306e970afd5",
+      "optionInstructionIndex": 3,
+      "destination": 34,
+      "bodyEndExclusive": 69,
+      "onceVariable": "$Yarn.Internal.Once.line:fc7aaaa0",
+      "bodyLines": [
+        {
+          "id": "line:19f36dc0",
+          "instructionIndex": 40,
+          "kind": "line",
+          "sourceSha256": "a04d5511812a415bbd4c959f5aa24ba6f212fe6c961665bfa71bc1837de9fd83"
+        },
+        {
+          "id": "line:8fc36ab7",
+          "instructionIndex": 41,
+          "kind": "line",
+          "sourceSha256": "6861f7c274e3de2c4306ad6490a51b571d12118c8c840acaed7f81c25d70993b"
+        },
+        {
+          "id": "line:3592632e",
+          "instructionIndex": 44,
+          "kind": "line",
+          "sourceSha256": "8743d170a315e6680680477a22204179eecacbf6abfc4ecc46caa46358eaed88"
+        },
+        {
+          "id": "line:a3a26459",
+          "instructionIndex": 45,
+          "kind": "line",
+          "sourceSha256": "7aebce70febcfb8cc70dc522457fa19675bf58a8a5f4834e7d6a2ac1be8658e6"
+        },
+        {
+          "id": "line:003700c7",
+          "instructionIndex": 46,
+          "kind": "option",
+          "sourceSha256": "0ad864ff0c0b3f2113ca762b45ae8d4b256c0abda58b95865304d06638183095"
+        },
+        {
+          "id": "line:ba66095e",
+          "instructionIndex": 47,
+          "kind": "option",
+          "sourceSha256": "24244e96851180cafb2602231d4f6fc73a8d5d065a1c401f722217000704ecb4"
+        },
+        {
+          "id": "line:960707b0",
+          "instructionIndex": 53,
+          "kind": "line",
+          "sourceSha256": "f58328ac8301872fd771b50ba88df7d07ba44e16619fabab51f610c2a9639455"
+        },
+        {
+          "id": "line:2c560e29",
+          "instructionIndex": 54,
+          "kind": "line",
+          "sourceSha256": "771e997edf959694468e1f190b434273e0855bb7e8919e246ba3678767aa3026"
+        },
+        {
+          "id": "line:2b7bb6ce",
+          "instructionIndex": 57,
+          "kind": "line",
+          "sourceSha256": "9986ef8860d34d9e4ef8b09e4ad01b33ecc84388feb3b6e74140772ba65287d1"
+        },
+        {
+          "id": "line:bd4bb1b9",
+          "instructionIndex": 60,
+          "kind": "line",
+          "sourceSha256": "e947bbc260ec1dadbf2b7e34c71f556f7f1572737620267a1283523a9d81b096"
+        }
+      ],
+      "commands": [
+        {
+          "instructionIndex": 39,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 43,
+          "text": "MakeFace {0} null"
+        },
+        {
+          "instructionIndex": 59,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 62,
+          "text": "MakeFace {0} null"
+        }
+      ]
+    },
+    {
+      "id": "purple",
+      "questionId": "line:daa040eb",
+      "questionSourceSha256": "337d9f85511815eb541e18168f5ee9cafbd7494d65b31049db3f94204ac89067",
+      "optionInstructionIndex": 7,
+      "destination": 69,
+      "bodyEndExclusive": 112,
+      "onceVariable": "$Yarn.Internal.Once.line:daa040eb",
+      "bodyLines": [
+        {
+          "id": "line:4c90479c",
+          "instructionIndex": 75,
+          "kind": "line",
+          "sourceSha256": "818a4fe04a76ce1906a646fe12aabfc4cae4ec7a7a2f3213ae8500eb2e837a0e"
+        },
+        {
+          "id": "line:f6c14e05",
+          "instructionIndex": 76,
+          "kind": "option",
+          "sourceSha256": "54a1b0b8e5f6fa3275546c1869b86830c10ee6fa9dccd1046db52a0f717b1d90"
+        },
+        {
+          "id": "line:c3642dec",
+          "instructionIndex": 77,
+          "kind": "option",
+          "sourceSha256": "046427d028c69e4b9b3074d74296de70869334020a974051668ce3fea773b88d"
+        },
+        {
+          "id": "line:60f14972",
+          "instructionIndex": 85,
+          "kind": "line",
+          "sourceSha256": "b849ed1e855cd6f5ddca201f5c643d899dd6da62abd369e0d7fdb847541ae527"
+        },
+        {
+          "id": "line:55542a9b",
+          "instructionIndex": 90,
+          "kind": "line",
+          "sourceSha256": "bbb1e1b8cec716b3bd8ab83f6a04dbc826bd25191b8b81fa0915f2705c039dd9"
+        },
+        {
+          "id": "line:ef052302",
+          "instructionIndex": 92,
+          "kind": "line",
+          "sourceSha256": "337d9f85511815eb541e18168f5ee9cafbd7494d65b31049db3f94204ac89067"
+        },
+        {
+          "id": "line:79352475",
+          "instructionIndex": 93,
+          "kind": "option",
+          "sourceSha256": "54a1b0b8e5f6fa3275546c1869b86830c10ee6fa9dccd1046db52a0f717b1d90"
+        },
+        {
+          "id": "line:9b915bf2",
+          "instructionIndex": 94,
+          "kind": "option",
+          "sourceSha256": "046427d028c69e4b9b3074d74296de70869334020a974051668ce3fea773b88d"
+        },
+        {
+          "id": "line:e8289be5",
+          "instructionIndex": 100,
+          "kind": "line",
+          "sourceSha256": "525ba3c4a2511183b0c1d86e8a55cdd67c0855aedf81fc6f870f41e2eb1b9e05"
+        },
+        {
+          "id": "line:7e189c92",
+          "instructionIndex": 101,
+          "kind": "line",
+          "sourceSha256": "ab5df625bc76dbd4e163bed2dd888df828f90159bb93556525c31821b6541d46"
+        },
+        {
+          "id": "line:0da15c85",
+          "instructionIndex": 104,
+          "kind": "line",
+          "sourceSha256": "3885f7429496059dfd75e702545a8a0d3d3972e86bb5fd62d93965f4110e42ed"
+        },
+        {
+          "id": "line:b7f0551c",
+          "instructionIndex": 105,
+          "kind": "line",
+          "sourceSha256": "ab5df625bc76dbd4e163bed2dd888df828f90159bb93556525c31821b6541d46"
+        }
+      ],
+      "commands": [
+        {
+          "instructionIndex": 74,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 84,
+          "text": "MakeFace {0} null"
+        },
+        {
+          "instructionIndex": 89,
+          "text": "MakeFace {0} null"
+        }
+      ]
+    },
+    {
+      "id": "size",
+      "questionId": "line:21c0526b",
+      "questionSourceSha256": "70523c9a506d967650438ff5a7c6ec40c6b27751b58262985b32715fbed7bb5b",
+      "optionInstructionIndex": 11,
+      "destination": 112,
+      "bodyEndExclusive": 140,
+      "onceVariable": "$Yarn.Internal.Once.line:21c0526b",
+      "bodyLines": [
+        {
+          "id": "line:825536f5",
+          "instructionIndex": 116,
+          "kind": "line",
+          "sourceSha256": "8133434681c5d0c2049426f5153df4571cabd2d05b4f005f050d24bf392e8b3b"
+        },
+        {
+          "id": "line:14653182",
+          "instructionIndex": 117,
+          "kind": "line",
+          "sourceSha256": "a3e6072e41a2ff07ceb8743fb284fedcb99b2ca155ceaf52aea25fc8d9a451f1"
+        },
+        {
+          "id": "line:ae34381b",
+          "instructionIndex": 118,
+          "kind": "line",
+          "sourceSha256": "b1ca0efdea534b716614e7f75b5a59bb6998b55b9e3db81352e067161cc19299"
+        },
+        {
+          "id": "line:38043f6c",
+          "instructionIndex": 119,
+          "kind": "option",
+          "sourceSha256": "186edb7d24ea94593af665d760aa1682d09b9bbe3ab3a5ba5e2b98c796f15e67"
+        },
+        {
+          "id": "line:a91980fc",
+          "instructionIndex": 120,
+          "kind": "option",
+          "sourceSha256": "1a6be1fd03e5ae6fc538d4e5e29f9c27f1ed5fb26ea1b39fbeb8eecf0c1cf0c9"
+        },
+        {
+          "id": "line:3f29878b",
+          "instructionIndex": 131,
+          "kind": "line",
+          "sourceSha256": "08063aff652b7108cd8c20806a56504b0020eff815573e665b2b0e70bb1cfd9f"
+        },
+        {
+          "id": "line:548dc375",
+          "instructionIndex": 134,
+          "kind": "line",
+          "sourceSha256": "4f9390dd2809082750622da4cac032ebd02a74c61330e46617952c644cfc678c"
+        }
+      ],
+      "commands": [
+        {
+          "instructionIndex": 130,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 133,
+          "text": "MakeFace {0} null"
+        }
+      ]
+    },
+    {
+      "id": "number-seven-taste",
+      "questionId": "line:c2bdc402",
+      "questionSourceSha256": "3fbd83d375d6fa051d6ca347b08387d78712ea8db06cded6592aae993508165e",
+      "optionInstructionIndex": 15,
+      "destination": 140,
+      "bodyEndExclusive": 182,
+      "onceVariable": "$Yarn.Internal.Once.line:c2bdc402",
+      "bodyLines": [
+        {
+          "id": "line:78eccd9b",
+          "instructionIndex": 144,
+          "kind": "line",
+          "sourceSha256": "b38834ce4594ad5cba7609373462f6ae3ef6c97837f6765f6e81d808d571af09"
+        },
+        {
+          "id": "line:eedccaec",
+          "instructionIndex": 145,
+          "kind": "option",
+          "sourceSha256": "5f6bb166b079c336c9f8b0b022ebadbf667229ad246648116456a6d01f802dc9"
+        },
+        {
+          "id": "line:db79a905",
+          "instructionIndex": 146,
+          "kind": "option",
+          "sourceSha256": "aac4af2b645cf88ef93defa1154d975df32e03f4c1e20f0809981688aff2d285"
+        },
+        {
+          "id": "line:4d49ae72",
+          "instructionIndex": 154,
+          "kind": "line",
+          "sourceSha256": "0ee250681eda1a08a66b659bb38196267e32aceb63b187dae8fbcc952f64e959"
+        },
+        {
+          "id": "line:6128a09c",
+          "instructionIndex": 159,
+          "kind": "line",
+          "sourceSha256": "b83a1658171971d7eab8d5ff427e321e1a6d67017d527885b29e50ac88e11e15"
+        },
+        {
+          "id": "line:f718a7eb",
+          "instructionIndex": 160,
+          "kind": "option",
+          "sourceSha256": "a87e0094e62cb4298b298295b44b7f80f126ceef634942a549335706af998af5"
+        },
+        {
+          "id": "line:f0351f0c",
+          "instructionIndex": 161,
+          "kind": "option",
+          "sourceSha256": "5f6bb166b079c336c9f8b0b022ebadbf667229ad246648116456a6d01f802dc9"
+        },
+        {
+          "id": "line:6605187b",
+          "instructionIndex": 167,
+          "kind": "line",
+          "sourceSha256": "e154199e27c1d4a3326107f32e45076e16e6283640d963d496e7006ae60928fb"
+        },
+        {
+          "id": "line:15bcd86c",
+          "instructionIndex": 172,
+          "kind": "line",
+          "sourceSha256": "0ee250681eda1a08a66b659bb38196267e32aceb63b187dae8fbcc952f64e959"
+        }
+      ],
+      "commands": [
+        {
+          "instructionIndex": 153,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 156,
+          "text": "MakeFace {0} null"
+        },
+        {
+          "instructionIndex": 171,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 174,
+          "text": "MakeFace {0} null"
+        }
+      ]
+    },
+    {
+      "id": "impression",
+      "questionId": "line:838cdf1b",
+      "questionSourceSha256": "767b6d6bdc5b806a5b39bfabe68711fdc37fc74e5e498516c4c517f16d187cba",
+      "optionInstructionIndex": 19,
+      "destination": 182,
+      "bodyEndExclusive": 225,
+      "onceVariable": "$Yarn.Internal.Once.line:838cdf1b",
+      "bodyLines": [
+        {
+          "id": "line:39ddd682",
+          "instructionIndex": 186,
+          "kind": "line",
+          "sourceSha256": "0c137b35abd3f637b93dfdccee5345f954c0d8d9fe7ce0a039cddc0bf02040ee"
+        },
+        {
+          "id": "line:afedd1f5",
+          "instructionIndex": 189,
+          "kind": "line",
+          "sourceSha256": "d4efe0db738b52b502aa0b75332f7f74a152bef97be862eeb9876b19d186cd9b"
+        },
+        {
+          "id": "line:0c78b56b",
+          "instructionIndex": 190,
+          "kind": "option",
+          "sourceSha256": "55c3e5daec20a64dcc70fbed694d58b7b529e567f03b0c43f0d6ac23630f7c4e"
+        },
+        {
+          "id": "line:6b6dd8bc",
+          "instructionIndex": 191,
+          "kind": "option",
+          "sourceSha256": "2c291db1ddbe2b9d53e53a0b9b3d62bfcf86adb42e5bcaf1373eeccdc689c2ee"
+        },
+        {
+          "id": "line:9a48b21c",
+          "instructionIndex": 199,
+          "kind": "line",
+          "sourceSha256": "df2bc10ba434d57efb2c7891a9dc0a76b8a7cf0fdebc8f6a0648ab17276f086f"
+        },
+        {
+          "id": "line:2019bb85",
+          "instructionIndex": 200,
+          "kind": "option",
+          "sourceSha256": "019d328b739d99e6a7fc99cc04e3ce34048141454e5d09ccbaab6d3eb90fe469"
+        },
+        {
+          "id": "line:27340362",
+          "instructionIndex": 201,
+          "kind": "option",
+          "sourceSha256": "c2667b3b3dc54c1a7cd85603a481f2e573c6e3511f113462bf53c9fc21f4bb58"
+        },
+        {
+          "id": "line:b629bcf2",
+          "instructionIndex": 207,
+          "kind": "line",
+          "sourceSha256": "4f9b4a3cd9b0261a3b78cd6c4f9b3bcff9ce3ce95e24eb08e6a91ec59a399ac9"
+        },
+        {
+          "id": "line:b1040415",
+          "instructionIndex": 210,
+          "kind": "line",
+          "sourceSha256": "ebb1884c75b23e27f1845f1f76959d825bbd4ddec60133a550a88762c620070f"
+        },
+        {
+          "id": "line:fd5ddfcb",
+          "instructionIndex": 214,
+          "kind": "line",
+          "sourceSha256": "3b2c32e616b24822efe462419c315e03dd6e26fef2860e4f02e8df7895a0c7d7"
+        },
+        {
+          "id": "line:470cd652",
+          "instructionIndex": 216,
+          "kind": "line",
+          "sourceSha256": "7e6a62b6d8659273a5a5328a3d8bb18d1862362e63551050920e72524393a34e"
+        },
+        {
+          "id": "line:d13cd125",
+          "instructionIndex": 219,
+          "kind": "line",
+          "sourceSha256": "c48241cd21bb0d91d0d347563922ebd0e65cbfd21fd61621e04741e4c21fd67a"
+        }
+      ],
+      "commands": [
+        {
+          "instructionIndex": 188,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 198,
+          "text": "MakeFace {0} null"
+        },
+        {
+          "instructionIndex": 218,
+          "text": "MakeFace {0} Happy"
+        }
+      ]
+    },
+    {
+      "id": "happiness",
+      "questionId": "line:72a9b5bb",
+      "questionSourceSha256": "8ed9fdad93b0f6908d915cebf71056058e4e7206826c82016d4e17aa9b74c694",
+      "optionInstructionIndex": 23,
+      "destination": 225,
+      "bodyEndExclusive": 256,
+      "onceVariable": "$Yarn.Internal.Once.line:72a9b5bb",
+      "bodyLines": [
+        {
+          "id": "line:e499b2cc",
+          "instructionIndex": 229,
+          "kind": "line",
+          "sourceSha256": "5a4d28241178ab01958421b4962d7db0f19bd6a15c8a84631233062f6dab430b"
+        },
+        {
+          "id": "line:5ec8bb55",
+          "instructionIndex": 230,
+          "kind": "line",
+          "sourceSha256": "216bb6e650af4cfce3e9a7ab376b8b4fb60fae6120444a2756da25ef2750943c"
+        },
+        {
+          "id": "line:c8f8bc22",
+          "instructionIndex": 231,
+          "kind": "option",
+          "sourceSha256": "91ff270d6aaba6a4a180ec33c99aab115b451f8a7a277429cbc4317c4bf09645"
+        },
+        {
+          "id": "line:2a5cc3a5",
+          "instructionIndex": 232,
+          "kind": "option",
+          "sourceSha256": "f06f453ab3d6251fe2083ed75511f8165a7960749a2af6203ca6f9ecb5d4deba"
+        },
+        {
+          "id": "line:59e503b2",
+          "instructionIndex": 238,
+          "kind": "line",
+          "sourceSha256": "8c2bdfa25fbde4edf2293b986ad1cf872ae15d53544ca797670582714fd1a888"
+        },
+        {
+          "id": "line:cfd504c5",
+          "instructionIndex": 239,
+          "kind": "line",
+          "sourceSha256": "61639ef55caefda454aa3919c5e623c454614e1d96632e0ed10a92f3ebded24f"
+        },
+        {
+          "id": "line:bc6cc4d2",
+          "instructionIndex": 242,
+          "kind": "line",
+          "sourceSha256": "4f66abc45de7ff5387815e16e0346d9d7606a87cdb30a2d6a653028d6f4e5cce"
+        },
+        {
+          "id": "line:063dcd4b",
+          "instructionIndex": 243,
+          "kind": "line",
+          "sourceSha256": "22c1ab2eb72e5b447a87a57d6902e11ee5e6124bc885ce92bfd8694a8526a157"
+        },
+        {
+          "id": "line:900dca3c",
+          "instructionIndex": 244,
+          "kind": "line",
+          "sourceSha256": "61639ef55caefda454aa3919c5e623c454614e1d96632e0ed10a92f3ebded24f"
+        },
+        {
+          "id": "line:3398aea2",
+          "instructionIndex": 248,
+          "kind": "line",
+          "sourceSha256": "439d8da114ab91629b5b8c97b51958ca070e7cb68ac2f9a3d61a8a7dcb065e7b"
+        }
+      ],
+      "commands": [
+        {
+          "instructionIndex": 247,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 250,
+          "text": "MakeFace {0} null"
+        }
+      ]
+    },
+    {
+      "id": "family-crest",
+      "questionId": "line:a5a8a9d5",
+      "questionSourceSha256": "e5263ec7185a516680b826d14f36422220eb503da964e50f76676e59ca70c633",
+      "optionInstructionIndex": 27,
+      "destination": 256,
+      "bodyEndExclusive": 290,
+      "onceVariable": "$Yarn.Internal.Once.line:a5a8a9d5",
+      "bodyLines": [
+        {
+          "id": "line:1ff9a04c",
+          "instructionIndex": 260,
+          "kind": "line",
+          "sourceSha256": "33d3f6495bad4d3c0f7fd47a36d86f338b5055f6675c522249503160dbefb569"
+        },
+        {
+          "id": "line:89c9a73b",
+          "instructionIndex": 263,
+          "kind": "line",
+          "sourceSha256": "91d69b4f1f9739cbeb5a6ede374d102bd5ac862aefc256c7631262653b96d236"
+        },
+        {
+          "id": "line:18d418ab",
+          "instructionIndex": 266,
+          "kind": "line",
+          "sourceSha256": "dd0f2ff5e303f61ad0ad30b6ce594a4a17bab392f48a7bc50bc9947fb9a659f0"
+        },
+        {
+          "id": "line:8ee41fdc",
+          "instructionIndex": 267,
+          "kind": "line",
+          "sourceSha256": "7271f9e9b21e54011143daf04736c92a27dc7d9dba4cbd1ff40d74f15ff1a94b"
+        },
+        {
+          "id": "line:e90fee8e",
+          "instructionIndex": 268,
+          "kind": "option",
+          "sourceSha256": "b356a126e4318643dbf54db33635cfdeb6f432960fe14752ab6caeec04b5dbfe"
+        },
+        {
+          "id": "line:535ee717",
+          "instructionIndex": 269,
+          "kind": "option",
+          "sourceSha256": "0006b6926947b91ba80222f8d1257b0dcf9b90d49eef4150483002b21e146886"
+        },
+        {
+          "id": "line:7f3fe9f9",
+          "instructionIndex": 275,
+          "kind": "line",
+          "sourceSha256": "b6d573339ec0b66b45bab199b7ac4615b9301ab8aa1a0dcbf003e0fdd8864728"
+        },
+        {
+          "id": "line:c56ee060",
+          "instructionIndex": 278,
+          "kind": "line",
+          "sourceSha256": "9909f3ea3dffb93e2901c9deb2173353f81f98c9e978d01f58ea90b5b200aba8"
+        },
+        {
+          "id": "line:f0cb8389",
+          "instructionIndex": 283,
+          "kind": "line",
+          "sourceSha256": "e5bccc3a053371ce69a0b0915ccd48dd16ab942e0cba257a802efa46c2e11647"
+        }
+      ],
+      "commands": [
+        {
+          "instructionIndex": 262,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 265,
+          "text": "MakeFace {0} null"
+        },
+        {
+          "instructionIndex": 277,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 280,
+          "text": "MakeFace {0} null"
+        }
+      ]
+    }
+  ],
+  "sharedExit": {
+    "optionId": "line:66fb84fe",
+    "sourceSha256": "bc116106c2929c42a6f24fcc613c32ffb7a22bf9b33d884d75e1982db2fa3595",
+    "conditionVariable": "$has_asked_question",
+    "destination": 290,
+    "targetNode": "Alexander_3_required_end"
+  },
+  "limitations": "Static bytecode and text bindings only. Actual reachability, all callers, variable persistence, dynamic command execution, visual typography and locale adaptation require separate review."
+}

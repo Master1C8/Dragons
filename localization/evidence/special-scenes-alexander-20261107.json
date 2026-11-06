@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "status": "incomplete",
+  "sourceGroupInventory": "localization/evidence/alexander-question-groups-20261107.json",
+  "sourceGroupInventorySha256": "fd7f9cb5fd3e5e654ca07e4a84ad17aee2794b042765c6ae54c6c36a9bd824fc",
+  "discoveryCoverage": "Two candidate special cases within Alexander_questions only. The rest of this node and all other resource families remain under review.",
+  "cases": [
+    {
+      "id": "alexander-number-seven-taste",
+      "title": "Number seven and yellow lime",
+      "sourceStatus": "needs-review",
+      "observedSourceBehavior": "The question asks what a number tastes like; the answer uses a color and a fruit, followed by choices comparing it with a different citrus and an exchange about authority.",
+      "sourceLineIds": [
+        "line:c2bdc402",
+        "line:78eccd9b",
+        "line:eedccaec",
+        "line:db79a905",
+        "line:4d49ae72",
+        "line:6128a09c",
+        "line:f718a7eb",
+        "line:f0351f0c",
+        "line:6605187b",
+        "line:15bcd86c"
+      ],
+      "sourceGroupSelector": "number-seven-taste",
+      "node": "Alexander_questions",
+      "instructionRange": [
+        140,
+        181
+      ],
+      "controlVariable": "$Yarn.Internal.Once.line:c2bdc402",
+      "controlCommands": [
+        {
+          "instructionIndex": 153,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 156,
+          "text": "MakeFace {0} null"
+        },
+        {
+          "instructionIndex": 171,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 174,
+          "text": "MakeFace {0} null"
+        }
+      ],
+      "invariant": "Preserve the number, unexpected taste/color relationship, distinction between the two citrus fruits, choice identities, and the self-aware argument; do not invent a correct answer.",
+      "adaptationRoute": "Review the complete group against the approved glossary; decide actual Russian wording and display behavior before ordinary translation.",
+      "nonTextDependencies": "Character/scene visuals and command effects are not fully traced; texture text is excluded by owner decision.",
+      "acceptanceScenarios": [
+        "Exercise both initial replies and both nested replies; preserve each branch destination and the number.",
+        "Reject an edit that changes 7 or merges the two citrus fruits."
+      ],
+      "statuses": {
+        "sourceAnalysis": "needs-review",
+        "editorial": "not-started",
+        "adapter": "needs-review",
+        "structural": "partial",
+        "runtimeVisual": "not-run"
+      }
+    },
+    {
+      "id": "alexander-family-crest",
+      "title": "Crest explanation with shrinking text",
+      "sourceStatus": "needs-review",
+      "observedSourceBehavior": "An explanation about the dragon family crest becomes progressively smaller and ends with an embedded pop-culture-style quotation; the player may ask for repetition.",
+      "sourceLineIds": [
+        "line:a5a8a9d5",
+        "line:1ff9a04c",
+        "line:89c9a73b",
+        "line:18d418ab",
+        "line:8ee41fdc",
+        "line:e90fee8e",
+        "line:535ee717",
+        "line:7f3fe9f9",
+        "line:c56ee060",
+        "line:f0cb8389"
+      ],
+      "sourceGroupSelector": "family-crest",
+      "node": "Alexander_questions",
+      "instructionRange": [
+        256,
+        289
+      ],
+      "controlVariable": "$Yarn.Internal.Once.line:a5a8a9d5",
+      "controlCommands": [
+        {
+          "instructionIndex": 262,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 265,
+          "text": "MakeFace {0} null"
+        },
+        {
+          "instructionIndex": 277,
+          "text": "MakeFace {0} Happy"
+        },
+        {
+          "instructionIndex": 280,
+          "text": "MakeFace {0} null"
+        }
+      ],
+      "invariant": "Preserve the ordered size tags, progressive visual effect, crest distinction and each response branch; assess the quotation and legibility in Russian.",
+      "adaptationRoute": "Review the complete group against the approved glossary; decide actual Russian wording and display behavior before ordinary translation.",
+      "nonTextDependencies": "Character/scene visuals and command effects are not fully traced; texture text is excluded by owner decision.",
+      "acceptanceScenarios": [
+        "Render the complete line in-game and check all seven successive size changes and punctuation.",
+        "Exercise both replies and reject changed or reordered size tags."
+      ],
+      "statuses": {
+        "sourceAnalysis": "needs-review",
+        "editorial": "not-started",
+        "adapter": "needs-review",
+        "structural": "partial",
+        "runtimeVisual": "not-run"
+      }
+    }
+  ]
+}
