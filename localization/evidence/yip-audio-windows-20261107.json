@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "platform": "windows",
+  "buildVersion": "9/9/2026_ee944596",
+  "sourceHashes": {
+    "globalgamemanagers": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+    "globalgamemanagers.assets": "910358d16b824bfd4b8398fea8c0295b5660471bb13a6708655096097bb0f018",
+    "level1": "203725518656d04df3341248a7d24bc27551ebd6c03e582977869f0acfc5a459",
+    "sharedassets1.assets": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+    "sharedassets1.resource": "69c42882282a0f9ed62579ca232970fb5c2834b990e09b99a65aa37c1d11f871"
+  },
+  "sceneComponentId": 3865,
+  "sceneComponentSha256": "a4492966aa46edb12c1266ca488386045c0057950a5656d1f5c081d5bdda014b",
+  "yarnSfxReference": {
+    "fileId": 3,
+    "pathId": 821,
+    "asset": "sharedassets1.assets"
+  },
+  "clip": {
+    "name": "yip",
+    "type": "AudioClip",
+    "objectSha256": "878d43a3bc3b3a37301405984de7961b09261cde25dff88ef94f421804964475",
+    "resource": "sharedassets1.resource",
+    "offset": 1348544,
+    "length": 7648,
+    "encodedBytesSha256": "f0c374c547a26c57b0920d1a3527196b637c2a65cd4158564cbb7821322c8514"
+  },
+  "limitations": "Serialized level1 lookup and pinned audio bytes only. No sound decoding, playback, other scenes, dynamic replacement, reachability or translated-audio decision is established."
+}

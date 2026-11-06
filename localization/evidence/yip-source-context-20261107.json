@@ -1,0 +1,3405 @@
+{
+  "schema": 1,
+  "search": "case-insensitive yip substring in both original Yarn tables and RunCommand values",
+  "programSha256": {
+    "macos": "a67bbfc37dca0b29b1be740e36b570e9d524a46ef2fdf5574e0f58278c0ff1e6",
+    "windows": "cbaaba712e0cc699d0cdf98f4b8b86060c666d6196fa91cd0a9d9a237c104466"
+  },
+  "matches": {
+    "line:5efde4e2": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:c8cde395": {
+      "macos": [
+        {
+          "start": 7,
+          "end": 10,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 7,
+          "end": 10,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:5544e245": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:e662501c": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:5e181cf4": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:5935a413": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:cf05a364": {
+      "macos": [
+        {
+          "start": 48,
+          "end": 51,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 48,
+          "end": 51,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:a8ee5236": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        },
+        {
+          "start": 196,
+          "end": 199,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        },
+        {
+          "start": 196,
+          "end": 199,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:b12a3f31": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:c3e1f198": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:266836f8": {
+      "macos": [
+        {
+          "start": 32,
+          "end": 35,
+          "source": "yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 31,
+          "end": 34,
+          "source": "yip"
+        }
+      ]
+    },
+    "line:52bf5ede": {
+      "macos": [
+        {
+          "start": 17,
+          "end": 20,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 17,
+          "end": 20,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:14d2c62f": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:3d516ddb": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:9ec40945": {
+      "macos": [
+        {
+          "start": 7,
+          "end": 10,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 7,
+          "end": 10,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:296ff3f4": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:3e870ad0": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:f1c14f75": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:4b9046ec": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ]
+    },
+    "line:9444cdba": {
+      "macos": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "end": 3,
+          "source": "Yip"
+        }
+      ]
+    }
+  },
+  "commands": {
+    "macos": [
+      {
+        "node": "Alexander_1_Outro",
+        "instructionIndex": 12,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Alexander_3_required",
+        "instructionIndex": 36,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Alexander_3_Outro",
+        "instructionIndex": 19,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Alexander_4_intro",
+        "instructionIndex": 65,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Alexander_4_intro",
+        "instructionIndex": 75,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Alexander_4_intro",
+        "instructionIndex": 87,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Alexander_4_intro",
+        "instructionIndex": 101,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Conrad_Outro_3",
+        "instructionIndex": 87,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "RyanMuddy_Intro",
+        "instructionIndex": 26,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Ryan_1_intro",
+        "instructionIndex": 53,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Ryan_1_Outro",
+        "instructionIndex": 30,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Ryan_2_intro",
+        "instructionIndex": 17,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Ryan_grab_basket",
+        "instructionIndex": 70,
+        "command": "PlaySFX \"yip\""
+      }
+    ],
+    "windows": [
+      {
+        "node": "Alexander_1_Outro",
+        "instructionIndex": 12,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Alexander_3_required",
+        "instructionIndex": 36,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Alexander_3_Outro",
+        "instructionIndex": 19,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Alexander_4_intro",
+        "instructionIndex": 65,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Alexander_4_intro",
+        "instructionIndex": 75,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Alexander_4_intro",
+        "instructionIndex": 87,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Alexander_4_intro",
+        "instructionIndex": 101,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Conrad_Outro_3",
+        "instructionIndex": 87,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "RyanMuddy_Intro",
+        "instructionIndex": 26,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Ryan_1_intro",
+        "instructionIndex": 53,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Ryan_1_Outro",
+        "instructionIndex": 30,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Ryan_2_intro",
+        "instructionIndex": 17,
+        "command": "PlaySFX \"yip\""
+      },
+      {
+        "node": "Ryan_grab_basket",
+        "instructionIndex": 70,
+        "command": "PlaySFX \"yip\""
+      }
+    ]
+  },
+  "nodes": {
+    "Alexander_1_Outro": {
+      "macos": {
+        "nodeSha256": "ba0d8884bb4d3b58a00393143698f926df5b78bf7776963cdd738c9a544efd3d",
+        "lines": [
+          {
+            "id": "line:fd68807c",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "d202075090a8960b4daf47e3f424e2c3f039c26398f53eb4d06ae3fe4dc738a7"
+          },
+          {
+            "id": "line:5efde4e2",
+            "instructionIndex": 5,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:729cea0c",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "b6069e62e167364f635162ff101b8cbac0679e5952c5107eb5949dc0c59c3d07"
+          },
+          {
+            "id": "line:c8cde395",
+            "instructionIndex": 15,
+            "kind": "line",
+            "sourceSha256": "981447d1952fe85006ab185ec57fd87ebd6de222e69a2f5c19a2307fb040f0e5"
+          },
+          {
+            "id": "line:e4aced7b",
+            "instructionIndex": 20,
+            "kind": "line",
+            "sourceSha256": "5d7279822bcee7ddfb406d7e843d20c73f7ac210aec45a322c03f5d110670368"
+          },
+          {
+            "id": "line:75b152eb",
+            "instructionIndex": 22,
+            "kind": "line",
+            "sourceSha256": "8117291ab8529b4fed28c29b4e0a3181d85dd57ef4ba093caa67fdab4f0b8a5a"
+          },
+          {
+            "id": "line:e381559c",
+            "instructionIndex": 25,
+            "kind": "line",
+            "sourceSha256": "dae0c0aa3ae01c37e88ae528d327401038994d7c9f0ee7080de5e5dc2cacb8c6"
+          }
+        ]
+      },
+      "windows": {
+        "nodeSha256": "ba0d8884bb4d3b58a00393143698f926df5b78bf7776963cdd738c9a544efd3d",
+        "lines": [
+          {
+            "id": "line:fd68807c",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "d202075090a8960b4daf47e3f424e2c3f039c26398f53eb4d06ae3fe4dc738a7"
+          },
+          {
+            "id": "line:5efde4e2",
+            "instructionIndex": 5,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:729cea0c",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "b6069e62e167364f635162ff101b8cbac0679e5952c5107eb5949dc0c59c3d07"
+          },
+          {
+            "id": "line:c8cde395",
+            "instructionIndex": 15,
+            "kind": "line",
+            "sourceSha256": "981447d1952fe85006ab185ec57fd87ebd6de222e69a2f5c19a2307fb040f0e5"
+          },
+          {
+            "id": "line:e4aced7b",
+            "instructionIndex": 20,
+            "kind": "line",
+            "sourceSha256": "5d7279822bcee7ddfb406d7e843d20c73f7ac210aec45a322c03f5d110670368"
+          },
+          {
+            "id": "line:75b152eb",
+            "instructionIndex": 22,
+            "kind": "line",
+            "sourceSha256": "8117291ab8529b4fed28c29b4e0a3181d85dd57ef4ba093caa67fdab4f0b8a5a"
+          },
+          {
+            "id": "line:e381559c",
+            "instructionIndex": 25,
+            "kind": "line",
+            "sourceSha256": "dae0c0aa3ae01c37e88ae528d327401038994d7c9f0ee7080de5e5dc2cacb8c6"
+          }
+        ]
+      }
+    },
+    "Alexander_3_Outro": {
+      "macos": {
+        "nodeSha256": "d71a0093d7ee97b1924f28988dfb417fab062ebcaec1f6a17e94b3cde2156a0e",
+        "lines": [
+          {
+            "id": "line:04c62f9b",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "d96b34ffac75e750abb765552caafe10bbd0377b3c2682a0ecf3fe4ce8475c9a"
+          },
+          {
+            "id": "line:95db900b",
+            "instructionIndex": 5,
+            "kind": "option",
+            "sourceSha256": "6dae153117be9e8af8ad0dc44a5fe153e8afd24da317ceacba6b21efd6aaaaf5"
+          },
+          {
+            "id": "line:e662501c",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:03eb977c",
+            "instructionIndex": 14,
+            "kind": "line",
+            "sourceSha256": "941f66ab23bc1b9b328343d0e88d5fa3540f1d9e6a79f9e7c447f6c6a7c848c7"
+          },
+          {
+            "id": "line:7052576b",
+            "instructionIndex": 22,
+            "kind": "line",
+            "sourceSha256": "4598878b4433374922c56e06b5b6505c0e0cc0b266fe72b5a5219039931f72ad"
+          },
+          {
+            "id": "line:ca035ef2",
+            "instructionIndex": 26,
+            "kind": "line",
+            "sourceSha256": "7ea92f17440d2faea0e7424d3e404fbe8123b6e3e0920bca22095ca883bfa44d"
+          },
+          {
+            "id": "line:5c335985",
+            "instructionIndex": 27,
+            "kind": "option",
+            "sourceSha256": "7bbef8475c6cdff7bda7a6d282334518e5b1f42c73ac8335a58f22ffcde85ac2"
+          },
+          {
+            "id": "line:69963a6c",
+            "instructionIndex": 28,
+            "kind": "option",
+            "sourceSha256": "17d54d35bc089567d194f77c9d152307a6d7aa771d8659479112d56db6138b4c"
+          },
+          {
+            "id": "line:ffa63d1b",
+            "instructionIndex": 36,
+            "kind": "line",
+            "sourceSha256": "762c20b866b7b2635d6a80b622b0bea2826ce4a81897140c250f0fb2bbbd2ee7"
+          },
+          {
+            "id": "line:d3c733f5",
+            "instructionIndex": 43,
+            "kind": "line",
+            "sourceSha256": "762c20b866b7b2635d6a80b622b0bea2826ce4a81897140c250f0fb2bbbd2ee7"
+          }
+        ]
+      },
+      "windows": {
+        "nodeSha256": "d71a0093d7ee97b1924f28988dfb417fab062ebcaec1f6a17e94b3cde2156a0e",
+        "lines": [
+          {
+            "id": "line:04c62f9b",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "d96b34ffac75e750abb765552caafe10bbd0377b3c2682a0ecf3fe4ce8475c9a"
+          },
+          {
+            "id": "line:95db900b",
+            "instructionIndex": 5,
+            "kind": "option",
+            "sourceSha256": "6dae153117be9e8af8ad0dc44a5fe153e8afd24da317ceacba6b21efd6aaaaf5"
+          },
+          {
+            "id": "line:e662501c",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:03eb977c",
+            "instructionIndex": 14,
+            "kind": "line",
+            "sourceSha256": "941f66ab23bc1b9b328343d0e88d5fa3540f1d9e6a79f9e7c447f6c6a7c848c7"
+          },
+          {
+            "id": "line:7052576b",
+            "instructionIndex": 22,
+            "kind": "line",
+            "sourceSha256": "4598878b4433374922c56e06b5b6505c0e0cc0b266fe72b5a5219039931f72ad"
+          },
+          {
+            "id": "line:ca035ef2",
+            "instructionIndex": 26,
+            "kind": "line",
+            "sourceSha256": "7ea92f17440d2faea0e7424d3e404fbe8123b6e3e0920bca22095ca883bfa44d"
+          },
+          {
+            "id": "line:5c335985",
+            "instructionIndex": 27,
+            "kind": "option",
+            "sourceSha256": "7bbef8475c6cdff7bda7a6d282334518e5b1f42c73ac8335a58f22ffcde85ac2"
+          },
+          {
+            "id": "line:69963a6c",
+            "instructionIndex": 28,
+            "kind": "option",
+            "sourceSha256": "17d54d35bc089567d194f77c9d152307a6d7aa771d8659479112d56db6138b4c"
+          },
+          {
+            "id": "line:ffa63d1b",
+            "instructionIndex": 36,
+            "kind": "line",
+            "sourceSha256": "762c20b866b7b2635d6a80b622b0bea2826ce4a81897140c250f0fb2bbbd2ee7"
+          },
+          {
+            "id": "line:d3c733f5",
+            "instructionIndex": 43,
+            "kind": "line",
+            "sourceSha256": "762c20b866b7b2635d6a80b622b0bea2826ce4a81897140c250f0fb2bbbd2ee7"
+          }
+        ]
+      }
+    },
+    "Alexander_3_required": {
+      "macos": {
+        "nodeSha256": "0ae6401ffbc01a0f214de2b9c167138a9012ebabf53da7109775acf90f41d40d",
+        "lines": [
+          {
+            "id": "line:1475f95c",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "a59f7f35644dcdbb6ac7f89dc794d6c89d27627313be3709b9e02839231afe99"
+          },
+          {
+            "id": "line:8245fe2b",
+            "instructionIndex": 5,
+            "kind": "line",
+            "sourceSha256": "10b4110dad07d57618ed79feb4ca81a1108ad65712750dffc409873a670bb0d1"
+          },
+          {
+            "id": "line:67cc394b",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "b8baebdff88a847fe8476a1462a57da965747135235747911a8650d08194739d"
+          },
+          {
+            "id": "line:4bad37a5",
+            "instructionIndex": 7,
+            "kind": "option",
+            "sourceSha256": "a2aff5b173ae96bbcdd271a70539685cbb7eba1b1a435a3beae07ce342713dc7"
+          },
+          {
+            "id": "line:f1fc3e3c",
+            "instructionIndex": 15,
+            "kind": "line",
+            "sourceSha256": "4b29556a255aea9508b00c191a27332bc1d03ef041ae7c362987a9f18300be95"
+          },
+          {
+            "id": "line:dd9d30d2",
+            "instructionIndex": 20,
+            "kind": "line",
+            "sourceSha256": "ababfd6e7703460e0279b6e27147def8a2f903f7e128e12da1c54bdff4e73b04"
+          },
+          {
+            "id": "line:7e08544c",
+            "instructionIndex": 22,
+            "kind": "line",
+            "sourceSha256": "69f278cd5a2eb111fbce6488f0311889da0938d30eb725b593224f25b970a636"
+          },
+          {
+            "id": "line:e838533b",
+            "instructionIndex": 23,
+            "kind": "line",
+            "sourceSha256": "6221337862dcba2c5bb53a4628732f5e0b931314a8cb6d8e0a5efb81ab189d72"
+          },
+          {
+            "id": "line:52695aa2",
+            "instructionIndex": 24,
+            "kind": "option",
+            "sourceSha256": "cecec36c55a564ee373d29cba9903ab01dbccfb55b6a4127526c62b6f8f00816"
+          },
+          {
+            "id": "line:5544e245",
+            "instructionIndex": 25,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:c4595dd5",
+            "instructionIndex": 33,
+            "kind": "line",
+            "sourceSha256": "7dbde0758389bd7bfeb63556a8fac358abb5f1dbb9ca88910edf091278ba110d"
+          },
+          {
+            "id": "line:c374e532",
+            "instructionIndex": 39,
+            "kind": "line",
+            "sourceSha256": "9bc918ab274337a823d36d5bcf80df2ffe2ee8551f6681833f6db81dfa3203f3"
+          },
+          {
+            "id": "line:a05a7804",
+            "instructionIndex": 41,
+            "kind": "line",
+            "sourceSha256": "35af415ffcb7f7570324b8380768b1092d462ce72026708423b4414d9a818d05"
+          },
+          {
+            "id": "line:366a7f73",
+            "instructionIndex": 42,
+            "kind": "line",
+            "sourceSha256": "c66fb72552f1fa4c50fc9fc2b527b77c69ac97e3dd1e95d304437bb74f48fbc4"
+          },
+          {
+            "id": "line:8c3b76ea",
+            "instructionIndex": 43,
+            "kind": "option",
+            "sourceSha256": "bbff7b98d6da70612cb94badd2dde68a4dbe1107104b55f330a2225c8ebf55b2"
+          },
+          {
+            "id": "line:1a0b719d",
+            "instructionIndex": 44,
+            "kind": "option",
+            "sourceSha256": "834032dfb827138e4c8e225ad71c83e696cbc58a8c6c82cc83e55e7512a3cf2f"
+          },
+          {
+            "id": "line:b99e1503",
+            "instructionIndex": 53,
+            "kind": "line",
+            "sourceSha256": "71291e2e0c7ce300baa545b102e19aa83b4d6dcf50258a40972d157061cb48c9"
+          },
+          {
+            "id": "line:2fae1274",
+            "instructionIndex": 54,
+            "kind": "option",
+            "sourceSha256": "c8ac7dce03b1b9b73d09f9d628650393280722336ab394f0fe830107d597c867"
+          },
+          {
+            "id": "line:03cf1c9a",
+            "instructionIndex": 55,
+            "kind": "option",
+            "sourceSha256": "10f232e68c0c0443c38e0ee0fcbf6f7db3e81dcf31d70fcf143347d863d42998"
+          },
+          {
+            "id": "line:95ff1bed",
+            "instructionIndex": 61,
+            "kind": "line",
+            "sourceSha256": "5956cbc43e2c8c2bbe935bb67dc955b0038787a22f5ecc589bc1c6f2703a067a"
+          },
+          {
+            "id": "line:92d2a30a",
+            "instructionIndex": 64,
+            "kind": "line",
+            "sourceSha256": "7bf3b1fff483809ef870323fa4e541d5f38df70ffb7228686b0e4b8aefe1efa4"
+          }
+        ]
+      },
+      "windows": {
+        "nodeSha256": "0ae6401ffbc01a0f214de2b9c167138a9012ebabf53da7109775acf90f41d40d",
+        "lines": [
+          {
+            "id": "line:1475f95c",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "a59f7f35644dcdbb6ac7f89dc794d6c89d27627313be3709b9e02839231afe99"
+          },
+          {
+            "id": "line:8245fe2b",
+            "instructionIndex": 5,
+            "kind": "line",
+            "sourceSha256": "10b4110dad07d57618ed79feb4ca81a1108ad65712750dffc409873a670bb0d1"
+          },
+          {
+            "id": "line:67cc394b",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "b8baebdff88a847fe8476a1462a57da965747135235747911a8650d08194739d"
+          },
+          {
+            "id": "line:4bad37a5",
+            "instructionIndex": 7,
+            "kind": "option",
+            "sourceSha256": "a2aff5b173ae96bbcdd271a70539685cbb7eba1b1a435a3beae07ce342713dc7"
+          },
+          {
+            "id": "line:f1fc3e3c",
+            "instructionIndex": 15,
+            "kind": "line",
+            "sourceSha256": "4b29556a255aea9508b00c191a27332bc1d03ef041ae7c362987a9f18300be95"
+          },
+          {
+            "id": "line:dd9d30d2",
+            "instructionIndex": 20,
+            "kind": "line",
+            "sourceSha256": "ababfd6e7703460e0279b6e27147def8a2f903f7e128e12da1c54bdff4e73b04"
+          },
+          {
+            "id": "line:7e08544c",
+            "instructionIndex": 22,
+            "kind": "line",
+            "sourceSha256": "69f278cd5a2eb111fbce6488f0311889da0938d30eb725b593224f25b970a636"
+          },
+          {
+            "id": "line:e838533b",
+            "instructionIndex": 23,
+            "kind": "line",
+            "sourceSha256": "6221337862dcba2c5bb53a4628732f5e0b931314a8cb6d8e0a5efb81ab189d72"
+          },
+          {
+            "id": "line:52695aa2",
+            "instructionIndex": 24,
+            "kind": "option",
+            "sourceSha256": "cecec36c55a564ee373d29cba9903ab01dbccfb55b6a4127526c62b6f8f00816"
+          },
+          {
+            "id": "line:5544e245",
+            "instructionIndex": 25,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:c4595dd5",
+            "instructionIndex": 33,
+            "kind": "line",
+            "sourceSha256": "7dbde0758389bd7bfeb63556a8fac358abb5f1dbb9ca88910edf091278ba110d"
+          },
+          {
+            "id": "line:c374e532",
+            "instructionIndex": 39,
+            "kind": "line",
+            "sourceSha256": "9bc918ab274337a823d36d5bcf80df2ffe2ee8551f6681833f6db81dfa3203f3"
+          },
+          {
+            "id": "line:a05a7804",
+            "instructionIndex": 41,
+            "kind": "line",
+            "sourceSha256": "35af415ffcb7f7570324b8380768b1092d462ce72026708423b4414d9a818d05"
+          },
+          {
+            "id": "line:366a7f73",
+            "instructionIndex": 42,
+            "kind": "line",
+            "sourceSha256": "c66fb72552f1fa4c50fc9fc2b527b77c69ac97e3dd1e95d304437bb74f48fbc4"
+          },
+          {
+            "id": "line:8c3b76ea",
+            "instructionIndex": 43,
+            "kind": "option",
+            "sourceSha256": "bbff7b98d6da70612cb94badd2dde68a4dbe1107104b55f330a2225c8ebf55b2"
+          },
+          {
+            "id": "line:1a0b719d",
+            "instructionIndex": 44,
+            "kind": "option",
+            "sourceSha256": "834032dfb827138e4c8e225ad71c83e696cbc58a8c6c82cc83e55e7512a3cf2f"
+          },
+          {
+            "id": "line:b99e1503",
+            "instructionIndex": 53,
+            "kind": "line",
+            "sourceSha256": "71291e2e0c7ce300baa545b102e19aa83b4d6dcf50258a40972d157061cb48c9"
+          },
+          {
+            "id": "line:2fae1274",
+            "instructionIndex": 54,
+            "kind": "option",
+            "sourceSha256": "c8ac7dce03b1b9b73d09f9d628650393280722336ab394f0fe830107d597c867"
+          },
+          {
+            "id": "line:03cf1c9a",
+            "instructionIndex": 55,
+            "kind": "option",
+            "sourceSha256": "10f232e68c0c0443c38e0ee0fcbf6f7db3e81dcf31d70fcf143347d863d42998"
+          },
+          {
+            "id": "line:95ff1bed",
+            "instructionIndex": 61,
+            "kind": "line",
+            "sourceSha256": "5956cbc43e2c8c2bbe935bb67dc955b0038787a22f5ecc589bc1c6f2703a067a"
+          },
+          {
+            "id": "line:92d2a30a",
+            "instructionIndex": 64,
+            "kind": "line",
+            "sourceSha256": "7bf3b1fff483809ef870323fa4e541d5f38df70ffb7228686b0e4b8aefe1efa4"
+          }
+        ]
+      }
+    },
+    "Alexander_4_intro": {
+      "macos": {
+        "nodeSha256": "664903bffc15d5487e71af0086e40b2c8e0cf7716a23420cedb120ca83ea4920",
+        "lines": [
+          {
+            "id": "line:bcbc6373",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "0248808ddaa3479e17482884c8bb3f281b20264c8299aa434d2b6cba256b9ec3"
+          },
+          {
+            "id": "line:06ed6aea",
+            "instructionIndex": 5,
+            "kind": "option",
+            "sourceSha256": "d3d306a15d158e293619d094d933a6d67389057ae76104e2b7ddd54d4f79972c"
+          },
+          {
+            "id": "line:33480903",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "68094c643e49d3c655acc161c2b838744770a9179a6bce092f27ff4c8d394a99"
+          },
+          {
+            "id": "line:90dd6d9d",
+            "instructionIndex": 14,
+            "kind": "line",
+            "sourceSha256": "e8c921ab9051f1100dda1e7dc4891aea42fdb49c798c03a255c4967f91c36163"
+          },
+          {
+            "id": "line:a5780e74",
+            "instructionIndex": 19,
+            "kind": "line",
+            "sourceSha256": "3b767556f3eeaa3ba2f6c77618d09bdff72d660d0c7d5f740c965841c635896a"
+          },
+          {
+            "id": "line:1f2907ed",
+            "instructionIndex": 25,
+            "kind": "line",
+            "sourceSha256": "96ed1471d1f86a4ddd487cd43f2467138cdc19c0ed926e5c74808276f0e64e8b"
+          },
+          {
+            "id": "line:8919009a",
+            "instructionIndex": 30,
+            "kind": "line",
+            "sourceSha256": "429d93ef0fafbe8a09abfffc62d87d35ac5411ea9c066ccb70a4b64b061203d3"
+          },
+          {
+            "id": "line:1804bf0a",
+            "instructionIndex": 33,
+            "kind": "option",
+            "sourceSha256": "a9945cd0cd165325302840def4f3e5f2326b92f4414965d5bea64ce3d1fc791b"
+          },
+          {
+            "id": "line:6bbd7f1d",
+            "instructionIndex": 34,
+            "kind": "option",
+            "sourceSha256": "7259414f82b0b97aa91b7dbd83903341f95ba3cb0db7db0ef75927af97e10668"
+          },
+          {
+            "id": "line:8e34b87d",
+            "instructionIndex": 40,
+            "kind": "line",
+            "sourceSha256": "bfad19e22f9652cca1cae6704f629e68f845fa1613e7213759839b50e9d7c4f6"
+          },
+          {
+            "id": "line:fd8d786a",
+            "instructionIndex": 45,
+            "kind": "line",
+            "sourceSha256": "a6a744d6d60ec4004f74bbb5ae879acf86825c65a42e5cd612d795bed85cbe84"
+          },
+          {
+            "id": "line:47dc71f3",
+            "instructionIndex": 48,
+            "kind": "line",
+            "sourceSha256": "91a5c27ef059ab244ad9f4a0ae3b165a787c2c7fed333fc78c40fea5c21188a5"
+          },
+          {
+            "id": "line:d1ec7684",
+            "instructionIndex": 49,
+            "kind": "line",
+            "sourceSha256": "882df59f0a75b2958e7474475266b890d311694d01afdcea6f20e039c49e5370"
+          },
+          {
+            "id": "line:7279121a",
+            "instructionIndex": 53,
+            "kind": "option",
+            "sourceSha256": "990e43e4f2687cdf003ff2727e745628413aab36cc1e2094f8a4994d45a335ef"
+          },
+          {
+            "id": "line:5e181cf4",
+            "instructionIndex": 54,
+            "kind": "option",
+            "sourceSha256": "846b613e707ce00dd42319ef0814095c0d1466f33050b3acd53d9a877160c67f"
+          },
+          {
+            "id": "line:e449156d",
+            "instructionIndex": 62,
+            "kind": "line",
+            "sourceSha256": "3afdda2c098fc8346a9f2e0ba06ec9c6188411cf78cc7934cfd8b666ce632f55"
+          },
+          {
+            "id": "line:c8281b83",
+            "instructionIndex": 68,
+            "kind": "line",
+            "sourceSha256": "1ceb64d9cf6889fd661664b56a612a4524a53b5beb33c8ca8de8b08bedbc347e"
+          },
+          {
+            "id": "line:5935a413",
+            "instructionIndex": 69,
+            "kind": "option",
+            "sourceSha256": "56deaef9d6b92a31fe15317b81ce2b7bb644aeb86be567bc03f89ece4b388bf1"
+          },
+          {
+            "id": "line:cf05a364",
+            "instructionIndex": 77,
+            "kind": "line",
+            "sourceSha256": "fd0d3e3077aaf4ce6dd94488ff44612250f9551469daece6bde768a4e97a31ed"
+          },
+          {
+            "id": "line:a8ee5236",
+            "instructionIndex": 80,
+            "kind": "option",
+            "sourceSha256": "7a919cef111fe275560615618b8af4a2a67e59c3eed5a3a0951dddb0f2368840"
+          },
+          {
+            "id": "line:b12a3f31",
+            "instructionIndex": 81,
+            "kind": "option",
+            "sourceSha256": "6d8c462224bca1b5eff5efa9484070b5019d2db88de67486a82f641ba0bd4368"
+          },
+          {
+            "id": "line:3ede5541",
+            "instructionIndex": 90,
+            "kind": "line",
+            "sourceSha256": "cd5592e5e3140daa2f3fe0541c004877a65933bc07d69dbec8e3a441e7877c90"
+          },
+          {
+            "id": "line:848f5cd8",
+            "instructionIndex": 93,
+            "kind": "line",
+            "sourceSha256": "ab5df625bc76dbd4e163bed2dd888df828f90159bb93556525c31821b6541d46"
+          },
+          {
+            "id": "line:12bf5baf",
+            "instructionIndex": 98,
+            "kind": "line",
+            "sourceSha256": "8e7ead434fce5609e8e6210e058cc38d31fa5987b392a2f946b8ec3613e3fbfd"
+          },
+          {
+            "id": "line:271a3846",
+            "instructionIndex": 104,
+            "kind": "line",
+            "sourceSha256": "19be549c91d82ff353e004a2ccda9758d6fbb343f9667e632818b82f9bf7901e"
+          }
+        ]
+      },
+      "windows": {
+        "nodeSha256": "664903bffc15d5487e71af0086e40b2c8e0cf7716a23420cedb120ca83ea4920",
+        "lines": [
+          {
+            "id": "line:bcbc6373",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "0248808ddaa3479e17482884c8bb3f281b20264c8299aa434d2b6cba256b9ec3"
+          },
+          {
+            "id": "line:06ed6aea",
+            "instructionIndex": 5,
+            "kind": "option",
+            "sourceSha256": "d3d306a15d158e293619d094d933a6d67389057ae76104e2b7ddd54d4f79972c"
+          },
+          {
+            "id": "line:33480903",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "68094c643e49d3c655acc161c2b838744770a9179a6bce092f27ff4c8d394a99"
+          },
+          {
+            "id": "line:90dd6d9d",
+            "instructionIndex": 14,
+            "kind": "line",
+            "sourceSha256": "e8c921ab9051f1100dda1e7dc4891aea42fdb49c798c03a255c4967f91c36163"
+          },
+          {
+            "id": "line:a5780e74",
+            "instructionIndex": 19,
+            "kind": "line",
+            "sourceSha256": "3b767556f3eeaa3ba2f6c77618d09bdff72d660d0c7d5f740c965841c635896a"
+          },
+          {
+            "id": "line:1f2907ed",
+            "instructionIndex": 25,
+            "kind": "line",
+            "sourceSha256": "96ed1471d1f86a4ddd487cd43f2467138cdc19c0ed926e5c74808276f0e64e8b"
+          },
+          {
+            "id": "line:8919009a",
+            "instructionIndex": 30,
+            "kind": "line",
+            "sourceSha256": "429d93ef0fafbe8a09abfffc62d87d35ac5411ea9c066ccb70a4b64b061203d3"
+          },
+          {
+            "id": "line:1804bf0a",
+            "instructionIndex": 33,
+            "kind": "option",
+            "sourceSha256": "a9945cd0cd165325302840def4f3e5f2326b92f4414965d5bea64ce3d1fc791b"
+          },
+          {
+            "id": "line:6bbd7f1d",
+            "instructionIndex": 34,
+            "kind": "option",
+            "sourceSha256": "7259414f82b0b97aa91b7dbd83903341f95ba3cb0db7db0ef75927af97e10668"
+          },
+          {
+            "id": "line:8e34b87d",
+            "instructionIndex": 40,
+            "kind": "line",
+            "sourceSha256": "bfad19e22f9652cca1cae6704f629e68f845fa1613e7213759839b50e9d7c4f6"
+          },
+          {
+            "id": "line:fd8d786a",
+            "instructionIndex": 45,
+            "kind": "line",
+            "sourceSha256": "a6a744d6d60ec4004f74bbb5ae879acf86825c65a42e5cd612d795bed85cbe84"
+          },
+          {
+            "id": "line:47dc71f3",
+            "instructionIndex": 48,
+            "kind": "line",
+            "sourceSha256": "91a5c27ef059ab244ad9f4a0ae3b165a787c2c7fed333fc78c40fea5c21188a5"
+          },
+          {
+            "id": "line:d1ec7684",
+            "instructionIndex": 49,
+            "kind": "line",
+            "sourceSha256": "882df59f0a75b2958e7474475266b890d311694d01afdcea6f20e039c49e5370"
+          },
+          {
+            "id": "line:7279121a",
+            "instructionIndex": 53,
+            "kind": "option",
+            "sourceSha256": "990e43e4f2687cdf003ff2727e745628413aab36cc1e2094f8a4994d45a335ef"
+          },
+          {
+            "id": "line:5e181cf4",
+            "instructionIndex": 54,
+            "kind": "option",
+            "sourceSha256": "846b613e707ce00dd42319ef0814095c0d1466f33050b3acd53d9a877160c67f"
+          },
+          {
+            "id": "line:e449156d",
+            "instructionIndex": 62,
+            "kind": "line",
+            "sourceSha256": "3afdda2c098fc8346a9f2e0ba06ec9c6188411cf78cc7934cfd8b666ce632f55"
+          },
+          {
+            "id": "line:c8281b83",
+            "instructionIndex": 68,
+            "kind": "line",
+            "sourceSha256": "1ceb64d9cf6889fd661664b56a612a4524a53b5beb33c8ca8de8b08bedbc347e"
+          },
+          {
+            "id": "line:5935a413",
+            "instructionIndex": 69,
+            "kind": "option",
+            "sourceSha256": "56deaef9d6b92a31fe15317b81ce2b7bb644aeb86be567bc03f89ece4b388bf1"
+          },
+          {
+            "id": "line:cf05a364",
+            "instructionIndex": 77,
+            "kind": "line",
+            "sourceSha256": "fd0d3e3077aaf4ce6dd94488ff44612250f9551469daece6bde768a4e97a31ed"
+          },
+          {
+            "id": "line:a8ee5236",
+            "instructionIndex": 80,
+            "kind": "option",
+            "sourceSha256": "7a919cef111fe275560615618b8af4a2a67e59c3eed5a3a0951dddb0f2368840"
+          },
+          {
+            "id": "line:b12a3f31",
+            "instructionIndex": 81,
+            "kind": "option",
+            "sourceSha256": "6d8c462224bca1b5eff5efa9484070b5019d2db88de67486a82f641ba0bd4368"
+          },
+          {
+            "id": "line:3ede5541",
+            "instructionIndex": 90,
+            "kind": "line",
+            "sourceSha256": "cd5592e5e3140daa2f3fe0541c004877a65933bc07d69dbec8e3a441e7877c90"
+          },
+          {
+            "id": "line:848f5cd8",
+            "instructionIndex": 93,
+            "kind": "line",
+            "sourceSha256": "ab5df625bc76dbd4e163bed2dd888df828f90159bb93556525c31821b6541d46"
+          },
+          {
+            "id": "line:12bf5baf",
+            "instructionIndex": 98,
+            "kind": "line",
+            "sourceSha256": "8e7ead434fce5609e8e6210e058cc38d31fa5987b392a2f946b8ec3613e3fbfd"
+          },
+          {
+            "id": "line:271a3846",
+            "instructionIndex": 104,
+            "kind": "line",
+            "sourceSha256": "19be549c91d82ff353e004a2ccda9758d6fbb343f9667e632818b82f9bf7901e"
+          }
+        ]
+      }
+    },
+    "Conrad_Outro_3": {
+      "macos": {
+        "nodeSha256": "c144a4b119ba3a8094e202bc032778b2bb3169c7ef8ff1351bb09817de375977",
+        "lines": [
+          {
+            "id": "line:d376acb9",
+            "instructionIndex": 6,
+            "kind": "line",
+            "sourceSha256": "6f64e0cc9b1625419a8dee5a4f62ad7f01e7fc571a2433031fd343a2d1df1af8"
+          },
+          {
+            "id": "line:4546abce",
+            "instructionIndex": 9,
+            "kind": "line",
+            "sourceSha256": "dd5acacdb6c59489d48301e82c7746bec8dbc894edf9d42768d99155bdc5f843"
+          },
+          {
+            "id": "line:a0cf6cae",
+            "instructionIndex": 12,
+            "kind": "line",
+            "sourceSha256": "7f39f874a107d858a400b8399ab79962c3dfe3b8075dcc74df2ca17e9b162c19"
+          },
+          {
+            "id": "line:36ff6bd9",
+            "instructionIndex": 15,
+            "kind": "option",
+            "sourceSha256": "df48dbfe82678dea3efd57a91cb927f7f52b5543620ffb196edba26d91fb517d"
+          },
+          {
+            "id": "line:7e9d40e6",
+            "instructionIndex": 16,
+            "kind": "option",
+            "sourceSha256": "7b870878852ee72da488148898fa2aca463ccfbb0793b9da8e471c7042c5913b"
+          },
+          {
+            "id": "line:8cae6240",
+            "instructionIndex": 25,
+            "kind": "line",
+            "sourceSha256": "ac6820f366b18b44bcfaea2f3f9a7ec4027dfb7aafee8d34c1eeca2a64c2028b"
+          },
+          {
+            "id": "line:1a9e6537",
+            "instructionIndex": 26,
+            "kind": "option",
+            "sourceSha256": "de6f58682bdaacf9a2ce341e230a11ce329240a582a6ee7bd6d2ab6b7c57e5d0"
+          },
+          {
+            "id": "line:b90b01a9",
+            "instructionIndex": 27,
+            "kind": "option",
+            "sourceSha256": "d4185d9f80a342282c7f485bcacb52c4a32ffc147dedfbb373060c1387229557"
+          },
+          {
+            "id": "line:2f3b06de",
+            "instructionIndex": 38,
+            "kind": "line",
+            "sourceSha256": "9df619228ba627fcf3f01ab207fad3e03aae44da2f53ab306f6fc303fcc07957"
+          },
+          {
+            "id": "line:956a0f47",
+            "instructionIndex": 41,
+            "kind": "option",
+            "sourceSha256": "d88679eede302f8effb16418a0589d7b65589f72692bde1b056409d5072809b1"
+          },
+          {
+            "id": "line:9247b7a0",
+            "instructionIndex": 42,
+            "kind": "option",
+            "sourceSha256": "7984d45df6290f6cf4de8117074b0ac874c00886c1d53cdf0beacbe8e773273c"
+          },
+          {
+            "id": "line:035a0830",
+            "instructionIndex": 48,
+            "kind": "line",
+            "sourceSha256": "bf35fcb679c816dd057f6d3a4735b59091a0758e2e6726edec97d64f5072841e"
+          },
+          {
+            "id": "line:0477b0d7",
+            "instructionIndex": 51,
+            "kind": "line",
+            "sourceSha256": "d32db8ee98680d0fcb901f55e5099d5cb010bb94162abec74085868a40e93977"
+          },
+          {
+            "id": "line:67592de1",
+            "instructionIndex": 53,
+            "kind": "line",
+            "sourceSha256": "8623a4b26a9521d883610424aab7d75eafd2e8b443a3002fbeda8d06abed52c3"
+          },
+          {
+            "id": "line:f1692a96",
+            "instructionIndex": 54,
+            "kind": "line",
+            "sourceSha256": "30dcd5391100eeba540f777e5cb05f8ff4951a25b57d02f8aa2d25840b504cdf"
+          },
+          {
+            "id": "line:4b38230f",
+            "instructionIndex": 55,
+            "kind": "option",
+            "sourceSha256": "f1ad7345d30997b4649ec08af95494dac6223c810690572a963213c49fc6105f"
+          },
+          {
+            "id": "line:dd082478",
+            "instructionIndex": 56,
+            "kind": "option",
+            "sourceSha256": "404cba15a4acdcfea85caa97d009b1042d20f0967c26f9a1abf59aecbeddf9bd"
+          },
+          {
+            "id": "line:e8ad4791",
+            "instructionIndex": 70,
+            "kind": "line",
+            "sourceSha256": "8bf9f7d2ecce0105a38130edf488982a4fef8c7d077ca94fac3a1e242a0f3ea1"
+          },
+          {
+            "id": "line:52fc4e08",
+            "instructionIndex": 73,
+            "kind": "line",
+            "sourceSha256": "8929fe2569ae74554706c99773760fc183a6a08b502bd0d9dc64fde3f96b701c"
+          },
+          {
+            "id": "line:c4cc497f",
+            "instructionIndex": 76,
+            "kind": "line",
+            "sourceSha256": "2358a2257260501fd9745eda61b485a632eb7f86964c4784d895fbc3ea33dd4e"
+          },
+          {
+            "id": "line:55d1f6ef",
+            "instructionIndex": 79,
+            "kind": "line",
+            "sourceSha256": "c650e0aadadba99c99f721f8d4d0294337cb349c96c65d47a7a080cce479c453"
+          },
+          {
+            "id": "line:c3e1f198",
+            "instructionIndex": 80,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:9c393f61",
+            "instructionIndex": 81,
+            "kind": "option",
+            "sourceSha256": "296f2ab03f8676efd1a563028e0bd1f928afe8c1f1e056e6d1faa8670fddf93b"
+          },
+          {
+            "id": "line:266836f8",
+            "instructionIndex": 88,
+            "kind": "line",
+            "sourceSha256": "17cf3cc7179b681772a11b42eb59b7368eba74e3198e54218086db71c3cdadba"
+          },
+          {
+            "id": "line:b058318f",
+            "instructionIndex": 89,
+            "kind": "option",
+            "sourceSha256": "c2599750a4dd92476770a7404cecf40f43ed9142e74bd69cb148b6cebbce012a"
+          },
+          {
+            "id": "line:0a093816",
+            "instructionIndex": 97,
+            "kind": "line",
+            "sourceSha256": "6f2ff920e860570d61c221861f4f49a2ed5fd83f846a4e6a9dd2360e93936ebc"
+          },
+          {
+            "id": "line:3fac5bff",
+            "instructionIndex": 103,
+            "kind": "line",
+            "sourceSha256": "8b7bdfb88553e72fd84674cd2dd8955797c2786c1621853c04c1da2d0afe1f08"
+          },
+          {
+            "id": "line:a99c5c88",
+            "instructionIndex": 107,
+            "kind": "line",
+            "sourceSha256": "e8ae0da9edb0a3146f4ff13359592d6749d71a6813f5fb528ddeb71a7d931193"
+          },
+          {
+            "id": "line:13cd5511",
+            "instructionIndex": 108,
+            "kind": "option",
+            "sourceSha256": "781cbcfcd7920f3fda8d83f436d91e5fe896ef60ea9161201a50ea913187747e"
+          },
+          {
+            "id": "line:85fd5266",
+            "instructionIndex": 109,
+            "kind": "option",
+            "sourceSha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da"
+          },
+          {
+            "id": "line:14e0edf6",
+            "instructionIndex": 120,
+            "kind": "line",
+            "sourceSha256": "508f3cf1753898417f814cf29d1562f50a54a4fb29e8ec20fff24cce6eb02c33"
+          },
+          {
+            "id": "line:82d0ea81",
+            "instructionIndex": 125,
+            "kind": "line",
+            "sourceSha256": "c282dd1133ff96d40b7ccd213bf95db592616c1214fbd8151597d83b0e084a8a"
+          },
+          {
+            "id": "line:e53b1bd3",
+            "instructionIndex": 126,
+            "kind": "option",
+            "sourceSha256": "bfc65061708379d6a2b824f3f6684d424c9aef4e5c68bae53644d240ed5fd1d7"
+          },
+          {
+            "id": "line:fcff76d4",
+            "instructionIndex": 127,
+            "kind": "option",
+            "sourceSha256": "cf78ef26075ae223633e19526366c6a91e49da781bb0bc1630c69fdcf5fd0e6f"
+          },
+          {
+            "id": "line:730b1ca4",
+            "instructionIndex": 135,
+            "kind": "line",
+            "sourceSha256": "6b8aa4fb552217286e4e8d989c58de40a6a011eb96dc2f175ee6de08baea1ad5"
+          },
+          {
+            "id": "line:c95a153d",
+            "instructionIndex": 136,
+            "kind": "option",
+            "sourceSha256": "c395eb5878798c082e1e33a9fc88681a0a0e221839ce69c16d4bdd4292909451"
+          },
+          {
+            "id": "line:5f6a124a",
+            "instructionIndex": 142,
+            "kind": "line",
+            "sourceSha256": "102e28eb7d17c7dd6e09544114980e75d39fccab4ea1785132d1da0048d69a79"
+          },
+          {
+            "id": "line:6acf71a3",
+            "instructionIndex": 148,
+            "kind": "line",
+            "sourceSha256": "ca518354e1f14735f3f1823480988835208d836925ae57ce6ba47baa60ba6b1f"
+          }
+        ]
+      },
+      "windows": {
+        "nodeSha256": "c144a4b119ba3a8094e202bc032778b2bb3169c7ef8ff1351bb09817de375977",
+        "lines": [
+          {
+            "id": "line:d376acb9",
+            "instructionIndex": 6,
+            "kind": "line",
+            "sourceSha256": "6f64e0cc9b1625419a8dee5a4f62ad7f01e7fc571a2433031fd343a2d1df1af8"
+          },
+          {
+            "id": "line:4546abce",
+            "instructionIndex": 9,
+            "kind": "line",
+            "sourceSha256": "dd5acacdb6c59489d48301e82c7746bec8dbc894edf9d42768d99155bdc5f843"
+          },
+          {
+            "id": "line:a0cf6cae",
+            "instructionIndex": 12,
+            "kind": "line",
+            "sourceSha256": "7f39f874a107d858a400b8399ab79962c3dfe3b8075dcc74df2ca17e9b162c19"
+          },
+          {
+            "id": "line:36ff6bd9",
+            "instructionIndex": 15,
+            "kind": "option",
+            "sourceSha256": "df48dbfe82678dea3efd57a91cb927f7f52b5543620ffb196edba26d91fb517d"
+          },
+          {
+            "id": "line:7e9d40e6",
+            "instructionIndex": 16,
+            "kind": "option",
+            "sourceSha256": "7b870878852ee72da488148898fa2aca463ccfbb0793b9da8e471c7042c5913b"
+          },
+          {
+            "id": "line:8cae6240",
+            "instructionIndex": 25,
+            "kind": "line",
+            "sourceSha256": "ac6820f366b18b44bcfaea2f3f9a7ec4027dfb7aafee8d34c1eeca2a64c2028b"
+          },
+          {
+            "id": "line:1a9e6537",
+            "instructionIndex": 26,
+            "kind": "option",
+            "sourceSha256": "de6f58682bdaacf9a2ce341e230a11ce329240a582a6ee7bd6d2ab6b7c57e5d0"
+          },
+          {
+            "id": "line:b90b01a9",
+            "instructionIndex": 27,
+            "kind": "option",
+            "sourceSha256": "d4185d9f80a342282c7f485bcacb52c4a32ffc147dedfbb373060c1387229557"
+          },
+          {
+            "id": "line:2f3b06de",
+            "instructionIndex": 38,
+            "kind": "line",
+            "sourceSha256": "9df619228ba627fcf3f01ab207fad3e03aae44da2f53ab306f6fc303fcc07957"
+          },
+          {
+            "id": "line:956a0f47",
+            "instructionIndex": 41,
+            "kind": "option",
+            "sourceSha256": "d88679eede302f8effb16418a0589d7b65589f72692bde1b056409d5072809b1"
+          },
+          {
+            "id": "line:9247b7a0",
+            "instructionIndex": 42,
+            "kind": "option",
+            "sourceSha256": "7984d45df6290f6cf4de8117074b0ac874c00886c1d53cdf0beacbe8e773273c"
+          },
+          {
+            "id": "line:035a0830",
+            "instructionIndex": 48,
+            "kind": "line",
+            "sourceSha256": "bf35fcb679c816dd057f6d3a4735b59091a0758e2e6726edec97d64f5072841e"
+          },
+          {
+            "id": "line:0477b0d7",
+            "instructionIndex": 51,
+            "kind": "line",
+            "sourceSha256": "d32db8ee98680d0fcb901f55e5099d5cb010bb94162abec74085868a40e93977"
+          },
+          {
+            "id": "line:67592de1",
+            "instructionIndex": 53,
+            "kind": "line",
+            "sourceSha256": "8623a4b26a9521d883610424aab7d75eafd2e8b443a3002fbeda8d06abed52c3"
+          },
+          {
+            "id": "line:f1692a96",
+            "instructionIndex": 54,
+            "kind": "line",
+            "sourceSha256": "30dcd5391100eeba540f777e5cb05f8ff4951a25b57d02f8aa2d25840b504cdf"
+          },
+          {
+            "id": "line:4b38230f",
+            "instructionIndex": 55,
+            "kind": "option",
+            "sourceSha256": "f1ad7345d30997b4649ec08af95494dac6223c810690572a963213c49fc6105f"
+          },
+          {
+            "id": "line:dd082478",
+            "instructionIndex": 56,
+            "kind": "option",
+            "sourceSha256": "404cba15a4acdcfea85caa97d009b1042d20f0967c26f9a1abf59aecbeddf9bd"
+          },
+          {
+            "id": "line:e8ad4791",
+            "instructionIndex": 70,
+            "kind": "line",
+            "sourceSha256": "8bf9f7d2ecce0105a38130edf488982a4fef8c7d077ca94fac3a1e242a0f3ea1"
+          },
+          {
+            "id": "line:52fc4e08",
+            "instructionIndex": 73,
+            "kind": "line",
+            "sourceSha256": "8929fe2569ae74554706c99773760fc183a6a08b502bd0d9dc64fde3f96b701c"
+          },
+          {
+            "id": "line:c4cc497f",
+            "instructionIndex": 76,
+            "kind": "line",
+            "sourceSha256": "2358a2257260501fd9745eda61b485a632eb7f86964c4784d895fbc3ea33dd4e"
+          },
+          {
+            "id": "line:55d1f6ef",
+            "instructionIndex": 79,
+            "kind": "line",
+            "sourceSha256": "c650e0aadadba99c99f721f8d4d0294337cb349c96c65d47a7a080cce479c453"
+          },
+          {
+            "id": "line:c3e1f198",
+            "instructionIndex": 80,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:9c393f61",
+            "instructionIndex": 81,
+            "kind": "option",
+            "sourceSha256": "296f2ab03f8676efd1a563028e0bd1f928afe8c1f1e056e6d1faa8670fddf93b"
+          },
+          {
+            "id": "line:266836f8",
+            "instructionIndex": 88,
+            "kind": "line",
+            "sourceSha256": "7e00e03a0df3736e25eb7a56f7c46a1e7332c5b5dcd7f61e994be06cbcd8aaac"
+          },
+          {
+            "id": "line:b058318f",
+            "instructionIndex": 89,
+            "kind": "option",
+            "sourceSha256": "c2599750a4dd92476770a7404cecf40f43ed9142e74bd69cb148b6cebbce012a"
+          },
+          {
+            "id": "line:0a093816",
+            "instructionIndex": 97,
+            "kind": "line",
+            "sourceSha256": "6f2ff920e860570d61c221861f4f49a2ed5fd83f846a4e6a9dd2360e93936ebc"
+          },
+          {
+            "id": "line:3fac5bff",
+            "instructionIndex": 103,
+            "kind": "line",
+            "sourceSha256": "8b7bdfb88553e72fd84674cd2dd8955797c2786c1621853c04c1da2d0afe1f08"
+          },
+          {
+            "id": "line:a99c5c88",
+            "instructionIndex": 107,
+            "kind": "line",
+            "sourceSha256": "e8ae0da9edb0a3146f4ff13359592d6749d71a6813f5fb528ddeb71a7d931193"
+          },
+          {
+            "id": "line:13cd5511",
+            "instructionIndex": 108,
+            "kind": "option",
+            "sourceSha256": "781cbcfcd7920f3fda8d83f436d91e5fe896ef60ea9161201a50ea913187747e"
+          },
+          {
+            "id": "line:85fd5266",
+            "instructionIndex": 109,
+            "kind": "option",
+            "sourceSha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da"
+          },
+          {
+            "id": "line:14e0edf6",
+            "instructionIndex": 120,
+            "kind": "line",
+            "sourceSha256": "508f3cf1753898417f814cf29d1562f50a54a4fb29e8ec20fff24cce6eb02c33"
+          },
+          {
+            "id": "line:82d0ea81",
+            "instructionIndex": 125,
+            "kind": "line",
+            "sourceSha256": "c282dd1133ff96d40b7ccd213bf95db592616c1214fbd8151597d83b0e084a8a"
+          },
+          {
+            "id": "line:e53b1bd3",
+            "instructionIndex": 126,
+            "kind": "option",
+            "sourceSha256": "bfc65061708379d6a2b824f3f6684d424c9aef4e5c68bae53644d240ed5fd1d7"
+          },
+          {
+            "id": "line:fcff76d4",
+            "instructionIndex": 127,
+            "kind": "option",
+            "sourceSha256": "cf78ef26075ae223633e19526366c6a91e49da781bb0bc1630c69fdcf5fd0e6f"
+          },
+          {
+            "id": "line:730b1ca4",
+            "instructionIndex": 135,
+            "kind": "line",
+            "sourceSha256": "6b8aa4fb552217286e4e8d989c58de40a6a011eb96dc2f175ee6de08baea1ad5"
+          },
+          {
+            "id": "line:c95a153d",
+            "instructionIndex": 136,
+            "kind": "option",
+            "sourceSha256": "c395eb5878798c082e1e33a9fc88681a0a0e221839ce69c16d4bdd4292909451"
+          },
+          {
+            "id": "line:5f6a124a",
+            "instructionIndex": 142,
+            "kind": "line",
+            "sourceSha256": "102e28eb7d17c7dd6e09544114980e75d39fccab4ea1785132d1da0048d69a79"
+          },
+          {
+            "id": "line:6acf71a3",
+            "instructionIndex": 148,
+            "kind": "line",
+            "sourceSha256": "ca518354e1f14735f3f1823480988835208d836925ae57ce6ba47baa60ba6b1f"
+          }
+        ]
+      }
+    },
+    "RyanMuddy_Intro": {
+      "macos": {
+        "nodeSha256": "93e29f752a881e32b5241cb1df9f4ca5aeba62d06b9bc168b703c56b71fdf011",
+        "lines": [
+          {
+            "id": "line:dd4b34ae",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "0da72197e898ebe1814471a76048ed137a089f595c1e7038f2b70e98645e7652"
+          },
+          {
+            "id": "line:4b7b33d9",
+            "instructionIndex": 5,
+            "kind": "option",
+            "sourceSha256": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7"
+          },
+          {
+            "id": "line:e8ee5747",
+            "instructionIndex": 14,
+            "kind": "line",
+            "sourceSha256": "dfba3eb46cb5fc14e5d37df452e1b5b2e9df69999e532ab19855b461b4a58971"
+          },
+          {
+            "id": "line:7ede5030",
+            "instructionIndex": 17,
+            "kind": "line",
+            "sourceSha256": "299e9d1e919c3a49bf55e514753a48acf92db6f18f5715e7320962e226f68910"
+          },
+          {
+            "id": "line:c48f59a9",
+            "instructionIndex": 18,
+            "kind": "line",
+            "sourceSha256": "08c8207cff7cb565543d7745911201766ab7aca78e5c5b63dcc1277020810fe2"
+          },
+          {
+            "id": "line:52bf5ede",
+            "instructionIndex": 19,
+            "kind": "option",
+            "sourceSha256": "05d9cdcce06b0c12f308894e4c86a4dfd841030383482ae3d2e238c59f66df18"
+          },
+          {
+            "id": "line:5592e639",
+            "instructionIndex": 20,
+            "kind": "option",
+            "sourceSha256": "d12499a3f17512de053092973f1c7aeba86e02b8e7a26d91ae9020525a07c813"
+          },
+          {
+            "id": "line:c3a2e14e",
+            "instructionIndex": 29,
+            "kind": "line",
+            "sourceSha256": "b8e3a13e8da1caf6695de002d95a56c1ac44cb5d4f493a550f8bd8712d13a780"
+          },
+          {
+            "id": "line:b01b2159",
+            "instructionIndex": 35,
+            "kind": "line",
+            "sourceSha256": "213c112ac748eb9e832de56cdd3dc27d87b66aecc947df38e51f646f65ba1903"
+          },
+          {
+            "id": "line:262b262e",
+            "instructionIndex": 38,
+            "kind": "line",
+            "sourceSha256": "092808653667e9ffb7c5e1934d48b4e29f129d546f328230fa7ccd169b666aca"
+          },
+          {
+            "id": "line:9c7a2fb7",
+            "instructionIndex": 39,
+            "kind": "option",
+            "sourceSha256": "0f3f0b7e817061e6876edf3e425833ff0b1ef4837c3c27fa443916c34f7cd092"
+          },
+          {
+            "id": "line:0a4a28c0",
+            "instructionIndex": 48,
+            "kind": "line",
+            "sourceSha256": "44beadf6316d890e01f1a763e1a71203d0f01ed0a556695d63058949b0cef946"
+          },
+          {
+            "id": "line:a9df4c5e",
+            "instructionIndex": 53,
+            "kind": "line",
+            "sourceSha256": "af8d3a1f26de30ef2d345d1d9359c6d77f74e3150063ad83f0de94269cf15858"
+          }
+        ]
+      },
+      "windows": {
+        "nodeSha256": "93e29f752a881e32b5241cb1df9f4ca5aeba62d06b9bc168b703c56b71fdf011",
+        "lines": [
+          {
+            "id": "line:dd4b34ae",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "0da72197e898ebe1814471a76048ed137a089f595c1e7038f2b70e98645e7652"
+          },
+          {
+            "id": "line:4b7b33d9",
+            "instructionIndex": 5,
+            "kind": "option",
+            "sourceSha256": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7"
+          },
+          {
+            "id": "line:e8ee5747",
+            "instructionIndex": 14,
+            "kind": "line",
+            "sourceSha256": "dfba3eb46cb5fc14e5d37df452e1b5b2e9df69999e532ab19855b461b4a58971"
+          },
+          {
+            "id": "line:7ede5030",
+            "instructionIndex": 17,
+            "kind": "line",
+            "sourceSha256": "299e9d1e919c3a49bf55e514753a48acf92db6f18f5715e7320962e226f68910"
+          },
+          {
+            "id": "line:c48f59a9",
+            "instructionIndex": 18,
+            "kind": "line",
+            "sourceSha256": "08c8207cff7cb565543d7745911201766ab7aca78e5c5b63dcc1277020810fe2"
+          },
+          {
+            "id": "line:52bf5ede",
+            "instructionIndex": 19,
+            "kind": "option",
+            "sourceSha256": "05d9cdcce06b0c12f308894e4c86a4dfd841030383482ae3d2e238c59f66df18"
+          },
+          {
+            "id": "line:5592e639",
+            "instructionIndex": 20,
+            "kind": "option",
+            "sourceSha256": "d12499a3f17512de053092973f1c7aeba86e02b8e7a26d91ae9020525a07c813"
+          },
+          {
+            "id": "line:c3a2e14e",
+            "instructionIndex": 29,
+            "kind": "line",
+            "sourceSha256": "b8e3a13e8da1caf6695de002d95a56c1ac44cb5d4f493a550f8bd8712d13a780"
+          },
+          {
+            "id": "line:b01b2159",
+            "instructionIndex": 35,
+            "kind": "line",
+            "sourceSha256": "213c112ac748eb9e832de56cdd3dc27d87b66aecc947df38e51f646f65ba1903"
+          },
+          {
+            "id": "line:262b262e",
+            "instructionIndex": 38,
+            "kind": "line",
+            "sourceSha256": "092808653667e9ffb7c5e1934d48b4e29f129d546f328230fa7ccd169b666aca"
+          },
+          {
+            "id": "line:9c7a2fb7",
+            "instructionIndex": 39,
+            "kind": "option",
+            "sourceSha256": "0f3f0b7e817061e6876edf3e425833ff0b1ef4837c3c27fa443916c34f7cd092"
+          },
+          {
+            "id": "line:0a4a28c0",
+            "instructionIndex": 48,
+            "kind": "line",
+            "sourceSha256": "44beadf6316d890e01f1a763e1a71203d0f01ed0a556695d63058949b0cef946"
+          },
+          {
+            "id": "line:a9df4c5e",
+            "instructionIndex": 53,
+            "kind": "line",
+            "sourceSha256": "af8d3a1f26de30ef2d345d1d9359c6d77f74e3150063ad83f0de94269cf15858"
+          }
+        ]
+      }
+    },
+    "Ryan_1_Outro": {
+      "macos": {
+        "nodeSha256": "9c2d5e1d34892a4c133a279dfd60e28975c4cfb0f699e6c23f928c83cc74ab9c",
+        "lines": [
+          {
+            "id": "line:65a41bc5",
+            "instructionIndex": 6,
+            "kind": "line",
+            "sourceSha256": "0d26aa953ca02c41040db674730bae6f43f958d77fb6e0b64868d2fa467f9a1a"
+          },
+          {
+            "id": "line:f4b9a455",
+            "instructionIndex": 9,
+            "kind": "line",
+            "sourceSha256": "699cdec6a62f5ff382109154a9ae113d0f7fa73e50663df15fef7747ef6e016c"
+          },
+          {
+            "id": "line:6289a322",
+            "instructionIndex": 10,
+            "kind": "option",
+            "sourceSha256": "c3bbf19f280c6dde4f53eee772453a910b48f7b79a7d60335925f91ca9382240"
+          },
+          {
+            "id": "line:11306335",
+            "instructionIndex": 11,
+            "kind": "option",
+            "sourceSha256": "66984a1e53d3e8694c5f4c722f30a944e4c2c11ad71616d11462f0feebfb5958"
+          },
+          {
+            "id": "line:3d516ddb",
+            "instructionIndex": 12,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:87006442",
+            "instructionIndex": 20,
+            "kind": "line",
+            "sourceSha256": "d629b0ed3f97727ce16e620b14b3ca724d2b16d781b9cdb60a8896a057d0e032"
+          },
+          {
+            "id": "line:ab616aac",
+            "instructionIndex": 27,
+            "kind": "line",
+            "sourceSha256": "e12cf68db48908a3b34c6c964662312bb484381949d35d17075ef362fa3c92bb"
+          },
+          {
+            "id": "line:9ec40945",
+            "instructionIndex": 33,
+            "kind": "line",
+            "sourceSha256": "29a9062b9b45c6ef91112a61288145e880f2c7a8d0fe5c0849fe9762025a689b"
+          },
+          {
+            "id": "line:08f40e32",
+            "instructionIndex": 35,
+            "kind": "line",
+            "sourceSha256": "0712e97652e5175857ebe648f5d1756a29affd8220beded193c6eebba43b6e3b"
+          },
+          {
+            "id": "line:b2a507ab",
+            "instructionIndex": 38,
+            "kind": "line",
+            "sourceSha256": "17f93a33eafe382c247653c2468899b457fd0e170a777fd2b6039e27231c445e"
+          },
+          {
+            "id": "line:249500dc",
+            "instructionIndex": 41,
+            "kind": "option",
+            "sourceSha256": "474ab3afa218a5df609153e5916dea5226f967eb56cde8fb9cefa0db7547f5be"
+          },
+          {
+            "id": "line:b588bf4c",
+            "instructionIndex": 50,
+            "kind": "line",
+            "sourceSha256": "1aa7b1c1d5fb1fd6d299eae251a665c7898baeb43d48fb6b8a5b76da6c6ef739"
+          }
+        ]
+      },
+      "windows": {
+        "nodeSha256": "9c2d5e1d34892a4c133a279dfd60e28975c4cfb0f699e6c23f928c83cc74ab9c",
+        "lines": [
+          {
+            "id": "line:65a41bc5",
+            "instructionIndex": 6,
+            "kind": "line",
+            "sourceSha256": "0d26aa953ca02c41040db674730bae6f43f958d77fb6e0b64868d2fa467f9a1a"
+          },
+          {
+            "id": "line:f4b9a455",
+            "instructionIndex": 9,
+            "kind": "line",
+            "sourceSha256": "699cdec6a62f5ff382109154a9ae113d0f7fa73e50663df15fef7747ef6e016c"
+          },
+          {
+            "id": "line:6289a322",
+            "instructionIndex": 10,
+            "kind": "option",
+            "sourceSha256": "c3bbf19f280c6dde4f53eee772453a910b48f7b79a7d60335925f91ca9382240"
+          },
+          {
+            "id": "line:11306335",
+            "instructionIndex": 11,
+            "kind": "option",
+            "sourceSha256": "66984a1e53d3e8694c5f4c722f30a944e4c2c11ad71616d11462f0feebfb5958"
+          },
+          {
+            "id": "line:3d516ddb",
+            "instructionIndex": 12,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:87006442",
+            "instructionIndex": 20,
+            "kind": "line",
+            "sourceSha256": "d629b0ed3f97727ce16e620b14b3ca724d2b16d781b9cdb60a8896a057d0e032"
+          },
+          {
+            "id": "line:ab616aac",
+            "instructionIndex": 27,
+            "kind": "line",
+            "sourceSha256": "e12cf68db48908a3b34c6c964662312bb484381949d35d17075ef362fa3c92bb"
+          },
+          {
+            "id": "line:9ec40945",
+            "instructionIndex": 33,
+            "kind": "line",
+            "sourceSha256": "29a9062b9b45c6ef91112a61288145e880f2c7a8d0fe5c0849fe9762025a689b"
+          },
+          {
+            "id": "line:08f40e32",
+            "instructionIndex": 35,
+            "kind": "line",
+            "sourceSha256": "0712e97652e5175857ebe648f5d1756a29affd8220beded193c6eebba43b6e3b"
+          },
+          {
+            "id": "line:b2a507ab",
+            "instructionIndex": 38,
+            "kind": "line",
+            "sourceSha256": "17f93a33eafe382c247653c2468899b457fd0e170a777fd2b6039e27231c445e"
+          },
+          {
+            "id": "line:249500dc",
+            "instructionIndex": 41,
+            "kind": "option",
+            "sourceSha256": "474ab3afa218a5df609153e5916dea5226f967eb56cde8fb9cefa0db7547f5be"
+          },
+          {
+            "id": "line:b588bf4c",
+            "instructionIndex": 50,
+            "kind": "line",
+            "sourceSha256": "1aa7b1c1d5fb1fd6d299eae251a665c7898baeb43d48fb6b8a5b76da6c6ef739"
+          }
+        ]
+      }
+    },
+    "Ryan_1_intro": {
+      "macos": {
+        "nodeSha256": "934844eea998d1e2e71c41b89a6394ab0ea783522807ac6038f7a8cf91d7ce2a",
+        "lines": [
+          {
+            "id": "line:a8779ebf",
+            "instructionIndex": 7,
+            "kind": "line",
+            "sourceSha256": "0da72197e898ebe1814471a76048ed137a089f595c1e7038f2b70e98645e7652"
+          },
+          {
+            "id": "line:c3d3da41",
+            "instructionIndex": 8,
+            "kind": "option",
+            "sourceSha256": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7"
+          },
+          {
+            "id": "line:55e3dd36",
+            "instructionIndex": 17,
+            "kind": "line",
+            "sourceSha256": "dfba3eb46cb5fc14e5d37df452e1b5b2e9df69999e532ab19855b461b4a58971"
+          },
+          {
+            "id": "line:efb2d4af",
+            "instructionIndex": 20,
+            "kind": "line",
+            "sourceSha256": "30985c07d735bdc35272e3623cf4086ba956b3fd665e037911fb0750aa9d363c"
+          },
+          {
+            "id": "line:7982d3d8",
+            "instructionIndex": 21,
+            "kind": "line",
+            "sourceSha256": "08c8207cff7cb565543d7745911201766ab7aca78e5c5b63dcc1277020810fe2"
+          },
+          {
+            "id": "line:da17b746",
+            "instructionIndex": 22,
+            "kind": "option",
+            "sourceSha256": "32cfb777c0a1ca30e8a2d472b774af5c7c4bf8e9571efa5c5b68e3051fb9247d"
+          },
+          {
+            "id": "line:f676b9a8",
+            "instructionIndex": 23,
+            "kind": "option",
+            "sourceSha256": "eec1e26d3338868e95b1e50fe29ee74345962b0795a7a93668167b3a84ff6cae"
+          },
+          {
+            "id": "line:4c27b031",
+            "instructionIndex": 31,
+            "kind": "line",
+            "sourceSha256": "b8e3a13e8da1caf6695de002d95a56c1ac44cb5d4f493a550f8bd8712d13a780"
+          },
+          {
+            "id": "line:6046bedf",
+            "instructionIndex": 36,
+            "kind": "line",
+            "sourceSha256": "84f325bca745e50404538d454b4fac58a13f6823f4c6f5cea1a2b258813c5e3e"
+          },
+          {
+            "id": "line:f15b014f",
+            "instructionIndex": 40,
+            "kind": "line",
+            "sourceSha256": "900e8c593033c1890f517239debaa3064274d3e53c42e5def56015db4406c001"
+          },
+          {
+            "id": "line:676b0638",
+            "instructionIndex": 43,
+            "kind": "line",
+            "sourceSha256": "092808653667e9ffb7c5e1934d48b4e29f129d546f328230fa7ccd169b666aca"
+          },
+          {
+            "id": "line:82e2c158",
+            "instructionIndex": 44,
+            "kind": "option",
+            "sourceSha256": "0f3f0b7e817061e6876edf3e425833ff0b1ef4837c3c27fa443916c34f7cd092"
+          },
+          {
+            "id": "line:14d2c62f",
+            "instructionIndex": 45,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:ae83cfb6",
+            "instructionIndex": 56,
+            "kind": "line",
+            "sourceSha256": "273533e355fd12cf2f1d4477d3c01d3fc091eb2a070998ab93ad33505fd1d216"
+          },
+          {
+            "id": "line:38b3c8c1",
+            "instructionIndex": 57,
+            "kind": "option",
+            "sourceSha256": "3faa3f1d46e0e5447263c1e03bdf39d1a46f3cc19f1a34d712ba94e0505cedff"
+          },
+          {
+            "id": "line:9b26ac5f",
+            "instructionIndex": 67,
+            "kind": "line",
+            "sourceSha256": "ce6db45f1866ad91f4eb34b5acc0759273548e1f7e012f67380ec7f216430383"
+          },
+          {
+            "id": "line:0d16ab28",
+            "instructionIndex": 72,
+            "kind": "line",
+            "sourceSha256": "425d9584e840b6838cd234738066d8ba545fd87d807287f2ba8bec6fdbf3a9d8"
+          }
+        ]
+      },
+      "windows": {
+        "nodeSha256": "934844eea998d1e2e71c41b89a6394ab0ea783522807ac6038f7a8cf91d7ce2a",
+        "lines": [
+          {
+            "id": "line:a8779ebf",
+            "instructionIndex": 7,
+            "kind": "line",
+            "sourceSha256": "0da72197e898ebe1814471a76048ed137a089f595c1e7038f2b70e98645e7652"
+          },
+          {
+            "id": "line:c3d3da41",
+            "instructionIndex": 8,
+            "kind": "option",
+            "sourceSha256": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7"
+          },
+          {
+            "id": "line:55e3dd36",
+            "instructionIndex": 17,
+            "kind": "line",
+            "sourceSha256": "dfba3eb46cb5fc14e5d37df452e1b5b2e9df69999e532ab19855b461b4a58971"
+          },
+          {
+            "id": "line:efb2d4af",
+            "instructionIndex": 20,
+            "kind": "line",
+            "sourceSha256": "30985c07d735bdc35272e3623cf4086ba956b3fd665e037911fb0750aa9d363c"
+          },
+          {
+            "id": "line:7982d3d8",
+            "instructionIndex": 21,
+            "kind": "line",
+            "sourceSha256": "08c8207cff7cb565543d7745911201766ab7aca78e5c5b63dcc1277020810fe2"
+          },
+          {
+            "id": "line:da17b746",
+            "instructionIndex": 22,
+            "kind": "option",
+            "sourceSha256": "32cfb777c0a1ca30e8a2d472b774af5c7c4bf8e9571efa5c5b68e3051fb9247d"
+          },
+          {
+            "id": "line:f676b9a8",
+            "instructionIndex": 23,
+            "kind": "option",
+            "sourceSha256": "d12499a3f17512de053092973f1c7aeba86e02b8e7a26d91ae9020525a07c813"
+          },
+          {
+            "id": "line:4c27b031",
+            "instructionIndex": 31,
+            "kind": "line",
+            "sourceSha256": "b8e3a13e8da1caf6695de002d95a56c1ac44cb5d4f493a550f8bd8712d13a780"
+          },
+          {
+            "id": "line:6046bedf",
+            "instructionIndex": 36,
+            "kind": "line",
+            "sourceSha256": "84f325bca745e50404538d454b4fac58a13f6823f4c6f5cea1a2b258813c5e3e"
+          },
+          {
+            "id": "line:f15b014f",
+            "instructionIndex": 40,
+            "kind": "line",
+            "sourceSha256": "900e8c593033c1890f517239debaa3064274d3e53c42e5def56015db4406c001"
+          },
+          {
+            "id": "line:676b0638",
+            "instructionIndex": 43,
+            "kind": "line",
+            "sourceSha256": "092808653667e9ffb7c5e1934d48b4e29f129d546f328230fa7ccd169b666aca"
+          },
+          {
+            "id": "line:82e2c158",
+            "instructionIndex": 44,
+            "kind": "option",
+            "sourceSha256": "0f3f0b7e817061e6876edf3e425833ff0b1ef4837c3c27fa443916c34f7cd092"
+          },
+          {
+            "id": "line:14d2c62f",
+            "instructionIndex": 45,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:ae83cfb6",
+            "instructionIndex": 56,
+            "kind": "line",
+            "sourceSha256": "273533e355fd12cf2f1d4477d3c01d3fc091eb2a070998ab93ad33505fd1d216"
+          },
+          {
+            "id": "line:38b3c8c1",
+            "instructionIndex": 57,
+            "kind": "option",
+            "sourceSha256": "3faa3f1d46e0e5447263c1e03bdf39d1a46f3cc19f1a34d712ba94e0505cedff"
+          },
+          {
+            "id": "line:9b26ac5f",
+            "instructionIndex": 67,
+            "kind": "line",
+            "sourceSha256": "ce6db45f1866ad91f4eb34b5acc0759273548e1f7e012f67380ec7f216430383"
+          },
+          {
+            "id": "line:0d16ab28",
+            "instructionIndex": 72,
+            "kind": "line",
+            "sourceSha256": "425d9584e840b6838cd234738066d8ba545fd87d807287f2ba8bec6fdbf3a9d8"
+          }
+        ]
+      }
+    },
+    "Ryan_2_intro": {
+      "macos": {
+        "nodeSha256": "b61451b9253cc02168ce9e1cebd975039b62caf4d885efadff05a53209a908fb",
+        "lines": [
+          {
+            "id": "line:933efa6d",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "7825d92f67bdcdef149446243375cb193ea9d65d11e025c727a6926c81839f7b"
+          },
+          {
+            "id": "line:050efd1a",
+            "instructionIndex": 5,
+            "kind": "option",
+            "sourceSha256": "cd265861437668263e46341f8e0ce2de6a428a3ce2e54f27931dca0bf59f16f9"
+          },
+          {
+            "id": "line:296ff3f4",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:bf5ff483",
+            "instructionIndex": 14,
+            "kind": "line",
+            "sourceSha256": "6a67a8866ec70c0912f3a43fcadc65ceaa82eee5670e506adebc51f41cc92e85"
+          },
+          {
+            "id": "line:b8724c64",
+            "instructionIndex": 20,
+            "kind": "line",
+            "sourceSha256": "921bd4effdaa2a2f5975528f0fa8ae754d446885c520a99d994b9f9ec1b74433"
+          },
+          {
+            "id": "line:2e424b13",
+            "instructionIndex": 24,
+            "kind": "line",
+            "sourceSha256": "387d0da740d0826edaee01c1700fcc56f90c067e52df0946f84ad8031e32289f"
+          },
+          {
+            "id": "line:4d6cd625",
+            "instructionIndex": 27,
+            "kind": "line",
+            "sourceSha256": "e542b800ecfc350ab40655cb913c71fd8a6858f4ba3194aa3b2359c2386d5bce"
+          },
+          {
+            "id": "line:db5cd152",
+            "instructionIndex": 28,
+            "kind": "line",
+            "sourceSha256": "78b22bcc769424258d5a997bbd770c3468eec608e21cb5a5fb85da09e9790770"
+          },
+          {
+            "id": "line:610dd8cb",
+            "instructionIndex": 29,
+            "kind": "line",
+            "sourceSha256": "21abbb56e463a200d98ee3a9b53a408e84b93c521e0c181b29ce166b53374fc2"
+          },
+          {
+            "id": "line:f73ddfbc",
+            "instructionIndex": 30,
+            "kind": "line",
+            "sourceSha256": "da3405e1151a476ef95b0fc715a8ec4e6e5b6e9fb0375cdb4eaf22636e3c6cb8"
+          },
+          {
+            "id": "line:54a8bb22",
+            "instructionIndex": 33,
+            "kind": "option",
+            "sourceSha256": "41dc14e2cd744b1b5ac6385240ea54aaf8e37c83cf695b6f14f9b3a63e480723"
+          },
+          {
+            "id": "line:78c9b5cc",
+            "instructionIndex": 34,
+            "kind": "option",
+            "sourceSha256": "b231225bfcc08d4cb4d8eeef57f3a8986d920a23c6e01ae12faafd7972222b20"
+          },
+          {
+            "id": "line:c298bc55",
+            "instructionIndex": 42,
+            "kind": "line",
+            "sourceSha256": "056b5511850d7220521ab23974d915a8ba840316d578fc0d5ef638b342865bac"
+          },
+          {
+            "id": "line:eef9b2bb",
+            "instructionIndex": 45,
+            "kind": "line",
+            "sourceSha256": "b4e4d893367947a0f3b4443758c3cf53af7cfdd0b66dc79300f4d3f8177633dc"
+          },
+          {
+            "id": "line:7fe40d2b",
+            "instructionIndex": 46,
+            "kind": "line",
+            "sourceSha256": "c9cdea9d31e53d5b8c32a508c83a61df63be3732d9c4892db524be92cd603b06"
+          },
+          {
+            "id": "line:e9d40a5c",
+            "instructionIndex": 52,
+            "kind": "line",
+            "sourceSha256": "ab5df625bc76dbd4e163bed2dd888df828f90159bb93556525c31821b6541d46"
+          },
+          {
+            "id": "line:0c5dcd3c",
+            "instructionIndex": 55,
+            "kind": "line",
+            "sourceSha256": "ab74167fe23c9db5a379d5dacbcfe4e853d756f3228a6063ea0da1d7dd324ec6"
+          },
+          {
+            "id": "line:9a6dca4b",
+            "instructionIndex": 58,
+            "kind": "option",
+            "sourceSha256": "5cbc0ceea57587db228fc6a3dbbe4299554b7e436692b48b99b00d6c10558198"
+          },
+          {
+            "id": "line:203cc3d2",
+            "instructionIndex": 59,
+            "kind": "option",
+            "sourceSha256": "08411b780900fb59710469ac29fb468677eb3d2ab349329a942a410df1b83079"
+          },
+          {
+            "id": "line:b60cc4a5",
+            "instructionIndex": 70,
+            "kind": "line",
+            "sourceSha256": "a386908e3024f35e0543edbf13e8055d700d91c1d9c131857614c1fecaa940af"
+          }
+        ]
+      },
+      "windows": {
+        "nodeSha256": "b61451b9253cc02168ce9e1cebd975039b62caf4d885efadff05a53209a908fb",
+        "lines": [
+          {
+            "id": "line:933efa6d",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "7825d92f67bdcdef149446243375cb193ea9d65d11e025c727a6926c81839f7b"
+          },
+          {
+            "id": "line:050efd1a",
+            "instructionIndex": 5,
+            "kind": "option",
+            "sourceSha256": "cd265861437668263e46341f8e0ce2de6a428a3ce2e54f27931dca0bf59f16f9"
+          },
+          {
+            "id": "line:296ff3f4",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:bf5ff483",
+            "instructionIndex": 14,
+            "kind": "line",
+            "sourceSha256": "6a67a8866ec70c0912f3a43fcadc65ceaa82eee5670e506adebc51f41cc92e85"
+          },
+          {
+            "id": "line:b8724c64",
+            "instructionIndex": 20,
+            "kind": "line",
+            "sourceSha256": "921bd4effdaa2a2f5975528f0fa8ae754d446885c520a99d994b9f9ec1b74433"
+          },
+          {
+            "id": "line:2e424b13",
+            "instructionIndex": 24,
+            "kind": "line",
+            "sourceSha256": "387d0da740d0826edaee01c1700fcc56f90c067e52df0946f84ad8031e32289f"
+          },
+          {
+            "id": "line:4d6cd625",
+            "instructionIndex": 27,
+            "kind": "line",
+            "sourceSha256": "e542b800ecfc350ab40655cb913c71fd8a6858f4ba3194aa3b2359c2386d5bce"
+          },
+          {
+            "id": "line:db5cd152",
+            "instructionIndex": 28,
+            "kind": "line",
+            "sourceSha256": "78b22bcc769424258d5a997bbd770c3468eec608e21cb5a5fb85da09e9790770"
+          },
+          {
+            "id": "line:610dd8cb",
+            "instructionIndex": 29,
+            "kind": "line",
+            "sourceSha256": "21abbb56e463a200d98ee3a9b53a408e84b93c521e0c181b29ce166b53374fc2"
+          },
+          {
+            "id": "line:f73ddfbc",
+            "instructionIndex": 30,
+            "kind": "line",
+            "sourceSha256": "da3405e1151a476ef95b0fc715a8ec4e6e5b6e9fb0375cdb4eaf22636e3c6cb8"
+          },
+          {
+            "id": "line:54a8bb22",
+            "instructionIndex": 33,
+            "kind": "option",
+            "sourceSha256": "41dc14e2cd744b1b5ac6385240ea54aaf8e37c83cf695b6f14f9b3a63e480723"
+          },
+          {
+            "id": "line:78c9b5cc",
+            "instructionIndex": 34,
+            "kind": "option",
+            "sourceSha256": "b231225bfcc08d4cb4d8eeef57f3a8986d920a23c6e01ae12faafd7972222b20"
+          },
+          {
+            "id": "line:c298bc55",
+            "instructionIndex": 42,
+            "kind": "line",
+            "sourceSha256": "056b5511850d7220521ab23974d915a8ba840316d578fc0d5ef638b342865bac"
+          },
+          {
+            "id": "line:eef9b2bb",
+            "instructionIndex": 45,
+            "kind": "line",
+            "sourceSha256": "b4e4d893367947a0f3b4443758c3cf53af7cfdd0b66dc79300f4d3f8177633dc"
+          },
+          {
+            "id": "line:7fe40d2b",
+            "instructionIndex": 46,
+            "kind": "line",
+            "sourceSha256": "c9cdea9d31e53d5b8c32a508c83a61df63be3732d9c4892db524be92cd603b06"
+          },
+          {
+            "id": "line:e9d40a5c",
+            "instructionIndex": 52,
+            "kind": "line",
+            "sourceSha256": "ab5df625bc76dbd4e163bed2dd888df828f90159bb93556525c31821b6541d46"
+          },
+          {
+            "id": "line:0c5dcd3c",
+            "instructionIndex": 55,
+            "kind": "line",
+            "sourceSha256": "ab74167fe23c9db5a379d5dacbcfe4e853d756f3228a6063ea0da1d7dd324ec6"
+          },
+          {
+            "id": "line:9a6dca4b",
+            "instructionIndex": 58,
+            "kind": "option",
+            "sourceSha256": "5cbc0ceea57587db228fc6a3dbbe4299554b7e436692b48b99b00d6c10558198"
+          },
+          {
+            "id": "line:203cc3d2",
+            "instructionIndex": 59,
+            "kind": "option",
+            "sourceSha256": "08411b780900fb59710469ac29fb468677eb3d2ab349329a942a410df1b83079"
+          },
+          {
+            "id": "line:b60cc4a5",
+            "instructionIndex": 70,
+            "kind": "line",
+            "sourceSha256": "a386908e3024f35e0543edbf13e8055d700d91c1d9c131857614c1fecaa940af"
+          }
+        ]
+      }
+    },
+    "Ryan_5_Required_ryan_romanced": {
+      "macos": {
+        "nodeSha256": "8ac6ebc619846e1db9c7d878ba29b4ad61723b6fb4bb32649d64fd0363213fc1",
+        "lines": [
+          {
+            "id": "line:d9652dff",
+            "instructionIndex": 0,
+            "kind": "line",
+            "sourceSha256": "e61676df3c022293b0423559df0e83e613331e7f45cd53135328af5b93cc77fd"
+          },
+          {
+            "id": "line:7af04961",
+            "instructionIndex": 3,
+            "kind": "line",
+            "sourceSha256": "c022fa54258553ea7c1bca70ee0403e98569d0bb0d08c93352ca1f187626abb6"
+          },
+          {
+            "id": "line:ecc04e16",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "6c0884e4717c5d5b25da73ae82524d4b9fb6cf0faf8aa977680c783f97797350"
+          },
+          {
+            "id": "line:81905be1",
+            "instructionIndex": 7,
+            "kind": "option",
+            "sourceSha256": "bbedb233b6bbe2ea65110fefbd03583f06693d4a5b5e2c9caaa417e6a5465670"
+          },
+          {
+            "id": "line:412ba249",
+            "instructionIndex": 8,
+            "kind": "option",
+            "sourceSha256": "fb57b97d646f43c9ec4cfbaf50325879b9151c6fc59702f351ccf2001e4f2abe"
+          },
+          {
+            "id": "line:bd66082e",
+            "instructionIndex": 9,
+            "kind": "option",
+            "sourceSha256": "d2c0f4718541c24017053ea9bc6d5b4c0e58ba4a5a605971baed15f955fb48e1"
+          },
+          {
+            "id": "line:5691478f",
+            "instructionIndex": 15,
+            "kind": "line",
+            "sourceSha256": "98ef145fb642c5b689635863eb4540eccd41310980a682bd8f0306710a425c96"
+          },
+          {
+            "id": "line:c0a140f8",
+            "instructionIndex": 16,
+            "kind": "line",
+            "sourceSha256": "4bad2b5ecfe22c4aab229992ec73a0d29b24dd56b09af4f3d5a28c030ac4936e"
+          },
+          {
+            "id": "line:51bcff68",
+            "instructionIndex": 19,
+            "kind": "line",
+            "sourceSha256": "6e8c399ff118f405c7de94c7cbf5faeba3e4584ec5c5910da55333c6d4a57277"
+          },
+          {
+            "id": "line:c78cf81f",
+            "instructionIndex": 22,
+            "kind": "option",
+            "sourceSha256": "7da2aa0d4ef74597c260ded79f15d179524f722e662a70a1ed75bc5c6d91781f"
+          },
+          {
+            "id": "line:985436e6",
+            "instructionIndex": 23,
+            "kind": "option",
+            "sourceSha256": "db39ae73af1cfae59b0f14d027ef6a4d37a0976b7a8c5a00af7c8a398748e084"
+          },
+          {
+            "id": "line:22053f7f",
+            "instructionIndex": 31,
+            "kind": "line",
+            "sourceSha256": "67f68a72462bca9b1642747164bcc1fac7a3d5340059f4ce99dc77ee9829bb6c"
+          },
+          {
+            "id": "line:b4353808",
+            "instructionIndex": 34,
+            "kind": "line",
+            "sourceSha256": "3185b026252747c6485e6e9d38d0c59c36797be270761f34805b6c2fe4ebd0d9"
+          },
+          {
+            "id": "line:0e643191",
+            "instructionIndex": 35,
+            "kind": "line",
+            "sourceSha256": "d2994ff918a23d868ae87ebef5b459a9d84ddc4cce226e5d905f558e4ee4882a"
+          },
+          {
+            "id": "line:3bc15278",
+            "instructionIndex": 38,
+            "kind": "line",
+            "sourceSha256": "3fdcf71c3e2f7ea0141d2c854726487b8121a88763372efb3210e40b39738ca7"
+          },
+          {
+            "id": "line:adf1550f",
+            "instructionIndex": 41,
+            "kind": "line",
+            "sourceSha256": "8bacddc318adc2b92a553185eb47ce3d3f7668f7daeb314c7c18acb6359856fd"
+          },
+          {
+            "id": "line:17a05c96",
+            "instructionIndex": 44,
+            "kind": "line",
+            "sourceSha256": "638c1801c65c6b0cfd41545d4c90fdb299121273afa2a785ef56d7ec0cfefd93"
+          },
+          {
+            "id": "line:108de471",
+            "instructionIndex": 48,
+            "kind": "line",
+            "sourceSha256": "25f86d817a092ae107e0ea0c36fd69793ae98f63bb946ae75be6e65ba8ca04f7"
+          },
+          {
+            "id": "line:86bde306",
+            "instructionIndex": 49,
+            "kind": "line",
+            "sourceSha256": "38ae2aec596ab3566be636c1276b6ff47a58d9fa513b54fe0c706a0d49a755ee"
+          },
+          {
+            "id": "line:e5937e30",
+            "instructionIndex": 50,
+            "kind": "option",
+            "sourceSha256": "d7456d9e85366bc9a0ebeabb67da5a76945e23f4fb023cce881d4a1fe7131176"
+          },
+          {
+            "id": "line:fc571337",
+            "instructionIndex": 51,
+            "kind": "option",
+            "sourceSha256": "925a663e1b23d966ebf11d0fdef47b7a77f16d48de0fd5fdf00964f0cec338f4"
+          },
+          {
+            "id": "line:73a37947",
+            "instructionIndex": 57,
+            "kind": "line",
+            "sourceSha256": "14d1fddd0115ee0d129e03b0bf5ce4e5f20a5836490e76b2e4586311a2510dba"
+          },
+          {
+            "id": "line:c9f270de",
+            "instructionIndex": 58,
+            "kind": "line",
+            "sourceSha256": "6b59acab736bd3499c75dfa2f3b33448d1ad4d5960aad8d22201adbfa7cca9e1"
+          },
+          {
+            "id": "line:5fc277a9",
+            "instructionIndex": 61,
+            "kind": "line",
+            "sourceSha256": "334998266afc2476dbb133dbe1582662b1b8c689c1a0e005cc8790aa759b7e20"
+          },
+          {
+            "id": "line:6a671440",
+            "instructionIndex": 66,
+            "kind": "line",
+            "sourceSha256": "a02af61e18efb0f0335a6ec55cefe08398c58f473ea6a40d086ba8a93bcd85ab"
+          },
+          {
+            "id": "line:d0361dd9",
+            "instructionIndex": 67,
+            "kind": "line",
+            "sourceSha256": "cf73a93aa04fdd02aca53302cdcf46373e1c38b8013fd9e98236e53693c48436"
+          },
+          {
+            "id": "line:46061aae",
+            "instructionIndex": 68,
+            "kind": "line",
+            "sourceSha256": "8771d66a0a1ace3eb439075850a653f7facb9178c1ae2497f3e851e232f76b30"
+          },
+          {
+            "id": "line:d71ba53e",
+            "instructionIndex": 71,
+            "kind": "line",
+            "sourceSha256": "8cceef523eb8c739622a738e73c0f6c6a0746194a8786889105a66cb84ab770e"
+          },
+          {
+            "id": "line:a4a26529",
+            "instructionIndex": 75,
+            "kind": "line",
+            "sourceSha256": "5a3b18942c9e3040e732fe805867540ab27b6f331e90657a8a92f25665c650b6"
+          },
+          {
+            "id": "line:3292625e",
+            "instructionIndex": 76,
+            "kind": "line",
+            "sourceSha256": "4d1b2eff2bb69d2116290768ddbc7b585e045e7db4b55b58841d7607f58c1daf"
+          },
+          {
+            "id": "line:88c36bc7",
+            "instructionIndex": 77,
+            "kind": "line",
+            "sourceSha256": "ebbcfde5ce6709d6788fd9c0a475393fefe172d4ecde513ffcd9e040a2cea188"
+          },
+          {
+            "id": "line:1ef36cb0",
+            "instructionIndex": 80,
+            "kind": "line",
+            "sourceSha256": "8cceef523eb8c739622a738e73c0f6c6a0746194a8786889105a66cb84ab770e"
+          },
+          {
+            "id": "line:2b560f59",
+            "instructionIndex": 85,
+            "kind": "line",
+            "sourceSha256": "3ee865676f6e4c9903fd4e855996034d731c7d27799b0aa56ab48db3f4824adb"
+          },
+          {
+            "id": "line:910706c0",
+            "instructionIndex": 88,
+            "kind": "line",
+            "sourceSha256": "435234dd4f3b10333f2ff6f8073fc320d6abc73d926adea81845138b699d0c89"
+          },
+          {
+            "id": "line:073701b7",
+            "instructionIndex": 91,
+            "kind": "line",
+            "sourceSha256": "0ef6ac4a015fbebd9788ed363d98b7f55443656c5915b6a1309edb000ad0db22"
+          },
+          {
+            "id": "line:962abe27",
+            "instructionIndex": 92,
+            "kind": "option",
+            "sourceSha256": "070ff9504dd2e237d15b68ed1e7795c144b21a292a3f8364aaecdcef25c7544d"
+          },
+          {
+            "id": "line:f1c14f75",
+            "instructionIndex": 93,
+            "kind": "option",
+            "sourceSha256": "b64ebbe5369b5bbf283d5dafff07dffd086f9b528974d447dad5e3755210dee0"
+          },
+          {
+            "id": "line:7e352505",
+            "instructionIndex": 94,
+            "kind": "option",
+            "sourceSha256": "45afe74b37ed6bb00238a3f9f101f494fea81f5885af35f7b10c5e52cff55cd3"
+          },
+          {
+            "id": "line:001ab950",
+            "instructionIndex": 100,
+            "kind": "line",
+            "sourceSha256": "a881cd2440d1325255c1764f822c8595605ae7f3b6963e8b3964102bd6d12141"
+          },
+          {
+            "id": "line:67f14802",
+            "instructionIndex": 103,
+            "kind": "line",
+            "sourceSha256": "1976e7477a26b6802bad7bcaa8915ab5ac8cd493ee46a065ae282e58ac75015d"
+          },
+          {
+            "id": "line:4b9046ec",
+            "instructionIndex": 108,
+            "kind": "line",
+            "sourceSha256": "00712e7d97f1872a74541e373e213e1789f0cf01b8f812a878039e572f6e7b96"
+          },
+          {
+            "id": "line:dda0419b",
+            "instructionIndex": 111,
+            "kind": "line",
+            "sourceSha256": "037e3c0c446d2b14c8c40beba2a407b9f05a5482542066932d24e02d94131718"
+          },
+          {
+            "id": "line:e8052272",
+            "instructionIndex": 116,
+            "kind": "line",
+            "sourceSha256": "b1ac5509459ca2a45b91c2366ad9d968fec580d49f859c476fc72af78f38ad60"
+          },
+          {
+            "id": "line:52542beb",
+            "instructionIndex": 119,
+            "kind": "line",
+            "sourceSha256": "1976e7477a26b6802bad7bcaa8915ab5ac8cd493ee46a065ae282e58ac75015d"
+          },
+          {
+            "id": "line:c4642c9c",
+            "instructionIndex": 123,
+            "kind": "line",
+            "sourceSha256": "eb547bf48bc9637ecc76e9ef0471df88d1e54b08e61c89e080f5f8f4287f2265"
+          }
+        ]
+      },
+      "windows": {
+        "nodeSha256": "8ac6ebc619846e1db9c7d878ba29b4ad61723b6fb4bb32649d64fd0363213fc1",
+        "lines": [
+          {
+            "id": "line:d9652dff",
+            "instructionIndex": 0,
+            "kind": "line",
+            "sourceSha256": "e61676df3c022293b0423559df0e83e613331e7f45cd53135328af5b93cc77fd"
+          },
+          {
+            "id": "line:7af04961",
+            "instructionIndex": 3,
+            "kind": "line",
+            "sourceSha256": "c022fa54258553ea7c1bca70ee0403e98569d0bb0d08c93352ca1f187626abb6"
+          },
+          {
+            "id": "line:ecc04e16",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "6c0884e4717c5d5b25da73ae82524d4b9fb6cf0faf8aa977680c783f97797350"
+          },
+          {
+            "id": "line:81905be1",
+            "instructionIndex": 7,
+            "kind": "option",
+            "sourceSha256": "bbedb233b6bbe2ea65110fefbd03583f06693d4a5b5e2c9caaa417e6a5465670"
+          },
+          {
+            "id": "line:412ba249",
+            "instructionIndex": 8,
+            "kind": "option",
+            "sourceSha256": "fb57b97d646f43c9ec4cfbaf50325879b9151c6fc59702f351ccf2001e4f2abe"
+          },
+          {
+            "id": "line:bd66082e",
+            "instructionIndex": 9,
+            "kind": "option",
+            "sourceSha256": "d2c0f4718541c24017053ea9bc6d5b4c0e58ba4a5a605971baed15f955fb48e1"
+          },
+          {
+            "id": "line:5691478f",
+            "instructionIndex": 15,
+            "kind": "line",
+            "sourceSha256": "98ef145fb642c5b689635863eb4540eccd41310980a682bd8f0306710a425c96"
+          },
+          {
+            "id": "line:c0a140f8",
+            "instructionIndex": 16,
+            "kind": "line",
+            "sourceSha256": "4bad2b5ecfe22c4aab229992ec73a0d29b24dd56b09af4f3d5a28c030ac4936e"
+          },
+          {
+            "id": "line:51bcff68",
+            "instructionIndex": 19,
+            "kind": "line",
+            "sourceSha256": "6e8c399ff118f405c7de94c7cbf5faeba3e4584ec5c5910da55333c6d4a57277"
+          },
+          {
+            "id": "line:c78cf81f",
+            "instructionIndex": 22,
+            "kind": "option",
+            "sourceSha256": "7da2aa0d4ef74597c260ded79f15d179524f722e662a70a1ed75bc5c6d91781f"
+          },
+          {
+            "id": "line:985436e6",
+            "instructionIndex": 23,
+            "kind": "option",
+            "sourceSha256": "db39ae73af1cfae59b0f14d027ef6a4d37a0976b7a8c5a00af7c8a398748e084"
+          },
+          {
+            "id": "line:22053f7f",
+            "instructionIndex": 31,
+            "kind": "line",
+            "sourceSha256": "67f68a72462bca9b1642747164bcc1fac7a3d5340059f4ce99dc77ee9829bb6c"
+          },
+          {
+            "id": "line:b4353808",
+            "instructionIndex": 34,
+            "kind": "line",
+            "sourceSha256": "3185b026252747c6485e6e9d38d0c59c36797be270761f34805b6c2fe4ebd0d9"
+          },
+          {
+            "id": "line:0e643191",
+            "instructionIndex": 35,
+            "kind": "line",
+            "sourceSha256": "d2994ff918a23d868ae87ebef5b459a9d84ddc4cce226e5d905f558e4ee4882a"
+          },
+          {
+            "id": "line:3bc15278",
+            "instructionIndex": 38,
+            "kind": "line",
+            "sourceSha256": "3fdcf71c3e2f7ea0141d2c854726487b8121a88763372efb3210e40b39738ca7"
+          },
+          {
+            "id": "line:adf1550f",
+            "instructionIndex": 41,
+            "kind": "line",
+            "sourceSha256": "8bacddc318adc2b92a553185eb47ce3d3f7668f7daeb314c7c18acb6359856fd"
+          },
+          {
+            "id": "line:17a05c96",
+            "instructionIndex": 44,
+            "kind": "line",
+            "sourceSha256": "638c1801c65c6b0cfd41545d4c90fdb299121273afa2a785ef56d7ec0cfefd93"
+          },
+          {
+            "id": "line:108de471",
+            "instructionIndex": 48,
+            "kind": "line",
+            "sourceSha256": "25f86d817a092ae107e0ea0c36fd69793ae98f63bb946ae75be6e65ba8ca04f7"
+          },
+          {
+            "id": "line:86bde306",
+            "instructionIndex": 49,
+            "kind": "line",
+            "sourceSha256": "38ae2aec596ab3566be636c1276b6ff47a58d9fa513b54fe0c706a0d49a755ee"
+          },
+          {
+            "id": "line:e5937e30",
+            "instructionIndex": 50,
+            "kind": "option",
+            "sourceSha256": "d7456d9e85366bc9a0ebeabb67da5a76945e23f4fb023cce881d4a1fe7131176"
+          },
+          {
+            "id": "line:fc571337",
+            "instructionIndex": 51,
+            "kind": "option",
+            "sourceSha256": "925a663e1b23d966ebf11d0fdef47b7a77f16d48de0fd5fdf00964f0cec338f4"
+          },
+          {
+            "id": "line:73a37947",
+            "instructionIndex": 57,
+            "kind": "line",
+            "sourceSha256": "14d1fddd0115ee0d129e03b0bf5ce4e5f20a5836490e76b2e4586311a2510dba"
+          },
+          {
+            "id": "line:c9f270de",
+            "instructionIndex": 58,
+            "kind": "line",
+            "sourceSha256": "6b59acab736bd3499c75dfa2f3b33448d1ad4d5960aad8d22201adbfa7cca9e1"
+          },
+          {
+            "id": "line:5fc277a9",
+            "instructionIndex": 61,
+            "kind": "line",
+            "sourceSha256": "334998266afc2476dbb133dbe1582662b1b8c689c1a0e005cc8790aa759b7e20"
+          },
+          {
+            "id": "line:6a671440",
+            "instructionIndex": 66,
+            "kind": "line",
+            "sourceSha256": "a02af61e18efb0f0335a6ec55cefe08398c58f473ea6a40d086ba8a93bcd85ab"
+          },
+          {
+            "id": "line:d0361dd9",
+            "instructionIndex": 67,
+            "kind": "line",
+            "sourceSha256": "cf73a93aa04fdd02aca53302cdcf46373e1c38b8013fd9e98236e53693c48436"
+          },
+          {
+            "id": "line:46061aae",
+            "instructionIndex": 68,
+            "kind": "line",
+            "sourceSha256": "8771d66a0a1ace3eb439075850a653f7facb9178c1ae2497f3e851e232f76b30"
+          },
+          {
+            "id": "line:d71ba53e",
+            "instructionIndex": 71,
+            "kind": "line",
+            "sourceSha256": "8cceef523eb8c739622a738e73c0f6c6a0746194a8786889105a66cb84ab770e"
+          },
+          {
+            "id": "line:a4a26529",
+            "instructionIndex": 75,
+            "kind": "line",
+            "sourceSha256": "5a3b18942c9e3040e732fe805867540ab27b6f331e90657a8a92f25665c650b6"
+          },
+          {
+            "id": "line:3292625e",
+            "instructionIndex": 76,
+            "kind": "line",
+            "sourceSha256": "4d1b2eff2bb69d2116290768ddbc7b585e045e7db4b55b58841d7607f58c1daf"
+          },
+          {
+            "id": "line:88c36bc7",
+            "instructionIndex": 77,
+            "kind": "line",
+            "sourceSha256": "ebbcfde5ce6709d6788fd9c0a475393fefe172d4ecde513ffcd9e040a2cea188"
+          },
+          {
+            "id": "line:1ef36cb0",
+            "instructionIndex": 80,
+            "kind": "line",
+            "sourceSha256": "8cceef523eb8c739622a738e73c0f6c6a0746194a8786889105a66cb84ab770e"
+          },
+          {
+            "id": "line:2b560f59",
+            "instructionIndex": 85,
+            "kind": "line",
+            "sourceSha256": "3ee865676f6e4c9903fd4e855996034d731c7d27799b0aa56ab48db3f4824adb"
+          },
+          {
+            "id": "line:910706c0",
+            "instructionIndex": 88,
+            "kind": "line",
+            "sourceSha256": "435234dd4f3b10333f2ff6f8073fc320d6abc73d926adea81845138b699d0c89"
+          },
+          {
+            "id": "line:073701b7",
+            "instructionIndex": 91,
+            "kind": "line",
+            "sourceSha256": "0ef6ac4a015fbebd9788ed363d98b7f55443656c5915b6a1309edb000ad0db22"
+          },
+          {
+            "id": "line:962abe27",
+            "instructionIndex": 92,
+            "kind": "option",
+            "sourceSha256": "070ff9504dd2e237d15b68ed1e7795c144b21a292a3f8364aaecdcef25c7544d"
+          },
+          {
+            "id": "line:f1c14f75",
+            "instructionIndex": 93,
+            "kind": "option",
+            "sourceSha256": "b64ebbe5369b5bbf283d5dafff07dffd086f9b528974d447dad5e3755210dee0"
+          },
+          {
+            "id": "line:7e352505",
+            "instructionIndex": 94,
+            "kind": "option",
+            "sourceSha256": "45afe74b37ed6bb00238a3f9f101f494fea81f5885af35f7b10c5e52cff55cd3"
+          },
+          {
+            "id": "line:001ab950",
+            "instructionIndex": 100,
+            "kind": "line",
+            "sourceSha256": "a881cd2440d1325255c1764f822c8595605ae7f3b6963e8b3964102bd6d12141"
+          },
+          {
+            "id": "line:67f14802",
+            "instructionIndex": 103,
+            "kind": "line",
+            "sourceSha256": "1976e7477a26b6802bad7bcaa8915ab5ac8cd493ee46a065ae282e58ac75015d"
+          },
+          {
+            "id": "line:4b9046ec",
+            "instructionIndex": 108,
+            "kind": "line",
+            "sourceSha256": "00712e7d97f1872a74541e373e213e1789f0cf01b8f812a878039e572f6e7b96"
+          },
+          {
+            "id": "line:dda0419b",
+            "instructionIndex": 111,
+            "kind": "line",
+            "sourceSha256": "037e3c0c446d2b14c8c40beba2a407b9f05a5482542066932d24e02d94131718"
+          },
+          {
+            "id": "line:e8052272",
+            "instructionIndex": 116,
+            "kind": "line",
+            "sourceSha256": "b1ac5509459ca2a45b91c2366ad9d968fec580d49f859c476fc72af78f38ad60"
+          },
+          {
+            "id": "line:52542beb",
+            "instructionIndex": 119,
+            "kind": "line",
+            "sourceSha256": "1976e7477a26b6802bad7bcaa8915ab5ac8cd493ee46a065ae282e58ac75015d"
+          },
+          {
+            "id": "line:c4642c9c",
+            "instructionIndex": 123,
+            "kind": "line",
+            "sourceSha256": "eb547bf48bc9637ecc76e9ef0471df88d1e54b08e61c89e080f5f8f4287f2265"
+          }
+        ]
+      }
+    },
+    "Ryan_SexScene": {
+      "macos": {
+        "nodeSha256": "c26cc72160716b302ec986eb91e42ebedb920958974bcc50c660f69aa66c5fce",
+        "lines": [
+          {
+            "id": "line:9369755d",
+            "instructionIndex": 0,
+            "kind": "line",
+            "sourceSha256": "caa123c912750ed2ea1614b481897bfafec66b551e8a73a036af3fe69f3b9f42"
+          },
+          {
+            "id": "line:0274cacd",
+            "instructionIndex": 1,
+            "kind": "option",
+            "sourceSha256": "c8dda0f1b46383bc00ccfe7dd12e4a51a3a93815e042f8f5aeaea22fa36659d8"
+          },
+          {
+            "id": "line:9444cdba",
+            "instructionIndex": 2,
+            "kind": "option",
+            "sourceSha256": "849b442f9a88c95020a98777a594a72eaaae2ff2565efbb9306f1255a2d1c0f6"
+          },
+          {
+            "id": "line:f3af3ce8",
+            "instructionIndex": 11,
+            "kind": "line",
+            "sourceSha256": "88f476f3d6ebac8dd15422b727a9c02e802cb54eec813ffc5f29b0c8a6919975"
+          }
+        ]
+      },
+      "windows": {
+        "nodeSha256": "c26cc72160716b302ec986eb91e42ebedb920958974bcc50c660f69aa66c5fce",
+        "lines": [
+          {
+            "id": "line:9369755d",
+            "instructionIndex": 0,
+            "kind": "line",
+            "sourceSha256": "caa123c912750ed2ea1614b481897bfafec66b551e8a73a036af3fe69f3b9f42"
+          },
+          {
+            "id": "line:0274cacd",
+            "instructionIndex": 1,
+            "kind": "option",
+            "sourceSha256": "c8dda0f1b46383bc00ccfe7dd12e4a51a3a93815e042f8f5aeaea22fa36659d8"
+          },
+          {
+            "id": "line:9444cdba",
+            "instructionIndex": 2,
+            "kind": "option",
+            "sourceSha256": "849b442f9a88c95020a98777a594a72eaaae2ff2565efbb9306f1255a2d1c0f6"
+          },
+          {
+            "id": "line:f3af3ce8",
+            "instructionIndex": 11,
+            "kind": "line",
+            "sourceSha256": "88f476f3d6ebac8dd15422b727a9c02e802cb54eec813ffc5f29b0c8a6919975"
+          }
+        ]
+      }
+    },
+    "Ryan_grab_basket": {
+      "macos": {
+        "nodeSha256": "e557ff9fd560cb9816c636c1b6b958c93d6eb120d8fe677f5c8f655b200ba942",
+        "lines": [
+          {
+            "id": "line:9be63f47",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "3276ca6f923e3a2ea15c8dbbc0edb4ba8cf63fca6b7904476cf71a1167bf062a"
+          },
+          {
+            "id": "line:0dd63830",
+            "instructionIndex": 5,
+            "kind": "option",
+            "sourceSha256": "1790d1bc285d158ffe0673a50cde7d63a2151366aa7531e9777b7e5c427c8034"
+          },
+          {
+            "id": "line:f0427bb9",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "fab7cff668586c9bd40a1f4e629a8f77f5e08c8a52d5f9f24076598d3efd0b7d"
+          },
+          {
+            "id": "line:66727cce",
+            "instructionIndex": 14,
+            "kind": "line",
+            "sourceSha256": "3f519f6990d85e4dca886cee87be441b1c622c9cceee5912eae6aec37e39b766"
+          },
+          {
+            "id": "line:4a137220",
+            "instructionIndex": 21,
+            "kind": "line",
+            "sourceSha256": "38953523aa1d8dc9ed715e1c0620f8a2f96c18022720b6a03be798be15e5206f"
+          },
+          {
+            "id": "line:dc237557",
+            "instructionIndex": 25,
+            "kind": "line",
+            "sourceSha256": "f44e62ce0d92a9c37adc9c621198ad92c1eed84767a7f28275ed62a2468f8e0f"
+          },
+          {
+            "id": "line:7fb611c9",
+            "instructionIndex": 26,
+            "kind": "option",
+            "sourceSha256": "dbe7ccbf37aed06a7896023e9921749ae7b4b8b6a70fafa3f0a7237672a985e2"
+          },
+          {
+            "id": "line:c5e71850",
+            "instructionIndex": 27,
+            "kind": "option",
+            "sourceSha256": "96082d9f598cc1db52d4f6ad801a863a6207191efc1b2158b7afad4ac562c907"
+          },
+          {
+            "id": "line:e98616be",
+            "instructionIndex": 35,
+            "kind": "line",
+            "sourceSha256": "5be9d07e2e19a32178f931e6b99cf5730356d0416be1c7917a3dd1699e505a54"
+          },
+          {
+            "id": "line:53d71f27",
+            "instructionIndex": 38,
+            "kind": "line",
+            "sourceSha256": "eea2772cf2ab51f9589c29b5c9a52975203487ec9018b702e524f957be564e2c"
+          },
+          {
+            "id": "line:54faa7c0",
+            "instructionIndex": 43,
+            "kind": "line",
+            "sourceSha256": "5da686787e870bc27dcb4ee72634bb584326d56ae66290a2d5e38487d8a4ef5f"
+          },
+          {
+            "id": "line:c2caa0b7",
+            "instructionIndex": 48,
+            "kind": "line",
+            "sourceSha256": "dfdd49c96bf703124a20a900f6bea2d91bbc284aeb0364d130e5ee557b78b19e"
+          },
+          {
+            "id": "line:274367d7",
+            "instructionIndex": 52,
+            "kind": "line",
+            "sourceSha256": "7efd9697b321d60878fc2a8e5db018baceaa19390689cfce4af860ba6357d1cd"
+          },
+          {
+            "id": "line:b17360a0",
+            "instructionIndex": 55,
+            "kind": "line",
+            "sourceSha256": "414c0f3bb81740f3d025c0158eb3e761480087f0da81ec5319a511244ec35a3b"
+          },
+          {
+            "id": "line:0b226939",
+            "instructionIndex": 58,
+            "kind": "option",
+            "sourceSha256": "097832ea20a37b638615fdb729b759d46e1fc2c0c0b425f4ee12962106aac77e"
+          },
+          {
+            "id": "line:3e870ad0",
+            "instructionIndex": 59,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:9d126e4e",
+            "instructionIndex": 67,
+            "kind": "line",
+            "sourceSha256": "460dbc14c8f22914383cd31a2f4869996aed905ad62836cbaa45a8e5751d8c5e"
+          },
+          {
+            "id": "line:a8b70da7",
+            "instructionIndex": 73,
+            "kind": "line",
+            "sourceSha256": "6e1aac9408968a3c4a7d378eb2972e68fe177fd3c762d0d55f900e290d93e535"
+          },
+          {
+            "id": "line:12e6043e",
+            "instructionIndex": 77,
+            "kind": "line",
+            "sourceSha256": "fe3e5d4e4925ddb68712089c61f035be473e5c3e7fa1f4a1237f9cc627fa8e2f"
+          }
+        ]
+      },
+      "windows": {
+        "nodeSha256": "e557ff9fd560cb9816c636c1b6b958c93d6eb120d8fe677f5c8f655b200ba942",
+        "lines": [
+          {
+            "id": "line:9be63f47",
+            "instructionIndex": 4,
+            "kind": "line",
+            "sourceSha256": "3276ca6f923e3a2ea15c8dbbc0edb4ba8cf63fca6b7904476cf71a1167bf062a"
+          },
+          {
+            "id": "line:0dd63830",
+            "instructionIndex": 5,
+            "kind": "option",
+            "sourceSha256": "1790d1bc285d158ffe0673a50cde7d63a2151366aa7531e9777b7e5c427c8034"
+          },
+          {
+            "id": "line:f0427bb9",
+            "instructionIndex": 6,
+            "kind": "option",
+            "sourceSha256": "fab7cff668586c9bd40a1f4e629a8f77f5e08c8a52d5f9f24076598d3efd0b7d"
+          },
+          {
+            "id": "line:66727cce",
+            "instructionIndex": 14,
+            "kind": "line",
+            "sourceSha256": "3f519f6990d85e4dca886cee87be441b1c622c9cceee5912eae6aec37e39b766"
+          },
+          {
+            "id": "line:4a137220",
+            "instructionIndex": 21,
+            "kind": "line",
+            "sourceSha256": "38953523aa1d8dc9ed715e1c0620f8a2f96c18022720b6a03be798be15e5206f"
+          },
+          {
+            "id": "line:dc237557",
+            "instructionIndex": 25,
+            "kind": "line",
+            "sourceSha256": "f44e62ce0d92a9c37adc9c621198ad92c1eed84767a7f28275ed62a2468f8e0f"
+          },
+          {
+            "id": "line:7fb611c9",
+            "instructionIndex": 26,
+            "kind": "option",
+            "sourceSha256": "dbe7ccbf37aed06a7896023e9921749ae7b4b8b6a70fafa3f0a7237672a985e2"
+          },
+          {
+            "id": "line:c5e71850",
+            "instructionIndex": 27,
+            "kind": "option",
+            "sourceSha256": "96082d9f598cc1db52d4f6ad801a863a6207191efc1b2158b7afad4ac562c907"
+          },
+          {
+            "id": "line:e98616be",
+            "instructionIndex": 35,
+            "kind": "line",
+            "sourceSha256": "5be9d07e2e19a32178f931e6b99cf5730356d0416be1c7917a3dd1699e505a54"
+          },
+          {
+            "id": "line:53d71f27",
+            "instructionIndex": 38,
+            "kind": "line",
+            "sourceSha256": "eea2772cf2ab51f9589c29b5c9a52975203487ec9018b702e524f957be564e2c"
+          },
+          {
+            "id": "line:54faa7c0",
+            "instructionIndex": 43,
+            "kind": "line",
+            "sourceSha256": "5da686787e870bc27dcb4ee72634bb584326d56ae66290a2d5e38487d8a4ef5f"
+          },
+          {
+            "id": "line:c2caa0b7",
+            "instructionIndex": 48,
+            "kind": "line",
+            "sourceSha256": "dfdd49c96bf703124a20a900f6bea2d91bbc284aeb0364d130e5ee557b78b19e"
+          },
+          {
+            "id": "line:274367d7",
+            "instructionIndex": 52,
+            "kind": "line",
+            "sourceSha256": "7efd9697b321d60878fc2a8e5db018baceaa19390689cfce4af860ba6357d1cd"
+          },
+          {
+            "id": "line:b17360a0",
+            "instructionIndex": 55,
+            "kind": "line",
+            "sourceSha256": "2fc5be91325a9449e99508dbb6300ade27b44003d88108fb2e6d8e8f1fbf5b7a"
+          },
+          {
+            "id": "line:0b226939",
+            "instructionIndex": 58,
+            "kind": "option",
+            "sourceSha256": "097832ea20a37b638615fdb729b759d46e1fc2c0c0b425f4ee12962106aac77e"
+          },
+          {
+            "id": "line:3e870ad0",
+            "instructionIndex": 59,
+            "kind": "option",
+            "sourceSha256": "b8a4a2d6c54c16d8bb018152a95cd8e05a49f8e7b8acfdbb5d279878867453e3"
+          },
+          {
+            "id": "line:9d126e4e",
+            "instructionIndex": 67,
+            "kind": "line",
+            "sourceSha256": "460dbc14c8f22914383cd31a2f4869996aed905ad62836cbaa45a8e5751d8c5e"
+          },
+          {
+            "id": "line:a8b70da7",
+            "instructionIndex": 73,
+            "kind": "line",
+            "sourceSha256": "6e1aac9408968a3c4a7d378eb2972e68fe177fd3c762d0d55f900e290d93e535"
+          },
+          {
+            "id": "line:12e6043e",
+            "instructionIndex": 77,
+            "kind": "line",
+            "sourceSha256": "fe3e5d4e4925ddb68712089c61f035be473e5c3e7fa1f4a1237f9cc627fa8e2f"
+          }
+        ]
+      }
+    }
+  },
+  "limitations": "A substring search is a candidate finder, not exhaustive semantic discovery. Full nodes include all mapped line IDs but not complete control-flow, other scene dependencies, UI or audio. Actual reachability and locale decisions remain unreviewed."
+}
