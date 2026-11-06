@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "testOnly": true,
+  "platform": "macos",
+  "managedInventorySha256": "b3186bc39207255e937f5856be09906dc1a428d83a964d5f368f30861e32603c",
+  "patchedSha256": "8b3906e2bb290fc0761348042abe1c76fea9e565b82eff5d58255877481d5c7f",
+  "checks": [
+    {
+      "source": "Ryan: TEST",
+      "identityBefore": "Ryan",
+      "display": "\u0416\u0436",
+      "identityAfter": "Ryan"
+    },
+    {
+      "source": "Conrad: TEST",
+      "identityBefore": "Conrad",
+      "display": "\u042A\u044A\u042C\u044C",
+      "identityAfter": "Conrad"
+    },
+    {
+      "source": "Other: TEST",
+      "identityBefore": "Other",
+      "display": "Other",
+      "identityAfter": "Other"
+    },
+    {
+      "source": "Ryan2: TEST",
+      "identityBefore": "Ryan2",
+      "display": "Ryan2",
+      "identityAfter": "Ryan2"
+    },
+    {
+      "source": "Ordinary phrase:",
+      "identityBefore": "Ordinary phrase",
+      "display": "Ordinary phrase",
+      "identityAfter": "Ordinary phrase"
+    },
+    {
+      "source": "TEST",
+      "identityBefore": null,
+      "display": null,
+      "identityAfter": null
+    }
+  ],
+  "limitations": "Desktop .NET executes the actual pinned Yarn parser and patched helper via reflection. Unity UI, injected call-site execution, game runtime, rendering, font, options, and nonstandard source adaptation remain untested."
+}

@@ -287,3 +287,12 @@ not an accepted release setting. It is applied inside the unpublished staged app
   different UnityPy versions or arbitrary scripts. Verify these separately.
 
 Run the validation tests with `python3 -m unittest discover -s localization -p 'test_*.py'`.
+
+### Speaker display investigation
+
+`tools/speaker-display-probe` and `tools/speaker-display-runtime-test` are
+source-pinned **synthetic test tools**, not part of the player builder. They
+investigate translating a displayed speaker label without changing the Yarn
+character identity. See `evidence/speaker-display-synthetic-20261107.md` for
+test scope, exact build fingerprints, and the unresolved in-game result. The
+tool does not implement a release-ready locale selector or translation package.
