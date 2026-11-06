@@ -71,3 +71,5 @@ The earlier test copies also used isolated identifiers; ordinary copies currentl
 | Locale | Phase | Translated / visible total | Glossary | Editorial | Fonts | Textures | Build | Runtime | Visual | Screenshot upload | Screenshot review | Release | Blocker / next action |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `ru` | `probe` | 0 / unknown | needs-review | not-run | needs-review | not-applicable: excluded by owner | needs-review: prototype only | needs-review | needs-review | not-run: not requested | not-applicable: no upload | not-run | Establish real dialogue/UI rendering and progression, then finish and classify shared inventory; do not infer coverage from raw ID count. |
+
+On 2026-11-06 an independently authorized visual reviewer examined the synthetic choice and continuation frames described in `localization/evidence/choice-visual-review-20261106.md`. The observed strings match the intended probe text, fit their panels and show no apparent clipping or missing glyphs in these two previews. This does not establish normal player input, long-string layout, final font coverage or game-wide visual quality.
