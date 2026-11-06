@@ -1,0 +1,1152 @@
+{
+  "schema": 1,
+  "macosAssetSha256": "40713b00ce12582eebc427c0104e59becf438eb15803725b2248be3471a96aeb",
+  "windowsAssetSha256": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3",
+  "settings": {
+    "AmbienceVolume": {
+      "macos": {
+        "type": "SettingAudio",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#608:label",
+            "sourceSha256": "59a4a3f7f7caa0604323a82e8f72f6feda8e82aca70fc57c342a37681b4fe0a9",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingAudio",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#604:label",
+            "sourceSha256": "59a4a3f7f7caa0604323a82e8f72f6feda8e82aca70fc57c342a37681b4fe0a9",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "AntiAliasing": {
+      "macos": {
+        "type": "SettingDropdown",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#609:label",
+            "sourceSha256": "c77c3af22c6429b25a76454a634ca6633f1c04644ac6155511353251037b8a18",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#609:option:0",
+            "sourceSha256": "ca7981b46ecf2c1787b6d76d81d9fd7fa0ca95842e2fcc2a452869891a9334d1",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#609:option:1",
+            "sourceSha256": "130011756125313c72f2cab730db4347e2841526d236a89cb25f38789fa49229",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingDropdown",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#605:label",
+            "sourceSha256": "c77c3af22c6429b25a76454a634ca6633f1c04644ac6155511353251037b8a18",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#605:option:0",
+            "sourceSha256": "ca7981b46ecf2c1787b6d76d81d9fd7fa0ca95842e2fcc2a452869891a9334d1",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#605:option:1",
+            "sourceSha256": "130011756125313c72f2cab730db4347e2841526d236a89cb25f38789fa49229",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "Audio": {
+      "macos": {
+        "type": "SettingGroup",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#610:label",
+            "sourceSha256": "bc1b88907d3b748af99cb9d4ffc07a0118dad5dab21a9dbdcc5a17a09641364a",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingGroup",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#606:label",
+            "sourceSha256": "bc1b88907d3b748af99cb9d4ffc07a0118dad5dab21a9dbdcc5a17a09641364a",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "CameraFOV": {
+      "macos": {
+        "type": "SettingFloatClamped",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#611:label",
+            "sourceSha256": "6a3041fb3ecba1730c5177a37f2a234c8f72f47c888a859985d022b6da90170c",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingFloatClamped",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#607:label",
+            "sourceSha256": "6a3041fb3ecba1730c5177a37f2a234c8f72f47c888a859985d022b6da90170c",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "CrouchControl": {
+      "macos": {
+        "type": "SettingDropdown",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#612:label",
+            "sourceSha256": "43ff6e9485bf371e43a14968a28d1310e6965bfcdfc3e5a02d31538df7cff5fa",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#612:option:0",
+            "sourceSha256": "91d6e30620d99810116e7a5b5dec65628fb31c51a713a259d9aff5059a2961a5",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#612:option:1",
+            "sourceSha256": "3d03a1dea561d0dbeadf0694dd44a3398e3e0bfecbb88bcf7d4a6d9e8b91e409",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:2": {
+            "id": "sharedassets0.assets#612:option:2",
+            "sourceSha256": "8e685d5409b3a543b1cadcc35b095d64847867539c12b21a36d55991ca0cdce1",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingDropdown",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#608:label",
+            "sourceSha256": "43ff6e9485bf371e43a14968a28d1310e6965bfcdfc3e5a02d31538df7cff5fa",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#608:option:0",
+            "sourceSha256": "91d6e30620d99810116e7a5b5dec65628fb31c51a713a259d9aff5059a2961a5",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#608:option:1",
+            "sourceSha256": "3d03a1dea561d0dbeadf0694dd44a3398e3e0bfecbb88bcf7d4a6d9e8b91e409",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:2": {
+            "id": "sharedassets0.assets#608:option:2",
+            "sourceSha256": "8e685d5409b3a543b1cadcc35b095d64847867539c12b21a36d55991ca0cdce1",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "Gameplay": {
+      "macos": {
+        "type": "SettingGroup",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#613:label",
+            "sourceSha256": "31bcb8940fffb7d1328e4d989be6708a48e564d490a873652d6ea64f58156711",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingGroup",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#609:label",
+            "sourceSha256": "31bcb8940fffb7d1328e4d989be6708a48e564d490a873652d6ea64f58156711",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "Graphics": {
+      "macos": {
+        "type": "SettingGroup",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#614:label",
+            "sourceSha256": "a874fca87cdd5e4e677086421a024eba3831c31f72451a6e5080e66bbd772ee9",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingGroup",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#610:label",
+            "sourceSha256": "a874fca87cdd5e4e677086421a024eba3831c31f72451a6e5080e66bbd772ee9",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "HintGlyphType": {
+      "macos": {
+        "type": "SettingDropdown",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#615:label",
+            "sourceSha256": "6c359dddb1d4c36e98b90e43341b0daada05baa8b869320fed94d4e5ea26cb78",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#615:option:0",
+            "sourceSha256": "0286249762f7c94349cdc0ba3bb2255baf9a80036e2193ead1d77696f888582f",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#615:option:1",
+            "sourceSha256": "449b321e81007dfc8fe13cca852d2252d96ec4a022187f4e1178cf974774e010",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:2": {
+            "id": "sharedassets0.assets#615:option:2",
+            "sourceSha256": "70bdaa0328d3781615ce5761cbb0aad27eb2a3394c7f11a64103406257993d0a",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:3": {
+            "id": "sharedassets0.assets#615:option:3",
+            "sourceSha256": "2316810a5de343dd59d15e5f5c4f47e4c5177540f68bc4747286cce83bfd5d39",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingDropdown",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#611:label",
+            "sourceSha256": "6c359dddb1d4c36e98b90e43341b0daada05baa8b869320fed94d4e5ea26cb78",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#611:option:0",
+            "sourceSha256": "0286249762f7c94349cdc0ba3bb2255baf9a80036e2193ead1d77696f888582f",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#611:option:1",
+            "sourceSha256": "449b321e81007dfc8fe13cca852d2252d96ec4a022187f4e1178cf974774e010",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:2": {
+            "id": "sharedassets0.assets#611:option:2",
+            "sourceSha256": "70bdaa0328d3781615ce5761cbb0aad27eb2a3394c7f11a64103406257993d0a",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:3": {
+            "id": "sharedassets0.assets#611:option:3",
+            "sourceSha256": "2316810a5de343dd59d15e5f5c4f47e4c5177540f68bc4747286cce83bfd5d39",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "LookInvertY": {
+      "macos": {
+        "type": "SettingDropdown",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#606:label",
+            "sourceSha256": "fd9baf7f335aa154969dff7c0d8eb49dc17562791225c1841db6dc0b0ab2b907",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#606:option:0",
+            "sourceSha256": "ca7981b46ecf2c1787b6d76d81d9fd7fa0ca95842e2fcc2a452869891a9334d1",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#606:option:1",
+            "sourceSha256": "130011756125313c72f2cab730db4347e2841526d236a89cb25f38789fa49229",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": null
+    },
+    "MasterVolume": {
+      "macos": {
+        "type": "SettingAudio",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#616:label",
+            "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingAudio",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#612:label",
+            "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          }
+        }
+      }
+    },
+    "MouseSensitivity": {
+      "macos": {
+        "type": "SettingFloatClamped",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#617:label",
+            "sourceSha256": "4571896d8a4d41629ac328e4eecad4529c5d65c1f965a892dce6bdba97f2ee7b",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingFloatClamped",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#613:label",
+            "sourceSha256": "4571896d8a4d41629ac328e4eecad4529c5d65c1f965a892dce6bdba97f2ee7b",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "MusicVolume": {
+      "macos": {
+        "type": "SettingAudio",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#618:label",
+            "sourceSha256": "b3f848c2a09aa9edaeebc4ebd601839b2777403991aa366387d7c13cea1945b3",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingAudio",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#614:label",
+            "sourceSha256": "b3f848c2a09aa9edaeebc4ebd601839b2777403991aa366387d7c13cea1945b3",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "Resolution": {
+      "macos": {
+        "type": "SettingResolution",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#619:label",
+            "sourceSha256": "d4055fafa3794fa88b1e89e70c167d5a9575067a1442a6d94e9520d65a575378",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#619:option:0",
+            "sourceSha256": "2a1c98bfa5a43cffcf1674e0d71857d4cc92186f21b46de8a0dbbea4b7a21698",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#619:option:1",
+            "sourceSha256": "ed2d20ed8daf0a16d163898b6a9b44f913b7df226eeb2e12fc5455d6c18d8d8d",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:2": {
+            "id": "sharedassets0.assets#619:option:2",
+            "sourceSha256": "0dc81d4e08bd78df4a9e269452f42bb7a880f15f374cd869733e7f8c84f06364",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:3": {
+            "id": "sharedassets0.assets#619:option:3",
+            "sourceSha256": "1afa3ce0d59fe52312623068b150e70c9b4ce8a7fd1517d655f74f304caea899",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:4": {
+            "id": "sharedassets0.assets#619:option:4",
+            "sourceSha256": "b4edf20d9db8cc2ec5f00b49d55bb8f7e33fd58da95f1b6584e038ba4712bdfa",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:5": {
+            "id": "sharedassets0.assets#619:option:5",
+            "sourceSha256": "f1f1d04a4b9f3a9f15dbbcde3c7b539a0ade3c28fd178fe069cff44d6b1f99ce",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:6": {
+            "id": "sharedassets0.assets#619:option:6",
+            "sourceSha256": "09eb5b5d8f808425e3ec599f72ff79160e482d0ead5cb875c4cad3f635e855ed",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:7": {
+            "id": "sharedassets0.assets#619:option:7",
+            "sourceSha256": "0172660a06b9c643d35768c3b6506128194fd9e698e30f31ea9f378eff5a67fd",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:8": {
+            "id": "sharedassets0.assets#619:option:8",
+            "sourceSha256": "9caa1a13b1251c62d071cb8f3b15a7a17dec4eeab5698a2243211241be65de58",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:9": {
+            "id": "sharedassets0.assets#619:option:9",
+            "sourceSha256": "fb44ee15cfec07b72936f303f1cf9bf35501bc9389b9eed7e0a7e164fba726e9",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:10": {
+            "id": "sharedassets0.assets#619:option:10",
+            "sourceSha256": "0cbe306b7f527aa2e345b14edbb9ab25c914102b6c2a0adc193c534621933b91",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:11": {
+            "id": "sharedassets0.assets#619:option:11",
+            "sourceSha256": "3bbb204f1ba9d8b116ca90b362c168c15e23a9cd8cde99cc4f508cf211f0f4d5",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:12": {
+            "id": "sharedassets0.assets#619:option:12",
+            "sourceSha256": "8c6b0f41887f2628e8d0cec36acfbf41915c357c4540e53e3ac1931d4fd4867f",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:13": {
+            "id": "sharedassets0.assets#619:option:13",
+            "sourceSha256": "e999370ea22b6b2ef3591f66fab2a9c089732df65b9db19bf1b8dd33e2cb934f",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:14": {
+            "id": "sharedassets0.assets#619:option:14",
+            "sourceSha256": "9719041b41d94e79e117b7a9d56ff7b0734a3d13adebea7f8546ba3abe4029e5",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:15": {
+            "id": "sharedassets0.assets#619:option:15",
+            "sourceSha256": "e34baf9cfd25b2d35373e53ad12cae5f1fd77b5bbc8126b96f7ad9d6131a9d36",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:16": {
+            "id": "sharedassets0.assets#619:option:16",
+            "sourceSha256": "352f53b6cce31316a9aae76037d5c7be455f7245b745e08e2bb38179d25c8695",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:17": {
+            "id": "sharedassets0.assets#619:option:17",
+            "sourceSha256": "e4ebaf52f7566863dab15cf5f7f08da4a9b05b29355af65acb0e2421cffb89b1",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:18": {
+            "id": "sharedassets0.assets#619:option:18",
+            "sourceSha256": "64a2db0fad081811c5c522a45d0770f6b82135b7cc695766074a3f79c50ac121",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:19": {
+            "id": "sharedassets0.assets#619:option:19",
+            "sourceSha256": "539464f914612d6a6b1b73666212e92573a570582e029d2bfcd60b3a5b2f4023",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:20": {
+            "id": "sharedassets0.assets#619:option:20",
+            "sourceSha256": "da83bdedfebb1ea5c09ca7ea4c24c86c76faefce65596dd71dfe1961feef0e04",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:21": {
+            "id": "sharedassets0.assets#619:option:21",
+            "sourceSha256": "d354da34336e01e3cf8f9a0ab96facd8e6da8ebabb163b7f2a0d936780371187",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:22": {
+            "id": "sharedassets0.assets#619:option:22",
+            "sourceSha256": "71eccd10869e6b1a39a01a2c370d7ac44609d693694bfaea363678eb5e2e67a4",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:23": {
+            "id": "sharedassets0.assets#619:option:23",
+            "sourceSha256": "89e0d0a28af8831d73a79757b2962335f14843b26e9f20666a127f2e89d83f6a",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:24": {
+            "id": "sharedassets0.assets#619:option:24",
+            "sourceSha256": "a0c37c8aeec83439b247f973e9f5c7fbcd034cc00c25c45cb2842b96d41cc3ef",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:25": {
+            "id": "sharedassets0.assets#619:option:25",
+            "sourceSha256": "80794edbd3b4ae53e8a2e144db4be3fb82a7ac5ae60890367288bdad9cf7d5af",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:26": {
+            "id": "sharedassets0.assets#619:option:26",
+            "sourceSha256": "505d95c3a95b02d06a6854d12761105218d76900358d41f5715ba00339932226",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:27": {
+            "id": "sharedassets0.assets#619:option:27",
+            "sourceSha256": "c5f697e52cc62483efccb7e36403976d0ddb294bd09772b9adb71c616e649f14",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:28": {
+            "id": "sharedassets0.assets#619:option:28",
+            "sourceSha256": "becbfc4f53b7af3a3071ff3bb42c381fdca08ab267f89039b68ce8da28531862",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:29": {
+            "id": "sharedassets0.assets#619:option:29",
+            "sourceSha256": "42167fa4ac390d0d8bf3a6c6425611d639fdadac3b77850822c42586477f288d",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:30": {
+            "id": "sharedassets0.assets#619:option:30",
+            "sourceSha256": "be92a7d5cbc15006983d9afb24555f226c312bf89e2f3dc5d79bc6be9943c957",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:31": {
+            "id": "sharedassets0.assets#619:option:31",
+            "sourceSha256": "c45bb0160b74c55f78835e9636026b908d2483aaa83049de52b5fe48f6906fed",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:32": {
+            "id": "sharedassets0.assets#619:option:32",
+            "sourceSha256": "f50f106932878dc6f4476ca05c64b40bb5ac3b09a71fabe286f1baf2ea1f580c",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:33": {
+            "id": "sharedassets0.assets#619:option:33",
+            "sourceSha256": "456f5e08e2ba7909ade1593e9eb5de914212e4a2b990129597316a13bf558efc",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:34": {
+            "id": "sharedassets0.assets#619:option:34",
+            "sourceSha256": "f28d8e16f34ec8636691080803a4964bd5833102164184a6718d829ff123853e",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:35": {
+            "id": "sharedassets0.assets#619:option:35",
+            "sourceSha256": "a6a17018fba82fd5eeb9a5e15b2f79bc698125ad58d92791fc9b1e0116cedf9b",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:36": {
+            "id": "sharedassets0.assets#619:option:36",
+            "sourceSha256": "596d8d7aed6ddc6981c9ec218fb37f5d908fed235c15c1058eac95f64f08ab1e",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:37": {
+            "id": "sharedassets0.assets#619:option:37",
+            "sourceSha256": "4a0f2d87e9a55935938181c7765d6d5ebe0f96827e1f0d1ad46499fc4c6a75a5",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:38": {
+            "id": "sharedassets0.assets#619:option:38",
+            "sourceSha256": "a22b3b47809f5fd8fa78447db467c403514d8cb4fbb79052bbcfda77aad86078",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:39": {
+            "id": "sharedassets0.assets#619:option:39",
+            "sourceSha256": "1810e8cce36b1afdc2fadab79303410a5d2779641385c060f3a81dd94053db81",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:40": {
+            "id": "sharedassets0.assets#619:option:40",
+            "sourceSha256": "f7704c01e197fa580dc812cf8689755a1a465f6faf9200a80a26cfd50193dc32",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:41": {
+            "id": "sharedassets0.assets#619:option:41",
+            "sourceSha256": "fdd34900518dec7efe42dca5dc914cb7c7f444393b5c1106278066c2cc9bc4eb",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingResolution",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#615:label",
+            "sourceSha256": "d4055fafa3794fa88b1e89e70c167d5a9575067a1442a6d94e9520d65a575378",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#615:option:0",
+            "sourceSha256": "2a1c98bfa5a43cffcf1674e0d71857d4cc92186f21b46de8a0dbbea4b7a21698",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#615:option:1",
+            "sourceSha256": "ed2d20ed8daf0a16d163898b6a9b44f913b7df226eeb2e12fc5455d6c18d8d8d",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:2": {
+            "id": "sharedassets0.assets#615:option:2",
+            "sourceSha256": "0dc81d4e08bd78df4a9e269452f42bb7a880f15f374cd869733e7f8c84f06364",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:3": {
+            "id": "sharedassets0.assets#615:option:3",
+            "sourceSha256": "1afa3ce0d59fe52312623068b150e70c9b4ce8a7fd1517d655f74f304caea899",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:4": {
+            "id": "sharedassets0.assets#615:option:4",
+            "sourceSha256": "b4edf20d9db8cc2ec5f00b49d55bb8f7e33fd58da95f1b6584e038ba4712bdfa",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:5": {
+            "id": "sharedassets0.assets#615:option:5",
+            "sourceSha256": "f1f1d04a4b9f3a9f15dbbcde3c7b539a0ade3c28fd178fe069cff44d6b1f99ce",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:6": {
+            "id": "sharedassets0.assets#615:option:6",
+            "sourceSha256": "09eb5b5d8f808425e3ec599f72ff79160e482d0ead5cb875c4cad3f635e855ed",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:7": {
+            "id": "sharedassets0.assets#615:option:7",
+            "sourceSha256": "0172660a06b9c643d35768c3b6506128194fd9e698e30f31ea9f378eff5a67fd",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:8": {
+            "id": "sharedassets0.assets#615:option:8",
+            "sourceSha256": "9caa1a13b1251c62d071cb8f3b15a7a17dec4eeab5698a2243211241be65de58",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:9": {
+            "id": "sharedassets0.assets#615:option:9",
+            "sourceSha256": "fb44ee15cfec07b72936f303f1cf9bf35501bc9389b9eed7e0a7e164fba726e9",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:10": {
+            "id": "sharedassets0.assets#615:option:10",
+            "sourceSha256": "0cbe306b7f527aa2e345b14edbb9ab25c914102b6c2a0adc193c534621933b91",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:11": {
+            "id": "sharedassets0.assets#615:option:11",
+            "sourceSha256": "3bbb204f1ba9d8b116ca90b362c168c15e23a9cd8cde99cc4f508cf211f0f4d5",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:12": {
+            "id": "sharedassets0.assets#615:option:12",
+            "sourceSha256": "8c6b0f41887f2628e8d0cec36acfbf41915c357c4540e53e3ac1931d4fd4867f",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:13": {
+            "id": "sharedassets0.assets#615:option:13",
+            "sourceSha256": "e999370ea22b6b2ef3591f66fab2a9c089732df65b9db19bf1b8dd33e2cb934f",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:14": {
+            "id": "sharedassets0.assets#615:option:14",
+            "sourceSha256": "9719041b41d94e79e117b7a9d56ff7b0734a3d13adebea7f8546ba3abe4029e5",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:15": {
+            "id": "sharedassets0.assets#615:option:15",
+            "sourceSha256": "e34baf9cfd25b2d35373e53ad12cae5f1fd77b5bbc8126b96f7ad9d6131a9d36",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:16": {
+            "id": "sharedassets0.assets#615:option:16",
+            "sourceSha256": "352f53b6cce31316a9aae76037d5c7be455f7245b745e08e2bb38179d25c8695",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:17": {
+            "id": "sharedassets0.assets#615:option:17",
+            "sourceSha256": "e4ebaf52f7566863dab15cf5f7f08da4a9b05b29355af65acb0e2421cffb89b1",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:18": {
+            "id": "sharedassets0.assets#615:option:18",
+            "sourceSha256": "64a2db0fad081811c5c522a45d0770f6b82135b7cc695766074a3f79c50ac121",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:19": {
+            "id": "sharedassets0.assets#615:option:19",
+            "sourceSha256": "539464f914612d6a6b1b73666212e92573a570582e029d2bfcd60b3a5b2f4023",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:20": {
+            "id": "sharedassets0.assets#615:option:20",
+            "sourceSha256": "da83bdedfebb1ea5c09ca7ea4c24c86c76faefce65596dd71dfe1961feef0e04",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:21": {
+            "id": "sharedassets0.assets#615:option:21",
+            "sourceSha256": "d354da34336e01e3cf8f9a0ab96facd8e6da8ebabb163b7f2a0d936780371187",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:22": {
+            "id": "sharedassets0.assets#615:option:22",
+            "sourceSha256": "71eccd10869e6b1a39a01a2c370d7ac44609d693694bfaea363678eb5e2e67a4",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:23": {
+            "id": "sharedassets0.assets#615:option:23",
+            "sourceSha256": "89e0d0a28af8831d73a79757b2962335f14843b26e9f20666a127f2e89d83f6a",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:24": {
+            "id": "sharedassets0.assets#615:option:24",
+            "sourceSha256": "a0c37c8aeec83439b247f973e9f5c7fbcd034cc00c25c45cb2842b96d41cc3ef",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:25": {
+            "id": "sharedassets0.assets#615:option:25",
+            "sourceSha256": "80794edbd3b4ae53e8a2e144db4be3fb82a7ac5ae60890367288bdad9cf7d5af",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:26": {
+            "id": "sharedassets0.assets#615:option:26",
+            "sourceSha256": "505d95c3a95b02d06a6854d12761105218d76900358d41f5715ba00339932226",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:27": {
+            "id": "sharedassets0.assets#615:option:27",
+            "sourceSha256": "c5f697e52cc62483efccb7e36403976d0ddb294bd09772b9adb71c616e649f14",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:28": {
+            "id": "sharedassets0.assets#615:option:28",
+            "sourceSha256": "becbfc4f53b7af3a3071ff3bb42c381fdca08ab267f89039b68ce8da28531862",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:29": {
+            "id": "sharedassets0.assets#615:option:29",
+            "sourceSha256": "42167fa4ac390d0d8bf3a6c6425611d639fdadac3b77850822c42586477f288d",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:30": {
+            "id": "sharedassets0.assets#615:option:30",
+            "sourceSha256": "be92a7d5cbc15006983d9afb24555f226c312bf89e2f3dc5d79bc6be9943c957",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:31": {
+            "id": "sharedassets0.assets#615:option:31",
+            "sourceSha256": "c45bb0160b74c55f78835e9636026b908d2483aaa83049de52b5fe48f6906fed",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:32": {
+            "id": "sharedassets0.assets#615:option:32",
+            "sourceSha256": "f50f106932878dc6f4476ca05c64b40bb5ac3b09a71fabe286f1baf2ea1f580c",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:33": {
+            "id": "sharedassets0.assets#615:option:33",
+            "sourceSha256": "456f5e08e2ba7909ade1593e9eb5de914212e4a2b990129597316a13bf558efc",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:34": {
+            "id": "sharedassets0.assets#615:option:34",
+            "sourceSha256": "f28d8e16f34ec8636691080803a4964bd5833102164184a6718d829ff123853e",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:35": {
+            "id": "sharedassets0.assets#615:option:35",
+            "sourceSha256": "a6a17018fba82fd5eeb9a5e15b2f79bc698125ad58d92791fc9b1e0116cedf9b",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:36": {
+            "id": "sharedassets0.assets#615:option:36",
+            "sourceSha256": "596d8d7aed6ddc6981c9ec218fb37f5d908fed235c15c1058eac95f64f08ab1e",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:37": {
+            "id": "sharedassets0.assets#615:option:37",
+            "sourceSha256": "4a0f2d87e9a55935938181c7765d6d5ebe0f96827e1f0d1ad46499fc4c6a75a5",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:38": {
+            "id": "sharedassets0.assets#615:option:38",
+            "sourceSha256": "a22b3b47809f5fd8fa78447db467c403514d8cb4fbb79052bbcfda77aad86078",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:39": {
+            "id": "sharedassets0.assets#615:option:39",
+            "sourceSha256": "1810e8cce36b1afdc2fadab79303410a5d2779641385c060f3a81dd94053db81",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:40": {
+            "id": "sharedassets0.assets#615:option:40",
+            "sourceSha256": "f7704c01e197fa580dc812cf8689755a1a465f6faf9200a80a26cfd50193dc32",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          },
+          "option:41": {
+            "id": "sharedassets0.assets#615:option:41",
+            "sourceSha256": "fdd34900518dec7efe42dca5dc914cb7c7f444393b5c1106278066c2cc9bc4eb",
+            "provisionalRole": "preserve-exactly",
+            "reason": "resolution option or empty value"
+          }
+        }
+      }
+    },
+    "ScreenBrightness": {
+      "macos": {
+        "type": "SettingFloatClamped",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#620:label",
+            "sourceSha256": "41ca171b0cbae01ecd042752e86f084517ddcdc2fcaee6cffe645c793e8c920b",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingFloatClamped",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#616:label",
+            "sourceSha256": "41ca171b0cbae01ecd042752e86f084517ddcdc2fcaee6cffe645c793e8c920b",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "SoundEffectsVolume": {
+      "macos": {
+        "type": "SettingAudio",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#621:label",
+            "sourceSha256": "de7b57b57b05d02090b4091094e2117271e7df2bf17553017bb0c634ec3492c0",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingAudio",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#617:label",
+            "sourceSha256": "de7b57b57b05d02090b4091094e2117271e7df2bf17553017bb0c634ec3492c0",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "SprayerReduceMotionSick": {
+      "macos": {
+        "type": "SettingDropdown",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#625:label",
+            "sourceSha256": "4d654c19179796ef3fbdc42f19d6672e77c4019836735fe9f75a01a473865c53",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#625:option:0",
+            "sourceSha256": "ca7981b46ecf2c1787b6d76d81d9fd7fa0ca95842e2fcc2a452869891a9334d1",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#625:option:1",
+            "sourceSha256": "130011756125313c72f2cab730db4347e2841526d236a89cb25f38789fa49229",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": null
+    },
+    "TargetFramerate": {
+      "macos": {
+        "type": "SettingFramerateTarget",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#622:label",
+            "sourceSha256": "42e7fdbd13ba2a01180ddea144aaba8b7b521582d2532d191d984ca6f450d526",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingFramerateTarget",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#618:label",
+            "sourceSha256": "42e7fdbd13ba2a01180ddea144aaba8b7b521582d2532d191d984ca6f450d526",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "VSync": {
+      "macos": {
+        "type": "SettingVSync",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#623:label",
+            "sourceSha256": "052810dae19607f552aa564781c53684750b211d124585f6f8fb070a2dc51b07",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#623:option:0",
+            "sourceSha256": "ca7981b46ecf2c1787b6d76d81d9fd7fa0ca95842e2fcc2a452869891a9334d1",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#623:option:1",
+            "sourceSha256": "130011756125313c72f2cab730db4347e2841526d236a89cb25f38789fa49229",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingVSync",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#619:label",
+            "sourceSha256": "052810dae19607f552aa564781c53684750b211d124585f6f8fb070a2dc51b07",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#619:option:0",
+            "sourceSha256": "ca7981b46ecf2c1787b6d76d81d9fd7fa0ca95842e2fcc2a452869891a9334d1",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#619:option:1",
+            "sourceSha256": "130011756125313c72f2cab730db4347e2841526d236a89cb25f38789fa49229",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    },
+    "WindowMode": {
+      "macos": {
+        "type": "SettingFullscreenMode",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#624:label",
+            "sourceSha256": "b63e857488f49396979935294718cbc9462fe7e9f0514dfd9eeb586c922eeb17",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#624:option:0",
+            "sourceSha256": "4883b7dfffb02e366fd8e3e6576b808a158fc81c647a616e605f981956bfff78",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#624:option:1",
+            "sourceSha256": "c461dbb2bab7d8bc64c03223ead55766cf4f897856579a7162e0e384249d83fc",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:2": {
+            "id": "sharedassets0.assets#624:option:2",
+            "sourceSha256": "da43a1983d819a4df8a4fa834c0e41559932021a1fbfb7373b4ebdcb01985393",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:3": {
+            "id": "sharedassets0.assets#624:option:3",
+            "sourceSha256": "3f26603a2748fed3da8a9a1ddde86da13bc41cb07f6389486cba34b72e9b8c44",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      },
+      "windows": {
+        "type": "SettingFullscreenMode",
+        "fields": {
+          "label": {
+            "id": "sharedassets0.assets#620:label",
+            "sourceSha256": "b63e857488f49396979935294718cbc9462fe7e9f0514dfd9eeb586c922eeb17",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:0": {
+            "id": "sharedassets0.assets#620:option:0",
+            "sourceSha256": "4883b7dfffb02e366fd8e3e6576b808a158fc81c647a616e605f981956bfff78",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:1": {
+            "id": "sharedassets0.assets#620:option:1",
+            "sourceSha256": "c461dbb2bab7d8bc64c03223ead55766cf4f897856579a7162e0e384249d83fc",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:2": {
+            "id": "sharedassets0.assets#620:option:2",
+            "sourceSha256": "da43a1983d819a4df8a4fa834c0e41559932021a1fbfb7373b4ebdcb01985393",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          },
+          "option:3": {
+            "id": "sharedassets0.assets#620:option:3",
+            "sourceSha256": "3f26603a2748fed3da8a9a1ddde86da13bc41cb07f6389486cba34b72e9b8c44",
+            "provisionalRole": "candidate",
+            "reason": "nonempty backup string; display role needs review"
+          }
+        }
+      }
+    }
+  },
+  "limitations": "Known serialized setting objects only. Asset-name pairing and field hashes do not establish runtime visibility, full semantic equivalence, dynamic options or all settings sources. Candidate roles are provisional."
+}
