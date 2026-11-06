@@ -22,6 +22,8 @@ The known 162 paired TMP UI fields and available settings backup strings have ha
 
 Local StreamingAssets now have a source-bound file inventory and separate exact comparison on two isolated copies, including 24 identical APV files per build. APV/catalog semantics and remote/dynamic resources remain unverified; this standalone check is not yet a release gate. See `localization/evidence/streaming-assets-preservation-20261107.md`.
 
+One provisional shared source union now consolidates the pinned Yarn, UI, settings, legacy UI and selected managed-code exports. Its 4,048 source records are not a visible-text count or a translation-ready inventory; see `localization/evidence/provisional-source-union-20261107.md` for inputs, hash and remaining classification gaps.
+
 ## Scope and process binding
 
 Source language English; requested locale `ru` → runtime `ru` selected at build time, replacing the English Yarn table in a separate build. This prototype is not an in-game language selector. Owner decisions: player and franchise contact use neutral wording; Alexander uses masculine forms; Igwyx is referred to with masculine forms without asserting gender; Max uses neutral forms without asserting gender. These rules do not establish other characters' gender or complete roster coverage.
