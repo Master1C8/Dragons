@@ -166,11 +166,16 @@ and full menu coverage, choices and translated text remain unverified.
 
   It reports the managed files used to generate schemas, selected dialogue and
   menu component pointers, fallback chain and source-font cmap. The saved result
-  for the pinned macOS build, including choice text, is
-  `localization/evidence/font-roles-choices-20261106.json`.
+  for the pinned macOS build, including choice and settings text, is
+  `localization/evidence/font-roles-settings-20261106.json`.
   Static font metadata and cmap coverage do not establish in-game readability,
   clipping or glyph rendering. The tool reads the installed source and does not
   extract or redistribute its font file.
+- `localization/probe_text_surfaces.py /path/to/Data`
+  counts selected component types in the pinned serialized assets without
+  exporting their text. The saved result is
+  `localization/evidence/text-surfaces-20261106.json`. It is a bounded discovery
+  aid, not a complete inventory or evidence that a component is reachable.
 - The original Yarn object was decoded and re-encoded byte for byte. A one-line
   synthetic replacement was built and read back; all 11,392 other Unity objects
   retained identical raw bytes in the saved asset.

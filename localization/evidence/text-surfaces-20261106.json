@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "globalScriptAssetSha256": "391640e8e7df097a0d377c7a16552975d4821688841ea3460ec99587f4061d9e",
+  "assets": {
+    "level0": {
+      "sourceSha256": "4cabf35993c6726ab29e5cb24a1ce74a0fdf3d8061b0de3437415e56bcfa72f7",
+      "selectedComponentCounts": {
+        "TMPro.TextMeshProUGUI": 12,
+        "UnityScriptableSettings.ScriptableSettingSpawner": 1
+      },
+      "unresolvedScriptReferences": 0
+    },
+    "level1": {
+      "sourceSha256": "6af2815f16cba00e935fe110023ec91421c7d4107c5d8d31f55b70039b17d618",
+      "selectedComponentCounts": {
+        "TMPro.TextMeshProUGUI": 14,
+        "UnityScriptableSettings.ScriptableSettingSpawner": 1
+      },
+      "unresolvedScriptReferences": 0
+    },
+    "level2": {
+      "sourceSha256": "8a65d8f397e103abf65a6c9daba7668a4efe8c70fbe36f6b6eed676aaa99d808",
+      "selectedComponentCounts": {
+        "TMPro.TextMeshProUGUI": 76,
+        "UnityScriptableSettings.ScriptableSettingSpawner": 1
+      },
+      "unresolvedScriptReferences": 0
+    },
+    "level3": {
+      "sourceSha256": "32805c0339b0b67b4cc1dd27f8e150419e3f7374132d630921700281a14b833e",
+      "selectedComponentCounts": {
+        "TMPro.TextMeshProUGUI": 6,
+        "UnityScriptableSettings.ScriptableSettingSpawner": 1
+      },
+      "unresolvedScriptReferences": 0
+    },
+    "level4": {
+      "sourceSha256": "1aeac3e3368bbf5d3198dd6aee5f0969677a13b162158bb592655fdef03ef030",
+      "selectedComponentCounts": {
+        "TMPro.TextMeshProUGUI": 6,
+        "UnityScriptableSettings.ScriptableSettingSpawner": 1
+      },
+      "unresolvedScriptReferences": 0
+    },
+    "level5": {
+      "sourceSha256": "3241f65111d9639a3e1434e4d5e7dd9aa946eac554675dc4627093638e0341c8",
+      "selectedComponentCounts": {
+        "TMPro.TextMeshProUGUI": 6,
+        "UnityScriptableSettings.ScriptableSettingSpawner": 1
+      },
+      "unresolvedScriptReferences": 0
+    },
+    "level6": {
+      "sourceSha256": "975954bc0796ab7b60f06f075b3b0ad8ce367d07cede726d53847b61fbe112f6",
+      "selectedComponentCounts": {
+        "TMPro.TextMeshProUGUI": 6,
+        "UnityScriptableSettings.ScriptableSettingSpawner": 1
+      },
+      "unresolvedScriptReferences": 0
+    },
+    "resources.assets": {
+      "sourceSha256": "fd20278f865e51fba3c1a922777031afb2a5d2d00fc10ee682296e32cc071974",
+      "selectedComponentCounts": {
+        "UnityEngine.UI.Text": 149
+      },
+      "unresolvedScriptReferences": 0,
+      "legacyTextRootNames": {
+        "DebugUIBitField": 33,
+        "DebugUIButton": 1,
+        "DebugUIColor": 9,
+        "DebugUIEnumField": 4,
+        "DebugUIEnumHistory": 2,
+        "DebugUIFloatField": 6,
+        "DebugUIFoldout": 1,
+        "DebugUIGroup": 1,
+        "DebugUIHandlerRenderingLayerField": 33,
+        "DebugUIIntField": 6,
+        "DebugUIMessageBox": 1,
+        "DebugUIObject": 2,
+        "DebugUIObjectList": 4,
+        "DebugUIObjectPopupField": 4,
+        "DebugUIPanel": 4,
+        "DebugUIProgressBar": 2,
+        "DebugUIRow": 1,
+        "DebugUIToggle": 1,
+        "DebugUIToggleHistory": 1,
+        "DebugUIUIntField": 6,
+        "DebugUIValue": 2,
+        "DebugUIValuePersistent": 2,
+        "DebugUIValueTuple": 2,
+        "DebugUIVector2": 5,
+        "DebugUIVector3": 7,
+        "DebugUIVector4": 9
+      },
+      "legacyTextUnresolvedHierarchyIds": []
+    },
+    "sharedassets0.assets": {
+      "sourceSha256": "40713b00ce12582eebc427c0104e59becf438eb15803725b2248be3471a96aeb",
+      "selectedComponentCounts": {
+        "TMPro.TextMeshProUGUI": 11,
+        "UnityEngine.Localization.Components.LocalizeStringEvent": 1
+      },
+      "unresolvedScriptReferences": 0
+    },
+    "sharedassets1.assets": {
+      "sourceSha256": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+      "selectedComponentCounts": {
+        "TMPro.TextMeshProUGUI": 1
+      },
+      "unresolvedScriptReferences": 0
+    }
+  },
+  "limitations": "Only selected component classes in these pinned serialized assets were counted. Resource presence and DebugUI ancestry do not prove runtime reachability. Addressables, code-generated strings, other classes and texture text were not inventoried."
+}

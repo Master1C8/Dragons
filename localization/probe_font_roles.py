@@ -98,7 +98,8 @@ def inspect(data):
         owner = name if file_id == 0 else item.assets_file.externals[file_id - 1].path.replace('\\', '/').rsplit('/', 1)[-1]
         return {'asset': name, 'pathId': path_id, 'fontAsset': owner,
                 'fontPathId': pointer['m_PathID'], 'fontSize': tree['m_fontSize'],
-                'autoSizing': tree['m_enableAutoSizing'], 'overflowMode': tree['m_overflowMode']}
+                'autoSizing': tree['m_enableAutoSizing'], 'fontSizeMin': tree['m_fontSizeMin'],
+                'fontSizeMax': tree['m_fontSizeMax'], 'overflowMode': tree['m_overflowMode']}
 
     primary = read_tree(obj('sharedassets0.assets', 627), generator)
     fallback = read_tree(obj('sharedassets0.assets', 626), generator)
@@ -121,9 +122,14 @@ def inspect(data):
             or options['lastLineText'] != {'m_FileID': 0, 'm_PathID': 3906}
             or option_item['text'] != {'m_FileID': 0, 'm_PathID': 11117}):
         raise ValueError('choice presenter links changed')
+    settings_dropdown = read_tree(obj('sharedassets0.assets', 672), generator)
+    if (settings_dropdown['m_CaptionText'] != {'m_FileID': 0, 'm_PathID': 682}
+            or settings_dropdown['m_ItemText'] != {'m_FileID': 0, 'm_PathID': 656}):
+        raise ValueError('settings dropdown text links changed')
     roles = ([role('level0', i) for i in range(5201, 5213)]
              + [role('level1', i) for i in (3899, 3900, 3906)]
-             + [role('sharedassets1.assets', 11117)])
+             + [role('sharedassets1.assets', 11117)]
+             + [role('sharedassets0.assets', i) for i in (650, 652, 656, 682)])
     return {
         'schema': 1, 'unityVersion': '6000.3.14f1', 'sourceHashes': EXPECTED_FILES,
         'managedGeneratorInputs': manifest,
@@ -131,6 +137,8 @@ def inspect(data):
         'optionsPresenter': {'asset': 'level1', 'pathId': 4284, 'lastLineText': 3906,
                              'optionPrefabAsset': prefab_owner, 'optionPrefabPathId': 10894,
                              'optionTextPathId': 11117},
+        'settingsDropdown': {'asset': 'sharedassets0.assets', 'pathId': 672,
+                             'captionTextPathId': 682, 'itemTextPathId': 656},
         'roles': roles,
         'primary': {'pathId': 627, 'name': primary['m_Name'], 'populationMode': primary['m_AtlasPopulationMode'],
                     'characterCount': len(primary['m_CharacterTable']), 'fallbacks': primary['m_FallbackFontAssetTable']},
