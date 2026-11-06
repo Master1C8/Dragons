@@ -1,0 +1,153 @@
+{
+  "schema": 1,
+  "platform": "macos",
+  "buildVersion": "9/12/2026_a93aa21a",
+  "files": {
+    "AddressablesLink/link.xml": "b78c3cbab27ece6465e4bcc4da74f12b070a6e68b2c9ec36838d6f88cfa9842d",
+    "StandaloneOSX/333908e17138c6bc348493caa4a1dab8_monoscripts_e368a6bbd9e65e516f776fec53f7147a.bundle": "de52ec4cf82ca5d48562830294ba9c10fd173b2a0b11f4765093148490f96c79",
+    "StandaloneOSX/localization-locales_assets_all.bundle": "02f8b06d25ed3ff6b73c107fb642d395570eb4373390d04a4109115337ec73d7",
+    "StandaloneOSX/unifiedraytracing_assets_all_909468e4da11be4f9133fe65d7bc7304.bundle": "56fad1163d20e72ec1ad5c5cdfa84c4ca9b53c9c4e7e730d99841a6921c9ea18",
+    "catalog.bin": "3d7c6f7c9e89b3604293cdead97988638c85edece345682c69b61cf7b283994c",
+    "catalog.hash": "1b9ddb598f497b6017ebb58d39bf2eb16603b5560b6991ef75b69a2c57e4ddff",
+    "settings.json": "9f3d6bd6e67eac3ff2fb4437ade10917197594f1664c31c9cdfa7f0efce9ffd8"
+  },
+  "settings": {
+    "m_buildTarget": "StandaloneOSX",
+    "m_SettingsHash": "e49359cde6e034c0127ef0426c06daf7",
+    "m_CatalogLocations": [
+      {
+        "m_Keys": [
+          "AddressablesMainContentCatalog"
+        ],
+        "m_InternalId": "{UnityEngine.AddressableAssets.Addressables.RuntimePath}/catalog.bin",
+        "m_Provider": "UnityEngine.AddressableAssets.ResourceProviders.ContentCatalogProvider",
+        "m_Dependencies": [],
+        "m_ResourceType": {
+          "m_AssemblyName": "Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "m_ClassName": "UnityEngine.AddressableAssets.ResourceLocators.ContentCatalogData"
+        },
+        "SerializedData": []
+      }
+    ],
+    "m_LogResourceManagerExceptions": true,
+    "m_ExtraInitializationData": [],
+    "m_DisableCatalogUpdateOnStart": false,
+    "m_IsLocalCatalogInBundle": false,
+    "m_CertificateHandlerType": {
+      "m_AssemblyName": "",
+      "m_ClassName": ""
+    },
+    "m_AddressablesVersion": "2.9.1",
+    "m_maxConcurrentWebRequests": 3,
+    "m_CatalogRequestsTimeout": 0
+  },
+  "bundles": [
+    {
+      "file": "StandaloneOSX/333908e17138c6bc348493caa4a1dab8_monoscripts_e368a6bbd9e65e516f776fec53f7147a.bundle",
+      "objectTypes": {
+        "AssetBundle": 1,
+        "MonoScript": 1
+      },
+      "containers": []
+    },
+    {
+      "file": "StandaloneOSX/localization-locales_assets_all.bundle",
+      "objectTypes": {
+        "AssetBundle": 1,
+        "MonoBehaviour": 1
+      },
+      "containers": [
+        {
+          "path": "Assets/Localization/English (en).asset",
+          "fileId": 0,
+          "pathId": -1847119570001700535
+        }
+      ]
+    },
+    {
+      "file": "StandaloneOSX/unifiedraytracing_assets_all_909468e4da11be4f9133fe65d7bc7304.bundle",
+      "objectTypes": {
+        "AssetBundle": 1,
+        "ComputeShader": 9
+      },
+      "containers": [
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Common/GeometryPool/GeometryPoolKernels.compute",
+          "fileId": 0,
+          "pathId": -2471702970626750698
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Common/Utilities/CopyBuffer.compute",
+          "fileId": 0,
+          "pathId": -8885878842296053008
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/CopyPositions.compute",
+          "fileId": 0,
+          "pathId": 5939885889696265979
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/bit_histogram.compute",
+          "fileId": 0,
+          "pathId": 3164824719157196687
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/block_reduce_part.compute",
+          "fileId": 0,
+          "pathId": 7992403927931287210
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/block_scan.compute",
+          "fileId": 0,
+          "pathId": -8614361062243906800
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/build_hlbvh.compute",
+          "fileId": 0,
+          "pathId": 1247156906503344666
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/restructure_bvh.compute",
+          "fileId": 0,
+          "pathId": -5275971275633246660
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/scatter.compute",
+          "fileId": 0,
+          "pathId": -6054605548209209676
+        }
+      ]
+    }
+  ],
+  "locale": {
+    "objectId": -1847119570001700535,
+    "rawSha256": "95e47be3836063187e102508ca4a77d886d480f5b2ab083060a03e9496542949",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": -4806130755568216638
+      },
+      "m_Name": "English (en)",
+      "m_Identifier": {
+        "m_Code": "en"
+      },
+      "m_Metadata": {
+        "m_Items": []
+      },
+      "m_LocaleName": "English (en)",
+      "m_CustomFormatCultureCode": "",
+      "m_UseCustomFormatter": 0,
+      "m_SortOrder": 10000,
+      "references": {
+        "version": 2,
+        "RefIds": []
+      }
+    }
+  },
+  "limitations": "Only the pinned local aa directory and decoded bundle objects. The binary catalog is hashed but not decoded; remote or dynamically loaded content, runtime lookup, other StreamingAssets and other resource families are not covered."
+}

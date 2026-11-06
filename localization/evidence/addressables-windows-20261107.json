@@ -1,0 +1,153 @@
+{
+  "schema": 1,
+  "platform": "windows",
+  "buildVersion": "9/9/2026_ee944596",
+  "files": {
+    "AddressablesLink/link.xml": "b78c3cbab27ece6465e4bcc4da74f12b070a6e68b2c9ec36838d6f88cfa9842d",
+    "StandaloneWindows64/333908e17138c6bc348493caa4a1dab8_monoscripts_e368a6bbd9e65e516f776fec53f7147a.bundle": "a900ba604d8f8b3ad8cbf8adc2e0fcf3a3a72f08952ac2653bbd4de096e02ce6",
+    "StandaloneWindows64/localization-locales_assets_all.bundle": "c859f8997d105b84d0ef8cbc3e1849e987f7c30048eea542f031b9124f361723",
+    "StandaloneWindows64/unifiedraytracing_assets_all_478cdda9ad8977ca6a223e37a17c1e28.bundle": "d41a972160df62c90428d9f1e302b4ca14ac09500446af5799f0f73d532c350a",
+    "catalog.bin": "3c384566fa98c6c20ba6d790424c97734532fb0be4403822f3a0b629d8b839fa",
+    "catalog.hash": "6c17d41c27621743ef111e1282db058c7bb799031e4ae2f7a52cae424161add9",
+    "settings.json": "ce0bb681a7e624b7db3df40a631ea89affe0e20387975b264bc2948a1cd376e6"
+  },
+  "settings": {
+    "m_buildTarget": "StandaloneWindows64",
+    "m_SettingsHash": "e49359cde6e034c0127ef0426c06daf7",
+    "m_CatalogLocations": [
+      {
+        "m_Keys": [
+          "AddressablesMainContentCatalog"
+        ],
+        "m_InternalId": "{UnityEngine.AddressableAssets.Addressables.RuntimePath}/catalog.bin",
+        "m_Provider": "UnityEngine.AddressableAssets.ResourceProviders.ContentCatalogProvider",
+        "m_Dependencies": [],
+        "m_ResourceType": {
+          "m_AssemblyName": "Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "m_ClassName": "UnityEngine.AddressableAssets.ResourceLocators.ContentCatalogData"
+        },
+        "SerializedData": []
+      }
+    ],
+    "m_LogResourceManagerExceptions": true,
+    "m_ExtraInitializationData": [],
+    "m_DisableCatalogUpdateOnStart": false,
+    "m_IsLocalCatalogInBundle": false,
+    "m_CertificateHandlerType": {
+      "m_AssemblyName": "",
+      "m_ClassName": ""
+    },
+    "m_AddressablesVersion": "2.9.1",
+    "m_maxConcurrentWebRequests": 3,
+    "m_CatalogRequestsTimeout": 0
+  },
+  "bundles": [
+    {
+      "file": "StandaloneWindows64/333908e17138c6bc348493caa4a1dab8_monoscripts_e368a6bbd9e65e516f776fec53f7147a.bundle",
+      "objectTypes": {
+        "AssetBundle": 1,
+        "MonoScript": 1
+      },
+      "containers": []
+    },
+    {
+      "file": "StandaloneWindows64/localization-locales_assets_all.bundle",
+      "objectTypes": {
+        "AssetBundle": 1,
+        "MonoBehaviour": 1
+      },
+      "containers": [
+        {
+          "path": "Assets/Localization/English (en).asset",
+          "fileId": 0,
+          "pathId": -1847119570001700535
+        }
+      ]
+    },
+    {
+      "file": "StandaloneWindows64/unifiedraytracing_assets_all_478cdda9ad8977ca6a223e37a17c1e28.bundle",
+      "objectTypes": {
+        "AssetBundle": 1,
+        "ComputeShader": 9
+      },
+      "containers": [
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Common/GeometryPool/GeometryPoolKernels.compute",
+          "fileId": 0,
+          "pathId": -2471702970626750698
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Common/Utilities/CopyBuffer.compute",
+          "fileId": 0,
+          "pathId": -8885878842296053008
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/CopyPositions.compute",
+          "fileId": 0,
+          "pathId": 5939885889696265979
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/bit_histogram.compute",
+          "fileId": 0,
+          "pathId": 3164824719157196687
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/block_reduce_part.compute",
+          "fileId": 0,
+          "pathId": 7992403927931287210
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/block_scan.compute",
+          "fileId": 0,
+          "pathId": -8614361062243906800
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/build_hlbvh.compute",
+          "fileId": 0,
+          "pathId": 1247156906503344666
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/restructure_bvh.compute",
+          "fileId": 0,
+          "pathId": -5275971275633246660
+        },
+        {
+          "path": "Packages/com.unity.render-pipelines.core/Runtime/UnifiedRayTracing/Compute/RadeonRays/kernels/scatter.compute",
+          "fileId": 0,
+          "pathId": -6054605548209209676
+        }
+      ]
+    }
+  ],
+  "locale": {
+    "objectId": -1847119570001700535,
+    "rawSha256": "95e47be3836063187e102508ca4a77d886d480f5b2ab083060a03e9496542949",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": -4806130755568216638
+      },
+      "m_Name": "English (en)",
+      "m_Identifier": {
+        "m_Code": "en"
+      },
+      "m_Metadata": {
+        "m_Items": []
+      },
+      "m_LocaleName": "English (en)",
+      "m_CustomFormatCultureCode": "",
+      "m_UseCustomFormatter": 0,
+      "m_SortOrder": 10000,
+      "references": {
+        "version": 2,
+        "RefIds": []
+      }
+    }
+  },
+  "limitations": "Only the pinned local aa directory and decoded bundle objects. The binary catalog is hashed but not decoded; remote or dynamically loaded content, runtime lookup, other StreamingAssets and other resource families are not covered."
+}
