@@ -109,6 +109,37 @@ It is an inventory, not a classified translation list. Review each candidate
 and preserve runtime values and proper names. Settings, code-generated text,
 other UI types and texture lettering are not covered by this mechanism.
 
+## Optional settings labels and choices
+
+Settings labels and dropdown choices are stored in separate scriptable objects;
+the TextMeshPro UI exporter above does not cover them. Install the pinned
+`localization/font_probe_requirements.txt` dependencies and use the original
+game data directory to export their fields:
+
+```sh
+"$PYTHON" localization/settings_locale.py "/path/to/Drag'N Wash.app/Contents/Resources/Data" \
+  --export settings-source.json
+```
+
+The export lists candidate `lines` and `preserveExactly` fields. It is not a
+classified translation inventory. Resolution option values and empty fallback
+labels are protected. Do not change option order, runtime values, IDs, other
+fields or active localization references. Construct a locale file with the same
+schema as the dialogue example, the settings export's `sourceObjectSha256`, and
+keys such as `sharedassets0.assets#606:label` or
+`sharedassets0.assets#606:option:0`. To include it in a copied application, pass
+`--settings-locale /path/to/settings-ru.json` to `build_game.py`; it can be
+combined with `--ui-dir`. The builder verifies the exact preceding UI changes,
+then verifies the merged settings asset before replacing that one file.
+Earlier files in a partially failed app build are not rolled back: preserve and
+inspect the incomplete output, and build again at a new path.
+
+The settings adapter accepts only the pinned macOS source and managed schema
+inputs, round-trips each supported settings object, preserves every unrelated
+serialized object and re-reads changed fields. It is still a prototype: runtime
+testing used an isolated, instrumented app with one artificial settings label,
+and full menu coverage, choices and translated text remain unverified.
+
 ## Evidence and limitations
 
 - A read-only, source-pinned font-role probe can be run with a Python environment

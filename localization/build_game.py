@@ -13,7 +13,7 @@ import ui_locale as ui
 ASSET_RELATIVE = Path('Contents/Resources/Data/sharedassets1.assets')
 
 
-def build(source, locale_file, requested, destination, ui_dir=None):
+def build(source, locale_file, requested, destination, ui_dir=None, settings_file=None):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -56,6 +56,11 @@ def build(source, locale_file, requested, destination, ui_dir=None):
             if code != requested:
                 raise ValueError(f'UI locale {code} does not match {requested}')
             ui_files[name] = file
+    settings = None
+    prepared_settings = None
+    if settings_file is not None:
+        import settings_locale as settings
+        prepared_settings = settings.make_asset(source / 'Contents/Resources/Data', settings_file, requested)
     obj.set_raw_data(changed)
     data = env.file.save()
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -85,6 +90,13 @@ def build(source, locale_file, requested, destination, ui_dir=None):
             raise ValueError('unsafe UI destination; partial copy retained')
         ui_count += ui.patch_into(source / 'Contents/Resources/Data', name, file, requested,
                                   target_ui, changed if name == 'sharedassets1.assets' else None)
+    settings_count = 0
+    if prepared_settings is not None:
+        target_settings = destination / 'Contents/Resources/Data' / settings.ASSET
+        if target_settings.is_symlink() or destination.resolve() not in target_settings.resolve().parents:
+            raise ValueError('unsafe settings destination; partial copy retained')
+        settings_count = settings.patch_into(source / 'Contents/Resources/Data', target_settings,
+                                             prepared_settings, ui_files.get(settings.ASSET))
     # The distribution contains a loose Steam identifier in the bundle root;
     # macOS refuses to seal a bundle with this file there. Preserve it next to
     # the executable, then sign only the copy with an ad-hoc signature.
@@ -105,6 +117,7 @@ def build(source, locale_file, requested, destination, ui_dir=None):
     subprocess.run(['codesign', '--verify', '--deep', '--strict', str(destination)], check=True)
     print(json.dumps({'locale': locale, 'translated': len(translations), 'sourceEntries': len(keys),
                       'dialogueAssetSha256BeforeUi': dl.sha(data), 'uiStrings': ui_count,
+                      'settingsStrings': settings_count,
                       'output': str(destination)}, ensure_ascii=False))
     print('Build complete. No game was installed or launched; UI coverage and font support remain unverified.')
 
@@ -116,8 +129,9 @@ def main():
     p.add_argument('--locale', required=True, help='must exactly match the locale file')
     p.add_argument('--output-app', type=Path, required=True)
     p.add_argument('--ui-dir', type=Path, help='optional directory of named UI locale JSON files')
+    p.add_argument('--settings-locale', type=Path, help='optional source-pinned settings locale JSON file')
     a = p.parse_args()
-    build(a.source_app, a.locale_file, a.locale, a.output_app, a.ui_dir)
+    build(a.source_app, a.locale_file, a.locale, a.output_app, a.ui_dir, a.settings_locale)
 
 
 if __name__ == '__main__':
