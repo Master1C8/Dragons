@@ -1,0 +1,868 @@
+{
+  "schema": 1,
+  "platform": "windows",
+  "assemblySha256": "b6f215bc0eef09035d800a2fab01bed0a8ffeba8f85ba00cfb329ebf009c1f90",
+  "methods": [
+    {
+      "signature": "ScriptableSettingString[] UnityScriptableSettings.SettingDropdown::GetLocalizedDropdowns()",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "ldfld",
+          "operand": "ScriptableSettingString[] UnityScriptableSettings.SettingDropdown::dropdownOptions"
+        },
+        {
+          "offset": 6,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "signature": "System.Void UnityScriptableSettings.SettingDropdown::SetValue(System.Int32)",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "ldc.i4.0",
+          "operand": null
+        },
+        {
+          "offset": 2,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 3,
+          "opcode": "ldfld",
+          "operand": "ScriptableSettingString[] UnityScriptableSettings.SettingDropdown::dropdownOptions"
+        },
+        {
+          "offset": 8,
+          "opcode": "ldlen",
+          "operand": null
+        },
+        {
+          "offset": 9,
+          "opcode": "conv.i4",
+          "operand": null
+        },
+        {
+          "offset": 10,
+          "opcode": "ldc.i4.1",
+          "operand": null
+        },
+        {
+          "offset": 11,
+          "opcode": "sub",
+          "operand": null
+        },
+        {
+          "offset": 12,
+          "opcode": "call",
+          "operand": "System.Int32 UnityEngine.Mathf::Clamp(System.Int32,System.Int32,System.Int32)"
+        },
+        {
+          "offset": 17,
+          "opcode": "starg.s",
+          "operand": "value"
+        },
+        {
+          "offset": 19,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 20,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 21,
+          "opcode": "call",
+          "operand": "System.Void UnityScriptableSettings.SettingInt::SetValue(System.Int32)"
+        },
+        {
+          "offset": 26,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "signature": "ScriptableSettingString[] UnityScriptableSettings.SettingResolution::GetLocalizedDropdowns()",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "call",
+          "operand": "UnityEngine.Resolution[] UnityEngine.Screen::get_resolutions()"
+        },
+        {
+          "offset": 5,
+          "opcode": "ldlen",
+          "operand": null
+        },
+        {
+          "offset": 6,
+          "opcode": "conv.i4",
+          "operand": null
+        },
+        {
+          "offset": 7,
+          "opcode": "stloc.0",
+          "operand": null
+        },
+        {
+          "offset": 8,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 9,
+          "opcode": "newarr",
+          "operand": "ScriptableSettingString"
+        },
+        {
+          "offset": 14,
+          "opcode": "stloc.1",
+          "operand": null
+        },
+        {
+          "offset": 15,
+          "opcode": "ldc.i4.0",
+          "operand": null
+        },
+        {
+          "offset": 16,
+          "opcode": "stloc.2",
+          "operand": null
+        },
+        {
+          "offset": 17,
+          "opcode": "br.s",
+          "operand": "IL_007d"
+        },
+        {
+          "offset": 19,
+          "opcode": "call",
+          "operand": "UnityEngine.RuntimePlatform UnityEngine.Application::get_platform()"
+        },
+        {
+          "offset": 24,
+          "opcode": "ldc.i4.2",
+          "operand": null
+        },
+        {
+          "offset": 25,
+          "opcode": "bne.un.s",
+          "operand": "IL_003f"
+        },
+        {
+          "offset": 27,
+          "opcode": "ldloc.1",
+          "operand": null
+        },
+        {
+          "offset": 28,
+          "opcode": "ldloc.2",
+          "operand": null
+        },
+        {
+          "offset": 29,
+          "opcode": "call",
+          "operand": "UnityEngine.Resolution[] UnityEngine.Screen::get_resolutions()"
+        },
+        {
+          "offset": 34,
+          "opcode": "ldloc.2",
+          "operand": null
+        },
+        {
+          "offset": 35,
+          "opcode": "ldelema",
+          "operand": "UnityEngine.Resolution"
+        },
+        {
+          "offset": 40,
+          "opcode": "constrained.",
+          "operand": "UnityEngine.Resolution"
+        },
+        {
+          "offset": 46,
+          "opcode": "callvirt",
+          "operand": "System.String System.Object::ToString()"
+        },
+        {
+          "offset": 51,
+          "opcode": "newobj",
+          "operand": "System.Void ScriptableSettingString::.ctor(System.String)"
+        },
+        {
+          "offset": 56,
+          "opcode": "stelem.any",
+          "operand": "ScriptableSettingString"
+        },
+        {
+          "offset": 61,
+          "opcode": "br.s",
+          "operand": "IL_0079"
+        },
+        {
+          "offset": 63,
+          "opcode": "call",
+          "operand": "UnityEngine.Resolution[] UnityEngine.Screen::get_resolutions()"
+        },
+        {
+          "offset": 68,
+          "opcode": "ldloc.2",
+          "operand": null
+        },
+        {
+          "offset": 69,
+          "opcode": "ldelem.any",
+          "operand": "UnityEngine.Resolution"
+        },
+        {
+          "offset": 74,
+          "opcode": "stloc.3",
+          "operand": null
+        },
+        {
+          "offset": 75,
+          "opcode": "ldloc.1",
+          "operand": null
+        },
+        {
+          "offset": 76,
+          "opcode": "ldloc.2",
+          "operand": null
+        },
+        {
+          "offset": 77,
+          "opcode": "ldstr",
+          "operand": "{0} x {1}"
+        },
+        {
+          "offset": 82,
+          "opcode": "ldloca.s",
+          "operand": "V_3"
+        },
+        {
+          "offset": 84,
+          "opcode": "call",
+          "operand": "System.Int32 UnityEngine.Resolution::get_width()"
+        },
+        {
+          "offset": 89,
+          "opcode": "box",
+          "operand": "System.Int32"
+        },
+        {
+          "offset": 94,
+          "opcode": "ldloca.s",
+          "operand": "V_3"
+        },
+        {
+          "offset": 96,
+          "opcode": "call",
+          "operand": "System.Int32 UnityEngine.Resolution::get_height()"
+        },
+        {
+          "offset": 101,
+          "opcode": "box",
+          "operand": "System.Int32"
+        },
+        {
+          "offset": 106,
+          "opcode": "call",
+          "operand": "System.String System.String::Format(System.String,System.Object,System.Object)"
+        },
+        {
+          "offset": 111,
+          "opcode": "newobj",
+          "operand": "System.Void ScriptableSettingString::.ctor(System.String)"
+        },
+        {
+          "offset": 116,
+          "opcode": "stelem.any",
+          "operand": "ScriptableSettingString"
+        },
+        {
+          "offset": 121,
+          "opcode": "ldloc.2",
+          "operand": null
+        },
+        {
+          "offset": 122,
+          "opcode": "ldc.i4.1",
+          "operand": null
+        },
+        {
+          "offset": 123,
+          "opcode": "add",
+          "operand": null
+        },
+        {
+          "offset": 124,
+          "opcode": "stloc.2",
+          "operand": null
+        },
+        {
+          "offset": 125,
+          "opcode": "ldloc.2",
+          "operand": null
+        },
+        {
+          "offset": 126,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 127,
+          "opcode": "blt.s",
+          "operand": "IL_0013"
+        },
+        {
+          "offset": 129,
+          "opcode": "ldloc.1",
+          "operand": null
+        },
+        {
+          "offset": 130,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "signature": "System.Void UnityScriptableSettings.SettingResolution::SetValue(System.Int32)",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "call",
+          "operand": "UnityEngine.Resolution[] UnityEngine.Screen::get_resolutions()"
+        },
+        {
+          "offset": 5,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 6,
+          "opcode": "conv.r4",
+          "operand": null
+        },
+        {
+          "offset": 7,
+          "opcode": "call",
+          "operand": "System.Int32 UnityEngine.Mathf::RoundToInt(System.Single)"
+        },
+        {
+          "offset": 12,
+          "opcode": "ldelem.any",
+          "operand": "UnityEngine.Resolution"
+        },
+        {
+          "offset": 17,
+          "opcode": "stloc.0",
+          "operand": null
+        },
+        {
+          "offset": 18,
+          "opcode": "call",
+          "operand": "UnityEngine.Resolution UnityEngine.Screen::get_currentResolution()"
+        },
+        {
+          "offset": 23,
+          "opcode": "stloc.1",
+          "operand": null
+        },
+        {
+          "offset": 24,
+          "opcode": "ldloca.s",
+          "operand": "V_1"
+        },
+        {
+          "offset": 26,
+          "opcode": "call",
+          "operand": "System.Int32 UnityEngine.Resolution::get_width()"
+        },
+        {
+          "offset": 31,
+          "opcode": "ldloca.s",
+          "operand": "V_0"
+        },
+        {
+          "offset": 33,
+          "opcode": "call",
+          "operand": "System.Int32 UnityEngine.Resolution::get_width()"
+        },
+        {
+          "offset": 38,
+          "opcode": "bne.un.s",
+          "operand": "IL_0073"
+        },
+        {
+          "offset": 40,
+          "opcode": "call",
+          "operand": "UnityEngine.Resolution UnityEngine.Screen::get_currentResolution()"
+        },
+        {
+          "offset": 45,
+          "opcode": "stloc.1",
+          "operand": null
+        },
+        {
+          "offset": 46,
+          "opcode": "ldloca.s",
+          "operand": "V_1"
+        },
+        {
+          "offset": 48,
+          "opcode": "call",
+          "operand": "System.Int32 UnityEngine.Resolution::get_height()"
+        },
+        {
+          "offset": 53,
+          "opcode": "ldloca.s",
+          "operand": "V_0"
+        },
+        {
+          "offset": 55,
+          "opcode": "call",
+          "operand": "System.Int32 UnityEngine.Resolution::get_height()"
+        },
+        {
+          "offset": 60,
+          "opcode": "bne.un.s",
+          "operand": "IL_0073"
+        },
+        {
+          "offset": 62,
+          "opcode": "call",
+          "operand": "UnityEngine.Resolution UnityEngine.Screen::get_currentResolution()"
+        },
+        {
+          "offset": 67,
+          "opcode": "stloc.1",
+          "operand": null
+        },
+        {
+          "offset": 68,
+          "opcode": "ldloca.s",
+          "operand": "V_1"
+        },
+        {
+          "offset": 70,
+          "opcode": "call",
+          "operand": "UnityEngine.RefreshRate UnityEngine.Resolution::get_refreshRateRatio()"
+        },
+        {
+          "offset": 75,
+          "opcode": "stloc.2",
+          "operand": null
+        },
+        {
+          "offset": 76,
+          "opcode": "ldloca.s",
+          "operand": "V_2"
+        },
+        {
+          "offset": 78,
+          "opcode": "call",
+          "operand": "System.Double UnityEngine.RefreshRate::get_value()"
+        },
+        {
+          "offset": 83,
+          "opcode": "ldloca.s",
+          "operand": "V_0"
+        },
+        {
+          "offset": 85,
+          "opcode": "call",
+          "operand": "UnityEngine.RefreshRate UnityEngine.Resolution::get_refreshRateRatio()"
+        },
+        {
+          "offset": 90,
+          "opcode": "stloc.2",
+          "operand": null
+        },
+        {
+          "offset": 91,
+          "opcode": "ldloca.s",
+          "operand": "V_2"
+        },
+        {
+          "offset": 93,
+          "opcode": "call",
+          "operand": "System.Double UnityEngine.RefreshRate::get_value()"
+        },
+        {
+          "offset": 98,
+          "opcode": "sub",
+          "operand": null
+        },
+        {
+          "offset": 99,
+          "opcode": "call",
+          "operand": "System.Double System.Math::Abs(System.Double)"
+        },
+        {
+          "offset": 104,
+          "opcode": "ldc.r8",
+          "operand": "0,009999999776482582"
+        },
+        {
+          "offset": 113,
+          "opcode": "ble.un.s",
+          "operand": "IL_0092"
+        },
+        {
+          "offset": 115,
+          "opcode": "ldloca.s",
+          "operand": "V_0"
+        },
+        {
+          "offset": 117,
+          "opcode": "call",
+          "operand": "System.Int32 UnityEngine.Resolution::get_width()"
+        },
+        {
+          "offset": 122,
+          "opcode": "ldloca.s",
+          "operand": "V_0"
+        },
+        {
+          "offset": 124,
+          "opcode": "call",
+          "operand": "System.Int32 UnityEngine.Resolution::get_height()"
+        },
+        {
+          "offset": 129,
+          "opcode": "call",
+          "operand": "UnityEngine.FullScreenMode UnityEngine.Screen::get_fullScreenMode()"
+        },
+        {
+          "offset": 134,
+          "opcode": "ldloca.s",
+          "operand": "V_0"
+        },
+        {
+          "offset": 136,
+          "opcode": "call",
+          "operand": "UnityEngine.RefreshRate UnityEngine.Resolution::get_refreshRateRatio()"
+        },
+        {
+          "offset": 141,
+          "opcode": "call",
+          "operand": "System.Void UnityEngine.Screen::SetResolution(System.Int32,System.Int32,UnityEngine.FullScreenMode,UnityEngine.RefreshRate)"
+        },
+        {
+          "offset": 146,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 147,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 148,
+          "opcode": "call",
+          "operand": "System.Void UnityScriptableSettings.SettingDropdown::SetValue(System.Int32)"
+        },
+        {
+          "offset": 153,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "signature": "System.Void UnityScriptableSettings.SettingFullscreenMode::SetValue(System.Int32)",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "switch",
+          "operand": "IL_0018,IL_0020,IL_0028,IL_0030"
+        },
+        {
+          "offset": 22,
+          "opcode": "br.s",
+          "operand": "IL_0036"
+        },
+        {
+          "offset": 24,
+          "opcode": "ldc.i4.0",
+          "operand": null
+        },
+        {
+          "offset": 25,
+          "opcode": "call",
+          "operand": "System.Void UnityEngine.Screen::set_fullScreenMode(UnityEngine.FullScreenMode)"
+        },
+        {
+          "offset": 30,
+          "opcode": "br.s",
+          "operand": "IL_0036"
+        },
+        {
+          "offset": 32,
+          "opcode": "ldc.i4.1",
+          "operand": null
+        },
+        {
+          "offset": 33,
+          "opcode": "call",
+          "operand": "System.Void UnityEngine.Screen::set_fullScreenMode(UnityEngine.FullScreenMode)"
+        },
+        {
+          "offset": 38,
+          "opcode": "br.s",
+          "operand": "IL_0036"
+        },
+        {
+          "offset": 40,
+          "opcode": "ldc.i4.2",
+          "operand": null
+        },
+        {
+          "offset": 41,
+          "opcode": "call",
+          "operand": "System.Void UnityEngine.Screen::set_fullScreenMode(UnityEngine.FullScreenMode)"
+        },
+        {
+          "offset": 46,
+          "opcode": "br.s",
+          "operand": "IL_0036"
+        },
+        {
+          "offset": 48,
+          "opcode": "ldc.i4.3",
+          "operand": null
+        },
+        {
+          "offset": 49,
+          "opcode": "call",
+          "operand": "System.Void UnityEngine.Screen::set_fullScreenMode(UnityEngine.FullScreenMode)"
+        },
+        {
+          "offset": 54,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 55,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 56,
+          "opcode": "call",
+          "operand": "System.Void UnityScriptableSettings.SettingDropdown::SetValue(System.Int32)"
+        },
+        {
+          "offset": 61,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "signature": "System.Void UnityScriptableSettings.SettingVSync::SetValue(System.Int32)",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "conv.r4",
+          "operand": null
+        },
+        {
+          "offset": 2,
+          "opcode": "call",
+          "operand": "System.Int32 UnityEngine.Mathf::RoundToInt(System.Single)"
+        },
+        {
+          "offset": 7,
+          "opcode": "ldc.i4.0",
+          "operand": null
+        },
+        {
+          "offset": 8,
+          "opcode": "ldc.i4.4",
+          "operand": null
+        },
+        {
+          "offset": 9,
+          "opcode": "call",
+          "operand": "System.Int32 UnityEngine.Mathf::Clamp(System.Int32,System.Int32,System.Int32)"
+        },
+        {
+          "offset": 14,
+          "opcode": "call",
+          "operand": "System.Void UnityEngine.QualitySettings::set_vSyncCount(System.Int32)"
+        },
+        {
+          "offset": 19,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 20,
+          "opcode": "ldarg.1",
+          "operand": null
+        },
+        {
+          "offset": 21,
+          "opcode": "call",
+          "operand": "System.Void UnityScriptableSettings.SettingDropdown::SetValue(System.Int32)"
+        },
+        {
+          "offset": 26,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "signature": "System.String ScriptableSettingString::GetLocalizedString()",
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 1,
+          "opcode": "ldfld",
+          "operand": "UnityEngine.Localization.LocalizedString ScriptableSettingString::localizedString"
+        },
+        {
+          "offset": 6,
+          "opcode": "stloc.0",
+          "operand": null
+        },
+        {
+          "offset": 7,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 8,
+          "opcode": "brfalse.s",
+          "operand": "IL_0037"
+        },
+        {
+          "offset": 10,
+          "opcode": "ldloc.0",
+          "operand": null
+        },
+        {
+          "offset": 11,
+          "opcode": "callvirt",
+          "operand": "System.Boolean UnityEngine.Localization.LocalizedReference::get_IsEmpty()"
+        },
+        {
+          "offset": 16,
+          "opcode": "brtrue.s",
+          "operand": "IL_0037"
+        },
+        {
+          "offset": 18,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 19,
+          "opcode": "ldfld",
+          "operand": "UnityEngine.Localization.LocalizedString ScriptableSettingString::localizedString"
+        },
+        {
+          "offset": 24,
+          "opcode": "callvirt",
+          "operand": "System.String UnityEngine.Localization.LocalizedString::GetLocalizedString()"
+        },
+        {
+          "offset": 29,
+          "opcode": "call",
+          "operand": "System.Boolean System.String::IsNullOrEmpty(System.String)"
+        },
+        {
+          "offset": 34,
+          "opcode": "brfalse.s",
+          "operand": "IL_002b"
+        },
+        {
+          "offset": 36,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 37,
+          "opcode": "ldfld",
+          "operand": "System.String ScriptableSettingString::backupString"
+        },
+        {
+          "offset": 42,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 43,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 44,
+          "opcode": "ldfld",
+          "operand": "UnityEngine.Localization.LocalizedString ScriptableSettingString::localizedString"
+        },
+        {
+          "offset": 49,
+          "opcode": "callvirt",
+          "operand": "System.String UnityEngine.Localization.LocalizedString::GetLocalizedString()"
+        },
+        {
+          "offset": 54,
+          "opcode": "ret",
+          "operand": null
+        },
+        {
+          "offset": 55,
+          "opcode": "ldarg.0",
+          "operand": null
+        },
+        {
+          "offset": 56,
+          "opcode": "ldfld",
+          "operand": "System.String ScriptableSettingString::backupString"
+        },
+        {
+          "offset": 61,
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    }
+  ],
+  "limitations": "Selected static managed methods only. Runtime visibility, other callers, dynamic changes, external libraries and behavior on actual hardware are not established."
+}
