@@ -6,6 +6,7 @@ import unittest
 from unittest.mock import patch
 
 import UnityPy
+import compare_yarn_versions as versions
 import dialogue_locale as dl
 import map_ui_hierarchy as mapping
 import windows_ui_locale as adapter
@@ -105,6 +106,81 @@ class WindowsUIAdapterTests(unittest.TestCase):
                 objects = {o.path_id: o for o in UnityPy.load(output.read_bytes()).objects}
                 text, _ = dl.read_string(objects[int(key.split('#')[1])].get_raw_data(), 88)
                 self.assertEqual(text, f'ЖЮЯ {index}')
+
+    def make_combined_inputs(self):
+        spec = versions.BUILDS['windows']
+        keys, values, extras, _, _, _ = versions.load(SOURCE, spec)
+        source = dict(zip(keys, values))
+        line = 'line:4183ca7e'
+        synthetic = "Жж Ъъ Ьь <i>'Drag'n'wash franchise 223'...</i> 123"
+        yarn = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': spec['localizationSha256'],
+                'lines': {line: {'source': source[line], 'text': synthetic}}}
+        ui = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': spec['assetSha256'],
+              'lines': {'sharedassets1.assets#11105': {'source': 'Option Text', 'text': 'ЖЮЯ 501'}}}
+        yarn_path, ui_path = self.root / 'yarn.json', self.root / 'shared-ui.json'
+        yarn_path.write_text(json.dumps(yarn, ensure_ascii=False), encoding='utf-8')
+        ui_path.write_text(json.dumps(ui, ensure_ascii=False), encoding='utf-8')
+        return yarn, yarn_path, ui_path, keys, values, extras
+
+    def test_dialogue_and_ui_combine_without_changing_other_objects(self):
+        yarn, yarn_path, ui_path, keys, values, extras = self.make_combined_inputs()
+        original, rows = adapter.scan(SOURCE, 'sharedassets1.assets')
+        before = {(o.path_id, o.type.name): o.get_raw_data() for o in original.objects}
+        output = self.root / 'combined.assets'
+        result = adapter.build(SOURCE, 'sharedassets1.assets', ui_path, 'ru', output,
+                               dialogue_locale_file=yarn_path)
+        self.assertEqual((result['changedFields'], result['dialogueFields']), (1, 1))
+        actual = UnityPy.load(output.read_bytes())
+        after = {(o.path_id, o.type.name): o.get_raw_data() for o in actual.objects}
+        self.assertEqual(before.keys(), after.keys())
+        spec = versions.BUILDS['windows']
+        yarn_id = next(k for k in before if k[0] == spec['localization'])
+        ui_id = (11105, 'MonoBehaviour')
+        raw = before[yarn_id]
+        replacement = [yarn['lines'].get(k, {}).get('text', v) for k, v in zip(keys, values)]
+        self.assertEqual(after[yarn_id], dl.encode(raw, keys, replacement, extras))
+        self.assertEqual(dl.parse(after[yarn_id]), (keys, replacement, extras))
+        ui_raw = before[ui_id]
+        _, end = dl.read_string(ui_raw, 88)
+        self.assertEqual(after[ui_id], ui_raw[:88] + dl.write_string('ЖЮЯ 501') + ui_raw[end:])
+        for identity, raw in before.items():
+            if identity not in (yarn_id, ui_id):
+                self.assertEqual(after[identity], raw, identity)
+        self.assertEqual(result['outputSha256'], dl.sha(output.read_bytes()))
+
+    def test_combination_rejects_locale_mismatch_and_wrong_asset(self):
+        yarn, yarn_path, ui_path, _, _, _ = self.make_combined_inputs()
+        yarn['locale'] = 'fr'
+        yarn_path.write_text(json.dumps(yarn, ensure_ascii=False), encoding='utf-8')
+        output = self.root / 'combined.assets'
+        with self.assertRaisesRegex(ValueError, 'dialogue and UI locale codes do not match'):
+            adapter.build(SOURCE, 'sharedassets1.assets', ui_path, 'ru', output,
+                          dialogue_locale_file=yarn_path)
+        self.assertFalse(output.exists())
+        with self.assertRaisesRegex(ValueError, 'dialogue can be combined only'):
+            adapter.build(SOURCE, 'level1', self.locale, 'ru', output,
+                          dialogue_locale_file=yarn_path)
+        self.assertFalse(output.exists())
+
+    def test_combination_rejects_stale_dialogue_source(self):
+        yarn, yarn_path, ui_path, _, _, _ = self.make_combined_inputs()
+        yarn['lines']['line:4183ca7e']['source'] = 'stale source'
+        yarn_path.write_text(json.dumps(yarn, ensure_ascii=False), encoding='utf-8')
+        output = self.root / 'stale.assets'
+        with self.assertRaisesRegex(ValueError, 'source mismatch'):
+            adapter.build(SOURCE, 'sharedassets1.assets', ui_path, 'ru', output,
+                          dialogue_locale_file=yarn_path)
+        self.assertFalse(output.exists())
+
+    def test_combined_readback_failure_does_not_publish_either_change(self):
+        _, yarn_path, ui_path, _, _, _ = self.make_combined_inputs()
+        output = self.root / 'failed-combined.assets'
+        with patch.object(adapter, 'verify_output', side_effect=ValueError('combined readback failed')):
+            with self.assertRaisesRegex(ValueError, 'combined readback failed'):
+                adapter.build(SOURCE, 'sharedassets1.assets', ui_path, 'ru', output,
+                              dialogue_locale_file=yarn_path)
+        self.assertFalse(output.exists())
+        self.assertFalse(output.with_name(output.name + '.tmp').exists())
 
     def test_wrong_build_unknown_id_and_locale_are_rejected(self):
         with self.assertRaisesRegex(ValueError, 'unsupported Windows build identity'):

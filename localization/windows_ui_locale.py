@@ -78,7 +78,7 @@ def verify_output(path, baseline, changed):
             raise ValueError(f'saved Windows UI object differs: {identity}')
 
 
-def build(data, asset, locale_file, requested_locale, output):
+def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale_file=None):
     target = safe_output(data, output)
     env, rows = scan(data, asset)
     keys = list(rows)
@@ -87,6 +87,8 @@ def build(data, asset, locale_file, requested_locale, output):
                                          ui_map.WINDOWS_ASSETS[asset], yarn_semantics=False)
     if code != requested_locale:
         raise ValueError('requested UI locale does not match locale file')
+    if dialogue_locale_file is not None and asset != 'sharedassets1.assets':
+        raise ValueError('dialogue can be combined only with sharedassets1.assets')
     objects = {(o.path_id, o.type.name): o for o in env.objects}
     if len(objects) != len(env.objects):
         raise ValueError('duplicate source object identity')
@@ -98,6 +100,28 @@ def build(data, asset, locale_file, requested_locale, output):
         replacement = raw[:88] + dl.write_string(value) + raw[end:]
         changed[identity] = replacement
         obj.set_raw_data(replacement)
+    dialogue_count = 0
+    if dialogue_locale_file is not None:
+        spec = versions.BUILDS['windows']
+        yarn_keys, yarn_values, yarn_extras, _, _, _ = versions.load(data, spec)
+        dialogue_code, dialogue_text = dl.read_locale(dialogue_locale_file, yarn_keys, yarn_values,
+                                                      spec['localizationSha256'], yarn_semantics=True)
+        if dialogue_code != code:
+            raise ValueError('dialogue and UI locale codes do not match')
+        identities = [identity for identity in objects if identity[0] == spec['localization']]
+        if len(identities) != 1 or identities[0] in changed:
+            raise ValueError('unexpected or overlapping Windows Yarn object identity')
+        identity = identities[0]
+        raw = baseline[identity]
+        if dl.sha(raw) != spec['localizationSha256'] or dl.parse(raw) != (yarn_keys, yarn_values, yarn_extras):
+            raise ValueError('Windows Yarn source changed during validation')
+        replacements = [dialogue_text.get(key, value) for key, value in zip(yarn_keys, yarn_values)]
+        encoded = dl.encode(raw, yarn_keys, replacements, yarn_extras)
+        if dl.parse(encoded) != (yarn_keys, replacements, yarn_extras):
+            raise ValueError('combined Windows Yarn object failed structural read-back')
+        changed[identity] = encoded
+        objects[identity].set_raw_data(encoded)
+        dialogue_count = len(dialogue_text)
     result = env.file.save()
     tmp = target.with_name(target.name + '.tmp')
     fd = os.open(tmp, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o644)
@@ -112,8 +136,9 @@ def build(data, asset, locale_file, requested_locale, output):
     return {'platform': 'windows', 'build': versions.BUILDS['windows']['version'],
             'asset': asset, 'sourceSha256': ui_map.WINDOWS_ASSETS[asset], 'locale': code,
             'availableFields': len(rows), 'changedFields': len(translations),
+            'dialogueFields': dialogue_count,
             'outputSha256': dl.sha(result), 'output': str(target),
-            'limitations': 'Serialized TMP strings only. Source classification, dialogue, settings, code, fonts, packaging and runtime behavior require separate validation.'}
+            'limitations': 'UI and optional Yarn asset changes only. Source classification, settings, code, fonts, packaging and runtime behavior require separate validation.'}
 
 
 def main():
@@ -122,10 +147,12 @@ def main():
     p.add_argument('asset', choices=sorted(ui_map.WINDOWS_ASSETS))
     p.add_argument('--locale-file', required=True, type=Path)
     p.add_argument('--requested-locale', required=True)
+    p.add_argument('--dialogue-locale-file', type=Path, help='optional source-bound Yarn locale for sharedassets1.assets')
     p.add_argument('--output', required=True, type=Path)
     args = p.parse_args()
     print(json.dumps(build(args.source_data, args.asset, args.locale_file,
-                           args.requested_locale, args.output), ensure_ascii=False))
+                           args.requested_locale, args.output,
+                           dialogue_locale_file=args.dialogue_locale_file), ensure_ascii=False))
 
 
 if __name__ == '__main__':
