@@ -197,6 +197,10 @@ partial output, as with the other builder steps.
   overwritten. It is a probe, not an installer or a Windows release builder;
   Windows UI/settings, safe packaging, full gameplay and restoration still
   require separate validation.
+- `windows_slot_ui_probe.py` is likewise restricted to fresh test assets in
+  `localization/work/` and the three source-pinned Windows new-slot labels.
+  It checks their hierarchy and preserves all other serialized objects; it is
+  not a general Windows UI adapter or a player installer.
 
 - The installed Windows copy investigated separately reports build
   `9/9/2026_ee944596`, while the macOS build reports `9/12/2026_a93aa21a`.
