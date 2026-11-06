@@ -12,6 +12,8 @@ The presenter control-flow inspection now identifies inline and last-line fallba
 
 A bounded synthetic code probe now replaces the three `NEW` progress-field assignments in separate macOS and Windows assemblies while comparing every existing method body and preserving both menus' progress format strings. See `localization/evidence/slot-code-synthetic-20261107.md`. This is not integrated into the player builder or evidence of final display, save behavior, or actual Russian wording.
 
+The read-only `verify_combined_yarn_ui.py` now checks combined Yarn and UI changes in `sharedassets1.assets` against both pinned originals and exact supplied locale files. Positive synthetic and corruption controls passed on both builds; see `localization/evidence/combined-yarn-ui-preservation-20261107.md`. Other assets, settings, code, semantic and installation checks remain separate.
+
 Managed text-sink discovery now scans all pinned root managed DLLs and the source-pinned TMP dropdown configurations in both builds. Unity's built-in text defaults are retained as needs-review; static scope and exact findings are in `localization/evidence/managed-text-sinks-20261107.md`.
 
 A standalone Yarn-only preservation check now compares the complete source object inventory and exact authorized target values in synthetic macOS and Windows assets, including byte-identical compiled program objects. Combined UI/Yarn changes and other source families are not yet covered; the complete preserve-exact gate remains open. See `localization/evidence/yarn-preservation-check-20261107.md`.
