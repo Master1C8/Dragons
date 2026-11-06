@@ -37,6 +37,9 @@ class SourceInventoryUnitTests(unittest.TestCase):
         sample = entries['yarn:line:4b36ea4e']
         self.assertEqual((sample['node'], sample['instructionIndex']), ('Alexander_2', 14))
         self.assertEqual(sample['source']['macos'], sample['source']['windows'])
+        self.assertEqual(sample['role'], 'preserve-exactly-pending-source-role')
+        self.assertEqual(sum(r['role'] == 'preserve-exactly-pending-source-role' for r in result['entries']), 16)
+        self.assertEqual(sum(r.get('preserveExactPrefix') is not None for r in result['entries']), 18)
         mac_only = entries['settings:LookInvertY:label']
         self.assertEqual(mac_only['source']['macos'], 'Invert Look Y')
         self.assertIsNone(mac_only['source']['windows'])

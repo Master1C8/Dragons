@@ -21,9 +21,9 @@ Their JSON payload hashes match the corresponding occurrences in the earlier
 managed-string exports; the raw configuration is retained in the local source
 inventory, not reproduced in this report.
 
-The shared provisional inventory recipe now binds those 56 occurrences to the
-source reports and labels them `preserve-exactly-input-control`; its current
-v3 output SHA-256 is
+The shared provisional inventory recipe binds those 56 occurrences to the
+source reports and labels them `preserve-exactly-input-control`; the historical
+v3 output SHA-256 was
 `02fb2a7f8a309023a37d80f9e41d50e289feceef899fa6dd826d90ab523c6e41`.
 This classification is an input to the future complete exact-preservation
 contract, not a claim that a final installer validates these code paths. The

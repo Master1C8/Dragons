@@ -25,6 +25,7 @@ INPUT_ACTION_SHA = {
     'macos': '6272020c5766750fe68af6c6601c8c70c6830bc47b9a558af9b20a124d2f6daf',
     'windows': 'dd06623f942b4b5619a278f51ba7dc9c6de5845752d7776e4d06c7b86455a998',
 }
+YARN_PROTECTED_SHA = 'bff5f4ce3b270dedf77f31518a3bb75efe72d93617796baeff71cbebb5872be3'
 
 
 def load_pinned(path, expected):
@@ -46,16 +47,33 @@ def build(work, roles_path):
     roles = load_pinned(roles_path, ROLES_SHA)
     inputs = {p: load_pinned(Path(roles_path).parent / f'input-actions-{p}-20261107.json', digest)
               for p, digest in INPUT_ACTION_SHA.items()}
+    yarn_protected = load_pinned(Path(roles_path).parent / 'yarn-protected-partial-20261107.json', YARN_PROTECTED_SHA)
+    full = {row['id']: row for row in yarn_protected['fullValueProtection']}
+    prefixes = {row['id']: row for row in yarn_protected['prefixProtection']}
+    if len(full) != 16 or len(prefixes) != 18 or full.keys() & prefixes.keys():
+        raise ValueError('protected Yarn identity mismatch')
     scenes, ui, settings = docs['yarn-paired-scenes.json'], docs['ui-windows-all.json'], docs['settings-paired-source.json']
     records = {}
     for node, rows in scenes['scenes'].items():
         for row in rows:
-            put(records, {'id': 'yarn:' + row['id'], 'family': 'yarn', 'role': 'needs-classification',
+            key = row['id']
+            if key in full and (full[key]['node'] != node or full[key]['expected'] != row['source']):
+                raise ValueError('protected Yarn value binding changed')
+            if key in prefixes and (prefixes[key]['node'] != node or any(
+                    not row['source'][p].startswith(prefixes[key]['expectedPrefix'][p]) or
+                    dl.sha(row['source'][p].encode('utf-8')) != prefixes[key]['sourceSha256'][p]
+                    for p in ('macos', 'windows'))):
+                raise ValueError('protected Yarn prefix binding changed')
+            put(records, {'id': 'yarn:' + key, 'family': 'yarn',
+                          'role': 'preserve-exactly-pending-source-role' if key in full else 'needs-classification',
                           'node': node, 'instructionIndex': row['instructionIndex'], 'kind': row['kind'],
                           'instruction': {k: row[k] for k in ('substitutionCount', 'destination', 'hasCondition') if k in row},
+                          'preserveExactPrefix': prefixes[key]['expectedPrefix'] if key in prefixes else None,
                           'source': row['source'], 'location': {p: row['id'] for p in ('macos', 'windows')}})
     if len(records) != scenes['sourceLineCount']:
         raise ValueError('Yarn count mismatch')
+    if not (full.keys() | prefixes.keys()) <= {key.removeprefix('yarn:') for key in records}:
+        raise ValueError('protected Yarn source occurrence missing')
     used_windows = set()
     for row in roles['entries']:
         win = row['windows']
@@ -137,7 +155,8 @@ def build(work, roles_path):
             raise ValueError('input action source occurrences missing')
     counts = dict(sorted(Counter(x['family'] for x in records.values()).items()))
     return {'schema': 1, 'status': 'provisional-not-translation-ready', 'builds': scenes['builds'],
-            'sourceExportsSha256': FILES, 'uiRolesSha256': ROLES_SHA, 'inputActionReportsSha256': INPUT_ACTION_SHA, 'familyCounts': counts,
+            'sourceExportsSha256': FILES, 'uiRolesSha256': ROLES_SHA, 'inputActionReportsSha256': INPUT_ACTION_SHA,
+            'yarnProtectedReportSha256': YARN_PROTECTED_SHA, 'familyCounts': counts,
             'entries': list(records.values()),
             'limitations': 'Provisional union of pinned discovery exports. Managed occurrences are build-specific and unpaired; roles, runtime visibility, other assemblies/resources, full exact-preservation contract, special-scene decisions and independent review remain incomplete. Texture text is excluded by owner decision.'}
 

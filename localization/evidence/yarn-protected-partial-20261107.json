@@ -1,0 +1,439 @@
+{
+  "schema": 1,
+  "status": "partial-preservation-not-source-complete",
+  "pairedScenesSha256": "52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995",
+  "targetAuditSha256": "9cd529422340084c5dda98865ad485930d8a92fb6790c77c9a7c2e66a70068e4",
+  "programSha256": {
+    "macos": "a67bbfc37dca0b29b1be740e36b570e9d524a46ef2fdf5574e0f58278c0ff1e6",
+    "windows": "cbaaba712e0cc699d0cdf98f4b8b86060c666d6196fa91cd0a9d9a237c104466"
+  },
+  "fullValueProtection": [
+    {
+      "id": "line:22deeef6",
+      "node": "RyanExploded_Outro",
+      "reason": "adjacent-marker-needs-review",
+      "expected": {
+        "macos": "==",
+        "windows": "=="
+      },
+      "sourceSha256": {
+        "macos": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276",
+        "windows": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276"
+      }
+    },
+    {
+      "id": "line:25f35611",
+      "node": "RyanExploded_Outro",
+      "reason": "adjacent-marker-needs-review",
+      "expected": {
+        "macos": "---",
+        "windows": "---"
+      },
+      "sourceSha256": {
+        "macos": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "windows": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"
+      }
+    },
+    {
+      "id": "line:3ed2f649",
+      "node": "Conrad_Outro",
+      "reason": "embedded-title-needs-review",
+      "expected": {
+        "macos": "title: Conrad_OutroDone",
+        "windows": "title: Conrad_OutroDone"
+      },
+      "sourceSha256": {
+        "macos": "01cf590e183ce38a43cb1ca17a2fa5326e8b581b5472077b2b5886f51bf83ea9",
+        "windows": "01cf590e183ce38a43cb1ca17a2fa5326e8b581b5472077b2b5886f51bf83ea9"
+      }
+    },
+    {
+      "id": "line:4b36ea4e",
+      "node": "Alexander_2",
+      "reason": "long-implicit-speaker-needs-adapter",
+      "expected": {
+        "macos": "The most prestigious college hosting prestigious professors like me:",
+        "windows": "The most prestigious college hosting prestigious professors like me:"
+      },
+      "sourceSha256": {
+        "macos": "7a5128354d6171d00fdaa92c2dfd0aec3d84daf04206abdd1a5a87c765c344c7",
+        "windows": "7a5128354d6171d00fdaa92c2dfd0aec3d84daf04206abdd1a5a87c765c344c7"
+      }
+    },
+    {
+      "id": "line:4b9b3a43",
+      "node": "Alexander_Outro",
+      "reason": "adjacent-marker-needs-review",
+      "expected": {
+        "macos": "---",
+        "windows": "---"
+      },
+      "sourceSha256": {
+        "macos": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "windows": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"
+      }
+    },
+    {
+      "id": "line:67fa34ad",
+      "node": "Alexander_Outro",
+      "reason": "adjacent-marker-needs-review",
+      "expected": {
+        "macos": "==",
+        "windows": "=="
+      },
+      "sourceSha256": {
+        "macos": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276",
+        "windows": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276"
+      }
+    },
+    {
+      "id": "line:722243c8",
+      "node": "RyanDate_Outro",
+      "reason": "embedded-title-needs-review",
+      "expected": {
+        "macos": "title: RyanDate_OutroDone",
+        "windows": "title: RyanDate_OutroDone"
+      },
+      "sourceSha256": {
+        "macos": "617c4e9fdb7890ae218f871437997359079c3168258324423dfc7ee8702978c6",
+        "windows": "617c4e9fdb7890ae218f871437997359079c3168258324423dfc7ee8702978c6"
+      }
+    },
+    {
+      "id": "line:74c28add",
+      "node": "ConradBeatup_Outro",
+      "reason": "embedded-title-needs-review",
+      "expected": {
+        "macos": "title: ConradBeatup_OutroDone",
+        "windows": "title: ConradBeatup_OutroDone"
+      },
+      "sourceSha256": {
+        "macos": "8f8c3127986a0017458addffb5ca722f1253adcd1b0aa92e8da8426fcf4d42ba",
+        "windows": "8f8c3127986a0017458addffb5ca722f1253adcd1b0aa92e8da8426fcf4d42ba"
+      }
+    },
+    {
+      "id": "line:97ab84a8",
+      "node": "RyanDate_Outro",
+      "reason": "adjacent-marker-needs-review",
+      "expected": {
+        "macos": "---",
+        "windows": "---"
+      },
+      "sourceSha256": {
+        "macos": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "windows": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"
+      }
+    },
+    {
+      "id": "line:a8e2f13e",
+      "node": "Conrad_Outro",
+      "reason": "adjacent-marker-needs-review",
+      "expected": {
+        "macos": "==",
+        "windows": "=="
+      },
+      "sourceSha256": {
+        "macos": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276",
+        "windows": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276"
+      }
+    },
+    {
+      "id": "line:b4eee981",
+      "node": "RyanExploded_Outro",
+      "reason": "embedded-title-needs-review",
+      "expected": {
+        "macos": "title: RyanExploded_OutroDone",
+        "windows": "title: RyanExploded_OutroDone"
+      },
+      "sourceSha256": {
+        "macos": "c5bae834767a347c5681a2ba94ae0da268b0dbe5c52b7a63fa1c6698f013533d",
+        "windows": "c5bae834767a347c5681a2ba94ae0da268b0dbe5c52b7a63fa1c6698f013533d"
+      }
+    },
+    {
+      "id": "line:ce938344",
+      "node": "ConradBeatup_Outro",
+      "reason": "adjacent-marker-needs-review",
+      "expected": {
+        "macos": "==",
+        "windows": "=="
+      },
+      "sourceSha256": {
+        "macos": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276",
+        "windows": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276"
+      }
+    },
+    {
+      "id": "line:db5b3129",
+      "node": "Conrad_Outro",
+      "reason": "adjacent-marker-needs-review",
+      "expected": {
+        "macos": "---",
+        "windows": "---"
+      },
+      "sourceSha256": {
+        "macos": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "windows": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"
+      }
+    },
+    {
+      "id": "line:e2f28daa",
+      "node": "ConradBeatup_Outro",
+      "reason": "adjacent-marker-needs-review",
+      "expected": {
+        "macos": "---",
+        "windows": "---"
+      },
+      "sourceSha256": {
+        "macos": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "windows": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"
+      }
+    },
+    {
+      "id": "line:e41244bf",
+      "node": "RyanDate_Outro",
+      "reason": "adjacent-marker-needs-review",
+      "expected": {
+        "macos": "==",
+        "windows": "=="
+      },
+      "sourceSha256": {
+        "macos": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276",
+        "windows": "f16474a9900a44186e87098f5fcb153a1fab2e401e1a6db587168b204761b276"
+      }
+    },
+    {
+      "id": "line:f1ca33da",
+      "node": "Alexander_Outro",
+      "reason": "embedded-title-needs-review",
+      "expected": {
+        "macos": "title: Alexander_Done",
+        "windows": "title: Alexander_Done"
+      },
+      "sourceSha256": {
+        "macos": "95958db076100eb88d4448c930c414cae183d371fa724d4f6a6e8beb974a75b5",
+        "windows": "95958db076100eb88d4448c930c414cae183d371fa724d4f6a6e8beb974a75b5"
+      }
+    }
+  ],
+  "prefixProtection": [
+    {
+      "id": "line:194c1381",
+      "node": "Ryan_Conrad_SexScene_Cum",
+      "expectedPrefix": {
+        "macos": "Conrad: ",
+        "windows": "Conrad: "
+      },
+      "sourceSha256": {
+        "macos": "5142dd3610e4cc0ce88c24812676cc4a59cea8c7fd3d4d8f2bde7d041191b933",
+        "windows": "5142dd3610e4cc0ce88c24812676cc4a59cea8c7fd3d4d8f2bde7d041191b933"
+      }
+    },
+    {
+      "id": "line:3bc52918",
+      "node": "Ryan_Conrad_SexScene_Loop",
+      "expectedPrefix": {
+        "macos": "Conrad: ",
+        "windows": "Conrad: "
+      },
+      "sourceSha256": {
+        "macos": "59a6f968c75b792f2adbb371560205520acc52ec9b48344a283ddf1640333459",
+        "windows": "59a6f968c75b792f2adbb371560205520acc52ec9b48344a283ddf1640333459"
+      }
+    },
+    {
+      "id": "line:3ce891ff",
+      "node": "Ryan_Conrad_SexScene_Loop",
+      "expectedPrefix": {
+        "macos": "Conrad: ",
+        "windows": "Conrad: "
+      },
+      "sourceSha256": {
+        "macos": "dd91f260275b5093830b84224bc73894d2a5915ed94d3b49dbcd52ee9d4af281",
+        "windows": "dd91f260275b5093830b84224bc73894d2a5915ed94d3b49dbcd52ee9d4af281"
+      }
+    },
+    {
+      "id": "line:41b9659f",
+      "node": "Ryan_Conrad_SexScene_Cum",
+      "expectedPrefix": {
+        "macos": "Ryan: ",
+        "windows": "Ryan: "
+      },
+      "sourceSha256": {
+        "macos": "50504d8f1c0a5f1cd288bceb8b88313191e63c12eeb1a099ddf9f9a862c92905",
+        "windows": "50504d8f1c0a5f1cd288bceb8b88313191e63c12eeb1a099ddf9f9a862c92905"
+      }
+    },
+    {
+      "id": "line:42c70daa",
+      "node": "Ryan_Conrad_SexScene_Loop",
+      "expectedPrefix": {
+        "macos": "Conrad: ",
+        "windows": "Conrad: "
+      },
+      "sourceSha256": {
+        "macos": "2e028541c13b150b4d42ae436167ab6fcea16a00b57d60983fb8202cf9c7e13c",
+        "windows": "2e028541c13b150b4d42ae436167ab6fcea16a00b57d60983fb8202cf9c7e13c"
+      }
+    },
+    {
+      "id": "line:5660dc8b",
+      "node": "Ryan_Conrad_SexScene",
+      "expectedPrefix": {
+        "macos": "Conrad: ",
+        "windows": "Conrad: "
+      },
+      "sourceSha256": {
+        "macos": "848d254c8d63e6fbf4549b4d1416d2aaa20aa97521b22ba3fafd5c94d8e943f9",
+        "windows": "848d254c8d63e6fbf4549b4d1416d2aaa20aa97521b22ba3fafd5c94d8e943f9"
+      }
+    },
+    {
+      "id": "line:5b0360ad",
+      "node": "Ryan_Conrad_SexScene_Loop",
+      "expectedPrefix": {
+        "macos": "Conrad: ",
+        "windows": "Conrad: "
+      },
+      "sourceSha256": {
+        "macos": "bf095ea55cdeb898569a9512ba03055d205edc296f2a1f14b84dc12f11ae857c",
+        "windows": "bf095ea55cdeb898569a9512ba03055d205edc296f2a1f14b84dc12f11ae857c"
+      }
+    },
+    {
+      "id": "line:6dd86b71",
+      "node": "Ryan_Conrad_SexScene_Cum",
+      "expectedPrefix": {
+        "macos": "Ryan: ",
+        "windows": "Ryan: "
+      },
+      "sourceSha256": {
+        "macos": "98087861fbfaa62141798ec8c2cb9516de95ad558feff9004fcacb99362dc869",
+        "windows": "98087861fbfaa62141798ec8c2cb9516de95ad558feff9004fcacb99362dc869"
+      }
+    },
+    {
+      "id": "line:77626e43",
+      "node": "Ryan_Conrad_SexScene_Loop",
+      "expectedPrefix": {
+        "macos": "Ryan: ",
+        "windows": "Ryan: "
+      },
+      "sourceSha256": {
+        "macos": "4c3de56e34727c376b610481fd4efd612d9bb551c47edc58e99892faf4c91de2",
+        "windows": "4c3de56e34727c376b610481fd4efd612d9bb551c47edc58e99892faf4c91de2"
+      }
+    },
+    {
+      "id": "line:7a01d265",
+      "node": "Ryan_Conrad_SexScene",
+      "expectedPrefix": {
+        "macos": "Ryan: ",
+        "windows": "Ryan: "
+      },
+      "sourceSha256": {
+        "macos": "d55845869b2cd9464d453c5a82d6952fea60821157dd8967aae0d4b0dd50caa7",
+        "windows": "d55845869b2cd9464d453c5a82d6952fea60821157dd8967aae0d4b0dd50caa7"
+      }
+    },
+    {
+      "id": "line:a430a2ff",
+      "node": "Ryan_Conrad_SexScene_Cum",
+      "expectedPrefix": {
+        "macos": "Ryan: ",
+        "windows": "Ryan: "
+      },
+      "sourceSha256": {
+        "macos": "d8e952b1635e3fe5a65fb9010d3c351a2498b287c37e2bb210ff045843e57481",
+        "windows": "d8e952b1635e3fe5a65fb9010d3c351a2498b287c37e2bb210ff045843e57481"
+      }
+    },
+    {
+      "id": "line:aad89688",
+      "node": "Ryan_Conrad_SexScene_Loop",
+      "expectedPrefix": {
+        "macos": "Ryan: ",
+        "windows": "Ryan: "
+      },
+      "sourceSha256": {
+        "macos": "836b8c1db049dc014730699074d5b1d7845e3175e0ec5da9b4a7c78a61bd195c",
+        "windows": "836b8c1db049dc014730699074d5b1d7845e3175e0ec5da9b4a7c78a61bd195c"
+      }
+    },
+    {
+      "id": "line:c050dbfc",
+      "node": "Ryan_Conrad_SexScene",
+      "expectedPrefix": {
+        "macos": "Conrad: ",
+        "windows": "Conrad: "
+      },
+      "sourceSha256": {
+        "macos": "3e0325398f9de67561f4474a96f61b841d251224246fd68bb058f227b1d0b60d",
+        "windows": "3e0325398f9de67561f4474a96f61b841d251224246fd68bb058f227b1d0b60d"
+      }
+    },
+    {
+      "id": "line:cd3367da",
+      "node": "Ryan_Conrad_SexScene_Loop",
+      "expectedPrefix": {
+        "macos": "Conrad: ",
+        "windows": "Conrad: "
+      },
+      "sourceSha256": {
+        "macos": "5001d1e4b306b6d98871bb6cd00c8dc96bd9c8196fbdaa060f1e0a85767a33af",
+        "windows": "5001d1e4b306b6d98871bb6cd00c8dc96bd9c8196fbdaa060f1e0a85767a33af"
+      }
+    },
+    {
+      "id": "line:ce4d0fef",
+      "node": "Ryan_Conrad_SexScene_Cum",
+      "expectedPrefix": {
+        "macos": "Conrad: ",
+        "windows": "Conrad: "
+      },
+      "sourceSha256": {
+        "macos": "be1dff750703beb9ac395122884b10d302e676dddf62bba572fd6a78e02a5434",
+        "windows": "be1dff750703beb9ac395122884b10d302e676dddf62bba572fd6a78e02a5434"
+      }
+    },
+    {
+      "id": "line:e1526934",
+      "node": "Ryan_Conrad_SexScene_Loop",
+      "expectedPrefix": {
+        "macos": "Ryan: ",
+        "windows": "Ryan: "
+      },
+      "sourceSha256": {
+        "macos": "06cb256bd506fa70fcbe5cc519efc7f209996de7b39e87144e9e8ff23cbd5ad0",
+        "windows": "06cb256bd506fa70fcbe5cc519efc7f209996de7b39e87144e9e8ff23cbd5ad0"
+      }
+    },
+    {
+      "id": "line:f5f5b815",
+      "node": "Ryan_Conrad_SexScene",
+      "expectedPrefix": {
+        "macos": "Ryan: ",
+        "windows": "Ryan: "
+      },
+      "sourceSha256": {
+        "macos": "e86ce51d1dbf82806f126b609d98dd866f19cff8041ea89f96a2c026a3c4e30b",
+        "windows": "e86ce51d1dbf82806f126b609d98dd866f19cff8041ea89f96a2c026a3c4e30b"
+      }
+    },
+    {
+      "id": "line:fbe86c06",
+      "node": "Ryan_Conrad_SexScene_Cum",
+      "expectedPrefix": {
+        "macos": "Conrad: ",
+        "windows": "Conrad: "
+      },
+      "sourceSha256": {
+        "macos": "e7a686aecb078b9e391af61cc3c9a49c45ea236db68d929105b88eff40a6e735",
+        "windows": "e7a686aecb078b9e391af61cc3c9a49c45ea236db68d929105b88eff40a6e735"
+      }
+    }
+  ],
+  "limitations": "Known source cases only. Exact protection is provisional, not a full preserve-exactly set, final translation classification, runtime test, or license to translate remaining strings."
+}

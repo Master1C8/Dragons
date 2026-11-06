@@ -26,6 +26,8 @@ One provisional shared source union now consolidates the pinned Yarn, UI, settin
 
 The provisional union now marks 56 embedded input-control occurrences across the two builds preserve-exactly, backed by verified JSON loading and map/action lookup instructions. This does not classify visible control hints or complete the global preservation contract. See `localization/evidence/input-action-preservation-20261107.md`.
 
+The union now also records 16 temporarily exact Yarn values and 18 exact speaker prefixes, source-bound in `localization/evidence/yarn-protected-partial-20261107.json`. These are partial guards, not a complete preservation manifest or a solution for the long colon-ended sentence. See `localization/evidence/yarn-protection-inventory-20261107.md`.
+
 ## Scope and process binding
 
 Source language English; requested locale `ru` → runtime `ru` selected at build time, replacing the English Yarn table in a separate build. This prototype is not an in-game language selector. Owner decisions: player and franchise contact use neutral wording; Alexander uses masculine forms; Igwyx is referred to with masculine forms without asserting gender; Max uses neutral forms without asserting gender. These rules do not establish other characters' gender or complete roster coverage.

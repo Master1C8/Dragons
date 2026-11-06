@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v3-20261107.json`
-has SHA-256 `02fb2a7f8a309023a37d80f9e41d50e289feceef899fa6dd826d90ab523c6e41`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v4-20261107.json`
+has SHA-256 `dea3523b082ea0c1a1a87c25315b17fa049364d5e5c2f6bc28f3d1f1bb667bcf`.
 Its 4,048 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -22,7 +22,9 @@ platform locations and current provisional role; Yarn records also retain
 their node, instruction index and available option/substitution attributes.
 The v3 recipe additionally pins input-action reports and identifies 56
 source-bound input-control occurrences as preserve-exactly; see
-`input-action-preservation-20261107.md`. The earlier v2 output and its
+`input-action-preservation-20261107.md`. The v4 recipe additionally binds 16
+full-value protections and 18 separate speaker-prefix protections; see
+`yarn-protection-inventory-20261107.md`. The earlier v2 output and its
 byte-for-byte reproduction are historical under the prior recipe, SHA-256
 `6fa14564a75d6e87ecadb700de4234b10e5ab1d1099d404760a5fe0c0e85fbea`.
 
