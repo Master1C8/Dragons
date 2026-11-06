@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "platform": "macos",
+  "assemblySha256": "f9c4ccc1b10f95270d6d0d63a5e150865a070eca353a6c16fa74930f993f7bcb",
+  "objectiveNames": {
+    "Objective": "DEFAULT",
+    "ObjectiveDirty": "DIRTY",
+    "ObjectiveSoapy": "SOAPY",
+    "ObjectiveTooBright": "TOO BRIGHT"
+  },
+  "constructedInStart": [
+    "ObjectiveDirty",
+    "ObjectiveSoapy",
+    "ObjectiveTooBright"
+  ],
+  "displayGetNameOffset": 21,
+  "displaySetTextOffset": 26,
+  "limitations": "Pinned Assembly-CSharp static IL only; runtime construction, presentation, dynamic types and other assemblies require separate review."
+}

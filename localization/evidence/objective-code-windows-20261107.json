@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "platform": "windows",
+  "assemblySha256": "8b1b439e62bff222fbce00869a3343422c77d08e384db7ed323b5e66f44195e2",
+  "objectiveNames": {
+    "Objective": "DEFAULT",
+    "ObjectiveDirty": "DIRTY",
+    "ObjectiveSoapy": "SOAPY",
+    "ObjectiveTooBright": "TOO BRIGHT"
+  },
+  "constructedInStart": [
+    "ObjectiveDirty",
+    "ObjectiveSoapy",
+    "ObjectiveTooBright"
+  ],
+  "displayGetNameOffset": 21,
+  "displaySetTextOffset": 26,
+  "limitations": "Pinned Assembly-CSharp static IL only; runtime construction, presentation, dynamic types and other assemblies require separate review."
+}

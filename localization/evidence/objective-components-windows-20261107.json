@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "platform": "windows",
+  "buildVersion": "9/9/2026_ee944596",
+  "assets": {
+    "level0": "55a296caa23347190faa063efdaab4cf5a37e00bdbffa455729b4aa346cddae0",
+    "level1": "203725518656d04df3341248a7d24bc27551ebd6c03e582977869f0acfc5a459",
+    "level2": "d8b5b6b96a2372e36087edb0a5e3e1fa6ccc2e0d1684698be2221771f02f438e",
+    "level3": "2443af34e7c6f2136ca58b0aa712a1c35ce13e60567e963ac7224575fa9d4eb1",
+    "level4": "2253e49bca20fa74c12d90eb6c9bd4eadf9ca83f36bcb451f41d7e71fd9bbc28",
+    "level5": "ecbae7085b8126e5a77087e1b60a9fb3568032bbae0818106f22640d0242530e",
+    "level6": "7312f5011f3222b623e0f06acc5107bcdc72a8487780d9fd5249446fd42be608",
+    "sharedassets0.assets": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3",
+    "sharedassets1.assets": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+    "sharedassets2.assets": "53589194e2754251d918167309117c038e4e0f9acd0e3c571940c979a6d73f7b",
+    "sharedassets3.assets": "87cbffdff5f7018d80f54df3eecf39f4b73f048dcfd4dca6a09a8e64b5d24ded",
+    "sharedassets4.assets": "0d055aac49c3344a50e68632b197d6c5fce701a8236a55a90d620b38978b8681",
+    "sharedassets5.assets": "a95e106be4a3fe2438a7b12e43f14d3d5efa4ce0d32fc20209e634657587c2b9",
+    "sharedassets6.assets": "11becb0784a1fbd113181c918937ecb7df0701bd6422ef4e04f610626aa1a169",
+    "resources.assets": "e48266e661438a4186de78f4aad660707c57b511153dd6199f293b503f958ae8",
+    "globalgamemanagers.assets": "910358d16b824bfd4b8398fea8c0295b5660471bb13a6708655096097bb0f018",
+    "globalgamemanagers": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6"
+  },
+  "matches": [],
+  "unresolvedScriptReferences": [],
+  "limitations": "Only three selected script identities in these 17 serialized files. Other bundles, dynamic creation, subclasses, non-MonoBehaviour text and runtime visibility remain unexamined."
+}
