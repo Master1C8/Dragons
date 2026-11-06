@@ -16,6 +16,8 @@ The read-only `verify_combined_yarn_ui.py` now checks combined Yarn and UI chang
 
 The companion `verify_combined_settings_ui.py` verifies settings and UI changes in `sharedassets0.assets` against both originals, including exact unmodified fields and protected resolution options. Both-build synthetic and corruption controls passed; see `localization/evidence/combined-settings-ui-preservation-20261107.md`. These individual-asset checks do not prove a complete package or installation/restoration.
 
+The local binary Addressables catalogs now have a reproducible diagnostic key listing: 24 keys per pinned build, including the English locale, three bundle keys and nine compute-shader paths. The game's catalog reader runs with a diagnostic in-memory managed memory-copy substitution; complete locations, dependencies and runtime loading remain unresolved. See `localization/evidence/addressable-catalog-keys-20261107.md`.
+
 Managed text-sink discovery now scans all pinned root managed DLLs and the source-pinned TMP dropdown configurations in both builds. Unity's built-in text defaults are retained as needs-review; static scope and exact findings are in `localization/evidence/managed-text-sinks-20261107.md`.
 
 A standalone Yarn-only preservation check now compares the complete source object inventory and exact authorized target values in synthetic macOS and Windows assets, including byte-identical compiled program objects. Combined UI/Yarn changes and other source families are not yet covered; the complete preserve-exact gate remains open. See `localization/evidence/yarn-preservation-check-20261107.md`.
