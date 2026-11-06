@@ -148,6 +148,17 @@ class WindowsUIAdapterTests(unittest.TestCase):
                 self.assertEqual(after[identity], raw, identity)
         self.assertEqual(result['outputSha256'], dl.sha(output.read_bytes()))
 
+    def test_dialogue_only_without_ui_locale(self):
+        yarn, yarn_path, _, keys, values, extras = self.make_combined_inputs()
+        output = self.root / 'dialogue-only.assets'
+        report = adapter.build(SOURCE, 'sharedassets1.assets', None, 'ru', output,
+                               dialogue_locale_file=yarn_path)
+        self.assertEqual((report['changedFields'], report['dialogueFields']), (0, 1))
+        spec = versions.BUILDS['windows']
+        obj = next(o for o in UnityPy.load(output.read_bytes()).objects if o.path_id == spec['localization'])
+        expected = [yarn['lines'].get(k, {}).get('text', v) for k, v in zip(keys, values)]
+        self.assertEqual(dl.parse(obj.get_raw_data()), (keys, expected, extras))
+
     def test_combination_rejects_locale_mismatch_and_wrong_asset(self):
         yarn, yarn_path, ui_path, _, _, _ = self.make_combined_inputs()
         yarn['locale'] = 'fr'
@@ -179,6 +190,98 @@ class WindowsUIAdapterTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'combined readback failed'):
                 adapter.build(SOURCE, 'sharedassets1.assets', ui_path, 'ru', output,
                               dialogue_locale_file=yarn_path)
+        self.assertFalse(output.exists())
+        self.assertFalse(output.with_name(output.name + '.tmp').exists())
+
+    def make_settings_inputs(self):
+        asset = 'sharedassets0.assets'
+        ui = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': mapping.WINDOWS_ASSETS[asset],
+              'lines': {'sharedassets0.assets#661': {'source': 'Enter text...', 'text': 'ЖЮЯ 501'}}}
+        setting = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': mapping.WINDOWS_ASSETS[asset],
+                   'lines': {'sharedassets0.assets#605:label': {'source': 'Anti-aliasing', 'text': 'ЖЮЯ 427'},
+                             'sharedassets0.assets#605:option:1': {'source': 'On', 'text': 'ЪъЬь 431'}}}
+        ui_path, settings_path = self.root / 'settings-ui.json', self.root / 'settings.json'
+        ui_path.write_text(json.dumps(ui, ensure_ascii=False), encoding='utf-8')
+        settings_path.write_text(json.dumps(setting, ensure_ascii=False), encoding='utf-8')
+        return setting, ui_path, settings_path
+
+    def test_settings_and_ui_compose_with_exact_object_boundaries(self):
+        setting, ui_path, settings_path = self.make_settings_inputs()
+        original, _ = adapter.scan(SOURCE, 'sharedassets0.assets')
+        before = {(o.path_id, o.type.name): o.get_raw_data() for o in original.objects}
+        output = self.root / 'combined-settings.assets'
+        result = adapter.build(SOURCE, 'sharedassets0.assets', ui_path, 'ru', output,
+                               settings_locale_file=settings_path)
+        self.assertEqual((result['changedFields'], result['settingsFields']), (1, 2))
+        actual = UnityPy.load(str(output))
+        actual.path = str(SOURCE)
+        objects = {(o.path_id, o.type.name): o for o in actual.objects}
+        after = {k: o.get_raw_data() for k, o in objects.items()}
+        self.assertEqual(before.keys(), after.keys())
+        changed = {k for k in before if before[k] != after[k]}
+        self.assertEqual(changed, {(605, 'MonoBehaviour'), (661, 'MonoBehaviour')})
+        ui_raw = before[(661, 'MonoBehaviour')]
+        _, end = dl.read_string(ui_raw, 88)
+        self.assertEqual(after[(661, 'MonoBehaviour')], ui_raw[:88] + dl.write_string('ЖЮЯ 501') + ui_raw[end:])
+        generator = adapter.windows_settings.bindings.generator(SOURCE, 'windows')
+        _, _, schema = adapter.windows_settings.settings.nodes_for(objects[(605, 'MonoBehaviour')], generator, {})
+        tree = objects[(605, 'MonoBehaviour')].read_typetree(nodes=schema, check_read=True)
+        self.assertEqual(tree['label']['backupString'], 'ЖЮЯ 427')
+        self.assertEqual([x['backupString'] for x in tree['dropdownOptions']], ['Off', 'ЪъЬь 431'])
+        self.assertEqual(before[(615, 'MonoBehaviour')], after[(615, 'MonoBehaviour')])
+
+    def test_settings_only_updates_multiple_setting_classes(self):
+        asset = 'sharedassets0.assets'
+        lines = {'sharedassets0.assets#604:label': {'source': 'Ambience Volume', 'text': 'ЖЮЯ 601'},
+                 'sharedassets0.assets#605:label': {'source': 'Anti-aliasing', 'text': 'ЖЮЯ 602'},
+                 'sharedassets0.assets#607:label': {'source': 'Camera FOV', 'text': 'ЖЮЯ 603'}}
+        locale = self.root / 'multi-settings.json'
+        locale.write_text(json.dumps({'schema': 1, 'locale': 'ru', 'sourceObjectSha256': mapping.WINDOWS_ASSETS[asset],
+                                     'lines': lines}, ensure_ascii=False), encoding='utf-8')
+        original, _ = adapter.scan(SOURCE, asset)
+        before = {(o.path_id, o.type.name): o.get_raw_data() for o in original.objects}
+        output = self.root / 'multi-settings.assets'
+        result = adapter.build(SOURCE, asset, None, 'ru', output, settings_locale_file=locale)
+        self.assertEqual(result['settingsFields'], 3)
+        after = {(o.path_id, o.type.name): o.get_raw_data() for o in UnityPy.load(output.read_bytes()).objects}
+        self.assertEqual(before.keys(), after.keys())
+        self.assertEqual({k for k in before if before[k] != after[k]},
+                         {(604, 'MonoBehaviour'), (605, 'MonoBehaviour'), (607, 'MonoBehaviour')})
+
+    def test_settings_only_and_reject_no_inputs(self):
+        _, _, settings_path = self.make_settings_inputs()
+        output = self.root / 'settings-only.assets'
+        result = adapter.build(SOURCE, 'sharedassets0.assets', None, 'ru', output,
+                               settings_locale_file=settings_path)
+        self.assertEqual((result['changedFields'], result['settingsFields']), (0, 2))
+        with self.assertRaisesRegex(ValueError, 'at least one locale input'):
+            adapter.build(SOURCE, 'sharedassets0.assets', None, 'ru', self.root / 'none.assets')
+
+    def test_settings_reject_protected_values_wrong_asset_and_locale(self):
+        setting, ui_path, settings_path = self.make_settings_inputs()
+        output = self.root / 'rejected-settings.assets'
+        with self.assertRaisesRegex(ValueError, 'settings can be combined only'):
+            adapter.build(SOURCE, 'level1', self.locale, 'ru', output, settings_locale_file=settings_path)
+        self.assertFalse(output.exists())
+        setting['locale'] = 'fr'
+        settings_path.write_text(json.dumps(setting, ensure_ascii=False), encoding='utf-8')
+        with self.assertRaisesRegex(ValueError, 'settings and requested locale codes do not match'):
+            adapter.build(SOURCE, 'sharedassets0.assets', ui_path, 'ru', output, settings_locale_file=settings_path)
+        self.assertFalse(output.exists())
+        setting['locale'] = 'ru'
+        setting['lines'] = {'sharedassets0.assets#615:option:0': {'source': '640x480_60', 'text': 'ЖЮЯ'}}
+        settings_path.write_text(json.dumps(setting, ensure_ascii=False), encoding='utf-8')
+        with self.assertRaisesRegex(ValueError, 'unknown line IDs'):
+            adapter.build(SOURCE, 'sharedassets0.assets', ui_path, 'ru', output, settings_locale_file=settings_path)
+        self.assertFalse(output.exists())
+
+    def test_settings_decode_failure_does_not_publish_combined_asset(self):
+        _, ui_path, settings_path = self.make_settings_inputs()
+        output = self.root / 'failed-settings.assets'
+        with patch.object(adapter.windows_settings, 'verify', side_effect=ValueError('setting readback failed')):
+            with self.assertRaisesRegex(ValueError, 'setting readback failed'):
+                adapter.build(SOURCE, 'sharedassets0.assets', ui_path, 'ru', output,
+                              settings_locale_file=settings_path)
         self.assertFalse(output.exists())
         self.assertFalse(output.with_name(output.name + '.tmp').exists())
 

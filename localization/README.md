@@ -121,12 +121,13 @@ be classified.
 
 ## Windows TextMeshPro asset adapter
 
-`windows_ui_locale.py` builds a separate, source-pinned Windows TMP asset from a
-locale file. For `sharedassets1.assets`, `--dialogue-locale-file` can also apply
-a source-bound Yarn locale in the same verified output; see
-`evidence/windows-ui-dialogue-composition-20261107.md`. Settings composition,
-source classification, a complete Windows package and final runtime checks
-remain required.
+`windows_ui_locale.py` builds a separate, source-pinned Windows asset. It can
+combine UI with a Yarn locale in `sharedassets1.assets`, or UI with a settings
+locale in `sharedassets0.assets`; any one of these locale inputs may also be
+used alone. See `evidence/windows-ui-dialogue-composition-20261107.md` and
+`evidence/windows-ui-settings-composition-20261107.md`. These are individual
+asset operations; source classification, a complete Windows package and final
+runtime checks remain required.
 
 ## Optional TextMeshPro interface strings
 

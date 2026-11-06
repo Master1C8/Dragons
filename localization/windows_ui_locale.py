@@ -13,6 +13,7 @@ import UnityPy
 import compare_yarn_versions as versions
 import dialogue_locale as dl
 import map_ui_hierarchy as ui_map
+import windows_settings_locale as windows_settings
 
 
 def scan(data, asset):
@@ -78,17 +79,24 @@ def verify_output(path, baseline, changed):
             raise ValueError(f'saved Windows UI object differs: {identity}')
 
 
-def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale_file=None):
+def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale_file=None, settings_locale_file=None):
     target = safe_output(data, output)
     env, rows = scan(data, asset)
     keys = list(rows)
     values = [rows[k][2] for k in keys]
-    code, translations = dl.read_locale(locale_file, keys, values,
-                                         ui_map.WINDOWS_ASSETS[asset], yarn_semantics=False)
-    if code != requested_locale:
-        raise ValueError('requested UI locale does not match locale file')
+    if locale_file is None and dialogue_locale_file is None and settings_locale_file is None:
+        raise ValueError('at least one locale input is required')
+    if locale_file is None:
+        code, translations = requested_locale, {}
+    else:
+        code, translations = dl.read_locale(locale_file, keys, values,
+                                             ui_map.WINDOWS_ASSETS[asset], yarn_semantics=False)
+        if code != requested_locale:
+            raise ValueError('requested UI locale does not match locale file')
     if dialogue_locale_file is not None and asset != 'sharedassets1.assets':
         raise ValueError('dialogue can be combined only with sharedassets1.assets')
+    if settings_locale_file is not None and asset != 'sharedassets0.assets':
+        raise ValueError('settings can be combined only with sharedassets0.assets')
     objects = {(o.path_id, o.type.name): o for o in env.objects}
     if len(objects) != len(env.objects):
         raise ValueError('duplicate source object identity')
@@ -122,6 +130,11 @@ def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale
         changed[identity] = encoded
         objects[identity].set_raw_data(encoded)
         dialogue_count = len(dialogue_text)
+    prepared_settings = None
+    setting_schemas = {}
+    if settings_locale_file is not None:
+        prepared_settings = windows_settings.prepare(data, settings_locale_file, code)
+        setting_schemas = windows_settings.apply(data, env, objects, baseline, changed, prepared_settings)
     result = env.file.save()
     tmp = target.with_name(target.name + '.tmp')
     fd = os.open(tmp, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o644)
@@ -129,6 +142,8 @@ def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale
         with os.fdopen(fd, 'wb') as f:
             f.write(result)
         verify_output(tmp, baseline, changed)
+        if prepared_settings is not None:
+            windows_settings.verify(tmp, data, prepared_settings, setting_schemas)
         # A hard link publishes only the verified file and fails if target exists.
         os.link(tmp, target)
     finally:
@@ -137,22 +152,25 @@ def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale
             'asset': asset, 'sourceSha256': ui_map.WINDOWS_ASSETS[asset], 'locale': code,
             'availableFields': len(rows), 'changedFields': len(translations),
             'dialogueFields': dialogue_count,
+            'settingsFields': prepared_settings['count'] if prepared_settings is not None else 0,
             'outputSha256': dl.sha(result), 'output': str(target),
-            'limitations': 'UI and optional Yarn asset changes only. Source classification, settings, code, fonts, packaging and runtime behavior require separate validation.'}
+            'limitations': 'UI plus optional Yarn or settings asset changes only. Source classification, code, fonts, packaging and runtime behavior require separate validation.'}
 
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('source_data', type=Path)
     p.add_argument('asset', choices=sorted(ui_map.WINDOWS_ASSETS))
-    p.add_argument('--locale-file', required=True, type=Path)
+    p.add_argument('--locale-file', type=Path, help='optional source-bound UI locale')
     p.add_argument('--requested-locale', required=True)
     p.add_argument('--dialogue-locale-file', type=Path, help='optional source-bound Yarn locale for sharedassets1.assets')
+    p.add_argument('--settings-locale-file', type=Path, help='optional source-bound settings locale for sharedassets0.assets')
     p.add_argument('--output', required=True, type=Path)
     args = p.parse_args()
     print(json.dumps(build(args.source_data, args.asset, args.locale_file,
                            args.requested_locale, args.output,
-                           dialogue_locale_file=args.dialogue_locale_file), ensure_ascii=False))
+                           dialogue_locale_file=args.dialogue_locale_file,
+                           settings_locale_file=args.settings_locale_file), ensure_ascii=False))
 
 
 if __name__ == '__main__':
