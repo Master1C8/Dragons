@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v12-20261109.json`
-has SHA-256 `54a64e525bedb1e496ccbb0868c67eedfa04d6411ec245bdda5bedfcc8e0a6ab`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v13-20261109.json`
+has SHA-256 `de1f5b6eca5708040325b75ca9debe5d423191a9b41a1a9638e36e5baeb23fba`.
 Its 5,204 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -82,6 +82,14 @@ options retain distinct IDs even when the displayed text repeats. The
 shared refusal node `conrad_mount_no` is counted once. Two v12 builds matched
 byte-for-byte and the v11 comparison changed exactly those 170 roles.
 There are 1,010 unclassified Yarn IDs.
+
+The v13 recipe assigns all 111 IDs of `ryan_food_dialogue` to 68 dialogue
+lines and 43 options. The paired source and original instructions bind
+the food counter and the three route-choice destinations. The three
+relationship choices remain distinct, including conditional availability
+and visible route hints. Two v13 builds matched byte-for-byte and the
+v12 comparison changed exactly those 111 roles. There are 899 unclassified
+Yarn IDs.
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are

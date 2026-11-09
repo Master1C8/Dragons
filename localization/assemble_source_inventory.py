@@ -35,6 +35,7 @@ OPENING_ROLES_SHA = 'ad01a97ccffb6ea648bd5df90d42416e3c528f649f3fd4a5b5881a3c6a3
 RYAN23_ROLES_SHA = '82f0dd640b385abeb4a06cec54cc267c61ac60d790035d55a72a3b4a0b7669e1'
 RYAN45_ROLES_SHA = '673f13e007da9ae66585d950094a4e660b38c0f13872a7ae013dfe5387d8ec9d'
 RYAN_EXTRA_ROLES_SHA = '73f065159d49a1b2cd173cc6d2a333ecb4200c40edd5ab60800640b28b1e5c23'
+RYAN_FOOD_ROLES_SHA = '5a0ae69141a87f981bd9249f4ed657387cba73e81073393a6ebfa1f2adef86fa'
 CONRAD3_ROLES_SHA = 'cfcfc9ead9be0b1b0d90e5f91862fd09657b9199ce49eba40c3f8a3712df41d3'
 CONRAD124_ROLES_SHA = '66a1abafedf495b6e803508500a8cd9ee97bc41565c709296de760b475dc9e17'
 
@@ -189,11 +190,13 @@ def build(work, roles_path):
     ryan45_roles = bind_ryan45_roles(scenes, ryan45)
     ryan_extra = load_pinned(Path(__file__).with_name('yarn_roles_ryan_extra.json'), RYAN_EXTRA_ROLES_SHA)
     extra_roles = bind_ryan_extra_roles(scenes, ryan_extra)
+    ryan_food = load_pinned(Path(__file__).with_name('yarn_roles_ryan_food.json'), RYAN_FOOD_ROLES_SHA)
+    food_roles = bind_reviewed_roles(scenes, ryan_food, {'ryan_food_dialogue'}, 111)
     conrad3 = load_pinned(Path(__file__).with_name('yarn_roles_conrad3.json'), CONRAD3_ROLES_SHA)
     conrad3_roles = bind_conrad3_roles(scenes, conrad3)
     conrad124 = load_pinned(Path(__file__).with_name('yarn_roles_conrad124.json'), CONRAD124_ROLES_SHA)
     conrad124_roles = bind_conrad124_roles(scenes, conrad124)
-    role_sets = (opening_roles, ryan23_roles, ryan45_roles, extra_roles, conrad3_roles, conrad124_roles)
+    role_sets = (opening_roles, ryan23_roles, ryan45_roles, extra_roles, food_roles, conrad3_roles, conrad124_roles)
     reviewed_roles = merge_reviewed_roles(role_sets, full, prefixes)
     credit_manifest = load_pinned(credits.MANIFEST, credits.MANIFEST_SHA256)
     protected_names = bind_credit_names(roles, credit_manifest, ui)
@@ -309,6 +312,7 @@ def build(work, roles_path):
             'ryan23RoleManifestSha256': RYAN23_ROLES_SHA,
             'ryan45RoleManifestSha256': RYAN45_ROLES_SHA,
             'ryanExtraRoleManifestSha256': RYAN_EXTRA_ROLES_SHA,
+            'ryanFoodRoleManifestSha256': RYAN_FOOD_ROLES_SHA,
             'conrad3RoleManifestSha256': CONRAD3_ROLES_SHA,
             'conrad124RoleManifestSha256': CONRAD124_ROLES_SHA,
             'familyCounts': counts,

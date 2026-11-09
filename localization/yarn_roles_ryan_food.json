@@ -1,0 +1,246 @@
+{
+  "schema": 1,
+  "sourceExportSha256": "52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995",
+  "scope": "The complete paired Ryan food conversation, including state-bound relationship routes. Provisional source functions only.",
+  "groups": [
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:7c56b2d8",
+        "line:7b7b0a3f",
+        "line:ed4b0d48",
+        "line:1c90fb6d",
+        "line:30f1f583",
+        "line:9364911d",
+        "line:0554966a",
+        "line:bf059ff3",
+        "line:b8282714",
+        "line:2e182063",
+        "line:cb91e703",
+        "line:5da1e074",
+        "line:71c0ee9a",
+        "line:d2558a04",
+        "line:44658d73",
+        "line:6804839d",
+        "line:f9193c0d",
+        "line:6f293b7a"
+      ],
+      "reason": "Ryan reflects on his breakup and interest in meeting people as the food count advances."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:ea66b5af",
+        "line:8aa0fc1a",
+        "line:a6c1f2f4",
+        "line:29359884",
+        "line:e7f0e9ed",
+        "line:fe3484ea"
+      ],
+      "reason": "The player asks follow-up questions or responds to Ryan’s reflections."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:048d7f84",
+        "line:28ec716a"
+      ],
+      "reason": "Ryan asks whether the player knows someone he could talk to."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:92bd78f3",
+        "line:bedc761d",
+        "line:e104b8e4",
+        "line:f5a81524"
+      ],
+      "reason": "The introductory reply leads to the relationship options. Each marked choice preserves its route explanation and its own relationship-flag destination."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:1d491283",
+        "line:8b7915f4",
+        "line:3605a48a",
+        "line:45bc649d",
+        "line:d38c63ea",
+        "line:ffed6d04",
+        "line:5c78099a",
+        "line:70190774",
+        "line:7734bf93"
+      ],
+      "reason": "Ryan responds to the introduction to Conrad. The height euphemism and reaction form one exchange."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:31281c6d",
+        "line:a7181b1a",
+        "line:a035a3fd",
+        "line:69dd6a73",
+        "line:ca480eed",
+        "line:e6290003"
+      ],
+      "reason": "The player describes Conrad, responds to the height remark, and offers to put them in touch."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:3b6d644d",
+        "line:ad5d633a",
+        "line:170c6aa3",
+        "line:22a9094a",
+        "line:0ec807a4",
+        "line:98f800d3",
+        "line:09e5bf43",
+        "line:7a5c7f54",
+        "line:ec6c7823",
+        "line:c00d76cd",
+        "line:63981253"
+      ],
+      "reason": "Ryan accepts the player’s interest and reacts to the resulting date conversation."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:813c6dd4",
+        "line:b4990e3d",
+        "line:9fd5b834",
+        "line:563d71ba"
+      ],
+      "reason": "The player asks about the date, discloses a crush, or answers the compliment."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:4ff91cbd",
+        "line:d9c91bca",
+        "line:b90f527f",
+        "line:956e5c91",
+        "line:035e5be6",
+        "line:36fb380f"
+      ],
+      "reason": "Ryan responds to hearing that the player is seeing Conrad. Keep the related height exchange distinct from the introduction branch."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:48d4a45a",
+        "line:dee4a32d",
+        "line:2f3f5508",
+        "line:a0cb3f78"
+      ],
+      "reason": "The player describes Conrad and can repeat the height euphemism in this different branch."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:8caa3196",
+        "line:8b878971",
+        "line:1db78e06",
+        "line:d45f4788",
+        "line:426f40ff"
+      ],
+      "reason": "Ryan thanks the player and ends the exchange according to the relationship choice and food count."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:1a9a36e1",
+        "line:cd9b2a8f",
+        "line:0d20d327",
+        "line:f83e4966",
+        "line:6e0e4e11",
+        "line:e1fa2461",
+        "line:77ca2316"
+      ],
+      "reason": "The player gives one of the state-bound replies or offers to open the gate."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:5bab2df8",
+        "line:cab69268",
+        "line:3fa80829",
+        "line:13c906c7",
+        "line:85f901b0",
+        "line:266c652e",
+        "line:9c3d6cb7"
+      ],
+      "reason": "Ryan reacts to the date and ends the visit."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:5c86951f",
+        "line:a9980f5e",
+        "line:b05c6259",
+        "line:0a0d6bc0"
+      ],
+      "reason": "The player responds to Ryan’s interest and offers to open the gate."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:9b10d450",
+        "line:52f81dde",
+        "line:c4c81aa9",
+        "line:f16d7940",
+        "line:dd0c77ae",
+        "line:da21cf49",
+        "line:2bfa396c",
+        "line:91ab30f5",
+        "line:079b3782",
+        "line:886f5df2"
+      ],
+      "reason": "Ryan asks what the player likes about Conrad and reacts to the chosen answer before saying goodbye."
+    },
+    {
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:7e991330",
+        "line:e8a91447",
+        "line:675d7e37",
+        "line:4b3c70d9",
+        "line:4c11c83e",
+        "line:bdca3e1b",
+        "line:a40e531c",
+        "line:323e546b"
+      ],
+      "reason": "The player chooses a reason, gets a matching response, and closes the conversation."
+    }
+  ]
+}
