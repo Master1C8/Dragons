@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v18-20261109.json`
-has SHA-256 `1dd1a48c1a7d1dadecb7df91eeef7cd8838a4a766017406b3d9c4552d12ed099`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v19-20261109.json`
+has SHA-256 `2e73b75c9d94da31b51974bd3ebac09c7c87eb4ccdbaf5450ecdcb4008e5ea73`.
 Its 5,204 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -162,7 +162,36 @@ format reaches its single-object log overload through this path. These roles
 record an identified debug consumer while retaining visibility review. Two
 v18 builds matched byte-for-byte. Comparison with v17 verified that only
 those 290 records gained a role and consumer. All source IDs and values are
-unchanged, and 1,406 managed occurrences still need classification.
+unchanged. The v18 SHA-256 is
+`1dd1a48c1a7d1dadecb7df91eeef7cd8838a4a766017406b3d9c4552d12ed099`.
+At that checkpoint 1,406 managed occurrences still needed classification.
+
+The v19 recipe binds more literals to their exact argument positions and
+preserves a distinction between two inputs to `MenuResponseTransition`.
+The first is stored as `destination` and compared with the Unity menu
+object name. The second is stored as `reason`. For a level-load transition
+the tracker can step across creation of the separate payload, provided
+the constructor consumes only values above the tracked literal. It stops
+at unknown calls and never treats the third argument as a reason.
+In the decal settings constructor the third argument flows to
+`Shader.PropertyToID` and then the texture ID field. The two pinned game
+DLLs and decal DLLs gave identical relevant IL. The local reports under
+`localization/work/managed-argument-roles-20261109.AMaZb3/` share SHA-256
+`8fa799516cb63ef168a7b5b36205f93ea4999ed382a310fc1b8dae35e9b6177a`.
+The decal input DLL SHA-256 values are
+`20552df9a1bf2c9aa0b43b16f14817efcd3a3a77f515ce0d9a1b7630a93f5188`
+on macOS and
+`fefa273174484c8f9cb49da83242019ad3aa94a08268e3d17aa7b1983370068c`
+on Windows.
+
+The missing-line path has two copies per build of the same error text,
+one in `LocalizedLine.InvalidLine.RawText` and one in its parsed body.
+These records retain runtime review. The `TextID` values are separately
+protected. The v19 delta adds 251 exact-preserve roles and four fallback
+roles. Two exports matched byte-for-byte, and comparison with v18 verified
+that only these 255 records changed roles or gained consumers. All 5,204
+source identities and values remain intact. There are 1,151 unclassified
+managed occurrences.
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are

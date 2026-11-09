@@ -40,6 +40,10 @@ DIRECT_ROLES = {
     '!!0 GraphProcessor.BaseGraph::GetParameterValue<UnityEngine.Quaternion>(System.String)':
         'preserve-exactly-state-key',
     'System.Void CommandListener::RunCommand(System.String)': 'preserve-exactly-command',
+    'System.Void UnityEngine.Object::set_name(System.String)': 'preserve-exactly-object-name',
+    'System.Void UnityEngine.GameObject::.ctor(System.String)': 'preserve-exactly-object-name',
+    'System.Int32 UnityEngine.InputSystem.InputActionAsset::FindControlSchemeIndex(System.String)':
+        'preserve-exactly-input-control',
     'System.Boolean System.String::op_Equality(System.String,System.String)': 'preserve-exactly-comparison',
     'System.Boolean System.String::op_Inequality(System.String,System.String)': 'preserve-exactly-comparison',
     'System.Boolean System.String::StartsWith(System.String)': 'preserve-exactly-comparison',
@@ -73,6 +77,8 @@ FORMAT_CALL = 'System.String System.String::Format(System.String,System.Object)'
 
 # These fields store identifiers used by animation, input, and rendering code.
 FIELD_ROLES = {
+    'System.String Yarn.Unity.LocalizedLine::TextID': 'preserve-exactly-yarn-line-id',
+    'System.String Yarn.Unity.DialogueOption::TextID': 'preserve-exactly-yarn-line-id',
     **{f'System.String TMPro.ShaderUtilities::{field}': 'preserve-exactly-renderer-key'
        for field in ('Keyword_Bevel', 'Keyword_Glow', 'Keyword_Underlay', 'Keyword_Ratios',
                      'Keyword_MASK_SOFT', 'Keyword_MASK_HARD', 'Keyword_MASK_TEX', 'Keyword_Outline',
@@ -94,10 +100,15 @@ FIELD_ROLES = {
 FIRST_ARGUMENT_ROLES = {
     'System.Void UnityEngine.Material::SetFloat(System.String,System.Single)': 'preserve-exactly-renderer-key',
     'System.Void UnityEngine.Material::SetColor(System.String,UnityEngine.Color)': 'preserve-exactly-renderer-key',
+    'System.Void UnityEngine.Material::SetTexture(System.String,UnityEngine.Texture)': 'preserve-exactly-renderer-key',
     'System.Void UnityEngine.Animator::SetBool(System.String,System.Boolean)': 'preserve-exactly-animation-key',
     'System.Void UnityEngine.Animator::SetFloat(System.String,System.Single)': 'preserve-exactly-animation-key',
     'System.Void WalkNWashSceneState::SetFlag(System.String,System.Boolean)': 'preserve-exactly-state-key',
     'System.Void Yarn.Unity.VariableStorageBehaviour::SetValue(System.String,System.Boolean)':
+        'preserve-exactly-state-key',
+    'System.Void Yarn.Unity.VariableStorageBehaviour::SetValue(System.String,System.String)':
+        'preserve-exactly-state-key',
+    'System.Boolean GraphProcessor.BaseGraph::SetParameterValue(System.String,System.Object)':
         'preserve-exactly-state-key',
     'System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String,System.Int32)': 'preserve-exactly-preference-key',
     'System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)': 'preserve-exactly-preference-key',
@@ -109,6 +120,8 @@ FIRST_ARGUMENT_ROLES = {
     'System.Boolean Yarn.Markup.MarkupAttribute::TryGetProperty(System.String,System.String&)':
         'preserve-exactly-markup-key',
     'System.Void Yarn.Unity.LineProviderBehaviour::RegisterMarkerProcessor(System.String,Yarn.Markup.IAttributeMarkerProcessor)':
+        'preserve-exactly-markup-key',
+    'System.Void Yarn.Markup.LineParser::RegisterMarkerProcessor(System.String,Yarn.Markup.IAttributeMarkerProcessor)':
         'preserve-exactly-markup-key',
     'System.Boolean CsvHelper.CsvReader::TryGetField<System.String>(System.String,!!0&)':
         'preserve-exactly-csv-key',
@@ -148,6 +161,30 @@ DEBUG_SINK_ARITY = {
     for name in ('Log', 'LogWarning', 'LogError')
     for context, arity in (('', 1), (',UnityEngine.Object', 2))
 }
+MENU_TRANSITION = 'System.Void MenuResponseTransition::.ctor(System.String,System.String,MenuTransitionData)'
+LEVEL_LOAD = 'System.Void MenuTransitionDataLevelLoad::.ctor(System.String)'
+DECAL_SETTINGS = ('System.Void SkinnedMeshDecals.DecalSettings::.ctor('
+                  'System.Nullable`1<SkinnedMeshDecals.DecalResolution>,'
+                  'System.Nullable`1<SkinnedMeshDecals.DilationType>,System.String,'
+                  'UnityEngine.RenderTextureFormat,UnityEngine.RenderTextureReadWrite)')
+TYPED_ARGUMENT_ROLES = {
+    ('newobj', MENU_TRANSITION, 2): 'preserve-exactly-menu-key',
+    ('newobj', MENU_TRANSITION, 1): 'preserve-exactly-menu-transition-reason',
+    ('newobj', DECAL_SETTINGS, 2): 'preserve-exactly-renderer-key',
+    **{(opcode, signature, 1): role for signature, role in FIRST_ARGUMENT_ROLES.items()
+       for opcode in ('call', 'callvirt')},
+}
+ABOVE_VALUE_CALL_ARITY = {
+    ('newobj', LEVEL_LOAD): 1,
+    ('call', 'UnityEngine.Vector3 UnityEngine.Vector3::Lerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)'): 3,
+}
+MISSING_LINE = 'System.Void Yarn.Unity.LocalizedLine::.cctor()'
+MISSING_BODY_FIELD = 'System.String Yarn.Unity.LocalizedLine::RawText'
+EMPTY_MARKUP_LIST = 'System.Void System.Collections.Generic.List`1<Yarn.Markup.MarkupAttribute>::.ctor()'
+MARKUP_RESULT = ('System.Void Yarn.Markup.MarkupParseResult::.ctor('
+                 'System.String,System.Collections.Generic.List`1<Yarn.Markup.MarkupAttribute>)')
+SET_PARSED_TEXT = 'System.Void Yarn.Unity.LocalizedLine::set_Text(Yarn.Markup.MarkupParseResult)'
+INVALID_LINE_FIELD = 'Yarn.Unity.LocalizedLine Yarn.Unity.LocalizedLine::InvalidLine'
 STRING_COMPOSITION_ARITY = {
     f'System.String System.String::{name}({",".join(parameters)})': len(parameters)
     for count in (2, 3, 4)
@@ -183,18 +220,24 @@ def bind_context(data, context):
     return context['strings']
 
 
-def debug_message_role(steps):
+def stacked_argument_role(steps):
     # Count values above the literal, or above the string produced from it.
     # Stop when an instruction can consume or move that tracked value.
     above = 0
     for step in steps:
         opcode, target = step['opcode'], step['operand']
+        role = TYPED_ARGUMENT_ROLES.get((opcode, target, above))
+        if role is not None:
+            return role, target
+        arity = ABOVE_VALUE_CALL_ARITY.get((opcode, target))
         if opcode in SINGLE_VALUE_LOADS:
             above += 1
         elif opcode in ('ldfld', 'ldflda', 'box') and above:
             continue
         elif opcode in ('call', 'callvirt') and above and target in SINGLE_VALUE_CALLS:
             continue
+        elif arity is not None and above >= arity:
+            above += 1 - arity
         elif opcode == 'call' and target in STRING_COMPOSITION_ARITY and above < STRING_COMPOSITION_ARITY[target]:
             above = 0
         elif opcode == 'call' and DEBUG_SINK_ARITY.get(target) == above + 1:
@@ -209,6 +252,13 @@ def context_role(row):
     if not steps or steps[0]['offset'] != row['ilOffset'] + 5:
         return None
     first = steps[0]
+    if row['method'] == MISSING_LINE and row['value'] == '!! ERROR: Missing line!':
+        pattern = [(step['opcode'], step['operand']) for step in steps[:4]]
+        if pattern[0] == ('stfld', MISSING_BODY_FIELD):
+            return 'error-fallback-text-needs-runtime-review', MISSING_BODY_FIELD
+        if pattern == [('newobj', EMPTY_MARKUP_LIST), ('newobj', MARKUP_RESULT),
+                       ('callvirt', SET_PARSED_TEXT), ('stsfld', INVALID_LINE_FIELD)]:
+            return 'error-fallback-text-needs-runtime-review', SET_PARSED_TEXT
     if first['opcode'] in ('stfld', 'stsfld') and first['operand'] in FIELD_ROLES:
         return FIELD_ROLES[first['operand']], first['operand']
     if len(steps) >= 2 and steps[1]['opcode'] in ('call', 'callvirt'):
@@ -224,7 +274,7 @@ def context_role(row):
                 and constructor.endswith('::.ctor(System.Object,System.IntPtr)')
                 and target in COMMAND_REGISTRATIONS):
             return 'preserve-exactly-command', target
-    return debug_message_role(steps)
+    return stacked_argument_role(steps)
 
 
 def direct_role(row, assembly):

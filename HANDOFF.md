@@ -38,9 +38,11 @@ for 919 managed literal occurrences, including the separate slot label,
 progress format and menu transition reason roles. The v17 inventory classifies
 303 more managed occurrences through bounded IL instruction sequences. It adds
 279 exact-preserve roles and 24 profiler labels. The v18 inventory traces 290
-more occurrences to Unity debug message arguments, leaving 1,406 unclassified
-managed occurrences. The v18 SHA-256 is
-`1dd1a48c1a7d1dadecb7df91eeef7cd8838a4a766017406b3d9c4552d12ed099`.
+occurrences to Unity debug message arguments. The v19 inventory assigns
+251 more exact-preserve roles and identifies four copies of the engine's
+missing-line fallback text for runtime review. There are 1,151 unclassified
+managed occurrences. The v19 SHA-256 is
+`2e73b75c9d94da31b51974bd3ebac09c7c87eb4ccdbaf5450ecdcb4008e5ea73`.
 
 Both UI adapters now reject changes to 34 source-bound contributor-name fields in `level2`, while leaving credit descriptions separately translatable. The pinned manifest and both original builds were tested; see `localization/evidence/credit-name-preservation-20261107.md`. This is one bounded preservation safeguard, not a complete classification or a translated corpus.
 

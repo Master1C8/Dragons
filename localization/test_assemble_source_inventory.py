@@ -122,9 +122,10 @@ class SourceInventoryUnitTests(unittest.TestCase):
             game_rows = [r for r in result['entries'] if r['id'].startswith(f'managed:{platform}:Assembly-CSharp:')]
             for role, count, value in (
                     ('slot-new-runtime-text-candidate', 3, 'NEW'),
-                    ('preserve-exactly-slot-progress-format', 6, '{0} / 14'),
-                    ('preserve-exactly-menu-transition-reason', 3, 'Delete Save?')):
+                    ('preserve-exactly-slot-progress-format', 6, '{0} / 14')):
                 self.assertEqual([r['source'][platform] for r in game_rows if r['role'] == role], [value] * count)
+            self.assertEqual([r['source'][platform] for r in game_rows
+                              if r.get('consumer') == 'MenuResponseTransition.reason'], ['Delete Save?'] * 3)
             self.assertEqual(sum(r['role'] == 'objective-text-needs-visibility-review' for r in game_rows), 4)
             for role, value, consumer in (
                     ('preserve-exactly-animation-key', 'Speed', 'LocomotionAnimationBridge::speedParam'),
@@ -136,11 +137,23 @@ class SourceInventoryUnitTests(unittest.TestCase):
                                 r['source'].get(platform) == 'Horizontal' and
                                 'StandaloneInputModule::m_HorizontalAxis' in r.get('consumer', '')
                                 for r in engine_rows), platform)
+            for value, role, target in (
+                    ('Menu_Loading', 'preserve-exactly-menu-key', inventory.managed.MENU_TRANSITION),
+                    ('Going back to new game menu!', 'preserve-exactly-menu-transition-reason',
+                     inventory.managed.MENU_TRANSITION),
+                    ('_FluidHeight', 'preserve-exactly-renderer-key', inventory.managed.DECAL_SETTINGS)):
+                self.assertTrue(any(r['source'][platform] == value and r['role'] == role and
+                                    r.get('consumer') == target for r in game_rows), (platform, value))
+            missing = [r for r in result['entries'] if r['source'].get(platform) == '!! ERROR: Missing line!']
+            self.assertEqual([r['role'] for r in missing], ['error-fallback-text-needs-runtime-review'] * 2)
+            self.assertEqual({r['consumer'] for r in missing}, {
+                inventory.managed.MISSING_BODY_FIELD, inventory.managed.SET_PARSED_TEXT,
+            })
         wait = next(r for r in result['entries'] if r['source'].get('windows') == 'Waiting for flag {0}...{1}')
         self.assertEqual(wait['role'], 'diagnostic-text-needs-visibility-review')
         self.assertEqual(wait['consumer'], 'System.Void UnityEngine.Debug::Log(System.Object)')
         self.assertEqual(sum(r['role'] == 'needs-classification' for r in result['entries']
-                             if r['family'] == 'managed'), 1406)
+                             if r['family'] == 'managed'), 1151)
         names = [r for r in result['entries'] if r['role'] == 'preserve-exactly-credit-name']
         self.assertEqual(len(names), 34)
         self.assertTrue(all(r['source']['macos'] == r['source']['windows'] for r in names))
@@ -184,11 +197,25 @@ class SourceInventoryUnitTests(unittest.TestCase):
             {'opcode': 'ldarg.0', 'operand': None},
             {'opcode': 'call', 'operand': sink},
         ]
-        role = inventory.managed.debug_message_role
+        role = inventory.managed.stacked_argument_role
         self.assertEqual(role(steps), ('diagnostic-text-needs-visibility-review', sink))
         self.assertIsNone(role(steps[:2] + steps[3:]))
         self.assertIsNone(role(steps[:2] + [{'opcode': 'pop', 'operand': None}] + steps[2:]))
         self.assertIsNone(role(steps[:2] + [{'opcode': 'br.s', 'operand': 'IL_001a'}] + steps[2:]))
+
+    def test_menu_role_distinguishes_slots_and_unverified_payloads(self):
+        target = inventory.managed.MENU_TRANSITION
+        payload = [
+            {'opcode': 'ldstr', 'operand': 'PlayGame'},
+            {'opcode': 'newobj', 'operand': inventory.managed.LEVEL_LOAD},
+            {'opcode': 'newobj', 'operand': target},
+        ]
+        role = inventory.managed.stacked_argument_role
+        self.assertEqual(role(payload), ('preserve-exactly-menu-transition-reason', target))
+        self.assertEqual(role([{'opcode': 'ldstr', 'operand': 'Time to play!'}, *payload]),
+                         ('preserve-exactly-menu-key', target))
+        self.assertIsNone(role(payload[1:]))
+        self.assertIsNone(role([payload[0], {'opcode': 'call', 'operand': 'unverified'}, payload[2]]))
 
     @unittest.skipUnless((WORK / 'ui-windows-all.json').is_file(), 'pinned UI export required')
     def test_credit_bindings_reject_changed_source_and_wrong_hierarchy(self):
