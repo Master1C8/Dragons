@@ -58,6 +58,16 @@ those gameplay checks and Cyrillic rendering remain open.
 See [the gameplay receipts](localization/evidence/background-gameplay-20261109.md)
 and [the performance and Windows test](localization/evidence/background-performance-20261109.md).
 
+A macOS background copy reached the original `Conrad_Intro_3`
+presenter through stock input. TextMeshPro resolved all 16
+Cyrillic occurrences in a synthetic sample to the original
+Liberation Sans fallback. Metal was active, but the windowless
+screen capture failed. A separate source-pixel review of the
+saved Windows CrossOver dialogue frame confirmed the Cyrillic
+sample and resolved the closing punctuation. Details and
+remaining visual checks are in
+[the Cyrillic dialogue evidence](localization/evidence/background-cyrillic-20261109.md).
+
 Commit `3727bf3` adds 319 provisional Yarn role assignments across Ryan's later
 scenes and preserves the existing Russian draft for the same 14 changed IDs
 on both builds. The reproduced v10 inventory SHA-256 is
