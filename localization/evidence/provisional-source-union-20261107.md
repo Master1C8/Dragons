@@ -8,15 +8,16 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v19-20261109.json`
-has SHA-256 `2e73b75c9d94da31b51974bd3ebac09c7c87eb4ccdbaf5450ecdcb4008e5ea73`.
-Its 5,204 records comprise
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v20-20261109.json`
+has SHA-256 `50b7d42c7b02f42e88c0133c25544a7022f1f00b7d71a0ada19d2e420303d197`.
+Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
-and 2,974 literal-load occurrences from five inspected managed assemblies
-across the two builds. Managed occurrences are deliberately **not paired**
-across builds, because instruction ordinals can mean different things. The
-counts are source records, not 5,204 visible phrases, completed translations,
+2,974 literal-load occurrences from five inspected managed assemblies,
+and 21,909 serialized game component fields across the two builds. Code and
+game component occurrences are kept separately per build because instruction
+ordinals and object IDs can mean different things. The counts are source
+records, not visible phrases, completed translations,
 or a localization denominator. Each record retains its family, source values,
 platform locations and current provisional role; Yarn records also retain
 their node, instruction index and available option/substitution attributes.
@@ -190,8 +191,17 @@ These records retain runtime review. The `TextID` values are separately
 protected. The v19 delta adds 251 exact-preserve roles and four fallback
 roles. Two exports matched byte-for-byte, and comparison with v18 verified
 that only these 255 records changed roles or gained consumers. All 5,204
-source identities and values remain intact. There are 1,151 unclassified
-managed occurrences.
+source identities and values remain intact. At v19 there were 1,151
+unclassified managed occurrences. Its SHA-256 is
+`2e73b75c9d94da31b51974bd3ebac09c7c87eb4ccdbaf5450ecdcb4008e5ea73`.
+
+The v20 export retains all 5,204 prior records exactly and appends the
+two pinned serialized game component exports. It checks that both belong
+to the same source builds and Yarn programs as the paired text inventory.
+Of the 21,909 added fields, 20,259 have exact-preserve roles and 1,650
+need consumer review. The added fields, missing-reference check and
+byte-for-byte reproduction are documented in
+[the component evidence](game-component-strings-20261109.md).
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are

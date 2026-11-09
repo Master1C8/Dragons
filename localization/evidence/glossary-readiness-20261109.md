@@ -59,6 +59,12 @@ or runtime. `Start` contains test dialogue, and
 `ErrorHasOccurred` contains a diagnostic voice. Keep these distinct from the
 named cast while completing the player-facing scope and roster.
 
+The later [game component scan](game-component-strings-20261109.md)
+found seven serialized bark references to `DragonColdBalls` in each build.
+Its input is a dragon-bark component rather than the level configuration
+or a direct Yarn transfer. The other four generic nodes still lack a
+verified caller, and runtime speaker attribution remains open.
+
 ## Open editorial findings
 
 - `dnw-franchise-representative` changes the referent in Russian. The English

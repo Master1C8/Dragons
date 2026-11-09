@@ -32,7 +32,7 @@ class SourceInventoryUnitTests(unittest.TestCase):
     def test_all_selected_source_families_and_platform_bindings(self):
         result = inventory.build(WORK, ROLES)
         self.assertEqual(result['status'], 'provisional-not-translation-ready')
-        self.assertEqual(result['familyCounts'], {'legacy-ui': 149, 'managed': 2974,
+        self.assertEqual(result['familyCounts'], {'game-component': 21909, 'legacy-ui': 149, 'managed': 2974,
                                                   'settings': 80, 'ui': 162, 'yarn': 1839})
         entries = {r['id']: r for r in result['entries']}
         sample = entries['yarn:line:4b36ea4e']
@@ -154,6 +154,13 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertEqual(wait['consumer'], 'System.Void UnityEngine.Debug::Log(System.Object)')
         self.assertEqual(sum(r['role'] == 'needs-classification' for r in result['entries']
                              if r['family'] == 'managed'), 1151)
+        component_rows = [r for r in result['entries'] if r['family'] == 'game-component']
+        for platform in ('macos', 'windows'):
+            cold = [r for r in component_rows if r['source'].get(platform) == 'DragonColdBalls']
+            self.assertEqual(len(cold), 7)
+            self.assertTrue(all(r['role'] == 'preserve-exactly-yarn-node-reference' and
+                                r['fieldPath'][-2:] == ['data', 'dialogueTitle'] for r in cold))
+        self.assertEqual(sum(r['role'] == 'serialized-string-needs-consumer-review' for r in component_rows), 1650)
         names = [r for r in result['entries'] if r['role'] == 'preserve-exactly-credit-name']
         self.assertEqual(len(names), 34)
         self.assertTrue(all(r['source']['macos'] == r['source']['windows'] for r in names))
