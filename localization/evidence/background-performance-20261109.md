@@ -350,3 +350,34 @@ It uses the English table and supplies no visual evidence.
 | Observer receipt | `c1818dfc9ad975d8b8a205a4c5ca725d6a0c3a10f90413cb553d53ae14f4568e` |
 | Companion DLL | `070ed8d1332575898e6c9d0af0e2225bfaf2870bf185a3f61486b177f445c3a3` |
 | Companion source | `ba37fcc9a3efbd47e1d2761d4d74e7bf432d26d4d178ac656867b30d94607755` |
+
+## macOS mount-last comparison
+
+The append-only macOS repair was tested with the same synthetic
+save scenario and an unchanged English line table. Profile
+`R6M3` reached the original intro and opened the gate through
+stock input. Before reaching the mount-last branch, its observer
+reported zero distance to one of the candidate colliders while
+the hand was still more than nine world units away from the
+activity center. After crouching and pressing the hand action,
+both original activity counters stayed zero. The probe reached
+its contact deadline before the mount-last route could be tested.
+
+All 456 desktop samples showed zero on-screen windows and zero
+foreground ownership. The test copy exited, the checked original
+profile roots matched, and the signed wrapper removed its Steam
+file. The run is under
+`localization/work/macos-conrad-combined-20261109.96SW2q/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Unity log | `788249887d437454aec9cf7b67f1496deb08576ba4294e2a038e2bda7ef87343` |
+| Observer receipt | `09ae59fe01d3321fe837ad868ea44aed354fa356acf46c04bbb9eddae086aa26` |
+
+The next isolated profile, `R6M4`, uses a byte-identical gameplay
+asset and the stock hand overlap query against the active layer-six
+hitboxes. It runs the same fixture with the corrected aiming
+observation. The outcome is pending under
+`localization/work/macos-conrad-contact-20261109.ck4zOH/`.
+Its companion SHA-256 is
+`9ff1be608b0fbdb3004871c2cae6e2eaf67b2865541338755fdf4de3a1b10e4c`.

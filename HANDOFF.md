@@ -60,6 +60,10 @@ no dynamic node-transfer instructions, and the local bundle
 and managed caller audits found no extra ordinary entry to the
 four legacy routes. Their controlled VM results are recorded
 separately from ordinary gameplay.
+A matching macOS mount-last probe reached the original intro
+and opened the gate. Its initial hand distance observation gave
+a false zero and the activity timed out. The follow-up uses the
+stock overlap query against the active hitboxes.
 See [the gameplay receipts](localization/evidence/background-gameplay-20261109.md)
 and [the performance and Windows test](localization/evidence/background-performance-20261109.md).
 
