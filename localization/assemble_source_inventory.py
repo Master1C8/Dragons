@@ -39,6 +39,7 @@ RYAN_FOOD_ROLES_SHA = '5a0ae69141a87f981bd9249f4ed657387cba73e81073393a6ebfa1f2a
 CONRAD3_ROLES_SHA = 'cfcfc9ead9be0b1b0d90e5f91862fd09657b9199ce49eba40c3f8a3712df41d3'
 CONRAD124_ROLES_SHA = '66a1abafedf495b6e803508500a8cd9ee97bc41565c709296de760b475dc9e17'
 ALEXANDER_LEVEL_ROLES_SHA = 'ce9fa72e0a240e38135d17f6e440f17e9c3260086fe27ea43a511a395aa0e3ab'
+REMAINING_YARN_ROLES_SHA = 'a563b1027e04af5ed0a6b111cde5eb73a6f11638da6533711fd8389fa526fbb0'
 
 
 def load_pinned(path, expected):
@@ -86,15 +87,16 @@ def bind_credit_names(roles, manifest, ui):
     return matched
 
 
-def bind_reviewed_roles(scenes, manifest, scoped_nodes, expected_count):
+def bind_reviewed_roles(scenes, manifest, scoped_nodes, expected_count, *, excluded_ids=()):
     if manifest.get('schema') != 1 or manifest.get('sourceExportSha256') != FILES['yarn-paired-scenes.json']:
         raise ValueError('opening-role source binding mismatch')
     known = {'demo-dialogue-candidate': 'line', 'demo-choice-candidate': 'option',
              'dialogue-candidate': 'line', 'dialogue-punctuation-candidate': 'line',
              'choice-candidate': 'option', 'editor-prompt-candidate': 'line',
              'editor-choice-candidate': 'option', 'recovery-prompt-candidate': 'line',
-             'recovery-choice-candidate': 'option'}
-    source = {row['id']: (node, row) for node in scoped_nodes for row in scenes['scenes'][node]}
+             'recovery-choice-candidate': 'option', 'diagnostic-dialogue-candidate': 'line'}
+    source = {row['id']: (node, row) for node in scoped_nodes for row in scenes['scenes'][node]
+              if row['id'] not in excluded_ids}
     if len(source) != expected_count:
         raise ValueError('opening source identity count mismatch')
     matched = {}
@@ -216,6 +218,10 @@ def build(work, roles_path):
     role_sets = (opening_roles, ryan23_roles, ryan45_roles, extra_roles, food_roles,
                  conrad3_roles, conrad124_roles, alexander_roles)
     reviewed_roles = merge_reviewed_roles(role_sets, full, prefixes)
+    remainder = load_pinned(Path(__file__).with_name('yarn_roles_remaining.json'), REMAINING_YARN_ROLES_SHA)
+    remainder_roles = bind_reviewed_roles(scenes, remainder, scenes['scenes'], 520,
+                                          excluded_ids=reviewed_roles.keys() | full.keys())
+    reviewed_roles = merge_reviewed_roles((reviewed_roles, remainder_roles), full, prefixes)
     credit_manifest = load_pinned(credits.MANIFEST, credits.MANIFEST_SHA256)
     protected_names = bind_credit_names(roles, credit_manifest, ui)
     records = {}
@@ -334,6 +340,7 @@ def build(work, roles_path):
             'conrad3RoleManifestSha256': CONRAD3_ROLES_SHA,
             'conrad124RoleManifestSha256': CONRAD124_ROLES_SHA,
             'alexanderLevelRoleManifestSha256': ALEXANDER_LEVEL_ROLES_SHA,
+            'remainingYarnRoleManifestSha256': REMAINING_YARN_ROLES_SHA,
             'familyCounts': counts,
             'entries': list(records.values()),
             'limitations': 'Provisional union of pinned discovery exports. Managed occurrences are build-specific and unpaired; roles, runtime visibility, other assemblies/resources, full exact-preservation contract, special-scene decisions and independent review remain incomplete. Texture text is excluded by owner decision.'}

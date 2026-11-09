@@ -1,0 +1,1663 @@
+{
+  "schema": 1,
+  "sourceExportSha256": "52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995",
+  "scope": "Remaining reviewed Yarn dialogue and option roles in the paired export after earlier manifests and full-value protections. Source function only; branch reachability and editorial decisions are separate.",
+  "groups": [
+    {
+      "node": "Alexander_1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:fa97376e",
+        "line:9d7cc63c"
+      ],
+      "reason": "Alexander describes the accident, asks for discretion, or reacts to the state of the wash. Preserve each speaker and the exact source variant."
+    },
+    {
+      "node": "Alexander_2",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:52f28749",
+        "line:e8a38ed0",
+        "line:dd06ed39",
+        "line:f167e3d7",
+        "line:607a5c47",
+        "line:13c39c50"
+      ],
+      "reason": "Alexander describes the accident, asks for discretion, or reacts to the state of the wash. Preserve each speaker and the exact source variant."
+    },
+    {
+      "node": "Alexander_2",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:7e9389a7",
+        "line:f64a5b30"
+      ],
+      "reason": "Alexander describes the accident, asks for discretion, or reacts to the state of the wash. Preserve each speaker and the exact source variant."
+    },
+    {
+      "node": "Alexander_2",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:6757e4a0",
+        "line:85f39b27"
+      ],
+      "reason": "A standalone punctuation beat appears as a line in the dialogue."
+    },
+    {
+      "node": "Alexander_3",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:9ef857c8",
+        "line:08c850bf"
+      ],
+      "reason": "Alexander describes the accident, asks for discretion, or reacts to the state of the wash. Preserve each speaker and the exact source variant."
+    },
+    {
+      "node": "Alexander_Dirty",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:9becd177",
+        "line:0ddcd600"
+      ],
+      "reason": "Alexander describes the accident, asks for discretion, or reacts to the state of the wash. Preserve each speaker and the exact source variant."
+    },
+    {
+      "node": "Alexander_Idle1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:c83a6a0d",
+        "line:5e0a6d7a"
+      ],
+      "reason": "Alexander describes the accident, asks for discretion, or reacts to the state of the wash. Preserve each speaker and the exact source variant."
+    },
+    {
+      "node": "Alexander_Idle2",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:a4214fe6",
+        "line:32114891"
+      ],
+      "reason": "Alexander describes the accident, asks for discretion, or reacts to the state of the wash. Preserve each speaker and the exact source variant."
+    },
+    {
+      "node": "Alexander_Idle3",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:bf2a8309"
+      ],
+      "reason": "Alexander describes the accident, asks for discretion, or reacts to the state of the wash. Preserve each speaker and the exact source variant."
+    },
+    {
+      "node": "Alexander_Intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:c7b73162",
+        "line:48435b12",
+        "line:de735c65",
+        "line:f212528b",
+        "line:630fed1b"
+      ],
+      "reason": "Alexander describes the accident, asks for discretion, or reacts to the state of the wash. Preserve each speaker and the exact source variant."
+    },
+    {
+      "node": "Alexander_Intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:7de638fb",
+        "line:ebd63f8c",
+        "line:642255fc"
+      ],
+      "reason": "Alexander describes the accident, asks for discretion, or reacts to the state of the wash. Preserve each speaker and the exact source variant."
+    },
+    {
+      "node": "Alexander_Soapy",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:b06e13bc",
+        "line:265e14cb"
+      ],
+      "reason": "Alexander describes the accident, asks for discretion, or reacts to the state of the wash. Preserve each speaker and the exact source variant."
+    },
+    {
+      "node": "Alexander_3_required_end",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:3027bcf7"
+      ],
+      "reason": "Alexander thanks the player at the end of the question sequence."
+    },
+    {
+      "node": "Alexander_5_romance_route",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:1b6c7f75",
+        "line:a13d76ec",
+        "line:3020c97c",
+        "line:4399096b",
+        "line:d5a90e1c",
+        "line:6ff80785",
+        "line:5a5d646c",
+        "line:cc6d631b",
+        "line:e00c6df5",
+        "line:7111d265",
+        "line:e721d512",
+        "line:8c8591ec",
+        "line:1ab5969b",
+        "line:36d49875",
+        "line:9541fceb",
+        "line:b920f205",
+        "line:2f10f572"
+      ],
+      "reason": "Alexander asks the player about his appearance and invites them to the library. Keep the two visible route hints tied to their own choices."
+    },
+    {
+      "node": "Alexander_5_romance_route",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:8d5c7802",
+        "line:370d719b",
+        "line:a610ce0b",
+        "line:f9c800f2",
+        "line:763c6a82",
+        "line:a0e49f02",
+        "line:0371fb9c"
+      ],
+      "reason": "Alexander asks the player about his appearance and invites them to the library. Keep the two visible route hints tied to their own choices."
+    },
+    {
+      "node": "Alexander_Outro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:a8e6ac2a",
+        "line:3ed6ab5d",
+        "line:12b7a5b3",
+        "line:159a1d54",
+        "line:7e3e59aa",
+        "line:e80e5edd",
+        "line:c46f5033",
+        "line:ddab3d34"
+      ],
+      "reason": "Alexander asks about the college and reacts to the player’s answer. His successful wash line follows the embedded source markers."
+    },
+    {
+      "node": "Alexander_Outro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:8487a2c4",
+        "line:83aa1a23",
+        "line:525f5744"
+      ],
+      "reason": "Alexander asks about the college and reacts to the player’s answer. His successful wash line follows the embedded source markers."
+    },
+    {
+      "node": "Alexander_SexScene",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:d132db41",
+        "line:6b63d2d8"
+      ],
+      "reason": "Alexander reacts during the encounter, and the player can choose how to respond or continue."
+    },
+    {
+      "node": "Alexander_SexScene_Cum",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:00e41343",
+        "line:2c851dad",
+        "line:19207e44",
+        "line:354170aa",
+        "line:326cc84d",
+        "line:41d5085a",
+        "line:ce21622a",
+        "line:e2406cc4"
+      ],
+      "reason": "Alexander reacts during the encounter, and the player can choose how to respond or continue."
+    },
+    {
+      "node": "Alexander_SexScene_Cum",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:bab51ada",
+        "line:8f107933",
+        "line:a37177dd",
+        "line:a45ccf3a",
+        "line:d7e50f2d",
+        "line:fb8401c3",
+        "line:6db406b4",
+        "line:5811655d",
+        "line:74706bb3",
+        "line:e56dd423"
+      ],
+      "reason": "Alexander reacts during the encounter, and the player can choose how to respond or continue."
+    },
+    {
+      "node": "Alexander_SexScene_Loop",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:dfe74420",
+        "line:4efafbb0",
+        "line:d8cafcc7"
+      ],
+      "reason": "Alexander reacts during the encounter, and the player can choose how to respond or continue."
+    },
+    {
+      "node": "Alexander_SexScene_Loop",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:b36eb839"
+      ],
+      "reason": "A standalone punctuation beat appears as a line in the dialogue."
+    },
+    {
+      "node": "Conrad_Outro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:4d6b365e",
+        "line:f73a3fc7"
+      ],
+      "reason": "Conrad closes the successful wash. These spoken lines follow the separately protected embedded title markers."
+    },
+    {
+      "node": "DragonAlmostClean",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:7d791906",
+        "line:ec64a696",
+        "line:8b8f57c4"
+      ],
+      "reason": "The dragon reacts to the current wash state or player action. Any offered responses remain separate choice IDs."
+    },
+    {
+      "node": "DragonAlmostClean",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:7a54a1e1",
+        "line:1dbf50b3"
+      ],
+      "reason": "The dragon reacts to the current wash state or player action. Any offered responses remain separate choice IDs."
+    },
+    {
+      "node": "DragonAnnoyedByBuzzing",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:b965b4dd"
+      ],
+      "reason": "The dragon reacts to the current wash state or player action. Any offered responses remain separate choice IDs."
+    },
+    {
+      "node": "DragonAnnoyedByBuzzing",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:2f55b3aa",
+        "line:9504ba33"
+      ],
+      "reason": "The dragon reacts to the current wash state or player action. Any offered responses remain separate choice IDs."
+    },
+    {
+      "node": "DragonColdBalls",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:4d3233a1",
+        "line:eea7573f",
+        "line:78975048",
+        "line:c2c659d1"
+      ],
+      "reason": "The dragon reacts to the current wash state or player action. Any offered responses remain separate choice IDs."
+    },
+    {
+      "node": "DragonConfusedAboutDismissal",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:63926ecd",
+        "line:f28fd15d",
+        "line:d726f776",
+        "line:fb47f998",
+        "line:6d77feef"
+      ],
+      "reason": "The dragon reacts to the current wash state or player action. Any offered responses remain separate choice IDs."
+    },
+    {
+      "node": "DragonConfusedAboutDismissal",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:64bfd62a",
+        "line:4116f001"
+      ],
+      "reason": "The dragon reacts to the current wash state or player action. Any offered responses remain separate choice IDs."
+    },
+    {
+      "node": "DragonSatisfiedAndLeaves",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:f1946aab",
+        "line:67a46ddc",
+        "line:e85007ac"
+      ],
+      "reason": "The dragon reacts to the current wash state or player action. Any offered responses remain separate choice IDs."
+    },
+    {
+      "node": "DragonSatisfiedAndLeaves",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:c4310942",
+        "line:52010e35"
+      ],
+      "reason": "The dragon reacts to the current wash state or player action. Any offered responses remain separate choice IDs."
+    },
+    {
+      "node": "ErrorHasOccurred",
+      "kind": "line",
+      "role": "diagnostic-dialogue-candidate",
+      "ids": [
+        "line:3fdb9d01",
+        "line:a9eb9a76",
+        "line:13ba93ef"
+      ],
+      "reason": "Five statically identified error transfers in each pinned program target this diagnostic dialogue. Preserve the support contact and reporting intent."
+    },
+    {
+      "node": "Mount_Alexander_2_6",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:44b711a0",
+        "line:e722753e",
+        "line:71127249",
+        "line:cb437bd0",
+        "line:cc6ec337",
+        "line:bfd70320",
+        "line:29e70457",
+        "line:93b60dce"
+      ],
+      "reason": "Alexander discusses the equipment and declines it in this encounter. The two player responses describe different circumstances."
+    },
+    {
+      "node": "Mount_Alexander_2_6",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:5d737ca7",
+        "line:5a5ec440"
+      ],
+      "reason": "Alexander discusses the equipment and declines it in this encounter. The two player responses describe different circumstances."
+    },
+    {
+      "node": "RyanDate_1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:69ffe957",
+        "line:ffcfee20"
+      ],
+      "reason": "Ryan discusses the date, food, or the earlier incident. Keep dialogue and responses in their own branches and leave embedded title markers protected."
+    },
+    {
+      "node": "RyanDate_2",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:bea8f1f7",
+        "line:433cb27e",
+        "line:6f5dbc90"
+      ],
+      "reason": "Ryan discusses the date, food, or the earlier incident. Keep dialogue and responses in their own branches and leave embedded title markers protected."
+    },
+    {
+      "node": "RyanDate_2",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:2898f680",
+        "line:d50cb509"
+      ],
+      "reason": "Ryan discusses the date, food, or the earlier incident. Keep dialogue and responses in their own branches and leave embedded title markers protected."
+    },
+    {
+      "node": "RyanDate_3",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:4944dbda",
+        "line:7ce1b833",
+        "line:c6b0b1aa",
+        "line:5080b6dd"
+      ],
+      "reason": "Ryan discusses the date, food, or the earlier incident. Keep dialogue and responses in their own branches and leave embedded title markers protected."
+    },
+    {
+      "node": "RyanDate_3",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:ead1bf44"
+      ],
+      "reason": "Ryan discusses the date, food, or the earlier incident. Keep dialogue and responses in their own branches and leave embedded title markers protected."
+    },
+    {
+      "node": "RyanDate_Idle1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:3223473f"
+      ],
+      "reason": "Ryan discusses the date, food, or the earlier incident. Keep dialogue and responses in their own branches and leave embedded title markers protected."
+    },
+    {
+      "node": "RyanDate_Intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:eed2cc64",
+        "line:78e2cb13",
+        "line:c2b3c28a",
+        "line:f716a163"
+      ],
+      "reason": "Ryan discusses the date, food, or the earlier incident. Keep dialogue and responses in their own branches and leave embedded title markers protected."
+    },
+    {
+      "node": "RyanDate_Intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:5483c5fd",
+        "line:6126a614"
+      ],
+      "reason": "Ryan discusses the date, food, or the earlier incident. Keep dialogue and responses in their own branches and leave embedded title markers protected."
+    },
+    {
+      "node": "RyanDate_Outro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:019b83df",
+        "line:bbca8a46"
+      ],
+      "reason": "Ryan discusses the date, food, or the earlier incident. Keep dialogue and responses in their own branches and leave embedded title markers protected."
+    },
+    {
+      "node": "RyanExploded_Intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:873a2b9a",
+        "line:ab5b2574",
+        "line:ac769d93",
+        "line:3a469ae4",
+        "line:e02f464d",
+        "line:761f413a",
+        "line:cc4e48a3",
+        "line:5a7e4fd4",
+        "line:6fdb2c3d"
+      ],
+      "reason": "Ryan discusses the explosion or reacts to his wash state. Keep the unnamed referent unresolved and embedded title markers protected."
+    },
+    {
+      "node": "RyanExploded_Intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:110a2ced",
+        "line:3d6b2203",
+        "line:f9eb2b4a"
+      ],
+      "reason": "Ryan discusses the explosion or reacts to his wash state. Keep the unnamed referent unresolved and embedded title markers protected."
+    },
+    {
+      "node": "RyanExploded_Outro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:b3c35166",
+        "line:564a9606",
+        "line:c07a9171"
+      ],
+      "reason": "Ryan discusses the explosion or reacts to his wash state. Keep the unnamed referent unresolved and embedded title markers protected."
+    },
+    {
+      "node": "RyanExploded_OutroDirty",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:fc6fdd10",
+        "line:6d726280",
+        "line:0a9993d2"
+      ],
+      "reason": "Ryan discusses the explosion or reacts to his wash state. Keep the unnamed referent unresolved and embedded title markers protected."
+    },
+    {
+      "node": "RyanExploded_OutroDirty",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:fb4265f7",
+        "line:9ca994a5"
+      ],
+      "reason": "Ryan discusses the explosion or reacts to his wash state. Keep the unnamed referent unresolved and embedded title markers protected."
+    },
+    {
+      "node": "RyanExploded_OutroSoapy",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:0979dea3",
+        "line:9f49d9d4",
+        "line:10bdb3a4"
+      ],
+      "reason": "Ryan discusses the explosion or reacts to his wash state. Keep the unnamed referent unresolved and embedded title markers protected."
+    },
+    {
+      "node": "RyanExploded_OutroSoapy",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:3cdcbd4a",
+        "line:aaecba3d"
+      ],
+      "reason": "Ryan discusses the explosion or reacts to his wash state. Keep the unnamed referent unresolved and embedded title markers protected."
+    },
+    {
+      "node": "RyanMuddy_Dirty",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:f212b2de",
+        "line:4843bb47"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Idle1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:7da41ecd",
+        "line:ecb9a15d"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Idle2",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:aaf3066d",
+        "line:cd18f73f"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Idle3",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:eb019075",
+        "line:515099ec"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Idle4",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:d7bcbe29",
+        "line:7429dab7"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Idle5",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:5230bdfd",
+        "line:e861b464"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Idle7",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:1e027369",
+        "line:8f1fccf9",
+        "line:192fcb8e"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Idle8",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:2d315c6c",
+        "line:bb015b1b",
+        "line:01505282"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:dd4b34ae",
+        "line:e8ee5747",
+        "line:7ede5030",
+        "line:c48f59a9",
+        "line:c3a2e14e",
+        "line:b01b2159",
+        "line:262b262e",
+        "line:0a4a28c0",
+        "line:a9df4c5e"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:4b7b33d9",
+        "line:52bf5ede",
+        "line:5592e639",
+        "line:9c7a2fb7"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Nag1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:21235886",
+        "line:82b63c18"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Nag2",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:c4fc9b28",
+        "line:7ead92b1"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Nag3",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:58b4f5fb"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_NaughtyTouch",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:014b5da5"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Outro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:acb8a5aa",
+        "line:3a88a2dd",
+        "line:0f2dc134",
+        "line:234ccfda",
+        "line:2461773d",
+        "line:c1e8b05d",
+        "line:57d8b72a"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Outro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:991dc643",
+        "line:b57cc8ad",
+        "line:b251704a"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_SmallTalk",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:5f64c352",
+        "line:7305cdbc",
+        "line:7428755b",
+        "line:1706e86d",
+        "line:8136ef1a"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_SmallTalk",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:e535cacb",
+        "line:e218722c"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "RyanMuddy_Soapy",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:2b65bf83",
+        "line:bd55b8f4",
+        "line:1ec0dc6a"
+      ],
+      "reason": "Ryan greets the player, comments on the wash or previous events, and offers context-specific feedback and requests. Preserve distinct variants and option outcomes."
+    },
+    {
+      "node": "ryan_jerk_off_no",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:2d5fc8a2"
+      ],
+      "reason": "Ryan declines the offered interaction in the current scene."
+    },
+    {
+      "node": "ryan_mount_no",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:6bd91ca7"
+      ],
+      "reason": "Ryan declines the offered interaction in the current scene."
+    },
+    {
+      "node": "ConradBeatup_1",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:30a74521"
+      ],
+      "reason": "A standalone punctuation beat appears as a line in the dialogue."
+    },
+    {
+      "node": "ConradBeatup_1",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:a6974256",
+        "line:8af64cb8"
+      ],
+      "reason": "Conrad reacts to his injury and the player’s help, or to incomplete washing. Preserve his account and the player’s distinct responses."
+    },
+    {
+      "node": "ConradBeatup_1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:1cc64bcf",
+        "line:1bebf328"
+      ],
+      "reason": "Conrad reacts to his injury and the player’s help, or to incomplete washing. Preserve his account and the player’s distinct responses."
+    },
+    {
+      "node": "ConradBeatup_2",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:6374414d",
+        "line:049fb01f"
+      ],
+      "reason": "Conrad reacts to his injury and the player’s help, or to incomplete washing. Preserve his account and the player’s distinct responses."
+    },
+    {
+      "node": "ConradBeatup_Idle1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:11bfce3b",
+        "line:878fc94c"
+      ],
+      "reason": "Conrad reacts to his injury and the player’s help, or to incomplete washing. Preserve his account and the player’s distinct responses."
+    },
+    {
+      "node": "ConradBeatup_Idle2",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:d37175c7",
+        "line:454172b0"
+      ],
+      "reason": "Conrad reacts to his injury and the player’s help, or to incomplete washing. Preserve his account and the player’s distinct responses."
+    },
+    {
+      "node": "ConradBeatup_Intro",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:cdb8d8db"
+      ],
+      "reason": "A standalone punctuation beat appears as a line in the dialogue."
+    },
+    {
+      "node": "ConradBeatup_Intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:28311fbb",
+        "line:be0118cc",
+        "line:92601622"
+      ],
+      "reason": "Conrad reacts to his injury and the player’s help, or to incomplete washing. Preserve his account and the player’s distinct responses."
+    },
+    {
+      "node": "ConradBeatup_Intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:04501155"
+      ],
+      "reason": "Conrad reacts to his injury and the player’s help, or to incomplete washing. Preserve his account and the player’s distinct responses."
+    },
+    {
+      "node": "ConradBeatup_OutroDirty",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:a8eb78ed"
+      ],
+      "reason": "Conrad reacts to his injury and the player’s help, or to incomplete washing. Preserve his account and the player’s distinct responses."
+    },
+    {
+      "node": "ConradBeatup_OutroDirty",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:39f6c77d",
+        "line:afc6c00a"
+      ],
+      "reason": "Conrad reacts to his injury and the player’s help, or to incomplete washing. Preserve his account and the player’s distinct responses."
+    },
+    {
+      "node": "ConradBeatup_OutroSoapy",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:ef611d11"
+      ],
+      "reason": "Conrad reacts to his injury and the player’s help, or to incomplete washing. Preserve his account and the player’s distinct responses."
+    },
+    {
+      "node": "ConradBeatup_OutroSoapy",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:79511a66",
+        "line:c30013ff"
+      ],
+      "reason": "Conrad reacts to his injury and the player’s help, or to incomplete washing. Preserve his account and the player’s distinct responses."
+    },
+    {
+      "node": "Conrad_1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:9ab6ddfb",
+        "line:6fa847ba",
+        "line:43c94954",
+        "line:766c2abd"
+      ],
+      "reason": "Conrad asks about the wash, discusses the shop or reacts to the current wash state. Preserve the special-endings ambiguity where it occurs."
+    },
+    {
+      "node": "Conrad_1",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:f99840cd",
+        "line:d5f94e23",
+        "line:e05c2dca"
+      ],
+      "reason": "Conrad asks about the wash, discusses the shop or reacts to the current wash state. Preserve the special-endings ambiguity where it occurs."
+    },
+    {
+      "node": "Conrad_2",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:22929636",
+        "line:b4a29141"
+      ],
+      "reason": "Conrad asks about the wash, discusses the shop or reacts to the current wash state. Preserve the special-endings ambiguity where it occurs."
+    },
+    {
+      "node": "Conrad_Idle1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:77cebc41",
+        "line:86154a64",
+        "line:aa74448a"
+      ],
+      "reason": "Conrad asks about the wash, discusses the shop or reacts to the current wash state. Preserve the special-endings ambiguity where it occurs."
+    },
+    {
+      "node": "Conrad_Idle1",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:10254d13",
+        "line:3c4443fd"
+      ],
+      "reason": "Conrad asks about the wash, discusses the shop or reacts to the current wash state. Preserve the special-endings ambiguity where it occurs."
+    },
+    {
+      "node": "Conrad_Intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:f7f9b0db",
+        "line:61c9b7ac",
+        "line:dcb506d2"
+      ],
+      "reason": "Conrad asks about the wash, discusses the shop or reacts to the current wash state. Preserve the special-endings ambiguity where it occurs."
+    },
+    {
+      "node": "Conrad_Intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:db98be35",
+        "line:4da8b942"
+      ],
+      "reason": "Conrad asks about the wash, discusses the shop or reacts to the current wash state. Preserve the special-endings ambiguity where it occurs."
+    },
+    {
+      "node": "Conrad_OutroDirty",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:5d41b5d6"
+      ],
+      "reason": "Conrad asks about the wash, discusses the shop or reacts to the current wash state. Preserve the special-endings ambiguity where it occurs."
+    },
+    {
+      "node": "Conrad_OutroDirty",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:cb71b2a1",
+        "line:5a6c0d31"
+      ],
+      "reason": "Conrad asks about the wash, discusses the shop or reacts to the current wash state. Preserve the special-endings ambiguity where it occurs."
+    },
+    {
+      "node": "Conrad_OutroSoapy",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:2f6eb3c3"
+      ],
+      "reason": "Conrad asks about the wash, discusses the shop or reacts to the current wash state. Preserve the special-endings ambiguity where it occurs."
+    },
+    {
+      "node": "Conrad_OutroSoapy",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:8cfbd75d",
+        "line:1acbd02a"
+      ],
+      "reason": "Conrad asks about the wash, discusses the shop or reacts to the current wash state. Preserve the special-endings ambiguity where it occurs."
+    },
+    {
+      "node": "Conrad_4_Conrad_Romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:28c51dbf",
+        "line:ca616238",
+        "line:70306ba1",
+        "line:d3a50f3f",
+        "line:69f406a6"
+      ],
+      "reason": "Conrad and the player discuss a date and its location in their relationship route."
+    },
+    {
+      "node": "Conrad_4_Conrad_Romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:b9d8a22f",
+        "line:2fe8a558",
+        "line:5c51654f",
+        "line:e6006cd6",
+        "line:45950848",
+        "line:ffc401d1"
+      ],
+      "reason": "Conrad and the player discuss a date and its location in their relationship route."
+    },
+    {
+      "node": "Conrad_Outro_4_Conrad_Romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:ed6be68f",
+        "line:7b5be1f8",
+        "line:f4af8b88",
+        "line:629f8cff",
+        "line:f382336f",
+        "line:803bf378",
+        "line:160bf40f",
+        "line:ac5afd96",
+        "line:3a6afae1",
+        "line:0fcf9908",
+        "line:23ae97e6",
+        "line:b2b32876",
+        "line:24832f01"
+      ],
+      "reason": "Conrad and the player discuss a date and its location in their relationship route."
+    },
+    {
+      "node": "Conrad_Outro_4_Conrad_Romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:d8ce8566",
+        "line:4efe8211",
+        "line:65b23418",
+        "line:99ff9e7f"
+      ],
+      "reason": "Conrad and the player discuss a date and its location in their relationship route."
+    },
+    {
+      "node": "Conrad_Outro_4_Conrad_Romanced",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:b59e9091"
+      ],
+      "reason": "A standalone punctuation beat appears as a line in the dialogue."
+    },
+    {
+      "node": "Conrad_4_Ryan_Conrad_Romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:bb8583c1",
+        "line:1810e75f",
+        "line:3471e9b1",
+        "line:a241eec6",
+        "line:c642cb17",
+        "line:ea23c5f9",
+        "line:df86a610",
+        "line:f3e7a8fe"
+      ],
+      "reason": "Conrad tells the player about Ryan and asks for advice or reassurance before the date."
+    },
+    {
+      "node": "Conrad_4_Ryan_Conrad_Romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:8e20e028",
+        "line:5072cc60",
+        "line:335c5156",
+        "line:a56c5621",
+        "line:7c13c28e",
+        "line:49b6a167"
+      ],
+      "reason": "Conrad tells the player about Ryan and asks for advice or reassurance before the date."
+    },
+    {
+      "node": "Conrad_Outro_4_Ryan_Conrad_Romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:ab1bc039",
+        "line:3d2bc74e",
+        "line:114ac9a0",
+        "line:24efaa49",
+        "line:9ebea3d0",
+        "line:088ea4a7",
+        "line:99931b37",
+        "line:0fa31c40",
+        "line:7c1adc57",
+        "line:c64bd5ce",
+        "line:507bd2b9",
+        "line:65deb150",
+        "line:df8fb8c9",
+        "line:49bfbfbe",
+        "line:4e920759",
+        "line:02cbdc87"
+      ],
+      "reason": "Conrad tells the player about Ryan and asks for advice or reassurance before the date."
+    },
+    {
+      "node": "Conrad_Outro_4_Ryan_Conrad_Romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:877aced7",
+        "line:b2dfad3e",
+        "line:ea2adb20",
+        "line:f3eeb627",
+        "line:d8a2002e",
+        "line:94fbdbf0"
+      ],
+      "reason": "Conrad tells the player about Ryan and asks for advice or reassurance before the date."
+    },
+    {
+      "node": "Conrad_Outro_4_Ryan_Romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:fdd800c2",
+        "line:6be807b5",
+        "line:4789095b",
+        "line:e41c6dc5",
+        "line:c87d632b",
+        "line:5e4d645c",
+        "line:cf50dbcc",
+        "line:5960dcbb"
+      ],
+      "reason": "Conrad reacts to the player’s relationship with Ryan and can discuss his own plans or romantic interest."
+    },
+    {
+      "node": "Conrad_Outro_4_Ryan_Romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:d1b90e2c",
+        "line:722c6ab2"
+      ],
+      "reason": "Conrad reacts to the player’s relationship with Ryan and can discuss his own plans or romantic interest."
+    },
+    {
+      "node": "Conrad_Ryan_Romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:a6d6bf76",
+        "line:570d4953",
+        "line:7b6c47bd",
+        "line:ed5c40ca",
+        "line:d8f92323",
+        "line:62a82aba",
+        "line:f4982dcd",
+        "line:6585925d",
+        "line:163c524a",
+        "line:3a5d5ca4",
+        "line:ac6d5bd3"
+      ],
+      "reason": "Conrad reacts to the player’s relationship with Ryan and can discuss his own plans or romantic interest."
+    },
+    {
+      "node": "Conrad_Ryan_Romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:30e6b801",
+        "line:c13d4e24",
+        "line:800c553d",
+        "line:4ec92454",
+        "line:f3b5952a"
+      ],
+      "reason": "Conrad reacts to the player’s relationship with Ryan and can discuss his own plans or romantic interest."
+    },
+    {
+      "node": "Conrad_5_Cum",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:203bce10"
+      ],
+      "reason": "Conrad reacts to the start or end of an interaction."
+    },
+    {
+      "node": "Conrad_5_JerkOff_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:4d4d9986"
+      ],
+      "reason": "Conrad reacts to the start or end of an interaction."
+    },
+    {
+      "node": "Conrad_5_Mount_Finish",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:684fb29a"
+      ],
+      "reason": "Conrad reacts to the start or end of an interaction."
+    },
+    {
+      "node": "Conrad_5_Mount_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:cacbff51"
+      ],
+      "reason": "Conrad reacts to the start or end of an interaction."
+    },
+    {
+      "node": "Conrad_5_intro_conrad_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:1538bc7e",
+        "line:8308bb09",
+        "line:b6add8e0",
+        "line:0cfcd179",
+        "line:9accd60e",
+        "line:9de16ee9",
+        "line:fa0a9fbb",
+        "line:6c3a98cc",
+        "line:405b9622",
+        "line:75fef5cb",
+        "line:cfaffc52",
+        "line:599ffb25",
+        "line:c88244b5",
+        "line:5eb243c2"
+      ],
+      "reason": "Conrad and the player prepare for their date and discuss the meeting place. Keep branches tied to the player’s replies."
+    },
+    {
+      "node": "Conrad_5_intro_conrad_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:209ddf97",
+        "line:0bd1699e",
+        "line:d66b9155",
+        "line:e3cef2bc"
+      ],
+      "reason": "Conrad and the player prepare for their date and discuss the meeting place. Keep branches tied to the player’s replies."
+    },
+    {
+      "node": "Conrad_5_outro_conrad_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:eb7cf9e5",
+        "line:512df07c",
+        "line:64889395",
+        "line:f2b894e2",
+        "line:ded99a0c",
+        "line:4fc4259c",
+        "line:d9f422eb"
+      ],
+      "reason": "Conrad and the player prepare for their date and discuss the meeting place. Keep branches tied to the player’s replies."
+    },
+    {
+      "node": "Conrad_5_outro_conrad_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:c71df70b",
+        "line:48e99d7b"
+      ],
+      "reason": "Conrad and the player prepare for their date and discuss the meeting place. Keep branches tied to the player’s replies."
+    },
+    {
+      "node": "Conrad_5_required_conrad_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:b983f922",
+        "line:95e2f7cc",
+        "line:36779352",
+        "line:8c269acb",
+        "line:1a169dbc",
+        "line:8b0b222c",
+        "line:f8b2e23b",
+        "line:d4d3ecd5",
+        "line:42e3eba2"
+      ],
+      "reason": "Conrad and the player prepare for their date and discuss the meeting place. Keep branches tied to the player’s replies."
+    },
+    {
+      "node": "Conrad_5_required_conrad_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:2fb3fe55",
+        "line:a0479425",
+        "line:1d3b255b",
+        "line:6e82e54c"
+      ],
+      "reason": "Conrad and the player prepare for their date and discuss the meeting place. Keep branches tied to the player’s replies."
+    },
+    {
+      "node": "Conrad_5_required_conrad_romanced",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:03d2f0bb"
+      ],
+      "reason": "A standalone punctuation beat appears as a line in the dialogue."
+    },
+    {
+      "node": "Conrad_5_intro_ryan_conrad_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:24ce37ec",
+        "line:08af3902",
+        "line:9e9f3e75",
+        "line:ab3a5d9c",
+        "line:116b5405",
+        "line:875b5372",
+        "line:1646ece2",
+        "line:8076eb95",
+        "line:7de2a81c",
+        "line:5183a6f2"
+      ],
+      "reason": "Conrad recounts his date with Ryan, comments on their relationship, or ends the late visit."
+    },
+    {
+      "node": "Conrad_5_intro_ryan_conrad_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:b2fe309b",
+        "line:3d0a5aeb",
+        "line:ebd2af6b",
+        "line:c7b3a185"
+      ],
+      "reason": "Conrad recounts his date with Ryan, comments on their relationship, or ends the late visit."
+    },
+    {
+      "node": "Conrad_5_outro_ryan_conrad_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:eaafe671",
+        "line:7c9fe106",
+        "line:c6cee89f",
+        "line:f36b8b76",
+        "line:df0a8598",
+        "line:493a82ef",
+        "line:d8273d7f"
+      ],
+      "reason": "Conrad recounts his date with Ryan, comments on their relationship, or ends the late visit."
+    },
+    {
+      "node": "Conrad_5_outro_ryan_conrad_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:50feefe8",
+        "line:655b8c01"
+      ],
+      "reason": "Conrad recounts his date with Ryan, comments on their relationship, or ends the late visit."
+    },
+    {
+      "node": "Conrad_5_required_ryan_conrad_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:92829935",
+        "line:bee397db",
+        "line:b9ce2f3c",
+        "line:2ffe284b",
+        "line:4815d919",
+        "line:de25de6e",
+        "line:f244d080",
+        "line:c7e1b369",
+        "line:7db0baf0"
+      ],
+      "reason": "Conrad recounts his date with Ryan, comments on their relationship, or ends the late visit."
+    },
+    {
+      "node": "Conrad_5_required_ryan_conrad_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:04b29e42",
+        "line:28d390ac",
+        "line:6474d7f7",
+        "line:51d1b41e"
+      ],
+      "reason": "Conrad recounts his date with Ryan, comments on their relationship, or ends the late visit."
+    },
+    {
+      "node": "Conrad_5_intro_ryan_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:f474ffa9",
+        "line:016a65e8",
+        "line:2d0b6b06",
+        "line:8e9e0f98",
+        "line:18ae08ef",
+        "line:a2ff0176",
+        "line:33e2bee6",
+        "line:d66b7986",
+        "line:405b7ef1"
+      ],
+      "reason": "Conrad responds to the player’s relationship with Ryan and discusses the late wash. Keep the nickname and its reaction together."
+    },
+    {
+      "node": "Conrad_5_intro_ryan_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:975a629f",
+        "line:bb3b6c71",
+        "line:34cf0601",
+        "line:a5d2b991"
+      ],
+      "reason": "Conrad responds to the player’s relationship with Ryan and discusses the late wash. Keep the nickname and its reaction together."
+    },
+    {
+      "node": "Conrad_5_outro_ryan_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:f57fc630",
+        "line:f2527ed7",
+        "line:982fd3c7",
+        "line:255362b9"
+      ],
+      "reason": "Conrad responds to the player’s relationship with Ryan and discusses the late wash. Keep the nickname and its reaction together."
+    },
+    {
+      "node": "Conrad_5_outro_ryan_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:646279a0",
+        "line:17dbb9b7",
+        "line:81ebbec0",
+        "line:3bbab759",
+        "line:ad8ab02e",
+        "line:0e1fd4b0",
+        "line:b44edd29",
+        "line:b36365ce",
+        "line:d04df8f8"
+      ],
+      "reason": "Conrad responds to the player’s relationship with Ryan and discusses the late wash. Keep the nickname and its reaction together."
+    },
+    {
+      "node": "Conrad_5_outro_ryan_romanced",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:227eda5e"
+      ],
+      "reason": "A standalone punctuation beat appears as a line in the dialogue."
+    },
+    {
+      "node": "Conrad_5_required_ryan_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:85ec0862",
+        "line:a98d068c",
+        "line:aea0be6b",
+        "line:3890b91c",
+        "line:4b29790b",
+        "line:674877e5",
+        "line:c4dd137b",
+        "line:e8bc1d95",
+        "line:7e8c1ae2",
+        "line:ef91a572",
+        "line:79a1a205"
+      ],
+      "reason": "Conrad responds to the player’s relationship with Ryan and discusses the late wash. Keep the nickname and its reaction together."
+    },
+    {
+      "node": "Conrad_5_required_ryan_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:13dc0f15",
+        "line:3fbd01fb",
+        "line:f1787092",
+        "line:52ed140c"
+      ],
+      "reason": "Conrad responds to the player’s relationship with Ryan and discusses the late wash. Keep the nickname and its reaction together."
+    },
+    {
+      "node": "Conrad_5_required_ryan_romanced",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:dd197e7c"
+      ],
+      "reason": "A standalone punctuation beat appears as a line in the dialogue."
+    },
+    {
+      "node": "Conrad_Intro_5",
+      "kind": "line",
+      "role": "recovery-prompt-candidate",
+      "ids": [
+        "line:4dac3d2b",
+        "line:db9c3a5c"
+      ],
+      "reason": "The diagnostic recovery branch is entered with all three relationship flags false; each of its three options stores a different flag combination."
+    },
+    {
+      "node": "Conrad_Intro_5",
+      "kind": "option",
+      "role": "recovery-choice-candidate",
+      "ids": [
+        "line:61cd33c5",
+        "line:f7fd34b2",
+        "line:66e08b22"
+      ],
+      "reason": "The diagnostic recovery branch is entered with all three relationship flags false; each of its three options stores a different flag combination."
+    },
+    {
+      "node": "Conrad_SexScene",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:77c996e8",
+        "line:31bdd33c"
+      ],
+      "reason": "Conrad and the player react during the encounter and choose whether to continue or return."
+    },
+    {
+      "node": "Conrad_SexScene",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:a78dd44b"
+      ],
+      "reason": "Conrad and the player react during the encounter and choose whether to continue or return."
+    },
+    {
+      "node": "Conrad_SexScene_Cum",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:0bc044da",
+        "line:0cedfc3d",
+        "line:7f543c2a",
+        "line:533532c4",
+        "line:6690512d",
+        "line:f0a0565a"
+      ],
+      "reason": "Conrad and the player react during the encounter and choose whether to continue or return."
+    },
+    {
+      "node": "Conrad_SexScene_Cum",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:9df043ad",
+        "line:9addfb4a",
+        "line:e9643b5d",
+        "line:c50535b3",
+        "line:4af15fc3"
+      ],
+      "reason": "Conrad and the player react during the encounter and choose whether to continue or return."
+    },
+    {
+      "node": "Conrad_SexScene_Loop",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:2f9b499a",
+        "line:b9ab4eed",
+        "line:1a3e2a73"
+      ],
+      "reason": "Conrad and the player react during the encounter and choose whether to continue or return."
+    },
+    {
+      "node": "Conrad_SexScene_Loop",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:8c0e2d04"
+      ],
+      "reason": "A standalone punctuation beat appears as a line in the dialogue."
+    }
+  ]
+}

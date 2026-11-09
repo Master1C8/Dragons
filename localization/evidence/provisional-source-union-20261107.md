@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v14-20261109.json`
-has SHA-256 `b001ec87a5a2a22066b7cd499a980a0d74c92cae4eff8d1c7c5d1f7779e10f1f`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v15-20261109.json`
+has SHA-256 `9e271efe1e795a2e86a413f732e2c65e0042f5dfd708572b320de59c80e6956d`.
 Its 5,204 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -100,6 +100,19 @@ standalone ellipses, regular options and the all-false recovery choices in
 groups still require Russian adaptation decisions. Two v14 builds matched
 byte-for-byte and the v13 comparison changed exactly those 379 roles. There
 are 520 unclassified Yarn IDs.
+
+The v15 recipe assigns the remaining 520 Yarn IDs across 87 nodes. It
+separates 361 dialogue lines, 141 ordinary options, ten standalone dialogue
+beats, three diagnostic lines, two recovery prompts and three recovery
+choices. `ErrorHasOccurred` is a target of five named transfers in each
+pinned program. The all-false relationship recovery in `Conrad_Intro_5`
+retains its own options. The five mixed nodes retain their prior full-value
+protections. Two v15 builds matched byte-for-byte, and comparison with
+v14 changed exactly the 520 intended roles. All 1,839 Yarn IDs now have
+either a provisional source function or an existing exact-value protection.
+The protected records still retain their pending source-role designation.
+This closes the unclassified Yarn count and leaves runtime visibility,
+complete preservation and the other source families open.
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are
