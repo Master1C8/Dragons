@@ -30,8 +30,14 @@ The 17 pinned top-level serialized files in each build were also
 checked. All 3,498 macOS and 3,435 Windows MonoBehaviour script
 references resolved, and none pointed to `DebugUpdater`. The same
 files contained none of the searched exact activation method names.
-The 149 legacy UI records remain in the inventory while other
-entry points and runtime visibility are assessed.
+
+The original ResourceManager maps both render debugger canvases to
+`resources.assets`. In each build, their pinned handler objects
+round-trip exactly. Their widget and panel prefab references reach
+all 26 roots of the 149 legacy text occurrences. The v27 inventory
+preserves every one verbatim for standard localization. The evidence
+covers the stock managed entry and serialized prefab links. Reflection
+or external modifications can still activate this debugger.
 
 The source-pinned scans are under
 `localization/work/debug-ui-reachability-20261109.1GiwmL/`.
@@ -42,3 +48,5 @@ The source-pinned scans are under
 | Windows managed callers | `187ae448bc0ed2795de3c28381a2a8174e4ef3706c08ce37014196ce1991981d` |
 | macOS serialized references | `0c671b9b5165d3586338cc68fcb3c29e915b385ed5ee687c48942e5d810a1a68` |
 | Windows serialized references | `90c92f7798ace85c57cb2feb04651cacb12ee5f20389203e7a14a32af47cdc3e` |
+| macOS debugger prefab bindings | `df2266301b5d5944b5d962958e32e6f601260d25f973f1b7cca68fcb80b218d9` |
+| Windows debugger prefab bindings | `57b9a5c7f5892a878374607101a3e9300a3c1cc2c5e4d8c947c21b0ab4102bd1` |

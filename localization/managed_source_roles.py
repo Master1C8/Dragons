@@ -169,6 +169,11 @@ DEBUG_SINK_ARITY = {
     for name in ('Log', 'LogWarning', 'LogError')
     for context, arity in (('', 1), (',UnityEngine.Object', 2))
 }
+PLAYER_LOG_SINKS = {
+    *DEBUG_SINK_ARITY,
+    'System.Void UnityEngine.Debug::LogException(System.Exception)',
+    'System.Void UnityEngine.UI.StencilMaterial::LogWarningWhenNotInBatchmode(System.String,UnityEngine.Object)',
+}
 MENU_TRANSITION = 'System.Void MenuResponseTransition::.ctor(System.String,System.String,MenuTransitionData)'
 LEVEL_LOAD = 'System.Void MenuTransitionDataLevelLoad::.ctor(System.String)'
 MENU_UNPAUSE = 'System.Void MenuTransitionDataUnpause::.ctor(MenuTransitionDataUnpause/UnpauseOption)'

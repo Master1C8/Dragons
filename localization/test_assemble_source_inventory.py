@@ -211,10 +211,20 @@ class SourceInventoryUnitTests(unittest.TestCase):
                         and r['source'].get(platform, '').startswith('!! Error: Missing localisation')]
             self.assertEqual([r['role'] for r in fallback], ['error-fallback-text-needs-runtime-review'])
         wait = next(r for r in result['entries'] if r['source'].get('windows') == 'Waiting for flag {0}...{1}')
-        self.assertEqual(wait['role'], 'diagnostic-text-needs-visibility-review')
+        self.assertEqual(wait['role'], 'preserve-exactly-player-log-text')
         self.assertEqual(wait['consumer'], 'System.Void UnityEngine.Debug::Log(System.Object)')
+        log_rows = [r for r in result['entries'] if r['role'] == 'preserve-exactly-player-log-text']
+        self.assertEqual(len(log_rows), 582)
+        self.assertTrue(all(r['consumer'] in inventory.managed.PLAYER_LOG_SINKS for r in log_rows))
+        self.assertTrue(any(r['role'] == 'diagnostic-text-needs-visibility-review' and
+                            r.get('consumer') == 'System.Void System.ArgumentException::.ctor(System.String)'
+                            for r in result['entries']))
         self.assertFalse(any(r['role'] == 'needs-classification' for r in result['entries']
                              if r['family'] == 'managed'))
+        legacy_rows = [r for r in result['entries'] if r['family'] == 'legacy-ui']
+        self.assertEqual({r['role'] for r in legacy_rows}, {'preserve-exactly-render-debug-template'})
+        self.assertEqual({r['hierarchy'][0] for r in legacy_rows}, inventory.LEGACY_DEBUG_ROOTS)
+        self.assertTrue(all(r['source']['macos'] == r['source']['windows'] for r in legacy_rows))
         component_rows = [r for r in result['entries'] if r['family'] == 'game-component']
         for platform in ('macos', 'windows'):
             cold = [r for r in component_rows if r['source'].get(platform) == 'DragonColdBalls']

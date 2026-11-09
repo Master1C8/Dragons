@@ -172,3 +172,36 @@ The complete reports are under
 | Windows Yarn Spinner Unity | `644280e3d46783f05dbb88ffcbd98500bc14ccdd8e5ab392b059dc7b51b774b1` |
 
 The full localization suite passed all 180 tests with v26.
+
+## v28 player log sinks
+
+The direct callback and logger-setter scan matched the earlier full
+managed DLL inventory, including 170 macOS and 172 Windows files.
+Both builds reference the searched log callback and setter methods
+only in Unity CoreModule. The matches are Unity's compatibility
+wrappers and its own logger constructor. The scan found no game
+subscriber or game replacement logger through those entry points.
+The pinned Unity UI stencil warning wrapper either returns in batch
+mode or forwards to `Debug.LogWarning`.
+
+The source recipe preserves 582 occurrences whose traced consumers
+are these Unity log methods or the stencil warning wrapper. The
+Windows wait-for-equipment log supplies a positive runtime control.
+Throw messages, generated error result text and possible visible
+fallbacks retain their existing review roles. There are 494 managed
+occurrences still under review, including 190 diagnostics with
+other consumers. The scan establishes the inspected managed log
+routes in the original builds. Native logging and dynamically
+constructed reflection calls are outside its scope.
+
+The local logs are in
+`localization/work/managed-log-visibility-20261109.dnQGdg/`.
+
+| Report | SHA-256 |
+| --- | --- |
+| macOS managed callers | `e3afa39a759c519aa17b79a9bca55687e59a70e6271547289800651a6af159df` |
+| Windows managed callers | `9004566b0a48d9f171733e7e2487a9eb1cfa01deedbd44a3461d8030582080a5` |
+| macOS stencil wrapper | `4e0dfee65e0a3ef199e4e38ae43b992c701177bfa78f463ef8ecf8568f24e37a` |
+| Windows stencil wrapper | `f7a52d245e07c1fd9291605b99400e33336dd9d36ce29120fc82d37c0c57b447` |
+
+The full localization suite passed all 180 tests with v28.

@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v26-final-20261109.json`
-has SHA-256 `8a62a0c9783795e53fbe4b7aa0e5b699e650cbda8bf07bb5b309d9558781b45f`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v28-20261109.json`
+has SHA-256 `617fa1c7da80ada8128d2a371d83ff8d5424140feea5c4a7ec248d9a57a8f389`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -242,6 +242,13 @@ exports match byte-for-byte. The v25 comparison verifies that only
 roles and consumer bindings changed. A visibility-review role is a
 provisional classification.
 See [the final managed pass](managed-game-consumers-20261109.md#v26-textmeshpro-and-yarn-spinner-unity).
+
+The v27 export preserves all 149 render debugger template records.
+The v28 export preserves 582 managed log occurrences based on their
+exact sink. Each export reproduced byte-for-byte. Comparison with its
+immediate predecessor verified that only the stated roles changed.
+See [the debugger binding](legacy-ui-inventory-20261107.md#runtime-debug-entry-points-in-the-two-pinned-builds)
+and [the log sink audit](managed-game-consumers-20261109.md#v28-player-log-sinks).
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values still require visibility review, only five managed assemblies are

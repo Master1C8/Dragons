@@ -53,6 +53,15 @@ CONRAD3_ROLES_SHA = 'cfcfc9ead9be0b1b0d90e5f91862fd09657b9199ce49eba40c3f8a3712d
 CONRAD124_ROLES_SHA = '66a1abafedf495b6e803508500a8cd9ee97bc41565c709296de760b475dc9e17'
 ALEXANDER_LEVEL_ROLES_SHA = 'ce9fa72e0a240e38135d17f6e440f17e9c3260086fe27ea43a511a395aa0e3ab'
 REMAINING_YARN_ROLES_SHA = 'a563b1027e04af5ed0a6b111cde5eb73a6f11638da6533711fd8389fa526fbb0'
+# Pinned ResourceManager and render debugger prefab bindings for the legacy text export.
+LEGACY_DEBUG_ROOTS = {
+    'DebugUIBitField', 'DebugUIButton', 'DebugUIColor', 'DebugUIEnumField', 'DebugUIEnumHistory',
+    'DebugUIFloatField', 'DebugUIFoldout', 'DebugUIGroup', 'DebugUIHandlerRenderingLayerField',
+    'DebugUIIntField', 'DebugUIMessageBox', 'DebugUIObject', 'DebugUIObjectList', 'DebugUIObjectPopupField',
+    'DebugUIPanel', 'DebugUIProgressBar', 'DebugUIRow', 'DebugUIToggle', 'DebugUIToggleHistory',
+    'DebugUIUIntField', 'DebugUIValue', 'DebugUIValuePersistent', 'DebugUIValueTuple', 'DebugUIVector2',
+    'DebugUIVector3', 'DebugUIVector4',
+}
 MANAGED_CONSUMER_SHA = {
     'macos': {
         'setter': 'ea9b68355a532b71831596b4a081dcbebe4de91da3f130a735d51447b83cfa52',
@@ -312,6 +321,9 @@ def build(work, roles_path):
         return result
     mac_legacy, win_legacy = legacy_map(legacy['macos']), legacy_map(legacy['windows'])
     if mac_legacy.keys() != win_legacy.keys(): raise ValueError('legacy identity mismatch')
+    if (len(mac_legacy) != 149 or {asset for asset, _ in mac_legacy} != {'resources.assets'} or
+            {row['hierarchy'][0] for row in mac_legacy.values()} != LEGACY_DEBUG_ROOTS):
+        raise ValueError('legacy render debugger prefab binding mismatch')
     for (asset, object_id), a in mac_legacy.items():
         b = win_legacy[(asset, object_id)]
         if any(a[k] != b[k] for k in ('hierarchy', 'text', 'textSha256', 'rawSha256')):
@@ -319,7 +331,7 @@ def build(work, roles_path):
         if dl.sha(a['text'].encode('utf-8')) != a['textSha256']:
             raise ValueError('legacy text hash mismatch')
         put(records, {'id': f'legacy:{asset}#{object_id}', 'family': 'legacy-ui',
-                      'role': 'debug-template-needs-review', 'hierarchy': a['hierarchy'],
+                      'role': 'preserve-exactly-render-debug-template', 'hierarchy': a['hierarchy'],
                       'source': {'macos': a['text'], 'windows': b['text']},
                       'location': {'macos': f'{asset}#{object_id}', 'windows': f'{asset}#{object_id}'}})
     for platform in ('macos', 'windows'):
@@ -365,6 +377,8 @@ def build(work, roles_path):
                         binding = managed.dependency_role(row, assembly)
                     if binding is not None:
                         role, consumer = binding
+                        if role == 'diagnostic-text-needs-visibility-review' and consumer in managed.PLAYER_LOG_SINKS:
+                            role = 'preserve-exactly-player-log-text'
                 put(records, {'id': f'managed:{platform}:{assembly}:{row["id"]}', 'family': 'managed',
                               'role': role, 'assemblySha256': data['assemblySha256'],
                               'method': row['method'], 'ilOffset': row['ilOffset'],

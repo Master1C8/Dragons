@@ -70,8 +70,7 @@ occurrences. The render request used the `PlayerFace` camera and
 produced a 640 × 480 PNG. The observer verified that the isolated
 process exited, all 163 desktop samples stayed hidden, the
 checked original profile roots matched, and the wrapper removed
-its Steam file. Visual inspection of the prepared frame remains
-pending. The temporary camera routing limits any future visual
+its Steam file. The temporary camera routing limits the visual
 finding to this offscreen presentation path.
 
 Local OCR recognized `Жёлтый ёж. Ъъ Бь Щщ Йй.` with confidence
@@ -79,6 +78,13 @@ Local OCR recognized `Жёлтый ёж. Ъъ Бь Щщ Йй.` with confidence
 `U+042C`. The OCR result is a reason to inspect the prepared
 source-pixel crop and does not establish the glyph's appearance.
 Crop bounds are `(208, 413, 227, 49)` on the same PNG.
+
+The prepared full frame and source-pixel crop were visually
+reviewed. The line reads `Жёлтый ёж. Ъъ Ьь Щщ Йй.`, including
+the distinct paired-case signs. The capital soft sign has a
+vertical stem and lower bowl without the upper arm of `Б`.
+The single line fits within the speech bubble, with clear
+separation from the border and no visible clipping.
 
 | Follow-up artifact | SHA-256 |
 | --- | --- |
@@ -89,3 +95,37 @@ Crop bounds are `(208, 413, 227, 49)` on the same PNG.
 | Prepared 640 × 480 WebP80 | `0a91ee0434a3a6b0e3684e8449286972f9e1d043347c39a52136d8be7ebbd679` |
 | Prepared 227 × 49 dialogue crop | `109ac90ea55e0874b342d07b21c4ee23c7b36411c6d702180bac5c522f361976` |
 | OCR receipt | `2a17c90afd3a12a17c0ef9c59787d32a5880a3b0927caf1a0163279b93b6aa50` |
+
+## Matching Windows stock dialogue probe
+
+The source-bound Windows builder produced a one-line table with
+the same ID and sample and the current Yarn repair enabled. In
+the isolated CrossOver copy, stock menu, movement and interaction
+input reached `Conrad_Intro_3`. The original presenter resolved
+the same 16 Cyrillic occurrences to matching characters in
+`LiberationSans SDF - Fallback`. The Direct3D 11 player produced
+a 1074 × 544 PNG using the same offscreen `PlayerFace` camera
+request. The Windows viewport differs from the macOS viewport.
+
+The observer sampled 274 times with zero foreground ownership
+and zero on-screen windows. The test process exited, and the
+checked original files and saves matched their snapshots.
+Local OCR read `Жёлтый ёж. Ъъ bь Щщ Йй.` at 0.5 confidence.
+The prepared full frame and crop await visual inspection. The
+crop bounds are `(350, 443, 390, 55)` on the original PNG.
+This test covers the Windows build under CrossOver.
+
+Local source and receipts are under
+`localization/work/windows-cyrillic-offscreen-20261109.eRMrOI/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| One-line test table | `db7214cd1ee224111da920f95ce58375c48ad15cdb62c184971f7ae9ce2fa116` |
+| Builder asset | `946119a439fa0fe61423bb86aa7416fb1cc9a4502e554be3255ce2525ce2d9a1` |
+| Runtime companion | `bc34fdb3ec1f62256e75063d55dd62b8163976e8af123f2e0f1d6465297f218f` |
+| Unity log | `e0d3062bbf1f78ed1feb3ebb46c8623c42495ea3c6f657e98f356c55b1d94ce0` |
+| Observer receipt | `28a138b9607c78038b1ba1a86c31145a4de3b67c94891e780d8dc8d1e35158f5` |
+| Original offscreen PNG | `1e890958f2bbcd0f4b0af841404fedcd6fb8188ecdcc6b9c76b973d2f5039111` |
+| Prepared 1074 × 544 WebP80 | `62eece0597d0ba628fd21665d788a24f0c40b313cca7db6ad945aca1b31a69d3` |
+| Prepared 390 × 55 dialogue crop | `28694f32ae0a0a36cd984911bf36c578e6cbccad49ee6aa3edb9f2cb618db5fb` |
+| OCR receipt | `52acaf2756baceeef505acfc55d05f4e6bbe7a761e403e7bb9cc61aae77479e9` |

@@ -63,10 +63,12 @@ presenter through stock input. TextMeshPro resolved all 16
 Cyrillic occurrences in a synthetic sample to the original
 Liberation Sans fallback. Metal was active, but the windowless
 screen capture failed. An offscreen camera follow-up produced
-a prepared 640 × 480 frame awaiting visual review. A separate
-source-pixel review of the saved Windows CrossOver dialogue
-frame confirmed the Cyrillic sample and resolved the closing
-punctuation. Details and remaining visual checks are in
+a 640 × 480 frame. Visual review distinguished the case pairs
+and found the line within the dialogue bubble. A matching stock
+Windows CrossOver probe resolved all 16 occurrences and produced
+a 1074 × 544 Direct3D 11 frame awaiting visual review. An earlier
+saved Windows frame confirms the wider synthetic glyph sample and
+its closing punctuation. Details and remaining visual checks are in
 [the Cyrillic dialogue evidence](localization/evidence/background-cyrillic-20261109.md).
 
 Commit `3727bf3` adds 319 provisional Yarn role assignments across Ryan's later
@@ -140,9 +142,9 @@ The known 162 paired TMP UI fields and available settings backup strings have ha
 
 Local StreamingAssets now have a source-bound file inventory and separate exact comparison on two isolated copies, including 24 identical APV files per build. APV/catalog semantics and remote/dynamic resources remain unverified; this standalone check is not yet a release gate. See `localization/evidence/streaming-assets-preservation-20261107.md`.
 
-The v26 shared source union retains the 5,204 prior records and 21,909 serialized game component fields from 2,630 byte-verified objects across both builds. The components add 30 Yarn references per build, including seven bark references to `DragonColdBalls`. Pinned IL consumers identify 888 further exact-preserve fields for animation keys, state flags and menu intents. The other 762 formerly uncategorized fields are bark descriptions and dragon descriptor names that still need runtime review. See [component strings](localization/evidence/game-component-strings-20261109.md) and [the provisional source union](localization/evidence/provisional-source-union-20261107.md).
+The v28 shared source union retains the 5,204 prior records and 21,909 serialized game component fields from 2,630 byte-verified objects across both builds. The components add 30 Yarn references per build, including seven bark references to `DragonColdBalls`. Pinned IL consumers identify 888 further exact-preserve fields for animation keys, state flags and menu intents. The other 762 formerly uncategorized fields are bark descriptions and dragon descriptor names that still need runtime review. The original render debugger prefab links bind all 149 legacy UI fields, which v27 preserves verbatim. See [component strings](localization/evidence/game-component-strings-20261109.md), [legacy UI](localization/evidence/legacy-ui-inventory-20261107.md) and [the provisional source union](localization/evidence/provisional-source-union-20261107.md).
 
-The v22 managed classification added 134 exact-preserve roles for save keys, JSON syntax, save paths, Yarn commands, reflected member names and other internal identifiers. Another 80 occurrences gained diagnostic or bark visibility review roles. In-memory .NET tests of both original game DLLs confirmed SimpleJSON round-trips and the two flag-registry layouts, including the macOS-only `version` field. The v23 and v24 passes completed the initial classification of the game assembly. The v25 pass assigned roles to the remaining Unity UI and settings values. The v26 pass assigns roles to the last 540 Yarn Spinner Unity and TextMeshPro literal loads. All 2,974 occurrences across the five inspected assemblies have roles. Of these, 1,076 still require runtime, visibility or semantic review. See [managed game consumers](localization/evidence/managed-game-consumers-20261109.md).
+The v22 managed classification added 134 exact-preserve roles for save keys, JSON syntax, save paths, Yarn commands, reflected member names and other internal identifiers. Another 80 occurrences gained diagnostic or bark visibility review roles. In-memory .NET tests of both original game DLLs confirmed SimpleJSON round-trips and the two flag-registry layouts, including the macOS-only `version` field. The v23 and v24 passes completed the initial classification of the game assembly. The v25 pass assigned roles to the remaining Unity UI and settings values. The v26 pass assigned roles to the last 540 Yarn Spinner Unity and TextMeshPro literal loads. All 2,974 occurrences across the five inspected assemblies have roles. The v28 audit preserves 582 Unity player-log occurrences and leaves 494 under runtime, visibility or semantic review. See [managed game consumers](localization/evidence/managed-game-consumers-20261109.md).
 
 The provisional union marks 56 embedded input-control occurrences across the two builds preserve-exactly, backed by verified JSON loading and map/action lookup instructions. The macOS builder now also checks all 170 source DLLs against the signed staging app. The standalone verifier confirmed all 172 DLLs in the repair-only Windows copy. Visible control hints and the complete preservation contract remain open. See [managed assembly preservation](localization/evidence/managed-assembly-preservation-20261109.md) and [input controls](localization/evidence/input-action-preservation-20261107.md).
 
