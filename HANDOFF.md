@@ -193,6 +193,13 @@ All locales use the shared fixed stages in `~/.codex/skills/vn-localization/refe
 | `screenshot-upload`, `screenshot-review` | Not run: no game screenshot upload requested; if later authorized, pin and review every delivered slot. |
 | `delivery` | Integrate verified source into canonical branch; publication/release requires separate authority. |
 
+The [Alexander question control](localization/evidence/alexander-question-analysis-20261107.md#paired-desktop-yarn-control-2026-11-10)
+matches six original Yarn VM scenarios across both builds. It binds the
+once-only menu and exit, all three number-seven replies and both crest
+replies to their observed line sequences. It uses a desktop in-memory
+store and does not exercise Unity presentation or save reload. Actual
+Russian special-scene wording remains gated on glossary readiness.
+
 ## Inputs and evidence
 
 - macOS game bundle `9/12/2026_a93aa21a`, Unity `6000.3.14f1`, `/Users/antonkrutov/Documents/Drag'N Wash.app`; `sharedassets1.assets` SHA-256 `f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8`. Yarn string object path ID `10623`, raw SHA-256 `9baafe5b3c36e63042cc0d02b2c755580e142447cea13f946d485a342c269853`; 1,839 source IDs are candidates, not the visible-text denominator. Yarn program path ID `10719`; 195 named nodes were examined. Dynamic settings, other UI types and code-generated text remain to be inventoried.
