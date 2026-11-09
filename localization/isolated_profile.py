@@ -1,4 +1,4 @@
-"""Prepare an explicitly isolated, disposable macOS test profile for a copied game."""
+"""Prepare explicitly isolated test profiles for copied games."""
 import json
 import os
 from pathlib import Path
@@ -16,6 +16,7 @@ ORIGINAL_BUNDLE = 'com.Unity-Technologies.com.unity.template.urp-blank'
 ORIGINAL_COMPANY = 'Gator Dragon Games'
 ORIGINAL_PRODUCT = 'DragNWash'
 TEST_COMPANY = 'Codex Test Sandbox'
+WINDOWS_GAMEPLAY_PRODUCT = 'ProbeW8P1'
 
 
 def identity(code, home=None):
@@ -52,7 +53,13 @@ def prepare(source, code, home=None):
     plist_bytes = plistlib.dumps(info, fmt=plistlib.FMT_XML, sort_keys=True)
     if plistlib.loads(plist_bytes) != info:
         raise ValueError('test profile plist failed round-trip')
-    env = UnityPy.load(str(global_file))
+    global_bytes, before, raw = _prepare_global(str(global_file), profile)
+    return profile, global_bytes, plist_bytes, before, raw
+
+
+def _prepare_global(source, profile):
+    import UnityPy
+    env = UnityPy.load(source)
     objects = {(o.path_id, o.type.name): o for o in env.objects}
     if len(objects) != len(env.objects) or (1, 'PlayerSettings') not in objects:
         raise ValueError('unexpected test-profile player settings inventory')
@@ -68,11 +75,40 @@ def prepare(source, code, home=None):
             raise ValueError('ambiguous test-profile string encoding')
         raw = raw.replace(old_bytes, new_bytes, 1)
     player.set_raw_data(raw)
-    return profile, env.file.save(), plist_bytes, before, raw
+    return env.file.save(), before, raw
+
+
+def _verify_global(source, profile, before, player_raw):
+    import UnityPy
+    env = UnityPy.load(source)
+    after = {(o.path_id, o.type.name): o for o in env.objects}
+    if len(after) != len(env.objects) or before.keys() != after.keys():
+        raise ValueError('test-profile object inventory changed')
+    for key, raw in before.items():
+        expected = player_raw if key == (1, 'PlayerSettings') else raw
+        if after[key].get_raw_data() != expected:
+            raise ValueError(f'test-profile object differs: {key}')
+    player = after[(1, 'PlayerSettings')].read(check_read=False)
+    if player.companyName != profile['company'] or player.productName != profile['product']:
+        raise ValueError('test-profile player identity read-back failed')
+
+
+def prepare_windows_gameplay(source_data):
+    """Return verified settings bytes for the disposable Windows gameplay probe."""
+    import UnityPy
+    from compare_yarn_versions import BUILDS
+    if UnityPy.__version__ != '1.25.4':
+        raise ValueError('UnityPy 1.25.4 is required')
+    source = (Path(source_data) / 'globalgamemanagers').read_bytes()
+    if dl.sha(source) != BUILDS['windows']['globalSha256']:
+        raise ValueError('unsupported Windows test-profile source game')
+    profile = {'company': TEST_COMPANY, 'product': WINDOWS_GAMEPLAY_PRODUCT}
+    result, before, player_raw = _prepare_global(source, profile)
+    _verify_global(result, profile, before, player_raw)
+    return result
 
 
 def apply(destination, prepared):
-    import UnityPy
     profile, global_bytes, plist_bytes, before, player_raw = prepared
     destination = Path(destination)
     target = destination / GLOBAL_REL
@@ -89,17 +125,7 @@ def apply(destination, prepared):
     try:
         with os.fdopen(fd, 'wb') as f:
             f.write(global_bytes)
-        env = UnityPy.load(str(tmp))
-        after = {(o.path_id, o.type.name): o for o in env.objects}
-        if len(after) != len(env.objects) or before.keys() != after.keys():
-            raise ValueError('test-profile object inventory changed')
-        for key, raw in before.items():
-            expected = player_raw if key == (1, 'PlayerSettings') else raw
-            if after[key].get_raw_data() != expected:
-                raise ValueError(f'test-profile object differs: {key}')
-        player = after[(1, 'PlayerSettings')].read(check_read=False)
-        if player.companyName != profile['company'] or player.productName != profile['product']:
-            raise ValueError('test-profile player identity read-back failed')
+        _verify_global(str(tmp), profile, before, player_raw)
         os.replace(tmp, target)
     except BaseException:
         tmp.unlink(missing_ok=True)

@@ -2,11 +2,15 @@ using System.Security.Cryptography;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 
-if (args.Length != 4) throw new ArgumentException("Expected game DLL, companion DLL, companion hash and new output");
+if (args.Length != 4 && !(args.Length == 5 && args[4] == "--windows"))
+    throw new ArgumentException("Expected game DLL, companion DLL, companion hash and new output [--windows]");
+var expectedGameHash = args.Length == 5
+    ? "8b1b439e62bff222fbce00869a3343422c77d08e384db7ed323b5e66f44195e2"
+    : "f9c4ccc1b10f95270d6d0d63a5e150865a070eca353a6c16fa74930f993f7bcb";
 string Hash(byte[] bytes) => Convert.ToHexString(SHA256.HashData(bytes)).ToLowerInvariant();
 var game = File.ReadAllBytes(args[0]);
 var companion = File.ReadAllBytes(args[1]);
-if (Hash(game) != "f9c4ccc1b10f95270d6d0d63a5e150865a070eca353a6c16fa74930f993f7bcb" ||
+if (Hash(game) != expectedGameHash ||
     Hash(companion) != args[2] || Hash(File.ReadAllBytes(typeof(ModuleDefinition).Assembly.Location)) !=
         "831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf")
     throw new InvalidOperationException("Unexpected input fingerprint");

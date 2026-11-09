@@ -33,10 +33,11 @@ socket and reached `Conrad_placed_mount_3` with `PlacedMountForUse=True`.
 A follow-up macOS run completed that node and `Conrad_finished_mount_3`
 on the branch before the other activity. The original coroutine exited
 with its in-progress flag false and completed flag true. A private
-Windows CrossOver repair copy also loaded the synthetic slot through
-the stock menu without foreground ownership. The later combined
-branch, Windows gameplay after slot load and the five repaired
-transfers still need runtime evidence.
+Windows CrossOver repair copy now completed the same route and both
+mount nodes through stock input in the background. Its Null graphics
+device logged repeated fluid emitter exceptions, so visual acceptance
+remains open. The later combined branch and the five repaired
+transfers still need ordinary runtime evidence.
 See [the gameplay receipts](localization/evidence/background-gameplay-20261109.md)
 and [the performance and Windows test](localization/evidence/background-performance-20261109.md).
 

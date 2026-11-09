@@ -94,6 +94,54 @@ The pre-existing hidden Windows copy remained running.
 
 The Windows test source, isolated copy, fixture and logs are in
 `windows-preflight/` within the local work directory. The second
-observer deliberately stops at scene entry. Equipment input, Yarn
-completion, repaired transfers and visible Russian on Windows remain
-open.
+observer deliberately stopped at scene entry.
+
+## Windows gameplay continuation
+
+A third launch used the same guarded Windows copy and synthetic
+fixture with the full observer enabled. The original menus loaded
+the slot, and virtual input opened both crates, assembled the mount,
+stored it, completed the intro with the same three choices, opened
+the gate with a hand hit and moved the mount into the performance
+socket. The original runner completed `Conrad_placed_mount_3` and
+`Conrad_finished_mount_3` with the same one and four choice IDs as
+the macOS run. The original coroutine exited with the in-progress
+flag false and completed flag true. The test observed no repaired
+destination on this branch.
+
+All 635 desktop samples showed zero foreground ownership and zero
+on-screen windows. The observer verified the test process exited.
+The installed files and original save directory matched the
+prelaunch snapshots, and the pre-existing hidden Windows copy
+remained running. The Null graphics device run logged 3,286
+`NullReferenceException` entries at the same
+`FluidEmitter.Tick` instruction. The receipt covers the observed
+gameplay and Yarn events. Rendering and the cause of that exception
+remain unverified.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Full Windows Unity log | `763e6fcb222d64594240073b5d3714253b1da71069e3dd3fa6fc9b3842bdf5a6` |
+| Full Windows observer receipt | `1a685e667778f2ae7b8258dea11389ad4ea68a687753a7b067095c34b2e6bb59` |
+
+The original Windows `Conrad_3_8` configuration uses evaluation
+type `USE_MOUNT_AND_JERKOFF`. Its evaluator reads both activity
+flags. Its highest-priority evaluation returns `DONE` when the
+dragon is `WaitingOnExitButton` and `CONFUSED` otherwise. The
+Windows-only combined branch from `Conrad_finished_mount_3` reaches
+`Conrad_Outro`, where the repaired transfer requires
+`$cleanEvaluation == DONE`. The route to the combined branch and the
+evaluation at its actual arrival still require runtime evidence.
+
+For reproduction, build the gameplay companion against the original
+Windows Managed directory with `-p:WindowsGameplayProbe=true` and
+pass `--windows` as the final menu patcher argument. Copy the tracked
+`dragons-windows-conrad-fixture.json` next to the test executable.
+Use `isolated_profile.prepare_windows_gameplay(original_windows_data)`
+to produce the profile settings bytes for a fresh copy. Use the
+existing Windows asset builder with `--restore-yarn-transitions`.
+Launch in a private bottle with the test-only argument
+`-dragons-background-fixture-w8p1` and the same batch flags. The
+tracked source reproduced both game hook DLLs and the Windows profile
+settings byte-for-byte. Both wrong-build patcher cases rejected the
+input fingerprint before output. All 180 localization tests passed.

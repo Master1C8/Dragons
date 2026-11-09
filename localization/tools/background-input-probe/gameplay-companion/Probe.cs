@@ -38,9 +38,19 @@ public static class Probe
     public static void Start()
     {
         if (stage != 0) return;
+#if WINDOWS_GAMEPLAY_PROBE
+        var path = Application.persistentDataPath.Replace('\\', '/').TrimEnd('/');
+        if (Application.platform != RuntimePlatform.WindowsPlayer || !Application.isBatchMode ||
+            Application.companyName != "Codex Test Sandbox" || Application.productName != "ProbeW8P1" ||
+            !path.EndsWith("/AppData/LocalLow/Codex Test Sandbox/ProbeW8P1", StringComparison.OrdinalIgnoreCase) ||
+            !Environment.GetCommandLineArgs().Contains("-dragons-background-fixture-w8p1"))
+            throw new InvalidOperationException("Expected isolated batch-mode profile");
+        SeedSelectedSlot();
+#else
         if (!Application.identifier.StartsWith("com.codex.test.dragnwash.probe", StringComparison.Ordinal) ||
             !Application.isBatchMode)
             throw new InvalidOperationException("Expected isolated batch-mode profile");
+#endif
         Application.runInBackground = true;
         keyboard = InputSystem.AddDevice<Keyboard>();
         mouse = InputSystem.AddDevice<Mouse>();
@@ -53,6 +63,35 @@ public static class Probe
             Debug.Log($"VN-BG-SCENE {scene.name} index={scene.buildIndex} mode={mode}");
         Debug.Log($"VN-BG-PATH {Application.persistentDataPath}");
     }
+
+#if WINDOWS_GAMEPLAY_PROBE
+    private static void SeedSelectedSlot()
+    {
+        var save = Game.GetType("SaveManager", throwOnError: true)!;
+        var method = save.GetMethod("GetSteamAndSlotPath", StaticMembers, null, new[] { typeof(int) }, null)!;
+        var key = (string)method.Invoke(null, new object[] { 1 });
+        if (!System.Text.RegularExpressions.Regex.IsMatch(key, @"^(defaultUser|[0-9]{17})_slot1$"))
+            throw new InvalidOperationException("Unexpected Windows slot path");
+        var profile = Application.persistentDataPath;
+        var candidate = System.IO.Path.Combine(profile, key, "savegame.dgn");
+        var fixture = System.IO.File.ReadAllBytes("dragons-windows-conrad-fixture.json");
+        using (var sha = System.Security.Cryptography.SHA256.Create())
+        {
+            var hash = BitConverter.ToString(sha.ComputeHash(fixture)).Replace("-", "").ToLowerInvariant();
+            if (hash != "f22430735fb7e3d69be1a525ba0eb6d2633d50af66ba243414bc67c4e7dbec09")
+                throw new InvalidOperationException("Unexpected synthetic fixture fingerprint");
+        }
+        if (!System.IO.File.Exists(candidate))
+        {
+            System.IO.Directory.CreateDirectory(System.IO.Path.GetDirectoryName(candidate));
+            using var file = new System.IO.FileStream(candidate, System.IO.FileMode.CreateNew);
+            file.Write(fixture, 0, fixture.Length);
+        }
+        else if (!System.IO.File.ReadAllBytes(candidate).SequenceEqual(fixture))
+            throw new InvalidOperationException("Existing synthetic fixture differs");
+        Debug.Log($"VN-BG-WINDOWS-SLOT nondefault={key != "defaultUser_slot1"}");
+    }
+#endif
 
     private static void Tick()
     {
