@@ -149,3 +149,44 @@ Local evidence is in
 This run did not produce a frame. Visible glyphs, typewriter timing,
 advancing past the first line, Windows Unity execution and normal gameplay
 remain open.
+
+## Metal background capture attempt
+
+Fresh profile `B8F2` used the same asset and entry bridge in a separate
+signed app. This run kept `LSBackgroundOnly` and `-batchmode`, omitted
+`-nographics`, and requested a 1024 × 768 viewport. Unity initialized the
+Apple M1 Metal device. The test requested a frame from Unity itself because
+the isolated player had no native window to target with the capture runner.
+This changed the graphics and capture boundary from the null-device run.
+
+The temporary capture hook scheduled a four-second callback after the
+original inline branch. It required the actual `TMP_Text.text` to equal
+`Жж: ЖЪЬ Жюя` and `maxVisibleCharacters` to cover its length. The hook
+passed both checks and called `ScreenCapture.CaptureScreenshot`. Unity
+logged `Failed to capture screen shot.`, and no PNG was written. The run
+therefore establishes the string and reveal limit at the TMP component
+with Metal active. Glyph selection, layout and visible pixels remain
+unverified. Repeating the same batch-mode capture would not address the
+observed failure.
+
+All 65 sampled states showed zero on-screen windows and no foreground
+ownership. After the capture error, the verified test PID was stopped.
+The wrapper removed the generated Steam file and verified the
+signature. The four checked original profile roots matched their
+prelaunch state. As in the null-device run, forced teardown logged the
+dialogue-cleanup exception.
+
+The local files are in
+`localization/work/speaker-graphics-background-20261109.Tvsodq/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Capture instrumentation source | `771f9ba3759ed2c611b8ead2182c72db8bdbc2fc6ed2612b4c4e10c5e43b6d4f` |
+| Instrumented Yarn Unity DLL | `73badf2348eb0ae0d19411217ad22c2a790290c2394dab3e916e237b6a3aaac4` |
+| Unity log | `22ed9538af582dcae60496b920bf3ac2e453f0e1be3783fc79512deabb75cf44` |
+| Focus and cleanup receipt | `434f07a60654c611a11e05d9548fa35afd848de85de474eb7b5f7d24e0e62ba8` |
+
+The documented graphics switches and capture API describe this test's
+inputs. The observed TMP values and failed capture come from the game log.
+[Unity desktop headless mode](https://docs.unity.com/en-us/engine/6000.0/manual/platform-specific/dedicated-server/desktop-headless-mode),
+[Unity ScreenCapture API](https://docs.unity.com/en-us/engine/6000.0/script-reference/unityengine/screencapture/capturescreenshot).
