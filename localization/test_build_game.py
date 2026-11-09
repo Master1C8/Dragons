@@ -1,4 +1,5 @@
 import importlib.util
+import json
 from pathlib import Path
 import sys
 import tempfile
@@ -9,6 +10,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 spec = importlib.util.spec_from_file_location('build_game', Path(__file__).with_name('build_game.py'))
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
+MAC_SOURCE = Path.home() / "Documents/Drag'N Wash.app"
+WORK = Path(__file__).parent / 'work'
 
 
 class BuildSafetyTests(unittest.TestCase):
@@ -76,6 +79,60 @@ class BuildSafetyTests(unittest.TestCase):
                 module.build(source, root / 'locale.json', 'ru', dest)
             self.assertFalse(dest.exists())
             self.assertEqual(outside.read_text(), 'preserve')
+
+    def test_managed_readback_rejects_mutation_and_extra_files(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            source, candidate = root / 'source', root / 'candidate'
+            source.mkdir()
+            candidate.mkdir()
+            (source / 'Yarn.dll').write_bytes(b'original')
+            target = candidate / 'Yarn.dll'
+            target.write_bytes(b'original')
+            before = module.managed.scan(source)
+            module.managed.compare(before, module.managed.scan(candidate))
+            target.write_bytes(b'modified')
+            with self.assertRaisesRegex(ValueError, 'candidate managed assembly changed: Yarn.dll'):
+                module.managed.compare(before, module.managed.scan(candidate))
+            target.write_bytes(b'original')
+            extra = candidate / 'extra.dll'
+            extra.write_bytes(b'new')
+            with self.assertRaisesRegex(ValueError, 'candidate Managed paths changed'):
+                module.managed.compare(before, module.managed.scan(candidate))
+            extra.unlink()
+            extra.symlink_to(source / 'Yarn.dll')
+            with self.assertRaisesRegex(ValueError, 'unexpected Managed entry'):
+                module.managed.scan(candidate)
+
+    @unittest.skipUnless(sys.platform == 'darwin' and MAC_SOURCE.is_dir() and WORK.is_dir(),
+                         'pinned macOS game and project work directory required')
+    def test_changed_managed_library_after_signing_blocks_publication(self):
+        with tempfile.TemporaryDirectory(prefix='managed-build-check-', dir=WORK) as folder:
+            root = Path(folder)
+            locale = root / 'ru.json'
+            _, _, _, keys, values, _ = module.dl.load_asset(MAC_SOURCE / module.ASSET_RELATIVE)
+            key = 'line:f5f5b815'
+            text = values[keys.index(key)]
+            locale.write_text(json.dumps({'schema': 1, 'locale': 'ru',
+                                          'sourceObjectSha256': module.dl.OBJECT_HASH,
+                                          'lines': {key: {'source': text, 'text': text}}}))
+            output = root / 'Localized.app'
+            library = module.MANAGED_RELATIVE / 'YarnSpinner.Unity.dll'
+            original = module.dl.sha((MAC_SOURCE / library).read_bytes())
+
+            def mutate_after_signing(command, *, check):
+                self.assertEqual(command[0], 'codesign')
+                self.assertTrue(check)
+                if command[1] == '--verify':
+                    with (Path(command[-1]) / library).open('ab') as f:
+                        f.write(b'changed')
+
+            with patch.object(module.subprocess, 'run', side_effect=mutate_after_signing):
+                with self.assertRaisesRegex(ValueError, 'candidate managed assembly changed: YarnSpinner.Unity.dll'):
+                    module.build(MAC_SOURCE, locale, 'ru', output)
+            self.assertFalse(output.exists())
+            self.assertFalse(any(root.glob('.localization-build-*')))
+            self.assertEqual(module.dl.sha((MAC_SOURCE / library).read_bytes()), original)
 
     def test_failure_between_staged_writes_leaves_no_final_app(self):
         with tempfile.TemporaryDirectory() as folder:

@@ -92,7 +92,7 @@ Local StreamingAssets now have a source-bound file inventory and separate exact 
 
 One provisional shared source union now consolidates the pinned Yarn, UI, settings, legacy UI and selected managed-code exports. Its 5,204 source records are not a visible-text count or a translation-ready inventory; see `localization/evidence/provisional-source-union-20261107.md` for inputs, hash and remaining classification gaps.
 
-The provisional union now marks 56 embedded input-control occurrences across the two builds preserve-exactly, backed by verified JSON loading and map/action lookup instructions. This does not classify visible control hints or complete the global preservation contract. See `localization/evidence/input-action-preservation-20261107.md`.
+The provisional union marks 56 embedded input-control occurrences across the two builds preserve-exactly, backed by verified JSON loading and map/action lookup instructions. The macOS builder now also checks all 170 source DLLs against the signed staging app. The standalone verifier confirmed all 172 DLLs in the repair-only Windows copy. Visible control hints and the complete preservation contract remain open. See [managed assembly preservation](localization/evidence/managed-assembly-preservation-20261109.md) and [input controls](localization/evidence/input-action-preservation-20261107.md).
 
 The union now also records 16 temporarily exact Yarn values and 18 exact speaker prefixes, source-bound in `localization/evidence/yarn-protected-partial-20261107.json`. These are partial guards, not a complete preservation manifest or a solution for the long colon-ended sentence. See `localization/evidence/yarn-protection-inventory-20261107.md`.
 

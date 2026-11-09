@@ -12,9 +12,11 @@ import tempfile
 
 import dialogue_locale as dl
 import ui_locale as ui
+import verify_managed_assemblies as managed
 import yarn_transition_repair as transitions
 
 ASSET_RELATIVE = Path('Contents/Resources/Data/sharedassets1.assets')
+MANAGED_RELATIVE = ASSET_RELATIVE.parent / 'Managed'
 
 
 def rename_exclusive(source, destination):
@@ -95,6 +97,8 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
     locale, translations = dl.read_locale(locale_file, keys, values, yarn_semantics=True)
     if locale != requested:
         raise ValueError(f'locale file identifies {locale}, not requested {requested}')
+    source_assemblies = managed.scan(source / MANAGED_RELATIVE)
+    managed_digest = managed.validate_source('macos', source_assemblies)
     replacement = [translations.get(k, v) for k, v in zip(keys, values)]
     changed = dl.encode(raw, keys, replacement, extras)
     if dl.parse(changed) != (keys, replacement, extras):
@@ -222,10 +226,12 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
         f.write('\n')
     subprocess.run(['codesign', '--force', '--deep', '--sign', '-', str(destination)], check=True)
     subprocess.run(['codesign', '--verify', '--deep', '--strict', str(destination)], check=True)
+    managed.compare(source_assemblies, managed.scan(destination / MANAGED_RELATIVE))
     return {'locale': locale, 'translated': len(translations), 'sourceEntries': len(keys),
                       'dialogueAssetSha256BeforeUi': dl.sha(data), 'uiStrings': ui_count,
                       'settingsStrings': settings_count,
                       'testProfile': profile['code'] if profile else None,
+                      'managedManifestSha256': managed_digest,
                       'restoredYarnTransitions': len(transitions.CONTINUATIONS) if restore_yarn_transitions else 0,
                       'testSettingsLayoutSha256': layout_hash,
                       'testSlotFontSha256': slot_font_hash}

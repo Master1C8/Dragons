@@ -69,6 +69,11 @@ inspection. Verification is repeated at the published path. If cleanup after
 publication or that final verification fails, the published app may remain for
 diagnosis and is not a successful build. Use a fresh destination after inspecting
 any retained output.
+
+The app builder pins the original `Managed` directory and compares every DLL
+with the signed staging app before publication. The read-only verifier also
+accepts a separate Windows game copy. See [the managed preservation
+evidence](evidence/managed-assembly-preservation-20261109.md).
 The game writes `steam_appid.txt` into the app-bundle root at startup, making the
 ad-hoc signature invalid. Launch a generated copy through the wrapper:
 
