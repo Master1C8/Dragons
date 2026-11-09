@@ -4,6 +4,9 @@ The repository-owned Drag'N Wash glossary was checked for standard localization
 against SiteForMods commit `65b5e0bf4d153e3dfe2ea721e8b59622fc56e562` and the
 pinned macOS and Windows source exports. The findings below supersede any
 assumption that the older receipts alone close the current glossary gate.
+This is the historical baseline. The later
+[canonical integration](glossary-roster-followup-20261110.md#canonical-integration)
+records the corrected Russian map and remaining readiness gate.
 
 ## Input and review bindings
 

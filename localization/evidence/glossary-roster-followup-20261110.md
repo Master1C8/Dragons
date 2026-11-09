@@ -152,11 +152,23 @@ The plan SHA-256 is
 The full candidate was generated locally at
 `localization/work/ru-glossary-repair-20261110.4n94HG/glossary-ru-candidate-reviewed.json`.
 
-Integration remains pending in
-the canonical SiteForMods checkout, which still contains unrelated
-untracked work under
-`data/games/the-forest-of-love/glossary-review/finley-repair-20261027/`.
-The canonical English and Russian glossary files and their historical
-review receipts remain intact. The unresolved generic speaker treatment
-and the final canonical review still leave both layers at
-`needs-review`.
+## Canonical integration
+
+At the owner's instruction, the unrelated review directory
+`data/games/the-forest-of-love/glossary-review/finley-repair-20261027/`
+was backed up locally and its 136 untracked Git files were saved to
+SiteForMods stash `5124e04f8033faf03519f318436f5c343d3cc8f4`.
+All 136 stashed byte hashes and the 51 ignored files left in place
+matched their pre-stash values. The verified safety archive is
+`.cache/dragons-glossary-safety.JgJNvF/forest-untracked.tar.gz` in
+SiteForMods.
+
+The exact four-entry correction is now on local and remote SiteForMods
+main at `9cc4fd928769b1143eb0822fe6a61fc3fcaff89c`. The whole translation
+file SHA-256 is
+`c482427827a4b63eb5e5837998747f676ece82419a8aaaca8d488669170e7c84`.
+The compact Russian digest matches the draft. English and the other
+29 locale maps retain their exact data. The canonical CLI passed
+structural checks and all 59 glossary tests passed. The previous
+editorial receipts remain historical. The unresolved generic speaker
+treatment leaves standard-localization readiness at `needs-review`.

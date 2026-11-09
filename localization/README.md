@@ -302,6 +302,12 @@ one atomic publication. The command does not install the replacements
 or exercise in-game behavior. Complete structural coverage is separate
 from glossary, editorial, rendering and release acceptance.
 
+Use `verify_preserved_components.py macos|windows CANDIDATE_DATA
+--inventory SHARED_INVENTORY` to compare the known protected game
+component bytes in a built copy. For a Windows ZIP, run it on the
+verified extracted replacement assets. This complements the Yarn, UI,
+settings and managed checks already performed by the builders.
+
 The optional `--speaker-contrast` flag uses the stock black text color for
 the originally white speaker-name fields in `level1`, `level3`, `level5`
 and `level6`. The macOS builder updates all four assets in the app. On
