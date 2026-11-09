@@ -1,10 +1,13 @@
 using System.Security.Cryptography;
+using System.Reflection;
+using System.Runtime.Loader;
 using System.Text.Json;
+using Dragons.SyntheticSpeakerInline;
 using Yarn.Markup;
 using Yarn.Unity;
 
-if (args.Length != 2 || args[0] is not ("macos" or "windows"))
-    throw new ArgumentException("Usage: speaker-inline-probe macos|windows PAIRED_YARN_JSON");
+if (args.Length is not (2 or 5) || args[0] is not ("macos" or "windows"))
+    throw new ArgumentException("Usage: speaker-inline-probe macos|windows PAIRED_YARN_JSON [PATCHED_SHA256 INLINE_RUNTIME_DLL INLINE_RUNTIME_SHA256]");
 
 string Hash(string path) => Convert.ToHexString(SHA256.HashData(File.ReadAllBytes(path))).ToLowerInvariant();
 void Require(bool condition, string message)
@@ -17,13 +20,27 @@ string unityHash = args[0] == "macos"
     : "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d";
 Require(Hash(typeof(LineParser).Assembly.Location) == "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e",
     "Unsupported Yarn core");
-Require(Hash(typeof(LocalizedLine).Assembly.Location) == unityHash, "Unsupported Yarn Unity assembly");
+bool patched = args.Length == 5;
+string loadedUnityHash = Hash(typeof(LocalizedLine).Assembly.Location);
+Require(loadedUnityHash == (patched ? args[2] : unityHash), "Unsupported Yarn Unity assembly");
 Require(Hash(args[1]) == "52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995",
     "Unsupported paired Yarn source");
 
 var parser = new LineParser();
 LocalizedLine ReadLine(string id, string source) =>
     new() { TextID = id, RawText = source, Text = parser.ParseString(source, "en", true) };
+MethodInfo? bridge = null;
+if (patched)
+{
+    Require(Hash(args[3]) == args[4], "Inline runtime fingerprint mismatch");
+    AssemblyLoadContext.Default.LoadFromAssemblyPath(Path.GetFullPath(args[3]));
+    bridge = typeof(LocalizedLine).Assembly.GetType("Yarn.Unity.VnSyntheticSpeakerDisplay", true)!
+        .GetMethod("GetInlineText", BindingFlags.NonPublic | BindingFlags.Static)
+        ?? throw new InvalidOperationException("Missing injected inline bridge");
+}
+MarkupParseResult Display(LocalizedLine line, string name, string label) => bridge == null
+    ? InlineSpeakerView.Create(line, name, label)
+    : (MarkupParseResult)bridge.Invoke(null, new object[] { line })!;
 
 void CheckMapped(LocalizedLine line, string expectedName, string displayName)
 {
@@ -33,7 +50,7 @@ void CheckMapped(LocalizedLine line, string expectedName, string displayName)
     var raw = line.RawText;
     var body = line.TextWithoutCharacterName.Text;
     Require(line.CharacterName == expectedName, $"Unexpected source identity: {id}");
-    var display = InlineSpeakerView.Create(line, displayName);
+    var display = Display(line, expectedName, displayName);
     Require(display.Text == displayName + ": " + body, $"Unexpected inline display: {id}");
     Require(display.Attributes.Count == originalAttributes.Length &&
         !ReferenceEquals(original.Attributes, display.Attributes), $"Incorrect attribute copy: {id}");
@@ -63,7 +80,7 @@ void CheckMapped(LocalizedLine line, string expectedName, string displayName)
 
 void CheckUnchanged(LocalizedLine line)
 {
-    var display = InlineSpeakerView.Create(line, "Жж");
+    var display = Display(line, "Ryan", "Жж");
     Require(display.Text == line.Text.Text && ReferenceEquals(display.Attributes, line.Text.Attributes),
         $"Unexpected fallback rewrite: {line.TextID}");
 }
@@ -82,24 +99,32 @@ foreach (var entry in scene.Value.EnumerateArray())
     mappedIds.Add(id);
 }
 Require(mappedIds.Count == 18 && mappedIds.Distinct().Count() == 18, "Unexpected source coverage");
-foreach (string name in new[] { "Ryan", "Conrad" })
+foreach (var (name, id) in new[] { ("Ryan", "line:f5f5b815"), ("Conrad", "line:5660dc8b") })
 {
-    var marked = ReadLine("test-markup-" + name, name + ": [b]Test[/b] [pause duration=\"0.5\" /]next <i>line</i>");
+    var marked = ReadLine(id, name + ": [b]Test[/b] [pause duration=\"0.5\" /]next <i>line</i>");
     Require(marked.Text.Attributes.Any(attribute => attribute.Name == "b" && attribute.Length == 4) &&
         marked.Text.Attributes.Any(attribute => attribute.Name == "pause" && attribute.Length == 0),
         "Test case lost its ranged or zero-length markup");
     CheckMapped(marked, name, name == "Ryan" ? "Жж" : "ЪъЬьЯяЖ");
 }
-CheckMapped(ReadLine("test-same-length", "Conrad: [b]Test[/b]"), "Conrad", "ЪъЬьЯя");
+if (!patched)
+    CheckMapped(ReadLine("test-same-length", "Conrad: [b]Test[/b]"), "Conrad", "ЪъЬьЯя");
 foreach (string text in new[] { "Text", "Other: Text", "title: Conrad_OutroDone",
     "The most prestigious college hosting prestigious professors like me:" })
-    CheckUnchanged(ReadLine("test-fallback", text));
-var overlapping = ReadLine("test-overlap", "Ryan: [b]Test[/b]");
+    CheckUnchanged(ReadLine("line:f5f5b815", text));
+var overlapping = ReadLine("line:f5f5b815", "Ryan: [b]Test[/b]");
 int markup = overlapping.Text.Attributes.FindIndex(attribute => attribute.Name == "b");
 overlapping.Text.Attributes[markup] = overlapping.Text.Attributes[markup].Shift(-1);
 CheckUnchanged(overlapping);
-var mismatchedRaw = ReadLine("test-mismatched-raw", "Ryan: Test");
+var mismatchedRaw = ReadLine("line:f5f5b815", "Ryan: Test");
 mismatchedRaw.RawText = "Other: Test";
 CheckUnchanged(mismatchedRaw);
+if (patched)
+{
+    CheckUnchanged(ReadLine("line:unknown", "Ryan: Test"));
+    CheckUnchanged(ReadLine("line:f5f5b815", "Conrad: Test"));
+}
 Console.WriteLine(JsonSerializer.Serialize(new { schema = 1, testOnly = true, platform = args[0],
-    sourceYarnUnitySha256 = unityHash, mappedIds, markupControls = 3, unchangedControls = 6 }));
+    sourceYarnUnitySha256 = unityHash, mappedIds, markupControls = patched ? 2 : 3,
+    unchangedControls = patched ? 8 : 6, executedPatchedBridge = patched, loadedUnityHash,
+    inlineRuntimeSha256 = patched ? args[4] : null }));

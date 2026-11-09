@@ -5,8 +5,9 @@ using System.Text.Json;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 
-if (args.Length != 4 || (args[0] != "macos" && args[0] != "windows"))
-    throw new ArgumentException("Usage: speaker-display-probe macos|windows SOURCE_DLL SYNTHETIC_MAP_JSON OUTPUT_DLL");
+if (args.Length is not (4 or 6) || (args[0] != "macos" && args[0] != "windows"))
+    throw new ArgumentException("Usage: speaker-display-probe macos|windows SOURCE_DLL SYNTHETIC_MAP_JSON OUTPUT_DLL [INLINE_RUNTIME_DLL INLINE_RUNTIME_SHA256]");
+bool includeInline = args.Length == 6;
 string Sha(byte[] bytes) => Convert.ToHexString(SHA256.HashData(bytes)).ToLowerInvariant();
 var expectedHashes = new Dictionary<string, string> {
     ["macos"] = "54953f9c071aa3ca5b52eb8b12b8e0bedc73f7665a506c61acbef0c58ac340ef",
@@ -37,7 +38,8 @@ foreach (var item in mapElement.EnumerateObject()) {
     if ((item.Name != "Ryan" && item.Name != "Conrad") || item.Value.ValueKind != JsonValueKind.String ||
         !map.TryAdd(item.Name, item.Value.GetString())) throw new InvalidOperationException("Invalid or duplicate source speaker");
     var text = map[item.Name];
-    if (string.IsNullOrWhiteSpace(text) || text.Length > 40 || text.Any(c => char.IsControl(c) || "<>[]{}:".Contains(c)))
+    if (string.IsNullOrWhiteSpace(text) || text.Length > 40 || text.Any(c => char.IsControl(c) || "<>[]{}:".Contains(c)) ||
+        (includeInline && !text.All(char.IsLetter)))
         throw new InvalidOperationException("Invalid display label");
 }
 if (map.Count != 2) throw new InvalidOperationException("Both known speaker mappings are required");
@@ -48,6 +50,9 @@ IEnumerable<TypeDefinition> All(IEnumerable<TypeDefinition> types) {
 const string Getter = "System.String Yarn.Unity.LocalizedLine::get_CharacterName()";
 const string Setter = "System.Void TMPro.TMP_Text::set_text(System.String)";
 const string HelperType = "Yarn.Unity.VnSyntheticSpeakerDisplay";
+const string TextGetter = "Yarn.Markup.MarkupParseResult Yarn.Unity.LocalizedLine::get_Text()";
+const string RuntimeAssembly = "Dragons.SyntheticSpeakerInline";
+const string RuntimeMethod = "Yarn.Markup.MarkupParseResult Dragons.SyntheticSpeakerInline.InlineSpeakerView::Create(Yarn.Unity.LocalizedLine,System.String,System.String)";
 using var module = ModuleDefinition.ReadModule(new MemoryStream(sourceBytes));
 if (module.Types.Any(t => t.FullName == HelperType)) throw new InvalidOperationException("Helper already exists");
 var all = All(module.Types).ToArray();
@@ -58,6 +63,8 @@ var equality = all.SelectMany(t => t.Methods).Where(m => m.HasBody).SelectMany(m
     .First(m => m.FullName == "System.Boolean System.String::op_Equality(System.String,System.String)");
 var sites = new List<Instruction>();
 var siteKeys = new HashSet<string>(StringComparer.Ordinal);
+var inlineIds = new SortedDictionary<string, string>(StringComparer.Ordinal);
+string inlineSiteKey = null;
 foreach (var type in all) foreach (var method in type.Methods.Where(m => m.HasBody)) {
     var code = method.Body.Instructions;
     for (int i = 0; i + 1 < code.Count; i++) {
@@ -88,11 +95,78 @@ foreach (var pair in map.OrderBy(x => x.Key, StringComparer.Ordinal)) {
 il.Append(il.Create(OpCodes.Ldloc_0)); il.Append(il.Create(OpCodes.Ret));
 helperType.Methods.Add(helper); module.Types.Add(helperType);
 foreach (var site in sites) { site.OpCode = OpCodes.Call; site.Operand = helper; }
+if (includeInline) {
+    var runtimeBytes = File.ReadAllBytes(args[4]);
+    if (Sha(runtimeBytes) != args[5]) throw new InvalidOperationException("Inline runtime fingerprint mismatch");
+    using var runtime = AssemblyDefinition.ReadAssembly(new MemoryStream(runtimeBytes));
+    if (runtime.Name.Name != RuntimeAssembly || !runtime.CustomAttributes.Any(a =>
+        a.AttributeType.FullName == "System.Runtime.Versioning.TargetFrameworkAttribute" &&
+        (string)a.ConstructorArguments[0].Value == ".NETStandard,Version=v2.1"))
+        throw new InvalidOperationException("Unexpected inline runtime assembly");
+    var factory = runtime.MainModule.GetTypes().SelectMany(t => t.Methods).Single(m =>
+        m.FullName == RuntimeMethod && m.IsPublic && m.IsStatic);
+
+    var manifestBytes = File.ReadAllBytes(Path.Combine(Directory.GetCurrentDirectory(),
+        "localization", "evidence", "yarn-protected-partial-20261107.json"));
+    if (Sha(manifestBytes) != "bff5f4ce3b270dedf77f31518a3bb75efe72d93617796baeff71cbebb5872be3")
+        throw new InvalidOperationException("Unsupported speaker prefix manifest");
+    using var manifest = JsonDocument.Parse(manifestBytes);
+    foreach (var row in manifest.RootElement.GetProperty("prefixProtection").EnumerateArray()) {
+        string prefix = row.GetProperty("expectedPrefix").GetProperty(args[0]).GetString();
+        string speaker = prefix == "Ryan: " ? "Ryan" : prefix == "Conrad: " ? "Conrad" :
+            throw new InvalidOperationException("Unknown protected speaker prefix");
+        inlineIds.Add(row.GetProperty("id").GetString(), speaker);
+    }
+    if (inlineIds.Count != 18) throw new InvalidOperationException("Incomplete inline speaker IDs");
+
+    var presenter = all.Single(t => t.FullName == "Yarn.Unity.LinePresenter/<RunLineAsync>d__23")
+        .Methods.Single(m => m.Name == "MoveNext" && m.HasBody);
+    var site = presenter.Body.Instructions.Single(i => i.Offset == 0x009c);
+    var textGetter = nameType.Methods.Single(m => m.FullName == TextGetter);
+    if (site.OpCode.Code != Code.Callvirt || ((MethodReference)site.Operand).FullName != TextGetter ||
+        site.Next.OpCode.Code != Code.Stfld || ((FieldReference)site.Next.Operand).Name != "<text>5__2")
+        throw new InvalidOperationException("Unexpected inline presenter consumer");
+    inlineSiteKey = presenter.FullName + "#" + presenter.Body.Instructions.IndexOf(site);
+    siteKeys.Add(inlineSiteKey);
+
+    var external = new MethodReference(factory.Name, textGetter.ReturnType, module.ImportReference(factory.DeclaringType));
+    external.Parameters.Add(new ParameterDefinition(nameType));
+    external.Parameters.Add(new ParameterDefinition(module.TypeSystem.String));
+    external.Parameters.Add(new ParameterDefinition(module.TypeSystem.String));
+    var bridge = new MethodDefinition("GetInlineText", MethodAttributes.Assembly | MethodAttributes.Static |
+        MethodAttributes.HideBySig, textGetter.ReturnType);
+    bridge.Parameters.Add(new ParameterDefinition("line", ParameterAttributes.None, nameType));
+    helperType.Methods.Add(bridge);
+    var instructions = bridge.Body.GetILProcessor();
+    var cases = map.Keys.ToDictionary(name => name, name => instructions.Create(OpCodes.Pop));
+    var textId = nameType.Fields.Single(f => f.Name == "TextID" && f.FieldType.FullName == "System.String");
+    instructions.Append(instructions.Create(OpCodes.Ldarg_0));
+    instructions.Append(instructions.Create(OpCodes.Ldfld, textId));
+    foreach (var pair in inlineIds) {
+        instructions.Append(instructions.Create(OpCodes.Dup));
+        instructions.Append(instructions.Create(OpCodes.Ldstr, pair.Key));
+        instructions.Append(instructions.Create(OpCodes.Call, equality));
+        instructions.Append(instructions.Create(OpCodes.Brtrue, cases[pair.Value]));
+    }
+    instructions.Append(instructions.Create(OpCodes.Pop));
+    instructions.Append(instructions.Create(OpCodes.Ldarg_0));
+    instructions.Append(instructions.Create(OpCodes.Callvirt, textGetter));
+    instructions.Append(instructions.Create(OpCodes.Ret));
+    foreach (var pair in map.OrderBy(x => x.Key, StringComparer.Ordinal)) {
+        instructions.Append(cases[pair.Key]);
+        instructions.Append(instructions.Create(OpCodes.Ldarg_0));
+        instructions.Append(instructions.Create(OpCodes.Ldstr, pair.Key));
+        instructions.Append(instructions.Create(OpCodes.Ldstr, pair.Value));
+        instructions.Append(instructions.Create(OpCodes.Call, external));
+        instructions.Append(instructions.Create(OpCodes.Ret));
+    }
+    site.OpCode = OpCodes.Call;
+    site.Operand = bridge;
+}
 using var buffer = new MemoryStream(); module.Write(buffer);
 var outputBytes = buffer.ToArray();
 
-// Compare all original method bodies after re-reading the emitted DLL. The two
-// permitted call sites are normalized after asserting their exact old/new targets.
+// Compare all original method bodies after verifying the permitted call rewrites.
 string Operand(object value, Dictionary<Instruction, int> indices) => value switch {
     null => "", Instruction i => "target:" + indices[i],
     Instruction[] a => "targets:" + string.Join(",", a.Select(x => indices[x])),
@@ -114,10 +188,15 @@ Dictionary<string, string> Bodies(ModuleDefinition source, bool patched) {
             .Append(h.FilterStart == null ? -1 : indices[h.FilterStart]).Append(':').Append(h.CatchType?.FullName).Append(';');
         for (int i = 0; i < code.Count; i++) {
             var ins = code[i];
-            if (siteKeys.Contains(method.FullName + "#" + i)) {
+            string siteKey = method.FullName + "#" + i;
+            if (siteKeys.Contains(siteKey)) {
                 string target = (ins.Operand as MethodReference)?.FullName;
-                if ((!patched && (ins.OpCode.Code != Code.Callvirt || target != Getter)) ||
-                    (patched && (ins.OpCode.Code != Code.Call || target != "System.String Yarn.Unity.VnSyntheticSpeakerDisplay::GetDisplayName(Yarn.Unity.LocalizedLine)")))
+                string expectedGetter = siteKey == inlineSiteKey ? TextGetter : Getter;
+                string expectedHelper = siteKey == inlineSiteKey
+                    ? "Yarn.Markup.MarkupParseResult Yarn.Unity.VnSyntheticSpeakerDisplay::GetInlineText(Yarn.Unity.LocalizedLine)"
+                    : "System.String Yarn.Unity.VnSyntheticSpeakerDisplay::GetDisplayName(Yarn.Unity.LocalizedLine)";
+                if ((!patched && (ins.OpCode.Code != Code.Callvirt || target != expectedGetter)) ||
+                    (patched && (ins.OpCode.Code != Code.Call || target != expectedHelper)))
                     throw new InvalidOperationException("Unexpected speaker call-site rewrite");
                 text.Append("<verified-speaker-call>;");
             } else text.Append(ins.OpCode.Name).Append(':').Append(Operand(ins.Operand, indices)).Append(';');
@@ -135,6 +214,20 @@ var rebuiltHelper = rebuilt.Types.Single(t => t.FullName == HelperType).Methods.
 var literals = rebuiltHelper.Body.Instructions.Where(i => i.OpCode.Code == Code.Ldstr).Select(i => (string)i.Operand).ToArray();
 var expectedLiterals = map.OrderBy(x => x.Key, StringComparer.Ordinal).SelectMany(x => new[] { x.Key, x.Value }).ToArray();
 if (!literals.SequenceEqual(expectedLiterals)) throw new InvalidOperationException("Helper mapping read-back failed");
+var expectedReferences = original.AssemblyReferences.Select(a => a.FullName).ToList();
+if (includeInline) {
+    var bridge = rebuilt.Types.Single(t => t.FullName == HelperType).Methods.Single(m => m.Name == "GetInlineText");
+    var runtimeCalls = bridge.Body.Instructions.Where(i => i.OpCode.Code == Code.Call &&
+        ((MethodReference)i.Operand).FullName == RuntimeMethod).Select(i => (MethodReference)i.Operand).ToArray();
+    if (runtimeCalls.Length != 2 || runtimeCalls[0].DeclaringType.Scope.Name != RuntimeAssembly ||
+        runtimeCalls[1].DeclaringType.Scope.Name != RuntimeAssembly ||
+        !bridge.Body.Instructions.Where(i => i.OpCode.Code == Code.Ldstr).Select(i => (string)i.Operand)
+            .SequenceEqual(inlineIds.Keys.Concat(expectedLiterals)))
+        throw new InvalidOperationException("Inline bridge read-back failed");
+    expectedReferences.Add(rebuilt.AssemblyReferences.Single(a => a.Name == RuntimeAssembly).FullName);
+}
+if (!rebuilt.AssemblyReferences.Select(a => a.FullName).SequenceEqual(expectedReferences))
+    throw new InvalidOperationException("Unexpected assembly dependency changes");
 string temporary = Path.Combine(work, ".speaker-probe-" + Guid.NewGuid().ToString("N") + ".tmp");
 try {
     using (var file = new FileStream(temporary, FileMode.CreateNew, FileAccess.Write, FileShare.None)) {
@@ -145,7 +238,13 @@ try {
 } finally {
     if (File.Exists(temporary)) File.Delete(temporary);
 }
-Console.WriteLine(JsonSerializer.Serialize(new { schema = 1, testOnly = true, platform = args[0],
+var report = new { schema = 1, testOnly = true, platform = args[0],
     sourceSha256 = expectedHashes[args[0]], outputSha256 = Sha(outputBytes), mappedSpeakers = map.Keys.OrderBy(x => x).ToArray(),
     changedDisplayCallSites = siteKeys.OrderBy(x => x).ToArray(), verifiedExistingMethodBodies = before.Count,
-    limitations = "Synthetic test-only DLL. No runtime, font, package, metadata-wide equivalence or nonstandard colon-source support is established." }));
+    limitations = "Synthetic test-only DLL. No runtime, font, package, metadata-wide equivalence or nonstandard colon-source support is established." };
+if (includeInline) {
+    var details = JsonSerializer.SerializeToNode(report).AsObject();
+    details["inlineRuntimeSha256"] = args[5];
+    details["inlineIds"] = JsonSerializer.SerializeToNode(inlineIds.Keys.ToArray());
+    Console.WriteLine(details.ToJsonString());
+} else Console.WriteLine(JsonSerializer.Serialize(report));

@@ -320,5 +320,7 @@ test scope, exact build fingerprints, and the unresolved in-game result. The
 tool does not implement a release-ready locale selector or translation package.
 
 `tools/speaker-inline-probe` exercises the distinct inline-name path using
-the original Yarn parser on both builds. Its desktop harness and limits are
+the original Yarn parser on both builds. For the optional synthetic presenter
+patch, build the `tools/speaker-inline-runtime` companion and supply its DLL
+and SHA-256 to `speaker-display-probe`. The desktop harness and limits are
 recorded in [the inline-view evidence](evidence/speaker-inline-view-20261109.md).

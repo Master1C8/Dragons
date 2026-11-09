@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <AssemblyName>Dragons.SyntheticSpeakerInline</AssemblyName>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../speaker-inline-probe/InlineSpeakerView.cs" Link="InlineSpeakerView.cs" />
+    <Reference Include="YarnSpinner"><HintPath>$(GameManaged)/YarnSpinner.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="YarnSpinner.Unity"><HintPath>$(GameManaged)/YarnSpinner.Unity.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

@@ -1,13 +1,15 @@
 using Yarn.Markup;
 using Yarn.Unity;
 
-internal static class InlineSpeakerView
+namespace Dragons.SyntheticSpeakerInline;
+
+public static class InlineSpeakerView
 {
-    internal static MarkupParseResult Create(LocalizedLine line, string displayName)
+    public static MarkupParseResult Create(LocalizedLine line, string expectedName, string displayName)
     {
         MarkupParseResult original = line.Text;
         string? name = line.CharacterName;
-        if (name is not ("Ryan" or "Conrad"))
+        if (name != expectedName || name is not ("Ryan" or "Conrad"))
             return original;
         string sourcePrefix = name + ": ";
         if (line.RawText?.StartsWith(sourcePrefix, StringComparison.Ordinal) != true ||
