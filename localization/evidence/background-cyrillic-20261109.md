@@ -62,6 +62,30 @@ dialogue asset. Its isolated companion requests an offscreen render
 from the original gameplay camera after the same dialogue is
 visible. The probe temporarily routes the existing presenter
 canvas through that camera and restores its prior configuration
-after readback. The result remains pending. The follow-up source
-and receipts are under
+after readback. The follow-up source and receipts are under
 `localization/work/background-cyrillic-offscreen-20261109.w6zvmR/`.
+
+The original presenter again resolved all 16 Cyrillic
+occurrences. The render request used the `PlayerFace` camera and
+produced a 640 × 480 PNG. The observer verified that the isolated
+process exited, all 163 desktop samples stayed hidden, the
+checked original profile roots matched, and the wrapper removed
+its Steam file. Visual inspection of the prepared frame remains
+pending. The temporary camera routing limits any future visual
+finding to this offscreen presentation path.
+
+Local OCR recognized `Жёлтый ёж. Ъъ Бь Щщ Йй.` with confidence
+0.5. It returned `Б` at the position where TextMeshPro reports
+`U+042C`. The OCR result is a reason to inspect the prepared
+source-pixel crop and does not establish the glyph's appearance.
+Crop bounds are `(208, 413, 227, 49)` on the same PNG.
+
+| Follow-up artifact | SHA-256 |
+| --- | --- |
+| Unity log | `4a88d3353580eaa2400bd2850bb76f9a760807287991db7a97f882beeb608d84` |
+| Observer receipt | `c6a793591c68b354d7f4b6b9f3f4eeffaf6d46fff7be5f08b68bf513eaa2f652` |
+| Runtime companion | `0795a63ac99ec70e4679fb37f7fc0cd7a33b0f539f83c372d56b14625ae02c8b` |
+| Original offscreen PNG | `d31abeab57803f96480f77de7e6d150dcede7050a465e3e211bbb71c02d5d1cb` |
+| Prepared 640 × 480 WebP80 | `0a91ee0434a3a6b0e3684e8449286972f9e1d043347c39a52136d8be7ebbd679` |
+| Prepared 227 × 49 dialogue crop | `109ac90ea55e0874b342d07b21c4ee23c7b36411c6d702180bac5c522f361976` |
+| OCR receipt | `2a17c90afd3a12a17c0ef9c59787d32a5880a3b0927caf1a0163279b93b6aa50` |
