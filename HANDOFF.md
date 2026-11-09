@@ -237,6 +237,12 @@ missing-line fallback and four additional styled lines. The Yarn
 validator preserves occupied gradient and multi-size text regions.
 Both source builds have the gradient resources and rich-text targets.
 Russian wording and rendered acceptance remain open.
+The [paired font-role coverage check](localization/evidence/font-role-coverage-20261110.md)
+binds 98 macOS and 122 Windows TMP components to the original
+Liberation Sans fallback chain. The embedded font covers all 66
+Russian letters and the bounded punctuation, digit and space sample.
+This is static source evidence. Final glyph rendering, fit and
+coverage against the authored corpus still require verification.
 The [paired romance route control](localization/evidence/romance-route-analysis-20261107.md#controlled-paired-yarn-runs-2026-11-10)
 exercises all seven pivotal choices, including both availability
 states for Ryan's choice and all three follow-up outcomes. A decline
