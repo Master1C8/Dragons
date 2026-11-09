@@ -15,10 +15,10 @@
       "branchControls": [{"choiceId": "line:7e9389a7", "instructionIndex": 4, "destination": 10}, {"choiceId": "line:f64a5b30", "instructionIndex": 5, "destination": 18}],
       "invariant": "Preserve the speaker's boast and separately paced self-introduction, both choice identities, destinations, program controls, and presentation semantics. Do not infer that the full sentence is a real character identity or drop it as metadata.",
       "adaptationRoute": "Keep the exact Yarn table value and provide the plain, colon-ended localized sentence under the same ID in the speaker locale. The presenter-only view shows it in the body with no character annotation. Decide the final wording with the following self-introduction.",
-      "nonTextDependencies": "Pinned Yarn parser, both compiled program objects and presenter behavior. The production adapter passed paired .NET identity checks and wrapped body rendering with synthetic text in a Conrad intro fixture. Natural Alexander branch entry, its two options and the final locale remain unverified.",
+      "nonTextDependencies": "Pinned Yarn parser, both compiled program objects and presenter behavior. The adapter passed paired .NET identity checks and wrapped body rendering with synthetic text in a Conrad intro fixture. Both original Alexander_2 choices completed in controlled Yarn VM runs. No ordinary caller was found in the audited stock scope. Final wording and presentation in the standalone node remain unverified.",
       "acceptanceScenarios": ["The college question leads to all four source-bound lines in the intended order, while the other choice retains its own continuation.", "A localized presentation preserves the entire boast and the subsequent Alexander self-introduction without changing the selected branch; verify actual original and localized name/body presentation before accepting it.", "A changed source prefix or unexpected identity is rejected; ordinary Ryan and Conrad identities remain unaffected."],
       "evidence": "localization/evidence/alexander-colon-display-20261110.md",
-      "statuses": {"sourceAnalysis": "partial", "editorial": "not-started", "adapter": "fixture-verified", "structural": "partial", "runtimeVisual": "fixture-verified"}
+      "statuses": {"sourceAnalysis": "paired-branch-and-caller-audited", "editorial": "not-started", "adapter": "fixture-verified", "structural": "paired-controlled-vm-verified", "runtimeVisual": "fixture-verified"}
     }
   ]
 }

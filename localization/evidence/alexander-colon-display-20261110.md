@@ -43,10 +43,51 @@ The wrappers exited zero after the task-owned players were stopped.
 Original profile snapshots matched.
 
 The fixture proves the actual presenter, layout and one advance
-through a stock choice. The normal Alexander college branch, its
-alternative answer, native Windows execution and the final Russian
-editorial decision still need verification. The synthetic sentence
-is a rendering input only.
+through a stock choice. The synthetic sentence is a rendering input
+only. Native Windows execution and the final Russian editorial
+decision remain pending.
+
+## Original Alexander college branch
+
+The two choices now ran to completion in the original
+`Alexander_2` node on both pinned desktop Yarn VMs. The
+`--college-branch` mode of
+[the Alexander runtime test](../tools/alexander-question-runtime-test/Program.cs)
+starts the real node explicitly and supplies a test model reference.
+It selects each offered ID in a fresh dialogue and checks the full
+line and command sequence.
+
+The college question `line:7e9389a7` reaches the college name,
+`line:4b36ea4e`, `line:f167e3d7` and the pause. The reply
+`line:f64a5b30` reaches its own two lines and skips both the
+colon-ended line and the separate self-introduction. Both paths
+converge at `line:13c39c50` and complete after `FinishDialogue`.
+The traces match across builds apart from the program fingerprint.
+The original six question scenarios still reproduce byte-for-byte.
+The test replaces the Unity command and display callbacks.
+
+The audited stock graph does not reach this standalone node.
+`Alexander_2_6` binds `Alexander_2_intro`,
+`Alexander_2_required` and `Alexander_2_Outro` as distinct
+entries. The exact `Alexander_2` name is absent from the 95
+root names and all 89 original transfers per build, and from
+both repaired closures. Adding `Alexander_2` explicitly as a root
+reaches exactly its 11 IDs. The managed literal scan found no exact
+caller across 170 macOS and 172 Windows assemblies, and recovered
+`FinishDialogue` as a positive control. The 17 pinned top-level
+files contain just three exact references, all in the original
+YarnProject object's map key, node name and title header. The
+31 pinned StreamingAssets files and 14 decoded bundle objects
+have no match. External entry points remain outside this scope.
+The 11 standalone IDs remain in the translation inventory.
+
+The receipt directory is
+`localization/work/alexander-college-route-20261110.IKH1TX/`.
+
+| Evidence | macOS SHA-256 | Windows SHA-256 |
+| --- | --- | --- |
+| Desktop option trace | `d7ee7b910b2f5a35ab859c3e226ac6461922456d1275ebf606f9dfc752fc226f` | `f4e58cbcd2bf0aecb49c567faae1dab05b8f7ba3926eefaf91f859b4bda89bd4` |
+| Caller search | `1727ab03797afe7624aa952718af278bcb0edbf5d076a2922218f15449762b9a` | `f81faa841a33a13ff32dd8729c57eebcff9a94905ac599739ba144f1e4291459` |
 
 ## Local receipts
 

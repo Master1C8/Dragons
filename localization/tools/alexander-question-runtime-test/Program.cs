@@ -8,8 +8,9 @@ const string exitNode = "Alexander_3_required_end";
 const string hasAsked = "$has_asked_question";
 const string yarnHash = "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e";
 
-if (args.Length != 2 || args[0] is not ("macos" or "windows"))
-    throw new ArgumentException("Usage: alexander-question-runtime-test macos|windows ORIGINAL_PROGRAM");
+if (args.Length is < 2 or > 3 || args[0] is not ("macos" or "windows") ||
+    (args.Length == 3 && args[2] != "--college-branch"))
+    throw new ArgumentException("Usage: alexander-question-runtime-test macos|windows ORIGINAL_PROGRAM [--college-branch]");
 string Sha(byte[] data) => Convert.ToHexString(SHA256.HashData(data)).ToLowerInvariant();
 var programBytes = File.ReadAllBytes(args[1]);
 var programHash = Sha(programBytes);
@@ -19,6 +20,11 @@ var expectedHash = args[0] == "macos"
 Require(programHash == expectedHash, "unsupported original program");
 Require(Sha(File.ReadAllBytes(typeof(Dialogue).Assembly.Location)) == yarnHash, "unsupported Yarn VM");
 var program = Yarn.Program.Parser.ParseFrom(programBytes);
+
+if (args.Length == 3) {
+    CheckCollegeBranch(program, programHash);
+    return;
+}
 
 string[] questions = ["line:fc7aaaa0", "line:daa040eb", "line:21c0526b", "line:c2bdc402",
     "line:838cdf1b", "line:72a9b5bb", "line:a5a8a9d5"];
@@ -104,6 +110,49 @@ foreach (var scenario in cases) {
         scenario = scenario.Name, asked, nested, body, menus, exitNode, reachedExit,
         reentryWithSameStore = reentered, programSha256 = programHash, yarnSha256 = yarnHash
     }));
+}
+
+static void CheckCollegeBranch(Yarn.Program program, string programHash) {
+    const string node = "Alexander_2";
+    string[] choices = ["line:7e9389a7", "line:f64a5b30"];
+    string[][] alternatives = [
+        ["line:dd06ed39", "line:4b36ea4e", "line:f167e3d7", "line:6757e4a0"],
+        ["line:607a5c47", "line:85f39b27"]
+    ];
+    for (int branch = 0; branch < choices.Length; branch++) {
+        var store = new MemoryVariableStore();
+        var dialogue = new Dialogue(store);
+        var lines = new List<string>();
+        var commands = new List<string>();
+        int menus = 0;
+        bool complete = false;
+        string selected = choices[branch];
+        dialogue.SetProgram(program);
+        store.SetValue("$dragonModel", "test-model");
+        dialogue.LogDebugMessage = _ => {};
+        dialogue.LogErrorMessage = message => throw new InvalidOperationException(message);
+        dialogue.LineHandler = line => {
+            Require(dialogue.CurrentNode == node, "unexpected college dialogue node");
+            lines.Add(line.ID);
+        };
+        dialogue.CommandHandler = command => commands.Add(command.Text);
+        dialogue.OptionsHandler = options => {
+            menus++;
+            var available = options.Options.Where(option => option.IsAvailable).ToArray();
+            Require(available.Select(option => option.Line.ID).SequenceEqual(choices), "wrong college choices");
+            dialogue.SetSelectedOption(available.Single(option => option.Line.ID == selected).ID);
+        };
+        dialogue.DialogueCompleteHandler = () => complete = true;
+        dialogue.SetNode(node);
+        for (int step = 0; step < 40 && !complete && (step == 0 || dialogue.IsActive); step++)
+            dialogue.Continue();
+        string[] expected = ["line:52f28749", "line:e8a38ed0", .. alternatives[branch], "line:13c39c50"];
+        Require(complete && menus == 1 && lines.SequenceEqual(expected), $"wrong college branch for {selected}");
+        string[] expectedCommands = ["BeginDialogue test-model PlayerFace", "MakeFace test-model Happy",
+            "MakeFace test-model Worried", "FinishDialogue test-model"];
+        Require(commands.SequenceEqual(expectedCommands), "wrong college command sequence");
+        Console.WriteLine(JsonSerializer.Serialize(new { node, choices, selected, lines, commands, complete, programSha256 = programHash }));
+    }
 }
 
 static void Require(bool condition, string message) {
