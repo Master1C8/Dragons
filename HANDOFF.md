@@ -241,8 +241,10 @@ Russian wording and rendered acceptance remain open.
 The [Cyrillic typography runtime control](localization/evidence/styled-cyrillic-runtime-20261110.md)
 checks two original Yarn size tags and the gradient vertex colors in
 isolated macOS and Windows CrossOver gameplay copies. All 28
-glyph records match. It leaves final wording, actual choice
-prefab rendering and pixel readability open.
+body glyph records match. The stock choice setter follow-up
+also matches 24 glyph records across builds, including gold
+captions, decreasing sizes and unavailable-choice strikethrough.
+Final wording, in-scene layout and pixel readability remain open.
 The [paired font-role coverage check](localization/evidence/font-role-coverage-20261110.md)
 binds 98 macOS and 122 Windows TMP components to the original
 Liberation Sans fallback chain. The embedded font covers all 66

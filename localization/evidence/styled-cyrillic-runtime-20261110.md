@@ -74,3 +74,49 @@ Local input, companions and logs are under
 | Follow-up companion DLL | `a99898ed63ffa43cf0c1b30f2f5ca9b24ba488e7924a3446f1c0b7bcb7189fc8` |
 | Follow-up Unity log | `7f0f64f6de8740540e7f3478cfc941bf99d6f8d14bb5991daefe8d5094768b13` |
 | Follow-up observer receipt | `2f3b52af1ebca02aba7d81df1bc4edaee0f738f533a195b2b3e8acb497d8d258` |
+
+## Stock choice presentation control
+
+A follow-up loads the same isolated `Conrad_3_8` scenario through
+the stock menu and enters `Conrad_Intro_3` by virtual player
+input. Once the normal options are present, the probe clones an
+active `OptionItem` and resolves its cloned `text` reference.
+It passes a synthetic `LocalizedLine` through the original
+`LineParser` and `OptionItem.Option` setter. The setter omits the
+synthetic speaker prefix and leaves the rich-text tags intact.
+The live option's text and availability are unchanged.
+
+The 36-unit baseline and the staged 90%, 80% and 70% choice
+regions produce sizes 36, 32.4, 28.8 and 25.2. In the available
+gold choice, only the first pair gets the gold gradient. The
+25.2-unit caption retains the normal button color. On the
+unavailable copy, the stock setter disables interaction and
+adds the original `<s>` wrapper. All four characters have
+strikethrough and reduced alpha. The gradient remains confined
+to the first pair. Every sampled glyph resolves through the
+original Cyrillic fallback.
+
+This exercises the real choice prefab, parser and setter with
+synthetic input. The original story choices remain unchanged.
+It does not establish in-scene readability, wrapping, the
+semantics of the translated choices, or authored Russian wording.
+No screenshot was taken.
+
+All 24 glyph records match across Metal and Direct3D 11 under
+CrossOver. The 155 macOS and 259 Windows desktop samples had no
+on-screen window or foreground ownership. The checked original
+profile roots and disposable fixtures matched their baselines.
+The Windows observer also confirmed the checked installed files
+were unchanged. Both task-owned players exited. The macOS
+copy's signature was reverified, and the copy was removed after
+recording all 284 file hashes.
+
+Local source and logs are under
+`localization/work/styled-cyrillic-options-20261110.ZptivL/`.
+Both builds reused the previously recorded synthetic Yarn assets.
+
+| Artifact | macOS SHA-256 | Windows SHA-256 |
+| --- | --- | --- |
+| Companion DLL | `4eb2e5dd8bf7ea765c96a2ba54f86346aad18e88d748a79367cd1107d7f581f3` | `447a68e162cf4ce667523e5fd086a9f72cdd40f2e343c4dbc2106fd95775090c` |
+| Unity log | `8f04baac85bd7df0dd89aaf1dbb8556c75ec9447ce4a98eb60055df39f6d78d2` | `c4aafabbbd86bf11e7578d4dc3c74532f079ea4c8b7f892de3ff287c0cac8ec0` |
+| Observer receipt | `46c1fae1bc8838187de510b7d746eb476f58cdd665b11ca625b181dde44e5073` | `afd819bc6e7fe35fa4f1dc722d996007e842ce2bfec87aba68947590d092862f` |
