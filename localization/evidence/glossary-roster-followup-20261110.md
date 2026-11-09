@@ -83,6 +83,11 @@ Alexander route. `Start` contains a Yarn demonstration and
 `ErrorHasOccurred` contains a diagnostic message that mentions Nael.
 Neither introduces a story speaker. The full semantic roster remains open.
 
+The [paired entry audit](generic-dragon-entries-20261110.md) extends
+the caller search to managed dispatch and raw asset occurrences. It
+finds the four generic names only in the original project object.
+The four nodes and their 20 IDs remain in scope.
+
 ## Russian glossary repairs proposed for review
 
 The two franchise scenes contain 21 IDs, including seven player options.
