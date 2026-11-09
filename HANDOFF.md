@@ -19,14 +19,14 @@ helper refuses to target the hidden player. Normal transition completion and
 native Windows remain pending.
 See [the transition evidence](localization/evidence/yarn-transition-runtime-20261109.md).
 
-An isolated macOS repair build now accepts virtual keyboard state in
-the background. Escape invoked the stock `UI/Cancel` action and reached
-`MenuMain.OnEvent`; a neutral input did neither. Earlier queued keyboard
-events failed to reach the device. The successful test reached the main
-menu with no foreground ownership. Normal save loading, equipment
-interaction and the five repaired transfers still need runtime evidence
-with this input path or an equivalent private desktop.
-See [the background input test](localization/evidence/background-input-20261109.md).
+An isolated macOS repair build accepts virtual keyboard and mouse state
+in the background. The stock menu loaded the synthetic `Conrad_3_8`
+slot. Walking and turning used the original player actions. The stock
+selector and `Player/Plap` then equipped the crowbar and opened the
+shipment crate. The mount frame is present near the crate. Mount
+placement, the remaining scene steps and the five repaired transfers
+still need runtime evidence. See [the background input test](localization/evidence/background-input-20261109.md)
+and [the gameplay receipts](localization/evidence/background-gameplay-20261109.md).
 
 Commit `3727bf3` adds 319 provisional Yarn role assignments across Ryan's later
 scenes and preserves the existing Russian draft for the same 14 changed IDs
