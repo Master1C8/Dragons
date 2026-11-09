@@ -112,11 +112,11 @@ class SourceInventoryUnitTests(unittest.TestCase):
         engine_rows = [r for r in result['entries'] if r['family'] == 'managed' and
                        any(':' + assembly + ':' in r['id'] for assembly in ('Unity.TextMeshPro', 'UnityEngine.UI'))]
         self.assertEqual(len(engine_rows), 1156)
-        self.assertEqual(sum(r['role'] == 'engine-default-text-needs-visibility-review' for r in engine_rows), 6)
+        self.assertEqual(sum(r['role'] == 'preserve-exactly-unused-multiselect-label' for r in engine_rows), 6)
         self.assertEqual(sum(r['role'] == 'preserve-exactly-engine-factory-template' for r in engine_rows), 28)
         for platform in ('macos', 'windows'):
             for value, method, role in (
-                    ('Mixed...', 'TMPro.TMP_Dropdown::.cctor()', 'engine-default-text-needs-visibility-review'),
+                    ('Mixed...', 'TMPro.TMP_Dropdown::.cctor()', 'preserve-exactly-unused-multiselect-label'),
                     ('Enter text...', 'UnityEngine.UI.DefaultControls::CreateInputField',
                      'preserve-exactly-engine-factory-template')):
                 self.assertTrue(any(r['source'].get(platform) == value and method in r['method'] and
@@ -128,7 +128,9 @@ class SourceInventoryUnitTests(unittest.TestCase):
                 self.assertEqual([r['source'][platform] for r in game_rows if r['role'] == role], [value] * count)
             self.assertEqual([r['source'][platform] for r in game_rows
                               if r.get('consumer') == 'MenuResponseTransition.reason'], ['Delete Save?'] * 3)
-            self.assertEqual(sum(r['role'] == 'objective-text-needs-visibility-review' for r in game_rows), 4)
+            objectives = [r for r in game_rows if r['role'] == 'preserve-exactly-unbound-objective-label']
+            self.assertEqual({r['source'][platform] for r in objectives}, {'DEFAULT', 'DIRTY', 'SOAPY', 'TOO BRIGHT'})
+            self.assertTrue(all(r['consumer'] == 'ObjectiveDisplay.SetObjective' for r in objectives))
             for role, value, consumer in (
                     ('preserve-exactly-animation-key', 'Speed', 'LocomotionAnimationBridge::speedParam'),
                     ('preserve-exactly-command', 'BlackoutFadeIn', '::AddCommandHandler('),
@@ -262,6 +264,14 @@ class SourceInventoryUnitTests(unittest.TestCase):
         })
         self.assertTrue(all(r['family'] == 'ui' and r['asset'] == 'sharedassets0.assets'
                             and r['source']['macos'] == r['source']['windows'] for r in settings_templates))
+        cheat_rows = [r for r in result['entries'] if r['role'] == 'preserve-exactly-development-menu-text']
+        self.assertEqual(len(cheat_rows), 6)
+        for asset in ('level1', 'level2'):
+            rows = [r for r in cheat_rows if r['asset'] == asset]
+            self.assertEqual({r['source']['windows'] for r in rows}, {
+                'DELETE SAVE', 'CHEAT: Instant Clean', 'CHEAT: Instant Skip',
+            })
+            self.assertTrue(all(r['family'] == 'ui' and r['source']['macos'] == r['source']['windows'] for r in rows))
         component_rows = [r for r in result['entries'] if r['family'] == 'game-component']
         for platform in ('macos', 'windows'):
             cold = [r for r in component_rows if r['source'].get(platform) == 'DragonColdBalls']

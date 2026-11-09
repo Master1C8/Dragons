@@ -18,3 +18,37 @@ python localization/inventory_objective_components.py macos ORIGINAL_MAC_DATA
 python localization/inventory_objective_components.py windows ORIGINAL_WINDOWS_DATA
 python -m unittest discover -s localization -p 'test_*.py'
 ```
+
+## v36 objective entry-path audit
+
+The complete 170 macOS and 172 Windows root managed inventories
+match the earlier caller fingerprints. The follow-up checked
+subclasses, field types, direct methods, generic method operands,
+type operands and exact class-name literals. The only instantiation
+reference is `ObjectiveManager.AddObjective` cloning an
+`ObjectiveDisplay` from its own serialized field. No stock managed
+reference creates an `ObjectiveManager`, and neither build has a
+subclass of the manager or display.
+
+The earlier component scan found neither component in the 17
+serialized assets. The follow-up rehashed all 31 pinned
+`StreamingAssets` files per build and inspected the 14 decoded
+objects in the three Unity bundles. The single MonoBehaviour is
+an ordinary `UnityEngine.Localization.Locale`. There is no bundled
+GameObject, scene or objective component.
+
+The combined evidence establishes no stock entry to the inspected
+objective display. The v36 recipe preserves the four literals on
+each build, with their underlying setter consumers retained for
+future review. Arbitrary reflection, external mods and a runtime
+test of a deliberately created objective display are outside the
+scope of this decision.
+
+Scans are in `localization/work/objective-entry-flow-20261109.eF6gON/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| macOS managed flow | `2aefd3c10b23a319e9c1c8f7eb40e4415e3ae741efa725f59815e35f489a1056` |
+| Windows managed flow | `ae129d40b7cd10ee99eda233743983184f7d6619955d067633cb87e03496b2d1` |
+| macOS decoded bundle types | `fce5a8415eda83c50402c587a77ede2787857248cc3d66c0995a313772f96353` |
+| Windows decoded bundle types | `454f86dea1484565cdbc71a59638b578bad1a80b0851c38139571391031350b3` |

@@ -80,3 +80,19 @@ Scanner source and reports are in
 | Scanner source | `70b95a57b3594f74d730475f29decbcfbc619cbc34bf1e6821e0a210fb2dd5cb` |
 | macOS report | `be0d0d1451074ea5fdafd64bd8f4577516c669c46d6fa905e0533071bed4dda6` |
 | Windows report | `d8d94506338ef6ca3b6b79c38e182462511060df4df70b40cceccffcc0627a2e` |
+
+## v36 dropdown multi-select labels
+
+The [settings inventory and stock-menu checks](settings-semantics-20261107.md#v35-settings-prefab-templates)
+bind the live dropdowns to the single serialized prefab on each
+build. The original prefab sets `m_MultiSelect=false`. The managed
+setter scan found no reference that invokes the mode setter, and
+the only direct field write is within that setter. The examined
+factory entry points have no stock caller, and the
+[decoded bundle scan](objective-text-source-20261107.md#v36-objective-entry-path-audit)
+found no extra prefab or scene. The mode-specific stock paths for
+`Nothing`, `Everything` and `Mixed...` remain in the Unity assembly.
+The v36 source recipe preserves all six instances for the pinned
+release builds. The stock Options run covered ordinary single-select
+controls. It did not force multi-select, inspect pixels or test an
+external component.

@@ -302,6 +302,8 @@ def build(work, roles_path):
             role = 'preserve-exactly-dialogue-presenter-template'
         elif role == 'settings-prefab-template-needs-consumer-review':
             role = 'preserve-exactly-settings-prefab-template'
+        elif role == 'cheat-menu-text-needs-visibility-review':
+            role = 'preserve-exactly-development-menu-text'
         put(records, {'id': 'ui:' + dl.sha(path.encode('utf-8')), 'family': 'ui',
                       'role': role,
                       'asset': row['asset'], 'hierarchy': row['hierarchy'],

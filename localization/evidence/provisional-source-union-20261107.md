@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v35-20261109.json`
-has SHA-256 `fc673ac155d8388bb584f84b5442bb614132c8beff8e39100b41a6b69b8290ee`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v36-20261109.json`
+has SHA-256 `ab39e919251b20507469546c80ab21672a6455c02028ef69d41f8adfcdb606df`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -272,6 +272,13 @@ See [the Canvas bindings and presenter flow](speaker-presentation-flow-20261107.
 
 The v35 export preserves 11 paired settings prefab fields.
 See [the settings source and runtime bindings](settings-semantics-20261107.md#v35-settings-prefab-templates).
+
+The v36 export preserves six paired development-menu labels, eight
+unbound objective labels and six unused multi-select labels. The two
+exports matched byte-for-byte and only those 20 roles differ from v35.
+See [the pause controls](ui-source-roles-20261107.md#development-gate-and-v36),
+[objective paths](objective-text-source-20261107.md#v36-objective-entry-path-audit)
+and [dropdown mode](managed-text-sinks-20261107.md#v36-dropdown-multi-select-labels).
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values still require visibility review, only five managed assemblies are

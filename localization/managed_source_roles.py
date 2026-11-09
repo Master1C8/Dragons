@@ -838,6 +838,9 @@ def direct_role(row, assembly):
                 'UnityEngine.GameObject UnityEngine.UI.DefaultControls::Create',
                 'UnityEngine.GameObject TMPro.TMP_DefaultControls::Create')):
             role = 'preserve-exactly-engine-factory-template'
+        if (assembly == 'Unity.TextMeshPro' and row['method'] == 'System.Void TMPro.TMP_Dropdown::.cctor()'
+                and row['value'] in ('Nothing', 'Everything', 'Mixed...')):
+            role = 'preserve-exactly-unused-multiselect-label'
         if not row['value']:
             role = 'preserve-exactly-empty-text'
     return (role, target) if role is not None else None
@@ -887,5 +890,5 @@ def bind_game_consumers(platform, data, setters, reasons, objectives):
         rows = [r for r in data['strings'] if r['method'] == f'System.String {cls}::GetName()']
         if len(rows) != 1 or rows[0]['value'] != value or rows[0]['id'] in roles:
             raise ValueError('objective literal source mismatch')
-        roles[rows[0]['id']] = ('objective-text-needs-visibility-review', 'ObjectiveDisplay.SetObjective')
+        roles[rows[0]['id']] = ('preserve-exactly-unbound-objective-label', 'ObjectiveDisplay.SetObjective')
     return roles

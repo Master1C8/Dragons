@@ -25,10 +25,9 @@ Windows asset. The inspected ancestor GameObjects have their
 serialized active flags set on both builds. These are the serialized
 flags. Menu initialization can still hide or change the hierarchy.
 
-The source union retains these six paired roles for visibility review.
-The next check is to read their active and Canvas state after opening
-the original pause menu in isolated copies. The button actions are
-outside that check.
+The initial source union retained these six paired roles for visibility
+review. The development gate and stock-input checks below resolve the
+release-build role.
 
 Local reports are under
 `localization/work/cheat-menu-bindings-20261109.gP09z7/`.
@@ -38,3 +37,43 @@ Local reports are under
 | Scanner source | `e103cdcd3f8b2a67ff21a67ca27462dddaea994f73550fe951b60cccdd23bc4f` |
 | macOS bindings | `37e55a9823a964eb21f33c68bdf64a7bc313c14340d639dd027e338785c47bd3` |
 | Windows bindings | `f4066a63d375f62c4d300fb0504212154ed672539f5fa4397a2ba89f72696d0e` |
+
+### Development gate and v36
+
+Each of the six label parents in each build binds to the exact Button
+reference of an enabled `DeleteSaveCheat`, `InstantCleanDragonCheat`
+or `InstantSkipLevelCheat` component. All 12 handler objects passed
+byte-exact read-back. The three `OnEnable` methods have matching
+instruction sequences between builds. They set the bound Button
+GameObject active only when Unity reports a debug build or the Editor.
+This applies to the two inspected scenes regardless of the different
+serialized button defaults.
+
+Isolated macOS and Windows CrossOver players loaded the synthetic
+`Conrad_3_8` save through the original menu and opened the pause menu
+with virtual Escape. The input observer recorded the original Pause
+action. In `PlayGame`, before and after pause, all three buttons had
+`activeSelf=false` and the labels were inactive in the hierarchy on
+both builds. No button action was exercised. The macOS and Windows
+desktop observers sampled 26 and 45 times, respectively, with no
+window or foreground ownership. Both test processes exited and the
+checked original profiles were unchanged. The second scene is covered
+by the source binding and the identical gate. Its ordinary runtime
+entry and the debug-build branch were outside this check.
+
+The v36 recipe preserves the six labels as development-only UI.
+The managed scans are in
+`localization/work/cheat-gate-managed-20261109.LqLwC7/`.
+The runtime evidence is in
+`localization/work/pause-cheat-runtime-20261109.Jzhgxf/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| macOS handler bindings | `877b9aeb34bc98809aff147bfd410872f26b43790feaf73226aa46f846ce2432` |
+| Windows handler bindings | `00004979671f076b309c2384bc5cd13c06f3cc32463feae786dc4fdf90ee1fee` |
+| macOS managed scan | `705b1b47bc43106e0a137feade5135b377623a006148306214863550b3eb8908` |
+| Windows managed scan | `b159ae68628b252aa93c9f13d5bb91c2cc39c9227c24dcb91f460040dc74b230` |
+| macOS player log | `18fb477822af77f52b006ecd9fa8bccd644f11983522f6370880a6abac514029` |
+| macOS observer receipt | `b62f7b7dbc2cc00ea938b010ed8519fea813669389341dd874e4db5495600420` |
+| Windows player log | `2f208ef8a502f284825dab8726f2c998145261141f8b45ab9b4b4579f290a0fe` |
+| Windows observer receipt | `5ee98976dad0d92f165b340a720365c975a0359c8b471d49f686d6d23a22a31d` |
