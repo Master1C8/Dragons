@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "locale": "ru",
+  "sourceObjectSha256": "7000b2b93b09f6a7b916e5f57c0dc6cf21ca9e6f9ddbfbc485bce704e8ce28d6",
+  "lines": {
+    "line:a99c515c": {
+      "source": "Hello, <i>'Drag'n'wash franchise 223'...</i> Have you spoken to your first customer yet?",
+      "text": "Здравствуйте, <i>«Франшиза Drag'n Wash № 223»...</i> Вы уже поговорили с первым клиентом?"
+    },
+    "line:ce77a00e": {
+      "source": "Just did!",
+      "text": "Только что!"
+    },
+    "line:5847a779": {
+      "source": "Yeah I have.",
+      "text": "Да, уже."
+    },
+    "line:e216aee0": {
+      "source": "Ah, good.",
+      "text": "Хорошо."
+    },
+    "line:7426a997": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:d7b3cd09": {
+      "source": "Then- Have a productive day.",
+      "text": "Тогда... Продуктивного вам дня."
+    },
+    "line:4183ca7e": {
+      "source": "Hello, <i>'Drag'n'wash franchise 223'...</i> Have you figure out how to interact yet?",
+      "text": "Здравствуйте, <i>«Франшиза Drag'n Wash № 223»...</i> Вы уже разобрались, как здесь взаимодействовать?"
+    },
+    "line:fbd2c3e7": {
+      "source": "Nope.",
+      "text": "Нет."
+    },
+    "line:8f46bb17": {
+      "source": "I think I've got it!",
+      "text": "Думаю, да!"
+    },
+    "line:6de2c490": {
+      "source": "Ah...",
+      "text": "А..."
+    },
+    "line:fcff7b00": {
+      "source": "Well, go to the window and speak with your customer.",
+      "text": "Тогда подойдите к окну и поговорите с клиентом."
+    },
+    "line:6acf7c77": {
+      "source": "You'll need to let them in afterwards ofcourse.",
+      "text": "А потом, конечно, нужно будет впустить клиента."
+    },
+    "line:1976bc60": {
+      "source": "Excellent. Then make sure to go greet your customer at the window.",
+      "text": "Отлично. Тогда не забудьте подойти к окну и поприветствовать клиента."
+    },
+    "line:a327b5f9": {
+      "source": "Okay!",
+      "text": "Хорошо!"
+    },
+    "line:3517b28e": {
+      "source": "Have a productive day.",
+      "text": "Продуктивного вам дня."
+    }
+  }
+}

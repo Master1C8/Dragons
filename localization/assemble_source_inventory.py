@@ -33,6 +33,8 @@ INPUT_ACTION_SHA = {
 YARN_PROTECTED_SHA = 'bff5f4ce3b270dedf77f31518a3bb75efe72d93617796baeff71cbebb5872be3'
 OPENING_ROLES_SHA = 'ad01a97ccffb6ea648bd5df90d42416e3c528f649f3fd4a5b5881a3c6a322025'
 RYAN23_ROLES_SHA = '82f0dd640b385abeb4a06cec54cc267c61ac60d790035d55a72a3b4a0b7669e1'
+RYAN45_ROLES_SHA = '673f13e007da9ae66585d950094a4e660b38c0f13872a7ae013dfe5387d8ec9d'
+RYAN_EXTRA_ROLES_SHA = '73f065159d49a1b2cd173cc6d2a333ecb4200c40edd5ab60800640b28b1e5c23'
 
 
 def load_pinned(path, expected):
@@ -85,7 +87,9 @@ def bind_reviewed_roles(scenes, manifest, scoped_nodes, expected_count):
         raise ValueError('opening-role source binding mismatch')
     known = {'demo-dialogue-candidate': 'line', 'demo-choice-candidate': 'option',
              'dialogue-candidate': 'line', 'dialogue-punctuation-candidate': 'line',
-             'choice-candidate': 'option'}
+             'choice-candidate': 'option', 'editor-prompt-candidate': 'line',
+             'editor-choice-candidate': 'option', 'recovery-prompt-candidate': 'line',
+             'recovery-choice-candidate': 'option'}
     source = {row['id']: (node, row) for node in scoped_nodes for row in scenes['scenes'][node]}
     if len(source) != expected_count:
         raise ValueError('opening source identity count mismatch')
@@ -98,9 +102,10 @@ def bind_reviewed_roles(scenes, manifest, scoped_nodes, expected_count):
         for key in group['ids']:
             if key in matched or key not in source or (source[key][0], source[key][1]['kind']) != (group['node'], group['kind']):
                 raise ValueError('opening role identity or kind mismatch')
-            if group['role'] == 'dialogue-punctuation-candidate' and any(
-                    source[key][1]['source'][p] != '...' for p in ('macos', 'windows')):
-                raise ValueError('punctuation role source mismatch')
+            if group['role'] == 'dialogue-punctuation-candidate':
+                a, b = (source[key][1]['source'][p] for p in ('macos', 'windows'))
+                if a not in ('..', '...') or b != a:
+                    raise ValueError('punctuation role source mismatch')
             matched[key] = group['role']
     if matched.keys() != source.keys():
         raise ValueError('opening source coverage mismatch')
@@ -116,6 +121,34 @@ def bind_ryan23_roles(scenes, manifest):
     return bind_reviewed_roles(scenes, manifest,
         {'Ryan_2_Outro', 'Ryan_2_intro', 'Ryan_2_required', 'Ryan_3_Outro',
          'Ryan_3_intro', 'Ryan_3_required', 'Ryan_3_wont_use_mount'}, 133)
+
+
+def bind_ryan45_roles(scenes, manifest):
+    return bind_reviewed_roles(scenes, manifest,
+        {'Ryan_4_Cum', 'Ryan_4_JerkOff_Start', 'Ryan_4_Mount_Finish', 'Ryan_4_Mount_Start', 'Ryan_4_intro',
+         'Ryan_5_Cum', 'Ryan_5_JerkOff_Start', 'Ryan_5_Mount_Finish', 'Ryan_5_Mount_Start',
+         'Ryan_5_Outro_conrad_romanced', 'Ryan_5_Outro_ryan_conrad_romanced', 'Ryan_5_Outro_ryan_romanced',
+         'Ryan_5_Required_conrad_romanced', 'Ryan_5_Required_ryan_conrad_romanced',
+         'Ryan_5_Required_ryan_romanced', 'Ryan_5_intro', 'Ryan_5_intro_ryan_romanced'}, 197)
+
+
+def bind_ryan_extra_roles(scenes, manifest):
+    return bind_reviewed_roles(scenes, manifest,
+        {'Ryan_Conrad_SexScene', 'Ryan_Conrad_SexScene_Cum', 'Ryan_Conrad_SexScene_Loop',
+         'Ryan_SexScene', 'Ryan_SexScene_Cum', 'Ryan_SexScene_Loop', 'Ryan_egg_dialog',
+         'Ryan_grab_basket', 'Ryan_grapes_dialog', 'Ryan_ham_dialog', 'Ryan_melon_dialog'}, 122)
+
+
+def merge_reviewed_roles(role_sets, full, prefixes):
+    if any(role_sets[i].keys() & role_sets[j].keys() for i in range(len(role_sets)) for j in range(i)):
+        raise ValueError('reviewed Yarn role scopes overlap')
+    merged = {}
+    for roles in role_sets:
+        merged.update(roles)
+    if merged.keys() & full.keys() or any(merged[key] != 'dialogue-candidate'
+            for key in merged.keys() & prefixes.keys()):
+        raise ValueError('reviewed roles conflict with protected Yarn bindings')
+    return merged
 
 
 def build(work, roles_path):
@@ -134,10 +167,12 @@ def build(work, roles_path):
     opening_roles = bind_opening_roles(scenes, opening)
     ryan23 = load_pinned(Path(__file__).with_name('yarn_roles_ryan23.json'), RYAN23_ROLES_SHA)
     ryan23_roles = bind_ryan23_roles(scenes, ryan23)
-    if (opening_roles.keys() & ryan23_roles.keys() or
-            (opening_roles.keys() | ryan23_roles.keys()) & (full.keys() | prefixes.keys())):
-        raise ValueError('opening roles overlap protected Yarn bindings')
-    reviewed_roles = opening_roles | ryan23_roles
+    ryan45 = load_pinned(Path(__file__).with_name('yarn_roles_ryan45.json'), RYAN45_ROLES_SHA)
+    ryan45_roles = bind_ryan45_roles(scenes, ryan45)
+    ryan_extra = load_pinned(Path(__file__).with_name('yarn_roles_ryan_extra.json'), RYAN_EXTRA_ROLES_SHA)
+    extra_roles = bind_ryan_extra_roles(scenes, ryan_extra)
+    role_sets = (opening_roles, ryan23_roles, ryan45_roles, extra_roles)
+    reviewed_roles = merge_reviewed_roles(role_sets, full, prefixes)
     credit_manifest = load_pinned(credits.MANIFEST, credits.MANIFEST_SHA256)
     protected_names = bind_credit_names(roles, credit_manifest, ui)
     records = {}
@@ -250,6 +285,8 @@ def build(work, roles_path):
             'yarnProtectedReportSha256': YARN_PROTECTED_SHA, 'creditNameManifestSha256': credits.MANIFEST_SHA256,
             'openingRoleManifestSha256': OPENING_ROLES_SHA,
             'ryan23RoleManifestSha256': RYAN23_ROLES_SHA,
+            'ryan45RoleManifestSha256': RYAN45_ROLES_SHA,
+            'ryanExtraRoleManifestSha256': RYAN_EXTRA_ROLES_SHA,
             'familyCounts': counts,
             'entries': list(records.values()),
             'limitations': 'Provisional union of pinned discovery exports. Managed occurrences are build-specific and unpaired; roles, runtime visibility, other assemblies/resources, full exact-preservation contract, special-scene decisions and independent review remain incomplete. Texture text is excluded by owner decision.'}

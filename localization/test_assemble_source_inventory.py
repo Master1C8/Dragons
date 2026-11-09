@@ -47,14 +47,24 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertEqual(entries['yarn:line:2b84f2eb']['role'], 'demo-dialogue-candidate')
         self.assertEqual(entries['yarn:line:745c3c12']['role'], 'demo-choice-candidate')
         opening_roles = {'demo-dialogue-candidate', 'demo-choice-candidate', 'dialogue-candidate',
-                         'dialogue-punctuation-candidate', 'choice-candidate'}
+                         'dialogue-punctuation-candidate', 'choice-candidate', 'editor-prompt-candidate',
+                         'editor-choice-candidate', 'recovery-prompt-candidate', 'recovery-choice-candidate'}
         self.assertEqual(entries['yarn:line:14d2c62f']['role'], 'choice-candidate')
         self.assertEqual(entries['yarn:line:decf872a']['role'], 'dialogue-punctuation-candidate')
         self.assertEqual(entries['yarn:line:695ef750']['role'], 'dialogue-punctuation-candidate')
         self.assertEqual(entries['yarn:line:7cd85c8e']['role'], 'choice-candidate')
-        self.assertEqual(sum(r['role'] in opening_roles for r in result['entries'] if r['family'] == 'yarn'), 212)
+        self.assertEqual(entries['yarn:line:dbab7a39']['role'], 'editor-prompt-candidate')
+        self.assertEqual(entries['yarn:line:4ab6c5a9']['role'], 'editor-choice-candidate')
+        self.assertEqual(entries['yarn:line:61c7f2d6']['role'], 'recovery-prompt-candidate')
+        self.assertEqual(entries['yarn:line:5462913f']['role'], 'recovery-choice-candidate')
+        self.assertEqual(entries['yarn:line:3d2df033']['role'], 'dialogue-punctuation-candidate')
+        self.assertEqual(entries['yarn:line:f5f5b815']['role'], 'dialogue-candidate')
+        self.assertEqual(entries['yarn:line:f5f5b815']['preserveExactPrefix']['macos'], 'Ryan: ')
+        self.assertEqual(sum(r['role'] in opening_roles for r in result['entries'] if r['family'] == 'yarn'), 531)
         self.assertEqual(result['openingRoleManifestSha256'], inventory.OPENING_ROLES_SHA)
         self.assertEqual(result['ryan23RoleManifestSha256'], inventory.RYAN23_ROLES_SHA)
+        self.assertEqual(result['ryan45RoleManifestSha256'], inventory.RYAN45_ROLES_SHA)
+        self.assertEqual(result['ryanExtraRoleManifestSha256'], inventory.RYAN_EXTRA_ROLES_SHA)
         mac_only = entries['settings:LookInvertY:label']
         self.assertEqual(mac_only['source']['macos'], 'Invert Look Y')
         self.assertIsNone(mac_only['source']['windows'])
@@ -123,6 +133,35 @@ class SourceInventoryUnitTests(unittest.TestCase):
         group['ids'][0], other['ids'][0] = other['ids'][0], group['ids'][0]
         with self.assertRaisesRegex(ValueError, 'punctuation role source mismatch'):
             inventory.bind_ryan23_roles(scenes, wrong_punctuation)
+
+    @unittest.skipUnless((WORK / 'yarn-paired-scenes.json').is_file(), 'pinned Yarn export required')
+    def test_ryan45_roles_require_complete_source_and_correct_instruction_kind(self):
+        scenes = inventory.load_pinned(WORK / 'yarn-paired-scenes.json', inventory.FILES['yarn-paired-scenes.json'])
+        manifest = inventory.load_pinned(ROOT / 'yarn_roles_ryan45.json', inventory.RYAN45_ROLES_SHA)
+        self.assertEqual(len(inventory.bind_ryan45_roles(scenes, manifest)), 197)
+        missing = copy.deepcopy(manifest)
+        missing['groups'][0]['ids'].pop()
+        with self.assertRaisesRegex(ValueError, 'opening source coverage mismatch'):
+            inventory.bind_ryan45_roles(scenes, missing)
+        wrong = copy.deepcopy(manifest)
+        group = next(g for g in wrong['groups'] if g['role'] == 'editor-choice-candidate')
+        group['kind'] = 'line'
+        with self.assertRaisesRegex(ValueError, 'invalid opening role group'):
+            inventory.bind_ryan45_roles(scenes, wrong)
+
+    @unittest.skipUnless((WORK / 'yarn-paired-scenes.json').is_file(), 'pinned Yarn export required')
+    def test_ryan_extra_roles_and_prefix_protection(self):
+        scenes = inventory.load_pinned(WORK / 'yarn-paired-scenes.json', inventory.FILES['yarn-paired-scenes.json'])
+        manifest = inventory.load_pinned(ROOT / 'yarn_roles_ryan_extra.json', inventory.RYAN_EXTRA_ROLES_SHA)
+        roles = inventory.bind_ryan_extra_roles(scenes, manifest)
+        self.assertEqual(len(roles), 122)
+        self.assertEqual(inventory.merge_reviewed_roles((roles,), {}, {'line:f5f5b815': {}}), roles)
+        wrong = dict(roles)
+        wrong['line:f5f5b815'] = 'choice-candidate'
+        with self.assertRaisesRegex(ValueError, 'conflict with protected Yarn bindings'):
+            inventory.merge_reviewed_roles((wrong,), {}, {'line:f5f5b815': {}})
+        with self.assertRaisesRegex(ValueError, 'conflict with protected Yarn bindings'):
+            inventory.merge_reviewed_roles((roles,), {'line:f5f5b815': {}}, {})
 
 
 if __name__ == '__main__':

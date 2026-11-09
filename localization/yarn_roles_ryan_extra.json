@@ -1,0 +1,297 @@
+{
+  "schema": 1,
+  "sourceExportSha256": "52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995",
+  "scope": "Manually read 11 Ryan food and intimate-scene nodes; source roles remain provisional and explicit source speaker prefixes remain protected.",
+  "groups": [
+    {
+      "node": "Ryan_Conrad_SexScene",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:f5f5b815",
+        "line:5660dc8b",
+        "line:c050dbfc",
+        "line:7a01d265"
+      ],
+      "reason": "Ryan and Conrad speak in a separate intimate scene; preserve explicit speaker prefixes and display identity."
+    },
+    {
+      "node": "Ryan_Conrad_SexScene_Cum",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:194c1381",
+        "line:a430a2ff",
+        "line:41b9659f",
+        "line:fbe86c06",
+        "line:6dd86b71",
+        "line:ce4d0fef"
+      ],
+      "reason": "Intimate scene options govern different continuation states; preserve participants, speaker prefixes and stature-related joke."
+    },
+    {
+      "node": "Ryan_Conrad_SexScene_Cum",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:a31d1a18",
+        "line:352d1d6f",
+        "line:3200a588",
+        "line:d78962e8"
+      ],
+      "reason": "Intimate scene options govern different continuation states; preserve participants, speaker prefixes and stature-related joke."
+    },
+    {
+      "node": "Ryan_Conrad_SexScene_Loop",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:3bc52918",
+        "line:aad89688",
+        "line:3ce891ff",
+        "line:5b0360ad",
+        "line:cd3367da",
+        "line:77626e43",
+        "line:e1526934",
+        "line:42c70daa"
+      ],
+      "reason": "Looped dialogue preserves speaker prefixes, participant identity and each separate line."
+    },
+    {
+      "node": "Ryan_SexScene",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:9369755d",
+        "line:f3af3ce8"
+      ],
+      "reason": "Intimate scene concerns consent and comfort; preserve player choices and Yip as a distinct response."
+    },
+    {
+      "node": "Ryan_SexScene",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:0274cacd",
+        "line:9444cdba"
+      ],
+      "reason": "Intimate scene concerns consent and comfort; preserve player choices and Yip as a distinct response."
+    },
+    {
+      "node": "Ryan_SexScene_Cum",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:f5d36d9a",
+        "line:d9b26374",
+        "line:de9fdb93",
+        "line:ad261b84",
+        "line:1777121d",
+        "line:22d271f4",
+        "line:0eb37f1a",
+        "line:9883786d"
+      ],
+      "reason": "Scene choices distinguish delaying and proceeding; preserve consent and separate branches."
+    },
+    {
+      "node": "Ryan_SexScene_Cum",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:4f826403",
+        "line:48afdce4",
+        "line:3b161cf3",
+        "line:8147156a",
+        "line:b4e27683",
+        "line:099ec7fd"
+      ],
+      "reason": "Scene choices distinguish delaying and proceeding; preserve consent and separate branches."
+    },
+    {
+      "node": "Ryan_SexScene_Loop",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:b2d99a43",
+        "line:088893da",
+        "line:9eb894ad"
+      ],
+      "reason": "Looped intimate dialogue and a punctuation-only beat remain separate source units."
+    },
+    {
+      "node": "Ryan_SexScene_Loop",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:3d2df033"
+      ],
+      "reason": "Looped intimate dialogue and a punctuation-only beat remain separate source units."
+    },
+    {
+      "node": "Ryan_egg_dialog",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:e96114a2",
+        "line:7f5113d5",
+        "line:c5001a4c",
+        "line:f0a579a5",
+        "line:66957ed2",
+        "line:dcc4774b",
+        "line:4af4703c"
+      ],
+      "reason": "Food conversation distinguishes surprise about eating the egg, its color and uncertainty about its kind."
+    },
+    {
+      "node": "Ryan_egg_dialog",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:0ce8d3c2",
+        "line:53301d3b"
+      ],
+      "reason": "Food conversation distinguishes surprise about eating the egg, its color and uncertainty about its kind."
+    },
+    {
+      "node": "Ryan_grab_basket",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:9be63f47",
+        "line:66727cce",
+        "line:4a137220",
+        "line:dc237557",
+        "line:e98616be",
+        "line:53d71f27",
+        "line:54faa7c0",
+        "line:c2caa0b7",
+        "line:274367d7",
+        "line:b17360a0",
+        "line:9d126e4e",
+        "line:a8b70da7",
+        "line:12e6043e"
+      ],
+      "reason": "Picnic basket conversation includes dragon-sized portions, separate responses and a Yip callback."
+    },
+    {
+      "node": "Ryan_grab_basket",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:0dd63830",
+        "line:f0427bb9",
+        "line:7fb611c9",
+        "line:c5e71850",
+        "line:0b226939",
+        "line:3e870ad0"
+      ],
+      "reason": "Picnic basket conversation includes dragon-sized portions, separate responses and a Yip callback."
+    },
+    {
+      "node": "Ryan_grapes_dialog",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:d7b49fb8",
+        "line:266f699d",
+        "line:9c3e6004",
+        "line:0a0e6773",
+        "line:3fab049a",
+        "line:85fa0d03",
+        "line:82d7b5e4",
+        "line:f16e75f3",
+        "line:675e7284",
+        "line:dd0f7b1d",
+        "line:e8aa18f4",
+        "line:7e9a1f83",
+        "line:c4cb161a",
+        "line:52fb116d"
+      ],
+      "reason": "Conversation concerns eating grape stems and differences in digestion; preserve each branch and style markup."
+    },
+    {
+      "node": "Ryan_grapes_dialog",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:418498cf",
+        "line:13ca0a74",
+        "line:b05f6eea",
+        "line:a99b03ed",
+        "line:14e7b293",
+        "line:4b3f7c6a"
+      ],
+      "reason": "Conversation concerns eating grape stems and differences in digestion; preserve each branch and style markup."
+    },
+    {
+      "node": "Ryan_ham_dialog",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:b132719c",
+        "line:270276eb",
+        "line:d9272031",
+        "line:637629a8",
+        "line:56d34a41",
+        "line:7ab244af",
+        "line:ec8243d8",
+        "line:7d9ffc48"
+      ],
+      "reason": "Conversation about a bone has separate reactions and a low-volume flirtatious option; retain markup and response branches."
+    },
+    {
+      "node": "Ryan_ham_dialog",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:202fce0c",
+        "line:c0e34d36",
+        "line:4f172746",
+        "line:f5462edf"
+      ],
+      "reason": "Conversation about a bone has separate reactions and a low-volume flirtatious option; retain markup and response branches."
+    },
+    {
+      "node": "Ryan_melon_dialog",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:8f598864",
+        "line:7a471225",
+        "line:ec771552",
+        "line:56261ccb",
+        "line:63837f22",
+        "line:f5b37855",
+        "line:d9d276bb",
+        "line:48cfc92b",
+        "line:3b76093c",
+        "line:171707d2",
+        "line:b482634c"
+      ],
+      "reason": "Watermelon conversation discusses swallowing and physical sensation; preserve distinct questions, responses and punctuation beat."
+    },
+    {
+      "node": "Ryan_melon_dialog",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:812700a5"
+      ],
+      "reason": "Watermelon conversation discusses swallowing and physical sensation; preserve distinct questions, responses and punctuation beat."
+    },
+    {
+      "node": "Ryan_melon_dialog",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:19698f13",
+        "line:c0161bbc",
+        "line:4fe271cc",
+        "line:deffce5c",
+        "line:ad460e4b",
+        "line:22b2643b"
+      ],
+      "reason": "Watermelon conversation discusses swallowing and physical sensation; preserve distinct questions, responses and punctuation beat."
+    }
+  ]
+}

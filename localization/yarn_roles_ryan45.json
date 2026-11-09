@@ -1,0 +1,444 @@
+{
+  "schema": 1,
+  "sourceExportSha256": "52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995",
+  "scope": "Manually read source lines in all 17 Ryan 4 and 5 nodes; roles are preliminary and preserve editor and recovery prompts separately.",
+  "groups": [
+    {
+      "node": "Ryan_4_Cum",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:45507089"
+      ],
+      "reason": "Post-activity dialogue; retain the event condition and meaning."
+    },
+    {
+      "node": "Ryan_4_JerkOff_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:c35b717a",
+        "line:5246ceea"
+      ],
+      "reason": "Pre-activity exchange mentions food; retain willingness and the setting."
+    },
+    {
+      "node": "Ryan_4_Mount_Finish",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:d2ba8ba9"
+      ],
+      "reason": "Post-activity dialogue; retain both the mess and positive response."
+    },
+    {
+      "node": "Ryan_4_Mount_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:4b93b009"
+      ],
+      "reason": "Pre-activity dialogue and food context; preserve response and modality."
+    },
+    {
+      "node": "Ryan_4_intro",
+      "kind": "line",
+      "role": "editor-prompt-candidate",
+      "ids": [
+        "line:dbab7a39"
+      ],
+      "reason": "Includes an editor-conditioned decision prompt plus basket-in-mouth speech; preserve control flow and the distinct player choices."
+    },
+    {
+      "node": "Ryan_4_intro",
+      "kind": "option",
+      "role": "editor-choice-candidate",
+      "ids": [
+        "line:4ab6c5a9",
+        "line:dc86c2de"
+      ],
+      "reason": "Includes an editor-conditioned decision prompt plus basket-in-mouth speech; preserve control flow and the distinct player choices."
+    },
+    {
+      "node": "Ryan_4_intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:156e0b50",
+        "line:835e0c27",
+        "line:20cb68b9",
+        "line:9a9a6120"
+      ],
+      "reason": "Includes an editor-conditioned decision prompt plus basket-in-mouth speech; preserve control flow and the distinct player choices."
+    },
+    {
+      "node": "Ryan_4_intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:390f05be",
+        "line:af3f02c9",
+        "line:b6fb6fce",
+        "line:0caa6657"
+      ],
+      "reason": "Includes an editor-conditioned decision prompt plus basket-in-mouth speech; preserve control flow and the distinct player choices."
+    },
+    {
+      "node": "Ryan_5_Cum",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:828eed25"
+      ],
+      "reason": "Post-activity dialogue; preserve context and response."
+    },
+    {
+      "node": "Ryan_5_JerkOff_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:5f0edcb2"
+      ],
+      "reason": "Pre-activity dialogue; preserve context."
+    },
+    {
+      "node": "Ryan_5_Mount_Finish",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:16420ca7"
+      ],
+      "reason": "Post-activity dialogue; preserve context."
+    },
+    {
+      "node": "Ryan_5_Mount_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:94e04dcf"
+      ],
+      "reason": "Consent to use the mount; preserve context and meaning."
+    },
+    {
+      "node": "Ryan_5_Outro_conrad_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:341175f7",
+        "line:a2217280",
+        "line:8e407c6e",
+        "line:bbe51f87",
+        "line:01b4161e",
+        "line:97841169",
+        "line:0699aef9",
+        "line:90a9a98e",
+        "line:e3106999",
+        "line:cf716777"
+      ],
+      "reason": "Route-specific farewell references the breakup and the player’s relationship with Conrad; preserve branch identity."
+    },
+    {
+      "node": "Ryan_5_Outro_conrad_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:18707b19",
+        "line:2dd518f0",
+        "line:75206eee",
+        "line:59416000"
+      ],
+      "reason": "Route-specific farewell references the breakup and the player’s relationship with Conrad; preserve branch identity."
+    },
+    {
+      "node": "Ryan_5_Outro_ryan_conrad_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:1760e5d5",
+        "line:8150e2a2",
+        "line:ad31ec4c",
+        "line:aa1c54ab",
+        "line:c932c99d",
+        "line:5f02ceea",
+        "line:e553c773",
+        "line:7363c004",
+        "line:d0f6a49a",
+        "line:fc97aa74",
+        "line:fbba1293"
+      ],
+      "reason": "Route-specific farewell refers to introducing Ryan to Conrad; preserve identity and relationship differences."
+    },
+    {
+      "node": "Ryan_5_Outro_ryan_conrad_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:3b01eb3b",
+        "line:3c2c53dc",
+        "line:46c6a3ed",
+        "line:6aa7ad03"
+      ],
+      "reason": "Route-specific farewell refers to introducing Ryan to Conrad; preserve identity and relationship differences."
+    },
+    {
+      "node": "Ryan_5_Outro_ryan_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:770e7473",
+        "line:e613cbe3",
+        "line:95aa0bf4",
+        "line:b9cb051a",
+        "line:2ffb026d",
+        "line:1a5e6184",
+        "line:363f6f6a",
+        "line:a722d0fa",
+        "line:3112d78d"
+      ],
+      "reason": "Route-specific farewell sets up the player’s date with Ryan; preserve choice and chronology."
+    },
+    {
+      "node": "Ryan_5_Outro_ryan_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:7023cc94",
+        "line:039a0c83",
+        "line:8c6e66f3",
+        "line:a00f681d"
+      ],
+      "reason": "Route-specific farewell sets up the player’s date with Ryan; preserve choice and chronology."
+    },
+    {
+      "node": "Ryan_5_Required_conrad_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:3cda84e6",
+        "line:4f6344f1",
+        "line:d9534386",
+        "line:f5324d68",
+        "line:56a729f6",
+        "line:c0972e81",
+        "line:ecf6206f",
+        "line:ebdb9888",
+        "line:807fdc76",
+        "line:ac1ed298",
+        "line:3a2ed5ef",
+        "line:0f8bb606",
+        "line:b5dabf9f"
+      ],
+      "reason": "Ryan discusses Conrad and the player’s relationship; preserve pronouns, route, branch outcomes and character voice."
+    },
+    {
+      "node": "Ryan_5_Required_conrad_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:aaea8391",
+        "line:7deb9fff",
+        "line:63024a1f",
+        "line:7ac62718",
+        "line:164fdb01",
+        "line:99bbb171"
+      ],
+      "reason": "Ryan discusses Conrad and the player’s relationship; preserve pronouns, route, branch outcomes and character voice."
+    },
+    {
+      "node": "Ryan_5_Required_ryan_conrad_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:803c8f0c",
+        "line:6298f08b",
+        "line:f4a8f7fc",
+        "line:7b5c9d8c",
+        "line:ed6c9afb",
+        "line:573d9362",
+        "line:c10d9415",
+        "line:50102b85",
+        "line:8a79f72c",
+        "line:3028feb5",
+        "line:058d9d5c",
+        "line:29ec93b2"
+      ],
+      "reason": "Ryan discusses Conrad and their date; preserve who acted, relationship details and route-dependent choices."
+    },
+    {
+      "node": "Ryan_5_Required_ryan_conrad_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:1121309c",
+        "line:871137eb",
+        "line:4ef9fe65",
+        "line:d8c9f912",
+        "line:c6202cf2",
+        "line:1c49f05b",
+        "line:a618f9c2",
+        "line:93bd9a2b"
+      ],
+      "reason": "Ryan discusses Conrad and their date; preserve who acted, relationship details and route-dependent choices."
+    },
+    {
+      "node": "Ryan_5_Required_ryan_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:d9652dff",
+        "line:7af04961",
+        "line:5691478f",
+        "line:c0a140f8",
+        "line:51bcff68",
+        "line:22053f7f",
+        "line:b4353808",
+        "line:0e643191",
+        "line:3bc15278",
+        "line:adf1550f",
+        "line:17a05c96",
+        "line:108de471",
+        "line:86bde306",
+        "line:73a37947",
+        "line:c9f270de",
+        "line:5fc277a9",
+        "line:6a671440",
+        "line:d0361dd9",
+        "line:46061aae",
+        "line:d71ba53e",
+        "line:a4a26529",
+        "line:3292625e",
+        "line:88c36bc7",
+        "line:1ef36cb0",
+        "line:2b560f59",
+        "line:910706c0",
+        "line:073701b7",
+        "line:001ab950",
+        "line:67f14802",
+        "line:4b9046ec",
+        "line:dda0419b",
+        "line:e8052272",
+        "line:52542beb",
+        "line:c4642c9c"
+      ],
+      "reason": "Date planning includes salmon self-correction, venue and movie-title choices; preserve exact callbacks, branches and glossary terms."
+    },
+    {
+      "node": "Ryan_5_Required_ryan_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:ecc04e16",
+        "line:81905be1",
+        "line:412ba249",
+        "line:bd66082e",
+        "line:c78cf81f",
+        "line:985436e6",
+        "line:e5937e30",
+        "line:fc571337",
+        "line:962abe27",
+        "line:f1c14f75",
+        "line:7e352505"
+      ],
+      "reason": "Date planning includes salmon self-correction, venue and movie-title choices; preserve exact callbacks, branches and glossary terms."
+    },
+    {
+      "node": "Ryan_5_intro",
+      "kind": "line",
+      "role": "recovery-prompt-candidate",
+      "ids": [
+        "line:61c7f2d6",
+        "line:f7f7f5a1"
+      ],
+      "reason": "Includes a flag-recovery prompt and route-specific introductions; preserve debug choices, context, relationship branches and markup."
+    },
+    {
+      "node": "Ryan_5_intro",
+      "kind": "option",
+      "role": "recovery-choice-candidate",
+      "ids": [
+        "line:5462913f",
+        "line:c2529648",
+        "line:78039fd1"
+      ],
+      "reason": "Includes a flag-recovery prompt and route-specific introductions; preserve debug choices, context, relationship branches and markup."
+    },
+    {
+      "node": "Ryan_5_intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:7f2e2736",
+        "line:82ba64bf",
+        "line:148a63c8",
+        "line:38eb6d26",
+        "line:0d4e0ecf",
+        "line:b71f0756",
+        "line:212f0021",
+        "line:b032bfb1",
+        "line:2602b8c6",
+        "line:55bb78d1",
+        "line:efea7148",
+        "line:79da763f",
+        "line:da4f12a1",
+        "line:f62e1c4f",
+        "line:f103a4a8",
+        "line:45befc02",
+        "line:ffeff59b",
+        "line:69dff2ec",
+        "line:5c7a9105",
+        "line:e62b989c",
+        "line:701b9feb",
+        "line:e106207b",
+        "line:92bfe06c",
+        "line:bedeee82",
+        "line:28eee9f5",
+        "line:8b7b8d6b",
+        "line:1d4b8a1c",
+        "line:a71a8385"
+      ],
+      "reason": "Includes a flag-recovery prompt and route-specific introductions; preserve debug choices, context, relationship branches and markup."
+    },
+    {
+      "node": "Ryan_5_intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:ee3398a6",
+        "line:9b7e09b8",
+        "line:e91e2041",
+        "line:aedb6a51",
+        "line:c38b7fa6",
+        "line:4c7f15d6",
+        "line:601e1b38",
+        "line:6733a3df",
+        "line:d38efb75",
+        "line:ca4a9672",
+        "line:7736270c",
+        "line:048fe71b"
+      ],
+      "reason": "Includes a flag-recovery prompt and route-specific introductions; preserve debug choices, context, relationship branches and markup."
+    },
+    {
+      "node": "Ryan_5_intro_ryan_romanced",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:e2ea4ead",
+        "line:e5c7f64a",
+        "line:141c006f",
+        "line:ae4d09f6"
+      ],
+      "reason": "Continuation of the player-and-Ryan date branch; preserve the separate choices and intended route."
+    },
+    {
+      "node": "Ryan_5_intro_ryan_romanced",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:73f7f13d",
+        "line:822c0718"
+      ],
+      "reason": "Continuation of the player-and-Ryan date branch; preserve the separate choices and intended route."
+    }
+  ]
+}
