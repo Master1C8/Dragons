@@ -231,11 +231,15 @@ class SourceInventoryUnitTests(unittest.TestCase):
             self.assertEqual(len(cold), 7)
             self.assertTrue(all(r['role'] == 'preserve-exactly-yarn-node-reference' and
                                 r['fieldPath'][-2:] == ['data', 'dialogueTitle'] for r in cold))
-        self.assertEqual(sum(r['role'].startswith('preserve-exactly-') for r in component_rows), 21147)
-        self.assertEqual(sum(r['role'] == 'dragon-bark-description-needs-runtime-review'
-                             for r in component_rows), 722)
-        self.assertEqual(sum(r['role'] == 'dragon-descriptor-name-needs-runtime-review'
-                             for r in component_rows), 40)
+        self.assertTrue(all(r['role'].startswith('preserve-exactly-') for r in component_rows))
+        for platform in ('macos', 'windows'):
+            metadata = [r for r in component_rows if platform in r['source']
+                        and r['role'] == 'preserve-exactly-dragon-metadata']
+            barks = [r for r in metadata if r['class'] == 'DragonBarkFeaturePlapResponse']
+            names = [r for r in metadata if r['class'] == 'WalkNWashDragonDescriptor']
+            self.assertEqual((len(metadata), len(barks), len(names)), (381, 361, 20))
+            self.assertTrue(all(r['fieldPath'][-2:] == ['data', 'description'] for r in barks))
+            self.assertTrue(all(r['fieldPath'] == ['name'] for r in names))
         self.assertFalse(any(r['role'] == 'serialized-string-needs-consumer-review' for r in component_rows))
         names = [r for r in result['entries'] if r['role'] == 'preserve-exactly-credit-name']
         self.assertEqual(len(names), 34)

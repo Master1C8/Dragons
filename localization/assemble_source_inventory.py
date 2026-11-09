@@ -397,8 +397,14 @@ def build(work, roles_path):
             location = f'{obj["asset"]}#{obj["objectId"]}'
             for field in obj['fields']:
                 path = json.dumps(field['path'], separators=(',', ':'))
+                # These roles come from the fingerprinted component exports above.
+                # The managed consumer audit treats both as internal metadata.
+                role = field['role']
+                if role in ('dragon-bark-description-needs-runtime-review',
+                            'dragon-descriptor-name-needs-runtime-review'):
+                    role = 'preserve-exactly-dragon-metadata'
                 put(records, {'id': f'game-component:{platform}:{location}:{path}', 'family': 'game-component',
-                              'role': field['role'], 'source': {platform: field['value']},
+                              'role': role, 'source': {platform: field['value']},
                               'location': {platform: location}, 'fieldPath': field['path'],
                               'class': obj['class'], 'namespace': obj['namespace'],
                               'rawObjectSha256': obj['rawSha256']})

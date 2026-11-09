@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v28-20261109.json`
-has SHA-256 `617fa1c7da80ada8128d2a371d83ff8d5424140feea5c4a7ec248d9a57a8f389`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v29-20261109.json`
+has SHA-256 `077047106fd61bdb35fbf43a12210fc18d80208de40bb74567c84bdc1178a119`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,

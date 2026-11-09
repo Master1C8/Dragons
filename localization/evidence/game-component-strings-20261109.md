@@ -90,3 +90,46 @@ python3 localization/inventory_game_components.py macos ORIGINAL_MAC_DATA > game
 python3 localization/inventory_game_components.py windows ORIGINAL_WINDOWS_DATA > game-components-v2-windows.json
 python3 -m unittest discover -s localization -p 'test_inventory_game_components.py' -v
 ```
+
+## v29 metadata preservation
+
+A follow-up scanned all 170 macOS and 172 Windows root managed DLLs.
+The file digests match the earlier caller scan as a multiset. The earlier
+probe reported the assembly names of 13 Yarn dependencies per build
+without their on-disk `Yarn.` prefix.
+
+- `DragonBark.GetDescription` introduces a virtual slot and
+  `DragonBarkAnimationToggleBool` overrides it. There is no method
+  reference to that slot in the scanned IL. The bark classes have no
+  alternative interface mapping or `ToString` override. The machine's
+  `ToString` formats the current bark object without reading its
+  description. The description field is written by its constructor and
+  read by its getter.
+- `WalkNWashDragonDescriptor.GetDescription` copies the component's
+  `name` into the value-type `DragonDescription.name`. The sole reference
+  to that destination is the store. The other fields have ordinary
+  consumers. In particular, `DialogCommands.StartDialogue` sets
+  `$dragonModel`, `$dragonPrefab` and `$dragonFace` from the Animator,
+  GameObject and head Transform names. Yarn's displayed character name
+  comes from the `character` markup's `name` property.
+- No exact `GetDescription` string literal occurs in the scanned DLLs
+  or in the pinned component exports. The game assembly's four
+  `Type.GetMethod` calls belong to generated Yarn action registration
+  and do not bind the getter. The scan does not prove the behavior of
+  native reflection or external mods.
+
+The assembly recipe now keeps the 722 bark descriptions and 40 descriptor
+names byte-for-byte as internal metadata for the verified builds. The pinned
+component exports retain their original discovery roles. Two independent
+v29 assembly invocations produced byte-identical output. Comparison against
+v28 found only the 762 role changes, with every original ID, value, location
+and raw object hash retained.
+
+Local scanner source and reports are under
+`localization/work/component-indirect-20261109.5gu524/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Scanner source | `ebfddaceeb0e054994256c048c4d1b1d576b8b0c13cc5e5442512b95a758e628` |
+| macOS report | `e968822ab39e82740ff4f991dc1532eb4b5cc0b88d4fd328a81f16b07acc2bfe` |
+| Windows report | `e9e022948f2b16c72809f8f308329cf085343f2501674a596265ce280b6060fb` |
