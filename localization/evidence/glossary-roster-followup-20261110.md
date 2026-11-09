@@ -95,8 +95,10 @@ decisions when reviewing caller text and player responses.
 
 | ID | Finding | Proposed Russian entry change |
 | --- | --- | --- |
-| `dnw-franchise-representative` | The current meaning describes a communication where the source describes the caller role. | Term «Голос франшизы». Meaning «Голос за кадром в звонках от сети Drag'N Wash. Кто звонит и один ли это человек, неизвестно. Пол и местоимения не установлены. Использовать нейтральные формулировки.» |
+| `dnw-franchise-representative` | The current meaning describes a communication where the source describes the caller role. | Term «Голос франшизы». Meaning «Голос за кадром в звонках от сети Drag'N Wash. Личность, число звонящих, пол и местоимения не установлены. Использовать нейтральные формулировки.» |
 | `dnw-franchise-223` | «Франшиза Drag'n Wash № 223» assigns the number to the franchise. The English and Russian definitions both identify the player's location. | Term «Филиал № 223 сети Drag'N Wash». Keep the existing definition and the unnumbered `dnw-dragn-wash` brand entry. |
+| `dnw-kobold` | The source defines a species. The Russian definition describes an individual of that species. | Keep «кобольд». Meaning «Вид, к которому принадлежит персонаж игрока.» |
+| `dnw-dragon` | The source defines a species. The Russian definition describes an individual of that species. | Keep «дракон». Meaning «Вид, к которому относятся клиенты мойки.» |
 
 Keep «фамильный гребень» for `dnw-family-crest`: the paired lines describe
 a crest worn on the head and representing a family. For example,
@@ -120,10 +122,41 @@ The self-reference `line:0e1fd4b0` and the echoed choice
 `line:255362b9` uses his ordinary name. The nickname decision is
 resolved. Review the complete Russian group after glossary readiness.
 
-The proposals are recorded in Dragons. Integration remains pending in
+## Bound Russian correction draft
+
+The [correction plan](glossary-ru-correction-20261110.json) records five
+field changes across the four entries above. It pins the English source,
+the current Russian map and the candidate map, and includes the exact
+before and after values. The candidate retains all 27 IDs in source
+order. All 27 original English entry receipts and 23 unchanged Russian
+entry digests matched. A mechanical application in memory left the
+other 29 locale maps identical. It rejected a changed Russian base
+and a second application to the already patched map.
+
+The coordinator compared all 27 English terms and definitions against
+their Russian counterparts, then read the revised Russian fields with
+the affected terms and usage rules. The bounded naturalness and
+consistency recheck covered the player, Alexander, Conrad, Ryan, the
+franchise caller, brand and branch, kobold, dragon, drake, washer, wash,
+Yip, mount, special endings, family crest, Yip-Man and Dragons of the
+Galaxy entries. It retains the neutral caller and player guidance,
+keeps the brand spelling consistent, and distinguishes species from
+the individual characters and the service. In the caller definition
+«число звонящих» leaves the possible species and number open.
+These are coordinator checks on the correction draft.
+
+The compact candidate Russian map SHA-256 is
+`e3165b854d1d9fe4a65968c3635d812994b2977a450ad0d1de8660a9c0d1e95a`.
+The plan SHA-256 is
+`cae7faca7bae621f25a62d2ba7dde6b61eadf747e39c5b18ed4613006cb7791b`.
+The full candidate was generated locally at
+`localization/work/ru-glossary-repair-20261110.4n94HG/glossary-ru-candidate-reviewed.json`.
+
+Integration remains pending in
 the canonical SiteForMods checkout, which still contains unrelated
 untracked work under
 `data/games/the-forest-of-love/glossary-review/finley-repair-20261027/`.
 The canonical English and Russian glossary files and their historical
-review receipts were left intact. Both glossary layers remain
+review receipts remain intact. The unresolved generic speaker treatment
+and the final canonical review still leave both layers at
 `needs-review`.
