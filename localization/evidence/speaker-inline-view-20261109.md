@@ -104,3 +104,48 @@ The current mapping values are synthetic. Desktop execution invokes the
 injected bridge directly. Unity presenter execution, typewriter timing,
 visual acceptance, Alexander's special case and the player builder remain
 open.
+
+## macOS Unity execution in the background
+
+The isolated profile `B8F1` loaded a two-line synthetic Cyrillic fixture
+through the signed app builder. The fixture keeps the exact English speaker
+prefixes, and its asset SHA-256 is
+`f2833c739fe394a515eb6f0db51e294950704139b4944fe5d96e781bdfc7189e`.
+Two earlier fixture variants were rejected before app output at the markup
+and visible-digit guards. The accepted fixture contains plain synthetic text.
+
+The fresh app used the previously pinned test entry bridge, which selects
+the isolated slot and starts `Ryan_Conrad_SexScene`. The test-only
+`tools/speaker-inline-unity-probe` modifies the pinned macOS presenter DLL
+to clear the separate name reference and enable inline mode in `Awake`.
+It adds a Unity log for the value returned by the existing inline bridge.
+The instrumented DLL SHA-256 is
+`0da48d759503988e86f0992d66daf02f1f445ceeab262e779fe56d540ddee87e`.
+The tracked instrumenter reproduced those exact bytes and rejected the
+Windows DLL at the input fingerprint guard before writing output.
+
+The copy used `LSBackgroundOnly` and the normal isolated app wrapper with
+`-batchmode -nographics`. Unity 6000.3.14f1 initialized a null graphics device.
+The game ran the forced node and logged `VN-INLINE-UNITY-VIEW` followed by
+`Жж: ЖЪЬ Жюя`. This proves the real line presenter reached the injected
+branch and the companion produced the expected synthetic value in Unity.
+All 32 samples found the test PID off the foreground with no on-screen
+window. The pre-existing Windows process remained running.
+
+After this marker, the observer sent SIGTERM to the verified macOS test
+PID. `DialogCommands.OnDialogueComplete` threw a `NullReferenceException`
+while `DialogueRunner.OnDestroy` canceled the forced node. The wrapper
+returned status zero, removed the matching temporary Steam file and
+verified the signature. The four checked original profile roots matched
+their prelaunch state. The shutdown exception leaves normal completion
+unverified even though the earlier return value was observed.
+
+Local evidence is in
+`localization/work/speaker-unity-background-20261109.X5dcpl/`.
+`unity.log` SHA-256 is
+`8320676a200920cc0d70fd4508adfc22860c3ed4d0047320266da2e409f99fd8`;
+`result.json` SHA-256 is
+`68afc08e235c7555a4d807c396d8bd49623cf42c9bea6f7a6b5ba63f1af9c66e`.
+This run did not produce a frame. Visible glyphs, typewriter timing,
+advancing past the first line, Windows Unity execution and normal gameplay
+remain open.
