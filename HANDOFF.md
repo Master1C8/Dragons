@@ -182,6 +182,13 @@ of the 1,329 game components that contain protected strings. It passed
 on the signed macOS control and on the Windows v42 ZIP payload. A
 one-byte menu-intent change was rejected at the expected PathID.
 
+The [v42 locale workload audit](localization/evidence/locale-workload-v42-20261110.md)
+reconciles both stock builds with the complete package input scopes.
+The union contains 1,947 inputs, including 1,917 shared IDs.
+The tracked drafts supply 15 IDs per build, with two still using
+the superseded Russian numbered-branch term. No draft line is
+counted as accepted localization.
+
 The v41 inventory preserves seven runtime-populated UI templates and 152 profiler labels. The known non-Yarn coverage gate requires 58 serialized UI and 37 setting fields on macOS, and 82 UI and 31 setting fields on Windows. Both require the managed new-slot and missing-line inputs. The source scope covers the nine audited UI assets and pinned settings and Managed inventories. Final wording, additional runtime text discovery and rendered checks remain open. See [the non-Yarn scope and preservation bindings](localization/evidence/non-yarn-translation-scope-20261110.md).
 
 The extended text route audit covers the selected TMP methods, IMGUI and UI Toolkit paths on both builds. It found no additional stock player text input through those paths. The Unity table database has its own missing-translation template, preserved through the macOS global settings and Managed checks. The stock binding uses Yarn and the only serialized Unity string event is disabled with an empty key. See [the extended route evidence](localization/evidence/extended-text-routes-20261110.md).
