@@ -43,3 +43,41 @@ receipts describe the v42 inventory roles. Artifact verification for
 those families remains with their respective adapters. This check
 proves the known exact game component bytes and does not expand
 source discovery, editorial or runtime coverage.
+
+## Complete-package guard
+
+The complete macOS builder now checks the signed staging app
+before exclusive publication. The Windows builder checks the
+staged replacement assets before compression and exclusive
+publication. Both report the same preservation receipt as the
+standalone verifier. The partial macOS test builder retains its
+existing behavior. The receipt stored in the macOS app and the
+Windows archive manifest use their existing formats.
+
+Both structural controls passed with the existing synthetic
+inputs. macOS verified 668 objects and 10,973 fields and retained
+the prior signed input receipt. Windows verified 661 objects and
+10,936 fields. The complete Windows ZIP still has the original
+v42 SHA-256 above.
+
+The negative controls changed exactly one serialized intent
+from `Cancel` to `Cancem`. On macOS the injection ran after
+the original staging builder signed the app. On Windows it
+ran after the level adapter's read-back, and the control also
+updated the staged file digest so the archive hash check would
+not be the rejecting boundary. Each builder rejected the
+expected object, `level0#5237` on macOS and `level0#5215`
+on Windows. Neither published an output. The Windows compressor
+was never called, and both staging directories were cleaned.
+
+The local controls and reports are under
+`localization/work/package-component-guard-20261110.hIfXa6/`.
+The stopped macOS synthetic app was removed after strict
+signature verification and retaining its file hashes. All 202
+localization tests passed with the optional paired tools enabled.
+
+| Receipt | SHA-256 |
+| --- | --- |
+| Paired publication controls | `ad2b6dfbbe53d7d5a4b300b1cc3d46207dfb7df964ead6fadc7712b7169ef254` |
+| Windows package report | `d2f23c8ccfa18201f33f9961d0a007d402939cb78b3b5541af7e2898ebe40f1f` |
+| Test suite log | `728cad9d796661d65ccf99aa259bb2f4c2a3115b280ad9185812ffcf51a0312b` |

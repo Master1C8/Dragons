@@ -17,6 +17,7 @@ import speaker_locale as speakers
 import ui_locale as ui
 import ui_preservation
 import verify_managed_assemblies as managed
+import verify_preserved_components as protected
 import yarn_transition_repair as transitions
 
 ASSET_RELATIVE = Path('Contents/Resources/Data/sharedassets1.assets')
@@ -53,8 +54,10 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
           test_profile_code=None, test_caption_layout=False, test_slot_font=False,
           restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None,
           speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None,
-          improve_speaker_contrast=False, package_receipt=None):
+          improve_speaker_contrast=False, package_receipt=None, preservation_inventory=None):
     source, destination = bundle_paths(source, destination)
+    if (package_receipt is None) != (preservation_inventory is None):
+        raise ValueError('complete package receipt and preservation inventory are required together')
     if test_caption_layout and test_profile_code is None:
         raise ValueError('experimental settings layout requires an isolated test profile')
     if test_slot_font and test_profile_code is None:
@@ -71,6 +74,10 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
                                     speaker_runtime=speaker_runtime, speaker_runtime_sha=speaker_runtime_sha,
                                     improve_speaker_contrast=improve_speaker_contrast,
                                     package_receipt=package_receipt)
+        if preservation_inventory is not None:
+            report['componentPreservation'] = protected.verify(
+                'macos', preservation_inventory, staged_app / ASSET_RELATIVE.parent,
+            )
         rename_exclusive(staged_app, destination)
     finally:
         shutil.rmtree(stage)

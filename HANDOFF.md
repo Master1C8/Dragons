@@ -181,6 +181,8 @@ classifies every known source occurrence and compares the exact bytes
 of the 1,329 game components that contain protected strings. It passed
 on the signed macOS control and on the Windows v42 ZIP payload. A
 one-byte menu-intent change was rejected at the expected PathID.
+Both complete package commands now run this check on staging
+before publishing the app or ZIP.
 
 The [v42 locale workload audit](localization/evidence/locale-workload-v42-20261110.md)
 reconciles both stock builds with the complete package input scopes.

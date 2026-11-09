@@ -158,6 +158,33 @@ class BuildSafetyTests(unittest.TestCase):
             self.assertEqual(sorted(p.name for p in root.iterdir()), ['Original.app'])
 
     @unittest.skipUnless(sys.platform == 'darwin', 'macOS exclusive rename required')
+    def test_complete_package_checks_signed_staging_before_publication(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            source, destination = root / 'Original.app', root / 'Localized.app'
+            source.mkdir()
+            inventory = root / 'inventory.json'
+
+            def prepare(_source, _locale, _requested, staged, *args, **kwargs):
+                (staged / module.ASSET_RELATIVE.parent).mkdir(parents=True)
+                return {'locale': 'ru'}
+
+            def fail_verification(platform, supplied_inventory, data):
+                self.assertEqual(platform, 'macos')
+                self.assertEqual(supplied_inventory, inventory)
+                self.assertTrue(data.is_dir())
+                self.assertFalse(destination.exists())
+                raise ValueError('exact game component changed: level0#5215')
+
+            with patch.object(module, '_build_unpublished', side_effect=prepare), \
+                 patch.object(module.protected, 'verify', side_effect=fail_verification):
+                with self.assertRaisesRegex(ValueError, 'exact game component changed: level0#5215'):
+                    module.build(source, root / 'locale.json', 'ru', destination,
+                                 package_receipt={'schema': 1}, preservation_inventory=inventory)
+            self.assertFalse(destination.exists())
+            self.assertEqual(sorted(p.name for p in root.iterdir()), ['Original.app'])
+
+    @unittest.skipUnless(sys.platform == 'darwin', 'macOS exclusive rename required')
     def test_published_result_and_competing_destination(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)

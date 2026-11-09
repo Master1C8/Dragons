@@ -32,7 +32,7 @@ def build(source, inputs, requested, inventory, scope_path, output, *,
             fallback_locale=local / 'missing-line.json', slot_new_locale=local / 'slot-new.json',
             fallback_tool=managed_tool, speaker_locale=local / 'speakers.json',
             speaker_tool=speaker_tool, speaker_runtime=speaker_runtime, speaker_runtime_sha=speaker_runtime_sha,
-            package_receipt=manifest,
+            package_receipt=manifest, preservation_inventory=inventory,
         )
 
 

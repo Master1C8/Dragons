@@ -40,6 +40,7 @@ class MacosPackageTests(unittest.TestCase):
                 self.assertTrue(kwargs['restore_yarn_transitions'])
                 self.assertTrue(kwargs['improve_speaker_contrast'])
                 self.assertEqual(kwargs['package_receipt']['localeInputSha256'], {'dialogue.json': 'verified'})
+                self.assertEqual(kwargs['preservation_inventory'], root / 'inventory.json')
                 return {'output': str(output)}
 
             with patch.object(package_inputs, 'validate', side_effect=validate), \

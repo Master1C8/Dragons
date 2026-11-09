@@ -15,6 +15,7 @@ import managed_fallback
 import package_inputs
 import speaker_contrast
 import speaker_locale
+import verify_preserved_components as protected
 import windows_ui_locale as assets
 
 PLATFORM = 'windows'
@@ -109,13 +110,15 @@ def build(data, inputs, requested, inventory, scope_path, output, *,
             before, after = managed_digests[name]
             (managed / name).write_bytes(raw)
             files[f'Managed/{name}'] = {'sourceSha256': before, 'outputSha256': after}
+        component_preservation = protected.verify(PLATFORM, inventory, payload)
         archive = stage / 'payload.zip'
         archive_payload(archive, payload, manifest)
         with archive.open('rb') as stream:
             digest = file_digest(stream)
         # Keep a competing output intact and publish only the complete verified archive.
         os.link(archive, target)
-    return {'output': str(target), 'sha256': digest, 'manifest': manifest}
+    return {'output': str(target), 'sha256': digest, 'manifest': manifest,
+            'componentPreservation': component_preservation}
 
 
 def main():
