@@ -7,6 +7,7 @@ from pathlib import Path
 
 import dialogue_locale as dl
 import credit_name_preservation as credits
+import managed_source_roles as managed
 
 FILES = {
     'yarn-paired-scenes.json': '52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995',
@@ -40,6 +41,18 @@ CONRAD3_ROLES_SHA = 'cfcfc9ead9be0b1b0d90e5f91862fd09657b9199ce49eba40c3f8a3712d
 CONRAD124_ROLES_SHA = '66a1abafedf495b6e803508500a8cd9ee97bc41565c709296de760b475dc9e17'
 ALEXANDER_LEVEL_ROLES_SHA = 'ce9fa72e0a240e38135d17f6e440f17e9c3260086fe27ea43a511a395aa0e3ab'
 REMAINING_YARN_ROLES_SHA = 'a563b1027e04af5ed0a6b111cde5eb73a6f11638da6533711fd8389fa526fbb0'
+MANAGED_CONSUMER_SHA = {
+    'macos': {
+        'setter': 'ea9b68355a532b71831596b4a081dcbebe4de91da3f130a735d51447b83cfa52',
+        'reason': '80c3cdd990c097e4c219daa3b852e90ba1bfcbfa00c259ec1ae0c06c1154be44',
+        'objective': '72ec67ad4136691a8fe1e60a32fcfaf03d73f97fdd98d476ccb2fe41bd74fce7',
+    },
+    'windows': {
+        'setter': '23f54a5af3602f141a3773946720ff70d33da345919d24ac74cc7ad81ea6f122',
+        'reason': 'a4da3783605fc928e282dbeb28e9a4335efee9974c9b64d2a2e8305c79bc391a',
+        'objective': 'f5b037d22d5963fc46922b39ba02e0e31c4927642b414d64145f124cdddda0fb',
+    },
+}
 
 
 def load_pinned(path, expected):
@@ -299,6 +312,13 @@ def build(work, roles_path):
                       'location': {'macos': f'{asset}#{object_id}', 'windows': f'{asset}#{object_id}'}})
     for platform in ('macos', 'windows'):
         report = inputs[platform]
+        hashes = MANAGED_CONSUMER_SHA[platform]
+        evidence = Path(roles_path).parent
+        game_consumers = managed.bind_game_consumers(
+            platform, docs[f'managed-strings-v2-{platform}.json'],
+            load_pinned(work / f'text-setter-{platform}-v4.json', hashes['setter']),
+            load_pinned(evidence / f'menu-reasons-{platform}-20261107.json', hashes['reason']),
+            load_pinned(evidence / f'objective-code-{platform}-20261107.json', hashes['objective']))
         if report['platform'] != platform:
             raise ValueError('input action platform mismatch')
         input_records = {row['id']: row for row in [report['jsonLiteral'], *report['references']]}
@@ -313,6 +333,7 @@ def build(work, roles_path):
                 raise ValueError('managed source occurrence count mismatch')
             for row in data['strings']:
                 role = 'needs-classification'
+                consumer = None
                 if assembly == 'Assembly-CSharp' and row['id'] in input_records:
                     expected = input_records[row['id']]
                     if data['assemblySha256'] != report['assemblySha256'] or row['ilOffset'] != expected['offset']:
@@ -322,10 +343,16 @@ def build(work, roles_path):
                         raise ValueError('input action value changed')
                     role = 'preserve-exactly-input-control'
                     matched_inputs.add(row['id'])
+                else:
+                    binding = game_consumers.get(row['id']) if assembly == 'Assembly-CSharp' else None
+                    binding = binding or managed.direct_role(row, assembly)
+                    if binding is not None:
+                        role, consumer = binding
                 put(records, {'id': f'managed:{platform}:{assembly}:{row["id"]}', 'family': 'managed',
                               'role': role, 'assemblySha256': data['assemblySha256'],
                               'method': row['method'], 'ilOffset': row['ilOffset'],
-                              'source': {platform: row['value']}, 'location': {platform: row['id']}})
+                              'source': {platform: row['value']}, 'location': {platform: row['id']},
+                              **({'consumer': consumer} if consumer is not None else {})})
         if matched_inputs != set(input_records):
             raise ValueError('input action source occurrences missing')
     counts = dict(sorted(Counter(x['family'] for x in records.values()).items()))
@@ -341,6 +368,7 @@ def build(work, roles_path):
             'conrad124RoleManifestSha256': CONRAD124_ROLES_SHA,
             'alexanderLevelRoleManifestSha256': ALEXANDER_LEVEL_ROLES_SHA,
             'remainingYarnRoleManifestSha256': REMAINING_YARN_ROLES_SHA,
+            'managedConsumerReportsSha256': MANAGED_CONSUMER_SHA,
             'familyCounts': counts,
             'entries': list(records.values()),
             'limitations': 'Provisional union of pinned discovery exports. Managed occurrences are build-specific and unpaired; roles, runtime visibility, other assemblies/resources, full exact-preservation contract, special-scene decisions and independent review remain incomplete. Texture text is excluded by owner decision.'}

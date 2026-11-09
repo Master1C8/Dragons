@@ -30,8 +30,11 @@ configurations and the complete question node. The v15 inventory classifies
 the remaining 520 Yarn IDs and retains the 16 existing exact-value
 protections. All 1,839 Yarn IDs have provisional roles or protections.
 Runtime visibility, the complete preservation contract, and the other
-resource families remain open. The v15 SHA-256 is
-`9e271efe1e795a2e86a413f732e2c65e0042f5dfd708572b320de59c80e6956d`.
+resource families remain open. The v16 inventory adds consumer-backed roles
+for 919 managed literal occurrences, including the separate slot label,
+progress format and menu transition reason roles. It leaves 1,999 managed
+occurrences without a provisional role. The v16 SHA-256 is
+`f51247f170094f3d9f63e8fe85a3ae6f36b84cdd87fb715af1559538b057a31a`.
 
 Both UI adapters now reject changes to 34 source-bound contributor-name fields in `level2`, while leaving credit descriptions separately translatable. The pinned manifest and both original builds were tested; see `localization/evidence/credit-name-preservation-20261107.md`. This is one bounded preservation safeguard, not a complete classification or a translated corpus.
 

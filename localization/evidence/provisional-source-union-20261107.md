@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v15-20261109.json`
-has SHA-256 `9e271efe1e795a2e86a413f732e2c65e0042f5dfd708572b320de59c80e6956d`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v16-20261109.json`
+has SHA-256 `f51247f170094f3d9f63e8fe85a3ae6f36b84cdd87fb715af1559538b057a31a`.
 Its 5,204 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -113,6 +113,21 @@ either a provisional source function or an existing exact-value protection.
 The protected records still retain their pending source-role designation.
 This closes the unclassified Yarn count and leaves runtime visibility,
 complete preservation and the other source families open.
+
+The v16 recipe assigns consumer-backed roles to 919 previously unclassified
+managed occurrences. For direct calls, an allowlisted consumer must be the
+very next IL instruction after the five-byte `ldstr`. This binds the literal
+to that call's last argument and leaves ambiguous concatenations, assignments
+and later calls unclassified. Separate pinned reports bind the save-slot
+literals and formats, menu transition reasons, and the four objective names
+per build. The combined delta includes 595 exact-preserve roles for keys,
+comparisons, formats, paths, empty defaults and transition reasons. UI
+defaults, diagnostic strings and objective names retain visibility review.
+The source role of `NEW` is distinct from the serialized new-slot label.
+The v16 outputs reproduced byte-for-byte, and comparison with v15 changed
+only the 919 managed records and the associated consumer report hash block.
+There are 1,999 managed occurrences still awaiting classification, with
+runtime visibility and complete preservation separate from this count.
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are

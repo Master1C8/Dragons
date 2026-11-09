@@ -112,12 +112,22 @@ class SourceInventoryUnitTests(unittest.TestCase):
         engine_rows = [r for r in result['entries'] if r['family'] == 'managed' and
                        any(':' + assembly + ':' in r['id'] for assembly in ('Unity.TextMeshPro', 'UnityEngine.UI'))]
         self.assertEqual(len(engine_rows), 1156)
-        self.assertTrue(all(r['role'] == 'needs-classification' for r in engine_rows))
+        self.assertEqual(sum(r['role'] == 'engine-default-text-needs-visibility-review' for r in engine_rows), 34)
         for platform in ('macos', 'windows'):
-            self.assertTrue(any(r['source'].get(platform) == 'Mixed...' and
-                                'TMPro.TMP_Dropdown::.cctor()' in r['method'] for r in engine_rows))
-            self.assertTrue(any(r['source'].get(platform) == 'Enter text...' and
-                                'UnityEngine.UI.DefaultControls::CreateInputField' in r['method'] for r in engine_rows))
+            for value, method in (('Mixed...', 'TMPro.TMP_Dropdown::.cctor()'),
+                                  ('Enter text...', 'UnityEngine.UI.DefaultControls::CreateInputField')):
+                self.assertTrue(any(r['source'].get(platform) == value and method in r['method'] and
+                                    r['role'] == 'engine-default-text-needs-visibility-review'
+                                    for r in engine_rows))
+            game_rows = [r for r in result['entries'] if r['id'].startswith(f'managed:{platform}:Assembly-CSharp:')]
+            for role, count, value in (
+                    ('slot-new-runtime-text-candidate', 3, 'NEW'),
+                    ('preserve-exactly-slot-progress-format', 6, '{0} / 14'),
+                    ('preserve-exactly-menu-transition-reason', 3, 'Delete Save?')):
+                self.assertEqual([r['source'][platform] for r in game_rows if r['role'] == role], [value] * count)
+            self.assertEqual(sum(r['role'] == 'objective-text-needs-visibility-review' for r in game_rows), 4)
+        self.assertEqual(sum(r['role'] == 'needs-classification' for r in result['entries']
+                             if r['family'] == 'managed'), 1999)
         names = [r for r in result['entries'] if r['role'] == 'preserve-exactly-credit-name']
         self.assertEqual(len(names), 34)
         self.assertTrue(all(r['source']['macos'] == r['source']['windows'] for r in names))
@@ -125,6 +135,15 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertFalse(any(r['source']['macos'] == 'GDC Bundle Part 4' for r in names))
         self.assertEqual(result['creditNameManifestSha256'], inventory.credits.MANIFEST_SHA256)
         self.assertEqual(len(entries), sum(result['familyCounts'].values()))
+
+    def test_managed_direct_role_requires_immediate_consumer(self):
+        target = 'System.Int32 UnityEngine.Shader::PropertyToID(System.String)'
+        row = {'ilOffset': 100, 'value': '_Stencil',
+               'followingCalls': [{'offset': 105, 'target': target, 'opcode': 'call'}]}
+        self.assertEqual(inventory.managed.direct_role(row, 'Assembly-CSharp'),
+                         ('preserve-exactly-renderer-key', target))
+        row['followingCalls'][0]['offset'] = 106
+        self.assertIsNone(inventory.managed.direct_role(row, 'Assembly-CSharp'))
 
     @unittest.skipUnless((WORK / 'ui-windows-all.json').is_file(), 'pinned UI export required')
     def test_credit_bindings_reject_changed_source_and_wrong_hierarchy(self):
