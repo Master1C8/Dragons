@@ -63,8 +63,10 @@ Yarn node names from the active level configuration. This static
 boundary does not establish Windows runtime behavior.
 
 The tracked [gameplay companion](../tools/background-input-probe/gameplay-companion)
-now includes the route to the performance socket. It builds against
+includes the route to the performance socket. It builds against
 both original Managed sets. The macOS patcher reproduced the
 instrumented game DLL from `B8G2`. A Windows fingerprinted scratch
 patch also reproduced the previous Windows menu hook artifact. The
 Windows companion has no runtime acceptance from these build checks.
+The [follow-up performance test](background-performance-20261109.md)
+records macOS node completion and Windows slot loading.

@@ -25,6 +25,9 @@ public static class Probe
     private static Camera? playerCamera;
     private static float waitDeadline;
     private static bool introStarted, introCompleted, dialogueCompleted, advanceDown, mountNodeStarted;
+    private static bool mountNodeCompleted, mountDialogueCompleted, finishNodeStarted, finishNodeCompleted, finishDialogueCompleted;
+    private static readonly string[] MountChoices = { "line:0372e0d1" };
+    private static readonly string[] FinishChoices = { "line:82cf49aa", "line:aeae4744", "line:a983ffa3", "line:6a2e4e0d" };
     private static int choiceIndex, optionClickPhase;
     private static int gateWaypoint;
     private static readonly Vector2[] GateWaypoints = { new(4.0f, -6.7f), new(-3.6f, -6.7f) };
@@ -157,7 +160,7 @@ public static class Probe
                     }
                     if (Time.realtimeSinceStartup >= waitDeadline)
                         throw new InvalidOperationException("Ordinary intro input timed out");
-                    AdvanceIntro();
+                    AdvanceDialogue(IntroChoices);
                     return;
                 case 13:
                     var code = DragonStateCode();
@@ -176,11 +179,56 @@ public static class Probe
                     if (mountNodeStarted)
                     {
                         Debug.Log($"VN-BG-PERFORMANCE PlacedMountForUse={Flag("PlacedMountForUse")} node=Conrad_placed_mount_3");
-                        Finish();
+                        choiceIndex = 0;
+                        waitDeadline = Time.realtimeSinceStartup + 65;
                         break;
                     }
                     if (Time.realtimeSinceStartup >= waitDeadline)
                         throw new InvalidOperationException("The mount performance dialogue did not start");
+                    return;
+                case 15:
+                    if (mountNodeCompleted && mountDialogueCompleted)
+                    {
+                        VerifyChoices(MountChoices);
+                        Debug.Log($"VN-BG-MOUNT-DIALOGUE-FINAL choices={choiceIndex}");
+                        waitDeadline = Time.realtimeSinceStartup + 85;
+                        break;
+                    }
+                    if (Time.realtimeSinceStartup >= waitDeadline)
+                        throw new InvalidOperationException("The mount performance dialogue did not complete");
+                    AdvanceDialogue(MountChoices);
+                    return;
+                case 16:
+                    if (finishNodeStarted)
+                    {
+                        choiceIndex = 0;
+                        waitDeadline = Time.realtimeSinceStartup + 65;
+                        break;
+                    }
+                    if (Time.realtimeSinceStartup >= waitDeadline)
+                        throw new InvalidOperationException("The original coroutine did not start the finish node");
+                    return;
+                case 17:
+                    if (finishNodeCompleted && finishDialogueCompleted)
+                    {
+                        VerifyChoices(FinishChoices);
+                        waitDeadline = Time.realtimeSinceStartup + 15;
+                        break;
+                    }
+                    if (Time.realtimeSinceStartup >= waitDeadline)
+                        throw new InvalidOperationException("The finish dialogue did not complete");
+                    AdvanceDialogue(FinishChoices);
+                    return;
+                case 18:
+                    var performanceType = Game.GetType("DragonPerformanceTriggerDragonMount", throwOnError: true)!;
+                    if (performanceType.GetField("doingPerformance", StaticMembers)!.GetValue(null) is false)
+                    {
+                        Debug.Log($"VN-BG-PERFORMANCE-FINAL choices={choiceIndex} inProgress={Flag("DragonOnaholeSexInProgress")} completed={Flag("DragonOnaholeSexCompleted")}");
+                        Finish();
+                        break;
+                    }
+                    if (Time.realtimeSinceStartup >= waitDeadline)
+                        throw new InvalidOperationException("The original performance coroutine did not exit");
                     return;
             }
             stage++;
@@ -212,16 +260,21 @@ public static class Probe
                 Debug.Log($"VN-BG-YARN-START {node}");
                 if (node == "Conrad_Intro_3") introStarted = true;
                 if (node == "Conrad_placed_mount_3") mountNodeStarted = true;
+                if (node == "Conrad_finished_mount_3") finishNodeStarted = true;
             });
             if (type.GetField("onNodeComplete", InstanceMembers)?.GetValue(runner) is UnityEvent<string> complete)
                 complete.AddListener(node => {
                     Debug.Log($"VN-BG-YARN-COMPLETE {node}");
                     if (node == "Conrad_Intro_3") introCompleted = true;
+                    if (node == "Conrad_placed_mount_3") mountNodeCompleted = true;
+                    if (node == "Conrad_finished_mount_3") finishNodeCompleted = true;
                 });
             if (type.GetField("onDialogueComplete", InstanceMembers)?.GetValue(runner) is UnityEvent dialogue)
                 dialogue.AddListener(() => {
                     Debug.Log("VN-BG-YARN-DIALOGUE-COMPLETE");
                     if (introCompleted) dialogueCompleted = true;
+                    if (mountNodeCompleted) mountDialogueCompleted = true;
+                    if (finishNodeCompleted) finishDialogueCompleted = true;
                 });
             listeners++;
         }
@@ -229,7 +282,13 @@ public static class Probe
         Debug.Log($"VN-BG-YARN-LISTENERS {listeners}");
     }
 
-    private static void AdvanceIntro()
+    private static void VerifyChoices(string[] choices)
+    {
+        if (choiceIndex != choices.Length)
+            throw new InvalidOperationException($"Completed a different dialogue branch: {choiceIndex} choices");
+    }
+
+    private static void AdvanceDialogue(string[] choices)
     {
         if (advanceDown)
         {
@@ -256,8 +315,8 @@ public static class Probe
             .Where(view => view.isActiveAndEnabled && view.IsInteractable()).ToArray();
         if (views.Length != 0)
         {
-            if (choiceIndex >= IntroChoices.Length) return;
-            var choice = IntroChoices[choiceIndex];
+            if (choiceIndex >= choices.Length) return;
+            var choice = choices[choiceIndex];
             foreach (var view in views)
             {
                 var option = optionType.GetField("_option", InstanceMembers)?.GetValue(view);
