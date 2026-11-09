@@ -35,7 +35,7 @@ class CombinedVerificationTests(unittest.TestCase):
                     ui = ui_dir / 'sharedassets1.assets.json'
                     ui.write_text(json.dumps({
                         'schema': 1, 'locale': 'ru', 'sourceObjectSha256': spec['assetSha256'],
-                        'lines': {f'sharedassets1.assets#{path_id}': {'source': 'Option Text', 'text': 'ТЕСТ'}},
+                        'lines': {f'sharedassets1.assets#{path_id}': {'source': 'Option Text', 'text': 'Option Text'}},
                     }), encoding='utf-8')
                     if platform == 'macos':
                         app = root / 'Repaired.app'
@@ -87,7 +87,7 @@ class CombinedVerificationTests(unittest.TestCase):
                                                  'text': "Жж Ъъ Ьь <i>'Drag'n'wash franchise 223'...</i>"}}}
                     ui_key = 'sharedassets1.assets#11117' if platform == 'macos' else 'sharedassets1.assets#11105'
                     ui_doc = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': spec['assetSha256'],
-                              'lines': {ui_key: {'source': 'Option Text', 'text': 'ЖЮЯ 501'}}}
+                              'lines': {ui_key: {'source': 'Option Text', 'text': 'Option Text'}}}
                     yarn, ui, candidate = (root / f'{platform}-{x}' for x in ('yarn.json', 'ui.json', 'candidate.assets'))
                     yarn.write_text(json.dumps(yarn_doc, ensure_ascii=False), encoding='utf-8')
                     ui.write_text(json.dumps(ui_doc, ensure_ascii=False), encoding='utf-8')
@@ -103,12 +103,12 @@ class CombinedVerificationTests(unittest.TestCase):
                     report = verifier.verify(platform, source, candidate, 'ru', yarn, ui)
                     self.assertEqual(report['expectedEntries'], {'yarn': 1, 'ui': 1})
                     self.assertEqual(report['candidateAssetSha256'], dl.sha(candidate.read_bytes()))
-                    with self.assertRaisesRegex(ValueError, 'candidate object differs from expected'):
-                        verifier.verify(platform, source, candidate, 'ru', yarn, None)
+                    without_ui = verifier.verify(platform, source, candidate, 'ru', yarn, None)
+                    self.assertEqual(without_ui['expectedEntries'], {'yarn': 1, 'ui': 0})
                     wrong_ui = root / f'{platform}-wrong-ui.json'
                     ui_doc['lines'][ui_key]['text'] = 'ЖЮЯ 502'
                     wrong_ui.write_text(json.dumps(ui_doc, ensure_ascii=False), encoding='utf-8')
-                    with self.assertRaisesRegex(ValueError, 'candidate object differs from expected'):
+                    with self.assertRaisesRegex(ValueError, 'protected UI text must remain exact'):
                         verifier.verify(platform, source, candidate, 'ru', yarn, wrong_ui)
                     wrong_yarn = root / f'{platform}-wrong-yarn.json'
                     yarn_doc['lines'][line]['text'] = "Яя Ъъ Ьь <i>'Drag'n'wash franchise 223'...</i>"
@@ -117,6 +117,15 @@ class CombinedVerificationTests(unittest.TestCase):
                         verifier.verify(platform, source, candidate, 'ru', wrong_yarn, ui)
                     with self.assertRaisesRegex(ValueError, 'Yarn locale does not match requested locale'):
                         verifier.verify(platform, source, candidate, 'uk', yarn, ui)
+                    changed_option = root / f'{platform}-corrupted-option.assets'
+                    env = UnityPy.load(str(candidate))
+                    option = next(o for o in env.objects if o.path_id == int(ui_key.split('#')[1]))
+                    raw_option = option.get_raw_data()
+                    _, end = dl.read_string(raw_option, 88)
+                    option.set_raw_data(raw_option[:88] + dl.write_string('Changed') + raw_option[end:])
+                    changed_option.write_bytes(env.file.save())
+                    with self.assertRaisesRegex(ValueError, 'candidate object differs from expected'):
+                        verifier.verify(platform, source, changed_option, 'ru', yarn, None)
                     corrupted = root / f'{platform}-corrupted.assets'
                     env = UnityPy.load(str(candidate))
                     project = next(o for o in env.objects if o.path_id == spec['project'])

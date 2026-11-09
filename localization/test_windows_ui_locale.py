@@ -96,7 +96,7 @@ class WindowsUIAdapterTests(unittest.TestCase):
         }
         for index, (asset, (key, source)) in enumerate(samples.items()):
             with self.subTest(asset=asset):
-                expected = source if asset == 'sharedassets0.assets' else f'ЖЮЯ {index}'
+                expected = f'ЖЮЯ {index}' if asset == 'level0' else source
                 doc = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': mapping.WINDOWS_ASSETS[asset],
                        'lines': {key: {'source': source, 'text': expected}}}
                 locale = self.root / f'sample-{index}.json'
@@ -117,7 +117,7 @@ class WindowsUIAdapterTests(unittest.TestCase):
         yarn = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': spec['localizationSha256'],
                 'lines': {line: {'source': source[line], 'text': synthetic}}}
         ui = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': spec['assetSha256'],
-              'lines': {'sharedassets1.assets#11105': {'source': 'Option Text', 'text': 'ЖЮЯ 501'}}}
+              'lines': {'sharedassets1.assets#11105': {'source': 'Option Text', 'text': 'Option Text'}}}
         yarn_path, ui_path = self.root / 'yarn.json', self.root / 'shared-ui.json'
         yarn_path.write_text(json.dumps(yarn, ensure_ascii=False), encoding='utf-8')
         ui_path.write_text(json.dumps(ui, ensure_ascii=False), encoding='utf-8')
@@ -141,9 +141,7 @@ class WindowsUIAdapterTests(unittest.TestCase):
         replacement = [yarn['lines'].get(k, {}).get('text', v) for k, v in zip(keys, values)]
         self.assertEqual(after[yarn_id], dl.encode(raw, keys, replacement, extras))
         self.assertEqual(dl.parse(after[yarn_id]), (keys, replacement, extras))
-        ui_raw = before[ui_id]
-        _, end = dl.read_string(ui_raw, 88)
-        self.assertEqual(after[ui_id], ui_raw[:88] + dl.write_string('ЖЮЯ 501') + ui_raw[end:])
+        self.assertEqual(after[ui_id], before[ui_id])
         for identity, raw in before.items():
             if identity not in (yarn_id, ui_id):
                 self.assertEqual(after[identity], raw, identity)

@@ -11,6 +11,9 @@ import ui_preservation
 import managed_source_roles as managed
 from speaker_locale import ALEXANDER
 
+INVENTORY_NAME = 'combined-provisional-v41-20261110.json'
+INVENTORY_SHA = '74113db1932d1da69c93b053bf5fb0a79750e7e9753c58b9fffef42f790cf711'
+
 FILES = {
     'yarn-paired-scenes.json': '52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995',
     'ui-windows-all.json': '598c2adb429385d9abc07c68a2ed7465bf2ae510ae70d5f5e5850c3b2c33efca',
@@ -397,6 +400,8 @@ def build(work, roles_path):
                                 role = 'preserve-exactly-markup-diagnostic'
                         elif role == 'string-representation-needs-visibility-review':
                             role = 'preserve-exactly-diagnostic-representation'
+                        elif role == 'profiler-label':
+                            role = 'preserve-exactly-profiler-label'
                 put(records, {'id': f'managed:{platform}:{assembly}:{row["id"]}', 'family': 'managed',
                               'role': role, 'assemblySha256': data['assemblySha256'],
                               'method': row['method'], 'ilOffset': row['ilOffset'],

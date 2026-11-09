@@ -1,6 +1,6 @@
 # Paired Yarn translation scope
 
-`inventory_yarn_scope.py` binds all 1,839 stable IDs in the v40 shared
+`inventory_yarn_scope.py` binds all 1,839 stable IDs in the v41 shared
 inventory to both installed source tables and original instruction
 positions. It checks the source wording, node, instruction, operand
 attributes and compiled program pins. It then runs the existing
@@ -55,11 +55,11 @@ platform's exact English source value for those IDs.
 ## Coverage gate
 
 Run the report against the two pinned source Data directories and the
-current v40 working inventory:
+current v41 working inventory:
 
 ```sh
 "$PYTHON" localization/inventory_yarn_scope.py \
-  --inventory localization/work/source-inventory-20261107/combined-provisional-v40-20261110.json \
+  --inventory localization/work/source-inventory-20261107/combined-provisional-v41-20261110.json \
   --macos-data "$macos_data" --windows-data "$windows_data" --output "$new_scope_report"
 ```
 
@@ -76,11 +76,13 @@ draft files have 15 entries, 14 changed values and one unchanged
 punctuation entry. The coverage gate rejected each for 1,808 missing
 ordinary IDs. All 191 project tests passed with the paired tools enabled.
 
-The two scope exports reproduced byte-for-byte. Local evidence is
-in `localization/work/yarn-scope-20261110.YfzIDB/`.
+The two v41 scope exports reproduced byte-for-byte. Local evidence is
+in `localization/work/ui-runtime-source-20261110.ZvHn5U/`. The v41
+rebuild differed from the earlier v40 result only in the inventory
+fingerprint.
 The scope SHA-256 is
-`ef9bcd136ec6b9c134c0d72e7e384096cf1170f06581a6ea36e8f0374b50ec3e`.
+`5e14d25cc87714b705680667eab6fad4c60f67f7efa530f37106904cd1400bd6`.
 The structural control receipt SHA-256 is
-`b5f1281879bf7cc7d05311bb518553a1b6d25bd831e4bbeca0ff395d3366d2c1`.
+`218e6e9280f07be018371d1eba6578a3449c61e77dcbc0776fb7a1e3cbe057a8`.
 UI, settings, code-driven text, glossary, scene decisions and runtime
 acceptance remain separate from this Yarn coverage gate.

@@ -16,11 +16,8 @@ import managed_fallback
 import map_yarn_context as context
 import speaker_locale
 import yarn_transition_repair as repair
-from assemble_source_inventory import YARN_PROTECTED_SHA, load_pinned
+from assemble_source_inventory import INVENTORY_SHA, YARN_PROTECTED_SHA, load_pinned
 from speaker_locale import ALEXANDER, PREFIX_MANIFEST
-
-INVENTORY_SHA = '051e05fe6113e44a909547a5036f183c2ed2a88c8f1e9dc4efb6df482f03ce90'
-
 
 def game_entries(entries, platform):
     references = [record for record in entries if record['family'] == 'game-component'

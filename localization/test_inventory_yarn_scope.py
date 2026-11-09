@@ -6,9 +6,10 @@ import unittest
 import compare_yarn_versions as versions
 import inventory_yarn_scope as scope
 import managed_fallback
+from assemble_source_inventory import INVENTORY_NAME
 from speaker_locale import ALEXANDER
 
-INVENTORY = Path(__file__).parent / 'work/source-inventory-20261107/combined-provisional-v40-20261110.json'
+INVENTORY = Path(__file__).parent / 'work/source-inventory-20261107' / INVENTORY_NAME
 DATA = {
     'macos': Path.home() / "Documents/Drag'N Wash.app/Contents/Resources/Data",
     'windows': Path('/Volumes/KINGSTONMAC/CrossOver/Bottles/Steam/drive_c/Dragn.Wash/game/DragNWash_Data'),

@@ -12,6 +12,8 @@ EXACT_ROLES = {
     'dialogue-presenter-template-needs-consumer-review': 'preserve-exactly-dialogue-presenter-template',
     'settings-prefab-template-needs-consumer-review': 'preserve-exactly-settings-prefab-template',
     'cheat-menu-text-needs-visibility-review': 'preserve-exactly-development-menu-text',
+    'slot-progress-runtime-replaced': 'preserve-exactly-slot-progress-template',
+    'dialogue-option-template-runtime-replaced': 'preserve-exactly-dialogue-option-template',
 }
 
 

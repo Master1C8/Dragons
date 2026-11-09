@@ -29,6 +29,9 @@ class UiPreservationTests(unittest.TestCase):
             ('level1', 'dialogue-presenter-template-needs-consumer-review', 'Character Name'),
             ('sharedassets0.assets', 'settings-prefab-template-needs-consumer-review', 'LABEL'),
             ('level2', 'cheat-menu-text-needs-visibility-review', 'DELETE SAVE'),
+            ('level0', 'slot-progress-runtime-replaced', '0/14'),
+            ('level0', 'slot-progress-runtime-replaced', 'New'),
+            ('sharedassets1.assets', 'dialogue-option-template-runtime-replaced', 'Option Text'),
         )
         report = json.loads(ui_preservation.ROLES.read_bytes())
         with tempfile.TemporaryDirectory() as folder:
