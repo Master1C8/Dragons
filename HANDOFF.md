@@ -38,6 +38,11 @@ mount nodes through stock input in the background. Its Null graphics
 device logged repeated fluid emitter exceptions, so visual acceptance
 remains open. The later combined branch and the five repaired
 transfers still need ordinary runtime evidence.
+Two further Windows background attempts completed the intro and
+opened the gate while trying the other activity first. The first
+hand approach was occluded and the second timed out before
+reaching its selected flank. A new isolated probe uses the stock
+crouch binding and checks both original groups of activity hitboxes.
 See [the gameplay receipts](localization/evidence/background-gameplay-20261109.md)
 and [the performance and Windows test](localization/evidence/background-performance-20261109.md).
 

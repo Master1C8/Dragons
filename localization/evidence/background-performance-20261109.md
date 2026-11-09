@@ -145,3 +145,60 @@ Launch in a private bottle with the test-only argument
 tracked source reproduced both game hook DLLs and the Windows profile
 settings byte-for-byte. Both wrong-build patcher cases rejected the
 input fingerprint before output. All 180 localization tests passed.
+
+## Windows combined-branch approach
+
+A separate guarded repair copy loaded the same fixture, completed
+the stock intro and opened the gate. After Conrad reached
+`WaitingOnBeingWashed`, the probe used the original movement, look
+and hand actions to approach the other activity before placing the
+mount at the performance socket. The probe read the trigger center,
+hand position and activity progress. It set no gameplay flags or
+scene state.
+
+The hand action fired, but the ray intersected `WalkableDragon`
+about 0.60 world units from its origin. With the camera about 1.27
+horizontal units from the trigger center, the settled hand was
+about 0.81 world units from the trigger center. The original
+activity response and progress remained zero, and the probe stopped
+at its hand-contact deadline. The runner never reached the combined
+finish or its outro in this attempt.
+
+The observer verified that the copy stayed hidden in all 727
+desktop samples and exited. The checked installed game files and
+original save directory matched their prelaunch snapshots. Local
+logs and probe source are under
+`localization/work/background-combined-20261109.yMvcOH/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Unity log | `68cd4060781bac142540e4048c3c805e8dfbf11c32e48bfcbb5ce1f757dc5bc8` |
+| Observer receipt | `50f1f78875ac222b11c03ea47fd453af8c4bb118294093561b0416b37f08f82b` |
+
+A second copy sampled eight approach points around the primary
+trigger after the same gate opening. Every sampled direct ray
+intersected `WalkableDragon`. The smallest predicted separation
+from the trigger center was 0.500 world units. The stock movement
+probe timed out before arriving at its chosen point, so this run
+did not measure settled hand distance at that point. All 729
+desktop samples showed no foreground ownership or on-screen
+window. The copy exited and the checked original files and
+profile matched their snapshots.
+
+Original Windows IL also shows `WalkNWashDragonBoner.OnEnable`
+registers the same hit callback with both its primary trigger and
+`WalkNWashPenetratorPhysicsApprox`. The latter forwards events
+from layer-six hitboxes in its 16 generated collider prefabs.
+`PlapperHand.UpdatePlapper` only issues the overlap query after
+the hand approaches the raycast target and the ray has a valid
+surface collider. The next probe uses the original crouch binding
+and tests geometry against both groups of hitboxes.
+
+Local source and receipts for the second approach are under
+`localization/work/background-contact-20261109.JXkGpp/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Unity log | `316a70e4d3a40e986cf6c0a4148836c28597ab20a06a3d1ad4bd938761319997` |
+| Observer receipt | `f952c81a621666843f4182fae842a4295eaa96518342f2af45896d8bbfa764de` |
+| Original Windows interaction IL | `6fec704c1d973b8f006ac19ad0628f9dc49517da5be7687eb9a7279e1d7b7290` |
