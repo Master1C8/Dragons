@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v29-20261109.json`
-has SHA-256 `077047106fd61bdb35fbf43a12210fc18d80208de40bb74567c84bdc1178a119`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v31-20261109.json`
+has SHA-256 `b8a635bab364087f078a6ff4b4a76a0441f9824cbe46c118ecfc373f692edb43`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -249,6 +249,14 @@ exact sink. Each export reproduced byte-for-byte. Comparison with its
 immediate predecessor verified that only the stated roles changed.
 See [the debugger binding](legacy-ui-inventory-20261107.md#runtime-debug-entry-points-in-the-two-pinned-builds)
 and [the log sink audit](managed-game-consumers-20261109.md#v28-player-log-sinks).
+
+The v29 export preserves 762 internal dragon component fields. The v30
+export preserves 28 engine factory template occurrences. The v31 export
+preserves six managed bark descriptions and 24 transition reasons. Each
+export reproduced byte-for-byte and differs from its predecessor only in
+the stated roles. See [the component audit](game-component-strings-20261109.md#v29-metadata-preservation),
+[the factory audit](managed-text-sinks-20261107.md#v30-factory-template-follow-up)
+and [the bark constructor audit](game-component-strings-20261109.md#v31-managed-bark-arguments).
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values still require visibility review, only five managed assemblies are

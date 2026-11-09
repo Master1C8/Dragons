@@ -51,3 +51,32 @@ fresh work-local intermediate/output paths, then run its DLL with
 `macos|windows ORIGINAL_DATA/Managed`. Run `inventory_tmp_dropdowns.py`
 with `macos|windows ORIGINAL_DATA`. Tests are in
 `test_tmp_dropdown_inventory.py`. Neither script modifies the original game.
+
+## v30 factory template follow-up
+
+The follow-up matched the complete filename and hash inventory of all 170
+macOS and 172 Windows root managed assemblies from the component audit.
+It checked all method operands, including function pointers, for references
+to the public factory methods that assign the candidate labels. None referred
+to the selected `CreateButton`, `CreateText`, `CreateToggle`,
+`CreateInputField` or `CreateDropdown` methods on either factory type.
+No exact method-name or factory-type string literal matched. The earlier
+58 internal calls target other methods on those factory types, including
+the helpers used by the selected factory bodies.
+
+The shared recipe now retains 28 literal assignments inside these factory
+bodies as exact-preserve engine templates for the inspected builds.
+Serialized copies and text produced by a live control remain separate
+source paths. The six `Nothing`, `Everything` and `Mixed...` occurrences
+remain under review. The stock dropdown has real code paths that display
+them in multi-select mode. The managed scan cannot rule out external code
+or arbitrary runtime reflection.
+
+Scanner source and reports are in
+`localization/work/default-control-callers-20261109.9eeOHw/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Scanner source | `70b95a57b3594f74d730475f29decbcfbc619cbc34bf1e6821e0a210fb2dd5cb` |
+| macOS report | `be0d0d1451074ea5fdafd64bd8f4577516c669c46d6fa905e0533071bed4dda6` |
+| Windows report | `d8d94506338ef6ca3b6b79c38e182462511060df4df70b40cceccffcc0627a2e` |

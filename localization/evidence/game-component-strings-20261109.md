@@ -133,3 +133,27 @@ Local scanner source and reports are under
 | Scanner source | `ebfddaceeb0e054994256c048c4d1b1d576b8b0c13cc5e5442512b95a758e628` |
 | macOS report | `e968822ab39e82740ff4f991dc1532eb4b5cc0b88d4fd328a81f16b07acc2bfe` |
 | Windows report | `e9e022948f2b16c72809f8f308329cf085343f2501674a596265ce280b6060fb` |
+
+## v31 managed bark arguments
+
+The managed constructor audit matched the complete assembly name and hash
+inventory on both builds. `DragonBarkSexAct` and `DragonBarkOviposition`
+forward their description arguments to `DragonBarkAnimationToggleBool`.
+Its getter and the base getter that returns `Idle` use the virtual slot
+examined above. The animation keys and Yarn destinations travel through
+separate arguments.
+
+`DragonBarkNotifyTransition` forwards its reason string to
+`DragonBarkResponseTransition`. The sole IL reference to the latter's
+string field is the constructor store, with no matching formatter. The
+recipe preserves six managed bark descriptions and 24 transition reasons.
+It retains their original method, offset, literal and constructor binding.
+As with v29, arbitrary runtime reflection is outside the evidence.
+
+Local reports are under `localization/work/bark-reason-consumers-20261109.2w9Bmk/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Scanner source | `bf41bd7269a9f163c916013c0ecf89740c211318742b417540665e66d815ef82` |
+| macOS report | `a2dd7aa2778862fcbfe1b94d2713b5249f55507cc18634bc19d44ebef3ad407f` |
+| Windows report | `7464dbdbc8c5ef06354b1dd78fdc45f568ae33c2fed6d6dde5d6fd97bbfb07ba` |

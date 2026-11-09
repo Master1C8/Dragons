@@ -112,13 +112,15 @@ class SourceInventoryUnitTests(unittest.TestCase):
         engine_rows = [r for r in result['entries'] if r['family'] == 'managed' and
                        any(':' + assembly + ':' in r['id'] for assembly in ('Unity.TextMeshPro', 'UnityEngine.UI'))]
         self.assertEqual(len(engine_rows), 1156)
-        self.assertEqual(sum(r['role'] == 'engine-default-text-needs-visibility-review' for r in engine_rows), 34)
+        self.assertEqual(sum(r['role'] == 'engine-default-text-needs-visibility-review' for r in engine_rows), 6)
+        self.assertEqual(sum(r['role'] == 'preserve-exactly-engine-factory-template' for r in engine_rows), 28)
         for platform in ('macos', 'windows'):
-            for value, method in (('Mixed...', 'TMPro.TMP_Dropdown::.cctor()'),
-                                  ('Enter text...', 'UnityEngine.UI.DefaultControls::CreateInputField')):
+            for value, method, role in (
+                    ('Mixed...', 'TMPro.TMP_Dropdown::.cctor()', 'engine-default-text-needs-visibility-review'),
+                    ('Enter text...', 'UnityEngine.UI.DefaultControls::CreateInputField',
+                     'preserve-exactly-engine-factory-template')):
                 self.assertTrue(any(r['source'].get(platform) == value and method in r['method'] and
-                                    r['role'] == 'engine-default-text-needs-visibility-review'
-                                    for r in engine_rows))
+                                    r['role'] == role for r in engine_rows))
             game_rows = [r for r in result['entries'] if r['id'].startswith(f'managed:{platform}:Assembly-CSharp:')]
             for role, count, value in (
                     ('slot-new-runtime-text-candidate', 3, 'NEW'),
@@ -161,15 +163,15 @@ class SourceInventoryUnitTests(unittest.TestCase):
             self.assertEqual([r['role'] for r in make_face],
                              ['preserve-exactly-command', 'preserve-exactly-reflection-member'])
             egg = [r for r in game_rows if r['source'][platform] == 'Player put egg']
-            self.assertEqual({r['role'] for r in egg}, {'dragon-bark-description-needs-runtime-review',
-                                                        'dragon-bark-transition-reason-needs-runtime-review'})
+            self.assertEqual({r['role'] for r in egg}, {'preserve-exactly-dragon-metadata',
+                                                        'preserve-exactly-dragon-transition-reason'})
             for value, method, role in (
                 ('hand.l', 'System.Void WalkNWashStepHandler::Start()', 'preserve-exactly-rig-key'),
                 ('_BaseColorMap_ST', 'System.Void WalkNWashParticleSpline::LateUpdate()',
                  'preserve-exactly-renderer-key'),
                 ('', 'System.Boolean LevelFlow::GetRandomNagDialog(System.Int32,System.String&)',
                  'preserve-exactly-empty-value'),
-                ('Idle', 'System.String DragonBark::GetDescription()', 'dragon-bark-description-needs-runtime-review'),
+                ('Idle', 'System.String DragonBark::GetDescription()', 'preserve-exactly-dragon-metadata'),
             ):
                 rows = [r for r in game_rows if r['source'][platform] == value and r['method'] == method]
                 self.assertEqual([r['role'] for r in rows], [role], (platform, method, value))
@@ -181,7 +183,7 @@ class SourceInventoryUnitTests(unittest.TestCase):
             toggle = [r for r in ui_code if 'DefaultControls::CreateToggle(' in r['method']
                       and r['source'][platform] == 'Toggle']
             self.assertEqual([(r['ilOffset'], r['role']) for r in toggle], [
-                (0, 'preserve-exactly-object-name'), (210, 'engine-default-text-needs-visibility-review'),
+                (0, 'preserve-exactly-object-name'), (210, 'preserve-exactly-engine-factory-template'),
             ])
             stencil = [r for r in ui_code if r['method'] == inventory.managed.UI_STENCIL_ADD
                        and r['source'][platform] == '_Stencil']

@@ -191,11 +191,11 @@ TYPED_ARGUMENT_ROLES = {
     ('newobj', MENU_TRANSITION, 2): 'preserve-exactly-menu-key',
     ('newobj', MENU_TRANSITION, 1): 'preserve-exactly-menu-transition-reason',
     ('newobj', DECAL_SETTINGS, 2): 'preserve-exactly-renderer-key',
-    ('newobj', BARK_NOTIFY, 0): 'dragon-bark-transition-reason-needs-runtime-review',
-    ('newobj', BARK_TRANSITION, 0): 'dragon-bark-transition-reason-needs-runtime-review',
-    ('newobj', BARK_SEX_ACT, 0): 'dragon-bark-description-needs-runtime-review',
+    ('newobj', BARK_NOTIFY, 0): 'preserve-exactly-dragon-transition-reason',
+    ('newobj', BARK_TRANSITION, 0): 'preserve-exactly-dragon-transition-reason',
+    ('newobj', BARK_SEX_ACT, 0): 'preserve-exactly-dragon-metadata',
     ('newobj', BARK_SEX_ACT, 2): 'preserve-exactly-animation-key',
-    ('newobj', BARK_OVIPOSITION, 1): 'dragon-bark-description-needs-runtime-review',
+    ('newobj', BARK_OVIPOSITION, 1): 'preserve-exactly-dragon-metadata',
     **{(opcode, signature, 1): role for signature, role in FIRST_ARGUMENT_ROLES.items()
        for opcode in ('call', 'callvirt')},
 }
@@ -329,7 +329,7 @@ GAME_METHOD_LITERALS = {
     'System.Void WalkNWash.Flags.FlagEntry::.ctor(System.String,System.Boolean)':
         ({''}, 'preserve-exactly-empty-value', 'System.String WalkNWash.Flags.FlagEntry::stringValue'),
     'System.String DragonBark::GetDescription()':
-        ({'Idle'}, 'dragon-bark-description-needs-runtime-review', 'System.String DragonBark::GetDescription()'),
+        ({'Idle'}, 'preserve-exactly-dragon-metadata', 'System.String DragonBark::GetDescription()'),
     'System.Void InteractableToolEquip::OnFlagChanged(System.String,System.Boolean)':
         ({'>', ' '}, 'diagnostic-text-needs-visibility-review',
          'System.Void UnityEngine.Debug::Log(System.Object,UnityEngine.Object)'),
@@ -829,6 +829,10 @@ def direct_role(row, assembly):
     if target in TEXT_SETTERS:
         role = ('engine-default-text-needs-visibility-review'
                 if assembly in ('Unity.TextMeshPro', 'UnityEngine.UI') else 'runtime-text-needs-visibility-review')
+        if role == 'engine-default-text-needs-visibility-review' and row['method'].startswith((
+                'UnityEngine.GameObject UnityEngine.UI.DefaultControls::Create',
+                'UnityEngine.GameObject TMPro.TMP_DefaultControls::Create')):
+            role = 'preserve-exactly-engine-factory-template'
         if not row['value']:
             role = 'preserve-exactly-empty-text'
     return (role, target) if role is not None else None
