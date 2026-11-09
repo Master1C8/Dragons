@@ -178,7 +178,7 @@ binds the complete known locale input scopes to one archive. It combines
 all nine source-pinned assets, the transition repair, speaker contrast,
 the new-slot and missing-line managed patches, and the speaker companion.
 It verifies all archived members before publication to a fresh local
-path. Final Russian content, installation and restoration remain open.
+path. Final Russian content and delivery verification remain open.
 The 2026-11-10 synthetic control produced two byte-identical archives,
 SHA-256 `519eeb352e5fe41f298867e265204d9fd204fa2d24c558e1a54cb61b8edb0dcf`,
 in `localization/work/windows-package-20261110.xt0Ufy/`. All 12 archived
@@ -189,6 +189,13 @@ Missing Yarn ID, late companion fingerprint failure and an existing
 output each prevented publication. The late failure occurred after
 asset staging and left no staging directory. The control ZIP contains
 synthetic and English passthrough text. All 195 project tests passed.
+
+The [Windows package round trip](localization/evidence/windows-package-roundtrip-20261110.md)
+applied exactly the archive's 12 files to a separate copy. It recovered
+all 287 original file hashes after normal removal, a simulated failure
+after four replacements and a background CrossOver startup with the
+actual archive. The installed source and checked player profile matched
+their baselines. Final rendering and native Windows remain open.
 
 ## Scope and process binding
 
