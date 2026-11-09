@@ -291,9 +291,14 @@ selected once flag, preserved the previous file in a backup, and
 left an empty adjacent slot independent. The [Conrad exit and reload
 control](localization/evidence/background-performance-20261109.md#stock-exit-save-and-reload-2026-11-10)
 exercises Unity gameplay persistence for the Conrad route on both
-builds, including byte-identical backup and stock menu reload. Reload
-of Alexander's once-only question flags in Unity, native Windows
-and final Russian build verification remain open.
+builds, including byte-identical backup and stock menu reload. The
+[paired Unity question control](localization/evidence/alexander-question-analysis-20261107.md#unity-slot-reload-and-question-menu-2026-11-10)
+loads two slots through the original menu and confirms that one
+persisted Alexander question flag removes exactly its own choice
+from the interactable options. The test enters the dialogue directly
+after normal slot load. Ordinary entry, the other six individual
+flag variants in Unity, native Windows and the final Russian build
+remain open.
 
 ## Inputs and evidence
 

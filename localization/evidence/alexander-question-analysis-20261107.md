@@ -160,3 +160,50 @@ hashes for all seven paths.
 | Windows scratch assembly | `db2a2e98b500c92a36947ffb43b869224ca1e11b2bc15a593bb43135a9821f20` |
 | macOS disk trace | `5b053e93ed62070c91e40d2311bbe9799bba0d9666d8bef109533dda5c386d6f` |
 | Windows disk trace | `9e5ff6822f335fd4813fc8f9beccad2ef291cfa0c1302bc3dbe42a66cf22c312` |
+
+## Unity slot reload and question menu, 2026-11-10
+
+Two synthetic level-8 slots per build start from the verified
+Conrad exit save. The added records use the original save manager's
+layout from the desktop disk control above. Slot 2 stores
+`Yarn.Internal.Once.line:fc7aaaa0` as true and slot 3 stores it as
+false. The two JSON records differ only in the two serialized values
+of that boolean. Both slots keep `has_asked_question` false.
+
+Four fresh player processes opened the original Load Game menu
+and selected the corresponding slot through a virtual mouse.
+After the game loaded `Alexander_3_9` and the dragon reached
+`WaitingToBeLetIn`, the probe invoked
+`DialogueRunner.StartDialogue("Alexander_questions")` directly.
+The original Yarn runner evaluated the compiled options with its
+loaded variable store. The probe observed the original presenter's
+interactable `OptionItem` IDs in sibling order.
+
+With the flag set, the original presenter offered six questions,
+starting at `line:daa040eb`. With it cleared, the presenter
+offered all seven, starting at `line:fc7aaaa0`. The other six IDs
+and their order were identical across both slots and builds. The
+exit option was unavailable in both slots. The six synthetic input
+files and the six preexisting files in the earlier exit profiles
+retained their hashes. The observers also verified the checked
+original profile baselines. All 222 desktop samples showed zero
+on-screen windows and zero foreground ownership.
+
+These instrumented English-table builds used native macOS and
+CrossOver with Null graphics. The latter logs fluid emitter
+exceptions. This checks stock slot loading, the saved once flag
+and the stock menu's available choices. Normal entry into the
+question node, the other six individual flag variants in Unity,
+new writes from the questions, pixels and Russian wording remain
+outside this test. The desktop disk control covers all seven flag
+variants.
+
+Sources, Unity logs and receipts are under
+`localization/work/alexander-question-unity-20261110.oOxHYv/`.
+
+| Build and slot | Input SHA-256 | Unity log SHA-256 | Observer receipt SHA-256 |
+| --- | --- | --- | --- |
+| macOS 2 | `342a6fd02853c54d8724a20594d05e4fb4afc452a15963951cb44dcc891157a5` | `89fe4b28f4710eaae3755cc5c225756ff88eb40d3b993d7ca94ed3bf16a56eee` | `d5c7644fed1e031e6decdc391a6fb274a3e7ee1c83eddaedc315c5b79d4e85ed` |
+| macOS 3 | `d453e7f1c176a701595bff619caf85f0150f2b72e2834b5cf868d68ff69c6da3` | `6467ea43136dee8f9d4a0f37f984b8fecdbe97b317a66f3521ae40fd9007d196` | `afc93dfb8d3fb47515ff9d137439f72e8908d2dd91b87dd00e1fabffa98952df` |
+| Windows 2 | `3f36e0038702b69600ef7688d3a78d550d967261eeda3c4edb1a0b7ddc3889cf` | `ffd8af084da7e19f376da21235408b78eb26f414c9e8e56eb4d776758c38a473` | `369cffc6e53f37583ae5766de87cc4b5cb9c97b91e7df6bfbe1cc05cd0b230a1` |
+| Windows 3 | `ce94a738b227daf168875bedb49e92a20cfa51437a108ba2c278e5d3457c2adc` | `a70df0bc65baf56c2bbebf8a35c8c4341a7af990cef8e5a7b5d97cef7af784c2` | `e0afad3301d8dd07db684d00978743e55c8156ab829385a6b3771676bb210e55` |
