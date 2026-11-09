@@ -106,7 +106,7 @@ class BuildSafetyTests(unittest.TestCase):
 
     @unittest.skipUnless(sys.platform == 'darwin' and MAC_SOURCE.is_dir() and WORK.is_dir(),
                          'pinned macOS game and project work directory required')
-    def test_changed_managed_library_after_signing_blocks_publication(self):
+    def test_changed_protected_input_after_signing_blocks_publication(self):
         with tempfile.TemporaryDirectory(prefix='managed-build-check-', dir=WORK) as folder:
             root = Path(folder)
             locale = root / 'ru.json'
@@ -117,22 +117,28 @@ class BuildSafetyTests(unittest.TestCase):
                                           'sourceObjectSha256': module.dl.OBJECT_HASH,
                                           'lines': {key: {'source': text, 'text': text}}}))
             output = root / 'Localized.app'
-            library = module.MANAGED_RELATIVE / 'YarnSpinner.Unity.dll'
-            original = module.dl.sha((MAC_SOURCE / library).read_bytes())
+            cases = (
+                (module.MANAGED_RELATIVE / 'YarnSpinner.Unity.dll', 'candidate managed assembly changed'),
+                (module.ASSET_RELATIVE.with_name('globalgamemanagers.assets'),
+                 'candidate global scripts and localization settings changed'),
+            )
+            for relative, expected in cases:
+                with self.subTest(asset=relative.name):
+                    original = module.dl.sha((MAC_SOURCE / relative).read_bytes())
 
-            def mutate_after_signing(command, *, check):
-                self.assertEqual(command[0], 'codesign')
-                self.assertTrue(check)
-                if command[1] == '--verify':
-                    with (Path(command[-1]) / library).open('ab') as f:
-                        f.write(b'changed')
+                    def mutate_after_signing(command, *, check):
+                        self.assertEqual(command[0], 'codesign')
+                        self.assertTrue(check)
+                        if command[1] == '--verify':
+                            with (Path(command[-1]) / relative).open('ab') as f:
+                                f.write(b'changed')
 
-            with patch.object(module.subprocess, 'run', side_effect=mutate_after_signing):
-                with self.assertRaisesRegex(ValueError, 'candidate managed assembly changed: YarnSpinner.Unity.dll'):
-                    module.build(MAC_SOURCE, locale, 'ru', output)
-            self.assertFalse(output.exists())
-            self.assertFalse(any(root.glob('.localization-build-*')))
-            self.assertEqual(module.dl.sha((MAC_SOURCE / library).read_bytes()), original)
+                    with patch.object(module.subprocess, 'run', side_effect=mutate_after_signing):
+                        with self.assertRaisesRegex(ValueError, expected):
+                            module.build(MAC_SOURCE, locale, 'ru', output)
+                    self.assertFalse(output.exists())
+                    self.assertFalse(any(root.glob('.localization-build-*')))
+                    self.assertEqual(module.dl.sha((MAC_SOURCE / relative).read_bytes()), original)
 
     def test_failure_between_staged_writes_leaves_no_final_app(self):
         with tempfile.TemporaryDirectory() as folder:

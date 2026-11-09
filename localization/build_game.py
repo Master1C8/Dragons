@@ -109,6 +109,9 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
     locale, translations = dl.read_locale(locale_file, keys, values, yarn_semantics=True)
     if locale != requested:
         raise ValueError(f'locale file identifies {locale}, not requested {requested}')
+    global_scripts = ASSET_RELATIVE.with_name('globalgamemanagers.assets')
+    if dl.sha((source / global_scripts).read_bytes()) != ui.GLOBAL_HASH:
+        raise ValueError('unsupported macOS global scripts and localization settings')
     source_assemblies = managed.scan(source / MANAGED_RELATIVE)
     managed_digest = managed.validate_source('macos', source_assemblies)
     speaker_inputs = (speaker_locale, speaker_tool, speaker_runtime, speaker_runtime_sha)
@@ -273,11 +276,13 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
     subprocess.run(['codesign', '--force', '--deep', '--sign', '-', str(destination)], check=True)
     subprocess.run(['codesign', '--verify', '--deep', '--strict', str(destination)], check=True)
     managed.compare(expected_assemblies, managed.scan(destination / MANAGED_RELATIVE))
+    if dl.sha((destination / global_scripts).read_bytes()) != ui.GLOBAL_HASH:
+        raise ValueError('candidate global scripts and localization settings changed')
     return {'locale': locale, 'translated': len(translations), 'sourceEntries': len(keys),
                       'dialogueAssetSha256BeforeUi': dl.sha(data), 'uiStrings': ui_count,
                       'settingsStrings': settings_count,
                       'testProfile': profile['code'] if profile else None,
-                      'managedManifestSha256': managed_digest,
+                      'managedManifestSha256': managed_digest, 'preservedGlobalScriptsSha256': ui.GLOBAL_HASH,
                       'managedFallback': managed_replacements.get(managed_fallback.ASSEMBLY, (None, None))[1],
                       'managedSlotNew': managed_replacements.get(managed_fallback.SLOT_ASSEMBLY, (None, None))[1],
                       'managedSpeakers': speaker_report,
