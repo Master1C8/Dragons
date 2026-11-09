@@ -1,5 +1,9 @@
 # Paired Yarn translation scope
 
+This records the v41 baseline. The
+[v42 marker audit](yarn-fragment-markers-20261110.md) updates 15 marker
+roles and leaves the text scope, counts and programs intact.
+
 `inventory_yarn_scope.py` binds all 1,839 stable IDs in the v41 shared
 inventory to both installed source tables and original instruction
 positions. It checks the source wording, node, instruction, operand

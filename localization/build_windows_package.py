@@ -21,7 +21,7 @@ from assemble_source_inventory import INVENTORY_SHA, load_pinned
 
 PLATFORM = 'windows'
 DATA_FOLDER = 'DragNWash_Data'
-YARN_SCOPE_SHA = '5e14d25cc87714b705680667eab6fad4c60f67f7efa530f37106904cd1400bd6'
+YARN_SCOPE_SHA = '753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30'
 ASSET_HASHES = assets.ui_map.WINDOWS_ASSETS
 LOCALE_FILES = ('dialogue.json', 'speakers.json', 'settings.json', 'slot-new.json', 'missing-line.json')
 

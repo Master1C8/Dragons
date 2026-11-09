@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v41-20261110.json`
-has SHA-256 `74113db1932d1da69c93b053bf5fb0a79750e7e9753c58b9fffef42f790cf711`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v42-20261110.json`
+has SHA-256 `79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -21,6 +21,9 @@ records, not visible phrases, completed translations,
 or a localization denominator. Each record retains its family, source values,
 platform locations and current provisional role; Yarn records also retain
 their node, instruction index and available option/substitution attributes.
+The v42 recipe changes 15 Yarn marker roles and records their exact
+values after verifying their control-flow boundaries. See
+[the fragment marker audit](yarn-fragment-markers-20261110.md).
 The v41 recipe preserves seven audited runtime-populated UI templates
 and 152 profiler labels. It changes only those 159 role fields. See the
 [paired non-Yarn scope](non-yarn-translation-scope-20261110.md).

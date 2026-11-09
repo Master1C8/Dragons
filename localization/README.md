@@ -277,8 +277,8 @@ step. See the [paired speaker build evidence](evidence/speaker-locale-build-2026
 ## Windows replacement package
 
 `build_windows_package.py` combines the audited Windows adapters in one
-ZIP. Use the pinned v41 shared inventory and paired Yarn scope described
-in [the Yarn scope evidence](evidence/yarn-translation-scope-20261110.md).
+ZIP. Use the pinned v42 shared inventory and paired Yarn scope described
+in [the fragment marker audit](evidence/yarn-fragment-markers-20261110.md).
 The input directory contains `dialogue.json`, `speakers.json`,
 `settings.json`, `slot-new.json`, `missing-line.json` and `ui/` with
 the exact Windows UI locale files required by

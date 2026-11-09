@@ -169,6 +169,13 @@ The source-bound Yarn inventory records 16 exact table values and 18 exact speak
 
 The paired Yarn scope binds all 1,839 source IDs. It requires 1,823 dialogue-locale entries and the Alexander speaker-locale body, preserving 15 other exact-only markers. It retains all 231 translatable IDs outside the named closure. Both repaired full programs have zero unresolved named transfers. The structural coverage gate rejects each current draft for 1,808 missing ordinary IDs. See [the paired scope and coverage gate](localization/evidence/yarn-translation-scope-20261110.md).
 
+The v42 inventory resolves the 15 exact-only marker roles. In both
+repaired programs each marker block remains behind a stop or named
+transfer, with no local jump or option target into the block. The five
+new node entries start after the delimiters. Source values, ID
+denominators and repaired program bytes are unchanged. See
+[the paired fragment marker audit](localization/evidence/yarn-fragment-markers-20261110.md).
+
 The v41 inventory preserves seven runtime-populated UI templates and 152 profiler labels. The known non-Yarn coverage gate requires 58 serialized UI and 37 setting fields on macOS, and 82 UI and 31 setting fields on Windows. Both require the managed new-slot and missing-line inputs. The source scope covers the nine audited UI assets and pinned settings and Managed inventories. Final wording, additional runtime text discovery and rendered checks remain open. See [the non-Yarn scope and preservation bindings](localization/evidence/non-yarn-translation-scope-20261110.md).
 
 The extended text route audit covers the selected TMP methods, IMGUI and UI Toolkit paths on both builds. It found no additional stock player text input through those paths. The Unity table database has its own missing-translation template, preserved through the macOS global settings and Managed checks. The stock binding uses Yarn and the only serialized Unity string event is disabled with an empty key. See [the extended route evidence](localization/evidence/extended-text-routes-20261110.md).

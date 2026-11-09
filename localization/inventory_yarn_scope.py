@@ -16,7 +16,7 @@ import managed_fallback
 import map_yarn_context as context
 import speaker_locale
 import yarn_transition_repair as repair
-from assemble_source_inventory import INVENTORY_SHA, YARN_PROTECTED_SHA, load_pinned
+from assemble_source_inventory import INVENTORY_SHA, YARN_MARKER_ROLE, YARN_PROTECTED_SHA, load_pinned
 from speaker_locale import ALEXANDER, PREFIX_MANIFEST
 
 def game_entries(entries, platform):
@@ -94,8 +94,10 @@ def build(inventory, data_paths):
     for key, record in records.items():
         exact = exact_values.get(key)
         prefix = prefixes.get(key)
-        if exact is not None and record['source'] != exact:
+        if exact is not None and (record['source'] != exact or record.get('preserveExactValue') != exact):
             raise ValueError(f'exact source binding differs for {key}')
+        if exact is not None and key != ALEXANDER and record['role'] != YARN_MARKER_ROLE:
+            raise ValueError(f'fragment marker role differs for {key}')
         if key == ALEXANDER and (record.get('localeInput') != 'speaker-locale' or
                                  record.get('preserveExactValue') != exact):
             raise ValueError('Alexander source and presentation binding differs')

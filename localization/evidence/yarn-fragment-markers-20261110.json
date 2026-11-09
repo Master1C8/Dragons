@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "yarnRuntimeSha256": "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e",
+  "builds": {
+    "macos": {
+      "originalProgramSha256": "a67bbfc37dca0b29b1be740e36b570e9d524a46ef2fdf5574e0f58278c0ff1e6",
+      "repairedProgramSha256": "7d4a0f1ecb58565a1fd1dc154d2ba3c4c9e4caf1832589da3a53f0e88b5768cc"
+    },
+    "windows": {
+      "originalProgramSha256": "cbaaba712e0cc699d0cdf98f4b8b86060c666d6196fa91cd0a9d9a237c104466",
+      "repairedProgramSha256": "e4e29b20afff9ba3306431ed316cbbb327c06e535ebcc2200b2f20bc06c00d8d"
+    }
+  },
+  "blocks": {
+    "Alexander_Done": {
+      "host": "Alexander_Outro",
+      "ids": [
+        "line:67fa34ad",
+        "line:f1ca33da",
+        "line:4b9b3a43"
+      ],
+      "firstInstruction": 29,
+      "precedingOpcode": 15,
+      "suffixStart": 32,
+      "suffixInstructions": 10
+    },
+    "ConradBeatup_OutroDone": {
+      "host": "ConradBeatup_Outro",
+      "ids": [
+        "line:ce938344",
+        "line:74c28add",
+        "line:e2f28daa"
+      ],
+      "firstInstruction": 33,
+      "precedingOpcode": 16,
+      "suffixStart": 36,
+      "suffixInstructions": 11
+    },
+    "Conrad_OutroDone": {
+      "host": "Conrad_Outro",
+      "ids": [
+        "line:a8e2f13e",
+        "line:3ed2f649",
+        "line:db5b3129"
+      ],
+      "firstInstruction": 33,
+      "precedingOpcode": 16,
+      "suffixStart": 36,
+      "suffixInstructions": 13
+    },
+    "RyanDate_OutroDone": {
+      "host": "RyanDate_Outro",
+      "ids": [
+        "line:e41244bf",
+        "line:722243c8",
+        "line:97ab84a8"
+      ],
+      "firstInstruction": 1,
+      "precedingOpcode": 16,
+      "suffixStart": 4,
+      "suffixInstructions": 13
+    },
+    "RyanExploded_OutroDone": {
+      "host": "RyanExploded_Outro",
+      "ids": [
+        "line:22deeef6",
+        "line:b4eee981",
+        "line:25f35611"
+      ],
+      "firstInstruction": 33,
+      "precedingOpcode": 16,
+      "suffixStart": 36,
+      "suffixInstructions": 16
+    }
+  }
+}

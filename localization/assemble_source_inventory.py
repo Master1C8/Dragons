@@ -11,8 +11,8 @@ import ui_preservation
 import managed_source_roles as managed
 from speaker_locale import ALEXANDER
 
-INVENTORY_NAME = 'combined-provisional-v41-20261110.json'
-INVENTORY_SHA = '74113db1932d1da69c93b053bf5fb0a79750e7e9753c58b9fffef42f790cf711'
+INVENTORY_NAME = 'combined-provisional-v42-20261110.json'
+INVENTORY_SHA = '79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d'
 
 FILES = {
     'yarn-paired-scenes.json': '52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995',
@@ -49,6 +49,8 @@ INPUT_ACTION_SHA = {
     'windows': 'dd06623f942b4b5619a278f51ba7dc9c6de5845752d7776e4d06c7b86455a998',
 }
 YARN_PROTECTED_SHA = 'bff5f4ce3b270dedf77f31518a3bb75efe72d93617796baeff71cbebb5872be3'
+YARN_MARKERS_SHA = 'b7200b84ff6efe79bf44e64964ce4d39a60eec5a35a091287179a1c496643c1e'
+YARN_MARKER_ROLE = 'preserve-exactly-unreachable-yarn-fragment-marker'
 OPENING_ROLES_SHA = 'ad01a97ccffb6ea648bd5df90d42416e3c528f649f3fd4a5b5881a3c6a322025'
 RYAN23_ROLES_SHA = '82f0dd640b385abeb4a06cec54cc267c61ac60d790035d55a72a3b4a0b7669e1'
 RYAN45_ROLES_SHA = '673f13e007da9ae66585d950094a4e660b38c0f13872a7ae013dfe5387d8ec9d'
@@ -238,6 +240,14 @@ def build(work, roles_path):
     if len(full) != 16 or len(prefixes) != 18 or full.keys() & prefixes.keys():
         raise ValueError('protected Yarn identity mismatch')
     scenes, ui, settings = docs['yarn-paired-scenes.json'], docs['ui-windows-all.json'], docs['settings-paired-source.json']
+    marker_report = load_pinned(Path(__file__).parent / 'evidence/yarn-fragment-markers-20261110.json', YARN_MARKERS_SHA)
+    if {p: data['originalProgramSha256'] for p, data in marker_report['builds'].items()} != scenes['programSha256']:
+        raise ValueError('fragment marker program binding changed')
+    markers = {key: (block['host'], block['firstInstruction'] + offset)
+               for block in marker_report['blocks'].values()
+               for offset, key in enumerate(block['ids'])}
+    if markers.keys() != full.keys() - {ALEXANDER}:
+        raise ValueError('fragment marker identity mismatch')
     opening = load_pinned(Path(__file__).with_name('yarn_roles_opening.json'), OPENING_ROLES_SHA)
     opening_roles = bind_opening_roles(scenes, opening)
     ryan23 = load_pinned(Path(__file__).with_name('yarn_roles_ryan23.json'), RYAN23_ROLES_SHA)
@@ -274,8 +284,9 @@ def build(work, roles_path):
                     dl.sha(row['source'][p].encode('utf-8')) != prefixes[key]['sourceSha256'][p]
                     for p in ('macos', 'windows'))):
                 raise ValueError('protected Yarn prefix binding changed')
-            role = ('preserve-exactly-pending-source-role' if key in full else
-                    reviewed_roles.get(key, 'needs-classification'))
+            if key in markers and markers[key] != (node, row['instructionIndex']):
+                raise ValueError('fragment marker instruction binding changed')
+            role = YARN_MARKER_ROLE if key in markers else reviewed_roles.get(key, 'needs-classification')
             record = {'id': 'yarn:' + key, 'family': 'yarn', 'role': role,
                       'node': node, 'instructionIndex': row['instructionIndex'], 'kind': row['kind'],
                       'instruction': {k: row[k] for k in ('substitutionCount', 'destination', 'hasCondition') if k in row},
@@ -284,6 +295,8 @@ def build(work, roles_path):
             if key == ALEXANDER:
                 record.update(role='special-dialogue-display-candidate',
                               preserveExactValue=full[key]['expected'], localeInput='speaker-locale')
+            elif key in markers:
+                record['preserveExactValue'] = full[key]['expected']
             put(records, record)
     if len(records) != scenes['sourceLineCount']:
         raise ValueError('Yarn count mismatch')
@@ -434,7 +447,8 @@ def build(work, roles_path):
     counts = dict(sorted(Counter(x['family'] for x in records.values()).items()))
     return {'schema': 1, 'status': 'provisional-not-translation-ready', 'builds': scenes['builds'],
             'sourceExportsSha256': FILES, 'uiRolesSha256': ROLES_SHA, 'inputActionReportsSha256': INPUT_ACTION_SHA,
-            'yarnProtectedReportSha256': YARN_PROTECTED_SHA, 'creditNameManifestSha256': credits.MANIFEST_SHA256,
+            'yarnProtectedReportSha256': YARN_PROTECTED_SHA, 'yarnFragmentMarkersSha256': YARN_MARKERS_SHA,
+            'creditNameManifestSha256': credits.MANIFEST_SHA256,
             'openingRoleManifestSha256': OPENING_ROLES_SHA,
             'ryan23RoleManifestSha256': RYAN23_ROLES_SHA,
             'ryan45RoleManifestSha256': RYAN45_ROLES_SHA,
