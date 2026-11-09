@@ -186,6 +186,36 @@ source value. The current checks cover contributor names, version placeholders,
 dialogue presenter templates, settings prefabs and development-menu labels.
 The combined-asset verifiers apply the same rules.
 
+### Yarn missing-line fallback
+
+The stock built-in line provider can show a missing-line message in dialogue
+or a choice. It uses two copies of the same string in `YarnSpinner.Unity.dll`.
+The optional managed fallback input changes both from one locale record.
+Use the normal locale JSON shape with the source DLL SHA-256 as
+`sourceObjectSha256`, the ID `yarn-missing-line`, and the exact source
+`!! ERROR: Missing line!`. The replacement must be a single plain-text line.
+
+Build the pinned patcher with .NET 8:
+
+```sh
+dotnet build localization/tools/managed-fallback/managed-fallback.csproj \
+  -p:BaseIntermediateOutputPath=ABSOLUTE_WORK_OBJ/ -o ABSOLUTE_WORK_BIN/
+```
+
+Pass `--fallback-locale FALLBACK.json --fallback-tool ABSOLUTE_WORK_BIN/managed-fallback.dll`
+to `build_game.py`. The app builder verifies the full Managed directory after
+signing, allowing only the exact replacement DLL digest reported by the patcher.
+On Windows, build the DLL as a separate artifact:
+
+```sh
+"$PYTHON" localization/managed_fallback.py windows --source ORIGINAL_MANAGED/YarnSpinner.Unity.dll \
+  --locale-file FALLBACK.json --locale ru --tool ABSOLUTE_WORK_BIN/managed-fallback.dll \
+  --output NEW_OUTPUT/YarnSpinner.Unity.dll
+```
+
+This Windows command writes a verified DLL to a fresh path. The Windows asset
+builder still produces its Unity assets separately.
+
 ## Optional settings labels and choices
 
 Settings labels and dropdown choices are stored in separate scriptable objects;

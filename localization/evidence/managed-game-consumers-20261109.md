@@ -345,8 +345,8 @@ the 20 remaining role reviews in the five extracted assemblies.
   `!! ERROR: Missing line!`. These four source occurrences are
   player-facing error fallback candidates. They represent the same
   phrase and need a matching locale value in both fields. They are
-  outside the normal table replacement and still require an adapter.
-  The English missing-line control below exercises the dialogue path.
+  outside the normal table replacement. The English control and
+  the separate adapter evidence below exercise the two paths.
 
 The v39 copies matched byte-for-byte. Comparison with v38 found
 only the stated 20 role changes. The 2,974 extracted managed
@@ -403,5 +403,55 @@ Successful local artifacts are under
 | Windows player log | `43f3372468838cbf1d88cd1d6e23ff8136d58e0eb40161de038ca4ebeb2e8254` |
 | macOS observer receipt | `67735364fd5ddd554dc67dc82624c1c16b6f67566749b3eda1d5e4c2ce6eeb64` |
 | Windows observer receipt | `957e14c110e3751dde7dd551951cff7c909dbab5eb6e02136354899c5de6ac4b` |
+
+### Managed fallback adapter and paired Cyrillic probes
+
+The locale adapter takes one source-bound value for both initializer
+literals. It checks the original assembly and Cecil fingerprints, the
+two instruction offsets and their consumers, then reopens the output
+and compares all 717 managed method bodies against the original.
+The read-back permits only the two literal operands to differ.
+This is an IL comparison and does not claim complete assembly metadata
+equivalence. The normal macOS builder adds the selected DLL to its
+signed output and checks the complete Managed hash inventory. Windows
+uses a separate artifact command with exclusive publication.
+The original value is a byte-identical no-op. The rebuilt patcher
+reproduced the two exercised synthetic DLLs byte-for-byte after
+adding that control.
+
+The synthetic value `Жж Ъъ 741` was used in both platform DLLs. In
+the first test, the normal macOS builder output and the standalone
+Windows DLL were installed only into isolated test copies. With a
+controlled missing dialogue ID, the original TMP field held all nine
+characters and group alpha 1. In the second test the original Yarn
+runner entered `Conrad_5_outro_ryan_romanced` directly with only its
+first option operand changed to the absent ID. An active selectable
+option held the same synthetic text, alongside a second active
+option. No option was selected. Both paths passed on macOS Metal and
+Windows Direct3D 11 through CrossOver.
+
+The dialogue observers recorded 15 macOS and 32 Windows desktop
+samples. The option observers recorded 16 and 36. All showed no
+on-screen window or foreground ownership. The verified processes
+exited and original profiles matched their snapshots. These are
+runtime string and Canvas observations. They do not establish final
+Russian wording, pixel-level readability, uninstrumented natural
+entry or a combined Windows release package.
+
+Local DLLs and receipts are under
+`localization/work/managed-fallback-20261110.FOtjwa/`. Dialogue and
+option receipts are under
+`localization/work/yarn-missing-line-runtime-20261110.OCQuzt/` and
+`localization/work/yarn-missing-line-runtime-20261110.TwuGCW/`,
+respectively.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| macOS fallback DLL | `5217de539e546a06dd21fd601c8a65b809a4c466ac00a142ad529cfdcb422cb9` |
+| Windows fallback DLL | `9cefd2dce212db50ecae0ab7cf7a1fe2b9ec4682c9c3f2ef9159d65c3e04993c` |
+| macOS dialogue log | `24d8b4f1e979857e38800fe2890f46ae759f03648a2ee3218f01d7e27d17e5fb` |
+| Windows dialogue log | `b1540c21346d1b5f03846f22b5785bf421678c88c9d58a86642d3944c6bfd935` |
+| macOS option log | `6575a20e02efcc6bb0e9b2f52c14101de404b5ae14a65c53f048a1c99b87910d` |
+| Windows option log | `8c221c771bc97cf3b7b412c33d7f181ffb2700aa2f01d0d115fa1f17d177404d` |
 
 The full localization suite passed all 180 tests with v28.

@@ -140,7 +140,7 @@ class BuildSafetyTests(unittest.TestCase):
             source, destination = root / 'Original.app', root / 'Localized.app'
             source.mkdir()
             (source / 'owner-data').write_text('original')
-            def incomplete(_source, _locale, _requested, staged, *args):
+            def incomplete(_source, _locale, _requested, staged, *args, **kwargs):
                 staged.mkdir()
                 (staged / 'first-file').write_text('written')
                 raise ValueError('failure after first write')
@@ -157,7 +157,7 @@ class BuildSafetyTests(unittest.TestCase):
             root = Path(folder)
             source, destination = root / 'Original.app', root / 'Localized.app'
             source.mkdir()
-            def prepare(_source, _locale, _requested, staged, *args):
+            def prepare(_source, _locale, _requested, staged, *args, **kwargs):
                 staged.mkdir()
                 (staged / 'result').write_text('verified fixture')
                 return {'locale': 'ru'}
@@ -168,7 +168,7 @@ class BuildSafetyTests(unittest.TestCase):
                 verify.assert_called_once_with(['codesign', '--verify', '--deep', '--strict', str(destination)], check=True)
             self.assertEqual(sorted(p.name for p in root.iterdir()), ['Localized.app', 'Original.app'])
             destination2 = root / 'Other.app'
-            def compete(_source, _locale, _requested, staged, *args):
+            def compete(_source, _locale, _requested, staged, *args, **kwargs):
                 staged.mkdir()
                 (staged / 'result').write_text('candidate')
                 destination2.mkdir()
@@ -188,7 +188,7 @@ class BuildSafetyTests(unittest.TestCase):
             root = Path(folder)
             source, destination = root / 'Original.app', root / 'Localized.app'
             source.mkdir()
-            def prepare(_source, _locale, _requested, staged, *args):
+            def prepare(_source, _locale, _requested, staged, *args, **kwargs):
                 staged.mkdir()
                 (staged / 'result').write_text('candidate')
                 return {'locale': 'ru'}
