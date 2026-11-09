@@ -194,6 +194,12 @@ The union contains 1,947 inputs, including 1,917 shared IDs.
 The tracked drafts supply 15 IDs per build, with two still using
 the superseded Russian numbered-branch term. No draft line is
 counted as accepted localization.
+The [paired authoring worklist](localization/evidence/locale-workload-v42-20261110.md#paired-authoring-worklist)
+now maps those 1,947 IDs to their package inputs and indexes all 27
+known special cases. Reconstructing both complete input directories
+from the list passed structural validation with the drafts and
+English passthrough. The glossary and special-scene editorial gates
+remain open.
 
 The v41 inventory preserves seven runtime-populated UI templates and 152 profiler labels. The known non-Yarn coverage gate requires 58 serialized UI and 37 setting fields on macOS, and 82 UI and 31 setting fields on Windows. Both require the managed new-slot and missing-line inputs. The source scope covers the nine audited UI assets and pinned settings and Managed inventories. Final wording, additional runtime text discovery and rendered checks remain open. See [the non-Yarn scope and preservation bindings](localization/evidence/non-yarn-translation-scope-20261110.md).
 

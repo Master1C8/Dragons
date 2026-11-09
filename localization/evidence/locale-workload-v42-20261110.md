@@ -64,3 +64,32 @@ are under `localization/work/locale-workload-v42-20261110.yWvbM2/`.
 | Tracked Windows draft | `4b0f4adcef2e50522112e5c9d32aeacde611643b365097d3005009b115ca5318` |
 | Audit script | `d530cc5f07b614cd4b7fffbfe86bfd447a8e13341a47bd5915f2e1fb3d832fed` |
 | Workload report | `bb103681be80b5d598a820d7fa0d08da1da675cc61993283e4ce450e5ee15a9e` |
+
+## Paired authoring worklist
+
+The [export command](../README.md#paired-text-authoring-worklist)
+binds the workload to the actual package file and input key for each
+build. It rechecks both source builds with the existing Yarn and
+non-Yarn readers, uses the pinned v42 inventory and Yarn scope, and
+rebuilds the 27-case special-scene index. Each of the 25 changed
+English values retains both platform sources. The six macOS-only and
+24 Windows-only rows have one destination each. The 15 existing
+drafts per build remain separate from acceptance. The Alexander
+display body points to `speakers.json` and the exact-only Yarn markers
+stay outside the authoring rows.
+
+Two exports were byte-identical. A structural control reconstituted
+12 locale files per platform using only the worklist, with existing
+draft values where present and English passthrough elsewhere. The
+normal complete-package input validator accepted all 1,923 macOS and
+1,941 Windows inputs. Substituting the macOS source for Windows
+`line:a99c515c` failed at that line's source check. Removing the
+Windows-only `level1#3862` failed at the required UI-field check.
+These controls exercise routing, coverage and exact source binding.
+All 19 targeted scope, index and dialogue-reader tests passed.
+The controls did not produce game builds or new Russian wording.
+
+The worklist and controls are under
+`localization/work/authoring-worklist-20261110.NQgxrM/`.
+The verified worklist SHA-256 is
+`9e44119b0edc8fc272b08d89de6c30c7f51db571b9645c94979e5a0f67756038`.

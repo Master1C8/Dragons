@@ -301,6 +301,29 @@ probes. Neither command installs or launches the app. Complete
 structural coverage remains separate from editorial and runtime
 acceptance. See the [paired package control](evidence/complete-macos-package-20261110.md).
 
+## Paired text authoring worklist
+
+Export one worklist for both builds from the pinned inventory and Yarn
+scope. The draft root contains the existing platform dialogue files.
+
+```sh
+"$PYTHON" localization/export_locale_worklist.py \
+  --inventory "$shared_inventory" --yarn-scope "$paired_yarn_scope" \
+  --macos-data "$macos_data" --windows-data "$windows_data" \
+  --draft-root localization/ru --locale ru --output "$fresh_worklist"
+```
+
+Each row has one stable authoring ID. Its `builds` entries carry the
+exact English source, package file, input key and inventory references.
+Use each build's own `source` and the corresponding
+`sourceFingerprints` entry when preparing its locale file. Yarn rows
+retain their node, instruction position, choice kind and any fixed
+speaker prefix. The special-scene index links these rows to direct and
+contextual dependencies in the shared inventory. Existing draft values
+are marked `draft`. The export does not authorize translation or count
+any entry as accepted. See the
+[verified worklist control](evidence/locale-workload-v42-20261110.md#paired-authoring-worklist).
+
 ## Windows replacement package
 
 `build_windows_package.py` combines the audited Windows adapters in one
