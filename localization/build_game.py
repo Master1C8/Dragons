@@ -12,6 +12,7 @@ import tempfile
 
 import dialogue_locale as dl
 import managed_fallback
+import speaker_contrast
 import speaker_locale as speakers
 import ui_locale as ui
 import ui_preservation
@@ -38,7 +39,8 @@ def rename_exclusive(source, destination):
 def build(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
           test_profile_code=None, test_caption_layout=False, test_slot_font=False,
           restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None,
-          speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None):
+          speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None,
+          improve_speaker_contrast=False):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -61,7 +63,8 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
                                     restore_yarn_transitions, fallback_locale=fallback_locale,
                                     fallback_tool=fallback_tool, slot_new_locale=slot_new_locale,
                                     speaker_locale=speaker_locale, speaker_tool=speaker_tool,
-                                    speaker_runtime=speaker_runtime, speaker_runtime_sha=speaker_runtime_sha)
+                                    speaker_runtime=speaker_runtime, speaker_runtime_sha=speaker_runtime_sha,
+                                    improve_speaker_contrast=improve_speaker_contrast)
         rename_exclusive(staged_app, destination)
     finally:
         shutil.rmtree(stage)
@@ -76,7 +79,8 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
 def _build_unpublished(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
                        test_profile_code=None, test_caption_layout=False, test_slot_font=False,
                        restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None,
-                       speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None):
+                       speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None,
+                       improve_speaker_contrast=False):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -193,13 +197,15 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
         if expected != after[key].get_raw_data():
             raise ValueError(f'saved object differs: {key}')
     ui_count = 0
-    for name, file in sorted(ui_files.items()):
+    contrast_assets = speaker_contrast.ASSETS if improve_speaker_contrast else frozenset()
+    for name in sorted(ui_files.keys() | contrast_assets):
         target_ui = destination / 'Contents/Resources/Data' / name
         if target_ui.is_symlink() or destination.resolve() not in target_ui.resolve().parents:
             raise ValueError('unsafe UI destination')
-        ui_count += ui.patch_into(source / 'Contents/Resources/Data', name, file, requested,
+        ui_count += ui.patch_into(source / 'Contents/Resources/Data', name, ui_files.get(name), requested,
                                   target_ui, changed if name == 'sharedassets1.assets' else None,
-                                  repaired_project=repaired_project if name == 'sharedassets1.assets' else None)
+                                  repaired_project=repaired_project if name == 'sharedassets1.assets' else None,
+                                  improve_speaker_contrast=name in contrast_assets)
     settings_count = 0
     if prepared_settings is not None:
         target_settings = destination / 'Contents/Resources/Data' / settings.ASSET
@@ -275,6 +281,7 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
                       'managedFallback': managed_replacements.get(managed_fallback.ASSEMBLY, (None, None))[1],
                       'managedSlotNew': managed_replacements.get(managed_fallback.SLOT_ASSEMBLY, (None, None))[1],
                       'managedSpeakers': speaker_report,
+                      'speakerContrastAssets': sorted(contrast_assets),
                       'restoredYarnTransitions': len(transitions.CONTINUATIONS) if restore_yarn_transitions else 0,
                       'testSettingsLayoutSha256': layout_hash,
                       'testSlotFontSha256': slot_font_hash}
@@ -296,6 +303,7 @@ def main():
     p.add_argument('--speaker-tool', type=Path, help='compiled speaker-display-probe.dll')
     p.add_argument('--speaker-runtime', type=Path, help='compiled Dragons.SpeakerPresentation.dll')
     p.add_argument('--speaker-runtime-sha', help='SHA-256 of the compiled speaker runtime')
+    p.add_argument('--speaker-contrast', action='store_true', help='use the audited black speaker label style')
     p.add_argument('--test-profile', help='optional fresh four-character isolated test profile; not a player release')
     p.add_argument('--test-settings-caption-layout', action='store_true',
                    help='experimental caption height for isolated test profiles only')
@@ -308,7 +316,7 @@ def main():
           a.test_profile, a.test_settings_caption_layout, a.test_slot_font, a.restore_yarn_transitions,
           fallback_locale=a.fallback_locale, fallback_tool=a.fallback_tool, slot_new_locale=a.slot_new_locale,
           speaker_locale=a.speaker_locale, speaker_tool=a.speaker_tool, speaker_runtime=a.speaker_runtime,
-          speaker_runtime_sha=a.speaker_runtime_sha)
+          speaker_runtime_sha=a.speaker_runtime_sha, improve_speaker_contrast=a.speaker_contrast)
 
 
 if __name__ == '__main__':

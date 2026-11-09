@@ -12,6 +12,7 @@ from pathlib import Path
 import UnityPy
 import compare_yarn_versions as versions
 import dialogue_locale as dl
+import speaker_contrast
 import ui_preservation
 import map_ui_hierarchy as ui_map
 import windows_settings_locale as windows_settings
@@ -82,11 +83,14 @@ def verify_output(path, baseline, changed):
 
 
 def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale_file=None,
-          settings_locale_file=None, restore_yarn_transitions=False):
+          settings_locale_file=None, restore_yarn_transitions=False, improve_speaker_contrast=False):
     target = safe_output(data, output)
     env, rows = scan(data, asset)
-    if locale_file is None and dialogue_locale_file is None and settings_locale_file is None:
+    if (locale_file is None and dialogue_locale_file is None and settings_locale_file is None
+            and not improve_speaker_contrast):
         raise ValueError('at least one locale input is required')
+    if improve_speaker_contrast and requested_locale not in dl.site_locales():
+        raise ValueError('speaker contrast requires a supported locale')
     if locale_file is None:
         code, translations = requested_locale, {}
     else:
@@ -113,6 +117,8 @@ def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale
         replacement = raw[:88] + dl.write_string(value) + raw[end:]
         changed[identity] = replacement
         obj.set_raw_data(replacement)
+    if improve_speaker_contrast:
+        speaker_contrast.apply('windows', asset, objects, changed)
     dialogue_count = 0
     if dialogue_locale_file is not None:
         spec = versions.BUILDS['windows']
@@ -165,6 +171,7 @@ def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale
             'dialogueFields': dialogue_count,
             'restoredYarnTransitions': len(transitions.CONTINUATIONS) if restore_yarn_transitions else 0,
             'settingsFields': prepared_settings['count'] if prepared_settings is not None else 0,
+            'speakerContrast': improve_speaker_contrast,
             'outputSha256': dl.sha(result), 'output': str(target),
             'limitations': 'UI plus optional Yarn or settings asset changes only. Source classification, code, fonts, packaging and runtime behavior require separate validation.'}
 
@@ -179,13 +186,15 @@ def main():
     p.add_argument('--settings-locale-file', type=Path, help='optional source-bound settings locale for sharedassets0.assets')
     p.add_argument('--restore-yarn-transitions', action='store_true',
                    help='restore the five missing Yarn nodes and align the Windows Conrad outro route')
+    p.add_argument('--speaker-contrast', action='store_true', help='use the audited black speaker label style')
     p.add_argument('--output', required=True, type=Path)
     args = p.parse_args()
     print(json.dumps(build(args.source_data, args.asset, args.locale_file,
                            args.requested_locale, args.output,
                            dialogue_locale_file=args.dialogue_locale_file,
                            settings_locale_file=args.settings_locale_file,
-                           restore_yarn_transitions=args.restore_yarn_transitions), ensure_ascii=False))
+                           restore_yarn_transitions=args.restore_yarn_transitions,
+                           improve_speaker_contrast=args.speaker_contrast), ensure_ascii=False))
 
 
 if __name__ == '__main__':

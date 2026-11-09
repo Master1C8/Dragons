@@ -4,6 +4,7 @@ import json
 import os
 
 import dialogue_locale as dl
+import speaker_contrast
 import ui_preservation
 
 GLOBAL_HASH = '391640e8e7df097a0d377c7a16552975d4821688841ea3460ec99587f4061d9e'
@@ -60,13 +61,18 @@ def export(data_dir, name, path):
     print(f'Exported {len(rows)} TextMeshPro objects from {name}; dynamic placeholders and names require classification.')
 
 
-def patch_into(source_dir, name, locale_file, requested, target, dialogue_object=None, *, repaired_project=None):
+def patch_into(source_dir, name, locale_file, requested, target, dialogue_object=None, *,
+               repaired_project=None, improve_speaker_contrast=False):
     import UnityPy
     original, rows = scan(source_dir, name)
-    source = {key: row[2] for key, row in rows.items()}
-    locale, translations = ui_preservation.read_locale('macos', name, locale_file, source, ASSETS[name])
-    if locale != requested:
-        raise ValueError(f'UI locale {locale} does not match {requested}')
+    translations = {}
+    if locale_file is not None:
+        source = {key: row[2] for key, row in rows.items()}
+        locale, translations = ui_preservation.read_locale('macos', name, locale_file, source, ASSETS[name])
+        if locale != requested:
+            raise ValueError(f'UI locale {locale} does not match {requested}')
+    elif not improve_speaker_contrast or requested not in dl.site_locales():
+        raise ValueError('expected a UI locale or a supported locale for the speaker contrast patch')
     target = Path(target)
     env = UnityPy.load(str(target))
     baseline = {(o.path_id, o.type.name): o for o in original.objects}
@@ -95,6 +101,8 @@ def patch_into(source_dir, name, locale_file, requested, target, dialogue_object
         new = raw[:88] + dl.write_string(value) + raw[end:]
         current[(old.path_id, old.type.name)].set_raw_data(new)
         expected_objects[(old.path_id, old.type.name)] = new
+    if improve_speaker_contrast:
+        speaker_contrast.apply('macos', name, current, expected_objects)
     data = env.file.save()
     tmp = target.with_name(target.name + '.ui-localized.tmp')
     with tmp.open('xb') as f:

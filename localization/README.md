@@ -265,6 +265,22 @@ returned receipt records the patched Yarn Unity and companion fingerprints.
 Windows installation and restoration are still separate from this preparation
 step. See the [paired speaker build evidence](evidence/speaker-locale-build-20261110.md).
 
+The optional `--speaker-contrast` flag uses the stock black text color for
+the originally white speaker-name fields in `level1`, `level3`, `level5`
+and `level6`. The macOS builder updates all four assets in the app. On
+Windows use the same flag with `windows_ui_locale.py` for each of those
+assets, with or without a separate UI locale for that asset:
+
+```sh
+"$PYTHON" localization/windows_ui_locale.py ORIGINAL_DATA level1 \
+  --requested-locale ru --speaker-contrast --output NEW_OUTPUT/level1
+```
+
+The adapter changes only the name component's packed and floating-point
+colors. `level4` already uses black. The scene files can contain localized
+UI strings from the same build step. See the
+[contrast verification](evidence/speaker-contrast-build-20261110.md).
+
 ## Optional settings labels and choices
 
 Settings labels and dropdown choices are stored in separate scriptable objects;
