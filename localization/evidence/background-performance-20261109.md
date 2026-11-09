@@ -374,10 +374,30 @@ file. The run is under
 | Unity log | `788249887d437454aec9cf7b67f1496deb08576ba4294e2a038e2bda7ef87343` |
 | Observer receipt | `09ae59fe01d3321fe837ad868ea44aed354fa356acf46c04bbb9eddae086aa26` |
 
-The next isolated profile, `R6M4`, uses a byte-identical gameplay
-asset and the stock hand overlap query against the active layer-six
-hitboxes. It runs the same fixture with the corrected aiming
-observation. The outcome is pending under
-`localization/work/macos-conrad-contact-20261109.ck4zOH/`.
-Its companion SHA-256 is
-`9ff1be608b0fbdb3004871c2cae6e2eaf67b2865541338755fdf4de3a1b10e4c`.
+The isolated `R6M4` follow-up used the same fixture and byte-identical
+gameplay asset. Its aiming observer checked the stock hand overlap
+query against active layer-six hitboxes. Stock input started and
+completed the earlier activity, then placed and used the mount. The
+combined choice `line:82cf49aa` reached `Conrad_Outro_3`. Four stock
+option clicks selected `line:36ff6bd9`, `line:1a9e6537`,
+`line:956a0f47` and `line:4b38230f`. The original Yarn runner reported
+node and dialogue completion, the state changed to `WaitingOnExitButton`,
+and the original evaluation returned `DONE`.
+
+All 607 desktop samples showed no foreground ownership and no on-screen
+window. The test process exited, the wrapper verified the signature and
+removed its Steam file, and the checked original profile roots matched.
+This uses an isolated instrumented player, an English line table and a
+synthetic starting save. The observer ended at exit readiness. No
+post-exit save or visual acceptance was exercised by this run.
+
+Artifacts are under `localization/work/macos-conrad-contact-20261109.ck4zOH/`.
+
+| Successful macOS run | SHA-256 |
+| --- | --- |
+| Gameplay asset | `380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5` |
+| Unity log | `0e09b3ff1d698461a37ed9d01b6a027ea7147de5fea6b724b041cb2ea1ebc741` |
+| Observer receipt | `fbb5f163d6b001e8679bb8088cb4fc331852bdf46086bf01ef1d949ebf3bf70b` |
+| Instrumented game DLL | `7d97754b9cff4f74090db3acce1c918a254472115786c181892f90ea0201a098` |
+| Companion DLL | `9ff1be608b0fbdb3004871c2cae6e2eaf67b2865541338755fdf4de3a1b10e4c` |
+| Companion source | `2d66aadbdf42f082b53784a27e3111ecba1778921fd6228f77080ef0bf9d2522` |

@@ -15,8 +15,9 @@ Both reached the in-game wait for `PlacedMount`. The player-input probe
 stopped before placing the equipment or reaching the transition. The live
 test copy is hidden and its wait log is frozen. Both source builds disable
 background simulation in PlayerSettings, and the foreground-only input
-helper refuses to target the hidden player. Normal transition completion and
-native Windows remain pending.
+helper refused to target that hidden player. The later instrumented input
+runs below completed the transition on both builds. Native Windows remains
+pending.
 See [the transition evidence](localization/evidence/yarn-transition-runtime-20261109.md).
 
 An isolated macOS repair build accepts virtual keyboard and mouse state
@@ -60,10 +61,13 @@ no dynamic node-transfer instructions, and the local bundle
 and managed caller audits found no extra ordinary entry to the
 four legacy routes. Their controlled VM results are recorded
 separately from ordinary gameplay.
-A matching macOS mount-last probe reached the original intro
-and opened the gate. Its initial hand distance observation gave
-a false zero and the activity timed out. The follow-up uses the
-stock overlap query against the active hitboxes.
+The matching macOS mount-last follow-up used the stock overlap query
+against active hitboxes and completed both activities through stock
+input. Its combined choice reached `Conrad_Outro_3` and the same four
+outro choices reached `WaitingOnExitButton` with evaluation `DONE`.
+The receipt records all 607 samples as hidden and the checked original
+profile roots as unchanged. Both successful route runs used isolated,
+instrumented English copies and ended at exit readiness.
 See [the gameplay receipts](localization/evidence/background-gameplay-20261109.md)
 and [the performance and Windows test](localization/evidence/background-performance-20261109.md).
 
