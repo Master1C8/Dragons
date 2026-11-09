@@ -1,6 +1,23 @@
 # Drag'N Wash Russian localization — current state
 
-Updated 2026-11-07. Canonical checkout: `/Users/antonkrutov/Desktop/Dragons`, branch `main`. Goal: complete standard Russian localization of the verified supported builds, excluding all text baked into textures, with a reproducible package and verified runtime, installation and restoration. Do not modify the installed game or its saves during tests. Publication and deployment are separate decisions.
+Updated 2026-11-09. Canonical checkout: `/Users/antonkrutov/Desktop/Dragons`, branch `main`. Goal: complete standard Russian localization of the verified supported builds, excluding all text baked into textures, with a reproducible package and verified runtime, installation and restoration. Do not modify the installed game or its saves during tests. Publication and deployment are separate decisions.
+
+On 2026-11-09 all five absent Yarn destinations reproduced in isolated macOS
+Unity runs with controlled entry; a Windows CrossOver run independently
+reproduced the Conrad failure. A source-bound candidate appends the five
+missing nodes using existing compiled instructions and preserves all original
+node bytes. All five candidates completed in desktop Yarn for both versions
+with mocked Unity callbacks. In the game, the macOS Ryan and Windows Conrad
+probes reached the original line handler in the restored nodes. Natural entry,
+live completion, native Windows, and builder integration remain pending.
+See [the transition evidence](localization/evidence/yarn-transition-runtime-20261109.md).
+
+Commit `3727bf3` adds 319 provisional Yarn role assignments across Ryan's later
+scenes and preserves the existing Russian draft for the same 14 changed IDs
+on both builds. The reproduced v10 inventory SHA-256 is
+`afa2bf07fdc4ca5e5ecf138c862f0191c211874e415ea951a5c35a8cc8117834`.
+It still has 1,292 unclassified Yarn IDs. Both draft files passed source binding
+and preservation checks and await editorial review.
 
 Both UI adapters now reject changes to 34 source-bound contributor-name fields in `level2`, while leaving credit descriptions separately translatable. The pinned manifest and both original builds were tested; see `localization/evidence/credit-name-preservation-20261107.md`. This is one bounded preservation safeguard, not a complete classification or a translated corpus.
 
@@ -122,7 +139,7 @@ The earlier test copies also used isolated identifiers; ordinary copies currentl
 
 | Locale | Phase | Translated / visible total | Glossary | Editorial | Fonts | Textures | Build | Runtime | Visual | Screenshot upload | Screenshot review | Release | Blocker / next action |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `ru` | `probe` | 0 / unknown | needs-review | not-run | needs-review | not-applicable: excluded by owner | needs-review: prototype only | needs-review | needs-review | not-run: not requested | not-applicable: no upload | not-run | Establish real dialogue/UI rendering and progression, then finish and classify shared inventory; do not infer coverage from raw ID count. |
+| `ru` | `probe` | 0 accepted / unknown (14 draft) | needs-review | not-run | needs-review | not-applicable: excluded by owner | needs-review: prototype only | needs-review | needs-review | not-run: not requested | not-applicable: no upload | not-run | Verify normal progression with the candidate and complete representative dialogue/UI rendering. Finish source classification and the glossary and special-scene gates before ordinary batches. |
 
 On 2026-11-06 an independently authorized visual reviewer examined the synthetic choice and continuation frames described in `localization/evidence/choice-visual-review-20261106.md`. The observed strings match the intended probe text, fit their panels and show no apparent clipping or missing glyphs in these two previews. This does not establish normal player input, long-string layout, final font coverage or game-wide visual quality.
 
