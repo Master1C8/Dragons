@@ -263,7 +263,12 @@ The [managed save round trip](localization/evidence/alexander-question-analysis-
 uses the original callback, JSON codec and Yarn store with synthetic
 data. All seven once keys survive the round trip. Changing one
 character makes the corresponding question available again. Stock slot
-I/O and Unity gameplay reload remain pending.
+I/O was then exercised in the
+[paired disk control](localization/evidence/alexander-question-analysis-20261107.md#stock-slot-disk-control-2026-11-10).
+Both original save managers wrote and reloaded progress and the
+selected once flag, preserved the previous file in a backup, and
+left an empty adjacent slot independent. Unity gameplay reload
+and the Conrad route after exit readiness remain pending.
 
 ## Inputs and evidence
 

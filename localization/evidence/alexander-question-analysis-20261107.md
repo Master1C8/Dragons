@@ -106,3 +106,57 @@ presentation remain to be checked on delivered artifacts. Preserve the
 seven variable names and choice IDs from the
 [question-group inventory](alexander-question-groups-20261107.json)
 through packaging.
+
+## Stock slot disk control, 2026-11-10
+
+The desktop probe extends the in-memory control to real disposable
+files. It executes the original Yarn routes, flag callbacks and
+`FlagRegistry.Save` / `Load`. The macOS registry delegates to
+`SaveManagerV1`; the Windows registry uses `SaveManager`. Their
+original `FileManager` calls create directories, write JSON, copy
+the backup and read the save from disk.
+
+The source-pinned scratch assembly replaces Unity's persistent
+data root with a new project scratch directory and forces the
+non-Steam path branch. It supplies the managed Yarn store in place
+of the native object lookups and suppresses native debug calls.
+The probe initializes the managers' `FileManager` fields using
+their original indexed slot path methods. Unity PlayerPrefs and
+Steam user selection are outside the probe.
+
+Each of the seven original question choices passed on both builds:
+
+1. Selecting the question and exiting writes its exact once key
+   and a false exit flag through the stock registry. The first
+   file matches the registry's JSON for level index 6.
+2. Saving index 7 to the same slot replaces the main file. The
+   generated `savegame_backup.dgn` matches the first file byte-for-byte.
+3. Loading into a fresh store restores index 7, the chosen once
+   flag and the false exit flag. Only the six unchosen questions
+   are available in the original Yarn VM.
+4. Loading a separate empty slot leaves all seven questions
+   available, creates no slot files and leaves the first backup
+   byte-identical.
+
+The macOS control used `defaultUser/slot1` and wrote the version-1
+header. The Windows control used `defaultUser_slot1` and wrote the
+legacy payload. The resulting choice lists match across platforms.
+The probe does not execute a native Unity scene reload, press
+Conrad's exit button, or exercise crash or backup recovery. No
+installed game or player save was written.
+
+The two source files extend the existing save-probe recipe and are
+under `localization/work/stock-save-boundary-20261110.1eWIVW/`.
+Build the patcher and runtime as in the previous section and
+append a new scratch-directory argument to the runtime command.
+The two traces record the first, backup and overwritten file
+hashes for all seven paths.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| `patcher/Program.cs` | `082f37124d5c26ec204f71d6b095171369da35de10e817f3aabc4418afb23b52` |
+| `runtime/Program.cs` | `65c2a62589d43dd8ba07b158a673ca861a7192859a0f3d89441dacb4f366c66d` |
+| macOS scratch assembly | `7c7773cd46c1befffa33e9cf820a7c4d5f9e5dda458a83d1355fe35554567412` |
+| Windows scratch assembly | `db2a2e98b500c92a36947ffb43b869224ca1e11b2bc15a593bb43135a9821f20` |
+| macOS disk trace | `5b053e93ed62070c91e40d2311bbe9799bba0d9666d8bef109533dda5c386d6f` |
+| Windows disk trace | `9e5ff6822f335fd4813fc8f9beccad2ef291cfa0c1302bc3dbe42a66cf22c312` |
