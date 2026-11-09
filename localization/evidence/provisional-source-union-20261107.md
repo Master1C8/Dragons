@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v36-20261109.json`
-has SHA-256 `ab39e919251b20507469546c80ab21672a6455c02028ef69d41f8adfcdb606df`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v37-20261110.json`
+has SHA-256 `3bc51164848d97623ed8bebbe3d9c8d680525b744e776a1a6432b982441fb47e`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -279,6 +279,9 @@ exports matched byte-for-byte and only those 20 roles differ from v35.
 See [the pause controls](ui-source-roles-20261107.md#development-gate-and-v36),
 [objective paths](objective-text-source-20261107.md#v36-objective-entry-path-audit)
 and [dropdown mode](managed-text-sinks-20261107.md#v36-dropdown-multi-select-labels).
+
+The v37 export preserves 184 diagnostic representation occurrences
+from 21 methods. See [the formatter and debug-view audit](managed-game-consumers-20261109.md#v37-diagnostic-representations-2026-11-10).
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values still require visibility review, only five managed assemblies are

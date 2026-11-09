@@ -390,6 +390,8 @@ def build(work, roles_path):
                         role, consumer = binding
                         if role == 'diagnostic-text-needs-visibility-review' and consumer in managed.PLAYER_LOG_SINKS:
                             role = 'preserve-exactly-player-log-text'
+                        elif role == 'string-representation-needs-visibility-review':
+                            role = 'preserve-exactly-diagnostic-representation'
                 put(records, {'id': f'managed:{platform}:{assembly}:{row["id"]}', 'family': 'managed',
                               'role': role, 'assemblySha256': data['assemblySha256'],
                               'method': row['method'], 'ilOffset': row['ilOffset'],

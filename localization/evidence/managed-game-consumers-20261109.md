@@ -239,4 +239,46 @@ Local reports and scanner source are under
 | macOS managed flow | `38a58968f3b938e82ee4a4d1b57e9db2cea6c2ea4d9b08def35da14581705141` |
 | Windows managed flow | `eaa727fd40f63d0341250e8cb275f05cb235c340f0a9843811962940ba8be6e5` |
 
+## v37 diagnostic representations, 2026-11-10
+
+The original managed inventories still match all 170 macOS and 172
+Windows assembly hashes. The follow-up read the bodies of all 21
+formatter methods in the v36 review group and checked direct
+references, typed boxing and constrained calls, immediate subclasses,
+selected generic formatting calls and exact non-`ToString` reflection
+literals. It traced the following paths.
+
+| Family | Occurrences | Evidence |
+| --- | ---: | --- |
+| Game state | 20 | `ToString` formats for menu intent, current bark, ticket lock and flag values. No direct or typed formatting reference in the pinned scan. |
+| Yarn Spinner | 40 | The pluralizers are called only by `TryParseArgs`, whose error result goes to the player log. The string and metadata table structs' diagnostic formats have no direct or typed formatting reference. The debug-list renderer has no assigned view on either build. |
+| TextMeshPro | 36 | Bounds and texture-packer metadata formats have no direct or typed formatting reference. `TextProcessingElement.DebuggerDisplay` is named by `DebuggerDisplayAttribute`. |
+| Unity UI | 88 | Event and raycast state dumps. The direct `PointerEventData.ToString` caller is the extended input event's formatter. Its two constrained raycast conversions remain within the input dump. |
+
+The debug-list formatter does have a real TMP setter through
+`InMemoryVariableStorage.Update`. The guard checks the view reference
+before formatting. All five pinned serialized storage components on
+each build round-tripped exactly and have a null `debugTextView`.
+The managed scan found only the three reads inside that method and
+no direct writes. This excludes the optional view for the verified
+source scope, while retaining its format byte-for-byte.
+
+The recipe preserves all 184 diagnostic representation literals.
+Two independent v37 invocations produced identical output. Relative
+to v36 only those 184 roles changed. This is a stock-build source
+classification. It does not model arbitrary reflection, every
+erased `Object.ToString` flow, external mods or an explicitly
+configured debug view.
+
+Local evidence is under `localization/work/diagnostic-format-expanded-20261109.lYwrKq/`
+and `localization/work/diagnostic-format-flow-20261109.dsyWKm/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Expanded scanner source | `db7801199769629ab28d1ea47f2b967a42e8e3759c4b694068339ae3de3e118f` |
+| macOS formatter scan | `7f5246370b6ac42d6377146c5886f81ef9510914a29b0f14820a70294931f9f5` |
+| Windows formatter scan | `ac4576fdfabd53f68b4413e0169c539f971e914288ebdec09e458f815b00c27e` |
+| macOS debug-view bindings | `de038d2486c697bb09f23a408ba96a2e7884073b7cdea8858e53e99aed64f535` |
+| Windows debug-view bindings | `e0712e83a843f36dc068145196842d482e1a5ee3ebc51a7a04779c04afd42636` |
+
 The full localization suite passed all 180 tests with v28.

@@ -179,7 +179,7 @@ class SourceInventoryUnitTests(unittest.TestCase):
                 self.assertEqual([r['role'] for r in rows], [role], (platform, method, value))
             self.assertFalse(any(r['role'] == 'needs-classification' for r in game_rows))
             flags = [r for r in game_rows if r['method'] == 'System.String WalkNWash.Flags.FlagEntry::ToString()']
-            self.assertEqual([r['role'] for r in flags], ['string-representation-needs-visibility-review'] * 6)
+            self.assertEqual([r['role'] for r in flags], ['preserve-exactly-diagnostic-representation'] * 6)
             ui_code = [r for r in result['entries'] if r['id'].startswith(f'managed:{platform}:UnityEngine.UI:')]
             self.assertFalse(any(r['role'] == 'needs-classification' for r in ui_code))
             toggle = [r for r in ui_code if 'DefaultControls::CreateToggle(' in r['method']
@@ -220,7 +220,11 @@ class SourceInventoryUnitTests(unittest.TestCase):
         log_rows = [r for r in result['entries'] if r['role'] == 'preserve-exactly-player-log-text']
         self.assertEqual(len(log_rows), 582)
         self.assertTrue(all(r['consumer'] in inventory.managed.PLAYER_LOG_SINKS for r in log_rows))
+        representations = [r for r in result['entries'] if r['role'] == 'preserve-exactly-diagnostic-representation']
+        self.assertEqual(len(representations), 184)
+        self.assertEqual(len({r['method'] for r in representations}), 21)
         for platform in ('macos', 'windows'):
+            self.assertEqual(sum(platform in r['source'] for r in representations), 92)
             commands = [r for r in result['entries'] if platform in r['source'] and
                         r['id'].startswith(f'managed:{platform}:YarnSpinner.Unity:') and
                         'Yarn.Unity.Actions/CommandRegistration::' in r['method']]
