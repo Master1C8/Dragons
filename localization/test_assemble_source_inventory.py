@@ -163,11 +163,22 @@ class SourceInventoryUnitTests(unittest.TestCase):
             egg = [r for r in game_rows if r['source'][platform] == 'Player put egg']
             self.assertEqual({r['role'] for r in egg}, {'dragon-bark-description-needs-runtime-review',
                                                         'dragon-bark-transition-reason-needs-runtime-review'})
+            for value, method, role in (
+                ('hand.l', 'System.Void WalkNWashStepHandler::Start()', 'preserve-exactly-rig-key'),
+                ('_BaseColorMap_ST', 'System.Void WalkNWashParticleSpline::LateUpdate()',
+                 'preserve-exactly-renderer-key'),
+                ('', 'System.Boolean LevelFlow::GetRandomNagDialog(System.Int32,System.String&)',
+                 'preserve-exactly-empty-value'),
+                ('Idle', 'System.String DragonBark::GetDescription()', 'dragon-bark-description-needs-runtime-review'),
+            ):
+                rows = [r for r in game_rows if r['source'][platform] == value and r['method'] == method]
+                self.assertEqual([r['role'] for r in rows], [role], (platform, method, value))
+            self.assertEqual(sum(r['role'] == 'needs-classification' for r in game_rows), 26 if platform == 'macos' else 27)
         wait = next(r for r in result['entries'] if r['source'].get('windows') == 'Waiting for flag {0}...{1}')
         self.assertEqual(wait['role'], 'diagnostic-text-needs-visibility-review')
         self.assertEqual(wait['consumer'], 'System.Void UnityEngine.Debug::Log(System.Object)')
         self.assertEqual(sum(r['role'] == 'needs-classification' for r in result['entries']
-                             if r['family'] == 'managed'), 937)
+                             if r['family'] == 'managed'), 871)
         component_rows = [r for r in result['entries'] if r['family'] == 'game-component']
         for platform in ('macos', 'windows'):
             cold = [r for r in component_rows if r['source'].get(platform) == 'DragonColdBalls']

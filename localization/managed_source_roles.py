@@ -276,6 +276,57 @@ REFLECTION_GET_METHOD = 'System.Reflection.MethodInfo System.Type::GetMethod(Sys
 REGISTER_REFLECTED_COMMAND = (
     'System.Void Yarn.Unity.IActionRegistration::AddCommandHandler(System.String,System.Reflection.MethodInfo)')
 
+# These values reach their consumers through locals, branches or arrays in
+# the pinned game methods. A matching literal in any other method is separate.
+GAME_METHOD_LITERALS = {
+    'System.Void WalkNWashStepHandler::Start()':
+        ({'hand.l', 'foot_dupli_001.l', 'hand.r', 'foot_dupli_001.r', 'foot.l', 'foot.r'},
+         'preserve-exactly-rig-key', 'System.Void WalkNWashStepHandler::AddFoot(System.String[])'),
+    'System.Void LocomotionAnimationBridge::PlayStepSFX(UnityEngine.AnimationEvent)':
+        ({'Foot1.R', 'Foot1.L'}, 'preserve-exactly-rig-key',
+         'System.Boolean LocomotionAnimationBridge::TryFindTransform(System.String,UnityEngine.Transform,UnityEngine.Transform&)'),
+    'System.Void WalkNWashParticleSpline::LateUpdate()':
+        ({'_BaseColorMap_ST', '_EmissiveMap_ST'}, 'preserve-exactly-renderer-key',
+         'System.Void UnityEngine.Material::SetVector(System.String,UnityEngine.Vector4)'),
+    'System.Void WalkNWashSceneState::OnYarnFlagSet(System.String,System.Object)':
+        ({'$', ''}, 'preserve-exactly-state-key', 'System.Void WalkNWash.Flags.Flags::Set(System.String,System.Boolean)'),
+    'T Raliv.AutoLibrary.AutoLibrary`1::FindByName(System.String)':
+        ({'Body_Canine', 'Body_Canine_Clothes'}, 'preserve-exactly-object-lookup',
+         'Raliv.AutoLibrary.AutoLibrary`1::elementDictionary'),
+    'System.Void Raliv.AnimationSystem.Animation::RunQueuedCommands(AnimationStationBase/AnimatedBody[])':
+        ({'Wait', ''}, 'preserve-exactly-command', 'System.String Raliv.AnimationSystem.Animation::waitString'),
+    'System.Void Raliv.AnimationSystem.CameraDirectionSet::PositionCamera(OrbitCamera)':
+        ({'TargetScreenPosition'}, 'preserve-exactly-state-key',
+         'System.Boolean GraphProcessor.BaseGraph::SetParameterValue(System.String,System.Object)'),
+    'System.Void Raliv.AnimationSystem.PosePreview::TPose()':
+        ({'TPose'}, 'preserve-exactly-animation-key',
+         'System.Void UnityEngine.Animator::Play(System.String,System.Int32,System.Single)'),
+    'System.Void InteractableDismissButton::OnDragonStateChanged(WalkNWashSceneState/DragonState)':
+        ({'Flashing'}, 'preserve-exactly-animation-key',
+         'System.Void UnityEngine.Animator::SetBool(System.String,System.Boolean)'),
+    **{method: ({value}, 'preserve-exactly-animation-key',
+                 'System.Void UnityEngine.Animator::SetFloat(System.String,System.Single)')
+       for method, value in (
+           ('System.Void InteractableJukebox::Start()', 'MusicSpeed'),
+           ('System.Void AnimationBlender::Update()', 'Speed'),
+           ('DragonBarkResponse DragonBarkSexAct::Update(DragonBarker)', 'SexSpeed'),
+       )},
+    **{method: ({'TempVFX'}, 'preserve-exactly-object-name', 'System.Void UnityEngine.GameObject::.ctor(System.String,System.Type[])')
+       for method in ('System.Void InteractableWetSponge::SpawnVFX(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)',
+                      'System.Void VisualEffectHelper::SpawnVFX(UnityEngine.VFX.VisualEffectAsset,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)')},
+    **{f'System.Boolean {owner}::{method}({params})':
+        ({''}, 'preserve-exactly-empty-value', 'System.String& failure result')
+       for owner, methods, params in (
+           ('LevelConfiguration', ('GetRandomIdleDialog', 'GetRandomNagDialog'), 'System.String&'),
+           ('LevelFlow', ('GetRandomIdleDialog', 'GetRandomNagDialog'), 'System.Int32,System.String&'),
+           ('WalkNWashSceneState', ('TryGetRandomIdleDialog', 'TryGetRandomNagDialog'), 'System.String&'),
+       ) for method in methods},
+    'System.Void WalkNWash.Flags.FlagEntry::.ctor(System.String,System.Boolean)':
+        ({''}, 'preserve-exactly-empty-value', 'System.String WalkNWash.Flags.FlagEntry::stringValue'),
+    'System.String DragonBark::GetDescription()':
+        ({'Idle'}, 'dragon-bark-description-needs-runtime-review', 'System.String DragonBark::GetDescription()'),
+}
+
 
 def game_specific_role(row):
     method, value = row['method'], row['value']
@@ -283,6 +334,11 @@ def game_specific_role(row):
         return 'preserve-exactly-json-protocol', method
     if value in SAVE_PATH_PARTS.get(method, ()):
         return 'preserve-exactly-path', method
+    binding = GAME_METHOD_LITERALS.get(method)
+    if binding is not None:
+        values, role, consumer = binding
+        if value in values:
+            return role, consumer
     if method == REGISTER_ACTIONS and '#ldstr:' in row['id']:
         suffix = row['id'].rsplit('#ldstr:', 1)[1]
         if (suffix, value) in {('8', 'MakeFace'), ('10', 'Open'), ('12', 'LookAt'), ('14', 'ClearLook')}:

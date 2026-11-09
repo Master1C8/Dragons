@@ -47,3 +47,32 @@ The remaining unclassified managed occurrences are 119 in
 `Assembly-CSharp`, 314 in `YarnSpinner.Unity`, 276 in `UnityEngine.UI`,
 226 in `Unity.TextMeshPro` and 2 in `UnityScriptableSettings`.
 The full localization suite passed all 180 tests.
+
+## v23 method-bound literals
+
+Complete method IL from each original game DLL traces 32 occurrences
+per build to exact-preserve roles. The recipe binds each literal to its
+full method signature, so other occurrences of the same value keep
+their own roles.
+
+| Role | Occurrences across both builds | Consumer |
+| --- | ---: | --- |
+| Rig key | 18 | Foot arrays reach `AddFoot` and transform lookup. |
+| Empty value | 14 | Failed idle and nag lookups return empty strings, and the flag constructor initializes its empty string field. |
+| Animation key | 10 | The Animator plays a named state or sets named float and Boolean parameters. |
+| State key | 6 | Yarn flag normalization strips the dollar prefix. The camera graph uses an exact parameter name. |
+| Object name or lookup | 8 | Temporary visual effects use a named object. The auto library looks up exact dictionary keys. |
+| Renderer key | 4 | `Material.SetVector` receives the two shader property names. |
+| Command | 4 | The queued animation command parser recognizes `Wait` and an empty argument. |
+
+`DragonBark.GetDescription` returns `Idle` in both builds. Its
+visibility remains open. There are 871 managed occurrences still
+unclassified, including 53 in game code.
+
+The SHA-256-checked IL dumps are in
+`localization/work/background-combined-20261109.yMvcOH/`.
+`managed-macos.il` has SHA-256
+`1e229bec1494ddc4371cb49c63f762e7e5d5e1befc142fb956d74402cb8c24b6`.
+`managed-windows.il` has SHA-256
+`e0c76f46a360ca66b6f653b2313dd7360e27c9662eae71376d908bbf384666ba`.
+The full localization suite passed all 180 tests with v23.

@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v22-20261109.json`
-has SHA-256 `9c7a2fd726edaae4dedb6e9438b52a6be8c2b6abe1177557f468a019e28e58e3`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v23-20261109.json`
+has SHA-256 `9cf6b953bdcd4678a135e42648edc7b60810a9099c7569734f2d6737f36f0d27`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -216,6 +216,13 @@ exports matched byte-for-byte. Comparing against v21 verified that all
 source identities and values match, and the only changes are the new
 roles and consumer bindings. See
 [managed game consumers](managed-game-consumers-20261109.md).
+
+The v23 export resolves 64 more managed occurrences to exact-preserve
+roles and sends both `DragonBark.GetDescription` occurrences of `Idle`
+to runtime visibility review. Both v23 exports match byte-for-byte.
+Against v22, all source identities, values and locations match. Only
+roles and consumers changed. See
+[the v23 IL review](managed-game-consumers-20261109.md#v23-method-bound-literals).
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are
