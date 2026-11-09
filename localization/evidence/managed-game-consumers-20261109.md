@@ -99,3 +99,36 @@ The SHA-256-checked IL dumps are in
 `residual-windows.il` has SHA-256
 `ed0744bc1e90b6c3c0891f22e26999bfbd67451af1e4dff4f255e1133625f40a`.
 The full localization suite passed all 180 tests with v24.
+
+## v25 Unity UI and settings dependencies
+
+Both `UnityEngine.UI.dll` fingerprints matched the pinned source
+inventory. Full method IL binds 142 exact-preserve occurrences to
+object names, shader keys, input normalization, empty values,
+reflected method names and an exception parameter. Ten canvas
+update strings are profiler labels. Thirty-six strings feed
+diagnostics, and 88 construct string representations with pending
+visibility review. The two `Toggle` occurrences in each
+`DefaultControls.CreateToggle` demonstrate the distinction
+between the object name and the existing candidate caption.
+
+A method-reference scan read 170 macOS and 172 Windows managed
+DLLs from their original player directories. All 58 references
+to `DefaultControls` methods per build came from Unity UI itself.
+This bounds direct managed use within those folders. Engine or
+reflection entry points and runtime visibility remain open.
+
+The generated `{0} x {1}` resolution format is preserved in each
+build. It formats the width and height read from Unity's runtime
+resolution list, as verified by the pinned
+[settings method reports](settings-semantics-20261107.md).
+The remaining 540 unclassified managed occurrences are in
+Yarn Spinner Unity and TextMeshPro.
+
+Full methods, caller inputs and references are under
+`localization/work/dependency-roles-20261109.UZpgoE/`.
+`macos.il` has SHA-256
+`bbfe629b10b8fab0e993ed0e8a3fa1312e7c9022a4fe649acc45621bcef0b6b6`.
+`windows.il` has SHA-256
+`14d6debf0a39c09f7e7d934b2e8d1c2732a9a248b51980550cd3a8037b94eb06`.
+The full localization suite passed all 180 tests with v25.

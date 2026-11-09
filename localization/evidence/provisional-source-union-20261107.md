@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v24-20261109.json`
-has SHA-256 `59af0e359fc365866c1c095684f880f98ac8067fa5ab0e10b55738cee9e82bb5`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v25-20261109.json`
+has SHA-256 `343c6dfef4cda9258db9ec800e4fed2b2feba8c7d83da554bda4302c2f2b68d6`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -229,6 +229,12 @@ occurrences to an exact-preserve or explicit review role. Independent
 exports match byte-for-byte, and comparison with v23 verifies that
 only roles and consumers changed. See
 [the v24 IL review](managed-game-consumers-20261109.md#v24-remaining-game-assembly-literals).
+
+The v25 export assigns roles to all 276 remaining Unity UI occurrences
+and the two generated resolution format occurrences. Two separate
+exports matched byte-for-byte, and comparison against v24 verifies
+that only the 278 roles and their consumer bindings changed.
+See [the dependency IL review](managed-game-consumers-20261109.md#v25-unity-ui-and-settings-dependencies).
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are

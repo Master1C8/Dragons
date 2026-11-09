@@ -176,11 +176,28 @@ class SourceInventoryUnitTests(unittest.TestCase):
             self.assertFalse(any(r['role'] == 'needs-classification' for r in game_rows))
             flags = [r for r in game_rows if r['method'] == 'System.String WalkNWash.Flags.FlagEntry::ToString()']
             self.assertEqual([r['role'] for r in flags], ['string-representation-needs-visibility-review'] * 6)
+            ui_code = [r for r in result['entries'] if r['id'].startswith(f'managed:{platform}:UnityEngine.UI:')]
+            self.assertFalse(any(r['role'] == 'needs-classification' for r in ui_code))
+            toggle = [r for r in ui_code if 'DefaultControls::CreateToggle(' in r['method']
+                      and r['source'][platform] == 'Toggle']
+            self.assertEqual([(r['ilOffset'], r['role']) for r in toggle], [
+                (0, 'preserve-exactly-object-name'), (210, 'engine-default-text-needs-visibility-review'),
+            ])
+            stencil = [r for r in ui_code if r['method'] == inventory.managed.UI_STENCIL_ADD
+                       and r['source'][platform] == '_Stencil']
+            self.assertEqual([r['consumer'] for r in stencil], [
+                'System.Boolean UnityEngine.Material::HasProperty(System.String)',
+                'System.Void UnityEngine.Material::SetFloat(System.String,System.Single)',
+            ])
+            resolution = [r for r in result['entries']
+                          if r['id'].startswith(f'managed:{platform}:UnityScriptableSettings:')
+                          and r['source'][platform] == '{0} x {1}']
+            self.assertEqual([r['role'] for r in resolution], ['preserve-exactly-resolution-format'])
         wait = next(r for r in result['entries'] if r['source'].get('windows') == 'Waiting for flag {0}...{1}')
         self.assertEqual(wait['role'], 'diagnostic-text-needs-visibility-review')
         self.assertEqual(wait['consumer'], 'System.Void UnityEngine.Debug::Log(System.Object)')
         self.assertEqual(sum(r['role'] == 'needs-classification' for r in result['entries']
-                             if r['family'] == 'managed'), 818)
+                             if r['family'] == 'managed'), 540)
         component_rows = [r for r in result['entries'] if r['family'] == 'game-component']
         for platform in ('macos', 'windows'):
             cold = [r for r in component_rows if r['source'].get(platform) == 'DragonColdBalls']

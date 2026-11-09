@@ -361,6 +361,8 @@ def build(work, roles_path):
                     binding = binding or managed.direct_role(row, assembly) or managed.context_role(detailed)
                     if binding is None and assembly == 'Assembly-CSharp':
                         binding = managed.game_specific_role(row)
+                    if binding is None:
+                        binding = managed.dependency_role(row, assembly)
                     if binding is not None:
                         role, consumer = binding
                 put(records, {'id': f'managed:{platform}:{assembly}:{row["id"]}', 'family': 'managed',

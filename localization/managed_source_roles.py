@@ -389,6 +389,124 @@ def game_specific_role(row):
     return None
 
 
+DEFAULT_UI_NAMES = {
+    'Panel': ('Panel', {}),
+    'Button': ('Button (Legacy)', {'Text (Legacy)'}),
+    'Text': ('Text (Legacy)', {}),
+    'Image': ('Image', {}),
+    'RawImage': ('RawImage', {}),
+    'Slider': ('Slider', {'Background', 'Fill Area', 'Fill', 'Handle Slide Area', 'Handle'}),
+    'Scrollbar': ('Scrollbar', {'Sliding Area', 'Handle'}),
+    'Toggle': ('Toggle', {'Background', 'Checkmark', 'Label'}),
+    'InputField': ('InputField (Legacy)', {'Placeholder', 'Text (Legacy)'}),
+    'Dropdown': ('Dropdown (Legacy)', {'Label', 'Arrow', 'Template', 'Viewport', 'Content',
+                                       'Item', 'Item Background', 'Item Checkmark', 'Item Label'}),
+    'ScrollView': ('Scroll View', {'Viewport', 'Content'}),
+}
+DEFAULT_UI_METHODS = {
+    f'UnityEngine.GameObject UnityEngine.UI.DefaultControls::Create{kind}(UnityEngine.UI.DefaultControls/Resources)':
+        names for kind, names in DEFAULT_UI_NAMES.items()
+}
+UI_STENCIL_ADD = (
+    'UnityEngine.Material UnityEngine.UI.StencilMaterial::Add(UnityEngine.Material,System.Int32,'
+    'UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.ColorWriteMask,'
+    'System.Int32,System.Int32)')
+UI_STENCIL_KEYS = {'_Stencil', '_StencilOp', '_StencilComp', '_StencilReadMask', '_StencilWriteMask', '_ColorMask'}
+UI_ARGUMENT_EXCEPTION = 'System.Void System.ArgumentException::.ctor(System.String)'
+UI_PARAMETER_EXCEPTION = 'System.Void System.ArgumentException::.ctor(System.String,System.String)'
+UI_EVENT_GET_LIST = (
+    'System.Void UnityEngine.EventSystems.ExecuteEvents::GetEventList(UnityEngine.GameObject,'
+    'System.Collections.Generic.IList`1<UnityEngine.EventSystems.IEventSystemHandler>)')
+UI_EMPTY_INPUT_CONSUMERS = {
+    'System.Void UnityEngine.UI.InputField::.ctor()': 'System.String UnityEngine.UI.InputField::m_OriginalText',
+    'System.Void UnityEngine.UI.InputField::SetText(System.String,System.Boolean)':
+        'UnityEngine.UI.InputField::SetText input normalization',
+    'System.Void UnityEngine.UI.InputField::LateUpdate()': 'System.String UnityEngine.UI.InputField::m_Text',
+    'UnityEngine.UI.InputField/EditState UnityEngine.UI.InputField::KeyPressed(UnityEngine.Event)':
+        'System.Void UnityEngine.UI.InputField::set_clipboard(System.String)',
+    'System.String UnityEngine.UI.InputField::GetSelectedString()': 'empty selection return value',
+    'System.Void UnityEngine.UI.InputField::ActivateInputFieldInternal()': 'UnityEngine.TouchScreenKeyboard::Open',
+    'System.Void UnityEngine.UI.Text::set_text(System.String)': 'System.String UnityEngine.UI.Text::m_Text',
+}
+UI_TEXT_REPRESENTATIONS = {
+    'System.String UnityEngine.UI.LayoutRebuilder::ToString()',
+    *{f'System.String UnityEngine.EventSystems.{owner}::ToString()' for owner in (
+        'PointerEventData', 'EventSystem', 'PointerInputModule', 'TouchInputModule', 'RaycastResult', 'BaseRaycaster',
+    )},
+}
+UI_DIAGNOSTICS = {
+    'System.Void UnityEngine.UI.ToggleGroup::ValidateToggleIsInGroup(UnityEngine.UI.Toggle)': UI_ARGUMENT_EXCEPTION,
+    'T UnityEngine.EventSystems.ExecuteEvents::ValidateEventData(UnityEngine.EventSystems.BaseEventData)':
+        UI_ARGUMENT_EXCEPTION,
+    'System.Void UnityEngine.EventSystems.EventSystem::set_current(UnityEngine.EventSystems.EventSystem)':
+        'System.Void UnityEngine.Debug::LogError(System.Object)',
+    ('System.Void UnityEngine.EventSystems.EventSystem::SetSelectedGameObject(UnityEngine.GameObject,'
+     'UnityEngine.EventSystems.BaseEventData)'): 'System.Void UnityEngine.Debug::LogError(System.Object)',
+    ('System.Boolean UnityEngine.EventSystems.ExecuteEvents::Execute(UnityEngine.GameObject,'
+     'UnityEngine.EventSystems.BaseEventData,UnityEngine.EventSystems.ExecuteEvents/EventFunction`1<T>)'):
+        'System.Void UnityEngine.Debug::LogException(System.Exception)',
+}
+
+
+def dependency_role(row, assembly):
+    method, value, offset = row['method'], row['value'], row['ilOffset']
+    if assembly == 'UnityScriptableSettings' and (
+            method, value, offset) == (
+            'ScriptableSettingString[] UnityScriptableSettings.SettingResolution::GetLocalizedDropdowns()',
+            '{0} x {1}', 77):
+        return 'preserve-exactly-resolution-format', 'System.String System.String::Format(System.String,System.Object,System.Object)'
+    if assembly != 'UnityEngine.UI':
+        return None
+    names = DEFAULT_UI_METHODS.get(method)
+    if names:
+        root, children = names
+        if offset == 0 and value == root:
+            return 'preserve-exactly-object-name', (
+                'UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateUIElementRoot('
+                'System.String,UnityEngine.Vector2,System.Type[])')
+        if value in children:
+            return 'preserve-exactly-object-name', (
+                'UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateUIObject('
+                'System.String,UnityEngine.GameObject,System.Type[])')
+    if method in UI_TEXT_REPRESENTATIONS:
+        return 'string-representation-needs-visibility-review', method
+    if method in UI_DIAGNOSTICS:
+        return 'diagnostic-text-needs-visibility-review', UI_DIAGNOSTICS[method]
+    if method in UI_EMPTY_INPUT_CONSUMERS and not value:
+        return 'preserve-exactly-empty-value', UI_EMPTY_INPUT_CONSUMERS[method]
+    if method == 'System.Void UnityEngine.UI.InputField::SetText(System.String,System.Boolean)' and value in ('\0', '\n', '\t'):
+        return 'preserve-exactly-input-control', 'System.String System.String::Replace(System.String,System.String)'
+    if method == 'System.Char UnityEngine.UI.InputField::Validate(System.String,System.Int32,System.Char)' and value == "!#$%&'*+-/=?^_`{|}~":
+        return 'preserve-exactly-input-control', 'System.Int32 System.String::IndexOf(System.Char)'
+    if method == 'System.Void UnityEngine.UI.InputField::UpdateGeometry()' and value == ' Input Caret':
+        return 'preserve-exactly-object-name', 'System.Void UnityEngine.GameObject::.ctor(System.String,System.Type[])'
+    if method == 'System.Void UnityEngine.UI.CanvasUpdateRegistry::.ctor()' and value in {
+            'CanvasUpdate.Prelayout', 'CanvasUpdate.Layout', 'CanvasUpdate.PostLayout',
+            'CanvasUpdate.PreRender', 'CanvasUpdate.LatePreRender'}:
+        return 'profiler-label', 'System.String[] UnityEngine.UI.CanvasUpdateRegistry::m_CanvasUpdateProfilerStrings'
+    if method == 'System.Void UnityEngine.UI.ReflectionMethodsCache::.ctor()' and value in {
+            'Raycast', 'RaycastAll', 'RaycastNonAlloc', 'GetRayIntersectionAll', 'GetRayIntersectionNonAlloc'}:
+        return 'preserve-exactly-reflection-member', 'System.Reflection.MethodInfo System.Type::GetMethod(System.String,System.Type[])'
+    if method == UI_EVENT_GET_LIST:
+        if value == 'results':
+            return 'preserve-exactly-parameter-name', UI_PARAMETER_EXCEPTION
+        if value == 'Results array is null':
+            return 'diagnostic-text-needs-visibility-review', UI_PARAMETER_EXCEPTION
+    if method == UI_STENCIL_ADD:
+        if value in UI_STENCIL_KEYS or value == '_UseUIAlphaClip':
+            return 'preserve-exactly-renderer-key', 'System.Void UnityEngine.Material::SetFloat(System.String,System.Single)'
+        if value == 'Material ' or value in {f" doesn't have {key} property" for key in UI_STENCIL_KEYS}:
+            return 'diagnostic-text-needs-visibility-review', (
+                'System.Void UnityEngine.UI.StencilMaterial::LogWarningWhenNotInBatchmode(System.String,UnityEngine.Object)')
+        if value == 'Stencil Id:{0}, Op:{1}, Comp:{2}, WriteMask:{3}, ReadMask:{4}, ColorMask:{5} AlphaClip:{6} ({7})':
+            return 'preserve-exactly-object-name', 'System.Void UnityEngine.Object::set_name(System.String)'
+    if method == ('UnityEngine.UI.Dropdown/DropdownItem UnityEngine.UI.Dropdown::AddItem('
+                  'UnityEngine.UI.Dropdown/OptionData,System.Boolean,UnityEngine.UI.Dropdown/DropdownItem,'
+                  'System.Collections.Generic.List`1<UnityEngine.UI.Dropdown/DropdownItem>)') and value in {'Item ', '', ': '}:
+        return 'preserve-exactly-object-name', 'System.Void UnityEngine.Object::set_name(System.String)'
+    return None
+
+
 def bind_context(data, context):
     """Require the same pinned build and literal sequence in both exports."""
     header = ('schema', 'platform', 'assemblySha256', 'cecilSha256', 'sourceInstructionCount')

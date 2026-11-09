@@ -236,9 +236,73 @@ applies mouse look input while the hand action is held. The
 corrected aiming probe in
 `localization/work/background-hand-aim-20261109.Fo5uLh/`
 uses the Windows scaling and adjusts aim through the held
-stock input. Its runtime outcome is pending.
+stock input.
 
 | Artifact in `background-crouch-20261109.ky4HUP/` | SHA-256 |
 | --- | --- |
 | Unity log | `e21c896135f3226251eb2a76f429167adcfba5db5c7d6cb43efbafc34bcabcd1` |
 | Observer receipt | `232c38691573d343deff421515e6772631b688482f7d7629f59fe782c545997f` |
+
+## Windows combined branch through stock input
+
+The corrected aim reached zero measured collider separation
+through held mouse and keyboard input. The original activity
+counter rose and the original Yarn runner started and completed
+`Conrad_started_jerkoff_3`, then started and completed
+`Conrad_finished_jerkoff_3` with `line:5788e15c` and
+`line:05c673e7`. The game set `DragonFinishedFromHandJob=True`.
+
+The probe returned to the mount, installed it through the stock
+selector and completed `Conrad_placed_mount_3` with
+`line:0372e0d1`. The original performance then set its completed
+flag and cleared its in-progress flag. The runner completed the
+single-choice combined branch of `Conrad_finished_mount_3`
+with `line:82cf49aa` and transferred to `Conrad_Outro`. The
+original evaluation at entry was `CONFUSED` with dragon state 5
+(`WaitingOnBeingWashed`). Yarn completed that routing node and
+entered the existing `Conrad_OutroDirty` destination. The
+observer stopped after that entry.
+
+All 870 desktop samples confirmed the copy stayed hidden. The
+observer verified it exited and the checked installed files and
+original saves matched their prelaunch snapshots. Null graphics
+again logged repeated `FluidEmitter.Tick` exceptions. This run
+records gameplay events and supplies no visual acceptance.
+
+| Artifact in `background-hand-aim-20261109.Fo5uLh/` | SHA-256 |
+| --- | --- |
+| Unity log | `ba2fcf4f4415fb30e1565ee878bac3bd23b0d8cfb1d6c8e7500dfedd50a94237` |
+| Observer receipt | `e7636191a7dd99aabd00cb819862f94e43aaef72fca873d3d123a4ae29eed532` |
+| Companion | `e69ff5b87909781bb1fcf0ff7a08dc51d86fc4d3750b78bc767c4cfb47227524` |
+
+## Windows mount-last target candidate
+
+In the original Windows code, `CanDoPerformance` requires state 5
+and rejects a completed mount performance. The combined evaluation
+returns `DONE` only in state 6. The original Windows state setter
+and its direct callers were checked against the pinned assembly.
+The exit button accepts state 6 and advances to state 7. It does
+not change state 5 to state 6. The source `Conrad_OutroDirty` and
+`Conrad_OutroSoapy` do not set state 6. The original
+`Conrad_Outro_3` issues `SetDragonState "WaitingOnExitButton"`
+at instruction 151. The source-pinned Windows state IL has SHA-256
+`0b606db98b8c7cf9ace931a9f0067e1b3066ad2c1c64dd93da0195d47a60c695`.
+
+In both builds, finishing the other activity last selects
+`Conrad_Outro_3`. When the mount finishes last, the Windows node
+`Conrad_finished_mount_3` selects `Conrad_Outro` while the macOS
+node selects `Conrad_Outro_3`. That destination at instruction 89
+is the only instruction difference between the two nodes.
+
+The isolated Windows candidate replaces that single instruction.
+The resulting node is byte-identical to the original macOS node.
+Every other node, including the five appended repair nodes, and
+all other protobuf fields compare equal to the previous Windows
+repair. The candidate uses the original English table and is
+under `localization/work/windows-conrad-done-20261109.PredoR/`.
+The program SHA-256 is
+`e4e29b20afff9ba3306431ed316cbbb327c06e535ebcc2200b2f20bc06c00d8d`
+and the Windows asset SHA-256 is
+`59ccbdabf4579e47f0e7f8c353b7f697fcd54368423484c341c4f13803a5d335`.
+The isolated runtime probe checks the mount-last destination, four
+stock option clicks, dialogue completion and state 6.
