@@ -111,9 +111,16 @@ The observer sampled 274 times with zero foreground ownership
 and zero on-screen windows. The test process exited, and the
 checked original files and saves matched their snapshots.
 Local OCR read `Жёлтый ёж. Ъъ bь Щщ Йй.` at 0.5 confidence.
-The prepared full frame and crop await visual inspection. The
-crop bounds are `(350, 443, 390, 55)` on the original PNG.
-This test covers the Windows build under CrossOver.
+The prepared full frame and source-pixel crop show the expected
+`Жёлтый ёж. Ъъ Ьь Щщ Йй.`, including the case pairs and the
+upright stem with a lower bowl of the capital soft sign.
+The line stays within the speech bubble with clear padding.
+Crop bounds are `(350, 443, 390, 55)` on the original PNG.
+This verifies the representative one-line sample on the Windows
+build under CrossOver and the comparable macOS Metal sample.
+Both use the original presenter with temporary offscreen camera
+routing. Other UI roles, long Russian lines and native Windows
+remain separate checks.
 
 Local source and receipts are under
 `localization/work/windows-cyrillic-offscreen-20261109.eRMrOI/`.

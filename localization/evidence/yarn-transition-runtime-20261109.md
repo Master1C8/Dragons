@@ -198,3 +198,59 @@ This covers exact managed literals, compiled operands and top-level
 serialized byte matches. Dynamic name construction, reflection and
 compressed or external resources need separate investigation before
 claiming the four nodes cannot be reached through gameplay.
+
+## Compiled transfer and entry-point follow-up
+
+Reading both original YarnProject objects again found 195 nodes and
+89 named transfers on each build. The decoded instruction lists
+contain no dynamic run or detour opcodes. None of the 1,472 command
+instructions in either program starts another Yarn node through
+the game command handlers.
+
+The whole managed reference scan matched the 170 macOS and 172
+Windows DLLs in the pinned inventories. It found 26 methods per
+build that call or reference the selected Yarn runner, node or
+program APIs. The seven game-code callers cover the runner's
+existing project, the shared start coroutine, the on-enable
+dialogue component, the window and phone, and the dragon bark
+path. The start methods pass the selected name through unchanged.
+The traced name sources are serialized component fields and
+level dialogue fields, including the progress, idle, nag, intro,
+phone, mount and finish dialogue paths. The five serialized
+runners have auto-start disabled and share the same Yarn project.
+
+All 31 pinned local StreamingAssets files per build were checked
+for the four routing names in UTF-8 and both UTF-16 byte orders.
+The three bundles were also decompressed and their 14 serialized
+objects inspected. No matching name was found. The APV files were
+checked for raw matches against the pinned bytes.
+
+The conservative named closure starts with the 123 nonempty
+serialized game dialogue references and adds the configured
+`Start` node as a precaution. There are 95 distinct root names
+per build. The graph follows every named transfer, including
+conditional ones.
+
+| Program | Reachable nodes | Missing named targets in this closure |
+| --- | ---: | --- |
+| Original macOS | 133 | None |
+| Original Windows | 137 | `Conrad_OutroDone` |
+| Current repaired macOS | 133 | None |
+| Current repaired Windows | 133 | None |
+
+The four legacy routing nodes are absent from each closure.
+Adding those names as test roots made the graph include them,
+confirming the reachability check distinguishes defined nodes
+from rooted ones. The four individual transfers have controlled
+VM evidence, while ordinary entry into those nodes has not been
+observed. Reflection, external programs and uninspected entry
+points remain outside this proof.
+
+Reports are in `localization/work/yarn-dynamic-callers-20261109.MlBmaH/`.
+
+| Report | macOS SHA-256 | Windows SHA-256 |
+| --- | --- | --- |
+| Managed caller IL | `f4c434ed2cf776a4ddb3699fd817b9f5f5d846d7b4d0f030b007c7864d6baa12` | `e9fc697da1764e01b6679f783f8f3bca3a839a774feac9968900404abe9cdbb7` |
+| Game entry names and their sources | `465d353634c6efa3a900a0b14784feb4ab187bd1652445d8240a017a29b969dc` | `ca753042a710e19864a270087d3e1c13cefd61389cb3b4733f40ec5fcdb3bacb` |
+| Program and streaming evidence | `9d25a71faf842a21b18afac070bfbee1d4e614292f7384082eda81fb0246f28a` | `3af798920446138b31d12508992f5a10e04e25f85cd64682a274f506a002f426` |
+| Named closure | `ebc365f20e2733fd97f4152ea0b128fbb27008de9b1794ed071847d01751bccf` | `fdc4bd66ff7f42699a68dafab0d54ce9c80e48f7065e9add77a55f48ada178b7` |

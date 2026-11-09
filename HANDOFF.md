@@ -53,8 +53,13 @@ is enabled. An isolated English-table copy of the builder output
 completed the mount-last route through four stock option clicks
 and reached `WaitingOnExitButton` with evaluation `DONE`.
 The routing nodes for the four other restored destinations lack
-direct callers in the scanned originals. Dynamic reachability,
-those gameplay checks and Cyrillic rendering remain open.
+an entry in the conservative named closure of 95 inspected
+root names per build. The repaired closure has 133 nodes and
+no absent named targets on either build. Original programs have
+no dynamic node-transfer instructions, and the local bundle
+and managed caller audits found no extra ordinary entry to the
+four legacy routes. Their controlled VM results are recorded
+separately from ordinary gameplay.
 See [the gameplay receipts](localization/evidence/background-gameplay-20261109.md)
 and [the performance and Windows test](localization/evidence/background-performance-20261109.md).
 
@@ -66,9 +71,11 @@ screen capture failed. An offscreen camera follow-up produced
 a 640 × 480 frame. Visual review distinguished the case pairs
 and found the line within the dialogue bubble. A matching stock
 Windows CrossOver probe resolved all 16 occurrences and produced
-a 1074 × 544 Direct3D 11 frame awaiting visual review. An earlier
-saved Windows frame confirms the wider synthetic glyph sample and
-its closing punctuation. Details and remaining visual checks are in
+a 1074 × 544 Direct3D 11 frame. Full-frame and source-pixel review
+confirmed the same case pairs and containment. Both offscreen
+frames use temporary camera routing for the original presenter.
+An earlier saved Windows frame confirms the wider synthetic glyph
+sample and its closing punctuation. Details and remaining visual checks are in
 [the Cyrillic dialogue evidence](localization/evidence/background-cyrillic-20261109.md).
 
 Commit `3727bf3` adds 319 provisional Yarn role assignments across Ryan's later
