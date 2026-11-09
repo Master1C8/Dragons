@@ -63,5 +63,46 @@ The builder probes use `apply-candidate.py` and `observe.py`. Key result hashes:
 | `win-conrad.unity.log` | `bb9da96b509031a269b82244822f52a549067b4ffc0189093c7116cd1dc64f8c` |
 | `win-conrad-fixed.unity.log` | `45e6c358c8fc98090e7e8dda4e5d158bdd6163ec577bcd871d5a56cbc6683e7c` |
 
-The normal builder still uses the pinned original program. This checkpoint
-leaves the source, renderer, glossary, and special-scene readiness gates open.
+## Builder integration and normal input
+
+Commit `1f28b03` adds `--restore-yarn-transitions` to the macOS app builder,
+Windows asset builder and combined asset verifier. The outputs regenerate
+the exact candidate program hashes above. A real-asset regression exercises
+combined dialogue, UI and repair on both builds, checks each object, and
+rejects corrupted project bytes and a repaired asset without the explicit
+verification flag. All 170 localization tests passed.
+
+A separate Windows CrossOver test used the original managed assemblies and
+loaded a disposable slot through the game's normal menu. The pinned
+`LevelFlow` object maps save index 7 to `Conrad_3_8`. The legacy slot included
+the six unconditional start/end flags from the preceding levels, with
+`PlacedMount` left unset. The fixture SHA-256 is
+`f22430735fb7e3d69be1a525ba0eb6d2633d50af66ba243414bc67c4e7dbec09`.
+The original and repair-only copies used the same isolated CrossOver
+profile, fixture and viewport in successive runs. The candidate verified
+exactly against the original with a no-op dialogue input and only the
+YarnProject object changed.
+
+Both runs rendered the scene and recorded `DeliveredMountFrame=True` and
+`Waiting for flag PlacedMount...False`. An earlier blank frame was not
+reproduced in this paired check. Guarded player movement and interaction
+inputs were sent in the repaired build, but the flag remained false and
+the restored transition was not reached. This proves ordinary menu loading
+and entry into the scene before the transition, with no injected state or
+dialogue call during play. Normal-play transition completion and its
+side effects remain pending.
+
+Artifacts are in `localization/work/transition-builder-20261109.8zft9T/`.
+The Windows repair-only asset SHA-256 is
+`62e922ea6ee759b0d083695aa24580061989166c942a042cec95992924333065`.
+The two logs are `natural-original-control.log` and
+`natural-repaired-control.log`. The game-window captures are
+`control-world.png` and `repaired-control-world.png`. The latter was
+prepared separately as a 1280 × 1013 WebP80 preview for visual inspection.
+The original SHA-256 is
+`d3db8e65da9f4dbb5067f266cd1601b5803c1aaa9574548a7b376442ce7ea4df`;
+the preview SHA-256 is
+`0dd6a37ef25cf861a5ce68de635dd7ffdbb7a37dad14f9fbce82fd7c97f88316`.
+
+The repair remains opt-in. The source, renderer, glossary, and
+special-scene readiness gates remain open.

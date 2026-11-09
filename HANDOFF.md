@@ -8,8 +8,12 @@ reproduced the Conrad failure. A source-bound candidate appends the five
 missing nodes using existing compiled instructions and preserves all original
 node bytes. All five candidates completed in desktop Yarn for both versions
 with mocked Unity callbacks. In the game, the macOS Ryan and Windows Conrad
-probes reached the original line handler in the restored nodes. Natural entry,
-live completion, native Windows, and builder integration remain pending.
+probes reached the original line handler in the restored nodes. Commit
+`1f28b03` adds the opt-in repair to both builders. Ordinary menu input loaded
+`Conrad_3_8` on the original and repair-only Windows copies under CrossOver.
+Both reached the in-game wait for `PlacedMount`. The player-input probe
+stopped before placing the equipment or reaching the transition. Normal
+transition completion and native Windows remain pending.
 See [the transition evidence](localization/evidence/yarn-transition-runtime-20261109.md).
 
 Commit `3727bf3` adds 319 provisional Yarn role assignments across Ryan's later
