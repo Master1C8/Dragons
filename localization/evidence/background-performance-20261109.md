@@ -202,3 +202,20 @@ Local source and receipts for the second approach are under
 | Unity log | `316a70e4d3a40e986cf6c0a4148836c28597ab20a06a3d1ad4bd938761319997` |
 | Observer receipt | `f952c81a621666843f4182fae842a4295eaa96518342f2af45896d8bbfa764de` |
 | Original Windows interaction IL | `6fec704c1d973b8f006ac19ad0628f9dc49517da5be7687eb9a7279e1d7b7290` |
+
+The first crouch probe counted 17 active hitbox candidates and
+measured a primary sphere extent of 0.400 world units. After the
+stock approach reached 1.271 horizontal units from the center, the
+companion stopped on a null reference while obtaining the crouch
+mode before pressing the key. The following probe reads the setting
+from the active `PlayerController` instance. The failed run stayed
+hidden in all 418 samples, exited, and matched the checked original
+files and profile snapshots.
+
+The local failed run is under
+`localization/work/background-crouch-20261109.6ZBUGv/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Unity log | `a9c82a686fd64ec89c4a9d55953448cb3baaa3bb37150677644dfa8602f44c19` |
+| Observer receipt | `742ad793323c5dc2a3595365440fbe034fcd50075cddda2887caba684b4b5341` |

@@ -173,12 +173,14 @@ class SourceInventoryUnitTests(unittest.TestCase):
             ):
                 rows = [r for r in game_rows if r['source'][platform] == value and r['method'] == method]
                 self.assertEqual([r['role'] for r in rows], [role], (platform, method, value))
-            self.assertEqual(sum(r['role'] == 'needs-classification' for r in game_rows), 26 if platform == 'macos' else 27)
+            self.assertFalse(any(r['role'] == 'needs-classification' for r in game_rows))
+            flags = [r for r in game_rows if r['method'] == 'System.String WalkNWash.Flags.FlagEntry::ToString()']
+            self.assertEqual([r['role'] for r in flags], ['string-representation-needs-visibility-review'] * 6)
         wait = next(r for r in result['entries'] if r['source'].get('windows') == 'Waiting for flag {0}...{1}')
         self.assertEqual(wait['role'], 'diagnostic-text-needs-visibility-review')
         self.assertEqual(wait['consumer'], 'System.Void UnityEngine.Debug::Log(System.Object)')
         self.assertEqual(sum(r['role'] == 'needs-classification' for r in result['entries']
-                             if r['family'] == 'managed'), 871)
+                             if r['family'] == 'managed'), 818)
         component_rows = [r for r in result['entries'] if r['family'] == 'game-component']
         for platform in ('macos', 'windows'):
             cold = [r for r in component_rows if r['source'].get(platform) == 'DragonColdBalls']

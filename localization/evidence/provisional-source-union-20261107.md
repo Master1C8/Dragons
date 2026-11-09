@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v23-20261109.json`
-has SHA-256 `9cf6b953bdcd4678a135e42648edc7b60810a9099c7569734f2d6737f36f0d27`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v24-20261109.json`
+has SHA-256 `59af0e359fc365866c1c095684f880f98ac8067fa5ab0e10b55738cee9e82bb5`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -223,6 +223,12 @@ to runtime visibility review. Both v23 exports match byte-for-byte.
 Against v22, all source identities, values and locations match. Only
 roles and consumers changed. See
 [the v23 IL review](managed-game-consumers-20261109.md#v23-method-bound-literals).
+
+The v24 export binds all 53 remaining unclassified game assembly
+occurrences to an exact-preserve or explicit review role. Independent
+exports match byte-for-byte, and comparison with v23 verifies that
+only roles and consumers changed. See
+[the v24 IL review](managed-game-consumers-20261109.md#v24-remaining-game-assembly-literals).
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are

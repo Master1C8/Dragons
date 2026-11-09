@@ -325,6 +325,47 @@ GAME_METHOD_LITERALS = {
         ({''}, 'preserve-exactly-empty-value', 'System.String WalkNWash.Flags.FlagEntry::stringValue'),
     'System.String DragonBark::GetDescription()':
         ({'Idle'}, 'dragon-bark-description-needs-runtime-review', 'System.String DragonBark::GetDescription()'),
+    'System.Void InteractableToolEquip::OnFlagChanged(System.String,System.Boolean)':
+        ({'>', ' '}, 'diagnostic-text-needs-visibility-review',
+         'System.Void UnityEngine.Debug::Log(System.Object,UnityEngine.Object)'),
+    'System.Void WalkNWashStepHandler::AddFoot(System.String[])':
+        ({', '}, 'diagnostic-text-needs-visibility-review',
+         'System.Void UnityEngine.Debug::LogWarning(System.Object,UnityEngine.Object)'),
+    'HitboxTrigger DragonBarkFeaturePlapResponse::CreateTrigger(UnityEngine.Transform,System.Single)':
+        ({'paw lift trigger'}, 'preserve-exactly-object-name',
+         'System.Void UnityEngine.GameObject::.ctor(System.String,System.Type[])'),
+    'HitboxTrigger WalkNWashDragonBoner::CreateTrigger(UnityEngine.Transform,System.Single)':
+        ({'boner trigger'}, 'preserve-exactly-object-name',
+         'System.Void UnityEngine.GameObject::.ctor(System.String,System.Type[])'),
+    'System.Void WalkNWashMaskGenerator::Start()':
+        ({'Assets/WalkNWash/CleaningMask.png'}, 'preserve-exactly-path',
+         'System.Void WalkNWashMaskGenerator::SaveToTextureAsset(UnityEngine.RenderTexture,System.String)'),
+    'T GatorDragonGames.StateMachine`2::ProcessResponse(GatorDragonGames.Response)':
+        ({'response'}, 'preserve-exactly-parameter-name',
+         'System.Void System.ArgumentOutOfRangeException::.ctor(System.String)'),
+    'System.Boolean SkinnedMeshAttachmentSystem.SkinnedMeshBoneTools::BakeMeshCoordinate('
+    'SkinnedMeshAttachmentSystem.EvaluationBoneCache&,SkinnedMeshAttachmentSystem.MeshHit&,'
+    'SkinnedMeshAttachmentSystem.MeshCoordinates&)':
+        ({'Bone_{0}'}, 'preserve-exactly-rig-key', 'System.String[] SkinnedMeshAttachmentSystem.MeshCoordinates::bones'),
+    'System.Boolean FileManager::TryLoadJSON(System.String,SimpleJSON.JSONNode&)':
+        ({''}, 'preserve-exactly-empty-value', 'System.String local for JSON payload'),
+    **{f'System.Void {owner}::Save(SimpleJSON.JSONNode,System.Int32)':
+        ({''}, 'preserve-exactly-empty-value', 'System.Boolean FileManager::TrySaveString(System.String,System.String)')
+       for owner in ('SaveManager', 'SaveManagerV1')},
+    'System.Void Raliv.AnimationSystem.Animation/CommandAction::.ctor()':
+        ({''}, 'preserve-exactly-empty-value', 'System.String Raliv.AnimationSystem.Animation/CommandAction::command'),
+    **{f'System.Void Raliv.AnimationSystem.{owner}::.ctor()':
+        ({'None'}, 'preserve-exactly-state-key',
+         f'Raliv.AnimationSystem.{owner}::currentLineKey or previousLineKey')
+       for owner in ('AnimationBlockingAgent', 'CameraDirectionSet', 'RalivAnimator')},
+    **{f'System.String {owner}::ToString()':
+        (values, 'string-representation-needs-visibility-review', f'System.String {owner}::ToString()')
+       for owner, values in (
+           ('MenuEventUserIntent', {':[', ']'}),
+           ('DragonBarkMachine', {'BarkMachine: {0}'}),
+           ('TicketLock/Ticket', {'LockReason: {0}, {1}'}),
+           ('WalkNWash.Flags.FlagEntry', {'[{0}={1}]', '[', '="', '"]', '=UNKNOWN]'}),
+       )},
 }
 
 

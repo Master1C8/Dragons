@@ -76,3 +76,26 @@ The SHA-256-checked IL dumps are in
 `managed-windows.il` has SHA-256
 `e0c76f46a360ca66b6f653b2313dd7360e27c9662eae71376d908bbf384666ba`.
 The full localization suite passed all 180 tests with v23.
+
+## v24 remaining game assembly literals
+
+The last 53 previously unclassified occurrences in the two inspected
+`Assembly-CSharp` DLLs now have method-bound roles. Twenty-nine
+must be preserved verbatim. These initialize the `None` line keys
+or empty values, name hitbox objects and a bone format, or supply an
+editor path or exception parameter name.
+
+Four diagnostic occurrences feed the Unity log or warning methods.
+Twenty more construct `ToString()` representations for flags, tickets,
+barks and menu intents. Those representations remain under visibility
+review. In particular, the flag representations are distinct from the
+earlier, separately validated JSON save path. There are 818 occurrences
+still unclassified across the other four managed assemblies.
+
+The SHA-256-checked IL dumps are in
+`localization/work/background-crouch-20261109.6ZBUGv/`.
+`residual-macos.il` has SHA-256
+`2bd2dd3f7e65f545f6dc9c625dfb47c29c9f45c3995e0cddb1d6deaab920de64`.
+`residual-windows.il` has SHA-256
+`ed0744bc1e90b6c3c0891f22e26999bfbd67451af1e4dff4f255e1133625f40a`.
+The full localization suite passed all 180 tests with v24.
