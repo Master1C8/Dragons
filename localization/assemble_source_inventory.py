@@ -25,6 +25,16 @@ FILES = {
     'managed-strings-v2-windows-tmp.json': '1c258b4d54b65a9268560fc77e89a8a8221132be94e7611dad5a7c6ef8da2e19',
     'managed-strings-v2-macos-unity-ui.json': '43506a8ce205f5c19048dcd96fed9d962fbac1b54f455cd33ae5ad2f66d77462',
     'managed-strings-v2-windows-unity-ui.json': '5a690f36f96654e4cced458207c636ed965b1d26443b06a83e20b634e930ae74',
+    'managed-context-macos.json': '261278f7b8e69098856623ae108ea7cd6d0d0e8afc128ffb1d82dd041179879f',
+    'managed-context-macos-settings.json': '4598c0ce5071b441595886957fa4965dc8da345de644a9c7f16458e5ff36025d',
+    'managed-context-macos-yarn-unity.json': 'c5c7d6ef1d22f48aa15165f1508deff84a3c1a1fe3ba223637e0a66d43a106c7',
+    'managed-context-macos-tmp.json': '988f663139b9a214db64c5228aefa7dac1ef2e717a08e106a8903d848bd5e8b8',
+    'managed-context-macos-unity-ui.json': '56a47beabd0b2fc841d9196dbad59cd29b3e329393a70b77f381980232c0e45e',
+    'managed-context-windows.json': 'c535b980972ff114ebc16d62ba7c169da46f35f485c68d5126aa543ac17f6818',
+    'managed-context-windows-settings.json': 'd480d63b3dc2497261b51053894d238124c751ddd0ca3bccf967738b1a477e45',
+    'managed-context-windows-yarn-unity.json': '70cbfcacc030d63f98d3bb3c6dda3c3fb147c918981cc3ed96e035846c62b5d3',
+    'managed-context-windows-tmp.json': '0908f4de904023297d26fb79df3657e13298ee3c0e5d56986c9f195f106bb629',
+    'managed-context-windows-unity-ui.json': 'ab87cd0c8164a241862771b6814941e1e3cd4038bb4b82b42333e93e99524f3b',
 }
 ROLES_SHA = '6219fb3d833a85a61e92392fe7c002738d8b105db61f3f39d82f27153ecfefdc'
 INPUT_ACTION_SHA = {
@@ -331,7 +341,8 @@ def build(work, roles_path):
             data = docs[f'managed-strings-v2-{platform}{suffix}.json']
             if len(data['strings']) != data['sourceInstructionCount']:
                 raise ValueError('managed source occurrence count mismatch')
-            for row in data['strings']:
+            context = managed.bind_context(data, docs[f'managed-context-{platform}{suffix}.json'])
+            for row, detailed in zip(data['strings'], context):
                 role = 'needs-classification'
                 consumer = None
                 if assembly == 'Assembly-CSharp' and row['id'] in input_records:
@@ -345,7 +356,7 @@ def build(work, roles_path):
                     matched_inputs.add(row['id'])
                 else:
                     binding = game_consumers.get(row['id']) if assembly == 'Assembly-CSharp' else None
-                    binding = binding or managed.direct_role(row, assembly)
+                    binding = binding or managed.direct_role(row, assembly) or managed.context_role(detailed)
                     if binding is not None:
                         role, consumer = binding
                 put(records, {'id': f'managed:{platform}:{assembly}:{row["id"]}', 'family': 'managed',

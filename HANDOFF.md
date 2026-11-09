@@ -32,9 +32,11 @@ protections. All 1,839 Yarn IDs have provisional roles or protections.
 Runtime visibility, the complete preservation contract, and the other
 resource families remain open. The v16 inventory adds consumer-backed roles
 for 919 managed literal occurrences, including the separate slot label,
-progress format and menu transition reason roles. It leaves 1,999 managed
-occurrences without a provisional role. The v16 SHA-256 is
-`f51247f170094f3d9f63e8fe85a3ae6f36b84cdd87fb715af1559538b057a31a`.
+progress format and menu transition reason roles. The v17 inventory classifies
+303 more managed occurrences through bounded IL instruction sequences. It adds
+279 exact-preserve roles and 24 profiler labels, leaving 1,696 unclassified
+managed occurrences. The v17 SHA-256 is
+`62461ab1d2f9d76fd0110b784b206eced511c0dadb83c026a0d0d5d2a8538bd2`.
 
 Both UI adapters now reject changes to 34 source-bound contributor-name fields in `level2`, while leaving credit descriptions separately translatable. The pinned manifest and both original builds were tested; see `localization/evidence/credit-name-preservation-20261107.md`. This is one bounded preservation safeguard, not a complete classification or a translated corpus.
 

@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v16-20261109.json`
-has SHA-256 `f51247f170094f3d9f63e8fe85a3ae6f36b84cdd87fb715af1559538b057a31a`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v17-20261109.json`
+has SHA-256 `62461ab1d2f9d76fd0110b784b206eced511c0dadb83c026a0d0d5d2a8538bd2`.
 Its 5,204 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -126,8 +126,29 @@ defaults, diagnostic strings and objective names retain visibility review.
 The source role of `NEW` is distinct from the serialized new-slot label.
 The v16 outputs reproduced byte-for-byte, and comparison with v15 changed
 only the 919 managed records and the associated consumer report hash block.
-There are 1,999 managed occurrences still awaiting classification, with
+The v16 SHA-256 is `f51247f170094f3d9f63e8fe85a3ae6f36b84cdd87fb715af1559538b057a31a`.
+At that checkpoint 1,999 managed occurrences awaited classification, with
 runtime visibility and complete preservation separate from this count.
+
+The v17 recipe adds a pinned instruction-window export for each of the ten
+existing build and assembly combinations. Generate each input with
+`dotnet <managed-strings.dll> <build-key> <original-dll> --context` and name it
+`managed-context-<build-key>.json` in the inventory work directory. The assembler
+checks the hash and matches the header, literal ID, method token, IL offset
+and value against the corresponding v2 report. The old report remains
+byte-identical with the default invocation. Both modes reproduced for all
+ten inputs from the pinned original assemblies. Context mode rejected a
+Windows game assembly under the macOS selector before writing report output.
+
+Classification is limited to immediate stores into allowlisted fields, first
+arguments of allowlisted two-argument calls with a single independent load
+or known static getter for the other argument, and the direct Yarn delegate
+registration sequence. Reflection-based registration and general dataflow
+remain outside these rules. Two v17 builds matched byte-for-byte. The v16
+comparison found only ten newly pinned inputs and 303 managed role changes,
+comprising 279 exact-preserve roles and 24 profiler labels. All 5,204
+identities and source values are unchanged. There are 1,696 remaining
+unclassified managed occurrences.
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are

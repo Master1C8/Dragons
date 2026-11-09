@@ -17,8 +17,10 @@ var builds = new Dictionary<string, string> {
     ["windows-unity-ui"] = "e31bf1ba3ebcd9e63c1c8530d6be7799b079c4f9a5dcc29a695e4be5b26aa613"
 };
 string Hash(byte[] bytes) => Convert.ToHexString(SHA256.HashData(bytes)).ToLowerInvariant();
-if (args.Length != 2 || !builds.ContainsKey(args[0]))
-    throw new ArgumentException("Usage: managed-strings <pinned-build-key> <original managed DLL>");
+if (args.Length < 2 || args.Length > 3 || !builds.ContainsKey(args[0]) ||
+    (args.Length == 3 && args[2] != "--context"))
+    throw new ArgumentException("Usage: managed-strings <pinned-build-key> <original managed DLL> [--context]");
+bool includeContext = args.Length == 3;
 if (Hash(File.ReadAllBytes(typeof(AssemblyDefinition).Assembly.Location)) != CecilSha)
     throw new InvalidOperationException("Unsupported Mono.Cecil binary");
 var bytes = File.ReadAllBytes(args[1]);
@@ -43,6 +45,14 @@ foreach (var method in type.Methods.Where(x => x.HasBody)) {
         if (ins.Operand is not string value) throw new InvalidOperationException("Invalid ldstr operand");
         var id = method.FullName + "#ldstr:" + ordinal++;
         if (!identities.Add(id)) throw new InvalidOperationException("Duplicate instruction identity");
+        if (includeContext) {
+            var following = instructions.Skip(index + 1).Take(12)
+                .Select(x => new { offset = x.Offset, opcode = x.OpCode.Name, operand = x.Operand?.ToString() })
+                .ToList();
+            records.Add(new { id, method = method.FullName, methodToken = method.MetadataToken.ToInt32(),
+                ilOffset = ins.Offset, value, following });
+            continue;
+        }
         var followingCalls = instructions.Skip(index + 1).Take(12)
             .Where(x => x.OpCode.Code is Code.Call or Code.Callvirt or Code.Newobj)
             .Select(x => new { offset = x.Offset, opcode = x.OpCode.Name, target = x.Operand?.ToString() })
@@ -53,5 +63,7 @@ foreach (var method in type.Methods.Where(x => x.HasBody)) {
 }
 var output = new { schema = 1, platform = args[0], assemblySha256 = builds[args[0]],
     cecilSha256 = CecilSha, sourceInstructionCount = records.Count, strings = records,
-    limitations = "Only ldstr instructions in the selected pinned managed assembly. Following calls are nearby instructions, not proven dataflow. No reachability, display role, generated strings, other assemblies, assets or reflection paths are classified." };
+    limitations = includeContext
+        ? "Only ldstr instructions and their following instruction windows in the selected pinned assembly. These windows do not prove general dataflow or runtime visibility."
+        : "Only ldstr instructions in the selected pinned managed assembly. Following calls are nearby instructions, not proven dataflow. No reachability, display role, generated strings, other assemblies, assets or reflection paths are classified." };
 Console.WriteLine(JsonSerializer.Serialize(output, new JsonSerializerOptions { WriteIndented = true }));

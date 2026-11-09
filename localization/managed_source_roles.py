@@ -71,6 +71,116 @@ SLOT_METHODS = {
 }
 FORMAT_CALL = 'System.String System.String::Format(System.String,System.Object)'
 
+# These fields store identifiers used by animation, input, and rendering code.
+FIELD_ROLES = {
+    **{f'System.String TMPro.ShaderUtilities::{field}': 'preserve-exactly-renderer-key'
+       for field in ('Keyword_Bevel', 'Keyword_Glow', 'Keyword_Underlay', 'Keyword_Ratios',
+                     'Keyword_MASK_SOFT', 'Keyword_MASK_HARD', 'Keyword_MASK_TEX', 'Keyword_Outline',
+                     'ShaderTag_ZTestMode', 'ShaderTag_CullMode')},
+    **{f'System.String {field}': 'preserve-exactly-animation-key'
+       for field in ('CreditsIconAnimator::_iconIndexParameterName',
+                     'LocomotionAnimationBridge::speedParam', 'LocomotionAnimationBridge::postureParam',
+                     'LocomotionAnimationBridge::onGroundParam', 'LocomotionAnimationBridge::isSlidingParam',
+                     'LocomotionAnimationBridge::turnParam', 'IntermissionFade::_idleState',
+                     'IntermissionFade::_intermissionState', 'IntermissionFade::_blackscreenState',
+                     'IntermissionFade::_unstickPlayerState', 'IntermissionFade::_nightTimeParameter')},
+    **{f'System.String UnityEngine.UI.AnimationTriggers::m_{name}Trigger': 'preserve-exactly-animation-key'
+       for name in ('Normal', 'Highlighted', 'Pressed', 'Selected', 'Disabled')},
+    **{f'System.String UnityEngine.EventSystems.StandaloneInputModule::m_{field}': 'preserve-exactly-input-control'
+       for field in ('HorizontalAxis', 'VerticalAxis', 'SubmitButton', 'CancelButton')},
+    **{f'System.String Yarn.Unity.LineAdvancer::{field}': 'preserve-exactly-input-control'
+       for field in ('hurryUpLineAxis', 'nextLineAxis', 'hurryUpOptionsAxis', 'cancelDialogueAxis')},
+}
+FIRST_ARGUMENT_ROLES = {
+    'System.Void UnityEngine.Material::SetFloat(System.String,System.Single)': 'preserve-exactly-renderer-key',
+    'System.Void UnityEngine.Material::SetColor(System.String,UnityEngine.Color)': 'preserve-exactly-renderer-key',
+    'System.Void UnityEngine.Animator::SetBool(System.String,System.Boolean)': 'preserve-exactly-animation-key',
+    'System.Void UnityEngine.Animator::SetFloat(System.String,System.Single)': 'preserve-exactly-animation-key',
+    'System.Void WalkNWashSceneState::SetFlag(System.String,System.Boolean)': 'preserve-exactly-state-key',
+    'System.Void Yarn.Unity.VariableStorageBehaviour::SetValue(System.String,System.Boolean)':
+        'preserve-exactly-state-key',
+    'System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String,System.Int32)': 'preserve-exactly-preference-key',
+    'System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)': 'preserve-exactly-preference-key',
+    'System.Int32 SaveManager::GetDataByKey(System.String,SimpleJSON.JSONNode)': 'preserve-exactly-json-key',
+    'System.Int32 SaveManagerV1::GetDataByKey(System.String,SimpleJSON.JSONNode)': 'preserve-exactly-json-key',
+    'System.Boolean FileManager::TryLoadJSON(System.String,SimpleJSON.JSONNode&)': 'preserve-exactly-path',
+    'System.Boolean Yarn.Markup.MarkupParseResult::TryGetAttributeWithName(System.String,Yarn.Markup.MarkupAttribute&)':
+        'preserve-exactly-markup-key',
+    'System.Boolean Yarn.Markup.MarkupAttribute::TryGetProperty(System.String,System.String&)':
+        'preserve-exactly-markup-key',
+    'System.Void Yarn.Unity.LineProviderBehaviour::RegisterMarkerProcessor(System.String,Yarn.Markup.IAttributeMarkerProcessor)':
+        'preserve-exactly-markup-key',
+    'System.Boolean CsvHelper.CsvReader::TryGetField<System.String>(System.String,!!0&)':
+        'preserve-exactly-csv-key',
+    'UnityEngine.GameObject TMPro.TMP_DefaultControls::CreateUIElementRoot(System.String,UnityEngine.Vector2)':
+        'preserve-exactly-object-name',
+    'UnityEngine.GameObject TMPro.TMP_DefaultControls::CreateUIObject(System.String,UnityEngine.GameObject)':
+        'preserve-exactly-object-name',
+    'System.Void UnityEngine.UISystemProfilerApi::AddMarker(System.String,UnityEngine.Object)': 'profiler-label',
+}
+SINGLE_VALUE_LOADS = {
+    'ldnull', 'ldstr', 'ldsfld', 'ldarg', 'ldarg.s', 'ldarga', 'ldarga.s',
+    'ldarg.0', 'ldarg.1', 'ldarg.2', 'ldarg.3', 'ldloc', 'ldloc.s', 'ldloca', 'ldloca.s',
+    'ldloc.0', 'ldloc.1', 'ldloc.2', 'ldloc.3', 'ldc.i4', 'ldc.i4.s', 'ldc.i4.m1',
+    'ldc.i4.0', 'ldc.i4.1', 'ldc.i4.2', 'ldc.i4.3', 'ldc.i4.4', 'ldc.i4.5', 'ldc.i4.6',
+    'ldc.i4.7', 'ldc.i4.8', 'ldc.i8', 'ldc.r4', 'ldc.r8',
+}
+ZERO_ARGUMENT_CALLS = {
+    'UnityEngine.FullScreenMode UnityEngine.Screen::get_fullScreenMode()',
+    'System.Int32 UnityEngine.QualitySettings::GetQualityLevel()',
+    'UnityEngine.Color UnityEngine.Color::get_white()',
+    'System.Boolean UnityEngine.Application::get_isEditor()',
+}
+COMMAND_REGISTRATIONS = {
+    f'System.Void Yarn.Unity.ActionRegistrationExtension::AddCommandHandler{generic}'
+    f'(Yarn.Unity.IActionRegistration,System.String,System.{handler})'
+    for generic, handler in (
+        ('', 'Action'),
+        ('<System.Int32>', 'Action`1<!!0>'),
+        ('<System.String>', 'Action`1<!!0>'),
+        ('<UnityEngine.GameObject>', 'Action`1<!!0>'),
+        ('<UnityEngine.GameObject,UnityEngine.GameObject>', 'Action`2<!!0,!!1>'),
+        ('<System.Single>', 'Func`2<T1,System.Collections.IEnumerator>'),
+    )
+}
+
+
+def bind_context(data, context):
+    """Require the same pinned build and literal sequence in both exports."""
+    header = ('schema', 'platform', 'assemblySha256', 'cecilSha256', 'sourceInstructionCount')
+    if any(data[key] != context[key] for key in header):
+        raise ValueError('managed context header mismatch')
+    if len(context['strings']) != data['sourceInstructionCount']:
+        raise ValueError('managed context occurrence count mismatch')
+    identities = ('id', 'method', 'methodToken', 'ilOffset', 'value')
+    for source, detailed in zip(data['strings'], context['strings']):
+        if any(source[key] != detailed[key] for key in identities):
+            raise ValueError('managed context literal mismatch')
+    return context['strings']
+
+
+def context_role(row):
+    steps = row['following']
+    if not steps or steps[0]['offset'] != row['ilOffset'] + 5:
+        return None
+    first = steps[0]
+    if first['opcode'] in ('stfld', 'stsfld') and first['operand'] in FIELD_ROLES:
+        return FIELD_ROLES[first['operand']], first['operand']
+    if len(steps) >= 2 and steps[1]['opcode'] in ('call', 'callvirt'):
+        target = steps[1]['operand']
+        if first['opcode'] in SINGLE_VALUE_LOADS or (
+                first['opcode'] == 'call' and first['operand'] in ZERO_ARGUMENT_CALLS):
+            if target in FIRST_ARGUMENT_ROLES:
+                return FIRST_ARGUMENT_ROLES[target], target
+    if len(steps) >= 4 and [step['opcode'] for step in steps[:4]] in (
+            ['ldnull', 'ldftn', 'newobj', 'call'], ['ldarg.0', 'ldftn', 'newobj', 'call']):
+        constructor, target = steps[2]['operand'], steps[3]['operand']
+        if (constructor.startswith(('System.Void System.Action', 'System.Void System.Func'))
+                and constructor.endswith('::.ctor(System.Object,System.IntPtr)')
+                and target in COMMAND_REGISTRATIONS):
+            return 'preserve-exactly-command', target
+    return None
+
 
 def direct_role(row, assembly):
     calls = row['followingCalls']

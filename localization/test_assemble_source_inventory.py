@@ -104,11 +104,11 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertEqual(mac_only['source']['macos'], 'Invert Look Y')
         self.assertIsNone(mac_only['source']['windows'])
         self.assertTrue(all(len(r['source']) == 1 for r in result['entries'] if r['family'] == 'managed'))
-        controls = [r for r in result['entries'] if r['role'] == 'preserve-exactly-input-control']
+        controls = [r for r in result['entries'] if r['role'] == 'preserve-exactly-input-control'
+                    and 'InputSystem_Actions::.ctor()' in r['method']]
         self.assertEqual(len(controls), 56)
         self.assertEqual(sum('macos' in r['source'] for r in controls), 28)
         self.assertEqual(sum('windows' in r['source'] for r in controls), 28)
-        self.assertTrue(all('InputSystem_Actions::.ctor()' in r['method'] for r in controls))
         engine_rows = [r for r in result['entries'] if r['family'] == 'managed' and
                        any(':' + assembly + ':' in r['id'] for assembly in ('Unity.TextMeshPro', 'UnityEngine.UI'))]
         self.assertEqual(len(engine_rows), 1156)
@@ -126,8 +126,18 @@ class SourceInventoryUnitTests(unittest.TestCase):
                     ('preserve-exactly-menu-transition-reason', 3, 'Delete Save?')):
                 self.assertEqual([r['source'][platform] for r in game_rows if r['role'] == role], [value] * count)
             self.assertEqual(sum(r['role'] == 'objective-text-needs-visibility-review' for r in game_rows), 4)
+            for role, value, consumer in (
+                    ('preserve-exactly-animation-key', 'Speed', 'LocomotionAnimationBridge::speedParam'),
+                    ('preserve-exactly-command', 'BlackoutFadeIn', '::AddCommandHandler('),
+                    ('preserve-exactly-preference-key', 'saveSlot', 'UnityEngine.PlayerPrefs::GetInt(')):
+                self.assertTrue(any(r['role'] == role and r['source'][platform] == value and
+                                    consumer in r.get('consumer', '') for r in game_rows), (platform, role, value))
+            self.assertTrue(any(r['role'] == 'preserve-exactly-input-control' and
+                                r['source'].get(platform) == 'Horizontal' and
+                                'StandaloneInputModule::m_HorizontalAxis' in r.get('consumer', '')
+                                for r in engine_rows), platform)
         self.assertEqual(sum(r['role'] == 'needs-classification' for r in result['entries']
-                             if r['family'] == 'managed'), 1999)
+                             if r['family'] == 'managed'), 1696)
         names = [r for r in result['entries'] if r['role'] == 'preserve-exactly-credit-name']
         self.assertEqual(len(names), 34)
         self.assertTrue(all(r['source']['macos'] == r['source']['windows'] for r in names))
@@ -144,6 +154,24 @@ class SourceInventoryUnitTests(unittest.TestCase):
                          ('preserve-exactly-renderer-key', target))
         row['followingCalls'][0]['offset'] = 106
         self.assertIsNone(inventory.managed.direct_role(row, 'Assembly-CSharp'))
+
+    def test_managed_context_binds_exact_literals_and_rejects_unknown_stack_steps(self):
+        target = 'System.Void UnityEngine.Animator::SetBool(System.String,System.Boolean)'
+        row = {'id': 'literal', 'method': 'method', 'methodToken': 1, 'ilOffset': 100, 'value': 'Spraying'}
+        detailed = {**row, 'following': [
+            {'offset': 105, 'opcode': 'ldc.i4.1', 'operand': None},
+            {'offset': 106, 'opcode': 'callvirt', 'operand': target},
+        ]}
+        header = {'schema': 1, 'platform': 'macos', 'assemblySha256': 'source',
+                  'cecilSha256': 'cecil', 'sourceInstructionCount': 1}
+        source = {**header, 'strings': [row]}
+        context = {**header, 'strings': [detailed]}
+        self.assertEqual(inventory.managed.bind_context(source, context), [detailed])
+        self.assertEqual(inventory.managed.context_role(detailed), ('preserve-exactly-animation-key', target))
+        with self.assertRaisesRegex(ValueError, 'managed context literal mismatch'):
+            inventory.managed.bind_context(source, {**context, 'strings': [{**detailed, 'value': 'changed'}]})
+        detailed['following'][0]['opcode'] = 'dup'
+        self.assertIsNone(inventory.managed.context_role(detailed))
 
     @unittest.skipUnless((WORK / 'ui-windows-all.json').is_file(), 'pinned UI export required')
     def test_credit_bindings_reject_changed_source_and_wrong_hierarchy(self):
