@@ -39,8 +39,9 @@ Cyrillic samples.
 
 The v42 index rebuilt twice byte-for-byte using the command in
 the [initial index receipt](special-scene-index-v42-20261110.md).
-It now contains 26 cases, 251 direct IDs and 1,106 distinct direct and
-contextual IDs. Local outputs are under
+That revision contains 26 cases, 251 direct IDs and 1,106 distinct
+direct and contextual IDs. The [anonymous-scene follow-up](generic-dragon-entries-20261110.md#anonymous-address-dependencies-and-branch-control)
+records the current revision. Local outputs are under
 `localization/work/staged-typography-20261110.el5ul4/`.
 
 | Evidence | SHA-256 |

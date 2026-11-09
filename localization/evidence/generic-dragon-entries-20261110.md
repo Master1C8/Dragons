@@ -61,3 +61,42 @@ Local scripts and evidence are under
 | `macos-entries.il` | `18688bac460a5fbea680bfa00187dfc3e084b93b41657e3f6e56fd9596d878e6` |
 | `windows-entries.il` | `f7d35b299464822f3a896aa3af34b2f9f9f7a7af4073e03c724c2ef0f9435f4f` |
 | `paired-objects.json` | `b26520115a581599870b6f350106625d093773b5ed28d59697461272a38c1df3` |
+
+## Anonymous address dependencies and branch control
+
+The [anonymous-address case](special-scenes-anonymous-dragons-20261110.json)
+binds all 12 unlabeled lines and eight player options in the four
+project-only nodes. All 20 source values are the same across the
+two builds. The case keeps the player and anonymous dragon as
+separate roles and avoids merging the four unknown callers.
+Neutral agreement is still an open owner decision. The pending
+adaptation must also preserve silence, the button sound and the
+contrast between ordinary and emphatic agreement.
+
+A desktop control pins the two original compiled programs and
+the shared Yarn VM. It enters each node directly in a new memory
+store and selects each of its two available options. All eight
+runs per build completed in their entry node with the expected
+menu order. Their union covers exactly the 20 registered IDs.
+The dismissal options have distinct replies. The apology leads
+to `line:d726f776`, while unfamiliarity with the button leads to
+`line:fb47f998`. Both continue to `line:6d77feef`. The other
+three pairs converge to the same line and command sequences.
+
+The buzzing trace delivers the literal `FinishDialogue $dragonName`
+command. The thanks trace delivers `Open gate_armature 12` and
+`SetDragonState "WalkingToExit"` on either choice. The probe records
+these original commands. It does not invoke their Unity handlers
+or establish player reachability, gender or rendered behavior.
+The wrong-build control was rejected at the program hash guard.
+
+The v42 index now has 27 cases, 271 direct IDs and 1,126 distinct
+direct and contextual IDs. Both index runs were byte-identical,
+and both focused index tests passed. Local artifacts are under
+`localization/work/anonymous-dragon-choices-20261110.nMBD1r/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Desktop control source | `f11865618b3b4e363ab2e8316b6d8c5376be0a227dfc5f65e1b026d1217489f3` |
+| Both branch traces | `82833a3c50b0af164b80ec00ca151989ea8dd76b8bd9d44050e3b17f344c1bce` |
+| Current v42 special-scene index | `3769a0882796dfe90277639ed8366219e4a9feec486fc81e271547b50d80abb8` |

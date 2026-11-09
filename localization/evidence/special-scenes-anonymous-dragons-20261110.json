@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "status": "source-bound",
+  "sourceInventory": "localization/evidence/yarn-context-map-20261107.json",
+  "sourceInventorySha256": "20d8c7305831a2b98adffad5798e64cb194c37e40039d1525dde122b0c061555",
+  "cases": [
+    {
+      "id": "anonymous-dragon-address",
+      "title": "Four anonymous dragon replies and their player choices",
+      "groups": [
+        {
+          "node": "DragonAlmostClean",
+          "sourceLineIds": ["line:7d791906", "line:ec64a696", "line:7a54a1e1", "line:1dbf50b3", "line:8b8f57c4"]
+        },
+        {
+          "node": "DragonAnnoyedByBuzzing",
+          "sourceLineIds": ["line:b965b4dd", "line:2f55b3aa", "line:9504ba33"]
+        },
+        {
+          "node": "DragonConfusedAboutDismissal",
+          "sourceLineIds": ["line:63926ecd", "line:f28fd15d", "line:64bfd62a", "line:4116f001", "line:d726f776", "line:fb47f998", "line:6d77feef"]
+        },
+        {
+          "node": "DragonSatisfiedAndLeaves",
+          "sourceLineIds": ["line:f1946aab", "line:67a46ddc", "line:c4310942", "line:52010e35", "line:e85007ac"]
+        }
+      ],
+      "pivotalChoiceIds": ["line:7a54a1e1", "line:1dbf50b3", "line:2f55b3aa", "line:9504ba33", "line:64bfd62a", "line:4116f001", "line:c4310942", "line:52010e35"],
+      "invariant": "Preserve anonymity, agency, choice order, the silence option, the button sound and the contrast between ordinary and emphatic agreement. The source provides no evidence that the four callers are the same dragon.",
+      "adaptationRoute": "Pending owner decision on neutral agreement in the 12 unlabeled dragon lines and eight player options. Keep both roles distinct and avoid supplying identity or gender evidence that the source does not give.",
+      "acceptanceScenarios": ["Read each source and target menu with both follow-ups, preserving the two option IDs and their order.", "Verify neutral references for the player and anonymous dragon independently, including statements about remaining unwashed and not knowing the button's purpose."],
+      "statuses": {"sourceAnalysis": "paired-source-bound", "editorial": "owner-decision-pending", "runtimeVisual": "not-run"}
+    }
+  ]
+}
