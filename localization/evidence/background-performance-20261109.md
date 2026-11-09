@@ -219,3 +219,26 @@ The local failed run is under
 | --- | --- |
 | Unity log | `a9c82a686fd64ec89c4a9d55953448cb3baaa3bb37150677644dfa8602f44c19` |
 | Observer receipt | `742ad793323c5dc2a3595365440fbe034fcd50075cddda2887caba684b4b5341` |
+
+The corrected companion read crouch mode zero and activated it
+through the original `C` input. The look origin lowered from
+1.914 to 1.414 world units on the vertical axis. A sampled ray
+predicted a gap of 0.074 to the nearest collider, while the settled
+hand measured 0.330 away and both original activity counters
+stayed zero. The observer reached its contact deadline, verified
+that the copy exited and matched the original file and profile
+snapshots. All 724 desktop samples showed zero foreground
+ownership and zero on-screen windows.
+
+The Windows `PlapperHand.UseContinuous` IL scales both stored
+look-offset components by 0.1 before the surface raycast and
+applies mouse look input while the hand action is held. The
+corrected aiming probe in
+`localization/work/background-hand-aim-20261109.Fo5uLh/`
+uses the Windows scaling and adjusts aim through the held
+stock input. Its runtime outcome is pending.
+
+| Artifact in `background-crouch-20261109.ky4HUP/` | SHA-256 |
+| --- | --- |
+| Unity log | `e21c896135f3226251eb2a76f429167adcfba5db5c7d6cb43efbafc34bcabcd1` |
+| Observer receipt | `232c38691573d343deff421515e6772631b688482f7d7629f59fe782c545997f` |

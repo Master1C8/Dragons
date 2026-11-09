@@ -41,8 +41,11 @@ transfers still need ordinary runtime evidence.
 Two further Windows background attempts completed the intro and
 opened the gate while trying the other activity first. The first
 hand approach was occluded and the second timed out before
-reaching its selected flank. A new isolated probe uses the stock
-crouch binding and checks both original groups of activity hitboxes.
+reaching its selected flank. Stock crouch input later lowered the
+camera and reached the aiming stage, with the actual hand 0.330
+world units from the closest activity collider and no response.
+The current isolated probe accounts for Windows hand aim scaling
+and sends mouse corrections while the original hand action is held.
 See [the gameplay receipts](localization/evidence/background-gameplay-20261109.md)
 and [the performance and Windows test](localization/evidence/background-performance-20261109.md).
 
