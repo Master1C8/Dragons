@@ -22,11 +22,15 @@ See [the transition evidence](localization/evidence/yarn-transition-runtime-2026
 An isolated macOS repair build accepts virtual keyboard and mouse state
 in the background. The stock menu loaded the synthetic `Conrad_3_8`
 slot. Walking and turning used the original player actions. The stock
-selector and `Player/Plap` then equipped the crowbar and opened the
-shipment crate. The mount frame is present near the crate. Mount
-placement, the remaining scene steps and the five repaired transfers
-still need runtime evidence. See [the background input test](localization/evidence/background-input-20261109.md)
-and [the gameplay receipts](localization/evidence/background-gameplay-20261109.md).
+selector and `Player/Plap` then equipped the crowbar, opened both
+crates, assembled the mount and placed it in storage. The original
+handlers set `BuiltMount`, `HasMountFrame` and `PlacedMount`. The
+dragon arrived at the window, and ordinary input there started
+`Conrad_Intro_3` in the original Yarn runner. Intro completion, the
+performance socket, remaining scene steps and the five repaired
+transfers still need runtime evidence.
+See [the gameplay receipts](localization/evidence/background-gameplay-20261109.md)
+and [the mount test](localization/evidence/background-mount-20261109.md).
 
 Commit `3727bf3` adds 319 provisional Yarn role assignments across Ryan's later
 scenes and preserves the existing Russian draft for the same 14 changed IDs

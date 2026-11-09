@@ -1,6 +1,7 @@
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.SceneManagement;
@@ -20,7 +21,10 @@ public static class Probe
     private static int attempts;
     private static bool moving;
     private static Component? target;
+    private static Component? mountCrate, insertCrate;
     private static Camera? playerCamera;
+    private static float waitDeadline;
+    private static bool introStarted;
     private static readonly Assembly Game = Assembly.Load("Assembly-CSharp");
 
     public static void Start()
@@ -59,24 +63,50 @@ public static class Probe
                 case 7:
                     if (SceneManager.GetActiveScene().handle == mainScene || Camera.main == null) return;
                     playerCamera = Camera.main;
+                    ObserveYarnNodes();
+                    if (Flag("BuiltMount") || Flag("PlacedMount") || Flag("HasMountFrame"))
+                        throw new InvalidOperationException("Mount state already set at scene entry");
+                    Debug.Log("VN-BG-MOUNT-BASELINE BuiltMount=False PlacedMount=False HasMountFrame=False");
                     next += 0.5f;
                     break;
                 case 8:
+                    if (equipmentTarget == 8 && DragonStateCode() != 2)
+                    {
+                        if (Time.realtimeSinceStartup >= waitDeadline)
+                            throw new InvalidOperationException("The dragon did not become ready at the window");
+                        return;
+                    }
                     if (!TryAimForEquipment()) return;
                     break;
                 case 9:
-                    Debug.Log($"VN-BG-USE {target!.name}");
+                    if (CachedTarget() != target)
+                        throw new InvalidOperationException("Stock selector changed before input");
+                    Debug.Log($"VN-BG-USE step={equipmentTarget} {target!.name}");
                     InputState.Change(keyboard, new KeyboardState(Key.E));
                     break;
                 case 10:
                     InputState.Change(keyboard, new KeyboardState());
                     VerifyEquipment();
-                    if (equipmentTarget++ == 0)
+                    if (equipmentTarget == 7)
+                    {
+                        Debug.Log($"VN-BG-MOUNT-FINAL HasMountFrame={Flag("HasMountFrame")} PlacedMount={Flag("PlacedMount")}");
+                        waitDeadline = Time.realtimeSinceStartup + 45;
+                    }
+                    if (equipmentTarget++ < 8)
                     {
                         attempts = 0;
                         stage = 8;
                         return;
                     }
+                    waitDeadline = Time.realtimeSinceStartup + 12;
+                    next += 3;
+                    break;
+                case 11:
+
+                    if (!introStarted && Time.realtimeSinceStartup < waitDeadline) return;
+                    var dragonState = SceneStateType.GetMethod("GetDragonState", StaticMembers)?.Invoke(null, null);
+                    Debug.Log($"VN-BG-INTRO started={introStarted} state={dragonState}");
+                    if (!introStarted) throw new InvalidOperationException("The window input did not start Conrad's intro");
                     Finish();
                     break;
             }
@@ -91,14 +121,68 @@ public static class Probe
 
     private const BindingFlags InstanceMembers = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance;
     private const BindingFlags StaticMembers = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static;
+    private static readonly Type InteractableType = Game.GetType("Interactable", throwOnError: true)!;
+    private static readonly Type ToolManagerType = Game.GetType(
+        "com.gatordragongames.washnwalk.tools.ToolManager", throwOnError: true)!;
+    private static readonly Type SceneStateType = Game.GetType("WalkNWashSceneState", throwOnError: true)!;
+
+    private static void ObserveYarnNodes()
+    {
+        var type = Assembly.Load("YarnSpinner.Unity").GetType("Yarn.Unity.DialogueRunner", throwOnError: true)!;
+        var runners = UnityEngine.Object.FindObjectsByType(type, FindObjectsInactive.Include, FindObjectsSortMode.None);
+        int listeners = 0;
+        foreach (var runner in runners)
+        {
+            if (type.GetField("onNodeStart", InstanceMembers)?.GetValue(runner) is not UnityEvent<string> start)
+                continue;
+            start.AddListener(node => {
+                Debug.Log($"VN-BG-YARN-START {node}");
+                if (node == "Conrad_Intro_3") introStarted = true;
+            });
+            if (type.GetField("onNodeComplete", InstanceMembers)?.GetValue(runner) is UnityEvent<string> complete)
+                complete.AddListener(node => Debug.Log($"VN-BG-YARN-COMPLETE {node}"));
+            listeners++;
+        }
+        if (listeners == 0) throw new InvalidOperationException("No original Yarn node event available");
+        Debug.Log($"VN-BG-YARN-LISTENERS {listeners}");
+    }
+
+    private static Component? CachedTarget() =>
+        InteractableType.GetMethod("GetCachedInteractable", StaticMembers)?.Invoke(null, null) as Component;
+
+    private static int DragonStateCode() =>
+        Convert.ToInt32(SceneStateType.GetMethod("GetDragonState", StaticMembers)!.Invoke(null, null));
+
+    private static bool Flag(string name) =>
+        (bool)SceneStateType.GetMethod("GetFlag", StaticMembers, null, new[] { typeof(string) }, null)!
+            .Invoke(null, new object[] { name });
+
+    private static UnityEngine.Object? GetTool(string method) =>
+        ToolManagerType.GetMethod(method, StaticMembers)?.Invoke(null, null) as UnityEngine.Object;
+
+    private static Component EquipmentTarget()
+    {
+        var candidates = UnityEngine.Object.FindObjectsByType(InteractableType, FindObjectsSortMode.None).OfType<Component>();
+        return equipmentTarget switch
+        {
+            0 or 3 => candidates.Single(c => c.name == "crowbar_socket"),
+            1 => candidates.Single(c => c.name == "ShipmentCrateMountFrame"),
+            2 => candidates.Single(c => c.name == "ShipmentCrateMountFrame (1)"),
+            4 => candidates.Single(c => c.name == "Onahole_Socket" && c.transform.IsChildOf(insertCrate!.transform)),
+            5 => candidates.Single(c => Equals(c.GetType().GetField("placeFlag", InstanceMembers)?.GetValue(c), "BuiltMount")),
+            6 => candidates.Single(c => c.name == "MountFrame_Socket_Complete" && c.transform.IsChildOf(mountCrate!.transform)),
+            7 => candidates.Single(c => Equals(c.GetType().GetField("placeFlag", InstanceMembers)?.GetValue(c), "PlacedMount")),
+            8 => candidates.Single(c => c.name == "DragonWindow" && c.GetType().Name == "InteractableDragonWindow"),
+            _ => throw new InvalidOperationException("Unexpected equipment step"),
+        };
+    }
+
     private static bool TryAimForEquipment()
     {
-        var type = Game.GetType("Interactable", throwOnError: true)!;
-        var name = equipmentTarget == 0 ? "crowbar_socket" : "ShipmentCrateMountFrame";
         var view = playerCamera!.transform;
-        target = UnityEngine.Object.FindObjectsByType(type, FindObjectsSortMode.None).OfType<Component>()
-            .Single(component => component.name == name);
-        if (++attempts > 24) throw new InvalidOperationException("Equipment target timed out: " + name);
+        target = EquipmentTarget();
+        var name = target.name;
+        if (++attempts > 100) throw new InvalidOperationException("Equipment target timed out: " + name);
         if (moving)
         {
             InputState.Change(keyboard!, new KeyboardState());
@@ -106,12 +190,12 @@ public static class Probe
             return false;
         }
         var offset = target.transform.position - view.position;
-        var candidate = type.GetMethod("GetCachedInteractable", StaticMembers)?.Invoke(null, null) as Component;
+        var candidate = CachedTarget();
         var horizontal = Vector3.ProjectOnPlane(offset, Vector3.up);
         var yaw = Vector3.SignedAngle(Vector3.ProjectOnPlane(view.forward, Vector3.up), horizontal, Vector3.up);
         var pitch = Mathf.Atan2(offset.y, horizontal.magnitude) * Mathf.Rad2Deg -
             Mathf.Asin(Mathf.Clamp(view.forward.y, -1, 1)) * Mathf.Rad2Deg;
-        Debug.Log($"VN-BG-GUIDE {name} position={view.position:F3} forward={view.forward:F3} distance={offset.magnitude:F3} yaw={yaw:F3} pitch={pitch:F3} cached={candidate?.name}");
+        Debug.Log($"VN-BG-GUIDE step={equipmentTarget} {name} position={view.position:F3} forward={view.forward:F3} distance={offset.magnitude:F3} yaw={yaw:F3} pitch={pitch:F3} cached={candidate?.name}");
         if (candidate == target) return true;
         if (Mathf.Abs(yaw) > 6 || (offset.magnitude < 2.9f && Mathf.Abs(pitch) > 6))
         {
@@ -132,23 +216,34 @@ public static class Probe
 
     private static void VerifyEquipment()
     {
-        var manager = Game.GetType("com.gatordragongames.washnwalk.tools.ToolManager", throwOnError: true)!;
-        var tool = manager.GetMethod("GetCurrentTool", StaticMembers)?.Invoke(null, null) as UnityEngine.Object;
-        var opened = target!.GetType().GetField("opened", InstanceMembers)?.GetValue(target);
-        Debug.Log($"VN-BG-EQUIPMENT target={target.name} tool={tool?.name} opened={opened}");
-        if (equipmentTarget == 0)
+        var tool = GetTool("GetCurrentTool");
+        var expectedTool = target!.GetType().GetField("tool", InstanceMembers)?.GetValue(target) as UnityEngine.Object;
+        var emptyTool = GetTool("GetEmptyTool");
+        var opened = target.GetType().GetField("opened", InstanceMembers)?.GetValue(target);
+        Debug.Log($"VN-BG-EQUIPMENT step={equipmentTarget} target={target.name} tool={tool?.name} expected={expectedTool?.name} opened={opened} BuiltMount={Flag("BuiltMount")} HasMountFrame={Flag("HasMountFrame")} PlacedMount={Flag("PlacedMount")}");
+        switch (equipmentTarget)
         {
-            var expectedTool = target.GetType().GetField("tool", InstanceMembers)?.GetValue(target) as UnityEngine.Object;
-            if (expectedTool == null || expectedTool != tool)
-                throw new InvalidOperationException("The equipped tool was not the exact crowbar asset");
-        }
-        if (equipmentTarget == 1)
-        {
-            if (opened is not true) throw new InvalidOperationException("The crate did not open");
-            var interactable = Game.GetType("Interactable", throwOnError: true)!;
-            foreach (var item in UnityEngine.Object.FindObjectsByType(interactable, FindObjectsSortMode.None).OfType<Component>()
-                .Where(item => item.name.IndexOf("mount", StringComparison.OrdinalIgnoreCase) >= 0))
-                Debug.Log($"VN-BG-MOUNT {item.name} {item.transform.position:F4} {item.GetType().Name}");
+            case 0 or 4 or 6:
+                if (expectedTool == null || expectedTool != tool)
+                    throw new InvalidOperationException("The equipped tool did not match the socket's asset");
+                break;
+            case 1 or 2:
+                if (opened is not true) throw new InvalidOperationException("The crate did not open");
+                if (equipmentTarget == 1) mountCrate = target;
+                else insertCrate = target;
+                break;
+            case 3:
+                if (emptyTool == null || tool != emptyTool)
+                    throw new InvalidOperationException("The crowbar was not returned");
+                break;
+            case 5:
+                if (emptyTool == null || tool != emptyTool || !Flag("BuiltMount"))
+                    throw new InvalidOperationException("The mount was not assembled by the stock handler");
+                break;
+            case 7:
+                if (emptyTool == null || tool != emptyTool || !Flag("PlacedMount") || !Flag("HasMountFrame"))
+                    throw new InvalidOperationException("The frame was not placed by the stock handler");
+                break;
         }
     }
 
