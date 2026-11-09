@@ -11,39 +11,15 @@ import zipfile
 
 import compare_yarn_versions as versions
 import dialogue_locale as dl
-import inventory_non_yarn_scope as non_yarn
-import inventory_yarn_scope as yarn
 import managed_fallback
+import package_inputs
 import speaker_contrast
 import speaker_locale
 import windows_ui_locale as assets
-from assemble_source_inventory import INVENTORY_SHA, load_pinned
 
 PLATFORM = 'windows'
 DATA_FOLDER = 'DragNWash_Data'
-YARN_SCOPE_SHA = '753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30'
 ASSET_HASHES = assets.ui_map.WINDOWS_ASSETS
-LOCALE_FILES = ('dialogue.json', 'speakers.json', 'settings.json', 'slot-new.json', 'missing-line.json')
-
-
-def snapshot_inputs(source, target):
-    source, target = Path(source), Path(target)
-    ui = source / 'ui'
-    if source.is_symlink() or ui.is_symlink() or not ui.is_dir():
-        raise ValueError('expected real locale input and UI directories')
-    (target / 'ui').mkdir(parents=True)
-    files = [Path(name) for name in LOCALE_FILES]
-    for path in sorted(ui.iterdir()):
-        if path.suffix != '.json' or path.stem not in ASSET_HASHES:
-            raise ValueError(f'unexpected UI locale file: {path.name}')
-        files.append(Path('ui') / path.name)
-    if {path.name for path in source.iterdir()} != {*LOCALE_FILES, 'ui'}:
-        raise ValueError('locale directory differs from the Windows input layout')
-    for name in files:
-        path = source / name
-        if path.is_symlink() or not path.is_file():
-            raise ValueError(f'expected a real locale input file: {name}')
-        (target / name).write_bytes(path.read_bytes())
 
 
 def file_digest(stream):
@@ -84,34 +60,24 @@ def build(data, inputs, requested, inventory, scope_path, output, *,
     target = assets.safe_output(data, output)
     if target.suffix.lower() != '.zip':
         raise ValueError('Windows output must be a .zip')
-    scope = load_pinned(scope_path, YARN_SCOPE_SHA)
-    entries = load_pinned(inventory, INVENTORY_SHA)['entries']
     with tempfile.TemporaryDirectory(prefix='.dragons-windows-', dir=target.parent) as temporary:
         stage = Path(temporary)
         local = stage / 'locale'
-        snapshot_inputs(inputs, local)
-        dialogue, speakers = (local / name for name in LOCALE_FILES[:2])
-        yarn_receipt = yarn.validate_complete(scope, PLATFORM, data, requested, dialogue, speakers)
-        non_yarn_receipt = non_yarn.verify_platform(entries, PLATFORM, data, requested, local)
+        package_inputs.snapshot_inputs(inputs, local, ASSET_HASHES)
+        dialogue, speakers = local / 'dialogue.json', local / 'speakers.json'
+        receipt, ui_assets = package_inputs.validate(PLATFORM, data, requested, local, inventory, scope_path)
         manifest = {
             'schema': 1, 'kind': 'windows-localization-replacements',
             'platform': PLATFORM, 'build': versions.BUILDS[PLATFORM]['version'],
-            'locale': requested, 'sharedInventorySha256': INVENTORY_SHA, 'yarnScopeSha256': YARN_SCOPE_SHA,
-            'localeInputSha256': {
-                'dialogue.json': yarn_receipt['inputSha256']['dialogue'],
-                'speakers.json': yarn_receipt['inputSha256']['speakers'],
-                **non_yarn_receipt['localeInputSha256'],
-            },
+            'locale': requested, **receipt,
             'sourceGlobalManagersSha256': versions.BUILDS[PLATFORM]['globalSha256'],
             'sourceGlobalScriptsSha256': assets.ui_map.WINDOWS_GLOBAL,
-            'sourceManagedManifestSha256': non_yarn_receipt['sourceManagedManifestSha256'],
             'files': {},
         }
         files = manifest['files']
         payload = stage / 'payload'
         managed = payload / 'Managed'
         managed.mkdir(parents=True)
-        ui_assets = {asset for asset, roles in non_yarn_receipt['ui'].items() if roles['translate']}
         all_assets = ui_assets | {'sharedassets0.assets', 'sharedassets1.assets'} | speaker_contrast.ASSETS
         for asset in sorted(all_assets):
             report = assets.build(

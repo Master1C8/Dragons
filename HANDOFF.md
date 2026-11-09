@@ -225,7 +225,7 @@ All locales use the shared fixed stages in `~/.codex/skills/vn-localization/refe
 | `translate-edit` | Settle all in-scope special-scene solutions first; then directly translate, immediately edit and validate each batch against the shared inventory. |
 | `editorial` | Full semantic audit, independent diff/delta review and regression closure on pinned artifacts; do not assert independence without evidence. |
 | `resources` | Verify final font coverage and metrics against the finished corpus; textures not applicable by owner decision. |
-| `package` | Build and read back complete locale artifact using documented adapter; validate install and recovery. |
+| `package` | The macOS and Windows package commands both require complete pinned locale inputs. Build and read back the final authored locale artifacts and validate install and recovery. |
 | `runtime` | Test the delivered artifact in authorized isolated environments, including progression, clipping and saves. |
 | `screenshot-upload`, `screenshot-review` | Not run: no game screenshot upload requested; if later authorized, pin and review every delivered slot. |
 | `delivery` | Integrate verified source into canonical branch; publication/release requires separate authority. |
@@ -243,6 +243,10 @@ Liberation Sans fallback chain. The embedded font covers all 66
 Russian letters and the bounded punctuation, digit and space sample.
 This is static source evidence. Final glyph rendering, fit and
 coverage against the authored corpus still require verification.
+The [complete macOS package control](localization/evidence/complete-macos-package-20261110.md)
+uses the shared strict validation before signing a separate app.
+Missing dialogue, settings and UI fields each fail before output.
+The Windows v42 ZIP stays byte-identical under the shared validator.
 The [paired romance route control](localization/evidence/romance-route-analysis-20261107.md#controlled-paired-yarn-runs-2026-11-10)
 exercises all seven pivotal choices, including both availability
 states for Ryan's choice and all three follow-up outcomes. A decline

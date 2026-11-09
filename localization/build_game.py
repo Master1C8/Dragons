@@ -36,24 +36,29 @@ def rename_exclusive(source, destination):
         raise OSError(error, os.strerror(error), str(destination))
 
 
-def build(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
-          test_profile_code=None, test_caption_layout=False, test_slot_font=False,
-          restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None,
-          speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None,
-          improve_speaker_contrast=False):
+def bundle_paths(source, destination):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
         raise ValueError('source and destination must be macOS .app bundles')
-    if test_caption_layout and test_profile_code is None:
-        raise ValueError('experimental settings layout requires an isolated test profile')
-    if test_slot_font and test_profile_code is None:
-        raise ValueError('experimental slot font requires an isolated test profile')
     if destination.exists() or destination.is_symlink():
         raise FileExistsError('destination already exists')
     resolved = destination.resolve(strict=False)
     if source == resolved or source in resolved.parents or resolved in source.parents:
         raise ValueError('source and destination must not overlap')
+    return source, destination
+
+
+def build(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
+          test_profile_code=None, test_caption_layout=False, test_slot_font=False,
+          restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None,
+          speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None,
+          improve_speaker_contrast=False, package_receipt=None):
+    source, destination = bundle_paths(source, destination)
+    if test_caption_layout and test_profile_code is None:
+        raise ValueError('experimental settings layout requires an isolated test profile')
+    if test_slot_font and test_profile_code is None:
+        raise ValueError('experimental slot font requires an isolated test profile')
     destination.parent.mkdir(parents=True, exist_ok=True)
     stage = Path(tempfile.mkdtemp(prefix='.localization-build-', dir=destination.parent))
     try:
@@ -64,7 +69,8 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
                                     fallback_tool=fallback_tool, slot_new_locale=slot_new_locale,
                                     speaker_locale=speaker_locale, speaker_tool=speaker_tool,
                                     speaker_runtime=speaker_runtime, speaker_runtime_sha=speaker_runtime_sha,
-                                    improve_speaker_contrast=improve_speaker_contrast)
+                                    improve_speaker_contrast=improve_speaker_contrast,
+                                    package_receipt=package_receipt)
         rename_exclusive(staged_app, destination)
     finally:
         shutil.rmtree(stage)
@@ -73,14 +79,16 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
     subprocess.run(['codesign', '--verify', '--deep', '--strict', str(destination)], check=True)
     report['output'] = str(destination)
     print(json.dumps(report, ensure_ascii=False))
-    print('Build complete. No game was installed or launched; UI coverage and font support remain unverified.')
+    if package_receipt is None:
+        print('Build complete. No game was installed or launched; UI coverage and font support remain unverified.')
+    return report
 
 
 def _build_unpublished(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
                        test_profile_code=None, test_caption_layout=False, test_slot_font=False,
                        restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None,
                        speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None,
-                       improve_speaker_contrast=False):
+                       improve_speaker_contrast=False, package_receipt=None):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -273,6 +281,11 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
         json.dump({'schema': 1, 'locale': locale, 'sourceAssetSha256': dl.ASSET_HASH,
                    'steamFileSha256': dl.sha(target_steam.read_bytes())}, f, ensure_ascii=False)
         f.write('\n')
+    if package_receipt is not None:
+        receipt_path = marker.with_name('vn-localization-package.json')
+        with receipt_path.open('x', encoding='utf-8') as f:
+            json.dump(package_receipt, f, ensure_ascii=False, sort_keys=True, indent=2)
+            f.write('\n')
     subprocess.run(['codesign', '--force', '--deep', '--sign', '-', str(destination)], check=True)
     subprocess.run(['codesign', '--verify', '--deep', '--strict', str(destination)], check=True)
     managed.compare(expected_assemblies, managed.scan(destination / MANAGED_RELATIVE))

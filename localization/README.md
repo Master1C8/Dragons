@@ -276,6 +276,31 @@ returned receipt records the patched Yarn Unity and companion fingerprints.
 Windows installation and restoration are still separate from this preparation
 step. See the [paired speaker build evidence](evidence/speaker-locale-build-20261110.md).
 
+## Complete macOS app
+
+`build_macos_package.py` requires the same pinned shared inventory and
+paired Yarn scope as the Windows package builder. Its locale directory
+contains `dialogue.json`, `speakers.json`, `settings.json`, `slot-new.json`,
+`missing-line.json` and the required macOS `ui/<asset>.json` files.
+
+```sh
+"$PYTHON" localization/build_macos_package.py "$macos_source_app" "$macos_locale_inputs" \
+  --locale ru --inventory "$shared_inventory" --yarn-scope "$paired_yarn_scope" \
+  --managed-tool "$managed_fallback_tool" --speaker-tool "$speaker_tool" \
+  --speaker-runtime "$speaker_runtime" --speaker-runtime-sha "$speaker_runtime_sha" \
+  --output "$fresh_app"
+```
+
+The command snapshots inputs and validates known coverage before it
+copies the game. It builds a signed separate app with the five Yarn
+transition repairs, the speaker contrast change and the managed text
+replacements. The signed `Contents/Resources/vn-localization-package.json`
+records the inventory, source and locale input hashes. The existing
+`build_game.py` command also supports partial inputs for targeted
+probes. Neither command installs or launches the app. Complete
+structural coverage remains separate from editorial and runtime
+acceptance. See the [paired package control](evidence/complete-macos-package-20261110.md).
+
 ## Windows replacement package
 
 `build_windows_package.py` combines the audited Windows adapters in one
