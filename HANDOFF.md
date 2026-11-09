@@ -36,8 +36,7 @@ with its in-progress flag false and completed flag true. A private
 Windows CrossOver repair copy now completed the same route and both
 mount nodes through stock input in the background. Its Null graphics
 device logged repeated fluid emitter exceptions, so visual acceptance
-remains open. The later combined branch and the five repaired
-transfers still need ordinary runtime evidence.
+remains open.
 Two further Windows background attempts completed the intro and
 opened the gate while trying the other activity first. The first
 hand approach was occluded and the second timed out before
@@ -48,10 +47,14 @@ The Windows aim correction let the stock inputs complete both
 activities and reach `Conrad_Outro`. The game evaluated it as
 `CONFUSED` in state 5 and entered the existing
 `Conrad_OutroDirty`. The Windows mount-last target differs from
-macOS at exactly one instruction. An isolated candidate aligns
-it with the original macOS `Conrad_Outro_3` target and keeps the
-five restored nodes. Runtime completion of that candidate is
-pending.
+macOS at exactly one instruction. The Windows builder now aligns
+it with the original macOS `Conrad_Outro_3` target when the repair
+is enabled. An isolated English-table copy of the builder output
+completed the mount-last route through four stock option clicks
+and reached `WaitingOnExitButton` with evaluation `DONE`.
+The routing nodes for the four other restored destinations lack
+direct callers in the scanned originals. Dynamic reachability,
+those gameplay checks and Cyrillic rendering remain open.
 See [the gameplay receipts](localization/evidence/background-gameplay-20261109.md)
 and [the performance and Windows test](localization/evidence/background-performance-20261109.md).
 

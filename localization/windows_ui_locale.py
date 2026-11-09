@@ -179,7 +179,7 @@ def main():
     p.add_argument('--dialogue-locale-file', type=Path, help='optional source-bound Yarn locale for sharedassets1.assets')
     p.add_argument('--settings-locale-file', type=Path, help='optional source-bound settings locale for sharedassets0.assets')
     p.add_argument('--restore-yarn-transitions', action='store_true',
-                   help='apply the source-pinned five-node Yarn repair to sharedassets1.assets')
+                   help='restore the five missing Yarn nodes and align the Windows Conrad outro route')
     p.add_argument('--output', required=True, type=Path)
     args = p.parse_args()
     print(json.dumps(build(args.source_data, args.asset, args.locale_file,

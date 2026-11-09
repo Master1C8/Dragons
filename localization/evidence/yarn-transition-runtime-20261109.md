@@ -72,6 +72,13 @@ combined dialogue, UI and repair on both builds, checks each object, and
 rejects corrupted project bytes and a repaired asset without the explicit
 verification flag. All 170 localization tests passed.
 
+The follow-up Windows repair also changes instruction 89 in
+`Conrad_finished_mount_3` to the original macOS target `Conrad_Outro_3`.
+The builder output completed that outro through stock input and
+reached the exit button state in a background CrossOver copy.
+The comparison, prior control and successful run are in
+[the Conrad follow-up](background-performance-20261109.md).
+
 A separate Windows CrossOver test used the original managed assemblies and
 loaded a disposable slot through the game's normal menu. The pinned
 `LevelFlow` object maps save index 7 to `Conrad_3_8`. The legacy slot included
@@ -170,3 +177,24 @@ Local source and receipts are in `localization/work/transition-background-202611
 `Program.cs`, `macos.il.txt`, `windows.il.txt`, `window-state.swift`, and
 `window-state.txt`. The unchanged `normal.log` in the prior run directory
 has SHA-256 `ed0b63da2f1f7b167df4a435f6752df3bb5d677507fa8f1a80d73a2635e11c83`.
+
+## Direct callers of the four other routing nodes
+
+The original programs in both builds contain no exact operand
+references to `Alexander_Idle4`, `ConradBeatup_Outro`,
+`RyanDate_Outro` or `RyanExploded_Outro` from any instruction.
+A direct scan of 170 macOS and 172 Windows managed DLLs found no
+matching string literal. A separate raw-byte scan of 17 top-level
+serialized game files per build found two occurrences of each name,
+both inside the original YarnProject object. Their position and
+protobuf decoding identify the map key and the node's own name.
+The same scan finds the Windows `Conrad_Outro` instruction reference
+and the `Conrad_Outro_3` level configuration field in each build.
+These positive controls distinguish node definitions from callers.
+
+The reports and per-file fingerprints are in
+`localization/work/yarn-ordinary-callers-20261109.IIkjOt/`.
+This covers exact managed literals, compiled operands and top-level
+serialized byte matches. Dynamic name construction, reflection and
+compressed or external resources need separate investigation before
+claiming the four nodes cannot be reached through gameplay.

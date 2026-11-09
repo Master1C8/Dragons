@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+import struct
 import sys
 import tempfile
 import unittest
@@ -11,6 +12,7 @@ import dialogue_locale as dl
 import ui_locale as mac_ui
 import windows_ui_locale as win_ui
 import verify_combined_yarn_ui as verifier
+import yarn_transition_repair as transitions
 
 ROOT = Path(__file__).parent
 WORK = ROOT / 'work'
@@ -53,6 +55,18 @@ class CombinedVerificationTests(unittest.TestCase):
                     env = UnityPy.load(str(asset))
                     project = next(obj for obj in env.objects if obj.path_id == spec['project'])
                     raw = project.get_raw_data()
+                    size = struct.unpack_from('<I', raw, transitions.PROGRAM_SIZE_OFFSET)[0]
+                    start = transitions.PROGRAM_OFFSET
+                    repaired_nodes, other = versions.program_nodes(raw[start:start + size])
+                    _, _, _, _, original_nodes, original_other = versions.load(source, spec)
+                    self.assertEqual(other, original_other)
+                    self.assertEqual(repaired_nodes.keys() - original_nodes.keys(), transitions.CONTINUATIONS.keys())
+                    if platform == 'windows':
+                        _, _, _, _, mac_nodes, _ = versions.load(MAC, versions.BUILDS['macos'])
+                        name = 'Conrad_finished_mount_3'
+                        self.assertNotEqual(original_nodes[name], mac_nodes[name])
+                        original_nodes[name] = mac_nodes[name]
+                    self.assertEqual({name: repaired_nodes[name] for name in original_nodes}, original_nodes)
                     project.set_raw_data(raw[:-1] + bytes([raw[-1] ^ 1]))
                     changed = root / f'{platform}-corrupt.assets'
                     changed.write_bytes(env.file.save())

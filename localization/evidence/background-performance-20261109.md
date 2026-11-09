@@ -306,3 +306,47 @@ and the Windows asset SHA-256 is
 `59ccbdabf4579e47f0e7f8c353b7f697fcd54368423484c341c4f13803a5d335`.
 The isolated runtime probe checks the mount-last destination, four
 stock option clicks, dialogue completion and state 6.
+
+The normal Windows builder with `--restore-yarn-transitions`
+reproduced the candidate asset byte-for-byte. The regression
+compares every original node and all other program fields in
+both builds and requires the five restored names. The full suite
+passed all 180 tests. The first candidate launch timed out in the
+window approach after assembling the mount, before it reached the
+modified dialogue. All 280 desktop samples showed the copy stayed
+hidden. It exited, and the checked installed files and original
+saves matched their prelaunch snapshots.
+
+| First candidate attempt | SHA-256 |
+| --- | --- |
+| Unity log | `3b0fb479f762212d02476cfe6ba07038b0558cc1c7c0194a0d2c45642dab034a` |
+| Observer receipt | `32a012462d3df3a8fa86432bba1f4deb815ca4f32cddef0b2045fe4ca5574d21` |
+
+The successful isolated copy under
+`localization/work/windows-conrad-window-20261109.HmhUQt/`
+used the exact same asset and an explicit stock movement waypoint
+in front of the window. The menu loaded the same synthetic
+`Conrad_3_8` fixture. Stock input assembled the mount, completed
+the intro, opened the gate and finished the earlier activity.
+After the original mount performance, the combined choice
+`line:82cf49aa` advanced to `Conrad_Outro_3`. Four stock
+option clicks selected `line:36ff6bd9`, `line:1a9e6537`,
+`line:956a0f47` and `line:4b38230f`. The original Yarn runner
+reported node and dialogue completion and the game moved from
+`WaitingOnBeingWashed` to `WaitingOnExitButton`. The final
+evaluation was `DONE`. The observer stopped in that state.
+
+All 900 desktop samples showed no foreground ownership and no
+on-screen window. The isolated process exited, and the checked
+installed files and original saves matched the prelaunch
+snapshots. The Null graphics device logged 16,914 occurrences
+of the `FluidEmitter.Tick` exception. This run establishes
+the corrected Windows gameplay route through exit readiness.
+It uses the English table and supplies no visual evidence.
+
+| Successful candidate run | SHA-256 |
+| --- | --- |
+| Unity log | `6716d33e3812ac6b8df63be8da465429f2e982179a2eef98637f25b3526f8331` |
+| Observer receipt | `c1818dfc9ad975d8b8a205a4c5ca725d6a0c3a10f90413cb553d53ae14f4568e` |
+| Companion DLL | `070ed8d1332575898e6c9d0af0e2225bfaf2870bf185a3f61486b177f445c3a3` |
+| Companion source | `ba37fcc9a3efbd47e1d2761d4d74e7bf432d26d4d178ac656867b30d94607755` |
