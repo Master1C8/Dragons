@@ -235,6 +235,11 @@ binds 23 known cases to 247 direct source IDs and preserves wider
 context separately. It includes the runtime new-slot label and
 missing-line fallback. It is the lookup for case dependencies before
 Russian decisions and does not advance editorial readiness.
+The [paired romance route control](localization/evidence/romance-route-analysis-20261107.md#controlled-paired-yarn-runs-2026-11-10)
+exercises all seven pivotal choices, including both availability
+states for Ryan's choice and all three follow-up outcomes. A decline
+preserves an existing Alexander romance flag. Unity presentation and
+the final Russian captions remain open.
 
 The [Alexander question control](localization/evidence/alexander-question-analysis-20261107.md#paired-desktop-yarn-control-2026-11-10)
 matches six original Yarn VM scenarios across both builds. It binds the

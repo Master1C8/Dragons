@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><NuGetAudit>false</NuGetAudit></PropertyGroup>
+  <PropertyGroup><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup>
+    <Reference Include="YarnSpinner"><HintPath>$(ManagedDir)/YarnSpinner.dll</HintPath></Reference>
+    <Reference Include="Yarn.Google.Protobuf"><HintPath>$(ManagedDir)/Yarn.Google.Protobuf.dll</HintPath></Reference>
+    <Reference Include="Yarn.System.Memory"><HintPath>$(ManagedDir)/Yarn.System.Memory.dll</HintPath></Reference>
+    <Reference Include="Yarn.System.Runtime.CompilerServices.Unsafe"><HintPath>$(ManagedDir)/Yarn.System.Runtime.CompilerServices.Unsafe.dll</HintPath></Reference>
+    <Reference Include="Yarn.System.Buffers"><HintPath>$(ManagedDir)/Yarn.System.Buffers.dll</HintPath></Reference>
+    <Reference Include="Yarn.System.Numerics.Vectors"><HintPath>$(ManagedDir)/Yarn.System.Numerics.Vectors.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>
