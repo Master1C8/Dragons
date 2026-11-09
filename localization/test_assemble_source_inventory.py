@@ -136,8 +136,11 @@ class SourceInventoryUnitTests(unittest.TestCase):
                                 r['source'].get(platform) == 'Horizontal' and
                                 'StandaloneInputModule::m_HorizontalAxis' in r.get('consumer', '')
                                 for r in engine_rows), platform)
+        wait = next(r for r in result['entries'] if r['source'].get('windows') == 'Waiting for flag {0}...{1}')
+        self.assertEqual(wait['role'], 'diagnostic-text-needs-visibility-review')
+        self.assertEqual(wait['consumer'], 'System.Void UnityEngine.Debug::Log(System.Object)')
         self.assertEqual(sum(r['role'] == 'needs-classification' for r in result['entries']
-                             if r['family'] == 'managed'), 1696)
+                             if r['family'] == 'managed'), 1406)
         names = [r for r in result['entries'] if r['role'] == 'preserve-exactly-credit-name']
         self.assertEqual(len(names), 34)
         self.assertTrue(all(r['source']['macos'] == r['source']['windows'] for r in names))
@@ -172,6 +175,20 @@ class SourceInventoryUnitTests(unittest.TestCase):
             inventory.managed.bind_context(source, {**context, 'strings': [{**detailed, 'value': 'changed'}]})
         detailed['following'][0]['opcode'] = 'dup'
         self.assertIsNone(inventory.managed.context_role(detailed))
+
+    def test_diagnostic_binding_requires_the_literal_to_reach_the_message_argument(self):
+        sink = 'System.Void UnityEngine.Debug::LogWarning(System.Object,UnityEngine.Object)'
+        steps = [
+            {'opcode': 'ldarg.1', 'operand': None},
+            {'opcode': 'call', 'operand': 'System.String System.String::Format(System.String,System.Object)'},
+            {'opcode': 'ldarg.0', 'operand': None},
+            {'opcode': 'call', 'operand': sink},
+        ]
+        role = inventory.managed.debug_message_role
+        self.assertEqual(role(steps), ('diagnostic-text-needs-visibility-review', sink))
+        self.assertIsNone(role(steps[:2] + steps[3:]))
+        self.assertIsNone(role(steps[:2] + [{'opcode': 'pop', 'operand': None}] + steps[2:]))
+        self.assertIsNone(role(steps[:2] + [{'opcode': 'br.s', 'operand': 'IL_001a'}] + steps[2:]))
 
     @unittest.skipUnless((WORK / 'ui-windows-all.json').is_file(), 'pinned UI export required')
     def test_credit_bindings_reject_changed_source_and_wrong_hierarchy(self):

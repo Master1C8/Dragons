@@ -143,6 +143,30 @@ COMMAND_REGISTRATIONS = {
         ('<System.Single>', 'Func`2<T1,System.Collections.IEnumerator>'),
     )
 }
+DEBUG_SINK_ARITY = {
+    f'System.Void UnityEngine.Debug::{name}(System.Object{context})': arity
+    for name in ('Log', 'LogWarning', 'LogError')
+    for context, arity in (('', 1), (',UnityEngine.Object', 2))
+}
+STRING_COMPOSITION_ARITY = {
+    f'System.String System.String::{name}({",".join(parameters)})': len(parameters)
+    for count in (2, 3, 4)
+    for name, parameters in (('Concat', ['System.String'] * count),
+                             ('Format', ['System.String', *(['System.Object'] * (count - 1))]))
+}
+# Known calls consuming one stack value and returning one, including receivers.
+SINGLE_VALUE_CALLS = {
+    'System.Boolean WalkNWashSceneState::GetFlag(System.String)',
+    'System.String UnityEngine.Object::get_name()',
+    'System.Int32 UnityEngine.Object::GetInstanceID()',
+    'UnityEngine.GameObject UnityEngine.Component::get_gameObject()',
+    'UnityEngine.RectTransform UnityEngine.UI.Dropdown::get_template()',
+    'UnityEngine.RectTransform TMPro.TMP_Dropdown::get_template()',
+    'System.String System.Exception::get_Message()',
+    'System.String Yarn.Line::get_ID()',
+    'System.String Yarn.Command::get_Text()',
+    *(f'System.String System.{kind}::ToString()' for kind in ('Int32', 'UInt32', 'Boolean', 'Single', 'Object')),
+}
 
 
 def bind_context(data, context):
@@ -157,6 +181,27 @@ def bind_context(data, context):
         if any(source[key] != detailed[key] for key in identities):
             raise ValueError('managed context literal mismatch')
     return context['strings']
+
+
+def debug_message_role(steps):
+    # Count values above the literal, or above the string produced from it.
+    # Stop when an instruction can consume or move that tracked value.
+    above = 0
+    for step in steps:
+        opcode, target = step['opcode'], step['operand']
+        if opcode in SINGLE_VALUE_LOADS:
+            above += 1
+        elif opcode in ('ldfld', 'ldflda', 'box') and above:
+            continue
+        elif opcode in ('call', 'callvirt') and above and target in SINGLE_VALUE_CALLS:
+            continue
+        elif opcode == 'call' and target in STRING_COMPOSITION_ARITY and above < STRING_COMPOSITION_ARITY[target]:
+            above = 0
+        elif opcode == 'call' and DEBUG_SINK_ARITY.get(target) == above + 1:
+            return 'diagnostic-text-needs-visibility-review', target
+        else:
+            return None
+    return None
 
 
 def context_role(row):
@@ -179,7 +224,7 @@ def context_role(row):
                 and constructor.endswith('::.ctor(System.Object,System.IntPtr)')
                 and target in COMMAND_REGISTRATIONS):
             return 'preserve-exactly-command', target
-    return None
+    return debug_message_role(steps)
 
 
 def direct_role(row, assembly):

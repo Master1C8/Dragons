@@ -12,8 +12,11 @@ probes reached the original line handler in the restored nodes. Commit
 `1f28b03` adds the opt-in repair to both builders. Ordinary menu input loaded
 `Conrad_3_8` on the original and repair-only Windows copies under CrossOver.
 Both reached the in-game wait for `PlacedMount`. The player-input probe
-stopped before placing the equipment or reaching the transition. Normal
-transition completion and native Windows remain pending.
+stopped before placing the equipment or reaching the transition. The live
+test copy is hidden and its wait log is frozen. Both source builds disable
+background simulation in PlayerSettings, and the foreground-only input
+helper refuses to target the hidden player. Normal transition completion and
+native Windows remain pending.
 See [the transition evidence](localization/evidence/yarn-transition-runtime-20261109.md).
 
 Commit `3727bf3` adds 319 provisional Yarn role assignments across Ryan's later
@@ -34,9 +37,10 @@ resource families remain open. The v16 inventory adds consumer-backed roles
 for 919 managed literal occurrences, including the separate slot label,
 progress format and menu transition reason roles. The v17 inventory classifies
 303 more managed occurrences through bounded IL instruction sequences. It adds
-279 exact-preserve roles and 24 profiler labels, leaving 1,696 unclassified
-managed occurrences. The v17 SHA-256 is
-`62461ab1d2f9d76fd0110b784b206eced511c0dadb83c026a0d0d5d2a8538bd2`.
+279 exact-preserve roles and 24 profiler labels. The v18 inventory traces 290
+more occurrences to Unity debug message arguments, leaving 1,406 unclassified
+managed occurrences. The v18 SHA-256 is
+`1dd1a48c1a7d1dadecb7df91eeef7cd8838a4a766017406b3d9c4552d12ed099`.
 
 Both UI adapters now reject changes to 34 source-bound contributor-name fields in `level2`, while leaving credit descriptions separately translatable. The pinned manifest and both original builds were tested; see `localization/evidence/credit-name-preservation-20261107.md`. This is one bounded preservation safeguard, not a complete classification or a translated corpus.
 

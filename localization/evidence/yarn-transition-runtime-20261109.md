@@ -132,3 +132,41 @@ builder-test work directory above.
 
 The repair remains opt-in. The source, renderer, glossary, and
 special-scene readiness gates remain open.
+
+## Hidden player follow-up
+
+The live repair-only process (macOS PID `16018`) was still hidden, inactive,
+and without any on-screen window. Its existing log `normal.log` remained at
+5,523 bytes with `Waiting for flag PlacedMount...False` as its last line.
+The last write was 19:25:43 local time, before the input helper's recorded
+refusal at 19:26:27. The application and bottle were left running.
+
+Both original `globalgamemanagers` files matched the source-build hashes in
+`compare_yarn_versions.py`. Their serialized `PlayerSettings#1` has
+`runInBackground = false`. Each object decoded with the existing reader's
+trailing-byte handling and round-tripped to its exact original 884 bytes.
+The repaired Windows copy uses the same `globalgamemanagers` and
+`Assembly-CSharp.dll` as the original Windows build.
+
+An IL scan covered all 170 macOS and 172 Windows root managed DLLs. The only
+direct reference to the background setter on each build is in the Unity
+`Device.Application` wrapper. No application code directly calls either
+setter. In the Windows `StartDragonWalkRoutine` coroutine, the wait message
+goes to `Debug.Log` before a one-second `WaitForSeconds` yield. The hidden
+run's stopped log is consistent with the configured focus behavior. This
+observation does not measure native or reflection-based overrides, and it
+does not establish what would happen with background execution enabled.
+Addressing the old foreground guard alone would leave the simulation
+boundary untested.
+
+The existing Windows 11 VM reported `suspended` and the local CrossOver
+installation supplied the Mac window driver only. No alternative running
+Windows desktop was identified. Normal gameplay with background operation
+still needs a private desktop that can supply ordinary input with the game
+active inside it, or a separately validated background test route. Neither
+the VM nor the hidden game was restarted.
+
+Local source and receipts are in `localization/work/transition-background-20261109.VnR2nY/`:
+`Program.cs`, `macos.il.txt`, `windows.il.txt`, `window-state.swift`, and
+`window-state.txt`. The unchanged `normal.log` in the prior run directory
+has SHA-256 `ed0b63da2f1f7b167df4a435f6752df3bb5d677507fa8f1a80d73a2635e11c83`.

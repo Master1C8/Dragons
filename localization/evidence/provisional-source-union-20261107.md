@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v17-20261109.json`
-has SHA-256 `62461ab1d2f9d76fd0110b784b206eced511c0dadb83c026a0d0d5d2a8538bd2`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v18-20261109.json`
+has SHA-256 `1dd1a48c1a7d1dadecb7df91eeef7cd8838a4a766017406b3d9c4552d12ed099`.
 Its 5,204 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -147,8 +147,22 @@ registration sequence. Reflection-based registration and general dataflow
 remain outside these rules. Two v17 builds matched byte-for-byte. The v16
 comparison found only ten newly pinned inputs and 303 managed role changes,
 comprising 279 exact-preserve roles and 24 profiler labels. All 5,204
-identities and source values are unchanged. There are 1,696 remaining
-unclassified managed occurrences.
+identities and source values are unchanged. The v17 SHA-256 is
+`62461ab1d2f9d76fd0110b784b206eced511c0dadb83c026a0d0d5d2a8538bd2`.
+At that checkpoint 1,696 managed occurrences still needed classification.
+
+The v18 recipe adds 290 diagnostic message roles from the same pinned IL
+windows. It follows the literal or its formatted/concatenated result through
+allowlisted contiguous instructions to the message argument of an exact
+Unity `Debug.Log`, `LogWarning`, or `LogError` overload. The tracker stops at
+unrecognized operations or an argument position that would place the value
+outside the message. Negative controls reject a missing log context value, a
+discarded result and an intervening branch. The Windows `PlacedMount` wait
+format reaches its single-object log overload through this path. These roles
+record an identified debug consumer while retaining visibility review. Two
+v18 builds matched byte-for-byte. Comparison with v17 verified that only
+those 290 records gained a role and consumer. All source IDs and values are
+unchanged, and 1,406 managed occurrences still need classification.
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are
