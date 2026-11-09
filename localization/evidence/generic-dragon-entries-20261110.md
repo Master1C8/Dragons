@@ -100,3 +100,39 @@ and both focused index tests passed. Local artifacts are under
 | Desktop control source | `f11865618b3b4e363ab2e8316b6d8c5376be0a227dfc5f65e1b026d1217489f3` |
 | Both branch traces | `82833a3c50b0af164b80ec00ca151989ea8dd76b8bd9d44050e3b17f344c1bce` |
 | Current v42 special-scene index | `3769a0882796dfe90277639ed8366219e4a9feec486fc81e271547b50d80abb8` |
+
+## Proposed source glossary repair
+
+The standard-localization character roster needs a source entry for
+these four unknown roles. The proposal uses one glossary role without
+equating the identities across scenes. The player remains covered by
+the existing neutral-address entry. Ryan's verified cold-water lines
+stay with Ryan, and the general species entry stays a species entry.
+
+Insert the following entry after `dnw-max` in the protected English
+glossary. The new ID is absent from both the English and locale layers.
+
+```json
+{
+  "id": "dnw-anonymous-dragon-speaker",
+  "priority": "P2",
+  "term": "Unidentified dragon speaker",
+  "meaning": "A dragon in one of four generic scenes. Identity, gender and pronouns are unestablished; use neutral wording in each scene.",
+  "category": "Character"
+}
+```
+
+The exact proposed source differs by that insertion only. It leaves
+all 27 current entries and their relative order intact. The draft
+contains 28 English entries and measures 831 reference tokens and
+1,579 file tokens under the CLI's `o200k_base` calculation. Draft file
+SHA-256 `24f51ad99f3b78ef06e1ba8ebefb2ab9072c866f4860fe9839055b504ead8baf`.
+
+All 30 current locale maps have the existing 27 IDs. Adding the
+source entry and its Russian counterpart would leave one missing
+ID in each of the 29 other locale maps. No existing translations
+would be removed or edited. The affected Russian review includes
+the new role, the player address rule and the four bound choice
+groups. Separate authorization is pending for this local source
+change and for the neutral strategy. The canonical English and
+Russian files remain unchanged.
