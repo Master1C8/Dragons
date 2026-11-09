@@ -132,3 +132,43 @@ Full methods, caller inputs and references are under
 `windows.il` has SHA-256
 `14d6debf0a39c09f7e7d934b2e8d1c2732a9a248b51980550cd3a8037b94eb06`.
 The full localization suite passed all 180 tests with v25.
+
+## v26 TextMeshPro and Yarn Spinner Unity
+
+The emitted full instruction lists match byte-for-byte between macOS
+and Windows for the 50 selected TextMeshPro methods and 47 selected
+Yarn Spinner Unity methods. The enclosing DLLs and caller inputs are pinned
+separately for each platform. The final export binds the remaining
+literal loads to the method and consumer identified in those dumps.
+
+| Assembly | Exact-preserve | Pending visibility or runtime review |
+| --- | ---: | ---: |
+| Unity.TextMeshPro | 90 | 136 |
+| YarnSpinner.Unity | 98 | 216 |
+
+TextMeshPro exact values include ASCII lookup tables, input control
+characters, style names and asset versions. Yarn exact values
+include markup, CSV headers, metadata separators, resource keys
+and the default node name. The command usage text, debugger
+representations, diagnostics and localization failure fallback
+carry separate review roles. The visible `...` prefix in the
+options presenter is a preserved format value.
+
+Every literal load has an assigned role within the five inspected
+assemblies. The provisional inventory still has 1,076 managed
+occurrences with open review roles, plus 762 component fields,
+149 legacy UI fields and 39 other UI fields with open review roles.
+Other source assets, runtime-generated text and semantic coverage
+still require work.
+
+The complete reports are under
+`localization/work/remaining-dependency-roles-20261109.2CuNHX/`.
+
+| Report | SHA-256 |
+| --- | --- |
+| macOS TextMeshPro | `6b393242aeea4b018bdae8d6eed9b630466616e8961400f1b40e478c63bfcae7` |
+| Windows TextMeshPro | `4fe3b041d11ac1f4a40b4d0a1c38e90d6616ac7a84fcc5fbbbd2dabda7951ba9` |
+| macOS Yarn Spinner Unity | `7944ffd0ef69f9ab0db302d286d70929e33bb2bd6ec8e00488f9c4ff0c808098` |
+| Windows Yarn Spinner Unity | `644280e3d46783f05dbb88ffcbd98500bc14ccdd8e5ab392b059dc7b51b774b1` |
+
+The full localization suite passed all 180 tests with v26.

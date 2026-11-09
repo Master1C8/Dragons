@@ -447,6 +447,234 @@ UI_DIAGNOSTICS = {
         'System.Void UnityEngine.Debug::LogException(System.Exception)',
 }
 
+DEBUG_LOG = 'System.Void UnityEngine.Debug::Log(System.Object)'
+DEBUG_WARNING = 'System.Void UnityEngine.Debug::LogWarning(System.Object)'
+DEBUG_WARNING_CONTEXT = 'System.Void UnityEngine.Debug::LogWarning(System.Object,UnityEngine.Object)'
+DEBUG_ERROR = 'System.Void UnityEngine.Debug::LogError(System.Object)'
+DEBUG_ERROR_CONTEXT = 'System.Void UnityEngine.Debug::LogError(System.Object,UnityEngine.Object)'
+SET_OBJECT_NAME = 'System.Void UnityEngine.Object::set_name(System.String)'
+TMP_ASSET_VERSION = 'System.String TMPro.TMP_Asset::m_Version'
+
+TMP_DIAGNOSTICS = {
+    'TMP_FontAsset::CreateFontAsset(System.String,System.String,System.Int32)': DEBUG_LOG,
+    'TMP_FontAsset::TryAddGlyphInternal(System.UInt32,UnityEngine.TextCore.Glyph&)': DEBUG_WARNING_CONTEXT,
+    'TMP_FontAsset::TryAddCharacterInternal(System.UInt32,TMPro.TMP_Character&)': DEBUG_WARNING_CONTEXT,
+    'TMP_MaterialManager::ReleaseBaseMaterial(UnityEngine.Material)': DEBUG_LOG,
+    'TMP_Text::CalculatePreferredValues(System.Single&,UnityEngine.Vector2,System.Boolean,TMPro.TextWrappingModes)':
+        DEBUG_WARNING,
+    'TMP_Text::ValidateHtmlTag(TMPro.TMP_Text/TextProcessingElement[],System.Int32,System.Int32&)': DEBUG_LOG,
+    'TextMeshPro::OnPreRenderObject()': DEBUG_WARNING_CONTEXT,
+    'TextMeshProUGUI::OnPreRenderCanvas()': DEBUG_WARNING_CONTEXT,
+    **{f'{owner}::{method}': sink
+       for owner in ('TextMeshPro', 'TextMeshProUGUI')
+       for method, sink in (
+           ('LoadFontAsset()', DEBUG_WARNING_CONTEXT),
+           ('SetArraySizes(TMPro.TMP_Text/TextProcessingElement[])', DEBUG_WARNING_CONTEXT),
+           ('GenerateTextMesh()', DEBUG_WARNING),
+       )},
+}
+TMP_EMPTY_INPUT = {
+    'TMP_InputField::.ctor()': 'System.String TMPro.TMP_InputField::m_OriginalText',
+    'TMP_InputField::SetText(System.String,System.Boolean)': 'TMPro.TMP_InputField::SetText input normalization',
+    'TMP_InputField::LateUpdate()': 'System.String TMPro.TMP_InputField::m_Text',
+    'TMP_InputField::KeyPressed(UnityEngine.Event)': 'System.Void TMPro.TMP_InputField::set_clipboard(System.String)',
+    'TMP_InputField::GetSelectedString()': 'empty selection return value',
+    'TMP_InputField::ActivateInputFieldInternal()': 'UnityEngine.TouchScreenKeyboard::Open',
+}
+TMP_OBJECT_NAMES = {
+    'TMP_Dropdown::AddItem(TMPro.TMP_Dropdown/OptionData,System.Boolean,TMPro.TMP_Dropdown/DropdownItem,'
+    'System.Collections.Generic.List`1<TMPro.TMP_Dropdown/DropdownItem>)',
+    'TextMeshPro::CreateMaterialInstance()',
+    *{f'{owner}::CreateMaterialInstance(UnityEngine.Material)' for owner in ('TMP_SubMesh', 'TMP_SubMeshUI', 'TMP_Text')},
+}
+TMP_REPRESENTATIONS = {
+    f'{owner}::ToString()' for owner in ('Extents', 'Mesh_Extents',
+        'SpriteAssetUtilities.TexturePacker_JsonArray/SpriteFrame',
+        'SpriteAssetUtilities.TexturePacker_JsonArray/SpriteSize')
+}
+TMP_ASCII_TABLES = {
+    f'{owner}::{case}(System.{arg})'
+    for owner, case, arg in (
+        ('TMP_TextParsingUtilities', 'ToLowerASCIIFast', 'Char'),
+        ('TMP_TextParsingUtilities', 'ToUpperASCIIFast', 'Char'),
+        ('TMP_TextParsingUtilities', 'ToLowerASCIIFast', 'UInt32'),
+        ('TMP_TextParsingUtilities', 'ToUpperASCIIFast', 'UInt32'),
+        ('TMP_TextUtilities', 'ToLowerFast', 'Char'),
+        ('TMP_TextUtilities', 'ToUpperFast', 'Char'),
+        ('TMP_TextUtilities', 'ToUpperASCIIFast', 'UInt32'),
+    )
+}
+
+
+def tmp_dependency_role(row):
+    full_method, value, offset = row['method'], row['value'], row['ilOffset']
+    method = full_method.split(' ', 1)[1].removeprefix('TMPro.')
+    if method in TMP_DIAGNOSTICS:
+        return 'diagnostic-text-needs-visibility-review', TMP_DIAGNOSTICS[method]
+    if method == 'TMP_DynamicFontAssetUtilities::InitializeSystemFontReferenceCache()':
+        return 'diagnostic-text-needs-visibility-review', DEBUG_WARNING if offset <= 126 else DEBUG_LOG
+    if method == 'TMP_FontAsset::ReadFontAssetDefinition()':
+        return 'diagnostic-text-needs-visibility-review', DEBUG_LOG if offset <= 433 else DEBUG_ERROR
+    if method == 'TMP_SpriteAsset::UpgradeSpriteAsset()':
+        if (value, offset) == ('1.1.0', 1):
+            return 'preserve-exactly-version', TMP_ASSET_VERSION
+        return 'diagnostic-text-needs-visibility-review', 'System.Void UnityEngine.Debug::Log(System.Object,UnityEngine.Object)'
+    if method in TMP_EMPTY_INPUT and not value:
+        return 'preserve-exactly-empty-value', TMP_EMPTY_INPUT[method]
+    if method == 'TMP_InputField::SetText(System.String,System.Boolean)' and value == '\0':
+        return 'preserve-exactly-input-control', 'System.String System.String::Replace(System.String,System.String)'
+    if method == 'TMP_InputField::Validate(System.String,System.Int32,System.Char)':
+        return 'preserve-exactly-input-control', 'System.Int32 System.String::IndexOf(System.Char)'
+    if method == 'TMP_InputField::UpdateLabel()' and value in ('<u>', '</u>', '\u200b'):
+        return ('preserve-exactly-markup' if value.startswith('<') else 'preserve-exactly-input-control',
+                'System.Void TMPro.TMP_Text::set_text(System.String)')
+    if method == 'TMP_InputField::OnEnable()' and value == 'Caret':
+        return 'preserve-exactly-object-name', 'System.Void UnityEngine.GameObject::.ctor(System.String,System.Type[])'
+    if method in TMP_OBJECT_NAMES:
+        return 'preserve-exactly-object-name', SET_OBJECT_NAME
+    if method == 'TMP_FontAsset::.cctor()' and value == ' Atlas Material':
+        return 'preserve-exactly-object-name', 'System.String TMPro.TMP_FontAsset::s_DefaultMaterialSuffix'
+    if method in TMP_ASCII_TABLES:
+        return 'preserve-exactly-input-control', 'System.Char System.String::get_Chars(System.Int32)'
+    if method in TMP_REPRESENTATIONS or method == 'TextProcessingElement::DebuggerDisplay()':
+        return 'string-representation-needs-visibility-review', full_method
+    if method == ('TMP_FontAsset::CreateFontAssetInstance(UnityEngine.Font,System.Int32,'
+                  'UnityEngine.TextCore.LowLevel.GlyphRenderMode,System.Int32,System.Int32,TMPro.AtlasPopulationMode,System.Boolean)'):
+        return 'preserve-exactly-version', TMP_ASSET_VERSION
+    if method == 'TMP_Settings::get_version()':
+        return 'preserve-exactly-version', full_method
+    if method == 'TMP_Settings::.cctor()' and value == '2':
+        return 'preserve-exactly-version', 'System.String TMPro.TMP_Settings::s_CurrentAssetVersion'
+    if method == 'TMP_ResourceManager::.cctor()' and value == 'Regular':
+        return 'preserve-exactly-font-style-key', 'System.Int32 TMPro.TMP_TextUtilities::GetHashCode(System.String)'
+    if method in ('TMP_Style::get_NormalStyle()', 'TMP_StyleSheet::LoadStyleDictionaryInternal()') and value == 'Normal':
+        return ('preserve-exactly-font-style-key',
+                'System.Int32 TMPro.TMP_TextParsingUtilities::GetHashCode(System.String)' if offset == 141 else
+                'System.Void TMPro.TMP_Style::.ctor(System.String,System.String,System.String)')
+    return None
+
+
+YARN_MARKER_PROCESSOR_ARGS = (
+    '(Yarn.Markup.MarkupAttribute,System.Text.StringBuilder,'
+    'System.Collections.Generic.List`1<Yarn.Markup.MarkupAttribute>,System.String)')
+YARN_MARKUP_DIAGNOSTIC = 'System.Void Yarn.Markup.LineParser/MarkupDiagnostic::.ctor(System.String,System.Int32)'
+YARN_MARKUP_LOOKUP = ('System.Boolean System.Collections.Generic.IReadOnlyDictionary`2<'
+                      'System.String,Yarn.Markup.MarkupValue>::TryGetValue(!0,!1&)')
+YARN_DIAGNOSTICS = {
+    'PaletteMarkerProcessor::ProcessReplacementMarker' + YARN_MARKER_PROCESSOR_ARGS: YARN_MARKUP_DIAGNOSTIC,
+    'Actions::CreateConverters(System.Reflection.MethodInfo)': UI_ARGUMENT_EXCEPTION,
+    **{f'Actions/<>c__DisplayClass22_0::<CreateConverterFunction>b__{number}(System.String,System.Int32)':
+        UI_ARGUMENT_EXCEPTION for number in (3, 4)},
+    'DialogueRunner::get_LineProvider()': DEBUG_WARNING_CONTEXT,
+    'DialogueRunner/<OnOptionsReceivedAsync>d__81::MoveNext()': DEBUG_ERROR,
+    'BuiltinLocalisedLineProvider/<GetLocalizedLineAsync>d__15::MoveNext()': DEBUG_WARNING_CONTEXT,
+    'Cultures::GetCulture(System.String)': UI_PARAMETER_EXCEPTION,
+    'GeneratedVariableStorageExtensions::GetValueOrDefault(Yarn.Unity.IGeneratedVariableStorage,System.String)': DEBUG_LOG,
+    'GeneratedVariableStorageExtensions::SetValue(Yarn.Unity.IGeneratedVariableStorage,System.String,T)':
+        'System.Void System.ArgumentOutOfRangeException::.ctor(System.String)',
+    'GeneratedVariableStorageExtensions::GetEnumValueOrDefault(Yarn.Unity.IGeneratedVariableStorage,System.String)':
+        DEBUG_ERROR,
+    'InMemoryVariableStorage::SetAllVariables(System.Collections.Generic.Dictionary`2<System.String,System.Single>,'
+    'System.Collections.Generic.Dictionary`2<System.String,System.String>,'
+    'System.Collections.Generic.Dictionary`2<System.String,System.Boolean>,System.Boolean)': DEBUG_LOG,
+    'LinePresenter/<RunLineAsync>d__23::MoveNext()': DEBUG_ERROR,
+    'YarnProject::get_InitialValues()': DEBUG_WARNING,
+}
+YARN_DIAGNOSTIC_FORMATS = {
+    'DiagnosticUtility::EnglishPluraliseNounCount(System.Int32,System.String,System.Boolean)',
+    'DiagnosticUtility::EnglishPluraliseWasVerb(System.Int32)',
+    'InMemoryVariableStorage::GetDebugList()',
+    'LineMetadataTableEntry::ToString()',
+    'StringTableEntry::ToString()',
+}
+
+
+def yarn_dependency_role(row):
+    full_method, value, offset = row['method'], row['value'], row['ilOffset']
+    method = full_method.split(' ', 1)[1].removeprefix('Yarn.Unity.')
+    if method in YARN_DIAGNOSTICS:
+        return 'diagnostic-text-needs-visibility-review', YARN_DIAGNOSTICS[method]
+    if method in YARN_DIAGNOSTIC_FORMATS:
+        return 'string-representation-needs-visibility-review', full_method
+    if method == 'Actions::GetFullMethodName(System.Reflection.MethodInfo)' and value == '.':
+        return 'preserve-exactly-format', full_method
+    if method in ('Actions/CommandRegistration::.ctor(System.String,System.Delegate)',
+                  'Actions/CommandRegistration::.ctor(System.String,System.Reflection.MethodInfo)'):
+        if value in ('number', 'string', 'bool'):
+            return ('command-help-text-needs-visibility-review',
+                    'System.Collections.Generic.Dictionary`2<System.Type,System.String> '
+                    'Yarn.Unity.Actions/CommandRegistration::TypeFriendlyNames')
+        return 'diagnostic-text-needs-visibility-review', UI_ARGUMENT_EXCEPTION
+    if method == 'Actions/CommandRegistration::get_UsageString()':
+        return 'command-help-text-needs-visibility-review', full_method
+    if method == 'Actions/CommandRegistration::TryParseArgs(System.String[],System.Object[]&,System.String&)':
+        return 'diagnostic-text-needs-visibility-review', 'Yarn.Unity.Actions/CommandRegistration::TryParseArgs error result'
+    if method == ('Actions/CommandRegistration::Invoke(UnityEngine.MonoBehaviour,'
+                  'System.Collections.Generic.List`1<System.String>)'):
+        return ('diagnostic-text-needs-visibility-review',
+                'System.String Yarn.Unity.CommandDispatchResult::Message' if offset < 265 else
+                'System.Void System.InvalidOperationException::.ctor(System.String)')
+    if method == 'DialogueRunner/<OnCommandReceivedAsync>d__76::MoveNext()':
+        if offset == 475:
+            return ('diagnostic-text-needs-visibility-review',
+                    'System.Void System.ArgumentOutOfRangeException::.ctor(System.String)')
+        return 'diagnostic-text-needs-visibility-review', DEBUG_ERROR_CONTEXT if offset < 296 else DEBUG_ERROR
+    if method == 'VariableStorageBehaviour::AddChangeListener(System.String,System.Action`1<T>)':
+        return 'diagnostic-text-needs-visibility-review', UI_ARGUMENT_EXCEPTION
+    if method == 'DialogueRunner::.ctor()' and value == 'Start':
+        return 'preserve-exactly-yarn-node-reference', 'System.String Yarn.Unity.DialogueRunner::startNode'
+    if method == 'LocalizedLine::get_CharacterName()' and value == 'name':
+        return 'preserve-exactly-markup-key', YARN_MARKUP_LOOKUP
+    if method == 'Cultures::MakeCultureList()':
+        return {
+            'mi': ('preserve-exactly-locale-key', 'System.String Yarn.Unity.Culture::Name'),
+            'Maori': ('locale-name-needs-visibility-review', 'System.String Yarn.Unity.Culture::DisplayName'),
+            'Māori': ('preserve-exactly-locale-name', 'System.String Yarn.Unity.Culture::NativeName'),
+        }.get(value)
+    if method == 'Localization::GetAddressForLine(System.String,System.String)' and value in ('line_', '_', 'line:', ''):
+        return 'preserve-exactly-resource-key', full_method
+    if method == 'LineAdvancer::ValidateInputMode()':
+        return 'editor-message-needs-visibility-review', 'Yarn.Unity.Attributes.MessageBoxAttribute/Message'
+    if method in ('MarkupPalette::PaletteForMarker(System.String,Yarn.Unity.MarkupPalette/CustomMarker&)',
+                  'OptionItem::set_Option(Yarn.Unity.DialogueOption)') and value.startswith('<'):
+        return 'preserve-exactly-markup', (
+            'Yarn.Unity.MarkupPalette/CustomMarker::Start or End' if method.startswith('MarkupPalette::') else
+            'System.Void TMPro.TMP_Text::set_text(System.String)')
+    if method == 'OptionsPresenter/<RunOptionsAsync>d__18::MoveNext()' and value == '...':
+        return 'preserve-exactly-format', 'System.Void TMPro.TMP_Text::set_text(System.String)'
+    if method == 'PauseEventProcessor::OnLineDisplayBegin(Yarn.Markup.MarkupParseResult,TMPro.TMP_Text)':
+        if value == 'pause':
+            return 'preserve-exactly-markup-key', YARN_MARKUP_LOOKUP
+        return 'diagnostic-text-needs-visibility-review', DEBUG_WARNING
+    if method == 'StyleMarkerProcessor::ProcessReplacementMarker' + YARN_MARKER_PROCESSOR_ARGS:
+        if value in ('<style="', '">', '</style>'):
+            return ('preserve-exactly-markup',
+                    'System.Text.StringBuilder System.Text.StringBuilder::Append(System.String)' if offset == 77 else
+                    'System.Text.StringBuilder System.Text.StringBuilder::Insert(System.Int32,System.String)')
+        return 'diagnostic-text-needs-visibility-review', YARN_MARKUP_DIAGNOSTIC
+    if method in ('LineMetadata::AddMetadata(System.Collections.Generic.IEnumerable`1<Yarn.Unity.LineMetadataTableEntry>)',
+                  'LineMetadata::AddMetadata(System.String,System.Collections.Generic.IEnumerable`1<System.String>)') and value == ' ':
+        return 'preserve-exactly-metadata-format', 'System.String::Join'
+    if method in ('LineMetadata::GetShadowLineSource(System.String)',
+                  'UnityLocalization.LineMetadata::get_ShadowLineSource()') and value in ('line:', 'shadow:'):
+        return 'preserve-exactly-metadata-key', full_method
+    if method in ('LineMetadataTableEntry::CreateCSV(System.Collections.Generic.IEnumerable`1<Yarn.Unity.LineMetadataTableEntry>)',
+                  'StringTableEntry::CreateCSV(System.Collections.Generic.IEnumerable`1<Yarn.Unity.StringTableEntry>)'):
+        return 'preserve-exactly-csv-format', 'System.Void CsvHelper.CsvWriter::WriteField(System.String)'
+    if method in ('YarnTask::op_Implicit(System.Threading.Tasks.Task)', 'YarnTask`1::op_Implicit(UnityEngine.Awaitable`1<T>)'):
+        return ('preserve-exactly-parameter-name' if value in ('task', 'awaitable') else
+                'diagnostic-text-needs-visibility-review',
+                'System.Void System.ArgumentNullException::.ctor(System.String,System.String)')
+    if method == 'UnityLocalization.LineMetadata::.ctor()' and not value:
+        return 'preserve-exactly-empty-value', 'System.String Yarn.Unity.UnityLocalization.LineMetadata::nodeName'
+    if method == 'UnityLocalization.UnityLocalisedLineProvider/<GetLocalizedLineAsync>d__8::MoveNext()':
+        if offset == 287:
+            return ('error-fallback-text-needs-runtime-review',
+                    'Yarn.Unity.UnityLocalization.UnityLocalisedLineProvider/<GetLocalizedLineAsync>d__8::<text>5__3')
+        if offset == 513:
+            return 'diagnostic-text-needs-visibility-review', DEBUG_WARNING
+    return None
+
 
 def dependency_role(row, assembly):
     method, value, offset = row['method'], row['value'], row['ilOffset']
@@ -455,6 +683,10 @@ def dependency_role(row, assembly):
             'ScriptableSettingString[] UnityScriptableSettings.SettingResolution::GetLocalizedDropdowns()',
             '{0} x {1}', 77):
         return 'preserve-exactly-resolution-format', 'System.String System.String::Format(System.String,System.Object,System.Object)'
+    if assembly == 'Unity.TextMeshPro':
+        return tmp_dependency_role(row)
+    if assembly == 'YarnSpinner.Unity':
+        return yarn_dependency_role(row)
     if assembly != 'UnityEngine.UI':
         return None
     names = DEFAULT_UI_METHODS.get(method)

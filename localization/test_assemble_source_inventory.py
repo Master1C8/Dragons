@@ -193,11 +193,28 @@ class SourceInventoryUnitTests(unittest.TestCase):
                           if r['id'].startswith(f'managed:{platform}:UnityScriptableSettings:')
                           and r['source'][platform] == '{0} x {1}']
             self.assertEqual([r['role'] for r in resolution], ['preserve-exactly-resolution-format'])
+            for method, value, role, consumer in (
+                ('TMP_InputField::UpdateLabel()', '\u200b', 'preserve-exactly-input-control',
+                 'System.Void TMPro.TMP_Text::set_text(System.String)'),
+                ('TMP_ResourceManager::.cctor()', 'Regular', 'preserve-exactly-font-style-key',
+                 'System.Int32 TMPro.TMP_TextUtilities::GetHashCode(System.String)'),
+                ('LocalizedLine::get_CharacterName()', 'name', 'preserve-exactly-markup-key',
+                 inventory.managed.YARN_MARKUP_LOOKUP),
+                ('DialogueRunner::.ctor()', 'Start', 'preserve-exactly-yarn-node-reference',
+                 'System.String Yarn.Unity.DialogueRunner::startNode'),
+            ):
+                rows = [r for r in result['entries'] if r['family'] == 'managed' and r['method'].endswith(method)
+                        and r['source'].get(platform) == value]
+                self.assertTrue(rows, (platform, method))
+                self.assertEqual({(r['role'], r['consumer']) for r in rows}, {(role, consumer)})
+            fallback = [r for r in result['entries'] if r['family'] == 'managed'
+                        and r['source'].get(platform, '').startswith('!! Error: Missing localisation')]
+            self.assertEqual([r['role'] for r in fallback], ['error-fallback-text-needs-runtime-review'])
         wait = next(r for r in result['entries'] if r['source'].get('windows') == 'Waiting for flag {0}...{1}')
         self.assertEqual(wait['role'], 'diagnostic-text-needs-visibility-review')
         self.assertEqual(wait['consumer'], 'System.Void UnityEngine.Debug::Log(System.Object)')
-        self.assertEqual(sum(r['role'] == 'needs-classification' for r in result['entries']
-                             if r['family'] == 'managed'), 540)
+        self.assertFalse(any(r['role'] == 'needs-classification' for r in result['entries']
+                             if r['family'] == 'managed'))
         component_rows = [r for r in result['entries'] if r['family'] == 'game-component']
         for platform in ('macos', 'windows'):
             cold = [r for r in component_rows if r['source'].get(platform) == 'DragonColdBalls']

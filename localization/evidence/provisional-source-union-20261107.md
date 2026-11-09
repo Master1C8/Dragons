@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v25-20261109.json`
-has SHA-256 `343c6dfef4cda9258db9ec800e4fed2b2feba8c7d83da554bda4302c2f2b68d6`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v26-final-20261109.json`
+has SHA-256 `8a62a0c9783795e53fbe4b7aa0e5b699e650cbda8bf07bb5b309d9558781b45f`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -236,8 +236,15 @@ exports matched byte-for-byte, and comparison against v24 verifies
 that only the 278 roles and their consumer bindings changed.
 See [the dependency IL review](managed-game-consumers-20261109.md#v25-unity-ui-and-settings-dependencies).
 
+The v26 export assigns roles to the last 540 unclassified literal
+loads across the five inspected managed assemblies. Two separate
+exports match byte-for-byte. The v25 comparison verifies that only
+roles and consumer bindings changed. A visibility-review role is a
+provisional classification.
+See [the final managed pass](managed-game-consumers-20261109.md#v26-textmeshpro-and-yarn-spinner-unity).
+
 The inventory is explicitly `provisional-not-translation-ready`: code literals
-and many UI values remain unclassified, only five managed assemblies are
+and many UI values still require visibility review, only five managed assemblies are
 included, and runtime-generated text, other resources, exact-preservation
 coverage, branch context, special-case decisions and independent review remain
 incomplete. Source entries may be internal keys or debug data; no entry was
