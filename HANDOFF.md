@@ -230,6 +230,12 @@ All locales use the shared fixed stages in `~/.codex/skills/vn-localization/refe
 | `screenshot-upload`, `screenshot-review` | Not run: no game screenshot upload requested; if later authorized, pin and review every delivered slot. |
 | `delivery` | Integrate verified source into canonical branch; publication/release requires separate authority. |
 
+The [v42 special-scene index](localization/evidence/special-scene-index-v42-20261110.md)
+binds 23 known cases to 247 direct source IDs and preserves wider
+context separately. It includes the runtime new-slot label and
+missing-line fallback. It is the lookup for case dependencies before
+Russian decisions and does not advance editorial readiness.
+
 The [Alexander question control](localization/evidence/alexander-question-analysis-20261107.md#paired-desktop-yarn-control-2026-11-10)
 matches six original Yarn VM scenarios across both builds. It binds the
 once-only menu and exit, all three number-seven replies and both crest
