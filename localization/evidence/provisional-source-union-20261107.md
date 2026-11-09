@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v21-20261109.json`
-has SHA-256 `6810d69351e46169a7a54c2bab43f438d518d9046bc4ab2ee2ae4634c9037bdb`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v22-20261109.json`
+has SHA-256 `9c7a2fd726edaae4dedb6e9438b52a6be8c2b6abe1177557f468a019e28e58e3`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -209,6 +209,13 @@ keys and 48 menu intent keys. The remaining 722 bark descriptions and 40
 dragon descriptor names have specific runtime-review roles. Two v21
 exports matched byte-for-byte and every source value, ID and location
 matches v20.
+
+The v22 export assigns roles to 214 previously unclassified managed
+occurrences, 178 in game code and 36 in Yarn Spinner Unity. Two v22
+exports matched byte-for-byte. Comparing against v21 verified that all
+source identities and values match, and the only changes are the new
+roles and consumer bindings. See
+[managed game consumers](managed-game-consumers-20261109.md).
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are

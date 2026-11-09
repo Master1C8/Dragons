@@ -149,11 +149,25 @@ class SourceInventoryUnitTests(unittest.TestCase):
             self.assertEqual({r['consumer'] for r in missing}, {
                 inventory.managed.MISSING_BODY_FIELD, inventory.managed.SET_PARSED_TEXT,
             })
+            flag_writer = [r for r in game_rows
+                           if r['method'] == 'SimpleJSON.JSONNode WalkNWash.Flags.FlagRegistry::ToJson(System.Int32)']
+            expected_keys = {'levelIndex', 'id', 'type', 'boolValue', 'stringValue'}
+            if platform == 'macos':
+                expected_keys.add('version')
+            self.assertEqual({r['source'][platform] for r in flag_writer}, expected_keys)
+            self.assertTrue(all(r['role'] == 'preserve-exactly-json-key' for r in flag_writer))
+            make_face = [r for r in game_rows if r['method'] == inventory.managed.REGISTER_ACTIONS
+                         and r['source'][platform] == 'MakeFace']
+            self.assertEqual([r['role'] for r in make_face],
+                             ['preserve-exactly-command', 'preserve-exactly-reflection-member'])
+            egg = [r for r in game_rows if r['source'][platform] == 'Player put egg']
+            self.assertEqual({r['role'] for r in egg}, {'dragon-bark-description-needs-runtime-review',
+                                                        'dragon-bark-transition-reason-needs-runtime-review'})
         wait = next(r for r in result['entries'] if r['source'].get('windows') == 'Waiting for flag {0}...{1}')
         self.assertEqual(wait['role'], 'diagnostic-text-needs-visibility-review')
         self.assertEqual(wait['consumer'], 'System.Void UnityEngine.Debug::Log(System.Object)')
         self.assertEqual(sum(r['role'] == 'needs-classification' for r in result['entries']
-                             if r['family'] == 'managed'), 1151)
+                             if r['family'] == 'managed'), 937)
         component_rows = [r for r in result['entries'] if r['family'] == 'game-component']
         for platform in ('macos', 'windows'):
             cold = [r for r in component_rows if r['source'].get(platform) == 'DragonColdBalls']

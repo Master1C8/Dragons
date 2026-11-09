@@ -42,6 +42,8 @@ DIRECT_ROLES = {
     'System.Void CommandListener::RunCommand(System.String)': 'preserve-exactly-command',
     'System.Void UnityEngine.Object::set_name(System.String)': 'preserve-exactly-object-name',
     'System.Void UnityEngine.GameObject::.ctor(System.String)': 'preserve-exactly-object-name',
+    'System.Collections.IEnumerator PlapperHand::SetBoolForOneFrame(UnityEngine.Animator,System.String)':
+        'preserve-exactly-animation-key',
     'System.Int32 UnityEngine.InputSystem.InputActionAsset::FindControlSchemeIndex(System.String)':
         'preserve-exactly-input-control',
     'System.Boolean System.String::op_Equality(System.String,System.String)': 'preserve-exactly-comparison',
@@ -101,6 +103,10 @@ FIRST_ARGUMENT_ROLES = {
     'System.Void UnityEngine.Material::SetFloat(System.String,System.Single)': 'preserve-exactly-renderer-key',
     'System.Void UnityEngine.Material::SetColor(System.String,UnityEngine.Color)': 'preserve-exactly-renderer-key',
     'System.Void UnityEngine.Material::SetTexture(System.String,UnityEngine.Texture)': 'preserve-exactly-renderer-key',
+    'System.Void UnityEngine.VFX.VisualEffect::SetTexture(System.String,UnityEngine.Texture)':
+        'preserve-exactly-renderer-key',
+    'System.Void UnityEngine.VFX.VisualEffect::SetSkinnedMeshRenderer(System.String,UnityEngine.SkinnedMeshRenderer)':
+        'preserve-exactly-renderer-key',
     'System.Void UnityEngine.Animator::SetBool(System.String,System.Boolean)': 'preserve-exactly-animation-key',
     'System.Void UnityEngine.Animator::SetFloat(System.String,System.Single)': 'preserve-exactly-animation-key',
     'System.Void WalkNWashSceneState::SetFlag(System.String,System.Boolean)': 'preserve-exactly-state-key',
@@ -114,6 +120,8 @@ FIRST_ARGUMENT_ROLES = {
     'System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)': 'preserve-exactly-preference-key',
     'System.Int32 SaveManager::GetDataByKey(System.String,SimpleJSON.JSONNode)': 'preserve-exactly-json-key',
     'System.Int32 SaveManagerV1::GetDataByKey(System.String,SimpleJSON.JSONNode)': 'preserve-exactly-json-key',
+    'System.Void SimpleJSON.JSONNode::set_Item(System.String,SimpleJSON.JSONNode)': 'preserve-exactly-json-key',
+    'System.Void DialogCommands::SetValue(System.String,System.String)': 'preserve-exactly-state-key',
     'System.Boolean FileManager::TryLoadJSON(System.String,SimpleJSON.JSONNode&)': 'preserve-exactly-path',
     'System.Boolean Yarn.Markup.MarkupParseResult::TryGetAttributeWithName(System.String,Yarn.Markup.MarkupAttribute&)':
         'preserve-exactly-markup-key',
@@ -163,6 +171,13 @@ DEBUG_SINK_ARITY = {
 }
 MENU_TRANSITION = 'System.Void MenuResponseTransition::.ctor(System.String,System.String,MenuTransitionData)'
 LEVEL_LOAD = 'System.Void MenuTransitionDataLevelLoad::.ctor(System.String)'
+MENU_UNPAUSE = 'System.Void MenuTransitionDataUnpause::.ctor(MenuTransitionDataUnpause/UnpauseOption)'
+BARK_NOTIFY = 'System.Void DragonBarkNotifyTransition::.ctor(DragonBark,System.String)'
+BARK_TRANSITION = 'System.Void DragonBarkResponseTransition::.ctor(DragonBark,System.String)'
+BARK_SEX_ACT = ('System.Void DragonBarkSexAct::.ctor(UnityEngine.AnimationCurve,DPG.Penetrable,'
+                'System.String,System.Single,System.String)')
+BARK_OVIPOSITION = ('System.Void DragonBarkOviposition::.ctor(SphereCaster,UnityEngine.GameObject,'
+                    'UnityEngine.Transform,System.String,System.Single,System.String,System.String)')
 DECAL_SETTINGS = ('System.Void SkinnedMeshDecals.DecalSettings::.ctor('
                   'System.Nullable`1<SkinnedMeshDecals.DecalResolution>,'
                   'System.Nullable`1<SkinnedMeshDecals.DilationType>,System.String,'
@@ -171,12 +186,25 @@ TYPED_ARGUMENT_ROLES = {
     ('newobj', MENU_TRANSITION, 2): 'preserve-exactly-menu-key',
     ('newobj', MENU_TRANSITION, 1): 'preserve-exactly-menu-transition-reason',
     ('newobj', DECAL_SETTINGS, 2): 'preserve-exactly-renderer-key',
+    ('newobj', BARK_NOTIFY, 0): 'dragon-bark-transition-reason-needs-runtime-review',
+    ('newobj', BARK_TRANSITION, 0): 'dragon-bark-transition-reason-needs-runtime-review',
+    ('newobj', BARK_SEX_ACT, 0): 'dragon-bark-description-needs-runtime-review',
+    ('newobj', BARK_SEX_ACT, 2): 'preserve-exactly-animation-key',
+    ('newobj', BARK_OVIPOSITION, 1): 'dragon-bark-description-needs-runtime-review',
     **{(opcode, signature, 1): role for signature, role in FIRST_ARGUMENT_ROLES.items()
        for opcode in ('call', 'callvirt')},
 }
 ABOVE_VALUE_CALL_ARITY = {
     ('newobj', LEVEL_LOAD): 1,
+    ('newobj', MENU_UNPAUSE): 1,
     ('call', 'UnityEngine.Vector3 UnityEngine.Vector3::Lerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)'): 3,
+    ('call', 'UnityEngine.Quaternion UnityEngine.Quaternion::Lerp(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)'): 3,
+    ('call', 'UnityEngine.Vector3 UnityEngine.Vector3::op_Subtraction(UnityEngine.Vector3,UnityEngine.Vector3)'): 2,
+    ('call', 'System.Single UnityEngine.Vector3::Distance(UnityEngine.Vector3,UnityEngine.Vector3)'): 2,
+    ('call', 'System.Single UnityEngine.Mathf::Lerp(System.Single,System.Single,System.Single)'): 3,
+    ('call', 'UnityEngine.Texture UnityEngine.MaterialPropertyBlock::GetTexture(System.String)'): 2,
+    ('callvirt', 'UnityEngine.Texture UnityEngine.MaterialPropertyBlock::GetTexture(System.String)'): 2,
+    ('call', 'System.String System.String::Join(System.String,System.String[])'): 2,
 }
 MISSING_LINE = 'System.Void Yarn.Unity.LocalizedLine::.cctor()'
 MISSING_BODY_FIELD = 'System.String Yarn.Unity.LocalizedLine::RawText'
@@ -202,8 +230,66 @@ SINGLE_VALUE_CALLS = {
     'System.String System.Exception::get_Message()',
     'System.String Yarn.Line::get_ID()',
     'System.String Yarn.Command::get_Text()',
+    'UnityEngine.Transform UnityEngine.Component::get_transform()',
+    'UnityEngine.Vector3 UnityEngine.Transform::get_position()',
+    'UnityEngine.Quaternion UnityEngine.Quaternion::LookRotation(UnityEngine.Vector3)',
+    'UnityEngine.Quaternion LookController::get_LookRotation()',
+    'UnityEngine.Vector3 LookController::get_LookPosition()',
+    'System.Single UnityScriptableSettings.SettingFloat::GetValue()',
+    'System.Int32 UnityScriptableSettings.SettingInt::GetValue()',
+    'System.String MenuResponseTransition::GetDestination()',
+    'System.Single UnityEngine.UIElements.Experimental.Easing::OutCubic(System.Single)',
+    'System.String System.IO.Path::GetFullPath(System.String)',
+    'System.String System.IO.Path::GetExtension(System.String)',
+    'System.String System.Object::ToString()',
+    *(f'SimpleJSON.JSONNode SimpleJSON.JSONNode::op_Implicit(System.{kind})'
+      for kind in ('Int32', 'String', 'Boolean')),
     *(f'System.String System.{kind}::ToString()' for kind in ('Int32', 'UInt32', 'Boolean', 'Single', 'Object')),
 }
+JSON_PROTOCOL_VALUES = {
+    'System.String SimpleJSON.JSONNode::get_Value()': {''},
+    'System.Void SimpleJSON.JSONNode::Add(SimpleJSON.JSONNode)': {''},
+    'System.Void SimpleJSON.JSONNode::set_AsBool(System.Boolean)': {'false', 'true'},
+    'System.String SimpleJSON.JSONNode::Escape(System.String)': {
+        r'\\', r'\"', r'\n', r'\r', r'\t', r'\b', r'\f', r'\u',
+    },
+    'SimpleJSON.JSONNode SimpleJSON.JSONNode::Parse(System.String)': {''},
+    **{f'System.Void SimpleJSON.{node}::WriteToStringBuilder('
+       'System.Text.StringBuilder,System.Int32,System.Int32,SimpleJSON.JSONTextMode)': values
+       for node, values in (
+           ('JSONObject', {' : '}), ('JSONBool', {'false', 'true'}),
+           ('JSONNull', {'null'}), ('JSONLazyCreator', {'null'}),
+       )},
+    'System.String SimpleJSON.JSONNull::get_Value()': {'null'},
+    'System.Int64 SimpleJSON.JSONLazyCreator::get_AsLong()': {'0'},
+}
+SAVE_PATH_PARTS = {
+    'System.String SaveManager::GetSteamAndSlotPath(System.Int32)': {'_slot', 'defaultUser_slot'},
+    'System.String SaveManagerV1::GetSteamAndSlotPath(System.Int32)': {'slot', 'defaultUser'},
+    **{f'System.Void {manager}::Save(SimpleJSON.JSONNode,System.Int32)': {'savegame.dgn', '_backup'}
+       for manager in ('SaveManager', 'SaveManagerV1')},
+    'System.Void SteamManager::EnsureSteamAppIdFile(System.UInt32)': {'..', 'steam_appid.txt'},
+}
+REGISTER_ACTIONS = ('System.Void Yarn.Unity.Generated.ActionRegistration::RegisterActions('
+                    'Yarn.Unity.IActionRegistration,Yarn.Unity.RegistrationType)')
+REFLECTION_GET_METHOD = 'System.Reflection.MethodInfo System.Type::GetMethod(System.String,System.Type[])'
+REGISTER_REFLECTED_COMMAND = (
+    'System.Void Yarn.Unity.IActionRegistration::AddCommandHandler(System.String,System.Reflection.MethodInfo)')
+
+
+def game_specific_role(row):
+    method, value = row['method'], row['value']
+    if value in JSON_PROTOCOL_VALUES.get(method, ()):
+        return 'preserve-exactly-json-protocol', method
+    if value in SAVE_PATH_PARTS.get(method, ()):
+        return 'preserve-exactly-path', method
+    if method == REGISTER_ACTIONS and '#ldstr:' in row['id']:
+        suffix = row['id'].rsplit('#ldstr:', 1)[1]
+        if (suffix, value) in {('8', 'MakeFace'), ('10', 'Open'), ('12', 'LookAt'), ('14', 'ClearLook')}:
+            return 'preserve-exactly-reflection-member', REFLECTION_GET_METHOD
+        if (suffix, value) in {('7', 'MakeFace'), ('9', 'Open'), ('11', 'BeginDialogue'), ('13', 'FinishDialogue')}:
+            return 'preserve-exactly-command', REGISTER_REFLECTED_COMMAND
+    return None
 
 
 def bind_context(data, context):
@@ -234,6 +320,8 @@ def stacked_argument_role(steps):
             above += 1
         elif opcode in ('ldfld', 'ldflda', 'box') and above:
             continue
+        elif opcode == 'constrained.' and above and step['operand'] is not None:
+            continue
         elif opcode in ('call', 'callvirt') and above and target in SINGLE_VALUE_CALLS:
             continue
         elif arity is not None and above >= arity:
@@ -242,6 +330,8 @@ def stacked_argument_role(steps):
             above = 0
         elif opcode == 'call' and DEBUG_SINK_ARITY.get(target) == above + 1:
             return 'diagnostic-text-needs-visibility-review', target
+        elif opcode == 'newobj' and above == 0 and DIRECT_ROLES.get(target) == 'diagnostic-text-needs-visibility-review':
+            return DIRECT_ROLES[target], target
         else:
             return None
     return None
