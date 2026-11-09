@@ -50,3 +50,44 @@ was generated.
 | Paired Yarn scene export | `52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995` |
 | SiteForMods glossary review protocol | `5319d645d57ec7abc0c2b136d42ce4d2b14ce1e7f2e64a621bc64d62d63ef03a` |
 | SiteForMods glossary workflow | `ff539799f9791a10fc9a498b7afec98a95de6e53bfa1fa989af0828d9df6604a` |
+
+## Alexander register correction and second Russian self-review
+
+The Russian meaning now says «говорит официальным тоном и
+выражается точно». The two phrases convey register and precision
+separately. The term, other meaning clauses, 26 other Russian
+entries, 29 other locale maps and English source remain exact.
+The one-field change is on local and remote SiteForMods main at
+`489512ce8b4c0134783d68db6e1ac94196864232`.
+
+The affected first-read closure included Alexander's complete entry,
+his reference in the college, library, Igwyx, family crest and
+alchemy entries, and the evidence for his formal and personal
+registers. Both builds use the same wording in `line:a2ba222e`,
+`line:a5979ac9`, `line:af0c15fd` and `line:152cb8ad`.
+The informal `line:1b6c7f75` in his romance route establishes that
+the character note is a default register. Preserve local shifts
+in the eventual Russian dialogue. This recheck keeps his
+masculine Russian agreement separate from evidence about English
+third-person pronouns.
+
+I then made a separate complete fidelity read of all 27 updated
+English/Russian term and meaning pairs in the same ordered ID
+universe above, followed by a Russian-only read for idiom,
+register, spelling and agreement. I checked the reused roles,
+species, brand and scene terms across the entries, including the
+distinction between a numbered branch and its caller, and the
+shared interjection in the film title. This is a second
+coordinator self-review, with zero skipped entry fields.
+No additional Russian entry correction was identified in this
+read. The English roster decision remains open, and terminology
+with scene-specific humor still requires in-context Russian
+decisions. Neither self-review closes those requirements.
+
+The canonical CLI validated all 27 IDs and their order and reported
+the same English fingerprint. All 59 glossary tests passed.
+
+| Updated artifact | SHA-256 |
+| --- | --- |
+| Full translation file | `5b52e3cfcd89df39551bee33b1e30c6b40901a00e883e62ce469c4f22c2a2f0b` |
+| Compact Russian map, UTF-8 JSON | `20af03f9c319deaad522827173654c9b5dc1564d2272f8937a16185796c1749b` |
