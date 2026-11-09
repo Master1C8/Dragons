@@ -38,6 +38,7 @@ RYAN_EXTRA_ROLES_SHA = '73f065159d49a1b2cd173cc6d2a333ecb4200c40edd5ab60800640b2
 RYAN_FOOD_ROLES_SHA = '5a0ae69141a87f981bd9249f4ed657387cba73e81073393a6ebfa1f2adef86fa'
 CONRAD3_ROLES_SHA = 'cfcfc9ead9be0b1b0d90e5f91862fd09657b9199ce49eba40c3f8a3712df41d3'
 CONRAD124_ROLES_SHA = '66a1abafedf495b6e803508500a8cd9ee97bc41565c709296de760b475dc9e17'
+ALEXANDER_LEVEL_ROLES_SHA = 'ce9fa72e0a240e38135d17f6e440f17e9c3260086fe27ea43a511a395aa0e3ab'
 
 
 def load_pinned(path, expected):
@@ -158,6 +159,20 @@ def bind_conrad124_roles(scenes, manifest):
          'Conrad_4_Mount_Start', 'Conrad_4_Mount_Finish'}, 170)
 
 
+def bind_alexander_level_roles(scenes, manifest):
+    return bind_reviewed_roles(scenes, manifest,
+        {'Alexander_1_intro', 'Alexander_1_required', 'Alexander_1_Outro',
+         'alexander_jerk_off_no', 'alexander_mount_no',
+         'Alexander_2_intro', 'Alexander_2_required', 'Alexander_2_Outro',
+         'Alexander_3_intro', 'Alexander_3_required', 'Alexander_3_Outro',
+         'Alexander_3_JerkOff_Start', 'Alexander_3_Cum',
+         'Alexander_4_intro', 'Alexander_4_required', 'Alexander_4_Outro',
+         'Alexander_4_JerkOff_Start', 'Alexander_4_Cum', 'Alexander_4_Mount_Start', 'Alexander_4_Mount_Finish',
+         'Alexander_5_intro', 'Alexander_5_required', 'Alexander_5_Outro',
+         'Alexander_5_JerkOff_Start', 'Alexander_5_Cum', 'Alexander_5_Mount_Start', 'Alexander_5_Mount_Finish',
+         'Alexander_questions'}, 379)
+
+
 def merge_reviewed_roles(role_sets, full, prefixes):
     if any(role_sets[i].keys() & role_sets[j].keys() for i in range(len(role_sets)) for j in range(i)):
         raise ValueError('reviewed Yarn role scopes overlap')
@@ -196,7 +211,10 @@ def build(work, roles_path):
     conrad3_roles = bind_conrad3_roles(scenes, conrad3)
     conrad124 = load_pinned(Path(__file__).with_name('yarn_roles_conrad124.json'), CONRAD124_ROLES_SHA)
     conrad124_roles = bind_conrad124_roles(scenes, conrad124)
-    role_sets = (opening_roles, ryan23_roles, ryan45_roles, extra_roles, food_roles, conrad3_roles, conrad124_roles)
+    alexander = load_pinned(Path(__file__).with_name('yarn_roles_alexander_levels.json'), ALEXANDER_LEVEL_ROLES_SHA)
+    alexander_roles = bind_alexander_level_roles(scenes, alexander)
+    role_sets = (opening_roles, ryan23_roles, ryan45_roles, extra_roles, food_roles,
+                 conrad3_roles, conrad124_roles, alexander_roles)
     reviewed_roles = merge_reviewed_roles(role_sets, full, prefixes)
     credit_manifest = load_pinned(credits.MANIFEST, credits.MANIFEST_SHA256)
     protected_names = bind_credit_names(roles, credit_manifest, ui)
@@ -315,6 +333,7 @@ def build(work, roles_path):
             'ryanFoodRoleManifestSha256': RYAN_FOOD_ROLES_SHA,
             'conrad3RoleManifestSha256': CONRAD3_ROLES_SHA,
             'conrad124RoleManifestSha256': CONRAD124_ROLES_SHA,
+            'alexanderLevelRoleManifestSha256': ALEXANDER_LEVEL_ROLES_SHA,
             'familyCounts': counts,
             'entries': list(records.values()),
             'limitations': 'Provisional union of pinned discovery exports. Managed occurrences are build-specific and unpaired; roles, runtime visibility, other assemblies/resources, full exact-preservation contract, special-scene decisions and independent review remain incomplete. Texture text is excluded by owner decision.'}

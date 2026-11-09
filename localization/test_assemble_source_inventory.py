@@ -76,7 +76,15 @@ class SourceInventoryUnitTests(unittest.TestCase):
             self.assertEqual(entries[f'yarn:line:{line}']['role'], 'choice-candidate')
         self.assertNotEqual(entries['yarn:line:d38c63ea']['source']['macos'],
                             entries['yarn:line:d38c63ea']['source']['windows'])
-        self.assertEqual(sum(r['role'] in opening_roles for r in result['entries'] if r['family'] == 'yarn'), 924)
+        self.assertEqual(entries['yarn:line:6d5ba814']['role'], 'recovery-prompt-candidate')
+        self.assertEqual(entries['yarn:line:6a7610f3']['role'], 'recovery-choice-candidate')
+        self.assertEqual(entries['yarn:line:7e189c92']['role'], 'dialogue-punctuation-candidate')
+        self.assertEqual(entries['yarn:line:c2bdc402']['role'], 'choice-candidate')
+        self.assertEqual(entries['yarn:line:66fb84fe']['role'], 'choice-candidate')
+        self.assertEqual(entries['yarn:line:8ee41fdc']['role'], 'dialogue-candidate')
+        self.assertNotEqual(entries['yarn:line:a1f9de62']['source']['macos'],
+                            entries['yarn:line:a1f9de62']['source']['windows'])
+        self.assertEqual(sum(r['role'] in opening_roles for r in result['entries'] if r['family'] == 'yarn'), 1303)
         self.assertEqual(result['openingRoleManifestSha256'], inventory.OPENING_ROLES_SHA)
         self.assertEqual(result['ryan23RoleManifestSha256'], inventory.RYAN23_ROLES_SHA)
         self.assertEqual(result['ryan45RoleManifestSha256'], inventory.RYAN45_ROLES_SHA)
@@ -84,6 +92,7 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertEqual(result['ryanFoodRoleManifestSha256'], inventory.RYAN_FOOD_ROLES_SHA)
         self.assertEqual(result['conrad3RoleManifestSha256'], inventory.CONRAD3_ROLES_SHA)
         self.assertEqual(result['conrad124RoleManifestSha256'], inventory.CONRAD124_ROLES_SHA)
+        self.assertEqual(result['alexanderLevelRoleManifestSha256'], inventory.ALEXANDER_LEVEL_ROLES_SHA)
         mac_only = entries['settings:LookInvertY:label']
         self.assertEqual(mac_only['source']['macos'], 'Invert Look Y')
         self.assertIsNone(mac_only['source']['windows'])

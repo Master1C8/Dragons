@@ -1,0 +1,907 @@
+{
+  "schema": 1,
+  "sourceExportSha256": "52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995",
+  "questionGroupsSha256": "fd7f9cb5fd3e5e654ca07e4a84ad17aee2794b042765c6ae54c6c36a9bd824fc",
+  "scope": "All line-bearing targets named directly by the five pinned Alexander level configurations, plus the seven state-bound question groups and their shared exit. Source function only.",
+  "groups": [
+    {
+      "node": "Alexander_1_intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:a2ba222e",
+        "line:a5979ac9",
+        "line:20f87f8d",
+        "line:0c997163",
+        "line:9aa97614",
+        "line:af0c15fd",
+        "line:836d1b13",
+        "line:1270a483",
+        "line:8440a3f4",
+        "line:f7f963e3",
+        "line:db986d0d"
+      ],
+      "reason": "Alexander introduces his occupation and crest, asks for a quick wash and corrects the form of address."
+    },
+    {
+      "node": "Alexander_1_intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:33a79dbe",
+        "line:b6c878fa",
+        "line:393c128a",
+        "line:155d1c64",
+        "line:61c96494",
+        "line:ee3d0ee4",
+        "line:780d0993"
+      ],
+      "reason": "The player greets Alexander, asks about the college and responds to his gate request."
+    },
+    {
+      "node": "Alexander_1_intro",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:4da86a7a"
+      ],
+      "reason": "A standalone ellipsis marks a dialogue beat in this exchange."
+    },
+    {
+      "node": "Alexander_1_required",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:73e4789c",
+        "line:74c9c07b",
+        "line:e2f9c70c",
+        "line:13223129",
+        "line:a97338b0"
+      ],
+      "reason": "Alexander calls the wash proletarian and explains or responds to the player’s reaction."
+    },
+    {
+      "node": "Alexander_1_required",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:e5d47feb",
+        "line:8512365e"
+      ],
+      "reason": "The player either stumbles over the unfamiliar word or takes the comment as praise."
+    },
+    {
+      "node": "Alexander_1_Outro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:fd68807c",
+        "line:c8cde395",
+        "line:e4aced7b",
+        "line:75b152eb",
+        "line:e381559c"
+      ],
+      "reason": "Alexander praises the wash, reacts to the player and leaves to teach."
+    },
+    {
+      "node": "Alexander_1_Outro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:5efde4e2",
+        "line:729cea0c"
+      ],
+      "reason": "The player answers with a kobold vocalization or a spoken response."
+    },
+    {
+      "node": "alexander_jerk_off_no",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:22b5941e"
+      ],
+      "reason": "Alexander declines this interaction for now."
+    },
+    {
+      "node": "alexander_mount_no",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:f80bd44b"
+      ],
+      "reason": "Alexander declines using the equipment in this scene."
+    },
+    {
+      "node": "Alexander_2_intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:394db643",
+        "line:152cb8ad",
+        "line:831cbfda",
+        "line:b6b9dc33",
+        "line:9ad8d2dd",
+        "line:fedbf70c",
+        "line:68ebf07b",
+        "line:d2baf9e2",
+        "line:448afe95",
+        "line:712f9d7c",
+        "line:cb7e94e5",
+        "line:cc532c02",
+        "line:5a632b75",
+        "line:bfeaec15",
+        "line:938be2fb",
+        "line:301e8665"
+      ],
+      "reason": "Alexander requests a late wash and explains Igwyx’s accident. Keep referents and the two reactions to the accident distinct."
+    },
+    {
+      "node": "Alexander_2_intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:af7db134",
+        "line:2089db44",
+        "line:0ce8d5aa",
+        "line:0bc56d4d",
+        "line:9df56a3a",
+        "line:e71f9a0b",
+        "line:5d4e9392",
+        "line:29daeb62",
+        "line:a62e8112",
+        "line:05bbe58c"
+      ],
+      "reason": "The player responds to the late request, asks about the accident and offers to open the gate."
+    },
+    {
+      "node": "Alexander_2_required",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:7fe349d7",
+        "line:78cef130",
+        "line:89150715",
+        "line:1f250062",
+        "line:a57409fb",
+        "line:33440e8c"
+      ],
+      "reason": "Alexander explains the difference between the incident and the threat to his reputation."
+    },
+    {
+      "node": "Alexander_2_required",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:e9d34ea0",
+        "line:eefef647"
+      ],
+      "reason": "The player reassures Alexander in two ways."
+    },
+    {
+      "node": "Alexander_2_Outro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:80de6c63",
+        "line:acbf628d",
+        "line:ab92da6a",
+        "line:3da2dd1d",
+        "line:4e1b1d0a",
+        "line:627a13e4",
+        "line:c1ef777a",
+        "line:57df700d",
+        "line:ed8e7994",
+        "line:eaa3c173",
+        "line:173782fa",
+        "line:3b568c14"
+      ],
+      "reason": "Alexander thanks the player and discusses trust and expectations."
+    },
+    {
+      "node": "Alexander_2_Outro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:16ee6b14",
+        "line:3a8f65fa",
+        "line:d82b1a7d",
+        "line:f44a1493",
+        "line:7bbe7ee3",
+        "line:7c93c604",
+        "line:8107858d"
+      ],
+      "reason": "The player can respond to his offer, confidence and compliment, and offer to open the gate."
+    },
+    {
+      "node": "Alexander_3_intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:5dacf226",
+        "line:680991cf",
+        "line:44689f21",
+        "line:d57520b1",
+        "line:434527c6",
+        "line:61c8781b",
+        "line:4da976f5",
+        "line:780c151c",
+        "line:c25d1c85",
+        "line:c570a462",
+        "line:b6c96475",
+        "line:9aa86a9b",
+        "line:393d0e05",
+        "line:836c079c",
+        "line:8441bf7b",
+        "line:1271b80c",
+        "line:e3aa4e29",
+        "line:cfcb40c7",
+        "line:6c5e2459",
+        "line:d60f2dc0"
+      ],
+      "reason": "Alexander greets the player, explains the ink, and admits why he came."
+    },
+    {
+      "node": "Alexander_3_intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:fe3996b8",
+        "line:d2589856",
+        "line:f7f87f6c",
+        "line:546d1bf2",
+        "line:db997182",
+        "line:ee3c126b",
+        "line:5340a315",
+        "line:20f96302",
+        "line:0c986dec",
+        "line:af0d0972",
+        "line:155c00eb",
+        "line:59fb47b0",
+        "line:403f2ab7",
+        "line:fa6e232e"
+      ],
+      "reason": "The player responds to the ink and the compliment, or asks about private washers and opens the gate."
+    },
+    {
+      "node": "Alexander_3_intro",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:759a495e"
+      ],
+      "reason": "A standalone ellipsis marks a dialogue beat in this exchange."
+    },
+    {
+      "node": "Alexander_3_required",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:1475f95c",
+        "line:8245fe2b",
+        "line:f1fc3e3c",
+        "line:dd9d30d2",
+        "line:7e08544c",
+        "line:e838533b",
+        "line:c4595dd5",
+        "line:c374e532",
+        "line:a05a7804",
+        "line:366a7f73",
+        "line:b99e1503",
+        "line:95ff1bed",
+        "line:92d2a30a"
+      ],
+      "reason": "Alexander follows up on Igwyx’s recovery and invites the player to ask a question."
+    },
+    {
+      "node": "Alexander_3_required",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:67cc394b",
+        "line:4bad37a5",
+        "line:52695aa2",
+        "line:5544e245",
+        "line:8c3b76ea",
+        "line:1a0b719d",
+        "line:2fae1274",
+        "line:03cf1c9a"
+      ],
+      "reason": "The player reacts to the recovery and asks what Alexander means before the question node."
+    },
+    {
+      "node": "Alexander_3_Outro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:04c62f9b",
+        "line:03eb977c",
+        "line:7052576b",
+        "line:ca035ef2",
+        "line:ffa63d1b",
+        "line:d3c733f5"
+      ],
+      "reason": "Alexander comments on the wash and says he will return as a friend."
+    },
+    {
+      "node": "Alexander_3_Outro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:95db900b",
+        "line:e662501c",
+        "line:5c335985",
+        "line:69963a6c"
+      ],
+      "reason": "The player can use a spoken response or kobold vocalization and respond to Alexander’s friendship."
+    },
+    {
+      "node": "Alexander_3_JerkOff_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:7d13eca0",
+        "line:ec0e5330"
+      ],
+      "reason": "Alexander reacts at the start of the interaction, including the quieter aside."
+    },
+    {
+      "node": "Alexander_3_Cum",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:a716d3b8",
+        "line:c4384e8e"
+      ],
+      "reason": "Alexander responds after the interaction, contrasting his embarrassment and enjoyment."
+    },
+    {
+      "node": "Alexander_4_intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:bcbc6373",
+        "line:90dd6d9d",
+        "line:a5780e74",
+        "line:1f2907ed",
+        "line:8919009a",
+        "line:8e34b87d",
+        "line:fd8d786a",
+        "line:47dc71f3",
+        "line:d1ec7684",
+        "line:e449156d",
+        "line:c8281b83",
+        "line:cf05a364",
+        "line:3ede5541",
+        "line:12bf5baf",
+        "line:271a3846"
+      ],
+      "reason": "Alexander comments on the rain and reacts to understanding the player’s vocalizations."
+    },
+    {
+      "node": "Alexander_4_intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:06ed6aea",
+        "line:33480903",
+        "line:1804bf0a",
+        "line:6bbd7f1d",
+        "line:7279121a",
+        "line:5e181cf4",
+        "line:5935a413",
+        "line:a8ee5236",
+        "line:b12a3f31"
+      ],
+      "reason": "The player responds to the weather and chooses different meanings expressed by the same vocalization."
+    },
+    {
+      "node": "Alexander_4_intro",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:848f5cd8"
+      ],
+      "reason": "A standalone ellipsis marks a dialogue beat in this exchange."
+    },
+    {
+      "node": "Alexander_4_required",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:505154a4",
+        "line:c66153d3",
+        "line:577cec43",
+        "line:24c52c54",
+        "line:b2f52b23",
+        "line:08a422ba",
+        "line:9e9425cd",
+        "line:ab314624",
+        "line:875048ca",
+        "line:164df75a",
+        "line:ebd9b4d3",
+        "line:7de9b3a4",
+        "line:c7b8ba3d",
+        "line:5188bd4a",
+        "line:642ddea3",
+        "line:484cd04d",
+        "line:4f6168aa",
+        "line:3cd8a8bd",
+        "line:10b9a653"
+      ],
+      "reason": "Alexander tentatively asks to use the equipment and reacts to the player’s answers."
+    },
+    {
+      "node": "Alexander_4_required",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:c14ceb34",
+        "line:807df02d",
+        "line:3d014153",
+        "line:11604fbd",
+        "line:f21dd9d4",
+        "line:de7cd73a",
+        "line:aae8afca",
+        "line:8689a124"
+      ],
+      "reason": "The player encourages Alexander and may mention Conrad’s role in getting the equipment."
+    },
+    {
+      "node": "Alexander_4_required",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:d9516fdd"
+      ],
+      "reason": "A standalone ellipsis marks a dialogue beat in this exchange."
+    },
+    {
+      "node": "Alexander_4_Outro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:9b9567ec",
+        "line:0da5609b",
+        "line:b7f46902",
+        "line:26e9d692",
+        "line:4efc873f",
+        "line:629d89d1",
+        "line:5738ea38",
+        "line:c108ed4f",
+        "line:7b59e4d6",
+        "line:ed69e3a1",
+        "line:ea445b46",
+        "line:0fcd9c26",
+        "line:23ac92c8"
+      ],
+      "reason": "Alexander reflects on being cared for and corrects the form of address."
+    },
+    {
+      "node": "Alexander_4_Outro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:21c46e75",
+        "line:b0d9d1e5",
+        "line:d8cc8048",
+        "line:f4ad8ea6",
+        "line:7c745c31",
+        "line:99fd9b51"
+      ],
+      "reason": "The player responds to the reflection and can use the form of address that prompts the correction."
+    },
+    {
+      "node": "Alexander_4_JerkOff_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:f885f11d"
+      ],
+      "reason": "Alexander reacts at the start of the interaction."
+    },
+    {
+      "node": "Alexander_4_Cum",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:b54ee04d"
+      ],
+      "reason": "Alexander thanks the player after the interaction."
+    },
+    {
+      "node": "Alexander_4_Mount_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:ec00a1fe"
+      ],
+      "reason": "Alexander responds when the equipment is offered."
+    },
+    {
+      "node": "Alexander_4_Mount_Finish",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:d7bf167b"
+      ],
+      "reason": "Alexander responds after using the equipment."
+    },
+    {
+      "node": "Alexander_5_intro",
+      "kind": "line",
+      "role": "recovery-prompt-candidate",
+      "ids": [
+        "line:6d5ba814",
+        "line:fc461784"
+      ],
+      "reason": "This prompt appears when the three inspected relationship flags are all false."
+    },
+    {
+      "node": "Alexander_5_intro",
+      "kind": "option",
+      "role": "recovery-choice-candidate",
+      "ids": [
+        "line:6a7610f3",
+        "line:0d9de1a1",
+        "line:9bade6d6"
+      ],
+      "reason": "Each option writes a distinct relationship-flag combination in the all-false recovery branch."
+    },
+    {
+      "node": "Alexander_5_intro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:21fcef4f",
+        "line:14598ca6",
+        "line:3f153aaf",
+        "line:da9cfdcf",
+        "line:556897bf",
+        "line:ef399e26",
+        "line:8b3abbf7",
+        "line:a75bb519"
+      ],
+      "reason": "The regular player choices include route-dependent replies about a previous date."
+    },
+    {
+      "node": "Alexander_5_intro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:b7cce838",
+        "line:82698bd1",
+        "line:38388248",
+        "line:ae08853f",
+        "line:a9253dd8",
+        "line:4cacfab8",
+        "line:60cdf456",
+        "line:f6fdf321",
+        "line:c35890c8",
+        "line:79099951",
+        "line:7e2421b6",
+        "line:e81426c1",
+        "line:1d0abc80",
+        "line:316bb26e"
+      ],
+      "reason": "The regular greetings and replies vary with the current relationship route."
+    },
+    {
+      "node": "Alexander_5_required",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:1c856f1c",
+        "line:30e461f2",
+        "line:a6d46685",
+        "line:a1f9de62",
+        "line:d2401e75",
+        "line:fe21109b",
+        "line:5db47405",
+        "line:71d57aeb",
+        "line:76f8c20c",
+        "line:87233429",
+        "line:ab423ac7",
+        "line:3d723db0"
+      ],
+      "reason": "Alexander responds to what the player says about the date. Preserve each separately voiced reaction."
+    },
+    {
+      "node": "Alexander_5_required",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:8ab5686b",
+        "line:681117ec",
+        "line:e0c8c57b",
+        "line:37c9d915",
+        "line:44701902",
+        "line:cb847372",
+        "line:e7e57d9c"
+      ],
+      "reason": "The player answers about a prior date and can return the compliment."
+    },
+    {
+      "node": "Alexander_5_required",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:1113335e"
+      ],
+      "reason": "A standalone ellipsis marks a dialogue beat in this exchange."
+    },
+    {
+      "node": "Alexander_5_Outro",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:505e150f",
+        "line:c66e1278",
+        "line:23e7d518",
+        "line:b5d7d26f",
+        "line:99b6dc81",
+        "line:ac13bf68",
+        "line:1642b6f1",
+        "line:8072b186",
+        "line:116f0e16",
+        "line:875f0961",
+        "line:5d36d5c8",
+        "line:e767dc51",
+        "line:44f2b8cf"
+      ],
+      "reason": "Alexander thanks the player and either invites them to the library or says goodbye."
+    },
+    {
+      "node": "Alexander_5_Outro",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:0f86dbf6",
+        "line:3a23b81f",
+        "line:cb06d2bf",
+        "line:7157db26"
+      ],
+      "reason": "The player responds to the invitation or farewell in its own branch."
+    },
+    {
+      "node": "Alexander_5_JerkOff_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:c777ce0c"
+      ],
+      "reason": "Alexander gives quiet feedback at the start of the interaction."
+    },
+    {
+      "node": "Alexander_5_Cum",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:963981e4"
+      ],
+      "reason": "Alexander apologizes for the mess afterward."
+    },
+    {
+      "node": "Alexander_5_Mount_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:c60c65e8"
+      ],
+      "reason": "Alexander agrees to use the equipment."
+    },
+    {
+      "node": "Alexander_5_Mount_Finish",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:acab92d4"
+      ],
+      "reason": "Alexander thanks the player after the interaction."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:fc7aaaa0",
+        "line:003700c7",
+        "line:ba66095e"
+      ],
+      "reason": "The player asks about teaching or comments on his example."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:19f36dc0",
+        "line:8fc36ab7",
+        "line:3592632e",
+        "line:a3a26459",
+        "line:960707b0",
+        "line:2c560e29",
+        "line:2b7bb6ce",
+        "line:bd4bb1b9"
+      ],
+      "reason": "Alexander explains his vocation and anxiety about the example he sets."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:daa040eb",
+        "line:f6c14e05",
+        "line:c3642dec",
+        "line:79352475",
+        "line:9b915bf2"
+      ],
+      "reason": "The player asks about purple and answers follow-ups about Alexander’s hue and their own preference."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:4c90479c",
+        "line:60f14972",
+        "line:55542a9b",
+        "line:ef052302",
+        "line:e8289be5",
+        "line:0da15c85"
+      ],
+      "reason": "Alexander distinguishes his own hue from his taste in colors and asks the player back."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:7e189c92",
+        "line:b7f0551c"
+      ],
+      "reason": "A standalone ellipsis marks a dialogue beat in this exchange."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:21c0526b",
+        "line:38043f6c",
+        "line:a91980fc"
+      ],
+      "reason": "The player asks about size and responds to Alexander’s pressure to meet expectations."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:825536f5",
+        "line:14653182",
+        "line:ae34381b",
+        "line:3f29878b",
+        "line:548dc375"
+      ],
+      "reason": "Alexander describes the social expectations that come with his size."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:c2bdc402",
+        "line:eedccaec",
+        "line:db79a905",
+        "line:f718a7eb",
+        "line:f0351f0c"
+      ],
+      "reason": "Preserve the number, citrus contrast and the separate disagreement and appeal-to-authority choices."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:78eccd9b",
+        "line:4d49ae72",
+        "line:6128a09c",
+        "line:6605187b",
+        "line:15bcd86c"
+      ],
+      "reason": "Alexander treats the unusual taste association as certain and distinguishes yellow lime from lemon."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:838cdf1b",
+        "line:0c78b56b",
+        "line:6b6dd8bc",
+        "line:2019bb85",
+        "line:27340362"
+      ],
+      "reason": "The player asks what the description means and whether Alexander intends it positively."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:39ddd682",
+        "line:afedd1f5",
+        "line:9a48b21c",
+        "line:b629bcf2",
+        "line:b1040415",
+        "line:fd5ddfcb",
+        "line:470cd652",
+        "line:d13cd125"
+      ],
+      "reason": "Alexander calls the player unique, clarifies his impression and explains what makes the relationship feel different."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:72a9b5bb",
+        "line:c8f8bc22",
+        "line:2a5cc3a5"
+      ],
+      "reason": "The player asks about happiness and responds to Alexander’s explanation."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:e499b2cc",
+        "line:5ec8bb55",
+        "line:59e503b2",
+        "line:cfd504c5",
+        "line:bc6cc4d2",
+        "line:063dcd4b",
+        "line:900dca3c",
+        "line:3398aea2"
+      ],
+      "reason": "Alexander connects his happiness with having someone he can open up to."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:a5a8a9d5",
+        "line:e90fee8e",
+        "line:535ee717"
+      ],
+      "reason": "The player asks about the crest and can either acknowledge the explanation or request a repeat."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:1ff9a04c",
+        "line:89c9a73b",
+        "line:18d418ab",
+        "line:8ee41fdc",
+        "line:7f3fe9f9",
+        "line:c56ee060",
+        "line:f0cb8389"
+      ],
+      "reason": "Alexander explains his ornamental crest and trails into a reference while the type progressively shrinks."
+    },
+    {
+      "node": "Alexander_questions",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:66fb84fe"
+      ],
+      "reason": "The shared exit becomes available after a question and transfers to the node that resets the shared question flag."
+    }
+  ]
+}

@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v13-20261109.json`
-has SHA-256 `de1f5b6eca5708040325b75ca9debe5d423191a9b41a1a9638e36e5baeb23fba`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v14-20261109.json`
+has SHA-256 `b001ec87a5a2a22066b7cd499a980a0d74c92cae4eff8d1c7c5d1f7779e10f1f`.
 Its 5,204 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -90,6 +90,16 @@ relationship choices remain distinct, including conditional availability
 and visible route hints. Two v13 builds matched byte-for-byte and the
 v12 comparison changed exactly those 111 roles. There are 899 unclassified
 Yarn IDs.
+
+The v14 recipe adds 302 IDs from the 27 line-bearing targets named directly
+by the five Alexander level configurations and 77 from `Alexander_questions`.
+The question roles reconcile against all seven source-bound question groups
+and the shared exit, including source hashes and instruction locations. The
+standalone ellipses, regular options and the all-false recovery choices in
+`Alexander_5_intro` retain separate roles. The number-seven and family-crest
+groups still require Russian adaptation decisions. Two v14 builds matched
+byte-for-byte and the v13 comparison changed exactly those 379 roles. There
+are 520 unclassified Yarn IDs.
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are
