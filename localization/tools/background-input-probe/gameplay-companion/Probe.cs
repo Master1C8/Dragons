@@ -24,9 +24,11 @@ public static class Probe
     private static Component? mountCrate, insertCrate;
     private static Camera? playerCamera;
     private static float waitDeadline;
-    private static bool introStarted, introCompleted, dialogueCompleted, advanceDown;
+    private static bool introStarted, introCompleted, dialogueCompleted, advanceDown, mountNodeStarted;
     private static int choiceIndex, optionClickPhase;
-    private static float nextInspect;
+    private static int gateWaypoint;
+    private static readonly Vector2[] GateWaypoints = { new(4.0f, -6.7f), new(-3.6f, -6.7f) };
+    private static readonly Vector2[] StorageWaypoints = { new(-3.6f, -6.7f), new(3.3f, -6.7f) };
     private static readonly string[] IntroChoices = { "line:83ac5b68", "line:0b7589ff", "line:4d692a01" };
     private static readonly Assembly Game = Assembly.Load("Assembly-CSharp");
 
@@ -79,13 +81,25 @@ public static class Probe
                             throw new InvalidOperationException("The dragon did not become ready at the window");
                         return;
                     }
-                    if (!TryAimForEquipment()) return;
+                    var waypoints = equipmentTarget == 9 ? GateWaypoints :
+                        equipmentTarget == 10 ? StorageWaypoints : Array.Empty<Vector2>();
+                    if (gateWaypoint < waypoints.Length)
+                    {
+                        if (ApproachGateWaypoint(waypoints[gateWaypoint]))
+                        {
+                            gateWaypoint++;
+                            attempts = 0;
+                        }
+                        return;
+                    }
+                    if (equipmentTarget == 9 ? !TryAimHandAtGate() : !TryAimForEquipment()) return;
                     break;
                 case 9:
-                    if (CachedTarget() != target)
+                    if (equipmentTarget == 9 ? !HandRayHitsGate() : CachedTarget() != target)
                         throw new InvalidOperationException("Stock selector changed before input");
                     Debug.Log($"VN-BG-USE step={equipmentTarget} {target!.name}");
                     InputState.Change(keyboard, new KeyboardState(Key.E));
+                    if (equipmentTarget == 9) next += .8f;
                     break;
                 case 10:
                     InputState.Change(keyboard, new KeyboardState());
@@ -99,6 +113,25 @@ public static class Probe
                     {
                         attempts = 0;
                         stage = 8;
+                        return;
+                    }
+                    if (equipmentTarget == 10)
+                    {
+                        waitDeadline = Time.realtimeSinceStartup + 45;
+                        stage = 13;
+                        return;
+                    }
+                    if (equipmentTarget == 11)
+                    {
+                        gateWaypoint = 0;
+                        attempts = 0;
+                        stage = 8;
+                        return;
+                    }
+                    if (equipmentTarget == 12)
+                    {
+                        waitDeadline = Time.realtimeSinceStartup + 35;
+                        stage = 14;
                         return;
                     }
                     waitDeadline = Time.realtimeSinceStartup + 12;
@@ -118,12 +151,36 @@ public static class Probe
                             throw new InvalidOperationException("Intro completed without the expected choices");
                         var state = SceneStateType.GetMethod("GetDragonState", StaticMembers)?.Invoke(null, null);
                         Debug.Log($"VN-BG-INTRO-FINAL choices={choiceIndex} state={state}");
-                        Finish();
-                        break;
+                        attempts = 0;
+                        stage = 8;
+                        return;
                     }
                     if (Time.realtimeSinceStartup >= waitDeadline)
                         throw new InvalidOperationException("Ordinary intro input timed out");
                     AdvanceIntro();
+                    return;
+                case 13:
+                    var code = DragonStateCode();
+                    if (code == 5)
+                    {
+                        Debug.Log("VN-BG-GATE-FINAL WaitingOnBeingWashed");
+                        gateWaypoint = 0;
+                        attempts = 0;
+                        stage = 8;
+                        return;
+                    }
+                    if (Time.realtimeSinceStartup >= waitDeadline)
+                        throw new InvalidOperationException($"The dragon did not reach the wash area, state {code}");
+                    return;
+                case 14:
+                    if (mountNodeStarted)
+                    {
+                        Debug.Log($"VN-BG-PERFORMANCE PlacedMountForUse={Flag("PlacedMountForUse")} node=Conrad_placed_mount_3");
+                        Finish();
+                        break;
+                    }
+                    if (Time.realtimeSinceStartup >= waitDeadline)
+                        throw new InvalidOperationException("The mount performance dialogue did not start");
                     return;
             }
             stage++;
@@ -154,6 +211,7 @@ public static class Probe
             start.AddListener(node => {
                 Debug.Log($"VN-BG-YARN-START {node}");
                 if (node == "Conrad_Intro_3") introStarted = true;
+                if (node == "Conrad_placed_mount_3") mountNodeStarted = true;
             });
             if (type.GetField("onNodeComplete", InstanceMembers)?.GetValue(runner) is UnityEvent<string> complete)
                 complete.AddListener(node => {
@@ -171,49 +229,8 @@ public static class Probe
         Debug.Log($"VN-BG-YARN-LISTENERS {listeners}");
     }
 
-    private static void InspectDialogue()
-    {
-        var unity = Assembly.Load("YarnSpinner.Unity");
-        foreach (var name in new[] { "LinePresenter", "LineAdvancer", "OptionItem" })
-        {
-            var type = unity.GetType("Yarn.Unity." + name, throwOnError: true)!;
-            foreach (var item in UnityEngine.Object.FindObjectsByType(type, FindObjectsInactive.Include, FindObjectsSortMode.None).OfType<Behaviour>())
-            {
-                if (name == "LinePresenter")
-                {
-                    var text = type.GetField("lineText", InstanceMembers)?.GetValue(item);
-                    var shown = text?.GetType().GetProperty("text")?.GetValue(text) as string;
-                    var visible = text?.GetType().GetProperty("maxVisibleCharacters")?.GetValue(text);
-                    var group = type.GetField("canvasGroup", InstanceMembers)?.GetValue(item) as CanvasGroup;
-                    Debug.Log($"VN-BG-LINE active={item.isActiveAndEnabled} alpha={group?.alpha} visible={visible} text={shown?.Replace("\n", " ")}");
-                }
-                if (name == "LineAdvancer")
-                {
-                    var mode = type.GetField("inputMode", InstanceMembers)?.GetValue(item);
-                    var action = (type.GetField("nextLineAction", InstanceMembers)?.GetValue(item) as InputActionReference)?.action;
-                    Debug.Log($"VN-BG-ADVANCER active={item.isActiveAndEnabled} mode={mode} action={action?.actionMap?.name}/{action?.name} enabled={action?.enabled} controls={string.Join(",", action?.controls.Select(c => c.path) ?? Array.Empty<string>())}");
-                }
-                if (name == "OptionItem" && item.isActiveAndEnabled)
-                {
-                    var option = type.GetField("_option", InstanceMembers)?.GetValue(item);
-                    var textId = option?.GetType().GetField("TextID", InstanceMembers)?.GetValue(option) as string;
-                    var view = (Selectable)item;
-                    var savedPointer = pointer;
-                    var raycast = TryAimAt(view);
-                    pointer = savedPointer;
-                    Debug.Log($"VN-BG-OPTION-VIEW {textId} enabled={view.IsInteractable()} raycast={raycast}");
-                }
-            }
-        }
-    }
-
     private static void AdvanceIntro()
     {
-        if (Time.realtimeSinceStartup >= nextInspect)
-        {
-            nextInspect = Time.realtimeSinceStartup + 2;
-            InspectDialogue();
-        }
         if (advanceDown)
         {
             InputState.Change(keyboard!, new KeyboardState());
@@ -283,8 +300,97 @@ public static class Probe
             6 => candidates.Single(c => c.name == "MountFrame_Socket_Complete" && c.transform.IsChildOf(mountCrate!.transform)),
             7 => candidates.Single(c => Equals(c.GetType().GetField("placeFlag", InstanceMembers)?.GetValue(c), "PlacedMount")),
             8 => candidates.Single(c => c.name == "DragonWindow" && c.GetType().Name == "InteractableDragonWindow"),
+            9 => candidates.Single(c => c.name == "DoneButton" && c.GetType().Name == "InteractableDismissButton"),
+            10 => candidates.Single(c => Equals(c.GetType().GetField("placeFlag", InstanceMembers)?.GetValue(c), "PlacedMount")),
+            11 => candidates.Single(c => Equals(c.GetType().GetField("placeFlag", InstanceMembers)?.GetValue(c), "PlacedMountForUse")),
             _ => throw new InvalidOperationException("Unexpected equipment step"),
         };
+    }
+
+    private static bool ApproachGateWaypoint(Vector2 waypoint)
+    {
+        if (++attempts > 60) throw new InvalidOperationException($"Gate waypoint {gateWaypoint} timed out");
+        if (moving)
+        {
+            InputState.Change(keyboard!, new KeyboardState());
+            moving = false;
+            return false;
+        }
+        var view = playerCamera!.transform;
+        var position = view.position;
+        var offset = new Vector3(waypoint.x - position.x, 0, waypoint.y - position.z);
+        var yaw = Vector3.SignedAngle(Vector3.ProjectOnPlane(view.forward, Vector3.up), offset, Vector3.up);
+        Debug.Log($"VN-BG-ROUTE step={equipmentTarget} waypoint={gateWaypoint} position={position:F3} distance={offset.magnitude:F3} yaw={yaw:F3}");
+        if (offset.magnitude < .9f) return true;
+        if (Mathf.Abs(yaw) > 7)
+        {
+            InputState.Change(mouse!, new MouseState { position = pointer, delta = new Vector2(Mathf.Clamp(yaw * 8f, -100, 100), 0) });
+            return false;
+        }
+        InputState.Change(keyboard!, new KeyboardState(Key.W));
+        moving = true;
+        next = Time.realtimeSinceStartup + Mathf.Clamp(offset.magnitude / 8, .12f, .25f);
+        return false;
+    }
+
+    private static readonly Type HandType = Game.GetType("PlapperHand", throwOnError: true)!;
+    private static readonly Type LookType = Game.GetType("LookController", throwOnError: true)!;
+
+    private static (Vector3 Origin, Vector3 Direction) HandLook()
+    {
+        var hand = UnityEngine.Object.FindObjectsByType(HandType, FindObjectsSortMode.None).OfType<Behaviour>()
+            .Single(x => x.isActiveAndEnabled);
+        var offset = (Vector2)HandType.GetField("lookOffset", InstanceMembers)!.GetValue(hand);
+        var pos = (Vector3)LookType.GetMethod("GetLookPosition", StaticMembers)!.Invoke(null, null);
+        var rot = (Quaternion)LookType.GetMethod("GetLookRotation", StaticMembers)!.Invoke(null, null);
+        return (pos, rot * Quaternion.Euler(-offset.y, offset.x, 0) * Vector3.forward);
+    }
+
+    private static bool HandRayHitsGate()
+    {
+        var (origin, direction) = HandLook();
+        return Physics.Raycast(origin + direction * .1f, direction, out var hit, 2f, 385)
+            && hit.collider.transform.IsChildOf(target!.transform);
+    }
+
+    private static bool TryAimHandAtGate()
+    {
+        if (++attempts > 65) throw new InvalidOperationException("Hand aim at the gate timed out");
+        if (moving)
+        {
+            InputState.Change(keyboard!, new KeyboardState());
+            moving = false;
+            return false;
+        }
+        target = EquipmentTarget();
+        var (origin, direction) = HandLook();
+        var button = target.GetComponentsInChildren<SphereCollider>().Single(c => c.name == "Plappable");
+        var offset = button.bounds.center - origin;
+        var horizontal = Vector3.ProjectOnPlane(offset, Vector3.up);
+        var view = playerCamera!.transform;
+        var moveYaw = Vector3.SignedAngle(Vector3.ProjectOnPlane(view.forward, Vector3.up), horizontal, Vector3.up);
+        var handYaw = Vector3.SignedAngle(Vector3.ProjectOnPlane(direction, Vector3.up), horizontal, Vector3.up);
+        var pitch = Mathf.Atan2(offset.y, horizontal.magnitude) * Mathf.Rad2Deg -
+            Mathf.Asin(Mathf.Clamp(direction.y, -1, 1)) * Mathf.Rad2Deg;
+        var hit = Physics.Raycast(origin + direction * .1f, direction, out var ray, 3f, 385);
+        Debug.Log($"VN-BG-HAND distance={offset.magnitude:F3} horizontal={horizontal.magnitude:F3} yaw={handYaw:F3} pitch={pitch:F3} ray={ (hit ? ray.collider.name : "<none>") } rayDistance={(hit ? ray.distance : -1):F3}");
+        if (HandRayHitsGate()) return true;
+        var yaw = horizontal.magnitude > 1.55f ? moveYaw : handYaw;
+        if (Mathf.Abs(yaw) > 2.5f || (horizontal.magnitude <= 1.55f && Mathf.Abs(pitch) > 2.5f))
+        {
+            var delta = new Vector2(Mathf.Clamp(yaw * 8f, -100, 100),
+                horizontal.magnitude <= 1.55f ? Mathf.Clamp(pitch * 8f, -100, 100) : 0);
+            InputState.Change(mouse!, new MouseState { position = pointer, delta = delta });
+            return false;
+        }
+        if (horizontal.magnitude > .9f)
+        {
+            InputState.Change(keyboard!, new KeyboardState(Key.W));
+            moving = true;
+            next = Time.realtimeSinceStartup + .14f;
+            return false;
+        }
+        throw new InvalidOperationException("The hand ray did not reach the gate button");
     }
 
     private static bool TryAimForEquipment()
@@ -333,7 +439,7 @@ public static class Probe
         Debug.Log($"VN-BG-EQUIPMENT step={equipmentTarget} target={target.name} tool={tool?.name} expected={expectedTool?.name} opened={opened} BuiltMount={Flag("BuiltMount")} HasMountFrame={Flag("HasMountFrame")} PlacedMount={Flag("PlacedMount")}");
         switch (equipmentTarget)
         {
-            case 0 or 4 or 6:
+            case 0 or 4 or 6 or 10:
                 if (expectedTool == null || expectedTool != tool)
                     throw new InvalidOperationException("The equipped tool did not match the socket's asset");
                 break;
@@ -349,6 +455,15 @@ public static class Probe
             case 5:
                 if (emptyTool == null || tool != emptyTool || !Flag("BuiltMount"))
                     throw new InvalidOperationException("The mount was not assembled by the stock handler");
+                break;
+            case 9:
+                var code = DragonStateCode();
+                if (code is not (4 or 5)) throw new InvalidOperationException($"The button did not admit the dragon, state {code}");
+                Debug.Log($"VN-BG-GATE-OPEN state={code}");
+                break;
+            case 11:
+                if (emptyTool == null || tool != emptyTool || !Flag("PlacedMountForUse"))
+                    throw new InvalidOperationException("The mount was not placed into its performance socket");
                 break;
             case 7:
                 if (emptyTool == null || tool != emptyTool || !Flag("PlacedMount") || !Flag("HasMountFrame"))

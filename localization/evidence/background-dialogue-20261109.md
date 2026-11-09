@@ -82,4 +82,6 @@ The tracked [gameplay companion](../tools/background-input-probe/gameplay-compan
 reproduces the completed intro route. The success markers are
 `VN-BG-YARN-COMPLETE Conrad_Intro_3`, `VN-BG-YARN-DIALOGUE-COMPLETE`
 and `VN-BG-INTRO-FINAL choices=3`, with no `VN-BG-FAIL`.
-The gate and repaired destinations remain pending.
+The [subsequent gate test](background-gate-20261109.md) verifies the
+hand hit and entry into the mount scene. The repaired destinations
+remain pending.
