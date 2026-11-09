@@ -14,3 +14,27 @@ Reproduce with pinned dependencies:
 python localization/classify_ui_sources.py --macos-data ORIGINAL_MAC_DATA --windows-data ORIGINAL_WINDOWS_DATA
 python -m unittest discover -s localization -p 'test_*.py'
 ```
+## Paired cheat-menu activation, 2026-11-09
+
+The source-pinned hierarchy scan matched each of the six existing TMP
+fields in both builds to the exact button object and its ancestors.
+`level1` and `level2` each contain three labels for the save deletion,
+instant clean and instant skip controls. In both scenes, all three
+button objects start inactive in the macOS asset and active in the
+Windows asset. The inspected ancestor GameObjects have their
+serialized active flags set on both builds. These are the serialized
+flags. Menu initialization can still hide or change the hierarchy.
+
+The source union retains these six paired roles for visibility review.
+The next check is to read their active and Canvas state after opening
+the original pause menu in isolated copies. The button actions are
+outside that check.
+
+Local reports are under
+`localization/work/cheat-menu-bindings-20261109.gP09z7/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Scanner source | `e103cdcd3f8b2a67ff21a67ca27462dddaea994f73550fe951b60cccdd23bc4f` |
+| macOS bindings | `37e55a9823a964eb21f33c68bdf64a7bc313c14340d639dd027e338785c47bd3` |
+| Windows bindings | `f4066a63d375f62c4d300fb0504212154ed672539f5fa4397a2ba89f72696d0e` |

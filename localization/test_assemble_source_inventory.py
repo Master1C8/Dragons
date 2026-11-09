@@ -251,6 +251,17 @@ class SourceInventoryUnitTests(unittest.TestCase):
                 ('Line Presenter', 'Character Name'), ('Line Presenter', 'Text'), ('Options Presenter', 'Last Line'),
             })
             self.assertTrue(all(r['family'] == 'ui' and r['source']['macos'] == r['source']['windows'] for r in rows))
+        settings_templates = [r for r in result['entries'] if r['role'] == 'preserve-exactly-settings-prefab-template']
+        self.assertEqual(len(settings_templates), 11)
+        self.assertEqual({(r['hierarchy'][0], r['hierarchy'][-1], r['source']['macos']) for r in settings_templates}, {
+            ('DropDownPrefab', 'OtherLabel', ''), ('DropDownPrefab', 'Item Label', 'Option A'),
+            ('DropDownPrefab', 'Label', 'LABEL'), ('SliderPrefab', 'Amount', '32'),
+            ('SliderPrefab', 'Label', 'LABEL'), ('SliderPrefab', 'Max', '1'), ('SliderPrefab', 'Min', '0'),
+            ('TextInput', 'Label', 'LABEL'), ('TextInput', 'Placeholder', 'Enter text...'),
+            ('TextInput', 'Text', '\u200b'), ('TitlePrefab', 'Label', 'LABEL'),
+        })
+        self.assertTrue(all(r['family'] == 'ui' and r['asset'] == 'sharedassets0.assets'
+                            and r['source']['macos'] == r['source']['windows'] for r in settings_templates))
         component_rows = [r for r in result['entries'] if r['family'] == 'game-component']
         for platform in ('macos', 'windows'):
             cold = [r for r in component_rows if r['source'].get(platform) == 'DragonColdBalls']
