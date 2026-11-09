@@ -44,3 +44,39 @@ FRESH_WORK_OUTPUT_DLL`. The focused test expects the binary in
 ```sh
 python -m unittest discover -s localization -p test_slot_code_probe.py -v
 ```
+
+## Managed adapter and stock New Game check, 2026-11-10
+
+The normal macOS app builder now accepts a source-bound `slot-new` record.
+The Windows managed artifact command accepts the same ID against its
+own source DLL fingerprint. The shared patcher checks the same three
+field and setter bindings and compares the original and rebuilt method
+bodies. With `ЖЪЬ42` it reproduced both synthetic DLLs above byte-for-byte.
+The macOS builder installed both the new-slot and Yarn fallback DLLs
+in a signed test app and verified their hashes together with all the
+unchanged managed files. The Windows DLL was applied only to a test copy.
+
+The paired runtime controls used fresh isolated profiles and virtual
+pointer input on the stock New Game button. No slot was selected.
+At the New Game menu, all three code-driven progress fields held
+`ЖЪЬ42`. All three separate serialized fields still held `New`.
+All six TMP components were active, with inherited alpha 1 and no
+CanvasRenderer culling. This establishes two live text sources in
+the same menu state. It does not establish how the two layers overlap
+on screen or show the complete localized layout.
+
+All 13 macOS and 26 Windows desktop samples showed no window or
+foreground ownership. Both verified test processes exited and the
+checked original profiles matched their snapshots. Windows ran through
+CrossOver. The two added input-observer hooks were validated separately
+from the new-slot patch. Native Windows, occupied-slot states,
+pixel-level readability and final Russian wording remain open.
+
+Local receipts are under `localization/work/managed-slot-runtime-20261110.eIsBTK/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| macOS player log | `e11ebe782a0f5aef736ff5a69d7722478e8a97c3bdbbbd9ca206ed187d1fb7a6` |
+| Windows player log | `0342c0fab6873e4d62d915a2c11df0993532083690b9a26c3b60dade7fc1b47f` |
+| macOS observer receipt | `245e8fe775057cfb3775b1cdbcdd226b43c0e82d142907ed6ddedc72ea709356` |
+| Windows observer receipt | `ab24f5cd16f196b12bc7d9b360f41cf86e9d71b54e8efb6fc6cbc8dbefcc3b96` |

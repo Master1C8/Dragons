@@ -59,3 +59,27 @@ class ManagedFallbackTests(unittest.TestCase):
                     unchanged, receipt = fallback.prepare(platform, source, locale, 'ru', TOOL)
                     self.assertEqual(unchanged, source.read_bytes())
                     self.assertEqual(receipt['outputSha256'], fallback.SOURCES[platform])
+
+    @unittest.skipUnless(TOOL and MAC.is_file() and WIN.is_file(), 'compiled patcher and both source builds required')
+    def test_new_slot_patch_reproduces_both_verified_probes(self):
+        expected_outputs = {
+            'macos': (2385, 'd5d8c8bd09d81b02d757a730cb87f22fa882e71a677e4c1fecc3b429901c3b4f'),
+            'windows': (2328, 'ed2f58e930775be2aad6064ebaa76cc1e915235b1b0cc3810ede3696aa7f8e32'),
+        }
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            for platform, source in (('macos', MAC), ('windows', WIN)):
+                with self.subTest(platform=platform):
+                    locale = root / f'{platform}.json'
+                    locale.write_text(json.dumps({
+                        'schema': 1, 'locale': 'ru', 'sourceObjectSha256': fallback.SLOT_SOURCES[platform],
+                        'lines': {'slot-new': {'source': 'NEW', 'text': 'ЖЪЬ42'}},
+                    }), encoding='utf-8')
+                    source_dll = source.with_name(fallback.SLOT_ASSEMBLY)
+                    output, receipt = fallback.prepare(platform, source_dll, locale, 'ru', TOOL, slot_new=True)
+                    methods, digest = expected_outputs[platform]
+                    self.assertEqual(receipt['changedOffsets'], [133, 257, 380])
+                    self.assertEqual(receipt['verifiedMethodBodies'], methods)
+                    self.assertEqual(receipt['outputSha256'], digest)
+                    self.assertEqual(dl.sha(output), digest)
+                    self.assertEqual(dl.sha(source_dll.read_bytes()), fallback.SLOT_SOURCES[platform])

@@ -216,6 +216,21 @@ On Windows, build the DLL as a separate artifact:
 This Windows command writes a verified DLL to a fresh path. The Windows asset
 builder still produces its Unity assets separately.
 
+### Runtime new-slot label
+
+The same patcher can change the three stock `NEW` assignments in
+`Assembly-CSharp.dll`. Use the locale JSON shape above with the original
+`Assembly-CSharp.dll` SHA-256 as `sourceObjectSha256`, ID `slot-new`, and
+source `NEW`. Pass `--slot-new-locale SLOT.json` with
+`--managed-text-tool ABSOLUTE_WORK_BIN/managed-fallback.dll` to the macOS
+builder. It can build both managed text inputs in one app.
+
+For Windows use `managed_fallback.py windows --slot-new` with the original
+`Assembly-CSharp.dll` as `--source` and a fresh DLL path as `--output`.
+The serialized `New` fields in `level0` remain separate UI locale inputs
+on both platforms. Localize both groups when preparing the complete slot
+menu. The numeric save-progress formats are preserved.
+
 ## Optional settings labels and choices
 
 Settings labels and dropdown choices are stored in separate scriptable objects;

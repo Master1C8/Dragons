@@ -36,7 +36,7 @@ def rename_exclusive(source, destination):
 
 def build(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
           test_profile_code=None, test_caption_layout=False, test_slot_font=False,
-          restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None):
+          restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -57,7 +57,7 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
         report = _build_unpublished(source, locale_file, requested, staged_app, ui_dir, settings_file,
                                     test_profile_code, test_caption_layout, test_slot_font,
                                     restore_yarn_transitions, fallback_locale=fallback_locale,
-                                    fallback_tool=fallback_tool)
+                                    fallback_tool=fallback_tool, slot_new_locale=slot_new_locale)
         rename_exclusive(staged_app, destination)
     finally:
         shutil.rmtree(stage)
@@ -71,7 +71,7 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
 
 def _build_unpublished(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
                        test_profile_code=None, test_caption_layout=False, test_slot_font=False,
-                       restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None):
+                       restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -102,12 +102,15 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
         raise ValueError(f'locale file identifies {locale}, not requested {requested}')
     source_assemblies = managed.scan(source / MANAGED_RELATIVE)
     managed_digest = managed.validate_source('macos', source_assemblies)
-    if (fallback_locale is None) != (fallback_tool is None):
-        raise ValueError('fallback locale and tool must be supplied together')
-    fallback = None
-    if fallback_locale is not None:
-        fallback = managed_fallback.prepare('macos', source / MANAGED_RELATIVE / managed_fallback.ASSEMBLY,
-                                             fallback_locale, requested, fallback_tool)
+    if (fallback_locale is not None or slot_new_locale is not None) != (fallback_tool is not None):
+        raise ValueError('a managed text locale and tool must be supplied together')
+    managed_replacements = {}
+    for assembly, file in ((managed_fallback.ASSEMBLY, fallback_locale), (managed_fallback.SLOT_ASSEMBLY, slot_new_locale)):
+        if file is not None:
+            managed_replacements[assembly] = managed_fallback.prepare(
+                'macos', source / MANAGED_RELATIVE / assembly, file, requested, fallback_tool,
+                slot_new=assembly == managed_fallback.SLOT_ASSEMBLY,
+            )
     replacement = [translations.get(k, v) for k, v in zip(keys, values)]
     changed = dl.encode(raw, keys, replacement, extras)
     if dl.parse(changed) != (keys, replacement, extras):
@@ -219,14 +222,12 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
     if prepared_profile is not None:
         profile = profile_tool.apply(destination, prepared_profile)
     expected_assemblies = dict(source_assemblies)
-    if fallback is not None:
-        replacement_dll, fallback_report = fallback
-        assembly = managed_fallback.ASSEMBLY
+    for assembly, (replacement_dll, report) in managed_replacements.items():
         copied_dll = destination / MANAGED_RELATIVE / assembly
         if copied_dll.is_symlink() or dl.sha(copied_dll.read_bytes()) != source_assemblies[assembly]:
             raise ValueError('unexpected copied fallback assembly')
         copied_dll.write_bytes(replacement_dll)
-        expected_assemblies[assembly] = fallback_report['outputSha256']
+        expected_assemblies[assembly] = report['outputSha256']
     # The distribution contains a loose Steam identifier in the bundle root;
     # macOS refuses to seal a bundle with this file there. Preserve it next to
     # the executable, then sign only the copy with an ad-hoc signature.
@@ -251,7 +252,8 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
                       'settingsStrings': settings_count,
                       'testProfile': profile['code'] if profile else None,
                       'managedManifestSha256': managed_digest,
-                      'managedFallback': fallback[1] if fallback else None,
+                      'managedFallback': managed_replacements.get(managed_fallback.ASSEMBLY, (None, None))[1],
+                      'managedSlotNew': managed_replacements.get(managed_fallback.SLOT_ASSEMBLY, (None, None))[1],
                       'restoredYarnTransitions': len(transitions.CONTINUATIONS) if restore_yarn_transitions else 0,
                       'testSettingsLayoutSha256': layout_hash,
                       'testSlotFontSha256': slot_font_hash}
@@ -266,7 +268,9 @@ def main():
     p.add_argument('--ui-dir', type=Path, help='optional directory of named UI locale JSON files')
     p.add_argument('--settings-locale', type=Path, help='optional source-pinned settings locale JSON file')
     p.add_argument('--fallback-locale', type=Path, help='optional source-pinned missing-line locale JSON file')
-    p.add_argument('--fallback-tool', type=Path, help='compiled managed-fallback.dll')
+    p.add_argument('--slot-new-locale', type=Path, help='optional source-pinned new-slot locale JSON file')
+    p.add_argument('--managed-text-tool', '--fallback-tool', dest='fallback_tool', type=Path,
+                   help='compiled managed-fallback.dll')
     p.add_argument('--test-profile', help='optional fresh four-character isolated test profile; not a player release')
     p.add_argument('--test-settings-caption-layout', action='store_true',
                    help='experimental caption height for isolated test profiles only')
@@ -277,7 +281,7 @@ def main():
     a = p.parse_args()
     build(a.source_app, a.locale_file, a.locale, a.output_app, a.ui_dir, a.settings_locale,
           a.test_profile, a.test_settings_caption_layout, a.test_slot_font, a.restore_yarn_transitions,
-          fallback_locale=a.fallback_locale, fallback_tool=a.fallback_tool)
+          fallback_locale=a.fallback_locale, fallback_tool=a.fallback_tool, slot_new_locale=a.slot_new_locale)
 
 
 if __name__ == '__main__':
