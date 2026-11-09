@@ -14,9 +14,7 @@ PREFIX_MANIFEST = ROOT / 'localization/evidence/yarn-protected-partial-20261107.
 ALEXANDER = 'line:4b36ea4e'
 
 
-def prepare(platform, source, locale_file, requested, tool, runtime, runtime_sha, *, fallback_locale=None):
-    expected = managed_fallback.source_digest(platform, source)
-    manifest = json.loads(PREFIX_MANIFEST.read_text(encoding='utf-8'))
+def read_locale(platform, locale_file, requested, expected, manifest):
     alexander_source, = [row['expected'][platform] for row in manifest['fullValueProtection']
                          if row['id'] == ALEXANDER]
     sources = SOURCE_NAMES | {ALEXANDER: alexander_source}
@@ -32,6 +30,13 @@ def prepare(platform, source, locale_file, requested, tool, runtime, runtime_sha
     if any(len(name) > 40 or not all(c.isalpha() and ord(c) <= 0xffff for c in name)
            for name in names.values()):
         raise ValueError('speaker labels must be single words of at most 40 BMP letters')
+    return locale, names, alexander
+
+
+def prepare(platform, source, locale_file, requested, tool, runtime, runtime_sha, *, fallback_locale=None):
+    expected = managed_fallback.source_digest(platform, source)
+    manifest = json.loads(PREFIX_MANIFEST.read_text(encoding='utf-8'))
+    locale, names, alexander = read_locale(platform, locale_file, requested, expected, manifest)
     original_fallback = managed_fallback.FALLBACK['yarn-missing-line']
     fallback = (managed_fallback.read_replacement(fallback_locale, requested, expected)
                 if fallback_locale is not None else original_fallback)

@@ -167,6 +167,8 @@ The provisional union marks 56 embedded input-control occurrences across the two
 
 The source-bound Yarn inventory records 16 exact table values and 18 exact speaker prefixes. v40 keeps the Alexander table value exact and records the same ID as a display translation candidate in the speaker locale. The adapter passed the paired synthetic test with a two-line Cyrillic body, a hidden speaker field and stock progression to `Alexander!` in the Conrad fixture. The final wording and both actual Alexander choices remain open. See [the partial protection inventory](localization/evidence/yarn-protection-inventory-20261107.md) and [the display adapter evidence](localization/evidence/alexander-colon-display-20261110.md).
 
+The paired Yarn scope binds all 1,839 source IDs. It requires 1,823 dialogue-locale entries and the Alexander speaker-locale body, preserving 15 other exact-only markers. It retains all 231 translatable IDs outside the named closure. Both repaired full programs have zero unresolved named transfers. The structural coverage gate rejects each current draft for 1,808 missing ordinary IDs. See [the paired scope and coverage gate](localization/evidence/yarn-translation-scope-20261110.md).
+
 ## Scope and process binding
 
 Source language English; requested locale `ru` → runtime `ru` selected at build time, replacing the English Yarn table in a separate build. This prototype is not an in-game language selector. Owner decisions: player and franchise contact use neutral wording; Alexander uses masculine forms; Igwyx is referred to with masculine forms without asserting gender; Max uses neutral forms without asserting gender. These rules do not establish other characters' gender or complete roster coverage.
