@@ -1,5 +1,9 @@
 # Known special-scene source index
 
+This records the initial v42 index. The
+[staged-typography follow-up](staged-typography-20261110.md) records the
+current index and the additional cases.
+
 `index_special_scenes.py` resolves 21 existing Yarn cases from 11
 registries against the pinned v42 source inventory. It checks each
 registry's source fingerprint, links the cases to their original

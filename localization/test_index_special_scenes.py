@@ -19,11 +19,13 @@ class SpecialSceneIndexTests(unittest.TestCase):
     @unittest.skipUnless(INVENTORY.is_file(), 'paired v42 inventory required')
     def test_all_known_cases_bind_and_keep_direct_and_context_distinct(self):
         report = index.build(INVENTORY)
-        self.assertEqual(report['caseCount'], 23)
-        self.assertEqual(report['uniqueDirectIds'], 247)
+        self.assertEqual(report['caseCount'], 26)
+        self.assertEqual(report['uniqueDirectIds'], 251)
         cases = report['cases']
         self.assertEqual(len(cases['alexander-college-self-introduction']['directIds']), 9)
         self.assertEqual(len(cases['alexander-college-self-introduction']['contextIds']), 2)
         self.assertEqual(len(cases['new-slot-display']['contextIds']), 18)
         self.assertEqual(len(cases['missing-yarn-line-display']['contextIds']), 3)
+        self.assertEqual(cases['conrad-emphatic-greetings']['directIds'],
+                         ['yarn:line:36073321', 'yarn:line:f474ffa9'])
         self.assertTrue(all(not set(c['directIds']).intersection(c['contextIds']) for c in cases.values()))

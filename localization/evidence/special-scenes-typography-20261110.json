@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "status": "source-bound",
+  "sourceInventory": "localization/evidence/yarn-context-map-20261107.json",
+  "sourceInventorySha256": "20d8c7305831a2b98adffad5798e64cb194c37e40039d1525dde122b0c061555",
+  "discoveryCoverage": "Four additional source IDs from the paired audit of multi-size and gradient tags. The other twelve IDs already occur in the existing special-scene registries.",
+  "cases": [
+    {
+      "id": "conrad-emphatic-greetings",
+      "title": "Conrad's enlarged greeting and return to ordinary speech",
+      "groups": [
+        {"node": "Conrad_Intro_1", "sourceLineIds": ["line:36073321"]},
+        {"node": "Conrad_5_intro_ryan_romanced", "sourceLineIds": ["line:f474ffa9"]}
+      ],
+      "invariant": "Keep the abrupt enlarged greeting separate from the normal-sized question or request. The earlier greeting also uses the source gradient.",
+      "adaptationRoute": "Keep both meaningful text regions and the original TMP tag order. Review the wording in each branch before ordinary translation.",
+      "acceptanceScenarios": ["The greeting renders at 140% and the rest at 100%.", "Emptying the greeting region is rejected before packaging."],
+      "statuses": {"sourceAnalysis": "paired-source-bound", "editorial": "not-started", "adapter": "structural-guard-verified", "runtimeVisual": "not-run"}
+    },
+    {
+      "id": "conrad-scales-aside",
+      "title": "Conrad's smaller italic aside about scales",
+      "node": "Conrad_Intro_4",
+      "sourceLineIds": ["line:6c193ba9"],
+      "invariant": "Keep the hesitant aside smaller and italic between the observation and the ordinary-sized compliment.",
+      "adaptationRoute": "Retain the three visible regions and the original TMP tags. Review the aside in context.",
+      "acceptanceScenarios": ["The aside alone is italic and 70% before ordinary size returns.", "Moving all wording out of the aside is rejected before packaging."],
+      "statuses": {"sourceAnalysis": "paired-source-bound", "editorial": "not-started", "adapter": "structural-guard-verified", "runtimeVisual": "not-run"}
+    },
+    {
+      "id": "ryan-branch-hesitation-sizing",
+      "title": "Player's shrinking reply in Ryan's romance branch",
+      "node": "ryan_food_dialogue",
+      "sourceLineIds": ["line:9fd5b834"],
+      "invariant": "The selected reply starts at normal size and becomes progressively smaller across three successive hesitation beats.",
+      "adaptationRoute": "Keep separate audible-style hesitation beats in the source size stages without changing the choice ID or destination.",
+      "acceptanceScenarios": ["The choice remains legible and shows the 90%, 80% and 70% stages in order.", "Emptying any text-bearing stage is rejected before packaging."],
+      "statuses": {"sourceAnalysis": "paired-source-bound", "editorial": "not-started", "adapter": "structural-guard-verified", "runtimeVisual": "not-run"}
+    }
+  ]
+}

@@ -111,6 +111,8 @@ unsupported source versions are rejected. Entries beginning with `title:` must
 remain completely unchanged. Ten specifically identified `==` and `---` source
 markers adjacent to title-like lines must also remain exact in Yarn translations
 while their role is unresolved; this ID-scoped rule does not apply to UI/settings.
+Yarn strings with a gradient or multiple size tags must keep printable
+text in the same tag-delimited regions as the source.
 See `evidence/yarn-missing-targets-20261107.md`. Only one locale is built per run.
 This validation is conservative and does **not** prove all game-specific
 controls or speaker-label semantics have been identified. Source line presence

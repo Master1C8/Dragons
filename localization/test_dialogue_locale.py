@@ -28,6 +28,20 @@ class LocaleFileTests(unittest.TestCase):
     def test_valid_line_and_placeholders(self):
         self.assertEqual(self.read(), ('ru', {self.keys[0]: 'Ryan: <i>Test {0}</i>'}))
 
+    def test_staged_markup_cannot_move_text_out_of_the_effect(self):
+        source = '<gradient="gold"><b>Answer</b></gradient><size=70%> (Outcome)'
+        target = '<gradient="gold"><b>Ответ</b></gradient><size=70%> (Исход)'
+        self.values = [source]
+        self.doc['lines'][self.keys[0]] = {'source': source, 'text': target}
+        self.assertEqual(self.read()[1][self.keys[0]], target)
+        for text in ('Ответ <gradient="gold"><b></b></gradient><size=70%> (Исход)',
+                     '<gradient="gold"><b>Ответ (Исход)</b></gradient><size=70%>\u200b'):
+            with self.subTest(text=text):
+                self.assertEqual(module.TAGS.findall(text), module.TAGS.findall(source))
+                self.doc['lines'][self.keys[0]]['text'] = text
+                with self.assertRaisesRegex(ValueError, 'staged markup text regions differ'):
+                    self.read()
+
     def test_rejects_changed_source_unknown_id_and_english(self):
         self.doc['lines'][self.keys[0]]['source'] = 'outdated'
         with self.assertRaisesRegex(ValueError, 'source mismatch'):

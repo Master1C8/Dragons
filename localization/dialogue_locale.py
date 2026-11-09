@@ -119,6 +119,17 @@ def visible_digit_runs(value):
     return collections.Counter(DIGITS.findall(TOKENS.sub('', value)))
 
 
+def staged_markup(tags):
+    return any(tag.startswith('<gradient=') for tag in tags) or sum(
+        tag.startswith('<size=') for tag in tags
+    ) > 1
+
+
+def visible_markup_regions(value):
+    return tuple(any(c.isprintable() and not c.isspace() for c in segment)
+                 for segment in TAGS.split(value))
+
+
 def read_locale(path, keys, values, source_hash=OBJECT_HASH, *, yarn_semantics=True):
     doc = json.loads(Path(path).read_text(encoding='utf-8'), object_pairs_hook=unique_object)
     if not isinstance(doc, dict) or set(doc) != {'schema', 'locale', 'sourceObjectSha256', 'lines'}:
@@ -154,8 +165,12 @@ def read_locale(path, keys, values, source_hash=OBJECT_HASH, *, yarn_semantics=T
             raise ValueError(f'{key}: unclassified colon-bearing source must remain unchanged')
         if collections.Counter(TOKENS.findall(source[key])) != collections.Counter(TOKENS.findall(value['text'])):
             raise ValueError(f'{key}: markup or placeholders differ')
-        if TAGS.findall(source[key]) != TAGS.findall(value['text']):
+        source_tags = TAGS.findall(source[key])
+        if source_tags != TAGS.findall(value['text']):
             raise ValueError(f'{key}: markup order differs')
+        if (yarn_semantics and staged_markup(source_tags) and
+                visible_markup_regions(source[key]) != visible_markup_regions(value['text'])):
+            raise ValueError(f'{key}: staged markup text regions differ')
         if yarn_semantics and doc['locale'] == 'ru' and visible_digit_runs(source[key]) != visible_digit_runs(value['text']):
             raise ValueError(f'{key}: visible digit sequences differ')
         prefix = PREFIX.match(source[key])

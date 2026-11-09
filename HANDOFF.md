@@ -230,11 +230,13 @@ All locales use the shared fixed stages in `~/.codex/skills/vn-localization/refe
 | `screenshot-upload`, `screenshot-review` | Not run: no game screenshot upload requested; if later authorized, pin and review every delivered slot. |
 | `delivery` | Integrate verified source into canonical branch; publication/release requires separate authority. |
 
-The [v42 special-scene index](localization/evidence/special-scene-index-v42-20261110.md)
-binds 23 known cases to 247 direct source IDs and preserves wider
-context separately. It includes the runtime new-slot label and
-missing-line fallback. It is the lookup for case dependencies before
-Russian decisions and does not advance editorial readiness.
+The [v42 special-scene index](localization/evidence/staged-typography-20261110.md)
+binds 26 known cases to 251 direct source IDs and preserves wider
+context separately. It includes the runtime new-slot label,
+missing-line fallback and four additional styled lines. The Yarn
+validator preserves occupied gradient and multi-size text regions.
+Both source builds have the gradient resources and rich-text targets.
+Russian wording and rendered acceptance remain open.
 The [paired romance route control](localization/evidence/romance-route-analysis-20261107.md#controlled-paired-yarn-runs-2026-11-10)
 exercises all seven pivotal choices, including both availability
 states for Ryan's choice and all three follow-up outcomes. A decline

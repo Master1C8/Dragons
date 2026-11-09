@@ -1,0 +1,116 @@
+{
+  "macos": {
+    "gradientPath": "Color Gradient Presets/",
+    "gradients": {
+      "gold": {
+        "rawSha256": "dc7d80f8e1bba1e5487cdc9fa347c28a0cba42f7519be6c2a64ee79c480847f7",
+        "resourceId": 1383
+      },
+      "yellow - orange": {
+        "rawSha256": "a0a2322b248a207c262dba484db4305e85074db4ad11a178236c63d1b75a0114",
+        "resourceId": 1384
+      }
+    },
+    "targets": [
+      {
+        "asset": "level1",
+        "id": 3899,
+        "rawSha256": "ace876d592a71bf984742bfee7d17cfe2f4adcd21a5f4957afbdf5012c48a8d4",
+        "richText": true,
+        "role": "LinePresenter.lineText"
+      },
+      {
+        "asset": "level3",
+        "id": 1495,
+        "rawSha256": "a81721d2a27d822435c442289dc96992c91415b4fbf3b45b785131cdfbf7b053",
+        "richText": true,
+        "role": "LinePresenter.lineText"
+      },
+      {
+        "asset": "level4",
+        "id": 1959,
+        "rawSha256": "6f581f3c876de17652f7a78af57388fb303bc00a6d6a33d384f259fe77e3aa3e",
+        "richText": true,
+        "role": "LinePresenter.lineText"
+      },
+      {
+        "asset": "level5",
+        "id": 1520,
+        "rawSha256": "425b5bf306c4d4fc28454ad31894239e3bab2a30301d87da1b643963e7540f45",
+        "richText": true,
+        "role": "LinePresenter.lineText"
+      },
+      {
+        "asset": "level6",
+        "id": 1492,
+        "rawSha256": "c8acf6bd259e8041e021e09aa1446169caffff61bbcba4fdd47b728a6c61572d",
+        "richText": true,
+        "role": "LinePresenter.lineText"
+      },
+      {
+        "asset": "sharedassets1.assets",
+        "id": 11117,
+        "rawSha256": "1c3a0c2e4b49d50f05e2d2e2eee423c299ed7f4dd8749274d0990e5d0fc72513",
+        "richText": true,
+        "role": "OptionItem.text"
+      }
+    ]
+  },
+  "windows": {
+    "gradientPath": "Color Gradient Presets/",
+    "gradients": {
+      "gold": {
+        "rawSha256": "dc7d80f8e1bba1e5487cdc9fa347c28a0cba42f7519be6c2a64ee79c480847f7",
+        "resourceId": 1383
+      },
+      "yellow - orange": {
+        "rawSha256": "a0a2322b248a207c262dba484db4305e85074db4ad11a178236c63d1b75a0114",
+        "resourceId": 1384
+      }
+    },
+    "targets": [
+      {
+        "asset": "level1",
+        "id": 3851,
+        "rawSha256": "d8c985a3c34fda408414205b6d23d10733d02fb53d8b1f989f59128841be24a6",
+        "richText": true,
+        "role": "LinePresenter.lineText"
+      },
+      {
+        "asset": "level3",
+        "id": 1450,
+        "rawSha256": "8db982c588ab382dbb063c92571d30d57bcb8dde6504e2b573291919162cf471",
+        "richText": true,
+        "role": "LinePresenter.lineText"
+      },
+      {
+        "asset": "level4",
+        "id": 1914,
+        "rawSha256": "5bb278718d726f6d58c595d5088ce5a26268496da634d71b0e7c75a5440c000a",
+        "richText": true,
+        "role": "LinePresenter.lineText"
+      },
+      {
+        "asset": "level5",
+        "id": 1475,
+        "rawSha256": "bdaf398a09e11898d7db24631ec464330b647ec65d919434eea04d2413da3e56",
+        "richText": true,
+        "role": "LinePresenter.lineText"
+      },
+      {
+        "asset": "level6",
+        "id": 1447,
+        "rawSha256": "4fe7236c42313ade5e419299f9d5e91720d6735a0a21667c5bb93c831038c6a0",
+        "richText": true,
+        "role": "LinePresenter.lineText"
+      },
+      {
+        "asset": "sharedassets1.assets",
+        "id": 11105,
+        "rawSha256": "3ebcb0c4c115da384c40005e759eec78ff525e9dda7f186a9f7e627bc6903183",
+        "richText": true,
+        "role": "OptionItem.text"
+      }
+    ]
+  }
+}
