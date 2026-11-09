@@ -606,18 +606,23 @@ def yarn_dependency_role(row):
     if method in ('Actions/CommandRegistration::.ctor(System.String,System.Delegate)',
                   'Actions/CommandRegistration::.ctor(System.String,System.Reflection.MethodInfo)'):
         if value in ('number', 'string', 'bool'):
-            return ('command-help-text-needs-visibility-review',
+            return ('preserve-exactly-command-help-template',
                     'System.Collections.Generic.Dictionary`2<System.Type,System.String> '
                     'Yarn.Unity.Actions/CommandRegistration::TypeFriendlyNames')
         return 'diagnostic-text-needs-visibility-review', UI_ARGUMENT_EXCEPTION
     if method == 'Actions/CommandRegistration::get_UsageString()':
-        return 'command-help-text-needs-visibility-review', full_method
+        return 'preserve-exactly-command-help-template', full_method
     if method == 'Actions/CommandRegistration::TryParseArgs(System.String[],System.Object[]&,System.String&)':
-        return 'diagnostic-text-needs-visibility-review', 'Yarn.Unity.Actions/CommandRegistration::TryParseArgs error result'
+        if offset == 0x2ae:
+            return ('diagnostic-text-needs-visibility-review',
+                    'System.Void System.InvalidOperationException::.ctor(System.String)')
+        return ('preserve-exactly-command-diagnostic',
+                'Yarn.Unity.Actions/CommandRegistration::TryParseArgs error result')
     if method == ('Actions/CommandRegistration::Invoke(UnityEngine.MonoBehaviour,'
                   'System.Collections.Generic.List`1<System.String>)'):
+        if offset < 0x109:
+            return 'preserve-exactly-command-diagnostic', 'System.String Yarn.Unity.CommandDispatchResult::Message'
         return ('diagnostic-text-needs-visibility-review',
-                'System.String Yarn.Unity.CommandDispatchResult::Message' if offset < 265 else
                 'System.Void System.InvalidOperationException::.ctor(System.String)')
     if method == 'DialogueRunner/<OnCommandReceivedAsync>d__76::MoveNext()':
         if offset == 475:

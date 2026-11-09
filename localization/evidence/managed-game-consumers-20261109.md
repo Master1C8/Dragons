@@ -204,4 +204,39 @@ The local logs are in
 | macOS stencil wrapper | `4e0dfee65e0a3ef199e4e38ae43b992c701177bfa78f463ef8ecf8568f24e37a` |
 | Windows stencil wrapper | `f7a52d245e07c1fd9291605b99400e33336dd9d36ce29120fc82d37c0c57b447` |
 
+## v32 Yarn command help and error flow
+
+The follow-up scanned method and field operands and exact reflection
+literals across the same 170 macOS and 172 Windows root assemblies.
+The two command-registration constructors initialize
+`TypeFriendlyNames`. Its sole read is in `get_UsageString`, for which
+there is no method reference or matching reflection literal in the
+scanned inputs. The recipe preserves the 36 help-template occurrences
+across the two builds.
+
+The normal `TryParseArgs` error paths return a status and an error
+string through the out argument. `Invoke` stores that string and
+three target-validation errors in `CommandDispatchResult.Message`.
+Its sole IL read in the inspected assemblies is in
+`DialogueRunner.OnCommandReceivedAsync`, where the value reaches
+`Debug.LogError`. The unhandled-command event is a separate branch.
+The recipe preserves 30 occurrences on these log-bound paths.
+
+The exception texts remain under review. In particular, the
+`TryParseArgs` literal at `IL_02ae` reaches an
+`InvalidOperationException` constructor and is thrown. Its consumer
+was corrected on both builds. Two v32 outputs matched byte-for-byte.
+Compared with v31, 66 roles and those two consumers changed. All IDs
+and source values remain intact. Native code, external mods and
+dynamically constructed reflection are outside the scan's scope.
+
+Local reports and scanner source are under
+`localization/work/yarn-command-flow-20261109.a0NpyF/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Scanner source | `8407ea9f4a586165edd17ab421ec06325336c09d5244af083f9338e0554685d4` |
+| macOS managed flow | `38a58968f3b938e82ee4a4d1b57e9db2cea6c2ea4d9b08def35da14581705141` |
+| Windows managed flow | `eaa727fd40f63d0341250e8cb275f05cb235c340f0a9843811962940ba8be6e5` |
+
 The full localization suite passed all 180 tests with v28.

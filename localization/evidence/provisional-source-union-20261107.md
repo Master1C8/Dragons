@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v31-20261109.json`
-has SHA-256 `b8a635bab364087f078a6ff4b4a76a0441f9824cbe46c118ecfc373f692edb43`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v32-20261109.json`
+has SHA-256 `e2137d9a08f72e137c0220c5070067dfb9b755d15d3f96ce5733cfb6aebb7fb6`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -257,6 +257,11 @@ export reproduced byte-for-byte and differs from its predecessor only in
 the stated roles. See [the component audit](game-component-strings-20261109.md#v29-metadata-preservation),
 [the factory audit](managed-text-sinks-20261107.md#v30-factory-template-follow-up)
 and [the bark constructor audit](game-component-strings-20261109.md#v31-managed-bark-arguments).
+
+The v32 export preserves 36 unused Yarn command-help templates and 30
+log-bound command diagnostics. It also corrects two exception-consumer
+bindings while retaining their review roles. See
+[the Yarn command flow audit](managed-game-consumers-20261109.md#v32-yarn-command-help-and-error-flow).
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values still require visibility review, only five managed assemblies are

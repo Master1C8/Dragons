@@ -218,6 +218,17 @@ class SourceInventoryUnitTests(unittest.TestCase):
         log_rows = [r for r in result['entries'] if r['role'] == 'preserve-exactly-player-log-text']
         self.assertEqual(len(log_rows), 582)
         self.assertTrue(all(r['consumer'] in inventory.managed.PLAYER_LOG_SINKS for r in log_rows))
+        for platform in ('macos', 'windows'):
+            commands = [r for r in result['entries'] if platform in r['source'] and
+                        r['id'].startswith(f'managed:{platform}:YarnSpinner.Unity:') and
+                        'Yarn.Unity.Actions/CommandRegistration::' in r['method']]
+            self.assertEqual(sum(r['role'] == 'preserve-exactly-command-help-template' for r in commands), 18)
+            self.assertEqual(sum(r['role'] == 'preserve-exactly-command-diagnostic' for r in commands), 15)
+            parse_exception = [r for r in commands if '::TryParseArgs(' in r['method'] and r['ilOffset'] == 0x2ae]
+            self.assertEqual([(r['role'], r['consumer']) for r in parse_exception], [
+                ('diagnostic-text-needs-visibility-review',
+                 'System.Void System.InvalidOperationException::.ctor(System.String)'),
+            ])
         self.assertTrue(any(r['role'] == 'diagnostic-text-needs-visibility-review' and
                             r.get('consumer') == 'System.Void System.ArgumentException::.ctor(System.String)'
                             for r in result['entries']))
