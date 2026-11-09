@@ -1,0 +1,409 @@
+{
+  "schema": 1,
+  "sourceExportSha256": "52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995",
+  "scope": "Distinct line-bearing dialogue targets named by the pinned Windows Conrad_1_2, Conrad_2_5 and Conrad_4_11 configurations. All roles are provisional source functions.",
+  "groups": [
+    {
+      "node": "Conrad_Intro_1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:36073321",
+        "line:a0373456",
+        "line:1d4b8528"
+      ],
+      "reason": "Conrad arrives for his first wash and asks the player to open the gate."
+    },
+    {
+      "node": "Conrad_Intro_1",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:1a663dcf",
+        "line:8c563ab8"
+      ],
+      "reason": "The player acknowledges the request and offers access."
+    },
+    {
+      "node": "Conrad_required_1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:8a35fb7b",
+        "line:6fbc3c1b",
+        "line:43dd32f5",
+        "line:d5ed3582",
+        "line:5a195ff2",
+        "line:5d34e715",
+        "line:cb04e062",
+        "line:3690a3eb",
+        "line:b964c99b",
+        "line:2f54ceec"
+      ],
+      "reason": "Conrad asks about special endings and clarifies the request across alternative branches."
+    },
+    {
+      "node": "Conrad_required_1",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:f98c3b6c",
+        "line:a0a0a49c",
+        "line:7678511c",
+        "line:e048566b",
+        "line:cc295885",
+        "line:8cc1aa72",
+        "line:1af1ad05"
+      ],
+      "reason": "The player can take the first question literally or ask about its implied meaning, then respond to the clarification."
+    },
+    {
+      "node": "Conrad_Outro_1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:7fe73572",
+        "line:e9d73205",
+        "line:eefa8ae2",
+        "line:0b734d82",
+        "line:2712436c",
+        "line:12b72085",
+        "line:3ed62e6b",
+        "line:a8e6291c"
+      ],
+      "reason": "Conrad responds to the wash, requests equipment and asks to leave."
+    },
+    {
+      "node": "Conrad_Outro_1",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:78ca8d95",
+        "line:b122441b",
+        "line:9d434af5",
+        "line:848727f2"
+      ],
+      "reason": "The player can apologize, promise to order equipment or question Conrad's warning."
+    },
+    {
+      "node": "Conrad_1_JerkOff_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:9e403ecd",
+        "line:087039ba"
+      ],
+      "reason": "Conrad gives short feedback during the interaction."
+    },
+    {
+      "node": "Conrad_1_Cum",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:e48243c0",
+        "line:72b244b7"
+      ],
+      "reason": "Conrad reacts after the interaction. Keep the source size changes."
+    },
+    {
+      "node": "conrad_mount_no",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:c236bdf9",
+        "line:5406ba8e"
+      ],
+      "reason": "Conrad declines the equipment for now. Both visits can select this same node."
+    },
+    {
+      "node": "Conrad_Intro_2",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:c0cc0f2d",
+        "line:f5696cc4",
+        "line:63596bb3",
+        "line:4f38655d",
+        "line:de25dacd",
+        "line:3bac1dad"
+      ],
+      "reason": "Conrad asks for a medkit and then requests entry. Keep the reactive replies tied to each choice."
+    },
+    {
+      "node": "Conrad_Intro_2",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:56fc085a",
+        "line:d908622a",
+        "line:4815ddba",
+        "line:ad9c1ada"
+      ],
+      "reason": "The player asks about the injury or confirms that a medkit is available."
+    },
+    {
+      "node": "Conrad_required_2",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:51d4e418",
+        "line:c7e4e36f",
+        "line:f2418086",
+        "line:4f3d31f8",
+        "line:bee6c7dd",
+        "line:28d6c0aa",
+        "line:9287c933",
+        "line:a722aada",
+        "line:3112adad",
+        "line:1d73a343",
+        "line:8c6e1cd3",
+        "line:ffd7dcc4",
+        "line:d3b6d22a",
+        "line:4586d55d",
+        "line:e613b1c3",
+        "line:7023b6b4",
+        "line:5c42b85a",
+        "line:cd5f07ca",
+        "line:38419d8b",
+        "line:ae719afc",
+        "line:14209365",
+        "line:b7b5f7fb",
+        "line:0de4fe62"
+      ],
+      "reason": "Conrad describes the incident and apologizes. Keep his self-blame separate from the player's responses and retain each branch's sequence."
+    },
+    {
+      "node": "Conrad_required_2",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:647187f1",
+        "line:de208e68",
+        "line:04b7ce44",
+        "line:8b43a434",
+        "line:1a5e1ba4",
+        "line:69e7dbb3",
+        "line:ca72bf2d",
+        "line:5b6f00bd",
+        "line:82109412",
+        "line:2185f08c"
+      ],
+      "reason": "The player chooses how to ask what happened, respond to the disclosure and address the request for privacy."
+    },
+    {
+      "node": "Conrad_required_2",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:4810891f",
+        "line:d90d368f"
+      ],
+      "reason": "A standalone ellipsis marks a dialogue beat in this exchange."
+    },
+    {
+      "node": "Conrad_Outro_2",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:a051821a",
+        "line:a77c3afd",
+        "line:d4c5faea",
+        "line:6e94f373",
+        "line:f8a4f404",
+        "line:cd0197ed",
+        "line:e1609903",
+        "line:707d2693",
+        "line:e64d21e4"
+      ],
+      "reason": "Conrad describes feeling better, comments on the player and prepares to leave."
+    },
+    {
+      "node": "Conrad_Outro_2",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:314c3d8a",
+        "line:42f5fd9d",
+        "line:5b31909a",
+        "line:77509e74"
+      ],
+      "reason": "The player chooses how to ask about Conrad's recovery and respond to the compliment."
+    },
+    {
+      "node": "conrad_jerk_off_no",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:2a29842a"
+      ],
+      "reason": "Conrad declines the interaction at this point."
+    },
+    {
+      "node": "Conrad_Intro_4",
+      "kind": "line",
+      "role": "recovery-prompt-candidate",
+      "ids": [
+        "line:8f64adc0",
+        "line:1954aab7"
+      ],
+      "reason": "This prompt appears when the three inspected relationship flags are all false."
+    },
+    {
+      "node": "Conrad_Intro_4",
+      "kind": "option",
+      "role": "recovery-choice-candidate",
+      "ids": [
+        "line:bac1ce29",
+        "line:2cf1c95e",
+        "line:96a0c0c7"
+      ],
+      "reason": "Each option writes a distinct relationship-flag combination in the all-false recovery branch."
+    },
+    {
+      "node": "Conrad_Intro_4",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:0090c7b0",
+        "line:8ebd442e",
+        "line:a2b4acea",
+        "line:fa293cde",
+        "line:e3ed51d9",
+        "line:cf8c5f37",
+        "line:2d2820b0",
+        "line:a2dc4ac0",
+        "line:97792929",
+        "line:8990fcc9",
+        "line:e385b7f3",
+        "line:6c71dd83",
+        "line:fd6c6213",
+        "line:8ed5a204",
+        "line:2d40c69a",
+        "line:dbb68858",
+        "line:f7d786b6",
+        "line:2a6d7e7d",
+        "line:5442e228"
+      ],
+      "reason": "These regular choices respond to Conrad within each of the three routes."
+    },
+    {
+      "node": "Conrad_Intro_4",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:918d7820",
+        "line:07bd7f57",
+        "line:6c193ba9",
+        "line:40783547",
+        "line:75dd56ae",
+        "line:59bc5840",
+        "line:5e91e0a7",
+        "line:c8a1e7d0",
+        "line:bb1827c7",
+        "line:01492e5e",
+        "line:34ec4db7",
+        "line:188d4359",
+        "line:1fa0fbbe",
+        "line:59d4be6a",
+        "line:75b5b084",
+        "line:4010d36d",
+        "line:d620d41a",
+        "line:fa41daf4",
+        "line:6b5c6564",
+        "line:18e5a573",
+        "line:3484ab9d",
+        "line:0121c874",
+        "line:9711cf03",
+        "line:bb70c1ed",
+        "line:bc5d790a",
+        "line:4d868f2f",
+        "line:61e781c1"
+      ],
+      "reason": "Conrad's greeting and requests vary with the prior relationship route. Preserve the repeated lines and their separate branches."
+    },
+    {
+      "node": "Conrad_Intro_4",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:d6483230",
+        "line:cfe4b91d",
+        "line:c272e55f"
+      ],
+      "reason": "A standalone ellipsis marks a dialogue beat in this exchange."
+    },
+    {
+      "node": "Conrad_required_4",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:e7353d24"
+      ],
+      "reason": "Conrad introduces a question whose follow-up depends on prior relationship flags."
+    },
+    {
+      "node": "Conrad_required_4",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:71053a53",
+        "line:e01885c3",
+        "line:762882b4",
+        "line:93a145d4",
+        "line:059142a3",
+        "line:bfc04b3a"
+      ],
+      "reason": "Each of three flags gates its own pair of options. Preserve the duplicate labels as distinct options."
+    },
+    {
+      "node": "Conrad_Outro_4",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:6c2a1901",
+        "line:fa1a1e76",
+        "line:404b17ef",
+        "line:d67b1098",
+        "line:4766af08",
+        "line:d156a87f"
+      ],
+      "reason": "Each relationship flag gates its own pair of closing options and destination. Preserve the Windows punctuation variant."
+    },
+    {
+      "node": "Conrad_4_JerkOff_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:6866c2c9"
+      ],
+      "reason": "Conrad responds to an immediate interaction."
+    },
+    {
+      "node": "Conrad_4_Cum",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:8fe11008"
+      ],
+      "reason": "Conrad gives feedback and compares the experience with the berries mentioned earlier."
+    },
+    {
+      "node": "Conrad_4_Mount_Start",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:f99eb2ff"
+      ],
+      "reason": "Conrad recognizes the equipment and reacts."
+    },
+    {
+      "node": "Conrad_4_Mount_Finish",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:88d7e1e2"
+      ],
+      "reason": "Conrad reacts after using the equipment."
+    }
+  ]
+}

@@ -36,6 +36,7 @@ RYAN23_ROLES_SHA = '82f0dd640b385abeb4a06cec54cc267c61ac60d790035d55a72a3b4a0b76
 RYAN45_ROLES_SHA = '673f13e007da9ae66585d950094a4e660b38c0f13872a7ae013dfe5387d8ec9d'
 RYAN_EXTRA_ROLES_SHA = '73f065159d49a1b2cd173cc6d2a333ecb4200c40edd5ab60800640b28b1e5c23'
 CONRAD3_ROLES_SHA = 'cfcfc9ead9be0b1b0d90e5f91862fd09657b9199ce49eba40c3f8a3712df41d3'
+CONRAD124_ROLES_SHA = '66a1abafedf495b6e803508500a8cd9ee97bc41565c709296de760b475dc9e17'
 
 
 def load_pinned(path, expected):
@@ -147,6 +148,15 @@ def bind_conrad3_roles(scenes, manifest):
          'Conrad_finished_mount_3', 'Conrad_3_PhoneTutorial'}, 112)
 
 
+def bind_conrad124_roles(scenes, manifest):
+    return bind_reviewed_roles(scenes, manifest,
+        {'Conrad_Intro_1', 'Conrad_required_1', 'Conrad_Outro_1', 'Conrad_1_JerkOff_Start',
+         'Conrad_1_Cum', 'conrad_mount_no', 'Conrad_Intro_2', 'Conrad_required_2',
+         'Conrad_Outro_2', 'conrad_jerk_off_no', 'Conrad_Intro_4', 'Conrad_required_4',
+         'Conrad_Outro_4', 'Conrad_4_JerkOff_Start', 'Conrad_4_Cum',
+         'Conrad_4_Mount_Start', 'Conrad_4_Mount_Finish'}, 170)
+
+
 def merge_reviewed_roles(role_sets, full, prefixes):
     if any(role_sets[i].keys() & role_sets[j].keys() for i in range(len(role_sets)) for j in range(i)):
         raise ValueError('reviewed Yarn role scopes overlap')
@@ -181,7 +191,9 @@ def build(work, roles_path):
     extra_roles = bind_ryan_extra_roles(scenes, ryan_extra)
     conrad3 = load_pinned(Path(__file__).with_name('yarn_roles_conrad3.json'), CONRAD3_ROLES_SHA)
     conrad3_roles = bind_conrad3_roles(scenes, conrad3)
-    role_sets = (opening_roles, ryan23_roles, ryan45_roles, extra_roles, conrad3_roles)
+    conrad124 = load_pinned(Path(__file__).with_name('yarn_roles_conrad124.json'), CONRAD124_ROLES_SHA)
+    conrad124_roles = bind_conrad124_roles(scenes, conrad124)
+    role_sets = (opening_roles, ryan23_roles, ryan45_roles, extra_roles, conrad3_roles, conrad124_roles)
     reviewed_roles = merge_reviewed_roles(role_sets, full, prefixes)
     credit_manifest = load_pinned(credits.MANIFEST, credits.MANIFEST_SHA256)
     protected_names = bind_credit_names(roles, credit_manifest, ui)
@@ -298,6 +310,7 @@ def build(work, roles_path):
             'ryan45RoleManifestSha256': RYAN45_ROLES_SHA,
             'ryanExtraRoleManifestSha256': RYAN_EXTRA_ROLES_SHA,
             'conrad3RoleManifestSha256': CONRAD3_ROLES_SHA,
+            'conrad124RoleManifestSha256': CONRAD124_ROLES_SHA,
             'familyCounts': counts,
             'entries': list(records.values()),
             'limitations': 'Provisional union of pinned discovery exports. Managed occurrences are build-specific and unpaired; roles, runtime visibility, other assemblies/resources, full exact-preservation contract, special-scene decisions and independent review remain incomplete. Texture text is excluded by owner decision.'}

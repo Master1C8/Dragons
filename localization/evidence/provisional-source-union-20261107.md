@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v11-20261109.json`
-has SHA-256 `23cc5c0061bb9c83d6d62583924ccc6c334889dfab6f08f8707e3b87218cd838`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v12-20261109.json`
+has SHA-256 `54a64e525bedb1e496ccbb0868c67eedfa04d6411ec245bdda5bedfcc8e0a6ab`.
 Its 5,204 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -71,6 +71,17 @@ v10 changed exactly those 112 roles and retained the rest of the records
 byte-for-byte at the JSON value level. Two v11 runs were byte-identical.
 There are 1,180 Yarn IDs still awaiting classification. These are source
 roles, with runtime reachability and editorial decisions tracked separately.
+
+The v12 recipe adds 170 IDs across the 17 distinct line-bearing targets
+named directly by `Conrad_1_2`, `Conrad_2_5` and `Conrad_4_11`. It separates
+98 dialogue lines, 62 regular options, five standalone dialogue beats, two
+recovery prompts and three recovery options. The recovery branch in
+`Conrad_Intro_4` is guarded by the three relationship flags being false and
+the three options write different flag combinations. Regular route-specific
+options retain distinct IDs even when the displayed text repeats. The
+shared refusal node `conrad_mount_no` is counted once. Two v12 builds matched
+byte-for-byte and the v11 comparison changed exactly those 170 roles.
+There are 1,010 unclassified Yarn IDs.
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are

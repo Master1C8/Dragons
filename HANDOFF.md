@@ -22,9 +22,10 @@ on both builds. The reproduced v10 inventory SHA-256 is
 `afa2bf07fdc4ca5e5ecf138c862f0191c211874e415ea951a5c35a8cc8117834`.
 Both draft files passed source binding and preservation checks and await
 editorial review. The v11 inventory adds 112 provisional roles for all nine
-dialogue targets named by `Conrad_3_8`, leaving 1,180 Yarn IDs unclassified.
-The v11 SHA-256 is
-`23cc5c0061bb9c83d6d62583924ccc6c334889dfab6f08f8707e3b87218cd838`.
+dialogue targets named by `Conrad_3_8`. The v12 inventory adds another 170
+from the 17 distinct targets named directly by Conrad's other three level
+configurations, leaving 1,010 Yarn IDs unclassified. Its SHA-256 is
+`54a64e525bedb1e496ccbb0868c67eedfa04d6411ec245bdda5bedfcc8e0a6ab`.
 
 Both UI adapters now reject changes to 34 source-bound contributor-name fields in `level2`, while leaving credit descriptions separately translatable. The pinned manifest and both original builds were tested; see `localization/evidence/credit-name-preservation-20261107.md`. This is one bounded preservation safeguard, not a complete classification or a translated corpus.
 

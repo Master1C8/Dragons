@@ -65,12 +65,19 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertEqual(entries['yarn:line:045f5836']['role'], 'dialogue-punctuation-candidate')
         self.assertNotEqual(entries['yarn:line:19cedc30']['source']['macos'],
                             entries['yarn:line:19cedc30']['source']['windows'])
-        self.assertEqual(sum(r['role'] in opening_roles for r in result['entries'] if r['family'] == 'yarn'), 643)
+        self.assertEqual(entries['yarn:line:8f64adc0']['role'], 'recovery-prompt-candidate')
+        self.assertEqual(entries['yarn:line:bac1ce29']['role'], 'recovery-choice-candidate')
+        self.assertEqual(entries['yarn:line:0090c7b0']['role'], 'choice-candidate')
+        self.assertEqual(entries['yarn:line:4810891f']['role'], 'dialogue-punctuation-candidate')
+        self.assertNotEqual(entries['yarn:line:fa1a1e76']['source']['macos'],
+                            entries['yarn:line:fa1a1e76']['source']['windows'])
+        self.assertEqual(sum(r['role'] in opening_roles for r in result['entries'] if r['family'] == 'yarn'), 813)
         self.assertEqual(result['openingRoleManifestSha256'], inventory.OPENING_ROLES_SHA)
         self.assertEqual(result['ryan23RoleManifestSha256'], inventory.RYAN23_ROLES_SHA)
         self.assertEqual(result['ryan45RoleManifestSha256'], inventory.RYAN45_ROLES_SHA)
         self.assertEqual(result['ryanExtraRoleManifestSha256'], inventory.RYAN_EXTRA_ROLES_SHA)
         self.assertEqual(result['conrad3RoleManifestSha256'], inventory.CONRAD3_ROLES_SHA)
+        self.assertEqual(result['conrad124RoleManifestSha256'], inventory.CONRAD124_ROLES_SHA)
         mac_only = entries['settings:LookInvertY:label']
         self.assertEqual(mac_only['source']['macos'], 'Invert Look Y')
         self.assertIsNone(mac_only['source']['windows'])
