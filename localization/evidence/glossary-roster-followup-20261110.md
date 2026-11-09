@@ -69,11 +69,12 @@ the family association. Preserve the existing separation of Max and the
 unresolved girlfriend reference. The source does not establish their
 identity as the same person.
 
-Conrad's `big C` remains a pending owner decision. The self-reference
-`line:0e1fd4b0` and the echoed choice `line:982fd3c7` must share the
-same nickname with the Russian initial of «Конрад». The other choice
-`line:255362b9` uses his ordinary name. The alternatives presented for
-review are «Большой К» and «Крутой К».
+The owner selected «Большой К» for Conrad's `big C` on 2026-11-10.
+The self-reference `line:0e1fd4b0` and the echoed choice
+`line:982fd3c7` share that nickname with the Russian initial of
+«Конрад». Inflect it where the sentence requires it. The other choice
+`line:255362b9` uses his ordinary name. The nickname decision is
+resolved. Review the complete Russian group after glossary readiness.
 
 The proposals are recorded in Dragons. Integration remains pending in
 the canonical SiteForMods checkout, which still contains unrelated

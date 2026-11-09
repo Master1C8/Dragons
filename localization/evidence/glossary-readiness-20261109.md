@@ -83,8 +83,9 @@ remains open.
   adds no established third-person pronoun for Alexander.
 - Conrad's in-scene `big C` nickname depends on his Russian name. The existing
   case binds the self-introduction and the player's two responses
-  (`line:0e1fd4b0`, `line:982fd3c7`, `line:255362b9`). Its Russian rendering
-  and meaningful-name decision remain open in the special-scene review.
+  (`line:0e1fd4b0`, `line:982fd3c7`, `line:255362b9`). The owner chose
+  «Большой К» in the [roster follow-up](glossary-roster-followup-20261110.md).
+  The complete Russian group still requires special-scene review.
 
 This check is local. Production mirror parity and independent editorial
 coverage were not verified. The glossary remains `needs-review`.

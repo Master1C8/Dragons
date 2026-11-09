@@ -274,6 +274,34 @@ returned receipt records the patched Yarn Unity and companion fingerprints.
 Windows installation and restoration are still separate from this preparation
 step. See the [paired speaker build evidence](evidence/speaker-locale-build-20261110.md).
 
+## Windows replacement package
+
+`build_windows_package.py` combines the audited Windows adapters in one
+ZIP. Use the pinned v41 shared inventory and paired Yarn scope described
+in [the Yarn scope evidence](evidence/yarn-translation-scope-20261110.md).
+The input directory contains `dialogue.json`, `speakers.json`,
+`settings.json`, `slot-new.json`, `missing-line.json` and `ui/` with
+the exact Windows UI locale files required by
+[the non-Yarn scope](evidence/non-yarn-translation-scope-20261110.md).
+
+```sh
+"$PYTHON" localization/build_windows_package.py "$windows_data" "$windows_locale_inputs" \
+  --locale ru --inventory "$shared_inventory" --yarn-scope "$paired_yarn_scope" \
+  --managed-tool "$managed_fallback_tool" --speaker-tool "$speaker_tool" \
+  --speaker-runtime "$speaker_runtime" --speaker-runtime-sha "$speaker_runtime_sha" \
+  --output "$fresh_zip"
+```
+
+Use a fresh output in the project. The command snapshots locale inputs,
+checks the known complete text scopes and verifies each output through its
+source-pinned adapter. The archive contains a root manifest and verified
+replacement files under `DragNWash_Data/`. The manifest identifies the
+source build, input hashes, original file hashes and replacement hashes.
+The speaker companion has no original file. The ZIP is read back before
+one atomic publication. The command does not install the replacements
+or exercise in-game behavior. Complete structural coverage is separate
+from glossary, editorial, rendering and release acceptance.
+
 The optional `--speaker-contrast` flag uses the stock black text color for
 the originally white speaker-name fields in `level1`, `level3`, `level5`
 and `level6`. The macOS builder updates all four assets in the app. On
