@@ -51,3 +51,58 @@ The probe injects the entry node and uses line-ID selection callbacks.
 The Unity presenter, game command effects, save serialization and reload,
 visible choice interpretation and size-tag rendering are outside this
 control. Russian wording and those checks remain open.
+
+## Managed save round trip, 2026-11-10
+
+In both pinned game assemblies, `WalkNWashSceneState.OnEnable` attaches
+`OnYarnFlagSet` to the Yarn store's global change listener. The callback
+passes boolean writes to the game's flag registry after removing `$`
+from the ID. `FlagRegistry.ToJson` emits that ID and boolean as a
+`BOOL` entry. `WalkNWashSceneState.NextLevel` calls `Flags.Save`;
+`Awake` calls `Flags.Load`. `FlagRegistry.Load` clears the Yarn store
+and, on successful slot read, calls `FromJson`. That method dispatches
+the saved ID and boolean through `WalkNWashSceneState.SetFlag`.
+The boolean setter adds the `$` prefix before calling the Yarn store.
+The macOS save includes a version header and uses `SaveManagerV1`.
+The Windows path uses `SaveManager`.
+
+The [save probe](../tools/alexander-question-save-test/runtime/Program.cs)
+runs each question and the shared exit in the original Yarn VM, using the
+original managed Unity Yarn store. In a fresh test for each question,
+the real callback and serializer produced exactly two flag entries.
+The selected `Yarn.Internal.Once.line:…` was true and
+`has_asked_question` was false after exit. The probe then cleared a
+separate store, parsed the synthetic save through stock SimpleJSON, and
+ran the game's `FromJson`. On reentry the six unchosen questions were
+available in their original order, while the chosen question and exit
+were unavailable. For each matching negative control, changing one
+character in the selected once key restored the seven original choices,
+with the exit still unavailable.
+
+For reproduction, build the [patcher](../tools/alexander-question-save-test/patcher/Program.cs)
+with .NET 8 and invoke its DLL with
+`macos|windows ORIGINAL_GAME_DLL NEW_PROBE_DLL`. It fingerprints the
+input and only creates a new file. Build the probe runtime project
+with `-p:ManagedDir=<that build's original Data/Managed>` and invoke
+its DLL with
+`macos|windows ORIGINAL_PROGRAM ORIGINAL_MANAGED PROBE_DLL PROBE_SHA256`.
+The wrong-platform patcher control rejected the input and created no
+DLL. The probe traces for both platforms are byte-identical. Output is in
+`localization/work/yarn-save-boundary-20261110.bDCIbl/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Both seven-scenario traces | `df5cd13895fb503e19cf9ae2b4dcb65f7c19d199917dae83260424fdd6219e7b` |
+| macOS probe DLL | `cdcb7abccf4cac12acd09e22046e55fa1a64c6391979990c5ca2171b791019f0` |
+| Windows probe DLL | `2c7e77dd4aa300411bc26363e9b42afe379d8a4328aaba2cc2f9b11a4eb88c5c` |
+
+The probe substitutes Unity's native object lookup and debug logging
+in the scratch game DLL, initializes the managed store and scene without
+native constructors, and explicitly attaches the stock listener. It
+invokes the save serializer and loader in memory. It does not call
+stock slot I/O, trigger a real level transition, launch either game or
+read or write player saves. Unity gameplay reload and visible choice
+presentation remain to be checked on delivered artifacts. Preserve the
+seven variable names and choice IDs from the
+[question-group inventory](alexander-question-groups-20261107.json)
+through packaging.

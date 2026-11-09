@@ -199,6 +199,11 @@ once-only menu and exit, all three number-seven replies and both crest
 replies to their observed line sequences. It uses a desktop in-memory
 store and does not exercise Unity presentation or save reload. Actual
 Russian special-scene wording remains gated on glossary readiness.
+The [managed save round trip](localization/evidence/alexander-question-analysis-20261107.md#managed-save-round-trip-2026-11-10)
+uses the original callback, JSON codec and Yarn store with synthetic
+data. All seven once keys survive the round trip. Changing one
+character makes the corresponding question available again. Stock slot
+I/O and Unity gameplay reload remain pending.
 
 ## Inputs and evidence
 
