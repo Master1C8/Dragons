@@ -13,6 +13,37 @@ the paired export was rejected at the source fingerprint check. This
 verifies historical source reading coverage for both builds. Roster and
 editorial acceptance still require separate evidence.
 
+## Paired runtime parser check
+
+Desktop .NET ran the unmodified Yarn `LineParser` and
+`LocalizedLine.CharacterName` getter from the original managed
+assemblies. The probe pinned the core and per-platform Yarn Unity DLL
+hashes and the paired scene export. It used the built-in provider's
+empty substitution array, English locale and implicit-character
+setting. All 1,261 lines and 578 options per platform have zero
+compiled substitutions and were evaluated. Controls recovered an
+unknown name both from a colon prefix and explicit character markup.
+Disabling implicit extraction on the colon control and parsing plain
+text both returned an empty name.
+
+The results match across both builds and against every candidate ID in
+the static speaker scan. The 18 known labels occur only in the three
+Ryan–Conrad joint scenes. Ten return `Conrad` and eight return `Ryan`.
+Five further values return `title` and are the unreachable fragment
+markers. `line:4b36ea4e` returns the whole Alexander introduction
+prefix and belongs to the separate body adapter. The remaining 1,815
+strings return no character name, including all 578 choices. This
+closes the source-table search for an additional parser-provided label.
+It does not assign an actor to an unlabeled line or test the Unity
+presenter.
+
+Local probe source and outputs are in
+`localization/work/yarn-speaker-roster-20261110.EZsFur/`.
+The macOS receipt SHA-256 is
+`894f8bd6248c4b2f058db5e211d9579b7ab3cb52277e9030dba9712f21b39217`.
+The Windows receipt SHA-256 is
+`c56f38137696c8ecfd37a3760152a2992e8806080eaf7b77653f145621f6a1dd`.
+
 ## Ryan's cold-water bark
 
 All 14 `DragonColdBalls` references in the shared inventory, SHA-256
@@ -41,8 +72,13 @@ Use Ryan as the source character for these seven serialized callers of
 There is no additional speaking character in these known uses. Which bark
 branch plays in a stock run and whether it displays a speaker label remain
 unverified. The four other generic nodes still lack verified callers.
-Their 20 IDs remain in scope with generic dragon dialogue and player
-choices. The residual unprefixed `Mount_Alexander_2_6` belongs to the
+Their 20 IDs remain in scope. They comprise 12 unlabeled dragon lines
+and eight player choices. The four contexts are asking for a second
+cleanliness check, responding to buzzing, objecting to an early
+dismissal and thanking the player after washing. None of their parsed
+texts adds a named speaker. Neutral treatment without assigning a
+named dragon has been presented to the owner for a decision. The
+residual unprefixed `Mount_Alexander_2_6` belongs to the
 Alexander route. `Start` contains a Yarn demonstration and
 `ErrorHasOccurred` contains a diagnostic message that mentions Nael.
 Neither introduces a story speaker. The full semantic roster remains open.
@@ -68,6 +104,14 @@ a crest worn on the head and representing a family. For example,
 the family association. Preserve the existing separation of Max and the
 unresolved girlfriend reference. The source does not establish their
 identity as the same person.
+
+Preserve a second referent distinction in the explosion stories.
+Alexander names Igwix in `line:9d7cc63c` and uses masculine pronouns
+for the named colleague in `line:68ebf07b` and `line:8245fe2b`.
+Ryan's parallel account in `RyanExploded_Intro` says “the alchemist”
+and later “they” (`line:e02f464d`, `line:cc4e48a3`). Keep that
+reference unnamed and neutral in Ryan's lines. Similar events do not
+establish the alchemist's identity in that branch.
 
 The owner selected «Большой К» for Conrad's `big C` on 2026-11-10.
 The self-reference `line:0e1fd4b0` and the echoed choice
