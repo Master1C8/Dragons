@@ -25,8 +25,28 @@ class GameComponentInventoryTests(unittest.TestCase):
                 self.assertEqual(report['missingDialogueTargets'], [])
                 self.assertTrue(any(f['role'] == 'preserve-exactly-rig-key'
                                     and f['path'][-3:-1] == ['coordinates', 'bones'] for f in fields))
-                self.assertTrue(any(f['role'] == 'serialized-string-needs-consumer-review'
-                                    and f['path'][-1] == 'description' and f['value'] for f in fields))
+                self.assertEqual(sum(f['role'] == 'dragon-bark-description-needs-runtime-review'
+                                     for f in fields), 361)
+                self.assertEqual(sum(f['role'] == 'dragon-descriptor-name-needs-runtime-review'
+                                     for f in fields), 20)
+                self.assertEqual(sum(f['role'] == 'preserve-exactly-animation-key'
+                                     and f['path'][-2:] == ['data', 'boolName'] for f in fields), 361)
+                self.assertTrue(any(f['role'] == 'preserve-exactly-state-key'
+                                    and f['path'] == ['placeFlag'] and f['value'] == 'PlacedMount'
+                                    for f in fields))
+                self.assertTrue(any(f['role'] == 'preserve-exactly-menu-intent-key'
+                                    and f['path'][-1] == 'intentName' and f['value'] == 'Pause'
+                                    for f in fields))
+
+    def test_bark_role_checks_the_serialized_type(self):
+        identity = ('', 'DragonBarkFeaturePlapResponse')
+        path = ('references', 'RefIds', 0, 'data', 'boolName')
+        bark_type = {'asm': components.GAME_ASSEMBLY, 'ns': '', 'class': 'DragonBarkAnimationPlayVFX'}
+        tree = {'references': {'RefIds': [{'type': bark_type}]}}
+        self.assertEqual(components.field_role(identity, path, 'Hearts', tree), 'preserve-exactly-animation-key')
+        bark_type['class'] = 'DragonBarkDialogue'
+        self.assertEqual(components.field_role(identity, path, 'Hearts', tree),
+                         'serialized-string-needs-consumer-review')
 
     def test_wrong_build_rejected_before_schema_decoding(self):
         with self.assertRaisesRegex(ValueError, 'unsupported source:'):

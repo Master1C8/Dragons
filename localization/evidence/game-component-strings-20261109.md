@@ -52,8 +52,41 @@ The export hashes are pinned in the [shared inventory recipe](../assemble_source
 The full suite ran 179 tests with one optional catalog test skipped. That
 test passed separately with the built catalog-options scanner supplied.
 
+## Field roles in the v2 exports
+
+The pinned root Managed inventories (170 macOS and 172 Windows assemblies)
+were scanned for direct field and getter references. The following table
+accounts for all 1,650 formerly uncategorized fields.
+
+| Role | macOS | Windows | Verified consumer |
+| --- | ---: | ---: | --- |
+| Exact animation keys | 401 | 399 | `DragonBarkAnimationToggleBool.OnStart` and `OnEnd` call `Animator.SetBool`; the egg trigger forwards its key through `DragonBarkOviposition` to the same base class. `CreditsIconAnimator`, `LocomotionAnimationBridge` and `IntermissionFade` pass parameters or state names to Animator setters, `Play` or `AnimatorStateInfo.IsName`. |
+| Exact progression flags | 20 | 20 | `FlagDelivery.OnFlagChanged` compares the event's flag, `InteractableToolEquip` compares, reads and sets flags, and `WalkNWashDragonDescriptor.StartWithAuxMap` calls `Flags.IsSet`. |
+| Exact menu intent keys | 24 | 24 | `MenuIntents` constructs `MenuEventUserIntent`; the six observed menu handlers compare the event key with `Cancel` or `Pause`. |
+| Bark descriptions awaiting runtime review | 361 | 361 | `DragonBarkAnimationToggleBool.GetDescription` returns the field. The pinned assemblies contain no direct call to a dragon-bark `GetDescription`. |
+| Dragon descriptor names awaiting runtime review | 20 | 20 | `WalkNWashDragonDescriptor.GetDescription` writes the name to `WalkNWashSceneState.DragonDescription.name`; the pinned assemblies contain no direct read of the destination field. |
+
+The nested bark roles check the actual serialized type in each registry
+entry. On each build 341 entries are `DragonBarkAnimationToggleBool` and
+20 are its subclass `DragonBarkAnimationPlayVFX`. The two macOS-only
+transition states pass through `IntermissionFade.RunTransition` to
+`Animator.Play`. The distinct runtime-review roles leave indirect access
+and visibility open. The source union now contains 21,147 exact-preserve
+component occurrences and 762 with a specific runtime-review role.
+
+The v2 export recipe below reproduced both files byte-for-byte. Comparing
+the v20 and v21 unions confirmed that only the roles of these 1,650
+occurrences changed. The direct reference reports are in
+`localization/work/game-component-consumers-20261109.Crtz9a/`.
+All 180 localization tests passed with the catalog-options tool supplied.
+
+| Build | Direct references SHA-256 | Consumer follow-up SHA-256 |
+| --- | --- | --- |
+| macOS | `2096e0fd953fce00df8028eca8a898f0c76c3cbb01d30d152c873defda231c4d` | `77636b5332683cbe8bc43ee9a215ad56fbcbf62dc0cb29ec6b8d2d7f563cc083` |
+| Windows | `586f5321a0ddc7c8818d8238dd9e243338dc2c620d2514d3367f729d970ea586` | `b1197bc905657428879b236e292e5bc5d50e3a6429b13ec217260ba888d8112a` |
+
 ```sh
-python3 localization/inventory_game_components.py macos ORIGINAL_MAC_DATA > game-components-macos.json
-python3 localization/inventory_game_components.py windows ORIGINAL_WINDOWS_DATA > game-components-windows.json
+python3 localization/inventory_game_components.py macos ORIGINAL_MAC_DATA > game-components-v2-macos.json
+python3 localization/inventory_game_components.py windows ORIGINAL_WINDOWS_DATA > game-components-v2-windows.json
 python3 -m unittest discover -s localization -p 'test_inventory_game_components.py' -v
 ```

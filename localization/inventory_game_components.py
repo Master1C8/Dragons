@@ -33,6 +33,20 @@ MANAGED_CLASSES = {
     'GameEventResponseSpawnObject', 'GameEventResponseSpawnObjectList', 'GameEventResponseSprayJukebox',
     'GameEventResponseUnityEvent',
 }
+ANIMATION_FIELDS = {
+    'CreditsIconAnimator': {'_iconIndexParameterName'},
+    'DragonPerformanceTriggerEggAnimation': {'boolName'},
+    'IntermissionFade': {'_blackscreenState', '_idleState', '_intermissionState',
+                         '_nightTimeParameter', '_unstickPlayerState'},
+    'LocomotionAnimationBridge': {'isSlidingParam', 'onGroundParam', 'postureParam', 'speedParam', 'turnParam'},
+}
+STATE_FIELDS = {
+    'FlagDelivery': {'completedFlag', 'deliveryFlag'},
+    'InteractableToolEquip': {'obtainFlag', 'placeFlag', 'requiredFlag'},
+    'WalkNWashDragonDescriptor': {'startWithAuxMapFlag'},
+}
+INTENT_COMPONENTS = {'MenuMain', 'MenuOptions', 'MenuPause', 'MenuSlotsLoad', 'MenuSlotsNew', 'MenuUnpaused'}
+BARK_TOGGLE_TYPES = {'DragonBarkAnimationToggleBool', 'DragonBarkAnimationPlayVFX'}
 
 
 def flat_nodes(schema):
@@ -118,7 +132,7 @@ def is_dialogue_field(identity, path):
             and path[:2] == ('references', 'RefIds') and path[3:] == ('data', 'dialogueTitle'))
 
 
-def field_role(identity, path, text):
+def field_role(identity, path, text, tree):
     if is_dialogue_field(identity, path):
         return 'preserve-exactly-yarn-node-reference'
     if not text:
@@ -137,6 +151,25 @@ def field_role(identity, path, text):
         return 'preserve-exactly-state-key'
     if identity == ('', 'LevelConfiguration') and path == ('playerSpawnTransformName',):
         return 'preserve-exactly-object-lookup'
+    namespace, name = identity
+    if not namespace:
+        if len(path) == 1 and path[0] in ANIMATION_FIELDS.get(name, ()):
+            return 'preserve-exactly-animation-key'
+        if len(path) == 1 and path[0] in STATE_FIELDS.get(name, ()):
+            return 'preserve-exactly-state-key'
+        if (name in INTENT_COMPONENTS and len(path) == 4 and path[:2] == ('intents', 'intents')
+                and isinstance(path[2], int) and path[3] == 'intentName'):
+            return 'preserve-exactly-menu-intent-key'
+        if name == 'WalkNWashDragonDescriptor' and path == ('name',):
+            return 'dragon-descriptor-name-needs-runtime-review'
+        if (name == 'DragonBarkFeaturePlapResponse' and len(path) == 5 and path[:2] == ('references', 'RefIds')
+                and isinstance(path[2], int) and path[3] == 'data' and path[4] in ('boolName', 'description')):
+            bark_type = tree['references']['RefIds'][path[2]]['type']
+            if (bark_type['asm'] == GAME_ASSEMBLY and not bark_type['ns']
+                    and bark_type['class'] in BARK_TOGGLE_TYPES):
+                if path[4] == 'boolName':
+                    return 'preserve-exactly-animation-key'
+                return 'dragon-bark-description-needs-runtime-review'
     return 'serialized-string-needs-consumer-review'
 
 
@@ -174,7 +207,7 @@ def inspect(root, platform):
             for path, text in string_fields(tree):
                 if path[0] in HEADER:
                     continue
-                role = field_role(identity, path, text)
+                role = field_role(identity, path, text, tree)
                 if role == 'preserve-exactly-yarn-node-reference' and text and text not in nodes:
                     missing.append({'object': key, 'path': list(path), 'target': text})
                 fields.append({'path': list(path), 'value': text, 'role': role})

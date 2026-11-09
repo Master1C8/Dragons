@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v20-20261109.json`
-has SHA-256 `50b7d42c7b02f42e88c0133c25544a7022f1f00b7d71a0ada19d2e420303d197`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v21-20261109.json`
+has SHA-256 `6810d69351e46169a7a54c2bab43f438d518d9046bc4ab2ee2ae4634c9037bdb`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -202,6 +202,13 @@ Of the 21,909 added fields, 20,259 have exact-preserve roles and 1,650
 need consumer review. The added fields, missing-reference check and
 byte-for-byte reproduction are documented in
 [the component evidence](game-component-strings-20261109.md).
+
+The v21 export changes only those 1,650 roles. The pinned managed
+consumers support exact preservation for 800 animation keys, 40 state
+keys and 48 menu intent keys. The remaining 722 bark descriptions and 40
+dragon descriptor names have specific runtime-review roles. Two v21
+exports matched byte-for-byte and every source value, ID and location
+matches v20.
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are

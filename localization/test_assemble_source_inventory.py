@@ -160,7 +160,12 @@ class SourceInventoryUnitTests(unittest.TestCase):
             self.assertEqual(len(cold), 7)
             self.assertTrue(all(r['role'] == 'preserve-exactly-yarn-node-reference' and
                                 r['fieldPath'][-2:] == ['data', 'dialogueTitle'] for r in cold))
-        self.assertEqual(sum(r['role'] == 'serialized-string-needs-consumer-review' for r in component_rows), 1650)
+        self.assertEqual(sum(r['role'].startswith('preserve-exactly-') for r in component_rows), 21147)
+        self.assertEqual(sum(r['role'] == 'dragon-bark-description-needs-runtime-review'
+                             for r in component_rows), 722)
+        self.assertEqual(sum(r['role'] == 'dragon-descriptor-name-needs-runtime-review'
+                             for r in component_rows), 40)
+        self.assertFalse(any(r['role'] == 'serialized-string-needs-consumer-review' for r in component_rows))
         names = [r for r in result['entries'] if r['role'] == 'preserve-exactly-credit-name']
         self.assertEqual(len(names), 34)
         self.assertTrue(all(r['source']['macos'] == r['source']['windows'] for r in names))

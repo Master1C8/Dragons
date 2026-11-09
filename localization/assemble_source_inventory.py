@@ -15,8 +15,8 @@ FILES = {
     'settings-paired-source.json': 'eda16ce679eedf3e5b76beb76c8e9bc49a62c974639ab6327ea6063c6ad5cf25',
     'legacy-ui-macos.json': '7633ab7cf7622438d7f0ab17c2f58a8ad6190bef255bfb2c177738a2687970c8',
     'legacy-ui-windows.json': 'ff233b106664f8de1fd9f73123dfad1c43babd037ad16f2721d0e915d83b24db',
-    'game-components-macos.json': 'dc306eeba34e926efc34a7e357bbe9ec69ed77bc7902ad27543575b0c462d8fe',
-    'game-components-windows.json': '329c6e2ab5e18c98f3a0d753d93eb53c64c5b0e3ba4c0b7d60356fc67dd62049',
+    'game-components-v2-macos.json': 'bcdca1bc07d540770fe2ca53c40254482353a819acc4d7b026a309ea4987bd96',
+    'game-components-v2-windows.json': '25491d730b8b4d81f109ab907248bc8c67c7827c68fe989285dae27921174980',
     'managed-strings-v2-macos.json': '86152819357c568695ba203f2dc434bf7beaccaf1f2534fa95ea4203cdf916ed',
     'managed-strings-v2-windows.json': '3c3a38efa1657c3a02aabc8ecade3db3312ce816cdafea7169ae892414b7c51c',
     'managed-strings-v2-macos-settings.json': '62c9cfebe9c34f01bff27d59aa38b2a0ba690eccdaa1b2c6b521b2c4d1cf8682',
@@ -369,7 +369,7 @@ def build(work, roles_path):
         if matched_inputs != set(input_records):
             raise ValueError('input action source occurrences missing')
     for platform in ('macos', 'windows'):
-        components = docs[f'game-components-{platform}.json']
+        components = docs[f'game-components-v2-{platform}.json']
         if (components['schema'] != 1 or components['platform'] != platform
                 or components['buildVersion'] != scenes['builds'][platform]['version']
                 or components['programSha256'] != scenes['programSha256'][platform]
