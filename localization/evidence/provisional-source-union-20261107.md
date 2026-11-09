@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v32-20261109.json`
-has SHA-256 `e2137d9a08f72e137c0220c5070067dfb9b755d15d3f96ce5733cfb6aebb7fb6`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v33-20261109.json`
+has SHA-256 `6d8549ddc0e3a8406ef80ee64c0f1496e1158d9a24f83ec0bc42eafde4895a45`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -262,6 +262,10 @@ The v32 export preserves 36 unused Yarn command-help templates and 30
 log-bound command diagnostics. It also corrects two exception-consumer
 bindings while retaining their review roles. See
 [the Yarn command flow audit](managed-game-consumers-20261109.md#v32-yarn-command-help-and-error-flow).
+
+The v33 export preserves seven paired version placeholders. The runtime
+version value replaced the template by the first sampled Canvas callback on
+both builds. See [the version probes](ui-reading-version-consumers-20261107.md#windows-crossover-follow-up-and-v33).
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values still require visibility review, only five managed assemblies are

@@ -293,8 +293,13 @@ def build(work, roles_path):
         if mac and (row['sameText'] is not True or mac['sourceTextSha256'] != win['sourceTextSha256']):
             raise ValueError('macOS UI source mismatch')
         path = json.dumps([row['asset'], row['hierarchy']], ensure_ascii=False, separators=(',', ':'))
+        role = row['provisionalRole']
+        if win['id'] in protected_names:
+            role = 'preserve-exactly-credit-name'
+        elif role == 'version-display-needs-consumer-review':
+            role = 'preserve-exactly-version-placeholder'
         put(records, {'id': 'ui:' + dl.sha(path.encode('utf-8')), 'family': 'ui',
-                      'role': 'preserve-exactly-credit-name' if win['id'] in protected_names else row['provisionalRole'],
+                      'role': role,
                       'asset': row['asset'], 'hierarchy': row['hierarchy'],
                       'source': {'macos': value if mac else None, 'windows': value},
                       'location': {'macos': mac['id'] if mac else None, 'windows': win['id']}})

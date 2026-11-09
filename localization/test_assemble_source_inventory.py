@@ -238,6 +238,11 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertEqual({r['role'] for r in legacy_rows}, {'preserve-exactly-render-debug-template'})
         self.assertEqual({r['hierarchy'][0] for r in legacy_rows}, inventory.LEGACY_DEBUG_ROOTS)
         self.assertTrue(all(r['source']['macos'] == r['source']['windows'] for r in legacy_rows))
+        version_rows = [r for r in result['entries'] if r['role'] == 'preserve-exactly-version-placeholder']
+        self.assertEqual(len(version_rows), 7)
+        self.assertEqual({r['asset'] for r in version_rows}, {f'level{i}' for i in range(7)})
+        self.assertTrue(all(r['family'] == 'ui' and r['source'] == {'macos': 'Version\n', 'windows': 'Version\n'}
+                            and r['hierarchy'][-2:] == ['VersionDisplay', 'VersionText'] for r in version_rows))
         component_rows = [r for r in result['entries'] if r['family'] == 'game-component']
         for platform in ('macos', 'windows'):
             cold = [r for r in component_rows if r['source'].get(platform) == 'DragonColdBalls']
