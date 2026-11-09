@@ -54,15 +54,34 @@ class SpeakerLocaleTests(unittest.TestCase):
                 self.assertEqual(dl.sha(source.read_bytes()), digest)
                 harness = root / 'harness'
                 shutil.copytree(tools / platform / 'harness/bin', harness)
-                (harness / fallback.ASSEMBLY).write_bytes(files[fallback.ASSEMBLY])
-                (harness / speakers.COMPANION).write_bytes(files[speakers.COMPANION])
-                run = subprocess.run([
-                    'dotnet', str(harness / 'speaker-inline-probe.dll'), platform,
-                    str(WORK / 'source-inventory-20261107/yarn-paired-scenes.json'),
-                    report['outputSha256'], str(harness / speakers.COMPANION), runtime_sha, replacement,
-                ], capture_output=True, text=True)
-                self.assertEqual(run.returncode, 0, run.stderr)
-                result = json.loads(run.stdout)
-                self.assertEqual(len(result['mappedIds']), 18)
-                self.assertEqual(result['markupControls'], 2)
-                self.assertEqual(result['unchangedControls'], 8)
+
+                def check(files, report, *special):
+                    for name, data in files.items():
+                        (harness / name).write_bytes(data)
+                    run = subprocess.run([
+                        'dotnet', str(harness / 'speaker-inline-probe.dll'), platform,
+                        str(WORK / 'source-inventory-20261107/yarn-paired-scenes.json'),
+                        report['outputSha256'], str(harness / speakers.COMPANION), runtime_sha, replacement, *special,
+                    ], capture_output=True, text=True)
+                    self.assertEqual(run.returncode, 0, run.stderr)
+                    result = json.loads(run.stdout)
+                    self.assertEqual(len(result['mappedIds']), 18)
+                    self.assertEqual(result['markupControls'], 2)
+                    self.assertEqual(result['unchangedControls'], 8)
+                    self.assertEqual(result.get('alexanderBodyVerified', False), bool(special))
+
+                check(files, report)
+                english = 'The most prestigious college hosting prestigious professors like me:'
+                synthetic = 'Жёлтый ёж. Ъъ Ьь Щщ Йй. Жёлтый ёж. Ъъ Ьь Щщ Йй:'
+                write(locale, names | {speakers.ALEXANDER: {'source': english, 'text': '<i>Ж</i>:'}})
+                with self.assertRaisesRegex(ValueError, 'markup or placeholders differ'):
+                    speakers.prepare(*args, runtime_sha, fallback_locale=missing)
+                for invalid in (synthetic[:-1], '  :'):
+                    write(locale, names | {speakers.ALEXANDER: {'source': english, 'text': invalid}})
+                    with self.assertRaisesRegex(ValueError, 'plain text ending with a colon'):
+                        speakers.prepare(*args, runtime_sha, fallback_locale=missing)
+                write(locale, names | {speakers.ALEXANDER: {'source': english, 'text': synthetic}})
+                files, report = speakers.prepare(*args, runtime_sha, fallback_locale=missing)
+                self.assertEqual(report['alexanderBodyId'], speakers.ALEXANDER)
+                self.assertEqual(len(report['changedDisplayCallSites']), 10)
+                check(files, report, synthetic)

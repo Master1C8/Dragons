@@ -5,10 +5,15 @@ using System.Text.Json;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 
-bool production = args.Length == 9 && args[6] == "--locale";
+bool production = args.Length is 9 or 10 && args[6] == "--locale";
 if ((!production && args.Length is not (4 or 6)) || (args[0] != "macos" && args[0] != "windows"))
-    throw new ArgumentException("Usage: speaker-display-probe macos|windows SOURCE_DLL MAP_JSON OUTPUT_DLL [INLINE_RUNTIME_DLL INLINE_RUNTIME_SHA256 [--locale LOCALE FALLBACK_TEXT]]");
+    throw new ArgumentException("Usage: speaker-display-probe macos|windows SOURCE_DLL MAP_JSON OUTPUT_DLL [INLINE_RUNTIME_DLL INLINE_RUNTIME_SHA256 [--locale LOCALE FALLBACK_TEXT [ALEXANDER_BODY]]]");
 bool includeInline = production || args.Length == 6;
+string alexanderBody = args.Length == 10 ? args[9] : null;
+const string AlexanderId = "line:4b36ea4e";
+if (alexanderBody != null && (!alexanderBody.EndsWith(':') || string.IsNullOrWhiteSpace(alexanderBody[..^1]) ||
+    alexanderBody.Any(c => char.IsControl(c) || "<>[]{}".Contains(c))))
+    throw new ArgumentException("Alexander presentation requires plain text ending with a colon");
 string Sha(byte[] bytes) => Convert.ToHexString(SHA256.HashData(bytes)).ToLowerInvariant();
 var expectedHashes = new Dictionary<string, string> {
     ["macos"] = "54953f9c071aa3ca5b52eb8b12b8e0bedc73f7665a506c61acbef0c58ac340ef",
@@ -54,6 +59,7 @@ const string Setter = "System.Void TMPro.TMP_Text::set_text(System.String)";
 string helperName = production ? "VnSpeakerDisplay" : "VnSyntheticSpeakerDisplay";
 string helperFullName = "Yarn.Unity." + helperName;
 const string TextGetter = "Yarn.Markup.MarkupParseResult Yarn.Unity.LocalizedLine::get_Text()";
+const string BodyGetter = "Yarn.Markup.MarkupParseResult Yarn.Unity.LocalizedLine::get_TextWithoutCharacterName()";
 string runtimeAssembly = production ? "Dragons.SpeakerPresentation" : "Dragons.SyntheticSpeakerInline";
 string runtimeMethod = $"Yarn.Markup.MarkupParseResult {runtimeAssembly}.InlineSpeakerView::Create(Yarn.Unity.LocalizedLine,System.String,System.String)";
 string runtimeNameReader = $"System.String {runtimeAssembly}.InlineSpeakerView::NameFromView(Yarn.Markup.MarkupParseResult,Yarn.Unity.LocalizedLine)";
@@ -67,6 +73,7 @@ var equality = all.SelectMany(t => t.Methods).Where(m => m.HasBody).SelectMany(m
     .First(m => m.FullName == "System.Boolean System.String::op_Equality(System.String,System.String)");
 var sites = new List<Instruction>();
 var siteKeys = new HashSet<string>(StringComparer.Ordinal);
+var specialSites = new Dictionary<string, (string Before, string After)>(StringComparer.Ordinal);
 var inlineIds = new SortedDictionary<string, string>(StringComparer.Ordinal);
 string inlineSiteKey = null;
 foreach (var type in all) foreach (var method in type.Methods.Where(m => m.HasBody)) {
@@ -146,7 +153,69 @@ if (includeInline) {
     var instructions = bridge.Body.GetILProcessor();
     var cases = map.Keys.ToDictionary(name => name, name => instructions.Create(OpCodes.Pop));
     var textId = nameType.Fields.Single(f => f.Name == "TextID" && f.FieldType.FullName == "System.String");
-    instructions.Append(instructions.Create(OpCodes.Ldarg_0));
+    if (alexanderBody != null) {
+        string source = manifest.RootElement.GetProperty("fullValueProtection").EnumerateArray()
+            .Single(row => row.GetProperty("id").GetString() == AlexanderId)
+            .GetProperty("expected").GetProperty(args[0]).GetString();
+        if (!source.EndsWith(':')) throw new InvalidOperationException("Unexpected Alexander source binding");
+        MethodReference RuntimeMethod(string name, params TypeReference[] parameters) {
+            var method = new MethodReference(name, textGetter.ReturnType, external.DeclaringType);
+            foreach (var parameter in parameters) method.Parameters.Add(new ParameterDefinition(parameter));
+            if (!factory.DeclaringType.Methods.Any(m => m.FullName == method.FullName && m.IsPublic && m.IsStatic))
+                throw new InvalidOperationException($"Missing runtime helper {name}");
+            return method;
+        }
+        MethodDefinition NewView(string name) {
+            var method = new MethodDefinition(name, MethodAttributes.Assembly | MethodAttributes.Static |
+                MethodAttributes.HideBySig, textGetter.ReturnType);
+            method.Parameters.Add(new ParameterDefinition("line", ParameterAttributes.None, nameType));
+            helperType.Methods.Add(method);
+            return method;
+        }
+        var special = NewView("GetAlexanderText");
+        var edit = special.Body.GetILProcessor();
+        edit.Append(edit.Create(OpCodes.Ldarg_0));
+        edit.Append(edit.Create(OpCodes.Ldstr, source));
+        edit.Append(edit.Create(OpCodes.Ldstr, alexanderBody));
+        edit.Append(edit.Create(OpCodes.Call, RuntimeMethod("CreateAlexanderBody", nameType,
+            module.TypeSystem.String, module.TypeSystem.String)));
+        edit.Append(edit.Create(OpCodes.Ret));
+        var body = NewView("GetBodyText");
+        edit = body.Body.GetILProcessor();
+        edit.Append(edit.Create(OpCodes.Ldarg_0));
+        edit.Append(edit.Create(OpCodes.Call, special));
+        edit.Append(edit.Create(OpCodes.Ldarg_0));
+        edit.Append(edit.Create(OpCodes.Call, RuntimeMethod("BodyFromView", textGetter.ReturnType, nameType)));
+        edit.Append(edit.Create(OpCodes.Ret));
+        var ordinary = instructions.Create(OpCodes.Ldarg_0);
+        instructions.Append(instructions.Create(OpCodes.Ldarg_0));
+        instructions.Append(instructions.Create(OpCodes.Ldfld, textId));
+        instructions.Append(instructions.Create(OpCodes.Ldstr, AlexanderId));
+        instructions.Append(instructions.Create(OpCodes.Call, equality));
+        instructions.Append(instructions.Create(OpCodes.Brfalse, ordinary));
+        instructions.Append(instructions.Create(OpCodes.Ldarg_0));
+        instructions.Append(instructions.Create(OpCodes.Call, special));
+        instructions.Append(instructions.Create(OpCodes.Ret));
+        instructions.Append(ordinary);
+        var options = all.Single(t => t.FullName == "Yarn.Unity.OptionsPresenter/<RunOptionsAsync>d__18")
+            .Methods.Single(m => m.Name == "MoveNext" && m.HasBody);
+        void Replace(MethodDefinition method, int offset, string expected, MethodDefinition replacement) {
+            var ins = method.Body.Instructions.Single(i => i.Offset == offset);
+            if (ins.OpCode.Code != Code.Callvirt || (ins.Operand as MethodReference)?.FullName != expected)
+                throw new InvalidOperationException("Unexpected Alexander presenter consumer");
+            var key = method.FullName + "#" + method.Body.Instructions.IndexOf(ins);
+            specialSites.Add(key, (expected, replacement.FullName));
+            ins.OpCode = OpCodes.Call;
+            ins.Operand = replacement;
+        }
+        Replace(presenter, 0x00af, BodyGetter, body);
+        Replace(presenter, 0x00c2, BodyGetter, body);
+        Replace(presenter, 0x00e0, Getter, helper);
+        Replace(options, 0x0208, TextGetter, special);
+        Replace(options, 0x0223, Getter, helper);
+        Replace(options, 0x0243, BodyGetter, body);
+        Replace(options, 0x0282, BodyGetter, body);
+    } else instructions.Append(instructions.Create(OpCodes.Ldarg_0));
     instructions.Append(instructions.Create(OpCodes.Ldfld, textId));
     foreach (var pair in inlineIds) {
         instructions.Append(instructions.Create(OpCodes.Dup));
@@ -234,6 +303,11 @@ Dictionary<string, string> Bodies(ModuleDefinition source, bool patched) {
                     (patched && (ins.OpCode.Code != Code.Call || target != expectedHelper)))
                     throw new InvalidOperationException("Unexpected speaker call-site rewrite");
                 text.Append("<verified-speaker-call>;");
+            } else if (specialSites.TryGetValue(siteKey, out var change)) {
+                if (ins.OpCode.Code != (patched ? Code.Call : Code.Callvirt) ||
+                    (ins.Operand as MethodReference)?.FullName != (patched ? change.After : change.Before))
+                    throw new InvalidOperationException("Unexpected Alexander call-site rewrite");
+                text.Append("<verified-alexander-call>;");
             } else if (fallbackSites.Contains(siteKey)) {
                 if (ins.OpCode.Code != Code.Ldstr || !Equals(ins.Operand, patched ? fallback : originalFallback))
                     throw new InvalidOperationException("Unexpected fallback rewrite");
@@ -268,7 +342,8 @@ if (includeInline) {
     if (runtimeCalls.Length != 2 || runtimeCalls[0].DeclaringType.Scope.Name != runtimeAssembly ||
         runtimeCalls[1].DeclaringType.Scope.Name != runtimeAssembly ||
         !bridge.Body.Instructions.Where(i => i.OpCode.Code == Code.Ldstr).Select(i => (string)i.Operand)
-            .SequenceEqual(inlineIds.Keys.Concat(expectedLiterals)))
+            .SequenceEqual((alexanderBody == null ? Array.Empty<string>() : new[] { AlexanderId })
+                .Concat(inlineIds.Keys).Concat(expectedLiterals)))
         throw new InvalidOperationException("Inline bridge read-back failed");
     expectedReferences.Add(rebuilt.AssemblyReferences.Single(a => a.Name == runtimeAssembly).FullName);
 }
@@ -286,7 +361,7 @@ try {
 }
 var report = new { schema = 1, testOnly = !production, platform = args[0],
     sourceSha256 = expectedHashes[args[0]], outputSha256 = Sha(outputBytes), mappedSpeakers = map.Keys.OrderBy(x => x).ToArray(),
-    changedDisplayCallSites = siteKeys.OrderBy(x => x).ToArray(), verifiedExistingMethodBodies = before.Count,
+    changedDisplayCallSites = siteKeys.Concat(specialSites.Keys).OrderBy(x => x).ToArray(), verifiedExistingMethodBodies = before.Count,
     limitations = "Synthetic test-only DLL. No runtime, font, package, metadata-wide equivalence or nonstandard colon-source support is established." };
 if (includeInline) {
     var details = JsonSerializer.SerializeToNode(report).AsObject();
@@ -296,6 +371,7 @@ if (includeInline) {
         details.Remove("limitations");
         details["locale"] = args[7];
         details["fallbackChanged"] = fallback != originalFallback;
+        if (alexanderBody != null) details["alexanderBodyId"] = AlexanderId;
     }
     Console.WriteLine(details.ToJsonString());
 } else Console.WriteLine(JsonSerializer.Serialize(report));

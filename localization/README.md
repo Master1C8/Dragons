@@ -240,6 +240,15 @@ the original platform's `YarnSpinner.Unity.dll` SHA-256 and include
 letters. Dialogue locale files still keep the exact English prefixes
 `Ryan: ` and `Conrad: ` including their whitespace.
 
+For the Alexander introduction, the speaker locale can also carry
+`line:4b36ea4e` with the exact English source
+`The most prestigious college hosting prestigious professors like me:`.
+Supply its translated sentence as plain text ending with a colon. The
+player adapter shows it in the dialogue body, with the name field hidden.
+Keep the original line in the Yarn table so the source ID and parsed
+identity remain available to the game. This record needs the final
+editorial decision for the whole introduction.
+
 Build the patcher and the player runtime from the same checkout. Use fresh
 absolute output directories and the original platform's Managed directory.
 

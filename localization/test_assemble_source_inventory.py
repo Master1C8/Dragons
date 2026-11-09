@@ -38,8 +38,10 @@ class SourceInventoryUnitTests(unittest.TestCase):
         sample = entries['yarn:line:4b36ea4e']
         self.assertEqual((sample['node'], sample['instructionIndex']), ('Alexander_2', 14))
         self.assertEqual(sample['source']['macos'], sample['source']['windows'])
-        self.assertEqual(sample['role'], 'preserve-exactly-pending-source-role')
-        self.assertEqual(sum(r['role'] == 'preserve-exactly-pending-source-role' for r in result['entries']), 16)
+        self.assertEqual(sample['role'], 'special-dialogue-display-candidate')
+        self.assertEqual(sample['localeInput'], 'speaker-locale')
+        self.assertEqual(sample['preserveExactValue'], sample['source'])
+        self.assertEqual(sum(r['role'] == 'preserve-exactly-pending-source-role' for r in result['entries']), 15)
         self.assertEqual(sum(r.get('preserveExactPrefix') is not None for r in result['entries']), 18)
         self.assertEqual(entries['yarn:line:a99c515c']['role'], 'dialogue-candidate')
         self.assertEqual(entries['yarn:line:ce77a00e']['role'], 'choice-candidate')

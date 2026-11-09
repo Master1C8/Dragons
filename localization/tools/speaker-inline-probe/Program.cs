@@ -6,9 +6,9 @@ using Dragons.SyntheticSpeakerInline;
 using Yarn.Markup;
 using Yarn.Unity;
 
-bool production = args.Length == 6;
-if (args.Length is not (2 or 5 or 6) || args[0] is not ("macos" or "windows"))
-    throw new ArgumentException("Usage: speaker-inline-probe macos|windows PAIRED_YARN_JSON [PATCHED_SHA256 INLINE_RUNTIME_DLL INLINE_RUNTIME_SHA256 [FALLBACK_TEXT]]");
+bool production = args.Length >= 6;
+if (args.Length is not (2 or 5 or 6 or 7) || args[0] is not ("macos" or "windows"))
+    throw new ArgumentException("Usage: speaker-inline-probe macos|windows PAIRED_YARN_JSON [PATCHED_SHA256 INLINE_RUNTIME_DLL INLINE_RUNTIME_SHA256 [FALLBACK_TEXT [ALEXANDER_BODY]]]");
 
 string Hash(string path) => Convert.ToHexString(SHA256.HashData(File.ReadAllBytes(path))).ToLowerInvariant();
 void Require(bool condition, string message)
@@ -32,12 +32,13 @@ LocalizedLine ReadLine(string id, string source) =>
     new() { TextID = id, RawText = source, Text = parser.ParseString(source, "en", true) };
 MethodInfo? bridge = null;
 MethodInfo? nameBridge = null;
+Type? displayType = null;
 if (patched)
 {
     Require(Hash(args[3]) == args[4], "Inline runtime fingerprint mismatch");
     AssemblyLoadContext.Default.LoadFromAssemblyPath(Path.GetFullPath(args[3]));
     string helper = production ? "Yarn.Unity.VnSpeakerDisplay" : "Yarn.Unity.VnSyntheticSpeakerDisplay";
-    var displayType = typeof(LocalizedLine).Assembly.GetType(helper, true)!;
+    displayType = typeof(LocalizedLine).Assembly.GetType(helper, true)!;
     bridge = displayType.GetMethod("GetInlineText", BindingFlags.NonPublic | BindingFlags.Static)
         ?? throw new InvalidOperationException("Missing injected inline bridge");
     if (production)
@@ -140,7 +141,45 @@ if (patched)
     CheckUnchanged(ReadLine("line:unknown", "Ryan: Test"));
     CheckUnchanged(ReadLine("line:f5f5b815", "Conrad: Test"));
 }
-Console.WriteLine(JsonSerializer.Serialize(new { schema = 1, testOnly = true, platform = args[0],
+if (args.Length == 7)
+{
+    const string id = "line:4b36ea4e";
+    var english = source.RootElement.GetProperty("scenes").GetProperty("Alexander_2").EnumerateArray()
+        .Single(row => row.GetProperty("id").GetString() == id).GetProperty("source").GetProperty(args[0]).GetString()!;
+    var line = ReadLine(id, english);
+    var original = line.Text;
+    Require(line.CharacterName == english[..^1] && line.TextWithoutCharacterName.Text == "",
+        "Original Alexander parse changed");
+    MarkupParseResult ReadView(string method, LocalizedLine item) =>
+        (MarkupParseResult)displayType!.GetMethod(method, BindingFlags.NonPublic | BindingFlags.Static)!
+            .Invoke(null, new object[] { item })!;
+    foreach (string method in new[] { "GetAlexanderText", "GetInlineText", "GetBodyText" })
+    {
+        var result = ReadView(method, line);
+        Require(result.Text == args[6] && result.Attributes.Count == 0, $"Incorrect Alexander view: {method}");
+    }
+    Require(nameBridge!.Invoke(null, new object[] { line }) == null, "Alexander text leaked into the name");
+    Require(line.TextID == id && line.RawText == english && line.CharacterName == english[..^1] &&
+        line.TextWithoutCharacterName.Text == "" && ReferenceEquals(original.Attributes, line.Text.Attributes),
+        "Alexander source line changed");
+    CheckUnchanged(ReadLine("line:other", english));
+    CheckUnchanged(ReadLine(id, english.Replace("college", "university")));
+    var wrongParsed = ReadLine(id, english.Replace("college", "university"));
+    wrongParsed.RawText = english;
+    CheckUnchanged(wrongParsed);
+    var ordinary = ReadLine("line:f5f5b815", "Ryan: Test");
+    Require(ReadView("GetBodyText", ordinary).Text == "Test" &&
+        ReferenceEquals(ReadView("GetAlexanderText", ordinary).Attributes, ordinary.Text.Attributes),
+        "Special body helper changed an ordinary speaker");
+}
+var report = new { schema = 1, testOnly = true, platform = args[0],
     sourceYarnUnitySha256 = unityHash, mappedIds, markupControls = patched ? 2 : 3,
     unchangedControls = patched ? 8 : 6, executedPatchedBridge = patched, loadedUnityHash,
-    inlineRuntimeSha256 = patched ? args[4] : null }));
+    inlineRuntimeSha256 = patched ? args[4] : null };
+if (args.Length == 7)
+{
+    var specialReport = JsonSerializer.SerializeToNode(report)!.AsObject();
+    specialReport["alexanderBodyVerified"] = true;
+    Console.WriteLine(specialReport.ToJsonString());
+}
+else Console.WriteLine(JsonSerializer.Serialize(report));

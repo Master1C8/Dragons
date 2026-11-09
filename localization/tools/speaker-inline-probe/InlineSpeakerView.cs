@@ -14,9 +14,26 @@ public static class InlineSpeakerView
     {
         if (ReferenceEquals(view.Attributes, original.Text.Attributes))
             return original.CharacterName;
+        if (view.Attributes.Count == 0)
+            return null;
         var character = view.Attributes.Single(attribute => attribute.Name == "character");
         return character.TryGetProperty("name", out string? name) ? name : original.CharacterName;
     }
+
+    public static MarkupParseResult CreateAlexanderBody(LocalizedLine line, string source, string body)
+    {
+        var original = line.Text;
+        if (line.TextID != "line:4b36ea4e" || line.RawText != source || original.Text != source ||
+            line.CharacterName != source[..^1] || original.Attributes.Count != 1)
+            return original;
+        var character = original.Attributes[0];
+        if (character.Name != "character" || character.Position != 0 || character.Length != source.Length)
+            return original;
+        return new MarkupParseResult(body, new List<MarkupAttribute>());
+    }
+
+    public static MarkupParseResult BodyFromView(MarkupParseResult view, LocalizedLine original) =>
+        ReferenceEquals(view.Attributes, original.Text.Attributes) ? original.TextWithoutCharacterName : view;
 #endif
 
     public static MarkupParseResult Create(LocalizedLine line, string expectedName, string displayName)

@@ -11,12 +11,21 @@ COMPANION = 'Dragons.SpeakerPresentation.dll'
 SOURCE_NAMES = {'speaker-ryan': 'Ryan', 'speaker-conrad': 'Conrad'}
 ROOT = Path(__file__).resolve().parent.parent
 PREFIX_MANIFEST = ROOT / 'localization/evidence/yarn-protected-partial-20261107.json'
+ALEXANDER = 'line:4b36ea4e'
 
 
 def prepare(platform, source, locale_file, requested, tool, runtime, runtime_sha, *, fallback_locale=None):
     expected = managed_fallback.source_digest(platform, source)
-    locale, names = dl.read_locale(locale_file, list(SOURCE_NAMES), list(SOURCE_NAMES.values()),
+    manifest = json.loads(PREFIX_MANIFEST.read_text(encoding='utf-8'))
+    alexander_source, = [row['expected'][platform] for row in manifest['fullValueProtection']
+                         if row['id'] == ALEXANDER]
+    sources = SOURCE_NAMES | {ALEXANDER: alexander_source}
+    locale, names = dl.read_locale(locale_file, list(sources), list(sources.values()),
                                    expected, yarn_semantics=False)
+    alexander = names.pop(ALEXANDER, None)
+    if alexander is not None and (not alexander.endswith(':') or not alexander[:-1].strip() or
+                                  any(not c.isprintable() or c in '<>[]{}' for c in alexander)):
+        raise ValueError('Alexander presentation requires plain text ending with a colon')
     if locale != requested or names.keys() != SOURCE_NAMES.keys():
         raise ValueError('speaker locale must match the request and contain both source names')
     # Match the game-side label guard. The current two speakers are single words.
@@ -41,17 +50,22 @@ def prepare(platform, source, locale_file, requested, tool, runtime, runtime_sha
                                        'map': {source_name: names[key] for key, source_name in SOURCE_NAMES.items()}}),
                            encoding='utf-8')
         output = stage / managed_fallback.ASSEMBLY
-        run = subprocess.run(['dotnet', str(Path(tool).resolve(strict=True)), platform, str(Path(source).resolve()),
-                              str(mapping), str(output), str(staged_runtime), runtime_sha, '--locale', locale, fallback],
+        command = ['dotnet', str(Path(tool).resolve(strict=True)), platform, str(Path(source).resolve()),
+                   str(mapping), str(output), str(staged_runtime), runtime_sha, '--locale', locale, fallback]
+        if alexander is not None:
+            command.append(alexander)
+        run = subprocess.run(command,
                              cwd=ROOT, check=True, capture_output=True, text=True)
         report = json.loads(run.stdout, object_pairs_hook=dl.unique_object)
         data = output.read_bytes()
-    ids = sorted(row['id'] for row in json.loads(PREFIX_MANIFEST.read_text())['prefixProtection'])
+    ids = sorted(row['id'] for row in manifest['prefixProtection'])
     if (report.get('testOnly') is not False or report.get('platform') != platform or report.get('locale') != locale
             or report.get('sourceSha256') != expected or report.get('outputSha256') != dl.sha(data)
             or report.get('inlineRuntimeSha256') != runtime_sha or report.get('inlineIds') != ids
             or report.get('mappedSpeakers') != sorted(SOURCE_NAMES.values())
-            or len(report.get('changedDisplayCallSites', ())) != 3 or report.get('verifiedExistingMethodBodies') != 717
+            or len(report.get('changedDisplayCallSites', ())) != (10 if alexander is not None else 3)
+            or report.get('alexanderBodyId') != (ALEXANDER if alexander is not None else None)
+            or report.get('verifiedExistingMethodBodies') != 717
             or report.get('fallbackChanged') is not (fallback != original_fallback)):
         raise ValueError('unexpected speaker presentation verification receipt')
     return {managed_fallback.ASSEMBLY: data, COMPANION: runtime_bytes}, report

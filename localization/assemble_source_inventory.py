@@ -9,6 +9,7 @@ import dialogue_locale as dl
 import credit_name_preservation as credits
 import ui_preservation
 import managed_source_roles as managed
+from speaker_locale import ALEXANDER
 
 FILES = {
     'yarn-paired-scenes.json': '52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995',
@@ -270,13 +271,17 @@ def build(work, roles_path):
                     dl.sha(row['source'][p].encode('utf-8')) != prefixes[key]['sourceSha256'][p]
                     for p in ('macos', 'windows'))):
                 raise ValueError('protected Yarn prefix binding changed')
-            put(records, {'id': 'yarn:' + key, 'family': 'yarn',
-                          'role': ('preserve-exactly-pending-source-role' if key in full else
-                                   reviewed_roles.get(key, 'needs-classification')),
-                          'node': node, 'instructionIndex': row['instructionIndex'], 'kind': row['kind'],
-                          'instruction': {k: row[k] for k in ('substitutionCount', 'destination', 'hasCondition') if k in row},
-                          'preserveExactPrefix': prefixes[key]['expectedPrefix'] if key in prefixes else None,
-                          'source': row['source'], 'location': {p: row['id'] for p in ('macos', 'windows')}})
+            role = ('preserve-exactly-pending-source-role' if key in full else
+                    reviewed_roles.get(key, 'needs-classification'))
+            record = {'id': 'yarn:' + key, 'family': 'yarn', 'role': role,
+                      'node': node, 'instructionIndex': row['instructionIndex'], 'kind': row['kind'],
+                      'instruction': {k: row[k] for k in ('substitutionCount', 'destination', 'hasCondition') if k in row},
+                      'preserveExactPrefix': prefixes[key]['expectedPrefix'] if key in prefixes else None,
+                      'source': row['source'], 'location': {p: row['id'] for p in ('macos', 'windows')}}
+            if key == ALEXANDER:
+                record.update(role='special-dialogue-display-candidate',
+                              preserveExactValue=full[key]['expected'], localeInput='speaker-locale')
+            put(records, record)
     if len(records) != scenes['sourceLineCount']:
         raise ValueError('Yarn count mismatch')
     if not (full.keys() | prefixes.keys()) <= {key.removeprefix('yarn:') for key in records}:

@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v39-20261110.json`
-has SHA-256 `0fd2ff9d86e4cb4646d7db5187b2fc78f50db5c5e9921105de53f11989de4506`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v40-20261110.json`
+has SHA-256 `051e05fe6113e44a909547a5036f183c2ed2a88c8f1e9dc4efb6df482f03ce90`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -21,6 +21,11 @@ records, not visible phrases, completed translations,
 or a localization denominator. Each record retains its family, source values,
 platform locations and current provisional role; Yarn records also retain
 their node, instruction index and available option/substitution attributes.
+The v40 recipe changes only the Alexander introduction record,
+`yarn:line:4b36ea4e`. It identifies the presentation text as a translation
+candidate in the speaker locale and retains the exact Yarn table value
+on both builds. Two v40 outputs reproduced byte-for-byte. See the
+[paired display evidence](alexander-colon-display-20261110.md).
 The v3 recipe additionally pins input-action reports and identifies 56
 source-bound input-control occurrences as preserve-exactly; see
 `input-action-preservation-20261107.md`. The v4 recipe additionally binds 16

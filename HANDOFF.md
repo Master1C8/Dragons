@@ -165,7 +165,7 @@ The v22 managed classification added 134 exact-preserve roles for save keys, JSO
 
 The provisional union marks 56 embedded input-control occurrences across the two builds preserve-exactly, backed by verified JSON loading and map/action lookup instructions. The macOS builder now also checks all 170 source DLLs against the signed staging app. The standalone verifier confirmed all 172 DLLs in the repair-only Windows copy. Visible control hints and the complete preservation contract remain open. See [managed assembly preservation](localization/evidence/managed-assembly-preservation-20261109.md) and [input controls](localization/evidence/input-action-preservation-20261107.md).
 
-The union now also records 16 temporarily exact Yarn values and 18 exact speaker prefixes, source-bound in `localization/evidence/yarn-protected-partial-20261107.json`. These are partial guards, not a complete preservation manifest or a solution for the long colon-ended sentence. See `localization/evidence/yarn-protection-inventory-20261107.md`.
+The source-bound Yarn inventory records 16 exact table values and 18 exact speaker prefixes. v40 keeps the Alexander table value exact and records the same ID as a display translation candidate in the speaker locale. The adapter passed the paired synthetic test with a two-line Cyrillic body, a hidden speaker field and stock progression to `Alexander!` in the Conrad fixture. The final wording and both actual Alexander choices remain open. See [the partial protection inventory](localization/evidence/yarn-protection-inventory-20261107.md) and [the display adapter evidence](localization/evidence/alexander-colon-display-20261110.md).
 
 ## Scope and process binding
 
