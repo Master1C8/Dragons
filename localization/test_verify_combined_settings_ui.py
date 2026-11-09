@@ -32,7 +32,7 @@ class CombinedSettingsVerificationTests(unittest.TestCase):
                     setting_doc = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': digest,
                                    'lines': {option_id: {'source': 'On', 'text': 'ЖЮЯ 427'}}}
                     ui_doc = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': digest,
-                              'lines': {ui_key: {'source': 'Enter text...', 'text': 'ЖЮЯ 501'}}}
+                              'lines': {ui_key: {'source': 'Enter text...', 'text': 'Enter text...'}}}
                     setting, ui, candidate = (root / f'{platform}-{x}' for x in ('settings.json', 'ui.json', 'candidate.assets'))
                     setting.write_text(json.dumps(setting_doc, ensure_ascii=False), encoding='utf-8')
                     ui.write_text(json.dumps(ui_doc, ensure_ascii=False), encoding='utf-8')
@@ -45,12 +45,12 @@ class CombinedSettingsVerificationTests(unittest.TestCase):
                     report = verifier.verify(platform, source, candidate, 'ru', setting, ui)
                     self.assertEqual(report['expectedEntries'], {'settings': 1, 'ui': 1})
                     self.assertEqual(report['candidateAssetSha256'], dl.sha(candidate.read_bytes()))
-                    with self.assertRaisesRegex(ValueError, 'candidate object differs from expected'):
-                        verifier.verify(platform, source, candidate, 'ru', setting, None)
+                    settings_only = verifier.verify(platform, source, candidate, 'ru', setting, None)
+                    self.assertEqual(settings_only['expectedEntries'], {'settings': 1, 'ui': 0})
                     wrong_ui = root / f'{platform}-wrong-ui.json'
                     ui_doc['lines'][ui_key]['text'] = 'ЖЮЯ 502'
                     wrong_ui.write_text(json.dumps(ui_doc, ensure_ascii=False), encoding='utf-8')
-                    with self.assertRaisesRegex(ValueError, 'candidate object differs from expected'):
+                    with self.assertRaisesRegex(ValueError, 'protected UI text must remain exact'):
                         verifier.verify(platform, source, candidate, 'ru', setting, wrong_ui)
                     with self.assertRaisesRegex(ValueError, 'settings locale does not match requested locale'):
                         verifier.verify(platform, source, candidate, 'uk', setting, ui)

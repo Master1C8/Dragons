@@ -13,6 +13,7 @@ from UnityPy.helpers.TypeTreeNode import TypeTreeNode
 
 import dialogue_locale as dl
 import ui_locale as ui
+import ui_preservation
 
 MANIFEST = Path(__file__).parent / 'evidence/font-roles-choices-20261106.json'
 MANIFEST_HASH = 'a2610376c590a4ea28a16b6224fc3c5f11f52ba38db3e0d047ebc537d619ca1b'
@@ -168,8 +169,8 @@ def patch_into(source_data, target, prepared, prior_ui=None):
     expected_before = dict(before)
     if prior_ui is not None:
         _, rows = ui.scan(source_data, ASSET)
-        keys = list(rows)
-        code, ui_text = dl.read_locale(prior_ui, keys, [rows[k][2] for k in keys], SOURCE_HASH, yarn_semantics=False)
+        source = {key: row[2] for key, row in rows.items()}
+        code, ui_text = ui_preservation.read_locale('macos', ASSET, prior_ui, source, SOURCE_HASH)
         if code != locale:
             raise ValueError('prior UI locale does not match settings locale')
         for key, text in ui_text.items():

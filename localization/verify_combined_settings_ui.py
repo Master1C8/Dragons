@@ -12,6 +12,7 @@ import dialogue_locale as dl
 import inventory_yarn_bindings as bindings
 import settings_locale as settings
 import ui_locale as mac_ui
+import ui_preservation
 import windows_ui_locale as win_ui
 
 
@@ -95,9 +96,8 @@ def verify(platform, source_data, candidate, requested, settings_locale, ui_loca
                 raise ValueError(f'candidate setting tree differs: {path_id}')
         counts['settings'] = len(translations)
     if ui_locale is not None:
-        ui_keys = list(ui_rows)
-        ui_values = [ui_rows[k][2] for k in ui_keys]
-        code, translations = dl.read_locale(ui_locale, ui_keys, ui_values, asset_hash, yarn_semantics=False)
+        ui_source = {key: row[2] for key, row in ui_rows.items()}
+        code, translations = ui_preservation.read_locale(platform, asset, ui_locale, ui_source, asset_hash)
         if code != requested:
             raise ValueError('UI locale does not match requested locale')
         for key, text in translations.items():

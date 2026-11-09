@@ -8,6 +8,7 @@ import UnityPy
 import compare_yarn_versions as versions
 import dialogue_locale as dl
 import ui_locale as mac_ui
+import ui_preservation
 import windows_ui_locale as win_ui
 import verify_yarn_preservation as common
 import yarn_transition_repair as transitions
@@ -45,9 +46,10 @@ def verify(platform, source_data, candidate, requested, yarn_locale, ui_locale, 
         expected[identity] = raw
         counts['yarn'] = len(translations)
     if ui_locale is not None:
-        ui_keys = list(rows)
-        ui_values = [rows[k][2] for k in ui_keys]
-        code, translations = dl.read_locale(ui_locale, ui_keys, ui_values, spec['assetSha256'], yarn_semantics=False)
+        ui_source = {key: row[2] for key, row in rows.items()}
+        code, translations = ui_preservation.read_locale(
+            platform, 'sharedassets1.assets', ui_locale, ui_source, spec['assetSha256'],
+        )
         if code != requested:
             raise ValueError('UI locale does not match requested locale')
         for key, value in translations.items():

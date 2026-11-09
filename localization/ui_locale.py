@@ -4,7 +4,7 @@ import json
 import os
 
 import dialogue_locale as dl
-import credit_name_preservation as credits
+import ui_preservation
 
 GLOBAL_HASH = '391640e8e7df097a0d377c7a16552975d4821688841ea3460ec99587f4061d9e'
 ASSETS = {
@@ -63,10 +63,8 @@ def export(data_dir, name, path):
 def patch_into(source_dir, name, locale_file, requested, target, dialogue_object=None, *, repaired_project=None):
     import UnityPy
     original, rows = scan(source_dir, name)
-    keys = list(rows)
-    values = [rows[k][2] for k in keys]
-    locale, translations = dl.read_locale(locale_file, keys, values, ASSETS[name], yarn_semantics=False)
-    credits.validate('macos', name, dict(zip(keys, values)), translations)
+    source = {key: row[2] for key, row in rows.items()}
+    locale, translations = ui_preservation.read_locale('macos', name, locale_file, source, ASSETS[name])
     if locale != requested:
         raise ValueError(f'UI locale {locale} does not match {requested}')
     target = Path(target)

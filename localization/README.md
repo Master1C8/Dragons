@@ -180,6 +180,12 @@ It is an inventory, not a classified translation list. Review each candidate
 and preserve runtime values and proper names. Settings, code-generated text,
 other UI types and texture lettering are not covered by this mechanism.
 
+Both UI builders read the same source-pinned preservation roles as the shared
+inventory. Leave protected fields out of the locale input or supply the exact
+source value. The current checks cover contributor names, version placeholders,
+dialogue presenter templates, settings prefabs and development-menu labels.
+The combined-asset verifiers apply the same rules.
+
 ## Optional settings labels and choices
 
 Settings labels and dropdown choices are stored in separate scriptable objects;

@@ -12,6 +12,7 @@ import tempfile
 
 import dialogue_locale as dl
 import ui_locale as ui
+import ui_preservation
 import verify_managed_assemblies as managed
 import yarn_transition_repair as transitions
 
@@ -113,7 +114,8 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
             if file.is_symlink() or not file.is_file() or file.suffix != '.json' or name not in ui.ASSETS:
                 raise ValueError(f'unexpected UI locale file: {file.name}')
             _, rows = ui.scan(source / 'Contents/Resources/Data', name)
-            code, _ = dl.read_locale(file, list(rows), [r[2] for r in rows.values()], ui.ASSETS[name], yarn_semantics=False)
+            ui_source = {key: row[2] for key, row in rows.items()}
+            code, _ = ui_preservation.read_locale('macos', name, file, ui_source, ui.ASSETS[name])
             if code != requested:
                 raise ValueError(f'UI locale {code} does not match {requested}')
             ui_files[name] = file

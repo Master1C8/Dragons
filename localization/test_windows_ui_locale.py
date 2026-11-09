@@ -96,8 +96,9 @@ class WindowsUIAdapterTests(unittest.TestCase):
         }
         for index, (asset, (key, source)) in enumerate(samples.items()):
             with self.subTest(asset=asset):
+                expected = source if asset == 'sharedassets0.assets' else f'ЖЮЯ {index}'
                 doc = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': mapping.WINDOWS_ASSETS[asset],
-                       'lines': {key: {'source': source, 'text': f'ЖЮЯ {index}'}}}
+                       'lines': {key: {'source': source, 'text': expected}}}
                 locale = self.root / f'sample-{index}.json'
                 locale.write_text(json.dumps(doc, ensure_ascii=False), encoding='utf-8')
                 output = self.root / f'sample-{index}.asset'
@@ -105,7 +106,7 @@ class WindowsUIAdapterTests(unittest.TestCase):
                 self.assertEqual(report['changedFields'], 1)
                 objects = {o.path_id: o for o in UnityPy.load(output.read_bytes()).objects}
                 text, _ = dl.read_string(objects[int(key.split('#')[1])].get_raw_data(), 88)
-                self.assertEqual(text, f'ЖЮЯ {index}')
+                self.assertEqual(text, expected)
 
     def make_combined_inputs(self):
         spec = versions.BUILDS['windows']
@@ -196,7 +197,7 @@ class WindowsUIAdapterTests(unittest.TestCase):
     def make_settings_inputs(self):
         asset = 'sharedassets0.assets'
         ui = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': mapping.WINDOWS_ASSETS[asset],
-              'lines': {'sharedassets0.assets#661': {'source': 'Enter text...', 'text': 'ЖЮЯ 501'}}}
+              'lines': {'sharedassets0.assets#661': {'source': 'Enter text...', 'text': 'Enter text...'}}}
         setting = {'schema': 1, 'locale': 'ru', 'sourceObjectSha256': mapping.WINDOWS_ASSETS[asset],
                    'lines': {'sharedassets0.assets#605:label': {'source': 'Anti-aliasing', 'text': 'ЖЮЯ 427'},
                              'sharedassets0.assets#605:option:1': {'source': 'On', 'text': 'ЪъЬь 431'}}}
@@ -219,10 +220,8 @@ class WindowsUIAdapterTests(unittest.TestCase):
         after = {k: o.get_raw_data() for k, o in objects.items()}
         self.assertEqual(before.keys(), after.keys())
         changed = {k for k in before if before[k] != after[k]}
-        self.assertEqual(changed, {(605, 'MonoBehaviour'), (661, 'MonoBehaviour')})
-        ui_raw = before[(661, 'MonoBehaviour')]
-        _, end = dl.read_string(ui_raw, 88)
-        self.assertEqual(after[(661, 'MonoBehaviour')], ui_raw[:88] + dl.write_string('ЖЮЯ 501') + ui_raw[end:])
+        self.assertEqual(changed, {(605, 'MonoBehaviour')})
+        self.assertEqual(after[(661, 'MonoBehaviour')], before[(661, 'MonoBehaviour')])
         generator = adapter.windows_settings.bindings.generator(SOURCE, 'windows')
         _, _, schema = adapter.windows_settings.settings.nodes_for(objects[(605, 'MonoBehaviour')], generator, {})
         tree = objects[(605, 'MonoBehaviour')].read_typetree(nodes=schema, check_read=True)

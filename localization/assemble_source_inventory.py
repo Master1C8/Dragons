@@ -7,6 +7,7 @@ from pathlib import Path
 
 import dialogue_locale as dl
 import credit_name_preservation as credits
+import ui_preservation
 import managed_source_roles as managed
 
 FILES = {
@@ -38,7 +39,7 @@ FILES = {
     'managed-context-windows-tmp.json': '0908f4de904023297d26fb79df3657e13298ee3c0e5d56986c9f195f106bb629',
     'managed-context-windows-unity-ui.json': 'ab87cd0c8164a241862771b6814941e1e3cd4038bb4b82b42333e93e99524f3b',
 }
-ROLES_SHA = '6219fb3d833a85a61e92392fe7c002738d8b105db61f3f39d82f27153ecfefdc'
+ROLES_SHA = ui_preservation.ROLES_SHA
 INPUT_ACTION_SHA = {
     'macos': '6272020c5766750fe68af6c6601c8c70c6830bc47b9a558af9b20a124d2f6daf',
     'windows': 'dd06623f942b4b5619a278f51ba7dc9c6de5845752d7776e4d06c7b86455a998',
@@ -296,14 +297,8 @@ def build(work, roles_path):
         role = row['provisionalRole']
         if win['id'] in protected_names:
             role = 'preserve-exactly-credit-name'
-        elif role == 'version-display-needs-consumer-review':
-            role = 'preserve-exactly-version-placeholder'
-        elif role == 'dialogue-presenter-template-needs-consumer-review':
-            role = 'preserve-exactly-dialogue-presenter-template'
-        elif role == 'settings-prefab-template-needs-consumer-review':
-            role = 'preserve-exactly-settings-prefab-template'
-        elif role == 'cheat-menu-text-needs-visibility-review':
-            role = 'preserve-exactly-development-menu-text'
+        else:
+            role = ui_preservation.EXACT_ROLES.get(role, role)
         put(records, {'id': 'ui:' + dl.sha(path.encode('utf-8')), 'family': 'ui',
                       'role': role,
                       'asset': row['asset'], 'hierarchy': row['hierarchy'],

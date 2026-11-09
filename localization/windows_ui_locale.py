@@ -12,7 +12,7 @@ from pathlib import Path
 import UnityPy
 import compare_yarn_versions as versions
 import dialogue_locale as dl
-import credit_name_preservation as credits
+import ui_preservation
 import map_ui_hierarchy as ui_map
 import windows_settings_locale as windows_settings
 import yarn_transition_repair as transitions
@@ -85,18 +85,17 @@ def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale
           settings_locale_file=None, restore_yarn_transitions=False):
     target = safe_output(data, output)
     env, rows = scan(data, asset)
-    keys = list(rows)
-    values = [rows[k][2] for k in keys]
     if locale_file is None and dialogue_locale_file is None and settings_locale_file is None:
         raise ValueError('at least one locale input is required')
     if locale_file is None:
         code, translations = requested_locale, {}
     else:
-        code, translations = dl.read_locale(locale_file, keys, values,
-                                             ui_map.WINDOWS_ASSETS[asset], yarn_semantics=False)
+        source = {key: row[2] for key, row in rows.items()}
+        code, translations = ui_preservation.read_locale(
+            'windows', asset, locale_file, source, ui_map.WINDOWS_ASSETS[asset],
+        )
         if code != requested_locale:
             raise ValueError('requested UI locale does not match locale file')
-        credits.validate('windows', asset, dict(zip(keys, values)), translations)
     if dialogue_locale_file is not None and asset != 'sharedassets1.assets':
         raise ValueError('dialogue can be combined only with sharedassets1.assets')
     if restore_yarn_transitions and asset != 'sharedassets1.assets':

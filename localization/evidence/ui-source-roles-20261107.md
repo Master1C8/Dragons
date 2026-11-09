@@ -77,3 +77,23 @@ The runtime evidence is in
 | macOS observer receipt | `b62f7b7dbc2cc00ea938b010ed8519fea813669389341dd874e4db5495600420` |
 | Windows player log | `2f208ef8a502f284825dab8726f2c998145261141f8b45ab9b4b4579f290a0fe` |
 | Windows observer receipt | `5ee98976dad0d92f165b340a720365c975a0359c8b471d49f686d6d23a22a31d` |
+
+## Builder enforcement, 2026-11-10
+
+The shared role mapping now feeds the inventory, both normal UI builders,
+the macOS settings merge and the combined-asset verifiers. The builders
+check the role report fingerprint and each protected source value by
+platform and object ID before replacing text. This covers the four
+audited template groups (39 paired fields) and retains the existing
+34 contributor-name checks.
+
+The regression tests use both actual source builds. Each adapter rejects
+a changed value in each template group at the preservation guard, before
+publishing output. Exact template values remain accepted. The settings
+composition tests verify that the setting changes while the adjacent
+template object stays byte-identical. Separate corruption and read-back
+controls still reject changed objects and leave candidate bytes intact.
+
+The refactored inventory assembly reproduces v37 byte-for-byte. This
+enforces the audited UI roles and leaves the broader shared inventory and
+non-UI preservation work open.
