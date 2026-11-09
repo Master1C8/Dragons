@@ -237,6 +237,11 @@ missing-line fallback and four additional styled lines. The Yarn
 validator preserves occupied gradient and multi-size text regions.
 Both source builds have the gradient resources and rich-text targets.
 Russian wording and rendered acceptance remain open.
+The [Cyrillic typography runtime control](localization/evidence/styled-cyrillic-runtime-20261110.md)
+checks two original Yarn size tags and the gradient vertex colors in
+isolated macOS and Windows CrossOver gameplay copies. All 28
+glyph records match. It leaves final wording, actual choice
+prefab rendering and pixel readability open.
 The [paired font-role coverage check](localization/evidence/font-role-coverage-20261110.md)
 binds 98 macOS and 122 Windows TMP components to the original
 Liberation Sans fallback chain. The embedded font covers all 66

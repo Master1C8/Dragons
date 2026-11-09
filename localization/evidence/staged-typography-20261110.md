@@ -33,6 +33,9 @@ serialization of the inspected components. See the
 [TMP bindings](staged-typography-bindings-20261110.json).
 The check establishes serialized support. Final Russian wording,
 Unity rendering and fit remain pending.
+The [runtime follow-up](styled-cyrillic-runtime-20261110.md) separately
+checks stock dialogue sizing and gradient mesh data on synthetic
+Cyrillic samples.
 
 The v42 index rebuilt twice byte-for-byte using the command in
 the [initial index receipt](special-scene-index-v42-20261110.md).
