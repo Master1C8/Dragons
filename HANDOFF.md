@@ -20,8 +20,11 @@ Commit `3727bf3` adds 319 provisional Yarn role assignments across Ryan's later
 scenes and preserves the existing Russian draft for the same 14 changed IDs
 on both builds. The reproduced v10 inventory SHA-256 is
 `afa2bf07fdc4ca5e5ecf138c862f0191c211874e415ea951a5c35a8cc8117834`.
-It still has 1,292 unclassified Yarn IDs. Both draft files passed source binding
-and preservation checks and await editorial review.
+Both draft files passed source binding and preservation checks and await
+editorial review. The v11 inventory adds 112 provisional roles for all nine
+dialogue targets named by `Conrad_3_8`, leaving 1,180 Yarn IDs unclassified.
+The v11 SHA-256 is
+`23cc5c0061bb9c83d6d62583924ccc6c334889dfab6f08f8707e3b87218cd838`.
 
 Both UI adapters now reject changes to 34 source-bound contributor-name fields in `level2`, while leaving credit descriptions separately translatable. The pinned manifest and both original builds were tested; see `localization/evidence/credit-name-preservation-20261107.md`. This is one bounded preservation safeguard, not a complete classification or a translated corpus.
 

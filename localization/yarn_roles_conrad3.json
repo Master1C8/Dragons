@@ -1,0 +1,263 @@
+{
+  "schema": 1,
+  "sourceExportSha256": "52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995",
+  "scope": "All line-bearing targets named directly by the pinned Conrad_3_8 level configuration. Roles reflect source function and preserve platform variants. Reachability and translation readiness remain separate.",
+  "groups": [
+    {
+      "node": "Conrad_Intro_3",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:39fd52f1",
+        "line:159c5c1f",
+        "line:20393ff6",
+        "line:b6093881",
+        "line:0c583118",
+        "line:9d458e88",
+        "line:78cc49e8",
+        "line:eefc4e9f",
+        "line:c29d4071",
+        "line:f7382398",
+        "line:db592d76"
+      ],
+      "reason": "Conrad greets the player, asks about the shipment and requests that the player open the gate."
+    },
+    {
+      "node": "Conrad_Intro_3",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:afcd5586",
+        "line:83ac5b68",
+        "line:9a68366f",
+        "line:0b7589ff",
+        "line:54ad4706",
+        "line:4d692a01"
+      ],
+      "reason": "Player choices vary the greeting, explain the shipment and respond to the request to open the gate."
+    },
+    {
+      "node": "Conrad_Intro_3",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:610824ef"
+      ],
+      "reason": "A standalone ellipsis is a dialogue beat at this point in the exchange."
+    },
+    {
+      "node": "Conrad_idle_3_1",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:83f511d2",
+        "line:12e8ae42",
+        "line:84d8a935"
+      ],
+      "reason": "Conrad's contextual reminders refer to the equipment, a pending interaction or opening the gate."
+    },
+    {
+      "node": "Conrad_idle_3_2",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:8ffedb47",
+        "line:19cedc30",
+        "line:a39fd5a9"
+      ],
+      "reason": "Conrad's contextual reminders and feedback include the Windows-only typo in the second line."
+    },
+    {
+      "node": "Conrad_Outro_3",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:d376acb9",
+        "line:4546abce",
+        "line:a0cf6cae",
+        "line:8cae6240",
+        "line:2f3b06de",
+        "line:035a0830",
+        "line:0477b0d7",
+        "line:67592de1",
+        "line:f1692a96",
+        "line:e8ad4791",
+        "line:52fc4e08",
+        "line:c4cc497f",
+        "line:55d1f6ef",
+        "line:266836f8",
+        "line:0a093816",
+        "line:3fac5bff",
+        "line:a99c5c88",
+        "line:14e0edf6",
+        "line:82d0ea81",
+        "line:730b1ca4",
+        "line:5f6a124a",
+        "line:6acf71a3"
+      ],
+      "reason": "Conrad reacts to the player's referral or personal invitation, then prepares to leave."
+    },
+    {
+      "node": "Conrad_Outro_3",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:36ff6bd9",
+        "line:7e9d40e6",
+        "line:1a9e6537",
+        "line:b90b01a9",
+        "line:956a0f47",
+        "line:9247b7a0",
+        "line:4b38230f",
+        "line:dd082478",
+        "line:c3e1f198",
+        "line:9c393f61",
+        "line:b058318f",
+        "line:13cd5511",
+        "line:85fd5266",
+        "line:e53b1bd3",
+        "line:fcff76d4",
+        "line:c95a153d"
+      ],
+      "reason": "Player choices include two route-unlock labels and follow-up replies. Preserve choice identities and the route explanation in each label."
+    },
+    {
+      "node": "Conrad_started_jerkoff_3",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:934a1d5a"
+      ],
+      "reason": "Conrad gives feedback during the current interaction."
+    },
+    {
+      "node": "Conrad_finished_jerkoff_3",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:496134bc",
+        "line:eaf45022",
+        "line:7cc45755",
+        "line:c6955ecc",
+        "line:c1b8e62b",
+        "line:3063100e",
+        "line:1c021ee0",
+        "line:8a321997",
+        "line:29a77d09",
+        "line:93f67490"
+      ],
+      "reason": "Conrad gives feedback and requests the mount. Keep the professional joke with its setup and punchline."
+    },
+    {
+      "node": "Conrad_finished_jerkoff_3",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:50a559bb",
+        "line:5788e15c",
+        "line:bf977a7e",
+        "line:05c673e7"
+      ],
+      "reason": "Player choices respond to Conrad's evaluation and later request. One choice sets up the professional joke."
+    },
+    {
+      "node": "Conrad_finished_jerkoff_3",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:a6531779"
+      ],
+      "reason": "A standalone ellipsis is a dialogue beat at this point in the exchange."
+    },
+    {
+      "node": "Conrad_placed_mount_3",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:cc6e7856",
+        "line:5a5e7f21",
+        "line:a7ca3ca8",
+        "line:1d9b3531",
+        "line:283e56d8",
+        "line:be0e51af",
+        "line:926f5f41",
+        "line:9542e7a6"
+      ],
+      "reason": "Conrad responds to seeing the mount. Keep the stretched speech and the two senses of dirty together."
+    },
+    {
+      "node": "Conrad_placed_mount_3",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:31fa3bdf",
+        "line:0372e0d1",
+        "line:8bab3246"
+      ],
+      "reason": "Player choices respond to Conrad's explanation and manner."
+    },
+    {
+      "node": "Conrad_placed_mount_3",
+      "kind": "line",
+      "role": "dialogue-punctuation-candidate",
+      "ids": [
+        "line:045f5836"
+      ],
+      "reason": "A standalone ellipsis is a dialogue beat at this point in the exchange."
+    },
+    {
+      "node": "Conrad_finished_mount_3",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:0d3b23da",
+        "line:9b0b24ad",
+        "line:215a2d34",
+        "line:14ff4edd",
+        "line:389e4033",
+        "line:3fb3f8d4",
+        "line:73ea230a",
+        "line:e5da247d",
+        "line:c9bb2a93",
+        "line:fc1e497a"
+      ],
+      "reason": "Conrad responds after using the mount. The dialogue order depends on previous activity and the next-node name differs across builds."
+    },
+    {
+      "node": "Conrad_finished_mount_3",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:b76a2a43",
+        "line:82cf49aa",
+        "line:aeae4744",
+        "line:a983ffa3",
+        "line:5f8b2de4",
+        "line:6a2e4e0d"
+      ],
+      "reason": "Player choices react to Conrad and select responses in the branch for unfinished activity."
+    },
+    {
+      "node": "Conrad_3_PhoneTutorial",
+      "kind": "line",
+      "role": "dialogue-candidate",
+      "ids": [
+        "line:b83ec453",
+        "line:bf137cb4",
+        "line:29237bc3",
+        "line:5a9abbd4"
+      ],
+      "reason": "The caller explains where to find the shipment and how to open and store the equipment."
+    },
+    {
+      "node": "Conrad_3_PhoneTutorial",
+      "kind": "option",
+      "role": "choice-candidate",
+      "ids": [
+        "line:2e0ec324",
+        "line:ccaabca3"
+      ],
+      "reason": "The player can express confusion or confirm the caller's instructions."
+    }
+  ]
+}

@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v9-20261107.json`
-has SHA-256 `7c9234f6c746ed26bcb1a012b84900e1bdbebff208654bd00870bca992790291`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v11-20261109.json`
+has SHA-256 `23cc5c0061bb9c83d6d62583924ccc6c334889dfab6f08f8707e3b87218cd838`.
 Its 5,204 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -60,6 +60,17 @@ visit nodes; see `ryan23-source-roles-20261107.md`. Both v9 outputs were
 byte-identical. Against v8
 (`52103dbf23391d57a907b889e1d06056b1ac7ca0c7907d89c5269e5b4b40e5d0`),
 exactly those 133 record roles changed; the other records stayed identical.
+
+The v10 recipe classifies 319 more Ryan IDs in commit `3727bf3`. The v11 recipe
+adds all 112 IDs in the nine dialogue targets named directly by
+`Conrad_3_8` in the pinned Windows level configuration. Both source columns
+were read, and the manifest separates 72 dialogue lines, 37 options and
+three standalone dialogue beats. It keeps the platform text variants and
+the wording of route-unlock labels bound to their own IDs. Comparing v11 with
+v10 changed exactly those 112 roles and retained the rest of the records
+byte-for-byte at the JSON value level. Two v11 runs were byte-identical.
+There are 1,180 Yarn IDs still awaiting classification. These are source
+roles, with runtime reachability and editorial decisions tracked separately.
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values remain unclassified, only five managed assemblies are

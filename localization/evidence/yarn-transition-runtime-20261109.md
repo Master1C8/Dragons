@@ -104,5 +104,31 @@ The original SHA-256 is
 the preview SHA-256 is
 `0dd6a37ef25cf861a5ce68de635dd7ffdbb7a37dad14f9fbce82fd7c97f88316`.
 
+## Equipment setup and background input
+
+The pinned Windows level and managed assembly bind the phone instruction to
+the real equipment path. `InteractableCrate.CanInteract` requires an equipped
+`Crowbar`. The level's `MountFrame_Socket (1)` (component `4046`) accepts the
+frame and sets `HasMountFrame` and `PlacedMount`. The other socket
+(component `4221`) requires `HasMountFrame`, sets `PlacedMountForUse`, and
+has the performance trigger. Both serialized components round-tripped exactly.
+The order matters for replay. `Conrad_finished_jerkoff_3` stores
+`$conrad_jerked_off_3` and, if the mount was already used, selects
+`Conrad_Outro_3`. `Conrad_finished_mount_3` stores
+`$conrad_used_mount_3` and, with the earlier activity completed, selects
+`Conrad_Outro` on Windows. Its `DONE` branch selects the restored
+`Conrad_OutroDone`. These are original instruction bindings, with actual
+player reachability still pending.
+
+The repair-only copy was reopened from the disposable slot. A guarded
+Windows `SendInput` helper accepted relative pointer events while the game
+owned foreground focus. Camera aim and mount placement were not established.
+The game was then hidden and left running at the owner's request. In that
+state the helper resolved foreground focus to the bottle's Explorer process
+and refused to send input. The background test therefore establishes safe
+refusal, while normal transition reachability remains open. Local logs and
+helper source are in the `playthrough-20261109.f7XBcc` directory under the
+builder-test work directory above.
+
 The repair remains opt-in. The source, renderer, glossary, and
 special-scene readiness gates remain open.
