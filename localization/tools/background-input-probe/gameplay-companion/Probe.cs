@@ -24,7 +24,10 @@ public static class Probe
     private static Component? mountCrate, insertCrate;
     private static Camera? playerCamera;
     private static float waitDeadline;
-    private static bool introStarted;
+    private static bool introStarted, introCompleted, dialogueCompleted, advanceDown;
+    private static int choiceIndex, optionClickPhase;
+    private static float nextInspect;
+    private static readonly string[] IntroChoices = { "line:83ac5b68", "line:0b7589ff", "line:4d692a01" };
     private static readonly Assembly Game = Assembly.Load("Assembly-CSharp");
 
     public static void Start()
@@ -102,13 +105,26 @@ public static class Probe
                     next += 3;
                     break;
                 case 11:
-
                     if (!introStarted && Time.realtimeSinceStartup < waitDeadline) return;
                     var dragonState = SceneStateType.GetMethod("GetDragonState", StaticMembers)?.Invoke(null, null);
                     Debug.Log($"VN-BG-INTRO started={introStarted} state={dragonState}");
                     if (!introStarted) throw new InvalidOperationException("The window input did not start Conrad's intro");
-                    Finish();
+                    waitDeadline = Time.realtimeSinceStartup + 65;
                     break;
+                case 12:
+                    if (dialogueCompleted && introCompleted)
+                    {
+                        if (choiceIndex != IntroChoices.Length)
+                            throw new InvalidOperationException("Intro completed without the expected choices");
+                        var state = SceneStateType.GetMethod("GetDragonState", StaticMembers)?.Invoke(null, null);
+                        Debug.Log($"VN-BG-INTRO-FINAL choices={choiceIndex} state={state}");
+                        Finish();
+                        break;
+                    }
+                    if (Time.realtimeSinceStartup >= waitDeadline)
+                        throw new InvalidOperationException("Ordinary intro input timed out");
+                    AdvanceIntro();
+                    return;
             }
             stage++;
         }
@@ -140,11 +156,105 @@ public static class Probe
                 if (node == "Conrad_Intro_3") introStarted = true;
             });
             if (type.GetField("onNodeComplete", InstanceMembers)?.GetValue(runner) is UnityEvent<string> complete)
-                complete.AddListener(node => Debug.Log($"VN-BG-YARN-COMPLETE {node}"));
+                complete.AddListener(node => {
+                    Debug.Log($"VN-BG-YARN-COMPLETE {node}");
+                    if (node == "Conrad_Intro_3") introCompleted = true;
+                });
+            if (type.GetField("onDialogueComplete", InstanceMembers)?.GetValue(runner) is UnityEvent dialogue)
+                dialogue.AddListener(() => {
+                    Debug.Log("VN-BG-YARN-DIALOGUE-COMPLETE");
+                    if (introCompleted) dialogueCompleted = true;
+                });
             listeners++;
         }
         if (listeners == 0) throw new InvalidOperationException("No original Yarn node event available");
         Debug.Log($"VN-BG-YARN-LISTENERS {listeners}");
+    }
+
+    private static void InspectDialogue()
+    {
+        var unity = Assembly.Load("YarnSpinner.Unity");
+        foreach (var name in new[] { "LinePresenter", "LineAdvancer", "OptionItem" })
+        {
+            var type = unity.GetType("Yarn.Unity." + name, throwOnError: true)!;
+            foreach (var item in UnityEngine.Object.FindObjectsByType(type, FindObjectsInactive.Include, FindObjectsSortMode.None).OfType<Behaviour>())
+            {
+                if (name == "LinePresenter")
+                {
+                    var text = type.GetField("lineText", InstanceMembers)?.GetValue(item);
+                    var shown = text?.GetType().GetProperty("text")?.GetValue(text) as string;
+                    var visible = text?.GetType().GetProperty("maxVisibleCharacters")?.GetValue(text);
+                    var group = type.GetField("canvasGroup", InstanceMembers)?.GetValue(item) as CanvasGroup;
+                    Debug.Log($"VN-BG-LINE active={item.isActiveAndEnabled} alpha={group?.alpha} visible={visible} text={shown?.Replace("\n", " ")}");
+                }
+                if (name == "LineAdvancer")
+                {
+                    var mode = type.GetField("inputMode", InstanceMembers)?.GetValue(item);
+                    var action = (type.GetField("nextLineAction", InstanceMembers)?.GetValue(item) as InputActionReference)?.action;
+                    Debug.Log($"VN-BG-ADVANCER active={item.isActiveAndEnabled} mode={mode} action={action?.actionMap?.name}/{action?.name} enabled={action?.enabled} controls={string.Join(",", action?.controls.Select(c => c.path) ?? Array.Empty<string>())}");
+                }
+                if (name == "OptionItem" && item.isActiveAndEnabled)
+                {
+                    var option = type.GetField("_option", InstanceMembers)?.GetValue(item);
+                    var textId = option?.GetType().GetField("TextID", InstanceMembers)?.GetValue(option) as string;
+                    var view = (Selectable)item;
+                    var savedPointer = pointer;
+                    var raycast = TryAimAt(view);
+                    pointer = savedPointer;
+                    Debug.Log($"VN-BG-OPTION-VIEW {textId} enabled={view.IsInteractable()} raycast={raycast}");
+                }
+            }
+        }
+    }
+
+    private static void AdvanceIntro()
+    {
+        if (Time.realtimeSinceStartup >= nextInspect)
+        {
+            nextInspect = Time.realtimeSinceStartup + 2;
+            InspectDialogue();
+        }
+        if (advanceDown)
+        {
+            InputState.Change(keyboard!, new KeyboardState());
+            advanceDown = false;
+            return;
+        }
+        if (optionClickPhase == 1)
+        {
+            SetPointer(true);
+            optionClickPhase = 2;
+            return;
+        }
+        if (optionClickPhase == 2)
+        {
+            SetPointer(false);
+            optionClickPhase = 0;
+            choiceIndex++;
+            next += .5f;
+            return;
+        }
+        var optionType = Assembly.Load("YarnSpinner.Unity").GetType("Yarn.Unity.OptionItem", throwOnError: true)!;
+        var views = UnityEngine.Object.FindObjectsByType(optionType, FindObjectsSortMode.None).OfType<Selectable>()
+            .Where(view => view.isActiveAndEnabled && view.IsInteractable()).ToArray();
+        if (views.Length != 0)
+        {
+            if (choiceIndex >= IntroChoices.Length) return;
+            var choice = IntroChoices[choiceIndex];
+            foreach (var view in views)
+            {
+                var option = optionType.GetField("_option", InstanceMembers)?.GetValue(view);
+                var textId = option?.GetType().GetField("TextID", InstanceMembers)?.GetValue(option) as string;
+                if (textId != choice || !TryAimAt(view)) continue;
+                Debug.Log($"VN-BG-YARN-CHOICE {choice}");
+                SetPointer(false);
+                optionClickPhase = 1;
+                break;
+            }
+            return;
+        }
+        InputState.Change(keyboard!, new KeyboardState(Key.E));
+        advanceDown = true;
     }
 
     private static Component? CachedTarget() =>
@@ -254,18 +364,23 @@ public static class Probe
         var field = type.GetField(fieldName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
         if (field?.GetValue(component) is not Button button || !button.isActiveAndEnabled || !button.IsInteractable())
             throw new InvalidOperationException($"Unavailable button {typeName}.{fieldName}");
-        var rect = (RectTransform)button.transform;
-        var canvas = button.GetComponentInParent<Canvas>();
+        if (!TryAimAt(button))
+            throw new InvalidOperationException($"Raycast missed {typeName}.{fieldName}");
+        Debug.Log($"VN-BG-AIM {typeName}.{fieldName} button={button.name} {pointer} screen={Screen.width}x{Screen.height}");
+        SetPointer(false);
+    }
+
+    private static bool TryAimAt(Selectable control)
+    {
+        var rect = (RectTransform)control.transform;
+        var canvas = control.GetComponentInParent<Canvas>();
         var camera = canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : canvas.worldCamera;
         pointer = RectTransformUtility.WorldToScreenPoint(camera, rect.TransformPoint(rect.rect.center));
         var data = new PointerEventData(EventSystem.current) { position = pointer };
         var hits = new List<RaycastResult>();
         EventSystem.current.RaycastAll(data, hits);
         var hit = hits.FirstOrDefault().gameObject;
-        Debug.Log($"VN-BG-AIM {typeName}.{fieldName} button={button.name} {pointer} hit={hit?.name} screen={Screen.width}x{Screen.height}");
-        if (hit == null || !hit.transform.IsChildOf(button.transform))
-            throw new InvalidOperationException($"Raycast missed {typeName}.{fieldName}");
-        SetPointer(false);
+        return hit != null && hit.transform.IsChildOf(control.transform);
     }
 
     private static void ClickDown() => SetPointer(true);

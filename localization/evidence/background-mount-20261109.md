@@ -53,12 +53,11 @@ The dragon moved to `WaitingOnIntroDialogue`, and the original Yarn
 runner emitted `Conrad_Intro_3` on its node-start event. The copy was
 stopped at this checkpoint, with no node-completion event observed.
 
-The next playback step can use the serialized `LineAdvancer` at macOS
-`level1#3938`. Its next-line reference resolves to
-`Player/Attack` at `sharedassets0.assets#640`, and hurry-up resolves
-to `Player/Plap` at PathID 598. These bindings are source evidence.
-The test so far covers neither line advancement nor any repaired
-destination.
+The serialized `LineAdvancer` at macOS `level1#3938` references
+`Player/Attack` for next line and `Player/Plap` for hurry-up.
+The [dialogue test](background-dialogue-20261109.md) traces how the
+runner changes those bindings at startup. The mount test covers
+neither line advancement nor any repaired destination.
 
 Each run recorded no foreground ownership or on-screen window across
 all samples. The wrapper removed its generated Steam files and verified

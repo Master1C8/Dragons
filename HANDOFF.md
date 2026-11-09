@@ -25,12 +25,14 @@ slot. Walking and turning used the original player actions. The stock
 selector and `Player/Plap` then equipped the crowbar, opened both
 crates, assembled the mount and placed it in storage. The original
 handlers set `BuiltMount`, `HasMountFrame` and `PlacedMount`. The
-dragon arrived at the window, and ordinary input there started
-`Conrad_Intro_3` in the original Yarn runner. Intro completion, the
+dragon arrived at the window, and ordinary input there started and
+completed `Conrad_Intro_3` with three stock option clicks. An alternate
+walking route reached selector range of `DoneButton`. That button
+requires a hand hit, which is still pending. Gate admission, the
 performance socket, remaining scene steps and the five repaired
 transfers still need runtime evidence.
 See [the gameplay receipts](localization/evidence/background-gameplay-20261109.md)
-and [the mount test](localization/evidence/background-mount-20261109.md).
+and [the dialogue test](localization/evidence/background-dialogue-20261109.md).
 
 Commit `3727bf3` adds 319 provisional Yarn role assignments across Ryan's later
 scenes and preserves the existing Russian draft for the same 14 changed IDs
