@@ -61,24 +61,21 @@ named cast while completing the player-facing scope and roster.
 
 The later [game component scan](game-component-strings-20261109.md)
 found seven serialized bark references to `DragonColdBalls` in each build.
-Its input is a dragon-bark component rather than the level configuration
-or a direct Yarn transfer. The other four generic nodes still lack a
-verified caller, and runtime speaker attribution remains open.
+The [roster follow-up](glossary-roster-followup-20261110.md) traces all
+14 exact components to Ryan's GameObjects and confirms that the historical
+source-reading receipts cover the complete v41 Yarn set. The other four
+generic nodes still lack a verified caller, and runtime presentation
+remains open.
 
 ## Open editorial findings
 
 - `dnw-franchise-representative` changes the referent in Russian. The English
   meaning denotes the caller or callers. The Russian sentence begins
-  “Обращение за кадром” and denotes their communication. A proposed neutral
-  role label is **Голос франшизы**, with the meaning “Звонки за кадром
-  поступают из франшизы. Кто звонит и один ли это человек, неизвестно. Пол и
-  местоимения не установлены. Использовать нейтральные формулировки.”
-  Check this field, the franchise/location distinction in
-  `dnw-dragn-wash` and `dnw-franchise-223`, and the speaker attribution and
-  address of both phone scenes in the affected review scope. The workstation's
-  canonical delivery rule blocks glossary integration while the SiteForMods
-  checkout contains unrelated untracked work under
-  `data/games/the-forest-of-love/glossary-review/finley-repair-20261027/`.
+  “Обращение за кадром” and denotes their communication. The follow-up
+  records the proposed neutral role label **Голос франшизы**, the numbered
+  location correction **Филиал № 223 сети Drag'N Wash**, and evidence from
+  both phone scenes. Canonical integration and the affected editorial
+  reviews are still pending.
 - The historical glossary proof predates complete shared-source coverage.
   Reconcile the glossary selection and speaking roster against the final
   source inventory before claiming a standard-localization pass. Preserve
