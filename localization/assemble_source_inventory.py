@@ -388,6 +388,8 @@ def build(work, roles_path):
                                 role = 'preserve-exactly-player-log-text'
                             elif consumer in managed.EXCEPTION_CONSTRUCTORS:
                                 role = 'preserve-exactly-exception-diagnostic'
+                            elif consumer == managed.YARN_MARKUP_DIAGNOSTIC:
+                                role = 'preserve-exactly-markup-diagnostic'
                         elif role == 'string-representation-needs-visibility-review':
                             role = 'preserve-exactly-diagnostic-representation'
                 put(records, {'id': f'managed:{platform}:{assembly}:{row["id"]}', 'family': 'managed',

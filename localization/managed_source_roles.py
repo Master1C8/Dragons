@@ -652,13 +652,13 @@ def yarn_dependency_role(row):
     if method == 'Cultures::MakeCultureList()':
         return {
             'mi': ('preserve-exactly-locale-key', 'System.String Yarn.Unity.Culture::Name'),
-            'Maori': ('locale-name-needs-visibility-review', 'System.String Yarn.Unity.Culture::DisplayName'),
+            'Maori': ('preserve-exactly-locale-name', 'System.String Yarn.Unity.Culture::DisplayName'),
             'Māori': ('preserve-exactly-locale-name', 'System.String Yarn.Unity.Culture::NativeName'),
         }.get(value)
     if method == 'Localization::GetAddressForLine(System.String,System.String)' and value in ('line_', '_', 'line:', ''):
         return 'preserve-exactly-resource-key', full_method
     if method == 'LineAdvancer::ValidateInputMode()':
-        return 'editor-message-needs-visibility-review', 'Yarn.Unity.Attributes.MessageBoxAttribute/Message'
+        return 'preserve-exactly-editor-diagnostic', 'Yarn.Unity.Attributes.MessageBoxAttribute/Message'
     if method in ('MarkupPalette::PaletteForMarker(System.String,Yarn.Unity.MarkupPalette/CustomMarker&)',
                   'OptionItem::set_Option(Yarn.Unity.DialogueOption)') and value.startswith('<'):
         return 'preserve-exactly-markup', (
@@ -693,7 +693,7 @@ def yarn_dependency_role(row):
         return 'preserve-exactly-empty-value', 'System.String Yarn.Unity.UnityLocalization.LineMetadata::nodeName'
     if method == 'UnityLocalization.UnityLocalisedLineProvider/<GetLocalizedLineAsync>d__8::MoveNext()':
         if offset == 287:
-            return ('error-fallback-text-needs-runtime-review',
+            return ('preserve-exactly-unused-provider-fallback',
                     'Yarn.Unity.UnityLocalization.UnityLocalisedLineProvider/<GetLocalizedLineAsync>d__8::<text>5__3')
         if offset == 513:
             return 'diagnostic-text-needs-visibility-review', DEBUG_WARNING
@@ -816,10 +816,10 @@ def context_role(row):
     if row['method'] == MISSING_LINE and row['value'] == '!! ERROR: Missing line!':
         pattern = [(step['opcode'], step['operand']) for step in steps[:4]]
         if pattern[0] == ('stfld', MISSING_BODY_FIELD):
-            return 'error-fallback-text-needs-runtime-review', MISSING_BODY_FIELD
+            return 'player-facing-error-fallback-candidate', MISSING_BODY_FIELD
         if pattern == [('newobj', EMPTY_MARKUP_LIST), ('newobj', MARKUP_RESULT),
                        ('callvirt', SET_PARSED_TEXT), ('stsfld', INVALID_LINE_FIELD)]:
-            return 'error-fallback-text-needs-runtime-review', SET_PARSED_TEXT
+            return 'player-facing-error-fallback-candidate', SET_PARSED_TEXT
     if first['opcode'] in ('stfld', 'stsfld') and first['operand'] in FIELD_ROLES:
         return FIELD_ROLES[first['operand']], first['operand']
     if len(steps) >= 2 and steps[1]['opcode'] in ('call', 'callvirt'):

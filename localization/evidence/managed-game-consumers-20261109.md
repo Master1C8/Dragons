@@ -314,4 +314,94 @@ Local artifacts are in
 | macOS constructor bindings | `ede478e51fc443c13231b068e8b67e878afb9266163e9202692a334e75d99578` |
 | Windows constructor bindings | `220de77ae7ade8dea706263249d2adaf5b1accec993d9c6c45aefd7d54715654` |
 
+## v39 markup, editor and fallback strings, 2026-11-10
+
+The follow-up matches the full managed inventories again and resolves
+the 20 remaining role reviews in the five extracted assemblies.
+
+- The eight palette and style diagnostic literals feed the diagnostic
+  list returned by the markup parser. Both providers call the
+  `ParseString` overload that extracts the parsed body from tuple
+  `Item1` and leaves the diagnostics in `Item2`. The diagnostic message
+  and the parsed dialogue text remain distinct.
+- The four input-mode messages are reached through the
+  `MessageBoxAttribute` on `LineAdvancer`. The scan found the Editor
+  attribute binding and no direct caller in the inspected player
+  assemblies. The two `Maori` occurrences are stored in
+  `Culture.DisplayName`, with the stock read used for culture sorting.
+  No shipped caller of the locale-list getter was found.
+- All five byte-verified `DialogueRunner` components on each build
+  have null `lineProvider` references. The stock getter finds or adds
+  the built-in provider. The managed audit found no creation of the
+  optional Unity Localization provider and no other assignment to
+  the runner's provider field. No provider component was serialized
+  in the 17 inspected assets, and the three decoded StreamingAssets
+  bundles have no scene or GameObject. Preserve the optional
+  provider's two fallback literal occurrences.
+- The active built-in provider returns `LocalizedLine.InvalidLine`
+  when its table lookup fails. The runner logs the error and still
+  passes the line to `RunLocalisedLine` or stores it in
+  `DialogueOption.Line`. Its `RawText` and parsed text each contain
+  `!! ERROR: Missing line!`. These four source occurrences are
+  player-facing error fallback candidates. They represent the same
+  phrase and need a matching locale value in both fields. They are
+  outside the normal table replacement and still require an adapter.
+  The English missing-line control below exercises the dialogue path.
+
+The v39 copies matched byte-for-byte. Comparison with v38 found
+only the stated 20 role changes. The 2,974 extracted managed
+occurrences now have explicit roles. The remaining non-preservation
+roles are 152 profiler labels, six new-slot occurrences and four
+missing-line occurrences. This is neither an exhaustive search of every text-producing
+API nor a runtime rendering result. Native code, external mods
+and arbitrary reflection remain outside the source scan.
+
+Local evidence is in
+`localization/work/yarn-fallback-and-markup-20261110.NruUnn/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| macOS provider and call flow | `6b6cd1b97510d0f3b2ed5117d643fb7b6a302b2783968237f42212e0554b3298` |
+| Windows provider and call flow | `f53d99f03de0f807feb9329da6026c697b009b787e6615dd55e7663fcea4e91c` |
+| macOS serialized provider bindings | `60784a551d5835dd8e1393e2f82dceadece45ec9b3b246bb7b490fbefe6fc975` |
+| Windows serialized provider bindings | `205db5533574b9e6653f5ff6d0fc9286bd4b0f75a0621e19dd0b2e06cc2cb534` |
+
+### Paired missing-line runtime control
+
+The first background test forced the `Start` node in an isolated
+copy. The stock runner encountered the unknown `autoAdvance` command
+before the selected line. Both observers reached their deadline
+without a missing-line trace. That attempt supplies no presenter
+result.
+
+The second test used `ErrorHasOccurred`, which starts with a line.
+In each test copy one compiled line operand changed from
+`line:3fdb9d01` to `line:00000000`, an ID absent from both the
+compiled source and the English table. The test verified the
+exact bytes of all other objects. After a controlled scene load
+and node entry, the original built-in provider logged the failed
+lookup, and the original line presenter received
+`!! ERROR: Missing line!`. A Canvas callback observed the active
+TMP field with group alpha 1 and all 23 characters enabled on
+macOS Metal and Windows Direct3D 11 through CrossOver.
+
+The observers recorded 16 macOS and 35 Windows samples without
+foreground ownership or visible windows. Both verified test
+processes exited, and the checked installed files and original
+profiles remained unchanged. This is the English dialogue-path
+positive control. It does not check localized wording, the option
+path, screenshots, natural scene entry or release packaging.
+
+Successful local artifacts are under
+`localization/work/yarn-missing-line-runtime-20261110.hg9ID0/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| macOS test asset | `d1d636abb153aab2f3f19f242dfea2035a3a9cc17d4e8a580e877ea6a940a96e` |
+| Windows test asset | `7384ddb60a3e16388834ff9272a95dc88c79b7292acf38b7a5d43a8fdb5a27e2` |
+| macOS player log | `e0bd2a1b8873d5ef5e1e18994cc4425eb14cbe46fe3f94a33427146535b81b4a` |
+| Windows player log | `43f3372468838cbf1d88cd1d6e23ff8136d58e0eb40161de038ca4ebeb2e8254` |
+| macOS observer receipt | `67735364fd5ddd554dc67dc82624c1c16b6f67566749b3eda1d5e4c2ce6eeb64` |
+| Windows observer receipt | `957e14c110e3751dde7dd551951cff7c909dbab5eb6e02136354899c5de6ac4b` |
+
 The full localization suite passed all 180 tests with v28.

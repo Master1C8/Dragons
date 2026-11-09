@@ -148,11 +148,6 @@ class SourceInventoryUnitTests(unittest.TestCase):
                     ('_FluidHeight', 'preserve-exactly-renderer-key', inventory.managed.DECAL_SETTINGS)):
                 self.assertTrue(any(r['source'][platform] == value and r['role'] == role and
                                     r.get('consumer') == target for r in game_rows), (platform, value))
-            missing = [r for r in result['entries'] if r['source'].get(platform) == '!! ERROR: Missing line!']
-            self.assertEqual([r['role'] for r in missing], ['error-fallback-text-needs-runtime-review'] * 2)
-            self.assertEqual({r['consumer'] for r in missing}, {
-                inventory.managed.MISSING_BODY_FIELD, inventory.managed.SET_PARSED_TEXT,
-            })
             flag_writer = [r for r in game_rows
                            if r['method'] == 'SimpleJSON.JSONNode WalkNWash.Flags.FlagRegistry::ToJson(System.Int32)']
             expected_keys = {'levelIndex', 'id', 'type', 'boolValue', 'stringValue'}
@@ -213,7 +208,14 @@ class SourceInventoryUnitTests(unittest.TestCase):
                 self.assertEqual({(r['role'], r['consumer']) for r in rows}, {(role, consumer)})
             fallback = [r for r in result['entries'] if r['family'] == 'managed'
                         and r['source'].get(platform, '').startswith('!! Error: Missing localisation')]
-            self.assertEqual([r['role'] for r in fallback], ['error-fallback-text-needs-runtime-review'])
+            self.assertEqual([r['role'] for r in fallback], ['preserve-exactly-unused-provider-fallback'])
+            visible_fallback = [r for r in result['entries'] if r['family'] == 'managed'
+                                and r['role'] == 'player-facing-error-fallback-candidate' and platform in r['source']]
+            self.assertEqual(len(visible_fallback), 2)
+            self.assertTrue(all(r['source'][platform] == '!! ERROR: Missing line!' for r in visible_fallback))
+            self.assertEqual({r['consumer'] for r in visible_fallback}, {
+                inventory.managed.MISSING_BODY_FIELD, inventory.managed.SET_PARSED_TEXT,
+            })
         wait = next(r for r in result['entries'] if r['source'].get('windows') == 'Waiting for flag {0}...{1}')
         self.assertEqual(wait['role'], 'preserve-exactly-player-log-text')
         self.assertEqual(wait['consumer'], 'System.Void UnityEngine.Debug::Log(System.Object)')
@@ -240,9 +242,11 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertEqual({r['consumer'] for r in exceptions}, inventory.managed.EXCEPTION_CONSTRUCTORS)
         self.assertEqual(sum(r['consumer'] == 'System.Void System.ArgumentException::.ctor(System.String,System.Exception)'
                              for r in exceptions), 4)
-        pending_diagnostics = [r for r in result['entries'] if r['role'] == 'diagnostic-text-needs-visibility-review']
-        self.assertEqual(len(pending_diagnostics), 8)
-        self.assertEqual({r['consumer'] for r in pending_diagnostics}, {inventory.managed.YARN_MARKUP_DIAGNOSTIC})
+        markup_diagnostics = [r for r in result['entries'] if r['role'] == 'preserve-exactly-markup-diagnostic']
+        self.assertEqual(len(markup_diagnostics), 8)
+        self.assertEqual({r['consumer'] for r in markup_diagnostics}, {inventory.managed.YARN_MARKUP_DIAGNOSTIC})
+        self.assertEqual(sum(r['role'] == 'preserve-exactly-editor-diagnostic' for r in result['entries']), 4)
+        self.assertFalse(any('needs-' in r['role'] for r in result['entries'] if r['family'] == 'managed'))
         self.assertFalse(any(r['role'] == 'needs-classification' for r in result['entries']
                              if r['family'] == 'managed'))
         legacy_rows = [r for r in result['entries'] if r['family'] == 'legacy-ui']
