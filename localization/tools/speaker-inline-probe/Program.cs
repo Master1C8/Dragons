@@ -6,8 +6,9 @@ using Dragons.SyntheticSpeakerInline;
 using Yarn.Markup;
 using Yarn.Unity;
 
-if (args.Length is not (2 or 5) || args[0] is not ("macos" or "windows"))
-    throw new ArgumentException("Usage: speaker-inline-probe macos|windows PAIRED_YARN_JSON [PATCHED_SHA256 INLINE_RUNTIME_DLL INLINE_RUNTIME_SHA256]");
+bool production = args.Length == 6;
+if (args.Length is not (2 or 5 or 6) || args[0] is not ("macos" or "windows"))
+    throw new ArgumentException("Usage: speaker-inline-probe macos|windows PAIRED_YARN_JSON [PATCHED_SHA256 INLINE_RUNTIME_DLL INLINE_RUNTIME_SHA256 [FALLBACK_TEXT]]");
 
 string Hash(string path) => Convert.ToHexString(SHA256.HashData(File.ReadAllBytes(path))).ToLowerInvariant();
 void Require(bool condition, string message)
@@ -20,7 +21,7 @@ string unityHash = args[0] == "macos"
     : "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d";
 Require(Hash(typeof(LineParser).Assembly.Location) == "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e",
     "Unsupported Yarn core");
-bool patched = args.Length == 5;
+bool patched = args.Length >= 5;
 string loadedUnityHash = Hash(typeof(LocalizedLine).Assembly.Location);
 Require(loadedUnityHash == (patched ? args[2] : unityHash), "Unsupported Yarn Unity assembly");
 Require(Hash(args[1]) == "52ccfea874938c04691ce607b143ab30dad29c06aa49c8ae30517104c7958995",
@@ -30,13 +31,23 @@ var parser = new LineParser();
 LocalizedLine ReadLine(string id, string source) =>
     new() { TextID = id, RawText = source, Text = parser.ParseString(source, "en", true) };
 MethodInfo? bridge = null;
+MethodInfo? nameBridge = null;
 if (patched)
 {
     Require(Hash(args[3]) == args[4], "Inline runtime fingerprint mismatch");
     AssemblyLoadContext.Default.LoadFromAssemblyPath(Path.GetFullPath(args[3]));
-    bridge = typeof(LocalizedLine).Assembly.GetType("Yarn.Unity.VnSyntheticSpeakerDisplay", true)!
-        .GetMethod("GetInlineText", BindingFlags.NonPublic | BindingFlags.Static)
+    string helper = production ? "Yarn.Unity.VnSpeakerDisplay" : "Yarn.Unity.VnSyntheticSpeakerDisplay";
+    var displayType = typeof(LocalizedLine).Assembly.GetType(helper, true)!;
+    bridge = displayType.GetMethod("GetInlineText", BindingFlags.NonPublic | BindingFlags.Static)
         ?? throw new InvalidOperationException("Missing injected inline bridge");
+    if (production)
+    {
+        nameBridge = displayType.GetMethod("GetDisplayName", BindingFlags.NonPublic | BindingFlags.Static)
+            ?? throw new InvalidOperationException("Missing injected name bridge");
+        var missing = (LocalizedLine)typeof(LocalizedLine).GetField("InvalidLine",
+            BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static)!.GetValue(null)!;
+        Require(missing.RawText == args[5] && missing.Text.Text == args[5], "Fallback representations differ");
+    }
 }
 MarkupParseResult Display(LocalizedLine line, string name, string label) => bridge == null
     ? InlineSpeakerView.Create(line, name, label)
@@ -52,6 +63,8 @@ void CheckMapped(LocalizedLine line, string expectedName, string displayName)
     Require(line.CharacterName == expectedName, $"Unexpected source identity: {id}");
     var display = Display(line, expectedName, displayName);
     Require(display.Text == displayName + ": " + body, $"Unexpected inline display: {id}");
+    if (nameBridge != null)
+        Require((string?)nameBridge.Invoke(null, new object[] { line }) == displayName, $"Unexpected separate name: {id}");
     Require(display.Attributes.Count == originalAttributes.Length &&
         !ReferenceEquals(original.Attributes, display.Attributes), $"Incorrect attribute copy: {id}");
     int delta = displayName.Length - expectedName.Length;
@@ -83,6 +96,9 @@ void CheckUnchanged(LocalizedLine line)
     var display = Display(line, "Ryan", "Жж");
     Require(display.Text == line.Text.Text && ReferenceEquals(display.Attributes, line.Text.Attributes),
         $"Unexpected fallback rewrite: {line.TextID}");
+    if (nameBridge != null)
+        Require((string?)nameBridge.Invoke(null, new object[] { line }) == line.CharacterName,
+            $"Unexpected separate name rewrite: {line.TextID}");
 }
 
 using var source = JsonDocument.Parse(File.ReadAllBytes(args[1]));

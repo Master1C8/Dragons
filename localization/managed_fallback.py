@@ -22,16 +22,18 @@ SLOT_SOURCES = {
 SLOT = {'slot-new': 'NEW'}
 
 
-def prepare(platform, source, locale_file, requested, tool, *, slot_new=False):
-    assembly, sources, lines, offsets = (
-        (SLOT_ASSEMBLY, SLOT_SOURCES, SLOT, [0x85, 0x101, 0x17c]) if slot_new
-        else (ASSEMBLY, SOURCES, FALLBACK, [0x18, 0x39])
-    )
+def source_digest(platform, source, *, slot_new=False):
+    assembly, sources = (SLOT_ASSEMBLY, SLOT_SOURCES) if slot_new else (ASSEMBLY, SOURCES)
     expected = sources[platform]
     source = Path(source)
     if source.name != assembly or source.is_symlink() or dl.sha(source.read_bytes()) != expected:
         label = 'new-slot' if slot_new else 'missing-line'
         raise ValueError(f'unsupported {platform} {label} source assembly')
+    return expected
+
+
+def read_replacement(locale_file, requested, expected, *, slot_new=False):
+    lines = SLOT if slot_new else FALLBACK
     locale, values = dl.read_locale(locale_file, list(lines), list(lines.values()),
                                     expected, yarn_semantics=False)
     if locale != requested:
@@ -39,6 +41,13 @@ def prepare(platform, source, locale_file, requested, tool, *, slot_new=False):
     replacement = values[next(iter(lines))]
     if any(c in replacement for c in '<>\r\n'):
         raise ValueError('managed replacement must be a single plain-text line')
+    return replacement
+
+
+def prepare(platform, source, locale_file, requested, tool, *, slot_new=False):
+    expected = source_digest(platform, source, slot_new=slot_new)
+    replacement = read_replacement(locale_file, requested, expected, slot_new=slot_new)
+    assembly, offsets = (SLOT_ASSEMBLY, [0x85, 0x101, 0x17c]) if slot_new else (ASSEMBLY, [0x18, 0x39])
     tool = Path(tool).resolve(strict=True)
     with tempfile.TemporaryDirectory(prefix='dragons-managed-fallback-') as folder:
         output = Path(folder) / assembly

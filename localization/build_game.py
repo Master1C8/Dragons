@@ -12,6 +12,7 @@ import tempfile
 
 import dialogue_locale as dl
 import managed_fallback
+import speaker_locale as speakers
 import ui_locale as ui
 import ui_preservation
 import verify_managed_assemblies as managed
@@ -36,7 +37,8 @@ def rename_exclusive(source, destination):
 
 def build(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
           test_profile_code=None, test_caption_layout=False, test_slot_font=False,
-          restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None):
+          restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None,
+          speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -57,7 +59,9 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
         report = _build_unpublished(source, locale_file, requested, staged_app, ui_dir, settings_file,
                                     test_profile_code, test_caption_layout, test_slot_font,
                                     restore_yarn_transitions, fallback_locale=fallback_locale,
-                                    fallback_tool=fallback_tool, slot_new_locale=slot_new_locale)
+                                    fallback_tool=fallback_tool, slot_new_locale=slot_new_locale,
+                                    speaker_locale=speaker_locale, speaker_tool=speaker_tool,
+                                    speaker_runtime=speaker_runtime, speaker_runtime_sha=speaker_runtime_sha)
         rename_exclusive(staged_app, destination)
     finally:
         shutil.rmtree(stage)
@@ -71,7 +75,8 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
 
 def _build_unpublished(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
                        test_profile_code=None, test_caption_layout=False, test_slot_font=False,
-                       restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None):
+                       restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None,
+                       speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -102,10 +107,20 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
         raise ValueError(f'locale file identifies {locale}, not requested {requested}')
     source_assemblies = managed.scan(source / MANAGED_RELATIVE)
     managed_digest = managed.validate_source('macos', source_assemblies)
-    if (fallback_locale is not None or slot_new_locale is not None) != (fallback_tool is not None):
+    speaker_inputs = (speaker_locale, speaker_tool, speaker_runtime, speaker_runtime_sha)
+    if any(item is not None for item in speaker_inputs) and not all(item is not None for item in speaker_inputs):
+        raise ValueError('speaker locale, tool, runtime and runtime SHA-256 must be supplied together')
+    standalone_fallback = fallback_locale if speaker_locale is None else None
+    if (standalone_fallback is not None or slot_new_locale is not None) != (fallback_tool is not None):
         raise ValueError('a managed text locale and tool must be supplied together')
     managed_replacements = {}
-    for assembly, file in ((managed_fallback.ASSEMBLY, fallback_locale), (managed_fallback.SLOT_ASSEMBLY, slot_new_locale)):
+    speaker_files, speaker_report = {}, None
+    if speaker_locale is not None:
+        speaker_files, speaker_report = speakers.prepare(
+            'macos', source / MANAGED_RELATIVE / managed_fallback.ASSEMBLY, speaker_locale, requested,
+            speaker_tool, speaker_runtime, speaker_runtime_sha, fallback_locale=fallback_locale,
+        )
+    for assembly, file in ((managed_fallback.ASSEMBLY, standalone_fallback), (managed_fallback.SLOT_ASSEMBLY, slot_new_locale)):
         if file is not None:
             managed_replacements[assembly] = managed_fallback.prepare(
                 'macos', source / MANAGED_RELATIVE / assembly, file, requested, fallback_tool,
@@ -222,12 +237,17 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
     if prepared_profile is not None:
         profile = profile_tool.apply(destination, prepared_profile)
     expected_assemblies = dict(source_assemblies)
-    for assembly, (replacement_dll, report) in managed_replacements.items():
+    output_dlls = {name: data for name, (data, _) in managed_replacements.items()} | speaker_files
+    for assembly, replacement_dll in output_dlls.items():
         copied_dll = destination / MANAGED_RELATIVE / assembly
-        if copied_dll.is_symlink() or dl.sha(copied_dll.read_bytes()) != source_assemblies[assembly]:
-            raise ValueError('unexpected copied fallback assembly')
-        copied_dll.write_bytes(replacement_dll)
-        expected_assemblies[assembly] = report['outputSha256']
+        if assembly == speakers.COMPANION:
+            with copied_dll.open('xb') as companion:
+                companion.write(replacement_dll)
+        else:
+            if copied_dll.is_symlink() or dl.sha(copied_dll.read_bytes()) != source_assemblies[assembly]:
+                raise ValueError('unexpected copied managed assembly')
+            copied_dll.write_bytes(replacement_dll)
+        expected_assemblies[assembly] = dl.sha(replacement_dll)
     # The distribution contains a loose Steam identifier in the bundle root;
     # macOS refuses to seal a bundle with this file there. Preserve it next to
     # the executable, then sign only the copy with an ad-hoc signature.
@@ -254,6 +274,7 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
                       'managedManifestSha256': managed_digest,
                       'managedFallback': managed_replacements.get(managed_fallback.ASSEMBLY, (None, None))[1],
                       'managedSlotNew': managed_replacements.get(managed_fallback.SLOT_ASSEMBLY, (None, None))[1],
+                      'managedSpeakers': speaker_report,
                       'restoredYarnTransitions': len(transitions.CONTINUATIONS) if restore_yarn_transitions else 0,
                       'testSettingsLayoutSha256': layout_hash,
                       'testSlotFontSha256': slot_font_hash}
@@ -271,6 +292,10 @@ def main():
     p.add_argument('--slot-new-locale', type=Path, help='optional source-pinned new-slot locale JSON file')
     p.add_argument('--managed-text-tool', '--fallback-tool', dest='fallback_tool', type=Path,
                    help='compiled managed-fallback.dll')
+    p.add_argument('--speaker-locale', type=Path, help='source-pinned display names for Ryan and Conrad')
+    p.add_argument('--speaker-tool', type=Path, help='compiled speaker-display-probe.dll')
+    p.add_argument('--speaker-runtime', type=Path, help='compiled Dragons.SpeakerPresentation.dll')
+    p.add_argument('--speaker-runtime-sha', help='SHA-256 of the compiled speaker runtime')
     p.add_argument('--test-profile', help='optional fresh four-character isolated test profile; not a player release')
     p.add_argument('--test-settings-caption-layout', action='store_true',
                    help='experimental caption height for isolated test profiles only')
@@ -281,7 +306,9 @@ def main():
     a = p.parse_args()
     build(a.source_app, a.locale_file, a.locale, a.output_app, a.ui_dir, a.settings_locale,
           a.test_profile, a.test_settings_caption_layout, a.test_slot_font, a.restore_yarn_transitions,
-          fallback_locale=a.fallback_locale, fallback_tool=a.fallback_tool, slot_new_locale=a.slot_new_locale)
+          fallback_locale=a.fallback_locale, fallback_tool=a.fallback_tool, slot_new_locale=a.slot_new_locale,
+          speaker_locale=a.speaker_locale, speaker_tool=a.speaker_tool, speaker_runtime=a.speaker_runtime,
+          speaker_runtime_sha=a.speaker_runtime_sha)
 
 
 if __name__ == '__main__':

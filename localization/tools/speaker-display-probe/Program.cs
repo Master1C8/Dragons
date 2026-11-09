@@ -5,9 +5,10 @@ using System.Text.Json;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 
-if (args.Length is not (4 or 6) || (args[0] != "macos" && args[0] != "windows"))
-    throw new ArgumentException("Usage: speaker-display-probe macos|windows SOURCE_DLL SYNTHETIC_MAP_JSON OUTPUT_DLL [INLINE_RUNTIME_DLL INLINE_RUNTIME_SHA256]");
-bool includeInline = args.Length == 6;
+bool production = args.Length == 9 && args[6] == "--locale";
+if ((!production && args.Length is not (4 or 6)) || (args[0] != "macos" && args[0] != "windows"))
+    throw new ArgumentException("Usage: speaker-display-probe macos|windows SOURCE_DLL MAP_JSON OUTPUT_DLL [INLINE_RUNTIME_DLL INLINE_RUNTIME_SHA256 [--locale LOCALE FALLBACK_TEXT]]");
+bool includeInline = production || args.Length == 6;
 string Sha(byte[] bytes) => Convert.ToHexString(SHA256.HashData(bytes)).ToLowerInvariant();
 var expectedHashes = new Dictionary<string, string> {
     ["macos"] = "54953f9c071aa3ca5b52eb8b12b8e0bedc73f7665a506c61acbef0c58ac340ef",
@@ -21,7 +22,7 @@ string work = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "lo
 if (!Directory.Exists(work) || (File.GetAttributes(work) & FileAttributes.ReparsePoint) != 0)
     throw new InvalidOperationException("Expected a real project work directory");
 string output = Path.GetFullPath(args[3]);
-if (Path.GetDirectoryName(output) != work || Path.GetExtension(output) != ".dll")
+if ((!production && Path.GetDirectoryName(output) != work) || Path.GetExtension(output) != ".dll")
     throw new InvalidOperationException("Output must be a fresh DLL directly in project work");
 using var json = JsonDocument.Parse(File.ReadAllBytes(args[2]));
 if (json.RootElement.ValueKind != JsonValueKind.Object) throw new InvalidOperationException("Invalid mapping document");
@@ -29,7 +30,8 @@ var rootFields = json.RootElement.EnumerateObject().ToArray();
 if (rootFields.Length != 3 || rootFields.Select(x => x.Name).Distinct().Count() != 3 ||
     !rootFields.Select(x => x.Name).OrderBy(x => x).SequenceEqual(new[] { "locale", "map", "schema" }))
     throw new InvalidOperationException("Unexpected mapping fields");
-if (json.RootElement.GetProperty("schema").GetInt32() != 1 || json.RootElement.GetProperty("locale").GetString() != "ru")
+if (json.RootElement.GetProperty("schema").GetInt32() != 1 ||
+    json.RootElement.GetProperty("locale").GetString() != (production ? args[7] : "ru"))
     throw new InvalidOperationException("Unsupported mapping identity");
 var mapElement = json.RootElement.GetProperty("map");
 if (mapElement.ValueKind != JsonValueKind.Object) throw new InvalidOperationException("Mapping must be an object");
@@ -49,12 +51,14 @@ IEnumerable<TypeDefinition> All(IEnumerable<TypeDefinition> types) {
 }
 const string Getter = "System.String Yarn.Unity.LocalizedLine::get_CharacterName()";
 const string Setter = "System.Void TMPro.TMP_Text::set_text(System.String)";
-const string HelperType = "Yarn.Unity.VnSyntheticSpeakerDisplay";
+string helperName = production ? "VnSpeakerDisplay" : "VnSyntheticSpeakerDisplay";
+string helperFullName = "Yarn.Unity." + helperName;
 const string TextGetter = "Yarn.Markup.MarkupParseResult Yarn.Unity.LocalizedLine::get_Text()";
-const string RuntimeAssembly = "Dragons.SyntheticSpeakerInline";
-const string RuntimeMethod = "Yarn.Markup.MarkupParseResult Dragons.SyntheticSpeakerInline.InlineSpeakerView::Create(Yarn.Unity.LocalizedLine,System.String,System.String)";
+string runtimeAssembly = production ? "Dragons.SpeakerPresentation" : "Dragons.SyntheticSpeakerInline";
+string runtimeMethod = $"Yarn.Markup.MarkupParseResult {runtimeAssembly}.InlineSpeakerView::Create(Yarn.Unity.LocalizedLine,System.String,System.String)";
+string runtimeNameReader = $"System.String {runtimeAssembly}.InlineSpeakerView::NameFromView(Yarn.Markup.MarkupParseResult,Yarn.Unity.LocalizedLine)";
 using var module = ModuleDefinition.ReadModule(new MemoryStream(sourceBytes));
-if (module.Types.Any(t => t.FullName == HelperType)) throw new InvalidOperationException("Helper already exists");
+if (module.Types.Any(t => t.FullName == helperFullName)) throw new InvalidOperationException("Helper already exists");
 var all = All(module.Types).ToArray();
 var nameType = module.Types.Single(t => t.FullName == "Yarn.Unity.LocalizedLine");
 var getter = nameType.Methods.Single(m => m.FullName == Getter);
@@ -78,33 +82,35 @@ foreach (var type in all) foreach (var method in type.Methods.Where(m => m.HasBo
 }
 if (sites.Count != 2 || siteKeys.Count != 2) throw new InvalidOperationException("Expected exactly two speaker display sites");
 
-var helperType = new TypeDefinition("Yarn.Unity", "VnSyntheticSpeakerDisplay",
+var helperType = new TypeDefinition("Yarn.Unity", helperName,
     TypeAttributes.NotPublic | TypeAttributes.Abstract | TypeAttributes.Sealed | TypeAttributes.BeforeFieldInit, module.TypeSystem.Object);
 var helper = new MethodDefinition("GetDisplayName", MethodAttributes.Assembly | MethodAttributes.Static | MethodAttributes.HideBySig, module.TypeSystem.String);
 helper.Parameters.Add(new ParameterDefinition("line", ParameterAttributes.None, nameType));
-helper.Body.InitLocals = true;
-helper.Body.Variables.Add(new VariableDefinition(module.TypeSystem.String));
 var il = helper.Body.GetILProcessor();
-il.Append(il.Create(OpCodes.Ldarg_0)); il.Append(il.Create(OpCodes.Callvirt, getter)); il.Append(il.Create(OpCodes.Stloc_0));
-foreach (var pair in map.OrderBy(x => x.Key, StringComparer.Ordinal)) {
-    var next = il.Create(OpCodes.Nop);
-    il.Append(il.Create(OpCodes.Ldloc_0)); il.Append(il.Create(OpCodes.Ldstr, pair.Key));
-    il.Append(il.Create(OpCodes.Call, equality)); il.Append(il.Create(OpCodes.Brfalse, next));
-    il.Append(il.Create(OpCodes.Ldstr, pair.Value)); il.Append(il.Create(OpCodes.Ret)); il.Append(next);
+if (!production) {
+    helper.Body.InitLocals = true;
+    helper.Body.Variables.Add(new VariableDefinition(module.TypeSystem.String));
+    il.Append(il.Create(OpCodes.Ldarg_0)); il.Append(il.Create(OpCodes.Callvirt, getter)); il.Append(il.Create(OpCodes.Stloc_0));
+    foreach (var pair in map.OrderBy(x => x.Key, StringComparer.Ordinal)) {
+        var next = il.Create(OpCodes.Nop);
+        il.Append(il.Create(OpCodes.Ldloc_0)); il.Append(il.Create(OpCodes.Ldstr, pair.Key));
+        il.Append(il.Create(OpCodes.Call, equality)); il.Append(il.Create(OpCodes.Brfalse, next));
+        il.Append(il.Create(OpCodes.Ldstr, pair.Value)); il.Append(il.Create(OpCodes.Ret)); il.Append(next);
+    }
+    il.Append(il.Create(OpCodes.Ldloc_0)); il.Append(il.Create(OpCodes.Ret));
 }
-il.Append(il.Create(OpCodes.Ldloc_0)); il.Append(il.Create(OpCodes.Ret));
 helperType.Methods.Add(helper); module.Types.Add(helperType);
 foreach (var site in sites) { site.OpCode = OpCodes.Call; site.Operand = helper; }
 if (includeInline) {
     var runtimeBytes = File.ReadAllBytes(args[4]);
     if (Sha(runtimeBytes) != args[5]) throw new InvalidOperationException("Inline runtime fingerprint mismatch");
     using var runtime = AssemblyDefinition.ReadAssembly(new MemoryStream(runtimeBytes));
-    if (runtime.Name.Name != RuntimeAssembly || !runtime.CustomAttributes.Any(a =>
+    if (runtime.Name.Name != runtimeAssembly || !runtime.CustomAttributes.Any(a =>
         a.AttributeType.FullName == "System.Runtime.Versioning.TargetFrameworkAttribute" &&
         (string)a.ConstructorArguments[0].Value == ".NETStandard,Version=v2.1"))
         throw new InvalidOperationException("Unexpected inline runtime assembly");
     var factory = runtime.MainModule.GetTypes().SelectMany(t => t.Methods).Single(m =>
-        m.FullName == RuntimeMethod && m.IsPublic && m.IsStatic);
+        m.FullName == runtimeMethod && m.IsPublic && m.IsStatic);
 
     var manifestBytes = File.ReadAllBytes(Path.Combine(Directory.GetCurrentDirectory(),
         "localization", "evidence", "yarn-protected-partial-20261107.json"));
@@ -162,6 +168,35 @@ if (includeInline) {
     }
     site.OpCode = OpCodes.Call;
     site.Operand = bridge;
+    if (production) {
+        // The same ID and prefix checks govern both presenter branches. Read
+        // the character from the display view without modifying the original.
+        il.Append(il.Create(OpCodes.Ldarg_0));
+        il.Append(il.Create(OpCodes.Call, bridge));
+        il.Append(il.Create(OpCodes.Ldarg_0));
+        var nameFromView = runtime.MainModule.GetTypes().SelectMany(t => t.Methods).Single(m =>
+            m.FullName == runtimeNameReader && m.DeclaringType == factory.DeclaringType && m.IsPublic && m.IsStatic);
+        var nameReader = new MethodReference(nameFromView.Name, module.TypeSystem.String, external.DeclaringType);
+        nameReader.Parameters.Add(new ParameterDefinition(textGetter.ReturnType));
+        nameReader.Parameters.Add(new ParameterDefinition(nameType));
+        il.Append(il.Create(OpCodes.Call, nameReader));
+        il.Append(il.Create(OpCodes.Ret));
+    }
+}
+const string originalFallback = "!! ERROR: Missing line!";
+string fallback = production ? args[8] : originalFallback;
+var fallbackSites = new HashSet<string>(StringComparer.Ordinal);
+if (production) {
+    if (string.IsNullOrWhiteSpace(fallback) || fallback.IndexOfAny(new[] { '<', '>', '\r', '\n', '\0' }) >= 0)
+        throw new ArgumentException("Expected a single plain-text fallback");
+    var initializer = nameType.Methods.Single(m => m.Name == ".cctor");
+    foreach (int offset in new[] { 0x18, 0x39 }) {
+        var ins = initializer.Body.Instructions.Single(i => i.Offset == offset);
+        if (ins.OpCode.Code != Code.Ldstr || !Equals(ins.Operand, originalFallback))
+            throw new InvalidOperationException("Unexpected fallback literal");
+        fallbackSites.Add(initializer.FullName + "#" + initializer.Body.Instructions.IndexOf(ins));
+        ins.Operand = fallback;
+    }
 }
 using var buffer = new MemoryStream(); module.Write(buffer);
 var outputBytes = buffer.ToArray();
@@ -176,7 +211,7 @@ string Operand(object value, Dictionary<Instruction, int> indices) => value swit
 };
 Dictionary<string, string> Bodies(ModuleDefinition source, bool patched) {
     var result = new Dictionary<string, string>(StringComparer.Ordinal);
-    foreach (var type in All(source.Types).Where(t => t.FullName != HelperType)) foreach (var method in type.Methods.Where(m => m.HasBody)) {
+    foreach (var type in All(source.Types).Where(t => t.FullName != helperFullName)) foreach (var method in type.Methods.Where(m => m.HasBody)) {
         var code = method.Body.Instructions;
         var indices = code.Select((ins, i) => (ins, i)).ToDictionary(x => x.ins, x => x.i);
         var text = new StringBuilder();
@@ -193,12 +228,16 @@ Dictionary<string, string> Bodies(ModuleDefinition source, bool patched) {
                 string target = (ins.Operand as MethodReference)?.FullName;
                 string expectedGetter = siteKey == inlineSiteKey ? TextGetter : Getter;
                 string expectedHelper = siteKey == inlineSiteKey
-                    ? "Yarn.Markup.MarkupParseResult Yarn.Unity.VnSyntheticSpeakerDisplay::GetInlineText(Yarn.Unity.LocalizedLine)"
-                    : "System.String Yarn.Unity.VnSyntheticSpeakerDisplay::GetDisplayName(Yarn.Unity.LocalizedLine)";
+                    ? $"Yarn.Markup.MarkupParseResult {helperFullName}::GetInlineText(Yarn.Unity.LocalizedLine)"
+                    : $"System.String {helperFullName}::GetDisplayName(Yarn.Unity.LocalizedLine)";
                 if ((!patched && (ins.OpCode.Code != Code.Callvirt || target != expectedGetter)) ||
                     (patched && (ins.OpCode.Code != Code.Call || target != expectedHelper)))
                     throw new InvalidOperationException("Unexpected speaker call-site rewrite");
                 text.Append("<verified-speaker-call>;");
+            } else if (fallbackSites.Contains(siteKey)) {
+                if (ins.OpCode.Code != Code.Ldstr || !Equals(ins.Operand, patched ? fallback : originalFallback))
+                    throw new InvalidOperationException("Unexpected fallback rewrite");
+                text.Append("<verified-fallback>;");
             } else text.Append(ins.OpCode.Name).Append(':').Append(Operand(ins.Operand, indices)).Append(';');
         }
         if (!result.TryAdd(method.FullName, text.ToString())) throw new InvalidOperationException("Ambiguous method identity");
@@ -210,25 +249,32 @@ using var rebuilt = ModuleDefinition.ReadModule(new MemoryStream(outputBytes));
 var before = Bodies(original, false); var after = Bodies(rebuilt, true);
 if (before.Count != after.Count || before.Any(kv => !after.TryGetValue(kv.Key, out var value) || value != kv.Value))
     throw new InvalidOperationException("Unexpected change in existing method bodies");
-var rebuiltHelper = rebuilt.Types.Single(t => t.FullName == HelperType).Methods.Single(m => m.Name == "GetDisplayName");
+var rebuiltHelper = rebuilt.Types.Single(t => t.FullName == helperFullName).Methods.Single(m => m.Name == "GetDisplayName");
 var literals = rebuiltHelper.Body.Instructions.Where(i => i.OpCode.Code == Code.Ldstr).Select(i => (string)i.Operand).ToArray();
 var expectedLiterals = map.OrderBy(x => x.Key, StringComparer.Ordinal).SelectMany(x => new[] { x.Key, x.Value }).ToArray();
-if (!literals.SequenceEqual(expectedLiterals)) throw new InvalidOperationException("Helper mapping read-back failed");
+if (!production && !literals.SequenceEqual(expectedLiterals)) throw new InvalidOperationException("Helper mapping read-back failed");
+if (production && !rebuiltHelper.Body.Instructions.Select(i => i.OpCode.Code)
+    .SequenceEqual(new[] { Code.Ldarg_0, Code.Call, Code.Ldarg_0, Code.Call, Code.Ret }))
+    throw new InvalidOperationException("Display-name helper read-back failed");
 var expectedReferences = original.AssemblyReferences.Select(a => a.FullName).ToList();
 if (includeInline) {
-    var bridge = rebuilt.Types.Single(t => t.FullName == HelperType).Methods.Single(m => m.Name == "GetInlineText");
+    var bridge = rebuilt.Types.Single(t => t.FullName == helperFullName).Methods.Single(m => m.Name == "GetInlineText");
+    if (production && (!Equals(rebuiltHelper.Body.Instructions[1].Operand, bridge) ||
+        rebuiltHelper.Body.Instructions[3].Operand is not MethodReference reader ||
+        reader.FullName != runtimeNameReader || reader.DeclaringType.Scope.Name != runtimeAssembly))
+        throw new InvalidOperationException("Unexpected display-name helper calls");
     var runtimeCalls = bridge.Body.Instructions.Where(i => i.OpCode.Code == Code.Call &&
-        ((MethodReference)i.Operand).FullName == RuntimeMethod).Select(i => (MethodReference)i.Operand).ToArray();
-    if (runtimeCalls.Length != 2 || runtimeCalls[0].DeclaringType.Scope.Name != RuntimeAssembly ||
-        runtimeCalls[1].DeclaringType.Scope.Name != RuntimeAssembly ||
+        ((MethodReference)i.Operand).FullName == runtimeMethod).Select(i => (MethodReference)i.Operand).ToArray();
+    if (runtimeCalls.Length != 2 || runtimeCalls[0].DeclaringType.Scope.Name != runtimeAssembly ||
+        runtimeCalls[1].DeclaringType.Scope.Name != runtimeAssembly ||
         !bridge.Body.Instructions.Where(i => i.OpCode.Code == Code.Ldstr).Select(i => (string)i.Operand)
             .SequenceEqual(inlineIds.Keys.Concat(expectedLiterals)))
         throw new InvalidOperationException("Inline bridge read-back failed");
-    expectedReferences.Add(rebuilt.AssemblyReferences.Single(a => a.Name == RuntimeAssembly).FullName);
+    expectedReferences.Add(rebuilt.AssemblyReferences.Single(a => a.Name == runtimeAssembly).FullName);
 }
 if (!rebuilt.AssemblyReferences.Select(a => a.FullName).SequenceEqual(expectedReferences))
     throw new InvalidOperationException("Unexpected assembly dependency changes");
-string temporary = Path.Combine(work, ".speaker-probe-" + Guid.NewGuid().ToString("N") + ".tmp");
+string temporary = Path.Combine(Path.GetDirectoryName(output), ".speaker-probe-" + Guid.NewGuid().ToString("N") + ".tmp");
 try {
     using (var file = new FileStream(temporary, FileMode.CreateNew, FileAccess.Write, FileShare.None)) {
         file.Write(outputBytes);
@@ -238,7 +284,7 @@ try {
 } finally {
     if (File.Exists(temporary)) File.Delete(temporary);
 }
-var report = new { schema = 1, testOnly = true, platform = args[0],
+var report = new { schema = 1, testOnly = !production, platform = args[0],
     sourceSha256 = expectedHashes[args[0]], outputSha256 = Sha(outputBytes), mappedSpeakers = map.Keys.OrderBy(x => x).ToArray(),
     changedDisplayCallSites = siteKeys.OrderBy(x => x).ToArray(), verifiedExistingMethodBodies = before.Count,
     limitations = "Synthetic test-only DLL. No runtime, font, package, metadata-wide equivalence or nonstandard colon-source support is established." };
@@ -246,5 +292,10 @@ if (includeInline) {
     var details = JsonSerializer.SerializeToNode(report).AsObject();
     details["inlineRuntimeSha256"] = args[5];
     details["inlineIds"] = JsonSerializer.SerializeToNode(inlineIds.Keys.ToArray());
+    if (production) {
+        details.Remove("limitations");
+        details["locale"] = args[7];
+        details["fallbackChanged"] = fallback != originalFallback;
+    }
     Console.WriteLine(details.ToJsonString());
 } else Console.WriteLine(JsonSerializer.Serialize(report));

@@ -1,10 +1,24 @@
 using Yarn.Markup;
 using Yarn.Unity;
 
+#if SPEAKER_LOCALE
+namespace Dragons.SpeakerPresentation;
+#else
 namespace Dragons.SyntheticSpeakerInline;
+#endif
 
 public static class InlineSpeakerView
 {
+#if SPEAKER_LOCALE
+    public static string? NameFromView(MarkupParseResult view, LocalizedLine original)
+    {
+        if (ReferenceEquals(view.Attributes, original.Text.Attributes))
+            return original.CharacterName;
+        var character = view.Attributes.Single(attribute => attribute.Name == "character");
+        return character.TryGetProperty("name", out string? name) ? name : original.CharacterName;
+    }
+#endif
+
     public static MarkupParseResult Create(LocalizedLine line, string expectedName, string displayName)
     {
         MarkupParseResult original = line.Text;

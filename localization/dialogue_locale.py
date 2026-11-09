@@ -161,6 +161,9 @@ def read_locale(path, keys, values, source_hash=OBJECT_HASH, *, yarn_semantics=T
         prefix = PREFIX.match(source[key])
         if prefix and not value['text'].startswith(prefix.group(1)):
             raise ValueError(f'{key}: initial label/command must remain unchanged')
+        if (yarn_semantics and prefix and prefix.group(1) in {'Ryan: ', 'Conrad: '}
+                and PREFIX.match(value['text']).group(1) != prefix.group(1)):
+            raise ValueError(f'{key}: speaker delimiter whitespace must remain unchanged')
         if '\0' in value['text']:
             raise ValueError(f'{key}: NUL is not allowed')
     return doc['locale'], {k: v['text'] for k, v in lines.items()}

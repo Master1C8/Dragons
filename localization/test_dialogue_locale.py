@@ -47,6 +47,11 @@ class LocaleFileTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'label/command'):
             self.read()
 
+    def test_audited_speaker_delimiter_keeps_exact_whitespace(self):
+        self.doc['lines'][self.keys[0]]['text'] = 'Ryan:  <i>Test {0}</i>'
+        with self.assertRaisesRegex(ValueError, 'speaker delimiter whitespace'):
+            self.read()
+
     def test_duplicate_keys_are_rejected(self):
         self.path.write_text('{"schema":1,"schema":1}', encoding='utf-8')
         with self.assertRaisesRegex(ValueError, 'duplicate JSON key'):

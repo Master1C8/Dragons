@@ -6,6 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(SpeakerLocale)' == 'true'">
+    <AssemblyName>Dragons.SpeakerPresentation</AssemblyName>
+    <DefineConstants>$(DefineConstants);SPEAKER_LOCALE</DefineConstants>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="../speaker-inline-probe/InlineSpeakerView.cs" Link="InlineSpeakerView.cs" />
     <Reference Include="YarnSpinner"><HintPath>$(GameManaged)/YarnSpinner.dll</HintPath><Private>false</Private></Reference>

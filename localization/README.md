@@ -231,6 +231,40 @@ The serialized `New` fields in `level0` remain separate UI locale inputs
 on both platforms. Localize both groups when preparing the complete slot
 menu. The numeric save-progress formats are preserved.
 
+### Yarn speaker display names
+
+The speaker locale uses the same JSON shape. Set `sourceObjectSha256` to
+the original platform's `YarnSpinner.Unity.dll` SHA-256 and include
+`speaker-ryan` with source `Ryan` and `speaker-conrad` with source
+`Conrad`. Both display values must be single words of at most 40 BMP
+letters. Dialogue locale files still keep the exact English prefixes
+`Ryan: ` and `Conrad: ` including their whitespace.
+
+Build the patcher and the player runtime from the same checkout. Use fresh
+absolute output directories and the original platform's Managed directory.
+
+```sh
+dotnet build localization/tools/speaker-display-probe/speaker-display-probe.csproj \
+  -p:BaseIntermediateOutputPath=ABSOLUTE_TOOL_OBJ/ -o ABSOLUTE_TOOL_BIN/
+dotnet build localization/tools/speaker-inline-runtime/speaker-inline-runtime.csproj \
+  -p:SpeakerLocale=true "-p:GameManaged=$original_managed" \
+  -p:BaseIntermediateOutputPath=ABSOLUTE_RUNTIME_OBJ/ -o ABSOLUTE_RUNTIME_BIN/
+```
+
+Pass `--speaker-locale NAMES.json --speaker-tool ABSOLUTE_TOOL_BIN/speaker-display-probe.dll`,
+`--speaker-runtime ABSOLUTE_RUNTIME_BIN/Dragons.SpeakerPresentation.dll` and
+`--speaker-runtime-sha SHA256` to `build_game.py`. If given, the missing-line
+locale is applied in the same Yarn DLL pass. The managed text tool is still
+required when a new-slot locale is supplied. The app builder verifies both
+speaker DLLs in the final signed bundle.
+
+For a Windows staging directory, call `speaker_locale.prepare('windows', ...)`
+with that build's original Yarn Unity DLL, names, runtime and runtime SHA-256.
+Place both returned files in the staged Managed directory together. The
+returned receipt records the patched Yarn Unity and companion fingerprints.
+Windows installation and restoration are still separate from this preparation
+step. See the [paired speaker build evidence](evidence/speaker-locale-build-20261110.md).
+
 ## Optional settings labels and choices
 
 Settings labels and dropdown choices are stored in separate scriptable objects;
