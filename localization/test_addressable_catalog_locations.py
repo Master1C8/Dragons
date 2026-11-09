@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 import subprocess
 import tempfile
@@ -7,6 +8,8 @@ import unittest
 ROOT = Path(__file__).parent
 WORK = ROOT / 'work'
 TOOL = WORK / 'addressable-catalog-locations-bin/addressable-catalog-locations.dll'
+OPTIONS_TOOL = Path(os.environ.get('DRAGONS_CATALOG_OPTIONS_TOOL',
+                                   WORK / 'addressable-catalog-options-bin/addressable-catalog-locations.dll'))
 MAC = Path.home() / "Documents/Drag'N Wash.app/Contents/Resources/Data"
 WIN = Path('/Volumes/KINGSTONMAC/CrossOver/Bottles/Steam/drive_c/Dragn.Wash/game/DragNWash_Data')
 PREFIX = '{UnityEngine.AddressableAssets.Addressables.RuntimePath}'
@@ -71,6 +74,42 @@ class CatalogLocationTests(unittest.TestCase):
             self.assertNotEqual(altered.returncode, 0)
             self.assertIn('Unsupported catalog', altered.stderr)
             self.assertEqual(altered.stdout, '')
+
+
+@unittest.skipUnless(OPTIONS_TOOL.is_file() and MAC.is_dir() and WIN.is_dir(),
+                     'built catalog options scanner and both pinned game builds required')
+class CatalogBundleOptionsTests(unittest.TestCase):
+    def test_options_match_local_bundles_and_all_keys(self):
+        for platform, source in [('macos', MAC), ('windows', WIN)]:
+            with self.subTest(platform=platform):
+                cmd = ['dotnet', str(OPTIONS_TOOL), platform, str(source), '--bundle-options']
+                result = subprocess.run(cmd, capture_output=True, check=True)
+                repeat = subprocess.run(cmd, capture_output=True, check=True)
+                self.assertEqual(repeat.stdout, result.stdout)
+                report = json.loads(result.stdout)
+                self.assertEqual((report['keyCount'], report['locationCount'], report['nativeHashExceptions']),
+                                 (24, 13, 0))
+                prior = json.loads((WORK / f'catalog-locations-{platform}-20261107.json').read_bytes())
+                previous_keys = json.loads((WORK / f'catalog-keys-{platform}-20261107.json').read_bytes())['keys']
+                self.assertEqual(list(report['keyLocations']), previous_keys)
+                self.assertEqual({id for ids in report['keyLocations'].values() for id in ids},
+                                 {row['internalId'] for row in report['locations']})
+                self.assertEqual([{k: v for k, v in row.items() if k != 'dataAvailable'}
+                                  for row in report['locations']],
+                                 [{k: v for k, v in row.items() if k != 'dataAvailable'}
+                                  for row in prior['locations']])
+                bundles = {b['file'] for b in json.loads(
+                    (ROOT / f'evidence/addressables-{platform}-20261107.json').read_bytes())['bundles']}
+                options = {r['internalId']: r for r in report['bundleOptions']}
+                self.assertEqual({relative(id) for id in options}, bundles)
+                rows = {r['internalId']: r for r in report['locations']}
+                self.assertEqual({id for id, row in rows.items() if row['dataAvailable']}, set(options))
+                for id, row in options.items():
+                    self.assertEqual(row['bundleSize'], (source / 'StreamingAssets/aa' / relative(id)).stat().st_size)
+                    self.assertGreater(row['crc'], 0)
+                    raw_hash = ''.join(bytes.fromhex(word)[::-1].hex() for word in row['hash128Words'])
+                    self.assertTrue(rows[id]['primaryKey'].endswith(f'_{raw_hash}.bundle'))
+                    self.assertFalse(row['useWebRequestForLocalBundles'])
 
 
 if __name__ == '__main__':

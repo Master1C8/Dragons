@@ -9,8 +9,10 @@ using Mono.Cecil.Cil;
 using TypeAttributes = Mono.Cecil.TypeAttributes;
 using MethodAttributes = Mono.Cecil.MethodAttributes;
 
-if (args.Length != 2 || (args[0] != "macos" && args[0] != "windows"))
-    throw new ArgumentException("Usage: addressable-catalog-locations macos|windows ORIGINAL_DATA");
+if (args.Length is not (2 or 3) || (args[0] != "macos" && args[0] != "windows") ||
+    (args.Length == 3 && args[2] != "--bundle-options"))
+    throw new ArgumentException("Usage: addressable-catalog-locations macos|windows ORIGINAL_DATA [--bundle-options]");
+bool includeOptions = args.Length == 3;
 string Hash(byte[] b) => Convert.ToHexString(SHA256.HashData(b)).ToLowerInvariant();
 var manifestHashes = new Dictionary<string,string> {
     ["macos"] = "b3186bc39207255e937f5856be09906dc1a428d83a964d5f368f30861e32603c",
@@ -80,7 +82,34 @@ AssemblyLoadContext.Default.Resolving += (ctx, name) => {
     return file.bytes == null ? null : ctx.LoadFromStream(new MemoryStream(file.bytes));
 };
 var addressables = dlls.Single(f => f.name == "Unity.Addressables.dll");
-var assembly = AssemblyLoadContext.Default.LoadFromStream(new MemoryStream(addressables.bytes));
+var addressableBytes = addressables.bytes;
+if (includeOptions) {
+    using var core = ModuleDefinition.ReadModule(new MemoryStream(dlls.Single(f => f.name == "UnityEngine.CoreModule.dll").bytes));
+    var hashType = core.GetType("UnityEngine.Hash128");
+    if (!hashType.IsSequentialLayout || !hashType.Fields.Where(f => !f.IsStatic)
+        .Select(f => (f.Name, f.FieldType.FullName)).SequenceEqual(new[] { ("u64_0", "System.UInt64"), ("u64_1", "System.UInt64") }))
+        throw new InvalidOperationException("Unsupported Hash128 layout");
+    using var resolver = new DefaultAssemblyResolver();
+    resolver.AddSearchDirectory(managed);
+    using var addressable = ModuleDefinition.ReadModule(new MemoryStream(addressableBytes),
+        new ReaderParameters { AssemblyResolver = resolver });
+    var adapter = addressable.GetTypes().Single(t => t.FullName ==
+        "UnityEngine.AddressableAssets.ResourceLocators.ContentCatalogData/AssetBundleRequestOptionsSerializationAdapter");
+    var decoder = adapter.Methods.Single(m => m.Name == "Deserialize");
+    var convert = decoder.Body.Instructions.Single(i => i.Offset == 0x0049);
+    var prefix = convert.Previous;
+    if (convert.OpCode != OpCodes.Callvirt || ((MethodReference)convert.Operand).FullName !=
+        "System.String System.Object::ToString()" || prefix.OpCode != OpCodes.Constrained ||
+        ((TypeReference)prefix.Operand).FullName != hashType.FullName)
+        throw new InvalidOperationException("Unexpected native hash conversion site");
+    var replacement = new GenericInstanceMethod(addressable.ImportReference(typeof(RawHash128).GetMethod(nameof(RawHash128.Words))));
+    replacement.GenericArguments.Add((TypeReference)prefix.Operand);
+    prefix.OpCode = OpCodes.Nop; prefix.Operand = null;
+    convert.OpCode = OpCodes.Call; convert.Operand = replacement;
+    using var prepared = new MemoryStream(); addressable.Write(prepared);
+    addressableBytes = prepared.ToArray();
+}
+var assembly = AssemblyLoadContext.Default.LoadFromStream(new MemoryStream(addressableBytes));
 var type = assembly.GetType("UnityEngine.AddressableAssets.ResourceLocators.ContentCatalogData", true);
 const BindingFlags flags = BindingFlags.Static | BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic;
 var content = type.GetMethod("LoadFromFile", flags).Invoke(null, new object[] {catalog, false});
@@ -89,6 +118,11 @@ var stderr = Console.Error;
 using var logged = new StringWriter();
 Console.SetError(logged);
 var locations = new List<object>();
+var optionRows = new List<object>();
+var locationIds = new HashSet<string>(StringComparer.Ordinal);
+var keyLocations = new Dictionary<string, string[]>(StringComparer.Ordinal);
+const string BundleOptionsType = "UnityEngine.ResourceManagement.ResourceProviders.AssetBundleRequestOptions";
+const string BundleResourceType = "UnityEngine.ResourceManagement.ResourceProviders.IAssetBundleResource";
 try {
     var values = (IEnumerable)locator.GetType().GetProperty("AllLocations", flags).GetValue(locator);
     foreach (var item in values) {
@@ -97,20 +131,79 @@ try {
         var dependencies = new List<string>();
         foreach (var dep in (IEnumerable)Get("Dependencies"))
             dependencies.Add((string)dep.GetType().GetProperty("InternalId", flags).GetValue(dep));
-        locations.Add(new { internalId = (string)Get("InternalId"), primaryKey = (string)Get("PrimaryKey"),
-            providerId = (string)Get("ProviderId"), resourceType = ((Type)Get("ResourceType"))?.FullName,
-            dependencies, dataAvailable = Get("Data") != null });
+        var id = (string)Get("InternalId");
+        var resourceType = ((Type)Get("ResourceType"))?.FullName;
+        var option = Get("Data");
+        locations.Add(new { internalId = id, primaryKey = (string)Get("PrimaryKey"),
+            providerId = (string)Get("ProviderId"), resourceType, dependencies, dataAvailable = option != null });
+        if (!includeOptions) continue;
+        if (!locationIds.Add(id)) throw new InvalidOperationException("Duplicate catalog location");
+        if (resourceType != BundleResourceType && option == null) continue;
+        if (resourceType != BundleResourceType || option?.GetType().FullName != BundleOptionsType)
+            throw new InvalidOperationException("Unexpected catalog option type");
+        object Value(string name) => option.GetType().GetProperty(name, flags).GetValue(option);
+        var hash128Words = ((string)Value("Hash")).Split(':');
+        if (hash128Words.Length != 2 || hash128Words.Any(word => word.Length != 16 || !word.All(Uri.IsHexDigit)))
+            throw new InvalidOperationException("Unexpected Hash128 word representation");
+        optionRows.Add(new { internalId = id, hash128Words, bundleName = (string)Value("BundleName"),
+            crc = (uint)Value("Crc"), bundleSize = (long)Value("BundleSize"), timeout = (int)Value("Timeout"),
+            retryCount = (int)Value("RetryCount"), redirectLimit = (int)Value("RedirectLimit"),
+            assetLoadMode = Value("AssetLoadMode").ToString(), chunkedTransfer = (bool)Value("ChunkedTransfer"),
+            useCrcForCachedBundle = (bool)Value("UseCrcForCachedBundle"),
+            useWebRequestForLocalBundles = (bool)Value("UseUnityWebRequestForLocalBundles"),
+            clearOtherCachedVersions = (bool)Value("ClearOtherCachedVersionsWhenLoaded") });
+    }
+    if (includeOptions) {
+        var locatorType = locator.GetType();
+        var locate = locatorType.GetMethod("Locate", flags);
+        var locatedIds = new HashSet<string>(StringComparer.Ordinal);
+        foreach (var key in (IEnumerable)locatorType.GetProperty("Keys", flags).GetValue(locator)) {
+            object[] arguments = { key, null, null };
+            if (key is not string name || !(bool)locate.Invoke(locator, arguments) || arguments[2] is not IEnumerable matches)
+                throw new InvalidOperationException("Catalog key has no location");
+            var ids = matches.Cast<object>().Select(item =>
+                (string)item.GetType().GetProperty("InternalId", flags).GetValue(item)).ToArray();
+            if (ids.Length == 0 || !keyLocations.TryAdd(name, ids))
+                throw new InvalidOperationException("Empty or duplicate catalog key");
+            locatedIds.UnionWith(ids);
+        }
+        if (keyLocations.Count != 24 || !locationIds.SetEquals(locatedIds) || locationIds.Count != 13 || optionRows.Count != 3)
+            throw new InvalidOperationException("Catalog key and location coverage differs");
     }
 } finally { Console.SetError(stderr); }
 var exceptions = logged.ToString().Split("VN_DIAGNOSTIC_EXCEPTION", StringSplitOptions.None);
-if (exceptions.Length != 4 || exceptions[0].Length != 0 || exceptions.Skip(1).Any(e =>
+if (includeOptions ? logged.GetStringBuilder().Length != 0 : exceptions.Length != 4 || exceptions[0].Length != 0 || exceptions.Skip(1).Any(e =>
         !e.TrimStart().StartsWith("System.Security.SecurityException:", StringComparison.Ordinal) ||
         !e.Contains("UnityEngine.Hash128.Hash128ToStringImpl")))
     throw new InvalidOperationException("Unexpected diagnostic location errors: " + logged.ToString());
 if (Hash(File.ReadAllBytes(catalog)) != catalogHashes[args[0]]) throw new InvalidOperationException("Catalog changed during reading");
+if (includeOptions) {
+    Console.WriteLine(JsonSerializer.Serialize(new {schema = 1, platform = args[0], catalogSha256 = catalogHashes[args[0]],
+        managedInventorySha256 = manifestHashes[args[0]], addressablesSha256 = Hash(addressables.bytes),
+        resourceManagerSha256 = Hash(manager.bytes), diagnosticMemoryCopyCalls = replacements, diagnosticLoggerCalls = logs,
+        nativeHashExceptions = 0, keyCount = keyLocations.Count, locationCount = locations.Count,
+        locations, keyLocations, bundleOptions = optionRows,
+        limitations = "In-memory diagnostic. Hash128 words are the raw managed UInt64 fields, not native Unity hash strings. Catalog keys and local options were decoded; Unity runtime loading and external catalogs remain unverified." },
+        new JsonSerializerOptions {WriteIndented = true}));
+    return;
+}
 Console.WriteLine(JsonSerializer.Serialize(new {schema = 1, platform = args[0], catalogSha256 = catalogHashes[args[0]],
     managedInventorySha256 = manifestHashes[args[0]], addressablesSha256 = Hash(addressables.bytes),
     resourceManagerSha256 = Hash(manager.bytes), diagnosticMemoryCopyCalls = replacements, diagnosticLoggerCalls = logs,
     nativeHashExceptions = exceptions.Length - 1, locationCount = locations.Count, locations,
     limitations = "Diagnostic in-memory ResourceManager copy substitutes memory copy and logs exceptions. Native Hash128 conversion failed for three bundle option records; location enumeration is partial, with bundle Data unavailable. Runtime loading, remote catalogs and completeness remain unverified."},
     new JsonSerializerOptions {WriteIndented = true}));
+
+public static class RawHash128
+{
+    public static string Words<T>(ref T value) where T : struct
+    {
+        var bytes = System.Runtime.InteropServices.MemoryMarshal.AsBytes(
+            System.Runtime.InteropServices.MemoryMarshal.CreateReadOnlySpan(ref value, 1));
+        if (bytes.Length != 16 || !BitConverter.IsLittleEndian)
+            throw new InvalidOperationException("Unsupported managed Hash128 layout");
+        ulong first = System.Buffers.Binary.BinaryPrimitives.ReadUInt64LittleEndian(bytes);
+        ulong second = System.Buffers.Binary.BinaryPrimitives.ReadUInt64LittleEndian(bytes[8..]);
+        return $"{first:x16}:{second:x16}";
+    }
+}

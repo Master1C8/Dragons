@@ -46,3 +46,48 @@ python -m unittest discover -s localization -p test_addressable_catalog_location
 
 The tests expect the tool in `work/addressable-catalog-locations-bin` and both
 locally pinned game paths. The full localization source handoff remains open.
+
+## Bundle options and key coverage, 2026-11-09
+
+The optional `--bundle-options` mode works around the remaining native
+conversion at one verified call in the in-memory Addressables decoder.
+It checks that the pinned `Hash128` layout consists of two sequential
+`UInt64` fields, then records the two raw words. No native hash string is
+used to load or identify a bundle. The old mode still reproduces the
+historical partial reports byte-for-byte.
+
+On each build all 24 keys resolved. Their union exactly matches the 13
+enumerated locations, and the three bundle option objects decoded with
+zero diagnostic exceptions. The report preserves the key-to-location
+relationships and the original IDs, providers, and dependencies. Tests
+independently compare the key list to the earlier key report, compare
+locations with the earlier location report, compare each bundle size to
+its local file, and verify that the raw hash bytes match the corresponding
+bundle key suffix. All three options disable Unity Web Request for local
+bundles. The only catalog listed at startup in both pinned settings files
+is the local `catalog.bin`, with no dependencies or extra initialization
+entries.
+
+The local catalog and its three previously decoded containers therefore
+account for the locale configuration and nine compute shaders, without a
+string-table location. A scoped direct-reference scan of all 170 macOS
+and 172 Windows managed assemblies found one game-code Addressables call,
+`SceneLoader`'s `LoadSceneAsync`, and three Yarn Unity calls in its
+localized-object and Unity string database code. No direct call to the
+public `LoadContentCatalogAsync` appeared in the scan. This is a static scan and
+leaves runtime scene lookup, provider activation, indirect external catalogs,
+and sources outside this inventory unverified.
+
+Local outputs are in `localization/work/addressables-bundle-options-20261109.MY028D/`.
+
+| Evidence | macOS SHA-256 | Windows SHA-256 |
+| --- | --- | --- |
+| Catalog options and key coverage | `9163d2e8c3c46ec05cae999ecf4c1b80ddb73962c02d0ea036fac0ab93246db1` | `6ec0991b541d39a43879887ca31cab3492ecc4823585d7325d8ca02a4efb1aee` |
+| Managed API reference scan | `861099ae6adb9bd979c8614eee4c595ee3e211a885273c686b125a1e6fc92961` | `2bdf3e95442a5d3ac0689c33c145c848a46e30571709bc32ca7e2aff0231f46c` |
+
+```sh
+dotnet ABSOLUTE_NEW_BIN/addressable-catalog-locations.dll macos ORIGINAL_MAC_DATA --bundle-options
+dotnet ABSOLUTE_NEW_BIN/addressable-catalog-locations.dll windows ORIGINAL_WINDOWS_DATA --bundle-options
+DRAGONS_CATALOG_OPTIONS_TOOL=ABSOLUTE_NEW_BIN/addressable-catalog-locations.dll \
+  python -m unittest discover -s localization -p 'test_addressable_catalog_locations.py' -v
+```
