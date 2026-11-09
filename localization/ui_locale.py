@@ -60,7 +60,7 @@ def export(data_dir, name, path):
     print(f'Exported {len(rows)} TextMeshPro objects from {name}; dynamic placeholders and names require classification.')
 
 
-def patch_into(source_dir, name, locale_file, requested, target, dialogue_object=None):
+def patch_into(source_dir, name, locale_file, requested, target, dialogue_object=None, *, repaired_project=None):
     import UnityPy
     original, rows = scan(source_dir, name)
     keys = list(rows)
@@ -75,8 +75,20 @@ def patch_into(source_dir, name, locale_file, requested, target, dialogue_object
     current = {(o.path_id, o.type.name): o for o in env.objects}
     if len(baseline) != len(original.objects) or len(current) != len(env.objects) or baseline.keys() != current.keys():
         raise ValueError(f'{name}: object inventory changed')
+    preceding_changes = {}
+    if name == 'sharedassets1.assets' and dialogue_object is not None:
+        preceding_changes[(dl.PATH_ID, 'MonoBehaviour')] = dialogue_object
+    if repaired_project is not None:
+        import compare_yarn_versions as versions
+        import yarn_transition_repair as transitions
+        project = (versions.BUILDS['macos']['project'], 'MonoBehaviour')
+        if name != 'sharedassets1.assets' or project not in baseline:
+            raise ValueError(f'{name}: unexpected YarnProject transition repair')
+        if repaired_project != transitions.repair_project('macos', baseline[project].get_raw_data()):
+            raise ValueError(f'{name}: unexpected repaired YarnProject bytes')
+        preceding_changes[project] = repaired_project
     for key, obj in baseline.items():
-        expected = dialogue_object if name == 'sharedassets1.assets' and key[0] == dl.PATH_ID and dialogue_object is not None else obj.get_raw_data()
+        expected = preceding_changes.get(key, obj.get_raw_data())
         if current[key].get_raw_data() != expected:
             raise ValueError(f'{name}: unexpected base object {key}')
     expected_objects = {}

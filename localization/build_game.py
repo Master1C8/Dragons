@@ -12,6 +12,7 @@ import tempfile
 
 import dialogue_locale as dl
 import ui_locale as ui
+import yarn_transition_repair as transitions
 
 ASSET_RELATIVE = Path('Contents/Resources/Data/sharedassets1.assets')
 
@@ -30,7 +31,8 @@ def rename_exclusive(source, destination):
 
 
 def build(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
-          test_profile_code=None, test_caption_layout=False, test_slot_font=False):
+          test_profile_code=None, test_caption_layout=False, test_slot_font=False,
+          restore_yarn_transitions=False):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -49,7 +51,8 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
     try:
         staged_app = stage / destination.name
         report = _build_unpublished(source, locale_file, requested, staged_app, ui_dir, settings_file,
-                                    test_profile_code, test_caption_layout, test_slot_font)
+                                    test_profile_code, test_caption_layout, test_slot_font,
+                                    restore_yarn_transitions)
         rename_exclusive(staged_app, destination)
     finally:
         shutil.rmtree(stage)
@@ -62,7 +65,8 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
 
 
 def _build_unpublished(source, locale_file, requested, destination, ui_dir=None, settings_file=None,
-                       test_profile_code=None, test_caption_layout=False, test_slot_font=False):
+                       test_profile_code=None, test_caption_layout=False, test_slot_font=False,
+                       restore_yarn_transitions=False):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -122,6 +126,18 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
     if test_caption_layout:
         if dl.sha((source / 'Contents/Resources/Data/sharedassets0.assets').read_bytes()) != ui.ASSETS['sharedassets0.assets']:
             raise ValueError('unsupported settings layout experiment source')
+    replacements = {(obj.path_id, obj.type.name): changed}
+    repaired_project = None
+    if restore_yarn_transitions:
+        import compare_yarn_versions as versions
+        project_id = versions.BUILDS['macos']['project']
+        projects = [o for o in env.objects if (o.path_id, o.type.name) == (project_id, 'MonoBehaviour')]
+        if len(projects) != 1:
+            raise ValueError('expected one macOS YarnProject for transition repair')
+        project = projects[0]
+        repaired_project = transitions.repair_project('macos', project.get_raw_data())
+        project.set_raw_data(repaired_project)
+        replacements[(project_id, project.type.name)] = repaired_project
     obj.set_raw_data(changed)
     data = env.file.save()
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -141,7 +157,7 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
     if len(before) != len(env.objects) or len(after) != len(reopened.objects) or before.keys() != after.keys():
         raise ValueError('saved object inventory differs')
     for key, old in before.items():
-        expected = changed if key[0] == dl.PATH_ID else old.get_raw_data()
+        expected = replacements.get(key, old.get_raw_data())
         if expected != after[key].get_raw_data():
             raise ValueError(f'saved object differs: {key}')
     ui_count = 0
@@ -150,7 +166,8 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
         if target_ui.is_symlink() or destination.resolve() not in target_ui.resolve().parents:
             raise ValueError('unsafe UI destination')
         ui_count += ui.patch_into(source / 'Contents/Resources/Data', name, file, requested,
-                                  target_ui, changed if name == 'sharedassets1.assets' else None)
+                                  target_ui, changed if name == 'sharedassets1.assets' else None,
+                                  repaired_project=repaired_project if name == 'sharedassets1.assets' else None)
     settings_count = 0
     if prepared_settings is not None:
         target_settings = destination / 'Contents/Resources/Data' / settings.ASSET
@@ -209,6 +226,7 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
                       'dialogueAssetSha256BeforeUi': dl.sha(data), 'uiStrings': ui_count,
                       'settingsStrings': settings_count,
                       'testProfile': profile['code'] if profile else None,
+                      'restoredYarnTransitions': len(transitions.CONTINUATIONS) if restore_yarn_transitions else 0,
                       'testSettingsLayoutSha256': layout_hash,
                       'testSlotFontSha256': slot_font_hash}
 
@@ -226,9 +244,11 @@ def main():
                    help='experimental caption height for isolated test profiles only')
     p.add_argument('--test-slot-font', action='store_true',
                    help='experimental slot font size for isolated test profiles only')
+    p.add_argument('--restore-yarn-transitions', action='store_true',
+                   help='apply the source-pinned five-node Yarn repair to the output copy')
     a = p.parse_args()
     build(a.source_app, a.locale_file, a.locale, a.output_app, a.ui_dir, a.settings_locale,
-          a.test_profile, a.test_settings_caption_layout, a.test_slot_font)
+          a.test_profile, a.test_settings_caption_layout, a.test_slot_font, a.restore_yarn_transitions)
 
 
 if __name__ == '__main__':

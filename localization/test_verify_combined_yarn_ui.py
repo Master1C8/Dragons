@@ -1,9 +1,11 @@
 import json
 from pathlib import Path
+import sys
 import tempfile
 import unittest
 
 import UnityPy
+import build_game
 import compare_yarn_versions as versions
 import dialogue_locale as dl
 import ui_locale as mac_ui
@@ -18,6 +20,46 @@ WIN = Path('/Volumes/KINGSTONMAC/CrossOver/Bottles/Steam/drive_c/Dragn.Wash/game
 
 @unittest.skipUnless(MAC.is_dir() and WIN.is_dir() and WORK.is_dir(), 'both pinned builds required')
 class CombinedVerificationTests(unittest.TestCase):
+    @unittest.skipUnless(sys.platform == 'darwin', 'signed macOS builder required')
+    def test_transition_repair_composes_with_dialogue_and_ui(self):
+        with tempfile.TemporaryDirectory(prefix='transition-builder-', dir=WORK) as directory:
+            root = Path(directory)
+            for platform, source, path_id in [('macos', MAC, 11117), ('windows', WIN, 11105)]:
+                with self.subTest(platform=platform):
+                    spec = versions.BUILDS[platform]
+                    yarn = ROOT / 'ru' / platform / 'dialogue.json'
+                    ui_dir = root / platform
+                    ui_dir.mkdir()
+                    ui = ui_dir / 'sharedassets1.assets.json'
+                    ui.write_text(json.dumps({
+                        'schema': 1, 'locale': 'ru', 'sourceObjectSha256': spec['assetSha256'],
+                        'lines': {f'sharedassets1.assets#{path_id}': {'source': 'Option Text', 'text': 'ТЕСТ'}},
+                    }), encoding='utf-8')
+                    if platform == 'macos':
+                        app = root / 'Repaired.app'
+                        build_game.build(source.parents[2], yarn, 'ru', app, ui_dir=ui_dir,
+                                         restore_yarn_transitions=True)
+                        asset = app / build_game.ASSET_RELATIVE
+                    else:
+                        asset = root / 'repaired.assets'
+                        win_ui.build(source, 'sharedassets1.assets', ui, 'ru', asset,
+                                     dialogue_locale_file=yarn, restore_yarn_transitions=True)
+                    report = verifier.verify(platform, source, asset, 'ru', yarn, ui,
+                                             restore_yarn_transitions=True)
+                    self.assertEqual(report['restoredYarnTransitions'], 5)
+                    self.assertEqual(report['expectedEntries'], {'yarn': 15, 'ui': 1})
+                    with self.assertRaisesRegex(ValueError, 'candidate object differs from expected'):
+                        verifier.verify(platform, source, asset, 'ru', yarn, ui)
+                    env = UnityPy.load(str(asset))
+                    project = next(obj for obj in env.objects if obj.path_id == spec['project'])
+                    raw = project.get_raw_data()
+                    project.set_raw_data(raw[:-1] + bytes([raw[-1] ^ 1]))
+                    changed = root / f'{platform}-corrupt.assets'
+                    changed.write_bytes(env.file.save())
+                    with self.assertRaisesRegex(ValueError, 'candidate object differs from expected'):
+                        verifier.verify(platform, source, changed, 'ru', yarn, ui,
+                                        restore_yarn_transitions=True)
+
     def test_combined_assets_and_corruption_controls(self):
         with tempfile.TemporaryDirectory(prefix='combined-verifier-', dir=WORK) as directory:
             root = Path(directory)

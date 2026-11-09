@@ -15,6 +15,7 @@ import dialogue_locale as dl
 import credit_name_preservation as credits
 import map_ui_hierarchy as ui_map
 import windows_settings_locale as windows_settings
+import yarn_transition_repair as transitions
 
 
 def scan(data, asset):
@@ -80,7 +81,8 @@ def verify_output(path, baseline, changed):
             raise ValueError(f'saved Windows UI object differs: {identity}')
 
 
-def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale_file=None, settings_locale_file=None):
+def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale_file=None,
+          settings_locale_file=None, restore_yarn_transitions=False):
     target = safe_output(data, output)
     env, rows = scan(data, asset)
     keys = list(rows)
@@ -97,6 +99,8 @@ def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale
         credits.validate('windows', asset, dict(zip(keys, values)), translations)
     if dialogue_locale_file is not None and asset != 'sharedassets1.assets':
         raise ValueError('dialogue can be combined only with sharedassets1.assets')
+    if restore_yarn_transitions and asset != 'sharedassets1.assets':
+        raise ValueError('Yarn transition repair requires sharedassets1.assets')
     if settings_locale_file is not None and asset != 'sharedassets0.assets':
         raise ValueError('settings can be combined only with sharedassets0.assets')
     objects = {(o.path_id, o.type.name): o for o in env.objects}
@@ -132,6 +136,12 @@ def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale
         changed[identity] = encoded
         objects[identity].set_raw_data(encoded)
         dialogue_count = len(dialogue_text)
+    if restore_yarn_transitions:
+        identity = (versions.BUILDS['windows']['project'], 'MonoBehaviour')
+        if identity not in baseline or identity in changed:
+            raise ValueError('unexpected or overlapping Windows YarnProject identity')
+        changed[identity] = transitions.repair_project('windows', baseline[identity])
+        objects[identity].set_raw_data(changed[identity])
     prepared_settings = None
     setting_schemas = {}
     if settings_locale_file is not None:
@@ -154,6 +164,7 @@ def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale
             'asset': asset, 'sourceSha256': ui_map.WINDOWS_ASSETS[asset], 'locale': code,
             'availableFields': len(rows), 'changedFields': len(translations),
             'dialogueFields': dialogue_count,
+            'restoredYarnTransitions': len(transitions.CONTINUATIONS) if restore_yarn_transitions else 0,
             'settingsFields': prepared_settings['count'] if prepared_settings is not None else 0,
             'outputSha256': dl.sha(result), 'output': str(target),
             'limitations': 'UI plus optional Yarn or settings asset changes only. Source classification, code, fonts, packaging and runtime behavior require separate validation.'}
@@ -167,12 +178,15 @@ def main():
     p.add_argument('--requested-locale', required=True)
     p.add_argument('--dialogue-locale-file', type=Path, help='optional source-bound Yarn locale for sharedassets1.assets')
     p.add_argument('--settings-locale-file', type=Path, help='optional source-bound settings locale for sharedassets0.assets')
+    p.add_argument('--restore-yarn-transitions', action='store_true',
+                   help='apply the source-pinned five-node Yarn repair to sharedassets1.assets')
     p.add_argument('--output', required=True, type=Path)
     args = p.parse_args()
     print(json.dumps(build(args.source_data, args.asset, args.locale_file,
                            args.requested_locale, args.output,
                            dialogue_locale_file=args.dialogue_locale_file,
-                           settings_locale_file=args.settings_locale_file), ensure_ascii=False))
+                           settings_locale_file=args.settings_locale_file,
+                           restore_yarn_transitions=args.restore_yarn_transitions), ensure_ascii=False))
 
 
 if __name__ == '__main__':

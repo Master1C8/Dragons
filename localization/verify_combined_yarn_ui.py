@@ -10,9 +10,10 @@ import dialogue_locale as dl
 import ui_locale as mac_ui
 import windows_ui_locale as win_ui
 import verify_yarn_preservation as common
+import yarn_transition_repair as transitions
 
 
-def verify(platform, source_data, candidate, requested, yarn_locale, ui_locale):
+def verify(platform, source_data, candidate, requested, yarn_locale, ui_locale, *, restore_yarn_transitions=False):
     if UnityPy.__version__ != '1.25.4' or platform not in versions.BUILDS:
         raise ValueError('unsupported UnityPy version or platform')
     if yarn_locale is None and ui_locale is None:
@@ -27,6 +28,9 @@ def verify(platform, source_data, candidate, requested, yarn_locale, ui_locale):
         raise ValueError('candidate Unity object inventory changed')
     expected = {}
     counts = {'yarn': 0, 'ui': 0}
+    if restore_yarn_transitions:
+        project = (spec['project'], 'MonoBehaviour')
+        expected[project] = transitions.repair_project(platform, before[project])
     if yarn_locale is not None:
         code, translations = dl.read_locale(yarn_locale, keys, values, spec['localizationSha256'], yarn_semantics=True)
         if code != requested:
@@ -61,6 +65,7 @@ def verify(platform, source_data, candidate, requested, yarn_locale, ui_locale):
             'yarnLocaleSha256': dl.sha(Path(yarn_locale).read_bytes()) if yarn_locale else None,
             'uiLocaleSha256': dl.sha(Path(ui_locale).read_bytes()) if ui_locale else None,
             'candidateAssetSha256': dl.sha(candidate.read_bytes()), 'expectedEntries': counts,
+            'restoredYarnTransitions': len(transitions.CONTINUATIONS) if restore_yarn_transitions else 0,
             'verifiedObjects': len(before),
             'limitations': 'Exact object comparison for one Yarn/UI shared asset only. Not full source classification, semantic translation, runtime, installed-package, saves or restoration evidence.'}
 
@@ -73,9 +78,11 @@ def main():
     parser.add_argument('--locale', required=True)
     parser.add_argument('--yarn-locale', type=Path)
     parser.add_argument('--ui-locale', type=Path)
+    parser.add_argument('--restore-yarn-transitions', action='store_true')
     args = parser.parse_args()
     print(json.dumps(verify(args.platform, args.source_data, args.candidate_asset, args.locale,
-                            args.yarn_locale, args.ui_locale), ensure_ascii=False, indent=2))
+                            args.yarn_locale, args.ui_locale,
+                            restore_yarn_transitions=args.restore_yarn_transitions), ensure_ascii=False, indent=2))
 
 
 if __name__ == '__main__':

@@ -131,6 +131,21 @@ used alone. See `evidence/windows-ui-dialogue-composition-20261107.md` and
 asset operations; source classification, a complete Windows package and final
 runtime checks remain required.
 
+## Restoring missing Yarn transitions
+
+Pass `--restore-yarn-transitions` to `build_game.py` or to
+`windows_ui_locale.py` when building `sharedassets1.assets`. Both paths
+regenerate the exact five previously tested continuation nodes from the pinned
+source and verify the serialized output. The original program bytes, all
+existing nodes and translation IDs are preserved. The flag composes with
+dialogue and UI locale files. Pass the same flag to
+`verify_combined_yarn_ui.py` to include the repaired YarnProject in its exact
+object comparison.
+
+The flag is opt-in while normal gameplay verification is pending. Use a fresh
+macOS test profile or an isolated Windows game and save directory for runtime
+checks. See [the transition evidence](evidence/yarn-transition-runtime-20261109.md).
+
 ## Optional TextMeshPro interface strings
 
 For `level2`, both platform adapters preserve the 34 source-bound contributor
