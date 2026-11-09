@@ -66,8 +66,12 @@ against active hitboxes and completed both activities through stock
 input. Its combined choice reached `Conrad_Outro_3` and the same four
 outro choices reached `WaitingOnExitButton` with evaluation `DONE`.
 The receipt records all 607 samples as hidden and the checked original
-profile roots as unchanged. Both successful route runs used isolated,
-instrumented English copies and ended at exit readiness.
+profile roots as unchanged. Those route runs used isolated, instrumented
+English copies and ended at exit readiness. A follow-up on both builds
+pressed the actual exit button through stock input. The game advanced
+from `Conrad_3_8` to `Alexander_3_9` and saved the new index. After
+relaunch, the original Load Game and slot buttons restored the new
+level and a Conrad choice flag. Both runs stayed in the background.
 See [the gameplay receipts](localization/evidence/background-gameplay-20261109.md)
 and [the performance and Windows test](localization/evidence/background-performance-20261109.md).
 
@@ -284,8 +288,12 @@ I/O was then exercised in the
 [paired disk control](localization/evidence/alexander-question-analysis-20261107.md#stock-slot-disk-control-2026-11-10).
 Both original save managers wrote and reloaded progress and the
 selected once flag, preserved the previous file in a backup, and
-left an empty adjacent slot independent. Unity gameplay reload
-and the Conrad route after exit readiness remain pending.
+left an empty adjacent slot independent. The [Conrad exit and reload
+control](localization/evidence/background-performance-20261109.md#stock-exit-save-and-reload-2026-11-10)
+exercises Unity gameplay persistence for the Conrad route on both
+builds, including byte-identical backup and stock menu reload. Reload
+of Alexander's once-only question flags in Unity, native Windows
+and final Russian build verification remain open.
 
 ## Inputs and evidence
 

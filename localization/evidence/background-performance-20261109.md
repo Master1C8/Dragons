@@ -401,3 +401,60 @@ Artifacts are under `localization/work/macos-conrad-contact-20261109.ck4zOH/`.
 | Instrumented game DLL | `7d97754b9cff4f74090db3acce1c918a254472115786c181892f90ea0201a098` |
 | Companion DLL | `9ff1be608b0fbdb3004871c2cae6e2eaf67b2865541338755fdf4de3a1b10e4c` |
 | Companion source | `2d66aadbdf42f082b53784a27e3111ecba1778921fd6228f77080ef0bf9d2522` |
+
+## Stock exit, save and reload, 2026-11-10
+
+The paired source `LevelFlow` maps zero-based index 7 to `Conrad_3_8`
+and 8 to `Alexander_3_9`. The two local asset references are
+`10657 → 10652` on macOS and `10645 → 10640` on Windows. The pinned
+original assemblies call `Flags.Save(int)` from `NextLevel` after
+incrementing the current index. The tested assets match the previous
+English-table repair runs, with SHA-256 `380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5`
+on macOS and `59ccbdabf4579e47f0e7f8c353b7f697fcd54368423484c341c4f13803a5d335`
+on Windows.
+
+Both players repeated the mount-last route and the four outro choices.
+The companion used stock movement and aiming until the hand ray hit
+the original `DoneButton`, then sent the original `Player/Plap` action.
+The game logged `WaitingOnExitButton → WalkingToExit → Exited`, then
+started the next dragon and reached `WaitingToBeLetIn`. The exit
+observers each recorded a false timeout with in-memory level 8. Their
+save predicate contained a literal backspace after the digit instead
+of a regex word boundary. Independent structured JSON readback found
+exactly one `levelIndex` field with value 8 in each saved slot, along
+with the new `suggested_ryan_to_conrad` flag. Each original
+`savegame_backup.dgn` matched the source fixture byte for byte and
+retained index 7. The macOS save retained the version-1 header and the
+Windows save retained the legacy format.
+
+A fresh player process on each build opened the stock Load Game menu
+and clicked the first slot with a virtual mouse. The read-only reload
+probe observed index 8, the restored `suggested_ryan_to_conrad` flag
+and `WaitingToBeLetIn` in gameplay. The probe did not reseed the slot
+or invoke game loading or save methods directly. All six synthetic
+save and backup files across the selected test profiles had the same
+SHA-256 before and after reload. Across exit and reload the macOS
+observers sampled 819 and 43
+times, and the CrossOver observers sampled 1,281 and 72 times. Every
+sample showed zero on-screen windows and zero foreground ownership.
+The checked original profile files matched their baselines. Both
+macOS test apps passed signature verification. The Windows runs used
+CrossOver with Null graphics, which logged fluid emitter exceptions.
+These runs establish the route and persistence for isolated English
+copies. Final Russian text, visual acceptance and native Windows
+remain unverified.
+
+Exit logs, observer receipts, paired level-flow readback and copies of
+the synthetic save pairs are under
+`localization/work/conrad-exit-save-20261110.OCKyMV/`.
+Reload logs and receipts are under
+`localization/work/conrad-reload-20261110.zcAS1o/`.
+
+| Artifact | macOS SHA-256 | Windows SHA-256 |
+| --- | --- | --- |
+| Exit Unity log | `e846709a1a3ab7f75515875275f7305aa81f676d8b63e4a597b0f200fda48354` | `07f5aad83e990d7a0682f6eb649d6a20f4ef868ae15a5019ab360396a51cef88` |
+| Exit observer receipt | `c7af6e865efd023c5567fe5d90affa85b04fc7711529bc1bd7813138d2e8f69d` | `c5e2451a57d649cede6eef25ae44134fa6ba369aa48942f7b474c9b931adecdc` |
+| Index 8 save | `55e7df680ab688bcfab947d4f929b75d5ce3884346ec31584c683cd35999ee5b` | `cf6abda400ddab8019e4a53674da6d8099e3130b26d29d27b15d6d57156b4d17` |
+| Index 7 backup and fixture | `d84b9801813a463d1e6c4c8f66322f7dad9f2083419590f0c2070ca406b7a981` | `f22430735fb7e3d69be1a525ba0eb6d2633d50af66ba243414bc67c4e7dbec09` |
+| Reload Unity log | `794ea53a908e02cf0c06f7b8a836bd4a3b6819f3cbfd1824a1c7d250209bcbdb` | `b9e74b85c726555137700c3ae65ae0bf454a2d9962aa42a033c5cfe1e875f2fd` |
+| Reload observer receipt | `76887f89b09ff1171625df15c16dc34ec8aa5a85c4e73d86abdc54575a17a19e` | `cb9fcac790ea797d8688f2fe20fdd692566c14f0e81756476a2191004e6dc2b4` |
