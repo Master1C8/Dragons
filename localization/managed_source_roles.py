@@ -174,6 +174,18 @@ PLAYER_LOG_SINKS = {
     'System.Void UnityEngine.Debug::LogException(System.Exception)',
     'System.Void UnityEngine.UI.StencilMaterial::LogWarningWhenNotInBatchmode(System.String,UnityEngine.Object)',
 }
+EXCEPTION_CONSTRUCTORS = {
+    'System.Void System.ArgumentException::.ctor(System.String)',
+    'System.Void System.ArgumentException::.ctor(System.String,System.Exception)',
+    'System.Void System.ArgumentException::.ctor(System.String,System.String)',
+    'System.Void System.ArgumentNullException::.ctor(System.String,System.String)',
+    'System.Void System.ArgumentOutOfRangeException::.ctor(System.String)',
+    'System.Void System.Exception::.ctor(System.String)',
+    'System.Void System.InvalidOperationException::.ctor(System.String)',
+    'System.Void System.NotSupportedException::.ctor(System.String)',
+    'System.Void System.NullReferenceException::.ctor(System.String)',
+    'System.Void UnityEngine.UnityException::.ctor(System.String)',
+}
 MENU_TRANSITION = 'System.Void MenuResponseTransition::.ctor(System.String,System.String,MenuTransitionData)'
 LEVEL_LOAD = 'System.Void MenuTransitionDataLevelLoad::.ctor(System.String)'
 MENU_UNPAUSE = 'System.Void MenuTransitionDataUnpause::.ctor(MenuTransitionDataUnpause/UnpauseOption)'
@@ -568,8 +580,10 @@ YARN_MARKUP_LOOKUP = ('System.Boolean System.Collections.Generic.IReadOnlyDictio
 YARN_DIAGNOSTICS = {
     'PaletteMarkerProcessor::ProcessReplacementMarker' + YARN_MARKER_PROCESSOR_ARGS: YARN_MARKUP_DIAGNOSTIC,
     'Actions::CreateConverters(System.Reflection.MethodInfo)': UI_ARGUMENT_EXCEPTION,
-    **{f'Actions/<>c__DisplayClass22_0::<CreateConverterFunction>b__{number}(System.String,System.Int32)':
-        UI_ARGUMENT_EXCEPTION for number in (3, 4)},
+    'Actions/<>c__DisplayClass22_0::<CreateConverterFunction>b__3(System.String,System.Int32)':
+        UI_ARGUMENT_EXCEPTION,
+    'Actions/<>c__DisplayClass22_0::<CreateConverterFunction>b__4(System.String,System.Int32)':
+        'System.Void System.ArgumentException::.ctor(System.String,System.Exception)',
     'DialogueRunner::get_LineProvider()': DEBUG_WARNING_CONTEXT,
     'DialogueRunner/<OnOptionsReceivedAsync>d__81::MoveNext()': DEBUG_ERROR,
     'BuiltinLocalisedLineProvider/<GetLocalizedLineAsync>d__15::MoveNext()': DEBUG_WARNING_CONTEXT,

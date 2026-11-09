@@ -281,4 +281,37 @@ and `localization/work/diagnostic-format-flow-20261109.dsyWKm/`.
 | macOS debug-view bindings | `de038d2486c697bb09f23a408ba96a2e7884073b7cdea8858e53e99aed64f535` |
 | Windows debug-view bindings | `e0712e83a843f36dc068145196842d482e1a5ee3ebc51a7a04779c04afd42636` |
 
+## v38 exception diagnostics, 2026-11-10
+
+The scan matched the same complete managed input inventories on
+both builds. It checked each of 152 source-bound literal offsets
+against a concrete exception constructor followed by `throw`. Four
+converter literals reached the two-argument `ArgumentException`
+constructor taking an inner exception. Their consumer bindings now
+record that overload.
+
+The relevant exception-message reads in the game and Yarn code route
+to Unity logs, a returned command diagnostic that the runner logs,
+or a rethrown exception. The Steam and Yarn persistence paths log
+their caught messages. The command parameter-conversion path returns
+the message through `TryParseArgs` and the dispatcher. The Yarn smart
+variable path wraps the message and throws. The audit separates
+exception diagnostics from markup diagnostic objects and localized-line
+fallback strings. External exception handlers and arbitrary reflection
+are outside its scope.
+
+Two v38 outputs matched byte-for-byte. Relative to v37 exactly 152
+roles and the four constructor overload bindings changed. Stable IDs,
+source values and original locations were retained.
+
+Local artifacts are in
+`localization/work/exception-sinks-20261110.TXn6a9/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| macOS managed scan | `ea8df041c05d0b6bda0a3b52959d262451527e781dc1bd417c986caac69b5f25` |
+| Windows managed scan | `fe3a2991856f5c110fb39a71df3870c4e747752079219ce3db6d71186dc5f470` |
+| macOS constructor bindings | `ede478e51fc443c13231b068e8b67e878afb9266163e9202692a334e75d99578` |
+| Windows constructor bindings | `220de77ae7ade8dea706263249d2adaf5b1accec993d9c6c45aefd7d54715654` |
+
 The full localization suite passed all 180 tests with v28.

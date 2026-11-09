@@ -383,8 +383,11 @@ def build(work, roles_path):
                         binding = managed.dependency_role(row, assembly)
                     if binding is not None:
                         role, consumer = binding
-                        if role == 'diagnostic-text-needs-visibility-review' and consumer in managed.PLAYER_LOG_SINKS:
-                            role = 'preserve-exactly-player-log-text'
+                        if role == 'diagnostic-text-needs-visibility-review':
+                            if consumer in managed.PLAYER_LOG_SINKS:
+                                role = 'preserve-exactly-player-log-text'
+                            elif consumer in managed.EXCEPTION_CONSTRUCTORS:
+                                role = 'preserve-exactly-exception-diagnostic'
                         elif role == 'string-representation-needs-visibility-review':
                             role = 'preserve-exactly-diagnostic-representation'
                 put(records, {'id': f'managed:{platform}:{assembly}:{row["id"]}', 'family': 'managed',

@@ -232,12 +232,17 @@ class SourceInventoryUnitTests(unittest.TestCase):
             self.assertEqual(sum(r['role'] == 'preserve-exactly-command-diagnostic' for r in commands), 15)
             parse_exception = [r for r in commands if '::TryParseArgs(' in r['method'] and r['ilOffset'] == 0x2ae]
             self.assertEqual([(r['role'], r['consumer']) for r in parse_exception], [
-                ('diagnostic-text-needs-visibility-review',
+                ('preserve-exactly-exception-diagnostic',
                  'System.Void System.InvalidOperationException::.ctor(System.String)'),
             ])
-        self.assertTrue(any(r['role'] == 'diagnostic-text-needs-visibility-review' and
-                            r.get('consumer') == 'System.Void System.ArgumentException::.ctor(System.String)'
-                            for r in result['entries']))
+        exceptions = [r for r in result['entries'] if r['role'] == 'preserve-exactly-exception-diagnostic']
+        self.assertEqual(len(exceptions), 152)
+        self.assertEqual({r['consumer'] for r in exceptions}, inventory.managed.EXCEPTION_CONSTRUCTORS)
+        self.assertEqual(sum(r['consumer'] == 'System.Void System.ArgumentException::.ctor(System.String,System.Exception)'
+                             for r in exceptions), 4)
+        pending_diagnostics = [r for r in result['entries'] if r['role'] == 'diagnostic-text-needs-visibility-review']
+        self.assertEqual(len(pending_diagnostics), 8)
+        self.assertEqual({r['consumer'] for r in pending_diagnostics}, {inventory.managed.YARN_MARKUP_DIAGNOSTIC})
         self.assertFalse(any(r['role'] == 'needs-classification' for r in result['entries']
                              if r['family'] == 'managed'))
         legacy_rows = [r for r in result['entries'] if r['family'] == 'legacy-ui']
