@@ -8,8 +8,8 @@ instead of deduplicating equal strings. Existing source game files are read only
 by the earlier pinned extractors; this assembler reads their exports and writes
 a new output with exclusive creation.
 
-The current working output `localization/work/source-inventory-20261107/combined-provisional-v33-20261109.json`
-has SHA-256 `6d8549ddc0e3a8406ef80ee64c0f1496e1158d9a24f83ec0bc42eafde4895a45`.
+The current working output `localization/work/source-inventory-20261107/combined-provisional-v34-20261109.json`
+has SHA-256 `8dfe045f973c6b1ea36187438d6cc0680f76e380f310ba346d4770a3db3a1974`.
 Its 27,113 records comprise
 1,839 Yarn line/option IDs, 162 paired or Windows-only known TMP UI fields,
 80 paired or macOS-only known settings fields, 149 paired legacy UI fields,
@@ -266,6 +266,9 @@ bindings while retaining their review roles. See
 The v33 export preserves seven paired version placeholders. The runtime
 version value replaced the template by the first sampled Canvas callback on
 both builds. See [the version probes](ui-reading-version-consumers-20261107.md#windows-crossover-follow-up-and-v33).
+
+The v34 export preserves 15 paired dialogue presenter templates.
+See [the Canvas bindings and presenter flow](speaker-presentation-flow-20261107.md#v34-serialized-presenter-templates).
 
 The inventory is explicitly `provisional-not-translation-ready`: code literals
 and many UI values still require visibility review, only five managed assemblies are

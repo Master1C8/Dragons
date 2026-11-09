@@ -243,6 +243,14 @@ class SourceInventoryUnitTests(unittest.TestCase):
         self.assertEqual({r['asset'] for r in version_rows}, {f'level{i}' for i in range(7)})
         self.assertTrue(all(r['family'] == 'ui' and r['source'] == {'macos': 'Version\n', 'windows': 'Version\n'}
                             and r['hierarchy'][-2:] == ['VersionDisplay', 'VersionText'] for r in version_rows))
+        presenter_rows = [r for r in result['entries'] if r['role'] == 'preserve-exactly-dialogue-presenter-template']
+        self.assertEqual(len(presenter_rows), 15)
+        for asset in ('level1', 'level3', 'level4', 'level5', 'level6'):
+            rows = [r for r in presenter_rows if r['asset'] == asset]
+            self.assertEqual({tuple(r['hierarchy'][-2:]) for r in rows}, {
+                ('Line Presenter', 'Character Name'), ('Line Presenter', 'Text'), ('Options Presenter', 'Last Line'),
+            })
+            self.assertTrue(all(r['family'] == 'ui' and r['source']['macos'] == r['source']['windows'] for r in rows))
         component_rows = [r for r in result['entries'] if r['family'] == 'game-component']
         for platform in ('macos', 'windows'):
             cold = [r for r in component_rows if r['source'].get(platform) == 'DragonColdBalls']

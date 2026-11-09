@@ -298,6 +298,8 @@ def build(work, roles_path):
             role = 'preserve-exactly-credit-name'
         elif role == 'version-display-needs-consumer-review':
             role = 'preserve-exactly-version-placeholder'
+        elif role == 'dialogue-presenter-template-needs-consumer-review':
+            role = 'preserve-exactly-dialogue-presenter-template'
         put(records, {'id': 'ui:' + dl.sha(path.encode('utf-8')), 'family': 'ui',
                       'role': role,
                       'asset': row['asset'], 'hierarchy': row['hierarchy'],
