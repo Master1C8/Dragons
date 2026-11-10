@@ -282,6 +282,29 @@
     "ui:4cbc97aea69bccfd4defdb896f11600bdcc0964b970916200b59966d037b24e5": "Nouveau",
     "ui:1f92f7d859adfd67efa3a3f37608780f984d3d2e55b5a74774f0dfa70d9d4f86": "Nouveau",
     "display:slot-new": "NOUVEAU",
-    "display:yarn-missing-line": "!! ERREUR : ligne manquante !"
+    "display:yarn-missing-line": "!! ERREUR : ligne manquante !",
+    "yarn:line:fa97376e": "J’aidais l’alchimiste à atteindre une étagère en hauteur.",
+    "yarn:line:9d7cc63c": "J’ai entendu une forte détonation. Je ne crois pas qu’Igwix s’en soit sorti.",
+    "yarn:line:fd68807c": "Je dois dire que vous avez aussi bien travaillé que les laveurs privés.",
+    "yarn:line:729cea0c": "Mmh, je fais toujours de mon mieux.",
+    "yarn:line:e4aced7b": "Mes étudiants pourraient prendre exemple sur votre conscience professionnelle !",
+    "yarn:line:75b152eb": "J’aimerais vraiment discuter davantage, mais mon cours va bientôt commencer.",
+    "yarn:line:e381559c": "... Merci pour cela.",
+    "yarn:line:a2ba222e": "Bonsoir. Cet établissement reçoit sans rendez-vous, n’est-ce pas ?",
+    "yarn:line:33a79dbe": "Oui ! Vous venez... de l’université... ?",
+    "yarn:line:b6c878fa": "Oui !",
+    "yarn:line:a5979ac9": "En effet, vous devez connaître ma crête ! J’enseigne l’alchimie.",
+    "yarn:line:20f87f8d": "... Et j’ai justement cours dans peu de temps.",
+    "yarn:line:0c997163": "Excellent.",
+    "yarn:line:8440a3f4": {
+      "text": "Je regrette de me trouver dans un tel état...",
+      "sharedAcrossSourceVariants": true
+    },
+    "yarn:line:61c96494": "Vous n’êtes... pas si sale que ça.",
+    "yarn:line:ee3d0ee4": "Pas de souci. Je vais vous ouvrir le portail !",
+    "yarn:line:f7f963e3": "Si, je le suis.",
+    "yarn:line:4da86a7a": "...",
+    "yarn:line:db986d0d": "Pourriez-vous ouvrir le portail ?",
+    "yarn:line:780d0993": "Ah. Oui. Pardon."
   }
 }
