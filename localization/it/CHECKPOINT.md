@@ -279,3 +279,7 @@ Four further complete groups / 28 paired rows have hash-bound source and Italian
 ### Resume 08: Alexander and Conrad context row unit
 
 Three additional complete groups / 30 paired rows have hash-bound source and Italian author self-reviews. The row receipt covers 116 groups / 399 rows; 77 groups / 1,548 rows lack equivalent full row-level receipts, while earlier narrower evidence is reusable at its bound scope. Independent acceptance and shared source and exact-preservation gates remain open.
+
+### Resume 08: Ryan and Conrad introductory row unit
+
+Three further complete groups / 36 paired rows have hash-bound source and Italian author self-reviews. The row receipt covers 119 groups / 435 rows; 74 groups / 1,512 rows lack equivalent full row-level receipts. The unnamed alchemist and subsequent “they” remain unassigned on this unit's evidence. Earlier bounded reviews remain valid at their exact scope. Independent acceptance and the shared source and exact-preservation gates remain open.

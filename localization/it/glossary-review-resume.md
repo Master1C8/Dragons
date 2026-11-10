@@ -387,3 +387,7 @@ The paired builds of `Conrad_required_4`, `Conrad_Outro_4`, `Ryan_5_intro_ryan_r
 ### Resume 08: Alexander and Conrad context rows (author self-reviews)
 
 Both paired builds of `Alexander_3_Outro`, `Conrad_Intro_2` and `Mount_Alexander_2_6` were read: three groups / 30 rows. The Yip is a player response whose meaning depends on the branch; Alexander's mount discussion concerns the adult device, and he declines it for now. Conrad asks for a medkit but does not explain the cause in this branch. The bound Italian character, wash, Yip and device fields establish no correction here. Both layers are author self-reviews, not independent acceptance; the row receipt contains the decisions and bindings.
+
+### Resume 08: Ryan and Conrad introductory rows (author self-reviews)
+
+Both paired builds of `Conrad_4_Conrad_Romanced`, `RyanExploded_Intro` and `RyanMuddy_Intro` were read: three groups / 36 rows. Ryan's unnamed alchemist (`line:e02f464d`) is not assigned Alexander's identity on this evidence; the “they” in `line:cc4e48a3` plausibly refers to the alchemist but remains unresolved. Ryan's report of plural kobolds does not identify other individuals. The player's self-identification and Yip and the Drag'N Wash name are indexed, as is Conrad's proposed date after a wash. The bound Italian fields establish no correction in this unit. Both layers are author self-reviews, not independent acceptance.
