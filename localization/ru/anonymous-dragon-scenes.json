@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "locale": "ru",
+  "case": "anonymous-dragon-address",
+  "sourceGlossaryFingerprint": "3d261921e114b6feab10f57ad54d43674a75e991d94937686155b92cce399dc3",
+  "localeGlossaryFingerprint": "dd5e364a4b4bbaef376a5cecc84a1f26162740a73d2f0f33c06f14fb0b45d6b4",
+  "lines": {
+    "line:7d791906": {"source": "Oh this is better, but I still feel dirty.", "text": "О, так лучше, но мне кажется, на мне ещё осталась грязь."},
+    "line:ec64a696": {"source": "Do you mind double checking if I'm clean?", "text": "Можешь ещё раз проверить, вся ли грязь смылась?"},
+    "line:7a54a1e1": {"source": "Okay", "text": "Ладно"},
+    "line:1dbf50b3": {"source": "Sure", "text": "Конечно"},
+    "line:8b8f57c4": {"source": "Thanks!", "text": "Спасибо!"},
+    "line:b965b4dd": {"source": "Knock that off, we're not done yet. Right?", "text": "Хватит, мы ещё не закончили. Ведь так?"},
+    "line:2f55b3aa": {"source": "Hehe", "text": "Хе-хе"},
+    "line:9504ba33": {"source": "...", "text": "..."},
+    "line:63926ecd": {"source": "Oh we're done?", "text": "О, мы уже закончили?"},
+    "line:f28fd15d": {"source": "I think you missed a few spots still...", "text": "Кажется, тебе ещё осталось отмыть несколько мест..."},
+    "line:64bfd62a": {"source": "Oops, my bad.", "text": "Ой, моя ошибка."},
+    "line:4116f001": {"source": "I didn't know what the button did.", "text": "Мне было непонятно, что делает эта кнопка."},
+    "line:d726f776": {"source": "No worries,", "text": "Да ничего,"},
+    "line:fb47f998": {"source": "Yeah it go BRRT haha.", "text": "Ага, она такая БРРТ, ха-ха."},
+    "line:6d77feef": {"source": "Anyway glad you're not finished, lets keep at it!", "text": "В общем, хорошо, что ты ещё не сворачиваешься. Давай продолжим!"},
+    "line:f1946aab": {"source": "Thank you for cleaning me!!", "text": "Спасибо тебе за мойку!!"},
+    "line:67a46ddc": {"source": "Maybe we can hang out later?", "text": "Может, потом как-нибудь потусим?"},
+    "line:c4310942": {"source": "Yes!", "text": "Да!"},
+    "line:52010e35": {"source": "YES!", "text": "ДА!"},
+    "line:e85007ac": {"source": "Awesome! See you later then!", "text": "Класс! Тогда до встречи!"}
+  }
+}

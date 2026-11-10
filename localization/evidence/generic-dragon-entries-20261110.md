@@ -156,4 +156,36 @@ The approved strategy is recorded in the scene registry. Canonical
 integration requires the new ID to be filled in all existing layers
 in the same change. The authorized English and Russian drafts are
 preserved under `localization/work/anonymous-glossary-proposal-20261110.SY1yqu/`.
-All SiteForMods canonical files retain their original bytes.
+The initial authorization did not cover updating the other locale
+layers. At this checkpoint the SiteForMods files were unchanged.
+
+### Canonical integration and Russian scene wording
+
+The owner authorized adding only the new entry to all 30 existing
+locale layers. SiteForMods commit `29b0bb56b3ce71a1d5a700c840b050af7333084d`
+is on local and remote `main`. The committed diff adds one English
+entry, one localized entry per layer, and one source-evidence item.
+Removing those insertions reproduces the previous English source and
+all 810 existing localized entries. The CLI validated 28 source
+entries and 30 complete layers. The focused glossary suite passed all
+59 tests. The English canonical fingerprint is
+`3d261921e114b6feab10f57ad54d43674a75e991d94937686155b92cce399dc3`.
+The Russian layer fingerprint is
+`dd5e364a4b4bbaef376a5cecc84a1f26162740a73d2f0f33c06f14fb0b45d6b4`.
+
+The affected editorial read compared each new term and meaning
+against the source role, the locale's existing dragon term, the four
+scene contexts and the approved address rule. The subsequent
+coordinator reread checked the uncertainty of identity, gender and
+pronouns separately from the neutral wording instruction. The
+unaffected preexisting entries were preserved byte for byte. No
+independent reviewer participated in this update.
+
+The [Russian wording](../ru/anonymous-dragon-scenes.json) covers all
+20 IDs in original group order. The paired Yarn locale reader
+accepted every exact English source and Russian text. The manual
+read checked both choice paths in each group, including the player's
+apology and unfamiliarity with the button, the dragon's remaining
+grime, the silent response, the button sound and the emphatic reply.
+This is a special-scene preparation artifact. Package integration
+and runtime visual review remain pending.

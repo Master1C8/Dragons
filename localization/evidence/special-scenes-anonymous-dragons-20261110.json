@@ -27,9 +27,10 @@
       ],
       "pivotalChoiceIds": ["line:7a54a1e1", "line:1dbf50b3", "line:2f55b3aa", "line:9504ba33", "line:64bfd62a", "line:4116f001", "line:c4310942", "line:52010e35"],
       "invariant": "Preserve anonymity, agency, choice order, the silence option, the button sound and the contrast between ordinary and emphatic agreement. The source provides no evidence that the four callers are the same dragon.",
-      "adaptationRoute": "Owner approved neutral agreement in the 12 unlabeled dragon lines and eight player options on 2026-11-10. Keep both roles distinct and avoid supplying identity or gender evidence that the source does not give. Canonical glossary integration and wording review remain pending.",
+      "adaptationRoute": "Owner approved neutral agreement in the 12 unlabeled dragon lines and eight player options on 2026-11-10. The Russian adaptation keeps both roles distinct and uses gender-neutral clause structure while preserving participant agency.",
+      "localeDecisions": {"ru": {"wording": "localization/ru/anonymous-dragon-scenes.json", "sha256": "72a301c613c3cf4146170c54ce8c01b85ffae11e7330b95e0860744e890222aa"}},
       "acceptanceScenarios": ["Read each source and target menu with both follow-ups, preserving the two option IDs and their order.", "Verify neutral references for the player and anonymous dragon independently, including statements about remaining unwashed and not knowing the button's purpose."],
-      "statuses": {"sourceAnalysis": "paired-source-bound", "editorial": "address-approved-glossary-pending", "runtimeVisual": "not-run"}
+      "statuses": {"sourceAnalysis": "paired-source-bound", "editorial": "russian-wording-self-reviewed", "runtimeVisual": "not-run"}
     }
   ]
 }
