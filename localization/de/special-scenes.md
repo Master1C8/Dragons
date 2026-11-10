@@ -1,6 +1,6 @@
 # German special-scene decisions
 
-Status: **1 of 27 groups authored and author-reviewed; the pretranslation gate remains open.** Pinned inventory `79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d`, Yarn scope `753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30`, German glossary ordered-map `928654f960c84f04893d1794c0b44c5347ea0522746df79d8d4b135c37121dfa`. Source is English on both pinned builds. Wording is in `translation.json`; no independent game-text review is claimed.
+Status: **308 IDs authored; the pretranslation gate remains open.** Direct authoring IDs are covered for the indexed cases except the two nickname-bearing lines; the exact-only marker case has separate handling. Reconcile full decision and dependency coverage before passing the gate. Pinned inventory `79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d`, Yarn scope `753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30`, German glossary ordered-map `928654f960c84f04893d1794c0b44c5347ea0522746df79d8d4b135c37121dfa`. Source is English on both pinned builds. Wording is in `translation.json`; no independent game-text review is claimed.
 
 ## Anonymous dragon address
 
@@ -8,7 +8,7 @@ All 20 IDs in the four groups of `localization/evidence/special-scenes-anonymous
 
 `translation.json` SHA-256 `92a94877b20c82fd1cdd27c892ed97e0c9b72fc9c72e0401270fa3c57f41f805`. Source-bound check inputs: macOS `5aa0c7c9049c00e272c4054234dfc040928623af07b1d9ae34be7b5bfcfe55a7`, Windows `e7419313298eefe4480ba58ef0743b1b2555afd7a7974e3606133feb0cc5d60a`. Applied standalone Yarn assets: macOS `009fac18d0a9c06d663623a25c745dc25a6365d4ed2dd820728616d515e6544d`, Windows `5b69ff909789a38f7f8289c325d6ffb825151757a2ea2c4313fbdadefeaae1c1`. Artifacts are in `localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/`. These are partial test assets, not packages or completed translations. The first validation script asserted the tuple length instead of the returned translation-map length; the corrected check accepted all 20 on each platform.
 
-The `big-c-nickname` decision requires the owner's chosen rendering; a question is pending. All other 25 groups still require complete German wording, contextual review and explicit feasible handling before the locale's special-scene gate can pass. Ordinary batches have not started.
+At this first-batch checkpoint, the other groups were still unreviewed. Later batch records below supersede that progress state. The `big-c-nickname` choice remains pending. Ordinary batches have not started.
 
 ## Second authoring batch
 
