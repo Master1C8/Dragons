@@ -423,3 +423,23 @@ are exact. Both packaged fonts contain all 92 display code points.
 The verified receipts are under
 `localization/work/uk-ordinary-08-20261110.3WJYKv/`.
 Live scene checks and independent editorial review remain pending.
+
+## Ninth ordinary batch
+
+The remaining picnic conversation and Ryan's explosion variant
+add 67 values. The five nodes now cover all 136 source IDs,
+including 69 previously authored values. All 935 earlier draft
+values are exact. The 1,002-value draft SHA-256 is
+`1abefa1dd7915ed4e152e5d6fbc8218ff35095defb1d5984bc31e28ebbec2e6b`.
+
+The picnic keeps the three relationship outcomes separate and
+retains the distinct affectionate and teasing responses. Ryan's
+explosion account leaves the alchemist unnamed and avoids inferring
+gender. The two retry branches distinguish residue from soap and
+retain the already localized successful continuation.
+
+Each diagnostic package changed exactly 67 Yarn values. The other
+table text, metadata and compiled programs are exact. Both packaged
+fonts contain all 92 display code points. The verified receipts are
+under `localization/work/uk-ordinary-09-20261110.JqFiqb/`.
+Live scene checks and independent editorial review remain pending.
