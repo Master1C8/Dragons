@@ -4,9 +4,9 @@
 
 ## Current gate and coverage
 
-The bound glossary has two complete clean author self-review layers covering 28 entries and source dependencies; independent glossary acceptance remains separate. Polish-specific sampled renderer feasibility passed on macOS and Windows through CrossOver, with the original captures and compliant previews retained in the run directory. All 27 special-scene groups have reviewed target wording and feasible bounded technical handling. The English-bound draft covers **1,947 / 1,947 IDs**, SHA-256 `cb471d50b18d79b659744dcf6360b25ba63d9ba42c2428e95196e040341dda2e`. Earlier entries below are chronological snapshots, not current status.
+The bound glossary has two complete clean author self-review layers covering 28 entries and source dependencies; independent glossary acceptance remains separate. Polish-specific sampled renderer feasibility passed on macOS and Windows through CrossOver, with the original captures and compliant previews retained in the run directory. All 27 special-scene groups have reviewed target wording and feasible bounded technical handling. The English-bound draft covers **1,947 / 1,947 IDs**, SHA-256 `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`. Earlier entries below are chronological snapshots, not current status.
 
-Complete semantic and independent game-text audits, full visual fit, native Windows, and final installation/restoration remain open. Do not mark the locale complete. The corrected v2 macOS app and Windows replacement ZIP passed fresh package read-back against the current text hash; representative authored dialogue and choice gameplay passed on macOS and Windows through CrossOver, with bounded visual review below. CrossOver evidence is not native Windows evidence.
+Complete semantic and independent game-text audits, full visual fit, native Windows, and final installation/restoration remain open. Do not mark the locale complete. The v2 macOS app and Windows replacement ZIP passed package read-back and representative authored dialogue and choice gameplay on macOS and Windows through CrossOver for the prior text hash `cb471d50b18d79b659744dcf6360b25ba63d9ba42c2428e95196e040341dda2e`; those results do not verify the current payload. CrossOver evidence is not native Windows evidence.
 
 ## Bound inputs
 
@@ -422,3 +422,7 @@ Original captures and WebP80 previews with source hashes are in `payload-probe/m
 ## Semantic audit preparation
 
 `resume-01/audit-preparation-v2/paired-review-rows.jsonl` contains the 1,947 original worklist records paired with current authored targets in canonical order, SHA-256 `bd2407752c57b0e92d136f123604ebda35d8109d8ae92cd6a54a99ea4945d199`. Its manifest binds source worklist, target, and glossary hashes. This is preparation only, not a semantic review or a complete dependency closure; reviewers must consult actual scene and runtime context, review every applicable unit, record findings and build the dependency-aware audit cycle. The initial `audit-preparation-v1` is an incomplete preserved attempt: it failed on a non-Yarn row without a `kind` field. The v2 export retains each complete row without assuming that field.
+
+## Contextual correction and semantic audit start
+
+Accepted the independent finding at `yarn:line:f16d7940`; `editorial-delta-02.md` records the author-reviewed 17-position scene context, branch and related-variant checks, exact correction, bound dependency export and limitations. The correction changes the payload hash; v2 packaging, gameplay and visual receipts remain preserved for their original hash and require fresh verification after editorial changes. The 383 selected dependency IDs are not an editorial acceptance. Complete semantic audit, mandatory regression and independent game-text review remain open. Preserve the existing ten-frame visual queue without opening it.

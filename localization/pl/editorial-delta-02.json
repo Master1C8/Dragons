@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "beforeSha256": "cb471d50b18d79b659744dcf6360b25ba63d9ba42c2428e95196e040341dda2e",
+  "afterSha256": "ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f",
+  "edits": {
+    "yarn:line:f16d7940": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 389,
+          "lastInstruction": 429
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:9b10d450",
+        "yarn:line:4c11c83e",
+        "yarn:line:675d7e37"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:675d7e37",
+        "yarn:line:f16d7940",
+        "yarn:line:91ab30f5"
+      ],
+      "reason": "Review Conrad referent, all four choice branches and the shared continuation on both stock programs; retain the tendency and interrupted physical joke."
+    }
+  }
+}
