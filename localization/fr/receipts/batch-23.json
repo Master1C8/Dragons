@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "locale": "fr",
+  "translation_sha256": "5a92bcdf1e39a4a0051af49a54821873d690dbf5b390e8d2d5874b73da263224",
+  "authored_ids": 1074,
+  "pinned_inputs": {
+    "inventory": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+    "scope": "753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30",
+    "worklist": "ef9d5709b061ea426c2e113373fdbfde547c6518f6394a4afc325204dea89cf8"
+  },
+  "canonical_verifier": {
+    "command": [
+      "/Users/antonkrutov/Desktop/Forest/.venv-assets314/bin/python",
+      "-B",
+      "localization/verify_authored_yarn.py",
+      "localization/fr/translation.json",
+      "--locale",
+      "fr",
+      "--inventory",
+      "localization/work/source-inventory-20261107/combined-provisional-v42-20261110.json",
+      "--yarn-scope",
+      "localization/work/yarn-markers-20261110.ridbPA/yarn-scope-v42.json"
+    ],
+    "result": {
+      "locale": "fr",
+      "translationSha256": "5a92bcdf1e39a4a0051af49a54821873d690dbf5b390e8d2d5874b73da263224",
+      "completeInputRequired": false,
+      "checkedDialogueBindings": {
+        "macos": 1066,
+        "windows": 1066
+      }
+    }
+  },
+  "reproduction": {
+    "command": [
+      "/Users/antonkrutov/Desktop/Forest/.venv-assets314/bin/python",
+      "-B",
+      "localization/fr/verify_batch.py",
+      "localization/fr/receipts/NEW-RECEIPT.json"
+    ],
+    "helper_sha256": "48b085bbdc30aa598011af6f42fe63f2dbebe4f953b84722f5f1ab96efcad1f6",
+    "mac_builder": "localization/dialogue_locale.py",
+    "windows_builder": "localization/windows_dialogue_probe.py",
+    "readback": "reopen built Unity object and compare ordered keys, values, extras",
+    "temporary_asset_policy": "run-owned temporary directory; removed only after both platform readbacks and receipt succeed"
+  },
+  "platforms": {
+    "macos": {
+      "stock_asset_sha256": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+      "source_yarn_sha256": "9baafe5b3c36e63042cc0d02b2c755580e142447cea13f946d485a342c269853",
+      "dialogue_binding_sha256": "e5010ad30cb30be7a4ada7e861b000247e5cb26f8186a403d7f277f5d37ce183",
+      "speaker_binding_sha256": "0abfdbbc0cbf07e193c4dbde225e345fe1917a00bd7262744ebba006fcebf8c4",
+      "partial_asset_sha256": "e05c0f5527a9084b2b93038fa4f523f732bcbf83d81f37327c1419685222c5ea",
+      "ordered_values": 1839,
+      "authored_yarn": 1066,
+      "untouched_yarn": 773
+    },
+    "windows": {
+      "stock_asset_sha256": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+      "source_yarn_sha256": "7000b2b93b09f6a7b916e5f57c0dc6cf21ca9e6f9ddbfbc485bce704e8ce28d6",
+      "dialogue_binding_sha256": "baa2dbaec6a225003d74f38d20ecbc595f5bef3c92edc17794e8a838250bda22",
+      "speaker_binding_sha256": "8ba2f28cf8b42cda36357c571c1de73c3090ae27f471c12baad0f2ac3141031b",
+      "partial_asset_sha256": "d07080e6a7dcf53cbcc65ee944d59b92fbfffd736f378af302bdfe446c4bac4f",
+      "ordered_values": 1839,
+      "authored_yarn": 1066,
+      "untouched_yarn": 773
+    }
+  },
+  "runtime_visual_independent_audit": "not established"
+}
