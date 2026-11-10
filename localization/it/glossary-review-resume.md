@@ -331,3 +331,7 @@ Both author self-review layers cover all nine paired `Ryan_egg_dialog` rows, cho
 ### Resume-08 Ryan intimacy row-level unit
 
 Both author self-review layers examined all eight paired rows in `Ryan_SexScene` and `Ryan_SexScene_Loop`, recorded with individual and scene hashes in `glossary-row-review-resume-08.json`. The kobold species references and context-dependent Yip are indexed; the bound Italian fields do not show a defect. Individual unprefixed voice assignments are deliberately unresolved: the paired text and scope row do not prove a speaker, and the scene name alone is insufficient. Routing evidence is needed before those individual references can be claimed fully resolved. These are author self-reviews, not independent review.
+
+### Resume-08 short scenes row-level unit
+
+Ten short paired groups / 25 rows received individually hashed referent and concept decisions in `glossary-row-review-resume-08.json`, with separate source and Italian author self-review judgments. `Alexander_Idle1` confirms the documented Igwix variant without changing the canonical Igwyx entry. `RyanMuddy_Idle4` identifies Max as the person referred to by “them” but does not establish gender or equate Max with another person. The diagnostic names nael as a support contact without establishing an in-world character, and cold-water exclamations do not identify a specific dragon. Washing in the Alexander and Ryan scenes is service context. No glossary correction was established. The two layers are author self-reviews, not independent.
