@@ -11,3 +11,9 @@ Technical contract: preserve each source tag, tag order and nonempty visible reg
 Both source-matched stock builds accepted the four entries with `dialogue_locale.read_locale`; object encode/parse round-tripped all 1,839 keys and metadata. The isolated resulting object hashes were macOS `d1800536fd9589bf424176611e26b4dbbff592e97647a8355ea8ff3e96f5726b` and Windows `1a2af5bbdac0b8b5f351f1805bf1871ee8e6f0392bb862d8ca11528887a6f480`. Negative checks deliberately emptied the first greeting, the italic aside and one hesitation stage; the adapter rejected each for the expected staged-region reason. Reproduction and partial inputs are in `localization/work/cli-terra-high-20261110.J0KLrx/es/resume-05/typography-check/`. These checks are object-level, not saved packages or runtime evidence.
 
 Status: three decisions author self-reviewed and structurally checked; final artifacts, exact-string visual fit and independent editorial audit pending.
+
+### Conrad greeting scenes — author closure
+
+The complete `Conrad_Intro_1` and `Conrad_5_intro_ryan_romanced` scenes now retain the emphatic styled greetings and supply the surrounding gate, late visit and Ryan-date alternatives. The source differs in the apostrophe of `that's` across builds; each source is explicitly bound to its Spanish target. The size and gradient markers stay in order. This is author review, not independent acceptance or a visual judgment on these exact strings.
+
+Both stock dialogue readers accepted the 18 entries, and in-memory object encode/parse retained keys, values and extras. A modified English source failed the source-mismatch guard on each platform. Object SHA-256: macOS `ecf61691094bfdb3f2382f2f1b27e9185eae4d7a1c7cb11d80d73796ad02a1a1`; Windows `5e9b986946c646a06d47a9341343358160d1b390aa560338c204ca5a8a5d2786`. Scripts and partials: `localization/work/cli-terra-high-20261110.J0KLrx/es/resume-09/greetings/`.
