@@ -95,7 +95,7 @@ Keep both identical response pairs distinct and preserve `$Yarn.Internal.Once.li
 
 ## Gate status
 
-Twenty-two of 27 cases have author-reviewed wording recorded in this file; the remaining 5 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the twenty-two. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
+Twenty-three of 27 cases have author-reviewed wording recorded in this file; the remaining 4 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the twenty-three. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
 
 ## Alexander's family crest
 
@@ -380,7 +380,7 @@ Positive: the literal option receives a correction and explicit explanation; the
 
 ## Three film choices and Yip-Man reference
 
-Source cases `movie-title-choices` and `kobold-yip-film-title`, node `Ryan_5_Required_ryan_romanced`. Author self-review: the three approved glossary titles retain their separate choices; **Yip-Man** is repeated in the series reaction and the title keeps the vocalization-shaped pun. The generic Yip speech case remains separately open. The numbered sequel's reaction refers to its first film, not the Yip-Man series. The first six rows are shared with the already reviewed salmon case and retain exactly that wording.
+Source cases `movie-title-choices` and `kobold-yip-film-title`, node `Ryan_5_Required_ryan_romanced`. Author self-review: the three approved glossary titles retain their separate choices; **Yip-Man** is repeated in the series reaction and the title keeps the vocalization-shaped pun. The separate Yip speech decision below preserves the same form. The numbered sequel's reaction refers to its first film, not the Yip-Man series. The first six rows are shared with the already reviewed salmon case and retain exactly that wording.
 
 | ID | Italian wording |
 |---|---|
@@ -405,3 +405,34 @@ Source cases `movie-title-choices` and `kobold-yip-film-title`, node `Ryan_5_Req
 | `c4642c9c` | Allora è un appuntamento. Non vedo l'ora. |
 
 Positive: each title retains its source option and reaction, Yip-Man is recognizable in both rows and the sequel retains numeral 2. Negative: cross the reactions, change the numeral or translate the series reference as the kobold speaking. Existing paired choice/text rendering is bounded feasibility only; final authored package, route execution and fit remain untested.
+
+## Recurring kobold Yip
+
+Source case `kobold-yip-speech`. Author self-review: retain **Yip** as the audible vocalization and title component; it is not a fixed word with one universal meaning. Alexander's gate/yes and long/short explanation branches express different contextual meanings; the long explanation is a character's playful claim. Preserve `PlaySFX "yip"`, the lookup key, ordered size tags and each distinct destination. The film entries below exactly match the separate movie decision. `9444cdba` is the player option to stock destination 9, not assigned to another speaker.
+
+| ID | Italian wording |
+|---|---|
+| `5efde4e2` | Yip! |
+| `c8cde395` | Ah ah, proprio un “Yip”. |
+| `e662501c` | Yip! |
+| `5544e245` | Yip! |
+| `5e181cf4` | Yip! <size=70%>(Cancello) |
+| `5935a413` | Yip! <size=70%>(Sì) |
+| `cf05a364` | Non so perché all'improvviso capisca i tuoi “Yip”. |
+| `a8ee5236` | Yip! <size=70%>(È perché la parte sopita della tua mente draconica sta ricordando il profondo legame linguistico tra la tua specie e la mia. Al suo interno racchiude il significato e l'intenzione profondi degli “Yip” dei coboldi. Questa tua improvvisa comprensione deriva semplicemente dal legame che è cresciuto tra noi nel tempo, attivando quella parte della tua mente.) |
+| `b12a3f31` | Yip! <size=70%>(Boh) |
+| `c3e1f198` | Yip! |
+| `266836f8` | È... la prima volta che mi fai uno Yip. |
+| `52bf5ede` | Sono IL coboldo. Yip! |
+| `3d516ddb` | Yip! |
+| `9ec40945` | Ah ah. “Yip” anche a te. |
+| `14d2c62f` | Yip! |
+| `296ff3f4` | Yip! |
+| `f1c14f75` | Yip-Man - L'ultimo Yip |
+| `4b9046ec` | I film di Yip-Man sono proprio sdolcinati... |
+| `9444cdba` | Yip |
+| `3e870ad0` | Yip! |
+
+Key contextual callbacks: `c374e532` **In qualche modo mi sembra più sincero di qualsiasi cosa dica chiunque altro.**; `c8281b83` **Mmm, devo intendere che aprirai il cancello?**; `b058318f` **In coboldo significa che stai facendo un buon lavoro.**; `38b3c8c1` **Oh- volevo dire: vado ad aprire il cancello!**; `b8724c64` **Ah... ti piace proprio quel verso.**; `a8b70da7` **Allora dev'essere così! Mi fa piacere.** Preserve each callback's own context and don't promote its interpretation to a universal definition.
+
+Positive: the same sound remains recognizable in distinct scenes, Alexander's two explanatory choices stay different and the film reference remains a film. Negative: change the audio key, merge meanings or choices, change destinations, omit the parenthetical size tag or assign unsupported speaker identity. Both builds' paired source and existing bounded dialogue/choice renderer support this preparation; actual sound playback, branch execution and final fit remain pending.
