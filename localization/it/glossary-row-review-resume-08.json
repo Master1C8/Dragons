@@ -21010,6 +21010,11 @@
           "id": "dnw-wash",
           "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
           "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        },
+        {
+          "id": "dnw-mount",
+          "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+          "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
         }
       ],
       "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
@@ -21211,7 +21216,8 @@
             "dnw-conrad"
           ],
           "conceptUses": [
-            "dnw-wash"
+            "dnw-wash",
+            "dnw-mount"
           ],
           "decision": "Conrad requests a quick wash and may want the mount."
         },
@@ -21382,7 +21388,8 @@
             "dnw-conrad"
           ],
           "conceptUses": [
-            "dnw-wash"
+            "dnw-wash",
+            "dnw-mount"
           ],
           "decision": "Conrad requests a wash and the mount."
         },
@@ -21453,7 +21460,8 @@
             "dnw-conrad"
           ],
           "conceptUses": [
-            "dnw-wash"
+            "dnw-wash",
+            "dnw-mount"
           ],
           "decision": "Conrad requests a hose-down and the mount."
         },
@@ -22414,6 +22422,11 @@
           "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
         },
         {
+          "id": "dnw-drake",
+          "sourceEntrySha256": "fc7a676e04843dde8307d6b1843ac34215ca67200d62b1ff1dfe06d21456cdd3",
+          "localeFieldsSha256": "588aaacc0e9b6174fe21464ef2a69488a7e951e8d2422c59ca6dfab4953105e1"
+        },
+        {
           "id": "dnw-wash",
           "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
           "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
@@ -22739,6 +22752,7 @@
           ],
           "conceptUses": [
             "dnw-dragon",
+            "dnw-drake",
             "dnw-wash"
           ],
           "decision": "Player describes Conrad as a cute red drake who visits the wash."
@@ -23051,7 +23065,8 @@
             "dnw-ryan"
           ],
           "conceptUses": [
-            "dnw-dragon"
+            "dnw-dragon",
+            "dnw-drake"
           ],
           "decision": "Ryan recognizes the small drake."
         },
@@ -23432,7 +23447,8 @@
           "speakerOrKind": "line",
           "characterReferents": [],
           "conceptUses": [
-            "dnw-dragon"
+            "dnw-dragon",
+            "dnw-drake"
           ],
           "decision": "Ryan says small drakes are fun; retain as opinion."
         },
