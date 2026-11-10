@@ -102,3 +102,7 @@ The date wordplay, film choices, kobold vocalization and related film title are 
 ### Conrad euphemisms batch
 
 The special endings and height euphemism cases are author self-reviewed in [special-conrad-endings-height.md](special-conrad-endings-height.md). Their 42 direct IDs passed both source-bound readers and object read-backs, and an empty progressive region failed the intended guard on each build. Current total: 247/1,947 authored IDs and 24/27 special decisions. Three decisions precede ordinary text. Independent game-text audit, final packages and final runtime/visual checks remain pending.
+
+### Transition and display batch
+
+The final three indexed cases have author decisions and source-bound checks in [special-transitions-displays.md](special-transitions-displays.md). Five display/UI IDs and eight continuation dialogue IDs were authored and read back on both builds. Current total: 260/1,947 authored IDs and 27/27 indexed cases with author decisions. Reconcile the full special-scene dependency groups before declaring the locale entry gate passed: direct-ID coverage alone does not establish that every clue, answer, feedback and related wording is authored. Ordinary translation has not started. Independent game-text audit, final packages, normal-play transition completion and final runtime/visual checks remain pending.
