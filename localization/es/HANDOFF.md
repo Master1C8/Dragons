@@ -110,3 +110,11 @@ The final three indexed cases have author decisions and source-bound checks in [
 ### Alexander question-branch dependency closure
 
 Completed 52 additional authored IDs, bringing the locale to 312/1,947. All 77 source-bound IDs in the Alexander question groups and shared exit now have self-edited wording, including all nested choices and outcomes; see [the decision and paired read-back receipt](special-alexander-question-state.md). The 27 indexed decisions are recorded, but broader special-case dependency review remains in progress before the ordinary translation gate. Independent game-text audit, final localized runtime/visual QA and final packages remain pending.
+
+### Ryan date dependency closure
+
+Completed 15 remaining date-node IDs: all four date options and their continuations now have self-edited wording. The locale contains 327/1,947 authored IDs. Both-platform source-bound object read-back and negative-source controls are recorded in [the date decision](special-date-yip.md). The wider special-case dependency review continues before ordinary batches; the independent game-text audit, final packages and final runtime/visual QA remain pending.
+
+### Alexander romance dependency closure
+
+Completed 39 additional context IDs for the invitation, choices and outcomes; all 41 indexed IDs in that group have self-edited wording and paired source-bound object checks. See [the decision and receipt](special-ryan-and-alexander-choices.md). Current authored total: 366/1,947. The broader special-case dependency review continues before ordinary batches; independent audit, packaging and final localized runtime/visual QA remain pending.
