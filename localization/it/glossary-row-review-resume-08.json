@@ -19586,6 +19586,416 @@
       ]
     },
     {
+      "group": "Ryan_2_Outro",
+      "orderedRowsSha256": "ce53357ab09b94af3cbbef8a53a8ab9b08a8990450df6d96a9956fa87f7194d7",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:797ca540",
+          "pairedRowSha256": "c293647d177064a68bbc6252c9b1d3472da598f717ff10a5214867347904a0dc",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The player says Ryan is clean."
+        },
+        {
+          "id": "yarn:line:e8611ad0",
+          "pairedRowSha256": "c338c773ad003d583c8418e8a46c2d239c629ca8d3f08427d05db425de8e79f1",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan apologizes for sharing his troubles."
+        },
+        {
+          "id": "yarn:line:7e511da7",
+          "pairedRowSha256": "a833cb8f761943e09d342c9e1b43ed61afa965fab6f1620192a2b5639d841e0c",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The listener offers reassurance."
+        },
+        {
+          "id": "yarn:line:83c55e2e",
+          "pairedRowSha256": "d047556299812fb616826f404af1fbd2c23ca8e4e81be3fc22587f72bbeea194",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The listener recognizes that things can be tough."
+        },
+        {
+          "id": "yarn:line:15f55959",
+          "pairedRowSha256": "66f81235937ef8f128c5aaefbf85a2cb8075c823f73228bca8c5e96d92178947",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan calls the player sweet."
+        },
+        {
+          "id": "yarn:line:399457b7",
+          "pairedRowSha256": "89e4bb7428c3fd4f5445e95063dc0acc5df83cf74ba67cda3d28c5b7b6b2e4fd",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan wishes things were as easy as in movies."
+        },
+        {
+          "id": "yarn:line:afa450c0",
+          "pairedRowSha256": "9747cae3a6bb64fb305a6675ccb293aa66e8a9aa74aa325ab09f79d51af90c10",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player welcomes Ryan to return."
+        },
+        {
+          "id": "yarn:line:9a013329",
+          "pairedRowSha256": "664c102680b2d5843a101f696d432baf0edf34506f415b58e01961ba5915466b",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player offers time to talk."
+        },
+        {
+          "id": "yarn:line:0c31345e",
+          "pairedRowSha256": "f3af5f67a7c487419c706ebdffccbeb97775d65bf1fb4d5882d2e4a660d65279",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan accepts and thanks the player."
+        },
+        {
+          "id": "yarn:line:20503ab0",
+          "pairedRowSha256": "4b3cc5fa1267e98039621f1c28ad4e71bbd71204d1a37bca7759f3ab4ef97a8e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks whether the player is sure, because the subject is not fun."
+        },
+        {
+          "id": "yarn:line:b6603dc7",
+          "pairedRowSha256": "ecfcde7c8253316982f48ea6a2ae418f18768b58797c0bc012162a7a18fb6b6e",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player offers not to pry."
+        },
+        {
+          "id": "yarn:line:b14d8520",
+          "pairedRowSha256": "87c8970058f3cab4bb3fc18ba179aa2cd9746b59c881377afb9ae0a7e3a49fe7",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player says Ryan sounds like he needs to talk."
+        },
+        {
+          "id": "yarn:line:277d8257",
+          "pairedRowSha256": "93590fb44c8be8428af9ac1c4717dce0a812c57958d037a0f28a08c11674e9d0",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan reassures and thanks the listener."
+        },
+        {
+          "id": "yarn:line:54c44240",
+          "pairedRowSha256": "7038b406763fd01d3b8a41210005c43977993c0845e9883d88a45843463e56a7",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker agrees."
+        },
+        {
+          "id": "yarn:line:c2f44537",
+          "pairedRowSha256": "a443f504db88014f6ade8635efec811f0119335a5505f60b0268b37e644be381",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Ryan identifies his then-girlfriend as a dragon who works from home; she is unnamed and uses she/her in this context."
+        },
+        {
+          "id": "yarn:line:78a54cae",
+          "pairedRowSha256": "ee1a2cc82cdd4c6edd472fcb9a4c23d44c1a8b729a07cf6c733c5ed8d80795c4",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says she yelled when he returned dirty; she refers to the unnamed girlfriend."
+        },
+        {
+          "id": "yarn:line:ee954bd9",
+          "pairedRowSha256": "d4d0fdff68eb7807db94a57d3fe1e8f817a5c27bfc8ba89f896a31a59b1c2970",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Ryan says his girlfriend told him to visit a wash and acted offended."
+        },
+        {
+          "id": "yarn:line:4d002f47",
+          "pairedRowSha256": "e6e9145391f5629739f35eaa3a6359ec43fcd912f2148fa7c50362a4229bd964",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says she was very upset that he was muddy; preserve emphasis."
+        },
+        {
+          "id": "yarn:line:db302830",
+          "pairedRowSha256": "0b134495c4718a7b243ebf24825ab56514fb42bd9c17dbd072830088608bfafe",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The listener asks if that caused Ryan’s first visit."
+        },
+        {
+          "id": "yarn:line:90444b09",
+          "pairedRowSha256": "92754a195224d2d9b6eb155aadaef97b7bed8a64a4d2752354bc442110b98e2b",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The listener calls her reaction excessive."
+        },
+        {
+          "id": "yarn:line:616121a9",
+          "pairedRowSha256": "db91c8d73ba35a7e8bcc8b8f52d4139efe78a0bd26a1c977cb00c048b8b470d1",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A hesitant yes."
+        },
+        {
+          "id": "yarn:line:f75126de",
+          "pairedRowSha256": "c918289fb0c29489b8207fc26e98dc38d2de54964b367e7f56ef7aa2fa160c4a",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says the player has helped him."
+        },
+        {
+          "id": "yarn:line:664c994e",
+          "pairedRowSha256": "243f4a618624b8bca6086f2cc9f3e16ac7c59735632cd2404b483efefc265c68",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says it gave him time to think."
+        },
+        {
+          "id": "yarn:line:f07c9e39",
+          "pairedRowSha256": "0824b794ab1dd093589907ce7d37af0c34471904d95d1e2141ed8da5ad20b4a4",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate line calls her reaction excessive."
+        },
+        {
+          "id": "yarn:line:2a154290",
+          "pairedRowSha256": "ff329f52d4462b6cc358544944816f95b87187cff0caa3844a543b1e2aee49a7",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan agrees with that assessment."
+        },
+        {
+          "id": "yarn:line:bc2545e7",
+          "pairedRowSha256": "7325b1ad87d5e360d3cc6a52e77998038fa314839fcffa8944c0ebc155a8095e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan suspects his girlfriend is upset about something else; this is a suspicion."
+        },
+        {
+          "id": "yarn:line:06744c7e",
+          "pairedRowSha256": "eb15bbca0a748e04906857a5eb81c28b7bfa543d0149949939f53c0c60e6a97c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan dislikes that she takes it out on him."
+        },
+        {
+          "id": "yarn:line:33d12f97",
+          "pairedRowSha256": "b5418edcbb9d38abf8a637760367ee91987b5a473a46b61589e0a28676f10cdf",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate branch agrees with the assessment."
+        },
+        {
+          "id": "yarn:line:a5e128e0",
+          "pairedRowSha256": "73d55405d21dfc078104066d42a0a4d6cc0244cc528994c12283a6ff9897b55c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate branch states Ryan’s suspicion."
+        },
+        {
+          "id": "yarn:line:1fb02179",
+          "pairedRowSha256": "55128bcd2dc83e1192b436e60920a6dc378e3ef9fe92de5f1602ed867c7bce52",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate branch says she takes it out on Ryan."
+        },
+        {
+          "id": "yarn:line:8980260e",
+          "pairedRowSha256": "442d0df278426ace2f7d8e8e5177702643a3b84d893d733460f5b20b5c556fa4",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker changes subject."
+        },
+        {
+          "id": "yarn:line:189d999e",
+          "pairedRowSha256": "e903e99b5fab4ae568da845715e46baee60e89b93dcd879c59375ef99cf81043",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan thanks the player for listening."
+        },
+        {
+          "id": "yarn:line:8ead9ee9",
+          "pairedRowSha256": "8d8c3c9aa1112ebc6d9ff933e2ffd278d30453768d0caf6a466e76e4eec166c2",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player addresses Ryan supportively."
+        },
+        {
+          "id": "yarn:line:fd145efe",
+          "pairedRowSha256": "ebe38432afe26c157b49aec39f2edfe8756c8996740ae945ce7b39c88f46dc7d",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player sympathizes with Ryan’s situation."
+        },
+        {
+          "id": "yarn:line:6b245989",
+          "pairedRowSha256": "cf5432354851a74bc4631b9396f0ac5e71cfefa5c52e0bca8d5d005fb92d1a43",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Brief thanks."
+        },
+        {
+          "id": "yarn:line:47455767",
+          "pairedRowSha256": "a1f2511d36a71b6d6b0e1948485e7596de48e813a6e545eda621c377a0333eaa",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan expects to figure something out."
+        },
+        {
+          "id": "yarn:line:d1755010",
+          "pairedRowSha256": "da8156f9ea6055129a9fda1df86fb2c5255bb8af2e536edf2bcd8480d452f572",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player offers to open the gate."
+        },
+        {
+          "id": "yarn:line:72e0348e",
+          "pairedRowSha256": "1f2e1b17150b38bb6966143396ff5286f88da1e874cb6e556b6dbd57dec38c0a",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An informal farewell."
+        }
+      ]
+    },
+    {
       "group": "UI/level0",
       "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
       "applicableEntries": [],

@@ -498,3 +498,8 @@ Both author layers now bind all 38 paired `Conrad_Outro_3` rows. The applicable 
 ### Resume 09: Ryan and Conrad date branch
 
 Both author layers bind the 20 paired `Ryan_5_Required_ryan_conrad_romanced` rows. Ryan refers to Conrad and the player distinctly; the sex after the date belongs to this branch (`yarn:line:3028feb5`). Ryan’s account that Conrad had not felt cared for is his inference (`yarn:line:ed6c9afb`), not an omniscient fact. The player’s reference to their job uses the dragon-washer context. Applicable complete source and Italian character and profession fields were checked; no new objective defect was established. These are not independent reviews.
+
+
+### Resume 09: Ryan’s account of his girlfriend
+
+Both author layers now bind 38 paired `Ryan_2_Outro` rows. Ryan explicitly describes his unnamed girlfriend as a dragon working from home and uses she/her (`yarn:line:c2f44537`, `78a54cae`); do not invent a personal name or conflate her with the four-scene anonymous speaker. Ryan’s suggestion that she is upset about something else (`yarn:line:bc2545e7`, `a5e128e0`) is his speculation. The wash refers to a service/establishment in context. Applicable source and Italian character, dragon and wash fields were checked; no new objective field defect was identified. These are author self-reviews, not independent acceptance.
