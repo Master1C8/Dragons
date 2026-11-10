@@ -203,6 +203,45 @@ and historical inputs restored from `702cb7e^`. The receipts in
 This closes the raw metadata comparison for the nine assets in the controls.
 Object payloads and managed assemblies retain their separate checks.
 
+## Managed declaration metadata
+
+The two rewritten managed assemblies in each Russian control package passed
+an independent declaration check against their source DLLs. The audit compares
+assembly and module identities, existing dependencies, type and interface
+declarations, fields and constants, method and parameter metadata, properties,
+events, custom attribute blobs, and managed resources. It binds the stock
+inputs and the Cecil reader by SHA-256.
+
+| DLL | macOS types / methods / fields | Windows types / methods / fields |
+| --- | ---: | ---: |
+| Assembly-CSharp | 466 / 2,465 / 1,667 | 459 / 2,408 / 1,637 |
+| YarnSpinner.Unity | 172 / 772 / 574 | 172 / 772 / 574 |
+
+The Yarn assembly adds the declared `Yarn.Unity.VnSpeakerDisplay` type and
+the `Dragons.SpeakerPresentation` assembly reference. The verifier checks
+their identities and helper method declarations before comparing existing
+metadata. The package rebuild and adapter checks remain responsible for the
+approved instruction edits and the companion's bytes. Raw PE layout and
+instruction operands are outside this declaration check.
+
+```sh
+dotnet build localization/tools/managed-metadata-audit -o "$managed_metadata_bin"
+dotnet "$managed_metadata_bin/managed-metadata-audit.dll" "$stock_dll" "$package_dll"
+```
+
+Run for both DLLs per package. Read the macOS DLLs from the signed app and
+extract only the corresponding members of the verified Windows ZIP into a
+scratch directory. All four receipts in
+`localization/work/managed-metadata-20261110.NICDw4/` reproduced byte for byte.
+A Cecil reserialization of the packaged Assembly-CSharp DLL passed, and the
+same reserialization with only an `OnShow` parameter renamed failed at
+`MenuSlotsNew`. An unpinned stock input failed before the metadata comparison.
+
+| Receipt | macOS SHA-256 | Windows SHA-256 |
+| --- | --- | --- |
+| Assembly-CSharp | `afe5b165507bdf4c21c42a7439e2657691b276ad590dbd0ee21a72d6165d408d` | `0e939f9129f8eb0b268a778c65ac94afdfc954eaa809c220932409f514f29284` |
+| YarnSpinner.Unity | `6e79e4a66cecd5c2e058913c7cdcdbc7d6849e220d2952c9df1a810342a5607c` | `c89b0adaf3f24d5272d371451ff77934af4b0063223e37083ea90865010c4bad` |
+
 The source gate remains open. Exact file preservation covers untouched
 resources even when they contain engine metadata. It does not classify every
 player-visible source or prove the complete field-level preservation contract
