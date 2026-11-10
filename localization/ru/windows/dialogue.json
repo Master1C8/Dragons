@@ -4530,6 +4530,306 @@
     "line:1772a124": {
       "source": "Test line 18",
       "text": "Тестовая строка 18"
+    },
+    "line:39fd52f1": {
+      "source": "'Ey big dog.",
+      "text": "Здорово, здоровяк."
+    },
+    "line:afcd5586": {
+      "source": "I'm a... kobold.",
+      "text": "Я... кобольд."
+    },
+    "line:83ac5b68": {
+      "source": "Hi Conrad.",
+      "text": "Привет, Конрад."
+    },
+    "line:159c5c1f": {
+      "source": "Uh... Yeah.",
+      "text": "Эм... Ага."
+    },
+    "line:20393ff6": {
+      "source": "Heh. Yeah. That's me.",
+      "text": "Хех. Ага. Это я."
+    },
+    "line:b6093881": {
+      "source": "Looks like ya' got a shipment, eh?",
+      "text": "Смотрю, у тебя доставка была, а?"
+    },
+    "line:0c583118": {
+      "source": "What was in those opened crates?",
+      "text": "Что было в тех открытых ящиках?"
+    },
+    "line:9a68366f": {
+      "source": "I got a mount.",
+      "text": "У меня теперь есть станок."
+    },
+    "line:0b7589ff": {
+      "source": "It's the mount you asked for.",
+      "text": "Тот станок, который ты просил."
+    },
+    "line:9d458e88": {
+      "source": "<size=160%>HELL YEAH!",
+      "text": "<size=160%>ОХРЕНЕННО!"
+    },
+    "line:78cc49e8": {
+      "source": "<size=100%>I mean- Cool.",
+      "text": "<size=100%>То есть... Класс."
+    },
+    "line:eefc4e9f": {
+      "source": "Now, lemme in! I want to try that thing out!",
+      "text": "А теперь впусти меня! Хочу испытать эту штуку!"
+    },
+    "line:54ad4706": {
+      "source": "Okay...",
+      "text": "Ладно..."
+    },
+    "line:4d692a01": {
+      "source": "I'll go get the gate.",
+      "text": "Сейчас открою ворота."
+    },
+    "line:c29d4071": {
+      "source": "Don't... make it sound like that.",
+      "text": "Не надо... таким тоном."
+    },
+    "line:610824ef": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:f7382398": {
+      "source": "Let's get going~!",
+      "text": "Ну, погнали~!"
+    },
+    "line:db592d76": {
+      "source": "Damn right!",
+      "text": "Ещё бы!"
+    },
+    "line:b90b01a9": {
+      "source": "Don't worry, he's real nice.",
+      "text": "Не переживай. Он очень милый."
+    },
+    "line:9247b7a0": {
+      "source": "I think he'd like the new you!",
+      "text": "Думаю, ему понравится новый Конрад!"
+    },
+    "line:0477b0d7": {
+      "source": "I hope so. I really want a fresh start with someone.",
+      "text": "Надеюсь. Мне правда хочется начать с кем-то с чистого листа."
+    },
+    "line:dd082478": {
+      "source": "Of course.",
+      "text": "Конечно."
+    },
+    "line:9c393f61": {
+      "source": "I think you're special too.",
+      "text": "По-моему, ты тоже особенный."
+    },
+    "line:3fac5bff": {
+      "source": "That makes me feel good to hear.",
+      "text": "Приятно это слышать."
+    },
+    "line:85fd5266": {
+      "source": "Yes.",
+      "text": "Да."
+    },
+    "line:fcff76d4": {
+      "source": "Yep! I'll get the gate.",
+      "text": "Ага! Сейчас открою ворота."
+    },
+    "line:6acf71a3": {
+      "source": "Okay, thanks.",
+      "text": "Ладно, спасибо."
+    },
+    "line:0d3b23da": {
+      "source": "Sheesh.",
+      "text": "Охренеть."
+    },
+    "line:9b0b24ad": {
+      "source": "That.",
+      "text": "Это было..."
+    },
+    "line:215a2d34": {
+      "source": "That felt <i>good</i>.",
+      "text": "Это было <i>кайфово</i>."
+    },
+    "line:b76a2a43": {
+      "source": "You were really going at it.",
+      "text": "Ты прямо разошёлся."
+    },
+    "line:82cf49aa": {
+      "source": "You seemed to enjoy yourself.",
+      "text": "Похоже, тебе понравилось."
+    },
+    "line:14ff4edd": {
+      "source": "I always do~",
+      "text": "Мне всегда нравится~"
+    },
+    "line:389e4033": {
+      "source": "Hell yeah I did!",
+      "text": "Да ещё как!"
+    },
+    "line:aeae4744": {
+      "source": "Thats good... Now what?",
+      "text": "Здорово... А теперь что?"
+    },
+    "line:3fb3f8d4": {
+      "source": "Now, round two!",
+      "text": "А теперь второй раунд!"
+    },
+    "line:a983ffa3": {
+      "source": "Again...?",
+      "text": "Ещё раз?.."
+    },
+    "line:73ea230a": {
+      "source": "No no, you're a certified cleaner yeah?",
+      "text": "Нет-нет, у тебя же есть сертификат на мойку, да?"
+    },
+    "line:e5da247d": {
+      "source": "Means you know how to get hands on!",
+      "text": "Значит, знаешь, что делать руками!"
+    },
+    "line:5f8b2de4": {
+      "source": "oah. <size=70%>okay.",
+      "text": "Ох. <size=70%>ладно."
+    },
+    "line:6a2e4e0d": {
+      "source": "Right. I'll get to it.",
+      "text": "Точно. Сейчас займусь."
+    },
+    "line:c9bb2a93": {
+      "source": "Hah. Yeah. <size=70%><i>It's cool that you learn to jerk off dragons in cleaning school...",
+      "text": "Ха. Ага. <size=70%><i>Прикольно, что в школе мойщиков учат дрочить драконам..."
+    },
+    "line:fc1e497a": {
+      "source": "Well, good luck getting your hands around all of me.",
+      "text": "Ну, удачи обхватить меня целиком."
+    },
+    "line:83f511d2": {
+      "source": "If ya' place the mount for me I'll have at it.",
+      "text": "Поставишь мне станок — сразу возьмусь за дело."
+    },
+    "line:12e8ae42": {
+      "source": "Ey, Use your hands on my cock- it feels good!",
+      "text": "Эй, возьмись руками за мой член. Это приятно!"
+    },
+    "line:84d8a935": {
+      "source": "So uh, mind opening the gate?",
+      "text": "Так, эм... откроешь ворота?"
+    },
+    "line:8ffedb47": {
+      "source": "I like the mount you chose. Mind grabbing it?",
+      "text": "Мне нравится твой выбор станка. Принесёшь его?"
+    },
+    "line:19cedc30": {
+      "source": "Sooo. You gonna jerk my off?",
+      "text": "Ну-у-у... Подрочишь мне?"
+    },
+    "line:a39fd5a9": {
+      "source": "Thanks for that. Felt pretty damn good.",
+      "text": "Спасибо. Было чертовски приятно."
+    },
+    "line:934a1d5a": {
+      "source": "Ah yeah, that's the stuff.. keep at it.",
+      "text": "Ага, вот так... Продолжай."
+    },
+    "line:cdb8d8db": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:28311fbb": {
+      "source": "Omg you're hurt!",
+      "text": "Боже, ты ранен!"
+    },
+    "line:be0118cc": {
+      "source": "Are you okay?",
+      "text": "Ты в порядке?"
+    },
+    "line:04501155": {
+      "source": "Hey uh, I just need a cleaning.",
+      "text": "Привет, эм... Мне просто надо помыться."
+    },
+    "line:92601622": {
+      "source": "...Okay, come in",
+      "text": "...Ладно, заходи."
+    },
+    "line:30a74521": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:a6974256": {
+      "source": "I'm here if you need someone to talk to.",
+      "text": "Если захочешь поговорить, я рядом."
+    },
+    "line:8af64cb8": {
+      "source": "I'll take care of this, don't you worry.",
+      "text": "Я этим займусь, не переживай."
+    },
+    "line:1cc64bcf": {
+      "source": "No.. No it's fine... thank you.",
+      "text": "Нет... Нет, всё нормально... Спасибо."
+    },
+    "line:1bebf328": {
+      "source": "... Thank you..",
+      "text": "...Спасибо..."
+    },
+    "line:6374414d": {
+      "source": "Hey thanks for being here for me...",
+      "text": "Слушай, спасибо, что ты рядом..."
+    },
+    "line:049fb01f": {
+      "source": "It's nice to have friends to rely on.",
+      "text": "Хорошо, когда есть друзья, на которых можно положиться."
+    },
+    "line:11bfce3b": {
+      "source": "... I thought we were good friends, we have sex all the time!",
+      "text": "...Я думал, мы хорошие друзья. Мы постоянно занимаемся сексом!"
+    },
+    "line:878fc94c": {
+      "source": "I don't understand..",
+      "text": "Я не понимаю..."
+    },
+    "line:d37175c7": {
+      "source": "I act tough but am a small dragon...",
+      "text": "Я строю из себя крутого, но я мелкий дракон..."
+    },
+    "line:454172b0": {
+      "source": "They took it too far.",
+      "text": "Они зашли слишком далеко."
+    },
+    "line:a8eb78ed": {
+      "source": "... you're done? I'm still dirty..",
+      "text": "...Уже всё? Я ещё грязный..."
+    },
+    "line:39f6c77d": {
+      "source": "Oh my bad",
+      "text": "Ой, моя ошибка."
+    },
+    "line:afc6c00a": {
+      "source": "Whoops",
+      "text": "Упс."
+    },
+    "line:ef611d11": {
+      "source": "... you're done? I'm still soapy..",
+      "text": "...Уже всё? Я ещё в мыле..."
+    },
+    "line:79511a66": {
+      "source": "Oh my bad",
+      "text": "Ой, моя ошибка."
+    },
+    "line:c30013ff": {
+      "source": "Whoops",
+      "text": "Упс."
+    },
+    "line:c236bdf9": {
+      "source": "Woah. Uhm.",
+      "text": "Ого. Эм."
+    },
+    "line:5406ba8e": {
+      "source": "Normally I'd say yes to a mount. But, not right now.",
+      "text": "Обычно я бы согласился на станок. Но сейчас не хочу."
+    },
+    "line:2a29842a": {
+      "source": "Hey uh... Not now.",
+      "text": "Эй, эм... Не сейчас."
     }
   }
 }

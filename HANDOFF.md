@@ -195,7 +195,7 @@ The initial workload audit recorded 15 draft IDs per build. The
 [first authored batch](localization/evidence/russian-special-scene-decisions-20261110.md#first-ordinary-batch)
 supersedes those drafts. It covers five phone and Ryan scenes and
 incorporates the reviewed special-scene decisions. The platform input
-folders now have 1,232 macOS and 1,250 Windows authored values, or 1,256
+folders now have 1,307 macOS and 1,325 Windows authored values, or 1,331
 distinct inputs. The second batch adds
 115 lines across eight early Ryan nodes, covering the relationship
 conversation, two wash visits, the cold-water barks and the mount
@@ -227,7 +227,11 @@ instructions, alternate appointment states and wash reactions passed
 both platform readers. The ninth batch adds 81 lines. It closes the
 remaining Alexander nodes, the diagnostic voice and all numbered
 test strings in the pinned scope. Both readers verified the exact
-source variants, including all test-line digits. The full-scope gate still
+source variants, including all test-line digits. The tenth batch adds
+75 lines across fifteen Conrad nodes. It includes the delivered mount,
+the combined outro and the alternate injury route. Both source readers
+accepted the additions with the existing route text preserved.
+The full-scope gate still
 rejects the incomplete corpus at the missing-dialogue check.
 The [paired authoring worklist](localization/evidence/locale-workload-v42-20261110.md#paired-authoring-worklist)
 now maps those 1,947 IDs to their package inputs and indexes all 27
@@ -276,7 +280,7 @@ All locales use the shared fixed stages in `~/.codex/skills/vn-localization/refe
 | `probe` | `localization/dialogue_locale.py`, `ui_locale.py`, `build_game.py`, isolated game copy; matrix below. No bulk translation before applicable paths pass or a specific risk decision. |
 | `source` | Complete shared stable-ID inventory, classifications, preserve-exact contract and validator, special-scene discovery; assess effort after verification. Existing exports are incomplete candidates. |
 | `glossary` | Historical bindings, paired Yarn reading and parser coverage verified. Ryan owns all seven known cold-water bark references per build. The owner chose «Большой К» for Conrad and approved neutral address for the four unidentified dragon scenes. The [new glossary entry](localization/evidence/generic-dragon-entries-20261110.md#canonical-integration-and-russian-scene-wording) is integrated in SiteForMods main `29b0bb56` for English and all 30 locale layers. |
-| `translate-edit` | Russian decisions for all 27 known special cases are recorded. The [anonymous-scene Unity control](localization/evidence/generic-dragon-entries-20261110.md#authored-russian-text-in-unity) verifies all 20 authored strings and exposes the original buzzing finish-command error. Nine batches are integrated and structurally validated. Continue authoring and editing the remaining 691 Yarn inputs. |
+| `translate-edit` | Russian decisions for all 27 known special cases are recorded. The [anonymous-scene Unity control](localization/evidence/generic-dragon-entries-20261110.md#authored-russian-text-in-unity) verifies all 20 authored strings and exposes the original buzzing finish-command error. Ten batches are integrated and structurally validated. Continue authoring and editing the remaining 616 Yarn inputs. |
 | `editorial` | Full semantic audit, independent diff/delta review and regression closure on pinned artifacts; do not assert independence without evidence. |
 | `resources` | Verify final font coverage and metrics against the finished corpus; textures not applicable by owner decision. |
 | `package` | The macOS and Windows package commands both require complete pinned locale inputs. Build and read back the final authored locale artifacts and validate install and recovery. |
@@ -395,7 +399,7 @@ The earlier test copies also used isolated identifiers; ordinary copies currentl
 
 | Locale | Phase | Translated / visible total | Glossary | Editorial | Fonts | Textures | Build | Runtime | Visual | Screenshot upload | Screenshot review | Release | Blocker / next action |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `ru` | `translate-edit` | 1,256 authored / 1,947 required package inputs | English and Russian bound to SiteForMods `29b0bb56` | Batches self-edited, full audit pending | needs-review | not-applicable: excluded by owner | needs-review: partial inputs | 20 authored strings verified on paired controlled routes | final visual review pending | not-run: not requested | not-applicable: no upload | not-run | Continue ordinary scene batches, then build and verify complete Russian artifacts. |
+| `ru` | `translate-edit` | 1,331 authored / 1,947 required package inputs | English and Russian bound to SiteForMods `29b0bb56` | Batches self-edited, full audit pending | needs-review | not-applicable: excluded by owner | needs-review: partial inputs | 20 authored strings verified on paired controlled routes | final visual review pending | not-run: not requested | not-applicable: no upload | not-run | Continue ordinary scene batches, then build and verify complete Russian artifacts. |
 
 On 2026-11-06 an independently authorized visual reviewer examined the synthetic choice and continuation frames described in `localization/evidence/choice-visual-review-20261106.md`. The observed strings match the intended probe text, fit their panels and show no apparent clipping or missing glyphs in these two previews. This does not establish normal player input, long-string layout, final font coverage or game-wide visual quality.
 
