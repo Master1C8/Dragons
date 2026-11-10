@@ -353,3 +353,9 @@ Author self-reviewed 37 IDs across `UI/level0`, `UI/level1`, and levels 3–6, i
 Author self-reviewed 32 IDs in `Conrad_required_4` and the Conrad and Ryan/Conrad relationship branches, retaining choices and markup. This is author self-review, not independent audit.
 
 `translation.json` now has **1,400 / 1,947 IDs**, SHA-256 `baed9388e3025c91a3fc2c00d0fe24f4c1bfe6c15ee83259f4c3d1c94919f42c`. `resume-01/add-conrad-four-conversation.py` and its map validate the preceding draft and paired readers; macOS accepts 1,376 and Windows 1,394 bindings. The complete guard reports 547 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Conrad fourth visit: departures — continuation
+
+Author self-reviewed 56 IDs in the four `Conrad_Outro_4` relationship branches, preserving choices and markup. Two apostrophe-only source variants have explicit shared translations. This is author self-review, not independent audit.
+
+`translation.json` now has **1,456 / 1,947 IDs**, SHA-256 `652e6053c5c0dbd5145c3694ea354b761bc6837df8aedd88fa8fa0fb4dc713d0`. `resume-01/add-conrad-four-outros.py` and its map validate the preceding draft and paired readers; macOS accepts 1,432 and Windows 1,450 bindings. The complete guard reports 491 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
