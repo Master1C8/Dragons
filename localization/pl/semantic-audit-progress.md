@@ -172,3 +172,11 @@ Compared the questions and responses about his teaching, color, size, tasting, t
 Finding pending disposition: `yarn:line:8ee41fdc` makes the verb for obeying or following attach awkwardly to family and cultural ties; retain the respect he gives them and the exact size markup.
 
 Cumulative distinct IDs read: 1,443 / 1,947; 504 remain. Author review only; independent acceptance remains pending.
+
+## Conrad fifth visit and route variants: 129 IDs read
+
+Compared the three relationship-specific arrivals, discussions, exits, debug-state choices and action responses against both English builds and Polish. The player/Conrad date, Conrad/Ryan date, and player/Ryan relationship remain distinct. His Ryan conversation acknowledges earlier unkind behavior; the other route asks about the player’s date. The intimacy responses and the deliberately awkward Big C nickname retain their context. Source node names and positions do not establish live route flags, action triggers or visual fit.
+
+Findings pending disposition: `yarn:line:eaafe671` is an awkward wash-completion sentence; compare equivalent `116f0e16`. `yarn:line:4fc4259c` uses masculine `gotów`: check the actual speaker and adjacent dialogue before deciding whether it unnecessarily genders the player.
+
+Cumulative distinct IDs read: 1,572 / 1,947; 375 remain. Author review only; independent acceptance remains pending.
