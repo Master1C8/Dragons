@@ -278,3 +278,6 @@ The author has preliminarily read positions 820-979 and corrected six additional
 
 
 The previously unmapped 92 Alexander rows now have paired source instruction evidence, with a speaker inference still explicitly open for the intimacy continuation. `9d7cc63c` was corrected using the later resurrection reference. Positions 469-509 have been reviewed as complete early Conrad scenes with option paths on both builds; continue contextual review at 510. Positions 510-979 are preliminary, and 980-1946 unread. Translation SHA-256 `150e4b05409285f62486a272e589b12b49002617abb27a1d2e25146b6f2430da`; both full stock-input checks and the corrected entry's encoded object read-backs passed. Exact receipts and remaining boundaries are in `semantic-review.md`.
+
+
+Positions 510-542 are now author-reviewed with paired instruction and option-path evidence; the next contextual input is position 543. The Ryan/Conrad date branches preserve the distinction between advice and the washing joke. No translation changes occurred in this batch; receipt and hash are in `semantic-review.md`. Positions 543-979 remain preliminary, and 980-1946 unread. Independent game-text audit, candidate packages and final runtime/visual QA remain open.
