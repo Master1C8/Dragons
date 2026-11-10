@@ -10,6 +10,7 @@ import tempfile
 import zipfile
 
 import compare_yarn_versions as versions
+import cjk_font_fallback as cjk
 import dialogue_locale as dl
 import managed_fallback
 import package_inputs
@@ -35,16 +36,23 @@ def zip_member(name):
     return info
 
 
-def archive_payload(archive, payload, manifest):
+def archive_payload(archive, payload, manifest, *, font_license=None):
+    if ('cjkFallback' in manifest) != (font_license is not None):
+        raise ValueError('Windows ZIP font receipt and license are required together')
     members = {f'{DATA_FOLDER}/{name}': payload / name for name in manifest['files']}
+    extras = {cjk.LICENSE: font_license} if font_license is not None else {}
+    names = sorted(members.keys() | extras.keys())
     manifest_bytes = (json.dumps(manifest, ensure_ascii=False, sort_keys=True, indent=2) + '\n').encode()
     with zipfile.ZipFile(archive, 'x') as package:
         package.writestr(zip_member('manifest.json'), manifest_bytes)
-        for name, path in sorted(members.items()):
-            with path.open('rb') as source, package.open(zip_member(name), 'w') as output:
-                shutil.copyfileobj(source, output)
+        for name in names:
+            if name in extras:
+                package.writestr(zip_member(name), extras[name])
+            else:
+                with members[name].open('rb') as source, package.open(zip_member(name), 'w') as output:
+                    shutil.copyfileobj(source, output)
     with zipfile.ZipFile(archive) as package:
-        if package.namelist() != ['manifest.json', *sorted(members)]:
+        if package.namelist() != ['manifest.json', *names]:
             raise ValueError('Windows ZIP has missing, duplicate or unexpected entries')
         if package.read('manifest.json') != manifest_bytes:
             raise ValueError('Windows ZIP manifest differs from verified inputs')
@@ -53,14 +61,17 @@ def archive_payload(archive, payload, manifest):
             with package.open(name) as stream:
                 if file_digest(stream) != manifest['files'][relative]['outputSha256']:
                     raise ValueError(f'Windows ZIP member differs from verified output: {name}')
+        if extras and dl.sha(package.read(cjk.LICENSE)) != manifest['cjkFallback']['licenseSha256']:
+            raise ValueError('Windows ZIP font license differs from verified input')
 
 
 def build(data, inputs, requested, inventory, scope_path, output, *,
-          managed_tool, speaker_tool, speaker_runtime, speaker_runtime_sha):
+          managed_tool, speaker_tool, speaker_runtime, speaker_runtime_sha, cjk_font=None, cjk_license=None):
     data = Path(data).resolve(strict=True)
     target = assets.safe_output(data, output)
     if target.suffix.lower() != '.zip':
         raise ValueError('Windows output must be a .zip')
+    cjk_resource = cjk.prepare(requested, cjk_font, cjk_license)
     with tempfile.TemporaryDirectory(prefix='.dragons-windows-', dir=target.parent) as temporary:
         stage = Path(temporary)
         local = stage / 'locale'
@@ -90,6 +101,9 @@ def build(data, inputs, requested, inventory, scope_path, output, *,
                 improve_speaker_contrast=asset in speaker_contrast.ASSETS,
             )
             files[asset] = {key: report[key] for key in ('sourceSha256', 'outputSha256')}
+        if cjk_resource is not None:
+            manifest['cjkFallback'] = cjk.add(PLATFORM, data, payload / cjk.ASSET, cjk_resource)
+            files[cjk.ASSET]['outputSha256'] = manifest['cjkFallback']['assetSha256']
         patched, speaker_report = speaker_locale.prepare(
             PLATFORM, data / 'Managed' / managed_fallback.ASSEMBLY, speakers, requested,
             speaker_tool, speaker_runtime, speaker_runtime_sha, fallback_locale=local / 'missing-line.json',
@@ -112,7 +126,7 @@ def build(data, inputs, requested, inventory, scope_path, output, *,
             files[f'Managed/{name}'] = {'sourceSha256': before, 'outputSha256': after}
         component_preservation = protected.verify(PLATFORM, inventory, payload)
         archive = stage / 'payload.zip'
-        archive_payload(archive, payload, manifest)
+        archive_payload(archive, payload, manifest, font_license=cjk_resource.license if cjk_resource else None)
         with archive.open('rb') as stream:
             digest = file_digest(stream)
         # Keep a competing output intact and publish only the complete verified archive.
@@ -132,12 +146,14 @@ def main():
     parser.add_argument('--speaker-tool', type=Path, required=True)
     parser.add_argument('--speaker-runtime', type=Path, required=True)
     parser.add_argument('--speaker-runtime-sha', required=True)
+    parser.add_argument('--cjk-font', type=Path)
+    parser.add_argument('--cjk-license', type=Path)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     print(json.dumps(build(
         args.source_data, args.locale_inputs, args.locale, args.inventory, args.yarn_scope, args.output,
         managed_tool=args.managed_tool, speaker_tool=args.speaker_tool, speaker_runtime=args.speaker_runtime,
-        speaker_runtime_sha=args.speaker_runtime_sha,
+        speaker_runtime_sha=args.speaker_runtime_sha, cjk_font=args.cjk_font, cjk_license=args.cjk_license,
     ), ensure_ascii=False))
 
 

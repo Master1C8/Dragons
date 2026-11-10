@@ -5,6 +5,7 @@ from pathlib import Path
 import tempfile
 
 import build_game
+import cjk_font_fallback as cjk
 import compare_yarn_versions as versions
 import package_inputs
 import ui_locale
@@ -13,9 +14,10 @@ PLATFORM = 'macos'
 
 
 def build(source, inputs, requested, inventory, scope_path, output, *,
-          managed_tool, speaker_tool, speaker_runtime, speaker_runtime_sha):
+          managed_tool, speaker_tool, speaker_runtime, speaker_runtime_sha, cjk_font=None, cjk_license=None):
     source, output = build_game.bundle_paths(Path(source), Path(output))
     data = source / build_game.ASSET_RELATIVE.parent
+    cjk_resource = cjk.prepare(requested, cjk_font, cjk_license)
     with tempfile.TemporaryDirectory(prefix='dragons-macos-locale-') as temporary:
         local = Path(temporary) / 'locale'
         package_inputs.prepare_inputs(inputs, local, ui_locale.ASSETS, PLATFORM, requested, inventory, scope_path)
@@ -32,7 +34,7 @@ def build(source, inputs, requested, inventory, scope_path, output, *,
             fallback_locale=local / 'missing-line.json', slot_new_locale=local / 'slot-new.json',
             fallback_tool=managed_tool, speaker_locale=local / 'speakers.json',
             speaker_tool=speaker_tool, speaker_runtime=speaker_runtime, speaker_runtime_sha=speaker_runtime_sha,
-            package_receipt=manifest, preservation_inventory=inventory,
+            package_receipt=manifest, preservation_inventory=inventory, cjk_resource=cjk_resource,
         )
 
 
@@ -47,11 +49,14 @@ def main():
     parser.add_argument('--speaker-tool', type=Path, required=True)
     parser.add_argument('--speaker-runtime', type=Path, required=True)
     parser.add_argument('--speaker-runtime-sha', required=True)
+    parser.add_argument('--cjk-font', type=Path)
+    parser.add_argument('--cjk-license', type=Path)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     build(args.source_app, args.locale_inputs, args.locale, args.inventory, args.yarn_scope, args.output,
           managed_tool=args.managed_tool, speaker_tool=args.speaker_tool,
-          speaker_runtime=args.speaker_runtime, speaker_runtime_sha=args.speaker_runtime_sha)
+          speaker_runtime=args.speaker_runtime, speaker_runtime_sha=args.speaker_runtime_sha,
+          cjk_font=args.cjk_font, cjk_license=args.cjk_license)
 
 
 if __name__ == '__main__':

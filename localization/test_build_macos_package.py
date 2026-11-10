@@ -8,6 +8,25 @@ import package_inputs
 
 
 class MacosPackageTests(unittest.TestCase):
+    def test_cjk_input_guard_precedes_the_build(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / 'Original.app'
+            source.mkdir()
+            output = root / 'Localized.app'
+            args = (source, root / 'inputs', 'ja', root / 'inventory', root / 'scope', output)
+            tools = dict(managed_tool=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None)
+            with patch.object(macos.build_game, 'build') as build:
+                with self.assertRaisesRegex(ValueError, 'requires the pinned CJK font and OFL license'):
+                    macos.build(*args, **tools)
+                font, license = root / 'font.otf', root / 'OFL.txt'
+                font.write_bytes(b'wrong font')
+                license.write_bytes(b'wrong license')
+                with self.assertRaisesRegex(ValueError, 'fingerprint mismatch for ja'):
+                    macos.build(*args, cjk_font=font, cjk_license=license, **tools)
+                build.assert_not_called()
+                self.assertFalse(output.exists())
+
     def test_validation_gates_app_build_and_uses_the_same_snapshot(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory).resolve()

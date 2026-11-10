@@ -401,6 +401,23 @@ colors. `level4` already uses black. The scene files can contain localized
 UI strings from the same build step. See the
 [contrast verification](evidence/speaker-contrast-build-20261110.md).
 
+## CJK package inputs
+
+For `zh`, `zh-TW`, `ja` and `ko`, pass `--cjk-font` with the matching
+regular Noto Sans CJK 2.004 regional OTF, and pass `--cjk-license` with
+the upstream OFL text. Both commands reject a missing resource or a
+fingerprint that differs from the [pinned inputs](cjk_font_fallback.py).
+The [candidate evidence](evidence/rtl-and-font-candidates-20261110.md)
+identifies the upstream release and each tested region.
+
+The package appends a second dynamic fallback after Liberation Sans.
+Its atlas uses 1024 × 1024 pages. The builders check that every
+other original object in the staged asset stays exact. The macOS app
+stores `NotoSansCJK-OFL.txt` in `Contents/Resources`. The Windows ZIP
+stores it at the archive root alongside `manifest.json`, outside
+the game replacements listed in `files`. Both receipts bind the font,
+license and final asset fingerprints.
+
 ## Optional settings labels and choices
 
 Settings labels and dropdown choices are stored in separate scriptable objects;

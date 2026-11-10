@@ -54,7 +54,7 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
           test_profile_code=None, test_caption_layout=False, test_slot_font=False,
           restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None,
           speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None,
-          improve_speaker_contrast=False, package_receipt=None, preservation_inventory=None):
+          improve_speaker_contrast=False, package_receipt=None, preservation_inventory=None, cjk_resource=None):
     source, destination = bundle_paths(source, destination)
     if (package_receipt is None) != (preservation_inventory is None):
         raise ValueError('complete package receipt and preservation inventory are required together')
@@ -73,7 +73,7 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
                                     speaker_locale=speaker_locale, speaker_tool=speaker_tool,
                                     speaker_runtime=speaker_runtime, speaker_runtime_sha=speaker_runtime_sha,
                                     improve_speaker_contrast=improve_speaker_contrast,
-                                    package_receipt=package_receipt)
+                                    package_receipt=package_receipt, cjk_resource=cjk_resource)
         if preservation_inventory is not None:
             report['componentPreservation'] = protected.verify(
                 'macos', preservation_inventory, staged_app / ASSET_RELATIVE.parent,
@@ -95,7 +95,7 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
                        test_profile_code=None, test_caption_layout=False, test_slot_font=False,
                        restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None,
                        speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None,
-                       improve_speaker_contrast=False, package_receipt=None):
+                       improve_speaker_contrast=False, package_receipt=None, cjk_resource=None):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -288,6 +288,16 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
         json.dump({'schema': 1, 'locale': locale, 'sourceAssetSha256': dl.ASSET_HASH,
                    'steamFileSha256': dl.sha(target_steam.read_bytes())}, f, ensure_ascii=False)
         f.write('\n')
+    if cjk_resource is not None:
+        import cjk_font_fallback as cjk
+        if package_receipt is None or cjk_resource.locale != locale:
+            raise ValueError('CJK fallback requires a matching complete macOS package')
+        package_receipt = {**package_receipt, 'cjkFallback': cjk.add(
+            'macos', source / ASSET_RELATIVE.parent,
+            destination / ASSET_RELATIVE.parent / cjk.ASSET, cjk_resource,
+        )}
+        with marker.with_name(cjk.LICENSE).open('xb') as f:
+            f.write(cjk_resource.license)
     if package_receipt is not None:
         receipt_path = marker.with_name('vn-localization-package.json')
         with receipt_path.open('x', encoding='utf-8') as f:
