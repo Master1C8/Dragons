@@ -294,3 +294,7 @@ Self-edited the 22 previously blank `Alexander_5_romance_route` IDs; the two exi
 ### Conrad first visit exit — author batch
 
 Self-edited 12 `Conrad_Outro_1` IDs, retaining approved `suporte`; 879 authored IDs, 1,068 blank. Paired readback retained all 1,947 source bindings and found exactly 12 changed targets on each platform, with ordered markup and placeholders preserved. Translation SHA-256 `efe4649582c6d6da423d9cc7782f35f913eb693a17c28b28b5c8c6c9158c25f6`; receipt `localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-07/readback-conrad-outro-1-reviewed.json`, SHA-256 `b73034d2513804376cd0f96582bfee8ace69556f8cfe83f46942fbf36e4dfc07`. Continue remaining blank groups; package, final localized runtime and visual checks, and independent audits remain pending.
+
+## Yarn film-title separator correction
+
+At the 879-ID checkpoint, the canonical dialogue reader rejected the introduced colon at `yarn:line:f1c14f75`. Use the stock dash in the Yarn choice while retaining the established glossary wording and its punctuation. Both platform readers accepted all 873 authored dialogue bindings after this one-ID edit. The authoring count remains 879, with 1,068 remaining. Translation SHA-256 `57c7b182579e619fa3977a87d55942c309fa917033121c81fb5e55a43a3ff681`. The negative and positive receipts are in `localization/work/pt-BR-yip-separator-fix-20261110.JMsduq/`. This is source-bound input verification. Final packages, gameplay, visual and independent editorial acceptance remain open.

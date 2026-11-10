@@ -30,7 +30,7 @@ Source: paired English worklist, `localization/evidence/special-scenes-yip-20261
 | `yarn:line:910706c0` | I think a movie could be fun! | Acho que um filme seria divertido! |
 | `yarn:line:073701b7` | What kind of movie are you thinking? | Que tipo de filme você quer ver? |
 | `yarn:line:962abe27` | Project Scale mary | Projeto Escama Maria |
-| `yarn:line:f1c14f75` | Yip-Man - The Final Yip | Yip-Man: O Último Yip |
+| `yarn:line:f1c14f75` | Yip-Man - The Final Yip | Yip-Man - O Último Yip |
 | `yarn:line:7e352505` | Dragons of the galaxy 2 | Dragões da Galáxia 2 |
 | `yarn:line:001ab950` | Oh I heard good things about that. | Ah, ouvi falar bem desse. |
 | `yarn:line:67f14802` | Sure! | Claro! |
@@ -47,3 +47,5 @@ The source apostrophe-only variant for `yarn:line:266836f8` explicitly shares it
 ## Author decisions after source-gate reconciliation
 
 The author accepts `movie-title-choices`, `kobold-yip-speech` and `kobold-yip-film-title` as pretranslation decisions. The three distinct title options retain the approved glossary titles, `2`, and their own reactions; `Yip-Man` is recognizable again in the series reference. The fixed vocalization `Yip` carries both the long explanation and the deliberately incongruous short `sei lá`. The player option `Eu sou O kobold` retains the source emphasis on the species noun without assigning a separate gendered player adjective. The exact `<size=70%>` tags and `PlaySFX "yip"` lookup remain source controls, not translated content. The source registrations `localization/evidence/special-scenes-yip-20261107.json` and `localization/evidence/special-scenes-ryan-language-20261107.json`, their linked context and the paired worklist bind the IDs and command occurrences; the existing per-ID Yarn adapter preserves them and the choice destinations. Positive scenarios cover the short and long interpretations, repeated sound, each film and its reaction, and the repeated series name. Negative scenarios remove or reorder the size tag, change the sound key, merge option identities, or break the title callback. Actual audio synchronization, localized branch execution and visual fit remain pending. These decisions are author self-reviews, not independent game-text acceptance.
+
+The Yarn choice retains the stock dash because an introduced colon triggers the package reader’s implicit speaker delimiter guard. The glossary title retains its established punctuation.
