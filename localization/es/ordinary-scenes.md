@@ -69,3 +69,7 @@ Author self-reviewed 24 IDs in the interaction, loop, choices and continuation. 
 ## Conrad and Ryan intimacy
 
 Author self-reviewed 36 IDs in the scene loops, timing choices and continuations. The two-dot pauses are intentional unchanged values. Both stock source readers and object encode/parse passed: macOS SHA-256 `543ccde9db2a7844b0196ed331fd1706c82d2368395de555255b247ac9a56d9c`; Windows `d050e5b567450fa135a45c63f85239a7b3a540cbf6b79663049550f44582ec55`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary17/`.
+
+## Later interactions and shared encounter
+
+Author self-reviewed 48 IDs across `Conrad_finished_mount_3`, `Mount_Alexander_2_6`, and `Ryan_Conrad_SexScene` with its cum and loop continuations. Speaker prefixes and source markup remain exact; duplicated choices retain separate IDs. Both stock source readers and object encode/parse passed: macOS SHA-256 `1148fdbfd7bd9e67968e7dc8722130f3561986d51269af872dfeecdbfb0eec4a`; Windows `603f37a91b2e20c101d7b0af5f42a1d85ee38b2ade32c66e4e73cb053c257a2b`. Altered English was rejected on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary18/`.
