@@ -275,3 +275,9 @@ Author self-reviewed 22 additional IDs across the `ConradBeatup` introduction, i
 Author self-reviewed 27 IDs in the source `Start` and `ErrorHasOccurred` groups, preserving the numbered test lines, Yarn and Unity names, and the bug-report instruction. This is author self-review, not independent audit; inclusion does not establish that these lines are reachable in normal play.
 
 `translation.json` now has **973 / 1,947 IDs**, SHA-256 `1b868a9c9b9902a902eefe26e8e231ff9843093b4b34b4402a88662d9b9594d5`. `resume-01/add-debug-lines.py` and `resume-01/debug-lines-map.py` validate the preceding draft and paired readers; macOS accepts 973 and Windows 967 bindings. The complete guard reports 974 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Muddy Ryan: main encounter — continuation
+
+Author self-reviewed 34 additional IDs across `RyanMuddy_Intro`, `RyanMuddy_Outro`, `RyanMuddy_SmallTalk`, `RyanMuddy_Dirty` and `RyanMuddy_Soapy`, retaining the settled Yip line, three response options, and sprayer terminology. This is author self-review, not independent audit.
+
+`translation.json` now has **1,007 / 1,947 IDs**, SHA-256 `eb711e079f723468cec4a026ac8dab9972194e84572d98a22ecc2fd8fe0e0829`. `resume-01/add-ryan-muddy-main.py` and `resume-01/ryan-muddy-main-map.py` validate the preceding draft and paired readers; macOS accepts 1,007 and Windows 1,001 bindings. The complete guard reports 940 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue with the remaining muddy Ryan prompts and other English-source groups.
