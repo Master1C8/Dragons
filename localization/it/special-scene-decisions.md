@@ -611,3 +611,123 @@ The `Conrad_Outro_3` entry and its two distinct branches are prepared below. Rya
 | `6acf71a3` | Va bene, grazie. |
 
 Positive review: the introduction and direct date choices remain distinct and preserve their later possibilities; the joke about the first yip stays intact. Negative review: do not turn either unlock into a final commitment, exchange choices/destinations, change source flags, close or rebalance source markup, or assign a gender to the player. The other entry scene and actual routing outcomes remain to be reviewed. Fit and branch behavior in final packages remain unverified.
+
+### `ryan-conrad-romance-routing` — Ryan food scene (partial; case remains open)
+
+The three choices below keep introduction, Ryan commitment and Conrad commitment distinct. The player can offer to be Ryan's “someone” without gendered self-description. Gold, bold and size markup follows the source exactly, including its existing nesting. IDs are `yarn:line:` suffixes; paired English differs only by omitted apostrophes in `d38c63ea`, `a0cb3f78`, `36fb380f`, `52f81dde` and `2bfa396c`; the meanings agree.
+
+| ID | Italian target |
+|---|---|
+| `7c56b2d8` | Allora... stavo pensando alle mie relazioni. |
+| `ea66b5af` | In che senso? |
+| `7b7b0a3f` | Al futuro delle mie relazioni. |
+| `ed4b0d48` | La cosa mi entusiasma. |
+| `8aa0fc1a` | Be', sei proprio un bel partito. |
+| `a6c1f2f4` | Sono felice per te! |
+| `1c90fb6d` | Ma dai. Mi farai arrossire. |
+| `30f1f583` | Grazie! |
+| `9364911d` | Non vedo l'ora di conoscere gente nuova. |
+| `0554966a` | Allora, ancora cibo? |
+| `bf059ff3` | Mmh... |
+| `29359884` | Che c'è? |
+| `b8282714` | Stavo pensando. |
+| `2e182063` | È difficile trovare persone fuori dalla mia cerchia attuale. |
+| `cb91e703` | Voglio bene a chi mi circonda, ma ci sono tante cose in sospeso. |
+| `5da1e074` | Capisci? |
+| `e7f0e9ed` | Ha senso. |
+| `fe3484ea` | Sì, capisco come mai ti senti così dopo una rottura. |
+| `71c0ee9a` | Già, da quando ci siamo lasciati cerco qualcosa di nuovo. |
+| `d2558a04` | O qualcuno? |
+| `44658d73` | Mmh... |
+| `6804839d` | Già. È difficile districare i rapporti nel gruppo dopo una cosa simile. |
+| `f9193c0d` | Non ho problemi a farlo. Ma vorrei qualcosa di nuovo. |
+| `6f293b7a` | Magari qualcuno di nuovo... |
+| `048d7f84` | ...A proposito di quello che dicevo prima. |
+| `92bd78f3` | Sì? |
+| `28ec716a` | Conosci qualcuno con cui potrei parlare? Sai... di questioni sentimentali? |
+| `bedc761d` | <gradient="gold"><b>Conosco un drago rosso. Credo che ti piacerebbe! </b></gradient><size=70%> (Fa incontrare Ryan e Conrad!) |
+| `e104b8e4` | <gradient="gold"><b>Oh. Ehm. <size=70%> A me piacerebbe... Se fossi io quella persona. </b></gradient><size=70%> (Conferma la storia con Ryan!) |
+| `f5a81524` | <gradient="gold"><b>Non mi viene in mente nessuno.</b></gradient><size=70%> (Conferma la storia con Conrad!) |
+| `1d491283` | Oh? |
+| `8b7915f4` | Chi sarebbe? |
+| `31281c6d` | È un draco rosso DAVVERO carino che viene al lavaggio! |
+| `a7181b1a` | È un drago rosso. Credo che vi piacereste! |
+| `3605a48a` | Oh! Credo di averlo visto. Quello piccolino, sì? |
+| `a035a3fd` | Preferisce «verticalmente svantaggiato»... Ma sì. |
+| `69dd6a73` | Mhm! Sta cercando di conoscere gente nuova. |
+| `45bc649d` | Oh... |
+| `d38c63ea` | Che carino. |
+| `ffed6d04` | Oh, fantastico. Sembra che ci assomigliamo. |
+| `5c78099a` | Credo che mi piacerebbe conoscerlo! |
+| `ca480eed` | Allora vi metterò in contatto. |
+| `e6290003` | Non vedo l'ora. Vi metterò in contatto! |
+| `70190774` | Grazie! |
+| `7734bf93` | Anch'io, grazie! |
+| `3b6d644d` | Oh. |
+| `ad5d633a` | <i>Oh... |
+| `170c6aa3` | Credo che piacerebbe anche a me se quella persona fossi tu. |
+| `813c6dd4` | Quindi questo è tipo... il nostro primo appuntamento? |
+| `b4990e3d` | A dire il vero, ho una cotta per te da un po'. |
+| `22a9094a` | Direi di sì! |
+| `0ec807a4` | Davvero? Oh, che dolce. |
+| `98f800d3` | Non sapevo che qualcuno potesse affezionarsi tanto a me così facilmente. |
+| `09e5bf43` | Comunque sei adorabile. |
+| `9fd5b834` | Sì. <size=90%>Oh- <size=80%>sai. Io... <size=70%>Ahah. Sì. Mhm! |
+| `563d71ba` | Anche tu! |
+| `7a5c7f54` | Non volevo metterti in imbarazzo! |
+| `ec6c7823` | Sono solo... felice. |
+| `c00d76cd` | Oh, grazie. È solo grazie ai tuoi lavaggi se ho questo aspetto! |
+| `63981253` | Sono... felice. |
+| `4ff91cbd` | Va bene! |
+| `d9c91bca` | E tu invece? Stai vedendo qualcuno? |
+| `48d4a45a` | C'è un drago rosso, Conrad. È... irascibile, ma carino. |
+| `dee4a32d` | Sì! Conrad, è adorabile. Anche se odierebbe sentirmelo dire. |
+| `b90f527f` | Oh, eh, è quel draco piccolino che ho visto arrivare un po' fa, vero? |
+| `2f3f5508` | Ehi! È solo... «verticalmente svantaggiato». |
+| `a0cb3f78` | Mhm! È lui. |
+| `956e5c91` | Oh, scusa. |
+| `035e5be6` | Sembra una persona carina! |
+| `36fb380f` | Che bello, è carino! |
+| `8caa3196` | Ehi, ehm, grazie ancora. |
+| `1a9a36e1` | Figurati! Non vedo l'ora che tu conosca Conrad. |
+| `cd9b2a8f` | No, grazie a te. Non... vedo l'ora. |
+| `0d20d327` | Certo! Grazie per il cibo. |
+| `8b878971` | Ah, sì. Sembra divertente. |
+| `1db78e06` | Ti racconterò come va, d'accordo? |
+| `f83e4966` | Non vedo l'ora di saperlo! |
+| `6e0e4e11` | Già. Sarete carini insieme. |
+| `d45f4788` | È stato bello... |
+| `426f40ff` | Ci rivediamo presto, vero? |
+| `e1fa2461` | Lo spero! Vado ad aprire il cancello. |
+| `77ca2316` | Sì! Grazie per il cibo. Vado ad aprire il cancello. |
+| `5bab2df8` | Già... Non mi era mai capitato un appuntamento con un coboldo. |
+| `cab69268` | Ma so già che mi piace molto. |
+| `5c86951f` | Mi piaci molto. |
+| `a9980f5e` | Sì, è stato davvero bello. |
+| `3fa80829` | Eh eh. Sì, anche tu mi piaci. |
+| `13c906c7` | Davvero. Sei una persona meravigliosa. |
+| `85f901b0` | Grazie per aver condiviso il cibo con me... |
+| `266c652e` | Non vedo l'ora di rivederti. |
+| `b05c6259` | Non vedo mai l'ora di rivederti. Vado ad aprire il cancello. |
+| `0a0d6bc0` | Anch'io! Vado ad aprire il cancello. |
+| `9c3d6cb7` | Va bene! A presto. |
+| `9b10d450` | Allora, questo Conrad... sembra che ti piaccia? |
+| `7e991330` | Eh eh, sì. |
+| `e8a91447` | È un bel tipo impegnativo. Ma mi piace. |
+| `52f81dde` | Che carino! |
+| `c4c81aa9` | Che cosa ti piace di più di lui? |
+| `675d7e37` | È tipo. SUPER dotato. |
+| `4b3c70d9` | È scontroso, ma anche tenero! |
+| `4c11c83e` | È piccolino, mi piace averlo all'altezza degli occhi. |
+| `bdca3e1b` | Mi piace... lui. |
+| `f16d7940` | Oh... Sì, i draghi più piccoli tendono a... compensare. |
+| `dd0c77ae` | Mmm, sì, conosco il tipo. |
+| `da21cf49` | Ci sta! Sì, i drachi piccoli sono divertenti. |
+| `2bfa396c` | Oh... È davvero dolce. |
+| `91ab30f5` | Dovrai raccontarmi come va tra voi! |
+| `079b3782` | Grazie per aver condiviso il cibo con me. Sei una persona davvero amica. |
+| `a40e531c` | Grazie per il cibo! Vado ad aprire il cancello. |
+| `323e546b` | Anche tu sei una persona amica. Vado ad aprire il cancello. |
+| `886f5df2` | Va bene, a presto! |
+
+Positive review: introduction produces Conrad/Ryan, and the other two labels explicitly commit to the named romance; all three outcomes remain separate. The vertically challenged euphemism and Ryan's four distinct reasons for liking Conrad remain recognizable. Negative review: do not merge or invert any option, destination or state flag, infer player gender, repair source markup, or promise merely unlocking where the source commits. Remaining route-closure classification and final package execution/fit remain open.
