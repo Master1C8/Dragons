@@ -138,6 +138,17 @@ total. This reproduction exercises
 the complete v42 packaging path on the existing Russian control; it does
 not expand the extracted source families or settle runtime reachability.
 
+`verify_locale_package.py` makes the package replay check repeatable for
+each locale. The existing Russian control artifacts passed with their exact
+historical platform inputs restored from Git `702cb7e^`. The complete macOS
+bundle matched all 284 files, paths and modes and passed signature verification.
+All 13 Windows ZIP members matched the reference, including the receipt and
+12 payloads. Two focused regressions checked a matching control and rejected
+a modified macOS file outside the localized assets and a changed ZIP member
+with matching inventory and receipt. The rebuild preserves the builder's
+source-pinned object and managed checks. This closes package comparison for
+these two artifacts. Source discovery and runtime reachability remain open.
+
 The source gate remains open. Exact file preservation covers untouched
 resources even when they contain engine metadata. It does not classify every
 player-visible source or prove the complete field-level preservation contract

@@ -385,6 +385,27 @@ CANDIDATE_DATA --inventory SHARED_INVENTORY`. For a Windows ZIP,
 provide the verified extracted replacement assets. This complements
 the Yarn, UI, settings and managed checks.
 
+Verify an already built package against a fresh rebuild with the same stock
+build, authored locale inputs and pinned tools:
+
+```sh
+"$PYTHON" localization/verify_locale_package.py "$platform" "$stock_source" \
+  "$locale_inputs" "$built_package" --locale "$locale" \
+  --inventory "$shared_inventory" --yarn-scope "$paired_yarn_scope" \
+  --managed-tool "$managed_fallback_tool" --speaker-tool "$speaker_tool" \
+  --speaker-runtime "$speaker_runtime" --speaker-runtime-sha "$speaker_runtime_sha"
+```
+
+Pass the stock `.app` on macOS and the stock Data directory on Windows. The
+checker builds in a disposable directory. It compares the entire macOS
+bundle and verifies the candidate signature, or compares all Windows ZIP
+members, including the receipt, against the fresh reference. For CJK packages
+pass the same `--cjk-font` and `--cjk-license` inputs as the original build.
+Use the exact input representation recorded by the original package. A legacy
+platform directory and a shared file can produce identical game data with
+different input receipt hashes. Package equality is separate from source
+discovery, editorial acceptance and gameplay verification.
+
 The optional `--speaker-contrast` flag uses the stock black text color for
 the originally white speaker-name fields in `level1`, `level3`, `level5`
 and `level6`. The macOS builder updates all four assets in the app. On
