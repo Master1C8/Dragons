@@ -95,7 +95,7 @@ Keep both identical response pairs distinct and preserve `$Yarn.Internal.Once.li
 
 ## Gate status
 
-Twenty-five of 27 cases have author-reviewed wording recorded in this file; the remaining 2 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the twenty-four. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
+Twenty-six of 27 cases have author-reviewed wording recorded in this file; the remaining 1 requires complete contextual decisions. The Alexander once-state response closure below completes the earlier choice-only section. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
 
 ## Alexander's family crest
 
@@ -161,7 +161,7 @@ Source case `missing-yarn-line-display`, same source evidence. The paired `displ
 
 ## Alexander question once-state: partial wording
 
-Source case `yarn-alexander-question-once-state`; the seven paired choice sources agree. The two previously reviewed choices `c2bdc402` and `a5a8a9d5` retain their existing wording above. The other target choices are `fc7aaaa0` **Com'è insegnare?**, `daa040eb` **Ti piace il viola?**, `21c0526b` **Ti piace essere grande?**, `838cdf1b` **Cosa pensi di me?**, and `72a9b5bb` **Sei felice?**. Preserve each exact `$Yarn.Internal.Once.line:<ID>` key, choice ID and listed destination in the source registry; do not merge similar questions. Positive: a fresh state offers the stock-permitted questions and selecting each sets only its original once-state; negative: changed state key, swapped destination or repeated completed option fails. These seven choice wordings are preparatory only: the full associated response scope and final state behavior have not yet been target-reviewed for this case, so it remains open.
+Source case `yarn-alexander-question-once-state`; the seven paired choice sources agree. The two previously reviewed choices `c2bdc402` and `a5a8a9d5` retain their existing wording above. The other target choices are `fc7aaaa0` **Com'è insegnare?**, `daa040eb` **Ti piace il viola?**, `21c0526b` **Ti piace essere grande?**, `838cdf1b` **Cosa pensi di me?**, and `72a9b5bb` **Sei felice?**. Preserve each exact `$Yarn.Internal.Once.line:<ID>` key, choice ID and listed destination in the source registry; do not merge similar questions. Positive: a fresh state offers the stock-permitted questions and selecting each sets only its original once-state; negative: changed state key, swapped destination or repeated completed option fails. The response wording has since been reviewed in the response-closure section below; final state behavior remains untested.
 
 ## Conrad's dirty double meaning
 
@@ -503,3 +503,64 @@ Source case `yarn-missing-named-destinations`, `localization/evidence/yarn-fragm
 | `c07a9171` | Grazie! |
 
 Author self-review: the lighter load retains its double sense; Ryan's worry and unnamed plural referents remain open to source context. Positive: the repaired target emits its own suffix and original command sequence; negative: translating any marker, crossing destinations, or dropping a suffix fails. Authored-package structural validation, normal-play progression, side effects and final visual fit remain pending.
+
+## Alexander question once-state: response closure
+
+Source case `yarn-alexander-question-once-state`, node `Alexander_questions`. The seven choices in the earlier partial section are retained. The number-seven and crest responses are in their complete sections above. The remaining paired responses follow; distinct repeated IDs remain distinct. Author self-review: Alexander's pride and anxiety about teaching, his response about lavender, the burden of being large, and his trust in the player remain separate. The player is not assigned a gender. The two questions about how to interpret “an anomaly” have distinct replies.
+
+| ID | Italian wording |
+|---|---|
+| `66fb84fe` | È tutto quello che volevo chiedere. |
+| `19f36dc0` | È il mio sogno. |
+| `8fc36ab7` | Mi piace avere un ruolo positivo nella vita di tante persone. |
+| `3592632e` | ...È intimidatorio sapere quanto mi ammirino. |
+| `a3a26459` | E non soltanto per la mia altezza. |
+| `003700c7` | Che materie insegni? |
+| `ba66095e` | Sei un buon esempio. |
+| `960707b0` | Principalmente alchimia. A volte storia del mondo. |
+| `2c560e29` | Sto cercando di avvicinarmi anche alle scienze sociali. |
+| `2b7bb6ce` | È proprio questo che mi spaventa. |
+| `bd4bb1b9` | Mi piace non temere il fallimento quando sono con te. |
+| `4c90479c` | Me lo chiedi perché sono color lavanda? |
+| `f6c14e05` | Già. |
+| `c3642dec` | No. |
+| `60f14972` | Be', il colore mi piace. Ma credo non abbia a che fare con la mia tonalità. |
+| `55542a9b` | Il colore mi piace. Anche se credo non abbia a che fare con la mia tonalità. |
+| `ef052302` | Ti piace il viola? |
+| `79352475` | Già. |
+| `9b915bf2` | No. |
+| `e8289be5` | Oh. Bene. |
+| `7e189c92` | ... |
+| `0da15c85` | Oh. Va bene. |
+| `b7f0551c` | ... |
+| `825536f5` | È una domanda difficile. |
+| `14653182` | Ci sono aspetti che mi piacciono. Il rispetto è piacevole... |
+| `ae34381b` | Però quel rispetto porta con sé l'aspettativa che io mi comporti secondo il mio aspetto. È incredibilmente stressante. |
+| `38043f6c` | Con me puoi comportarti come vuoi. |
+| `a91980fc` | Mi piaci per quello che sei. |
+| `3f29878b` | È molto gentile da parte tua. |
+| `548dc375` | Voglio aprirmi di più. Mi fa stare bene. |
+| `39ddd682` | Sei... |
+| `afedd1f5` | Un'anomalia. |
+| `0c78b56b` | Eh? |
+| `6b6dd8bc` | È una cosa buona...? |
+| `9a48b21c` | Nel senso che sei una persona unica. |
+| `2019bb85` | In senso buono? |
+| `27340362` | In senso cattivo? |
+| `b629bcf2` | Certo! Sei una persona meravigliosa. |
+| `b1040415` | Per le stelle! No, no. Sei una persona eccellente. |
+| `fd5ddfcb` | Proprio così. La tua compagnia è eccellente. |
+| `470cd652` | Sei la prima persona che incontro la cui unica aspettativa è che io sia... |
+| `d13cd125` | Me stesso. |
+| `e499b2cc` | Lo sono. |
+| `5ec8bb55` | Credo che in parte sia merito tuo. |
+| `c8f8bc22` | Ma io ti lavo e basta, no? |
+| `2a5cc3a5` | È molto dolce da parte tua. |
+| `59e503b2` | Lo so. Ma potersi aprire con qualcuno, anche solo ogni tanto- |
+| `cfd504c5` | Fa miracoli. |
+| `bc6cc4d2` | Sei molto dolce. |
+| `063dcd4b` | Potersi aprire con qualcuno, anche solo ogni tanto... |
+| `900dca3c` | Fa miracoli. |
+| `3398aea2` | Grazie per questo. |
+
+Preserve all seven `$Yarn.Internal.Once.line:<ID>` values, original option IDs, destinations and writes from `special-scenes-pending-20261107.json`; the fresh-state and repeated-selection checks in the earlier section apply. Positive: each permitted option follows its matching response and disappears only according to its own stock once-state. Negative: merge repeated IDs, swap responses or alter a flag or destination. Both paired source bindings were checked; existing text and choice adapters supply bounded feasibility. Actual state execution, package validation and visual fit are pending.
