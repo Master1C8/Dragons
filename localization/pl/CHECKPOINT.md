@@ -293,3 +293,9 @@ Author self-reviewed 22 remaining IDs in the `RyanMuddy` idle, approach and touc
 Author self-reviewed 25 IDs in the `RyanExploded` arrival, departure and unfinished-wash branches, retaining the alchemist's unspecified gender and both response choices. This is author self-review, not independent audit.
 
 `translation.json` now has **1,054 / 1,947 IDs**, SHA-256 `14eb4599c21d7365dcf07cb45cc410643f695158a8614728264a9554e8c8795f`. `resume-01/add-ryan-explosion.py` and `resume-01/ryan-explosion-map.py` validate the preceding draft and paired readers; macOS accepts 1,054 and Windows 1,048 bindings. The complete guard reports 893 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Conrad first and second departures — continuation
+
+Author self-reviewed 25 IDs in `Conrad_Outro_1` and `Conrad_Outro_2`, retaining the established `stojak` device term, the threat exchange and the emotional response branches. This is author self-review, not independent audit.
+
+`translation.json` now has **1,079 / 1,947 IDs**, SHA-256 `b9ca9084629b3054b4f3adface218d5d125aeb56e3516a7dcb6a0af6c7f0854f`. `resume-01/add-conrad-first-outros.py` and `resume-01/conrad-first-outros-map.py` validate the preceding draft and paired readers; macOS accepts 1,079 and Windows 1,073 bindings. The complete guard reports 868 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
