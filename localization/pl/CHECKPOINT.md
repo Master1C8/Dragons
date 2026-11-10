@@ -311,3 +311,9 @@ Author self-reviewed 34 additional IDs in `Conrad_Outro_3`, retaining the previo
 Author self-reviewed 35 IDs in `Conrad_required_2`, preserving the response choices, emphasis and his change from anger to self-reflection. This is author self-review, not independent audit.
 
 `translation.json` now has **1,148 / 1,947 IDs**, SHA-256 `d85be0e928002f3b287b3a8acb92c7d16269faa8f92f8b0de8db402eb492c1b9`. `resume-01/add-conrad-required-two.py` and `resume-01/conrad-required-two-map.py` validate the preceding draft and paired readers; macOS accepts 1,148 and Windows 1,142 bindings. The complete guard reports 799 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Ryan fifth arrival — continuation
+
+Author self-reviewed 45 IDs in `Ryan_5_intro`, preserving the three relationship flags, distinct branches, markup and gender-neutral player references. This is author self-review, not independent audit.
+
+`translation.json` now has **1,193 / 1,947 IDs**, SHA-256 `0db775c8ec445d1b080f5613941aa4aed0b610695a2289057a9dd6bd4a75b5e7`. `resume-01/add-ryan-five-intro.py` and `resume-01/ryan-five-intro-map.py` validate the preceding draft and paired readers; macOS accepts 1,193 and Windows 1,187 bindings. The complete guard reports 754 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
