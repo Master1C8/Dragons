@@ -35,3 +35,7 @@ Reviewed 116 IDs in Conrad’s conditional scene loops, mount and injury dialogu
 ### Author semantic review: rows 1027–1152
 
 Receipt `receipts/semantic-audit-10.json` binds 126 additional IDs to the unchanged translation, paired worklist and both platform instruction exports. Cumulative author pass: 1,153 / 1,947 IDs; next row 1153. Four new proposed corrections bring pending findings to 20; correction and dependency review remain open. The ambiguous plural in `yarn:line:564a9606` is not classified as an error on current evidence. This is author review, not the independent audit.
+
+### Author semantic review: rows 1153–1267
+
+Receipt `receipts/semantic-audit-11.json` binds 115 additional IDs and the two platform instruction exports. Cumulative author pass: 1,268 / 1,947 IDs; next row 1268, `yarn:line:933efa6d`. One new contextual finding brings the pending total to 21. Correction and dependency review and independent audit remain open; translation bytes are unchanged.
