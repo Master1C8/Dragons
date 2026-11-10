@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/non-yarn-translation-scope-20261110.md",
+  "sourceRegistrySha256": "c3df834a09a5e9855912953cf9257302781cbe33388f23e0638115dc761415f1",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "new-slot-display",
+      "wording": {
+        "ui:1f92f7d859adfd67efa3a3f37608780f984d3d2e55b5a74774f0dfa70d9d4f86": "Nowa",
+        "ui:3944a555d130038af2323d988762ab1967719d178270e20fc65cd74b7c5efd27": "Nowa",
+        "ui:4cbc97aea69bccfd4defdb896f11600bdcc0964b970916200b59966d037b24e5": "Nowa",
+        "display:slot-new": "NOWA"
+      },
+      "decision": "The three new-game save-slot labels and the managed empty-slot progress indicator use the same feminine agreement for an implied new game; the indicator preserves the source uppercase emphasis.",
+      "mapping": "Each UI ID keeps its paired build-specific level0 key; display:slot-new replaces the three mapped managed NEW literals per platform. Keep numeric progress formats and greyed-slot templates exact.",
+      "positive": "Each of the three empty slots has both its label and managed progress value; occupied progress retains the original numeric format.",
+      "negative": "Reject an unpatched managed occurrence, a changed numeric placeholder or changes to greyed-slot templates.",
+      "editorial": "author self-reviewed against the source scope and existing menu observation",
+      "adapter": "existing source-pinned UI and managed slot adapters; source-bound per-build checks below",
+      "runtimeVisual": "authored labels and occupied-state fit not run"
+    },
+    {
+      "id": "missing-yarn-line-display",
+      "wording": {
+        "display:yarn-missing-line": "!! BŁĄD: Brak tekstu!"
+      },
+      "decision": "Keep the explicit error marker and identify a missing text line; it remains an exceptional fallback, not ordinary dialogue.",
+      "mapping": "display:yarn-missing-line replaces both mapped LocalizedLine literals on each platform; unused provider fallback and serialized choice template stay exact.",
+      "positive": "Both fallback occurrences on each platform receive the same single-line plain text.",
+      "negative": "Reject a changed provider fallback, inserted rich text or line break, or a source assembly fingerprint mismatch.",
+      "editorial": "author self-reviewed against the source scope",
+      "adapter": "existing source-pinned managed fallback adapter; source-bound per-build checks below",
+      "runtimeVisual": "authored fallback not run"
+    }
+  ]
+}
