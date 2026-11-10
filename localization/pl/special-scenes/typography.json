@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-typography-20261110.json",
+  "sourceRegistrySha256": "792cd452b62853213499c2d167254db77907f1de652cf7cba076f386653380c7",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "conrad-emphatic-greetings",
+      "wording": {
+        "yarn:line:36073321": "<gradient=\"yellow - orange\"><size=140%>HEJ! </gradient><size=100%>Tu się myje, nie?",
+        "yarn:line:f474ffa9": "<size=140%>HEJ, <size=100%>chcę się umyć."
+      },
+      "decision": "Conrad calls out loudly, then returns to an ordinary-sized casual question or request; retain the gradient on the first greeting.",
+      "mapping": "Preserve both IDs, every source tag and its order, and the filled greeting and normal-speech regions; display-only replacement.",
+      "positive": "Both greetings are 140%; the following question or request is 100%; only the first greeting has the gradient.",
+      "negative": "Reject an empty greeting or ordinary region, reordered size tags, or a changed gradient.",
+      "editorial": "author self-reviewed against paired source and neighboring lines",
+      "adapter": "source registry identifies structural tag guard; sampled Polish TMP dialogue renderer passed",
+      "runtimeVisual": "authored strings not run"
+    },
+    {
+      "id": "conrad-scales-aside",
+      "wording": {
+        "yarn:line:6c193ba9": "Masz dziś inne łuski? <size=70%><i>tak się w ogóle da...? </i><size=100%>Ładnie dziś wyglądasz."
+      },
+      "decision": "Conrad awkwardly wonders whether a different look for scales is even possible, then gives a normal-sized compliment. The uncertainty stays inside the small italic aside.",
+      "mapping": "Preserve the line ID and exact TMP tags; keep the observation, aside and compliment in their original size regions.",
+      "positive": "Only the hesitant question is italic at 70%, followed by the 100% compliment.",
+      "negative": "Reject an empty aside or a compliment moved into the small italic span.",
+      "editorial": "author self-reviewed against paired source and neighboring lines",
+      "adapter": "source registry identifies structural tag guard; sampled Polish TMP dialogue renderer passed",
+      "runtimeVisual": "authored string not run"
+    },
+    {
+      "id": "ryan-branch-hesitation-sizing",
+      "wording": {
+        "yarn:line:9fd5b834": "Tak. <size=90%>Och... <size=80%>no wiesz. Ja tak... <size=70%>Haha. Tak. Mhm!"
+      },
+      "decision": "The player's flustered reply trails through three increasingly small hesitation beats after Ryan's compliment, without assigning the player a gender.",
+      "mapping": "Preserve option ID, destination and exact ordered 90%, 80%, 70% tags, each with visible text.",
+      "positive": "The choice remains the same branch and displays all three diminishing beats.",
+      "negative": "Reject an empty stage, changed size order or a different option identity.",
+      "editorial": "author self-reviewed against paired source and neighboring lines",
+      "adapter": "source registry identifies structural tag guard; sampled Polish TMP choice renderer passed",
+      "runtimeVisual": "authored string not run"
+    }
+  ]
+}
