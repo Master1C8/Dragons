@@ -2761,6 +2761,11 @@
           "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
         },
         {
+          "id": "dnw-anonymous-dragon-speaker",
+          "sourceEntrySha256": "929136153456556d2889090960049f8981a99affd848ad4f38c17987221a3e0d",
+          "localeFieldsSha256": "c4e6eee5e1358e43351c48d0b9e0175f9da8a4d3086ca614cb2434e5e8fd71c7"
+        },
+        {
           "id": "dnw-dragon",
           "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
           "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
@@ -2774,25 +2779,32 @@
           "id": "yarn:line:b965b4dd",
           "pairedRowSha256": "71ad1e944d26273004af0b17b2a2493b8c8411c69b9c7dd9bc3fad361c423983",
           "speakerOrKind": "line",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-anonymous-dragon-speaker",
+            "dnw-player"
+          ],
           "conceptUses": [],
-          "decision": "A dragon addresses the player about the premature buzzing; no individual identity is established by this group."
+          "decision": "The unidentified dragon addresses the player about premature buzzing; no named identity is established."
         },
         {
           "id": "yarn:line:2f55b3aa",
           "pairedRowSha256": "49f92c455e23f4c7575f161da40f72bc9afc376470762c7a944e79f4a7bd2b58",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
-          "decision": "A brief reaction; the row alone does not establish an individual voice."
+          "decision": "The player can choose a brief reaction."
         },
         {
           "id": "yarn:line:9504ba33",
           "pairedRowSha256": "2d8e705f2ac6973a3199500e60d7a522e23ef855aa1c7a1b709b7368b08abeee",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
-          "decision": "A pause; the row alone does not establish an individual voice."
+          "decision": "The player can choose a silent response."
         }
       ]
     },
