@@ -99,3 +99,57 @@ APIs remain outside their coverage.
 The extended reports and serialized bindings reproduced byte-for-byte.
 All 194 project tests passed, including a wrong-build scanner control
 and a staged global settings corruption rejected before publication.
+
+## Managed resource reads and stock Yarn asset bindings
+
+The separate `--resource-routes` mode finds 195 macOS and 193 Windows
+references. It scans Unity resource, bundle, Addressables and TextAsset
+API references in all pinned managed assemblies. File, stream, network
+and reflection checks cover the game, Yarn Unity, settings, Addressables
+and Unity Localization assemblies. Short IL windows identify local
+call context.
+
+- The game assembly loads a scene by its Addressables key and
+  `SphereProjectorAlphaWrite` as a Material. Its direct JSON reader
+  is called with `savegame.dgn` by the current save manager on both
+  platforms and by the older save manager on macOS. The separate Yarn
+  file reader reads persisted variables. Its load method has no direct
+  managed caller in the scanned assemblies.
+- The game's four selected reflection calls register Yarn command
+  handlers. The ten direct TextAsset reads on each build belong to
+  catalog loading, probe data, line-breaking rules, engine TextAsset
+  accessors and UI Toolkit initialization.
+- The built-in Yarn line provider has three references to
+  `GetLocalizedObjectAsync` in each build. Full serialized reads of
+  the pinned YarnProject and Localization objects reproduce their exact
+  bytes. Each project uses the same English object for its base
+  localization and its sole locale entry. All 1,839 localized strings
+  match the extracted source in order, every object and Addressables
+  reference is empty, and both localized-asset flags are zero. The
+  compiled program matches the existing protobuf extraction. The 209
+  metadata values are all `lastline` tags attached to known IDs.
+
+These checks add no source IDs. They establish the serialized stock
+Yarn bindings and the listed managed call sites. Native behavior,
+indirect calls and runtime content injection remain outside this pass.
+
+```sh
+dotnet "$text_setter_tool" macos "$macos_data/Managed" --resource-routes
+dotnet "$text_setter_tool" windows "$windows_data/Managed" --resource-routes
+"$PYTHON" -B localization/verify_yarn_resource_bindings.py macos "$macos_data"
+"$PYTHON" -B localization/verify_yarn_resource_bindings.py windows "$windows_data"
+```
+
+Receipts are in `localization/work/resource-route-audit-20261110.ffbSRj/`.
+
+| Evidence | macOS SHA-256 | Windows SHA-256 |
+| --- | --- | --- |
+| Managed resource references | `9b8b418494a8d002c22da0b5a9bc3f4473f3e941753247da8236856b68cbc28a` | `a99cbb114b8c36c8017a60f3a86a41a83f2d4a399eaf64f7be8a19e4fbe3b4d3` |
+| Yarn resource bindings | `ec42e53592453fba9d4140edcf9f185dcf16ffb7ceca7c3e6148fedf8891f7c9` | `aac6cdd1089feb88a19e38fa480f29e0af65cc601ba64cee8aaca66a92de87ca` |
+
+Both reports reproduce byte-for-byte on a second run. Legacy and
+extended scanner outputs still match the prior receipts. Each tool
+rejects macOS inputs when run as Windows before producing a report.
+With an otherwise valid text entry, either a populated local object
+pointer or a populated Addressables GUID fails the entry check.
+The project suite ran 208 tests with five skips and no failures.
