@@ -5318,6 +5318,454 @@
     "line:323e546b": {
       "source": "You're a good friend too, I'll go get the gate.",
       "text": "Мне тоже дорога наша дружба. Сейчас открою ворота."
+    },
+    "line:61c7f2d6": {
+      "source": "Something went wrong with flags!",
+      "text": "Что-то пошло не так с флагами!"
+    },
+    "line:f7f7f5a1": {
+      "source": "Help the developers out please..",
+      "text": "Помогите разработчикам, пожалуйста..."
+    },
+    "line:5462913f": {
+      "source": "conrad hooked up with ryan",
+      "text": "конрад сошёлся с райаном"
+    },
+    "line:c2529648": {
+      "source": "player hooked up with conrad",
+      "text": "у игрока роман с конрадом"
+    },
+    "line:78039fd1": {
+      "source": "player hooked up with ryan",
+      "text": "у игрока роман с райаном"
+    },
+    "line:ee3398a6": {
+      "source": "Hey big guy.",
+      "text": "Привет, здоровяк."
+    },
+    "line:9b7e09b8": {
+      "source": "Ryan!",
+      "text": "Райан!"
+    },
+    "line:7f2e2736": {
+      "source": "Hey... little guy!",
+      "text": "Привет... мелочь!"
+    },
+    "line:e91e2041": {
+      "source": "I'm not <i>that</i> little-",
+      "text": "Не <i>настолько</i> уж я мелочь..."
+    },
+    "line:aedb6a51": {
+      "source": "So, coming in for a wash?",
+      "text": "Так что, пришёл помыться?"
+    },
+    "line:82ba64bf": {
+      "source": "Oh, sorry-",
+      "text": "Ой, извини..."
+    },
+    "line:148a63c8": {
+      "source": "Was just trying to play along. Happy to see you!",
+      "text": "Просто решил подыграть. Рад тебя видеть!"
+    },
+    "line:38eb6d26": {
+      "source": "Yup!",
+      "text": "Ага!"
+    },
+    "line:0d4e0ecf": {
+      "source": "Hey kobold!",
+      "text": "Привет, кобольд!"
+    },
+    "line:b71f0756": {
+      "source": "I decided to try baking.",
+      "text": "Я решил попробовать печь."
+    },
+    "line:212f0021": {
+      "source": "I've had a lot of free time lately.",
+      "text": "У меня в последнее время много свободного времени."
+    },
+    "line:b032bfb1": {
+      "source": "It turns out baking is messy!",
+      "text": "Оказывается, на кухне легко перепачкаться!"
+    },
+    "line:2602b8c6": {
+      "source": "I could use a wash.",
+      "text": "Мне бы помыться."
+    },
+    "line:c38b7fa6": {
+      "source": "Hey there, Ryan!",
+      "text": "Привет, Райан!"
+    },
+    "line:55bb78d1": {
+      "source": "Hey! I'm here for a wash.",
+      "text": "Привет! Я пришёл помыться."
+    },
+    "line:efea7148": {
+      "source": "I decided to try baking.",
+      "text": "Я решил попробовать печь."
+    },
+    "line:79da763f": {
+      "source": "I've had a lot of free time lately.",
+      "text": "У меня в последнее время много свободного времени."
+    },
+    "line:da4f12a1": {
+      "source": "It turns out baking is messy!",
+      "text": "Оказывается, на кухне легко перепачкаться!"
+    },
+    "line:4c7f15d6": {
+      "source": "Awesome, I'll go get the gate.",
+      "text": "Отлично, сейчас открою ворота."
+    },
+    "line:601e1b38": {
+      "source": "Sure! I'm excited to tell you about Conrad.",
+      "text": "Конечно! Не терпится рассказать тебе о Конраде."
+    },
+    "line:f62e1c4f": {
+      "source": "Thanks.",
+      "text": "Спасибо."
+    },
+    "line:f103a4a8": {
+      "source": "Oh yeah?",
+      "text": "Вот как?"
+    },
+    "line:6733a3df": {
+      "source": "Yeah! I'm going on a date with him soon.",
+      "text": "Ага! У нас с ним скоро свидание."
+    },
+    "line:d38efb75": {
+      "source": "Mmmmhm, gotta prep for a date with him.",
+      "text": "Ага, надо готовиться к свиданию с ним."
+    },
+    "line:45befc02": {
+      "source": "That's exciting!",
+      "text": "Вот это здорово!"
+    },
+    "line:ffeff59b": {
+      "source": "You'll have to tell me more inside.",
+      "text": "Расскажешь мне всё внутри."
+    },
+    "line:69dff2ec": {
+      "source": "I'll be waiting for the gate!",
+      "text": "Подожду, пока откроешь ворота!"
+    },
+    "line:ca4a9672": {
+      "source": "Heeeey Ryan.",
+      "text": "Приве-е-ет, Райан."
+    },
+    "line:5c7a9105": {
+      "source": "Hey!",
+      "text": "Привет!"
+    },
+    "line:e62b989c": {
+      "source": "I decided to try baking.",
+      "text": "Я решил попробовать печь."
+    },
+    "line:701b9feb": {
+      "source": "I've had a lot of free time lately.",
+      "text": "У меня в последнее время много свободного времени."
+    },
+    "line:e106207b": {
+      "source": "It turns out baking is messy!",
+      "text": "Оказывается, на кухне легко перепачкаться!"
+    },
+    "line:7736270c": {
+      "source": "How was your date with Conrad?",
+      "text": "Как прошло твоё свидание с Конрадом?"
+    },
+    "line:048fe71b": {
+      "source": "TELL ME ABOUT YOU AND CONRAD!",
+      "text": "РАССКАЖИ ПРО ВАС С КОНРАДОМ!"
+    },
+    "line:92bfe06c": {
+      "source": "It went great!",
+      "text": "Всё прошло здорово!"
+    },
+    "line:bedeee82": {
+      "source": "Oh- Eager!",
+      "text": "Ого, как тебе не терпится!"
+    },
+    "line:28eee9f5": {
+      "source": "It went great!",
+      "text": "Всё прошло здорово!"
+    },
+    "line:8b7b8d6b": {
+      "source": "We went out to eat. Had some good conversation.",
+      "text": "Сходили поесть. Хорошо поговорили."
+    },
+    "line:1d4b8a1c": {
+      "source": "One thing led to another...",
+      "text": "Одно за другим..."
+    },
+    "line:a71a8385": {
+      "source": "Went to the bar... Things got spicy. You can imagine what happened next... <size=70%>Hah...",
+      "text": "Пошли в бар... Стало жарко. Дальше можешь представить... <size=70%>Ха..."
+    },
+    "line:e2ea4ead": {
+      "source": "...A wash for our date tonight.",
+      "text": "...Помыться перед нашим вечерним свиданием."
+    },
+    "line:73f7f13d": {
+      "source": "OH. RIGHT.",
+      "text": "А. ТОЧНО."
+    },
+    "line:822c0718": {
+      "source": "I'm very excited.",
+      "text": "Жду не дождусь!"
+    },
+    "line:e5c7f64a": {
+      "source": "Glad I'm here to remind you then.",
+      "text": "Рад, что пришёл напомнить."
+    },
+    "line:141c006f": {
+      "source": "I am too.",
+      "text": "Я тоже."
+    },
+    "line:ae4d09f6": {
+      "source": "I'll be waiting for the gate!",
+      "text": "Подожду, пока откроешь ворота!"
+    },
+    "line:5691478f": {
+      "source": "Maybe we could just... Walk?",
+      "text": "Может, мы могли бы просто... прогуляться?"
+    },
+    "line:c0a140f8": {
+      "source": "I'm really fond of letting folks ride on my back.",
+      "text": "Обожаю катать людей на спине."
+    },
+    "line:51bcff68": {
+      "source": "Would that interest you?",
+      "text": "Хочешь попробовать?"
+    },
+    "line:c78cf81f": {
+      "source": "That sounds lovely!",
+      "text": "Звучит чудесно!"
+    },
+    "line:985436e6": {
+      "source": "Wouldn't that be degrading?",
+      "text": "А тебе не будет унизительно?"
+    },
+    "line:22053f7f": {
+      "source": "Awesome!",
+      "text": "Отлично!"
+    },
+    "line:b4353808": {
+      "source": "I've always loved giving my biped friends rides...",
+      "text": "Я всегда любил катать двуногих друзей..."
+    },
+    "line:0e643191": {
+      "source": "Sounds like a date then, I'm excited.",
+      "text": "Значит, свидание. Уже жду не дождусь."
+    },
+    "line:3bc15278": {
+      "source": "Oh! No it wouldn't be. It's fun!",
+      "text": "О! Нет, нисколько. Это весело!"
+    },
+    "line:adf1550f": {
+      "source": "I give my other bipedal friends rides all the time.",
+      "text": "Я постоянно катаю других своих двуногих друзей."
+    },
+    "line:17a05c96": {
+      "source": "I'm sure we'll figure something out! just meet me at the pier!",
+      "text": "Уверен, мы что-нибудь придумаем! Просто встретимся у причала!"
+    },
+    "line:a4a26529": {
+      "source": "Oh yeah, there's this nice place downtown called wings.",
+      "text": "О да, в центре есть приятное место под названием Wings."
+    },
+    "line:3292625e": {
+      "source": "I think that would make a decent place! They put on good shows every night.",
+      "text": "Думаю, туда стоит сходить! У них каждый вечер отличные выступления."
+    },
+    "line:88c36bc7": {
+      "source": "Could do that, then get a hotel room... Hmm.",
+      "text": "Можно туда сходить, а потом снять номер в гостинице... Хм."
+    },
+    "line:1ef36cb0": {
+      "source": "Sounds like a date then!",
+      "text": "Тогда свидание!"
+    },
+    "line:3cda84e6": {
+      "source": "So, tell me more about conrad!",
+      "text": "Ну, расскажи ещё про Конрада!"
+    },
+    "line:aaea8391": {
+      "source": "He's been way nicer recently.",
+      "text": "В последнее время он куда приятнее."
+    },
+    "line:7deb9fff": {
+      "source": "He's like... a big softy surrounded by sharp pointy bits.",
+      "text": "Он как будто... добряк, окружённый острыми колючками."
+    },
+    "line:4f6344f1": {
+      "source": "Oh yeah? He sounds like a bit of a hothead.",
+      "text": "Вот как? Он кажется немного вспыльчивым."
+    },
+    "line:d9534386": {
+      "source": "But I know the type... They tend to be big softies on the inside.",
+      "text": "Но я таких знаю... В душе они обычно добряки."
+    },
+    "line:63024a1f": {
+      "source": "Yeah he's improved a lot.",
+      "text": "Да, он сильно изменился к лучшему."
+    },
+    "line:7ac62718": {
+      "source": "Yup. I like it.",
+      "text": "Ага. Мне это нравится."
+    },
+    "line:f5324d68": {
+      "source": "Thats really good to hear.",
+      "text": "Здорово это слышать."
+    },
+    "line:56a729f6": {
+      "source": "Nothing more attractive than a man who can improve!",
+      "text": "Нет ничего привлекательнее мужчины, который умеет меняться к лучшему!"
+    },
+    "line:c0972e81": {
+      "source": "I'm glad you two are working out.",
+      "text": "Я рад, что у вас всё получается."
+    },
+    "line:ecf6206f": {
+      "source": "Thats awesome. I'm glad you two are working out.",
+      "text": "Это здорово. Я рад, что у вас всё получается."
+    },
+    "line:ebdb9888": {
+      "source": "Ah, yeah, those types are pretty cute.",
+      "text": "А, да. Такие бывают очень милыми."
+    },
+    "line:807fdc76": {
+      "source": "From what I've heard he sounds like he's improved a lot recently, yeah?",
+      "text": "Судя по тому, что я слышал, он в последнее время сильно изменился к лучшему, да?"
+    },
+    "line:164fdb01": {
+      "source": "Mhm, he's trying.",
+      "text": "Ага, он старается."
+    },
+    "line:99bbb171": {
+      "source": "I think he was in a bad environment. He's doing better now.",
+      "text": "Думаю, он был в плохой компании. Сейчас ему лучше."
+    },
+    "line:ac1ed298": {
+      "source": "That's all you can ask for, right?",
+      "text": "Большего и просить нельзя, верно?"
+    },
+    "line:3a2ed5ef": {
+      "source": "I'm glad you two are working out though.",
+      "text": "Но я рад, что у вас всё получается."
+    },
+    "line:0f8bb606": {
+      "source": "Thats good to hear.",
+      "text": "Приятно это слышать."
+    },
+    "line:b5dabf9f": {
+      "source": "Nothing more attractive than a man who can improve!",
+      "text": "Нет ничего привлекательнее мужчины, который умеет меняться к лучшему!"
+    },
+    "line:341175f7": {
+      "source": "I think you got every spot.",
+      "text": "Кажется, ни пятнышка не осталось."
+    },
+    "line:a2217280": {
+      "source": "Thanks for helping me out.",
+      "text": "Спасибо за помощь."
+    },
+    "line:18707b19": {
+      "source": "I'm always happy to give you a wash!",
+      "text": "Мне всегда приятно тебя помыть!"
+    },
+    "line:2dd518f0": {
+      "source": "What do you mean?",
+      "text": "В каком смысле?"
+    },
+    "line:8e407c6e": {
+      "source": "Oh- Not just the wash.",
+      "text": "Ой... Я не только про мойку."
+    },
+    "line:bbe51f87": {
+      "source": "Like, in general.",
+      "text": "Вообще, в целом."
+    },
+    "line:01b4161e": {
+      "source": "The breakup I went through earlier was rough.",
+      "text": "Мне тяжело далось то расставание."
+    },
+    "line:97841169": {
+      "source": "This was a nice escape.",
+      "text": "Здесь можно было от всего этого отвлечься."
+    },
+    "line:0699aef9": {
+      "source": "And I'm really happy for you and Conrad.",
+      "text": "И я правда рад за вас с Конрадом."
+    },
+    "line:90a9a98e": {
+      "source": "I'll see you next time I come in, yeah?",
+      "text": "Увидимся, когда я в следующий раз зайду, да?"
+    },
+    "line:75206eee": {
+      "source": "I'm always happy to see you Ryan.",
+      "text": "Мне всегда приятно тебя видеть, Райан."
+    },
+    "line:59416000": {
+      "source": "I'll go get the gate for ya'",
+      "text": "Сейчас открою тебе ворота."
+    },
+    "line:e3106999": {
+      "source": "You too. Thanks for the wash.",
+      "text": "Мне тоже. Спасибо за мойку."
+    },
+    "line:cf716777": {
+      "source": "Thanks.",
+      "text": "Спасибо."
+    },
+    "line:770e7473": {
+      "source": "I think you got every spot.",
+      "text": "Кажется, ни пятнышка не осталось."
+    },
+    "line:e613cbe3": {
+      "source": "You know what that means...",
+      "text": "Знаешь, что это значит..."
+    },
+    "line:7023cc94": {
+      "source": "DATE NIGHT!",
+      "text": "СЕГОДНЯ СВИДАНИЕ!"
+    },
+    "line:039a0c83": {
+      "source": "Yeah?",
+      "text": "Да?"
+    },
+    "line:95aa0bf4": {
+      "source": "Damn right!",
+      "text": "Ещё бы!"
+    },
+    "line:b9cb051a": {
+      "source": "Means I'm ready to go on a date with a certain kobold.",
+      "text": "Это значит, что я готов к свиданию с одним кобольдом."
+    },
+    "line:2ffb026d": {
+      "source": "I know you need to close down shop. I'll make sure you get the address and we can meet up there, yeah?",
+      "text": "Знаю, тебе ещё надо закрыть мойку. Я передам тебе адрес, и мы встретимся там, ладно?"
+    },
+    "line:8c6e66f3": {
+      "source": "Sounds good!",
+      "text": "Договорились!"
+    },
+    "line:a00f681d": {
+      "source": "I'm excited.",
+      "text": "Жду не дождусь."
+    },
+    "line:1a5e6184": {
+      "source": "I'm really looking forward to this.",
+      "text": "Очень жду нашей встречи."
+    },
+    "line:363f6f6a": {
+      "source": "I am too.",
+      "text": "Я тоже."
+    },
+    "line:a722d0fa": {
+      "source": "Alright, go get the gate and I'll head out to the spot!",
+      "text": "Ладно, открой ворота, а я отправлюсь на место!"
+    },
+    "line:3112d78d": {
+      "source": "See you soon.",
+      "text": "До скорого."
     }
   }
 }
