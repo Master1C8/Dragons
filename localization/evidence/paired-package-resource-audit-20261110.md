@@ -86,13 +86,48 @@ A second pass recovered an exact schema prefix for all 34 decal and 33 light
 components per build. The schema's only string is the Unity object name.
 The remaining four or eight bytes per object consist exclusively of 32-bit
 words equal to zero or one. The data therefore adds no display strings to the
-known stock scope. The 11 remaining generic-schema failures per build are six
-probe volume baking sets, four orbit camera graphs and one render pipeline
-settings object. A bounded aligned string scan located scene and resource keys,
-debug light-layer names, and camera graph metadata. This does not establish the
-complete serialized field boundaries or visibility of every value in those
-11 objects. `serialized-light-decal-tails.json` has SHA-256
+known stock scope. `serialized-light-decal-tails.json` has SHA-256
 `c393b5f9da0a2eea6a2870a43a1428888fbb3fc543bb8b569087f04ebb8a3b7e`.
+
+The remaining eleven components on each build now round-trip in full with
+`inventory_render_components.py`. The tool supplies the 31 source-bound
+managed-reference schemas and corrects string-array containers that the
+generator labels as scalars. The stock graph and lighting scans produce
+identical field paths, roles and values across builds despite the platform
+object-ID differences. All 22 raw object hashes match the existing package
+preservation receipt. A new nonempty field without a declared role is rejected.
+
+| Component | Objects per build | Nonempty strings per build | Bound roles |
+| --- | ---: | ---: | --- |
+| Orbit camera | 4 | 244 | Graph IDs, ports, camera parameters and type or object names |
+| Probe volume baking | 6 | 108 | Scene and resource IDs, streamed paths, scenario keys and object names |
+| URP global settings | 1 | 68 | Rendering layer names, managed type identities and the object name |
+
+On both pinned Managed inventories, `CameraDirectionSet.PositionCamera` passes
+`Distance` to `BaseGraph.SetParameterValue`, whose body compares it to the
+stored parameter name. Graph port fields feed edge deserialization, connection
+and delegate construction. Lighting scenario names participate in cell-data
+resolution, selection and blending, and the probe volume debug registration
+also reads them. The inspected URP layer API calls the native rendering-layer
+name getter. The direct scan found no separate managed caller of that API in
+the pinned game libraries. These are rendering and graph fields. The audit
+does not infer the absence of arbitrary indirect or native debug consumers.
+
+Reproduce on each original Data directory with:
+
+```sh
+python -B localization/inventory_render_components.py PLATFORM STOCK_DATA
+```
+
+Each report reproduced byte for byte in a second run. Receipts and the local
+IL scanner sources are in `localization/work/camera-schema-20261110.9Z7wXW/`.
+The macOS and Windows field reports have SHA-256
+`75cdc4b49476f3e0caafeb261e15d9d43ea87bac2fbb6541458b2cb761265947` and
+`3fd56a8ffc02c5183625c85aa63d2ed9b639642e21bff58dc2e5a4bbea8442a9`.
+Camera IL reports match each other at
+`208a6843e807a0258cab976e95a4b3f323857abc30cf012d87b7430b4b29227c`.
+Render IL reports match each other at
+`84d4c37facb9acb1dd4840da7ac51ad9487cb0cac377d219b280efe163bfe50c`.
 
 The source-only component type and field reports are in the same work folder.
 Their file names end in `-serialized-component-types.json` and
