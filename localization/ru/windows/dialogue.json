@@ -4206,6 +4206,330 @@
     "line:c60c65e8": {
       "source": "Oh my. I suppose I could use the mount!",
       "text": "Ох. Пожалуй, я мог бы воспользоваться станком!"
+    },
+    "line:c7b73162": {
+      "source": "Psst..!",
+      "text": "Пс-с-т!.."
+    },
+    "line:7de638fb": {
+      "source": "Uh... Hello?",
+      "text": "Эм... Здравствуйте?"
+    },
+    "line:ebd63f8c": {
+      "source": "Who's there?",
+      "text": "Кто там?"
+    },
+    "line:48435b12": {
+      "source": "Shh! I'm not from around here...",
+      "text": "Тише! Я не местный..."
+    },
+    "line:de735c65": {
+      "source": "Are you open right now?",
+      "text": "Вы сейчас открыты?"
+    },
+    "line:642255fc": {
+      "source": "Of course!",
+      "text": "Конечно!"
+    },
+    "line:f212528b": {
+      "source": "Phew! I had an accident that needs to be taken care of... discretely.",
+      "text": "Фух! Со мной случилось происшествие, и последствия нужно устранить... незаметно."
+    },
+    "line:630fed1b": {
+      "source": "Remove this barrier at once so I may enter.",
+      "text": "Немедленно убери эту преграду, чтобы я мог войти."
+    },
+    "line:a8e6ac2a": {
+      "source": "Goodness, thanks to you I have a chance at redeeming this situation.",
+      "text": "О боже, благодаря тебе у меня есть шанс исправить положение."
+    },
+    "line:3ed6ab5d": {
+      "source": "Say do you remember the name of the college I work at?",
+      "text": "Скажи, помнишь, как называется колледж, где я работаю?"
+    },
+    "line:8487a2c4": {
+      "source": "Burnswick Community College of Thaumaturgy",
+      "text": "Общественный колледж тауматургии Бёрнсвика"
+    },
+    "line:83aa1a23": {
+      "source": "You work at a college?",
+      "text": "Ты работаешь в колледже?"
+    },
+    "line:525f5744": {
+      "source": "Nope",
+      "text": "Нет"
+    },
+    "line:12b7a5b3": {
+      "source": "No! I mean, yes, but for the sake of my reputation could you please keep my incursion here to yourself.",
+      "text": "Нет! То есть да. Но ради моей репутации, пожалуйста, никому не рассказывай о моём визите."
+    },
+    "line:159a1d54": {
+      "source": "What? I'm a professor! Can't you tell from my crest?",
+      "text": "Что? Я профессор! Разве по моему фамильному гребню не видно?"
+    },
+    "line:7e3e59aa": {
+      "source": "Oh!",
+      "text": "О!"
+    },
+    "line:e80e5edd": {
+      "source": "I see what you're doing, thank you.",
+      "text": "Понимаю, что ты делаешь. Спасибо."
+    },
+    "line:c46f5033": {
+      "source": "Well great, I appreciate your discretion, I'll be headed off to the apothecary.",
+      "text": "Что ж, прекрасно. Благодарю за осмотрительность. Я пойду к аптекарю."
+    },
+    "line:d132db41": {
+      "source": "We can just lay here...",
+      "text": "Можем просто полежать здесь..."
+    },
+    "line:6b63d2d8": {
+      "source": "You'll take care of everything?",
+      "text": "Ты обо всём позаботишься?"
+    },
+    "line:00e41343": {
+      "source": "Is this good?",
+      "text": "Так хорошо?"
+    },
+    "line:bab51ada": {
+      "source": "Good... That'd be correct.",
+      "text": "Хорошо... Да, именно так."
+    },
+    "line:2c851dad": {
+      "source": "Good.",
+      "text": "Хорошо."
+    },
+    "line:8f107933": {
+      "source": "I'm... Rather close now",
+      "text": "Я... уже почти."
+    },
+    "line:19207e44": {
+      "source": "Hold on a little longer for me?",
+      "text": "Потерпишь для меня ещё немного?"
+    },
+    "line:354170aa": {
+      "source": "Go for it!",
+      "text": "Давай!"
+    },
+    "line:a37177dd": {
+      "source": "V-very well. I'll try.",
+      "text": "Х-хорошо. Я попробую."
+    },
+    "line:a45ccf3a": {
+      "source": "I don't believe I can hold back any longer",
+      "text": "Полагаю, я больше не смогу сдерживаться."
+    },
+    "line:326cc84d": {
+      "source": "Not yet. a little longer.",
+      "text": "Ещё рано. Потерпи чуть-чуть."
+    },
+    "line:41d5085a": {
+      "source": "Let go whenever you are ready.",
+      "text": "Можешь больше не сдерживаться, когда будешь готов."
+    },
+    "line:d7e50f2d": {
+      "source": "Yes..",
+      "text": "Да..."
+    },
+    "line:fb8401c3": {
+      "source": "Huff...",
+      "text": "Уф..."
+    },
+    "line:6db406b4": {
+      "source": "I enjoyed this quite a lot.",
+      "text": "Мне было весьма приятно."
+    },
+    "line:ce21622a": {
+      "source": "I'm happy to hear that.",
+      "text": "Приятно это слышать."
+    },
+    "line:e2406cc4": {
+      "source": "What now?",
+      "text": "Что теперь?"
+    },
+    "line:5811655d": {
+      "source": "Yes... But I believe we need to clean the floors.",
+      "text": "Да... Но, полагаю, нам придётся вымыть пол."
+    },
+    "line:74706bb3": {
+      "source": "We will need to clean the floors...",
+      "text": "Придётся вымыть пол..."
+    },
+    "line:e56dd423": {
+      "source": "<i><size=70%>uh oh.. and the books",
+      "text": "<i><size=70%>ой... и книги"
+    },
+    "line:dfe74420": {
+      "source": "My-",
+      "text": "Боже..."
+    },
+    "line:4efafbb0": {
+      "source": "You are very skilled with your hands",
+      "text": "Ты весьма умело работаешь руками."
+    },
+    "line:d8cafcc7": {
+      "source": "mmm..",
+      "text": "М-м-м..."
+    },
+    "line:b36eb839": {
+      "source": "..",
+      "text": ".."
+    },
+    "line:44b711a0": {
+      "source": "What is..",
+      "text": "Что это?.."
+    },
+    "line:e722753e": {
+      "source": "Oh goodness no..",
+      "text": "О боже, нет..."
+    },
+    "line:71127249": {
+      "source": "I don't mean to be rude, but I must decline",
+      "text": "Не хочу показаться грубым, но я вынужден отказаться."
+    },
+    "line:cb437bd0": {
+      "source": "This is a common practice?",
+      "text": "Это обычная практика?"
+    },
+    "line:5d737ca7": {
+      "source": "Oh yes",
+      "text": "О да"
+    },
+    "line:5a5ec440": {
+      "source": "No I actually just got it",
+      "text": "Нет, он у меня совсем недавно"
+    },
+    "line:cc6ec337": {
+      "source": "I see..",
+      "text": "Понимаю..."
+    },
+    "line:bfd70320": {
+      "source": "This feels scandalous",
+      "text": "Это кажется мне скандальным."
+    },
+    "line:29e70457": {
+      "source": "Though I can't say I am not curious",
+      "text": "Хотя не могу сказать, что мне не любопытно."
+    },
+    "line:93b60dce": {
+      "source": "Even so. Not this time",
+      "text": "И всё же. Не в этот раз."
+    },
+    "line:22b5941e": {
+      "source": "<i>Oh.</i> I don't think I'm ready for that just yet.",
+      "text": "<i>Ох.</i> Не думаю, что пока к этому готов."
+    },
+    "line:f80bd44b": {
+      "source": "I'm... not certain I'd like to use this today.",
+      "text": "Я... не уверен, что хочу сегодня этим пользоваться."
+    },
+    "line:3fdb9d01": {
+      "source": "Oh fcuk something went wrong",
+      "text": "Ох бялдь, что-то пошло не так."
+    },
+    "line:a9eb9a76": {
+      "source": "if you're seeing this please grab nael or submit a bug report",
+      "text": "Если вы это видите, пожалуйста, позовите Nael или отправьте отчёт об ошибке."
+    },
+    "line:13ba93ef": {
+      "source": "sorry!",
+      "text": "Извините!"
+    },
+    "line:737184f5": {
+      "source": "Wow!",
+      "text": "Ух ты!"
+    },
+    "line:e26c3b65": {
+      "source": "My first ever Yarn script in Unity!",
+      "text": "Мой самый первый сценарий Yarn в Unity!"
+    },
+    "line:745c3c12": {
+      "source": "Gosh!",
+      "text": "Ничего себе!"
+    },
+    "line:91d5fb72": {
+      "source": "Incredible!",
+      "text": "Невероятно!"
+    },
+    "line:07e5fc05": {
+      "source": "I'm amazed!",
+      "text": "Вот это да!"
+    },
+    "line:bdb4f59c": {
+      "source": "Anyway, time to get writing!",
+      "text": "Ну что ж, пора за работу!"
+    },
+    "line:2b84f2eb": {
+      "source": "Test line 1",
+      "text": "Тестовая строка 1"
+    },
+    "line:88119675": {
+      "source": "Test line 2",
+      "text": "Тестовая строка 2"
+    },
+    "line:1e219102": {
+      "source": "Test line 3",
+      "text": "Тестовая строка 3"
+    },
+    "line:a470989b": {
+      "source": "Test line 4",
+      "text": "Тестовая строка 4"
+    },
+    "line:32409fec": {
+      "source": "Test line 5",
+      "text": "Тестовая строка 5"
+    },
+    "line:a35d207c": {
+      "source": "Test line 6",
+      "text": "Тестовая строка 6"
+    },
+    "line:356d270b": {
+      "source": "Test line 7",
+      "text": "Тестовая строка 7"
+    },
+    "line:5643ba3d": {
+      "source": "Test line 8",
+      "text": "Тестовая строка 8"
+    },
+    "line:c073bd4a": {
+      "source": "Test line 9",
+      "text": "Тестовая строка 9"
+    },
+    "line:7a22b4d3": {
+      "source": "Test line 10",
+      "text": "Тестовая строка 10"
+    },
+    "line:ec12b3a4": {
+      "source": "Test line 11",
+      "text": "Тестовая строка 11"
+    },
+    "line:4f87d73a": {
+      "source": "Test line 12",
+      "text": "Тестовая строка 12"
+    },
+    "line:d9b7d04d": {
+      "source": "Test line 13",
+      "text": "Тестовая строка 13"
+    },
+    "line:63e6d9d4": {
+      "source": "Test line 14",
+      "text": "Тестовая строка 14"
+    },
+    "line:f5d6dea3": {
+      "source": "Test line 15",
+      "text": "Тестовая строка 15"
+    },
+    "line:64cb6133": {
+      "source": "Test line 16",
+      "text": "Тестовая строка 16"
+    },
+    "line:f2fb6644": {
+      "source": "Test line 17",
+      "text": "Тестовая строка 17"
+    },
+    "line:1772a124": {
+      "source": "Test line 18",
+      "text": "Тестовая строка 18"
     }
   }
 }
