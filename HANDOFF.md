@@ -247,6 +247,12 @@ one-byte menu-intent change was rejected at the expected PathID.
 Both complete package commands now run this check on staging
 before publishing the app or ZIP.
 
+The [paired package resource audit](localization/evidence/paired-package-resource-audit-20261110.md)
+verifies the complete file delta for the signed macOS control and the applied Windows
+ZIP, including unchanged StreamingAssets, TextAssets and Unity built-in resources.
+Player-visible source discovery and field-level preservation inside the changed files
+remain separate from this file coverage.
+
 The [v42 locale workload audit](localization/evidence/locale-workload-v42-20261110.md)
 reconciles both stock builds with the complete package input scopes.
 The union contains 1,947 inputs, including 1,917 shared IDs.
