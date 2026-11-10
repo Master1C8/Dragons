@@ -525,3 +525,24 @@ are exact. Both packaged fonts cover all 94 display code points.
 Verified receipts are under
 `localization/work/uk-ordinary-13-20261110.EawqcK/`.
 Live scene checks and independent editorial review remain pending.
+
+## Interface, settings and speaker labels
+
+All 124 non-Yarn package IDs are now authored. This batch adds
+79 serialized UI values, 37 settings values and the Ryan and
+Conrad speaker labels. All 1,332 earlier values are exact. The
+draft covers 1,450 of 1,947 IDs with SHA-256
+`88a7da05a28d6e8f882254bf97b8397ba82f9167b1f9c6b85bf7d73a31117ed5`.
+
+Repeated labels share wording and keep their original IDs.
+Xbox, DualShock and GDC Bundle Part 4 retain their names.
+The credit descriptions preserve the original line breaks.
+
+Read-back from the built macOS app verified 55 UI fields, 37
+settings fields and both speaker names. The Windows ZIP verified
+79 UI fields, 31 settings fields and both speaker names. On both
+platforms the Yarn table and compiled program are byte-identical
+to the preceding control. Both packaged fonts cover all 111
+display code points. Runtime fit and independent editorial review
+remain pending. Verified receipts are under
+`localization/work/uk-ordinary-14-20261110.70neUL/`.

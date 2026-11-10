@@ -11,11 +11,11 @@ replacement members matched the previously tested artifacts byte-for-byte.
 
 Ukrainian has entered ordinary translation. The
 [Ukrainian draft and checks](localization/uk/special-scenes.md) cover
-1,332 of 1,947 package IDs, including the 27 known special cases,
+1,450 of 1,947 package IDs, including the 27 known special cases,
 Ryan's first three visits and muddy variant, the phone tutorials,
 the fifth-visit relationship routes, Conrad's related scenes,
 the date, picnic and explosion scenes, and Alexander's visits,
-romance, and wash prompts.
+romance, and wash prompts. All 124 non-Yarn package IDs are authored.
 Both normal builders passed a control with English for the
 untouched IDs. Representative Ukrainian
 dialogue and choices passed the paired Unity fixture checks, with the
