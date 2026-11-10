@@ -7508,6 +7508,330 @@
       ]
     },
     {
+      "group": "Ryan_ham_dialog",
+      "orderedRowsSha256": "c563468a8073d7e41ff5fffa7d4d353ed29bdad2e0a1ab796bd3f4358805e432",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:202fce0c",
+          "pairedRowSha256": "a1e6fe4bba33d1d233398cad4c73d8b384c370b56707bbd73a381acbc13ffde5",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player may exclaim about Ryan eating the bone."
+        },
+        {
+          "id": "yarn:line:c0e34d36",
+          "pairedRowSha256": "3eeac330c11e45b9637f9e5257a13422353cba9879205cf483fd906162872eba",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player may express surprise that Ryan ate the whole thing."
+        },
+        {
+          "id": "yarn:line:b132719c",
+          "pairedRowSha256": "3d8bc210ef5a7ec11dc16eabab8e5e1815a9f2abf81b886dfc25728ac301eb16",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan reacts while eating."
+        },
+        {
+          "id": "yarn:line:270276eb",
+          "pairedRowSha256": "9827446fbf01563e806da249f5b36b6aac287c9c3c330a9f44f66b3383f252a1",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says the bone is his favorite part."
+        },
+        {
+          "id": "yarn:line:4f172746",
+          "pairedRowSha256": "3f11da56e76e9b28f8a88fc3feccb4b26593fe5a36774d991d077eb87f5cd93f",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player may ask Ryan how he digests it."
+        },
+        {
+          "id": "yarn:line:f5462edf",
+          "pairedRowSha256": "e421f804f82dfd5ec46f6659b2953795bfed78aa1dedbaa224902064bc085002",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player may find the act attractive; preserve size markup and the build-specific apostrophe difference."
+        },
+        {
+          "id": "yarn:line:d9272031",
+          "pairedRowSha256": "6584f2a6069e228a975a9d6410fabf934683310398af051b0e0a762c57a82ae2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Ryan identifies himself as a dragon."
+        },
+        {
+          "id": "yarn:line:637629a8",
+          "pairedRowSha256": "9dc904513b482ed6a403284a9819bf67a7e7c0760f9dc6fb2452996c3a181f44",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says he is pretty sure he can digest anything; this is his qualified claim."
+        },
+        {
+          "id": "yarn:line:56d34a41",
+          "pairedRowSha256": "f983ad0dfd3fe096cdba43b796faab63fb722ba20c7f5b45036dd1bc7c762c30",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan responds to the player’s attraction."
+        },
+        {
+          "id": "yarn:line:7ab244af",
+          "pairedRowSha256": "7b6ea179377d6cec5749688b1046c72015b3818c0a807d8c90e8771aca0159be",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan expresses his preference for eating."
+        },
+        {
+          "id": "yarn:line:ec8243d8",
+          "pairedRowSha256": "84508859f43d15a98877fa1e1048f4d31c11a2fc5813869fbdecaa2529f9f855",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan contrasts his habits with those he calls bipeds; the reference includes the player but does not establish player gender."
+        },
+        {
+          "id": "yarn:line:7d9ffc48",
+          "pairedRowSha256": "0bfaedcda8e21923468fe9418b82776a1dc139e805a443966801a67c0bffb6d1",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says he prefers a large gulp."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_1_Outro",
+      "orderedRowsSha256": "2da15609d9cecd86d3869cdab5c00791e370c2bdfa92dcceb6ed0170691a1148",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        },
+        {
+          "id": "dnw-yip",
+          "sourceEntrySha256": "732298762db192f5e97009d5a3babdf06857b777d65975115662abe32637b079",
+          "localeFieldsSha256": "649610e6e5ee14c04df3df24b4118f349f79952954c42995d92625488a26e8e9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:65a41bc5",
+          "pairedRowSha256": "27998aa67ab29a37024752bdaee92d71967b5c13ed27fae25efec8549f3c404a",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Ryan says he is clean."
+        },
+        {
+          "id": "yarn:line:f4b9a455",
+          "pairedRowSha256": "1db8860bf6af188b71c510acfc73a887fca0e97abe074416cfba95cfc437b1e7",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Ryan compares the wash favorably to a hose."
+        },
+        {
+          "id": "yarn:line:6289a322",
+          "pairedRowSha256": "1a76accc87566a89408b5ff00b61e267d571025899088dda9cdbbd69d5749789",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player may respond politely to Ryan."
+        },
+        {
+          "id": "yarn:line:11306335",
+          "pairedRowSha256": "04e1ad5fa3919cc3844b328de3b35dd288d662c34c866ff672ce69743e60c468",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player may invite Ryan back."
+        },
+        {
+          "id": "yarn:line:3d516ddb",
+          "pairedRowSha256": "f070e943b096d2bbc80b85f45267ad2639bd0091530c7663ed87df791b6aaa6a",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-yip"
+          ],
+          "decision": "The player may respond with Yip."
+        },
+        {
+          "id": "yarn:line:87006442",
+          "pairedRowSha256": "b6b8c443109cd726b3a454f863855aaf0280009657e5fd069111fd43651c3ddc",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Ryan plans to tell unspecified others about the establishment."
+        },
+        {
+          "id": "yarn:line:ab616aac",
+          "pairedRowSha256": "1e46f9184671ea6a9f50a969c097ee2c27f374ee4af65190e39f984c19016462",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Ryan says he will remember the establishment."
+        },
+        {
+          "id": "yarn:line:9ec40945",
+          "pairedRowSha256": "0e8078995d3ec8c9ecb4fa12322035ea56e0f1bf6ef94026fffa698b29e2101f",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-yip"
+          ],
+          "decision": "Ryan repeats Yip to the player in response."
+        },
+        {
+          "id": "yarn:line:08f40e32",
+          "pairedRowSha256": "cf66c686cb90cd0bb4d619222241c41d2f62f801f60a906d0221bd0b973aac11",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says he enjoyed the visit and says goodbye."
+        },
+        {
+          "id": "yarn:line:b2a507ab",
+          "pairedRowSha256": "b177f405a440f6ab31d0b4a0945ca02b25169f00c755e2d224150ea55f872bee",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks the player to open the gate."
+        },
+        {
+          "id": "yarn:line:249500dc",
+          "pairedRowSha256": "1f901caa1afa2da43a4f2db2f5def6f62eb920fad43ea805ea0cf676ae2eab64",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player may agree."
+        },
+        {
+          "id": "yarn:line:b588bf4c",
+          "pairedRowSha256": "98f393c9f85343c446cccf9787d387cdbe4c27f018bd16c026de9c6e5ce209ac",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan thanks the player."
+        }
+      ]
+    },
+    {
       "group": "UI/level0",
       "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
       "applicableEntries": [],

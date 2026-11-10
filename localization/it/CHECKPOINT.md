@@ -291,3 +291,7 @@ Eight more complete groups / 44 source rows have hash-bound source and Italian a
 ### Resume 08: credits and settings row unit
 
 Two more complete groups / 79 source rows have hash-bound source and Italian author self-reviews, retaining platform-specific absence and the unidentified ending dragon. The row receipt covers 129 groups / 558 rows; 64 groups / 1,389 rows lack equivalent full row-level receipts, with earlier narrower evidence retained at its exact scope. Independent acceptance and shared source and exact-preservation gates remain open.
+
+### Resume 08: Ryan food and departure row unit
+
+Two more complete groups / 24 paired rows have hash-bound source and Italian author self-reviews. The row receipt covers 131 groups / 582 rows; 62 groups / 1,365 rows lack equivalent full row-level receipts. Prior narrower evidence remains reusable at its exact bound scope. Independent acceptance and shared source and exact-preservation gates remain open.

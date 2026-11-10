@@ -399,3 +399,7 @@ The available paired source rows in `UI/level0`, `UI/level1`, `UI/level3`–`UI/
 ### Resume 08: credits and settings rows (author self-reviews)
 
 All available source rows in `UI/level2` and `Settings` were read: two groups / 79 rows, including platform-specific omissions. Credit roles refer to dragon-related production assets without identifying a customer; the ending text `ui:813926ce361c3c489a2e4746184a367bdad1b78e49f7b8414ca239de2779fcf4` refers to the player and an unidentified dragon, not demonstrably the glossary's anonymous speaker or any named character. The sprayer setting relates to washing equipment without identifying a person. Remaining labels describe production credits, sounds, controls and settings. The bound player, dragon and wash fields show no correction from these contexts. Both layers are author self-reviews, not independent acceptance; this did not change texture content.
+
+### Resume 08: Ryan food and departure rows (author self-reviews)
+
+Both paired builds of `Ryan_ham_dialog` and `Ryan_1_Outro` were read: two groups / 24 rows. Ryan explicitly identifies himself as a dragon and qualifies his belief about digestion; his address to “bipeds” includes the player without establishing player gender. Ryan repeats the player's Yip in context; unspecified others who might hear about the establishment remain unnamed. The build-specific apostrophe difference and size markup in `line:f5462edf` remain recorded. The bound Italian fields establish no correction here. Both layers are author self-reviews, not independent acceptance.
