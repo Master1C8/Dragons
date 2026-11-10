@@ -177,7 +177,7 @@
         "yarn:line:9ef857c8",
         "yarn:line:08c850bf"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Alexander_3_Cum",
@@ -215,7 +215,7 @@
         "yarn:line:ffa63d1b",
         "yarn:line:d3c733f5"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Alexander_3_intro",
@@ -258,7 +258,7 @@
         "yarn:line:fa6e232e",
         "yarn:line:d60f2dc0"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Alexander_3_required",
@@ -287,7 +287,7 @@
         "yarn:line:95ff1bed",
         "yarn:line:92d2a30a"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Alexander_3_required_end",
@@ -296,7 +296,7 @@
       "ids": [
         "yarn:line:3027bcf7"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Alexander_4_Cum",
