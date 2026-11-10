@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "inventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "yarnScopeSha256": "753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30",
+  "inventoryRows": 27113,
+  "authoringRows": 1947,
+  "specialCases": 27,
+  "worklistContentSha256": "f3444fce4dff7c79684651c2bc6434dcf2617decff2962aedcaac7581bdaba34",
+  "worklists": {
+    "de": "9ee266ffbc4643e5b269b75ca03edfb763f1178d3803aa65b627d487c2b0535a",
+    "es": "8d172ebe8165344df8e705ce041ee57ecba1fb6c9179bbead5fe3ee7975eb7ec",
+    "fr": "ef9d5709b061ea426c2e113373fdbfde547c6518f6394a4afc325204dea89cf8",
+    "it": "692c32667546db79d51cab95d4894bb97f7f78b4fda0756465f90c0a5e6319d2",
+    "pl": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+    "pt-BR": "4b161f5aa3c93d1023fa5cad77324dfa4907370713a7986f7528add12378dff1"
+  },
+  "platforms": {
+    "macos": {
+      "build": "9/12/2026_a93aa21a",
+      "rootFiles": 41,
+      "sidecars": {
+        "RuntimeInitializeOnLoads.json": "d23a0fd3966b3cf2f12185cb4b88f73e52300d0d3d59e0bd13643f0f4a21ef78",
+        "ScriptingAssemblies.json": "aa34a7056cd9486af61e2e0c9816e80cd0b72daaf8b37842211a7fcb8496210b",
+        "app.info": "9cca3c39fc6822a4b24d778b01d835b8052a78e497481089be345f1d117ed750",
+        "boot.config": "fe794bd4792363ce8ab3dd65690e3d7c5716514800e9019203e61fd5ccd8c435"
+      },
+      "loaderAssemblies": 146,
+      "initializationHooks": 71,
+      "managedInventorySha256": "b3186bc39207255e937f5856be09906dc1a428d83a964d5f368f30861e32603c",
+      "managedAssemblies": 170,
+      "serializedFiles": 17,
+      "nativeStreams": 20,
+      "builtInResources": 2,
+      "streamingAssets": 31,
+      "windowsPluginSupportFiles": [],
+      "exactComponentFields": 10973,
+      "roleCounts": {
+        "game-component": {
+          "exact-value": 10973
+        },
+        "legacy-ui": {
+          "exact-value": 149
+        },
+        "managed": {
+          "exact-value": 1496,
+          "display": 5
+        },
+        "settings": {
+          "display": 37,
+          "exact-value": 43
+        },
+        "ui": {
+          "display": 58,
+          "exact-value": 80
+        },
+        "yarn": {
+          "display": 1805,
+          "exact-value-and-display": 1,
+          "exact-value": 15,
+          "exact-prefix-and-display": 18
+        }
+      }
+    },
+    "windows": {
+      "build": "9/9/2026_ee944596",
+      "rootFiles": 41,
+      "sidecars": {
+        "RuntimeInitializeOnLoads.json": "38071b44a250478c5d69fda31abb009bb8aeaaa14265fda1850a2c7fe30931f4",
+        "ScriptingAssemblies.json": "796b0cc9e75de3116b76946338b7faea5efae10cd5651d73b969fd4c0503ec51",
+        "app.info": "9cca3c39fc6822a4b24d778b01d835b8052a78e497481089be345f1d117ed750",
+        "boot.config": "3238daae06e51d8879108182c8fda4612d829376ca53cd86b7221d607726684d"
+      },
+      "loaderAssemblies": 148,
+      "initializationHooks": 69,
+      "managedInventorySha256": "9a14fcb1198ca8308ad90a38a1988367074c1f2ec8b6f0a8d97ef3d3c074fc56",
+      "managedAssemblies": 172,
+      "serializedFiles": 17,
+      "nativeStreams": 20,
+      "builtInResources": 2,
+      "streamingAssets": 31,
+      "windowsPluginSupportFiles": [
+        "Plugins/Steamworks.NET.txt",
+        "Plugins/x86_64/lib_burst_generated.dll",
+        "Plugins/x86_64/libonigwrap.dll",
+        "Plugins/x86_64/steam_api64.dll",
+        "Plugins/x86_64/steam_settings/branches.json",
+        "Plugins/x86_64/steam_settings/configs.app.ini",
+        "Plugins/x86_64/steam_settings/configs.main.ini",
+        "Plugins/x86_64/steam_settings/configs.overlay.ini",
+        "Plugins/x86_64/steam_settings/configs.user.ini",
+        "Plugins/x86_64/steam_settings/depots.txt",
+        "Plugins/x86_64/steam_settings/steam_appid.txt",
+        "Plugins/x86_64/steam_settings/steam_interfaces.txt",
+        "Plugins/x86_64/steam_settings/supported_languages.txt"
+      ],
+      "exactComponentFields": 10936,
+      "roleCounts": {
+        "game-component": {
+          "exact-value": 10936
+        },
+        "legacy-ui": {
+          "exact-value": 149
+        },
+        "managed": {
+          "exact-value": 1468,
+          "display": 5
+        },
+        "settings": {
+          "display": 31,
+          "exact-value": 43
+        },
+        "ui": {
+          "display": 82,
+          "exact-value": 80
+        },
+        "yarn": {
+          "display": 1805,
+          "exact-value-and-display": 1,
+          "exact-value": 15,
+          "exact-prefix-and-display": 18
+        }
+      }
+    }
+  }
+}

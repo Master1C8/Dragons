@@ -357,14 +357,10 @@ logging, the Steam ID used in save paths, and quitting the application.
 The macOS-only old save manager adds two calls to the same save-path route.
 The scan describes the managed boundary for these APIs.
 
-The source gate remains open. Exact file preservation covers untouched
-resources even when they contain engine metadata. The controls above now
-cover the object payload and metadata boundaries of all nine changed Unity
-files, with separate declaration and adapter checks for the two DLLs. The
-remaining work is to reconcile indirect runtime text consumers and additional
-resources against the approved visible scope, then verify the same contract
-on each delivered locale. The v42 inventory and existing locale worklists
-retain their current fingerprints.
+The [source readiness decision](source-readiness-v42-20261110.md)
+reconciles these resource and preservation checks against the supported
+stock builds. The v42 inventory and all six worklists retain their
+fingerprints. Each delivered locale needs its own package verification.
 
 ## Polish draft package read-back
 
