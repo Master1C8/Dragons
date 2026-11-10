@@ -239,3 +239,9 @@ Author self-reviewed 42 additional IDs across `Conrad_Intro`, `Conrad_Intro_1`, 
 Author self-reviewed 53 additional IDs in `Conrad_Intro_4`, covering the three relationship-dependent arrivals and flag diagnostics. The earlier marked-up scales line remains unchanged; the Ryan exchange avoids assigning a gender to the player, and the device retains the glossary term `stojak`. This is author self-review, not independent audit.
 
 `translation.json` now has **757 / 1,947 IDs**, SHA-256 `f8d579e632d7babfb26a7779fb3717bfedbe3f24fef3562589932f53075ccde6`. `resume-01/add-conrad-fourth-intro.py` and `resume-01/conrad-fourth-intro-map.py` validate the preceding draft and paired readers; macOS accepts 757 and Windows 751 bindings. The complete guard reports 1,190 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Ryan first visit — continuation
+
+Author self-reviewed 37 additional IDs across `Ryan_1_intro`, `Ryan_1_required`, `Ryan_1_nag` and `Ryan_1_Outro`, retaining the previously reviewed Yip decisions. The case-only game-title difference between builds is explicitly bound to the canonical shared title. This is author self-review, not independent audit.
+
+`translation.json` now has **794 / 1,947 IDs**, SHA-256 `712243b8eb61fb808d536c78192b059a918c21de13d986d88651a6c5a5af4329`. `resume-01/add-ryan-first-visit.py` and `resume-01/ryan-first-visit-map.py` validate the preceding draft and paired readers; macOS accepts 794 and Windows 788 bindings. The complete guard reports 1,153 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
