@@ -19350,6 +19350,242 @@
       ]
     },
     {
+      "group": "Ryan_5_Required_ryan_conrad_romanced",
+      "orderedRowsSha256": "fda7123bd9ae84334eeb4bd5f6606d0107e3025a28c711e93968fdb78cd22da7",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-dragon-washer",
+          "sourceEntrySha256": "70f6f7b0f545b32f5a98233380b01eda5a369c67c4d2969c55e02a1782a18aa9",
+          "localeFieldsSha256": "2a85f72db9fb40d18dc57ace708e091d432e3a63aba15051e6b89ea74973f09a"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:803c8f0c",
+          "pairedRowSha256": "c3866f4db154e82c340c2ffa449d811b4a784f7212284b988c425ccacd4e436c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says Conrad spoke about the player during Ryan and Conrad’s date."
+        },
+        {
+          "id": "yarn:line:1121309c",
+          "pairedRowSha256": "c9c0c300ba108a12f2b1782c0e86a33a9110e8e039676e8f7637ee9c5b619d3e",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A surprised response."
+        },
+        {
+          "id": "yarn:line:871137eb",
+          "pairedRowSha256": "1b135b6714440edd9b9fe6e648a7b752df11c90d15973bad88beb6ed90e14d7c",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The listener asks what about."
+        },
+        {
+          "id": "yarn:line:6298f08b",
+          "pairedRowSha256": "d11394cb45c4e5136bc87d78970bb55de3895377dfcc8023165849ff5b8b26a1",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says Conrad described being beaten up."
+        },
+        {
+          "id": "yarn:line:f4a8f7fc",
+          "pairedRowSha256": "c9b2f16ae75d52211e2332eb88e6a6c2edc0062982abe094d7521d1e65931c64",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan thinks the player helped Conrad more than they realize."
+        },
+        {
+          "id": "yarn:line:4ef9fe65",
+          "pairedRowSha256": "03c889b3f815f2b418f071bf57c083487ac46be988f3f7a0f2db03821033e76f",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The listener asks how."
+        },
+        {
+          "id": "yarn:line:d8c9f912",
+          "pairedRowSha256": "1f9f8599ebbebb3e73c9d9c3a7125ac92242c4329334d9f15f5ce03261b84635",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-dragon-washer"
+          ],
+          "decision": "The player says they were doing their job."
+        },
+        {
+          "id": "yarn:line:7b5c9d8c",
+          "pairedRowSha256": "286dcba9934a9e8f19391c34b7c63b6706de9f03c7def69c5cb78b71d287d241",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says Conrad needed someone who cared."
+        },
+        {
+          "id": "yarn:line:ed6c9afb",
+          "pairedRowSha256": "de1900239fda13db618b0c1470afec89efb8b941e87a35a79686e00bd41ac432",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan infers Conrad had not felt cared about for a long time; this is Ryan’s inference."
+        },
+        {
+          "id": "yarn:line:573d9362",
+          "pairedRowSha256": "26a68e8ed6b918b5272666ae89a1e1d70ecd3e300270f4344cb59ff5604ce975",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-dragon-washer"
+          ],
+          "decision": "Ryan thinks the player’s work helped Conrad."
+        },
+        {
+          "id": "yarn:line:c10d9415",
+          "pairedRowSha256": "470a76962ff0d7779e3983a51a1c3b457edb89970fa0c5dfc3b08a9b3301d5f9",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan thanks the player on Conrad’s behalf."
+        },
+        {
+          "id": "yarn:line:50102b85",
+          "pairedRowSha256": "e8472f5c5dfca23c8be5ff82e781c7a63faa7c1e3414ba0f068d997cc984a7bf",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan describes Conrad as hot-headed and forgetful about thanking people."
+        },
+        {
+          "id": "yarn:line:c6202cf2",
+          "pairedRowSha256": "09b8ba9c8f8a45889a2c96be7e6499533f5ae2961118431b57150952666fd2d1",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A grateful response."
+        },
+        {
+          "id": "yarn:line:1c49f05b",
+          "pairedRowSha256": "cf245bed804dcbb1acf0560621e1d9e73d675f799dff10b9726e67ccc86201ed",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The listener is happy to hear it."
+        },
+        {
+          "id": "yarn:line:8a79f72c",
+          "pairedRowSha256": "39d58783ed7cc93cf3d587ffb68087dfb121ae220ea43d3108a01e517585a727",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker introduces another point."
+        },
+        {
+          "id": "yarn:line:3028feb5",
+          "pairedRowSha256": "e33f654b7154b221b014f6a2c22f5f48d37c7fa13964c9816188e81cacace5d6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says he and Conrad had sex after their date in this branch."
+        },
+        {
+          "id": "yarn:line:a618f9c2",
+          "pairedRowSha256": "f469243992cd98c7f0f4c557454aa6a01b5d5f3404a3fdad8098ce6619c1f8bc",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A quiet surprised reaction; preserve markup."
+        },
+        {
+          "id": "yarn:line:93bd9a2b",
+          "pairedRowSha256": "38ba1bfd02f3db88930c4280f519f58df749e5aafc6764b34672e1adfaab1e52",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "An exclamation addresses Ryan."
+        },
+        {
+          "id": "yarn:line:058d9d5c",
+          "pairedRowSha256": "5eaf88d26222aab36d7602890a84d5fdecde3d98698b2b0a8ade0869c3af5c4e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says Conrad is experienced."
+        },
+        {
+          "id": "yarn:line:29ec93b2",
+          "pairedRowSha256": "085192a64eaa204cdd6f288646d971027ec30008da8eae993012da79a7740d56",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says there is nothing wrong with mentioning it."
+        }
+      ]
+    },
+    {
       "group": "UI/level0",
       "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
       "applicableEntries": [],

@@ -493,3 +493,8 @@ Both author layers now bind the 35 paired rows of `Conrad_required_2`. The compl
 ### Resume 09: Conrad choices and yip
 
 Both author layers now bind all 38 paired `Conrad_Outro_3` rows. The applicable full source and Italian character, dragon, kobold and Yip entries were reconciled. The two marked choices have different route effects (`yarn:line:36ff6bd9`, `7e9d40e6`); Ryan is the dragon proposed in one choice, while Conrad is the player’s prospective date in the other. The contextual explanation of the player’s yip (`yarn:line:b058318f`) is one instance of its context-dependent meaning, not a fixed universal translation. The source apostrophe difference at `yarn:line:266836f8` is preserved in the paired binding. No new objective Italian field defect was identified. Both layers are author self-reviews, not independent acceptance.
+
+
+### Resume 09: Ryan and Conrad date branch
+
+Both author layers bind the 20 paired `Ryan_5_Required_ryan_conrad_romanced` rows. Ryan refers to Conrad and the player distinctly; the sex after the date belongs to this branch (`yarn:line:3028feb5`). Ryan’s account that Conrad had not felt cared for is his inference (`yarn:line:ed6c9afb`), not an omniscient fact. The player’s reference to their job uses the dragon-washer context. Applicable complete source and Italian character and profession fields were checked; no new objective defect was established. These are not independent reviews.
