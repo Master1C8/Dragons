@@ -233,3 +233,9 @@ Author self-reviewed 20 further IDs from `Alexander_Dirty`, `Alexander_Idle1`–
 Author self-reviewed 42 additional IDs across `Conrad_Intro`, `Conrad_Intro_1`, `Conrad_Intro_2`, `Conrad_Intro_3` and `Conrad_Intro_5`, retaining the previously reviewed marked-up greeting, the medical-kit exchange and the device's glossary term `stojak`. The apostrophe-only `that's` / `thats` platform difference has an explicit shared target. This is author self-review, not independent audit.
 
 `translation.json` now has **704 / 1,947 IDs**, SHA-256 `2337e93eac04480c1f8fe98a99490bdb4dba4a49751ca097f97468745c628b18`. `resume-01/add-conrad-intros.py` and `resume-01/conrad-intros-map.py` validate previous draft and source-bound readers; macOS accepts 704 and Windows 698 bindings. The complete guard reports 1,243 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating the remaining English-source groups.
+
+### Conrad fourth arrival — continuation
+
+Author self-reviewed 53 additional IDs in `Conrad_Intro_4`, covering the three relationship-dependent arrivals and flag diagnostics. The earlier marked-up scales line remains unchanged; the Ryan exchange avoids assigning a gender to the player, and the device retains the glossary term `stojak`. This is author self-review, not independent audit.
+
+`translation.json` now has **757 / 1,947 IDs**, SHA-256 `f8d579e632d7babfb26a7779fb3717bfedbe3f24fef3562589932f53075ccde6`. `resume-01/add-conrad-fourth-intro.py` and `resume-01/conrad-fourth-intro-map.py` validate the preceding draft and paired readers; macOS accepts 757 and Windows 751 bindings. The complete guard reports 1,190 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
