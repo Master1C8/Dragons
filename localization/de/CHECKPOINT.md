@@ -16,6 +16,14 @@
 | screenshot-upload / screenshot-review | Not run; upload is not authorized. |
 | delivery | Incomplete. No installation, release or publication. |
 
+## 2026-11-10 complete-input verification and correction references
+
+The pinned `verify_authored_yarn.py` was rerun with `--complete` against the current translation; it passed 1,823 dialogue bindings on each build. Output `localization/work/cli-terra-high-20261110.J0KLrx/de/resume-06/final-yarn-complete.json` SHA-256 `992f65ff798420f49db7427510eaee72ef4080f842272707d94ad0f2f2f05d72`, translation SHA-256 `17cd7c687560565daf6640d0c31fc6f9791453f069686d31fef81da3074af9b2`. Reproduce with `localization/work/cli-terra-high-20261110.J0KLrx/de/venv/bin/python -B localization/verify_authored_yarn.py localization/de/translation.json --locale de --inventory localization/work/source-inventory-20261107/combined-provisional-v42-20261110.json --yarn-scope localization/work/yarn-markers-20261110.ridbPA/yarn-scope-v42.json --complete`.
+
+Author self-review of the correction-reference set in `receipts/semantic-delta-01.json` found the seven crest references consistent with the ornamental head crest: `Zierkamm`, contextual shortened `Kamm`, and `Familienzierkamm`; the four medkit references use `Verbandskasten`. Relevant markup remains in place. This is limited author adjudication, not a complete cross-group regression review or independent acceptance. The `markers` source ambiguity remains open.
+
+The Polish runtime lock owner changed to PID 96314, `locale=pl`, `purpose=authored-payload-windows-retry`; `ps -p 96314` confirmed its live `run-windows-retry.sh` process. The lock and owner were left untouched. Shared free space was 5.8 GiB, close to the verifier's 5 GiB minimum; check again before attempting the serialized fresh-build comparison. Preserve the first failed verification log and use a new log path for any retry. No new game was launched.
+
 ## 2026-11-10 correction closure and provisional packages
 
 The two author-review corrections are compared with the complete pre-review draft at commit `c1f0b4213a2537a698c1f8b9a3c24b91ba7d977d`. `receipts/semantic-delta-recipe-01.json` binds their whole containing scenes, seven crest and four medkit references; `receipts/semantic-delta-01.json` contains the reproducible ordered 437-ID closure, component lists, hashes, protected context and review rows. The export additionally selects project regressions including non-Yarn and markup. It is prepared evidence, not a clean independent review; selector completeness and the mandatory regression review still require adjudication. Export SHA-256 `97770eb10693a35b5e4282612588dd73fcf54c03b3ad81c5f65337d6d67711a0`. Baseline bytes are recoverable using `git show c1f0b4213a2537a698c1f8b9a3c24b91ba7d977d:localization/de/translation.json`, SHA-256 `faf8ea606a101ea6fcb535123be95e0a61fe20bb9701d4ddd018951bbd62781d`.
