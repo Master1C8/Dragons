@@ -133,3 +133,9 @@ Cumulative distinct IDs read: 970 / 1,947; 977 remain. Author review only; indep
 Compared all four farewell nodes against both English builds and Polish. The Conrad/Ryan route discusses a restaurant and club; the player/Conrad route discusses a date at Wings; the player/Ryan route asks about their plans. These remain distinct, and the playful awkwardness of “You are a big deal” is retained. Node names and source positions do not prove that the route flags or transitions actually execute; display fit and current-payload runtime remain unverified. No new finding.
 
 Cumulative distinct IDs read: 1,026 / 1,947; 921 remain. Author review only; independent acceptance remains pending.
+
+## Alexander first and second visits: 99 IDs read
+
+Compared introductions, required conversations, other interactions and departures in both English builds with Polish. His first-visit crest identifies his college position and the protagonist misidentifies his title; the second visit explains Igwyx’s spontaneous combustion, reconstitution, and Alexander’s concern for his reputation. The variant source spelling Igwix in the separate interaction is normalized to the established Igwyx spelling confirmed by the introduction. Both source-typo variants use shared targets. The private-washer comparison and confidential closing retain their context. Source node membership does not prove live sequencing or branch triggers; current-payload gameplay and display fit are unrun. No new finding.
+
+Cumulative distinct IDs read: 1,125 / 1,947; 822 remain. Author review only; independent acceptance remains pending.
