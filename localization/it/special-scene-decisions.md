@@ -73,6 +73,26 @@ Source case `editor-route-prompt`, registry SHA-256 `6209639693f1c03ea71bd49a7da
 
 Author self-review: the question asks about the same suggested pairing and the choices remain opposites. Keep condition, `$suggested_ryan_to_conrad`, original option IDs and state writes untouched; use only the paired display mapping. Positive: in a controlled editor-state check each selection writes its stock corresponding boolean; negative: swapped choices or modified variable/condition fails. Editorial: author-reviewed; paired source and text path establish feasible display replacement; package structural checks and controlled runtime/visual check remain pending.
 
+
+## Alexander's number-seven answer
+
+Source case `alexander-number-seven-taste`, registry SHA-256 `5efe4c18581eddd9929227750dfb34842142c172e3cb3bd18d36e58953aa5a51`. Both English bindings were read. Author self-review: the absurd sensory answer remains a yellow lime, distinct from a lemon; his confidence and the appeal-to-authority correction remain jokes rather than proof of a correct answer. Duplicate source replies retain distinct IDs.
+
+| ID | Italian wording |
+|---|---|
+| `c2bdc402` | Che sapore ha il numero 7? |
+| `78eccd9b` | Lime giallo. |
+| `eedccaec` | Impossibile. |
+| `db79a905` | Cioè... un limone? |
+| `4d49ae72` | Possibilissimo. Non c'è nulla di cui io sia più certo. |
+| `6128a09c` | No. Un lime di colore giallo. |
+| `f718a7eb` | Qui il professore sei tu. Dev'essere giusto. |
+| `f0351f0c` | Impossibile. |
+| `6605187b` | È un appello all'autorità, un errore logico. Ma sì, ho ragione. |
+| `15bcd86c` | Possibilissimo. Non c'è nulla di cui io sia più certo. |
+
+Keep both identical response pairs distinct and preserve `$Yarn.Internal.Once.line:c2bdc402` and all source destinations. Positive: both first responses and nested responses lead to their original replies; 7, lime and lemon remain distinguishable. Negative: merging the duplicate IDs, changing 7, or making lime and lemon the same fruit fails. Editorial: author-reviewed; paired dialogue mapping and stock branching give feasible text substitution. Package validation, branch runtime and visual fit remain pending.
+
 ## Gate status
 
-Six of 27 cases have author-reviewed wording recorded above; the remaining 21 require complete contextual decisions. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
+Seven of 27 cases have author-reviewed wording recorded above; the remaining 20 require complete contextual decisions. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
