@@ -419,3 +419,7 @@ Both paired builds of `Conrad_4_Ryan_Conrad_Romanced`, `Conrad_5_intro_conrad_ro
 ### Resume 08: Conrad route departure rows (author self-reviews)
 
 Both paired builds of `Conrad_5_outro_conrad_romanced`, `Conrad_5_outro_ryan_conrad_romanced` and `Conrad_5_outro_ryan_romanced` were read: three groups / 32 rows. The first route references the player's and Conrad's date; another asks about the player's relationship with Ryan. “Big C” is Conrad's briefly adopted self-reference, not a separate character. The player remains gender-unassigned, and the isolated pause and hesitant response retain unresolved voice routing. The bound Italian player, Conrad, Ryan and wash fields establish no correction here. Both layers are author self-reviews, not independent acceptance.
+
+### Resume 08: Conrad late arrival and date rows (author self-reviews)
+
+Both paired builds of `Conrad_5_intro_ryan_romanced` and `Conrad_5_required_conrad_romanced` were read: two groups / 27 rows. Conrad explicitly identifies the “big blue guy” as Ryan, addressing the player's connection with him, and later refers to himself by name. The separate Conrad route concerns his date with the player; a pause remains without inferred voice. The bound Italian player, Conrad, Ryan and wash fields establish no correction here. Both layers are author self-reviews, not independent acceptance.

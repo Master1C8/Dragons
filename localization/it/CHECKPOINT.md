@@ -311,3 +311,7 @@ Three further complete groups / 46 paired rows have hash-bound source and Italia
 ### Resume 08: Conrad route departure row unit
 
 Three further complete groups / 32 paired rows have hash-bound source and Italian author self-reviews. The row receipt covers 142 groups / 750 rows; 51 groups / 1,197 rows lack equivalent full row-level receipts. Previous narrower evidence remains reusable at its exact bound scope. Independent acceptance and shared source and exact-preservation gates remain open.
+
+### Resume 08: Conrad late arrival and date row unit
+
+Two further complete groups / 27 paired rows have hash-bound source and Italian author self-reviews. The row receipt covers 144 groups / 777 rows; 49 groups / 1,170 rows lack equivalent full row-level receipts. Previous narrower evidence remains reusable at its exact bound scope. Independent acceptance and shared source and exact-preservation gates remain open.
