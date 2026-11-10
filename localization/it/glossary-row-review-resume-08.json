@@ -12295,7 +12295,9 @@
           "pairedRowSha256": "45153435de6b9458c8a311761fe05289d331ffbac2f19a00944f9365d1b38ff2",
           "speakerOrKind": "line",
           "characterReferents": [],
-          "conceptUses": [],
+          "conceptUses": [
+            "dnw-mount"
+          ],
           "decision": "Hands are mentioned as an alternative to the device in this sexual-service context."
         },
         {
@@ -17166,7 +17168,9 @@
           "characterReferents": [
             "dnw-alexander"
           ],
-          "conceptUses": [],
+          "conceptUses": [
+            "dnw-mount"
+          ],
           "decision": "Alexander tentatively says he would like to use the device."
         },
         {
@@ -17291,7 +17295,9 @@
           "pairedRowSha256": "737d3be128cb367d6ee9b1104449ed359636a54e51145ccbdeaec978f0b930eb",
           "speakerOrKind": "option",
           "characterReferents": [],
-          "conceptUses": [],
+          "conceptUses": [
+            "dnw-mount"
+          ],
           "decision": "The listener offers to fetch the device."
         },
         {
