@@ -163,3 +163,7 @@ Resume-08 Alexander fifth-visit opening/invitation: 1,466 rows in 174 groups hav
 Resume-08 Conrad branching/intimacy unit: 1,582 rows in 183 groups have bounded two-layer author reads; 10 groups remain for complete dependency reconciliation. The unnamed gryphon, branch-specific relationships, yip context and adult-mount referent are recorded. Full per-concept index, independent review and shared source/exact-preservation readiness remain open.
 
 Resume-08 Ryan relationship branches: 1,663 rows in 188 groups have bounded two-layer author reads; five groups remain for complete dependency reconciliation. The subject of the injury and three distinct relationship outcomes are recorded. Full per-concept index, independent review and shared source/exact-preservation readiness remain open.
+
+Resume-08 Ryan arrival/date planning: 1,759 rows in 191 groups have bounded two-layer author reads; two groups remain for complete dependency reconciliation. The two date referents, offered ride, venue and film-title use are recorded. Full per-concept index, independent review and shared source/exact-preservation readiness remain open.
+
+Resume-08 Ryan shared-food unit: 1,870 rows in 192 groups have bounded two-layer author reads. `Alexander_questions` retains its earlier 77-row/six-entry receipt and still needs reconciliation for other possible dependencies, not a repeat of that accepted six-entry unit. Full per-concept index, independent review and shared source/exact-preservation readiness remain open.
