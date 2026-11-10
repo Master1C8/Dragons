@@ -850,3 +850,89 @@ These seven groups contain 110 source-bound rows; the paired English differs onl
 | `fbba1293` | Grazie. |
 
 Positive review: each follow-up reflects its actual relationship state; player responses about Ryan and Conrad do not conflate their pair with either player romance. Negative review: do not substitute branch labels or alter state tests, and do not infer a player gender from a romance. Final execution, line fit and the other reachable scenes remain open.
+
+### `ryan-conrad-romance-routing` — Conrad visit-five introductions and exits (partial)
+
+The six state-selected scenes distinguish the player's date with Conrad, Conrad's date with Ryan, and the player's relationship with Ryan. IDs are `yarn:line:` suffixes. The seven Big C targets already reviewed under `big-c-nickname` are reused exactly below; the new unit does not supersede them. Route conditions, transitions and source markup remain unchanged.
+
+| ID | Italian target |
+|---|---|
+| `1538bc7e` | Ehi, bellezza! |
+| `8308bb09` | Come sto? |
+| `209ddf97` | Molto bene. |
+| `0bd1699e` | Ehm... |
+| `b6add8e0` | Già! Sto bene! |
+| `0cfcd179` | Però non per un appuntamento. |
+| `9accd60e` | Allora laviamolo via per il nostro appuntamento di stasera. |
+| `9de16ee9` | Ah! |
+| `fa0a9fbb` | Mi stavo solo divertendo. |
+| `6c3a98cc` | Va bene, allora laviamolo via per il nostro appuntamento di stasera. |
+| `d66b9155` | Non vedo l'ora. |
+| `e3cef2bc` | Devo assicurarmi che tu sia immacolato! |
+| `405b9622` | Anch'io. |
+| `75fef5cb` | Eh... Puoi scommetterci. |
+| `cfaffc52` | Sono su di giri. |
+| `599ffb25` | Ho già dei posti in quel bar di cui ti parlavo. |
+| `c88244b5` | Di sera l'atmosfera è fottutamente fantastica. |
+| `5eb243c2` | Ti piacerà. |
+| `24ce37ec` | Eeehi. |
+| `b2fe309b` | Come mai sei di così buon umore? |
+| `3d0a5aeb` | Ehi, Conrad! |
+| `08af3902` | Il mio appuntamento con Ryan è stato... |
+| `9e9f3e75` | Davvero fantastico! |
+| `ab3a5d9c` | Ehi. |
+| `116b5405` | Il mio appuntamento con Ryan è stato... |
+| `875b5372` | Davvero fantastico! |
+| `1646ece2` | Scusa se arrivo tardi. Il mio sonno è tutto sballato. |
+| `8076eb95` | Però sono qui solo per un lavaggio. |
+| `ebd2af6b` | Presto dovrai raccontarmi ogni dettaglio su Ryan. |
+| `c7b3a185` | Va bene! Vado ad aprire il cancello. |
+| `7de2a81c` | Non preoccuparti. Lo farò. |
+| `5183a6f2` | Grazie. |
+| `f474ffa9` | <size=140%>EHI, <size=100%>vorrei un lavaggio. |
+| `975a629f` | Ehi, Conrad. |
+| `bb3b6c71` | Come mai sei qui così tardi? |
+| `016a65e8` | Già, sono io. |
+| `2d0b6b06` | Stasera vado in centro. Dovevo essere immacolato. Senti un po'... |
+| `8e9e0f98` | Ho saputo di te e del tizio grosso e blu. Ryan, giusto? |
+| `18ae08ef` | Scommetto che vi siete divertiti. |
+| `a2ff0176` | Spero che sia andata bene. |
+| `34cf0601` | Sì! Grazie per averlo chiesto. |
+| `a5d2b991` | È andata bene. |
+| `33e2bee6` | Mi fa piacere. |
+| `d66b7986` | Ora! |
+| `405b7ef1` | Conrad ha bisogno di un lavaggio! |
+| `eb7cf9e5` | Tutto pulito... |
+| `512df07c` | Sai che cosa significa. |
+| `c71df70b` | Serata romantica! |
+| `48e99d7b` | Prima devo chiudere il negozio... |
+| `64889395` | Puoi scommetterci! |
+| `f2b894e2` | Dovrò tenerti il posto mentre chiudi. |
+| `ded99a0c` | Lo so, ti terrò il posto! |
+| `4fc4259c` | Va bene! Posso andare. |
+| `d9f422eb` | Ti aspetterò al bar stasera! |
+| `eaafe671` | Credo che tu abbia lavato ogni punto! |
+| `7c9fe106` | Mi assicurerò che non resti niente tra le tue scaglie. |
+| `c6cee89f` | Grazie per avermi fatto entrare così tardi. |
+| `50feefe8` | Figurati! |
+| `655b8c01` | È sempre un piacere averti qui, Conrad. |
+| `f36b8b76` | Mmmhm. Cercherò di sistemare gli orari del sonno... |
+| `df0a8598` | Grazie. Per me è sempre un piacere essere qui. |
+| `493a82ef` | Comunque. Puoi andare ad aprire il cancello? |
+| `d8273d7f` | La notte non comincerà da sola! |
+| `f57fc630` | Tutto fatto! |
+| `f2527ed7` | Sei <i>immacolato. |
+| `646279a0` | Così sembra. |
+| `17dbb9b7` | Eccome! |
+| `81ebbec0` | Grazie per il lavaggio così tardi nella notte. |
+| `3bbab759` | Devi tenermi al corrente di te e Ryan, d'accordo? |
+| `ad8ab02e` | Comunque... |
+| `0e1fd4b0` | Fate uscire il <i>Grande C</i> da qui! |
+| `982fd3c7` | Grande C...? |
+| `255362b9` | Va bene, Conrad. |
+| `227eda5e` | ... |
+| `b44edd29` | Sììì, meglio non usare quel soprannome. |
+| `b36365ce` | Ah... Già... |
+| `d04df8f8` | Bene, ci si vede! |
+
+Positive review: the correct partner and state remain explicit in each branch; the Big C gag reuses its earlier accepted wording. Negative review: do not exchange route scenes or destination IDs, alter formatting, or turn a future date into a completed one. Final branch execution and visual fit remain pending.
