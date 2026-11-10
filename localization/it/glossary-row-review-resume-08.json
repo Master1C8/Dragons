@@ -2326,7 +2326,9 @@
             "dnw-alexander",
             "dnw-player"
           ],
-          "conceptUses": [],
+          "conceptUses": [
+            "dnw-wash"
+          ],
           "decision": "Alexander calls himself a professor and asks the player about the soap."
         },
         {
@@ -5524,7 +5526,9 @@
           "characterReferents": [
             "dnw-ryan"
           ],
-          "conceptUses": [],
+          "conceptUses": [
+            "dnw-wash"
+          ],
           "decision": "Ryan says he is still soapy."
         },
         {
@@ -10742,6 +10746,11 @@
           "id": "dnw-mount",
           "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
           "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
         }
       ],
       "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
@@ -10768,7 +10777,9 @@
             "dnw-conrad",
             "dnw-player"
           ],
-          "conceptUses": [],
+          "conceptUses": [
+            "dnw-wash"
+          ],
           "decision": "Conrad distinguishes physical cleanliness from sexual intent; preserve the expressive markup."
         },
         {
@@ -16972,7 +16983,9 @@
             "dnw-alexander",
             "dnw-player"
           ],
-          "conceptUses": [],
+          "conceptUses": [
+            "dnw-yip"
+          ],
           "decision": "Alexander interprets the player’s yip as an offer to open the gate."
         },
         {
@@ -18260,7 +18273,9 @@
           "pairedRowSha256": "4a7bea4fe1ef7940189cad1504719e546247b0f0d3ea13fe1d58539eb09644cc",
           "speakerOrKind": "line",
           "characterReferents": [],
-          "conceptUses": [],
+          "conceptUses": [
+            "dnw-wash"
+          ],
           "decision": "A speaker says every spot should be clean."
         },
         {
@@ -22891,7 +22906,9 @@
             "dnw-conrad",
             "dnw-ryan"
           ],
-          "conceptUses": [],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
           "decision": "Ryan thinks he has seen the tiny dragon."
         },
         {

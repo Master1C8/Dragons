@@ -550,3 +550,7 @@ The author made a fresh, separately performed field read of all 28 English entri
 - `dnw-yip-man`, `dnw-project-scale-mary` and `dnw-dragons-of-the-galaxy`: the target titles are intelligible localized renderings and the meanings preserve the source's qualified wordplay or allusion; the title choices do not prove final in-game fit or independent editorial acceptance.
 
 No objective complete-field correction was established by this read. Concept-use and referent coverage still requires reconciliation against the actual paired scenes; a field-only read does not approve either full glossary layer.
+
+### Resume 09: contextual concept corrections
+
+Cross-checking the actual English and preceding scene turns added six previously omitted contextual concept links: the player’s prior Yip interpreted by Alexander at `yarn:line:c8281b83`; the red dragon Conrad referred to as the tiny one at `yarn:line:3605a48a`; and wash-service context in `yarn:line:b06e13bc` (soap), `yarn:line:0979dea3` (still soapy), `yarn:line:5a5e7f21` (physical cleanliness versus sexual intent), and `yarn:line:116f0e16` (cleaned spots). The two floor-cleaning references in `Alexander_SexScene_Cum` are not dragon-washing service uses. Movie titles containing Yip or Dragons are bound to their title entries and do not by themselves add the species or vocalization entries. The scene entry hashes and individual concept links are recorded in the row receipt. This is a bounded correction in two author self-review layers, not proof that all other implicit uses have been reconciled.
