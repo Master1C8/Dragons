@@ -83,3 +83,15 @@ Findings pending disposition:
 - `yarn:line:72b244b7`: `Ależ to było zajebiście dobre!` conveys the response but is an awkward Polish collocation for “That felt damn good!” Consider a more natural emphatic sensation while retaining the tag.
 
 Cumulative distinct IDs read: 692 / 1,947; 1,255 remain. This is author work, not independent acceptance.
+
+## Conrad second visit: 60 IDs read
+
+Compared the injury arrival, conversation, departure and alternate interaction against both English builds and Polish. The player can inquire or express sympathy, and Conrad's subsequent admission and apology remain distinct from the alternatives; his medkit request and changed attitude connect the arrival and departure. `Conrad_2` is a separate interaction and its relationship to a particular playthrough has not been established here. Both stock builds have identical English in this unit. Actual route conditions and display fit have not been tested.
+
+Findings pending disposition:
+
+- `yarn:line:1a5e1ba4`: `Jak zachowywać?` is an incomplete Polish question for “Act what way?” in response to Conrad asking why he acts this way. A neutral construction is needed.
+- `yarn:line:b4a29141`: `żeby tu trochę upiększyć` lacks a natural object for sprucing the place up; compare the connected gift context before revision.
+- `yarn:line:0de4fe62`: `Dobrze się przygotowujesz` suggests a repeated action rather than the player's preparedness on this occasion. Consider a gender-neutral state description.
+
+Cumulative distinct IDs read: 752 / 1,947; 1,195 remain. Author review only; independent acceptance remains pending.
