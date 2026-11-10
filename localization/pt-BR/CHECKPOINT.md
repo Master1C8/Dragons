@@ -308,3 +308,7 @@ TMPDIR="$PWD/localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-08/tm
 ```
 
 This is author self-review and source/reader verification, not independent editorial audit or final package, runtime or visual acceptance. Continue remaining English-source scene batches.
+
+### Conrad third visit opening
+
+Self-edited 18 `Conrad_Intro_3` IDs, retaining approved `suporte` and ordered size tags. Total 910 authored, 1,037 blank. Both builds' English was checked independently and matches for these IDs; paired readback preserved all 1,947 source bindings and shows exactly 18 new targets per platform with ordered markup/placeholder preservation. Translation SHA-256 `57b0fa6ea9000f02eb0686cc8f50e0d6b1e8eb8cfb11e12d3ddfdd4b97969103`; readback `localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-08/conrad-intro-3-readback.json`, SHA-256 `6868964abb0135c3eb6d8abf23056d384d948e2ce730b78f71cb7e9b4e781da4`. The package Yarn reader reopened 904 dialogue bindings on each platform; `localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-08/conrad-intro-3-yarn-receipt.json` SHA-256 `181a2e65a9481916aed4ab0426dbe87ddbadc8e6eca486a88a205e81f7f44659`. Recreate using the preceding validator command with this committed translation; its TemporaryDirectory is run-owned and removed after read-back. Author self-review only; full editorial audit, packages, runtime, visual and independent delta review remain pending.
