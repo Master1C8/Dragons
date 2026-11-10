@@ -14430,6 +14430,485 @@
       ]
     },
     {
+      "group": "Ryan_2_required",
+      "orderedRowsSha256": "6451cc1db3b541eb1bc660f7d62fa29740eba2c0a60f8420328d54d9ff619931",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:aa0dda7b",
+          "pairedRowSha256": "1b70125dd8a652411f206d9f0ea431c47284d4ea1bf1e70b4b55388a26fe8da2",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A greeting without a named referent."
+        },
+        {
+          "id": "yarn:line:3c3ddd0c",
+          "pairedRowSha256": "b19ccbe467b6d7003f26083b9ef60cec471dadb72ac9870a45874da58d150ef1",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An interrogative response."
+        },
+        {
+          "id": "yarn:line:866cd495",
+          "pairedRowSha256": "c044fc17a1c419f6db5a5c3e0947e889f725fc3dd5b723b6f81ff4e9b694b316",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A question asking what is up."
+        },
+        {
+          "id": "yarn:line:105cd3e2",
+          "pairedRowSha256": "873f5e07e9d3903d0180aa1743c9f7ad81b2d756ad3300bcc46934042d1f4c05",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A request to ask a question."
+        },
+        {
+          "id": "yarn:line:81416c72",
+          "pairedRowSha256": "3ecbd11e4f8fae7834aff7fa3518b4f681889f41326577cb596e74025c4eedb1",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A playful observation that a question was already asked."
+        },
+        {
+          "id": "yarn:line:709a9a57",
+          "pairedRowSha256": "6a90627df509c406428f8ee65c1bbc806903b5803305096ea69317b45d480db5",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Agreement to hear the question."
+        },
+        {
+          "id": "yarn:line:17716b05",
+          "pairedRowSha256": "8c6dc0666a1dd4159da8349587e0a1c299c16704a13d65dcb685e86aac6a0f90",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A brief apology."
+        },
+        {
+          "id": "yarn:line:e6aa9d20",
+          "pairedRowSha256": "6ae6c11a63f3182376dad3613332f13cf2b92e5fe2e86fb3f5f8a167b5b7f2b5",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan introduces the topic of relationships."
+        },
+        {
+          "id": "yarn:line:5cfb94b9",
+          "pairedRowSha256": "8a9c16e5f62a15312cb3bef2429adb43537f65e7a7cafec9901b24c9b66ab3b0",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan describes a difficult relationship as a hypothetical; preserve emphasis."
+        },
+        {
+          "id": "yarn:line:cacb93ce",
+          "pairedRowSha256": "5cf20ddbbbd1275d5a2a1df0d82abd82568863b814f9ca03292267e46f3cdae6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan continues that everything has been tried."
+        },
+        {
+          "id": "yarn:line:695ef750",
+          "pairedRowSha256": "af041049340a23f1df3f71c174daa28ae05efb0c1ee1cee4bfd17d4dc9c3728b",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A pause without independently established voice."
+        },
+        {
+          "id": "yarn:line:ff6ef027",
+          "pairedRowSha256": "277a73b24033bc5af97316fec399df936ded46e9109160198ebaba2347aa53fc",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks when to end a relationship."
+        },
+        {
+          "id": "yarn:line:453ff9be",
+          "pairedRowSha256": "419f6d98983a8205e860390809cd6f2547f50745fa10929a87e755eb3eb67a11",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player addresses Ryan sympathetically."
+        },
+        {
+          "id": "yarn:line:d422462e",
+          "pairedRowSha256": "2107cb0e917e0a9abcb3dedd2a9f0245250e779470338f272e939fd8494f2e9b",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player cannot answer for Ryan."
+        },
+        {
+          "id": "yarn:line:d30ffec9",
+          "pairedRowSha256": "99d1885f27dcc01b26f25e9a41f16ec28a601d9d3b84d0470ada9283c8ec6a8d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan worries about burdening the player."
+        },
+        {
+          "id": "yarn:line:42124159",
+          "pairedRowSha256": "f66bc40c8c4b2996b1f7d4c3708b6ee404b2fbc5a7f6196951bf40db460a8885",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan finds the player comfortable to be around without establishing player gender."
+        },
+        {
+          "id": "yarn:line:31ab814e",
+          "pairedRowSha256": "15674e6d2de81ae48f762b7df30bb71a3b2b54bfea0d05b057bf19ec35f58dfc",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan agrees that the answer cannot be provided."
+        },
+        {
+          "id": "yarn:line:a79b8639",
+          "pairedRowSha256": "75bbf6a56c396dac4cfbedc0ff5d5c4342d77ca0f71dff5bcab14c0216e11565",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan is glad he does not feel judged here."
+        },
+        {
+          "id": "yarn:line:1dca8fa0",
+          "pairedRowSha256": "b9aabf2241ed7ab42e3eef0049f9347318ef7ddb267be52e8013367c18142fe4",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate branch repeats Ryan’s comment about the player."
+        },
+        {
+          "id": "yarn:line:8bfa88d7",
+          "pairedRowSha256": "ecaa92df45f9ff79c40b97b8abddd2af085dfadf7e7455af7ff24118d45a2ce6",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player reciprocates enjoying Ryan’s company."
+        },
+        {
+          "id": "yarn:line:be5feb3e",
+          "pairedRowSha256": "62faac92746c818d356df4ab27deae141bacdbae66e78712d1d2221ac0054239",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A wish that things improve."
+        },
+        {
+          "id": "yarn:line:286fec49",
+          "pairedRowSha256": "efc61abb59a879782925115111f5f03fda5122de29689f953367493951746c29",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A brief glad response."
+        },
+        {
+          "id": "yarn:line:040ee2a7",
+          "pairedRowSha256": "510288813a2741c1ec6da42343020b090c6ba74b152bab3dab83f3a82a4f026a",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A brief reciprocal response."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_SexScene_Cum",
+      "orderedRowsSha256": "31cf94fbf5a1d85f63c07ba0b746ce0ede4c08e47e16ef36705ab00896bcf7ee",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:f5d36d9a",
+          "pairedRowSha256": "c3e7217f337020b58b94e35cac32bc346395594aa1c37814ed266e0c6d206494",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker is close to climax in this intimate scene; isolated voice not assigned."
+        },
+        {
+          "id": "yarn:line:4f826403",
+          "pairedRowSha256": "a0e9972697aa097a48b10ef3e591d2b2fc66481ab97446075dd2d5f345f1e2b6",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A request to continue a little longer."
+        },
+        {
+          "id": "yarn:line:48afdce4",
+          "pairedRowSha256": "d5baa76a1a852020617f3c5da1c6056fa808deed5caad1142d56dfb1ec0db3ad",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An eager response in the intimate scene."
+        },
+        {
+          "id": "yarn:line:d9b26374",
+          "pairedRowSha256": "a8580395982e1dbe222fd558c21152db7b3a08f1cd0d0688e7faf2d09b65c0cb",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Agreement to continue."
+        },
+        {
+          "id": "yarn:line:de9fdb93",
+          "pairedRowSha256": "adf1de6e0dfa10dfd6ae11a2e859103c8b81a0539b58bb1e9db4e48948bd783d",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker says holding back is difficult."
+        },
+        {
+          "id": "yarn:line:3b161cf3",
+          "pairedRowSha256": "96e3efe2bcbd9a0354fc320b217abf6976bc16f87d2ecbfb90fb85b4200f2b2e",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker asks for more."
+        },
+        {
+          "id": "yarn:line:8147156a",
+          "pairedRowSha256": "e2f40401c4164b4416a4da8ef25e258de9430ee9f3a832eff62b5e450669ceb1",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An imperative response."
+        },
+        {
+          "id": "yarn:line:ad261b84",
+          "pairedRowSha256": "5880e938e04e0078f69a68596d932798e02f976e6e5907ef33a05ff11652e0dd",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker says the request makes holding back harder."
+        },
+        {
+          "id": "yarn:line:1777121d",
+          "pairedRowSha256": "3bed7f27d3a37716dbbd4b8b94246972eb4fdad5ec143ba57464f75a1412a094",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker says they can manage."
+        },
+        {
+          "id": "yarn:line:22d271f4",
+          "pairedRowSha256": "3e2e22e25a8643092e4a52c53f3cc40f8bfcdc827c622c3a69f441ffed5f8a0c",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A positive assessment of the experience."
+        },
+        {
+          "id": "yarn:line:b4e27683",
+          "pairedRowSha256": "784e9e046fb575b0263438df6ce33c617137544845b63c24ac9906330a889c46",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Agreement."
+        },
+        {
+          "id": "yarn:line:0eb37f1a",
+          "pairedRowSha256": "b87abf0ba877f767780124ff31d4c36062052ee01d65f1d7af3f8009a837cbb6",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An invitation to stay."
+        },
+        {
+          "id": "yarn:line:9883786d",
+          "pairedRowSha256": "574f2942c2667bcbbf5fdded03d02c2f541a24829de99f400f72efa6b7c8659e",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The speaker says the night was booked."
+        },
+        {
+          "id": "yarn:line:099ec7fd",
+          "pairedRowSha256": "e4e160a1dbb1dbd8a5c6ddf3718f052ed2f58211816810fbef0008aa96e9abe7",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The invitation is accepted."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_SexScene_Cum",
+      "orderedRowsSha256": "28561e16a60b55895b83e0d77f0e5d23e9b8cc069308d19e487e823fba67ed17",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:0bc044da",
+          "pairedRowSha256": "6dc19960666721dbcc9842f1f943e185f87ff7a270f60e944e39579df88ca4a6",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A readiness question in an intimate scene."
+        },
+        {
+          "id": "yarn:line:9df043ad",
+          "pairedRowSha256": "d84f620f5058b747152c0cab36779aabb780fd77bf1e4054be365d7836371acf",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A request for more time."
+        },
+        {
+          "id": "yarn:line:9addfb4a",
+          "pairedRowSha256": "6aa309f64da9e27665707a4ba727632d63e131f7e7034731b9ca4e7672f85a23",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A declaration of readiness."
+        },
+        {
+          "id": "yarn:line:0cedfc3d",
+          "pairedRowSha256": "4daa8ddcf0e9f11bbab88cd213eab1d4c5b4f6656d2abbc00dc4421ba93cf1a9",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The line explicitly refers to Conrad and uses he; preserve it as a distinct line rather than infer speaker."
+        },
+        {
+          "id": "yarn:line:7f543c2a",
+          "pairedRowSha256": "aaf342b6e00a92748f19f1ab6f2b0c906ed6f5fe316e747def3b1c771261c88f",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker says they can release when the addressee is ready."
+        },
+        {
+          "id": "yarn:line:e9643b5d",
+          "pairedRowSha256": "15b3203d24ab624b3282e4e2f21a9a7fd958b2d802e9108204f77ccae9042d32",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A request to wait."
+        },
+        {
+          "id": "yarn:line:c50535b3",
+          "pairedRowSha256": "713807cbccf9d5b33add4069def1be9e1fae68b0d1f1badae15e3f4ecc841cf8",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An eager affirmative response."
+        },
+        {
+          "id": "yarn:line:533532c4",
+          "pairedRowSha256": "2fdb7c87bf410003056a700fa6948dd2121a5fc2e9d75c4870100a781da68291",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Agreement."
+        },
+        {
+          "id": "yarn:line:6690512d",
+          "pairedRowSha256": "f91cf066d4f2eb88eea4da77523567305b9ba586ddf454c862df1bdccde231c0",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An expression of being impressed."
+        },
+        {
+          "id": "yarn:line:f0a0565a",
+          "pairedRowSha256": "f82d61f6e5f3dc726ca28998aab8abc50f5499b40dfedb403c6242f00a46331f",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A question about returning to the club; this row alone does not name the venue."
+        },
+        {
+          "id": "yarn:line:4af15fc3",
+          "pairedRowSha256": "23005e6a08efaf0f9b3dfd24fd5bf325e9eeca33d3953dcab392d9311ccb074c",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Agreement to return."
+        }
+      ]
+    },
+    {
       "group": "UI/level0",
       "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
       "applicableEntries": [],
