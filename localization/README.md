@@ -15,12 +15,13 @@ selected language, not a native multilingual in-game language picker.
 
 ## Prerequisites
 
-- Python 3.9+ and `UnityPy==1.25.4` in an isolated environment. The local
-  investigation environment used `/private/tmp/dragnwash-unitypy-venv/bin/python`;
-  it is temporary and is not a durable project dependency.
+- Python 3.11+ in an isolated environment for the complete package builders.
+  Install `font_probe_requirements.txt` for the complete builders and package
+  verifier. `requirements.txt` is sufficient for the standalone dialogue tools.
 - The canonical site locale catalog at
-  `~/Desktop/SiteForMods/lib/language-data/site-locales.ts`. Builds reject an
-  unsupported or missing locale instead of selecting a fallback language.
+  `~/Desktop/SiteForMods/lib/language-data/site-locales.ts`. Set
+  `DRAGONS_SITE_LOCALES` to the catalog's actual path if SiteForMods was moved.
+  Builds reject an unsupported or missing locale.
 - Original, unmodified macOS `sharedassets1.assets` from the supported game.
   Its SHA-256 must be `f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8`.
 

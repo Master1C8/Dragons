@@ -1,0 +1,39 @@
+{
+  "verification": "Paths, file types, modes and SHA-256 of every bundle member matched the retained copies. ZIPs matched in full. The retired paths were checked for active use, ownership and references from the current installer inventory.",
+  "selectedSizeKiB": 3478912,
+  "removedCopies": [
+    {
+      "remove": "localization/work/cli-terra-high-wave3-20261110.71d8AW/sr/packages-3ea2186600f5-python39-incomplete/DragNWash-sr.app",
+      "retained": "localization/work/cli-terra-high-wave3-20261110.71d8AW/sr/packages-3ea2186600f5/DragNWash-sr.app",
+      "treeSha256": "a3a4ae8c74c11fee57ae3f5649cd9e24b147331cd14c9205156677d9170fa43c",
+      "files": 284,
+      "sizeKiB": 1119624
+    },
+    {
+      "remove": "localization/work/locale-template-20261110.TpDi3k/DragNWash-test.app",
+      "retained": "localization/work/paired-locale-20261110.ScqUgB/DragNWash-ru.app",
+      "treeSha256": "2312ca41ae29e8b286e1e0b3610be1c171c885c7fb15ed0749c9b26696a25e53",
+      "files": 284,
+      "sizeKiB": 1119628
+    },
+    {
+      "remove": "localization/work/cjk-package-20261110.dgT1p7/DragNWash-ru.app",
+      "retained": "localization/work/paired-locale-20261110.ScqUgB/DragNWash-ru.app",
+      "treeSha256": "2312ca41ae29e8b286e1e0b3610be1c171c885c7fb15ed0749c9b26696a25e53",
+      "files": 284,
+      "sizeKiB": 1119628
+    },
+    {
+      "remove": "localization/work/locale-template-20261110.TpDi3k/DragNWash-test-windows.zip",
+      "retained": "localization/work/paired-locale-20261110.ScqUgB/DragNWash-ru-windows.zip",
+      "sha256": "182ae6458195fe9ebc4b852f5ebbee82b75ee94fbb223d36613167dad094d487",
+      "sizeKiB": 60016
+    },
+    {
+      "remove": "localization/work/cjk-package-20261110.dgT1p7/DragNWash-ru-windows.zip",
+      "retained": "localization/work/paired-locale-20261110.ScqUgB/DragNWash-ru-windows.zip",
+      "sha256": "182ae6458195fe9ebc4b852f5ebbee82b75ee94fbb223d36613167dad094d487",
+      "sizeKiB": 60016
+    }
+  ]
+}

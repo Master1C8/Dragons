@@ -65,11 +65,68 @@ python3 -B localization/restore_macos_stock.py \
 
 The Windows stock Data directory was verified on the external CrossOver
 volume. Both game sources are owner's copies. The archive contains no
-game distribution. The untracked v42 inventory and Yarn scope can be
-regenerated as described in [the v42 receipt](localization/evidence/yarn-fragment-markers-20261110.md).
-Keep these and the per-locale working package inputs until the full translation
-rebuild has been verified from recovered inputs. `textures-with-text` is the
-owner's working directory and stays separate from generated output cleanup.
+game distribution.
+
+## Restore the v42 translation build inputs
+
+Both released platform inventories use the same v42 source inventory and
+Yarn scope. The separate maintainer draft `recovery-inputs-v0.2.1` holds
+these two extracted inputs. Keep this draft private. Restore into a fresh
+directory inside the same recovery workspace:
+
+```sh
+mkdir "$recovery/v42-download" "$recovery/v42-inputs"
+gh release download recovery-inputs-v0.2.1 --repo Master1C8/Dragons \
+  --pattern Dragons-v42-build-inputs.zip --dir "$recovery/v42-download"
+(
+  cd "$recovery/v42-download"
+  printf '%s  %s\n' \
+    77995ec1fcb3e753986a52612ab782540db8affaf03439cb15aa89a2ffca9939 \
+    Dragons-v42-build-inputs.zip | shasum -a 256 -c
+)
+unzip -q "$recovery/v42-download/Dragons-v42-build-inputs.zip" -d "$recovery/v42-inputs"
+```
+
+The expected SHA-256 of each extracted file is in
+[the v42 receipt](localization/evidence/yarn-fragment-markers-20261110.md).
+The ZIP and both extracted files were verified after downloading the draft.
+
+For the exact Russian 0.2.1 package inputs, download
+`Dragons-ru-package-inputs.zip` from the same draft. Its SHA-256 is
+`0059dffe0b9b48f3010bf57aad56903b25ba8746637d5fe4f86f92b77dd1b413`.
+It contains a separate 12-file input directory for each platform, checked
+against the original package receipts. Use the extracted `macos` or `windows`
+directory as the locale input argument to the complete package builder.
+Use the tracked `localization/ru/translation.json` for new edits.
+
+For an exact rebuild of the Russian release, use Python 3.12 with
+`localization/font_probe_requirements.txt` and build the managed fallback and
+speaker patch tools with .NET 8 as described in the localization README. In the
+accepted installer resources, select the Russian `PackageConfig.json` entry
+for `Managed/Dragons.SpeakerPresentation.dll`. Pass the file at its `payloadPath`
+under `LocalizationPayload` as `--speaker-runtime`. Its SHA-256 is
+`3c83e4ebb75eeff0b5a64be7b13dfa7dfe7cf0d269566444f67ee1da1ae44502`
+on macOS and `514d2d4d9b4c0f28960424c1eebfc67c2fd5b94509bcafda90fe5649eba7ca64`
+on Windows. The recovered stock macOS app has an empty `Contents/Resources/VNRevival`
+directory from the stock snapshot. Remove that empty directory from the
+disposable recovered copy when matching the original Russian package tree.
+
+The recovery check rebuilt and compared all 284 macOS bundle files and all 13
+Windows ZIP members. The macOS bundle passed strict signature verification and
+the rebuilt Windows ZIP also matched the original archive SHA-256 in full.
+The historical Russian output paths in `installer/App/LocalePackages.json`
+are generated paths. If regenerating the entire installer payload through
+`prepare-payload.py`, recreate the Russian packages at those paths or update
+a fresh inventory to point to the verified rebuilt outputs. The installer
+rebuild using accepted payloads does not require these intermediate packages.
+
+The full translation rebuild gate still covers per-locale package inputs,
+including the CJK fonts and shaped-text plans. Retain the working inputs until
+those rebuilds are verified. `textures-with-text` is the owner's working
+directory and stays separate from generated output cleanup.
+
+[The duplicate-package receipt](localization/evidence/archival-duplicate-packages-20261111.json)
+maps removed work outputs to their retained, byte-identical copies.
 
 The release card's visual delivery contains 150 published screenshot slots
 across 30 locales. The upload readback matched all 150 hosted files.
