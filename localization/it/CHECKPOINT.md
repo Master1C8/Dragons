@@ -299,3 +299,7 @@ Two more complete groups / 24 paired rows have hash-bound source and Italian aut
 ### Resume 08: Ryan fruit-scene row unit
 
 Two more complete groups / 38 paired rows have hash-bound source and Italian author self-reviews. The row receipt covers 133 groups / 620 rows; 60 groups / 1,327 rows lack equivalent full row-level receipts. Prior narrower evidence remains reusable at its exact bound scope. Independent acceptance and shared source and exact-preservation gates remain open.
+
+### Resume 08: Ryan tutorial and arrival row unit
+
+Three further complete groups / 52 paired rows have hash-bound source and Italian author self-reviews. The row receipt covers 136 groups / 672 rows; 57 groups / 1,275 rows lack equivalent full row-level receipts. Previous narrower evidence remains reusable at its exact bound scope. Independent acceptance and shared source and exact-preservation gates remain open.
