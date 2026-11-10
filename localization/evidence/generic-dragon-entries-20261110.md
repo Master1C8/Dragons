@@ -133,6 +133,27 @@ source entry and its Russian counterpart would leave one missing
 ID in each of the 29 other locale maps. No existing translations
 would be removed or edited. The affected Russian review includes
 the new role, the player address rule and the four bound choice
-groups. Separate authorization is pending for this local source
-change and for the neutral strategy. The canonical English and
-Russian files remain unchanged.
+groups.
+
+### Approved strategy and canonical validation
+
+On 2026-11-10 the owner approved neutral wording and the local English
+and Russian additions with the disclosed impact on the other 29 locale
+maps. The Russian draft term is «Безымянный дракон». Its meaning is
+«Дракон в одной из четырёх общих сцен. Личность, пол и местоимения не
+установлены. В каждой сцене используйте нейтральные формулировки.»
+
+The production CLI's canonical loader was exercised on three disposable
+file sets. It accepted the existing 27 entries and 30 complete locale
+layers. It also accepted the proposed 28 English and Russian entries
+in a control containing only the Russian layer. With all 30 existing
+layers present and only Russian updated, the loader rejected the same
+proposal at `dragn-wash glossary locale zh is incomplete (1 missing)`.
+The validator requires the full ID set in every included locale.
+The existing SiteForMods checkout still passes its normal checks.
+
+The approved strategy is recorded in the scene registry. Canonical
+integration requires the new ID to be filled in all existing layers
+in the same change. The authorized English and Russian drafts are
+preserved under `localization/work/anonymous-glossary-proposal-20261110.SY1yqu/`.
+All SiteForMods canonical files retain their original bytes.
