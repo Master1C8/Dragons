@@ -80,7 +80,19 @@ settings object among them has a separate verified segment decoder. The other
 78 are light/decal, probe volume, render-pipeline settings or orbit-camera
 components. All 79 objects in each build matched the packaged controls byte
 for byte, across 13 assets per build. This closes their byte preservation in
-the audited packages. Their unresolved schemas still limit source discovery.
+the audited packages.
+
+A second pass recovered an exact schema prefix for all 34 decal and 33 light
+components per build. The schema's only string is the Unity object name.
+The remaining four or eight bytes per object consist exclusively of 32-bit
+words equal to zero or one. The data therefore adds no display strings to the
+known stock scope. The 11 remaining generic-schema failures per build are six
+probe volume baking sets, four orbit camera graphs and one render pipeline
+settings object. A bounded aligned string scan located scene and resource keys,
+debug light-layer names, and camera graph metadata. This does not establish the
+complete serialized field boundaries or visibility of every value in those
+11 objects. `serialized-light-decal-tails.json` has SHA-256
+`c393b5f9da0a2eea6a2870a43a1428888fbb3fc543bb8b569087f04ebb8a3b7e`.
 
 The source-only component type and field reports are in the same work folder.
 Their file names end in `-serialized-component-types.json` and

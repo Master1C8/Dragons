@@ -39,7 +39,7 @@ offscreen capture of the same settings labels and renderer, with the same
 layout and an isolated profile. The Polish probe used an actual 1920×1440
 Unity render target successfully without a visible or focused window. It is
 a proven route to adapt with the Spanish and Italian samples. See
-[Polish renderer feasibility](../pl/CHECKPOINT.md#renderer-feasibility) for its local evidence.
+[Polish renderer feasibility](../pl/CHECKPOINT.md#polish-renderer-feasibility-same-session-continuation) for its local evidence.
 
 ## Receipts
 
