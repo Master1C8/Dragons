@@ -546,3 +546,24 @@ to the preceding control. Both packaged fonts cover all 111
 display code points. Runtime fit and independent editorial review
 remain pending. Verified receipts are under
 `localization/work/uk-ordinary-14-20261110.70neUL/`.
+
+## Fifteenth ordinary batch
+
+Conrad's first two visits and related wash prompts now cover 93
+source IDs across ten nodes. The draft adds 92 values and reuses
+one earlier value. All 1,450 prior values are exact. The
+1,542-value draft SHA-256 is
+`1903b9746f168b0410ecc679520ea1cd04b1175166f22784dfdb25c06c49e5f6`.
+
+The wording keeps Conrad's demand for a device separate from his
+request for a first-aid kit. After the fight, the player can ask
+what happened or acknowledge that he is hurt. Conrad's self-blame,
+apology and request for privacy retain their distinct responses.
+The two wash retries distinguish remaining dirt from soap.
+
+Each diagnostic package changed exactly 90 Yarn values. The two
+authored pauses, other table text, metadata and compiled programs
+are exact. Both packaged fonts cover all 111 display code points.
+Verified receipts are under
+`localization/work/uk-ordinary-15-20261110.4eaLvD/`.
+Live scene checks and independent editorial review remain pending.
