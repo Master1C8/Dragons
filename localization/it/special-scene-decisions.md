@@ -34,6 +34,45 @@ Source case `ryan-branch-hesitation-sizing`, same typography registry, row `9fd5
 
 Author self-review: successive hesitant beats retain the increasingly small voice without assigning the player's gender. Keep the original choice identity, destination, and 90%, 80%, 70% order and nonempty stages. Positive: each beat remains in its original size stage; negative: an empty stage, reordered tags or changed choice destination fails. Editorial: author-reviewed. Adapter feasibility: existing TMP text path and structural guard; package implementation and validation, runtime and visual fit: pending.
 
+
+## Alexander's teacher correction
+
+Source case `alexander-teacher-professor-correction`, registry SHA-256 `72f5dfa5d8ba396d92c7bf67c6912d05022940f2197e073b0a651b5e7f5b0809`. Author self-review: the player calls Alexander a teacher, he corrects the title to professor, and the alternative opens the gate; both routes converge on his apology. Source IDs and target wording:
+
+| ID | Italian wording |
+|---|---|
+| `9aa97614` | Dovremo fare in fretta, gli studenti non si istruiranno da soli. |
+| `393c128a` | Non ho mai lavato un drago insegnante... wow. |
+| `155d1c64` | Va bene, apro il cancello! |
+| `af0c15fd` | Professore... ma sì. Di solito non vado nei lavaggi pubblici. |
+| `836d1b13` | Grazie. |
+| `1270a483` | Ah, e mi scuso per essere assolutamente lurido. |
+
+Map the IDs to their existing dialogue entries, leaving controls intact. Positive: `393c128a` follows destination 25 to the correction and `155d1c64` follows destination 30 to thanks; both reach the apology. Negative: calling him a professor in the first choice or swapping the continuations defeats the joke. Editorial: author-reviewed; paired text-path feasibility: passed; implementation/structural check and runtime/visual fit: pending.
+
+## Conrad's emphatic greetings
+
+Source case `conrad-emphatic-greetings`, typography registry SHA-256 `792cd452b62853213499c2d167254db77907f1de652cf7cba076f386653380c7`. Author self-review: each sudden greeting remains emphatic and is followed by ordinary-sized speech.
+
+| ID | Italian wording |
+|---|---|
+| `36073321` | <gradient="yellow - orange"><size=140%>EHI! </gradient><size=100%>È qui che si lava, no? |
+| `f474ffa9` | <size=140%>EHI, <size=100%>vorrei una lavata. |
+
+Retain both IDs and the exact ordered tags, with wording in both size regions. Positive: first greeting uses its gradient and 140% size, the later one uses 140%, and both requests return to 100%; negative: a missing greeting region or altered size/gradient order fails. Editorial: author-reviewed; existing TMP path and structural guard supply feasibility; package checks and runtime/visual fit remain pending.
+
+## Editor route prompt
+
+Source case `editor-route-prompt`, registry SHA-256 `6209639693f1c03ea71bd49a7da0e994ecd8262b04a0e26223f6320be1f8a14d`. This prompt is conditioned on `$isEditor`; its presence in released play is not assumed. The target nevertheless covers its three source IDs, without treating the meta choices as spoken player dialogue.
+
+| ID | Italian wording |
+|---|---|
+| `dbab7a39` | <b><i><size=130%>Hai suggerito Ryan a Conrad? |
+| `4ab6c5a9` | sì |
+| `dc86c2de` | no |
+
+Author self-review: the question asks about the same suggested pairing and the choices remain opposites. Keep condition, `$suggested_ryan_to_conrad`, original option IDs and state writes untouched; use only the paired display mapping. Positive: in a controlled editor-state check each selection writes its stock corresponding boolean; negative: swapped choices or modified variable/condition fails. Editorial: author-reviewed; paired source and text path establish feasible display replacement; package structural checks and controlled runtime/visual check remain pending.
+
 ## Gate status
 
-Three of 27 cases have author-reviewed wording recorded above; the remaining 24 require complete contextual decisions. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
+Six of 27 cases have author-reviewed wording recorded above; the remaining 21 require complete contextual decisions. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.

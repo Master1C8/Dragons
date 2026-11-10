@@ -14,7 +14,7 @@ Both stock programs identify `0274cacd` and `9444cdba` as player choices to dest
 
 ## Resume 11 — special-scene authoring in progress
 
-[Special-scene decisions](special-scene-decisions.md) contain author-reviewed target wording and source-bound positive/negative contracts for three of 27 groups. They are preparatory and have not been inserted into a package. The remaining 24 groups, including overlapping contextual dependencies, must be reviewed before ordinary text. Translation remains 0/1,947 applied; package, runtime, visual and independent audit remain pending.
+[Special-scene decisions](special-scene-decisions.md) contain author-reviewed target wording and source-bound positive/negative contracts for six of 27 groups. They are preparatory and have not been inserted into a package. The remaining 21 groups, including overlapping contextual dependencies, must be reviewed before ordinary text. Translation remains 0/1,947 applied; package, runtime, visual and independent audit remain pending.
 
 ## Resume 11 — current glossary decision
 
@@ -39,7 +39,7 @@ The resume-10 named-entity note contained unsupported descriptions of Igwyx and 
 - `probe`: **passed for the bounded Italian renderer cases**. Isolated macOS and Windows CrossOver runs exercised dialogue, choices, progression and settings. The [independent frame review](../evidence/es-it-renderer-frame-review-20261110.md) resolved all remaining dialogue and choice frames and verified all three settings labels in the new 1280×960 macOS render. Original profiles were preserved. Native Windows and the final translated corpus retain separate checks.
 - `source`: **passed** for the pinned package scope and exact-preservation entry gate; see [current source decision](source-readiness-resume.md). The worklist has 1,947 IDs and 27 known special-scene groups.
 - `glossary`: **passed for authoring** on two complete author self-review layers at the bound hashes; see the current resume-11 decision. Independent final game-text audit remains separate.
-- `translate-edit`: **special-scene preparation in progress**; 3/27 decisions recorded, 0/1,947 IDs applied. Complete all special-scene decisions before ordinary batches. No `translation.json` exists yet.
+- `translate-edit`: **special-scene preparation in progress**; 6/27 decisions recorded, 0/1,947 IDs applied. Complete all special-scene decisions before ordinary batches. No `translation.json` exists yet.
 - `editorial`: not started; complete semantic pass and distinct independent diff/delta review pending.
 - `resources`: not started; final corpus glyph and layout coverage pending. Textures with text are excluded and preserved.
 - `package`: not run; neither local deliverable built.
