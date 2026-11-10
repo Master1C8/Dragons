@@ -13,3 +13,7 @@ The 54 IDs in `Alexander_2_Outro` and `Alexander_3_intro` have author self-revie
 ## Alexander fourth visit
 
 Author self-reviewed all 47 IDs in `Alexander_4_required` and `Alexander_4_Outro`, including hesitant requests, the existing `soporte` term and the conversation about relinquishing control. The size markup and unchanged pause remain in place. Both stock readers and object encode/parse passed: macOS SHA-256 `2c2b45e2fb7693d3e63c0c5f93386bd0db2a0a91d9f9072797f8afb197ec01f0`; Windows `a7a62276577835ffcc3f5467ebd93ab4019285bb87e8f46093e55808f85e66ea`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary3/`.
+
+## Conrad equipment and injury conversations
+
+Author self-reviewed all 53 IDs in `Conrad_Intro_3` and `Conrad_required_2`, retaining the equipment term, emphatic size regions, the different responses to his injury and his change from defensiveness to apology. Both stock readers and object encode/parse passed: macOS SHA-256 `27c939b1d6b75daa3f03d8ee5212658dacb7cb34e1eb3c29b2d8764d376617f2`; Windows `2e353404404e94e4c2f7ddd3dd25038ebf051307317472588d00f10f7f4de594`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary4/`.
