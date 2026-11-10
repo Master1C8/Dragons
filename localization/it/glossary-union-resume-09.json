@@ -3,7 +3,7 @@
   "status": "provisional-derived-index-not-semantic-approval",
   "worklistSha256": "692c32667546db79d51cab95d4894bb97f7f78b4fda0756465f90c0a5e6319d2",
   "entryHashIndexSha256": "81ba8ebd79affeab85cf2559a753fbd06498d74daf8358bb0223770a236bf3cf",
-  "rowReceiptSha256": "8abcd4ef2df7ac624cfde0dcb1de60b9ac0bc9e1f777e30375bbc8ae83cfb04b",
+  "rowReceiptSha256": "5143ba90d900bf9641e3c72a3f5df5bc96ef32e4ece340f0a8ffd57a1a90487e",
   "scopeNote": "Derived only from recorded row tags; omissions and implicit uses remain subject to human reconciliation in both author layers.",
   "entries": [
     {
@@ -13291,6 +13291,17 @@
             {
               "id": "yarn:line:33a79dbe",
               "pairedRowSha256": "536969a91de385f3f658aa5ac4b653c29aa781bcab6fc3fa09e1d633e2341f11",
+              "kind": "conceptUses"
+            }
+          ]
+        },
+        {
+          "group": "Alexander_5_romance_route",
+          "orderedRowsSha256": "3239d0caa2f70123da57c8f8402c3d67dcf071d0e7f8f998e3ebc78d1c1f61a9",
+          "uses": [
+            {
+              "id": "yarn:line:8c8591ec",
+              "pairedRowSha256": "99c41f01093a77af1b567bdd2cf0d88fd51e5cf459f9088f69e4d12819bcbaf4",
               "kind": "conceptUses"
             }
           ]

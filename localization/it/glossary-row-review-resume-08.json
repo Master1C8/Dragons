@@ -18449,6 +18449,11 @@
           "id": "dnw-wash",
           "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
           "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        },
+        {
+          "id": "dnw-burnswick-college",
+          "sourceEntrySha256": "3a49dd393f7985a13465547414ed83c845d4e21f6ef20f7f33235fbfd8da18d4",
+          "localeFieldsSha256": "5f15b012ecad866bb8c70b01f8af58cf1cac6232da91de87ccf78da2ad7caccd"
         }
       ],
       "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
@@ -18612,7 +18617,8 @@
             "dnw-player"
           ],
           "conceptUses": [
-            "dnw-college-library"
+            "dnw-college-library",
+            "dnw-burnswick-college"
           ],
           "decision": "Alexander invites the player to the college library."
         },
