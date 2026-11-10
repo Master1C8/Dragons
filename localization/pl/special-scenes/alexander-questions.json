@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-alexander-20261107.json",
+  "sourceRegistrySha256": "5efe4c18581eddd9929227750dfb34842142c172e3cb3bd18d36e58953aa5a51",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "alexander-number-seven-taste",
+      "wording": {
+        "yarn:line:c2bdc402": "Jak smakuje liczba 7?",
+        "yarn:line:78eccd9b": "Żółtą limonką.",
+        "yarn:line:eedccaec": "Niemożliwe.",
+        "yarn:line:db79a905": "Jak... cytryna?",
+        "yarn:line:4d49ae72": "„Możliwe”. Niczego nie jestem bardziej pewien.",
+        "yarn:line:6128a09c": "Nie. Limonka, która jest żółta.",
+        "yarn:line:f718a7eb": "Ty tu jesteś profesorem. Musisz mieć rację.",
+        "yarn:line:f0351f0c": "Niemożliwe.",
+        "yarn:line:6605187b": "To błąd odwołania do autorytetu. Ale tak. Mam rację.",
+        "yarn:line:15bcd86c": "„Możliwe”. Niczego nie jestem bardziej pewien."
+      },
+      "decision": "Seven tastes of yellow lime, distinct from lemon. Alexander knowingly reverses the player’s disbelief and exposes the appeal to authority while affirming his answer.",
+      "mapping": "Retain all option and reply IDs and once-state/branch destinations; translate each duplicate response independently with identical target wording.",
+      "positive": "Both initial replies and both nested replies remain distinct, and 7, yellow lime and lemon remain explicit.",
+      "negative": "Reject changed number, merged citrus fruits, or a changed branch.",
+      "editorial": "author self-reviewed against full indexed English group and neighboring lines",
+      "adapter": "source-bound stable Yarn IDs and existing TMP tag guard; sampled Polish dialogue and choice renderer passed",
+      "runtimeVisual": "authored branch execution and visual fit not run; smallest source size may be illegible"
+    },
+    {
+      "id": "alexander-family-crest",
+      "wording": {
+        "yarn:line:a5a8a9d5": "Fajny masz grzebień. Co to takiego?",
+        "yarn:line:1ff9a04c": "Och, ten grzebień wokół mojej głowy?",
+        "yarn:line:89c9a73b": "Wielu uważa, że jest częścią mojego ciała.",
+        "yarn:line:18d418ab": "Ale to ozdoba! Mój rodowy grzebień. Widzisz...",
+        "yarn:line:8ee41fdc": "Historia smoków jest złożona. Ozdobne grzebienie <size=85%> są często <size=70%> noszone przez smoki, by <size=55%> pokazać, do jakiej rodziny należą! <size=40%> To ciekawy znak ich kulturowego <size=35%> i rodzinnego dziedzictwa. Często zastanawiałem się, czy nadal powinienem nosić swój. <size=20%> Ale więzy kulturowe i rodzinne uważa się za ważne w smoczej tradycji! Muszę więc ich przestrzegać. <size=10%> Woda. Ziemia. Ogień. Powietrze. Dawno temu cztery narody żyły ze sobą w zgodzie. Wszystko się zmieniło, gdy Naród Ognia zaatakował.",
+        "yarn:line:e90fee8e": "Aha.",
+        "yarn:line:535ee717": "Możesz powtórzyć?",
+        "yarn:line:7f3fe9f9": "Ach, przepraszam, pasjonują mnie takie sprawy.",
+        "yarn:line:c56ee060": "Cieszę się, że podoba ci się mój grzebień.",
+        "yarn:line:f0cb8389": "...Nie"
+      },
+      "decision": "The crest is an ornamental family marker worn around the head, not anatomy; the progressively smaller lecture ends in a recognizable four-nations reference.",
+      "mapping": "Keep all branch IDs and the original ordered TMP size tags and filled regions. Preserve the rodowy grzebień glossary concept and both follow-up replies.",
+      "positive": "Both replies lead to their own source destinations; every size step remains in order with text.",
+      "negative": "Reject an anatomical crest, changed tag order or an empty shrinking stage.",
+      "editorial": "author self-reviewed against full indexed English group and neighboring lines",
+      "adapter": "source-bound stable Yarn IDs and existing TMP tag guard; sampled Polish dialogue and choice renderer passed",
+      "runtimeVisual": "authored branch execution and visual fit not run; smallest source size may be illegible"
+    }
+  ]
+}
