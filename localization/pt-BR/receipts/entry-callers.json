@@ -1,0 +1,2718 @@
+{
+  "schema": 1,
+  "inputs": {
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-11/affected-node-map.json": "fa05fdf1a278a9bd88e3c37d13fe974dff910e6a07bfdf252b365ed20873de42",
+    "localization/work/source-inventory-20261107/yarn-instructions-macos.json": "3e0acd1a2f25811e380de5743e0913535470d931301cc9bc40f5a3c897d73e18",
+    "localization/work/source-inventory-20261107/yarn-instructions-windows.json": "13d34e111e48fcd80105f419f1072717ddc11659300474410f52e7839b88522b",
+    "localization/evidence/level-dialogues-macos-20261107.json": "4a16420f2b028201e605466c66c103b367c0cc60e8fd04c684df82a0beaaf3bd",
+    "localization/evidence/level-dialogues-windows-20261107.json": "cb590fe02f13aa39e04b892d66f873850b6a798870d2dea0fff74c34ce70335b",
+    "localization/pt-BR/translation.json": "b1e341f5338fc0c81e4af1e968a5b86acf3447330d726489cbc3ee89032b7311",
+    "localization/pt-BR/receipts/author-audit-state-recipe.json": "09f438f75acd9511b78d4136d5400c60f52d0b23c6d13f759190fdcb4a4107e6"
+  },
+  "limitation": "Direct static named Yarn callers and previously extracted serialized level references only. No indirect or code-driven caller, live dispatch, state, gameplay or repaired program execution is proved.",
+  "platforms": {
+    "macos": {
+      "Alexander_2_intro": {
+        "changedIds": [
+          "yarn:line:938be2fb"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Alexander_2_6",
+            "objectId": 10651,
+            "rawSha256": "45263573e19de6f64ebfbb946bbb807ace8ea94f8b99c56873e4d9a169511ec2",
+            "field": "dialogIntro",
+            "index": null,
+            "target": "Alexander_2_intro",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Alexander_2_required": {
+        "changedIds": [
+          "yarn:line:33440e8c"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Alexander_2_6",
+            "objectId": 10651,
+            "rawSha256": "45263573e19de6f64ebfbb946bbb807ace8ea94f8b99c56873e4d9a169511ec2",
+            "field": "progressDialogs",
+            "index": 0,
+            "target": "Alexander_2_required",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Alexander_3_JerkOff_Start": {
+        "changedIds": [
+          "yarn:line:7d13eca0"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Alexander_3_9",
+            "objectId": 10652,
+            "rawSha256": "e1c7bdd33a7655e0c65e7186bd9d62de87090e6eab7a1c8f2a2c3b1d28be3f3f",
+            "field": "dragonStartJerkingOffDialog",
+            "index": null,
+            "target": "Alexander_3_JerkOff_Start",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Alexander_3_intro": {
+        "changedIds": [
+          "yarn:line:61c8781b"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Alexander_3_9",
+            "objectId": 10652,
+            "rawSha256": "e1c7bdd33a7655e0c65e7186bd9d62de87090e6eab7a1c8f2a2c3b1d28be3f3f",
+            "field": "dialogIntro",
+            "index": null,
+            "target": "Alexander_3_intro",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Alexander_5_required": {
+        "changedIds": [
+          "yarn:line:37c9d915",
+          "yarn:line:3d723db0",
+          "yarn:line:44701902",
+          "yarn:line:cb847372",
+          "yarn:line:e7e57d9c"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Alexander_5",
+            "objectId": 10654,
+            "rawSha256": "b11a29d39e70179b7a6b06cc5184718189eb28845ee6b6e5dabe5ed0c9ca6a6d",
+            "field": "progressDialogs",
+            "index": 0,
+            "target": "Alexander_5_required",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Alexander_SexScene": {
+        "changedIds": [
+          "yarn:line:d132db41"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": []
+      },
+      "Alexander_SexScene_Cum": {
+        "changedIds": [
+          "yarn:line:41d5085a"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Alexander_SexScene_Loop",
+            "nodeSha256": "b921720ca0d0e6db3851ff7365c097ecc7b3e281aff5cdb623e267e87ddcd32d",
+            "index": 28,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:dfe74420",
+                "source": "My-",
+                "target": "Ora-"
+              },
+              {
+                "id": "yarn:line:4efafbb0",
+                "source": "You are very skilled with your hands",
+                "target": "Suas mãos são muito habilidosas"
+              },
+              {
+                "id": "yarn:line:d8cafcc7",
+                "source": "mmm..",
+                "target": "mmm.."
+              },
+              {
+                "id": "yarn:line:b36eb839",
+                "source": "..",
+                "target": ".."
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_4_Mount_Finish": {
+        "changedIds": [
+          "yarn:line:88d7e1e2"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Conrad_4_11",
+            "objectId": 10658,
+            "rawSha256": "4672e3293684888e4097a56ed1e5cfd645d0c8ff752467ecba40549f4a8f8eed",
+            "field": "dragonFinishMountDialogue",
+            "index": null,
+            "target": "Conrad_4_Mount_Finish",
+            "targetPresent": true
+          },
+          {
+            "configuration": "conrad_5",
+            "objectId": 10659,
+            "rawSha256": "a0970a028973325d2d5796a0f8807d86b813c736b97c603e91884ef7e098d3cf",
+            "field": "dragonFinishMountDialogue",
+            "index": null,
+            "target": "Conrad_4_Mount_Finish",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Conrad_5_intro_conrad_romanced": {
+        "changedIds": [
+          "yarn:line:1538bc7e",
+          "yarn:line:d66b9155"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_Intro_5",
+            "nodeSha256": "526931b1e1406157b839ccb15f19a39c7fa1c0f3a32a6a56f7ebbf94d62bd8f9",
+            "index": 82,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:4dac3d2b",
+                "source": "Something went wrong with flags!",
+                "target": "Algo deu errado com os marcadores!"
+              },
+              {
+                "id": "yarn:line:db9c3a5c",
+                "source": "Help the developers out please..",
+                "target": "Por favor, ajude os desenvolvedores.."
+              },
+              {
+                "id": "yarn:line:61cd33c5",
+                "source": "conrad hooked up with ryan",
+                "target": "conrad ficou com ryan"
+              },
+              {
+                "id": "yarn:line:f7fd34b2",
+                "source": "player hooked up with conrad",
+                "target": "jogador ficou com conrad"
+              },
+              {
+                "id": "yarn:line:66e08b22",
+                "source": "player hooked up with ryan",
+                "target": "jogador ficou com ryan"
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_5_intro_ryan_romanced": {
+        "changedIds": [
+          "yarn:line:34cf0601"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_Intro_5",
+            "nodeSha256": "526931b1e1406157b839ccb15f19a39c7fa1c0f3a32a6a56f7ebbf94d62bd8f9",
+            "index": 74,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:4dac3d2b",
+                "source": "Something went wrong with flags!",
+                "target": "Algo deu errado com os marcadores!"
+              },
+              {
+                "id": "yarn:line:db9c3a5c",
+                "source": "Help the developers out please..",
+                "target": "Por favor, ajude os desenvolvedores.."
+              },
+              {
+                "id": "yarn:line:61cd33c5",
+                "source": "conrad hooked up with ryan",
+                "target": "conrad ficou com ryan"
+              },
+              {
+                "id": "yarn:line:f7fd34b2",
+                "source": "player hooked up with conrad",
+                "target": "jogador ficou com conrad"
+              },
+              {
+                "id": "yarn:line:66e08b22",
+                "source": "player hooked up with ryan",
+                "target": "jogador ficou com ryan"
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_5_required_conrad_romanced": {
+        "changedIds": [
+          "yarn:line:a0479425"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_required_5",
+            "nodeSha256": "cc03ceeace239973a8aa9ec6d874f4fb225cc5da709fae99e665699a81ffcb8d",
+            "index": 17,
+            "opcode": 16,
+            "lines": []
+          }
+        ]
+      },
+      "Conrad_Intro_4": {
+        "changedIds": [
+          "yarn:line:18e5a573",
+          "yarn:line:918d7820",
+          "yarn:line:cf8c5f37",
+          "yarn:line:fa293cde"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Conrad_4_11",
+            "objectId": 10658,
+            "rawSha256": "4672e3293684888e4097a56ed1e5cfd645d0c8ff752467ecba40549f4a8f8eed",
+            "field": "dialogIntro",
+            "index": null,
+            "target": "Conrad_Intro_4",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Conrad_Outro_3": {
+        "changedIds": [
+          "yarn:line:a0cf6cae",
+          "yarn:line:c4cc497f"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Conrad_3_8",
+            "objectId": 10657,
+            "rawSha256": "2140991e13b0ce573ec317aa26cb47894275ba3dde4c35807f8c057ec1ee37d9",
+            "field": "dialogOutro",
+            "index": null,
+            "target": "Conrad_Outro_3",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_finished_jerkoff_3",
+            "nodeSha256": "0b4e6056d35c6455a65aa7ec0ba2332a84b41b9ccd53ec05796a3e853c3be193",
+            "index": 56,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:496134bc",
+                "source": "...!",
+                "target": "...!"
+              },
+              {
+                "id": "yarn:line:eaf45022",
+                "source": "Damn, you know how to use your hands.",
+                "target": "Caramba, você sabe usar as mãos."
+              },
+              {
+                "id": "yarn:line:7cc45755",
+                "source": "...!",
+                "target": "...!"
+              },
+              {
+                "id": "yarn:line:c6955ecc",
+                "source": "Damn, you know how to use your hands.",
+                "target": "Caramba, você sabe usar as mãos."
+              },
+              {
+                "id": "yarn:line:50a559bb",
+                "source": "Hah... <size=70%> yeah.",
+                "target": "Ah... <size=70%> é."
+              },
+              {
+                "id": "yarn:line:5788e15c",
+                "source": "Of course I do. I'm a <i>professional</i>.",
+                "target": "Claro que sei. Sou <i>profissional</i>."
+              },
+              {
+                "id": "yarn:line:c1b8e62b",
+                "source": "It's always good when a kobold knows what they like.",
+                "target": "É sempre bom quando um kobold sabe do que gosta."
+              },
+              {
+                "id": "yarn:line:3063100e",
+                "source": "So am I.",
+                "target": "Eu também sou."
+              },
+              {
+                "id": "yarn:line:a6531779",
+                "source": "...",
+                "target": "..."
+              },
+              {
+                "id": "yarn:line:1c021ee0",
+                "source": "At getting hand jobs.",
+                "target": "Em receber punhetas."
+              },
+              {
+                "id": "yarn:line:8a321997",
+                "source": "Now I'm eyeballing the mount...",
+                "target": "Agora estou de olho no suporte..."
+              },
+              {
+                "id": "yarn:line:29a77d09",
+                "source": "Let me give it a try!",
+                "target": "Deixa eu experimentar!"
+              },
+              {
+                "id": "yarn:line:bf977a7e",
+                "source": "Oh okay. I'll go grab it.",
+                "target": "Ah, tá. Vou buscar."
+              },
+              {
+                "id": "yarn:line:05c673e7",
+                "source": "Sure!",
+                "target": "Claro!"
+              },
+              {
+                "id": "yarn:line:93f67490",
+                "source": "Hell yeah",
+                "target": "Com certeza!"
+              }
+            ]
+          },
+          {
+            "node": "Conrad_finished_mount_3",
+            "nodeSha256": "a17eea4e1c49090009817f0d38980bf117402ca1229b88baa19bd360b5eab32e",
+            "index": 89,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:0d3b23da",
+                "source": "Sheesh.",
+                "target": "Caramba."
+              },
+              {
+                "id": "yarn:line:9b0b24ad",
+                "source": "That.",
+                "target": "Isso."
+              },
+              {
+                "id": "yarn:line:215a2d34",
+                "source": "That felt <i>good</i>.",
+                "target": "Isso foi <i>bom</i>."
+              },
+              {
+                "id": "yarn:line:b76a2a43",
+                "source": "You were really going at it.",
+                "target": "Você estava se entregando mesmo."
+              },
+              {
+                "id": "yarn:line:82cf49aa",
+                "source": "You seemed to enjoy yourself.",
+                "target": "Você parece ter gostado."
+              },
+              {
+                "id": "yarn:line:14ff4edd",
+                "source": "I always do~",
+                "target": "Eu sempre gosto~"
+              },
+              {
+                "id": "yarn:line:389e4033",
+                "source": "Hell yeah I did!",
+                "target": "Com certeza gostei pra caralho!"
+              },
+              {
+                "id": "yarn:line:aeae4744",
+                "source": "That's good... Now what?",
+                "target": {
+                  "platforms": {
+                    "macos": "Que bom... E agora?",
+                    "windows": "Que bom... E agora?"
+                  }
+                }
+              },
+              {
+                "id": "yarn:line:3fb3f8d4",
+                "source": "Now, round two!",
+                "target": "Agora, segundo round!"
+              },
+              {
+                "id": "yarn:line:a983ffa3",
+                "source": "Again...?",
+                "target": "De novo...?"
+              },
+              {
+                "id": "yarn:line:73ea230a",
+                "source": "No no, you're a certified cleaner yeah?",
+                "target": "Não, não. Você tem certificado de limpeza, né?"
+              },
+              {
+                "id": "yarn:line:e5da247d",
+                "source": "Means you know how to get hands on!",
+                "target": "Isso quer dizer que sabe pôr a mão na massa!"
+              },
+              {
+                "id": "yarn:line:5f8b2de4",
+                "source": "oah. <size=70%>okay.",
+                "target": "Ah. <size=70%>tá bom."
+              },
+              {
+                "id": "yarn:line:6a2e4e0d",
+                "source": "Right. I'll get to it.",
+                "target": "Certo. Vou começar."
+              },
+              {
+                "id": "yarn:line:c9bb2a93",
+                "source": "Hah. Yeah. <size=70%><i>It's cool that you learn to jerk off dragons in cleaning school...",
+                "target": "Ah. É. <size=70%><i>Que legal que vocês aprendem a bater punheta em dragões na escola de limpeza..."
+              },
+              {
+                "id": "yarn:line:fc1e497a",
+                "source": "Well, good luck getting your hands around all of me.",
+                "target": "Bem, boa sorte tentando me envolver todo com as mãos."
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_Outro_4_Ryan_Conrad_Romanced": {
+        "changedIds": [
+          "yarn:line:94fbdbf0"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_Outro_4",
+            "nodeSha256": "e3943cd7eb2ac49ca70b7f168c8a8abb11985d2552604a897ddab3f272d17513",
+            "index": 39,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:6c2a1901",
+                "source": "You should be all clean!",
+                "target": "Acho que você já tá todo limpo!"
+              },
+              {
+                "id": "yarn:line:fa1a1e76",
+                "source": "Think that's it.",
+                "target": {
+                  "platforms": {
+                    "macos": "Acho que é só isso.",
+                    "windows": "Acho que é só isso."
+                  }
+                }
+              },
+              {
+                "id": "yarn:line:404b17ef",
+                "source": "You look good this clean!",
+                "target": "Você fica bonito assim, limpinho!"
+              },
+              {
+                "id": "yarn:line:d67b1098",
+                "source": "<i>I like spraying you with water.",
+                "target": "<i>Gosto de jogar água em você."
+              },
+              {
+                "id": "yarn:line:4766af08",
+                "source": "Alrighty! That should be it.",
+                "target": "Pronto! Acho que terminamos."
+              },
+              {
+                "id": "yarn:line:d156a87f",
+                "source": "Think that's every spot.",
+                "target": "Acho que limpei tudo."
+              }
+            ]
+          },
+          {
+            "node": "Conrad_Outro_4",
+            "nodeSha256": "e3943cd7eb2ac49ca70b7f168c8a8abb11985d2552604a897ddab3f272d17513",
+            "index": 42,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:6c2a1901",
+                "source": "You should be all clean!",
+                "target": "Acho que você já tá todo limpo!"
+              },
+              {
+                "id": "yarn:line:fa1a1e76",
+                "source": "Think that's it.",
+                "target": {
+                  "platforms": {
+                    "macos": "Acho que é só isso.",
+                    "windows": "Acho que é só isso."
+                  }
+                }
+              },
+              {
+                "id": "yarn:line:404b17ef",
+                "source": "You look good this clean!",
+                "target": "Você fica bonito assim, limpinho!"
+              },
+              {
+                "id": "yarn:line:d67b1098",
+                "source": "<i>I like spraying you with water.",
+                "target": "<i>Gosto de jogar água em você."
+              },
+              {
+                "id": "yarn:line:4766af08",
+                "source": "Alrighty! That should be it.",
+                "target": "Pronto! Acho que terminamos."
+              },
+              {
+                "id": "yarn:line:d156a87f",
+                "source": "Think that's every spot.",
+                "target": "Acho que limpei tudo."
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_Outro_4_Ryan_Romanced": {
+        "changedIds": [
+          "yarn:line:4789095b",
+          "yarn:line:5e4d645c"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_Outro_4",
+            "nodeSha256": "e3943cd7eb2ac49ca70b7f168c8a8abb11985d2552604a897ddab3f272d17513",
+            "index": 51,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:6c2a1901",
+                "source": "You should be all clean!",
+                "target": "Acho que você já tá todo limpo!"
+              },
+              {
+                "id": "yarn:line:fa1a1e76",
+                "source": "Think that's it.",
+                "target": {
+                  "platforms": {
+                    "macos": "Acho que é só isso.",
+                    "windows": "Acho que é só isso."
+                  }
+                }
+              },
+              {
+                "id": "yarn:line:404b17ef",
+                "source": "You look good this clean!",
+                "target": "Você fica bonito assim, limpinho!"
+              },
+              {
+                "id": "yarn:line:d67b1098",
+                "source": "<i>I like spraying you with water.",
+                "target": "<i>Gosto de jogar água em você."
+              },
+              {
+                "id": "yarn:line:4766af08",
+                "source": "Alrighty! That should be it.",
+                "target": "Pronto! Acho que terminamos."
+              },
+              {
+                "id": "yarn:line:d156a87f",
+                "source": "Think that's every spot.",
+                "target": "Acho que limpei tudo."
+              }
+            ]
+          },
+          {
+            "node": "Conrad_Outro_4",
+            "nodeSha256": "e3943cd7eb2ac49ca70b7f168c8a8abb11985d2552604a897ddab3f272d17513",
+            "index": 54,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:6c2a1901",
+                "source": "You should be all clean!",
+                "target": "Acho que você já tá todo limpo!"
+              },
+              {
+                "id": "yarn:line:fa1a1e76",
+                "source": "Think that's it.",
+                "target": {
+                  "platforms": {
+                    "macos": "Acho que é só isso.",
+                    "windows": "Acho que é só isso."
+                  }
+                }
+              },
+              {
+                "id": "yarn:line:404b17ef",
+                "source": "You look good this clean!",
+                "target": "Você fica bonito assim, limpinho!"
+              },
+              {
+                "id": "yarn:line:d67b1098",
+                "source": "<i>I like spraying you with water.",
+                "target": "<i>Gosto de jogar água em você."
+              },
+              {
+                "id": "yarn:line:4766af08",
+                "source": "Alrighty! That should be it.",
+                "target": "Pronto! Acho que terminamos."
+              },
+              {
+                "id": "yarn:line:d156a87f",
+                "source": "Think that's every spot.",
+                "target": "Acho que limpei tudo."
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_SexScene_Cum": {
+        "changedIds": [
+          "yarn:line:0bc044da",
+          "yarn:line:7f543c2a",
+          "yarn:line:9addfb4a",
+          "yarn:line:f0a0565a"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_SexScene_Loop",
+            "nodeSha256": "4452d3047e242b87205930daf4c1d9ef60923fc4ba4b8c59aad98484cfe6fcdd",
+            "index": 27,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:2f9b499a",
+                "source": "I honestly don't know how you are doing that.",
+                "target": "Sinceramente, não sei como você está fazendo isso."
+              },
+              {
+                "id": "yarn:line:b9ab4eed",
+                "source": "Im not complaining though.",
+                "target": "Mas não estou reclamando."
+              },
+              {
+                "id": "yarn:line:1a3e2a73",
+                "source": "Hell yea",
+                "target": "Com certeza"
+              },
+              {
+                "id": "yarn:line:8c0e2d04",
+                "source": "..",
+                "target": ".."
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_finished_mount_3": {
+        "changedIds": [
+          "yarn:line:73ea230a"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Conrad_3_8",
+            "objectId": 10657,
+            "rawSha256": "2140991e13b0ce573ec317aa26cb47894275ba3dde4c35807f8c057ec1ee37d9",
+            "field": "dragonFinishMountDialogue",
+            "index": null,
+            "target": "Conrad_finished_mount_3",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Conrad_required_2": {
+        "changedIds": [
+          "yarn:line:0de4fe62"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Conrad_2_5",
+            "objectId": 10656,
+            "rawSha256": "6eaa8803f60d848f2ca6652d7596ab5ba31310288c16a10ddb8560b518d1a747",
+            "field": "progressDialogs",
+            "index": 0,
+            "target": "Conrad_required_2",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Ryan_5_Outro_ryan_romanced": {
+        "changedIds": [
+          "yarn:line:a00f681d"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Ryan_5_Outro",
+            "nodeSha256": "0ba0722fc6fe1e62e1078fd408c64c6721ba63eedee09091c08a3b5b35aaf1c7",
+            "index": 9,
+            "opcode": 16,
+            "lines": []
+          }
+        ]
+      },
+      "Ryan_5_Required_ryan_conrad_romanced": {
+        "changedIds": [
+          "yarn:line:c6202cf2"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Ryan_5_Required",
+            "nodeSha256": "2ef0ae9bb94762e73b97f2759f520969cdbe93d4b0846262de5786bc4427e4cb",
+            "index": 25,
+            "opcode": 16,
+            "lines": []
+          }
+        ]
+      },
+      "Ryan_5_intro": {
+        "changedIds": [
+          "yarn:line:601e1b38",
+          "yarn:line:7f2e2736",
+          "yarn:line:e91e2041"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Ryan_5_13",
+            "objectId": 10665,
+            "rawSha256": "dbd93e689b13db1f54b31bcf236a17183d62534edf9478a31cf4f49dc232876e",
+            "field": "dialogIntro",
+            "index": null,
+            "target": "Ryan_5_intro",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Ryan_5_intro_ryan_romanced": {
+        "changedIds": [
+          "yarn:line:822c0718"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Ryan_5_intro",
+            "nodeSha256": "06eb8734cbeae8bd2af7cfe2f83eeecc066fa1561ad79dd78c6d9814dab2efb9",
+            "index": 117,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:61c7f2d6",
+                "source": "Something went wrong with flags!",
+                "target": "Algo deu errado com os marcadores!"
+              },
+              {
+                "id": "yarn:line:f7f7f5a1",
+                "source": "Help the developers out please..",
+                "target": "Por favor, ajude os desenvolvedores.."
+              },
+              {
+                "id": "yarn:line:5462913f",
+                "source": "conrad hooked up with ryan",
+                "target": "conrad ficou com ryan"
+              },
+              {
+                "id": "yarn:line:c2529648",
+                "source": "player hooked up with conrad",
+                "target": "jogador ficou com conrad"
+              },
+              {
+                "id": "yarn:line:78039fd1",
+                "source": "player hooked up with ryan",
+                "target": "jogador ficou com ryan"
+              },
+              {
+                "id": "yarn:line:ee3398a6",
+                "source": "Hey big guy.",
+                "target": "E aí, grandão."
+              },
+              {
+                "id": "yarn:line:9b7e09b8",
+                "source": "Ryan!",
+                "target": "Ryan!"
+              },
+              {
+                "id": "yarn:line:7f2e2736",
+                "source": "Hey... little guy!",
+                "target": "E aí... pessoinha!"
+              },
+              {
+                "id": "yarn:line:e91e2041",
+                "source": "I'm not <i>that</i> little-",
+                "target": "Minha altura nem é <i>tão</i> baixa assim-"
+              },
+              {
+                "id": "yarn:line:aedb6a51",
+                "source": "So, coming in for a wash?",
+                "target": "Então, veio se lavar?"
+              },
+              {
+                "id": "yarn:line:82ba64bf",
+                "source": "Oh, sorry-",
+                "target": "Ah, desculpa-"
+              },
+              {
+                "id": "yarn:line:148a63c8",
+                "source": "Was just trying to play along. Happy to see you!",
+                "target": "Só estava entrando na brincadeira. Que bom te ver!"
+              },
+              {
+                "id": "yarn:line:38eb6d26",
+                "source": "Yup!",
+                "target": "Isso!"
+              },
+              {
+                "id": "yarn:line:0d4e0ecf",
+                "source": "Hey kobold!",
+                "target": "E aí, kobold!"
+              },
+              {
+                "id": "yarn:line:b71f0756",
+                "source": "I decided to try baking.",
+                "target": "Resolvi tentar fazer uns quitutes."
+              },
+              {
+                "id": "yarn:line:212f0021",
+                "source": "I've had a lot of free time lately.",
+                "target": "Tenho tido bastante tempo livre ultimamente."
+              },
+              {
+                "id": "yarn:line:b032bfb1",
+                "source": "It turns out baking is messy!",
+                "target": "Acontece que fazer quitutes faz uma baita bagunça!"
+              },
+              {
+                "id": "yarn:line:2602b8c6",
+                "source": "I could use a wash.",
+                "target": "Estou precisando de uma lavagem."
+              },
+              {
+                "id": "yarn:line:c38b7fa6",
+                "source": "Hey there, Ryan!",
+                "target": "Oi, Ryan!"
+              },
+              {
+                "id": "yarn:line:55bb78d1",
+                "source": "Hey! I'm here for a wash.",
+                "target": "Oi! Vim me lavar."
+              },
+              {
+                "id": "yarn:line:efea7148",
+                "source": "I decided to try baking.",
+                "target": "Resolvi tentar fazer uns quitutes."
+              },
+              {
+                "id": "yarn:line:79da763f",
+                "source": "I've had a lot of free time lately.",
+                "target": "Tenho tido bastante tempo livre ultimamente."
+              },
+              {
+                "id": "yarn:line:da4f12a1",
+                "source": "It turns out baking is messy!",
+                "target": "Acontece que fazer quitutes faz uma baita bagunça!"
+              },
+              {
+                "id": "yarn:line:4c7f15d6",
+                "source": "Awesome, I'll go get the gate.",
+                "target": "Ótimo, vou abrir o portão."
+              },
+              {
+                "id": "yarn:line:601e1b38",
+                "source": "Sure! I'm excited to tell you about Conrad.",
+                "target": "Claro! Mal posso esperar para te contar sobre o Conrad."
+              },
+              {
+                "id": "yarn:line:f62e1c4f",
+                "source": "Thanks.",
+                "target": "Obrigado."
+              },
+              {
+                "id": "yarn:line:f103a4a8",
+                "source": "Oh yeah?",
+                "target": "Ah, é?"
+              },
+              {
+                "id": "yarn:line:6733a3df",
+                "source": "Yeah! I'm going on a date with him soon.",
+                "target": "Sim! Logo vou sair com ele."
+              },
+              {
+                "id": "yarn:line:d38efb75",
+                "source": "Mmmmhm, gotta prep for a date with him.",
+                "target": "Aham, tenho que me preparar para um encontro com ele."
+              },
+              {
+                "id": "yarn:line:45befc02",
+                "source": "That's exciting!",
+                "target": "Que legal!"
+              },
+              {
+                "id": "yarn:line:ffeff59b",
+                "source": "You'll have to tell me more inside.",
+                "target": "Você vai ter que me contar mais lá dentro."
+              },
+              {
+                "id": "yarn:line:69dff2ec",
+                "source": "I'll be waiting for the gate!",
+                "target": "Vou esperar no portão!"
+              },
+              {
+                "id": "yarn:line:ca4a9672",
+                "source": "Heeeey Ryan.",
+                "target": "Ooooi, Ryan."
+              },
+              {
+                "id": "yarn:line:5c7a9105",
+                "source": "Hey!",
+                "target": "Oi!"
+              },
+              {
+                "id": "yarn:line:e62b989c",
+                "source": "I decided to try baking.",
+                "target": "Resolvi tentar fazer uns quitutes."
+              },
+              {
+                "id": "yarn:line:701b9feb",
+                "source": "I've had a lot of free time lately.",
+                "target": "Tenho tido bastante tempo livre ultimamente."
+              },
+              {
+                "id": "yarn:line:e106207b",
+                "source": "It turns out baking is messy!",
+                "target": "Acontece que fazer quitutes faz uma baita bagunça!"
+              },
+              {
+                "id": "yarn:line:7736270c",
+                "source": "How was your date with Conrad?",
+                "target": "Como foi seu encontro com o Conrad?"
+              },
+              {
+                "id": "yarn:line:048fe71b",
+                "source": "TELL ME ABOUT YOU AND CONRAD!",
+                "target": "ME CONTA SOBRE VOCÊ E O CONRAD!"
+              },
+              {
+                "id": "yarn:line:92bfe06c",
+                "source": "It went great!",
+                "target": "Foi ótimo!"
+              },
+              {
+                "id": "yarn:line:bedeee82",
+                "source": "Oh- Eager!",
+                "target": "Ah- Quanta empolgação!"
+              },
+              {
+                "id": "yarn:line:28eee9f5",
+                "source": "It went great!",
+                "target": "Foi ótimo!"
+              },
+              {
+                "id": "yarn:line:8b7b8d6b",
+                "source": "We went out to eat. Had some good conversation.",
+                "target": "Saímos para comer. Tivemos uma boa conversa."
+              },
+              {
+                "id": "yarn:line:1d4b8a1c",
+                "source": "One thing led to another...",
+                "target": "Uma coisa levou à outra..."
+              },
+              {
+                "id": "yarn:line:a71a8385",
+                "source": "Went to the bar... Things got spicy. You can imagine what happened next... <size=70%>Hah...",
+                "target": "Fomos ao bar... As coisas esquentaram. Você imagina o que aconteceu depois... <size=70%>Ha..."
+              }
+            ]
+          }
+        ]
+      },
+      "Ryan_egg_dialog": {
+        "changedIds": [
+          "yarn:line:7f5113d5"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Ryan_egg",
+            "nodeSha256": "93be4f16e1cb14cc02d6f713c0ebdd79e9e9939af3a584a354b41b178b8290d9",
+            "index": 14,
+            "opcode": 16,
+            "lines": []
+          }
+        ]
+      },
+      "Start": {
+        "changedIds": [
+          "yarn:line:07e5fc05"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": []
+      },
+      "ryan_food_dialogue": {
+        "changedIds": [
+          "yarn:line:079b3782",
+          "yarn:line:09e5bf43",
+          "yarn:line:0d20d327",
+          "yarn:line:13c906c7",
+          "yarn:line:77ca2316",
+          "yarn:line:a40e531c",
+          "yarn:line:a6c1f2f4",
+          "yarn:line:b05c6259",
+          "yarn:line:b4990e3d",
+          "yarn:line:cd9b2a8f",
+          "yarn:line:e6290003",
+          "yarn:line:f83e4966"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Ryan_egg_dialog",
+            "nodeSha256": "251cfe34ea227515ffadb461be953bc1cf449d3137574795851f21bc76f6a7cb",
+            "index": 39,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:0ce8d3c2",
+                "source": "ohmygod I thought the egg was decorative.",
+                "target": "Meu Deus, achei que o ovo fosse decorativo."
+              },
+              {
+                "id": "yarn:line:53301d3b",
+                "source": "What kind of egg was that?",
+                "target": "Que tipo de ovo era aquele?"
+              },
+              {
+                "id": "yarn:line:e96114a2",
+                "source": "Huh? ofcourse not!",
+                "target": "Hã? Claro que não!"
+              },
+              {
+                "id": "yarn:line:7f5113d5",
+                "source": "OH. You're not used to eating them whole.",
+                "target": "AH. Você não tem costume de comer ovos inteiros."
+              },
+              {
+                "id": "yarn:line:c5001a4c",
+                "source": "That's the best way to eat'em!",
+                "target": "É o melhor jeito de comer!"
+              },
+              {
+                "id": "yarn:line:f0a579a5",
+                "source": "Uhm...",
+                "target": "Hã..."
+              },
+              {
+                "id": "yarn:line:66957ed2",
+                "source": "Blue...?",
+                "target": "Azul...?"
+              },
+              {
+                "id": "yarn:line:dcc4774b",
+                "source": "I'm not too sure. It was on sale at WingCo.",
+                "target": "Não tenho muita certeza. Estava em promoção no WingCo."
+              },
+              {
+                "id": "yarn:line:4af4703c",
+                "source": "Tasted real good though!",
+                "target": "Mas estava uma delícia!"
+              }
+            ]
+          },
+          {
+            "node": "Ryan_grapes_dialog",
+            "nodeSha256": "b7b4d1cfa19e533e0bd177e4f0cc7c269b9a07512063e237d7a3b7a7993143ca",
+            "index": 72,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:418498cf",
+                "source": "Those grapes looked good.",
+                "target": "Aquelas uvas pareciam boas."
+              },
+              {
+                "id": "yarn:line:13ca0a74",
+                "source": "Ryan, you're not supposed to eat the stems-",
+                "target": "Ryan, não é para comer os talos-"
+              },
+              {
+                "id": "yarn:line:d7b49fb8",
+                "source": "They were! The stem is my favorite part though.",
+                "target": "Estavam! Mas o talo é minha parte favorita."
+              },
+              {
+                "id": "yarn:line:b05f6eea",
+                "source": "Isn't that... Wood?",
+                "target": "Aquilo não é... Madeira?"
+              },
+              {
+                "id": "yarn:line:a99b03ed",
+                "source": "Never tried it.",
+                "target": "Nunca experimentei."
+              },
+              {
+                "id": "yarn:line:266f699d",
+                "source": "Yeah, taste good!",
+                "target": "É, é gostoso!"
+              },
+              {
+                "id": "yarn:line:9c3e6004",
+                "source": "Though you probably shouldn't eat them.",
+                "target": "Mas você provavelmente não devia comer."
+              },
+              {
+                "id": "yarn:line:0a0e6773",
+                "source": "Dragon stomachs are a bit more... robust than yours.",
+                "target": "Os estômagos dos dragões são um pouco mais... resistentes que o seu."
+              },
+              {
+                "id": "yarn:line:3fab049a",
+                "source": "You probably shouldn't.",
+                "target": "É melhor não."
+              },
+              {
+                "id": "yarn:line:85fa0d03",
+                "source": "You'd need a dragon stomach first!",
+                "target": "Você precisaria de um estômago de dragão primeiro!"
+              },
+              {
+                "id": "yarn:line:82d7b5e4",
+                "source": "Says who?",
+                "target": "Quem disse?"
+              },
+              {
+                "id": "yarn:line:14e7b293",
+                "source": "Me?",
+                "target": "Eu?"
+              },
+              {
+                "id": "yarn:line:4b3f7c6a",
+                "source": "Biology...? <size=70%> <i>I think?",
+                "target": "A biologia...? <size=70%> <i>Eu acho?"
+              },
+              {
+                "id": "yarn:line:f16e75f3",
+                "source": "Well...",
+                "target": "Bem..."
+              },
+              {
+                "id": "yarn:line:675e7284",
+                "source": "I'm a rule breaker!",
+                "target": "Eu quebro as regras!"
+              },
+              {
+                "id": "yarn:line:dd0f7b1d",
+                "source": "Don't worry, dragons are made to eat anything.",
+                "target": "Não se preocupe, dragões foram feitos para comer de tudo."
+              },
+              {
+                "id": "yarn:line:e8aa18f4",
+                "source": "I can digest pretty much anything.",
+                "target": "Consigo digerir praticamente qualquer coisa."
+              },
+              {
+                "id": "yarn:line:7e9a1f83",
+                "source": "The stem is just extra food.",
+                "target": "O talo é só mais comida."
+              },
+              {
+                "id": "yarn:line:c4cb161a",
+                "source": "Although grapes have always hit a specific craving.",
+                "target": "Embora uvas sempre matem uma vontade específica."
+              },
+              {
+                "id": "yarn:line:52fb116d",
+                "source": "Oh, and seems I got some on my face. woops.",
+                "target": "Ah, e parece que sujei o rosto com um pouco. Opa."
+              }
+            ]
+          },
+          {
+            "node": "Ryan_ham_dialog",
+            "nodeSha256": "12d53e526606c08d2d5b89c4e72f983ff36978dc722041510c375f3c2510d92e",
+            "index": 46,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:202fce0c",
+                "source": "RYAN THE BONE!",
+                "target": "RYAN, O OSSO!"
+              },
+              {
+                "id": "yarn:line:c0e34d36",
+                "source": "You really ate that entire thing... Woah.",
+                "target": "Você comeu mesmo aquilo tudo... Nossa."
+              },
+              {
+                "id": "yarn:line:b132719c",
+                "source": "Mmph- Hm?",
+                "target": "Mmph- Hã?"
+              },
+              {
+                "id": "yarn:line:270276eb",
+                "source": "Oh, that's my favorite part!",
+                "target": "Ah, é a minha parte favorita!"
+              },
+              {
+                "id": "yarn:line:4f172746",
+                "source": "How do you even digest that?",
+                "target": "Como você consegue digerir isso?"
+              },
+              {
+                "id": "yarn:line:f5462edf",
+                "source": "<size=60%> that's hot.",
+                "target": {
+                  "platforms": {
+                    "macos": "<size=60%> que tesão.",
+                    "windows": "<size=60%> que tesão."
+                  }
+                }
+              },
+              {
+                "id": "yarn:line:d9272031",
+                "source": "I'm a dragon.",
+                "target": "Sou um dragão."
+              },
+              {
+                "id": "yarn:line:637629a8",
+                "source": "Pretty sure I can digest anything.",
+                "target": "Tenho quase certeza de que consigo digerir qualquer coisa."
+              },
+              {
+                "id": "yarn:line:56d34a41",
+                "source": "It is? Good to know...",
+                "target": "É? Bom saber..."
+              },
+              {
+                "id": "yarn:line:7ab244af",
+                "source": "It's the best way to enjoy food.",
+                "target": "É o melhor jeito de aproveitar a comida."
+              },
+              {
+                "id": "yarn:line:ec8243d8",
+                "source": "It's interesting; you bipeds tend to savor your meals.",
+                "target": "É interessante; vocês bípedes tendem a saborear suas refeições."
+              },
+              {
+                "id": "yarn:line:7d9ffc48",
+                "source": "But nothing beats a large gulp!",
+                "target": "Mas nada supera engolir tudo de uma vez!"
+              }
+            ]
+          },
+          {
+            "node": "Ryan_melon_dialog",
+            "nodeSha256": "83a02ce46c463dd7aee31904b2854ee8f075329b8b32a024e3402e894bc67f4f",
+            "index": 64,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:8f598864",
+                "source": "That one was almost too big-",
+                "target": "Essa quase era grande demais-"
+              },
+              {
+                "id": "yarn:line:19698f13",
+                "source": "You didn't even open the watermelon.",
+                "target": "Você nem abriu a melancia."
+              },
+              {
+                "id": "yarn:line:c0161bbc",
+                "source": "How did it taste?",
+                "target": "Que gosto tinha?"
+              },
+              {
+                "id": "yarn:line:7a471225",
+                "source": "Yeaaah.",
+                "target": "Ééé."
+              },
+              {
+                "id": "yarn:line:ec771552",
+                "source": "Woops.",
+                "target": "Opa."
+              },
+              {
+                "id": "yarn:line:56261ccb",
+                "source": "Was still good though! I like how it feels sliding down.",
+                "target": "Mas estava boa! Gosto da sensação quando ela desliza pela garganta."
+              },
+              {
+                "id": "yarn:line:63837f22",
+                "source": "I forgot to bite into it so... Nothing?",
+                "target": "Esqueci de morder, então... Nenhum?"
+              },
+              {
+                "id": "yarn:line:f5b37855",
+                "source": "Felt good sliding down though!",
+                "target": "Mas foi gostoso sentir ela deslizando pela garganta!"
+              },
+              {
+                "id": "yarn:line:4fe271cc",
+                "source": "<size=70%> woah.",
+                "target": "<size=70%> nossa."
+              },
+              {
+                "id": "yarn:line:deffce5c",
+                "source": "It's crazy how much your neck can handle.",
+                "target": "É impressionante o quanto seu pescoço aguenta."
+              },
+              {
+                "id": "yarn:line:d9d276bb",
+                "source": "Kobolds always seem enamored by me eating.",
+                "target": "Os kobolds sempre parecem fascinados quando me veem comer."
+              },
+              {
+                "id": "yarn:line:48cfc92b",
+                "source": "It's endearing!",
+                "target": "É uma graça!"
+              },
+              {
+                "id": "yarn:line:3b76093c",
+                "source": "It's made for eating things whole.",
+                "target": "Ele foi feito para engolir coisas inteiras."
+              },
+              {
+                "id": "yarn:line:ad460e4b",
+                "source": "<size=70%><i>Yeah?",
+                "target": "<size=70%><i>É?"
+              },
+              {
+                "id": "yarn:line:22b2643b",
+                "source": "Makes sense.",
+                "target": "Faz sentido."
+              },
+              {
+                "id": "yarn:line:171707d2",
+                "source": "Mhm!",
+                "target": "Aham!"
+              },
+              {
+                "id": "yarn:line:812700a5",
+                "source": "...",
+                "target": "..."
+              },
+              {
+                "id": "yarn:line:b482634c",
+                "source": "Yeah! its useful.",
+                "target": "É! É útil."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "windows": {
+      "Alexander_2_intro": {
+        "changedIds": [
+          "yarn:line:938be2fb"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Alexander_2_6",
+            "objectId": 10639,
+            "rawSha256": "6489460a4b0413c1ad5a15464e4feb7823c6aff8253fd5c7389151ccaf03b720",
+            "field": "dialogIntro",
+            "index": null,
+            "target": "Alexander_2_intro",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Alexander_2_required": {
+        "changedIds": [
+          "yarn:line:33440e8c"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Alexander_2_6",
+            "objectId": 10639,
+            "rawSha256": "6489460a4b0413c1ad5a15464e4feb7823c6aff8253fd5c7389151ccaf03b720",
+            "field": "progressDialogs",
+            "index": 0,
+            "target": "Alexander_2_required",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Alexander_3_JerkOff_Start": {
+        "changedIds": [
+          "yarn:line:7d13eca0"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Alexander_3_9",
+            "objectId": 10640,
+            "rawSha256": "0c57fd65781b46f5e5b9694765def8b1a774c27acb19ed6dd40085687c312ee5",
+            "field": "dragonStartJerkingOffDialog",
+            "index": null,
+            "target": "Alexander_3_JerkOff_Start",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Alexander_3_intro": {
+        "changedIds": [
+          "yarn:line:61c8781b"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Alexander_3_9",
+            "objectId": 10640,
+            "rawSha256": "0c57fd65781b46f5e5b9694765def8b1a774c27acb19ed6dd40085687c312ee5",
+            "field": "dialogIntro",
+            "index": null,
+            "target": "Alexander_3_intro",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Alexander_5_required": {
+        "changedIds": [
+          "yarn:line:37c9d915",
+          "yarn:line:3d723db0",
+          "yarn:line:44701902",
+          "yarn:line:cb847372",
+          "yarn:line:e7e57d9c"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Alexander_5",
+            "objectId": 10642,
+            "rawSha256": "73b2273e65f2bec638ea5209b224cde3d850c7e365bec999b5755d08d99bb780",
+            "field": "progressDialogs",
+            "index": 0,
+            "target": "Alexander_5_required",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Alexander_SexScene": {
+        "changedIds": [
+          "yarn:line:d132db41"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": []
+      },
+      "Alexander_SexScene_Cum": {
+        "changedIds": [
+          "yarn:line:41d5085a"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Alexander_SexScene_Loop",
+            "nodeSha256": "b921720ca0d0e6db3851ff7365c097ecc7b3e281aff5cdb623e267e87ddcd32d",
+            "index": 28,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:dfe74420",
+                "source": "My-",
+                "target": "Ora-"
+              },
+              {
+                "id": "yarn:line:4efafbb0",
+                "source": "You are very skilled with your hands",
+                "target": "Suas mãos são muito habilidosas"
+              },
+              {
+                "id": "yarn:line:d8cafcc7",
+                "source": "mmm..",
+                "target": "mmm.."
+              },
+              {
+                "id": "yarn:line:b36eb839",
+                "source": "..",
+                "target": ".."
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_4_Mount_Finish": {
+        "changedIds": [
+          "yarn:line:88d7e1e2"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Conrad_4_11",
+            "objectId": 10646,
+            "rawSha256": "3464553864f46852c7f435a24f2104fb4529ff0c39ec485728a08136eff09242",
+            "field": "dragonFinishMountDialogue",
+            "index": null,
+            "target": "Conrad_4_Mount_Finish",
+            "targetPresent": true
+          },
+          {
+            "configuration": "conrad_5",
+            "objectId": 10647,
+            "rawSha256": "ec41c91e59f4b9a7c280fb6bf4f1a4acc12781f57be557c327f9c3f543463263",
+            "field": "dragonFinishMountDialogue",
+            "index": null,
+            "target": "Conrad_4_Mount_Finish",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Conrad_5_intro_conrad_romanced": {
+        "changedIds": [
+          "yarn:line:1538bc7e",
+          "yarn:line:d66b9155"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_Intro_5",
+            "nodeSha256": "526931b1e1406157b839ccb15f19a39c7fa1c0f3a32a6a56f7ebbf94d62bd8f9",
+            "index": 82,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:4dac3d2b",
+                "source": "Something went wrong with flags!",
+                "target": "Algo deu errado com os marcadores!"
+              },
+              {
+                "id": "yarn:line:db9c3a5c",
+                "source": "Help the developers out please..",
+                "target": "Por favor, ajude os desenvolvedores.."
+              },
+              {
+                "id": "yarn:line:61cd33c5",
+                "source": "conrad hooked up with ryan",
+                "target": "conrad ficou com ryan"
+              },
+              {
+                "id": "yarn:line:f7fd34b2",
+                "source": "player hooked up with conrad",
+                "target": "jogador ficou com conrad"
+              },
+              {
+                "id": "yarn:line:66e08b22",
+                "source": "player hooked up with ryan",
+                "target": "jogador ficou com ryan"
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_5_intro_ryan_romanced": {
+        "changedIds": [
+          "yarn:line:34cf0601"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_Intro_5",
+            "nodeSha256": "526931b1e1406157b839ccb15f19a39c7fa1c0f3a32a6a56f7ebbf94d62bd8f9",
+            "index": 74,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:4dac3d2b",
+                "source": "Something went wrong with flags!",
+                "target": "Algo deu errado com os marcadores!"
+              },
+              {
+                "id": "yarn:line:db9c3a5c",
+                "source": "Help the developers out please..",
+                "target": "Por favor, ajude os desenvolvedores.."
+              },
+              {
+                "id": "yarn:line:61cd33c5",
+                "source": "conrad hooked up with ryan",
+                "target": "conrad ficou com ryan"
+              },
+              {
+                "id": "yarn:line:f7fd34b2",
+                "source": "player hooked up with conrad",
+                "target": "jogador ficou com conrad"
+              },
+              {
+                "id": "yarn:line:66e08b22",
+                "source": "player hooked up with ryan",
+                "target": "jogador ficou com ryan"
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_5_required_conrad_romanced": {
+        "changedIds": [
+          "yarn:line:a0479425"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_required_5",
+            "nodeSha256": "cc03ceeace239973a8aa9ec6d874f4fb225cc5da709fae99e665699a81ffcb8d",
+            "index": 17,
+            "opcode": 16,
+            "lines": []
+          }
+        ]
+      },
+      "Conrad_Intro_4": {
+        "changedIds": [
+          "yarn:line:18e5a573",
+          "yarn:line:918d7820",
+          "yarn:line:cf8c5f37",
+          "yarn:line:fa293cde"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Conrad_4_11",
+            "objectId": 10646,
+            "rawSha256": "3464553864f46852c7f435a24f2104fb4529ff0c39ec485728a08136eff09242",
+            "field": "dialogIntro",
+            "index": null,
+            "target": "Conrad_Intro_4",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Conrad_Outro_3": {
+        "changedIds": [
+          "yarn:line:a0cf6cae",
+          "yarn:line:c4cc497f"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Conrad_3_8",
+            "objectId": 10645,
+            "rawSha256": "ea353373c48406416cd6117d47cf405917ba4f0ae134e339a0efb1740776632f",
+            "field": "dialogOutro",
+            "index": null,
+            "target": "Conrad_Outro_3",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_finished_jerkoff_3",
+            "nodeSha256": "0b4e6056d35c6455a65aa7ec0ba2332a84b41b9ccd53ec05796a3e853c3be193",
+            "index": 56,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:496134bc",
+                "source": "...!",
+                "target": "...!"
+              },
+              {
+                "id": "yarn:line:eaf45022",
+                "source": "Damn, you know how to use your hands.",
+                "target": "Caramba, você sabe usar as mãos."
+              },
+              {
+                "id": "yarn:line:7cc45755",
+                "source": "...!",
+                "target": "...!"
+              },
+              {
+                "id": "yarn:line:c6955ecc",
+                "source": "Damn, you know how to use your hands.",
+                "target": "Caramba, você sabe usar as mãos."
+              },
+              {
+                "id": "yarn:line:50a559bb",
+                "source": "Hah... <size=70%> yeah.",
+                "target": "Ah... <size=70%> é."
+              },
+              {
+                "id": "yarn:line:5788e15c",
+                "source": "Of course I do. I'm a <i>professional</i>.",
+                "target": "Claro que sei. Sou <i>profissional</i>."
+              },
+              {
+                "id": "yarn:line:c1b8e62b",
+                "source": "It's always good when a kobold knows what they like.",
+                "target": "É sempre bom quando um kobold sabe do que gosta."
+              },
+              {
+                "id": "yarn:line:3063100e",
+                "source": "So am I.",
+                "target": "Eu também sou."
+              },
+              {
+                "id": "yarn:line:a6531779",
+                "source": "...",
+                "target": "..."
+              },
+              {
+                "id": "yarn:line:1c021ee0",
+                "source": "At getting hand jobs.",
+                "target": "Em receber punhetas."
+              },
+              {
+                "id": "yarn:line:8a321997",
+                "source": "Now I'm eyeballing the mount...",
+                "target": "Agora estou de olho no suporte..."
+              },
+              {
+                "id": "yarn:line:29a77d09",
+                "source": "Let me give it a try!",
+                "target": "Deixa eu experimentar!"
+              },
+              {
+                "id": "yarn:line:bf977a7e",
+                "source": "Oh okay. I'll go grab it.",
+                "target": "Ah, tá. Vou buscar."
+              },
+              {
+                "id": "yarn:line:05c673e7",
+                "source": "Sure!",
+                "target": "Claro!"
+              },
+              {
+                "id": "yarn:line:93f67490",
+                "source": "Hell yeah",
+                "target": "Com certeza!"
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_Outro_4_Ryan_Conrad_Romanced": {
+        "changedIds": [
+          "yarn:line:94fbdbf0"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_Outro_4",
+            "nodeSha256": "e3943cd7eb2ac49ca70b7f168c8a8abb11985d2552604a897ddab3f272d17513",
+            "index": 39,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:6c2a1901",
+                "source": "You should be all clean!",
+                "target": "Acho que você já tá todo limpo!"
+              },
+              {
+                "id": "yarn:line:fa1a1e76",
+                "source": "Think thats it.",
+                "target": {
+                  "platforms": {
+                    "macos": "Acho que é só isso.",
+                    "windows": "Acho que é só isso."
+                  }
+                }
+              },
+              {
+                "id": "yarn:line:404b17ef",
+                "source": "You look good this clean!",
+                "target": "Você fica bonito assim, limpinho!"
+              },
+              {
+                "id": "yarn:line:d67b1098",
+                "source": "<i>I like spraying you with water.",
+                "target": "<i>Gosto de jogar água em você."
+              },
+              {
+                "id": "yarn:line:4766af08",
+                "source": "Alrighty! That should be it.",
+                "target": "Pronto! Acho que terminamos."
+              },
+              {
+                "id": "yarn:line:d156a87f",
+                "source": "Think that's every spot.",
+                "target": "Acho que limpei tudo."
+              }
+            ]
+          },
+          {
+            "node": "Conrad_Outro_4",
+            "nodeSha256": "e3943cd7eb2ac49ca70b7f168c8a8abb11985d2552604a897ddab3f272d17513",
+            "index": 42,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:6c2a1901",
+                "source": "You should be all clean!",
+                "target": "Acho que você já tá todo limpo!"
+              },
+              {
+                "id": "yarn:line:fa1a1e76",
+                "source": "Think thats it.",
+                "target": {
+                  "platforms": {
+                    "macos": "Acho que é só isso.",
+                    "windows": "Acho que é só isso."
+                  }
+                }
+              },
+              {
+                "id": "yarn:line:404b17ef",
+                "source": "You look good this clean!",
+                "target": "Você fica bonito assim, limpinho!"
+              },
+              {
+                "id": "yarn:line:d67b1098",
+                "source": "<i>I like spraying you with water.",
+                "target": "<i>Gosto de jogar água em você."
+              },
+              {
+                "id": "yarn:line:4766af08",
+                "source": "Alrighty! That should be it.",
+                "target": "Pronto! Acho que terminamos."
+              },
+              {
+                "id": "yarn:line:d156a87f",
+                "source": "Think that's every spot.",
+                "target": "Acho que limpei tudo."
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_Outro_4_Ryan_Romanced": {
+        "changedIds": [
+          "yarn:line:4789095b",
+          "yarn:line:5e4d645c"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_Outro_4",
+            "nodeSha256": "e3943cd7eb2ac49ca70b7f168c8a8abb11985d2552604a897ddab3f272d17513",
+            "index": 51,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:6c2a1901",
+                "source": "You should be all clean!",
+                "target": "Acho que você já tá todo limpo!"
+              },
+              {
+                "id": "yarn:line:fa1a1e76",
+                "source": "Think thats it.",
+                "target": {
+                  "platforms": {
+                    "macos": "Acho que é só isso.",
+                    "windows": "Acho que é só isso."
+                  }
+                }
+              },
+              {
+                "id": "yarn:line:404b17ef",
+                "source": "You look good this clean!",
+                "target": "Você fica bonito assim, limpinho!"
+              },
+              {
+                "id": "yarn:line:d67b1098",
+                "source": "<i>I like spraying you with water.",
+                "target": "<i>Gosto de jogar água em você."
+              },
+              {
+                "id": "yarn:line:4766af08",
+                "source": "Alrighty! That should be it.",
+                "target": "Pronto! Acho que terminamos."
+              },
+              {
+                "id": "yarn:line:d156a87f",
+                "source": "Think that's every spot.",
+                "target": "Acho que limpei tudo."
+              }
+            ]
+          },
+          {
+            "node": "Conrad_Outro_4",
+            "nodeSha256": "e3943cd7eb2ac49ca70b7f168c8a8abb11985d2552604a897ddab3f272d17513",
+            "index": 54,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:6c2a1901",
+                "source": "You should be all clean!",
+                "target": "Acho que você já tá todo limpo!"
+              },
+              {
+                "id": "yarn:line:fa1a1e76",
+                "source": "Think thats it.",
+                "target": {
+                  "platforms": {
+                    "macos": "Acho que é só isso.",
+                    "windows": "Acho que é só isso."
+                  }
+                }
+              },
+              {
+                "id": "yarn:line:404b17ef",
+                "source": "You look good this clean!",
+                "target": "Você fica bonito assim, limpinho!"
+              },
+              {
+                "id": "yarn:line:d67b1098",
+                "source": "<i>I like spraying you with water.",
+                "target": "<i>Gosto de jogar água em você."
+              },
+              {
+                "id": "yarn:line:4766af08",
+                "source": "Alrighty! That should be it.",
+                "target": "Pronto! Acho que terminamos."
+              },
+              {
+                "id": "yarn:line:d156a87f",
+                "source": "Think that's every spot.",
+                "target": "Acho que limpei tudo."
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_SexScene_Cum": {
+        "changedIds": [
+          "yarn:line:0bc044da",
+          "yarn:line:7f543c2a",
+          "yarn:line:9addfb4a",
+          "yarn:line:f0a0565a"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Conrad_SexScene_Loop",
+            "nodeSha256": "4452d3047e242b87205930daf4c1d9ef60923fc4ba4b8c59aad98484cfe6fcdd",
+            "index": 27,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:2f9b499a",
+                "source": "I honestly don't know how you are doing that.",
+                "target": "Sinceramente, não sei como você está fazendo isso."
+              },
+              {
+                "id": "yarn:line:b9ab4eed",
+                "source": "Im not complaining though.",
+                "target": "Mas não estou reclamando."
+              },
+              {
+                "id": "yarn:line:1a3e2a73",
+                "source": "Hell yea",
+                "target": "Com certeza"
+              },
+              {
+                "id": "yarn:line:8c0e2d04",
+                "source": "..",
+                "target": ".."
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_finished_mount_3": {
+        "changedIds": [
+          "yarn:line:73ea230a"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Conrad_3_8",
+            "objectId": 10645,
+            "rawSha256": "ea353373c48406416cd6117d47cf405917ba4f0ae134e339a0efb1740776632f",
+            "field": "dragonFinishMountDialogue",
+            "index": null,
+            "target": "Conrad_finished_mount_3",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Conrad_required_2": {
+        "changedIds": [
+          "yarn:line:0de4fe62"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Conrad_2_5",
+            "objectId": 10644,
+            "rawSha256": "d4d93dc2935a5bdcfde2f881c57235e58ef36b303e9be73b01df1f716f1e1ae7",
+            "field": "progressDialogs",
+            "index": 0,
+            "target": "Conrad_required_2",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Ryan_5_Outro_ryan_romanced": {
+        "changedIds": [
+          "yarn:line:a00f681d"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Ryan_5_Outro",
+            "nodeSha256": "0ba0722fc6fe1e62e1078fd408c64c6721ba63eedee09091c08a3b5b35aaf1c7",
+            "index": 9,
+            "opcode": 16,
+            "lines": []
+          }
+        ]
+      },
+      "Ryan_5_Required_ryan_conrad_romanced": {
+        "changedIds": [
+          "yarn:line:c6202cf2"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Ryan_5_Required",
+            "nodeSha256": "2ef0ae9bb94762e73b97f2759f520969cdbe93d4b0846262de5786bc4427e4cb",
+            "index": 25,
+            "opcode": 16,
+            "lines": []
+          }
+        ]
+      },
+      "Ryan_5_intro": {
+        "changedIds": [
+          "yarn:line:601e1b38",
+          "yarn:line:7f2e2736",
+          "yarn:line:e91e2041"
+        ],
+        "levelReferences": [
+          {
+            "configuration": "Ryan_5_13",
+            "objectId": 10653,
+            "rawSha256": "58cf34c3a06a1beda459d8c7aeae911d9a152168d1743bcd52fdaa0e47a30668",
+            "field": "dialogIntro",
+            "index": null,
+            "target": "Ryan_5_intro",
+            "targetPresent": true
+          }
+        ],
+        "directYarnCallers": []
+      },
+      "Ryan_5_intro_ryan_romanced": {
+        "changedIds": [
+          "yarn:line:822c0718"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Ryan_5_intro",
+            "nodeSha256": "06eb8734cbeae8bd2af7cfe2f83eeecc066fa1561ad79dd78c6d9814dab2efb9",
+            "index": 117,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:61c7f2d6",
+                "source": "Something went wrong with flags!",
+                "target": "Algo deu errado com os marcadores!"
+              },
+              {
+                "id": "yarn:line:f7f7f5a1",
+                "source": "Help the developers out please..",
+                "target": "Por favor, ajude os desenvolvedores.."
+              },
+              {
+                "id": "yarn:line:5462913f",
+                "source": "conrad hooked up with ryan",
+                "target": "conrad ficou com ryan"
+              },
+              {
+                "id": "yarn:line:c2529648",
+                "source": "player hooked up with conrad",
+                "target": "jogador ficou com conrad"
+              },
+              {
+                "id": "yarn:line:78039fd1",
+                "source": "player hooked up with ryan",
+                "target": "jogador ficou com ryan"
+              },
+              {
+                "id": "yarn:line:ee3398a6",
+                "source": "Hey big guy.",
+                "target": "E aí, grandão."
+              },
+              {
+                "id": "yarn:line:9b7e09b8",
+                "source": "Ryan!",
+                "target": "Ryan!"
+              },
+              {
+                "id": "yarn:line:7f2e2736",
+                "source": "Hey... little guy!",
+                "target": "E aí... pessoinha!"
+              },
+              {
+                "id": "yarn:line:e91e2041",
+                "source": "I'm not <i>that</i> little-",
+                "target": "Minha altura nem é <i>tão</i> baixa assim-"
+              },
+              {
+                "id": "yarn:line:aedb6a51",
+                "source": "So, coming in for a wash?",
+                "target": "Então, veio se lavar?"
+              },
+              {
+                "id": "yarn:line:82ba64bf",
+                "source": "Oh, sorry-",
+                "target": "Ah, desculpa-"
+              },
+              {
+                "id": "yarn:line:148a63c8",
+                "source": "Was just trying to play along. Happy to see you!",
+                "target": "Só estava entrando na brincadeira. Que bom te ver!"
+              },
+              {
+                "id": "yarn:line:38eb6d26",
+                "source": "Yup!",
+                "target": "Isso!"
+              },
+              {
+                "id": "yarn:line:0d4e0ecf",
+                "source": "Hey kobold!",
+                "target": "E aí, kobold!"
+              },
+              {
+                "id": "yarn:line:b71f0756",
+                "source": "I decided to try baking.",
+                "target": "Resolvi tentar fazer uns quitutes."
+              },
+              {
+                "id": "yarn:line:212f0021",
+                "source": "I've had a lot of free time lately.",
+                "target": "Tenho tido bastante tempo livre ultimamente."
+              },
+              {
+                "id": "yarn:line:b032bfb1",
+                "source": "It turns out baking is messy!",
+                "target": "Acontece que fazer quitutes faz uma baita bagunça!"
+              },
+              {
+                "id": "yarn:line:2602b8c6",
+                "source": "I could use a wash.",
+                "target": "Estou precisando de uma lavagem."
+              },
+              {
+                "id": "yarn:line:c38b7fa6",
+                "source": "Hey there, Ryan!",
+                "target": "Oi, Ryan!"
+              },
+              {
+                "id": "yarn:line:55bb78d1",
+                "source": "Hey! I'm here for a wash.",
+                "target": "Oi! Vim me lavar."
+              },
+              {
+                "id": "yarn:line:efea7148",
+                "source": "I decided to try baking.",
+                "target": "Resolvi tentar fazer uns quitutes."
+              },
+              {
+                "id": "yarn:line:79da763f",
+                "source": "I've had a lot of free time lately.",
+                "target": "Tenho tido bastante tempo livre ultimamente."
+              },
+              {
+                "id": "yarn:line:da4f12a1",
+                "source": "It turns out baking is messy!",
+                "target": "Acontece que fazer quitutes faz uma baita bagunça!"
+              },
+              {
+                "id": "yarn:line:4c7f15d6",
+                "source": "Awesome, I'll go get the gate.",
+                "target": "Ótimo, vou abrir o portão."
+              },
+              {
+                "id": "yarn:line:601e1b38",
+                "source": "Sure! I'm excited to tell you about Conrad.",
+                "target": "Claro! Mal posso esperar para te contar sobre o Conrad."
+              },
+              {
+                "id": "yarn:line:f62e1c4f",
+                "source": "Thanks.",
+                "target": "Obrigado."
+              },
+              {
+                "id": "yarn:line:f103a4a8",
+                "source": "Oh yeah?",
+                "target": "Ah, é?"
+              },
+              {
+                "id": "yarn:line:6733a3df",
+                "source": "Yeah! I'm going on a date with him soon.",
+                "target": "Sim! Logo vou sair com ele."
+              },
+              {
+                "id": "yarn:line:d38efb75",
+                "source": "Mmmmhm, gotta prep for a date with him.",
+                "target": "Aham, tenho que me preparar para um encontro com ele."
+              },
+              {
+                "id": "yarn:line:45befc02",
+                "source": "That's exciting!",
+                "target": "Que legal!"
+              },
+              {
+                "id": "yarn:line:ffeff59b",
+                "source": "You'll have to tell me more inside.",
+                "target": "Você vai ter que me contar mais lá dentro."
+              },
+              {
+                "id": "yarn:line:69dff2ec",
+                "source": "I'll be waiting for the gate!",
+                "target": "Vou esperar no portão!"
+              },
+              {
+                "id": "yarn:line:ca4a9672",
+                "source": "Heeeey Ryan.",
+                "target": "Ooooi, Ryan."
+              },
+              {
+                "id": "yarn:line:5c7a9105",
+                "source": "Hey!",
+                "target": "Oi!"
+              },
+              {
+                "id": "yarn:line:e62b989c",
+                "source": "I decided to try baking.",
+                "target": "Resolvi tentar fazer uns quitutes."
+              },
+              {
+                "id": "yarn:line:701b9feb",
+                "source": "I've had a lot of free time lately.",
+                "target": "Tenho tido bastante tempo livre ultimamente."
+              },
+              {
+                "id": "yarn:line:e106207b",
+                "source": "It turns out baking is messy!",
+                "target": "Acontece que fazer quitutes faz uma baita bagunça!"
+              },
+              {
+                "id": "yarn:line:7736270c",
+                "source": "How was your date with Conrad?",
+                "target": "Como foi seu encontro com o Conrad?"
+              },
+              {
+                "id": "yarn:line:048fe71b",
+                "source": "TELL ME ABOUT YOU AND CONRAD!",
+                "target": "ME CONTA SOBRE VOCÊ E O CONRAD!"
+              },
+              {
+                "id": "yarn:line:92bfe06c",
+                "source": "It went great!",
+                "target": "Foi ótimo!"
+              },
+              {
+                "id": "yarn:line:bedeee82",
+                "source": "Oh- Eager!",
+                "target": "Ah- Quanta empolgação!"
+              },
+              {
+                "id": "yarn:line:28eee9f5",
+                "source": "It went great!",
+                "target": "Foi ótimo!"
+              },
+              {
+                "id": "yarn:line:8b7b8d6b",
+                "source": "We went out to eat. Had some good conversation.",
+                "target": "Saímos para comer. Tivemos uma boa conversa."
+              },
+              {
+                "id": "yarn:line:1d4b8a1c",
+                "source": "One thing led to another...",
+                "target": "Uma coisa levou à outra..."
+              },
+              {
+                "id": "yarn:line:a71a8385",
+                "source": "Went to the bar... Things got spicy. You can imagine what happened next... <size=70%>Hah...",
+                "target": "Fomos ao bar... As coisas esquentaram. Você imagina o que aconteceu depois... <size=70%>Ha..."
+              }
+            ]
+          }
+        ]
+      },
+      "Ryan_egg_dialog": {
+        "changedIds": [
+          "yarn:line:7f5113d5"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Ryan_egg",
+            "nodeSha256": "93be4f16e1cb14cc02d6f713c0ebdd79e9e9939af3a584a354b41b178b8290d9",
+            "index": 14,
+            "opcode": 16,
+            "lines": []
+          }
+        ]
+      },
+      "Start": {
+        "changedIds": [
+          "yarn:line:07e5fc05"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": []
+      },
+      "ryan_food_dialogue": {
+        "changedIds": [
+          "yarn:line:079b3782",
+          "yarn:line:09e5bf43",
+          "yarn:line:0d20d327",
+          "yarn:line:13c906c7",
+          "yarn:line:77ca2316",
+          "yarn:line:a40e531c",
+          "yarn:line:a6c1f2f4",
+          "yarn:line:b05c6259",
+          "yarn:line:b4990e3d",
+          "yarn:line:cd9b2a8f",
+          "yarn:line:e6290003",
+          "yarn:line:f83e4966"
+        ],
+        "levelReferences": [],
+        "directYarnCallers": [
+          {
+            "node": "Ryan_egg_dialog",
+            "nodeSha256": "251cfe34ea227515ffadb461be953bc1cf449d3137574795851f21bc76f6a7cb",
+            "index": 39,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:0ce8d3c2",
+                "source": "ohmygod I thought the egg was decorative.",
+                "target": "Meu Deus, achei que o ovo fosse decorativo."
+              },
+              {
+                "id": "yarn:line:53301d3b",
+                "source": "What kind of egg was that?",
+                "target": "Que tipo de ovo era aquele?"
+              },
+              {
+                "id": "yarn:line:e96114a2",
+                "source": "Huh? ofcourse not!",
+                "target": "Hã? Claro que não!"
+              },
+              {
+                "id": "yarn:line:7f5113d5",
+                "source": "OH. You're not used to eating them whole.",
+                "target": "AH. Você não tem costume de comer ovos inteiros."
+              },
+              {
+                "id": "yarn:line:c5001a4c",
+                "source": "That's the best way to eat'em!",
+                "target": "É o melhor jeito de comer!"
+              },
+              {
+                "id": "yarn:line:f0a579a5",
+                "source": "Uhm...",
+                "target": "Hã..."
+              },
+              {
+                "id": "yarn:line:66957ed2",
+                "source": "Blue...?",
+                "target": "Azul...?"
+              },
+              {
+                "id": "yarn:line:dcc4774b",
+                "source": "I'm not too sure. It was on sale at WingCo.",
+                "target": "Não tenho muita certeza. Estava em promoção no WingCo."
+              },
+              {
+                "id": "yarn:line:4af4703c",
+                "source": "Tasted real good though!",
+                "target": "Mas estava uma delícia!"
+              }
+            ]
+          },
+          {
+            "node": "Ryan_grapes_dialog",
+            "nodeSha256": "b7b4d1cfa19e533e0bd177e4f0cc7c269b9a07512063e237d7a3b7a7993143ca",
+            "index": 72,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:418498cf",
+                "source": "Those grapes looked good.",
+                "target": "Aquelas uvas pareciam boas."
+              },
+              {
+                "id": "yarn:line:13ca0a74",
+                "source": "Ryan, you're not supposed to eat the stems-",
+                "target": "Ryan, não é para comer os talos-"
+              },
+              {
+                "id": "yarn:line:d7b49fb8",
+                "source": "They were! The stem is my favorite part though.",
+                "target": "Estavam! Mas o talo é minha parte favorita."
+              },
+              {
+                "id": "yarn:line:b05f6eea",
+                "source": "Isn't that... Wood?",
+                "target": "Aquilo não é... Madeira?"
+              },
+              {
+                "id": "yarn:line:a99b03ed",
+                "source": "Never tried it.",
+                "target": "Nunca experimentei."
+              },
+              {
+                "id": "yarn:line:266f699d",
+                "source": "Yeah, taste good!",
+                "target": "É, é gostoso!"
+              },
+              {
+                "id": "yarn:line:9c3e6004",
+                "source": "Though you probably shouldn't eat them.",
+                "target": "Mas você provavelmente não devia comer."
+              },
+              {
+                "id": "yarn:line:0a0e6773",
+                "source": "Dragon stomachs are a bit more... robust than yours.",
+                "target": "Os estômagos dos dragões são um pouco mais... resistentes que o seu."
+              },
+              {
+                "id": "yarn:line:3fab049a",
+                "source": "You probably shouldn't.",
+                "target": "É melhor não."
+              },
+              {
+                "id": "yarn:line:85fa0d03",
+                "source": "You'd need a dragon stomach first!",
+                "target": "Você precisaria de um estômago de dragão primeiro!"
+              },
+              {
+                "id": "yarn:line:82d7b5e4",
+                "source": "Says who?",
+                "target": "Quem disse?"
+              },
+              {
+                "id": "yarn:line:14e7b293",
+                "source": "Me?",
+                "target": "Eu?"
+              },
+              {
+                "id": "yarn:line:4b3f7c6a",
+                "source": "Biology...? <size=70%> <i>I think?",
+                "target": "A biologia...? <size=70%> <i>Eu acho?"
+              },
+              {
+                "id": "yarn:line:f16e75f3",
+                "source": "Well...",
+                "target": "Bem..."
+              },
+              {
+                "id": "yarn:line:675e7284",
+                "source": "I'm a rule breaker!",
+                "target": "Eu quebro as regras!"
+              },
+              {
+                "id": "yarn:line:dd0f7b1d",
+                "source": "Don't worry, dragons are made to eat anything.",
+                "target": "Não se preocupe, dragões foram feitos para comer de tudo."
+              },
+              {
+                "id": "yarn:line:e8aa18f4",
+                "source": "I can digest pretty much anything.",
+                "target": "Consigo digerir praticamente qualquer coisa."
+              },
+              {
+                "id": "yarn:line:7e9a1f83",
+                "source": "The stem is just extra food.",
+                "target": "O talo é só mais comida."
+              },
+              {
+                "id": "yarn:line:c4cb161a",
+                "source": "Although grapes have always hit a specific craving.",
+                "target": "Embora uvas sempre matem uma vontade específica."
+              },
+              {
+                "id": "yarn:line:52fb116d",
+                "source": "Oh, and seems I got some on my face. woops.",
+                "target": "Ah, e parece que sujei o rosto com um pouco. Opa."
+              }
+            ]
+          },
+          {
+            "node": "Ryan_ham_dialog",
+            "nodeSha256": "12d53e526606c08d2d5b89c4e72f983ff36978dc722041510c375f3c2510d92e",
+            "index": 46,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:202fce0c",
+                "source": "RYAN THE BONE!",
+                "target": "RYAN, O OSSO!"
+              },
+              {
+                "id": "yarn:line:c0e34d36",
+                "source": "You really ate that entire thing... Woah.",
+                "target": "Você comeu mesmo aquilo tudo... Nossa."
+              },
+              {
+                "id": "yarn:line:b132719c",
+                "source": "Mmph- Hm?",
+                "target": "Mmph- Hã?"
+              },
+              {
+                "id": "yarn:line:270276eb",
+                "source": "Oh, that's my favorite part!",
+                "target": "Ah, é a minha parte favorita!"
+              },
+              {
+                "id": "yarn:line:4f172746",
+                "source": "How do you even digest that?",
+                "target": "Como você consegue digerir isso?"
+              },
+              {
+                "id": "yarn:line:f5462edf",
+                "source": "<size=60%> thats hot.",
+                "target": {
+                  "platforms": {
+                    "macos": "<size=60%> que tesão.",
+                    "windows": "<size=60%> que tesão."
+                  }
+                }
+              },
+              {
+                "id": "yarn:line:d9272031",
+                "source": "I'm a dragon.",
+                "target": "Sou um dragão."
+              },
+              {
+                "id": "yarn:line:637629a8",
+                "source": "Pretty sure I can digest anything.",
+                "target": "Tenho quase certeza de que consigo digerir qualquer coisa."
+              },
+              {
+                "id": "yarn:line:56d34a41",
+                "source": "It is? Good to know...",
+                "target": "É? Bom saber..."
+              },
+              {
+                "id": "yarn:line:7ab244af",
+                "source": "It's the best way to enjoy food.",
+                "target": "É o melhor jeito de aproveitar a comida."
+              },
+              {
+                "id": "yarn:line:ec8243d8",
+                "source": "It's interesting; you bipeds tend to savor your meals.",
+                "target": "É interessante; vocês bípedes tendem a saborear suas refeições."
+              },
+              {
+                "id": "yarn:line:7d9ffc48",
+                "source": "But nothing beats a large gulp!",
+                "target": "Mas nada supera engolir tudo de uma vez!"
+              }
+            ]
+          },
+          {
+            "node": "Ryan_melon_dialog",
+            "nodeSha256": "83a02ce46c463dd7aee31904b2854ee8f075329b8b32a024e3402e894bc67f4f",
+            "index": 64,
+            "opcode": 16,
+            "lines": [
+              {
+                "id": "yarn:line:8f598864",
+                "source": "That one was almost too big-",
+                "target": "Essa quase era grande demais-"
+              },
+              {
+                "id": "yarn:line:19698f13",
+                "source": "You didn't even open the watermelon.",
+                "target": "Você nem abriu a melancia."
+              },
+              {
+                "id": "yarn:line:c0161bbc",
+                "source": "How did it taste?",
+                "target": "Que gosto tinha?"
+              },
+              {
+                "id": "yarn:line:7a471225",
+                "source": "Yeaaah.",
+                "target": "Ééé."
+              },
+              {
+                "id": "yarn:line:ec771552",
+                "source": "Woops.",
+                "target": "Opa."
+              },
+              {
+                "id": "yarn:line:56261ccb",
+                "source": "Was still good though! I like how it feels sliding down.",
+                "target": "Mas estava boa! Gosto da sensação quando ela desliza pela garganta."
+              },
+              {
+                "id": "yarn:line:63837f22",
+                "source": "I forgot to bite into it so... Nothing?",
+                "target": "Esqueci de morder, então... Nenhum?"
+              },
+              {
+                "id": "yarn:line:f5b37855",
+                "source": "Felt good sliding down though!",
+                "target": "Mas foi gostoso sentir ela deslizando pela garganta!"
+              },
+              {
+                "id": "yarn:line:4fe271cc",
+                "source": "<size=70%> woah.",
+                "target": "<size=70%> nossa."
+              },
+              {
+                "id": "yarn:line:deffce5c",
+                "source": "It's crazy how much your neck can handle.",
+                "target": "É impressionante o quanto seu pescoço aguenta."
+              },
+              {
+                "id": "yarn:line:d9d276bb",
+                "source": "Kobolds always seem enamored by me eating.",
+                "target": "Os kobolds sempre parecem fascinados quando me veem comer."
+              },
+              {
+                "id": "yarn:line:48cfc92b",
+                "source": "It's endearing!",
+                "target": "É uma graça!"
+              },
+              {
+                "id": "yarn:line:3b76093c",
+                "source": "It's made for eating things whole.",
+                "target": "Ele foi feito para engolir coisas inteiras."
+              },
+              {
+                "id": "yarn:line:ad460e4b",
+                "source": "<size=70%><i>Yeah?",
+                "target": "<size=70%><i>É?"
+              },
+              {
+                "id": "yarn:line:22b2643b",
+                "source": "Makes sense.",
+                "target": "Faz sentido."
+              },
+              {
+                "id": "yarn:line:171707d2",
+                "source": "Mhm!",
+                "target": "Aham!"
+              },
+              {
+                "id": "yarn:line:812700a5",
+                "source": "...",
+                "target": "..."
+              },
+              {
+                "id": "yarn:line:b482634c",
+                "source": "Yeah! its useful.",
+                "target": "É! É útil."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
