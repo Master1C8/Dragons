@@ -284,3 +284,6 @@ Positions 510-542 are now author-reviewed with paired instruction and option-pat
 
 
 Positions 543-587 are author-reviewed as complete fifth-visit introduction branches. Corrected `9accd60e` and `6c3a98cc` to refer to washing Conrad, not the player. The full paired stock-input checks and two corrected-entry object read-backs passed; current translation SHA-256 `539fd0c7973e004b061a9ed4ae042661dce7ab66728fdf70af2c468e3668cf78`. Resume contextual review at 588; positions 588-979 remain preliminary and 980-1946 unread. See `semantic-review.md` for exact bindings and open independent audit and final QA boundaries.
+
+
+Positions 588-662 have been author-reviewed as six complete Conrad fifth-visit endings and required conversations, including paired instruction and option paths. Two grammatical and idiomatic corrections passed complete paired input checks and both stock dialogue-object read-backs; exact IDs and receipts are in `semantic-review.md`. Translation SHA-256 `1cee32ce07eaf4f6e699de12249a7b442270a2f6b5ed2b69962cafea6c77c777`. Contextual review next starts at 663; positions 663-979 are preliminary and 980-1946 unread. The Alexander intimacy speaker/lying-down inference and the scales idiom are recorded for independent review. Independent game-text audit, candidate artifacts and final runtime/visual QA remain pending.
