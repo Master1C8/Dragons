@@ -423,3 +423,7 @@ Both paired builds of `Conrad_5_outro_conrad_romanced`, `Conrad_5_outro_ryan_con
 ### Resume 08: Conrad late arrival and date rows (author self-reviews)
 
 Both paired builds of `Conrad_5_intro_ryan_romanced` and `Conrad_5_required_conrad_romanced` were read: two groups / 27 rows. Conrad explicitly identifies the “big blue guy” as Ryan, addressing the player's connection with him, and later refers to himself by name. The separate Conrad route concerns his date with the player; a pause remains without inferred voice. The bound Italian player, Conrad, Ryan and wash fields establish no correction here. Both layers are author self-reviews, not independent acceptance.
+
+### Resume 08: Conrad conversations about Ryan (author self-reviews)
+
+Both paired builds of `Conrad_5_required_ryan_conrad_romanced` and `Conrad_5_required_ryan_romanced` were read: two groups / 29 rows. Conrad explicitly calls Ryan a dragon and credits him with changing his behavior; the player introduced them. In the alternate route, Conrad asks directly about the player's date with Ryan. The explicit sexual reference does not itself use the special-endings euphemism. A pause remains without inferred voice. The bound Italian player, Conrad, Ryan and dragon fields establish no correction here. Both layers are author self-reviews, not independent acceptance.
