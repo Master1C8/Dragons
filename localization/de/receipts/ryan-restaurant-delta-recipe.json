@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "locale": "de",
+  "beforeSha256": "b5aae5f915ea1e1be07b081ae1faaf599a7d91d22bfaf671cb2f5ced61f64009",
+  "afterSha256": "e3f165ba2bd8e0b18123b957e6755166d7a7af05e06599e4b3961795c9f036e1",
+  "edits": {
+    "yarn:line:6a671440": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_Required_ryan_romanced",
+          "firstInstruction": 0,
+          "lastInstruction": 123
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Clarify equine-kin cuisine at the alternative date venue; retain the complete date scene and choices for rereview."
+    },
+    "yarn:line:d0361dd9": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_Required_ryan_romanced",
+          "firstInstruction": 0,
+          "lastInstruction": 123
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Clarify equine-kin cuisine at the alternative date venue; retain the complete date scene and choices for rereview."
+    }
+  }
+}
