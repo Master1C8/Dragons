@@ -4,9 +4,9 @@
 
 ## Current gate and coverage
 
-First unpassed stage: shared/locale renderer feasibility and standard glossary editorial readiness. Do not start special-scene wording or ordinary translation until their prerequisites are established. No Polish game translation has been authored: **0 / 1,947 package IDs**. No `translation.json` exists. The 27 special groups have **0 / 27 Polish wording decisions reviewed**. Independent glossary and game-text editorial acceptance is pending; self-review is not independent.
+The bound glossary has two complete clean author self-review layers covering 28 entries and source dependencies; independent glossary acceptance remains separate. Polish-specific sampled renderer feasibility passed on macOS and Windows through CrossOver, with the original captures and compliant previews retained in the run directory. All 27 special-scene groups have reviewed target wording and feasible bounded technical handling. The English-bound draft covers **1,947 / 1,947 IDs**, SHA-256 `cb471d50b18d79b659744dcf6360b25ba63d9ba42c2428e95196e040341dda2e`. Earlier entries below are chronological snapshots, not current status.
 
-The stock font sample resolved Polish glyphs on both builds. The paired European text-path evidence exercised Polish choice samples and settings labels on both players; its dialogue-body samples were Ukrainian and Vietnamese, not Polish. The offscreen settings frames show Polish fit, but the macOS final accent was too small to certify; Windows was legible. Polish dialogue, choice pixel inspection and the unresolved macOS setting mark remain open, as do corpus-bound fit, native Windows and final visual checks. See `localization/evidence/multilingual-renderer-baseline-20261110.md`, `european-text-paths-20261110.md` and `european-settings-visual-20261110.md`. No runtime was launched in this session.
+Complete semantic and independent game-text audits, actual translated-package gameplay, full visual fit, native Windows, and final installation/restoration remain open. Do not mark the locale complete. The first macOS app and Windows replacement ZIP passed package read-back for the preceding text hash; a corrected v2 pair is being built and must be read back against the current hash. CrossOver evidence is not native Windows evidence.
 
 ## Bound inputs
 
@@ -17,20 +17,12 @@ The stock font sample resolved Polish glyphs on both builds. The paired European
 - Paired source-only worklist `localization/work/cli-terra-high-20261110.J0KLrx/pl/worklist.json`, SHA-256 `867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87`, exported against both stock Data directories. No source passthrough is counted as translated.
 - Special index `localization/work/cli-terra-high-20261110.J0KLrx/pl/special-index.json`, SHA-256 `ff3ea673c4f6bba76ffd98cdc695156312da224b265ae18efc4d2e9e9a452d2b`; 27 cases, 271 distinct direct IDs, 1,126 direct/context IDs. Recreate with `python3 -B localization/index_special_scenes.py --inventory localization/work/source-inventory-20261107/combined-provisional-v42-20261110.json --output <new path>`.
 
-## Glossary review status
+## Current next actions
 
-CLI preflight found 28 matching, nonempty IDs; this is structural only. One initial comparison read all 28 English and Polish term/meaning pairs; it is not a complete clean editorial layer. Source evidence, all scene dependencies, separate complete native-language read, repair closures and the required clean layers remain to be completed. The latest anonymous-dragon addition's recorded affected read had no independent reviewer (`localization/evidence/generic-dragon-entries-20261110.md`). The English and Polish layers are not independently accepted on these hashes.
-
-Concrete questions to resolve against English scenes and the technical consumer: `dnw-family-crest` Polish term `rodowy grzebień` may suggest a physical comb/crest instead of the source's ornamental family emblem; check the exact scene before proposing wording. `dnw-yip-man` contains a colon in the Polish film title; the Yarn speaker parser uses colon syntax, so assess the actual title's choice/dialogue consumers and choose a technically safe rendering through the authorized glossary process. These are findings for review, not accepted corrections. SiteForMods is read-only for this task; no shared glossary was changed.
-
-## Next actions and separate status
-
-1. Recheck the source and glossary hashes, evidence and universal stage contract. Complete source and Polish glossary editorial reads and source-bound findings; retain independent acceptance as pending unless a distinct reviewer is authorized. Do not mutate the shared glossary in this lane.
-2. Run applicable Polish dialogue and choice probes and inspect compliant previews, including the source-pixel macOS settings crop as needed. Use the shared runtime mkdir lock for the entire isolated test; preserve owner games, installations and saves. Distinguish CrossOver from native Windows.
-3. Once prerequisite gates permit, make and review all 27 source-bound special-scene decisions, preserve syntax, then translate complete contextual batches from the English worklist. Checkpoint and commit only locale-owned files under the canonical Git lock.
-4. Editorial: pending. Packaging: not built on either platform. Runtime: Polish final payload untested on both platforms. Visual: pending. Installation/restoration: pending. No publication/deployment authorized.
-
-Export prerequisite note: system Python lacked UnityPy; the existing `/private/tmp/dragnwash-unitypy-venv/bin/python` lacked fontTools and TypeTreeGeneratorAPI. Cached `fonttools 4.60.2` and `TypeTreeGeneratorAPI 0.0.10` were installed only under this lane's ignored `python-deps` directory, and the exporter succeeded using `PYTHONPATH` pointed there. No shared environment was changed. Available disk at preflight was 18 GiB; serialize large package work as instructed.
+1. Finish and record package read-back, binding it to the exact authored hash and preserving build logs.
+2. Complete source-bound semantic review and protected-value comparison, including the corrected line `yarn:line:675d7e37`; any further changes invalidate affected package evidence and require rebuilding.
+3. Exercise actual authored packages on isolated profiles on both builds, inspect policy-compliant visual previews, and record platform and restoration boundaries. Native Windows and independent game-text audit require their own evidence.
+4. Preserve texture content, owner games and saves; use the cooperative runtime and canonical Git locks. No publication or deployment is authorized.
 
 ## Resume 01, 2026-11-10
 
@@ -406,3 +398,9 @@ Author self-reviewed 82 IDs covering visit reactions, device use and refusals, d
 ### Complete authored draft: intimate scene batch
 
 Author self-reviewed the remaining 85 IDs in the Alexander, Conrad, Ryan and joint scene groups, preserving the exact `Ryan:`/`Conrad:` speaker routing prefixes and source markup. This is author review, not the required independent game-text audit. The authored draft now covers **1,947/1,947 IDs**, SHA-256 `cbc8b2ea7e50811cac5eab4425618ed97a5f234ee864bdb23e49213b809ab02f`. The complete paired reader accepts all IDs; source-bound platform readers accepted 1,923 macOS and 1,941 Windows bindings. Complete-package generation/read-back, translated runtime, visual fit, full editorial audit and independent game-text audit remain open. Do not mark the language complete on coverage alone.
+
+### Draft package read-back and editorial correction
+
+The first complete draft, text SHA-256 `cbc8b2ea7e50811cac5eab4425618ed97a5f234ee864bdb23e49213b809ab02f`, built both platform packages under `localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/`. The source-bound verifier compared 284 macOS bundle files and 13 Windows archive members to fresh rebuilds and passed component and serialized metadata preservation. Receipts `verify-macos.json` SHA-256 `da662c0330c61561984cba3969075176bf69f572554afaa0f61a1d8144a8c341` and `verify-windows.json` SHA-256 `1f54a68d0d088781959d61bafb8c83623c021194bea7f338c45fc8e9c652a4d8`; Windows ZIP SHA-256 `c47184503065d7f537aede628b095dfab69c248e04cb956013ee9f56a7d45034`. The task-owned verifier uses the same shared implementation with its scratch directory moved into this lane and Python 3.9's unsupported `zip(..., strict=True)` removed after its prior exact inventory check; a task-owned stream-digest compatibility wrapper supplies the same SHA-256 calculation missing from Python 3.9. The original Windows attempt failed at archive read-back on missing `hashlib.file_digest`, and the retry passed.
+
+Subsequent author review corrected `yarn:line:675d7e37` against “He's like. SUPER hung.” to a more idiomatic Polish rendering. Current text SHA-256 `cb471d50b18d79b659744dcf6360b25ba63d9ba42c2428e95196e040341dda2e`: all 1,947 IDs pass complete paired validation and platform readers accept 1,923 macOS and 1,941 Windows bindings (`resume-01/verify-current-complete.py`). This is not an independent audit. The earlier packages and receipts apply only to the earlier hash. `resume-01/build-v2.sh` and `verify-v2.sh` rebuild and verify new, separate artifacts; inspect their actual results before crediting v2. Full semantic audit, independent game-text audit, actual translated-package runtime and final visual fit remain open.
