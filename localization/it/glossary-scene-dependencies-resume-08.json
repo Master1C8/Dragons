@@ -2990,97 +2990,423 @@
       "group": "RyanMuddy_Dirty",
       "orderedRowsSha256": "605a3c3c846748bf95dc9b5b51e86f22353178acef347c62e82c9caa3d618380",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:f212b2de",
+          "yarn:line:4843bb47"
+        ]
+      },
+      "referents": "Ryan describes getting muddy in a public park and asks the player for soap; the park is a location, not an identified individual.",
+      "layer1": "The requested cleaning is the service.",
+      "layer2": "The Italian service and character fields fit; player gender is unestablished.",
+      "sourceIds": [
+        "yarn:line:f212b2de",
+        "yarn:line:4843bb47"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Idle1",
       "orderedRowsSha256": "cd0e99ec60163eda1a36ab76122ca1eeb6403636b988ef4c11c84a17f9b6403e",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan offers to move if the player indicates where; this is cooperation during washing.",
+      "layer1": "The pronouns refer to Ryan and the player.",
+      "layer2": "The Italian roles fit without assigning player gender.",
+      "sourceIds": [
+        "yarn:line:7da41ecd",
+        "yarn:line:ecb9a15d"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Idle2",
       "orderedRowsSha256": "eecbed44a4888ad713f490a41fa180437fd74a639eb4af602965ea4cf89b2cf3",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:aaf3066d"
+        ]
+      },
+      "referents": "Ryan thanks the player for cleaning him; this refers to the service.",
+      "layer1": "Cleaning is the dragon-washing service.",
+      "layer2": "The Italian service field fits and the player remains neutral.",
+      "sourceIds": [
+        "yarn:line:aaf3066d",
+        "yarn:line:cd18f73f"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Idle3",
       "orderedRowsSha256": "3a82288f567a00fa550c95229b17d06d4fc7659fa2ef163348b43e1fb074b688",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan tells the player which wall button to use when finished. The two buttons are one clarified referent.",
+      "layer1": "Button refers to the wall control, not a character.",
+      "layer2": "The character fields need no revision.",
+      "sourceIds": [
+        "yarn:line:eb019075",
+        "yarn:line:515099ec"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Idle4",
       "orderedRowsSha256": "1d2626a8e00886c171a539bd97d81454a11d998fc5b4d11968ff6ac5d6a93ab8",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-max",
+        "dnw-dragon"
+      ],
+      "conceptUses": {
+        "dnw-max": [
+          "yarn:line:d7bcbe29",
+          "yarn:line:7429dab7"
+        ],
+        "dnw-dragon": [
+          "yarn:line:d7bcbe29"
+        ]
+      },
+      "referents": "Ryan reports that Max calls him a clumsy dragon and hopes the player will prove Max wrong; them refers to Max and does not determine Max's gender.",
+      "layer1": "The singular named referent Max is described with them; Ryan is the dragon.",
+      "layer2": "The Italian Max entry explicitly leaves gender unestablished; no correction is demonstrated.",
+      "sourceIds": [
+        "yarn:line:d7bcbe29",
+        "yarn:line:7429dab7"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Idle5",
       "orderedRowsSha256": "e2c2be246c0f97abfe346d5ddf93304fd5a53fb641b40d7320fe40674dfdbd6d",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:5230bdfd"
+        ]
+      },
+      "referents": "Ryan repeats an order for washing: soap then rinse; the source of his information is unspecified.",
+      "layer1": "The sequence belongs to the service; no teacher is identified.",
+      "layer2": "The target service field fits without inventing a source of advice.",
+      "sourceIds": [
+        "yarn:line:5230bdfd",
+        "yarn:line:e861b464"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Idle7",
       "orderedRowsSha256": "4523f358c586f5ec98f2663985dace7eefdb9dd4d003f3c373a0ecca40068091",
       "count": 3,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:192fcb8e"
+        ]
+      },
+      "referents": "Ryan thanks the player and discusses removing mud; it refers to mud, not a person.",
+      "layer1": "The implicit cleaning is the service and it is mud.",
+      "layer2": "Italian service and neutral player fields fit.",
+      "sourceIds": [
+        "yarn:line:1e027369",
+        "yarn:line:8f1fccf9",
+        "yarn:line:192fcb8e"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Idle8",
       "orderedRowsSha256": "139ce807430f1b868f33cbc545cda9e9b9aab6a74257a09f91d0072cb9ed429f",
       "count": 3,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-dragon",
+        "dnw-max",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-dragon": [
+          "yarn:line:2d315c6c"
+        ],
+        "dnw-max": [
+          "yarn:line:01505282"
+        ]
+      },
+      "referents": "Ryan is the dirty dragon. Max yelled at Ryan about the mess; the line does not give Max's gender or establish their relationship.",
+      "layer1": "The dragon is Ryan and Max is a distinct mentioned person.",
+      "layer2": "Max's Italian entry leaves gender unestablished and does not imply a specific relationship.",
+      "sourceIds": [
+        "yarn:line:2d315c6c",
+        "yarn:line:bb015b1b",
+        "yarn:line:01505282"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Intro",
       "orderedRowsSha256": "8c88158dd1533447805686145af26456cb9bb88ab0364faccbcf7a3b3dee95d6",
       "count": 13,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-kobold",
+        "dnw-yip",
+        "dnw-wash",
+        "dnw-dragn-wash"
+      ],
+      "conceptUses": {
+        "dnw-kobold": [
+          "yarn:line:7ede5030",
+          "yarn:line:52bf5ede"
+        ],
+        "dnw-yip": [
+          "yarn:line:52bf5ede"
+        ],
+        "dnw-wash": [
+          "yarn:line:7ede5030",
+          "yarn:line:c48f59a9"
+        ],
+        "dnw-dragn-wash": [
+          "yarn:line:5592e639"
+        ]
+      },
+      "referents": "Ryan asks about kobolds who can wash him and whether this is the right place; the player identifies as the kobold with a yip, or welcomes him to Drag'N Wash in an alternative. The gate and button are objects.",
+      "layer1": "The player is the kobold; Yip is a contextual vocalization and the named business is distinct from the service.",
+      "layer2": "Italian name, species, expression and service fields fit; preserve the two alternatives and unspecified player gender.",
+      "sourceIds": [
+        "yarn:line:dd4b34ae",
+        "yarn:line:4b7b33d9",
+        "yarn:line:e8ee5747",
+        "yarn:line:7ede5030",
+        "yarn:line:c48f59a9",
+        "yarn:line:52bf5ede",
+        "yarn:line:5592e639",
+        "yarn:line:c3a2e14e",
+        "yarn:line:b01b2159",
+        "yarn:line:262b262e",
+        "yarn:line:9c7a2fb7",
+        "yarn:line:0a4a28c0",
+        "yarn:line:a9df4c5e"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Nag1",
       "orderedRowsSha256": "854ab7a8aa2d780fcee23b7b446c5a585e66cd1a0a7919c9ca2638a9c07c1c53",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan asks the player to come into view so he can speak.",
+      "layer1": "The two participants are distinct.",
+      "layer2": "No player gender is established.",
+      "sourceIds": [
+        "yarn:line:21235886",
+        "yarn:line:82b63c18"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Nag2",
       "orderedRowsSha256": "0c26654e5f522c4121ad61d0a4143be2562e00602d881c8813d854a829942904",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan asks to talk face to face with the player.",
+      "layer1": "The addressee is the player.",
+      "layer2": "The target character entries fit without adding another person.",
+      "sourceIds": [
+        "yarn:line:c4fc9b28",
+        "yarn:line:7ead92b1"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Nag3",
       "orderedRowsSha256": "4049ea598618ba90eee51137db9f061569ade07b09a33aa9bd55aba827c98876",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan refers generally to smaller folk and unspecified people who told him a rule of politeness; neither identifies a new named character.",
+      "layer1": "Smaller folk are generic and the informant is unknown.",
+      "layer2": "Do not invent the informant's identity or the player's gender.",
+      "sourceIds": [
+        "yarn:line:58b4f5fb"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_NaughtyTouch",
       "orderedRowsSha256": "7a80895db17ce0d4348cf90dc50f7931d032ff3f25db6f6f3aa9d9d2407db696",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan asks the player to watch where their paws go, expressing a boundary for the interaction.",
+      "layer1": "Those paws refer to the addressee, not a third person.",
+      "layer2": "Preserve the boundary and avoid adding player gender.",
+      "sourceIds": [
+        "yarn:line:014b5da5"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Outro",
       "orderedRowsSha256": "c8032a9e8029c257b028191b622386408b342739bbce3395c3223bce1d11924a",
       "count": 10,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:acb8a5aa"
+        ]
+      },
+      "referents": "Ryan thanks the player and asks a hypothetical about the player's partner making a mess. The partner is hypothetical and unidentified; yes, depends and no are alternative answers.",
+      "layer1": "The cleaning is service; the hypothetical partner is not evidence of a particular relationship.",
+      "layer2": "Do not equate the hypothetical partner with Max or assign their gender; preserve alternatives.",
+      "sourceIds": [
+        "yarn:line:acb8a5aa",
+        "yarn:line:3a88a2dd",
+        "yarn:line:991dc643",
+        "yarn:line:b57cc8ad",
+        "yarn:line:b251704a",
+        "yarn:line:0f2dc134",
+        "yarn:line:234ccfda",
+        "yarn:line:2461773d",
+        "yarn:line:c1e8b05d",
+        "yarn:line:57d8b72a"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_SmallTalk",
       "orderedRowsSha256": "edc35856793f91bb895d0574774b2c4f4bb8533cbcd6f8e4979c5afc4dce71bb",
       "count": 7,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-dragon-washer"
+      ],
+      "conceptUses": {
+        "dnw-dragon-washer": [
+          "yarn:line:5f64c352"
+        ]
+      },
+      "referents": "Ryan asks whether the player is a certified dragon washer; the player can affirm or say it is their first time. Both of us refers to Ryan and player in the first-time branch.",
+      "layer1": "The profession is explicit but certification is a question with alternative answers, not unconditional fact.",
+      "layer2": "The Italian profession field fits and does not claim certification; maintain player neutrality and branch distinction.",
+      "sourceIds": [
+        "yarn:line:5f64c352",
+        "yarn:line:e535cacb",
+        "yarn:line:e218722c",
+        "yarn:line:7305cdbc",
+        "yarn:line:7428755b",
+        "yarn:line:1706e86d",
+        "yarn:line:8136ef1a"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Soapy",
       "orderedRowsSha256": "7624e767d2f15cb8bdaef96fb58a200dcb6637917cb18321424a2ce62f46f8e4",
       "count": 3,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:2b65bf83",
+          "yarn:line:bd55b8f4",
+          "yarn:line:1ec0dc6a"
+        ]
+      },
+      "referents": "Ryan likes the bubbles and asks the player to rinse him; them refers to bubbles and the sprayer is a cleaning tool.",
+      "layer1": "Rinsing is the service and bubbles are not characters.",
+      "layer2": "The service field fits; the sprayer is not the adult mount.",
+      "sourceIds": [
+        "yarn:line:2b65bf83",
+        "yarn:line:bd55b8f4",
+        "yarn:line:1ec0dc6a"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-muddy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_1_Outro",
