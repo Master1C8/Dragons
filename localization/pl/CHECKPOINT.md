@@ -434,3 +434,7 @@ Read 111 paired English/current Polish IDs in `ryan_food_dialogue` with the thre
 ## Author semantic pass: Ryan picnic foods
 
 Read five connected basket, egg, grapes, ham and melon groups, 78 additional IDs; the cumulative author-read count is 189 / 1,947. The ID manifest `semantic-audit-ryan-food-items.json` and `semantic-audit-progress.md` record source bindings, scene context, two additional open findings and unrun route/fit checks. Resume with 1,758 remaining IDs. Findings remain uncorrected pending disposition and dependency review; independent audit is pending.
+
+## Author semantic pass: Ryan first visit and Start
+
+Read 79 IDs in the first-visit, phone, departure and source-included test node. Exact IDs and payload bindings are in `semantic-audit-ryan-first-start.json`; scene context and unrun gameplay boundary are in `semantic-audit-progress.md`. Cumulative author-read coverage: 268 / 1,947; resume at the remaining 1,679 IDs. The four earlier findings are still open, and independent audit remains pending.

@@ -23,3 +23,9 @@ Findings pending disposition and dependency review:
 - `yarn:line:7d9ffc48`: “nothing beats a large gulp” contrasts swallowing with savoring; `nic nie przebije wielkiego kęsa` suggests a bite. Review the swallowing animation and adjacent ham lines before selecting an equivalent.
 
 These 78 IDs plus the 111 Ryan conversation IDs make 189 distinct author-reviewed IDs. The remaining 1,758 IDs and all independent acceptance remain open.
+
+## Ryan first visit and Start node: 79 IDs read
+
+Read first-arrival window, gate, customer interaction, wash conversation, phone guidance and departure nodes, including the option-specific replies and Yip misunderstanding, against both English variants and Polish. The phone points to the window, then entry; the departure asks to open the gate, not enter it. The stock naming and grammatical differences across builds are compatible with the shared targets. `Start` is a source-included Yarn development/test node with eighteen individually numbered test lines; their numbering and the Unity/Yarn references are preserved. The actual availability of this node in normal gameplay and these authored route transitions have not been established by this reading. No new semantic finding was identified in this unit.
+
+Cumulative distinct IDs read: 268 / 1,947; 1,679 remain. This is author work, with independent acceptance and all unrun checks still open.
