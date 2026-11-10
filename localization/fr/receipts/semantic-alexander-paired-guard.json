@@ -1,0 +1,26 @@
+{
+  "translationSha256": "143af1a40ca0b04066f7564b49b16ad45ec246998a83e4184eb89148f133e73b",
+  "command": [
+    "/Users/antonkrutov/Desktop/Forest/.venv-assets314/bin/python",
+    "-B",
+    "localization/verify_authored_yarn.py",
+    "localization/fr/translation.json",
+    "--locale",
+    "fr",
+    "--inventory",
+    "localization/work/source-inventory-20261107/combined-provisional-v42-20261110.json",
+    "--yarn-scope",
+    "localization/work/yarn-markers-20261110.ridbPA/yarn-scope-v42.json",
+    "--complete"
+  ],
+  "result": {
+    "locale": "fr",
+    "completeInputRequired": true,
+    "checkedDialogueBindings": {
+      "macos": 1823,
+      "windows": 1823
+    }
+  },
+  "worklistSha256": "ef9d5709b061ea426c2e113373fdbfde547c6518f6394a4afc325204dea89cf8",
+  "pairedStableIds": 1947
+}

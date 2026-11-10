@@ -2,7 +2,7 @@
   "schema": 1,
   "locale": "fr",
   "beforeSha256": "94a770766b67a6be5f9337bb174543c010826ec87450b18f5c6e1dbf0e0f0325",
-  "afterSha256": "ae9084fbd273274170e815668922583c9c1b3d89d5583ad17a76f83f1689a19d",
+  "afterSha256": "143af1a40ca0b04066f7564b49b16ad45ec246998a83e4184eb89148f133e73b",
   "edits": {
     "yarn:line:8c8591ec": {
       "sceneSpans": [
@@ -585,6 +585,30 @@
       "glossaryReferentSourceIds": [],
       "runtimeSourceIds": [],
       "reason": "Describe the knot-pop sound rather than an untying."
+    },
+    "yarn:line:15bcd86c": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_questions",
+          "firstInstruction": 144,
+          "lastInstruction": 172
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Restore the direct repeated rebuttal to the player’s No way while retaining Alexander’s certainty in both branch targets."
+    },
+    "yarn:line:4d49ae72": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_questions",
+          "firstInstruction": 144,
+          "lastInstruction": 172
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Restore the direct repeated rebuttal to the player’s No way while retaining Alexander’s certainty in both branch targets."
     }
   }
 }
