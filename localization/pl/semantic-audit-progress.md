@@ -196,3 +196,9 @@ Compared the alternate Alexander introduction and Igwyx accident, his professor 
 Finding pending disposition: `yarn:line:0bc044da` translates the question “You ready for this?” as the overly formal noun `Gotowość?`; seek a natural gender-neutral conversational question without changing agency.
 
 Cumulative distinct IDs read: 1,824 / 1,947; 123 remain. Author review only; independent acceptance remains pending.
+
+## Interface, credits, settings and speaker labels: 123 IDs read
+
+Compared the available stock English on each platform to Polish for save and loading labels, wash-state indicators, credits and sound attribution, repeated Windows pause controls, settings and their options, managed displays and speaker labels. The platform-only settings and Windows-only pause instances remain distinct, and credits line breaks are retained. The source’s draft ending text is presented as such. UI bindings and actual use were considered from the earlier v2 package/runtime evidence; it is bound to the previous payload, not proof of this translation hash. Long status and window-mode labels need fit review on each build. No new source-level semantic finding.
+
+Cumulative distinct IDs read: 1,947 / 1,947. The author comparison is complete as an initial pass, with recorded findings still requiring disposition and corrections and independent acceptance pending. This is not a gameplay or visual pass.
