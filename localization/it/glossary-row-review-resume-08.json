@@ -4308,6 +4308,455 @@
           "decision": "Conrad thanks the player for the experience."
         }
       ]
+    },
+    {
+      "group": "Alexander_1_Outro",
+      "orderedRowsSha256": "99bcd208cef7d4aa7b009f553d50292b98afb0993b22a435fc1cc33de7b5b7ad",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-dragon-washer",
+          "sourceEntrySha256": "70f6f7b0f545b32f5a98233380b01eda5a369c67c4d2969c55e02a1782a18aa9",
+          "localeFieldsSha256": "2a85f72db9fb40d18dc57ace708e091d432e3a63aba15051e6b89ea74973f09a"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        },
+        {
+          "id": "dnw-yip",
+          "sourceEntrySha256": "732298762db192f5e97009d5a3babdf06857b777d65975115662abe32637b079",
+          "localeFieldsSha256": "649610e6e5ee14c04df3df24b4118f349f79952954c42995d92625488a26e8e9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:fd68807c",
+          "pairedRowSha256": "4c690b021d1acbde0d09c4e1cdce19f14ba6498db5164c6ce9b4f7b5be199239",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-dragon-washer",
+            "dnw-wash"
+          ],
+          "decision": "Alexander compares the player’s work to that of unnamed private washers."
+        },
+        {
+          "id": "yarn:line:5efde4e2",
+          "pairedRowSha256": "a0d18ce64e8c76750c8f197b6f65be5ca6bff717e52e42b499ca4bff4ae23d2f",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-yip"
+          ],
+          "decision": "The player can answer with the Yip vocalization."
+        },
+        {
+          "id": "yarn:line:729cea0c",
+          "pairedRowSha256": "1ceea2eb6a1605168d97ff27c3c853fbe8cfb26a533b963b3d5d1aaef6719b84",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can say they always do their best."
+        },
+        {
+          "id": "yarn:line:c8cde395",
+          "pairedRowSha256": "fe6ea99e04b05c8898aed37d3603acc54a87aae5a5b55624af6cf9c0d8aa96ae",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-yip"
+          ],
+          "decision": "Alexander repeats the Yip in response to the player."
+        },
+        {
+          "id": "yarn:line:e4aced7b",
+          "pairedRowSha256": "a3045124d1f9232bf6bcbde1b559bdc3e50e02acd7c7cf8fc5a2b0dbb92a312c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander praises the player’s work ethic and mentions his unnamed students."
+        },
+        {
+          "id": "yarn:line:75b152eb",
+          "pairedRowSha256": "354c3d71b27fe4a8087ae5f48ccd5b2a72031f8ff4cb36ed5335b92da8f4aa3d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander says his class is soon."
+        },
+        {
+          "id": "yarn:line:e381559c",
+          "pairedRowSha256": "8e82460a6dcd878a0eac26a071777d892f0abb3bf8d1589e2bf594efc96c02ce",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander thanks the player."
+        }
+      ]
+    },
+    {
+      "group": "Alexander_1_required",
+      "orderedRowsSha256": "e4c0da992215d90362dba2ac2070856e85651781e36ffb88d8e556e3f9138f68",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:73e4789c",
+          "pairedRowSha256": "4d24e27bceeb125b4c1eb9db8d06fa272ade3566e81f3dd0af1d23b4cf4973ed",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander describes the environment as proletarian; environment is misspelled in Windows."
+        },
+        {
+          "id": "yarn:line:e5d47feb",
+          "pairedRowSha256": "01612e0a2e3267880a620cfaab4422df64630176bc2257c4082b74620c895764",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "A player option expresses confusion at the word, with markup."
+        },
+        {
+          "id": "yarn:line:8512365e",
+          "pairedRowSha256": "2fbb3eebff030ebb26306eda9a9345bdceb9b50c48b434c037acfc035cb358f7",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "A player option thanks Alexander."
+        },
+        {
+          "id": "yarn:line:74c9c07b",
+          "pairedRowSha256": "1c15023bb26bd62bb9cfd4bebde163db0032f59588cd0e02b60c8fbc00344285",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The exchange glosses proletarian as working class; individual voice routing should be checked if required."
+        },
+        {
+          "id": "yarn:line:e2f9c70c",
+          "pairedRowSha256": "e2f9415fe0d475d218fa9dd70332c74ed97567893e48f0123e07b4b03e06d5ef",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander clarifies that he enjoys the player’s wash establishment."
+        },
+        {
+          "id": "yarn:line:13223129",
+          "pairedRowSha256": "116e4f906b0fd7a0f55c603f60eb3e415b79c874119f5098a3406d95522d3c0b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Brief response in the exchange; individual voice routing remains unproven by this row alone."
+        },
+        {
+          "id": "yarn:line:a97338b0",
+          "pairedRowSha256": "59e1bc7d4f25dc0199be6d4408b88f59c4f7b48acb92d82e49b4b35b3b1078a0",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander remarks on public availability of places such as the wash."
+        }
+      ]
+    },
+    {
+      "group": "Alexander_2_required",
+      "orderedRowsSha256": "a8ea0d7cef86338e7be555b5d6eb25fdde2139251b5c5c7ba81a33040c649339",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-igwyx",
+          "sourceEntrySha256": "66ad2b67f8ff6ddf6faf87daf25948de76082040baa5fba50b5a1f24a05b2f3a",
+          "localeFieldsSha256": "098ca2cedf2af074af1e3995e8a787ba4496c7f3ec5b6060d6c77b25fb1ff55e"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:7fe349d7",
+          "pairedRowSha256": "3b7228f4e46d32494695770029e684ef4fb1168c32277c0d8b608fb83a80606e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander is embarrassed by the ordeal."
+        },
+        {
+          "id": "yarn:line:e9d34ea0",
+          "pairedRowSha256": "52e9739b38dc1f31b91feaea64d3998fd80c908ba2c17dea4b0c4ec7e1b3517f",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can reassure him that everyone appears fine; everyone is not individually enumerated here."
+        },
+        {
+          "id": "yarn:line:eefef647",
+          "pairedRowSha256": "ad7063788b3e719c200509e5fd48bf32e6f231fd6f1a4fb474880495eceaf6d8",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can say he need not be embarrassed."
+        },
+        {
+          "id": "yarn:line:78cef130",
+          "pairedRowSha256": "5ebfc506d29043651b58e95e193d830336c0fcd7dbf230535c65fe1372cf8249",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Alexander calls himself a risk-averse dragon."
+        },
+        {
+          "id": "yarn:line:89150715",
+          "pairedRowSha256": "84870e092268b13d740d581dcb5afb47b7e909f4a003e5b2c317bf0e9c95f6dd",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander responds that the player’s comment is kind."
+        },
+        {
+          "id": "yarn:line:1f250062",
+          "pairedRowSha256": "050b78883a18aaaec5bece3c3225a3a9abc2ce036839d0fbdebc8599bb27aa4f",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-igwyx"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander contrasts his lasting reputation with Igwyx’s fleeting physical forms."
+        },
+        {
+          "id": "yarn:line:a57409fb",
+          "pairedRowSha256": "7b98e07d2b5517925ba1c148f3c546e56f2985042d6d79dec841c08905461434",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander says his reputation is the source of his worry."
+        },
+        {
+          "id": "yarn:line:33440e8c",
+          "pairedRowSha256": "c06f45b5ebfc055f9ee73def445ebf9a6276b3ff43cfcc02c957181dbbecde54",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander tells the player why they are perfect for the job."
+        }
+      ]
+    },
+    {
+      "group": "Alexander_Intro",
+      "orderedRowsSha256": "41b2d22707802c51c0afd5755e466e0b5c596cd06fe0b9a02319648e99ac2f28",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:c7b73162",
+          "pairedRowSha256": "557fdf47e075efbfe096f17eb6b6450dbb3dbed9fbb5332a21a806a042de6848",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander signals quietly."
+        },
+        {
+          "id": "yarn:line:7de638fb",
+          "pairedRowSha256": "691ec9944ab489193b428278a0bd553a2b93e475d36031610130a76aa30c054c",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can greet the unseen visitor."
+        },
+        {
+          "id": "yarn:line:ebd63f8c",
+          "pairedRowSha256": "26c320f814ef468d07f38a8be54c330f89406a202257f33e9281bc1e51678c29",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can ask who is there."
+        },
+        {
+          "id": "yarn:line:48435b12",
+          "pairedRowSha256": "08bea7e4fe4b7c269fa32497f54c84ea81657a1388a53d3617a7175c3f66985b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander asks for quiet and says he is not local."
+        },
+        {
+          "id": "yarn:line:de735c65",
+          "pairedRowSha256": "9d97b5e9ff10496bbf7667b132715afb49c45d89984eac25b5731659524f1021",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander asks whether the establishment is open."
+        },
+        {
+          "id": "yarn:line:642255fc",
+          "pairedRowSha256": "152f95acb06b3b44ab82b63fd28100db8f500610c4f645d0c1259b009fdec39a",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player confirms."
+        },
+        {
+          "id": "yarn:line:f212528b",
+          "pairedRowSha256": "3f899ed90846b08989f3bfae26eb0e1ab03c6fdddd5ee917fbd61a26a297d931",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander describes an accident needing discreet attention."
+        },
+        {
+          "id": "yarn:line:630fed1b",
+          "pairedRowSha256": "d511f12b3c06c5fb283021072708879e1cdf6c5c757f5fe3c1633f7f6896c4b9",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander requests that the player remove the barrier."
+        }
+      ]
     }
   ]
 }

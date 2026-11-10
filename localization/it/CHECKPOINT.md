@@ -251,3 +251,7 @@ Sixteen additional groups / 23 rows have source and Italian glossary author self
 ### Resume 08: Alexander and Conrad interaction row unit
 
 Eight additional complete groups / 21 rows have paired, hash-bound author self-reviews; individual voice routing remains explicitly unresolved for unprefixed intimacy lines. The row receipt now covers 89 groups / 223 rows; 104 groups / 1,724 rows remain without equivalent full row-level receipts. Earlier scoped evidence remains valid at its exact binding. The two author layers do not constitute independent acceptance. Shared source and exact-preservation gates remain open.
+
+### Resume 08: Alexander conversation row unit
+
+Four more complete groups / 30 rows received hash-bound paired-source and Italian-field author self-reviews. The receipt now contains 93 groups / 253 rows; 100 groups / 1,694 rows lack equivalent full row-level receipts, with prior scoped evidence retained at its actual binding. Some individual voice routing remains unproven. Independent acceptance and the shared source and exact-preservation gates remain open.
