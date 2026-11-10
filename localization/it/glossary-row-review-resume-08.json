@@ -12362,6 +12362,11 @@
           "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
         },
         {
+          "id": "dnw-wings",
+          "sourceEntrySha256": "3c78fd3362268274dc2ac3cd2e8bc39fffddeca807a1acef1e24454df105aba8",
+          "localeFieldsSha256": "653487a443f6e2de0037759a9adfbfbf166508764e3d4771dbd30cdc94c10764"
+        },
+        {
           "id": "dnw-wash",
           "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
           "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
@@ -12416,8 +12421,10 @@
           "characterReferents": [
             "dnw-conrad"
           ],
-          "conceptUses": [],
-          "decision": "Conrad names his preferred downtown club Wings; no glossary identity is inferred for it."
+          "conceptUses": [
+            "dnw-wings"
+          ],
+          "decision": "Conrad names his preferred downtown club Wings, the glossary venue."
         },
         {
           "id": "yarn:line:629f8cff",
@@ -12426,7 +12433,9 @@
           "characterReferents": [
             "dnw-conrad"
           ],
-          "conceptUses": [],
+          "conceptUses": [
+            "dnw-wings"
+          ],
           "decision": "Conrad says he is well known there."
         },
         {
@@ -12436,7 +12445,9 @@
           "characterReferents": [
             "dnw-conrad"
           ],
-          "conceptUses": [],
+          "conceptUses": [
+            "dnw-wings"
+          ],
           "decision": "Conrad offers good seats for the show; preserve emphasis."
         },
         {
@@ -13601,6 +13612,820 @@
           ],
           "conceptUses": [],
           "decision": "Ryan says he will manage."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_3_required",
+      "orderedRowsSha256": "bd3bf2921565f4352ed124f4d9e798a83bb48d2cab5b182fc798df7019e48438",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:df4d3810",
+          "pairedRowSha256": "0a0c750572a2c3c4a9c0f4842709e906d49f5abd42e115a3c687b84d02d70559",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan returns to the earlier discussion."
+        },
+        {
+          "id": "yarn:line:497d3f67",
+          "pairedRowSha256": "d32c3d27e5456ae874984bef4d4298439d33fe122ef5c57161b6e9d849dd752f",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan sets the time a few days earlier."
+        },
+        {
+          "id": "yarn:line:eae85bf9",
+          "pairedRowSha256": "f1d726715fc17ed59eb14bda7841235e43c73f54b428a7e776eab527a7fad7e0",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says he broke up with his partner; she is not named."
+        },
+        {
+          "id": "yarn:line:7cd85c8e",
+          "pairedRowSha256": "848edc872f028225a33b06879ad3cec913d4e67e1b4d6a9f9b5b6620ea1de488",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player expresses sympathy."
+        },
+        {
+          "id": "yarn:line:c6895517",
+          "pairedRowSha256": "2964f1ffd834f65189214f8b53a196ffd760d15b3f622543ffc5044da824f12e",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate sympathetic response names Ryan."
+        },
+        {
+          "id": "yarn:line:50b95260",
+          "pairedRowSha256": "c59bee47d66be361980dc48e40b8955125ac51162c4b22cae367ee293ac4ad84",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan refers to the unnamed former partner with she; do not invent a name."
+        },
+        {
+          "id": "yarn:line:c1a4edf0",
+          "pairedRowSha256": "3033c601bc8db64251a3a42a0632ca157fda4b4a37765f8cf2d53aa6ee262b47",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan refers to the same unnamed former partner with her."
+        },
+        {
+          "id": "yarn:line:5794ea87",
+          "pairedRowSha256": "eda73bf34a7ebc2aef75e315a7e5247c43350d5748ccfba732356c86f73cead0",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says justification does not make the breakup feel good."
+        },
+        {
+          "id": "yarn:line:34ba77b1",
+          "pairedRowSha256": "6f4fd894d47ce0bdb45905dd7f59da2531adae8529cf1268bb03454274355cc9",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player supports Ryan’s decision."
+        },
+        {
+          "id": "yarn:line:18db795f",
+          "pairedRowSha256": "278e3798a89ba882b9c0faad87b1e767cfcd80a8a30ccf051e58a974acf6b9f2",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player acknowledges that endings are difficult."
+        },
+        {
+          "id": "yarn:line:a28a70c6",
+          "pairedRowSha256": "a8f72e4eb3fae61385eacf7655bbf6d97039a6905064b2f38bb3d2ac5311f242",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says he met the player because of it."
+        },
+        {
+          "id": "yarn:line:8eeb7e28",
+          "pairedRowSha256": "5bb54d72ea8c17865a8a936c0ea11ea25cdccb471db9ef5d3a5f9964ee13da37",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan agrees that ending things is difficult."
+        },
+        {
+          "id": "yarn:line:2d7e1ab6",
+          "pairedRowSha256": "5b9d79f01f5c7f43bacfc05d207c6288e936a94e24e020611512de8243249f58",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan is glad he met the player."
+        },
+        {
+          "id": "yarn:line:bb4e1dc1",
+          "pairedRowSha256": "f43617509dd33e06085007c1d2e3c1b41c38947567ef6659a771ae165f19dfaa",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player names Ryan and reciprocates."
+        },
+        {
+          "id": "yarn:line:011f1458",
+          "pairedRowSha256": "cea3f42bdd3779f502fd89eb8994087ce83b7ebe4b4092c03728a2e933172d2e",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Brief thanks; isolated voice not assigned."
+        },
+        {
+          "id": "yarn:line:972f132f",
+          "pairedRowSha256": "83ea70f976ef1abbec056fe206fe7c5a92fc6f81907d33e23e59165a4eeaa9e2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Ryan says the washes make coping easier."
+        },
+        {
+          "id": "yarn:line:0632acbf",
+          "pairedRowSha256": "fa2101d1e8b6d646234dda4110e5d53bf73185bd419a10660438baa961805d61",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Ryan adds that washes feel nice."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_3_Outro",
+      "orderedRowsSha256": "0ffe7ae6e161850e059ac272fa603c470776dec51e09d5a15e00227907e314b6",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:3750bbf0",
+          "pairedRowSha256": "d0d31695ac59af52d2c8b863c5924b3d6502a3a8c7f3bf9398cd2cd7d92945f0",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Completion remark after the service; isolated voice not assigned."
+        },
+        {
+          "id": "yarn:line:d2d97c90",
+          "pairedRowSha256": "fabe28b1fe4d242000d6698ea065ba9f393e59a463419e9f4521eddf1a5c1798",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan thanks the player for making the situation easier; builds differ by an article."
+        },
+        {
+          "id": "yarn:line:44e97be7",
+          "pairedRowSha256": "50634a72745e318fcd3a6046c77b39ed6934ebf3f3d1429e243a4beab0ea1318",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player welcomes Ryan by name."
+        },
+        {
+          "id": "yarn:line:68887509",
+          "pairedRowSha256": "b1d9cf31462b0e78345170a9d87895ce5c19ad58445593e0149001e002bb83f3",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player calls Ryan a favorite client."
+        },
+        {
+          "id": "yarn:line:feb8727e",
+          "pairedRowSha256": "2d6e53ae4b340867a61206c1e63ce32ae2a3a93011c91e9738970b8bdbdf69cf",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says the player makes him feel welcome."
+        },
+        {
+          "id": "yarn:line:cb1d1197",
+          "pairedRowSha256": "059a32a5aab39cf34de1d3b7fc7f3f2e926de17861284432ae2d91c5370e6231",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An unfinished question about their relationship; isolated voice not assigned."
+        },
+        {
+          "id": "yarn:line:5d2d16e0",
+          "pairedRowSha256": "da349aed1857c5dace36308d912147ee31cb11496abe9282e3cd7abc3448da5f",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Completion of the question as good friends."
+        },
+        {
+          "id": "yarn:line:e77c1f79",
+          "pairedRowSha256": "3340968b889cb6da0d98b046182dbcf4b613a86f8ee1ef1cc1b45d306e67c1dd",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Affirmative response with size and italics; builds differ by an apostrophe."
+        },
+        {
+          "id": "yarn:line:e051a79e",
+          "pairedRowSha256": "03417aac003fc53a22b13f0e5347c96ef9f0a1cc17c78d52fb57c55d846e0b47",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Friendship is reciprocated."
+        },
+        {
+          "id": "yarn:line:714c180e",
+          "pairedRowSha256": "7b54a1e2349dcac3c6e39c0085fbc5df06ef85d81143fea39241b9eca585f74d",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An expression of relief."
+        },
+        {
+          "id": "yarn:line:7661a0e9",
+          "pairedRowSha256": "6a9cb25d9564762eafe750edffb2e687dd4526102ecd213130132a90a9716989",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Informal thanks."
+        },
+        {
+          "id": "yarn:line:118a51bb",
+          "pairedRowSha256": "f99622abf826f92be54bafbcb97d7d9dac827d268188ea48bc57b51390256188",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Scales idiom expresses leaving the other alone, not a new character."
+        },
+        {
+          "id": "yarn:line:87ba56cc",
+          "pairedRowSha256": "53b8b8ca589b5874792a70e6d83ff948206b2b38796a4d98204a7ea465e78cf1",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The speaker anticipates another visit."
+        },
+        {
+          "id": "yarn:line:3deb5f55",
+          "pairedRowSha256": "bc07e859de4c633e1ae37dbcca2d415428a8a58facacd8ba8c6c04612148d870",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Offer to open the gate."
+        },
+        {
+          "id": "yarn:line:abdb5822",
+          "pairedRowSha256": "c82d4f574628864ce7486beef4b4035cbc4dc3312abce9949f2acf443e6734cc",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Anticipation of meeting again."
+        },
+        {
+          "id": "yarn:line:084e3cbc",
+          "pairedRowSha256": "040113ec3fe5430098ef8545f0f5791e6ce6fa7c1a0ffdfa06519bc4fbe4ea94",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A farewell."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_grab_basket",
+      "orderedRowsSha256": "e18d083c0aa522f7a424fc00a5d8c7f6499b376625bf5c1e94670d48ead3ed4c",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        },
+        {
+          "id": "dnw-yip",
+          "sourceEntrySha256": "732298762db192f5e97009d5a3babdf06857b777d65975115662abe32637b079",
+          "localeFieldsSha256": "649610e6e5ee14c04df3df24b4118f349f79952954c42995d92625488a26e8e9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:9be63f47",
+          "pairedRowSha256": "d385f7de516c6f3a314bf43e48c6d8bad2ad668184ec61268b8efbc629b0377b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan thanks the player for taking the basket."
+        },
+        {
+          "id": "yarn:line:0dd63830",
+          "pairedRowSha256": "c3ce4f25af5a26a4b6a64506a237e612c4bd88daf50ffbbbe1de9f599d646147",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player asks about the food."
+        },
+        {
+          "id": "yarn:line:f0427bb9",
+          "pairedRowSha256": "f6bc40a51425ace7b8a6f7384de889fa94e63b574021634c7ca475ab8c8f3100",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player names Ryan and appreciates the gesture."
+        },
+        {
+          "id": "yarn:line:66727cce",
+          "pairedRowSha256": "47f48877d5cbe489b403e58cf3c2d229f08a422ed595c042b86145e6351e42f4",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says the food should suit both of them."
+        },
+        {
+          "id": "yarn:line:4a137220",
+          "pairedRowSha256": "9e667926b5882e810f7dde49408e2277a36bbb66635e79512a10c46bbe5bf3db",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate response says the food should suit both."
+        },
+        {
+          "id": "yarn:line:dc237557",
+          "pairedRowSha256": "92febf6b0490e7f74319fb9e3143592823320c1ae51215f36b13c8f9acccd7e2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Ryan describes the portions as dragon sized; this is an adjective, not a named individual."
+        },
+        {
+          "id": "yarn:line:7fb611c9",
+          "pairedRowSha256": "758635648708d25686158b094cd45c5849e3f0cafae66fe0ee757d69b5ef058b",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player asks why Ryan brought the food."
+        },
+        {
+          "id": "yarn:line:c5e71850",
+          "pairedRowSha256": "de416a115981feb1f92e5302872933d8ab99bbbe862f922ed64efdf419fcc76c",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The player asks if Ryan needs a wash."
+        },
+        {
+          "id": "yarn:line:e98616be",
+          "pairedRowSha256": "6b5ac42c94c12d6fe881f78740f9f197ab33ca07132cf38021e0fa52517c8b09",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says the food is for the player."
+        },
+        {
+          "id": "yarn:line:53d71f27",
+          "pairedRowSha256": "b31a1fed4725d00241f79fbc43c13771e630b70c00fd47af230a27c439d0cb1a",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan adds that it is also for him; preserve size markup."
+        },
+        {
+          "id": "yarn:line:54faa7c0",
+          "pairedRowSha256": "f03f1f89fecb0599d4d29c45a63bf10d938d69f17111d7acd1008d799e701b1b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Ryan does not think he needs a wash."
+        },
+        {
+          "id": "yarn:line:c2caa0b7",
+          "pairedRowSha256": "a56d510fec5013e0f072715bc81baf04ef0f17731d788d72843fed7f9a2c4b34",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says he came to bring the player food."
+        },
+        {
+          "id": "yarn:line:274367d7",
+          "pairedRowSha256": "6890ff64c89017a13b0d6b2461aeafb8462787b51196cb66c078a79225c71dd2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan explains the gesture as thanks for prior help."
+        },
+        {
+          "id": "yarn:line:b17360a0",
+          "pairedRowSha256": "17fee0db7d584cdd8c305a5791e6a085c0f3996b347e39b8faee3edd12d5e81d",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A question whether the gesture is acceptable; builds differ by apostrophe."
+        },
+        {
+          "id": "yarn:line:0b226939",
+          "pairedRowSha256": "01bd6b452188838a791fe9d7abc852113de5e17a7ec06b846fea4fdb8901aae9",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An affirmative response."
+        },
+        {
+          "id": "yarn:line:3e870ad0",
+          "pairedRowSha256": "7d379a6da28cac94b63f48eac5da13f46265cb5a1fe2ea198fa986fbc4a43e57",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-yip"
+          ],
+          "decision": "Player vocalization Yip functions as an affirmative response here."
+        },
+        {
+          "id": "yarn:line:9d126e4e",
+          "pairedRowSha256": "278d7156f740dfa784ec7f6adf6adedcd720402d7e75bd03b5a71fc35e0b2440",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Glad response."
+        },
+        {
+          "id": "yarn:line:a8b70da7",
+          "pairedRowSha256": "d83c92a1e1905e8e08076f08495b035517a07af96cd6d2d1d66afdb037428fed",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-yip"
+          ],
+          "decision": "The response interprets the vocalization as agreement."
+        },
+        {
+          "id": "yarn:line:12e6043e",
+          "pairedRowSha256": "f7be87d66217b4795e0419e7c47ec5d54e42fc021293af38cef0504af18c1783",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A prompt to eat."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_5_Required_conrad_romanced",
+      "orderedRowsSha256": "aa39cfb79e98755c34ce7c09c0690edcdb593cdfb853eaadf159460bd7c9e995",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:3cda84e6",
+          "pairedRowSha256": "c347b4ef9874f1bcf97f9ecb838c1f1d8a0557297ec2ef277e067194f94eb5df",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks for more about Conrad; the source uses lowercase conrad."
+        },
+        {
+          "id": "yarn:line:aaea8391",
+          "pairedRowSha256": "bf51e185b266cfa4275f21b99452e8da72f90d60f6b604fe0edff970ce68f89c",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad is said to have become nicer."
+        },
+        {
+          "id": "yarn:line:7deb9fff",
+          "pairedRowSha256": "8ce8bd78a38fe9682024f037308cccfe334789170123bd95312a21bdd2c63208",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad is compared to a soft person surrounded by sharp parts."
+        },
+        {
+          "id": "yarn:line:4f6344f1",
+          "pairedRowSha256": "1e4886fd11b5363887e2353c86b29c808d054f273a942c259b68a650ac5910cb",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The speaker describes Conrad as sounding hotheaded."
+        },
+        {
+          "id": "yarn:line:d9534386",
+          "pairedRowSha256": "a66ffe0f4c677d2bae998a7d682cc7d2f15466607f64af18381750ff0e38c3d4",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A generalization about people of that temperament, not a specific named referent."
+        },
+        {
+          "id": "yarn:line:63024a1f",
+          "pairedRowSha256": "d36b7df93c379ee8b6f915a3127a87b31b6a873ce1bcb365319fd4a454db5679",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad is said to have improved."
+        },
+        {
+          "id": "yarn:line:7ac62718",
+          "pairedRowSha256": "f62194bcf09afec1b3c337cf1bcb684df26cfda56f8bff07465d14f85d2845bf",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A positive response."
+        },
+        {
+          "id": "yarn:line:f5324d68",
+          "pairedRowSha256": "addd1a3153092d57706d1351193a42c4a16913699f4a22cce1859adc20fd5c2d",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The speaker welcomes the news."
+        },
+        {
+          "id": "yarn:line:56a729f6",
+          "pairedRowSha256": "2a3f686a7dc797497bc248f5eb0ef95d6f1b401d460c88430f6320c3bbe1ad76",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The man who can improve refers to Conrad in context."
+        },
+        {
+          "id": "yarn:line:c0972e81",
+          "pairedRowSha256": "901441b2e92c494be531a2536a4fed292951a289b8d82d3cebfc5ef9e733d41e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The speaker is glad Conrad and the player are doing well together."
+        },
+        {
+          "id": "yarn:line:ecf6206f",
+          "pairedRowSha256": "1f5a975e9bdb9af6a6ed72897b54b2c501d1cb1c0d272f639bb52b8eff4bf44c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate branch expresses the same relationship support."
+        },
+        {
+          "id": "yarn:line:ebdb9888",
+          "pairedRowSha256": "e66c5ca151c51f4e0752fe55b9ad8d4fd997eda7c3f97f452a8fd68b23748397",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A comment about the general temperament described."
+        },
+        {
+          "id": "yarn:line:807fdc76",
+          "pairedRowSha256": "ca1815848f49b0abc0b4394d20df4346c0e6f2ede2019059cc88e87555090265",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The speaker asks whether Conrad has improved."
+        },
+        {
+          "id": "yarn:line:164fdb01",
+          "pairedRowSha256": "92c8622f925ccbf1830a32906b41c9e92b6f2d726b45289b5c68e0bedec04df4",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad is trying to improve."
+        },
+        {
+          "id": "yarn:line:99bbb171",
+          "pairedRowSha256": "6eaabc111689652e3d863a517fb2c7cf25cf2f619d2fbab1b824288c8e42aded",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "A speaker attributes Conrad’s earlier situation to a bad environment; this remains their opinion."
+        },
+        {
+          "id": "yarn:line:ac1ed298",
+          "pairedRowSha256": "947849ce837c8207607fff365d8ea176134a52355afe4668b8455d32e41ad22f",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A general response about improvement."
+        },
+        {
+          "id": "yarn:line:3a2ed5ef",
+          "pairedRowSha256": "a230da09390dbe7bc52dc23ff25783a8b49a84e7ec37602339d896d2919523fd",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The speaker is glad that Conrad and the player are doing well together."
+        },
+        {
+          "id": "yarn:line:0f8bb606",
+          "pairedRowSha256": "0ba02f68f460b2b7b7fbfdd357cdbf5576468584c5c90bff366620b669ff18eb",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The speaker welcomes the news."
+        },
+        {
+          "id": "yarn:line:b5dabf9f",
+          "pairedRowSha256": "d8a5991ddf531d27f6ad7bbf9199363301445b1b626013a4f4662a1396b902ea",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate branch refers to Conrad as a man who can improve."
         }
       ]
     },
