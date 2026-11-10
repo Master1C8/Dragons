@@ -10,7 +10,7 @@ Updated 2026-11-10. Scope: standard Italian (`it`), English source, macOS `9/12/
 
 ## Resume 10 — current bounded reconciliation
 
-The resume-10 named-entity note contained unsupported descriptions of Igwyx and Max; these were withdrawn against the actual paired source lines in [the review record](glossary-review-resume.md). A bounded two-layer reconciliation of special endings, the adult mount, Yip and drake is also recorded there. Character, species, profession and wash semantic reconciliation remains open; do not accept the glossary on link counts. The shared source/preservation and bounded renderer gates remain passed for the pinned inputs. No special-scene target decisions or game text have been authored. Final independent game-text audit is still separate.
+The resume-10 named-entity note contained unsupported descriptions of Igwyx and Max; these were withdrawn against the actual paired source lines in [the review record](glossary-review-resume.md). A bounded two-layer reconciliation of special endings, the adult mount, Yip and drake is also recorded there. The player, kobold, profession and wash decision boundaries were additionally reconciled in bounded source contexts. Remaining character and species reconciliation is open; do not accept the glossary on link counts. Individual unprefixed voices in the Ryan intimacy scene remain uncertain at the paired text and scope boundary and must be addressed in special-scene routing and wording. The shared source/preservation and bounded renderer gates remain passed for the pinned inputs. No special-scene target decisions or game text have been authored. Final independent game-text audit is still separate.
 
 ## Input bindings
 
