@@ -1,9 +1,9 @@
 {
   "worklistSha256": "9ee266ffbc4643e5b269b75ca03edfb763f1178d3803aa65b627d487c2b0535a",
-  "translationSha256": "b3062e15d7b8705ee4845da4fbde54557409d5a7432ee9c6dcfd7b9a6171dc2c",
+  "translationSha256": "03e3c507184bd03fcbbd502b500d8469a5fa5f37e5fb8bf99b63742a15ed10bf",
   "verifiedRegistryAndSourceBindings": 13,
   "caseCount": 27,
-  "authoredRows": 1584,
+  "authoredRows": 1645,
   "note": "All direct authoring rows and Yip contexts are drafted. The Ryan/Conrad root choices, captions and immediate feedback are drafted; the forward route index includes ordinary later story nodes, whose translation and final branch/runtime checks remain pending.",
   "cases": {
     "alexander-number-seven-taste": {
@@ -104,13 +104,7 @@
       "registry": "localization/evidence/special-scenes-romance-20261107.json",
       "directAuthoringRows": 5,
       "directNonAuthoringIds": [],
-      "unauthoredIndexedContextByGroup": {
-        "Conrad_5_outro_conrad_romanced": 9,
-        "Conrad_5_outro_ryan_conrad_romanced": 9,
-        "Conrad_5_required_conrad_romanced": 14,
-        "Conrad_5_required_ryan_conrad_romanced": 13,
-        "Conrad_5_required_ryan_romanced": 16
-      }
+      "unauthoredIndexedContextByGroup": {}
     },
     "editor-route-prompt": {
       "registry": "localization/evidence/special-scenes-ryan-language-20261107.json",
