@@ -4489,7 +4489,8 @@
           "pairedRowSha256": "2fbb3eebff030ebb26306eda9a9345bdceb9b50c48b434c037acfc035cb358f7",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-alexander"
           ],
           "conceptUses": [],
           "decision": "A player option thanks Alexander."
@@ -7445,7 +7446,8 @@
           "pairedRowSha256": "ff15aebb9efa7a52aa4e5b22bd8e193fa339d85734c53c029b86e57b0df1ea0c",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-ryan"
           ],
           "conceptUses": [
             "dnw-dragn-wash"
@@ -12961,7 +12963,8 @@
           "pairedRowSha256": "d71d29589ed350a382d407416826a0f9c0b6e4679d9e82439be9f6f1da61185b",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-wash"
@@ -13151,7 +13154,8 @@
           "pairedRowSha256": "44a0616b5203302e7508dbac6c7652fbe0e9353ac967f6de855b28847f2aaf67",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-wash"
@@ -13376,7 +13380,8 @@
           "pairedRowSha256": "6c7060fc5f2dfeb487aafb6233a70973f25e8d642b34244a49292cea5739e1b6",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player asks what Ryan has in his mouth."
@@ -13442,7 +13447,8 @@
           "pairedRowSha256": "1b42b399b1d56ba73ce20c4391142f658d060839cb31264f8bc7e458aeea0a9f",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Ryan thanks the player with obstructed speech."
@@ -13560,7 +13566,8 @@
           "pairedRowSha256": "fd8ac428d963f8e1666ee51f28b0224d36bcc2382b45319dc7489addb2848be3",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player asks Ryan whether he is all right."
@@ -15099,7 +15106,8 @@
           "pairedRowSha256": "befcd567da3966e32372a0224afd89a31882cee211c89d9ab9d72afc766779e8",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-wash"
@@ -15337,7 +15345,8 @@
           "pairedRowSha256": "cdd99b9cc3c64416ecbe1e6cb5b59d9fed665da97cbd6308e154ac297d3549e6",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-burnswick-college"
@@ -15729,7 +15738,8 @@
           "pairedRowSha256": "8bfe6c948d69d661d693c6ae784d9593977b6339e86d17ab78bdd7bd0a51e624",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-dragon"
@@ -15894,7 +15904,8 @@
           "pairedRowSha256": "7f0bf22f3fd24b4f4666b729288a579753d0650cfac7599fb21fd9a9d3ddf7c4",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player addresses Alexander by name."
@@ -16030,7 +16041,8 @@
           "pairedRowSha256": "dd61a74a72ba989df4bd3f898c760ee8ea4ce9281571c1cf3ae9a4dcadc9ac7b",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-igwyx"
+            "dnw-igwyx",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player fears Igwyx died; this is a question, not an established death."
@@ -16040,7 +16052,8 @@
           "pairedRowSha256": "51f889948829d71e66dba1ae6cfb0cc3284a57f9fd27842306d50e99ef6dde84",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-igwyx"
+            "dnw-igwyx",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player asks where Igwyx went."
@@ -16086,7 +16099,9 @@
           "id": "yarn:line:bfeaec15",
           "pairedRowSha256": "8ecff541c7db9cf4b26a77df1b355c97122db2ccc85743cb1cea2abc20b75b23",
           "speakerOrKind": "line",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-alexander"
+          ],
           "conceptUses": [
             "dnw-phoenix-feather"
           ],
@@ -16096,7 +16111,9 @@
           "id": "yarn:line:29daeb62",
           "pairedRowSha256": "f4a380e46767eeba9b6b1859a04e6c3f4729e8e3bae42f15cf21ce2eee188fe0",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [
             "dnw-phoenix-feather"
           ],
@@ -16191,7 +16208,8 @@
           "pairedRowSha256": "e1d2618e262ad2473f6a0fc10d809267c8b27b4a628dd101ba65ffdda79afba2",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player greets Alexander by name."
@@ -16201,7 +16219,8 @@
           "pairedRowSha256": "1778361f8d2736e7b87f68eacfa01426da76353e0e2009a147fa4d646cb481b8",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player welcomes Alexander back."
@@ -16211,7 +16230,8 @@
           "pairedRowSha256": "0357412c2267aae86974143878c24ca14da4c097597d19531c54e6879f9a1395",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Alexander is happy to see the player."
@@ -16264,7 +16284,8 @@
           "pairedRowSha256": "414b3ac951b21c2e81fab36b12492ff74eeaaf6daf9926e6574545ab0592b286",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player remarks on Alexander’s ink."
@@ -16300,7 +16321,8 @@
           "pairedRowSha256": "ce6d04226111c4ca00a11520762283c08df530bbc9f7496c8aa19a65ef421713",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-dragon-washer"
@@ -16403,7 +16425,8 @@
           "pairedRowSha256": "229cf1066e6ec47e963c7e83ccbef1e60d24936e2cea22337dd45aec08a15ac2",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player remarks that Alexander seems unexpectedly messy."
@@ -16413,7 +16436,8 @@
           "pairedRowSha256": "a96b406f8b40f59c99fb696818795359c2c301a8766c735220f8b1c3379f3738",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player asks about the ink."
@@ -16441,7 +16465,8 @@
           "pairedRowSha256": "3d2b27c492f392224de3a136e6274ef30f48f67818c1ee9d8e91f38183c1e124",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player questions Alexander’s account."
@@ -16485,7 +16510,8 @@
           "pairedRowSha256": "38465edc368bb0a12cdecbec96c8bc42a430c2659f695cbeedb00b329fcc53f8",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player says ink is unnecessary for a visit."
@@ -16599,7 +16625,8 @@
           "pairedRowSha256": "40f2f55f97958307492328828f223911c73981bf25e0c078887d8edd785b2a74",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-igwyx"
+            "dnw-igwyx",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player is glad Igwyx is all right."
@@ -17107,7 +17134,9 @@
           "id": "yarn:line:807df02d",
           "pairedRowSha256": "6186853596226471be83d3bdb0c8da5082f7fc5469fab688c449c25f8f932de2",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-alexander"
+          ],
           "conceptUses": [
             "dnw-mount"
           ],
@@ -17158,7 +17187,8 @@
           "pairedRowSha256": "19ac3e2f666d0c5ee0dc63765766aff7ad2b0a1343d871a89df810559a106f16",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-alexander"
           ],
           "conceptUses": [],
           "decision": "The player assures Alexander that use is fine."
@@ -17168,7 +17198,8 @@
           "pairedRowSha256": "acd46bd2a0cb348ad3599ac5966ff8f428f55f194fe1a24be4dbd3fcfbb4aa3a",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player addresses Alexander and tells him not to be nervous."
@@ -17403,7 +17434,8 @@
           "pairedRowSha256": "62bc481368c0ecb8a6f28222927323c7b1beea2e15fe0cdac3a85f85e39b8021",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-dragon"
@@ -17542,7 +17574,8 @@
           "pairedRowSha256": "1a2ac76994a3b3ab5fead7f8d71a20b9e84a9811f5073e940f14ed29c187a8fb",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-wash"
@@ -17664,7 +17697,8 @@
           "pairedRowSha256": "3258159a266b4642ad6722864607c41a50559807f6512b59c1f0b6e49f1eaf65",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player greets Alexander informally."
@@ -17960,7 +17994,8 @@
           "speakerOrKind": "line",
           "characterReferents": [
             "dnw-player",
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-alexander"
           ],
           "conceptUses": [],
           "decision": "In the Ryan branch Alexander says he is sure Ryan finds the player pleasant."
@@ -18013,7 +18048,8 @@
           "speakerOrKind": "line",
           "characterReferents": [
             "dnw-player",
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-alexander"
           ],
           "conceptUses": [],
           "decision": "Alexander says he is glad the player enjoys Conrad and expects Conrad finds the player pleasant."
@@ -18125,7 +18161,8 @@
           "pairedRowSha256": "fdebe7a863d17bad6fec07bcc3634f08c501d8593b00f2138a9bf8dce3ebf3cb",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-wash"
@@ -18202,7 +18239,8 @@
           "pairedRowSha256": "3ebb28929fc4b0b38eafc1db05e450dae9bba75258e1e107bd0c44bea1bd6a1b",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-wash"
@@ -18230,7 +18268,8 @@
           "pairedRowSha256": "05c4269be8e4d80b52b229561ec3d3fa4f71e95eabce754e374eab2a6145b0a3",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-wash"
@@ -18687,7 +18726,8 @@
           "pairedRowSha256": "f21f76580da9b13915f8f51f6d0189500b40d934c4a3751095495c8566adb0a2",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player tells Conrad this incident is not his fault; preserve emphasis."
@@ -18760,7 +18800,8 @@
           "pairedRowSha256": "feb25a86e034ccf1e94573ffe037da478b5b13c93cedc53392b066788d98d93d",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player tells Conrad he is cool."
@@ -19042,7 +19083,8 @@
           "pairedRowSha256": "cd34aba1d344b7dfdb557677929ed7dc3315d0502b670f153625d837a410debd",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player calls Ryan a sweetheart."
@@ -19052,7 +19094,9 @@
           "pairedRowSha256": "8e681baa453f0fd4840bdf7e2c84e6602cd185784d24388729e718520a53b4bb",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player",
+            "dnw-conrad"
           ],
           "conceptUses": [],
           "decision": "The player reassures Conrad that Ryan is nice."
@@ -19084,7 +19128,8 @@
           "speakerOrKind": "option",
           "characterReferents": [
             "dnw-ryan",
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player thinks Ryan would like the new Conrad."
@@ -19124,7 +19169,8 @@
           "pairedRowSha256": "091db0b30c136b7b543da199be82b8e1f9c1959aa81181caa005161ee4c66202",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Conrad thanks the player for the suggestion."
@@ -19697,7 +19743,8 @@
           "pairedRowSha256": "9747cae3a6bb64fb305a6675ccb293aa66e8a9aa74aa325ab09f79d51af90c10",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player welcomes Ryan to return."
@@ -19718,7 +19765,8 @@
           "pairedRowSha256": "f3af5f67a7c487419c706ebdffccbeb97775d65bf1fb4d5882d2e4a660d65279",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Ryan accepts and thanks the player."
@@ -19728,7 +19776,8 @@
           "pairedRowSha256": "4b3cc5fa1267e98039621f1c28ad4e71bbd71204d1a37bca7759f3ab4ef97a8e",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Ryan asks whether the player is sure, because the subject is not fun."
@@ -19959,7 +20008,8 @@
           "pairedRowSha256": "8d8c3c9aa1112ebc6d9ff933e2ffd278d30453768d0caf6a466e76e4eec166c2",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "The player addresses Ryan supportively."
@@ -20084,7 +20134,8 @@
           "pairedRowSha256": "ab7f6f540a113d33cd64ead580175d7271ce5b5c8a111ad78cce9aa213835f3f",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-ryan"
           ],
           "conceptUses": [],
           "decision": "The player lets Ryan decide."
@@ -20414,7 +20465,9 @@
           "id": "yarn:line:962abe27",
           "pairedRowSha256": "93250296b5c577e6217e92b4398529228994bc66833077c25248dbe36ef0222a",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [
             "dnw-project-scale-mary"
           ],
@@ -20424,7 +20477,9 @@
           "id": "yarn:line:f1c14f75",
           "pairedRowSha256": "3db833decc9fca8e39988e5704eb0f0987df500a1efcf58459a53e1471fadbf7",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [
             "dnw-yip-man"
           ],
@@ -20434,7 +20489,9 @@
           "id": "yarn:line:7e352505",
           "pairedRowSha256": "61e7e14de9a0c507076491d8ab3dcaf91de6ec0f5570a459ebd00861e3aa0848",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [
             "dnw-dragons-of-the-galaxy"
           ],
@@ -20619,7 +20676,8 @@
           "pairedRowSha256": "9b0eed07a95958694724b68c3cc97aa25ed5e5e9bfbbf65f174d2cd3f738210e",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-ryan"
           ],
           "conceptUses": [],
           "decision": "Ryan replies with little guy."
@@ -20639,7 +20697,8 @@
           "pairedRowSha256": "4b56ba73a3dba854ca286d8ca7120bb680fdfda78a2d39cf6d0207b35d597c95",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-wash"
@@ -20661,7 +20720,8 @@
           "pairedRowSha256": "35e7c106d5d2d6b01b3d0351d6d3173a46b3de4aace8c0ea135e110c2c77f79f",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Ryan explains he was playing along and is happy to see the player."
@@ -20679,7 +20739,8 @@
           "pairedRowSha256": "feb27867085765c31227c5aa0847833604ecaa6b89322caa0cd3d7589904f121",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-ryan"
           ],
           "conceptUses": [
             "dnw-kobold"
@@ -20796,7 +20857,8 @@
           "speakerOrKind": "option",
           "characterReferents": [
             "dnw-ryan",
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Ryan wants to tell the player about Conrad."
@@ -20919,7 +20981,8 @@
           "speakerOrKind": "option",
           "characterReferents": [
             "dnw-ryan",
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player asks Ryan about his date with Conrad."
@@ -21093,7 +21156,8 @@
           "pairedRowSha256": "13d8af9252b1db4b6344a91d18967d61a4bb0a55aa860a6f31c177b6da4cd966",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player greets Conrad."
@@ -21103,7 +21167,8 @@
           "pairedRowSha256": "874931c9bbe8dfae876dd8d2d51d0d3fd5413f9f2ea315927065de2f5b53873f",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player asks why Conrad looks happy."
@@ -21123,7 +21188,8 @@
           "pairedRowSha256": "021c9c086c38f98b8c385fa537030f630bcf7841c65bbe221d39465c303962dd",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-conrad"
           ],
           "conceptUses": [
             "dnw-kobold"
@@ -21135,7 +21201,8 @@
           "pairedRowSha256": "6a00e7e9d012cbf2392ef42d805f1b508014955d0a502f8a624a2ab47e65c2fe",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-conrad"
           ],
           "conceptUses": [],
           "decision": "Conrad hesitantly starts a compliment."
@@ -21145,7 +21212,8 @@
           "pairedRowSha256": "5772fc0698dde6bc644222588cb28923b6e11c3e43dc306e682f8cf07baa4172",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-conrad"
           ],
           "conceptUses": [],
           "decision": "Conrad compliments the player’s scales; preserve size and italic markup."
@@ -21155,7 +21223,8 @@
           "pairedRowSha256": "f6573f263c134253800697772cbf4b47b8c3f3823f7e5021728466f503066e49",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player asks about Conrad’s gloop."
@@ -21165,7 +21234,8 @@
           "pairedRowSha256": "fb9b67c3b85d2493432279858a127149ab7ae03c5ce81bf8f8672e9390f1d812",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player returns Conrad’s compliment."
@@ -21175,7 +21245,8 @@
           "pairedRowSha256": "05c6084c9cfb90ea57698b52e355f3388bc7ed16a9c47ead3569427844ea5dc1",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-conrad"
           ],
           "conceptUses": [],
           "decision": "Player says changing scales is not a thing and thanks Conrad."
@@ -21262,7 +21333,8 @@
           "pairedRowSha256": "ffa7b93a7dfb37b105dddc436a6c2c617c4bbb034f779a29b6c2aabeef23d01a",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Conrad says only if the player wants to."
@@ -21319,7 +21391,8 @@
           "pairedRowSha256": "f2150608424e83fa4a7ae1063fd640e1d658d813e6f9531c8a89c5f40f56ad46",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player asks about Conrad’s gloop."
@@ -21330,7 +21403,8 @@
           "speakerOrKind": "option",
           "characterReferents": [
             "dnw-conrad",
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player asks how the meeting went."
@@ -21427,7 +21501,8 @@
           "pairedRowSha256": "ff3597532c0975423ca741f3d48a7ec785da1c619ea3151efab092446d3655f5",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player exclaims Conrad’s name."
@@ -21506,7 +21581,8 @@
           "pairedRowSha256": "b65c1ce2d2acf9a80a76f66644860cc876cd96608ad892750b1cc23dc7d0cebf",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player asks about the gloop."
@@ -21624,7 +21700,8 @@
           "pairedRowSha256": "99d19864d55ef2d8cb1a814596a7c9f752fb297cfd07ac4b810abac437faf334",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player asks about teaching."
@@ -21634,7 +21711,8 @@
           "pairedRowSha256": "c02f6232b194c3bf26a1ea74dfd45bf23521aab092f1a137b46f782105748fe7",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player asks whether Alexander likes purple."
@@ -21644,7 +21722,8 @@
           "pairedRowSha256": "3ea36ab4acc1420decef2720302e104489272a12030823d67f74416a0fbd2f81",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player asks whether Alexander likes being big."
@@ -21654,7 +21733,8 @@
           "pairedRowSha256": "b535bcfe5119900f04316daacafc4d56b4e24ae99d6a88e9fe8878cfa566560c",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player asks what seven tastes like."
@@ -21675,7 +21755,8 @@
           "pairedRowSha256": "8e0567567058ea3afc8f2883b1df1060339c40634e3f46648c30375731f69fef",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player asks if Alexander is happy."
@@ -21685,7 +21766,8 @@
           "pairedRowSha256": "34a37811f2bbca8d9a0fc4959cf621c952f293272d7053e6dac6a6f72acaf7a1",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-family-crest"
@@ -21747,7 +21829,8 @@
           "pairedRowSha256": "a86cc119bad70f7cc6284a3066755b7fa9e9e9b91474e60db9be567f90b910ed",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player asks what classes Alexander teaches."
@@ -21757,7 +21840,8 @@
           "pairedRowSha256": "ad85c612c7d6ae0d9f050f89054f2c9de5ea82d29981fed967453e028392d00d",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player says he sets a good example."
@@ -22045,7 +22129,8 @@
           "pairedRowSha256": "7a6dbbf24ca47df83b066998e69266964eea43ca5ee7c28c1013cf700a1a393c",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player defers to Alexander as professor."
@@ -22126,7 +22211,8 @@
           "pairedRowSha256": "0497ea5081806ac5984434e46c11ca7308713fac1686cac8e095d8bf8be97467",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-alexander"
           ],
           "conceptUses": [],
           "decision": "Alexander explains he means unique."
@@ -22156,7 +22242,8 @@
           "pairedRowSha256": "79b3867cfe31eb44e7109c3c0933d21ad06acda19c4d716c5c28195639db1500",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-alexander"
           ],
           "conceptUses": [],
           "decision": "Alexander says the player is wonderful."
@@ -22166,7 +22253,8 @@
           "pairedRowSha256": "bdf4dc2d13e5b8980f7d9db5cd5986fea8b0922284125abae6b0a0f39d960fd7",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-alexander"
           ],
           "conceptUses": [],
           "decision": "Alexander emphatically reassures the player."
@@ -22176,7 +22264,8 @@
           "pairedRowSha256": "620493a291c414742995f0386764cb5dd70ae2c1155b56624aea3fe40acd9aa8",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-player"
+            "dnw-player",
+            "dnw-alexander"
           ],
           "conceptUses": [],
           "decision": "Alexander values the player’s company."
@@ -22271,7 +22360,8 @@
           "pairedRowSha256": "377ff11de6415adb58b45cfa52cfcea241047a1308a5428621089e03ee449897",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "He calls the player sweet."
@@ -22391,7 +22481,8 @@
           "pairedRowSha256": "6073c357365a1924807c4ffcc3d42eacbcf452c8de244cd3495332799a7e4e3c",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-alexander"
+            "dnw-alexander",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-family-crest"
@@ -22499,7 +22590,8 @@
           "pairedRowSha256": "57f54a18d810188ec9c0d24f1d7cf6325c9d6c52c7f00cb6f482dba043907377",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player compliments him as a catch."
@@ -22529,7 +22621,8 @@
           "pairedRowSha256": "81c8eaf63e5ad1e446c47f9b9063ea274b52de04c5f83aea685a69ca18db3111",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Ryan thanks the player."
@@ -22619,7 +22712,8 @@
           "pairedRowSha256": "94a8699518ea9b47732fa3601f445e207a3d335cebcf8f9faf03bb6cc2b22a0e",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-ryan"
+            "dnw-ryan",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player relates this to the breakup."
@@ -22766,7 +22860,8 @@
           "pairedRowSha256": "ee682e20d03938f4697d58dfbae3a58bbb3cbe4fea300ae17b83aa7858441a62",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-dragon",
@@ -22804,7 +22899,8 @@
           "pairedRowSha256": "cee4db962e34125b257a49220d353bcd70b1b56348a13c8e59c3ba4a503785b5",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player says he prefers vertically challenged."
@@ -22814,7 +22910,8 @@
           "pairedRowSha256": "3f02fe7a7926fd17264b276eca187c8fd6249910019c9716d6a4be2e6f4c8849",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player confirms he wants to meet people."
@@ -23057,7 +23154,8 @@
           "pairedRowSha256": "acd69a56865093ac28b6f6a5f59dfca31512b6b9f3e9a4e39e67c66d8a4a3cf4",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [
             "dnw-dragon"
@@ -23093,7 +23191,8 @@
           "pairedRowSha256": "caf59083a1adc4e1de2d09594e7695230ee49ebdae67ad3cb747a2ae303272c3",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player defends Conrad as vertically challenged."
@@ -23103,7 +23202,8 @@
           "pairedRowSha256": "36e23ad4921d9833b3b959998cad050f54253299c0692a79799c4d3bbc1633f4",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player confirms it is Conrad; apostrophe differs by build."
@@ -23150,7 +23250,8 @@
           "speakerOrKind": "option",
           "characterReferents": [
             "dnw-ryan",
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player anticipates Ryan meeting Conrad."
@@ -23176,7 +23277,8 @@
           "pairedRowSha256": "111eb9534c2d615572e97e10d96b459bbfb246d912fb4b786bd838738f11753d",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-ryan"
           ],
           "conceptUses": [],
           "decision": "Ryan thinks Conrad sounds fun."
@@ -23196,7 +23298,9 @@
           "id": "yarn:line:f83e4966",
           "pairedRowSha256": "b4c71549774a9c4029c732c86ea2c12d864ab1cf79b00029d626c53725de15e9",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "Player looks forward to hearing."
         },
@@ -23206,7 +23310,8 @@
           "speakerOrKind": "option",
           "characterReferents": [
             "dnw-ryan",
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player thinks the two will be cute."
@@ -23395,7 +23500,9 @@
           "pairedRowSha256": "9a709afd19f14f372b0a9876b521e7d28628ee8d154cdf0dc7cecf55f80abd3e",
           "speakerOrKind": "line",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player",
+            "dnw-ryan"
           ],
           "conceptUses": [],
           "decision": "Ryan asks player’s favorite thing about Conrad."
@@ -23405,7 +23512,8 @@
           "pairedRowSha256": "c70be7f47c287aa92a218c39fe518574837e4c98b388f1a635ed27a1af0ed8b3",
           "speakerOrKind": "option",
           "characterReferents": [
-            "dnw-conrad"
+            "dnw-conrad",
+            "dnw-player"
           ],
           "conceptUses": [],
           "decision": "Player mentions Conrad’s endowment explicitly."
@@ -23445,7 +23553,9 @@
           "id": "yarn:line:f16d7940",
           "pairedRowSha256": "3bd4e145a570bdcf7b6f13cdf60ab967399644fa5c1cfd2cb238d4146cb20887",
           "speakerOrKind": "line",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-ryan"
+          ],
           "conceptUses": [
             "dnw-dragon"
           ],
@@ -23455,7 +23565,9 @@
           "id": "yarn:line:dd0c77ae",
           "pairedRowSha256": "3b4d55fd9dcef0ad6658c6105e0927b633fb4805fbfd19b765033228e887deff",
           "speakerOrKind": "line",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-ryan"
+          ],
           "conceptUses": [],
           "decision": "Ryan recognizes that type."
         },
@@ -23463,7 +23575,9 @@
           "id": "yarn:line:da21cf49",
           "pairedRowSha256": "72e40a2ce596e3bfbd520303ad5ecbe82c84a66db9d12b875cd5deeb9da2fc86",
           "speakerOrKind": "line",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-ryan"
+          ],
           "conceptUses": [
             "dnw-dragon",
             "dnw-drake"
@@ -23484,7 +23598,8 @@
           "speakerOrKind": "line",
           "characterReferents": [
             "dnw-conrad",
-            "dnw-player"
+            "dnw-player",
+            "dnw-ryan"
           ],
           "conceptUses": [],
           "decision": "Ryan wants to hear how player and Conrad fare."
