@@ -86,3 +86,7 @@ Two additional special decisions and 28 IDs are author self-reviewed in [special
 ### Alexander question-state batch
 
 The seven question labels and their once-state contract are author self-reviewed in [special-alexander-question-state.md](special-alexander-question-state.md), with both stock-source object read-backs and a source-mismatch negative check per build. Five labels are newly authored; two were already counted in previous groups. Current total: 103/1,947 authored IDs and 14/27 special decisions. Thirteen special decisions remain before ordinary text. Independent game-text audit, final packages and final runtime/visual checks remain pending.
+
+### Alexander college introduction batch
+
+The college introduction's nine direct IDs, two contextual lines and two unchanged speaker display names are author self-reviewed in [special-alexander-college.md](special-alexander-college.md). Both source-bound readers and dialogue object read-backs passed on both builds; a missing-colon negative control was rejected. Current total: 116/1,947 authored IDs and 15/27 special decisions. Twelve special decisions precede ordinary text. Independent game-text audit, final packages and final runtime/visual checks remain pending.
