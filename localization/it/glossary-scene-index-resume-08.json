@@ -14,7 +14,7 @@
         "yarn:line:fa97376e",
         "yarn:line:9d7cc63c"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Alexander_1_Outro",
@@ -29,7 +29,7 @@
         "yarn:line:75b152eb",
         "yarn:line:e381559c"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Alexander_1_intro",
@@ -56,7 +56,7 @@
         "yarn:line:db986d0d",
         "yarn:line:780d0993"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Alexander_1_required",
@@ -71,7 +71,7 @@
         "yarn:line:13223129",
         "yarn:line:a97338b0"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Alexander_2",
@@ -594,7 +594,7 @@
         "yarn:line:9becd177",
         "yarn:line:0ddcd600"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Alexander_Idle1",
@@ -604,7 +604,7 @@
         "yarn:line:c83a6a0d",
         "yarn:line:5e0a6d7a"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Alexander_Idle2",
