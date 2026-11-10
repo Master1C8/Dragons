@@ -74,6 +74,33 @@ advance by shaped clusters. Dialogue, choices, tight settings, save-slot
 values and mixed names and numbers still need paired player verification.
 No player or installer was launched and no release package was built.
 
+### Prepared glyph display hook
+
+The [managed probe](localization/tools/prepared-text-probe/Program.cs) stages
+an exact display map in the pinned macOS and Windows TextMesh Pro assemblies.
+The hook runs at the entry to
+`TMP_Text.PopulateTextBackingArray(string, int, int)`, after the caller
+chooses its text and before TMP parses rich text. It rewrites only a complete
+string in the synthetic map and adjusts the backing-array length. It leaves
+logical Yarn and serialized source values untouched.
+
+All ten staged asset and DLL pairs passed. Reopening each DLL verified the
+hook and 1,806 original method bodies. A standalone .NET invocation of the
+emitted helper checked the plain and italic samples, unknown Latin text,
+null, two kinds of slices and repeated processing of prepared input. The
+unshaped-map negative control was rejected before output. The assets and
+receipts are under `localization/work/display-adapter-20261110.oMiEA1/staged/`.
+Build the probe with its .NET project, generate the font and
+`display-map.json` with `probe_complex_fonts.py`, and pass a stock TMP DLL,
+that map and a fresh DLL path to the probe.
+
+The maps cover one synthetic script run per locale, with and without an
+italic tag. The RTL samples use HarfBuzz visual order in a stock LTR
+container. They do not cover mixed-direction paragraphs or wrapping.
+StringBuilder and char-array paths are outside this hook. Runtime
+insertion, the full-corpus map, line breaking, dynamic substitutions and
+typewriter progression are still open. No game or installer was launched.
+
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock
 512 × 512 multi-atlas chain admitted 1,536 distinct additional

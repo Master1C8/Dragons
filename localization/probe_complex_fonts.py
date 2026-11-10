@@ -116,6 +116,14 @@ def probe(args):
                 'fontSha256': dialogue.sha(font.read_bytes()),
                 'probeFontSha256': dialogue.sha(prepared.read_bytes()),
                 'syntheticSample': sample, 'glyphInstances': augmenter.rows, 'platforms': {}}
+        # The managed probe is scoped to one run and uses TMP's stock LTR mode.
+        # HarfBuzz's visual order is the inverse of the reference helper's
+        # TMP-RTL compensation for these single RTL spans.
+        visual = shaped[::-1] if shaper.LOCALE_SPECS[locale]['baseDirection'] == 'R' else shaped
+        mappings = [{'logical': sample, 'prepared': visual},
+                    {'logical': f'<i>{sample}</i>', 'prepared': f'<i>{visual}</i>'}]
+        (target / 'display-map.json').write_text(json.dumps(mappings, ensure_ascii=False) + '\n')
+        item['displayMapSha256'] = dialogue.sha((target / 'display-map.json').read_bytes())
         for platform, data in sources.items():
             chars = defaultdict(set)
             for key, by_platform in values.items():
