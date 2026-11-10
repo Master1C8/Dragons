@@ -363,6 +363,31 @@ SHA-256 is `6c623c58a7f1e2b47839dbaa6157109badb26147dbb3b392a29298926c81971a`.
 No authored translation, package payload or installed game changed
 during runtime verification.
 
+### Windows 11 verification in Parallels
+
+All five Windows ZIPs passed the same authored fixture regression on
+Windows 11 build 26200.9711 under Parallels with Direct3D 11. The
+players ran in disposable copies on the guest disk at a 1024 × 768
+window size, with independent Unity player identities. Each locale
+matched the line, glyph and reveal counts in the table above.
+The measured visual order, complete glyph clusters, Yarn callback
+indices and final reveal counts also matched the plans.
+
+The first Arabic bootstrap from the shared drive stopped at Mono
+assembly loading. A local batch-mode attempt loaded Mono but reached
+no menu before its deadline. The unmodified renderer control reached
+the menu on the local disk. The windowed Arabic rerun and the four
+subsequent windowed locale runs passed without changing the renderer
+or package payloads. The successful runs verify windowed execution.
+Batch-mode startup under Parallels remains unverified.
+
+The wrappers stopped all five game processes and verified unchanged
+original save files and registry settings. The four managed DLL
+hashes and each ZIP hash match the verified packages. Logs and
+`parallels-report.json` are in
+`localization/work/parallels-renderer.sUgfkk/`. The report SHA-256 is
+`8d9a942d6983e1c83d1d2d2ab845a03bb9d59bcf81f1c6de58eca761f119f5e9`.
+
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock
 512 × 512 multi-atlas chain admitted 1,536 distinct additional
