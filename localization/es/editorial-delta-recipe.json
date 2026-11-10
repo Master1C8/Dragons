@@ -1,0 +1,1043 @@
+{
+  "schema": 1,
+  "locale": "es",
+  "beforeSha256": "20fc3d75786f81c311f64b5fbd0038c5fda553a77df09864cf799d77051158cf",
+  "afterSha256": "756de516739d6554b56695eb91624f00d751e2bbc9e8f1f1c190a954c964ef6c",
+  "edits": {
+    "yarn:line:9d7cc63c": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_1",
+          "firstInstruction": 2,
+          "lastInstruction": 3
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:9d7cc63c",
+        "yarn:line:9ef857c8",
+        "yarn:line:0ddcd600",
+        "yarn:line:c83a6a0d",
+        "yarn:line:fedbf70c",
+        "yarn:line:1f250062",
+        "yarn:line:1475f95c"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "The later resurrection and self-immolation references identify the same phoenix despite Igwix/Igwyx source spelling variants; the alchemist is not assumed to be Igwix."
+    },
+    "yarn:line:33a79dbe": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_1_intro",
+          "firstInstruction": 4,
+          "lastInstruction": 16
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:33a79dbe",
+        "yarn:line:e8a38ed0",
+        "yarn:line:7e9389a7",
+        "yarn:line:dd06ed39",
+        "yarn:line:4b36ea4e",
+        "yarn:line:607a5c47",
+        "yarn:line:8c8591ec",
+        "yarn:line:3ed6ab5d",
+        "yarn:line:8487a2c4",
+        "yarn:line:83aa1a23"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "College refers to the named school; compare the question and explicit school name."
+    },
+    "yarn:line:a5979ac9": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_1_intro",
+          "firstInstruction": 4,
+          "lastInstruction": 16
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:a5979ac9",
+        "yarn:line:159a1d54",
+        "yarn:line:a5a8a9d5",
+        "yarn:line:1ff9a04c",
+        "yarn:line:18d418ab",
+        "yarn:line:8ee41fdc",
+        "yarn:line:c56ee060"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Crest is the ornamental feature around Alexander’s head and family marker, not an assumed institutional emblem."
+    },
+    "yarn:line:938be2fb": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_2_intro",
+          "firstInstruction": 78,
+          "lastInstruction": 96
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:33440e8c": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_2_required",
+          "firstInstruction": 21,
+          "lastInstruction": 25
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:9d7cc63c",
+        "yarn:line:9ef857c8",
+        "yarn:line:0ddcd600",
+        "yarn:line:c83a6a0d",
+        "yarn:line:fedbf70c",
+        "yarn:line:1f250062",
+        "yarn:line:1475f95c"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:7d13eca0": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_3_JerkOff_Start",
+          "firstInstruction": 2,
+          "lastInstruction": 3
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:ca035ef2": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_3_Outro",
+          "firstInstruction": 26,
+          "lastInstruction": 28
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:61c8781b": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_3_intro",
+          "firstInstruction": 32,
+          "lastInstruction": 41
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:61c8781b",
+        "yarn:line:c570a462",
+        "yarn:line:ea23c5f9",
+        "yarn:line:afcd5586",
+        "yarn:line:918d7820",
+        "yarn:line:b058318f",
+        "yarn:line:c1b8e62b",
+        "yarn:line:7ede5030",
+        "yarn:line:52bf5ede",
+        "yarn:line:efb2d4af",
+        "yarn:line:da17b746",
+        "yarn:line:b9cb051a",
+        "yarn:line:0d4e0ecf",
+        "yarn:line:0274cacd",
+        "yarn:line:088893da",
+        "yarn:line:d9d276bb",
+        "yarn:line:5bab2df8"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:c570a462": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_3_intro",
+          "firstInstruction": 63,
+          "lastInstruction": 65
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:61c8781b",
+        "yarn:line:c570a462",
+        "yarn:line:ea23c5f9",
+        "yarn:line:afcd5586",
+        "yarn:line:918d7820",
+        "yarn:line:b058318f",
+        "yarn:line:c1b8e62b",
+        "yarn:line:7ede5030",
+        "yarn:line:52bf5ede",
+        "yarn:line:efb2d4af",
+        "yarn:line:da17b746",
+        "yarn:line:b9cb051a",
+        "yarn:line:0d4e0ecf",
+        "yarn:line:0274cacd",
+        "yarn:line:088893da",
+        "yarn:line:d9d276bb",
+        "yarn:line:5bab2df8"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:7b59e4d6": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_4_Outro",
+          "firstInstruction": 41,
+          "lastInstruction": 48
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:90dd6d9d": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_4_intro",
+          "firstInstruction": 5,
+          "lastInstruction": 19
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:8689a124": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_4_required",
+          "firstInstruction": 73,
+          "lastInstruction": 92
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:0371fb9c": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_romance_route",
+          "firstInstruction": 52,
+          "lastInstruction": 79
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Include both marked romance choices and their distinct acceptance/refusal responses; preserve the warning and original tags."
+    },
+    "yarn:line:d132db41": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_SexScene",
+          "firstInstruction": 0,
+          "lastInstruction": 1
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The following question supplies immediate context, but no explicit speaker command settles the intimacy speaker or exact lying-down inference."
+    },
+    "yarn:line:dfe74420": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_SexScene_Loop",
+          "firstInstruction": 7,
+          "lastInstruction": 8
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The continuation completes the exclamation; preserve the intentionally interrupted speech."
+    },
+    "yarn:line:cacbff51": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_5_Mount_Start",
+          "firstInstruction": 2,
+          "lastInstruction": 2
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:ec00a1fe",
+        "yarn:line:577cec43",
+        "yarn:line:c60c65e8",
+        "yarn:line:b83ec453",
+        "yarn:line:f99eb2ff",
+        "yarn:line:cacbff51",
+        "yarn:line:9a68366f",
+        "yarn:line:0b7589ff",
+        "yarn:line:c8a1e7d0",
+        "yarn:line:fa41daf4",
+        "yarn:line:9711cf03",
+        "yarn:line:e9d73205",
+        "yarn:line:eefa8ae2",
+        "yarn:line:9d434af5",
+        "yarn:line:8a321997",
+        "yarn:line:83f511d2",
+        "yarn:line:8ffedb47",
+        "yarn:line:cc6e7856",
+        "yarn:line:1d9b3531",
+        "yarn:line:5a195ff2",
+        "yarn:line:3690a3eb",
+        "yarn:line:94e04dcf",
+        "yarn:line:5406ba8e",
+        "yarn:line:6bd91ca7"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Mount names the established device; compare its tutorial, placement and alternative uses, without assuming a texture or asset change."
+    },
+    "yarn:line:1538bc7e": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_5_intro_conrad_romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 6
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:9accd60e": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_5_intro_conrad_romanced",
+          "firstInstruction": 13,
+          "lastInstruction": 20
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The neighbouring alternative is a separate source path to the same planned date; compare both versions and subsequent options."
+    },
+    "yarn:line:6c3a98cc": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_5_intro_conrad_romanced",
+          "firstInstruction": 13,
+          "lastInstruction": 25
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The neighbouring alternative is a separate source path to the same planned date; compare both versions and subsequent options."
+    },
+    "yarn:line:7c9fe106": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_5_outro_ryan_conrad_romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 11
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:1642b6f1",
+        "yarn:line:e767dc51",
+        "yarn:line:7c9fe106",
+        "yarn:line:707d2693",
+        "yarn:line:118a51bb"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Compare the recurring get-out-of-your-scales idiom rather than interpret it as literal scale removal."
+    },
+    "yarn:line:36779352": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_5_required_conrad_romanced",
+          "firstInstruction": 10,
+          "lastInstruction": 23
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:4815d919": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_5_required_ryan_conrad_romanced",
+          "firstInstruction": 13,
+          "lastInstruction": 24
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:39fd52f1": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Intro_3",
+          "firstInstruction": 6,
+          "lastInstruction": 10
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:61c8781b",
+        "yarn:line:c570a462",
+        "yarn:line:ea23c5f9",
+        "yarn:line:afcd5586",
+        "yarn:line:918d7820",
+        "yarn:line:b058318f",
+        "yarn:line:c1b8e62b",
+        "yarn:line:7ede5030",
+        "yarn:line:52bf5ede",
+        "yarn:line:efb2d4af",
+        "yarn:line:da17b746",
+        "yarn:line:b9cb051a",
+        "yarn:line:0d4e0ecf",
+        "yarn:line:0274cacd",
+        "yarn:line:088893da",
+        "yarn:line:d9d276bb",
+        "yarn:line:5bab2df8"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "The next option identifies the addressee as the player kobold; avoid adding player gender."
+    },
+    "yarn:line:918d7820": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Intro_4",
+          "firstInstruction": 81,
+          "lastInstruction": 91
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:61c8781b",
+        "yarn:line:c570a462",
+        "yarn:line:ea23c5f9",
+        "yarn:line:afcd5586",
+        "yarn:line:918d7820",
+        "yarn:line:b058318f",
+        "yarn:line:c1b8e62b",
+        "yarn:line:7ede5030",
+        "yarn:line:52bf5ede",
+        "yarn:line:efb2d4af",
+        "yarn:line:da17b746",
+        "yarn:line:b9cb051a",
+        "yarn:line:0d4e0ecf",
+        "yarn:line:0274cacd",
+        "yarn:line:088893da",
+        "yarn:line:d9d276bb",
+        "yarn:line:5bab2df8"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Conrad addresses the player; the following lines make the compliment and addressee clear."
+    },
+    "yarn:line:c4cc497f": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Outro_3",
+          "firstInstruction": 70,
+          "lastInstruction": 81
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Together with the next line this is Conrad’s compliment to the player; check the choice and continuation."
+    },
+    "yarn:line:55d1f6ef": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Outro_3",
+          "firstInstruction": 70,
+          "lastInstruction": 81
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "This completes the previous compliment to the player; check their combined meaning and choice."
+    },
+    "yarn:line:803bf378": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Outro_4_Conrad_Romanced",
+          "firstInstruction": 25,
+          "lastInstruction": 36
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:3a5d5ca4": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Ryan_Romanced",
+          "firstInstruction": 36,
+          "lastInstruction": 48
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:77c996e8": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene",
+          "firstInstruction": 0,
+          "lastInstruction": 8
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:0bc044da": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene_Cum",
+          "firstInstruction": 7,
+          "lastInstruction": 15
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:0bc044da",
+        "yarn:line:9df043ad",
+        "yarn:line:9addfb4a",
+        "yarn:line:0cedfc3d",
+        "yarn:line:7f543c2a",
+        "yarn:line:e9643b5d",
+        "yarn:line:c50535b3",
+        "yarn:line:533532c4",
+        "yarn:line:6690512d"
+      ],
+      "reason": "The wait and ready options lead to different paths; compare the alternate later release question."
+    },
+    "yarn:line:9addfb4a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene_Cum",
+          "firstInstruction": 7,
+          "lastInstruction": 15
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:0bc044da",
+        "yarn:line:9df043ad",
+        "yarn:line:9addfb4a",
+        "yarn:line:0cedfc3d",
+        "yarn:line:7f543c2a",
+        "yarn:line:e9643b5d",
+        "yarn:line:c50535b3",
+        "yarn:line:533532c4",
+        "yarn:line:6690512d"
+      ],
+      "reason": "The player’s ready response is an option, distinct from Conrad’s later release question."
+    },
+    "yarn:line:7f543c2a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene_Cum",
+          "firstInstruction": 34,
+          "lastInstruction": 36
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:0bc044da",
+        "yarn:line:9df043ad",
+        "yarn:line:9addfb4a",
+        "yarn:line:0cedfc3d",
+        "yarn:line:7f543c2a",
+        "yarn:line:e9643b5d",
+        "yarn:line:c50535b3",
+        "yarn:line:533532c4",
+        "yarn:line:6690512d"
+      ],
+      "reason": "The two response options control whether Conrad releases; compare the earlier ready question. The not-yet destination 41 has an additional reply; the release destination 52 converges before the later line at 65."
+    },
+    "yarn:line:73ea230a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_finished_mount_3",
+          "firstInstruction": 37,
+          "lastInstruction": 72
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:ec00a1fe",
+        "yarn:line:577cec43",
+        "yarn:line:c60c65e8",
+        "yarn:line:b83ec453",
+        "yarn:line:f99eb2ff",
+        "yarn:line:cacbff51",
+        "yarn:line:9a68366f",
+        "yarn:line:0b7589ff",
+        "yarn:line:c8a1e7d0",
+        "yarn:line:fa41daf4",
+        "yarn:line:9711cf03",
+        "yarn:line:e9d73205",
+        "yarn:line:eefa8ae2",
+        "yarn:line:9d434af5",
+        "yarn:line:8a321997",
+        "yarn:line:83f511d2",
+        "yarn:line:8ffedb47",
+        "yarn:line:cc6e7856",
+        "yarn:line:1d9b3531",
+        "yarn:line:5a195ff2",
+        "yarn:line:3690a3eb",
+        "yarn:line:94e04dcf",
+        "yarn:line:5406ba8e",
+        "yarn:line:6bd91ca7"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:4d6b365e",
+        "yarn:line:f73a3fc7",
+        "yarn:line:d376acb9",
+        "yarn:line:4546abce",
+        "yarn:line:a0cf6cae",
+        "yarn:line:36ff6bd9",
+        "yarn:line:7e9d40e6"
+      ],
+      "reason": "The source route after this scene differs by build: macOS goes to Conrad_Outro_3 and Windows to Conrad_Outro. Do not normalize either route."
+    },
+    "yarn:line:0de4fe62": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_required_2",
+          "firstInstruction": 102,
+          "lastInstruction": 118
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:f716a163": {
+      "sceneSpans": [
+        {
+          "node": "RyanDate_Intro",
+          "firstInstruction": 6,
+          "lastInstruction": 17
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:5f64c352": {
+      "sceneSpans": [
+        {
+          "node": "RyanMuddy_SmallTalk",
+          "firstInstruction": 4,
+          "lastInstruction": 23
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:5f64c352",
+        "yarn:line:7428755b",
+        "yarn:line:c9e7bb1e",
+        "yarn:line:513bed5a"
+      ],
+      "reason": "Compare the same certification question and novice response in the first-visit and muddy-visit variants."
+    },
+    "yarn:line:7428755b": {
+      "sceneSpans": [
+        {
+          "node": "RyanMuddy_SmallTalk",
+          "firstInstruction": 4,
+          "lastInstruction": 24
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:5f64c352",
+        "yarn:line:7428755b",
+        "yarn:line:c9e7bb1e",
+        "yarn:line:513bed5a"
+      ],
+      "reason": "Compare the two first-time washing conversations and their alternative replies."
+    },
+    "yarn:line:a99c515c": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_1_PhoneTutorial",
+          "firstInstruction": 5,
+          "lastInstruction": 18
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:a99c515c",
+        "yarn:line:4183ca7e"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:a99c515c",
+        "yarn:line:4183ca7e"
+      ],
+      "reason": "The franchise name differs in apostrophes across builds; preserve the shared 223 identity and the first-customer condition."
+    },
+    "yarn:line:4183ca7e": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_1_PhoneTutorial",
+          "firstInstruction": 21,
+          "lastInstruction": 45
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:a99c515c",
+        "yarn:line:4183ca7e"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:a99c515c",
+        "yarn:line:4183ca7e"
+      ],
+      "reason": "The other tutorial branch asks about interaction, not the first customer; the franchise apostrophe differs across builds."
+    },
+    "yarn:line:c9e7bb1e": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_1_required",
+          "firstInstruction": 4,
+          "lastInstruction": 26
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:5f64c352",
+        "yarn:line:7428755b",
+        "yarn:line:c9e7bb1e",
+        "yarn:line:513bed5a"
+      ],
+      "reason": "Compare the same certification question in Ryan’s muddy-visit variant."
+    },
+    "yarn:line:513bed5a": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_1_required",
+          "firstInstruction": 4,
+          "lastInstruction": 26
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:5f64c352",
+        "yarn:line:7428755b",
+        "yarn:line:c9e7bb1e",
+        "yarn:line:513bed5a"
+      ],
+      "reason": "Compare the corresponding first-time line in Ryan’s muddy-visit variant."
+    },
+    "yarn:line:797ca540": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_2_Outro",
+          "firstInstruction": 6,
+          "lastInstruction": 10
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:20503ab0": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_2_Outro",
+          "firstInstruction": 23,
+          "lastInstruction": 36
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:c2f44537": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_2_Outro",
+          "firstInstruction": 47,
+          "lastInstruction": 50
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Ryan refers to his girlfriend, who works from home; the next line establishes who was home when he returned."
+    },
+    "yarn:line:5d2d16e0": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_3_Outro",
+          "firstInstruction": 13,
+          "lastInstruction": 21
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "This question is the continuation of the preceding interrupted sentence; review punctuation as a connected utterance."
+    },
+    "yarn:line:c35b717a": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_4_JerkOff_Start",
+          "firstInstruction": 2,
+          "lastInstruction": 3
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:0caa6657": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_4_intro",
+          "firstInstruction": 46,
+          "lastInstruction": 59
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Both options answer Ryan’s request to open the gate, followed by his thanks."
+    },
+    "yarn:line:b9cb051a": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_Outro_ryan_romanced",
+          "firstInstruction": 19,
+          "lastInstruction": 29
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:61c8781b",
+        "yarn:line:c570a462",
+        "yarn:line:ea23c5f9",
+        "yarn:line:afcd5586",
+        "yarn:line:918d7820",
+        "yarn:line:b058318f",
+        "yarn:line:c1b8e62b",
+        "yarn:line:7ede5030",
+        "yarn:line:52bf5ede",
+        "yarn:line:efb2d4af",
+        "yarn:line:da17b746",
+        "yarn:line:b9cb051a",
+        "yarn:line:0d4e0ecf",
+        "yarn:line:0274cacd",
+        "yarn:line:088893da",
+        "yarn:line:d9d276bb",
+        "yarn:line:5bab2df8"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "The person invited on the date is the player kobold; the source does not assign player gender."
+    },
+    "yarn:line:c2529648": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_intro",
+          "firstInstruction": 22,
+          "lastInstruction": 25
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:5462913f",
+        "yarn:line:c2529648",
+        "yarn:line:78039fd1",
+        "yarn:line:ee3398a6",
+        "yarn:line:9b7e09b8",
+        "yarn:line:c38b7fa6",
+        "yarn:line:ca4a9672"
+      ],
+      "reason": "Developer relationship-state option; retain distinct Conrad and Ryan targets and avoid conflating participants. Instruction 41 sets $conrad_romanced true and clears the other two relationship flags; sibling choices target 30 and 52."
+    },
+    "yarn:line:78039fd1": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_intro",
+          "firstInstruction": 22,
+          "lastInstruction": 25
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:5462913f",
+        "yarn:line:c2529648",
+        "yarn:line:78039fd1",
+        "yarn:line:ee3398a6",
+        "yarn:line:9b7e09b8",
+        "yarn:line:c38b7fa6",
+        "yarn:line:ca4a9672"
+      ],
+      "reason": "Developer relationship-state option; retain distinct Conrad and Ryan targets and avoid conflating participants. Instruction 52 sets $ryan_romanced true and clears the other two relationship flags; sibling choices target 30 and 41."
+    },
+    "yarn:line:7f2e2736": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_intro",
+          "firstInstruction": 72,
+          "lastInstruction": 91
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:61c8781b",
+        "yarn:line:c570a462",
+        "yarn:line:ea23c5f9",
+        "yarn:line:afcd5586",
+        "yarn:line:918d7820",
+        "yarn:line:b058318f",
+        "yarn:line:c1b8e62b",
+        "yarn:line:7ede5030",
+        "yarn:line:52bf5ede",
+        "yarn:line:efb2d4af",
+        "yarn:line:da17b746",
+        "yarn:line:b9cb051a",
+        "yarn:line:0d4e0ecf",
+        "yarn:line:0274cacd",
+        "yarn:line:088893da",
+        "yarn:line:d9d276bb",
+        "yarn:line:5bab2df8"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Ryan addresses the player; the reply about being little follows the same exchange."
+    },
+    "yarn:line:e91e2041": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_intro",
+          "firstInstruction": 72,
+          "lastInstruction": 91
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:61c8781b",
+        "yarn:line:c570a462",
+        "yarn:line:ea23c5f9",
+        "yarn:line:afcd5586",
+        "yarn:line:918d7820",
+        "yarn:line:b058318f",
+        "yarn:line:c1b8e62b",
+        "yarn:line:7ede5030",
+        "yarn:line:52bf5ede",
+        "yarn:line:efb2d4af",
+        "yarn:line:da17b746",
+        "yarn:line:b9cb051a",
+        "yarn:line:0d4e0ecf",
+        "yarn:line:0274cacd",
+        "yarn:line:088893da",
+        "yarn:line:d9d276bb",
+        "yarn:line:5bab2df8"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "The player replies to Ryan’s little-guy greeting; preserve the italic emphasis and interrupted speech."
+    },
+    "yarn:line:7f5113d5": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_egg_dialog",
+          "firstInstruction": 5,
+          "lastInstruction": 19
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Bound to the immediate English exchange and its player/dragon response; compare the exact before and after values in the effective-delta ledger."
+    },
+    "yarn:line:66727cce": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_grab_basket",
+          "firstInstruction": 5,
+          "lastInstruction": 25
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Alternative response to a food-basket introduction, followed by the common dragon-sized-portion explanation."
+    },
+    "yarn:line:4a137220": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_grab_basket",
+          "firstInstruction": 5,
+          "lastInstruction": 26
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Alternative response to a food-basket introduction, followed by the common dragon-sized-portion explanation."
+    },
+    "yarn:line:07e5fc05": {
+      "sceneSpans": [
+        {
+          "node": "Start",
+          "firstInstruction": 4,
+          "lastInstruction": 6
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "One of three test-node choices; preserve its role as a selectable response."
+    },
+    "yarn:line:b4990e3d": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 191,
+          "lastInstruction": 205
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The player can confess a crush or ask about the date; both choices have distinct responses."
+    },
+    "yarn:line:09e5bf43": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 204,
+          "lastInstruction": 211
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Ryan’s compliment addresses the player and leads to two player responses; avoid assuming player gender."
+    },
+    "yarn:line:7a5c7f54": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 209,
+          "lastInstruction": 223
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Ryan addresses the player’s embarrassment in this choice continuation; avoid assuming player gender."
+    },
+    "yarn:line:13c906c7": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 355,
+          "lastInstruction": 373
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Ryan addresses the player in the shared-food scene; compare the reply and closing."
+    },
+    "yarn:line:079b3782": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 424,
+          "lastInstruction": 429
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Ryan’s friendship closing has two player replies and should not imply romance."
+    }
+  }
+}
