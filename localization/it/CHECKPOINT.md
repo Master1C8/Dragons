@@ -155,3 +155,5 @@ Resume-08 Alexander first-visit unit: 1,248 rows in 162 groups have bounded two-
 Resume-08 Alexander second-visit unit: 1,293 rows in 165 groups have bounded two-layer author reads; 28 groups remain for complete dependency reconciliation. Igwyx's he/him referents, the explicitly named college and the negated death inference are documented. Full per-concept index, independent review and shared source/exact-preservation readiness remain open.
 
 Resume-08 Alexander third-visit unit: 1,362 rows in 170 groups have bounded two-layer author reads; 23 groups remain for complete dependency reconciliation. The receipt preserves the unestablished apothecary, plural private-washer referent and branch-specific friendship. Full per-concept index, independent review and shared source/exact-preservation readiness remain open.
+
+Resume-08 Alexander fourth-visit unit: 1,415 rows in 172 groups have bounded two-layer author reads; 21 groups remain for complete dependency reconciliation. The contextual Yip choices and the adult device/Conrad references are recorded. Full per-concept index, independent review and shared source/exact-preservation readiness remain open.
