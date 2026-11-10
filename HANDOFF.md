@@ -24,6 +24,13 @@ locales. The isolated Thai font swap resolved the sample glyphs, and
 TMP still emitted the unshaped sequence for `น้ำ` on both players.
 Mixed direction and script shaping require separate handling.
 
+The [paired dialogue and settings controls](localization/evidence/european-text-paths-20261110.md)
+used Ukrainian, Polish and Vietnamese script samples. The live
+Yarn choice and body paths produced NFC for decomposed Vietnamese,
+while the settings path retained the combining sequence. Both players
+matched on all eight controls and completed the same three-choice
+intro route. Pixel-level fit and mark placement remain open.
+
 On 2026-11-09 all five absent Yarn destinations reproduced in isolated macOS
 Unity runs with controlled entry; a Windows CrossOver run independently
 reproduced the Conrad failure. A source-bound candidate appends the five
