@@ -366,6 +366,24 @@ Pass the shared translation JSON. Add `--complete` to require all
 authoring IDs. The report covers dialogue bindings, including speaker
 delimiters and markup. Other adapters and built packages have separate checks.
 
+## Editorial regression export
+
+Use the extended export for new independent game-text audits. It retains
+the dependency and regression selection of the original exporter and adds
+every stock dialogue ID with markup or placeholders on either platform.
+The original command remains available to reproduce previous receipts.
+
+```sh
+"$PYTHON" localization/export_editorial_delta_with_regressions.py \
+  --locale "$locale" --inventory "$shared_inventory" --yarn-scope "$paired_yarn_scope" \
+  --paired-scenes "$paired_scene_export" --before "$before" --after "$after" \
+  --recipe "$review_recipe" --output "$fresh_review"
+```
+
+The exported selector, component hashes and ordered review rows record the
+scope to inspect. They do not establish semantic review, branch execution
+or fit. Preserve old exports when the closure changes.
+
 ## Windows replacement package
 
 `build_windows_package.py` combines the audited Windows adapters in one
