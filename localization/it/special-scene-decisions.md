@@ -95,7 +95,7 @@ Keep both identical response pairs distinct and preserve `$Yarn.Internal.Once.li
 
 ## Gate status
 
-Seven of 27 cases have author-reviewed wording recorded above; the remaining 20 require complete contextual decisions. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
+Fifteen of 27 cases have author-reviewed wording recorded in this file; the remaining 12 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the fifteen. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
 
 ## Alexander's family crest
 
@@ -150,3 +150,83 @@ Source case `mouth-full-speech`, node `Ryan_4_intro`; both English bindings agre
 | `9a9a6120` | Grathie! |
 
 Keep the original choice IDs, controls and order; do not invent a speaker for another line. Positive: either opening reaches the basket explanation and either gate reply reaches the impeded thanks; negative: intelligibility lost, basket omitted or a choice redirected fails. Paired dialogue and choice renderer feasibility is bounded; authored-package checks, pose, actual runtime and fit remain pending.
+
+## New-save slot display
+
+Source case `new-slot-display`, `localization/evidence/non-yarn-translation-scope-20261110.md`, SHA-256 `c3df834a09a5e9855912953cf9257302781cbe33388f23e0638115dc761415f1`. Author self-review: distinguish the three serialized `New` button labels from the runtime-populated `NEW` progress label. The button IDs `ui:3944a555d130038af2323d988762ab1967719d178270e20fc65cd74b7c5efd27`, `ui:4cbc97aea69bccfd4defdb896f11600bdcc0964b970916200b59966d037b24e5`, and `ui:1f92f7d859adfd67efa3a3f37608780f984d3d2e55b5a74774f0dfa70d9d4f86` each use **Nuova** (a new game). The paired managed `display:slot-new` row uses **NUOVA**, covering three `MenuSlotsNew::OnShow` literal occurrences per build. Preserve the numeric progress formats, greyed-slot values and identities exactly. Positive: an empty new-game slot displays both localized labels and an occupied slot retains numeric progress; negative: translating the progress format, overwriting the greyed template or omitting the managed write fails. Existing stock menu observation and paired adapter establish bounded feasibility; actual Italian occupied-state behavior and fit remain pending.
+
+## Missing-line fallback
+
+Source case `missing-yarn-line-display`, same source evidence. The paired `display:yarn-missing-line` row maps both `LocalizedLine::.cctor` source literals per build, English `!! ERROR: Missing line!`, to **!! ERRORE: Battuta mancante!**. Author self-review: the diagnostic remains visibly an error for a missing dialogue line, rather than becoming normal dialogue. Preserve the unrelated provider fallback and choice prefab template. Positive: the missing-line fallback presents the same Italian diagnostic on both paths; negative: leaving one mapped literal in English or changing the unrelated provider/template fails. The existing paired managed-adapter checks establish feasibility; actual Italian package validation and runtime display remain pending.
+
+## Alexander question once-state: partial wording
+
+Source case `yarn-alexander-question-once-state`; the seven paired choice sources agree. The two previously reviewed choices `c2bdc402` and `a5a8a9d5` retain their existing wording above. The other target choices are `fc7aaaa0` **Com'è insegnare?**, `daa040eb` **Ti piace il viola?**, `21c0526b` **Ti piace essere grande?**, `838cdf1b` **Cosa pensi di me?**, and `72a9b5bb` **Sei felice?**. Preserve each exact `$Yarn.Internal.Once.line:<ID>` key, choice ID and listed destination in the source registry; do not merge similar questions. Positive: a fresh state offers the stock-permitted questions and selecting each sets only its original once-state; negative: changed state key, swapped destination or repeated completed option fails. These seven choice wordings are preparatory only: the full associated response scope and final state behavior have not yet been target-reviewed for this case, so it remains open.
+
+## Conrad's dirty double meaning
+
+Source case `dirty-double-meaning`, node `Conrad_placed_mount_3`; both source bindings agree. Author self-review: **sporco** describes both physical dirt and sexual raunchiness, and the drawn-out opening shrinks as in the source. The support is the adult device, not a riding animal. The alternative activity orders and their `$conrad_jerked_off_3` condition remain stock program behavior.
+
+| ID | Italian wording |
+|---|---|
+| `cc6e7856` | Ah! Ecco il supporto! |
+| `5a5e7f21` | Allo<size=90%>o<size=80%>o<size=70%>o<size=60%>ora... <size=100%>Non sono sporco. Ma sono <i>~sporco~</i>, capisci? |
+| `31fa3bdf` | Quindi sei venuto solo per... |
+| `0372e0d1` | Già. Non costava troppo. |
+| `a7ca3ca8` | Scopare qualcosa e poi, spero, farmi fare una sega. |
+| `1d9b3531` | Farmi fare una sega e scopare questo supporto. |
+| `8bab3246` | Sei... molto diretto. |
+| `283e56d8` | Certo che lo sono! So di essere molto... |
+| `be0e51af` | Figo. |
+| `045f5836` | ... |
+| `926f5f41` | Comunque. Ora userò questo coso! |
+| `9542e7a6` | Ah, bene. Inauguriamolo! |
+
+Positive: both replies and each prior-activity state retain their source continuations, and both senses remain clear; negative: collapsed meanings, changed condition or altered tag sequence fails. Bounded text-path feasibility is established; package validation, both runtime states and final fit remain pending.
+
+## Conrad's professional double meaning
+
+Source case `professional-double-meaning`, node `Conrad_finished_jerkoff_3`; paired sources agree. Author self-review: **professionista** avoids assigning the player's gender and lets Conrad echo the profession claim before the separate punchline; duplicate source lines remain distinct IDs.
+
+| ID | Italian wording |
+|---|---|
+| `496134bc` | ...! |
+| `eaf45022` | Accidenti, sai usare bene le mani. |
+| `7cc45755` | ...! |
+| `c6955ecc` | Accidenti, sai usare bene le mani. |
+| `50a559bb` | Ah... <size=70%> già. |
+| `5788e15c` | Certo. Lavoro da <i>professionista</i>. |
+| `c1b8e62b` | Fa sempre piacere quando un coboldo sa cosa gli piace. |
+| `3063100e` | Anch'io. |
+| `a6531779` | ... |
+| `1c021ee0` | A farmi fare le seghe. |
+| `8a321997` | Ora sto puntando quel supporto... |
+| `29a77d09` | Fammi provare! |
+| `bf977a7e` | Ah, va bene. Vado a prenderlo. |
+| `05c673e7` | Certo! |
+| `93f67490` | Cazzo, sì |
+
+The phrasing avoids an article that could suggest player gender; Conrad's **Anch'io** still echoes the professional claim. Keep the duplicate IDs, italic and size tags, option routes and `$conrad_jerked_off_3` behavior. Positive: the professional route holds the delayed punchline while the alternative receives its own continuation; negative: adding player gender or merging continuations fails. Bounded text-path feasibility is established; package validation, state execution and fit remain pending.
+
+## Conrad's self-invented nickname
+
+Source case `big-c-nickname`, node `Conrad_5_outro_ryan_romanced`; both source bindings agree. Author self-review: **il Grande C** remains tied to Conrad's initial, and the player's questioning echo prompts him to discard it. His separate named reply remains distinct; Ryan is the other character referenced.
+
+| ID | Italian wording |
+|---|---|
+| `f57fc630` | Tutto fatto! |
+| `f2527ed7` | Sei <i>splendente. |
+| `646279a0` | Pare di sì. |
+| `17dbb9b7` | Cazzo, sì. |
+| `81ebbec0` | Grazie per il lavaggio a quest'ora della notte. |
+| `3bbab759` | Devi tenermi aggiornato su te e Ryan, va bene? |
+| `ad8ab02e` | Comunque... |
+| `0e1fd4b0` | Fate uscire il <i>Grande C</i> da qui! |
+| `982fd3c7` | Grande C...? |
+| `255362b9` | Va bene, Conrad. |
+| `227eda5e` | ... |
+| `b44edd29` | Sììì, meglio non usare quel soprannome. |
+| `b36365ce` | Ah... Già... |
+| `d04df8f8` | Bene, ci si vede! |
+
+Preserve both italic tag sequences, choice IDs and distinct continuations. Positive: the questioning choice produces the abandoned nickname and the named choice follows its own response; negative: losing the shared C or redirecting the branches fails. Paired renderer feasibility is bounded; actual route execution, authored-package validation and fit remain pending.
