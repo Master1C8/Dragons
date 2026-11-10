@@ -19996,6 +19996,504 @@
       ]
     },
     {
+      "group": "Ryan_5_Required_ryan_romanced",
+      "orderedRowsSha256": "0e4b718dfddc6832a343c17f733e1ae0de08cc39289dc7755693893cd9d95fa6",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-wings",
+          "sourceEntrySha256": "3c78fd3362268274dc2ac3cd2e8bc39fffddeca807a1acef1e24454df105aba8",
+          "localeFieldsSha256": "653487a443f6e2de0037759a9adfbfbf166508764e3d4771dbd30cdc94c10764"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        },
+        {
+          "id": "dnw-yip-man",
+          "sourceEntrySha256": "3a133af8a9b653ada56d688b55629f08bbe27dd7a6fb9e8a483a85ebb03765d3",
+          "localeFieldsSha256": "8e5d34224195431d912fda374ca30d213a4eb4fb38f79799e600847ae2b832bc"
+        },
+        {
+          "id": "dnw-project-scale-mary",
+          "sourceEntrySha256": "d85beb0bba51dc3fba6377f8fd8a1ccebd704ec72b9d3d300728b965b86d5f30",
+          "localeFieldsSha256": "400d906c88752b90762758c2dced9681b83ed671a216c29f07419e999cd9c375"
+        },
+        {
+          "id": "dnw-dragons-of-the-galaxy",
+          "sourceEntrySha256": "8cc560bbec93ceaa757b960ada48188f37456e67084f2b2ce7769fa9c7fd2433",
+          "localeFieldsSha256": "7b1e501763f04f322ce1ac5e98766078149fc0a0a00fe9895bacc3df8e629fc5"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:d9652dff",
+          "pairedRowSha256": "38b0b643b5e8ce532d74c48ec0a2d7cffc9bd450438b9e5fca59ad37167ec075",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan raises the subject of their date."
+        },
+        {
+          "id": "yarn:line:7af04961",
+          "pairedRowSha256": "081f8c0a967905708de3d9065a6ecf4c0c1c48653b96363dcdc720e774c6c276",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks where the player would like to go."
+        },
+        {
+          "id": "yarn:line:ecc04e16",
+          "pairedRowSha256": "ab7f6f540a113d33cd64ead580175d7271ce5b5c8a111ad78cce9aa213835f3f",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player lets Ryan decide."
+        },
+        {
+          "id": "yarn:line:81905be1",
+          "pairedRowSha256": "52bcd85832b38c2fd1b23512b9c13a583d6fd9856bb3b61d92f392b5e1ba002b",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player suggests eating out."
+        },
+        {
+          "id": "yarn:line:412ba249",
+          "pairedRowSha256": "0b5157de7aea8b7fbfbc9cbb9646fcef0319143e972e3f0d9eb2e62e6bf5f218",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player asks about bars."
+        },
+        {
+          "id": "yarn:line:bd66082e",
+          "pairedRowSha256": "a6f12b6297338a5f3a8b788458553f7d87433eab67e7fa0880787308a3a4d9f4",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player suggests a movie."
+        },
+        {
+          "id": "yarn:line:5691478f",
+          "pairedRowSha256": "4d13b0e0cb3f90f002d39f3c4556f5256d9c0de98ae485c983426e52aaeb5063",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player suggests a walk."
+        },
+        {
+          "id": "yarn:line:c0a140f8",
+          "pairedRowSha256": "73dcdd36570b8a6f012f89dccc0e1b6259118830bc6434853a2254082f2ac127",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan likes giving people rides on his back."
+        },
+        {
+          "id": "yarn:line:51bcff68",
+          "pairedRowSha256": "b4691824bba18eaf35fef3439c500583a1a3276cbe254a28a00f5f7eda5ddcc2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks whether the player is interested."
+        },
+        {
+          "id": "yarn:line:c78cf81f",
+          "pairedRowSha256": "87c58f756ce08c04ec96d5dff5696c04b7c5521dae9a0d8598a8dea18d9f5c7a",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player welcomes the suggestion."
+        },
+        {
+          "id": "yarn:line:985436e6",
+          "pairedRowSha256": "ebd61b39598a466c5ead895495f327c3a2e8a1c9e5a7e4fb4d1b5b2bcba63887",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player asks whether it would be degrading."
+        },
+        {
+          "id": "yarn:line:22053f7f",
+          "pairedRowSha256": "645e836a73e0de237ea0f41f29b8882f6279dd50be270460b20b211b17e2740b",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An enthusiastic response."
+        },
+        {
+          "id": "yarn:line:b4353808",
+          "pairedRowSha256": "ef2a36010b5b8e2d1e078eb8a1c8f88b48e96ff91e3a8ecd55a1a227c1bc586f",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan likes giving his biped friends rides."
+        },
+        {
+          "id": "yarn:line:0e643191",
+          "pairedRowSha256": "2a50ecda3795a8a52b14b6d9e75ab864e18338e57d4091bc967df9b2805b71fe",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan looks forward to the date."
+        },
+        {
+          "id": "yarn:line:3bc15278",
+          "pairedRowSha256": "6acb6ac609d6378c8e68fb0c219ba10d88c8ec2b66fbb23724067c06364d29ab",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says it is fun, not degrading."
+        },
+        {
+          "id": "yarn:line:adf1550f",
+          "pairedRowSha256": "7233b60207e992d53233b46f0ae228aff62924c67d7ad88542f7782903538004",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says he often carries his other bipedal friends."
+        },
+        {
+          "id": "yarn:line:17a05c96",
+          "pairedRowSha256": "c38b00d46122c69357c156a372a8103a8607522386ba7195f0e92808a37d76fa",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan suggests meeting at the pier."
+        },
+        {
+          "id": "yarn:line:108de471",
+          "pairedRowSha256": "bc6940b1d04ed35da62fdbd9b082adeb1ff9cc9a96607bc9759c2ff788b4e03c",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A positive response."
+        },
+        {
+          "id": "yarn:line:86bde306",
+          "pairedRowSha256": "cebadf7a50491e4a2bd8e2c3b7b4dfc1791709bf5aa2f24c128a8f970f7ee815",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks about seafood."
+        },
+        {
+          "id": "yarn:line:e5937e30",
+          "pairedRowSha256": "709faa83f5948d3df5008112c65ab80f8e7bda41a520fe7e2d942ea2e1c954e0",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player likes fish."
+        },
+        {
+          "id": "yarn:line:fc571337",
+          "pairedRowSha256": "df742454be02be07b6e8b709eb4bd87623978c73ab64093a1d4df851940215c2",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "An alternate choice suggests something else."
+        },
+        {
+          "id": "yarn:line:73a37947",
+          "pairedRowSha256": "fbc4ec352b48d1e86abd930f0e44488b8d4fc1e74d921b7bfe8b00b1ac4e051f",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says he likes salmon."
+        },
+        {
+          "id": "yarn:line:c9f270de",
+          "pairedRowSha256": "8a1bd5311feb45fcba5407af8a6d25a8a0bfc1862354dd916f51d748d9c967e2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Ryan jokes that he is a dragon after calling himself a salmon guy."
+        },
+        {
+          "id": "yarn:line:5fc277a9",
+          "pairedRowSha256": "e15ace8e000e0f19d86f78572fda573161c1abc1ccff918c797ea989c7988c88",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan proposes seafood and an open-ended date."
+        },
+        {
+          "id": "yarn:line:6a671440",
+          "pairedRowSha256": "c30050a6bd848a6bd11589c0a4a1d63321e081d0994b44e48874b05a17f20d8b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan knows an equine-kin restaurant near the pier."
+        },
+        {
+          "id": "yarn:line:d0361dd9",
+          "pairedRowSha256": "08fe8247656fa847749af837fd6d3fb11ca24b2af709617abf7e8c497a48539e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan describes its equine fusion cuisine."
+        },
+        {
+          "id": "yarn:line:46061aae",
+          "pairedRowSha256": "4c80d2f10db368c0866565f8c0b2b4559e3d4f83d8b16c06bad8859c9b5f8883",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan thinks the player would enjoy the restaurant."
+        },
+        {
+          "id": "yarn:line:d71ba53e",
+          "pairedRowSha256": "aa13a685f3a8fa2cd8ff3fc0b4fbdc105c7a01024915674a737dac3cee39eed7",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The speakers settle on the date."
+        },
+        {
+          "id": "yarn:line:a4a26529",
+          "pairedRowSha256": "46f3716100b3273399d63410c1d005dad26b668a1bbd2b5321a6ffd7754a00b7",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-wings"
+          ],
+          "decision": "Ryan names Wings as a downtown venue."
+        },
+        {
+          "id": "yarn:line:3292625e",
+          "pairedRowSha256": "0428317e8f852ec4c7e9aaeadbf7c7a85ba2a30298923a5432d7404112e45af7",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-wings"
+          ],
+          "decision": "Ryan says the venue has nightly shows."
+        },
+        {
+          "id": "yarn:line:88c36bc7",
+          "pairedRowSha256": "c9d53672e97ab72eb331e0c56aa9c585318c906a8b5aa96b177caeff6baf6d85",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan considers a hotel room afterward."
+        },
+        {
+          "id": "yarn:line:1ef36cb0",
+          "pairedRowSha256": "5f6fe8e6441c35400165c5f499f07a645aaa37a49ec01651fdbe8e439707152f",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The speakers settle on the date."
+        },
+        {
+          "id": "yarn:line:2b560f59",
+          "pairedRowSha256": "f3474138229a8f60176c9fafd4986017efabe62e0fc7aac5be34b49a13f3579a",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A questioning response."
+        },
+        {
+          "id": "yarn:line:910706c0",
+          "pairedRowSha256": "8d7d94aac35dd9342e3c0aa4c48c7a7af6a9136215193024b59f46f85b5c2a78",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan thinks a movie could be fun."
+        },
+        {
+          "id": "yarn:line:073701b7",
+          "pairedRowSha256": "76a18d1adb362c529865aefbb6a683911e7af7583c074c01fa3495fabd50ca7e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks the player what movie."
+        },
+        {
+          "id": "yarn:line:962abe27",
+          "pairedRowSha256": "93250296b5c577e6217e92b4398529228994bc66833077c25248dbe36ef0222a",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-project-scale-mary"
+          ],
+          "decision": "The player can choose the movie Project Scale mary."
+        },
+        {
+          "id": "yarn:line:f1c14f75",
+          "pairedRowSha256": "3db833decc9fca8e39988e5704eb0f0987df500a1efcf58459a53e1471fadbf7",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-yip-man"
+          ],
+          "decision": "The player can choose Yip-Man - The Final Yip."
+        },
+        {
+          "id": "yarn:line:7e352505",
+          "pairedRowSha256": "61e7e14de9a0c507076491d8ab3dcaf91de6ec0f5570a459ebd00861e3aa0848",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-dragons-of-the-galaxy"
+          ],
+          "decision": "The player can choose Dragons of the galaxy 2."
+        },
+        {
+          "id": "yarn:line:001ab950",
+          "pairedRowSha256": "f2c2f1792f7fe35c7132103fccd7bb737719f9c97627fa9626c23878b9bb1231",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan has heard good things about the selected film."
+        },
+        {
+          "id": "yarn:line:67f14802",
+          "pairedRowSha256": "663116a2f09378633f3dc1d602d3a598050a7c9a2ffd8c6815b24df8fc606c77",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An affirmative response."
+        },
+        {
+          "id": "yarn:line:4b9046ec",
+          "pairedRowSha256": "5eaaa652e5c8170c033f76bd08d4f9110e90aedd625bf43ee71af09f3954633a",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-yip-man"
+          ],
+          "decision": "Ryan calls the Yip-Man movies corny."
+        },
+        {
+          "id": "yarn:line:dda0419b",
+          "pairedRowSha256": "c6a2c2a37a3e6741c1be3ba602897e6b0273db73f1f76e78e2413114cf7f2853",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan expects to enjoy the film with the player."
+        },
+        {
+          "id": "yarn:line:e8052272",
+          "pairedRowSha256": "09daab1f43efcd1f9acc8f968429e0f215e5241169aa1f281af814aafaa493b6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan liked the first movie in the selected series."
+        },
+        {
+          "id": "yarn:line:52542beb",
+          "pairedRowSha256": "c244adb84b0c15148fc1390737725a3db6b613d1c3d2c3ade9530fac54039cbb",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An affirmative response."
+        },
+        {
+          "id": "yarn:line:c4642c9c",
+          "pairedRowSha256": "1f4086c1031070e8ad99636762b79046607ad4f74e9a710587449195e459ae96",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan looks forward to the date."
+        }
+      ]
+    },
+    {
       "group": "UI/level0",
       "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
       "applicableEntries": [],

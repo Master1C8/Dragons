@@ -503,3 +503,8 @@ Both author layers bind the 20 paired `Ryan_5_Required_ryan_conrad_romanced` row
 ### Resume 09: Ryan’s account of his girlfriend
 
 Both author layers now bind 38 paired `Ryan_2_Outro` rows. Ryan explicitly describes his unnamed girlfriend as a dragon working from home and uses she/her (`yarn:line:c2f44537`, `78a54cae`); do not invent a personal name or conflate her with the four-scene anonymous speaker. Ryan’s suggestion that she is upset about something else (`yarn:line:bc2545e7`, `a5e128e0`) is his speculation. The wash refers to a service/establishment in context. Applicable source and Italian character, dragon and wash fields were checked; no new objective field defect was identified. These are author self-reviews, not independent acceptance.
+
+
+### Resume 09: Ryan date choices and titles
+
+Both author layers bind all 45 paired `Ryan_5_Required_ryan_romanced` rows. Ryan names Wings as the downtown date venue (`yarn:line:a4a26529`) and discusses its shows, matching the place entry. The three selectable film titles at `yarn:line:962abe27`, `f1c14f75`, and `7e352505` were checked against their full source and Italian entries; the meanings appropriately label the film-title allusions as likely rather than confirmed fact. Ryan describes carrying biped friends as something he enjoys; this is his preference, not a rule for all dragons. Applicable complete source and Italian fields were inspected; no new objective defect was established. These are author self-reviews, not independent acceptance.
