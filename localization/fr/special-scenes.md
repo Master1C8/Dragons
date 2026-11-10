@@ -1,6 +1,6 @@
 # French special-scene decisions
 
-Status: **18 of 27 groups have author-reviewed draft wording; the entry gate for ordinary translation remains open.** Authored input: [translation.json](translation.json), SHA-256 `9747f6b49e356d098b022ff5b27f8522db23592e40bdec7afaa4a7f6dd919168`. It contains 148/1,947 package IDs. The bound inventory, Yarn scope and French glossary hashes are in [CHECKPOINT.md](CHECKPOINT.md) and [glossary-review.md](glossary-review.md). The other 9 groups remain unreviewed; the anonymous group also retains the technical boundary below. The English worklist and source registry, not another locale, supplied the wording and context.
+Status: **19 of 27 groups have author-reviewed draft wording; the entry gate for ordinary translation remains open.** Authored input: [translation.json](translation.json), SHA-256 `0aa11944f37c39444b7352606ee16600ad4681880891fd3af149035e9dc9c69c`. It contains 166/1,947 package IDs. The bound inventory, Yarn scope and French glossary hashes are in [CHECKPOINT.md](CHECKPOINT.md) and [glossary-review.md](glossary-review.md). The other 8 groups remain unreviewed; the anonymous group also retains the technical boundary below. The English worklist and source registry, not another locale, supplied the wording and context.
 
 ## Alexander: the taste of seven
 
@@ -85,3 +85,9 @@ Both platform validators accepted 148 authored IDs. Reopened partial assets matc
 ### English buzzing control follow-up
 
 On macOS, the unmodified English Yarn asset (`sharedassets1.assets` SHA-256 `f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8`) and the same direct-entry active-dragon fixture reproduced the literal `$dragonName` component error after the first buzzing choice. This narrows the problem to the English direct-entry fixture as well as the earlier Russian fixture; it does not establish natural-play behavior, Windows English behavior, or completed French gameplay. The isolated fresh-profile receipt and full log hashes are in CHECKPOINT.md. Preserve the source command; do not infer a translation defect or silently change the shared handler.
+
+### Conrad: height euphemism
+
+The 18 IDs in `conrad-height-euphemism` cover both distinct relationship routes in `ryan_food_dialogue`. Both responses use « désavantagé sur le plan vertical » for the repeated euphemism, keeping the tiny-dragon observation, correction and alternative replies distinct. The author compared the English source in instruction order and read the French across both routes; this is an author review, not an independent audit. Three punctuation-only build variants explicitly share their French wording. The source-bound adapter retains the route flags and choice identities. The two euphemism responses and alternatives still require actual route playback and fit review; the source registry does not prove reachability.
+
+Both platform partial readbacks matched all 1,839 ordered Yarn values and metadata, including 163 authored and 1,676 untouched values. macOS SHA-256 `930bff289e7619ec93e898eb4795826adf669569564dc196ba0b0814cf54bc49`; Windows `80b4656f550e78af7ce6762ea62034d9da20d2f4edabf50146fafeaf30324998`. These are diagnostic assets, not deliverables.

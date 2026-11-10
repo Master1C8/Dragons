@@ -157,6 +157,33 @@
     "yarn:line:dda0419b": "Mais je suis sûr que ça me plairait avec toi !",
     "yarn:line:e8052272": "Ah oui, j’ai aimé le premier.",
     "yarn:line:52542beb": "Bien sûr !",
-    "yarn:line:c4642c9c": "C’est un rendez-vous, alors. J’ai hâte."
+    "yarn:line:c4642c9c": "C’est un rendez-vous, alors. J’ai hâte.",
+    "yarn:line:035e5be6": "Cette personne a l’air mignonne !",
+    "yarn:line:2f3f5508": "Hé ! Il est juste… « désavantagé sur le plan vertical ».",
+    "yarn:line:31281c6d": "C’est un dragon rouge VRAIMENT mignon qui vient au lavage !",
+    "yarn:line:3605a48a": "Oh ! Je crois que je l’ai vu. Le tout petit, c’est ça ?",
+    "yarn:line:36fb380f": {
+      "text": "Oh, super, il est mignon !",
+      "sharedAcrossSourceVariants": true
+    },
+    "yarn:line:45bc649d": "Oh…",
+    "yarn:line:48d4a45a": "Il y a ce dragon rouge, Conrad. Il est… impulsif, mais mignon.",
+    "yarn:line:69dd6a73": "Mhm ! Il essaie de rencontrer de nouvelles personnes.",
+    "yarn:line:8b7915f4": "Qui ça ?",
+    "yarn:line:956e5c91": "Oh, pardon.",
+    "yarn:line:a035a3fd": "Il préfère « désavantagé sur le plan vertical »… Mais oui.",
+    "yarn:line:a0cb3f78": {
+      "text": "Mhm ! C’est bien lui.",
+      "sharedAcrossSourceVariants": true
+    },
+    "yarn:line:a7181b1a": "C’est un dragon rouge. Je pense que vous vous plairiez bien !",
+    "yarn:line:b90f527f": "Oh, attends, c’est le petit dragon que j’ai vu entrer tout à l’heure ?",
+    "yarn:line:d38c63ea": {
+      "text": "C’est vraiment mignon.",
+      "sharedAcrossSourceVariants": true
+    },
+    "yarn:line:d9c91bca": "Et toi, alors ? Tu fréquentes quelqu’un ?",
+    "yarn:line:dee4a32d": "Oui ! Conrad, il est adorable. Même s’il détesterait m’entendre dire ça.",
+    "yarn:line:ffed6d04": "Oh, super. On se ressemble, alors."
   }
 }
