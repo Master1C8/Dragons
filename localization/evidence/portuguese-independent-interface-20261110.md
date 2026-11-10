@@ -1,0 +1,7 @@
+# Brazilian Portuguese independent interface and anonymous-dragon review
+
+Read 143 additional positions against the exact `f6dec00` 1,095-ID closure. These include the complete UI and settings entries, credits, managed labels, and all 20 rows in the four anonymous-dragon scenes. The speaker and player language in those scenes leaves identity and gender open. The [prior effective-edit review](portuguese-independent-effective-edits-20261110.md) covers 51 disjoint IDs on the same payload. The exact remaining set contains 901 unread IDs.
+
+One new proposal in `ui:5d545a9c8e8328196e2a962fb0c727593cedeffeacc833180fa97f69e0837c04` renders the credit “Build Integration” as “Integração de builds,” preserving the three other responsibility labels and all line breaks. Both stock platform validators and the complete 1,947-ID paired reader accepted the proposed candidate. Only the materialized credits input differs on either platform. The candidate and the two earlier dialogue proposals await combined adjudication after the first complete independent closure read.
+
+The exact review receipt is `localization/work/pt-BR-independent-interface-20261110.ruXuIE/review.json`, SHA-256 `6d09fd6f20ebb18ae8a295bd1ece27de9780366ebbbb2973dd0c3e897cd8f814`. Candidate SHA-256 is `e41a37924f7fe61a4b4aabb67f58dc3d1b843664c76149c496d79e633735dbd5`. Both platform input proofs and the ordered remaining IDs are included.
