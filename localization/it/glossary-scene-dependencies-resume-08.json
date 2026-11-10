@@ -1872,25 +1872,85 @@
       "group": "Conrad_4_Cum",
       "orderedRowsSha256": "dc5643593602ce00ea99809da45d1427e330289583779cb100ed140228a9cc53",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Conrad compares the interaction with berries; the comparison identifies no other person.",
+      "layer1": "Berries are not a named character.",
+      "layer2": "Conrad's informal voice and neutral player entry fit.",
+      "sourceIds": [
+        "yarn:line:8fe11008"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-short-scenes-and-diagnostics",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_4_JerkOff_Start",
       "orderedRowsSha256": "3442ffd8b2bc50803c92208d3d3956daeea1676428ed4327275c2f08057e316e",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Conrad agrees to the present activity; now refers to timing, not a general obligation.",
+      "layer1": "The utterance is a present consent, not standing consent.",
+      "layer2": "Preserve timing and the neutral addressee.",
+      "sourceIds": [
+        "yarn:line:6866c2c9"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-short-scenes-and-diagnostics",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_4_Mount_Finish",
       "orderedRowsSha256": "9d182e350a01cdbcfed8bf8371c6c90d24cc1009b35d4df6d7cf33509dce7645",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:88d7e1e2"
+        ]
+      },
+      "referents": "Conrad praises this wash as a place after the activity; no additional person is identified.",
+      "layer1": "Wash here can denote the establishment in context.",
+      "layer2": "Italian venue sense and Conrad's emphatic register fit.",
+      "sourceIds": [
+        "yarn:line:88d7e1e2"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-short-scenes-and-diagnostics",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_4_Mount_Start",
       "orderedRowsSha256": "60f45c68d410adfea6ae5a3660ed8a386e5ba735ea8a380b4e1c5d52911bf5d8",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-mount": [
+          "yarn:line:f99eb2ff"
+        ]
+      },
+      "referents": "Conrad reacts to the adult device.",
+      "layer1": "The mount is the established device.",
+      "layer2": "The Italian device field fits and the exclamation retains his register.",
+      "sourceIds": [
+        "yarn:line:f99eb2ff"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-short-scenes-and-diagnostics",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_4_Ryan_Conrad_Romanced",
@@ -1902,25 +1962,87 @@
       "group": "Conrad_5_Cum",
       "orderedRowsSha256": "c2d782d81ac308fdfdea8a65b68cda1d7589ef0a1d72215f66e5b80161a8590a",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-dragon"
+      ],
+      "conceptUses": {
+        "dnw-dragon": [
+          "yarn:line:203bce10"
+        ]
+      },
+      "referents": "Conrad praises the player's skill with a dragon, referring to himself in context.",
+      "layer1": "Dragon refers to Conrad, not a newly identified customer.",
+      "layer2": "Species and Conrad fields fit; player gender remains unspecified.",
+      "sourceIds": [
+        "yarn:line:203bce10"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-short-scenes-and-diagnostics",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_5_JerkOff_Start",
       "orderedRowsSha256": "928ac7a5e9cfe58b6436a19581c4f0ce4925d75a5663b9da45831b7664ad5a03",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Conrad accepts the player's present proposed activity.",
+      "layer1": "The question and acceptance concern this moment.",
+      "layer2": "Preserve the local acceptance without assuming future consent or player gender.",
+      "sourceIds": [
+        "yarn:line:4d4d9986"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-short-scenes-and-diagnostics",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_5_Mount_Finish",
       "orderedRowsSha256": "255c8b96fc98d83af0defdba073d02c889d43854ea7b7a644c8c3029c4bb996b",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-mount"
+      ],
+      "conceptUses": {},
+      "referents": "Conrad comments on the sensation in the routed mount scene; no other person is identified.",
+      "layer1": "The comment is an implicit scene context rather than an explicit mount occurrence.",
+      "layer2": "The device field remains applicable without inventing a named participant.",
+      "sourceIds": [
+        "yarn:line:684fb29a"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-short-scenes-and-diagnostics",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_5_Mount_Start",
       "orderedRowsSha256": "f1d4fb3de684f40a126eb163110b634c4866e350bda77a52967f3b98a362bc1c",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-mount": [
+          "yarn:line:cacbff51"
+        ]
+      },
+      "referents": "Conrad reacts to the adult device and addresses the player informally; man as address does not by itself establish player gender.",
+      "layer1": "The named mount is the device and colloquial address is not decisive gender evidence.",
+      "layer2": "The target device and neutral player fields fit; preserve italic markup.",
+      "sourceIds": [
+        "yarn:line:cacbff51"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-short-scenes-and-diagnostics",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_5_intro_conrad_romanced",
@@ -2605,7 +2727,20 @@
       "group": "Conrad_started_jerkoff_3",
       "orderedRowsSha256": "e1a264d7bb897bbd4371dae8ff1f11cc9b9a1306a34939d857dcde283cd04c09",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Conrad encourages the player to continue the present interaction.",
+      "layer1": "The imperative addresses the player; no additional person is established.",
+      "layer2": "Preserve the immediate request and neutral player reference.",
+      "sourceIds": [
+        "yarn:line:934a1d5a"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-short-scenes-and-diagnostics",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "DragonAlmostClean",
@@ -2661,7 +2796,27 @@
       "group": "DragonColdBalls",
       "orderedRowsSha256": "b818045d5abea1b2ac29c4fed18074d8074b5b3d92bbd0fc67b04068bd13ceba",
       "count": 4,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-dragon",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:78975048"
+        ]
+      },
+      "referents": "Four short reactions to cold or cold water are alternatives in a generic dragon context. These rows do not identify the speaker or link it to the separate four-scene anonymous role.",
+      "layer1": "Cold water is cleaning context, not proof of any named customer's identity.",
+      "layer2": "Species and service fields fit without asserting identity or gender.",
+      "sourceIds": [
+        "yarn:line:4d3233a1",
+        "yarn:line:eea7573f",
+        "yarn:line:78975048",
+        "yarn:line:c2c659d1"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-short-scenes-and-diagnostics",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "DragonConfusedAboutDismissal",
@@ -2721,7 +2876,19 @@
       "group": "ErrorHasOccurred",
       "orderedRowsSha256": "146598c4954e2a7810a5b170ba49e9cd42c6476aabb9aa08909b78ce9e84b3b8",
       "count": 3,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [],
+      "conceptUses": {},
+      "referents": "A diagnostic message asks the reader to contact nael or submit a bug report. Nael is named as a real-world diagnostic contact, not established as an in-world character.",
+      "layer1": "Do not assign the diagnostic contact to a game character entry.",
+      "layer2": "No Italian glossary field correction follows from this diagnostic text.",
+      "sourceIds": [
+        "yarn:line:3fdb9d01",
+        "yarn:line:a9eb9a76",
+        "yarn:line:13ba93ef"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-short-scenes-and-diagnostics",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Mount_Alexander_2_6",
@@ -3208,13 +3375,45 @@
       "group": "conrad_jerk_off_no",
       "orderedRowsSha256": "4e0804a6ddeb76c46bb0e98b06de61004d055987cef20dd1dc3c19df583b348b",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Conrad declines the interaction now, without stating a permanent refusal.",
+      "layer1": "Not now is time-limited.",
+      "layer2": "Preserve the refusal and its timing.",
+      "sourceIds": [
+        "yarn:line:2a29842a"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-short-scenes-and-diagnostics",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "conrad_mount_no",
       "orderedRowsSha256": "76e58635c6bc53ee2bb3b843308f4fa589503957ef921cdf19a3522943ad3cdd",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-mount": [
+          "yarn:line:5406ba8e"
+        ]
+      },
+      "referents": "Conrad says he would normally accept a mount but declines at this time.",
+      "layer1": "The device and present refusal are distinct from hypothetical normal preference.",
+      "layer2": "The target device sense fits; do not turn a current no into a permanent one.",
+      "sourceIds": [
+        "yarn:line:c236bdf9",
+        "yarn:line:5406ba8e"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-short-scenes-and-diagnostics",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "ryan_food_dialogue",
