@@ -3317,6 +3317,997 @@
           "decision": "Conrad says he would normally accept a mount but declines now."
         }
       ]
+    },
+    {
+      "group": "RyanDate_1",
+      "orderedRowsSha256": "4caa25f8cc9062d3cac7377e0cffc8d12371ec1bed087ca75eea32b3b9f96e1e",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:69ffe957",
+          "pairedRowSha256": "a4a0a417a6aba694e8b2fbbc4be25938fb911bcd0acfabe0637b202ca9130466",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan is excited about the date."
+        },
+        {
+          "id": "yarn:line:ffcfee20",
+          "pairedRowSha256": "1dee1f7c55facd0876b08bd384c7904bf33ff9c26694c01d57cc15ce9ae79066",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan lists food he brought."
+        }
+      ]
+    },
+    {
+      "group": "RyanDate_Idle1",
+      "orderedRowsSha256": "689e38f15f2e88854d2caf1fa281c93f3e16a007468590f5d90be9eeb0346711",
+      "applicableEntries": [
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:3223473f",
+          "pairedRowSha256": "e75b01debdd6e36358a93fd4244877f1ad5afda603936c6f04b34bcd3aed5a43",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan is excited to date again."
+        }
+      ]
+    },
+    {
+      "group": "RyanDate_Outro",
+      "orderedRowsSha256": "14d92bef7089a78762e051fe5593829d5e94f861f670c2c33b472aee02354220",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:019b83df",
+          "pairedRowSha256": "c04882d94f874407b05972239c5a931fa9729c49c40395a34e224ba0fc76bd4b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan feels better about dating after the experience."
+        },
+        {
+          "id": "yarn:line:bbca8a46",
+          "pairedRowSha256": "0b410e9d8c1094894c2d140c2c0adcb506b1eec67eab9f0a576d90532721fa05",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan thanks the player."
+        }
+      ]
+    },
+    {
+      "group": "RyanExploded_Outro",
+      "orderedRowsSha256": "51b2cde75ee0b3fcf4dcc7ee5041c6e86662f13687f46f03e9d9358122126f5f",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:b3c35166",
+          "pairedRowSha256": "9fe8ccf7e9e2f72c3568f5c572491ec23497713036887759654f763388504521",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says he worried about making another mess."
+        },
+        {
+          "id": "yarn:line:564a9606",
+          "pairedRowSha256": "ef4ced49e741047bee6a5edc0af1af1e239ced4354ae875561ce00675fc59f2d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says they will not need to know; this row alone does not establish who they are or their number or gender."
+        },
+        {
+          "id": "yarn:line:c07a9171",
+          "pairedRowSha256": "bfd070275d5c68c2a0bb5b3fa85d2444d674cfae9c4a991e7bf1e49ac7742dc6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan thanks the player."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_1_nag",
+      "orderedRowsSha256": "3da78ba017df2d75ad9cd155aaa2cc21ef7908a19186693c484b24e91984a34c",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:71b651dd",
+          "pairedRowSha256": "ca77c5860e0743f16c1e5ef0783971450505588cab780ad5d014f9ef9c874b7d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan tells the player he has something to say."
+        },
+        {
+          "id": "yarn:line:e78656aa",
+          "pairedRowSha256": "a197b0c6d1888c596c8170feee9a87222fe6cdd680c37533230b96393d535da1",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks the player to come into view."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_3_wont_use_mount",
+      "orderedRowsSha256": "4d7da95f0bf2db584878fea9979ca6aa949658f5171f3f2604ff2068070f513e",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-mount",
+          "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+          "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:ccf87ea9",
+          "pairedRowSha256": "927886df97fa197b399bd6e9bb6cf50a5d53b752d6b06b7b7e905751c3b648fb",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Ryan is not interested in using the mount now."
+        },
+        {
+          "id": "yarn:line:76a97730",
+          "pairedRowSha256": "fafd8d33ce74f1efd349760155eaee6e2a0e63d0d0a3af74687734e08ceefa1d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Ryan suggests perhaps later."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_4_Cum",
+      "orderedRowsSha256": "99be4e24377c28e03f92b859051961cf1180c341c54da919b4f15d5a836a5e93",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:45507089",
+          "pairedRowSha256": "21dbbfb0ffb75e5853b6ffe720bbbe504a5d1bcae2014e22c326c293f6e8741a",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan liked the experience but made a mess."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_4_JerkOff_Start",
+      "orderedRowsSha256": "5c47f9c29feb47694b61a978313c6f0126328e7d34ad9c2f78b917c4c2695cb9",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:c35b717a",
+          "pairedRowSha256": "3ef384a141cc59eb21f3c28aaa11341ff82dc72e4e565abbe6de5a1c3c4d7932",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks the player if they are sure given the food nearby."
+        },
+        {
+          "id": "yarn:line:5246ceea",
+          "pairedRowSha256": "9b960b1d58efafe6d5fa861c8ff17a7c7fc13baee529117800c5624c25a41803",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan agrees."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_4_Mount_Finish",
+      "orderedRowsSha256": "8fdeda5272e8170543923de6f7cee393ed2a511802f41c598e8d5f517b3c2ef1",
+      "applicableEntries": [
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-mount",
+          "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+          "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:d2ba8ba9",
+          "pairedRowSha256": "34ebc010c019cb0542699bb2d4ecbf0d182663dd5f52017f53a1b2cfc0ea175e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Ryan says the mount experience was worth the mess."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_4_Mount_Start",
+      "orderedRowsSha256": "79ca02f5e2afc88efb62a4ca4af14dabfad983c5be50e2be06479546f02ed980",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-mount",
+          "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+          "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:4b93b009",
+          "pairedRowSha256": "4ca5e83de961c7d8cd6766d5bfa4c43b342d2013d308f68e2ea12e8d330198c9",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Ryan asks if the player wants him to use the mount despite the food and agrees."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_5_Cum",
+      "orderedRowsSha256": "50717a9db10d644fcebe689a3b5aeee5756abda5a00f334b3cce384b3b61279f",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:828eed25",
+          "pairedRowSha256": "44b751d7f3dfa72542d63ce0bdb111057347a145b47420258aa4f5054286f17c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says he needed the experience and thanks the player."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_5_JerkOff_Start",
+      "orderedRowsSha256": "5bdf721bde806b1727ef3a69e8fca7682baaf72db8192813dbe08df6f390314a",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:5f0edcb2",
+          "pairedRowSha256": "34b79d60bb530199e5cb9af028b36d5e6798182bf12c7103e0edd8e76f7028be",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan addresses the player about their touch."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_5_Mount_Finish",
+      "orderedRowsSha256": "d04c7ff56584e1a1360d595b166d3c75be201e182547a1f9cda22ef31253510f",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-mount",
+          "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+          "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:16420ca7",
+          "pairedRowSha256": "32bb0cff3be7e052e4ced9531f61343e12ac24390f17a2fa1a43e6d1a9ce878e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Ryan thanks the player after the mount."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_5_Mount_Start",
+      "orderedRowsSha256": "19128891611c8e169ae7d6a1523801600bbedd6002ac8202d1945c11488cd04d",
+      "applicableEntries": [
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-mount",
+          "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+          "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:94e04dcf",
+          "pairedRowSha256": "92d31ca65e7c7db8f146496eca1708e6620f8908e0862637d235c6260601e6cb",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Ryan agrees to use the mount."
+        }
+      ]
+    },
+    {
+      "group": "ryan_jerk_off_no",
+      "orderedRowsSha256": "34a8bd5cddad27ef9ccbb329f740fe998fbb222bc65bd9ef985c63bd8410092c",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:2d5fc8a2",
+          "pairedRowSha256": "7be9fae1860737bf0953708ecabd7abb5e5dfa5fd0b9820ffe7e52db756322d4",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks the player to leave touching until later."
+        }
+      ]
+    },
+    {
+      "group": "ryan_mount_no",
+      "orderedRowsSha256": "5d4ef51f5d85b57b9970da5a5ec36f48f0fc48e452fc1b98de96656f5271a946",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-mount",
+          "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+          "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:6bd91ca7",
+          "pairedRowSha256": "d3cc7eeea9ad3b0f01b035f38764773d1c16bb4c30ff523e046457e72d6edb7f",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Ryan declines the mount."
+        }
+      ]
+    },
+    {
+      "group": "Alexander_SexScene",
+      "orderedRowsSha256": "2605ecde6eb0b51f9682b885a29819e08e3170651c6414e37353ffd549fc344a",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:d132db41",
+          "pairedRowSha256": "bfa4fa92c469b486378acf4310cd3ea1cbd250103b077017a4ddb93c0bba53b0",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "One of the two participants suggests lying together; this row alone does not identify the speaker."
+        },
+        {
+          "id": "yarn:line:6b63d2d8",
+          "pairedRowSha256": "0385a8d4de7f0f5928466a6676e718532955ba495b59cac58cd3bd781e16c6b2",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A participant asks the other to take care of everything; the row alone does not prove individual voice routing."
+        }
+      ]
+    },
+    {
+      "group": "Alexander_SexScene_Loop",
+      "orderedRowsSha256": "7f57a7a5354c3e555b4938f6658910bffac740f3e9d545488e70b86fe446d2a6",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:dfe74420",
+          "pairedRowSha256": "3c0c3bc81540eafdca75b4ca36686b17aaabb95738466a7f08c2b774d6623eb3",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A participant exclaims; the isolated voice is not identified."
+        },
+        {
+          "id": "yarn:line:4efafbb0",
+          "pairedRowSha256": "a84ca3466262cccc9294b8a5bd1aa2ac0db733b1bcd7e7f9ffb18897c46ac60f",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A participant praises the other’s skill; the isolated row does not identify the speaker."
+        },
+        {
+          "id": "yarn:line:d8cafcc7",
+          "pairedRowSha256": "73e4d72459b8905792c930b74d0facc95edab1f0c05a980e52ec725a1ba85239",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A reaction with no individually established voice."
+        },
+        {
+          "id": "yarn:line:b36eb839",
+          "pairedRowSha256": "15fea7de58f828a2efcc91fd962df97f0536241189e3cb484b36b5b203109669",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A pause with no individually established voice."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_SexScene",
+      "orderedRowsSha256": "7d38ab6b046ed4496102bc97ef00754067cf4ddd386d9daf1f713506278c8daf",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:77c996e8",
+          "pairedRowSha256": "4adb74d46d3fe1a9ce689f51bfe12912bb7722c9b2afff27396045623c60c658",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A participant calls the other adventurous; this row alone does not identify the speaker."
+        },
+        {
+          "id": "yarn:line:a78dd44b",
+          "pairedRowSha256": "48207f86e98b3e3c238ad51704c97031f8b2093ad439d68a63e5215590561649",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A participant responds with a full mouth; individual routing is not established by the row alone."
+        },
+        {
+          "id": "yarn:line:31bdd33c",
+          "pairedRowSha256": "718fedea8c69f670b4eac0dc752a388c3a26375a5c0f5ad3d8158e8973e10dc7",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A participant tells the other not to talk with their mouth full; individual routing is not established by the row alone."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_SexScene_Loop",
+      "orderedRowsSha256": "279ae0dfe720f62e674773f3333d98a20642aa8928c1de5d7d6578ed69c4d5f5",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:2f9b499a",
+          "pairedRowSha256": "33320ae7ba822463e677380f96bcc3e8eb5b68604e3dd7ced5f5c431a407d76d",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A participant addresses the other; individual voice is unresolved from the row alone."
+        },
+        {
+          "id": "yarn:line:b9ab4eed",
+          "pairedRowSha256": "55b32aeb419b5538e3f14c0bea3f7099c9c394effb23aaceb177238fe677347b",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A participant is not complaining; individual voice is unresolved from the row alone."
+        },
+        {
+          "id": "yarn:line:1a3e2a73",
+          "pairedRowSha256": "cc279c81c88732956c7ac4023d7feb41a2b0002800b2016fa9f524f053e7d136",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A participant reacts; the isolated voice is not identified."
+        },
+        {
+          "id": "yarn:line:8c0e2d04",
+          "pairedRowSha256": "2df4c3f5c4cc7051d955661092c180224a9d3a7367be0d0e283080df959a0e02",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A pause with no individually established voice."
+        }
+      ]
+    },
+    {
+      "group": "alexander_jerk_off_no",
+      "orderedRowsSha256": "1e11b9cded6de99692e279a0ab285a217c5495230b264fcba944e150dbdd787b",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:22b5941e",
+          "pairedRowSha256": "c564237e5672e8723c34e1536ee20c6e292b334031d7881c7153a9cd9793be83",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander declines the action for now; preserve source italic markup separately."
+        }
+      ]
+    },
+    {
+      "group": "alexander_mount_no",
+      "orderedRowsSha256": "2fa2ff2baa891c8ac325f13b756cc19ac0b3c9538c7b5024251d6947f0157b21",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-mount",
+          "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+          "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:f80bd44b",
+          "pairedRowSha256": "a3e7dac35f4886cd58b2978ad34d0ad1becf3a74998826941297c2d849252aba",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Alexander is uncertain he wants to use the mount today."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_idle_3_1",
+      "orderedRowsSha256": "e70f4c18b2d5a14c45f59698727f47b38c68d50633c4f9becc01ccf690dd0c37",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-mount",
+          "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+          "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:83f511d2",
+          "pairedRowSha256": "f21e1a73cad1af403e27b509dd3f6fe1c99ab2e0ff88ad146e079849591e5186",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Conrad asks the player to place the mount."
+        },
+        {
+          "id": "yarn:line:12e8ae42",
+          "pairedRowSha256": "70fd5faca010c77a0096d8befbb4cc515cf40955b08ac27d0e1b245511ce4a77",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad asks the player to use their hands."
+        },
+        {
+          "id": "yarn:line:84d8a935",
+          "pairedRowSha256": "53ad3c471a078295bebfc4bb455d68bedb33bfab89a4af2fba3f55493b1fe4c9",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad asks the player to open the gate."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_idle_3_2",
+      "orderedRowsSha256": "6cd94ae5bd207be2262a95b9563c74c4332f68432634ab90e24b1b82df5f3704",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-mount",
+          "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+          "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:8ffedb47",
+          "pairedRowSha256": "1a18c76c849f86ee30de536d9f45539a5d7433715351db14af6d27ddd3052da2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Conrad likes the mount the player chose and asks them to fetch it."
+        },
+        {
+          "id": "yarn:line:19cedc30",
+          "pairedRowSha256": "d4550552594d264b526cc43e3b24c7da9abede4c48ca52e5a98544fe16dc72c2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad asks the player about the act; macOS says me while Windows says my, and the paired source difference is preserved."
+        },
+        {
+          "id": "yarn:line:a39fd5a9",
+          "pairedRowSha256": "874a7f932c1b63a97b5580831833dda8eac86df78e91c7370cb2e8242622df5d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad thanks the player for the experience."
+        }
+      ]
     }
   ]
 }
