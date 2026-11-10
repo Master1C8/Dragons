@@ -32,6 +32,13 @@ input, a 1024 × 1024 diagnostic setting reduced that to 16–17 pages.
 The next acceptance checks are a production fallback chain, full
 corpus coverage, line breaking, typography and runtime cost.
 
+The [Japanese fallback-chain control](localization/evidence/cjk-fallback-append-20261110.md)
+added a separate face and atlas seed without replacing either
+Liberation Sans face. Both players chose the expected font for
+Japanese, Latin and Cyrillic samples and admitted the same pressure
+set. The new SDF material required the same 1024 × 1024 dimensions
+as its atlas. Package integration and visual approval remain open.
+
 The [paired dialogue and settings controls](localization/evidence/european-text-paths-20261110.md)
 used Ukrainian, Polish and Vietnamese script samples. The live
 Yarn choice and body paths produced NFC for decomposed Vietnamese,
