@@ -9,91 +9,601 @@
       "group": "Alexander_1",
       "orderedRowsSha256": "7d47ff3b588698c4f2fc946251e1507ed84f63bf86b7625b531b7ca842a66e83",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-igwyx"
+      ],
+      "conceptUses": {
+        "dnw-igwyx": [
+          "yarn:line:9d7cc63c"
+        ]
+      },
+      "referents": "The speaker reports helping an alchemist reach a shelf; that person's identity is not established by the first row alone. Igwix is the glossary's alternate spelling of Igwyx, but the reported bang and uncertainty do not establish an outcome or gender.",
+      "layer1": "The cited Igwix variant agrees with the source entry and its cited paired scene.",
+      "layer2": "The Italian entry explicitly preserves the variant and distinguishes masculine agreement from unestablished gender. Do not identify the unnamed alchemist solely from this row.",
+      "sourceIds": [
+        "yarn:line:fa97376e",
+        "yarn:line:9d7cc63c"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-first-two-visits-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_1_Outro",
       "orderedRowsSha256": "99bcd208cef7d4aa7b009f553d50292b98afb0993b22a435fc1cc33de7b5b7ad",
       "count": 7,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-dragon-washer",
+        "dnw-wash",
+        "dnw-yip"
+      ],
+      "conceptUses": {
+        "dnw-dragon-washer": [
+          "yarn:line:fd68807c"
+        ],
+        "dnw-wash": [
+          "yarn:line:fd68807c"
+        ],
+        "dnw-yip": [
+          "yarn:line:5efde4e2",
+          "yarn:line:c8cde395"
+        ]
+      },
+      "referents": "Alexander praises the player's work compared with private washers, echoes the player's Yip and mentions his own students and impending class. Private washers are other workers, not the player or a named establishment; students are an unspecified group.",
+      "layer1": "The service comparison and Yip are distinct concepts, and the routed customer and player remain distinct.",
+      "layer2": "Italian entry fields permit a contextual reference to other washers without assigning the player gender; the Yip entry describes the vocalization rather than a film.",
+      "sourceIds": [
+        "yarn:line:fd68807c",
+        "yarn:line:5efde4e2",
+        "yarn:line:729cea0c",
+        "yarn:line:c8cde395",
+        "yarn:line:e4aced7b",
+        "yarn:line:75b152eb",
+        "yarn:line:e381559c"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-first-two-visits-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_1_intro",
       "orderedRowsSha256": "1f7bc70270a702a7c293bd63939b771efb2f5e61f2ee67cff6550ea24571f5de",
       "count": 19,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-dragon",
+        "dnw-wash",
+        "dnw-alchemy",
+        "dnw-family-crest",
+        "dnw-burnswick-college"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:a2ba222e",
+          "yarn:line:af0c15fd"
+        ],
+        "dnw-burnswick-college": [
+          "yarn:line:33a79dbe"
+        ],
+        "dnw-family-crest": [
+          "yarn:line:a5979ac9"
+        ],
+        "dnw-alchemy": [
+          "yarn:line:a5979ac9"
+        ],
+        "dnw-dragon": [
+          "yarn:line:393c128a"
+        ]
+      },
+      "referents": "Alexander is the visiting alchemy professor with the crest; the player opens the gate. His students are an unspecified group. The college is referenced elliptically; the explicit family meaning of crest is not established by this line alone. The player is not assigned gender.",
+      "layer1": "Teaching and species are supported; public washes are venues, while the crest line establishes possession without independently establishing family relation.",
+      "layer2": "The Italian fields retain the scene-supported distinctions and neutral player wording. Paired spelling at line:8440a3f4 differs by build; no glossary correction follows.",
+      "sourceIds": [
+        "yarn:line:a2ba222e",
+        "yarn:line:33a79dbe",
+        "yarn:line:b6c878fa",
+        "yarn:line:a5979ac9",
+        "yarn:line:20f87f8d",
+        "yarn:line:0c997163",
+        "yarn:line:9aa97614",
+        "yarn:line:393c128a",
+        "yarn:line:155d1c64",
+        "yarn:line:af0c15fd",
+        "yarn:line:836d1b13",
+        "yarn:line:1270a483",
+        "yarn:line:8440a3f4",
+        "yarn:line:61c96494",
+        "yarn:line:ee3d0ee4",
+        "yarn:line:f7f963e3",
+        "yarn:line:4da86a7a",
+        "yarn:line:db986d0d",
+        "yarn:line:780d0993"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-first-two-visits-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_1_required",
       "orderedRowsSha256": "e4c0da992215d90362dba2ac2070856e85651781e36ffb88d8e556e3f9138f68",
       "count": 7,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:73e4789c",
+          "yarn:line:e2f9c70c",
+          "yarn:line:a97338b0"
+        ]
+      },
+      "referents": "Alexander praises the player's wash as a public place and uses a formal class adjective; the player reacts. Public refers to availability, not an identified person or the franchise's proper name.",
+      "layer1": "The context points to the establishment sense of wash rather than only a washing action.",
+      "layer2": "The Italian entry lists both establishment and service senses; no gender is fixed for the player. Build-specific spelling and rich-text markers remain bound to the source.",
+      "sourceIds": [
+        "yarn:line:73e4789c",
+        "yarn:line:e5d47feb",
+        "yarn:line:8512365e",
+        "yarn:line:74c9c07b",
+        "yarn:line:e2f9c70c",
+        "yarn:line:13223129",
+        "yarn:line:a97338b0"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-first-two-visits-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_2",
       "orderedRowsSha256": "8c55a2b36a75043bfa1f2842549b9ea2028bbaaf34978203401da4e3195df67e",
       "count": 11,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-burnswick-college"
+      ],
+      "conceptUses": {
+        "dnw-burnswick-college": [
+          "yarn:line:e8a38ed0",
+          "yarn:line:7e9389a7",
+          "yarn:line:dd06ed39",
+          "yarn:line:607a5c47"
+        ],
+        "dnw-alexander": [
+          "yarn:line:f167e3d7",
+          "yarn:line:607a5c47"
+        ]
+      },
+      "referents": "Alexander names himself and the college; he fears reputational harm if the college learns about an incident. The college and its unspecified professors are not a single named person. The player asks which college.",
+      "layer1": "The named institution and Alexander's professorship align with the source entries.",
+      "layer2": "The Italian institution and Alexander fields preserve their relationship; the professorship does not establish player gender or Alexander's pronouns.",
+      "sourceIds": [
+        "yarn:line:52f28749",
+        "yarn:line:e8a38ed0",
+        "yarn:line:7e9389a7",
+        "yarn:line:f64a5b30",
+        "yarn:line:dd06ed39",
+        "yarn:line:4b36ea4e",
+        "yarn:line:f167e3d7",
+        "yarn:line:6757e4a0",
+        "yarn:line:607a5c47",
+        "yarn:line:85f39b27",
+        "yarn:line:13c39c50"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-first-two-visits-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_2_Outro",
       "orderedRowsSha256": "1ed84047386a8b83b2b5a402990f7242ec3dc45b8f9c4bc12c36595fb68479a8",
       "count": 19,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-dragon",
+        "dnw-wash",
+        "dnw-dragon-washer"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:80de6c63"
+        ],
+        "dnw-dragon": [
+          "yarn:line:d82b1a7d"
+        ],
+        "dnw-dragon-washer": [
+          "yarn:line:7c93c604",
+          "yarn:line:173782fa"
+        ]
+      },
+      "referents": "The now-clean customer Alexander thanks the player, talks about trust and others' expectations, and says the player is good at the job. Everyone and their gaze are unspecified people; the whispered big dragon refers to the customer, not a new named character.",
+      "layer1": "Cleaning, customer species and the player's job arise in context; neither the onlookers nor their pronouns identify specific people.",
+      "layer2": "The target entries retain dragon, service and neutral player references; this exchange does not fix player gender.",
+      "sourceIds": [
+        "yarn:line:80de6c63",
+        "yarn:line:16ee6b14",
+        "yarn:line:3a8f65fa",
+        "yarn:line:acbf628d",
+        "yarn:line:ab92da6a",
+        "yarn:line:3da2dd1d",
+        "yarn:line:d82b1a7d",
+        "yarn:line:f44a1493",
+        "yarn:line:4e1b1d0a",
+        "yarn:line:627a13e4",
+        "yarn:line:c1ef777a",
+        "yarn:line:57df700d",
+        "yarn:line:ed8e7994",
+        "yarn:line:7bbe7ee3",
+        "yarn:line:7c93c604",
+        "yarn:line:eaa3c173",
+        "yarn:line:173782fa",
+        "yarn:line:8107858d",
+        "yarn:line:3b568c14"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-first-two-visits-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_2_intro",
       "orderedRowsSha256": "b68be1b426d5a5a3c14b1d381987d5f0d383eedf233703425ac55f4ad5f53f71",
       "count": 26,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-wash",
+        "dnw-igwyx",
+        "dnw-phoenix-feather"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:152cb8ad",
+          "yarn:line:a62e8112"
+        ],
+        "dnw-igwyx": [
+          "yarn:line:fedbf70c",
+          "yarn:line:68ebf07b",
+          "yarn:line:448afe95",
+          "yarn:line:e71f9a0b",
+          "yarn:line:5d4e9392",
+          "yarn:line:cc532c02",
+          "yarn:line:5a632b75"
+        ],
+        "dnw-phoenix-feather": [
+          "yarn:line:bfeaec15",
+          "yarn:line:29daeb62"
+        ]
+      },
+      "referents": "Alexander's colleague Professor Igwyx is the person whose method failed and physical form is reconstituting after conflagration; the he/him references in the quoted exchange concern Igwyx, not Alexander. The player's startled death question is corrected by Alexander. The player opens the shop; their gender is not established.",
+      "layer1": "The colleague, source pronouns and reconstitution context support the existing Igwyx and phoenix-feather meanings; do not turn the startled question into a confirmed death.",
+      "layer2": "The target Igwyx entry preserves unknown gender and masculine agreement; the feather meaning makes the body context explicit without changing the source.",
+      "sourceIds": [
+        "yarn:line:394db643",
+        "yarn:line:af7db134",
+        "yarn:line:2089db44",
+        "yarn:line:152cb8ad",
+        "yarn:line:831cbfda",
+        "yarn:line:b6b9dc33",
+        "yarn:line:0ce8d5aa",
+        "yarn:line:9ad8d2dd",
+        "yarn:line:0bc56d4d",
+        "yarn:line:9df56a3a",
+        "yarn:line:fedbf70c",
+        "yarn:line:68ebf07b",
+        "yarn:line:d2baf9e2",
+        "yarn:line:448afe95",
+        "yarn:line:e71f9a0b",
+        "yarn:line:5d4e9392",
+        "yarn:line:712f9d7c",
+        "yarn:line:cb7e94e5",
+        "yarn:line:cc532c02",
+        "yarn:line:5a632b75",
+        "yarn:line:bfeaec15",
+        "yarn:line:29daeb62",
+        "yarn:line:a62e8112",
+        "yarn:line:938be2fb",
+        "yarn:line:05bbe58c",
+        "yarn:line:301e8665"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-first-two-visits-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_2_required",
       "orderedRowsSha256": "a8ea0d7cef86338e7be555b5d6eb25fdde2139251b5c5c7ba81a33040c649339",
       "count": 8,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-dragon",
+        "dnw-igwyx",
+        "dnw-dragon-washer"
+      ],
+      "conceptUses": {
+        "dnw-dragon": [
+          "yarn:line:78cef130"
+        ],
+        "dnw-igwyx": [
+          "yarn:line:1f250062"
+        ],
+        "dnw-dragon-washer": [
+          "yarn:line:33440e8c"
+        ]
+      },
+      "referents": "Alexander identifies himself as a risk-averse dragon and contrasts his public image with Igwyx's physical forms; the player is addressed as suitable for the cleaning job. Everyone in the player's reply is an unspecified group.",
+      "layer1": "The physical forms belong to Igwyx, whereas the reputation belongs to Alexander; the scene supports their distinct roles.",
+      "layer2": "Italian fields preserve those roles and neutral player reference; neither the group everyone nor Alexander's self-description supplies new pronoun evidence.",
+      "sourceIds": [
+        "yarn:line:7fe349d7",
+        "yarn:line:e9d34ea0",
+        "yarn:line:eefef647",
+        "yarn:line:78cef130",
+        "yarn:line:89150715",
+        "yarn:line:1f250062",
+        "yarn:line:a57409fb",
+        "yarn:line:33440e8c"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-first-two-visits-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_3",
       "orderedRowsSha256": "3fef79dabe9d5feb07db4ee66e3e61c63cd329eb39a33a7f184fe68cc52ad1ca",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-igwyx"
+      ],
+      "conceptUses": {
+        "dnw-igwyx": [
+          "yarn:line:9ef857c8"
+        ]
+      },
+      "referents": "Alexander mentions Igwix and an apothecary; the latter's identity and relationship to Igwyx are not established in these rows. A stated intention to resurrect is not proof of permanent death.",
+      "layer1": "The Igwix variant matches the source entry; do not equate the unnamed apothecary with Igwyx.",
+      "layer2": "Italian preserves both source name spellings; no change to gender or pronoun evidence follows from this exchange.",
+      "sourceIds": [
+        "yarn:line:9ef857c8",
+        "yarn:line:08c850bf"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-third-visit-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_3_Cum",
       "orderedRowsSha256": "9e977c4fa702cb06e938359f9f83d75fbd6d01972e9eaf0c67d3608ee187d83a",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Alexander comments on his own reaction and thanks the addressed player. The exchange introduces no additional named person and does not establish player gender.",
+      "layer1": "The customer's formal and embarrassed register is consistent with Alexander's source description.",
+      "layer2": "Italian Alexander and neutral-player fields remain consistent; preserve rich-text metadata when applicable.",
+      "sourceIds": [
+        "yarn:line:a716d3b8",
+        "yarn:line:c4384e8e"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-third-visit-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_3_JerkOff_Start",
       "orderedRowsSha256": "cdb3d307a869f236faddc7cd8e58399ef52d0e42401567a167f92b4a4d844c03",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Alexander addresses the player during an interaction; no third character or player gender is established.",
+      "layer1": "The routed customer and addressee remain distinct.",
+      "layer2": "The target player entry does not require gendering the addressee; the customer entry remains compatible.",
+      "sourceIds": [
+        "yarn:line:7d13eca0",
+        "yarn:line:ec0e5330"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-third-visit-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_3_Outro",
       "orderedRowsSha256": "e840747afed62d2be83ebadc18cab8e2095abef3d63535782afadde29e4f6680",
       "count": 10,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-wash",
+        "dnw-yip"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:04c62f9b",
+          "yarn:line:95db900b",
+          "yarn:line:03eb977c"
+        ],
+        "dnw-yip": [
+          "yarn:line:e662501c"
+        ]
+      },
+      "referents": "Alexander describes the cleaning and, in a branch, calls the player a friend. The player's Yip is a vocalization; the friendship is a branch-specific statement, not proof of every route's state.",
+      "layer1": "Deep cleaning is service context and Yip is a vocalization.",
+      "layer2": "Italian sense choices remain compatible and neither friendship nor first/second person fixes player gender.",
+      "sourceIds": [
+        "yarn:line:04c62f9b",
+        "yarn:line:95db900b",
+        "yarn:line:e662501c",
+        "yarn:line:03eb977c",
+        "yarn:line:7052576b",
+        "yarn:line:ca035ef2",
+        "yarn:line:5c335985",
+        "yarn:line:69963a6c",
+        "yarn:line:ffa63d1b",
+        "yarn:line:d3c733f5"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-third-visit-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_3_intro",
       "orderedRowsSha256": "33dc4d27d8ffa538ba471793d51c1ac12cc11064690c0d5ffeccc8b0d5e5409c",
       "count": 35,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-kobold",
+        "dnw-dragon-washer",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-alexander": [
+          "yarn:line:fe3996b8",
+          "yarn:line:db997182",
+          "yarn:line:20f96302"
+        ],
+        "dnw-kobold": [
+          "yarn:line:61c8781b",
+          "yarn:line:c570a462"
+        ],
+        "dnw-dragon-washer": [
+          "yarn:line:61c8781b",
+          "yarn:line:ee3c126b",
+          "yarn:line:780c151c",
+          "yarn:line:c25d1c85"
+        ],
+        "dnw-wash": [
+          "yarn:line:61c8781b",
+          "yarn:line:4da976f5",
+          "yarn:line:b6c96475"
+        ]
+      },
+      "referents": "Alexander identifies the addressed player as his favored kobold washer and later admits deliberately getting dirty. His private washers and union are other people; plural they at line:c25d1c85 refers to the washers and does not establish one person's pronouns. The establishment is the player's workplace, not an explicit franchise-name mention.",
+      "layer1": "Distinguish species, profession, service and establishment; private washers remain distinct from the player.",
+      "layer2": "The Italian player and profession entries preserve neutral reference; the plural workers do not affect individual gender or pronouns.",
+      "sourceIds": [
+        "yarn:line:5dacf226",
+        "yarn:line:fe3996b8",
+        "yarn:line:d2589856",
+        "yarn:line:680991cf",
+        "yarn:line:44689f21",
+        "yarn:line:d57520b1",
+        "yarn:line:434527c6",
+        "yarn:line:f7f87f6c",
+        "yarn:line:546d1bf2",
+        "yarn:line:61c8781b",
+        "yarn:line:db997182",
+        "yarn:line:ee3c126b",
+        "yarn:line:4da976f5",
+        "yarn:line:780c151c",
+        "yarn:line:c25d1c85",
+        "yarn:line:c570a462",
+        "yarn:line:5340a315",
+        "yarn:line:20f96302",
+        "yarn:line:b6c96475",
+        "yarn:line:9aa86a9b",
+        "yarn:line:0c986dec",
+        "yarn:line:af0d0972",
+        "yarn:line:393d0e05",
+        "yarn:line:836c079c",
+        "yarn:line:155c00eb",
+        "yarn:line:8441bf7b",
+        "yarn:line:1271b80c",
+        "yarn:line:759a495e",
+        "yarn:line:e3aa4e29",
+        "yarn:line:59fb47b0",
+        "yarn:line:403f2ab7",
+        "yarn:line:cfcb40c7",
+        "yarn:line:6c5e2459",
+        "yarn:line:fa6e232e",
+        "yarn:line:d60f2dc0"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-third-visit-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_3_required",
       "orderedRowsSha256": "46590481d42cd48b9ac5d0c5f236823f0f8ee7f051eddb15a78f92ced3e04d23",
       "count": 21,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-igwyx",
+        "dnw-yip"
+      ],
+      "conceptUses": {
+        "dnw-igwyx": [
+          "yarn:line:1475f95c",
+          "yarn:line:8245fe2b",
+          "yarn:line:4bad37a5"
+        ],
+        "dnw-yip": [
+          "yarn:line:5544e245",
+          "yarn:line:c374e532"
+        ]
+      },
+      "referents": "Professor Igwyx is Alexander's colleague; he in the following lines refers to Igwyx, now back at work. Alexander addresses the player and asks for a question. Anyone else is an unspecified group and the player's Yip is interpreted by Alexander.",
+      "layer1": "The colleague and he/him evidence belong to Igwyx; the return-to-work line limits any inference of lasting death.",
+      "layer2": "The Italian entry retains source pronoun evidence and unknown gender; the player's Yip and neutrality are compatible with the target entries.",
+      "sourceIds": [
+        "yarn:line:1475f95c",
+        "yarn:line:8245fe2b",
+        "yarn:line:67cc394b",
+        "yarn:line:4bad37a5",
+        "yarn:line:f1fc3e3c",
+        "yarn:line:dd9d30d2",
+        "yarn:line:7e08544c",
+        "yarn:line:e838533b",
+        "yarn:line:52695aa2",
+        "yarn:line:5544e245",
+        "yarn:line:c4595dd5",
+        "yarn:line:c374e532",
+        "yarn:line:a05a7804",
+        "yarn:line:366a7f73",
+        "yarn:line:8c3b76ea",
+        "yarn:line:1a0b719d",
+        "yarn:line:b99e1503",
+        "yarn:line:2fae1274",
+        "yarn:line:03cf1c9a",
+        "yarn:line:95ff1bed",
+        "yarn:line:92d2a30a"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-third-visit-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_3_required_end",
       "orderedRowsSha256": "1aff344cfab92fa0d3cf646b24ad8a5c0459e88acf34b6596d692ca49ddcc343",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Alexander thanks the player for asking a personal question. No third person or player gender is identified.",
+      "layer1": "The routed speaker and addressee are consistent with the character entries.",
+      "layer2": "No change to either target field is established by this short line.",
+      "sourceIds": [
+        "yarn:line:3027bcf7"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-third-visit-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_4_Cum",
