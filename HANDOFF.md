@@ -9,6 +9,14 @@ platform JSON documents by value, including 30 platform-only rows and
 packages rebuilt successfully. The macOS game data and all 12 Windows
 replacement members matched the previously tested artifacts byte-for-byte.
 
+The [multilingual renderer baseline](localization/evidence/multilingual-renderer-baseline-20261110.md)
+covers all 30 target locales on the original TMP font chain. Both
+players produced the same results in a live save-slot label. Eight
+samples reached the missing-glyph square and Hebrew displayed its
+letters in left-to-right order. The other 21 samples resolved their
+glyphs. Dialogue, choices, settings and visual fit still need checks
+before the corresponding multilingual feasibility rows can pass.
+
 On 2026-11-09 all five absent Yarn destinations reproduced in isolated macOS
 Unity runs with controlled entry; a Windows CrossOver run independently
 reproduced the Conrad failure. A source-bound candidate appends the five
