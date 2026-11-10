@@ -4,7 +4,9 @@
 
 The paired draft now has **1,947/1,947 authored IDs**. Filled the 467 remaining
 dialogue and choice rows from the pinned paired English worklist, preserving all
-1,480 previously authored values. Translation SHA-256 `d800a07889981bd7ae9b2d45dd9fa2f0991f7d82bb7503d48dfa1518d24d7d74`.
+1,480 previously authored values in that batch. A subsequent source check
+restored Conrad’s dog greeting in `39fd52f1`, so the immediate kobold correction
+retains its setup. Current translation SHA-256 `b347c4d9f57495e052df3464829ecccafd2f4c6faccd3cf84d14eb9597f72cdb`.
 The complete authored Yarn validator accepted 1,823 dialogue bindings per platform.
 Full semantic and independent editorial acceptance remain pending. Package
 verification is tracked separately. The current task is file delivery only.
