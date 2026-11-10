@@ -95,7 +95,7 @@ Keep both identical response pairs distinct and preserve `$Yarn.Internal.Once.li
 
 ## Gate status
 
-Twenty-four of 27 cases have author-reviewed wording recorded in this file; the remaining 3 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the twenty-four. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
+Twenty-five of 27 cases have author-reviewed wording recorded in this file; the remaining 2 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the twenty-four. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
 
 ## Alexander's family crest
 
@@ -486,3 +486,20 @@ Source case `alexander-romance-route`, `Alexander_5_romance_route` and `Alexande
 | `44f2b8cf` | Arrivederci! |
 
 Positive: acceptance explicitly leads to Alexander romance and its date continuation; decline explicitly states no romance and retains its own response. Negative: reverse captions, change control identity, imply declining clears an earlier state, or route either response into the other. Both stock strings and tags are source-bound; actual state progression and final layout remain separate runtime checks.
+
+## Restored destination suffixes and exact markers
+
+Source case `yarn-missing-named-destinations`, `localization/evidence/yarn-fragment-markers-20261110.md` and `localization/evidence/yarn-transition-runtime-20261109.md`. Both source bindings agree on the eight suffix lines below. The 15 `==`, `title: ...` and `---` marker IDs remain exact-only, byte-for-byte, and are not dialogue translation targets. The existing opt-in transition adapter reconstructs five named nodes from original suffix instructions without changing original host bodies or IDs; the bounded VM and controlled Unity evidence supports feasibility, not an assertion of ordinary gameplay completion. Preserve the exact marker IDs and values, named destinations, commands and source routing.
+
+| ID | Italian wording |
+|---|---|
+| `ddab3d34` | Sono molto soddisfatto di questi risultati.. |
+| `4d6b365e` | Ahh, tutto pulito e con un peso in meno. |
+| `f73a3fc7` | Grazie, ci vediamo domani allora. |
+| `019b83df` | È stato meraviglioso! Adesso gli appuntamenti mi preoccupano molto meno. |
+| `bbca8a46` | Grazie! |
+| `b3c35166` | Accidenti, temevo di combinare un altro pasticcio. |
+| `564a9606` | Ora non dovranno mai saperlo! |
+| `c07a9171` | Grazie! |
+
+Author self-review: the lighter load retains its double sense; Ryan's worry and unnamed plural referents remain open to source context. Positive: the repaired target emits its own suffix and original command sequence; negative: translating any marker, crossing destinations, or dropping a suffix fails. Authored-package structural validation, normal-play progression, side effects and final visual fit remain pending.
