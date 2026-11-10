@@ -55,6 +55,15 @@ resource directories from the ten previously verified game packages.
 Pass the original Data directory for each platform, the host encoder,
 the target decoder and its license. The generator reconstructs each
 delta and checks its exact output hash before adding it to the package.
+For macOS, build the Steam App ID path patcher with the .NET 8 SDK:
+
+```sh
+dotnet build Scripts/SteamPathFix/SteamPathFix.csproj -c Release -o "$BUILD_SCRATCH/steam-path-fix"
+```
+
+Pass `--steam-path-fix "$BUILD_SCRATCH/steam-path-fix/SteamPathFix.dll"`
+when preparing the macOS payload. The patch keeps the App ID file
+inside the signed app when the game starts.
 
 Run `Scripts/build.sh MAC_PAYLOAD WINDOWS_PAYLOAD GAME_ICON BUILD_SCRATCH DIST`
 with absolute paths. Supply the original game's `PlayerIcon.icns`.

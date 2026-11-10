@@ -975,7 +975,7 @@ The implementation adapts the Sonic installer at
 The macOS app is universal and ad-hoc signed. The Windows GUI is x86-64.
 The generated ZIP SHA-256 values are:
 
-- `Dragons-macOS.zip` `b1df526342b57f9bcb1fbe3198e4ef64edca4b2cf5ea41701a256d029f16c229`
+- `Dragons-macOS.zip` `83e6822be9b5f85a484fbdd19def92f934adb6f69b28f8295e854a533e8a3533`
 - `Dragons-Windows.zip` `ddbe79675d96210d0300f02c7e60f0b48e9d027d59d3431e34aa26ee1adc184e`
 
 The macOS install core applied all five locales to a disposable
@@ -989,4 +989,22 @@ an unrelated file and a deliberately conflicting patched DLL.
 Both tests compared each installed payload hash and the persistent
 locale receipt. The final Windows log is
 `localization/work/installer.NUdeks/windows-test-final.log`.
-The installer-triggered launch of a real game was not exercised.
+
+Real standalone launch was verified on isolated copies. On macOS the
+original installer launched Arabic. The game recreated a root
+`steam_appid.txt`, invalidating the bundle signature and leaving a
+duplicate that prevented changing languages. The rebuilt installer
+accepted the identical duplicate on that same copy, switched it to
+Hebrew and launched it automatically. A separate direct launch retained
+Hebrew and all 14 file hashes. Unity logged the App ID write under
+`Contents/MacOS`, the root duplicate stayed absent, and strict signature
+verification passed during both launches. The rebuilt macOS installer
+applies the path fix to all five locale payloads.
+
+On Windows 11 through Parallels, a guarded test build supplied the
+isolated folder and Persian selection to the unchanged install and
+auto-launch handlers. The game opened a window after installation and
+again when started directly from its executable. The Persian receipt
+and all 14 file hashes matched. The firewall prompt prevented checking
+the manual folder picker. The existing local Windows ZIP was retained.
+These runs did not exercise Steam launch.

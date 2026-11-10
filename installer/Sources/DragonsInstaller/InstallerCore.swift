@@ -310,12 +310,18 @@ struct InstallerCore {
         let rootID = try safeURL(root: stagedApp, relativePath: "steam_appid.txt")
         let nestedID = try safeURL(root: stagedApp, relativePath: "Contents/MacOS/steam_appid.txt")
         if fileManager.fileExists(atPath: rootID.path) {
-            guard !fileManager.fileExists(atPath: nestedID.path),
-                  try String(contentsOf: rootID, encoding: .utf8)
+            guard try String(contentsOf: rootID, encoding: .utf8)
                     .trimmingCharacters(in: .whitespacesAndNewlines) == config.steamAppID else {
                 throw InstallerError.foreignModification("steam_appid.txt")
             }
-            try fileManager.moveItem(at: rootID, to: nestedID)
+            if fileManager.fileExists(atPath: nestedID.path) {
+                guard try Data(contentsOf: nestedID) == Data(contentsOf: rootID) else {
+                    throw InstallerError.foreignModification("steam_appid.txt")
+                }
+                try fileManager.removeItem(at: rootID)
+            } else {
+                try fileManager.moveItem(at: rootID, to: nestedID)
+            }
         }
         try run("/usr/bin/codesign", ["--force", "--deep", "--sign", "-", stagedApp.path])
         try run("/usr/bin/codesign", ["--verify", "--deep", "--strict", stagedApp.path])

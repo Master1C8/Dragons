@@ -3,3 +3,5 @@
 /installer/Sources/DragonsInstaller/Resources/PackageConfig.json
 /installer/Sources/DragonsInstaller/Resources/LocalizationPayload/
 /installer/dist/
+/installer/Scripts/SteamPathFix/bin/
+/installer/Scripts/SteamPathFix/obj/

@@ -32,6 +32,9 @@ def files(root):
 
 
 def prepare(args):
+    if args.platform == 'macos':
+        require(args.steam_path_fix is not None and args.steam_path_fix.is_file(),
+                'macOS requires the compiled Steam path patcher')
     target = args.output
     target.mkdir(parents=True)
     payload = target / 'LocalizationPayload'
@@ -94,6 +97,15 @@ def prepare(args):
             require(hashes['Managed/Unity.TextMeshPro.dll'] == meta['complexText']['tmp']['outputSha256'], f"{lang} package receipt mismatch")
             require(hashes['Managed/YarnSpinner.Unity.dll'] == meta['complexText']['yarn']['outputSha256'], f"{lang} package receipt mismatch")
             require(hashes['Managed/Dragons.PreparedTextLayout.dll'] == meta['complexText']['layoutSha256'], f"{lang} package receipt mismatch")
+            if args.platform == 'macos':
+                assembly = 'Managed/Assembly-CSharp.dll'
+                receipt = json.loads((container / f'{lang}-receipt.json').read_bytes())
+                require(hashes[assembly] == receipt['managedSlotNew']['outputSha256'],
+                        f'{lang} unexpected input to Steam path patcher')
+                patched = staging / f'{lang}-steam.dll'
+                subprocess.run(['dotnet', str(args.steam_path_fix), str(replacements[assembly]), str(patched)], check=True)
+                replacements[assembly] = patched
+                hashes[assembly] = sha(patched)
             config['gameVersion'] = meta['build']
             licenses = payload / 'Licenses'
             licenses.mkdir(exist_ok=True)
@@ -137,4 +149,5 @@ if __name__ == '__main__':
     parser.add_argument('platform', choices=('macos', 'windows'))
     for arg in ('packages', 'stock', 'output', 'encoder', 'helper', 'delta-license'):
         parser.add_argument('--' + arg, type=lambda x: Path(x).resolve(), required=True)
+    parser.add_argument('--steam-path-fix', type=lambda x: Path(x).resolve())
     prepare(parser.parse_args())
