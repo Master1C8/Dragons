@@ -1,0 +1,399 @@
+{
+  "locale": "pl",
+  "beforeSha256": "9df974fb2b9d952768cd342c32d6252131b891b78aac342b5c43d90734641aa8",
+  "afterSha256": "b0e68d8809620085da4c0ad19da3464ba20258d066ae5e9e480decda473ae172",
+  "pairedSourceSha256": "bd2407752c57b0e92d136f123604ebda35d8109d8ae92cd6a54a99ea4945d199",
+  "authorDisposition": "self-review; independent game-text audit pending",
+  "changes": [
+    {
+      "id": "yarn:line:6fa847ba",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:6fa847ba",
+            "source": "Yeah, nah. Mate you gotta get in on this. I'll pay good!",
+            "sourceIds": [
+              "yarn:line:6fa847ba"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:6fa847ba",
+            "source": "Yeah, nah. Mate you gotta get in on this. I'll pay good!",
+            "sourceIds": [
+              "yarn:line:6fa847ba"
+            ]
+          }
+        },
+        "group": "Conrad_1",
+        "id": "yarn:line:6fa847ba",
+        "instructionIndex": 11,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "E tam. Stary, musisz tego spróbować. Dobrze zapłacę!",
+      "after": "E tam. Stary, musisz to wprowadzić! Dobrze zapłacę!"
+    },
+    {
+      "id": "yarn:line:72b244b7",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:72b244b7",
+            "source": "<size=100%> That felt damn good!",
+            "sourceIds": [
+              "yarn:line:72b244b7"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:72b244b7",
+            "source": "<size=100%> That felt damn good!",
+            "sourceIds": [
+              "yarn:line:72b244b7"
+            ]
+          }
+        },
+        "group": "Conrad_1_Cum",
+        "id": "yarn:line:72b244b7",
+        "instructionIndex": 3,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "<size=100%> Ależ to było zajebiście dobre!",
+      "after": "<size=100%> Ależ było mi zajebiście dobrze!"
+    },
+    {
+      "id": "yarn:line:1a5e1ba4",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:1a5e1ba4",
+            "source": "Act what way?",
+            "sourceIds": [
+              "yarn:line:1a5e1ba4"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:1a5e1ba4",
+            "source": "Act what way?",
+            "sourceIds": [
+              "yarn:line:1a5e1ba4"
+            ]
+          }
+        },
+        "group": "Conrad_required_2",
+        "id": "yarn:line:1a5e1ba4",
+        "instructionIndex": 59,
+        "kind": "option",
+        "preserveExactPrefix": null
+      },
+      "before": "Jak zachowywać?",
+      "after": "Jak się zachowywać?"
+    },
+    {
+      "id": "yarn:line:b4a29141",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:b4a29141",
+            "source": "I've got a guy who can drop a gift by tomorrow that would spruce things up.",
+            "sourceIds": [
+              "yarn:line:b4a29141"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:b4a29141",
+            "source": "I've got a guy who can drop a gift by tomorrow that would spruce things up.",
+            "sourceIds": [
+              "yarn:line:b4a29141"
+            ]
+          }
+        },
+        "group": "Conrad_2",
+        "id": "yarn:line:b4a29141",
+        "instructionIndex": 3,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Znam gościa, który może jutro podrzucić prezent, żeby tu trochę upiększyć.",
+      "after": "Znam gościa, który może jutro podrzucić prezent, żeby trochę upiększyć to miejsce."
+    },
+    {
+      "id": "yarn:line:0de4fe62",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:0de4fe62",
+            "source": "And I'm glad you have a medkit... You're very prepared.",
+            "sourceIds": [
+              "yarn:line:0de4fe62"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:0de4fe62",
+            "source": "And I'm glad you have a medkit... You're very prepared.",
+            "sourceIds": [
+              "yarn:line:0de4fe62"
+            ]
+          }
+        },
+        "group": "Conrad_required_2",
+        "id": "yarn:line:0de4fe62",
+        "instructionIndex": 118,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "I cieszę się, że masz apteczkę... Dobrze się przygotowujesz.",
+      "after": "I cieszę się, że masz apteczkę... Dobrze mieć wszystko przygotowane."
+    },
+    {
+      "id": "yarn:line:a0cf6cae",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:a0cf6cae",
+            "source": "Do you know any cool places, people, I could hang around?",
+            "sourceIds": [
+              "yarn:line:a0cf6cae"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:a0cf6cae",
+            "source": "Do you know any cool places, people, I could hang around?",
+            "sourceIds": [
+              "yarn:line:a0cf6cae"
+            ]
+          }
+        },
+        "group": "Conrad_Outro_3",
+        "id": "yarn:line:a0cf6cae",
+        "instructionIndex": 12,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Znasz jakieś fajne miejsca albo ludzi, z którymi mógłbym spędzać czas?",
+      "after": "Znasz jakieś fajne miejsca do spędzania czasu albo ludzi, z którymi mógłbym się spotykać?"
+    },
+    {
+      "id": "yarn:line:12e8ae42",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:12e8ae42",
+            "source": "Ey, Use your hands on my cock- it feels good!",
+            "sourceIds": [
+              "yarn:line:12e8ae42"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:12e8ae42",
+            "source": "Ey, Use your hands on my cock- it feels good!",
+            "sourceIds": [
+              "yarn:line:12e8ae42"
+            ]
+          }
+        },
+        "group": "Conrad_idle_3_1",
+        "id": "yarn:line:12e8ae42",
+        "instructionIndex": 15,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Hej, użyj rąk na moim kutasie — to przyjemne!",
+      "after": "Hej, weź mojego kutasa w ręce — to takie przyjemne!"
+    },
+    {
+      "id": "yarn:line:07bd7f57",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:07bd7f57",
+            "source": "Did you do your uh...",
+            "sourceIds": [
+              "yarn:line:07bd7f57"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:07bd7f57",
+            "source": "Did you do your uh...",
+            "sourceIds": [
+              "yarn:line:07bd7f57"
+            ]
+          }
+        },
+        "group": "Conrad_Intro_4",
+        "id": "yarn:line:07bd7f57",
+        "instructionIndex": 88,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Zrobiłeś coś ze swoimi, no...",
+      "after": "A twoje łuski, no..."
+    },
+    {
+      "id": "yarn:line:6c193ba9",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:6c193ba9",
+            "source": "Scales different today? <size=70%><i>is that a thing...? </i><size=100%>You look good today.",
+            "sourceIds": [
+              "yarn:line:6c193ba9"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:6c193ba9",
+            "source": "Scales different today? <size=70%><i>is that a thing...? </i><size=100%>You look good today.",
+            "sourceIds": [
+              "yarn:line:6c193ba9"
+            ]
+          }
+        },
+        "group": "Conrad_Intro_4",
+        "id": "yarn:line:6c193ba9",
+        "instructionIndex": 91,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Masz dziś inne łuski? <size=70%><i>tak się w ogóle da...? </i><size=100%>Ładnie dziś wyglądasz.",
+      "after": "Wyglądają dziś inaczej? <size=70%><i>tak się w ogóle da...? </i><size=100%>Ładnie dziś wyglądasz."
+    },
+    {
+      "id": "yarn:line:3a5d5ca4",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:3a5d5ca4",
+            "source": "Yeah he seems like he'd push some buttons.",
+            "sourceIds": [
+              "yarn:line:3a5d5ca4"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:3a5d5ca4",
+            "source": "Yeah he seems like he'd push some buttons.",
+            "sourceIds": [
+              "yarn:line:3a5d5ca4"
+            ]
+          }
+        },
+        "group": "Conrad_Ryan_Romanced",
+        "id": "yarn:line:3a5d5ca4",
+        "instructionIndex": 45,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Tak, wygląda na takiego, co potrafi podrażnić.",
+      "after": "Tak, wygląda na takiego, co wie, jak na kogoś podziałać."
+    },
+    {
+      "id": "yarn:line:eaafe671",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:eaafe671",
+            "source": "I think you got every spot!",
+            "sourceIds": [
+              "yarn:line:eaafe671"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:eaafe671",
+            "source": "I think you got every spot!",
+            "sourceIds": [
+              "yarn:line:eaafe671"
+            ]
+          }
+        },
+        "group": "Conrad_5_outro_ryan_conrad_romanced",
+        "id": "yarn:line:eaafe671",
+        "instructionIndex": 2,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Chyba umyte każde miejsce!",
+      "after": "Chyba udało ci się umyć każde miejsce!"
+    },
+    {
+      "id": "yarn:line:4fc4259c",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:4fc4259c",
+            "source": "Alright! I'm ready to go.",
+            "sourceIds": [
+              "yarn:line:4fc4259c"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:4fc4259c",
+            "source": "Alright! I'm ready to go.",
+            "sourceIds": [
+              "yarn:line:4fc4259c"
+            ]
+          }
+        },
+        "group": "Conrad_5_outro_conrad_romanced",
+        "id": "yarn:line:4fc4259c",
+        "instructionIndex": 29,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Dobra! Jestem gotów.",
+      "after": "Dobra! Z mojej strony wszystko gotowe."
+    },
+    {
+      "id": "yarn:line:0bc044da",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:0bc044da",
+            "source": "You ready for this?",
+            "sourceIds": [
+              "yarn:line:0bc044da"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:0bc044da",
+            "source": "You ready for this?",
+            "sourceIds": [
+              "yarn:line:0bc044da"
+            ]
+          }
+        },
+        "group": "Conrad_SexScene_Cum",
+        "id": "yarn:line:0bc044da",
+        "instructionIndex": 7,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Gotowość?",
+      "after": "Możemy zaczynać?"
+    }
+  ]
+}

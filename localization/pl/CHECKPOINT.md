@@ -530,3 +530,7 @@ Author compared the remaining 123 IDs in `semantic-audit-interface.json`; the in
 ### Semantic corrections: Ryan scenes
 
 Eight author corrections and their source-bound contexts are recorded in `semantic-corrections-ryan.md` and `.json`; this resolves the Ryan findings listed there, without independent acceptance. Current translation SHA-256 `9df974fb2b9d952768cd342c32d6252131b891b78aac342b5c43d90734641aa8`; structural guard accepts 1,947 IDs (macOS 1,923, Windows 1,941). Continue adjudicating remaining findings in `semantic-audit-progress.md`, then review delta dependency closure and mandatory regression. V2 artifacts remain bound to the earlier payload; current package/runtime/visual, native Windows and independent game-text audit are open. Do not open the separate v2 visual queue.
+
+### Semantic corrections: Conrad scenes
+
+Thirteen author corrections, including both halves of the interrupted scales question, are documented in `semantic-corrections-conrad.md` and `.json`; the Ryan disposition's speaker identification was also corrected. Current translation SHA-256 `b0e68d8809620085da4c0ad19da3464ba20258d066ae5e9e480decda473ae172`; structural guard accepts all 1,947 IDs. Remaining Alexander and other-encounter findings, mandatory delta closure and regression, independent game-text acceptance, current-payload builds/runtime and visual gates remain open. Preserve earlier evidence and do not open the separate v2 visual queue.

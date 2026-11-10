@@ -2,7 +2,7 @@
 
 The author rechecked the linked English and Polish scene positions in `semantic-audit-progress.md` and applied the eight paired-source corrections recorded with exact before and after strings and both build inputs in `semantic-corrections-ryan.json`. This is author self-review; the separate independent game-text audit has not accepted these revisions.
 
-- `dee4a32d`: Ryan anticipates Conrad's reaction to his description; the conditional avoids presenting it as an established repeated reaction. The related description is `48d4a45a`.
+- `dee4a32d`: The player anticipates Conrad's reaction to the description; the conditional avoids presenting it as an established repeated reaction. The related description is `48d4a45a`.
 - `ca480eed` and adjacent alternative `e6290003`: both matchmaking promises now use the same idiomatic expression for putting the two dragons in touch; the preceding request is `5c78099a`.
 - `9be63f47`: the basket introduction follows Ryan bringing the basket in his mouth; the thanks refers to its pickup, in a player-gender-neutral form. The scene staging is recorded in `special-scenes/ryan-opening.json`.
 - `7d9ffc48`: swallowing a large piece now contrasts with savoring food at `ec8243d8`, rather than merely taking a large bite. The source positions identify the dialogue context, not a reviewed swallowing animation; runtime/fit remain open.
