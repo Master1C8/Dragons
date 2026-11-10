@@ -1,0 +1,9 @@
+# French semantic audit, author pass
+
+Status: in progress, not an independent review or a clean full audit. Baseline draft `94a770766b67a6be5f9337bb174543c010826ec87450b18f5c6e1dbf0e0f0325`; paired worklist `ef9d5709b061ea426c2e113373fdbfde547c6518f6394a4afc325204dea89cf8`; pinned inventory, Yarn scope, glossary and platform sources are listed in CHECKPOINT.md. Textures are outside scope.
+
+The author compared zero-based worklist rows 0–98 with the English source and French in their listed scene groups, including spelling variants. Coverage: 99/1,947 rows examined, one remains open for branch-context interpretation; no completeness or independent acceptance is claimed. The next unexamined row is 99, `yarn:line:9ef857c8` in `Alexander_3`.
+
+Two findings: `yarn:line:33a79dbe` and `yarn:line:e8a38ed0` used “université” for the college named in the following `Alexander_2` scene; changed to “collège” to align with the established translated proper name. The full paired Yarn verification and ordered asset readbacks after those changes are in [semantic-audit-01.json](receipts/semantic-audit-01.json), translation SHA-256 `413392bd95693a0c71a007151f4ac67976873a5848f268878689255da44deee2`. These are author corrections.
+
+Open: `yarn:line:ab92da6a`, “Not anymore at least!”, currently “Du moins, ce n’en est plus un !”. Confirm the preceding branch and referent in the pinned Yarn instructions before accepting the inferred masculine referent; preserve ambiguity if unsupported. The 99-row count includes this open item. Review the remaining rows and full context, produce immutable closure and dependency-aware evidence, then obtain the separately required independent diff/delta review. The current readbacks establish serialized fidelity, not semantic acceptance, runtime behavior or visual fit.

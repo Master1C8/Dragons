@@ -1,6 +1,6 @@
 # French localization checkpoint
 
-Updated 2026-11-10. Status: **glossary author layers reconciled; bounded renderer probe complete; all special-scene decisions prepared; reconciled source gate passed; full draft authored; semantic audit pending**. See [glossary review](glossary-review.md) and [renderer probe](renderer-probe.md) for the current resumption; historical notes below retain the earlier checkpoint context. The requested standard locale is `fr`; source is English. Session `01a1c394-a809-7812-9570-df379360d954` turn context and process arguments record `gpt-6.1-terra`, reasoning `high`. No other model or agent was used.
+Updated 2026-11-10. Status: **glossary author layers reconciled; bounded renderer probe complete; all special-scene decisions prepared; reconciled source gate passed; full draft authored; semantic audit in progress**. See [glossary review](glossary-review.md) and [renderer probe](renderer-probe.md) for the current resumption; historical notes below retain the earlier checkpoint context. The requested standard locale is `fr`; source is English. Session `01a1c394-a809-7812-9570-df379360d954` turn context and process arguments record `gpt-6.1-terra`, reasoning `high`. No other model or agent was used.
 
 ## Bound inputs
 
@@ -29,7 +29,7 @@ A preliminary direct comparison of all 28 current English/French entries found a
 | glossary | Two author self-review layers reconciled on current hashes under the owner exception; the earlier crest finding was withdrawn after scene review. Independent review was not claimed. See glossary-review.md. |
 | special-scene decisions | 27/27 groups have author-reviewed draft wording and feasible technical candidates. The anonymous group retains a direct-entry fixture boundary. The reconciled source gate now permits ordinary authoring. See special-scenes.md. |
 | translate-edit | 1,947/1,947 authored: 258 special-scene and display IDs plus 1,689 ordinary scene and interface IDs, including intentional exact vocalizations and ellipses. Paired diagnostic assets verified; author self-review only. |
-| editorial | Not run; full semantic audit, independent delta and regression catalog pending. |
+| editorial | Author semantic audit started: first 99 worklist rows examined, one branch-context question open. Full coverage, independent delta and regression catalog pending. See semantic-audit.md. |
 | fonts | Slot and bounded live text samples resolved; full corpus coverage and typography remain unverified. |
 | textures | Textures with text excluded and preserved. |
 | package | macOS and Windows deliverables not built or verified. English passthrough is not a completed translation. |
@@ -37,7 +37,7 @@ A preliminary direct comparison of all 28 current English/French entries found a
 | screenshot upload / review | Not requested / not run. |
 | release / archival | Not complete; no publication, push or deployment authorized. |
 
-Next: continue ordinary translation by coherent English-source scenes from the paired worklist, self-edit and validate both builds per batch. The source gate passed for the exact fingerprints above; do not generalize that receipt to changed source inputs. The buzzing failure remains an English direct-entry fixture limitation, not a passed natural-play test. Keep game runtime and visuals, full-corpus audit and delivery gates separate. Use the cooperative commit lock and locale-only scope.
+Next: resolve the open branch-context question in semantic-audit.md, then continue the author semantic audit from worklist row 99 (zero-based), including both source variants and scene context. The source gate passed for the exact fingerprints above; do not generalize that receipt to changed source inputs. The buzzing failure remains an English direct-entry fixture limitation, not a passed natural-play test. Keep game runtime and visuals, full-corpus audit and delivery gates separate. Use the cooperative commit lock and locale-only scope.
 
 ## Source gate and first ordinary batch, 2026-11-10
 
