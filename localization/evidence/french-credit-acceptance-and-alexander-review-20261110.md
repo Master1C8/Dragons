@@ -1,0 +1,7 @@
+# French credits acceptance and Alexander review
+
+The coordinator independently accepted the three credit corrections in `517ad4d` after rereading the 42 selected level-two interface and credits rows. Reproducing the exact 938-ID effective delta found only those three target changes. Source keys, bindings, multiline order and protected context remain consistent.
+
+The coordinator also read 119 previously unread Alexander positions across the first introduction, the proletarian exchange, the college and outro, and the questions. The two replies to “No way” at `yarn:line:4d49ae72` and `yarn:line:15bcd86c` currently say that the claim is possible before asserting certainty. The proposed repeated `Si ! Je n’ai jamais été aussi sûr de quoi que ce soit.` answers the disbelief directly and retains Alexander’s certainty. Both stock programs keep the choices at 145 and 161 and their respective destinations at 151 and 169. Both complete stock input validators accept the two-line candidate, with only `dialogue.json` differing on each platform.
+
+The exact review receipt is `localization/work/fr-independent-alexander-20261110.iKvL3N/review.json`, SHA-256 `be39795afcabdece97f51ea40c5b50ebaedf71fd62ef739181d87d3d1aa74e88`. The candidate SHA-256 is `143af1a40ca0b04066f7564b49b16ad45ec246998a83e4184eb89148f133e73b`. Of the 938 tracked positions, 583 are unread. Author disposition of the new finding, packages, Unity routes and visual fit remain open.
