@@ -1,0 +1,9 @@
+# Independent review of Polish delta 04 and markup additions
+
+The extended exporter bound the actual before and after commits `3f0fbc5` and `3d2a625`. The current translation SHA-256 is `e9bd6034e2d6ad3f72f3d72265b778acd34d47b82674ab81647283a7f89c2665`. The output contains eight effective edits, 460 target IDs and 414 mandatory regression IDs, including the 48 stock markup rows previously held separately.
+
+The coordinator independently read the eight changed lines within the 63-ID scene and dependency union and the 48 added markup rows. The seven independent corrections preserve their reviewed context. The added Alexander refusal restores the player's stated reason for declining. Both source programs bind the invitation acceptance and refusal to targets 64 and 75 respectively. The refusal retains the apology, ordered tags and no-romance notice.
+
+**One new finding at `yarn:line:4d002f47`.** In Ryan's account, he returned home muddy and was reprimanded. The Polish present “że jestem ubłocony” can read as his condition during the current conversation. “Była... <i>naprawdę</i> zła, że byłem ubłocony.” restores the earlier time and keeps the emphasis. Both source-bound readers accepted the complete proposal. The two replies after this line still lead to 58 and 83 on each stock build. Author disposition is pending.
+
+The [extended export](../README.md#editorial-regression-export) and exact review set are stored under `localization/work/pl-independent-delta04-20261110.KGm1rJ/`. The closure file SHA-256 is `7fefb8242bd5262cd996d8b0094cfe37bb62fcd651ef7d68b4d3fed33aa61d47`; the independent receipt SHA-256 is `44c2d9995750091c574cd0fd35da0e9f48ffba61b3d6ee0f069463066d17b6b0`. The remaining 349 IDs in this closure, previous-only coverage, final fit and live route execution retain their separate checks.
