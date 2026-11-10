@@ -383,3 +383,9 @@ Author self-reviewed 18 IDs in the Conrad and Ryan/Conrad relationship departure
 Author self-reviewed 56 IDs in `Ryan_grab_basket`, `Ryan_grapes_dialog` and `Ryan_melon_dialog`, preserving the already reviewed bark, choices and markup. One apostrophe-only source variant has an explicit shared translation. This is author self-review, not independent audit.
 
 `translation.json` now has **1,617 / 1,947 IDs**, SHA-256 `b437724221b9f8010d2808f8ac9013957dd84de6beb0f3ed99c994b2bddc6df2`. `resume-01/add-ryan-food-basket-fruit.py` and its map validate the preceding draft and paired readers; macOS accepts 1,593 and Windows 1,611 bindings. The complete guard reports 330 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Ryan food and date conversations — continuation
+
+Author self-reviewed 42 IDs in the egg, ham and `RyanDate_*` groups. One apostrophe-only source variant has an explicit shared translation; a Polish colon was replaced with a comma to preserve the source speaker-delimiter contract. This is author self-review, not independent audit.
+
+`translation.json` now has **1,659 / 1,947 IDs**, SHA-256 `8b9cee42bb010d1010f15862b33a1184e0fac27659caa2063e2b3d61c6e0096e`. `resume-01/add-ryan-food-date.py` and its map validate the preceding draft and paired readers; macOS accepts 1,635 and Windows 1,653 bindings. The complete guard reports 288 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
