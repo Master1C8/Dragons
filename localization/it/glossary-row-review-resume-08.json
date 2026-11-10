@@ -16594,6 +16594,11 @@
           "id": "dnw-igwyx",
           "sourceEntrySha256": "66ad2b67f8ff6ddf6faf87daf25948de76082040baa5fba50b5a1f24a05b2f3a",
           "localeFieldsSha256": "098ca2cedf2af074af1e3995e8a787ba4496c7f3ec5b6060d6c77b25fb1ff55e"
+        },
+        {
+          "id": "dnw-yip",
+          "sourceEntrySha256": "732298762db192f5e97009d5a3babdf06857b777d65975115662abe32637b079",
+          "localeFieldsSha256": "649610e6e5ee14c04df3df24b4118f349f79952954c42995d92625488a26e8e9"
         }
       ],
       "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
@@ -16694,7 +16699,9 @@
           "pairedRowSha256": "48fde72ef011d72f574f68fe26f1a1f765194ee61702c0fc9f063aa7b6024079",
           "speakerOrKind": "option",
           "characterReferents": [],
-          "conceptUses": [],
+          "conceptUses": [
+            "dnw-yip"
+          ],
           "decision": "A playful affirmative."
         },
         {
