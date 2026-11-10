@@ -2930,61 +2930,250 @@
       "group": "RyanDate_1",
       "orderedRowsSha256": "4caa25f8cc9062d3cac7377e0cffc8d12371ec1bed087ca75eea32b3b9f96e1e",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan is excited for a date with the player and brought food; no other person is identified.",
+      "layer1": "Date here is the meeting, not a calendar date.",
+      "layer2": "Character fields fit; no player gender is established.",
+      "sourceIds": [
+        "yarn:line:69ffe957",
+        "yarn:line:ffcfee20"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-date-and-explosion-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanDate_2",
       "orderedRowsSha256": "1a19200730eb69a012b58b2afa82b3a43abdde64448c4cbacf5f0cbf69547c9b",
       "count": 5,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "The participants discuss something that happened to Conrad; both he's and he refer to Conrad. The incident is not described by these rows.",
+      "layer1": "Conrad is the person affected, not necessarily the person being addressed.",
+      "layer2": "Conrad's male field fits; preserve uncertainty about the event.",
+      "sourceIds": [
+        "yarn:line:bea8f1f7",
+        "yarn:line:2898f680",
+        "yarn:line:433cb27e",
+        "yarn:line:d50cb509",
+        "yarn:line:6f5dbc90"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-date-and-explosion-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanDate_3",
       "orderedRowsSha256": "c0674cb122b4bc581251891731751a4f373ea7429fd7e82f7fb9cced1e537bfe",
       "count": 5,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-dragon"
+      ],
+      "conceptUses": {
+        "dnw-dragon": [
+          "yarn:line:5080b6dd"
+        ]
+      },
+      "referents": "The player observes Ryan's eating; Ryan says swallowing whole depends and calls it a dragon thing. It is not an unconditional statement that all dragons always swallow whole.",
+      "layer1": "The species reference describes Ryan's contextual explanation.",
+      "layer2": "The species entry fits while preserving his qualification.",
+      "sourceIds": [
+        "yarn:line:4944dbda",
+        "yarn:line:ead1bf44",
+        "yarn:line:7ce1b833",
+        "yarn:line:c6b0b1aa",
+        "yarn:line:5080b6dd"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-date-and-explosion-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanDate_Idle1",
       "orderedRowsSha256": "689e38f15f2e88854d2caf1fa281c93f3e16a007468590f5d90be9eeb0346711",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan looks forward to dating again; no partner is named in this isolated line.",
+      "layer1": "Dating again does not identify a past partner.",
+      "layer2": "No target character-field correction follows.",
+      "sourceIds": [
+        "yarn:line:3223473f"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-date-and-explosion-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanDate_Intro",
       "orderedRowsSha256": "8ea3f44056aeed20f00bec8ee80b10b5cf679e513a530aaa2ae224f2234e873a",
       "count": 6,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan brings the date to the busy player after their earlier conversation. You refers to the player, not an unnamed third party.",
+      "layer1": "The date is the meeting Ryan brings to the player.",
+      "layer2": "The character fields fit without attributing gender to the player.",
+      "sourceIds": [
+        "yarn:line:eed2cc64",
+        "yarn:line:78e2cb13",
+        "yarn:line:c2b3c28a",
+        "yarn:line:5483c5fd",
+        "yarn:line:f716a163",
+        "yarn:line:6126a614"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-date-and-explosion-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanDate_Outro",
       "orderedRowsSha256": "14d92bef7089a78762e051fe5593829d5e94f861f670c2c33b472aee02354220",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan thanks the player and says the date improved his feelings about dating.",
+      "layer1": "The subject and addressee are Ryan and the player.",
+      "layer2": "The Italian character fields fit without additional identity claims.",
+      "sourceIds": [
+        "yarn:line:019b83df",
+        "yarn:line:bbca8a46"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-date-and-explosion-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanExploded_Intro",
       "orderedRowsSha256": "2d52073edb2d94c1591b6dc3122179947ce0ca52ea727d1cec315d3c0677aeb5",
       "count": 12,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:cc4e48a3",
+          "yarn:line:5a7e4fd4"
+        ]
+      },
+      "referents": "Ryan helped an unnamed alchemist reach a shelf and heard a bang. They in the ensuing line plausibly refers to that alchemist, but identity, gender and exact circumstances are unestablished. The player has different greeting choices.",
+      "layer1": "The alchemist is an unnamed person; do not equate this person with Alexander's unnamed apothecary solely from related occupations. Cleaning is the service.",
+      "layer2": "Do not impose a gender or invented name on the alchemist; the Italian service entry fits.",
+      "sourceIds": [
+        "yarn:line:873a2b9a",
+        "yarn:line:110a2ced",
+        "yarn:line:3d6b2203",
+        "yarn:line:ab5b2574",
+        "yarn:line:ac769d93",
+        "yarn:line:3a469ae4",
+        "yarn:line:e02f464d",
+        "yarn:line:761f413a",
+        "yarn:line:cc4e48a3",
+        "yarn:line:5a7e4fd4",
+        "yarn:line:f9eb2b4a",
+        "yarn:line:6fdb2c3d"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-date-and-explosion-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanExploded_Outro",
       "orderedRowsSha256": "51b2cde75ee0b3fcf4dcc7ee5041c6e86662f13687f46f03e9d9358122126f5f",
       "count": 3,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan says he feared another mess and that they need never know. The referent of they is not established by this short scene alone; the prior alchemist context is plausible but not certain.",
+      "layer1": "Do not assert the identity or number of the off-screen referent without further evidence.",
+      "layer2": "Preserve the unresolved reference rather than assigning gender or a named character.",
+      "sourceIds": [
+        "yarn:line:b3c35166",
+        "yarn:line:564a9606",
+        "yarn:line:c07a9171"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-date-and-explosion-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanExploded_OutroDirty",
       "orderedRowsSha256": "0394b02d0cef76c8719da5a3cd4a44495a490a99e868f64fa51588cdb95c5462",
       "count": 5,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:fc6fdd10",
+          "yarn:line:6d726280"
+        ]
+      },
+      "referents": "Ryan asks for more washing because he still feels explosion grime; the player's responses are alternatives.",
+      "layer1": "The request concerns incomplete service.",
+      "layer2": "The target service and character entries fit; retain the alternative replies.",
+      "sourceIds": [
+        "yarn:line:fc6fdd10",
+        "yarn:line:6d726280",
+        "yarn:line:fb4265f7",
+        "yarn:line:9ca994a5",
+        "yarn:line:0a9993d2"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-date-and-explosion-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanExploded_OutroSoapy",
       "orderedRowsSha256": "c93698104379fadbfc5f008576f76db8871c809f9778e7cd44fbf07f0adc9127",
       "count": 5,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:0979dea3",
+          "yarn:line:9f49d9d4"
+        ]
+      },
+      "referents": "Ryan asks the player to rinse off remaining soap; it refers to the soap, not a person.",
+      "layer1": "Rinsing is the service and the player has alternative replies.",
+      "layer2": "Preserve the service sense, player neutrality and reply branches.",
+      "sourceIds": [
+        "yarn:line:0979dea3",
+        "yarn:line:9f49d9d4",
+        "yarn:line:3cdcbd4a",
+        "yarn:line:aaecba3d",
+        "yarn:line:10bdb3a4"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-date-and-explosion-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanMuddy_Dirty",
