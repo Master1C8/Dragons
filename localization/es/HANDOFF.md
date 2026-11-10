@@ -146,3 +146,7 @@ Authored 109 additional IDs across eight complete Yip-related scenes; **700/1,94
 ### Continuation: Ryan introduction and remaining Yip context
 
 Authored 48 IDs in `Ryan_5_intro` and the final Yip-associated exchange, bringing the locale to **748/1,947**. The full 49-ID set passed both platform source readers and in-memory object read-back; altered English was rejected for both. See `special-date-yip.md` and task scratch `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ryan5/`. Translation SHA-256 `91c003bf232a5f65d9757e0c49a1dab08401c169044dac87f48a3e9c9dc89fe8`. All indexed Yip context has wording; remaining romance-routing contexts require reconciliation before ordinary batches. Independent audit, final packages and localized runtime/visual QA remain open.
+
+### Continuation: Alexander relationship-state dialogue
+
+Authored 47 IDs in `Alexander_5_intro` and `Alexander_5_required`, for **795/1,947**. Both platform source readers and in-memory object read-back passed; altered-source negatives were rejected on both. See `special-ryan-relationships.md` and `work/cli-terra-high-20261110.J0KLrx/es/resume-09/alex5/`. Translation SHA-256 `62013be64200d01d5904309019ed5137b2df42457649c3b8c68cc524cfcc93e1`. Remaining relationship-state context reconciliation precedes ordinary batches. Independent audit, packages and final runtime/visual QA remain pending.
