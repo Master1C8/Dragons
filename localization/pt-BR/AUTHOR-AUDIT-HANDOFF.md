@@ -1,0 +1,31 @@
+# Brazilian Portuguese author audit handoff
+
+Status as of 2026-11-10: the author has reviewed the 1,947 indexed source/target units in scene and interface batches, including choice routes, address and control text. The batch checkpoints record findings and evidence. This is an author semantic pass, not independent editorial acceptance. The 25 units with differing platform English were compared on both sides; their differences were spelling or punctuation variants with the same meaning. The fixed Yarn title is `Yip-Man - O Último Yip`. Texture content is outside this assignment; a complete text-bearing image-plan audit is not claimed.
+
+## Bindings and verification
+
+- Target: `localization/pt-BR/translation.json`, SHA-256 `b1e341f5338fc0c81e4af1e968a5b86acf3447330d726489cbc3ee89032b7311`; 1,947 authored IDs. Breakdown: 1,824 Yarn union IDs, 82 UI, 37 settings and 4 display IDs. Per-build Yarn binding count differs from the union.
+- English v42 inventory SHA-256 `79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d`; Yarn scope SHA-256 `753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30`. Source-readiness and preservation entry gate: `localization/evidence/source-readiness-v42-20261110.md` and its reconciliation receipt, bound to these inputs.
+- SiteForMods English glossary semantic fingerprint `3d261921e114b6feab10f57ad54d43674a75e991d94937686155b92cce399dc3`; pt-BR compact stored-order map SHA-256 `6309cf331625336c510e6587ce3b35476301f242bfd63618ad01bfbd8b3966ad`. Two author self-review layers and their limits are in `glossary-review/`; they are not independent review.
+- Final changed batch paired readback: `localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-10/ryan-rest-readback.json`, SHA-256 `52e312f6dce33bc4a02e945e8049630987dd79d355d88e41acd06f2dc34d7280`. It checked 1,947 source bindings on each stock build and the four changes of that batch. Complete Yarn reader receipt `ryan-rest-yarn-receipt.json` SHA-256 `072f3e02325c4e27a31e2f8d0303b5e26195f5a6bb13189e9fa620feaa0aba13`; temporary objects were reopened before removal. Individual earlier change receipts and reproducible commands are in `CHECKPOINT.md`. This is authoring-input readback, not final package readback.
+
+## Effective correction cycle and next review
+
+The baseline is the complete pre-audit draft from `git show a37584b:localization/pt-BR/translation.json`, SHA-256 `3b61a5413c81af7e9689a536d633f269846b45d31c44a5b3ab2cf2063c6d7d13`. The cumulative effective delta has 51 changed IDs and 947 selected closure IDs. Its component counts are 571 scene, 16 repetition, 0 explicit glossary/referent, 0 explicit runtime and 414 regression IDs, with overlaps; 55 protected context records are separate. Changed-ID list SHA-256 `8652fc71b8f98ab2036073284019f37b9f939329aba011009e24d16b5cb807bb`; closure-ID list SHA-256 `c37659516c0f1b70720e1c69b91819e692ec1eb913d2aafaaee25ab67cadd65b`. Lists and hashing conventions are recorded in the delta itself.
+
+The committed candidate recipe `receipts/author-audit-recipe.json` has SHA-256 `84e2e698f372ff0102fbe59b76694b4d7a5a503e149be27da972b2734006e936`; its generated `receipts/author-audit-delta.json` has SHA-256 `8cbc0a7a8acaa4a13c9cb578be28bd2085638b2920f88237d9f3cc1463cb22fb`. The zero explicit glossary/referent and runtime components are not proof that no dependencies exist. Reconcile each effective edit against affected player-gender references, glossary concepts and actual consumer topology, including joined fragments and applicable image plans. Amend the selector/recipe and regenerate into a new immutable cycle if dependencies are missing; retain this candidate and its hashes. The reviewer must check the resulting full closure and mandatory regression catalog against English, glossary and actual context, then run the prescribed delta cycles until clean on unchanged hashes. The current author cannot supply the required distinct independent review under this assignment.
+
+To reproduce this candidate in a fresh run-owned path, save the baseline with the `git show` command above, then run (the output path must not already exist):
+
+```sh
+base=localization/work/cli-terra-high-20261110.J0KLrx/pt-BR
+PYTHONPATH="$base/deps" /private/tmp/dragnwash-unitypy-venv/bin/python localization/export_editorial_delta_with_regressions.py --locale pt-BR --inventory localization/work/source-inventory-20261107/combined-provisional-v42-20261110.json --yarn-scope localization/work/yarn-markers-20261110.ridbPA/yarn-scope-v42.json --paired-scenes localization/work/source-inventory-20261107/yarn-paired-scenes.json --before "$base/resume-10/full-audit-before.json" --after localization/pt-BR/translation.json --recipe localization/pt-BR/receipts/author-audit-recipe.json --output "$base/resume-10/full-audit-delta-rebuilt.json"
+```
+
+## Separate outstanding gates
+
+- Editorial: author text pass recorded; full independent dependency-aware diff/delta audit, complete dependency reconciliation and image-text inventory acceptance remain pending. A self-review is not independent acceptance.
+- Artifacts: final macOS and Windows localized packages and their readbacks have not been built or accepted. Free space was 5.5 GiB at the last check and is shared; recheck capacity and cooperative runtime lock before any large build. Do not alter stock installations or textures.
+- Runtime: prior synthetic pt-BR renderer feasibility passed for macOS and Windows under CrossOver, as documented in `renderer-evidence.md`; actual final localized packages and native Windows runtime have not passed. No game launch is authorized in this continuation.
+- Visual: representative synthetic checks are not final translated-scene fit or full visual acceptance. Preserve screenshot originals and apply the workstation WebP80 preview policy when later authorized.
+- Project delivery and source-only archival remain pending; no publication or deployment was authorized.

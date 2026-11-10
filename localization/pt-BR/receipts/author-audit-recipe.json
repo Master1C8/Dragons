@@ -1,0 +1,620 @@
+{
+  "schema": 1,
+  "locale": "pt-BR",
+  "beforeSha256": "3b61a5413c81af7e9689a536d633f269846b45d31c44a5b3ab2cf2063c6d7d13",
+  "afterSha256": "b1e341f5338fc0c81e4af1e968a5b86acf3447330d726489cbc3ee89032b7311",
+  "edits": {
+    "yarn:line:33440e8c": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_2_required",
+          "firstInstruction": 4,
+          "lastInstruction": 25
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:7d13eca0": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_3_JerkOff_Start",
+          "firstInstruction": 2,
+          "lastInstruction": 3
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:d132db41": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_SexScene",
+          "firstInstruction": 0,
+          "lastInstruction": 1
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:41d5085a": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_SexScene_Cum",
+          "firstInstruction": 8,
+          "lastInstruction": 92
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:0bc044da": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene_Cum",
+          "firstInstruction": 7,
+          "lastInstruction": 67
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:9addfb4a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene_Cum",
+          "firstInstruction": 7,
+          "lastInstruction": 67
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:7f543c2a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene_Cum",
+          "firstInstruction": 7,
+          "lastInstruction": 67
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:f0a0565a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene_Cum",
+          "firstInstruction": 7,
+          "lastInstruction": 67
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:37c9d915": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_required",
+          "firstInstruction": 12,
+          "lastInstruction": 74
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:44701902": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_required",
+          "firstInstruction": 12,
+          "lastInstruction": 74
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:cb847372": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_required",
+          "firstInstruction": 12,
+          "lastInstruction": 74
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:e7e57d9c": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_required",
+          "firstInstruction": 12,
+          "lastInstruction": 74
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:d66b9155": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_5_intro_conrad_romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 49
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:34cf0601": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_5_intro_ryan_romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 48
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:a0479425": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_5_required_conrad_romanced",
+          "firstInstruction": 0,
+          "lastInstruction": 47
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:fa293cde": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Intro_4",
+          "firstInstruction": 21,
+          "lastInstruction": 253
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:cf8c5f37": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Intro_4",
+          "firstInstruction": 21,
+          "lastInstruction": 253
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:94fbdbf0": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Outro_4_Ryan_Conrad_Romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 74
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:a00f681d": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_Outro_ryan_romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 44
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:c6202cf2": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_Required_ryan_conrad_romanced",
+          "firstInstruction": 0,
+          "lastInstruction": 58
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:601e1b38": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_intro",
+          "firstInstruction": 21,
+          "lastInstruction": 217
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:822c0718": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_intro_ryan_romanced",
+          "firstInstruction": 0,
+          "lastInstruction": 21
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:a6c1f2f4": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:e6290003": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:cd9b2a8f": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:0d20d327": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:f83e4966": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:77ca2316": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:b05c6259": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:a40e531c": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:079b3782": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Remove unsupported masculine agreement for the player while preserving the source meaning and dialogue or choice context."
+    },
+    "yarn:line:e91e2041": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_intro",
+          "firstInstruction": 21,
+          "lastInstruction": 217
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Preserve the choice meaning without assigning a gender to the player."
+    },
+    "yarn:line:07e5fc05": {
+      "sceneSpans": [
+        {
+          "node": "Start",
+          "firstInstruction": 1,
+          "lastInstruction": 35
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Preserve the choice meaning without assigning a gender to the player."
+    },
+    "yarn:line:73ea230a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_finished_mount_3",
+          "firstInstruction": 7,
+          "lastInstruction": 72
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Author review: preserve meaning and register without an unsupported player gender."
+    },
+    "yarn:line:88d7e1e2": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_4_Mount_Finish",
+          "firstInstruction": 2,
+          "lastInstruction": 2
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Author review: preserve meaning and register without an unsupported player gender."
+    },
+    "yarn:line:938be2fb": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_2_intro",
+          "firstInstruction": 6,
+          "lastInstruction": 96
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Retain the character voice and source meaning without assigning player gender."
+    },
+    "yarn:line:61c8781b": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_3_intro",
+          "firstInstruction": 4,
+          "lastInstruction": 137
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Retain the character voice and source meaning without assigning player gender."
+    },
+    "yarn:line:1538bc7e": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_5_intro_conrad_romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 49
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Preserve the flirtatious address without assigning the player a gender."
+    },
+    "yarn:line:7f5113d5": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_egg_dialog",
+          "firstInstruction": 4,
+          "lastInstruction": 35
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Preserve meaning and avoid unsupported player gender."
+    },
+    "yarn:line:b4990e3d": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Preserve meaning and avoid unsupported player gender."
+    },
+    "yarn:line:09e5bf43": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Preserve meaning and avoid unsupported player gender."
+    },
+    "yarn:line:13c906c7": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Preserve meaning and avoid unsupported player gender."
+    },
+    "yarn:line:3d723db0": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_required",
+          "firstInstruction": 12,
+          "lastInstruction": 74
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Retain relationship meaning while avoiding unnecessary gendered group reference to the player."
+    },
+    "yarn:line:7f2e2736": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_intro",
+          "firstInstruction": 21,
+          "lastInstruction": 217
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Preserve the playful small-size address without assigning player gender."
+    },
+    "yarn:line:918d7820": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Intro_4",
+          "firstInstruction": 21,
+          "lastInstruction": 253
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Preserve the scene meaning and conversational voice without assigning player gender."
+    },
+    "yarn:line:18e5a573": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Intro_4",
+          "firstInstruction": 21,
+          "lastInstruction": 253
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Preserve the scene meaning and conversational voice without assigning player gender."
+    },
+    "yarn:line:0de4fe62": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_required_2",
+          "firstInstruction": 4,
+          "lastInstruction": 118
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Preserve the scene meaning and conversational voice without assigning player gender."
+    },
+    "yarn:line:a0cf6cae": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Outro_3",
+          "firstInstruction": 6,
+          "lastInstruction": 148
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Author scene audit: preserve the English meaning and avoid assigning gender to the player."
+    },
+    "yarn:line:c4cc497f": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Outro_3",
+          "firstInstruction": 6,
+          "lastInstruction": 148
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Author scene audit: preserve the English meaning and avoid assigning gender to the player."
+    },
+    "yarn:line:4789095b": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Outro_4_Ryan_Romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 31
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Author scene audit: preserve the English meaning and avoid assigning gender to the player."
+    },
+    "yarn:line:5e4d645c": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Outro_4_Ryan_Romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 31
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Author scene audit: preserve the English meaning and avoid assigning gender to the player."
+    }
+  }
+}
