@@ -1,0 +1,15 @@
+{
+  "locale": "fa",
+  "translationSha256": "f172053b987eee353fff856b226630027581ea62a80e6069252659b33afaaa6f",
+  "selfEditedRows": 1947,
+  "scope": "authored-text-only",
+  "findings": "One complete author source-to-target self-edit; 13 objective corrections applied and changed context rechecked.",
+  "status": "Authored text complete; static source-bound verification passed.",
+  "review": "Author self-edit only; independent editorial review not performed.",
+  "verification": "Visual and runtime verification not performed. Display fixes and packages are deferred.",
+  "sourceWorklistSha256": "496d41967a72994bf63de2acf810bdd1e6995806b4f2219fc9f9e61c4f572a45",
+  "glossarySha256": "9175a88df674d08a37bb5da85b330063b791749896d57646a963994b8be5d752",
+  "finalYarnSha256": "c3cf83feaa395cc48432f3f7502ed419aefa58798eff300c4ec0536e18c8b6ca",
+  "model": "gpt-6.1-terra",
+  "reasoning": "high"
+}
