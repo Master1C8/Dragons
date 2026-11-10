@@ -1,0 +1,2878 @@
+{
+  "schema": 1,
+  "scope": "Author reconciliation for the 51 edits; not independent review or executed runtime.",
+  "boundDeltaSha256": "60baffadaf7c620ebdb7c286e81aca1a00d9184bd001c3ccdda11bc18d27d786",
+  "boundNodeMapSha256": "fa05fdf1a278a9bd88e3c37d13fe974dff910e6a07bfdf252b365ed20873de42",
+  "boundChoiceTraceSha256": "960e2b95e061d4a03539bf4bd4506bba99af9ab6f1324c3612f36d1d5360da9f",
+  "glossaryBinding": "6309cf331625336c510e6587ce3b35476301f242bfd63618ad01bfbd8b3966ad",
+  "changedRows": [
+    {
+      "id": "yarn:line:938be2fb",
+      "node": "Alexander_2_intro",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "I forget the ignorance of a layman. I apologize.",
+        "windows": "I forget the ignorance of a layman. I apologize."
+      },
+      "before": {
+        "macos": "Esqueço-me da ignorância de um leigo. Peço desculpas.",
+        "windows": "Esqueço-me da ignorância de um leigo. Peço desculpas."
+      },
+      "after": {
+        "macos": "Esqueço-me da falta de conhecimento de quem não é da área. Peço desculpas.",
+        "windows": "Esqueço-me da falta de conhecimento de quem não é da área. Peço desculpas."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:33440e8c",
+      "node": "Alexander_2_required",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "And why you are perfect for this job!",
+        "windows": "And why you are perfect for this job!"
+      },
+      "before": {
+        "macos": "E por isso você é perfeito para esse trabalho!",
+        "windows": "E por isso você é perfeito para esse trabalho!"
+      },
+      "after": {
+        "macos": "E por isso você tem as qualidades ideais para esse trabalho!",
+        "windows": "E por isso você tem as qualidades ideais para esse trabalho!"
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:7d13eca0",
+      "node": "Alexander_3_JerkOff_Start",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Oh my- I didn't expect you to be so... hands on",
+        "windows": "Oh my- I didn't expect you to be so... hands on"
+      },
+      "before": {
+        "macos": "Oh, céus... Não esperava que você fosse tão... direto com as mãos",
+        "windows": "Oh, céus... Não esperava que você fosse tão... direto com as mãos"
+      },
+      "after": {
+        "macos": "Oh, céus... Não esperava que usasse as mãos de um jeito tão... direto",
+        "windows": "Oh, céus... Não esperava que usasse as mãos de um jeito tão... direto"
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:61c8781b",
+      "node": "Alexander_3_intro",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Indeed! You're the only kobold I wish to wash me now.",
+        "windows": "Indeed! You're the only kobold I wish to wash me now."
+      },
+      "before": {
+        "macos": "De fato! Agora você é o único kobold que desejo que me lave.",
+        "windows": "De fato! Agora você é o único kobold que desejo que me lave."
+      },
+      "after": {
+        "macos": "De fato! Agora só quero que você, meu kobold, me lave.",
+        "windows": "De fato! Agora só quero que você, meu kobold, me lave."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:37c9d915",
+      "node": "Alexander_5_required",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Thanks, You're pleasant too!",
+        "windows": "Thanks, You're pleasant too!"
+      },
+      "before": {
+        "macos": "Obrigado, você também é agradável!",
+        "windows": "Obrigado, você também é agradável!"
+      },
+      "after": {
+        "macos": "Valeu, você também é agradável!",
+        "windows": "Valeu, você também é agradável!"
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 27,
+            "id": "yarn:line:37c9d915",
+            "index": 25,
+            "destination": 31,
+            "destinationInstruction": {
+              "index": 31,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Thanks, You're pleasant too!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3337633964393135",
+                "utf8": "line:37c9d915"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 31
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 27,
+            "id": "yarn:line:37c9d915",
+            "index": 25,
+            "destination": 31,
+            "destinationInstruction": {
+              "index": 31,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Thanks, You're pleasant too!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3337633964393135",
+                "utf8": "line:37c9d915"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 31
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:44701902",
+      "node": "Alexander_5_required",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Thanks!",
+        "windows": "Thanks!"
+      },
+      "before": {
+        "macos": "Obrigado!",
+        "windows": "Obrigado!"
+      },
+      "after": {
+        "macos": "Valeu!",
+        "windows": "Valeu!"
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 27,
+            "id": "yarn:line:44701902",
+            "index": 26,
+            "destination": 36,
+            "destinationInstruction": {
+              "index": 36,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Thanks!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3434373031393032",
+                "utf8": "line:44701902"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 36
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 27,
+            "id": "yarn:line:44701902",
+            "index": 26,
+            "destination": 36,
+            "destinationInstruction": {
+              "index": 36,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Thanks!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3434373031393032",
+                "utf8": "line:44701902"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 36
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:cb847372",
+      "node": "Alexander_5_required",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Thanks, You're pleasant too!",
+        "windows": "Thanks, You're pleasant too!"
+      },
+      "before": {
+        "macos": "Obrigado, você também é agradável!",
+        "windows": "Obrigado, você também é agradável!"
+      },
+      "after": {
+        "macos": "Valeu, você também é agradável!",
+        "windows": "Valeu, você também é agradável!"
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 51,
+            "id": "yarn:line:cb847372",
+            "index": 49,
+            "destination": 55,
+            "destinationInstruction": {
+              "index": 55,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Thanks, You're pleasant too!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6362383437333732",
+                "utf8": "line:cb847372"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 55
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 51,
+            "id": "yarn:line:cb847372",
+            "index": 49,
+            "destination": 55,
+            "destinationInstruction": {
+              "index": 55,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Thanks, You're pleasant too!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6362383437333732",
+                "utf8": "line:cb847372"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 55
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:e7e57d9c",
+      "node": "Alexander_5_required",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Thanks!",
+        "windows": "Thanks!"
+      },
+      "before": {
+        "macos": "Obrigado!",
+        "windows": "Obrigado!"
+      },
+      "after": {
+        "macos": "Valeu!",
+        "windows": "Valeu!"
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 51,
+            "id": "yarn:line:e7e57d9c",
+            "index": 50,
+            "destination": 60,
+            "destinationInstruction": {
+              "index": 60,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Thanks!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6537653537643963",
+                "utf8": "line:e7e57d9c"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 60
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 51,
+            "id": "yarn:line:e7e57d9c",
+            "index": 50,
+            "destination": 60,
+            "destinationInstruction": {
+              "index": 60,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Thanks!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6537653537643963",
+                "utf8": "line:e7e57d9c"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 60
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:3d723db0",
+      "node": "Alexander_5_required",
+      "kind": "line",
+      "referentClass": "player-and-romantic-partner",
+      "pairedSource": {
+        "macos": "Must mean you two are a good match.",
+        "windows": "Must mean you two are a good match."
+      },
+      "before": {
+        "macos": "Deve significar que vocês dois combinam.",
+        "windows": "Deve significar que vocês dois combinam."
+      },
+      "after": {
+        "macos": "Deve significar que vocês combinam.",
+        "windows": "Deve significar que vocês combinam."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:d132db41",
+      "node": "Alexander_SexScene",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "We can just lay here...",
+        "windows": "We can just lay here..."
+      },
+      "before": {
+        "macos": "Podemos simplesmente ficar deitados aqui...",
+        "windows": "Podemos simplesmente ficar deitados aqui..."
+      },
+      "after": {
+        "macos": "Podemos simplesmente ficar aqui, sem nos levantar...",
+        "windows": "Podemos simplesmente ficar aqui, sem nos levantar..."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:41d5085a",
+      "node": "Alexander_SexScene_Cum",
+      "kind": "option",
+      "referentClass": "player-addresses-dragon",
+      "pairedSource": {
+        "macos": "Let go whenever you are ready.",
+        "windows": "Let go whenever you are ready."
+      },
+      "before": {
+        "macos": "Pode se soltar quando estiver pronto.",
+        "windows": "Pode se soltar quando estiver pronto."
+      },
+      "after": {
+        "macos": "Pode se soltar quando sentir que é hora.",
+        "windows": "Pode se soltar quando sentir que é hora."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 53,
+            "id": "yarn:line:41d5085a",
+            "index": 52,
+            "destination": 68,
+            "destinationInstruction": {
+              "index": 68,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Let go whenever you are ready.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3431643530383561",
+                "utf8": "line:41d5085a"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 68
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 53,
+            "id": "yarn:line:41d5085a",
+            "index": 52,
+            "destination": 68,
+            "destinationInstruction": {
+              "index": 68,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Let go whenever you are ready.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3431643530383561",
+                "utf8": "line:41d5085a"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 68
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:88d7e1e2",
+      "node": "Conrad_4_Mount_Finish",
+      "kind": "line",
+      "referentClass": "conrad-wash-or-social-question",
+      "pairedSource": {
+        "macos": "Haah. This is the best fuckin' wash.",
+        "windows": "Haah. This is the best fuckin' wash."
+      },
+      "before": {
+        "macos": "Haah. Esta é a melhor lavagem da porra.",
+        "windows": "Haah. Esta é a melhor lavagem da porra."
+      },
+      "after": {
+        "macos": "Haah. Essa é a melhor lavagem, porra.",
+        "windows": "Haah. Essa é a melhor lavagem, porra."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:1538bc7e",
+      "node": "Conrad_5_intro_conrad_romanced",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Hey good lookin'",
+        "windows": "Hey good lookin'"
+      },
+      "before": {
+        "macos": "E aí, bonitão.",
+        "windows": "E aí, bonitão."
+      },
+      "after": {
+        "macos": "E aí, coisa linda.",
+        "windows": "E aí, coisa linda."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:d66b9155",
+      "node": "Conrad_5_intro_conrad_romanced",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "I'm excited.",
+        "windows": "I'm excited."
+      },
+      "before": {
+        "macos": "Estou animado.",
+        "windows": "Estou animado."
+      },
+      "after": {
+        "macos": "Mal posso esperar.",
+        "windows": "Mal posso esperar."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 26,
+            "id": "yarn:line:d66b9155",
+            "index": 24,
+            "destination": 30,
+            "destinationInstruction": {
+              "index": 30,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm excited.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6436366239313535",
+                "utf8": "line:d66b9155"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 30
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 26,
+            "id": "yarn:line:d66b9155",
+            "index": 24,
+            "destination": 30,
+            "destinationInstruction": {
+              "index": 30,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm excited.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6436366239313535",
+                "utf8": "line:d66b9155"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 30
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:34cf0601",
+      "node": "Conrad_5_intro_ryan_romanced",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "It did! Thanks for asking.",
+        "windows": "It did! Thanks for asking."
+      },
+      "before": {
+        "macos": "Foi sim! Obrigado por perguntar.",
+        "windows": "Foi sim! Obrigado por perguntar."
+      },
+      "after": {
+        "macos": "Foi sim! Valeu por perguntar.",
+        "windows": "Foi sim! Valeu por perguntar."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 34,
+            "id": "yarn:line:34cf0601",
+            "index": 32,
+            "destination": 38,
+            "destinationInstruction": {
+              "index": 38,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "It did! Thanks for asking.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3334636630363031",
+                "utf8": "line:34cf0601"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 38
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 34,
+            "id": "yarn:line:34cf0601",
+            "index": 32,
+            "destination": 38,
+            "destinationInstruction": {
+              "index": 38,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "It did! Thanks for asking.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3334636630363031",
+                "utf8": "line:34cf0601"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 38
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:a0479425",
+      "node": "Conrad_5_required_conrad_romanced",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "I'm excited.",
+        "windows": "I'm excited."
+      },
+      "before": {
+        "macos": "Estou animado.",
+        "windows": "Estou animado."
+      },
+      "after": {
+        "macos": "Mal posso esperar.",
+        "windows": "Mal posso esperar."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 3,
+            "id": "yarn:line:a0479425",
+            "index": 2,
+            "destination": 15,
+            "destinationInstruction": {
+              "index": 15,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm excited.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6130343739343235",
+                "utf8": "line:a0479425"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 15
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 3,
+            "id": "yarn:line:a0479425",
+            "index": 2,
+            "destination": 15,
+            "destinationInstruction": {
+              "index": 15,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm excited.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6130343739343235",
+                "utf8": "line:a0479425"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:918d7820",
+      "node": "Conrad_Intro_4",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "'Ey big kobold.",
+        "windows": "'Ey big kobold."
+      },
+      "before": {
+        "macos": "E aí, kobold grandão.",
+        "windows": "E aí, kobold grandão."
+      },
+      "after": {
+        "macos": "E aí, kobold gigante.",
+        "windows": "E aí, kobold gigante."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:fa293cde",
+      "node": "Conrad_Intro_4",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Thanks! Whats with all the... Gloop?",
+        "windows": "Thanks! Whats with all the... Gloop?"
+      },
+      "before": {
+        "macos": "Obrigado! E essa... gosma toda?",
+        "windows": "Obrigado! E essa... gosma toda?"
+      },
+      "after": {
+        "macos": "Valeu! E essa... gosma toda?",
+        "windows": "Valeu! E essa... gosma toda?"
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 97,
+            "id": "yarn:line:fa293cde",
+            "index": 94,
+            "destination": 101,
+            "destinationInstruction": {
+              "index": 101,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Thanks! Whats with all the... Gloop?",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6661323933636465",
+                "utf8": "line:fa293cde"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 101
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 97,
+            "id": "yarn:line:fa293cde",
+            "index": 94,
+            "destination": 101,
+            "destinationInstruction": {
+              "index": 101,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Thanks! Whats with all the... Gloop?",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6661323933636465",
+                "utf8": "line:fa293cde"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 101
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:cf8c5f37",
+      "node": "Conrad_Intro_4",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "That's not a thing... But thank you!",
+        "windows": "That's not a thing... But thank you!"
+      },
+      "before": {
+        "macos": "Isso não existe... Mas obrigado!",
+        "windows": "Isso não existe... Mas obrigado!"
+      },
+      "after": {
+        "macos": "Isso não existe... Mas valeu!",
+        "windows": "Isso não existe... Mas valeu!"
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 97,
+            "id": "yarn:line:cf8c5f37",
+            "index": 96,
+            "destination": 115,
+            "destinationInstruction": {
+              "index": 115,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "That's not a thing... But thank you!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6366386335663337",
+                "utf8": "line:cf8c5f37"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 115
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 97,
+            "id": "yarn:line:cf8c5f37",
+            "index": 96,
+            "destination": 115,
+            "destinationInstruction": {
+              "index": 115,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "That's not a thing... But thank you!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6366386335663337",
+                "utf8": "line:cf8c5f37"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 115
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:18e5a573",
+      "node": "Conrad_Intro_4",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Whaaat? It's good to make sure you're warmed up!",
+        "windows": "Whaaat? It's good to make sure you're warmed up!"
+      },
+      "before": {
+        "macos": "Quêêê? É bom garantir que você esteja aquecido!",
+        "windows": "Quêêê? É bom garantir que você esteja aquecido!"
+      },
+      "after": {
+        "macos": "Quêêê? É bom se aquecer antes!",
+        "windows": "Quêêê? É bom se aquecer antes!"
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:a0cf6cae",
+      "node": "Conrad_Outro_3",
+      "kind": "line",
+      "referentClass": "conrad-wash-or-social-question",
+      "pairedSource": {
+        "macos": "Do you know any cool places, people, I could hang around?",
+        "windows": "Do you know any cool places, people, I could hang around?"
+      },
+      "before": {
+        "macos": "Você conhece algum lugar legal, ou alguém, com quem eu possa passar um tempo?",
+        "windows": "Você conhece algum lugar legal, ou alguém, com quem eu possa passar um tempo?"
+      },
+      "after": {
+        "macos": "Você conhece algum lugar legal para frequentar ou alguém com quem eu possa passar um tempo?",
+        "windows": "Você conhece algum lugar legal para frequentar ou alguém com quem eu possa passar um tempo?"
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:c4cc497f",
+      "node": "Conrad_Outro_3",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "You're pretty hot.",
+        "windows": "You're pretty hot."
+      },
+      "before": {
+        "macos": "Você é bem gostoso.",
+        "windows": "Você é bem gostoso."
+      },
+      "after": {
+        "macos": "Você é uma delícia.",
+        "windows": "Você é uma delícia."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:94fbdbf0",
+      "node": "Conrad_Outro_4_Ryan_Conrad_Romanced",
+      "kind": "option",
+      "referentClass": "player-addresses-dragon",
+      "pairedSource": {
+        "macos": "I'm excited for you. I'll get the gate!",
+        "windows": "I'm excited for you. I'll get the gate!"
+      },
+      "before": {
+        "macos": "Estou animado por você. Vou abrir o portão!",
+        "windows": "Estou animado por você. Vou abrir o portão!"
+      },
+      "after": {
+        "macos": "Fico muito feliz por você. Vou abrir o portão!",
+        "windows": "Fico muito feliz por você. Vou abrir o portão!"
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 62,
+            "id": "yarn:line:94fbdbf0",
+            "index": 61,
+            "destination": 71,
+            "destinationInstruction": {
+              "index": 71,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm excited for you. I'll get the gate!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3934666264626630",
+                "utf8": "line:94fbdbf0"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 71
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 62,
+            "id": "yarn:line:94fbdbf0",
+            "index": 61,
+            "destination": 71,
+            "destinationInstruction": {
+              "index": 71,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm excited for you. I'll get the gate!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3934666264626630",
+                "utf8": "line:94fbdbf0"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 71
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:4789095b",
+      "node": "Conrad_Outro_4_Ryan_Romanced",
+      "kind": "line",
+      "referentClass": "player-and-ryan",
+      "pairedSource": {
+        "macos": "Fair enough. You two do seem cute together.",
+        "windows": "Fair enough. You two do seem cute together."
+      },
+      "before": {
+        "macos": "Justo. Vocês dois parecem fofos juntos.",
+        "windows": "Justo. Vocês dois parecem fofos juntos."
+      },
+      "after": {
+        "macos": "Justo. Vocês ficam uma gracinha lado a lado.",
+        "windows": "Justo. Vocês ficam uma gracinha lado a lado."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:5e4d645c",
+      "node": "Conrad_Outro_4_Ryan_Romanced",
+      "kind": "line",
+      "referentClass": "player-and-ryan",
+      "pairedSource": {
+        "macos": "You two are really cute together...",
+        "windows": "You two are really cute together..."
+      },
+      "before": {
+        "macos": "Vocês dois são muito fofos juntos...",
+        "windows": "Vocês dois são muito fofos juntos..."
+      },
+      "after": {
+        "macos": "Vocês formam um casal muito fofo...",
+        "windows": "Vocês formam um casal muito fofo..."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:0bc044da",
+      "node": "Conrad_SexScene_Cum",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "You ready for this?",
+        "windows": "You ready for this?"
+      },
+      "before": {
+        "macos": "Está pronto para isso?",
+        "windows": "Está pronto para isso?"
+      },
+      "after": {
+        "macos": "Tudo pronto para isso?",
+        "windows": "Tudo pronto para isso?"
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:9addfb4a",
+      "node": "Conrad_SexScene_Cum",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Ready!",
+        "windows": "Ready!"
+      },
+      "before": {
+        "macos": "Pronto!",
+        "windows": "Pronto!"
+      },
+      "after": {
+        "macos": "Tudo pronto!",
+        "windows": "Tudo pronto!"
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 10,
+            "id": "yarn:line:9addfb4a",
+            "index": 9,
+            "destination": 25,
+            "destinationInstruction": {
+              "index": 25,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Ready!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3961646466623461",
+                "utf8": "line:9addfb4a"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 25
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 10,
+            "id": "yarn:line:9addfb4a",
+            "index": 9,
+            "destination": 25,
+            "destinationInstruction": {
+              "index": 25,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Ready!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3961646466623461",
+                "utf8": "line:9addfb4a"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 25
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:7f543c2a",
+      "node": "Conrad_SexScene_Cum",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "I can let loose whenever you are ready",
+        "windows": "I can let loose whenever you are ready"
+      },
+      "before": {
+        "macos": "Posso me soltar quando você estiver pronto",
+        "windows": "Posso me soltar quando você estiver pronto"
+      },
+      "after": {
+        "macos": "Posso me soltar quando você sentir que é hora",
+        "windows": "Posso me soltar quando você sentir que é hora"
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:f0a0565a",
+      "node": "Conrad_SexScene_Cum",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "You ready to go back in to the club?",
+        "windows": "You ready to go back in to the club?"
+      },
+      "before": {
+        "macos": "Pronto para voltar ao clube?",
+        "windows": "Pronto para voltar ao clube?"
+      },
+      "after": {
+        "macos": "Vamos voltar ao clube?",
+        "windows": "Vamos voltar ao clube?"
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:73ea230a",
+      "node": "Conrad_finished_mount_3",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "No no, you're a certified cleaner yeah?",
+        "windows": "No no, you're a certified cleaner yeah?"
+      },
+      "before": {
+        "macos": "Não, não. Você é um limpador certificado, né?",
+        "windows": "Não, não. Você é um limpador certificado, né?"
+      },
+      "after": {
+        "macos": "Não, não. Você tem certificado de limpeza, né?",
+        "windows": "Não, não. Você tem certificado de limpeza, né?"
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:0de4fe62",
+      "node": "Conrad_required_2",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "And I'm glad you have a medkit... You're very prepared.",
+        "windows": "And I'm glad you have a medkit... You're very prepared."
+      },
+      "before": {
+        "macos": "E que bom que você tem um kit de primeiros socorros... Você é bem preparado.",
+        "windows": "E que bom que você tem um kit de primeiros socorros... Você é bem preparado."
+      },
+      "after": {
+        "macos": "E que bom que você tem um kit de primeiros socorros... Você se preparou bem.",
+        "windows": "E que bom que você tem um kit de primeiros socorros... Você se preparou bem."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:a00f681d",
+      "node": "Ryan_5_Outro_ryan_romanced",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "I'm excited.",
+        "windows": "I'm excited."
+      },
+      "before": {
+        "macos": "Estou animado.",
+        "windows": "Estou animado."
+      },
+      "after": {
+        "macos": "Mal posso esperar.",
+        "windows": "Mal posso esperar."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 31,
+            "id": "yarn:line:a00f681d",
+            "index": 30,
+            "destination": 38,
+            "destinationInstruction": {
+              "index": 38,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm excited.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6130306636383164",
+                "utf8": "line:a00f681d"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 38
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 31,
+            "id": "yarn:line:a00f681d",
+            "index": 30,
+            "destination": 38,
+            "destinationInstruction": {
+              "index": 38,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm excited.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6130306636383164",
+                "utf8": "line:a00f681d"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 38
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:c6202cf2",
+      "node": "Ryan_5_Required_ryan_conrad_romanced",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Aw... Thanks.",
+        "windows": "Aw... Thanks."
+      },
+      "before": {
+        "macos": "Ah... Obrigado.",
+        "windows": "Ah... Obrigado."
+      },
+      "after": {
+        "macos": "Ah... Valeu.",
+        "windows": "Ah... Valeu."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 34,
+            "id": "yarn:line:c6202cf2",
+            "index": 32,
+            "destination": 38,
+            "destinationInstruction": {
+              "index": 38,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Aw... Thanks.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6336323032636632",
+                "utf8": "line:c6202cf2"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 38
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 34,
+            "id": "yarn:line:c6202cf2",
+            "index": 32,
+            "destination": 38,
+            "destinationInstruction": {
+              "index": 38,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Aw... Thanks.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6336323032636632",
+                "utf8": "line:c6202cf2"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 38
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:7f2e2736",
+      "node": "Ryan_5_intro",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Hey... little guy!",
+        "windows": "Hey... little guy!"
+      },
+      "before": {
+        "macos": "E aí... pequenino!",
+        "windows": "E aí... pequenino!"
+      },
+      "after": {
+        "macos": "E aí... pessoinha!",
+        "windows": "E aí... pessoinha!"
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:e91e2041",
+      "node": "Ryan_5_intro",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "I'm not <i>that</i> little-",
+        "windows": "I'm not <i>that</i> little-"
+      },
+      "before": {
+        "macos": "Eu não sou <i>tão</i> pequeno assim-",
+        "windows": "Eu não sou <i>tão</i> pequeno assim-"
+      },
+      "after": {
+        "macos": "Minha altura nem é <i>tão</i> baixa assim-",
+        "windows": "Minha altura nem é <i>tão</i> baixa assim-"
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 84,
+            "id": "yarn:line:e91e2041",
+            "index": 82,
+            "destination": 88,
+            "destinationInstruction": {
+              "index": 88,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm not <i>that</i> little-",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6539316532303431",
+                "utf8": "line:e91e2041"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 88
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 84,
+            "id": "yarn:line:e91e2041",
+            "index": 82,
+            "destination": 88,
+            "destinationInstruction": {
+              "index": 88,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm not <i>that</i> little-",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6539316532303431",
+                "utf8": "line:e91e2041"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 88
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:601e1b38",
+      "node": "Ryan_5_intro",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Sure! I'm excited to tell you about Conrad.",
+        "windows": "Sure! I'm excited to tell you about Conrad."
+      },
+      "before": {
+        "macos": "Claro! Estou animado para te contar sobre o Conrad.",
+        "windows": "Claro! Estou animado para te contar sobre o Conrad."
+      },
+      "after": {
+        "macos": "Claro! Mal posso esperar para te contar sobre o Conrad.",
+        "windows": "Claro! Mal posso esperar para te contar sobre o Conrad."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 137,
+            "id": "yarn:line:601e1b38",
+            "index": 136,
+            "destination": 146,
+            "destinationInstruction": {
+              "index": 146,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Sure! I'm excited to tell you about Conrad.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3630316531623338",
+                "utf8": "line:601e1b38"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 146
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 137,
+            "id": "yarn:line:601e1b38",
+            "index": 136,
+            "destination": 146,
+            "destinationInstruction": {
+              "index": 146,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Sure! I'm excited to tell you about Conrad.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3630316531623338",
+                "utf8": "line:601e1b38"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 146
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:822c0718",
+      "node": "Ryan_5_intro_ryan_romanced",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "I'm very excited.",
+        "windows": "I'm very excited."
+      },
+      "before": {
+        "macos": "Estou muito animado.",
+        "windows": "Estou muito animado."
+      },
+      "after": {
+        "macos": "Mal posso mesmo esperar.",
+        "windows": "Mal posso mesmo esperar."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 3,
+            "id": "yarn:line:822c0718",
+            "index": 2,
+            "destination": 12,
+            "destinationInstruction": {
+              "index": 12,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm very excited.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3832326330373138",
+                "utf8": "line:822c0718"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 12
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 3,
+            "id": "yarn:line:822c0718",
+            "index": 2,
+            "destination": 12,
+            "destinationInstruction": {
+              "index": 12,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm very excited.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3832326330373138",
+                "utf8": "line:822c0718"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 12
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:7f5113d5",
+      "node": "Ryan_egg_dialog",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "OH. You're not used to eating them whole.",
+        "windows": "OH. You're not used to eating them whole."
+      },
+      "before": {
+        "macos": "AH. Você não está acostumado a comer ovos inteiros.",
+        "windows": "AH. Você não está acostumado a comer ovos inteiros."
+      },
+      "after": {
+        "macos": "AH. Você não tem costume de comer ovos inteiros.",
+        "windows": "AH. Você não tem costume de comer ovos inteiros."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:07e5fc05",
+      "node": "Start",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "I'm amazed!",
+        "windows": "I'm amazed!"
+      },
+      "before": {
+        "macos": "Estou impressionado!",
+        "windows": "Estou impressionado!"
+      },
+      "after": {
+        "macos": "Isso me impressiona!",
+        "windows": "Isso me impressiona!"
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 7,
+            "id": "yarn:line:07e5fc05",
+            "index": 6,
+            "destination": 15,
+            "destinationInstruction": {
+              "index": 15,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm amazed!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3037653566633035",
+                "utf8": "line:07e5fc05"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 15
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 7,
+            "id": "yarn:line:07e5fc05",
+            "index": 6,
+            "destination": 15,
+            "destinationInstruction": {
+              "index": 15,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm amazed!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3037653566633035",
+                "utf8": "line:07e5fc05"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:a6c1f2f4",
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "I'm excited for you!",
+        "windows": "I'm excited for you!"
+      },
+      "before": {
+        "macos": "Fico animado por você!",
+        "windows": "Fico animado por você!"
+      },
+      "after": {
+        "macos": "Fico muito feliz por você!",
+        "windows": "Fico muito feliz por você!"
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 29,
+            "id": "yarn:line:a6c1f2f4",
+            "index": 28,
+            "destination": 38,
+            "destinationInstruction": {
+              "index": 38,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm excited for you!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6136633166326634",
+                "utf8": "line:a6c1f2f4"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 38
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 29,
+            "id": "yarn:line:a6c1f2f4",
+            "index": 28,
+            "destination": 38,
+            "destinationInstruction": {
+              "index": 38,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm excited for you!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6136633166326634",
+                "utf8": "line:a6c1f2f4"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 38
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:e6290003",
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "I'm so excited. I'll get you two in contact!",
+        "windows": "I'm so excited. I'll get you two in contact!"
+      },
+      "before": {
+        "macos": "Estou tão animado. Vou colocar vocês em contato!",
+        "windows": "Estou tão animado. Vou colocar vocês em contato!"
+      },
+      "after": {
+        "macos": "Que empolgação! Vou colocar vocês em contato!",
+        "windows": "Que empolgação! Vou colocar vocês em contato!"
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 164,
+            "id": "yarn:line:e6290003",
+            "index": 163,
+            "destination": 175,
+            "destinationInstruction": {
+              "index": 175,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm so excited. I'll get you two in contact!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6536323930303033",
+                "utf8": "line:e6290003"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 175
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 164,
+            "id": "yarn:line:e6290003",
+            "index": 163,
+            "destination": 175,
+            "destinationInstruction": {
+              "index": 175,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm so excited. I'll get you two in contact!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6536323930303033",
+                "utf8": "line:e6290003"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 175
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:b4990e3d",
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "If I'm honest. I've had a crush on you for a bit.",
+        "windows": "If I'm honest. I've had a crush on you for a bit."
+      },
+      "before": {
+        "macos": "Para ser sincero, tenho uma quedinha por você há algum tempo.",
+        "windows": "Para ser sincero, tenho uma quedinha por você há algum tempo."
+      },
+      "after": {
+        "macos": "A verdade é que tenho uma quedinha por você há algum tempo.",
+        "windows": "A verdade é que tenho uma quedinha por você há algum tempo."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 196,
+            "id": "yarn:line:b4990e3d",
+            "index": 195,
+            "destination": 203,
+            "destinationInstruction": {
+              "index": 203,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "If I'm honest. I've had a crush on you for a bit.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6234393930653364",
+                "utf8": "line:b4990e3d"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 203
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 196,
+            "id": "yarn:line:b4990e3d",
+            "index": 195,
+            "destination": 203,
+            "destinationInstruction": {
+              "index": 203,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "If I'm honest. I've had a crush on you for a bit.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6234393930653364",
+                "utf8": "line:b4990e3d"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 203
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:09e5bf43",
+      "node": "ryan_food_dialogue",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "You're cute by the way.",
+        "windows": "You're cute by the way."
+      },
+      "before": {
+        "macos": "Você é fofo, aliás.",
+        "windows": "Você é fofo, aliás."
+      },
+      "after": {
+        "macos": "Você é uma graça, aliás.",
+        "windows": "Você é uma graça, aliás."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:cd9b2a8f",
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "No, thank you. I'm... Really excited.",
+        "windows": "No, thank you. I'm... Really excited."
+      },
+      "before": {
+        "macos": "Não, eu que agradeço. Estou... Muito animado.",
+        "windows": "Não, eu que agradeço. Estou... Muito animado."
+      },
+      "after": {
+        "macos": "Não, eu que agradeço. Estou... Na maior expectativa.",
+        "windows": "Não, eu que agradeço. Estou... Na maior expectativa."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 313,
+            "id": "yarn:line:cd9b2a8f",
+            "index": 301,
+            "destination": 347,
+            "destinationInstruction": {
+              "index": 347,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "No, thank you. I'm... Really excited.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6364396232613866",
+                "utf8": "line:cd9b2a8f"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 347
+              },
+              {
+                "field": 4,
+                "wire": 0,
+                "unsigned": 1
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 313,
+            "id": "yarn:line:cd9b2a8f",
+            "index": 301,
+            "destination": 347,
+            "destinationInstruction": {
+              "index": 347,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "No, thank you. I'm... Really excited.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6364396232613866",
+                "utf8": "line:cd9b2a8f"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 347
+              },
+              {
+                "field": 4,
+                "wire": 0,
+                "unsigned": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:0d20d327",
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Of course! Thank you for the food.",
+        "windows": "Of course! Thank you for the food."
+      },
+      "before": {
+        "macos": "Claro! Obrigado pela comida.",
+        "windows": "Claro! Obrigado pela comida."
+      },
+      "after": {
+        "macos": "Claro! Valeu pela comida.",
+        "windows": "Claro! Valeu pela comida."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 313,
+            "id": "yarn:line:0d20d327",
+            "index": 312,
+            "destination": 388,
+            "destinationInstruction": {
+              "index": 388,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Of course! Thank you for the food.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3064323064333237",
+                "utf8": "line:0d20d327"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 388
+              },
+              {
+                "field": 4,
+                "wire": 0,
+                "unsigned": 1
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 313,
+            "id": "yarn:line:0d20d327",
+            "index": 312,
+            "destination": 388,
+            "destinationInstruction": {
+              "index": 388,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Of course! Thank you for the food.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3064323064333237",
+                "utf8": "line:0d20d327"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 388
+              },
+              {
+                "field": 4,
+                "wire": 0,
+                "unsigned": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:f83e4966",
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "I'm excited to hear about it!",
+        "windows": "I'm excited to hear about it!"
+      },
+      "before": {
+        "macos": "Estou ansioso para saber!",
+        "windows": "Estou ansioso para saber!"
+      },
+      "after": {
+        "macos": "Mal posso esperar para saber!",
+        "windows": "Mal posso esperar para saber!"
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 326,
+            "id": "yarn:line:f83e4966",
+            "index": 324,
+            "destination": 330,
+            "destinationInstruction": {
+              "index": 330,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm excited to hear about it!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6638336534393636",
+                "utf8": "line:f83e4966"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 330
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 326,
+            "id": "yarn:line:f83e4966",
+            "index": 324,
+            "destination": 330,
+            "destinationInstruction": {
+              "index": 330,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I'm excited to hear about it!",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6638336534393636",
+                "utf8": "line:f83e4966"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 330
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:77ca2316",
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Yeah! Thanks for the food. I'll go get the gate.",
+        "windows": "Yeah! Thanks for the food. I'll go get the gate."
+      },
+      "before": {
+        "macos": "Sim! Obrigado pela comida. Vou abrir o portão.",
+        "windows": "Sim! Obrigado pela comida. Vou abrir o portão."
+      },
+      "after": {
+        "macos": "Sim! Valeu pela comida. Vou abrir o portão.",
+        "windows": "Sim! Valeu pela comida. Vou abrir o portão."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 338,
+            "id": "yarn:line:77ca2316",
+            "index": 337,
+            "destination": 344,
+            "destinationInstruction": {
+              "index": 344,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Yeah! Thanks for the food. I'll go get the gate.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3737636132333136",
+                "utf8": "line:77ca2316"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 344
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 338,
+            "id": "yarn:line:77ca2316",
+            "index": 337,
+            "destination": 344,
+            "destinationInstruction": {
+              "index": 344,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Yeah! Thanks for the food. I'll go get the gate.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a3737636132333136",
+                "utf8": "line:77ca2316"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 344
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:13c906c7",
+      "node": "ryan_food_dialogue",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "It really has been. You're wonderful.",
+        "windows": "It really has been. You're wonderful."
+      },
+      "before": {
+        "macos": "Tem sido mesmo. Você é maravilhoso.",
+        "windows": "Tem sido mesmo. Você é maravilhoso."
+      },
+      "after": {
+        "macos": "Tem sido mesmo. Você é uma pessoa maravilhosa.",
+        "windows": "Tem sido mesmo. Você é uma pessoa maravilhosa."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:b05c6259",
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "I always look forward to seeing you. I'll go get the gate.",
+        "windows": "I always look forward to seeing you. I'll go get the gate."
+      },
+      "before": {
+        "macos": "Sempre fico ansioso para te ver. Vou abrir o portão.",
+        "windows": "Sempre fico ansioso para te ver. Vou abrir o portão."
+      },
+      "after": {
+        "macos": "Sempre espero com alegria pela sua visita. Vou abrir o portão.",
+        "windows": "Sempre espero com alegria pela sua visita. Vou abrir o portão."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 378,
+            "id": "yarn:line:b05c6259",
+            "index": 376,
+            "destination": 382,
+            "destinationInstruction": {
+              "index": 382,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I always look forward to seeing you. I'll go get the gate.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6230356336323539",
+                "utf8": "line:b05c6259"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 382
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 378,
+            "id": "yarn:line:b05c6259",
+            "index": 376,
+            "destination": 382,
+            "destinationInstruction": {
+              "index": 382,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "I always look forward to seeing you. I'll go get the gate.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6230356336323539",
+                "utf8": "line:b05c6259"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 382
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yarn:line:079b3782",
+      "node": "ryan_food_dialogue",
+      "kind": "line",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Thanks for sharing food with me, You're a great friend.",
+        "windows": "Thanks for sharing food with me, You're a great friend."
+      },
+      "before": {
+        "macos": "Obrigado por dividir a comida comigo. Você é um grande amigo.",
+        "windows": "Obrigado por dividir a comida comigo. Você é um grande amigo."
+      },
+      "after": {
+        "macos": "Obrigado por dividir a comida comigo. Sua amizade é muito especial.",
+        "windows": "Obrigado por dividir a comida comigo. Sua amizade é muito especial."
+      },
+      "options": {
+        "macos": [],
+        "windows": []
+      }
+    },
+    {
+      "id": "yarn:line:a40e531c",
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "referentClass": "player-address-or-self-reference",
+      "pairedSource": {
+        "macos": "Thanks for the food! I'll go get the gate.",
+        "windows": "Thanks for the food! I'll go get the gate."
+      },
+      "before": {
+        "macos": "Obrigado pela comida! Vou abrir o portão.",
+        "windows": "Obrigado pela comida! Vou abrir o portão."
+      },
+      "after": {
+        "macos": "Valeu pela comida! Vou abrir o portão.",
+        "windows": "Valeu pela comida! Vou abrir o portão."
+      },
+      "options": {
+        "macos": [
+          {
+            "showOptionsIndex": 430,
+            "id": "yarn:line:a40e531c",
+            "index": 428,
+            "destination": 434,
+            "destinationInstruction": {
+              "index": 434,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Thanks for the food! I'll go get the gate.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6134306535333163",
+                "utf8": "line:a40e531c"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 434
+              }
+            ]
+          }
+        ],
+        "windows": [
+          {
+            "showOptionsIndex": 430,
+            "id": "yarn:line:a40e531c",
+            "index": 428,
+            "destination": 434,
+            "destinationInstruction": {
+              "index": 434,
+              "opcodeField": 11,
+              "encodedHex": "5a00",
+              "operands": []
+            },
+            "source": "Thanks for the food! I'll go get the gate.",
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "6c696e653a6134306535333163",
+                "utf8": "line:a40e531c"
+              },
+              {
+                "field": 2,
+                "wire": 0,
+                "unsigned": 434
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "exactSourceRepetitions": [
+    {
+      "id": "yarn:line:8512365e",
+      "node": "Alexander_1_required",
+      "kind": "option",
+      "pairedSource": {
+        "macos": "Thank you!",
+        "windows": "Thank you!"
+      },
+      "target": {
+        "macos": "Valeu!",
+        "windows": "Valeu!"
+      }
+    },
+    {
+      "id": "yarn:line:e449156d",
+      "node": "Alexander_4_intro",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "Thank you!",
+        "windows": "Thank you!"
+      },
+      "target": {
+        "macos": "Obrigado!",
+        "windows": "Obrigado!"
+      }
+    },
+    {
+      "id": "yarn:line:b5d7d26f",
+      "node": "Alexander_5_Outro",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "I'm excited.",
+        "windows": "I'm excited."
+      },
+      "target": {
+        "macos": "Mal posso esperar.",
+        "windows": "Mal posso esperar."
+      }
+    },
+    {
+      "id": "yarn:line:69f406a6",
+      "node": "Conrad_4_Conrad_Romanced",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "I'm excited.",
+        "windows": "I'm excited."
+      },
+      "target": {
+        "macos": "Estou animado.",
+        "windows": "Estou animado."
+      }
+    },
+    {
+      "id": "yarn:line:f57fc630",
+      "node": "Conrad_5_outro_ryan_romanced",
+      "kind": "option",
+      "pairedSource": {
+        "macos": "All done!",
+        "windows": "All done!"
+      },
+      "target": {
+        "macos": "Pronto!",
+        "windows": "Pronto!"
+      }
+    },
+    {
+      "id": "yarn:line:3484ab9d",
+      "node": "Conrad_Intro_4",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "Thanks!",
+        "windows": "Thanks!"
+      },
+      "target": {
+        "macos": "Obrigado!",
+        "windows": "Obrigado!"
+      }
+    },
+    {
+      "id": "yarn:line:bc5d790a",
+      "node": "Conrad_Intro_4",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "Thanks!",
+        "windows": "Thanks!"
+      },
+      "target": {
+        "macos": "Obrigado!",
+        "windows": "Obrigado!"
+      }
+    },
+    {
+      "id": "yarn:line:4d868f2f",
+      "node": "Conrad_Intro_4",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "Thanks!",
+        "windows": "Thanks!"
+      },
+      "target": {
+        "macos": "Obrigado!",
+        "windows": "Obrigado!"
+      }
+    },
+    {
+      "id": "yarn:line:24832f01",
+      "node": "Conrad_Outro_4_Conrad_Romanced",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "I'm excited.",
+        "windows": "I'm excited."
+      },
+      "target": {
+        "macos": "Estou animado.",
+        "windows": "Estou animado."
+      }
+    },
+    {
+      "id": "yarn:line:8b8f57c4",
+      "node": "DragonAlmostClean",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "Thanks!",
+        "windows": "Thanks!"
+      },
+      "target": {
+        "macos": "Valeu!",
+        "windows": "Valeu!"
+      }
+    },
+    {
+      "id": "yarn:line:bbca8a46",
+      "node": "RyanDate_Outro",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "Thank you!",
+        "windows": "Thank you!"
+      },
+      "target": {
+        "macos": "Obrigado!",
+        "windows": "Obrigado!"
+      }
+    },
+    {
+      "id": "yarn:line:ab5b2574",
+      "node": "RyanExploded_Intro",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "Thanks!",
+        "windows": "Thanks!"
+      },
+      "target": {
+        "macos": "Obrigado!",
+        "windows": "Obrigado!"
+      }
+    },
+    {
+      "id": "yarn:line:c07a9171",
+      "node": "RyanExploded_Outro",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "Thanks!",
+        "windows": "Thanks!"
+      },
+      "target": {
+        "macos": "Obrigado!",
+        "windows": "Obrigado!"
+      }
+    },
+    {
+      "id": "yarn:line:b588bf4c",
+      "node": "Ryan_1_Outro",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "Thanks!",
+        "windows": "Thanks!"
+      },
+      "target": {
+        "macos": "Obrigado!",
+        "windows": "Obrigado!"
+      }
+    },
+    {
+      "id": "yarn:line:30f1f583",
+      "node": "ryan_food_dialogue",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "Thanks!",
+        "windows": "Thanks!"
+      },
+      "target": {
+        "macos": "Obrigado!",
+        "windows": "Obrigado!"
+      }
+    },
+    {
+      "id": "yarn:line:70190774",
+      "node": "ryan_food_dialogue",
+      "kind": "line",
+      "pairedSource": {
+        "macos": "Thanks!",
+        "windows": "Thanks!"
+      },
+      "target": {
+        "macos": "Obrigado!",
+        "windows": "Obrigado!"
+      }
+    }
+  ],
+  "specialSceneIntersections": {
+    "Conrad_5_intro_ryan_romanced": {
+      "localization/pt-BR/special-scenes/typographic-cases.md": [
+        "yarn:line:f474ffa9"
+      ]
+    },
+    "Conrad_Intro_4": {
+      "localization/pt-BR/special-scenes/typographic-cases.md": [
+        "yarn:line:6c193ba9"
+      ]
+    },
+    "Conrad_Outro_3": {
+      "localization/pt-BR/special-scenes/romance-route-choices.md": [
+        "yarn:line:36ff6bd9",
+        "yarn:line:7e9d40e6"
+      ],
+      "localization/pt-BR/special-scenes/yip-and-films.md": [
+        "yarn:line:266836f8",
+        "yarn:line:c3e1f198"
+      ]
+    },
+    "ryan_food_dialogue": {
+      "localization/pt-BR/special-scenes/conrad-height-euphemism.md": [
+        "yarn:line:035e5be6",
+        "yarn:line:2f3f5508",
+        "yarn:line:31281c6d",
+        "yarn:line:3605a48a",
+        "yarn:line:36fb380f",
+        "yarn:line:45bc649d",
+        "yarn:line:48d4a45a",
+        "yarn:line:69dd6a73",
+        "yarn:line:8b7915f4",
+        "yarn:line:956e5c91",
+        "yarn:line:a035a3fd",
+        "yarn:line:a0cb3f78",
+        "yarn:line:a7181b1a",
+        "yarn:line:b90f527f",
+        "yarn:line:d38c63ea",
+        "yarn:line:d9c91bca",
+        "yarn:line:dee4a32d",
+        "yarn:line:ffed6d04"
+      ],
+      "localization/pt-BR/special-scenes/romance-route-choices.md": [
+        "yarn:line:bedc761d",
+        "yarn:line:e104b8e4",
+        "yarn:line:f5a81524"
+      ],
+      "localization/pt-BR/special-scenes/typographic-cases.md": [
+        "yarn:line:9fd5b834"
+      ]
+    }
+  },
+  "boundaries": [
+    "Scene classification identifies editorial referents, not proof of live execution.",
+    "Exact source repetition is not a request to impose identical agreement across distinct speakers.",
+    "The referenced trace stops at a first line or control boundary; follow conditional and transfer evidence in handoff.",
+    "Protected contexts are in the bound delta; original Windows missing-destination repair is a separate technical boundary."
+  ]
+}
