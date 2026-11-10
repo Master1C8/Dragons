@@ -959,3 +959,34 @@ Three further language-dependent Conrad cases are registered: the physical/sexua
 Ryan's source review now registers four further cases: full-mouth speech, salmon/guy self-correction, movie-title choices, and a height euphemism in two romance paths. An `$isEditor`-conditioned route prompt that sets `$suggested_ryan_to_conrad` is separately recorded, without excluding it from source scope. Five groups are source-bound in both builds; three selected strings differ in apostrophe spelling, and six context IDs overlap between groups. Actual Russian decisions, independent review, other source families and runtime checks remain open. See `localization/evidence/ryan-language-analysis-20261107.md`.
 
 Speaker source analysis now binds all 24 implicit-colon candidates, ten serialized line/option presenter objects per build and direct `LocalizedLine.get_CharacterName` references across 170/172 pinned managed assemblies. The current locale adapter deliberately preserves the 18 English character prefixes and cannot yet provide complete Russian speaker display. A nonstandard sentence ending in a colon and five title-like values require separate treatment. These are static findings; a safe display mapping, fallbacks and runtime validation remain open. See `localization/evidence/speaker-source-analysis-20261107.md`.
+
+## Local language installers
+
+The macOS and Windows installers in `installer/dist/` contain the five
+verified Dragons locales as binary deltas. Select a language once to
+replace the known game assets and launch the game. The selected asset
+set and receipt remain installed for later normal launches. Steam
+installs launch through App ID `4739660`. Manually selected standalone
+installs launch the chosen application or executable directly.
+
+The implementation adapts the Sonic installer at
+`d9213cfbc4b650f73be80e46c54a340f26fd941a`. See
+[`installer/README.md`](installer/README.md) for build and safety details.
+The macOS app is universal and ad-hoc signed. The Windows GUI is x86-64.
+The generated ZIP SHA-256 values are:
+
+- `Dragons-macOS.zip` `b1df526342b57f9bcb1fbe3198e4ef64edca4b2cf5ea41701a256d029f16c229`
+- `Dragons-Windows.zip` `ddbe79675d96210d0300f02c7e60f0b48e9d027d59d3431e34aa26ee1adc184e`
+
+The macOS install core applied all five locales to a disposable
+copy of the pinned game, including a same-language replay and
+language switches. The resulting app signature and the unpacked
+installer signature passed strict checks. On Windows 11 through
+Parallels the final packaged script applied the same sequence to
+a fresh test directory containing the pinned original assets and a
+dummy executable. It verified the launch target path and preserved
+an unrelated file and a deliberately conflicting patched DLL.
+Both tests compared each installed payload hash and the persistent
+locale receipt. The final Windows log is
+`localization/work/installer.NUdeks/windows-test-final.log`.
+The installer-triggered launch of a real game was not exercised.

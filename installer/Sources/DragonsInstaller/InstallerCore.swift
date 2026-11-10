@@ -1,0 +1,730 @@
+import Darwin
+import CryptoKit
+import Foundation
+
+struct GameInstallation: Equatable, Sendable {
+    let root: URL
+    let appBundle: URL
+    let dataDirectory: URL
+    let steamAppID: String
+    let steamBuildID: String
+    let steamManifest: URL?
+}
+
+struct SteamManifest: Equatable, Sendable {
+    let appID: String
+    let installDirectory: String
+    let buildID: String
+    let url: URL
+}
+
+struct ReceiptFile: Codable, Equatable, Sendable {
+    let path: String
+    let originalExisted: Bool
+    let originalSHA256: String?
+    let installedSHA256: String
+}
+
+struct InstallationReceipt: Codable, Equatable, Sendable {
+    let schemaVersion: Int
+    let packageID: String
+    let steamBuildID: String
+    let installedAt: Date
+    let activeLanguage: ActiveLanguageSelection?
+    let files: [ReceiptFile]
+}
+
+struct TransactionState: Codable, Equatable, Sendable {
+    let schemaVersion: Int
+    let packageID: String
+    var committed: Bool
+    let previousReceiptExisted: Bool?
+    let files: [ReceiptFile]
+}
+
+enum InstallerError: LocalizedError {
+    case gameRunning
+    case bundlePreparationFailed(String)
+    case invalidGameFolder
+    case steamManifestMissing
+    case wrongSteamApp(String)
+    case incompatibleSteamUpdate(build: String, path: String)
+    case payloadNotReady
+    case invalidLanguageSelection(String)
+    case missingPayloadFile(String)
+    case payloadChecksumMismatch(String)
+    case unsupportedGameFile(String)
+    case missingOriginalFile(String)
+    case foreignModification(String)
+    case damagedBackup(String)
+    case unsafePath(String)
+    case malformedReceipt
+    case deltaToolMissing
+    case deltaApplicationFailed(String)
+
+    var errorDescription: String? {
+        switch self {
+        case .gameRunning: "Close Drag’N Wash before installing a language."
+        case .bundlePreparationFailed(let tool): "Could not prepare the game bundle (\(tool))."
+
+        case .invalidGameFolder:
+            "The Steam version of Drag’N Wash was not found in the selected folder."
+        case .steamManifestMissing:
+            "The Steam game manifest appmanifest_4739660.acf was not found."
+        case .wrongSteamApp(let value):
+            "The selected folder belongs to a different Steam game (App ID \(value))."
+        case .incompatibleSteamUpdate(let build, let path):
+            "Steam build \(build) changed a required game file that this localization package cannot safely patch yet: \(path). No game files were changed."
+        case .payloadNotReady:
+            "The complete five-language package is not included in this installer build."
+        case .invalidLanguageSelection(let value):
+            "The selected language is not included in the completed localization package: \(value)."
+        case .missingPayloadFile(let path):
+            "A localization payload file is missing from the application: \(path)."
+        case .payloadChecksumMismatch(let path):
+            "The localization payload checksum does not match: \(path)."
+        case .unsupportedGameFile(let path):
+            "The game file version is not compatible with this localization package: \(path)."
+        case .missingOriginalFile(let path):
+            "A required file is missing from the installed game: \(path)."
+        case .foreignModification(let path):
+            "The file \(path) was modified by another patch. The installer will not overwrite it."
+        case .damagedBackup(let path):
+            "The original-file backup is damaged: \(path)."
+        case .unsafePath(let path):
+            "Unsafe path in the package: \(path)."
+        case .malformedReceipt:
+            "The previous VN Revival installation data could not be verified."
+        case .deltaToolMissing:
+            "The localization delta tool is missing from the application."
+        case .deltaApplicationFailed(let path):
+            "The localized file could not be reconstructed from the verified delta: \(path)."
+        }
+    }
+}
+
+struct InstallerCore {
+    static let appNames = ["DragNWash.app", "Drag'N Wash.app", "Drag’n Wash.app"]
+    static let executableName = "DragNWash"
+    static let dataRelativePath = "Contents/Resources/Data"
+
+    let fileManager: FileManager
+
+    init(fileManager: FileManager = .default) {
+        self.fileManager = fileManager
+    }
+
+    func detectSteamInstallation(
+        appID: String,
+        steamRoot: URL? = nil
+    ) -> GameInstallation? {
+        let root = steamRoot ?? fileManager.homeDirectoryForCurrentUser.appendingPathComponent(
+            "Library/Application Support/Steam",
+            isDirectory: true
+        )
+        for library in steamLibraryRoots(steamRoot: root) {
+            let steamApps = library.appendingPathComponent("steamapps", isDirectory: true)
+            let manifestURL = steamApps.appendingPathComponent("appmanifest_\(appID).acf")
+            guard let manifest = loadSteamManifest(manifestURL), manifest.appID == appID else { continue }
+            let gameRoot = steamApps.appendingPathComponent("common", isDirectory: true)
+                .appendingPathComponent(manifest.installDirectory, isDirectory: true)
+            guard let bundle = resolveGameBundle(gameRoot) else { continue }
+            return GameInstallation(
+                root: bundle.root,
+                appBundle: bundle.appBundle,
+                dataDirectory: bundle.dataDirectory,
+                steamAppID: manifest.appID,
+                steamBuildID: manifest.buildID,
+                steamManifest: manifest.url
+            )
+        }
+        return nil
+    }
+
+    func resolveSteamInstallation(_ selectedURL: URL, appID: String) -> GameInstallation? {
+        guard let bundle = resolveGameBundle(selectedURL) else { return nil }
+        let common = bundle.root.deletingLastPathComponent()
+        guard common.lastPathComponent == "common" else { return nil }
+        let steamApps = common.deletingLastPathComponent()
+        let manifestURL = steamApps.appendingPathComponent("appmanifest_\(appID).acf")
+        guard let manifest = loadSteamManifest(manifestURL), manifest.appID == appID else { return nil }
+        let manifestRoot = steamApps.appendingPathComponent("common", isDirectory: true)
+            .appendingPathComponent(manifest.installDirectory, isDirectory: true)
+            .standardizedFileURL
+        guard manifestRoot == bundle.root.standardizedFileURL else { return nil }
+        return GameInstallation(
+            root: bundle.root,
+            appBundle: bundle.appBundle,
+            dataDirectory: bundle.dataDirectory,
+            steamAppID: manifest.appID,
+            steamBuildID: manifest.buildID,
+            steamManifest: manifest.url
+        )
+    }
+
+    func resolveInstallation(_ selectedURL: URL, appID: String) -> GameInstallation? {
+        if let steam = resolveSteamInstallation(selectedURL, appID: appID) { return steam }
+        guard let bundle = resolveGameBundle(selectedURL) else { return nil }
+        return GameInstallation(root: bundle.root, appBundle: bundle.appBundle,
+                                dataDirectory: bundle.dataDirectory, steamAppID: appID,
+                                steamBuildID: "content-pinned", steamManifest: nil)
+    }
+
+    private func resolveGameBundle(_ selectedURL: URL) -> (
+        root: URL,
+        appBundle: URL,
+        dataDirectory: URL
+    )? {
+        let standardized = selectedURL.standardizedFileURL
+        var appCandidates = [standardized]
+        appCandidates += Self.appNames.map { standardized.appendingPathComponent($0, isDirectory: true) }
+
+        if standardized.lastPathComponent == "Data" {
+            appCandidates.append(
+                standardized.deletingLastPathComponent()
+                    .deletingLastPathComponent()
+                    .deletingLastPathComponent()
+            )
+        }
+        if standardized.lastPathComponent == "Resources" {
+            appCandidates.append(
+                standardized.deletingLastPathComponent().deletingLastPathComponent()
+            )
+        }
+
+        for app in appCandidates {
+            let executable = app.appendingPathComponent("Contents/MacOS/\(Self.executableName)")
+            let data = app.appendingPathComponent(Self.dataRelativePath, isDirectory: true)
+            let appInfo = data.appendingPathComponent("app.info")
+            guard fileManager.fileExists(atPath: executable.path),
+                  fileManager.fileExists(atPath: appInfo.path) else { continue }
+            return (
+                root: app.deletingLastPathComponent(),
+                appBundle: app,
+                dataDirectory: data
+            )
+        }
+        return nil
+    }
+
+    private func steamLibraryRoots(steamRoot: URL) -> [URL] {
+        var result = [steamRoot.standardizedFileURL]
+        let libraries = steamRoot.appendingPathComponent("steamapps/libraryfolders.vdf")
+        if let text = try? String(contentsOf: libraries, encoding: .utf8),
+           let expression = try? NSRegularExpression(pattern: #"\"path\"\s+\"([^\"]+)\""#) {
+            let nsText = text as NSString
+            for match in expression.matches(in: text, range: NSRange(location: 0, length: nsText.length)) {
+                guard match.numberOfRanges == 2 else { continue }
+                let path = nsText.substring(with: match.range(at: 1))
+                    .replacingOccurrences(of: "\\\\", with: "\\")
+                result.append(URL(fileURLWithPath: path, isDirectory: true).standardizedFileURL)
+            }
+        }
+        var seen = Set<String>()
+        return result.filter { seen.insert($0.path).inserted }
+    }
+
+    private func loadSteamManifest(_ url: URL) -> SteamManifest? {
+        guard let text = try? String(contentsOf: url, encoding: .utf8),
+              let appID = vdfValue("appid", in: text),
+              let installDirectory = vdfValue("installdir", in: text),
+              let buildID = vdfValue("buildid", in: text),
+              !appID.isEmpty, !installDirectory.isEmpty, !buildID.isEmpty else { return nil }
+        return SteamManifest(
+            appID: appID,
+            installDirectory: installDirectory,
+            buildID: buildID,
+            url: url.standardizedFileURL
+        )
+    }
+
+    private func vdfValue(_ key: String, in text: String) -> String? {
+        let escaped = NSRegularExpression.escapedPattern(for: key)
+        guard let expression = try? NSRegularExpression(
+            pattern: #"\""# + escaped + #"\"\s+\"([^\"]*)\""#,
+            options: [.caseInsensitive]
+        ) else { return nil }
+        let nsText = text as NSString
+        guard let match = expression.firstMatch(
+            in: text,
+            range: NSRange(location: 0, length: nsText.length)
+        ), match.numberOfRanges == 2 else { return nil }
+        return nsText.substring(with: match.range(at: 1))
+    }
+
+    func install(
+        payload: URL,
+        config: PackageConfig,
+        selectedRuntimeCode: String,
+        into installation: GameInstallation
+    ) throws {
+        try config.validate()
+        guard config.payloadReady else { throw InstallerError.payloadNotReady }
+        guard let selectedLanguage = config.languages.first(where: {
+            $0.runtimeCode == selectedRuntimeCode && $0.ready
+        }) else {
+            throw InstallerError.invalidLanguageSelection(selectedRuntimeCode)
+        }
+        let selectedFiles = config.payloadFiles(for: selectedLanguage)
+        guard installation.steamAppID == config.steamAppID else {
+            throw InstallerError.wrongSteamApp(installation.steamAppID)
+        }
+        guard let currentInstallation = resolveInstallation(
+            installation.appBundle,
+            appID: config.steamAppID
+        ), currentInstallation.root == installation.root,
+           currentInstallation.dataDirectory == installation.dataDirectory,
+           currentInstallation.steamManifest == installation.steamManifest else {
+            throw InstallerError.invalidGameFolder
+        }
+        for (name, hash) in config.anchors {
+            let url = try safeURL(root: installation.dataDirectory, relativePath: name)
+            guard try Self.sha256(of: url) == hash else {
+                throw InstallerError.foreignModification(name)
+            }
+        }
+        let tool = try safeURL(root: payload, relativePath: "Tools/xdelta3")
+        guard try Self.sha256(of: tool) == config.deltaToolSHA256 else {
+            throw InstallerError.deltaToolMissing
+        }
+
+        let lockURL = installation.root.appendingPathComponent(".dragons-vnrevival.lock")
+        let fd = open(lockURL.path, O_WRONLY | O_CREAT | O_NOFOLLOW, 0o600)
+        guard fd >= 0 else { throw POSIXError(.EACCES) }
+        defer { close(fd) }
+        guard flock(fd, LOCK_EX | LOCK_NB) == 0 else { throw POSIXError(.EBUSY) }
+        try requireGameStopped(installation.appBundle)
+        let stagedApp = installation.root.appendingPathComponent(".dragons-\(UUID().uuidString).app")
+        defer { try? fileManager.removeItem(at: stagedApp) }
+        try run("/bin/cp", ["-cR", installation.appBundle.path, stagedApp.path])
+
+        let stagedData = try safeURL(root: stagedApp, relativePath: Self.dataRelativePath)
+        let stateRoot = try safeURL(root: stagedApp,
+                                    relativePath: "Contents/Resources/VNRevival/\(config.packageID)")
+        let staged = GameInstallation(root: stagedApp, appBundle: stagedApp, dataDirectory: stagedData,
+                                      steamAppID: installation.steamAppID, steamBuildID: currentInstallation.steamBuildID,
+                                      steamManifest: currentInstallation.steamManifest)
+        try installFiles(payload: payload, config: config, selectedLanguage: selectedLanguage,
+                         selectedFiles: selectedFiles, installation: staged, stateRoot: stateRoot)
+
+        let rootID = try safeURL(root: stagedApp, relativePath: "steam_appid.txt")
+        let nestedID = try safeURL(root: stagedApp, relativePath: "Contents/MacOS/steam_appid.txt")
+        if fileManager.fileExists(atPath: rootID.path) {
+            guard !fileManager.fileExists(atPath: nestedID.path),
+                  try String(contentsOf: rootID, encoding: .utf8)
+                    .trimmingCharacters(in: .whitespacesAndNewlines) == config.steamAppID else {
+                throw InstallerError.foreignModification("steam_appid.txt")
+            }
+            try fileManager.moveItem(at: rootID, to: nestedID)
+        }
+        try run("/usr/bin/codesign", ["--force", "--deep", "--sign", "-", stagedApp.path])
+        try run("/usr/bin/codesign", ["--verify", "--deep", "--strict", stagedApp.path])
+        try requireGameStopped(installation.appBundle)
+        guard renameatx_np(AT_FDCWD, stagedApp.path, AT_FDCWD, installation.appBundle.path, UInt32(RENAME_SWAP)) == 0 else {
+            throw POSIXError(POSIXErrorCode(rawValue: errno) ?? .EIO)
+        }
+    }
+
+    private func requireGameStopped(_ bundle: URL) throws {
+        let process = Process()
+        process.executableURL = URL(fileURLWithPath: "/bin/ps")
+        process.arguments = ["-axo", "command="]
+        let output = Pipe()
+        process.standardOutput = output
+        try process.run()
+        let rows = String(decoding: output.fileHandleForReading.readDataToEndOfFile(), as: UTF8.self)
+        process.waitUntilExit()
+        guard process.terminationStatus == 0 else { throw POSIXError(.EIO) }
+        let executable = bundle.appendingPathComponent("Contents/MacOS/\(Self.executableName)").path
+        guard !rows.split(separator: "\n").contains(where: { $0 == executable || $0.hasPrefix(executable + " ") }) else {
+            throw InstallerError.gameRunning
+        }
+    }
+
+    private func run(_ executable: String, _ arguments: [String]) throws {
+        let process = Process()
+        process.executableURL = URL(fileURLWithPath: executable)
+        process.arguments = arguments
+        try process.run()
+        process.waitUntilExit()
+        guard process.terminationStatus == 0 else {
+            throw InstallerError.bundlePreparationFailed(executable)
+        }
+    }
+
+    private func installFiles(payload: URL, config: PackageConfig, selectedLanguage: LanguagePackage,
+                              selectedFiles: [PayloadFile], installation: GameInstallation, stateRoot: URL) throws {
+        let actualBuildID = installation.steamBuildID
+        try fileManager.createDirectory(at: stateRoot, withIntermediateDirectories: true)
+        try recoverInterruptedInstall(stateRoot: stateRoot, dataRoot: installation.dataDirectory)
+
+        let receiptURL = stateRoot.appendingPathComponent("receipt.json")
+        let previousReceipt = try loadReceiptIfPresent(receiptURL, packageID: config.packageID)
+        try validatePayload(payload, files: selectedFiles)
+        let steamBuildChanged = previousReceipt.map {
+            $0.steamBuildID != actualBuildID
+        } ?? (actualBuildID != config.steamBuildID)
+
+        let backupRoot = stateRoot.appendingPathComponent("original-backup", isDirectory: true)
+        try fileManager.createDirectory(at: backupRoot, withIntermediateDirectories: true)
+        var receiptFiles: [ReceiptFile] = []
+
+        for item in selectedFiles {
+            let destination = try safeURL(root: installation.dataDirectory, relativePath: item.path)
+            let backup = try safeURL(root: backupRoot, relativePath: item.path)
+            let currentExists = fileManager.fileExists(atPath: destination.path)
+            let currentHash = currentExists ? try Self.sha256(of: destination) : nil
+            let prior = previousReceipt?.files.first { $0.path == item.path }
+
+            if let prior {
+                let restoredOriginal = item.originalSHA256.map { currentHash == $0 } == true
+                let missingOwnedAddition = !currentExists
+                    && !prior.originalExisted
+                    && item.originalSHA256 == nil
+                guard currentHash == prior.installedSHA256
+                        || currentHash == item.payloadSHA256
+                        || restoredOriginal
+                        || missingOwnedAddition else {
+                    if steamBuildChanged {
+                        throw InstallerError.incompatibleSteamUpdate(
+                            build: actualBuildID,
+                            path: item.path
+                        )
+                    }
+                    throw InstallerError.foreignModification(item.path)
+                }
+            } else if let originalHash = item.originalSHA256 {
+                guard currentExists else { throw InstallerError.missingOriginalFile(item.path) }
+                guard currentHash == originalHash else {
+                    if steamBuildChanged {
+                        throw InstallerError.incompatibleSteamUpdate(
+                            build: actualBuildID,
+                            path: item.path
+                        )
+                    }
+                    throw InstallerError.unsupportedGameFile(item.path)
+                }
+            } else if currentExists {
+                throw InstallerError.foreignModification(item.path)
+            }
+
+            if let originalHash = item.originalSHA256 {
+                if fileManager.fileExists(atPath: backup.path) {
+                    guard try Self.sha256(of: backup) == originalHash else {
+                        throw InstallerError.damagedBackup(item.path)
+                    }
+                } else {
+                    try fileManager.createDirectory(
+                        at: backup.deletingLastPathComponent(),
+                        withIntermediateDirectories: true
+                    )
+                    try fileManager.copyItem(at: destination, to: backup)
+                    guard try Self.sha256(of: backup) == originalHash else {
+                        throw InstallerError.damagedBackup(item.path)
+                    }
+                }
+            }
+
+            receiptFiles.append(ReceiptFile(
+                path: item.path,
+                originalExisted: item.originalSHA256 != nil,
+                originalSHA256: item.originalSHA256,
+                installedSHA256: item.payloadSHA256!
+            ))
+        }
+
+        let activePaths = Set(selectedFiles.map(\.path))
+        let retiredFiles = previousReceipt?.files.filter { !activePaths.contains($0.path) } ?? []
+        for prior in retiredFiles {
+            let destination = try safeURL(root: installation.dataDirectory, relativePath: prior.path)
+            let exists = fileManager.fileExists(atPath: destination.path)
+            if exists {
+                guard try Self.sha256(of: destination) == prior.installedSHA256 else {
+                    throw InstallerError.foreignModification(prior.path)
+                }
+            } else if prior.originalExisted {
+                throw InstallerError.foreignModification(prior.path)
+            }
+            if prior.originalExisted {
+                guard let originalHash = prior.originalSHA256 else {
+                    throw InstallerError.malformedReceipt
+                }
+                let backup = try safeURL(root: backupRoot, relativePath: prior.path)
+                guard fileManager.fileExists(atPath: backup.path),
+                      try Self.sha256(of: backup) == originalHash else {
+                    throw InstallerError.damagedBackup(prior.path)
+                }
+            }
+        }
+
+        let transaction = stateRoot.appendingPathComponent("transaction", isDirectory: true)
+        if fileManager.fileExists(atPath: transaction.path) { try fileManager.removeItem(at: transaction) }
+        let rollback = transaction.appendingPathComponent("rollback", isDirectory: true)
+        let staged = transaction.appendingPathComponent("staged", isDirectory: true)
+        try fileManager.createDirectory(at: rollback, withIntermediateDirectories: true)
+        try fileManager.createDirectory(at: staged, withIntermediateDirectories: true)
+
+        let transactionFiles = receiptFiles + retiredFiles
+        for item in transactionFiles {
+            let destination = try safeURL(root: installation.dataDirectory, relativePath: item.path)
+            if fileManager.fileExists(atPath: destination.path) {
+                let rollbackFile = try safeURL(root: rollback, relativePath: item.path)
+                try fileManager.createDirectory(at: rollbackFile.deletingLastPathComponent(), withIntermediateDirectories: true)
+                try fileManager.copyItem(at: destination, to: rollbackFile)
+            }
+        }
+        let previousReceiptExisted = fileManager.fileExists(atPath: receiptURL.path)
+        if previousReceiptExisted {
+            try fileManager.copyItem(
+                at: receiptURL,
+                to: transaction.appendingPathComponent("previous-receipt.json")
+            )
+        }
+        for item in selectedFiles {
+            let stagedFile = try safeURL(root: staged, relativePath: item.path)
+            try fileManager.createDirectory(at: stagedFile.deletingLastPathComponent(), withIntermediateDirectories: true)
+            try stagePayloadFile(
+                item,
+                payload: payload,
+                originalRoot: backupRoot,
+                output: stagedFile,
+                transaction: transaction
+            )
+            guard try Self.sha256(of: stagedFile) == item.payloadSHA256 else {
+                throw InstallerError.payloadChecksumMismatch(item.path)
+            }
+        }
+
+        let transactionURL = transaction.appendingPathComponent("state.json")
+        var transactionState = TransactionState(
+            schemaVersion: 1,
+            packageID: config.packageID,
+            committed: false,
+            previousReceiptExisted: previousReceiptExisted,
+            files: transactionFiles
+        )
+        try writeJSON(transactionState, to: transactionURL)
+
+        do {
+            for item in selectedFiles {
+                let destination = try safeURL(root: installation.dataDirectory, relativePath: item.path)
+                let stagedFile = try safeURL(root: staged, relativePath: item.path)
+                try fileManager.createDirectory(at: destination.deletingLastPathComponent(), withIntermediateDirectories: true)
+                try replaceFile(at: destination, with: stagedFile)
+            }
+            for prior in retiredFiles {
+                let destination = try safeURL(root: installation.dataDirectory, relativePath: prior.path)
+                if prior.originalExisted {
+                    let backup = try safeURL(root: backupRoot, relativePath: prior.path)
+                    let restored = transaction.appendingPathComponent("restored", isDirectory: true)
+                        .appendingPathComponent(prior.path)
+                    try fileManager.createDirectory(at: restored.deletingLastPathComponent(), withIntermediateDirectories: true)
+                    try fileManager.copyItem(at: backup, to: restored)
+                    try replaceFile(at: destination, with: restored)
+                } else if fileManager.fileExists(atPath: destination.path) {
+                    try fileManager.removeItem(at: destination)
+                }
+            }
+            let receipt = InstallationReceipt(
+                schemaVersion: 1,
+                packageID: config.packageID,
+                steamBuildID: actualBuildID,
+                installedAt: Date(),
+                activeLanguage: ActiveLanguageSelection(
+                    siteLocale: selectedLanguage.siteLocale,
+                    runtimeCode: selectedLanguage.runtimeCode
+                ),
+                files: receiptFiles
+            )
+            try writeJSON(receipt, to: receiptURL)
+            transactionState.committed = true
+            try writeJSON(transactionState, to: transactionURL)
+            try fileManager.removeItem(at: transaction)
+        } catch {
+            try? recoverInterruptedInstall(stateRoot: stateRoot, dataRoot: installation.dataDirectory)
+            throw error
+        }
+    }
+
+    func recoverInterruptedInstall(stateRoot: URL, dataRoot: URL) throws {
+        let transaction = stateRoot.appendingPathComponent("transaction", isDirectory: true)
+        let stateURL = transaction.appendingPathComponent("state.json")
+        guard fileManager.fileExists(atPath: transaction.path) else { return }
+        guard fileManager.fileExists(atPath: stateURL.path) else {
+            try fileManager.removeItem(at: transaction)
+            return
+        }
+        let state = try JSONDecoder().decode(TransactionState.self, from: Data(contentsOf: stateURL))
+        guard state.schemaVersion == 1 else { throw InstallerError.malformedReceipt }
+        if !state.committed {
+            let rollback = transaction.appendingPathComponent("rollback", isDirectory: true)
+            for item in state.files {
+                let destination = try safeURL(root: dataRoot, relativePath: item.path)
+                let rollbackFile = try safeURL(root: rollback, relativePath: item.path)
+                if fileManager.fileExists(atPath: rollbackFile.path) {
+                    try fileManager.createDirectory(at: destination.deletingLastPathComponent(), withIntermediateDirectories: true)
+                    try replaceFile(at: destination, with: rollbackFile)
+                } else if !item.originalExisted && fileManager.fileExists(atPath: destination.path) {
+                    try fileManager.removeItem(at: destination)
+                }
+            }
+            if let previousReceiptExisted = state.previousReceiptExisted {
+                let receiptURL = stateRoot.appendingPathComponent("receipt.json")
+                let previousReceiptURL = transaction.appendingPathComponent("previous-receipt.json")
+                if previousReceiptExisted {
+                    guard fileManager.fileExists(atPath: previousReceiptURL.path) else {
+                        throw InstallerError.malformedReceipt
+                    }
+                    try replaceFile(at: receiptURL, with: previousReceiptURL)
+                } else if fileManager.fileExists(atPath: receiptURL.path) {
+                    try fileManager.removeItem(at: receiptURL)
+                }
+            }
+        }
+        try fileManager.removeItem(at: transaction)
+    }
+
+    static func sha256(of url: URL) throws -> String {
+        let handle = try FileHandle(forReadingFrom: url)
+        defer { try? handle.close() }
+        var hasher = SHA256()
+        while true {
+            let data = try handle.read(upToCount: 1024 * 1024) ?? Data()
+            if data.isEmpty { break }
+            hasher.update(data: data)
+        }
+        return hasher.finalize().map { String(format: "%02x", $0) }.joined()
+    }
+
+    private func validatePayload(_ payload: URL, files: [PayloadFile]) throws {
+        for item in files {
+            if let artifacts = item.artifacts {
+                for artifact in artifacts {
+                    try validateArtifact(
+                        at: safeURL(root: payload, relativePath: artifact.path),
+                        expectedSHA256: artifact.sha256,
+                        owner: item.path
+                    )
+                }
+            } else {
+                let artifactPath = item.payloadPath ?? item.path
+                try validateArtifact(
+                    at: safeURL(root: payload, relativePath: artifactPath),
+                    expectedSHA256: item.artifactSHA256 ?? item.payloadSHA256!,
+                    owner: item.path
+                )
+            }
+        }
+    }
+
+    private func validateArtifact(at url: URL, expectedSHA256: String, owner: String) throws {
+        var isDirectory: ObjCBool = false
+        guard fileManager.fileExists(atPath: url.path, isDirectory: &isDirectory), !isDirectory.boolValue else {
+            throw InstallerError.missingPayloadFile(owner)
+        }
+        let values = try url.resourceValues(forKeys: [.isSymbolicLinkKey])
+        guard values.isSymbolicLink != true else { throw InstallerError.unsafePath(owner) }
+        guard try Self.sha256(of: url) == expectedSHA256 else {
+            throw InstallerError.payloadChecksumMismatch(owner)
+        }
+    }
+
+    private func stagePayloadFile(
+        _ item: PayloadFile,
+        payload: URL,
+        originalRoot: URL,
+        output: URL,
+        transaction: URL
+    ) throws {
+        guard let artifacts = item.artifacts else {
+            let source = try safeURL(root: payload, relativePath: item.payloadPath ?? item.path)
+            try fileManager.copyItem(at: source, to: output)
+            return
+        }
+        let tool = payload.appendingPathComponent("Tools/xdelta3")
+        guard fileManager.isExecutableFile(atPath: tool.path) else {
+            throw InstallerError.deltaToolMissing
+        }
+        var source = try safeURL(root: originalRoot, relativePath: item.path)
+        var intermediates: [URL] = []
+        defer { intermediates.forEach { try? fileManager.removeItem(at: $0) } }
+        for (index, artifact) in artifacts.enumerated() {
+            let patch = try safeURL(root: payload, relativePath: artifact.path)
+            let target: URL
+            if index == artifacts.count - 1 {
+                target = output
+            } else {
+                target = transaction.appendingPathComponent("delta-\(UUID().uuidString)")
+                intermediates.append(target)
+            }
+            let process = Process()
+            process.executableURL = tool
+            process.arguments = ["-d", "-f", "-s", source.path, patch.path, target.path]
+            let diagnostics = Pipe()
+            process.standardOutput = diagnostics
+            process.standardError = diagnostics
+            try process.run()
+            process.waitUntilExit()
+            guard process.terminationReason == .exit, process.terminationStatus == 0 else {
+                throw InstallerError.deltaApplicationFailed(item.path)
+            }
+            source = target
+        }
+    }
+
+    private func safeURL(root: URL, relativePath: String) throws -> URL {
+        guard PayloadFile.isSafeRelativePath(relativePath) else {
+            throw InstallerError.unsafePath(relativePath)
+        }
+        let standardizedRoot = root.standardizedFileURL
+        let result = standardizedRoot.appendingPathComponent(relativePath).standardizedFileURL
+        guard result.path.hasPrefix(standardizedRoot.path + "/") else {
+            throw InstallerError.unsafePath(relativePath)
+        }
+        guard standardizedRoot.resolvingSymlinksInPath() == standardizedRoot else {
+            throw InstallerError.unsafePath(relativePath)
+        }
+        var cursor = standardizedRoot
+        for part in relativePath.split(separator: "/") {
+            cursor.appendPathComponent(String(part))
+            if (try? cursor.resourceValues(forKeys: [.isSymbolicLinkKey]).isSymbolicLink) == true {
+                throw InstallerError.unsafePath(relativePath)
+            }
+        }
+        return result
+    }
+
+    private func replaceFile(at destination: URL, with source: URL) throws {
+        if fileManager.fileExists(atPath: destination.path) {
+            _ = try fileManager.replaceItemAt(destination, withItemAt: source)
+        } else {
+            try fileManager.moveItem(at: source, to: destination)
+        }
+    }
+
+    private func loadReceiptIfPresent(_ url: URL, packageID: String) throws -> InstallationReceipt? {
+        guard fileManager.fileExists(atPath: url.path) else { return nil }
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        let receipt = try decoder.decode(InstallationReceipt.self, from: Data(contentsOf: url))
+        guard receipt.schemaVersion == 1, receipt.packageID == packageID else {
+            throw InstallerError.malformedReceipt
+        }
+        return receipt
+    }
+
+    private func writeJSON<T: Encodable>(_ value: T, to url: URL) throws {
+        let data = try JSONEncoder.pretty.encode(value)
+        try fileManager.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+        try data.write(to: url, options: .atomic)
+    }
+}
+
+private extension JSONEncoder {
+    static var pretty: JSONEncoder {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
+        encoder.dateEncodingStrategy = .iso8601
+        return encoder
+    }
+}

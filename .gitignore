@@ -1,2 +1,5 @@
 /localization/__pycache__/
 /localization/work/
+/installer/Sources/DragonsInstaller/Resources/PackageConfig.json
+/installer/Sources/DragonsInstaller/Resources/LocalizationPayload/
+/installer/dist/
