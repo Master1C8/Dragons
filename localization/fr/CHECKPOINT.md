@@ -27,8 +27,8 @@ A preliminary direct comparison of all 28 current English/French entries found a
 | probe | Bounded French synthetic paths observed on macOS and CrossOver, including body/choice/settings frames and progression; native Windows and corpus-specific fit pending. See renderer-probe.md. |
 | source | Pinned worklist generated; verify source/preserve-exact gate and current shared receipts before translation. |
 | glossary | Two author self-review layers reconciled on current hashes under the owner exception; the earlier crest finding was withdrawn after scene review. Independent review was not claimed. See glossary-review.md. |
-| special-scene decisions | 4/27 groups have author-reviewed draft wording; the anonymous group retains a source buzzing-command boundary, and 23 groups remain unreviewed. Ordinary translation remains gated. See special-scenes.md. |
-| translate-edit | 43/1,947 authored as special-scene preparation, including one intentional exact ellipsis; no ordinary batch started. Paired diagnostic assets verified. |
+| special-scene decisions | 5/27 groups have author-reviewed draft wording; the anonymous group retains a source buzzing-command boundary, and 22 groups remain unreviewed. Ordinary translation remains gated. See special-scenes.md. |
+| translate-edit | 54/1,947 authored as special-scene preparation, including one intentional exact ellipsis; no ordinary batch started. Paired diagnostic assets verified. |
 | editorial | Not run; full semantic audit, independent delta and regression catalog pending. |
 | fonts | Slot and bounded live text samples resolved; full corpus coverage and typography remain unverified. |
 | textures | Textures with text excluded and preserved. |
@@ -37,6 +37,8 @@ A preliminary direct comparison of all 28 current English/French entries found a
 | screenshot upload / review | Not requested / not run. |
 | release / archival | Not complete; no publication, push or deployment authorized. |
 
-Next: complete and review the remaining 23 special-scene groups, resolve or explicitly classify the anonymous-scene technical boundary before ordinary text; use the exact paired English worklist and preserve source-bound handling. If the shared glossary or probe needs changes outside `localization/fr/` and this run directory, report the exact boundary instead of modifying shared files. A verified locale-only commit requires the specified `.git/codex-canonical-commit.lock`, empty pre-existing index, complete staged review and committed-tree verification; do not reset, amend or interfere with other lanes.
+Next: complete and review the remaining 22 special-scene groups, resolve or explicitly classify the anonymous-scene technical boundary before ordinary text; use the exact paired English worklist and preserve source-bound handling. If the shared glossary or probe needs changes outside `localization/fr/` and this run directory, report the exact boundary instead of modifying shared files. A verified locale-only commit requires the specified `.git/codex-canonical-commit.lock`, empty pre-existing index, complete staged review and committed-tree verification; do not reset, amend or interfere with other lanes.
 
 The Alexander register/professor batch has author-reviewed wording and paired 43-entry macOS/Windows partial asset readbacks; see special-scenes.md for hashes and limits. The buzzing finish-command boundary remains open pending a same-fixture, unmodified-English runtime comparison. CrossOver is not native Windows evidence.
+
+The college self-introduction batch adds nine scene IDs and two speaker-name IDs, with 51-entry paired Yarn readbacks and separately built speaker adapters; see special-scenes.md for exact hashes, the protected colon line and unrun scene checks. The overall translation hash is `f80b8eea2113edee81ec7340a05fa5fb9209798000bf42400001570a46b32efc`.
