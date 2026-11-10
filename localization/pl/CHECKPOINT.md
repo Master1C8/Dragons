@@ -458,3 +458,7 @@ Author compared 51 more IDs in `semantic-audit-ryan-fifth-intro.json`; cumulativ
 ### Semantic audit continuation: Ryan fifth-visit required conversations
 
 Author compared 84 more IDs in `semantic-audit-ryan-fifth-required.json`; cumulative 596/1,947, 1,351 remain. A hotel-room proposal is found on one date branch, but it does not close the separate location finding for all later paths. See `semantic-audit-progress.md`. Translation SHA-256 remains `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; runtime, visual and independent acceptance remain open.
+
+### Semantic audit continuation: Ryan fifth-visit farewells
+
+Author compared 46 more IDs in `semantic-audit-ryan-fifth-outro.json`; cumulative 642/1,947, 1,305 remain. The same English emphatic response has a natural existing rendering in another scene, a useful comparison for the pending `fbe86c06` finding. See `semantic-audit-progress.md`. Translation remains SHA-256 `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; independent audit, actual route transitions and final visual acceptance remain open.
