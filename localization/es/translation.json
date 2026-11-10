@@ -515,13 +515,13 @@
     "yarn:line:ef611d11": "",
     "yarn:line:79511a66": "",
     "yarn:line:c30013ff": "",
-    "yarn:line:9ab6ddfb": "",
-    "yarn:line:f99840cd": "",
-    "yarn:line:d5f94e23": "",
-    "yarn:line:e05c2dca": "",
-    "yarn:line:6fa847ba": "",
-    "yarn:line:43c94954": "",
-    "yarn:line:766c2abd": "",
+    "yarn:line:9ab6ddfb": "¿Aquí también hacéis «finales especiales»?",
+    "yarn:line:f99840cd": "¿Eso qué es?",
+    "yarn:line:d5f94e23": "¡Sí!",
+    "yarn:line:e05c2dca": "No",
+    "yarn:line:6fa847ba": "No, en serio. Oye, tienes que probarlo. ¡Pagaré bien!",
+    "yarn:line:43c94954": "¡De lujo! ¡Qué ganas de verte trabajar!",
+    "yarn:line:766c2abd": "¿Qué? ¡En todos los mejores sitios lo hacen!",
     "yarn:line:e48243c0": "",
     "yarn:line:72b244b7": "",
     "yarn:line:9e403ecd": "",
@@ -1029,33 +1029,33 @@
     "yarn:line:045f5836": "...",
     "yarn:line:926f5f41": "En fin. ¡Voy a usar esto ya!",
     "yarn:line:9542e7a6": "¡Ja, bien! ¡Vamos a estrenarlo!",
-    "yarn:line:8a35fb7b": "",
-    "yarn:line:6fbc3c1b": "",
-    "yarn:line:f98c3b6c": "",
-    "yarn:line:a0a0a49c": "",
+    "yarn:line:8a35fb7b": "Pue<size=90%>e<size=80%>e<size=70%>e<size=60%>es... <size=100%>Me preguntaba",
+    "yarn:line:6fbc3c1b": "Aquí también hacéis <i>finales especiales</i>, ¿no?",
+    "yarn:line:f98c3b6c": "¡Aquí todos los finales son especiales!",
+    "yarn:line:a0a0a49c": "¿En plan... cosas sexuales?",
     "yarn:line:43dd32f5": {
       "platforms": {
-        "macos": "",
-        "windows": ""
+        "macos": "Eh... Eso no...",
+        "windows": "Eh... Eso no..."
       }
     },
-    "yarn:line:d5ed3582": "",
-    "yarn:line:7678511c": "",
-    "yarn:line:e048566b": "",
+    "yarn:line:d5ed3582": "¿Hacéis que los dragones grandes, <size=60%>como yo, <size=100%>se corran aquí?",
+    "yarn:line:7678511c": "¿Eh? ¿Qué...? <size=80%>Vaya. <size=60%>No hacemos...",
+    "yarn:line:e048566b": "Ah, no.",
     "yarn:line:5a195ff2": {
       "platforms": {
-        "macos": "",
-        "windows": ""
+        "macos": "¡¿Qué?! ¡Eso es terrible! ¿Ni siquiera tenéis un soporte...?",
+        "windows": "¡¿Qué?! ¡Eso es terrible! ¿Ni siquiera tenéis un soporte...?"
       }
     },
-    "yarn:line:cc295885": "",
-    "yarn:line:5d34e715": "",
-    "yarn:line:cb04e062": "",
-    "yarn:line:3690a3eb": "",
-    "yarn:line:8cc1aa72": "",
-    "yarn:line:1af1ad05": "",
-    "yarn:line:b964c99b": "",
-    "yarn:line:2f54ceec": "",
+    "yarn:line:cc295885": "Eh... <size=60%>¿no?",
+    "yarn:line:5d34e715": "¡Pues será mejor que consigas uno!",
+    "yarn:line:cb04e062": "Al menos aún puedes usar las manos. Je.",
+    "yarn:line:3690a3eb": "¿Ah, sí? Pues ni siquiera veo un soporte.",
+    "yarn:line:8cc1aa72": "Ah... sí, no tenemos ninguno.",
+    "yarn:line:1af1ad05": "No, aquí no ofrecemos esas cosas.",
+    "yarn:line:b964c99b": "Pues qué pena. Será mejor cambiar eso.",
+    "yarn:line:2f54ceec": "Al menos aún puedes usar las manos. Je.",
     "yarn:line:51d4e418": "",
     "yarn:line:c7e4e36f": "",
     "yarn:line:647187f1": "",
@@ -1846,20 +1846,20 @@
     "yarn:line:e104b8e4": "<gradient=\"gold\"><b> Ah. Eh... <size=70%> No me importaría... ser esa persona. </b></gradient><size=70%> (¡Confirma el romance con Ryan!)",
     "yarn:line:f5a81524": "<gradient=\"gold\"><b>No se me ocurre nadie ahora mismo.</b></gradient><size=70%> (¡Confirma el romance con Conrad!)",
     "yarn:line:1d491283": "",
-    "yarn:line:8b7915f4": "",
-    "yarn:line:31281c6d": "",
-    "yarn:line:a7181b1a": "",
-    "yarn:line:3605a48a": "",
-    "yarn:line:a035a3fd": "",
-    "yarn:line:69dd6a73": "",
-    "yarn:line:45bc649d": "",
+    "yarn:line:8b7915f4": "¿Quién es?",
+    "yarn:line:31281c6d": "¡Es un draco rojo MONÍSIMO que viene al lavadero!",
+    "yarn:line:a7181b1a": "Es un dragón rojo. ¡Creo que os gustaríais!",
+    "yarn:line:3605a48a": "¡Ah! Creo que lo he visto. El pequeñín, ¿no?",
+    "yarn:line:a035a3fd": "Él prefiere «de estatura limitada»... Pero sí.",
+    "yarn:line:69dd6a73": "¡Ajá! Está intentando conocer gente nueva.",
+    "yarn:line:45bc649d": "Ah...",
     "yarn:line:d38c63ea": {
       "platforms": {
-        "macos": "",
-        "windows": ""
+        "macos": "Qué mono.",
+        "windows": "Qué mono."
       }
     },
-    "yarn:line:ffed6d04": "",
+    "yarn:line:ffed6d04": "Ah, estupendo. Parece que nos parecemos.",
     "yarn:line:5c78099a": "",
     "yarn:line:ca480eed": "",
     "yarn:line:e6290003": "",
@@ -1881,23 +1881,23 @@
     "yarn:line:c00d76cd": "",
     "yarn:line:63981253": "",
     "yarn:line:4ff91cbd": "",
-    "yarn:line:d9c91bca": "",
-    "yarn:line:48d4a45a": "",
-    "yarn:line:dee4a32d": "",
-    "yarn:line:b90f527f": "",
-    "yarn:line:2f3f5508": "",
+    "yarn:line:d9c91bca": "¿Y tú? ¿Estás saliendo con alguien?",
+    "yarn:line:48d4a45a": "Hay un dragón rojo, Conrad. Tiene... mucho genio, pero es mono.",
+    "yarn:line:dee4a32d": "¡Sí! Conrad, es adorable. Aunque odiaría que dijera eso.",
+    "yarn:line:b90f527f": "Ah, vaya, es el draco pequeñín que vi entrar hace un rato, ¿no?",
+    "yarn:line:2f3f5508": "¡Eh! Solo tiene... «estatura limitada».",
     "yarn:line:a0cb3f78": {
       "platforms": {
-        "macos": "",
-        "windows": ""
+        "macos": "¡Ajá! Es él.",
+        "windows": "¡Ajá! Es él."
       }
     },
-    "yarn:line:956e5c91": "",
-    "yarn:line:035e5be6": "",
+    "yarn:line:956e5c91": "Ah, perdona.",
+    "yarn:line:035e5be6": "¡Parece adorable!",
     "yarn:line:36fb380f": {
       "platforms": {
-        "macos": "",
-        "windows": ""
+        "macos": "¡Qué bien, es mono!",
+        "windows": "¡Qué bien, es mono!"
       }
     },
     "yarn:line:8caa3196": "",

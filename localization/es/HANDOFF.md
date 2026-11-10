@@ -98,3 +98,7 @@ The dirty double meaning, professional double meaning and big-C nickname cases a
 ### Ryan date and yip batch
 
 The date wordplay, film choices, kobold vocalization and related film title are author self-reviewed in [special-date-yip.md](special-date-yip.md). Their 48 direct IDs and one earlier glossary-spelling correction passed both source-bound readers and object read-backs; an introduced film-title colon was rejected at the intended delimiter guard on both builds. Current total: 205/1,947 authored IDs and 22/27 special decisions. Five decisions precede ordinary text. Independent game-text audit, final packages and final runtime/visual checks remain pending.
+
+### Conrad euphemisms batch
+
+The special endings and height euphemism cases are author self-reviewed in [special-conrad-endings-height.md](special-conrad-endings-height.md). Their 42 direct IDs passed both source-bound readers and object read-backs, and an empty progressive region failed the intended guard on each build. Current total: 247/1,947 authored IDs and 24/27 special decisions. Three decisions precede ordinary text. Independent game-text audit, final packages and final runtime/visual checks remain pending.
