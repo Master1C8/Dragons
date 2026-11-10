@@ -2,7 +2,7 @@
   "schema": 1,
   "locale": "fr",
   "beforeSha256": "94a770766b67a6be5f9337bb174543c010826ec87450b18f5c6e1dbf0e0f0325",
-  "afterSha256": "5174d9d3e2f54956ab940fd5ed8cd84ce422b376d62892b445431955732ce8a6",
+  "afterSha256": "ae9084fbd273274170e815668922583c9c1b3d89d5583ad17a76f83f1689a19d",
   "edits": {
     "yarn:line:8c8591ec": {
       "sceneSpans": [
@@ -567,6 +567,24 @@
       "glossaryReferentSourceIds": [],
       "runtimeSourceIds": [],
       "reason": "Use idiomatic French for Ryan feeling welcomed; masculine agreement refers to Ryan, not the player."
+    },
+    "ui:2186641e5018006a8f817cb41859ce82e4280b69928a91c70fb5df47dd93c631": {
+      "sceneSpans": [],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Preserve the technical ragdoll physics distinction in the credits."
+    },
+    "ui:5d545a9c8e8328196e2a962fb0c727593cedeffeacc833180fa97f69e0837c04": {
+      "sceneSpans": [],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Preserve the software-build sense in the four-line credit."
+    },
+    "ui:64c83f06beade7dc946444838945ddddb46e059d69184e0de5e24dfd025f8bb7": {
+      "sceneSpans": [],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Describe the knot-pop sound rather than an untying."
     }
   }
 }
