@@ -269,3 +269,9 @@ Author self-reviewed 52 additional IDs across `Ryan_3_intro`, `Ryan_3_required`,
 Author self-reviewed 22 additional IDs across the `ConradBeatup` introduction, idle, conversation and unfinished-wash branches. The emotional context and the explicit reference to his friends are retained. This is author self-review, not independent audit.
 
 `translation.json` now has **946 / 1,947 IDs**, SHA-256 `95f01c0a5c84e7915f4f00ad249d62998adeb1d54b2ce419241067e7cc5471bb`. `resume-01/add-conrad-injured.py` and `resume-01/conrad-injured-map.py` validate the preceding draft and paired readers; macOS accepts 946 and Windows 940 bindings. The complete guard reports 1,001 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Stock diagnostic lines — continuation
+
+Author self-reviewed 27 IDs in the source `Start` and `ErrorHasOccurred` groups, preserving the numbered test lines, Yarn and Unity names, and the bug-report instruction. This is author self-review, not independent audit; inclusion does not establish that these lines are reachable in normal play.
+
+`translation.json` now has **973 / 1,947 IDs**, SHA-256 `1b868a9c9b9902a902eefe26e8e231ff9843093b4b34b4402a88662d9b9594d5`. `resume-01/add-debug-lines.py` and `resume-01/debug-lines-map.py` validate the preceding draft and paired readers; macOS accepts 973 and Windows 967 bindings. The complete guard reports 974 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
