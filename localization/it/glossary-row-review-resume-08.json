@@ -5153,6 +5153,412 @@
           "decision": "Diagnostic flag names the player and Ryan as a possible relationship state."
         }
       ]
+    },
+    {
+      "group": "RyanDate_2",
+      "orderedRowsSha256": "1a19200730eb69a012b58b2afa82b3a43abdde64448c4cbacf5f0cbf69547c9b",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:bea8f1f7",
+          "pairedRowSha256": "faddc99c623cc762d05fbb15957d7adafc6e3c4d6dad1557aae79829f5426bc2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks the player if something is on their mind."
+        },
+        {
+          "id": "yarn:line:2898f680",
+          "pairedRowSha256": "5ed701e7ea1cc8e1cf8d0de2170929d409493909a03cf9a60debf53cb410178e",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can mention something happened last night."
+        },
+        {
+          "id": "yarn:line:433cb27e",
+          "pairedRowSha256": "b0368452a501e0f0889c8291222611ecf4aaa6b2170fb71a5fd52ad0f5b48712",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks the player whether they want to talk."
+        },
+        {
+          "id": "yarn:line:d50cb509",
+          "pairedRowSha256": "6cdf7ac95689ae3d14e7c1ad11336754c942ff799e60c75609f787877817920f",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player can mention something happened to Conrad and hope he is okay; the incident is not specified here."
+        },
+        {
+          "id": "yarn:line:6f5dbc90",
+          "pairedRowSha256": "acab750013992d60c744a8c3822739cfea44c9cc9f02ccf975ae2e3a3e2971b4",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan also hopes Conrad is okay; he refers to Conrad."
+        }
+      ]
+    },
+    {
+      "group": "RyanDate_3",
+      "orderedRowsSha256": "c0674cb122b4bc581251891731751a4f373ea7429fd7e82f7fb9cced1e537bfe",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:4944dbda",
+          "pairedRowSha256": "d3aac1c83693eb8606b1224932115a3a30a6fbcc9b0ac173b3830ad535158ae3",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan enjoys the food."
+        },
+        {
+          "id": "yarn:line:ead1bf44",
+          "pairedRowSha256": "ca4052c0973806d6c8cfc68252f2ca25d675cb39ff324d6290d632832603b3cb",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player observes Ryan’s way of eating."
+        },
+        {
+          "id": "yarn:line:7ce1b833",
+          "pairedRowSha256": "b8b914dcd35a0119a05841b3c65da4f322a2c9d7fce4633e9c6420d85761003e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks what the player means."
+        },
+        {
+          "id": "yarn:line:c6b0b1aa",
+          "pairedRowSha256": "28e9c3d763cb79a9b8d2eeab8d86eda47947c2416957c98fc46b79c44a34d8c3",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan asks whether the comment concerns swallowing things whole."
+        },
+        {
+          "id": "yarn:line:5080b6dd",
+          "pairedRowSha256": "5c1fbd0aef61a10cdf98216e7177ae24dd9dfef7edc02117fb25fd935f97f4e4",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Ryan says it depends and calls it a dragon thing; this is not an unconditional statement about every dragon."
+        }
+      ]
+    },
+    {
+      "group": "RyanDate_Intro",
+      "orderedRowsSha256": "8ea3f44056aeed20f00bec8ee80b10b5cf679e513a530aaa2ae224f2234e873a",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:eed2cc64",
+          "pairedRowSha256": "1ae0b6ebbe5b5c84a01e2e8a56ced156322405c31bf08686167c4a788b8708d2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan greets the player."
+        },
+        {
+          "id": "yarn:line:78e2cb13",
+          "pairedRowSha256": "46e60c7eae911a83632608c2ad70ae983bdd26dd1f210b35d54e4a0c6361cc66",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan recalls what the player said."
+        },
+        {
+          "id": "yarn:line:c2b3c28a",
+          "pairedRowSha256": "e6387dbe76bc08cbdeb36b47097c19aa54df56a00f37bec23a2f0f12c7846cff",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan specifies the earlier discussion about dating."
+        },
+        {
+          "id": "yarn:line:5483c5fd",
+          "pairedRowSha256": "c5d9dae40b3bb7282425c7527981e7dd0ab28cf86d8ce2f9075b053a1cb986db",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can acknowledge this."
+        },
+        {
+          "id": "yarn:line:f716a163",
+          "pairedRowSha256": "2ab18df7f8b10c97b82070b5643ae4bcfbc3cd921448dff9587f1685a5150353",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says the player was busy, so he brought the date to them."
+        },
+        {
+          "id": "yarn:line:6126a614",
+          "pairedRowSha256": "fc91282430a1a72bbb5a64aa6bd0c8123c7b0567830eabf52a17adbc74b429d3",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player can invite Ryan inside."
+        }
+      ]
+    },
+    {
+      "group": "RyanExploded_OutroDirty",
+      "orderedRowsSha256": "0394b02d0cef76c8719da5a3cd4a44495a490a99e868f64fa51588cdb95c5462",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:fc6fdd10",
+          "pairedRowSha256": "57444e9c2f8090813452c147101a0e095121c00dacb355086ccaf5342a1ca6f2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan still feels explosion grime on himself."
+        },
+        {
+          "id": "yarn:line:6d726280",
+          "pairedRowSha256": "eeedc24e82329489b98c6b735acea869d5e178ece20f5014f4c62f2b32fbcdf2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Ryan asks the player to wash more."
+        },
+        {
+          "id": "yarn:line:fb4265f7",
+          "pairedRowSha256": "2ed22525f9c8995a7ebf6d7c20849c269a0aebc86f3de0b43d0943799e786bf6",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can answer yes."
+        },
+        {
+          "id": "yarn:line:9ca994a5",
+          "pairedRowSha256": "c3384528442c363cdb70398089c6f1d6d55ad8c7be75cc85cf211a6ef9c177b1",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can acknowledge the mistake."
+        },
+        {
+          "id": "yarn:line:0a9993d2",
+          "pairedRowSha256": "424e1a97277facb57c75171ec4677f449e9b3c469aa89f4f70be46d24ea8038b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan thanks the player."
+        }
+      ]
+    },
+    {
+      "group": "RyanExploded_OutroSoapy",
+      "orderedRowsSha256": "c93698104379fadbfc5f008576f76db8871c809f9778e7cd44fbf07f0adc9127",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:0979dea3",
+          "pairedRowSha256": "cde44f91aa35e9d63cd3e044f0aee217bb8e8a6d2e201e9f38e7f1d588357d11",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan says he is still soapy."
+        },
+        {
+          "id": "yarn:line:9f49d9d4",
+          "pairedRowSha256": "b27308b1d236d9897bfb202ed920f812a6b38a5cb5a378b7818a66ce63089818",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Ryan asks the player to rinse the soap away."
+        },
+        {
+          "id": "yarn:line:3cdcbd4a",
+          "pairedRowSha256": "a386e3055248dbdfe578c8e2ed0476af469d2f9e923b6630fe05dd7cbb9af3b5",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can answer yes."
+        },
+        {
+          "id": "yarn:line:aaecba3d",
+          "pairedRowSha256": "f163ac0133e74a32705551df8284e2b50b227c48bcd77a9d4dfadcae8e974a12",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can acknowledge the mistake."
+        },
+        {
+          "id": "yarn:line:10bdb3a4",
+          "pairedRowSha256": "bb1cd427807621bf85301868102c49dad8a447ec3d440ad9fe37130f13d7f9f7",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan thanks the player."
+        }
+      ]
     }
   ]
 }

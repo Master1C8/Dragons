@@ -259,3 +259,7 @@ Four more complete groups / 30 rows received hash-bound paired-source and Italia
 ### Resume 08: Conrad introductions row unit
 
 Five more complete groups / 25 rows received paired, hash-bound source and Italian glossary author self-reviews. The row receipt now covers 98 groups / 278 rows; 95 groups / 1,669 rows lack equivalent full row-level receipts, with prior scoped evidence retained at its exact binding. Diagnostic relationship flags are possibilities, not established events. Independent acceptance and the shared source and exact-preservation gates remain open.
+
+### Resume 08: Ryan date and explosion row unit
+
+Five further groups / 26 paired rows have hash-bound source and Italian-field author self-reviews. The row receipt now covers 103 groups / 304 rows; 90 groups / 1,643 rows lack equivalent full row-level receipts, subject to reuse of earlier exact-scope evidence. Corpus-wide dependency closure, independent acceptance, and the shared source and exact-preservation gates remain open.
