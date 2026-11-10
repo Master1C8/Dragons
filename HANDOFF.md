@@ -151,9 +151,8 @@ Standalone verification passed 19 ICU line-order comparisons and synthetic
 two-line mesh, partial cluster reveal, split and offset mismatch tests using
 the actual TMP structs from both pinned assemblies. Both assemblies expose
 a point after `OnPreRenderText` and before upload, in both the canvas and
-world-space renderers. The prototype has yet to be connected at those
-points. These checks did not exercise the game, the actual Yarn reveal
-sequence, dynamic values or the package builders.
+world-space renderers. These checks did not exercise the game, the actual
+Yarn reveal sequence, dynamic values or the package builders.
 
 The reveal metadata adds parallel logical and glyph cluster boundaries. The
 offline controls cover contraction, expansion, an unfinished cluster and
@@ -164,6 +163,27 @@ so changing only the TMP mesh would shift those callbacks. Preserve the
 logical count for callbacks and translate the reveal position separately.
 The updated report in `staged-rtl-reveal/result.json` has SHA-256
 `585f43eb80e2263bece688be33868aeef9778c26e079f4a2216ac7cbcfd4f09c`.
+
+### Patched RTL render dispatch
+
+The prepared-text patcher accepts an optional fourth argument, the
+`Dragons.PreparedTextLayout.dll` built against the corresponding pinned
+Managed directory. In this mode use `rtl-plans.json` as the second argument.
+The patcher writes a locale-specific TMP DLL with its plans embedded and
+injects the companion call at both post-event, pre-upload joins. Compare
+all 1,806 stock method bodies after normalizing the string and mesh
+insertions, and check the plan bytes after read-back. The companion must
+be next to the patched TMP assembly in a staged Managed directory.
+
+Six pairs passed those checks under
+`localization/work/complex-renderer-20261110.nYJmC2/render-hook-final/`.
+The standalone managed test loaded each embedded plan table from its actual
+patched TMP DLL. A matching logical string moved its cluster quads and an
+unknown string left them unchanged. The test supplies synthetic character
+geometry to the dispatch core. A stock TMP component cannot be initialized
+in standalone .NET because Unity's native profiler calls are unavailable.
+The actual mesh entry point, cluster-split wrapping, RTL right alignment,
+dynamic values and Yarn's logical reveal adapter remain to be verified.
 
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock

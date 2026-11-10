@@ -11,6 +11,6 @@
     <Reference Include="UnityEngine.CoreModule"><HintPath>$(GameManaged)/UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
   </ItemGroup>
   <ItemGroup Condition="'$(GameManaged)' == ''">
-    <Compile Remove="MeshLayout.cs" />
+    <Compile Remove="MeshLayout.cs;RenderHook.cs" />
   </ItemGroup>
 </Project>

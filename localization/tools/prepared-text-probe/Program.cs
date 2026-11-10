@@ -5,8 +5,8 @@ using Mono.Cecil.Cil;
 
 const string HookName = "System.Void TMPro.TMP_Text::PopulateTextBackingArray(System.String,System.Int32,System.Int32)";
 const string HelperName = "Dragons.PreparedTextProbe";
-if (args.Length != 3)
-    throw new ArgumentException("Expected STOCK_TMP_DLL DISPLAY_MAP_JSON NEW_TMP_DLL");
+if (args.Length is not (3 or 4))
+    throw new ArgumentException("Expected STOCK_TMP_DLL DISPLAY_MAP_JSON NEW_TMP_DLL [LAYOUT_DLL]");
 var source = File.ReadAllBytes(args[0]);
 var sourceHash = Hash(source);
 if (sourceHash is not ("a25a11167a5a7339d611c364a6525fc172d19fe5caa6aa95d6866fd1d36d0743" or
@@ -86,6 +86,9 @@ patch.InsertBefore(first, Instruction.Create(OpCodes.Ldarga_S, hook.Parameters[0
 patch.InsertBefore(first, Instruction.Create(OpCodes.Ldarg_2));
 patch.InsertBefore(first, Instruction.Create(OpCodes.Ldarga_S, hook.Parameters[2]));
 patch.InsertBefore(first, Instruction.Create(OpCodes.Call, rewrite));
+var renderPlans = args.Length == 4 ? RenderPlans.Encode(json.RootElement) : null;
+if (renderPlans != null)
+    RenderPlans.Attach(module, args[3], renderPlans);
 using var stream = new MemoryStream();
 module.Write(stream);
 var output = stream.ToArray();
@@ -98,7 +101,15 @@ if (prefix[0].OpCode != OpCodes.Ldarga_S || prefix[0].Operand != verifiedHook.Pa
     prefix[3].OpCode != OpCodes.Call ||
     (prefix[3].Operand as MethodReference)?.DeclaringType.FullName != HelperName)
     throw new InvalidOperationException("Prepared-text hook did not survive read-back");
-var after = Bodies(reopened, skipHookPrefix: 4);
+if (renderPlans != null)
+{
+    if (reopened.AssemblyReferences.Any(reference => reference.Name == reopened.Assembly.Name.Name))
+        throw new InvalidOperationException("Patched TMP contains an unintended self-reference");
+    if (!reopened.Resources.OfType<EmbeddedResource>().Single(r => r.Name == RenderPlans.ResourceName)
+            .GetResourceData().SequenceEqual(renderPlans))
+        throw new InvalidOperationException("Prepared render plans did not survive read-back");
+}
+var after = Bodies(reopened, skipHookPrefix: 4, normalizeRenderHooks: renderPlans != null);
 if (original.Count != after.Count || original.Any(row => !after.TryGetValue(row.Key, out var body) || body != row.Value))
     throw new InvalidOperationException("Original TMP bodies changed beyond the verified hook");
 
@@ -118,7 +129,7 @@ using (var file = new FileStream(args[2], FileMode.CreateNew))
 Console.WriteLine(JsonSerializer.Serialize(new
 {
     sourceSha256 = sourceHash, outputSha256 = Hash(output), displayMapSha256 = Hash(mapBytes),
-    patchedMethod = HookName, verifiedOriginalMethodBodies = original.Count, mappings = mappings.Length,
+    patchedMethod = HookName, renderHook = renderPlans != null, verifiedOriginalMethodBodies = original.Count, mappings = mappings.Length,
 }));
 
 void Verify(string? value, int start, int length, string? expected, int expectedLength)
@@ -175,15 +186,18 @@ MethodDefinition MakeLookup(int start, int end)
 static bool IsPua(char value) => value is >= '\uE000' and <= '\uF8FF';
 static string Hash(byte[] bytes) => Convert.ToHexString(SHA256.HashData(bytes)).ToLowerInvariant();
 
-static Dictionary<string, string> Bodies(ModuleDefinition module, int skipHookPrefix = 0)
+static Dictionary<string, string> Bodies(ModuleDefinition module, int skipHookPrefix = 0, bool normalizeRenderHooks = false)
 {
     return module.GetTypes().Where(t => t.FullName != HelperName).SelectMany(t => t.Methods)
         .Where(m => m.HasBody).ToDictionary(m => m.FullName, m =>
         {
             var body = m.Body;
-            var instructions = body.Instructions.Skip(m.FullName == HookName ? skipHookPrefix : 0).ToArray();
+            var render = normalizeRenderHooks ? RenderPlans.Inspect(m) : null;
+            var instructions = body.Instructions.Skip(m.FullName == HookName ? skipHookPrefix : 0)
+                .Where(i => i != render?.Load && i != render?.Call).ToArray();
             var indices = instructions.Select((i, n) => (i, n)).ToDictionary(x => x.i, x => x.n);
-            int Index(Instruction? instruction) => instruction == null ? -1 : indices[instruction];
+            int Index(Instruction? instruction) => instruction == null ? -1 :
+                indices[instruction == render?.Load ? render.Value.Join : instruction];
             string? Operand(object? value) => value switch
             {
                 Instruction target => Index(target).ToString(),
