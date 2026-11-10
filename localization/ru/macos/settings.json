@@ -1,0 +1,155 @@
+{
+  "schema": 1,
+  "locale": "ru",
+  "sourceObjectSha256": "40713b00ce12582eebc427c0104e59becf438eb15803725b2248be3471a96aeb",
+  "lines": {
+    "sharedassets0.assets#608:label": {
+      "source": "Ambience Volume",
+      "text": "Громкость окружения"
+    },
+    "sharedassets0.assets#609:label": {
+      "source": "Anti-aliasing",
+      "text": "Сглаживание"
+    },
+    "sharedassets0.assets#609:option:0": {
+      "source": "Off",
+      "text": "Выкл."
+    },
+    "sharedassets0.assets#609:option:1": {
+      "source": "On",
+      "text": "Вкл."
+    },
+    "sharedassets0.assets#610:label": {
+      "source": "Audio",
+      "text": "Звук"
+    },
+    "sharedassets0.assets#611:label": {
+      "source": "Camera FOV",
+      "text": "Угол обзора"
+    },
+    "sharedassets0.assets#612:label": {
+      "source": "Crouch control",
+      "text": "Режим приседания"
+    },
+    "sharedassets0.assets#612:option:0": {
+      "source": "Tap/Hold",
+      "text": "Нажатие / удержание"
+    },
+    "sharedassets0.assets#612:option:1": {
+      "source": "Toggle",
+      "text": "Переключение"
+    },
+    "sharedassets0.assets#612:option:2": {
+      "source": "Hold",
+      "text": "Удержание"
+    },
+    "sharedassets0.assets#613:label": {
+      "source": "Gameplay",
+      "text": "Игра"
+    },
+    "sharedassets0.assets#614:label": {
+      "source": "Graphics",
+      "text": "Графика"
+    },
+    "sharedassets0.assets#615:label": {
+      "source": "Hint Glyph Type",
+      "text": "Значки управления"
+    },
+    "sharedassets0.assets#615:option:0": {
+      "source": "Auto",
+      "text": "Авто"
+    },
+    "sharedassets0.assets#615:option:1": {
+      "source": "Xbox",
+      "text": "Xbox"
+    },
+    "sharedassets0.assets#615:option:2": {
+      "source": "DualShock",
+      "text": "DualShock"
+    },
+    "sharedassets0.assets#615:option:3": {
+      "source": "Keyboard",
+      "text": "Клавиатура"
+    },
+    "sharedassets0.assets#606:label": {
+      "source": "Invert Look Y",
+      "text": "Инверсия взгляда по Y"
+    },
+    "sharedassets0.assets#606:option:0": {
+      "source": "Off",
+      "text": "Выкл."
+    },
+    "sharedassets0.assets#606:option:1": {
+      "source": "On",
+      "text": "Вкл."
+    },
+    "sharedassets0.assets#617:label": {
+      "source": "Mouse Sensitivity",
+      "text": "Чувствительность мыши"
+    },
+    "sharedassets0.assets#618:label": {
+      "source": "Music Volume",
+      "text": "Громкость музыки"
+    },
+    "sharedassets0.assets#619:label": {
+      "source": "Resolution",
+      "text": "Разрешение"
+    },
+    "sharedassets0.assets#620:label": {
+      "source": "Screen Brightness",
+      "text": "Яркость экрана"
+    },
+    "sharedassets0.assets#621:label": {
+      "source": "Sound Effects",
+      "text": "Звуковые эффекты"
+    },
+    "sharedassets0.assets#625:label": {
+      "source": "Sprayer Reduce Motion",
+      "text": "Меньше движения распылителя"
+    },
+    "sharedassets0.assets#625:option:0": {
+      "source": "Off",
+      "text": "Выкл."
+    },
+    "sharedassets0.assets#625:option:1": {
+      "source": "On",
+      "text": "Вкл."
+    },
+    "sharedassets0.assets#622:label": {
+      "source": "Target Framerate",
+      "text": "Целевая частота кадров"
+    },
+    "sharedassets0.assets#623:label": {
+      "source": "VSync",
+      "text": "Вертикальная синхронизация"
+    },
+    "sharedassets0.assets#623:option:0": {
+      "source": "Off",
+      "text": "Выкл."
+    },
+    "sharedassets0.assets#623:option:1": {
+      "source": "On",
+      "text": "Вкл."
+    },
+    "sharedassets0.assets#624:label": {
+      "source": "Window Mode",
+      "text": "Режим окна"
+    },
+    "sharedassets0.assets#624:option:0": {
+      "source": "Exclusive",
+      "text": "Эксклюзивный"
+    },
+    "sharedassets0.assets#624:option:1": {
+      "source": "Fullscreen",
+      "text": "Полноэкранный"
+    },
+    "sharedassets0.assets#624:option:2": {
+      "source": "Maxed Window",
+      "text": "Развёрнутое окно"
+    },
+    "sharedassets0.assets#624:option:3": {
+      "source": "Windowed",
+      "text": "В окне"
+    }
+  }
+}

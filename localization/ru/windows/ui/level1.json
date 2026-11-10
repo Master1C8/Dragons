@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "locale": "ru",
+  "sourceObjectSha256": "203725518656d04df3341248a7d24bc27551ebd6c03e582977869f0acfc5a459",
+  "lines": {
+    "level1#3861": {
+      "source": "DEBRIS",
+      "text": "МУСОР"
+    },
+    "level1#3860": {
+      "source": "NEEDS BANDAGES",
+      "text": "НУЖНЫ БИНТЫ"
+    },
+    "level1#3855": {
+      "source": "NEEDS HANDJOB",
+      "text": "НУЖНО ПОДРОЧИТЬ"
+    },
+    "level1#3853": {
+      "source": "NEEDS TALK",
+      "text": "НУЖЕН РАЗГОВОР"
+    },
+    "level1#3848": {
+      "source": "SOAPY",
+      "text": "В МЫЛЕ"
+    },
+    "level1#3857": {
+      "source": "CLEAN",
+      "text": "ЧИСТО"
+    },
+    "level1#3856": {
+      "source": "LOADING...",
+      "text": "ЗАГРУЗКА..."
+    },
+    "level1#3862": {
+      "source": "Options",
+      "text": "Настройки"
+    },
+    "level1#3854": {
+      "source": "Quit",
+      "text": "Выйти"
+    },
+    "level1#3849": {
+      "source": "Resume",
+      "text": "Продолжить"
+    },
+    "level1#3863": {
+      "source": "Pause Menu",
+      "text": "Пауза"
+    }
+  }
+}

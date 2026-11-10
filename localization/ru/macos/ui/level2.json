@@ -1,0 +1,159 @@
+{
+  "schema": 1,
+  "locale": "ru",
+  "sourceObjectSha256": "8a65d8f397e103abf65a6c9daba7668a4efe8c70fbe36f6b6eed676aaa99d808",
+  "lines": {
+    "level2#699": {
+      "source": "Carpet impacts",
+      "text": "Удары по ковру"
+    },
+    "level2#713": {
+      "source": "Ceramic impacts",
+      "text": "Удары по керамике"
+    },
+    "level2#702": {
+      "source": "door open sfx",
+      "text": "Звук открывания двери"
+    },
+    "level2#712": {
+      "source": "number station recording",
+      "text": "Запись номерной радиостанции"
+    },
+    "level2#726": {
+      "source": "knot pop sfx",
+      "text": "Хлопок узла"
+    },
+    "level2#714": {
+      "source": "rain on windows",
+      "text": "Дождь по стёклам"
+    },
+    "level2#704": {
+      "source": "rain and thunder",
+      "text": "Дождь и гром"
+    },
+    "level2#707": {
+      "source": "GDC Bundle Part 4",
+      "text": "Сборник GDC, часть 4"
+    },
+    "level2#705": {
+      "source": "Various recordings",
+      "text": "Разные записи"
+    },
+    "level2#709": {
+      "source": "Various recordings",
+      "text": "Разные записи"
+    },
+    "level2#716": {
+      "source": "thunder",
+      "text": "Гром"
+    },
+    "level2#701": {
+      "source": "Carpet paw sfx",
+      "text": "Шаги лап по ковру"
+    },
+    "level2#718": {
+      "source": "Glass impacts",
+      "text": "Удары по стеклу"
+    },
+    "level2#719": {
+      "source": "Thunder",
+      "text": "Гром"
+    },
+    "level2#723": {
+      "source": "Cardboard impacts",
+      "text": "Удары по картону"
+    },
+    "level2#717": {
+      "source": "Various recordings",
+      "text": "Разные записи"
+    },
+    "level2#710": {
+      "source": "Various recordings",
+      "text": "Разные записи"
+    },
+    "level2#724": {
+      "source": "Singular recorded faucet sound",
+      "text": "Отдельная запись звука крана"
+    },
+    "level2#725": {
+      "source": "City ambience",
+      "text": "Городской шум"
+    },
+    "level2#711": {
+      "source": "Deepthroat Choke",
+      "text": "Глубокий минет, звук удушья"
+    },
+    "level2#722": {
+      "source": "Ragdoll impacts",
+      "text": "Удары при падении тела"
+    },
+    "level2#703": {
+      "source": "Wood impacts",
+      "text": "Удары по дереву"
+    },
+    "level2#706": {
+      "source": "Wood Steps",
+      "text": "Шаги по дереву"
+    },
+    "level2#708": {
+      "source": "Additional wood Impacts",
+      "text": "Дополнительные удары по дереву"
+    },
+    "level2#721": {
+      "source": "Grass steps",
+      "text": "Шаги по траве"
+    },
+    "level2#715": {
+      "source": "Snow steps",
+      "text": "Шаги по снегу"
+    },
+    "level2#720": {
+      "source": "Slime sfx",
+      "text": "Звуки слизи"
+    },
+    "level2#700": {
+      "source": "Writing\nEnvironment Design\nEnvironment Modeling\nEnvironment Animation",
+      "text": "Сценарий\nДизайн окружения\nМоделирование окружения\nАнимация окружения"
+    },
+    "level2#758": {
+      "source": "Dragon Animations\nScene Animations\nDragon Rigging",
+      "text": "Анимация драконов\nАнимация сцен\nРиггинг драконов"
+    },
+    "level2#760": {
+      "source": "Programming\nIllustrations\n2D Animations",
+      "text": "Программирование\nИллюстрации\n2D-анимация"
+    },
+    "level2#756": {
+      "source": "Dragon Designs\nDragon Models\nDragon Textures",
+      "text": "Дизайн драконов\nМодели драконов\nТекстуры драконов"
+    },
+    "level2#759": {
+      "source": "Programming\nDragon Animations\nUser Interface\nBuild Integration",
+      "text": "Программирование\nАнимация драконов\nИнтерфейс\nИнтеграция в сборку"
+    },
+    "level2#761": {
+      "source": "Programming\nDragon Textures\nUser Interface",
+      "text": "Программирование\nТекстуры драконов\nИнтерфейс"
+    },
+    "level2#757": {
+      "source": "Music",
+      "text": "Музыка"
+    },
+    "level2#691": {
+      "source": "Sound Attribution\n",
+      "text": "Источники звуков\n"
+    },
+    "level2#689": {
+      "source": "Thank you for playing!",
+      "text": "Спасибо за игру!"
+    },
+    "level2#690": {
+      "source": "You and the dragon get married and have hot sex forever!\nmaybe credit roll here\nThanks for playing !!!",
+      "text": "Вы с драконом женитесь, и вас ждёт вечный горячий секс!\nможет, тут пустить титры\nСпасибо за игру!!!"
+    },
+    "level2#755": {
+      "source": "LOADING...",
+      "text": "ЗАГРУЗКА..."
+    }
+  }
+}

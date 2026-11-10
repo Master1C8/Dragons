@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "locale": "ru",
+  "sourceObjectSha256": "32805c0339b0b67b4cc1dd27f8e150419e3f7374132d630921700281a14b833e",
+  "lines": {
+    "level3#1498": {
+      "source": "LOADING...",
+      "text": "ЗАГРУЗКА..."
+    },
+    "level3#1499": {
+      "source": "Hold to Continue",
+      "text": "Удерживайте, чтобы продолжить"
+    }
+  }
+}

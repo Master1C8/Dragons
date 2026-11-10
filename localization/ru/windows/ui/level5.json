@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "locale": "ru",
+  "sourceObjectSha256": "ecbae7085b8126e5a77087e1b60a9fb3568032bbae0818106f22640d0242530e",
+  "lines": {
+    "level5#1481": {
+      "source": "LOADING...",
+      "text": "ЗАГРУЗКА..."
+    },
+    "level5#1482": {
+      "source": "Hold to Continue",
+      "text": "Удерживайте, чтобы продолжить"
+    },
+    "level5#1477": {
+      "source": "Options",
+      "text": "Настройки"
+    },
+    "level5#1479": {
+      "source": "Quit",
+      "text": "Выйти"
+    },
+    "level5#1483": {
+      "source": "Resume",
+      "text": "Продолжить"
+    },
+    "level5#1476": {
+      "source": "Pause Menu",
+      "text": "Пауза"
+    }
+  }
+}

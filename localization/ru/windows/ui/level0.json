@@ -3,6 +3,14 @@
   "locale": "ru",
   "sourceObjectSha256": "55a296caa23347190faa063efdaab4cf5a37e00bdbffa455729b4aa346cddae0",
   "lines": {
+    "level0#5187": {
+      "source": "Really Delete Save?",
+      "text": "Точно удалить сохранение?"
+    },
+    "level0#5182": {
+      "source": "LOADING...",
+      "text": "ЗАГРУЗКА..."
+    },
     "level0#5184": {
       "source": "New",
       "text": "Новый"
