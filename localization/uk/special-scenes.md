@@ -73,3 +73,37 @@ previous managed strings, and exact preservation of all other Yarn
 text, IDs and metadata. The original font covers all 69 display
 code points in the draft. Diagnostic assets and receipts are under
 `localization/work/uk-special-scenes-2-20261110.VCXXS1/`.
+
+## Third batch
+
+The draft now has 256 authored IDs, with 120 new values and all 136
+earlier values unchanged. It covers the wording of all 27 registered
+cases. The draft SHA-256 is
+`a2f41a55b50fadd892b9017490b0b086c19b291ba3b0534f60766792f4229706`.
+The source inventory, Yarn scope and glossary bindings above still apply.
+
+| Case | Ukrainian decision and remaining acceptance check |
+| --- | --- |
+| `yarn-missing-named-destinations` | Translate eight visible suffix lines shared with the restored destinations. Keep the 15 marker values exact. Exercise all five destinations in ordinary play and confirm the visible continuation and subsequent state. |
+| `yarn-alexander-question-once-state` | Keep the formal address and seven distinct prompts, two of which were already authored. Verify consumed choices stay consumed while the remaining choices stay selectable. |
+| `alexander-romance-route` | Distinguish acceptance from the polite decline. Preserve the gold label and smaller route note. Verify both destinations and the resulting romance state. |
+| `ryan-conrad-romance-routing` | Separate the options that open a route from the choices that commit it. Preserve who is introduced to whom, the two size regions in Ryan's hesitant option, and the three different outcomes. Verify state and option fit. |
+| `editor-route-prompt` | Keep the prompt and its two short replies distinct from the player's dialogue. Verify it stays limited to the editor and leaves ordinary play unaffected. |
+| `mouth-full-speech` | Use «Кофик», «гофорити» and «Дякуф» for Ryan's muffled speech. Keep the gate request and the two replies recognizable. Verify both paths and the recovery of clear speech. |
+| `salmon-guy-dragon` | Keep the self-correction from «хлопців» to «дракон» and the distinction between accepting seafood and suggesting another venue. Preserve the shared date-choice IDs. |
+| `movie-title-choices` | Keep three distinct titles and the numeral 2. Use «Йіп-Мен — Останній Йіп» with an em dash because Yarn reads the first colon as a speaker separator. Verify the reactions and the final convergence. |
+| `conrad-height-euphemism` | Use «з обмеженнями у вертикальному вимірі» in both sequences. Retain the contrast with «маленький» and keep the prospective date unnamed in the relevant reply. Verify both introductions and reactions. |
+| `ryan-question-about-a-question` | Preserve the playful opening, the turn toward a difficult relationship and the distinct supportive replies. Keep Ryan's italic emphasis and verify the branches converge at the intended point. |
+| `kobold-yip-speech` | Use «Йіп» for the utterance and keep its parenthetical gloss in the original smaller region. Check both the long gloss and the abrupt short one for fit. |
+| `kobold-yip-film-title` | Reuse both authored IDs from the film choices. Check the shared title and spoken «Йіп» remain consistent in their two contexts. |
+
+Both complete builders passed a control with English for the untouched
+IDs. Read-back from each package matched all 250 authored Yarn values,
+the remaining original Yarn values, metadata and key order. Each
+packaged Yarn program matched its pinned repaired fingerprint and
+contained all five destinations. Managed display strings, the macOS
+signature and Windows ZIP integrity also passed. Both packaged source
+fonts cover all 75 display code points used by the draft. Branch runs,
+rendered fit and independent editorial review are still pending for
+these additions. Diagnostic packages and receipts are under
+`localization/work/uk-special-scenes-3-20261110.bnGbL5/`.
