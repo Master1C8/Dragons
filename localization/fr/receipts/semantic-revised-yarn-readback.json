@@ -1,0 +1,55 @@
+{
+  "translationSha256": "cf387fba3467b0a5a05a78638ab9c09bb455d8cc786afc88868b3abdb7d6dc6e",
+  "worklistSha256": "ef9d5709b061ea426c2e113373fdbfde547c6518f6394a4afc325204dea89cf8",
+  "scriptSha256": "24afb0581a01ab224ceb0886a7919eb81bb7befa5955a6eea643260c1ece59dc",
+  "command": [
+    "/Users/antonkrutov/Desktop/Forest/.venv-assets314/bin/python",
+    "-B",
+    "/Users/antonkrutov/Desktop/Dragons/localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-07/verify_yarn.py"
+  ],
+  "method": "Stock-pinned Yarn object encoded to run-owned temporary file, reopened and compared in order including all metadata; no Unity asset rebuild or game launch",
+  "platforms": {
+    "macos": {
+      "stockYarnObjectSha256": "9baafe5b3c36e63042cc0d02b2c755580e142447cea13f946d485a342c269853",
+      "readerJsonSha256": "9cf9654df7791c2b8f5ce62c697ed60e57abbed935c4c38d426e0f50d3e8ad48",
+      "encodedYarnObjectSha256": "95f9489d2a4dc6112047728e21d10ef6a92e1390c0485605d675d427b8614bf9",
+      "orderedValues": 1839,
+      "authoredYarn": 1823,
+      "untouchedYarn": 16,
+      "candidateReaderMatchesIndependent": true
+    },
+    "windows": {
+      "stockYarnObjectSha256": "7000b2b93b09f6a7b916e5f57c0dc6cf21ca9e6f9ddbfbc485bce704e8ce28d6",
+      "readerJsonSha256": "ede33add4e37820919bf74888b6f6f5b3bb58c04abfa4118d7ee4a34d025bd72",
+      "encodedYarnObjectSha256": "84cf38713b30c273c97b95d4a66cec11e40b76a97047920f63224c30b575fa6d",
+      "orderedValues": 1839,
+      "authoredYarn": 1823,
+      "untouchedYarn": 16,
+      "candidateReaderMatchesIndependent": true
+    }
+  },
+  "completePairedGuard": {
+    "command": [
+      "/Users/antonkrutov/Desktop/Forest/.venv-assets314/bin/python",
+      "-B",
+      "localization/verify_authored_yarn.py",
+      "localization/fr/translation.json",
+      "--locale",
+      "fr",
+      "--inventory",
+      "localization/work/source-inventory-20261107/combined-provisional-v42-20261110.json",
+      "--yarn-scope",
+      "localization/work/yarn-markers-20261110.ridbPA/yarn-scope-v42.json",
+      "--complete"
+    ],
+    "result": {
+      "locale": "fr",
+      "translationSha256": "cf387fba3467b0a5a05a78638ab9c09bb455d8cc786afc88868b3abdb7d6dc6e",
+      "completeInputRequired": true,
+      "checkedDialogueBindings": {
+        "macos": 1823,
+        "windows": 1823
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schema": 1,
+  "purpose": "Revised effective delta and evidence reconciliation; independent acceptance pending",
+  "beforeSha256": "94a770766b67a6be5f9337bb174543c010826ec87450b18f5c6e1dbf0e0f0325",
+  "afterSha256": "cf387fba3467b0a5a05a78638ab9c09bb455d8cc786afc88868b3abdb7d6dc6e",
+  "previousClosureSha256": "92cebfaa6e14b93434742c5ea818758b28880cdaa9b66c515afee712c9b69871",
+  "revisedClosureSha256": "34aadcee503f544b1ad3c53415d4fd08cf77e0c177c71ac1ada195df3ce22945",
+  "revisedClosureBytes": 988656,
+  "recipeSha256": "527d98bd0512802ab1533988dfdaaf319337bb718d485de3b646cc749d1e51b3",
+  "exporterSha256": "03f9804df599cc047f82a49e91225354a449f721ec12a12a1b06f4cd749d7b81",
+  "command": [
+    "/Users/antonkrutov/Desktop/Forest/.venv-assets314/bin/python",
+    "-B",
+    "localization/export_editorial_delta_with_regressions.py",
+    "--inventory",
+    "localization/work/source-inventory-20261107/combined-provisional-v42-20261110.json",
+    "--yarn-scope",
+    "localization/work/yarn-markers-20261110.ridbPA/yarn-scope-v42.json",
+    "--paired-scenes",
+    "localization/work/source-inventory-20261107/yarn-paired-scenes.json",
+    "--before",
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-04/semantic-pre-audit.json",
+    "--after",
+    "localization/fr/translation.json",
+    "--recipe",
+    "localization/fr/receipts/semantic-revised-delta-recipe.json",
+    "--locale",
+    "fr",
+    "--output",
+    "<new temporary delta.json>"
+  ],
+  "changedIds": [
+    "yarn:line:33a79dbe",
+    "yarn:line:e8a38ed0",
+    "yarn:line:8c8591ec",
+    "yarn:line:3ed6ab5d",
+    "yarn:line:83aa1a23",
+    "yarn:line:159a1d54",
+    "yarn:line:ce21622a",
+    "yarn:line:bc6cc4d2",
+    "yarn:line:0121c874",
+    "yarn:line:f3b5952a",
+    "yarn:line:0bc044da",
+    "yarn:line:9addfb4a",
+    "yarn:line:7f543c2a",
+    "yarn:line:f0a0565a",
+    "yarn:line:73ea230a",
+    "yarn:line:d3b6d22a",
+    "yarn:line:f716a163",
+    "yarn:line:cc4e48a3",
+    "yarn:line:9ca994a5",
+    "yarn:line:aaecba3d",
+    "yarn:line:c2f44537",
+    "yarn:line:cb1d1197",
+    "yarn:line:5d2d16e0",
+    "yarn:line:c35b717a",
+    "yarn:line:18707b19",
+    "yarn:line:75206eee",
+    "yarn:line:3b01eb3b",
+    "yarn:line:46c6a3ed",
+    "yarn:line:c10d9415",
+    "yarn:line:b032bfb1",
+    "yarn:line:da4f12a1",
+    "yarn:line:e106207b",
+    "yarn:line:9369755d",
+    "yarn:line:0a0e6773",
+    "yarn:line:a6c1f2f4",
+    "yarn:line:09e5bf43",
+    "yarn:line:cd9b2a8f",
+    "yarn:line:079b3782"
+  ],
+  "changedIdsSha256": "b5549e97bd46c018aadb44f655374a83d5eb28e291a6a77de979989619930ce1",
+  "closureCount": 938,
+  "closureIdsSha256": "86c51bf03c0bb0e1eadd317d398c9694926d99c281084be5a65f1ec594bad3f8",
+  "componentCounts": {
+    "scene": 605,
+    "repetitions": 3,
+    "glossaryReferents": 23,
+    "runtime": 0,
+    "regression": 414
+  },
+  "componentSha256": {
+    "scene": "bbac33e4a896b22299afe2e447f4e39664480e83bca66968bd18d61935b02cab",
+    "repetitions": "dc88c0da9949b5ab089ddcd3a8c0dfc433de10338e5165d7ca1a7f05e8677e8d",
+    "glossaryReferents": "ce0e73a92b593d94a9aa64e48fb11ebd9b49aadf6bbe7180e6b1e9eb3d0bd304",
+    "runtime": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "regression": "a1d2c0cd02ed46ab949776ab05aa473f5810c04c0baee497dff451b88809fa65"
+  },
+  "protectedContextCount": 55,
+  "protectedContextSha256": "9c65321e6e781e1bd678674ca9bd28cd79017eecaf5361f57a6cc298581bcd19",
+  "reviewRowsReopenedAndCompared": 938,
+  "changedReviewRows": [
+    "yarn:line:c2f44537"
+  ],
+  "changedRowBefore": {
+    "id": "yarn:line:c2f44537",
+    "group": "Ryan_2_Outro",
+    "kind": "line",
+    "instructionIndex": 48,
+    "preserveExactPrefix": null,
+    "builds": {
+      "macos": {
+        "file": "dialogue.json",
+        "key": "line:c2f44537",
+        "source": "So. My girlfriend was home before me. she's a work-from-home dragon.",
+        "sourceIds": [
+          "yarn:line:c2f44537"
+        ]
+      },
+      "windows": {
+        "file": "dialogue.json",
+        "key": "line:c2f44537",
+        "source": "So. My girlfriend was home before me. she's a work-from-home dragon.",
+        "sourceIds": [
+          "yarn:line:c2f44537"
+        ]
+      }
+    },
+    "before": {
+      "macos": "Alors. Ma petite amie était rentrée avant moi. Elle travaille de chez nous.",
+      "windows": "Alors. Ma petite amie était rentrée avant moi. Elle travaille de chez nous."
+    },
+    "after": {
+      "macos": "Alors. Ma petite amie était déjà à la maison avant mon retour. Elle travaille à domicile.",
+      "windows": "Alors. Ma petite amie était déjà à la maison avant mon retour. Elle travaille à domicile."
+    }
+  },
+  "changedRowAfter": {
+    "id": "yarn:line:c2f44537",
+    "group": "Ryan_2_Outro",
+    "kind": "line",
+    "instructionIndex": 48,
+    "preserveExactPrefix": null,
+    "builds": {
+      "macos": {
+        "file": "dialogue.json",
+        "key": "line:c2f44537",
+        "source": "So. My girlfriend was home before me. she's a work-from-home dragon.",
+        "sourceIds": [
+          "yarn:line:c2f44537"
+        ]
+      },
+      "windows": {
+        "file": "dialogue.json",
+        "key": "line:c2f44537",
+        "source": "So. My girlfriend was home before me. she's a work-from-home dragon.",
+        "sourceIds": [
+          "yarn:line:c2f44537"
+        ]
+      }
+    },
+    "before": {
+      "macos": "Alors. Ma petite amie était rentrée avant moi. Elle travaille de chez nous.",
+      "windows": "Alors. Ma petite amie était rentrée avant moi. Elle travaille de chez nous."
+    },
+    "after": {
+      "macos": "Alors. Ma petite amie était déjà à la maison avant mon retour. C’est une dragonne qui travaille à domicile.",
+      "windows": "Alors. Ma petite amie était déjà à la maison avant mon retour. C’est une dragonne qui travaille à domicile."
+    }
+  },
+  "reviewReceiptSha256": "f4a70c111f983d81cbcb1c11afe742167e1f09413479c8deca76aa1fd0585ce8",
+  "reconciliation": "Other 37 previously examined effective rows unchanged; revised row needs independent disposition. The other 900 closure rows, protected context and regression scope retain their prior pending status. Identical catalog/context does not constitute acceptance."
+}
