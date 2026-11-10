@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "locale": "de",
+  "translation_sha256": "6b723811bbdcdf65e24a26c22e3abfa25f6e97c0975dce7e072e7b797081591a",
+  "authored_ids": 1222,
+  "pinned_inputs": {
+    "inventory": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+    "scope": "753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30",
+    "worklist": "9ee266ffbc4643e5b269b75ca03edfb763f1178d3803aa65b627d487c2b0535a"
+  },
+  "canonical_verifier": {
+    "command": [
+      "/Users/antonkrutov/Desktop/Dragons/localization/work/cli-terra-high-20261110.J0KLrx/de/venv/bin/python",
+      "-B",
+      "localization/verify_authored_yarn.py",
+      "localization/de/translation.json",
+      "--locale",
+      "de",
+      "--inventory",
+      "localization/work/source-inventory-20261107/combined-provisional-v42-20261110.json",
+      "--yarn-scope",
+      "localization/work/yarn-markers-20261110.ridbPA/yarn-scope-v42.json"
+    ],
+    "result": {
+      "locale": "de",
+      "translationSha256": "6b723811bbdcdf65e24a26c22e3abfa25f6e97c0975dce7e072e7b797081591a",
+      "completeInputRequired": false,
+      "checkedDialogueBindings": {
+        "macos": 1214,
+        "windows": 1214
+      }
+    }
+  },
+  "reproduction": {
+    "command": [
+      "/Users/antonkrutov/Desktop/Dragons/localization/work/cli-terra-high-20261110.J0KLrx/de/venv/bin/python",
+      "-B",
+      "localization/de/verify_batch.py",
+      "localization/de/receipts/NEW-RECEIPT.json"
+    ],
+    "helper_sha256": "51d7a2a0f813fdedff92889b595dc4cc1c421e0ed59a15d10f1ce2edd4ce9828",
+    "mac_builder": "localization/dialogue_locale.py",
+    "windows_builder": "localization/windows_dialogue_probe.py",
+    "readback": "reopen built Unity object and compare ordered keys, values, extras",
+    "binding_inputs_directory": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-04/inputs/ryan-food-1222",
+    "temporary_asset_policy": "run-owned temporary directory; removed only after both platform readbacks and receipt succeed; failed outputs retained"
+  },
+  "platforms": {
+    "macos": {
+      "stock_asset_sha256": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+      "source_yarn_sha256": "9baafe5b3c36e63042cc0d02b2c755580e142447cea13f946d485a342c269853",
+      "dialogue_binding_sha256": "70c17e45814ec6bc82cadd7c669bb519717afca3ca86f3ddacbefac7e6c2feb3",
+      "speaker_binding_sha256": "ff0e7d84440ebd80c29b2d0b037709be3591cb4b035c2af632c38ad7a797a121",
+      "partial_asset_sha256": "6500d7291fd69e54b8dd088094197631386016809b5d5efd2baf883405faf06f",
+      "ordered_values": 1839,
+      "authored_yarn": 1214,
+      "untouched_yarn": 625
+    },
+    "windows": {
+      "stock_asset_sha256": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+      "source_yarn_sha256": "7000b2b93b09f6a7b916e5f57c0dc6cf21ca9e6f9ddbfbc485bce704e8ce28d6",
+      "dialogue_binding_sha256": "dc398a87387cb58ef18a99b11d98a398e21f52c1441cabddd3a7c887a886a0fe",
+      "speaker_binding_sha256": "2de57dc98a913241f37ca4c6a5e170dc65f4d0b38b830d6d13816d5622dbd737",
+      "partial_asset_sha256": "8f7ac87927ca5f1342249743a610f0002aa2bdf14dd913f5bba9664e65ec0c91",
+      "ordered_values": 1839,
+      "authored_yarn": 1214,
+      "untouched_yarn": 625
+    }
+  },
+  "runtime_visual_independent_audit": "not established"
+}
