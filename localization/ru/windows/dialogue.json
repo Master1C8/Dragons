@@ -2950,6 +2950,394 @@
     "line:0de4fe62": {
       "source": "And I'm glad you have a medkit... You're very prepared.",
       "text": "И хорошо, что у тебя есть аптечка... У тебя всё предусмотрено."
+    },
+    "line:dd4b34ae": {
+      "source": "Hello?",
+      "text": "Алло?"
+    },
+    "line:4b7b33d9": {
+      "source": "Hello!",
+      "text": "Привет!"
+    },
+    "line:e8ee5747": {
+      "source": "Oh hi! um..",
+      "text": "О, привет! Эм..."
+    },
+    "line:7ede5030": {
+      "source": "I heard there was kobolds down here that could wash me up?",
+      "text": "Мне сказали, тут есть кобольды, которые могут меня помыть..."
+    },
+    "line:c48f59a9": {
+      "source": "Is this the right place?",
+      "text": "Я по адресу?"
+    },
+    "line:5592e639": {
+      "source": "Yes, welcome to Drag'N Wash!",
+      "text": "Да, добро пожаловать в Drag'N Wash!"
+    },
+    "line:c3a2e14e": {
+      "source": "Haha, you certainly are!",
+      "text": "Ха-ха, это точно!"
+    },
+    "line:b01b2159": {
+      "source": "Great, so uh,",
+      "text": "Здорово. Так, эм..."
+    },
+    "line:262b262e": {
+      "source": "how do I get in?",
+      "text": "а как мне войти?"
+    },
+    "line:9c7a2fb7": {
+      "source": "Wait a sec, I need to open the gate.",
+      "text": "Секунду, мне надо открыть ворота."
+    },
+    "line:0a4a28c0": {
+      "source": "Oh I see the button there, gotcha!",
+      "text": "А, вон там кнопка. Понятно!"
+    },
+    "line:a9df4c5e": {
+      "source": "Thanks I'll be waiting!",
+      "text": "Спасибо, подожду!"
+    },
+    "line:5f64c352": {
+      "source": "So you're a certified dragon washer huh?",
+      "text": "Значит, у тебя есть сертификат на мытьё драконов?"
+    },
+    "line:e535cacb": {
+      "source": "Yes",
+      "text": "Да"
+    },
+    "line:e218722c": {
+      "source": "This is my first time, actually!",
+      "text": "Вообще-то это мой первый раз!"
+    },
+    "line:7305cdbc": {
+      "source": "Oh cool!",
+      "text": "О, круто!"
+    },
+    "line:7428755b": {
+      "source": "Oh so it's new for both of us!",
+      "text": "О, значит, для нас обоих это в новинку!"
+    },
+    "line:1706e86d": {
+      "source": "It's also new to me...",
+      "text": "Для меня это тоже в новинку..."
+    },
+    "line:8136ef1a": {
+      "source": "I'm surprised how nice it is.",
+      "text": "Даже не ожидал, что это так приятно."
+    },
+    "line:acb8a5aa": {
+      "source": "Thank you for the quick clean!",
+      "text": "Спасибо, что так быстро меня отмыли!"
+    },
+    "line:3a88a2dd": {
+      "source": "By the way would you be mad if your partner made a mess at home?",
+      "text": "Кстати, тебя бы разозлил беспорядок дома, если бы он был по вине твоей второй половины?"
+    },
+    "line:991dc643": {
+      "source": "Yes",
+      "text": "Да"
+    },
+    "line:b57cc8ad": {
+      "source": "Depends",
+      "text": "Смотря какой"
+    },
+    "line:b251704a": {
+      "source": "No",
+      "text": "Нет"
+    },
+    "line:0f2dc134": {
+      "source": "Oh! Yeah that makes sense...",
+      "text": "О! Ну да, понятно..."
+    },
+    "line:234ccfda": {
+      "source": "I suppose it depends on the circumstances.",
+      "text": "Наверное, всё зависит от обстоятельств."
+    },
+    "line:2461773d": {
+      "source": "I knew you'd have my back",
+      "text": "Я знал, что ты меня поддержишь."
+    },
+    "line:c1e8b05d": {
+      "source": "Well I had a good time, see you later then!",
+      "text": "Ну, было здорово. Тогда до встречи!"
+    },
+    "line:57d8b72a": {
+      "source": "Mind opening the gate to let me out?",
+      "text": "Откроешь ворота, чтобы я мог выйти?"
+    },
+    "line:f212b2de": {
+      "source": "Yeah so I'm all muddy and stuff, love romping around in the public park.",
+      "text": "Ага, я весь в грязи и всё такое. Люблю порезвиться в парке."
+    },
+    "line:4843bb47": {
+      "source": "I'm still very muddy, if you could soap me up that'd be great.",
+      "text": "Я ещё очень грязный. Было бы здорово намылить меня."
+    },
+    "line:2b65bf83": {
+      "source": "I love bubbles, they tickle!",
+      "text": "Обожаю пузырьки, они щекочутся!"
+    },
+    "line:bd55b8f4": {
+      "source": "I'm excited to see them washing down the drain though.",
+      "text": "Хотя не терпится посмотреть, как они смоются в слив."
+    },
+    "line:1ec0dc6a": {
+      "source": "Use the sprayer on the wall to wash me off.",
+      "text": "Смой пену распылителем со стены."
+    },
+    "line:7da41ecd": {
+      "source": "So uhh, let me know if you need me to move.",
+      "text": "Так, эм, скажи, если мне надо подвинуться."
+    },
+    "line:ecb9a15d": {
+      "source": "Just touch me with your hand and I'll try to help.",
+      "text": "Просто дотронься до меня рукой, я постараюсь помочь."
+    },
+    "line:aaf3066d": {
+      "source": "Thanks for cleaning me!",
+      "text": "Спасибо за мойку!"
+    },
+    "line:cd18f73f": {
+      "source": "Been looking forward to this.",
+      "text": "Давно этого ждал."
+    },
+    "line:eb019075": {
+      "source": "When you're done go ahead and hit the button.",
+      "text": "Когда всё будет готово, нажми на кнопку."
+    },
+    "line:515099ec": {
+      "source": "The button on the wall, I mean.",
+      "text": "На ту, что на стене."
+    },
+    "line:d7bcbe29": {
+      "source": "Max says I'm a clumsy dragon,",
+      "text": "По словам Макса, я неуклюжий дракон."
+    },
+    "line:7429dab7": {
+      "source": "I hope that you'll help me prove them wrong!",
+      "text": "Надеюсь, ты поможешь доказать Максу обратное!"
+    },
+    "line:5230bdfd": {
+      "source": "Soap, then rinse!",
+      "text": "Сначала намылить, потом смыть!"
+    },
+    "line:e861b464": {
+      "source": "At least that's what I've heard anyway.",
+      "text": "Во всяком случае, так мне говорили."
+    },
+    "line:1e027369": {
+      "source": "Wow thanks, that feels good.",
+      "text": "Ух ты, спасибо. Как приятно."
+    },
+    "line:8f1fccf9": {
+      "source": "Being muddy is really fun up until it starts drying.",
+      "text": "Возиться в грязи весело, пока она не начнёт засыхать."
+    },
+    "line:192fcb8e": {
+      "source": "Happy to get it off.",
+      "text": "Хорошо, что можно её смыть."
+    },
+    "line:2d315c6c": {
+      "source": "Who knew a dragon could get so dirty, huh?",
+      "text": "Кто бы мог подумать, что дракон может так испачкаться, а?"
+    },
+    "line:bb015b1b": {
+      "source": "I was romping around the forest",
+      "text": "Я носился по лесу."
+    },
+    "line:01505282": {
+      "source": "Only realized how much of a mess I made after Max yelled at me, haha.",
+      "text": "Только когда от Макса досталось, понял, какой бардак устроил. Ха-ха."
+    },
+    "line:21235886": {
+      "source": "Hey could you come up front where I can see you?",
+      "text": "Эй, подойдёшь туда, где я смогу тебя увидеть?"
+    },
+    "line:82b63c18": {
+      "source": "I have something to say!",
+      "text": "Мне есть что сказать!"
+    },
+    "line:c4fc9b28": {
+      "source": "I wanna talk face to face!",
+      "text": "Хочу поговорить лицом к лицу!"
+    },
+    "line:7ead92b1": {
+      "source": "If you could come up front so I could talk.",
+      "text": "Подойдёшь поближе? Хочу поговорить."
+    },
+    "line:58b4f5fb": {
+      "source": "I've been told it's polite to talk to smaller folk face to face.",
+      "text": "Мне говорили, что с народом помельче вежливо разговаривать лицом к лицу."
+    },
+    "line:014b5da5": {
+      "source": "Watch where those paws are going would you?",
+      "text": "Смотри, куда лапы тянешь, ладно?"
+    },
+    "line:873a2b9a": {
+      "source": "Hi again..",
+      "text": "Снова привет..."
+    },
+    "line:110a2ced": {
+      "source": "Welcome back!",
+      "text": "С возвращением!"
+    },
+    "line:3d6b2203": {
+      "source": "You again?",
+      "text": "Опять ты?"
+    },
+    "line:ab5b2574": {
+      "source": "Thanks!",
+      "text": "Спасибо!"
+    },
+    "line:ac769d93": {
+      "source": "heh.. yea.. sorry..",
+      "text": "Хех... Ага... Извини."
+    },
+    "line:3a469ae4": {
+      "source": "So yeah, I had a mishap..",
+      "text": "В общем, со мной тут кое-что случилось..."
+    },
+    "line:e02f464d": {
+      "source": "I was helping the alchemist reach a high shelf",
+      "text": "Я помогал алхимику дотянуться до высокой полки."
+    },
+    "line:761f413a": {
+      "source": "I heard a loud bang",
+      "text": "Услышал громкий хлопок."
+    },
+    "line:cc4e48a3": {
+      "source": "I don't know where they went but I feel dirty again.",
+      "text": "Не знаю, куда исчез алхимик, но я снова чувствую себя грязным."
+    },
+    "line:5a7e4fd4": {
+      "source": "Any chance you can clean me up again?",
+      "text": "Можешь меня ещё раз помыть?"
+    },
+    "line:f9eb2b4a": {
+      "source": "Of course! Right this way!",
+      "text": "Конечно! Проходи!"
+    },
+    "line:6fdb2c3d": {
+      "source": "Awesome!",
+      "text": "Здорово!"
+    },
+    "line:fc6fdd10": {
+      "source": "I think I can still feel some explosion grime on me...",
+      "text": "Кажется, на мне ещё осталась грязь от взрыва..."
+    },
+    "line:6d726280": {
+      "source": "Mind washing more?",
+      "text": "Можешь ещё немного помыть?"
+    },
+    "line:fb4265f7": {
+      "source": "Yes",
+      "text": "Да"
+    },
+    "line:9ca994a5": {
+      "source": "My bad",
+      "text": "Моя ошибка."
+    },
+    "line:0a9993d2": {
+      "source": "No problem, thanks!",
+      "text": "Ничего страшного, спасибо!"
+    },
+    "line:0979dea3": {
+      "source": "Uh, I'm still really soapy!",
+      "text": "Эм, я ещё весь в мыле!"
+    },
+    "line:9f49d9d4": {
+      "source": "Could you wash it away?",
+      "text": "Можешь смыть пену?"
+    },
+    "line:3cdcbd4a": {
+      "source": "Yes",
+      "text": "Да"
+    },
+    "line:aaecba3d": {
+      "source": "My bad",
+      "text": "Моя ошибка."
+    },
+    "line:10bdb3a4": {
+      "source": "No problem, thanks!",
+      "text": "Ничего страшного, спасибо!"
+    },
+    "line:69ffe957": {
+      "source": "I'm so excited about this date!",
+      "text": "Так рад, что у нас свидание!"
+    },
+    "line:ffcfee20": {
+      "source": "I brought watermelon, bread, grapes, and some other stuff.",
+      "text": "Я принёс арбуз, хлеб, виноград и ещё кое-что."
+    },
+    "line:bea8f1f7": {
+      "source": "Is something on your mind?",
+      "text": "Тебя что-то беспокоит?"
+    },
+    "line:2898f680": {
+      "source": "Something happened last night",
+      "text": "Вчера вечером кое-что случилось."
+    },
+    "line:433cb27e": {
+      "source": "Oh no! Do you want to talk about it?",
+      "text": "Ох! Хочешь об этом поговорить?"
+    },
+    "line:d50cb509": {
+      "source": "It's just that something happened to Conrad, I hope he's okay.",
+      "text": "Просто с Конрадом кое-что случилось. Надеюсь, он в порядке."
+    },
+    "line:6f5dbc90": {
+      "source": "I hope he's okay too.",
+      "text": "Я тоже надеюсь, что он в порядке."
+    },
+    "line:4944dbda": {
+      "source": "This is delicious!",
+      "text": "Как вкусно!"
+    },
+    "line:ead1bf44": {
+      "source": "Wow, it's an experience seeing you eat like that.",
+      "text": "Ух ты, смотреть, как ты ешь, — это что-то."
+    },
+    "line:7ce1b833": {
+      "source": "Like what?",
+      "text": "Как это?"
+    },
+    "line:c6b0b1aa": {
+      "source": "Oh like, swallowing things whole?",
+      "text": "Ну, что ты глотаешь всё целиком?"
+    },
+    "line:5080b6dd": {
+      "source": "It depends! Dragon thing.",
+      "text": "Когда как! Драконья привычка."
+    },
+    "line:3223473f": {
+      "source": "Hehe, I'm excited to get into the dating scene again.",
+      "text": "Хе-хе, здорово снова ходить на свидания."
+    },
+    "line:eed2cc64": {
+      "source": "Hey!",
+      "text": "Привет!"
+    },
+    "line:78e2cb13": {
+      "source": "I was thinking about what you said,",
+      "text": "Я тут подумал о твоих словах."
+    },
+    "line:c2b3c28a": {
+      "source": "you know about getting back into the dating scene...",
+      "text": "Ну, насчёт того, чтобы снова ходить на свидания..."
+    },
+    "line:5483c5fd": {
+      "source": "Yeah",
+      "text": "Ага"
+    },
+    "line:f716a163": {
+      "source": "I knew you were too busy, so I figured I'd bring the date to you!",
+      "text": "Я знал, что у тебя полно дел, вот и решил устроить свидание прямо у тебя!"
+    },
+    "line:6126a614": {
+      "source": "Awesome! Come on in..",
+      "text": "Здорово! Заходи..."
     }
   }
 }
