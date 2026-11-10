@@ -1,0 +1,244 @@
+{
+  "worklistSha256": "9ee266ffbc4643e5b269b75ca03edfb763f1178d3803aa65b627d487c2b0535a",
+  "translationSha256": "bb2441fd3de76a9ce76c551d7753587c98d70ffce582b9d2de38301b61e675e6",
+  "verifiedRegistryAndSourceBindings": 13,
+  "caseCount": 27,
+  "authoredRows": 502,
+  "note": "Context rows are a source index, not proof that every listed line is an adaptation dependency. Remaining cases require in-context adjudication.",
+  "cases": {
+    "alexander-number-seven-taste": {
+      "registry": "localization/evidence/special-scenes-alexander-20261107.json",
+      "directAuthoringRows": 10,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "alexander-family-crest": {
+      "registry": "localization/evidence/special-scenes-alexander-20261107.json",
+      "directAuthoringRows": 10,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "alexander-college-self-introduction": {
+      "registry": "localization/evidence/special-scenes-alexander-colon-20261107.json",
+      "directAuthoringRows": 9,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "alexander-proletarian-register": {
+      "registry": "localization/evidence/special-scenes-alexander-language-20261107.json",
+      "directAuthoringRows": 7,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "alexander-teacher-professor-correction": {
+      "registry": "localization/evidence/special-scenes-alexander-language-20261107.json",
+      "directAuthoringRows": 6,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "anonymous-dragon-address": {
+      "registry": "localization/evidence/special-scenes-anonymous-dragons-20261110.json",
+      "directAuthoringRows": 20,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "conrad-special-endings": {
+      "registry": "localization/evidence/special-scenes-conrad-endings-20261107.json",
+      "directAuthoringRows": 24,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "dirty-double-meaning": {
+      "registry": "localization/evidence/special-scenes-conrad-language-20261107.json",
+      "directAuthoringRows": 12,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "professional-double-meaning": {
+      "registry": "localization/evidence/special-scenes-conrad-language-20261107.json",
+      "directAuthoringRows": 15,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "big-c-nickname": {
+      "registry": "localization/evidence/special-scenes-conrad-language-20261107.json",
+      "directAuthoringRows": 14,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "yarn-missing-named-destinations": {
+      "registry": "localization/evidence/special-scenes-missing-targets-20261107.json",
+      "directAuthoringRows": 0,
+      "directNonAuthoringIds": [
+        "yarn:line:22deeef6",
+        "yarn:line:25f35611",
+        "yarn:line:3ed2f649",
+        "yarn:line:4b9b3a43",
+        "yarn:line:67fa34ad",
+        "yarn:line:722243c8",
+        "yarn:line:74c28add",
+        "yarn:line:97ab84a8",
+        "yarn:line:a8e2f13e",
+        "yarn:line:b4eee981",
+        "yarn:line:ce938344",
+        "yarn:line:db5b3129",
+        "yarn:line:e2f28daa",
+        "yarn:line:e41244bf",
+        "yarn:line:f1ca33da"
+      ],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "yarn-alexander-question-once-state": {
+      "registry": "localization/evidence/special-scenes-pending-20261107.json",
+      "directAuthoringRows": 7,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "alexander-romance-route": {
+      "registry": "localization/evidence/special-scenes-romance-20261107.json",
+      "directAuthoringRows": 2,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "ryan-conrad-romance-routing": {
+      "registry": "localization/evidence/special-scenes-romance-20261107.json",
+      "directAuthoringRows": 5,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {
+        "Alexander_5_intro": 27,
+        "Alexander_5_required": 20,
+        "Conrad_4_Conrad_Romanced": 11,
+        "Conrad_4_Ryan_Conrad_Romanced": 14,
+        "Conrad_5_intro_conrad_romanced": 18,
+        "Conrad_5_intro_ryan_conrad_romanced": 14,
+        "Conrad_5_intro_ryan_romanced": 12,
+        "Conrad_5_outro_conrad_romanced": 9,
+        "Conrad_5_outro_ryan_conrad_romanced": 9,
+        "Conrad_5_required_conrad_romanced": 14,
+        "Conrad_5_required_ryan_conrad_romanced": 13,
+        "Conrad_5_required_ryan_romanced": 16,
+        "Conrad_Intro_4": 53,
+        "Conrad_Intro_5": 5,
+        "Conrad_Outro_4": 6,
+        "Conrad_Outro_4_Conrad_Romanced": 18,
+        "Conrad_Outro_4_Ryan_Conrad_Romanced": 22,
+        "Conrad_Outro_4_Ryan_Romanced": 10,
+        "Conrad_Ryan_Romanced": 16,
+        "Conrad_required_4": 7,
+        "Ryan_5_Outro_conrad_romanced": 14,
+        "Ryan_5_Outro_ryan_conrad_romanced": 15,
+        "Ryan_5_Outro_ryan_romanced": 13,
+        "Ryan_5_Required_conrad_romanced": 19,
+        "Ryan_5_Required_ryan_conrad_romanced": 20,
+        "Ryan_5_intro": 45,
+        "Ryan_5_intro_ryan_romanced": 6
+      }
+    },
+    "editor-route-prompt": {
+      "registry": "localization/evidence/special-scenes-ryan-language-20261107.json",
+      "directAuthoringRows": 3,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "mouth-full-speech": {
+      "registry": "localization/evidence/special-scenes-ryan-language-20261107.json",
+      "directAuthoringRows": 8,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "salmon-guy-dragon": {
+      "registry": "localization/evidence/special-scenes-ryan-language-20261107.json",
+      "directAuthoringRows": 17,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "movie-title-choices": {
+      "registry": "localization/evidence/special-scenes-ryan-language-20261107.json",
+      "directAuthoringRows": 19,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "conrad-height-euphemism": {
+      "registry": "localization/evidence/special-scenes-ryan-language-20261107.json",
+      "directAuthoringRows": 18,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "ryan-question-about-a-question": {
+      "registry": "localization/evidence/special-scenes-ryan-question-20261107.json",
+      "directAuthoringRows": 23,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "conrad-emphatic-greetings": {
+      "registry": "localization/evidence/special-scenes-typography-20261110.json",
+      "directAuthoringRows": 2,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {
+        "Conrad_5_intro_ryan_romanced": 12,
+        "Conrad_Intro_1": 4
+      }
+    },
+    "conrad-scales-aside": {
+      "registry": "localization/evidence/special-scenes-typography-20261110.json",
+      "directAuthoringRows": 1,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {
+        "Conrad_Intro_4": 53
+      }
+    },
+    "ryan-branch-hesitation-sizing": {
+      "registry": "localization/evidence/special-scenes-typography-20261110.json",
+      "directAuthoringRows": 1,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "kobold-yip-speech": {
+      "registry": "localization/evidence/special-scenes-yip-20261107.json",
+      "directAuthoringRows": 20,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {
+        "Alexander_1_Outro": 5,
+        "Alexander_3_Outro": 9,
+        "Alexander_3_required": 20,
+        "Alexander_4_intro": 20,
+        "RyanMuddy_Intro": 12,
+        "Ryan_1_Outro": 10,
+        "Ryan_1_intro": 16,
+        "Ryan_2_intro": 19,
+        "Ryan_SexScene": 3,
+        "Ryan_grab_basket": 18
+      }
+    },
+    "kobold-yip-film-title": {
+      "registry": "localization/evidence/special-scenes-yip-20261107.json",
+      "directAuthoringRows": 2,
+      "directNonAuthoringIds": [],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "new-slot-display": {
+      "registry": "localization/evidence/non-yarn-translation-scope-20261110.md",
+      "directAuthoringRows": 3,
+      "directNonAuthoringIds": [
+        "managed:macos:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:1",
+        "managed:macos:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:3",
+        "managed:macos:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:5",
+        "managed:windows:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:1",
+        "managed:windows:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:3",
+        "managed:windows:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:5"
+      ],
+      "unauthoredIndexedContextByGroup": {}
+    },
+    "missing-yarn-line-display": {
+      "registry": "localization/evidence/non-yarn-translation-scope-20261110.md",
+      "directAuthoringRows": 0,
+      "directNonAuthoringIds": [
+        "managed:macos:YarnSpinner.Unity:System.Void Yarn.Unity.LocalizedLine::.cctor()#ldstr:0",
+        "managed:macos:YarnSpinner.Unity:System.Void Yarn.Unity.LocalizedLine::.cctor()#ldstr:2",
+        "managed:windows:YarnSpinner.Unity:System.Void Yarn.Unity.LocalizedLine::.cctor()#ldstr:0",
+        "managed:windows:YarnSpinner.Unity:System.Void Yarn.Unity.LocalizedLine::.cctor()#ldstr:2"
+      ],
+      "unauthoredIndexedContextByGroup": {}
+    }
+  }
+}
