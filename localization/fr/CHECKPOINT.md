@@ -27,8 +27,8 @@ A preliminary direct comparison of all 28 current English/French entries found a
 | probe | Bounded French synthetic paths observed on macOS and CrossOver, including body/choice/settings frames and progression; native Windows and corpus-specific fit pending. See renderer-probe.md. |
 | source | Pinned worklist generated; verify source/preserve-exact gate and current shared receipts before translation. |
 | glossary | Two author self-review layers reconciled on current hashes under the owner exception; the earlier crest finding was withdrawn after scene review. Independent review was not claimed. See glossary-review.md. |
-| special-scene decisions | 16/27 groups have author-reviewed draft wording; the anonymous group retains a source buzzing-command boundary, and 11 groups remain unreviewed. Ordinary translation remains gated. See special-scenes.md. |
-| translate-edit | 120/1,947 authored as special-scene preparation, including intentional exact vocalizations and ellipses; no ordinary batch started. Paired diagnostic assets verified. |
+| special-scene decisions | 18/27 groups have author-reviewed draft wording; the anonymous group retains a source buzzing-command boundary, and 9 groups remain unreviewed. Ordinary translation remains gated. See special-scenes.md. |
+| translate-edit | 148/1,947 authored as special-scene preparation, including intentional exact vocalizations and ellipses; no ordinary batch started. Paired diagnostic assets verified. |
 | editorial | Not run; full semantic audit, independent delta and regression catalog pending. |
 | fonts | Slot and bounded live text samples resolved; full corpus coverage and typography remain unverified. |
 | textures | Textures with text excluded and preserved. |
@@ -37,7 +37,7 @@ A preliminary direct comparison of all 28 current English/French entries found a
 | screenshot upload / review | Not requested / not run. |
 | release / archival | Not complete; no publication, push or deployment authorized. |
 
-Next: complete and review the remaining 11 special-scene groups, resolve or explicitly classify the anonymous-scene technical boundary before ordinary text; use the exact paired English worklist and preserve source-bound handling. If the shared glossary or probe needs changes outside `localization/fr/` and this run directory, report the exact boundary instead of modifying shared files. A verified locale-only commit requires the specified `.git/codex-canonical-commit.lock`, empty pre-existing index, complete staged review and committed-tree verification; do not reset, amend or interfere with other lanes.
+Next: complete and review the remaining 9 special-scene groups, resolve or explicitly classify the anonymous-scene technical boundary before ordinary text; use the exact paired English worklist and preserve source-bound handling. If the shared glossary or probe needs changes outside `localization/fr/` and this run directory, report the exact boundary instead of modifying shared files. A verified locale-only commit requires the specified `.git/codex-canonical-commit.lock`, empty pre-existing index, complete staged review and committed-tree verification; do not reset, amend or interfere with other lanes.
 
 The Alexander register/professor batch has author-reviewed wording and paired 43-entry macOS/Windows partial asset readbacks; see special-scenes.md for hashes and limits. The buzzing finish-command boundary remains open pending a same-fixture, unmodified-English runtime comparison. CrossOver is not native Windows evidence.
 
@@ -52,3 +52,5 @@ The relationship and editor-question groups add ten scene IDs and paired 75-Yarn
 The Yip speech and film-title batch adds 20 IDs, including intentional exact vocalizations, and paired 95-Yarn-entry readbacks. A dash preserves the approved film title without triggering implicit-speaker parsing. Scene playback, audio and fit remain unverified. Current translation SHA-256: `765e4d612dbb1cfd427501f7a0e5580b780b25b016968b0f0749039e5c81a2b4`.
 
 The full-mouth and nickname groups add 22 IDs; paired asset readbacks cover 117 Yarn values. Branches, character presentation and visual fit still need actual scene checks. Current translation SHA-256: `6049fd5a18d7394b35199337ef6d215f543a89c58327a8fa6ea178c1c7f4f0fd`.
+
+The overlapping salmon and movie-choice groups add 28 IDs; paired partial readbacks cover 145 Yarn values. Scene branches and French fit remain unverified. Current translation SHA-256: `9747f6b49e356d098b022ff5b27f8522db23592e40bdec7afaa4a7f6dd919168`.
