@@ -399,8 +399,13 @@ build, authored locale inputs and pinned tools:
 Pass the stock `.app` on macOS and the stock Data directory on Windows. The
 checker builds in a disposable directory. It compares the entire macOS
 bundle and verifies the candidate signature, or compares all Windows ZIP
-members, including the receipt, against the fresh reference. For CJK packages
+members, including the receipt, against the fresh reference. It also compares
+the Unity asset metadata against stock, including type tables, object IDs and
+external references. The check allows only payload size and relocation fields
+to vary and requires valid object extents and zero padding. For CJK packages,
 pass the same `--cjk-font` and `--cjk-license` inputs as the original build.
+The CJK adapter verifies its intentional object additions in `sharedassets0.assets`,
+which is excluded from the fixed-object metadata check for those packages.
 Use the exact input representation recorded by the original package. A legacy
 platform directory and a shared file can produce identical game data with
 different input receipt hashes. Package equality is separate from source

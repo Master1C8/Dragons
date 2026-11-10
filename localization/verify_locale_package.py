@@ -12,6 +12,8 @@ import zipfile
 
 import build_macos_package as macos
 import build_windows_package as windows
+import cjk_font_fallback as cjk
+import verify_serialized_metadata as serialized
 
 
 def bundle_files(bundle):
@@ -62,6 +64,8 @@ def verify(platform, source, inputs, requested, inventory, scope, candidate, **t
     if candidate.is_symlink() or (platform == 'macos' and not candidate.is_dir()) or (
             platform == 'windows' and not candidate.is_file()):
         raise ValueError('expected a real candidate package')
+    # The CJK font adapter intentionally adds four objects to one asset.
+    added_object_asset = cjk.ASSET if tools.get('cjk_font') is not None else None
     scratch = Path(__file__).resolve().parent / 'work'
     scratch.mkdir(exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='package-verify-', dir=scratch) as directory:
@@ -72,10 +76,19 @@ def verify(platform, source, inputs, requested, inventory, scope, candidate, **t
         if platform == 'macos':
             comparison = compare_bundle(reference, candidate)
             subprocess.run(['codesign', '--verify', '--deep', '--strict', str(candidate)], check=True)
+            relative_data = macos.build_game.ASSET_RELATIVE.parent
+            metadata = serialized.verify(platform, Path(source) / relative_data,
+                                         lambda name: (candidate / relative_data / name).read_bytes(),
+                                         added_object_asset=added_object_asset)
         else:
             comparison = compare_archive(reference, candidate)
+            with zipfile.ZipFile(candidate) as archive:
+                metadata = serialized.verify(platform, Path(source),
+                                             lambda name: archive.read(f'{windows.DATA_FOLDER}/{name}'),
+                                             added_object_asset=added_object_asset)
     return {'platform': platform, 'locale': requested, **comparison,
-            'componentPreservation': report['componentPreservation']}
+            'componentPreservation': report['componentPreservation'],
+            'serializedMetadataPreservation': metadata}
 
 
 def main():

@@ -184,6 +184,25 @@ with matching inventory and receipt. The rebuild preserves the builder's
 source-pinned object and managed checks. This closes package comparison for
 these two artifacts. Source discovery and runtime reachability remain open.
 
+The same verifier now independently compares the original Unity v22 metadata
+against the actual app files and ZIP members. It permits the total file size,
+each object's stored size and relative offset to change. Type records, object
+IDs and type indices, script and external references, reserved fields and the
+rest of the metadata must match byte for byte. Object extents must stay within
+the file, with at most 15 zero padding bytes between objects and at the end.
+The unchanged portions of the metadata matched across all nine replaced Unity
+assets per platform, covering 30,279 macOS and 29,906 Windows object descriptors.
+A focused regression permits a longer payload that relocates the next object
+and rejects a same-length external path mutation and nonzero payload padding.
+
+The integrated verification used the actual complete Russian control packages
+and historical inputs restored from `702cb7e^`. The receipts in
+`localization/work/serialized-metadata-20261110.rrvXVj/` have SHA-256
+`f814bda5cab3deb57757d03efacc9bbda7e49e177c070f4ef67c88230cdb7b59` for macOS and
+`4c01d6ab325ca222fa1689e243363cf8e60b21afda08d3bfea89b1c6e287c122` for Windows.
+This closes the raw metadata comparison for the nine assets in the controls.
+Object payloads and managed assemblies retain their separate checks.
+
 The source gate remains open. Exact file preservation covers untouched
 resources even when they contain engine metadata. It does not classify every
 player-visible source or prove the complete field-level preservation contract
