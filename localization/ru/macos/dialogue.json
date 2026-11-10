@@ -3718,6 +3718,494 @@
     "line:ec00a1fe": {
       "source": "The mount? I... suppose!",
       "text": "Станок? Я... пожалуй, не против!"
+    },
+    "line:505154a4": {
+      "source": "I've been thinking...",
+      "text": "Я тут подумал..."
+    },
+    "line:c66153d3": {
+      "source": "I couldn't help but notice the... device over there.",
+      "text": "Я не мог не заметить... то устройство."
+    },
+    "line:577cec43": {
+      "source": "That's a mount, no?",
+      "text": "Это ведь станок?"
+    },
+    "line:c14ceb34": {
+      "source": "Sure is!",
+      "text": "Он самый!"
+    },
+    "line:807df02d": {
+      "source": "Do you want to use it?",
+      "text": "Хочешь им воспользоваться?"
+    },
+    "line:24c52c54": {
+      "source": "I'm... wondering...",
+      "text": "Я... вот думаю..."
+    },
+    "line:b2f52b23": {
+      "source": "If I could uhm...",
+      "text": "А можно, эм..."
+    },
+    "line:08a422ba": {
+      "source": "Maybe like...",
+      "text": "Может быть, ну..."
+    },
+    "line:9e9425cd": {
+      "source": "Just possibly...",
+      "text": "Если вдруг..."
+    },
+    "line:3d014153": {
+      "source": "If you want to use it that's fine!",
+      "text": "Если хочешь воспользоваться им, пожалуйста!"
+    },
+    "line:11604fbd": {
+      "source": "No need to be nervous, Alexander!",
+      "text": "Не волнуйся, Александр!"
+    },
+    "line:ab314624": {
+      "source": "I think I'd like to?",
+      "text": "Думаю, я не против?.."
+    },
+    "line:875048ca": {
+      "source": "I know. I know.",
+      "text": "Я знаю. Знаю."
+    },
+    "line:164df75a": {
+      "source": "I think I'd like to use it?",
+      "text": "Думаю, я хотел бы им воспользоваться?.."
+    },
+    "line:ebd9b4d3": {
+      "source": "Oh.",
+      "text": "О."
+    },
+    "line:7de9b3a4": {
+      "source": "Uh... uhm...",
+      "text": "Э... эм..."
+    },
+    "line:c7b8ba3d": {
+      "source": "Possibly...?",
+      "text": "Возможно?.."
+    },
+    "line:5188bd4a": {
+      "source": "Only If that's alright-",
+      "text": "Только если ты не против..."
+    },
+    "line:f21dd9d4": {
+      "source": "Of course it is!",
+      "text": "Конечно, не против!"
+    },
+    "line:de7cd73a": {
+      "source": "Sure it is. Thanks to Conrad for having me get it.",
+      "text": "Конечно. Спасибо Конраду, что уговорил меня его заказать."
+    },
+    "line:642ddea3": {
+      "source": "Alright alright... Then I think I'd like to use it?",
+      "text": "Хорошо, хорошо... Тогда, думаю, я хотел бы им воспользоваться?.."
+    },
+    "line:484cd04d": {
+      "source": "Conrad...?",
+      "text": "Конрад?.."
+    },
+    "line:d9516fdd": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:4f6168aa": {
+      "source": "I think I'd like to use it?",
+      "text": "Думаю, я хотел бы им воспользоваться?.."
+    },
+    "line:aae8afca": {
+      "source": "Fine with me!",
+      "text": "Я не против!"
+    },
+    "line:8689a124": {
+      "source": "I'll happily get that for you.",
+      "text": "С удовольствием его принесу."
+    },
+    "line:3cd8a8bd": {
+      "source": "Mhm... Thank you.",
+      "text": "М-м... Благодарю."
+    },
+    "line:10b9a653": {
+      "source": "Okay- Thanks.",
+      "text": "Хорошо... Спасибо."
+    },
+    "line:9b9567ec": {
+      "source": "I feel much better.",
+      "text": "Мне гораздо лучше."
+    },
+    "line:0da5609b": {
+      "source": "I... Know this is unprompted.",
+      "text": "Я... понимаю, что говорю это без всякого повода."
+    },
+    "line:b7f46902": {
+      "source": "But, I think you've taught me something.",
+      "text": "Но, кажется, я кое-чему у тебя научился."
+    },
+    "line:21c46e75": {
+      "source": "Oh?",
+      "text": "О?"
+    },
+    "line:b0d9d1e5": {
+      "source": "But you're the teacher dragon.",
+      "text": "Но дракон-учитель тут ты."
+    },
+    "line:26e9d692": {
+      "source": "Professor, but yes. You have.",
+      "text": "Профессор. Но да, я кое-чему у тебя научился."
+    },
+    "line:4efc873f": {
+      "source": "I think I like being taken care of?",
+      "text": "Думаю, мне нравится, когда обо мне заботятся?"
+    },
+    "line:d8cc8048": {
+      "source": "Most people do!",
+      "text": "Почти всем нравится!"
+    },
+    "line:f4ad8ea6": {
+      "source": "I like taking care of you.",
+      "text": "Мне нравится о тебе заботиться."
+    },
+    "line:629d89d1": {
+      "source": "Well, yes. I mean more... Primally?",
+      "text": "Ну да. Я имею в виду нечто более... первобытное?"
+    },
+    "line:5738ea38": {
+      "source": "That nice to hear... But, I mean being taken care of more... Primally?",
+      "text": "Приятно это слышать... Но я говорю о заботе в более... первобытном смысле?"
+    },
+    "line:c108ed4f": {
+      "source": "I enjoy when you tell me what to do with a pat of your hand.",
+      "text": "Мне нравится, когда ты лёгким прикосновением даёшь мне понять, что делать."
+    },
+    "line:7b59e4d6": {
+      "source": "I like how sure of yourself you are. Even if it just has to do with washing.",
+      "text": "Мне нравится твоя уверенность. Пусть это и касается всего лишь мойки."
+    },
+    "line:ed69e3a1": {
+      "source": "It's nice to relinquish control, even for a moment.",
+      "text": "Приятно уступить контроль, пусть даже на миг."
+    },
+    "line:7c745c31": {
+      "source": "<size=70%> A big dragon giving me control. Woah.",
+      "text": "<size=70%> Большой дракон отдаёт мне контроль. Ух ты."
+    },
+    "line:99fd9b51": {
+      "source": "I'm happy to give you a place you can relax.",
+      "text": "Здорово, что тебе есть где расслабиться рядом со мной."
+    },
+    "line:ea445b46": {
+      "source": "It is rather novel isn't it?",
+      "text": "Весьма непривычно, не так ли?"
+    },
+    "line:0fcd9c26": {
+      "source": "I'll be back soon, yeah? Thanks for the wash.",
+      "text": "Я скоро вернусь, ладно? Спасибо за мойку."
+    },
+    "line:23ac92c8": {
+      "source": "It's freeing. I'll be back, yeah?",
+      "text": "Это даёт чувство свободы. Я ещё вернусь, ладно?"
+    },
+    "line:6d5ba814": {
+      "source": "Something went wrong with flags!",
+      "text": "Что-то пошло не так с флагами!"
+    },
+    "line:fc461784": {
+      "source": "Help the developers out please..",
+      "text": "Помогите разработчикам, пожалуйста..."
+    },
+    "line:6a7610f3": {
+      "source": "conrad hooked up with ryan",
+      "text": "конрад сошёлся с райаном"
+    },
+    "line:0d9de1a1": {
+      "source": "player hooked up with conrad",
+      "text": "у игрока роман с конрадом"
+    },
+    "line:9bade6d6": {
+      "source": "player hooked up with ryan",
+      "text": "у игрока роман с райаном"
+    },
+    "line:21fcef4f": {
+      "source": "Hey, Alexander.",
+      "text": "Привет, Александр."
+    },
+    "line:14598ca6": {
+      "source": "Hey, big guy!",
+      "text": "Привет, здоровяк!"
+    },
+    "line:b7cce838": {
+      "source": "Hello.",
+      "text": "Здравствуй."
+    },
+    "line:82698bd1": {
+      "source": "Hey there.",
+      "text": "Привет."
+    },
+    "line:38388248": {
+      "source": "I'm here for a wash.",
+      "text": "Я пришёл помыться."
+    },
+    "line:ae08853f": {
+      "source": "Hope you're doing alright!",
+      "text": "Надеюсь, у тебя всё хорошо!"
+    },
+    "line:3f153aaf": {
+      "source": "Yeah! Just went on a date with Ryan.",
+      "text": "Ага! Только что со свидания с Райаном."
+    },
+    "line:a9253dd8": {
+      "source": "Oh yeah? The sky blue drake I've seen around?",
+      "text": "Вот как? Тот небесно-голубой дрейк, которого я здесь видел?"
+    },
+    "line:4cacfab8": {
+      "source": "Wonderful to hear you're seeing someone!",
+      "text": "Рад слышать, что ты с кем-то встречаешься!"
+    },
+    "line:da9cfdcf": {
+      "source": "Yeah! Just went on a date with Conrad.",
+      "text": "Ага! Только что со свидания с Конрадом."
+    },
+    "line:60cdf456": {
+      "source": "Oh yeah? The little red drake?",
+      "text": "Вот как? Тот маленький красный дрейк?"
+    },
+    "line:f6fdf321": {
+      "source": "Wonderful to hear you're seeing someone!",
+      "text": "Рад слышать, что ты с кем-то встречаешься!"
+    },
+    "line:556897bf": {
+      "source": "I am! Even better now that you're here.",
+      "text": "Всё хорошо! Теперь, когда ты здесь, ещё лучше."
+    },
+    "line:ef399e26": {
+      "source": "I'm doing good!",
+      "text": "У меня всё хорошо!"
+    },
+    "line:c35890c8": {
+      "source": "Oh. That's... Wonderful!",
+      "text": "О. Это... чудесно!"
+    },
+    "line:79099951": {
+      "source": "I'm happy to be here too.",
+      "text": "Я тоже рад здесь оказаться."
+    },
+    "line:7e2421b6": {
+      "source": "Wonderful to hear.",
+      "text": "Рад это слышать."
+    },
+    "line:e81426c1": {
+      "source": "Anywho, I'm in need of a clean.",
+      "text": "Так или иначе, мне нужно помыться."
+    },
+    "line:8b3abbf7": {
+      "source": "On it!",
+      "text": "Сейчас!"
+    },
+    "line:a75bb519": {
+      "source": "I'll go get the gate.",
+      "text": "Пойду открою ворота."
+    },
+    "line:1d0abc80": {
+      "source": "Looking forward to the wash.",
+      "text": "С нетерпением жду мойки."
+    },
+    "line:316bb26e": {
+      "source": "Thanks.",
+      "text": "Благодарю."
+    },
+    "line:1c856f1c": {
+      "source": "So, how was your date?",
+      "text": "Ну, как прошло твоё свидание?"
+    },
+    "line:8ab5686b": {
+      "source": "Was great! Ryan is a sweetheart.",
+      "text": "Отлично! Райан — сама доброта."
+    },
+    "line:681117ec": {
+      "source": "It was great. Conrad is wild. Good wild.",
+      "text": "Отлично. Конрад просто дикий. В хорошем смысле."
+    },
+    "line:e0c8c57b": {
+      "source": "It was good. We had sex.",
+      "text": "Хорошо. У нас был секс."
+    },
+    "line:30e461f2": {
+      "source": "That's good. You deserve a decent man.",
+      "text": "Это хорошо. Ты заслуживаешь порядочного мужчину."
+    },
+    "line:a6d46685": {
+      "source": "I'm certain he also finds you pleasant!",
+      "text": "Уверен, ему с тобой тоже приятно!"
+    },
+    "line:37c9d915": {
+      "source": "Thanks, You're pleasant too!",
+      "text": "Спасибо! С тобой тоже приятно!"
+    },
+    "line:44701902": {
+      "source": "Thanks!",
+      "text": "Спасибо!"
+    },
+    "line:a1f9de62": {
+      "source": "Thanks. That's kind of you to say.",
+      "text": "Спасибо. Весьма любезно с твоей стороны."
+    },
+    "line:d2401e75": {
+      "source": "Of course!",
+      "text": "Разумеется!"
+    },
+    "line:fe21109b": {
+      "source": "Hah, he seems like the wild type.",
+      "text": "Ха, он и вправду кажется необузданным."
+    },
+    "line:5db47405": {
+      "source": "I'm glad you enjoy him. I'm certain he finds you pleasant.",
+      "text": "Рад, что тебе с ним хорошо. Уверен, ему с тобой тоже приятно."
+    },
+    "line:cb847372": {
+      "source": "Thanks, You're pleasant too!",
+      "text": "Спасибо! С тобой тоже приятно!"
+    },
+    "line:e7e57d9c": {
+      "source": "Thanks!",
+      "text": "Спасибо!"
+    },
+    "line:71d57aeb": {
+      "source": "Thanks. That's kind of you to say.",
+      "text": "Спасибо. Весьма любезно с твоей стороны."
+    },
+    "line:76f8c20c": {
+      "source": "Of course!",
+      "text": "Разумеется!"
+    },
+    "line:87233429": {
+      "source": "Oh.",
+      "text": "О."
+    },
+    "line:1113335e": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:ab423ac7": {
+      "source": "Wonderful!",
+      "text": "Чудесно!"
+    },
+    "line:3d723db0": {
+      "source": "Must mean you two are a good match.",
+      "text": "Значит, вы хорошо подходите друг другу."
+    },
+    "line:505e150f": {
+      "source": "Thanks for the clean.",
+      "text": "Спасибо за мойку."
+    },
+    "line:c66e1278": {
+      "source": "Tonight- on campus. The library is the large blue spire building.",
+      "text": "Сегодня вечером, на территории колледжа. Библиотека — большое синее здание со шпилем."
+    },
+    "line:23e7d518": {
+      "source": "Approach the dragon entrance, and I will let you in.",
+      "text": "Подойди ко входу для драконов, и я тебя впущу."
+    },
+    "line:b5d7d26f": {
+      "source": "I'm excited.",
+      "text": "Жду с нетерпением."
+    },
+    "line:0f86dbf6": {
+      "source": "So am I!",
+      "text": "Я тоже!"
+    },
+    "line:3a23b81f": {
+      "source": "Sounds really cool.",
+      "text": "Звучит здорово."
+    },
+    "line:99b6dc81": {
+      "source": "I'm glad.",
+      "text": "Я рад."
+    },
+    "line:ac13bf68": {
+      "source": "It is indeed rather cool.",
+      "text": "В самом деле, это прекрасное место."
+    },
+    "line:1642b6f1": {
+      "source": "I'll get out of your scales now. Thank you for the wash.",
+      "text": "Ладно, не буду больше путаться у тебя под лапами. Спасибо за мойку."
+    },
+    "line:8072b186": {
+      "source": "See you tonight.",
+      "text": "До вечера."
+    },
+    "line:116f0e16": {
+      "source": "That should be every spot.",
+      "text": "Кажется, ни пятнышка не осталось."
+    },
+    "line:875f0961": {
+      "source": "Thank you for the clean!",
+      "text": "Спасибо за мойку!"
+    },
+    "line:5d36d5c8": {
+      "source": "I'm happy to have met you.",
+      "text": "Я рад нашему знакомству."
+    },
+    "line:cb06d2bf": {
+      "source": "As am I.",
+      "text": "Как и я."
+    },
+    "line:7157db26": {
+      "source": "Aw, thanks Alexander.",
+      "text": "Ох, спасибо, Александр."
+    },
+    "line:e767dc51": {
+      "source": "Anywho, I'll get out of your scales now.",
+      "text": "Так или иначе, не буду больше путаться у тебя под лапами."
+    },
+    "line:44f2b8cf": {
+      "source": "Goodbye!",
+      "text": "До свидания!"
+    },
+    "line:370d719b": {
+      "source": "Hm?",
+      "text": "М?"
+    },
+    "line:f9c800f2": {
+      "source": "I do!",
+      "text": "Да!"
+    },
+    "line:763c6a82": {
+      "source": "I think you're good looking.",
+      "text": "По-моему, ты красивый."
+    },
+    "line:5a5d646c": {
+      "source": "Truly?",
+      "text": "В самом деле?"
+    },
+    "line:cc6d631b": {
+      "source": "That... makes me feel a lot more sure of myself then.",
+      "text": "Тогда... я чувствую себя гораздо увереннее."
+    },
+    "line:e00c6df5": {
+      "source": "Thanks.",
+      "text": "Спасибо."
+    },
+    "line:7111d265": {
+      "source": "That makes me feel a lot more sure of myself then.",
+      "text": "Тогда я чувствую себя гораздо увереннее."
+    },
+    "line:963981e4": {
+      "source": "Oh- I'm sorry for making a mess...",
+      "text": "Ох... Прости, что я тут напачкал..."
+    },
+    "line:c777ce0c": {
+      "source": "<i> that feels nice...</i>",
+      "text": "<i> это приятно...</i>"
+    },
+    "line:acab92d4": {
+      "source": "Nnf... I believe I needed that. Thank you.",
+      "text": "М-м... Полагаю, мне это было необходимо. Благодарю."
+    },
+    "line:c60c65e8": {
+      "source": "Oh my. I suppose I could use the mount!",
+      "text": "Ох. Пожалуй, я мог бы воспользоваться станком!"
     }
   }
 }
