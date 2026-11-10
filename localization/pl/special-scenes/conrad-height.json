@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-ryan-language-20261107.json",
+  "sourceRegistrySha256": "6209639693f1c03ea71bd49a7da0e994ecd8262b04a0e26223f6320be1f8a14d",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "conrad-height-euphemism",
+      "wording": {
+        "yarn:line:8b7915f4": "Kto taki?",
+        "yarn:line:31281c6d": "To taki NAPRAWDĘ uroczy czerwony smok, który przychodzi do myjni!",
+        "yarn:line:a7181b1a": "To czerwony smok. Myślę, że przypadlibyście sobie do gustu!",
+        "yarn:line:3605a48a": "Och! Chyba go widziałem. Ten malutki, tak?",
+        "yarn:line:a035a3fd": "Woli określenie „niedobór wzrostu”... Ale tak.",
+        "yarn:line:69dd6a73": "Mhm! Próbuje poznawać nowych ludzi.",
+        "yarn:line:45bc649d": "Och...",
+        "yarn:line:d38c63ea": "To naprawdę urocze.",
+        "yarn:line:ffed6d04": "Och, wspaniale. Wygląda na to, że jesteśmy podobni.",
+        "yarn:line:d9c91bca": "A co u ciebie? Spotykasz się z kimś?",
+        "yarn:line:48d4a45a": "Jest taki czerwony smok, Conrad. Jest... porywczy, ale uroczy.",
+        "yarn:line:dee4a32d": "Tak! Conrad, jest przeuroczy. Chociaż nie znosi, kiedy tak mówię.",
+        "yarn:line:b90f527f": "O, to ten malutki smok, którego widziałem niedawno przy wejściu, tak?",
+        "yarn:line:2f3f5508": "Hej! On ma tylko... „niedobór wzrostu”.",
+        "yarn:line:a0cb3f78": "Mhm! To on.",
+        "yarn:line:956e5c91": "Och, przepraszam.",
+        "yarn:line:035e5be6": "Brzmi uroczo!",
+        "yarn:line:36fb380f": "To wspaniale, jest uroczy!"
+      },
+      "decision": "Use the same euphemism for Conrad’s small stature in both distinct relationship paths while preserving the separate reactions and alternatives.",
+      "mapping": "Keep all source IDs, both route flags, options and destinations unchanged.",
+      "positive": "Both route-specific replies use the same stature euphemism and preserve their follow-ups.",
+      "negative": "Reject inconsistent euphemisms, confused route contexts or swapped replies.",
+      "editorial": "author self-reviewed against both English path spans",
+      "adapter": "stable source-bound Yarn IDs and paired locale readers",
+      "runtimeVisual": "authored branches, route reachability and final fit not run"
+    }
+  ]
+}

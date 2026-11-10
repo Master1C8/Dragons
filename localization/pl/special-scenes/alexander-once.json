@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-pending-20261107.json",
+  "sourceRegistrySha256": "1a234659bba720f47996f6c5926ca6434472e3b0eae7de3d14105ef7790c7f94",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "yarn-alexander-question-once-state",
+      "wording": {
+        "yarn:line:21c0526b": "Lubisz być taki duży?",
+        "yarn:line:72a9b5bb": "Jesteś szczęśliwy?",
+        "yarn:line:838cdf1b": "Co o mnie myślisz?",
+        "yarn:line:a5a8a9d5": "Fajny masz grzebień. Co to takiego?",
+        "yarn:line:c2bdc402": "Jak smakuje liczba 7?",
+        "yarn:line:daa040eb": "Lubisz fiolet?",
+        "yarn:line:fc7aaaa0": "Jak to jest uczyć?"
+      },
+      "decision": "Keep seven distinct questions; reuse the previously reviewed crest and number-seven wording exactly.",
+      "mapping": "Preserve each once-state variable, instruction binding, initial false value and option destination in the paired source registry.",
+      "positive": "The source registry pairs each question ID to its own once-state and destination; the two shared questions match their complete branch cases.",
+      "negative": "Reject altered once-variable names, changed destinations, or inconsistent shared question wording.",
+      "editorial": "author self-reviewed seven displayed questions against English and neighboring crest and number branches",
+      "adapter": "stable IDs with source-preserved Yarn program and paired locale readers; full state-consumer dependency closure remains open",
+      "runtimeVisual": "actual once-only availability and progression, all related state consumers and authored fit not run"
+    }
+  ]
+}

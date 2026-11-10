@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-yip-20261107.json",
+  "sourceRegistrySha256": "fee1920f8fa1faa5e3739d92181a9b221c9865a31e4776155dfca4324786d7e8",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "kobold-yip-speech",
+      "wording": {
+        "yarn:line:14d2c62f": "Yip!",
+        "yarn:line:266836f8": "To... pierwszy raz, kiedy robisz dla mnie yip.",
+        "yarn:line:296ff3f4": "Yip!",
+        "yarn:line:3d516ddb": "Yip!",
+        "yarn:line:3e870ad0": "Yip!",
+        "yarn:line:4b9046ec": "Filmy o Yip-Manie są strasznie kiczowate...",
+        "yarn:line:52bf5ede": "Jestem TYM koboldem. Yip!",
+        "yarn:line:5544e245": "Yip!",
+        "yarn:line:5935a413": "Yip! <size=70%>(Tak)",
+        "yarn:line:5e181cf4": "Yip! <size=70%>(Brama)",
+        "yarn:line:5efde4e2": "Yip!",
+        "yarn:line:9444cdba": "Yip",
+        "yarn:line:9ec40945": "Haha. Tobie też „yip”.",
+        "yarn:line:a8ee5236": "Yip! <size=70%>(To dlatego, że uśpiona część twojego smoczego umysłu przypomina sobie głęboko zakorzeniony pomost językowy między twoim a moim gatunkiem. Niesie on ze sobą głębokie znaczenie i intencje koboldzich „yip”. To, że nagle mnie rozumiesz, wynika po prostu z tego, że nasza więź z czasem się zacieśniła i uaktywniła tę część twojego umysłu.)",
+        "yarn:line:b12a3f31": "Yip! <size=70%>(nie wiem)",
+        "yarn:line:c3e1f198": "Yip!",
+        "yarn:line:c8cde395": "Haha, doprawdy „yip”.",
+        "yarn:line:cf05a364": "Nie jestem pewien, czemu nagle rozumiem twoje „yip”.",
+        "yarn:line:e662501c": "Yip!",
+        "yarn:line:f1c14f75": "Yip-Man — Ostatnie Yip"
+      },
+      "decision": "Yip remains the context-sensitive kobold vocalization; option glosses distinguish yes, gate, uncertainty and the deliberately elaborate explanation. The film title and series are identical to the movie group.",
+      "mapping": "Preserve each line and choice ID, SFX commands, ordered TMP tags and the exact title linkage; do not insert an explicit speaker delimiter.",
+      "positive": "Each gloss conveys its own source meaning; the two film references remain linked.",
+      "negative": "Reject treating every Yip as the same fixed sentence, altered SFX or markup, or mismatched title/series.",
+      "editorial": "author self-reviewed against English sources and approved glossary",
+      "adapter": "stable source-bound Yarn IDs and paired locale readers; shared movie lines checked for exact target equality",
+      "runtimeVisual": "authored dialogue, effect timing, branch choices and final fit not run"
+    },
+    {
+      "id": "kobold-yip-film-title",
+      "wording": {
+        "yarn:line:4b9046ec": "Filmy o Yip-Manie są strasznie kiczowate...",
+        "yarn:line:f1c14f75": "Yip-Man — Ostatnie Yip"
+      },
+      "decision": "Yip remains the context-sensitive kobold vocalization; option glosses distinguish yes, gate, uncertainty and the deliberately elaborate explanation. The film title and series are identical to the movie group.",
+      "mapping": "Preserve each line and choice ID, SFX commands, ordered TMP tags and the exact title linkage; do not insert an explicit speaker delimiter.",
+      "positive": "Each gloss conveys its own source meaning; the two film references remain linked.",
+      "negative": "Reject treating every Yip as the same fixed sentence, altered SFX or markup, or mismatched title/series.",
+      "editorial": "author self-reviewed against English sources and approved glossary",
+      "adapter": "stable source-bound Yarn IDs and paired locale readers; shared movie lines checked for exact target equality",
+      "runtimeVisual": "authored dialogue, effect timing, branch choices and final fit not run"
+    }
+  ]
+}

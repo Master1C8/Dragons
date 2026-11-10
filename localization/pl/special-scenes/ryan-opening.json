@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-ryan-language-20261107.json",
+  "sourceRegistrySha256": "6209639693f1c03ea71bd49a7da0e994ecd8262b04a0e26223f6320be1f8a14d",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "mouth-full-speech",
+      "wording": {
+        "yarn:line:390f05be": "O rany... Co ty masz w pysku?",
+        "yarn:line:af3f02c9": "Cześć, Ryan, co tam niesiesz?",
+        "yarn:line:156e0b50": "Kosz piknikoffy...",
+        "yarn:line:835e0c27": "Nie mogę dobze mówić.",
+        "yarn:line:20cb68b9": "Wpuścisz mnie?",
+        "yarn:line:b6fb6fce": "Och! Dobrze. Otworzę bramę!",
+        "yarn:line:0caa6657": "Jasne, już ci otwieram.",
+        "yarn:line:9a9a6120": "Dziękujęff!"
+      },
+      "decision": "Ryan carries the picnic basket in his mouth; his impaired articulation has to remain intelligible through his last thanks.",
+      "mapping": "Keep both opening choices and both gate replies paired with their source IDs, and preserve the basket and gate.",
+      "positive": "Each opening choice leads into the basket explanation and both gate responses agree to open it.",
+      "negative": "Reject a missing basket, swapped choice or gate response, or undistorted final thanks.",
+      "editorial": "author self-reviewed against source scene",
+      "adapter": "stable source-bound Yarn IDs, ordered TMP tag validation and sampled Polish renderer",
+      "runtimeVisual": "authored exchange, editor flag state writes, route availability and fit not run"
+    },
+    {
+      "id": "editor-route-prompt",
+      "wording": {
+        "yarn:line:dbab7a39": "<b><i><size=130%>Czy to z twojej strony padła sugestia, żeby Conrad poznał Ryana?",
+        "yarn:line:4ab6c5a9": "tak",
+        "yarn:line:dc86c2de": "nie"
+      },
+      "decision": "The editor-conditioned question asks whether Ryan was suggested to Conrad; yes and no must remain attached to their respective opposite state writes.",
+      "mapping": "Keep the editor condition, yes/no line IDs, source controls and destinations unchanged.",
+      "positive": "The yes choice affirms the same suggested pairing and no denies it.",
+      "negative": "Reject swapped answers, a changed control variable, or inference that the prompt is visible in the released build.",
+      "editorial": "author self-reviewed against source scene",
+      "adapter": "stable source-bound Yarn IDs, ordered TMP tag validation and sampled Polish renderer",
+      "runtimeVisual": "authored exchange, editor flag state writes, route availability and fit not run"
+    }
+  ]
+}

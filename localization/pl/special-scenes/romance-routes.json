@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-romance-20261107.json",
+  "sourceRegistrySha256": "b8da7bd161086ad9cd4e1b8f858eaac78ff9cf7b634a118bcdbdcb8ec5857673",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "alexander-romance-route",
+      "wording": {
+        "yarn:line:a0e49f02": "<gradient=\"gold\"><b> Z przyjemnością! </b></gradient><size=70%> (Prowadzi do romansu z Alexandrem!)",
+        "yarn:line:0371fb9c": "<gradient=\"gold\"><b> Dziś wieczorem nie dam rady. Przepraszam. </b></gradient><size=70%> (Nie prowadzi do romansu!)"
+      },
+      "decision": "The library date invitation has a clear acceptance and a declined invitation; the latter says it leads to no romance and does not claim to erase prior state.",
+      "mapping": "Keep each choice ID, outcome label and state destination, with the original gold, bold and 70% tags.",
+      "positive": "Acceptance leads to Alexander romance and refusal says no romance.",
+      "negative": "Reject reversed outcomes, altered state or changed markup.",
+      "editorial": "author self-reviewed against adjacent invitation and choice scenes",
+      "adapter": "stable source-bound Yarn IDs, ordered TMP tag validation and sampled Polish choice renderer",
+      "runtimeVisual": "authored choices, route state transitions and fit not run"
+    },
+    {
+      "id": "ryan-conrad-romance-routing",
+      "wording": {
+        "yarn:line:36ff6bd9": "<gradient=\"gold\"><b> Znam smoka, Ryana. Mogę was ze sobą skontaktować? </b></gradient><size=70%>(Odblokowuje związek Conrada z Ryanem LUB romans z Ryanem)",
+        "yarn:line:7e9d40e6": "<gradient=\"gold\"><b> Chętnie spędzę z tobą czas... </b></gradient><size=70%> (Odblokowuje romans z Conradem)",
+        "yarn:line:bedc761d": "<gradient=\"gold\"><b>Znam pewnego czerwonego smoka. Myślę, że by ci się spodobał! </b></gradient><size=70%> (Łączy Ryana z Conradem!)",
+        "yarn:line:e104b8e4": "<gradient=\"gold\"><b>Och. Yyy. <size=70%> Ja chętnie... gdyby chodziło o mnie. </b></gradient><size=70%> (Potwierdza romans z Ryanem!)",
+        "yarn:line:f5a81524": "<gradient=\"gold\"><b>Nikt nie przychodzi mi teraz do głowy.</b></gradient><size=70%> (Potwierdza romans z Conradem!)"
+      },
+      "decision": "The first choice unlocks either the Conrad/Ryan pairing or Ryan romance; the alternatives separately unlock or lock the Conrad and Ryan routes.",
+      "mapping": "Keep five individual choice IDs, target names, OR distinction, source markup and variable destinations; do not collapse unlock and lock.",
+      "positive": "Each label names its original pairing or romance and distinguishes unlocking from committing to a route.",
+      "negative": "Reject swapped characters, lost OR, a changed destination, or collapsed unlock/lock meanings.",
+      "editorial": "author self-reviewed against adjacent invitation and choice scenes",
+      "adapter": "stable source-bound Yarn IDs, ordered TMP tag validation and sampled Polish choice renderer",
+      "runtimeVisual": "authored choices, route state transitions and fit not run"
+    }
+  ]
+}

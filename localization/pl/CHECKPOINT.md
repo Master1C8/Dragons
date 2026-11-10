@@ -101,3 +101,73 @@ Seven of 27 special groups have preparatory author-reviewed wording. Together th
 Author self-reviewed both complete numbered-taste and ornamental-crest groups, 20 IDs, in `special-scenes/alexander-questions.json` SHA-256 `1149baac676be8c3dd8183d5a07f70263fffa371628bf1eb3dd6b66e8d70d572`. It preserves lime versus lemon, number 7, all reply IDs, the wearable family crest, progressively smaller source regions and the four-nations reference. `python3 -B localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/create-alexander-questions.py` (SHA-256 `1dd9fad92eeb13dc463b9a97f56e2e8391d112e427aeb95f308a8dcfb010c033`) checks complete direct ID coverage, paired English and target reader acceptance, and exact ordered TMP tags. Actual branch execution and the extreme 10% text's legibility remain unrun.
 
 Current preparatory special decisions: 9 / 27 groups, 42 distinct authored IDs; 18 groups remain. No IDs are yet applied to a translation package. The later complete-corpus, packaging, authored runtime/visual and independent game-text audit gates remain open.
+
+### Alexander's college introduction and commit-lock observation
+
+Author self-reviewed the nine-ID `alexander-college-self-introduction` group in `special-scenes/alexander-college.json`, SHA-256 `c9915cede8ade61b64405eb565be754ad1dbac14846174d2f07e6a3b1b504226`. The approved college name and both choices remain distinct. The colon-ended boast is a special speaker-presenter input: the protected English Yarn table value stays exact, while its Polish body goes under the same ID in `speakers.json`. `python3 -B localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/create-alexander-college.py` (SHA-256 `4407c8f4de50ba4438432d01970d131f59b5506ca7c12119e9971672d0476351`) checks all nine source bindings on both builds, plus speaker-reader positive and missing-colon negative controls. The authored body and both actual branches have not been run.
+
+Ten of 27 groups have author-reviewed preparatory wording, 51 distinct IDs. Seventeen cases remain before ordinary translation; no target IDs have been applied to a package.
+
+The commit of `533c375de5033a359f60133f8bd8e45f31f00b39` completed with only its two intended Polish paths, and its parent and full tree were checked. Its shell cleanup then reported `rmdir: .git/codex-canonical-commit.lock: Directory not empty`; the directory contained `locale=pt-BR, owner_pid=48328`, a different owner. The precise ownership transition is unestablished, so mutual exclusion over every instant cannot be claimed. The other owner's lock was left untouched. A separate task-local zsh trap test did not reproduce removal in command substitution. Subsequent Polish commits must use an explicit owner/inode-checked lock holder and verify the entire staged and committed trees; report the shared coordination issue without editing shared tools.
+
+### Romance route choices
+
+Author self-reviewed the two Alexander choice labels and five Ryan/Conrad route labels against their English invitations and adjacent responses, in `special-scenes/romance-routes.json` SHA-256 `051b121f19dcafa1e7e04cb637481384509b3333effdda15ab9c06e2cada9103`. The labels distinguish unlocking from committing to a route, preserve the source OR and avoid assigning player gender. `python3 -B localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/create-romance-routes.py` (SHA-256 `a1c52dd986946a0d98b5a78494cbc5c0a023352d4a06091861e2830319cb3b3e`) checks the seven exact source IDs, target-reader acceptance and ordered tags on both builds. The actual authored choices, final fit, route states and downstream results have not been run; dynamic dependencies and broader route context remain final-audit dependencies.
+
+Current preparatory decisions: 12 / 27 special groups and 58 distinct IDs; 15 groups remain before ordinary translation. No target IDs have yet been applied to a package.
+
+### Ryan's opening and editor prompt
+
+Author self-reviewed the complete eight-ID basket-in-mouth exchange and three-ID editor-conditioned prompt in `special-scenes/ryan-opening.json` SHA-256 `2d71bb8abf7dde6b771b2e756fd0a7bfe945be130687c5c4ec62d3170e4fe388`. The former uses an intelligible muffled voice and retains both opening and gate choices; the latter retains the player's role in the suggestion, separate yes/no IDs and the unchanged editor and route controls. `python3 -B localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/create-ryan-opening.py` (SHA-256 `f788da0a2b99231d8fe9eeff7899dfe363b26d0e0e7281297b08ddff82abe689`) checks paired English source bindings, matching ordered tags and both locale readers. The authored paths, editor-flag state writes and final fit remain unrun; the flag's broader runtime initialization is not established by this review.
+
+Current preparatory decisions: 14 / 27 groups and 69 distinct IDs; 13 groups remain before ordinary translation. None is applied to a package. The college, romance and Ryan opening decisions and this checkpoint are awaiting the shared commit lock, which was held by live pt-BR owner PID 48328 at last inspection; preserve that owner's lock. Check its live owner again before waiting or acquiring it.
+
+### Conrad's nickname
+
+Author self-reviewed all 14 IDs of `big-c-nickname` in `special-scenes/big-c.json`, SHA-256 `38ac2a4682213ab125b1caa3b8b10f09cc4ce7fc7b9495a4b6eaf5f26af2dfbe`: the invented nickname uses Conrad's initial, the questioning choice repeats it, and the separate reply uses his name. `python3 -B localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/create-big-c.py` (SHA-256 `cf5b2536e257fc87c114d42d2d1b8692430796224a9d4f50561f8d81b3a53a06`) verifies complete direct IDs, exact paired source bindings, reader acceptance and ordered tags. Authored branch execution, route reachability and visual fit remain unrun.
+
+Current preparatory decisions: 15 / 27 groups and 83 distinct IDs, none applied to a package. Twelve groups remain before ordinary translation; the four latest scene files and this checkpoint await the canonical commit lock.
+
+### Anonymous dragons
+
+Author self-reviewed all 20 IDs across the four `anonymous-dragon-address` nodes in `special-scenes/anonymous-dragons.json`, SHA-256 `0f75d9b29ef4e48806051b3ff081ba7ec2b2c61267e0cbc908edc1aed67564d0`. Gender-neutral constructions preserve the separate anonymous speakers, player agency, silence, button sound and ordinary versus emphatic agreement. `python3 -B localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/create-anonymous.py` (SHA-256 `ad3668706edcaa1c7c6e7b45b272c236ca833bfdeafe60e169d196ae8d5302cd`) verifies full direct-ID coverage and paired source/reader bindings. Actual authored branch execution and fit remain unrun.
+
+Current preparatory decisions: 16 / 27 groups and 103 distinct IDs, none applied to a package; 11 groups remain before ordinary translation. The five newest scene files and this checkpoint await the shared commit lock.
+
+### Ryan's date choices
+
+Author self-reviewed the complete `movie-title-choices` and `salmon-guy-dragon` direct groups together in `special-scenes/ryan-date.json`, SHA-256 `4558f6a0415cc62d77ba511b540e483aa8dccc819dbf43346d62ce94d88f0e69`. The six shared setup IDs have identical wording; approved movie names and numeral are retained, with the source-consumer-tested em dash in the Yip-Man title. The salmon exchange retains the human-to-dragon correction and the other meal choice remains separate. `python3 -B localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/create-ryan-date.py` (SHA-256 `1e8a0b8dcd92e093a91820a5bfa4266e05c288fdfe84e6594ee4a49662061aad`) checks both paired English sources, each choice ID, reader acceptance and tags. Actual authored route behavior and final visual fit remain unrun. The Yip speech case overlaps the two Yip-Man IDs and must reuse this exact wording.
+
+Current preparatory decisions: 18 / 27 groups and 133 unique IDs, none applied to a package; nine groups remain before ordinary translation. A cross-file exact-ID comparison found no conflicting wording. Six newest scene files and this checkpoint await the shared commit lock.
+
+### Yip speech and film reference
+
+Author self-reviewed `kobold-yip-speech` and `kobold-yip-film-title` in `special-scenes/yip.json`, SHA-256 `7f501d9c034899a92760d567e142ebfec4e11e71ccf2ed2a4d4737b7f1103743`. The vocalization remains context-sensitive, with separate option glosses and the deliberate long explanation; the overlapping film title and series text exactly match the Ryan date group. `python3 -B localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/create-yip.py` (SHA-256 `4414772ff57f6609b44adcd9358139dd986421f5bcf7c91dc26af93ce7c0cd29`) verifies each paired source binding, target reader, tag order and equality of overlapping movie targets. Actual authored branch behavior, sound timing and fit remain unrun.
+
+Current preparatory decisions: 20 / 27 groups and 151 unique IDs, none applied to a package; seven groups remain before ordinary translation. A cross-file exact-ID comparison found no conflicting targets. Seven recent scene files and this checkpoint await the shared commit lock.
+
+### Conrad's height euphemism
+
+Author self-reviewed both relationship-path spans of `conrad-height-euphemism` (18 IDs) in `special-scenes/conrad-height.json`, SHA-256 `0ebb1345014a064e650b66659e62d74bfaf16112d17a83332abb2f2869389a02`. Both paths use the same euphemism for Conrad's stature while retaining their distinct choices and reactions. `python3 -B localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/create-height.py` (SHA-256 `b1b10441b5b76b69b0058dd023114f858735db339f1dc54b250bd26774594742`) checks the exact paired source bindings, tag order and reader acceptance. Actual route execution and authored visual fit remain unrun.
+
+Current preparatory decisions: 21 / 27 groups and 169 unique IDs, none applied to a package; six groups remain before ordinary translation. Eight recent scene files and this checkpoint await the shared commit lock.
+
+### Missing Yarn destinations and fragment markers
+
+Author self-reviewed the existing paired structural proof for `yarn-missing-named-destinations` in `special-scenes/yarn-markers.json`, SHA-256 `a7584079d4e30619fdf10bea13eb5fe20a363752e674916f150bdffd398d4540`. The 15 direct IDs are exact-only unreachable delimiter markers, not Polish package inputs; the adjacent playable suffixes remain in ordinary translation scope. The established build repair is the feasible handling, preserving host nodes, markers and transfer operands. `python3 -B localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/create-marker-scene.py` (SHA-256 `4cd0618506e588b9d3b4738e5bc41691bd066571571679e150b1ab26122bbcce`) binds all 15 IDs to the paired proof and inventory roles, including its recorded negative jump control. This does not demonstrate actual Polish authored suffix progression; that runtime gate remains open.
+
+Current preparatory decisions: 22 / 27 groups and 169 unique package target IDs plus 15 preserved exact-only markers, none applied to a package; five groups remain before ordinary translation. Nine recent scene files and this checkpoint await the shared commit lock.
+
+### Alexander's once-only questions: partial
+
+Author self-reviewed the seven direct displayed question labels in `special-scenes/alexander-once.json`, SHA-256 `36f297d90f6fab80fd284d2862c6b7e57afba24419e651f36283a9fae742dccf`. The crest and number-seven choices exactly reuse earlier target wording. `python3 -B localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/create-questions-once.py` (SHA-256 `77f6e2c78a40f6da5ac16c7b66bcc2d8855009d4fbad8bb8d1b870b680451588`) checks all IDs against the paired source and seven recorded once-variable mappings, plus both target readers. It does not trace every state consumer or exercise fresh and selected states, so this group remains partial, not a passed gate.
+
+Current status: 22 / 27 preparatory group decisions, one partial group, four groups untouched; 174 unique target IDs plus 15 exact-only markers, none applied to a package. Ten recent scene files and this checkpoint await the shared commit lock.
+
+### Continuation: remaining scene wording and open state closure
+
+The `conrad-wordplay.json` decisions cover `dirty-double-meaning` (12 IDs) and `professional-double-meaning` (15 IDs); SHA-256 `74c1e295320a5e83d192b61a5e18257c67fe3ae299abea470f315e2640865f65`. The glossary's device term is `stojak`, verified directly against the pinned Polish glossary and used consistently here. The generator `resume-01/create-conrad-wordplay.py` checks paired source values, source-bound readers and ordered tags. The two senses of dirty and the delayed professional punchline, original choices, neutral player wording and branch destinations remain distinct. Authored branch runtime and fit are not yet checked.
+
+`ryan-question.json` covers 23 IDs for `ryan-question-about-a-question`, SHA-256 `19521f4e80d0b8ef23232324326e6e3b28b679751619bff0d61aafb1583913ae`; the question, joking response, acknowledgment and relationship discussion are reviewed together. `conrad-endings.json` covers 24 IDs for `conrad-special-endings`, SHA-256 `d0558d2bf8ca25b9ccaa5272c6d5b935a28e7f8113ec524c7522a0cad5a4fc04`; the ambiguous phrase, literal response, explicit clarification and separate alternatives are reviewed together. `resume-01/create-remaining-scenes.py` validates exact source IDs and both readers and ordered tags; actual authored branch execution and fit are not checked.
+
+Across all scene files there are 27 distinct case records, 248 unique target IDs and no conflicting duplicate target wording; 15 additional marker IDs are exact-only and not target package IDs. These are reviewed scene decisions, not an applied `translation.json`: 0/1,947 package IDs have been assembled. `yarn-alexander-question-once-state` remains partial pending the wider state-consumer closure and availability/progression evidence. The presence of 27 records alone is not a pass of the translate/edit entry gate. Packaging, authored-corpus runtime and visual checks, and independent game-text audit remain unrun.

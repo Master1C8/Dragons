@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-alexander-colon-20261107.json",
+  "sourceRegistrySha256": "c98bdde089c63a9b25a7ab0aa4d9dd0954fd7fb0311b648f7c12e04dbbc496d6",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "alexander-college-self-introduction",
+      "wording": {
+        "yarn:line:7e9389a7": "Jakie kolegium?",
+        "yarn:line:dd06ed39": "Oczywiście Społeczne Kolegium Taumaturgii w Burnswick!",
+        "yarn:line:4b36ea4e": "Najbardziej prestiżowe kolegium, w którym wykładają prestiżowi profesorowie tacy jak ja:",
+        "yarn:line:f167e3d7": "Alexander!",
+        "yarn:line:6757e4a0": "...",
+        "yarn:line:f64a5b30": "Dobrze",
+        "yarn:line:607a5c47": "Dobrze, nie mogę dopuścić, żeby Społeczne Kolegium Taumaturgii w Burnswick dowiedziało się, że ich najlepszy profesor Alexander znów spowodował incydent.",
+        "yarn:line:85f39b27": "...",
+        "yarn:line:13c39c50": "O rany, zapomnij, że to powiedziałem!"
+      },
+      "decision": "Use the approved college name and preserve Alexander’s colon-ended boast, pause, and separately paced self-introduction; the other choice retains its distinct continuation.",
+      "mapping": "For line:4b36ea4e keep the complete English Yarn table value exact and supply the Polish colon-ended body via speakers.json and the existing ID-bound presenter adapter. Other eight IDs use normal Yarn text replacement. Preserve both option destinations.",
+      "positive": "College question shows the translated boast as body without a name, followed separately by Alexander; the other choice retains the incident disclosure.",
+      "negative": "Reject removal of the final colon, changed protected table value, wrong speaker mapping, or swapped branch IDs.",
+      "editorial": "author self-reviewed against both English branches and approved glossary",
+      "adapter": "existing source-bound speaker presentation and paired Yarn controls; direct locale-reader positive/negative checked",
+      "runtimeVisual": "authored Polish body and both branches not run; synthetic fixture only"
+    }
+  ]
+}

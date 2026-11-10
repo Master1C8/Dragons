@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-ryan-language-20261107.json",
+  "sourceRegistrySha256": "6209639693f1c03ea71bd49a7da0e994ecd8262b04a0e26223f6320be1f8a14d",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "movie-title-choices",
+      "wording": {
+        "yarn:line:001ab950": "O, słyszałem, że jest dobry.",
+        "yarn:line:073701b7": "Na jaki film masz ochotę?",
+        "yarn:line:2b560f59": "O, tak?",
+        "yarn:line:412ba249": "Znasz jakieś dobre bary?",
+        "yarn:line:4b9046ec": "Filmy o Yip-Manie są strasznie kiczowate...",
+        "yarn:line:52542beb": "Jasne!",
+        "yarn:line:67f14802": "Jasne!",
+        "yarn:line:7af04961": "Dokąd chcesz pójść?",
+        "yarn:line:7e352505": "Smoki Galaktyki 2",
+        "yarn:line:81905be1": "Chcę gdzieś pójść coś zjeść.",
+        "yarn:line:910706c0": "Myślę, że fajnie byłoby pójść do kina!",
+        "yarn:line:962abe27": "Projekt Łuska Mary",
+        "yarn:line:bd66082e": "A może do kina?",
+        "yarn:line:c4642c9c": "To randka ustalona. Już się cieszę.",
+        "yarn:line:d9652dff": "A więc. Nasza dzisiejsza randka...",
+        "yarn:line:dda0419b": "Ale z tobą na pewno mi się spodoba!",
+        "yarn:line:e8052272": "O tak, pierwsza część mi się podobała.",
+        "yarn:line:ecc04e16": "Ty zdecyduj!",
+        "yarn:line:f1c14f75": "Yip-Man — Ostatnie Yip"
+      },
+      "decision": "Use the approved three film titles, with the documented em-dash punctuation adaptation for the Yip-Man choice; retain the series reference and sequel number 2.",
+      "mapping": "Preserve all source IDs, route conditions and choice destinations; shared date setup IDs are identical across these cases.",
+      "positive": "Each movie choice and its distinct response remain paired, including the Yip-Man series and sequel.",
+      "negative": "Reject changed numeral, mismatched title/series, colon interpreted as a speaker delimiter, or swapped reactions.",
+      "editorial": "author self-reviewed against source route and approved glossary",
+      "adapter": "stable source-bound Yarn IDs and paired locale readers; punctuation checked by existing negative and positive control",
+      "runtimeVisual": "authored choices, route states and final fit not run"
+    },
+    {
+      "id": "salmon-guy-dragon",
+      "wording": {
+        "yarn:line:108de471": "Tak, brzmi całkiem nieźle.",
+        "yarn:line:412ba249": "Znasz jakieś dobre bary?",
+        "yarn:line:46061aae": "Lubię ją! Myślę, że tobie też zasmakuje.",
+        "yarn:line:5fc277a9": "To randka ustalona! Owoce morza, a potem zobaczymy.",
+        "yarn:line:6a671440": "Znam niezłe miejsce przy molo z kuchnią koniowatych.",
+        "yarn:line:73a37947": "O, świetnie. Jestem człowiekiem, który uwielbia łososia.",
+        "yarn:line:7af04961": "Dokąd chcesz pójść?",
+        "yarn:line:81905be1": "Chcę gdzieś pójść coś zjeść.",
+        "yarn:line:86bde306": "Co sądzisz o owocach morza?",
+        "yarn:line:bd66082e": "A może do kina?",
+        "yarn:line:c9f270de": "No, smokiem... Ale wiesz, o co mi chodzi.",
+        "yarn:line:d0361dd9": "To taka kuchnia fusion koniowatych...",
+        "yarn:line:d71ba53e": "To randka ustalona!",
+        "yarn:line:d9652dff": "A więc. Nasza dzisiejsza randka...",
+        "yarn:line:e5937e30": "Tak. Lubię ryby!",
+        "yarn:line:ecc04e16": "Ty zdecyduj!",
+        "yarn:line:fc571337": "Hmm, może coś innego?"
+      },
+      "decision": "The seafood choice and alternative remain distinct. Ryan calls himself a human associated with salmon, then corrects himself to dragon, retaining the source joke.",
+      "mapping": "Preserve all source IDs, route conditions and choice destinations; shared date setup IDs are identical across these cases.",
+      "positive": "The salmon preference and dragon correction follow the fish answer; the alternative retains the equine fusion restaurant.",
+      "negative": "Reject loss of the dragon correction, changed seafood preference or swapped response branches.",
+      "editorial": "author self-reviewed against source route and approved glossary",
+      "adapter": "stable source-bound Yarn IDs and paired locale readers; punctuation checked by existing negative and positive control",
+      "runtimeVisual": "authored choices, route states and final fit not run"
+    }
+  ]
+}

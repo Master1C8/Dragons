@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-ryan-question-20261107.json",
+  "sourceRegistrySha256": "33c28d6216b9f35d611de06d7532c141a8b29f72881583c4e73bd6f54e568e3e",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "ryan-question-about-a-question",
+      "wording": {
+        "yarn:line:040ee2a7": "Ja też.",
+        "yarn:line:105cd3e2": "Mogę ci zadać pytanie?",
+        "yarn:line:17716b05": "A, racja. Przepraszam.",
+        "yarn:line:1dca8fa0": "Po prostu dobrze się przy tobie czuję.",
+        "yarn:line:286fec49": "Cieszę się.",
+        "yarn:line:31ab814e": "Masz rację... Nie możesz za mnie odpowiedzieć.",
+        "yarn:line:3c3ddd0c": "Hm?",
+        "yarn:line:42124159": "Po prostu dobrze się przy tobie czuję.",
+        "yarn:line:453ff9be": "Och, Ryan...",
+        "yarn:line:5cfb94b9": "Jeśli w związku jest <i>tak</i> burzliwie i wiesz, że to się skończy.",
+        "yarn:line:695ef750": "...",
+        "yarn:line:709a9a57": "Pewnie.",
+        "yarn:line:81416c72": "Właśnie je zadajesz. Co się dzieje?",
+        "yarn:line:866cd495": "Co się dzieje?",
+        "yarn:line:8bfa88d7": "Dzięki. Ja też lubię z tobą przebywać.",
+        "yarn:line:a79b8639": "Po prostu cieszę się, że nikt mnie tu nie ocenia.",
+        "yarn:line:aa0dda7b": "Hej.",
+        "yarn:line:be5feb3e": "Mam nadzieję, że będzie lepiej.",
+        "yarn:line:cacb93ce": "I próbowano już wszystkiego.",
+        "yarn:line:d30ffec9": "Wiem. Wiem, że nie powinienem cię tym obarczać.",
+        "yarn:line:d422462e": "Nie wiem... czy mogę za ciebie odpowiedzieć.",
+        "yarn:line:e6aa9d20": "A więc... związki.",
+        "yarn:line:ff6ef027": "Kiedy właściwie kończy się związek?"
+      },
+      "decision": "Ryan asks a question, the playful reply points out the question already asked, and his apology belongs only to that branch. Preserve the sensitive relationship discussion and both later answers.",
+      "mapping": "Preserve stable source IDs, original choice destinations and branch controls; all ordered TMP tags remain intact.",
+      "positive": "Both initial choices converge on the discussion; later choices have their own replies.",
+      "negative": "Reject a non-question opening, lost joke, changed branch identity or gendered player line.",
+      "editorial": "author self-reviewed against the full cited English exchange and alternatives",
+      "adapter": "paired source-bound Yarn readers and exact ordered TMP tags",
+      "runtimeVisual": "authored choices, reachability, branch execution and final fit not run"
+    }
+  ]
+}

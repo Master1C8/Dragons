@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-conrad-language-20261107.json",
+  "sourceRegistrySha256": "17f03f837652ee7e0fb110dc5b23155a8c833e1b779934fbc9dfe2b7d2b732fc",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "dirty-double-meaning",
+      "wording": {
+        "yarn:line:0372e0d1": "Tak. Nie był zbyt drogi.",
+        "yarn:line:045f5836": "...",
+        "yarn:line:1d9b3531": "Dostać robótkę ręczną i przelecieć ten stojak.",
+        "yarn:line:283e56d8": "Pewnie, że jestem! Wiem, że jestem bardzo...",
+        "yarn:line:31fa3bdf": "Czyli przyszedłeś tylko po to, żeby...",
+        "yarn:line:5a5e7f21": "N<size=90%>o<size=80%>o<size=70%>o<size=60%>o... <size=100%>Nie jestem brudny, ale mam <i>~brudne myśli~</i>, wiesz?",
+        "yarn:line:8bab3246": "Jesteś... bardzo bezpośredni.",
+        "yarn:line:926f5f41": "W każdym razie. Pora tego użyć!",
+        "yarn:line:9542e7a6": "Ha, dobrze. Wypróbujmy to cudo!",
+        "yarn:line:a7ca3ca8": "Coś przelecieć, a potem może dostać robótkę ręczną.",
+        "yarn:line:be0e51af": "Super.",
+        "yarn:line:cc6e7856": "Ha! Jest i stojak!"
+      },
+      "decision": "Brudny and brudne myśli connect literal dirt with sexual thoughts; the deliberate shrinking opening and both state-dependent variants remain distinct.",
+      "mapping": "Keep source IDs, original branch destinations and state variables; mount is the approved device, not Ryan’s separate offer of a ride.",
+      "positive": "The physical cleanliness contrast, suggestive intent and conditional prior activity retain their original relationships.",
+      "negative": "Reject loss of either dirty sense, changed size tags or swapped conditional replies.",
+      "editorial": "author self-reviewed against the complete English exchange and adjacent choices",
+      "adapter": "stable source-bound Yarn IDs, paired readers and ordered TMP tags",
+      "runtimeVisual": "authored choice paths, condition values and final fit not run"
+    },
+    {
+      "id": "professional-double-meaning",
+      "wording": {
+        "yarn:line:05c673e7": "Jasne!",
+        "yarn:line:1c021ee0": "W dostawaniu robótek ręcznych.",
+        "yarn:line:29a77d09": "Daj mi spróbować!",
+        "yarn:line:3063100e": "Ja też jestem profesjonalistą.",
+        "yarn:line:496134bc": "...!",
+        "yarn:line:50a559bb": "Ha... <size=70%> tak.",
+        "yarn:line:5788e15c": "Oczywiście. W końcu to <i>profesjonalna</i> robota.",
+        "yarn:line:7cc45755": "...!",
+        "yarn:line:8a321997": "Teraz zerkam na ten stojak...",
+        "yarn:line:93f67490": "No pewnie",
+        "yarn:line:a6531779": "...",
+        "yarn:line:bf977a7e": "A, dobra. Zaraz po niego pójdę.",
+        "yarn:line:c1b8e62b": "Zawsze miło, gdy kobold wie, co lubi.",
+        "yarn:line:c6955ecc": "Cholera, umiesz posługiwać się rękami.",
+        "yarn:line:eaf45022": "Cholera, umiesz posługiwać się rękami."
+      },
+      "decision": "The neutral player line calls the work professional; Conrad echoes professional expertise and only later specifies receiving hand jobs.",
+      "mapping": "Keep source IDs, original branch destinations and state variables; mount is the approved device, not Ryan’s separate offer of a ride.",
+      "positive": "The professional and alternative replies lead to their original distinct reactions and delayed clarification.",
+      "negative": "Reject gendered player self-reference, erased delayed punchline or merged branches.",
+      "editorial": "author self-reviewed against the complete English exchange and adjacent choices",
+      "adapter": "stable source-bound Yarn IDs, paired readers and ordered TMP tags",
+      "runtimeVisual": "authored choice paths, condition values and final fit not run"
+    }
+  ]
+}

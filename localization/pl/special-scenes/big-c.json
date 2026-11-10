@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-conrad-language-20261107.json",
+  "sourceRegistrySha256": "17f03f837652ee7e0fb110dc5b23155a8c833e1b779934fbc9dfe2b7d2b732fc",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "big-c-nickname",
+      "wording": {
+        "yarn:line:f57fc630": "Gotowe!",
+        "yarn:line:f2527ed7": "Jesteś <i>czyściutki.",
+        "yarn:line:646279a0": "Wygląda na to.",
+        "yarn:line:17dbb9b7": "No jasne.",
+        "yarn:line:81ebbec0": "Dzięki za mycie o tak późnej porze.",
+        "yarn:line:3bbab759": "Musisz mi opowiadać, co u ciebie i Ryana, dobra?",
+        "yarn:line:ad8ab02e": "W każdym razie...",
+        "yarn:line:0e1fd4b0": "Wypuść stąd <i>Wielkiego C</i>!",
+        "yarn:line:982fd3c7": "Wielkiego C...?",
+        "yarn:line:255362b9": "Dobrze, Conrad.",
+        "yarn:line:227eda5e": "...",
+        "yarn:line:b44edd29": "Taak, chyba jednak odpuszczę sobie tę ksywkę.",
+        "yarn:line:b36365ce": "Ha... No tak...",
+        "yarn:line:d04df8f8": "Dobra, na razie!"
+      },
+      "decision": "The self-appointed nickname Wielki C uses Conrad’s initial and is repeated in the questioning reply; his rejection follows that reply, while the alternative addresses Conrad by name.",
+      "mapping": "Keep all four opening and nickname option identities, branch destinations, italic tags and the Ryan route context.",
+      "positive": "The questioning reply echoes the nickname and leads to Conrad abandoning it; the name reply remains distinct.",
+      "negative": "Reject an inconsistent initial or echoed form, swapped branch, or altered source tags.",
+      "editorial": "author self-reviewed against the adjacent English source and paired node registry",
+      "adapter": "stable source-bound Yarn IDs, ordered TMP tag validation and sampled Polish renderer",
+      "runtimeVisual": "authored branch choices, route reachability and final fit not run"
+    }
+  ]
+}

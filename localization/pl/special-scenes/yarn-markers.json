@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-missing-targets-20261107.json",
+  "sourceRegistrySha256": "facfab83e94c85823786f1460d4e621f6a73352ba8f197a8148fa9707a18a6c9",
+  "markerProofSha256": "b7200b84ff6efe79bf44e64964ce4d39a60eec5a35a091287179a1c496643c1e",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "yarn-missing-named-destinations",
+      "wording": {},
+      "exactOnlyIds": [
+        "yarn:line:22deeef6",
+        "yarn:line:25f35611",
+        "yarn:line:3ed2f649",
+        "yarn:line:4b9b3a43",
+        "yarn:line:67fa34ad",
+        "yarn:line:722243c8",
+        "yarn:line:74c28add",
+        "yarn:line:97ab84a8",
+        "yarn:line:a8e2f13e",
+        "yarn:line:b4eee981",
+        "yarn:line:ce938344",
+        "yarn:line:db5b3129",
+        "yarn:line:e2f28daa",
+        "yarn:line:e41244bf",
+        "yarn:line:f1ca33da"
+      ],
+      "decision": "The 15 source delimiter values are unreachable fragment markers, not Polish display text; retain them exactly. The translated suffixes remain in the normal source inventory.",
+      "mapping": "Use the established paired build recipe that repairs missing node suffixes while leaving original host nodes and markers byte-identical. Preserve all transfer operands and marker IDs.",
+      "positive": "The source-bound proof checks original and repaired program hashes, five exact suffixes and bounded jumps on both builds.",
+      "negative": "The cited negative control rejects a jump into a marker; changed markers or altered host nodes fail the structural proof.",
+      "editorial": "author self-reviewed marker roles against paired source-bound proof; no target wording is applicable",
+      "adapter": "existing pinned repair and bounded control-flow receipt, not a new shared repair",
+      "runtimeVisual": "actual authored suffixes, destination progression and final fit not run"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-conrad-endings-20261107.json",
+  "sourceRegistrySha256": "f4ccc977e6d595588859c60910928ebf5ab8b91331ff433f7a7cf7b724f51e5a",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "conrad-special-endings",
+      "wording": {
+        "yarn:line:1af1ad05": "Nie, nie oferujemy tu takich rzeczy.",
+        "yarn:line:2f54ceec": "Przynajmniej możecie jeszcze używać rąk. Heh.",
+        "yarn:line:3690a3eb": "Tak? Nawet nie widzę tu stojaka.",
+        "yarn:line:43c94954": "Ale super! Nie mogę się doczekać, aż zaczniesz!",
+        "yarn:line:43dd32f5": "Eee... To nie...",
+        "yarn:line:5a195ff2": "Co!? To straszne! Nawet nie macie stojaka...?",
+        "yarn:line:5d34e715": "To lepiej sobie taki załatwcie!",
+        "yarn:line:6fa847ba": "E tam. Stary, musisz tego spróbować. Dobrze zapłacę!",
+        "yarn:line:6fbc3c1b": "Robicie tu też <i>specjalne zakończenia</i>, nie?",
+        "yarn:line:766c2abd": "Co? Wszystkie najlepsze miejsca to robią!",
+        "yarn:line:7678511c": "Ła... co... <size=80%>och. <size=60%>my nie...",
+        "yarn:line:8a35fb7b": "W<size=90%>i<size=80%>ę<size=70%>c<size=60%>c... <size=100%>Tak się zastanawiałem",
+        "yarn:line:8cc1aa72": "Och... tak, nie mamy.",
+        "yarn:line:9ab6ddfb": "Robicie tu też „specjalne zakończenia”?",
+        "yarn:line:a0a0a49c": "W sensie... rzeczy seksualne?",
+        "yarn:line:b964c99b": "Szkoda. Lepiej to zmieńcie.",
+        "yarn:line:cb04e062": "Przynajmniej możecie jeszcze używać rąk. Heh.",
+        "yarn:line:cc295885": "Yyy... <size=60%>nie?",
+        "yarn:line:d5ed3582": "Sprawiacie tu, że duże smoki, <size=60%>takie jak ja, <size=100%>dochodzą?",
+        "yarn:line:d5f94e23": "Tak!",
+        "yarn:line:e048566b": "O nie.",
+        "yarn:line:e05c2dca": "Nie",
+        "yarn:line:f98c3b6c": "Każde zakończenie jest tu specjalne!",
+        "yarn:line:f99840cd": "Co to takiego?"
+      },
+      "decision": "Specjalne zakończenia is initially ambiguous; the literal response uses the same noun and adjective before Conrad explicitly clarifies. Keep the direct sexual question separate, preserve both nodes and the approved stojak.",
+      "mapping": "Preserve stable source IDs, original choice destinations and branch controls; all ordered TMP tags remain intact.",
+      "positive": "The literal answer invokes the same phrase and receives the clarification; the direct question has its own response.",
+      "negative": "Reject a literal answer unrelated to the phrase, merge of the options, or loss of clarification.",
+      "editorial": "author self-reviewed against the full cited English exchange and alternatives",
+      "adapter": "paired source-bound Yarn readers and exact ordered TMP tags",
+      "runtimeVisual": "authored choices, reachability, branch execution and final fit not run"
+    }
+  ]
+}

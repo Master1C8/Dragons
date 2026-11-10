@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-anonymous-dragons-20261110.json",
+  "sourceRegistrySha256": "66d6724fceb6fee2cbf4e56f5b90b5a680a70495112d958f17f6375c70226481",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "anonymous-dragon-address",
+      "wording": {
+        "yarn:line:7d791906": "O, lepiej, ale nadal czuję na sobie brud.",
+        "yarn:line:ec64a696": "Sprawdzisz jeszcze raz, czy wszystko jest domyte?",
+        "yarn:line:7a54a1e1": "Dobrze",
+        "yarn:line:1dbf50b3": "Jasne",
+        "yarn:line:8b8f57c4": "Dzięki!",
+        "yarn:line:b965b4dd": "Przestań, przecież jeszcze nie koniec. Prawda?",
+        "yarn:line:2f55b3aa": "Hehe",
+        "yarn:line:9504ba33": "...",
+        "yarn:line:63926ecd": "Och, to już koniec?",
+        "yarn:line:f28fd15d": "Chyba kilka miejsc jeszcze umknęło...",
+        "yarn:line:64bfd62a": "Ups, mój błąd.",
+        "yarn:line:4116f001": "Ten przycisk był dla mnie zagadką.",
+        "yarn:line:d726f776": "Nic się nie stało,",
+        "yarn:line:fb47f998": "No, robi BRRT, haha.",
+        "yarn:line:6d77feef": "Tak czy inaczej, dobrze, że to jeszcze nie koniec, działajmy dalej!",
+        "yarn:line:f1946aab": "Dzięki za umycie!!",
+        "yarn:line:67a46ddc": "Może później spędzimy razem trochę czasu?",
+        "yarn:line:c4310942": "Tak!",
+        "yarn:line:52010e35": "TAK!",
+        "yarn:line:e85007ac": "Super! To do zobaczenia później!"
+      },
+      "decision": "Neutral constructions preserve anonymous speakers, player agency, the unexplained button, silence, BRRT, and the difference between ordinary and emphatic agreement. The four speakers are not assumed identical.",
+      "mapping": "Keep all four separate nodes and their two option IDs and order, without assigning player or dragon gender.",
+      "positive": "Each menu and follow-up retains its original intent, with distinct ordinary and emphatic yes.",
+      "negative": "Reject invented identities or gender, lost silence or button sound, and swapped choices.",
+      "editorial": "author self-reviewed against all four English source nodes",
+      "adapter": "stable source-bound Yarn IDs, paired readers and sampled Polish choice renderer",
+      "runtimeVisual": "authored choices, all four scene paths and final fit not run"
+    }
+  ]
+}
