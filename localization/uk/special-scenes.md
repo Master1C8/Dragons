@@ -382,3 +382,23 @@ table text, metadata and compiled programs are exact. Both fonts
 contain all 90 display code points. The verified receipts are under
 `localization/work/uk-ordinary-06-20261110.EIw6g8/`.
 Live scene checks and independent editorial review remain pending.
+
+## Seventh ordinary batch
+
+Ryan's muddy variant now covers all 57 source IDs across 16 nodes.
+It adds 56 values and reuses the special-scene kobold exclamation.
+All 783 earlier values are exact. The draft covers 839 of 1,947
+IDs with SHA-256
+`d303a47e82d5905c78ffbc502954eb8d2aede2308eb49329f07579e4eedf2d64`.
+
+The wash instructions distinguish movement, applying soap, rinsing,
+and the wall button. The farewell keeps the three answers to Ryan's
+question about a mess at home. The two references to Max preserve
+the glossary's neutral address strategy.
+
+Each diagnostic package changed exactly 56 Yarn values from the
+sixth control. The other table text, metadata and compiled programs
+are exact. Both packaged fonts contain all 90 display code points.
+The verified receipts are under
+`localization/work/uk-ordinary-07-20261110.K1xUBi/reviewed/`.
+Live scene checks and independent editorial review remain pending.
