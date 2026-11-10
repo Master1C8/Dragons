@@ -7965,6 +7965,689 @@
           "decision": "Speaker label names Conrad; it is not evidence that every unnamed line is his."
         }
       ]
+    },
+    {
+      "group": "UI/level2",
+      "orderedRowsSha256": "97f1296569519db8d340401ab2ef5693595e6a0b397ccae5b71b1e82d81ed49d",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        }
+      ],
+      "groupContext": "Paired credits, ending and settings strings were read individually; build absence remains bound to the full paired row.",
+      "layer1": "Author source self-review: all available source strings were read and classified below.",
+      "layer2": "Author Italian glossary-field self-review: bound relevant player, dragon and wash fields were compared in context; no correction was established. This is not independent review.",
+      "rows": [
+        {
+          "id": "ui:a93884f724db876919b673f0b79a0f185b75aed28ac47486cce14eddc589447d",
+          "pairedRowSha256": "6415ab2cdd728b1f46dcf3697b5aaddb64b6226103c7f08c6d39bdae78908014",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:677889ae1bd7630aae8868363c35af17f9c33faa7a794ca50b89b6de9468fb1a",
+          "pairedRowSha256": "0457bbf2371dc44145b9f30d8884af8ae374627e48b342fa5d3725f2a1d65e9e",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:c17a039c71edd859d9bb4aeb83704a79719f5f158390d8b110fea4866bd98da2",
+          "pairedRowSha256": "0d06b5c38742ad1c441cae818d866bd2d047c8637d3fb266c168ebb837e03566",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:a5c27c47530156f445dfcb3497d6d79310820240c687eb525a13a00c6168d207",
+          "pairedRowSha256": "81257d74ffff91f25dae2606a040b4817d38e17f0ea243c11f0c984e1ea89d84",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:64c83f06beade7dc946444838945ddddb46e059d69184e0de5e24dfd025f8bb7",
+          "pairedRowSha256": "7634312fa3fc2aab814ce45bdda0ff68ecc9cf4b5eefd55851e72bc8a487acbb",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:043b37948aa184a33c9d3e562a633299d110074ff2f8eb3a333a77e00ce4cdb0",
+          "pairedRowSha256": "baf99d95867ebb3cd2d308330bd0cbbfeac09ee6c0d063592a7a06bc4777bc44",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:fc36f6020a3774712568f1efae738355bf497bc67e03ce31877d2c9eea3eb7b3",
+          "pairedRowSha256": "4191c3e6555eb035ad531439f6d87747720a34cd4f4a1c9f4dcfe2cdda80f0c6",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:855947e4f73f0b691664adc25caf639693a37ac34da19460ed6015302e1f239e",
+          "pairedRowSha256": "99774c9d0ab4ed8852e9c172b9ece77b0712a7700e6070ec31a8a8c65835e1b4",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:d197b4f11f184993ec816fd09eb98d780626f67195a6b8f6d15ef96ca9bfbdcd",
+          "pairedRowSha256": "c06ee1c9663d6b53fbe29f04e7b80337ddb1ccd4d88b793f9ec0323a1e1e8ff6",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:a68cf3a77ddb1521d105858bab9a832513d7392eaaeda2791dbdb8c427908602",
+          "pairedRowSha256": "0c4d53e590b268129360bc985c617987db9c06ae75011300611cb320130ce613",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:dc348070b6cebbd2f0c737f600a8b0842a445487d1eceb38afab9d0d6c534f3e",
+          "pairedRowSha256": "0bda73fcbe839171f03576b8b707cd3e63af73f20caa56fecfc7ee4ac4aa4c0a",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:9a7e3761690f70c2f4e35d90f206f724addd337cf509eaf7547b7e2c96abbe4c",
+          "pairedRowSha256": "72cdb2ee9dbda03ece3fc4882482565f95816accbf9c696798ed3cf89968444c",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:a180b004c48eaa57d3a9e91ca3f3a82832267e8fe4a64299a355d1fa4f797a72",
+          "pairedRowSha256": "1a759fcd285067b69cac8c15632e7e1a5a9bbe296b4516716699b607f2aa5de5",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:8bf24a939c13374283a49b722ec9b8e5d748fd27a23411fe08b2339e7ebadd60",
+          "pairedRowSha256": "eaa83c178fa464cc8eda480f77207430fcf6aee68f883d6f5881c7ca9e07965d",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:baf67a3f159b2b155d2444011bd3aa86a6df28680dbc5236d68305d1e02fd2ca",
+          "pairedRowSha256": "066ceafc9a60d9222fe91a37af3f9b45c457332637000ed89c55cf5b79fab012",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:6a1909780456348c902db96713b5aa7f8a3357fda1d6c575623b995bf912459a",
+          "pairedRowSha256": "51edbb09110214342cb3d82418fd4bb39bed8df1ce44572a74b2e7256d77b18e",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:27de894e28b01ba248776c4fa771f6195c93c2a2595b6b5ccd9197a6b8f35fdc",
+          "pairedRowSha256": "f189f3d8d925436488eba3fade7602a6dedc08492bcb9d30a48f3e709ab1ee20",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:7c1fd7f02eb4d97822c94ac980b84433b17cfeae6a95fdcf1c0f56c7201fe062",
+          "pairedRowSha256": "08df59c0bc031595b15694ef1a634a0b46966b639d82a68c8c35c12a2eb4f162",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:a866c8aaeb61d0a6a8e3ddd25b5344c8e7a642ca704f6739608f04b73f231d83",
+          "pairedRowSha256": "1808baee34d9c182cc7a52838b82b208e4204bf9cf67e4e0c504a604c025bf55",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:348882ec0693e95e99e59c4cfd2610940264a8037b5310a26a670a8b5a8dded9",
+          "pairedRowSha256": "dacbab04ec694066e2f79746c452224c5ca707938820f2a72eeef1f33f43fd78",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:2186641e5018006a8f817cb41859ce82e4280b69928a91c70fb5df47dd93c631",
+          "pairedRowSha256": "5687f36e139685eb2009ff25c70cc147513b3cba558de6d0229307af2bce75ce",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:ec59c528e2206e86d44599c192782eb976fe77e0dcfc8e5764437162ab8b84fa",
+          "pairedRowSha256": "33307fa2807568d4afd50e3ea98d4b8071b7f9f53a17a96f928d69c3a786caaa",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:1acf27de37a42cbef79ca781978e754ff79ea358f8d9718fad6b6d8f266e7221",
+          "pairedRowSha256": "1e7c42bc981ea6ff55e7929fa4bbd4df7502a91f062990382f43d12e265e30a3",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:9d8ea4924a6c2e792365ec6f6a4b2077f855be823f4f020ee14a73fb1bdd72b3",
+          "pairedRowSha256": "53c175de272903177887f97bedd7db0be0a3b3618c6b71822792449d43627ab0",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:deadbe8586b395ed10ec3fe557a070dd212c15a655af79c176bdcaf896b3902b",
+          "pairedRowSha256": "f7a9ca8f382307cbfe6b0dd9ff714ef8f7d1b8b7b694168b0bfeecd516e54aa9",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:38b81492d668525953ded92ae93c41899ac95bfdfd7f8f85768665fd58346829",
+          "pairedRowSha256": "ae7775add3feb9ec6aa1833f25cc9b31f97201507f2afc34829c9a0065cf7b8c",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:51677773e2ec933c5019723c7043f47f189d8e68b1adc78d2bc40c923a8995a6",
+          "pairedRowSha256": "e9be81dcc9cb84e0c00ebd128ddb8624709698a5851d422327b3cf2c97d5d466",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Sound-attribution label; no in-world character or glossary entry is identified."
+        },
+        {
+          "id": "ui:fc33749b78e73e54446be4be5a4ff87ca87da652171e41c21926f2c05a80e33f",
+          "pairedRowSha256": "f389ada6d60b297f9f9fb7feecca899fff212aae32b187a2af630d501af4650d",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Production-credit role; no in-world character is identified."
+        },
+        {
+          "id": "ui:1fb6a23724e3aca3e3503c7a3fac54fc8096c69d78afbb4dff4ffee7136e6ea7",
+          "pairedRowSha256": "1e693772abfe74eea6ff58f5638db3b34da686bd7912fa135f275ff2faab290a",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Production-credit role describing dragon design, animation or related assets; no individual dragon is identified."
+        },
+        {
+          "id": "ui:5461c3af19d7c01dd0cfe40474c18cb3ba1078cd6805aa21d1b32fda8d23e454",
+          "pairedRowSha256": "5f3a50cac858f49e6c209ae5e1f9e60c811d6409345122197ada493076f9af1c",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Production-credit role; no in-world character is identified."
+        },
+        {
+          "id": "ui:7dbb2e5f4db0e9b2ba8d5dc42dae0dfe8337b31d3f1f5ab73a0fc8c518374c38",
+          "pairedRowSha256": "c6164b60d2d64b15309b2dc79ddc356ec2e2c80f9028d59c6455ef7a3920ab24",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Production-credit role describing dragon design, animation or related assets; no individual dragon is identified."
+        },
+        {
+          "id": "ui:5d545a9c8e8328196e2a962fb0c727593cedeffeacc833180fa97f69e0837c04",
+          "pairedRowSha256": "bdcd709ef31a7f90c6a0b33a31240b2b190002f62f1658a9e050404510d3c541",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Production-credit role describing dragon design, animation or related assets; no individual dragon is identified."
+        },
+        {
+          "id": "ui:6004a9a1cbc1af99953f0ac8aee80488968a9be7c4f60a2590088ff60d3d2074",
+          "pairedRowSha256": "bb0afdc330fc3710a6b73266f4191d3479ce5b3a07b7a913111928bc243f4f74",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Production-credit role describing dragon design, animation or related assets; no individual dragon is identified."
+        },
+        {
+          "id": "ui:9be2502a812d57509113197c59303afa5676234c379e6f91aafd4e1b13f09fbd",
+          "pairedRowSha256": "8364d597369763fd35fb09706d6246e46930e0dab84d741b6e52988c62b26f7c",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Production-credit role; no in-world character is identified."
+        },
+        {
+          "id": "ui:a531803edffb057f1990c1515cb712a660edd9cccc8e5be5f91fa619ee315a76",
+          "pairedRowSha256": "ad2412bfe67b49c83051053fef59f42d8268ff48739f612ff32dd55e0f8e2723",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Production-credit role; no in-world character is identified."
+        },
+        {
+          "id": "ui:25de30bf793427c95ed2fa5df1e54e61ee739e45f30d85815a4e8b982b4450c4",
+          "pairedRowSha256": "7a63b0034348032dcf011b3ef94245791fb814be2069556aca5d42dd07cceea5",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Credit message addressed to the player as audience; no in-world speaker or character is identified."
+        },
+        {
+          "id": "ui:813926ce361c3c489a2e4746184a367bdad1b78e49f7b8414ca239de2779fcf4",
+          "pairedRowSha256": "b38459e135c49c8c67676260988bee57eedb7db0697387fde3916db9a53b968e",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Ending text refers to the player and an unidentified dragon; it does not establish that this dragon is the glossary anonymous speaker or any named customer."
+        },
+        {
+          "id": "ui:3e06e01cf300d5b127a7eece538a342ce61eb5951c45355e2765d712704319da",
+          "pairedRowSha256": "34069a2edeacaf48ce3adbfb2e03a075443286c1e990f557f4cbea6241421207",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Loading status; no in-world speaker or character referent."
+        },
+        {
+          "id": "ui:dc11181b52103181a1ffc479425bfdb9c6dd8a6b96e057722f32df7e07d90904",
+          "pairedRowSha256": "de5529aaf18d1c6a86bc98ed1fb7cac3dae8331e96f622a5323785225aeafa8c",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:1dbc9486c3e82f6a06d5b7c5ea104033ee054ac239abeba34a2c422dcd401ce6",
+          "pairedRowSha256": "da5d56d1859e8a56404be1cc3a023a73505e756a496d01fc270fce0e508e5ae8",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:860e1d29da244f82a38e511f6e6c36408d62f9a8d93f84fac02b3ff5fdfe8656",
+          "pairedRowSha256": "0afcec981b5e0ce4738c85bf9ebbece28054df16e006dbf5784c7fa409e4255f",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:713d3704bd4a5fa83d15d5a2c78f2780112994ea118b8cd2b70c10bdb3ebcbaf",
+          "pairedRowSha256": "6df1ea3baeb11d272729003a3969ae0b9f1c48b58918d1bb1860eb61e012056f",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu title; no in-world character referent."
+        }
+      ]
+    },
+    {
+      "group": "Settings",
+      "orderedRowsSha256": "6734a36270d66c171e6ad0d8c87783d6454da826c67ff4a5bc384c01e6616051",
+      "applicableEntries": [
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Paired credits, ending and settings strings were read individually; build absence remains bound to the full paired row.",
+      "layer1": "Author source self-review: all available source strings were read and classified below.",
+      "layer2": "Author Italian glossary-field self-review: bound relevant player, dragon and wash fields were compared in context; no correction was established. This is not independent review.",
+      "rows": [
+        {
+          "id": "settings:AmbienceVolume:label",
+          "pairedRowSha256": "110a89cb26a877eeb996ef867cc8f69ee505ee23d3098cce88e42d58d6f9e33d",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:AntiAliasing:label",
+          "pairedRowSha256": "3ec8775084426010f0093ba9e01a4fb841f1e64d78b4ce3f4cef670ea5d1cb44",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:AntiAliasing:option:0",
+          "pairedRowSha256": "dd680822fe788b2448128b4dd377392f5089cb7c2392128158ec52c0616dc68c",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:AntiAliasing:option:1",
+          "pairedRowSha256": "6934584bda4c2f1e7bec9f27ccd1e4aa0281df29462302406d3c53899a6e68d1",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:Audio:label",
+          "pairedRowSha256": "69277dae16664ca76848d53dba58d2e6473bbc874283613bf9ad060c8b225793",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:CameraFOV:label",
+          "pairedRowSha256": "21e691e8b0bee52b3564e68b8107df9d38d902ae567f862817fda47f207e2da5",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:CrouchControl:label",
+          "pairedRowSha256": "9b2fdcd46a75733726b12dcac7ab0952b10303920b68d0776b8c09343d9019c5",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:CrouchControl:option:0",
+          "pairedRowSha256": "a61782d86c2e9fb9162033a2d1d7079a6a458c9a65322f3a0c7051fe07e7fa60",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:CrouchControl:option:1",
+          "pairedRowSha256": "4b0442edc7e00a218476819ea9696a9df95d13e86ee00b6e263d73d0df89ecc0",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:CrouchControl:option:2",
+          "pairedRowSha256": "1b57ba5fc7d0e89a48727f1ffa2a0a6c3349310e36502834aa868440192a6ab8",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:Gameplay:label",
+          "pairedRowSha256": "7ec4bc74120fdf6535e4255e5b9a90e98133e1427745b57f765d10b79fc846a9",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:Graphics:label",
+          "pairedRowSha256": "368033d70d1b2d9f8c5a7a071c7df5a8a864710e6019b49015e40a6e09cb901b",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:HintGlyphType:label",
+          "pairedRowSha256": "e2d6d0c110935807f8ba32c87cba182b797bf3dc918a5ef25811a1fb7b5ea40d",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:HintGlyphType:option:0",
+          "pairedRowSha256": "2a513c22f11e94cfc43ede252b23f6924953f27714d2380d8bbdd5492b0d0c54",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:HintGlyphType:option:1",
+          "pairedRowSha256": "21d8f39a1f92c14a5afe35c0f026d9d0a5ddc3a77ad9d99f6684def3cf162654",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:HintGlyphType:option:2",
+          "pairedRowSha256": "e37217e6ca880c1dd5bbfc7982550f7f93344b1e954654ea2379a30511dbb688",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:HintGlyphType:option:3",
+          "pairedRowSha256": "f07b3867e7abd8d9b067079208e2d5ee9f31bd27ea4105c050b5cb8e7c3b49d8",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:LookInvertY:label",
+          "pairedRowSha256": "3c55e63962615ccafa1fc738012f2a11f66a9868b2dd78b201172722f62f7d6c",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:LookInvertY:option:0",
+          "pairedRowSha256": "5736be7b1405f7c48e81e9b912bdbaf14946e9deb75708d9cee3981561407373",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:LookInvertY:option:1",
+          "pairedRowSha256": "6dbc429598b917716e98b9fd4ade2dd107792f98b621ca87bb50ec377e70c9e9",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:MouseSensitivity:label",
+          "pairedRowSha256": "3d6806598103212c57443403abd2ef7ff0e2d311c96e99520a7f99131bb637eb",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:MusicVolume:label",
+          "pairedRowSha256": "1e93298dd459be1f6ffd4c1340551df1ad32c8b93628606380d186efd3eec132",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:Resolution:label",
+          "pairedRowSha256": "5994479e7e34915de24c537ec8771ea6b0621455e41e0b58b7a61e551f8eed60",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:ScreenBrightness:label",
+          "pairedRowSha256": "0c6bf8629f93801dc0cb6d8a168b53e7cfe8133b0e4b72545a494b214cf96865",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:SoundEffectsVolume:label",
+          "pairedRowSha256": "c032be527c540398473c64be018c03cac15156068cb2494ed19436c35501ab71",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:SprayerReduceMotionSick:label",
+          "pairedRowSha256": "153095246ea5c2a5dd8fd7ed4e86b71ea83bdd635ed52fd0c2c0012a73337caf",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "A setting for reduced motion of the sprayer used in washing; no in-world individual is identified."
+        },
+        {
+          "id": "settings:SprayerReduceMotionSick:option:0",
+          "pairedRowSha256": "d5b1c80663bf6c2145b60868a554dd29d3d57b9bed5383ae6ff7ae410464ae95",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:SprayerReduceMotionSick:option:1",
+          "pairedRowSha256": "b5739907432576f952c9cb150c0c3c09775f588f2a9d0728eca5a8592714c967",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:TargetFramerate:label",
+          "pairedRowSha256": "7a1d1625133562419a0c7c38149e32a36d404e8190d50655dc55f608a1d684ea",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:VSync:label",
+          "pairedRowSha256": "55f3be13153f03cc1817697e9810e56acf203e5b79259d70e25afe1a13b572c9",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:VSync:option:0",
+          "pairedRowSha256": "a68bc8090237cca655530e0f40363f2521f31e1588eeac265cfe833b17d7aee9",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:VSync:option:1",
+          "pairedRowSha256": "a4d85a457a6a5a0d5e1a2cfab3e61b8d512e915ee06ff324536e0e0e91d6b974",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:WindowMode:label",
+          "pairedRowSha256": "1714c17e6427c2f4cd2184d94f04ff52e1d6ec60df063801b4c87428677e1051",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:WindowMode:option:0",
+          "pairedRowSha256": "d9d6e9e7aed1815deb01da7f54e690f27fe648f4a71eda556cad6ed5c510eaf6",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:WindowMode:option:1",
+          "pairedRowSha256": "bad407e815b0529e4e79208423460de7adbdfc5701c5c08eb0c9ea4d319117b6",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:WindowMode:option:2",
+          "pairedRowSha256": "d893f654c2af1982636fcac7553322ea9a699c104bf70e27952906b72a116c2d",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        },
+        {
+          "id": "settings:WindowMode:option:3",
+          "pairedRowSha256": "89cbd0afc9c6c807f8254dd4ef68b8bf7ed889dcbae0e4fcade7ab3180aacfab",
+          "speakerOrKind": "UI or settings label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Settings label or option; no in-world individual is identified."
+        }
+      ]
     }
   ]
 }
