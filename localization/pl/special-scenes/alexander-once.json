@@ -22,9 +22,9 @@
       "mapping": "Preserve each once-state variable, instruction binding, initial false value and option destination in the paired source registry.",
       "positive": "The source registry pairs each question ID to its own once-state and destination; the two shared questions match their complete branch cases.",
       "negative": "Reject altered once-variable names, changed destinations, or inconsistent shared question wording.",
-      "editorial": "author self-reviewed seven displayed questions against English and neighboring crest and number branches",
-      "adapter": "stable IDs with source-preserved Yarn program and paired locale readers; full state-consumer dependency closure remains open",
-      "runtimeVisual": "actual once-only availability and progression, all related state consumers and authored fit not run"
+      "editorial": "author self-reviewed all seven question groups and the shared exit against English; complete 77-ID wording is in alexander-question-closure.json",
+      "adapter": "stable IDs and unchanged Yarn program; paired exact-operand trace and source-matched VM and disposable-save controls establish bounded feasibility",
+      "runtimeVisual": "authored Polish Unity availability, natural entry and progression, actual save reload and fit remain unrun; dynamic state consumers outside the exact-operand trace are not excluded"
     }
   ]
 }
