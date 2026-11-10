@@ -26,3 +26,7 @@ Source: paired English worklist, `localization/evidence/generic-dragon-entries-2
 | `yarn:line:e85007ac` | Awesome! See you later then! | Ótimo! Até mais, então! |
 
 Preserve the four scene identities, separate choices and original command routing; do not infer that the same dragon speaks across scenes. Verify the buzzing reaction, accidental dismissal, cleaning continuation and both differently emphasized invitation answers on the localized builds. Runtime paths and fit remain untested, and source coverage remains provisional.
+
+## Author decision after source-gate reconciliation
+
+The author accepts the pretranslation wording under the anonymous-speaker and player glossary roles: the four speakers are not equated or assigned gender, the player is likewise neutral, and silence, button sound and ordinary versus emphatic agreement remain distinct. The 20 IDs and target drafts match both stock-build entries in the paired readback recorded in the checkpoint. The direct-entry original Yarn VM traces in `localization/evidence/generic-dragon-entries-20261110.md` cover the four nodes and original choice branches on both builds; the existing per-ID adapter is feasible without modifying these controls. Positive scenarios exercise both replies in each node, including the separate button explanation and invitation emphasis. Negative scenarios merge identities, assign an unsupported gender, remove silence or swap the two choice IDs. Localized package branches and visual presentation remain pending; this is author self-review.

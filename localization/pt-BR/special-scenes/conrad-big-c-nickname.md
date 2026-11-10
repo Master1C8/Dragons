@@ -20,3 +20,7 @@ Source: `big-c-nickname`, node `Conrad_5_outro_ryan_romanced`, in the pinned pai
 | `yarn:line:d04df8f8` | Alright, I'll cya! | Beleza, até mais! |
 
 Retain both option IDs, their original destinations, face commands and the exact italic markup, including the source’s unclosed opening tag in the first option. The existing registry identifies the invariant; it does not prove localized presentation or route reachability. The English control and locale wording need localized package branch, fit and visual checks. Source discovery and the preserve-exact contract remain provisional.
+
+## Author decision after source-gate reconciliation
+
+The author accepts `grandão C` and its identical echo: C refers to Conrad, the boastful nickname remains self-invented, and the name reply stays separate. This adapts the joke without altering the approved character name. The 14 IDs and drafts match both stock-build entries in the paired readback recorded in the checkpoint, including the intentionally unclosed source italic tag. `localization/evidence/conrad-language-groups-20261107.json` binds the two source programs and choices, and the existing per-ID adapter can retain their control instructions. Positive scenarios select the echo and the name response, preserving each reaction. Negative scenarios lose the shared nickname or initial, swap branch IDs or close the source's unclosed markup. Actual localized rendering, route reachability and fit remain pending; this is author self-review.

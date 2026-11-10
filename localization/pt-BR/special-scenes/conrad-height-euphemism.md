@@ -24,3 +24,7 @@ Source: `conrad-height-euphemism`, `ryan_food_dialogue`, in the paired English w
 | `yarn:line:36fb380f` | That's wonderful, he's cute! | Que maravilha, ele é fofo! |
 
 Keep each original ID and route destination. Exercise the euphemism and alternative response in both romance paths; actual localized route selection, choice fit and presentation remain unverified. Context before and after both spans remains to be translated and reviewed. The source inventory and preserve-exact contract are provisional.
+
+## Author decision after source-gate reconciliation
+
+The author accepts `verticalmente desfavorecido` for both deliberate euphemisms, retaining the separate relationship contexts and alternatives. The earlier red dragon is not prematurely named; `fofo` at `line:035e5be6` refers to the already identified male Conrad in that branch, not to the player. The 18 IDs and drafts match both stock-build entries in the paired readback recorded in the checkpoint; source apostrophe variants do not change the shared sense. The paired control and state analysis in `localization/evidence/romance-route-analysis-20261107.md` and source node inventory support the original per-ID adapter and distinct flags. Positive scenarios select the euphemism and alternative on each relationship path. Negative scenarios reveal Conrad's name before the source does, vary the repeated euphemism, or exchange route-specific options or reactions. Actual localized path selection, fit and presentation remain pending; this is author self-review.
