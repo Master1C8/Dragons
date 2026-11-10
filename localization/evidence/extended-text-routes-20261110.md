@@ -212,3 +212,51 @@ output. The receipts and the selected IL trace are in
 | --- | --- | --- |
 | Declaration strings and selected reads | `28b4741aeeb10a0dd6a6d81b8c631ff027d4d153ef240cc77c79533276dbb739` | `4585ed7176cf5bfb7f66b1836c36df5e71ca0a5fda8a92b09a5b7795faf4262a` |
 | Selected IL trace, identical on both | `f47f781b504554ec2cf87107436d9b80b49841bcb66e98337a38c86a30a4e471` | `f47f781b504554ec2cf87107436d9b80b49841bcb66e98337a38c86a30a4e471` |
+
+## Serialized UnityEvent calls and complete localization settings
+
+`inventory_unity_events.py` checks the generated schemas of all 3,498 macOS
+and 3,435 Windows MonoBehaviours in the 17 pinned root assets. All 1,695 macOS
+and 1,658 Windows objects whose schemas contain persistent calls or managed
+references round-trip byte for byte. The scanner resolves the game, graph,
+lighting and localization managed reference schemas. It explicitly replays
+the localization registry's null reference marker without a payload.
+
+Both builds have the same 39 persistent calls by method and mode. Every
+stored string argument is empty, including calls in dynamic mode. Five
+serialized `OnContinueClicked` calls have null targets. The one dynamic
+`set_text` listener is the previously audited disabled and unbound
+`LocalizeStringEvent`. The dynamic `UpdateText` listener resolves from
+`sharedassets0.assets#685` to `#668` on macOS and from `#680` to `#663` on
+Windows. Both targets are `UnityScriptableSettings.SliderAmountDisplay`
+despite the historical assembly name in the serialized call. The existing
+setter audit traces it to formatting a single number through `0.00` or
+the current culture. The format literal is already an exact v42 value.
+
+The complete settings object has 99 nonempty strings in each build.
+These include managed type names, locale identities, the `-language=`
+option, SmartFormat aliases and parser syntax, and the two fallback
+messages. The additional `(null)` value is read by
+`SubStringFormatter.TryEvaluateFormat` for a null input and passed to the
+formatter's output writer. The pinned managed inventories contain no
+direct references to the selected SmartFormat and string-database
+methods outside Unity Localization. The previously checked stock
+catalog and the disabled event leave no observed game route to this
+additional fallback. Preserve the entire settings object and assembly
+under the existing package checks.
+
+```sh
+"$PYTHON" -B localization/inventory_unity_events.py PLATFORM STOCK_DATA
+```
+
+The two reports reproduced byte for byte. A matching dynamic call passed
+classification. Injecting a stored string, changing to a string-argument
+mode, or changing to an unknown callback failed. A new settings string
+without a role also failed. These results add no authoring IDs to v42.
+
+| Receipt | macOS SHA-256 | Windows SHA-256 |
+| --- | --- | --- |
+| Persistent calls and localization settings | `6e2c3fea0eceb5d896c5e2aa10966f4522a2c4eda7341be29253b96dda7432dd` | `5152d4fc7e06fe915ed8cc24aeed3173c809b00273b295d0ffca7bb26c18c98d` |
+| Selected formatter IL and external references | `572150de178f9a4a1138e88c1e5766de43708e974053c7f60ba50cd6d377039a` | `572150de178f9a4a1138e88c1e5766de43708e974053c7f60ba50cd6d377039a` |
+
+The receipts are in `localization/work/unity-event-audit-20261110.Zc7Ipa/`.
