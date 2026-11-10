@@ -245,3 +245,9 @@ Author self-reviewed 53 additional IDs in `Conrad_Intro_4`, covering the three r
 Author self-reviewed 37 additional IDs across `Ryan_1_intro`, `Ryan_1_required`, `Ryan_1_nag` and `Ryan_1_Outro`, retaining the previously reviewed Yip decisions. The case-only game-title difference between builds is explicitly bound to the canonical shared title. This is author self-review, not independent audit.
 
 `translation.json` now has **794 / 1,947 IDs**, SHA-256 `712243b8eb61fb808d536c78192b059a918c21de13d986d88651a6c5a5af4329`. `resume-01/add-ryan-first-visit.py` and `resume-01/ryan-first-visit-map.py` validate the preceding draft and paired readers; macOS accepts 794 and Windows 788 bindings. The complete guard reports 1,153 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Phone tutorials — continuation
+
+Author self-reviewed 21 additional IDs across `Ryan_1_PhoneTutorial` and `Conrad_3_PhoneTutorial`. Three source pairs differ only in title spelling or minor English grammar/spacing and are explicitly bound to shared Polish targets. The franchise number, device term and ordered emphasis markup are preserved. This is author self-review, not independent audit.
+
+`translation.json` now has **815 / 1,947 IDs**, SHA-256 `63b2aae9b024133e6a190ef331eacf1e1a6ef1e0f2fe491293b87977e2a9cf63`. `resume-01/add-phone-tutorials.py` and `resume-01/phone-tutorials-map.py` validate the preceding draft and paired readers; macOS accepts 815 and Windows 809 bindings. The complete guard reports 1,132 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.

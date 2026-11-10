@@ -833,6 +833,36 @@
     "yarn:line:513bed5a": "Och, czyli to dla nas obojga nowość!",
     "yarn:line:f2ae89c4": "Szczerze mówiąc, dziwię się, jakie to przyjemne.",
     "yarn:line:649e8eb3": "Miła odmiana od tego wszystkiego na zewnątrz.",
-    "yarn:line:decf872a": "..."
+    "yarn:line:decf872a": "...",
+    "yarn:line:b83ec453": "Otrzymaliśmy twoją prośbę o stojak!",
+    "yarn:line:2e0ec324": "Co..?",
+    "yarn:line:bf137cb4": "Dotarł dziś rano, powinien być przy bramie.",
+    "yarn:line:29237bc3": "Otwórz skrzynię łomem i umieść go w magazynie, dobrze?",
+    "yarn:line:ccaabca3": "Okej!",
+    "yarn:line:5a9abbd4": "Wspaniale. Życzę <i>owocnego</i> dnia.",
+    "yarn:line:a99c515c": {
+      "text": "Dzień dobry, <i>„franczyza Drag'N Wash nr 223”...</i> Czy rozmowa z pierwszym klientem już się odbyła?",
+      "sharedAcrossSourceVariants": true
+    },
+    "yarn:line:ce77a00e": "Właśnie przed chwilą!",
+    "yarn:line:5847a779": "Tak, już tak.",
+    "yarn:line:e216aee0": "Ach, dobrze.",
+    "yarn:line:7426a997": "...",
+    "yarn:line:d7b3cd09": "W takim razie życzę owocnego dnia.",
+    "yarn:line:4183ca7e": {
+      "text": "Dzień dobry, <i>„franczyza Drag'N Wash nr 223”...</i> Czy sposób interakcji jest już jasny?",
+      "sharedAcrossSourceVariants": true
+    },
+    "yarn:line:fbd2c3e7": "Nie.",
+    "yarn:line:8f46bb17": "Chyba już wiem!",
+    "yarn:line:6de2c490": "Ach...",
+    "yarn:line:fcff7b00": "W takim razie podejdź do okienka i porozmawiaj z klientem.",
+    "yarn:line:6acf7c77": {
+      "text": "Potem oczywiście trzeba go wpuścić.",
+      "sharedAcrossSourceVariants": true
+    },
+    "yarn:line:1976bc60": "Doskonale. W takim razie podejdź do okienka i przywitaj się z klientem.",
+    "yarn:line:a327b5f9": "Okej!",
+    "yarn:line:3517b28e": "Życzę owocnego dnia."
   }
 }
