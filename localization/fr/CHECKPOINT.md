@@ -1,6 +1,6 @@
 # French localization checkpoint
 
-Updated 2026-11-10. Status: **probe and glossary gates open; translation not started**. The requested standard locale is `fr`; source is English. Session `01a1c394-a809-7812-9570-df379360d954` turn context and process arguments record `gpt-6.1-terra`, reasoning `high`. No other model or agent was used.
+Updated 2026-11-10. Status: **glossary author layers reconciled; renderer probe in progress; translation not started**. See [glossary review](glossary-review.md) and [renderer probe](renderer-probe.md) for the current resumption; historical notes below retain the earlier checkpoint context. The requested standard locale is `fr`; source is English. Session `01a1c394-a809-7812-9570-df379360d954` turn context and process arguments record `gpt-6.1-terra`, reasoning `high`. No other model or agent was used.
 
 ## Bound inputs
 
@@ -18,17 +18,17 @@ Next: use the existing paired sample/observer recipe and a French-specific synth
 
 ## Glossary readiness
 
-CLI preflight reports 28/28 IDs structurally complete, not editorial acceptance. Historical French `glossary-reviews/fr/layer-1.md` and `layer-2.md` are two author self-reads of the earlier 27-entry hashes; the new anonymous-dragon entry was subsequently reviewed by the coordinator, without an independent reviewer (`localization/evidence/generic-dragon-entries-20261110.md`). Source historical reviews were also self-reviews. Reconcile exact affected evidence and current hashes before crediting any unchanged receipts. Independent editorial acceptance is **pending**: the user prohibits agents and no distinct authorized reviewer is available.
+CLI preflight reports 28/28 IDs structurally complete, not editorial acceptance. Historical French `glossary-reviews/fr/layer-1.md` and `layer-2.md` are two author self-reads of the earlier 27-entry hashes; the new anonymous-dragon entry was subsequently reviewed by the coordinator, without an independent reviewer (`localization/evidence/generic-dragon-entries-20261110.md`). Source historical reviews were also self-reviews. Reconcile exact affected evidence and current hashes before crediting any unchanged receipts. The owner later explicitly allowed the two glossary author self-reviews without a distinct reviewer; see glossary-review.md. This does not waive independent game-text review.
 
-A preliminary direct comparison of all 28 current English/French entries found an objective candidate issue: `dnw-family-crest` translates the ornamental family emblem as “crête familiale”, which normally denotes a physical crest; “blason familial” is a candidate for adjudication against the actual source context. No SiteForMods file was changed and this is not an accepted glossary correction. Review source context, complete the source and French fidelity and separate native-language layers, record all findings and dependency closures, and obtain an authorized independent review. The current preliminary read is not a clean layer or a substitute for the full evidence-bound process. SiteForMods is read-only under this assignment; do not silently alter or approve the canonical glossary.
+A preliminary direct comparison of all 28 current English/French entries found an objective candidate issue: `dnw-family-crest` translates the ornamental family emblem as “crête familiale”, which normally denotes a physical crest; “blason familial” is a candidate for adjudication against the actual source context. The later scene-bound review withdrew this finding: the crest is worn around the head. See glossary-review.md. No SiteForMods file was changed.
 
 ## Stage status
 
 | Stage | Status |
 | --- | --- |
-| probe | Open: French dialogue, choices, settings, visual fit and progression lack matching evidence. |
+| probe | In progress: paired French glyph/progression and settings controls ran; macOS choice/body frames captured, CrossOver body/choice capture in progress. See renderer-probe.md. |
 | source | Pinned worklist generated; verify source/preserve-exact gate and current shared receipts before translation. |
-| glossary | Open: identified candidate defect, source/target editorial reconciliation and independent acceptance pending. |
+| glossary | Two author self-review layers reconciled on current hashes under the owner exception; the earlier crest finding was withdrawn after scene review. Independent review was not claimed. See glossary-review.md. |
 | special-scene decisions | 0/27 reviewed French decisions; begin only after applicable source and glossary gates. |
 | translate-edit | 0/1,947 authored; `translation.json` does not exist. |
 | editorial | Not run; full semantic audit, independent delta and regression catalog pending. |
