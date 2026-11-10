@@ -1,0 +1,11 @@
+{
+  "locale": "ar",
+  "translationSha256": "3fa60b6b632f798374623758bf0502e05a81b0d625224da440d1c30bc4d09e5d",
+  "selfEditedRows": 1947,
+  "scope": "authored-text-only",
+  "findings": "Author read all paired English and Arabic rows, corrected player-address, scene wording and contextual fidelity, and rechecked changed contexts.",
+  "status": "Author self-edit complete; source-bound static dialogue verification passed. Independent editorial review and visual/runtime verification were not performed. Display fixes and packages are deferred.",
+  "verification": "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/ar/final-yarn.json",
+  "model": "gpt-6.1-terra",
+  "reasoning": "high"
+}
