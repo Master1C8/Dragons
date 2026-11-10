@@ -139,3 +139,11 @@ Cumulative distinct IDs read: 1,026 / 1,947; 921 remain. Author review only; ind
 Compared introductions, required conversations, other interactions and departures in both English builds with Polish. His first-visit crest identifies his college position and the protagonist misidentifies his title; the second visit explains Igwyx’s spontaneous combustion, reconstitution, and Alexander’s concern for his reputation. The variant source spelling Igwix in the separate interaction is normalized to the established Igwyx spelling confirmed by the introduction. Both source-typo variants use shared targets. The private-washer comparison and confidential closing retain their context. Source node membership does not prove live sequencing or branch triggers; current-payload gameplay and display fit are unrun. No new finding.
 
 Cumulative distinct IDs read: 1,125 / 1,947; 822 remain. Author review only; independent acceptance remains pending.
+
+## Alexander third visit: 73 IDs read
+
+Compared arrival, required conversation, request for a question, action reactions and departure against both English builds and current Polish. The deliberately fabricated ink accident is exposed by the player; Alexander admits he made an excuse to visit, then describes the unaccustomed ease of friendship. Igwyx’s earlier accident and recovery are referenced across separate nodes, whose exact runtime ordering has not been established. The repeated yip and intimate action responses preserve speaker and markup. Live transitions and fit remain unrun.
+
+Finding pending disposition: `yarn:line:61c8781b` uses the unnatural apposition `tobie, koboldowi` for Alexander’s assurance that the player is the only kobold he now wants washing him. Preserve his exclusive preference and the species reference in a natural sentence.
+
+Cumulative distinct IDs read: 1,198 / 1,947; 749 remain. Author review only; independent acceptance remains pending.
