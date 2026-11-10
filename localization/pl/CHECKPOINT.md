@@ -426,3 +426,7 @@ Original captures and WebP80 previews with source hashes are in `payload-probe/m
 ## Contextual correction and semantic audit start
 
 Accepted the independent finding at `yarn:line:f16d7940`; `editorial-delta-02.md` records the author-reviewed 17-position scene context, branch and related-variant checks, exact correction, bound dependency export and limitations. The correction changes the payload hash; v2 packaging, gameplay and visual receipts remain preserved for their original hash and require fresh verification after editorial changes. The 383 selected dependency IDs are not an editorial acceptance. Complete semantic audit, mandatory regression and independent game-text review remain open. Preserve the existing ten-frame visual queue without opening it.
+
+## Author semantic pass: Ryan food conversation
+
+Read 111 paired English/current Polish IDs in `ryan_food_dialogue` with the three romance choices, branching evidence and both source variants. `semantic-audit-progress.md` records two open findings and limits; `semantic-audit-ryan-food.json` lists the reviewed IDs and bindings. This is author review, not independent acceptance; route gameplay and visual fit remain open. Resume with the remaining 1,836 IDs, consult actual scene and runtime context, adjudicate findings with dependent text, then complete the mandatory regression and independent audit.
