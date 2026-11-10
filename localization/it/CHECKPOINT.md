@@ -8,6 +8,10 @@ The glossary gate is **not yet complete**. The row-level receipt now binds two a
 
 Updated 2026-11-10. Scope: standard Italian (`it`), English source, macOS `9/12/2026_a93aa21a`, Windows `9/9/2026_ee944596`. No texture-with-text modification, publication, deployment, server action or GitHub push. Independent reviewers and other agents are excluded by the current assignment. The active CLI process was verified as `gpt-6.1-terra`, reasoning `high` (worker PID 12753, launch record in the run directory).
 
+## Resume 12 — Ryan third visit
+
+The paired draft contains **1,237/1,947 IDs**, with 710 dialogue IDs blank. `translation.json` SHA-256 `249318210f903fc764a655913be5267fd2f5cdce946e78797b01c1fd3d864bcc`. This batch adds 52 third-visit lines and refines two earlier hose references. The paired Yarn reader accepted 1,113 dialogue bindings on each platform. The wording preserves the player's unspecified gender and Ryan's stated former partner. This is author-reviewed draft and structural/source-bound validation; the separate final independent game-text audit, packages, runtime and visual acceptance remain pending.
+
 ## Resume 12 — Ryan first and second visits
 
 The paired draft contains **1,185/1,947 IDs**, with 762 dialogue IDs still blank. `translation.json` SHA-256 `2e32ff00a1eb4ce850cec0ad0143edd7427530c088fb1c3ab82b5aa138c4436e`. This batch adds 69 lines from `Ryan_1_Outro`, `Ryan_1_nag`, `Ryan_2_intro` and `Ryan_2_Outro`; paired dialogue readers accepted 1,061 dialogue bindings on each build. These are authored draft and structural/source-bound checks, not final semantic or visual acceptance. The final independent game-text audit, deliverables, runtime and visual reviews are pending.
@@ -55,7 +59,7 @@ The resume-10 named-entity note contained unsupported descriptions of Igwyx and 
 - `probe`: **passed for the bounded Italian renderer cases**. Isolated macOS and Windows CrossOver runs exercised dialogue, choices, progression and settings. The [independent frame review](../evidence/es-it-renderer-frame-review-20261110.md) resolved all remaining dialogue and choice frames and verified all three settings labels in the new 1280×960 macOS render. Original profiles were preserved. Native Windows and the final translated corpus retain separate checks.
 - `source`: **passed** for the pinned package scope and exact-preservation entry gate; see [current source decision](source-readiness-resume.md). The worklist has 1,947 IDs and 27 known special-scene groups.
 - `glossary`: **passed for authoring** on two complete author self-review layers at the bound hashes; see the current resume-11 decision. Independent final game-text audit remains separate.
-- `translate-edit`: **special-scene entry decisions complete**; 27/27 recorded, 1,185/1,947 IDs applied in the paired draft. Continue ordinary authoring and package-specific validation.
+- `translate-edit`: **special-scene entry decisions complete**; 27/27 recorded, 1,237/1,947 IDs applied in the paired draft. Continue ordinary authoring and package-specific validation.
 - `editorial`: not started; complete semantic pass and distinct independent diff/delta review pending.
 - `resources`: not started; final corpus glyph and layout coverage pending. Textures with text are excluded and preserved.
 - `package`: not run; neither local deliverable built.
