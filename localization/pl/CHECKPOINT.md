@@ -518,3 +518,7 @@ Author compared 129 IDs in `semantic-audit-conrad-fifth.json`; cumulative 1,572/
 ### Semantic audit continuation: other encounters
 
 Author compared 125 IDs in `semantic-audit-legacy-encounters.json`; cumulative 1,697/1,947, 250 remain. Related position prompts and the date wording await disposition; see `semantic-audit-progress.md`. Translation SHA-256 remains `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; independent audit, current-payload runtime and visual acceptance remain open.
+
+### Semantic audit continuation: other interactions
+
+Author compared 127 IDs in `semantic-audit-other-interactions.json`; cumulative 1,824/1,947, 123 remain. One conversational finding awaits disposition; see `semantic-audit-progress.md`. Translation SHA-256 remains `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; independent audit, current-payload runtime and visual acceptance remain open.

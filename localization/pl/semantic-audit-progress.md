@@ -188,3 +188,11 @@ Compared muddy Ryan’s opening, idle prompts, wash state and goodbye; the alche
 Findings pending disposition: `yarn:line:21235886` and `yarn:line:7ead92b1` use awkward `podejść z przodu` for coming round to where Ryan can see the player; compare both prompts. `yarn:line:f716a163` literally brings the date to the player; assess a more natural rendering while preserving his playful premise.
 
 Cumulative distinct IDs read: 1,697 / 1,947; 250 remain. Author review only; independent acceptance remains pending.
+
+## Other interactions, intimate scenes and general dragon responses: 127 IDs read
+
+Compared the alternate Alexander introduction and Igwyx accident, his professor and crest exchange, dirty/soapy and idle states, Conrad’s responses, the two intimate scene loops and choices, shared dragon wash and dismissal responses, declined actions and mount interaction, and in-game error report. Both English builds match for these IDs. Alexander’s head ornament retains the glossary-supported term; the source’s alternative Igwix spelling is normalized to Igwyx. Conditional wash states, consent and refusal remain distinct. Source groups do not prove trigger routing or current display.
+
+Finding pending disposition: `yarn:line:0bc044da` translates the question “You ready for this?” as the overly formal noun `Gotowość?`; seek a natural gender-neutral conversational question without changing agency.
+
+Cumulative distinct IDs read: 1,824 / 1,947; 123 remain. Author review only; independent acceptance remains pending.
