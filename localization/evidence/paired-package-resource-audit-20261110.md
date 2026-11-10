@@ -47,6 +47,35 @@ file receipt SHA-256 is
 The Windows ZIP is the same artifact as in the
 [Russian build verification](russian-build-verification-20261110.md).
 
+## Serialized source follow-up
+
+All 17 root Unity serialized files in each actual Data directory match the
+existing pinned asset inventory. A source-only scan resolved all 3,498 macOS
+and 3,435 Windows MonoBehaviour script references, independently reproducing
+the counts in the [extended text-route audit](extended-text-routes-20261110.md).
+Among the selected built-in text and media object types, the only hits were
+the four known TextAssets. Unity built-in resources were checked separately.
+
+Outside the game, TMP, legacy UI, Yarn, settings and input assemblies already
+covered by dedicated recipes, 577 macOS and 576 Windows components round-tripped
+byte for byte. Their 221 nonempty payload string occurrences per build are the
+previously audited localization listener's method and argument type, probe
+volume scene GUIDs, render debugger prefab types and animation triggers, rig
+serialization versions and a decal texture property name. This bounded scan
+found no additional player-facing phrase among those fields. The general
+schema could not round-trip 79 objects per build. The Unity Localization
+settings object among them has a separate verified segment decoder. The other
+78 are light/decal, probe volume, render-pipeline settings or orbit-camera
+components. All 79 objects in each build matched the packaged controls byte
+for byte, across 13 assets per build. This closes their byte preservation in
+the audited packages. Their unresolved schemas still limit source discovery.
+
+The source-only component type and field reports are in the same work folder.
+Their file names end in `-serialized-component-types.json` and
+`-additional-components.json` respectively. The unresolved-object comparison
+receipt SHA-256 is `13aaa471787cfb0679a695601b401fcfa3eadd2f21a3d212754a50109686d98f`.
+No images or textures were decoded or altered for this pass.
+
 The source gate remains open. Exact file preservation covers untouched
 resources even when they contain engine metadata. It does not classify every
 player-visible source or prove the complete field-level preservation contract
