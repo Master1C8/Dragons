@@ -731,3 +731,122 @@ The three choices below keep introduction, Ryan commitment and Conrad commitment
 | `886f5df2` | Va bene, a presto! |
 
 Positive review: introduction produces Conrad/Ryan, and the other two labels explicitly commit to the named romance; all three outcomes remain separate. The vertically challenged euphemism and Ryan's four distinct reasons for liking Conrad remain recognizable. Negative review: do not merge or invert any option, destination or state flag, infer player gender, repair source markup, or promise merely unlocking where the source commits. Remaining route-closure classification and final package execution/fit remain open.
+
+### `ryan-conrad-romance-routing` — first route-specific follow-ups (partial)
+
+These seven groups contain 110 source-bound rows; the paired English differs only by a missing apostrophe in `507bd2b9` (same meaning). They follow the Conrad/Ryan introduction, the player's Ryan route or the player's Conrad route. IDs are `yarn:line:` suffixes. The date with Ryan and Conrad is distinct from the player's own date with Conrad, and later Ryan thanks the player for introducing him to Conrad. Existing branch flags and destinations must remain stock. The following is a partial authored unit, not a claim that every reachable route scene is done.
+
+| ID | Italian target |
+|---|---|
+| `bb8583c1` | Con Ryan sono abbastanza sicuro che usciremo insieme stasera. |
+| `1810e75f` | Hai qualche consiglio? |
+| `8e20e028` | Sii te stesso! |
+| `5072cc60` | Assicurati di essere pulitissimo. <size=70%><i>eh eh. |
+| `3471e9b1` | Faccio del mio meglio. |
+| `a241eec6` | Ma finora tutto bene, no? |
+| `335c5156` | Credo di sì! |
+| `a56c5621` | Se interessi a uno come Ryan, te la stai cavando alla grande. |
+| `c642cb17` | Grazie. |
+| `ea23c5f9` | Ah. Se solo ci fosse un coboldo capace di lavarmi. |
+| `7c13c28e` | Magari. |
+| `49b6a167` | Farò in modo che tu sia <i>immacolato. |
+| `df86a610` | Scherzi a parte, il tuo lavaggio è decisamente il migliore. |
+| `f3e7a8fe` | Grazie. Quando si è belli, ci si sente bene! |
+| `28c51dbf` | Allora... un appuntamento. Credo che mi piacerebbe uscire presto! |
+| `b9d8a22f` | Ah sì? |
+| `2fe8a558` | Mi piacerebbe molto! |
+| `ca616238` | Pensavo. Potremmo uscire la settimana prossima? |
+| `5c51654f` | Mi sembra bello. |
+| `e6006cd6` | Mi farebbe piacere! |
+| `70306ba1` | Fantastico! |
+| `d3a50f3f` | La prossima volta che vengo a farmi lavare usciamo. |
+| `45950848` | Mi piacerebbe! |
+| `ffc401d1` | Mi sembra un piano. |
+| `69f406a6` | Non vedo l'ora. |
+| `ab1bc039` | Sì! Mi sento pulito. |
+| `3d2bc74e` | Ehi, ehm, credi che tra me e Ryan funzionerà <i>davvero</i>? |
+| `877aced7` | Certo! |
+| `b2dfad3e` | Lo spero. |
+| `114ac9a0` | Spero che tu abbia ragione. |
+| `24efaa49` | Già, anch'io. È davvero gentile. |
+| `9ebea3d0` | È difficile non essere nervosi dopo tutto quello che è successo... |
+| `088ea4a7` | Ma sono una bomba, quindi andrà bene. |
+| `99931b37` | Spero. |
+| `0fa31c40` | Però il nostro primo incontro è andato benissimo! |
+| `ea2adb20` | Davvero? Raccontami! |
+| `f3eeb627` | Fantastico! Quando sarà il vostro primo appuntamento? |
+| `7c1adc57` | Mi ha chiamato e ci siamo incontrati. È davvero gentile. |
+| `c64bd5ce` | Ha detto che sono alla mano, abbiamo organizzato un appuntamento... |
+| `507bd2b9` | Ed è per questo che sono qui! Dopo il lavaggio andrò da lui. |
+| `65deb150` | Subito dopo questo lavaggio! |
+| `df8fb8c9` | Andremo in un ristorante di pesce... |
+| `49bfbfbe` | Ho già prenotato un posto al locale. |
+| `d8a2002e` | Allora è meglio che ti faccia uscire! |
+| `94fbdbf0` | Sono felice per te. Vado ad aprire il cancello! |
+| `4e920759` | Ah... Sì, non vedo l'ora. |
+| `02cbdc87` | Grazie, anch'io non vedo l'ora. |
+| `fdd800c2` | Sì! Pulito come sempre. |
+| `6be807b5` | Hai qualche programma con Ryan? |
+| `d1b90e2c` | Non lo so ancora. |
+| `722c6ab2` | Pensavo a un appuntamento presto. |
+| `4789095b` | Capisco. Insieme siete proprio carini. |
+| `e41c6dc5` | Spero davvero che vada tutto bene! |
+| `c87d632b` | Sì! Sarebbe fantastico. |
+| `5e4d645c` | Insieme siete davvero carini... |
+| `cf50dbcc` | Spero che vada tutto bene. |
+| `5960dcbb` | Dovrebbe essere tutto, però. Puoi andare ad aprire il cancello? |
+| `ed6be68f` | Mi sento immacolato come sempre. |
+| `7b5be1f8` | Oh, e ho deciso dove andare. |
+| `d8ce8566` | Ah sì? |
+| `4efe8211` | Che c'è? |
+| `f4af8b88` | C'è questo locale in centro. Si chiama «Wings». È uno dei miei vecchi preferiti. |
+| `629f8cff` | Lì dentro sono uno abbastanza importante. |
+| `f382336f` | Potrei procurarci i posti <i>migliori</i> per lo spettacolo. |
+| `65b23418` | Ah, va bene. Ci sto. |
+| `99ff9e7f` | Ooooh, allora devi essere importante. |
+| `803bf378` | Cazzo, sono proprio su di giri. |
+| `160bf40f` | Comincerò a prepararmi. |
+| `ac5afd96` | La prossima volta che vengo avrò prenotato! |
+| `3a6afae1` | Puoi andare ad aprire il cancello? |
+| `0fcf9908` | Puoi scommetterci. |
+| `b59e9091` | ... |
+| `23ae97e6` | Tu sei importante. |
+| `b2b32876` | Scusa, non sono capace di flirtare. Puoi aprire il cancello? |
+| `24832f01` | Non vedo l'ora. |
+| `803c8f0c` | Conrad mi ha parlato di te durante il nostro appuntamento. |
+| `1121309c` | Ah sì? |
+| `871137eb` | Di che cosa? |
+| `6298f08b` | Mi ha raccontato di quando è stato picchiato. |
+| `f4a8f7fc` | Credo che tu l'abbia aiutato molto più di quanto pensi. |
+| `4ef9fe65` | In che senso? |
+| `d8c9f912` | Facevo solo il mio lavoro! |
+| `7b5c9d8c` | Certo, ma in quel momento aveva bisogno di qualcuno che si preoccupasse per lui. |
+| `ed6c9afb` | Da quel che ho capito, era tanto che nessuno... si preoccupava per lui. |
+| `573d9362` | Anche se facevi solo il tuo lavoro... credo che l'abbia aiutato molto. |
+| `c10d9415` | Quindi grazie da parte sua per la tua premura. |
+| `50102b85` | So che a volte può essere irascibile e dimenticarsi di ringraziare. |
+| `c6202cf2` | Oh... Grazie. |
+| `1c49f05b` | Mi fa piacere sentirlo. |
+| `8a79f72c` | Oh. E un'altra cosa. |
+| `3028feb5` | Dopo l'appuntamento abbiamo anche fatto sesso. |
+| `a618f9c2` | <size=70%><i>Accidenti... |
+| `93bd9a2b` | Ryan! |
+| `058d9d5c` | Ah, sì. Conrad ha decisamente esperienza... |
+| `29ec93b2` | Cooosa? Non c'è niente di male! Pensavo ti avrebbe fatto piacere saperlo. |
+| `1760e5d5` | Credo che tu abbia lavato ogni punto. |
+| `8150e2a2` | Grazie per avermi aiutato. |
+| `3b01eb3b` | Sono sempre felice di lavarti! |
+| `3c2c53dc` | Che cosa intendi? |
+| `ad31ec4c` | Oh... Non solo per il lavaggio. |
+| `aa1c54ab` | Intendo in generale. |
+| `c932c99d` | La rottura che ho vissuto prima è stata dura. |
+| `5f02ceea` | Questa è stata una splendida via di fuga... |
+| `e553c773` | E mi hai presentato Conrad. |
+| `7363c004` | È fantastico. |
+| `d0f6a49a` | Ci vediamo la prossima volta che vengo, d'accordo? |
+| `46c6a3ed` | Mi fa sempre piacere vederti, Ryan. |
+| `6aa7ad03` | Vado ad aprirti il cancello. |
+| `fc97aa74` | Anche a te. Grazie per il lavaggio. |
+| `fbba1293` | Grazie. |
+
+Positive review: each follow-up reflects its actual relationship state; player responses about Ryan and Conrad do not conflate their pair with either player romance. Negative review: do not substitute branch labels or alter state tests, and do not infer a player gender from a romance. Final execution, line fit and the other reachable scenes remain open.
