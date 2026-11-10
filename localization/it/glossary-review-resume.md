@@ -520,3 +520,7 @@ Both author layers reviewed all 54 paired rows. The branch flags identify the re
 ### Alexander questions — individual row bindings
 
 The unchanged 77-row, six-entry two-author-read and subsequent full-entry/referent review recorded above are now bound to individual ordered source IDs and judgments. The head ornament is mistaken for anatomy but identifies family; alchemy is a subject Alexander teaches, and the player describes their work as his washer. The longer family-history speech does not establish other named film entries. Player gender remains unestablished. This material is reused author self-review, not independent review.
+
+### Ryan food dialogue — paired row-level author coverage
+
+The two author self-review layers cover all 111 paired rows in this branch-rich conversation. `yarn:line:bedc761d`, `line:31281c6d`, `line:a7181b1a`, and `line:48d4a45a` establish that the red dragon/drake introduced to Ryan is Conrad; the three highlighted options select different relationships. `line:5bab2df8` calls the player a kobold without establishing their gender. The statement about small dragons at `line:f16d7940` is Ryan’s joke, not a species rule. `line:035e5be6` uses they for Conrad in this context. The exact paired rows preserve several apostrophe differences and markup; no shared source or glossary was changed. Individual decisions and entry hashes are bound in the row receipt. Full-entry and corpus-union reconciliation remain separate; self-review is not independent review.
