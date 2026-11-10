@@ -1,0 +1,559 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "beforeSha256": "cb471d50b18d79b659744dcf6360b25ba63d9ba42c2428e95196e040341dda2e",
+  "afterSha256": "5fa6af152deb0b47aabb82ee607b8dd33e326905b2029335c6dbdaa83055b83e",
+  "edits": {
+    "yarn:line:f16d7940": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 389,
+          "lastInstruction": 429
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:9b10d450",
+        "yarn:line:4c11c83e",
+        "yarn:line:675d7e37"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:675d7e37",
+        "yarn:line:f16d7940",
+        "yarn:line:91ab30f5"
+      ],
+      "reason": "Review Conrad referent, all four choice branches and the shared continuation on both stock programs; retain the tendency and interrupted physical joke."
+    },
+    "yarn:line:dee4a32d": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 224,
+          "lastInstruction": 257
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:48d4a45a"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:dee4a32d",
+        "yarn:line:48d4a45a"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:ca480eed": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 147,
+          "lastInstruction": 187
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:5c78099a",
+        "yarn:line:e6290003"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:ca480eed",
+        "yarn:line:5c78099a",
+        "yarn:line:e6290003"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:e6290003": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 150,
+          "lastInstruction": 188
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:5c78099a",
+        "yarn:line:ca480eed"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:e6290003",
+        "yarn:line:5c78099a",
+        "yarn:line:ca480eed"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:9be63f47": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_grab_basket",
+          "firstInstruction": 4,
+          "lastInstruction": 21
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:9be63f47"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:7d9ffc48": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_ham_dialog",
+          "firstInstruction": 29,
+          "lastInstruction": 42
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:ec8243d8"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:7d9ffc48",
+        "yarn:line:ec8243d8"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:189d999e": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_2_Outro",
+          "firstInstruction": 84,
+          "lastInstruction": 106
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:8ead9ee9",
+        "yarn:line:fd145efe"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:189d999e",
+        "yarn:line:8ead9ee9",
+        "yarn:line:fd145efe"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:9883786d": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_SexScene_Cum",
+          "firstInstruction": 49,
+          "lastInstruction": 82
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:0eb37f1a",
+        "yarn:line:099ec7fd",
+        "yarn:line:88c36bc7"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:9883786d",
+        "yarn:line:0eb37f1a",
+        "yarn:line:099ec7fd",
+        "yarn:line:88c36bc7"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:fbe86c06": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_Conrad_SexScene_Cum",
+          "firstInstruction": 32,
+          "lastInstruction": 67
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:41b9659f",
+        "yarn:line:95aa0bf4",
+        "yarn:line:db592d76"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:fbe86c06",
+        "yarn:line:41b9659f",
+        "yarn:line:95aa0bf4",
+        "yarn:line:db592d76"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:6fa847ba": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_1",
+          "firstInstruction": 2,
+          "lastInstruction": 17
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:9ab6ddfb",
+        "yarn:line:f99840cd",
+        "yarn:line:d5f94e23",
+        "yarn:line:e05c2dca"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:6fa847ba",
+        "yarn:line:9ab6ddfb",
+        "yarn:line:f99840cd",
+        "yarn:line:d5f94e23",
+        "yarn:line:e05c2dca"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:72b244b7": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_1_Cum",
+          "firstInstruction": 2,
+          "lastInstruction": 3
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:72b244b7"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:1a5e1ba4": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_required_2",
+          "firstInstruction": 48,
+          "lastInstruction": 74
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:8c6e1cd3"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:1a5e1ba4",
+        "yarn:line:8c6e1cd3"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:b4a29141": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_2",
+          "firstInstruction": 2,
+          "lastInstruction": 3
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:22929636"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:b4a29141",
+        "yarn:line:22929636"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:0de4fe62": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_required_2",
+          "firstInstruction": 100,
+          "lastInstruction": 118
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:0de4fe62"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:a0cf6cae": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Outro_3",
+          "firstInstruction": 6,
+          "lastInstruction": 26
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:a0cf6cae"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:12e8ae42": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_idle_3_1",
+          "firstInstruction": 7,
+          "lastInstruction": 18
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:12e8ae42"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:07bd7f57": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Intro_4",
+          "firstInstruction": 71,
+          "lastInstruction": 96
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:6c193ba9",
+        "yarn:line:fa293cde",
+        "yarn:line:e3ed51d9",
+        "yarn:line:cf8c5f37"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:07bd7f57",
+        "yarn:line:6c193ba9",
+        "yarn:line:fa293cde",
+        "yarn:line:e3ed51d9",
+        "yarn:line:cf8c5f37"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:6c193ba9": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Intro_4",
+          "firstInstruction": 76,
+          "lastInstruction": 104
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:07bd7f57",
+        "yarn:line:fa293cde",
+        "yarn:line:e3ed51d9",
+        "yarn:line:cf8c5f37"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:6c193ba9",
+        "yarn:line:07bd7f57",
+        "yarn:line:fa293cde",
+        "yarn:line:e3ed51d9",
+        "yarn:line:cf8c5f37"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:3a5d5ca4": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Ryan_Romanced",
+          "firstInstruction": 30,
+          "lastInstruction": 48
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:62a82aba",
+        "yarn:line:f4982dcd",
+        "yarn:line:6585925d"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:3a5d5ca4",
+        "yarn:line:62a82aba",
+        "yarn:line:f4982dcd",
+        "yarn:line:6585925d"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:eaafe671": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_5_outro_ryan_conrad_romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 12
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:eaafe671"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:4fc4259c": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_5_outro_conrad_romanced",
+          "firstInstruction": 9,
+          "lastInstruction": 30
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:d9f422eb"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:4fc4259c",
+        "yarn:line:d9f422eb"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:0bc044da": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene_Cum",
+          "firstInstruction": 7,
+          "lastInstruction": 34
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:9df043ad",
+        "yarn:line:9addfb4a"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:0bc044da",
+        "yarn:line:9df043ad",
+        "yarn:line:9addfb4a"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:61c8781b": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_3_intro",
+          "firstInstruction": 24,
+          "lastInstruction": 52
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:db997182",
+        "yarn:line:ee3c126b"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:61c8781b",
+        "yarn:line:db997182",
+        "yarn:line:ee3c126b"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:3f153aaf": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_intro",
+          "firstInstruction": 74,
+          "lastInstruction": 112
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:da9cfdcf",
+        "yarn:line:a9253dd8"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:3f153aaf",
+        "yarn:line:da9cfdcf",
+        "yarn:line:a9253dd8"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:da9cfdcf": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_intro",
+          "firstInstruction": 84,
+          "lastInstruction": 122
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:3f153aaf",
+        "yarn:line:a9253dd8"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:da9cfdcf",
+        "yarn:line:3f153aaf",
+        "yarn:line:a9253dd8"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:116f0e16": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_Outro",
+          "firstInstruction": 24,
+          "lastInstruction": 55
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:eaafe671"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:116f0e16",
+        "yarn:line:eaafe671"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:21235886": {
+      "sceneSpans": [
+        {
+          "node": "RyanMuddy_Nag1",
+          "firstInstruction": 2,
+          "lastInstruction": 3
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:7ead92b1",
+        "yarn:line:82b63c18",
+        "yarn:line:c4fc9b28"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:21235886",
+        "yarn:line:7ead92b1",
+        "yarn:line:82b63c18",
+        "yarn:line:c4fc9b28"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:7ead92b1": {
+      "sceneSpans": [
+        {
+          "node": "RyanMuddy_Nag2",
+          "firstInstruction": 2,
+          "lastInstruction": 3
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:21235886",
+        "yarn:line:82b63c18",
+        "yarn:line:c4fc9b28"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:7ead92b1",
+        "yarn:line:21235886",
+        "yarn:line:82b63c18",
+        "yarn:line:c4fc9b28"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:f716a163": {
+      "sceneSpans": [
+        {
+          "node": "RyanDate_Intro",
+          "firstInstruction": 4,
+          "lastInstruction": 17
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:eed2cc64",
+        "yarn:line:5483c5fd",
+        "yarn:line:6126a614"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:f716a163",
+        "yarn:line:eed2cc64",
+        "yarn:line:5483c5fd",
+        "yarn:line:6126a614"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    },
+    "yarn:line:8ee41fdc": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_questions",
+          "firstInstruction": 248,
+          "lastInstruction": 278
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:18d418ab"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:8ee41fdc",
+        "yarn:line:18d418ab"
+      ],
+      "reason": "Provisional adjacent source positions and explicitly cited scene dependencies; branch, referent, repetitions and consumer topology require editorial reconciliation."
+    }
+  }
+}
