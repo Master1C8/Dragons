@@ -1,5 +1,16 @@
 # Drag'N Wash — Brazilian Portuguese checkpoint
 
+## 2026-11-10 direct file completion
+
+The complete paired file contains **1,947/1,947 authored IDs**, SHA-256
+`05565dea666e01a89e57c4fe32d83781783042c32b0d8b5f71d09a2d0253d901`. Adjudicated all 26 previously recorded proposals
+against the English worklist and the affected exchanges. The exact changes are
+in [the adjudication receipt](receipts/direct-file-adjudication.json).
+The complete authored Yarn validator accepted 1,823 dialogue bindings per
+platform. The previous independent closure was partial. A clean final
+independent delta remains pending. Package verification is tracked separately.
+The current task is file delivery only.
+
 Updated 2026-11-10. Standard game-text localization, `pt-BR`; texture lettering excluded. Assigned worker `gpt-6.1-terra`, reasoning `high`, as recorded in `localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/worker.json`. No other model or reviewer was used in this lane. Canonical checkout is `main`; other locale work is concurrent and outside this lane.
 
 ## Bindings and preparation

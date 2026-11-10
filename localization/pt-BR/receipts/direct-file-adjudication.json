@@ -1,0 +1,136 @@
+{
+  "beforeSha256": "b1e341f5338fc0c81e4af1e968a5b86acf3447330d726489cbc3ee89032b7311",
+  "afterSha256": "05565dea666e01a89e57c4fe32d83781783042c32b0d8b5f71d09a2d0253d901",
+  "changes": {
+    "yarn:line:c570a462": {
+      "before": "Uma ótima desculpa para ver meu kobold favorito.",
+      "after": "Uma ótima desculpa para ver quem mais aprecio entre os kobolds.",
+      "reason": "Keep Alexander’s favorite-kobold compliment and neutral agreement toward the player."
+    },
+    "yarn:line:836c079c": {
+      "before": "<i>Acho </i> que devo ter derramado um tinteiro <i>a caminho daqui</i>. Que desajeitado da minha parte!",
+      "after": "<i>Acho </i> que devo ter derramado um tinteiro <i>a caminho daqui</i>. Que falta de jeito a minha!",
+      "reason": "Render the apology idiomatically while preserving both italic clues that the following player option quotes."
+    },
+    "yarn:line:0371fb9c": {
+      "before": "<gradient=\"gold\"><b> Não vou poder hoje à noite. Desculpe. </b></gradient><size=70%> (Não leva a um romance!)",
+      "after": "<gradient=\"gold\"><b> Não vou ter tempo hoje à noite. Desculpe. </b></gradient><size=70%> (Não leva a um romance!)",
+      "reason": "Restore being busy that evening and preserve the explicit no-romance warning."
+    },
+    "yarn:line:61c8781b": {
+      "before": "De fato! Agora só quero que você, meu kobold, me lave.",
+      "after": "De fato! Agora, de todos os kobolds, só quero que você me lave.",
+      "reason": "Restore the explicit choice among kobolds without adding the possessive meu or assigning player gender."
+    },
+    "yarn:line:f0a0565a": {
+      "before": "Vamos voltar ao clube?",
+      "after": "Tudo certo para voltar ao clube?",
+      "reason": "Retain the question about readiness, rather than changing it to an invitation, and avoid gendered address."
+    },
+    "ui:5d545a9c8e8328196e2a962fb0c727593cedeffeacc833180fa97f69e0837c04": {
+      "before": "Programação\nAnimações de dragões\nInterface de usuário\nIntegração da versão",
+      "after": "Programação\nAnimações de dragões\nInterface de usuário\nIntegração de builds",
+      "reason": "Build integration is a production responsibility distinct from integrating a version. Preserve the three other credits and all line breaks."
+    },
+    "yarn:line:0d9de1a1": {
+      "before": "jogador ficou com conrad",
+      "after": "Você ficou com o Conrad",
+      "reason": "Keep the player’s hookup and neutral address in every copy of the diagnostic state selector."
+    },
+    "yarn:line:9bade6d6": {
+      "before": "jogador ficou com ryan",
+      "after": "Você ficou com o Ryan",
+      "reason": "Keep the player’s hookup and neutral address in every copy of the diagnostic state selector."
+    },
+    "yarn:line:2cf1c95e": {
+      "before": "jogador ficou com Conrad",
+      "after": "Você ficou com o Conrad",
+      "reason": "Keep the player’s hookup and neutral address in every copy of the diagnostic state selector."
+    },
+    "yarn:line:96a0c0c7": {
+      "before": "jogador ficou com Ryan",
+      "after": "Você ficou com o Ryan",
+      "reason": "Keep the player’s hookup and neutral address in every copy of the diagnostic state selector."
+    },
+    "yarn:line:f7fd34b2": {
+      "before": "jogador ficou com conrad",
+      "after": "Você ficou com o Conrad",
+      "reason": "Keep the player’s hookup and neutral address in every copy of the diagnostic state selector."
+    },
+    "yarn:line:66e08b22": {
+      "before": "jogador ficou com ryan",
+      "after": "Você ficou com o Ryan",
+      "reason": "Keep the player’s hookup and neutral address in every copy of the diagnostic state selector."
+    },
+    "yarn:line:c2529648": {
+      "before": "jogador ficou com conrad",
+      "after": "Você ficou com o Conrad",
+      "reason": "Keep the player’s hookup and neutral address in every copy of the diagnostic state selector."
+    },
+    "yarn:line:78039fd1": {
+      "before": "jogador ficou com ryan",
+      "after": "Você ficou com o Ryan",
+      "reason": "Keep the player’s hookup and neutral address in every copy of the diagnostic state selector."
+    },
+    "yarn:line:b71f0756": {
+      "before": "Resolvi tentar fazer uns quitutes.",
+      "after": "Resolvi tentar fazer uns quitutes no forno.",
+      "reason": "Keep the action of baking and its mess in every repeated branch."
+    },
+    "yarn:line:b032bfb1": {
+      "before": "Acontece que fazer quitutes faz uma baita bagunça!",
+      "after": "Descobri que fazer quitutes no forno dá uma baita bagunça!",
+      "reason": "Keep the action of baking and its mess in every repeated branch."
+    },
+    "yarn:line:efea7148": {
+      "before": "Resolvi tentar fazer uns quitutes.",
+      "after": "Resolvi tentar fazer uns quitutes no forno.",
+      "reason": "Keep the action of baking and its mess in every repeated branch."
+    },
+    "yarn:line:da4f12a1": {
+      "before": "Acontece que fazer quitutes faz uma baita bagunça!",
+      "after": "Descobri que fazer quitutes no forno dá uma baita bagunça!",
+      "reason": "Keep the action of baking and its mess in every repeated branch."
+    },
+    "yarn:line:e62b989c": {
+      "before": "Resolvi tentar fazer uns quitutes.",
+      "after": "Resolvi tentar fazer uns quitutes no forno.",
+      "reason": "Keep the action of baking and its mess in every repeated branch."
+    },
+    "yarn:line:e106207b": {
+      "before": "Acontece que fazer quitutes faz uma baita bagunça!",
+      "after": "Descobri que fazer quitutes no forno dá uma baita bagunça!",
+      "reason": "Keep the action of baking and its mess in every repeated branch."
+    },
+    "yarn:line:cb91e703": {
+      "before": "Eu adoro as pessoas ao meu redor, mas tem muita bagagem ali.",
+      "after": "Eu adoro as pessoas ao meu redor, mas tem muita coisa mal resolvida ali.",
+      "reason": "Restore the relationship baggage that motivates Ryan’s search outside his circle."
+    },
+    "yarn:line:69dff2ec": {
+      "before": "Vou esperar no portão!",
+      "after": "Vou esperar você abrir o portão!",
+      "reason": "Ryan waits for the gate to be opened. The existing wording assigns a location rather than an action."
+    },
+    "yarn:line:6a671440": {
+      "before": "Conheço um lugar razoável do pessoal equino perto do píer.",
+      "after": "Conheço um restaurante legal de culinária do povo equino perto do píer.",
+      "reason": "The alternative restaurant offers equine-kin cuisine rather than equine meat. Retain Ryan’s positive assessment and the pier."
+    },
+    "yarn:line:d0361dd9": {
+      "before": "É tipo uma culinária de fusão equina...",
+      "after": "É tipo uma cozinha de fusão do povo equino...",
+      "reason": "Keep the fusion-food detail and link it to equine-kin cuisine."
+    },
+    "yarn:line:36ff6bd9": {
+      "before": "<gradient=\"gold\"><b> Conheço um dragão, o Ryan. Posso colocar vocês em contato? </b></gradient><size=70%>(Desbloqueia o encontro Conrad/Ryan OU o romance com Ryan)",
+      "after": "<gradient=\"gold\"><b> Conheço um dragão, o Ryan. Posso colocar vocês em contato? </b></gradient><size=70%>(Desbloqueia a ficada entre Conrad e Ryan OU o romance com Ryan)",
+      "reason": "Keep the hookup and the separate romance as distinct outcomes rather than reducing the hookup to a meeting."
+    },
+    "yarn:line:39fd52f1": {
+      "before": "E aí, grandão.",
+      "after": "E aí, cachorrão!",
+      "reason": "Keep the dog nickname in the opening so the player’s correction that they are a kobold has a cause."
+    }
+  }
+}
