@@ -318,6 +318,32 @@ resources against the approved visible scope, then verify the same contract
 on each delivered locale. The v42 inventory and existing locale worklists
 retain their current fingerprints.
 
+## Polish draft package read-back
+
+The complete authored Polish input from `da65676` has 1,947 IDs and SHA-256
+`cbc8b2ea7e50811cac5eab4425618ed97a5f234ee864bdb23e49213b809ab02f`.
+The two draft packages in the Polish CLI's `resume-01` directory passed the
+independent packaged-object, serialized-metadata and managed-declaration
+comparisons against that exact input and the pinned originals. The signed
+macOS app passed deep strict verification. The Windows ZIP passed its CRC
+check and has SHA-256
+`c47184503065d7f537aede628b095dfab69c248e04cb956013ee9f56a7d45034`.
+The macOS package receipt SHA-256 is
+`f1b13b43e2f5c837be1fc030de4fe49fe574d832e924f127abfc4f7addc5a76a`.
+
+| Read-back receipt | macOS SHA-256 | Windows SHA-256 |
+| --- | --- | --- |
+| Unity object payloads, nine files | `ee1afcce69142890c3923acf73e0b6a0a57eedd0aa919cace6f81da604286626` | `539d9419f339d98713b5902b60b6dbbd8f51067d4e6c1117a52507bcf414e1fb` |
+| Raw serialized metadata | `8339b7bc47c0b16c79c33a6e716e8f041d534ab8b70f4552e22eb79d0fe6ee0f` | `98db2ec47d01f4d10d4bf470977d280da393ec3b0170bd967b802c6a7023fa84` |
+| Assembly-CSharp declarations | `6f24a8725f4e7be5fe70cde5a8e00952fc1a9ff5a3455e089b0dcd0e96d8054b` | `dea6dbf7267dd6754a5fa2fca4a655c83eaa5924b8a4adf74f083ce9fdd2bc9e` |
+| YarnSpinner.Unity declarations | `ebab42d6288436574ce8d53d654beb993f8b196d99644c1e1fe38ef9d6759f11` | `7309218f3c196d3904f627d89276042f8071100280aa823609e8c4f750e653f1` |
+
+Receipts and the exact authored input are in
+`localization/work/pl-independent-package-20261110.O0cNAR/`. The two packages
+contain the expected locale payloads across 30,279 and 29,906 Unity objects.
+Polish editorial, delivered-game runtime and visual acceptance are tracked
+separately.
+
 ## Concurrent commit ownership
 
 Write the owner marker only after a successful exclusive `mkdir` of the Git
