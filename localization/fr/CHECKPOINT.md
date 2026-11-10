@@ -202,3 +202,7 @@ Author semantic review continued: rows 1509–1681, 173 IDs; cumulative 1,682 / 
 ### Author semantic review: rows 1682–1823
 
 Receipt `receipts/semantic-audit-14.json` binds 142 additional IDs and both platform instruction exports. Cumulative author pass: 1,824 / 1,947 IDs; next row 1824, `ui:645a13dc409be75a17b82b62a9b88c5ebb291d34d5ac2201679fd6b8cb53d59b`. Four proposed corrections bring pending findings to 37. Non-Yarn review, correction and dependency review, and independent audit remain open; translation bytes are unchanged.
+
+### Author semantic review: rows 1824–1946
+
+Receipt `receipts/semantic-audit-15.json` binds the final 123 UI, credits, settings and display IDs to the unchanged draft and paired worklist. Cumulative source-to-target author coverage: 1,947 / 1,947; 37 proposed findings still require adjudication, correction and dependency review. This coverage is not clean acceptance or independent audit; current artifacts, runtime and visual fit remain open.
