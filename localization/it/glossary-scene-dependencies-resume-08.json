@@ -3667,31 +3667,108 @@
       "group": "Ryan_3_wont_use_mount",
       "orderedRowsSha256": "4d7da95f0bf2db584878fea9979ca6aa949658f5171f3f2604ff2068070f513e",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-mount": [
+          "yarn:line:ccf87ea9"
+        ]
+      },
+      "referents": "Ryan declines the routed device for now and leaves later uncertain.",
+      "layer1": "That refers to the device in scene context; later is a possibility rather than a promise.",
+      "layer2": "The Italian device field fits; preserve the present refusal and uncertainty.",
+      "sourceIds": [
+        "yarn:line:ccf87ea9",
+        "yarn:line:76a97730"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-short-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_4_Cum",
       "orderedRowsSha256": "99be4e24377c28e03f92b859051961cf1180c341c54da919b4f15d5a836a5e93",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan comments on the activity and resulting mess; no other person is introduced.",
+      "layer1": "That is the activity, not an identified third party.",
+      "layer2": "Character fields fit without assuming player gender.",
+      "sourceIds": [
+        "yarn:line:45507089"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-short-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_4_JerkOff_Start",
       "orderedRowsSha256": "5c47f9c29feb47694b61a978313c6f0126328e7d34ad9c2f78b917c4c2695cb9",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan asks whether the player is sure about the activity near the food, then agrees.",
+      "layer1": "Question and assent are separate turns; food is not a person.",
+      "layer2": "Preserve his question and eventual agreement without adding player gender.",
+      "sourceIds": [
+        "yarn:line:c35b717a",
+        "yarn:line:5246ceea"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-short-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_4_Mount_Finish",
       "orderedRowsSha256": "8fdeda5272e8170543923de6f7cee393ed2a511802f41c598e8d5f517b3c2ef1",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-mount"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan comments that the activity was worth the mess in the routed device scene.",
+      "layer1": "The device is contextual, not explicitly named in this row.",
+      "layer2": "The device entry remains applicable without inventing a person.",
+      "sourceIds": [
+        "yarn:line:d2ba8ba9"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-short-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_4_Mount_Start",
       "orderedRowsSha256": "79ca02f5e2afc88efb62a4ca4af14dabfad983c5be50e2be06479546f02ed980",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-mount": [
+          "yarn:line:4b93b009"
+        ]
+      },
+      "referents": "Ryan asks about using that near the food and agrees; that is the routed device.",
+      "layer1": "The demonstrative has the device referent in this scene.",
+      "layer2": "Preserve the question, eventual consent and food context.",
+      "sourceIds": [
+        "yarn:line:4b93b009"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-short-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_4_intro",
@@ -3703,25 +3780,83 @@
       "group": "Ryan_5_Cum",
       "orderedRowsSha256": "50717a9db10d644fcebe689a3b5aeee5756abda5a00f334b3cce384b3b61279f",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan thanks the player for the activity.",
+      "layer1": "That refers to the activity; no additional person is identified.",
+      "layer2": "The character entries fit without assigning player gender.",
+      "sourceIds": [
+        "yarn:line:828eed25"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-short-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_5_JerkOff_Start",
       "orderedRowsSha256": "5bdf721bde806b1727ef3a69e8fca7682baaf72db8192813dbe08df6f390314a",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan addresses the player about being handsy today.",
+      "layer1": "The addressee is the player.",
+      "layer2": "His informal voice fits, with player gender unestablished.",
+      "sourceIds": [
+        "yarn:line:5f0edcb2"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-short-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_5_Mount_Finish",
       "orderedRowsSha256": "d04c7ff56584e1a1360d595b166d3c75be201e182547a1f9cda22ef31253510f",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-mount"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan thanks the player after the routed device interaction.",
+      "layer1": "That is contextual activity, not another character.",
+      "layer2": "The device entry fits and player gender remains unknown.",
+      "sourceIds": [
+        "yarn:line:16420ca7"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-short-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_5_Mount_Start",
       "orderedRowsSha256": "19128891611c8e169ae7d6a1523801600bbedd6002ac8202d1945c11488cd04d",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-mount": [
+          "yarn:line:94e04dcf"
+        ]
+      },
+      "referents": "Ryan agrees to use the device in this instance.",
+      "layer1": "The explicit mount is the device; agreement is local.",
+      "layer2": "The Italian device field fits without implying blanket consent.",
+      "sourceIds": [
+        "yarn:line:94e04dcf"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-short-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_5_Outro_conrad_romanced",
@@ -3940,13 +4075,44 @@
       "group": "ryan_jerk_off_no",
       "orderedRowsSha256": "34a8bd5cddad27ef9ccbb329f740fe998fbb222bc65bd9ef985c63bd8410092c",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Ryan suggests maybe getting hands on later; the present interaction is declined and later remains uncertain.",
+      "layer1": "Maybe later is not a promise.",
+      "layer2": "Preserve the refusal and uncertainty.",
+      "sourceIds": [
+        "yarn:line:2d5fc8a2"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-short-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "ryan_mount_no",
       "orderedRowsSha256": "5d4ef51f5d85b57b9970da5a5ec36f48f0fc48e452fc1b98de96656f5271a946",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-mount": [
+          "yarn:line:6bd91ca7"
+        ]
+      },
+      "referents": "Ryan declines the adult device in this instance.",
+      "layer1": "The mount is the device and the line is a refusal.",
+      "layer2": "The Italian device field fits; do not turn this into permanent refusal.",
+      "sourceIds": [
+        "yarn:line:6bd91ca7"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-short-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "UI/level0",
