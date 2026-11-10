@@ -147,3 +147,9 @@ Compared arrival, required conversation, request for a question, action reaction
 Finding pending disposition: `yarn:line:61c8781b` uses the unnatural apposition `tobie, koboldowi` for Alexander’s assurance that the player is the only kobold he now wants washing him. Preserve his exclusive preference and the species reference in a natural sentence.
 
 Cumulative distinct IDs read: 1,198 / 1,947; 749 remain. Author review only; independent acceptance remains pending.
+
+## Alexander fourth visit: 76 IDs read
+
+Compared arrival, mount request, action responses and farewell against both English builds and Polish. Alexander’s long explanation of understanding yips and the laconic alternative remain distinct, including size markup; `special-scenes/yip.json` records this device. His hesitant request, the optional Conrad attribution, and the later confession about relinquishing control are preserved. The long yip choice remains a particular visual-fit risk: source comparison does not prove it fits. Node names and positions do not establish actual choice or action routing; current-payload gameplay and visual review are unrun. No new semantic finding.
+
+Cumulative distinct IDs read: 1,274 / 1,947; 673 remain. Author review only; independent acceptance remains pending.
