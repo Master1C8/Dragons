@@ -1,0 +1,7 @@
+# French Ryan and Conrad corrections after adjudication
+
+Independently verified the seven approved replacements in `d4afaf5`. Comparing the complete paired payload with `2b8294a` found exactly the seven proposed values, all exact. The complete reader accepted all 1,947 positions. Read the 15 newly selected IDs from Ryan's date scene against both stock source bindings. The walk invitation, the two separate reactions to a ride on Ryan's back and the Wings and hotel alternative remain distinct. The ride choices go to instructions 28 and 37 on both platforms. The corrected Conrad response still follows the scales question at target 115. No further finding in these 22 rows.
+
+The immutable closure grew from 938 to 953 IDs. All 953 have now had an initial independent reading. The exact affected context recorded by the author, along with changes or additions from the next correction cycle, still requires reconciliation and any necessary reread. The eight further proposals from [Ryan's greeting and recovery choices](french-independent-ryan-greetings-20261110.md) and [Alexander and Conrad's closing scenes](french-independent-alexander-conrad-final-read-20261110.md) are being adjudicated in a separate cycle.
+
+Receipt `localization/work/fr-independent-ryan-conrad-applied-20261110.fmrYA1/review.json`, SHA-256 `528a71e3d29d9424adb30e32976fa1f4024fcc417eb268a5252ecd37eef25b8e`, binds the exact values, new IDs, pending context and platform choice targets. This step checked the authored payload and stock instructions. Final package and game checks are pending.
