@@ -342,3 +342,24 @@ fonts contain all 90 display code points used by the draft. The
 receipt directory is
 `localization/work/uk-ordinary-04-20261110.9IFmem/`.
 Live scene checks and independent editorial review remain pending.
+
+## Fifth ordinary batch
+
+The two remaining relationship routes in Ryan's fifth visit add
+68 values across the two conversations and their separate
+farewells. Two earlier nodes add four lines for a request to come
+closer and a refusal to use the device. The draft covers 721 of
+1,947 IDs with SHA-256
+`38925e6f9a1dcdf25833a92f8f30efa6cb743fbf408a3c4d53e0e8af4e1dda0a`.
+All 649 previous values are exact.
+
+The Ryan–Conrad conversation keeps who was hurt, who helped and
+who went on the date distinct. The player–Conrad path instead
+focuses on Conrad's change in behavior and Ryan's support for the
+couple. Common farewell wording retains its separate source IDs.
+
+Each diagnostic package changed exactly 72 Yarn values. The
+remaining Yarn text, metadata and programs are exact. Both
+packaged fonts contain all 90 display code points. The verified
+receipts are under `localization/work/uk-ordinary-05-20261110.7Z6Uc8/`.
+Live scene checks and independent editorial review remain pending.
