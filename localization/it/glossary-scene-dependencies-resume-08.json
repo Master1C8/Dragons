@@ -1980,43 +1980,270 @@
       "group": "Conrad_Idle1",
       "orderedRowsSha256": "b30e0b2225108201d5d9256d248e6e6c76c25adec92c0ecd55b7354edd256567",
       "count": 5,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Conrad asks the player about his body and responds differently to the two choices; people who told him are unnamed.",
+      "layer1": "The unidentified people do not establish another character.",
+      "layer2": "Conrad's direct, informal voice and neutral player field fit; keep alternatives distinct.",
+      "sourceIds": [
+        "yarn:line:77cebc41",
+        "yarn:line:10254d13",
+        "yarn:line:3c4443fd",
+        "yarn:line:86154a64",
+        "yarn:line:aa74448a"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-introduction-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Intro",
       "orderedRowsSha256": "76e1885c5616eac0c64e8709e16e0052cebcfd2903a28c33afaf775d241d58a8",
       "count": 5,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:61c9b7ac"
+        ]
+      },
+      "referents": "Conrad refers to himself by name and requests cleaning; the player has two alternative invitations.",
+      "layer1": "The cleaning is the service, and his third-person self-reference does not introduce another person.",
+      "layer2": "The Italian fields preserve the service and Conrad's informal voice; do not fix player gender.",
+      "sourceIds": [
+        "yarn:line:f7f9b0db",
+        "yarn:line:61c9b7ac",
+        "yarn:line:db98be35",
+        "yarn:line:4da8b942",
+        "yarn:line:dcb506d2"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-introduction-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Intro_1",
       "orderedRowsSha256": "8d5c5c35a7f2454176778d652b2115c0d0683066291e9ffd6c01b1d24614fc99",
       "count": 5,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:36073321",
+          "yarn:line:a0373456"
+        ]
+      },
+      "referents": "Conrad asks about the cleaning place and his own cleaning. The player gives one of two invitations; the gate must be opened.",
+      "layer1": "The cleaning place and cleaning service are separate senses. The paired builds differ in the apostrophe in thats/that's.",
+      "layer2": "Italian's venue/service distinction fits; preserve markup and choice routing and do not treat the source apostrophe difference as a glossary defect.",
+      "sourceIds": [
+        "yarn:line:36073321",
+        "yarn:line:a0373456",
+        "yarn:line:1a663dcf",
+        "yarn:line:8c563ab8",
+        "yarn:line:1d4b8528"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-introduction-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Intro_2",
       "orderedRowsSha256": "038c0f9af21414b6ae2981da095f71b5bed5ef856dbc3fec55494b375238bdce",
       "count": 10,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Conrad requests a medical kit. The player's choices ask about his condition and he refuses to explain; the cause and any assailant remain unstated here.",
+      "layer1": "The injury alone does not establish an assailant.",
+      "layer2": "Conrad's direct voice and the player's unspecified gender remain appropriate; preserve branch alternatives.",
+      "sourceIds": [
+        "yarn:line:c0cc0f2d",
+        "yarn:line:56fc085a",
+        "yarn:line:d908622a",
+        "yarn:line:f5696cc4",
+        "yarn:line:63596bb3",
+        "yarn:line:4f38655d",
+        "yarn:line:de25dacd",
+        "yarn:line:4815ddba",
+        "yarn:line:ad9c1ada",
+        "yarn:line:3bac1dad"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-introduction-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Intro_3",
       "orderedRowsSha256": "12b2913b5f20787742898fe189e5dcea00cd63da8a5fe9831e7f5b4bec1654fd",
       "count": 18,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-kobold",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-kobold": [
+          "yarn:line:afcd5586"
+        ],
+        "dnw-mount": [
+          "yarn:line:9a68366f",
+          "yarn:line:0b7589ff",
+          "yarn:line:eefc4e9f"
+        ]
+      },
+      "referents": "The player corrects Conrad's big-dog address by identifying as a kobold. Conrad asks about the shipment and wants to try the delivered mount; that thing refers to the device.",
+      "layer1": "The player's species is explicit, and the mount is the adult device rather than an animal.",
+      "layer2": "The Italian species and device entries fit; do not infer player gender from big dog or species.",
+      "sourceIds": [
+        "yarn:line:39fd52f1",
+        "yarn:line:afcd5586",
+        "yarn:line:83ac5b68",
+        "yarn:line:159c5c1f",
+        "yarn:line:20393ff6",
+        "yarn:line:b6093881",
+        "yarn:line:0c583118",
+        "yarn:line:9a68366f",
+        "yarn:line:0b7589ff",
+        "yarn:line:9d458e88",
+        "yarn:line:78cc49e8",
+        "yarn:line:eefc4e9f",
+        "yarn:line:54ad4706",
+        "yarn:line:4d692a01",
+        "yarn:line:c29d4071",
+        "yarn:line:610824ef",
+        "yarn:line:f7382398",
+        "yarn:line:db592d76"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-introduction-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Intro_4",
       "orderedRowsSha256": "3ce16bfcff06090ce46f0f7b60edd8239fe46382b727d2b809a0e7931bee7c42",
       "count": 54,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-kobold",
+        "dnw-wash",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-kobold": [
+          "yarn:line:918d7820"
+        ],
+        "dnw-wash": [
+          "yarn:line:c8a1e7d0",
+          "yarn:line:fa41daf4",
+          "yarn:line:9711cf03"
+        ],
+        "dnw-mount": [
+          "yarn:line:c8a1e7d0",
+          "yarn:line:fa41daf4",
+          "yarn:line:9711cf03"
+        ]
+      },
+      "referents": "Diagnostic flags describe alternative prior relationships among Conrad, Ryan and the player, not all simultaneously established outcomes. In the Ryan branch Conrad says he met him and thanks the player for the introduction; him and someone like him refer to Ryan. Berries explain the gloop without identifying another character. Mount interest and consent are branch-specific.",
+      "layer1": "Conrad, Ryan and player are distinct; wash is a service and mount is the device. Preserve the relationship-flag alternatives and diagnostic text.",
+      "layer2": "Male Ryan and Conrad fields match the explicit referents; player remains neutral. The Italian service and device fields fit without making every branch true.",
+      "sourceIds": [
+        "yarn:line:8f64adc0",
+        "yarn:line:1954aab7",
+        "yarn:line:bac1ce29",
+        "yarn:line:2cf1c95e",
+        "yarn:line:96a0c0c7",
+        "yarn:line:0090c7b0",
+        "yarn:line:8ebd442e",
+        "yarn:line:a2b4acea",
+        "yarn:line:918d7820",
+        "yarn:line:07bd7f57",
+        "yarn:line:6c193ba9",
+        "yarn:line:fa293cde",
+        "yarn:line:e3ed51d9",
+        "yarn:line:cf8c5f37",
+        "yarn:line:40783547",
+        "yarn:line:d6483230",
+        "yarn:line:75dd56ae",
+        "yarn:line:59bc5840",
+        "yarn:line:5e91e0a7",
+        "yarn:line:c8a1e7d0",
+        "yarn:line:2d2820b0",
+        "yarn:line:a2dc4ac0",
+        "yarn:line:bb1827c7",
+        "yarn:line:01492e5e",
+        "yarn:line:97792929",
+        "yarn:line:34ec4db7",
+        "yarn:line:188d4359",
+        "yarn:line:1fa0fbbe",
+        "yarn:line:8990fcc9",
+        "yarn:line:e385b7f3",
+        "yarn:line:59d4be6a",
+        "yarn:line:cfe4b91d",
+        "yarn:line:75b5b084",
+        "yarn:line:4010d36d",
+        "yarn:line:d620d41a",
+        "yarn:line:6c71dd83",
+        "yarn:line:fa41daf4",
+        "yarn:line:6b5c6564",
+        "yarn:line:fd6c6213",
+        "yarn:line:8ed5a204",
+        "yarn:line:18e5a573",
+        "yarn:line:3484ab9d",
+        "yarn:line:0121c874",
+        "yarn:line:9711cf03",
+        "yarn:line:2d40c69a",
+        "yarn:line:dbb68858",
+        "yarn:line:f7d786b6",
+        "yarn:line:bb70c1ed",
+        "yarn:line:2a6d7e7d",
+        "yarn:line:bc5d790a",
+        "yarn:line:4d868f2f",
+        "yarn:line:61e781c1",
+        "yarn:line:c272e55f",
+        "yarn:line:5442e228"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-introduction-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Intro_5",
       "orderedRowsSha256": "ab23c35628d2f96b822ec9cf77d0973483129e55c6b61b20a15bb066358223b9",
       "count": 5,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "The three flag labels name different possible relationship states; they are diagnostic alternatives, not proof all relationships happened.",
+      "layer1": "The named participants and flags are distinct.",
+      "layer2": "Italian character fields allow the stated relations without assigning player gender or merging branches.",
+      "sourceIds": [
+        "yarn:line:4dac3d2b",
+        "yarn:line:db9c3a5c",
+        "yarn:line:61cd33c5",
+        "yarn:line:f7fd34b2",
+        "yarn:line:66e08b22"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-introduction-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Outro",
