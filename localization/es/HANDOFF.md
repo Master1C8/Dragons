@@ -10,7 +10,7 @@
 | probe | **Passed for the bounded Spanish renderer cases.** Both isolated builds passed dialogue and choice review at the tested sizes. The matched CrossOver scroll control resolved the initial partial stock row. The 1280×960 macOS Options frame and its source-pixel crops verified the complete Spanish labels and marks. See [the independent frame review](../evidence/es-it-renderer-frame-review-20261110.md). Final corpus and native Windows checks remain separate. |
 | source | Worklist exported for 1,947 paired IDs from both installed stock data directories, without modifying them. Shared inventory and Yarn scope hashes match the pinned values below. The export indexes known special scenes; the fresh stock component check in [source-baseline.md](source-baseline.md) verifies 10,973 macOS and 10,936 Windows exact component fields. The check does not establish candidate preservation or adaptation. |
 | glossary | **Author self-review closure completed, not independent.** Two distinct historical source and Spanish layers cover the 27 unchanged entries; their per-entry source and locale hashes match. The new anonymous role and affected context were read separately for each layer; detailed receipts and findings are in [glossary-review.md](glossary-review.md). Both earlier suspected defects were resolved against the English scenes without changing the glossary. The owner explicitly permitted these self-reviews in this task. |
-| translate-edit | **In progress:** 1,698/1,947 authored; 27/27 special cases have author-reviewed decisions and context. The special-scene entry reconciliation is recorded below. |
+| translate-edit | **In progress:** 1,734/1,947 authored; 27/27 special cases have author-reviewed decisions and context. The special-scene entry reconciliation is recorded below. |
 | editorial | Not run; independent reviewer unavailable under current no-agent instruction. |
 | resources | Not run. Existing text-bearing textures are preserved; no texture production authorized in this lane. |
 | package | Not run on either platform; no completed translated payload exists. |
@@ -234,3 +234,7 @@ Authored 24 IDs in the source Start test script; **1,674/1,947** are authored. B
 ### Ordinary scenes: Alexander intimacy
 
 Authored 24 IDs in the Alexander intimacy scene and continuations; **1,698/1,947** are authored. Both platform source readers, object read-backs and altered-English negative guards passed; see [ordinary-scenes.md](ordinary-scenes.md). Translation SHA-256 `c39d23cee0a0c7c9b58d58f9bf29f5bd781b06aa8e1e84498c5cb0da4dad4cf2`. Independent audit, final packages and localized runtime/visual QA remain pending.
+
+### Ordinary scenes: Conrad and Ryan intimacy
+
+Authored 36 IDs in Conrad and Ryan intimacy scenes and continuations; **1,734/1,947** are authored. Both platform source readers, object read-backs and altered-English negative guards passed; see [ordinary-scenes.md](ordinary-scenes.md). Translation SHA-256 `cf6afc54f9c6ba3615ba42eb498f76dbdad98ebe5fc4ad8d21b1f4cf12ac04ea`. Independent audit, final packages and localized runtime/visual QA remain pending.
