@@ -1,5 +1,14 @@
 # Italian localization checkpoint
 
+## 2026-11-10 direct file completion
+
+The paired draft now has **1,947/1,947 authored IDs**. Filled the 467 remaining
+dialogue and choice rows from the pinned paired English worklist, preserving all
+1,480 previously authored values. Translation SHA-256 `d800a07889981bd7ae9b2d45dd9fa2f0991f7d82bb7503d48dfa1518d24d7d74`.
+The complete authored Yarn validator accepted 1,823 dialogue bindings per platform.
+Full semantic and independent editorial acceptance remain pending. Package
+verification is tracked separately. The current task is file delivery only.
+
 ## Historical decision — resume 09 (superseded by resume 11)
 
 The shared source and exact-preservation **authoring entry gate passed** at `15c330e`, with the Italian worklist binding verified in commit `1bf8910` and [source-readiness-resume.md](source-readiness-resume.md). The current worklist, v42 inventory and Yarn scope SHA-256 values still match the input bindings below. Historical source-open statements in prior resume entries are superseded for this pinned scope; final artifact-specific preservation and package validation remain separate. The bounded Italian renderer probe passed as recorded below.
