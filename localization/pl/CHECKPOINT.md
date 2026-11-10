@@ -347,3 +347,9 @@ Author self-reviewed the remaining 42 extracted `UI/level2` IDs, including sound
 Author self-reviewed 37 IDs across `UI/level0`, `UI/level1`, and levels 3–6, including status labels, loading and pause controls. These are extracted text objects; no texture content was modified. This is author self-review, not independent audit. Fit of the authored strings remains subject to final visual testing.
 
 `translation.json` now has **1,368 / 1,947 IDs**, SHA-256 `bbc9ad8a1e42409c884511650ad6add366638cf1fb1b1a26107ffedaa4c7b81d`. `resume-01/add-ui-other-levels.py` and `resume-01/ui-other-levels-map.py` validate the preceding draft and paired readers; macOS accepts 1,344 and Windows 1,362 bindings. The complete guard reports 579 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Conrad fourth visit: conversation — continuation
+
+Author self-reviewed 32 IDs in `Conrad_required_4` and the Conrad and Ryan/Conrad relationship branches, retaining choices and markup. This is author self-review, not independent audit.
+
+`translation.json` now has **1,400 / 1,947 IDs**, SHA-256 `baed9388e3025c91a3fc2c00d0fe24f4c1bfe6c15ee83259f4c3d1c94919f42c`. `resume-01/add-conrad-four-conversation.py` and its map validate the preceding draft and paired readers; macOS accepts 1,376 and Windows 1,394 bindings. The complete guard reports 547 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
