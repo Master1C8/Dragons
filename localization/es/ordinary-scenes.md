@@ -41,3 +41,7 @@ Author self-reviewed 35 newly authored IDs in `Alexander_Intro`, `Alexander_Outr
 ## Ryan alternate arrivals and departures
 
 Author self-reviewed 39 IDs across the exploded and muddy Ryan arrivals, departures and small talk, preserving distinct choices and wash-state responses. Both stock source readers and object encode/parse passed: macOS SHA-256 `bd333d2a797cd7e4aeecf92c4b1481e4a5ae5178a933d1f8803973f7a5274a4a`; Windows `c4e6c2bcb45e1a840dc9426cae521e910296952b0121a9b6c3c365400a008519`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary10/`.
+
+## Conrad alternate visit and phone tutorial
+
+Author self-reviewed 35 IDs in the injured and early Conrad scenes and phone tutorial, retaining distinct wash-state responses, equipment terminology and source emphasis. Two ellipses are intentional. Both stock source readers and object encode/parse passed: macOS SHA-256 `64d2405d14f866ce9bc5dd659bbf1062b1e32705eb5670372042daae3de89b08`; Windows `94720f75b3a0fc474ee0731ebd2f33123a75ceead350fd96cdc7769406b47b92`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary11/`.
