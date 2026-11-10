@@ -2,7 +2,7 @@
   "schema": 1,
   "locale": "fr",
   "beforeSha256": "94a770766b67a6be5f9337bb174543c010826ec87450b18f5c6e1dbf0e0f0325",
-  "afterSha256": "cf387fba3467b0a5a05a78638ab9c09bb455d8cc786afc88868b3abdb7d6dc6e",
+  "afterSha256": "5174d9d3e2f54956ab940fd5ed8cd84ce422b376d62892b445431955732ce8a6",
   "edits": {
     "yarn:line:8c8591ec": {
       "sceneSpans": [
@@ -187,7 +187,7 @@
       ],
       "glossaryReferentSourceIds": [],
       "runtimeSourceIds": [],
-      "reason": "The preceding English identifies the alchemist but does not establish their gender."
+      "reason": "Restore where the alchemist went after the explosion, without assigning the unknown character a gender."
     },
     "yarn:line:9ca994a5": {
       "sceneSpans": [
@@ -543,6 +543,30 @@
       ],
       "runtimeSourceIds": [],
       "reason": "College terminology correction established in the first author audit batch; included in full audit delta."
+    },
+    "yarn:line:6d726280": {
+      "sceneSpans": [
+        {
+          "node": "RyanExploded_OutroDirty",
+          "firstInstruction": 4,
+          "lastInstruction": 16
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Phrase the request positively so the unchanged Yes option agrees to continued washing on its actual branch."
+    },
+    "yarn:line:feb8727e": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_3_Outro",
+          "firstInstruction": 4,
+          "lastInstruction": 53
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Use idiomatic French for Ryan feeling welcomed; masculine agreement refers to Ryan, not the player."
     }
   }
 }

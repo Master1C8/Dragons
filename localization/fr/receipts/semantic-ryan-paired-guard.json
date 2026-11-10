@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "translationSha256": "5174d9d3e2f54956ab940fd5ed8cd84ce422b376d62892b445431955732ce8a6",
+  "verifierSha256": "08560bc70d1128fcf96bcdf1baaeda6abdd6b2026df2a338b473e9ad13948c09",
+  "inventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "yarnScopeSha256": "753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30",
+  "command": [
+    "/Users/antonkrutov/Desktop/Forest/.venv-assets314/bin/python",
+    "-B",
+    "localization/verify_authored_yarn.py",
+    "localization/fr/translation.json",
+    "--locale",
+    "fr",
+    "--inventory",
+    "localization/work/source-inventory-20261107/combined-provisional-v42-20261110.json",
+    "--yarn-scope",
+    "localization/work/yarn-markers-20261110.ridbPA/yarn-scope-v42.json",
+    "--complete"
+  ],
+  "result": {
+    "complete": true,
+    "stableIds": 1947,
+    "checkedDialogueBindings": {
+      "macos": 1823,
+      "windows": 1823
+    }
+  }
+}
