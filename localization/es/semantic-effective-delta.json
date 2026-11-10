@@ -1,0 +1,1557 @@
+{
+  "schema": 1,
+  "locale": "es",
+  "purpose": "effective author-review delta for independent review; old and new are exact stored target values; builds bind English sources and keys",
+  "baselineCommit": "df91415",
+  "baselineTranslationSha256": "20fc3d75786f81c311f64b5fbd0038c5fda553a77df09864cf799d77051158cf",
+  "reviewedTranslationSha256": "756de516739d6554b56695eb91624f00d751e2bbc9e8f1f1c190a954c964ef6c",
+  "worklistSha256": "8d172ebe8165344df8e705ce041ee57ecba1fb6c9179bbead5fe3ee7975eb7ec",
+  "changedIds": 61,
+  "changes": [
+    {
+      "position": 1,
+      "id": "yarn:line:9d7cc63c",
+      "group": "Alexander_1",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:9d7cc63c",
+          "source": "I heard a loud bang, I don't think Igwix made it.",
+          "sourceIds": [
+            "yarn:line:9d7cc63c"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:9d7cc63c",
+          "source": "I heard a loud bang, I don't think Igwix made it.",
+          "sourceIds": [
+            "yarn:line:9d7cc63c"
+          ]
+        }
+      },
+      "before": "Oí un gran estruendo, creo que Igwix no lo ha conseguido.",
+      "after": "Oí un gran estruendo, no creo que Igwix haya sobrevivido."
+    },
+    {
+      "position": 10,
+      "id": "yarn:line:33a79dbe",
+      "group": "Alexander_1_intro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:33a79dbe",
+          "source": "We do! Are you... from the college...?",
+          "sourceIds": [
+            "yarn:line:33a79dbe"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:33a79dbe",
+          "source": "We do! Are you... from the college...?",
+          "sourceIds": [
+            "yarn:line:33a79dbe"
+          ]
+        }
+      },
+      "before": "¡Sí! ¿Vienes... de la universidad...?",
+      "after": "¡Sí! ¿Vienes... del colegio...?"
+    },
+    {
+      "position": 12,
+      "id": "yarn:line:a5979ac9",
+      "group": "Alexander_1_intro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:a5979ac9",
+          "source": "Indeed, you must know of my crest! I teach alchemy.",
+          "sourceIds": [
+            "yarn:line:a5979ac9"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:a5979ac9",
+          "source": "Indeed, you must know of my crest! I teach alchemy.",
+          "sourceIds": [
+            "yarn:line:a5979ac9"
+          ]
+        }
+      },
+      "before": "En efecto, ¡debes de conocer mi escudo! Enseño alquimia.",
+      "after": "En efecto, ¡debes de conocer mi cresta! Enseño alquimia."
+    },
+    {
+      "position": 88,
+      "id": "yarn:line:938be2fb",
+      "group": "Alexander_2_intro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:938be2fb",
+          "source": "I forget the ignorance of a layman. I apologize.",
+          "sourceIds": [
+            "yarn:line:938be2fb"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:938be2fb",
+          "source": "I forget the ignorance of a layman. I apologize.",
+          "sourceIds": [
+            "yarn:line:938be2fb"
+          ]
+        }
+      },
+      "before": "Olvidé la ignorancia de un profano. Te pido disculpas.",
+      "after": "Olvidé lo poco que sabe quien no se dedica a esto. Te pido disculpas."
+    },
+    {
+      "position": 98,
+      "id": "yarn:line:33440e8c",
+      "group": "Alexander_2_required",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:33440e8c",
+          "source": "And why you are perfect for this job!",
+          "sourceIds": [
+            "yarn:line:33440e8c"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:33440e8c",
+          "source": "And why you are perfect for this job!",
+          "sourceIds": [
+            "yarn:line:33440e8c"
+          ]
+        }
+      },
+      "before": "¡Y por eso eres perfecto para este trabajo!",
+      "after": "¡Y por eso eres la persona ideal para este trabajo!"
+    },
+    {
+      "position": 103,
+      "id": "yarn:line:7d13eca0",
+      "group": "Alexander_3_JerkOff_Start",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:7d13eca0",
+          "source": "Oh my- I didn't expect you to be so... hands on",
+          "sourceIds": [
+            "yarn:line:7d13eca0"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:7d13eca0",
+          "source": "Oh my- I didn't expect you to be so... hands on",
+          "sourceIds": [
+            "yarn:line:7d13eca0"
+          ]
+        }
+      },
+      "before": "Oh, vaya... No esperaba que fueras tan... directo con las manos",
+      "after": "Oh, vaya... No esperaba que fueras a... tocarme tan directamente"
+    },
+    {
+      "position": 110,
+      "id": "yarn:line:ca035ef2",
+      "group": "Alexander_3_Outro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:ca035ef2",
+          "source": "I'll be back again. It's nice having you as a friend.",
+          "sourceIds": [
+            "yarn:line:ca035ef2"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:ca035ef2",
+          "source": "I'll be back again. It's nice having you as a friend.",
+          "sourceIds": [
+            "yarn:line:ca035ef2"
+          ]
+        }
+      },
+      "before": "Volveré. Me alegro de tenerte como amigo.",
+      "after": "Volveré. Me alegra nuestra amistad."
+    },
+    {
+      "position": 124,
+      "id": "yarn:line:61c8781b",
+      "group": "Alexander_3_intro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:61c8781b",
+          "source": "Indeed! You're the only kobold I wish to wash me now.",
+          "sourceIds": [
+            "yarn:line:61c8781b"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:61c8781b",
+          "source": "Indeed! You're the only kobold I wish to wash me now.",
+          "sourceIds": [
+            "yarn:line:61c8781b"
+          ]
+        }
+      },
+      "before": "¡En efecto! Ya eres el único kóbold que quiero que me lave.",
+      "after": "¡En efecto! Entre los kóbolds, ya solo quiero que me laves tú."
+    },
+    {
+      "position": 130,
+      "id": "yarn:line:c570a462",
+      "group": "Alexander_3_intro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:c570a462",
+          "source": "A rather good excuse to see my favorite kobold.",
+          "sourceIds": [
+            "yarn:line:c570a462"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:c570a462",
+          "source": "A rather good excuse to see my favorite kobold.",
+          "sourceIds": [
+            "yarn:line:c570a462"
+          ]
+        }
+      },
+      "before": "Una buena excusa para ver a mi kóbold favorito.",
+      "after": "Una buena excusa para ver a mi criatura kóbold favorita."
+    },
+    {
+      "position": 188,
+      "id": "yarn:line:7b59e4d6",
+      "group": "Alexander_4_Outro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:7b59e4d6",
+          "source": "I like how sure of yourself you are. Even if it just has to do with washing.",
+          "sourceIds": [
+            "yarn:line:7b59e4d6"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:7b59e4d6",
+          "source": "I like how sure of yourself you are. Even if it just has to do with washing.",
+          "sourceIds": [
+            "yarn:line:7b59e4d6"
+          ]
+        }
+      },
+      "before": "Me gusta lo seguro que estás de ti mismo. Aunque solo sea al lavarme.",
+      "after": "Me gusta la seguridad que tienes en ti. Aunque solo sea al lavarme."
+    },
+    {
+      "position": 198,
+      "id": "yarn:line:90dd6d9d",
+      "group": "Alexander_4_intro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:90dd6d9d",
+          "source": "Hah, eager as always.",
+          "sourceIds": [
+            "yarn:line:90dd6d9d"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:90dd6d9d",
+          "source": "Hah, eager as always.",
+          "sourceIds": [
+            "yarn:line:90dd6d9d"
+          ]
+        }
+      },
+      "before": "Ja, entusiasmado como siempre.",
+      "after": "Ja, con el entusiasmo de siempre."
+    },
+    {
+      "position": 245,
+      "id": "yarn:line:8689a124",
+      "group": "Alexander_4_required",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:8689a124",
+          "source": "I'll happily get that for you.",
+          "sourceIds": [
+            "yarn:line:8689a124"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:8689a124",
+          "source": "I'll happily get that for you.",
+          "sourceIds": [
+            "yarn:line:8689a124"
+          ]
+        }
+      },
+      "before": "Te lo traeré encantado.",
+      "after": "Te lo traeré con mucho gusto."
+    },
+    {
+      "position": 335,
+      "id": "yarn:line:0371fb9c",
+      "group": "Alexander_5_romance_route",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:0371fb9c",
+          "source": "<gradient=\"gold\"><b> I'm going to be busy tonight. Sorry. </b></gradient><size=70%> (Will lead to no romance!)",
+          "sourceIds": [
+            "yarn:line:0371fb9c"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:0371fb9c",
+          "source": "<gradient=\"gold\"><b> I'm going to be busy tonight. Sorry. </b></gradient><size=70%> (Will lead to no romance!)",
+          "sourceIds": [
+            "yarn:line:0371fb9c"
+          ]
+        }
+      },
+      "before": "<gradient=\"gold\"><b> Esta noche estaré ocupado. Lo siento. </b></gradient><size=70%> (¡No habrá romance!)",
+      "after": "<gradient=\"gold\"><b> Esta noche no tendré tiempo. Lo siento. </b></gradient><size=70%> (¡No habrá romance!)"
+    },
+    {
+      "position": 366,
+      "id": "yarn:line:d132db41",
+      "group": "Alexander_SexScene",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:d132db41",
+          "source": "We can just lay here...",
+          "sourceIds": [
+            "yarn:line:d132db41"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:d132db41",
+          "source": "We can just lay here...",
+          "sourceIds": [
+            "yarn:line:d132db41"
+          ]
+        }
+      },
+      "before": "Podemos quedarnos aquí tumbados...",
+      "after": "Podemos quedarnos aquí, sin levantarnos..."
+    },
+    {
+      "position": 386,
+      "id": "yarn:line:dfe74420",
+      "group": "Alexander_SexScene_Loop",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:dfe74420",
+          "source": "My-",
+          "sourceIds": [
+            "yarn:line:dfe74420"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:dfe74420",
+          "source": "My-",
+          "sourceIds": [
+            "yarn:line:dfe74420"
+          ]
+        }
+      },
+      "before": "Mi...",
+      "after": "Vaya..."
+    },
+    {
+      "position": 542,
+      "id": "yarn:line:cacbff51",
+      "group": "Conrad_5_Mount_Start",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:cacbff51",
+          "source": "<i>Ooooh. </i>The mount? Hell yeah, man.",
+          "sourceIds": [
+            "yarn:line:cacbff51"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:cacbff51",
+          "source": "<i>Ooooh. </i>The mount? Hell yeah, man.",
+          "sourceIds": [
+            "yarn:line:cacbff51"
+          ]
+        }
+      },
+      "before": "<i>Oooh. </i>¿El soporte? Claro que sí, tío.",
+      "after": "<i>Oooh. </i>¿El soporte? Claro que sí."
+    },
+    {
+      "position": 543,
+      "id": "yarn:line:1538bc7e",
+      "group": "Conrad_5_intro_conrad_romanced",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:1538bc7e",
+          "source": "Hey good lookin'",
+          "sourceIds": [
+            "yarn:line:1538bc7e"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:1538bc7e",
+          "source": "Hey good lookin'",
+          "sourceIds": [
+            "yarn:line:1538bc7e"
+          ]
+        }
+      },
+      "before": "Hola, guapo.",
+      "after": "Hola, preciosidad."
+    },
+    {
+      "position": 549,
+      "id": "yarn:line:9accd60e",
+      "group": "Conrad_5_intro_conrad_romanced",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:9accd60e",
+          "source": "Lets wash it off for our date tonight then.",
+          "sourceIds": [
+            "yarn:line:9accd60e"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:9accd60e",
+          "source": "Lets wash it off for our date tonight then.",
+          "sourceIds": [
+            "yarn:line:9accd60e"
+          ]
+        }
+      },
+      "before": "Pues vamos a quitarte eso para nuestra cita de esta noche.",
+      "after": "Pues vamos a quitarme la suciedad para nuestra cita de esta noche."
+    },
+    {
+      "position": 552,
+      "id": "yarn:line:6c3a98cc",
+      "group": "Conrad_5_intro_conrad_romanced",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:6c3a98cc",
+          "source": "Ok lets wash it off for our date tonight then.",
+          "sourceIds": [
+            "yarn:line:6c3a98cc"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:6c3a98cc",
+          "source": "Ok lets wash it off for our date tonight then.",
+          "sourceIds": [
+            "yarn:line:6c3a98cc"
+          ]
+        }
+      },
+      "before": "Vale, pues vamos a quitarte eso para nuestra cita de esta noche.",
+      "after": "Vale, pues vamos a quitarme la suciedad para nuestra cita de esta noche."
+    },
+    {
+      "position": 598,
+      "id": "yarn:line:7c9fe106",
+      "group": "Conrad_5_outro_ryan_conrad_romanced",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:7c9fe106",
+          "source": "I'll make sure to get out of your scales.",
+          "sourceIds": [
+            "yarn:line:7c9fe106"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:7c9fe106",
+          "source": "I'll make sure to get out of your scales.",
+          "sourceIds": [
+            "yarn:line:7c9fe106"
+          ]
+        }
+      },
+      "before": "Me aseguraré de no estarte entre las escamas.",
+      "after": "Procuraré no darte más la lata."
+    },
+    {
+      "position": 625,
+      "id": "yarn:line:36779352",
+      "group": "Conrad_5_required_conrad_romanced",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:36779352",
+          "source": "You should be.",
+          "sourceIds": [
+            "yarn:line:36779352"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:36779352",
+          "source": "You should be.",
+          "sourceIds": [
+            "yarn:line:36779352"
+          ]
+        }
+      },
+      "before": "Y tanto que deberías.",
+      "after": "Pues deberías."
+    },
+    {
+      "position": 640,
+      "id": "yarn:line:4815d919",
+      "group": "Conrad_5_required_ryan_conrad_romanced",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:4815d919",
+          "source": "... Being a bit of a jerk honestly.",
+          "sourceIds": [
+            "yarn:line:4815d919"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:4815d919",
+          "source": "... Being a bit of a jerk honestly.",
+          "sourceIds": [
+            "yarn:line:4815d919"
+          ]
+        }
+      },
+      "before": "... Como un poco gilipollas, la verdad.",
+      "after": "... Siendo un poco gilipollas, la verdad."
+    },
+    {
+      "position": 688,
+      "id": "yarn:line:39fd52f1",
+      "group": "Conrad_Intro_3",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:39fd52f1",
+          "source": "'Ey big dog.",
+          "sourceIds": [
+            "yarn:line:39fd52f1"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:39fd52f1",
+          "source": "'Ey big dog.",
+          "sourceIds": [
+            "yarn:line:39fd52f1"
+          ]
+        }
+      },
+      "before": "Ey, grandullón.",
+      "after": "Ey, ¡qué grande eres!"
+    },
+    {
+      "position": 714,
+      "id": "yarn:line:918d7820",
+      "group": "Conrad_Intro_4",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:918d7820",
+          "source": "'Ey big kobold.",
+          "sourceIds": [
+            "yarn:line:918d7820"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:918d7820",
+          "source": "'Ey big kobold.",
+          "sourceIds": [
+            "yarn:line:918d7820"
+          ]
+        }
+      },
+      "before": "Eh, kóbold grandullón.",
+      "after": "Eh, ¡qué kóbold tan grande!"
+    },
+    {
+      "position": 817,
+      "id": "yarn:line:c4cc497f",
+      "group": "Conrad_Outro_3",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:c4cc497f",
+          "source": "You're pretty hot.",
+          "sourceIds": [
+            "yarn:line:c4cc497f"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:c4cc497f",
+          "source": "You're pretty hot.",
+          "sourceIds": [
+            "yarn:line:c4cc497f"
+          ]
+        }
+      },
+      "before": "Estás muy bueno.",
+      "after": "Me pones bastante."
+    },
+    {
+      "position": 818,
+      "id": "yarn:line:55d1f6ef",
+      "group": "Conrad_Outro_3",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:55d1f6ef",
+          "source": "...and nice.",
+          "sourceIds": [
+            "yarn:line:55d1f6ef"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:55d1f6ef",
+          "source": "...and nice.",
+          "sourceIds": [
+            "yarn:line:55d1f6ef"
+          ]
+        }
+      },
+      "before": "...y eres majo.",
+      "after": "...y me caes bien."
+    },
+    {
+      "position": 851,
+      "id": "yarn:line:803bf378",
+      "group": "Conrad_Outro_4_Conrad_Romanced",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:803bf378",
+          "source": "Fuck man, I'm so pumped.",
+          "sourceIds": [
+            "yarn:line:803bf378"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:803bf378",
+          "source": "Fuck man, I'm so pumped.",
+          "sourceIds": [
+            "yarn:line:803bf378"
+          ]
+        }
+      },
+      "before": "Joder, tío, qué ganas tengo.",
+      "after": "Joder, ¡qué ganas tengo!"
+    },
+    {
+      "position": 906,
+      "id": "yarn:line:3a5d5ca4",
+      "group": "Conrad_Ryan_Romanced",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:3a5d5ca4",
+          "source": "Yeah he seems like he'd push some buttons.",
+          "sourceIds": [
+            "yarn:line:3a5d5ca4"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:3a5d5ca4",
+          "source": "Yeah he seems like he'd push some buttons.",
+          "sourceIds": [
+            "yarn:line:3a5d5ca4"
+          ]
+        }
+      },
+      "before": "Sí, parece de los que te sacan de quicio.",
+      "after": "Sí, parece que sabría qué teclas tocar."
+    },
+    {
+      "position": 908,
+      "id": "yarn:line:77c996e8",
+      "group": "Conrad_SexScene",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:77c996e8",
+          "source": "Oh damn! You really are adventurous!",
+          "sourceIds": [
+            "yarn:line:77c996e8"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:77c996e8",
+          "source": "Oh damn! You really are adventurous!",
+          "sourceIds": [
+            "yarn:line:77c996e8"
+          ]
+        }
+      },
+      "before": "¡Joder! ¡Sí que eres aventurero!",
+      "after": "¡Joder! ¡Sí que te gusta la aventura!"
+    },
+    {
+      "position": 911,
+      "id": "yarn:line:0bc044da",
+      "group": "Conrad_SexScene_Cum",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:0bc044da",
+          "source": "You ready for this?",
+          "sourceIds": [
+            "yarn:line:0bc044da"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:0bc044da",
+          "source": "You ready for this?",
+          "sourceIds": [
+            "yarn:line:0bc044da"
+          ]
+        }
+      },
+      "before": "¿Estás listo?",
+      "after": "¿Todo listo?"
+    },
+    {
+      "position": 913,
+      "id": "yarn:line:9addfb4a",
+      "group": "Conrad_SexScene_Cum",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:9addfb4a",
+          "source": "Ready!",
+          "sourceIds": [
+            "yarn:line:9addfb4a"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:9addfb4a",
+          "source": "Ready!",
+          "sourceIds": [
+            "yarn:line:9addfb4a"
+          ]
+        }
+      },
+      "before": "¡Listo!",
+      "after": "¡Todo listo!"
+    },
+    {
+      "position": 915,
+      "id": "yarn:line:7f543c2a",
+      "group": "Conrad_SexScene_Cum",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:7f543c2a",
+          "source": "I can let loose whenever you are ready",
+          "sourceIds": [
+            "yarn:line:7f543c2a"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:7f543c2a",
+          "source": "I can let loose whenever you are ready",
+          "sourceIds": [
+            "yarn:line:7f543c2a"
+          ]
+        }
+      },
+      "before": "Puedo soltarme cuando estés listo",
+      "after": "Puedo soltarme cuando quieras"
+    },
+    {
+      "position": 951,
+      "id": "yarn:line:73ea230a",
+      "group": "Conrad_finished_mount_3",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:73ea230a",
+          "source": "No no, you're a certified cleaner yeah?",
+          "sourceIds": [
+            "yarn:line:73ea230a"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:73ea230a",
+          "source": "No no, you're a certified cleaner yeah?",
+          "sourceIds": [
+            "yarn:line:73ea230a"
+          ]
+        }
+      },
+      "before": "No, no. Eres un limpiador titulado, ¿no?",
+      "after": "No, no. Tienes el título de limpieza, ¿no?"
+    },
+    {
+      "position": 1026,
+      "id": "yarn:line:0de4fe62",
+      "group": "Conrad_required_2",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:0de4fe62",
+          "source": "And I'm glad you have a medkit... You're very prepared.",
+          "sourceIds": [
+            "yarn:line:0de4fe62"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:0de4fe62",
+          "source": "And I'm glad you have a medkit... You're very prepared.",
+          "sourceIds": [
+            "yarn:line:0de4fe62"
+          ]
+        }
+      },
+      "before": "Y me alegra que tengas un botiquín... Estás muy bien preparado.",
+      "after": "Y me alegra que tengas un botiquín... Se nota que has venido con todo preparado."
+    },
+    {
+      "position": 1089,
+      "id": "yarn:line:f716a163",
+      "group": "RyanDate_Intro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:f716a163",
+          "source": "I knew you were too busy, so I figured I'd bring the date to you!",
+          "sourceIds": [
+            "yarn:line:f716a163"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:f716a163",
+          "source": "I knew you were too busy, so I figured I'd bring the date to you!",
+          "sourceIds": [
+            "yarn:line:f716a163"
+          ]
+        }
+      },
+      "before": "Sabía que estabas demasiado ocupado, ¡así que pensé en traerte la cita a ti!",
+      "after": "Sabía que tenías mucho que hacer, ¡así que pensé en traerte la cita a ti!"
+    },
+    {
+      "position": 1165,
+      "id": "yarn:line:5f64c352",
+      "group": "RyanMuddy_SmallTalk",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:5f64c352",
+          "source": "So you're a certified dragon washer huh?",
+          "sourceIds": [
+            "yarn:line:5f64c352"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:5f64c352",
+          "source": "So you're a certified dragon washer huh?",
+          "sourceIds": [
+            "yarn:line:5f64c352"
+          ]
+        }
+      },
+      "before": "Así que eres un lavador de dragones titulado, ¿eh?",
+      "after": "Así que tienes un certificado para lavar dragones, ¿eh?"
+    },
+    {
+      "position": 1169,
+      "id": "yarn:line:7428755b",
+      "group": "RyanMuddy_SmallTalk",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:7428755b",
+          "source": "Oh so it's new for both of us!",
+          "sourceIds": [
+            "yarn:line:7428755b"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:7428755b",
+          "source": "Oh so it's new for both of us!",
+          "sourceIds": [
+            "yarn:line:7428755b"
+          ]
+        }
+      },
+      "before": "¡Ah, así que esto es nuevo para los dos!",
+      "after": "¡Ah, así que para ti y para mí es algo nuevo!"
+    },
+    {
+      "position": 1187,
+      "id": "yarn:line:a99c515c",
+      "group": "Ryan_1_PhoneTutorial",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:a99c515c",
+          "source": "Hello, <i>'Drag'n wash franchise 223'...</i> Have you spoken to your first customer yet?",
+          "sourceIds": [
+            "yarn:line:a99c515c"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:a99c515c",
+          "source": "Hello, <i>'Drag'n'wash franchise 223'...</i> Have you spoken to your first customer yet?",
+          "sourceIds": [
+            "yarn:line:a99c515c"
+          ]
+        }
+      },
+      "before": {
+        "platforms": {
+          "macos": "Hola, <i>'Drag'n wash franchise 223'...</i> ¿Ya has hablado con tu primer cliente?",
+          "windows": "Hola, <i>'Drag'n'wash franchise 223'...</i> ¿Ya has hablado con tu primer cliente?"
+        }
+      },
+      "after": {
+        "platforms": {
+          "macos": "Hola, <i>'Drag'n wash, franquicia 223'...</i> ¿Ya has hablado con tu primer cliente?",
+          "windows": "Hola, <i>'Drag'n'wash, franquicia 223'...</i> ¿Ya has hablado con tu primer cliente?"
+        }
+      }
+    },
+    {
+      "position": 1193,
+      "id": "yarn:line:4183ca7e",
+      "group": "Ryan_1_PhoneTutorial",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:4183ca7e",
+          "source": "Hello, <i>'Drag'n wash franchise 223'...</i> Have you figured out how to interact yet?",
+          "sourceIds": [
+            "yarn:line:4183ca7e"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:4183ca7e",
+          "source": "Hello, <i>'Drag'n'wash franchise 223'...</i> Have you figure out how to interact yet?",
+          "sourceIds": [
+            "yarn:line:4183ca7e"
+          ]
+        }
+      },
+      "before": {
+        "platforms": {
+          "macos": "Hola, <i>'Drag'n wash franchise 223'...</i> ¿Ya has descubierto cómo interactuar?",
+          "windows": "Hola, <i>'Drag'n'wash franchise 223'...</i> ¿Ya has descubierto cómo interactuar?"
+        }
+      },
+      "after": {
+        "platforms": {
+          "macos": "Hola, <i>'Drag'n wash, franquicia 223'...</i> ¿Ya has descubierto cómo interactuar?",
+          "windows": "Hola, <i>'Drag'n'wash, franquicia 223'...</i> ¿Ya has descubierto cómo interactuar?"
+        }
+      }
+    },
+    {
+      "position": 1221,
+      "id": "yarn:line:c9e7bb1e",
+      "group": "Ryan_1_required",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:c9e7bb1e",
+          "source": "So you're a certified dragon washer huh?",
+          "sourceIds": [
+            "yarn:line:c9e7bb1e"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:c9e7bb1e",
+          "source": "So you're a certified dragon washer huh?",
+          "sourceIds": [
+            "yarn:line:c9e7bb1e"
+          ]
+        }
+      },
+      "before": "Así que eres un lavador de dragones titulado, ¿eh?",
+      "after": "Así que tienes un certificado para lavar dragones, ¿eh?"
+    },
+    {
+      "position": 1226,
+      "id": "yarn:line:513bed5a",
+      "group": "Ryan_1_required",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:513bed5a",
+          "source": "Oh so it's new to both of us!",
+          "sourceIds": [
+            "yarn:line:513bed5a"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:513bed5a",
+          "source": "Oh so it's new to both of us!",
+          "sourceIds": [
+            "yarn:line:513bed5a"
+          ]
+        }
+      },
+      "before": "¡Ah, así que esto es nuevo para los dos!",
+      "after": "¡Ah, así que para ti y para mí es algo nuevo!"
+    },
+    {
+      "position": 1230,
+      "id": "yarn:line:797ca540",
+      "group": "Ryan_2_Outro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:797ca540",
+          "source": "Alrighty. All clean.",
+          "sourceIds": [
+            "yarn:line:797ca540"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:797ca540",
+          "source": "Alrighty. All clean.",
+          "sourceIds": [
+            "yarn:line:797ca540"
+          ]
+        }
+      },
+      "before": "Muy bien. Ya estás limpio.",
+      "after": "Muy bien. Ya estoy limpio."
+    },
+    {
+      "position": 1239,
+      "id": "yarn:line:20503ab0",
+      "group": "Ryan_2_Outro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:20503ab0",
+          "source": "You sure? It's not like... fun stuff.",
+          "sourceIds": [
+            "yarn:line:20503ab0"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:20503ab0",
+          "source": "You sure? It's not like... fun stuff.",
+          "sourceIds": [
+            "yarn:line:20503ab0"
+          ]
+        }
+      },
+      "before": "¿Seguro? No es que sea... algo divertido.",
+      "after": "¿De verdad? No es que sea... algo divertido."
+    },
+    {
+      "position": 1244,
+      "id": "yarn:line:c2f44537",
+      "group": "Ryan_2_Outro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:c2f44537",
+          "source": "So. My girlfriend was home before me. she's a work-from-home dragon.",
+          "sourceIds": [
+            "yarn:line:c2f44537"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:c2f44537",
+          "source": "So. My girlfriend was home before me. she's a work-from-home dragon.",
+          "sourceIds": [
+            "yarn:line:c2f44537"
+          ]
+        }
+      },
+      "before": "Verás. Mi novia había llegado a casa antes que yo. Es una dragona que trabaja desde casa.",
+      "after": "Verás. Mi novia estaba en casa antes de que yo llegara. Es una dragona que trabaja desde casa."
+    },
+    {
+      "position": 1317,
+      "id": "yarn:line:5d2d16e0",
+      "group": "Ryan_3_Outro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:5d2d16e0",
+          "source": "A really good friend?",
+          "sourceIds": [
+            "yarn:line:5d2d16e0"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:5d2d16e0",
+          "source": "A really good friend?",
+          "sourceIds": [
+            "yarn:line:5d2d16e0"
+          ]
+        }
+      },
+      "before": "Un buen amigo?",
+      "after": "Alguien con quien tengo una gran amistad?"
+    },
+    {
+      "position": 1364,
+      "id": "yarn:line:c35b717a",
+      "group": "Ryan_4_JerkOff_Start",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:c35b717a",
+          "source": "Are you sure...? In front of the food?",
+          "sourceIds": [
+            "yarn:line:c35b717a"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:c35b717a",
+          "source": "Are you sure...? In front of the food?",
+          "sourceIds": [
+            "yarn:line:c35b717a"
+          ]
+        }
+      },
+      "before": "¿Seguro...? ¿Delante de la comida?",
+      "after": "¿De verdad...? ¿Delante de la comida?"
+    },
+    {
+      "position": 1377,
+      "id": "yarn:line:0caa6657",
+      "group": "Ryan_4_intro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:0caa6657",
+          "source": "Right, I'll get that for you ASAP.",
+          "sourceIds": [
+            "yarn:line:0caa6657"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:0caa6657",
+          "source": "Right, I'll get that for you ASAP.",
+          "sourceIds": [
+            "yarn:line:0caa6657"
+          ]
+        }
+      },
+      "before": "Vale, te lo traeré cuanto antes.",
+      "after": "Vale, voy a abrirte enseguida."
+    },
+    {
+      "position": 1417,
+      "id": "yarn:line:b9cb051a",
+      "group": "Ryan_5_Outro_ryan_romanced",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:b9cb051a",
+          "source": "Means I'm ready to go on a date with a certain kobold.",
+          "sourceIds": [
+            "yarn:line:b9cb051a"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:b9cb051a",
+          "source": "Means I'm ready to go on a date with a certain kobold.",
+          "sourceIds": [
+            "yarn:line:b9cb051a"
+          ]
+        }
+      },
+      "before": "Significa que estoy listo para salir con cierto kóbold.",
+      "after": "Significa que estoy listo para salir con cierta criatura kóbold."
+    },
+    {
+      "position": 1512,
+      "id": "yarn:line:c2529648",
+      "group": "Ryan_5_intro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:c2529648",
+          "source": "player hooked up with conrad",
+          "sourceIds": [
+            "yarn:line:c2529648"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:c2529648",
+          "source": "player hooked up with conrad",
+          "sourceIds": [
+            "yarn:line:c2529648"
+          ]
+        }
+      },
+      "before": "El jugador se ha liado con Conrad",
+      "after": "La persona que juega se ha liado con Conrad"
+    },
+    {
+      "position": 1513,
+      "id": "yarn:line:78039fd1",
+      "group": "Ryan_5_intro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:78039fd1",
+          "source": "player hooked up with ryan",
+          "sourceIds": [
+            "yarn:line:78039fd1"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:78039fd1",
+          "source": "player hooked up with ryan",
+          "sourceIds": [
+            "yarn:line:78039fd1"
+          ]
+        }
+      },
+      "before": "El jugador se ha liado con Ryan",
+      "after": "La persona que juega se ha liado con Ryan"
+    },
+    {
+      "position": 1516,
+      "id": "yarn:line:7f2e2736",
+      "group": "Ryan_5_intro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:7f2e2736",
+          "source": "Hey... little guy!",
+          "sourceIds": [
+            "yarn:line:7f2e2736"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:7f2e2736",
+          "source": "Hey... little guy!",
+          "sourceIds": [
+            "yarn:line:7f2e2736"
+          ]
+        }
+      },
+      "before": "¡Hola... pequeñín!",
+      "after": "¡Hola... peque!"
+    },
+    {
+      "position": 1517,
+      "id": "yarn:line:e91e2041",
+      "group": "Ryan_5_intro",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:e91e2041",
+          "source": "I'm not <i>that</i> little-",
+          "sourceIds": [
+            "yarn:line:e91e2041"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:e91e2041",
+          "source": "I'm not <i>that</i> little-",
+          "sourceIds": [
+            "yarn:line:e91e2041"
+          ]
+        }
+      },
+      "before": "No soy <i>tan</i> pequeño...",
+      "after": "No soy <i>tan</i> peque..."
+    },
+    {
+      "position": 1607,
+      "id": "yarn:line:7f5113d5",
+      "group": "Ryan_egg_dialog",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:7f5113d5",
+          "source": "OH. You're not used to eating them whole.",
+          "sourceIds": [
+            "yarn:line:7f5113d5"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:7f5113d5",
+          "source": "OH. You're not used to eating them whole.",
+          "sourceIds": [
+            "yarn:line:7f5113d5"
+          ]
+        }
+      },
+      "before": "AH. No estás acostumbrado a comértelos enteros.",
+      "after": "AH. No sueles comértelos enteros."
+    },
+    {
+      "position": 1616,
+      "id": "yarn:line:66727cce",
+      "group": "Ryan_grab_basket",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:66727cce",
+          "source": "Yeah! It has food that should be good for both of us.",
+          "sourceIds": [
+            "yarn:line:66727cce"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:66727cce",
+          "source": "Yeah! It has food that should be good for both of us.",
+          "sourceIds": [
+            "yarn:line:66727cce"
+          ]
+        }
+      },
+      "before": "¡Sí! He traído comida que nos vendrá bien a los dos.",
+      "after": "¡Sí! He traído comida que nos sentará bien."
+    },
+    {
+      "position": 1617,
+      "id": "yarn:line:4a137220",
+      "group": "Ryan_grab_basket",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:4a137220",
+          "source": "Hehe, thanks. It has stuff that should be good for both of us.",
+          "sourceIds": [
+            "yarn:line:4a137220"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:4a137220",
+          "source": "Hehe, thanks. It has stuff that should be good for both of us.",
+          "sourceIds": [
+            "yarn:line:4a137220"
+          ]
+        }
+      },
+      "before": "Jeje, gracias. He traído cosas que nos vendrán bien a los dos.",
+      "after": "Jeje, gracias. He traído cosas que nos sentarán bien."
+    },
+    {
+      "position": 1686,
+      "id": "yarn:line:07e5fc05",
+      "group": "Start",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:07e5fc05",
+          "source": "I'm amazed!",
+          "sourceIds": [
+            "yarn:line:07e5fc05"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:07e5fc05",
+          "source": "I'm amazed!",
+          "sourceIds": [
+            "yarn:line:07e5fc05"
+          ]
+        }
+      },
+      "before": "¡Estoy asombrado!",
+      "after": "¡No salgo de mi asombro!"
+    },
+    {
+      "position": 1760,
+      "id": "yarn:line:b4990e3d",
+      "group": "ryan_food_dialogue",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:b4990e3d",
+          "source": "If I'm honest. I've had a crush on you for a bit.",
+          "sourceIds": [
+            "yarn:line:b4990e3d"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:b4990e3d",
+          "source": "If I'm honest. I've had a crush on you for a bit.",
+          "sourceIds": [
+            "yarn:line:b4990e3d"
+          ]
+        }
+      },
+      "before": "Si te soy sincero, me gustas desde hace un tiempo.",
+      "after": "Si te digo la verdad, me gustas desde hace un tiempo."
+    },
+    {
+      "position": 1764,
+      "id": "yarn:line:09e5bf43",
+      "group": "ryan_food_dialogue",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:09e5bf43",
+          "source": "You're cute by the way.",
+          "sourceIds": [
+            "yarn:line:09e5bf43"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:09e5bf43",
+          "source": "You're cute by the way.",
+          "sourceIds": [
+            "yarn:line:09e5bf43"
+          ]
+        }
+      },
+      "before": "Por cierto, eres muy mono.",
+      "after": "Por cierto, me pareces una monada."
+    },
+    {
+      "position": 1767,
+      "id": "yarn:line:7a5c7f54",
+      "group": "ryan_food_dialogue",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:7a5c7f54",
+          "source": "I didn't mean to fluster you!",
+          "sourceIds": [
+            "yarn:line:7a5c7f54"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:7a5c7f54",
+          "source": "I didn't mean to fluster you!",
+          "sourceIds": [
+            "yarn:line:7a5c7f54"
+          ]
+        }
+      },
+      "before": "¡No quería ponerte nervioso!",
+      "after": "¡No quería ponerte en un aprieto!"
+    },
+    {
+      "position": 1798,
+      "id": "yarn:line:13c906c7",
+      "group": "ryan_food_dialogue",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:13c906c7",
+          "source": "It really has been. You're wonderful.",
+          "sourceIds": [
+            "yarn:line:13c906c7"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:13c906c7",
+          "source": "It really has been. You're wonderful.",
+          "sourceIds": [
+            "yarn:line:13c906c7"
+          ]
+        }
+      },
+      "before": "Desde luego. Eres maravilloso.",
+      "after": "Desde luego. Eres una maravilla."
+    },
+    {
+      "position": 1818,
+      "id": "yarn:line:079b3782",
+      "group": "ryan_food_dialogue",
+      "builds": {
+        "macos": {
+          "file": "dialogue.json",
+          "key": "line:079b3782",
+          "source": "Thanks for sharing food with me, You're a great friend.",
+          "sourceIds": [
+            "yarn:line:079b3782"
+          ]
+        },
+        "windows": {
+          "file": "dialogue.json",
+          "key": "line:079b3782",
+          "source": "Thanks for sharing food with me, You're a great friend.",
+          "sourceIds": [
+            "yarn:line:079b3782"
+          ]
+        }
+      },
+      "before": "Gracias por compartir la comida conmigo. Eres un gran amigo.",
+      "after": "Gracias por compartir la comida conmigo. Tu amistad significa mucho para mí."
+    }
+  ]
+}
