@@ -4875,19 +4875,133 @@
       "group": "Ryan_3_Outro",
       "orderedRowsSha256": "0ffe7ae6e161850e059ac272fa603c470776dec51e09d5a15e00227907e314b6",
       "count": 16,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:44e97be7",
+          "yarn:line:68887509"
+        ],
+        "dnw-wash": [
+          "yarn:line:3750bbf0"
+        ]
+      },
+      "referents": "Ryan and the player reciprocate friendship after the wash; Ryan is the client. English source differs between builds at line:d2d97c90 and line:e77c1f79.",
+      "layer1": "Source read: friendship is between customer Ryan and player; bind both source variants.",
+      "layer2": "Italian field read: no character or service field defect established; retain speaker and branching.",
+      "sourceIds": [
+        "yarn:line:3750bbf0",
+        "yarn:line:d2d97c90",
+        "yarn:line:44e97be7",
+        "yarn:line:68887509",
+        "yarn:line:feb8727e",
+        "yarn:line:cb1d1197",
+        "yarn:line:5d2d16e0",
+        "yarn:line:e77c1f79",
+        "yarn:line:e051a79e",
+        "yarn:line:714c180e",
+        "yarn:line:7661a0e9",
+        "yarn:line:118a51bb",
+        "yarn:line:87ba56cc",
+        "yarn:line:3deb5f55",
+        "yarn:line:abdb5822",
+        "yarn:line:084e3cbc"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-third-and-fourth-opening",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_3_intro",
       "orderedRowsSha256": "1730cd0069791b1ae8155869a2ff6034979067b2fbe22816daff9410654975f9",
       "count": 17,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:b76f49cd",
+          "yarn:line:ce6d6d7f"
+        ],
+        "dnw-wash": [
+          "yarn:line:4199070f"
+        ]
+      },
+      "referents": "Ryan returns for another wash and in one branch admits things are not okay; the player opens the gate. The reason is not disclosed until later.",
+      "layer1": "Source read: preserve branch-specific disclosure and service request.",
+      "layer2": "Italian field read: retain Ryan's identity, withholding and the player's unspecified gender.",
+      "sourceIds": [
+        "yarn:line:0d3e4054",
+        "yarn:line:b76f49cd",
+        "yarn:line:b042f12a",
+        "yarn:line:215f4eba",
+        "yarn:line:2672f65d",
+        "yarn:line:4199070f",
+        "yarn:line:d7a90078",
+        "yarn:line:6df809e1",
+        "yarn:line:fbc80e96",
+        "yarn:line:ce6d6d7f",
+        "yarn:line:585d6a08",
+        "yarn:line:743c64e6",
+        "yarn:line:e20c6391",
+        "yarn:line:7311dc01",
+        "yarn:line:00a81c16",
+        "yarn:line:e521db76",
+        "yarn:line:96981b61"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-third-and-fourth-opening",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_3_required",
       "orderedRowsSha256": "bd3bf2921565f4352ed124f4d9e798a83bb48d2cab5b182fc798df7019e48438",
       "count": 17,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:c6895517",
+          "yarn:line:bb4e1dc1"
+        ],
+        "dnw-wash": [
+          "yarn:line:972f132f",
+          "yarn:line:0632acbf"
+        ]
+      },
+      "referents": "Ryan says he broke up with his female partner; she and her in his explanation refer to that partner, not the player. Ryan values meeting the player and says the washes help.",
+      "layer1": "Source read: the breakup has happened, and the ex-partner and player are distinct.",
+      "layer2": "Italian field read: preserve the ex-partner's pronouns and player gender uncertainty without altering the glossary.",
+      "sourceIds": [
+        "yarn:line:df4d3810",
+        "yarn:line:497d3f67",
+        "yarn:line:eae85bf9",
+        "yarn:line:7cd85c8e",
+        "yarn:line:c6895517",
+        "yarn:line:50b95260",
+        "yarn:line:c1a4edf0",
+        "yarn:line:5794ea87",
+        "yarn:line:34ba77b1",
+        "yarn:line:18db795f",
+        "yarn:line:a28a70c6",
+        "yarn:line:8eeb7e28",
+        "yarn:line:2d7e1ab6",
+        "yarn:line:bb4e1dc1",
+        "yarn:line:011f1458",
+        "yarn:line:972f132f",
+        "yarn:line:0632acbf"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-third-and-fourth-opening",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_3_wont_use_mount",
@@ -5000,7 +5114,39 @@
       "group": "Ryan_4_intro",
       "orderedRowsSha256": "9b5428feec0a1a9deda6d9c69f36ae71d7ae05f244fda6f365ae45dbda5dc699",
       "count": 11,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:dbab7a39",
+          "yarn:line:af3f02c9"
+        ],
+        "dnw-conrad": [
+          "yarn:line:dbab7a39"
+        ]
+      },
+      "referents": "A debug-like question asks whether Ryan was suggested to Conrad, with yes/no options. In the following dialogue Ryan carries a picnic basket in his mouth, affecting speech; player opens the gate. The question does not itself establish the answer.",
+      "layer1": "Source read: preserve the question and its alternatives, and the mouth-obstructed speech.",
+      "layer2": "Italian field read: character identities fit; do not promote a choice into an established relationship.",
+      "sourceIds": [
+        "yarn:line:dbab7a39",
+        "yarn:line:4ab6c5a9",
+        "yarn:line:dc86c2de",
+        "yarn:line:390f05be",
+        "yarn:line:af3f02c9",
+        "yarn:line:156e0b50",
+        "yarn:line:835e0c27",
+        "yarn:line:20cb68b9",
+        "yarn:line:b6fb6fce",
+        "yarn:line:0caa6657",
+        "yarn:line:9a9a6120"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-third-and-fourth-opening",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_5_Cum",

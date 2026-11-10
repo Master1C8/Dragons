@@ -307,3 +307,7 @@ Two author self-review layers reconciled five previously read first-visit groups
 ### Resume-08 Ryan second visit
 
 Two author self-review layers reconciled `Ryan_2_intro`, `Ryan_2_required` and `Ryan_2_Outro` (81 paired rows), bound to the complete ordered scene hashes and IDs in `glossary-scene-dependencies-resume-08.json`. Ryan's unnamed girlfriend is a distinct female dragon; the player is the listener. Ryan's guess that something else upsets her is presented as speculation, not established fact. The first scene's alternate arrival explanations remain branch-specific. Selected concept anchors and referent summaries are not exhaustive unions. These author self-reviews are not independent acceptance.
+
+### Resume-08 Ryan third and fourth opening
+
+Two author self-review layers reconciled the three third-visit groups and `Ryan_4_intro` (61 paired rows), with full ordered hashes and members, selected concept anchors and separate decisions in `glossary-scene-dependencies-resume-08.json`. Ryan's ex-partner is distinct from the player; the player and Ryan affirm friendship. The question asking whether Ryan was suggested to Conrad has both answers and cannot be treated as an established answer. The basket explains Ryan's mouth-obstructed speech. Two platform-specific source differences occur in the third-visit departure. Occurrence and referent unions remain incomplete; author self-review is not independent acceptance.
