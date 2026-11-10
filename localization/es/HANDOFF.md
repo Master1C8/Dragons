@@ -281,3 +281,6 @@ The previously unmapped 92 Alexander rows now have paired source instruction evi
 
 
 Positions 510-542 are now author-reviewed with paired instruction and option-path evidence; the next contextual input is position 543. The Ryan/Conrad date branches preserve the distinction between advice and the washing joke. No translation changes occurred in this batch; receipt and hash are in `semantic-review.md`. Positions 543-979 remain preliminary, and 980-1946 unread. Independent game-text audit, candidate packages and final runtime/visual QA remain open.
+
+
+Positions 543-587 are author-reviewed as complete fifth-visit introduction branches. Corrected `9accd60e` and `6c3a98cc` to refer to washing Conrad, not the player. The full paired stock-input checks and two corrected-entry object read-backs passed; current translation SHA-256 `539fd0c7973e004b061a9ed4ae042661dce7ab66728fdf70af2c468e3668cf78`. Resume contextual review at 588; positions 588-979 remain preliminary and 980-1946 unread. See `semantic-review.md` for exact bindings and open independent audit and final QA boundaries.
