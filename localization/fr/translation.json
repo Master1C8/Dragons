@@ -277,6 +277,11 @@
     "yarn:line:bbca8a46": "Merci !",
     "yarn:line:b3c35166": "Ouf, j’avais peur de tout gâcher encore une fois.",
     "yarn:line:564a9606": "Maintenant, ils n’auront jamais besoin de le savoir !",
-    "yarn:line:c07a9171": "Merci !"
+    "yarn:line:c07a9171": "Merci !",
+    "ui:3944a555d130038af2323d988762ab1967719d178270e20fc65cd74b7c5efd27": "Nouveau",
+    "ui:4cbc97aea69bccfd4defdb896f11600bdcc0964b970916200b59966d037b24e5": "Nouveau",
+    "ui:1f92f7d859adfd67efa3a3f37608780f984d3d2e55b5a74774f0dfa70d9d4f86": "Nouveau",
+    "display:slot-new": "NOUVEAU",
+    "display:yarn-missing-line": "!! ERREUR : ligne manquante !"
   }
 }

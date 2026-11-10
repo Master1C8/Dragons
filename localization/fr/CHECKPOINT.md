@@ -1,6 +1,6 @@
 # French localization checkpoint
 
-Updated 2026-11-10. Status: **glossary author layers reconciled; bounded renderer probe complete; special-scene preparation started**. See [glossary review](glossary-review.md) and [renderer probe](renderer-probe.md) for the current resumption; historical notes below retain the earlier checkpoint context. The requested standard locale is `fr`; source is English. Session `01a1c394-a809-7812-9570-df379360d954` turn context and process arguments record `gpt-6.1-terra`, reasoning `high`. No other model or agent was used.
+Updated 2026-11-10. Status: **glossary author layers reconciled; bounded renderer probe complete; all special-scene decisions prepared; shared source gate open**. See [glossary review](glossary-review.md) and [renderer probe](renderer-probe.md) for the current resumption; historical notes below retain the earlier checkpoint context. The requested standard locale is `fr`; source is English. Session `01a1c394-a809-7812-9570-df379360d954` turn context and process arguments record `gpt-6.1-terra`, reasoning `high`. No other model or agent was used.
 
 ## Bound inputs
 
@@ -25,19 +25,19 @@ A preliminary direct comparison of all 28 current English/French entries found a
 | Stage | Status |
 | --- | --- |
 | probe | Bounded French synthetic paths observed on macOS and CrossOver, including body/choice/settings frames and progression; native Windows and corpus-specific fit pending. See renderer-probe.md. |
-| source | Pinned worklist generated; verify source/preserve-exact gate and current shared receipts before translation. |
+| source | Open: v42 worklist is pinned, but the shared complete preserve-exact contract and validator are not established. See `localization/evidence/paired-package-resource-audit-20261110.md`. |
 | glossary | Two author self-review layers reconciled on current hashes under the owner exception; the earlier crest finding was withdrawn after scene review. Independent review was not claimed. See glossary-review.md. |
-| special-scene decisions | 25/27 groups have author-reviewed draft wording; the anonymous group retains a source buzzing-command boundary, and 2 groups remain unreviewed. Ordinary translation remains gated. See special-scenes.md. |
-| translate-edit | 253/1,947 authored as special-scene preparation, including intentional exact vocalizations and ellipses; no ordinary batch started. Paired diagnostic assets verified. |
+| special-scene decisions | 27/27 groups have author-reviewed draft wording and feasible technical candidates. The anonymous group retains a direct-entry fixture boundary. Ordinary translation is blocked by the shared source gate. See special-scenes.md. |
+| translate-edit | 258/1,947 authored as special-scene preparation, including intentional exact vocalizations and ellipses; no ordinary batch started. Paired diagnostic assets verified. |
 | editorial | Not run; full semantic audit, independent delta and regression catalog pending. |
 | fonts | Slot and bounded live text samples resolved; full corpus coverage and typography remain unverified. |
 | textures | Textures with text excluded and preserved. |
 | package | macOS and Windows deliverables not built or verified. English passthrough is not a completed translation. |
-| runtime / visual | French not run / not reviewed. |
+| runtime / visual | Bounded synthetic French controls run and reviewed; actual authored scenes and exact display strings remain unrun / unreviewed. |
 | screenshot upload / review | Not requested / not run. |
 | release / archival | Not complete; no publication, push or deployment authorized. |
 
-Next: complete and review the remaining 2 special-scene groups, resolve or explicitly classify the anonymous-scene technical boundary before ordinary text; use the exact paired English worklist and preserve source-bound handling. If the shared glossary or probe needs changes outside `localization/fr/` and this run directory, report the exact boundary instead of modifying shared files. A verified locale-only commit requires the specified `.git/codex-canonical-commit.lock`, empty pre-existing index, complete staged review and committed-tree verification; do not reset, amend or interfere with other lanes.
+Next: the shared source owner must reconcile indirect runtime text consumers and additional resources with approved visible scope and verify a parser-derived contract for every protected occurrence inside the 11 changed files. Recheck `localization/evidence/paired-package-resource-audit-20261110.md` and current HANDOFF for a complete source-bound validator receipt before ordinary translation; no command for a complete validator is documented yet. The buzzing failure is classified as an English direct-entry fixture limitation, not a passed natural-play test. If the shared glossary or probe needs changes outside `localization/fr/` and this run directory, report the exact boundary instead of modifying shared files. A verified locale-only commit requires the specified `.git/codex-canonical-commit.lock`, empty pre-existing index, complete staged review and committed-tree verification; do not reset, amend or interfere with other lanes.
 
 The Alexander register/professor batch has author-reviewed wording and paired 43-entry macOS/Windows partial asset readbacks; see special-scenes.md for hashes and limits. At that checkpoint the buzzing finish-command boundary awaited an unmodified-English comparison; the later macOS control below classifies the direct-entry fixture limitation, while natural entry remains unverified. CrossOver is not native Windows evidence.
 
@@ -68,3 +68,5 @@ The Conrad dirty/professional wordplay groups add 27 IDs. Both partial readbacks
 Conrad’s special-endings group adds 24 IDs. Both partial readbacks cover 242 authored Yarn values; playback and fit remain pending. Current translation SHA-256: `aeb92f076d7c740f9c28d9a40bb1dfe0d90a718b8b67d907d316c7078fe16ab0`.
 
 The missing-destination group adds eight continuation IDs and preserves all 15 exact markers. Existing controlled repair evidence establishes a feasible route but not ordinary-play completion. Both partial readbacks cover 250 Yarn values. Current translation SHA-256: `d153aa24bb50ec84c01ed9c55f43bf23d3ddd6d40b8f2f56499e1412a4118290`.
+
+The two final special-scene groups add five paired IDs for new slots and missing-line fallback. Managed method-body checks and separate UI asset readbacks passed for both pinned builds; exact evidence and limits are in special-scenes.md. Current translation SHA-256: `d62cc7de3c68353e3416091ef9df05e6ddafb23243244d1dd64c321c0b7e9e92`. The complete source preservation gate remains open independently of these partial controls; no ordinary batch has been authored.
