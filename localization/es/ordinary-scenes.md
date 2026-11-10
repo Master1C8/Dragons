@@ -61,3 +61,7 @@ Author self-reviewed 34 IDs in Alexander and Conrad idle remarks, wash states an
 ## Start test script
 
 Author self-reviewed the 24 Start IDs, retaining the 18 distinct numbered test lines and the Unity and Yarn names. Both stock source readers and object encode/parse passed: macOS SHA-256 `d60fb34fffe60957ed006d4e20aecf470efa5325e454bec40a3705d8cfe373b2`; Windows `f0924bf53465ccbab5a7afe2952d5e1310c21de455e8783a631c6b25b25deca7`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary15/`.
+
+## Alexander intimacy
+
+Author self-reviewed 24 IDs in the interaction, loop, choices and continuation. The source markup and the two-dot pause are retained; the pause is an intentional unchanged value. Both stock source readers and object encode/parse passed: macOS SHA-256 `a5d723d73a9fd4bfa7c01d8ed85b71882978d19dfb6738831ec847eeeead32d4`; Windows `15a60f88129353819ecab0968e3f6e0a4e31fed84fa4365420944030e5929d3f`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary16/`.
