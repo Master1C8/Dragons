@@ -1,0 +1,10 @@
+{
+  "locale": "he",
+  "translationSha256": "492b222f380e1162cb017d57e53a2c15e1e18f321c744507b1fdbeaa0ae1c3a6",
+  "selfEditedRows": 1947,
+  "scope": "authored-text-only",
+  "findings": "Author self-edit identified 36 objective corrections; applied as one batch and rechecked changed lines and immediate context.",
+  "status": "Author self-edit and complete static source-bound verification passed. Independent editorial review and visual/runtime verification were not performed. Display fixes and packages are deferred.",
+  "verification": "final-yarn.json; 1823 dialogue bindings per platform",
+  "reviewType": "author self-edit"
+}
