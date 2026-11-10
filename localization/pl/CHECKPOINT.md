@@ -402,3 +402,7 @@ Author self-reviewed 32 additional IDs for the Ryan relationship conversation an
 ### Visit and interaction reactions batch
 
 Author self-reviewed 82 IDs covering visit reactions, device use and refusals, dirty/soapy exits, cold-water reactions and Ryan's date arrival. An English typo differs between builds for one line and has a reviewed shared target. This is not independent audit. Draft: 1,862/1,947 IDs; SHA-256 `386f05cebba88e12f928935b67df7ce39b27dd0935550d4ee70f7f47719915fd`. Source-bound readers accepted 1,838 macOS and 1,856 Windows bindings, and the complete guard reports 85 missing. Complete packages, translated runtime, visual fit and independent audit remain open.
+
+### Complete authored draft: intimate scene batch
+
+Author self-reviewed the remaining 85 IDs in the Alexander, Conrad, Ryan and joint scene groups, preserving the exact `Ryan:`/`Conrad:` speaker routing prefixes and source markup. This is author review, not the required independent game-text audit. The authored draft now covers **1,947/1,947 IDs**, SHA-256 `cbc8b2ea7e50811cac5eab4425618ed97a5f234ee864bdb23e49213b809ab02f`. The complete paired reader accepts all IDs; source-bound platform readers accepted 1,923 macOS and 1,941 Windows bindings. Complete-package generation/read-back, translated runtime, visual fit, full editorial audit and independent game-text audit remain open. Do not mark the language complete on coverage alone.
