@@ -339,7 +339,7 @@ Source case `salmon-guy-dragon`, node `Ryan_5_Required_ryan_romanced`. Author se
 | `c9f270de` | Be', sono un drago... ma hai capito cosa intendo. |
 | `5fc277a9` | Allora è un appuntamento! Pesce e frutti di mare, poi si vedrà. |
 | `6a671440` | Conosco un buon locale degli equini vicino al molo. |
-| `d0361dd9` | È una specie di cucina fusion equina... |
+| `d0361dd9` | È una specie di cucina fusion degli equini... |
 | `46061aae` | Mi piace! Credo che piacerebbe anche a te. |
 | `d71ba53e` | Allora è un appuntamento! |
 
@@ -1056,3 +1056,108 @@ These eight route-selected groups cover Conrad's fifth-visit conversations, his 
 | `ae4d09f6` | Aspetterò al cancello! |
 
 Positive review: the selected scene names and text agree on which pair is together; Ryan's date, Conrad's date and the introduction remain distinct. Negative review: do not swap routes, change choice/flag identities or infer the player's gender. Final runtime and fit are unverified.
+
+### `ryan-conrad-romance-routing` — remaining Ryan date choices (partial)
+
+The following complete the date choices in `Ryan_5_Required_ryan_romanced`; the remaining 30 rows are in the salmon and film decisions above. Each option keeps its own response and destination. Both English builds agree.
+
+| ID | Italian target |
+|---|---|
+| `5691478f` | Magari potremmo solo... fare una passeggiata? |
+| `c0a140f8` | Mi piace molto portare la gente sulla schiena. |
+| `51bcff68` | Ti andrebbe? |
+| `c78cf81f` | Sembra bellissimo! |
+| `985436e6` | Non sarebbe umiliante? |
+| `22053f7f` | Fantastico! |
+| `b4353808` | Mi è sempre piaciuto portare in giro i miei amici bipedi... |
+| `0e643191` | Allora è un appuntamento, non vedo l'ora. |
+| `3bc15278` | Oh! No, non lo sarebbe. È divertente! |
+| `adf1550f` | Porto sempre in giro gli altri miei amici bipedi. |
+| `17a05c96` | Sono sicuro che troveremo qualcosa da fare! Incontriamoci al molo! |
+| `a4a26529` | Oh sì, c'è un bel posto in centro che si chiama Wings. |
+| `3292625e` | Potrebbe andare bene! Ogni sera fanno degli ottimi spettacoli. |
+| `88c36bc7` | Potremmo andare lì, poi prendere una stanza d'albergo... Mmm. |
+| `1ef36cb0` | Allora è un appuntamento! |
+
+Positive: walking, riding and bar options retain their distinct follow-ups. Negative: do not make the player's concern Ryan's assertion or route the hotel suggestion to the film. Runtime execution and final fit remain untested.
+
+### `ryan-conrad-romance-routing` — shared Conrad visit-four dialogue (partial)
+
+The common entry and exit lines and the flag-error text remain tied to their original IDs. The source calls the player a kobold without establishing gender; the dialogue is phrased accordingly. The sole paired difference is the missing apostrophe in the Windows source `fa1a1e76`.
+
+| ID | Italian target |
+|---|---|
+| `8f64adc0` | Qualcosa è andato storto con le variabili! |
+| `1954aab7` | Aiuta gli sviluppatori, per favore.. |
+| `bac1ce29` | Conrad è stato con Ryan |
+| `2cf1c95e` | Il personaggio del giocatore è stato con Conrad |
+| `96a0c0c7` | Il personaggio del giocatore è stato con Ryan |
+| `0090c7b0` | Ehi Conrad! |
+| `8ebd442e` | Come mai sei così felice? |
+| `a2b4acea` | Ehi Conrad! |
+| `918d7820` | Ehi, grande coboldo. |
+| `07bd7f57` | Oggi hai sistemato le tue... |
+| `6c193ba9` | Squame in modo diverso? <size=70%><i>Si può fare...? </i><size=100%>Stai bene oggi. |
+| `fa293cde` | Grazie! Che cos'è tutta quella... poltiglia? |
+| `e3ed51d9` | Ah. Conrad, anche tu stai bene. |
+| `cf8c5f37` | Non si può... Ma grazie! |
+| `40783547` | Bacche. |
+| `d6483230` | ... |
+| `75dd56ae` | Comunque, |
+| `59bc5840` | Puoi dirlo forte! |
+| `5e91e0a7` | Ahah... Già. Non sono molto abituato a fare complimenti. |
+| `c8a1e7d0` | Mi serve solo un lavaggio veloce... Magari sarebbe bello usare anche il supporto. |
+| `2d2820b0` | Ah sì? |
+| `a2dc4ac0` | Certo! Vado ad aprirti il cancello. |
+| `bb1827c7` | Sì... Però solo se ti va! |
+| `01492e5e` | Sto cercando di non essere insistente. |
+| `97792929` | Oh, vado ad aprirti il cancello. |
+| `34ec4db7` | Grazie. |
+| `188d4359` | Grazie. |
+| `1fa0fbbe` | Ryan! L'ho conosciuto. |
+| `8990fcc9` | Fantastico! Che cos'è tutta quella... poltiglia? |
+| `e385b7f3` | Com'è andata? |
+| `59d4be6a` | Bacche. |
+| `cfe4b91d` | ... |
+| `75b5b084` | Grazie per aver messo me e Ryan in contatto. |
+| `4010d36d` | A dire il vero molto bene. |
+| `d620d41a` | Non avrei mai pensato che uno come lui fosse il mio tipo... |
+| `6c71dd83` | Dovrai raccontarmi tutto. |
+| `fa41daf4` | Lo farò. Mi serve solo un lavaggio veloce, e oggi non mi dispiacerebbe usare il supporto. |
+| `6b5c6564` | Devo <i>esercitarmi</i> per Ryan, se capisci cosa intendo. |
+| `fd6c6213` | Conrad! |
+| `8ed5a204` | Va bene, va bene. Vado ad aprirti il cancello. |
+| `18e5a573` | Cooosa? È bene assicurarsi di essere ben riscaldati! |
+| `3484ab9d` | Grazie! |
+| `0121c874` | Ehi, ehi. Meno male che è aperto. |
+| `9711cf03` | Vorrei una bella sciacquata. E non mi dispiacerebbe usare anche il supporto. |
+| `2d40c69a` | Oooh, d'accordo. |
+| `dbb68858` | Certo! Vado ad aprirti il cancello. |
+| `f7d786b6` | Che cos'è tutta quella... poltiglia? |
+| `bb70c1ed` | Eh eh. Già. |
+| `2a6d7e7d` | Vado ad aprirti il cancello. |
+| `bc5d790a` | Grazie! |
+| `4d868f2f` | Grazie! |
+| `61e781c1` | Bacche. |
+| `c272e55f` | ... |
+| `5442e228` | Oh. Va bene, vado ad aprirti il cancello. |
+| `4dac3d2b` | Qualcosa è andato storto con le variabili! |
+| `db9c3a5c` | Aiuta gli sviluppatori, per favore.. |
+| `61cd33c5` | Conrad è stato con Ryan |
+| `f7fd34b2` | Il personaggio del giocatore è stato con Conrad |
+| `66e08b22` | Il personaggio del giocatore è stato con Ryan |
+| `6c2a1901` | Dovresti essere tutto pulito! |
+| `fa1a1e76` | Credo sia tutto. |
+| `404b17ef` | Stai bene così pulito! |
+| `d67b1098` | <i>Mi piace spruzzarti con l'acqua. |
+| `4766af08` | Bene! Dovrebbe essere tutto. |
+| `d156a87f` | Credo di aver lavato ogni punto. |
+| `e7353d24` | Ehi, ho una domanda per te. |
+| `71053a53` | Ah sì? |
+| `e01885c3` | Dimmi? |
+| `762882b4` | Ah sììì? |
+| `93a145d4` | Dimmi, omaccione? |
+| `059142a3` | Ah sì? |
+| `bfc04b3a` | Dimmi? |
+
+Positive: the three relationship flags remain distinguishable, and Conrad's own date with Ryan stays separate from the player's. Negative: do not alter flag identities, implied speaker or ordered rich-text markers. Feasibility derives from the bounded renderer probe; final execution and fit remain pending.
