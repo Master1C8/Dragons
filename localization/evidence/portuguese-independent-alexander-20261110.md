@@ -1,0 +1,7 @@
+# Brazilian Portuguese independent Alexander review
+
+Read 177 additional IDs from the bound 1,095-ID closure at `f6dec00`, including Alexander's ink visit, private washer exchange, six question topics and crest, college responses, and library date. Both stock programs agree on the 67 checked choices. The library acceptance leads to instruction 64 and the refusal to 75. The number-seven disbelief and appeal-to-authority replies retain their separate destinations, and the repeated contradiction and certainty remain identical.
+
+Three proposals await adjudication. In `c570a462`, use an unmarked expression of Alexander's favorite kobold to avoid assigning the player masculine agreement. In `836c079c`, use “Que falta de jeito a minha!” and keep both italic phrases quoted by the player's follow-up. In `0371fb9c`, use “Não vou ter tempo hoje à noite. Desculpe.” to retain being busy that evening along with the no-romance warning. The paired reader accepted all 1,947 IDs and both stock input validators passed the three-change candidate. The materialized difference is dialogue only and ordered tags remain intact.
+
+The exact receipt is `localization/work/pt-BR-independent-alexander-20261110.iTEmV0/review.json`, SHA-256 `0749c09562e2672d9e88ad11c36db5fe2011991d4ca119acfa5ca8e26da83193`. Candidate SHA-256 is `21146cf378dd7e2e375505afb1bea38a509e9971f6f1cc46c1d6cb8712ebddae`. The original closure now has 717 independently read IDs and 378 unread. The separate author adjudication, package and gameplay checks remain pending.
