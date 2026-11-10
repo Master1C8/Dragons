@@ -512,3 +512,7 @@ Both author layers bind all 45 paired `Ryan_5_Required_ryan_romanced` rows. Ryan
 ### Ryan fifth introduction — paired row-level author coverage
 
 Both author layers reviewed all 45 paired source rows. Branch flags distinguish the player, Ryan and Conrad; Ryan greets the player as a kobold and requests a wash, while dates involving Conrad vary by branch. Baking and date implications do not introduce new glossary entries. The size markup remains source data. Individual source-bound judgments and entry digests are in the row receipt. No independent reviewer is claimed.
+
+### Conrad fourth introduction — paired row-level author coverage
+
+Both author layers reviewed all 54 paired rows. The branch flags identify the relationships; Conrad calls the player a kobold, discusses Ryan or compliments the player depending on the branch, and requests a wash and sometimes the mount. The berry gloop does not establish a separate glossary concept. Markup and intimacy remain source-bound. No independent reviewer is claimed.

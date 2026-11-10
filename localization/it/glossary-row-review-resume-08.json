@@ -20983,6 +20983,573 @@
       ]
     },
     {
+      "group": "Conrad_Intro_4",
+      "orderedRowsSha256": "3ce16bfcff06090ce46f0f7b60edd8239fe46382b727d2b809a0e7931bee7c42",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-kobold",
+          "sourceEntrySha256": "655be37c2da8a22f692dbac404a5811b4227a465b44d7c6c85bc35af64f51df3",
+          "localeFieldsSha256": "8a1ac2a388a6bd2ea4517b1b90a93ddd9bb82862e39762fe8fcbf986a3f688b3"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:8f64adc0",
+          "pairedRowSha256": "6cea0b2757c0c692243ad050212ec2e5899d087c38cdb9bea68147b51a1c31b8",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Debug text reports invalid flags."
+        },
+        {
+          "id": "yarn:line:1954aab7",
+          "pairedRowSha256": "52aa76674a1719b9bad77db1be13c066ec1dff82fa12d584e38c03303a58d02c",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Debug text requests developer assistance."
+        },
+        {
+          "id": "yarn:line:bac1ce29",
+          "pairedRowSha256": "a7aea92d52087d7f77af4a55c935bf2b96800698772b26ce23cefcd1d5fddec4",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Debug flag: Conrad and Ryan hooked up."
+        },
+        {
+          "id": "yarn:line:2cf1c95e",
+          "pairedRowSha256": "edd335bf72d26a21f9653b4616bec57d8099b92a32a1de023720f7bcb250a462",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Debug flag: player and Conrad hooked up."
+        },
+        {
+          "id": "yarn:line:96a0c0c7",
+          "pairedRowSha256": "23b1c1b45f4bb9c27d6eb8b29628925e4f723cb9119fee9f834080e490e983bb",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Debug flag: player and Ryan hooked up."
+        },
+        {
+          "id": "yarn:line:0090c7b0",
+          "pairedRowSha256": "13d8af9252b1db4b6344a91d18967d61a4bb0a55aa860a6f31c177b6da4cd966",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Player greets Conrad."
+        },
+        {
+          "id": "yarn:line:8ebd442e",
+          "pairedRowSha256": "874931c9bbe8dfae876dd8d2d51d0d3fd5413f9f2ea315927065de2f5b53873f",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks why Conrad looks happy."
+        },
+        {
+          "id": "yarn:line:a2b4acea",
+          "pairedRowSha256": "d67f45a1ae75aa96937ea5dcc9155932d0546f091dbf44d681319d39aa42efe4",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate greeting names Conrad."
+        },
+        {
+          "id": "yarn:line:918d7820",
+          "pairedRowSha256": "021c9c086c38f98b8c385fa537030f630bcf7841c65bbe221d39465c303962dd",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-kobold"
+          ],
+          "decision": "Conrad greets the player as big kobold."
+        },
+        {
+          "id": "yarn:line:07bd7f57",
+          "pairedRowSha256": "6a00e7e9d012cbf2392ef42d805f1b508014955d0a502f8a624a2ab47e65c2fe",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad hesitantly starts a compliment."
+        },
+        {
+          "id": "yarn:line:6c193ba9",
+          "pairedRowSha256": "5772fc0698dde6bc644222588cb28923b6e11c3e43dc306e682f8cf07baa4172",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad compliments the player’s scales; preserve size and italic markup."
+        },
+        {
+          "id": "yarn:line:fa293cde",
+          "pairedRowSha256": "f6573f263c134253800697772cbf4b47b8c3f3823f7e5021728466f503066e49",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks about Conrad’s gloop."
+        },
+        {
+          "id": "yarn:line:e3ed51d9",
+          "pairedRowSha256": "fb9b67c3b85d2493432279858a127149ab7ae03c5ce81bf8f8672e9390f1d812",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Player returns Conrad’s compliment."
+        },
+        {
+          "id": "yarn:line:cf8c5f37",
+          "pairedRowSha256": "05c6084c9cfb90ea57698b52e355f3388bc7ed16a9c47ead3569427844ea5dc1",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player says changing scales is not a thing and thanks Conrad."
+        },
+        {
+          "id": "yarn:line:40783547",
+          "pairedRowSha256": "9a6b366abf29d48dfed382564e4dc90facef0ea3ebaf0b502fd92bd82941fb5b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad explains the gloop is berries."
+        },
+        {
+          "id": "yarn:line:d6483230",
+          "pairedRowSha256": "622c90f6168923e6f747ec75bdea2134ec1d7e3a8de18ca88262f07dfb7c1f28",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause."
+        },
+        {
+          "id": "yarn:line:75dd56ae",
+          "pairedRowSha256": "faebd695c47b2edfbc7bae68120f36e33b2ab4bb02d5b9992912b0b5a3caa362",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Transition."
+        },
+        {
+          "id": "yarn:line:59bc5840",
+          "pairedRowSha256": "face7177d463eb59dc06da0b74dc54e385a37044d3de8d8ce0ba981fba6124f0",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad confidently agrees that he looks good."
+        },
+        {
+          "id": "yarn:line:5e91e0a7",
+          "pairedRowSha256": "9a044cc951c712393e8c401e969832b723eed93ad92a41ec24662d772a02d3c6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad is not accustomed to compliments."
+        },
+        {
+          "id": "yarn:line:c8a1e7d0",
+          "pairedRowSha256": "f49f48580515287f1cd64e57e8f2b94b19fe71ebc2291df42549c62e7703fbc2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Conrad requests a quick wash and may want the mount."
+        },
+        {
+          "id": "yarn:line:2d2820b0",
+          "pairedRowSha256": "0c9dbecaaa8d2c133ae331ea80376927737efb1a689eab52478c43fdc5db82c4",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An interested response."
+        },
+        {
+          "id": "yarn:line:a2dc4ac0",
+          "pairedRowSha256": "e5ff9b5248888474812167df51c679cfb089bcbc717d354ce18df3d0a85b5ba9",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player offers to open the gate."
+        },
+        {
+          "id": "yarn:line:bb1827c7",
+          "pairedRowSha256": "ffa7b93a7dfb37b105dddc436a6c2c617c4bbb034f779a29b6c2aabeef23d01a",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says only if the player wants to."
+        },
+        {
+          "id": "yarn:line:01492e5e",
+          "pairedRowSha256": "3a22cb6bb7daf8805e1fde1c2a788e3cdf5c0dd5e720acdce004f21305899783",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad tries not to be pushy."
+        },
+        {
+          "id": "yarn:line:97792929",
+          "pairedRowSha256": "efe9d8742b7f1ff407675b8ff4c5ef4d3c731cad77ba9cfa2690cc7119281ab5",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player offers to open the gate."
+        },
+        {
+          "id": "yarn:line:34ec4db7",
+          "pairedRowSha256": "eea74d57623df36cf2a85cddb80a1500c2c706d6676e87ec3bfd77e96fd8f613",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Thanks."
+        },
+        {
+          "id": "yarn:line:188d4359",
+          "pairedRowSha256": "9a7e6314f3d889d5f7ee302d0a2256e8588a2632fc93a613b6202e6e4464f523",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Alternate thanks."
+        },
+        {
+          "id": "yarn:line:1fa0fbbe",
+          "pairedRowSha256": "c2cf00983974fe25a03fb4ff3de61ca8ecfc24c7e755dce3b6e760cacfd65e11",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says he met Ryan."
+        },
+        {
+          "id": "yarn:line:8990fcc9",
+          "pairedRowSha256": "f2150608424e83fa4a7ae1063fd640e1d658d813e6f9531c8a89c5f40f56ad46",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks about Conrad’s gloop."
+        },
+        {
+          "id": "yarn:line:e385b7f3",
+          "pairedRowSha256": "4358e04f3b7ca7ca268c6de58efdc47aaf9d30fbffdee719354d4106c144d02f",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks how the meeting went."
+        },
+        {
+          "id": "yarn:line:59d4be6a",
+          "pairedRowSha256": "308c1ccf637a43a4b9b04c70aaeec655e9825b7425f64256b23651e9b0542eb2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad explains the gloop is berries."
+        },
+        {
+          "id": "yarn:line:cfe4b91d",
+          "pairedRowSha256": "d92fed56e122f39115fe8733a0aa054f32b651b764022c052e64d0efddc6429c",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause."
+        },
+        {
+          "id": "yarn:line:75b5b084",
+          "pairedRowSha256": "2dfe458ace843b8992e66754e68a88668fff367b40b77fbce321981c8d48c3f6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad thanks player for connecting him and Ryan."
+        },
+        {
+          "id": "yarn:line:4010d36d",
+          "pairedRowSha256": "1f4d36939cfa99e60f571f55d83ab55994aeef61bd1d358fbe083e952b2e63aa",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says the meeting went well."
+        },
+        {
+          "id": "yarn:line:d620d41a",
+          "pairedRowSha256": "a0aad8a3a99e450cdb5b7a676587af383712d40e2d36662736968194a77187f4",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad did not expect Ryan to be his type."
+        },
+        {
+          "id": "yarn:line:6c71dd83",
+          "pairedRowSha256": "85665431411bef8a6cd7433e18d77556ea4c0af0cecb77f896b43b8f0c203e32",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player wants to hear the details."
+        },
+        {
+          "id": "yarn:line:fa41daf4",
+          "pairedRowSha256": "71a39982c06d6e6fd3f21163cd9e396ef54088856755c7574f7ade1cf5b45f67",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Conrad requests a wash and the mount."
+        },
+        {
+          "id": "yarn:line:6b5c6564",
+          "pairedRowSha256": "ea22542a6e9fce3bbd62d6c9d6bd28ad60cf1c56b3354fa5eca45b59b7dd6d88",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad implies sexual practice for Ryan; preserve emphasis."
+        },
+        {
+          "id": "yarn:line:fd6c6213",
+          "pairedRowSha256": "ff3597532c0975423ca741f3d48a7ec785da1c619ea3151efab092446d3655f5",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Player exclaims Conrad’s name."
+        },
+        {
+          "id": "yarn:line:8ed5a204",
+          "pairedRowSha256": "ff91e8864120b8f45d635bab0a84e534e727d0a0467d2795ea1b396a9d954665",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player agrees to open the gate."
+        },
+        {
+          "id": "yarn:line:18e5a573",
+          "pairedRowSha256": "4acb9228a12ce28fae670dfa5dae8c7fb46b765193e64934dc9c496d933479d9",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad jokes about warming up."
+        },
+        {
+          "id": "yarn:line:3484ab9d",
+          "pairedRowSha256": "a3e9d6351a9578cfd60a5692d5227b87c1634e4eedd48f51fc3ad742a92739ab",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Thanks."
+        },
+        {
+          "id": "yarn:line:0121c874",
+          "pairedRowSha256": "077d80c8cd98d84786a29aff5480c1b8a0079c01d7668fe595214732626e7333",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad is glad the business is open."
+        },
+        {
+          "id": "yarn:line:9711cf03",
+          "pairedRowSha256": "c1caba4e990a781ea93b097043d88362498467590649f03bb03952b14c236795",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Conrad requests a hose-down and the mount."
+        },
+        {
+          "id": "yarn:line:2d40c69a",
+          "pairedRowSha256": "9f78c4bd477a4294537861c726814c3431f8079ab4bd5e3fc65e7fd5ca8d5493",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Agreeing response."
+        },
+        {
+          "id": "yarn:line:dbb68858",
+          "pairedRowSha256": "a412dd8ea155e10155afb5eca021bc49912da06532859f323479c1b5dfcc9cfb",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player offers to open the gate."
+        },
+        {
+          "id": "yarn:line:f7d786b6",
+          "pairedRowSha256": "b65c1ce2d2acf9a80a76f66644860cc876cd96608ad892750b1cc23dc7d0cebf",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks about the gloop."
+        },
+        {
+          "id": "yarn:line:bb70c1ed",
+          "pairedRowSha256": "7c92127c15fd0c7b5cb155a68c7776ab339b8cce7707919dd1a887206cbe9041",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Brief agreement."
+        },
+        {
+          "id": "yarn:line:2a6d7e7d",
+          "pairedRowSha256": "0af44c6c968a7cc39bb39c2f63a21b9bfe17db2a8b085fc206844fd945b2e586",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player offers to open the gate."
+        },
+        {
+          "id": "yarn:line:bc5d790a",
+          "pairedRowSha256": "93e625b0b5200137199f13cb76180a14c719f1b6d28e3dd9cc934d55a3c77d7d",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Thanks."
+        },
+        {
+          "id": "yarn:line:4d868f2f",
+          "pairedRowSha256": "c9fccebe1c6be257a512cc707c6fee923e29169c941afd50ec277a922d758435",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Alternate thanks."
+        },
+        {
+          "id": "yarn:line:61e781c1",
+          "pairedRowSha256": "1748051c1032ed77106f776d58c0d467e668ace2cfb0c9490e61d2625eabeea1",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad explains the gloop is berries."
+        },
+        {
+          "id": "yarn:line:c272e55f",
+          "pairedRowSha256": "2626f68f125a1949ef4f076ae77b7434f9eecc04768bf1c98077a5a1a92d7b9b",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause."
+        },
+        {
+          "id": "yarn:line:5442e228",
+          "pairedRowSha256": "fd04cc5c985d5dc940b74f9a8ed9e0bfc312c5650e11ff4755cc8dd243f35a5a",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player offers to open the gate after hearing the answer."
+        }
+      ]
+    },
+    {
       "group": "UI/level0",
       "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
       "applicableEntries": [],
