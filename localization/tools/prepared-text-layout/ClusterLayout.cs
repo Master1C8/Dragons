@@ -70,6 +70,30 @@ public static class ClusterLayout
         return origins;
     }
 
+    // Translate a logical reveal position to the last complete glyph cluster.
+    public static int GlyphRevealLimit(
+        ReadOnlySpan<int> sourceEnds, ReadOnlySpan<int> glyphEnds, int logicalVisible)
+    {
+        if (sourceEnds.Length != glyphEnds.Length)
+            throw new ArgumentException("Expected parallel source and glyph cluster boundaries");
+
+        var previousSource = 0;
+        var previousGlyph = 0;
+        var visible = 0;
+        for (var i = 0; i < sourceEnds.Length; i++)
+        {
+            var source = sourceEnds[i];
+            var glyph = glyphEnds[i];
+            if (source <= previousSource || glyph <= previousGlyph)
+                throw new ArgumentException("Expected increasing source and glyph cluster boundaries");
+            if (source <= logicalVisible)
+                visible = glyph;
+            previousSource = source;
+            previousGlyph = glyph;
+        }
+        return visible;
+    }
+
     // TMP's stock counter is in generated character indices. Hold that counter
     // at the previous whole cluster until every glyph in the next one can show.
     public static int RevealLimit(ReadOnlySpan<int> clusterEnds, int requested)

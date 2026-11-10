@@ -155,6 +155,16 @@ world-space renderers. The prototype has yet to be connected at those
 points. These checks did not exercise the game, the actual Yarn reveal
 sequence, dynamic values or the package builders.
 
+The reveal metadata adds parallel logical and glyph cluster boundaries. The
+offline controls cover contraction, expansion, an unfinished cluster and
+skip-to-end. Logical and glyph boundaries differ in 1,616 Arabic and 1,604
+Persian plans. The pinned Yarn typewriter uses
+`GetTextInfo(line.Text).characterCount` for its action-markup callback loop,
+so changing only the TMP mesh would shift those callbacks. Preserve the
+logical count for callbacks and translate the reveal position separately.
+The updated report in `staged-rtl-reveal/result.json` has SHA-256
+`585f43eb80e2263bece688be33868aeef9778c26e079f4a2216ac7cbcfd4f09c`.
+
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock
 512 × 512 multi-atlas chain admitted 1,536 distinct additional

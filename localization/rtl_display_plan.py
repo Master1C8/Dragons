@@ -93,7 +93,7 @@ def prepare(text, tags_pattern, bidi, augmenter):
             levels.append(1)
         if paragraph:
             levels.extend(bidi.levels(paragraph))
-    output, offsets, ends, cluster_levels, reset = [], [], [], [], []
+    output, offsets, ends, source_ends, cluster_levels, reset = [], [], [], [], [], []
     output_length = 0
 
     def append(part):
@@ -122,9 +122,11 @@ def prepare(text, tags_pattern, bidi, augmenter):
             offsets.extend(range(output_length, output_length + len(display)))
             append(display)
             ends.append(len(offsets))
+            source_ends.append(end)
             cluster_levels.append(level)
             reset.append(all(kind in {'WS', 'BN', 'B'} for kind in classes[first:end]))
         index = stop
     append(''.join(tags.get(len(plain), ())))
     return {'logical': text, 'prepared': ''.join(output), 'offsets': offsets,
-            'clusterEnds': ends, 'levels': cluster_levels, 'trailingReset': reset}
+            'clusterEnds': ends, 'sourceClusterEnds': source_ends,
+            'levels': cluster_levels, 'trailingReset': reset}
