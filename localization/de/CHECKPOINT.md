@@ -9,12 +9,16 @@
 | source | **Passed for the pinned v42 inputs.** The accepted shared source-readiness evidence and reconciliation at `15c330ef17ca031b547dae23af30f7315faa6d3e` supersede the provisional `bfabe4d` boundary. See `localization/evidence/source-readiness-v42-20261110.md`. |
 | glossary | **Self-review layers complete under the owner’s current instruction.** The two earlier 27-entry author layers match every per-entry digest; two separate affected-closure author reads cover the anonymous role and related rules. See `glossary-review.md` for evidence, source-context adjudication and limitations. No independent review is claimed. The final game-text independent audit remains required. |
 | translate-edit | **Draft complete: 1,947/1,947 IDs authored and self-edited.** All 246 direct indexed authoring rows are present and the adaptation entry review is complete; semantic and runtime closure remain pending. See `special-scenes.md` and `special-scene-reconciliation.json`. No source-passthrough counts as translation. |
-| editorial | Author semantic self-review in progress: 366/1,947 source-bound rows reviewed; complete semantic closure and independent diff/delta audit remain pending. |
+| editorial | Author semantic self-review in progress: 673/1,947 source-bound rows reviewed; complete semantic closure and independent diff/delta audit remain pending. |
 | resources | Final corpus-bound glyph coverage and fit pending. Textures with text are excluded and must remain untouched. |
 | package | Not built; macOS app and Windows ZIP read-back pending. |
 | runtime / visual | Representative synthetic German checks passed on macOS and Windows CrossOver; final corpus and package runtime, complete visual review and native Windows remain unrun. Original owner game processes must not be operated or stopped. |
 | screenshot-upload / screenshot-review | Not run; upload is not authorized. |
 | delivery | Incomplete. No installation, release or publication. |
+
+## 2026-11-10 semantic author review: Alexander and Conrad continuations
+
+Reviewed worklist rows 366–672 (307 IDs) against both builds’ matching English source and the German draft. Coverage and exact IDs are recorded in `receipts/semantic-self-review-366-672.json`. The crest question preserves the ambiguity resolved by the later family-crest explanation. The approved `der große C` nickname keeps its inflection, echo, alternative reply and abandonment. No text changes were made in this batch. Together with the earlier review, author semantic coverage is 673/1,947 rows; the remaining 1,274 rows, cross-group closure and independent review remain open.
 
 ## 2026-11-10 semantic author review: first Alexander groups
 
@@ -43,7 +47,7 @@ The pinned `verify_authored_yarn.py` passed; both stock builds' partial Yarn ass
 
 ## Resume
 
-Use the accepted source-readiness receipt and the 27-case reconciliation. Continue semantic author self-review from zero-based worklist row 366, read back both builds after text corrections, and maintain distinct editorial, package and runtime statuses. The author self-review layers and owner-approved nickname remain valid; the final independent game-text audit is pending. Coordinate large assets and isolated runtime with the exact cooperative runtime lock. Acquire the canonical Git lock before staging, and hold it through full index review, commit and committed-tree verification.
+Use the accepted source-readiness receipt and the 27-case reconciliation. Continue semantic author self-review from zero-based worklist row 673, read back both builds after text corrections, and maintain distinct editorial, package and runtime statuses. The author self-review layers and owner-approved nickname remain valid; the final independent game-text audit is pending. Coordinate large assets and isolated runtime with the exact cooperative runtime lock. Acquire the canonical Git lock before staging, and hold it through full index review, commit and committed-tree verification.
 
 ## 2026-11-10 remaining dialogue interactions
 
