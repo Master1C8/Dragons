@@ -526,3 +526,7 @@ Author compared 127 IDs in `semantic-audit-other-interactions.json`; cumulative 
 ### Semantic audit continuation: interface and initial-pass coverage
 
 Author compared the remaining 123 IDs in `semantic-audit-interface.json`; the initial source-to-target author pass covers 1,947 distinct IDs. Findings in `semantic-audit-progress.md` remain open until disposition and correction; reading coverage is not acceptance. Translation SHA-256 remains `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`. Independent game-text audit, current-payload runtime, native Windows, and visual acceptance remain open.
+
+### Semantic corrections: Ryan scenes
+
+Eight author corrections and their source-bound contexts are recorded in `semantic-corrections-ryan.md` and `.json`; this resolves the Ryan findings listed there, without independent acceptance. Current translation SHA-256 `9df974fb2b9d952768cd342c32d6252131b891b78aac342b5c43d90734641aa8`; structural guard accepts 1,947 IDs (macOS 1,923, Windows 1,941). Continue adjudicating remaining findings in `semantic-audit-progress.md`, then review delta dependency closure and mandatory regression. V2 artifacts remain bound to the earlier payload; current package/runtime/visual, native Windows and independent game-text audit are open. Do not open the separate v2 visual queue.

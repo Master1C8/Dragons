@@ -1,0 +1,252 @@
+{
+  "locale": "pl",
+  "beforeSha256": "ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f",
+  "afterSha256": "9df974fb2b9d952768cd342c32d6252131b891b78aac342b5c43d90734641aa8",
+  "pairedSourceSha256": "bd2407752c57b0e92d136f123604ebda35d8109d8ae92cd6a54a99ea4945d199",
+  "authorDisposition": "self-review; independent game-text audit pending",
+  "changes": [
+    {
+      "id": "yarn:line:dee4a32d",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:dee4a32d",
+            "source": "Yeah! Conrad, he's adorable. Though he'd hate I said that.",
+            "sourceIds": [
+              "yarn:line:dee4a32d"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:dee4a32d",
+            "source": "Yeah! Conrad, he's adorable. Though he'd hate I said that.",
+            "sourceIds": [
+              "yarn:line:dee4a32d"
+            ]
+          }
+        },
+        "group": "ryan_food_dialogue",
+        "id": "yarn:line:dee4a32d",
+        "instructionIndex": 240,
+        "kind": "option",
+        "preserveExactPrefix": null
+      },
+      "before": "Tak! Conrad, jest przeuroczy. Chociaż nie znosi, kiedy tak mówię.",
+      "after": "Tak! Conrad, jest przeuroczy. Nie spodobałoby mu się, że tak o nim mówię."
+    },
+    {
+      "id": "yarn:line:ca480eed",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:ca480eed",
+            "source": "I'll get you two in contact then.",
+            "sourceIds": [
+              "yarn:line:ca480eed"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:ca480eed",
+            "source": "I'll get you two in contact then.",
+            "sourceIds": [
+              "yarn:line:ca480eed"
+            ]
+          }
+        },
+        "group": "ryan_food_dialogue",
+        "id": "yarn:line:ca480eed",
+        "instructionIndex": 162,
+        "kind": "option",
+        "preserveExactPrefix": null
+      },
+      "before": "W takim razie was skontaktuję.",
+      "after": "W takim razie skontaktuję was ze sobą."
+    },
+    {
+      "id": "yarn:line:e6290003",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:e6290003",
+            "source": "I'm so excited. I'll get you two in contact!",
+            "sourceIds": [
+              "yarn:line:e6290003"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:e6290003",
+            "source": "I'm so excited. I'll get you two in contact!",
+            "sourceIds": [
+              "yarn:line:e6290003"
+            ]
+          }
+        },
+        "group": "ryan_food_dialogue",
+        "id": "yarn:line:e6290003",
+        "instructionIndex": 163,
+        "kind": "option",
+        "preserveExactPrefix": null
+      },
+      "before": "Ale się cieszę. Skontaktuję was!",
+      "after": "Ale się cieszę. Skontaktuję was ze sobą!"
+    },
+    {
+      "id": "yarn:line:9be63f47",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:9be63f47",
+            "source": "Bleh. Thank you for grabbing that.",
+            "sourceIds": [
+              "yarn:line:9be63f47"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:9be63f47",
+            "source": "Bleh. Thank you for grabbing that.",
+            "sourceIds": [
+              "yarn:line:9be63f47"
+            ]
+          }
+        },
+        "group": "Ryan_grab_basket",
+        "id": "yarn:line:9be63f47",
+        "instructionIndex": 4,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Ble. Dzięki, że to podnosisz.",
+      "after": "Ble. Dzięki za podniesienie tego."
+    },
+    {
+      "id": "yarn:line:7d9ffc48",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:7d9ffc48",
+            "source": "But nothing beats a large gulp!",
+            "sourceIds": [
+              "yarn:line:7d9ffc48"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:7d9ffc48",
+            "source": "But nothing beats a large gulp!",
+            "sourceIds": [
+              "yarn:line:7d9ffc48"
+            ]
+          }
+        },
+        "group": "Ryan_ham_dialog",
+        "id": "yarn:line:7d9ffc48",
+        "instructionIndex": 42,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Ale nic nie przebije wielkiego kęsa!",
+      "after": "Ale nic nie przebije połknięcia wielkiego kawałka naraz!"
+    },
+    {
+      "id": "yarn:line:189d999e",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:189d999e",
+            "source": "Thank you for listening.",
+            "sourceIds": [
+              "yarn:line:189d999e"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:189d999e",
+            "source": "Thank you for listening.",
+            "sourceIds": [
+              "yarn:line:189d999e"
+            ]
+          }
+        },
+        "group": "Ryan_2_Outro",
+        "id": "yarn:line:189d999e",
+        "instructionIndex": 93,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Dziękuję, że mnie wysłuchujesz.",
+      "after": "Dziękuję za wysłuchanie."
+    },
+    {
+      "id": "yarn:line:9883786d",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:9883786d",
+            "source": "I booked the night.",
+            "sourceIds": [
+              "yarn:line:9883786d"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:9883786d",
+            "source": "I booked the night.",
+            "sourceIds": [
+              "yarn:line:9883786d"
+            ]
+          }
+        },
+        "group": "Ryan_SexScene_Cum",
+        "id": "yarn:line:9883786d",
+        "instructionIndex": 81,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Mam zarezerwowany pokój na noc.",
+      "after": "Mam rezerwację na całą noc."
+    },
+    {
+      "id": "yarn:line:fbe86c06",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:fbe86c06",
+            "source": "Conrad: Damn right!",
+            "sourceIds": [
+              "yarn:line:fbe86c06"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:fbe86c06",
+            "source": "Conrad: Damn right!",
+            "sourceIds": [
+              "yarn:line:fbe86c06"
+            ]
+          }
+        },
+        "group": "Ryan_Conrad_SexScene_Cum",
+        "id": "yarn:line:fbe86c06",
+        "instructionIndex": 65,
+        "kind": "line",
+        "preserveExactPrefix": {
+          "macos": "Conrad: ",
+          "windows": "Conrad: "
+        }
+      },
+      "before": "Conrad: Cholernie słusznie!",
+      "after": "Conrad: A jakże!"
+    }
+  ]
+}
