@@ -317,3 +317,9 @@ Author self-reviewed 35 IDs in `Conrad_required_2`, preserving the response choi
 Author self-reviewed 45 IDs in `Ryan_5_intro`, preserving the three relationship flags, distinct branches, markup and gender-neutral player references. This is author self-review, not independent audit.
 
 `translation.json` now has **1,193 / 1,947 IDs**, SHA-256 `0db775c8ec445d1b080f5613941aa4aed0b610695a2289057a9dd6bd4a75b5e7`. `resume-01/add-ryan-five-intro.py` and `resume-01/ryan-five-intro-map.py` validate the preceding draft and paired readers; macOS accepts 1,193 and Windows 1,187 bindings. The complete guard reports 754 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Ryan fifth visit: Conrad relationship branches — continuation
+
+Author self-reviewed 39 IDs in the Conrad romance and Conrad/Ryan relationship branches of `Ryan_5_Required`, retaining the distinct relationships, dialogue options and source markup. This is author self-review, not independent audit.
+
+`translation.json` now has **1,232 / 1,947 IDs**, SHA-256 `ca929078fca871fb5c68cc56bd1f86062444ff06e93a5ee99c0a27fbee8ecab8`. `resume-01/add-ryan-five-relationships.py` and `resume-01/ryan-five-relationships-map.py` validate the preceding draft and paired readers; macOS accepts 1,232 and Windows 1,226 bindings. The complete guard reports 715 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
