@@ -70,3 +70,7 @@ Separate status: editorial authoring in progress; independent game-text audit no
 ### Typography batch
 
 Three further cases are author self-reviewed with exact target wording, adaptation contracts and positive/negative acceptance scenarios in [special-typography.md](special-typography.md). Four additional IDs passed per-platform source and object encode/parse checks; negative staged-region checks rejected the intended defects. Current total: 24/1,947 authored IDs and 4/27 recorded special decisions. The 23 remaining cases still block ordinary batches. Package, final runtime/visual and independent editorial audit remain pending.
+
+### Alexander dialogue batch
+
+Four more special decisions and 33 direct IDs are author self-reviewed in [special-alexander-dialogue.md](special-alexander-dialogue.md), with both stock-source object read-backs and their hashes. The build-specific typo is bound to separate platform fields. Current total: 57/1,947 authored IDs and 8/27 special decisions; the remaining 19 decisions precede ordinary batches. This is not an independent audit, a finished package, or final runtime/visual acceptance.
