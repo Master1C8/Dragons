@@ -45,3 +45,7 @@ Author self-reviewed 39 IDs across the exploded and muddy Ryan arrivals, departu
 ## Conrad alternate visit and phone tutorial
 
 Author self-reviewed 35 IDs in the injured and early Conrad scenes and phone tutorial, retaining distinct wash-state responses, equipment terminology and source emphasis. Two ellipses are intentional. Both stock source readers and object encode/parse passed: macOS SHA-256 `64d2405d14f866ce9bc5dd659bbf1062b1e32705eb5670372042daae3de89b08`; Windows `94720f75b3a0fc474ee0731ebd2f33123a75ceead350fd96cdc7769406b47b92`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary11/`.
+
+## Ryan date
+
+Author self-reviewed 19 IDs in the date introduction, conversation and idle, retaining the reference to Conrad and the dragon eating exchange. Both stock source readers and object encode/parse passed: macOS SHA-256 `c73f2560e235e7fcfe68a812d974d0f811f6902c2ed6c34caf90014eacb0342c`; Windows `761705857af7c56b6b4aa5b20cb09bb6e40b6162baa5ad9839000836dc717822`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary12/`.
