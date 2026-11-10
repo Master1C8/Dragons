@@ -2177,7 +2177,7 @@
         "yarn:line:0a4a28c0",
         "yarn:line:a9df4c5e"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_Nag1",
@@ -2248,7 +2248,7 @@
         "yarn:line:1706e86d",
         "yarn:line:8136ef1a"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_Soapy",
@@ -2279,7 +2279,7 @@
         "yarn:line:249500dc",
         "yarn:line:b588bf4c"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Ryan_1_PhoneTutorial",
@@ -2302,7 +2302,7 @@
         "yarn:line:a327b5f9",
         "yarn:line:3517b28e"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Ryan_1_intro",
@@ -2327,7 +2327,7 @@
         "yarn:line:9b26ac5f",
         "yarn:line:0d16ab28"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Ryan_1_nag",
@@ -2337,7 +2337,7 @@
         "yarn:line:71b651dd",
         "yarn:line:e78656aa"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Ryan_1_required",
@@ -2354,7 +2354,7 @@
         "yarn:line:649e8eb3",
         "yarn:line:decf872a"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Ryan_2_Outro",
