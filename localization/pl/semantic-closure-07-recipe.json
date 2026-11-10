@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "beforeSha256": "76ae3b1feed11c7667aa6be5053ebf25f73853208162a37505e67a85c606e75c",
+  "afterSha256": "d848a5a5087f7ffa4c4688e3a465016d8efe65806823ab5cd684e7bccb9402a4",
+  "edits": {
+    "yarn:line:5788e15c": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_finished_jerkoff_3",
+          "firstInstruction": 21,
+          "lastInstruction": 43
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:c6955ecc",
+        "yarn:line:50a559bb",
+        "yarn:line:5788e15c",
+        "yarn:line:c1b8e62b",
+        "yarn:line:3063100e",
+        "yarn:line:a6531779",
+        "yarn:line:1c021ee0"
+      ],
+      "reason": "Recheck both choice destinations, the neutral professional-experience echo, pause and delayed punchline on both stock bindings."
+    },
+    "yarn:line:3063100e": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_finished_jerkoff_3",
+          "firstInstruction": 21,
+          "lastInstruction": 43
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [
+        "yarn:line:c6955ecc",
+        "yarn:line:50a559bb",
+        "yarn:line:5788e15c",
+        "yarn:line:c1b8e62b",
+        "yarn:line:3063100e",
+        "yarn:line:a6531779",
+        "yarn:line:1c021ee0"
+      ],
+      "reason": "Recheck both choice destinations, the neutral professional-experience echo, pause and delayed punchline on both stock bindings."
+    }
+  }
+}
