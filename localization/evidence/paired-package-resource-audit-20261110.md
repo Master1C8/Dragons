@@ -115,6 +115,29 @@ records the individual source roles and the equality check confirmed this
 same scope across all six lanes. There are zero unexplained missing authoring
 rows among these registered case references.
 
+## Rebuild from the shared translation file
+
+The current macOS and Windows package commands rebuilt the complete Russian
+control from `localization/ru/translation.json` using the pinned stock sources,
+v42 inventory, Yarn scope and managed/speaker tools. The rebuilt signed macOS
+app has the same 245 Data-file hashes as the earlier complete package. All
+12 Windows replacement payloads and their member names match byte for byte;
+the archive passes the CRC check. Both package receipts differ only in the
+`dialogue.json` input digest. On each platform the new materializer's 1,823
+key/source/target records are exactly equal to the earlier platform JSON map
+in Git. The object key order differs, which accounts for the receipt and
+Windows archive SHA-256 changes without any game payload difference.
+
+The two build logs and the exact comparison receipt are in
+`localization/work/paired-package-replay-20261110.bH9dWR/`.
+`comparison.json` has SHA-256
+`40f50a49d83b01159c5cf458d29ad09037f4acc5023d984dcdd0d85c5f442f7f`.
+The targeted assembler, paired input, Yarn scope and preservation, combined
+asset, component, non-Yarn, TextAsset and StreamingAssets tests passed, 33 in
+total. This reproduction exercises
+the complete v42 packaging path on the existing Russian control; it does
+not expand the extracted source families or settle runtime reachability.
+
 The source gate remains open. Exact file preservation covers untouched
 resources even when they contain engine metadata. It does not classify every
 player-visible source or prove the complete field-level preservation contract
@@ -123,3 +146,16 @@ runtime text consumers and additional resources against the approved visible
 scope, then verify that the parser-derived contract covers every protected
 occurrence. The v42 inventory and existing locale worklists retain their
 current fingerprints.
+
+## Concurrent commit ownership
+
+Write the owner marker only after a successful exclusive `mkdir` of the Git
+commit lock. A failed acquisition must leave the directory, marker and index
+untouched. Hold the same ownership through stage, complete index inspection,
+commit and committed-tree verification. The Polish command that produced
+`533c375` completed its intended tree verification before its cleanup failed
+because another worker wrote an owner marker after that worker's `mkdir`
+failed. The subsequent label identified the Portuguese session even though
+the acquisition had failed. Reconcile the exact original commit command,
+verified tree and live process identities before recovering that lock. A
+busy-lock regression must show the original owner bytes and index intact.

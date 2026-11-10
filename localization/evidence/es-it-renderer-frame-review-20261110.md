@@ -15,15 +15,21 @@ All four dialogue and choice frames passed their visual checks on macOS and
 Windows via CrossOver. The Windows Options frame shows all three expected
 Spanish labels and their marks. It has a failed layout finding at the lower
 viewport boundary where part of the stock-English `Target Framerate` label
-is visible. The Spanish CLI is checking the stock scroll behavior and whether
-the complete row can be reached. The current frame establishes neither the
-cause nor a translation-specific layout defect.
+is visible. Source-matched stock and Spanish CrossOver tests both reproduced
+that initial masked viewport state, then scrolled the real control to move
+the row fully inside the viewport. The two new after-scroll frames visibly
+show the entire label and its control. Both passed. The initial partial row
+is stock scrolling behavior and the Spanish layout finding is resolved.
 
-The macOS Options layout passed, but two labels had unresolved fine marks.
-Source-pixel crops from the unchanged 640×480 original also left the marks
-in `Pingüino ¿qué?` and `Año, sí` unresolved. A new offscreen render at a
-higher native render-target resolution is needed for those marks. Preserve
-the original layout evidence and the separate logged 40-point body control.
+The macOS Options layout passed, but the 640×480 frame and its source-pixel
+crops left marks in `Pingüino ¿qué?` and `Año, sí` unresolved. A new genuine
+1280×960 Unity offscreen render preserved the same three Spanish labels and
+passed layout. Its source-pixel crop verified `Año, sí`. A second, wider
+crop verified the complete `Pingüino ¿qué?`, including the beginning omitted
+by the first crop and all required marks. The initial layout and these
+targeted checks close the bounded Spanish renderer findings. Both new
+40-point dialogue frames also pass punctuation, accents and fit on macOS and
+CrossOver, independently of the already reviewed 64-point control.
 
 ## Italian
 
@@ -33,12 +39,13 @@ contamination checks, and their source-pixel crops resolved all four text
 and mark uncertainties. Together with the two previously reviewed 64-point
 body frames, this covers the 10 captured dialogue and choice surfaces.
 
-The macOS Options layout passed. All three native pixel crops still leave
-small accents unresolved. The Italian CLI is preparing a higher-resolution
-offscreen capture of the same settings labels and renderer, with the same
-layout and an isolated profile. The Polish probe used an actual 1920×1440
-Unity render target successfully without a visible or focused window. It is
-a proven route to adapt with the Spanish and Italian samples. See
+The macOS Options layout passed. The three native pixel crops left small
+accents unresolved. The Italian CLI captured the same settings labels in a
+new 1280×960 Unity offscreen render from the existing 640×480 batch-mode
+screen. The independent review verified all three labels, required marks,
+punctuation and fit. This closes the bounded Italian renderer finding and
+retains the earlier layout observation. The Polish probe used the same
+approach with a 1920×1440 render target and a hidden window. See
 [Polish renderer feasibility](../pl/CHECKPOINT.md#polish-renderer-feasibility-same-session-continuation) for its local evidence.
 
 ## Receipts
@@ -56,3 +63,9 @@ packages, native Windows and full-corpus visual acceptance are separate.
 | `it/packet-only-ledger.json` | `9228e0a7631033ad0d1cf8db441d7edffdddadde0fbb4d9f38330ec239b968c4` |
 | `it/accent-ledger.json` | `2eb36aa59201ea4d8edc9c161630bea8d9a8b503be7946f246a9c0028a447e94` |
 | `it/settings-accent-ledger.json` | `2b37a3889a4cdde1a93e8cbb39b32fe59eb86120d0f442e235a86447b427c06c` |
+| `es/scroll-ledger.json` | `a119b2ba91d630df459f5e38c726fc02a87eb0bcb4027110f2d61c093d9c13da` |
+| `es/body40-ledger.json` | `c7cec02c5827e31bf303826536348c0dcf7de8424d07ee769cf4bede7610d071` |
+| `it/high-options-ledger.json` | `de5c37ff2b191b3d0b88b92de5813dc8dced28ccd917415b979dfb3496e14bd4` |
+| `es/high-options-ledger.json` | `bc872cc9c2bc0f5c398dd09fa1fc62a95cccb8b41fcbee9af2b0980beca598ef` |
+| `es/high-accent-ledger.json` | `290072c026c1a9e1bca7d9c39db85af1a875a66d5413e0911785af0461d1cb24` |
+| `es/pinguino-wide-ledger.json` | `d4256de0b8ec2aa189ccd1f088c33f505e770d02febf86cd60d0c9ef737d1ee6` |
