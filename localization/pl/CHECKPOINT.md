@@ -209,3 +209,9 @@ Author self-reviewed 67 additional IDs across `Alexander_3_intro`, `Alexander_3_
 Author self-reviewed 67 additional English-bound IDs across `Alexander_4_intro`, `Alexander_4_required` and `Alexander_4_Outro`, including the rain choices, the standing device discussion and the reflective departure. Five previously settled Yip choices remain unchanged. The device uses the pinned glossary term `stojak`; author review is not independent game-text audit.
 
 `translation.json` now has **556 / 1,947 IDs**, SHA-256 `1472727e2c1a31b808e607ec9f2c07f270984a6d51af3c0efba5c608711ddf69`. `resume-01/add-alexander-fourth-visit.py` and `resume-01/fourth-visit-map.py` check the previous hash, source-bound paired format and each platform reader. macOS accepts 556 and Windows 550 bindings. The complete guard reports 1,391 missing IDs. Actual authored runtime, package builds, final visual fit and independent audit remain unrun. Continue with the next coherent English-source batch.
+
+### Alexander fifth visit: arrival and date conversation — continuation
+
+Author self-reviewed 47 additional source-bound IDs across `Alexander_5_intro` and `Alexander_5_required`, including diagnostic flag alternatives and both date conversations. Two pairs differ only by the English typo `your` / `you` and explicitly bind a shared Polish target. This is author review, not an independent game-text audit.
+
+`translation.json` now has **603 / 1,947 IDs**, SHA-256 `27a8f0dd81936421f62a071185b29e1991f95f59d620047594f0266a008edf5f`. `resume-01/add-alexander-fifth-visit-intro.py` and `resume-01/fifth-visit-intro-map.py` check the prior draft, English bindings, paired format and each platform reader. macOS accepts 603 and Windows 597 bindings; the complete guard reports 1,344 missing IDs. Complete packaging, authored runtime, final visual fit and independent audit remain unrun. Continue with the fifth visit's relationship choices and departure.
