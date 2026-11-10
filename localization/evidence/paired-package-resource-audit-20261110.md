@@ -309,6 +309,54 @@ consumer IL are in `localization/work/packaged-object-readback-20261110.975Giq/`
 | AnimationClip events | `867b162552b76fd42f9aa6ddd9fdb0872729b1c34be14dddf0faf86170943287` | `794ebb6467e1b3422eb5c8e98734b1671322c2017a6106fb0b6dcae2956d573b` |
 | Managed callback definitions | `a785bc820522965a774458bca162f0a44e2a2f91f6cd60945b712427eb222ffe` | `a785bc820522965a774458bca162f0a44e2a2f91f6cd60945b712427eb222ffe` |
 
+## Root streamed audio and graphics data
+
+`inventory_streamed_payloads.py` binds all 15 root `.resS` files and five
+`.resource` files per build to byte-round-tripped native Unity objects in
+the 17 pinned root assets. Each physical stream path is referenced. The
+extents do not overlap or leave unexplained bytes. The graphics files
+have 1,394 zero alignment bytes in each build, and the audio extents
+are contiguous. Every audio extent begins with the FSB5 signature. The
+five complete audio files have identical SHA-256 values across platforms.
+No VideoClip object occurs in these pinned assets.
+
+| Source object with an external stream | macOS | Windows |
+| --- | ---: | ---: |
+| AudioClip | 159 | 159 |
+| Texture2D | 632 | 625 |
+| Cubemap | 32 | 32 |
+| Mesh | 221 | 220 |
+
+The stream files contain encoded audio and graphics data. Their inventory
+adds no text-authoring IDs. The read uses serialized object metadata and
+stream boundaries. Image and sound contents stay encoded.
+
+```sh
+"$PYTHON" -B localization/inventory_streamed_payloads.py PLATFORM STOCK_DATA
+"$PYTHON" -B localization/inventory_streamed_payloads.py macos STOCK_DATA --candidate-data PACKAGE_DATA
+```
+
+The two source reports reproduced byte for byte. The revised Polish app
+contains all 20 original files byte for byte. Its Windows ZIP contains
+no replacement member for any of those 20 stock paths. Focused checks
+accept a zero alignment gap and a contiguous FSB5 extent, then reject a
+nonzero gap, an overlapping range and an unexpected audio signature.
+
+| Receipt | SHA-256 |
+| --- | --- |
+| macOS stock and revised Polish stream comparison | `016e8d425bb16cfe597ce683ca9174b36d0932b14ce63fc8f012586a85663291` |
+| Windows stock stream inventory | `8bb761dd0bf658baffca0586695623d04a168d425903afcc63cac46ef0be0d41` |
+| Revised Polish package stream receipt | `771fa4f0d47b9469c38593d59e67d672ffcc6b99db308ac0aaba3ba2605ed28f` |
+
+The receipts are in `localization/work/streamed-payloads-20261110.SjeClJ/`.
+The same folder records a selected managed-to-native boundary scan across
+the pinned Managed inventories. The game assembly has no P/Invoke or
+internal-call declaration. Its selected platform-facing calls cover the
+Steam overlay callback, Steam initialization and teardown, warning
+logging, the Steam ID used in save paths, and quitting the application.
+The macOS-only old save manager adds two calls to the same save-path route.
+The scan describes the managed boundary for these APIs.
+
 The source gate remains open. Exact file preservation covers untouched
 resources even when they contain engine metadata. The controls above now
 cover the object payload and metadata boundaries of all nine changed Unity
