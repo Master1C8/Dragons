@@ -296,3 +296,26 @@ The packaged fonts contain all 89 display code points in the draft.
 Live scene checks and independent editorial review remain pending.
 The verified receipts are under
 `localization/work/uk-ordinary-02-20261110.qDsJDf/reviewed/`.
+
+## Third ordinary batch
+
+Ryan's third visit adds all 50 source IDs across arrival, the wash
+conversation and farewell. The draft now covers 570 of 1,947 package
+IDs with SHA-256
+`49bc7abdc105e7e23fe4a4ecf6644bfe3f0d648219c3274102be61f4282b3621`.
+All 520 previous values are exact.
+
+The wording keeps Ryan as the person who ended the relationship,
+his account of mutual unhappiness and the distinction between
+offering support and responding to the new friendship. His
+farewell preserves the scales joke. The two platform spelling and
+punctuation variants share Ukrainian values explicitly, and the
+small italic hesitation stays in its original span.
+
+The two diagnostic packages each changed exactly 50 Yarn values
+from the preceding control. The remaining table text, metadata
+and compiled programs are exact. Both packaged fonts contain all
+89 display code points. The scope of this batch is source review
+and package verification. Its live scene checks and independent
+editorial review remain pending. Receipts are under
+`localization/work/uk-ordinary-03-20261110.PA4ejz/`.
