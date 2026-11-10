@@ -4707,19 +4707,169 @@
       "group": "Ryan_2_Outro",
       "orderedRowsSha256": "ce53357ab09b94af3cbbef8a53a8ab9b08a8990450df6d96a9956fa87f7194d7",
       "count": 38,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-dragon",
+        "dnw-wash",
+        "dnw-dragn-wash"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:afa450c0",
+          "yarn:line:8ead9ee9"
+        ],
+        "dnw-dragon": [
+          "yarn:line:c2f44537"
+        ],
+        "dnw-wash": [
+          "yarn:line:797ca540",
+          "yarn:line:ee954bd9"
+        ]
+      },
+      "referents": "Ryan identifies an unnamed girlfriend as a female dragon working from home; she yelled at Ryan after he returned muddy and told him to go to a wash. Ryan thinks another issue may be upsetting her: that remains his speculation. The player listens and opens the gate; the girlfriend is not the player.",
+      "layer1": "Source read: distinguish Ryan, the unnamed girlfriend and the player, and speculation from established events.",
+      "layer2": "Italian field read: the dragon and wash concepts fit; preserve girlfriend's she/her and do not assign player gender.",
+      "sourceIds": [
+        "yarn:line:797ca540",
+        "yarn:line:e8611ad0",
+        "yarn:line:7e511da7",
+        "yarn:line:83c55e2e",
+        "yarn:line:15f55959",
+        "yarn:line:399457b7",
+        "yarn:line:afa450c0",
+        "yarn:line:9a013329",
+        "yarn:line:0c31345e",
+        "yarn:line:20503ab0",
+        "yarn:line:b6603dc7",
+        "yarn:line:b14d8520",
+        "yarn:line:277d8257",
+        "yarn:line:54c44240",
+        "yarn:line:c2f44537",
+        "yarn:line:78a54cae",
+        "yarn:line:ee954bd9",
+        "yarn:line:4d002f47",
+        "yarn:line:db302830",
+        "yarn:line:90444b09",
+        "yarn:line:616121a9",
+        "yarn:line:f75126de",
+        "yarn:line:664c994e",
+        "yarn:line:f07c9e39",
+        "yarn:line:2a154290",
+        "yarn:line:bc2545e7",
+        "yarn:line:06744c7e",
+        "yarn:line:33d12f97",
+        "yarn:line:a5e128e0",
+        "yarn:line:1fb02179",
+        "yarn:line:8980260e",
+        "yarn:line:189d999e",
+        "yarn:line:8ead9ee9",
+        "yarn:line:fd145efe",
+        "yarn:line:6b245989",
+        "yarn:line:47455767",
+        "yarn:line:d1755010",
+        "yarn:line:72e0348e"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-second-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_2_intro",
       "orderedRowsSha256": "acfd43374d57e580a4f35ed14b4518d1c0dcbe33137cd8304aa3368b5bf71f27",
       "count": 20,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-yip",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:050efd1a"
+        ],
+        "dnw-yip": [
+          "yarn:line:296ff3f4",
+          "yarn:line:b8724c64"
+        ],
+        "dnw-wash": [
+          "yarn:line:2e424b13",
+          "yarn:line:f73ddfbc"
+        ]
+      },
+      "referents": "Ryan returns for another wash; an alternate explanation is a rough day and desire to get away from home. The player operates the gate. The noise is yip, not a separate person.",
+      "layer1": "Source read: alternate arrival explanations and their responses remain branch-specific.",
+      "layer2": "Italian field read: retain yip and the cleaning service; no field defect established.",
+      "sourceIds": [
+        "yarn:line:933efa6d",
+        "yarn:line:050efd1a",
+        "yarn:line:296ff3f4",
+        "yarn:line:bf5ff483",
+        "yarn:line:b8724c64",
+        "yarn:line:2e424b13",
+        "yarn:line:4d6cd625",
+        "yarn:line:db5cd152",
+        "yarn:line:610dd8cb",
+        "yarn:line:f73ddfbc",
+        "yarn:line:54a8bb22",
+        "yarn:line:78c9b5cc",
+        "yarn:line:c298bc55",
+        "yarn:line:eef9b2bb",
+        "yarn:line:7fe40d2b",
+        "yarn:line:e9d40a5c",
+        "yarn:line:0c5dcd3c",
+        "yarn:line:9a6dca4b",
+        "yarn:line:203cc3d2",
+        "yarn:line:b60cc4a5"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-second-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_2_required",
       "orderedRowsSha256": "6451cc1db3b541eb1bc660f7d62fa29740eba2c0a60f8420328d54d9ff619931",
       "count": 23,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:453ff9be"
+        ]
+      },
+      "referents": "Ryan asks the player when to end a difficult relationship. The player cannot decide for him; Ryan says he feels comfortable and not judged. The partner is not identified in this group.",
+      "layer1": "Source read: preserve uncertainty and do not invent an identified partner before the subsequent branch.",
+      "layer2": "Italian field read: retain the roles and the player's unspecified gender; no correction established.",
+      "sourceIds": [
+        "yarn:line:aa0dda7b",
+        "yarn:line:3c3ddd0c",
+        "yarn:line:866cd495",
+        "yarn:line:105cd3e2",
+        "yarn:line:81416c72",
+        "yarn:line:709a9a57",
+        "yarn:line:17716b05",
+        "yarn:line:e6aa9d20",
+        "yarn:line:5cfb94b9",
+        "yarn:line:cacb93ce",
+        "yarn:line:695ef750",
+        "yarn:line:ff6ef027",
+        "yarn:line:453ff9be",
+        "yarn:line:d422462e",
+        "yarn:line:d30ffec9",
+        "yarn:line:42124159",
+        "yarn:line:31ab814e",
+        "yarn:line:a79b8639",
+        "yarn:line:1dca8fa0",
+        "yarn:line:8bfa88d7",
+        "yarn:line:be5feb3e",
+        "yarn:line:286fec49",
+        "yarn:line:040ee2a7"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-second-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_3_Outro",

@@ -303,3 +303,7 @@ Two author self-review layers reconciled six previously read groups / 61 paired 
 ### Resume-08 Ryan first visit
 
 Two author self-review layers reconciled five previously read first-visit groups / 55 paired rows, including the phone tutorial. Complete scene hashes and members, selected concept anchors and contextual decisions are recorded in `glossary-scene-dependencies-resume-08.json`. The player identifies as the kobold and certified dragon washer; Ryan is the first customer in this visit. The franchise caller is a distinct role, and the business spelling and tutorial strings vary across builds at `line:a99c515c`, `line:4183ca7e`, `line:6acf7c77`, and `line:f676b9a8`. The vocal `Yip!` is not a character name. These selected anchors do not constitute exhaustive per-ID occurrence coverage, and the self-reviews are not independent acceptance.
+
+### Resume-08 Ryan second visit
+
+Two author self-review layers reconciled `Ryan_2_intro`, `Ryan_2_required` and `Ryan_2_Outro` (81 paired rows), bound to the complete ordered scene hashes and IDs in `glossary-scene-dependencies-resume-08.json`. Ryan's unnamed girlfriend is a distinct female dragon; the player is the listener. Ryan's guess that something else upsets her is presented as speculation, not established fact. The first scene's alternate arrival explanations remain branch-specific. Selected concept anchors and referent summaries are not exhaustive unions. These author self-reviews are not independent acceptance.
