@@ -11,8 +11,8 @@ replacement members matched the previously tested artifacts byte-for-byte.
 
 Ukrainian has entered ordinary translation. The
 [Ukrainian draft and checks](localization/uk/special-scenes.md) cover
-463 of 1,947 package IDs, including the 27 known special cases and
-the first Ryan visit and phone tutorials. Both normal builders passed
+520 of 1,947 package IDs, including the 27 known special cases,
+the first two Ryan visits and the phone tutorials. Both normal builders passed
 a control with English for the untouched IDs. Representative Ukrainian
 dialogue and choices passed the paired Unity fixture checks, with the
 remaining scene runs and final visual review tracked separately.

@@ -272,3 +272,27 @@ display code points used by the draft. This batch's checks are package
 read-back and source review. Its gameplay and final editorial checks
 remain pending. Receipts are under
 `localization/work/uk-ordinary-01-20261110.cvEBPG/`.
+
+## Second ordinary batch
+
+Ryan's second visit now covers all 81 source IDs across arrival,
+the wash conversation and farewell. The draft adds 57 values and
+reuses 24 special-scene values. The previous 463 values are exact.
+The 520-value draft SHA-256 is
+`fb210988d11568f666a22b9d64ca74136ad215032f5f20de72d4efd40d1fa3d9`.
+
+The optional farewell keeps the difference between giving Ryan
+space and offering to listen. His account retains his girlfriend,
+the mud and her reaction, and keeps the repeated player response
+at both original branch IDs. The arrival leaves the reference to
+markers as stated and preserves the visible pause. The final
+source review removed an added degree of muddiness and restored
+the explicit thanks for listening before the verified build.
+
+Both diagnostic packages match the authored values. Exactly 56
+Yarn values differ from the preceding control. The authored pause,
+the other table values and the two compiled programs are exact.
+The packaged fonts contain all 89 display code points in the draft.
+Live scene checks and independent editorial review remain pending.
+The verified receipts are under
+`localization/work/uk-ordinary-02-20261110.qDsJDf/reviewed/`.
