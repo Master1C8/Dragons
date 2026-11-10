@@ -388,3 +388,11 @@ Authored and self-edited 27 additional IDs in `Alexander_2_required`, `Alexander
 Translation SHA-256 `354f34c65b7af8a1c2b451838fb1d89d924ab8135d65e0c331e56b96ef461bc6`; run-owned `resume-09/alexander-followup-readback.json` SHA-256 `18adbd97517d4ba876d7a32df57ae1f05eef12024585fad0fc02c3aeac08bfc2`; `alexander-followup-yarn-receipt.json` SHA-256 `1ff4a24f877647a9d5977bed6a6b78a21447a1f5f3b5b9d0d1142939b873d9d2`; authored mapping `alexander-followup.json` SHA-256 `70bd2227f22da579c8f32b245a24cecdca6b5880d8b878fad3696425e05a17f8`. Reconstruct with the pinned `export_locale_worklist.py` paired stock data command and `verify_authored_yarn.py` command documented in the preceding batches, substituting these receipt paths and setting `TMPDIR` to `resume-09/tmp`.
 
 This is author self-review, not the independent game-text audit. Localized final packages and their runtime and visual checks remain unrun; the prior synthetic renderer evidence is separate.
+
+### Character scene endings (2026-11-10)
+
+Authored and self-edited 69 IDs across Alexander, Conrad and Ryan scene endings and the Alexander mount branch. Draft: 1,680 of 1,947 IDs, 267 blank. The paired exporter checked all 1,947 source rows and exactly 69 target changes on each platform, including ordered tags and placeholders. One source difference (`yarn:line:aeae4744`) is an apostrophe; both platform bindings are retained. The pinned Yarn reader passed and verified its reopened temporary objects; the Yarn film-title dash remains unchanged.
+
+Translation SHA-256 `9c9a65573ba033d273f42488255c149858fe52ec52d56504d230afcb6f3abb69`; run-owned `resume-09/scene-endings-readback.json` SHA-256 `22d496ae298aa264e4a81a1baa5734d983b1e35001cabbd48a3441e9c1fef020`; `scene-endings-yarn-receipt.json` SHA-256 `a9b93cfdd0c742fab11eb3a562b8ab29f0493eb2527f1784a5140fb3904ff4c5`; mapping `scene-endings.json` SHA-256 `45f6d7ed9fa98d2bf648ec90725ccc843f3b2ad37de05b564f09f194ebb89829`. Reconstruct with the paired exporter and pinned Yarn verifier commands in prior resume-09 batches, substituting these paths and `TMPDIR=resume-09/tmp`.
+
+This is author self-review only. Full semantic and independent audits, localized packages, and their runtime and visual checks remain pending.
