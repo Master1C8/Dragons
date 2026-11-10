@@ -484,3 +484,23 @@ are exact. Both packaged fonts cover all 94 display code points.
 Verified receipts are under
 `localization/work/uk-ordinary-11-20261110.oG6iEq/`.
 Live scene checks and independent editorial review remain pending.
+
+## Twelfth ordinary batch
+
+Alexander's fourth visit now covers all 72 dialogue and choice
+IDs across arrival, wash conversation and farewell. The draft
+adds 67 values and reuses five earlier special-scene values.
+All 1,156 earlier values are exact. The 1,223-value draft SHA-256 is
+`cf04d6f89a4d44c947c7a3b59849a9a8c3660bdaac129129b5c11f5f67c64060`.
+
+The rain reactions, the professor correction and Alexander's
+different degrees of hesitation remain distinct. The device
+uses the glossary term and Conrad remains the person who asked
+the player to order it.
+
+Each diagnostic package changed exactly 65 Yarn values. The two
+authored pauses, other table text, metadata and compiled programs
+are exact. Both packaged fonts cover all 94 display code points.
+Verified receipts are under
+`localization/work/uk-ordinary-12-20261110.onkSpB/`.
+Live scene checks and independent editorial review remain pending.
