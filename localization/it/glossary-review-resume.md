@@ -471,3 +471,10 @@ Two author self-review layers now have hash-bound per-row judgments for `Alexand
 ### Resume 09: Alexander third visit and colleague return
 
 The two author self-review layers now include row-level bound decisions for `Alexander_3_intro` (35 paired rows) and `Alexander_3_required` (21). In context Alexander’s private washers remain on his payroll (`yarn:line:c25d1c85`); the union is mentioned but is not a named person. His favorite kobold is the player. The washing service and the profession retain distinct glossary senses, and no personal name or identity is invented for the private workers. Igwyx returns to work (`yarn:line:8245fe2b`), which supports the earlier finding that the player’s death question is not a statement of fact. Source and target complete fields for the applicable character, wash and profession entries were inspected against these scenes. No new objective target-field defect was found in this bounded unit. The layers remain author self-reviews and are not independent.
+
+
+### Resume 09: Alexander fourth visit and concept corrections
+
+Both author self-review layers now bind per-row judgments for `Alexander_4_intro` (25 paired rows), `Alexander_4_required` (28), and `Alexander_4_Outro` (19). The Italian and source fields for player, Alexander, Conrad, kobold, dragon, Yip, mount and wash were checked against these scenes. The mount is a device Alexander asks to use, not an animal; Conrad is mentioned as having prompted its acquisition, not present by that mention. Yip has different branch-specific explanations (`yarn:line:5e181cf4`, `5935a413`, `a8ee5236`, `b12a3f31`); the long language-bridge explanation is a playful in-scene utterance, not a universally established glossary definition. No new objective target-field defect was established here.
+
+During this pass two earlier row-level concept omissions were corrected: `Alexander_1_intro` `yarn:line:a5979ac9` also uses alchemy, and `Alexander_3_intro` `yarn:line:61c8781b` and `c570a462` also use kobold. Their complete matching glossary entries are now bound in those receipts. These author self-reviews are not independent acceptance.
