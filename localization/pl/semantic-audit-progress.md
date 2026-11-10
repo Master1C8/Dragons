@@ -127,3 +127,9 @@ Compared the player/Conrad date plan, Conrad/Ryan date advice, player/Ryan discu
 Finding pending disposition: `yarn:line:3a5d5ca4` uses `potrafi podrażnić` for “he'd push some buttons”. In the conversation about the gryphon Conrad likes, the English idiom may suggest arousal or provoke irritation; inspect scene and idiomatic context before settling this ambiguity.
 
 Cumulative distinct IDs read: 970 / 1,947; 977 remain. Author review only; independent acceptance remains pending.
+
+## Conrad fourth visit: route-dependent farewells: 56 IDs read
+
+Compared all four farewell nodes against both English builds and Polish. The Conrad/Ryan route discusses a restaurant and club; the player/Conrad route discusses a date at Wings; the player/Ryan route asks about their plans. These remain distinct, and the playful awkwardness of “You are a big deal” is retained. Node names and source positions do not prove that the route flags or transitions actually execute; display fit and current-payload runtime remain unverified. No new finding.
+
+Cumulative distinct IDs read: 1,026 / 1,947; 921 remain. Author review only; independent acceptance remains pending.

@@ -486,3 +486,7 @@ Author compared 61 IDs in `semantic-audit-conrad-fourth-intro.json`; cumulative 
 ### Semantic audit continuation: Conrad fourth-visit conversations
 
 Author compared 45 IDs in `semantic-audit-conrad-fourth-conversations.json`; cumulative 970/1,947, 977 remain. One idiom requires context disposition; see `semantic-audit-progress.md`. Translation SHA-256 remains `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; live routes, visual and independent acceptance remain open.
+
+### Semantic audit continuation: Conrad fourth-visit farewells
+
+Author compared 56 IDs in `semantic-audit-conrad-fourth-outros.json`; cumulative 1,026/1,947, 921 remain. See `semantic-audit-progress.md` for route context and limits. Translation SHA-256 remains `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; independent audit, current-payload runtime and visual acceptance remain open.
