@@ -25,3 +25,7 @@ Author self-reviewed all 34 IDs in `Ryan_3_intro` and `Ryan_3_required`, preserv
 ## Ryan second and third departures
 
 Author self-reviewed all 54 IDs in `Ryan_2_Outro` and `Ryan_3_Outro`, including alternate replies, relationship context and the open size tag. Both stock source readers and object encode/parse passed: macOS SHA-256 `c1f13d0e4398c9d625bca16ccd7e1c65a2a87a139365a0d3b724021d2f3a2fff`; Windows `d0f65fbb529142379091ab43c6017c6edce9755878f7e011409f2cf8e2e89ca7`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary6/`.
+
+## Conrad first departure and second visit
+
+Author self-reviewed 35 IDs in `Conrad_Outro_1`, `Conrad_Intro_2` and `Conrad_Outro_2`, retaining his abrupt manner and the established equipment term. Both stock source readers and object encode/parse passed: macOS SHA-256 `72e5a0500bf6da3499c5c6a6d37e9d07b53b8fa83d81769381311402f5c6cf77`; Windows `0a72f48d189acbda959ca2c7659bc30bfc69d3517fe8b93bad9f235d9cc941d3`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary7/`.
