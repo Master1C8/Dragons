@@ -957,7 +957,7 @@
         "yarn:line:ffc401d1",
         "yarn:line:69f406a6"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_4_Cum",
@@ -1015,7 +1015,7 @@
         "yarn:line:df86a610",
         "yarn:line:f3e7a8fe"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_5_Cum",
@@ -1077,7 +1077,7 @@
         "yarn:line:c88244b5",
         "yarn:line:5eb243c2"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_5_intro_ryan_conrad_romanced",
@@ -1099,7 +1099,7 @@
         "yarn:line:7de2a81c",
         "yarn:line:5183a6f2"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_5_intro_ryan_romanced",
@@ -1120,7 +1120,7 @@
         "yarn:line:d66b7986",
         "yarn:line:405b7ef1"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_5_outro_conrad_romanced",
