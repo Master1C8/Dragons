@@ -354,6 +354,18 @@ Omit the file to export just the source, or pass `--draft-root` for legacy
 platform dialogue drafts. See the
 [verified worklist control](evidence/locale-workload-v42-20261110.md#paired-authoring-worklist).
 
+After editing a batch, check authored dialogue against the package reader
+on both platforms without copying the game:
+
+```sh
+"$PYTHON" localization/verify_authored_yarn.py "$locale_inputs" --locale "$locale" \
+  --inventory "$shared_inventory" --yarn-scope "$paired_yarn_scope"
+```
+
+Pass the shared translation JSON. Add `--complete` to require all
+authoring IDs. The report covers dialogue bindings, including speaker
+delimiters and markup. Other adapters and built packages have separate checks.
+
 ## Windows replacement package
 
 `build_windows_package.py` combines the audited Windows adapters in one
