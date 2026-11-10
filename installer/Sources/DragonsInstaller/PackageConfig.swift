@@ -140,8 +140,6 @@ struct ActiveLanguageSelection: Codable, Equatable, Sendable {
 }
 
 struct PackageConfig: Codable, Equatable, Sendable {
-    static let requiredSiteLocales: Set<String> = ["ar", "fa", "he", "th", "hi"]
-
     let anchors: [String: String]
     let deltaToolSHA256: String
     let schemaVersion: Int
@@ -179,8 +177,7 @@ struct PackageConfig: Codable, Equatable, Sendable {
         guard Set(files.map(\.path)).count == files.count else {
             throw PackageConfigError.duplicatePath
         }
-        guard languages.count == Self.requiredSiteLocales.count,
-              Set(languages.map(\.siteLocale)) == Self.requiredSiteLocales else {
+        guard !languages.isEmpty, Set(languages.map(\.siteLocale)).count == languages.count else {
             throw PackageConfigError.invalidLanguageSet
         }
         guard Set(languages.map(\.runtimeCode)).count == languages.count,
@@ -235,9 +232,9 @@ enum PackageConfigError: LocalizedError {
         case .missingValue: "A required value is missing from the package configuration."
         case .invalidPackageID: "The package identifier contains invalid characters."
         case .duplicatePath: "The package configuration contains a duplicate file path."
-        case .invalidLanguageSet: "The package must contain all five VN Revival locales."
+        case .invalidLanguageSet: "The package must contain unique locale codes."
         case .invalidLanguageMetadata: "The package contains invalid language codes or names."
-        case .incompleteLanguages: "Not all five package languages are ready for release."
+        case .incompleteLanguages: "The package includes languages without ready payloads."
         case .emptyReadyPayload: "A ready package cannot be empty."
         case .unsafePath(let path): "Unsafe path in the package: \(path)."
         case .invalidHash(let path): "Invalid file checksum: \(path)."

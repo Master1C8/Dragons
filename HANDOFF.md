@@ -962,8 +962,10 @@ Speaker source analysis now binds all 24 implicit-colon candidates, ten serializ
 
 ## Local language installers
 
-The macOS and Windows installers in `installer/dist/` contain the five
-verified Dragons locales as binary deltas. Select a language once to
+The macOS and Windows installers in `installer/dist/` contain the 30
+completed local Dragons translations as binary deltas. The input inventory
+in `installer/App/LocalePackages.json` pins the translation and the package
+for each platform. Select a language once to
 replace the known game assets and launch the game. The selected asset
 set and receipt remain installed for later normal launches. Steam
 installs launch through App ID `4739660`. Manually selected standalone
@@ -973,12 +975,9 @@ The implementation adapts the Sonic installer at
 `d9213cfbc4b650f73be80e46c54a340f26fd941a`. See
 [`installer/README.md`](installer/README.md) for build and safety details.
 The macOS app is universal and ad-hoc signed. The Windows GUI is x86-64.
-The generated ZIP SHA-256 values are:
 
-- `Dragons-macOS.zip` `83e6822be9b5f85a484fbdd19def92f934adb6f69b28f8295e854a533e8a3533`
-- `Dragons-Windows.zip` `ddbe79675d96210d0300f02c7e60f0b48e9d027d59d3431e34aa26ee1adc184e`
-
-The macOS install core applied all five locales to a disposable
+In the earlier five-language build, the macOS install core applied all
+five locales to a disposable
 copy of the pinned game, including a same-language replay and
 language switches. The resulting app signature and the unpacked
 installer signature passed strict checks. On Windows 11 through
@@ -1006,5 +1005,21 @@ isolated folder and Persian selection to the unchanged install and
 auto-launch handlers. The game opened a window after installation and
 again when started directly from its executable. The Persian receipt
 and all 14 file hashes matched. The firewall prompt prevented checking
-the manual folder picker. The existing local Windows ZIP was retained.
+the manual folder picker. That test retained the five-language Windows ZIP.
 These runs did not exercise Steam launch.
+
+The 30-language build reconstructed every delta from the pinned stock
+builds. Each final ZIP contained 30 locale entries and passed read-back of
+338 packaged artifact hashes. The extracted macOS app passed strict
+signature verification and contained arm64 and x86_64 slices. The Windows
+GUI was built for x86-64 with its picker generated from the same roster.
+
+Both install cores passed the isolated sequence `ar → ja → es-419 →
+pt-BR → zh-TW → ar`, checking the saved selection and installed hashes.
+Windows 11 ran through Parallels with a dummy executable and preserved a
+deliberately conflicting managed file. No game runtime checks were run for
+these installer builds. Russian and Ukrainian package dialogue was also
+read back against 1,823 authored values per locale on each platform.
+
+- `Dragons-macOS.zip` SHA-256 `245a3a8ed5ba957858eff1a6858a9ab01f2523b960fa21a96f730e437f5b06ee`
+- `Dragons-Windows.zip` SHA-256 `b3235dcd348a7f1a4773b879b1bee5c1371a7fa4422e33358d389b931e4d8d88`

@@ -6,7 +6,7 @@ On macOS, extract `Dragons-macOS.zip` and open **Dragons — VN Revival**.
 On Windows, extract the entire `Dragons-Windows.zip` and open
 **Dragons Installer.exe** inside the extracted folder.
 
-Choose Arabic, Persian, Hebrew, Thai or Hindi and select **Install**.
+Choose one of the 30 bundled languages and select **Install**.
 The installer finds the Steam installation when possible. If discovery
 fails, use **Choose Game…** to select the existing game folder. Close the
 game before installing or changing a language.
@@ -29,7 +29,7 @@ is universal arm64/x86_64. The Windows installer is x86-64.
 The SwiftUI and Win32 shells and the receipt, ownership and recovery
 code were adapted from **The Murder of Sonic the Hedgehog Localization**
 at commit `d9213cfbc4b650f73be80e46c54a340f26fd941a`. The game adapter
-adds pinned Dragons paths and five locale overlays. macOS prepares and
+adds pinned Dragons paths and locale overlays. macOS prepares and
 ad-hoc signs a copy, verifies it, then exchanges the app bundles on the
 same volume. The Windows adapter uses the base's per-file replacement
 and rollback journal, with an installation lock and same-volume staging.
@@ -51,7 +51,10 @@ included with the payload.
 ## Build and test
 
 Use `Scripts/prepare-payload.py --help` to generate macOS and Windows
-resource directories from the ten previously verified game packages.
+resource directories with `--inventory App/LocalePackages.json`. The
+inventory pins both local packages and the translation for each locale.
+Both installers use the same locale list, and the Windows picker is
+generated from its packaged configuration.
 Pass the original Data directory for each platform, the host encoder,
 the target decoder and its license. The generator reconstructs each
 delta and checks its exact output hash before adding it to the package.

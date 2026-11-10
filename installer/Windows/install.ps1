@@ -240,9 +240,12 @@ try {
     if ([int]$config.schemaVersion -ne 2 -or [string]$config.steamAppID -ne $ExpectedAppId) {
         throw 'The localization package configuration is invalid.'
     }
-    $localeSet = @($config.languages | ForEach-Object { [string]$_.siteLocale } | Sort-Object) -join ','
-    if (-not [bool]$config.payloadReady -or $localeSet -ne 'ar,fa,he,hi,th') {
-        throw 'The complete five-language package is not included in this installer.'
+    $languages = @($config.languages | Where-Object { $null -ne $_ })
+    if (-not [bool]$config.payloadReady -or $languages.Count -eq 0 -or
+        @($languages | Where-Object { -not $_.ready -or -not $_.siteLocale -or -not $_.runtimeCode }).Count -ne 0 -or
+        @($languages | Group-Object siteLocale | Where-Object Count -gt 1).Count -ne 0 -or
+        @($languages | Group-Object runtimeCode | Where-Object Count -gt 1).Count -ne 0) {
+        throw 'The localization package is incomplete or has duplicate locale codes.'
     }
     $sharedFiles = @($config.files | Where-Object { $null -ne $_ })
     $selected = @($config.languages | Where-Object { [string]$_.runtimeCode -eq $RuntimeCode })

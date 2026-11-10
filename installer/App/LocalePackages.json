@@ -1,0 +1,454 @@
+{
+  "locales": [
+    {
+      "siteLocale": "ar",
+      "runtimeCode": "ar",
+      "nativeLanguageName": "العربية",
+      "translationSha256": "3fa60b6b632f798374623758bf0502e05a81b0d625224da440d1c30bc4d09e5d",
+      "macos": {
+        "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app",
+        "sha256": "5dfe7232c419ab24c4ea8e546b5d599faaacb35518954b5e35f23be903691966",
+        "resourceSealSha256": "48e888276826db47a5ad398714b8a58b2287828c45c2fbef5daf96dd6174b956"
+      },
+      "windows": {
+        "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/windows/DragNWash-ar.zip",
+        "sha256": "6f759d1df18cab93ecbad5e0b40fa2485d04bf2203e48462cebe1ca0407f23d8"
+      }
+    },
+    {
+      "siteLocale": "bg",
+      "runtimeCode": "bg",
+      "nativeLanguageName": "български",
+      "translationSha256": "90371d06e99074f396fb463c8ecda278979ac5dd6233b42915c9bd791c4d7760",
+      "macos": {
+        "path": "localization/work/cli-terra-high-wave3-20261110.71d8AW/bg/packages-90371d06e990/DragNWash-bg.app",
+        "sha256": "9158f54efba4414a5baa05137730c4e789678de8d06a703f5058904b8846010e",
+        "resourceSealSha256": "61e4946eb1904a3c776d05c6729a04bdf82f6301cf36d51fa4043f5059ace2c8"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-wave3-20261110.71d8AW/bg/packages-90371d06e990/DragNWash-bg-windows.zip",
+        "sha256": "7519353e0d4845c2de4e6f6b1027005081adb1bfeee46162d506f32511a5191b"
+      }
+    },
+    {
+      "siteLocale": "cs",
+      "runtimeCode": "cs",
+      "nativeLanguageName": "čeština",
+      "translationSha256": "e18c42969405b58039bb3a6fb3126263b6ccdcd70ff2de49691fe019684d0809",
+      "macos": {
+        "path": "localization/work/cli-terra-high-next-20261110.DKlv9v/cs/packages-e18c42969405/DragNWash-cs.app",
+        "sha256": "a29f43dfb823a0555d30b9eabb7bb2db259ea2a43d32623cc458a8e04b1ef88b",
+        "resourceSealSha256": "aad855ee5c5e396df2782abba493349b8ba51478f03518e11ab8ec94d630c557"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-next-20261110.DKlv9v/cs/packages-e18c42969405/DragNWash-cs-windows.zip",
+        "sha256": "c388da791f110c7df7e091f366af6fe4524caed9c9959246b6bc9d1e16383fff"
+      }
+    },
+    {
+      "siteLocale": "de",
+      "runtimeCode": "de",
+      "nativeLanguageName": "Deutsch",
+      "translationSha256": "e3f165ba2bd8e0b18123b957e6755166d7a7af05e06599e4b3961795c9f036e1",
+      "macos": {
+        "path": "localization/work/de-ba04d5d-packages-20261110.9cZ2M6/DragNWash-de-ba04d5d.app",
+        "sha256": "7050c36eba1637a5603082722aa7b96de5dc14b9dba1ebc9a08db2e39a012a71",
+        "resourceSealSha256": "1ad449c56752a51ca101008090874d4011fe6e3db098e9b3a9a01e099699d085"
+      },
+      "windows": {
+        "path": "localization/work/de-ba04d5d-packages-20261110.9cZ2M6/DragNWash-de-ba04d5d-windows.zip",
+        "sha256": "3f218f7d94953315a9d64060d307c47d775cb9cc0daae19e0cc54ee6767d87d7"
+      }
+    },
+    {
+      "siteLocale": "el",
+      "runtimeCode": "el",
+      "nativeLanguageName": "ελληνικά",
+      "translationSha256": "f8f9fe7a5ab8d0facec2bbaceb7b1572746921729371991839c6f37947a7c92c",
+      "macos": {
+        "path": "localization/work/cli-terra-high-wave4-20261110.82IkRL/el/packages-f8f9fe7a5ab8/DragNWash-el.app",
+        "sha256": "ccdd7aa9f1dfe88307c349abfd3002227c5e1f402806da4b76522071eed74d11",
+        "resourceSealSha256": "cd5144150367dc32a8a972664fbca759d8e6a84c60fadc748e83c2c4f7765bca"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-wave4-20261110.82IkRL/el/packages-f8f9fe7a5ab8/DragNWash-el-windows.zip",
+        "sha256": "bea66c72b7d67cb543b139bcf1ec904ca4ce6b2c318047976ac1d36ba9f0a5c1"
+      }
+    },
+    {
+      "siteLocale": "es",
+      "runtimeCode": "es",
+      "nativeLanguageName": "español",
+      "translationSha256": "49993b79a50824f0400e6b138ac2f33d688ee76a4fa4aa1efbb264fe6917bdf4",
+      "macos": {
+        "path": "localization/work/es-a76199c-packages-20261110.ELiKew/DragNWash-es-a76199c.app",
+        "sha256": "b46c117d1e12e12587ae4d604ec1ce191f73929561002a125b4e0bad4dffe2bf",
+        "resourceSealSha256": "aaab40418741859d4de0d9299151a636354d141e3fff86809c4292489b4f6050"
+      },
+      "windows": {
+        "path": "localization/work/es-a76199c-packages-20261110.ELiKew/DragNWash-es-a76199c-windows.zip",
+        "sha256": "0e309200e00d4e4c167386bd5d120fbed2bed41b01c705ad683c182bda09c2ee"
+      }
+    },
+    {
+      "siteLocale": "es-419",
+      "runtimeCode": "es-419",
+      "nativeLanguageName": "español latinoamericano",
+      "translationSha256": "7352fcd192e333aea5c65b8f85c8c7f7c12cfb09150c156057603ca22758dd84",
+      "macos": {
+        "path": "localization/work/cli-terra-high-next-20261110.DKlv9v/es-419/packages-7352fcd192e3/DragNWash-es-419.app",
+        "sha256": "3255b5b0feb77a1e10ee2fce092d5ddeffd8a816ed1445e6cc31cdac14569550",
+        "resourceSealSha256": "50939a7882dd4f7bb26ff86294da776e9ff12b8aa1912a21e91216f7a14872fd"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-next-20261110.DKlv9v/es-419/packages-7352fcd192e3/DragNWash-es-419-windows.zip",
+        "sha256": "fb38a1b20c4c9badca186562a8c469f56e46779eeb520ce1c8a0ba1319cc4d33"
+      }
+    },
+    {
+      "siteLocale": "fa",
+      "runtimeCode": "fa",
+      "nativeLanguageName": "فارسی",
+      "translationSha256": "f172053b987eee353fff856b226630027581ea62a80e6069252659b33afaaa6f",
+      "macos": {
+        "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app",
+        "sha256": "b2ce0c78823f96163a29104703ba89bdb8c53b5fd2c9b8c3062332c0c74277a7",
+        "resourceSealSha256": "ac4b0b2bfd70d4336c7744c5485fd4dabe20074a7e9445959e0f4aa963ee4ab6"
+      },
+      "windows": {
+        "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/windows/DragNWash-fa.zip",
+        "sha256": "13b78d1c2e5ed8bd1b655bd1f5ac0579396ae4a84b49a353aff7428d1aeded49"
+      }
+    },
+    {
+      "siteLocale": "fil",
+      "runtimeCode": "fil",
+      "nativeLanguageName": "Filipino",
+      "translationSha256": "b59abf97cf94d9c00303ee8c542f156d9f4e445735c6871a14d6992bda98363c",
+      "macos": {
+        "path": "localization/work/cli-terra-high-wave3-20261110.71d8AW/fil/packages-b59abf97cf94/DragNWash-fil.app",
+        "sha256": "a4905d49c385ce6a501d3846cfef3e7d73fdca3e10e5f46802390b33c925d1a2",
+        "resourceSealSha256": "8073458f05f9406567e0c3f3d6fdcaa510ac28fccfe69ec010cded7471964698"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-wave3-20261110.71d8AW/fil/packages-b59abf97cf94/DragNWash-fil-windows.zip",
+        "sha256": "13596f0ba07ba59ce1f4fd6010cb485d45292b8980bcf365ecfc133f5f523dab"
+      }
+    },
+    {
+      "siteLocale": "fr",
+      "runtimeCode": "fr",
+      "nativeLanguageName": "français",
+      "translationSha256": "f51aff2665a9ced0109ef90f41ebaf1e6835bf7fd7f1cbae8ee4270b46bfb739",
+      "macos": {
+        "path": "localization/work/fr-75f0df0-packages-20261110.OMJYzy/DragNWash-fr-75f0df0.app",
+        "sha256": "7a647e52b4989252050888d70e9c6af9d2fb41408e46b445cda91f4db2bcfe06",
+        "resourceSealSha256": "eb77549e1d2a80f76810e635b1da4dd6aa716cc704a4b182b228bfeb6ab73f01"
+      },
+      "windows": {
+        "path": "localization/work/fr-75f0df0-packages-20261110.OMJYzy/DragNWash-fr-75f0df0-windows.zip",
+        "sha256": "d96e66d1f831678f1e96bf844933ad6387c94b16b75cfae48760e6bb0e4253f6"
+      }
+    },
+    {
+      "siteLocale": "he",
+      "runtimeCode": "he",
+      "nativeLanguageName": "עברית",
+      "translationSha256": "492b222f380e1162cb017d57e53a2c15e1e18f321c744507b1fdbeaa0ae1c3a6",
+      "macos": {
+        "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app",
+        "sha256": "c2057ebf249051544f648255718442edac1f3511451ea151c93212b849168043",
+        "resourceSealSha256": "e6e0850bc8b10a33c7a1e4d222c6c0591d972e37663dc1e4434f3cc1ad90bcc7"
+      },
+      "windows": {
+        "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/windows/DragNWash-he.zip",
+        "sha256": "a5695b739fd5f356657264e17dfe056cb7ecbf917ae671d6514c9a3d1ff199a9"
+      }
+    },
+    {
+      "siteLocale": "hi",
+      "runtimeCode": "hi",
+      "nativeLanguageName": "हिन्दी",
+      "translationSha256": "58322c962c04c92d7e6d2940d3588ac963fe6bf361b719d2fe0d49abcace6da0",
+      "macos": {
+        "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-hi.app",
+        "sha256": "e069ead57bb3fb5ba789249fcfdc6df2b4b1353390a850f89c6b897b96510ac1",
+        "resourceSealSha256": "680023a47c8288cded23af1fa4d65f69febcf10662680fa336cc57db9a24286d"
+      },
+      "windows": {
+        "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/windows/DragNWash-hi.zip",
+        "sha256": "f47282e9ae4d241fe94cdd17a040b7ef7be1c6f982f3350ca9cf8d49c780ee51"
+      }
+    },
+    {
+      "siteLocale": "hu",
+      "runtimeCode": "hu",
+      "nativeLanguageName": "magyar",
+      "translationSha256": "64c234f2de5de5ff592d6b7915df71e5e56a35aa35a71d3a0d4c8f2804f71dda",
+      "macos": {
+        "path": "localization/work/cli-terra-high-wave3-20261110.71d8AW/hu/packages-64c234f2de5d/DragNWash-hu.app",
+        "sha256": "43361e3fe08700925fec5d01702aa42c69a0b2fab334cec01ac0592b23605777",
+        "resourceSealSha256": "8673d3b2138a9172591a2876eb8c1bf4e4c08d2e593adc8ef704d63b3083e17d"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-wave3-20261110.71d8AW/hu/packages-64c234f2de5d/DragNWash-hu-windows.zip",
+        "sha256": "2f11c84ea42556329c47d452e9179670412ad1a34b65f93b37a909700222b458"
+      }
+    },
+    {
+      "siteLocale": "id",
+      "runtimeCode": "id",
+      "nativeLanguageName": "Bahasa Indonesia",
+      "translationSha256": "63f28b61376e37b7c250e96ad9b12d42909865688dd26598f6a4ee2886afea37",
+      "macos": {
+        "path": "localization/work/cli-terra-high-next-20261110.DKlv9v/id/packages-63f28b61376e/DragNWash-id.app",
+        "sha256": "2a63be78282654d0deb05853c1d2696333a145a4b6884313fe080e31163933b7",
+        "resourceSealSha256": "befb5abb4f8732f2066715fcb978347a3e4e4a8b0d1be928bb4b973b834a54ca"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-next-20261110.DKlv9v/id/packages-63f28b61376e/DragNWash-id-windows.zip",
+        "sha256": "1b743f9afc1a8f1b2a6b95f40d21b64d4cb04ab797134ad6d735bdd11cc95156"
+      }
+    },
+    {
+      "siteLocale": "it",
+      "runtimeCode": "it",
+      "nativeLanguageName": "italiano",
+      "translationSha256": "21f43ebb21a277eb1732bb209413d55b6304e9f688ec235e92300cd65d1e81f4",
+      "macos": {
+        "path": "localization/work/direct-editorial-20261110/it/DragNWash-it-ecbe7bb.app",
+        "sha256": "9724cfa779c6a23e6be1e39e0b31c758eb83c7add9753aa655bd031ef9b613b5",
+        "resourceSealSha256": "daf1632f402be4c00eb91870bc171d9771f4bc364aa87fcd189b855c594e1003"
+      },
+      "windows": {
+        "path": "localization/work/direct-editorial-20261110/it/DragNWash-it-ecbe7bb-windows.zip",
+        "sha256": "eadbae142b4e17b634e8f888a94b1cd08932e856613b176a0a2441e51820dec3"
+      }
+    },
+    {
+      "siteLocale": "ja",
+      "runtimeCode": "ja",
+      "nativeLanguageName": "日本語",
+      "translationSha256": "821af19e434da22eaed150d9d340f368ddec58de000171d4cb3a26fad7a2a840",
+      "macos": {
+        "path": "localization/work/cli-terra-high-wave4-20261110.82IkRL/ja/packages-821af19e434d/DragNWash-ja.app",
+        "sha256": "cc3a0a456573495ba8fd5b415ae0a358b87c6766535f9493a8e9cad997de8e9d",
+        "resourceSealSha256": "7f0eb9dea8c37d09766e9bf6f91ae83e43e2dc24de4136afd9291c5a592e8b24"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-wave4-20261110.82IkRL/ja/packages-821af19e434d/DragNWash-ja-windows.zip",
+        "sha256": "4133eaf4fa056b8801ec9518a1924cb26efb2a6b542c3c265b849c7c747b6e21"
+      }
+    },
+    {
+      "siteLocale": "ko",
+      "runtimeCode": "ko",
+      "nativeLanguageName": "한국어",
+      "translationSha256": "c5f9cff3154d37db95bc923631aa84d3eeb77f468812ebda8f56cb86db74a562",
+      "macos": {
+        "path": "localization/work/cli-terra-high-wave4-20261110.82IkRL/ko/packages-c5f9cff3154d/DragNWash-ko.app",
+        "sha256": "14bae758ace4edc1504ad41fc176568767f0abbd7b10ecb493b69bf31cbc63e1",
+        "resourceSealSha256": "dd2ecd4d42cda99286a0ab9c4d285c1c73b2ab92c219de12bd3d8cbaec83656d"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-wave4-20261110.82IkRL/ko/packages-c5f9cff3154d/DragNWash-ko-windows.zip",
+        "sha256": "c6c7d534a09d31ae405d13788cb92f294efd9529706ccddfe5b679a342ff9664"
+      }
+    },
+    {
+      "siteLocale": "nl",
+      "runtimeCode": "nl",
+      "nativeLanguageName": "Nederlands",
+      "translationSha256": "d685d789e628d77e71040e82d8efb4c5034c1da432af2ac7a7cd5e9b017cae0d",
+      "macos": {
+        "path": "localization/work/cli-terra-high-next-20261110.DKlv9v/nl/packages-d685d789e628/DragNWash-nl.app",
+        "sha256": "51c1f55e04eaeb9ef6ed3c9e84eb6956d0d6e137b0322083e17509c05871be5d",
+        "resourceSealSha256": "cf8ca700fa155f40560902d7099da6ddb35ac8ba149aeb2a05906b8f1d77ae2d"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-next-20261110.DKlv9v/nl/packages-d685d789e628/DragNWash-nl-windows.zip",
+        "sha256": "1a637dfcb9a8516bb95a8dd4db2ee2b5b5151af7513b85a1883c8e62f50e335a"
+      }
+    },
+    {
+      "siteLocale": "pl",
+      "runtimeCode": "pl",
+      "nativeLanguageName": "polski",
+      "translationSha256": "d848a5a5087f7ffa4c4688e3a465016d8efe65806823ab5cd684e7bccb9402a4",
+      "macos": {
+        "path": "localization/work/pl-7714bd2-packages-20261110.KG2BWd/DragNWash-pl-7714bd2.app",
+        "sha256": "eb5925717e2f18621f610195d380641feaf5ac4ad32d7470fe1aec57682b9ffa",
+        "resourceSealSha256": "0341c43baacf83fcb25b34a4f028d43504218661e3bc1c3a218abc11f8fd0754"
+      },
+      "windows": {
+        "path": "localization/work/pl-7714bd2-packages-20261110.KG2BWd/DragNWash-pl-7714bd2-windows.zip",
+        "sha256": "20cb4038565618c189737681287dfe36ff3a9112407909e65f45e7539b056c0c"
+      }
+    },
+    {
+      "siteLocale": "pt-BR",
+      "runtimeCode": "pt-BR",
+      "nativeLanguageName": "português (Brasil)",
+      "translationSha256": "2942828d34256cf93319fe5bc89df860c00a6ddc054772ce2d53edd661cd9e9e",
+      "macos": {
+        "path": "localization/work/direct-editorial-20261110/pt-BR/DragNWash-pt-BR-ecbe7bb.app",
+        "sha256": "f2c4941daae182ca25913fad25117e95a50fbf9daa963e133b8fa8fcbf59254a",
+        "resourceSealSha256": "1612ffcde15fa765d725187e23e10a614e81d715bc0e37c1924399af57b60bcc"
+      },
+      "windows": {
+        "path": "localization/work/direct-editorial-20261110/pt-BR/DragNWash-pt-BR-ecbe7bb-windows.zip",
+        "sha256": "18020121d4313eefe037e2c226ddc81e63857bfb5ce3ec6e49ac2f015acd69fc"
+      }
+    },
+    {
+      "siteLocale": "ro",
+      "runtimeCode": "ro",
+      "nativeLanguageName": "română",
+      "translationSha256": "bd2b4b256c798165ecb33f095dfac638299a98e5701e0916a1974db2fc2acc11",
+      "macos": {
+        "path": "localization/work/cli-terra-high-wave3-20261110.71d8AW/ro/packages-bd2b4b256c79/DragNWash-ro.app",
+        "sha256": "01f71767577d6c60c890f64afc2d1d3282f30bc458ce19561feed7d442bca24d",
+        "resourceSealSha256": "e614102b755e2b9692b9bbdf6940e5aee89b474259b5bb76c9c54eb15ba75b56"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-wave3-20261110.71d8AW/ro/packages-bd2b4b256c79/DragNWash-ro-windows.zip",
+        "sha256": "114a903dc0d322a6a6ec142c36a94de3a716c63cc44a9c513666c355125952db"
+      }
+    },
+    {
+      "siteLocale": "ru",
+      "runtimeCode": "ru",
+      "nativeLanguageName": "русский",
+      "translationSha256": "6d882355067e8b1831f5271238c1409d730533ee7d18ca9670a498fa047f3a93",
+      "macos": {
+        "path": "localization/work/ru-complete-20261110.zjqsdU/DragNWash-ru.app",
+        "sha256": "b0d27af866f090916a9d1b75ca1aefff8352daa87a7bd24f90eaa4d1dac5e6a4",
+        "resourceSealSha256": "15f32e76744a55becfc7384c00a812844caaaecf918e2f0e67d5e2bd91b664e8"
+      },
+      "windows": {
+        "path": "localization/work/ru-complete-20261110.zjqsdU/DragNWash-ru-windows.zip",
+        "sha256": "89e15f09190188ce479cb2baeea3e5ea5621510a6ba34e29d01479572527cb79"
+      }
+    },
+    {
+      "siteLocale": "sr",
+      "runtimeCode": "sr",
+      "nativeLanguageName": "српски",
+      "translationSha256": "3ea2186600f5fcceb15196b955d7e4c63b5cc1b73465bf911671fecc42cdfc28",
+      "macos": {
+        "path": "localization/work/cli-terra-high-wave3-20261110.71d8AW/sr/packages-3ea2186600f5/DragNWash-sr.app",
+        "sha256": "2af53c62a173926de265f545a7c7c0c1c3c9176b1a3526fa5c602bb921cfa88f",
+        "resourceSealSha256": "3f0fa16d88ce2889f98ed6c87258c0a8ab81be77aa2332b67502ec0f747ce787"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-wave3-20261110.71d8AW/sr/packages-3ea2186600f5/DragNWash-sr-windows.zip",
+        "sha256": "95c160293eea8103b961047d4ee17e1240497e5a23ad4982855f994167595780"
+      }
+    },
+    {
+      "siteLocale": "sw",
+      "runtimeCode": "sw",
+      "nativeLanguageName": "Kiswahili",
+      "translationSha256": "7c781dd92c65fb4167ea910b2999a7e631298812afbb2fc5bbfaf62489a1d709",
+      "macos": {
+        "path": "localization/work/cli-terra-high-wave3-20261110.71d8AW/sw/packages-7c781dd92c65/DragNWash-sw.app",
+        "sha256": "fd852aa2201a37d5a0ffec3cac16dda2d1b524ea93d523d92741c8539ee27ab2",
+        "resourceSealSha256": "a008b2f73149498daef52f85191c25aa7055453bb49eac8907555ba69851cfbf"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-wave3-20261110.71d8AW/sw/packages-7c781dd92c65/DragNWash-sw-windows.zip",
+        "sha256": "b4539a729cf0d88d32e7d2cc28e3742a99916557138c356e98695d3afeb6a123"
+      }
+    },
+    {
+      "siteLocale": "th",
+      "runtimeCode": "th",
+      "nativeLanguageName": "ไทย",
+      "translationSha256": "9a0aa5c20f282c735de7666dc3373084346052ba9b343d3e2d59fbbd1b556403",
+      "macos": {
+        "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-th.app",
+        "sha256": "825eb33ae7147b6132697a0d4d24096dcd0dbd35684f794dad30c32096405279",
+        "resourceSealSha256": "c8dd19dc463c176aed316e7a4a3a282cbb9fd5d6c182bb1c47754919f89f4593"
+      },
+      "windows": {
+        "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/windows/DragNWash-th.zip",
+        "sha256": "cedc97f512bbd12e3536ab9bdbb4c7eaad41ac07efd879451cebee675a613c42"
+      }
+    },
+    {
+      "siteLocale": "tr",
+      "runtimeCode": "tr",
+      "nativeLanguageName": "Türkçe",
+      "translationSha256": "8f0cf766526af6fab38382d81838feda48499dbf60489575896be44fc6973f5e",
+      "macos": {
+        "path": "localization/work/cli-terra-high-next-20261110.DKlv9v/tr/packages-8f0cf766526a/DragNWash-tr.app",
+        "sha256": "6195f7182e0d7212338860024d98b93fb5f1b5116a0a56bd619c09e498aa9e70",
+        "resourceSealSha256": "eb35a745299621d1def60a8729a0e05538075c00b46d92ef512bcf29d53187b3"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-next-20261110.DKlv9v/tr/packages-8f0cf766526a/DragNWash-tr-windows.zip",
+        "sha256": "463bbbccfc94bc6dfec15f54167b38c50fbba04de3f1fa6094d46dd6f0909ce3"
+      }
+    },
+    {
+      "siteLocale": "uk",
+      "runtimeCode": "uk",
+      "nativeLanguageName": "українська",
+      "translationSha256": "ebc1caca30775c3a8c8667412eea52b657efb4bf48603000991705bb2aedfa2a",
+      "macos": {
+        "path": "localization/work/uk-finish-18.SbcoRL/reviewed/DragNWash-uk.app",
+        "sha256": "438acc02f40dad0a9c788207a850c00ed8ca09331b8f6b5dac3e7a5d8a552c44",
+        "resourceSealSha256": "2ee0f76602ceb09a69e59a790a04b4a34bf5cba050d9d16019771c126e98b740"
+      },
+      "windows": {
+        "path": "localization/work/uk-finish-18.SbcoRL/reviewed/DragNWash-uk-windows.zip",
+        "sha256": "642fb2e182f91468f2ad931a38d47e960066844fb972bf0c835bcb71b7c5ffb8"
+      }
+    },
+    {
+      "siteLocale": "vi",
+      "runtimeCode": "vi",
+      "nativeLanguageName": "Tiếng Việt",
+      "translationSha256": "977cff4abc6aa29e530ad32ca8f9f82bf198cebbdd58893a51195e127ca92ab6",
+      "macos": {
+        "path": "localization/work/cli-terra-high-next-20261110.DKlv9v/vi/packages-977cff4abc6a/DragNWash-vi.app",
+        "sha256": "e6402d23c8007bd4a2a9176cb2f916b0a46f51b8fb028962202e3e399612e141",
+        "resourceSealSha256": "dbb387a2397ef6d9c087a34da6ab285612c24afd6d9b4ffeea2cd543a4f0d667"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-next-20261110.DKlv9v/vi/packages-977cff4abc6a/DragNWash-vi-windows.zip",
+        "sha256": "97e7c8388eed0d7f0b8b11df62ee0a87028ffa6ca579d1e61f626ba91c03d2fe"
+      }
+    },
+    {
+      "siteLocale": "zh",
+      "runtimeCode": "zh",
+      "nativeLanguageName": "中文（简体）",
+      "translationSha256": "860f8ccd07cf885b362f7c4d3dc0b33da8e270d035635710a5e2905def5a051a",
+      "macos": {
+        "path": "localization/work/cli-terra-high-wave4-20261110.82IkRL/zh/packages-860f8ccd07cf/DragNWash-zh.app",
+        "sha256": "e75c19ac4d74bd9a362936cbf0628bfccde649a5dfc011962b04dbfc7e651872",
+        "resourceSealSha256": "624a9b63e1bc884c537e73fd246b50d32e4015f532cb260fe9c0db81b8a9be25"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-wave4-20261110.82IkRL/zh/packages-860f8ccd07cf/DragNWash-zh-windows.zip",
+        "sha256": "a46dbbbafe1306131c427df8bd91bd1fc4967062f5c37dec9ab8724ddfbdf4d0"
+      }
+    },
+    {
+      "siteLocale": "zh-TW",
+      "runtimeCode": "zh-TW",
+      "nativeLanguageName": "中文（繁體）",
+      "translationSha256": "1a1e375c24e4057b3b5b6fc9687cce9bf4f0c788a356c9180c2d7df4675da657",
+      "macos": {
+        "path": "localization/work/cli-terra-high-wave4-20261110.82IkRL/zh-TW/packages-1a1e375c24e4/DragNWash-zh-TW.app",
+        "sha256": "6e15a01935d0caaeb70ef15430e9f87d8441c6be300c6ed715f54452cf0ba663",
+        "resourceSealSha256": "5b3e10f1ee24a96cc9cdbcef50b241cc0f8a0e7d41587163ee7be6a18e75f115"
+      },
+      "windows": {
+        "path": "localization/work/cli-terra-high-wave4-20261110.82IkRL/zh-TW/packages-1a1e375c24e4/DragNWash-zh-TW-windows.zip",
+        "sha256": "919b45f97960f322e3cb23305b127fbc3e526bfbf1120aa08527e3e2423cc1fd"
+      }
+    }
+  ]
+}

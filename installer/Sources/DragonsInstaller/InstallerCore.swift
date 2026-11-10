@@ -76,7 +76,7 @@ enum InstallerError: LocalizedError {
         case .incompatibleSteamUpdate(let build, let path):
             "Steam build \(build) changed a required game file that this localization package cannot safely patch yet: \(path). No game files were changed."
         case .payloadNotReady:
-            "The complete five-language package is not included in this installer build."
+            "The localization package is not included in this installer build."
         case .invalidLanguageSelection(let value):
             "The selected language is not included in the completed localization package: \(value)."
         case .missingPayloadFile(let path):

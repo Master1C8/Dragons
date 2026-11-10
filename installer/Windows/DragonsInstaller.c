@@ -55,8 +55,7 @@ static wchar_t statusMessage[1024] = L"Ready to install.";
 static wchar_t selectedGamePath[MAX_PATH] = L"";
 static wchar_t launchTarget[MAX_PATH] = L"";
 
-static const wchar_t *languages[] = {L"العربية", L"فارسی", L"עברית", L"ไทย", L"हिन्दी"};
-static const wchar_t *runtimeCodes[] = {L"ar", L"fa", L"he", L"th", L"hi"};
+#include "InstallerLanguages.h"
 
 static void setFont(HWND control, HFONT font) {
     SendMessageW(control, WM_SETFONT, (WPARAM)font, TRUE);
@@ -113,7 +112,7 @@ static void paintInterface(HWND window) {
     drawTextLine(dc, bodyFont, RGB(255, 249, 230), L"DRAG’N WASH",
         gameTitle, DT_CENTER | DT_WORDBREAK | DT_NOPREFIX);
     RECT sideNote = {40, 414, 208, 460};
-    drawTextLine(dc, smallFont, RGB(199, 185, 166), L"5 community localizations",
+    drawTextLine(dc, smallFont, RGB(199, 185, 166), L"Community localizations",
         sideNote, DT_CENTER | DT_WORDBREAK | DT_NOPREFIX);
 
     RECT heading = {292, 42, 700, 84};
@@ -388,7 +387,7 @@ static LRESULT CALLBACK windowProcedure(HWND window, UINT message, WPARAM wParam
             for (size_t i = 0; i < sizeof(languages) / sizeof(languages[0]); ++i) {
                 SendMessageW(languageCombo, CB_ADDSTRING, 0, (LPARAM)languages[i]);
             }
-            SendMessageW(languageCombo, CB_SETCURSEL, 1, 0);
+            SendMessageW(languageCombo, CB_SETCURSEL, 0, 0);
             installButton = CreateWindowW(L"BUTTON", L"Install localization",
                 WS_CHILD | WS_VISIBLE | WS_TABSTOP | BS_OWNERDRAW,
                 450, 310, 218, 44, window, (HMENU)ID_INSTALL, NULL, NULL);

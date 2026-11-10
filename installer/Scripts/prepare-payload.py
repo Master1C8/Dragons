@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Produce exact binary deltas for the five verified Dragons packages."""
+"""Produce exact binary deltas for verified Dragons packages."""
 import argparse
 import hashlib
 import json
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import tempfile
 from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-LANGUAGES = {'ar': 'العربية', 'fa': 'فارسی', 'he': 'עברית', 'th': 'ไทย', 'hi': 'हिन्दी'}
 APP_ID = '4739660'
 
 
@@ -35,6 +35,14 @@ def prepare(args):
     if args.platform == 'macos':
         require(args.steam_path_fix is not None and args.steam_path_fix.is_file(),
                 'macOS requires the compiled Steam path patcher')
+    entries = json.loads(args.inventory.read_bytes())['locales']
+    require(entries and len({row['siteLocale'] for row in entries}) == len(entries) and
+            len({row['runtimeCode'] for row in entries}) == len(entries), 'Invalid installer locale inventory')
+    for row in entries:
+        locale = row['siteLocale']
+        require(re.fullmatch(r'[a-zA-Z0-9-]{1,15}', locale), f'Invalid locale: {locale}')
+        translation = ROOT.parent / 'localization' / locale / 'translation.json'
+        require(sha(translation) == row['translationSha256'], f'{locale} translation changed since package verification')
     target = args.output
     target.mkdir(parents=True)
     payload = target / 'LocalizationPayload'
@@ -58,58 +66,64 @@ def prepare(args):
     cache = {}
     with tempfile.TemporaryDirectory(dir=target) as tmp:
         staging = Path(tmp)
-        for lang, native_name in LANGUAGES.items():
-            container = args.packages / args.platform
+        for entry in entries:
+            lang, native_name = entry['siteLocale'], entry['nativeLanguageName']
+            package = ROOT.parent / entry[args.platform]['path']
+            expected = entry[args.platform]['sha256']
+            licenses = {}
             if args.platform == 'macos':
-                app = container / f'DragNWash-{lang}.app'
-                resources = app / 'Contents/Resources'
-                meta = json.loads((resources / 'vn-localization-package.json').read_bytes())
+                resources = package / 'Contents/Resources'
+                manifest = resources / 'vn-localization-package.json'
+                require(sha(manifest) == expected, f'{lang} macOS manifest checksum mismatch')
+                seal = package / 'Contents/_CodeSignature/CodeResources'
+                require(sha(seal) == entry['macos']['resourceSealSha256'], f'{lang} macOS resource seal mismatch')
+                subprocess.run(['/usr/bin/codesign', '--verify', '--deep', '--strict', str(package)], check=True)
+                meta = json.loads(manifest.read_bytes())
                 current = files(resources / 'Data')
-                require(set(originals) <= set(current), f"{lang} macOS package removed an original file")
-                hashes = {name: sha(p) for name, p in current.items()}
-                replacements = {name: p for name, p in current.items() if hashes[name] != original_hashes.get(name)}
-                license_bytes = (resources / 'NotoShaped-OFL.txt').read_bytes()
+                require(set(originals) <= set(current), f'{lang} macOS package removed an original file')
+                hashes = {name: sha(path) for name, path in current.items()}
+                replacements = {name: path for name, path in current.items() if hashes[name] != original_hashes.get(name)}
+                for name in ('NotoShaped-OFL.txt', 'NotoSansCJK-OFL.txt'):
+                    if (resources / name).is_file():
+                        licenses[name] = (resources / name).read_bytes()
             else:
-                archive = container / f'DragNWash-{lang}.zip'
-                receipt = json.loads((container / f'{lang}-receipt.json').read_bytes())
-                if sha(archive) != receipt['sha256']:
-                    raise ValueError(f'{lang} ZIP differs from the verified package')
-                with ZipFile(archive) as z:
-                    meta = json.loads(z.read('manifest.json'))
-                    require(meta == receipt['manifest'], f'{lang} ZIP manifest mismatch')
+                require(sha(package) == expected, f'{lang} Windows ZIP checksum mismatch')
+                with ZipFile(package) as archive:
+                    meta = json.loads(archive.read('manifest.json'))
                     replacements, hashes = {}, {}
                     for name, row in meta['files'].items():
                         require(not name.startswith('/') and '\\' not in name and ':' not in name and
                                 all(part not in ('', '.', '..') for part in name.split('/')),
                                 f'Unsafe package path: {name}')
                         require(row['sourceSha256'] == original_hashes.get(name), f'{name} source mismatch')
-                        p = staging / name
-                        p.parent.mkdir(parents=True, exist_ok=True)
-                        p.write_bytes(z.read('DragNWash_Data/' + name))
-                        require(sha(p) == row['outputSha256'], f'{name} ZIP checksum mismatch')
-                        replacements[name], hashes[name] = p, row['outputSha256']
-                    license_bytes = z.read('NotoShaped-OFL.txt')
-            require(meta['locale'] == lang and meta['platform'] == args.platform, f"{lang} package receipt mismatch")
-            require(meta['sourceGlobalManagersSha256'] == anchors['globalgamemanagers'], f"{lang} package receipt mismatch")
-            require(meta['sourceGlobalScriptsSha256'] == anchors['globalgamemanagers.assets'], f"{lang} package receipt mismatch")
-            require(hashlib.sha256(license_bytes).hexdigest() == meta['complexText']['fontFallback']['licenseSha256'], f"{lang} package receipt mismatch")
-            require(hashes['sharedassets0.assets'] == meta['complexText']['fontFallback']['assetSha256'], f"{lang} package receipt mismatch")
-            require(hashes['Managed/Unity.TextMeshPro.dll'] == meta['complexText']['tmp']['outputSha256'], f"{lang} package receipt mismatch")
-            require(hashes['Managed/YarnSpinner.Unity.dll'] == meta['complexText']['yarn']['outputSha256'], f"{lang} package receipt mismatch")
-            require(hashes['Managed/Dragons.PreparedTextLayout.dll'] == meta['complexText']['layoutSha256'], f"{lang} package receipt mismatch")
+                        path = staging / name
+                        path.parent.mkdir(parents=True, exist_ok=True)
+                        path.write_bytes(archive.read('DragNWash_Data/' + name))
+                        require(sha(path) == row['outputSha256'], f'{name} ZIP checksum mismatch')
+                        replacements[name], hashes[name] = path, row['outputSha256']
+                    for name in ('NotoShaped-OFL.txt', 'NotoSansCJK-OFL.txt'):
+                        if name in archive.namelist():
+                            licenses[name] = archive.read(name)
+            require(meta['locale'] == lang and meta['platform'] == args.platform, f'{lang} package identity mismatch')
+            require(meta['sourceGlobalManagersSha256'] == anchors['globalgamemanagers'], f'{lang} source manager mismatch')
+            require(meta['sourceGlobalScriptsSha256'] == anchors['globalgamemanagers.assets'], f'{lang} source scripts mismatch')
+            font = meta.get('cjkFallback') or (meta.get('complexText') or {}).get('fontFallback')
+            if font:
+                require(len(licenses) == 1 and
+                        hashlib.sha256(next(iter(licenses.values()))).hexdigest() == font['licenseSha256'] and
+                        hashes['sharedassets0.assets'] == font['assetSha256'], f'{lang} font receipt mismatch')
             if args.platform == 'macos':
                 assembly = 'Managed/Assembly-CSharp.dll'
-                receipt = json.loads((container / f'{lang}-receipt.json').read_bytes())
-                require(hashes[assembly] == receipt['managedSlotNew']['outputSha256'],
-                        f'{lang} unexpected input to Steam path patcher')
                 patched = staging / f'{lang}-steam.dll'
                 subprocess.run(['dotnet', str(args.steam_path_fix), str(replacements[assembly]), str(patched)], check=True)
                 replacements[assembly] = patched
                 hashes[assembly] = sha(patched)
+            require(config['gameVersion'] in ('', meta['build']), f'{lang} game build mismatch')
             config['gameVersion'] = meta['build']
-            licenses = payload / 'Licenses'
-            licenses.mkdir(exist_ok=True)
-            (licenses / f'NotoShaped-{lang}-OFL.txt').write_bytes(license_bytes)
+            for name, contents in licenses.items():
+                license_dir = payload / 'Licenses' / lang
+                license_dir.mkdir(parents=True, exist_ok=True)
+                (license_dir / name).write_bytes(contents)
             result = []
             for name, p in sorted(replacements.items()):
                 old, new = original_hashes.get(name), hashes[name]
@@ -136,18 +150,16 @@ def prepare(args):
                         cache[key] = {'path': path, 'sha256': sha(output)}
                     item['artifacts'] = [cache[key]]
                 result.append(item)
-            config['languages'].append({'siteLocale': lang, 'runtimeCode': lang, 'nativeLanguageName': native_name,
+            config['languages'].append({'siteLocale': lang, 'runtimeCode': entry['runtimeCode'], 'nativeLanguageName': native_name,
                                         'ready': True, 'files': result})
             print(args.platform, lang, len(result), flush=True)
-    if len({tuple(item['path'] for item in lang['files']) for lang in config['languages']}) != 1:
-        raise ValueError('unexpected locale-specific destination inventory')
     (target / 'PackageConfig.json').write_text(json.dumps(config, ensure_ascii=False, indent=2) + '\n')
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('platform', choices=('macos', 'windows'))
-    for arg in ('packages', 'stock', 'output', 'encoder', 'helper', 'delta-license'):
+    for arg in ('inventory', 'stock', 'output', 'encoder', 'helper', 'delta-license'):
         parser.add_argument('--' + arg, type=lambda x: Path(x).resolve(), required=True)
     parser.add_argument('--steam-path-fix', type=lambda x: Path(x).resolve())
     prepare(parser.parse_args())
