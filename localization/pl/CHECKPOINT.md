@@ -446,3 +446,11 @@ Author compared 81 more IDs in `semantic-audit-ryan-second-visit.json`; cumulati
 ### Semantic audit continuation: Ryan third visit
 
 Author compared 52 more IDs in `semantic-audit-ryan-third-visit.json`; cumulative 401/1,947, 1,546 remain. Scene context and limits are in `semantic-audit-progress.md`. Translation remains SHA-256 `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; no rebuild, new runtime or visual acceptance. Independent game-text acceptance remains pending.
+
+### Semantic audit continuation: Ryan fourth visit and intimate exchanges
+
+Author compared 60 more IDs in `semantic-audit-ryan-fourth-intimacy.json`; cumulative 461/1,947, 1,486 remain. Two further findings await disposition in `semantic-audit-progress.md`, including an unverified location detail. Translation remains SHA-256 `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; prior v2 packages remain bound to the older hash and independent game-text, runtime and visual gates remain open.
+
+### Semantic audit continuation: Ryan fifth-visit introductions
+
+Author compared 51 more IDs in `semantic-audit-ryan-fifth-intro.json`; cumulative 512/1,947, 1,435 remain. The existing route decision and unrun state-transition boundary are described in `semantic-audit-progress.md`. Translation SHA-256 remains `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; prior v2 receipts are not evidence for this revision. Independent audit and visual acceptance remain pending.

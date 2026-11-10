@@ -43,3 +43,20 @@ Cumulative distinct IDs read: 349 / 1,947; 1,598 remain. Author review only; sep
 Read `Ryan_3_intro`, `Ryan_3_required`, `Ryan_3_Outro` and `Ryan_3_wont_use_mount` against both English builds and current Polish. Ryan hesitates on arrival, then explains the breakup and its mixed feelings; the separate responses acknowledge his decision or the difficulty of ending a relationship. The farewell has alternatives affirming friendship and his separate refusal of the mount is conditional context, not a universal statement. The English article and apostrophe variants retain the shared meaning; the size and italic markup are retained as in source. The source positions and choice kinds do not demonstrate live choice routing, conditional behavior or fit. No new semantic finding was identified in this unit.
 
 Cumulative distinct IDs read: 401 / 1,947; 1,546 remain. This is an author pass; independent acceptance and unrun checks remain open.
+
+## Ryan fourth visit and intimate exchanges: 60 IDs read
+
+Compared `Ryan_4_*`, `Ryan_SexScene*` and `Ryan_Conrad_SexScene*` against both source builds and Polish. The previously documented basket-in-mouth staging explains the intentionally impaired speech in `Ryan_4_intro`; the initial yes/no question refers to suggesting Ryan to Conrad, and the question's source markup is retained. In the intimate scenes the paired continuation and climax choices, separate participants and their speaker prefixes remain distinguishable. This reads source positions and existing staging evidence; it does not establish live conditional transitions, animation, or display fit.
+
+Findings pending disposition:
+
+- `yarn:line:9883786d`: “I booked the night” has been rendered as booking a room. The English does not itself identify a room; inspect the actual scene/location evidence before retaining or removing that specificity.
+- `yarn:line:fbe86c06`: Conrad's emphatic “Damn right!” after Ryan's joke is understandable as `Cholernie słusznie!` but sounds stilted in Polish. Consider an idiomatic emphatic response preserving the joke and speaker.
+
+Cumulative distinct IDs read: 461 / 1,947; 1,486 remain. This is author review, not independent acceptance or a runtime pass.
+
+## Ryan fifth-visit introductions: 51 IDs read
+
+Compared `Ryan_5_intro` and `Ryan_5_intro_ryan_romanced` against both stock English values and Polish. The recovery choices identify three different pairings; Ryan's alternative greetings distinguish the player/Ryan date, the player/Conrad date and Ryan/Conrad's prior date. The repeat baking explanation and gate request retain their role across branches. The previously recorded romance-route decision supplies the meaning of the pairings, while the node's instruction positions alone do not establish conditional execution or actual state transitions. Developer recovery text and markup remain included. No additional semantic finding was identified in this unit.
+
+Cumulative distinct IDs read: 512 / 1,947; 1,435 remain. This is author review, with independent acceptance and live route checks still open.
