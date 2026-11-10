@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "beforeSha256": "3983cc2a9dc25d31106b7d686fbdde713857d56d78b5f93b63b9a6fd537113b3",
+  "afterSha256": "e9bd6034e2d6ad3f72f3d72265b778acd34d47b82674ab81647283a7f89c2665",
+  "edits": {
+    "yarn:line:dee4a32d": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 224,
+          "lastInstruction": 257
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:48d4a45a"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:dee4a32d",
+        "yarn:line:48d4a45a"
+      ],
+      "reason": "Recheck corrected meaning and all cited stock scene, branch, referent and runtime dependencies."
+    },
+    "yarn:line:3f153aaf": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_intro",
+          "firstInstruction": 74,
+          "lastInstruction": 112
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:da9cfdcf",
+        "yarn:line:a9253dd8"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:3f153aaf",
+        "yarn:line:da9cfdcf",
+        "yarn:line:a9253dd8"
+      ],
+      "reason": "Recheck corrected meaning and all cited stock scene, branch, referent and runtime dependencies."
+    },
+    "yarn:line:da9cfdcf": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_intro",
+          "firstInstruction": 84,
+          "lastInstruction": 122
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:3f153aaf",
+        "yarn:line:a9253dd8"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:da9cfdcf",
+        "yarn:line:3f153aaf",
+        "yarn:line:a9253dd8"
+      ],
+      "reason": "Recheck corrected meaning and all cited stock scene, branch, referent and runtime dependencies."
+    },
+    "yarn:line:8ee41fdc": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_questions",
+          "firstInstruction": 248,
+          "lastInstruction": 278
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:18d418ab"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:8ee41fdc",
+        "yarn:line:18d418ab"
+      ],
+      "reason": "Recheck corrected meaning and all cited stock scene, branch, referent and runtime dependencies."
+    },
+    "yarn:line:7f543c2a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene_Cum",
+          "firstInstruction": 7,
+          "lastInstruction": 42
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:7f543c2a",
+        "yarn:line:e9643b5d",
+        "yarn:line:c50535b3",
+        "yarn:line:533532c4"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:7f543c2a",
+        "yarn:line:e9643b5d",
+        "yarn:line:c50535b3",
+        "yarn:line:533532c4"
+      ],
+      "reason": "Player readiness, both choice branches and Conrad response; stock targets 41 and 52."
+    },
+    "yarn:line:1642b6f1": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_Outro",
+          "firstInstruction": 24,
+          "lastInstruction": 32
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:1642b6f1",
+        "yarn:line:e767dc51",
+        "yarn:line:7c9fe106",
+        "yarn:line:707d2693",
+        "yarn:line:118a51bb"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:1642b6f1",
+        "yarn:line:e767dc51",
+        "yarn:line:7c9fe106",
+        "yarn:line:707d2693",
+        "yarn:line:118a51bb"
+      ],
+      "reason": "Review both farewell branches and the five stock scales expressions across the three dragons."
+    },
+    "yarn:line:e767dc51": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_Outro",
+          "firstInstruction": 45,
+          "lastInstruction": 67
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:1642b6f1",
+        "yarn:line:e767dc51",
+        "yarn:line:7c9fe106",
+        "yarn:line:707d2693",
+        "yarn:line:118a51bb"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:1642b6f1",
+        "yarn:line:e767dc51",
+        "yarn:line:7c9fe106",
+        "yarn:line:707d2693",
+        "yarn:line:118a51bb"
+      ],
+      "reason": "Review both farewell branches and the five stock scales expressions across the three dragons."
+    },
+    "yarn:line:0371fb9c": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_romance_route",
+          "firstInstruction": 40,
+          "lastInstruction": 79
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:8c8591ec",
+        "yarn:line:1ab5969b",
+        "yarn:line:a0e49f02",
+        "yarn:line:0371fb9c"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:a0e49f02",
+        "yarn:line:0371fb9c",
+        "yarn:line:36d49875",
+        "yarn:line:b920f205"
+      ],
+      "reason": "Review the invitation, both choice labels, no-romance annotation and both branch responses; preserve markup and option target 75."
+    }
+  }
+}
