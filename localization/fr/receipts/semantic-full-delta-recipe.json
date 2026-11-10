@@ -1,0 +1,548 @@
+{
+  "schema": 1,
+  "locale": "fr",
+  "beforeSha256": "94a770766b67a6be5f9337bb174543c010826ec87450b18f5c6e1dbf0e0f0325",
+  "afterSha256": "a36abea5b6e44ec3a3559ad78bbe6a35dee0b24c4e239d52b918ae0df6da75cb",
+  "edits": {
+    "yarn:line:8c8591ec": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_5_romance_route",
+          "firstInstruction": 0,
+          "lastInstruction": 79
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:33a79dbe",
+        "yarn:line:e8a38ed0",
+        "yarn:line:7e9389a7",
+        "yarn:line:dd06ed39",
+        "yarn:line:4b36ea4e",
+        "yarn:line:607a5c47",
+        "yarn:line:8c8591ec",
+        "yarn:line:3ed6ab5d",
+        "yarn:line:8487a2c4",
+        "yarn:line:83aa1a23"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Université conflicts with established collège wording for the same institution, also corrected in earlier Alexander scenes."
+    },
+    "yarn:line:3ed6ab5d": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_Outro",
+          "firstInstruction": 4,
+          "lastInstruction": 36
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:33a79dbe",
+        "yarn:line:e8a38ed0",
+        "yarn:line:7e9389a7",
+        "yarn:line:dd06ed39",
+        "yarn:line:4b36ea4e",
+        "yarn:line:607a5c47",
+        "yarn:line:8c8591ec",
+        "yarn:line:3ed6ab5d",
+        "yarn:line:8487a2c4",
+        "yarn:line:83aa1a23"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "The college is the same institution as the named Collège communautaire in the immediately following option."
+    },
+    "yarn:line:83aa1a23": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_Outro",
+          "firstInstruction": 4,
+          "lastInstruction": 36
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:33a79dbe",
+        "yarn:line:e8a38ed0",
+        "yarn:line:7e9389a7",
+        "yarn:line:dd06ed39",
+        "yarn:line:4b36ea4e",
+        "yarn:line:607a5c47",
+        "yarn:line:8c8591ec",
+        "yarn:line:3ed6ab5d",
+        "yarn:line:8487a2c4",
+        "yarn:line:83aa1a23"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "The same branch refers to the established college."
+    },
+    "yarn:line:159a1d54": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_Outro",
+          "firstInstruction": 4,
+          "lastInstruction": 36
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:a5979ac9",
+        "yarn:line:159a1d54",
+        "yarn:line:a5a8a9d5",
+        "yarn:line:1ff9a04c",
+        "yarn:line:18d418ab",
+        "yarn:line:8ee41fdc",
+        "yarn:line:c56ee060"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "The physical ornamental head crest is established as crête in the later question branch; blason here changes the referent."
+    },
+    "yarn:line:bc6cc4d2": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_questions",
+          "firstInstruction": 3,
+          "lastInstruction": 283
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The response addresses the player with masculine gender absent from the English."
+    },
+    "yarn:line:0121c874": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Intro_4",
+          "firstInstruction": 21,
+          "lastInstruction": 253
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Conrad arrives at the wash for service; the source refers to the business being open. The current French addresses the player as personally open and assigns masculine agreement."
+    },
+    "yarn:line:d3b6d22a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_required_2",
+          "firstInstruction": 4,
+          "lastInstruction": 118
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The dialogue or player option refers to the player with masculine agreement absent from the English source."
+    },
+    "yarn:line:f3b5952a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Ryan_Romanced",
+          "firstInstruction": 0,
+          "lastInstruction": 48
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Player option imposes masculine agreement absent from the source."
+    },
+    "yarn:line:c2f44537": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_2_Outro",
+          "firstInstruction": 6,
+          "lastInstruction": 120
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The current wording asserts that she returned home; the source says she was home before Ryan and works from home."
+    },
+    "yarn:line:cb1d1197": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_3_Outro",
+          "firstInstruction": 4,
+          "lastInstruction": 53
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Companion sentence adjusted to preserve grammar and gender-neutral reference across the following friendship line."
+    },
+    "yarn:line:5d2d16e0": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_3_Outro",
+          "firstInstruction": 4,
+          "lastInstruction": 53
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Ryan asks whether he can consider the player a good friend; avoid assigning the player a masculine identity while retaining the friendship."
+    },
+    "yarn:line:cc4e48a3": {
+      "sceneSpans": [
+        {
+          "node": "RyanExploded_Intro",
+          "firstInstruction": 4,
+          "lastInstruction": 38
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The preceding English identifies the alchemist but does not establish their gender."
+    },
+    "yarn:line:9ca994a5": {
+      "sceneSpans": [
+        {
+          "node": "RyanExploded_OutroDirty",
+          "firstInstruction": 4,
+          "lastInstruction": 16
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The player option assumes masculine agreement absent from the English."
+    },
+    "yarn:line:aaecba3d": {
+      "sceneSpans": [
+        {
+          "node": "RyanExploded_OutroSoapy",
+          "firstInstruction": 4,
+          "lastInstruction": 16
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The player option assumes masculine agreement absent from the English."
+    },
+    "yarn:line:f716a163": {
+      "sceneSpans": [
+        {
+          "node": "RyanDate_Intro",
+          "firstInstruction": 4,
+          "lastInstruction": 17
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Masculine player agreement is not established in the English."
+    },
+    "yarn:line:0a0e6773": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_grapes_dialog",
+          "firstInstruction": 4,
+          "lastInstruction": 69
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Ryan addresses one familiar player; preserve tutoiement."
+    },
+    "yarn:line:73ea230a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_finished_mount_3",
+          "firstInstruction": 7,
+          "lastInstruction": 72
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The dialogue or player option refers to the player with masculine agreement absent from the English source."
+    },
+    "yarn:line:b032bfb1": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_intro",
+          "firstInstruction": 21,
+          "lastInstruction": 217
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:b71f0756",
+        "yarn:line:b032bfb1",
+        "yarn:line:efea7148",
+        "yarn:line:da4f12a1",
+        "yarn:line:e62b989c",
+        "yarn:line:e106207b"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Firsthand discovery, not hearsay."
+    },
+    "yarn:line:da4f12a1": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_intro",
+          "firstInstruction": 21,
+          "lastInstruction": 217
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:b71f0756",
+        "yarn:line:b032bfb1",
+        "yarn:line:efea7148",
+        "yarn:line:da4f12a1",
+        "yarn:line:e62b989c",
+        "yarn:line:e106207b"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Parallel firsthand discovery, not hearsay."
+    },
+    "yarn:line:e106207b": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_intro",
+          "firstInstruction": 21,
+          "lastInstruction": 217
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:b71f0756",
+        "yarn:line:b032bfb1",
+        "yarn:line:efea7148",
+        "yarn:line:da4f12a1",
+        "yarn:line:e62b989c",
+        "yarn:line:e106207b"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Parallel firsthand discovery, not hearsay."
+    },
+    "yarn:line:c10d9415": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_Required_ryan_conrad_romanced",
+          "firstInstruction": 0,
+          "lastInstruction": 58
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Ryan thanks the player for caring for Conrad; avoid masculine agreement."
+    },
+    "yarn:line:18707b19": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_Outro_conrad_romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 44
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Player option; avoid masculine agreement."
+    },
+    "yarn:line:75206eee": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_Outro_conrad_romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 44
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Player option; avoid masculine agreement."
+    },
+    "yarn:line:3b01eb3b": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_Outro_ryan_conrad_romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 47
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Parallel player option; avoid masculine agreement."
+    },
+    "yarn:line:46c6a3ed": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_5_Outro_ryan_conrad_romanced",
+          "firstInstruction": 2,
+          "lastInstruction": 47
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Parallel player option; avoid masculine agreement."
+    },
+    "yarn:line:a6c1f2f4": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Player option; avoid unsupported masculine agreement."
+    },
+    "yarn:line:09e5bf43": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Ryan addresses the player in the romance branch; avoid unsupported masculine agreement."
+    },
+    "yarn:line:cd9b2a8f": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Player option in the Ryan romance route; avoid unsupported masculine agreement."
+    },
+    "yarn:line:079b3782": {
+      "sceneSpans": [
+        {
+          "node": "ryan_food_dialogue",
+          "firstInstruction": 9,
+          "lastInstruction": 440
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Ryan addresses the player in the Conrad romance route; preserve the friendship without unsupported masculine identity."
+    },
+    "yarn:line:ce21622a": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_SexScene_Cum",
+          "firstInstruction": 8,
+          "lastInstruction": 92
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The player response introduces masculine grammatical gender absent from the English."
+    },
+    "yarn:line:0bc044da": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene_Cum",
+          "firstInstruction": 7,
+          "lastInstruction": 67
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The dialogue or player option refers to the player with masculine agreement absent from the English source."
+    },
+    "yarn:line:9addfb4a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene_Cum",
+          "firstInstruction": 7,
+          "lastInstruction": 67
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The dialogue or player option refers to the player with masculine agreement absent from the English source."
+    },
+    "yarn:line:7f543c2a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene_Cum",
+          "firstInstruction": 7,
+          "lastInstruction": 67
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The dialogue or player option refers to the player with masculine agreement absent from the English source."
+    },
+    "yarn:line:f0a0565a": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_SexScene_Cum",
+          "firstInstruction": 7,
+          "lastInstruction": 67
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "The dialogue or player option refers to the player with masculine agreement absent from the English source."
+    },
+    "yarn:line:c35b717a": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_4_JerkOff_Start",
+          "firstInstruction": 2,
+          "lastInstruction": 3
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Ryan addresses the player; the current adjective assumes masculine gender."
+    },
+    "yarn:line:9369755d": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_SexScene",
+          "firstInstruction": 0,
+          "lastInstruction": 11
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Ryan addresses the player; avoid unsupported masculine agreement."
+    },
+    "yarn:line:33a79dbe": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_1_intro",
+          "firstInstruction": 4,
+          "lastInstruction": 52
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:33a79dbe",
+        "yarn:line:e8a38ed0",
+        "yarn:line:7e9389a7",
+        "yarn:line:dd06ed39",
+        "yarn:line:4b36ea4e",
+        "yarn:line:607a5c47",
+        "yarn:line:8c8591ec",
+        "yarn:line:3ed6ab5d",
+        "yarn:line:8487a2c4",
+        "yarn:line:83aa1a23"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "College terminology correction established in the first author audit batch; included in full audit delta."
+    },
+    "yarn:line:e8a38ed0": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_2",
+          "firstInstruction": 2,
+          "lastInstruction": 26
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:33a79dbe",
+        "yarn:line:e8a38ed0",
+        "yarn:line:7e9389a7",
+        "yarn:line:dd06ed39",
+        "yarn:line:4b36ea4e",
+        "yarn:line:607a5c47",
+        "yarn:line:8c8591ec",
+        "yarn:line:3ed6ab5d",
+        "yarn:line:8487a2c4",
+        "yarn:line:83aa1a23"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "College terminology correction established in the first author audit batch; included in full audit delta."
+    }
+  }
+}
