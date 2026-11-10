@@ -327,3 +327,7 @@ The complete `Start` group was reread in both builds: 24 rows, consisting of an 
 ### Resume-08 Ryan egg row-level unit
 
 Both author self-review layers cover all nine paired `Ryan_egg_dialog` rows, choices and their answers, with individual row and ordered-scene hashes in `glossary-row-review-resume-08.json`. Ryan discusses the egg with the player; `line:dcc4774b` identifies WingCo as the shop where it was bought, not the downtown venue Wings. The bound Ryan, player, kobold, dragon and WingCo fields fit this scene, and player gender remains unestablished. No field defect was found in this bounded scene; neither author layer is independent.
+
+### Resume-08 Ryan intimacy row-level unit
+
+Both author self-review layers examined all eight paired rows in `Ryan_SexScene` and `Ryan_SexScene_Loop`, recorded with individual and scene hashes in `glossary-row-review-resume-08.json`. The kobold species references and context-dependent Yip are indexed; the bound Italian fields do not show a defect. Individual unprefixed voice assignments are deliberately unresolved: the paired text and scope row do not prove a speaker, and the scene name alone is insufficient. Routing evidence is needed before those individual references can be claimed fully resolved. These are author self-reviews, not independent review.

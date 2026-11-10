@@ -598,6 +598,138 @@
           "conceptUses": []
         }
       ]
+    },
+    {
+      "group": "Ryan_SexScene",
+      "orderedRowsSha256": "f2feee0061b9a483210a98cb0a2780ce0f03379283b6d7d2ccc91f6b8c4bb595",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-kobold",
+          "sourceEntrySha256": "655be37c2da8a22f692dbac404a5811b4227a465b44d7c6c85bc35af64f51df3",
+          "localeFieldsSha256": "8a1ac2a388a6bd2ea4517b1b90a93ddd9bb82862e39762fe8fcbf986a3f688b3"
+        },
+        {
+          "id": "dnw-yip",
+          "sourceEntrySha256": "732298762db192f5e97009d5a3babdf06857b777d65975115662abe32637b079",
+          "localeFieldsSha256": "649610e6e5ee14c04df3df24b4118f349f79952954c42995d92625488a26e8e9"
+        }
+      ],
+      "groupContext": "Ryan/player branch, but these unprefixed isolated rows do not themselves prove each voice. Kobold describes species; Yip is a context-sensitive vocalization.",
+      "layer1": "Author source self-review: all paired rows reviewed; explicit species and vocalization indexed and uncertain individual voice routing preserved.",
+      "layer2": "Author Italian field self-review: player neutrality and the bound Ryan, kobold and Yip fields fit the use; no defect demonstrated in these scenes. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:9369755d",
+          "pairedRowSha256": "4ea0590105812e39065fee20193c703305f2b4dda6cb0d79ec5665217595323b",
+          "speakerOrKind": "unresolved individual voice",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A participant asks about fit; this isolated row does not name either speaker or addressee."
+        },
+        {
+          "id": "yarn:line:0274cacd",
+          "pairedRowSha256": "c6de8af8a48a5992eec3e0f8c1d49b7d408f888b5eeb9ea80b45498e20138d81",
+          "speakerOrKind": "unresolved individual voice",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-kobold"
+          ],
+          "decision": "A participant states that kobolds are flexible; the plural refers to the species, not a named character."
+        },
+        {
+          "id": "yarn:line:9444cdba",
+          "pairedRowSha256": "c0a1268ec34ea0764580648f5f6465df9543ed64761623d25a0d0e8de4bf57ff",
+          "speakerOrKind": "unresolved individual voice",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-yip"
+          ],
+          "decision": "The kobold vocalization occurs as a response; context governs its sense."
+        },
+        {
+          "id": "yarn:line:f3af3ce8",
+          "pairedRowSha256": "b9042880c126d90a54004cd0736b9d06b518903558f5ac19926f9977a8244cd3",
+          "speakerOrKind": "unresolved individual voice",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A participant asks the other to signal discomfort; this row does not name the speaker or addressee."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_SexScene_Loop",
+      "orderedRowsSha256": "b1bed497f16f9c0826b1ebc522a2c430778ef3b58b3ca39456491c40efd846ee",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-kobold",
+          "sourceEntrySha256": "655be37c2da8a22f692dbac404a5811b4227a465b44d7c6c85bc35af64f51df3",
+          "localeFieldsSha256": "8a1ac2a388a6bd2ea4517b1b90a93ddd9bb82862e39762fe8fcbf986a3f688b3"
+        },
+        {
+          "id": "dnw-yip",
+          "sourceEntrySha256": "732298762db192f5e97009d5a3babdf06857b777d65975115662abe32637b079",
+          "localeFieldsSha256": "649610e6e5ee14c04df3df24b4118f349f79952954c42995d92625488a26e8e9"
+        }
+      ],
+      "groupContext": "Ryan/player branch, but these unprefixed isolated rows do not themselves prove each voice. Kobold describes species; Yip is a context-sensitive vocalization.",
+      "layer1": "Author source self-review: all paired rows reviewed; explicit species and vocalization indexed and uncertain individual voice routing preserved.",
+      "layer2": "Author Italian field self-review: player neutrality and the bound Ryan, kobold and Yip fields fit the use; no defect demonstrated in these scenes. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:b2d99a43",
+          "pairedRowSha256": "7c504e80e3e877d6127c29bc6a35536982fadb7c78eaf833504f5e3c2b181113",
+          "speakerOrKind": "unresolved individual voice",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An unnamed speaker reacts; the row alone does not identify a character."
+        },
+        {
+          "id": "yarn:line:088893da",
+          "pairedRowSha256": "e9fcc237c40eff196f3a388cdddc678f1847985eb85d04e5cceebe67145f4af6",
+          "speakerOrKind": "unresolved individual voice",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-kobold"
+          ],
+          "decision": "A participant says this is their first time with a kobold; this is a species reference and the row alone does not identify the speaker."
+        },
+        {
+          "id": "yarn:line:9eb894ad",
+          "pairedRowSha256": "67f44f176ca5cb2ac439a6d89e7d7a7ab4f0d1064bff7e458c06a31230e74638",
+          "speakerOrKind": "unresolved individual voice",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An unnamed speaker evaluates the experience."
+        },
+        {
+          "id": "yarn:line:3d2df033",
+          "pairedRowSha256": "63e54ee695fb36ca17acae0343f5baeef8bd1d588acce0628e7f9c203b0cc01f",
+          "speakerOrKind": "unresolved individual voice",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A pause contains no identified referent."
+        }
+      ]
     }
   ]
 }
