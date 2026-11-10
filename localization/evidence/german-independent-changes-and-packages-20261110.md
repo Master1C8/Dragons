@@ -1,0 +1,11 @@
+# German independent correction and package checks
+
+Both checks bind the German translation in `23e37bb`, SHA-256 `17cd7c687560565daf6640d0c31fc6f9791453f069686d31fef81da3074af9b2`, with 1,947 authored IDs.
+
+The coordinator independently compared all 28 changed-scene and glossary-referent IDs in the effective delta. `Zierkamm`, the shorter contextual `Kamm` and the explicit `Familienzierkamm` preserve the distinction between Alexander’s visible ornament and the later family explanation. Conrad’s reply answers whether he is well and keeps the separate options and medkit term. Both stock programs confirm their destinations. The 55 protected-context bindings match the source inventory and are excluded from the authored payload.
+
+The coordinator also reviewed the 20 display positions of `Ryan_2_intro`. Both pinned programs say `The markers were fun.` at instruction 29. The full program search found no other occurrence of marker, market or paintball as a source word. Ryan went out with friends and returns for a wash, which does not establish a specific referent. Accept the literal `Die Marker haben Spaß gemacht.` to preserve that source ambiguity. The German payload remains unchanged. The other 408 positions in the 437-ID independent dependency closure still require their scoped reading.
+
+The two existing package candidates matched freshly rebuilt references. The macOS verifier covered 284 files and 10,973 protected component fields. The Windows verifier covered all 13 ZIP members and 10,936 protected component fields. The macOS app was installed and removed in a disposable Applications directory and passed strict signature checks. The Windows replacement ZIP was applied to a full stock copy and restored. The Windows test rejected modified stock before writes, recovered from an injected interruption, verified all installed values, and restored the original tree. Both original stock trees remained unchanged.
+
+The package and review receipt is `localization/work/de-independent-verification-20261110.OGzVbR/review-and-packages.json`, SHA-256 `2addbe7689c2b0354ded199147ad8984ed0e77f8a72cacac9dc427e106a08c69`. It contains the package paths, fingerprints, comparison and install receipts, exact reviewed IDs and source bindings. Current-package gameplay, visual fit and native Windows execution remain pending.
