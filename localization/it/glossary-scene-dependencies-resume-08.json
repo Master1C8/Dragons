@@ -3218,31 +3218,169 @@
       "group": "Conrad_SexScene",
       "orderedRowsSha256": "7d38ab6b046ed4496102bc97ef00754067cf4ddd386d9daf1f713506278c8daf",
       "count": 3,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Conrad and player exchange remarks in an intimate scene; the reply with a full mouth does not independently establish player gender.",
+      "layer1": "Source read: preserve the exchange and participant routing.",
+      "layer2": "Italian field read: no change to either character entry demonstrated; preserve unspecified player gender.",
+      "sourceIds": [
+        "yarn:line:77c996e8",
+        "yarn:line:a78dd44b",
+        "yarn:line:31bdd33c"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-intimacy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_SexScene_Cum",
       "orderedRowsSha256": "28561e16a60b55895b83e0d77f0e5d23e9b8cc069308d19e487e823fba67ed17",
       "count": 11,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {
+        "dnw-conrad": [
+          "yarn:line:0cedfc3d"
+        ]
+      },
+      "referents": "Conrad and player discuss readiness with alternative responses; the subsequent return is to a club, unnamed in this group.",
+      "layer1": "Source read: readiness choices are distinct and Conrad is explicitly named.",
+      "layer2": "Italian field read: retain response routing, timing and unknown player gender; do not infer a named venue solely here.",
+      "sourceIds": [
+        "yarn:line:0bc044da",
+        "yarn:line:9df043ad",
+        "yarn:line:9addfb4a",
+        "yarn:line:0cedfc3d",
+        "yarn:line:7f543c2a",
+        "yarn:line:e9643b5d",
+        "yarn:line:c50535b3",
+        "yarn:line:533532c4",
+        "yarn:line:6690512d",
+        "yarn:line:f0a0565a",
+        "yarn:line:4af15fc3"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-intimacy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_SexScene_Loop",
       "orderedRowsSha256": "279ae0dfe720f62e674773f3333d98a20642aa8928c1de5d7d6578ed69c4d5f5",
       "count": 4,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Conrad and player continue their intimate interaction; short pronouns alone establish no further named participants or player gender.",
+      "layer1": "Source read: preserve conversational voice and participant routing.",
+      "layer2": "Italian field read: no glossary correction established; maintain unspecified player gender.",
+      "sourceIds": [
+        "yarn:line:2f9b499a",
+        "yarn:line:b9ab4eed",
+        "yarn:line:1a3e2a73",
+        "yarn:line:8c0e2d04"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-intimacy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_finished_jerkoff_3",
       "orderedRowsSha256": "3251dcc3eb5bf5ea39d8282816f524f42c634c9bae5fac5f8d5d40d3de818e7a",
       "count": 15,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-kobold",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-player": [
+          "yarn:line:c1b8e62b"
+        ],
+        "dnw-kobold": [
+          "yarn:line:c1b8e62b"
+        ],
+        "dnw-mount": [
+          "yarn:line:8a321997",
+          "yarn:line:29a77d09",
+          "yarn:line:bf977a7e"
+        ]
+      },
+      "referents": "The kobold addressed in context is the player; the mount is the adult device being considered and then fetched, not a riding animal or display stand. The player remains ungendered in source.",
+      "layer1": "Source read: distinguish the kobold participant from the device and preserve alternating responses.",
+      "layer2": "Italian field read: the bound mount concept fits the adult context; no change demonstrated.",
+      "sourceIds": [
+        "yarn:line:496134bc",
+        "yarn:line:eaf45022",
+        "yarn:line:7cc45755",
+        "yarn:line:c6955ecc",
+        "yarn:line:50a559bb",
+        "yarn:line:5788e15c",
+        "yarn:line:c1b8e62b",
+        "yarn:line:3063100e",
+        "yarn:line:a6531779",
+        "yarn:line:1c021ee0",
+        "yarn:line:8a321997",
+        "yarn:line:29a77d09",
+        "yarn:line:bf977a7e",
+        "yarn:line:05c673e7",
+        "yarn:line:93f67490"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-intimacy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_finished_mount_3",
       "orderedRowsSha256": "f27e8fdf0ed7a6a1ebe899511eb1da5e00d7cb8bac124e4d799fb7a544925ac7",
       "count": 16,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-dragon",
+        "dnw-dragon-washer",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-dragon-washer": [
+          "yarn:line:73ea230a",
+          "yarn:line:c9bb2a93"
+        ],
+        "dnw-dragon": [
+          "yarn:line:c9bb2a93"
+        ]
+      },
+      "referents": "The certified cleaner addressed is the player; 'dragons' is generic in the joke about cleaning school. A source apostrophe differs on macOS and Windows at line:aeae4744.",
+      "layer1": "Source read: distinguish the player's cleaning profession from the sexual joke; retain paired build difference.",
+      "layer2": "Italian field read: the dragon and washer concepts fit in context; no demonstrated field defect.",
+      "sourceIds": [
+        "yarn:line:0d3b23da",
+        "yarn:line:9b0b24ad",
+        "yarn:line:215a2d34",
+        "yarn:line:b76a2a43",
+        "yarn:line:82cf49aa",
+        "yarn:line:14ff4edd",
+        "yarn:line:389e4033",
+        "yarn:line:aeae4744",
+        "yarn:line:3fb3f8d4",
+        "yarn:line:a983ffa3",
+        "yarn:line:73ea230a",
+        "yarn:line:e5da247d",
+        "yarn:line:5f8b2de4",
+        "yarn:line:6a2e4e0d",
+        "yarn:line:c9bb2a93",
+        "yarn:line:fc1e497a"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-intimacy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_idle_3_1",
@@ -3300,7 +3438,39 @@
       "group": "Conrad_placed_mount_3",
       "orderedRowsSha256": "21b8ce242ce5d79c2fc998c002619af99547b38a89d15f6cb6e1419d153c6b0d",
       "count": 12,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-mount": [
+          "yarn:line:cc6e7856",
+          "yarn:line:1d9b3531",
+          "yarn:line:926f5f41",
+          "yarn:line:9542e7a6"
+        ]
+      },
+      "referents": "The mount and 'this thing' are the same adult device; the speaker contrasts being physically clean with a sexual meaning of dirty. The wordplay does not establish another character.",
+      "layer1": "Source read: disambiguate physical dirt from sexual innuendo and device reference.",
+      "layer2": "Italian field read: preserve mount concept and deliberate double sense without changing glossary fields.",
+      "sourceIds": [
+        "yarn:line:cc6e7856",
+        "yarn:line:5a5e7f21",
+        "yarn:line:31fa3bdf",
+        "yarn:line:0372e0d1",
+        "yarn:line:a7ca3ca8",
+        "yarn:line:1d9b3531",
+        "yarn:line:8bab3246",
+        "yarn:line:283e56d8",
+        "yarn:line:be0e51af",
+        "yarn:line:045f5836",
+        "yarn:line:926f5f41",
+        "yarn:line:9542e7a6"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-intimacy-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_required_1",
