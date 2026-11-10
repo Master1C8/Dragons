@@ -335,3 +335,9 @@ Author self-reviewed the remaining 15 IDs in `Ryan_5_Required_ryan_romanced`, pr
 Author self-reviewed 42 IDs in the three `Ryan_5_Outro` relationship branches, preserving their distinct relationship outcomes and responses. This is author self-review, not independent audit.
 
 `translation.json` now has **1,289 / 1,947 IDs**, SHA-256 `6fc7f555112538776da6c2bace73be030c36859460bdcbf8d5031ecce1d4a376`. `resume-01/add-ryan-five-outros.py` and `resume-01/ryan-five-outros-map.py` validate the preceding draft and paired readers; macOS accepts 1,289 and Windows 1,283 bindings. The complete guard reports 658 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Level 2 interface and credits text — continuation
+
+Author self-reviewed the remaining 42 extracted `UI/level2` IDs, including sound attributions, credit roles, pause controls and the placeholder ending text. Newlines and distinct Windows-only controls are retained; no texture content was modified. This is author self-review, not independent audit.
+
+`translation.json` now has **1,331 / 1,947 IDs**, SHA-256 `1f9468b162c18a8331e93b83c487985ec52b250c54226dda6198e2de7143f5f3`. `resume-01/add-ui-level-two.py` and `resume-01/ui-level-two-map.py` validate the preceding draft and paired readers; macOS accepts 1,327 and Windows 1,325 bindings. The complete guard reports 616 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
