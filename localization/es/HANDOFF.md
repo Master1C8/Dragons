@@ -82,3 +82,7 @@ Three additional special decisions and 13 IDs were author self-reviewed and chec
 ### Ryan relationship batch
 
 Two additional special decisions and 28 IDs are author self-reviewed in [special-ryan-relationships.md](special-ryan-relationships.md), with separate stock-source object read-backs. One pause is intentionally unchanged. Current total: 98/1,947 authored IDs and 13/27 special decisions. Fourteen special decisions remain before ordinary translation; final package, runtime/visual and independent editorial audit remain pending.
+
+### Alexander question-state batch
+
+The seven question labels and their once-state contract are author self-reviewed in [special-alexander-question-state.md](special-alexander-question-state.md), with both stock-source object read-backs and a source-mismatch negative check per build. Five labels are newly authored; two were already counted in previous groups. Current total: 103/1,947 authored IDs and 14/27 special decisions. Thirteen special decisions remain before ordinary text. Independent game-text audit, final packages and final runtime/visual checks remain pending.
