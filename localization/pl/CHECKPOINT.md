@@ -323,3 +323,9 @@ Author self-reviewed 45 IDs in `Ryan_5_intro`, preserving the three relationship
 Author self-reviewed 39 IDs in the Conrad romance and Conrad/Ryan relationship branches of `Ryan_5_Required`, retaining the distinct relationships, dialogue options and source markup. This is author self-review, not independent audit.
 
 `translation.json` now has **1,232 / 1,947 IDs**, SHA-256 `ca929078fca871fb5c68cc56bd1f86062444ff06e93a5ee99c0a27fbee8ecab8`. `resume-01/add-ryan-five-relationships.py` and `resume-01/ryan-five-relationships-map.py` validate the preceding draft and paired readers; macOS accepts 1,232 and Windows 1,226 bindings. The complete guard reports 715 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Ryan fifth visit: date planning — continuation
+
+Author self-reviewed the remaining 15 IDs in `Ryan_5_Required_ryan_romanced`, preserving the previously reviewed date choices and distinguishing Ryan's offer to carry the player from the wash device. This is author self-review, not independent audit.
+
+`translation.json` now has **1,247 / 1,947 IDs**, SHA-256 `c662d0a3ad6a7a5dcf2b0557057676e0ffd0f77c2129b60df77e46c2d5813637`. `resume-01/add-ryan-five-date.py` and `resume-01/ryan-five-date-map.py` validate the preceding draft and paired readers; macOS accepts 1,247 and Windows 1,241 bindings. The complete guard reports 700 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
