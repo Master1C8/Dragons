@@ -111,3 +111,11 @@ Compared the mount placement, both action completions, action start and idle res
 Finding pending disposition: `yarn:line:12e8ae42` is literally understandable but `użyj rąk na moim kutasie` is unnatural Polish for the sexual instruction. Consider idiomatic wording that preserves directness and the reason Conrad gives.
 
 Cumulative distinct IDs read: 864 / 1,947; 1,083 remain. Author review only; independent acceptance remains pending.
+
+## Conrad fourth visit: introductions and question opening: 61 IDs read
+
+Compared the three relationship introductions, their conditional recovery choices, and the alternatives introducing Conrad's question against both stock English builds and current Polish. The berries answer recurs in distinct paths, while the date with the player, meeting Ryan and ordinary visit stay distinct. The source-bound `special-scenes/romance-routes.json` describes relationship choices, but this reading does not demonstrate flag selection or transitions; the repeated `Conrad_required_4` options are conditional alternatives. Actual route execution and fit remain unrun.
+
+Finding pending disposition: `yarn:line:07bd7f57` uses masculine `Zrobiłeś` for the player, whose gender is not specified in English. It also forms a two-line interrupted question with `yarn:line:6c193ba9`; revise that dependency together without losing the awkward flirtation or the subsequent aside.
+
+Cumulative distinct IDs read: 925 / 1,947; 1,022 remain. Author review only; independent acceptance remains pending.

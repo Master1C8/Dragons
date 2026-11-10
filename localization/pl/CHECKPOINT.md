@@ -478,3 +478,7 @@ Author compared 62 IDs in `semantic-audit-conrad-third-route.json`; cumulative 8
 ### Semantic audit continuation: Conrad third-visit actions
 
 Author compared 50 IDs in `semantic-audit-conrad-third-actions.json`; cumulative 864/1,947, 1,083 remain. One additional wording finding is recorded in `semantic-audit-progress.md`; action triggers remain untested. Translation SHA-256 remains `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; runtime, visual and independent acceptance remain open.
+
+### Semantic audit continuation: Conrad fourth-visit introduction
+
+Author compared 61 IDs in `semantic-audit-conrad-fourth-intro.json`; cumulative 925/1,947, 1,022 remain. A player-gender and adjacent-line dependency finding awaits disposition in `semantic-audit-progress.md`. Translation SHA-256 remains `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; live routes, visual and independent acceptance remain open.
