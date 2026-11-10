@@ -221,3 +221,9 @@ Author self-reviewed 47 additional source-bound IDs across `Alexander_5_intro` a
 Author self-reviewed 39 additional IDs in `Alexander_5_romance_route` and `Alexander_5_Outro`, preserving both previously reviewed relationship choice targets and their markup. A source-fidelity review also restored the explicit species reference in `yarn:line:61c8781b` from the earlier third visit; its source says Alexander wants only this kobold to wash him. This is author self-review, not independent audit.
 
 `translation.json` now has **642 / 1,947 IDs**, SHA-256 `2df723d0f267d696f1003e85086fc145d26654a7fae5de5022b6ada7d9ea513f`. `resume-01/add-alexander-fifth-visit-ending.py` and `resume-01/fifth-visit-ending-map.py` validate the preceding draft and paired readers; macOS accepts 642 and Windows 636 bindings. The complete guard reports 1,305 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue with the remaining English-source groups.
+
+### Alexander general wash and departure — continuation
+
+Author self-reviewed 20 further IDs from `Alexander_Dirty`, `Alexander_Idle1`–`3`, `Alexander_Outro` and `Alexander_Soapy`, including the college-name response. The established glossary spelling `Igwyx` and `Społeczne Kolegium Taumaturgii w Burnswick` are retained. This is author self-review, not independent audit.
+
+`translation.json` now has **662 / 1,947 IDs**, SHA-256 `c87e500f84580f9368f546d8160c32ac60eddc6a05271bed885435ab8a245de6`. `resume-01/add-alexander-general.py` and `resume-01/alexander-general-map.py` validate source binding, paired readers and the speaker contract; macOS accepts 662 and Windows 656 bindings. The complete guard reports 1,285 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating the remaining English-source groups.
