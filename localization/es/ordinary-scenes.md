@@ -49,3 +49,7 @@ Author self-reviewed 35 IDs in the injured and early Conrad scenes and phone tut
 ## Ryan date
 
 Author self-reviewed 19 IDs in the date introduction, conversation and idle, retaining the reference to Conrad and the dragon eating exchange. Both stock source readers and object encode/parse passed: macOS SHA-256 `c73f2560e235e7fcfe68a812d974d0f811f6902c2ed6c34caf90014eacb0342c`; Windows `761705857af7c56b6b4aa5b20cb09bb6e40b6162baa5ad9839000836dc717822`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary12/`.
+
+## Ryan muddy wash
+
+Author self-reviewed 27 IDs in the muddy wash, idle remarks and player prompts, preserving equipment references and wash-state distinctions. Both stock source readers and object encode/parse passed: macOS SHA-256 `33342b3eb98abd73ecdb10252032dd9745aeee77d7e830510ae34b75cada7bfd`; Windows `43b80672bc5e97c77a93abeb197cad867f13ecf1920f948a2c71e6524d9b94bf`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary13/`.
