@@ -180,3 +180,11 @@ Compared the three relationship-specific arrivals, discussions, exits, debug-sta
 Findings pending disposition: `yarn:line:eaafe671` is an awkward wash-completion sentence; compare equivalent `116f0e16`. `yarn:line:4fc4259c` uses masculine `gotów`: check the actual speaker and adjacent dialogue before deciding whether it unnecessarily genders the player.
 
 Cumulative distinct IDs read: 1,572 / 1,947; 375 remain. Author review only; independent acceptance remains pending.
+
+## Other Ryan and injured Conrad encounters: 125 IDs read
+
+Compared muddy Ryan’s opening, idle prompts, wash state and goodbye; the alchemist accident and clean/dirty/soapy exits; Ryan bringing a date to the busy player; and injured Conrad’s responses and exits, in both English builds and Polish. Max and the alchemist are not assigned an invented gender. The wash-state alternatives remain distinct and the date food and Conrad’s difficult situation retain context. These node names do not establish their actual activation or current-payload display.
+
+Findings pending disposition: `yarn:line:21235886` and `yarn:line:7ead92b1` use awkward `podejść z przodu` for coming round to where Ryan can see the player; compare both prompts. `yarn:line:f716a163` literally brings the date to the player; assess a more natural rendering while preserving his playful premise.
+
+Cumulative distinct IDs read: 1,697 / 1,947; 250 remain. Author review only; independent acceptance remains pending.
