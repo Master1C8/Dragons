@@ -319,3 +319,7 @@ Two author self-review layers reconciled five previously read groups / 81 paired
 ### Resume-08 Ryan and Conrad row-level unit
 
 The three `Ryan_Conrad_SexScene`, `Ryan_Conrad_SexScene_Cum` and `Ryan_Conrad_SexScene_Loop` groups were reread as complete paired scenes and reconciled row by row in `glossary-row-review-resume-08.json`: 22 ordered rows, each with a full paired-row hash, scene hash, speaker or choice classification and referent decision. Both bound character entries and the dragon-species entry were read against both source and Italian fields in separate author self-review layers. The two choice pairs use “they” for Ryan and Conrad; `line:3ce891ff` is the unusual literal third-person Conrad statement, not evidence that a different character speaks. No glossary field defect was established in these scenes. The other 190 groups and per-entry corpus unions are not covered by this row-level unit. Self-review is not independent review.
+
+### Resume-08 Start diagnostic row-level unit
+
+The complete `Start` group was reread in both builds: 24 rows, consisting of an unidentified voice reacting to a Yarn/Unity script and numbered test lines. The two author self-review layers found no grounded in-world character or glossary concept; first person is not attributed to the player or any named character. Every paired row and the ordered group are hash-bound in `glossary-row-review-resume-08.json`. This negative finding applies only to this sequence and is not an independent review.

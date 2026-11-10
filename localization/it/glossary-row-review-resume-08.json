@@ -291,6 +291,184 @@
           "decision": "Conrad addresses Ryan."
         }
       ]
+    },
+    {
+      "group": "Start",
+      "orderedRowsSha256": "77c2bab95ec1c94a9e25388add0b1f38fff57ed2d650bde1c409f4d2fbfd5526",
+      "applicableEntries": [],
+      "groupContext": "Developer-style Yarn/Unity excitement and numbered test lines. No identity or in-world glossary concept is established; the first-person speaker is unspecified.",
+      "layer1": "Author source self-review: all 24 paired rows read; no source text establishes any glossary character or concept use.",
+      "layer2": "Author Italian glossary self-review: no glossary field is applicable to this bounded test sequence. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:737184f5",
+          "pairedRowSha256": "e318adf2be3e013c2bd73ca9c495d8fa29b23c15ff52f4d1604c8aef5791462f",
+          "speakerOrKind": "unidentified diagnostic voice",
+          "characterReferents": [],
+          "decision": "Standalone exclamation; no character identity established."
+        },
+        {
+          "id": "yarn:line:e26c3b65",
+          "pairedRowSha256": "82a78d3cc6fa195b99475418a50bd65337f314ecdbdc30fcc313c0cd78332476",
+          "speakerOrKind": "unidentified diagnostic voice",
+          "characterReferents": [],
+          "decision": "Unidentified first-person voice, not assigned to a game character."
+        },
+        {
+          "id": "yarn:line:745c3c12",
+          "pairedRowSha256": "31e80172e2b357b1dfc2288994e9a2ca1e50944f54a3241731eb4f9b122d8555",
+          "speakerOrKind": "unidentified diagnostic voice",
+          "characterReferents": [],
+          "decision": "Standalone exclamation; no character identity established."
+        },
+        {
+          "id": "yarn:line:91d5fb72",
+          "pairedRowSha256": "5886a9646d2b1e35e25c8d6a25c5e12439cb5581e3e43c555b8c34b1c0627175",
+          "speakerOrKind": "unidentified diagnostic voice",
+          "characterReferents": [],
+          "decision": "Standalone exclamation; no character identity established."
+        },
+        {
+          "id": "yarn:line:07e5fc05",
+          "pairedRowSha256": "ce1cd551561e1983a733643a36ec8eeb50979b20404cdbad8073e0c473ea9ea5",
+          "speakerOrKind": "unidentified diagnostic voice",
+          "characterReferents": [],
+          "decision": "Unidentified first-person voice, not assigned to a game character."
+        },
+        {
+          "id": "yarn:line:bdb4f59c",
+          "pairedRowSha256": "d9a066af098bc600c81b50ba4ad99f7c78d1892770461fb78245ff54da37e854",
+          "speakerOrKind": "unidentified diagnostic voice",
+          "characterReferents": [],
+          "decision": "Unidentified first-person voice, not assigned to a game character."
+        },
+        {
+          "id": "yarn:line:2b84f2eb",
+          "pairedRowSha256": "31daddb734c879a34d482b54611e2d8a87b4d75ba68e4aa0afd03ac1d9674565",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:88119675",
+          "pairedRowSha256": "a22d5de8c92ffccfd103a97fa5b882f8401c2b9170a7fe32a01358002d5cc4cf",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:1e219102",
+          "pairedRowSha256": "0a5b8126a32f1c13ab59ee67ac374e0baca3e2bc1afa5704755e1cf25d047349",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:a470989b",
+          "pairedRowSha256": "c667e187310dbcabb4fafed60f98a1a37a7334c13be4ceb77562db9519e4a88f",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:32409fec",
+          "pairedRowSha256": "b0cff5131479fddffdb53cf49b68f30e1b0f51a99786097eba69f02c2c2d297d",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:a35d207c",
+          "pairedRowSha256": "f863552309149f355cc01da70ade18113218def6376f43725e66200c4371d661",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:356d270b",
+          "pairedRowSha256": "cd1a609f20478f12d846a014d575b68c0429104bfb04c4c4b0f1f651844b4dd8",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:5643ba3d",
+          "pairedRowSha256": "c8a5f934680b7e770249257a42220880e4a52e1c200c903186889c922ea15f95",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:c073bd4a",
+          "pairedRowSha256": "f2f114ab1c9aba4a1ae4742559bebf80bcc17af3e15e899a2db6a5023a6982a5",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:7a22b4d3",
+          "pairedRowSha256": "27ed94958f8889238629e2be9fc712e9c2136d24c9e11f959a040029994c25a6",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:ec12b3a4",
+          "pairedRowSha256": "89c5831b95e4f930b3ecc6935248b5630b7d12ed9bc10a2f9f77457a425d798f",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:4f87d73a",
+          "pairedRowSha256": "84851336f46e19c05670cfdc7c4de70fba24d006d438ba95429da695a1a03cdf",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:d9b7d04d",
+          "pairedRowSha256": "50040520f477767d8688f4acc8e78ffb0703bcd3a478168324fabafaebd73833",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:63e6d9d4",
+          "pairedRowSha256": "98821ca462f59b096e2f5d046371558ae5ad2da1d0ae410c84caf43a569c3266",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:f5d6dea3",
+          "pairedRowSha256": "604fde2c785f6f1484dbd99c611ee633ecef6b4f37daac086dec5db4889090be",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:64cb6133",
+          "pairedRowSha256": "afd0b3ea9c1aebb6574724c377acf89b340b898f294df04d6bda7d8d3c051fa1",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:f2fb6644",
+          "pairedRowSha256": "f802cd734bb6a1bf594aab297635082a56173c442d1d818c7001b8f9b8bbec82",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        },
+        {
+          "id": "yarn:line:1772a124",
+          "pairedRowSha256": "2c93be58571888e5d52bdc5fa656b6385f4c2e43f04615dc7db1e0d4451bf389",
+          "speakerOrKind": "diagnostic test",
+          "characterReferents": [],
+          "decision": "Numbered test line; no character or glossary concept identified."
+        }
+      ]
     }
   ]
 }
