@@ -8,13 +8,19 @@
 | probe | **Early representative feasibility passed.** German synthetic dialogue, choice, settings and representative offscreen frames ran on macOS and Windows CrossOver. Both continued through stock gate input to `WaitingOnBeingWashed`; see `renderer-probe.md`. Final corpus, full visual checks and native Windows remain separate. |
 | source | **Passed for the pinned v42 inputs.** The accepted shared source-readiness evidence and reconciliation at `15c330ef17ca031b547dae23af30f7315faa6d3e` supersede the provisional `bfabe4d` boundary. See `localization/evidence/source-readiness-v42-20261110.md`. |
 | glossary | **Self-review layers complete under the owner’s current instruction.** The two earlier 27-entry author layers match every per-entry digest; two separate affected-closure author reads cover the anonymous role and related rules. See `glossary-review.md` for evidence, source-context adjudication and limitations. No independent review is claimed. The final game-text independent audit remains required. |
-| translate-edit | **In progress: 1831/1,947 IDs authored and self-edited.** All 246 direct indexed authoring rows are present and the adaptation entry review is complete; later romance route scenes remain ordinary corpus work. See `special-scenes.md` and `special-scene-reconciliation.json`. No source-passthrough counts as translation. |
-| editorial | Partial author self-edit performed; complete semantic review and independent diff/delta audit remain pending. |
+| translate-edit | **Draft complete: 1,947/1,947 IDs authored and self-edited.** All 246 direct indexed authoring rows are present and the adaptation entry review is complete; semantic and runtime closure remain pending. See `special-scenes.md` and `special-scene-reconciliation.json`. No source-passthrough counts as translation. |
+| editorial | Author semantic self-review in progress: 366/1,947 source-bound rows reviewed; complete semantic closure and independent diff/delta audit remain pending. |
 | resources | Final corpus-bound glyph coverage and fit pending. Textures with text are excluded and must remain untouched. |
 | package | Not built; macOS app and Windows ZIP read-back pending. |
 | runtime / visual | Representative synthetic German checks passed on macOS and Windows CrossOver; final corpus and package runtime, complete visual review and native Windows remain unrun. Original owner game processes must not be operated or stopped. |
 | screenshot-upload / screenshot-review | Not run; upload is not authorized. |
 | delivery | Incomplete. No installation, release or publication. |
+
+## 2026-11-10 semantic author review: first Alexander groups
+
+Reviewed worklist rows 0–365 (366 IDs), through `Alexander_Outro`, against the English source and German targets, including both platforms’ four typo-only source variants. Coverage, exact IDs and bound hashes are recorded in `receipts/semantic-self-review-000-365.json`. This is an author self-review, not an independent audit; remaining rows and cross-group dependencies are not yet reviewed.
+
+Corrected `yarn:line:159a1d54` from `Wappen` to `Zierkamm`: the source-context family-crest decision describes an ornamental head crest, and the same term appears at `yarn:line:a5979ac9`. The full draft now hashes to `7b3488a8b0c1106ebce4e426cd6e64d96f67b5085179864be369619a0199c775`. The pinned Yarn verifier and both ordered-object readbacks passed after this correction; see `receipts/semantic-crest-1947.json`. Newly created temporary assets were removed after successful readback under the runtime lock. The UI/settings evidence remains applicable to its unchanged bindings, but is bound to the preceding whole-file hash.
 
 ## 2026-11-10 complete authored draft: UI and settings
 
@@ -37,7 +43,7 @@ The pinned `verify_authored_yarn.py` passed; both stock builds' partial Yarn ass
 
 ## Resume
 
-Use the accepted source-readiness receipt and the 27-case reconciliation. Continue ordinary source-bound scene batches, read back both builds per batch, and maintain distinct editorial, package and runtime statuses. The author self-review layers and owner-approved nickname remain valid; the final independent game-text audit is pending. Coordinate large assets and isolated runtime with the exact cooperative runtime lock. Acquire the canonical Git lock before staging, and hold it through full index review, commit and committed-tree verification.
+Use the accepted source-readiness receipt and the 27-case reconciliation. Continue semantic author self-review from zero-based worklist row 366, read back both builds after text corrections, and maintain distinct editorial, package and runtime statuses. The author self-review layers and owner-approved nickname remain valid; the final independent game-text audit is pending. Coordinate large assets and isolated runtime with the exact cooperative runtime lock. Acquire the canonical Git lock before staging, and hold it through full index review, commit and committed-tree verification.
 
 ## 2026-11-10 remaining dialogue interactions
 
