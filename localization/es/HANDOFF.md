@@ -29,3 +29,7 @@
 ## Resume
 
 Verify current inputs and locale-layer hash. Review the remaining prepared Spanish dialogue, choice and settings frames in bounded review contexts as recorded in `renderer-check.md`; preserve originals and resolve the macOS mark uncertainty. The isolated runtime test exited and released its lock. Use the completed author self-review closure in `glossary-review.md`, revalidate the bound hashes and owner permission on resume. Once these entry gates are actually resolved, prepare all 27 source-bound special groups with full reviewed Spanish wording and feasible adapter contracts before ordinary translation. Keep stage status distinct; do not treat a source-passthrough package or structural checks as translation or visual acceptance.
+
+## Text-only resume reconciliation
+
+[visual-review-handoff.md](visual-review-handoff.md) records original and preview hashes, image dimensions, source-pixel full-frame bounds, exact synthetic strings and pending mark/fit judgments. The capture code confirms that the saved body frame is the 64-point control only; the 40-point control was logged but has no dedicated capture. All 13 special-scene registries and their 13 English source files matched the worklist hashes on resume. No screenshot was opened in this already image-bearing review context. Visual acceptance remains open, so the 27 groups and 0/1,947 authoring status are unchanged.

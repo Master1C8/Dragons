@@ -7,3 +7,7 @@ Of the 271 direct identifiers, 246 match authoring IDs directly; 15 are exact-on
 Twenty-five worklist rows have differing English source between platforms; seven are direct IDs in these groups: `yarn:line:73e4789c`, `yarn:line:266836f8`, `yarn:line:43dd32f5`, `yarn:line:5a195ff2`, `yarn:line:d38c63ea`, `yarn:line:a0cb3f78`, `yarn:line:36fb380f`. These seven have spelling or punctuation differences, and their exact source bindings remain platform-specific. Shared wording requires contextual review, not automatic merging.
 
 No target wording or decision is accepted here. All 27 complete groups still need Spanish wording, scene-specific review and a feasible technical contract after the renderer gate. Preserve branching, original IDs, markup and intentionally unlocalized exact markers.
+
+## Registry integrity on resume
+
+All 27 named case indexes and all 13 referenced registries and their 13 referenced English source evidence files match the SHA-256 values embedded in the bound worklist. This read-only check establishes provenance, not target wording or technical acceptance. The two captures per platform each cover one selected choice and the 64-point body; the separately logged 40-point body has no dedicated captured frame. See [visual-review-handoff.md](visual-review-handoff.md).
