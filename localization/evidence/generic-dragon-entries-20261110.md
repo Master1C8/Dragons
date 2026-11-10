@@ -188,4 +188,44 @@ read checked both choice paths in each group, including the player's
 apology and unfamiliarity with the button, the dragon's remaining
 grime, the silent response, the button sound and the emphatic reply.
 This is a special-scene preparation artifact. Package integration
-and runtime visual review remain pending.
+and runtime visual review remain pending at this checkpoint.
+
+### Authored Russian text in Unity
+
+Both isolated players loaded the same test slot through the original
+menu. The companion set the compiled `$dragonModel` variable to the
+stock active dragon's object, then entered each project-only node
+directly in a fresh player process. The unchanged Yarn commands,
+presenters and option handlers were used. A virtual keyboard
+advanced lines and a virtual mouse clicked the original options.
+The independently recorded desktop Yarn traces supplied the expected
+choice order and follow-up line sequences.
+
+All 20 exact Russian values appeared in the original body or option
+components on each build. All sampled Cyrillic glyphs were visible in
+the live TMP meshes and none of the observed text components reported
+overflow. Each pair of choices led to its expected text. This includes
+the two distinct dismissal replies, the silent option and the
+case-sensitive agreement. Six of eight routes on each platform
+completed through the original dialogue runner. After either choice in
+`DragonAnnoyedByBuzzing`, the source command
+`FinishDialogue $dragonName` supplied a literal object name that did
+not resolve to the required component. The original command remains
+exact. These four runs establish presentation and selection only.
+
+macOS used Metal and Windows ran under CrossOver with Direct3D 11.
+All 402 macOS and 775 Windows desktop samples showed zero on-screen
+windows and zero foreground ownership. Original profiles and checked
+installed files matched their baselines, and the previously checked
+synthetic saves retained their hashes. The signed test app passed strict
+verification. The run does not establish natural entry into the four
+nodes, pixel-level visual acceptance or native Windows behavior.
+
+| Evidence | SHA-256 |
+| --- | --- |
+| macOS test Yarn asset | `84ebda546a2d5fec51362dea4a6658821ccf49368d03e342e7a7ec67595dfe60` |
+| Windows test Yarn asset | `5350829e1bec4099a19f434bab1d7fe5e8742fee602738d16eeaef4ce815b9b3` |
+| Combined runtime receipt | `28c285c414b73d6e7abac3acefc7e998d73c64365c33d7a0bb439293dc9e2132` |
+
+Local sources and all 16 completed observation receipts are under
+`localization/work/anonymous-dragon-unity-20261110.I3LFs1/fresh/`.

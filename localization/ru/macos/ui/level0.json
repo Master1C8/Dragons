@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "locale": "ru",
+  "sourceObjectSha256": "4cabf35993c6726ab29e5cb24a1ce74a0fdf3d8061b0de3437415e56bcfa72f7",
+  "lines": {
+    "level0#5205": {
+      "source": "New",
+      "text": "Новый"
+    },
+    "level0#5204": {
+      "source": "New",
+      "text": "Новый"
+    },
+    "level0#5207": {
+      "source": "New",
+      "text": "Новый"
+    }
+  }
+}

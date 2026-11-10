@@ -191,15 +191,18 @@ before publishing the app or ZIP.
 The [v42 locale workload audit](localization/evidence/locale-workload-v42-20261110.md)
 reconciles both stock builds with the complete package input scopes.
 The union contains 1,947 inputs, including 1,917 shared IDs.
-The tracked drafts supply 15 IDs per build, with two still using
-the superseded Russian numbered-branch term. No draft line is
-counted as accepted localization.
+The initial workload audit recorded 15 draft IDs per build. The
+[first authored batch](localization/evidence/russian-special-scene-decisions-20261110.md#first-ordinary-batch)
+supersedes those drafts. It covers five phone and Ryan scenes and
+incorporates the reviewed special-scene decisions. The platform input
+folders now have 465 authored values each. The full-scope gate still
+rejects the incomplete corpus at the missing-dialogue check.
 The [paired authoring worklist](localization/evidence/locale-workload-v42-20261110.md#paired-authoring-worklist)
 now maps those 1,947 IDs to their package inputs and indexes all 27
 known special cases. Reconstructing both complete input directories
 from the list passed structural validation with the drafts and
-English passthrough. The glossary and special-scene editorial gates
-remain open.
+English passthrough. Russian wording now covers all 27 known special
+cases. Full-corpus editing and final-build verification remain open.
 
 The v41 inventory preserves seven runtime-populated UI templates and 152 profiler labels. The known non-Yarn coverage gate requires 58 serialized UI and 37 setting fields on macOS, and 82 UI and 31 setting fields on Windows. Both require the managed new-slot and missing-line inputs. The source scope covers the nine audited UI assets and pinned settings and Managed inventories. Final wording, additional runtime text discovery and rendered checks remain open. See [the non-Yarn scope and preservation bindings](localization/evidence/non-yarn-translation-scope-20261110.md).
 
@@ -240,8 +243,8 @@ All locales use the shared fixed stages in `~/.codex/skills/vn-localization/refe
 | `scope` | This file; validate version, permissions, type, locale and identity before changes. |
 | `probe` | `localization/dialogue_locale.py`, `ui_locale.py`, `build_game.py`, isolated game copy; matrix below. No bulk translation before applicable paths pass or a specific risk decision. |
 | `source` | Complete shared stable-ID inventory, classifications, preserve-exact contract and validator, special-scene discovery; assess effort after verification. Existing exports are incomplete candidates. |
-| `glossary` | Historical bindings, paired Yarn reading and parser coverage verified. Ryan owns all seven known cold-water bark references per build. The owner chose «Большой К» for Conrad and approved neutral address for the four unidentified dragon scenes. The [new glossary entry](localization/evidence/generic-dragon-entries-20261110.md#canonical-integration-and-russian-scene-wording) is integrated in SiteForMods main `29b0bb56` for English and all 30 locale layers. The 20 related Russian special-scene lines pass paired source binding. Other special-scene wording remains open. |
-| `translate-edit` | Settle all in-scope special-scene solutions first; then directly translate, immediately edit and validate each batch against the shared inventory. |
+| `glossary` | Historical bindings, paired Yarn reading and parser coverage verified. Ryan owns all seven known cold-water bark references per build. The owner chose «Большой К» for Conrad and approved neutral address for the four unidentified dragon scenes. The [new glossary entry](localization/evidence/generic-dragon-entries-20261110.md#canonical-integration-and-russian-scene-wording) is integrated in SiteForMods main `29b0bb56` for English and all 30 locale layers. |
+| `translate-edit` | Russian decisions for all 27 known special cases are recorded. The [anonymous-scene Unity control](localization/evidence/generic-dragon-entries-20261110.md#authored-russian-text-in-unity) verifies all 20 authored strings and exposes the original buzzing finish-command error. The first ordinary batch is integrated and structurally validated. Continue directly authoring and editing the remaining 1,482 inputs. |
 | `editorial` | Full semantic audit, independent diff/delta review and regression closure on pinned artifacts; do not assert independence without evidence. |
 | `resources` | Verify final font coverage and metrics against the finished corpus; textures not applicable by owner decision. |
 | `package` | The macOS and Windows package commands both require complete pinned locale inputs. Build and read back the final authored locale artifacts and validate install and recovery. |
@@ -360,7 +363,7 @@ The earlier test copies also used isolated identifiers; ordinary copies currentl
 
 | Locale | Phase | Translated / visible total | Glossary | Editorial | Fonts | Textures | Build | Runtime | Visual | Screenshot upload | Screenshot review | Release | Blocker / next action |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `ru` | `probe` | 0 accepted / unknown (14 draft) | needs-review | not-run | needs-review | not-applicable: excluded by owner | needs-review: prototype only | needs-review | needs-review | not-run: not requested | not-applicable: no upload | not-run | Verify normal progression with the candidate and complete representative dialogue/UI rendering. Finish source classification and the glossary and special-scene gates before ordinary batches. |
+| `ru` | `translate-edit` | 465 authored / 1,947 required package inputs | English and Russian bound to SiteForMods `29b0bb56` | First batch self-edited, full audit pending | needs-review | not-applicable: excluded by owner | needs-review: partial inputs | 20 authored strings verified on paired controlled routes | final visual review pending | not-run: not requested | not-applicable: no upload | not-run | Continue ordinary scene batches, then build and verify complete Russian artifacts. |
 
 On 2026-11-06 an independently authorized visual reviewer examined the synthetic choice and continuation frames described in `localization/evidence/choice-visual-review-20261106.md`. The observed strings match the intended probe text, fit their panels and show no apparent clipping or missing glyphs in these two previews. This does not establish normal player input, long-string layout, final font coverage or game-wide visual quality.
 

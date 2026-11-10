@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "locale": "ru",
+  "sourceObjectSha256": "8b1b439e62bff222fbce00869a3343422c77d08e384db7ed323b5e66f44195e2",
+  "lines": {
+    "slot-new": {
+      "source": "NEW",
+      "text": "НОВЫЙ"
+    }
+  }
+}

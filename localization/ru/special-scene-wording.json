@@ -1,0 +1,3420 @@
+{
+  "schema": 1,
+  "locale": "ru",
+  "sourceGlossaryFingerprint": "3d261921e114b6feab10f57ad54d43674a75e991d94937686155b92cce399dc3",
+  "localeGlossaryFingerprint": "dd5e364a4b4bbaef376a5cecc84a1f26162740a73d2f0f33c06f14fb0b45d6b4",
+  "cases": {
+    "alexander-college-self-introduction": {
+      "lines": {
+        "line:52f28749": {
+          "sourceByBuild": {
+            "macos": "If we're caught violating another policy my reputation would be in ruins!",
+            "windows": "If we're caught violating another policy my reputation would be in ruins!"
+          },
+          "text": "Если нас поймают на нарушении ещё одного правила, моей репутации конец!",
+          "input": "dialogue.json"
+        },
+        "line:e8a38ed0": {
+          "sourceByBuild": {
+            "macos": "The college cannot find out about this okay?",
+            "windows": "The college cannot find out about this okay?"
+          },
+          "text": "В колледже об этом знать не должны, договорились?",
+          "input": "dialogue.json"
+        },
+        "line:7e9389a7": {
+          "sourceByBuild": {
+            "macos": "Which college?",
+            "windows": "Which college?"
+          },
+          "text": "В каком колледже?",
+          "input": "dialogue.json"
+        },
+        "line:f64a5b30": {
+          "sourceByBuild": {
+            "macos": "Okay",
+            "windows": "Okay"
+          },
+          "text": "Хорошо",
+          "input": "dialogue.json"
+        },
+        "line:dd06ed39": {
+          "sourceByBuild": {
+            "macos": "The Burnswick Community College of Thaumaturgy, of course!",
+            "windows": "The Burnswick Community College of Thaumaturgy, of course!"
+          },
+          "text": "В Общественном колледже тауматургии Бёрнсвика, разумеется!",
+          "input": "dialogue.json"
+        },
+        "line:4b36ea4e": {
+          "sourceByBuild": {
+            "macos": "The most prestigious college hosting prestigious professors like me:",
+            "windows": "The most prestigious college hosting prestigious professors like me:"
+          },
+          "text": "Самый престижный колледж, в котором преподают видные профессора вроде меня:",
+          "input": "speakers.json"
+        },
+        "line:f167e3d7": {
+          "sourceByBuild": {
+            "macos": "Alexander!",
+            "windows": "Alexander!"
+          },
+          "text": "Александр!",
+          "input": "dialogue.json"
+        },
+        "line:6757e4a0": {
+          "sourceByBuild": {
+            "macos": "...",
+            "windows": "..."
+          },
+          "text": "...",
+          "input": "dialogue.json"
+        },
+        "line:607a5c47": {
+          "sourceByBuild": {
+            "macos": "Good, I can't be having the Burnswick Community College of Thaumaturgy know that their best professor Alexander has caused another incident.",
+            "windows": "Good, I can't be having the Burnswick Community College of Thaumaturgy know that their best professor Alexander has caused another incident."
+          },
+          "text": "Хорошо. Не хватало ещё, чтобы в Общественном колледже тауматургии Бёрнсвика узнали, что их лучший профессор Александр устроил очередное происшествие.",
+          "input": "dialogue.json"
+        },
+        "line:85f39b27": {
+          "sourceByBuild": {
+            "macos": "...",
+            "windows": "..."
+          },
+          "text": "...",
+          "input": "dialogue.json"
+        },
+        "line:13c39c50": {
+          "sourceByBuild": {
+            "macos": "Oh fudge, forget I said that!",
+            "windows": "Oh fudge, forget I said that!"
+          },
+          "text": "Ох, чёрт, забудь, что я сказал!",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "alexander-proletarian-register": {
+      "lines": {
+        "line:73e4789c": {
+          "sourceByBuild": {
+            "macos": "You know... This environment is rather pleasant. Very... proletarian.",
+            "windows": "You know... This enviornment is rather pleasant. Very... proletarian."
+          },
+          "text": "Знаешь... Здесь довольно приятная обстановка. Весьма... пролетарская.",
+          "input": "dialogue.json"
+        },
+        "line:8512365e": {
+          "sourceByBuild": {
+            "macos": "Thank you!",
+            "windows": "Thank you!"
+          },
+          "text": "Спасибо!",
+          "input": "dialogue.json"
+        },
+        "line:e5d47feb": {
+          "sourceByBuild": {
+            "macos": "prole- <i><size=70%>wuh?",
+            "windows": "prole- <i><size=70%>wuh?"
+          },
+          "text": "Пролета- <i><size=70%>чего?",
+          "input": "dialogue.json"
+        },
+        "line:13223129": {
+          "sourceByBuild": {
+            "macos": "Of course",
+            "windows": "Of course"
+          },
+          "text": "Разумеется.",
+          "input": "dialogue.json"
+        },
+        "line:74c9c07b": {
+          "sourceByBuild": {
+            "macos": "Oh, like... working class?",
+            "windows": "Oh, like... working class?"
+          },
+          "text": "Ну, то есть... рабочая?",
+          "input": "dialogue.json"
+        },
+        "line:a97338b0": {
+          "sourceByBuild": {
+            "macos": "Who knew places such as this existed so readily available to the public!",
+            "windows": "Who knew places such as this existed so readily available to the public!"
+          },
+          "text": "Кто бы мог подумать, что такие заведения доступны широкой публике!",
+          "input": "dialogue.json"
+        },
+        "line:e2f9c70c": {
+          "sourceByBuild": {
+            "macos": "Sorry, I meant to say I enjoy your wash.",
+            "windows": "Sorry, I meant to say I enjoy your wash."
+          },
+          "text": "Прошу прощения, я хотел сказать, что мне нравится твоя мойка.",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "alexander-teacher-professor-correction": {
+      "lines": {
+        "line:a2ba222e": {
+          "sourceByBuild": {
+            "macos": "Evening. This establishment takes walk ins, correct?",
+            "windows": "Evening. This establishment takes walk ins, correct?"
+          },
+          "text": "Добрый вечер. В ваше заведение можно без записи, верно?",
+          "input": "dialogue.json"
+        },
+        "line:33a79dbe": {
+          "sourceByBuild": {
+            "macos": "We do! Are you... from the college...?",
+            "windows": "We do! Are you... from the college...?"
+          },
+          "text": "Да! Вы... из колледжа?",
+          "input": "dialogue.json"
+        },
+        "line:b6c878fa": {
+          "sourceByBuild": {
+            "macos": "Yep!",
+            "windows": "Yep!"
+          },
+          "text": "Ага!",
+          "input": "dialogue.json"
+        },
+        "line:a5979ac9": {
+          "sourceByBuild": {
+            "macos": "Indeed, you must know of my crest! I teach alchemy.",
+            "windows": "Indeed, you must know of my crest! I teach alchemy."
+          },
+          "text": "Именно. Должно быть, тебе знаком мой фамильный гребень! Я преподаю алхимию.",
+          "input": "dialogue.json"
+        },
+        "line:20f87f8d": {
+          "sourceByBuild": {
+            "macos": "... A class which I'm teaching rather soon.",
+            "windows": "... A class which I'm teaching rather soon."
+          },
+          "text": "... И занятие у меня уже совсем скоро.",
+          "input": "dialogue.json"
+        },
+        "line:0c997163": {
+          "sourceByBuild": {
+            "macos": "Excellent.",
+            "windows": "Excellent."
+          },
+          "text": "Превосходно.",
+          "input": "dialogue.json"
+        },
+        "line:9aa97614": {
+          "sourceByBuild": {
+            "macos": "I'll need this to be swift, students won't teach themselves.",
+            "windows": "I'll need this to be swift, students won't teach themselves."
+          },
+          "text": "Попрошу побыстрее. Студенты сами себя не обучат.",
+          "input": "dialogue.json"
+        },
+        "line:393c128a": {
+          "sourceByBuild": {
+            "macos": "Never cleaned a teacher dragon... woah.",
+            "windows": "Never cleaned a teacher dragon... woah."
+          },
+          "text": "Никогда ещё не доводилось мыть дракона-учителя... Ух ты.",
+          "input": "dialogue.json"
+        },
+        "line:155d1c64": {
+          "sourceByBuild": {
+            "macos": "Okay, I'll open the gate!",
+            "windows": "Okay, I'll open the gate!"
+          },
+          "text": "Хорошо, сейчас открою ворота!",
+          "input": "dialogue.json"
+        },
+        "line:af0c15fd": {
+          "sourceByBuild": {
+            "macos": "Professor- But, yes. I usually don't go to public washes.",
+            "windows": "Professor- But, yes. I usually don't go to public washes."
+          },
+          "text": "Профессора. Но да, я обычно не хожу на общедоступные мойки.",
+          "input": "dialogue.json"
+        },
+        "line:836d1b13": {
+          "sourceByBuild": {
+            "macos": "Thank you.",
+            "windows": "Thank you."
+          },
+          "text": "Благодарю.",
+          "input": "dialogue.json"
+        },
+        "line:1270a483": {
+          "sourceByBuild": {
+            "macos": "Oh, and I apologize for being absolutely filthy.",
+            "windows": "Oh, and I apologize for being absolutely filthy."
+          },
+          "text": "Ах да, прошу прощения, что я весь в грязи.",
+          "input": "dialogue.json"
+        },
+        "line:8440a3f4": {
+          "sourceByBuild": {
+            "macos": "It's a regrettable state I find myself in...",
+            "windows": "It's a regretable state I find myself in..."
+          },
+          "text": "Прискорбное состояние, в котором я оказался...",
+          "input": "dialogue.json"
+        },
+        "line:61c96494": {
+          "sourceByBuild": {
+            "macos": "You're... Not that dirty.",
+            "windows": "You're... Not that dirty."
+          },
+          "text": "Вы... не так уж и грязны.",
+          "input": "dialogue.json"
+        },
+        "line:ee3d0ee4": {
+          "sourceByBuild": {
+            "macos": "No problem. Let me get that gate for ya'!",
+            "windows": "No problem. Let me get that gate for ya'!"
+          },
+          "text": "Ничего страшного. Сейчас открою вам ворота!",
+          "input": "dialogue.json"
+        },
+        "line:f7f963e3": {
+          "sourceByBuild": {
+            "macos": "No, I am.",
+            "windows": "No, I am."
+          },
+          "text": "Нет, я грязен.",
+          "input": "dialogue.json"
+        },
+        "line:4da86a7a": {
+          "sourceByBuild": {
+            "macos": "...",
+            "windows": "..."
+          },
+          "text": "...",
+          "input": "dialogue.json"
+        },
+        "line:db986d0d": {
+          "sourceByBuild": {
+            "macos": "May you open the gate?",
+            "windows": "May you open the gate?"
+          },
+          "text": "Откроешь ворота?",
+          "input": "dialogue.json"
+        },
+        "line:780d0993": {
+          "sourceByBuild": {
+            "macos": "Oh. yeah. Sorry.",
+            "windows": "Oh. yeah. Sorry."
+          },
+          "text": "Ой. Да. Извините.",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "big-c-nickname": {
+      "lines": {
+        "line:f57fc630": {
+          "sourceByBuild": {
+            "macos": "All done!",
+            "windows": "All done!"
+          },
+          "text": "Всё готово!",
+          "input": "dialogue.json"
+        },
+        "line:f2527ed7": {
+          "sourceByBuild": {
+            "macos": "You're <i>spotless.",
+            "windows": "You're <i>spotless."
+          },
+          "text": "Ты <i>без единой грязинки.",
+          "input": "dialogue.json"
+        },
+        "line:646279a0": {
+          "sourceByBuild": {
+            "macos": "Looks like it.",
+            "windows": "Looks like it."
+          },
+          "text": "Похоже на то.",
+          "input": "dialogue.json"
+        },
+        "line:17dbb9b7": {
+          "sourceByBuild": {
+            "macos": "Hell yeah.",
+            "windows": "Hell yeah."
+          },
+          "text": "Охрененно.",
+          "input": "dialogue.json"
+        },
+        "line:81ebbec0": {
+          "sourceByBuild": {
+            "macos": "Thanks for the wash so late in the night.",
+            "windows": "Thanks for the wash so late in the night."
+          },
+          "text": "Спасибо за мойку в такой поздний час.",
+          "input": "dialogue.json"
+        },
+        "line:3bbab759": {
+          "sourceByBuild": {
+            "macos": "You've gotta keep me updated on you and Ryan, yeah?",
+            "windows": "You've gotta keep me updated on you and Ryan, yeah?"
+          },
+          "text": "Ты держи меня в курсе, как у вас с Райаном дела, ладно?",
+          "input": "dialogue.json"
+        },
+        "line:ad8ab02e": {
+          "sourceByBuild": {
+            "macos": "Anyways...",
+            "windows": "Anyways..."
+          },
+          "text": "Ну так вот...",
+          "input": "dialogue.json"
+        },
+        "line:0e1fd4b0": {
+          "sourceByBuild": {
+            "macos": "Let the <i>big C</i> out of this place!",
+            "windows": "Let the <i>big C</i> out of this place!"
+          },
+          "text": "Выпусти отсюда <i>Большого К</i>!",
+          "input": "dialogue.json"
+        },
+        "line:982fd3c7": {
+          "sourceByBuild": {
+            "macos": "big C...?",
+            "windows": "big C...?"
+          },
+          "text": "Большой К?..",
+          "input": "dialogue.json"
+        },
+        "line:255362b9": {
+          "sourceByBuild": {
+            "macos": "Okay, Conrad.",
+            "windows": "Okay, Conrad."
+          },
+          "text": "Ладно, Конрад.",
+          "input": "dialogue.json"
+        },
+        "line:227eda5e": {
+          "sourceByBuild": {
+            "macos": "...",
+            "windows": "..."
+          },
+          "text": "...",
+          "input": "dialogue.json"
+        },
+        "line:b44edd29": {
+          "sourceByBuild": {
+            "macos": "Yeaaah I'm not sticking with that one.",
+            "windows": "Yeaaah I'm not sticking with that one."
+          },
+          "text": "Да-а, не приживётся у меня это прозвище.",
+          "input": "dialogue.json"
+        },
+        "line:b36365ce": {
+          "sourceByBuild": {
+            "macos": "Hah... Yeah...",
+            "windows": "Hah... Yeah..."
+          },
+          "text": "Ха... Ага...",
+          "input": "dialogue.json"
+        },
+        "line:d04df8f8": {
+          "sourceByBuild": {
+            "macos": "Alright, I'll cya!",
+            "windows": "Alright, I'll cya!"
+          },
+          "text": "Ладно, увидимся!",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "conrad-emphatic-greetings": {
+      "lines": {
+        "line:36073321": {
+          "sourceByBuild": {
+            "macos": "<gradient=\"yellow - orange\"><size=140%>HEY! </gradient><size=100%>This is the cleaning place, ya?",
+            "windows": "<gradient=\"yellow - orange\"><size=140%>HEY! </gradient><size=100%>This is the cleaning place, ya?"
+          },
+          "text": "<gradient=\"yellow - orange\"><size=140%>ЭЙ! </gradient><size=100%>Это тут моют, да?",
+          "input": "dialogue.json"
+        },
+        "line:f474ffa9": {
+          "sourceByBuild": {
+            "macos": "<size=140%>HEY, <size=100%>lookin' for a wash.",
+            "windows": "<size=140%>HEY, <size=100%>lookin' for a wash."
+          },
+          "text": "<size=140%>ЭЙ, <size=100%>мне бы помыться.",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "conrad-scales-aside": {
+      "lines": {
+        "line:6c193ba9": {
+          "sourceByBuild": {
+            "macos": "Scales different today? <size=70%><i>is that a thing...? </i><size=100%>You look good today.",
+            "windows": "Scales different today? <size=70%><i>is that a thing...? </i><size=100%>You look good today."
+          },
+          "text": "Чешуя сегодня другая? <size=70%><i>а так вообще бывает?.. </i><size=100%>Хорошо выглядишь сегодня.",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "ryan-branch-hesitation-sizing": {
+      "lines": {
+        "line:9fd5b834": {
+          "sourceByBuild": {
+            "macos": "Yeah. <size=90%>Oh- <size=80%>you know. I'm like... <size=70%>Haha. Yeah. Mhm!",
+            "windows": "Yeah. <size=90%>Oh- <size=80%>you know. I'm like... <size=70%>Haha. Yeah. Mhm!"
+          },
+          "text": "Да. <size=90%>Ой... <size=80%>ну, знаешь. Я просто... <size=70%>Ха-ха. Да. Угу!",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "conrad-special-endings": {
+      "lines": {
+        "line:9ab6ddfb": {
+          "sourceByBuild": {
+            "macos": "Do you also do \"special endings\" here?",
+            "windows": "Do you also do \"special endings\" here?"
+          },
+          "text": "А «особые концовки» тут тоже бывают?",
+          "input": "dialogue.json"
+        },
+        "line:f99840cd": {
+          "sourceByBuild": {
+            "macos": "What's that?",
+            "windows": "What's that?"
+          },
+          "text": "А это что?",
+          "input": "dialogue.json"
+        },
+        "line:d5f94e23": {
+          "sourceByBuild": {
+            "macos": "Yes!",
+            "windows": "Yes!"
+          },
+          "text": "Да!",
+          "input": "dialogue.json"
+        },
+        "line:e05c2dca": {
+          "sourceByBuild": {
+            "macos": "No",
+            "windows": "No"
+          },
+          "text": "Нет",
+          "input": "dialogue.json"
+        },
+        "line:6fa847ba": {
+          "sourceByBuild": {
+            "macos": "Yeah, nah. Mate you gotta get in on this. I'll pay good!",
+            "windows": "Yeah, nah. Mate you gotta get in on this. I'll pay good!"
+          },
+          "text": "Не, ну слушай, тебе надо взяться за это дело. Я хорошо заплачу!",
+          "input": "dialogue.json"
+        },
+        "line:43c94954": {
+          "sourceByBuild": {
+            "macos": "Grouse as! Excited to see you work!",
+            "windows": "Grouse as! Excited to see you work!"
+          },
+          "text": "Вообще огонь! Не терпится посмотреть, как ты работаешь!",
+          "input": "dialogue.json"
+        },
+        "line:766c2abd": {
+          "sourceByBuild": {
+            "macos": "What? All the best places do it!",
+            "windows": "What? All the best places do it!"
+          },
+          "text": "Чего? Во всех лучших местах так делают!",
+          "input": "dialogue.json"
+        },
+        "line:8a35fb7b": {
+          "sourceByBuild": {
+            "macos": "So<size=90%>o<size=80%>o<size=70%>o<size=60%>o... <size=100%>Was wonderin'",
+            "windows": "So<size=90%>o<size=80%>o<size=70%>o<size=60%>o... <size=100%>Was wonderin'"
+          },
+          "text": "Та<size=90%>а<size=80%>а<size=70%>а<size=60%>ак... <size=100%>Вот мне интересно.",
+          "input": "dialogue.json"
+        },
+        "line:6fbc3c1b": {
+          "sourceByBuild": {
+            "macos": "You also do <i>special endings</i> here, yeah?",
+            "windows": "You also do <i>special endings</i> here, yeah?"
+          },
+          "text": "<i>Особые концовки</i> у вас тоже бывают, да?",
+          "input": "dialogue.json"
+        },
+        "line:f98c3b6c": {
+          "sourceByBuild": {
+            "macos": "Every ending here is special!",
+            "windows": "Every ending here is special!"
+          },
+          "text": "У нас каждая концовка особая!",
+          "input": "dialogue.json"
+        },
+        "line:a0a0a49c": {
+          "sourceByBuild": {
+            "macos": "Like... sexual stuff?",
+            "windows": "Like... sexual stuff?"
+          },
+          "text": "Это... что-то сексуальное?",
+          "input": "dialogue.json"
+        },
+        "line:43dd32f5": {
+          "sourceByBuild": {
+            "macos": "Er... That's not-",
+            "windows": "Er... Thats not-"
+          },
+          "text": "Эм... Да я не об этом...",
+          "input": "dialogue.json"
+        },
+        "line:d5ed3582": {
+          "sourceByBuild": {
+            "macos": "Do you make big dragons, <size=60%>like me, <size=100%>cum here?",
+            "windows": "Do you make big dragons, <size=60%>like me, <size=100%>cum here?"
+          },
+          "text": "Ты помогаешь большим драконам, <size=60%>ну, вроде меня, <size=100%>кончить?",
+          "input": "dialogue.json"
+        },
+        "line:7678511c": {
+          "sourceByBuild": {
+            "macos": "Wah- huh- <size=80%>oah. <size=60%>we don't-",
+            "windows": "Wah- huh- <size=80%>oah. <size=60%>we don't-"
+          },
+          "text": "А... что... <size=80%>ого. <size=60%>У нас такого...",
+          "input": "dialogue.json"
+        },
+        "line:e048566b": {
+          "sourceByBuild": {
+            "macos": "Oh, no.",
+            "windows": "Oh, no."
+          },
+          "text": "Ой, нет.",
+          "input": "dialogue.json"
+        },
+        "line:5a195ff2": {
+          "sourceByBuild": {
+            "macos": "What!? that's terrible! You don't even have a mount...?",
+            "windows": "What!? thats terrible! You don't even have a mount...?"
+          },
+          "text": "Чего?! Ужас какой! У вас даже станка нет?..",
+          "input": "dialogue.json"
+        },
+        "line:cc295885": {
+          "sourceByBuild": {
+            "macos": "uhm... <size=60%>no?",
+            "windows": "uhm... <size=60%>no?"
+          },
+          "text": "Эм... <size=60%>нет?",
+          "input": "dialogue.json"
+        },
+        "line:5d34e715": {
+          "sourceByBuild": {
+            "macos": "Well, you better get one then!",
+            "windows": "Well, you better get one then!"
+          },
+          "text": "Ну так раздобудь его!",
+          "input": "dialogue.json"
+        },
+        "line:cb04e062": {
+          "sourceByBuild": {
+            "macos": "At least you can still use your hands. Heh.",
+            "windows": "At least you can still use your hands. Heh."
+          },
+          "text": "Руками-то всё равно можно. Хех.",
+          "input": "dialogue.json"
+        },
+        "line:3690a3eb": {
+          "sourceByBuild": {
+            "macos": "Yeah? I don't even see a mount.",
+            "windows": "Yeah? I don't even see a mount."
+          },
+          "text": "Да? А станка я что-то не вижу.",
+          "input": "dialogue.json"
+        },
+        "line:8cc1aa72": {
+          "sourceByBuild": {
+            "macos": "Oh... yeah we don't have one.",
+            "windows": "Oh... yeah we don't have one."
+          },
+          "text": "А... ну да, станка у нас нет.",
+          "input": "dialogue.json"
+        },
+        "line:1af1ad05": {
+          "sourceByBuild": {
+            "macos": "No, we don't offer things like that here.",
+            "windows": "No, we don't offer things like that here."
+          },
+          "text": "Нет, у нас таких услуг нет.",
+          "input": "dialogue.json"
+        },
+        "line:b964c99b": {
+          "sourceByBuild": {
+            "macos": "Damn shame then. Better change that.",
+            "windows": "Damn shame then. Better change that."
+          },
+          "text": "Вот же жаль. Пора это менять.",
+          "input": "dialogue.json"
+        },
+        "line:2f54ceec": {
+          "sourceByBuild": {
+            "macos": "At least you can still use your hands. Heh.",
+            "windows": "At least you can still use your hands. Heh."
+          },
+          "text": "Руками-то всё равно можно. Хех.",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "dirty-double-meaning": {
+      "lines": {
+        "line:cc6e7856": {
+          "sourceByBuild": {
+            "macos": "Hah! There's the mount!",
+            "windows": "Hah! There's the mount!"
+          },
+          "text": "Ха! Вот и станок!",
+          "input": "dialogue.json"
+        },
+        "line:5a5e7f21": {
+          "sourceByBuild": {
+            "macos": "So<size=90%>o<size=80%>o<size=70%>o<size=60%>o... <size=100%>I 'aint dirty. But I am <i>~dirty~</i> y'know?",
+            "windows": "So<size=90%>o<size=80%>o<size=70%>o<size=60%>o... <size=100%>I 'aint dirty. But I am <i>~dirty~</i> y'know?"
+          },
+          "text": "Та<size=90%>а<size=80%>а<size=70%>а<size=60%>ак... <size=100%>Я не грязный. Но я <i>~грязный~</i>, понимаешь?",
+          "input": "dialogue.json"
+        },
+        "line:31fa3bdf": {
+          "sourceByBuild": {
+            "macos": "So you came in just to...",
+            "windows": "So you came in just to..."
+          },
+          "text": "Так ты пришёл просто чтобы...",
+          "input": "dialogue.json"
+        },
+        "line:0372e0d1": {
+          "sourceByBuild": {
+            "macos": "Yeah. It wasn't too expensive.",
+            "windows": "Yeah. It wasn't too expensive."
+          },
+          "text": "Да. Он недорого обошёлся.",
+          "input": "dialogue.json"
+        },
+        "line:a7ca3ca8": {
+          "sourceByBuild": {
+            "macos": "Fuck something and then get a handjob hopefully.",
+            "windows": "Fuck something and then get a handjob hopefully."
+          },
+          "text": "Трахнуть что-нибудь, а потом, если повезёт, чтоб мне подрочили.",
+          "input": "dialogue.json"
+        },
+        "line:1d9b3531": {
+          "sourceByBuild": {
+            "macos": "Get a handjob and fuck this mount.",
+            "windows": "Get a handjob and fuck this mount."
+          },
+          "text": "Чтоб мне подрочили, а потом трахнуть этот станок.",
+          "input": "dialogue.json"
+        },
+        "line:8bab3246": {
+          "sourceByBuild": {
+            "macos": "You're... very forward.",
+            "windows": "You're... very forward."
+          },
+          "text": "Ты... очень прямолинеен.",
+          "input": "dialogue.json"
+        },
+        "line:283e56d8": {
+          "sourceByBuild": {
+            "macos": "Of course I am! I know I'm very...",
+            "windows": "Of course I am! I know I'm very..."
+          },
+          "text": "Ну конечно! Я знаю, что я очень...",
+          "input": "dialogue.json"
+        },
+        "line:be0e51af": {
+          "sourceByBuild": {
+            "macos": "Cool.",
+            "windows": "Cool."
+          },
+          "text": "Крутой.",
+          "input": "dialogue.json"
+        },
+        "line:045f5836": {
+          "sourceByBuild": {
+            "macos": "...",
+            "windows": "..."
+          },
+          "text": "...",
+          "input": "dialogue.json"
+        },
+        "line:926f5f41": {
+          "sourceByBuild": {
+            "macos": "Anyways. Gonna use this thing now!",
+            "windows": "Anyways. Gonna use this thing now!"
+          },
+          "text": "Ладно. Сейчас я за эту штуку возьмусь!",
+          "input": "dialogue.json"
+        },
+        "line:9542e7a6": {
+          "sourceByBuild": {
+            "macos": "Hah, good. Let's break this thing in!",
+            "windows": "Hah, good. Let's break this thing in!"
+          },
+          "text": "Ха, отлично. Давай её обкатаем!",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "professional-double-meaning": {
+      "lines": {
+        "line:496134bc": {
+          "sourceByBuild": {
+            "macos": "...!",
+            "windows": "...!"
+          },
+          "text": "...!",
+          "input": "dialogue.json"
+        },
+        "line:eaf45022": {
+          "sourceByBuild": {
+            "macos": "Damn, you know how to use your hands.",
+            "windows": "Damn, you know how to use your hands."
+          },
+          "text": "Чёрт, ты знаешь, как работать руками.",
+          "input": "dialogue.json"
+        },
+        "line:7cc45755": {
+          "sourceByBuild": {
+            "macos": "...!",
+            "windows": "...!"
+          },
+          "text": "...!",
+          "input": "dialogue.json"
+        },
+        "line:c6955ecc": {
+          "sourceByBuild": {
+            "macos": "Damn, you know how to use your hands.",
+            "windows": "Damn, you know how to use your hands."
+          },
+          "text": "Чёрт, ты знаешь, как работать руками.",
+          "input": "dialogue.json"
+        },
+        "line:50a559bb": {
+          "sourceByBuild": {
+            "macos": "Hah... <size=70%> yeah.",
+            "windows": "Hah... <size=70%> yeah."
+          },
+          "text": "Ха... <size=70%> ага.",
+          "input": "dialogue.json"
+        },
+        "line:5788e15c": {
+          "sourceByBuild": {
+            "macos": "Of course I do. I'm a <i>professional</i>.",
+            "windows": "Of course I do. I'm a <i>professional</i>."
+          },
+          "text": "Конечно. Я же <i>профи</i>.",
+          "input": "dialogue.json"
+        },
+        "line:c1b8e62b": {
+          "sourceByBuild": {
+            "macos": "It's always good when a kobold knows what they like.",
+            "windows": "It's always good when a kobold knows what they like."
+          },
+          "text": "Здорово, когда кобольд знает свои желания.",
+          "input": "dialogue.json"
+        },
+        "line:3063100e": {
+          "sourceByBuild": {
+            "macos": "So am I.",
+            "windows": "So am I."
+          },
+          "text": "Я тоже.",
+          "input": "dialogue.json"
+        },
+        "line:a6531779": {
+          "sourceByBuild": {
+            "macos": "...",
+            "windows": "..."
+          },
+          "text": "...",
+          "input": "dialogue.json"
+        },
+        "line:1c021ee0": {
+          "sourceByBuild": {
+            "macos": "At getting hand jobs.",
+            "windows": "At getting hand jobs."
+          },
+          "text": "По части того, чтобы мне дрочили.",
+          "input": "dialogue.json"
+        },
+        "line:8a321997": {
+          "sourceByBuild": {
+            "macos": "Now I'm eyeballing the mount...",
+            "windows": "Now I'm eyeballing the mount..."
+          },
+          "text": "А теперь я на станок поглядываю...",
+          "input": "dialogue.json"
+        },
+        "line:29a77d09": {
+          "sourceByBuild": {
+            "macos": "Let me give it a try!",
+            "windows": "Let me give it a try!"
+          },
+          "text": "Дай попробовать!",
+          "input": "dialogue.json"
+        },
+        "line:bf977a7e": {
+          "sourceByBuild": {
+            "macos": "Oh okay. I'll go grab it.",
+            "windows": "Oh okay. I'll go grab it."
+          },
+          "text": "А, ладно. Сейчас принесу.",
+          "input": "dialogue.json"
+        },
+        "line:05c673e7": {
+          "sourceByBuild": {
+            "macos": "Sure!",
+            "windows": "Sure!"
+          },
+          "text": "Конечно!",
+          "input": "dialogue.json"
+        },
+        "line:93f67490": {
+          "sourceByBuild": {
+            "macos": "Hell yeah",
+            "windows": "Hell yeah"
+          },
+          "text": "Охрененно",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "editor-route-prompt": {
+      "lines": {
+        "line:dbab7a39": {
+          "sourceByBuild": {
+            "macos": "<b><i><size=130%>Did you suggest Ryan to Conrad?",
+            "windows": "<b><i><size=130%>Did you suggest Ryan to Conrad?"
+          },
+          "text": "<b><i><size=130%>Совет присмотреться к Райану Конрад получил от тебя?",
+          "input": "dialogue.json"
+        },
+        "line:4ab6c5a9": {
+          "sourceByBuild": {
+            "macos": "yes",
+            "windows": "yes"
+          },
+          "text": "да",
+          "input": "dialogue.json"
+        },
+        "line:dc86c2de": {
+          "sourceByBuild": {
+            "macos": "no",
+            "windows": "no"
+          },
+          "text": "нет",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "mouth-full-speech": {
+      "lines": {
+        "line:390f05be": {
+          "sourceByBuild": {
+            "macos": "Woah... What is that in your mouth?",
+            "windows": "Woah... What is that in your mouth?"
+          },
+          "text": "Ух ты... Что у тебя во рту?",
+          "input": "dialogue.json"
+        },
+        "line:af3f02c9": {
+          "sourceByBuild": {
+            "macos": "Hey Ryan, what do you have there?",
+            "windows": "Hey Ryan, what do you have there?"
+          },
+          "text": "Привет, Райан. Что это у тебя?",
+          "input": "dialogue.json"
+        },
+        "line:156e0b50": {
+          "sourceByBuild": {
+            "macos": "Picnic bathket-",
+            "windows": "Picnic bathket-"
+          },
+          "text": "Корфинка для пикника...",
+          "input": "dialogue.json"
+        },
+        "line:835e0c27": {
+          "sourceByBuild": {
+            "macos": "Can't sthpeak well.",
+            "windows": "Can't sthpeak well."
+          },
+          "text": "Говорить толком не мофу.",
+          "input": "dialogue.json"
+        },
+        "line:20cb68b9": {
+          "sourceByBuild": {
+            "macos": "lemme in?",
+            "windows": "lemme in?"
+          },
+          "text": "Впустишь?",
+          "input": "dialogue.json"
+        },
+        "line:b6fb6fce": {
+          "sourceByBuild": {
+            "macos": "Oh! Okay. I'll get the gate!",
+            "windows": "Oh! Okay. I'll get the gate!"
+          },
+          "text": "О! Хорошо, сейчас открою ворота!",
+          "input": "dialogue.json"
+        },
+        "line:0caa6657": {
+          "sourceByBuild": {
+            "macos": "Right, I'll get that for you ASAP.",
+            "windows": "Right, I'll get that for you ASAP."
+          },
+          "text": "Ага, сейчас же открою.",
+          "input": "dialogue.json"
+        },
+        "line:9a9a6120": {
+          "sourceByBuild": {
+            "macos": "Thankth!",
+            "windows": "Thankth!"
+          },
+          "text": "Фпафибо!",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "alexander-number-seven-taste": {
+      "lines": {
+        "line:c2bdc402": {
+          "sourceByBuild": {
+            "macos": "What does the number 7 taste like?",
+            "windows": "What does the number 7 taste like?"
+          },
+          "text": "Какое на вкус число 7?",
+          "input": "dialogue.json"
+        },
+        "line:78eccd9b": {
+          "sourceByBuild": {
+            "macos": "Yellow lime.",
+            "windows": "Yellow lime."
+          },
+          "text": "Жёлтый лайм.",
+          "input": "dialogue.json"
+        },
+        "line:eedccaec": {
+          "sourceByBuild": {
+            "macos": "No way.",
+            "windows": "No way."
+          },
+          "text": "Да ну!",
+          "input": "dialogue.json"
+        },
+        "line:db79a905": {
+          "sourceByBuild": {
+            "macos": "Like... a lemon?",
+            "windows": "Like... a lemon?"
+          },
+          "text": "То есть... как лимон?",
+          "input": "dialogue.json"
+        },
+        "line:4d49ae72": {
+          "sourceByBuild": {
+            "macos": "'Yes way', There is nothing I am more certain of.",
+            "windows": "'Yes way', There is nothing I am more certain of."
+          },
+          "text": "Именно так. Ни в чём я не уверен больше, чем в этом.",
+          "input": "dialogue.json"
+        },
+        "line:6128a09c": {
+          "sourceByBuild": {
+            "macos": "No. A lime that is yellow.",
+            "windows": "No. A lime that is yellow."
+          },
+          "text": "Нет. Лайм жёлтого цвета.",
+          "input": "dialogue.json"
+        },
+        "line:f718a7eb": {
+          "sourceByBuild": {
+            "macos": "You're the professor here. Must be correct.",
+            "windows": "You're the professor here. Must be correct."
+          },
+          "text": "Ты же профессор. Значит, так и есть.",
+          "input": "dialogue.json"
+        },
+        "line:f0351f0c": {
+          "sourceByBuild": {
+            "macos": "No way.",
+            "windows": "No way."
+          },
+          "text": "Да ну!",
+          "input": "dialogue.json"
+        },
+        "line:6605187b": {
+          "sourceByBuild": {
+            "macos": "That's an appeal to authority fallacy. But, yes. I'm correct.",
+            "windows": "That's an appeal to authority fallacy. But, yes. I'm correct."
+          },
+          "text": "Апелляция к авторитету — логическая ошибка. Но да, я прав.",
+          "input": "dialogue.json"
+        },
+        "line:15bcd86c": {
+          "sourceByBuild": {
+            "macos": "'Yes way', There is nothing I am more certain of.",
+            "windows": "'Yes way', There is nothing I am more certain of."
+          },
+          "text": "Именно так. Ни в чём я не уверен больше, чем в этом.",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "alexander-family-crest": {
+      "lines": {
+        "line:a5a8a9d5": {
+          "sourceByBuild": {
+            "macos": "Your crest is cool. What is it?",
+            "windows": "Your crest is cool. What is it?"
+          },
+          "text": "Классный гребень. Что это такое?",
+          "input": "dialogue.json"
+        },
+        "line:1ff9a04c": {
+          "sourceByBuild": {
+            "macos": "Oh, the crest around my head?",
+            "windows": "Oh, the crest around my head?"
+          },
+          "text": "О, ты про гребень вокруг моей головы?",
+          "input": "dialogue.json"
+        },
+        "line:89c9a73b": {
+          "sourceByBuild": {
+            "macos": "Many think it's part of my body.",
+            "windows": "Many think it's part of my body."
+          },
+          "text": "Многие думают, что он растёт прямо у меня на голове.",
+          "input": "dialogue.json"
+        },
+        "line:18d418ab": {
+          "sourceByBuild": {
+            "macos": "However, it's ornamental! My family crest. You see...",
+            "windows": "However, it's ornamental! My family crest. You see..."
+          },
+          "text": "Но это украшение! Мой фамильный гребень. Видишь ли...",
+          "input": "dialogue.json"
+        },
+        "line:8ee41fdc": {
+          "sourceByBuild": {
+            "macos": "Dragon history is complex. Ornamental crest <size=85%> are often <size=70%> worn by dragons to <size=55%>signify what family they belong to! <size=40%> It's an interesting mark of their culutral <size=35%> and familial heritage. I've often wondered if I should continue to wear mine. <size=20%> But culutural and familiar ties are considered important within the lore of dragons! so I must adhere to such things. <size=10%> Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. Then everything changed when the Fire Nation attacked.",
+            "windows": "Dragon history is complex. Ornamental crest <size=85%> are often <size=70%> worn by dragons to <size=55%>signify what family they belong to! <size=40%> It's an interesting mark of their culutral <size=35%> and familial heritage. I've often wondered if I should continue to wear mine. <size=20%> But culutural and familiar ties are considered important within the lore of dragons! so I must adhere to such things. <size=10%> Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. Then everything changed when the Fire Nation attacked."
+          },
+          "text": "История драконов сложна. Такие гребни <size=85%> часто <size=70%> носят драконы, чтобы <size=55%>показать, к какому роду они принадлежат! <size=40%> Это любопытный знак их культурного <size=35%> и семейного наследия. Я часто задаюсь вопросом, стоит ли мне и дальше носить свой. <size=20%> Но в преданиях драконов культурные и родственные связи весьма важны! Так что я должен чтить подобные традиции. <size=10%> Вода. Земля. Огонь. Воздух. Давным-давно четыре народа жили в мире и согласии. Но всё изменилось, когда Народ Огня напал.",
+          "input": "dialogue.json"
+        },
+        "line:e90fee8e": {
+          "sourceByBuild": {
+            "macos": "Oh.",
+            "windows": "Oh."
+          },
+          "text": "О.",
+          "input": "dialogue.json"
+        },
+        "line:535ee717": {
+          "sourceByBuild": {
+            "macos": "Can you repeat that?",
+            "windows": "Can you repeat that?"
+          },
+          "text": "Можешь повторить?",
+          "input": "dialogue.json"
+        },
+        "line:7f3fe9f9": {
+          "sourceByBuild": {
+            "macos": "Ah, sorry, I'm passionate about such things.",
+            "windows": "Ah, sorry, I'm passionate about such things."
+          },
+          "text": "Ах, извини, я увлекаюсь такими вещами.",
+          "input": "dialogue.json"
+        },
+        "line:c56ee060": {
+          "sourceByBuild": {
+            "macos": "I'm glad you enjoy my crest.",
+            "windows": "I'm glad you enjoy my crest."
+          },
+          "text": "Рад, что тебе нравится мой гребень.",
+          "input": "dialogue.json"
+        },
+        "line:f0cb8389": {
+          "sourceByBuild": {
+            "macos": "...No",
+            "windows": "...No"
+          },
+          "text": "...Нет.",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "movie-title-choices": {
+      "lines": {
+        "line:d9652dff": {
+          "sourceByBuild": {
+            "macos": "So. Our date tonight...",
+            "windows": "So. Our date tonight..."
+          },
+          "text": "Так. Наше свидание сегодня вечером...",
+          "input": "dialogue.json"
+        },
+        "line:7af04961": {
+          "sourceByBuild": {
+            "macos": "Where would you like to go?",
+            "windows": "Where would you like to go?"
+          },
+          "text": "Куда хочешь пойти?",
+          "input": "dialogue.json"
+        },
+        "line:ecc04e16": {
+          "sourceByBuild": {
+            "macos": "You decide!",
+            "windows": "You decide!"
+          },
+          "text": "Решай сам!",
+          "input": "dialogue.json"
+        },
+        "line:81905be1": {
+          "sourceByBuild": {
+            "macos": "I'd like to go out to eat.",
+            "windows": "I'd like to go out to eat."
+          },
+          "text": "Хочется куда-нибудь сходить поесть.",
+          "input": "dialogue.json"
+        },
+        "line:412ba249": {
+          "sourceByBuild": {
+            "macos": "Do you know any good bars?",
+            "windows": "Do you know any good bars?"
+          },
+          "text": "Знаешь какие-нибудь хорошие бары?",
+          "input": "dialogue.json"
+        },
+        "line:bd66082e": {
+          "sourceByBuild": {
+            "macos": "What about a movie?",
+            "windows": "What about a movie?"
+          },
+          "text": "А как насчёт кино?",
+          "input": "dialogue.json"
+        },
+        "line:2b560f59": {
+          "sourceByBuild": {
+            "macos": "Oh yeah?",
+            "windows": "Oh yeah?"
+          },
+          "text": "О, правда?",
+          "input": "dialogue.json"
+        },
+        "line:910706c0": {
+          "sourceByBuild": {
+            "macos": "I think a movie could be fun!",
+            "windows": "I think a movie could be fun!"
+          },
+          "text": "Думаю, в кино будет весело!",
+          "input": "dialogue.json"
+        },
+        "line:073701b7": {
+          "sourceByBuild": {
+            "macos": "What kind of movie are you thinking?",
+            "windows": "What kind of movie are you thinking?"
+          },
+          "text": "Какой фильм хочешь посмотреть?",
+          "input": "dialogue.json"
+        },
+        "line:962abe27": {
+          "sourceByBuild": {
+            "macos": "Project Scale mary",
+            "windows": "Project Scale mary"
+          },
+          "text": "Проект «Чешуя Мэри»",
+          "input": "dialogue.json"
+        },
+        "line:f1c14f75": {
+          "sourceByBuild": {
+            "macos": "Yip-Man - The Final Yip",
+            "windows": "Yip-Man - The Final Yip"
+          },
+          "text": "Тяф-Ман — Последний тяф",
+          "input": "dialogue.json"
+        },
+        "line:7e352505": {
+          "sourceByBuild": {
+            "macos": "Dragons of the galaxy 2",
+            "windows": "Dragons of the galaxy 2"
+          },
+          "text": "Драконы Галактики 2",
+          "input": "dialogue.json"
+        },
+        "line:001ab950": {
+          "sourceByBuild": {
+            "macos": "Oh I heard good things about that.",
+            "windows": "Oh I heard good things about that."
+          },
+          "text": "О, слышал, хороший фильм.",
+          "input": "dialogue.json"
+        },
+        "line:67f14802": {
+          "sourceByBuild": {
+            "macos": "Sure!",
+            "windows": "Sure!"
+          },
+          "text": "Давай!",
+          "input": "dialogue.json"
+        },
+        "line:4b9046ec": {
+          "sourceByBuild": {
+            "macos": "Yip-Man movies are real corny...",
+            "windows": "Yip-Man movies are real corny..."
+          },
+          "text": "Фильмы про Тяф-Мана такие дурацкие...",
+          "input": "dialogue.json"
+        },
+        "line:dda0419b": {
+          "sourceByBuild": {
+            "macos": "But I'm sure I'd enjoy it with you!",
+            "windows": "But I'm sure I'd enjoy it with you!"
+          },
+          "text": "Но с тобой мне точно понравится!",
+          "input": "dialogue.json"
+        },
+        "line:e8052272": {
+          "sourceByBuild": {
+            "macos": "Oh yeah I liked the first one.",
+            "windows": "Oh yeah I liked the first one."
+          },
+          "text": "О да, мне первая часть понравилась.",
+          "input": "dialogue.json"
+        },
+        "line:52542beb": {
+          "sourceByBuild": {
+            "macos": "Sure!",
+            "windows": "Sure!"
+          },
+          "text": "Давай!",
+          "input": "dialogue.json"
+        },
+        "line:c4642c9c": {
+          "sourceByBuild": {
+            "macos": "Sounds like a date then. I'm excited.",
+            "windows": "Sounds like a date then. I'm excited."
+          },
+          "text": "Значит, свидание. Уже жду не дождусь.",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "conrad-height-euphemism": {
+      "lines": {
+        "line:8b7915f4": {
+          "sourceByBuild": {
+            "macos": "Who's that?",
+            "windows": "Who's that?"
+          },
+          "text": "Кто это?",
+          "input": "dialogue.json"
+        },
+        "line:31281c6d": {
+          "sourceByBuild": {
+            "macos": "He's this REALLY cute red drake who goes to the wash!",
+            "windows": "He's this REALLY cute red drake who goes to the wash!"
+          },
+          "text": "Это ОЧЕНЬ симпатичный красный дрейк. Он ходит на мойку!",
+          "input": "dialogue.json"
+        },
+        "line:a7181b1a": {
+          "sourceByBuild": {
+            "macos": "He's a red dragon. I think you two would like eachother!",
+            "windows": "He's a red dragon. I think you two would like eachother!"
+          },
+          "text": "Он красный дракон. Думаю, вы друг другу понравитесь!",
+          "input": "dialogue.json"
+        },
+        "line:3605a48a": {
+          "sourceByBuild": {
+            "macos": "Oh! I think I've seen him. The tiny one, yeah?",
+            "windows": "Oh! I think I've seen him. The tiny one, yeah?"
+          },
+          "text": "О! Кажется, я его видел. Такой крошечный, да?",
+          "input": "dialogue.json"
+        },
+        "line:a035a3fd": {
+          "sourceByBuild": {
+            "macos": "He prefers 'vertically challenged'... But yes.",
+            "windows": "He prefers 'vertically challenged'... But yes."
+          },
+          "text": "Он предпочитает «ограничен по вертикали»... Но да.",
+          "input": "dialogue.json"
+        },
+        "line:69dd6a73": {
+          "sourceByBuild": {
+            "macos": "Mhm! he's trying to meet new people.",
+            "windows": "Mhm! he's trying to meet new people."
+          },
+          "text": "Ага! Он хочет завести новые знакомства.",
+          "input": "dialogue.json"
+        },
+        "line:45bc649d": {
+          "sourceByBuild": {
+            "macos": "Oh...",
+            "windows": "Oh..."
+          },
+          "text": "О...",
+          "input": "dialogue.json"
+        },
+        "line:d38c63ea": {
+          "sourceByBuild": {
+            "macos": "That's really cute.",
+            "windows": "Thats really cute."
+          },
+          "text": "Как мило.",
+          "input": "dialogue.json"
+        },
+        "line:ffed6d04": {
+          "sourceByBuild": {
+            "macos": "Oh, wonderful. Seem's we're similar.",
+            "windows": "Oh, wonderful. Seem's we're similar."
+          },
+          "text": "О, чудесно. Похоже, у нас много общего.",
+          "input": "dialogue.json"
+        },
+        "line:d9c91bca": {
+          "sourceByBuild": {
+            "macos": "How about you though? have you been seeing anyone?",
+            "windows": "How about you though? have you been seeing anyone?"
+          },
+          "text": "А у тебя как? Ни с кем не встречаешься?",
+          "input": "dialogue.json"
+        },
+        "line:48d4a45a": {
+          "sourceByBuild": {
+            "macos": "There's this one red dragon, Conrad. He's... Hot headed, but cute.",
+            "windows": "There's this one red dragon, Conrad. He's... Hot headed, but cute."
+          },
+          "text": "Есть один красный дракон, Конрад. Он... вспыльчивый, но симпатичный.",
+          "input": "dialogue.json"
+        },
+        "line:dee4a32d": {
+          "sourceByBuild": {
+            "macos": "Yeah! Conrad, he's adorable. Though he'd hate I said that.",
+            "windows": "Yeah! Conrad, he's adorable. Though he'd hate I said that."
+          },
+          "text": "Да! Конрад, он просто прелесть. Хотя ему бы это совсем не понравилось.",
+          "input": "dialogue.json"
+        },
+        "line:b90f527f": {
+          "sourceByBuild": {
+            "macos": "Oh huh, that's the tiny drake I saw coming in a bit back yeah?",
+            "windows": "Oh huh, that's the tiny drake I saw coming in a bit back yeah?"
+          },
+          "text": "О, это тот крошечный дрейк, которого я недавно видел здесь, да?",
+          "input": "dialogue.json"
+        },
+        "line:2f3f5508": {
+          "sourceByBuild": {
+            "macos": "Hey! He's just... 'vertically challenged'.",
+            "windows": "Hey! He's just... 'vertically challenged'."
+          },
+          "text": "Эй! Просто он... «ограничен по вертикали».",
+          "input": "dialogue.json"
+        },
+        "line:a0cb3f78": {
+          "sourceByBuild": {
+            "macos": "Mhm! that's him.",
+            "windows": "Mhm! thats him."
+          },
+          "text": "Ага! Это он.",
+          "input": "dialogue.json"
+        },
+        "line:956e5c91": {
+          "sourceByBuild": {
+            "macos": "Oh, sorry.",
+            "windows": "Oh, sorry."
+          },
+          "text": "Ой, извини.",
+          "input": "dialogue.json"
+        },
+        "line:035e5be6": {
+          "sourceByBuild": {
+            "macos": "They seem cute!",
+            "windows": "They seem cute!"
+          },
+          "text": "Звучит очень мило!",
+          "input": "dialogue.json"
+        },
+        "line:36fb380f": {
+          "sourceByBuild": {
+            "macos": "That's wonderful, he's cute!",
+            "windows": "Thats wonderful, he's cute!"
+          },
+          "text": "Как здорово, он симпатичный!",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "kobold-yip-film-title": {
+      "reuseIds": [
+        "line:f1c14f75",
+        "line:4b9046ec"
+      ]
+    },
+    "ryan-question-about-a-question": {
+      "lines": {
+        "line:aa0dda7b": {
+          "sourceByBuild": {
+            "macos": "Hey.",
+            "windows": "Hey."
+          },
+          "text": "Привет.",
+          "input": "dialogue.json"
+        },
+        "line:3c3ddd0c": {
+          "sourceByBuild": {
+            "macos": "Hm?",
+            "windows": "Hm?"
+          },
+          "text": "М?",
+          "input": "dialogue.json"
+        },
+        "line:866cd495": {
+          "sourceByBuild": {
+            "macos": "Whats up?",
+            "windows": "Whats up?"
+          },
+          "text": "Что такое?",
+          "input": "dialogue.json"
+        },
+        "line:105cd3e2": {
+          "sourceByBuild": {
+            "macos": "Can I ask you a question?",
+            "windows": "Can I ask you a question?"
+          },
+          "text": "Можно задать тебе вопрос?",
+          "input": "dialogue.json"
+        },
+        "line:81416c72": {
+          "sourceByBuild": {
+            "macos": "You already are, whats up?",
+            "windows": "You already are, whats up?"
+          },
+          "text": "Ты уже задал. Что такое?",
+          "input": "dialogue.json"
+        },
+        "line:709a9a57": {
+          "sourceByBuild": {
+            "macos": "Sure.",
+            "windows": "Sure."
+          },
+          "text": "Конечно.",
+          "input": "dialogue.json"
+        },
+        "line:17716b05": {
+          "sourceByBuild": {
+            "macos": "Oh, right. Sorry.",
+            "windows": "Oh, right. Sorry."
+          },
+          "text": "А, точно. Извини.",
+          "input": "dialogue.json"
+        },
+        "line:e6aa9d20": {
+          "sourceByBuild": {
+            "macos": "So, with... relationships.",
+            "windows": "So, with... relationships."
+          },
+          "text": "Так вот, про... отношения.",
+          "input": "dialogue.json"
+        },
+        "line:5cfb94b9": {
+          "sourceByBuild": {
+            "macos": "If a relationship is <i>so</i> bumpy and you know its going to end.",
+            "windows": "If a relationship is <i>so</i> bumpy and you know its going to end."
+          },
+          "text": "Если в отношениях <i>всё</i> так тяжело и ты знаешь, что они всё равно закончатся.",
+          "input": "dialogue.json"
+        },
+        "line:cacb93ce": {
+          "sourceByBuild": {
+            "macos": "And you've tried everything.",
+            "windows": "And you've tried everything."
+          },
+          "text": "И уже все способы перепробованы.",
+          "input": "dialogue.json"
+        },
+        "line:695ef750": {
+          "sourceByBuild": {
+            "macos": "...",
+            "windows": "..."
+          },
+          "text": "...",
+          "input": "dialogue.json"
+        },
+        "line:ff6ef027": {
+          "sourceByBuild": {
+            "macos": "When do you actually end the relationship?",
+            "windows": "When do you actually end the relationship?"
+          },
+          "text": "Как понять, когда пора расстаться?",
+          "input": "dialogue.json"
+        },
+        "line:453ff9be": {
+          "sourceByBuild": {
+            "macos": "Aw- Ryan...",
+            "windows": "Aw- Ryan..."
+          },
+          "text": "Ох, Райан...",
+          "input": "dialogue.json"
+        },
+        "line:d422462e": {
+          "sourceByBuild": {
+            "macos": "I'm... not sure I can answer that for you.",
+            "windows": "I'm... not sure I can answer that for you."
+          },
+          "text": "Не знаю... Вряд ли я могу ответить за тебя.",
+          "input": "dialogue.json"
+        },
+        "line:d30ffec9": {
+          "sourceByBuild": {
+            "macos": "I know. I know I shouldn't be dumping this on you.",
+            "windows": "I know. I know I shouldn't be dumping this on you."
+          },
+          "text": "Знаю. Знаю, что зря я всё это на тебя вываливаю.",
+          "input": "dialogue.json"
+        },
+        "line:42124159": {
+          "sourceByBuild": {
+            "macos": "You're just a very comfortable person to be around.",
+            "windows": "You're just a very comfortable person to be around."
+          },
+          "text": "Просто с тобой очень спокойно.",
+          "input": "dialogue.json"
+        },
+        "line:31ab814e": {
+          "sourceByBuild": {
+            "macos": "You're right... Theres no way you could.",
+            "windows": "You're right... Theres no way you could."
+          },
+          "text": "Верно... Откуда тебе знать.",
+          "input": "dialogue.json"
+        },
+        "line:a79b8639": {
+          "sourceByBuild": {
+            "macos": "I'm just happy I don't feel judged here.",
+            "windows": "I'm just happy I don't feel judged here."
+          },
+          "text": "Просто я рад, что здесь меня никто не осуждает.",
+          "input": "dialogue.json"
+        },
+        "line:1dca8fa0": {
+          "sourceByBuild": {
+            "macos": "You're just a very comfortable person to be around.",
+            "windows": "You're just a very comfortable person to be around."
+          },
+          "text": "Просто с тобой очень спокойно.",
+          "input": "dialogue.json"
+        },
+        "line:8bfa88d7": {
+          "sourceByBuild": {
+            "macos": "Thanks. I like being around you too.",
+            "windows": "Thanks. I like being around you too."
+          },
+          "text": "Спасибо. Мне тоже хорошо рядом с тобой.",
+          "input": "dialogue.json"
+        },
+        "line:be5feb3e": {
+          "sourceByBuild": {
+            "macos": "I hope things get better.",
+            "windows": "I hope things get better."
+          },
+          "text": "Надеюсь, всё наладится.",
+          "input": "dialogue.json"
+        },
+        "line:286fec49": {
+          "sourceByBuild": {
+            "macos": "I'm glad.",
+            "windows": "I'm glad."
+          },
+          "text": "Рад это слышать.",
+          "input": "dialogue.json"
+        },
+        "line:040ee2a7": {
+          "sourceByBuild": {
+            "macos": "me too.",
+            "windows": "me too."
+          },
+          "text": "Я тоже.",
+          "input": "dialogue.json"
+        }
+      }
+    },
+    "kobold-yip-speech": {
+      "lines": {
+        "line:5efde4e2": {
+          "sourceByBuild": {
+            "macos": "Yip!",
+            "windows": "Yip!"
+          },
+          "text": "Тяф!",
+          "input": "dialogue.json"
+        },
+        "line:c8cde395": {
+          "sourceByBuild": {
+            "macos": "Haha, 'Yip' indeed.",
+            "windows": "Haha, 'Yip' indeed."
+          },
+          "text": "Ха-ха, и правда, «тяф».",
+          "input": "dialogue.json"
+        },
+        "line:e662501c": {
+          "sourceByBuild": {
+            "macos": "Yip!",
+            "windows": "Yip!"
+          },
+          "text": "Тяф!",
+          "input": "dialogue.json"
+        },
+        "line:5544e245": {
+          "sourceByBuild": {
+            "macos": "Yip!",
+            "windows": "Yip!"
+          },
+          "text": "Тяф!",
+          "input": "dialogue.json"
+        },
+        "line:5e181cf4": {
+          "sourceByBuild": {
+            "macos": "Yip! <size=70%>(Gate)",
+            "windows": "Yip! <size=70%>(Gate)"
+          },
+          "text": "Тяф! <size=70%>(Ворота)",
+          "input": "dialogue.json"
+        },
+        "line:5935a413": {
+          "sourceByBuild": {
+            "macos": "Yip! <size=70%>(Yes)",
+            "windows": "Yip! <size=70%>(Yes)"
+          },
+          "text": "Тяф! <size=70%>(Да)",
+          "input": "dialogue.json"
+        },
+        "line:cf05a364": {
+          "sourceByBuild": {
+            "macos": "I'm not certain why I suddenly understand your 'Yips'",
+            "windows": "I'm not certain why I suddenly understand your 'Yips'"
+          },
+          "text": "Не совсем понимаю, почему я вдруг стал понимать твои «тяф».",
+          "input": "dialogue.json"
+        },
+        "line:a8ee5236": {
+          "sourceByBuild": {
+            "macos": "Yip! <size=70%>(It's because the dormant part of your draconic mind is remembering the deep set language bridge between your kind and mine. Which carries the deep meaning and intention of kobold 'Yips' within it. This sudden understanding of yours is simply from our connection growing over time and activating that part of your mind.)",
+            "windows": "Yip! <size=70%>(It's because the dormant part of your draconic mind is remembering the deep set language bridge between your kind and mine. Which carries the deep meaning and intention of kobold 'Yips' within it. This sudden understanding of yours is simply from our connection growing over time and activating that part of your mind.)"
+          },
+          "text": "Тяф! <size=70%>(Это потому, что дремлющая часть твоего драконьего сознания вспоминает давнюю языковую связь между нашими видами. Она несёт в себе весь смысл и замысел кобольдских «тяф». Мы постепенно сблизились, эта часть сознания пробудилась, и вот теперь ты вдруг всё понимаешь.)",
+          "input": "dialogue.json"
+        },
+        "line:b12a3f31": {
+          "sourceByBuild": {
+            "macos": "Yip! <size=70%>(idk)",
+            "windows": "Yip! <size=70%>(idk)"
+          },
+          "text": "Тяф! <size=70%>(хз)",
+          "input": "dialogue.json"
+        },
+        "line:c3e1f198": {
+          "sourceByBuild": {
+            "macos": "Yip!",
+            "windows": "Yip!"
+          },
+          "text": "Тяф!",
+          "input": "dialogue.json"
+        },
+        "line:266836f8": {
+          "sourceByBuild": {
+            "macos": "That's... the first time you've yipped for me.",
+            "windows": "Thats... the first time you've yipped for me."
+          },
+          "text": "Я... впервые от тебя слышу «тяф».",
+          "input": "dialogue.json"
+        },
+        "line:52bf5ede": {
+          "sourceByBuild": {
+            "macos": "I am THE kobold. Yip!",
+            "windows": "I am THE kobold. Yip!"
+          },
+          "text": "Я ТОТ САМЫЙ кобольд. Тяф!",
+          "input": "dialogue.json"
+        },
+        "line:3d516ddb": {
+          "sourceByBuild": {
+            "macos": "Yip!",
+            "windows": "Yip!"
+          },
+          "text": "Тяф!",
+          "input": "dialogue.json"
+        },
+        "line:9ec40945": {
+          "sourceByBuild": {
+            "macos": "Haha. 'Yip' to you too.",
+            "windows": "Haha. 'Yip' to you too."
+          },
+          "text": "Ха-ха. И тебе «тяф».",
+          "input": "dialogue.json"
+        },
+        "line:14d2c62f": {
+          "sourceByBuild": {
+            "macos": "Yip!",
+            "windows": "Yip!"
+          },
+          "text": "Тяф!",
+          "input": "dialogue.json"
+        },
+        "line:296ff3f4": {
+          "sourceByBuild": {
+            "macos": "Yip!",
+            "windows": "Yip!"
+          },
+          "text": "Тяф!",
+          "input": "dialogue.json"
+        },
+        "line:9444cdba": {
+          "sourceByBuild": {
+            "macos": "Yip",
+            "windows": "Yip"
+          },
+          "text": "Тяф",
+          "input": "dialogue.json"
+        },
+        "line:3e870ad0": {
+          "sourceByBuild": {
+            "macos": "Yip!",
+            "windows": "Yip!"
+          },
+          "text": "Тяф!",
+          "input": "dialogue.json"
+        }
+      },
+      "reuseIds": [
+        "line:f1c14f75",
+        "line:4b9046ec"
+      ]
+    },
+    "salmon-guy-dragon": {
+      "lines": {
+        "line:108de471": {
+          "sourceByBuild": {
+            "macos": "Yeah that sounds pretty good.",
+            "windows": "Yeah that sounds pretty good."
+          },
+          "text": "Да, звучит неплохо.",
+          "input": "dialogue.json"
+        },
+        "line:86bde306": {
+          "sourceByBuild": {
+            "macos": "How are you with seafood?",
+            "windows": "How are you with seafood?"
+          },
+          "text": "Как ты относишься к морепродуктам?",
+          "input": "dialogue.json"
+        },
+        "line:e5937e30": {
+          "sourceByBuild": {
+            "macos": "Yeah. I like fish!",
+            "windows": "Yeah. I like fish!"
+          },
+          "text": "Хорошо. Люблю рыбу!",
+          "input": "dialogue.json"
+        },
+        "line:fc571337": {
+          "sourceByBuild": {
+            "macos": "Hmmm, maybe something else?",
+            "windows": "Hmmm, maybe something else?"
+          },
+          "text": "Хм, может, что-нибудь другое?",
+          "input": "dialogue.json"
+        },
+        "line:73a37947": {
+          "sourceByBuild": {
+            "macos": "Oh, awesome. I'm a big salmon guy.",
+            "windows": "Oh, awesome. I'm a big salmon guy."
+          },
+          "text": "О, класс! Я большой любитель лосося.",
+          "input": "dialogue.json"
+        },
+        "line:c9f270de": {
+          "sourceByBuild": {
+            "macos": "Well, I'm a dragon- but... You know what I mean.",
+            "windows": "Well, I'm a dragon- but... You know what I mean."
+          },
+          "text": "Ну, большой дракон, который любит лосося... Ты понимаешь, о чём я.",
+          "input": "dialogue.json"
+        },
+        "line:5fc277a9": {
+          "sourceByBuild": {
+            "macos": "Sounds like a date then! Seafood then we play it by ear.",
+            "windows": "Sounds like a date then! Seafood then we play it by ear."
+          },
+          "text": "Тогда свидание! Сначала морепродукты, а дальше как пойдёт.",
+          "input": "dialogue.json"
+        },
+        "line:6a671440": {
+          "sourceByBuild": {
+            "macos": "I know a decent equine-kin place by the pier.",
+            "windows": "I know a decent equine-kin place by the pier."
+          },
+          "text": "У причала знаю неплохое заведение с кухней конского народа.",
+          "input": "dialogue.json"
+        },
+        "line:d0361dd9": {
+          "sourceByBuild": {
+            "macos": "Its like an equine fusion thing...",
+            "windows": "Its like an equine fusion thing..."
+          },
+          "text": "Там вроде фьюжен на основе конской кухни...",
+          "input": "dialogue.json"
+        },
+        "line:46061aae": {
+          "sourceByBuild": {
+            "macos": "I like it! I think you'd enjoy it too.",
+            "windows": "I like it! I think you'd enjoy it too."
+          },
+          "text": "Мне нравится! Думаю, тебе тоже понравится.",
+          "input": "dialogue.json"
+        },
+        "line:d71ba53e": {
+          "sourceByBuild": {
+            "macos": "Sounds like a date then!",
+            "windows": "Sounds like a date then!"
+          },
+          "text": "Тогда свидание!",
+          "input": "dialogue.json"
+        }
+      },
+      "reuseIds": [
+        "line:d9652dff",
+        "line:7af04961",
+        "line:ecc04e16",
+        "line:81905be1",
+        "line:412ba249",
+        "line:bd66082e"
+      ]
+    },
+    "alexander-romance-route": {
+      "lines": {
+        "line:a0e49f02": {
+          "sourceByBuild": {
+            "macos": "<gradient=\"gold\"><b> I wouldn't mind! </b></gradient><size=70%> (Will lead to Alexander romance!)",
+            "windows": "<gradient=\"gold\"><b> I wouldn't mind! </b></gradient><size=70%> (Will lead to Alexander romance!)"
+          },
+          "text": "<gradient=\"gold\"><b> Я не против! </b></gradient><size=70%> (Начнётся роман с Александром!)",
+          "input": "dialogue.json"
+        },
+        "line:0371fb9c": {
+          "sourceByBuild": {
+            "macos": "<gradient=\"gold\"><b> I'm going to be busy tonight. Sorry. </b></gradient><size=70%> (Will lead to no romance!)",
+            "windows": "<gradient=\"gold\"><b> I'm going to be busy tonight. Sorry. </b></gradient><size=70%> (Will lead to no romance!)"
+          },
+          "text": "<gradient=\"gold\"><b> На сегодня у меня уже есть планы. Извини. </b></gradient><size=70%> (Роман не начнётся!)",
+          "input": "dialogue.json"
+        },
+        "line:1b6c7f75": {
+          "sourceByBuild": {
+            "macos": "Hey there.",
+            "windows": "Hey there."
+          },
+          "text": "Привет.",
+          "input": "dialogue.json"
+        },
+        "line:a13d76ec": {
+          "sourceByBuild": {
+            "macos": "I was thinking...",
+            "windows": "I was thinking..."
+          },
+          "text": "Я тут подумал...",
+          "input": "dialogue.json"
+        },
+        "line:3020c97c": {
+          "sourceByBuild": {
+            "macos": "Do you believe I am attractive?",
+            "windows": "Do you believe I am attractive?"
+          },
+          "text": "Я, по-твоему, привлекателен?",
+          "input": "dialogue.json"
+        },
+        "line:4399096b": {
+          "sourceByBuild": {
+            "macos": "Oh.",
+            "windows": "Oh."
+          },
+          "text": "О.",
+          "input": "dialogue.json"
+        },
+        "line:d5a90e1c": {
+          "sourceByBuild": {
+            "macos": "I'm glad!",
+            "windows": "I'm glad!"
+          },
+          "text": "Я рад!",
+          "input": "dialogue.json"
+        },
+        "line:6ff80785": {
+          "sourceByBuild": {
+            "macos": "That... makes me feel a lot more sure of myself then.",
+            "windows": "That... makes me feel a lot more sure of myself then."
+          },
+          "text": "Тогда... я чувствую себя гораздо увереннее.",
+          "input": "dialogue.json"
+        },
+        "line:e721d512": {
+          "sourceByBuild": {
+            "macos": "That brings me to my next question...",
+            "windows": "That brings me to my next question..."
+          },
+          "text": "Это подводит меня к следующему вопросу...",
+          "input": "dialogue.json"
+        },
+        "line:8c8591ec": {
+          "sourceByBuild": {
+            "macos": "Would you care to join me at the college library this evening...?",
+            "windows": "Would you care to join me at the college library this evening...?"
+          },
+          "text": "Не хочешь составить мне компанию в библиотеке колледжа сегодня вечером?..",
+          "input": "dialogue.json"
+        },
+        "line:1ab5969b": {
+          "sourceByBuild": {
+            "macos": "It would be a... date. As most would say.",
+            "windows": "It would be a... date. As most would say."
+          },
+          "text": "Это было бы... свидание. Как принято говорить.",
+          "input": "dialogue.json"
+        },
+        "line:36d49875": {
+          "sourceByBuild": {
+            "macos": "Wonderful!",
+            "windows": "Wonderful!"
+          },
+          "text": "Чудесно!",
+          "input": "dialogue.json"
+        },
+        "line:9541fceb": {
+          "sourceByBuild": {
+            "macos": "I've been considering asking you this for a while now.",
+            "windows": "I've been considering asking you this for a while now."
+          },
+          "text": "Я уже давно собирался спросить тебя об этом.",
+          "input": "dialogue.json"
+        },
+        "line:8d5c7802": {
+          "sourceByBuild": {
+            "macos": "What's up?",
+            "windows": "What's up?"
+          },
+          "text": "Что такое?",
+          "input": "dialogue.json"
+        },
+        "line:a610ce0b": {
+          "sourceByBuild": {
+            "macos": "YES.",
+            "windows": "YES."
+          },
+          "text": "ДА.",
+          "input": "dialogue.json"
+        },
+        "line:b920f205": {
+          "sourceByBuild": {
+            "macos": "Ah. Do not worry.",
+            "windows": "Ah. Do not worry."
+          },
+          "text": "Ах. Не беспокойся.",
+          "input": "dialogue.json"
+        },
+        "line:2f10f572": {
+          "sourceByBuild": {
+            "macos": "Very well. Don't let me interrupt the wash then!",
+            "windows": "Very well. Don't let me interrupt the wash then!"
+          },
+          "text": "Что ж. Тогда не буду мешать мойке!",
+          "input": "dialogue.json"
+        }
+      },
+      "reuseIds": []
+    },
+    "ryan-conrad-romance-routing": {
+      "lines": {
+        "line:36ff6bd9": {
+          "sourceByBuild": {
+            "macos": "<gradient=\"gold\"><b> I know a dragon, Ryan. I could get you two in contact? </b></gradient><size=70%>(Unlocks Conrad/Ryan hookup OR Ryan romance)",
+            "windows": "<gradient=\"gold\"><b> I know a dragon, Ryan. I could get you two in contact? </b></gradient><size=70%>(Unlocks Conrad/Ryan hookup OR Ryan romance)"
+          },
+          "text": "<gradient=\"gold\"><b> Знаю одного дракона, Райана. Может, вас познакомить? </b></gradient><size=70%>(Откроет встречу Конрада с Райаном ИЛИ роман с Райаном)",
+          "input": "dialogue.json"
+        },
+        "line:7e9d40e6": {
+          "sourceByBuild": {
+            "macos": "<gradient=\"gold\"><b> I wouldn't mind hanging out... </b></gradient><size=70%> (Unlocks Conrad romance)",
+            "windows": "<gradient=\"gold\"><b> I wouldn't mind hanging out... </b></gradient><size=70%> (Unlocks Conrad romance)"
+          },
+          "text": "<gradient=\"gold\"><b> Я не против провести время вместе... </b></gradient><size=70%> (Откроет роман с Конрадом)",
+          "input": "dialogue.json"
+        },
+        "line:bedc761d": {
+          "sourceByBuild": {
+            "macos": "<gradient=\"gold\"><b>I know this one red dragon. I think you'd like him! </b></gradient><size=70%> (Hooks up Ryan with Conrad!)",
+            "windows": "<gradient=\"gold\"><b>I know this one red dragon. I think you'd like him! </b></gradient><size=70%> (Hooks up Ryan with Conrad!)"
+          },
+          "text": "<gradient=\"gold\"><b>Знаю одного красного дракона. Думаю, он тебе понравится! </b></gradient><size=70%> (Сведёт Райана с Конрадом!)",
+          "input": "dialogue.json"
+        },
+        "line:e104b8e4": {
+          "sourceByBuild": {
+            "macos": "<gradient=\"gold\"><b>Oh. Uhm. <size=70%> I wouldn't mind... If I was that someone. </b></gradient><size=70%> (Locks in Ryan romance!)",
+            "windows": "<gradient=\"gold\"><b>Oh. Uhm. <size=70%> I wouldn't mind... If I was that someone. </b></gradient><size=70%> (Locks in Ryan romance!)"
+          },
+          "text": "<gradient=\"gold\"><b>О. Эм. <size=70%> Я не против... Если речь обо мне. </b></gradient><size=70%> (Закрепит роман с Райаном!)",
+          "input": "dialogue.json"
+        },
+        "line:f5a81524": {
+          "sourceByBuild": {
+            "macos": "<gradient=\"gold\"><b>I don't have anyone off the top of my head.</b></gradient><size=70%> (Locks in Conrad romance!)",
+            "windows": "<gradient=\"gold\"><b>I don't have anyone off the top of my head.</b></gradient><size=70%> (Locks in Conrad romance!)"
+          },
+          "text": "<gradient=\"gold\"><b>Никто сразу на ум не приходит.</b></gradient><size=70%> (Закрепит роман с Конрадом!)",
+          "input": "dialogue.json"
+        },
+        "line:d376acb9": {
+          "sourceByBuild": {
+            "macos": "Ey, so. Was thinkin'",
+            "windows": "Ey, so. Was thinkin'"
+          },
+          "text": "Эй, слушай. Я тут подумал.",
+          "input": "dialogue.json"
+        },
+        "line:4546abce": {
+          "sourceByBuild": {
+            "macos": "Might seem kinda weird to ask now. Buuuut.",
+            "windows": "Might seem kinda weird to ask now. Buuuut."
+          },
+          "text": "Может, сейчас странно об этом спрашивать. Но-о-о...",
+          "input": "dialogue.json"
+        },
+        "line:a0cf6cae": {
+          "sourceByBuild": {
+            "macos": "Do you know any cool places, people, I could hang around?",
+            "windows": "Do you know any cool places, people, I could hang around?"
+          },
+          "text": "Знаешь, где тут можно потусить или с кем познакомиться?",
+          "input": "dialogue.json"
+        },
+        "line:8cae6240": {
+          "sourceByBuild": {
+            "macos": "Another dragon? Usually I don't really get along...",
+            "windows": "Another dragon? Usually I don't really get along..."
+          },
+          "text": "Другой дракон? Обычно я с ними не очень лажу...",
+          "input": "dialogue.json"
+        },
+        "line:2f3b06de": {
+          "sourceByBuild": {
+            "macos": "Okay. Then I think I'd like to try.",
+            "windows": "Okay. Then I think I'd like to try."
+          },
+          "text": "Ладно. Тогда, пожалуй, попробую.",
+          "input": "dialogue.json"
+        },
+        "line:035a0830": {
+          "sourceByBuild": {
+            "macos": "Thank you. I'd really appreciate it",
+            "windows": "Thank you. I'd really appreciate it"
+          },
+          "text": "Спасибо. Было бы здорово.",
+          "input": "dialogue.json"
+        },
+        "line:67592de1": {
+          "sourceByBuild": {
+            "macos": "I probably need to head out though.",
+            "windows": "I probably need to head out though."
+          },
+          "text": "А мне, наверное, пора идти.",
+          "input": "dialogue.json"
+        },
+        "line:f1692a96": {
+          "sourceByBuild": {
+            "macos": "Thanks for the suggestion!",
+            "windows": "Thanks for the suggestion!"
+          },
+          "text": "Спасибо за совет!",
+          "input": "dialogue.json"
+        },
+        "line:1a9e6537": {
+          "sourceByBuild": {
+            "macos": "Oh, no. Ryan is a sweetheart.",
+            "windows": "Oh, no. Ryan is a sweetheart."
+          },
+          "text": "Да нет. Райан — сама доброта.",
+          "input": "dialogue.json"
+        },
+        "line:956a0f47": {
+          "sourceByBuild": {
+            "macos": "I'll make sure to ask him next time I see him.",
+            "windows": "I'll make sure to ask him next time I see him."
+          },
+          "text": "Обязательно спрошу его, когда в следующий раз увижу.",
+          "input": "dialogue.json"
+        },
+        "line:4b38230f": {
+          "sourceByBuild": {
+            "macos": "No need for thanks. I'll get the gate.",
+            "windows": "No need for thanks. I'll get the gate."
+          },
+          "text": "Да не за что. Сейчас открою ворота.",
+          "input": "dialogue.json"
+        },
+        "line:e8ad4791": {
+          "sourceByBuild": {
+            "macos": "Ooooh.",
+            "windows": "Ooooh."
+          },
+          "text": "О-о-о.",
+          "input": "dialogue.json"
+        },
+        "line:52fc4e08": {
+          "sourceByBuild": {
+            "macos": "I think I'd like that!",
+            "windows": "I think I'd like that!"
+          },
+          "text": "Мне бы это понравилось!",
+          "input": "dialogue.json"
+        },
+        "line:c4cc497f": {
+          "sourceByBuild": {
+            "macos": "You're pretty hot.",
+            "windows": "You're pretty hot."
+          },
+          "text": "А ты ничего, прямо жарко становится.",
+          "input": "dialogue.json"
+        },
+        "line:55d1f6ef": {
+          "sourceByBuild": {
+            "macos": "...and nice.",
+            "windows": "...and nice."
+          },
+          "text": "...И вообще, с тобой приятно.",
+          "input": "dialogue.json"
+        },
+        "line:0a093816": {
+          "sourceByBuild": {
+            "macos": "Oh... hah. I like that.",
+            "windows": "Oh... hah. I like that."
+          },
+          "text": "О... Ха. Мне нравится.",
+          "input": "dialogue.json"
+        },
+        "line:a99c5c88": {
+          "sourceByBuild": {
+            "macos": "So. How about a date?",
+            "windows": "So. How about a date?"
+          },
+          "text": "Ну что, как насчёт свидания?",
+          "input": "dialogue.json"
+        },
+        "line:14e0edf6": {
+          "sourceByBuild": {
+            "macos": "I think I'd like to try!",
+            "windows": "I think I'd like to try!"
+          },
+          "text": "Я бы попробовал!",
+          "input": "dialogue.json"
+        },
+        "line:82d0ea81": {
+          "sourceByBuild": {
+            "macos": "Okay! I'll be back later then.",
+            "windows": "Okay! I'll be back later then."
+          },
+          "text": "Ладно! Тогда вернусь позже.",
+          "input": "dialogue.json"
+        },
+        "line:730b1ca4": {
+          "sourceByBuild": {
+            "macos": "Hmm?",
+            "windows": "Hmm?"
+          },
+          "text": "М-м?",
+          "input": "dialogue.json"
+        },
+        "line:5f6a124a": {
+          "sourceByBuild": {
+            "macos": "Oh, okay. Thanks.",
+            "windows": "Oh, okay. Thanks."
+          },
+          "text": "А, ладно. Спасибо.",
+          "input": "dialogue.json"
+        },
+        "line:b058318f": {
+          "sourceByBuild": {
+            "macos": "It means you're doing a good job in kobold.",
+            "windows": "It means you're doing a good job in kobold."
+          },
+          "text": "На кобольдском это значит, что у тебя отлично получается.",
+          "input": "dialogue.json"
+        },
+        "line:13cd5511": {
+          "sourceByBuild": {
+            "macos": "That's fast... But I think so!",
+            "windows": "That's fast... But I think so!"
+          },
+          "text": "Быстро же... Но я, пожалуй, за!",
+          "input": "dialogue.json"
+        },
+        "line:e53b1bd3": {
+          "sourceByBuild": {
+            "macos": "<size=70%><i> holy shit, I just bagged a date with a dragon.",
+            "windows": "<size=70%><i> holy shit, I just bagged a date with a dragon."
+          },
+          "text": "<size=70%><i> Охренеть, у меня свидание с драконом.",
+          "input": "dialogue.json"
+        },
+        "line:c95a153d": {
+          "sourceByBuild": {
+            "macos": "Oh! nothing. I'll get the gate.",
+            "windows": "Oh! nothing. I'll get the gate."
+          },
+          "text": "Ой! Ничего. Сейчас открою ворота.",
+          "input": "dialogue.json"
+        },
+        "line:048d7f84": {
+          "sourceByBuild": {
+            "macos": "...About what I said earlier.",
+            "windows": "...About what I said earlier."
+          },
+          "text": "...Насчёт того, что я говорил раньше.",
+          "input": "dialogue.json"
+        },
+        "line:28ec716a": {
+          "sourceByBuild": {
+            "macos": "Do you know anyone I could talk to? Y'know... about relationship stuffs?",
+            "windows": "Do you know anyone I could talk to? Y'know... about relationship stuffs?"
+          },
+          "text": "Знаешь кого-нибудь, с кем можно поговорить? Ну... про отношения и всё такое.",
+          "input": "dialogue.json"
+        },
+        "line:1d491283": {
+          "sourceByBuild": {
+            "macos": "Oh?",
+            "windows": "Oh?"
+          },
+          "text": "О?",
+          "input": "dialogue.json"
+        },
+        "line:5c78099a": {
+          "sourceByBuild": {
+            "macos": "I think I'd like to meet him!",
+            "windows": "I think I'd like to meet him!"
+          },
+          "text": "Я бы хотел с ним познакомиться!",
+          "input": "dialogue.json"
+        },
+        "line:70190774": {
+          "sourceByBuild": {
+            "macos": "Thanks!",
+            "windows": "Thanks!"
+          },
+          "text": "Спасибо!",
+          "input": "dialogue.json"
+        },
+        "line:92bd78f3": {
+          "sourceByBuild": {
+            "macos": "Yeah?",
+            "windows": "Yeah?"
+          },
+          "text": "Да?",
+          "input": "dialogue.json"
+        },
+        "line:ca480eed": {
+          "sourceByBuild": {
+            "macos": "I'll get you two in contact then.",
+            "windows": "I'll get you two in contact then."
+          },
+          "text": "Тогда я вас познакомлю.",
+          "input": "dialogue.json"
+        },
+        "line:8caa3196": {
+          "sourceByBuild": {
+            "macos": "Hey uhm, thanks once again.",
+            "windows": "Hey uhm, thanks once again."
+          },
+          "text": "Слушай, эм, ещё раз спасибо.",
+          "input": "dialogue.json"
+        },
+        "line:8b878971": {
+          "sourceByBuild": {
+            "macos": "Hah, yeah. He sounds fun.",
+            "windows": "Hah, yeah. He sounds fun."
+          },
+          "text": "Ха, ага. С ним, похоже, весело.",
+          "input": "dialogue.json"
+        },
+        "line:1db78e06": {
+          "sourceByBuild": {
+            "macos": "I'll make sure to tell you how it goes, yeah?",
+            "windows": "I'll make sure to tell you how it goes, yeah?"
+          },
+          "text": "Обязательно расскажу, как всё прошло, ладно?",
+          "input": "dialogue.json"
+        },
+        "line:d45f4788": {
+          "sourceByBuild": {
+            "macos": "This was nice...",
+            "windows": "This was nice..."
+          },
+          "text": "Хорошо посидели...",
+          "input": "dialogue.json"
+        },
+        "line:426f40ff": {
+          "sourceByBuild": {
+            "macos": "See you again soon, yeah?",
+            "windows": "See you again soon, yeah?"
+          },
+          "text": "Скоро увидимся, да?",
+          "input": "dialogue.json"
+        },
+        "line:1a9a36e1": {
+          "sourceByBuild": {
+            "macos": "No problem! Can't wait for you to meet Conrad.",
+            "windows": "No problem! Can't wait for you to meet Conrad."
+          },
+          "text": "Да не за что! Не терпится вас с Конрадом познакомить.",
+          "input": "dialogue.json"
+        },
+        "line:f83e4966": {
+          "sourceByBuild": {
+            "macos": "I'm excited to hear about it!",
+            "windows": "I'm excited to hear about it!"
+          },
+          "text": "Жду не дождусь твоего рассказа!",
+          "input": "dialogue.json"
+        },
+        "line:e1fa2461": {
+          "sourceByBuild": {
+            "macos": "Hopefully! I'll go get the gate.",
+            "windows": "Hopefully! I'll go get the gate."
+          },
+          "text": "Надеюсь! Сейчас открою ворота.",
+          "input": "dialogue.json"
+        },
+        "line:3b6d644d": {
+          "sourceByBuild": {
+            "macos": "Oh.",
+            "windows": "Oh."
+          },
+          "text": "О.",
+          "input": "dialogue.json"
+        },
+        "line:ad5d633a": {
+          "sourceByBuild": {
+            "macos": "<i>Oh...",
+            "windows": "<i>Oh..."
+          },
+          "text": "<i>О...",
+          "input": "dialogue.json"
+        },
+        "line:170c6aa3": {
+          "sourceByBuild": {
+            "macos": "I think I'd like you to be that someone aswell.",
+            "windows": "I think I'd like you to be that someone aswell."
+          },
+          "text": "Кажется, мне тоже хочется, чтобы это был разговор с тобой.",
+          "input": "dialogue.json"
+        },
+        "line:22a9094a": {
+          "sourceByBuild": {
+            "macos": "I guess so!",
+            "windows": "I guess so!"
+          },
+          "text": "Похоже на то!",
+          "input": "dialogue.json"
+        },
+        "line:09e5bf43": {
+          "sourceByBuild": {
+            "macos": "You're cute by the way.",
+            "windows": "You're cute by the way."
+          },
+          "text": "Ты мне нравишься, кстати.",
+          "input": "dialogue.json"
+        },
+        "line:7a5c7f54": {
+          "sourceByBuild": {
+            "macos": "I didn't mean to fluster you!",
+            "windows": "I didn't mean to fluster you!"
+          },
+          "text": "Я не хотел тебя смущать!",
+          "input": "dialogue.json"
+        },
+        "line:ec6c7823": {
+          "sourceByBuild": {
+            "macos": "I'm just... Happy.",
+            "windows": "I'm just... Happy."
+          },
+          "text": "Я просто... рад.",
+          "input": "dialogue.json"
+        },
+        "line:813c6dd4": {
+          "sourceByBuild": {
+            "macos": "So is this like... our first date?",
+            "windows": "So is this like... our first date?"
+          },
+          "text": "Так это, получается... наше первое свидание?",
+          "input": "dialogue.json"
+        },
+        "line:5bab2df8": {
+          "sourceByBuild": {
+            "macos": "Yeah... I've never gone on a date with a kobold before.",
+            "windows": "Yeah... I've never gone on a date with a kobold before."
+          },
+          "text": "Ага... Я ещё ни разу не ходил на свидание с кобольдом.",
+          "input": "dialogue.json"
+        },
+        "line:cab69268": {
+          "sourceByBuild": {
+            "macos": "But I already know I'm liking this a lot.",
+            "windows": "But I already know I'm liking this a lot."
+          },
+          "text": "Но мне уже очень нравится.",
+          "input": "dialogue.json"
+        },
+        "line:3fa80829": {
+          "sourceByBuild": {
+            "macos": "Heh. Yeah. I like you too.",
+            "windows": "Heh. Yeah. I like you too."
+          },
+          "text": "Хех. Ага. Ты мне тоже нравишься.",
+          "input": "dialogue.json"
+        },
+        "line:85f901b0": {
+          "sourceByBuild": {
+            "macos": "Thanks for sharing food with me...",
+            "windows": "Thanks for sharing food with me..."
+          },
+          "text": "Спасибо за компанию за едой...",
+          "input": "dialogue.json"
+        },
+        "line:266c652e": {
+          "sourceByBuild": {
+            "macos": "I'm looking forward to seeing you again",
+            "windows": "I'm looking forward to seeing you again"
+          },
+          "text": "Очень жду нашей следующей встречи.",
+          "input": "dialogue.json"
+        },
+        "line:9c3d6cb7": {
+          "sourceByBuild": {
+            "macos": "Okay! I'll see you soon.",
+            "windows": "Okay! I'll see you soon."
+          },
+          "text": "Ладно! До скорого.",
+          "input": "dialogue.json"
+        },
+        "line:cd9b2a8f": {
+          "sourceByBuild": {
+            "macos": "No, thank you. I'm... Really excited.",
+            "windows": "No, thank you. I'm... Really excited."
+          },
+          "text": "Нет, это тебе спасибо. Я... жду не дождусь.",
+          "input": "dialogue.json"
+        },
+        "line:5c86951f": {
+          "sourceByBuild": {
+            "macos": "I like you a lot.",
+            "windows": "I like you a lot."
+          },
+          "text": "Ты мне очень нравишься.",
+          "input": "dialogue.json"
+        },
+        "line:b05c6259": {
+          "sourceByBuild": {
+            "macos": "I always look forward to seeing you. I'll go get the gate.",
+            "windows": "I always look forward to seeing you. I'll go get the gate."
+          },
+          "text": "Я всегда жду встречи с тобой. Сейчас открою ворота.",
+          "input": "dialogue.json"
+        },
+        "line:4ff91cbd": {
+          "sourceByBuild": {
+            "macos": "That's fine!",
+            "windows": "That's fine!"
+          },
+          "text": "Ничего страшного!",
+          "input": "dialogue.json"
+        },
+        "line:9b10d450": {
+          "sourceByBuild": {
+            "macos": "So this Conrad guy, seems like you like him?",
+            "windows": "So this Conrad guy, seems like you like him?"
+          },
+          "text": "Этот Конрад, похоже, тебе нравится?",
+          "input": "dialogue.json"
+        },
+        "line:52f81dde": {
+          "sourceByBuild": {
+            "macos": "That's cute!",
+            "windows": "Thats cute!"
+          },
+          "text": "Как мило!",
+          "input": "dialogue.json"
+        },
+        "line:c4c81aa9": {
+          "sourceByBuild": {
+            "macos": "Whats your favorite part about him?",
+            "windows": "Whats your favorite part about him?"
+          },
+          "text": "А что тебе в нём нравится больше всего?",
+          "input": "dialogue.json"
+        },
+        "line:f16d7940": {
+          "sourceByBuild": {
+            "macos": "Oh... Yeah, tinier dragons tend to... Compensate.",
+            "windows": "Oh... Yeah, tinier dragons tend to... Compensate."
+          },
+          "text": "О... Ага, драконы поменьше обычно... компенсируют.",
+          "input": "dialogue.json"
+        },
+        "line:91ab30f5": {
+          "sourceByBuild": {
+            "macos": "You'll have to tell me how you two work out!",
+            "windows": "You'll have to tell me how you two work out!"
+          },
+          "text": "Расскажешь, как у вас всё сложится!",
+          "input": "dialogue.json"
+        },
+        "line:079b3782": {
+          "sourceByBuild": {
+            "macos": "Thanks for sharing food with me, You're a great friend.",
+            "windows": "Thanks for sharing food with me, You're a great friend."
+          },
+          "text": "Спасибо, что поели вместе. Мне очень дорога наша дружба.",
+          "input": "dialogue.json"
+        },
+        "line:886f5df2": {
+          "sourceByBuild": {
+            "macos": "Okay, I'll see you later!",
+            "windows": "Okay, I'll see you later!"
+          },
+          "text": "Ладно, ещё увидимся!",
+          "input": "dialogue.json"
+        },
+        "line:0d20d327": {
+          "sourceByBuild": {
+            "macos": "Of course! Thank you for the food.",
+            "windows": "Of course! Thank you for the food."
+          },
+          "text": "Конечно! Спасибо за угощение.",
+          "input": "dialogue.json"
+        },
+        "line:7e991330": {
+          "sourceByBuild": {
+            "macos": "Hehe yeah.",
+            "windows": "Hehe yeah."
+          },
+          "text": "Хе-хе, ага.",
+          "input": "dialogue.json"
+        },
+        "line:675d7e37": {
+          "sourceByBuild": {
+            "macos": "He's like. SUPER hung.",
+            "windows": "He's like. SUPER hung."
+          },
+          "text": "У него просто ОГРОМНЫЙ член.",
+          "input": "dialogue.json"
+        },
+        "line:a40e531c": {
+          "sourceByBuild": {
+            "macos": "Thanks for the food! I'll go get the gate.",
+            "windows": "Thanks for the food! I'll go get the gate."
+          },
+          "text": "Спасибо за угощение! Сейчас открою ворота.",
+          "input": "dialogue.json"
+        }
+      },
+      "reuseIds": [
+        "line:266836f8",
+        "line:c3e1f198",
+        "line:8b7915f4",
+        "line:3605a48a",
+        "line:45bc649d",
+        "line:d38c63ea",
+        "line:31281c6d",
+        "line:a035a3fd",
+        "line:9fd5b834",
+        "line:d9c91bca",
+        "line:b90f527f",
+        "line:956e5c91",
+        "line:035e5be6",
+        "line:48d4a45a",
+        "line:2f3f5508"
+      ]
+    },
+    "yarn-missing-named-destinations": {
+      "lines": {
+        "line:ddab3d34": {
+          "sourceByBuild": {
+            "macos": "I'm very satisfied with these results..",
+            "windows": "I'm very satisfied with these results.."
+          },
+          "text": "Я весьма доволен результатом...",
+          "input": "dialogue.json"
+        },
+        "line:4d6b365e": {
+          "sourceByBuild": {
+            "macos": "Ahh, all cleaned and with a lighter load.",
+            "windows": "Ahh, all cleaned and with a lighter load."
+          },
+          "text": "А-а, теперь я чистый, и на душе полегче.",
+          "input": "dialogue.json"
+        },
+        "line:f73a3fc7": {
+          "sourceByBuild": {
+            "macos": "Thanks mate, see you tomorrow then.",
+            "windows": "Thanks mate, see you tomorrow then."
+          },
+          "text": "Спасибо, дружище. Тогда до завтра.",
+          "input": "dialogue.json"
+        },
+        "line:019b83df": {
+          "sourceByBuild": {
+            "macos": "That was wonderful! I feel so much better about dating.",
+            "windows": "That was wonderful! I feel so much better about dating."
+          },
+          "text": "Это было чудесно! Теперь мне гораздо спокойнее ходить на свидания.",
+          "input": "dialogue.json"
+        },
+        "line:bbca8a46": {
+          "sourceByBuild": {
+            "macos": "Thank you!",
+            "windows": "Thank you!"
+          },
+          "text": "Спасибо!",
+          "input": "dialogue.json"
+        },
+        "line:b3c35166": {
+          "sourceByBuild": {
+            "macos": "Phew, I was worried I'd make another mess of things.",
+            "windows": "Phew, I was worried I'd make another mess of things."
+          },
+          "text": "Фух, я боялся снова всё испортить.",
+          "input": "dialogue.json"
+        },
+        "line:564a9606": {
+          "sourceByBuild": {
+            "macos": "Now they'll never need to know!",
+            "windows": "Now they'll never need to know!"
+          },
+          "text": "Теперь им и знать об этом ни к чему!",
+          "input": "dialogue.json"
+        },
+        "line:c07a9171": {
+          "sourceByBuild": {
+            "macos": "Thanks!",
+            "windows": "Thanks!"
+          },
+          "text": "Спасибо!",
+          "input": "dialogue.json"
+        }
+      },
+      "exactOnly": {
+        "line:22deeef6": {
+          "macos": "==",
+          "windows": "=="
+        },
+        "line:25f35611": {
+          "macos": "---",
+          "windows": "---"
+        },
+        "line:3ed2f649": {
+          "macos": "title: Conrad_OutroDone",
+          "windows": "title: Conrad_OutroDone"
+        },
+        "line:4b9b3a43": {
+          "macos": "---",
+          "windows": "---"
+        },
+        "line:67fa34ad": {
+          "macos": "==",
+          "windows": "=="
+        },
+        "line:722243c8": {
+          "macos": "title: RyanDate_OutroDone",
+          "windows": "title: RyanDate_OutroDone"
+        },
+        "line:74c28add": {
+          "macos": "title: ConradBeatup_OutroDone",
+          "windows": "title: ConradBeatup_OutroDone"
+        },
+        "line:97ab84a8": {
+          "macos": "---",
+          "windows": "---"
+        },
+        "line:a8e2f13e": {
+          "macos": "==",
+          "windows": "=="
+        },
+        "line:b4eee981": {
+          "macos": "title: RyanExploded_OutroDone",
+          "windows": "title: RyanExploded_OutroDone"
+        },
+        "line:ce938344": {
+          "macos": "==",
+          "windows": "=="
+        },
+        "line:db5b3129": {
+          "macos": "---",
+          "windows": "---"
+        },
+        "line:e2f28daa": {
+          "macos": "---",
+          "windows": "---"
+        },
+        "line:e41244bf": {
+          "macos": "==",
+          "windows": "=="
+        },
+        "line:f1ca33da": {
+          "macos": "title: Alexander_Done",
+          "windows": "title: Alexander_Done"
+        }
+      }
+    },
+    "yarn-alexander-question-once-state": {
+      "lines": {
+        "line:fc7aaaa0": {
+          "sourceByBuild": {
+            "macos": "What's teaching like?",
+            "windows": "What's teaching like?"
+          },
+          "text": "Каково это — преподавать?",
+          "input": "dialogue.json"
+        },
+        "line:daa040eb": {
+          "sourceByBuild": {
+            "macos": "Do you like purple?",
+            "windows": "Do you like purple?"
+          },
+          "text": "Тебе нравится фиолетовый цвет?",
+          "input": "dialogue.json"
+        },
+        "line:21c0526b": {
+          "sourceByBuild": {
+            "macos": "Do you like being big?",
+            "windows": "Do you like being big?"
+          },
+          "text": "Тебе нравится быть таким большим?",
+          "input": "dialogue.json"
+        },
+        "line:838cdf1b": {
+          "sourceByBuild": {
+            "macos": "What do you think of me?",
+            "windows": "What do you think of me?"
+          },
+          "text": "Что ты обо мне думаешь?",
+          "input": "dialogue.json"
+        },
+        "line:72a9b5bb": {
+          "sourceByBuild": {
+            "macos": "Are you happy?",
+            "windows": "Are you happy?"
+          },
+          "text": "Ты счастлив?",
+          "input": "dialogue.json"
+        },
+        "line:66fb84fe": {
+          "sourceByBuild": {
+            "macos": "That's all I want to ask.",
+            "windows": "That's all I want to ask."
+          },
+          "text": "Больше вопросов нет.",
+          "input": "dialogue.json"
+        },
+        "line:19f36dc0": {
+          "sourceByBuild": {
+            "macos": "It's my dream.",
+            "windows": "It's my dream."
+          },
+          "text": "Это моя мечта.",
+          "input": "dialogue.json"
+        },
+        "line:8fc36ab7": {
+          "sourceByBuild": {
+            "macos": "I enjoy being a part of so many individuals lives in a positive way.",
+            "windows": "I enjoy being a part of so many individuals lives in a positive way."
+          },
+          "text": "Мне нравится, что я могу менять к лучшему жизни стольких людей.",
+          "input": "dialogue.json"
+        },
+        "line:3592632e": {
+          "sourceByBuild": {
+            "macos": "...It's intimidating knowing how much they look up to me.",
+            "windows": "...It's intimidating knowing how much they look up to me."
+          },
+          "text": "...Пугает, что они смотрят на меня снизу вверх.",
+          "input": "dialogue.json"
+        },
+        "line:a3a26459": {
+          "sourceByBuild": {
+            "macos": "And not just physically.",
+            "windows": "And not just physically."
+          },
+          "text": "И не только в буквальном смысле.",
+          "input": "dialogue.json"
+        },
+        "line:003700c7": {
+          "sourceByBuild": {
+            "macos": "What kinds of classes do you teach?",
+            "windows": "What kinds of classes do you teach?"
+          },
+          "text": "Какие предметы ты ведёшь?",
+          "input": "dialogue.json"
+        },
+        "line:ba66095e": {
+          "sourceByBuild": {
+            "macos": "You set a good example.",
+            "windows": "You set a good example."
+          },
+          "text": "Ты подаёшь хороший пример.",
+          "input": "dialogue.json"
+        },
+        "line:960707b0": {
+          "sourceByBuild": {
+            "macos": "Primarily alchemy. Occasionally world history.",
+            "windows": "Primarily alchemy. Occasionally world history."
+          },
+          "text": "Главным образом алхимию. Иногда — всемирную историю.",
+          "input": "dialogue.json"
+        },
+        "line:2c560e29": {
+          "sourceByBuild": {
+            "macos": "I've been trying to get into the social sciences aswell.",
+            "windows": "I've been trying to get into the social sciences aswell."
+          },
+          "text": "А ещё я пытаюсь освоить общественные науки.",
+          "input": "dialogue.json"
+        },
+        "line:2b7bb6ce": {
+          "sourceByBuild": {
+            "macos": "That's what's terrifying.",
+            "windows": "That's what's terrifying."
+          },
+          "text": "Вот это и пугает.",
+          "input": "dialogue.json"
+        },
+        "line:bd4bb1b9": {
+          "sourceByBuild": {
+            "macos": "I enjoy that I do not fear failure around you.",
+            "windows": "I enjoy that I do not fear failure around you."
+          },
+          "text": "Мне нравится, что с тобой я не боюсь ошибиться.",
+          "input": "dialogue.json"
+        },
+        "line:4c90479c": {
+          "sourceByBuild": {
+            "macos": "Do you ask because I'm lavender?",
+            "windows": "Do you ask because I'm lavender?"
+          },
+          "text": "Ты спрашиваешь из-за моего лавандового цвета?",
+          "input": "dialogue.json"
+        },
+        "line:f6c14e05": {
+          "sourceByBuild": {
+            "macos": "Ya.",
+            "windows": "Ya."
+          },
+          "text": "Ага.",
+          "input": "dialogue.json"
+        },
+        "line:c3642dec": {
+          "sourceByBuild": {
+            "macos": "Nah.",
+            "windows": "Nah."
+          },
+          "text": "Не-а.",
+          "input": "dialogue.json"
+        },
+        "line:60f14972": {
+          "sourceByBuild": {
+            "macos": "Well, I do enjoy the color. But I believe that is unrelated to my hue.",
+            "windows": "Well, I do enjoy the color. But I believe that is unrelated to my hue."
+          },
+          "text": "Что ж, мне действительно нравится этот цвет. Но, полагаю, мой собственный цвет тут ни при чём.",
+          "input": "dialogue.json"
+        },
+        "line:55542a9b": {
+          "sourceByBuild": {
+            "macos": "I do enjoy the color. Though I believe its unrelated to my own hue.",
+            "windows": "I do enjoy the color. Though I believe its unrelated to my own hue."
+          },
+          "text": "Этот цвет мне действительно нравится. Но, полагаю, с моим собственным цветом это не связано.",
+          "input": "dialogue.json"
+        },
+        "line:ef052302": {
+          "sourceByBuild": {
+            "macos": "Do you like purple?",
+            "windows": "Do you like purple?"
+          },
+          "text": "А тебе нравится фиолетовый?",
+          "input": "dialogue.json"
+        },
+        "line:79352475": {
+          "sourceByBuild": {
+            "macos": "Ya.",
+            "windows": "Ya."
+          },
+          "text": "Ага.",
+          "input": "dialogue.json"
+        },
+        "line:9b915bf2": {
+          "sourceByBuild": {
+            "macos": "Nah.",
+            "windows": "Nah."
+          },
+          "text": "Не-а.",
+          "input": "dialogue.json"
+        },
+        "line:e8289be5": {
+          "sourceByBuild": {
+            "macos": "Oh. good.",
+            "windows": "Oh. good."
+          },
+          "text": "О. Хорошо.",
+          "input": "dialogue.json"
+        },
+        "line:7e189c92": {
+          "sourceByBuild": {
+            "macos": "...",
+            "windows": "..."
+          },
+          "text": "...",
+          "input": "dialogue.json"
+        },
+        "line:0da15c85": {
+          "sourceByBuild": {
+            "macos": "Oh. Okay.",
+            "windows": "Oh. Okay."
+          },
+          "text": "О. Понятно.",
+          "input": "dialogue.json"
+        },
+        "line:b7f0551c": {
+          "sourceByBuild": {
+            "macos": "...",
+            "windows": "..."
+          },
+          "text": "...",
+          "input": "dialogue.json"
+        },
+        "line:825536f5": {
+          "sourceByBuild": {
+            "macos": "That's a tricky question to answer.",
+            "windows": "That's a tricky question to answer."
+          },
+          "text": "На этот вопрос непросто ответить.",
+          "input": "dialogue.json"
+        },
+        "line:14653182": {
+          "sourceByBuild": {
+            "macos": "I enjoy parts of it. The respect is pleasant...",
+            "windows": "I enjoy parts of it. The respect is pleasant..."
+          },
+          "text": "Кое-что мне нравится. Уважение, например, приятно...",
+          "input": "dialogue.json"
+        },
+        "line:ae34381b": {
+          "sourceByBuild": {
+            "macos": "However, that respect comes with an expectation to act as I look. It's incredibly stressful.",
+            "windows": "However, that respect comes with an expectation to act as I look. It's incredibly stressful."
+          },
+          "text": "Однако вместе с уважением от меня ждут поведения, соответствующего моей внешности. Это ужасно утомляет.",
+          "input": "dialogue.json"
+        },
+        "line:38043f6c": {
+          "sourceByBuild": {
+            "macos": "You can act however you like around me.",
+            "windows": "You can act however you like around me."
+          },
+          "text": "Со мной можешь вести себя как тебе угодно.",
+          "input": "dialogue.json"
+        },
+        "line:a91980fc": {
+          "sourceByBuild": {
+            "macos": "I like you for who you are.",
+            "windows": "I like you for who you are."
+          },
+          "text": "Ты мне нравишься таким, какой есть.",
+          "input": "dialogue.json"
+        },
+        "line:3f29878b": {
+          "sourceByBuild": {
+            "macos": "That's rather nice of you to say.",
+            "windows": "That's rather nice of you to say."
+          },
+          "text": "Довольно мило с твоей стороны.",
+          "input": "dialogue.json"
+        },
+        "line:548dc375": {
+          "sourceByBuild": {
+            "macos": "I want to be more open. It feels good.",
+            "windows": "I want to be more open. It feels good."
+          },
+          "text": "Я хочу быть более открытым. Мне это приятно.",
+          "input": "dialogue.json"
+        },
+        "line:39ddd682": {
+          "sourceByBuild": {
+            "macos": "You're...",
+            "windows": "You're..."
+          },
+          "text": "Ты...",
+          "input": "dialogue.json"
+        },
+        "line:afedd1f5": {
+          "sourceByBuild": {
+            "macos": "An anomaly.",
+            "windows": "An anomaly."
+          },
+          "text": "Аномалия.",
+          "input": "dialogue.json"
+        },
+        "line:0c78b56b": {
+          "sourceByBuild": {
+            "macos": "Huh?",
+            "windows": "Huh?"
+          },
+          "text": "Что?",
+          "input": "dialogue.json"
+        },
+        "line:6b6dd8bc": {
+          "sourceByBuild": {
+            "macos": "Is that a good thing...?",
+            "windows": "Is that a good thing...?"
+          },
+          "text": "И это хорошо?..",
+          "input": "dialogue.json"
+        },
+        "line:9a48b21c": {
+          "sourceByBuild": {
+            "macos": "As in you're unique.",
+            "windows": "As in you're unique."
+          },
+          "text": "В том смысле, что таких, как ты, больше нет.",
+          "input": "dialogue.json"
+        },
+        "line:2019bb85": {
+          "sourceByBuild": {
+            "macos": "In a good way?",
+            "windows": "In a good way?"
+          },
+          "text": "В хорошем смысле?",
+          "input": "dialogue.json"
+        },
+        "line:27340362": {
+          "sourceByBuild": {
+            "macos": "In a bad way?",
+            "windows": "In a bad way?"
+          },
+          "text": "В плохом смысле?",
+          "input": "dialogue.json"
+        },
+        "line:b629bcf2": {
+          "sourceByBuild": {
+            "macos": "Of course! You're wonderful.",
+            "windows": "Of course! You're wonderful."
+          },
+          "text": "Разумеется! С тобой замечательно.",
+          "input": "dialogue.json"
+        },
+        "line:b1040415": {
+          "sourceByBuild": {
+            "macos": "By the stars! No no. You're excellent.",
+            "windows": "By the stars! No no. You're excellent."
+          },
+          "text": "Клянусь звёздами! Нет-нет. Ты чудо.",
+          "input": "dialogue.json"
+        },
+        "line:fd5ddfcb": {
+          "sourceByBuild": {
+            "macos": "Indeed. You're an excellent person to be around.",
+            "windows": "Indeed. You're an excellent person to be around."
+          },
+          "text": "Именно. С тобой на редкость приятно общаться.",
+          "input": "dialogue.json"
+        },
+        "line:470cd652": {
+          "sourceByBuild": {
+            "macos": "You're the first person I've met who's only expectation is for me to be...",
+            "windows": "You're the first person I've met who's only expectation is for me to be..."
+          },
+          "text": "До тебя никто от меня не ждал одного лишь — чтобы я был...",
+          "input": "dialogue.json"
+        },
+        "line:d13cd125": {
+          "sourceByBuild": {
+            "macos": "Me.",
+            "windows": "Me."
+          },
+          "text": "Собой.",
+          "input": "dialogue.json"
+        },
+        "line:e499b2cc": {
+          "sourceByBuild": {
+            "macos": "I am.",
+            "windows": "I am."
+          },
+          "text": "Да.",
+          "input": "dialogue.json"
+        },
+        "line:5ec8bb55": {
+          "sourceByBuild": {
+            "macos": "I believe that's in part because of you.",
+            "windows": "I believe that's in part because of you."
+          },
+          "text": "Думаю, отчасти благодаря тебе.",
+          "input": "dialogue.json"
+        },
+        "line:c8f8bc22": {
+          "sourceByBuild": {
+            "macos": "But I'm only your washer?",
+            "windows": "But I'm only your washer?"
+          },
+          "text": "Но я же только мою тебя?",
+          "input": "dialogue.json"
+        },
+        "line:2a5cc3a5": {
+          "sourceByBuild": {
+            "macos": "That's very sweet.",
+            "windows": "That's very sweet."
+          },
+          "text": "Это очень мило.",
+          "input": "dialogue.json"
+        },
+        "line:59e503b2": {
+          "sourceByBuild": {
+            "macos": "I know. But the ability to open up to someone, even occasionally-",
+            "windows": "I know. But the ability to open up to someone, even occasionally-"
+          },
+          "text": "Знаю. Но когда есть кому открыться, пусть даже изредка...",
+          "input": "dialogue.json"
+        },
+        "line:cfd504c5": {
+          "sourceByBuild": {
+            "macos": "It does wonders.",
+            "windows": "It does wonders."
+          },
+          "text": "Это творит чудеса.",
+          "input": "dialogue.json"
+        },
+        "line:bc6cc4d2": {
+          "sourceByBuild": {
+            "macos": "You're very sweet.",
+            "windows": "You're very sweet."
+          },
+          "text": "Как мило с твоей стороны.",
+          "input": "dialogue.json"
+        },
+        "line:063dcd4b": {
+          "sourceByBuild": {
+            "macos": "The ability to open up to someone, even occasionally...",
+            "windows": "The ability to open up to someone, even occasionally..."
+          },
+          "text": "Когда есть кому открыться, пусть даже изредка...",
+          "input": "dialogue.json"
+        },
+        "line:900dca3c": {
+          "sourceByBuild": {
+            "macos": "It does wonders.",
+            "windows": "It does wonders."
+          },
+          "text": "Это творит чудеса.",
+          "input": "dialogue.json"
+        },
+        "line:3398aea2": {
+          "sourceByBuild": {
+            "macos": "Thank you for that.",
+            "windows": "Thank you for that."
+          },
+          "text": "Спасибо тебе за это.",
+          "input": "dialogue.json"
+        }
+      },
+      "reuseIds": [
+        "line:c2bdc402",
+        "line:78eccd9b",
+        "line:eedccaec",
+        "line:db79a905",
+        "line:4d49ae72",
+        "line:6128a09c",
+        "line:f718a7eb",
+        "line:f0351f0c",
+        "line:6605187b",
+        "line:15bcd86c",
+        "line:a5a8a9d5",
+        "line:1ff9a04c",
+        "line:89c9a73b",
+        "line:18d418ab",
+        "line:8ee41fdc",
+        "line:e90fee8e",
+        "line:535ee717",
+        "line:7f3fe9f9",
+        "line:c56ee060",
+        "line:f0cb8389"
+      ]
+    },
+    "new-slot-display": {
+      "display": {
+        "ui:3944a555d130038af2323d988762ab1967719d178270e20fc65cd74b7c5efd27": {
+          "builds": {
+            "macos": {
+              "file": "ui/level0.json",
+              "key": "level0#5205",
+              "source": "New",
+              "sourceIds": [
+                "ui:3944a555d130038af2323d988762ab1967719d178270e20fc65cd74b7c5efd27"
+              ]
+            },
+            "windows": {
+              "file": "ui/level0.json",
+              "key": "level0#5184",
+              "source": "New",
+              "sourceIds": [
+                "ui:3944a555d130038af2323d988762ab1967719d178270e20fc65cd74b7c5efd27"
+              ]
+            }
+          },
+          "text": "Новый"
+        },
+        "ui:4cbc97aea69bccfd4defdb896f11600bdcc0964b970916200b59966d037b24e5": {
+          "builds": {
+            "macos": {
+              "file": "ui/level0.json",
+              "key": "level0#5204",
+              "source": "New",
+              "sourceIds": [
+                "ui:4cbc97aea69bccfd4defdb896f11600bdcc0964b970916200b59966d037b24e5"
+              ]
+            },
+            "windows": {
+              "file": "ui/level0.json",
+              "key": "level0#5183",
+              "source": "New",
+              "sourceIds": [
+                "ui:4cbc97aea69bccfd4defdb896f11600bdcc0964b970916200b59966d037b24e5"
+              ]
+            }
+          },
+          "text": "Новый"
+        },
+        "ui:1f92f7d859adfd67efa3a3f37608780f984d3d2e55b5a74774f0dfa70d9d4f86": {
+          "builds": {
+            "macos": {
+              "file": "ui/level0.json",
+              "key": "level0#5207",
+              "source": "New",
+              "sourceIds": [
+                "ui:1f92f7d859adfd67efa3a3f37608780f984d3d2e55b5a74774f0dfa70d9d4f86"
+              ]
+            },
+            "windows": {
+              "file": "ui/level0.json",
+              "key": "level0#5186",
+              "source": "New",
+              "sourceIds": [
+                "ui:1f92f7d859adfd67efa3a3f37608780f984d3d2e55b5a74774f0dfa70d9d4f86"
+              ]
+            }
+          },
+          "text": "Новый"
+        },
+        "display:slot-new": {
+          "builds": {
+            "macos": {
+              "file": "slot-new.json",
+              "key": "slot-new",
+              "source": "NEW",
+              "sourceIds": [
+                "managed:macos:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:1",
+                "managed:macos:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:3",
+                "managed:macos:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:5"
+              ]
+            },
+            "windows": {
+              "file": "slot-new.json",
+              "key": "slot-new",
+              "source": "NEW",
+              "sourceIds": [
+                "managed:windows:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:1",
+                "managed:windows:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:3",
+                "managed:windows:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:5"
+              ]
+            }
+          },
+          "text": "НОВЫЙ"
+        }
+      },
+      "preserveIds": [
+        "managed:macos:Assembly-CSharp:System.Void MenuSlotsLoad::OnShow(MenuResponseTransition)#ldstr:0",
+        "managed:macos:Assembly-CSharp:System.Void MenuSlotsLoad::OnShow(MenuResponseTransition)#ldstr:1",
+        "managed:macos:Assembly-CSharp:System.Void MenuSlotsLoad::OnShow(MenuResponseTransition)#ldstr:2",
+        "managed:macos:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:0",
+        "managed:macos:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:2",
+        "managed:macos:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:4",
+        "managed:windows:Assembly-CSharp:System.Void MenuSlotsLoad::OnShow(MenuResponseTransition)#ldstr:0",
+        "managed:windows:Assembly-CSharp:System.Void MenuSlotsLoad::OnShow(MenuResponseTransition)#ldstr:1",
+        "managed:windows:Assembly-CSharp:System.Void MenuSlotsLoad::OnShow(MenuResponseTransition)#ldstr:2",
+        "managed:windows:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:0",
+        "managed:windows:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:2",
+        "managed:windows:Assembly-CSharp:System.Void MenuSlotsNew::OnShow(MenuResponseTransition)#ldstr:4",
+        "ui:360988e421a300574ac56f4a91f14c692901888dedf26af78bc74afc40767c2b",
+        "ui:4b59fd26ec3b49e5915eec77515edbbd8d4ff7e73eaf1b6d88dd78a8fb01e9fd",
+        "ui:7f15a064eeff196c7ff81fdba5a1d502f40a425f242afefecfdb67ba08fc24c2",
+        "ui:902e66e123bc27b089462256a75f2833bb6a6fc1546ee5e9cab8266a17eb80ea",
+        "ui:b0c846c722cbb14e15bd90ef6a781162fd9f69b17ccec1c549f8b92fd0a1a531",
+        "ui:f40ca2527f2a7a9d0b46ebff1b6a0428f6d9f2fbe5af5215214633d112a14a4c"
+      ]
+    },
+    "missing-yarn-line-display": {
+      "display": {
+        "display:yarn-missing-line": {
+          "builds": {
+            "macos": {
+              "file": "missing-line.json",
+              "key": "yarn-missing-line",
+              "source": "!! ERROR: Missing line!",
+              "sourceIds": [
+                "managed:macos:YarnSpinner.Unity:System.Void Yarn.Unity.LocalizedLine::.cctor()#ldstr:0",
+                "managed:macos:YarnSpinner.Unity:System.Void Yarn.Unity.LocalizedLine::.cctor()#ldstr:2"
+              ]
+            },
+            "windows": {
+              "file": "missing-line.json",
+              "key": "yarn-missing-line",
+              "source": "!! ERROR: Missing line!",
+              "sourceIds": [
+                "managed:windows:YarnSpinner.Unity:System.Void Yarn.Unity.LocalizedLine::.cctor()#ldstr:0",
+                "managed:windows:YarnSpinner.Unity:System.Void Yarn.Unity.LocalizedLine::.cctor()#ldstr:2"
+              ]
+            }
+          },
+          "text": "!! ОШИБКА: Реплика не найдена!"
+        }
+      },
+      "preserveIds": [
+        "managed:macos:YarnSpinner.Unity:System.Void Yarn.Unity.UnityLocalization.UnityLocalisedLineProvider/<GetLocalizedLineAsync>d__8::MoveNext()#ldstr:2",
+        "managed:windows:YarnSpinner.Unity:System.Void Yarn.Unity.UnityLocalization.UnityLocalisedLineProvider/<GetLocalizedLineAsync>d__8::MoveNext()#ldstr:2",
+        "ui:38707951230e2718488c49fe12502264b8f55b772a1a088844cdf659298f9788"
+      ]
+    }
+  }
+}

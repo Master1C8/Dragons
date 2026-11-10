@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "locale": "ru",
+  "sourceObjectSha256": "54953f9c071aa3ca5b52eb8b12b8e0bedc73f7665a506c61acbef0c58ac340ef",
+  "lines": {
+    "yarn-missing-line": {
+      "source": "!! ERROR: Missing line!",
+      "text": "!! ОШИБКА: Реплика не найдена!"
+    }
+  }
+}
