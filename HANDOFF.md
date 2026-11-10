@@ -17,6 +17,13 @@ letters in left-to-right order. The other 21 samples resolved their
 glyphs. Dialogue, choices, settings and visual fit still need checks
 before the corresponding multilingual feasibility rows can pass.
 
+The [direction and fallback probes](localization/evidence/rtl-and-font-candidates-20261110.md)
+ruled out the stock RTL flag for mixed text on both players. Noto
+candidates cover all previously missing sample glyphs across eight
+locales. The isolated Thai font swap resolved the sample glyphs, and
+TMP still emitted the unshaped sequence for `น้ำ` on both players.
+Mixed direction and script shaping require separate handling.
+
 On 2026-11-09 all five absent Yarn destinations reproduced in isolated macOS
 Unity runs with controlled entry; a Windows CrossOver run independently
 reproduced the Conrad failure. A source-bound candidate appends the five
