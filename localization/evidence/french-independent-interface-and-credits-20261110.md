@@ -1,0 +1,7 @@
+# French independent interface and credits review
+
+The coordinator reviewed the 123 interface, settings, managed display, speaker and credits positions in the revised 938-ID dependency closure at `9d43fb2`. The source and translation remain bound to SHA-256 `5174d9d3e2f54956ab940fd5ed8cd84ce422b376d62892b445431955732ce8a6`. The readings confirm platform-only bindings, repeated pause wording, option meanings, protected names and multiline credit order. In total, 236 positions in the current closure have been read and 702 remain unread.
+
+Three credit descriptors need author adjudication. The knot-pop effect should name the sound rather than a knot coming undone. Ragdoll impacts should keep the technical distinction from soft-body physics. Build integration should retain the software-build meaning in the last line of its existing four-line credit. The candidate changes exactly those three IDs. The complete paired reader accepts all 1,947 positions, and the full stock input validators accept both platforms. Comparing both materialized trees finds only `ui/level2.json` changed on each platform. Source keys, protected fields and newline counts are preserved.
+
+The exact receipt is `localization/work/fr-independent-interface-20261110.Sey6mx/review.json`, SHA-256 `bed3b746eee26e2da034226bbab1f8b4a23837e85786f7ce2551c942a6644aa1`. Candidate SHA-256 `ae9084fbd273274170e815668922583c9c1b3d89d5583ad17a76f83f1689a19d`. The proposed wording and actual credit display, other editorial dependencies, packages and game execution remain open.
