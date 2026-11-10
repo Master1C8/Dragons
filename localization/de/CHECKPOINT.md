@@ -16,6 +16,14 @@
 | screenshot-upload / screenshot-review | Not run; upload is not authorized. |
 | delivery | Incomplete. No installation, release or publication. |
 
+## 2026-11-10 complete authored draft: UI and settings
+
+The author translated and self-edited the remaining 116 UI and settings IDs, including platform-specific pause menus, sound credits and settings options. All **1,947/1,947** IDs are authored; translation SHA-256 `faf8ea606a101ea6fcb535123be95e0a61fe20bb9701d4ddd018951bbd62781d`. The asset title `GDC Bundle Part 4`, platform names and `VSync` are deliberately retained. Textures were not edited. This is an authored draft, not an independent editorial acceptance.
+
+The pinned `verify_authored_yarn.py` passed; both stock builds' partial Yarn assets reopened with 1,839 ordered values each, including 1,823 authored dialogue values and 16 preserved values. `receipts/yarn-1947.json` records source hashes, bindings and reproduction. `receipts/ui-settings-1947.json` records the source-bound UI and settings adapter builds, full object readbacks and settings field readbacks for both platforms, together with bindings and hashes. Newly created assets were removed from a run-owned temporary directory only after success; the runtime lock was held. These are partial asset checks, not packages or gameplay.
+
+**Editorial:** full corpus semantic audit and separate independent game-text audit remain pending. **Artifacts:** complete macOS and Windows packages are not yet built or verified. **Runtime and visual:** representative renderer evidence exists for the prior fixture; full-corpus gameplay and UI fit, including long German settings and credits, remain pending. Windows runtime evidence so far is CrossOver, not native Windows. Continue by reviewing all source-to-target scene groups and dependencies, recording findings and corrections, revalidating changed text, then prepare complete packages subject to disk and runtime locks. Do not treat self-review as independent acceptance.
+
 ## Bound inputs
 
 - Inventory `localization/work/source-inventory-20261107/combined-provisional-v42-20261110.json`: SHA-256 `79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d`.

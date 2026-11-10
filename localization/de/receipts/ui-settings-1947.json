@@ -1,0 +1,201 @@
+{
+  "translationSha256": "faf8ea606a101ea6fcb535123be95e0a61fe20bb9701d4ddd018951bbd62781d",
+  "worklistSha256": "9ee266ffbc4643e5b269b75ca03edfb763f1178d3803aa65b627d487c2b0535a",
+  "inventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "scopeSha256": "753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30",
+  "helperSha256": "1a503dd6e9ab3fde7b102e2d639881cde9053353f82ea6bd57cbdc0830197e7b",
+  "command": "run under runtime lock: localization/work/cli-terra-high-20261110.J0KLrx/de/venv/bin/python -B localization/work/cli-terra-high-20261110.J0KLrx/de/resume-06/verify_non_yarn.py",
+  "bindings": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-06/bindings",
+  "readback": "source-pinned adapters reopen and compare every object; settings fields read back using source-bound type trees",
+  "results": {
+    "macos": {
+      "level0": {
+        "changedFields": 5,
+        "outputSha256": "6c3c8e4821195a4ba3f1ab7a8fc4ceec43eaf7156beb9f12a9d54f8f942ee23c",
+        "bindingSha256": "b67b1c57ec6f61147cea53eb250f548bac483de68ceabe27f37b1e817a9d84d0",
+        "sourceSha256": "4cabf35993c6726ab29e5cb24a1ce74a0fdf3d8061b0de3437415e56bcfa72f7"
+      },
+      "level1": {
+        "changedFields": 7,
+        "outputSha256": "3dee55f93d10fdf3e6ad7e4591e685b2d868cfb9b07ff30f73db1f34d1442b05",
+        "bindingSha256": "be92e087ef272d80b05e066f54a6cf04b90054f3efd753c0acb763382ba48346",
+        "sourceSha256": "6af2815f16cba00e935fe110023ec91421c7d4107c5d8d31f55b70039b17d618"
+      },
+      "level2": {
+        "changedFields": 38,
+        "outputSha256": "8e9d4586a05640855969adae1abf1064c0512c49accd1bd258e6760335a6742e",
+        "bindingSha256": "31fdbcb8bfba3ca2816d652fe987d16eb2d5a672cc402ccd46160bb2354536b3",
+        "sourceSha256": "8a65d8f397e103abf65a6c9daba7668a4efe8c70fbe36f6b6eed676aaa99d808"
+      },
+      "level3": {
+        "changedFields": 2,
+        "outputSha256": "4b7acfa5a7877c969655eb1bba2d763a34af570cb12c5d3a54f05c9dad404125",
+        "bindingSha256": "1591becdaefc3d85e8f7a465a25cd453bdd7453b0735fdf68eafa3b10d1ae0f9",
+        "sourceSha256": "32805c0339b0b67b4cc1dd27f8e150419e3f7374132d630921700281a14b833e"
+      },
+      "level4": {
+        "changedFields": 2,
+        "outputSha256": "ef2e836f0a5c223f7f51f8e3fa027d21c8fceb4bfaac0dbade03103d640ff066",
+        "bindingSha256": "53485c284b1ccb5b049dbaa07726237f2cb6f06e30c0477897626345b4c19ede",
+        "sourceSha256": "1aeac3e3368bbf5d3198dd6aee5f0969677a13b162158bb592655fdef03ef030"
+      },
+      "level5": {
+        "changedFields": 2,
+        "outputSha256": "8b716de0c5517d713630515a5f941e6712ea16b9449802b0a5b02cfe18cf0ff7",
+        "bindingSha256": "45f65beae2ad0056483659580ce56d221595fd11f6b32274fa0f3860643e648b",
+        "sourceSha256": "3241f65111d9639a3e1434e4d5e7dd9aa946eac554675dc4627093638e0341c8"
+      },
+      "level6": {
+        "changedFields": 2,
+        "outputSha256": "d3d7917ecfdd817199964f2bf124492092eee122d629ca035219bf603aef03fe",
+        "bindingSha256": "8c12ef76acbdbe8dff017a9dcdf2dfbb93dad7a3b75c32c4df738c444f371f53",
+        "sourceSha256": "975954bc0796ab7b60f06f075b3b0ad8ce367d07cede726d53847b61fbe112f6"
+      },
+      "settings": {
+        "settingsFields": 37,
+        "outputSha256": "ec57465c3856fa7d3093a775e6214153cd82f2e9d2988a9b0ad5ab984176bca9",
+        "bindingSha256": "bb5e9d8afec8a45fd870c263c3539f3e16c96ddd3e7f607ba44bab3d0ec001e6",
+        "sourceSha256": "40713b00ce12582eebc427c0104e59becf438eb15803725b2248be3471a96aeb"
+      }
+    },
+    "windows": {
+      "level0": {
+        "platform": "windows",
+        "build": "9/9/2026_ee944596",
+        "asset": "level0",
+        "sourceSha256": "55a296caa23347190faa063efdaab4cf5a37e00bdbffa455729b4aa346cddae0",
+        "locale": "de",
+        "availableFields": 12,
+        "changedFields": 5,
+        "dialogueFields": 0,
+        "restoredYarnTransitions": 0,
+        "settingsFields": 0,
+        "speakerContrast": false,
+        "outputSha256": "be400ef435ddc5598d79ea2e28c5cbaaa35d969628b664d0456e061289382532",
+        "output": "/Users/antonkrutov/Desktop/Dragons/localization/work/cli-terra-high-20261110.J0KLrx/de/resume-06/ui-settings-r1fd3k90/windows-level0",
+        "limitations": "UI plus optional Yarn or settings asset changes only. Source classification, code, fonts, packaging and runtime behavior require separate validation.",
+        "bindingSha256": "67bb6c9019ee9976930333d6e85480633a9fcb78c0d4cad2b0e08e0ca12d9665"
+      },
+      "level1": {
+        "platform": "windows",
+        "build": "9/9/2026_ee944596",
+        "asset": "level1",
+        "sourceSha256": "203725518656d04df3341248a7d24bc27551ebd6c03e582977869f0acfc5a459",
+        "locale": "de",
+        "availableFields": 18,
+        "changedFields": 11,
+        "dialogueFields": 0,
+        "restoredYarnTransitions": 0,
+        "settingsFields": 0,
+        "speakerContrast": false,
+        "outputSha256": "ea779209da030fa637eefb8bf3f0eaeb62fc57b33c0a94efe5773f326ff8c09e",
+        "output": "/Users/antonkrutov/Desktop/Dragons/localization/work/cli-terra-high-20261110.J0KLrx/de/resume-06/ui-settings-r1fd3k90/windows-level1",
+        "limitations": "UI plus optional Yarn or settings asset changes only. Source classification, code, fonts, packaging and runtime behavior require separate validation.",
+        "bindingSha256": "7ddec5d15507a563f7d4fac8ab9d597ae8a5913330e9dc44bd10f70fe7604863"
+      },
+      "level2": {
+        "platform": "windows",
+        "build": "9/9/2026_ee944596",
+        "asset": "level2",
+        "sourceSha256": "d8b5b6b96a2372e36087edb0a5e3e1fa6ccc2e0d1684698be2221771f02f438e",
+        "locale": "de",
+        "availableFields": 80,
+        "changedFields": 42,
+        "dialogueFields": 0,
+        "restoredYarnTransitions": 0,
+        "settingsFields": 0,
+        "speakerContrast": false,
+        "outputSha256": "1260896ea15da29253f2cf3db21d960a6fe9296a9a76122f32bd0b620e1da9c1",
+        "output": "/Users/antonkrutov/Desktop/Dragons/localization/work/cli-terra-high-20261110.J0KLrx/de/resume-06/ui-settings-r1fd3k90/windows-level2",
+        "limitations": "UI plus optional Yarn or settings asset changes only. Source classification, code, fonts, packaging and runtime behavior require separate validation.",
+        "bindingSha256": "d45c4dd1606561c4421b1f3e5e45972cf83e2302dec67b3f34b636d76d124090"
+      },
+      "level3": {
+        "platform": "windows",
+        "build": "9/9/2026_ee944596",
+        "asset": "level3",
+        "sourceSha256": "2443af34e7c6f2136ca58b0aa712a1c35ce13e60567e963ac7224575fa9d4eb1",
+        "locale": "de",
+        "availableFields": 10,
+        "changedFields": 6,
+        "dialogueFields": 0,
+        "restoredYarnTransitions": 0,
+        "settingsFields": 0,
+        "speakerContrast": false,
+        "outputSha256": "9874c26b81fd49c3da1c367586807fec39e39da68b60a210c45ef04090d9172a",
+        "output": "/Users/antonkrutov/Desktop/Dragons/localization/work/cli-terra-high-20261110.J0KLrx/de/resume-06/ui-settings-r1fd3k90/windows-level3",
+        "limitations": "UI plus optional Yarn or settings asset changes only. Source classification, code, fonts, packaging and runtime behavior require separate validation.",
+        "bindingSha256": "8673ee784c5a01d6fa4ffbb48ed12d8766eff560ee689491d460bea3a01682a1"
+      },
+      "level4": {
+        "platform": "windows",
+        "build": "9/9/2026_ee944596",
+        "asset": "level4",
+        "sourceSha256": "2253e49bca20fa74c12d90eb6c9bd4eadf9ca83f36bcb451f41d7e71fd9bbc28",
+        "locale": "de",
+        "availableFields": 10,
+        "changedFields": 6,
+        "dialogueFields": 0,
+        "restoredYarnTransitions": 0,
+        "settingsFields": 0,
+        "speakerContrast": false,
+        "outputSha256": "e04d28bde67712ad80f650eb4dec08ccdda23c508476d74d3692ac8aedab0943",
+        "output": "/Users/antonkrutov/Desktop/Dragons/localization/work/cli-terra-high-20261110.J0KLrx/de/resume-06/ui-settings-r1fd3k90/windows-level4",
+        "limitations": "UI plus optional Yarn or settings asset changes only. Source classification, code, fonts, packaging and runtime behavior require separate validation.",
+        "bindingSha256": "7629193ca1d6563b1db7c9d6445932592e5a1b3fbb8dccec52c4fc6b247037e4"
+      },
+      "level5": {
+        "platform": "windows",
+        "build": "9/9/2026_ee944596",
+        "asset": "level5",
+        "sourceSha256": "ecbae7085b8126e5a77087e1b60a9fb3568032bbae0818106f22640d0242530e",
+        "locale": "de",
+        "availableFields": 10,
+        "changedFields": 6,
+        "dialogueFields": 0,
+        "restoredYarnTransitions": 0,
+        "settingsFields": 0,
+        "speakerContrast": false,
+        "outputSha256": "790936d8eeb0e702afbb372bc5efab6185701ba0adeabb8432cae46677d3714e",
+        "output": "/Users/antonkrutov/Desktop/Dragons/localization/work/cli-terra-high-20261110.J0KLrx/de/resume-06/ui-settings-r1fd3k90/windows-level5",
+        "limitations": "UI plus optional Yarn or settings asset changes only. Source classification, code, fonts, packaging and runtime behavior require separate validation.",
+        "bindingSha256": "05c9715dd2a342b5bcc0f24dfaf23212fea7136300868c9c311c21b43b9a5315"
+      },
+      "level6": {
+        "platform": "windows",
+        "build": "9/9/2026_ee944596",
+        "asset": "level6",
+        "sourceSha256": "7312f5011f3222b623e0f06acc5107bcdc72a8487780d9fd5249446fd42be608",
+        "locale": "de",
+        "availableFields": 10,
+        "changedFields": 6,
+        "dialogueFields": 0,
+        "restoredYarnTransitions": 0,
+        "settingsFields": 0,
+        "speakerContrast": false,
+        "outputSha256": "59eeb16f0696eb7ff9bf9bf978475ae243641713a5a9b00771045733969cb56c",
+        "output": "/Users/antonkrutov/Desktop/Dragons/localization/work/cli-terra-high-20261110.J0KLrx/de/resume-06/ui-settings-r1fd3k90/windows-level6",
+        "limitations": "UI plus optional Yarn or settings asset changes only. Source classification, code, fonts, packaging and runtime behavior require separate validation.",
+        "bindingSha256": "54ee9517c5dbc44bff4d453073cf71aa63a481cebd3b76ee1834c86fe2153137"
+      },
+      "settings": {
+        "platform": "windows",
+        "build": "9/9/2026_ee944596",
+        "asset": "sharedassets0.assets",
+        "sourceSha256": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3",
+        "locale": "de",
+        "availableFields": 11,
+        "changedFields": 0,
+        "dialogueFields": 0,
+        "restoredYarnTransitions": 0,
+        "settingsFields": 31,
+        "speakerContrast": false,
+        "outputSha256": "57a3b0656328387b5c8f28e5014eb2c5590f167478d00fffa36a3b656b1ea118",
+        "output": "/Users/antonkrutov/Desktop/Dragons/localization/work/cli-terra-high-20261110.J0KLrx/de/resume-06/ui-settings-r1fd3k90/windows-settings",
+        "limitations": "UI plus optional Yarn or settings asset changes only. Source classification, code, fonts, packaging and runtime behavior require separate validation.",
+        "bindingSha256": "922b718c90e810e987902805cafd626f20e3b4ad19f783eb45c10d1b6b92f507"
+      }
+    }
+  },
+  "limitations": "Partial UI/settings asset verification, not packages, gameplay or visual fit."
+}
