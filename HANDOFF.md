@@ -300,8 +300,8 @@ All locales use the shared fixed stages in `~/.codex/skills/vn-localization/refe
 | `translate-edit` | Russian decisions for all 27 known special cases are recorded. The [anonymous-scene Unity control](localization/evidence/generic-dragon-entries-20261110.md#authored-russian-text-in-unity) verifies all 20 authored strings and exposes the original buzzing finish-command error. Sixteen batches cover all 1,947 pinned package inputs. |
 | `editorial` | Full semantic audit, independent diff/delta review and regression closure on pinned artifacts; do not assert independence without evidence. |
 | `resources` | Verify final font coverage and metrics against the finished corpus; textures not applicable by owner decision. |
-| `package` | The macOS and Windows package commands both require complete pinned locale inputs. Build and read back the final authored locale artifacts and validate install and recovery. |
-| `runtime` | Test the delivered artifact in authorized isolated environments, including progression, clipping and saves. |
+| `package` | The complete Russian macOS app and Windows ZIP were built from `81e761b`. Both receipts match all locale inputs and exact Yarn read-back passed. The Windows copy was installed and restored with a 287-file checksum comparison. See [Russian build verification](localization/evidence/russian-build-verification-20261110.md). |
+| `runtime` | The macOS app and Windows replacements passed the background New Game slot check in isolated profiles. Windows ran through CrossOver. Full progression, pixel layout and save compatibility remain open. |
 | `screenshot-upload`, `screenshot-review` | Not run: no game screenshot upload requested; if later authorized, pin and review every delivered slot. |
 | `delivery` | Integrate verified source into canonical branch; publication/release requires separate authority. |
 
