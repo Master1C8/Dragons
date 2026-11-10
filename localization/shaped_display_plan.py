@@ -68,7 +68,7 @@ def shape_run(text, start, level, augmenter):
             for first, end in zip(starts, starts[1:] + [len(text)], strict=True)]
 
 
-def prepare(text, tags_pattern, bidi, augmenter):
+def prepare(text, tags_pattern, bidi, augmenter, soft_breaks=None):
     tags = defaultdict(list)
     plain_parts = []
     cursor = plain_length = 0
@@ -82,17 +82,21 @@ def prepare(text, tags_pattern, bidi, augmenter):
         cursor = match.end()
     plain_parts.append(text[cursor:])
     plain = ''.join(plain_parts)
+    if any(ord(char) > 0xffff for char in plain):
+        raise PlanBoundaryError('supplementary character')
     classes = [unicodedata.bidirectional(char) for char in plain]
     if any(char != '\n' and kind in {'B', 'S', 'LRE', 'RLE', 'LRO', 'RLO',
                                       'PDF', 'LRI', 'RLI', 'FSI', 'PDI'}
            for char, kind in zip(plain, classes, strict=True)):
         raise PlanBoundaryError('unsupported bidi control')
-    levels = []
-    for number, paragraph in enumerate(plain.split('\n')):
-        if number:
-            levels.append(1)
-        if paragraph:
-            levels.extend(bidi.levels(paragraph))
+    levels = [0] * len(plain)
+    if bidi:
+        levels = []
+        for number, paragraph in enumerate(plain.split('\n')):
+            if number:
+                levels.append(1)
+            if paragraph:
+                levels.extend(bidi.levels(paragraph))
     output, offsets, ends, source_ends, cluster_levels, reset = [], [], [], [], [], []
     output_length = 0
 
@@ -105,12 +109,24 @@ def prepare(text, tags_pattern, bidi, augmenter):
     while index < len(plain):
         level = levels[index]
         char = plain[index]
+        breaks = set()
         if augmenter.is_span_character(char):
             stop = index + 1
             while (stop < len(plain) and levels[stop] == level
                    and augmenter.is_span_character(plain[stop])):
                 stop += 1
-            clusters = shape_run(plain[index:stop], index, level, augmenter)
+            span = plain[index:stop]
+            clusters = shape_run(span, index, level, augmenter)
+            if soft_breaks:
+                split_clusters = []
+                part_start = index
+                for part in soft_breaks(span):
+                    if part_start != index:
+                        breaks.add(part_start)
+                    split_clusters.extend(shape_run(part, part_start, level, augmenter))
+                    part_start += len(part)
+                if split_clusters != clusters:
+                    raise PlanBoundaryError('dictionary break changes shaped clusters')
         else:
             stop = index + 1
             display = chr(bidi.mirror(ord(char))) if level % 2 else char
@@ -119,6 +135,8 @@ def prepare(text, tags_pattern, bidi, augmenter):
             if any(inner in tags for inner in range(first + 1, end)):
                 raise PlanBoundaryError('TMP tag inside shaped cluster')
             append(''.join(tags.get(first, ())))
+            if end in breaks:
+                display += '\u200b'
             offsets.extend(range(output_length, output_length + len(display)))
             append(display)
             ends.append(len(offsets))
@@ -128,5 +146,6 @@ def prepare(text, tags_pattern, bidi, augmenter):
         index = stop
     append(''.join(tags.get(len(plain), ())))
     return {'logical': text, 'prepared': ''.join(output), 'offsets': offsets,
+            'paragraphLevel': int(bidi is not None),
             'clusterEnds': ends, 'sourceClusterEnds': source_ends,
             'levels': cluster_levels, 'trailingReset': reset}

@@ -59,7 +59,7 @@ public static class RenderHook
 
     internal static bool TryApply(TMP_TextInfo info, string? logical, int visible)
     {
-        return logical != null && Plans.Value.TryGetValue(logical, out var plan) &&
+        return logical != null && Plans.Value.TryGetValue(logical, out var plan) && plan.ParagraphLevel == 1 &&
             MeshLayout.TryApplyPrepared(info, plan.Prepared, plan.Offsets, plan.Ends,
                 plan.Levels, plan.TrailingReset, 1, visible);
     }
@@ -69,7 +69,7 @@ public static class RenderHook
         using var stream = typeof(TMP_Text).Assembly.GetManifestResourceStream(ResourceName)
             ?? throw new InvalidOperationException("Missing Dragons prepared text plans");
         using var reader = new BinaryReader(stream);
-        if (reader.ReadInt32() != 2)
+        if (reader.ReadInt32() != 3)
             throw new InvalidDataException("Unsupported Dragons display plan format");
         var count = reader.ReadInt32();
         var plans = new Dictionary<string, Plan>(count, StringComparer.Ordinal);
@@ -77,6 +77,7 @@ public static class RenderHook
         {
             var logical = reader.ReadString();
             var prepared = reader.ReadString();
+            var paragraphLevel = reader.ReadByte();
             var offsets = new int[reader.ReadInt32()];
             for (var j = 0; j < offsets.Length; j++)
                 offsets[j] = reader.ReadInt32();
@@ -91,7 +92,7 @@ public static class RenderHook
                 levels[j] = reader.ReadByte();
                 reset[j] = reader.ReadBoolean();
             }
-            plans.Add(logical, new Plan(prepared, offsets, ends, sourceEnds, levels, reset));
+            plans.Add(logical, new Plan(prepared, paragraphLevel, offsets, ends, sourceEnds, levels, reset));
         }
         if (stream.Position != stream.Length)
             throw new InvalidDataException("Trailing data in Dragons display plans");
@@ -101,15 +102,17 @@ public static class RenderHook
     private sealed class Plan
     {
         public readonly string Prepared;
+        public readonly byte ParagraphLevel;
         public readonly int[] Offsets;
         public readonly int[] Ends;
         public readonly int[] SourceEnds;
         public readonly byte[] Levels;
         public readonly bool[] TrailingReset;
 
-        public Plan(string prepared, int[] offsets, int[] ends, int[] sourceEnds, byte[] levels, bool[] trailingReset)
+        public Plan(string prepared, byte paragraphLevel, int[] offsets, int[] ends, int[] sourceEnds, byte[] levels, bool[] trailingReset)
         {
             Prepared = prepared;
+            ParagraphLevel = paragraphLevel;
             Offsets = offsets;
             Ends = ends;
             SourceEnds = sourceEnds;

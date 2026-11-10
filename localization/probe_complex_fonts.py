@@ -21,7 +21,7 @@ import cjk_font_fallback as fallback
 import dialogue_locale as dialogue
 import inventory_yarn_bindings as bindings
 import paired_locale
-import rtl_display_plan
+import shaped_display_plan
 import settings_locale as settings
 
 
@@ -125,22 +125,6 @@ def thai_breaker(path):
     return split
 
 
-def preserve_thai_breaks(augmenter, split):
-    shape = augmenter.shape_span
-
-    def with_breaks(text):
-        complete = shape(text)
-        parts = split(text)
-        if len(parts) <= 1:
-            return complete
-        shaped_parts = [shape(part) for part in parts]
-        if ''.join(shaped_parts) != complete:
-            raise ValueError('Thai line break would split a shaped cluster')
-        return '\u200b'.join(shaped_parts)
-
-    augmenter.shape_span = with_breaks
-
-
 def probe(args):
     repo = Path(__file__).resolve().parents[1]
     if uharfbuzz.__version__ != '0.51.7':
@@ -164,7 +148,7 @@ def probe(args):
         raise ValueError('ICU Thai dictionary line-break control failed')
     if args.rtl_corpus and not args.icu:
         raise ValueError('RTL corpus preparation requires ICU 78')
-    bidi = rtl_display_plan.Bidi(args.icu) if args.rtl_corpus else None
+    bidi = shaped_display_plan.Bidi(args.icu) if args.rtl_corpus else None
     sources = {'macos': args.macos_data, 'windows': args.windows_data}
     stock = {platform: stock_font(platform, data) for platform, data in sources.items()}
     args.output.mkdir()
@@ -191,28 +175,29 @@ def probe(args):
         visual = shaped[::-1] if shaper.LOCALE_SPECS[locale]['baseDirection'] == 'R' else shaped
         mappings = {sample: visual, f'<i>{sample}</i>': f'<i>{visual}</i>'}
         corpus_mappings = args.ltr_corpus and locale in ('th', 'hi')
-        if corpus_mappings and locale == 'th':
-            preserve_thai_breaks(augmenter, split_thai)
-        if corpus_mappings:
-            for logical in sorted(set(authored_display_values(values, rows))):
-                if not augmenter.has_script(logical):
-                    continue
-                display = augmenter.shape_rich_text(logical)
-                shaper.validate_shaped_value(logical, display, augmenter, f'{locale} authored display')
-                mappings[logical] = display
-        rtl_plans, rtl_boundaries = [], defaultdict(set)
-        if bidi and locale in ('ar', 'fa', 'he'):
+        locale_bidi = bidi if locale in ('ar', 'fa', 'he') else None
+        plans, plan_boundaries = [], defaultdict(set)
+        plan_kind = 'rtl' if locale_bidi else 'ltr'
+        plan_path = target / f'{plan_kind}-plans.json'
+        if corpus_mappings or locale_bidi:
             by_text = defaultdict(set)
             for key in values:
                 for text in authored_display_values({key: values[key]}, rows):
                     if augmenter.has_script(text):
                         by_text[text].add(key)
+            if corpus_mappings:
+                for text in mappings:
+                    by_text[text].add('synthetic')
             for logical, keys in sorted(by_text.items()):
                 try:
-                    rtl_plans.append(rtl_display_plan.prepare(logical, TMP_TAG, bidi, augmenter))
-                except rtl_display_plan.PlanBoundaryError as error:
-                    rtl_boundaries[str(error)].update(keys)
-            (target / 'rtl-plans.json').write_text(json.dumps(rtl_plans, ensure_ascii=False) + '\n')
+                    plan = shaped_display_plan.prepare(logical, TMP_TAG, locale_bidi, augmenter,
+                                                    split_thai if locale == 'th' else None)
+                    plans.append(plan)
+                    if corpus_mappings:
+                        mappings[logical] = plan['prepared']
+                except shaped_display_plan.PlanBoundaryError as error:
+                    plan_boundaries[str(error)].update(keys)
+            plan_path.write_text(json.dumps(plans, ensure_ascii=False) + '\n')
         prepared = target / 'probe.ttf'
         augmenter.save(prepared)
         with TTFont(prepared) as face:
@@ -232,10 +217,10 @@ def probe(args):
         item['displayMapEntries'] = len(records)
         item['softBreaks'] = sum(text.count('\u200b') - logical.count('\u200b')
                                  for logical, text in mappings.items())
-        if rtl_plans:
-            item['rtlPlans'] = len(rtl_plans)
-            item['rtlPlanSha256'] = dialogue.sha((target / 'rtl-plans.json').read_bytes())
-            item['rtlPlanBoundaries'] = {reason: sorted(keys) for reason, keys in rtl_boundaries.items()}
+        if plan_path.exists():
+            item[f'{plan_kind}Plans'] = len(plans)
+            item[f'{plan_kind}PlanSha256'] = dialogue.sha(plan_path.read_bytes())
+            item[f'{plan_kind}PlanBoundaries'] = {reason: sorted(keys) for reason, keys in plan_boundaries.items()}
         item['displayMapScope'] = 'authored LTR strings and synthetic control' if corpus_mappings else 'synthetic only'
         for platform, data in sources.items():
             chars = defaultdict(set)

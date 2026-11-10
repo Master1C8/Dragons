@@ -205,6 +205,29 @@ source and glyph boundaries, including the final step. The game and
 its native Yarn/TMP lifecycle were not run. Thai and Hindi still need
 cluster metadata and the same reveal integration.
 
+### Thai and Hindi logical reveal
+
+With `--ltr-corpus --rtl-corpus --icu <ICU 78 libicuuc path>`, the probe
+now writes cluster plans for all five corpora. Thai has 1,654 plans and
+Hindi 1,647. All Thai and Hindi keys and positioned glyphs match the
+prior corpus maps. The Thai plan uses 9,027 dictionary soft breaks,
+36 more than the earlier tag-separated pass, and each added marker is
+at a verified complete cluster boundary. TMP tags stay in their original
+order. The generator checks that each dictionary split produces the
+same positioned clusters as shaping the uninterrupted run.
+
+Use the version 3 embedded payload and matching companion. Thai and Hindi
+use the same Yarn reveal adapter while keeping their TMP geometry in
+logical order. The standalone test read back all ten patched TMP DLLs,
+checked RTL dispatch and LTR geometry preservation on synthetic meshes,
+and tested every logical reveal step in all 8,228 plans on each platform.
+The staged report `staged-all-plans/result.json` has SHA-256
+`18c8aa82921e95d486a1265d3d94be14ee1e4530c0b12e456c8e97889d610de4`.
+The package builders already patch YarnSpinner.Unity.dll for speakers
+and the Alexander fallback. Compose the reveal patch with that verified
+Yarn output before packaging. Native wrapping and callbacks remain
+unverified.
+
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock
 512 × 512 multi-atlas chain admitted 1,536 distinct additional

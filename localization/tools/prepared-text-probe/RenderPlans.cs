@@ -12,18 +12,19 @@ internal static class RenderPlans
     {
         using var stream = new MemoryStream();
         using var writer = new BinaryWriter(stream);
-        writer.Write(2);
+        writer.Write(3);
         writer.Write(rows.GetArrayLength());
         foreach (var row in rows.EnumerateArray())
         {
             var logical = row.GetProperty("logical").GetString()!;
             var prepared = row.GetProperty("prepared").GetString()!;
+            var paragraphLevel = row.GetProperty("paragraphLevel").GetInt32();
             var offsets = ReadInts(row, "offsets");
             var ends = ReadInts(row, "clusterEnds");
             var sourceEnds = ReadInts(row, "sourceClusterEnds");
             var levels = ReadInts(row, "levels");
             var reset = row.GetProperty("trailingReset").EnumerateArray().Select(v => v.GetBoolean()).ToArray();
-            if (!Increasing(offsets, -1) || offsets[^1] >= prepared.Length ||
+            if (paragraphLevel is < 0 or > 1 || !Increasing(offsets, -1) || offsets[^1] >= prepared.Length ||
                 !Increasing(ends, 0) || ends[^1] != offsets.Length ||
                 !Increasing(sourceEnds, 0) || sourceEnds[^1] > logical.Length ||
                 ends.Length != sourceEnds.Length || ends.Length != levels.Length || ends.Length != reset.Length ||
@@ -32,6 +33,7 @@ internal static class RenderPlans
 
             writer.Write(logical);
             writer.Write(prepared);
+            writer.Write((byte)paragraphLevel);
             writer.Write(offsets.Length);
             foreach (var offset in offsets)
                 writer.Write(offset);
