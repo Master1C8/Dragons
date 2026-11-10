@@ -1,0 +1,249 @@
+{
+  "locale": "pl",
+  "beforeSha256": "b0e68d8809620085da4c0ad19da3464ba20258d066ae5e9e480decda473ae172",
+  "afterSha256": "5fa6af152deb0b47aabb82ee607b8dd33e326905b2029335c6dbdaa83055b83e",
+  "pairedSourceSha256": "bd2407752c57b0e92d136f123604ebda35d8109d8ae92cd6a54a99ea4945d199",
+  "authorDisposition": "self-review; independent game-text audit pending",
+  "changes": [
+    {
+      "id": "yarn:line:61c8781b",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:61c8781b",
+            "source": "Indeed! You're the only kobold I wish to wash me now.",
+            "sourceIds": [
+              "yarn:line:61c8781b"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:61c8781b",
+            "source": "Indeed! You're the only kobold I wish to wash me now.",
+            "sourceIds": [
+              "yarn:line:61c8781b"
+            ]
+          }
+        },
+        "group": "Alexander_3_intro",
+        "id": "yarn:line:61c8781b",
+        "instructionIndex": 39,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Owszem! Od tej pory tylko tobie, koboldowi, powierzam moje mycie.",
+      "after": "Owszem! Jesteś jedynym koboldem, któremu chcę teraz powierzyć moje mycie."
+    },
+    {
+      "id": "yarn:line:3f153aaf",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:3f153aaf",
+            "source": "Yeah! Just went on a date with Ryan.",
+            "sourceIds": [
+              "yarn:line:3f153aaf"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:3f153aaf",
+            "source": "Yeah! Just went on a date with Ryan.",
+            "sourceIds": [
+              "yarn:line:3f153aaf"
+            ]
+          }
+        },
+        "group": "Alexander_5_intro",
+        "id": "yarn:line:3f153aaf",
+        "instructionIndex": 87,
+        "kind": "option",
+        "preserveExactPrefix": null
+      },
+      "before": "Tak! Właśnie wracam z randki z Ryanem.",
+      "after": "Tak! Niedawno była randka z Ryanem."
+    },
+    {
+      "id": "yarn:line:da9cfdcf",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:da9cfdcf",
+            "source": "Yeah! Just went on a date with Conrad.",
+            "sourceIds": [
+              "yarn:line:da9cfdcf"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:da9cfdcf",
+            "source": "Yeah! Just went on a date with Conrad.",
+            "sourceIds": [
+              "yarn:line:da9cfdcf"
+            ]
+          }
+        },
+        "group": "Alexander_5_intro",
+        "id": "yarn:line:da9cfdcf",
+        "instructionIndex": 104,
+        "kind": "option",
+        "preserveExactPrefix": null
+      },
+      "before": "Tak! Właśnie wracam z randki z Conradem.",
+      "after": "Tak! Niedawno była randka z Conradem."
+    },
+    {
+      "id": "yarn:line:116f0e16",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:116f0e16",
+            "source": "That should be every spot.",
+            "sourceIds": [
+              "yarn:line:116f0e16"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:116f0e16",
+            "source": "That should be every spot.",
+            "sourceIds": [
+              "yarn:line:116f0e16"
+            ]
+          }
+        },
+        "group": "Alexander_5_Outro",
+        "id": "yarn:line:116f0e16",
+        "instructionIndex": 45,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "To chyba już każde miejsce.",
+      "after": "Chyba umyte już wszystko."
+    },
+    {
+      "id": "yarn:line:21235886",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:21235886",
+            "source": "Hey could you come up front where I can see you?",
+            "sourceIds": [
+              "yarn:line:21235886"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:21235886",
+            "source": "Hey could you come up front where I can see you?",
+            "sourceIds": [
+              "yarn:line:21235886"
+            ]
+          }
+        },
+        "group": "RyanMuddy_Nag1",
+        "id": "yarn:line:21235886",
+        "instructionIndex": 2,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Hej, możesz podejść z przodu, żebym cię widział?",
+      "after": "Hej, możesz podejść do mnie od przodu, żebym cię widział?"
+    },
+    {
+      "id": "yarn:line:7ead92b1",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:7ead92b1",
+            "source": "If you could come up front so I could talk.",
+            "sourceIds": [
+              "yarn:line:7ead92b1"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:7ead92b1",
+            "source": "If you could come up front so I could talk.",
+            "sourceIds": [
+              "yarn:line:7ead92b1"
+            ]
+          }
+        },
+        "group": "RyanMuddy_Nag2",
+        "id": "yarn:line:7ead92b1",
+        "instructionIndex": 3,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Podejdź proszę z przodu, żebym mógł z tobą porozmawiać.",
+      "after": "Podejdź proszę do mnie od przodu, żebym mógł z tobą porozmawiać."
+    },
+    {
+      "id": "yarn:line:f716a163",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:f716a163",
+            "source": "I knew you were too busy, so I figured I'd bring the date to you!",
+            "sourceIds": [
+              "yarn:line:f716a163"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:f716a163",
+            "source": "I knew you were too busy, so I figured I'd bring the date to you!",
+            "sourceIds": [
+              "yarn:line:f716a163"
+            ]
+          }
+        },
+        "group": "RyanDate_Intro",
+        "id": "yarn:line:f716a163",
+        "instructionIndex": 16,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Wiedziałem, że masz za dużo pracy, więc postanowiłem przynieść randkę do ciebie!",
+      "after": "Wiedziałem, że masz za dużo pracy, więc postanowiłem urządzić randkę u ciebie!"
+    },
+    {
+      "id": "yarn:line:8ee41fdc",
+      "sourceRow": {
+        "builds": {
+          "macos": {
+            "file": "dialogue.json",
+            "key": "line:8ee41fdc",
+            "source": "Dragon history is complex. Ornamental crest <size=85%> are often <size=70%> worn by dragons to <size=55%>signify what family they belong to! <size=40%> It's an interesting mark of their culutral <size=35%> and familial heritage. I've often wondered if I should continue to wear mine. <size=20%> But culutural and familiar ties are considered important within the lore of dragons! so I must adhere to such things. <size=10%> Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. Then everything changed when the Fire Nation attacked.",
+            "sourceIds": [
+              "yarn:line:8ee41fdc"
+            ]
+          },
+          "windows": {
+            "file": "dialogue.json",
+            "key": "line:8ee41fdc",
+            "source": "Dragon history is complex. Ornamental crest <size=85%> are often <size=70%> worn by dragons to <size=55%>signify what family they belong to! <size=40%> It's an interesting mark of their culutral <size=35%> and familial heritage. I've often wondered if I should continue to wear mine. <size=20%> But culutural and familiar ties are considered important within the lore of dragons! so I must adhere to such things. <size=10%> Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. Then everything changed when the Fire Nation attacked.",
+            "sourceIds": [
+              "yarn:line:8ee41fdc"
+            ]
+          }
+        },
+        "group": "Alexander_questions",
+        "id": "yarn:line:8ee41fdc",
+        "instructionIndex": 267,
+        "kind": "line",
+        "preserveExactPrefix": null
+      },
+      "before": "Historia smoków jest złożona. Ozdobne grzebienie <size=85%> są często <size=70%> noszone przez smoki, by <size=55%> pokazać, do jakiej rodziny należą! <size=40%> To ciekawy znak ich kulturowego <size=35%> i rodzinnego dziedzictwa. Często zastanawiałem się, czy nadal powinienem nosić swój. <size=20%> Ale więzy kulturowe i rodzinne uważa się za ważne w smoczej tradycji! Muszę więc ich przestrzegać. <size=10%> Woda. Ziemia. Ogień. Powietrze. Dawno temu cztery narody żyły ze sobą w zgodzie. Wszystko się zmieniło, gdy Naród Ognia zaatakował.",
+      "after": "Historia smoków jest złożona. Ozdobne grzebienie <size=85%> są często <size=70%> noszone przez smoki, by <size=55%> pokazać, do jakiej rodziny należą! <size=40%> To ciekawy znak ich kulturowego <size=35%> i rodzinnego dziedzictwa. Często zastanawiałem się, czy nadal powinienem nosić swój. <size=20%> Ale więzy kulturowe i rodzinne uważa się za ważne w smoczej tradycji! Muszę więc je szanować. <size=10%> Woda. Ziemia. Ogień. Powietrze. Dawno temu cztery narody żyły ze sobą w zgodzie. Wszystko się zmieniło, gdy Naród Ognia zaatakował."
+    }
+  ]
+}
