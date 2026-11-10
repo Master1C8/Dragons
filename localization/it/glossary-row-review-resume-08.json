@@ -624,7 +624,7 @@
           "localeFieldsSha256": "649610e6e5ee14c04df3df24b4118f349f79952954c42995d92625488a26e8e9"
         }
       ],
-      "groupContext": "Ryan/player branch, but these unprefixed isolated rows do not themselves prove each voice. Kobold describes species; Yip is a context-sensitive vocalization.",
+      "groupContext": "Ryan/player branch; paired stock routing establishes two player choices, but unprefixed surrounding voices remain unassigned. Kobold is a species reference and Yip a vocalization.",
       "layer1": "Author source self-review: all paired rows reviewed; explicit species and vocalization indexed and uncertain individual voice routing preserved.",
       "layer2": "Author Italian field self-review: player neutrality and the bound Ryan, kobold and Yip fields fit the use; no defect demonstrated in these scenes. This is not independent review.",
       "rows": [
@@ -639,22 +639,26 @@
         {
           "id": "yarn:line:0274cacd",
           "pairedRowSha256": "c6de8af8a48a5992eec3e0f8c1d49b7d408f888b5eeb9ea80b45498e20138d81",
-          "speakerOrKind": "unresolved individual voice",
-          "characterReferents": [],
+          "speakerOrKind": "player option",
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [
             "dnw-kobold"
           ],
-          "decision": "A participant states that kobolds are flexible; the plural refers to the species, not a named character."
+          "decision": "Player choice; kobold flexibility is a species reference and does not establish player gender."
         },
         {
           "id": "yarn:line:9444cdba",
           "pairedRowSha256": "c0a1268ec34ea0764580648f5f6465df9543ed64761623d25a0d0e8de4bf57ff",
-          "speakerOrKind": "unresolved individual voice",
-          "characterReferents": [],
+          "speakerOrKind": "player option",
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [
             "dnw-yip"
           ],
-          "decision": "The kobold vocalization occurs as a response; context governs its sense."
+          "decision": "Player choice using the established Yip vocalization."
         },
         {
           "id": "yarn:line:f3af3ce8",
@@ -3635,31 +3639,25 @@
           "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
         }
       ],
-      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "groupContext": "Ryan/player scene context; the paired stock table does not identify either unprefixed voice.",
       "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
       "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
       "rows": [
         {
           "id": "yarn:line:c35b717a",
           "pairedRowSha256": "3ef384a141cc59eb21f3c28aaa11341ff82dc72e4e565abbe6de5a1c3c4d7932",
-          "speakerOrKind": "line",
-          "characterReferents": [
-            "dnw-ryan",
-            "dnw-player"
-          ],
+          "speakerOrKind": "unresolved individual voice",
+          "characterReferents": [],
           "conceptUses": [],
-          "decision": "Ryan asks the player if they are sure given the food nearby."
+          "decision": "Unprefixed question about certainty and nearby food; neither individual voice is established."
         },
         {
           "id": "yarn:line:5246ceea",
           "pairedRowSha256": "9b960b1d58efafe6d5fa861c8ff17a7c7fc13baee529117800c5624c25a41803",
-          "speakerOrKind": "line",
-          "characterReferents": [
-            "dnw-ryan",
-            "dnw-player"
-          ],
+          "speakerOrKind": "unresolved individual voice",
+          "characterReferents": [],
           "conceptUses": [],
-          "decision": "Ryan agrees."
+          "decision": "Unprefixed assent; the individual voice is not established."
         }
       ]
     },

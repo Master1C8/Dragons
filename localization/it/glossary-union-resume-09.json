@@ -3,7 +3,7 @@
   "status": "provisional-derived-index-not-semantic-approval",
   "worklistSha256": "692c32667546db79d51cab95d4894bb97f7f78b4fda0756465f90c0a5e6319d2",
   "entryHashIndexSha256": "81ba8ebd79affeab85cf2559a753fbd06498d74daf8358bb0223770a236bf3cf",
-  "rowReceiptSha256": "5143ba90d900bf9641e3c72a3f5df5bc96ef32e4ece340f0a8ffd57a1a90487e",
+  "rowReceiptSha256": "ce9d26dd2cdb0d35f6752f41460f8a5425052be2447abb857258b2694e7fb7ad",
   "scopeNote": "Derived only from recorded row tags; omissions and implicit uses remain subject to human reconciliation in both author layers.",
   "entries": [
     {
@@ -28,6 +28,22 @@
             {
               "id": "yarn:line:7f5113d5",
               "pairedRowSha256": "e888661b7ee8fafc34f97569f6bb9e751305430b2bcfe0c6c85157c0715c2fc9",
+              "kind": "characterReferents"
+            }
+          ]
+        },
+        {
+          "group": "Ryan_SexScene",
+          "orderedRowsSha256": "f2feee0061b9a483210a98cb0a2780ce0f03379283b6d7d2ccc91f6b8c4bb595",
+          "uses": [
+            {
+              "id": "yarn:line:0274cacd",
+              "pairedRowSha256": "c6de8af8a48a5992eec3e0f8c1d49b7d408f888b5eeb9ea80b45498e20138d81",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:9444cdba",
+              "pairedRowSha256": "c0a1268ec34ea0764580648f5f6465df9543ed64761623d25a0d0e8de4bf57ff",
               "kind": "characterReferents"
             }
           ]
@@ -672,22 +688,6 @@
             {
               "id": "yarn:line:76a97730",
               "pairedRowSha256": "fafd8d33ce74f1efd349760155eaee6e2a0e63d0d0a3af74687734e08ceefa1d",
-              "kind": "characterReferents"
-            }
-          ]
-        },
-        {
-          "group": "Ryan_4_JerkOff_Start",
-          "orderedRowsSha256": "5c47f9c29feb47694b61a978313c6f0126328e7d34ad9c2f78b917c4c2695cb9",
-          "uses": [
-            {
-              "id": "yarn:line:c35b717a",
-              "pairedRowSha256": "3ef384a141cc59eb21f3c28aaa11341ff82dc72e4e565abbe6de5a1c3c4d7932",
-              "kind": "characterReferents"
-            },
-            {
-              "id": "yarn:line:5246ceea",
-              "pairedRowSha256": "9b960b1d58efafe6d5fa861c8ff17a7c7fc13baee529117800c5624c25a41803",
               "kind": "characterReferents"
             }
           ]
@@ -10246,22 +10246,6 @@
             {
               "id": "yarn:line:45507089",
               "pairedRowSha256": "21dbbfb0ffb75e5853b6ffe720bbbe504a5d1bcae2014e22c326c293f6e8741a",
-              "kind": "characterReferents"
-            }
-          ]
-        },
-        {
-          "group": "Ryan_4_JerkOff_Start",
-          "orderedRowsSha256": "5c47f9c29feb47694b61a978313c6f0126328e7d34ad9c2f78b917c4c2695cb9",
-          "uses": [
-            {
-              "id": "yarn:line:c35b717a",
-              "pairedRowSha256": "3ef384a141cc59eb21f3c28aaa11341ff82dc72e4e565abbe6de5a1c3c4d7932",
-              "kind": "characterReferents"
-            },
-            {
-              "id": "yarn:line:5246ceea",
-              "pairedRowSha256": "9b960b1d58efafe6d5fa861c8ff17a7c7fc13baee529117800c5624c25a41803",
               "kind": "characterReferents"
             }
           ]
