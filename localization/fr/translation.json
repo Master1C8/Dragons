@@ -239,6 +239,36 @@
     "yarn:line:29a77d09": "Laisse-moi essayer !",
     "yarn:line:bf977a7e": "Ah d’accord. Je vais le chercher.",
     "yarn:line:05c673e7": "Bien sûr !",
-    "yarn:line:93f67490": "Oh que oui !"
+    "yarn:line:93f67490": "Oh que oui !",
+    "yarn:line:9ab6ddfb": "Vous faites aussi des « fins spéciales » ici ?",
+    "yarn:line:f99840cd": "C’est quoi, ça ?",
+    "yarn:line:d5f94e23": "Oui !",
+    "yarn:line:e05c2dca": "Non",
+    "yarn:line:6fa847ba": "Ouais, non. Faut vraiment que tu t’y mettes, mon pote. Je paierai bien !",
+    "yarn:line:43c94954": "Trop bien ! J’ai hâte de te voir à l’œuvre !",
+    "yarn:line:766c2abd": "Quoi ? Tous les meilleurs endroits le font !",
+    "yarn:line:8a35fb7b": "Alor<size=90%>s<size=80%>s<size=70%>s<size=60%>s... <size=100%>Je me demandais",
+    "yarn:line:6fbc3c1b": "Vous faites aussi des <i>fins spéciales</i> ici, hein ?",
+    "yarn:line:f98c3b6c": "Toutes les fins sont spéciales ici !",
+    "yarn:line:a0a0a49c": "Genre... des trucs sexuels ?",
+    "yarn:line:43dd32f5": {
+      "text": "Euh... C’est pas-",
+      "sharedAcrossSourceVariants": true
+    },
+    "yarn:line:d5ed3582": "Vous faites jouir les grands dragons, <size=60%>comme moi, <size=100%>ici ?",
+    "yarn:line:7678511c": "Quoi- hein- <size=80%>oh. <size=60%>on ne-",
+    "yarn:line:e048566b": "Oh, non.",
+    "yarn:line:5a195ff2": {
+      "text": "Quoi !? C’est terrible ! Vous n’avez même pas de support... ?",
+      "sharedAcrossSourceVariants": true
+    },
+    "yarn:line:cc295885": "Euh... <size=60%>non ?",
+    "yarn:line:5d34e715": "Eh bien, tu ferais mieux de t’en procurer un !",
+    "yarn:line:cb04e062": "Au moins, tu peux toujours te servir de tes mains. Hé hé.",
+    "yarn:line:3690a3eb": "Ah ouais ? Je vois même pas de support.",
+    "yarn:line:8cc1aa72": "Oh... oui, on n’en a pas.",
+    "yarn:line:1af1ad05": "Non, nous n’offrons pas ce genre de services ici.",
+    "yarn:line:b964c99b": "C’est bien dommage. Faudrait changer ça.",
+    "yarn:line:2f54ceec": "Au moins, tu peux toujours te servir de tes mains. Hé hé."
   }
 }

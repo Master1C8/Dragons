@@ -1,6 +1,6 @@
 # French special-scene decisions
 
-Status: **23 of 27 groups have author-reviewed draft wording; the entry gate for ordinary translation remains open.** Authored input: [translation.json](translation.json), SHA-256 `dd438d8d6f119f3e149ea113aea3a585778fcc521ec3a4bf0f8bb4a19bf15515`. It contains 221/1,947 package IDs. The bound inventory, Yarn scope and French glossary hashes are in [CHECKPOINT.md](CHECKPOINT.md) and [glossary-review.md](glossary-review.md). The other 4 groups remain unreviewed; the anonymous group also retains the technical boundary below. The English worklist and source registry, not another locale, supplied the wording and context.
+Status: **24 of 27 groups have author-reviewed draft wording; the entry gate for ordinary translation remains open.** Authored input: [translation.json](translation.json), SHA-256 `aeb92f076d7c740f9c28d9a40bb1dfe0d90a718b8b67d907d316c7078fe16ab0`. It contains 245/1,947 package IDs. The bound inventory, Yarn scope and French glossary hashes are in [CHECKPOINT.md](CHECKPOINT.md) and [glossary-review.md](glossary-review.md). The other 3 groups remain unreviewed; the anonymous group also retains the technical boundary below. The English worklist and source registry, not another locale, supplied the wording and context.
 
 ## Alexander: the taste of seven
 
@@ -115,3 +115,11 @@ The twelve `dirty-double-meaning` and fifteen `professional-double-meaning` IDs 
 Use the paired Yarn table adapter while preserving original choice IDs, conditional `$conrad_jerked_off_3`, destinations, speaker routing and ordered size and italic tags. Positive scene checks should exercise both response paths and both conditional states; compare emphasis, progression and fit. Reject a missing double meaning, altered condition or tag, or a swapped reply. French scene playback, fit and independent game-text audit remain pending.
 
 Both partial assets were reopened and checked against all 1,839 ordered Yarn values and metadata: 218 authored values and 1,621 untouched per platform; three presenter IDs are separate. Diagnostic SHA-256: macOS `4813265c95c857d6c4ba3098d8e612996ade68fd4fad6369adc0e0877a13eeb9`; Windows `0b82248b91066408aa6f16b5a368413a8d5f3700ceffaba53ab93f8bb89bd33c`. These are not final deliverables.
+
+## Conrad: special endings
+
+All 24 `conrad-special-endings` IDs were read against the paired English worklist and `localization/evidence/special-scenes-conrad-endings-20261107.json`. The ambiguous request uses `fins spéciales` consistently, including the response that every ending is special; the explicit clarification and separate yes, no and uncertain replies retain their meanings. The approved `support` appears where the source refers to the adult device. Two apostrophe-only build differences explicitly share their French text. The author reviewed the group and its response distinctions; this is an author self-review, not an independent audit.
+
+Preserve choices, routes, speaker assignment, original conditional state and the ordered size and italic tags. The paired Yarn replacement provides a feasible text path. Scene checks must exercise the alternatives and compare emphasis, progression and visual fit; source coverage does not establish French route reachability. Actual scene playback, fit and independent review remain pending.
+
+The paired validators accepted 245 IDs. Both partial assets were reopened and compared with all 1,839 ordered Yarn values and metadata: 242 authored, 1,597 untouched per platform; three presenter IDs are separate. Diagnostic SHA-256: macOS `0cbf852396f2e4987e6893e5507f942e7647fdbed70e0f76e9b55b407545185f`; Windows `51887c75573a67f5f4e82282cb90f80d99b8ef063070e358993fbc372f36a949`. These are not deliverables.
