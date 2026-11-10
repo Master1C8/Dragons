@@ -53,6 +53,9 @@ included with the payload.
 
 ## Build and test
 
+For the accepted archives and a rebuild using their packaged inputs, see
+[the recovery guide](../RECOVERY.md).
+
 Use `Scripts/prepare-payload.py --help` to generate macOS and Windows
 resource directories with `--inventory App/LocalePackages.json`. The
 inventory pins both local packages and the translation for each locale.
