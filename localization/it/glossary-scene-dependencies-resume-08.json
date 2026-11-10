@@ -2691,13 +2691,53 @@
       "group": "Conrad_idle_3_1",
       "orderedRowsSha256": "e70f4c18b2d5a14c45f59698727f47b38c68d50633c4f9becc01ccf690dd0c37",
       "count": 3,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-mount": [
+          "yarn:line:83f511d2"
+        ]
+      },
+      "referents": "Conrad asks the player to place the adult device, or requests a hand interaction, or asks about the gate in separate routed lines.",
+      "layer1": "The mount is the device, not an animal; route the separate requests correctly.",
+      "layer2": "The Italian device and character fields fit without assuming player gender.",
+      "sourceIds": [
+        "yarn:line:83f511d2",
+        "yarn:line:12e8ae42",
+        "yarn:line:84d8a935"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-required-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_idle_3_2",
       "orderedRowsSha256": "6cd94ae5bd207be2262a95b9563c74c4332f68432634ab90e24b1b82df5f3704",
       "count": 3,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-mount": [
+          "yarn:line:8ffedb47"
+        ]
+      },
+      "referents": "Conrad likes the device the player chose and asks for it. The later request differs between macOS me and Windows my; both are bound source forms.",
+      "layer1": "The mount and it refer to the device, and the source build variation is preserved as evidence.",
+      "layer2": "No glossary correction follows from the Windows typo; do not invent player gender.",
+      "sourceIds": [
+        "yarn:line:8ffedb47",
+        "yarn:line:19cedc30",
+        "yarn:line:a39fd5a9"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-required-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_placed_mount_3",
@@ -2709,19 +2749,139 @@
       "group": "Conrad_required_1",
       "orderedRowsSha256": "5511c0d6f6b153618c23bc4347b4f5e553ba878654e7b3aedd7837e33d403156",
       "count": 17,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-special-endings",
+        "dnw-mount",
+        "dnw-dragon"
+      ],
+      "conceptUses": {
+        "dnw-special-endings": [
+          "yarn:line:6fbc3c1b",
+          "yarn:line:f98c3b6c",
+          "yarn:line:a0a0a49c",
+          "yarn:line:d5ed3582"
+        ],
+        "dnw-mount": [
+          "yarn:line:5a195ff2",
+          "yarn:line:5d34e715",
+          "yarn:line:3690a3eb",
+          "yarn:line:8cc1aa72"
+        ],
+        "dnw-dragon": [
+          "yarn:line:d5ed3582"
+        ]
+      },
+      "referents": "Conrad asks about the euphemistic service and clarifies sexual acts involving dragons like himself. The player initially misunderstands; the alternative responses about service availability and the device remain distinct. One in the device exchange is the mount.",
+      "layer1": "The clarification supports the sexual euphemism; mount is the adult device and Conrad is the exemplifying dragon.",
+      "layer2": "Italian entries fit the clarified context and neither punctuation differences nor the initial misunderstanding establish a glossary error; preserve markup and branches.",
+      "sourceIds": [
+        "yarn:line:8a35fb7b",
+        "yarn:line:6fbc3c1b",
+        "yarn:line:f98c3b6c",
+        "yarn:line:a0a0a49c",
+        "yarn:line:43dd32f5",
+        "yarn:line:d5ed3582",
+        "yarn:line:7678511c",
+        "yarn:line:e048566b",
+        "yarn:line:5a195ff2",
+        "yarn:line:cc295885",
+        "yarn:line:5d34e715",
+        "yarn:line:cb04e062",
+        "yarn:line:3690a3eb",
+        "yarn:line:8cc1aa72",
+        "yarn:line:1af1ad05",
+        "yarn:line:b964c99b",
+        "yarn:line:2f54ceec"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-required-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_required_2",
       "orderedRowsSha256": "c0ca12f0eb6b38d6baf8b637285de0df9ba44c5e3cfef15c8a57760aa9a06885",
       "count": 35,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-dragon"
+      ],
+      "conceptUses": {
+        "dnw-dragon": [
+          "yarn:line:3112adad",
+          "yarn:line:1d73a343"
+        ]
+      },
+      "referents": "Conrad is hurt and blames himself. In different branches he identifies an unnamed drake at the bar; the lines do not establish that drake's name or a precise account of the incident. The player expresses support and Conrad apologizes for snapping at them.",
+      "layer1": "The drake is a separate unnamed person; retain Conrad's own stated self-blame without adopting it as a factual verdict.",
+      "layer2": "Conrad's informal characterization fits; player gender and the drake's identity remain unestablished. Preserve alternative lines and emphatic markup.",
+      "sourceIds": [
+        "yarn:line:51d4e418",
+        "yarn:line:c7e4e36f",
+        "yarn:line:647187f1",
+        "yarn:line:de208e68",
+        "yarn:line:f2418086",
+        "yarn:line:4810891f",
+        "yarn:line:4f3d31f8",
+        "yarn:line:d90d368f",
+        "yarn:line:bee6c7dd",
+        "yarn:line:28d6c0aa",
+        "yarn:line:9287c933",
+        "yarn:line:04b7ce44",
+        "yarn:line:8b43a434",
+        "yarn:line:a722aada",
+        "yarn:line:3112adad",
+        "yarn:line:1d73a343",
+        "yarn:line:8c6e1cd3",
+        "yarn:line:1a5e1ba4",
+        "yarn:line:69e7dbb3",
+        "yarn:line:ffd7dcc4",
+        "yarn:line:d3b6d22a",
+        "yarn:line:4586d55d",
+        "yarn:line:e613b1c3",
+        "yarn:line:7023b6b4",
+        "yarn:line:ca72bf2d",
+        "yarn:line:5b6f00bd",
+        "yarn:line:5c42b85a",
+        "yarn:line:cd5f07ca",
+        "yarn:line:38419d8b",
+        "yarn:line:ae719afc",
+        "yarn:line:14209365",
+        "yarn:line:82109412",
+        "yarn:line:2185f08c",
+        "yarn:line:b7b5f7fb",
+        "yarn:line:0de4fe62"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-required-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_required_4",
       "orderedRowsSha256": "5b404c5cfd70fe1faca973a78a252aaababfdc49171bdcbd8973ff59d1bcbdc2",
       "count": 7,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Conrad says he has a question and the player has several alternative responses, including big guy addressed to Conrad.",
+      "layer1": "The informal address refers to Conrad; alternatives are not all spoken sequentially.",
+      "layer2": "The male Conrad field fits and the player remains gender-unspecified.",
+      "sourceIds": [
+        "yarn:line:e7353d24",
+        "yarn:line:71053a53",
+        "yarn:line:e01885c3",
+        "yarn:line:762882b4",
+        "yarn:line:93a145d4",
+        "yarn:line:059142a3",
+        "yarn:line:bfc04b3a"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-required-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_started_jerkoff_3",

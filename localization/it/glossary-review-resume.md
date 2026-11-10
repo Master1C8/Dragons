@@ -281,3 +281,9 @@ The affected person in `yarn:line:d50cb509` is Conrad; the source does not state
 Two author self-reads reconcile eleven groups / 13 paired rows: `Ryan_3_wont_use_mount`, `Ryan_4_Cum`, `Ryan_4_JerkOff_Start`, `Ryan_4_Mount_Finish`, `Ryan_4_Mount_Start`, `Ryan_5_Cum`, `Ryan_5_JerkOff_Start`, `Ryan_5_Mount_Finish`, `Ryan_5_Mount_Start`, `ryan_jerk_off_no`, and `ryan_mount_no`. Their full scene membership, paired-source digests, selected concept anchors and separate author-layer decisions are in the scene dependency index. Individual anchors remain partial, and neither layer is independent.
 
 The demonstratives at `yarn:line:ccf87ea9` and `yarn:line:4b93b009` refer to the adult device in their routed contexts; `yarn:line:94e04dcf` and `yarn:line:6bd91ca7` name it. Preserve each local acceptance or refusal, including the uncertain “maybe later”; none establishes blanket consent or a permanent refusal. The food is a contextual object, not a character. No glossary correction is demonstrated.
+
+### Resume-08 Conrad required scenes
+
+Two author self-reads reconcile five groups / 65 paired rows: `Conrad_required_1`, `Conrad_required_2`, `Conrad_required_4`, `Conrad_idle_3_1` and `Conrad_idle_3_2`. Their paired-row digests, complete scene membership, selected concept anchors and separate author decisions are in the scene dependency index. These records remain partial source-ID unions and are not independent review.
+
+The sexual clarification in `yarn:line:6fbc3c1b`, `yarn:line:a0a0a49c` and `yarn:line:d5ed3582` supports the established special-endings euphemism; the mount is the adult device. Conrad identifies an unnamed drake at a bar in alternative `yarn:line:3112adad` and `yarn:line:1d73a343` but gives no name or complete account; his self-blame must remain his own assertion. `yarn:line:19cedc30` differs between macOS “me” and Windows “my”; this is source variation, not evidence for a glossary field change. No field correction is demonstrated.
