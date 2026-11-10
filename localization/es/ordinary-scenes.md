@@ -57,3 +57,7 @@ Author self-reviewed 27 IDs in the muddy wash, idle remarks and player prompts, 
 ## Alexander and Conrad idle wash
 
 Author self-reviewed 34 IDs in Alexander and Conrad idle remarks, wash states and interactions. For `yarn:line:19cedc30`, the Windows source typo has the same intended meaning as the macOS source; each platform field is retained and rendered identically. Both stock source readers and object encode/parse passed: macOS SHA-256 `272f9910f4e8557d6efa378b56380bdb61fe4e10da0cb9fa36dba7df7506653c`; Windows `ea55871b1253e01fb7994442cfafde806a2b3f4143b979b942e74238f87e6d6d`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary14/`.
+
+## Start test script
+
+Author self-reviewed the 24 Start IDs, retaining the 18 distinct numbered test lines and the Unity and Yarn names. Both stock source readers and object encode/parse passed: macOS SHA-256 `d60fb34fffe60957ed006d4e20aecf470efa5325e454bec40a3705d8cfe373b2`; Windows `f0924bf53465ccbab5a7afe2952d5e1310c21de455e8783a631c6b25b25deca7`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary15/`.
