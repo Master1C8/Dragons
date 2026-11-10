@@ -30,7 +30,7 @@ Author self-review: the smaller hesitant aside questions whether scales can chan
 
 Source case `ryan-branch-hesitation-sizing`, same typography registry, row `9fd5b834` (same English on both builds):
 
-> Sì. <size=90%>Oh- <size=80%>sai, io... <size=70%>Ahah. Sì. Mhm!
+> Sì. <size=90%>Oh- <size=80%>sai. Io... <size=70%>Ahah. Sì. Mhm!
 
 Author self-review: successive hesitant beats retain the increasingly small voice without assigning the player's gender. Keep the original choice identity, destination, and 90%, 80%, 70% order and nonempty stages. Positive: each beat remains in its original size stage; negative: an empty stage, reordered tags or changed choice destination fails. Editorial: author-reviewed. Adapter feasibility: existing TMP text path and structural guard; package implementation and validation, runtime and visual fit: pending.
 
