@@ -1,5 +1,18 @@
 # Italian localization checkpoint
 
+## 2026-11-10 direct editorial pass
+
+Read all 1,947 paired source/target rows, including both source variants and all packaged UI, settings, credits and special-scene text.
+
+Applied 57 source-bound text corrections in the canonical 1,947-ID
+corpus. The unchanged baseline is in `c6225f5`. Final input SHA-256
+`21f43ebb21a277eb1732bb209413d55b6304e9f688ec235e92300cd65d1e81f4`. The [delta recipe](direct-editorial-recipe-20261110.json)
+reproduces 1019 target IDs and 55 retained protected
+context records through `export_editorial_delta_with_regressions.py`.
+Closure-ID SHA-256 `7b8c5b825ae5c8ebe6d09cbed7d016fa8897ec7573333ba12fa7a7da59649fb2`.
+Both stock input validators passed. This was a direct editorial pass by the
+coordinator, with no new distinct independent audit, gameplay or visual check.
+
 ## 2026-11-10 direct file completion
 
 The paired draft now has **1,947/1,947 authored IDs**. Filled the 467 remaining

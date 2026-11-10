@@ -1,5 +1,18 @@
 # Drag'N Wash — Brazilian Portuguese checkpoint
 
+## 2026-11-10 direct editorial pass
+
+Reused the hash-bound 1,947-row author pass and earlier reviewed closure rows. Read 826 paired rows, including all 378 previously unread IDs and every group affected by the 26 previous changes, plus 13 newly selected dependency rows.
+
+Applied 29 source-bound text corrections in the canonical 1,947-ID
+corpus. The unchanged baseline is in `c6225f5`. Final input SHA-256
+`2942828d34256cf93319fe5bc89df860c00a6ddc054772ce2d53edd661cd9e9e`. The [delta recipe](direct-editorial-recipe-20261110.json)
+reproduces 766 target IDs and 55 retained protected
+context records through `export_editorial_delta_with_regressions.py`.
+Closure-ID SHA-256 `a5b4680a68fa681d3571eeebf62bbdac05fcdc4f95fb1d576882c336833087be`.
+Both stock input validators passed. This was a direct editorial pass by the
+coordinator, with no new distinct independent audit, gameplay or visual check.
+
 ## 2026-11-10 direct file completion
 
 The complete paired file contains **1,947/1,947 authored IDs**, SHA-256
