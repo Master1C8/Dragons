@@ -31,3 +31,9 @@ Updated 2026-11-10. Scope: standard Italian (`it`), English source, macOS `9/12/
 3. Only when upstream gates support it, prepare all 27 special-scene decisions from the paired English worklist, then translate coherent batches using the paired format and checkpoint each verified batch. Preserve branch identities, markers and all exact values.
 
 Usage telemetry for this session was not available at this checkpoint; no estimated token counts are asserted.
+
+## Resume 01 — 2026-11-10
+
+The owner permits two genuine author self-review layers for glossary acceptance; this does not waive the distinct final game-text independent audit. The resumed process is `gpt-6.1-terra` with `high` reasoning (PID 16530 at resume). The 27 historical Italian source/locale per-entry hashes match; the anonymous entry is new. [The bounded review and adjudications](glossary-review-resume.md) records two self-reads of the anonymous-role closure and the family-crest/phoenix findings. The complete 28-entry digest index is `glossary-entry-hashes.json` SHA-256 `81ba8ebd79affeab85cf2559a753fbd06498d74daf8358bb0223770a236bf3cf`. Existing receipts do not establish all concept dependencies under the present contract; two fully clean layers are not claimed. The run directory contains 291 lexical candidates for contextual investigation, `glossary-lexical-candidates.txt` SHA-256 `fc2fec55d9766170e11946569161b4988d3dc071fcd6cefb2d87e3a8d1294bc6`; it is not an exhaustive dependency selector.
+
+At the latest runtime check the French lane held the cooperative lock with a live owner, PID 16529. No Italian runtime preparation or game launch occurred in this interval. Do not remove its lock. Resume by checking its current owner and acquiring the lock with the current process identity; perform the actual paired probes and preserve their receipts before claiming renderer feasibility. Translation count remains 0/1,947.
