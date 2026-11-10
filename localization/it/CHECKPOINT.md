@@ -8,11 +8,15 @@ The glossary gate is **not yet complete**. The row-level receipt now binds two a
 
 Updated 2026-11-10. Scope: standard Italian (`it`), English source, macOS `9/12/2026_a93aa21a`, Windows `9/9/2026_ee944596`. No texture-with-text modification, publication, deployment, server action or GitHub push. Independent reviewers and other agents are excluded by the current assignment. The active CLI process was verified as `gpt-6.1-terra`, reasoning `high` (worker PID 12753, launch record in the run directory).
 
-## Resume 12 — first paired authored batch
+## Resume 12 — interface and settings batch
+
+The paired draft now contains **1,049/1,947 IDs**, with 898 dialogue IDs still blank. `translation.json` SHA-256 `4981ac05b18dea036a58d735f6cd7df1d600b18e80f11d4c36986134f053dc01`. All 123 non-Yarn IDs have been authored from the English bindings. Both platform adapters read back the authored UI and settings inputs, the two managed fallback strings, and all three speaker entries; their source hashes and reader constraints matched. This is reader validation, not complete package assembly, asset preservation, or a visual fit pass. The paired Yarn reader previously accepted 925 dialogue entries per platform. Final editorial, independent game-text audit, packaging, runtime and visual checks remain open. No game was launched.
+
+## Resume 12 — first paired authored batch (superseded count)
 
 The reviewed special-scene wording has been transferred into the pinned paired format: **926/1,947 IDs authored**, 1,021 still blank. `translation.json` SHA-256 `58f8587b926802a09686edda45c5bcc34925c3a71a2eea1181026f4933abb5bc`; 13 source-spelling variants use explicit shared-meaning confirmation. The package Yarn reader read back 925 dialogue bindings on each platform with ordered markup and source bindings intact; the remaining authored ID is a speaker entry and requires its adapter check. This is a partial draft, not a package or editorial acceptance. The inline and tabular versions of `9fd5b834` were aligned to the same source-bound wording. Remaining adapter checks, ordinary authoring, final independent audit, both deliverables, final runtime and visual checks remain open. No game was launched.
 
-## Resume 11 — Ryan source-routing correction
+## Resume 11 — Ryan source-routing correction (historical)
 
 Both stock programs identify `0274cacd` and `9444cdba` as player choices to destinations 7 and 9; `c35b717a` and `5246ceea` are unprefixed and must not be attributed to Ryan. The [review note](glossary-review-resume.md#resume-11-paired-ryan-routing-correction) records the correction, the neutral wording rule and exact evidence. The corrected row receipt SHA-256 is `ce9d26dd2cdb0d35f6752f41460f8a5425052be2447abb857258b2694e7fb7ad`; the rebuilt 2,537-link union SHA-256 is `126879faaa331dda2043e0ad61dc2ae092790cc47467ae0ebe945c2574e6bebc`. The source guidance is not another author layer. The subsequent current glossary decision closes character/species reconciliation using these hashes. Special-scene wording is recorded separately below.
 
@@ -43,7 +47,7 @@ The resume-10 named-entity note contained unsupported descriptions of Igwyx and 
 - `probe`: **passed for the bounded Italian renderer cases**. Isolated macOS and Windows CrossOver runs exercised dialogue, choices, progression and settings. The [independent frame review](../evidence/es-it-renderer-frame-review-20261110.md) resolved all remaining dialogue and choice frames and verified all three settings labels in the new 1280×960 macOS render. Original profiles were preserved. Native Windows and the final translated corpus retain separate checks.
 - `source`: **passed** for the pinned package scope and exact-preservation entry gate; see [current source decision](source-readiness-resume.md). The worklist has 1,947 IDs and 27 known special-scene groups.
 - `glossary`: **passed for authoring** on two complete author self-review layers at the bound hashes; see the current resume-11 decision. Independent final game-text audit remains separate.
-- `translate-edit`: **special-scene entry decisions complete**; 27/27 recorded, 926/1,947 IDs applied in the paired draft. Continue ordinary authoring and package-specific validation.
+- `translate-edit`: **special-scene entry decisions complete**; 27/27 recorded, 1,049/1,947 IDs applied in the paired draft. Continue ordinary authoring and package-specific validation.
 - `editorial`: not started; complete semantic pass and distinct independent diff/delta review pending.
 - `resources`: not started; final corpus glyph and layout coverage pending. Textures with text are excluded and preserved.
 - `package`: not run; neither local deliverable built.
