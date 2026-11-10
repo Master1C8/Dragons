@@ -578,3 +578,14 @@ date remain separate. Both diagnostic packages changed 140 Yarn
 values and preserved five authored pauses, every earlier value,
 the Yarn metadata and the compiled program. Verified receipts are
 under `localization/work/uk-finish-16.IIYf5s/`.
+
+## Seventeenth ordinary batch
+
+Conrad's fifth visit and the injured variant add 132 values.
+The draft covers 1,819 of 1,947 IDs with SHA-256
+`64a93f9baa9e9fd5d7d58d36dec8ae4c4446386ef0e9c0ee174f7f5cdc80bad1`.
+The three relationship variants and both incomplete-wash branches
+remain distinct. Both diagnostic packages changed exactly 128
+Yarn values. The four authored pauses, all earlier values, table
+metadata and compiled programs are exact. Verified receipts are
+under `localization/work/uk-finish-17.8P9tF5/`.
