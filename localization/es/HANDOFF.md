@@ -250,3 +250,7 @@ Authored 49 remaining dialogue IDs, including scene reactions, refusals and erro
 ### Settings
 
 Authored and self-reviewed 37 settings IDs; **1,868/1,947** are authored. Source-bound component serialization and read-back passed for 37 macOS and 31 Windows fields; altered English was rejected on both. See [ordinary-scenes.md](ordinary-scenes.md). Translation SHA-256 `2b0bc3ca25f2bd58f2f42602d6ea55abb687420d9f111dd35bd16c052792c77a`. Independent audit, final packages and localized runtime/visual QA remain pending.
+
+### Complete authored corpus: interface and credits
+
+Authored and self-reviewed the remaining 79 interface and credits IDs: **1,947/1,947 authored**, with all 27 special decisions author-reviewed. The complete paired source reader passed; source-bound UI preservation and full-object in-memory read-back passed for `level0`–`level6` on each build, and altered-English negative checks were rejected on both. See [ordinary-scenes.md](ordinary-scenes.md) and task-owned `resume-09/ui/receipt.json`, SHA-256 `392ebc665fe494dd97c50adfb4cb46af9e5ceea2a311ad82289fbab1c9b4e2b1`. Translation SHA-256 `20fc3d75786f81c311f64b5fbd0038c5fda553a77df09864cf799d77051158cf`. Authoring is complete; independent game-text diff/delta audit, final paired artifacts and final localized runtime/visual QA remain pending. Existing renderer sampling and glossary author self-reviews are separate, previously bound evidence, not final-corpus acceptance.
