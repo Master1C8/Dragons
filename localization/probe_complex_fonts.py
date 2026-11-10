@@ -23,6 +23,7 @@ import inventory_yarn_bindings as bindings
 import paired_locale
 import shaped_display_plan
 import settings_locale as settings
+import speaker_locale
 
 
 SAMPLES = {'ar': 'لَا', 'fa': 'می‌روم', 'he': 'שָׁלוֹם', 'th': 'น้ำ', 'hi': 'क्षि'}
@@ -72,17 +73,20 @@ def valid_glyphs(font, characters):
     return valid
 
 
-def authored_display_values(values, rows):
-    for key, by_platform in values.items():
-        prefixes = rows[key].get('preserveExactPrefix') or {}
-        for platform, text in by_platform.items():
-            yield text
-            yield text.strip()
-            prefix = prefixes.get(platform)
-            if prefix and text.startswith(prefix):
-                body = text[len(prefix):]
-                yield body
-                yield body.strip()
+def authored_display_values(by_platform, row, names):
+    prefixes = row.get('preserveExactPrefix') or {}
+    for platform, text in by_platform.items():
+        yield text
+        yield text.strip()
+        prefix = prefixes.get(platform)
+        if prefix and text.startswith(prefix):
+            body = text[len(prefix):]
+            yield body
+            yield body.strip()
+            label = names[platform][prefix.removesuffix(': ')]
+            localized = label + ': ' + body
+            yield localized
+            yield localized.strip()
 
 
 def needs_bidi(text):
@@ -181,8 +185,11 @@ def probe(args):
         plan_path = target / f'{plan_kind}-plans.json'
         if corpus_mappings or locale_bidi:
             by_text = defaultdict(set)
-            for key in values:
-                for text in authored_display_values({key: values[key]}, rows):
+            names = {platform: {name: values[f'display:{key}'][platform]
+                                for key, name in speaker_locale.SOURCE_NAMES.items()}
+                     for platform in sources}
+            for key, by_platform in values.items():
+                for text in authored_display_values(by_platform, rows[key], names):
                     if augmenter.has_script(text):
                         by_text[text].add(key)
             if corpus_mappings:

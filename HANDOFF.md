@@ -250,6 +250,21 @@ authored-yarn-composition-mark-fix/`. The package builders still need to
 consume the composed DLLs and font plans. Display plans also need exact
 variants for the localized inline speaker prefix produced by Yarn.
 
+### Inline speaker display plans
+
+The plan generator now adds the localized inline rendering of all 18
+source-pinned speaker lines per locale and keeps their existing raw and
+speaker-stripped variants. The names come from the same authored speaker
+rows used by the package patcher. In all ten locale/platform pairs, the
+standalone test called the actual composed Yarn speaker bridge and
+verified exact plan matches for its output and the separate line body.
+The 180 checks also compared the input line before and after the bridge.
+
+The new counts are 1,653 Arabic, 1,670 Persian, 1,658 Hebrew, 1,672 Thai
+and 1,665 Hindi plans. No existing plan key was dropped. The staged
+`staged-inline-speaker-plans/result.json` SHA-256 is
+`73d128727531f04feb2990e9b369d7da196ca7746254109f695eaa3a428a5ae4`.
+
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock
 512 × 512 multi-atlas chain admitted 1,536 distinct additional
