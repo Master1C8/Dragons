@@ -46,7 +46,7 @@ foreach (var item in mapElement.EnumerateObject()) {
         !map.TryAdd(item.Name, item.Value.GetString())) throw new InvalidOperationException("Invalid or duplicate source speaker");
     var text = map[item.Name];
     if (string.IsNullOrWhiteSpace(text) || text.Length > 40 || text.Any(c => char.IsControl(c) || "<>[]{}:".Contains(c)) ||
-        (includeInline && !text.All(char.IsLetter)))
+        (includeInline && !SpeakerLabel.IsValid(text)))
         throw new InvalidOperationException("Invalid display label");
 }
 if (map.Count != 2) throw new InvalidOperationException("Both known speaker mappings are required");

@@ -46,7 +46,7 @@ public static class InlineSpeakerView
         if (line.RawText?.StartsWith(sourcePrefix, StringComparison.Ordinal) != true ||
             !original.Text.StartsWith(sourcePrefix, StringComparison.Ordinal))
             return original;
-        if (string.IsNullOrEmpty(displayName) || !displayName.All(char.IsLetter))
+        if (!SpeakerLabel.IsValid(displayName))
             throw new ArgumentException("Expected a plain display name", nameof(displayName));
 
         int prefixLength = sourcePrefix.Length;

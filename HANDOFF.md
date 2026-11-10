@@ -228,6 +228,28 @@ and the Alexander fallback. Compose the reveal patch with that verified
 Yarn output before packaging. Native wrapping and callbacks remain
 unverified.
 
+### Composed Yarn assemblies
+
+Run `prepared-text-probe --yarn-compose STOCK_YARN_DLL SPEAKER_YARN_DLL
+SPEAKER_SHA LAYOUT_DLL NEW_YARN_DLL` after the standard speaker patcher.
+The composer verifies the pinned stock file, input fingerprint, assembly
+identity and unchanged stock typewriter body before applying the three
+reveal edits. Read-back checks compare every input method body, including
+the existing speaker and Alexander helpers. The wrong hash, opposite
+platform and second application controls produced no replacement DLL.
+
+The speaker label guard now accepts BMP combining marks after an initial
+letter in the Python preparation, managed patcher and runtime. Both stock
+Yarn parsers accepted marked Thai and Hindi labels and preserved the body
+and its markup positions in the managed test. Invalid leading marks,
+punctuation, whitespace, joiners and supplementary characters were
+rejected. All ten real locale/platform inputs materialized and composed
+successfully, each preserving 721 input method bodies. Per-pair receipts
+are under `localization/work/complex-renderer-20261110.nYJmC2/
+authored-yarn-composition-mark-fix/`. The package builders still need to
+consume the composed DLLs and font plans. Display plans also need exact
+variants for the localized inline speaker prefix produced by Yarn.
+
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock
 512 × 512 multi-atlas chain admitted 1,536 distinct additional

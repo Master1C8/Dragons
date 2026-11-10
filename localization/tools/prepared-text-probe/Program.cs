@@ -10,8 +10,13 @@ if (args is ["--yarn", var yarn, var layout, var outputYarn])
     YarnRevealPatch.Write(yarn, layout, outputYarn, module => Bodies(module));
     return;
 }
+if (args is ["--yarn-compose", var stockYarn, var speakerYarn, var speakerSha, var composedLayout, var composedYarn])
+{
+    YarnRevealPatch.Write(stockYarn, composedLayout, composedYarn, module => Bodies(module), speakerYarn, speakerSha);
+    return;
+}
 if (args.Length is not (3 or 4))
-    throw new ArgumentException("Expected STOCK_TMP_DLL DISPLAY_MAP_JSON NEW_TMP_DLL [LAYOUT_DLL] or --yarn STOCK_YARN_DLL LAYOUT_DLL NEW_YARN_DLL");
+    throw new ArgumentException("Expected STOCK_TMP_DLL DISPLAY_MAP_JSON NEW_TMP_DLL [LAYOUT_DLL] or --yarn STOCK_YARN_DLL LAYOUT_DLL NEW_YARN_DLL or --yarn-compose STOCK_YARN_DLL SPEAKER_YARN_DLL SPEAKER_SHA LAYOUT_DLL NEW_YARN_DLL");
 var source = File.ReadAllBytes(args[0]);
 var sourceHash = Hash(source);
 if (sourceHash is not ("a25a11167a5a7339d611c364a6525fc172d19fe5caa6aa95d6866fd1d36d0743" or

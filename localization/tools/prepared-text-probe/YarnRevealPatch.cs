@@ -1,4 +1,5 @@
 using System.Security.Cryptography;
+using System.Text.Json;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 
@@ -8,18 +9,32 @@ internal static class YarnRevealPatch
     private const string Helper = "Dragons.PreparedText.RenderHook";
 
     internal static void Write(string stock, string layoutPath, string output,
-        Func<ModuleDefinition, Dictionary<string, string>> fingerprint)
+        Func<ModuleDefinition, Dictionary<string, string>> fingerprint,
+        string? speakerAssembly = null, string? speakerSha = null)
     {
         var source = File.ReadAllBytes(stock);
-        var hash = Convert.ToHexString(SHA256.HashData(source)).ToLowerInvariant();
+        var hash = Hash(source);
         if (hash is not ("54953f9c071aa3ca5b52eb8b12b8e0bedc73f7665a506c61acbef0c58ac340ef" or
                          "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d"))
             throw new InvalidDataException("Expected a pinned Dragons Yarn assembly");
 
-        using var module = ModuleDefinition.ReadModule(new MemoryStream(source));
+        var input = speakerAssembly == null ? source : File.ReadAllBytes(speakerAssembly);
+        var inputHash = Hash(input);
+        if (speakerAssembly != null && inputHash != speakerSha)
+            throw new InvalidDataException("Yarn speaker output fingerprint mismatch");
+        using var original = ModuleDefinition.ReadModule(new MemoryStream(source));
+        using var module = ModuleDefinition.ReadModule(new MemoryStream(input));
         using var layout = ModuleDefinition.ReadModule(layoutPath);
         var before = fingerprint(module);
         var moveNext = module.GetType(StateMachine).Methods.Single(m => m.Name == "MoveNext");
+        var stockBodies = fingerprint(original);
+        if (module.Assembly.Name.FullName != original.Assembly.Name.FullName || module.Mvid != original.Mvid)
+            throw new InvalidDataException("Yarn composition requires the matching pinned module identity");
+        if (speakerAssembly != null && !module.AssemblyReferences.Any(r => r.Name == "Dragons.SpeakerPresentation"))
+            throw new InvalidDataException("Yarn composition requires the speaker presentation assembly reference");
+        if (!before.TryGetValue(moveNext.FullName, out var inputBody) || inputBody != stockBodies[moveNext.FullName] ||
+            module.AssemblyReferences.Any(r => r.Name == layout.Assembly.Name.Name))
+            throw new InvalidDataException("Yarn composition requires the unchanged pinned typewriter body");
         var instructions = moveNext.Body.Instructions;
         var count = instructions.Single(i => Calls(i, "TMPro.TMP_Text", "GetTextInfo"));
         var field = count.Next;
@@ -93,8 +108,14 @@ internal static class YarnRevealPatch
             throw new InvalidDataException("Original Yarn bodies changed beyond the verified reveal sites");
         using var destination = new FileStream(output, FileMode.CreateNew);
         destination.Write(patched);
-        Console.WriteLine($"Verified {before.Count} Yarn bodies and three reveal sites against {hash}");
+        Console.WriteLine(JsonSerializer.Serialize(new
+        {
+            sourceSha256 = hash, inputSha256 = inputHash, outputSha256 = Hash(patched),
+            verifiedInputMethodBodies = before.Count, revealSites = 3,
+        }));
     }
+
+    private static string Hash(byte[] bytes) => Convert.ToHexString(SHA256.HashData(bytes)).ToLowerInvariant();
 
     private static bool Calls(Instruction instruction, string owner, string name) =>
         instruction.OpCode == OpCodes.Callvirt && instruction.Operand is MethodReference method &&

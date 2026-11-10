@@ -11,6 +11,7 @@
     <DefineConstants>$(DefineConstants);SPEAKER_LOCALE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="../speaker-inline-probe/SpeakerLabel.cs" Link="SpeakerLabel.cs" />
     <Compile Include="../speaker-inline-probe/InlineSpeakerView.cs" Link="InlineSpeakerView.cs" />
     <Reference Include="YarnSpinner"><HintPath>$(GameManaged)/YarnSpinner.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="YarnSpinner.Unity"><HintPath>$(GameManaged)/YarnSpinner.Unity.dll</HintPath><Private>false</Private></Reference>

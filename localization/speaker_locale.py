@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import subprocess
 import tempfile
+import unicodedata
 
 import dialogue_locale as dl
 import managed_fallback
@@ -26,10 +27,11 @@ def read_locale(platform, locale_file, requested, expected, manifest):
         raise ValueError('Alexander presentation requires plain text ending with a colon')
     if locale != requested or names.keys() != SOURCE_NAMES.keys():
         raise ValueError('speaker locale must match the request and contain both source names')
-    # Match the game-side label guard. The current two speakers are single words.
-    if any(len(name) > 40 or not all(c.isalpha() and ord(c) <= 0xffff for c in name)
-           for name in names.values()):
-        raise ValueError('speaker labels must be single words of at most 40 BMP letters')
+    # Match the game-side BMP letter and combining mark guard.
+    if any(not name or len(name) > 40 or not name[0].isalpha() or
+           not all(ord(c) <= 0xffff and (c.isalpha() or unicodedata.category(c) in {'Mn', 'Mc'})
+                   for c in name) for name in names.values()):
+        raise ValueError('speaker labels must start with a letter and contain at most 40 BMP letters or marks')
     return locale, names, alexander
 
 
