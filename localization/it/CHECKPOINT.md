@@ -263,3 +263,7 @@ Five more complete groups / 25 rows received paired, hash-bound source and Itali
 ### Resume 08: Ryan date and explosion row unit
 
 Five further groups / 26 paired rows have hash-bound source and Italian-field author self-reviews. The row receipt now covers 103 groups / 304 rows; 90 groups / 1,643 rows lack equivalent full row-level receipts, subject to reuse of earlier exact-scope evidence. Corpus-wide dependency closure, independent acceptance, and the shared source and exact-preservation gates remain open.
+
+### Resume 08: generic dragon service row unit
+
+Three additional groups / 17 paired rows received hash-bound source and Italian author self-reviews, including the anonymous-dragon entry. The row receipt now covers 106 groups / 321 rows; 87 groups / 1,626 rows lack equivalent full row-level receipts, with older scoped evidence retained at its actual binding. Separate unidentified customers are not presumed to be the same individual. Independent acceptance, shared source and exact-preservation gates remain open.

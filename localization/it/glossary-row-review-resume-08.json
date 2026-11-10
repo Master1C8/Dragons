@@ -5559,6 +5559,319 @@
           "decision": "Ryan thanks the player."
         }
       ]
+    },
+    {
+      "group": "DragonAlmostClean",
+      "orderedRowsSha256": "88eb5691738478cf142f9a705c60d8607f0777c852c6fef8f5e3f993473da7e5",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-anonymous-dragon-speaker",
+          "sourceEntrySha256": "929136153456556d2889090960049f8981a99affd848ad4f38c17987221a3e0d",
+          "localeFieldsSha256": "c4e6eee5e1358e43351c48d0b9e0175f9da8a4d3086ca614cb2434e5e8fd71c7"
+        },
+        {
+          "id": "dnw-kobold",
+          "sourceEntrySha256": "655be37c2da8a22f692dbac404a5811b4227a465b44d7c6c85bc35af64f51df3",
+          "localeFieldsSha256": "8a1ac2a388a6bd2ea4517b1b90a93ddd9bb82862e39762fe8fcbf986a3f688b3"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        },
+        {
+          "id": "dnw-dragon-washer",
+          "sourceEntrySha256": "70f6f7b0f545b32f5a98233380b01eda5a369c67c4d2969c55e02a1782a18aa9",
+          "localeFieldsSha256": "2a85f72db9fb40d18dc57ace708e091d432e3a63aba15051e6b89ea74973f09a"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:7d791906",
+          "pairedRowSha256": "b9bd8e4e7cab653a3ac8b4df61f46e636485422d19dc3e07f3ce4c717d66ed4d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-anonymous-dragon-speaker"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The unidentified dragon says the cleaning is better but still feels dirty."
+        },
+        {
+          "id": "yarn:line:ec64a696",
+          "pairedRowSha256": "6da750fdd3dfce0a8388858ee4a9167225e165d586ea594cb72030df9048983d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-anonymous-dragon-speaker",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The dragon asks the player to double-check cleanliness."
+        },
+        {
+          "id": "yarn:line:7a54a1e1",
+          "pairedRowSha256": "e6a27bd47915c22c11036a4dd85696799f7d0eba1d3a7ca12b5b158ee2bc215a",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can agree."
+        },
+        {
+          "id": "yarn:line:1dbf50b3",
+          "pairedRowSha256": "78218a7dba004ed34053f7087eb1aac4b891564d7bd331084ba994c8d9a6cfcb",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can agree."
+        },
+        {
+          "id": "yarn:line:8b8f57c4",
+          "pairedRowSha256": "f53d4c2498aad3426facc361af3040369809343c42652e7a55a3320ebc6d98c4",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-anonymous-dragon-speaker",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The dragon thanks the player."
+        }
+      ]
+    },
+    {
+      "group": "DragonConfusedAboutDismissal",
+      "orderedRowsSha256": "b24587c2a6c51e54fa41ee70b1ce3412679531223fb45b792e8e702cc53cb7df",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-anonymous-dragon-speaker",
+          "sourceEntrySha256": "929136153456556d2889090960049f8981a99affd848ad4f38c17987221a3e0d",
+          "localeFieldsSha256": "c4e6eee5e1358e43351c48d0b9e0175f9da8a4d3086ca614cb2434e5e8fd71c7"
+        },
+        {
+          "id": "dnw-kobold",
+          "sourceEntrySha256": "655be37c2da8a22f692dbac404a5811b4227a465b44d7c6c85bc35af64f51df3",
+          "localeFieldsSha256": "8a1ac2a388a6bd2ea4517b1b90a93ddd9bb82862e39762fe8fcbf986a3f688b3"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        },
+        {
+          "id": "dnw-dragon-washer",
+          "sourceEntrySha256": "70f6f7b0f545b32f5a98233380b01eda5a369c67c4d2969c55e02a1782a18aa9",
+          "localeFieldsSha256": "2a85f72db9fb40d18dc57ace708e091d432e3a63aba15051e6b89ea74973f09a"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:63926ecd",
+          "pairedRowSha256": "c5b2d39aa3f5e1aceb1cff5545b3fecf73429416554b7f9537c2ec427e298e92",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-anonymous-dragon-speaker",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The unidentified dragon asks if the two are done."
+        },
+        {
+          "id": "yarn:line:f28fd15d",
+          "pairedRowSha256": "141352929f35d06094e4dde16216bc5e44be8f098cae16e7f1dae43a29fdf7ba",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-anonymous-dragon-speaker",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The dragon tells the player some spots remain."
+        },
+        {
+          "id": "yarn:line:64bfd62a",
+          "pairedRowSha256": "02905b6c51a6a81a47b9ca3fc601b11d8cdf7146ee2fbf8e31c46f58e7ab97f2",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can acknowledge the mistake."
+        },
+        {
+          "id": "yarn:line:4116f001",
+          "pairedRowSha256": "25e2d3af59471f1139b599e4c5bf9a6c2d0f7d6a470020b0184f34f003cecf94",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can say they did not know what the button did."
+        },
+        {
+          "id": "yarn:line:d726f776",
+          "pairedRowSha256": "38f8b3dd28ed278410734369af73a46b11ef535258917ecfc36b60097e96a8f7",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-anonymous-dragon-speaker",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The dragon reassures the player."
+        },
+        {
+          "id": "yarn:line:fb47f998",
+          "pairedRowSha256": "3f8d19f6a12482adb2ac6dd2d08bac48518c5abcb0dad0d84ddb764e9e0218c7",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-anonymous-dragon-speaker",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The dragon comments playfully on the button noise."
+        },
+        {
+          "id": "yarn:line:6d77feef",
+          "pairedRowSha256": "acb671d0439c4aab58e4b2883c733a20478b5351fbbbb33f46a09bd39142d509",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-anonymous-dragon-speaker",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The dragon addresses the player and says to keep working."
+        }
+      ]
+    },
+    {
+      "group": "DragonSatisfiedAndLeaves",
+      "orderedRowsSha256": "2bc313ff2d48bddbf35e6ba2b61a2b695aa7b03f51edaf3c11457f49cac2e50d",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-anonymous-dragon-speaker",
+          "sourceEntrySha256": "929136153456556d2889090960049f8981a99affd848ad4f38c17987221a3e0d",
+          "localeFieldsSha256": "c4e6eee5e1358e43351c48d0b9e0175f9da8a4d3086ca614cb2434e5e8fd71c7"
+        },
+        {
+          "id": "dnw-kobold",
+          "sourceEntrySha256": "655be37c2da8a22f692dbac404a5811b4227a465b44d7c6c85bc35af64f51df3",
+          "localeFieldsSha256": "8a1ac2a388a6bd2ea4517b1b90a93ddd9bb82862e39762fe8fcbf986a3f688b3"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        },
+        {
+          "id": "dnw-dragon-washer",
+          "sourceEntrySha256": "70f6f7b0f545b32f5a98233380b01eda5a369c67c4d2969c55e02a1782a18aa9",
+          "localeFieldsSha256": "2a85f72db9fb40d18dc57ace708e091d432e3a63aba15051e6b89ea74973f09a"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:f1946aab",
+          "pairedRowSha256": "67729dd122343d25835c32b41eb4771249284f3443819e732d682d0da6298645",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-anonymous-dragon-speaker",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The unidentified dragon thanks the player for cleaning them."
+        },
+        {
+          "id": "yarn:line:67a46ddc",
+          "pairedRowSha256": "88c134a0c53f1b20a0da5d3e155ef7483deec5a9736430333636f2dfaf0dd247",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-anonymous-dragon-speaker",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The dragon asks the player about socializing later."
+        },
+        {
+          "id": "yarn:line:c4310942",
+          "pairedRowSha256": "a5c81d1e53e329fdf1e16274326771d1f606484f0aedec3e95c4d78264f728ca",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can answer affirmatively."
+        },
+        {
+          "id": "yarn:line:52010e35",
+          "pairedRowSha256": "15984aac3d835e4e3c869e6ad485c985b80d537fd6dd1679bda543fa6bb348a4",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player can answer affirmatively with emphasis."
+        },
+        {
+          "id": "yarn:line:e85007ac",
+          "pairedRowSha256": "d8aa841ee177f8e51fa0cdb66a730da8278b342624b17d5b39d87b27af3b7432",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-anonymous-dragon-speaker",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The dragon says goodbye to the player."
+        }
+      ]
     }
   ]
 }
