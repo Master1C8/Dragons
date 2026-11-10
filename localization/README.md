@@ -311,6 +311,17 @@ keys and resource fingerprints come from the pinned source data.
 
 ## Complete macOS app
 
+The package builders preserve two visual repairs in their normal paths.
+Arabic and Persian selected settings values use a 29-unit caption area
+instead of 19 units, allowing their fallback font to remain readable.
+Arabic, Persian and Hebrew dialogue choices use right alignment with
+30-unit padding at both sides. The affected stock prefab identities are
+pinned by the adapters on both platforms. Regressions must check the
+Persian caption `ضربه/نگه داشتن`, including its slash and marks, and
+two unequal-length RTL choices sharing a padded right edge. The stock
+settings viewport intentionally masks the next row at its lower boundary.
+The stock master-volume label is empty.
+
 `build_macos_package.py` requires the same pinned shared inventory and
 paired Yarn scope as the Windows package builder.
 
