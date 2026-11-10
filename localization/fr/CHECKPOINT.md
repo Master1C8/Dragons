@@ -27,8 +27,8 @@ A preliminary direct comparison of all 28 current English/French entries found a
 | probe | Bounded French synthetic paths observed on macOS and CrossOver, including body/choice/settings frames and progression; native Windows and corpus-specific fit pending. See renderer-probe.md. |
 | source | Pinned worklist generated; verify source/preserve-exact gate and current shared receipts before translation. |
 | glossary | Two author self-review layers reconciled on current hashes under the owner exception; the earlier crest finding was withdrawn after scene review. Independent review was not claimed. See glossary-review.md. |
-| special-scene decisions | 9/27 groups have author-reviewed draft wording; the anonymous group retains a source buzzing-command boundary, and 18 groups remain unreviewed. Ordinary translation remains gated. See special-scenes.md. |
-| translate-edit | 68/1,947 authored as special-scene preparation, including one intentional exact ellipsis; no ordinary batch started. Paired diagnostic assets verified. |
+| special-scene decisions | 12/27 groups have author-reviewed draft wording; the anonymous group retains a source buzzing-command boundary, and 15 groups remain unreviewed. Ordinary translation remains gated. See special-scenes.md. |
+| translate-edit | 78/1,947 authored as special-scene preparation, including one intentional exact ellipsis; no ordinary batch started. Paired diagnostic assets verified. |
 | editorial | Not run; full semantic audit, independent delta and regression catalog pending. |
 | fonts | Slot and bounded live text samples resolved; full corpus coverage and typography remain unverified. |
 | textures | Textures with text excluded and preserved. |
@@ -37,7 +37,7 @@ A preliminary direct comparison of all 28 current English/French entries found a
 | screenshot upload / review | Not requested / not run. |
 | release / archival | Not complete; no publication, push or deployment authorized. |
 
-Next: complete and review the remaining 18 special-scene groups, resolve or explicitly classify the anonymous-scene technical boundary before ordinary text; use the exact paired English worklist and preserve source-bound handling. If the shared glossary or probe needs changes outside `localization/fr/` and this run directory, report the exact boundary instead of modifying shared files. A verified locale-only commit requires the specified `.git/codex-canonical-commit.lock`, empty pre-existing index, complete staged review and committed-tree verification; do not reset, amend or interfere with other lanes.
+Next: complete and review the remaining 15 special-scene groups, resolve or explicitly classify the anonymous-scene technical boundary before ordinary text; use the exact paired English worklist and preserve source-bound handling. If the shared glossary or probe needs changes outside `localization/fr/` and this run directory, report the exact boundary instead of modifying shared files. A verified locale-only commit requires the specified `.git/codex-canonical-commit.lock`, empty pre-existing index, complete staged review and committed-tree verification; do not reset, amend or interfere with other lanes.
 
 The Alexander register/professor batch has author-reviewed wording and paired 43-entry macOS/Windows partial asset readbacks; see special-scenes.md for hashes and limits. The buzzing finish-command boundary remains open pending a same-fixture, unmodified-English runtime comparison. CrossOver is not native Windows evidence.
 
@@ -46,3 +46,5 @@ The college self-introduction batch adds nine scene IDs and two speaker-name IDs
 The family-crest draft adds ten scene IDs and preserves the seven source size tags; paired partial readbacks cover 61 Yarn entries. Its long, progressively shrinking line still requires actual French scene and visual review. Current translation SHA-256: `2420c6a0260f3fc3e8144b7ae5319f21b3108b94e83f30c321ba61da8cc06df6`.
 
 Three typography groups add four scene IDs; both partial readbacks check 65 Yarn values with untouched tags and metadata. Scene-specific typography, fit and runtime remain open. Current translation SHA-256: `64c9f686b397a7d253eb64e3ac7408e83ee2b477cf96418bca635b303e47732d`.
+
+The relationship and editor-question groups add ten scene IDs and paired 75-Yarn-entry readbacks. Source route reachability and scene-specific outcomes and fit remain unverified. Current translation SHA-256: `3abdf969d15f8cccab3d6a4607d6613959fb4056e11489ba5dff73366acecfa8`.
