@@ -504,3 +504,24 @@ are exact. Both packaged fonts cover all 94 display code points.
 Verified receipts are under
 `localization/work/uk-ordinary-12-20261110.onkSpB/`.
 Live scene checks and independent editorial review remain pending.
+
+## Thirteenth ordinary batch
+
+Alexander's fifth visit, romance continuations and remaining
+activity nodes cover 126 source IDs. The draft adds 109 values
+and reuses 17 special-scene values. All 1,223 earlier values are
+exact. The 1,332-value draft SHA-256 is
+`21b1693fc45c0ff3542f147ad3c8fe728ab1d338cd301bf2358bd819415fb612`.
+
+The wording keeps the shared relationship labels consistent with
+Ryan's fifth visit, preserves the different reactions to the
+player's date, and names the dragon entrance to the library.
+Consent, requests to wait and refusals remain distinct. Two
+English spelling variants share explicit Ukrainian values.
+
+Each diagnostic package changed exactly 107 Yarn values. The two
+authored pauses, other table text, metadata and compiled programs
+are exact. Both packaged fonts cover all 94 display code points.
+Verified receipts are under
+`localization/work/uk-ordinary-13-20261110.EawqcK/`.
+Live scene checks and independent editorial review remain pending.
