@@ -8,6 +8,10 @@ The glossary gate is **not yet complete**. The row-level receipt now binds two a
 
 Updated 2026-11-10. Scope: standard Italian (`it`), English source, macOS `9/12/2026_a93aa21a`, Windows `9/9/2026_ee944596`. No texture-with-text modification, publication, deployment, server action or GitHub push. Independent reviewers and other agents are excluded by the current assignment. The active CLI process was verified as `gpt-6.1-terra`, reasoning `high` (worker PID 12753, launch record in the run directory).
 
+## Resume 12 — Alexander later conversations
+
+The paired draft contains **1,404/1,947 IDs**, with 543 dialogue IDs blank. `translation.json` SHA-256 `a925b99503d88cd4e06fcce28be7b94d381d9fa025c6daccd1faeb4217e08803`. This adds 87 lines in `Alexander_3_required`, `Alexander_4_intro`, `Alexander_4_required` and `Alexander_4_Outro`, while retaining the previously reviewed Yip branches and correcting two earlier kobold terms to the Italian glossary form. The paired reader accepted 1,280 dialogue bindings on each build. This is authored text with structural/source-bound validation; independent game-text audit, packages, runtime and visual acceptance remain pending.
+
 ## Resume 12 — Alexander second and third visits
 
 The paired draft contains **1,317/1,947 IDs**, leaving 630 dialogue IDs blank. `translation.json` SHA-256 `d7f34a56171cf1096893acffc1c4ab2c9d9d75f9a8eceeb37e481ee7f93ebb9a`. This batch adds 80 lines in `Alexander_2_intro`, `Alexander_2_Outro` and `Alexander_3_intro`. The paired Yarn reader accepted 1,193 dialogue bindings on each build, including the source markup. Player gender remains unspecified; Igwyx is Alexander's colleague, and the private washers remain distinct. Author review and reader checks do not replace the final independent game-text audit or artifact, runtime and visual checks.
@@ -63,7 +67,7 @@ The resume-10 named-entity note contained unsupported descriptions of Igwyx and 
 - `probe`: **passed for the bounded Italian renderer cases**. Isolated macOS and Windows CrossOver runs exercised dialogue, choices, progression and settings. The [independent frame review](../evidence/es-it-renderer-frame-review-20261110.md) resolved all remaining dialogue and choice frames and verified all three settings labels in the new 1280×960 macOS render. Original profiles were preserved. Native Windows and the final translated corpus retain separate checks.
 - `source`: **passed** for the pinned package scope and exact-preservation entry gate; see [current source decision](source-readiness-resume.md). The worklist has 1,947 IDs and 27 known special-scene groups.
 - `glossary`: **passed for authoring** on two complete author self-review layers at the bound hashes; see the current resume-11 decision. Independent final game-text audit remains separate.
-- `translate-edit`: **special-scene entry decisions complete**; 27/27 recorded, 1,317/1,947 IDs applied in the paired draft. Continue ordinary authoring and package-specific validation.
+- `translate-edit`: **special-scene entry decisions complete**; 27/27 recorded, 1,404/1,947 IDs applied in the paired draft. Continue ordinary authoring and package-specific validation.
 - `editorial`: not started; complete semantic pass and distinct independent diff/delta review pending.
 - `resources`: not started; final corpus glyph and layout coverage pending. Textures with text are excluded and preserved.
 - `package`: not run; neither local deliverable built.
