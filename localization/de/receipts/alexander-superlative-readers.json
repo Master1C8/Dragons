@@ -1,0 +1,80 @@
+{
+  "locale": "de",
+  "translationSha256": "b5aae5f915ea1e1be07b081ae1faaf599a7d91d22bfaf671cb2f5ced61f64009",
+  "platforms": {
+    "macos": {
+      "readerReceipt": {
+        "sharedInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+        "yarnScopeSha256": "753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30",
+        "localeInputSha256": {
+          "dialogue.json": "d77e80145748163218f31f40aa2f76b6a2af1db45cb820e89247614740d04602",
+          "speakers.json": "71166ff8d53294140f2c3e2359a71931ff8a3627749d8d2be73a620b23439f2a",
+          "ui/level0.json": "b67b1c57ec6f61147cea53eb250f548bac483de68ceabe27f37b1e817a9d84d0",
+          "ui/level1.json": "be92e087ef272d80b05e066f54a6cf04b90054f3efd753c0acb763382ba48346",
+          "ui/level2.json": "31fdbcb8bfba3ca2816d652fe987d16eb2d5a672cc402ccd46160bb2354536b3",
+          "ui/level3.json": "1591becdaefc3d85e8f7a465a25cd453bdd7453b0735fdf68eafa3b10d1ae0f9",
+          "ui/level4.json": "53485c284b1ccb5b049dbaa07726237f2cb6f06e30c0477897626345b4c19ede",
+          "ui/level5.json": "45f65beae2ad0056483659580ce56d221595fd11f6b32274fa0f3860643e648b",
+          "ui/level6.json": "8c12ef76acbdbe8dff017a9dcdf2dfbb93dad7a3b75c32c4df738c444f371f53",
+          "settings.json": "bb5e9d8afec8a45fd870c263c3539f3e16c96ddd3e7f607ba44bab3d0ec001e6",
+          "slot-new.json": "a79c4ba04f85da2ea278db4e66093e7b22d9cdcba6f8b25e9bd35a526d048ec9",
+          "missing-line.json": "d67940566dc92f9b496ce64766c194fd2600585005cc839e967d10db34ec0dbb"
+        },
+        "sourceManagedManifestSha256": "b3186bc39207255e937f5856be09906dc1a428d83a964d5f368f30861e32603c"
+      },
+      "changedMaterializedInputs": [
+        "speakers.json"
+      ],
+      "speakerBeforeSha256": "ff0e7d84440ebd80c29b2d0b037709be3591cb4b035c2af632c38ad7a797a121",
+      "speakerAfterSha256": "71166ff8d53294140f2c3e2359a71931ff8a3627749d8d2be73a620b23439f2a",
+      "programExportSha256": "3e0acd1a2f25811e380de5743e0913535470d931301cc9bc40f5a3c897d73e18",
+      "nextLineId": "yarn:line:f167e3d7",
+      "nextSource": "Alexander!"
+    },
+    "windows": {
+      "readerReceipt": {
+        "sharedInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+        "yarnScopeSha256": "753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30",
+        "localeInputSha256": {
+          "dialogue.json": "c71b46492640831976defef987def1e04112f76757cb26bc70dafbf29989fc59",
+          "speakers.json": "c8be8d01e0c83fef774b6881d8f65b84512f47f0aaa7e60950f981faf4789f94",
+          "ui/level0.json": "67bb6c9019ee9976930333d6e85480633a9fcb78c0d4cad2b0e08e0ca12d9665",
+          "ui/level1.json": "7ddec5d15507a563f7d4fac8ab9d597ae8a5913330e9dc44bd10f70fe7604863",
+          "ui/level2.json": "d45c4dd1606561c4421b1f3e5e45972cf83e2302dec67b3f34b636d76d124090",
+          "ui/level3.json": "8673ee784c5a01d6fa4ffbb48ed12d8766eff560ee689491d460bea3a01682a1",
+          "ui/level4.json": "7629193ca1d6563b1db7c9d6445932592e5a1b3fbb8dccec52c4fc6b247037e4",
+          "ui/level5.json": "05c9715dd2a342b5bcc0f24dfaf23212fea7136300868c9c311c21b43b9a5315",
+          "ui/level6.json": "54ee9517c5dbc44bff4d453073cf71aa63a481cebd3b76ee1834c86fe2153137",
+          "settings.json": "922b718c90e810e987902805cafd626f20e3b4ad19f783eb45c10d1b6b92f507",
+          "slot-new.json": "c131abbea7fe661d95427e860e19fccd61a6829a440b3c7e3853bda374f50c2f",
+          "missing-line.json": "f924fcfa6c0237aa33d624b19aa5f7e9918de5b3ae98011d3964c616429bf255"
+        },
+        "sourceManagedManifestSha256": "9a14fcb1198ca8308ad90a38a1988367074c1f2ec8b6f0a8d97ef3d3c074fc56"
+      },
+      "changedMaterializedInputs": [
+        "speakers.json"
+      ],
+      "speakerBeforeSha256": "2de57dc98a913241f37ca4c6a5e170dc65f4d0b38b830d6d13816d5622dbd737",
+      "speakerAfterSha256": "c8be8d01e0c83fef774b6881d8f65b84512f47f0aaa7e60950f981faf4789f94",
+      "programExportSha256": "13d34e111e48fcd80105f419f1072717ddc11659300474410f52e7839b88522b",
+      "nextLineId": "yarn:line:f167e3d7",
+      "nextSource": "Alexander!"
+    }
+  },
+  "completeYarnVerifier": {
+    "locale": "de",
+    "translationSha256": "b5aae5f915ea1e1be07b081ae1faaf599a7d91d22bfaf671cb2f5ced61f64009",
+    "completeInputRequired": true,
+    "checkedDialogueBindings": {
+      "macos": 1823,
+      "windows": 1823
+    }
+  },
+  "reproduction": {
+    "command": "/Users/antonkrutov/Desktop/Forest/.venv-assets314/bin/python -B localization/work/cli-terra-high-20261110.J0KLrx/de/alexander-fix-NmdLMs/validate.py",
+    "scriptSha256": "7d38b3fc0f63c730925a7917e79249654a87b3a627f60eab966fbc8cc0280300",
+    "sourceBeforeCommit": "23e37bb1a0cc5383835e5e6207a5e7169b822850",
+    "beforeSha256": "17cd7c687560565daf6640d0c31fc6f9791453f069686d31fef81da3074af9b2",
+    "note": "Fresh target directories are required on reproduction; no packages or games were built."
+  }
+}

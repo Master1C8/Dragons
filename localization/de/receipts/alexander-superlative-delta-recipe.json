@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "locale": "de",
+  "beforeSha256": "17cd7c687560565daf6640d0c31fc6f9791453f069686d31fef81da3074af9b2",
+  "afterSha256": "b5aae5f915ea1e1be07b081ae1faaf599a7d91d22bfaf671cb2f5ced61f64009",
+  "edits": {
+    "yarn:line:4b36ea4e": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_2",
+          "firstInstruction": 2,
+          "lastInstruction": 26
+        }
+      ],
+      "glossaryReferentSourceIds": [],
+      "runtimeSourceIds": [],
+      "reason": "Restore source superlative and distinction in Alexander introduction; retain complete scene and next line for rereview."
+    }
+  }
+}

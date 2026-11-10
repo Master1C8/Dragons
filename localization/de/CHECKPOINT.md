@@ -9,12 +9,22 @@
 | source | **Passed for the pinned v42 inputs.** The accepted shared source-readiness evidence and reconciliation at `15c330ef17ca031b547dae23af30f7315faa6d3e` supersede the provisional `bfabe4d` boundary. See `localization/evidence/source-readiness-v42-20261110.md`. |
 | glossary | **Self-review layers complete under the owner’s current instruction.** The two earlier 27-entry author layers match every per-entry digest; two separate affected-closure author reads cover the anonymous role and related rules. See `glossary-review.md` for evidence, source-context adjudication and limitations. No independent review is claimed. The final game-text independent audit remains required. |
 | translate-edit | **Draft complete: 1,947/1,947 IDs authored and self-edited.** All 246 direct indexed authoring rows are present and the adaptation entry review is complete; semantic and runtime closure remain pending. See `special-scenes.md` and `special-scene-reconciliation.json`. No source-passthrough counts as translation. |
-| editorial | Author semantic self-review read all 1,947/1,947 source-bound rows; source ambiguity, cross-group closure and independent diff/delta audit remain pending. |
+| editorial | Author semantic self-review read all 1,947/1,947 rows. Independent checks cover portions of the prior correction closure; 211 IDs remain in the current conservative union, including the corrected Alexander scene. Selector adequacy and independent acceptance remain pending. The owner disposition preserves the stock `markers` ambiguity. |
 | resources | Final corpus-bound glyph coverage and fit pending. Textures with text are excluded and must remain untouched. |
-| package | Provisional macOS app and Windows ZIP built with adapter and protected-component checks; independent fresh-rebuild comparison pending. See the package receipt. |
+| package | Prior macOS and Windows candidates passed the independent fresh-rebuild and install/restore checks at `8f46868`, but predate the Alexander correction and must be rebuilt and verified by the coordinator. No package build in this run. |
 | runtime / visual | Representative synthetic German checks passed on macOS and Windows CrossOver; final corpus and package runtime, complete visual review and native Windows remain unrun. Original owner game processes must not be operated or stopped. |
 | screenshot-upload / screenshot-review | Not run; upload is not authorized. |
 | delivery | Incomplete. No installation, release or publication. |
+
+## 2026-11-10 independent findings and Alexander correction
+
+Read the independent notes at `8f4686862211937e0c0013add16340e4fa6d5c97` and `d99fe30a0623946dccb5258f60642ae5eb42c7b9`. The owner disposition accepts the stock ambiguity in `yarn:line:610dd8cb`; retain `Die Marker haben Spaß gemacht.` without inventing a referent. This supersedes the earlier open-marker statements below.
+
+Confirmed the Alexander finding against instruction 14 in both English source programs: “The most prestigious college hosting prestigious professors like me:”. Changed only `yarn:line:4b36ea4e` to `Das angesehenste College, an dem angesehene Professoren wie ich lehren:`. The final colon remains, and the next source line remains `yarn:line:f167e3d7`, `Alexander!`. Full translation SHA-256 `b5aae5f915ea1e1be07b081ae1faaf599a7d91d22bfaf671cb2f5ced61f64009`. The `alexander-college-self-introduction` special-scene record contains no literal to synchronize.
+
+The complete Yarn verifier and complete source-bound materialized-input readers passed on both builds; only `speakers.json` differs on each platform from the prior inputs. See `receipts/alexander-superlative-readers.json` and its reproduction binding. Exact one-ID effective diff and dependency export: `receipts/alexander-superlative-delta.json`, SHA-256 `e6787348f1deced1dafa21d24842aa0a335c5c9cc7cb4386d2d9d6093b34fb36`; recipe `receipts/alexander-superlative-delta-recipe.json`. `receipts/alexander-superlative-independent-scope.json` records the conservative 211-ID union: the prior 200 unread IDs plus all 11 IDs in the corrected scene (including the two newly selected IDs). The selector and any additional dependencies still need independent adjudication; this is not independent acceptance.
+
+The earlier candidate packages were independently compared with fresh references and tested for installation and restoration, as recorded at `8f46868`, but bind the previous translation hash. Rebuild and verify them for the current hash before package acceptance. This run did not build packages or launch games; corpus runtime and visual checks remain unrun.
 
 ## 2026-11-10 complete-input verification and correction references
 
