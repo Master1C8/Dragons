@@ -6502,6 +6502,462 @@
     "line:d156a87f": {
       "source": "Think that's every spot.",
       "text": "Кажется, ни пятнышка не осталось."
+    },
+    "line:1538bc7e": {
+      "source": "Hey good lookin'",
+      "text": "Привет, загляденье."
+    },
+    "line:8308bb09": {
+      "source": "How do I look?",
+      "text": "Как я выгляжу?"
+    },
+    "line:209ddf97": {
+      "source": "Very cool",
+      "text": "Очень круто."
+    },
+    "line:0bd1699e": {
+      "source": "Ehh..",
+      "text": "Э-э..."
+    },
+    "line:b6add8e0": {
+      "source": "Yea! I do!",
+      "text": "Ага! Ещё бы!"
+    },
+    "line:0cfcd179": {
+      "source": "Not for a date though.",
+      "text": "Только не для свидания."
+    },
+    "line:9accd60e": {
+      "source": "Lets wash it off for our date tonight then.",
+      "text": "Давай тогда всё это смоем перед нашим свиданием сегодня вечером."
+    },
+    "line:9de16ee9": {
+      "source": "Ha!",
+      "text": "Ха!"
+    },
+    "line:fa0a9fbb": {
+      "source": "Just having fun.",
+      "text": "Я просто прикалываюсь."
+    },
+    "line:6c3a98cc": {
+      "source": "Ok lets wash it off for our date tonight then.",
+      "text": "Ладно, давай всё это смоем перед нашим свиданием сегодня вечером."
+    },
+    "line:d66b9155": {
+      "source": "I'm excited.",
+      "text": "Жду не дождусь."
+    },
+    "line:e3cef2bc": {
+      "source": "Gotta make sure you're spotless!",
+      "text": "Надо отмыть тебя до блеска!"
+    },
+    "line:405b9622": {
+      "source": "I am too.",
+      "text": "Я тоже."
+    },
+    "line:75fef5cb": {
+      "source": "Heh... Damn right.",
+      "text": "Хех... Ещё бы."
+    },
+    "line:cfaffc52": {
+      "source": "I'm pumped.",
+      "text": "Я весь на взводе."
+    },
+    "line:599ffb25": {
+      "source": "Already got seats at that bar I mentioned earlier.",
+      "text": "Я уже занял места в том баре, о котором говорил."
+    },
+    "line:c88244b5": {
+      "source": "The vibe at night is fuckin' great.",
+      "text": "По ночам там охрененная атмосфера."
+    },
+    "line:5eb243c2": {
+      "source": "You'll like it.",
+      "text": "Тебе понравится."
+    },
+    "line:24ce37ec": {
+      "source": "Heeeey.",
+      "text": "Приве-е-ет."
+    },
+    "line:b2fe309b": {
+      "source": "Whats got you in a good mood?",
+      "text": "Чего это ты в таком хорошем настроении?"
+    },
+    "line:3d0a5aeb": {
+      "source": "Hey Conrad!",
+      "text": "Привет, Конрад!"
+    },
+    "line:08af3902": {
+      "source": "My date with Ryan was...",
+      "text": "Наше с Райаном свидание было..."
+    },
+    "line:9e9f3e75": {
+      "source": "Really damn good!",
+      "text": "Чертовски классным!"
+    },
+    "line:ab3a5d9c": {
+      "source": "Hey there.",
+      "text": "Привет."
+    },
+    "line:116b5405": {
+      "source": "My date with Ryan was...",
+      "text": "Наше с Райаном свидание было..."
+    },
+    "line:875b5372": {
+      "source": "Really damn good!",
+      "text": "Чертовски классным!"
+    },
+    "line:1646ece2": {
+      "source": "Sorry for coming in late. My sleeps borked.",
+      "text": "Извини, что так поздно. У меня режим сна к чертям полетел."
+    },
+    "line:8076eb95": {
+      "source": "I'm just here for a wash though.",
+      "text": "Но я тут просто помыться."
+    },
+    "line:ebd2af6b": {
+      "source": "You'll have to give me all the Ryan details soon.",
+      "text": "Потом расскажешь мне всё про Райана."
+    },
+    "line:c7b3a185": {
+      "source": "Alright! I'll go get the gate.",
+      "text": "Ладно! Сейчас открою ворота."
+    },
+    "line:7de2a81c": {
+      "source": "Don't worry. I will.",
+      "text": "Не переживай. Расскажу."
+    },
+    "line:5183a6f2": {
+      "source": "Thanks.",
+      "text": "Спасибо."
+    },
+    "line:975a629f": {
+      "source": "Hey Conrad.",
+      "text": "Привет, Конрад."
+    },
+    "line:bb3b6c71": {
+      "source": "What brings you in so late?",
+      "text": "Что привело тебя сюда так поздно?"
+    },
+    "line:016a65e8": {
+      "source": "Yuh, that's me.",
+      "text": "Ага, это я."
+    },
+    "line:2d0b6b06": {
+      "source": "Goin' downtown tonight. Needed to be spotless. Say...",
+      "text": "Сегодня вечером еду в центр. Надо отмыться до блеска. Слушай..."
+    },
+    "line:8e9e0f98": {
+      "source": "Heard about you and the big blue guy. Ryan was it?",
+      "text": "Слышал про тебя и того большого синего парня. Райан, да?"
+    },
+    "line:18ae08ef": {
+      "source": "Bet you had fun.",
+      "text": "Спорим, вы повеселились."
+    },
+    "line:a2ff0176": {
+      "source": "Hope it went well.",
+      "text": "Надеюсь, всё прошло хорошо."
+    },
+    "line:34cf0601": {
+      "source": "It did! Thanks for asking.",
+      "text": "Ага! Спасибо, что спросил."
+    },
+    "line:a5d2b991": {
+      "source": "It went well.",
+      "text": "Всё прошло хорошо."
+    },
+    "line:33e2bee6": {
+      "source": "That's good to hear.",
+      "text": "Приятно слышать."
+    },
+    "line:d66b7986": {
+      "source": "Now!",
+      "text": "Ну а теперь!"
+    },
+    "line:405b7ef1": {
+      "source": "Conrad needs a wash!",
+      "text": "Конраду пора помыться!"
+    },
+    "line:b983f922": {
+      "source": "So. Tonight.",
+      "text": "Так. Насчёт вечера."
+    },
+    "line:2fb3fe55": {
+      "source": "Yeah?",
+      "text": "Да?"
+    },
+    "line:a0479425": {
+      "source": "I'm excited.",
+      "text": "Жду не дождусь."
+    },
+    "line:95e2f7cc": {
+      "source": "Yeah.",
+      "text": "Ага."
+    },
+    "line:03d2f0bb": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:36779352": {
+      "source": "You should be.",
+      "text": "И правильно."
+    },
+    "line:8c269acb": {
+      "source": "You're going to love it.",
+      "text": "Тебе очень понравится."
+    },
+    "line:1a169dbc": {
+      "source": "The lights in the area are great too.",
+      "text": "И освещение там классное."
+    },
+    "line:8b0b222c": {
+      "source": "Really sets the mood.",
+      "text": "Прямо настроение создаёт."
+    },
+    "line:1d3b255b": {
+      "source": "Save your mood setting for tonight!",
+      "text": "Прибереги эти разговоры до вечера!"
+    },
+    "line:6e82e54c": {
+      "source": "Oh yeah?",
+      "text": "Вот как?"
+    },
+    "line:f8b2e23b": {
+      "source": "Hah. Fine.",
+      "text": "Ха. Ладно."
+    },
+    "line:d4d3ecd5": {
+      "source": "Oh yeah.",
+      "text": "Ага."
+    },
+    "line:42e3eba2": {
+      "source": "Once I'm cleaned up I'm gonna head out and get our spot ready.",
+      "text": "Как отмоюсь, поеду и подготовлю нам место."
+    },
+    "line:92829935": {
+      "source": "Ryan's such a nice dragon.",
+      "text": "Райан такой славный дракон."
+    },
+    "line:04b29e42": {
+      "source": "He really is.",
+      "text": "И правда."
+    },
+    "line:28d390ac": {
+      "source": "How so?",
+      "text": "В каком смысле?"
+    },
+    "line:bee397db": {
+      "source": "Yeah, he's so kind to me.",
+      "text": "Ага, он очень добр ко мне."
+    },
+    "line:b9ce2f3c": {
+      "source": "He's... Considerate. Real understanding too.",
+      "text": "Он... внимательный. И понимает меня."
+    },
+    "line:2ffe284b": {
+      "source": "When I met him at first I was falling back on my old script.",
+      "text": "При первой встрече я снова начал вести себя как раньше."
+    },
+    "line:4815d919": {
+      "source": "... Being a bit of a jerk honestly.",
+      "text": "...Честно, вёл себя как мудак."
+    },
+    "line:de25de6e": {
+      "source": "He just... Knew what to say to snap me out of all that.",
+      "text": "А он... Нашёл слова, чтобы меня из этого вытащить."
+    },
+    "line:6474d7f7": {
+      "source": "That's really nice!",
+      "text": "Это очень здорово!"
+    },
+    "line:51d1b41e": {
+      "source": "Ryan is a sweetheart",
+      "text": "Райан — сама доброта."
+    },
+    "line:f244d080": {
+      "source": "Yeah... He's really great.",
+      "text": "Ага... Он правда классный."
+    },
+    "line:c7e1b369": {
+      "source": "He really is.",
+      "text": "Это точно."
+    },
+    "line:7db0baf0": {
+      "source": "Thanks for introducing me to him.",
+      "text": "Спасибо, что помогли нам познакомиться."
+    },
+    "line:85ec0862": {
+      "source": "Ey, sorry for coming in late.",
+      "text": "Слушай, извини, что так поздно."
+    },
+    "line:13dc0f15": {
+      "source": "It's fine. I close in about an hour.",
+      "text": "Ничего. Я закрываюсь где-то через час."
+    },
+    "line:3fbd01fb": {
+      "source": "You can come in whenever!",
+      "text": "Можешь заходить когда угодно!"
+    },
+    "line:a98d068c": {
+      "source": "Ah. Okay nevermind I'm not sorry then.",
+      "text": "А. Ну тогда я не извиняюсь."
+    },
+    "line:aea0be6b": {
+      "source": "Aw, thanks.",
+      "text": "Ой, спасибо."
+    },
+    "line:3890b91c": {
+      "source": "Your date with Ryan.",
+      "text": "Насчёт твоего свидания с Райаном."
+    },
+    "line:dd197e7c": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:4b29790b": {
+      "source": "How was the sex.",
+      "text": "Как секс?"
+    },
+    "line:f1787092": {
+      "source": "Conrad!",
+      "text": "Конрад!"
+    },
+    "line:52ed140c": {
+      "source": "Oh. Uhm. <size=70%>Good.",
+      "text": "Ой. Эм. <size=70%>Хорошо."
+    },
+    "line:674877e5": {
+      "source": "Hey, nothin' wrong with asking!",
+      "text": "Эй, спросить-то можно!"
+    },
+    "line:c4dd137b": {
+      "source": "Sounds like it was good then.",
+      "text": "Значит, всё было хорошо."
+    },
+    "line:e8bc1d95": {
+      "source": "Hah, I imagine it would be.",
+      "text": "Ха, ещё бы."
+    },
+    "line:7e8c1ae2": {
+      "source": "You do know how to use your hands pretty well.",
+      "text": "Ты и правда умеешь работать руками."
+    },
+    "line:ef91a572": {
+      "source": "I'm Jealous!",
+      "text": "Завидую!"
+    },
+    "line:79a1a205": {
+      "source": "...But not in like a bad weird way.",
+      "text": "...Но без всяких странностей, по-доброму."
+    },
+    "line:eb7cf9e5": {
+      "source": "All clean...",
+      "text": "Теперь чистый..."
+    },
+    "line:512df07c": {
+      "source": "You know what that means.",
+      "text": "Знаешь, что это значит."
+    },
+    "line:c71df70b": {
+      "source": "Date night!",
+      "text": "Сегодня свидание!"
+    },
+    "line:48e99d7b": {
+      "source": "I'll have to close up shop first-",
+      "text": "Мне сначала надо закрыть мойку..."
+    },
+    "line:64889395": {
+      "source": "Damn right!",
+      "text": "Ещё бы!"
+    },
+    "line:f2b894e2": {
+      "source": "I'll have to reserve your spot while you close up.",
+      "text": "Займу тебе место, пока будешь закрывать мойку."
+    },
+    "line:ded99a0c": {
+      "source": "I know, I'll reserve your spot!",
+      "text": "Знаю, я займу тебе место!"
+    },
+    "line:4fc4259c": {
+      "source": "Alright! I'm ready to go.",
+      "text": "Ладно! Я готов идти."
+    },
+    "line:d9f422eb": {
+      "source": "I'll be waiting at the bar for you tonight!",
+      "text": "Сегодня вечером буду ждать тебя в баре!"
+    },
+    "line:eaafe671": {
+      "source": "I think you got every spot!",
+      "text": "Кажется, ни пятнышка не осталось!"
+    },
+    "line:7c9fe106": {
+      "source": "I'll make sure to get out of your scales.",
+      "text": "Больше не буду путаться у тебя под лапами."
+    },
+    "line:c6cee89f": {
+      "source": "Thanks for letting me in so late.",
+      "text": "Спасибо, что нашлось для меня время так поздно."
+    },
+    "line:50feefe8": {
+      "source": "No problem!",
+      "text": "Без проблем!"
+    },
+    "line:655b8c01": {
+      "source": "Always happy to have you, Conrad.",
+      "text": "Тебе здесь всегда рады, Конрад."
+    },
+    "line:f36b8b76": {
+      "source": "Mmmhm. I'll work on my sleep schedule...",
+      "text": "Ага. Попробую наладить режим сна..."
+    },
+    "line:df0a8598": {
+      "source": "Thanks. I'm always happy to be here.",
+      "text": "Спасибо. Мне всегда приятно здесь побывать."
+    },
+    "line:493a82ef": {
+      "source": "Anyways. Could you go get the gate?",
+      "text": "Ну вот. Откроешь ворота?"
+    },
+    "line:d8273d7f": {
+      "source": "The night 'aint gonna start itself!",
+      "text": "Ночь сама не начнётся!"
+    },
+    "line:203bce10": {
+      "source": "Fuuuck. You really know how to work a dragon!",
+      "text": "Бля-я-я. Ты точно знаешь, что делать с драконом!"
+    },
+    "line:4d4d9986": {
+      "source": "Hah... Gonna jerk me off now? That's fine.",
+      "text": "Ха... Теперь подрочишь мне? Я не против."
+    },
+    "line:684fb29a": {
+      "source": "Damn... Always feels good.",
+      "text": "Чёрт... Всегда приятно."
+    },
+    "line:cacbff51": {
+      "source": "<i>Ooooh. </i>The mount? Hell yeah, man.",
+      "text": "<i>О-о-о. </i>Станок? Охрененно, дружище."
+    },
+    "line:4dac3d2b": {
+      "source": "Something went wrong with flags!",
+      "text": "Что-то пошло не так с флагами!"
+    },
+    "line:db9c3a5c": {
+      "source": "Help the developers out please..",
+      "text": "Помогите разработчикам, пожалуйста..."
+    },
+    "line:61cd33c5": {
+      "source": "conrad hooked up with ryan",
+      "text": "конрад сошёлся с райаном"
+    },
+    "line:f7fd34b2": {
+      "source": "player hooked up with conrad",
+      "text": "у игрока роман с конрадом"
+    },
+    "line:66e08b22": {
+      "source": "player hooked up with ryan",
+      "text": "у игрока роман с райаном"
     }
   }
 }
