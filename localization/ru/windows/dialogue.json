@@ -6122,6 +6122,386 @@
     "line:6bd91ca7": {
       "source": "Hm, I think I'll pass on the mount.",
       "text": "Хм, пожалуй, обойдусь без станка."
+    },
+    "line:8f64adc0": {
+      "source": "Something went wrong with flags!",
+      "text": "Что-то пошло не так с флагами!"
+    },
+    "line:1954aab7": {
+      "source": "Help the developers out please..",
+      "text": "Помогите разработчикам, пожалуйста..."
+    },
+    "line:bac1ce29": {
+      "source": "conrad hooked up with ryan",
+      "text": "конрад сошёлся с райаном"
+    },
+    "line:2cf1c95e": {
+      "source": "player hooked up with conrad",
+      "text": "у игрока роман с конрадом"
+    },
+    "line:96a0c0c7": {
+      "source": "player hooked up with ryan",
+      "text": "у игрока роман с райаном"
+    },
+    "line:0090c7b0": {
+      "source": "Hey Conrad!",
+      "text": "Привет, Конрад!"
+    },
+    "line:8ebd442e": {
+      "source": "What's got you looking so happy?",
+      "text": "Чего это ты такой довольный?"
+    },
+    "line:a2b4acea": {
+      "source": "Hey conrad!",
+      "text": "Привет, Конрад!"
+    },
+    "line:918d7820": {
+      "source": "'Ey big kobold.",
+      "text": "Здорово, большой кобольд."
+    },
+    "line:07bd7f57": {
+      "source": "Did you do your uh...",
+      "text": "У тебя что, э-э..."
+    },
+    "line:fa293cde": {
+      "source": "Thanks! Whats with all the... Gloop?",
+      "text": "Спасибо! А что это на тебе за... жижа?"
+    },
+    "line:e3ed51d9": {
+      "source": "Hah. Conrad, you look good too.",
+      "text": "Ха. Конрад, ты тоже хорошо выглядишь."
+    },
+    "line:cf8c5f37": {
+      "source": "That's not a thing... But thank you!",
+      "text": "Так не говорят... Но спасибо!"
+    },
+    "line:40783547": {
+      "source": "Berries.",
+      "text": "Ягоды."
+    },
+    "line:d6483230": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:75dd56ae": {
+      "source": "Anyways,",
+      "text": "Ну, в общем..."
+    },
+    "line:59bc5840": {
+      "source": "Damn right I do!",
+      "text": "Ещё бы!"
+    },
+    "line:5e91e0a7": {
+      "source": "Haha... Yeah. I'm not really used to complimenting.",
+      "text": "Ха-ха... Ага. Я не особо привык делать комплименты."
+    },
+    "line:c8a1e7d0": {
+      "source": "I Just need a quick wash... Maybe the mount would be nice too.",
+      "text": "Мне бы быстренько помыться... Может, и станок бы пригодился."
+    },
+    "line:2d2820b0": {
+      "source": "Oh yeah?",
+      "text": "Вот как?"
+    },
+    "line:a2dc4ac0": {
+      "source": "Sure! I'll go get the gate.",
+      "text": "Конечно! Сейчас открою ворота."
+    },
+    "line:bb1827c7": {
+      "source": "Yeah- Though only if you want!",
+      "text": "Ага... Но только если тебе тоже хочется!"
+    },
+    "line:01492e5e": {
+      "source": "I'm trying not to be pushy.",
+      "text": "Я стараюсь не навязываться."
+    },
+    "line:97792929": {
+      "source": "Aw, I'll go get you the gate.",
+      "text": "Ох, сейчас открою тебе ворота."
+    },
+    "line:34ec4db7": {
+      "source": "Thanks.",
+      "text": "Спасибо."
+    },
+    "line:188d4359": {
+      "source": "Thanks.",
+      "text": "Спасибо."
+    },
+    "line:1fa0fbbe": {
+      "source": "Ryan! I met him.",
+      "text": "Райан! Я с ним познакомился."
+    },
+    "line:8990fcc9": {
+      "source": "Nice! Whats with all the... Gloop?",
+      "text": "Класс! А что это на тебе за... жижа?"
+    },
+    "line:e385b7f3": {
+      "source": "How did it go?",
+      "text": "Как всё прошло?"
+    },
+    "line:59d4be6a": {
+      "source": "Berries.",
+      "text": "Ягоды."
+    },
+    "line:cfe4b91d": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:75b5b084": {
+      "source": "Thank you for getting me and Ryan in contact.",
+      "text": "Спасибо, что помогли нам с Райаном познакомиться."
+    },
+    "line:4010d36d": {
+      "source": "Really well honestly.",
+      "text": "Вообще-то очень хорошо."
+    },
+    "line:d620d41a": {
+      "source": "I never thought someone like him would be my type...",
+      "text": "Никогда бы не подумал, что такой, как он, в моём вкусе..."
+    },
+    "line:6c71dd83": {
+      "source": "You'll have to tell me all about it.",
+      "text": "Расскажешь мне всё."
+    },
+    "line:fa41daf4": {
+      "source": "I will. I just need a quick wash, and wouldn't mind using the mount today.",
+      "text": "Расскажу. Мне бы быстро помыться, и я не против сегодня воспользоваться станком."
+    },
+    "line:6b5c6564": {
+      "source": "Gotta <i>practice</i> for Ryan if you catch what I mean.",
+      "text": "Надо <i>потренироваться</i> перед встречей с Райаном, если понимаешь, о чём я."
+    },
+    "line:fd6c6213": {
+      "source": "Conrad!",
+      "text": "Конрад!"
+    },
+    "line:8ed5a204": {
+      "source": "Okay- okay. I'll go get the gate.",
+      "text": "Ладно, ладно. Сейчас открою ворота."
+    },
+    "line:18e5a573": {
+      "source": "Whaaat? It's good to make sure you're warmed up!",
+      "text": "Что-о-о? Полезно заранее разогреться!"
+    },
+    "line:3484ab9d": {
+      "source": "Thanks!",
+      "text": "Спасибо!"
+    },
+    "line:0121c874": {
+      "source": "Hey hey. Glad you're open.",
+      "text": "Привет-привет. Хорошо, что вы открыты."
+    },
+    "line:9711cf03": {
+      "source": "Lookin' for a hose down. Wouldn't mind using the mount aswell.",
+      "text": "Мне бы ополоснуться. И станком тоже не прочь воспользоваться."
+    },
+    "line:2d40c69a": {
+      "source": "Oooh, alrighty.",
+      "text": "О-о-о, ну ладно."
+    },
+    "line:dbb68858": {
+      "source": "Sure! I'll go get the gate.",
+      "text": "Конечно! Сейчас открою ворота."
+    },
+    "line:f7d786b6": {
+      "source": "Whats with all the... Gloop?",
+      "text": "А что это на тебе за... жижа?"
+    },
+    "line:bb70c1ed": {
+      "source": "Heh. Yeah.",
+      "text": "Хех. Ага."
+    },
+    "line:2a6d7e7d": {
+      "source": "I'll go get the gate for you.",
+      "text": "Сейчас открою тебе ворота."
+    },
+    "line:bc5d790a": {
+      "source": "Thanks!",
+      "text": "Спасибо!"
+    },
+    "line:4d868f2f": {
+      "source": "Thanks!",
+      "text": "Спасибо!"
+    },
+    "line:61e781c1": {
+      "source": "Berries.",
+      "text": "Ягоды."
+    },
+    "line:c272e55f": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:5442e228": {
+      "source": "Oh. Okay I'll go get the gate.",
+      "text": "О. Ладно, сейчас открою ворота."
+    },
+    "line:28c51dbf": {
+      "source": "So... A date. I think I'd like to go on one soon!",
+      "text": "Так... Свидание. Думаю, я хочу поскорее на него сходить!"
+    },
+    "line:b9d8a22f": {
+      "source": "Oh yeah?",
+      "text": "Вот как?"
+    },
+    "line:2fe8a558": {
+      "source": "I'd love to!",
+      "text": "С удовольствием!"
+    },
+    "line:ca616238": {
+      "source": "I was thinking. We could go out some time next week?",
+      "text": "Я тут подумал. Может, сходим куда-нибудь на следующей неделе?"
+    },
+    "line:5c51654f": {
+      "source": "Sounds nice.",
+      "text": "Звучит приятно."
+    },
+    "line:e6006cd6": {
+      "source": "I wouldn't mind!",
+      "text": "Я не против!"
+    },
+    "line:70306ba1": {
+      "source": "Awesome!",
+      "text": "Класс!"
+    },
+    "line:d3a50f3f": {
+      "source": "Next time I come in for a wash we'll go.",
+      "text": "В следующий раз, когда приду мыться, сходим."
+    },
+    "line:45950848": {
+      "source": "I would like that!",
+      "text": "Мне нравится эта идея!"
+    },
+    "line:ffc401d1": {
+      "source": "Sounds like a plan.",
+      "text": "Договорились."
+    },
+    "line:69f406a6": {
+      "source": "I'm excited.",
+      "text": "Жду не дождусь."
+    },
+    "line:bb8583c1": {
+      "source": "With Ryan, I'm pretty sure we're gonna go on a date tonight.",
+      "text": "Мы с Райаном, кажется, сегодня вечером идём на свидание."
+    },
+    "line:1810e75f": {
+      "source": "Do you have any advice?",
+      "text": "Есть какие-нибудь советы?"
+    },
+    "line:8e20e028": {
+      "source": "Be yourself!",
+      "text": "Будь собой!"
+    },
+    "line:5072cc60": {
+      "source": "Make sure you're very clean. <size=70%><i>hehe.",
+      "text": "Как следует отмойся. <size=70%><i>Хе-хе."
+    },
+    "line:3471e9b1": {
+      "source": "I'm trying my best.",
+      "text": "Я стараюсь как могу."
+    },
+    "line:a241eec6": {
+      "source": "So far so good though, yeah?",
+      "text": "Но пока всё хорошо, да?"
+    },
+    "line:335c5156": {
+      "source": "I think so!",
+      "text": "Думаю, да!"
+    },
+    "line:a56c5621": {
+      "source": "If someone like Ryan is interested, you're doing great.",
+      "text": "Раз уж даже Райану с тобой интересно, у тебя всё получается."
+    },
+    "line:c642cb17": {
+      "source": "Thanks.",
+      "text": "Спасибо."
+    },
+    "line:ea23c5f9": {
+      "source": "Hah. If only there was a kobold that could clean me.",
+      "text": "Ха. Вот бы найти кобольда, который меня помоет."
+    },
+    "line:7c13c28e": {
+      "source": "If only.",
+      "text": "Вот бы."
+    },
+    "line:49b6a167": {
+      "source": "I'll make sure you're <i>spotless.",
+      "text": "У тебя <i>ни пятнышка не останется."
+    },
+    "line:df86a610": {
+      "source": "Jokes aside, your wash is definitely the best.",
+      "text": "А если без шуток, твоя мойка точно лучшая."
+    },
+    "line:f3e7a8fe": {
+      "source": "Thank you. Look good feel good!",
+      "text": "Спасибо. Хорошо выглядишь — хорошо себя чувствуешь!"
+    },
+    "line:e7353d24": {
+      "source": "Hey, I've got a question for you.",
+      "text": "Слушай, у меня к тебе вопрос."
+    },
+    "line:71053a53": {
+      "source": "Oh Yeah?",
+      "text": "Вот как?"
+    },
+    "line:e01885c3": {
+      "source": "Whats up?",
+      "text": "Что такое?"
+    },
+    "line:762882b4": {
+      "source": "Oh yeeeaaah?",
+      "text": "Да-а-а?"
+    },
+    "line:93a145d4": {
+      "source": "Whats up, big guy?",
+      "text": "Что такое, здоровяк?"
+    },
+    "line:059142a3": {
+      "source": "Oh Yeah?",
+      "text": "Вот как?"
+    },
+    "line:bfc04b3a": {
+      "source": "Whats up?",
+      "text": "Что такое?"
+    },
+    "line:8fe11008": {
+      "source": "Nnnf... That was way better than those berries.",
+      "text": "М-м-м... Это было куда лучше тех ягод."
+    },
+    "line:6866c2c9": {
+      "source": "Oh- Right now? 'aight I'm down.",
+      "text": "О... Прямо сейчас? Ладно, я за."
+    },
+    "line:88d7e1e2": {
+      "source": "Haah. This is the best fuckin' wash.",
+      "text": "Ха-а. Охрененная мойка."
+    },
+    "line:f99eb2ff": {
+      "source": "Ey! The mount! Fuck yeah.",
+      "text": "Эй! Станок! Охрененно."
+    },
+    "line:6c2a1901": {
+      "source": "You should be all clean!",
+      "text": "Теперь ты весь чистый!"
+    },
+    "line:fa1a1e76": {
+      "source": "Think thats it.",
+      "text": "Кажется, всё."
+    },
+    "line:404b17ef": {
+      "source": "You look good this clean!",
+      "text": "Тебе идёт, когда ты такой чистый!"
+    },
+    "line:d67b1098": {
+      "source": "<i>I like spraying you with water.",
+      "text": "<i>Мне нравится поливать тебя водой."
+    },
+    "line:4766af08": {
+      "source": "Alrighty! That should be it.",
+      "text": "Ну вот! Вроде всё."
+    },
+    "line:d156a87f": {
+      "source": "Think that's every spot.",
+      "text": "Кажется, ни пятнышка не осталось."
     }
   }
 }
