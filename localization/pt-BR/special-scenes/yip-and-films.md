@@ -15,7 +15,7 @@ Source: paired English worklist, `localization/evidence/special-scenes-yip-20261
 | `yarn:line:b12a3f31` | Yip! <size=70%>(idk) | Yip! <size=70%>(sei lá) |
 | `yarn:line:c3e1f198` | Yip! | Yip! |
 | `yarn:line:266836f8` | That's... the first time you've yipped for me. | Essa é... a primeira vez que você dá um Yip para mim. |
-| `yarn:line:52bf5ede` | I am THE kobold. Yip! | Eu sou KOBOLD. Yip! |
+| `yarn:line:52bf5ede` | I am THE kobold. Yip! | Eu sou O kobold. Yip! |
 | `yarn:line:3d516ddb` | Yip! | Yip! |
 | `yarn:line:9ec40945` | Haha. 'Yip' to you too. | Haha. 'Yip' para você também. |
 | `yarn:line:14d2c62f` | Yip! | Yip! |
@@ -43,3 +43,7 @@ Source: paired English worklist, `localization/evidence/special-scenes-yip-20261
 | `yarn:line:3e870ad0` | Yip! | Yip! |
 
 The source apostrophe-only variant for `yarn:line:266836f8` explicitly shares its target; IDs and choice destinations remain distinct. Preserve the exact `<size=70%>` tokens and existing `PlaySFX "yip"` commands without editing audio or texture assets. Verify all three movie branches, the repeated title, short and long interpretations, and actual presentation on both localized builds.
+
+## Author decisions after source-gate reconciliation
+
+The author accepts `movie-title-choices`, `kobold-yip-speech` and `kobold-yip-film-title` as pretranslation decisions. The three distinct title options retain the approved glossary titles, `2`, and their own reactions; `Yip-Man` is recognizable again in the series reference. The fixed vocalization `Yip` carries both the long explanation and the deliberately incongruous short `sei lá`. The player option `Eu sou O kobold` retains the source emphasis on the species noun without assigning a separate gendered player adjective. The exact `<size=70%>` tags and `PlaySFX "yip"` lookup remain source controls, not translated content. The source registrations `localization/evidence/special-scenes-yip-20261107.json` and `localization/evidence/special-scenes-ryan-language-20261107.json`, their linked context and the paired worklist bind the IDs and command occurrences; the existing per-ID Yarn adapter preserves them and the choice destinations. Positive scenarios cover the short and long interpretations, repeated sound, each film and its reaction, and the repeated series name. Negative scenarios remove or reorder the size tag, change the sound key, merge option identities, or break the title callback. Actual audio synchronization, localized branch execution and visual fit remain pending. These decisions are author self-reviews, not independent game-text acceptance.
