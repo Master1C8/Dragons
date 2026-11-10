@@ -107,3 +107,55 @@ fonts cover all 75 display code points used by the draft. Branch runs,
 rendered fit and independent editorial review are still pending for
 these additions. Diagnostic packages and receipts are under
 `localization/work/uk-special-scenes-3-20261110.bnGbL5/`.
+
+## Fourth batch
+
+The draft now has 407 authored IDs. The additional 151 are the
+missing responses and follow-ups of five registered cases. All 256
+earlier values are exact. The draft SHA-256 is
+`f8f6acab47668fbcd8bebaa953dedcfeb35b628646fd82c13a40deb6e0d6d8db`.
+The pinned source, scope and glossary bindings above are unchanged.
+
+| Case | New IDs | Context covered |
+| --- | ---: | --- |
+| `alexander-college-self-introduction` | 2 | The warning about another policy violation and the request to keep the incident from the college. |
+| `alexander-teacher-professor-correction` | 13 | The greeting, crest recognition, alchemy lesson, conflicting readings of how dirty Alexander is, and gate request. |
+| `alexander-romance-route` | 15 | The question about his attractiveness, the invitation to the college library, and the separate responses to acceptance and decline. |
+| `ryan-conrad-romance-routing` | 69 | The suggestion and invitation exchanges, the three route outcomes and their distinct farewells. |
+| `yarn-alexander-question-once-state` | 52 | The exit option and follow-ups to the seven questions, including the double sense of looking up to Alexander. |
+
+The case boundary uses the source IDs established in the previous
+route tests and the pinned worklist for the English wording. Only
+two additions have different English strings across platforms.
+Both differences are punctuation or spelling. Each uses one explicit
+shared Ukrainian value.
+
+Both normal builders passed the diagnostic control. Read-back
+matched the 401 authored Yarn table values, the separate managed
+display values and the untouched Yarn table data. Each packaged font
+contains all 76 display code points in the current draft. The macOS
+app passed strict signature verification and the Windows ZIP passed
+its integrity check.
+
+| Packaged program replay | Scenarios per platform | Unique Yarn IDs checked per platform |
+| --- | ---: | ---: |
+| Alexander's question state and nested responses | 6 | 60 |
+| Alexander's college introduction | 2 | 11 |
+| Romance routes, including the existing-flag decline control | 9 | 106 |
+| Restored transitions and final commands | 5 | 8 |
+
+The two packaged Yarn programs produced the same routes, choices,
+flag outcomes and commands in desktop .NET. The separate table
+read-back matched the authored text for every ID emitted or offered
+in these traces. For `line:4b36ea4e` it verified the exact English
+table value and the Ukrainian text in the managed display adapter.
+The restored Conrad beat-up destination issues its commands without
+a visible line. The replay sets starting variables and replaces
+Unity's presenters and command handlers with callbacks. Actual Unity
+progression, pixel fit and independent editorial review for the new
+wording remain pending.
+
+Control packages, replay sources and receipts are under
+`localization/work/uk-special-scene-closure-20261110.sbqndo/`.
+The SHA-256 of `route-table-readback.log` is
+`74405387032afc498febd81512083c10e6aee7f6866552276493177c2c2b5844`.

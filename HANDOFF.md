@@ -10,11 +10,12 @@ packages rebuilt successfully. The macOS game data and all 12 Windows
 replacement members matched the previously tested artifacts byte-for-byte.
 
 Ukrainian is at the special-scene decision gate. The
-[Ukrainian wording](localization/uk/special-scenes.md) covers 256 of
-1,947 package IDs and all 27 known cases. Both normal builders
-validated the draft in a control with English for the untouched IDs.
-The outstanding runtime and display feasibility checks still precede
-ordinary batches.
+[Ukrainian wording](localization/uk/special-scenes.md) covers 407 of
+1,947 package IDs, including the responses and follow-ups of the
+27 known cases. Both normal builders validated the draft in a control
+with English for the untouched IDs. The packaged Yarn programs passed
+22 desktop scenarios per platform. The Ukrainian Unity presenter and
+choice layout still need feasibility evidence before ordinary batches.
 
 The [multilingual renderer baseline](localization/evidence/multilingual-renderer-baseline-20261110.md)
 covers all 30 target locales on the original TMP font chain. Both
