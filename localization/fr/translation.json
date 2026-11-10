@@ -1156,6 +1156,49 @@
     "yarn:line:513bed5a": "Oh, alors c’est nouveau pour nous deux !",
     "yarn:line:f2ae89c4": "Franchement, je suis surpris que ce soit si agréable.",
     "yarn:line:649e8eb3": "Ça fait du bien de s’éloigner de tout ce qui se passe dehors.",
-    "yarn:line:decf872a": "..."
+    "yarn:line:decf872a": "...",
+    "yarn:line:a99c515c": {
+      "text": "Bonjour, <i>« franchise Drag’N Wash 223 »...</i> Avez-vous déjà parlé à votre premier client ?",
+      "sharedAcrossSourceVariants": true
+    },
+    "yarn:line:ce77a00e": "Je viens de le faire !",
+    "yarn:line:5847a779": "Oui.",
+    "yarn:line:e216aee0": "Ah, bien.",
+    "yarn:line:7426a997": "...",
+    "yarn:line:d7b3cd09": "Alors... Passez une journée productive.",
+    "yarn:line:4183ca7e": {
+      "text": "Bonjour, <i>« franchise Drag’N Wash 223 »...</i> Avez-vous compris comment interagir ?",
+      "sharedAcrossSourceVariants": true
+    },
+    "yarn:line:fbd2c3e7": "Non.",
+    "yarn:line:8f46bb17": "Je crois avoir compris !",
+    "yarn:line:6de2c490": "Ah...",
+    "yarn:line:fcff7b00": "Eh bien, allez à la fenêtre et parlez à votre client.",
+    "yarn:line:6acf7c77": {
+      "text": "Vous devrez ensuite le laisser entrer, bien entendu.",
+      "sharedAcrossSourceVariants": true
+    },
+    "yarn:line:1976bc60": "Excellent. Allez donc accueillir votre client à la fenêtre.",
+    "yarn:line:a327b5f9": "D’accord !",
+    "yarn:line:3517b28e": "Passez une journée productive.",
+    "yarn:line:933efa6d": "Rebonjour !",
+    "yarn:line:050efd1a": "Salut, Ryan !",
+    "yarn:line:bf5ff483": "Salut, je suis content de revenir.",
+    "yarn:line:b8724c64": "Ha... Tu aimes vraiment faire ce bruit.",
+    "yarn:line:2e424b13": "J’ai besoin d’un autre lavage.",
+    "yarn:line:4d6cd625": "J’essaie de sortir un peu de chez moi.",
+    "yarn:line:db5cd152": "Je suis sorti avec des amis.",
+    "yarn:line:610dd8cb": "On s’est bien amusés avec les marqueurs.",
+    "yarn:line:f73ddfbc": "Mais je crois qu’il est temps de me nettoyer.",
+    "yarn:line:54a8bb22": "Oh, bien sûr. Entre.",
+    "yarn:line:78c9b5cc": "Tout va bien ?",
+    "yarn:line:c298bc55": "D’accord, merci.",
+    "yarn:line:eef9b2bb": "Oui, ça va. Désolé.",
+    "yarn:line:7fe40d2b": "J’ai eu une journée difficile. J’espère que ça va m’aider !",
+    "yarn:line:e9d40a5c": "...",
+    "yarn:line:0c5dcd3c": "Alors euh, le portail ?",
+    "yarn:line:9a6dca4b": "Oh... Oui. Je m’en occupe.",
+    "yarn:line:203cc3d2": "Bien sûr. Un instant !",
+    "yarn:line:b60cc4a5": "Génial."
   }
 }
