@@ -8,6 +8,10 @@ The glossary gate is **not yet complete**. The row-level receipt now binds two a
 
 Updated 2026-11-10. Scope: standard Italian (`it`), English source, macOS `9/12/2026_a93aa21a`, Windows `9/9/2026_ee944596`. No texture-with-text modification, publication, deployment, server action or GitHub push. Independent reviewers and other agents are excluded by the current assignment. The active CLI process was verified as `gpt-6.1-terra`, reasoning `high` (worker PID 12753, launch record in the run directory).
 
+## Resume 10 — current bounded reconciliation
+
+The resume-10 named-entity note contained unsupported descriptions of Igwyx and Max; these were withdrawn against the actual paired source lines in [the review record](glossary-review-resume.md). A bounded two-layer reconciliation of special endings, the adult mount, Yip and drake is also recorded there. Character, species, profession and wash semantic reconciliation remains open; do not accept the glossary on link counts. The shared source/preservation and bounded renderer gates remain passed for the pinned inputs. No special-scene target decisions or game text have been authored. Final independent game-text audit is still separate.
+
 ## Input bindings
 
 - Canonical Dragons `main` at start: `8f800bca8620dc7a4430e5882c95f005cca0a08a`; other locale workers may advance it.
