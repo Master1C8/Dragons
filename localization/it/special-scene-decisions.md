@@ -95,7 +95,7 @@ Keep both identical response pairs distinct and preserve `$Yarn.Internal.Once.li
 
 ## Gate status
 
-Fifteen of 27 cases have author-reviewed wording recorded in this file; the remaining 12 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the fifteen. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
+Seventeen of 27 cases have author-reviewed wording recorded in this file; the remaining 10 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the seventeen. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
 
 ## Alexander's family crest
 
@@ -230,3 +230,62 @@ Source case `big-c-nickname`, node `Conrad_5_outro_ryan_romanced`; both source b
 | `d04df8f8` | Bene, ci si vede! |
 
 Preserve both italic tag sequences, choice IDs and distinct continuations. Positive: the questioning choice produces the abandoned nickname and the named choice follows its own response; negative: losing the shared C or redirecting the branches fails. Paired renderer feasibility is bounded; actual route execution, authored-package validation and fit remain pending.
+
+## Ryan's question about a question
+
+Source case `ryan-question-about-a-question`, `Ryan_2_required`, paired node SHA-256 `91a8f75f2ef3f4c7cf82641fed9357693b163f539a77dfb5b5e765c958427697`. Author self-review: the first reply plays on the question already asked; the direct reply bypasses the acknowledgment. Ryan discusses an uncertain relationship without identifying its other party or the player. All eight choice destinations remain as registered.
+
+| ID | Italian wording |
+|---|---|
+| `aa0dda7b` | Ehi. |
+| `3c3ddd0c` | Mh? |
+| `866cd495` | Che succede? |
+| `105cd3e2` | Posso farti una domanda? |
+| `81416c72` | Me ne stai già facendo una, dimmi. |
+| `709a9a57` | Certo. |
+| `17716b05` | Oh, giusto. Scusa. |
+| `e6aa9d20` | Allora, riguardo alle... relazioni. |
+| `5cfb94b9` | Se una relazione è <i>così</i> travagliata e sai che finirà. |
+| `cacb93ce` | E hai provato di tutto. |
+| `695ef750` | ... |
+| `ff6ef027` | Quando decidi davvero di chiudere la relazione? |
+| `453ff9be` | Oh- Ryan... |
+| `d422462e` | Non... so se posso rispondere io per te. |
+| `d30ffec9` | Lo so. Non dovrei scaricarti addosso tutto questo. |
+| `42124159` | È solo che con te mi sento davvero a mio agio. |
+| `31ab814e` | Hai ragione... Non potresti. |
+| `a79b8639` | Sono solo felice di non sentirmi giudicato qui. |
+| `1dca8fa0` | È solo che con te mi sento davvero a mio agio. |
+| `8bfa88d7` | Grazie. Anche a me piace stare con te. |
+| `be5feb3e` | Spero che le cose migliorino. |
+| `286fec49` | Mi fa piacere. |
+| `040ee2a7` | anche a me. |
+
+Positive: `81416c72` reaches the acknowledgment and `709a9a57` bypasses it; both enter the relationship discussion and later choices keep their distinct responses. Negative: remove the question logic, merge choices, change a destination or attribute the other party without evidence. Existing paired text and choice paths establish feasibility; package validation and actual branch execution and fit remain pending.
+
+## Conrad's height euphemism
+
+Source case `conrad-height-euphemism`, two spans in `ryan_food_dialogue`. Author self-review: both contexts use **diversamente alto** for the same joke about Conrad's stature, while the surrounding reactions and relationship paths stay distinct. **Draco** follows the glossary; Ryan and Conrad remain different people.
+
+| ID | Italian wording |
+|---|---|
+| `8b7915f4` | Chi è? |
+| `31281c6d` | È un draco rosso DAVVERO carino che viene al centro di lavaggio! |
+| `a7181b1a` | È un drago rosso. Credo che vi trovereste bene! |
+| `3605a48a` | Oh! Credo di averlo visto. Quello piccolino, vero? |
+| `a035a3fd` | Preferisce “diversamente alto”... Ma sì. |
+| `69dd6a73` | Mhm! Sta cercando di conoscere nuove persone. |
+| `45bc649d` | Oh... |
+| `d38c63ea` | Che carino. |
+| `ffed6d04` | Oh, fantastico. Sembra che ci somigliamo. |
+| `d9c91bca` | E tu invece? Stai frequentando qualcuno? |
+| `48d4a45a` | C'è questo drago rosso, Conrad. È... impulsivo, ma carino. |
+| `dee4a32d` | Sì! Conrad è adorabile. Anche se odierebbe sentirmelo dire. |
+| `b90f527f` | Oh, ma è quel draco piccolino che ho visto entrare poco fa, vero? |
+| `2f3f5508` | Ehi! È solo... “diversamente alto”. |
+| `a0cb3f78` | Mhm! È lui. |
+| `956e5c91` | Oh, scusa. |
+| `035e5be6` | Sembra carino! |
+| `36fb380f` | Fantastico, è carino! |
+
+Positive: each euphemism receives its own route-specific reaction and either alternative retains its source continuation; negative: different euphemisms or swapped route identities fail. Paired text-path feasibility is bounded; authored-package validation, branch execution and fit remain pending.
