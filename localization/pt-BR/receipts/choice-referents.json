@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "pattern": "\\b(obrigado|animado|ansioso|preparado|pronto|pequeno|fofo|gostoso|lindo|certificado)\\b",
+  "scope": "Visible Yarn option IDs in the pinned inventory; this literal selector does not cover implicit or morphological variants.",
+  "inventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "translationSha256": "b1e341f5338fc0c81e4af1e968a5b86acf3447330d726489cbc3ee89032b7311",
+  "rows": [
+    {
+      "id": "yarn:line:b2fe309b",
+      "node": "Conrad_5_intro_ryan_conrad_romanced",
+      "kind": "option",
+      "instructionIndex": 5,
+      "english": {
+        "macos": "Whats got you in a good mood?",
+        "windows": "Whats got you in a good mood?"
+      },
+      "target": "O que te deixou tão animado?",
+      "adjudication": "The excited person addressed is Conrad, not the player."
+    },
+    {
+      "id": "yarn:line:f57fc630",
+      "node": "Conrad_5_outro_ryan_romanced",
+      "kind": "option",
+      "instructionIndex": 0,
+      "english": {
+        "macos": "All done!",
+        "windows": "All done!"
+      },
+      "target": "Pronto!",
+      "adjudication": "Pronto is an impersonal completion exclamation; source is All done."
+    },
+    {
+      "id": "yarn:line:4766af08",
+      "node": "Conrad_Outro_4",
+      "kind": "option",
+      "instructionIndex": 28,
+      "english": {
+        "macos": "Alrighty! That should be it.",
+        "windows": "Alrighty! That should be it."
+      },
+      "target": "Pronto! Acho que terminamos.",
+      "adjudication": "Pronto is an impersonal completion exclamation; source says the work is complete."
+    },
+    {
+      "id": "yarn:line:c13d4e24",
+      "node": "Conrad_Ryan_Romanced",
+      "kind": "option",
+      "instructionIndex": 2,
+      "english": {
+        "macos": "He's hot.",
+        "windows": "He's hot."
+      },
+      "target": "Ele é gostoso.",
+      "adjudication": "Ele and gostoso refer to the male character, not the player."
+    },
+    {
+      "id": "yarn:line:9addfb4a",
+      "node": "Conrad_SexScene_Cum",
+      "kind": "option",
+      "instructionIndex": 9,
+      "english": {
+        "macos": "Ready!",
+        "windows": "Ready!"
+      },
+      "target": "Tudo pronto!",
+      "adjudication": "Tudo pronto is an impersonal readiness statement."
+    },
+    {
+      "id": "yarn:line:31281c6d",
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "instructionIndex": 129,
+      "english": {
+        "macos": "He's this REALLY cute red drake who goes to the wash!",
+        "windows": "He's this REALLY cute red drake who goes to the wash!"
+      },
+      "target": "É um dragão vermelho MUITO fofo que frequenta o lava-rápido!",
+      "adjudication": "The masculine adjective modifies the red dragon, Conrad."
+    },
+    {
+      "id": "yarn:line:48d4a45a",
+      "node": "ryan_food_dialogue",
+      "kind": "option",
+      "instructionIndex": 239,
+      "english": {
+        "macos": "There's this one red dragon, Conrad. He's... Hot headed, but cute.",
+        "windows": "There's this one red dragon, Conrad. He's... Hot headed, but cute."
+      },
+      "target": "Tem um dragão vermelho, o Conrad. Ele é... Esquentado, mas fofo.",
+      "adjudication": "The masculine adjectives refer explicitly to Conrad."
+    }
+  ]
+}
