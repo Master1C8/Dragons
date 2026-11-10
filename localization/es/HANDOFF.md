@@ -106,3 +106,7 @@ The special endings and height euphemism cases are author self-reviewed in [spec
 ### Transition and display batch
 
 The final three indexed cases have author decisions and source-bound checks in [special-transitions-displays.md](special-transitions-displays.md). Five display/UI IDs and eight continuation dialogue IDs were authored and read back on both builds. Current total: 260/1,947 authored IDs and 27/27 indexed cases with author decisions. Reconcile the full special-scene dependency groups before declaring the locale entry gate passed: direct-ID coverage alone does not establish that every clue, answer, feedback and related wording is authored. Ordinary translation has not started. Independent game-text audit, final packages, normal-play transition completion and final runtime/visual checks remain pending.
+
+### Alexander question-branch dependency closure
+
+Completed 52 additional authored IDs, bringing the locale to 312/1,947. All 77 source-bound IDs in the Alexander question groups and shared exit now have self-edited wording, including all nested choices and outcomes; see [the decision and paired read-back receipt](special-alexander-question-state.md). The 27 indexed decisions are recorded, but broader special-case dependency review remains in progress before the ordinary translation gate. Independent game-text audit, final localized runtime/visual QA and final packages remain pending.
