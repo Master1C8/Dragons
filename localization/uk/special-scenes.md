@@ -363,3 +363,22 @@ remaining Yarn text, metadata and programs are exact. Both
 packaged fonts contain all 90 display code points. The verified
 receipts are under `localization/work/uk-ordinary-05-20261110.7Z6Uc8/`.
 Live scene checks and independent editorial review remain pending.
+
+## Sixth ordinary batch
+
+Conrad's four related romance nodes add 62 values. The draft covers
+783 of 1,947 IDs with SHA-256
+`618297f90cb73f199cdf4e591fe4f89c62c0ae778831215f75450b66b62b7899`.
+All 721 previous values are exact.
+
+The player–Ryan path retains Conrad's good wishes and his separate
+account of the gryphon. In the Conrad–Ryan path he asks for advice,
+expresses uncertainty and describes both possible date plans. The
+aside and emphasis tags retain their original order and occupied
+regions. The one platform punctuation variant uses a shared value.
+
+Each diagnostic package changed exactly 62 Yarn values. The other
+table text, metadata and compiled programs are exact. Both fonts
+contain all 90 display code points. The verified receipts are under
+`localization/work/uk-ordinary-06-20261110.EIw6g8/`.
+Live scene checks and independent editorial review remain pending.
