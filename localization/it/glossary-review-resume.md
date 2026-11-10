@@ -403,3 +403,7 @@ All available source rows in `UI/level2` and `Settings` were read: two groups / 
 ### Resume 08: Ryan food and departure rows (author self-reviews)
 
 Both paired builds of `Ryan_ham_dialog` and `Ryan_1_Outro` were read: two groups / 24 rows. Ryan explicitly identifies himself as a dragon and qualifies his belief about digestion; his address to “bipeds” includes the player without establishing player gender. Ryan repeats the player's Yip in context; unspecified others who might hear about the establishment remain unnamed. The build-specific apostrophe difference and size markup in `line:f5462edf` remain recorded. The bound Italian fields establish no correction here. Both layers are author self-reviews, not independent acceptance.
+
+### Resume 08: Ryan fruit-scene rows (author self-reviews)
+
+Both paired builds of `Ryan_grapes_dialog` and `Ryan_melon_dialog` were read: two groups / 38 rows. Ryan's statements about dragon digestion are recorded as his statements; the conversation does not independently establish biological rules. His generalization about kobolds does not identify additional individuals. The player's choices and markup are recorded separately; the isolated pause retains unresolved voice routing. The bound Italian dragon, kobold and character fields establish no correction in these scenes. Both layers are author self-reviews, not independent acceptance.
