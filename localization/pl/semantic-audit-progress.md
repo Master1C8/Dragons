@@ -95,3 +95,11 @@ Findings pending disposition:
 - `yarn:line:0de4fe62`: `Dobrze się przygotowujesz` suggests a repeated action rather than the player's preparedness on this occasion. Consider a gender-neutral state description.
 
 Cumulative distinct IDs read: 752 / 1,947; 1,195 remain. Author review only; independent acceptance remains pending.
+
+## Conrad third visit: arrival, tutorial and route choice: 62 IDs read
+
+Compared the phone's mount delivery, Conrad's greeting and the separate Ryan introduction and player date branches against both stock English builds and Polish. The crate and gate instructions are distinct. The source-bound `special-scenes/romance-routes.json` and `special-scenes/yip.json` document the route labels and yip responses, and the player/Ryan versus Conrad choices remain distinct. The earlier v2 fixture exercised three sample authored choices in this introduction on macOS and CrossOver; it does not prove the present revision or subsequent romance paths. The separate `db592d76` Conrad response also renders “Damn right!” as `A jakże!`, useful context for the pending `fbe86c06` finding. Actual delivery, conditional branching, later routes and display fit remain unverified.
+
+Finding pending disposition: `yarn:line:a0cf6cae` attaches `z którymi mógłbym spędzać czas` to both people and places, an awkward construction because spending time with places is not intended. Preserve both hangout locations and people with separate grammatical relations.
+
+Cumulative distinct IDs read: 814 / 1,947; 1,133 remain. Author review is not independent acceptance.
