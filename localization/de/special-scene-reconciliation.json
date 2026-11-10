@@ -1,9 +1,9 @@
 {
   "worklistSha256": "9ee266ffbc4643e5b269b75ca03edfb763f1178d3803aa65b627d487c2b0535a",
-  "translationSha256": "327ac16084a3e627d5749ea1b2b6842608e472d319130ddffd2b149ee53dc569",
+  "translationSha256": "d54dd54de8fad4af07ebdac65befd5fb2e2d094d6654c3010bd8d9b11989040b",
   "verifiedRegistryAndSourceBindings": 13,
   "caseCount": 27,
-  "authoredRows": 703,
+  "authoredRows": 733,
   "note": "All direct authoring rows and Yip contexts are drafted. The Ryan/Conrad root choices, captions and immediate feedback are drafted; the forward route index includes ordinary later story nodes, whose translation and final branch/runtime checks remain pending.",
   "cases": {
     "alexander-number-seven-taste": {
@@ -107,7 +107,6 @@
       "unauthoredIndexedContextByGroup": {
         "Alexander_5_intro": 27,
         "Alexander_5_required": 20,
-        "Conrad_4_Conrad_Romanced": 11,
         "Conrad_4_Ryan_Conrad_Romanced": 14,
         "Conrad_5_intro_conrad_romanced": 18,
         "Conrad_5_intro_ryan_conrad_romanced": 14,
@@ -126,7 +125,6 @@
         "Ryan_5_Outro_conrad_romanced": 14,
         "Ryan_5_Outro_ryan_conrad_romanced": 15,
         "Ryan_5_Outro_ryan_romanced": 13,
-        "Ryan_5_Required_conrad_romanced": 19,
         "Ryan_5_Required_ryan_conrad_romanced": 20,
         "Ryan_5_intro": 45,
         "Ryan_5_intro_ryan_romanced": 6

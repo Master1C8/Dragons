@@ -8,7 +8,7 @@
 | probe | **Early representative feasibility passed.** German synthetic dialogue, choice, settings and representative offscreen frames ran on macOS and Windows CrossOver. Both continued through stock gate input to `WaitingOnBeingWashed`; see `renderer-probe.md`. Final corpus, full visual checks and native Windows remain separate. |
 | source | **Passed for the pinned v42 inputs.** The accepted shared source-readiness evidence and reconciliation at `15c330ef17ca031b547dae23af30f7315faa6d3e` supersede the provisional `bfabe4d` boundary. See `localization/evidence/source-readiness-v42-20261110.md`. |
 | glossary | **Self-review layers complete under the owner’s current instruction.** The two earlier 27-entry author layers match every per-entry digest; two separate affected-closure author reads cover the anonymous role and related rules. See `glossary-review.md` for evidence, source-context adjudication and limitations. No independent review is claimed. The final game-text independent audit remains required. |
-| translate-edit | **In progress: 703/1,947 IDs authored and self-edited.** All 246 direct indexed authoring rows are present and the adaptation entry review is complete; later romance route scenes remain ordinary corpus work. See `special-scenes.md` and `special-scene-reconciliation.json`. No source-passthrough counts as translation. |
+| translate-edit | **In progress: 733/1,947 IDs authored and self-edited.** All 246 direct indexed authoring rows are present and the adaptation entry review is complete; later romance route scenes remain ordinary corpus work. See `special-scenes.md` and `special-scene-reconciliation.json`. No source-passthrough counts as translation. |
 | editorial | Partial author self-edit performed; complete semantic review and independent diff/delta audit remain pending. |
 | resources | Final corpus-bound glyph coverage and fit pending. Textures with text are excluded and must remain untouched. |
 | package | Not built; macOS app and Windows ZIP read-back pending. |
@@ -30,6 +30,10 @@
 ## Resume
 
 Use the accepted source-readiness receipt and the 27-case reconciliation. Continue ordinary source-bound scene batches, read back both builds per batch, and maintain distinct editorial, package and runtime statuses. The author self-review layers and owner-approved nickname remain valid; the final independent game-text audit is pending. Coordinate large assets and isolated runtime with the exact cooperative runtime lock. Acquire the canonical Git lock before staging, and hold it through full index review, commit and committed-tree verification.
+
+## 2026-11-10 ordinary romance scene batch
+
+The full `Conrad_4_Conrad_Romanced` and `Ryan_5_Required_conrad_romanced` scenes add 30 authored and self-edited IDs, for **733/1,947**. Translation SHA-256 `d54dd54de8fad4af07ebdac65befd5fb2e2d094d6654c3010bd8d9b11989040b`; updated special-scene reconciliation SHA-256 `d7f7cf4cb73697be61de879818d8d75215234aa5670dff6e11a868f930e1b409`. The paired source reader passed all rows, and both platform assets reopened with all 725 authored Yarn values intact: macOS `0d63d031872908a04a4c4aba4722940072a94879fd6c7d8adee7bd34ed09c0e5`, Windows `a51a787ad25f41abc1a83c685c62728015ad30123b6f5d0639fcab79b8419a8a`. Their source-bound input hashes are macOS `83661af50960fcb3800037062bf0be95440eb7ad79e5ac1da53e373610d2adbb` and Windows `3cf2f19946c4af20648a75ce8b885a62de4fba3582080735f35fafd107dfb523`. Assets and inputs reside in task-owned `resume-01` scratch. They are partial artifact checks, not packages or gameplay evidence.
 
 ## 2026-11-10 special-scene reconciliation and Yip callbacks
 
