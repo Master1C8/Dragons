@@ -13,12 +13,12 @@
     "yarn:line:e4aced7b": "",
     "yarn:line:75b152eb": "",
     "yarn:line:e381559c": "",
-    "yarn:line:a2ba222e": "",
-    "yarn:line:33a79dbe": "",
-    "yarn:line:b6c878fa": "",
-    "yarn:line:a5979ac9": "",
-    "yarn:line:20f87f8d": "",
-    "yarn:line:0c997163": "",
+    "yarn:line:a2ba222e": "Buenas noches. Este establecimiento atiende sin cita, ¿verdad?",
+    "yarn:line:33a79dbe": "¡Sí! ¿Vienes... de la universidad...?",
+    "yarn:line:b6c878fa": "¡Sí!",
+    "yarn:line:a5979ac9": "En efecto, ¡debes de conocer mi escudo! Enseño alquimia.",
+    "yarn:line:20f87f8d": "... Una clase que he de impartir dentro de poco.",
+    "yarn:line:0c997163": "Excelente.",
     "yarn:line:9aa97614": "Esto tendrá que ser rápido; los alumnos no se enseñan solos.",
     "yarn:line:393c128a": "Nunca había lavado a un dragón maestro... Vaya.",
     "yarn:line:155d1c64": "Vale, ¡abriré la puerta!",
@@ -27,16 +27,16 @@
     "yarn:line:1270a483": "Ah, y disculpa que esté completamente sucio.",
     "yarn:line:8440a3f4": {
       "platforms": {
-        "macos": "",
-        "windows": ""
+        "macos": "Es lamentable el estado en que me encuentro...",
+        "windows": "Es lamentable el estado en que me encuentro..."
       }
     },
-    "yarn:line:61c96494": "",
-    "yarn:line:ee3d0ee4": "",
-    "yarn:line:f7f963e3": "",
-    "yarn:line:4da86a7a": "",
-    "yarn:line:db986d0d": "",
-    "yarn:line:780d0993": "",
+    "yarn:line:61c96494": "No estás... tan sucio.",
+    "yarn:line:ee3d0ee4": "No hay problema. ¡Voy a abrirte la puerta!",
+    "yarn:line:f7f963e3": "Sí que lo estoy.",
+    "yarn:line:4da86a7a": "...",
+    "yarn:line:db986d0d": "¿Podrías abrir la puerta?",
+    "yarn:line:780d0993": "Ah. Sí. Perdón.",
     "yarn:line:73e4789c": {
       "platforms": {
         "macos": "Sabes... Este lugar es bastante agradable. Muy... proletario.",
