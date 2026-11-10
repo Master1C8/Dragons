@@ -251,3 +251,9 @@ Author self-reviewed 37 additional IDs across `Ryan_1_intro`, `Ryan_1_required`,
 Author self-reviewed 21 additional IDs across `Ryan_1_PhoneTutorial` and `Conrad_3_PhoneTutorial`. Three source pairs differ only in title spelling or minor English grammar/spacing and are explicitly bound to shared Polish targets. The franchise number, device term and ordered emphasis markup are preserved. This is author self-review, not independent audit.
 
 `translation.json` now has **815 / 1,947 IDs**, SHA-256 `63b2aae9b024133e6a190ef331eacf1e1a6ef1e0f2fe491293b87977e2a9cf63`. `resume-01/add-phone-tutorials.py` and `resume-01/phone-tutorials-map.py` validate the preceding draft and paired readers; macOS accepts 815 and Windows 809 bindings. The complete guard reports 1,132 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Ryan second visit — continuation
+
+Author self-reviewed 57 additional IDs in `Ryan_2_intro` and `Ryan_2_Outro`, retaining the previously settled Yip line, the relationship branches and emphasis markup. Two earlier lines were edited for natural, gender-neutral Polish and the distinction between a hose and a snake. This is author self-review, not independent audit.
+
+`translation.json` now has **872 / 1,947 IDs**, SHA-256 `3afdd102fba54933aed815d478655fe07a56854c03a627a8f8edf304289611e9`. `resume-01/add-ryan-second.py` and `resume-01/ryan-second-map.py` validate the preceding draft and paired readers; macOS accepts 872 and Windows 866 bindings. The complete guard reports 1,075 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
