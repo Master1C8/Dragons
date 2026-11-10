@@ -2237,6 +2237,564 @@
           "decision": "Alexander says he could use the mount."
         }
       ]
+    },
+    {
+      "group": "Alexander_Dirty",
+      "orderedRowsSha256": "da2f43e4bd5a9c99602c4e3f3a07d5253fffecb6afa75a658d5388afc7cfe31c",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-igwyx",
+          "sourceEntrySha256": "66ad2b67f8ff6ddf6faf87daf25948de76082040baa5fba50b5a1f24a05b2f3a",
+          "localeFieldsSha256": "098ca2cedf2af074af1e3995e8a787ba4496c7f3ec5b6060d6c77b25fb1ff55e"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:9becd177",
+          "pairedRowSha256": "71f0b42c0cedde33af24330f580a0c3317ea7690a488afa9e94ff2d003213b31",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander fears his students will laugh at him; the students are unnamed."
+        },
+        {
+          "id": "yarn:line:0ddcd600",
+          "pairedRowSha256": "d3d8322aa63b76742a405005c284093355159bd9f7ce696e28cc58fbfd6f5103",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player",
+            "dnw-igwyx"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander asks the player to scrub Igwix off his back; the attested variant names his colleague."
+        }
+      ]
+    },
+    {
+      "group": "Alexander_Soapy",
+      "orderedRowsSha256": "1a29148b446a1be748473181f3338efcaa07914cf9474cda1dbfabc22237829b",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:b06e13bc",
+          "pairedRowSha256": "80e268224e50fc93087a3b430adc819c196e9e723ba676ba7fc80e100552b1c6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander calls himself a professor and asks the player about the soap."
+        },
+        {
+          "id": "yarn:line:265e14cb",
+          "pairedRowSha256": "ee8a0189b8bd19b2a19ec31d9ad122fd58d6beee4869947fbe3fa35d4fe46e7a",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander asks the player to signal when rinsing is finished."
+        }
+      ]
+    },
+    {
+      "group": "ConradBeatup_2",
+      "orderedRowsSha256": "81d6be92348863d2c00b6b72816738a6c224821fec5aa9c732cfee327480345c",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:6374414d",
+          "pairedRowSha256": "f1a7e6119a5bbf95d5325fa1a074774d210faf659505695ac8ea8a02e61bd4f9",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad thanks the player for being there for him."
+        },
+        {
+          "id": "yarn:line:049fb01f",
+          "pairedRowSha256": "51ef8a4f8c3a6945daf1e43228c8da9825c27e3cff541f229cc3e611ea874069",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad values friends he can rely on; other friends are not individually identified in this line."
+        }
+      ]
+    },
+    {
+      "group": "ConradBeatup_Idle1",
+      "orderedRowsSha256": "6b968146d1b54b2632b598a7bd8938fac4af50b5de4199d15b0069fa4949f967",
+      "applicableEntries": [
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:11bfce3b",
+          "pairedRowSha256": "44a45fb63723c20bcd9f266859d4de05ce36b25143d47782015393b2a2c46fa1",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad recalls an intimate friendship; the other party is not identified by this row alone."
+        },
+        {
+          "id": "yarn:line:878fc94c",
+          "pairedRowSha256": "28400a9913e4226b81ca6c1bd7ebe3150ca61aa83c701a8f1a507911e18c5879",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says he does not understand."
+        }
+      ]
+    },
+    {
+      "group": "ConradBeatup_Idle2",
+      "orderedRowsSha256": "8699ca5d28a8a3c7ff5ab129af18501cebe9a2407fc6f864f18d0d10b4f205ef",
+      "applicableEntries": [
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:d37175c7",
+          "pairedRowSha256": "1443d99c7fa7ce0a065d1db0e517c7a138c020d2d85fe4f683b636c83e767971",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Conrad describes himself as a small dragon despite acting tough."
+        },
+        {
+          "id": "yarn:line:454172b0",
+          "pairedRowSha256": "32efcf337bafbad7d83ceeec863601d4fd7bc19ad5c4b5474b9a3cb333d254b8",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says they went too far; this row alone does not identify the referent or establish number or gender."
+        }
+      ]
+    },
+    {
+      "group": "ConradBeatup_OutroDirty",
+      "orderedRowsSha256": "30a9540f83cad1d63c5133375a52c5c7c953b9ae6acb0e74380f4080efca513a",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:a8eb78ed",
+          "pairedRowSha256": "4d6a26e3bec221a481e8e4c1ea66f28687a9d185cad7705cb7ad457029592ee7",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Conrad tells the player he is still dirty."
+        },
+        {
+          "id": "yarn:line:39f6c77d",
+          "pairedRowSha256": "d9bf1b4f7ed78ab1c88351c6e69a6fced7ba714d9e533898a6c8805e442adf44",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player can acknowledge the mistake."
+        },
+        {
+          "id": "yarn:line:afc6c00a",
+          "pairedRowSha256": "9a5ed25c5eca1860d5cfadb22be2422cfde37cad94ee0286e52df965b3df7cf6",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player can react to the mistake."
+        }
+      ]
+    },
+    {
+      "group": "ConradBeatup_OutroSoapy",
+      "orderedRowsSha256": "b551f044e57cc3c530dd6b11b22b9e21b478cef201c3f46d78e3745cd09867e9",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:ef611d11",
+          "pairedRowSha256": "8c7684e7c65490308270b0d646ac6b57d2c09331379750093dc3f7aec281068c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Conrad tells the player he is still soapy."
+        },
+        {
+          "id": "yarn:line:79511a66",
+          "pairedRowSha256": "a2c9c9ad71ad7ad2e28eebd5b2796cf30029bc07dada2867a15e0d83f654748f",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player can acknowledge the mistake."
+        },
+        {
+          "id": "yarn:line:c30013ff",
+          "pairedRowSha256": "5dc623c6f56e612a0df8b02ff0d79b0d89a68421417d778d62644aa35e42a290",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player can react to the mistake."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_Outro",
+      "orderedRowsSha256": "859434f4636918183f50ada329eeb63140c25e341c8c0810f212472d2d965a22",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:4d6b365e",
+          "pairedRowSha256": "18e226da05241ff347f9677583ec5c9cd8ae18f461b0252affb9ea90b1e73b38",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Conrad remarks that he is clean and relieved."
+        },
+        {
+          "id": "yarn:line:f73a3fc7",
+          "pairedRowSha256": "787174f4ff6559b78cf5350c1230d16746031f07f2604c38a51441a8aa82c552",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad thanks the player and expects to see them tomorrow."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_OutroDirty",
+      "orderedRowsSha256": "4b75b0feac3c2e2e76b744518b51d176884d96bb36379dda76b6fa5741943625",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:5d41b5d6",
+          "pairedRowSha256": "ea242e43b06f82c08c3bcbee7411799aca3257efce0f21f422faa3c6b1a7748c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Conrad tells the player he remains dirty."
+        },
+        {
+          "id": "yarn:line:cb71b2a1",
+          "pairedRowSha256": "732c33a573d5637ee1a526ea439a06fb2f1aee959272dea5bd951db0d6c18d11",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player can acknowledge the mistake."
+        },
+        {
+          "id": "yarn:line:5a6c0d31",
+          "pairedRowSha256": "7b89c066ff30038b92cab931016d6c264d03875bde27a3bc50593d626c31eef4",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player can react to the mistake."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_OutroSoapy",
+      "orderedRowsSha256": "c9999b6070df3536e91a169e18c105d0653cccaaebbfa195320c3bb1b3a27231",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:2f6eb3c3",
+          "pairedRowSha256": "2bb12993f97346430d98c84575ac123789cb5fd32e32a16b20c74b13e19683f3",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Conrad tells the player he remains soapy."
+        },
+        {
+          "id": "yarn:line:8cfbd75d",
+          "pairedRowSha256": "3c4ff37f4846e8536d96d3f8bb37e1f2331e38f73a262f0679f5fa9c41172fdb",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player can acknowledge the mistake."
+        },
+        {
+          "id": "yarn:line:1acbd02a",
+          "pairedRowSha256": "8373646d52c6be417a7383bbd07103b359a098665f76d20c8bc3ac7bdd9f6f40",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player can react to the mistake."
+        }
+      ]
+    },
+    {
+      "group": "DragonAnnoyedByBuzzing",
+      "orderedRowsSha256": "10aa13f30cfd7d867c534271699ce9e7d9986ffb101b029bfefb4c5161d1bd1d",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:b965b4dd",
+          "pairedRowSha256": "71ad1e944d26273004af0b17b2a2493b8c8411c69b9c7dd9bc3fad361c423983",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A dragon addresses the player about the premature buzzing; no individual identity is established by this group."
+        },
+        {
+          "id": "yarn:line:2f55b3aa",
+          "pairedRowSha256": "49f92c455e23f4c7575f161da40f72bc9afc376470762c7a944e79f4a7bd2b58",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A brief reaction; the row alone does not establish an individual voice."
+        },
+        {
+          "id": "yarn:line:9504ba33",
+          "pairedRowSha256": "2d8e705f2ac6973a3199500e60d7a522e23ef855aa1c7a1b709b7368b08abeee",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A pause; the row alone does not establish an individual voice."
+        }
+      ]
     }
   ]
 }
