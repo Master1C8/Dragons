@@ -15588,6 +15588,543 @@
       ]
     },
     {
+      "group": "Alexander_1_intro",
+      "orderedRowsSha256": "1f7bc70270a702a7c293bd63939b771efb2f5e61f2ee67cff6550ea24571f5de",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-burnswick-college",
+          "sourceEntrySha256": "3a49dd393f7985a13465547414ed83c845d4e21f6ef20f7f33235fbfd8da18d4",
+          "localeFieldsSha256": "5f15b012ecad866bb8c70b01f8af58cf1cac6232da91de87ccf78da2ad7caccd"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        },
+        {
+          "id": "dnw-dragon-washer",
+          "sourceEntrySha256": "70f6f7b0f545b32f5a98233380b01eda5a369c67c4d2969c55e02a1782a18aa9",
+          "localeFieldsSha256": "2a85f72db9fb40d18dc57ace708e091d432e3a63aba15051e6b89ea74973f09a"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        },
+        {
+          "id": "dnw-family-crest",
+          "sourceEntrySha256": "6c64b3f010048958681651d5ce643ac55ddaa98900feba2a8e2cc54d24b7e9c9",
+          "localeFieldsSha256": "4c824a83aa2bdbd707b0613ce7015a4d20f7d6c7c1fea3cabbb3641c59ecbc2d"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:a2ba222e",
+          "pairedRowSha256": "3b4f3d972962b4a95c54b486d684d32a1ca040fe60ecfb226498fac5d46f44cf",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander asks whether the wash takes walk-ins."
+        },
+        {
+          "id": "yarn:line:33a79dbe",
+          "pairedRowSha256": "536969a91de385f3f658aa5ac4b653c29aa781bcab6fc3fa09e1d633e2341f11",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-burnswick-college"
+          ],
+          "decision": "The player asks whether Alexander is from the college; this scene does not name it."
+        },
+        {
+          "id": "yarn:line:b6c878fa",
+          "pairedRowSha256": "ae30881e742319ca1acb1109c05744c8d5a315dcea43e91f843f504e24a4fb7d",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A brief affirmative response; speaker not assigned from the isolated line."
+        },
+        {
+          "id": "yarn:line:a5979ac9",
+          "pairedRowSha256": "3c4d5061d504e09ae1dd4ce9df22dd65bb0b909ba1543e34ee041b1a1e7f5973",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-family-crest"
+          ],
+          "decision": "Alexander refers to his crest and says he teaches alchemy."
+        },
+        {
+          "id": "yarn:line:20f87f8d",
+          "pairedRowSha256": "37fb3f248c2db1bf6952b3dce6de53b45140fa3db0c60daf1030ccb1eabad646",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander mentions an impending class."
+        },
+        {
+          "id": "yarn:line:0c997163",
+          "pairedRowSha256": "957cb141b640223763feec9adf03ac1b016a99e41ab4b5fbd5c41f3f1be94377",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A brief positive response."
+        },
+        {
+          "id": "yarn:line:9aa97614",
+          "pairedRowSha256": "f8c79b2f01be093112885ff4fe16d716018066994981f1778179e95d91cc7fc9",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander refers to teaching his students."
+        },
+        {
+          "id": "yarn:line:393c128a",
+          "pairedRowSha256": "8bfe6c948d69d661d693c6ae784d9593977b6339e86d17ab78bdd7bd0a51e624",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "The player calls Alexander a teacher dragon."
+        },
+        {
+          "id": "yarn:line:155d1c64",
+          "pairedRowSha256": "2322a9c465b58c6cff821fbcae2012da2a2db34b41e9022b000bb8a1642edf04",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A gate-related line; no extra identity inferred."
+        },
+        {
+          "id": "yarn:line:af0c15fd",
+          "pairedRowSha256": "8a98c1323c224866d5d45865dd53cee2af81b8004724b688381682ac51145659",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander corrects teacher to professor and says public washes are unusual for him."
+        },
+        {
+          "id": "yarn:line:836d1b13",
+          "pairedRowSha256": "e655834767359cd78f3393feda6416d3a86b0c8b845545bf07e33385b8df676f",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Brief thanks."
+        },
+        {
+          "id": "yarn:line:1270a483",
+          "pairedRowSha256": "6cfd1aae37a1d0d0c8a4c00eb2e238f0ef754cbb3de576638e3dfc79048d46f6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander apologizes for being dirty."
+        },
+        {
+          "id": "yarn:line:8440a3f4",
+          "pairedRowSha256": "3f2f99f56894bec06a853a10ca22d8c8d0eeaac6bb34077bd56e7860ed14ae3d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander calls the state regrettable; the paired spelling differs."
+        },
+        {
+          "id": "yarn:line:61c96494",
+          "pairedRowSha256": "3b16b54211e01a326051d96365b8a136fa20b03b9b5af4893af853161f9e1c76",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "The response says Alexander is not that dirty."
+        },
+        {
+          "id": "yarn:line:ee3d0ee4",
+          "pairedRowSha256": "8740016463f477078ccf2f1ccb55b7eeab8d278ecb1fc4a9ba62d2038817e4d7",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A gate-related line."
+        },
+        {
+          "id": "yarn:line:f7f963e3",
+          "pairedRowSha256": "f9ef944de8295a945367e5aec4c416eda04bc65e31933bfe00f539e3ba40641b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander insists on his assessment."
+        },
+        {
+          "id": "yarn:line:4da86a7a",
+          "pairedRowSha256": "8c5c296640f3d45ce52686d59fa25932cfa41de5beeab2dd1b321d9f022df959",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A pause without a safely inferred speaker."
+        },
+        {
+          "id": "yarn:line:db986d0d",
+          "pairedRowSha256": "3c8438310bafb6af7dcaea3ab902310fcce0878779f75283d6fb88474bad0998",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A question about opening the gate."
+        },
+        {
+          "id": "yarn:line:780d0993",
+          "pairedRowSha256": "4c9da67a79a5899fdb152fb6b22cfa12f3bc3c99a188094360043dc939048c65",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An apology."
+        }
+      ]
+    },
+    {
+      "group": "Alexander_2_intro",
+      "orderedRowsSha256": "b68be1b426d5a5a3c14b1d381987d5f0d383eedf233703425ac55f4ad5f53f71",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-igwyx",
+          "sourceEntrySha256": "66ad2b67f8ff6ddf6faf87daf25948de76082040baa5fba50b5a1f24a05b2f3a",
+          "localeFieldsSha256": "098ca2cedf2af074af1e3995e8a787ba4496c7f3ec5b6060d6c77b25fb1ff55e"
+        },
+        {
+          "id": "dnw-dragon-washer",
+          "sourceEntrySha256": "70f6f7b0f545b32f5a98233380b01eda5a369c67c4d2969c55e02a1782a18aa9",
+          "localeFieldsSha256": "2a85f72db9fb40d18dc57ace708e091d432e3a63aba15051e6b89ea74973f09a"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        },
+        {
+          "id": "dnw-phoenix-feather",
+          "sourceEntrySha256": "c4024e659615307ed5c582c44c3c7216aaededde7b2fccea8aa6ebd3c3c705a4",
+          "localeFieldsSha256": "a89364a2fbf971d5ad05417d23472c29385e40bf92b3202d5beff774ee0f4134"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:394db643",
+          "pairedRowSha256": "61cb067032a8aaa26d7afefcd23800f25b1a286f00a2a9c6f42ef5dc934a810a",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander expresses relief that the establishment is open."
+        },
+        {
+          "id": "yarn:line:af7db134",
+          "pairedRowSha256": "7f0bf22f3fd24b4f4666b729288a579753d0650cfac7599fb21fd9a9d3ddf7c4",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "The player addresses Alexander by name."
+        },
+        {
+          "id": "yarn:line:2089db44",
+          "pairedRowSha256": "4fe8d726046160e8b336d55da09ed6745fd4b3b76667e8e3834a393960814489",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The player says the establishment is not open."
+        },
+        {
+          "id": "yarn:line:152cb8ad",
+          "pairedRowSha256": "2b2a13c9cfe2810d0c22666a3ab1bc4c6349ad9bf5e2510d577d68fe2df322e6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander needs cleaning."
+        },
+        {
+          "id": "yarn:line:831cbfda",
+          "pairedRowSha256": "cdb1fc5abd4504273c6042cba512fcf3344f8e093c6c37b5ef4a56a7abc78fcc",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-dragon-washer"
+          ],
+          "decision": "Alexander says this is a job only the player can do."
+        },
+        {
+          "id": "yarn:line:b6b9dc33",
+          "pairedRowSha256": "b7090b9ad1123b7ba520c1328c917ee029813b976e5e85d4835c5afd37e5843f",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander offers double or triple payment."
+        },
+        {
+          "id": "yarn:line:0ce8d5aa",
+          "pairedRowSha256": "56205aa9b6994aaeb28644a380ecc09ae242f33ba9259ebb16203d7f4b8977a9",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player agrees to open."
+        },
+        {
+          "id": "yarn:line:9ad8d2dd",
+          "pairedRowSha256": "74c08eb187930e611f975ade2b5903085c36b4efb620f3598f6a6145883b48b8",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander responds positively."
+        },
+        {
+          "id": "yarn:line:0bc56d4d",
+          "pairedRowSha256": "b75379f3e56a393b342dc021f850fb3d1c65d2fdb2b558db4b9979e7474729bf",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The interlocutor asks what happened."
+        },
+        {
+          "id": "yarn:line:9df56a3a",
+          "pairedRowSha256": "8000803e07febf15219e6be4a44a4fc5dfdd91d1b2c09a9334a1efed0124a90d",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The interlocutor asks why so late."
+        },
+        {
+          "id": "yarn:line:fedbf70c",
+          "pairedRowSha256": "a3e202548426fe3a3fd2890d4202cf6f4e8828e3552c1e140b22940b700dd9e0",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-igwyx"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander identifies colleague Professor Igwyx and his requested experiment."
+        },
+        {
+          "id": "yarn:line:68ebf07b",
+          "pairedRowSha256": "f4d8b0488b2a340edc3d30204cb4a71aed00f748265957028df3bcb2a578774e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-igwyx"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander says he let Igwyx use him as a platform because Alexander is tall."
+        },
+        {
+          "id": "yarn:line:d2baf9e2",
+          "pairedRowSha256": "5adacac666b384ebcad01286a66e97e3db9972cd233c22092109dd7fb9e2adfc",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander introduces a qualification."
+        },
+        {
+          "id": "yarn:line:448afe95",
+          "pairedRowSha256": "d79255179b82d0e18deceb0026459a7568f6a0325c956959609882f3fc102684",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-igwyx"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander identifies a flaw in Igwyx’s method."
+        },
+        {
+          "id": "yarn:line:e71f9a0b",
+          "pairedRowSha256": "dd61a74a72ba989df4bd3f898c760ee8ea4ce9281571c1cf3ae9a4dcadc9ac7b",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-igwyx"
+          ],
+          "conceptUses": [],
+          "decision": "The player fears Igwyx died; this is a question, not an established death."
+        },
+        {
+          "id": "yarn:line:5d4e9392",
+          "pairedRowSha256": "51f889948829d71e66dba1ae6cfb0cc3284a57f9fd27842306d50e99ef6dde84",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-igwyx"
+          ],
+          "conceptUses": [],
+          "decision": "The player asks where Igwyx went."
+        },
+        {
+          "id": "yarn:line:712f9d7c",
+          "pairedRowSha256": "6ede532cd51623aab2aac5f18bcbe2feefb1bac2023ed7fab53f09e214750441",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A surprised question."
+        },
+        {
+          "id": "yarn:line:cb7e94e5",
+          "pairedRowSha256": "bf25071f723b51f7faa32ceeefa455e19c24e9aa45e9b4c63e3aa345171d49af",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A negative reply."
+        },
+        {
+          "id": "yarn:line:cc532c02",
+          "pairedRowSha256": "afd0ad521be7ec6a09bf44a49aaad352374e0624ad32974a577737b8c4f9e48e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-igwyx"
+          ],
+          "conceptUses": [],
+          "decision": "Igwyx spontaneously combusted and Alexander gave him privacy."
+        },
+        {
+          "id": "yarn:line:5a632b75",
+          "pairedRowSha256": "19921fc6345a9ffe163b090809df592cda677960c9381c57083563cd28c305ff",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-igwyx"
+          ],
+          "conceptUses": [],
+          "decision": "Igwyx’s physical form is reconstituting in the staff lounge."
+        },
+        {
+          "id": "yarn:line:bfeaec15",
+          "pairedRowSha256": "8ecff541c7db9cf4b26a77df1b355c97122db2ccc85743cb1cea2abc20b75b23",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-phoenix-feather"
+          ],
+          "decision": "Alexander mentions a phoenix feather as a wizard’s aid."
+        },
+        {
+          "id": "yarn:line:29daeb62",
+          "pairedRowSha256": "f4a380e46767eeba9b6b1859a04e6c3f4729e8e3bae42f15cf21ce2eee188fe0",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-phoenix-feather"
+          ],
+          "decision": "The player repeats phoenix feather with an apparently ironic acknowledgment."
+        },
+        {
+          "id": "yarn:line:a62e8112",
+          "pairedRowSha256": "7fbb1ed8ccfd610f3998f7b3685772784fca048699c88de2a66218c1c63668c3",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The player prepares to open the shop."
+        },
+        {
+          "id": "yarn:line:938be2fb",
+          "pairedRowSha256": "730326d583af7cece1abba1fbea0cbab4565d72689f2a8c977942dbe40d70808",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander apologizes for overlooking a layperson’s lack of knowledge."
+        },
+        {
+          "id": "yarn:line:05bbe58c",
+          "pairedRowSha256": "ce8e9d63dc9c9bafe8aee6332d5f493c27962dca02905fc775d23a5ace4fe013",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A gate-related line."
+        },
+        {
+          "id": "yarn:line:301e8665",
+          "pairedRowSha256": "1f3bd77a2f9c4d317b8574518bb8987b79fc4b9d8ff560082a4edfedd45bcf46",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander fears damage to his reputation."
+        }
+      ]
+    },
+    {
       "group": "UI/level0",
       "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
       "applicableEntries": [],
