@@ -271,3 +271,7 @@ Three additional groups / 17 paired rows received hash-bound source and Italian 
 ### Resume 08: service and device row unit
 
 Three further complete groups / 20 paired rows received hash-bound source and Italian-field author self-reviews. The row receipt covers 109 groups / 341 rows; 84 groups / 1,606 rows lack equivalent full row-level receipts. Earlier scoped evidence remains reusable only at its exact binding. Independent acceptance and the shared source and exact-preservation gates remain open.
+
+### Resume 08: Conrad and Ryan conversation row unit
+
+Four further complete groups / 28 paired rows have hash-bound source and Italian author self-reviews. The row receipt covers 113 groups / 369 rows; 80 groups / 1,578 rows lack equivalent full row-level receipts, though prior scoped evidence remains usable at its exact binding. Independent acceptance and the shared source and exact-preservation gates remain open.

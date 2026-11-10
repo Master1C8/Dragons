@@ -379,3 +379,7 @@ The author read both paired builds of `DragonAlmostClean`, `DragonConfusedAboutD
 ### Resume 08: service and device rows (author self-reviews)
 
 Both paired builds of `RyanMuddy_SmallTalk`, `Conrad_1` and `Conrad_3_PhoneTutorial` were read: three groups / 20 rows. Ryan's “both” refers to Ryan and the player; Conrad's “mate” does not establish player gender. The phone contact is unidentified: “we” alone establishes neither identity nor number. The bound Italian fields for dragon washer, special endings and the adult device fit these contexts; no correction was established. Source and Italian layers are author self-reviews, not independent acceptance. Row and scene hashes and entry bindings are in the row receipt.
+
+### Resume 08: Conrad and Ryan conversation rows (author self-reviews)
+
+The paired builds of `Conrad_required_4`, `Conrad_Outro_4`, `Ryan_5_intro_ryan_romanced` and `Ryan_1_required` were read in context: four groups / 28 rows. “Big guy” addresses Conrad and does not establish player gender; Ryan's “both” refers to Ryan and the player. The source difference in `line:fa1a1e76` is retained. The Italian character, wash and dragon-washer fields support these uses; no correction is established. Both layers are author self-reviews, with hashes and individual decisions in the row receipt; independent acceptance remains pending.
