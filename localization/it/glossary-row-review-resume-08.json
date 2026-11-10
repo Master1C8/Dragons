@@ -11954,6 +11954,827 @@
       ]
     },
     {
+      "group": "Conrad_Intro_3",
+      "orderedRowsSha256": "12b2913b5f20787742898fe189e5dcea00cd63da8a5fe9831e7f5b4bec1654fd",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-kobold",
+          "sourceEntrySha256": "655be37c2da8a22f692dbac404a5811b4227a465b44d7c6c85bc35af64f51df3",
+          "localeFieldsSha256": "8a1ac2a388a6bd2ea4517b1b90a93ddd9bb82862e39762fe8fcbf986a3f688b3"
+        },
+        {
+          "id": "dnw-mount",
+          "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+          "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:39fd52f1",
+          "pairedRowSha256": "70be9657833da2e700f6f43ce1cfe1d50ebdd0ea61266e1957af2d4ae4df60e4",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Informal greeting to the player; big dog is a casual address, not a species identification."
+        },
+        {
+          "id": "yarn:line:afcd5586",
+          "pairedRowSha256": "6df6b7900237fa02186e5d9652c3a14a28981f64803c09b86ae3798130a6d9c5",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-kobold"
+          ],
+          "decision": "The player identifies their species as kobold."
+        },
+        {
+          "id": "yarn:line:83ac5b68",
+          "pairedRowSha256": "13834d0369bfd39d771412220dad18e13f58dcc1e0b6d5f6cfeb457f159639a1",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Greeting explicitly names Conrad."
+        },
+        {
+          "id": "yarn:line:159c5c1f",
+          "pairedRowSha256": "49417983ecc61e86a6894e0eedc9e19dbd05abd28211ac7f2a687fd8d42c0d71",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A hesitant response; this row alone does not settle the speaker."
+        },
+        {
+          "id": "yarn:line:20393ff6",
+          "pairedRowSha256": "5a32f154d90badb9e69216c2709d006ca15ebcfcabc9c0342452c3e8161df4af",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad acknowledges his identity."
+        },
+        {
+          "id": "yarn:line:b6093881",
+          "pairedRowSha256": "ee4768bc91b9dbbea21f1b16648a9c62e1a69a49b1238c9ee321d9ef263ee0a2",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A question about a delivery; the isolated row does not establish the speaker."
+        },
+        {
+          "id": "yarn:line:0c583118",
+          "pairedRowSha256": "9d1b8737504d35d791444da44d80ab71a65a39fb9bb6143868eec1ebecf19ef5",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A question about opened crates; no character is named."
+        },
+        {
+          "id": "yarn:line:9a68366f",
+          "pairedRowSha256": "f1f18c0a59e06ca33a33c403eed4820c3debf986fb17a724d47a91d9a1b65a4f",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "The new acquisition is the adult device, not an animal."
+        },
+        {
+          "id": "yarn:line:0b7589ff",
+          "pairedRowSha256": "9017f999c70e29c48a1f10cbc1431b575d40e6588e7ec28151a01a5a33713ddc",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "The adult device was requested by the addressee in Conrad’s scene."
+        },
+        {
+          "id": "yarn:line:9d458e88",
+          "pairedRowSha256": "bafead5975c4097443b23ff6bc2aa1a725b9d6d859e2815d009d2f6a170095a5",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Enthusiastic response with size markup; no identity established by this row alone."
+        },
+        {
+          "id": "yarn:line:78cc49e8",
+          "pairedRowSha256": "f5f4b2588945f883836149a648cde15076a76f01082a6c0c4158fcd5dd943945",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Follow-up reaction with size markup; no new concept."
+        },
+        {
+          "id": "yarn:line:eefc4e9f",
+          "pairedRowSha256": "0a5f94d99a59acddb37f9f0d99fb03a6505bcfe6aca95cf816821724e92bc189",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "The device is referred to as that thing; no animal is implied."
+        },
+        {
+          "id": "yarn:line:54ad4706",
+          "pairedRowSha256": "0ce3a9f3ba044112b258f7940e00383f850fb42a2289a9da6e8b42978fc4d59b",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Brief assent without a named referent."
+        },
+        {
+          "id": "yarn:line:4d692a01",
+          "pairedRowSha256": "a40f4ea4ede2273a61526eaeda6b15ca304089f0b56ad0b770abbf17d5e5cd03",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Offer to open the gate; identity not established by this row alone."
+        },
+        {
+          "id": "yarn:line:c29d4071",
+          "pairedRowSha256": "13259ff4ac2871b847ca13ee46c1d146c988bdff8a988321782d673d57c7a05f",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A response to the phrasing, without a named referent."
+        },
+        {
+          "id": "yarn:line:610824ef",
+          "pairedRowSha256": "e3b74899956a76d128eb8e8723e654e33e3e4567e482f2a4c75cd0bc9a20a9df",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause; no character identified by the row."
+        },
+        {
+          "id": "yarn:line:f7382398",
+          "pairedRowSha256": "4531ee21eb3c7c3c8a0b6ddbcbeef70efddccc9cf96669b1ae3bbee06548dafa",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Encouragement to proceed; no named referent."
+        },
+        {
+          "id": "yarn:line:db592d76",
+          "pairedRowSha256": "ee01bbdf935db56a2bbcbaa0669ba939f47ebb5fec740ec04d23aa6e463b8914",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Enthusiastic assent; no named referent."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_required_1",
+      "orderedRowsSha256": "5511c0d6f6b153618c23bc4347b4f5e553ba878654e7b3aedd7837e33d403156",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        },
+        {
+          "id": "dnw-mount",
+          "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+          "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
+        },
+        {
+          "id": "dnw-special-endings",
+          "sourceEntrySha256": "b2dab9f17eac895557320156d6a6089138f749194fc613995baed5c2efa4e55d",
+          "localeFieldsSha256": "ae22ce626d4dad5ecdb291040e1e1910d6aae237af683e80a4aef8eaa867829f"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:8a35fb7b",
+          "pairedRowSha256": "36bd8c35aa986be3c5896b2a1721a692f7e73d16a387d5835caa4984aeb0e34e",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Hesitant lead-in with size markup; no specific referent in the row."
+        },
+        {
+          "id": "yarn:line:6fbc3c1b",
+          "pairedRowSha256": "cb22c592388e0e23532968507fdf8bf365f5c4025f2271973bd22568b5e73834",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-special-endings",
+            "dnw-wash"
+          ],
+          "decision": "Conrad asks about special endings as a euphemism for sexual services at the wash."
+        },
+        {
+          "id": "yarn:line:f98c3b6c",
+          "pairedRowSha256": "92e581d837e32f709865a01dfbdac94e4ebf1d351e4fca0078de8c5b73665668",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-special-endings"
+          ],
+          "decision": "Response plays on the ordinary sense of special endings; retain the wordplay distinction."
+        },
+        {
+          "id": "yarn:line:a0a0a49c",
+          "pairedRowSha256": "5b3a2e4f14b194c366b353f7bea9098d4323a01341725f0a7960aec479981772",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The speaker clarifies that sexual services are meant."
+        },
+        {
+          "id": "yarn:line:43dd32f5",
+          "pairedRowSha256": "8f25b9eb123a102c49b9300a41db1778f12ae9711c29394b7db960b26483c6ff",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Interrupted refusal; the two builds differ in apostrophe."
+        },
+        {
+          "id": "yarn:line:d5ed3582",
+          "pairedRowSha256": "58c6cc2b2118cb82499c05ba9ea7e2a22e589d4a22696bf2e50b31f437d966e7",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Conrad explicitly identifies himself as a big dragon and asks about sexual services."
+        },
+        {
+          "id": "yarn:line:7678511c",
+          "pairedRowSha256": "857867f5c45ce4d255a494b91c3a4ca67cca5fb4c90cda439db047de7ec319bc",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Interrupted denial with size markup."
+        },
+        {
+          "id": "yarn:line:e048566b",
+          "pairedRowSha256": "9e25bab3b638eede83bab3b5f1e49c49d9c25cd0ecd0b741c00ce96529012299",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Brief negative response without a named referent."
+        },
+        {
+          "id": "yarn:line:5a195ff2",
+          "pairedRowSha256": "2803e66993e7e4b9f3bd7d571e1ea6b2552b6f567bf0784d5a357c6a1f165b59",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "The absence of the adult device is questioned; the builds differ in apostrophe."
+        },
+        {
+          "id": "yarn:line:cc295885",
+          "pairedRowSha256": "70f8f06345dc5f9287d624a1890c69c6578ca38b8979305097c3bffc7a466796",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Hesitant negative response with size markup."
+        },
+        {
+          "id": "yarn:line:5d34e715",
+          "pairedRowSha256": "1a6c6134795e235b6f21c7687f0df8138af340a585f9f91633e7327630659da4",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "The device is referred to indirectly as one, not as an animal."
+        },
+        {
+          "id": "yarn:line:cb04e062",
+          "pairedRowSha256": "45153435de6b9458c8a311761fe05289d331ffbac2f19a00944f9365d1b38ff2",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Hands are mentioned as an alternative to the device in this sexual-service context."
+        },
+        {
+          "id": "yarn:line:3690a3eb",
+          "pairedRowSha256": "62b21c8b65a16055349dc6510feebb6c1fb5b05ac345ae0e335c01440f3007fd",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "The adult device is absent."
+        },
+        {
+          "id": "yarn:line:8cc1aa72",
+          "pairedRowSha256": "c1470268d529c0c251cf77a8ecaff61d7876cd448ba28a337934bce9e0fb49c3",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "One refers back to the adult device."
+        },
+        {
+          "id": "yarn:line:1af1ad05",
+          "pairedRowSha256": "a3bc7e58c0c70e816a35a263a492ec965409a55753c35987df0a48d2058cacaa",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-special-endings",
+            "dnw-wash"
+          ],
+          "decision": "The wash does not offer the sexual services under discussion."
+        },
+        {
+          "id": "yarn:line:b964c99b",
+          "pairedRowSha256": "592c7629f35b4ca3ace18f863550cdaa3380a752ff78efd2802519cab6a05e45",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Reaction to the absence of the requested service."
+        },
+        {
+          "id": "yarn:line:2f54ceec",
+          "pairedRowSha256": "747955257cabb7453b510b46406e5b7d8039d0aa9060ed24cbfc574593642fb0",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Alternate branch again mentions hands in the sexual-service context."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_Outro_4_Conrad_Romanced",
+      "orderedRowsSha256": "cc20f2cc17cd2162eba335fb096ceed256180345d5e38a83da37d7e81595be16",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:ed6be68f",
+          "pairedRowSha256": "1115f0b1e721b088766435f1b78baae78843fdd210dab158df8da265241d28d9",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Conrad feels spotless after service."
+        },
+        {
+          "id": "yarn:line:7b5be1f8",
+          "pairedRowSha256": "10ea2b35da4a27f9368a33db79652e3dcbf340e8dbe37ac80a11322048a02a40",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says he has decided where to go; preserve intended sense despite source typo."
+        },
+        {
+          "id": "yarn:line:d8ce8566",
+          "pairedRowSha256": "6fbcb75b387f08eeb9bfad88d08191bd8764d6dc71113cea7461cde4d1c964f5",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Brief question without a named referent."
+        },
+        {
+          "id": "yarn:line:4efe8211",
+          "pairedRowSha256": "0951fade11d223c0821aa8135eb607b49382eda77ec9a102b2318a9ab7de1f30",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Brief follow-up question; no named referent."
+        },
+        {
+          "id": "yarn:line:f4af8b88",
+          "pairedRowSha256": "98f47cd098b853cbc960f08bfc6542ca6cb55972dfb9529ffb3193cd0f9ffa6b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad names his preferred downtown club Wings; no glossary identity is inferred for it."
+        },
+        {
+          "id": "yarn:line:629f8cff",
+          "pairedRowSha256": "33e198162bce5052880698ed31cfab2d18bb46936ec4665caccfde3d9ab54741",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says he is well known there."
+        },
+        {
+          "id": "yarn:line:f382336f",
+          "pairedRowSha256": "1d74b42ec32c02fefe8720daf7156626082034658ce0b22e9ce6b81125af7177",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad offers good seats for the show; preserve emphasis."
+        },
+        {
+          "id": "yarn:line:65b23418",
+          "pairedRowSha256": "6dd295b0a1dba47538d8f9db64a0a8d629f12077c00668ee2e3c1ef2b460d925",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The invitation is accepted."
+        },
+        {
+          "id": "yarn:line:99ff9e7f",
+          "pairedRowSha256": "cfa3c9c8f3583fdc823145011bfd9136ca9ee7f45b938b5016a2bddf07cc8809",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Teasing response to the claim of prominence."
+        },
+        {
+          "id": "yarn:line:803bf378",
+          "pairedRowSha256": "b44bf47ffb2e3bcbe17d81d60bf32d9ae7248027d3dc826c5dcf5c95ad3bd91f",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Excited informal response; no new referent named."
+        },
+        {
+          "id": "yarn:line:160bf40f",
+          "pairedRowSha256": "ae733919ad57e5070b65596afd8ccf7fa943cb7d5f4d020cad76902801cec748",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The speaker plans to prepare."
+        },
+        {
+          "id": "yarn:line:ac5afd96",
+          "pairedRowSha256": "6831bdbece435f82c83f61e5ec5279235e5a2d0397ef538fcb842285faaeb141",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad plans reservations before his next visit."
+        },
+        {
+          "id": "yarn:line:3a6afae1",
+          "pairedRowSha256": "06c11ef028c3ad50aad09a6efa4cab8892de4a8ca1a25720c9691e28de0a25a3",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Request to open the gate."
+        },
+        {
+          "id": "yarn:line:0fcf9908",
+          "pairedRowSha256": "6b2d8252eecb300c3fe80198fdd411029ba200fdb54be67cfd76621a6f344e82",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Enthusiastic agreement."
+        },
+        {
+          "id": "yarn:line:b59e9091",
+          "pairedRowSha256": "f77fc494b8ca719957653895228b2307dda056966a18b8ecb9e50a57c950b8b7",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause; no identity established by the row."
+        },
+        {
+          "id": "yarn:line:23ae97e6",
+          "pairedRowSha256": "e30595650e73a68e4edea672e0df779a81f4f9ad243bee8b28ac7b690637ff1d",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Flirtatious comment repeating the big-deal phrasing."
+        },
+        {
+          "id": "yarn:line:b2b32876",
+          "pairedRowSha256": "0379356671fafeb9da9112ba78d87a1a77d3d773652bc2d29be0761469b8a9ed",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Apology for poor flirting and request to open the gate."
+        },
+        {
+          "id": "yarn:line:24832f01",
+          "pairedRowSha256": "c0961d3cd92cd8310d9976643cf603eab202b653e183d06b9191c0e9f53607a2",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Expression of excitement without a named referent."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_Outro_4_Ryan_Conrad_Romanced",
+      "orderedRowsSha256": "ae3b3d91763ac36e30df4426effbcba37544cd548dadb0cf87bc63e3a8d0fd97",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:ab1bc039",
+          "pairedRowSha256": "312460db0e35fa5438c102817fd9301d91adaa7a162bb66d8d0870e2d756c953",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Conrad feels clean after the wash."
+        },
+        {
+          "id": "yarn:line:3d2bc74e",
+          "pairedRowSha256": "4699775e9153fea0ac373da89870fc38335af1cdb61ee6d67afebf1ea1a09821",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad asks whether he and Ryan will work as a couple."
+        },
+        {
+          "id": "yarn:line:877aced7",
+          "pairedRowSha256": "375d591ee63efdf11c28acd8bb0f2ec288597f4bb11bffefb73bf226b9d40dbb",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An affirmative response without a named referent."
+        },
+        {
+          "id": "yarn:line:b2dfad3e",
+          "pairedRowSha256": "270bc91e1ca8ece11676878e6e15219817bc4dd4f9aa5c9f2cc3c50dda6d6e5e",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Hopeful response without a named referent."
+        },
+        {
+          "id": "yarn:line:114ac9a0",
+          "pairedRowSha256": "81498d0a213bfc27a295af1cbed7ced20587b52f7d55fd533b28f452c1340365",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Hope that the addressee is right."
+        },
+        {
+          "id": "yarn:line:24efaa49",
+          "pairedRowSha256": "69d79d7715e0be967740cd9198e8b5ceada42f6aac33dce77b7b8968dc56ae20",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The male referent in this relationship context is Ryan."
+        },
+        {
+          "id": "yarn:line:9ebea3d0",
+          "pairedRowSha256": "56402816f54894c21bd4da9160f9be1594930f30f504276b5aee602692de617d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad is nervous after prior events; no other identity is assigned."
+        },
+        {
+          "id": "yarn:line:088ea4a7",
+          "pairedRowSha256": "adcd4c89f79137441ee70fbecb234b9adfddc6b9a9af0418f6db430e51bc0824",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad uses informal self-confident language."
+        },
+        {
+          "id": "yarn:line:99931b37",
+          "pairedRowSha256": "9d5a141d3083408e33395992c63cfe11347f68bdc4cae26f6a8502f8217ae664",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad qualifies his confidence."
+        },
+        {
+          "id": "yarn:line:0fa31c40",
+          "pairedRowSha256": "008a2776940be09205912a6f144ef0c5d8b8eb58059f74482217886bef795770",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says their first meeting went well."
+        },
+        {
+          "id": "yarn:line:ea2adb20",
+          "pairedRowSha256": "20e25da5c4a7acddd39422d61d586fe7577687c34ed765628cb52548d012399c",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The interlocutor invites further details."
+        },
+        {
+          "id": "yarn:line:f3eeb627",
+          "pairedRowSha256": "2a7f9e271c195109d0346bbdf49051f0279e2c026bce000b51f243f5a80afd7b",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The interlocutor asks about a first date."
+        },
+        {
+          "id": "yarn:line:7c1adc57",
+          "pairedRowSha256": "487c5f79951d911b2435a92f1663a15b15545b75a8604059832276e4c6df93bc",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad describes Ryan calling and their meeting."
+        },
+        {
+          "id": "yarn:line:c64bd5ce",
+          "pairedRowSha256": "666552a93b641f34d515f576c94b4f6c43c5cea0413f437e0032006fd2a46677",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Ryan described Conrad as chill and they planned a date."
+        },
+        {
+          "id": "yarn:line:507bd2b9",
+          "pairedRowSha256": "b13b549e4e66be1f227fdddcdee2b9f6f6bdd359d1e823a0ee832ffbe7a46f64",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Conrad plans to see Ryan after the wash; builds differ in apostrophe."
+        },
+        {
+          "id": "yarn:line:65deb150",
+          "pairedRowSha256": "6e28f519e15d0320cb2474e33b14b59e48fd9fab7e0eddcdb57b5382aef1e6c8",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Timing refers to immediately after the wash."
+        },
+        {
+          "id": "yarn:line:df8fb8c9",
+          "pairedRowSha256": "8d66e8b4392c727f792e613c7716b61c57a31c902221ed2feb3e00458bb98f58",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The pair plan to visit a seafood establishment."
+        },
+        {
+          "id": "yarn:line:49bfbfbe",
+          "pairedRowSha256": "f7b2fb96287f114c0a38bdc69ca69389c085e2960201d2b5926f7874bd2c6ac7",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad mentions a reserved club spot."
+        },
+        {
+          "id": "yarn:line:d8a2002e",
+          "pairedRowSha256": "bbf2314de31465d7430e3e353ef952020077d41b5184032abc6944bedf407459",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An offer to let the customer out."
+        },
+        {
+          "id": "yarn:line:94fbdbf0",
+          "pairedRowSha256": "2b35ae3cf286a0cdef967e3d3a48fbd53d3ee5cb4d7dc26fd69fb9b051b5e3cf",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An offer to open the gate, expressing excitement for the addressee."
+        },
+        {
+          "id": "yarn:line:4e920759",
+          "pairedRowSha256": "a93cfb22cc46b58f00ef4b1ccfd31a06dee243e35f7740bc2240605d14bb6b60",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An excited response; row alone does not establish speaker."
+        },
+        {
+          "id": "yarn:line:02cbdc87",
+          "pairedRowSha256": "df154e371be57b3eb01c76c7a4dcfa78b82eb868640ac0a76af7201f5e0a898d",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An alternate excited response; row alone does not establish speaker."
+        }
+      ]
+    },
+    {
       "group": "UI/level0",
       "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
       "applicableEntries": [],
