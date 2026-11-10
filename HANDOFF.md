@@ -31,6 +31,12 @@ while the settings path retained the combining sequence. Both players
 matched on all eight controls and completed the same three-choice
 intro route. Pixel-level fit and mark placement remain open.
 
+The [paired Options frames](localization/evidence/european-settings-visual-20261110.md)
+show the same three synthetic labels on one line without visible
+truncation. The macOS frame is 640 × 480 and the CrossOver frame is
+1024 × 768. Exact Vietnamese accent placement remains needs-review,
+and dialogue and choices still need pixel inspection.
+
 On 2026-11-09 all five absent Yarn destinations reproduced in isolated macOS
 Unity runs with controlled entry; a Windows CrossOver run independently
 reproduced the Conrad failure. A source-bound candidate appends the five
