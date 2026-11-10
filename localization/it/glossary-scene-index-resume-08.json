@@ -524,7 +524,7 @@
         "yarn:line:1d0abc80",
         "yarn:line:316bb26e"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Alexander_5_required",
@@ -584,7 +584,7 @@
         "yarn:line:b920f205",
         "yarn:line:2f10f572"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Alexander_Dirty",
