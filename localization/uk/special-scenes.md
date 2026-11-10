@@ -443,3 +443,23 @@ table text, metadata and compiled programs are exact. Both packaged
 fonts contain all 92 display code points. The verified receipts are
 under `localization/work/uk-ordinary-09-20261110.JqFiqb/`.
 Live scene checks and independent editorial review remain pending.
+
+## Tenth ordinary batch
+
+Five nodes from Alexander's first two visits now cover all 62
+source IDs. The draft adds 60 values and reuses two special-scene
+values. All 1,002 earlier values are exact. The draft covers 1,062
+of 1,947 IDs with SHA-256
+`a52d013fd2ba3b6d2dcaf07dd562dbc97e16dca2b80c25f1d8d445339e85ee10`.
+
+Alexander's formal register, offer of double and then triple pay,
+and concern for his reputation are distinct from the player's
+replies. Both English spellings of Igwyx use the approved Іґвікс.
+The repeated high-shelf line uses the same wording as Ryan's
+explosion variant. The phoenix feather keeps its glossary wording.
+
+Both diagnostic packages changed exactly 60 Yarn values. The other
+table text, metadata and compiled programs are exact. Both fonts
+contain all 93 display code points. Verified receipts are under
+`localization/work/uk-ordinary-10-20261110.e1cKEg/`.
+Live scene checks and independent editorial review remain pending.
