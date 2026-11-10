@@ -227,3 +227,9 @@ Author self-reviewed 39 additional IDs in `Alexander_5_romance_route` and `Alexa
 Author self-reviewed 20 further IDs from `Alexander_Dirty`, `Alexander_Idle1`–`3`, `Alexander_Outro` and `Alexander_Soapy`, including the college-name response. The established glossary spelling `Igwyx` and `Społeczne Kolegium Taumaturgii w Burnswick` are retained. This is author self-review, not independent audit.
 
 `translation.json` now has **662 / 1,947 IDs**, SHA-256 `c87e500f84580f9368f546d8160c32ac60eddc6a05271bed885435ab8a245de6`. `resume-01/add-alexander-general.py` and `resume-01/alexander-general-map.py` validate source binding, paired readers and the speaker contract; macOS accepts 662 and Windows 656 bindings. The complete guard reports 1,285 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating the remaining English-source groups.
+
+### Conrad early arrivals — continuation
+
+Author self-reviewed 42 additional IDs across `Conrad_Intro`, `Conrad_Intro_1`, `Conrad_Intro_2`, `Conrad_Intro_3` and `Conrad_Intro_5`, retaining the previously reviewed marked-up greeting, the medical-kit exchange and the device's glossary term `stojak`. The apostrophe-only `that's` / `thats` platform difference has an explicit shared target. This is author self-review, not independent audit.
+
+`translation.json` now has **704 / 1,947 IDs**, SHA-256 `2337e93eac04480c1f8fe98a99490bdb4dba4a49751ca097f97468745c628b18`. `resume-01/add-conrad-intros.py` and `resume-01/conrad-intros-map.py` validate previous draft and source-bound readers; macOS accepts 704 and Windows 698 bindings. The complete guard reports 1,243 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating the remaining English-source groups.
