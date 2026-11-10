@@ -77,3 +77,7 @@ Author self-reviewed 48 IDs across `Conrad_finished_mount_3`, `Mount_Alexander_2
 ## Remaining reactions
 
 Author self-reviewed 49 remaining Yarn dialogue IDs, preserving interaction refusals and character-specific tone. The intentional misspelling in the error message reflects the English `fcuk`; the source name `nael` is unchanged. Both stock source readers and object encode/parse passed: macOS SHA-256 `1b2be33d0cfe761880ef71d6a3166c79ab1f0dfc8f8b302dc3e78ecaf143bd26`; Windows `6c8bba4122426ca756d0ba58909746dea5098eb5c8c80dd4cf27b32eea4e0dfb`. Altered English was rejected on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary19/`.
+
+## Settings
+
+Author self-reviewed 37 labels and options, including six macOS-only fields. Input identity and source text were checked with the platform-specific settings scanners; 17 macOS and 15 Windows modified objects were serialized in memory and decoded to their expected trees, preserving all other fields. Both scanners recorded 43 protected values; changed English was rejected. Identical `Audio`, `Xbox`, and `DualShock` are intentional. The setting order, resolution values and runtime bindings were not changed. Scripts and partial source-bound files: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/settings/`. This is not a final package or a visual fit check.
