@@ -239,3 +239,7 @@ The author reviewed another 13 complete groups / 17 rows, including Igwix, an un
 ### Resume 08: washing and Conrad aftermath row unit
 
 Eleven additional complete groups / 27 paired rows have source and Italian glossary author self-review receipts, including explicitly unresolved isolated referents. `glossary-row-review-resume-08.json` now covers 51 groups / 161 rows; 142 groups / 1,786 rows lack these full row-level receipts, although earlier scoped evidence remains reusable at its exact binding. Two author layers are not independent acceptance. The shared source and exact-preservation gates remain open.
+
+### Resume 08: Conrad interaction row unit
+
+Another 14 complete groups / 18 rows have hash-bound source and Italian author self-reviews. The row receipt now covers 65 groups / 179 rows; 128 groups / 1,768 rows lack equivalent full row-level receipts, with previously scoped receipts reusable only at their exact scope. The unnamed contact and colloquial address are not treated as evidence of an identified character or player gender. The author layers are not independent review. Shared source and exact-preservation gates remain open.
