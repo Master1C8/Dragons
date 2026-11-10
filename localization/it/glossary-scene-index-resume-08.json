@@ -3305,7 +3305,7 @@
         "ui:4cbc97aea69bccfd4defdb896f11600bdcc0964b970916200b59966d037b24e5",
         "ui:1f92f7d859adfd67efa3a3f37608780f984d3d2e55b5a74774f0dfa70d9d4f86"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "UI/level1",
@@ -3324,7 +3324,7 @@
         "ui:dbc8e2e632eba7248ae6e777ca8041471fc49e06923dea63bd14f13505bfae9e",
         "ui:c2bfc7e986446b28c0b6877491ef21f63ca440eec868c6beef1c5f0e0f02c8e1"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "UI/level2",
@@ -3374,7 +3374,7 @@
         "ui:860e1d29da244f82a38e511f6e6c36408d62f9a8d93f84fac02b3ff5fdfe8656",
         "ui:713d3704bd4a5fa83d15d5a2c78f2780112994ea118b8cd2b70c10bdb3ebcbaf"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "UI/level3",
@@ -3388,7 +3388,7 @@
         "ui:ca49bdab1b57af8734410d7b777864cf8f1a1397551c1da7e492bb1827c21b28",
         "ui:4d54a1b69a40f476c20639226acf86e375efff10c5a5d60b7001d932abfc015e"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "UI/level4",
@@ -3402,7 +3402,7 @@
         "ui:c02c2b4f035db95cc12fe5bbccd9c662aba961e7bb76d2e23b6337e22fb9e26b",
         "ui:b9fb36e3cfa3b525b39606e6d08d6c4b137a94e2f5755b623c1bbc190638eeb7"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "UI/level5",
@@ -3416,7 +3416,7 @@
         "ui:a6badc0f5c0504c2f6c54aa2df6b59cb0adb18cb57180daf8affb8f5a840099c",
         "ui:450a8206da64a7b3856b161d71a7bd64c006568506063fa12a86f16f6afd0137"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "UI/level6",
@@ -3430,7 +3430,7 @@
         "ui:c37df1326b5064c347a9e322cb77dcdd38a982d38251dc4b5358ac676b0c203c",
         "ui:987d908cf7d0cf9af9889ed65f7f833768785b20e8d120c0bdde77c5dc7198aa"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Settings",
@@ -3475,7 +3475,7 @@
         "settings:WindowMode:option:2",
         "settings:WindowMode:option:3"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Managed display",
@@ -3485,7 +3485,7 @@
         "display:slot-new",
         "display:yarn-missing-line"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Speaker labels",
@@ -3495,7 +3495,7 @@
         "display:speaker-ryan",
         "display:speaker-conrad"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     }
   ]
 }
