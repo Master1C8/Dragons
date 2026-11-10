@@ -39,3 +39,7 @@ Receipt `receipts/semantic-audit-10.json` binds 126 additional IDs to the unchan
 ### Author semantic review: rows 1153–1267
 
 Receipt `receipts/semantic-audit-11.json` binds 115 additional IDs and the two platform instruction exports. Cumulative author pass: 1,268 / 1,947 IDs; next row 1268, `yarn:line:933efa6d`. One new contextual finding brings the pending total to 21. Correction and dependency review and independent audit remain open; translation bytes are unchanged.
+
+### Author semantic review: rows 1268–1508
+
+Receipt `receipts/semantic-audit-12.json` binds 241 further IDs and both platform instruction exports. Cumulative author pass: 1,509 / 1,947 IDs; next row 1509, `yarn:line:61c7f2d6`. Seven proposed contextual corrections bring pending findings to 28. Correction and dependency review and independent audit remain open; translation bytes are unchanged.
