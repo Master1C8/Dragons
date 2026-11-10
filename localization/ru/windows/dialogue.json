@@ -4830,6 +4830,494 @@
     "line:2a29842a": {
       "source": "Hey uh... Not now.",
       "text": "Эй, эм... Не сейчас."
+    },
+    "line:9be63f47": {
+      "source": "Bleh. Thank you for grabbing that.",
+      "text": "Бе-е. Спасибо, что забираешь корзинку."
+    },
+    "line:0dd63830": {
+      "source": "You brought food in?",
+      "text": "Ты принёс еду?"
+    },
+    "line:f0427bb9": {
+      "source": "Ryan! this is so sweet.",
+      "text": "Райан! Как мило."
+    },
+    "line:66727cce": {
+      "source": "Yeah! It has food that should be good for both of us.",
+      "text": "Ага! Там еда, которая должна понравиться нам обоим."
+    },
+    "line:4a137220": {
+      "source": "Hehe, thanks. It has stuff that should be good for both of us.",
+      "text": "Хе-хе, спасибо. Там кое-что, что должно понравиться нам обоим."
+    },
+    "line:dc237557": {
+      "source": "Although, the portions might be a bit... dragon sized.",
+      "text": "Только порции могут быть... драконьего размера."
+    },
+    "line:7fb611c9": {
+      "source": "How come you brought this all in?",
+      "text": "А зачем ты всё это принёс?"
+    },
+    "line:c5e71850": {
+      "source": "Do you even need a wash?",
+      "text": "Тебе вообще нужно мыться?"
+    },
+    "line:e98616be": {
+      "source": "For you!",
+      "text": "Для тебя!"
+    },
+    "line:53d71f27": {
+      "source": "<size=70%> And for me.",
+      "text": "<size=70%> И для меня."
+    },
+    "line:54faa7c0": {
+      "source": "No, I don't think I do.",
+      "text": "Нет, вроде не нужно."
+    },
+    "line:c2caa0b7": {
+      "source": "I'm just here to bring you food!",
+      "text": "Я просто принёс тебе поесть!"
+    },
+    "line:274367d7": {
+      "source": "Figured I'd bring in something nice after all you've done.",
+      "text": "Решил тебя чем-нибудь порадовать в благодарность за твою помощь."
+    },
+    "line:b17360a0": {
+      "source": "Hope thats alright?",
+      "text": "Надеюсь, ты не против?"
+    },
+    "line:0b226939": {
+      "source": "Of course it is!",
+      "text": "Конечно, не против!"
+    },
+    "line:9d126e4e": {
+      "source": "Awesome, I'm glad.",
+      "text": "Здорово, я рад."
+    },
+    "line:a8b70da7": {
+      "source": "That must mean it is! I'm glad.",
+      "text": "Значит, не против! Я рад."
+    },
+    "line:12e6043e": {
+      "source": "Now... Food?",
+      "text": "Ну что... Поедим?"
+    },
+    "line:0ce8d3c2": {
+      "source": "ohmygod I thought the egg was decorative.",
+      "text": "Боже, мне казалось, яйцо для красоты."
+    },
+    "line:53301d3b": {
+      "source": "What kind of egg was that?",
+      "text": "Что это было за яйцо?"
+    },
+    "line:e96114a2": {
+      "source": "Huh? ofcourse not!",
+      "text": "А? Конечно нет!"
+    },
+    "line:7f5113d5": {
+      "source": "OH. You're not used to eating them whole.",
+      "text": "А-А. Вы же не привыкли глотать яйца целиком."
+    },
+    "line:c5001a4c": {
+      "source": "That's the best way to eat'em!",
+      "text": "А так их есть вкуснее всего!"
+    },
+    "line:f0a579a5": {
+      "source": "Uhm...",
+      "text": "Эм..."
+    },
+    "line:66957ed2": {
+      "source": "Blue...?",
+      "text": "Синее?.."
+    },
+    "line:dcc4774b": {
+      "source": "I'm not too sure. It was on sale at WingCo.",
+      "text": "Не уверен. Оно продавалось со скидкой в WingCo."
+    },
+    "line:4af4703c": {
+      "source": "Tasted real good though!",
+      "text": "Но очень вкусное!"
+    },
+    "line:418498cf": {
+      "source": "Those grapes looked good.",
+      "text": "Виноград выглядел аппетитно."
+    },
+    "line:13ca0a74": {
+      "source": "Ryan, you're not supposed to eat the stems-",
+      "text": "Райан, веточки не едят..."
+    },
+    "line:d7b49fb8": {
+      "source": "They were! The stem is my favorite part though.",
+      "text": "И был вкусный! Но веточка мне нравится больше всего."
+    },
+    "line:b05f6eea": {
+      "source": "Isn't that... Wood?",
+      "text": "Это же... дерево?"
+    },
+    "line:a99b03ed": {
+      "source": "Never tried it.",
+      "text": "Мне не доводилось пробовать."
+    },
+    "line:266f699d": {
+      "source": "Yeah, taste good!",
+      "text": "Ага, вкусно!"
+    },
+    "line:9c3e6004": {
+      "source": "Though you probably shouldn't eat them.",
+      "text": "Хотя тебе, наверное, лучше их не есть."
+    },
+    "line:0a0e6773": {
+      "source": "Dragon stomachs are a bit more... robust than yours.",
+      "text": "У драконов желудок чуть... покрепче твоего."
+    },
+    "line:3fab049a": {
+      "source": "You probably shouldn't.",
+      "text": "Наверное, и не стоит."
+    },
+    "line:85fa0d03": {
+      "source": "You'd need a dragon stomach first!",
+      "text": "Для начала нужен драконий желудок!"
+    },
+    "line:82d7b5e4": {
+      "source": "Says who?",
+      "text": "Кто сказал?"
+    },
+    "line:14e7b293": {
+      "source": "Me?",
+      "text": "Я?"
+    },
+    "line:4b3f7c6a": {
+      "source": "Biology...? <size=70%> <i>I think?",
+      "text": "Биология?.. <size=70%> <i>Наверное?"
+    },
+    "line:f16e75f3": {
+      "source": "Well...",
+      "text": "Ну..."
+    },
+    "line:675e7284": {
+      "source": "I'm a rule breaker!",
+      "text": "А я нарушаю правила!"
+    },
+    "line:dd0f7b1d": {
+      "source": "Don't worry, dragons are made to eat anything.",
+      "text": "Не переживай, драконы приспособлены есть что угодно."
+    },
+    "line:e8aa18f4": {
+      "source": "I can digest pretty much anything.",
+      "text": "Я могу переварить почти всё."
+    },
+    "line:7e9a1f83": {
+      "source": "The stem is just extra food.",
+      "text": "Веточка — просто добавка."
+    },
+    "line:c4cb161a": {
+      "source": "Although grapes have always hit a specific craving.",
+      "text": "Хотя иногда хочется именно винограда."
+    },
+    "line:52fb116d": {
+      "source": "Oh, and seems I got some on my face. woops.",
+      "text": "О, кажется, я ещё и морду испачкал. Упс."
+    },
+    "line:202fce0c": {
+      "source": "RYAN THE BONE!",
+      "text": "РАЙАН, КОСТЬ!"
+    },
+    "line:c0e34d36": {
+      "source": "You really ate that entire thing... Woah.",
+      "text": "Ты правда съел это целиком... Ух ты."
+    },
+    "line:b132719c": {
+      "source": "Mmph- Hm?",
+      "text": "М-мф... М?"
+    },
+    "line:270276eb": {
+      "source": "Oh, that's my favorite part!",
+      "text": "О, это моя любимая часть!"
+    },
+    "line:4f172746": {
+      "source": "How do you even digest that?",
+      "text": "Как ты вообще это перевариваешь?"
+    },
+    "line:f5462edf": {
+      "source": "<size=60%> thats hot.",
+      "text": "<size=60%> это горячо."
+    },
+    "line:d9272031": {
+      "source": "I'm a dragon.",
+      "text": "Я же дракон."
+    },
+    "line:637629a8": {
+      "source": "Pretty sure I can digest anything.",
+      "text": "Уверен, я могу переварить что угодно."
+    },
+    "line:56d34a41": {
+      "source": "It is? Good to know...",
+      "text": "Правда? Буду знать..."
+    },
+    "line:7ab244af": {
+      "source": "It's the best way to enjoy food.",
+      "text": "Так вкуснее всего."
+    },
+    "line:ec8243d8": {
+      "source": "It's interesting; you bipeds tend to savor your meals.",
+      "text": "Интересно, что вы, двуногие, обычно смакуете еду."
+    },
+    "line:7d9ffc48": {
+      "source": "But nothing beats a large gulp!",
+      "text": "А по мне, лучше большого глотка ничего нет!"
+    },
+    "line:8f598864": {
+      "source": "That one was almost too big-",
+      "text": "Этот чуть не оказался слишком большим..."
+    },
+    "line:19698f13": {
+      "source": "You didn't even open the watermelon.",
+      "text": "Ты даже не разрезал арбуз."
+    },
+    "line:c0161bbc": {
+      "source": "How did it taste?",
+      "text": "Какой он на вкус?"
+    },
+    "line:7a471225": {
+      "source": "Yeaaah.",
+      "text": "Да-а-а."
+    },
+    "line:ec771552": {
+      "source": "Woops.",
+      "text": "Упс."
+    },
+    "line:56261ccb": {
+      "source": "Was still good though! I like how it feels sliding down.",
+      "text": "Но всё равно было приятно! Мне нравится, как он скользит вниз."
+    },
+    "line:63837f22": {
+      "source": "I forgot to bite into it so... Nothing?",
+      "text": "Я забыл откусить, так что... никакой?"
+    },
+    "line:f5b37855": {
+      "source": "Felt good sliding down though!",
+      "text": "Зато приятно было, когда он скользил вниз!"
+    },
+    "line:4fe271cc": {
+      "source": "<size=70%> woah.",
+      "text": "<size=70%> ух ты."
+    },
+    "line:deffce5c": {
+      "source": "It's crazy how much your neck can handle.",
+      "text": "Невероятно, сколько всего может пройти через твою шею."
+    },
+    "line:d9d276bb": {
+      "source": "Kobolds always seem enamored by me eating.",
+      "text": "Кобольды всегда заворожённо смотрят, как я ем."
+    },
+    "line:48cfc92b": {
+      "source": "It's endearing!",
+      "text": "Это мило!"
+    },
+    "line:3b76093c": {
+      "source": "It's made for eating things whole.",
+      "text": "Она и приспособлена к тому, чтобы глотать всё целиком."
+    },
+    "line:ad460e4b": {
+      "source": "<size=70%><i>Yeah?",
+      "text": "<size=70%><i>Да?"
+    },
+    "line:22b2643b": {
+      "source": "Makes sense.",
+      "text": "Логично."
+    },
+    "line:171707d2": {
+      "source": "Mhm!",
+      "text": "Ага!"
+    },
+    "line:812700a5": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:b482634c": {
+      "source": "Yeah! its useful.",
+      "text": "Ага! Удобно."
+    },
+    "line:7c56b2d8": {
+      "source": "So... I was thinking about my relationships.",
+      "text": "Так вот... Я тут думал о своих отношениях."
+    },
+    "line:ea66b5af": {
+      "source": "How so?",
+      "text": "В каком смысле?"
+    },
+    "line:7b7b0a3f": {
+      "source": "Like, the future of my relationships.",
+      "text": "Ну, о том, какие отношения у меня ещё могут быть."
+    },
+    "line:ed4b0d48": {
+      "source": "I'm kind of excited.",
+      "text": "Даже как-то радостно об этом думать."
+    },
+    "line:8aa0fc1a": {
+      "source": "Well, you are one hell of a catch.",
+      "text": "Ну, с тобой встречаться — вот это удача."
+    },
+    "line:a6c1f2f4": {
+      "source": "I'm excited for you!",
+      "text": "Я за тебя радуюсь!"
+    },
+    "line:1c90fb6d": {
+      "source": "Oh you. Gonna make me blush.",
+      "text": "Ну тебя. Я сейчас покраснею."
+    },
+    "line:30f1f583": {
+      "source": "Thanks!",
+      "text": "Спасибо!"
+    },
+    "line:9364911d": {
+      "source": "Really looking forward to finding new people.",
+      "text": "Очень хочется познакомиться с кем-нибудь новым."
+    },
+    "line:0554966a": {
+      "source": "Now, more food?",
+      "text": "Ну что, ещё поедим?"
+    },
+    "line:bf059ff3": {
+      "source": "Hmm...",
+      "text": "Хм..."
+    },
+    "line:29359884": {
+      "source": "What's up?",
+      "text": "Что такое?"
+    },
+    "line:b8282714": {
+      "source": "I was thinking.",
+      "text": "Я вот о чём подумал."
+    },
+    "line:2e182063": {
+      "source": "It's difficult to find folks that are outside of my current bubble.",
+      "text": "Непросто знакомиться с людьми за пределами своего круга."
+    },
+    "line:cb91e703": {
+      "source": "Like, I love those around me, but there's a lot of baggage there.",
+      "text": "Мне дороги те, кто рядом, но у нас много чего накопилось."
+    },
+    "line:5da1e074": {
+      "source": "Y'know?",
+      "text": "Понимаешь?"
+    },
+    "line:e7f0e9ed": {
+      "source": "Makes sense.",
+      "text": "Понимаю."
+    },
+    "line:fe3484ea": {
+      "source": "I get how you'd feel that way after a breakup, yeah.",
+      "text": "Да, понимаю, почему после расставания тебе так кажется."
+    },
+    "line:71c0ee9a": {
+      "source": "Yeah, ever since the breakup I've been looking for something new.",
+      "text": "Да. После расставания хочется чего-то нового."
+    },
+    "line:d2558a04": {
+      "source": "Maybe someone?",
+      "text": "А может, кого-то нового?"
+    },
+    "line:44658d73": {
+      "source": "Hmm...",
+      "text": "Хм..."
+    },
+    "line:6804839d": {
+      "source": "Yeah. It's hard to unwind groups after something like that.",
+      "text": "Да. После такого непросто разобраться, как общаться с общей компанией."
+    },
+    "line:f9193c0d": {
+      "source": "I'm willing to do it. But I'd like something new.",
+      "text": "Я готов с этим разобраться. Но хочется чего-то нового."
+    },
+    "line:6f293b7a": {
+      "source": "Maybe someone new...",
+      "text": "Может, кого-то нового..."
+    },
+    "line:e6290003": {
+      "source": "I'm so excited. I'll get you two in contact!",
+      "text": "Как здорово! Я вас познакомлю!"
+    },
+    "line:7734bf93": {
+      "source": "Me too, thanks!",
+      "text": "Я тоже рад, спасибо!"
+    },
+    "line:b4990e3d": {
+      "source": "If I'm honest. I've had a crush on you for a bit.",
+      "text": "Если честно, ты мне уже давно нравишься."
+    },
+    "line:0ec807a4": {
+      "source": "Really? Aw, That's really sweet.",
+      "text": "Правда? Ой, как мило."
+    },
+    "line:98f800d3": {
+      "source": "I didn't know anyone could like me that much so easily.",
+      "text": "Не думал, что могу так легко кому-то настолько понравиться."
+    },
+    "line:563d71ba": {
+      "source": "You are too!",
+      "text": "Ты тоже!"
+    },
+    "line:c00d76cd": {
+      "source": "Aw, thanks. I only look so good 'cause of your washes!",
+      "text": "Ой, спасибо. Я так хорошо выгляжу только благодаря твоим мойкам!"
+    },
+    "line:63981253": {
+      "source": "I'm... Happy.",
+      "text": "Я... счастлив."
+    },
+    "line:6e0e4e11": {
+      "source": "Yeah. You two will be cute.",
+      "text": "Ага. Вы будете мило смотреться вместе."
+    },
+    "line:77ca2316": {
+      "source": "Yeah! Thanks for the food. I'll go get the gate.",
+      "text": "Ага! Спасибо за угощение. Сейчас открою ворота."
+    },
+    "line:a9980f5e": {
+      "source": "Yeah, this has been super nice.",
+      "text": "Да, было очень здорово."
+    },
+    "line:13c906c7": {
+      "source": "It really has been. You're wonderful.",
+      "text": "И правда. С тобой замечательно."
+    },
+    "line:0a0d6bc0": {
+      "source": "You too! I'll go get the gate.",
+      "text": "И с тобой! Сейчас открою ворота."
+    },
+    "line:e8a91447": {
+      "source": "He's a lot. But, I like it.",
+      "text": "С ним непросто. Но мне это нравится."
+    },
+    "line:4b3c70d9": {
+      "source": "He's snappy, but tender too!",
+      "text": "Он огрызается, но бывает и нежным!"
+    },
+    "line:4c11c83e": {
+      "source": "He's tiny, I like being eye level with him.",
+      "text": "Он крошечный. Мне нравится смотреть ему в глаза на одном уровне."
+    },
+    "line:bdca3e1b": {
+      "source": "I like... him.",
+      "text": "Мне нравится... он сам."
+    },
+    "line:dd0c77ae": {
+      "source": "Mmm, Yeah I know the type.",
+      "text": "М-м, да, знаю таких."
+    },
+    "line:da21cf49": {
+      "source": "Makes sense! Yeah tiny drakes are fun.",
+      "text": "Понимаю! Да, с маленькими дрейками весело."
+    },
+    "line:2bfa396c": {
+      "source": "Aw... Thats really sweet",
+      "text": "Ой... Как мило."
+    },
+    "line:323e546b": {
+      "source": "You're a good friend too, I'll go get the gate.",
+      "text": "Мне тоже дорога наша дружба. Сейчас открою ворота."
     }
   }
 }
