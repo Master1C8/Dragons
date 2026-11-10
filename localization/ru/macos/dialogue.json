@@ -3338,6 +3338,386 @@
     "line:6126a614": {
       "source": "Awesome! Come on in..",
       "text": "Здорово! Заходи..."
+    },
+    "line:9ef857c8": {
+      "source": "I'll need to resurrect Igwix, oh how embarrassing!",
+      "text": "Придётся воскресить Игвикса. Какая неловкость!"
+    },
+    "line:08c850bf": {
+      "source": "The apothecary will tarnish my name for months.",
+      "text": "Аптекарь ещё несколько месяцев будет порочить моё имя."
+    },
+    "line:a716d3b8": {
+      "source": "Uunf. T-that was... Rather undignified.",
+      "text": "Уф. Э-это было... не слишком достойно."
+    },
+    "line:c4384e8e": {
+      "source": "<size=70%><i>but it was nice... Thank you.",
+      "text": "<size=70%><i>но приятно... Благодарю."
+    },
+    "line:7d13eca0": {
+      "source": "Oh my- I didn't expect you to be so... hands on",
+      "text": "Ох... Я не ожидал столь... непосредственного участия."
+    },
+    "line:ec0e5330": {
+      "source": "<size=70%><i>feel free to continue-</i>",
+      "text": "<size=70%><i>можешь продолжать...</i>"
+    },
+    "line:5dacf226": {
+      "source": "Hey there.",
+      "text": "Привет."
+    },
+    "line:fe3996b8": {
+      "source": "Alexander!",
+      "text": "Александр!"
+    },
+    "line:d2589856": {
+      "source": "Hey, welcome back!",
+      "text": "Привет! С возвращением!"
+    },
+    "line:680991cf": {
+      "source": "Haha, yes. Happy to see you.",
+      "text": "Ха-ха, да. Рад тебя видеть."
+    },
+    "line:44689f21": {
+      "source": "Happy to be back.",
+      "text": "Рад снова здесь побывать."
+    },
+    "line:d57520b1": {
+      "source": "I seem to have gotten myself covered in ink!",
+      "text": "Похоже, я весь перепачкался в чернилах!"
+    },
+    "line:434527c6": {
+      "source": "Truly terrible, no?",
+      "text": "Сущий ужас, не правда ли?"
+    },
+    "line:f7f87f6c": {
+      "source": "Well, That's why I'm here!",
+      "text": "Ну, я для того и здесь!"
+    },
+    "line:546d1bf2": {
+      "source": "Oh wow, you're really covered in it!",
+      "text": "Ого, ты и правда весь в чернилах!"
+    },
+    "line:61c8781b": {
+      "source": "Indeed! You're the only kobold I wish to wash me now.",
+      "text": "Именно! Теперь я доверяю мыть себя лишь одному кобольду. Тебе."
+    },
+    "line:db997182": {
+      "source": "Aw, thank you Alexander.",
+      "text": "Ох, спасибо, Александр."
+    },
+    "line:ee3c126b": {
+      "source": "What about your private washers?",
+      "text": "А как же твои частные мойщики?"
+    },
+    "line:4da976f5": {
+      "source": "Of course! You run a fine establishment.",
+      "text": "Разумеется! У тебя превосходное заведение."
+    },
+    "line:780c151c": {
+      "source": "You needn't worry. The washer's union is... More powerful than I.",
+      "text": "Не волнуйся. Профсоюз мойщиков... влиятельнее меня."
+    },
+    "line:c25d1c85": {
+      "source": "<size=70%>They're still on my payroll.",
+      "text": "<size=70%>Я им по-прежнему плачу."
+    },
+    "line:c570a462": {
+      "source": "A rather good excuse to see my favorite kobold.",
+      "text": "Весьма удачный предлог повидать любимого кобольда."
+    },
+    "line:5340a315": {
+      "source": "Aw... Thanks!",
+      "text": "Ох... Спасибо!"
+    },
+    "line:20f96302": {
+      "source": "Alexander!",
+      "text": "Александр!"
+    },
+    "line:b6c96475": {
+      "source": "Of course, you run a fine establishment.",
+      "text": "Разумеется, у тебя превосходное заведение."
+    },
+    "line:9aa86a9b": {
+      "source": "What? There is no harm caused by a genuine compliment!",
+      "text": "Что? Нет ничего дурного в искреннем комплименте!"
+    },
+    "line:0c986dec": {
+      "source": "I never expected you to be the type to be so messy!",
+      "text": "Вот уж не думалось, что ты так легко пачкаешься!"
+    },
+    "line:af0d0972": {
+      "source": "How come you're covered in ink?",
+      "text": "Откуда на тебе столько чернил?"
+    },
+    "line:393d0e05": {
+      "source": "I... hm.",
+      "text": "Я... хм."
+    },
+    "line:836c079c": {
+      "source": "I <i>think </i> I must've spilled an inkwell <i>on the way here</i>. Rather clumsy of me!",
+      "text": "Я <i>полагаю</i>, что опрокинул чернильницу <i>по дороге сюда</i>. Как неловко с моей стороны!"
+    },
+    "line:155c00eb": {
+      "source": "'think', 'On the way here'? Then you weren't covered in ink before...",
+      "text": "«Полагаю», «по дороге сюда»? Значит, раньше на тебе чернил не было..."
+    },
+    "line:8441bf7b": {
+      "source": "Oh.",
+      "text": "О."
+    },
+    "line:1271b80c": {
+      "source": "Right.",
+      "text": "Верно."
+    },
+    "line:759a495e": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:e3aa4e29": {
+      "source": "Truth be told, I got dirty to come here.",
+      "text": "Правду сказать, я испачкался нарочно, чтобы прийти сюда."
+    },
+    "line:59fb47b0": {
+      "source": "Awww. You don't need to be coverd in ink to say hi!",
+      "text": "Ох! Чтобы поздороваться, вовсе не обязательно вымазываться в чернилах!"
+    },
+    "line:403f2ab7": {
+      "source": "Oh! Then I better let you in. I'll go get the gate.",
+      "text": "О! Тогда надо тебя впустить. Сейчас открою ворота."
+    },
+    "line:cfcb40c7": {
+      "source": "Really?",
+      "text": "Правда?"
+    },
+    "line:6c5e2459": {
+      "source": "I'll keep that in mind. I'm used to things being transactional.",
+      "text": "Буду иметь в виду. Я привык, что всё строится на обмене."
+    },
+    "line:fa6e232e": {
+      "source": "I'm always happy to see you. I'll go get the gate for you.",
+      "text": "Мне всегда приятно тебя видеть. Сейчас открою ворота."
+    },
+    "line:d60f2dc0": {
+      "source": "Thank you.",
+      "text": "Благодарю."
+    },
+    "line:1475f95c": {
+      "source": "Professor Igwyx- My colleague who self-immolated earlier.",
+      "text": "Профессор Игвикс... Мой коллега, который недавно самовозгорелся."
+    },
+    "line:8245fe2b": {
+      "source": "He's already back to work. Thanks for helping with all that.",
+      "text": "Он уже снова работает. Спасибо за помощь со всем этим."
+    },
+    "line:67cc394b": {
+      "source": "Yeah, that was scary at first.",
+      "text": "Да, поначалу было страшно."
+    },
+    "line:4bad37a5": {
+      "source": "Oh that's good. I'm happy he's okay.",
+      "text": "О, это хорошо. Главное, что с ним всё в порядке."
+    },
+    "line:f1fc3e3c": {
+      "source": "Luckily death via spontaneous combustion is a concept we have thoroughly curtailed in the modern world.",
+      "text": "К счастью, в современном мире мы почти полностью покончили со смертями от самовозгорания."
+    },
+    "line:dd9d30d2": {
+      "source": "Indeed. I'm glad you were able to help.",
+      "text": "Именно. Рад, что тебе удалось помочь."
+    },
+    "line:7e08544c": {
+      "source": "...It's odd being able to speak so freely with someone.",
+      "text": "...Необычно говорить с кем-то так свободно."
+    },
+    "line:e838533b": {
+      "source": "I feel as I could say anything to you.",
+      "text": "Мне кажется, я могу рассказать тебе что угодно."
+    },
+    "line:52695aa2": {
+      "source": "Anything?",
+      "text": "Что угодно?"
+    },
+    "line:c4595dd5": {
+      "source": "Yes. It's invigorating to be so candid.",
+      "text": "Да. Такая откровенность придаёт сил."
+    },
+    "line:c374e532": {
+      "source": "Somehow that feels more honest than anything anyone else says.",
+      "text": "Почему-то это звучит искреннее любых чужих слов."
+    },
+    "line:a05a7804": {
+      "source": "Say...",
+      "text": "Послушай..."
+    },
+    "line:366a7f73": {
+      "source": "I have a question.",
+      "text": "У меня есть вопрос."
+    },
+    "line:8c3b76ea": {
+      "source": "What is it?",
+      "text": "Какой?"
+    },
+    "line:1a0b719d": {
+      "source": "What's up?",
+      "text": "Что такое?"
+    },
+    "line:b99e1503": {
+      "source": "Could you ask <i>me</i> a question?",
+      "text": "Можешь задать вопрос <i>мне</i>?"
+    },
+    "line:2fae1274": {
+      "source": "What do you mean?",
+      "text": "В каком смысле?"
+    },
+    "line:03cf1c9a": {
+      "source": "What kind of question?",
+      "text": "Какой вопрос?"
+    },
+    "line:95ff1bed": {
+      "source": "I just wish for you to ask me a question. Any question.",
+      "text": "Мне просто хочется услышать от тебя вопрос. Любой."
+    },
+    "line:92d2a30a": {
+      "source": "Anything. I'm just curious.",
+      "text": "Какой угодно. Мне просто любопытно."
+    },
+    "line:3027bcf7": {
+      "source": "Thanks for asking. It's enjoyable to be asked personal questions.",
+      "text": "Спасибо за вопросы. Приятно, когда спрашивают о личном."
+    },
+    "line:04c62f9b": {
+      "source": "I'm <i>spotless</i>.",
+      "text": "Я <i>без единой грязинки</i>."
+    },
+    "line:95db900b": {
+      "source": "I never miss a spot.",
+      "text": "У меня ни пятнышка не останется."
+    },
+    "line:03eb977c": {
+      "source": "I'm well aware. A deep clean has a distinct feel!",
+      "text": "Прекрасно знаю. Тщательную мойку ни с чем не спутаешь!"
+    },
+    "line:7052576b": {
+      "source": "That's what I like to hear.",
+      "text": "Вот это мне приятно слышать."
+    },
+    "line:ca035ef2": {
+      "source": "I'll be back again. It's nice having you as a friend.",
+      "text": "Я ещё вернусь. Приятно, что мы с тобой друзья."
+    },
+    "line:5c335985": {
+      "source": "Looking forward to seeing you soon.",
+      "text": "Буду ждать нашей следующей встречи."
+    },
+    "line:69963a6c": {
+      "source": "I'm happy you feel comfy here.",
+      "text": "Приятно, что тебе здесь уютно."
+    },
+    "line:ffa63d1b": {
+      "source": "Me too.",
+      "text": "И мне."
+    },
+    "line:d3c733f5": {
+      "source": "Me too.",
+      "text": "И мне."
+    },
+    "line:bcbc6373": {
+      "source": "Good evening!",
+      "text": "Добрый вечер!"
+    },
+    "line:06ed6aea": {
+      "source": "Hiiiii! Hiii!",
+      "text": "Приве-е-ет! Привет!"
+    },
+    "line:33480903": {
+      "source": "Hey, Alexander!",
+      "text": "Привет, Александр!"
+    },
+    "line:90dd6d9d": {
+      "source": "Hah, eager as always.",
+      "text": "Ха, энтузиазма тебе, как всегда, не занимать."
+    },
+    "line:a5780e74": {
+      "source": "It's wonderful to be back!",
+      "text": "Как приятно вернуться!"
+    },
+    "line:1f2907ed": {
+      "source": "The rain has been unrelenting today!",
+      "text": "Дождь сегодня никак не утихнет!"
+    },
+    "line:8919009a": {
+      "source": "The ambiance is nice.",
+      "text": "Зато какая атмосфера."
+    },
+    "line:1804bf0a": {
+      "source": "The rain is nice.",
+      "text": "Хороший дождь."
+    },
+    "line:6bbd7f1d": {
+      "source": "I've always hated the rain.",
+      "text": "Терпеть не могу дождь."
+    },
+    "line:8e34b87d": {
+      "source": "Agreed, though I'd still like to be let in as soon as convenient.",
+      "text": "Согласен, хотя я всё же предпочёл бы войти при первой возможности."
+    },
+    "line:fd8d786a": {
+      "source": "Oh?",
+      "text": "Вот как?"
+    },
+    "line:47dc71f3": {
+      "source": "I suppose I understand disliking the mess it may cause.",
+      "text": "Пожалуй, понимаю, почему тебе не по душе грязь, которая остаётся после дождя."
+    },
+    "line:d1ec7684": {
+      "source": "But that is why I am here!",
+      "text": "Но именно поэтому я здесь!"
+    },
+    "line:7279121a": {
+      "source": "Alright! I'll go get you the gate.",
+      "text": "Ладно! Сейчас открою тебе ворота."
+    },
+    "line:e449156d": {
+      "source": "Thank you!",
+      "text": "Благодарю!"
+    },
+    "line:c8281b83": {
+      "source": "Mmm, I understand that to mean you'll get the gate?",
+      "text": "М-м, правильно ли я понимаю, что ты откроешь ворота?"
+    },
+    "line:3ede5541": {
+      "source": "Right.",
+      "text": "Ясно."
+    },
+    "line:848f5cd8": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:12bf5baf": {
+      "source": "Could you get the gate...?",
+      "text": "Не откроешь ворота?.."
+    },
+    "line:271a3846": {
+      "source": "Fair enough. I'll be waiting!",
+      "text": "Что ж, подожду!"
+    },
+    "line:b54ee04d": {
+      "source": "huff... Thank you for that.",
+      "text": "Уф... Благодарю."
+    },
+    "line:f885f11d": {
+      "source": "Oh... I suppose this is alright~",
+      "text": "О... Полагаю, так можно~"
+    },
+    "line:d7bf167b": {
+      "source": "That was... Nicer than I expected.",
+      "text": "Это было... приятнее, чем я ожидал."
+    },
+    "line:ec00a1fe": {
+      "source": "The mount? I... suppose!",
+      "text": "Станок? Я... пожалуй, не против!"
     }
   }
 }
