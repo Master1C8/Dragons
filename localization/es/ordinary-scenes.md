@@ -33,3 +33,7 @@ Author self-reviewed 35 IDs in `Conrad_Outro_1`, `Conrad_Intro_2` and `Conrad_Ou
 ## Ryan food interactions
 
 Author self-reviewed 59 IDs across `Ryan_egg_dialog`, `Ryan_grapes_dialog`, `Ryan_ham_dialog` and `Ryan_melon_dialog`, preserving option responses and the original open markup; the ellipsis is intentionally unchanged. Both stock source readers and object encode/parse passed: macOS SHA-256 `cf1d264058fb580fbf2292b137629a7709f38f9cd552c415e31e4e3220cdac28`; Windows `ea7ce8f1a7184c1da62154225045f986b50d01b9dbc54125ce00f77b63abb5ae`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary8/`.
+
+## Alexander early visits and Ryan first wash
+
+Author self-reviewed 35 newly authored IDs in `Alexander_Intro`, `Alexander_Outro`, `Alexander_2_required` and `Ryan_1_required`, retaining the approved college name and Alexander’s formal register. The 36-ID check includes one previously authored line; the ellipsis is intentional. Both stock source readers and object encode/parse passed: macOS SHA-256 `cbc82667923b2ef0869a316983c5837ea913ae6e98a4c9947a260ea22d78da90`; Windows `082d1dca25e0d0af19ff15d9cd8b8fcd0b43d8499a1e6774f03a5c7aa943f400`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary9/`.
