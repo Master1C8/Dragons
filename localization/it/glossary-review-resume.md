@@ -323,3 +323,7 @@ The three `Ryan_Conrad_SexScene`, `Ryan_Conrad_SexScene_Cum` and `Ryan_Conrad_Se
 ### Resume-08 Start diagnostic row-level unit
 
 The complete `Start` group was reread in both builds: 24 rows, consisting of an unidentified voice reacting to a Yarn/Unity script and numbered test lines. The two author self-review layers found no grounded in-world character or glossary concept; first person is not attributed to the player or any named character. Every paired row and the ordered group are hash-bound in `glossary-row-review-resume-08.json`. This negative finding applies only to this sequence and is not an independent review.
+
+### Resume-08 Ryan egg row-level unit
+
+Both author self-review layers cover all nine paired `Ryan_egg_dialog` rows, choices and their answers, with individual row and ordered-scene hashes in `glossary-row-review-resume-08.json`. Ryan discusses the egg with the player; `line:dcc4774b` identifies WingCo as the shop where it was bought, not the downtown venue Wings. The bound Ryan, player, kobold, dragon and WingCo fields fit this scene, and player gender remains unestablished. No field defect was found in this bounded scene; neither author layer is independent.

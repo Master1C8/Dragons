@@ -469,6 +469,135 @@
           "decision": "Numbered test line; no character or glossary concept identified."
         }
       ]
+    },
+    {
+      "group": "Ryan_egg_dialog",
+      "orderedRowsSha256": "cf306a97ea8a15306966f3818183b809b95a3b9bdab9ea9d1f3df8ca3e028465",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-wingco",
+          "sourceEntrySha256": "00c60b2464c82a74a0078c0da773a3adba7a4b264fda365efd72e0af02fc7e2b",
+          "localeFieldsSha256": "8e3d125fe1c403da1a9ae9872cb95aba3d21e17b82f894f80262d4d1f9fe4668"
+        },
+        {
+          "id": "dnw-kobold",
+          "sourceEntrySha256": "655be37c2da8a22f692dbac404a5811b4227a465b44d7c6c85bc35af64f51df3",
+          "localeFieldsSha256": "8a1ac2a388a6bd2ea4517b1b90a93ddd9bb82862e39762fe8fcbf986a3f688b3"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        }
+      ],
+      "groupContext": "The player and Ryan discuss an egg Ryan ate; WingCo is its shop, not Wings the downtown venue. Player gender remains unspecified. The paired choice alternatives route to separate replies.",
+      "layer1": "Author source self-review: every paired row, choice and implied participant reviewed in the food scene context; WingCo is a shop, distinct from the venue Wings.",
+      "layer2": "Author Italian field self-review: bound player, kobold, Ryan, dragon and WingCo fields fit the observed uses; player neutrality remains required. No field defect established by this unit. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:0ce8d3c2",
+          "pairedRowSha256": "c64a9c870d249ef5ea29a5119f1c40ce1641199bfd8bdb1e60bc895e2050d860",
+          "speakerOrKind": "player option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "decision": "Player assumed the egg was decorative; no gender inferred.",
+          "conceptUses": []
+        },
+        {
+          "id": "yarn:line:53301d3b",
+          "pairedRowSha256": "4f46dfacd1e32a8c1749bf38ee0132a19001487f6a6a39836210f274e1da988e",
+          "speakerOrKind": "player option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "decision": "Player asks what kind of egg it was.",
+          "conceptUses": []
+        },
+        {
+          "id": "yarn:line:e96114a2",
+          "pairedRowSha256": "69a5df82c8303f26cc01dc52f1970e20b6859b121536c815b2e5b6455c22f603",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "decision": "Ryan denies that the egg was decorative.",
+          "conceptUses": []
+        },
+        {
+          "id": "yarn:line:7f5113d5",
+          "pairedRowSha256": "e888661b7ee8fafc34f97569f6bb9e751305430b2bcfe0c6c85157c0715c2fc9",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-ryan",
+            "dnw-player"
+          ],
+          "decision": "Ryan addresses the player; they are unaccustomed to eating eggs whole.",
+          "conceptUses": []
+        },
+        {
+          "id": "yarn:line:c5001a4c",
+          "pairedRowSha256": "1ff2bae81e1796790f8b2c2afb6cb797e8bd14167ce65836e3a1509977372dfa",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "decision": "Ryan states his opinion on eating eggs.",
+          "conceptUses": []
+        },
+        {
+          "id": "yarn:line:f0a579a5",
+          "pairedRowSha256": "c82f4dcab3d8eda2928e962542d50bef7fd7f396aab106632303dbe9d7388563",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "decision": "Ryan hesitates before answering the egg question.",
+          "conceptUses": []
+        },
+        {
+          "id": "yarn:line:66957ed2",
+          "pairedRowSha256": "054fbc97947466e343e8f2e49c00b97ccc8b350849ea4929de3c449bdc8f1bd5",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "decision": "Ryan tentatively describes the egg as blue.",
+          "conceptUses": []
+        },
+        {
+          "id": "yarn:line:dcc4774b",
+          "pairedRowSha256": "bbdc1eadc7a722b16f4c81a3afa28531e81157b66861608731b3c075fb65f968",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "decision": "Ryan is unsure of the egg type and names WingCo as the shop where it was bought.",
+          "conceptUses": [
+            "dnw-wingco"
+          ]
+        },
+        {
+          "id": "yarn:line:4af4703c",
+          "pairedRowSha256": "09c5a501ea3aefcfe5773a8792009e8859593001df9aeb77a694ee90e3bde2aa",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "decision": "Ryan says the egg tasted good.",
+          "conceptUses": []
+        }
+      ]
     }
   ]
 }
