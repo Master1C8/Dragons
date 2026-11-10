@@ -389,3 +389,8 @@ Author self-reviewed 56 IDs in `Ryan_grab_basket`, `Ryan_grapes_dialog` and `Rya
 Author self-reviewed 42 IDs in the egg, ham and `RyanDate_*` groups. One apostrophe-only source variant has an explicit shared translation; a Polish colon was replaced with a comma to preserve the source speaker-delimiter contract. This is author self-review, not independent audit.
 
 `translation.json` now has **1,659 / 1,947 IDs**, SHA-256 `8b9cee42bb010d1010f15862b33a1184e0fac27659caa2063e2b3d61c6e0096e`. `resume-01/add-ryan-food-date.py` and its map validate the preceding draft and paired readers; macOS accepts 1,635 and Windows 1,653 bindings. The complete guard reports 288 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Ryan food relationship dialogue batch
+
+- Authored and self-reviewed 89 additional English-bound IDs in `ryan_food_dialogue`, including relationship choices, both romance routes, friendship and departures. Two build differences are apostrophe-only and explicitly share the reviewed target. This is author review, not independent audit.
+- Draft: 1,748/1,947 IDs; SHA-256 `2e7237b3cb2a565197edbc291039b4b76b3ee10764870bd4ce0c339fc48931aa`. Source-bound readers accepted 1,724 macOS and 1,742 Windows bindings. The complete-package guard correctly reports 199 missing IDs. Final package, translated runtime and visual review, and independent game-text audit remain open.
