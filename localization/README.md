@@ -276,15 +276,35 @@ returned receipt records the patched Yarn Unity and companion fingerprints.
 Windows installation and restoration are still separate from this preparation
 step. See the [paired speaker build evidence](evidence/speaker-locale-build-20261110.md).
 
+## Shared translation file
+
+Edit [translation.json](ru/translation.json) for the Russian macOS and
+Windows builds. Both complete package commands accept this file and
+generate their own validated platform inputs in a temporary directory.
+Existing callers can still supply a platform input directory.
+
+The shared file records the locale and the two pinned source catalog
+hashes. Its `lines` object uses the IDs from the paired worklist:
+
+- Use a string for identical sources or a row available on one platform.
+- Use `{"text": "...", "sharedAcrossSourceVariants": true}` after checking
+  that one translation fits both different sources.
+- Use `{"platforms": {"macos": "...", "windows": "..."}}` for different
+  translations. Include every platform that owns the row.
+
+Keep the source catalog hashes and worklist IDs when authoring a new
+language for the same builds. Set the target locale and translate the
+values. The builders reject unknown or missing IDs and require an
+explicit decision when sources differ. Original strings, destination
+keys and resource fingerprints come from the pinned source data.
+
 ## Complete macOS app
 
 `build_macos_package.py` requires the same pinned shared inventory and
-paired Yarn scope as the Windows package builder. Its locale directory
-contains `dialogue.json`, `speakers.json`, `settings.json`, `slot-new.json`,
-`missing-line.json` and the required macOS `ui/<asset>.json` files.
+paired Yarn scope as the Windows package builder.
 
 ```sh
-"$PYTHON" localization/build_macos_package.py "$macos_source_app" "$macos_locale_inputs" \
+"$PYTHON" localization/build_macos_package.py "$macos_source_app" localization/ru/translation.json \
   --locale ru --inventory "$shared_inventory" --yarn-scope "$paired_yarn_scope" \
   --managed-tool "$managed_fallback_tool" --speaker-tool "$speaker_tool" \
   --speaker-runtime "$speaker_runtime" --speaker-runtime-sha "$speaker_runtime_sha" \
@@ -304,24 +324,22 @@ acceptance. See the [paired package control](evidence/complete-macos-package-202
 ## Paired text authoring worklist
 
 Export one worklist for both builds from the pinned inventory and Yarn
-scope. The draft root contains the existing platform dialogue files.
+scope. Pass the shared translation file to include current wording.
 
 ```sh
 "$PYTHON" localization/export_locale_worklist.py \
   --inventory "$shared_inventory" --yarn-scope "$paired_yarn_scope" \
   --macos-data "$macos_data" --windows-data "$windows_data" \
-  --draft-root localization/ru --locale ru --output "$fresh_worklist"
+  --locale-file localization/ru/translation.json --locale ru --output "$fresh_worklist"
 ```
 
 Each row has one stable authoring ID. Its `builds` entries carry the
 exact English source, package file, input key and inventory references.
-Use each build's own `source` and the corresponding
-`sourceFingerprints` entry when preparing its locale file. Yarn rows
-retain their node, instruction position, choice kind and any fixed
-speaker prefix. The special-scene index links these rows to direct and
-contextual dependencies in the shared inventory. Existing draft values
-are marked `draft`. The export does not authorize translation or count
-any entry as accepted. See the
+Yarn rows retain their node, instruction position, choice kind and any
+fixed speaker prefix. The special-scene index links these rows to direct
+and contextual dependencies in the shared inventory. Existing wording
+appears as `draft`. Omit the file for a new locale, or pass `--draft-root`
+for legacy platform dialogue drafts. See the
 [verified worklist control](evidence/locale-workload-v42-20261110.md#paired-authoring-worklist).
 
 ## Windows replacement package
@@ -329,13 +347,9 @@ any entry as accepted. See the
 `build_windows_package.py` combines the audited Windows adapters in one
 ZIP. Use the pinned v42 shared inventory and paired Yarn scope described
 in [the fragment marker audit](evidence/yarn-fragment-markers-20261110.md).
-The input directory contains `dialogue.json`, `speakers.json`,
-`settings.json`, `slot-new.json`, `missing-line.json` and `ui/` with
-the exact Windows UI locale files required by
-[the non-Yarn scope](evidence/non-yarn-translation-scope-20261110.md).
 
 ```sh
-"$PYTHON" localization/build_windows_package.py "$windows_data" "$windows_locale_inputs" \
+"$PYTHON" localization/build_windows_package.py "$windows_data" localization/ru/translation.json \
   --locale ru --inventory "$shared_inventory" --yarn-scope "$paired_yarn_scope" \
   --managed-tool "$managed_fallback_tool" --speaker-tool "$speaker_tool" \
   --speaker-runtime "$speaker_runtime" --speaker-runtime-sha "$speaker_runtime_sha" \

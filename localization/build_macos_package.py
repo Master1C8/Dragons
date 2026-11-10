@@ -18,7 +18,7 @@ def build(source, inputs, requested, inventory, scope_path, output, *,
     data = source / build_game.ASSET_RELATIVE.parent
     with tempfile.TemporaryDirectory(prefix='dragons-macos-locale-') as temporary:
         local = Path(temporary) / 'locale'
-        package_inputs.snapshot_inputs(inputs, local, ui_locale.ASSETS)
+        package_inputs.prepare_inputs(inputs, local, ui_locale.ASSETS, PLATFORM, requested, inventory, scope_path)
         receipt, _ = package_inputs.validate(PLATFORM, data, requested, local, inventory, scope_path)
         manifest = {
             'schema': 1, 'kind': 'macos-localization-app', 'platform': PLATFORM,
@@ -39,7 +39,7 @@ def build(source, inputs, requested, inventory, scope_path, output, *,
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('source_app', type=Path)
-    parser.add_argument('locale_inputs', type=Path)
+    parser.add_argument('locale_inputs', type=Path, help='shared locale JSON or platform input directory')
     parser.add_argument('--locale', required=True)
     parser.add_argument('--inventory', type=Path, required=True)
     parser.add_argument('--yarn-scope', type=Path, required=True)

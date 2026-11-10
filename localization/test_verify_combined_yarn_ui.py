@@ -29,7 +29,13 @@ class CombinedVerificationTests(unittest.TestCase):
             for platform, source, path_id in [('macos', MAC, 11117), ('windows', WIN, 11105)]:
                 with self.subTest(platform=platform):
                     spec = versions.BUILDS[platform]
-                    yarn = ROOT / 'ru' / platform / 'dialogue.json'
+                    keys, values, *_ = versions.load(source, spec)
+                    line = 'line:ce77a00e'
+                    yarn = root / f'{platform}-dialogue.json'
+                    yarn.write_text(json.dumps({
+                        'schema': 1, 'locale': 'ru', 'sourceObjectSha256': spec['localizationSha256'],
+                        'lines': {line: {'source': dict(zip(keys, values))[line], 'text': 'Только что!'}},
+                    }), encoding='utf-8')
                     ui_dir = root / platform
                     ui_dir.mkdir()
                     ui = ui_dir / 'sharedassets1.assets.json'
@@ -49,7 +55,7 @@ class CombinedVerificationTests(unittest.TestCase):
                     report = verifier.verify(platform, source, asset, 'ru', yarn, ui,
                                              restore_yarn_transitions=True)
                     self.assertEqual(report['restoredYarnTransitions'], 5)
-                    self.assertEqual(report['expectedEntries'], {'yarn': 15, 'ui': 1})
+                    self.assertEqual(report['expectedEntries'], {'yarn': 1, 'ui': 1})
                     with self.assertRaisesRegex(ValueError, 'candidate object differs from expected'):
                         verifier.verify(platform, source, asset, 'ru', yarn, ui)
                     env = UnityPy.load(str(asset))

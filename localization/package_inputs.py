@@ -5,6 +5,7 @@ from pathlib import Path
 from assemble_source_inventory import INVENTORY_SHA, load_pinned
 import inventory_non_yarn_scope as non_yarn
 import inventory_yarn_scope as yarn
+import paired_locale
 
 YARN_SCOPE_SHA = '753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30'
 LOCALE_FILES = ('dialogue.json', 'speakers.json', 'settings.json', 'slot-new.json', 'missing-line.json')
@@ -28,6 +29,18 @@ def snapshot_inputs(source, target, asset_hashes):
         if path.is_symlink() or not path.is_file():
             raise ValueError(f'expected a real locale input file: {name}')
         (target / name).write_bytes(path.read_bytes())
+
+
+def prepare_inputs(source, target, asset_hashes, platform, locale, inventory, scope_path):
+    source = Path(source)
+    if source.is_symlink() or not source.is_file():
+        snapshot_inputs(source, target, asset_hashes)
+        return
+    entries = load_pinned(inventory, INVENTORY_SHA)['entries']
+    scope = load_pinned(scope_path, YARN_SCOPE_SHA)
+    builds, rows = paired_locale.catalog(entries, scope)
+    translations = paired_locale.read(source, locale, YARN_SCOPE_SHA, rows)
+    paired_locale.materialize(target, platform, locale, builds[platform], rows, translations)
 
 
 def validate(platform, data, locale, inputs, inventory, scope_path):

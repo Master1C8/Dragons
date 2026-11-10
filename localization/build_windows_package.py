@@ -64,7 +64,7 @@ def build(data, inputs, requested, inventory, scope_path, output, *,
     with tempfile.TemporaryDirectory(prefix='.dragons-windows-', dir=target.parent) as temporary:
         stage = Path(temporary)
         local = stage / 'locale'
-        package_inputs.snapshot_inputs(inputs, local, ASSET_HASHES)
+        package_inputs.prepare_inputs(inputs, local, ASSET_HASHES, PLATFORM, requested, inventory, scope_path)
         dialogue, speakers = local / 'dialogue.json', local / 'speakers.json'
         receipt, ui_assets = package_inputs.validate(PLATFORM, data, requested, local, inventory, scope_path)
         manifest = {
@@ -124,7 +124,7 @@ def build(data, inputs, requested, inventory, scope_path, output, *,
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('source_data', type=Path)
-    parser.add_argument('locale_inputs', type=Path)
+    parser.add_argument('locale_inputs', type=Path, help='shared locale JSON or platform input directory')
     parser.add_argument('--locale', required=True)
     parser.add_argument('--inventory', type=Path, required=True)
     parser.add_argument('--yarn-scope', type=Path, required=True)

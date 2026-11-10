@@ -2,6 +2,13 @@
 
 Updated 2026-11-10. Canonical checkout: `/Users/antonkrutov/Desktop/Dragons`, branch `main`. Goal: complete standard Russian localization of the verified supported builds, excluding all text baked into textures, with a reproducible package and verified runtime, installation and restoration. Do not modify the installed game or its saves during tests. Publication and deployment are separate decisions.
 
+The [shared Russian translation](localization/ru/translation.json) now
+feeds both package builders. Migration from `db4fcee` reproduced all 24
+platform JSON documents by value, including 30 platform-only rows and
+25 explicitly shared translations of different source values. Both
+packages rebuilt successfully. The macOS game data and all 12 Windows
+replacement members matched the previously tested artifacts byte-for-byte.
+
 On 2026-11-09 all five absent Yarn destinations reproduced in isolated macOS
 Unity runs with controlled entry; a Windows CrossOver run independently
 reproduced the Conrad failure. A source-bound candidate appends the five
