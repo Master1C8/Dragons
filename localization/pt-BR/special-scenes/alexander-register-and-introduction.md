@@ -10,7 +10,7 @@ Source: `alexander-proletarian-register`, `Alexander_1_required`; `localization/
 |---|---|---|
 | `yarn:line:73e4789c` | You know... This environment is rather pleasant. Very... proletarian. | Sabe... Este ambiente é bastante agradável. Muito... proletário. |
 | `yarn:line:e5d47feb` | prole- <i><size=70%>wuh? | prole- <i><size=70%>quê? |
-| `yarn:line:8512365e` | Thank you! | Obrigado! |
+| `yarn:line:8512365e` | Thank you! | Valeu! |
 | `yarn:line:74c9c07b` | Oh, like... working class? | Ah, tipo... da classe trabalhadora? |
 | `yarn:line:e2f9c70c` | Sorry, I meant to say I enjoy your wash. | Desculpe, quis dizer que gosto do seu local de lavagem. |
 | `yarn:line:13223129` | Of course | Claro |
@@ -69,3 +69,9 @@ Source: `alexander-family-crest`, `Alexander_questions`; `localization/evidence/
 | `yarn:line:f0cb8389` | ...No | ...Não |
 
 The seven size tags occur in the original order and retain the diminishing effect. The source's spelling errors are not reproduced. The allusion remains recognisable through the ordered elements and nations without turning it into a different joke. Paired original Yarn traces cover both choice paths, but do not establish the final translated text's visual legibility, presenter layout or package behavior. A size-tag comparison and negative control must precede acceptance; the shrinking text may require a source-bound visual crop for review. No texture change is involved.
+
+## Author decisions after source-gate reconciliation
+
+The author accepts the four groups above for the pretranslation decision, subject to the downstream checks below. `prole-` and the clarification retain the class joke; `Valeu!` at `line:8512365e` corrects the player choice's previously gendered `Obrigado!`. The teacher/professor distinction uses `professor universitário` as an explicit contextual adaptation: the college affiliation in the introduction supports higher education, though the English correction itself does not specify that adjective. The Burnswick name follows the bound glossary, the colon-ended sentence remains a body followed by the separate name, and the worn family crest follows `crista familiar`. The allusion and seven decreasing size tags remain in order. These are author self-reviews, not independent acceptance.
+
+The paired source/input readback `localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-07/readback-alexander.json` (SHA-256 `b560f35989280468e0aa204cae773b7c29bed6a89c86d5bcf50337f544e9db40`) maps all four groups and all 248 drafts on both builds, retaining ordered tags. Only `line:8512365e` changed from the prior readback. The paired colon-display fixture and source branch traces in `localization/evidence/alexander-colon-display-20261110.md`, together with the original Yarn question traces, support the existing per-ID and source-bound display-adapter choices. Positive scenarios are each class and teacher branch, both college choices with body and separate name, and both crest replies with the shrinking allusion. Negative scenarios include swapped branch IDs, a displayed speaker for the colon sentence, losing its separate name, treating the crest as anatomy, or changing tag order. The actual localized package, layout and branch behavior remain pending; the colon node's normal caller is unestablished in the cited search scope.
