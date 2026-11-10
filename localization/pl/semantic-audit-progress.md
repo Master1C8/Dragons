@@ -60,3 +60,9 @@ Cumulative distinct IDs read: 461 / 1,947; 1,486 remain. This is author review, 
 Compared `Ryan_5_intro` and `Ryan_5_intro_ryan_romanced` against both stock English values and Polish. The recovery choices identify three different pairings; Ryan's alternative greetings distinguish the player/Ryan date, the player/Conrad date and Ryan/Conrad's prior date. The repeat baking explanation and gate request retain their role across branches. The previously recorded romance-route decision supplies the meaning of the pairings, while the node's instruction positions alone do not establish conditional execution or actual state transitions. Developer recovery text and markup remain included. No additional semantic finding was identified in this unit.
 
 Cumulative distinct IDs read: 512 / 1,947; 1,435 remain. This is author review, with independent acceptance and live route checks still open.
+
+## Ryan fifth-visit required conversations: 84 IDs read
+
+Compared the three `Ryan_5_Required_*` nodes against both English builds and current Polish: the player discusses Conrad's improvement, Ryan describes his date with Conrad and the player's kindness, or Ryan and the player arrange their own date. Distinct food, bar, movie and walking alternatives and Ryan's responses retain their meaning. The source-bound `special-scenes/ryan-date.json` records the approved movie titles, sequel and salmon/dragon joke; the Polish setup and correction keep the odd self-identification needed for that joke. Ryan suggests a hotel room after the bar choice (`yarn:line:88c36bc7`), which supplies some related context for the unresolved `9883786d` finding, but this does not establish whether all later intimate paths are in that room. No additional finding in this unit. Live option transitions and fit remain unrun.
+
+Cumulative distinct IDs read: 596 / 1,947; 1,351 remain. Author comparison only; independent game-text audit remains pending.
