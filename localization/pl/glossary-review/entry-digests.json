@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "serialization": "UTF-8 sorted-key compact JSON no newline",
+  "source_file_sha256": "24f51ad99f3b78ef06e1ba8ebefb2ab9072c866f4860fe9839055b504ead8baf",
+  "target_layer_sha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "source_evidence_sha256": "30402197c88a5d081bff7bae5482737424a2e9325ed286fedc66f316bd16815c",
+  "protocol_sha256": "5319d645d57ec7abc0c2b136d42ce4d2b14ce1e7f2e64a621bc64d62d63ef03a",
+  "dependency_binding": "All entries share the full source evidence, roster decisions and pinned worklist in author-reads.md; no per-ID dependency independence asserted.",
+  "entries": [
+    {
+      "id": "dnw-player",
+      "source_sha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+      "target_sha256": "bef280837c077166d94d2be8a859492ce2dd5575fd3bd88f7cf9d1524be5592f"
+    },
+    {
+      "id": "dnw-alexander",
+      "source_sha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+      "target_sha256": "27608c45c51cf7c4345cf3d8939e7df4aee5592a49e37ed5e1714f3c5ea9c251"
+    },
+    {
+      "id": "dnw-conrad",
+      "source_sha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+      "target_sha256": "c8104b0a3b82478117f09ccf7c57b80e3c501b4a4b168b0250deb2793a93c0e3"
+    },
+    {
+      "id": "dnw-ryan",
+      "source_sha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+      "target_sha256": "ae4dd2b1b3516730661be5e29f18f14ef9d80b4bc436720316893210522cc074"
+    },
+    {
+      "id": "dnw-franchise-representative",
+      "source_sha256": "808a4e29680f4310b8f68b8556203cc3c2d98f7af5295c0f9ff3bb9760797e50",
+      "target_sha256": "45622dd778941615286e5900841bcd173d375e0b88eae6885d4fb0d0d583397f"
+    },
+    {
+      "id": "dnw-igwyx",
+      "source_sha256": "66ad2b67f8ff6ddf6faf87daf25948de76082040baa5fba50b5a1f24a05b2f3a",
+      "target_sha256": "da0d26ec113e2fac301f0284666d679867bfb944ef547beb51c673528a38793d"
+    },
+    {
+      "id": "dnw-max",
+      "source_sha256": "5b0138c5e5650c67dc30df1adb54f064252c3928be7cb8861d7cd468722cc5c2",
+      "target_sha256": "5d953041c170b8d5a4cd49f7c1f0f8649cd6d203243ac0148c26e1a3b7b92ce8"
+    },
+    {
+      "id": "dnw-anonymous-dragon-speaker",
+      "source_sha256": "929136153456556d2889090960049f8981a99affd848ad4f38c17987221a3e0d",
+      "target_sha256": "c26cd4f1c465c1183825f6466e958435540d400b7c7b2da6a34444b44ad5c9ff"
+    },
+    {
+      "id": "dnw-dragn-wash",
+      "source_sha256": "9a00bf3c920a4f70cb305fc794ea9f0782d034c71e41c2b5cd8aa1f992f4cb3a",
+      "target_sha256": "c47f41724fc12fd2c2f9027c460146f6bd337b495c6c0a576c89b21749238042"
+    },
+    {
+      "id": "dnw-franchise-223",
+      "source_sha256": "a08fb4bf6c2582215f77580b2d302cdb0a0e19480a1847bc8a079d7ee898ece5",
+      "target_sha256": "add191d89454ede1fa23dfbf8b9fb52e6fd0be6cc29df5e35c6488cacd4a3b1c"
+    },
+    {
+      "id": "dnw-burnswick-college",
+      "source_sha256": "3a49dd393f7985a13465547414ed83c845d4e21f6ef20f7f33235fbfd8da18d4",
+      "target_sha256": "ab9daab8d87b7a6635cc2768c12312b88f9b564e7b5bd5ed6f683bfd5fcd3e0b"
+    },
+    {
+      "id": "dnw-college-library",
+      "source_sha256": "bd52ecb4c3629cbc205c3683a0fa4df3aa2a177819332e2c0400ce0101a0744b",
+      "target_sha256": "c3a1dcd386e3e24c73137004e4b6d3b2cf258ff66fb9079a2cc9bfb9cf4e09b0"
+    },
+    {
+      "id": "dnw-wings",
+      "source_sha256": "3c78fd3362268274dc2ac3cd2e8bc39fffddeca807a1acef1e24454df105aba8",
+      "target_sha256": "ed43b1f9465732245cd014d432a7b115ec73953eae5b350d6ed55e62dc9434e2"
+    },
+    {
+      "id": "dnw-wingco",
+      "source_sha256": "00c60b2464c82a74a0078c0da773a3adba7a4b264fda365efd72e0af02fc7e2b",
+      "target_sha256": "64a738c13c90c8983cd55f8a91c27812e08e0f555aead9cc54e228d2dda774bc"
+    },
+    {
+      "id": "dnw-kobold",
+      "source_sha256": "655be37c2da8a22f692dbac404a5811b4227a465b44d7c6c85bc35af64f51df3",
+      "target_sha256": "200e6e265ebf8890ec09e3b4198b2de162de33781ab36964aeebfdfa9b7cc7f2"
+    },
+    {
+      "id": "dnw-dragon",
+      "source_sha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+      "target_sha256": "0de29bb60cc0a09fa4e88dd9e2c4c1dc45b3f40873a80cf464ea509ab6a998ce"
+    },
+    {
+      "id": "dnw-drake",
+      "source_sha256": "fc7a676e04843dde8307d6b1843ac34215ca67200d62b1ff1dfe06d21456cdd3",
+      "target_sha256": "e5c2ed56d57a6bcfcbf9dfa87985d2ba58dc9f5ba1ab85f74dcd37cbe2f6d1d3"
+    },
+    {
+      "id": "dnw-dragon-washer",
+      "source_sha256": "70f6f7b0f545b32f5a98233380b01eda5a369c67c4d2969c55e02a1782a18aa9",
+      "target_sha256": "0be59b6eb12d98e8402a365e1a95ddb9ec567df1a600e326fc33e76ca93ae197"
+    },
+    {
+      "id": "dnw-wash",
+      "source_sha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+      "target_sha256": "4b1f6d8b990305101c35fce039cddaf198106e53e3aee120fbc9e18794714052"
+    },
+    {
+      "id": "dnw-yip",
+      "source_sha256": "732298762db192f5e97009d5a3babdf06857b777d65975115662abe32637b079",
+      "target_sha256": "b09233889612cb5f810f04e2aa49c47ef4d49d4f9056db4cd54b0f1410f2be1e"
+    },
+    {
+      "id": "dnw-mount",
+      "source_sha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+      "target_sha256": "22714faadd4954ad0bd533065fd1bb8004a036799db7f1bad0bdf65414c94539"
+    },
+    {
+      "id": "dnw-special-endings",
+      "source_sha256": "b2dab9f17eac895557320156d6a6089138f749194fc613995baed5c2efa4e55d",
+      "target_sha256": "c07b76094e64d1a33b360d048b941fdf16c31b5b3bc3eba089554a465a3bc5c3"
+    },
+    {
+      "id": "dnw-phoenix-feather",
+      "source_sha256": "c4024e659615307ed5c582c44c3c7216aaededde7b2fccea8aa6ebd3c3c705a4",
+      "target_sha256": "9ff9a3bdb69b361220ae96ba7c87d1a169468a73b18ba6daa2e10c2c3ce248c4"
+    },
+    {
+      "id": "dnw-family-crest",
+      "source_sha256": "6c64b3f010048958681651d5ce643ac55ddaa98900feba2a8e2cc54d24b7e9c9",
+      "target_sha256": "cc4ebcd8f34c96e8e13211b6cd5fc94566bc8cbb49966efcf3f4498c2dcb9530"
+    },
+    {
+      "id": "dnw-alchemy",
+      "source_sha256": "c778aac34e4a0a5b96970af09e963be978af86f2b7bf044c8211d932d758e003",
+      "target_sha256": "6c75cc6cd6d598175081cf5086132515a06f790f87a13276535443fb54073b88"
+    },
+    {
+      "id": "dnw-yip-man",
+      "source_sha256": "3a133af8a9b653ada56d688b55629f08bbe27dd7a6fb9e8a483a85ebb03765d3",
+      "target_sha256": "8480ae853ebd908c67e1a7853114a67984a200cba3607c43ac227a36cec9c31b"
+    },
+    {
+      "id": "dnw-project-scale-mary",
+      "source_sha256": "d85beb0bba51dc3fba6377f8fd8a1ccebd704ec72b9d3d300728b965b86d5f30",
+      "target_sha256": "e79fe5d0372a19e1b8fd3ce5524859494a83ae3a4a8765dd3425697fe5d0aaa8"
+    },
+    {
+      "id": "dnw-dragons-of-the-galaxy",
+      "source_sha256": "8cc560bbec93ceaa757b960ada48188f37456e67084f2b2ce7769fa9c7fd2433",
+      "target_sha256": "5dcb71450630cfac715833f901e288cc7ce4774e9d95375bed2be9f76941c9e6"
+    }
+  ]
+}
