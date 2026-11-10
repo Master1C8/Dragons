@@ -1388,7 +1388,7 @@
         "yarn:line:c272e55f",
         "yarn:line:5442e228"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_Intro_5",
@@ -1474,7 +1474,7 @@
         "yarn:line:707d2693",
         "yarn:line:e64d21e4"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_Outro_3",
