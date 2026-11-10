@@ -319,3 +319,26 @@ and compiled programs are exact. Both packaged fonts contain all
 and package verification. Its live scene checks and independent
 editorial review remain pending. Receipts are under
 `localization/work/uk-ordinary-03-20261110.PA4ejz/`.
+
+## Fourth ordinary batch
+
+The fifth visit's shared opening and player–Ryan route now cover
+109 source IDs across four nodes. The batch adds 79 values and
+reuses 30 from the special-scene wording. The draft covers 649
+of 1,947 IDs with SHA-256
+`404ab4920814788de0741cf875ae7ba4e206a45a4e948b92c6a872e650bc712a`.
+All 570 previous values are exact.
+
+The three diagnostic relationship labels remain distinct. The
+opening distinguishes preparing for a date with Conrad, asking
+about a date that already happened, and arranging Ryan's date
+with the player. The walking, restaurant, bar and film branches
+retain their separate choices, including the approved name Wings
+and the existing Ukrainian film titles.
+
+Both diagnostic packages changed exactly 79 Yarn values. The
+programs, other table text and metadata are exact. Both packaged
+fonts contain all 90 display code points used by the draft. The
+receipt directory is
+`localization/work/uk-ordinary-04-20261110.9IFmem/`.
+Live scene checks and independent editorial review remain pending.
