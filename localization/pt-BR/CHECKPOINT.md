@@ -276,3 +276,9 @@ The prepared 39-ID opening/closing batch was reviewed against the English source
 ### Alexander fourth visit: central dialogue
 
 Authored and self-edited 28 previously blank `Alexander_4_required` IDs, using approved `suporte` for the adult device. Total: 781 authored, 1,166 blank. Paired readback preserved the English across 1,947 IDs and found exactly 28 changed IDs / 56 platform bindings with ordered tags and placeholders retained. Translation SHA-256 `64f8fa059a840e5af7142905b9a19121f3ff7fc23b043a59cc415e9a1b167399`; receipt `localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-07/readback-alexander-4-required-reviewed.json`, SHA-256 `cd9c9c887847ed825946c20828638cc9b7413b876613b265867eb6b59fb5e080`. Independent text/delta audits, full package readback, localized runtime and visual acceptance remain pending. Continue remaining English-source scene batches.
+
+### Alexander fifth visit opening and exit — author batch
+
+- Self-edited 44 IDs from the exact English `Alexander_5_intro` and `Alexander_5_Outro`, including diagnostic choices. Corpus: 825 authored IDs, 1,122 blank; independent text audit remains pending.
+- Paired source/read-back: `localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-07/readback-alexander-5-edges-reviewed.json`, SHA-256 `3ce3278da24a731a59af1f9ccfd2e366767a6c59729cf6cd62ab8703feb955fd`. All 1,947 source bindings unchanged; exactly 44 target changes on each platform and ordered markup/placeholder preservation checked.
+- Translation SHA-256 `3981b7dd3c64ec9d5e17684e44bdb681a4721d46869851bbaa5807bb59b75d2f`. This is an authoring read-back, not a package, runtime, visual or independent audit pass. Continue with `Alexander_5_required`.
