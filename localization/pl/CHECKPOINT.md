@@ -502,3 +502,7 @@ Author compared 73 IDs in `semantic-audit-alexander-third.json`; cumulative 1,19
 ### Semantic audit continuation: Alexander fourth visit
 
 Author compared 76 IDs in `semantic-audit-alexander-fourth.json`; cumulative 1,274/1,947, 673 remain. The long yip option needs actual visual fit review; see `semantic-audit-progress.md`. Translation SHA-256 remains `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; independent audit and current-payload runtime remain open.
+
+### Semantic audit continuation: Alexander fifth visit
+
+Author compared 92 IDs in `semantic-audit-alexander-fifth.json`; cumulative 1,366/1,947, 581 remain. Three related timing and idiom findings await disposition; see `semantic-audit-progress.md`. Translation SHA-256 remains `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; independent audit, current-payload runtime and visual acceptance remain open.

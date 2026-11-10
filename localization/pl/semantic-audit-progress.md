@@ -153,3 +153,14 @@ Cumulative distinct IDs read: 1,198 / 1,947; 749 remain. Author review only; ind
 Compared arrival, mount request, action responses and farewell against both English builds and Polish. Alexander’s long explanation of understanding yips and the laconic alternative remain distinct, including size markup; `special-scenes/yip.json` records this device. His hesitant request, the optional Conrad attribution, and the later confession about relinquishing control are preserved. The long yip choice remains a particular visual-fit risk: source comparison does not prove it fits. Node names and positions do not establish actual choice or action routing; current-payload gameplay and visual review are unrun. No new semantic finding.
 
 Cumulative distinct IDs read: 1,274 / 1,947; 673 remain. Author review only; independent acceptance remains pending.
+
+## Alexander fifth visit and romance: 92 IDs read
+
+Compared arrival, debug-state choices, date conversations, Alexander romance invitation, action reactions and farewells against both builds and Polish. The Ryan, Conrad and Alexander relationship paths and explicit romance/no-romance options remain distinct; tags and emphasis are preserved. Source typo variants share targets. `special-scenes/romance-routes.json` covers relationship choices, but node names do not establish live flag selection or transition execution. Current payload, fit and debug recovery remain untested.
+
+Findings pending disposition:
+
+- `yarn:line:3f153aaf` and `yarn:line:da9cfdcf`: “just went on a date” is rendered as currently returning from it, an extra timing implication; compare both equivalent branches and previous visit chronology.
+- `yarn:line:116f0e16`: `To chyba już każde miejsce` is awkward for the wash being complete; preserve the sense of having covered every spot.
+
+Cumulative distinct IDs read: 1,366 / 1,947; 581 remain. Author review only; independent acceptance remains pending.
