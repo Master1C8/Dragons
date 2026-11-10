@@ -95,7 +95,7 @@ Keep both identical response pairs distinct and preserve `$Yarn.Internal.Once.li
 
 ## Gate status
 
-Nineteen of 27 cases have author-reviewed wording recorded in this file; the remaining 8 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the nineteen. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
+Twenty-two of 27 cases have author-reviewed wording recorded in this file; the remaining 5 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the twenty-two. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
 
 ## Alexander's family crest
 
@@ -338,9 +338,70 @@ Source case `salmon-guy-dragon`, node `Ryan_5_Required_ryan_romanced`. Author se
 | `73a37947` | Oh, fantastico. Sono proprio un tipo da salmone. |
 | `c9f270de` | Be', sono un drago... ma hai capito cosa intendo. |
 | `5fc277a9` | Allora è un appuntamento! Pesce e frutti di mare, poi si vedrà. |
-| `6a671440` | Conosco un buon locale di cucina equina vicino al molo. |
+| `6a671440` | Conosco un buon locale degli equini vicino al molo. |
 | `d0361dd9` | È una specie di cucina fusion equina... |
 | `46061aae` | Mi piace! Credo che piacerebbe anche a te. |
 | `d71ba53e` | Allora è un appuntamento! |
 
 Positive: the fish choice reaches the salmon joke and the alternate food choice retains its own continuation. Negative: erasing the human-expression setup, inventing a food prohibition or changing option routes fails. Paired dialogue and choice paths establish bounded feasibility; package validation, route execution and fit remain pending.
+
+## Conrad's special endings
+
+Source case `conrad-special-endings`, nodes `Conrad_1` and `Conrad_required_1`. Author self-review: **finali speciali** is the glossary euphemism; the literal reply uses the same noun so Conrad's correction remains intelligible. The direct sexual question stays explicit, and **supporto** means the device. Conrad's informal speech does not assign gender to the player. The paired values differ only in source apostrophes at `43dd32f5` and `5a195ff2`; both use the same target wording.
+
+| ID | Italian wording |
+|---|---|
+| `9ab6ddfb` | Fate anche i “finali speciali” qui? |
+| `f99840cd` | Che cosa sono? |
+| `d5f94e23` | Sì! |
+| `e05c2dca` | No |
+| `6fa847ba` | Eh, no. Dai, dovresti offrirli. Ti pagherei bene! |
+| `43c94954` | Fantastico! Non vedo l'ora di vederti all'opera! |
+| `766c2abd` | Come? Li fanno in tutti i posti migliori! |
+| `8a35fb7b` | Allo<size=90%>o<size=80%>o<size=70%>o<size=60%>ora... <size=100%>mi chiedevo |
+| `6fbc3c1b` | Fate anche i <i>finali speciali</i> qui, vero? |
+| `f98c3b6c` | Qui ogni finale è speciale! |
+| `a0a0a49c` | Intendi... cose sessuali? |
+| `43dd32f5` | Ehm... Non intendevo- |
+| `d5ed3582` | Fate venire i draghi grossi, <size=60%>come me, <size=100%>qui? |
+| `7678511c` | Ma- eh- <size=80%>oh. <size=60%>non facciamo- |
+| `e048566b` | Oh, no. |
+| `5a195ff2` | Cosa!? È terribile! Non avete nemmeno un supporto...? |
+| `cc295885` | Ehm... <size=60%>no? |
+| `5d34e715` | Be', allora fareste meglio a procurarvene uno! |
+| `cb04e062` | Almeno puoi sempre usare le mani. Eh eh. |
+| `3690a3eb` | Ah sì? Non vedo nemmeno un supporto. |
+| `8cc1aa72` | Oh... sì, non ne abbiamo uno. |
+| `1af1ad05` | No, qui non offriamo servizi del genere. |
+| `b964c99b` | Peccato davvero. Dovreste rimediare. |
+| `2f54ceec` | Almeno puoi sempre usare le mani. Eh eh. |
+
+Positive: the literal option receives a correction and explicit explanation; the direct option follows its separate responses. `Conrad_1`'s three choices retain destinations 10, 13 and 16; `Conrad_required_1` retains all recorded separate destinations. Negative: disclose sexual meaning in the first question, make the literal reply unrelated, collapse the two nodes or route an option to a different response. Preserve size and italic tags exactly. Source routing and bounded text paths establish preparation feasibility, not actual branch execution or final fit.
+
+## Three film choices and Yip-Man reference
+
+Source cases `movie-title-choices` and `kobold-yip-film-title`, node `Ryan_5_Required_ryan_romanced`. Author self-review: the three approved glossary titles retain their separate choices; **Yip-Man** is repeated in the series reaction and the title keeps the vocalization-shaped pun. The generic Yip speech case remains separately open. The numbered sequel's reaction refers to its first film, not the Yip-Man series. The first six rows are shared with the already reviewed salmon case and retain exactly that wording.
+
+| ID | Italian wording |
+|---|---|
+| `d9652dff` | Allora. Il nostro appuntamento di stasera... |
+| `7af04961` | Dove ti piacerebbe andare? |
+| `ecc04e16` | Decidi tu! |
+| `81905be1` | Mi piacerebbe andare a mangiare fuori. |
+| `412ba249` | Conosci qualche bel bar? |
+| `bd66082e` | E un film? |
+| `2b560f59` | Ah sì? |
+| `910706c0` | Un film potrebbe essere divertente! |
+| `073701b7` | Che genere di film avevi in mente? |
+| `962abe27` | Progetto Squama Mary |
+| `f1c14f75` | Yip-Man - L'ultimo Yip |
+| `7e352505` | Draghi della Galassia 2 |
+| `001ab950` | Oh, ne ho sentito parlare bene. |
+| `67f14802` | Certo! |
+| `4b9046ec` | I film di Yip-Man sono proprio sdolcinati... |
+| `dda0419b` | Ma sono sicuro che mi piacerebbe guardarlo con te! |
+| `e8052272` | Oh sì, il primo mi è piaciuto. |
+| `52542beb` | Certo! |
+| `c4642c9c` | Allora è un appuntamento. Non vedo l'ora. |
+
+Positive: each title retains its source option and reaction, Yip-Man is recognizable in both rows and the sequel retains numeral 2. Negative: cross the reactions, change the numeral or translate the series reference as the kobold speaking. Existing paired choice/text rendering is bounded feasibility only; final authored package, route execution and fit remain untested.

@@ -14,7 +14,7 @@ Both stock programs identify `0274cacd` and `9444cdba` as player choices to dest
 
 ## Resume 11 — special-scene authoring in progress
 
-[Special-scene decisions](special-scene-decisions.md) contain author-reviewed target wording and source-bound positive/negative contracts for nineteen of 27 groups. They are preparatory and have not been inserted into a package. The remaining 8 groups, including overlapping contextual dependencies, must be reviewed before ordinary text. Translation remains 0/1,947 applied; package, runtime, visual and independent audit remain pending.
+[Special-scene decisions](special-scene-decisions.md) contain author-reviewed target wording and source-bound positive/negative contracts for twenty-two of 27 groups. They are preparatory and have not been inserted into a package. The remaining 5 groups, including overlapping contextual dependencies, must be reviewed before ordinary text. Translation remains 0/1,947 applied; package, runtime, visual and independent audit remain pending.
 
 ## Resume 11 — current glossary decision
 
