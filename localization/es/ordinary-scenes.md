@@ -21,3 +21,7 @@ Author self-reviewed all 53 IDs in `Conrad_Intro_3` and `Conrad_required_2`, ret
 ## Ryan third visit
 
 Author self-reviewed all 34 IDs in `Ryan_3_intro` and `Ryan_3_required`, preserving dialogue routing and source markup. Both stock source readers and object encode/parse passed: macOS SHA-256 `0b214ddcec9b01cc455ea8bd21d8fc25e45275bcbad8fca1df078f5e8be09366`; Windows `d97bb47b5dbb6e0246c294be4d9a5cc181dfbd6ccc535991f90d0e7b085686d7`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary5/`.
+
+## Ryan second and third departures
+
+Author self-reviewed all 54 IDs in `Ryan_2_Outro` and `Ryan_3_Outro`, including alternate replies, relationship context and the open size tag. Both stock source readers and object encode/parse passed: macOS SHA-256 `c1f13d0e4398c9d625bca16ccd7e1c65a2a87a139365a0d3b724021d2f3a2fff`; Windows `d0f65fbb529142379091ab43c6017c6edce9755878f7e011409f2cf8e2e89ca7`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary6/`.
