@@ -462,3 +462,7 @@ Author compared 84 more IDs in `semantic-audit-ryan-fifth-required.json`; cumula
 ### Semantic audit continuation: Ryan fifth-visit farewells
 
 Author compared 46 more IDs in `semantic-audit-ryan-fifth-outro.json`; cumulative 642/1,947, 1,305 remain. The same English emphatic response has a natural existing rendering in another scene, a useful comparison for the pending `fbe86c06` finding. See `semantic-audit-progress.md`. Translation remains SHA-256 `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; independent audit, actual route transitions and final visual acceptance remain open.
+
+### Semantic audit continuation: Conrad first visit
+
+Author compared 50 IDs in `semantic-audit-conrad-first.json`; cumulative 692/1,947, 1,255 remain. Two findings require contextual disposition; see `semantic-audit-progress.md`. The sampled Conrad fixture does not establish these full routes. Translation remains SHA-256 `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; independent audit, live routes and final visual acceptance remain open.

@@ -72,3 +72,14 @@ Cumulative distinct IDs read: 596 / 1,947; 1,351 remain. Author comparison only;
 Compared the three `Ryan_5_Outro_*` nodes and four `Ryan_5` action responses against both English builds and current Polish. Ryan's gratitude has different referents in the player/Conrad and Ryan/Conrad routes, while his own romance sets up the date and departure; the alternatives and gate requests retain those distinctions. `yarn:line:95aa0bf4` uses the natural `A jakże!` for “Damn right!” and is relevant to the pending Conrad line `fbe86c06`; the speakers and contexts differ, so this is comparative evidence rather than an automatic replacement. No new finding. Actual route execution, action triggers and fit remain unrun.
 
 Cumulative distinct IDs read: 642 / 1,947; 1,305 remain. Author review is not independent acceptance.
+
+## Conrad first visit and action responses: 50 IDs read
+
+Compared the two introductions, first required conversation, alternate interaction, departure and two action nodes against both English builds and current Polish. The special-endings decision in `special-scenes/conrad-endings.json` records the euphemism and distinct answers; the departure uses the approved `stojak` term and preserves the differing apology and promise replies. The separately identified introductory nodes should not be assumed to occur on the same path. The prior isolated Conrad fixture demonstrated synthetic choice progression and the v2 sample demonstrated three authored choices, but neither proves these full authored routes, action triggers, nor visual fit for the present payload.
+
+Findings pending disposition:
+
+- `yarn:line:6fa847ba`: “Mate you gotta get in on this” urges participation; `musisz tego spróbować` may imply the player should experience the service as a customer. Check the preceding question and response branch to select the intended agency.
+- `yarn:line:72b244b7`: `Ależ to było zajebiście dobre!` conveys the response but is an awkward Polish collocation for “That felt damn good!” Consider a more natural emphatic sensation while retaining the tag.
+
+Cumulative distinct IDs read: 692 / 1,947; 1,255 remain. This is author work, not independent acceptance.
