@@ -172,3 +172,7 @@ Author semantic continuation: 469/1,947 rows examined; next zero-based row 469, 
 Author semantic continuation: 543/1,947 rows examined; next zero-based row 543, `yarn:line:1538bc7e`. [semantic-audit-05.json](receipts/semantic-audit-05.json) binds the 74 reviewed Conrad IDs. No translation changed; prior findings remain pending correction/dependency closure after the full author pass. Independent audit, current packages and runtime/visual checks remain open.
 
 Author semantic continuation: 663/1,947 rows examined; next zero-based row 663, `yarn:line:77cebc41`. [semantic-audit-06.json](receipts/semantic-audit-06.json) binds 120 fifth-visit relationship IDs. No translation changed; previous findings remain pending correction/dependency closure after the full author pass. Independent audit, current packages and runtime/visual checks remain open.
+
+### Author semantic review: rows 663–784
+
+Reviewed 122 further paired IDs in Conrad introductory and early exit scenes, including conditional romance routes and option destinations. Receipt: `receipts/semantic-audit-07.json`. Cumulative coverage: 785/1,947; next zero-based row 785, `yarn:line:a051821a`. One further objective finding, `yarn:line:0121c874`, concerns the wash being open versus the player being open and masculine agreement; proposed wording and context are in the receipt. Seven findings await the correction and dependency review. This is author review, not independent audit. Translation bytes remain unchanged.

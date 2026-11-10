@@ -19,3 +19,7 @@ The author compared rows 340–468 (129 IDs), including the remaining Alexander 
 The author compared rows 469–542 (74 IDs), including injured Conrad’s options and responses, the special-ending introduction, telephone tutorial and both fourth-visit romance branches. No additional objective finding was identified. Exact source and node bindings are in [semantic-audit-05.json](receipts/semantic-audit-05.json). Total examined: 543/1,947; next row 543, `yarn:line:1538bc7e`. Independent review remains separate.
 
 The author compared rows 543–662 (120 IDs), tracing the three fifth-visit relationship configurations and their introductions, conversations and exits. No additional objective finding was identified. Exact source and branch-node bindings are in [semantic-audit-06.json](receipts/semantic-audit-06.json). Total examined: 663/1,947; next row 663, `yarn:line:77cebc41`. Independent review remains separate.
+
+### Author semantic review: rows 663–784
+
+Reviewed 122 further paired IDs in Conrad introductory and early exit scenes, including conditional romance routes and option destinations. Receipt: `receipts/semantic-audit-07.json`. Cumulative coverage: 785/1,947; next zero-based row 785, `yarn:line:a051821a`. One further objective finding, `yarn:line:0121c874`, concerns the wash being open versus the player being open and masculine agreement; proposed wording and context are in the receipt. Seven findings await the correction and dependency review. This is author review, not independent audit. Translation bytes remain unchanged.
