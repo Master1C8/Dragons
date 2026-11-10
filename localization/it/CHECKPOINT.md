@@ -10,7 +10,11 @@ Updated 2026-11-10. Scope: standard Italian (`it`), English source, macOS `9/12/
 
 ## Resume 11 — Ryan source-routing correction
 
-Both stock programs identify `0274cacd` and `9444cdba` as player choices to destinations 7 and 9; `c35b717a` and `5246ceea` are unprefixed and must not be attributed to Ryan. The [review note](glossary-review-resume.md#resume-11-paired-ryan-routing-correction) records the correction, the neutral wording rule and exact evidence. The corrected row receipt SHA-256 is `ce9d26dd2cdb0d35f6752f41460f8a5425052be2447abb857258b2694e7fb7ad`; the rebuilt 2,537-link union SHA-256 is `126879faaa331dda2043e0ad61dc2ae092790cc47467ae0ebe945c2574e6bebc`. The character/species dependency reconciliation remains open; this source guidance is not another author layer. Continue the bounded entry-by-entry queue using these current hashes. No game-text wording has been authored.
+Both stock programs identify `0274cacd` and `9444cdba` as player choices to destinations 7 and 9; `c35b717a` and `5246ceea` are unprefixed and must not be attributed to Ryan. The [review note](glossary-review-resume.md#resume-11-paired-ryan-routing-correction) records the correction, the neutral wording rule and exact evidence. The corrected row receipt SHA-256 is `ce9d26dd2cdb0d35f6752f41460f8a5425052be2447abb857258b2694e7fb7ad`; the rebuilt 2,537-link union SHA-256 is `126879faaa331dda2043e0ad61dc2ae092790cc47467ae0ebe945c2574e6bebc`. The source guidance is not another author layer. The subsequent current glossary decision closes character/species reconciliation using these hashes. Special-scene wording is recorded separately below.
+
+## Resume 11 — special-scene authoring in progress
+
+[Special-scene decisions](special-scene-decisions.md) contain author-reviewed target wording and source-bound positive/negative contracts for three of 27 groups. They are preparatory and have not been inserted into a package. The remaining 24 groups, including overlapping contextual dependencies, must be reviewed before ordinary text. Translation remains 0/1,947 applied; package, runtime, visual and independent audit remain pending.
 
 ## Resume 11 — current glossary decision
 
@@ -35,7 +39,7 @@ The resume-10 named-entity note contained unsupported descriptions of Igwyx and 
 - `probe`: **passed for the bounded Italian renderer cases**. Isolated macOS and Windows CrossOver runs exercised dialogue, choices, progression and settings. The [independent frame review](../evidence/es-it-renderer-frame-review-20261110.md) resolved all remaining dialogue and choice frames and verified all three settings labels in the new 1280×960 macOS render. Original profiles were preserved. Native Windows and the final translated corpus retain separate checks.
 - `source`: **passed** for the pinned package scope and exact-preservation entry gate; see [current source decision](source-readiness-resume.md). The worklist has 1,947 IDs and 27 known special-scene groups.
 - `glossary`: **passed for authoring** on two complete author self-review layers at the bound hashes; see the current resume-11 decision. Independent final game-text audit remains separate.
-- `translate-edit`: **not started**, 0/1,947 IDs translated or edited. After applicable probe, source and glossary readiness, prepare and review target wording, solution, technical contracts and positive/negative cases for all 27 groups before ordinary batches. No `translation.json` exists yet.
+- `translate-edit`: **special-scene preparation in progress**; 3/27 decisions recorded, 0/1,947 IDs applied. Complete all special-scene decisions before ordinary batches. No `translation.json` exists yet.
 - `editorial`: not started; complete semantic pass and distinct independent diff/delta review pending.
 - `resources`: not started; final corpus glyph and layout coverage pending. Textures with text are excluded and preserved.
 - `package`: not run; neither local deliverable built.
