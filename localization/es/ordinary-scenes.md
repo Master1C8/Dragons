@@ -73,3 +73,7 @@ Author self-reviewed 36 IDs in the scene loops, timing choices and continuations
 ## Later interactions and shared encounter
 
 Author self-reviewed 48 IDs across `Conrad_finished_mount_3`, `Mount_Alexander_2_6`, and `Ryan_Conrad_SexScene` with its cum and loop continuations. Speaker prefixes and source markup remain exact; duplicated choices retain separate IDs. Both stock source readers and object encode/parse passed: macOS SHA-256 `1148fdbfd7bd9e67968e7dc8722130f3561986d51269af872dfeecdbfb0eec4a`; Windows `603f37a91b2e20c101d7b0af5f42a1d85ee38b2ade32c66e4e73cb053c257a2b`. Altered English was rejected on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary18/`.
+
+## Remaining reactions
+
+Author self-reviewed 49 remaining Yarn dialogue IDs, preserving interaction refusals and character-specific tone. The intentional misspelling in the error message reflects the English `fcuk`; the source name `nael` is unchanged. Both stock source readers and object encode/parse passed: macOS SHA-256 `1b2be33d0cfe761880ef71d6a3166c79ab1f0dfc8f8b302dc3e78ecaf143bd26`; Windows `6c8bba4122426ca756d0ba58909746dea5098eb5c8c80dd4cf27b32eea4e0dfb`. Altered English was rejected on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary19/`.
