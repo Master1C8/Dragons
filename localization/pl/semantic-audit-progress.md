@@ -29,3 +29,17 @@ These 78 IDs plus the 111 Ryan conversation IDs make 189 distinct author-reviewe
 Read first-arrival window, gate, customer interaction, wash conversation, phone guidance and departure nodes, including the option-specific replies and Yip misunderstanding, against both English variants and Polish. The phone points to the window, then entry; the departure asks to open the gate, not enter it. The stock naming and grammatical differences across builds are compatible with the shared targets. `Start` is a source-included Yarn development/test node with eighteen individually numbered test lines; their numbering and the Unity/Yarn references are preserved. The actual availability of this node in normal gameplay and these authored route transitions have not been established by this reading. No new semantic finding was identified in this unit.
 
 Cumulative distinct IDs read: 268 / 1,947; 1,679 remain. This is author work, with independent acceptance and all unrun checks still open.
+
+## Ryan second visit: 81 IDs read
+
+Read `Ryan_2_intro`, `Ryan_2_required` and `Ryan_2_Outro` against the paired English and current Polish. Ryan returns after an outing, asks when to end a troubled relationship, and later explains his girlfriend sent him to the wash; the player can listen or decline to pry. The paired choice and response positions were compared, including the duplicated overreaction options and replies, and both builds share the English wording in this unit. The colloquial, gender-neutral player formulations and emphasis markup retain the intent. Source instruction positions and choices do not establish actual runtime transitions or fit.
+
+Finding pending disposition: `yarn:line:189d999e`, “Thank you for listening,” appears after Ryan has shared his account. `Dziękuję, że mnie wysłuchujesz` may suggest ongoing listening; consider the gender-neutral `Dziękuję za wysłuchanie` in the closing exchange and compare related thank-you lines. No correction made yet.
+
+Cumulative distinct IDs read: 349 / 1,947; 1,598 remain. Author review only; separate independent acceptance and unrun runtime checks remain open.
+
+## Ryan third visit: 52 IDs read
+
+Read `Ryan_3_intro`, `Ryan_3_required`, `Ryan_3_Outro` and `Ryan_3_wont_use_mount` against both English builds and current Polish. Ryan hesitates on arrival, then explains the breakup and its mixed feelings; the separate responses acknowledge his decision or the difficulty of ending a relationship. The farewell has alternatives affirming friendship and his separate refusal of the mount is conditional context, not a universal statement. The English article and apostrophe variants retain the shared meaning; the size and italic markup are retained as in source. The source positions and choice kinds do not demonstrate live choice routing, conditional behavior or fit. No new semantic finding was identified in this unit.
+
+Cumulative distinct IDs read: 401 / 1,947; 1,546 remain. This is an author pass; independent acceptance and unrun checks remain open.

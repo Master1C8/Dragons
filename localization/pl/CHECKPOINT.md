@@ -438,3 +438,11 @@ Read five connected basket, egg, grapes, ham and melon groups, 78 additional IDs
 ## Author semantic pass: Ryan first visit and Start
 
 Read 79 IDs in the first-visit, phone, departure and source-included test node. Exact IDs and payload bindings are in `semantic-audit-ryan-first-start.json`; scene context and unrun gameplay boundary are in `semantic-audit-progress.md`. Cumulative author-read coverage: 268 / 1,947; resume at the remaining 1,679 IDs. The four earlier findings are still open, and independent audit remains pending.
+
+### Semantic audit continuation: Ryan second visit
+
+Author compared 81 more IDs in `semantic-audit-ryan-second-visit.json`; cumulative 349/1,947, 1,598 remain. `semantic-audit-progress.md` records the scene context and one pending closing-line finding. Translation remains SHA-256 `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; no package rebuild, new runtime or visual acceptance. Independent game-text acceptance remains pending.
+
+### Semantic audit continuation: Ryan third visit
+
+Author compared 52 more IDs in `semantic-audit-ryan-third-visit.json`; cumulative 401/1,947, 1,546 remain. Scene context and limits are in `semantic-audit-progress.md`. Translation remains SHA-256 `ef539239a434599eb135d4d7bedc239f6d7dc5b7a954bd99529ab363b0bfca7f`; no rebuild, new runtime or visual acceptance. Independent game-text acceptance remains pending.
