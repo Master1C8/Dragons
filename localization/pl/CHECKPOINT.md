@@ -430,3 +430,7 @@ Accepted the independent finding at `yarn:line:f16d7940`; `editorial-delta-02.md
 ## Author semantic pass: Ryan food conversation
 
 Read 111 paired English/current Polish IDs in `ryan_food_dialogue` with the three romance choices, branching evidence and both source variants. `semantic-audit-progress.md` records two open findings and limits; `semantic-audit-ryan-food.json` lists the reviewed IDs and bindings. This is author review, not independent acceptance; route gameplay and visual fit remain open. Resume with the remaining 1,836 IDs, consult actual scene and runtime context, adjudicate findings with dependent text, then complete the mandatory regression and independent audit.
+
+## Author semantic pass: Ryan picnic foods
+
+Read five connected basket, egg, grapes, ham and melon groups, 78 additional IDs; the cumulative author-read count is 189 / 1,947. The ID manifest `semantic-audit-ryan-food-items.json` and `semantic-audit-progress.md` record source bindings, scene context, two additional open findings and unrun route/fit checks. Resume with 1,758 remaining IDs. Findings remain uncorrected pending disposition and dependency review; independent audit is pending.

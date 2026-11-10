@@ -12,3 +12,14 @@ Findings pending disposition and dependency review:
 - `yarn:line:ca480eed`, instruction 162: `W takim razie was skontaktuję` is understandable but unnatural Polish. `W takim razie skontaktuję was ze sobą` is a candidate; compare the parallel instruction 163 before deciding. No correction has been made.
 
 The rest of the 1,947 IDs, protected-value review, dependency closure and required independent audit remain open. The 111-ID count records this bounded human language comparison, not a claim that the full semantic audit or regression has passed. Revisit affected entries if their sources, glossary dependencies or text change.
+
+## Ryan picnic basket and food exchanges: 78 IDs read
+
+Read `Ryan_grab_basket`, `Ryan_egg_dialog`, `Ryan_grapes_dialog`, `Ryan_ham_dialog` and `Ryan_melon_dialog` against the paired English source and Polish target. Ryan brings the basket, the player can respond to individual foods and each option has its own response. The basket introduction is contextualized by `special-scenes/ryan-opening.json`: Ryan first arrives with the picnic basket in his mouth. The egg's color/store answer, stems and dragon digestion, ham bone and suggestive option, and whole-watermelon/swallowing joke remain distinguishable. The English apostrophe-only variants of the basket and ham lines are consistent with their shared target. Source positions and option kinds identify alternatives; actual authored route selection and fit remain unrun.
+
+Findings pending disposition and dependency review:
+
+- `yarn:line:9be63f47`: “Thank you for grabbing that” follows the basket pickup; `Dzięki, że to podnosisz` describes an ongoing action. Check the pickup timing before deciding whether `Dzięki, że to podniosłeś` can be made player-gender neutral.
+- `yarn:line:7d9ffc48`: “nothing beats a large gulp” contrasts swallowing with savoring; `nic nie przebije wielkiego kęsa` suggests a bite. Review the swallowing animation and adjacent ham lines before selecting an equivalent.
+
+These 78 IDs plus the 111 Ryan conversation IDs make 189 distinct author-reviewed IDs. The remaining 1,758 IDs and all independent acceptance remain open.
