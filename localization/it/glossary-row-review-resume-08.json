@@ -17544,6 +17544,995 @@
       ]
     },
     {
+      "group": "Alexander_5_intro",
+      "orderedRowsSha256": "721a280778f5fa964ae68a3aa1f839d21c36463a34508a22babcbdf2d0597852",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-drake",
+          "sourceEntrySha256": "fc7a676e04843dde8307d6b1843ac34215ca67200d62b1ff1dfe06d21456cdd3",
+          "localeFieldsSha256": "588aaacc0e9b6174fe21464ef2a69488a7e951e8d2422c59ca6dfab4953105e1"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:6d5ba814",
+          "pairedRowSha256": "677f98a8b0de9736e10e52d8f0d2e6a727c0e7c3ffc4979504c8cc5161e72273",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A debug flag error; no personal referent."
+        },
+        {
+          "id": "yarn:line:fc461784",
+          "pairedRowSha256": "614e1e099d4743a15549b658ffa8a40c254f97f8d14f6581fa376e095f802b06",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A debug request for developer help."
+        },
+        {
+          "id": "yarn:line:6a7610f3",
+          "pairedRowSha256": "fd48ae777de5f8e73a28686af077c67c5516de7b1ae5b50372a28b8482287f3f",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "A debug flag describes Conrad and Ryan hooking up; not all branches share this state."
+        },
+        {
+          "id": "yarn:line:0d9de1a1",
+          "pairedRowSha256": "3644fb13290122ff219c22abc47029b3d98061c1d6d131a83c034d3ed16671d3",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "A debug flag describes the player and Conrad hooking up."
+        },
+        {
+          "id": "yarn:line:9bade6d6",
+          "pairedRowSha256": "0909c7977eac7c1a18dd2c6d125b752e226df58d08069825165e42143feb394a",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "A debug flag describes the player and Ryan hooking up."
+        },
+        {
+          "id": "yarn:line:21fcef4f",
+          "pairedRowSha256": "319e402d917268d48a4b3ee039dd6a13dcac8c51180a3cdb2ac745acce7e488a",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "A greeting names Alexander."
+        },
+        {
+          "id": "yarn:line:14598ca6",
+          "pairedRowSha256": "3258159a266b4642ad6722864607c41a50559807f6512b59c1f0b6e49f1eaf65",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "The player greets Alexander informally."
+        },
+        {
+          "id": "yarn:line:b7cce838",
+          "pairedRowSha256": "9eac59862a5c6e2338c7071e69e0f321fd5a79bd96a4b7863578485bed1e7426",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A greeting."
+        },
+        {
+          "id": "yarn:line:82698bd1",
+          "pairedRowSha256": "e5186cfc288bf00f25c7297c04d371511fe76f2f3edc1031ba7c07e64cf55a65",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A greeting."
+        },
+        {
+          "id": "yarn:line:38388248",
+          "pairedRowSha256": "ca98df0b23632a1f239ddcc3a816caa58bd049e7843a2b3fe8df43847741c3f8",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander requests a wash."
+        },
+        {
+          "id": "yarn:line:ae08853f",
+          "pairedRowSha256": "ee11e030b5cbd8ba484e9b67952c492b675fa10d2365c3d2be9196391e62ab42",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker hopes the other is well."
+        },
+        {
+          "id": "yarn:line:3f153aaf",
+          "pairedRowSha256": "d5e701436f88bc1e4167d10a08b31932641760ac33ac1bf40f499fa1712307e4",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player says they just dated Ryan."
+        },
+        {
+          "id": "yarn:line:a9253dd8",
+          "pairedRowSha256": "461041c3c4eaf9018ede490dac35b8ac7fa59aba50862dc6eaf64fd391261883",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-ryan"
+          ],
+          "conceptUses": [
+            "dnw-drake"
+          ],
+          "decision": "Alexander recognizes Ryan as the sky-blue drake."
+        },
+        {
+          "id": "yarn:line:4cacfab8",
+          "pairedRowSha256": "79c785702f3548860b0c19ea44343b03de31336a2bec0f54b7429f73f865ead7",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander is pleased the player is seeing someone."
+        },
+        {
+          "id": "yarn:line:da9cfdcf",
+          "pairedRowSha256": "05479cfd43323d56b5fb326648ee809885cefde83819c4556399e26e6cdc5eaf",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player says they just dated Conrad."
+        },
+        {
+          "id": "yarn:line:60cdf456",
+          "pairedRowSha256": "9e9d7f4bba204ce79030eb9eca54679e0ebc2005d7d21163fcf0cd9fba1de32d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-drake"
+          ],
+          "decision": "Alexander recognizes Conrad as the little red drake."
+        },
+        {
+          "id": "yarn:line:f6fdf321",
+          "pairedRowSha256": "3abff1fe07cdb8675129d529d6a3bdc3379c2d96399d68738f14eda62596a406",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander is pleased the player is seeing someone."
+        },
+        {
+          "id": "yarn:line:556897bf",
+          "pairedRowSha256": "3dcf2eb15ca95ba7ff05b11325fd72bf22443ff366eb6802e18d7fc3ebb0a66e",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "The player says Alexander’s arrival makes things better."
+        },
+        {
+          "id": "yarn:line:ef399e26",
+          "pairedRowSha256": "401942ea3dd3d7b15b4c8f8f1b17b31c989a971834c33f8a8241f213e2341329",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker says they are doing well."
+        },
+        {
+          "id": "yarn:line:c35890c8",
+          "pairedRowSha256": "58560ca2097269533ce6f75d3b3f8b2fe23017ea44395262055a146faa050aa6",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A surprised positive response."
+        },
+        {
+          "id": "yarn:line:79099951",
+          "pairedRowSha256": "ffed639ab53183e6919329c9977050ac5c52e8916335d395a446d2f42fffe890",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander is happy to be present."
+        },
+        {
+          "id": "yarn:line:7e2421b6",
+          "pairedRowSha256": "ea0663275844aec28cecd3c985277e29a72816b9c375aaf88f7fcb81f372c969",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A positive response."
+        },
+        {
+          "id": "yarn:line:e81426c1",
+          "pairedRowSha256": "2a64366dca6cc72a1904f2771311c057844f8866387bc705a4b37f0347d8ee7b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander says he needs cleaning."
+        },
+        {
+          "id": "yarn:line:8b3abbf7",
+          "pairedRowSha256": "8ef9badd1af0f02b7bc9d63cf9893326cff0afe49964d55b040957e9afb91552",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The listener agrees to act."
+        },
+        {
+          "id": "yarn:line:a75bb519",
+          "pairedRowSha256": "e251de580870e86e6a8ac07dae4555530402027c479fd2edd1fd22f885b055e5",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player offers to open the gate."
+        },
+        {
+          "id": "yarn:line:1d0abc80",
+          "pairedRowSha256": "d0847f84df183ca9fc2ddeff3bcddf2344e44ca6a6bcb33d337185c1716805ce",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander looks forward to the wash."
+        },
+        {
+          "id": "yarn:line:316bb26e",
+          "pairedRowSha256": "c95212219d1d92df53a90ceda3882091a6a72c7919de29141a05c0b84729d9df",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Brief thanks."
+        }
+      ]
+    },
+    {
+      "group": "Alexander_5_required",
+      "orderedRowsSha256": "ae531bca0aa36ab512a7face4b883782431acda4c13451f1e6ddb554ce36adc6",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:1c856f1c",
+          "pairedRowSha256": "75113754d7ad33844a19964d9aacefe89d7590fb68f042e4bc21a5148034505e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander asks about the player’s date."
+        },
+        {
+          "id": "yarn:line:8ab5686b",
+          "pairedRowSha256": "4fa412819dc023e5724d6dec9b143e948d689c48f720303a9f738c88de2fddaf",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player calls Ryan a sweetheart."
+        },
+        {
+          "id": "yarn:line:681117ec",
+          "pairedRowSha256": "b74d8f0f724fe8687371b5e86bea90e9408a0404c29156394580c3aa3c1b4411",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player describes Conrad as wild in a good way."
+        },
+        {
+          "id": "yarn:line:e0c8c57b",
+          "pairedRowSha256": "3a3daa9274efdbc555498b1f0c2d036747cc8eb52e6b2d558c1d6dd3c5d57510",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "An alternate answer describes sex without naming the partner in isolation."
+        },
+        {
+          "id": "yarn:line:30e461f2",
+          "pairedRowSha256": "4cfb6ccc0b1cba3f52697f5138b5151623539df43ccf4454541c7b37e8b073f6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The listener says the player deserves a decent man; the partner depends on the branch."
+        },
+        {
+          "id": "yarn:line:a6d46685",
+          "pairedRowSha256": "622ae88718debf89ca8a0def1735652be2de0085221d896ab083b55ecde1433a",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "In the Ryan branch Alexander says he is sure Ryan finds the player pleasant."
+        },
+        {
+          "id": "yarn:line:37c9d915",
+          "pairedRowSha256": "48c9f8d41b53020bb995970c3c7c7f462e0f5a66eb8b3e69a513e7288e158578",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The listener reciprocates a compliment."
+        },
+        {
+          "id": "yarn:line:44701902",
+          "pairedRowSha256": "22875dbc73507c2243156107c2377dbbdd7783ce00a5314de189407ac7ec09dc",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Brief thanks."
+        },
+        {
+          "id": "yarn:line:a1f9de62",
+          "pairedRowSha256": "4dd8fa040e4478619821a3f57f096e6be5f71a675e00ab662aaf762cc7ad3257",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Thanks for a kind remark; Windows has a source typo."
+        },
+        {
+          "id": "yarn:line:d2401e75",
+          "pairedRowSha256": "926dcb64fc1b37f011846dd2c8eeda9e45df4bb7cac429c634fe34f92b7f5e37",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A cordial acknowledgment."
+        },
+        {
+          "id": "yarn:line:fe21109b",
+          "pairedRowSha256": "2cfebbd7db4efedd834f0abfb105c207d562253ef0d8a0b41d4ca6b195d634cc",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "In the Conrad branch the speaker says he seems wild."
+        },
+        {
+          "id": "yarn:line:5db47405",
+          "pairedRowSha256": "80a9dc79edb87c793bc9e15f814647d16e7585dac5e55d270af764f23faebcdd",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander says he is glad the player enjoys Conrad and expects Conrad finds the player pleasant."
+        },
+        {
+          "id": "yarn:line:cb847372",
+          "pairedRowSha256": "abf53916088c69865422af19f207cf4d8c46ddfb2ad3ca510d93d06b435c22ce",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A reciprocal compliment."
+        },
+        {
+          "id": "yarn:line:e7e57d9c",
+          "pairedRowSha256": "18d0e3d59d061ee14f42f4e518c506a3ec06263eb06c373642428889e0fab872",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Brief thanks."
+        },
+        {
+          "id": "yarn:line:71d57aeb",
+          "pairedRowSha256": "f32772131c26cef1e4adf020b79a26d00c845c2894b8c854c24ae8143ffbaf93",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Thanks for a kind remark; Windows has a source typo."
+        },
+        {
+          "id": "yarn:line:76f8c20c",
+          "pairedRowSha256": "81cf41ae255ad3686b57b3ade0e80afbf827474e749d048af0c970c88a494ef8",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A cordial acknowledgment."
+        },
+        {
+          "id": "yarn:line:87233429",
+          "pairedRowSha256": "9ae2127bf1e0efce42515c57ee45e7a5220911a369f7c1cd67ef4afe7c5b721a",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A brief surprised response."
+        },
+        {
+          "id": "yarn:line:1113335e",
+          "pairedRowSha256": "30ced3768c7ceb7e5fa858f8f278fb981c2a272a9b4b613b067c9a1e2a63220c",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A pause without isolated speaker assignment."
+        },
+        {
+          "id": "yarn:line:ab423ac7",
+          "pairedRowSha256": "037c3ae7d2e069f30e243aa2bfb4886b1eb3a233714c9c6871da364072645466",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A positive response."
+        },
+        {
+          "id": "yarn:line:3d723db0",
+          "pairedRowSha256": "9ad986d04b69fbeff1e6f48410b9167919529faf0cd90c16d86893636c8d1a34",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "A comment says the player and date must match well; partner is branch-dependent."
+        }
+      ]
+    },
+    {
+      "group": "Alexander_5_Outro",
+      "orderedRowsSha256": "b72f2bec5259f5a0f55d7c00672d657958de7901c96de1ef15b1391c705b633b",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-college-library",
+          "sourceEntrySha256": "bd52ecb4c3629cbc205c3683a0fa4df3aa2a177819332e2c0400ce0101a0744b",
+          "localeFieldsSha256": "4cd4e91eaa17f7df596acb78fbd1d5197c6c19215dadf073a14c61a4caf224fc"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:505e150f",
+          "pairedRowSha256": "fdebe7a863d17bad6fec07bcc3634f08c501d8593b00f2138a9bf8dce3ebf3cb",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander thanks the player for cleaning."
+        },
+        {
+          "id": "yarn:line:c66e1278",
+          "pairedRowSha256": "5099f094777d9605fd84dbd54e3db61514a6d2d3edb7c13e9adc9218b137c2f6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-college-library"
+          ],
+          "decision": "Alexander identifies the campus library as the large blue spire building."
+        },
+        {
+          "id": "yarn:line:23e7d518",
+          "pairedRowSha256": "5404e051a7bb8f8fd534ce3c03e4552adb5948b6cc5d9183f8503fbeec70dc7d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-dragon"
+          ],
+          "decision": "Alexander directs the player to the dragon entrance and will let them in."
+        },
+        {
+          "id": "yarn:line:b5d7d26f",
+          "pairedRowSha256": "37a9caab87a29f34ac40d2ee94d0f5092902b9c89ebda2e98d8437e83b8b75e8",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker is excited."
+        },
+        {
+          "id": "yarn:line:0f86dbf6",
+          "pairedRowSha256": "b67c83ed56d8323a15f86dd16968ba6f6e684a24201960355553964d3ccf150c",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A reciprocal excited response."
+        },
+        {
+          "id": "yarn:line:3a23b81f",
+          "pairedRowSha256": "aefd22675ddc6351753d001a3400293ffb50d2a9c92047a8fb8f9a557b72a62d",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A response finds the plan cool."
+        },
+        {
+          "id": "yarn:line:99b6dc81",
+          "pairedRowSha256": "56bbd5db62836b6f5435be776214389af4ff25340751bccec7eb121d17d703a7",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker is glad."
+        },
+        {
+          "id": "yarn:line:ac13bf68",
+          "pairedRowSha256": "f5bc0de0964c18a59f366300e97b1810d9e4dfc662285cbd110cb4183b0173d6",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A formal response agrees it is cool."
+        },
+        {
+          "id": "yarn:line:1642b6f1",
+          "pairedRowSha256": "3ebb28929fc4b0b38eafc1db05e450dae9bba75258e1e107bd0c44bea1bd6a1b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander thanks the player for the wash and prepares to leave."
+        },
+        {
+          "id": "yarn:line:8072b186",
+          "pairedRowSha256": "d5cf569a243a8f59bf6c65c96c88b7a5337d8a285a84f312cee551ed92c6f226",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A farewell until the evening."
+        },
+        {
+          "id": "yarn:line:116f0e16",
+          "pairedRowSha256": "4a7bea4fe1ef7940189cad1504719e546247b0f0d3ea13fe1d58539eb09644cc",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker says every spot should be clean."
+        },
+        {
+          "id": "yarn:line:875f0961",
+          "pairedRowSha256": "05c4269be8e4d80b52b229561ec3d3fa4f71e95eabce754e374eab2a6145b0a3",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander thanks the player for cleaning."
+        },
+        {
+          "id": "yarn:line:5d36d5c8",
+          "pairedRowSha256": "6753251e72ff2f1275d56f0b7f3ac4e05020ef3d09b3e847a50da70ea7e57b2d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander is happy to have met the player."
+        },
+        {
+          "id": "yarn:line:cb06d2bf",
+          "pairedRowSha256": "5e8d8a37e60bcbcebdc216b175a945320e5bf13d59fc704fce1a60a070703b06",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A reciprocal response."
+        },
+        {
+          "id": "yarn:line:7157db26",
+          "pairedRowSha256": "f56492731b57eb9da8a530c56d0b88cb05d534c63c3db47781cb7316d2f7c364",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "A response thanks Alexander by name."
+        },
+        {
+          "id": "yarn:line:e767dc51",
+          "pairedRowSha256": "afb5ec6232da02650cb6722931f19697bdd481491aa7d36f524f0daffad25907",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander says he will leave."
+        },
+        {
+          "id": "yarn:line:44f2b8cf",
+          "pairedRowSha256": "8b21ae4483383a7edf3a9b6343ebb69a88c70cb0d370e424e671282af98720c7",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A goodbye."
+        }
+      ]
+    },
+    {
+      "group": "Alexander_5_romance_route",
+      "orderedRowsSha256": "3239d0caa2f70123da57c8f8402c3d67dcf071d0e7f8f998e3ebc78d1c1f61a9",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-college-library",
+          "sourceEntrySha256": "bd52ecb4c3629cbc205c3683a0fa4df3aa2a177819332e2c0400ce0101a0744b",
+          "localeFieldsSha256": "4cd4e91eaa17f7df596acb78fbd1d5197c6c19215dadf073a14c61a4caf224fc"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:1b6c7f75",
+          "pairedRowSha256": "364d26fa448db1d3101c95d7bac67b37f1c4edaab72b8986eaf46ea4fc00d843",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A greeting."
+        },
+        {
+          "id": "yarn:line:8d5c7802",
+          "pairedRowSha256": "93e4115c6b8cc7bc03ae6a7a5e812db3f290c846dbe6997b6e229edac1afc8b1",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "An informal question."
+        },
+        {
+          "id": "yarn:line:370d719b",
+          "pairedRowSha256": "818402e9f5117fc94e6022fa8ed9d1e4622b1ae6704e033d0f7be6042343adc6",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A questioning response."
+        },
+        {
+          "id": "yarn:line:a13d76ec",
+          "pairedRowSha256": "0d476100fdd088959e0923c63560fb09a95556eefe6bfe5cc92ee9c159e5e6fc",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander introduces a thought."
+        },
+        {
+          "id": "yarn:line:3020c97c",
+          "pairedRowSha256": "017cbd2a954ea46fdf8cf1d5bc65462624f37a1a606f3e528f577c3392e16c53",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander asks whether the player finds him attractive."
+        },
+        {
+          "id": "yarn:line:a610ce0b",
+          "pairedRowSha256": "b6a7ea26a7811fdaa1369e39615a94ac1af04e11e9ce53a8372e878d6c0f56c2",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "An emphatic affirmative option."
+        },
+        {
+          "id": "yarn:line:f9c800f2",
+          "pairedRowSha256": "058b05013c23882fa0a2e471145684fc83998f757c2218ae0b31a15bf78f5f32",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "An affirmative option."
+        },
+        {
+          "id": "yarn:line:763c6a82",
+          "pairedRowSha256": "e664de09044a65777e9d7c883efed412968eebc62126543c9e8cd8e52868f655",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "An option says Alexander is good-looking."
+        },
+        {
+          "id": "yarn:line:4399096b",
+          "pairedRowSha256": "e7e7e4aa0d2845e70c8b12b63a83f12ce541818a6b33f369d10f51a32332712e",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A surprised response."
+        },
+        {
+          "id": "yarn:line:d5a90e1c",
+          "pairedRowSha256": "c14a7c32c5274704a18eb5696b125a096fd9fe7441289e9473297e94f17c173e",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A speaker is glad."
+        },
+        {
+          "id": "yarn:line:6ff80785",
+          "pairedRowSha256": "61c91924395ff0edf34af842ac63fff0aa3b897ed921dca9e51beb78d23a9429",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander feels more confident."
+        },
+        {
+          "id": "yarn:line:5a5d646c",
+          "pairedRowSha256": "225840fd7dbe1923f7655720e49b5e9008b4492d8cc03fd7399a8a0c94d4fbfe",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A request for confirmation."
+        },
+        {
+          "id": "yarn:line:cc6d631b",
+          "pairedRowSha256": "ee4577c529a15dbe9281eeac7413cccdea0e7f89c5e621619270f29a8ac404fe",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "An alternate line expresses increased confidence."
+        },
+        {
+          "id": "yarn:line:e00c6df5",
+          "pairedRowSha256": "3279d61d91968c4880df853c6ef11c51c642579b8ad99a16b0596e35dd5c61ba",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Brief thanks."
+        },
+        {
+          "id": "yarn:line:7111d265",
+          "pairedRowSha256": "369bbfb474dd4c506d4603754c5c673faa1db6995af2081a8bfa5f1e642be743",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Another alternate line expresses increased confidence."
+        },
+        {
+          "id": "yarn:line:e721d512",
+          "pairedRowSha256": "f5c49e99f8b314ba3faff49c22a0d091927d06615dc1b6d0b8ac1c3b02ebc161",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander introduces another question."
+        },
+        {
+          "id": "yarn:line:8c8591ec",
+          "pairedRowSha256": "99c41f01093a77af1b567bdd2cf0d88fd51e5cf459f9088f69e4d12819bcbaf4",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-college-library"
+          ],
+          "decision": "Alexander invites the player to the college library."
+        },
+        {
+          "id": "yarn:line:1ab5969b",
+          "pairedRowSha256": "30a33016f34ef9b0d59a5ac6b5e416b19c1c81ae371f920c28d8cc411efe8e1f",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander calls the invitation a date."
+        },
+        {
+          "id": "yarn:line:a0e49f02",
+          "pairedRowSha256": "9cf19f047d79e327a850f039e877213b516c7302152d52b0b870e727b13c5a4b",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "An acceptance option explicitly leads to Alexander romance; preserve its gradient, bold and size markup."
+        },
+        {
+          "id": "yarn:line:0371fb9c",
+          "pairedRowSha256": "f6d1c18ef7fce969d2362ab205656e1988663a268bca8e1a971d782116484364",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "A refusal option explicitly leads to no romance; preserve its gradient, bold and size markup."
+        },
+        {
+          "id": "yarn:line:36d49875",
+          "pairedRowSha256": "e0112e4e2552d4307f27abbc1bf3c229797df2b893d3686cdc80c5e994d200e6",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A positive response."
+        },
+        {
+          "id": "yarn:line:9541fceb",
+          "pairedRowSha256": "4eb47962dcb474eac4b4197fe9977013c86dca696a83dbf0c666f988de57ad05",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander says he has considered asking for some time."
+        },
+        {
+          "id": "yarn:line:b920f205",
+          "pairedRowSha256": "674c5d6db2dcd91dbf96233576864eebb143bf2e8198ad5f29a39773f886e350",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander responds to refusal without pressure."
+        },
+        {
+          "id": "yarn:line:2f10f572",
+          "pairedRowSha256": "96112321b35eb9aafaf2a1e75e0b791e89b5a7ea36770de662eb932d34641135",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander says not to interrupt the wash."
+        }
+      ]
+    },
+    {
       "group": "UI/level0",
       "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
       "applicableEntries": [],
