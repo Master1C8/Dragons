@@ -87,3 +87,19 @@ PYTHONPATH="$base/deps" /private/tmp/dragnwash-unitypy-venv/bin/python localizat
 ```
 
 This is still a candidate: other named transfers, variable readers and code-side consumers of all changed scenes need equivalent bounded reconciliation, and cross-node implied glossary/referent coverage is not yet demonstrated. The independent coordinator must not treat this author check as independent approval.
+
+## Named-transfer consumer reconciliation
+
+`receipts/reconcile-named-transfers.py` follows static `RunNode` and `DetourToNode` operands transitively from each of the 25 changed source nodes, separately in the two pinned stock programs. `receipts/named-transfer-consumers.json` (SHA-256 `b756e8582e960ef53ec5f0f19bca343e3525f6a73af431ca68d36a6f53e2970e`) records the destination paths, paired English and target text, and unresolved names. Sixteen roots have downstream IDs. The author compared the 37 newly included target IDs with both English variants, including Alexander's romance and loop, Conrad's exits and the error scene; no demonstrable text defect was found. These are conservative contexts, not claims of reachable runtime states.
+
+The original Windows program references missing `Conrad_OutroDone` from `Conrad_finished_mount_3`; its `Conrad_Outro` has three source delimiter IDs (`a8e2f13e`, `3ed2f649`, `db5b3129`) outside target scope. They are recorded without target text and remain protected. The existing [missing-destination decision](special-scenes/missing-yarn-destinations.md) describes the opt-in reconstruction and source-bound controls; [background controls](../evidence/background-performance-20261109.md) cover isolated synthetic progression and save/reload, not normal entry, the final localized package or native Windows. This stock-program scan is not proof of repaired-package execution. The Ryan food conditional and Conrad conditional remain bounded by the earlier excerpts; dynamic state, command side effects and external callers are not established by named transfers.
+
+The latest candidate is `receipts/author-audit-transfer-recipe.json` (SHA-256 `baefe3fdaa84cb325cbd4d12ceb143f723372f3b307a0cc8f587961a01a15499`) and `receipts/author-audit-transfer-delta.json` (SHA-256 `c449bd8cae560cf73dee16cd52bb5da1acf85844f1ea4a97764a194fc402fe82`). It has 51 changed IDs, 991 target closure IDs and 55 protected records; closure-ID SHA-256 `e33d7834e09e2446b7a946ee0df282cd4c0507e9bf2b6a2492a784f1db208b03`, change-ID SHA-256 `8652fc71b8f98ab2036073284019f37b9f939329aba011009e24d16b5cb807bb`. All three generated JSON files reproduced byte-for-byte. Rebuild with fresh task-owned paths:
+
+```sh
+base=localization/work/cli-terra-high-20261110.J0KLrx/pt-BR
+python3 localization/pt-BR/receipts/reconcile-named-transfers.py "$base/resume-11/transfers-rebuilt.json" "$base/resume-11/transfer-recipe-rebuilt.json"
+PYTHONPATH="$base/deps" /private/tmp/dragnwash-unitypy-venv/bin/python localization/export_editorial_delta_with_regressions.py --locale pt-BR --inventory localization/work/source-inventory-20261107/combined-provisional-v42-20261110.json --yarn-scope localization/work/yarn-markers-20261110.ridbPA/yarn-scope-v42.json --paired-scenes localization/work/source-inventory-20261107/yarn-paired-scenes.json --before "$base/resume-10/full-audit-before.json" --after localization/pt-BR/translation.json --recipe "$base/resume-11/transfer-recipe-rebuilt.json" --output "$base/resume-11/transfer-delta-rebuilt.json"
+```
+
+Those example paths were used for the recorded reproduction; choose unused names for another run. Next reconcile state-variable readers and managed-code callers, and cross-node implied referents against the bound glossary before asserting dependency closure. The distinct independent audit and localized artifact, runtime and visual acceptance remain pending. Translation bytes have not changed; the prior paired stock readback and complete Yarn receipt remain applicable. No game or package was launched.

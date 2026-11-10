@@ -1,0 +1,3197 @@
+{
+  "schema": 1,
+  "inputs": {
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-11/affected-node-map.json": "fa05fdf1a278a9bd88e3c37d13fe974dff910e6a07bfdf252b365ed20873de42",
+    "localization/work/source-inventory-20261107/yarn-instructions-macos.json": "3e0acd1a2f25811e380de5743e0913535470d931301cc9bc40f5a3c897d73e18",
+    "localization/work/source-inventory-20261107/yarn-instructions-windows.json": "13d34e111e48fcd80105f419f1072717ddc11659300474410f52e7839b88522b",
+    "localization/pt-BR/translation.json": "b1e341f5338fc0c81e4af1e968a5b86acf3447330d726489cbc3ee89032b7311",
+    "localization/pt-BR/receipts/author-audit-loop-recipe.json": "e5364975b33ca75c6f02423c1feff58b46d4d3ca29641929a90af0140df47021"
+  },
+  "limitation": "Static named RunNode/DetourToNode transitive closure only. Conditions, reachability, dynamic dispatch and managed-code consumers are not established.",
+  "platforms": {
+    "macos": {
+      "Alexander_2_intro": {
+        "changedIds": [
+          "yarn:line:938be2fb"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Alexander_2_required": {
+        "changedIds": [
+          "yarn:line:33440e8c"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Alexander_3_JerkOff_Start": {
+        "changedIds": [
+          "yarn:line:7d13eca0"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Alexander_3_intro": {
+        "changedIds": [
+          "yarn:line:61c8781b"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Alexander_5_required": {
+        "changedIds": [
+          "yarn:line:37c9d915",
+          "yarn:line:3d723db0",
+          "yarn:line:44701902",
+          "yarn:line:cb847372",
+          "yarn:line:e7e57d9c"
+        ],
+        "edges": [
+          {
+            "node": "Alexander_5_required",
+            "index": 9,
+            "opcode": 16,
+            "target": "Alexander_5_romance_route"
+          }
+        ],
+        "missingTargets": [],
+        "downstream": {
+          "Alexander_5_romance_route": {
+            "nodeSha256": "1995ee732cc7951d5230cc3df0772fdb6229e9db5c366b4eb3723fa5d0ea41b2",
+            "lines": [
+              {
+                "id": "yarn:line:1b6c7f75",
+                "source": "Hey there.",
+                "target": "Ei.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8d5c7802",
+                "source": "What's up?",
+                "target": "O que foi?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:370d719b",
+                "source": "Hm?",
+                "target": "Hm?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a13d76ec",
+                "source": "I was thinking...",
+                "target": "Eu estava pensando...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:3020c97c",
+                "source": "Do you believe I am attractive?",
+                "target": "Você me acha atraente?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a610ce0b",
+                "source": "YES.",
+                "target": "SIM.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:f9c800f2",
+                "source": "I do!",
+                "target": "Acho!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:763c6a82",
+                "source": "I think you're good looking.",
+                "target": "Acho você bonito.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4399096b",
+                "source": "Oh.",
+                "target": "Ah.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d5a90e1c",
+                "source": "I'm glad!",
+                "target": "Fico contente!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:6ff80785",
+                "source": "That... makes me feel a lot more sure of myself then.",
+                "target": "Isso... me faz sentir bem mais seguro de mim.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5a5d646c",
+                "source": "Truly?",
+                "target": "Mesmo?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:cc6d631b",
+                "source": "That... makes me feel a lot more sure of myself then.",
+                "target": "Isso... me faz sentir bem mais seguro de mim.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e00c6df5",
+                "source": "Thanks.",
+                "target": "Obrigado.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:7111d265",
+                "source": "That makes me feel a lot more sure of myself then.",
+                "target": "Isso me faz sentir bem mais seguro de mim.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e721d512",
+                "source": "That brings me to my next question...",
+                "target": "Isso me leva à minha próxima pergunta...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8c8591ec",
+                "source": "Would you care to join me at the college library this evening...?",
+                "target": "Você gostaria de me acompanhar à biblioteca da faculdade esta noite...?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1ab5969b",
+                "source": "It would be a... date. As most would say.",
+                "target": "Seria um... encontro. Como a maioria diria.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a0e49f02",
+                "source": "<gradient=\"gold\"><b> I wouldn't mind! </b></gradient><size=70%> (Will lead to Alexander romance!)",
+                "target": "<gradient=\"gold\"><b> Eu toparia! </b></gradient><size=70%> (Leva ao romance com Alexander!)",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:0371fb9c",
+                "source": "<gradient=\"gold\"><b> I'm going to be busy tonight. Sorry. </b></gradient><size=70%> (Will lead to no romance!)",
+                "target": "<gradient=\"gold\"><b> Não vou poder hoje à noite. Desculpe. </b></gradient><size=70%> (Não leva a um romance!)",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:36d49875",
+                "source": "Wonderful!",
+                "target": "Maravilha!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:9541fceb",
+                "source": "I've been considering asking you this for a while now.",
+                "target": "Estou pensando em convidar você há algum tempo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b920f205",
+                "source": "Ah. Do not worry.",
+                "target": "Ah. Não se preocupe.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:2f10f572",
+                "source": "Very well. Don't let me interrupt the wash then!",
+                "target": "Muito bem. Então não vou interromper a lavagem!",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Alexander_SexScene": {
+        "changedIds": [
+          "yarn:line:d132db41"
+        ],
+        "edges": [
+          {
+            "node": "Alexander_SexScene",
+            "index": 4,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Loop"
+          },
+          {
+            "node": "Alexander_SexScene_Loop",
+            "index": 28,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Cum"
+          },
+          {
+            "node": "Alexander_SexScene_Cum",
+            "index": 39,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Loop"
+          },
+          {
+            "node": "Alexander_SexScene_Cum",
+            "index": 66,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Loop"
+          }
+        ],
+        "missingTargets": [],
+        "downstream": {
+          "Alexander_SexScene_Cum": {
+            "nodeSha256": "53da62326ad427ea9be6e40336f8c9686ea3f41915348749e45cc7f2e99176cc",
+            "lines": [
+              {
+                "id": "yarn:line:00e41343",
+                "source": "Is this good?",
+                "target": "Está bom assim?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:bab51ada",
+                "source": "Good... That'd be correct.",
+                "target": "Bom... Sim, essa seria a palavra correta.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:2c851dad",
+                "source": "Good.",
+                "target": "Bom.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8f107933",
+                "source": "I'm... Rather close now",
+                "target": "Estou... Bem perto agora",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:19207e44",
+                "source": "Hold on a little longer for me?",
+                "target": "Pode aguentar mais um pouco por mim?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:354170aa",
+                "source": "Go for it!",
+                "target": "Pode ir!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a37177dd",
+                "source": "V-very well. I'll try.",
+                "target": "M-muito bem. Vou tentar.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a45ccf3a",
+                "source": "I don't believe I can hold back any longer",
+                "target": "Acho que não consigo me conter por mais tempo",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:326cc84d",
+                "source": "Not yet. a little longer.",
+                "target": "Ainda não. Mais um pouco.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:41d5085a",
+                "source": "Let go whenever you are ready.",
+                "target": "Pode se soltar quando sentir que é hora.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d7e50f2d",
+                "source": "Yes..",
+                "target": "Sim..",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:fb8401c3",
+                "source": "Huff...",
+                "target": "Ufa...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:6db406b4",
+                "source": "I enjoyed this quite a lot.",
+                "target": "Gostei muito disso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ce21622a",
+                "source": "I'm happy to hear that.",
+                "target": "Que bom saber disso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e2406cc4",
+                "source": "What now?",
+                "target": "E agora?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5811655d",
+                "source": "Yes... But I believe we need to clean the floors.",
+                "target": "Sim... Mas acredito que precisamos limpar o chão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:74706bb3",
+                "source": "We will need to clean the floors...",
+                "target": "Precisaremos limpar o chão...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e56dd423",
+                "source": "<i><size=70%>uh oh.. and the books",
+                "target": "<i><size=70%>ah, não.. e os livros",
+                "inTargetScope": true
+              }
+            ]
+          },
+          "Alexander_SexScene_Loop": {
+            "nodeSha256": "b921720ca0d0e6db3851ff7365c097ecc7b3e281aff5cdb623e267e87ddcd32d",
+            "lines": [
+              {
+                "id": "yarn:line:dfe74420",
+                "source": "My-",
+                "target": "Ora-",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4efafbb0",
+                "source": "You are very skilled with your hands",
+                "target": "Suas mãos são muito habilidosas",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d8cafcc7",
+                "source": "mmm..",
+                "target": "mmm..",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b36eb839",
+                "source": "..",
+                "target": "..",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Alexander_SexScene_Cum": {
+        "changedIds": [
+          "yarn:line:41d5085a"
+        ],
+        "edges": [
+          {
+            "node": "Alexander_SexScene_Cum",
+            "index": 39,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Loop"
+          },
+          {
+            "node": "Alexander_SexScene_Cum",
+            "index": 66,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Loop"
+          },
+          {
+            "node": "Alexander_SexScene_Loop",
+            "index": 28,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Cum"
+          }
+        ],
+        "missingTargets": [],
+        "downstream": {
+          "Alexander_SexScene_Loop": {
+            "nodeSha256": "b921720ca0d0e6db3851ff7365c097ecc7b3e281aff5cdb623e267e87ddcd32d",
+            "lines": [
+              {
+                "id": "yarn:line:dfe74420",
+                "source": "My-",
+                "target": "Ora-",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4efafbb0",
+                "source": "You are very skilled with your hands",
+                "target": "Suas mãos são muito habilidosas",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d8cafcc7",
+                "source": "mmm..",
+                "target": "mmm..",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b36eb839",
+                "source": "..",
+                "target": "..",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Conrad_4_Mount_Finish": {
+        "changedIds": [
+          "yarn:line:88d7e1e2"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_5_intro_conrad_romanced": {
+        "changedIds": [
+          "yarn:line:1538bc7e",
+          "yarn:line:d66b9155"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_5_intro_ryan_romanced": {
+        "changedIds": [
+          "yarn:line:34cf0601"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_5_required_conrad_romanced": {
+        "changedIds": [
+          "yarn:line:a0479425"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_Intro_4": {
+        "changedIds": [
+          "yarn:line:18e5a573",
+          "yarn:line:918d7820",
+          "yarn:line:cf8c5f37",
+          "yarn:line:fa293cde"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_Outro_3": {
+        "changedIds": [
+          "yarn:line:a0cf6cae",
+          "yarn:line:c4cc497f"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_Outro_4_Ryan_Conrad_Romanced": {
+        "changedIds": [
+          "yarn:line:94fbdbf0"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_Outro_4_Ryan_Romanced": {
+        "changedIds": [
+          "yarn:line:4789095b",
+          "yarn:line:5e4d645c"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_SexScene_Cum": {
+        "changedIds": [
+          "yarn:line:0bc044da",
+          "yarn:line:7f543c2a",
+          "yarn:line:9addfb4a",
+          "yarn:line:f0a0565a"
+        ],
+        "edges": [
+          {
+            "node": "Conrad_SexScene_Cum",
+            "index": 23,
+            "opcode": 16,
+            "target": "Conrad_SexScene_Loop"
+          },
+          {
+            "node": "Conrad_SexScene_Cum",
+            "index": 50,
+            "opcode": 16,
+            "target": "Conrad_SexScene_Loop"
+          },
+          {
+            "node": "Conrad_SexScene_Loop",
+            "index": 27,
+            "opcode": 16,
+            "target": "Conrad_SexScene_Cum"
+          }
+        ],
+        "missingTargets": [],
+        "downstream": {
+          "Conrad_SexScene_Loop": {
+            "nodeSha256": "4452d3047e242b87205930daf4c1d9ef60923fc4ba4b8c59aad98484cfe6fcdd",
+            "lines": [
+              {
+                "id": "yarn:line:2f9b499a",
+                "source": "I honestly don't know how you are doing that.",
+                "target": "Sinceramente, não sei como você está fazendo isso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b9ab4eed",
+                "source": "Im not complaining though.",
+                "target": "Mas não estou reclamando.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1a3e2a73",
+                "source": "Hell yea",
+                "target": "Com certeza",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8c0e2d04",
+                "source": "..",
+                "target": "..",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Conrad_finished_mount_3": {
+        "changedIds": [
+          "yarn:line:73ea230a"
+        ],
+        "edges": [
+          {
+            "node": "Conrad_finished_mount_3",
+            "index": 89,
+            "opcode": 16,
+            "target": "Conrad_Outro_3"
+          }
+        ],
+        "missingTargets": [],
+        "downstream": {
+          "Conrad_Outro_3": {
+            "nodeSha256": "c144a4b119ba3a8094e202bc032778b2bb3169c7ef8ff1351bb09817de375977",
+            "lines": [
+              {
+                "id": "yarn:line:d376acb9",
+                "source": "Ey, so. Was thinkin'",
+                "target": "Ei, então. Eu tava pensando...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4546abce",
+                "source": "Might seem kinda weird to ask now. Buuuut.",
+                "target": "Talvez seja meio estranho perguntar agora. Maaas...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a0cf6cae",
+                "source": "Do you know any cool places, people, I could hang around?",
+                "target": "Você conhece algum lugar legal para frequentar ou alguém com quem eu possa passar um tempo?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:36ff6bd9",
+                "source": "<gradient=\"gold\"><b> I know a dragon, Ryan. I could get you two in contact? </b></gradient><size=70%>(Unlocks Conrad/Ryan hookup OR Ryan romance)",
+                "target": "<gradient=\"gold\"><b> Conheço um dragão, o Ryan. Posso colocar vocês em contato? </b></gradient><size=70%>(Desbloqueia o encontro Conrad/Ryan OU o romance com Ryan)",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:7e9d40e6",
+                "source": "<gradient=\"gold\"><b> I wouldn't mind hanging out... </b></gradient><size=70%> (Unlocks Conrad romance)",
+                "target": "<gradient=\"gold\"><b> Eu toparia passar um tempo com você... </b></gradient><size=70%> (Desbloqueia o romance com Conrad)",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8cae6240",
+                "source": "Another dragon? Usually I don't really get along...",
+                "target": "Outro dragão? Normalmente eu não me dou muito bem...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1a9e6537",
+                "source": "Oh, no. Ryan is a sweetheart.",
+                "target": "Ah, não. Ryan é um amor.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b90b01a9",
+                "source": "Don't worry, he's real nice.",
+                "target": "Não se preocupe, ele é muito legal.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:2f3b06de",
+                "source": "Okay. Then I think I'd like to try.",
+                "target": "Tá bom. Acho que gostaria de tentar.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:956a0f47",
+                "source": "I'll make sure to ask him next time I see him.",
+                "target": "Vou perguntar a ele na próxima vez que o vir.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:9247b7a0",
+                "source": "I think he'd like the new you!",
+                "target": "Acho que ele gostaria do novo você!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:035a0830",
+                "source": "Thank you. I'd really appreciate it",
+                "target": "Obrigado. Eu agradeceria muito.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:0477b0d7",
+                "source": "I hope so. I really want a fresh start with someone.",
+                "target": "Espero que sim. Quero muito recomeçar com alguém.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:67592de1",
+                "source": "I probably need to head out though.",
+                "target": "Mas acho que preciso ir.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:f1692a96",
+                "source": "Thanks for the suggestion!",
+                "target": "Valeu pela sugestão!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4b38230f",
+                "source": "No need for thanks. I'll get the gate.",
+                "target": "Não precisa agradecer. Vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:dd082478",
+                "source": "Of course.",
+                "target": "Claro.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e8ad4791",
+                "source": "Ooooh.",
+                "target": "Aaaah.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:52fc4e08",
+                "source": "I think I'd like that!",
+                "target": "Acho que eu gostaria disso!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:c4cc497f",
+                "source": "You're pretty hot.",
+                "target": "Você é uma delícia.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:55d1f6ef",
+                "source": "...and nice.",
+                "target": "...e legal.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:c3e1f198",
+                "source": "Yip!",
+                "target": "Yip!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:9c393f61",
+                "source": "I think you're special too.",
+                "target": "Também acho você especial.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:266836f8",
+                "source": "That's... the first time you've yipped for me.",
+                "target": {
+                  "text": "Essa é... a primeira vez que você dá um Yip para mim.",
+                  "sharedAcrossSourceVariants": true
+                },
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b058318f",
+                "source": "It means you're doing a good job in kobold.",
+                "target": "Em kobold, isso quer dizer que você está indo bem.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:0a093816",
+                "source": "Oh... hah. I like that.",
+                "target": "Ah... ha. Gostei disso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:3fac5bff",
+                "source": "That makes me feel good to hear.",
+                "target": "Fico feliz em ouvir isso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a99c5c88",
+                "source": "So. How about a date?",
+                "target": "Então. Que tal um encontro?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:13cd5511",
+                "source": "That's fast... But I think so!",
+                "target": "Isso foi rápido... Mas acho que sim!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:85fd5266",
+                "source": "Yes.",
+                "target": "Sim.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:14e0edf6",
+                "source": "I think I'd like to try!",
+                "target": "Acho que gostaria de tentar!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:82d0ea81",
+                "source": "Okay! I'll be back later then.",
+                "target": "Tá bom! Então volto mais tarde.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e53b1bd3",
+                "source": "<size=70%><i> holy shit, I just bagged a date with a dragon.",
+                "target": "<size=70%><i> caramba, acabei de conseguir um encontro com um dragão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:fcff76d4",
+                "source": "Yep! I'll get the gate.",
+                "target": "Sim! Vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:730b1ca4",
+                "source": "Hmm?",
+                "target": "Hmm?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:c95a153d",
+                "source": "Oh! nothing. I'll get the gate.",
+                "target": "Ah! Nada. Vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5f6a124a",
+                "source": "Oh, okay. Thanks.",
+                "target": "Ah, tá bom. Obrigado.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:6acf71a3",
+                "source": "Okay, thanks.",
+                "target": "Tá bom, obrigado.",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Conrad_required_2": {
+        "changedIds": [
+          "yarn:line:0de4fe62"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Ryan_5_Outro_ryan_romanced": {
+        "changedIds": [
+          "yarn:line:a00f681d"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Ryan_5_Required_ryan_conrad_romanced": {
+        "changedIds": [
+          "yarn:line:c6202cf2"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Ryan_5_intro": {
+        "changedIds": [
+          "yarn:line:601e1b38",
+          "yarn:line:7f2e2736",
+          "yarn:line:e91e2041"
+        ],
+        "edges": [
+          {
+            "node": "Ryan_5_intro",
+            "index": 117,
+            "opcode": 16,
+            "target": "Ryan_5_intro_ryan_romanced"
+          }
+        ],
+        "missingTargets": [],
+        "downstream": {
+          "Ryan_5_intro_ryan_romanced": {
+            "nodeSha256": "eb527aa22da0f1459da33abb74ae19c7cf8f80e59c68fbae7ab0cde93cb1aba7",
+            "lines": [
+              {
+                "id": "yarn:line:e2ea4ead",
+                "source": "...A wash for our date tonight.",
+                "target": "...Uma lavagem para o nosso encontro de hoje à noite.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:73f7f13d",
+                "source": "OH. RIGHT.",
+                "target": "AH. É MESMO.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:822c0718",
+                "source": "I'm very excited.",
+                "target": "Mal posso mesmo esperar.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e5c7f64a",
+                "source": "Glad I'm here to remind you then.",
+                "target": "Ainda bem que estou aqui para te lembrar.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:141c006f",
+                "source": "I am too.",
+                "target": "Eu também.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ae4d09f6",
+                "source": "I'll be waiting for the gate!",
+                "target": "Vou esperar no portão!",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Ryan_5_intro_ryan_romanced": {
+        "changedIds": [
+          "yarn:line:822c0718"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Ryan_egg_dialog": {
+        "changedIds": [
+          "yarn:line:7f5113d5"
+        ],
+        "edges": [
+          {
+            "node": "Ryan_egg_dialog",
+            "index": 39,
+            "opcode": 16,
+            "target": "ryan_food_dialogue"
+          }
+        ],
+        "missingTargets": [],
+        "downstream": {
+          "ryan_food_dialogue": {
+            "nodeSha256": "03bf2da4fb5edb2f1eda00716d1848aa555fec665f366c4004862da8255127e5",
+            "lines": [
+              {
+                "id": "yarn:line:7c56b2d8",
+                "source": "So... I was thinking about my relationships.",
+                "target": "Então... Eu estava pensando nos meus relacionamentos.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ea66b5af",
+                "source": "How so?",
+                "target": "Como assim?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:7b7b0a3f",
+                "source": "Like, the future of my relationships.",
+                "target": "No futuro dos meus relacionamentos, sabe?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ed4b0d48",
+                "source": "I'm kind of excited.",
+                "target": "Estou até um pouco animado.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8aa0fc1a",
+                "source": "Well, you are one hell of a catch.",
+                "target": "Bem, você é um baita partido.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a6c1f2f4",
+                "source": "I'm excited for you!",
+                "target": "Fico muito feliz por você!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1c90fb6d",
+                "source": "Oh you. Gonna make me blush.",
+                "target": "Ah, você. Vai me fazer corar.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:30f1f583",
+                "source": "Thanks!",
+                "target": "Obrigado!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:9364911d",
+                "source": "Really looking forward to finding new people.",
+                "target": "Estou ansioso para conhecer gente nova.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:0554966a",
+                "source": "Now, more food?",
+                "target": "Agora, mais comida?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:bf059ff3",
+                "source": "Hmm...",
+                "target": "Hmm...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:29359884",
+                "source": "What's up?",
+                "target": "O que foi?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b8282714",
+                "source": "I was thinking.",
+                "target": "Eu estava pensando.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:2e182063",
+                "source": "It's difficult to find folks that are outside of my current bubble.",
+                "target": "É difícil encontrar gente fora da minha bolha atual.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:cb91e703",
+                "source": "Like, I love those around me, but there's a lot of baggage there.",
+                "target": "Eu adoro as pessoas ao meu redor, mas tem muita bagagem ali.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5da1e074",
+                "source": "Y'know?",
+                "target": "Sabe?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e7f0e9ed",
+                "source": "Makes sense.",
+                "target": "Faz sentido.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:fe3484ea",
+                "source": "I get how you'd feel that way after a breakup, yeah.",
+                "target": "Entendo que se sinta assim depois de um término, sim.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:71c0ee9a",
+                "source": "Yeah, ever since the breakup I've been looking for something new.",
+                "target": "Sim, desde o término venho procurando algo novo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d2558a04",
+                "source": "Maybe someone?",
+                "target": "Talvez alguém?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:44658d73",
+                "source": "Hmm...",
+                "target": "Hmm...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:6804839d",
+                "source": "Yeah. It's hard to unwind groups after something like that.",
+                "target": "É. É difícil desfazer os laços de um grupo depois de algo assim.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:f9193c0d",
+                "source": "I'm willing to do it. But I'd like something new.",
+                "target": "Estou disposto a tentar. Mas gostaria de algo novo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:6f293b7a",
+                "source": "Maybe someone new...",
+                "target": "Talvez alguém novo...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:048d7f84",
+                "source": "...About what I said earlier.",
+                "target": "...Sobre o que eu disse antes.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:92bd78f3",
+                "source": "Yeah?",
+                "target": "Sim?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:28ec716a",
+                "source": "Do you know anyone I could talk to? Y'know... about relationship stuffs?",
+                "target": "Você conhece alguém com quem eu possa conversar? Sabe... sobre relacionamentos?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:bedc761d",
+                "source": "<gradient=\"gold\"><b>I know this one red dragon. I think you'd like him! </b></gradient><size=70%> (Hooks up Ryan with Conrad!)",
+                "target": "<gradient=\"gold\"><b> Conheço um dragão vermelho. Acho que você gostaria dele! </b></gradient><size=70%> (Junta Ryan e Conrad!)",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e104b8e4",
+                "source": "<gradient=\"gold\"><b>Oh. Uhm. <size=70%> I wouldn't mind... If I was that someone. </b></gradient><size=70%> (Locks in Ryan romance!)",
+                "target": "<gradient=\"gold\"><b> Ah. Hum. <size=70%> Eu toparia... Se eu fosse essa pessoa. </b></gradient><size=70%> (Confirma o romance com Ryan!)",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:f5a81524",
+                "source": "<gradient=\"gold\"><b>I don't have anyone off the top of my head.</b></gradient><size=70%> (Locks in Conrad romance!)",
+                "target": "<gradient=\"gold\"><b>Não me vem ninguém à cabeça.</b></gradient><size=70%> (Confirma o romance com Conrad!)",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1d491283",
+                "source": "Oh?",
+                "target": "Ah?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8b7915f4",
+                "source": "Who's that?",
+                "target": "Quem é?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:31281c6d",
+                "source": "He's this REALLY cute red drake who goes to the wash!",
+                "target": "É um dragão vermelho MUITO fofo que frequenta o lava-rápido!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a7181b1a",
+                "source": "He's a red dragon. I think you two would like eachother!",
+                "target": "É um dragão vermelho. Acho que vocês dois iam se dar bem!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:3605a48a",
+                "source": "Oh! I think I've seen him. The tiny one, yeah?",
+                "target": "Ah! Acho que já vi ele. O baixinho, né?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a035a3fd",
+                "source": "He prefers 'vertically challenged'... But yes.",
+                "target": "Ele prefere 'verticalmente desfavorecido'... Mas é.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:69dd6a73",
+                "source": "Mhm! he's trying to meet new people.",
+                "target": "Uhum! Ele está tentando conhecer gente nova.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:45bc649d",
+                "source": "Oh...",
+                "target": "Ah...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d38c63ea",
+                "source": "That's really cute.",
+                "target": {
+                  "text": "Que fofo.",
+                  "sharedAcrossSourceVariants": true
+                },
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ffed6d04",
+                "source": "Oh, wonderful. Seem's we're similar.",
+                "target": "Ah, maravilha. Parece que somos parecidos.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5c78099a",
+                "source": "I think I'd like to meet him!",
+                "target": "Acho que gostaria de conhecê-lo!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ca480eed",
+                "source": "I'll get you two in contact then.",
+                "target": "Então vou colocar vocês em contato.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e6290003",
+                "source": "I'm so excited. I'll get you two in contact!",
+                "target": "Que empolgação! Vou colocar vocês em contato!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:70190774",
+                "source": "Thanks!",
+                "target": "Obrigado!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:7734bf93",
+                "source": "Me too, thanks!",
+                "target": "Eu também, obrigado!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:3b6d644d",
+                "source": "Oh.",
+                "target": "Ah.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ad5d633a",
+                "source": "<i>Oh...",
+                "target": "<i>Ah...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:170c6aa3",
+                "source": "I think I'd like you to be that someone aswell.",
+                "target": "Acho que gostaria que você também fosse essa pessoa.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:813c6dd4",
+                "source": "So is this like... our first date?",
+                "target": "Então isso é tipo... nosso primeiro encontro?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b4990e3d",
+                "source": "If I'm honest. I've had a crush on you for a bit.",
+                "target": "A verdade é que tenho uma quedinha por você há algum tempo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:22a9094a",
+                "source": "I guess so!",
+                "target": "Acho que sim!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:0ec807a4",
+                "source": "Really? Aw, That's really sweet.",
+                "target": "Sério? Ah, que coisa mais fofa.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:98f800d3",
+                "source": "I didn't know anyone could like me that much so easily.",
+                "target": "Não sabia que alguém podia gostar tanto de mim assim tão facilmente.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:09e5bf43",
+                "source": "You're cute by the way.",
+                "target": "Você é uma graça, aliás.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:9fd5b834",
+                "source": "Yeah. <size=90%>Oh- <size=80%>you know. I'm like... <size=70%>Haha. Yeah. Mhm!",
+                "target": "Sim. <size=90%>Ah- <size=80%>você sabe. Eu fico... <size=70%>Haha. É. Uhum!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:563d71ba",
+                "source": "You are too!",
+                "target": "Você também!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:7a5c7f54",
+                "source": "I didn't mean to fluster you!",
+                "target": "Não queria deixar você sem graça!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ec6c7823",
+                "source": "I'm just... Happy.",
+                "target": "Estou só... Feliz.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:c00d76cd",
+                "source": "Aw, thanks. I only look so good 'cause of your washes!",
+                "target": "Ah, obrigado. Só estou tão bonito por causa das suas lavagens!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:63981253",
+                "source": "I'm... Happy.",
+                "target": "Estou... Feliz.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4ff91cbd",
+                "source": "That's fine!",
+                "target": "Tudo bem!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d9c91bca",
+                "source": "How about you though? have you been seeing anyone?",
+                "target": "E você? Está saindo com alguém?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:48d4a45a",
+                "source": "There's this one red dragon, Conrad. He's... Hot headed, but cute.",
+                "target": "Tem um dragão vermelho, o Conrad. Ele é... Esquentado, mas fofo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:dee4a32d",
+                "source": "Yeah! Conrad, he's adorable. Though he'd hate I said that.",
+                "target": "Sim! O Conrad, ele é uma graça. Mas ia odiar que eu dissesse isso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b90f527f",
+                "source": "Oh huh, that's the tiny drake I saw coming in a bit back yeah?",
+                "target": "Ah, sei, é aquele dragão baixinho que vi entrando um tempo atrás, né?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:2f3f5508",
+                "source": "Hey! He's just... 'vertically challenged'.",
+                "target": "Ei! Ele só é... 'verticalmente desfavorecido'.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a0cb3f78",
+                "source": "Mhm! that's him.",
+                "target": {
+                  "text": "Uhum! É ele.",
+                  "sharedAcrossSourceVariants": true
+                },
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:956e5c91",
+                "source": "Oh, sorry.",
+                "target": "Ah, desculpa.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:035e5be6",
+                "source": "They seem cute!",
+                "target": "Parece ser fofo!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:36fb380f",
+                "source": "That's wonderful, he's cute!",
+                "target": {
+                  "text": "Que maravilha, ele é fofo!",
+                  "sharedAcrossSourceVariants": true
+                },
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8caa3196",
+                "source": "Hey uhm, thanks once again.",
+                "target": "Ei, hã, obrigado mais uma vez.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1a9a36e1",
+                "source": "No problem! Can't wait for you to meet Conrad.",
+                "target": "De nada! Mal posso esperar para você conhecer o Conrad.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:cd9b2a8f",
+                "source": "No, thank you. I'm... Really excited.",
+                "target": "Não, eu que agradeço. Estou... Na maior expectativa.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:0d20d327",
+                "source": "Of course! Thank you for the food.",
+                "target": "Claro! Valeu pela comida.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8b878971",
+                "source": "Hah, yeah. He sounds fun.",
+                "target": "Ha, é. Ele parece divertido.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1db78e06",
+                "source": "I'll make sure to tell you how it goes, yeah?",
+                "target": "Vou contar para você como foi, tá?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:f83e4966",
+                "source": "I'm excited to hear about it!",
+                "target": "Mal posso esperar para saber!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:6e0e4e11",
+                "source": "Yeah. You two will be cute.",
+                "target": "Sim. Vocês dois vão ficar fofos juntos.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d45f4788",
+                "source": "This was nice...",
+                "target": "Isso foi bom...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:426f40ff",
+                "source": "See you again soon, yeah?",
+                "target": "A gente se vê de novo em breve, né?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e1fa2461",
+                "source": "Hopefully! I'll go get the gate.",
+                "target": "Tomara! Vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:77ca2316",
+                "source": "Yeah! Thanks for the food. I'll go get the gate.",
+                "target": "Sim! Valeu pela comida. Vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5bab2df8",
+                "source": "Yeah... I've never gone on a date with a kobold before.",
+                "target": "É... Nunca saí com um kobold antes.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:cab69268",
+                "source": "But I already know I'm liking this a lot.",
+                "target": "Mas já sei que estou gostando muito disso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5c86951f",
+                "source": "I like you a lot.",
+                "target": "Gosto muito de você.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a9980f5e",
+                "source": "Yeah, this has been super nice.",
+                "target": "É, isso tem sido muito bom.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:3fa80829",
+                "source": "Heh. Yeah. I like you too.",
+                "target": "Heh. É. Eu também gosto de você.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:13c906c7",
+                "source": "It really has been. You're wonderful.",
+                "target": "Tem sido mesmo. Você é uma pessoa maravilhosa.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:85f901b0",
+                "source": "Thanks for sharing food with me...",
+                "target": "Obrigado por dividir a comida comigo...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:266c652e",
+                "source": "I'm looking forward to seeing you again",
+                "target": "Estou ansioso para te ver de novo",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b05c6259",
+                "source": "I always look forward to seeing you. I'll go get the gate.",
+                "target": "Sempre espero com alegria pela sua visita. Vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:0a0d6bc0",
+                "source": "You too! I'll go get the gate.",
+                "target": "Eu também! Vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:9c3d6cb7",
+                "source": "Okay! I'll see you soon.",
+                "target": "Certo! Até logo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:9b10d450",
+                "source": "So this Conrad guy, seems like you like him?",
+                "target": "Esse tal de Conrad, parece que você gosta dele?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:7e991330",
+                "source": "Hehe yeah.",
+                "target": "Hehe, sim.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e8a91447",
+                "source": "He's a lot. But, I like it.",
+                "target": "Ele é intenso. Mas eu gosto disso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:52f81dde",
+                "source": "That's cute!",
+                "target": {
+                  "platforms": {
+                    "macos": "Que fofo!",
+                    "windows": "Que fofo!"
+                  }
+                },
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:c4c81aa9",
+                "source": "Whats your favorite part about him?",
+                "target": "O que você mais gosta nele?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:675d7e37",
+                "source": "He's like. SUPER hung.",
+                "target": "Ele é tipo. SUPER dotado.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4b3c70d9",
+                "source": "He's snappy, but tender too!",
+                "target": "Ele é rabugento, mas também é carinhoso!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4c11c83e",
+                "source": "He's tiny, I like being eye level with him.",
+                "target": "Ele é pequenininho, gosto de ficar na altura dos olhos dele.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:bdca3e1b",
+                "source": "I like... him.",
+                "target": "Eu gosto... dele.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:f16d7940",
+                "source": "Oh... Yeah, tinier dragons tend to... Compensate.",
+                "target": "Ah... Sim, dragões menores tendem a... Compensar.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:dd0c77ae",
+                "source": "Mmm, Yeah I know the type.",
+                "target": "Mmm, sim, conheço o tipo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:da21cf49",
+                "source": "Makes sense! Yeah tiny drakes are fun.",
+                "target": "Faz sentido! É, dragões baixinhos são divertidos.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:2bfa396c",
+                "source": "Aw... That's really sweet",
+                "target": {
+                  "platforms": {
+                    "macos": "Ah... Que coisa mais fofa",
+                    "windows": "Ah... Que coisa mais fofa"
+                  }
+                },
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:91ab30f5",
+                "source": "You'll have to tell me how you two work out!",
+                "target": "Você vai ter que me contar como vocês dois estão se saindo!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:079b3782",
+                "source": "Thanks for sharing food with me, You're a great friend.",
+                "target": "Obrigado por dividir a comida comigo. Sua amizade é muito especial.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a40e531c",
+                "source": "Thanks for the food! I'll go get the gate.",
+                "target": "Valeu pela comida! Vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:323e546b",
+                "source": "You're a good friend too, I'll go get the gate.",
+                "target": "Você também é um grande amigo, vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:886f5df2",
+                "source": "Okay, I'll see you later!",
+                "target": "Certo, até mais!",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Start": {
+        "changedIds": [
+          "yarn:line:07e5fc05"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "ryan_food_dialogue": {
+        "changedIds": [
+          "yarn:line:079b3782",
+          "yarn:line:09e5bf43",
+          "yarn:line:0d20d327",
+          "yarn:line:13c906c7",
+          "yarn:line:77ca2316",
+          "yarn:line:a40e531c",
+          "yarn:line:a6c1f2f4",
+          "yarn:line:b05c6259",
+          "yarn:line:b4990e3d",
+          "yarn:line:cd9b2a8f",
+          "yarn:line:e6290003",
+          "yarn:line:f83e4966"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      }
+    },
+    "windows": {
+      "Alexander_2_intro": {
+        "changedIds": [
+          "yarn:line:938be2fb"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Alexander_2_required": {
+        "changedIds": [
+          "yarn:line:33440e8c"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Alexander_3_JerkOff_Start": {
+        "changedIds": [
+          "yarn:line:7d13eca0"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Alexander_3_intro": {
+        "changedIds": [
+          "yarn:line:61c8781b"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Alexander_5_required": {
+        "changedIds": [
+          "yarn:line:37c9d915",
+          "yarn:line:3d723db0",
+          "yarn:line:44701902",
+          "yarn:line:cb847372",
+          "yarn:line:e7e57d9c"
+        ],
+        "edges": [
+          {
+            "node": "Alexander_5_required",
+            "index": 9,
+            "opcode": 16,
+            "target": "Alexander_5_romance_route"
+          }
+        ],
+        "missingTargets": [],
+        "downstream": {
+          "Alexander_5_romance_route": {
+            "nodeSha256": "1995ee732cc7951d5230cc3df0772fdb6229e9db5c366b4eb3723fa5d0ea41b2",
+            "lines": [
+              {
+                "id": "yarn:line:1b6c7f75",
+                "source": "Hey there.",
+                "target": "Ei.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8d5c7802",
+                "source": "What's up?",
+                "target": "O que foi?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:370d719b",
+                "source": "Hm?",
+                "target": "Hm?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a13d76ec",
+                "source": "I was thinking...",
+                "target": "Eu estava pensando...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:3020c97c",
+                "source": "Do you believe I am attractive?",
+                "target": "Você me acha atraente?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a610ce0b",
+                "source": "YES.",
+                "target": "SIM.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:f9c800f2",
+                "source": "I do!",
+                "target": "Acho!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:763c6a82",
+                "source": "I think you're good looking.",
+                "target": "Acho você bonito.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4399096b",
+                "source": "Oh.",
+                "target": "Ah.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d5a90e1c",
+                "source": "I'm glad!",
+                "target": "Fico contente!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:6ff80785",
+                "source": "That... makes me feel a lot more sure of myself then.",
+                "target": "Isso... me faz sentir bem mais seguro de mim.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5a5d646c",
+                "source": "Truly?",
+                "target": "Mesmo?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:cc6d631b",
+                "source": "That... makes me feel a lot more sure of myself then.",
+                "target": "Isso... me faz sentir bem mais seguro de mim.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e00c6df5",
+                "source": "Thanks.",
+                "target": "Obrigado.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:7111d265",
+                "source": "That makes me feel a lot more sure of myself then.",
+                "target": "Isso me faz sentir bem mais seguro de mim.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e721d512",
+                "source": "That brings me to my next question...",
+                "target": "Isso me leva à minha próxima pergunta...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8c8591ec",
+                "source": "Would you care to join me at the college library this evening...?",
+                "target": "Você gostaria de me acompanhar à biblioteca da faculdade esta noite...?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1ab5969b",
+                "source": "It would be a... date. As most would say.",
+                "target": "Seria um... encontro. Como a maioria diria.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a0e49f02",
+                "source": "<gradient=\"gold\"><b> I wouldn't mind! </b></gradient><size=70%> (Will lead to Alexander romance!)",
+                "target": "<gradient=\"gold\"><b> Eu toparia! </b></gradient><size=70%> (Leva ao romance com Alexander!)",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:0371fb9c",
+                "source": "<gradient=\"gold\"><b> I'm going to be busy tonight. Sorry. </b></gradient><size=70%> (Will lead to no romance!)",
+                "target": "<gradient=\"gold\"><b> Não vou poder hoje à noite. Desculpe. </b></gradient><size=70%> (Não leva a um romance!)",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:36d49875",
+                "source": "Wonderful!",
+                "target": "Maravilha!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:9541fceb",
+                "source": "I've been considering asking you this for a while now.",
+                "target": "Estou pensando em convidar você há algum tempo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b920f205",
+                "source": "Ah. Do not worry.",
+                "target": "Ah. Não se preocupe.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:2f10f572",
+                "source": "Very well. Don't let me interrupt the wash then!",
+                "target": "Muito bem. Então não vou interromper a lavagem!",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Alexander_SexScene": {
+        "changedIds": [
+          "yarn:line:d132db41"
+        ],
+        "edges": [
+          {
+            "node": "Alexander_SexScene",
+            "index": 4,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Loop"
+          },
+          {
+            "node": "Alexander_SexScene_Loop",
+            "index": 28,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Cum"
+          },
+          {
+            "node": "Alexander_SexScene_Cum",
+            "index": 39,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Loop"
+          },
+          {
+            "node": "Alexander_SexScene_Cum",
+            "index": 66,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Loop"
+          }
+        ],
+        "missingTargets": [],
+        "downstream": {
+          "Alexander_SexScene_Cum": {
+            "nodeSha256": "53da62326ad427ea9be6e40336f8c9686ea3f41915348749e45cc7f2e99176cc",
+            "lines": [
+              {
+                "id": "yarn:line:00e41343",
+                "source": "Is this good?",
+                "target": "Está bom assim?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:bab51ada",
+                "source": "Good... That'd be correct.",
+                "target": "Bom... Sim, essa seria a palavra correta.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:2c851dad",
+                "source": "Good.",
+                "target": "Bom.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8f107933",
+                "source": "I'm... Rather close now",
+                "target": "Estou... Bem perto agora",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:19207e44",
+                "source": "Hold on a little longer for me?",
+                "target": "Pode aguentar mais um pouco por mim?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:354170aa",
+                "source": "Go for it!",
+                "target": "Pode ir!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a37177dd",
+                "source": "V-very well. I'll try.",
+                "target": "M-muito bem. Vou tentar.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a45ccf3a",
+                "source": "I don't believe I can hold back any longer",
+                "target": "Acho que não consigo me conter por mais tempo",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:326cc84d",
+                "source": "Not yet. a little longer.",
+                "target": "Ainda não. Mais um pouco.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:41d5085a",
+                "source": "Let go whenever you are ready.",
+                "target": "Pode se soltar quando sentir que é hora.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d7e50f2d",
+                "source": "Yes..",
+                "target": "Sim..",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:fb8401c3",
+                "source": "Huff...",
+                "target": "Ufa...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:6db406b4",
+                "source": "I enjoyed this quite a lot.",
+                "target": "Gostei muito disso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ce21622a",
+                "source": "I'm happy to hear that.",
+                "target": "Que bom saber disso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e2406cc4",
+                "source": "What now?",
+                "target": "E agora?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5811655d",
+                "source": "Yes... But I believe we need to clean the floors.",
+                "target": "Sim... Mas acredito que precisamos limpar o chão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:74706bb3",
+                "source": "We will need to clean the floors...",
+                "target": "Precisaremos limpar o chão...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e56dd423",
+                "source": "<i><size=70%>uh oh.. and the books",
+                "target": "<i><size=70%>ah, não.. e os livros",
+                "inTargetScope": true
+              }
+            ]
+          },
+          "Alexander_SexScene_Loop": {
+            "nodeSha256": "b921720ca0d0e6db3851ff7365c097ecc7b3e281aff5cdb623e267e87ddcd32d",
+            "lines": [
+              {
+                "id": "yarn:line:dfe74420",
+                "source": "My-",
+                "target": "Ora-",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4efafbb0",
+                "source": "You are very skilled with your hands",
+                "target": "Suas mãos são muito habilidosas",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d8cafcc7",
+                "source": "mmm..",
+                "target": "mmm..",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b36eb839",
+                "source": "..",
+                "target": "..",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Alexander_SexScene_Cum": {
+        "changedIds": [
+          "yarn:line:41d5085a"
+        ],
+        "edges": [
+          {
+            "node": "Alexander_SexScene_Cum",
+            "index": 39,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Loop"
+          },
+          {
+            "node": "Alexander_SexScene_Cum",
+            "index": 66,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Loop"
+          },
+          {
+            "node": "Alexander_SexScene_Loop",
+            "index": 28,
+            "opcode": 16,
+            "target": "Alexander_SexScene_Cum"
+          }
+        ],
+        "missingTargets": [],
+        "downstream": {
+          "Alexander_SexScene_Loop": {
+            "nodeSha256": "b921720ca0d0e6db3851ff7365c097ecc7b3e281aff5cdb623e267e87ddcd32d",
+            "lines": [
+              {
+                "id": "yarn:line:dfe74420",
+                "source": "My-",
+                "target": "Ora-",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4efafbb0",
+                "source": "You are very skilled with your hands",
+                "target": "Suas mãos são muito habilidosas",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d8cafcc7",
+                "source": "mmm..",
+                "target": "mmm..",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b36eb839",
+                "source": "..",
+                "target": "..",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Conrad_4_Mount_Finish": {
+        "changedIds": [
+          "yarn:line:88d7e1e2"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_5_intro_conrad_romanced": {
+        "changedIds": [
+          "yarn:line:1538bc7e",
+          "yarn:line:d66b9155"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_5_intro_ryan_romanced": {
+        "changedIds": [
+          "yarn:line:34cf0601"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_5_required_conrad_romanced": {
+        "changedIds": [
+          "yarn:line:a0479425"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_Intro_4": {
+        "changedIds": [
+          "yarn:line:18e5a573",
+          "yarn:line:918d7820",
+          "yarn:line:cf8c5f37",
+          "yarn:line:fa293cde"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_Outro_3": {
+        "changedIds": [
+          "yarn:line:a0cf6cae",
+          "yarn:line:c4cc497f"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_Outro_4_Ryan_Conrad_Romanced": {
+        "changedIds": [
+          "yarn:line:94fbdbf0"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_Outro_4_Ryan_Romanced": {
+        "changedIds": [
+          "yarn:line:4789095b",
+          "yarn:line:5e4d645c"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Conrad_SexScene_Cum": {
+        "changedIds": [
+          "yarn:line:0bc044da",
+          "yarn:line:7f543c2a",
+          "yarn:line:9addfb4a",
+          "yarn:line:f0a0565a"
+        ],
+        "edges": [
+          {
+            "node": "Conrad_SexScene_Cum",
+            "index": 23,
+            "opcode": 16,
+            "target": "Conrad_SexScene_Loop"
+          },
+          {
+            "node": "Conrad_SexScene_Cum",
+            "index": 50,
+            "opcode": 16,
+            "target": "Conrad_SexScene_Loop"
+          },
+          {
+            "node": "Conrad_SexScene_Loop",
+            "index": 27,
+            "opcode": 16,
+            "target": "Conrad_SexScene_Cum"
+          }
+        ],
+        "missingTargets": [],
+        "downstream": {
+          "Conrad_SexScene_Loop": {
+            "nodeSha256": "4452d3047e242b87205930daf4c1d9ef60923fc4ba4b8c59aad98484cfe6fcdd",
+            "lines": [
+              {
+                "id": "yarn:line:2f9b499a",
+                "source": "I honestly don't know how you are doing that.",
+                "target": "Sinceramente, não sei como você está fazendo isso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b9ab4eed",
+                "source": "Im not complaining though.",
+                "target": "Mas não estou reclamando.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1a3e2a73",
+                "source": "Hell yea",
+                "target": "Com certeza",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8c0e2d04",
+                "source": "..",
+                "target": "..",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Conrad_finished_mount_3": {
+        "changedIds": [
+          "yarn:line:73ea230a"
+        ],
+        "edges": [
+          {
+            "node": "Conrad_finished_mount_3",
+            "index": 89,
+            "opcode": 16,
+            "target": "Conrad_Outro"
+          },
+          {
+            "node": "Conrad_Outro",
+            "index": 5,
+            "opcode": 16,
+            "target": "Conrad_OutroDirty"
+          },
+          {
+            "node": "Conrad_Outro",
+            "index": 13,
+            "opcode": 16,
+            "target": "Conrad_OutroSoapy"
+          },
+          {
+            "node": "Conrad_Outro",
+            "index": 21,
+            "opcode": 16,
+            "target": "Conrad_OutroDone"
+          },
+          {
+            "node": "Conrad_Outro",
+            "index": 29,
+            "opcode": 16,
+            "target": "Conrad_OutroDirty"
+          },
+          {
+            "node": "Conrad_Outro",
+            "index": 32,
+            "opcode": 16,
+            "target": "ErrorHasOccurred"
+          }
+        ],
+        "missingTargets": [
+          "Conrad_OutroDone"
+        ],
+        "downstream": {
+          "Conrad_Outro": {
+            "nodeSha256": "3b3ea6cd46496e7bb3b88cfb1101d214eeb58ad1b0649b6cce86eaa7303627e3",
+            "lines": [
+              {
+                "id": "yarn:line:a8e2f13e",
+                "source": "==",
+                "target": null,
+                "inTargetScope": false
+              },
+              {
+                "id": "yarn:line:3ed2f649",
+                "source": "title: Conrad_OutroDone",
+                "target": null,
+                "inTargetScope": false
+              },
+              {
+                "id": "yarn:line:db5b3129",
+                "source": "---",
+                "target": null,
+                "inTargetScope": false
+              },
+              {
+                "id": "yarn:line:4d6b365e",
+                "source": "Ahh, all cleaned and with a lighter load.",
+                "target": "Ahh, todo limpo e mais leve.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:f73a3fc7",
+                "source": "Thanks mate, see you tomorrow then.",
+                "target": "Valeu, colega. Até amanhã, então.",
+                "inTargetScope": true
+              }
+            ]
+          },
+          "Conrad_OutroDirty": {
+            "nodeSha256": "c0198da66fd1931a5e7b131e5f01f5697664b07789567851d6094796c6ab64aa",
+            "lines": [
+              {
+                "id": "yarn:line:5d41b5d6",
+                "source": "I'm all dirty still!",
+                "target": "Ainda tô todo sujo!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:cb71b2a1",
+                "source": "Oh my bad",
+                "target": "Ah, foi mal",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5a6c0d31",
+                "source": "Whoops",
+                "target": "Ops",
+                "inTargetScope": true
+              }
+            ]
+          },
+          "Conrad_OutroSoapy": {
+            "nodeSha256": "7d01d4962ef33e17ff25338903414bdbea99f53fa524428964134dd1c6042928",
+            "lines": [
+              {
+                "id": "yarn:line:2f6eb3c3",
+                "source": "I'm all soapy still!",
+                "target": "Ainda tô todo ensaboado!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8cfbd75d",
+                "source": "Oh my bad",
+                "target": "Ah, foi mal",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1acbd02a",
+                "source": "Whoops",
+                "target": "Ops",
+                "inTargetScope": true
+              }
+            ]
+          },
+          "ErrorHasOccurred": {
+            "nodeSha256": "49cc37beb5dd886fe89b74a89fa7dfc21e0b7f1b3a45ef57db8d3784439ef093",
+            "lines": [
+              {
+                "id": "yarn:line:3fdb9d01",
+                "source": "Oh fcuk something went wrong",
+                "target": "Ah, merda, algo deu errado",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a9eb9a76",
+                "source": "if you're seeing this please grab nael or submit a bug report",
+                "target": "se estiver vendo isto, chame nael ou envie um relatório de erro",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:13ba93ef",
+                "source": "sorry!",
+                "target": "desculpe!",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Conrad_required_2": {
+        "changedIds": [
+          "yarn:line:0de4fe62"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Ryan_5_Outro_ryan_romanced": {
+        "changedIds": [
+          "yarn:line:a00f681d"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Ryan_5_Required_ryan_conrad_romanced": {
+        "changedIds": [
+          "yarn:line:c6202cf2"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Ryan_5_intro": {
+        "changedIds": [
+          "yarn:line:601e1b38",
+          "yarn:line:7f2e2736",
+          "yarn:line:e91e2041"
+        ],
+        "edges": [
+          {
+            "node": "Ryan_5_intro",
+            "index": 117,
+            "opcode": 16,
+            "target": "Ryan_5_intro_ryan_romanced"
+          }
+        ],
+        "missingTargets": [],
+        "downstream": {
+          "Ryan_5_intro_ryan_romanced": {
+            "nodeSha256": "eb527aa22da0f1459da33abb74ae19c7cf8f80e59c68fbae7ab0cde93cb1aba7",
+            "lines": [
+              {
+                "id": "yarn:line:e2ea4ead",
+                "source": "...A wash for our date tonight.",
+                "target": "...Uma lavagem para o nosso encontro de hoje à noite.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:73f7f13d",
+                "source": "OH. RIGHT.",
+                "target": "AH. É MESMO.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:822c0718",
+                "source": "I'm very excited.",
+                "target": "Mal posso mesmo esperar.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e5c7f64a",
+                "source": "Glad I'm here to remind you then.",
+                "target": "Ainda bem que estou aqui para te lembrar.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:141c006f",
+                "source": "I am too.",
+                "target": "Eu também.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ae4d09f6",
+                "source": "I'll be waiting for the gate!",
+                "target": "Vou esperar no portão!",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Ryan_5_intro_ryan_romanced": {
+        "changedIds": [
+          "yarn:line:822c0718"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "Ryan_egg_dialog": {
+        "changedIds": [
+          "yarn:line:7f5113d5"
+        ],
+        "edges": [
+          {
+            "node": "Ryan_egg_dialog",
+            "index": 39,
+            "opcode": 16,
+            "target": "ryan_food_dialogue"
+          }
+        ],
+        "missingTargets": [],
+        "downstream": {
+          "ryan_food_dialogue": {
+            "nodeSha256": "03bf2da4fb5edb2f1eda00716d1848aa555fec665f366c4004862da8255127e5",
+            "lines": [
+              {
+                "id": "yarn:line:7c56b2d8",
+                "source": "So... I was thinking about my relationships.",
+                "target": "Então... Eu estava pensando nos meus relacionamentos.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ea66b5af",
+                "source": "How so?",
+                "target": "Como assim?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:7b7b0a3f",
+                "source": "Like, the future of my relationships.",
+                "target": "No futuro dos meus relacionamentos, sabe?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ed4b0d48",
+                "source": "I'm kind of excited.",
+                "target": "Estou até um pouco animado.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8aa0fc1a",
+                "source": "Well, you are one hell of a catch.",
+                "target": "Bem, você é um baita partido.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a6c1f2f4",
+                "source": "I'm excited for you!",
+                "target": "Fico muito feliz por você!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1c90fb6d",
+                "source": "Oh you. Gonna make me blush.",
+                "target": "Ah, você. Vai me fazer corar.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:30f1f583",
+                "source": "Thanks!",
+                "target": "Obrigado!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:9364911d",
+                "source": "Really looking forward to finding new people.",
+                "target": "Estou ansioso para conhecer gente nova.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:0554966a",
+                "source": "Now, more food?",
+                "target": "Agora, mais comida?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:bf059ff3",
+                "source": "Hmm...",
+                "target": "Hmm...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:29359884",
+                "source": "What's up?",
+                "target": "O que foi?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b8282714",
+                "source": "I was thinking.",
+                "target": "Eu estava pensando.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:2e182063",
+                "source": "It's difficult to find folks that are outside of my current bubble.",
+                "target": "É difícil encontrar gente fora da minha bolha atual.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:cb91e703",
+                "source": "Like, I love those around me, but there's a lot of baggage there.",
+                "target": "Eu adoro as pessoas ao meu redor, mas tem muita bagagem ali.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5da1e074",
+                "source": "Y'know?",
+                "target": "Sabe?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e7f0e9ed",
+                "source": "Makes sense.",
+                "target": "Faz sentido.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:fe3484ea",
+                "source": "I get how you'd feel that way after a breakup, yeah.",
+                "target": "Entendo que se sinta assim depois de um término, sim.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:71c0ee9a",
+                "source": "Yeah, ever since the breakup I've been looking for something new.",
+                "target": "Sim, desde o término venho procurando algo novo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d2558a04",
+                "source": "Maybe someone?",
+                "target": "Talvez alguém?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:44658d73",
+                "source": "Hmm...",
+                "target": "Hmm...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:6804839d",
+                "source": "Yeah. It's hard to unwind groups after something like that.",
+                "target": "É. É difícil desfazer os laços de um grupo depois de algo assim.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:f9193c0d",
+                "source": "I'm willing to do it. But I'd like something new.",
+                "target": "Estou disposto a tentar. Mas gostaria de algo novo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:6f293b7a",
+                "source": "Maybe someone new...",
+                "target": "Talvez alguém novo...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:048d7f84",
+                "source": "...About what I said earlier.",
+                "target": "...Sobre o que eu disse antes.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:92bd78f3",
+                "source": "Yeah?",
+                "target": "Sim?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:28ec716a",
+                "source": "Do you know anyone I could talk to? Y'know... about relationship stuffs?",
+                "target": "Você conhece alguém com quem eu possa conversar? Sabe... sobre relacionamentos?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:bedc761d",
+                "source": "<gradient=\"gold\"><b>I know this one red dragon. I think you'd like him! </b></gradient><size=70%> (Hooks up Ryan with Conrad!)",
+                "target": "<gradient=\"gold\"><b> Conheço um dragão vermelho. Acho que você gostaria dele! </b></gradient><size=70%> (Junta Ryan e Conrad!)",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e104b8e4",
+                "source": "<gradient=\"gold\"><b>Oh. Uhm. <size=70%> I wouldn't mind... If I was that someone. </b></gradient><size=70%> (Locks in Ryan romance!)",
+                "target": "<gradient=\"gold\"><b> Ah. Hum. <size=70%> Eu toparia... Se eu fosse essa pessoa. </b></gradient><size=70%> (Confirma o romance com Ryan!)",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:f5a81524",
+                "source": "<gradient=\"gold\"><b>I don't have anyone off the top of my head.</b></gradient><size=70%> (Locks in Conrad romance!)",
+                "target": "<gradient=\"gold\"><b>Não me vem ninguém à cabeça.</b></gradient><size=70%> (Confirma o romance com Conrad!)",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1d491283",
+                "source": "Oh?",
+                "target": "Ah?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8b7915f4",
+                "source": "Who's that?",
+                "target": "Quem é?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:31281c6d",
+                "source": "He's this REALLY cute red drake who goes to the wash!",
+                "target": "É um dragão vermelho MUITO fofo que frequenta o lava-rápido!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a7181b1a",
+                "source": "He's a red dragon. I think you two would like eachother!",
+                "target": "É um dragão vermelho. Acho que vocês dois iam se dar bem!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:3605a48a",
+                "source": "Oh! I think I've seen him. The tiny one, yeah?",
+                "target": "Ah! Acho que já vi ele. O baixinho, né?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a035a3fd",
+                "source": "He prefers 'vertically challenged'... But yes.",
+                "target": "Ele prefere 'verticalmente desfavorecido'... Mas é.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:69dd6a73",
+                "source": "Mhm! he's trying to meet new people.",
+                "target": "Uhum! Ele está tentando conhecer gente nova.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:45bc649d",
+                "source": "Oh...",
+                "target": "Ah...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d38c63ea",
+                "source": "Thats really cute.",
+                "target": {
+                  "text": "Que fofo.",
+                  "sharedAcrossSourceVariants": true
+                },
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ffed6d04",
+                "source": "Oh, wonderful. Seem's we're similar.",
+                "target": "Ah, maravilha. Parece que somos parecidos.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5c78099a",
+                "source": "I think I'd like to meet him!",
+                "target": "Acho que gostaria de conhecê-lo!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ca480eed",
+                "source": "I'll get you two in contact then.",
+                "target": "Então vou colocar vocês em contato.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e6290003",
+                "source": "I'm so excited. I'll get you two in contact!",
+                "target": "Que empolgação! Vou colocar vocês em contato!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:70190774",
+                "source": "Thanks!",
+                "target": "Obrigado!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:7734bf93",
+                "source": "Me too, thanks!",
+                "target": "Eu também, obrigado!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:3b6d644d",
+                "source": "Oh.",
+                "target": "Ah.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ad5d633a",
+                "source": "<i>Oh...",
+                "target": "<i>Ah...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:170c6aa3",
+                "source": "I think I'd like you to be that someone aswell.",
+                "target": "Acho que gostaria que você também fosse essa pessoa.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:813c6dd4",
+                "source": "So is this like... our first date?",
+                "target": "Então isso é tipo... nosso primeiro encontro?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b4990e3d",
+                "source": "If I'm honest. I've had a crush on you for a bit.",
+                "target": "A verdade é que tenho uma quedinha por você há algum tempo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:22a9094a",
+                "source": "I guess so!",
+                "target": "Acho que sim!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:0ec807a4",
+                "source": "Really? Aw, That's really sweet.",
+                "target": "Sério? Ah, que coisa mais fofa.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:98f800d3",
+                "source": "I didn't know anyone could like me that much so easily.",
+                "target": "Não sabia que alguém podia gostar tanto de mim assim tão facilmente.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:09e5bf43",
+                "source": "You're cute by the way.",
+                "target": "Você é uma graça, aliás.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:9fd5b834",
+                "source": "Yeah. <size=90%>Oh- <size=80%>you know. I'm like... <size=70%>Haha. Yeah. Mhm!",
+                "target": "Sim. <size=90%>Ah- <size=80%>você sabe. Eu fico... <size=70%>Haha. É. Uhum!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:563d71ba",
+                "source": "You are too!",
+                "target": "Você também!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:7a5c7f54",
+                "source": "I didn't mean to fluster you!",
+                "target": "Não queria deixar você sem graça!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:ec6c7823",
+                "source": "I'm just... Happy.",
+                "target": "Estou só... Feliz.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:c00d76cd",
+                "source": "Aw, thanks. I only look so good 'cause of your washes!",
+                "target": "Ah, obrigado. Só estou tão bonito por causa das suas lavagens!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:63981253",
+                "source": "I'm... Happy.",
+                "target": "Estou... Feliz.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4ff91cbd",
+                "source": "That's fine!",
+                "target": "Tudo bem!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d9c91bca",
+                "source": "How about you though? have you been seeing anyone?",
+                "target": "E você? Está saindo com alguém?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:48d4a45a",
+                "source": "There's this one red dragon, Conrad. He's... Hot headed, but cute.",
+                "target": "Tem um dragão vermelho, o Conrad. Ele é... Esquentado, mas fofo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:dee4a32d",
+                "source": "Yeah! Conrad, he's adorable. Though he'd hate I said that.",
+                "target": "Sim! O Conrad, ele é uma graça. Mas ia odiar que eu dissesse isso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b90f527f",
+                "source": "Oh huh, that's the tiny drake I saw coming in a bit back yeah?",
+                "target": "Ah, sei, é aquele dragão baixinho que vi entrando um tempo atrás, né?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:2f3f5508",
+                "source": "Hey! He's just... 'vertically challenged'.",
+                "target": "Ei! Ele só é... 'verticalmente desfavorecido'.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a0cb3f78",
+                "source": "Mhm! thats him.",
+                "target": {
+                  "text": "Uhum! É ele.",
+                  "sharedAcrossSourceVariants": true
+                },
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:956e5c91",
+                "source": "Oh, sorry.",
+                "target": "Ah, desculpa.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:035e5be6",
+                "source": "They seem cute!",
+                "target": "Parece ser fofo!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:36fb380f",
+                "source": "Thats wonderful, he's cute!",
+                "target": {
+                  "text": "Que maravilha, ele é fofo!",
+                  "sharedAcrossSourceVariants": true
+                },
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8caa3196",
+                "source": "Hey uhm, thanks once again.",
+                "target": "Ei, hã, obrigado mais uma vez.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1a9a36e1",
+                "source": "No problem! Can't wait for you to meet Conrad.",
+                "target": "De nada! Mal posso esperar para você conhecer o Conrad.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:cd9b2a8f",
+                "source": "No, thank you. I'm... Really excited.",
+                "target": "Não, eu que agradeço. Estou... Na maior expectativa.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:0d20d327",
+                "source": "Of course! Thank you for the food.",
+                "target": "Claro! Valeu pela comida.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:8b878971",
+                "source": "Hah, yeah. He sounds fun.",
+                "target": "Ha, é. Ele parece divertido.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:1db78e06",
+                "source": "I'll make sure to tell you how it goes, yeah?",
+                "target": "Vou contar para você como foi, tá?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:f83e4966",
+                "source": "I'm excited to hear about it!",
+                "target": "Mal posso esperar para saber!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:6e0e4e11",
+                "source": "Yeah. You two will be cute.",
+                "target": "Sim. Vocês dois vão ficar fofos juntos.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:d45f4788",
+                "source": "This was nice...",
+                "target": "Isso foi bom...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:426f40ff",
+                "source": "See you again soon, yeah?",
+                "target": "A gente se vê de novo em breve, né?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e1fa2461",
+                "source": "Hopefully! I'll go get the gate.",
+                "target": "Tomara! Vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:77ca2316",
+                "source": "Yeah! Thanks for the food. I'll go get the gate.",
+                "target": "Sim! Valeu pela comida. Vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5bab2df8",
+                "source": "Yeah... I've never gone on a date with a kobold before.",
+                "target": "É... Nunca saí com um kobold antes.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:cab69268",
+                "source": "But I already know I'm liking this a lot.",
+                "target": "Mas já sei que estou gostando muito disso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:5c86951f",
+                "source": "I like you a lot.",
+                "target": "Gosto muito de você.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a9980f5e",
+                "source": "Yeah, this has been super nice.",
+                "target": "É, isso tem sido muito bom.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:3fa80829",
+                "source": "Heh. Yeah. I like you too.",
+                "target": "Heh. É. Eu também gosto de você.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:13c906c7",
+                "source": "It really has been. You're wonderful.",
+                "target": "Tem sido mesmo. Você é uma pessoa maravilhosa.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:85f901b0",
+                "source": "Thanks for sharing food with me...",
+                "target": "Obrigado por dividir a comida comigo...",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:266c652e",
+                "source": "I'm looking forward to seeing you again",
+                "target": "Estou ansioso para te ver de novo",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:b05c6259",
+                "source": "I always look forward to seeing you. I'll go get the gate.",
+                "target": "Sempre espero com alegria pela sua visita. Vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:0a0d6bc0",
+                "source": "You too! I'll go get the gate.",
+                "target": "Eu também! Vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:9c3d6cb7",
+                "source": "Okay! I'll see you soon.",
+                "target": "Certo! Até logo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:9b10d450",
+                "source": "So this Conrad guy, seems like you like him?",
+                "target": "Esse tal de Conrad, parece que você gosta dele?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:7e991330",
+                "source": "Hehe yeah.",
+                "target": "Hehe, sim.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:e8a91447",
+                "source": "He's a lot. But, I like it.",
+                "target": "Ele é intenso. Mas eu gosto disso.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:52f81dde",
+                "source": "Thats cute!",
+                "target": {
+                  "platforms": {
+                    "macos": "Que fofo!",
+                    "windows": "Que fofo!"
+                  }
+                },
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:c4c81aa9",
+                "source": "Whats your favorite part about him?",
+                "target": "O que você mais gosta nele?",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:675d7e37",
+                "source": "He's like. SUPER hung.",
+                "target": "Ele é tipo. SUPER dotado.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4b3c70d9",
+                "source": "He's snappy, but tender too!",
+                "target": "Ele é rabugento, mas também é carinhoso!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:4c11c83e",
+                "source": "He's tiny, I like being eye level with him.",
+                "target": "Ele é pequenininho, gosto de ficar na altura dos olhos dele.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:bdca3e1b",
+                "source": "I like... him.",
+                "target": "Eu gosto... dele.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:f16d7940",
+                "source": "Oh... Yeah, tinier dragons tend to... Compensate.",
+                "target": "Ah... Sim, dragões menores tendem a... Compensar.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:dd0c77ae",
+                "source": "Mmm, Yeah I know the type.",
+                "target": "Mmm, sim, conheço o tipo.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:da21cf49",
+                "source": "Makes sense! Yeah tiny drakes are fun.",
+                "target": "Faz sentido! É, dragões baixinhos são divertidos.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:2bfa396c",
+                "source": "Aw... Thats really sweet",
+                "target": {
+                  "platforms": {
+                    "macos": "Ah... Que coisa mais fofa",
+                    "windows": "Ah... Que coisa mais fofa"
+                  }
+                },
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:91ab30f5",
+                "source": "You'll have to tell me how you two work out!",
+                "target": "Você vai ter que me contar como vocês dois estão se saindo!",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:079b3782",
+                "source": "Thanks for sharing food with me, You're a great friend.",
+                "target": "Obrigado por dividir a comida comigo. Sua amizade é muito especial.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:a40e531c",
+                "source": "Thanks for the food! I'll go get the gate.",
+                "target": "Valeu pela comida! Vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:323e546b",
+                "source": "You're a good friend too, I'll go get the gate.",
+                "target": "Você também é um grande amigo, vou abrir o portão.",
+                "inTargetScope": true
+              },
+              {
+                "id": "yarn:line:886f5df2",
+                "source": "Okay, I'll see you later!",
+                "target": "Certo, até mais!",
+                "inTargetScope": true
+              }
+            ]
+          }
+        }
+      },
+      "Start": {
+        "changedIds": [
+          "yarn:line:07e5fc05"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      },
+      "ryan_food_dialogue": {
+        "changedIds": [
+          "yarn:line:079b3782",
+          "yarn:line:09e5bf43",
+          "yarn:line:0d20d327",
+          "yarn:line:13c906c7",
+          "yarn:line:77ca2316",
+          "yarn:line:a40e531c",
+          "yarn:line:a6c1f2f4",
+          "yarn:line:b05c6259",
+          "yarn:line:b4990e3d",
+          "yarn:line:cd9b2a8f",
+          "yarn:line:e6290003",
+          "yarn:line:f83e4966"
+        ],
+        "edges": [],
+        "missingTargets": [],
+        "downstream": {}
+      }
+    }
+  }
+}
