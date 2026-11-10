@@ -1189,61 +1189,278 @@
       "group": "Alexander_Dirty",
       "orderedRowsSha256": "da2f43e4bd5a9c99602c4e3f3a07d5253fffecb6afa75a658d5388afc7cfe31c",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-igwyx",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-igwyx": [
+          "yarn:line:0ddcd600"
+        ],
+        "dnw-wash": [
+          "yarn:line:0ddcd600"
+        ]
+      },
+      "referents": "Alexander fears his students' reaction and asks the player to scrub Igwix off his back. This is contextual shorthand for the mess, not evidence Igwyx is physically there. Students are unspecified.",
+      "layer1": "The Igwix variant and cleaning context match the source entries.",
+      "layer2": "The target name variant and neutral player remain applicable; no additional person is established.",
+      "sourceIds": [
+        "yarn:line:9becd177",
+        "yarn:line:0ddcd600"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-other-scenes-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_Idle1",
       "orderedRowsSha256": "55b33bd48a394f4b3c522227f67132f3ed484d12c2eb94abd6fc6b44787534c2",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-igwyx"
+      ],
+      "conceptUses": {
+        "dnw-igwyx": [
+          "yarn:line:c83a6a0d"
+        ]
+      },
+      "referents": "Alexander attributes a mistake to Igwix; the row does not establish Igwyx's gender.",
+      "layer1": "Igwix is the recorded alternate spelling.",
+      "layer2": "The Italian entry preserves the spelling and uncertainty.",
+      "sourceIds": [
+        "yarn:line:c83a6a0d",
+        "yarn:line:5e0a6d7a"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-other-scenes-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_Idle2",
       "orderedRowsSha256": "3dd1213d2cc3273c4b9679708deff19a308f5ff1e3441e640d67495e743dc494",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:a4214fe6"
+        ]
+      },
+      "referents": "Alexander seeks discreet washing; the hypothetical followers and nobody are not identified people.",
+      "layer1": "Washing refers to the service.",
+      "layer2": "The Italian entry supports the service sense without inventing followers.",
+      "sourceIds": [
+        "yarn:line:a4214fe6",
+        "yarn:line:32114891"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-other-scenes-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_Idle3",
       "orderedRowsSha256": "0523d709950f40bc55abd6b6a21897b3004aec4d5126d4ab1783d79b1e5d9562",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:bf2a8309"
+        ]
+      },
+      "referents": "Alexander thanks the player after grime is addressed; neither adds another identified person.",
+      "layer1": "The line is situated in cleaning service context.",
+      "layer2": "Target entries do not fix player gender.",
+      "sourceIds": [
+        "yarn:line:bf2a8309"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-other-scenes-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_Intro",
       "orderedRowsSha256": "41b2d22707802c51c0afd5755e466e0b5c596cd06fe0b9a02319648e99ac2f28",
       "count": 8,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:de735c65",
+          "yarn:line:f212528b"
+        ]
+      },
+      "referents": "Alexander asks whether the business is open and seeks discreet help after an accident; the player responds. Neither question establishes player gender.",
+      "layer1": "Business availability and the requested service are contextual wash uses.",
+      "layer2": "The target distinguishes place and service; no gender change is supported.",
+      "sourceIds": [
+        "yarn:line:c7b73162",
+        "yarn:line:7de638fb",
+        "yarn:line:ebd63f8c",
+        "yarn:line:48435b12",
+        "yarn:line:de735c65",
+        "yarn:line:642255fc",
+        "yarn:line:f212528b",
+        "yarn:line:630fed1b"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-other-scenes-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_Outro",
       "orderedRowsSha256": "466928a3ac70ec362920c0f0c09c7ddbfddb505428025a54ed6fd1f1a3b74f34",
       "count": 11,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-burnswick-college",
+        "dnw-family-crest"
+      ],
+      "conceptUses": {
+        "dnw-burnswick-college": [
+          "yarn:line:3ed6ab5d",
+          "yarn:line:8487a2c4",
+          "yarn:line:83aa1a23"
+        ],
+        "dnw-family-crest": [
+          "yarn:line:159a1d54"
+        ]
+      },
+      "referents": "Alexander asks the player about the college and points to his crest as a professor; the college name is a response choice. The apothecary in line:c46f5033 can refer to a place and is not identified as the person mentioned in another scene.",
+      "layer1": "The college is named; the crest's family meaning is not independently established by this line alone.",
+      "layer2": "The Italian fields are compatible with these bounded uses and do not require an identity for the apothecary.",
+      "sourceIds": [
+        "yarn:line:a8e6ac2a",
+        "yarn:line:3ed6ab5d",
+        "yarn:line:8487a2c4",
+        "yarn:line:83aa1a23",
+        "yarn:line:525f5744",
+        "yarn:line:12b7a5b3",
+        "yarn:line:159a1d54",
+        "yarn:line:7e3e59aa",
+        "yarn:line:e80e5edd",
+        "yarn:line:c46f5033",
+        "yarn:line:ddab3d34"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-other-scenes-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_SexScene",
       "orderedRowsSha256": "2605ecde6eb0b51f9682b885a29819e08e3170651c6414e37353ffd549fc344a",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "The routed Alexander and player discuss their interaction. No third person or player gender is established.",
+      "layer1": "Speaker and addressee remain distinct.",
+      "layer2": "Neutral player wording remains applicable.",
+      "sourceIds": [
+        "yarn:line:d132db41",
+        "yarn:line:6b63d2d8"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-other-scenes-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_SexScene_Cum",
       "orderedRowsSha256": "14ce4c4d7b430216ce54d3a7982a6b2c4a34637c3dec05f6ce053ed81ac5aeae",
       "count": 18,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "The two participants negotiate the interaction and afterward discuss cleaning floors and books. 'We' is these participants; cleaning the floors is not the glossary's dragon-washing service.",
+      "layer1": "Do not index floor cleaning as the wash service merely due to the verb clean.",
+      "layer2": "Neither character field requires an additional gender or named referent.",
+      "sourceIds": [
+        "yarn:line:00e41343",
+        "yarn:line:bab51ada",
+        "yarn:line:2c851dad",
+        "yarn:line:8f107933",
+        "yarn:line:19207e44",
+        "yarn:line:354170aa",
+        "yarn:line:a37177dd",
+        "yarn:line:a45ccf3a",
+        "yarn:line:326cc84d",
+        "yarn:line:41d5085a",
+        "yarn:line:d7e50f2d",
+        "yarn:line:fb8401c3",
+        "yarn:line:6db406b4",
+        "yarn:line:ce21622a",
+        "yarn:line:e2406cc4",
+        "yarn:line:5811655d",
+        "yarn:line:74706bb3",
+        "yarn:line:e56dd423"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-other-scenes-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_SexScene_Loop",
       "orderedRowsSha256": "7f57a7a5354c3e555b4938f6658910bffac740f3e9d545488e70b86fe446d2a6",
       "count": 4,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Alexander addresses the player and praises their skill; no third party is identified.",
+      "layer1": "The routed speaker and addressee are distinct.",
+      "layer2": "The target player entry leaves gender unestablished.",
+      "sourceIds": [
+        "yarn:line:dfe74420",
+        "yarn:line:4efafbb0",
+        "yarn:line:d8cafcc7",
+        "yarn:line:b36eb839"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-other-scenes-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_Soapy",
       "orderedRowsSha256": "1a29148b446a1be748473181f3338efcaa07914cf9474cda1dbfabc22237829b",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:b06e13bc",
+          "yarn:line:265e14cb"
+        ]
+      },
+      "referents": "Alexander discusses soap and rinsing with the player; professor describes him and no other character is introduced.",
+      "layer1": "Soap and rinsing are service context, and professor identifies Alexander.",
+      "layer2": "Italian wash and character fields retain the contextual distinction.",
+      "sourceIds": [
+        "yarn:line:b06e13bc",
+        "yarn:line:265e14cb"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-other-scenes-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Alexander_questions",
@@ -1737,7 +1954,37 @@
       "group": "Mount_Alexander_2_6",
       "orderedRowsSha256": "e72fa15baa7c40b8bd1b00d69b9c34f6937e2ab6523029b52520e9e29460b495",
       "count": 10,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-mount": [
+          "yarn:line:44b711a0",
+          "yarn:line:71127249",
+          "yarn:line:5a5ec440",
+          "yarn:line:93b60dce"
+        ]
+      },
+      "referents": "Alexander declines the offered device for now, despite curiosity; the player has alternative responses about whether its use is common. This is not an unconditional permanent refusal.",
+      "layer1": "The routed mount is the adult device and the refusal is time-bound.",
+      "layer2": "The Italian device field does not imply an animal; retain distinct response branches.",
+      "sourceIds": [
+        "yarn:line:44b711a0",
+        "yarn:line:e722753e",
+        "yarn:line:71127249",
+        "yarn:line:cb437bd0",
+        "yarn:line:5d737ca7",
+        "yarn:line:5a5ec440",
+        "yarn:line:cc6ec337",
+        "yarn:line:bfd70320",
+        "yarn:line:29e70457",
+        "yarn:line:93b60dce"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-other-scenes-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "RyanDate_1",
@@ -2145,13 +2392,44 @@
       "group": "alexander_jerk_off_no",
       "orderedRowsSha256": "1e11b9cded6de99692e279a0ab285a217c5495230b264fcba944e150dbdd787b",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Alexander says he is not ready yet; no third person or player gender is established.",
+      "layer1": "The boundary is a present not-yet response.",
+      "layer2": "Neither target character field changes that boundary.",
+      "sourceIds": [
+        "yarn:line:22b5941e"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-other-scenes-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "alexander_mount_no",
       "orderedRowsSha256": "2fa2ff2baa891c8ac325f13b756cc19ac0b3c9538c7b5024251d6947f0157b21",
       "count": 1,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-alexander",
+        "dnw-player",
+        "dnw-mount"
+      ],
+      "conceptUses": {
+        "dnw-mount": [
+          "yarn:line:f80bd44b"
+        ]
+      },
+      "referents": "Alexander is uncertain about using the routed adult device today; this is not a statement about all future occasions.",
+      "layer1": "The demonstrative refers to the mount in the scene's routed context.",
+      "layer2": "Italian device sense and the time-limited refusal remain distinct.",
+      "sourceIds": [
+        "yarn:line:f80bd44b"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-alexander-other-scenes-dependency-reconciliation",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "conrad_jerk_off_no",

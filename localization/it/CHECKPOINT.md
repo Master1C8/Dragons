@@ -183,3 +183,5 @@ Resume-08 third Alexander visit: seven more groups / 73 paired rows have scene-l
 Resume-08 fourth Alexander visit: seven further groups / 76 rows have scene dependency records and separate author self-review decisions. Overall 36 groups / 391 rows are mapped; 157 groups await scene reconciliation, and the explicit referent-use and per-entry unions remain incomplete. Independent review and shared source/exact-preservation readiness remain open.
 
 Resume-08 fifth Alexander visit: eight additional groups / 92 rows have scene dependency records and separate author self-review decisions. Overall 44 groups / 483 rows are mapped; 149 groups await scene reconciliation, and explicit referent-use and per-entry unions remain incomplete. Independent review and shared source/exact-preservation readiness remain open.
+
+Resume-08 other Alexander scenes: thirteen groups / 64 paired rows now have scene-level concept and referent decisions with separate author self-reviews. Overall 57 groups / 547 rows are mapped; 136 groups await scene reconciliation. Full referent-use and per-entry union, independent review, and common source/exact-preservation readiness remain open.
