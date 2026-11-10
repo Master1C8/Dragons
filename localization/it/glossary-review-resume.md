@@ -311,3 +311,7 @@ Two author self-review layers reconciled `Ryan_2_intro`, `Ryan_2_required` and `
 ### Resume-08 Ryan third and fourth opening
 
 Two author self-review layers reconciled the three third-visit groups and `Ryan_4_intro` (61 paired rows), with full ordered hashes and members, selected concept anchors and separate decisions in `glossary-scene-dependencies-resume-08.json`. Ryan's ex-partner is distinct from the player; the player and Ryan affirm friendship. The question asking whether Ryan was suggested to Conrad has both answers and cannot be treated as an established answer. The basket explains Ryan's mouth-obstructed speech. Two platform-specific source differences occur in the third-visit departure. Occurrence and referent unions remain incomplete; author self-review is not independent acceptance.
+
+### Resume-08 Ryan fifth relationship branches
+
+Two author self-review layers reconciled five previously read groups / 81 paired rows: the three `Ryan_5_Outro_*` branches, `Ryan_5_Required_conrad_romanced`, and `Ryan_5_Required_ryan_conrad_romanced`. Full ordered scene hashes and members, selected concept anchors and referent decisions are in `glossary-scene-dependencies-resume-08.json`. Conrad was the person beaten up in `line:6298f08b`; Ryan's comments about Conrad's past care are qualified. The date partner differs among the branches, and the player is Ryan's ‘certain kobold’ in `line:b9cb051a`. The anchors and summaries are not exhaustive source-ID unions; self-review is not independent acceptance.

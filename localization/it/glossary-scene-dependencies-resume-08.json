@@ -5234,31 +5234,257 @@
       "group": "Ryan_5_Outro_conrad_romanced",
       "orderedRowsSha256": "ca518525a9f5b60514cad6c97e91129939fcdfb9ff7c4630c4ba9c27a7e300c5",
       "count": 14,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:75206eee"
+        ],
+        "dnw-conrad": [
+          "yarn:line:0699aef9"
+        ],
+        "dnw-wash": [
+          "yarn:line:341175f7",
+          "yarn:line:18707b19",
+          "yarn:line:8e407c6e",
+          "yarn:line:e3106999"
+        ]
+      },
+      "referents": "Ryan thanks the player for general support beyond washing after Ryan's breakup and is happy for the player and Conrad. The player is not implied to be Ryan's former partner.",
+      "layer1": "Source read: distinguish Ryan's prior breakup and the player-Conrad relationship.",
+      "layer2": "Italian field read: distinguish broader support from wash service and preserve participant routing.",
+      "sourceIds": [
+        "yarn:line:341175f7",
+        "yarn:line:a2217280",
+        "yarn:line:18707b19",
+        "yarn:line:2dd518f0",
+        "yarn:line:8e407c6e",
+        "yarn:line:bbe51f87",
+        "yarn:line:01b4161e",
+        "yarn:line:97841169",
+        "yarn:line:0699aef9",
+        "yarn:line:90a9a98e",
+        "yarn:line:75206eee",
+        "yarn:line:59416000",
+        "yarn:line:e3106999",
+        "yarn:line:cf716777"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-fifth-relationship-branches",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_5_Outro_ryan_conrad_romanced",
       "orderedRowsSha256": "6f209bc67840cee931440ac681263a6f1c44482eeff18abd9818d6d66d91956a",
       "count": 15,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:46c6a3ed"
+        ],
+        "dnw-conrad": [
+          "yarn:line:e553c773",
+          "yarn:line:7363c004"
+        ],
+        "dnw-wash": [
+          "yarn:line:1760e5d5",
+          "yarn:line:3b01eb3b",
+          "yarn:line:ad31ec4c",
+          "yarn:line:fc97aa74"
+        ]
+      },
+      "referents": "Ryan thanks the player for support and introducing him to Conrad; he's great refers to Conrad. The earlier breakup concerns Ryan.",
+      "layer1": "Source read: distinguish Ryan, Conrad and the player in this relationship branch.",
+      "layer2": "Italian field read: names and service fit; avoid transferring Conrad's referent to Ryan.",
+      "sourceIds": [
+        "yarn:line:1760e5d5",
+        "yarn:line:8150e2a2",
+        "yarn:line:3b01eb3b",
+        "yarn:line:3c2c53dc",
+        "yarn:line:ad31ec4c",
+        "yarn:line:aa1c54ab",
+        "yarn:line:c932c99d",
+        "yarn:line:5f02ceea",
+        "yarn:line:e553c773",
+        "yarn:line:7363c004",
+        "yarn:line:d0f6a49a",
+        "yarn:line:46c6a3ed",
+        "yarn:line:6aa7ad03",
+        "yarn:line:fc97aa74",
+        "yarn:line:fbba1293"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-fifth-relationship-branches",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_5_Outro_ryan_romanced",
       "orderedRowsSha256": "7938fe4e32d5f39b4e931755eb4a6930c092dfe7943abaf285957a44cf0b0ffa",
       "count": 13,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-kobold",
+        "dnw-wash",
+        "dnw-dragn-wash"
+      ],
+      "conceptUses": {
+        "dnw-player": [
+          "yarn:line:b9cb051a"
+        ],
+        "dnw-kobold": [
+          "yarn:line:b9cb051a"
+        ],
+        "dnw-wash": [
+          "yarn:line:770e7473"
+        ],
+        "dnw-dragn-wash": [
+          "yarn:line:2ffb026d"
+        ]
+      },
+      "referents": "Ryan's certain kobold is the player, with whom he has a date; the player must close the shop and they will meet at a separately addressed location.",
+      "layer1": "Source read: distinguish workplace closure from the date destination.",
+      "layer2": "Italian field read: preserve kobold identity and player gender uncertainty; no field defect established.",
+      "sourceIds": [
+        "yarn:line:770e7473",
+        "yarn:line:e613cbe3",
+        "yarn:line:7023cc94",
+        "yarn:line:039a0c83",
+        "yarn:line:95aa0bf4",
+        "yarn:line:b9cb051a",
+        "yarn:line:2ffb026d",
+        "yarn:line:8c6e66f3",
+        "yarn:line:a00f681d",
+        "yarn:line:1a5e6184",
+        "yarn:line:363f6f6a",
+        "yarn:line:a722d0fa",
+        "yarn:line:3112d78d"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-fifth-relationship-branches",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_5_Required_conrad_romanced",
       "orderedRowsSha256": "aa39cfb79e98755c34ce7c09c0690edcdb593cdfb853eaadf159460bd7c9e995",
       "count": 19,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {
+        "dnw-conrad": [
+          "yarn:line:3cda84e6",
+          "yarn:line:aaea8391",
+          "yarn:line:7deb9fff",
+          "yarn:line:4f6344f1",
+          "yarn:line:63024a1f",
+          "yarn:line:807fdc76",
+          "yarn:line:164fdb01",
+          "yarn:line:99bbb171"
+        ],
+        "dnw-player": [
+          "yarn:line:c0972e81",
+          "yarn:line:ecf6206f",
+          "yarn:line:3a2ed5ef"
+        ]
+      },
+      "referents": "Ryan asks the player about Conrad; he refers to Conrad and you two to the player and Conrad. Comments that Conrad improved or had a bad environment are speaker assessments.",
+      "layer1": "Source read: maintain the player-Conrad relationship and attribution of assessments.",
+      "layer2": "Italian field read: no character field correction established; don't assert uncertain background as fact.",
+      "sourceIds": [
+        "yarn:line:3cda84e6",
+        "yarn:line:aaea8391",
+        "yarn:line:7deb9fff",
+        "yarn:line:4f6344f1",
+        "yarn:line:d9534386",
+        "yarn:line:63024a1f",
+        "yarn:line:7ac62718",
+        "yarn:line:f5324d68",
+        "yarn:line:56a729f6",
+        "yarn:line:c0972e81",
+        "yarn:line:ecf6206f",
+        "yarn:line:ebdb9888",
+        "yarn:line:807fdc76",
+        "yarn:line:164fdb01",
+        "yarn:line:99bbb171",
+        "yarn:line:ac1ed298",
+        "yarn:line:3a2ed5ef",
+        "yarn:line:0f8bb606",
+        "yarn:line:b5dabf9f"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-fifth-relationship-branches",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_5_Required_ryan_conrad_romanced",
       "orderedRowsSha256": "fda7123bd9ae84334eeb4bd5f6606d0107e3025a28c711e93968fdb78cd22da7",
       "count": 20,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-dragon-washer"
+      ],
+      "conceptUses": {
+        "dnw-conrad": [
+          "yarn:line:803c8f0c",
+          "yarn:line:6298f08b",
+          "yarn:line:f4a8f7fc",
+          "yarn:line:7b5c9d8c",
+          "yarn:line:ed6c9afb",
+          "yarn:line:573d9362",
+          "yarn:line:c10d9415",
+          "yarn:line:50102b85",
+          "yarn:line:058d9d5c"
+        ],
+        "dnw-ryan": [
+          "yarn:line:93bd9a2b"
+        ],
+        "dnw-dragon-washer": [
+          "yarn:line:d8c9f912",
+          "yarn:line:573d9362"
+        ]
+      },
+      "referents": "Ryan tells the player Conrad discussed his own assault and the player's care during Ryan and Conrad's date. Ryan's 'we' in the later intimate disclosure means Ryan and Conrad; the injury was Conrad's. His assessment of Conrad's past care is qualified.",
+      "layer1": "Source read: preserve Ryan's inference and identify Conrad as the person beaten up.",
+      "layer2": "Italian field read: keep the three people and relationship route distinct; no field change established.",
+      "sourceIds": [
+        "yarn:line:803c8f0c",
+        "yarn:line:1121309c",
+        "yarn:line:871137eb",
+        "yarn:line:6298f08b",
+        "yarn:line:f4a8f7fc",
+        "yarn:line:4ef9fe65",
+        "yarn:line:d8c9f912",
+        "yarn:line:7b5c9d8c",
+        "yarn:line:ed6c9afb",
+        "yarn:line:573d9362",
+        "yarn:line:c10d9415",
+        "yarn:line:50102b85",
+        "yarn:line:c6202cf2",
+        "yarn:line:1c49f05b",
+        "yarn:line:8a79f72c",
+        "yarn:line:3028feb5",
+        "yarn:line:a618f9c2",
+        "yarn:line:93bd9a2b",
+        "yarn:line:058d9d5c",
+        "yarn:line:29ec93b2"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-fifth-relationship-branches",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_5_Required_ryan_romanced",
