@@ -8954,6 +8954,610 @@
       ]
     },
     {
+      "group": "Conrad_4_Ryan_Conrad_Romanced",
+      "orderedRowsSha256": "95251d6ddb0cb37cbb9d3765e9c6b945569ade9ea2f2177cbc146bc2770f1b9f",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-kobold",
+          "sourceEntrySha256": "655be37c2da8a22f692dbac404a5811b4227a465b44d7c6c85bc35af64f51df3",
+          "localeFieldsSha256": "8a1ac2a388a6bd2ea4517b1b90a93ddd9bb82862e39762fe8fcbf986a3f688b3"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:bb8583c1",
+          "pairedRowSha256": "bb3fd0206e06ab68b9cc9209f9eefc54ee48e0f9edfeea0e9045ebddddd3311c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad expects a date with Ryan; we refers to those two."
+        },
+        {
+          "id": "yarn:line:1810e75f",
+          "pairedRowSha256": "d0667bf521259abcefe9e4d5d82045e9826985c455d92128b2201b8eef7e713a",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad asks the player for advice."
+        },
+        {
+          "id": "yarn:line:8e20e028",
+          "pairedRowSha256": "871424af9ff2164ad21cc115bd1fcb672be55731e995615a58ab5a8fd4f22e59",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player may advise Conrad to be himself."
+        },
+        {
+          "id": "yarn:line:5072cc60",
+          "pairedRowSha256": "37cdf58ea2f04e3128856de712716d84e26ec703ea0811dadbaa9270c91ac540",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The player may joke that Conrad should be clean; preserve size and italic markup."
+        },
+        {
+          "id": "yarn:line:3471e9b1",
+          "pairedRowSha256": "0182bd0342c5ba027c8aed67ead1c173773d59537d92c42c16b22f78587cb01e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says he is trying."
+        },
+        {
+          "id": "yarn:line:a241eec6",
+          "pairedRowSha256": "624b2087ab1c5b2fbab7a5a4cd674be65dd13830036e10b534ed7d639f24ec9e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad asks the player whether things are going well."
+        },
+        {
+          "id": "yarn:line:335c5156",
+          "pairedRowSha256": "3e97cecc74cefa1b0472f94cc322c514d6b4287cac064d570c1fa2c089bd9cf4",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player may say they think so."
+        },
+        {
+          "id": "yarn:line:a56c5621",
+          "pairedRowSha256": "439f6fe880134dd70d16950543b6016cebcc59aff7b0db43264a7717138930bc",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player may say that Ryan’s interest suggests Conrad is doing well."
+        },
+        {
+          "id": "yarn:line:c642cb17",
+          "pairedRowSha256": "2ca657d4b9897004c40652ec9f16ea120eed95b2a43e2d7991dd7bbfe5077bd7",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad thanks the player."
+        },
+        {
+          "id": "yarn:line:ea23c5f9",
+          "pairedRowSha256": "ec64487ec3c80b630992cd2daf6a4be176a60b5637d46d08120f3172c6726aa2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-kobold",
+            "dnw-wash"
+          ],
+          "decision": "Conrad jokes about finding a kobold to clean him, implicitly referring to the player in this exchange."
+        },
+        {
+          "id": "yarn:line:7c13c28e",
+          "pairedRowSha256": "6f3552067e0c35e5bc9bd433e0c940d8c9bf7b86144c53befdb426a79e36a643",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player may play along."
+        },
+        {
+          "id": "yarn:line:49b6a167",
+          "pairedRowSha256": "663d2eba2d329d5686412fdfa1f5bbbfe6cfcfac5faa958d6f0a1599cfefdfc9",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The player may promise to make Conrad spotless; preserve italic markup."
+        },
+        {
+          "id": "yarn:line:df86a610",
+          "pairedRowSha256": "521739f184d13b896044d1af06089f969b4460ad88054bf214c7f56ad7d22003",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Conrad praises the player’s wash."
+        },
+        {
+          "id": "yarn:line:f3e7a8fe",
+          "pairedRowSha256": "197bcb76a05f64e1efc5db07e46baa905f2a02d5df6e2f97460c2964a087863c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player thanks Conrad; the general slogan does not establish player gender."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_5_intro_conrad_romanced",
+      "orderedRowsSha256": "62f93f5434f299cbc88fc25bf44ecdaab83795af7709d744c07e030636934db2",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:1538bc7e",
+          "pairedRowSha256": "d2fab8584b34a06feda9b4db526f402e84c374e83bd69b75bd4b6f1488715a4e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad greets the player affectionately."
+        },
+        {
+          "id": "yarn:line:8308bb09",
+          "pairedRowSha256": "4ec937df4f8b341c7c521c9ba65cc160cfe374cef143b9a43da1c33a902cd237",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad asks how he looks."
+        },
+        {
+          "id": "yarn:line:209ddf97",
+          "pairedRowSha256": "f0f914d4d1358fac2d07e0167b5a084c26368262952b90406d2943915578a5d8",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player may say Conrad looks cool."
+        },
+        {
+          "id": "yarn:line:0bd1699e",
+          "pairedRowSha256": "10c182dbeac3ab58c3d0eeb3d38ea89b60af93d6c42524e8167add30677b0b8d",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player may hesitate."
+        },
+        {
+          "id": "yarn:line:b6add8e0",
+          "pairedRowSha256": "437e96320a36dd992ba7f8731df8cc06025e76e253effa0c9767ffd91e618f9b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad agrees enthusiastically."
+        },
+        {
+          "id": "yarn:line:0cfcd179",
+          "pairedRowSha256": "47269d1348eaecfe97ebee51293180d3f490730e2b1c1b0b13326ba1508de92d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The appearance is qualified as unsuitable for a date."
+        },
+        {
+          "id": "yarn:line:9accd60e",
+          "pairedRowSha256": "a6336d176a7f684a64d58ae01ec4faa5672a8dae45c112b0f3b8dafa745fb91b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The speakers discuss washing it off for their date; the isolated line does not independently resolve who speaks."
+        },
+        {
+          "id": "yarn:line:9de16ee9",
+          "pairedRowSha256": "a96f1ce7cdf3b49cff5ce5afb7b9025ecbed6ae01acaa6424f50d475e3fcf582",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A laugh; the isolated line does not independently resolve who speaks."
+        },
+        {
+          "id": "yarn:line:fa0a9fbb",
+          "pairedRowSha256": "274bb2af889d9d446b889f8140a499af4f24f09c936c9b34617ceb9ffcfafa81",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The speaker says they are joking; identity is not independently resolved by this row."
+        },
+        {
+          "id": "yarn:line:6c3a98cc",
+          "pairedRowSha256": "b7738ac07a26ddd128ec229f7ff5d8f76770f0db5534afc94400146595acdd20",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The speakers discuss washing it off for their date; the isolated line does not independently resolve who speaks."
+        },
+        {
+          "id": "yarn:line:d66b9155",
+          "pairedRowSha256": "400e062b53f7b434a084cf83be9efa78042881685a1ab304478bac6d181c7905",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player may express excitement about the date."
+        },
+        {
+          "id": "yarn:line:e3cef2bc",
+          "pairedRowSha256": "8c8d65a0b567738970c79c7da3a3cf619de46dba919a233580c514908c531043",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The player may say Conrad must be spotless."
+        },
+        {
+          "id": "yarn:line:405b9622",
+          "pairedRowSha256": "6864556acf66880cbc36ec1e46cf1680457f12ee1c3e958033b32fdcd8b27d30",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad reciprocates the excitement."
+        },
+        {
+          "id": "yarn:line:75fef5cb",
+          "pairedRowSha256": "e4e8164db4dde16f6c1bd5ca92123dd724eb002e9a79ec78a302214a79c2716d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad responds affirmatively."
+        },
+        {
+          "id": "yarn:line:cfaffc52",
+          "pairedRowSha256": "fc1c98f72940d099692cbe6d3eb6b36808b58eaf4e89dd4534a6863db7e74234",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad is excited."
+        },
+        {
+          "id": "yarn:line:599ffb25",
+          "pairedRowSha256": "d3753e917d01711a8faad75562b2648fac83d3f13dd113ea31dc8bd930afb630",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad booked seats at a previously mentioned bar."
+        },
+        {
+          "id": "yarn:line:c88244b5",
+          "pairedRowSha256": "1be5b13450e37db94ff0b9939aa452953b813fde9aaa324336051e9e055c4d09",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad describes the bar atmosphere informally."
+        },
+        {
+          "id": "yarn:line:5eb243c2",
+          "pairedRowSha256": "f03cab3015c7830802dc837a5433567800dcf8630d14991371851abce955e0ef",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad predicts the player will like the bar."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_5_intro_ryan_conrad_romanced",
+      "orderedRowsSha256": "81e51c077299aa3c33a94a6696289ebc69e141431b442673953f58ff27578575",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:24ce37ec",
+          "pairedRowSha256": "2ca8f20da885cbfba2fa891c2e11d26558aed3fd0ccc453766c2cbac2c9fa4c3",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad greets the player."
+        },
+        {
+          "id": "yarn:line:b2fe309b",
+          "pairedRowSha256": "31a50d1a39f7c5835c40550d0d71d75edd0447b013823638c5e32a55515551b1",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player may ask about Conrad’s good mood."
+        },
+        {
+          "id": "yarn:line:3d0a5aeb",
+          "pairedRowSha256": "6dfcaba33b17033e1e0c2a0084e659f2d1ed87a63c806bbb50b5be075ee37112",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player may greet Conrad by name."
+        },
+        {
+          "id": "yarn:line:08af3902",
+          "pairedRowSha256": "858fb9f642e192875f3178ee980f86ce9e1604ce8c345cc02206f9d9770a9e02",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad begins describing his date with Ryan."
+        },
+        {
+          "id": "yarn:line:9e9f3e75",
+          "pairedRowSha256": "87d2b87845ecbef1e532a5753393fe8dd99291d6dc735da7d354cd3b1b58b419",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says the date was very good."
+        },
+        {
+          "id": "yarn:line:ab3a5d9c",
+          "pairedRowSha256": "5bee29d3acba6d38b09914674a734ab28c21c7dbbf04ea641b08260d2138edbb",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad greets the player."
+        },
+        {
+          "id": "yarn:line:116b5405",
+          "pairedRowSha256": "0f29990a3ed44653debeef30cf1aa730b13b5345a82b47e52a5902017a1c29b9",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad begins describing his date with Ryan in the alternate branch."
+        },
+        {
+          "id": "yarn:line:875b5372",
+          "pairedRowSha256": "9dd08173f8632d17a6911e748e66334d2b1ebead62554c39d89c9c453b59aad2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says the date was very good in the alternate branch."
+        },
+        {
+          "id": "yarn:line:1646ece2",
+          "pairedRowSha256": "64535ae228b3f8875c80d9f24fbd49f26c574db63288b56aa629fede84dfa366",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad apologizes for arriving late and describes disrupted sleep."
+        },
+        {
+          "id": "yarn:line:8076eb95",
+          "pairedRowSha256": "f2f77c2aee5a2682e7bcf9313465e5edfe290eab068d346d185e0b67abbf0f8f",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Conrad says he came for a wash."
+        },
+        {
+          "id": "yarn:line:ebd2af6b",
+          "pairedRowSha256": "fc11d9bb87fa8cfe7de5d4356e731c7202b0dbc58564e25767e3e835ed7ad5b2",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "The player may ask Conrad for details about Ryan later."
+        },
+        {
+          "id": "yarn:line:c7b3a185",
+          "pairedRowSha256": "1328fd3d73368e123fc7a87e1e50744809260a2e001103e6ed78d09295b86f17",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player may offer to get the gate."
+        },
+        {
+          "id": "yarn:line:7de2a81c",
+          "pairedRowSha256": "6904b7c701f50f730a90f653c8ec481e53dbfa387733df3b58ce6e189832e218",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad promises to share the details."
+        },
+        {
+          "id": "yarn:line:5183a6f2",
+          "pairedRowSha256": "5229b4e45151febdb2d7841285155266009409bea2277c7d78c8af0ef941a917",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad thanks the player."
+        }
+      ]
+    },
+    {
       "group": "UI/level0",
       "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
       "applicableEntries": [],

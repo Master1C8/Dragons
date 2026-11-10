@@ -303,3 +303,7 @@ Two more complete groups / 38 paired rows have hash-bound source and Italian aut
 ### Resume 08: Ryan tutorial and arrival row unit
 
 Three further complete groups / 52 paired rows have hash-bound source and Italian author self-reviews. The row receipt covers 136 groups / 672 rows; 57 groups / 1,275 rows lack equivalent full row-level receipts. Previous narrower evidence remains reusable at its exact bound scope. Independent acceptance and shared source and exact-preservation gates remain open.
+
+### Resume 08: Conrad route arrival row unit
+
+Three further complete groups / 46 paired rows have hash-bound source and Italian author self-reviews. The row receipt covers 139 groups / 718 rows; 54 groups / 1,229 rows lack equivalent full row-level receipts. Previous narrower evidence remains reusable at its exact bound scope. Independent acceptance and shared source and exact-preservation gates remain open.
