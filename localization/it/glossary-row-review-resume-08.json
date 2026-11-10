@@ -18533,6 +18533,386 @@
       ]
     },
     {
+      "group": "Conrad_required_2",
+      "orderedRowsSha256": "c0ca12f0eb6b38d6baf8b637285de0df9ba44c5e3cfef15c8a57760aa9a06885",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-drake",
+          "sourceEntrySha256": "fc7a676e04843dde8307d6b1843ac34215ca67200d62b1ff1dfe06d21456cdd3",
+          "localeFieldsSha256": "588aaacc0e9b6174fe21464ef2a69488a7e951e8d2422c59ca6dfab4953105e1"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:51d4e418",
+          "pairedRowSha256": "d7735d647735fbf8b6dd72b8468a8993783f32d1ff5d122f8961e14036843318",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad calls himself an idiot."
+        },
+        {
+          "id": "yarn:line:c7e4e36f",
+          "pairedRowSha256": "b0d89bbaa21e6bf7d62a7a0b14e7834ef00df2f2fa93082743f8411aeb3a7833",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad angrily says he tries to avoid such situations."
+        },
+        {
+          "id": "yarn:line:647187f1",
+          "pairedRowSha256": "5ab06975f3dad01ca2efc733fcbd22db17945730ea03ecb15ac1ba392fb3352c",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player asks Conrad what happened."
+        },
+        {
+          "id": "yarn:line:de208e68",
+          "pairedRowSha256": "120d8b5873bf74d4efeb88c595591c4e45b2608caf226194b9916f0b770c584b",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player expresses sympathy for Conrad’s injury."
+        },
+        {
+          "id": "yarn:line:f2418086",
+          "pairedRowSha256": "7e98e203f6548c2eef5d6a4461873c6562fb80aaa2f553eee9718be82a1cd9eb",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad refuses to explain, saying it is embarrassing."
+        },
+        {
+          "id": "yarn:line:4810891f",
+          "pairedRowSha256": "e93913302f23203e3c7bc507b5af082e45077de939684c103322cca9919b2a85",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A pause without isolated speaker assignment."
+        },
+        {
+          "id": "yarn:line:4f3d31f8",
+          "pairedRowSha256": "f3071180209fab61d1f3765ee8501878c99eecb124aeeee89812a6818c775128",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad rejects pity."
+        },
+        {
+          "id": "yarn:line:d90d368f",
+          "pairedRowSha256": "9e524386324e5e325d0189b82848a4e1aca241f1ac5e1b51526c09ad6905fd1d",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "A pause without isolated speaker assignment."
+        },
+        {
+          "id": "yarn:line:bee6c7dd",
+          "pairedRowSha256": "ac67e6e0156997e3eed1f600b704eefc25733d2ef4c7589f47f72730c25c7904",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad begins to explain."
+        },
+        {
+          "id": "yarn:line:28d6c0aa",
+          "pairedRowSha256": "d1cbef676327c4038dad19d325673a202d441436b356a3b32c4eab70b992175e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad hates repeatedly getting into such situations."
+        },
+        {
+          "id": "yarn:line:9287c933",
+          "pairedRowSha256": "0eba531ad892d209799804361f474f2d7f912039d2e0e271fe45fd814c8e512f",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad fears it is his fault; preserve emphasis."
+        },
+        {
+          "id": "yarn:line:04b7ce44",
+          "pairedRowSha256": "f21f76580da9b13915f8f51f6d0189500b40d934c4a3751095495c8566adb0a2",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player tells Conrad this incident is not his fault; preserve emphasis."
+        },
+        {
+          "id": "yarn:line:8b43a434",
+          "pairedRowSha256": "bfc9bcaef4afeefb77417e25ab1be4b8d59a53b272f7d6a853c767e72f28bf25",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player asks who injured Conrad."
+        },
+        {
+          "id": "yarn:line:a722aada",
+          "pairedRowSha256": "fdb46a7c3e869792f9457fbf92165305f60f9a42cc6623ad02c0945fe1368640",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad thinks it was his fault this time."
+        },
+        {
+          "id": "yarn:line:3112adad",
+          "pairedRowSha256": "1ebd18ecb1a7761089bf18187740f4eb04c2846bcaf9b5128e59b0012f54686a",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-drake"
+          ],
+          "decision": "Conrad describes an unnamed drake at the bar and blames himself for speaking."
+        },
+        {
+          "id": "yarn:line:1d73a343",
+          "pairedRowSha256": "a80ebcb5f637a5bfdbc5b4ee6ce788101ff40fc81d5a01fab2d16ce1dcda5664",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [
+            "dnw-drake"
+          ],
+          "decision": "Alternate line describes an unnamed drake at the bar; do not assign a named identity."
+        },
+        {
+          "id": "yarn:line:8c6e1cd3",
+          "pairedRowSha256": "1a4dd47eac90fed90072945bd4f2f78779dc1532f6be7f661707478ed25c864e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad questions his own behavior."
+        },
+        {
+          "id": "yarn:line:1a5e1ba4",
+          "pairedRowSha256": "acb6dd08ef7a5a1d9fe7c89fc08d0fb427d3c1853d08334c041714425d9fc463",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The listener asks what behavior."
+        },
+        {
+          "id": "yarn:line:69e7dbb3",
+          "pairedRowSha256": "feb25a86e034ccf1e94573ffe037da478b5b13c93cedc53392b066788d98d93d",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player tells Conrad he is cool."
+        },
+        {
+          "id": "yarn:line:ffd7dcc4",
+          "pairedRowSha256": "640ac248976cd7d493baf566bc16ccf412b33844aad2f8c38c80f07d7135b5f9",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad calls himself an asshole and difficult company."
+        },
+        {
+          "id": "yarn:line:d3b6d22a",
+          "pairedRowSha256": "4defcab4f38805b011250a68f7f3e8c3ae9e57e5a0c95e89246d9cebc0ddc0e6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad calls the player kind and himself undeserving."
+        },
+        {
+          "id": "yarn:line:4586d55d",
+          "pairedRowSha256": "f0c82dc232940960680baea88026e6d1408f5de710c130fcccd2ed51d85ff1ce",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad repeats his negative self-assessment."
+        },
+        {
+          "id": "yarn:line:e613b1c3",
+          "pairedRowSha256": "eee440978905b41af4e5bb590aee217fddd1806f28c49825b6b412917da97ca3",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad apologizes for snapping at the player."
+        },
+        {
+          "id": "yarn:line:7023b6b4",
+          "pairedRowSha256": "7672a3ac423628ef63b87e8d711ade242ffab0633937eed443bc968915ef256c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says the player did not deserve that."
+        },
+        {
+          "id": "yarn:line:ca72bf2d",
+          "pairedRowSha256": "a06230d1beef71ffbb28ebeec6f593a75889ea3da4deb74f0577b0743b43b5cf",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player recognizes Conrad is going through a lot."
+        },
+        {
+          "id": "yarn:line:5b6f00bd",
+          "pairedRowSha256": "2285a96bcb1586fbb7ddeeeee5a403c0973dea7714cdd399c8850f024bfa91db",
+          "speakerOrKind": "option",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "The listener says it is fine."
+        },
+        {
+          "id": "yarn:line:5c42b85a",
+          "pairedRowSha256": "d4189ac194b76c825cf35bce18481015ed4670233d0f9aa81451edbb443f46b6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says hardship does not justify yelling at the player."
+        },
+        {
+          "id": "yarn:line:cd5f07ca",
+          "pairedRowSha256": "cc3ccd3fce2d76cc6525b64e68d0f091dbb4f084b7682c9d1c52bd353ade195e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad rejects excuses."
+        },
+        {
+          "id": "yarn:line:38419d8b",
+          "pairedRowSha256": "0997bda27df3d3b00939153f6a79028ea637dd3a90b83147e9134f600f1509f2",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "An alternate line rejects excuses."
+        },
+        {
+          "id": "yarn:line:ae719afc",
+          "pairedRowSha256": "292311b92a5c7eab67ef66db8a2c9182eb325d6f4879ee9189807fb96d1fea12",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad wants to improve; preserve emphasis."
+        },
+        {
+          "id": "yarn:line:14209365",
+          "pairedRowSha256": "0ab2a382685c4ec669f0c4580aabb919563564f70c8a254bfc75d5b614c58288",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad asks the player to keep his confidence."
+        },
+        {
+          "id": "yarn:line:82109412",
+          "pairedRowSha256": "febd34e2a5725c5e3c7543d33648bb28bae50e8fd35971f25ef5de30000059c2",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player promises secrecy."
+        },
+        {
+          "id": "yarn:line:2185f08c",
+          "pairedRowSha256": "b80239b9467af3483284f45d824af9f95cbddc2bb137d08b100e7ff912bc3264",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate promise of secrecy."
+        },
+        {
+          "id": "yarn:line:b7b5f7fb",
+          "pairedRowSha256": "c34d8b4f9012bdcc4835e3fbdddb4293fb4941de0c7484386a19fb9672bb54b5",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Hesitant thanks."
+        },
+        {
+          "id": "yarn:line:0de4fe62",
+          "pairedRowSha256": "0e221071cb5a2dcf4f940829a055da37d74383805a732f6baaf98a2ac2edb699",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad appreciates the player having a medkit."
+        }
+      ]
+    },
+    {
       "group": "UI/level0",
       "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
       "applicableEntries": [],
