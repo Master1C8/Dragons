@@ -21,6 +21,18 @@ tree still matched its pre-check hashes. The earlier QA directory is now
 incomplete for this comparison, so this check applied the ZIP to a new
 verified stock copy and preserved the earlier directory.
 
+An independent raw-object diff of those nine Unity assets confirmed identical
+object identity and type sets. It compared 30,197 unchanged objects on macOS
+and 29,802 on Windows. The 82 macOS and 104 Windows changed objects were
+all independently bound to v42 UI or settings display candidates, the two
+pinned Yarn objects, or the four source-bound speaker contrast targets.
+The Windows object diff reads the original ZIP members and validates their
+manifest digests. This establishes exact preservation of non-target objects
+inside the changed files. Target-object field checks and managed method
+checks still follow their dedicated adapters. The object delta receipt
+`serialized-object-delta.json` has SHA-256
+`dc81148bd6568fb5eff0b77fdee205c8b684ab89daadb69dc3d74f302a78cb56`.
+
 On both platforms the existing verifiers also checked all 31 StreamingAssets
 files and all four TextAssets within the 17 pinned serialized assets. Both
 TextMeshPro line-breaking references and the line-breaking mode match stock.
@@ -75,6 +87,21 @@ Their file names end in `-serialized-component-types.json` and
 `-additional-components.json` respectively. The unresolved-object comparison
 receipt SHA-256 is `13aaa471787cfb0679a695601b401fcfa3eadd2f21a3d212754a50109686d98f`.
 No images or textures were decoded or altered for this pass.
+
+## Six-locale worklist reconciliation
+
+The existing `de`, `es`, `fr`, `it`, `pl` and `pt-BR` exports have the same
+ordered 1,947 authoring rows, build mappings, source values, v42 inventory
+and Yarn scope hashes, and 27-case registry. Each file has its own locale
+identifier. Of the 1,126 distinct special-scene source references, 46 are
+source identities outside the authoring rows. All 46 exist in the pinned
+inventory. Thirty-six remain exact, including 15 fragment delimiters and
+21 managed or UI templates and fallbacks. Ten managed occurrences feed the
+two existing paired locale inputs `display:slot-new` and
+`display:yarn-missing-line`. The [Polish source-binding receipt](../pl/CHECKPOINT.md#special-scene-structural-preparation)
+records the individual source roles and the equality check confirmed this
+same scope across all six lanes. There are zero unexplained missing authoring
+rows among these registered case references.
 
 The source gate remains open. Exact file preservation covers untouched
 resources even when they contain engine metadata. It does not classify every
