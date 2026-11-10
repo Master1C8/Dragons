@@ -1,9 +1,9 @@
 {
   "worklistSha256": "9ee266ffbc4643e5b269b75ca03edfb763f1178d3803aa65b627d487c2b0535a",
-  "translationSha256": "0d6cc8494ed69bbd790d3c61e712aa26a57096264959f997ce78179e1621c77f",
+  "translationSha256": "8882ac9a1dee3b8c22d78a6076fddbedbcb55211ea50117969dfc3fae434b17d",
   "verifiedRegistryAndSourceBindings": 13,
   "caseCount": 27,
-  "authoredRows": 538,
+  "authoredRows": 591,
   "note": "Context rows are a source index, not proof that every listed line is an adaptation dependency. Remaining cases require in-context adjudication.",
   "cases": {
     "alexander-number-seven-taste": {
@@ -116,7 +116,6 @@
         "Conrad_5_required_conrad_romanced": 14,
         "Conrad_5_required_ryan_conrad_romanced": 13,
         "Conrad_5_required_ryan_romanced": 16,
-        "Conrad_Intro_4": 53,
         "Conrad_Intro_5": 5,
         "Conrad_Outro_4": 6,
         "Conrad_Outro_4_Conrad_Romanced": 18,
@@ -179,9 +178,7 @@
       "registry": "localization/evidence/special-scenes-typography-20261110.json",
       "directAuthoringRows": 1,
       "directNonAuthoringIds": [],
-      "unauthoredIndexedContextByGroup": {
-        "Conrad_Intro_4": 53
-      }
+      "unauthoredIndexedContextByGroup": {}
     },
     "ryan-branch-hesitation-sizing": {
       "registry": "localization/evidence/special-scenes-typography-20261110.json",

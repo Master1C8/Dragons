@@ -107,3 +107,7 @@ The 502-entry draft was accepted against the paired worklist and both source rea
 ## Continuation: complete Yip branch and greeting context
 
 The full `Alexander_4_intro` branch, including the alternatives, gate action, explicit explanation and short answer, is now authored with formal address, preserving the repeated `Yip!` and `<size=70%>` order. Both `Conrad_Intro_1` and `Conrad_5_intro_ryan_romanced` are also completely authored, including greetings, replies and gate instruction. The paired 538-entry draft and both 530-line dialogue asset read-backs are bound in `CHECKPOINT.md`. Other Yip callbacks and their adjacent English replies still require dependency adjudication; their direct lexical candidates are already authored. This is author self-review, not an independent audit or a runtime branch pass.
+
+## Continuation: Conrad scales aside
+
+`Conrad_Intro_4` is now authored as a complete scene. The German question `Sind deine Schuppen heute anders?`, the small italic uncertainty `Geht das überhaupt ...?` and Conrad's direct response `Das geht nicht ... Aber danke!` retain the failed compliment and acknowledgement. Alternatives and Ryan-route remarks remain distinct, with the glossary's `Gestell`. Both partial asset read-backs and the draft fingerprint are recorded in `CHECKPOINT.md`. Review is by the author; gameplay, final typography and independent audit remain pending.
