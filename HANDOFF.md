@@ -291,6 +291,39 @@ packages and checked direction dispatch and every reveal step in all
 rows. Native Unity layout and an actual wrap at a shaped cluster remain
 unverified. These outputs are candidates pending renderer validation.
 
+### Cluster-aware TMP wrapping
+
+Both pinned TMP renderers now defer horizontal overflow checks until
+the last glyph in an indivisible cluster, and skip saving stock wrap
+states between its glyphs. An indivisible cluster wider than an empty
+line can overflow as a unit. The guard requires the expected prepared
+private-use glyph at the exact character index. It preserves the Thai
+dictionary soft break immediately after a cluster. The patcher's
+read-back checks the four branches and verifies all stock method
+bodies after normalizing the insertions.
+
+The standalone comparison checked each glyph boundary in all 8,318
+authored and control plans on each platform, including 49,983
+intra-cluster boundaries and all 9,129 Thai soft break markers per
+platform. It also rejects a mismatched glyph at each position.
+These checks exercise the emitted IL and managed boundary decisions.
+Unity's native wrap, overflow, mesh upload and actual Yarn callbacks
+still require an authorized game run for verification.
+
+Reproduce the managed controls by building
+`localization/tools/prepared-text-layout-regression` with MSBuild
+properties `GameManaged` (stock platform), `Pair` (patched TMP directory),
+and `LayoutBin` (matching companion directory). Run the resulting
+DLL with the exact `rtl-plans.json` or `ltr-plans.json` as its argument.
+
+The ten candidates and receipts in
+`localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/`
+passed fresh rebuild comparisons, serialized metadata checks and final
+read-back. They supersede the earlier candidates for runtime verification.
+A standalone .NET attempt to JIT the actual macOS renderer stopped at a
+Unity native internal call before invoking the renderer. Managed mesh
+tests do not exercise that boundary. No game was launched.
+
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock
 512 × 512 multi-atlas chain admitted 1,536 distinct additional

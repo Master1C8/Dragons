@@ -79,6 +79,7 @@ internal static class RenderPlans
         module.Resources.Add(new EmbeddedResource(ResourceName, ManifestResourceAttributes.Private, plans));
         foreach (var method in Methods(module))
         {
+            WrapHooks.Attach(method, owner, layout);
             var (branch, join) = Join(method);
             var il = method.Body.GetILProcessor();
             var load = Instruction.Create(OpCodes.Ldarg_0);

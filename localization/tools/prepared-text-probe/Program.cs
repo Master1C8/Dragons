@@ -139,7 +139,7 @@ using (var file = new FileStream(args[2], FileMode.CreateNew))
 Console.WriteLine(JsonSerializer.Serialize(new
 {
     sourceSha256 = sourceHash, outputSha256 = Hash(output), displayMapSha256 = Hash(mapBytes),
-    patchedMethod = HookName, renderHook = renderPlans != null, verifiedOriginalMethodBodies = original.Count, mappings = mappings.Length,
+    patchedMethod = HookName, renderHook = renderPlans != null, clusterWrapHooks = renderPlans != null ? 4 : 0, verifiedOriginalMethodBodies = original.Count, mappings = mappings.Length,
 }));
 
 void Verify(string? value, int start, int length, string? expected, int expectedLength)
@@ -203,11 +203,13 @@ static Dictionary<string, string> Bodies(ModuleDefinition module, int skipHookPr
         {
             var body = m.Body;
             var render = normalizeRenderHooks ? RenderPlans.Inspect(m) : null;
+            var wrap = render.HasValue ? WrapHooks.Normalize(m) : new Dictionary<Instruction, Instruction>();
             var instructions = body.Instructions.Skip(m.FullName == HookName ? skipHookPrefix : 0)
-                .Where(i => i != render?.Load && i != render?.Call).ToArray();
+                .Where(i => i != render?.Load && i != render?.Call && !wrap.ContainsKey(i)).ToArray();
             var indices = instructions.Select((i, n) => (i, n)).ToDictionary(x => x.i, x => x.n);
             int Index(Instruction? instruction) => instruction == null ? -1 :
-                indices[instruction == render?.Load ? render.Value.Join : instruction];
+                indices[instruction == render?.Load ? render.Value.Join :
+                    wrap.TryGetValue(instruction, out var anchor) ? anchor : instruction];
             string? Operand(object? value) => value switch
             {
                 Instruction target => Index(target).ToString(),

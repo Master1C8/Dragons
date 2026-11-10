@@ -51,6 +51,39 @@ public static class RenderHook
         }
     }
 
+    public static bool SkipWrapState(TMP_Text text, uint glyph, int index) =>
+        TryWrapCluster(text, glyph, index, out _, out var end) && index + 1 < end;
+
+    public static bool DeferWidthOverflow(TMP_Text text, uint glyph, int index, int lineStart) =>
+        TryWrapCluster(text, glyph, index, out var start, out var end) &&
+        (index + 1 < end || (index > start && start == lineStart));
+
+    private static bool TryWrapCluster(TMP_Text text, uint glyph, int index, out int start, out int end)
+    {
+        start = end = index;
+        if (glyph is < 0xe000 or > 0xf8ff || text.isRightToLeftText ||
+            text.text is not string logical || !Plans.Value.TryGetValue(logical, out var plan))
+            return false;
+        return TryWrapCluster(plan.Prepared, plan.Offsets, plan.Ends, glyph, index, out start, out end);
+    }
+
+    internal static bool TryWrapCluster(string prepared, int[] offsets, int[] ends, uint glyph, int index,
+        out int start, out int end)
+    {
+        start = end = index;
+        if ((uint)index >= (uint)offsets.Length || prepared[offsets[index]] != glyph)
+            return false;
+        var cluster = Array.BinarySearch(ends, index + 1);
+        if (cluster < 0)
+            cluster = ~cluster;
+        start = cluster == 0 ? 0 : ends[cluster - 1];
+        end = ends[cluster];
+        // The dictionary marker is invisible and remains a legal wrap point.
+        if (prepared[offsets[end - 1]] == '\u200b')
+            end--;
+        return end > start && index < end;
+    }
+
     public static void Apply(TMP_Text text)
     {
         if (!text.isRightToLeftText)

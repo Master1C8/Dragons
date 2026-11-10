@@ -71,7 +71,7 @@ class Prepared:
                 tmp_receipt['outputSha256'] != dl.sha(files[TMP]) or
                 tmp_receipt['displayMapSha256'] != dl.sha(self.plans) or
                 tmp_receipt['mappings'] != self.plan_count or tmp_receipt['renderHook'] is not True or
-                tmp_receipt['verifiedOriginalMethodBodies'] != 1806 or
+                tmp_receipt.get('clusterWrapHooks') != 4 or tmp_receipt['verifiedOriginalMethodBodies'] != 1806 or
                 yarn_receipt['sourceSha256'] != speaker_receipt['sourceSha256'] or
                 yarn_receipt['inputSha256'] != speaker_receipt['outputSha256'] or
                 yarn_receipt['outputSha256'] != dl.sha(files[YARN]) or yarn_receipt['revealSites'] != 3):
