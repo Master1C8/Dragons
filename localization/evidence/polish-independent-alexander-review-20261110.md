@@ -1,0 +1,11 @@
+# Independent review of the Polish Alexander corrections
+
+The coordinator independently read the 39 selected Alexander scene rows and checked both stock English builds. The reviewed translation at `19df80e` has SHA-256 `3983cc2a9dc25d31106b7d686fbdde713857d56d78b5f93b63b9a6fd537113b3`. The two stock programs agree on the checked choice and feedback bindings.
+
+- `yarn:line:3f153aaf` and `yarn:line:da9cfdcf`. “Niedawno była randka” drops the player's participation. “Tak! Jestem świeżo po randce z Ryanem.” and its parallel “Tak! Jestem świeżo po randce z Conradem.” retain recent first-person experience without gender agreement or an assertion about travelling from the date. The two choices lead to 92 and 109 and the feedback names the correct dragon at 95 and 112.
+- `yarn:line:8ee41fdc`. Alexander wonders whether to keep wearing his family crest and says he must adhere to the custom. “Muszę więc je szanować.” retains respect but loses continued observance. “Muszę więc trzymać się tej tradycji.” preserves that connection. The complete proposed line retains all seven ordered size tags and the final quotation. Choices 268 and 269 still lead to 274 and 282.
+- `yarn:line:1642b6f1` and `yarn:line:e767dc51`. Two Alexander farewells omit the recurring dragon-specific “get out of your scales” joke. The full stock worklist has five occurrences. Conrad and Ryan already use scales in the other three, with two using “siedzieć na łuskach”. The proposed Alexander wording uses that established expression in both farewells and retains the closing thanks and transition.
+
+Both paired dialogue readers accepted the five complete proposals. The independent findings are pending author disposition. The named dragon branches, the crest context and the recurring scales expression were checked in source. This review did not exercise the routes or establish fit for the long crest line.
+
+The exact proposals, affected IDs, repeated phrase scope and program bindings are in `localization/work/pl-independent-alexander-20261110.qAnGhP/review.json`, SHA-256 `628b46b4ab7c371fd1644535b00b6ea3d86ebc16f1a6774dfb4bff0754077a85`. The remaining independent closure and clean correction cycle are still open.
