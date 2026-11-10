@@ -9,12 +9,18 @@
 | source | **Passed for the pinned v42 inputs.** The accepted shared source-readiness evidence and reconciliation at `15c330ef17ca031b547dae23af30f7315faa6d3e` supersede the provisional `bfabe4d` boundary. See `localization/evidence/source-readiness-v42-20261110.md`. |
 | glossary | **Self-review layers complete under the owner’s current instruction.** The two earlier 27-entry author layers match every per-entry digest; two separate affected-closure author reads cover the anonymous role and related rules. See `glossary-review.md` for evidence, source-context adjudication and limitations. No independent review is claimed. The final game-text independent audit remains required. |
 | translate-edit | **Draft complete: 1,947/1,947 IDs authored and self-edited.** All 246 direct indexed authoring rows are present and the adaptation entry review is complete; semantic and runtime closure remain pending. See `special-scenes.md` and `special-scene-reconciliation.json`. No source-passthrough counts as translation. |
-| editorial | Author semantic self-review in progress: 1,035/1,947 source-bound rows reviewed; complete semantic closure and independent diff/delta audit remain pending. |
+| editorial | Author semantic self-review read all 1,947/1,947 source-bound rows; source ambiguity, cross-group closure and independent diff/delta audit remain pending. |
 | resources | Final corpus-bound glyph coverage and fit pending. Textures with text are excluded and must remain untouched. |
 | package | Not built; macOS app and Windows ZIP read-back pending. |
 | runtime / visual | Representative synthetic German checks passed on macOS and Windows CrossOver; final corpus and package runtime, complete visual review and native Windows remain unrun. Original owner game processes must not be operated or stopped. |
 | screenshot-upload / screenshot-review | Not run; upload is not authorized. |
 | delivery | Incomplete. No installation, release or publication. |
+
+## 2026-11-10 semantic author review: remaining scenes and UI
+
+Reviewed worklist rows 1035–1946 (912 IDs), including the remaining interactions and Ryan scenes, all UI, credits and settings. Exact IDs, groups and translation/worklist hashes are in `receipts/semantic-self-review-1035-1946.json`. All 13 differing platform source pairs in this range have compatible shared German wording. Together with the earlier receipts, this is an author read of **1,947/1,947** source-to-target rows, not independent acceptance or complete semantic closure. No text changed in this batch; the latest Yarn verification and platform readbacks remain bound to the current translation SHA-256 `17cd7c687560565daf6640d0c31fc6f9791453f069686d31fef81da3074af9b2`; UI/settings bindings are unchanged.
+
+Open finding: `yarn:line:610dd8cb`, “The markers were fun.”, follows Ryan saying he went out with friends and precedes his need to get clean. Both builds say “markers”; the available surrounding source does not establish the referent. The literal `Die Marker haben Spaß gemacht.` remains provisional. Resolve against further source-bound context or an owner/source clarification before semantic closure; do not silently declare the intended meaning. Cross-group dependency closure and the separately independent audit also remain pending. Package and final runtime/visual states remain separate and unpassed.
 
 ## 2026-11-10 semantic author review: Conrad scenes
 
