@@ -90,3 +90,7 @@ The seven question labels and their once-state contract are author self-reviewed
 ### Alexander college introduction batch
 
 The college introduction's nine direct IDs, two contextual lines and two unchanged speaker display names are author self-reviewed in [special-alexander-college.md](special-alexander-college.md). Both source-bound readers and dialogue object read-backs passed on both builds; a missing-colon negative control was rejected. Current total: 116/1,947 authored IDs and 15/27 special decisions. Twelve special decisions precede ordinary text. Independent game-text audit, final packages and final runtime/visual checks remain pending.
+
+### Conrad wordplay batch
+
+The dirty double meaning, professional double meaning and big-C nickname cases are author self-reviewed in [special-conrad-wordplay.md](special-conrad-wordplay.md). All 41 direct IDs passed source-bound readers and object read-back on both builds; an emptied progressive markup region failed the intended guard on each. Current total: 157/1,947 authored IDs and 18/27 special decisions. Nine special decisions precede ordinary text. Independent game-text audit, final packages and final runtime/visual checks remain pending.
