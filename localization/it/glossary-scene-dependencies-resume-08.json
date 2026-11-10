@@ -2365,19 +2365,133 @@
       "group": "Conrad_5_required_conrad_romanced",
       "orderedRowsSha256": "2f946da0cbbc4642e4c289ba266fe75e7f2f63c563c1d224047f0f96c732d3cc",
       "count": 14,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:42e3eba2"
+        ]
+      },
+      "referents": "Conrad and player discuss their date; Conrad intends to leave after cleaning and prepare their place. No gender is specified for the player.",
+      "layer1": "Source read: cleaning is the service action; mood and setting refer to their planned date.",
+      "layer2": "Italian field read: preserve the colloquial exchange and participant distinction; no field defect established.",
+      "sourceIds": [
+        "yarn:line:b983f922",
+        "yarn:line:2fb3fe55",
+        "yarn:line:a0479425",
+        "yarn:line:95e2f7cc",
+        "yarn:line:03d2f0bb",
+        "yarn:line:36779352",
+        "yarn:line:8c269acb",
+        "yarn:line:1a169dbc",
+        "yarn:line:8b0b222c",
+        "yarn:line:1d3b255b",
+        "yarn:line:6e82e54c",
+        "yarn:line:f8b2e23b",
+        "yarn:line:d4d3ecd5",
+        "yarn:line:42e3eba2"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-fifth-required-and-fourth-departures",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_5_required_ryan_conrad_romanced",
       "orderedRowsSha256": "cd87a8b1b75f070d41f7e839d5602aaf1902e41a0a3a8cc9a19be6bf28de0f00",
       "count": 13,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-dragon"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:92829935",
+          "yarn:line:04b29e42",
+          "yarn:line:bee397db",
+          "yarn:line:b9ce2f3c",
+          "yarn:line:2ffe284b",
+          "yarn:line:de25de6e",
+          "yarn:line:51d1b41e",
+          "yarn:line:f244d080",
+          "yarn:line:c7e1b369",
+          "yarn:line:7db0baf0"
+        ],
+        "dnw-dragon": [
+          "yarn:line:92829935"
+        ]
+      },
+      "referents": "Ryan is the dragon described as considerate; Conrad's old script and jerk behavior describe Conrad himself. Conrad thanks the player for introducing Ryan to him.",
+      "layer1": "Source read: distinguish Ryan as he/him from Conrad's account of himself.",
+      "layer2": "Italian field read: the bound Ryan and dragon entries fit; do not transfer Conrad's self-criticism to Ryan.",
+      "sourceIds": [
+        "yarn:line:92829935",
+        "yarn:line:04b29e42",
+        "yarn:line:28d390ac",
+        "yarn:line:bee397db",
+        "yarn:line:b9ce2f3c",
+        "yarn:line:2ffe284b",
+        "yarn:line:4815d919",
+        "yarn:line:de25de6e",
+        "yarn:line:6474d7f7",
+        "yarn:line:51d1b41e",
+        "yarn:line:f244d080",
+        "yarn:line:c7e1b369",
+        "yarn:line:7db0baf0"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-fifth-required-and-fourth-departures",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_5_required_ryan_romanced",
       "orderedRowsSha256": "24a8a6df3f9c3749afd75dd4f48b8f6a01e657a20539e0751aa6cfe642f3da35",
       "count": 16,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-dragn-wash"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:3890b91c"
+        ],
+        "dnw-conrad": [
+          "yarn:line:f1787092"
+        ],
+        "dnw-dragn-wash": [
+          "yarn:line:13dc0f15"
+        ]
+      },
+      "referents": "Conrad asks the player about the player's date with Ryan. Conrad's jealousy is qualified by his following line; the player's imminent closing refers to the workplace.",
+      "layer1": "Source read: the date participants in this route are player and Ryan, not Conrad and Ryan.",
+      "layer2": "Italian field read: keep the alternate relationship branch and frank tone without assigning player gender.",
+      "sourceIds": [
+        "yarn:line:85ec0862",
+        "yarn:line:13dc0f15",
+        "yarn:line:3fbd01fb",
+        "yarn:line:a98d068c",
+        "yarn:line:aea0be6b",
+        "yarn:line:3890b91c",
+        "yarn:line:dd197e7c",
+        "yarn:line:4b29790b",
+        "yarn:line:f1787092",
+        "yarn:line:52ed140c",
+        "yarn:line:674877e5",
+        "yarn:line:c4dd137b",
+        "yarn:line:e8bc1d95",
+        "yarn:line:7e8c1ae2",
+        "yarn:line:ef91a572",
+        "yarn:line:79a1a205"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-fifth-required-and-fourth-departures",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Idle1",
@@ -2918,19 +3032,142 @@
       "group": "Conrad_Outro_4_Conrad_Romanced",
       "orderedRowsSha256": "cc20f2cc17cd2162eba335fb096ceed256180345d5e38a83da37d7e81595be16",
       "count": 18,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wings",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wings": [
+          "yarn:line:f4af8b88",
+          "yarn:line:629f8cff",
+          "yarn:line:f382336f",
+          "yarn:line:ac5afd96"
+        ],
+        "dnw-wash": [
+          "yarn:line:ed6be68f"
+        ]
+      },
+      "referents": "Conrad names Wings as the downtown club for a show and plans reservations for himself and the player; cleaning has just finished. The club must not be conflated with similarly named WingCo.",
+      "layer1": "Source read: Wings is explicitly a club and date venue, not the workplace or company.",
+      "layer2": "Italian field read: preserve the proper name and contextual venue distinction; no field defect established.",
+      "sourceIds": [
+        "yarn:line:ed6be68f",
+        "yarn:line:7b5be1f8",
+        "yarn:line:d8ce8566",
+        "yarn:line:4efe8211",
+        "yarn:line:f4af8b88",
+        "yarn:line:629f8cff",
+        "yarn:line:f382336f",
+        "yarn:line:65b23418",
+        "yarn:line:99ff9e7f",
+        "yarn:line:803bf378",
+        "yarn:line:160bf40f",
+        "yarn:line:ac5afd96",
+        "yarn:line:3a6afae1",
+        "yarn:line:0fcf9908",
+        "yarn:line:b59e9091",
+        "yarn:line:23ae97e6",
+        "yarn:line:b2b32876",
+        "yarn:line:24832f01"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-fifth-required-and-fourth-departures",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Outro_4_Ryan_Conrad_Romanced",
       "orderedRowsSha256": "ae3b3d91763ac36e30df4426effbcba37544cd548dadb0cf87bc63e3a8d0fd97",
       "count": 22,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:3d2bc74e",
+          "yarn:line:24efaa49",
+          "yarn:line:7c1adc57",
+          "yarn:line:c64bd5ce",
+          "yarn:line:507bd2b9"
+        ],
+        "dnw-wash": [
+          "yarn:line:507bd2b9",
+          "yarn:line:65deb150"
+        ]
+      },
+      "referents": "Conrad worries about his prospects with Ryan, describes their first meeting and plans the date after the wash. The seafood restaurant and club are not named in these rows. Preserve the macOS/Windows apostrophe difference in line:507bd2b9 as source evidence.",
+      "layer1": "Source read: he and him in the date account refer to Ryan; no named venue follows solely from this branch.",
+      "layer2": "Italian field read: retain Conrad's uncertainty and platform source distinction; no glossary correction established.",
+      "sourceIds": [
+        "yarn:line:ab1bc039",
+        "yarn:line:3d2bc74e",
+        "yarn:line:877aced7",
+        "yarn:line:b2dfad3e",
+        "yarn:line:114ac9a0",
+        "yarn:line:24efaa49",
+        "yarn:line:9ebea3d0",
+        "yarn:line:088ea4a7",
+        "yarn:line:99931b37",
+        "yarn:line:0fa31c40",
+        "yarn:line:ea2adb20",
+        "yarn:line:f3eeb627",
+        "yarn:line:7c1adc57",
+        "yarn:line:c64bd5ce",
+        "yarn:line:507bd2b9",
+        "yarn:line:65deb150",
+        "yarn:line:df8fb8c9",
+        "yarn:line:49bfbfbe",
+        "yarn:line:d8a2002e",
+        "yarn:line:94fbdbf0",
+        "yarn:line:4e920759",
+        "yarn:line:02cbdc87"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-fifth-required-and-fourth-departures",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Outro_4_Ryan_Romanced",
       "orderedRowsSha256": "513374f49be9812ac7635e03c75a5a04ee4ba98d71c7d1de9f3991f7a973698d",
       "count": 10,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:6be807b5",
+          "yarn:line:4789095b",
+          "yarn:line:5e4d645c"
+        ],
+        "dnw-wash": [
+          "yarn:line:fdd800c2"
+        ]
+      },
+      "referents": "Conrad asks about the player and Ryan; the two are described as cute together. Ryan's lowercase spelling in the English source is not a second character.",
+      "layer1": "Source read: the romantic pair is player and Ryan in this branch.",
+      "layer2": "Italian field read: use the bound Ryan identity while respecting source routing and unspecified player gender.",
+      "sourceIds": [
+        "yarn:line:fdd800c2",
+        "yarn:line:6be807b5",
+        "yarn:line:d1b90e2c",
+        "yarn:line:722c6ab2",
+        "yarn:line:4789095b",
+        "yarn:line:e41c6dc5",
+        "yarn:line:c87d632b",
+        "yarn:line:5e4d645c",
+        "yarn:line:cf50dbcc",
+        "yarn:line:5960dcbb"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-fifth-required-and-fourth-departures",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Ryan_Romanced",
