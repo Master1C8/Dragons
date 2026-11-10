@@ -13,6 +13,14 @@ Closure-ID SHA-256 `a5b4680a68fa681d3571eeebf62bbdac05fcdc4f95fb1d576882c3368330
 Both stock input validators passed. This was a direct editorial pass by the
 coordinator, with no new distinct independent audit, gameplay or visual check.
 
+Both packages were rebuilt from `ecbe7bb`. Independent build
+reproduction matched all 284 macOS files and 13 Windows ZIP members.
+Strict app signature, exact stock component preservation and serialized metadata
+checks passed. The verification receipt is `localization/work/direct-editorial-20261110/pt-BR/result.json`,
+SHA-256 `028bd820074103b58e6bef38b2c9cc3b2a90de98d27766a68ca0d45e6c652219`.
+macOS manifest SHA-256 `f2c4941daae182ca25913fad25117e95a50fbf9daa963e133b8fa8fcbf59254a`.
+Windows archive SHA-256 `18020121d4313eefe037e2c226ddc81e63857bfb5ce3ec6e49ac2f015acd69fc`.
+
 ## 2026-11-10 direct file completion
 
 The complete paired file contains **1,947/1,947 authored IDs**, SHA-256
