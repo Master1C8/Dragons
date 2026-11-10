@@ -95,7 +95,7 @@ Keep both identical response pairs distinct and preserve `$Yarn.Internal.Once.li
 
 ## Gate status
 
-Seventeen of 27 cases have author-reviewed wording recorded in this file; the remaining 10 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the seventeen. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
+Nineteen of 27 cases have author-reviewed wording recorded in this file; the remaining 8 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the nineteen. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
 
 ## Alexander's family crest
 
@@ -289,3 +289,58 @@ Source case `conrad-height-euphemism`, two spans in `ryan_food_dialogue`. Author
 | `36fb380f` | Fantastico, è carino! |
 
 Positive: each euphemism receives its own route-specific reaction and either alternative retains its source continuation; negative: different euphemisms or swapped route identities fail. Paired text-path feasibility is bounded; authored-package validation, branch execution and fit remain pending.
+
+## Anonymous dragon replies
+
+Source case `anonymous-dragon-address`, four separate nodes. Author self-review: do not identify the four dragons as one person or assign gender to either participant. Preserve the anonymous dragon's feeling of remaining dirt, the player's button admission, the distinct silence choice and the normal versus emphatic agreement.
+
+| ID | Italian wording |
+|---|---|
+| `7d791906` | Oh, va meglio, ma sento ancora dello sporco addosso. |
+| `ec64a696` | Puoi ricontrollare se ho ancora dello sporco addosso? |
+| `7a54a1e1` | Va bene |
+| `1dbf50b3` | Certo |
+| `8b8f57c4` | Grazie! |
+| `b965b4dd` | Smettila, non abbiamo ancora finito. Vero? |
+| `2f55b3aa` | Eh eh |
+| `9504ba33` | ... |
+| `63926ecd` | Oh, abbiamo finito? |
+| `f28fd15d` | Credo che manchino ancora alcuni punti... |
+| `64bfd62a` | Ops, colpa mia. |
+| `4116f001` | Non sapevo cosa facesse il pulsante. |
+| `d726f776` | Nessun problema, |
+| `fb47f998` | Sì, fa BRRT ahah. |
+| `6d77feef` | Comunque, meno male che non hai finito, continuiamo! |
+| `f1946aab` | Grazie per il lavaggio!! |
+| `67a46ddc` | Magari possiamo passare del tempo insieme più tardi? |
+| `c4310942` | Sì! |
+| `52010e35` | SÌ! |
+| `e85007ac` | Fantastico! Allora a dopo! |
+
+Positive: each menu keeps its two IDs, order and corresponding follow-ups; the button still makes the sound and the emphatic agreement stays uppercase. Negative: unifying identities, assigning unsupported gender, swapping choices or losing silence fails. Bounded renderer feasibility is established; package validation and final runtime and fit remain pending.
+
+## Ryan's salmon self-correction
+
+Source case `salmon-guy-dragon`, node `Ryan_5_Required_ryan_romanced`. Author self-review: “tipo da salmone” sets up Ryan's correction that he is a dragon; the other seafood response goes elsewhere and no dietary restriction is invented. The date, alternative destinations and the equine-kin fusion restaurant remain distinct.
+
+| ID | Italian wording |
+|---|---|
+| `d9652dff` | Allora. Il nostro appuntamento di stasera... |
+| `7af04961` | Dove ti piacerebbe andare? |
+| `ecc04e16` | Decidi tu! |
+| `81905be1` | Mi piacerebbe andare a mangiare fuori. |
+| `412ba249` | Conosci qualche bel bar? |
+| `bd66082e` | E un film? |
+| `108de471` | Sì, mi sembra una bella idea. |
+| `86bde306` | Come te la cavi con pesce e frutti di mare? |
+| `e5937e30` | Sì. Mi piace il pesce! |
+| `fc571337` | Mmm, magari qualcos'altro? |
+| `73a37947` | Oh, fantastico. Sono proprio un tipo da salmone. |
+| `c9f270de` | Be', sono un drago... ma hai capito cosa intendo. |
+| `5fc277a9` | Allora è un appuntamento! Pesce e frutti di mare, poi si vedrà. |
+| `6a671440` | Conosco un buon locale di cucina equina vicino al molo. |
+| `d0361dd9` | È una specie di cucina fusion equina... |
+| `46061aae` | Mi piace! Credo che piacerebbe anche a te. |
+| `d71ba53e` | Allora è un appuntamento! |
+
+Positive: the fish choice reaches the salmon joke and the alternate food choice retains its own continuation. Negative: erasing the human-expression setup, inventing a food prohibition or changing option routes fails. Paired dialogue and choice paths establish bounded feasibility; package validation, route execution and fit remain pending.
