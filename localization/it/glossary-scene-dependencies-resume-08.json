@@ -2249,43 +2249,267 @@
       "group": "Conrad_Outro",
       "orderedRowsSha256": "859434f4636918183f50ada329eeb63140c25e341c8c0810f212472d2d965a22",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:4d6b365e"
+        ]
+      },
+      "referents": "Conrad thanks the player after being cleaned; the lighter load is contextually suggestive but does not identify another person.",
+      "layer1": "Cleaning is the service; the speaker and addressee are distinct.",
+      "layer2": "Italian service and character fields fit; preserve Conrad's informality and player neutrality.",
+      "sourceIds": [
+        "yarn:line:4d6b365e",
+        "yarn:line:f73a3fc7"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-departure-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_OutroDirty",
       "orderedRowsSha256": "4b75b0feac3c2e2e76b744518b51d176884d96bb36379dda76b6fa5741943625",
       "count": 3,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:5d41b5d6"
+        ]
+      },
+      "referents": "Conrad remains dirty, and the player has two alternative apologies.",
+      "layer1": "The line concerns incomplete cleaning service.",
+      "layer2": "Keep player gender unspecified and preserve the alternatives.",
+      "sourceIds": [
+        "yarn:line:5d41b5d6",
+        "yarn:line:cb71b2a1",
+        "yarn:line:5a6c0d31"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-departure-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_OutroSoapy",
       "orderedRowsSha256": "c9999b6070df3536e91a169e18c105d0653cccaaebbfa195320c3bb1b3a27231",
       "count": 3,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:2f6eb3c3"
+        ]
+      },
+      "referents": "Conrad remains soapy, and the player has two alternative apologies.",
+      "layer1": "Soap indicates incomplete cleaning service.",
+      "layer2": "Keep player gender unspecified and preserve the alternatives.",
+      "sourceIds": [
+        "yarn:line:2f6eb3c3",
+        "yarn:line:8cfbd75d",
+        "yarn:line:1acbd02a"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-departure-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Outro_1",
       "orderedRowsSha256": "4ba686e8bda7e83e2b958f105394a5e4896537b01c02f1f055d6d0a73af6e091",
       "count": 12,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wash",
+        "dnw-mount",
+        "dnw-dragon-washer",
+        "dnw-dragon"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:7fe73572",
+          "yarn:line:e9d73205"
+        ],
+        "dnw-mount": [
+          "yarn:line:e9d73205",
+          "yarn:line:b122441b",
+          "yarn:line:eefa8ae2",
+          "yarn:line:9d434af5",
+          "yarn:line:12b72085"
+        ],
+        "dnw-dragon-washer": [
+          "yarn:line:0b734d82"
+        ],
+        "dnw-dragon": [
+          "yarn:line:0b734d82"
+        ]
+      },
+      "referents": "Conrad distinguishes the cleaning he received from other wash establishments, and wants the player to order the adult device. His general statement about washers and dragons does not identify other individuals. He denies that his warning is a threat.",
+      "layer1": "The wash entry needs both service and establishment senses; the requested mount is the device. Washers and dragons are generalized occupations/species.",
+      "layer2": "Italian service/venue and device senses fit; retain alternative responses and Conrad's denial rather than making the warning an explicit threat.",
+      "sourceIds": [
+        "yarn:line:7fe73572",
+        "yarn:line:e9d73205",
+        "yarn:line:78ca8d95",
+        "yarn:line:b122441b",
+        "yarn:line:eefa8ae2",
+        "yarn:line:0b734d82",
+        "yarn:line:9d434af5",
+        "yarn:line:2712436c",
+        "yarn:line:12b72085",
+        "yarn:line:848727f2",
+        "yarn:line:3ed62e6b",
+        "yarn:line:a8e6291c"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-departure-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Outro_2",
       "orderedRowsSha256": "f07dea0fedfee337de87b157acfd35a6972aa3ab798f3f459e1f13c252e1f59d",
       "count": 13,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "Conrad tells the player he feels better physically and emotionally in one branch. Their mutual compliments and promises have distinct speakers; the other alternatives do not assert every line occurred.",
+      "layer1": "Both refers to physical and emotional improvement, not two people.",
+      "layer2": "Conrad and neutral player fields remain consistent with the branch context.",
+      "sourceIds": [
+        "yarn:line:a051821a",
+        "yarn:line:314c3d8a",
+        "yarn:line:42f5fd9d",
+        "yarn:line:a77c3afd",
+        "yarn:line:d4c5faea",
+        "yarn:line:6e94f373",
+        "yarn:line:f8a4f404",
+        "yarn:line:5b31909a",
+        "yarn:line:77509e74",
+        "yarn:line:cd0197ed",
+        "yarn:line:e1609903",
+        "yarn:line:707d2693",
+        "yarn:line:e64d21e4"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-departure-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Outro_3",
       "orderedRowsSha256": "3c4d4480c660bbf963bff99cd8a6a8c1ad5d253e18c951756870e14dc5872957",
       "count": 38,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-dragon",
+        "dnw-kobold",
+        "dnw-yip"
+      ],
+      "conceptUses": {
+        "dnw-dragon": [
+          "yarn:line:36ff6bd9",
+          "yarn:line:8cae6240",
+          "yarn:line:e53b1bd3"
+        ],
+        "dnw-kobold": [
+          "yarn:line:b058318f"
+        ],
+        "dnw-yip": [
+          "yarn:line:c3e1f198",
+          "yarn:line:266836f8",
+          "yarn:line:b058318f"
+        ]
+      },
+      "referents": "The player can offer to introduce Ryan or pursue Conrad; those unlock descriptions are alternatives. In the Ryan path he and him refer to Ryan. In the Conrad date path the player yips; Conrad recognizes it and the player's gloss explains that occurrence, not every yip. The dragon in the player's aside is Conrad.",
+      "layer1": "Ryan and Conrad are different dragons and the player's yip is contextual; preserve alternative unlocks and the paired-build apostrophe difference in line:266836f8.",
+      "layer2": "Italian Yip meaning remains context-dependent, and the character fields preserve the referents without fixing player gender. No punctuation-only source variant warrants a glossary edit.",
+      "sourceIds": [
+        "yarn:line:d376acb9",
+        "yarn:line:4546abce",
+        "yarn:line:a0cf6cae",
+        "yarn:line:36ff6bd9",
+        "yarn:line:7e9d40e6",
+        "yarn:line:8cae6240",
+        "yarn:line:1a9e6537",
+        "yarn:line:b90b01a9",
+        "yarn:line:2f3b06de",
+        "yarn:line:956a0f47",
+        "yarn:line:9247b7a0",
+        "yarn:line:035a0830",
+        "yarn:line:0477b0d7",
+        "yarn:line:67592de1",
+        "yarn:line:f1692a96",
+        "yarn:line:4b38230f",
+        "yarn:line:dd082478",
+        "yarn:line:e8ad4791",
+        "yarn:line:52fc4e08",
+        "yarn:line:c4cc497f",
+        "yarn:line:55d1f6ef",
+        "yarn:line:c3e1f198",
+        "yarn:line:9c393f61",
+        "yarn:line:266836f8",
+        "yarn:line:b058318f",
+        "yarn:line:0a093816",
+        "yarn:line:3fac5bff",
+        "yarn:line:a99c5c88",
+        "yarn:line:13cd5511",
+        "yarn:line:85fd5266",
+        "yarn:line:14e0edf6",
+        "yarn:line:82d0ea81",
+        "yarn:line:e53b1bd3",
+        "yarn:line:fcff76d4",
+        "yarn:line:730b1ca4",
+        "yarn:line:c95a153d",
+        "yarn:line:5f6a124a",
+        "yarn:line:6acf71a3"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-departure-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Outro_4",
       "orderedRowsSha256": "2de008eafcea88e0e0fe315fe6321761eb4d1cbf7e67b26d998c1fa5badbaf59",
       "count": 6,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:6c2a1901",
+          "yarn:line:404b17ef",
+          "yarn:line:d67b1098",
+          "yarn:line:d156a87f"
+        ]
+      },
+      "referents": "The player has alternate comments on cleaning Conrad; the italic aside addresses him. The rows do not introduce a third character.",
+      "layer1": "The clean and spraying refer to the service; the apostrophe differs between builds in line:fa1a1e76.",
+      "layer2": "The target service field fits, player gender remains unspecified, and the punctuation variant is not a glossary defect.",
+      "sourceIds": [
+        "yarn:line:6c2a1901",
+        "yarn:line:fa1a1e76",
+        "yarn:line:404b17ef",
+        "yarn:line:d67b1098",
+        "yarn:line:4766af08",
+        "yarn:line:d156a87f"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-departure-scenes",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_Outro_4_Conrad_Romanced",
