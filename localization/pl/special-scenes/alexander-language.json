@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "sourceRegistry": "localization/evidence/special-scenes-alexander-language-20261107.json",
+  "sourceInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "worklistSha256": "867bd3ee2e086876c1089576f966df8c548915bcd2a68dc35f87852dce960f87",
+  "glossaryPlSha256": "1ab12ce29b28b65231fd03959fa51a32a8d81d3ac3e92a17e78794640b49d56a",
+  "cases": [
+    {
+      "id": "alexander-proletarian-register",
+      "wording": {
+        "yarn:line:73e4789c": "Wiesz... To otoczenie jest całkiem przyjemne. Bardzo... proletariackie.",
+        "yarn:line:e5d47feb": "Prole- <i><size=70%>co?",
+        "yarn:line:8512365e": "Dziękuję!",
+        "yarn:line:74c9c07b": "A, czyli... robotnicze?",
+        "yarn:line:e2f9c70c": "Przepraszam, chciałem powiedzieć, że podoba mi się twoja myjnia.",
+        "yarn:line:13223129": "Oczywiście",
+        "yarn:line:a97338b0": "Kto by pomyślał, że takie miejsca są tak łatwo dostępne dla ogółu!"
+      },
+      "decision": "The educated class-register adjective and its interrupted beginning remain recognizable; the player guesses its working-class sense and Alexander retracts into a polite compliment. The macOS and Windows spelling difference in environment has no effect on the common Polish meaning.",
+      "mapping": "Keep each Yarn line and option ID, its original instruction and branch destination. Replace display text only; retain the exact <i><size=70%> markup in the confused option. No texture or input-key change.",
+      "positive": "e5d47feb leads to the guess and apology; 8512365e leads to thanks and public-access remark, before convergence.",
+      "negative": "Reject a confused fragment unrelated to proletariackie, a missing working-class guess, swapped IDs or altered markup.",
+      "editorial": "author self-reviewed against both source variants and all seven lines",
+      "adapter": "existing ID-keyed Yarn display mapping; Polish synthetic dialogue/choice renderer probe passed",
+      "structural": "source-bound dialogue_locale.read_locale accepted each exact ID, source and target on both builds; branch identity retained in source, runtime verification pending",
+      "runtimeVisual": "not run for authored wording"
+    },
+    {
+      "id": "alexander-teacher-professor-correction",
+      "wording": {
+        "yarn:line:9aa97614": "Proszę się pospieszyć, studenci sami się nie nauczą.",
+        "yarn:line:393c128a": "Nigdy nie zdarzyło mi się myć smoka nauczyciela... Wow.",
+        "yarn:line:155d1c64": "Dobrze, otworzę bramę!",
+        "yarn:line:af0c15fd": "Profesora... Ale tak. Zwykle nie korzystam z publicznych myjni.",
+        "yarn:line:836d1b13": "Dziękuję.",
+        "yarn:line:1270a483": "A, i przepraszam, że jestem taki potwornie brudny."
+      },
+      "decision": "The player calls him a teacher; Alexander interrupts to correct the title to professor, then resumes. The alternate gate offer receives thanks. The correction is inflected to complete the player's Polish sentence.",
+      "mapping": "Keep the six Yarn line and option IDs, original branch destinations and common continuation; replace display text only. No texture or input-key change.",
+      "positive": "393c128a produces the professor correction; 155d1c64 produces thanks; both reach the shared apology.",
+      "negative": "Reject calling Alexander a professor in the teacher option or swapping the two response paths.",
+      "editorial": "author self-reviewed against both source variants and all six lines",
+      "adapter": "existing ID-keyed Yarn display mapping; Polish synthetic dialogue/choice renderer probe passed",
+      "structural": "source-bound dialogue_locale.read_locale accepted each exact ID, source and target on both builds; branch identity retained in source, runtime verification pending",
+      "runtimeVisual": "not run for authored wording"
+    }
+  ]
+}
