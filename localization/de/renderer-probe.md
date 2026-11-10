@@ -1,0 +1,24 @@
+# German synthetic renderer probe
+
+2026-11-10. Early feasibility only; `de` synthetic samples, not authored game translation. Original supported macOS and Windows data are bound by the v42 worklist. Windows ran through CrossOver, not native Windows. Runtime lock was held from preparation to verified exit. Test identity `DEB3` on macOS and `DEW3` in an isolated Windows bottle; no original owner game was operated or stopped. Source-bound scripts, logs, originals and prepared previews are under `localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/`.
+
+The stock table path and settings adapters produced `de` inputs with two body strings, three choice strings and three settings labels. TMP emitted the expected German sample glyphs at the live 64, 40, 36 and settings point sizes on both builds, including Ä, Ö, Ü, ö, ü and ß. The three choices were actually clicked, and `Conrad_Intro_3` and its dialogue completion callbacks fired on both builds. The observer stopped at `WaitingOnIntroDialogue`; progression to the next game state has **not** been shown by this German test. Lowercase ä and full final corpus coverage have not been exercised by this sample; remain final font checks. The result labels say Cyrillic because the reused observers have historical literal labels; `VN-EU-TEXT` logs identify the actual German sample strings and glyph codes.
+
+Paired observer receipts SHA-256: macOS dialogue `2e14d8d1e05dafd3c9584533423dc2a72f3bb34f212ede3279bf750c2a06a86e`, CrossOver dialogue `8d85b1d2c8dea10797cd9be8cb24e858be2e5cae5e0129e7814b9052aa3b95d2`; settings `bf49a85b84d8226720e8fcd1e33d07a256fcdb560a50f693e4d46366aa789a85` and `f07d52de25625b206319799d4463548fc7f4702e0db990ab8c249419deac762d`; visual runs `f071cc1f27838508b4beb85f86c85dc8876e13504545f26c45ed10ba1cab2323` and `742affe2d940fa60f925db15bc0e3be541afbc69851af084fb9916204de60848`. All recorded no foreground window and unchanged checked original profiles; fixture hashes matched and the macOS bundle passed strict signature verification after exit. Logs: macOS `362f90e75927a221daae8cb1427f6c19aa7df7b10cdea3554892986b08e1fda8`, Windows `f2472084f0f4b32385a09d479de8a94ba0433dd11eb330a4fef500bc93d049d5`.
+
+The first Windows observer refused the wrong fixture before launch. A second attempt launched a private copy but the helper lacked its working-directory fixture; the exact German test PID was stopped, its log and receipt retained in `win/attempt1/`, and the corrected fixture run succeeded. The original data/profile snapshot matched after both attempts. The first macOS asset used two unintended older samples; a new source-bound asset corrected these before launch.
+
+## Representative offscreen review
+
+Original PNGs were retained. All review inputs were generated with `screenshot_preview.py`, WebP quality 80, longest edge no more than 1280, no upscaling. The following representative frames were read; other captured diagnostic frames have not been individually reviewed and are not claimed as passed. These offscreen camera routes can differ from the normal display. None establishes final localized layout.
+
+| Platform and surface | PNG SHA-256 | Reviewed WebP SHA-256 | Observation |
+| --- | --- | --- | --- |
+| macOS settings 640×480 | `1c969faf4f06e9d06ff8c61590dfdcfb4304d79377e95ae9251e528f708e1dc2` | `4ca382ae25ed1b249b8e1a21754594dc582c005ed2dc1513442418f2a0d0a20f` | Three samples fit their labels without visible clipping. |
+| macOS body 640×480 | `3b42d643a25fb8eb9b22fab6a6955443113008a45eeca61898df7493ca896c61` | `6a3abbbdfb1341b47e2cf64546357049ed4ccbdb081c331face4b706a3efdce8` | Large sample fits the dialogue panel; umlauts and ß visible. |
+| macOS choice 640×480 | `64f93542b80290e7d60c90d73ec2e2b26a557c54033af1647d5ee8124e5f3941` | `73ce0dfcd8e40071a76283ebbcd0efb9182b82fb60abb289fb7e77874071ba6e` | Sample fits choice panel; unselected text is gray. |
+| CrossOver settings 1024×768 | `82e0e0f8748f39ae2703470899678dce43afa037c959ec0a7d95352e6032f48b` | `1a5795139263b7a75dc0a82f5d34d3fd55495fd1c5a3c9d7321c7f5eebbfef69` | Three labels fit without visible clipping. |
+| CrossOver body 1074×543 | `60c71b6d5e1a674b0e8bd90e0050cf6bfd236e08cba91d6dcb4b55675c9b9db8` | `2b054c825b4e5c34cfd1598866d373e633533e04c561a8579fea1b64c6cb6831` | Sample fits dialogue panel. |
+| CrossOver choice 1074×543 | `763ac7ddd01d6018071cc29c4f7b4be63c9377ed40e2b3e8bd1c6f9e98aabac3` | `8e2d75553544ebd74ae91d9257c018ed82eabc69d548c6095b714dc3f3cbbb69` | Sample fits choice panel. |
+
+Next: under the cooperative runtime lock, extend the existing companion's post-dialogue control through the stock gate and confirm the next state on both isolated players. Do not infer it from `VN-EU-DIALOGUE-PASS`. Then finalize the early gate and settle the 27 locale decisions before ordinary translation. Native Windows, final strings, longer layout, remaining captures and packaged artifact tests remain separate.
