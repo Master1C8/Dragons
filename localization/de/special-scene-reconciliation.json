@@ -1,9 +1,9 @@
 {
   "worklistSha256": "9ee266ffbc4643e5b269b75ca03edfb763f1178d3803aa65b627d487c2b0535a",
-  "translationSha256": "78e75b0428d35068e3ed667946cf0b1f252bcd4492d834b8beaadc80bf1fdd3d",
+  "translationSha256": "89c1eb0be79baaed1ea1024e285d99c017024a978cfc2ac267887f65c1d46bc9",
   "verifiedRegistryAndSourceBindings": 13,
   "caseCount": 27,
-  "authoredRows": 1256,
+  "authoredRows": 1294,
   "note": "All direct authoring rows and Yip contexts are drafted. The Ryan/Conrad root choices, captions and immediate feedback are drafted; the forward route index includes ordinary later story nodes, whose translation and final branch/runtime checks remain pending.",
   "cases": {
     "alexander-number-seven-taste": {
