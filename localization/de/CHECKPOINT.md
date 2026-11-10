@@ -11,10 +11,16 @@
 | translate-edit | **Draft complete: 1,947/1,947 IDs authored and self-edited.** All 246 direct indexed authoring rows are present and the adaptation entry review is complete; semantic and runtime closure remain pending. See `special-scenes.md` and `special-scene-reconciliation.json`. No source-passthrough counts as translation. |
 | editorial | Author semantic self-review read all 1,947/1,947 source-bound rows; source ambiguity, cross-group closure and independent diff/delta audit remain pending. |
 | resources | Final corpus-bound glyph coverage and fit pending. Textures with text are excluded and must remain untouched. |
-| package | Not built; macOS app and Windows ZIP read-back pending. |
+| package | Provisional macOS app and Windows ZIP built with adapter and protected-component checks; independent fresh-rebuild comparison pending. See the package receipt. |
 | runtime / visual | Representative synthetic German checks passed on macOS and Windows CrossOver; final corpus and package runtime, complete visual review and native Windows remain unrun. Original owner game processes must not be operated or stopped. |
 | screenshot-upload / screenshot-review | Not run; upload is not authorized. |
 | delivery | Incomplete. No installation, release or publication. |
+
+## 2026-11-10 correction closure and provisional packages
+
+The two author-review corrections are compared with the complete pre-review draft at commit `c1f0b4213a2537a698c1f8b9a3c24b91ba7d977d`. `receipts/semantic-delta-recipe-01.json` binds their whole containing scenes, seven crest and four medkit references; `receipts/semantic-delta-01.json` contains the reproducible ordered 437-ID closure, component lists, hashes, protected context and review rows. The export additionally selects project regressions including non-Yarn and markup. It is prepared evidence, not a clean independent review; selector completeness and the mandatory regression review still require adjudication. Export SHA-256 `97770eb10693a35b5e4282612588dd73fcf54c03b3ad81c5f65337d6d67711a0`. Baseline bytes are recoverable using `git show c1f0b4213a2537a698c1f8b9a3c24b91ba7d977d:localization/de/translation.json`, SHA-256 `faf8ea606a101ea6fcb535123be95e0a61fe20bb9701d4ddd018951bbd62781d`.
+
+Both provisional package candidates built from the current translation under the cooperative runtime lock; see `receipts/package-candidates-01.json` for paths, fingerprints and exact reproduction script. The macOS signature verifies; the Windows ZIP was read back by its builder. Source-bound protected component checks reported 10,973 macOS and 10,936 Windows fields. These are provisional artifacts, not independent fresh-rebuild verification, gameplay, visual or editorial acceptance. The fresh-rebuild verifier first returned exit 75 because a live Polish runtime held the lock (owner PID 95437); the owner and lock were untouched. Retry the task-owned `resume-06/verify-candidates.sh` only after checking lock ownership and free space. The initial failed attempt created no verification temporary directory. Preserve the existing candidates and other lanes.
 
 ## 2026-11-10 semantic author review: remaining scenes and UI
 
@@ -57,7 +63,7 @@ The pinned `verify_authored_yarn.py` passed; both stock builds' partial Yarn ass
 
 ## Resume
 
-Use the accepted source-readiness receipt and the 27-case reconciliation. Continue semantic author self-review from zero-based worklist row 1035, read back both builds after text corrections, and maintain distinct editorial, package and runtime statuses. The author self-review layers and owner-approved nickname remain valid; the final independent game-text audit is pending. Coordinate large assets and isolated runtime with the exact cooperative runtime lock. Acquire the canonical Git lock before staging, and hold it through full index review, commit and committed-tree verification.
+Use the accepted source-readiness receipt and the 27-case reconciliation. Resolve the recorded English source ambiguity, review the dependency closure and obtain the separate independent audit; maintain distinct editorial, package and runtime statuses. The author self-review layers and owner-approved nickname remain valid; the final independent game-text audit is pending. Coordinate large assets and isolated runtime with the exact cooperative runtime lock. Acquire the canonical Git lock before staging, and hold it through full index review, commit and committed-tree verification.
 
 ## 2026-11-10 remaining dialogue interactions
 

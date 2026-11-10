@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "locale": "de",
+  "beforeSha256": "faf8ea606a101ea6fcb535123be95e0a61fe20bb9701d4ddd018951bbd62781d",
+  "afterSha256": "17cd7c687560565daf6640d0c31fc6f9791453f069686d31fef81da3074af9b2",
+  "edits": {
+    "yarn:line:159a1d54": {
+      "sceneSpans": [
+        {
+          "node": "Alexander_Outro",
+          "firstInstruction": 4,
+          "lastInstruction": 36
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:a5979ac9",
+        "yarn:line:159a1d54",
+        "yarn:line:a5a8a9d5",
+        "yarn:line:1ff9a04c",
+        "yarn:line:18d418ab",
+        "yarn:line:8ee41fdc",
+        "yarn:line:c56ee060"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Correct ornamental head crest term; include all English crest uses and containing scene."
+    },
+    "yarn:line:de25dacd": {
+      "sceneSpans": [
+        {
+          "node": "Conrad_Intro_2",
+          "firstInstruction": 4,
+          "lastInstruction": 50
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:c0cc0f2d",
+        "yarn:line:63596bb3",
+        "yarn:line:de25dacd",
+        "yarn:line:0de4fe62"
+      ],
+      "runtimeSourceIds": [],
+      "reason": "Repair reply to whether Conrad is okay; include medkit uses and containing scene."
+    }
+  }
+}
