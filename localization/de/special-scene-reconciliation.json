@@ -1,9 +1,9 @@
 {
   "worklistSha256": "9ee266ffbc4643e5b269b75ca03edfb763f1178d3803aa65b627d487c2b0535a",
-  "translationSha256": "bb2441fd3de76a9ce76c551d7753587c98d70ffce582b9d2de38301b61e675e6",
+  "translationSha256": "0d6cc8494ed69bbd790d3c61e712aa26a57096264959f997ce78179e1621c77f",
   "verifiedRegistryAndSourceBindings": 13,
   "caseCount": 27,
-  "authoredRows": 502,
+  "authoredRows": 538,
   "note": "Context rows are a source index, not proof that every listed line is an adaptation dependency. Remaining cases require in-context adjudication.",
   "cases": {
     "alexander-number-seven-taste": {
@@ -111,7 +111,6 @@
         "Conrad_4_Ryan_Conrad_Romanced": 14,
         "Conrad_5_intro_conrad_romanced": 18,
         "Conrad_5_intro_ryan_conrad_romanced": 14,
-        "Conrad_5_intro_ryan_romanced": 12,
         "Conrad_5_outro_conrad_romanced": 9,
         "Conrad_5_outro_ryan_conrad_romanced": 9,
         "Conrad_5_required_conrad_romanced": 14,
@@ -174,10 +173,7 @@
       "registry": "localization/evidence/special-scenes-typography-20261110.json",
       "directAuthoringRows": 2,
       "directNonAuthoringIds": [],
-      "unauthoredIndexedContextByGroup": {
-        "Conrad_5_intro_ryan_romanced": 12,
-        "Conrad_Intro_1": 4
-      }
+      "unauthoredIndexedContextByGroup": {}
     },
     "conrad-scales-aside": {
       "registry": "localization/evidence/special-scenes-typography-20261110.json",
@@ -201,7 +197,6 @@
         "Alexander_1_Outro": 5,
         "Alexander_3_Outro": 9,
         "Alexander_3_required": 20,
-        "Alexander_4_intro": 20,
         "RyanMuddy_Intro": 12,
         "Ryan_1_Outro": 10,
         "Ryan_1_intro": 16,
