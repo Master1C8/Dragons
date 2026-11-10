@@ -564,3 +564,50 @@ Source case `yarn-alexander-question-once-state`, node `Alexander_questions`. Th
 | `3398aea2` | Grazie per questo. |
 
 Preserve all seven `$Yarn.Internal.Once.line:<ID>` values, original option IDs, destinations and writes from `special-scenes-pending-20261107.json`; the fresh-state and repeated-selection checks in the earlier section apply. Positive: each permitted option follows its matching response and disappears only according to its own stock once-state. Negative: merge repeated IDs, swap responses or alter a flag or destination. Both paired source bindings were checked; existing text and choice adapters supply bounded feasibility. Actual state execution, package validation and visual fit are pending.
+
+### `ryan-conrad-romance-routing` — Conrad entry scene (partial; case remains open)
+
+The `Conrad_Outro_3` entry and its two distinct branches are prepared below. Ryan's introduction **unlocks** the Conrad/Ryan encounter or Ryan romance; the other choice **unlocks** Conrad romance. These labels do not promise a lock-in yet. The source's gold-gradient, bold and size tags remain in the same order, including the unclosed size tag where present. Gender-neutral player wording avoids inventing the player's gender. IDs are `yarn:line:` suffixes; the paired English differs only in the apostrophe in “That’s”/“Thats” at `266836f8`, without a meaning change. This is one bounded unit, not closure of the 686-ID conservative downstream reachability set.
+
+| ID | Italian target |
+|---|---|
+| `d376acb9` | Ehi, senti. Stavo pensando... |
+| `4546abce` | Forse è un po' strano chiederlo adesso. Peròòò... |
+| `a0cf6cae` | Conosci qualche bel posto o qualche persona in gamba con cui potrei passare del tempo? |
+| `36ff6bd9` | <gradient="gold"><b> Conosco un drago, Ryan. Potrei mettervi in contatto? </b></gradient><size=70%>(Sblocca l'incontro tra Conrad e Ryan OPPURE la storia con Ryan) |
+| `7e9d40e6` | <gradient="gold"><b> A me piacerebbe passare del tempo con te... </b></gradient><size=70%> (Sblocca la storia con Conrad) |
+| `8cae6240` | Un altro drago? Di solito non vado molto d'accordo... |
+| `1a9e6537` | Oh, no. Ryan è un tesoro. |
+| `b90b01a9` | Non preoccuparti, è davvero simpatico. |
+| `2f3b06de` | Va bene. Allora credo che mi piacerebbe provare. |
+| `956a0f47` | Glielo chiederò la prossima volta che lo vedo. |
+| `9247b7a0` | Credo che gli piacerà il nuovo te! |
+| `035a0830` | Grazie. Mi farebbe davvero piacere. |
+| `0477b0d7` | Lo spero. Vorrei davvero ricominciare con qualcuno. |
+| `67592de1` | Però forse è meglio che vada. |
+| `f1692a96` | Grazie del suggerimento! |
+| `4b38230f` | Non c'è di che. Vado ad aprire il cancello. |
+| `dd082478` | Ma certo. |
+| `e8ad4791` | Ooooh. |
+| `52fc4e08` | Credo che mi piacerebbe! |
+| `c4cc497f` | Sei proprio attraente. |
+| `55d1f6ef` | ...e anche gentile. |
+| `c3e1f198` | Yip! |
+| `9c393f61` | Anche tu sei speciale per me. |
+| `266836f8` | È... la prima volta che fai yip per me. |
+| `b058318f` | In coboldo significa che stai facendo un buon lavoro. |
+| `0a093816` | Oh... ah. Mi piace. |
+| `3fac5bff` | Mi fa piacere sentirlo. |
+| `a99c5c88` | Allora. Che ne dici di un appuntamento? |
+| `13cd5511` | È presto... Ma credo di sì! |
+| `85fd5266` | Sì. |
+| `14e0edf6` | Credo che mi piacerebbe provare! |
+| `82d0ea81` | Va bene! Allora tornerò più tardi. |
+| `e53b1bd3` | <size=70%><i> cazzo, ho appena rimediato un appuntamento con un drago. |
+| `fcff76d4` | Sì! Vado ad aprire il cancello. |
+| `730b1ca4` | Mh? |
+| `c95a153d` | Oh! Niente. Vado ad aprire il cancello. |
+| `5f6a124a` | Oh, va bene. Grazie. |
+| `6acf71a3` | Va bene, grazie. |
+
+Positive review: the introduction and direct date choices remain distinct and preserve their later possibilities; the joke about the first yip stays intact. Negative review: do not turn either unlock into a final commitment, exchange choices/destinations, change source flags, close or rebalance source markup, or assign a gender to the player. The other entry scene and actual routing outcomes remain to be reviewed. Fit and branch behavior in final packages remain unverified.
