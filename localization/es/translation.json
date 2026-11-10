@@ -1253,8 +1253,8 @@
     "yarn:line:b588bf4c": "¡Gracias!",
     "yarn:line:a99c515c": {
       "platforms": {
-        "macos": "Hola, <i>'Drag'n wash franchise 223'...</i> ¿Ya has hablado con tu primer cliente?",
-        "windows": "Hola, <i>'Drag'n'wash franchise 223'...</i> ¿Ya has hablado con tu primer cliente?"
+        "macos": "Hola, <i>'Drag'n wash, franquicia 223'...</i> ¿Ya has hablado con tu primer cliente?",
+        "windows": "Hola, <i>'Drag'n'wash, franquicia 223'...</i> ¿Ya has hablado con tu primer cliente?"
       }
     },
     "yarn:line:ce77a00e": "¡Acabo de hacerlo!",
@@ -1264,8 +1264,8 @@
     "yarn:line:d7b3cd09": "Entonces... Que tengas un día productivo.",
     "yarn:line:4183ca7e": {
       "platforms": {
-        "macos": "Hola, <i>'Drag'n wash franchise 223'...</i> ¿Ya has descubierto cómo interactuar?",
-        "windows": "Hola, <i>'Drag'n'wash franchise 223'...</i> ¿Ya has descubierto cómo interactuar?"
+        "macos": "Hola, <i>'Drag'n wash, franquicia 223'...</i> ¿Ya has descubierto cómo interactuar?",
+        "windows": "Hola, <i>'Drag'n'wash, franquicia 223'...</i> ¿Ya has descubierto cómo interactuar?"
       }
     },
     "yarn:line:fbd2c3e7": "No.",
@@ -1305,16 +1305,16 @@
     "yarn:line:0d16ab28": "Vale, esperaré. Gracias.",
     "yarn:line:71b651dd": "¡Eh, tengo algo que decirte!",
     "yarn:line:e78656aa": "Si pudieras acercarte a donde pueda verte.",
-    "yarn:line:c9e7bb1e": "Así que eres un lavador de dragones titulado, ¿eh?",
+    "yarn:line:c9e7bb1e": "Así que tienes un certificado para lavar dragones, ¿eh?",
     "yarn:line:5fd7bc69": "¡Sí!",
     "yarn:line:c70bea2d": "¡Aunque solo llevo unas semanas limpiando!",
     "yarn:line:eb6ae4c3": "¡Ah, qué bien!",
     "yarn:line:7d5ae3b4": "Yo suelo apañarme con un manguerazo en casa...",
-    "yarn:line:513bed5a": "¡Ah, así que esto es nuevo para los dos!",
+    "yarn:line:513bed5a": "¡Ah, así que para ti y para mí es algo nuevo!",
     "yarn:line:f2ae89c4": "La verdad, me sorprende lo agradable que es.",
     "yarn:line:649e8eb3": "Es un buen descanso de todo lo que hay ahí fuera.",
     "yarn:line:decf872a": "...",
-    "yarn:line:797ca540": "Muy bien. Ya estás limpio.",
+    "yarn:line:797ca540": "Muy bien. Ya estoy limpio.",
     "yarn:line:e8611ad0": "Siento haberte soltado todo eso antes.",
     "yarn:line:7e511da7": "¡No pasa nada!",
     "yarn:line:83c55e2e": "Sé que las cosas pueden ser difíciles.",
@@ -1323,12 +1323,12 @@
     "yarn:line:afa450c0": "Vuelve cuando quieras, Ryan.",
     "yarn:line:9a013329": "Si quieres seguir hablando de ello, tengo un rato.",
     "yarn:line:0c31345e": "Lo haré, gracias.",
-    "yarn:line:20503ab0": "¿Seguro? No es que sea... algo divertido.",
+    "yarn:line:20503ab0": "¿De verdad? No es que sea... algo divertido.",
     "yarn:line:b6603dc7": "Tienes razón. No debería entrometerme.",
     "yarn:line:b14d8520": "No pasa nada, parece que necesitas hablar.",
     "yarn:line:277d8257": "No te preocupes. Gracias.",
     "yarn:line:54c44240": "Sí, tienes razón.",
-    "yarn:line:c2f44537": "Verás. Mi novia había llegado a casa antes que yo. Es una dragona que trabaja desde casa.",
+    "yarn:line:c2f44537": "Verás. Mi novia estaba en casa antes de que yo llegara. Es una dragona que trabaja desde casa.",
     "yarn:line:78a54cae": "Volví a casa un poco sucio. Y me gritó.",
     "yarn:line:ee954bd9": "Me dijo que fuera a un lavadero y se mostró muy ofendida.",
     "yarn:line:4d002f47": "Le molestó... <i>muchísimo</i> que estuviera embarrado.",
