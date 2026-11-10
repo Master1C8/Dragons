@@ -363,6 +363,37 @@
     "settings:WindowMode:option:2": "Zmaksymalizowane okno",
     "settings:WindowMode:option:3": "W oknie",
     "display:speaker-ryan": "Ryan",
-    "display:speaker-conrad": "Conrad"
+    "display:speaker-conrad": "Conrad",
+    "yarn:line:fa97376e": "Pomagałem alchemikowi sięgnąć do wysokiej półki.",
+    "yarn:line:9d7cc63c": "Usłyszałem głośny huk. Nie sądzę, żeby Igwix to przeżył.",
+    "yarn:line:fd68807c": "Muszę przyznać, że wykonujesz swoją pracę równie dobrze jak osoby, które myją mnie prywatnie.",
+    "yarn:line:729cea0c": "Mhm, zawsze daję z siebie wszystko.",
+    "yarn:line:e4aced7b": "Moi studenci mogliby się od ciebie nauczyć etyki pracy!",
+    "yarn:line:75b152eb": "Chętnie bym jeszcze porozmawiał, naprawdę, ale wkrótce mam zajęcia.",
+    "yarn:line:e381559c": "...Dziękuję za to.",
+    "yarn:line:a2ba222e": "Dobry wieczór. Przyjmujecie bez umawiania, prawda?",
+    "yarn:line:33a79dbe": "Tak! Jest pan... z uczelni...?",
+    "yarn:line:b6c878fa": "Tak!",
+    "yarn:line:a5979ac9": "Zgadza się, zapewne rozpoznajesz mój rodowy grzebień! Uczę alchemii.",
+    "yarn:line:20f87f8d": "...A zajęcia zaczynają mi się już niedługo.",
+    "yarn:line:0c997163": "Doskonale.",
+    "yarn:line:8440a3f4": {
+      "text": "Znalazłem się w doprawdy opłakanym stanie...",
+      "sharedAcrossSourceVariants": true
+    },
+    "yarn:line:61c96494": "Nie jest pan... aż taki brudny.",
+    "yarn:line:ee3d0ee4": "Nie ma problemu. Już otwieram bramę!",
+    "yarn:line:f7f963e3": "Ależ jestem.",
+    "yarn:line:4da86a7a": "...",
+    "yarn:line:db986d0d": "Możesz otworzyć bramę?",
+    "yarn:line:780d0993": "Och. Tak. Przepraszam.",
+    "yarn:line:c7b73162": "Psst..!",
+    "yarn:line:7de638fb": "Eee... Halo?",
+    "yarn:line:ebd63f8c": "Kto tam?",
+    "yarn:line:48435b12": "Ciii! Nie jestem stąd...",
+    "yarn:line:de735c65": "Czy macie teraz otwarte?",
+    "yarn:line:642255fc": "Oczywiście!",
+    "yarn:line:f212528b": "Uff! Miałem wypadek, którym trzeba się zająć... dyskretnie.",
+    "yarn:line:630fed1b": "Natychmiast usuń tę przeszkodę, abym mógł wejść."
   }
 }
