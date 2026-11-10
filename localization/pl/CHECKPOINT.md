@@ -281,3 +281,9 @@ Author self-reviewed 27 IDs in the source `Start` and `ErrorHasOccurred` groups,
 Author self-reviewed 34 additional IDs across `RyanMuddy_Intro`, `RyanMuddy_Outro`, `RyanMuddy_SmallTalk`, `RyanMuddy_Dirty` and `RyanMuddy_Soapy`, retaining the settled Yip line, three response options, and sprayer terminology. This is author self-review, not independent audit.
 
 `translation.json` now has **1,007 / 1,947 IDs**, SHA-256 `eb711e079f723468cec4a026ac8dab9972194e84572d98a22ecc2fd8fe0e0829`. `resume-01/add-ryan-muddy-main.py` and `resume-01/ryan-muddy-main-map.py` validate the preceding draft and paired readers; macOS accepts 1,007 and Windows 1,001 bindings. The complete guard reports 940 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue with the remaining muddy Ryan prompts and other English-source groups.
+
+### Muddy Ryan: idle and prompts — continuation
+
+Author self-reviewed 22 remaining IDs in the `RyanMuddy` idle, approach and touch groups. The reference to Max retains the source's unspecified grammatical gender, and the wash instructions remain consistent with the main encounter. This is author self-review, not independent audit.
+
+`translation.json` now has **1,029 / 1,947 IDs**, SHA-256 `c33ae8dc641631529f5abcbe8169281a64b09360823ae2c609f43978916206e9`. `resume-01/add-ryan-muddy-idle.py` and `resume-01/ryan-muddy-idle-map.py` validate the preceding draft and paired readers; macOS accepts 1,029 and Windows 1,023 bindings. The complete guard reports 918 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
