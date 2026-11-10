@@ -116,7 +116,8 @@ struct InstallerCore {
 
     func detectSteamInstallation(
         appID: String,
-        steamRoot: URL? = nil
+        steamRoot: URL? = nil,
+        accepts: (GameInstallation) -> Bool = { _ in true }
     ) -> GameInstallation? {
         let root = steamRoot ?? fileManager.homeDirectoryForCurrentUser.appendingPathComponent(
             "Library/Application Support/Steam",
@@ -129,7 +130,7 @@ struct InstallerCore {
             let gameRoot = steamApps.appendingPathComponent("common", isDirectory: true)
                 .appendingPathComponent(manifest.installDirectory, isDirectory: true)
             guard let bundle = resolveGameBundle(gameRoot) else { continue }
-            return GameInstallation(
+            let installation = GameInstallation(
                 root: bundle.root,
                 appBundle: bundle.appBundle,
                 dataDirectory: bundle.dataDirectory,
@@ -137,6 +138,47 @@ struct InstallerCore {
                 steamBuildID: manifest.buildID,
                 steamManifest: manifest.url
             )
+            if accepts(installation) { return installation }
+        }
+        return nil
+    }
+
+    func detectInstallation(config: PackageConfig, searchRoots: [URL]? = nil) -> GameInstallation? {
+        func matches(_ installation: GameInstallation) -> Bool {
+            config.anchors.allSatisfy { name, expected in
+                let file = installation.dataDirectory.appendingPathComponent(name)
+                return (try? Self.sha256(of: file)) == expected
+            }
+        }
+
+        if searchRoots == nil,
+           let steam = detectSteamInstallation(appID: config.steamAppID, accepts: matches) {
+            return steam
+        }
+        var pending = searchRoots ?? [fileManager.homeDirectoryForCurrentUser] +
+            (fileManager.mountedVolumeURLs(includingResourceValuesForKeys: nil, options: [.skipHiddenVolumes]) ?? [])
+        var index = 0
+        var visited = Set<URL>()
+        let deadline = ContinuousClock.now + .seconds(15)
+        let keys: Set<URLResourceKey> = [.isDirectoryKey, .isSymbolicLinkKey, .isPackageKey]
+        while index < pending.count && ContinuousClock.now < deadline {
+            let candidate = pending[index].standardizedFileURL
+            index += 1
+            guard visited.insert(candidate).inserted,
+                  let values = try? candidate.resourceValues(forKeys: keys),
+                  values.isDirectory == true, values.isSymbolicLink != true else { continue }
+            if candidate.pathExtension.lowercased() == "app" {
+                if let found = resolveInstallation(candidate, appID: config.steamAppID), matches(found) {
+                    return found
+                }
+                continue
+            }
+            guard values.isPackage != true else { continue }
+            if let children = try? fileManager.contentsOfDirectory(
+                at: candidate, includingPropertiesForKeys: Array(keys), options: [.skipsHiddenFiles]
+            ) {
+                pending.append(contentsOf: children.filter { (try? $0.resourceValues(forKeys: keys).isDirectory) == true })
+            }
         }
         return nil
     }
@@ -177,6 +219,11 @@ struct InstallerCore {
     )? {
         let standardized = selectedURL.standardizedFileURL
         var appCandidates = [standardized]
+        if standardized.lastPathComponent == Self.executableName,
+           standardized.deletingLastPathComponent().lastPathComponent == "MacOS" {
+            appCandidates.append(standardized.deletingLastPathComponent()
+                .deletingLastPathComponent().deletingLastPathComponent())
+        }
         appCandidates += Self.appNames.map { standardized.appendingPathComponent($0, isDirectory: true) }
 
         if standardized.lastPathComponent == "Data" {

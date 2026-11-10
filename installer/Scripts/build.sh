@@ -83,7 +83,7 @@ magick "$work/windows-build/Game.png" -define icon:auto-resize=256,128,64,48,32,
 )
 x86_64-w64-mingw32-gcc -std=c11 -O2 -Wall -Wextra -Werror -municode -mwindows \
   -I "$work/windows-build" "$project/Windows/DragonsInstaller.c" "$work/windows-build/InstallerResources.o" \
-  -o "$win/Dragons Installer.exe" -lcomctl32 -lshell32 -lole32
+  -o "$win/Dragons Installer.exe" -lcomctl32 -lcomdlg32 -lshell32 -lole32
 (cd "$dist" && zip -qr "$archive" 'Dragons Windows')
 ditto -c -k --sequesterRsrc --keepParent "$app" "$mac_archive"
 du -sh "$app" "$archive" "$mac_archive"

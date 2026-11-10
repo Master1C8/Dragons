@@ -1,5 +1,6 @@
 import AppKit
 import Foundation
+import UniformTypeIdentifiers
 
 enum InstallerPhase: Equatable {
     case choosingLanguage
@@ -64,7 +65,9 @@ final class AppState: ObservableObject {
             return fail(loadError?.localizedDescription ?? copy.installationErrorMessage)
         }
         if installation == nil {
-            installation = core.detectSteamInstallation(appID: config.steamAppID)
+            installation = await Task.detached(priority: .userInitiated) {
+                InstallerCore().detectInstallation(config: config)
+            }.value
         }
         guard let installation else { return fail(copy.gameNotFoundMessage) }
         guard config.payloadReady else { return fail(copy.payloadNotReadyMessage) }
@@ -112,7 +115,8 @@ final class AppState: ObservableObject {
         panel.message = copy.chooseGameMessage
         panel.prompt = copy.chooseGamePrompt
         panel.canChooseDirectories = true
-        panel.canChooseFiles = false
+        panel.canChooseFiles = true
+        panel.allowedContentTypes = [.applicationBundle, .unixExecutable]
         panel.allowsMultipleSelection = false
         guard panel.runModal() == .OK, let url = panel.url else { return }
         guard let config else {
@@ -196,17 +200,17 @@ extension InstallerCopy {
         selectLanguageMessage: "Choose the language to apply to the game.",
         languagePickerLabel: "Game Language",
         preparingMessage: "Preparing…",
-        findingGameMessage: "Looking for the Steam version of the game…",
-        gameNotFoundMessage: "The Steam version of the game was not found. Select its folder manually.",
+        findingGameMessage: "Looking for Drag’N Wash…",
+        gameNotFoundMessage: "No compatible copy of Drag’N Wash was found. Select the app or its folder.",
         chooseGameTitle: "Choose the Game",
         chooseGameMessage: "Select the game folder in steamapps/common or DragNWash.app.",
         chooseGamePrompt: "Choose",
         installingMessage: "Verifying and installing the selected VN Revival localization…",
         installedMessage: "Localization installed",
-        launchingMessage: "Launching the game through Steam…",
+        launchingMessage: "Launching the game…",
         steamFailedMessage: "Could not open Steam. Launch the game from your Steam library.",
         installationErrorMessage: "Installation did not complete.",
-        payloadNotReadyMessage: "The Steam version of the game was found, but the localization package is not ready to install.",
+        payloadNotReadyMessage: "The localization package is not ready to install.",
         installButton: "Install",
         changeLanguageButton: "Change Language",
         launchButton: "Launch Game",

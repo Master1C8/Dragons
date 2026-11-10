@@ -7,9 +7,12 @@ On Windows, extract the entire `Dragons-Windows.zip` and open
 **Dragons Installer.exe** inside the extracted folder.
 
 Choose one of the 30 bundled languages and select **Install**.
-The installer finds the Steam installation when possible. If discovery
-fails, use **Choose Game…** to select the existing game folder. Close the
-game before installing or changing a language.
+The installer checks Steam registrations, then searches accessible
+directories on mounted volumes for the game executable. If automatic
+search times out or finds no compatible copy, use **Choose Game…** to
+select `DragNWash.exe` on Windows or the game app on macOS.
+Compatibility depends on the game's files. Close the game before
+installing or changing a language.
 
 After a successful install, the installer requests launch through Steam
 for a registered installation. A manually selected standalone copy

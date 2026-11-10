@@ -1021,5 +1021,10 @@ deliberately conflicting managed file. No game runtime checks were run for
 these installer builds. Russian and Ukrainian package dialogue was also
 read back against 1,823 authored values per locale on each platform.
 
-- `Dragons-macOS.zip` SHA-256 `245a3a8ed5ba957858eff1a6858a9ab01f2523b960fa21a96f730e437f5b06ee`
-- `Dragons-Windows.zip` SHA-256 `b3235dcd348a7f1a4773b879b1bee5c1371a7fa4422e33358d389b931e4d8d88`
+- `Dragons-macOS.zip` SHA-256 `29b01a4b702156f2b34dbf5a008a0fa4660183d0cba5dacd21543ddf95733e8f`
+- `Dragons-Windows.zip` SHA-256 `6ebeaf8202e2d130b8dd98498f512e27b5de9480d9f050b917ec7572b6607e9f`
+
+Standalone discovery now searches accessible directories on mounted volumes
+after Steam discovery. The recursive search has a 15-second budget and
+falls back to manual file selection. Discovery checks passed against a
+renamed nested macOS app and a nested Windows fixture in Parallels.

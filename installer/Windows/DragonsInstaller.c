@@ -2,6 +2,7 @@
 
 #include <windows.h>
 #include <commctrl.h>
+#include <commdlg.h>
 #include <shellapi.h>
 #include <shlobj.h>
 #include <wchar.h>
@@ -157,7 +158,7 @@ static void paintInterface(HWND window) {
         DT_LEFT | DT_WORDBREAK | DT_NOPREFIX | DT_END_ELLIPSIS);
     RECT footer = {292, 460, 700, 490};
     drawTextLine(dc, smallFont, COLOR_MUTED,
-        L"Steam • Game version 1.01 • Installer interface: English", footer,
+        L"Game version 1.01 • Installer interface: English", footer,
         DT_LEFT | DT_SINGLELINE | DT_VCENTER);
     EndPaint(window, &paint);
 }
@@ -202,7 +203,7 @@ static void drawSecondaryButton(const DRAWITEMSTRUCT *item) {
     DeleteObject(pen);
     RECT textBounds = item->rcItem;
     if (item->itemState & ODS_SELECTED) OffsetRect(&textBounds, 0, 1);
-    drawTextLine(item->hDC, smallFont, COLOR_TEXT, L"Game folder…",
+    drawTextLine(item->hDC, smallFont, COLOR_TEXT, L"Choose game…",
         textBounds, DT_CENTER | DT_SINGLELINE | DT_VCENTER);
     if (item->itemState & ODS_FOCUS) {
         RECT focus = item->rcItem;
@@ -211,25 +212,20 @@ static void drawSecondaryButton(const DRAWITEMSTRUCT *item) {
     }
 }
 
-static void chooseGameFolder(HWND window) {
-    BROWSEINFOW browse = {0};
-    browse.hwndOwner = window;
-    browse.lpszTitle = L"Choose the Steam folder for Drag’N Wash";
-    browse.ulFlags = BIF_RETURNONLYFSDIRS | BIF_NEWDIALOGSTYLE;
-    LPITEMIDLIST item = SHBrowseForFolderW(&browse);
-    if (!item) return;
-    wchar_t path[MAX_PATH];
-    BOOL resolved = SHGetPathFromIDListW(item, path);
-    CoTaskMemFree(item);
-    if (!resolved) {
-        installState = STATE_ERROR;
-        wcscpy_s(statusMessage, 1024, L"The selected folder could not be read.");
-        InvalidateRect(window, NULL, FALSE);
-        return;
-    }
+static void chooseGameFile(HWND window) {
+    wchar_t path[MAX_PATH] = L"";
+    OPENFILENAMEW dialog = {0};
+    dialog.lStructSize = sizeof(dialog);
+    dialog.hwndOwner = window;
+    dialog.lpstrTitle = L"Choose DragNWash.exe";
+    dialog.lpstrFilter = L"Drag’N Wash (DragNWash.exe)\0DragNWash.exe\0";
+    dialog.lpstrFile = path;
+    dialog.nMaxFile = MAX_PATH;
+    dialog.Flags = OFN_FILEMUSTEXIST | OFN_PATHMUSTEXIST | OFN_NOCHANGEDIR;
+    if (!GetOpenFileNameW(&dialog)) return;
     wcsncpy_s(selectedGamePath, MAX_PATH, path, _TRUNCATE);
     installState = STATE_READY;
-    wcscpy_s(statusMessage, 1024, L"Game folder selected. Ready to install.");
+    wcscpy_s(statusMessage, 1024, L"Game selected. Ready to install.");
     InvalidateRect(window, NULL, FALSE);
 }
 
@@ -392,7 +388,7 @@ static LRESULT CALLBACK windowProcedure(HWND window, UINT message, WPARAM wParam
                 WS_CHILD | WS_VISIBLE | WS_TABSTOP | BS_OWNERDRAW,
                 450, 310, 218, 44, window, (HMENU)ID_INSTALL, NULL, NULL);
             setFont(installButton, bodyFont);
-            chooseGameButton = CreateWindowW(L"BUTTON", L"Game folder…",
+            chooseGameButton = CreateWindowW(L"BUTTON", L"Choose game…",
                 WS_CHILD | WS_VISIBLE | WS_TABSTOP | BS_OWNERDRAW,
                 320, 310, 116, 44, window, (HMENU)ID_CHOOSE_GAME, NULL, NULL);
             setFont(chooseGameButton, smallFont);
@@ -443,7 +439,7 @@ static LRESULT CALLBACK windowProcedure(HWND window, UINT message, WPARAM wParam
                 return 0;
             }
             if (LOWORD(wParam) == ID_CHOOSE_GAME && installState != STATE_WORKING) {
-                chooseGameFolder(window);
+                chooseGameFile(window);
                 return 0;
             }
             break;

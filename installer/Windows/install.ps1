@@ -97,7 +97,18 @@ function Get-SteamRoots([string]$Override) {
     return @($roots | Select-Object -Unique)
 }
 
-function Find-GameInstallation([string]$SelectedPath) {
+function Test-GameAnchors($Game, $Anchors) {
+    foreach ($anchor in $Anchors.PSObject.Properties) {
+        if ((Get-Sha256 (Join-Path $Game.DataRoot $anchor.Name)) -ne [string]$anchor.Value) { return $false }
+    }
+    return $true
+}
+
+function Find-GameInstallation([string]$SelectedPath, $Anchors, [string[]]$SearchRoots) {
+    if ($SelectedPath -and (Test-Path -LiteralPath $SelectedPath -PathType Leaf)) {
+        if ([IO.Path]::GetFileName($SelectedPath) -ne 'DragNWash.exe') { throw 'Select DragNWash.exe.' }
+        $SelectedPath = Split-Path -Parent $SelectedPath
+    }
     foreach ($steamRoot in Get-SteamRoots $SteamRootOverride) {
         $manifestPath = Join-Path $steamRoot "steamapps\appmanifest_$ExpectedAppId.acf"
         if (-not (Test-Path -LiteralPath $manifestPath -PathType Leaf)) { continue }
@@ -109,6 +120,7 @@ function Find-GameInstallation([string]$SelectedPath) {
         $installRoot = Join-Path $steamRoot ("steamapps\common\" + $installDir)
         $resolved = Resolve-GameRoot $installRoot
         if ($null -eq $resolved) { continue }
+        if ([string]::IsNullOrWhiteSpace($SelectedPath) -and -not (Test-GameAnchors $resolved $Anchors)) { continue }
         if (-not [string]::IsNullOrWhiteSpace($SelectedPath)) {
             $selected = [System.IO.Path]::GetFullPath($SelectedPath).TrimEnd('\')
             $allowed = @(
@@ -138,7 +150,33 @@ function Find-GameInstallation([string]$SelectedPath) {
         }
         throw 'Select a DragNWash game folder containing the executable.'
     }
-    throw 'The Steam version of Drag’N Wash was not found.'
+    if ($null -eq $SearchRoots) {
+        $SearchRoots = @([IO.DriveInfo]::GetDrives() | Where-Object {
+            $_.IsReady -and $_.DriveType -in @('Fixed','Removable')
+        } | ForEach-Object { $_.RootDirectory.FullName })
+    }
+    $pending = New-Object 'System.Collections.Generic.Queue[string]'
+    foreach ($root in $SearchRoots) { $pending.Enqueue($root) }
+    $timer = [Diagnostics.Stopwatch]::StartNew()
+    while ($pending.Count -gt 0 -and $timer.Elapsed.TotalSeconds -lt 15) {
+        $directory = $pending.Dequeue()
+        $exe = Join-Path $directory 'DragNWash.exe'
+        if (Test-Path -LiteralPath $exe -PathType Leaf) {
+            $resolved = Resolve-GameRoot $directory
+            if ($null -ne $resolved -and (Test-GameAnchors $resolved $Anchors)) {
+                return [pscustomobject]@{
+                    ManifestPath = $null; BuildId = 'content-pinned'
+                    GameRoot = $resolved.GameRoot; DataRoot = $resolved.DataRoot; Executable = $resolved.Executable
+                }
+            }
+        }
+        foreach ($child in (Get-ChildItem -LiteralPath $directory -Directory -ErrorAction SilentlyContinue)) {
+            if (-not ($child.Attributes -band [IO.FileAttributes]::ReparsePoint)) {
+                $pending.Enqueue($child.FullName)
+            }
+        }
+    }
+    throw 'No compatible copy of Drag’N Wash was found. Select DragNWash.exe.'
 }
 
 function Write-JsonFile($Value, [string]$Path) {
@@ -232,7 +270,7 @@ function Stage-PayloadFile($Item, [string]$PayloadRoot, [string]$BackupRoot, [st
 }
 
 try {
-    Write-Status 'WORKING' 'Finding the Steam installation…'
+    Write-Status 'WORKING' 'Finding Drag’N Wash…'
     $configPath = Join-Path $BaseDirectory 'Resources\PackageConfig.json'
     $payloadRoot = Join-Path $BaseDirectory 'Resources\LocalizationPayload'
     if (-not (Test-Path -LiteralPath $configPath -PathType Leaf)) { throw 'PackageConfig.json is missing.' }
@@ -258,7 +296,7 @@ try {
     $duplicatePaths = @($selectedFiles | Group-Object path | Where-Object { $_.Count -ne 1 })
     if ($duplicatePaths.Count -ne 0) { throw 'The localization package contains duplicate destination paths.' }
 
-    $installation = Find-GameInstallation $GamePath
+    $installation = Find-GameInstallation $GamePath $config.anchors
     $running = Get-Process -ErrorAction SilentlyContinue | Where-Object {
         try { $_.Path -and $_.Path.StartsWith($installation.GameRoot + '\', [System.StringComparison]::OrdinalIgnoreCase) }
         catch { $false }
