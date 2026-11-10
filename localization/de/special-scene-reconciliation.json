@@ -1,9 +1,9 @@
 {
   "worklistSha256": "9ee266ffbc4643e5b269b75ca03edfb763f1178d3803aa65b627d487c2b0535a",
-  "translationSha256": "b077c4213c6a645562a02a4d6d8e9f58841394ea608956babb54bda94e009771",
+  "translationSha256": "826ae3893e80e5b41a898cba14c460e31a2650e559f5082e3cb03280867b6b77",
   "verifiedRegistryAndSourceBindings": 13,
   "caseCount": 27,
-  "authoredRows": 1346,
+  "authoredRows": 1397,
   "note": "All direct authoring rows and Yip contexts are drafted. The Ryan/Conrad root choices, captions and immediate feedback are drafted; the forward route index includes ordinary later story nodes, whose translation and final branch/runtime checks remain pending.",
   "cases": {
     "alexander-number-seven-taste": {
@@ -122,9 +122,7 @@
         "Ryan_5_Outro_conrad_romanced": 14,
         "Ryan_5_Outro_ryan_conrad_romanced": 15,
         "Ryan_5_Outro_ryan_romanced": 13,
-        "Ryan_5_Required_ryan_conrad_romanced": 20,
-        "Ryan_5_intro": 45,
-        "Ryan_5_intro_ryan_romanced": 6
+        "Ryan_5_Required_ryan_conrad_romanced": 20
       }
     },
     "editor-route-prompt": {
