@@ -103,3 +103,11 @@ Compared the phone's mount delivery, Conrad's greeting and the separate Ryan int
 Finding pending disposition: `yarn:line:a0cf6cae` attaches `z którymi mógłbym spędzać czas` to both people and places, an awkward construction because spending time with places is not intended. Preserve both hangout locations and people with separate grammatical relations.
 
 Cumulative distinct IDs read: 814 / 1,947; 1,133 remain. Author review is not independent acceptance.
+
+## Conrad third visit: action conversations: 50 IDs read
+
+Compared the mount placement, both action completions, action start and idle responses against both English builds and Polish. The same completion line appears under distinct IDs in two contexts and the two are consistent. `special-scenes/conrad-wordplay.json` documents the dirty double meaning and the delayed professional punchline: the player refers to professional work, Conrad says he too is a professional and then clarifies what he receives. The placement and completion nodes are action-dependent; their names and source positions do not prove live triggers or order. One English typo differs across builds but shares the intended target. Actual action transitions and display fit are unrun.
+
+Finding pending disposition: `yarn:line:12e8ae42` is literally understandable but `użyj rąk na moim kutasie` is unnatural Polish for the sexual instruction. Consider idiomatic wording that preserves directness and the reason Conrad gives.
+
+Cumulative distinct IDs read: 864 / 1,947; 1,083 remain. Author review only; independent acceptance remains pending.
