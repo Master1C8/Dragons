@@ -1,0 +1,260 @@
+{
+  "schema": 1,
+  "inputs": {
+    "localization/work/source-inventory-20261107/yarn-instructions-macos.json": "3e0acd1a2f25811e380de5743e0913535470d931301cc9bc40f5a3c897d73e18",
+    "localization/work/source-inventory-20261107/yarn-instructions-windows.json": "13d34e111e48fcd80105f419f1072717ddc11659300474410f52e7839b88522b",
+    "localization/pt-BR/translation.json": "b1e341f5338fc0c81e4af1e968a5b86acf3447330d726489cbc3ee89032b7311",
+    "localization/pt-BR/receipts/author-audit-referent-recipe.json": "9e1ba9b0b54d73b83be4e36c215283b3679819ad56f10d652ed21cceac5328a9"
+  },
+  "limitation": "Static named transfers only, not actual gameplay or proof of dynamic and code-side consumers.",
+  "platforms": {
+    "macos": {
+      "Conrad_SexScene_Cum": {
+        "nodeSha256": "f6f8de1e2ba7dbd59fb7afcc686534842fedba728e2dfc386cf7f31913b0368e",
+        "lines": [
+          {
+            "id": "yarn:line:0bc044da",
+            "source": "You ready for this?",
+            "target": "Tudo pronto para isso?"
+          },
+          {
+            "id": "yarn:line:9df043ad",
+            "source": "Give me a bit",
+            "target": "Me dá um instante"
+          },
+          {
+            "id": "yarn:line:9addfb4a",
+            "source": "Ready!",
+            "target": "Tudo pronto!"
+          },
+          {
+            "id": "yarn:line:0cedfc3d",
+            "source": "Conrad can go as long as he needs",
+            "target": "Conrad pode continuar pelo tempo que precisar"
+          },
+          {
+            "id": "yarn:line:7f543c2a",
+            "source": "I can let loose whenever you are ready",
+            "target": "Posso me soltar quando você sentir que é hora"
+          },
+          {
+            "id": "yarn:line:e9643b5d",
+            "source": "Not yet.",
+            "target": "Ainda não."
+          },
+          {
+            "id": "yarn:line:c50535b3",
+            "source": "Let's have it!",
+            "target": "Manda ver!"
+          },
+          {
+            "id": "yarn:line:533532c4",
+            "source": "Hey fine by me!",
+            "target": "Ei, por mim tudo bem!"
+          },
+          {
+            "id": "yarn:line:6690512d",
+            "source": "I'm impressed.",
+            "target": "Estou impressionado."
+          },
+          {
+            "id": "yarn:line:f0a0565a",
+            "source": "You ready to go back in to the club?",
+            "target": "Vamos voltar ao clube?"
+          },
+          {
+            "id": "yarn:line:4af15fc3",
+            "source": "Sounds good to me!",
+            "target": "Por mim, ótimo!"
+          }
+        ],
+        "transfers": [
+          {
+            "index": 23,
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "436f6e7261645f5365785363656e655f4c6f6f70",
+                "utf8": "Conrad_SexScene_Loop"
+              }
+            ]
+          },
+          {
+            "index": 50,
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "436f6e7261645f5365785363656e655f4c6f6f70",
+                "utf8": "Conrad_SexScene_Loop"
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_SexScene_Loop": {
+        "nodeSha256": "4452d3047e242b87205930daf4c1d9ef60923fc4ba4b8c59aad98484cfe6fcdd",
+        "lines": [
+          {
+            "id": "yarn:line:2f9b499a",
+            "source": "I honestly don't know how you are doing that.",
+            "target": "Sinceramente, não sei como você está fazendo isso."
+          },
+          {
+            "id": "yarn:line:b9ab4eed",
+            "source": "Im not complaining though.",
+            "target": "Mas não estou reclamando."
+          },
+          {
+            "id": "yarn:line:1a3e2a73",
+            "source": "Hell yea",
+            "target": "Com certeza"
+          },
+          {
+            "id": "yarn:line:8c0e2d04",
+            "source": "..",
+            "target": ".."
+          }
+        ],
+        "transfers": [
+          {
+            "index": 27,
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "436f6e7261645f5365785363656e655f43756d",
+                "utf8": "Conrad_SexScene_Cum"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "windows": {
+      "Conrad_SexScene_Cum": {
+        "nodeSha256": "f6f8de1e2ba7dbd59fb7afcc686534842fedba728e2dfc386cf7f31913b0368e",
+        "lines": [
+          {
+            "id": "yarn:line:0bc044da",
+            "source": "You ready for this?",
+            "target": "Tudo pronto para isso?"
+          },
+          {
+            "id": "yarn:line:9df043ad",
+            "source": "Give me a bit",
+            "target": "Me dá um instante"
+          },
+          {
+            "id": "yarn:line:9addfb4a",
+            "source": "Ready!",
+            "target": "Tudo pronto!"
+          },
+          {
+            "id": "yarn:line:0cedfc3d",
+            "source": "Conrad can go as long as he needs",
+            "target": "Conrad pode continuar pelo tempo que precisar"
+          },
+          {
+            "id": "yarn:line:7f543c2a",
+            "source": "I can let loose whenever you are ready",
+            "target": "Posso me soltar quando você sentir que é hora"
+          },
+          {
+            "id": "yarn:line:e9643b5d",
+            "source": "Not yet.",
+            "target": "Ainda não."
+          },
+          {
+            "id": "yarn:line:c50535b3",
+            "source": "Let's have it!",
+            "target": "Manda ver!"
+          },
+          {
+            "id": "yarn:line:533532c4",
+            "source": "Hey fine by me!",
+            "target": "Ei, por mim tudo bem!"
+          },
+          {
+            "id": "yarn:line:6690512d",
+            "source": "I'm impressed.",
+            "target": "Estou impressionado."
+          },
+          {
+            "id": "yarn:line:f0a0565a",
+            "source": "You ready to go back in to the club?",
+            "target": "Vamos voltar ao clube?"
+          },
+          {
+            "id": "yarn:line:4af15fc3",
+            "source": "Sounds good to me!",
+            "target": "Por mim, ótimo!"
+          }
+        ],
+        "transfers": [
+          {
+            "index": 23,
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "436f6e7261645f5365785363656e655f4c6f6f70",
+                "utf8": "Conrad_SexScene_Loop"
+              }
+            ]
+          },
+          {
+            "index": 50,
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "436f6e7261645f5365785363656e655f4c6f6f70",
+                "utf8": "Conrad_SexScene_Loop"
+              }
+            ]
+          }
+        ]
+      },
+      "Conrad_SexScene_Loop": {
+        "nodeSha256": "4452d3047e242b87205930daf4c1d9ef60923fc4ba4b8c59aad98484cfe6fcdd",
+        "lines": [
+          {
+            "id": "yarn:line:2f9b499a",
+            "source": "I honestly don't know how you are doing that.",
+            "target": "Sinceramente, não sei como você está fazendo isso."
+          },
+          {
+            "id": "yarn:line:b9ab4eed",
+            "source": "Im not complaining though.",
+            "target": "Mas não estou reclamando."
+          },
+          {
+            "id": "yarn:line:1a3e2a73",
+            "source": "Hell yea",
+            "target": "Com certeza"
+          },
+          {
+            "id": "yarn:line:8c0e2d04",
+            "source": "..",
+            "target": ".."
+          }
+        ],
+        "transfers": [
+          {
+            "index": 27,
+            "operands": [
+              {
+                "field": 1,
+                "wire": 2,
+                "hex": "436f6e7261645f5365785363656e655f43756d",
+                "utf8": "Conrad_SexScene_Cum"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
