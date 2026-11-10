@@ -1830,6 +1830,466 @@
     "line:3398aea2": {
       "source": "Thank you for that.",
       "text": "Спасибо тебе за это."
+    },
+    "line:71b651dd": {
+      "source": "Hey I have something to say!",
+      "text": "Эй, мне есть что сказать!"
+    },
+    "line:e78656aa": {
+      "source": "If you could come up to where I can see you.",
+      "text": "Подойдёшь туда, где я смогу тебя увидеть?"
+    },
+    "line:4d3233a1": {
+      "source": "Oh! That's cold!",
+      "text": "Ой! Как холодно!"
+    },
+    "line:eea7573f": {
+      "source": "Whoa! Cold!",
+      "text": "Ух! Холодно!"
+    },
+    "line:78975048": {
+      "source": "Brrr! Cold water!",
+      "text": "Бр-р-р! Вода холодная!"
+    },
+    "line:c2c659d1": {
+      "source": "Eep!",
+      "text": "Ай!"
+    },
+    "line:933efa6d": {
+      "source": "Hi again!",
+      "text": "Снова привет!"
+    },
+    "line:050efd1a": {
+      "source": "Hi, Ryan!",
+      "text": "Привет, Райан!"
+    },
+    "line:bf5ff483": {
+      "source": "Hey there, happy to be back.",
+      "text": "Привет! Рад снова здесь побывать."
+    },
+    "line:b8724c64": {
+      "source": "Hah... you do like that noise.",
+      "text": "Ха... Нравится тебе этот звук."
+    },
+    "line:2e424b13": {
+      "source": "I'm in need of another wash.",
+      "text": "Мне опять надо помыться."
+    },
+    "line:4d6cd625": {
+      "source": "I'm trying to get away from the house for a bit.",
+      "text": "Хочется ненадолго уйти из дома."
+    },
+    "line:db5cd152": {
+      "source": "I went out with some friends.",
+      "text": "Я тут гулял с друзьями."
+    },
+    "line:610dd8cb": {
+      "source": "The markers were fun.",
+      "text": "С маркерами было весело."
+    },
+    "line:f73ddfbc": {
+      "source": "But I think its time to get cleaned up.",
+      "text": "Но, думаю, пора отмыться."
+    },
+    "line:54a8bb22": {
+      "source": "Oh, sure. Come on in.",
+      "text": "А, конечно. Заходи."
+    },
+    "line:78c9b5cc": {
+      "source": "Is everything okay?",
+      "text": "Всё в порядке?"
+    },
+    "line:c298bc55": {
+      "source": "Okay, thank you.",
+      "text": "Ладно, спасибо."
+    },
+    "line:eef9b2bb": {
+      "source": "Yeah It's fine. Sorry.",
+      "text": "Да, всё нормально. Извини."
+    },
+    "line:7fe40d2b": {
+      "source": "Just a rough day. Hoping this helps!",
+      "text": "Просто тяжёлый день. Надеюсь, мойка поможет!"
+    },
+    "line:e9d40a5c": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:0c5dcd3c": {
+      "source": "So uh, gate?",
+      "text": "Так, эм... ворота?"
+    },
+    "line:9a6dca4b": {
+      "source": "Oh- Ya. On it.",
+      "text": "Ой... Да. Сейчас."
+    },
+    "line:203cc3d2": {
+      "source": "Of course. One moment!",
+      "text": "Конечно. Секунду!"
+    },
+    "line:b60cc4a5": {
+      "source": "Awesome.",
+      "text": "Отлично."
+    },
+    "line:797ca540": {
+      "source": "Alrighty. All clean.",
+      "text": "Ну вот. Теперь чистый."
+    },
+    "line:e8611ad0": {
+      "source": "I'm sorry for dumping that all on you earlier.",
+      "text": "Извини, что раньше вывалил на тебя всё это."
+    },
+    "line:7e511da7": {
+      "source": "It's okay!",
+      "text": "Да ничего!"
+    },
+    "line:83c55e2e": {
+      "source": "I know things can be tough.",
+      "text": "Знаю, бывает тяжело."
+    },
+    "line:15f55959": {
+      "source": "You're very sweet.",
+      "text": "Как мило с твоей стороны."
+    },
+    "line:399457b7": {
+      "source": "I wish it was easy as it is in movies.",
+      "text": "Вот бы всё было так же просто, как в кино."
+    },
+    "line:afa450c0": {
+      "source": "Come back whenever, Ryan.",
+      "text": "Заходи в любое время, Райан."
+    },
+    "line:9a013329": {
+      "source": "If you wanna talk about it more, I've got a minute.",
+      "text": "Если хочешь ещё об этом поговорить, у меня есть минутка."
+    },
+    "line:0c31345e": {
+      "source": "I will, thanks.",
+      "text": "Обязательно, спасибо."
+    },
+    "line:20503ab0": {
+      "source": "You sure? It's not like... fun stuff.",
+      "text": "Точно? Это, ну... не самая весёлая история."
+    },
+    "line:b6603dc7": {
+      "source": "You're right. I shouldn't pry.",
+      "text": "Верно. Не буду лезть не в своё дело."
+    },
+    "line:b14d8520": {
+      "source": "It's okay, you sound like you need it.",
+      "text": "Ничего. Похоже, тебе надо выговориться."
+    },
+    "line:277d8257": {
+      "source": "You're fine. Thank you.",
+      "text": "Да всё нормально. Спасибо."
+    },
+    "line:54c44240": {
+      "source": "Yeah, you're right.",
+      "text": "Да, пожалуй."
+    },
+    "line:c2f44537": {
+      "source": "So. My girlfriend was home before me. she's a work-from-home dragon.",
+      "text": "Так вот. Моя девушка была дома раньше меня. Она дракон и работает из дома."
+    },
+    "line:78a54cae": {
+      "source": "I got back home a bit dirty. And she yelled at me.",
+      "text": "Я вернулся немного грязный. А она на меня накричала."
+    },
+    "line:ee954bd9": {
+      "source": "Told me to go to a wash, and was acting extremely offended.",
+      "text": "Велела идти на мойку. Вела себя так, будто я её страшно обидел."
+    },
+    "line:4d002f47": {
+      "source": "Was... <i>Really</i> upset I was muddy.",
+      "text": "Она... <i>Правда</i> расстроилась, что я весь в грязи."
+    },
+    "line:db302830": {
+      "source": "Is that why you came in the first time?",
+      "text": "Поэтому ты и пришёл сюда в первый раз?"
+    },
+    "line:90444b09": {
+      "source": "That sounds like an over-reaction on her part.",
+      "text": "Похоже, она слишком резко отреагировала."
+    },
+    "line:616121a9": {
+      "source": "Yeah...",
+      "text": "Ага..."
+    },
+    "line:f75126de": {
+      "source": "But honestly you've helped me a lot.",
+      "text": "Но, честно, мне очень помогло то, что я сюда пришёл."
+    },
+    "line:664c994e": {
+      "source": "Gave me time to think.",
+      "text": "Было время подумать."
+    },
+    "line:f07c9e39": {
+      "source": "That sounds like an over-reaction on her part.",
+      "text": "Похоже, она слишком резко отреагировала."
+    },
+    "line:2a154290": {
+      "source": "That's what I thought too.",
+      "text": "Я тоже так подумал."
+    },
+    "line:bc2545e7": {
+      "source": "I think she's upset about something else...",
+      "text": "По-моему, её расстроило что-то другое..."
+    },
+    "line:06744c7e": {
+      "source": "I just don't like that she takes it out on me.",
+      "text": "Просто мне не нравится, что она срывается на мне."
+    },
+    "line:33d12f97": {
+      "source": "That's what I thought too.",
+      "text": "Я тоже так подумал."
+    },
+    "line:a5e128e0": {
+      "source": "I think she's upset about something else...",
+      "text": "По-моему, её расстроило что-то другое..."
+    },
+    "line:1fb02179": {
+      "source": "I just don't like that she takes it out on me.",
+      "text": "Просто мне не нравится, что она срывается на мне."
+    },
+    "line:8980260e": {
+      "source": "Anyways-",
+      "text": "В общем..."
+    },
+    "line:189d999e": {
+      "source": "Thank you for listening.",
+      "text": "Спасибо, что выслушиваешь."
+    },
+    "line:8ead9ee9": {
+      "source": "Anytime, Ryan.",
+      "text": "Всегда пожалуйста, Райан."
+    },
+    "line:fd145efe": {
+      "source": "Of course. Sorry you're going through all this.",
+      "text": "Конечно. Жаль, что тебе приходится через всё это проходить."
+    },
+    "line:6b245989": {
+      "source": "Thank you.",
+      "text": "Спасибо."
+    },
+    "line:47455767": {
+      "source": "It's okay. I'll figure something out.",
+      "text": "Ничего. Что-нибудь придумаю."
+    },
+    "line:d1755010": {
+      "source": "I'll go get the gate for you.",
+      "text": "Сейчас открою тебе ворота."
+    },
+    "line:72e0348e": {
+      "source": "Okay, bye!",
+      "text": "Ладно, пока!"
+    },
+    "line:0d3e4054": {
+      "source": "Hey.",
+      "text": "Привет."
+    },
+    "line:b76f49cd": {
+      "source": "Ryan!",
+      "text": "Райан!"
+    },
+    "line:b042f12a": {
+      "source": "Welcome back!",
+      "text": "С возвращением!"
+    },
+    "line:215f4eba": {
+      "source": "That's me.",
+      "text": "Это я."
+    },
+    "line:2672f65d": {
+      "source": "Happy to be here.",
+      "text": "Рад снова быть здесь."
+    },
+    "line:4199070f": {
+      "source": "Came in for another wash.",
+      "text": "Пришёл ещё раз помыться."
+    },
+    "line:d7a90078": {
+      "source": "I...",
+      "text": "Я..."
+    },
+    "line:6df809e1": {
+      "source": "Nevermind. Could you get the gate?",
+      "text": "Да ладно. Откроешь ворота?"
+    },
+    "line:fbc80e96": {
+      "source": "Yeah let me get that for you.",
+      "text": "Да, сейчас открою."
+    },
+    "line:ce6d6d7f": {
+      "source": "Ryan? you sure everything is okay...?",
+      "text": "Райан, у тебя точно всё в порядке?.."
+    },
+    "line:585d6a08": {
+      "source": "Okay, thank you.",
+      "text": "Ладно, спасибо."
+    },
+    "line:743c64e6": {
+      "source": "No not really.",
+      "text": "Нет, не очень."
+    },
+    "line:e20c6391": {
+      "source": "I'll tell you in a bit. Could you just get the gate for now?",
+      "text": "Расскажу чуть позже. Пока просто открой ворота, ладно?"
+    },
+    "line:7311dc01": {
+      "source": "Yeah.",
+      "text": "Ага."
+    },
+    "line:00a81c16": {
+      "source": "Okay. I hope you're doing alright though.",
+      "text": "Хорошо. Но надеюсь, с тобой всё будет в порядке."
+    },
+    "line:e521db76": {
+      "source": "Thanks.",
+      "text": "Спасибо."
+    },
+    "line:96981b61": {
+      "source": "I'll manage.",
+      "text": "Я справлюсь."
+    },
+    "line:df4d3810": {
+      "source": "About earlier.",
+      "text": "Насчёт того, что было раньше."
+    },
+    "line:497d3f67": {
+      "source": "A few days ago...",
+      "text": "Несколько дней назад..."
+    },
+    "line:eae85bf9": {
+      "source": "I broke up with my partner...",
+      "text": "Я расстался со своей девушкой..."
+    },
+    "line:7cd85c8e": {
+      "source": "Oh... I'm so sorry.",
+      "text": "Ох... Мне очень жаль."
+    },
+    "line:c6895517": {
+      "source": "Aw, Ryan.",
+      "text": "Ох, Райан."
+    },
+    "line:50b95260": {
+      "source": "It's okay. I needed to. She wasn't making me happy.",
+      "text": "Ничего. Так было нужно. С ней я не был счастлив."
+    },
+    "line:c1a4edf0": {
+      "source": "I wasn't making her happy either.",
+      "text": "И она со мной тоже."
+    },
+    "line:5794ea87": {
+      "source": "No amount of justification makes it feel good though.",
+      "text": "Только сколько ни объясняй себе, почему так надо, легче не становится."
+    },
+    "line:34ba77b1": {
+      "source": "I'm glad you were able to make the choice that was best for you.",
+      "text": "Хорошо, что тебе удалось выбрать то, что для тебя лучше."
+    },
+    "line:18db795f": {
+      "source": "It's never easy to end things.",
+      "text": "Расставаться всегда тяжело."
+    },
+    "line:a28a70c6": {
+      "source": "Yeah. At least I got to meet you because of it.",
+      "text": "Ага. Зато благодаря этому мы с тобой познакомились."
+    },
+    "line:8eeb7e28": {
+      "source": "Yeah... It really isn't.",
+      "text": "Да... И правда тяжело."
+    },
+    "line:2d7e1ab6": {
+      "source": "But, at least I got to meet you!",
+      "text": "Зато мы с тобой познакомились!"
+    },
+    "line:bb4e1dc1": {
+      "source": "Thank you, Ryan. I'm happy I got to meet you too",
+      "text": "Спасибо, Райан. Мне тоже приятно, что мы познакомились."
+    },
+    "line:011f1458": {
+      "source": "Aw, thanks.",
+      "text": "Ой, спасибо."
+    },
+    "line:972f132f": {
+      "source": "These washes really make things easier.",
+      "text": "После мойки мне и правда становится легче."
+    },
+    "line:0632acbf": {
+      "source": "Plus they feel really nice.",
+      "text": "Да и сама мойка очень приятная."
+    },
+    "line:ccf87ea9": {
+      "source": "Oh- I'm not too interested in using that right now.",
+      "text": "Ой... Мне сейчас не особо хочется пробовать станок."
+    },
+    "line:76a97730": {
+      "source": "Maybe later...?",
+      "text": "Может, потом?.."
+    },
+    "line:3750bbf0": {
+      "source": "Pretty sure that was everything.",
+      "text": "Вроде бы всё."
+    },
+    "line:d2d97c90": {
+      "source": "Thank you. You make this a whole lot easier to go through.",
+      "text": "Спасибо. Благодаря тебе мне гораздо легче через всё это пройти."
+    },
+    "line:44e97be7": {
+      "source": "You're always welcome here, Ryan.",
+      "text": "Тебе здесь всегда рады, Райан."
+    },
+    "line:68887509": {
+      "source": "You're one of my favorite clients!",
+      "text": "Ты один из моих любимых клиентов!"
+    },
+    "line:feb8727e": {
+      "source": "You always make me feel welcomed.",
+      "text": "С тобой я всегда чувствую, что мне здесь рады."
+    },
+    "line:cb1d1197": {
+      "source": "Aw... Thanks. Is it weird I consider you...",
+      "text": "Ой... Спасибо. Это странно, если я скажу, что считаю тебя..."
+    },
+    "line:5d2d16e0": {
+      "source": "A really good friend?",
+      "text": "Очень близким другом?"
+    },
+    "line:e77c1f79": {
+      "source": "<size=70%><i>oah-</i> no that's really cool actually.",
+      "text": "<size=70%><i>ух...</i> нет, это вообще-то здорово."
+    },
+    "line:e051a79e": {
+      "source": "I consider you a good friend too",
+      "text": "Я тоже очень дорожу нашей дружбой."
+    },
+    "line:714c180e": {
+      "source": "Oh- I'm glad!",
+      "text": "Ой... Я рад!"
+    },
+    "line:7661a0e9": {
+      "source": "D'aw... thanks.",
+      "text": "Ой... Спасибо."
+    },
+    "line:118a51bb": {
+      "source": "Okay. I should probably get out of your scales.",
+      "text": "Ладно. Пожалуй, пора перестать путаться у тебя под лапами."
+    },
+    "line:87ba56cc": {
+      "source": "I'll be back again, yeah?",
+      "text": "Я ещё зайду, ладно?"
+    },
+    "line:3deb5f55": {
+      "source": "Okay! I'll go get the gate for you.",
+      "text": "Хорошо! Сейчас открою тебе ворота."
+    },
+    "line:abdb5822": {
+      "source": "Looking forward to seeing ya'",
+      "text": "Буду ждать встречи!"
+    },
+    "line:084e3cbc": {
+      "source": "Thanks. See you soon.",
+      "text": "Спасибо. До скорого."
     }
   }
 }
