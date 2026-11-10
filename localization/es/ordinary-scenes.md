@@ -29,3 +29,7 @@ Author self-reviewed all 54 IDs in `Ryan_2_Outro` and `Ryan_3_Outro`, including 
 ## Conrad first departure and second visit
 
 Author self-reviewed 35 IDs in `Conrad_Outro_1`, `Conrad_Intro_2` and `Conrad_Outro_2`, retaining his abrupt manner and the established equipment term. Both stock source readers and object encode/parse passed: macOS SHA-256 `72e5a0500bf6da3499c5c6a6d37e9d07b53b8fa83d81769381311402f5c6cf77`; Windows `0a72f48d189acbda959ca2c7659bc30bfc69d3517fe8b93bad9f235d9cc941d3`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary7/`.
+
+## Ryan food interactions
+
+Author self-reviewed 59 IDs across `Ryan_egg_dialog`, `Ryan_grapes_dialog`, `Ryan_ham_dialog` and `Ryan_melon_dialog`, preserving option responses and the original open markup; the ellipsis is intentionally unchanged. Both stock source readers and object encode/parse passed: macOS SHA-256 `cf1d264058fb580fbf2292b137629a7709f38f9cd552c415e31e4e3220cdac28`; Windows `ea7ce8f1a7184c1da62154225045f986b50d01b9dbc54125ce00f77b63abb5ae`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary8/`.
