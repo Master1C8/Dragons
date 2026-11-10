@@ -28,6 +28,9 @@ SOURCES = {
     'windows': (622, 621, 'c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3'),
 }
 ATLAS = 1024
+# The Arabic-script fallback has a taller line box. Give its selected
+# dropdown value more room while retaining the stock anchors and midpoint.
+ARABIC_CAPTION_RECT = {'macos': 478, 'windows': 475}
 
 
 @dataclass(frozen=True)
@@ -139,6 +142,13 @@ def add(platform, source_data, target, resource):
                                   m_AscentLine=ascent * size / units, m_DescentLine=descent * size / units)
     primary['m_FallbackFontAssetTable'].append(ptr(new_fallback))
     edits = {primary_id: objects[primary_id].save_typetree(primary, nodes=primary_nodes)}
+    if resource.locale in ('ar', 'fa'):
+        caption_id = ARABIC_CAPTION_RECT[platform]
+        caption, _ = read(caption_id, 'RectTransform')
+        if caption['m_SizeDelta']['y'] != -13.0 or caption['m_Pivot']['y'] != 0.5:
+            raise ValueError('unexpected stock settings caption geometry')
+        caption['m_SizeDelta']['y'] = -3.0
+        edits[caption_id] = objects[caption_id].save_typetree(caption)
     for old, new, tree, nodes in ((font_id, new_font, font, None), (material_id, new_material, material, None),
                                   (texture_id, new_texture, texture, None),
                                   (fallback_id, new_fallback, fallback, fallback_nodes)):

@@ -13,6 +13,7 @@ import UnityPy
 import compare_yarn_versions as versions
 import dialogue_locale as dl
 import speaker_contrast
+import rtl_choice_layout
 import ui_preservation
 import map_ui_hierarchy as ui_map
 import windows_settings_locale as windows_settings
@@ -119,6 +120,8 @@ def build(data, asset, locale_file, requested_locale, output, *, dialogue_locale
         obj.set_raw_data(replacement)
     if improve_speaker_contrast:
         speaker_contrast.apply('windows', asset, objects, changed)
+    if asset == rtl_choice_layout.ASSET and code in rtl_choice_layout.LOCALES:
+        rtl_choice_layout.apply('windows', objects, changed)
     dialogue_count = 0
     if dialogue_locale_file is not None:
         spec = versions.BUILDS['windows']

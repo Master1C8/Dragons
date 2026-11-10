@@ -14,6 +14,7 @@ import complex_text
 import dialogue_locale as dl
 import managed_fallback
 import speaker_contrast
+import rtl_choice_layout
 import speaker_locale as speakers
 import ui_locale as ui
 import ui_preservation
@@ -227,7 +228,8 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
             raise ValueError(f'saved object differs: {key}')
     ui_count = 0
     contrast_assets = speaker_contrast.ASSETS if improve_speaker_contrast else frozenset()
-    for name in sorted(ui_files.keys() | contrast_assets):
+    choice_assets = {rtl_choice_layout.ASSET} if requested in rtl_choice_layout.LOCALES else set()
+    for name in sorted(ui_files.keys() | contrast_assets | choice_assets):
         target_ui = destination / 'Contents/Resources/Data' / name
         if target_ui.is_symlink() or destination.resolve() not in target_ui.resolve().parents:
             raise ValueError('unsafe UI destination')
