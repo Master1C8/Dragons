@@ -101,6 +101,38 @@ StringBuilder and char-array paths are outside this hook. Runtime
 insertion, the full-corpus map, line breaking, dynamic substitutions and
 typewriter progression are still open. No game or installer was launched.
 
+### Thai and Hindi corpus display maps
+
+The offline probe now supports `--ltr-corpus --icu <ICU 78 libicuuc path>`.
+It stages Thai and Hindi maps for all authored script-bearing values across
+both stock builds, including trimmed and source-bound speaker-body variants.
+Authored text and protected speaker prefixes stay in logical order. TMP
+formatting tags survive the shaping pass verbatim.
+
+| Locale | Exact display mappings | Positioned glyph instances | Added soft breaks |
+| --- | ---: | ---: | ---: |
+| Thai | 1,654 | 320 | 8,991 |
+| Hindi | 1,647 | 231 | 0 |
+
+Thai line opportunities come from ICU's Thai line iterator. Before inserting
+each set of U+200B separators, the probe checks that shaping the pieces
+produces exactly the same positioned glyphs as shaping the intact run. The
+paired stock TMP assemblies recognize U+200B in their text mesh code. The
+Hindi map is unchanged by enabling Thai breaks. Each patched assembly
+executes its emitted managed lookup against every map entry and verifies
+that already prepared strings, unknown strings and sliced writes are
+unchanged. The lookup partitions the ordinal key space into small methods.
+Both platform pairs passed static read-back and all mapping controls.
+
+The [staged report](localization/work/ltr-corpus-display-20261110.YN1VJp/staged-breaks/result.json)
+has SHA-256 `1790070907ffcd72829054aa2e0b0be0cedcea3ac7c0b09da6a7c1eaca52f901`.
+It also enumerates authored IDs with mixed RTL and LTR/number content.
+The macOS/Windows counts are Arabic 48/48, Persian 47/47 and Hebrew 48/47.
+Those three locales remain synthetic in the prepared-text probe. Their
+display maps need visual ordering by the lines actually selected during
+layout. Real Thai wraps, dynamic display values and typewriter advancement
+also remain unverified. The staged files are development artifacts.
+
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock
 512 × 512 multi-atlas chain admitted 1,536 distinct additional

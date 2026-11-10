@@ -18,12 +18,12 @@ using var json = JsonDocument.Parse(mapBytes);
 var mappings = json.RootElement.EnumerateArray()
     .Select(row => (Logical: row.GetProperty("logical").GetString()!,
                     Prepared: row.GetProperty("prepared").GetString()!)).ToArray();
-if (mappings.Length is < 1 or > 64 ||
+if (mappings.Length is < 1 or > 4096 ||
     mappings.Select(x => x.Logical).Distinct(StringComparer.Ordinal).Count() != mappings.Length ||
     mappings.Any(x => string.IsNullOrEmpty(x.Logical) || string.IsNullOrEmpty(x.Prepared)
         || x.Logical.Any(IsPua) || !x.Prepared.Any(IsPua)
         || x.Logical.Contains('\0') || x.Prepared.Contains('\0')))
-    throw new ArgumentException("Expected a bounded exact map from logical samples to prepared glyphs");
+    throw new ArgumentException("Expected a bounded exact map from logical text to prepared glyphs");
 
 using var module = ModuleDefinition.ReadModule(new MemoryStream(source));
 var original = Bodies(module);
@@ -33,6 +33,9 @@ var getLength = (MethodReference)hook.Body.Instructions
 var equality = new MethodReference("op_Equality", module.TypeSystem.Boolean, module.TypeSystem.String);
 equality.Parameters.Add(new ParameterDefinition(module.TypeSystem.String));
 equality.Parameters.Add(new ParameterDefinition(module.TypeSystem.String));
+var compare = new MethodReference("CompareOrdinal", module.TypeSystem.Int32, module.TypeSystem.String);
+compare.Parameters.Add(new ParameterDefinition(module.TypeSystem.String));
+compare.Parameters.Add(new ParameterDefinition(module.TypeSystem.String));
 var helper = new TypeDefinition("Dragons", "PreparedTextProbe",
     TypeAttributes.NotPublic | TypeAttributes.Abstract | TypeAttributes.Sealed, module.TypeSystem.Object);
 module.Types.Add(helper);
@@ -42,8 +45,13 @@ helper.Methods.Add(rewrite);
 rewrite.Parameters.Add(new ParameterDefinition(new ByReferenceType(module.TypeSystem.String)));
 rewrite.Parameters.Add(new ParameterDefinition(module.TypeSystem.Int32));
 rewrite.Parameters.Add(new ParameterDefinition(new ByReferenceType(module.TypeSystem.Int32)));
+var ordered = mappings.OrderBy(pair => pair.Logical, StringComparer.Ordinal).ToArray();
+var lookup = MakeLookup(0, ordered.Length);
 var il = rewrite.Body.GetILProcessor();
 var done = Instruction.Create(OpCodes.Ret);
+var preparedValue = new VariableDefinition(module.TypeSystem.String);
+rewrite.Body.Variables.Add(preparedValue);
+rewrite.Body.InitLocals = true;
 
 // Do not change sliced writes, null, or text outside the exact probe map.
 il.Emit(OpCodes.Ldarg_1);
@@ -57,23 +65,19 @@ il.Emit(OpCodes.Ldarg_0);
 il.Emit(OpCodes.Ldind_Ref);
 il.Emit(OpCodes.Callvirt, getLength);
 il.Emit(OpCodes.Bne_Un, done);
-foreach (var (logical, prepared) in mappings)
-{
-    var next = Instruction.Create(OpCodes.Nop);
-    il.Emit(OpCodes.Ldarg_0);
-    il.Emit(OpCodes.Ldind_Ref);
-    il.Emit(OpCodes.Ldstr, logical);
-    il.Emit(OpCodes.Call, equality);
-    il.Emit(OpCodes.Brfalse, next);
-    il.Emit(OpCodes.Ldarg_0);
-    il.Emit(OpCodes.Ldstr, prepared);
-    il.Emit(OpCodes.Stind_Ref);
-    il.Emit(OpCodes.Ldarg_2);
-    il.Emit(OpCodes.Ldc_I4, prepared.Length);
-    il.Emit(OpCodes.Stind_I4);
-    il.Emit(OpCodes.Ret);
-    il.Append(next);
-}
+il.Emit(OpCodes.Ldarg_0);
+il.Emit(OpCodes.Ldind_Ref);
+il.Emit(OpCodes.Call, lookup);
+il.Emit(OpCodes.Stloc, preparedValue);
+il.Emit(OpCodes.Ldloc, preparedValue);
+il.Emit(OpCodes.Brfalse, done);
+il.Emit(OpCodes.Ldarg_0);
+il.Emit(OpCodes.Ldloc, preparedValue);
+il.Emit(OpCodes.Stind_Ref);
+il.Emit(OpCodes.Ldarg_2);
+il.Emit(OpCodes.Ldloc, preparedValue);
+il.Emit(OpCodes.Callvirt, getLength);
+il.Emit(OpCodes.Stind_I4);
 il.Append(done);
 
 var patch = hook.Body.GetILProcessor();
@@ -123,6 +127,49 @@ void Verify(string? value, int start, int length, string? expected, int expected
     emitted.Invoke(null, parameters);
     if (!Equals(parameters[0], expected) || !Equals(parameters[2], expectedLength))
         throw new InvalidOperationException("Emitted helper returned unexpected text or length");
+}
+
+MethodDefinition MakeLookup(int start, int end)
+{
+    // Keep generated methods small while limiting each lookup to one leaf.
+    var method = new MethodDefinition($"Lookup_{start}_{end}", MethodAttributes.Private | MethodAttributes.Static,
+        module.TypeSystem.String);
+    method.Parameters.Add(new ParameterDefinition(module.TypeSystem.String));
+    helper.Methods.Add(method);
+    var emit = method.Body.GetILProcessor();
+    if (end - start > 32)
+    {
+        var middle = start + (end - start) / 2;
+        var left = MakeLookup(start, middle);
+        var right = MakeLookup(middle, end);
+        var rightInput = Instruction.Create(OpCodes.Ldarg_0);
+        emit.Emit(OpCodes.Ldarg_0);
+        emit.Emit(OpCodes.Ldstr, ordered[middle].Logical);
+        emit.Emit(OpCodes.Call, compare);
+        emit.Emit(OpCodes.Ldc_I4_0);
+        emit.Emit(OpCodes.Bge, rightInput);
+        emit.Emit(OpCodes.Ldarg_0);
+        emit.Emit(OpCodes.Call, left);
+        emit.Emit(OpCodes.Ret);
+        emit.Append(rightInput);
+        emit.Emit(OpCodes.Call, right);
+        emit.Emit(OpCodes.Ret);
+        return method;
+    }
+    foreach (var (logical, prepared) in ordered[start..end])
+    {
+        var next = Instruction.Create(OpCodes.Nop);
+        emit.Emit(OpCodes.Ldarg_0);
+        emit.Emit(OpCodes.Ldstr, logical);
+        emit.Emit(OpCodes.Call, equality);
+        emit.Emit(OpCodes.Brfalse, next);
+        emit.Emit(OpCodes.Ldstr, prepared);
+        emit.Emit(OpCodes.Ret);
+        emit.Append(next);
+    }
+    emit.Emit(OpCodes.Ldnull);
+    emit.Emit(OpCodes.Ret);
+    return method;
 }
 
 static bool IsPua(char value) => value is >= '\uE000' and <= '\uF8FF';
