@@ -1866,7 +1866,35 @@
       "group": "Conrad_4_Conrad_Romanced",
       "orderedRowsSha256": "695bd88d7359b4dfc05dce676b7870df0cba722deac92b2c00f6aacb64a1ad7f",
       "count": 11,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:d3a50f3f"
+        ]
+      },
+      "referents": "The date is between Conrad and the player, timed for Conrad's next wash; neither response establishes player gender.",
+      "layer1": "Source read: wash is the cleaning service rather than a venue name.",
+      "layer2": "Italian field read: the service and character entries admit the contextual use; preserve unspecified player gender.",
+      "sourceIds": [
+        "yarn:line:28c51dbf",
+        "yarn:line:b9d8a22f",
+        "yarn:line:2fe8a558",
+        "yarn:line:ca616238",
+        "yarn:line:5c51654f",
+        "yarn:line:e6006cd6",
+        "yarn:line:70306ba1",
+        "yarn:line:d3a50f3f",
+        "yarn:line:45950848",
+        "yarn:line:ffc401d1",
+        "yarn:line:69f406a6"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-romance-and-fifth-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_4_Cum",
@@ -1956,7 +1984,50 @@
       "group": "Conrad_4_Ryan_Conrad_Romanced",
       "orderedRowsSha256": "95251d6ddb0cb37cbb9d3765e9c6b945569ade9ea2f2177cbc146bc2770f1b9f",
       "count": 14,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-kobold",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:bb8583c1",
+          "yarn:line:a56c5621"
+        ],
+        "dnw-kobold": [
+          "yarn:line:ea23c5f9"
+        ],
+        "dnw-player": [
+          "yarn:line:ea23c5f9"
+        ],
+        "dnw-wash": [
+          "yarn:line:df86a610"
+        ]
+      },
+      "referents": "Conrad anticipates a date with Ryan; his hypothetical kobold cleaner points jokingly to the player. 'Your wash' can refer to service or business and context does not force one.",
+      "layer1": "Source read: keep Ryan, Conrad and the player distinct; retain the service/business ambiguity.",
+      "layer2": "Italian field read: no correction established; avoid assigning gender to the player through the joke.",
+      "sourceIds": [
+        "yarn:line:bb8583c1",
+        "yarn:line:1810e75f",
+        "yarn:line:8e20e028",
+        "yarn:line:5072cc60",
+        "yarn:line:3471e9b1",
+        "yarn:line:a241eec6",
+        "yarn:line:335c5156",
+        "yarn:line:a56c5621",
+        "yarn:line:c642cb17",
+        "yarn:line:ea23c5f9",
+        "yarn:line:7c13c28e",
+        "yarn:line:49b6a167",
+        "yarn:line:df86a610",
+        "yarn:line:f3e7a8fe"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-romance-and-fifth-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_5_Cum",
@@ -2048,37 +2119,247 @@
       "group": "Conrad_5_intro_conrad_romanced",
       "orderedRowsSha256": "62f93f5434f299cbc88fc25bf44ecdaab83795af7709d744c07e030636934db2",
       "count": 18,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-wash": [
+          "yarn:line:9accd60e",
+          "yarn:line:6c3a98cc"
+        ]
+      },
+      "referents": "Conrad and player plan their date at the previously mentioned bar; cleaning prepares Conrad for it.",
+      "layer1": "Source read: washing dirt off is a service action, not a proper name.",
+      "layer2": "Italian field read: preserve colloquial voice and avoid adding a player gender.",
+      "sourceIds": [
+        "yarn:line:1538bc7e",
+        "yarn:line:8308bb09",
+        "yarn:line:209ddf97",
+        "yarn:line:0bd1699e",
+        "yarn:line:b6add8e0",
+        "yarn:line:0cfcd179",
+        "yarn:line:9accd60e",
+        "yarn:line:9de16ee9",
+        "yarn:line:fa0a9fbb",
+        "yarn:line:6c3a98cc",
+        "yarn:line:d66b9155",
+        "yarn:line:e3cef2bc",
+        "yarn:line:405b9622",
+        "yarn:line:75fef5cb",
+        "yarn:line:cfaffc52",
+        "yarn:line:599ffb25",
+        "yarn:line:c88244b5",
+        "yarn:line:5eb243c2"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-romance-and-fifth-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_5_intro_ryan_conrad_romanced",
       "orderedRowsSha256": "81e51c077299aa3c33a94a6696289ebc69e141431b442673953f58ff27578575",
       "count": 14,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-conrad": [
+          "yarn:line:3d0a5aeb"
+        ],
+        "dnw-ryan": [
+          "yarn:line:08af3902",
+          "yarn:line:116b5405",
+          "yarn:line:ebd2af6b"
+        ],
+        "dnw-wash": [
+          "yarn:line:8076eb95"
+        ]
+      },
+      "referents": "Conrad reports his date with Ryan, then requests a wash; the player offers the gate. Keep the two speakers distinct.",
+      "layer1": "Source read: date is Conrad and Ryan's; the wash is the requested service.",
+      "layer2": "Italian field read: no correction established; do not transfer the relationship to the player.",
+      "sourceIds": [
+        "yarn:line:24ce37ec",
+        "yarn:line:b2fe309b",
+        "yarn:line:3d0a5aeb",
+        "yarn:line:08af3902",
+        "yarn:line:9e9f3e75",
+        "yarn:line:ab3a5d9c",
+        "yarn:line:116b5405",
+        "yarn:line:875b5372",
+        "yarn:line:1646ece2",
+        "yarn:line:8076eb95",
+        "yarn:line:ebd2af6b",
+        "yarn:line:c7b3a185",
+        "yarn:line:7de2a81c",
+        "yarn:line:5183a6f2"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-romance-and-fifth-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_5_intro_ryan_romanced",
       "orderedRowsSha256": "6dfa2ddd0dcec7b3f5abf095ae1e9b3a5c2cfec56701165654897e0658d06169",
       "count": 13,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-conrad": [
+          "yarn:line:975a629f",
+          "yarn:line:405b7ef1"
+        ],
+        "dnw-ryan": [
+          "yarn:line:8e9e0f98"
+        ],
+        "dnw-wash": [
+          "yarn:line:f474ffa9",
+          "yarn:line:405b7ef1"
+        ]
+      },
+      "referents": "The big blue guy is Ryan; Conrad asks about Ryan and the player and requests a late wash for his own outing.",
+      "layer1": "Source read: distinguish Conrad's outing from player and Ryan's relationship.",
+      "layer2": "Italian field read: the service term and named characters fit; preserve dialogue routing and unknown player gender.",
+      "sourceIds": [
+        "yarn:line:f474ffa9",
+        "yarn:line:975a629f",
+        "yarn:line:bb3b6c71",
+        "yarn:line:016a65e8",
+        "yarn:line:2d0b6b06",
+        "yarn:line:8e9e0f98",
+        "yarn:line:18ae08ef",
+        "yarn:line:a2ff0176",
+        "yarn:line:34cf0601",
+        "yarn:line:a5d2b991",
+        "yarn:line:33e2bee6",
+        "yarn:line:d66b7986",
+        "yarn:line:405b7ef1"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-romance-and-fifth-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_5_outro_conrad_romanced",
       "orderedRowsSha256": "b35357b51338e34a1af32e52d65c09e92abd0bd7b1bd7a4c059cd2888e916a85",
       "count": 9,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-dragn-wash"
+      ],
+      "conceptUses": {
+        "dnw-dragn-wash": [
+          "yarn:line:48e99d7b",
+          "yarn:line:f2b894e2"
+        ]
+      },
+      "referents": "The player closes the shop before their date; Conrad offers to reserve a place and wait at the bar.",
+      "layer1": "Source read: closing shop refers to the workplace, while bar is the date venue.",
+      "layer2": "Italian field read: preserve venue distinction and do not add player gender.",
+      "sourceIds": [
+        "yarn:line:eb7cf9e5",
+        "yarn:line:512df07c",
+        "yarn:line:c71df70b",
+        "yarn:line:48e99d7b",
+        "yarn:line:64889395",
+        "yarn:line:f2b894e2",
+        "yarn:line:ded99a0c",
+        "yarn:line:4fc4259c",
+        "yarn:line:d9f422eb"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-romance-and-fifth-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_5_outro_ryan_conrad_romanced",
       "orderedRowsSha256": "a00e79f58b179fe7602fd3828e8eead79e6094bcb5bd44b8cda010d8f578d159",
       "count": 9,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-conrad": [
+          "yarn:line:655b8c01"
+        ],
+        "dnw-wash": [
+          "yarn:line:eaafe671"
+        ]
+      },
+      "referents": "Conrad thanks the player for admitting him late after cleaning; the gate request concerns his departure.",
+      "layer1": "Source read: getting every spot refers to the cleaning just completed.",
+      "layer2": "Italian field read: no correction established; preserve Conrad and player dialogue routing.",
+      "sourceIds": [
+        "yarn:line:eaafe671",
+        "yarn:line:7c9fe106",
+        "yarn:line:c6cee89f",
+        "yarn:line:50feefe8",
+        "yarn:line:655b8c01",
+        "yarn:line:f36b8b76",
+        "yarn:line:df0a8598",
+        "yarn:line:493a82ef",
+        "yarn:line:d8273d7f"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-romance-and-fifth-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_5_outro_ryan_romanced",
       "orderedRowsSha256": "cdda3898b2db6a8a6d77da07632ac35eef5ec91734217d69a2ee34a9c5b1383d",
       "count": 14,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-conrad": [
+          "yarn:line:0e1fd4b0",
+          "yarn:line:255362b9"
+        ],
+        "dnw-ryan": [
+          "yarn:line:3bbab759"
+        ],
+        "dnw-wash": [
+          "yarn:line:81ebbec0"
+        ]
+      },
+      "referents": "Conrad thanks the player for the wash and asks about the player and Ryan. Big C is Conrad's discarded self-nickname, not a new character.",
+      "layer1": "Source read: service, Ryan and Conrad's short-lived nickname are distinct.",
+      "layer2": "Italian field read: no correction established; retain nickname's local payoff without treating it as an approved proper name.",
+      "sourceIds": [
+        "yarn:line:f57fc630",
+        "yarn:line:f2527ed7",
+        "yarn:line:646279a0",
+        "yarn:line:17dbb9b7",
+        "yarn:line:81ebbec0",
+        "yarn:line:3bbab759",
+        "yarn:line:ad8ab02e",
+        "yarn:line:0e1fd4b0",
+        "yarn:line:982fd3c7",
+        "yarn:line:255362b9",
+        "yarn:line:227eda5e",
+        "yarn:line:b44edd29",
+        "yarn:line:b36365ce",
+        "yarn:line:d04df8f8"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-romance-and-fifth-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_5_required_conrad_romanced",
@@ -2655,7 +2936,46 @@
       "group": "Conrad_Ryan_Romanced",
       "orderedRowsSha256": "1b78134400657805213ff9ea3d2767a0cea1ca76df99daab588340c192499022",
       "count": 16,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-conrad",
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-dragon"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:a6d6bf76",
+          "yarn:line:c13d4e24",
+          "yarn:line:800c553d"
+        ],
+        "dnw-dragon": [
+          "yarn:line:800c553d"
+        ]
+      },
+      "referents": "The player's he and dream dragon refer to Ryan. Conrad describes an unnamed male gryphon, thinks he may have a crush on Conrad and confirms his own crush; the gryphon's feelings are not established fact. The later he refers to that gryphon in context.",
+      "layer1": "Source read: distinguish Ryan from the unnamed gryphon and Conrad's inference from fact.",
+      "layer2": "Italian field read: character names and dragon concept are compatible; preserve this distinction and the player's unspecified gender.",
+      "sourceIds": [
+        "yarn:line:a6d6bf76",
+        "yarn:line:30e6b801",
+        "yarn:line:c13d4e24",
+        "yarn:line:800c553d",
+        "yarn:line:570d4953",
+        "yarn:line:7b6c47bd",
+        "yarn:line:ed5c40ca",
+        "yarn:line:4ec92454",
+        "yarn:line:f3b5952a",
+        "yarn:line:d8f92323",
+        "yarn:line:62a82aba",
+        "yarn:line:f4982dcd",
+        "yarn:line:6585925d",
+        "yarn:line:163c524a",
+        "yarn:line:3a5d5ca4",
+        "yarn:line:ac6d5bd3"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-conrad-romance-and-fifth-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Conrad_SexScene",
