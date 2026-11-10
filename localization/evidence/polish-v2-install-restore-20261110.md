@@ -13,3 +13,9 @@ No game was started. These filesystem controls do not establish native Windows i
 | `pl-windows-v2-restore-20261110.li8pXl/result.json` | `9ef2ce6d309df2765f6ea42d6737d4d5146430febc523ad3df3b65d97317e5b2` |
 
 Each proof directory includes the exact `check.py` used. Temporary game copies were removed after verification.
+
+## Canonical package rebuild
+
+The repository's unmodified `localization/verify_locale_package.py` verified both retained v2 artifacts against fresh rebuilds from the immutable `0d34c62` translation snapshot. Python 3.14.6 ran the canonical verifier with the pinned UnityPy, TypeTreeGeneratorAPI and fontTools versions. It checked 284 macOS files and 13 Windows archive members, and reran component and serialized metadata preservation. Its receipts matched the earlier lane-owned verifier byte for byte.
+
+The commands and logs are under `localization/work/polish-v2-canonical-rebuild-20261110.wft3Nk/`. Receipt SHA-256 values are `da662c0330c61561984cba3969075176bf69f572554afaa0f61a1d8144a8c341` for macOS and `1f54a68d0d088781959d61bafb8c83623c021194bea7f338c45fc8e9c652a4d8` for Windows. These results exercise the normal verifier on real paired artifacts. The newer Polish text still needs its own rebuilt packages and acceptance checks.
