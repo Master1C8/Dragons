@@ -1,0 +1,22 @@
+# German glossary: coverage reconciliation
+
+2026-11-10. Standard localization. Source semantic fingerprint `3d261921e114b6feab10f57ad54d43674a75e991d94937686155b92cce399dc3`; German ordered-map hash `928654f960c84f04893d1794c0b44c5347ea0522746df79d8d4b135c37121dfa` (serialization in CHECKPOINT.md). SiteForMods `29b0bb56b3ce71a1d5a700c840b050af7333084d`. No glossary mutation. Both layers below are **author self-reviews**, not independent. The owner explicitly allowed self-review for this assignment; the separate final game-text independent audit remains required.
+
+## Retained coverage and changed dependency
+
+The historical German layer 1 and 2 receipts in `SiteForMods/data/games/dragn-wash/glossary-reviews/de/` record separate complete fidelity and German-language reads of 27 entries, with entry hash index `c46e7f75857470a04c6605521571bff1b139b27748ab4ac15d459505c9f0c926`. Sorted-key compact UTF-8 per-entry hashes reproduce all 27 current English entry and all 27 current German field hashes. Removing the new anonymous entry reproduces historical ordered-map hash `cc59195ce1bfc7f129c951be81405930e41fec02f79c8e28e2444f00fe72e6b4`. The 27 old English entries compare equal to the preceding Git version, and the previous source-evidence file matches its receipt hash `1ab766854e9b70f876374c91c95bce82b194091653c05e22556984f2399d6f07`; the sole evidence diff adds the anonymous role. The new role intersects player neutrality, dragon species, known character identity and generic scenes, so those dependencies were rechecked rather than treating the new row as isolated.
+
+## Layer 1: source fidelity and German read, author
+
+Read the complete new English and German term and meaning against the four source nodes and their 20 English IDs, `special-scenes-anonymous-dragons-20261110.json`, source roster evidence and the owner-approved neutral strategy. The German term identifies a dragon without asserting a specific character. The meaning keeps a role in one of four scenes and marks identity, gender and pronouns unestablished; its instruction applies neutrality in each scene without asserting one common individual. Rechecked `dnw-player`, `dnw-dragon`, `dnw-drake`, Alexander, Conrad, Ryan and the franchise-contact meanings for conflicting assignment or agreement: no identity merger or contradiction found. Separate German-language read: the wording is grammatical and its neutral instruction is usable; grammatical masculine in the species noun does not prove the referent's sex. The four source scenes and their distinct player choices do not require a shared individual. No correction.
+
+## Layer 2: separate author self-read
+
+Read the new source and target fields again, separately considering each of the four nodes, the species term, player neutrality and the named customers. The source says one dragon in one of four generic scenes, not four proven instances of one dragon. The German preserves that scope, uncertainty and neutral address. A separate native-language read checked the adjective, relative clause, plural list and imperative; no objective grammar or fidelity defect found. The role is a label, not license to use masculine personal agreement in the scene. No correction. The 27 unchanged entries retain their own historical second-layer coverage, not a copy of this closure read.
+
+## Adjudicated checkpoint observations
+
+- `dnw-phoenix-feather`: the canonical English says reconstitution; `line:5a632b75` explicitly says the colleague's physical form is reconstituting, immediately followed by `line:bfeaec15` on the feather. The German description's body is supported by this exact in-scene context; no invented entity or changed outcome. Retain the existing approved wording.
+- `dnw-family-crest`: `line:1ff9a04c`, `line:89c9a73b`, `line:18d418ab`, and `line:8ee41fdc` describe a worn ornament around the head that marks family. `Familienzierkamm` is an ornamental head-crest rendering, not an assertion that it is anatomical. Retain it. The prior German self-review explicitly recorded the crest repair.
+
+The two prior complete 27-entry author layers plus the two actual affected-closure author reads above account for 28 of 28 entries on this bound version. This is self-review acceptance within the owner's current instruction, not an independent review or a game-text audit. Static character evidence and source reachability retain the limits in `glossary-sources.md`; original source commands and all unknown identities remain unchanged.
