@@ -43,3 +43,33 @@ original profiles matched their pre-run hashes.
 
 Local control assets and receipts are under
 `localization/work/uk-special-scenes-20261110.pE2LiD/`.
+
+## Second batch
+
+The draft now has 136 authored IDs, 90 of them new. All 46 earlier
+values are exact. The draft SHA-256 is
+`619bbc115a5ec23e3575dff9ff62cc1397e99ed1a6e3d5f5488ed4cf0285dcfc`.
+The source inventory, Yarn scope and glossary bindings above still apply.
+
+| Case | Ukrainian decision and remaining acceptance check |
+| --- | --- |
+| `alexander-number-seven-taste` | Keep the numeral 7 and «жовтий лайм». The lemon guess must still lead to a correction, the disbelief to the repeated rebuttal, and deference to the appeal-to-authority joke. |
+| `alexander-family-crest` | Introduce the object as an unfamiliar emblem, then identify it as «родова емблема». Retain all seven shrinking spans and the four-nations joke in the smallest region. Verify the two responses and the region boundaries at runtime. |
+| `alexander-college-self-introduction` | Use «Громадський коледж тауматургії Бернсвіка» and «Александер». Keep the formal self-praise and trailing colon in the separate speaker display field. Verify the display and both question responses, with the preceding secrecy lines as context. |
+| `alexander-teacher-professor-correction` | Distinguish «дракона-вчителя» from the interrupted «Професора». The other reply opens the gate without setting up the correction. Verify both continuations. |
+| `dirty-double-meaning` | Keep the two readings of «брудний» and the original italic and tilde emphasis. Preserve each explicit outcome and the distinct price response. Verify both branch paths and that the staged vowels shrink in order. |
+| `professional-double-meaning` | The player says «Я роблю це професійно» without a gendered self-title. Conrad echoes the claim and switches who receives the service. Preserve the live choice IDs and the different response paths. |
+| `conrad-special-endings` | Use the glossary euphemism «особливі завершення» and preserve the escalation from the literal reading to the blunt clarification. Keep the refusal, assent and uncertainty choices distinct. The two differing English strings share Ukrainian wording because the difference is punctuation. |
+| `conrad-emphatic-greetings`, `conrad-scales-aside` | Use «АГОВ» for both greetings. Restrict the gradient to the shout and preserve the small, italic aside about the scales. Check the size reset and the exact end of each styled span. |
+| `ryan-branch-hesitation-sizing` | Keep the repeated acknowledgement and disfluency as the response shrinks, with each phrase in its corresponding original size region. Verify the original option target and all size transitions. |
+
+The author checked these ten groups against the paired English source
+and their indexed dependencies. Ukrainian branch runs, pixel review
+and independent editorial review remain pending for the new groups.
+Both complete builders passed a diagnostic control with the authored
+values and English for the untouched IDs. Read-back verified all 130
+authored Yarn values, the new managed Alexander display string, the
+previous managed strings, and exact preservation of all other Yarn
+text, IDs and metadata. The original font covers all 69 display
+code points in the draft. Diagnostic assets and receipts are under
+`localization/work/uk-special-scenes-2-20261110.VCXXS1/`.
