@@ -1,6 +1,6 @@
 # French localization checkpoint
 
-Updated 2026-11-10. Status: **glossary author layers reconciled; renderer probe in progress; translation not started**. See [glossary review](glossary-review.md) and [renderer probe](renderer-probe.md) for the current resumption; historical notes below retain the earlier checkpoint context. The requested standard locale is `fr`; source is English. Session `01a1c394-a809-7812-9570-df379360d954` turn context and process arguments record `gpt-6.1-terra`, reasoning `high`. No other model or agent was used.
+Updated 2026-11-10. Status: **glossary author layers reconciled; bounded renderer probe complete; special-scene preparation started**. See [glossary review](glossary-review.md) and [renderer probe](renderer-probe.md) for the current resumption; historical notes below retain the earlier checkpoint context. The requested standard locale is `fr`; source is English. Session `01a1c394-a809-7812-9570-df379360d954` turn context and process arguments record `gpt-6.1-terra`, reasoning `high`. No other model or agent was used.
 
 ## Bound inputs
 
@@ -12,9 +12,7 @@ Updated 2026-11-10. Status: **glossary author layers reconciled; renderer probe 
 
 ## Feasibility
 
-`localization/evidence/multilingual-renderer-baseline-20261110.md` reports the French synthetic sample resolving without substitution in a live save-slot component on both pinned builds, with the stock font chain. This is not a dialogue, choice, settings, full-corpus or visual pass. `localization/evidence/european-text-paths-20261110.md` exercises those paths using Ukrainian, Polish and Vietnamese, not French. The corresponding settings frames are offscreen controls, not French visual evidence; dialogue and choice pixels were not inspected. French rendering feasibility remains **unverified**. Native Windows remains separately unverified; prior Windows evidence uses CrossOver.
-
-Next: use the existing paired sample/observer recipe and a French-specific synthetic set on both builds, covering accents and ligatures, dialogue reveal and progression, choices, settings, dynamic/narrow layout, and actual visual fit. Preserve original frames and inspect only policy-compliant WebP80 copies or source-bound crops. Acquire `localization/work/.dragons-cli-runtime.lock` via mkdir for the entire runtime test, do not remove another owner's lock or operate an owner process. Disk check showed 18 GiB available on the project volume; serialize large package work with that lock. The existing paired probe source and receipts are under `localization/work/european-text-paths-20261110.QddlnY/`; determine exact invocation and profile isolation before launching. Do not treat another script sample as French proof.
+The bounded French synthetic renderer controls now cover slot, dialogue, choices and settings on the pinned macOS and Windows builds, the latter through CrossOver. Both live routes progressed, original profile checks matched, and offscreen sample frames were reviewed. See [renderer-probe.md](renderer-probe.md) for hashes, the failed isolation-guard attempt and exact limitations. Native Windows, final corpus glyph coverage and visual fit remain unverified. The runtime lock was released after test exit.
 
 ## Glossary readiness
 
@@ -26,17 +24,17 @@ A preliminary direct comparison of all 28 current English/French entries found a
 
 | Stage | Status |
 | --- | --- |
-| probe | In progress: paired French glyph/progression and settings controls ran; macOS choice/body frames captured, CrossOver body/choice capture in progress. See renderer-probe.md. |
+| probe | Bounded French synthetic paths observed on macOS and CrossOver, including body/choice/settings frames and progression; native Windows and corpus-specific fit pending. See renderer-probe.md. |
 | source | Pinned worklist generated; verify source/preserve-exact gate and current shared receipts before translation. |
 | glossary | Two author self-review layers reconciled on current hashes under the owner exception; the earlier crest finding was withdrawn after scene review. Independent review was not claimed. See glossary-review.md. |
-| special-scene decisions | 0/27 reviewed French decisions; begin only after applicable source and glossary gates. |
-| translate-edit | 0/1,947 authored; `translation.json` does not exist. |
+| special-scene decisions | 1/27 author-reviewed draft groups; remaining 26 block ordinary translation. See special-scenes.md. |
+| translate-edit | 10/1,947 authored as special-scene preparation; no ordinary batch started. Paired diagnostic assets verified. |
 | editorial | Not run; full semantic audit, independent delta and regression catalog pending. |
-| fonts | Slot sample only; full corpus and applicable real text paths unverified. |
+| fonts | Slot and bounded live text samples resolved; full corpus coverage and typography remain unverified. |
 | textures | Textures with text excluded and preserved. |
 | package | macOS and Windows deliverables not built or verified. English passthrough is not a completed translation. |
 | runtime / visual | French not run / not reviewed. |
 | screenshot upload / review | Not requested / not run. |
 | release / archival | Not complete; no publication, push or deployment authorized. |
 
-Next work must respect fixed gates. If the shared glossary or probe needs changes outside `localization/fr/` and this run directory, report the exact boundary instead of modifying shared files. A verified locale-only commit requires the specified `.git/codex-canonical-commit.lock`, empty pre-existing index, complete staged review and committed-tree verification; do not reset, amend or interfere with other lanes.
+Next: complete and review the remaining 26 special-scene groups before ordinary text; use the exact paired English worklist and preserve source-bound handling. If the shared glossary or probe needs changes outside `localization/fr/` and this run directory, report the exact boundary instead of modifying shared files. A verified locale-only commit requires the specified `.git/codex-canonical-commit.lock`, empty pre-existing index, complete staged review and committed-tree verification; do not reset, amend or interfere with other lanes.

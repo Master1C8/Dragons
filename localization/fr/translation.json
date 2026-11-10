@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "locale": "fr",
+  "sharedInventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "yarnScopeSha256": "753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30",
+  "lines": {
+    "yarn:line:c2bdc402": "Quel goût a le chiffre 7 ?",
+    "yarn:line:78eccd9b": "Un citron vert jaune.",
+    "yarn:line:eedccaec": "Impossible.",
+    "yarn:line:db79a905": "Comme... un citron ?",
+    "yarn:line:4d49ae72": "Si, c'est possible. Je n'ai jamais été aussi sûr de quoi que ce soit.",
+    "yarn:line:6128a09c": "Non. Un citron vert qui est jaune.",
+    "yarn:line:f718a7eb": "C'est vous le professeur. Vous devez avoir raison.",
+    "yarn:line:f0351f0c": "Impossible.",
+    "yarn:line:6605187b": "C'est un argument d'autorité fallacieux. Mais oui, j'ai raison.",
+    "yarn:line:15bcd86c": "Si, c'est possible. Je n'ai jamais été aussi sûr de quoi que ce soit."
+  }
+}
