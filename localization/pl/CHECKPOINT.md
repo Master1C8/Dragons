@@ -377,3 +377,9 @@ Author self-reviewed 43 IDs across the three `Conrad_5_required` relationship br
 Author self-reviewed 18 IDs in the Conrad and Ryan/Conrad relationship departures. The scale idiom is adapted in context; revisit in final scene review. This is author self-review, not independent audit.
 
 `translation.json` now has **1,561 / 1,947 IDs**, SHA-256 `9a256c0aaabb6e0ad20de5eaf077effce03f660b841b349f35aa0bb42901120c`. `resume-01/add-conrad-five-outros.py` and its map validate the preceding draft and paired readers; macOS accepts 1,537 and Windows 1,555 bindings. The complete guard reports 386 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Ryan food visit: basket and fruit — continuation
+
+Author self-reviewed 56 IDs in `Ryan_grab_basket`, `Ryan_grapes_dialog` and `Ryan_melon_dialog`, preserving the already reviewed bark, choices and markup. One apostrophe-only source variant has an explicit shared translation. This is author self-review, not independent audit.
+
+`translation.json` now has **1,617 / 1,947 IDs**, SHA-256 `b437724221b9f8010d2808f8ac9013957dd84de6beb0f3ed99c994b2bddc6df2`. `resume-01/add-ryan-food-basket-fruit.py` and its map validate the preceding draft and paired readers; macOS accepts 1,593 and Windows 1,611 bindings. The complete guard reports 330 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
