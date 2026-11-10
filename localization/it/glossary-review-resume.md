@@ -516,3 +516,7 @@ Both author layers reviewed all 45 paired source rows. Branch flags distinguish 
 ### Conrad fourth introduction — paired row-level author coverage
 
 Both author layers reviewed all 54 paired rows. The branch flags identify the relationships; Conrad calls the player a kobold, discusses Ryan or compliments the player depending on the branch, and requests a wash and sometimes the mount. The berry gloop does not establish a separate glossary concept. Markup and intimacy remain source-bound. No independent reviewer is claimed.
+
+### Alexander questions — individual row bindings
+
+The unchanged 77-row, six-entry two-author-read and subsequent full-entry/referent review recorded above are now bound to individual ordered source IDs and judgments. The head ornament is mistaken for anatomy but identifies family; alchemy is a subject Alexander teaches, and the player describes their work as his washer. The longer family-history speech does not establish other named film entries. Player gender remains unestablished. This material is reused author self-review, not independent review.

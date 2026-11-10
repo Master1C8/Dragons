@@ -21550,6 +21550,841 @@
       ]
     },
     {
+      "group": "Alexander_questions",
+      "orderedRowsSha256": "f994ff2404c87b478fe4f1138de047be0a28dac1ea0228fb54119b952154fe51",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-kobold",
+          "sourceEntrySha256": "655be37c2da8a22f692dbac404a5811b4227a465b44d7c6c85bc35af64f51df3",
+          "localeFieldsSha256": "8a1ac2a388a6bd2ea4517b1b90a93ddd9bb82862e39762fe8fcbf986a3f688b3"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        },
+        {
+          "id": "dnw-dragon-washer",
+          "sourceEntrySha256": "70f6f7b0f545b32f5a98233380b01eda5a369c67c4d2969c55e02a1782a18aa9",
+          "localeFieldsSha256": "2a85f72db9fb40d18dc57ace708e091d432e3a63aba15051e6b89ea74973f09a"
+        },
+        {
+          "id": "dnw-family-crest",
+          "sourceEntrySha256": "6c64b3f010048958681651d5ce643ac55ddaa98900feba2a8e2cc54d24b7e9c9",
+          "localeFieldsSha256": "4c824a83aa2bdbd707b0613ce7015a4d20f7d6c7c1fea3cabbb3641c59ecbc2d"
+        },
+        {
+          "id": "dnw-alchemy",
+          "sourceEntrySha256": "c778aac34e4a0a5b96970af09e963be978af86f2b7bf044c8211d932d758e003",
+          "localeFieldsSha256": "d6497069ac81a409bb3e91314f468780aa5faa48c42308a21806c60cafe60def"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:fc7aaaa0",
+          "pairedRowSha256": "99d19864d55ef2d8cb1a814596a7c9f752fb297cfd07ac4b810abac437faf334",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks about teaching."
+        },
+        {
+          "id": "yarn:line:daa040eb",
+          "pairedRowSha256": "c02f6232b194c3bf26a1ea74dfd45bf23521aab092f1a137b46f782105748fe7",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks whether Alexander likes purple."
+        },
+        {
+          "id": "yarn:line:21c0526b",
+          "pairedRowSha256": "3ea36ab4acc1420decef2720302e104489272a12030823d67f74416a0fbd2f81",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks whether Alexander likes being big."
+        },
+        {
+          "id": "yarn:line:c2bdc402",
+          "pairedRowSha256": "b535bcfe5119900f04316daacafc4d56b4e24ae99d6a88e9fe8878cfa566560c",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks what seven tastes like."
+        },
+        {
+          "id": "yarn:line:838cdf1b",
+          "pairedRowSha256": "a5a09259d8592d37a355eff2652bd3f9e7e8e24f4df3314ba589f532603bd4e9",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks Alexander what he thinks of them."
+        },
+        {
+          "id": "yarn:line:72a9b5bb",
+          "pairedRowSha256": "8e0567567058ea3afc8f2883b1df1060339c40634e3f46648c30375731f69fef",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks if Alexander is happy."
+        },
+        {
+          "id": "yarn:line:a5a8a9d5",
+          "pairedRowSha256": "34a37811f2bbca8d9a0fc4959cf621c952f293272d7053e6dac6a6f72acaf7a1",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-family-crest"
+          ],
+          "decision": "Player asks about Alexander’s crest."
+        },
+        {
+          "id": "yarn:line:66fb84fe",
+          "pairedRowSha256": "b1f0f01b495af14d51a87a2d2d15801ed96b110fc407c933327057dbabfaa077",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player ends the questions."
+        },
+        {
+          "id": "yarn:line:19f36dc0",
+          "pairedRowSha256": "bfb23fb425bad2b50ea2843ac280eaefa741bb572bb120959ffdc60b757f1cde",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Teaching is Alexander’s dream."
+        },
+        {
+          "id": "yarn:line:8fc36ab7",
+          "pairedRowSha256": "d9988d2db542346a9bdb60bb3b7116ff351e15cc12dcfb5444d5fe570ed1f1d3",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander values a positive role in many lives."
+        },
+        {
+          "id": "yarn:line:3592632e",
+          "pairedRowSha256": "84baf22f93f6845cace21e0448b88f6d706c74337e9181c759160f93127f6dbb",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander finds others looking up to him intimidating."
+        },
+        {
+          "id": "yarn:line:a3a26459",
+          "pairedRowSha256": "f0f789e6e9a0c4310deace638f7c48290d771e97d9d1ca51c565e4455cb8d41e",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "He means more than physical height."
+        },
+        {
+          "id": "yarn:line:003700c7",
+          "pairedRowSha256": "a86cc119bad70f7cc6284a3066755b7fa9e9e9b91474e60db9be567f90b910ed",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks what classes Alexander teaches."
+        },
+        {
+          "id": "yarn:line:ba66095e",
+          "pairedRowSha256": "ad85c612c7d6ae0d9f050f89054f2c9de5ea82d29981fed967453e028392d00d",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Player says he sets a good example."
+        },
+        {
+          "id": "yarn:line:960707b0",
+          "pairedRowSha256": "9b18d13849baa017c41d442b25d07a6a7da0a7ab8b499ee391b24bc5dedf4ecc",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-alchemy"
+          ],
+          "decision": "Alexander teaches alchemy and sometimes history."
+        },
+        {
+          "id": "yarn:line:2c560e29",
+          "pairedRowSha256": "87d15a373e16199b7bf8d6595256df4e223cfc70ba73956c8c47fc0be3406088",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "He wants to teach social sciences too."
+        },
+        {
+          "id": "yarn:line:2b7bb6ce",
+          "pairedRowSha256": "0e447ac676d41228ebcbeb56c43a6956e6a1b3c1fceeef549e6445db03773a56",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander finds that example frightening."
+        },
+        {
+          "id": "yarn:line:bd4bb1b9",
+          "pairedRowSha256": "61e64267aeed9c44218bdc6116de936804c38fbcfb27bee3f07aefa4606119b8",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander appreciates not fearing failure with the player."
+        },
+        {
+          "id": "yarn:line:4c90479c",
+          "pairedRowSha256": "6916839fec1857d097f8c50fe9496c8bedea16f7b3766ab8809ec4c2fb2eae77",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander asks if the question is because he is lavender."
+        },
+        {
+          "id": "yarn:line:f6c14e05",
+          "pairedRowSha256": "0a7267657e83445789f6b163d050d2109bdedc5c4f4dfc45853e6f40c6a8ad8b",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player says yes."
+        },
+        {
+          "id": "yarn:line:c3642dec",
+          "pairedRowSha256": "ea4861cda518d3495206c10e26d47c6d52e5e96c3253fc8134618effe7236cfa",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate choice says no."
+        },
+        {
+          "id": "yarn:line:60f14972",
+          "pairedRowSha256": "19d16625f921b70a6d9eaa55cafefe9d1a7876d0c61428a365cdb73d1f44328a",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander likes purple but considers it unrelated to his hue."
+        },
+        {
+          "id": "yarn:line:55542a9b",
+          "pairedRowSha256": "69d5273b27da43944bd650ae44b13445f5362ab6fae1af71b4c236a5b32cc204",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate branch gives the same distinction."
+        },
+        {
+          "id": "yarn:line:ef052302",
+          "pairedRowSha256": "f8392114f32df06413b306a31e796b6e5c7dcb39230673a7dcfa7170d6206080",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander asks the player about purple."
+        },
+        {
+          "id": "yarn:line:79352475",
+          "pairedRowSha256": "a8bd6efc22ed8adc8e74ed6d03488f0c6e372026e3d605c468f942d7aad62d9c",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player says yes."
+        },
+        {
+          "id": "yarn:line:9b915bf2",
+          "pairedRowSha256": "747549447c9b007085359fe1e36bc18168edc3ef2a32232b765949a3c6a46837",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate choice says no."
+        },
+        {
+          "id": "yarn:line:e8289be5",
+          "pairedRowSha256": "27f362bbc967101bcc292f59cdb9e0898e7207a5859a46f8fa9432b0b9c89377",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Positive response."
+        },
+        {
+          "id": "yarn:line:7e189c92",
+          "pairedRowSha256": "290200aa2563b97fde506c0a7793e6a455ec44d1b5fb83baf34604bead8af860",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause."
+        },
+        {
+          "id": "yarn:line:0da15c85",
+          "pairedRowSha256": "ca645fc52c0473766fd0f5cdf10ab7616e9c7c559ad9fead967730069ce00661",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Acceptance."
+        },
+        {
+          "id": "yarn:line:b7f0551c",
+          "pairedRowSha256": "b584c9f6ef5ba75909a4ca91a29f2e9f42b8b09f6ec57290310db0d77bdab519",
+          "speakerOrKind": "line",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause."
+        },
+        {
+          "id": "yarn:line:825536f5",
+          "pairedRowSha256": "a3eeacd8cff1b119b555e8d87d6d3934a814321c09c5f7344395f329d867f143",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander finds the question about size difficult."
+        },
+        {
+          "id": "yarn:line:14653182",
+          "pairedRowSha256": "e58197b191588754ce8a515762c58a14ea36787604bf2eed6cc4aef9463081b3",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "He enjoys aspects of it and the respect."
+        },
+        {
+          "id": "yarn:line:ae34381b",
+          "pairedRowSha256": "285bf05ca2106a641dc34eb522509b07a0511a9c5ad0f432da6a3c8c43b7fd1b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Expectations tied to appearance are stressful for him."
+        },
+        {
+          "id": "yarn:line:38043f6c",
+          "pairedRowSha256": "28dfc3371ff34540a42d0213fbe66a5635477684dbd9aa2db099f9bcd373708f",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player invites him to be himself."
+        },
+        {
+          "id": "yarn:line:a91980fc",
+          "pairedRowSha256": "0b06dddf2ed2ff55d411d4e39f4d6c5d28ca0a13a5325a6c1719ff92209d7056",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player likes him for who he is."
+        },
+        {
+          "id": "yarn:line:3f29878b",
+          "pairedRowSha256": "1fe6204e356d57d006c86f57b16d66492230152d51e36dde8939fb0e73000cf3",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander appreciates the remark."
+        },
+        {
+          "id": "yarn:line:548dc375",
+          "pairedRowSha256": "3c2a16be96dbbd1b92f83923e13555501df2487004a6dea0e67cf87a57f5faa1",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "He wants to be more open."
+        },
+        {
+          "id": "yarn:line:78eccd9b",
+          "pairedRowSha256": "04a6fbb8b63f81305c7ac97f880e0bb694938481b0049f0ca6acbf0a9da462a1",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander says seven tastes like yellow lime."
+        },
+        {
+          "id": "yarn:line:eedccaec",
+          "pairedRowSha256": "e6c5900825cf7ef55c093c75cae89418dbcc37e70a604ed9fb1ff545b5b950e8",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player expresses disbelief."
+        },
+        {
+          "id": "yarn:line:db79a905",
+          "pairedRowSha256": "78e72fc08315484d4876daec02ab3333c5ac273a05b6edfb46bfb21da5eeefe2",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks if he means lemon."
+        },
+        {
+          "id": "yarn:line:4d49ae72",
+          "pairedRowSha256": "4f58e9bff2662dc4ad66e7278ff6650cc4aa33f729d5e97c003b0addb4289b98",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander insists he is certain."
+        },
+        {
+          "id": "yarn:line:6128a09c",
+          "pairedRowSha256": "0a691ef377ff46688287f5d551195d29e32878989576988ea2380ac75e298004",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "He specifies a lime that is yellow."
+        },
+        {
+          "id": "yarn:line:f718a7eb",
+          "pairedRowSha256": "7a6dbbf24ca47df83b066998e69266964eea43ca5ee7c28c1013cf700a1a393c",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Player defers to Alexander as professor."
+        },
+        {
+          "id": "yarn:line:f0351f0c",
+          "pairedRowSha256": "cfe26e081f0139407b43535dde7eb09cb71132c208a1a7fb0e800280028d8bab",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate disbelief."
+        },
+        {
+          "id": "yarn:line:6605187b",
+          "pairedRowSha256": "be83326f4daac21198485382ad5214a4f7fbd35ec0280959b6540e2607587caf",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander identifies an appeal to authority but agrees he is correct."
+        },
+        {
+          "id": "yarn:line:15bcd86c",
+          "pairedRowSha256": "50ee70e7e6f3e8b3d5c11c8cf8cb876dd34f2e724f44465630167bbf0d95e71c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate insistence."
+        },
+        {
+          "id": "yarn:line:39ddd682",
+          "pairedRowSha256": "9342d33a8c1521c68b751431355db5c3f02fd0c9e64693816353ae7ecdd5b192",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander begins describing the player."
+        },
+        {
+          "id": "yarn:line:afedd1f5",
+          "pairedRowSha256": "29e5194a51366c3e7e2a3b3308c6d9f5140d0c06692c252ee9261482b12f4bcc",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "He calls the player an anomaly."
+        },
+        {
+          "id": "yarn:line:0c78b56b",
+          "pairedRowSha256": "20ea13e04204787fb90ffb07477161f20af346e780d357139b52c323e1127901",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player is puzzled."
+        },
+        {
+          "id": "yarn:line:6b6dd8bc",
+          "pairedRowSha256": "f655b15fb76cb2c42621ab225c73e9db8367c1e3831477771b5265e78dbde632",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks if it is good."
+        },
+        {
+          "id": "yarn:line:9a48b21c",
+          "pairedRowSha256": "0497ea5081806ac5984434e46c11ca7308713fac1686cac8e095d8bf8be97467",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander explains he means unique."
+        },
+        {
+          "id": "yarn:line:2019bb85",
+          "pairedRowSha256": "e8a5d3b6e6581905280b5416dd6d3bc589ceb36fb57af554412ffc2aa6416ae6",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks if unique is positive."
+        },
+        {
+          "id": "yarn:line:27340362",
+          "pairedRowSha256": "b6014a7173ca054b334a162e8870bb75b396e2e27eacaf33ef76331f35c685c8",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate choice asks if it is negative."
+        },
+        {
+          "id": "yarn:line:b629bcf2",
+          "pairedRowSha256": "79b3867cfe31eb44e7109c3c0933d21ad06acda19c4d716c5c28195639db1500",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander says the player is wonderful."
+        },
+        {
+          "id": "yarn:line:b1040415",
+          "pairedRowSha256": "bdf4dc2d13e5b8980f7d9db5cd5986fea8b0922284125abae6b0a0f39d960fd7",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander emphatically reassures the player."
+        },
+        {
+          "id": "yarn:line:fd5ddfcb",
+          "pairedRowSha256": "620493a291c414742995f0386764cb5dd70ae2c1155b56624aea3fe40acd9aa8",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander values the player’s company."
+        },
+        {
+          "id": "yarn:line:470cd652",
+          "pairedRowSha256": "4de5a77aa5e1eedd44e312fc76bf035da924673c676a7ca36195019891185ded",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander says the player expects only that he be himself."
+        },
+        {
+          "id": "yarn:line:d13cd125",
+          "pairedRowSha256": "0f19af6f289e47d523a8a3ed461b7e9406f7646763d0006a1f8b032a73886754",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "He completes the thought: himself."
+        },
+        {
+          "id": "yarn:line:e499b2cc",
+          "pairedRowSha256": "f2f77a2dd0c94fa9eb44e3ff348cca4221a6f2392f6275c3fc381dedd4372164",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander answers that he is happy."
+        },
+        {
+          "id": "yarn:line:5ec8bb55",
+          "pairedRowSha256": "fbbfef612c547d56d9ad3334ba090635510f3abde546cec0fa847572dfc2b631",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "He attributes part of his happiness to the player."
+        },
+        {
+          "id": "yarn:line:c8f8bc22",
+          "pairedRowSha256": "c171c5e48c2f40e6d5de4db2c8e6a961ace9be179053af88edbb07a71646efa9",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-dragon-washer"
+          ],
+          "decision": "Player describes themself as his washer."
+        },
+        {
+          "id": "yarn:line:2a5cc3a5",
+          "pairedRowSha256": "9451e05c2c20f47f2e6a934cafda94aeb02ae44bf8956313e5bc26668944b0f4",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player finds the remark sweet."
+        },
+        {
+          "id": "yarn:line:59e503b2",
+          "pairedRowSha256": "861178de35603eca8e082bfdbdd188a29ecb4c7c8307eb91cd7f680b08c045b8",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander values being able to open up."
+        },
+        {
+          "id": "yarn:line:cfd504c5",
+          "pairedRowSha256": "cb7459fe026b70045220b27467f373360406c73cde5bd86988d3299e85e8dd10",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "He says opening up helps."
+        },
+        {
+          "id": "yarn:line:bc6cc4d2",
+          "pairedRowSha256": "377ff11de6415adb58b45cfa52cfcea241047a1308a5428621089e03ee449897",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "He calls the player sweet."
+        },
+        {
+          "id": "yarn:line:063dcd4b",
+          "pairedRowSha256": "a3c39da51795eff3cf8e61a82bfe7c4865378fb221157a8da4dcf1d49e78aad6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate wording values opening up."
+        },
+        {
+          "id": "yarn:line:900dca3c",
+          "pairedRowSha256": "85d74c07592b0f6d580c889a206ead46939c702e300f6ed6d1daef87e30f2f66",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alternate continuation says it helps."
+        },
+        {
+          "id": "yarn:line:3398aea2",
+          "pairedRowSha256": "bcaacc5ae18cec6568c26cd01c68f618293e7fe0b19a31f5dcd7280db83b908f",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander thanks the player."
+        },
+        {
+          "id": "yarn:line:1ff9a04c",
+          "pairedRowSha256": "018e4df34acec982ffd9d081126b33e329ad66f9ee617a9bf9a5fdcc4a3204c8",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-family-crest"
+          ],
+          "decision": "Alexander identifies the crest around his head."
+        },
+        {
+          "id": "yarn:line:89c9a73b",
+          "pairedRowSha256": "7d0b27246ee58dd8382762c82569e1fd411534f051d4fe585bc81a5d3bdca175",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-family-crest"
+          ],
+          "decision": "He says people mistake it for a body part."
+        },
+        {
+          "id": "yarn:line:18d418ab",
+          "pairedRowSha256": "2b23b8204ab422eab992a6a2f44f9268460b22e26a1e1e12e530a53219d84a9d",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-family-crest"
+          ],
+          "decision": "He identifies it as an ornamental family crest."
+        },
+        {
+          "id": "yarn:line:8ee41fdc",
+          "pairedRowSha256": "7278f8fb684f20d631b745396a6652ae8a5df2a18036c7aac975f90817177411",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-family-crest",
+            "dnw-dragon"
+          ],
+          "decision": "He explains dragon family ornaments and heritage, then a diminishing allusion; preserve sizes."
+        },
+        {
+          "id": "yarn:line:e90fee8e",
+          "pairedRowSha256": "317c6810f56cbcc8900a2274020d15de6529adab4f11241cd7b2a1560baded77",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player reacts."
+        },
+        {
+          "id": "yarn:line:535ee717",
+          "pairedRowSha256": "4cbdadfe9de1bdd99967b262202cda658e61a6634afd87e80d76747b64ba5236",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Player asks for repetition."
+        },
+        {
+          "id": "yarn:line:7f3fe9f9",
+          "pairedRowSha256": "c6f4368250430c101428a4a58e8f0bdd08a8d3d7406c20f5116e61fadc0b9689",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander apologizes for his enthusiasm."
+        },
+        {
+          "id": "yarn:line:c56ee060",
+          "pairedRowSha256": "6073c357365a1924807c4ffcc3d42eacbcf452c8de244cd3495332799a7e4e3c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-family-crest"
+          ],
+          "decision": "He is glad the player likes his crest."
+        },
+        {
+          "id": "yarn:line:f0cb8389",
+          "pairedRowSha256": "f61da6f027a4e71f3ee18ad32eba876cb99e76e30ad469ed72e660a6c5e55fa4",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "He declines to repeat the explanation."
+        }
+      ]
+    },
+    {
       "group": "UI/level0",
       "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
       "applicableEntries": [],
