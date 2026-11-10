@@ -94,3 +94,7 @@ The college introduction's nine direct IDs, two contextual lines and two unchang
 ### Conrad wordplay batch
 
 The dirty double meaning, professional double meaning and big-C nickname cases are author self-reviewed in [special-conrad-wordplay.md](special-conrad-wordplay.md). All 41 direct IDs passed source-bound readers and object read-back on both builds; an emptied progressive markup region failed the intended guard on each. Current total: 157/1,947 authored IDs and 18/27 special decisions. Nine special decisions precede ordinary text. Independent game-text audit, final packages and final runtime/visual checks remain pending.
+
+### Ryan date and yip batch
+
+The date wordplay, film choices, kobold vocalization and related film title are author self-reviewed in [special-date-yip.md](special-date-yip.md). Their 48 direct IDs and one earlier glossary-spelling correction passed both source-bound readers and object read-backs; an introduced film-title colon was rejected at the intended delimiter guard on both builds. Current total: 205/1,947 authored IDs and 22/27 special decisions. Five decisions precede ordinary text. Independent game-text audit, final packages and final runtime/visual checks remain pending.
