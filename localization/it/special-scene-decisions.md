@@ -96,3 +96,57 @@ Keep both identical response pairs distinct and preserve `$Yarn.Internal.Once.li
 ## Gate status
 
 Seven of 27 cases have author-reviewed wording recorded above; the remaining 20 require complete contextual decisions. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
+
+## Alexander's family crest
+
+Source case `alexander-family-crest`, node `Alexander_questions`, instructions 256–289; both stock English values match. Author self-review: the ornament around his head is a family crest, not simply a heraldic shield; the runaway explanation shrinks in seven stages, including the four-nations allusion. The player's request to repeat and Alexander's refusal stay separate. Wording:
+
+| ID | Italian wording |
+|---|---|
+| `a5a8a9d5` | Bella la tua cresta. Che cos'è? |
+| `1ff9a04c` | Oh, la cresta intorno alla mia testa? |
+| `89c9a73b` | Molti pensano che faccia parte del mio corpo. |
+| `18d418ab` | Invece è ornamentale! La mia cresta di famiglia. Vedi... |
+| `8ee41fdc` | La storia dei draghi è complessa. Le creste ornamentali <size=85%> sono spesso <size=70%> indossate dai draghi per <size=55%>indicare a quale famiglia appartengono! <size=40%> Sono un segno interessante della loro eredità culturale <size=35%> e familiare. Mi sono spesso chiesto se dovrei continuare a portare la mia. <size=20%> Ma nella tradizione dei draghi i legami culturali e familiari sono considerati importanti! Perciò devo rispettarli. <size=10%> Acqua. Terra. Fuoco. Aria. Tanto tempo fa, le quattro nazioni vivevano insieme in armonia. Poi tutto cambiò quando la Nazione del Fuoco attaccò. |
+| `e90fee8e` | Oh. |
+| `535ee717` | Puoi ripetere? |
+| `7f3fe9f9` | Ah, scusa, sono appassionato di queste cose. |
+| `c56ee060` | Mi fa piacere che la mia cresta ti piaccia. |
+| `f0cb8389` | ...No |
+
+Keep all seven size tags in their original order and with nonempty successive regions, stock identities and controls. Positive: both response paths retain their own lines and the allusion is present at 10%; negative: a dropped size stage, missing allusion or replacement of the physical crest with a mere coat of arms fails. Paired text-path feasibility is established; authored-package validation, actual legibility and both branches in final runtime remain pending.
+
+## Alexander's college introduction
+
+Source case `alexander-college-self-introduction`, node `Alexander_2`, identical paired node SHA-256 `4518c325b247a32e3841ac1263ab1d060adb09074e167ee1e0d26bd8336afeae`. The glossary names the institution “College comunitario di taumaturgia di Burnswick”. The college question and “Okay” have distinct stock destinations 10 and 18; the boast and separate name are successive beats, not an actual new speaker identity. Author self-review of the full branch:
+
+| ID | Italian wording |
+|---|---|
+| `7e9389a7` | Quale college? |
+| `f64a5b30` | Va bene |
+| `dd06ed39` | Il College comunitario di taumaturgia di Burnswick, naturalmente! |
+| `4b36ea4e` | Il college più prestigioso, con professori prestigiosi come me: |
+| `f167e3d7` | Alexander! |
+| `6757e4a0` | ... |
+| `607a5c47` | Bene, non posso permettere che il College comunitario di taumaturgia di Burnswick sappia che il suo miglior professore, Alexander, ha causato un altro incidente. |
+| `85f39b27` | ... |
+| `13c39c50` | Oh, accidenti, dimentica quello che ho detto! |
+
+The exact source Yarn table value for `4b36ea4e` remains unchanged; its localized colon-ended sentence belongs in the speaker locale under the same ID, for the presenter to display in the body without a character annotation, as specified in `localization/evidence/alexander-colon-display-20261110.md`. Positive: the question leads to the college, full boast, separate name and pause in stock order; the other option follows its own continuation. Negative: treating the boast as a real speaker, changing its source prefix or swapping destinations fails. Existing paired adapter fixture and controlled VM evidence support feasibility; final authored-package and standalone-node presentation remain unverified.
+
+## Ryan's mouth-full speech
+
+Source case `mouth-full-speech`, node `Ryan_4_intro`; both English bindings agree. Author self-review: Ryan's basket is identifiable, his difficulty speaking and thanks carry a consistent, intelligible impediment, and the two opening choices and two gate choices remain distinct. The basket/pose are stock scene dependencies, not edited textures.
+
+| ID | Italian wording |
+|---|---|
+| `390f05be` | Accidenti... cos'hai in bocca? |
+| `af3f02c9` | Ehi Ryan, cos'hai lì? |
+| `156e0b50` | Cethtino da picnic- |
+| `835e0c27` | Non riethco a parlare bene. |
+| `20cb68b9` | mi fai entrare? |
+| `b6fb6fce` | Oh! Va bene. Apro il cancello! |
+| `0caa6657` | Certo, te lo apro subito. |
+| `9a9a6120` | Grathie! |
+
+Keep the original choice IDs, controls and order; do not invent a speaker for another line. Positive: either opening reaches the basket explanation and either gate reply reaches the impeded thanks; negative: intelligibility lost, basket omitted or a choice redirected fails. Paired dialogue and choice renderer feasibility is bounded; authored-package checks, pose, actual runtime and fit remain pending.

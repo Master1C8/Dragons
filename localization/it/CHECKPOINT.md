@@ -1,6 +1,6 @@
 # Italian localization checkpoint
 
-## Current decision — resume 09
+## Historical decision — resume 09 (superseded by resume 11)
 
 The shared source and exact-preservation **authoring entry gate passed** at `15c330e`, with the Italian worklist binding verified in commit `1bf8910` and [source-readiness-resume.md](source-readiness-resume.md). The current worklist, v42 inventory and Yarn scope SHA-256 values still match the input bindings below. Historical source-open statements in prior resume entries are superseded for this pinned scope; final artifact-specific preservation and package validation remain separate. The bounded Italian renderer probe passed as recorded below.
 
@@ -14,7 +14,7 @@ Both stock programs identify `0274cacd` and `9444cdba` as player choices to dest
 
 ## Resume 11 — special-scene authoring in progress
 
-[Special-scene decisions](special-scene-decisions.md) contain author-reviewed target wording and source-bound positive/negative contracts for seven of 27 groups. They are preparatory and have not been inserted into a package. The remaining 20 groups, including overlapping contextual dependencies, must be reviewed before ordinary text. Translation remains 0/1,947 applied; package, runtime, visual and independent audit remain pending.
+[Special-scene decisions](special-scene-decisions.md) contain author-reviewed target wording and source-bound positive/negative contracts for ten of 27 groups. They are preparatory and have not been inserted into a package. The remaining 17 groups, including overlapping contextual dependencies, must be reviewed before ordinary text. Translation remains 0/1,947 applied; package, runtime, visual and independent audit remain pending.
 
 ## Resume 11 — current glossary decision
 
