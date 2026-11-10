@@ -287,3 +287,9 @@ Author self-reviewed 34 additional IDs across `RyanMuddy_Intro`, `RyanMuddy_Outr
 Author self-reviewed 22 remaining IDs in the `RyanMuddy` idle, approach and touch groups. The reference to Max retains the source's unspecified grammatical gender, and the wash instructions remain consistent with the main encounter. This is author self-review, not independent audit.
 
 `translation.json` now has **1,029 / 1,947 IDs**, SHA-256 `c33ae8dc641631529f5abcbe8169281a64b09360823ae2c609f43978916206e9`. `resume-01/add-ryan-muddy-idle.py` and `resume-01/ryan-muddy-idle-map.py` validate the preceding draft and paired readers; macOS accepts 1,029 and Windows 1,023 bindings. The complete guard reports 918 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Ryan's alchemy accident — continuation
+
+Author self-reviewed 25 IDs in the `RyanExploded` arrival, departure and unfinished-wash branches, retaining the alchemist's unspecified gender and both response choices. This is author self-review, not independent audit.
+
+`translation.json` now has **1,054 / 1,947 IDs**, SHA-256 `14eb4599c21d7365dcf07cb45cc410643f695158a8614728264a9554e8c8795f`. `resume-01/add-ryan-explosion.py` and `resume-01/ryan-explosion-map.py` validate the preceding draft and paired readers; macOS accepts 1,054 and Windows 1,048 bindings. The complete guard reports 893 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
