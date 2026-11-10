@@ -9,12 +9,16 @@
 | source | **Passed for the pinned v42 inputs.** The accepted shared source-readiness evidence and reconciliation at `15c330ef17ca031b547dae23af30f7315faa6d3e` supersede the provisional `bfabe4d` boundary. See `localization/evidence/source-readiness-v42-20261110.md`. |
 | glossary | **Self-review layers complete under the owner’s current instruction.** The two earlier 27-entry author layers match every per-entry digest; two separate affected-closure author reads cover the anonymous role and related rules. See `glossary-review.md` for evidence, source-context adjudication and limitations. No independent review is claimed. The final game-text independent audit remains required. |
 | translate-edit | **Draft complete: 1,947/1,947 IDs authored and self-edited.** All 246 direct indexed authoring rows are present and the adaptation entry review is complete; semantic and runtime closure remain pending. See `special-scenes.md` and `special-scene-reconciliation.json`. No source-passthrough counts as translation. |
-| editorial | Author semantic self-review in progress: 673/1,947 source-bound rows reviewed; complete semantic closure and independent diff/delta audit remain pending. |
+| editorial | Author semantic self-review in progress: 1,035/1,947 source-bound rows reviewed; complete semantic closure and independent diff/delta audit remain pending. |
 | resources | Final corpus-bound glyph coverage and fit pending. Textures with text are excluded and must remain untouched. |
 | package | Not built; macOS app and Windows ZIP read-back pending. |
 | runtime / visual | Representative synthetic German checks passed on macOS and Windows CrossOver; final corpus and package runtime, complete visual review and native Windows remain unrun. Original owner game processes must not be operated or stopped. |
 | screenshot-upload / screenshot-review | Not run; upload is not authorized. |
 | delivery | Incomplete. No installation, release or publication. |
+
+## 2026-11-10 semantic author review: Conrad scenes
+
+Reviewed worklist rows 673–1034 (362 IDs), including Conrad’s introductions, route departures, intimate interactions and required conversations. Exact IDs and findings are recorded in `receipts/semantic-self-review-673-1034.json`; the eight source variants are punctuation or clear typos. Corrected `yarn:line:de25dacd` to `Nein. Geht es nicht. Hast du einen Verbandskasten oder nicht?` in reply to whether Conrad is okay. The full draft SHA-256 is `17cd7c687560565daf6640d0c31fc6f9791453f069686d31fef81da3074af9b2`. The pinned Yarn verifier and both ordered-object readbacks passed; see `receipts/semantic-conrad-1947.json`. New partial assets were removed after readback under the runtime lock. Earlier review receipts bind the previous whole-file hash; the only subsequent text change is this ID outside their ranges. UI/settings bindings are unchanged. Author self-review covers 1,035/1,947 rows; remaining 912 rows and cross-group closure are open. Independent review, complete packages and final runtime/visual checks remain pending.
 
 ## 2026-11-10 semantic author review: Alexander and Conrad continuations
 
@@ -47,7 +51,7 @@ The pinned `verify_authored_yarn.py` passed; both stock builds' partial Yarn ass
 
 ## Resume
 
-Use the accepted source-readiness receipt and the 27-case reconciliation. Continue semantic author self-review from zero-based worklist row 673, read back both builds after text corrections, and maintain distinct editorial, package and runtime statuses. The author self-review layers and owner-approved nickname remain valid; the final independent game-text audit is pending. Coordinate large assets and isolated runtime with the exact cooperative runtime lock. Acquire the canonical Git lock before staging, and hold it through full index review, commit and committed-tree verification.
+Use the accepted source-readiness receipt and the 27-case reconciliation. Continue semantic author self-review from zero-based worklist row 1035, read back both builds after text corrections, and maintain distinct editorial, package and runtime statuses. The author self-review layers and owner-approved nickname remain valid; the final independent game-text audit is pending. Coordinate large assets and isolated runtime with the exact cooperative runtime lock. Acquire the canonical Git lock before staging, and hold it through full index review, commit and committed-tree verification.
 
 ## 2026-11-10 remaining dialogue interactions
 
