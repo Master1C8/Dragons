@@ -398,3 +398,7 @@ Author self-reviewed 42 IDs in the egg, ham and `RyanDate_*` groups. One apostro
 ### Conrad follow-up batch
 
 Author self-reviewed 32 additional IDs for the Ryan relationship conversation and Conrad's third encounter follow-up; one apostrophe-only source variant has an explicit shared target. This is not an independent audit. The draft contains 1,780/1,947 IDs, SHA-256 `57f7a3aeb7c3be2998c6692ab382f49c9e0d4318d6b84dfe65647ca0e0ab26fb`. Source-bound readers accepted 1,756 macOS and 1,774 Windows bindings; the complete guard reports 167 missing. Final packages, translated runtime, visual fit and independent audit remain open.
+
+### Visit and interaction reactions batch
+
+Author self-reviewed 82 IDs covering visit reactions, device use and refusals, dirty/soapy exits, cold-water reactions and Ryan's date arrival. An English typo differs between builds for one line and has a reviewed shared target. This is not independent audit. Draft: 1,862/1,947 IDs; SHA-256 `386f05cebba88e12f928935b67df7ce39b27dd0935550d4ee70f7f47719915fd`. Source-bound readers accepted 1,838 macOS and 1,856 Windows bindings, and the complete guard reports 85 missing. Complete packages, translated runtime, visual fit and independent audit remain open.
