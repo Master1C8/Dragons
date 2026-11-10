@@ -391,3 +391,7 @@ Both paired builds of `Alexander_3_Outro`, `Conrad_Intro_2` and `Mount_Alexander
 ### Resume 08: Ryan and Conrad introductory rows (author self-reviews)
 
 Both paired builds of `Conrad_4_Conrad_Romanced`, `RyanExploded_Intro` and `RyanMuddy_Intro` were read: three groups / 36 rows. Ryan's unnamed alchemist (`line:e02f464d`) is not assigned Alexander's identity on this evidence; the “they” in `line:cc4e48a3` plausibly refers to the alchemist but remains unresolved. Ryan's report of plural kobolds does not identify other individuals. The player's self-identification and Yip and the Drag'N Wash name are indexed, as is Conrad's proposed date after a wash. The bound Italian fields establish no correction in this unit. Both layers are author self-reviews, not independent acceptance.
+
+### Resume 08: UI and managed-label rows (author self-reviews)
+
+The available paired source rows in `UI/level0`, `UI/level1`, `UI/level3`–`UI/level6`, `Managed display` and `Speaker labels` were read: eight groups / 44 rows. The receipt preserves Windows-only label rows as such. Cleaning, soap and debris labels are wash-service states without an identified customer; the explicit sexual-act status is not itself Conrad's euphemism. The two speaker labels identify Ryan and Conrad, but cannot assign other unnamed lines. Remaining labels are controls, save status or diagnostics. The bound Italian character and wash fields establish no correction in this unit. Both layers are author self-reviews, not independent acceptance.

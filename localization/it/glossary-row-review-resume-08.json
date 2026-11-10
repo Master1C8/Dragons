@@ -7506,6 +7506,465 @@
           "decision": "Ryan thanks the player and waits."
         }
       ]
+    },
+    {
+      "group": "UI/level0",
+      "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
+      "applicableEntries": [],
+      "groupContext": "Each actual source label in this UI group was read; a label alone does not assign a customer. Platform-specific absence is retained in the bound paired row.",
+      "layer1": "Author source self-review: every paired source row in this UI group was read and classified below.",
+      "layer2": "Author Italian glossary-field self-review: bound applicable character and wash fields were compared to these uses; no correction was established. This is not independent review.",
+      "rows": [
+        {
+          "id": "ui:645a13dc409be75a17b82b62a9b88c5ebb291d34d5ac2201679fd6b8cb53d59b",
+          "pairedRowSha256": "27795e63a74eca1c7914fdd1ef3bd62647f08288d7afcd0b69fc621309bbafc7",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Save-deletion confirmation; no in-world character is identified."
+        },
+        {
+          "id": "ui:bbf61fe440d79dd8cfa686d861cc9f0ca5ad27cdbbf3543a01ec09c59277f0e2",
+          "pairedRowSha256": "957e81501b848989081a6b0cd807803b7122613dba8c5ac3228b3eac5b3fa127",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Loading status; no in-world speaker or character referent."
+        },
+        {
+          "id": "ui:3944a555d130038af2323d988762ab1967719d178270e20fc65cd74b7c5efd27",
+          "pairedRowSha256": "c50d59f99916effa3aa4e5f18314a9045ccddda68689de5a392628d780cf05e0",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "New save-slot label; no in-world character referent."
+        },
+        {
+          "id": "ui:4cbc97aea69bccfd4defdb896f11600bdcc0964b970916200b59966d037b24e5",
+          "pairedRowSha256": "b2a7b6b2a7b6b35f544afde44a8e2317282d9558935b6f81f71d60fc137573fb",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "New save-slot label; no in-world character referent."
+        },
+        {
+          "id": "ui:1f92f7d859adfd67efa3a3f37608780f984d3d2e55b5a74774f0dfa70d9d4f86",
+          "pairedRowSha256": "c19bbb5cb76fdaed376fac9fb0b8904cb86c7f1470db26565cd9aa7aa7511092",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "New save-slot label; no in-world character referent."
+        }
+      ]
+    },
+    {
+      "group": "UI/level1",
+      "orderedRowsSha256": "a444c1f7d65d034903fb516e32fadf1bddbaae46fde6fd3de1fa0ad4c5087d0c",
+      "applicableEntries": [
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        }
+      ],
+      "groupContext": "Each actual source label in this UI group was read; a label alone does not assign a customer. Platform-specific absence is retained in the bound paired row.",
+      "layer1": "Author source self-review: every paired source row in this UI group was read and classified below.",
+      "layer2": "Author Italian glossary-field self-review: bound applicable character and wash fields were compared to these uses; no correction was established. This is not independent review.",
+      "rows": [
+        {
+          "id": "ui:f4e191bd14f86068c824ca261b847972b004ffb7d186a8a31d90af9a0d9f9010",
+          "pairedRowSha256": "4780327be68f3522826a2046e50de390f7530401c38b4f6edda6a3b0fe1a7c13",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Service status for debris; no particular customer is identified by this label."
+        },
+        {
+          "id": "ui:ad720d0209c7f0ef40671a1e4a444c239659978cc6dd53c46239a74e5fd13a0e",
+          "pairedRowSha256": "0f429e0dc4529caa1ad66376180c1e458bf11a9fe09a2bcb1aeba3e738181e74",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Service status requiring bandages; the label alone does not identify the customer."
+        },
+        {
+          "id": "ui:69f1314d4dd705923a4ad900195b60b799274814cdc70450a45934872543ba5b",
+          "pairedRowSha256": "8665f18916f802b6fe5b72a7d1ce46db4d68dc87f9737cb04b4895c39bee489d",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Service status for an explicit sexual act; it does not itself use Conrad’s special-endings euphemism or identify a customer."
+        },
+        {
+          "id": "ui:531dfd2997138aaae4c54775f8fb5aa256072213a7ccc68c6cd5db75a2e73dd7",
+          "pairedRowSha256": "111c9129566ca6b8d79afd5a034cef876adea2673558835852d0e4192abde4b9",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Service status requesting conversation; no individual customer is identified by the label."
+        },
+        {
+          "id": "ui:4d94ee6bd8db58cda14fcf5d0d02f53fc4b026b2bd0540bff954eeba84fc1b0d",
+          "pairedRowSha256": "25ac6c77a94e3e246b2de96b2e2af2929d388960641349c17e00be5225aefff3",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Service status for soap remaining on a customer; no individual is identified by the label."
+        },
+        {
+          "id": "ui:fc0ecfc87fe3e1cf62c7713338835f45a3737876a8090db81160d8e181ea40f9",
+          "pairedRowSha256": "815c1373acebb4c16b57176b11ee65e5fd728cafcd49e266b84a7f53c992c7dd",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Service cleanliness status; no individual customer is identified by the label."
+        },
+        {
+          "id": "ui:db32817576954957fb6586821ddb11b9550437c44b9c6f74fa963624b9e56042",
+          "pairedRowSha256": "6a50472ec9a6f1a7a7bc177d368fda2e538efdc7782e7a40bf6da5fa0df7eb51",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Loading status; no in-world speaker or character referent."
+        },
+        {
+          "id": "ui:41ed52127dd1178299357bb860dc070fe829c6bbef5617334415606ea50cd809",
+          "pairedRowSha256": "834a03aaefe21559494382c60a05685d31557b3aa9e20db6f8ffd4558897139a",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:5fd5493a6c16ac950d562e26c192b5eef7513a40b57cde2b05e43797bdc62937",
+          "pairedRowSha256": "e4bac0b5577e19971e99e567cd330e3b20d1ffe8456fc1900f9d4e6151d97764",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:dbc8e2e632eba7248ae6e777ca8041471fc49e06923dea63bd14f13505bfae9e",
+          "pairedRowSha256": "28e0e72d9fd592085a468aa5fa73414eedc4f43d8dbedfd65d4c5b5e41b9ed69",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:c2bfc7e986446b28c0b6877491ef21f63ca440eec868c6beef1c5f0e0f02c8e1",
+          "pairedRowSha256": "baa527724e580ac4781816952c5fcbd76e3fef0a16a89e8c5713212807e520f7",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu title; no in-world character referent."
+        }
+      ]
+    },
+    {
+      "group": "UI/level3",
+      "orderedRowsSha256": "563b7ca82f127f6580d0c4750381af0a9e7926184c4e62fa34f14e2b561723ed",
+      "applicableEntries": [],
+      "groupContext": "Each actual source label in this UI group was read; a label alone does not assign a customer. Platform-specific absence is retained in the bound paired row.",
+      "layer1": "Author source self-review: every paired source row in this UI group was read and classified below.",
+      "layer2": "Author Italian glossary-field self-review: bound applicable character and wash fields were compared to these uses; no correction was established. This is not independent review.",
+      "rows": [
+        {
+          "id": "ui:3dac16198d5c87a54f3eede368305995ddb84623e2fbe2da6542bdc76551bf54",
+          "pairedRowSha256": "d96d5d95b301b26e8fdb430da62c81934fdb9aa11082576a0376ed8aa2c5532e",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Loading status; no in-world speaker or character referent."
+        },
+        {
+          "id": "ui:4a921103a9aa96907e9d82f2d1d1b8340b0b36ac06710852b9f4a2e89bdad19f",
+          "pairedRowSha256": "acf29cf503a9998288c025d30c6229d67d0b0831f2750383abac1999c7be8534",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Interaction prompt to the user; no specific in-world character is identified."
+        },
+        {
+          "id": "ui:c87bab05bae42d00b2081c471cf7d5c289cd78b2be3b9962d498937c44bbe229",
+          "pairedRowSha256": "b8d916131ba519979d138db667ef6a9e24c03341b5cae4807c8cc33026186ce0",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:8f40cad2d5dd6617ec5b6a2a0a4fe2f4523d6357579ed14145427e2ddfdeca3a",
+          "pairedRowSha256": "6039b937144fefef06b0301ce170cc11f87940c8fcf9bd3121209a9eb8c82ca4",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:ca49bdab1b57af8734410d7b777864cf8f1a1397551c1da7e492bb1827c21b28",
+          "pairedRowSha256": "390398de0f0841db40e40787022588147465488f0d9d4db51ee4b6a46c56ca60",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:4d54a1b69a40f476c20639226acf86e375efff10c5a5d60b7001d932abfc015e",
+          "pairedRowSha256": "bb1e338b1bf9884d2e36cf12f66528182974d5e95333a141ffaad14bba05733c",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu title; no in-world character referent."
+        }
+      ]
+    },
+    {
+      "group": "UI/level4",
+      "orderedRowsSha256": "2e45ad227e9c5f8cf097d0b71d9a8d58dbbed5adf4691a5318336d96e901704f",
+      "applicableEntries": [],
+      "groupContext": "Each actual source label in this UI group was read; a label alone does not assign a customer. Platform-specific absence is retained in the bound paired row.",
+      "layer1": "Author source self-review: every paired source row in this UI group was read and classified below.",
+      "layer2": "Author Italian glossary-field self-review: bound applicable character and wash fields were compared to these uses; no correction was established. This is not independent review.",
+      "rows": [
+        {
+          "id": "ui:048030a3483212dcb7007d27728bf6ef1481ee80d85caa04a5cdf9cf84f6aed2",
+          "pairedRowSha256": "f4029b1163d1bad27a0581d7c12bac22bb88c1cdfd5e5c1d98eac42d460eeb4b",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Loading status; no in-world speaker or character referent."
+        },
+        {
+          "id": "ui:6f0a447b194e1a182a43642ef885188a8c5a64f6dee4e38f684a77ce64c5bb3a",
+          "pairedRowSha256": "64d402c8d66e1b03f25c5a8816ad36a915a328890e1fbf1b052a4fd7f353a306",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Interaction prompt to the user; no specific in-world character is identified."
+        },
+        {
+          "id": "ui:8f09d1c6ce9d6b3c21fab26ffa688d073999f7f45433f4b6788d127f35e32729",
+          "pairedRowSha256": "de5978ed433a511f293866e0a3b50d705944f837c1da82fda04008b8d9b76af1",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:70db4d3b0f83cc769808dd264c2cfec4a32f196d07cb37c8fa806635f6781bee",
+          "pairedRowSha256": "f7a3a1da486f367e9d2131cb296e8bc915d99f6d0041b8e64ac7bb3b46ad280c",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:c02c2b4f035db95cc12fe5bbccd9c662aba961e7bb76d2e23b6337e22fb9e26b",
+          "pairedRowSha256": "65f356f7e1ff43e999ea78deea827b49ce7db077ac7dbebdb4a99a7b63d7f7c7",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:b9fb36e3cfa3b525b39606e6d08d6c4b137a94e2f5755b623c1bbc190638eeb7",
+          "pairedRowSha256": "021d2dfa1efb0cd55b993b2f051235e5e2ae5bc1b0905a3ce6f0977aad44efe7",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu title; no in-world character referent."
+        }
+      ]
+    },
+    {
+      "group": "UI/level5",
+      "orderedRowsSha256": "56fc06803543d4e66c0f27443ca9781f2957e2fb3aae690022a8a24313aaeb6e",
+      "applicableEntries": [],
+      "groupContext": "Each actual source label in this UI group was read; a label alone does not assign a customer. Platform-specific absence is retained in the bound paired row.",
+      "layer1": "Author source self-review: every paired source row in this UI group was read and classified below.",
+      "layer2": "Author Italian glossary-field self-review: bound applicable character and wash fields were compared to these uses; no correction was established. This is not independent review.",
+      "rows": [
+        {
+          "id": "ui:ec8454cebb710da010c8b5bbcc657740b1da015f0a13274ae24139e3b1cae3b7",
+          "pairedRowSha256": "482d3fe4d84d84171d7edd393ca7319827b185587b81386bce96044f88d6f091",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Loading status; no in-world speaker or character referent."
+        },
+        {
+          "id": "ui:c43be332e32dea5c57d128eb83fc3e1ec05cbcb784b4c67641bbd0bc9cc28837",
+          "pairedRowSha256": "ba8fcbe2f1254a8e0855fb8e4c8aab79d8d431a1670eaf1344b7bb2d32fcf5d6",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Interaction prompt to the user; no specific in-world character is identified."
+        },
+        {
+          "id": "ui:bf5a71f777601bd59c671143e235b123e4f984c907f30cf9f39279aed4971fb9",
+          "pairedRowSha256": "a5475d6a38eb5cc9a2b1bc7cc204d9c9f59d81f5fa4dc5bc90b4a422ddece440",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:72cc6cca49b7fd4ab0bb8bd5744552e158750a68f9a80826402a39137b090937",
+          "pairedRowSha256": "97f436f2aae2ef14425b55b6ce61712c8551cae9ceb8bc5ff3b6782b0d6cb019",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:a6badc0f5c0504c2f6c54aa2df6b59cb0adb18cb57180daf8affb8f5a840099c",
+          "pairedRowSha256": "e0740b1e238a050436ae20ffdde1899bc542d14155d1f717a5efb3a464413b2b",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:450a8206da64a7b3856b161d71a7bd64c006568506063fa12a86f16f6afd0137",
+          "pairedRowSha256": "eb0f05b60da2a29750a3bea4d784a4dba56d3f51eb165ea13fcb57aded25ea7d",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu title; no in-world character referent."
+        }
+      ]
+    },
+    {
+      "group": "UI/level6",
+      "orderedRowsSha256": "553ac99143411953afafaa47f0d79fb660d7b7c7506ad90dd31624f668955458",
+      "applicableEntries": [],
+      "groupContext": "Each actual source label in this UI group was read; a label alone does not assign a customer. Platform-specific absence is retained in the bound paired row.",
+      "layer1": "Author source self-review: every paired source row in this UI group was read and classified below.",
+      "layer2": "Author Italian glossary-field self-review: bound applicable character and wash fields were compared to these uses; no correction was established. This is not independent review.",
+      "rows": [
+        {
+          "id": "ui:98a6b4b5bdd496b8ef8f0ef71d5a2af0f02d01092376bf01a9fd1b535729565f",
+          "pairedRowSha256": "d8059d01a8870704dcafa3d8ee9d4c6be6c463abb2908bd380ed7881493fa0bb",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Loading status; no in-world speaker or character referent."
+        },
+        {
+          "id": "ui:59dd3a2714100988e74f58cf6b7add870962d54e1db06a8481cc312e45f7d76d",
+          "pairedRowSha256": "b8fef598f0f51903d516c754d16a36658061bc2f135ce555935a36646a429e91",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Interaction prompt to the user; no specific in-world character is identified."
+        },
+        {
+          "id": "ui:d5020c02cc8b521b11b94389b1c5ddf312f0ba789178e1a0e126dd5a3a994470",
+          "pairedRowSha256": "6fd5c0e20a9cdfad44f954765c8a72117caf87c4383076b2c0c6ffa0318be6d4",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:5a9d426720bdb3a0d3a32409bb6c3014295ec4ef0cfa9e800b7ea6d43751e7ea",
+          "pairedRowSha256": "ab03d68820b195e4079106254cbd9d7447d900ed507f5a238589622a4dc4989f",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:c37df1326b5064c347a9e322cb77dcdd38a982d38251dc4b5358ac676b0c203c",
+          "pairedRowSha256": "16c5020954909633da167b0c8f32ed7a9f728dbd63247c3cb0771171c3b34835",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu control; no in-world character referent."
+        },
+        {
+          "id": "ui:987d908cf7d0cf9af9889ed65f7f833768785b20e8d120c0bdde77c5dc7198aa",
+          "pairedRowSha256": "aa10d7722fc0a70f7f50f612fd1ce808124c13d574c78313dae046d479e3b741",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Pause-menu title; no in-world character referent."
+        }
+      ]
+    },
+    {
+      "group": "Managed display",
+      "orderedRowsSha256": "f3ff6ae6d0b8ec502ef4b0b7f25a3a1bb22b3bf0ca5f9e133d27bf879f1e1f68",
+      "applicableEntries": [],
+      "groupContext": "Each actual source label in this UI group was read; a label alone does not assign a customer. Platform-specific absence is retained in the bound paired row.",
+      "layer1": "Author source self-review: every paired source row in this UI group was read and classified below.",
+      "layer2": "Author Italian glossary-field self-review: bound applicable character and wash fields were compared to these uses; no correction was established. This is not independent review.",
+      "rows": [
+        {
+          "id": "display:slot-new",
+          "pairedRowSha256": "597306f403a6300b2f7682b502ccd4ff0fb4615d3c2dd737193a9fc2581d74f8",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Managed new-slot label; no in-world character referent."
+        },
+        {
+          "id": "display:yarn-missing-line",
+          "pairedRowSha256": "e9645c553e2c10c51ce6100b36cd78543e77d3dcf8f918589ca79864542eba2b",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [],
+          "conceptUses": [],
+          "decision": "Missing-line diagnostic; no in-world character referent."
+        }
+      ]
+    },
+    {
+      "group": "Speaker labels",
+      "orderedRowsSha256": "7144f55bacbd488d7db762c2322a3e94447d68e50bb0456e38e53a755b14ff0e",
+      "applicableEntries": [
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        }
+      ],
+      "groupContext": "Each actual source label in this UI group was read; a label alone does not assign a customer. Platform-specific absence is retained in the bound paired row.",
+      "layer1": "Author source self-review: every paired source row in this UI group was read and classified below.",
+      "layer2": "Author Italian glossary-field self-review: bound applicable character and wash fields were compared to these uses; no correction was established. This is not independent review.",
+      "rows": [
+        {
+          "id": "display:speaker-ryan",
+          "pairedRowSha256": "984e883ab7608406206c7d68c9f344fd8cda88b35f92797554db269e4197fb41",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "conceptUses": [],
+          "decision": "Speaker label names Ryan; it is not evidence that every unnamed line is his."
+        },
+        {
+          "id": "display:speaker-conrad",
+          "pairedRowSha256": "6fc825a23c1c31e55cc0ef998367be71ede3d0d5135374149ebbaa1629989927",
+          "speakerOrKind": "UI or managed display label",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "Speaker label names Conrad; it is not evidence that every unnamed line is his."
+        }
+      ]
     }
   ]
 }
