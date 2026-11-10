@@ -65,3 +65,19 @@ are under `localization/work/font-role-coverage-20261110.1O5tSJ/`.
 | Embedded font bytes, both builds | `e5b0af421ea2bfbc1ac8d251d647268087ae82786234c57f757d1f0b90fa8b49` |
 | `inspect-font-roles.py` | `c247904a4915e6ade8f7a7d90f733ce1be645d13d13981b2ffb5e46d62414045` |
 | `font-role-coverage.json` | `eeab1e4557a5298bf10fdc1719b9aef31c468da1b5444c705a195688a71f2dd7` |
+
+## Authored corpus preflight
+
+At `7339298`, the paired locale reader resolved each authored target to its stock platform binding. The original TMP primary, dynamic fallback and embedded Liberation Sans source font were reopened and checked against the pinned asset and font hashes. The probe checked static glyph rectangles and advance, or the fallback outline and advance, for every code point in the authored strings, conservatively including markup. The Polish newline was recorded separately as a control.
+
+| Locale | Authored bindings, macOS / Windows | Distinct code points checked per platform | Missing or invalid |
+| --- | ---: | ---: | ---: |
+| de | 920 / 920 | 87 | 0 |
+| es | 366 / 366 | 89 | 0 |
+| fr | 1,183 / 1,183 | 96 | 0 |
+| pl | 1,923 / 1,941 | 94 | 0 |
+| pt-BR | 598 / 598 | 94 | 0 |
+
+The Polish corpus uses 15 fallback code points and the French corpus uses one on both platforms. The Italian locale had no authored file at this snapshot. Both builds passed the supported Ł and missing 漢 controls. U+0020 has advance 569 in the embedded font.
+
+The script and version-bound receipt are under `localization/work/cli-corpus-font-preflight-20261110.rpjwkO/`. The receipt SHA-256 is `adb4b39d23fc35c13343c3ff19b39565998ab7b6f7b13536833fe9e9292ddadf`. Rerun on the final texts and include dynamic output and all retained visible fragments in final coverage. Runtime glyph insertion, rendering of combinations and visual fit remain separate checks.
