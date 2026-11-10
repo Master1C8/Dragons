@@ -31,6 +31,49 @@ locales. The isolated Thai font swap resolved the sample glyphs, and
 TMP still emitted the unshaped sequence for `น้ำ` on both players.
 Mixed direction and script shaping require separate handling.
 
+### Complex-script font staging
+
+The [offline font probe](localization/probe_complex_fonts.py) checked all five
+authored v42 locale files against the paired stock TMP font chain. It counted
+1,923 authored bindings on macOS and 1,941 on Windows for each locale.
+The same gap counts were found on both builds.
+
+| Locale | Missing stock code points | Missing with candidate |
+| --- | ---: | ---: |
+| Arabic | 44 | 0 |
+| Persian | 48 | 0 |
+| Hebrew | 0 | 0 |
+| Thai | 61 | 0 |
+| Hindi | 60 | 0 |
+
+The probe uses the pinned Noto candidates from the direction and fallback
+probes and the Hebrew face and HarfBuzz-based reference shaper from the Sonic
+checkout at `d9213cf`. It checks outline presence and advances for added
+coverage, and writes synthetic shaped samples into the private-use area of
+five separate TrueType fonts. All five mapped samples retained their glyph
+indices and HarfBuzz advances after read-back. The existing fallback
+asset writer inserted each sample font into copies of both stock Unity assets
+and verified the original objects outside the intended fallback-chain edit.
+Two runs produced identical receipts. A changed reference shaper was rejected
+before writing assets.
+
+The [static receipt](localization/work/complex-font-static-20261110.54U84Z/verified/result.json)
+pins the locale and resource hashes. Its SHA-256 is
+`c52651f71d6241c258ea798a2b0d3e03307949b06e09eb7ee5128f7fb9014f12`.
+The probe accepts explicit stock Data paths, canonical locale catalog,
+paired worklist, font directory, Hebrew font, reference shaper and a fresh
+output directory. It uses the existing Python asset dependencies plus
+`uharfbuzz==0.51.7` (HarfBuzz 12.1.0).
+
+The staged assets are synthetic probes. The next renderer change needs a
+display adapter that feeds positioned glyphs into the actual Dragons TMP text
+paths after text selection, formatting and substitutions. Preserve logical
+Yarn text and speaker/control syntax, and handle mixed-direction runs and
+wrapping before the mesh is emitted. The text animation must reveal and
+advance by shaped clusters. Dialogue, choices, tight settings, save-slot
+values and mixed names and numbers still need paired player verification.
+No player or installer was launched and no release package was built.
+
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock
 512 × 512 multi-atlas chain admitted 1,536 distinct additional
