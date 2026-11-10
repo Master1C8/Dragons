@@ -1,0 +1,142 @@
+[
+  {
+    "id": "dnw-player",
+    "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+    "localeFieldsSha256": "4269eeccf4af7d4f37f81966cd1ae40b35fc6a6e36f93c3f0121f344613f6937"
+  },
+  {
+    "id": "dnw-alexander",
+    "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+    "localeFieldsSha256": "654b2a739de6213cbab50acec13e5754d68e3df112033fb11ab30155e59695b3"
+  },
+  {
+    "id": "dnw-conrad",
+    "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+    "localeFieldsSha256": "36bd3fa93f108dfdb0783b92ab830540bfcd8abb202788f2643ee2fddcdf1c43"
+  },
+  {
+    "id": "dnw-ryan",
+    "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+    "localeFieldsSha256": "a7f4767e6b13df82bc0d7ade56f14b7e0c461aa40356e977682dbd1778bc0c20"
+  },
+  {
+    "id": "dnw-franchise-representative",
+    "sourceEntrySha256": "808a4e29680f4310b8f68b8556203cc3c2d98f7af5295c0f9ff3bb9760797e50",
+    "localeFieldsSha256": "518b4b0870919966c2cc22e49d28a522d2f7c4612b395fad64d06e7a7cff508f"
+  },
+  {
+    "id": "dnw-igwyx",
+    "sourceEntrySha256": "66ad2b67f8ff6ddf6faf87daf25948de76082040baa5fba50b5a1f24a05b2f3a",
+    "localeFieldsSha256": "afdf8580b826a84c7d2eef451bb298d345fa66ddbcb6dd49e830143d132961e0"
+  },
+  {
+    "id": "dnw-max",
+    "sourceEntrySha256": "5b0138c5e5650c67dc30df1adb54f064252c3928be7cb8861d7cd468722cc5c2",
+    "localeFieldsSha256": "8cd0bc311f07facc5974ec0360b1cddf3f6799b94efeb71f2f40a1415e6d7060"
+  },
+  {
+    "id": "dnw-anonymous-dragon-speaker",
+    "sourceEntrySha256": "929136153456556d2889090960049f8981a99affd848ad4f38c17987221a3e0d",
+    "localeFieldsSha256": "d0d8ca586be1af3c06e674b22d4a22a8b1c10867e1ed783e731476b9ef349d1a"
+  },
+  {
+    "id": "dnw-dragn-wash",
+    "sourceEntrySha256": "9a00bf3c920a4f70cb305fc794ea9f0782d034c71e41c2b5cd8aa1f992f4cb3a",
+    "localeFieldsSha256": "4a60dd6c63466617ddf24367680d9e47f48f25fd04b46849e8f2610cd87fd266"
+  },
+  {
+    "id": "dnw-franchise-223",
+    "sourceEntrySha256": "a08fb4bf6c2582215f77580b2d302cdb0a0e19480a1847bc8a079d7ee898ece5",
+    "localeFieldsSha256": "b8fedacff1a48514b96583c04e0285fdd6bb0b300aeb44f4d7a90c44a14833c1"
+  },
+  {
+    "id": "dnw-burnswick-college",
+    "sourceEntrySha256": "3a49dd393f7985a13465547414ed83c845d4e21f6ef20f7f33235fbfd8da18d4",
+    "localeFieldsSha256": "85de12889bf73a8260bf46d9809220c6c2ea7441f82d40cacaad9a41c898d26d"
+  },
+  {
+    "id": "dnw-college-library",
+    "sourceEntrySha256": "bd52ecb4c3629cbc205c3683a0fa4df3aa2a177819332e2c0400ce0101a0744b",
+    "localeFieldsSha256": "24871f72c231751f27d2ef78aa43091dbbf26228fcad29939b2e1eb1d97f667e"
+  },
+  {
+    "id": "dnw-wings",
+    "sourceEntrySha256": "3c78fd3362268274dc2ac3cd2e8bc39fffddeca807a1acef1e24454df105aba8",
+    "localeFieldsSha256": "7b2932d8155838e0b793caa82cd736ed929aded51ee70d3c0a0f235ee4c1370f"
+  },
+  {
+    "id": "dnw-wingco",
+    "sourceEntrySha256": "00c60b2464c82a74a0078c0da773a3adba7a4b264fda365efd72e0af02fc7e2b",
+    "localeFieldsSha256": "41159183845fe56813f86ec68a84a99eebc5cc723ca8bd81dc13e0d593e59e5e"
+  },
+  {
+    "id": "dnw-kobold",
+    "sourceEntrySha256": "655be37c2da8a22f692dbac404a5811b4227a465b44d7c6c85bc35af64f51df3",
+    "localeFieldsSha256": "212fc29b7af1c0bb28ded2913572286fba104fa6721ef85cb8b4200982d4abca"
+  },
+  {
+    "id": "dnw-dragon",
+    "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+    "localeFieldsSha256": "8949f3f6d882960c0c277cb5fa437826d3d2f3c62beb9477da7352c8299ccc07"
+  },
+  {
+    "id": "dnw-drake",
+    "sourceEntrySha256": "fc7a676e04843dde8307d6b1843ac34215ca67200d62b1ff1dfe06d21456cdd3",
+    "localeFieldsSha256": "5f7f296e7af622e5463b08cb6441818d29b44483eda5dfbe6109cb37392a060d"
+  },
+  {
+    "id": "dnw-dragon-washer",
+    "sourceEntrySha256": "70f6f7b0f545b32f5a98233380b01eda5a369c67c4d2969c55e02a1782a18aa9",
+    "localeFieldsSha256": "bd8a8cfcbc41ffa87698f214280522137ed0e0e0e222fcfac31676cfd22a9fc6"
+  },
+  {
+    "id": "dnw-wash",
+    "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+    "localeFieldsSha256": "67b1850119bb8caee55227044ad35d0646bb1cea026e319557d4ed3132bbbeca"
+  },
+  {
+    "id": "dnw-yip",
+    "sourceEntrySha256": "732298762db192f5e97009d5a3babdf06857b777d65975115662abe32637b079",
+    "localeFieldsSha256": "2c1190dc48cd0de86bc641343e98b859ce7270643b40a3dc749e100eb2ca7d6f"
+  },
+  {
+    "id": "dnw-mount",
+    "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+    "localeFieldsSha256": "9639c42899ebe918d3cf6b56d13356428192f06dd692b2edce56323b1adaf85e"
+  },
+  {
+    "id": "dnw-special-endings",
+    "sourceEntrySha256": "b2dab9f17eac895557320156d6a6089138f749194fc613995baed5c2efa4e55d",
+    "localeFieldsSha256": "8742fccd8294767a2202ac7f7ceef13891000102f1bc39ff75605d66950ca9bb"
+  },
+  {
+    "id": "dnw-phoenix-feather",
+    "sourceEntrySha256": "c4024e659615307ed5c582c44c3c7216aaededde7b2fccea8aa6ebd3c3c705a4",
+    "localeFieldsSha256": "bc6ddcdae90b8dec55115831ef6ad0b26ed2996ffa7d3ae52aed30de621257b8"
+  },
+  {
+    "id": "dnw-family-crest",
+    "sourceEntrySha256": "6c64b3f010048958681651d5ce643ac55ddaa98900feba2a8e2cc54d24b7e9c9",
+    "localeFieldsSha256": "da579f7c70b989ab9b15324089ea53c262b1ff0408364ac78a55a0b395e11c64"
+  },
+  {
+    "id": "dnw-alchemy",
+    "sourceEntrySha256": "c778aac34e4a0a5b96970af09e963be978af86f2b7bf044c8211d932d758e003",
+    "localeFieldsSha256": "57103b0fa1fcd3bccaba11ef03be1f642466bc2950ae50199394733dd0502421"
+  },
+  {
+    "id": "dnw-yip-man",
+    "sourceEntrySha256": "3a133af8a9b653ada56d688b55629f08bbe27dd7a6fb9e8a483a85ebb03765d3",
+    "localeFieldsSha256": "8954915fc83cba980ce1642a6da378caf17e1aac0538217f787543a4cd796e6e"
+  },
+  {
+    "id": "dnw-project-scale-mary",
+    "sourceEntrySha256": "d85beb0bba51dc3fba6377f8fd8a1ccebd704ec72b9d3d300728b965b86d5f30",
+    "localeFieldsSha256": "e052eb3d7a0e4f55748ff3e5c84a02e25c6b21390b44eb1c187346aae4815552"
+  },
+  {
+    "id": "dnw-dragons-of-the-galaxy",
+    "sourceEntrySha256": "8cc560bbec93ceaa757b960ada48188f37456e67084f2b2ce7769fa9c7fd2433",
+    "localeFieldsSha256": "505261b38937838b0efd9a9d13b2b5b7c8ac0bc934e38810e08b39e418bc522a"
+  }
+]
