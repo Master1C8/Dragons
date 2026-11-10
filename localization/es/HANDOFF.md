@@ -142,3 +142,7 @@ Authored 89 additional IDs to complete all 111 entries of `ryan_food_dialogue`, 
 ### Continuation: Yip scene contexts
 
 Authored 109 additional IDs across eight complete Yip-related scenes; **700/1,947** IDs now have authored values. Both platform readers accepted all 119 scene IDs, object encode/parse passed, and altered-English negatives failed at the source guard on both platforms. Details and object hashes are in `special-date-yip.md`; task-owned evidence is under `work/cli-terra-high-20261110.J0KLrx/es/resume-09/yip/`. Translation SHA-256 `86d8c95880fb37a5d6ed3a2d9a98fa4ff387bb1e223168d1f40f0858f4aeb029`. Complete remaining special-scene dependency reconciliation before ordinary batches. Independent audit, final packages and localized runtime/visual QA remain pending.
+
+### Continuation: Ryan introduction and remaining Yip context
+
+Authored 48 IDs in `Ryan_5_intro` and the final Yip-associated exchange, bringing the locale to **748/1,947**. The full 49-ID set passed both platform source readers and in-memory object read-back; altered English was rejected for both. See `special-date-yip.md` and task scratch `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ryan5/`. Translation SHA-256 `91c003bf232a5f65d9757e0c49a1dab08401c169044dac87f48a3e9c9dc89fe8`. All indexed Yip context has wording; remaining romance-routing contexts require reconciliation before ordinary batches. Independent audit, final packages and localized runtime/visual QA remain open.
