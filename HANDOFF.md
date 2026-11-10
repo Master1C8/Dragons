@@ -324,6 +324,45 @@ A standalone .NET attempt to JIT the actual macOS renderer stopped at a
 Unity native internal call before invoking the renderer. Managed mesh
 tests do not exercise that boundary. No game was launched.
 
+### Authorized runtime verification
+
+The owner authorized launches of isolated copies on November 11, 2026.
+The macOS player ran natively. The pinned Windows player ran in a
+private CrossOver bottle. All ten isolated copies entered the stock
+new-slot UI through virtual input. Each displayed one authored fixture
+on the actual slot TMP component, then ran the packaged Yarn
+`LetterTypewriter` normally and with a pre-cancelled timing token.
+
+| Locale | Lines | Prepared glyph slots | Logical reveal steps per run |
+| --- | ---: | ---: | ---: |
+| Arabic | 3 | 20 | 16 |
+| Persian | 7 | 58 | 49 |
+| Hebrew | 3 | 15 | 15 |
+| Thai | 2 | 18 | 17 |
+| Hindi | 3 | 14 | 14 |
+
+The counts matched across both players. Checks compared the actual
+glyph and font character codes, UTF-16 offsets, wrapped cluster
+boundaries, visual order within each line, every Yarn callback index
+and every reveal counter against the bound plan. Both reveal runs
+completed at the full glyph count. The fixtures include mixed Latin
+runs in all five locales and digits in four. The Persian fixture
+contains `Wings` and no digit. The Hebrew fixture is unpointed, as
+authored. This verification uses Unity runtime geometry and callbacks.
+It does not establish screenshot or full-scene visual coverage, nor
+execution under Windows 11.
+
+The launch wrappers stopped all test copies and verified that the
+protected source profiles remained unchanged. The runtime copies'
+TMP, layout, Yarn and speaker DLLs matched the local package bytes.
+The ten tested packages are the signed apps and ZIPs in
+`localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/`.
+The live report and scripts are in
+`localization/work/live-renderer.O43vkv/`. The `live-report.json`
+SHA-256 is `6c623c58a7f1e2b47839dbaa6157109badb26147dbb3b392a29298926c81971a`.
+No authored translation, package payload or installed game changed
+during runtime verification.
+
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock
 512 × 512 multi-atlas chain admitted 1,536 distinct additional
