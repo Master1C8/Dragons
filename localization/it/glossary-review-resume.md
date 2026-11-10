@@ -508,3 +508,7 @@ Both author layers now bind 38 paired `Ryan_2_Outro` rows. Ryan explicitly descr
 ### Resume 09: Ryan date choices and titles
 
 Both author layers bind all 45 paired `Ryan_5_Required_ryan_romanced` rows. Ryan names Wings as the downtown date venue (`yarn:line:a4a26529`) and discusses its shows, matching the place entry. The three selectable film titles at `yarn:line:962abe27`, `f1c14f75`, and `7e352505` were checked against their full source and Italian entries; the meanings appropriately label the film-title allusions as likely rather than confirmed fact. Ryan describes carrying biped friends as something he enjoys; this is his preference, not a rule for all dragons. Applicable complete source and Italian fields were inspected; no new objective defect was established. These are author self-reviews, not independent acceptance.
+
+### Ryan fifth introduction — paired row-level author coverage
+
+Both author layers reviewed all 45 paired source rows. Branch flags distinguish the player, Ryan and Conrad; Ryan greets the player as a kobold and requests a wash, while dates involving Conrad vary by branch. Baking and date implications do not introduce new glossary entries. The size markup remains source data. Individual source-bound judgments and entry digests are in the row receipt. No independent reviewer is claimed.
