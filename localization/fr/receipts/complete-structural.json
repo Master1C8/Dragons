@@ -1,0 +1,9 @@
+{
+  "locale": "fr",
+  "translationSha256": "94a770766b67a6be5f9337bb174543c010826ec87450b18f5c6e1dbf0e0f0325",
+  "completeInputRequired": true,
+  "checkedDialogueBindings": {
+    "macos": 1823,
+    "windows": 1823
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "locale": "fr",
+  "translation_sha256": "94a770766b67a6be5f9337bb174543c010826ec87450b18f5c6e1dbf0e0f0325",
+  "worklist_sha256": "ef9d5709b061ea426c2e113373fdbfde547c6518f6394a4afc325204dea89cf8",
+  "helper_sha256": "b045cd1cac1ade2cc10c8dbda4c1c2ebecd9e6956b562aa32cafc8c9cff0ea59",
+  "command": [
+    "/Users/antonkrutov/Desktop/Forest/.venv-assets314/bin/python",
+    "-B",
+    "localization/fr/verify_interface.py",
+    "localization/fr/receipts/NEW-RECEIPT.json"
+  ],
+  "method": "source-pinned adapters reopen and compare all serialized objects; settings fields decoded and compared; outputs removed after successful readback",
+  "platforms": {
+    "macos": {
+      "level0": {
+        "source_sha256": "4cabf35993c6726ab29e5cb24a1ce74a0fdf3d8061b0de3437415e56bcfa72f7",
+        "binding_sha256": "624741b88fcf33a3f9ceac78bbd58159faa76ec1f42d8d27dfef7e8d0face8b1",
+        "output_sha256": "6764269025aa4651e7b37ae5b49a46edfbdb71c28959bcfed9e7a39e7313d678",
+        "fields": 5
+      },
+      "level1": {
+        "source_sha256": "6af2815f16cba00e935fe110023ec91421c7d4107c5d8d31f55b70039b17d618",
+        "binding_sha256": "ddf0c1982b0c314a6c1daf8fc5a299cb5f4074e54350473aa775e9877e45eebd",
+        "output_sha256": "aeb516f939f2edff809133247dc8a408242866c339eea5c87dd7c067e5635856",
+        "fields": 7
+      },
+      "level2": {
+        "source_sha256": "8a65d8f397e103abf65a6c9daba7668a4efe8c70fbe36f6b6eed676aaa99d808",
+        "binding_sha256": "4b2df043b32d75da80d8215f0d564a79a746c2d1dd1411c44f97c4d6d6559adb",
+        "output_sha256": "5b28a65a76f61d4b9808d597f3b08bfc8203c97945f4b550618f033faf323da9",
+        "fields": 38
+      },
+      "level3": {
+        "source_sha256": "32805c0339b0b67b4cc1dd27f8e150419e3f7374132d630921700281a14b833e",
+        "binding_sha256": "5a0e3aeb604ddc819ff24ef1ad0121c43cd1efc540f0ab6029e4c1d5a6a00c18",
+        "output_sha256": "ce11361df2ee9e68ad10c74c85f53300dc795c2b4ea31420398c0088c6649046",
+        "fields": 2
+      },
+      "level4": {
+        "source_sha256": "1aeac3e3368bbf5d3198dd6aee5f0969677a13b162158bb592655fdef03ef030",
+        "binding_sha256": "83d5931eacfd66d9022b3c0349ae9d26be617f844762fc723719937773bc7f13",
+        "output_sha256": "1978891246b8d48e50e56a8afd3a529c762d125a1112f7d18936c60595f93b94",
+        "fields": 2
+      },
+      "level5": {
+        "source_sha256": "3241f65111d9639a3e1434e4d5e7dd9aa946eac554675dc4627093638e0341c8",
+        "binding_sha256": "ce083cc88b2ce1582b31d5c553d34dd1144564448e833c9ae336fc250997286c",
+        "output_sha256": "0c9a289c71e47be765dd34057716bc8cd6123d6c189a4c070aec5cfab6050ff5",
+        "fields": 2
+      },
+      "level6": {
+        "source_sha256": "975954bc0796ab7b60f06f075b3b0ad8ce367d07cede726d53847b61fbe112f6",
+        "binding_sha256": "13db6a64120f7ed25834c4e0b2a77482854b6ee759b02eaef66e759ccbe21e0f",
+        "output_sha256": "ba0c286b7db3a16a86a8b79467ea9e2404e8e234beba75af1c0a919fcedd1eeb",
+        "fields": 2
+      },
+      "settings": {
+        "source_sha256": "40713b00ce12582eebc427c0104e59becf438eb15803725b2248be3471a96aeb",
+        "binding_sha256": "72ef798d2538066f7b7e93dbc6d576c00ce58397e0e3f47f2ec911ec2c7f784a",
+        "output_sha256": "c1ffb44ee10639876c3358f76cbcb5773a52b65a2014244032a67f5002fb3c6d",
+        "fields": 37
+      }
+    },
+    "windows": {
+      "level0": {
+        "source_sha256": "55a296caa23347190faa063efdaab4cf5a37e00bdbffa455729b4aa346cddae0",
+        "binding_sha256": "8382f31ba36d70fd97db0239f2ef3d5b2849c7d222af5ae6791a2a2a58b7608e",
+        "output_sha256": "7f0dd719e23f75f021e094138845d261078e9ad141f9eb5253bddf46ef754304",
+        "fields": 5
+      },
+      "level1": {
+        "source_sha256": "203725518656d04df3341248a7d24bc27551ebd6c03e582977869f0acfc5a459",
+        "binding_sha256": "d276f10093fc06787502934c7a2a19eec736e13c8fb49e72552b6e5427d063aa",
+        "output_sha256": "73ee3bb721757a1d4684b96ec1a13ca3a92fd1c465aad0b51e019031ae41fccd",
+        "fields": 11
+      },
+      "level2": {
+        "source_sha256": "d8b5b6b96a2372e36087edb0a5e3e1fa6ccc2e0d1684698be2221771f02f438e",
+        "binding_sha256": "718760da90574af679e4a6a29cf39ead03acc5964355a6636061977897be66f0",
+        "output_sha256": "a7f6998c2667336012806eda42cbabcbef1c24254ca51582ad8bc1cf0c817801",
+        "fields": 42
+      },
+      "level3": {
+        "source_sha256": "2443af34e7c6f2136ca58b0aa712a1c35ce13e60567e963ac7224575fa9d4eb1",
+        "binding_sha256": "3d92de02012d5ce7de81ae79e98ae416a8604ce94cf2aaf0d50b116315019fbe",
+        "output_sha256": "3df11281e0ee961dcafd004a06206efae416450d84a61f5e05368d96cd5ace6e",
+        "fields": 6
+      },
+      "level4": {
+        "source_sha256": "2253e49bca20fa74c12d90eb6c9bd4eadf9ca83f36bcb451f41d7e71fd9bbc28",
+        "binding_sha256": "e26192810136cf3b3e307dcee7f323dd9681f1be7f6fdeababbae35d877ebc6f",
+        "output_sha256": "c3f4f493664f93ea761bff0cc6f614c9ef5fdec56944482b5b56291648fd53aa",
+        "fields": 6
+      },
+      "level5": {
+        "source_sha256": "ecbae7085b8126e5a77087e1b60a9fb3568032bbae0818106f22640d0242530e",
+        "binding_sha256": "4cc8745ddfbaab20a353e4070fdecae13623d65793edef7358da51bba895d0ff",
+        "output_sha256": "2634e71432c8f1082d36b610d896400d2c84240c8fa926b4ae043ac7d324d2e3",
+        "fields": 6
+      },
+      "level6": {
+        "source_sha256": "7312f5011f3222b623e0f06acc5107bcdc72a8487780d9fd5249446fd42be608",
+        "binding_sha256": "a0d32ce1a736c27c343cbc62bbc0e289a900a8720c8ba99c65faef24c4839e4b",
+        "output_sha256": "a875bd9f749424233e3a6d10937b1b0566f88e38abcd05f12e86526bcac22702",
+        "fields": 6
+      },
+      "settings": {
+        "source_sha256": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3",
+        "binding_sha256": "6499cb8f34efa498dcac08b3c3011a93905ed4603d38883517311b216c86fcb7",
+        "output_sha256": "3018426cb83f2448ba90264b43562050fc5426cfd173121403c9531b27ed536d",
+        "fields": 31
+      }
+    }
+  },
+  "runtime_visual_independent_audit": "not established"
+}
