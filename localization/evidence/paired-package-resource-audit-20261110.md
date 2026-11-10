@@ -242,14 +242,81 @@ same reserialization with only an `OnShow` parameter renamed failed at
 | Assembly-CSharp | `afe5b165507bdf4c21c42a7439e2657691b276ad590dbd0ee21a72d6165d408d` | `0e939f9129f8eb0b268a778c65ac94afdfc954eaa809c220932409f514f29284` |
 | YarnSpinner.Unity | `6e79e4a66cecd5c2e058913c7cdcdbc7d6849e220d2952c9df1a810342a5607c` | `c89b0adaf3f24d5272d371451ff77934af4b0063223e37083ea90865010c4bad` |
 
+## Packaged Unity object payloads
+
+`verify_packaged_objects.py` verifies the complete text-only package directly
+against stock and the exact v42 locale inputs. It snapshots and validates the
+inputs, then checks the actual app assets or the matching ZIP members. For each
+scene it computes the expected TMP string bytes and pinned speaker contrast
+change. It reuses the combined Yarn and settings checks for the two shared
+assets, including the exact Yarn metadata and repaired project bytes. For all
+objects in each checked file, the candidate must equal either the complete
+expected edited bytes or the complete original bytes.
+
+```sh
+"$PYTHON" -B localization/verify_packaged_objects.py "$platform" "$stock_source" \
+  "$locale_inputs" "$built_package" --locale "$locale" \
+  --inventory "$shared_inventory" --yarn-scope "$paired_yarn_scope"
+```
+
+The complete Russian controls matched all 30,279 macOS and 29,906 Windows
+objects across nine files each. Both contained the expected 1,823 Yarn
+translations and five restored transitions. The shared settings object
+checks accepted the 37 macOS and 31 Windows inputs. The known scene layout,
+sprite and texture payloads were compared as object bytes. Positive controls
+used the delivered asset bytes. Separate copies failed after changing one
+byte immediately before the authorized speaker color field and one byte
+outside the repaired Yarn project program.
+
+Receipts are in `localization/work/packaged-object-readback-20261110.975Giq/`.
+The macOS receipt SHA-256 is
+`c062bd84ca66cdd457ad61f8594187ed26a747e8abce5fd67ba346e6e8083277` and
+the Windows receipt SHA-256 is
+`f8dfe31a1b93e576631a715d8b35f482c54a70a3f7cb398747c7e41cdf95a31a`.
+This check covers the nine serialized files and leaves the separate signed
+bundle, ZIP, managed and raw Unity metadata checks in place.
+
+## Serialized animation callbacks
+
+`inventory_animation_events.py` scans the 17 pinned root Unity files, both
+built-in resource files and the three local Addressables bundles per platform.
+All 250 AnimationClip objects on each platform round-trip byte for byte. Each
+build has 50 events. All string arguments are empty, and their function names
+have explicit exact dispatch roles.
+
+| Callback | Events per build | Managed consumer |
+| --- | ---: | --- |
+| `PlayStepSFX` | 37 | Reads an integer step index and applies a material impact response |
+| `PlayStepVFX` | 2 | Both same-named handlers return immediately |
+| `PlayAudio1` | 9 | One-shot or tool audio playback |
+| `PlayAudio2` | 2 | One-shot audio playback |
+
+The seven matching managed method bodies are identical across builds. The
+callback inventory adds no authoring IDs. Clip payloads remain exact under
+the package object comparison for changed files and the file digest
+comparison for untouched assets. A nonempty string argument or unknown
+handler fails role classification with a matching positive control.
+
+```sh
+"$PYTHON" -B localization/inventory_animation_events.py PLATFORM STOCK_DATA
+```
+
+The output reproduced byte for byte on each build. The two reports and the
+consumer IL are in `localization/work/packaged-object-readback-20261110.975Giq/`.
+
+| Receipt | macOS SHA-256 | Windows SHA-256 |
+| --- | --- | --- |
+| AnimationClip events | `867b162552b76fd42f9aa6ddd9fdb0872729b1c34be14dddf0faf86170943287` | `794ebb6467e1b3422eb5c8e98734b1671322c2017a6106fb0b6dcae2956d573b` |
+| Managed callback definitions | `a785bc820522965a774458bca162f0a44e2a2f91f6cd60945b712427eb222ffe` | `a785bc820522965a774458bca162f0a44e2a2f91f6cd60945b712427eb222ffe` |
+
 The source gate remains open. Exact file preservation covers untouched
-resources even when they contain engine metadata. It does not classify every
-player-visible source or prove the complete field-level preservation contract
-inside the 11 changed files. The remaining work is to reconcile indirect
-runtime text consumers and additional resources against the approved visible
-scope, then verify that the parser-derived contract covers every protected
-occurrence. The v42 inventory and existing locale worklists retain their
-current fingerprints.
+resources even when they contain engine metadata. The controls above now
+cover the object payload and metadata boundaries of all nine changed Unity
+files, with separate declaration and adapter checks for the two DLLs. The
+remaining work is to reconcile indirect runtime text consumers and additional
+resources against the approved visible scope, then verify the same contract
+on each delivered locale. The v42 inventory and existing locale worklists
+retain their current fingerprints.
 
 ## Concurrent commit ownership
 
