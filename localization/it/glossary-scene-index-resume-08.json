@@ -2084,7 +2084,7 @@
         "yarn:line:f212b2de",
         "yarn:line:4843bb47"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_Idle1",
@@ -2094,7 +2094,7 @@
         "yarn:line:7da41ecd",
         "yarn:line:ecb9a15d"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_Idle2",
@@ -2104,7 +2104,7 @@
         "yarn:line:aaf3066d",
         "yarn:line:cd18f73f"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_Idle3",
@@ -2114,7 +2114,7 @@
         "yarn:line:eb019075",
         "yarn:line:515099ec"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_Idle4",
@@ -2124,7 +2124,7 @@
         "yarn:line:d7bcbe29",
         "yarn:line:7429dab7"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_Idle5",
@@ -2134,7 +2134,7 @@
         "yarn:line:5230bdfd",
         "yarn:line:e861b464"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_Idle7",
@@ -2145,7 +2145,7 @@
         "yarn:line:8f1fccf9",
         "yarn:line:192fcb8e"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_Idle8",
@@ -2156,7 +2156,7 @@
         "yarn:line:bb015b1b",
         "yarn:line:01505282"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_Intro",
@@ -2187,7 +2187,7 @@
         "yarn:line:21235886",
         "yarn:line:82b63c18"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_Nag2",
@@ -2197,7 +2197,7 @@
         "yarn:line:c4fc9b28",
         "yarn:line:7ead92b1"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_Nag3",
@@ -2206,7 +2206,7 @@
       "ids": [
         "yarn:line:58b4f5fb"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_NaughtyTouch",
@@ -2215,7 +2215,7 @@
       "ids": [
         "yarn:line:014b5da5"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_Outro",
@@ -2233,7 +2233,7 @@
         "yarn:line:c1e8b05d",
         "yarn:line:57d8b72a"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "RyanMuddy_SmallTalk",
@@ -2259,7 +2259,7 @@
         "yarn:line:bd55b8f4",
         "yarn:line:1ec0dc6a"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Ryan_1_Outro",

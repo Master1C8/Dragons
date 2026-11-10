@@ -127,3 +127,5 @@ A further 54 paired rows in 13 Conrad tutorial, action and introductory groups w
 The next two-author-read unit covers 67 paired rows in `Conrad_Intro_4` and `Conrad_Outro_2`, including Ryan's branch-specific referent and the customer's wash and device requests. The index now records 478 newly reviewed rows in 69 groups; 124 groups still need full dependency-index reconciliation, including earlier partial receipts.
 
 Another two-author-read unit covers 66 paired rows in 14 generic-dragon, Ryan-date and alchemist-incident groups. Unnamed dragon speakers and the alchemist's uncertain referent remain unassigned to glossary characters. The index now records 544 newly reviewed rows in 83 groups; 110 groups still require complete dependency-index reconciliation, including earlier scoped reads.
+
+A further 37 paired Ryan-muddy rows in 14 groups were read in two author layers. Max's contextual “them,” an unnamed hypothetical partner and a non-personal “them” are distinguished in the review. The scene index now records 581 newly reviewed rows in 97 groups; 96 groups remain pending full dependency-index reconciliation, including prior scoped receipts.
