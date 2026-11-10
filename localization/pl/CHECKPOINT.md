@@ -394,3 +394,7 @@ Author self-reviewed 42 IDs in the egg, ham and `RyanDate_*` groups. One apostro
 
 - Authored and self-reviewed 89 additional English-bound IDs in `ryan_food_dialogue`, including relationship choices, both romance routes, friendship and departures. Two build differences are apostrophe-only and explicitly share the reviewed target. This is author review, not independent audit.
 - Draft: 1,748/1,947 IDs; SHA-256 `2e7237b3cb2a565197edbc291039b4b76b3ee10764870bd4ce0c339fc48931aa`. Source-bound readers accepted 1,724 macOS and 1,742 Windows bindings. The complete-package guard correctly reports 199 missing IDs. Final package, translated runtime and visual review, and independent game-text audit remain open.
+
+### Conrad follow-up batch
+
+Author self-reviewed 32 additional IDs for the Ryan relationship conversation and Conrad's third encounter follow-up; one apostrophe-only source variant has an explicit shared target. This is not an independent audit. The draft contains 1,780/1,947 IDs, SHA-256 `57f7a3aeb7c3be2998c6692ab382f49c9e0d4318d6b84dfe65647ca0e0ab26fb`. Source-bound readers accepted 1,756 macOS and 1,774 Windows bindings; the complete guard reports 167 missing. Final packages, translated runtime, visual fit and independent audit remain open.
