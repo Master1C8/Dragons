@@ -22,7 +22,7 @@ Use the original ID and stock dialogue mapping; the existing text path accepts t
 
 Source case `conrad-scales-aside`, registry SHA-256 `792cd452b62853213499c2d167254db77907f1de652cf7cba076f386653380c7`, row `6c193ba9` (same English on both builds):
 
-> Scaglie diverse oggi? <size=70%><i>è possibile...? </i><size=100%>Oggi stai bene.
+> Squame in modo diverso? <size=70%><i>Si può fare...? </i><size=100%>Stai bene oggi.
 
 Author self-review: the smaller hesitant aside questions whether scales can change; the compliment returns to normal size. Preserve the exact tag order and three nonempty regions with the original source ID. Positive: the middle region alone uses the smaller italic source treatment, then the compliment returns to 100%; negative: an empty aside or moved size boundary fails. Editorial: author-reviewed. Adapter feasibility: existing TMP text path and structural guard; package implementation and validation, actual runtime and visual fit: pending.
 
@@ -422,7 +422,7 @@ Source case `kobold-yip-speech`. Author self-review: retain **Yip** as the audib
 | `a8ee5236` | Yip! <size=70%>(È perché la parte sopita della tua mente draconica sta ricordando il profondo legame linguistico tra la tua specie e la mia. Al suo interno racchiude il significato e l'intenzione profondi degli “Yip” dei coboldi. Questa tua improvvisa comprensione deriva semplicemente dal legame che è cresciuto tra noi nel tempo, attivando quella parte della tua mente.) |
 | `b12a3f31` | Yip! <size=70%>(Boh) |
 | `c3e1f198` | Yip! |
-| `266836f8` | È... la prima volta che mi fai uno Yip. |
+| `266836f8` | È... la prima volta che fai yip per me. |
 | `52bf5ede` | Sono IL coboldo. Yip! |
 | `3d516ddb` | Yip! |
 | `9ec40945` | Ah ah. “Yip” anche a te. |
@@ -567,14 +567,14 @@ Preserve all seven `$Yarn.Internal.Once.line:<ID>` values, original option IDs, 
 
 ### `ryan-conrad-romance-routing` — Conrad entry scene (partial; case remains open)
 
-The `Conrad_Outro_3` entry and its two distinct branches are prepared below. Ryan's introduction **unlocks** the Conrad/Ryan encounter or Ryan romance; the other choice **unlocks** Conrad romance. These labels do not promise a lock-in yet. The source's gold-gradient, bold and size tags remain in the same order, including the unclosed size tag where present. Gender-neutral player wording avoids inventing the player's gender. IDs are `yarn:line:` suffixes; the paired English differs only in the apostrophe in “That’s”/“Thats” at `266836f8`, without a meaning change. This is one bounded unit, not closure of the 686-ID conservative downstream reachability set.
+The `Conrad_Outro_3` entry and its two distinct branches are prepared below. Ryan's introduction **unlocks** the Conrad/Ryan hookup or Ryan romance; the other choice **unlocks** Conrad romance. These labels do not promise a lock-in yet. The source's gold-gradient, bold and size tags remain in the same order, including the unclosed size tag where present. Gender-neutral player wording avoids inventing the player's gender. IDs are `yarn:line:` suffixes; the paired English differs only in the apostrophe in “That’s”/“Thats” at `266836f8`, without a meaning change. This is one bounded unit, not closure of the 686-ID conservative downstream reachability set.
 
 | ID | Italian target |
 |---|---|
 | `d376acb9` | Ehi, senti. Stavo pensando... |
 | `4546abce` | Forse è un po' strano chiederlo adesso. Peròòò... |
 | `a0cf6cae` | Conosci qualche bel posto o qualche persona in gamba con cui potrei passare del tempo? |
-| `36ff6bd9` | <gradient="gold"><b> Conosco un drago, Ryan. Potrei mettervi in contatto? </b></gradient><size=70%>(Sblocca l'incontro tra Conrad e Ryan OPPURE la storia con Ryan) |
+| `36ff6bd9` | <gradient="gold"><b> Conosco un drago, Ryan. Potrei mettervi in contatto? </b></gradient><size=70%>(Sblocca un'avventura tra Conrad e Ryan OPPURE la storia con Ryan) |
 | `7e9d40e6` | <gradient="gold"><b> A me piacerebbe passare del tempo con te... </b></gradient><size=70%> (Sblocca la storia con Conrad) |
 | `8cae6240` | Un altro drago? Di solito non vado molto d'accordo... |
 | `1a9e6537` | Oh, no. Ryan è un tesoro. |
@@ -645,19 +645,19 @@ The three choices below keep introduction, Ryan commitment and Conrad commitment
 | `048d7f84` | ...A proposito di quello che dicevo prima. |
 | `92bd78f3` | Sì? |
 | `28ec716a` | Conosci qualcuno con cui potrei parlare? Sai... di questioni sentimentali? |
-| `bedc761d` | <gradient="gold"><b>Conosco un drago rosso. Credo che ti piacerebbe! </b></gradient><size=70%> (Fa incontrare Ryan e Conrad!) |
+| `bedc761d` | <gradient="gold"><b>Conosco un drago rosso. Credo che ti piacerebbe! </b></gradient><size=70%> (Fa sì che Ryan e Conrad vadano a letto insieme!) |
 | `e104b8e4` | <gradient="gold"><b>Oh. Ehm. <size=70%> A me piacerebbe... Se fossi io quella persona. </b></gradient><size=70%> (Conferma la storia con Ryan!) |
 | `f5a81524` | <gradient="gold"><b>Non mi viene in mente nessuno.</b></gradient><size=70%> (Conferma la storia con Conrad!) |
 | `1d491283` | Oh? |
-| `8b7915f4` | Chi sarebbe? |
-| `31281c6d` | È un draco rosso DAVVERO carino che viene al lavaggio! |
-| `a7181b1a` | È un drago rosso. Credo che vi piacereste! |
-| `3605a48a` | Oh! Credo di averlo visto. Quello piccolino, sì? |
-| `a035a3fd` | Preferisce «verticalmente svantaggiato»... Ma sì. |
-| `69dd6a73` | Mhm! Sta cercando di conoscere gente nuova. |
+| `8b7915f4` | Chi è? |
+| `31281c6d` | È un draco rosso DAVVERO carino che viene al centro di lavaggio! |
+| `a7181b1a` | È un drago rosso. Credo che vi trovereste bene! |
+| `3605a48a` | Oh! Credo di averlo visto. Quello piccolino, vero? |
+| `a035a3fd` | Preferisce “diversamente alto”... Ma sì. |
+| `69dd6a73` | Mhm! Sta cercando di conoscere nuove persone. |
 | `45bc649d` | Oh... |
 | `d38c63ea` | Che carino. |
-| `ffed6d04` | Oh, fantastico. Sembra che ci assomigliamo. |
+| `ffed6d04` | Oh, fantastico. Sembra che ci somigliamo. |
 | `5c78099a` | Credo che mi piacerebbe conoscerlo! |
 | `ca480eed` | Allora vi metterò in contatto. |
 | `e6290003` | Non vedo l'ora. Vi metterò in contatto! |
@@ -679,15 +679,15 @@ The three choices below keep introduction, Ryan commitment and Conrad commitment
 | `c00d76cd` | Oh, grazie. È solo grazie ai tuoi lavaggi se ho questo aspetto! |
 | `63981253` | Sono... felice. |
 | `4ff91cbd` | Va bene! |
-| `d9c91bca` | E tu invece? Stai vedendo qualcuno? |
-| `48d4a45a` | C'è un drago rosso, Conrad. È... irascibile, ma carino. |
-| `dee4a32d` | Sì! Conrad, è adorabile. Anche se odierebbe sentirmelo dire. |
-| `b90f527f` | Oh, eh, è quel draco piccolino che ho visto arrivare un po' fa, vero? |
-| `2f3f5508` | Ehi! È solo... «verticalmente svantaggiato». |
+| `d9c91bca` | E tu invece? Stai frequentando qualcuno? |
+| `48d4a45a` | C'è questo drago rosso, Conrad. È... impulsivo, ma carino. |
+| `dee4a32d` | Sì! Conrad è adorabile. Anche se odierebbe sentirmelo dire. |
+| `b90f527f` | Oh, ma è quel draco piccolino che ho visto entrare poco fa, vero? |
+| `2f3f5508` | Ehi! È solo... “diversamente alto”. |
 | `a0cb3f78` | Mhm! È lui. |
 | `956e5c91` | Oh, scusa. |
-| `035e5be6` | Sembra una persona carina! |
-| `36fb380f` | Che bello, è carino! |
+| `035e5be6` | Sembra carino! |
+| `36fb380f` | Fantastico, è carino! |
 | `8caa3196` | Ehi, ehm, grazie ancora. |
 | `1a9a36e1` | Figurati! Non vedo l'ora che tu conosca Conrad. |
 | `cd9b2a8f` | No, grazie a te. Non... vedo l'ora. |
@@ -889,7 +889,7 @@ The six state-selected scenes distinguish the player's date with Conrad, Conrad'
 | `c7b3a185` | Va bene! Vado ad aprire il cancello. |
 | `7de2a81c` | Non preoccuparti. Lo farò. |
 | `5183a6f2` | Grazie. |
-| `f474ffa9` | <size=140%>EHI, <size=100%>vorrei un lavaggio. |
+| `f474ffa9` | <size=140%>EHI, <size=100%>vorrei una lavata. |
 | `975a629f` | Ehi, Conrad. |
 | `bb3b6c71` | Come mai sei qui così tardi? |
 | `016a65e8` | Già, sono io. |
@@ -921,11 +921,11 @@ The six state-selected scenes distinguish the player's date with Conrad, Conrad'
 | `493a82ef` | Comunque. Puoi andare ad aprire il cancello? |
 | `d8273d7f` | La notte non comincerà da sola! |
 | `f57fc630` | Tutto fatto! |
-| `f2527ed7` | Sei <i>immacolato. |
-| `646279a0` | Così sembra. |
-| `17dbb9b7` | Eccome! |
-| `81ebbec0` | Grazie per il lavaggio così tardi nella notte. |
-| `3bbab759` | Devi tenermi al corrente di te e Ryan, d'accordo? |
+| `f2527ed7` | Sei <i>splendente. |
+| `646279a0` | Pare di sì. |
+| `17dbb9b7` | Cazzo, sì. |
+| `81ebbec0` | Grazie per il lavaggio a quest'ora della notte. |
+| `3bbab759` | Devi tenermi aggiornato su te e Ryan, va bene? |
 | `ad8ab02e` | Comunque... |
 | `0e1fd4b0` | Fate uscire il <i>Grande C</i> da qui! |
 | `982fd3c7` | Grande C...? |
@@ -1161,3 +1161,121 @@ The common entry and exit lines and the flag-error text remain tied to their ori
 | `bfc04b3a` | Dimmi? |
 
 Positive: the three relationship flags remain distinguishable, and Conrad's own date with Ryan stays separate from the player's. Negative: do not alter flag identities, implied speaker or ordered rich-text markers. Feasibility derives from the bounded renderer probe; final execution and fit remain pending.
+
+### `ryan-conrad-romance-routing` — Ryan's fifth visit and Alexander's responses (partial)
+
+These three complete scene groups retain the relationship-specific greetings and the separate reports about Ryan or Conrad. The three diagnostic relationship flags remain distinct for each node. Both English bindings match except `a1f9de62` and `71d57aeb`, where Windows has “your” for “you”; the intended wording is clear from the paired source.
+
+| ID | Italian target |
+|---|---|
+| `61c7f2d6` | Qualcosa è andato storto con le variabili! |
+| `f7f7f5a1` | Aiuta gli sviluppatori, per favore.. |
+| `5462913f` | Conrad è stato con Ryan |
+| `c2529648` | Il personaggio del giocatore è stato con Conrad |
+| `78039fd1` | Il personaggio del giocatore è stato con Ryan |
+| `ee3398a6` | Ehi, omaccione. |
+| `9b7e09b8` | Ryan! |
+| `7f2e2736` | Ehi... piccola creatura! |
+| `e91e2041` | Non sono <i>così</i> in miniatura... |
+| `aedb6a51` | Allora, sei qui per un lavaggio? |
+| `82ba64bf` | Oh, scusa... |
+| `148a63c8` | Volevo solo stare al gioco. Mi fa piacere vederti! |
+| `38eb6d26` | Sì! |
+| `0d4e0ecf` | Ehi, coboldo! |
+| `b71f0756` | Ho deciso di provare a cucinare dei dolci. |
+| `212f0021` | Ultimamente ho avuto molto tempo libero. |
+| `b032bfb1` | A quanto pare fare dolci sporca parecchio! |
+| `2602b8c6` | Mi servirebbe un lavaggio. |
+| `c38b7fa6` | Ehi, Ryan! |
+| `55bb78d1` | Ehi! Sono qui per un lavaggio. |
+| `efea7148` | Ho deciso di provare a cucinare dei dolci. |
+| `79da763f` | Ultimamente ho avuto molto tempo libero. |
+| `da4f12a1` | A quanto pare fare dolci sporca parecchio! |
+| `4c7f15d6` | Fantastico, vado ad aprirti il cancello. |
+| `601e1b38` | Certo! Non vedo l'ora di raccontarti di Conrad. |
+| `f62e1c4f` | Grazie. |
+| `f103a4a8` | Ah sì? |
+| `6733a3df` | Sì! Presto avrò un appuntamento con lui. |
+| `d38efb75` | Mmmm, devo prepararmi per un appuntamento con lui. |
+| `45befc02` | Che bello! |
+| `ffeff59b` | Dovrai raccontarmi di più quando saremo dentro. |
+| `69dff2ec` | Aspetterò al cancello! |
+| `ca4a9672` | Eehi Ryan. |
+| `5c7a9105` | Ehi! |
+| `e62b989c` | Ho deciso di provare a cucinare dei dolci. |
+| `701b9feb` | Ultimamente ho avuto molto tempo libero. |
+| `e106207b` | A quanto pare fare dolci sporca parecchio! |
+| `7736270c` | Com'è andato il tuo appuntamento con Conrad? |
+| `048fe71b` | RACCONTAMI DI TE E CONRAD! |
+| `92bfe06c` | È andato benissimo! |
+| `bedeee82` | Oh... Quanta impazienza! |
+| `28eee9f5` | È andato benissimo! |
+| `8b7b8d6b` | Siamo andati a mangiare fuori. Abbiamo fatto una bella conversazione. |
+| `1d4b8a1c` | Una cosa tira l'altra... |
+| `a71a8385` | Siamo andati al bar... Le cose si sono fatte piccanti. Puoi immaginare cos'è successo dopo... <size=70%>Ah... |
+| `6d5ba814` | Qualcosa è andato storto con le variabili! |
+| `fc461784` | Aiuta gli sviluppatori, per favore.. |
+| `6a7610f3` | Conrad è stato con Ryan |
+| `0d9de1a1` | Il personaggio del giocatore è stato con Conrad |
+| `9bade6d6` | Il personaggio del giocatore è stato con Ryan |
+| `21fcef4f` | Ehi, Alexander. |
+| `14598ca6` | Ehi, omaccione! |
+| `b7cce838` | Salve. |
+| `82698bd1` | Ehi. |
+| `38388248` | Sono qui per un lavaggio. |
+| `ae08853f` | Spero che tu stia bene! |
+| `3f153aaf` | Sì! Ho appena avuto un appuntamento con Ryan. |
+| `a9253dd8` | Ah sì? Il draco azzurro che ho visto in giro? |
+| `4cacfab8` | È meraviglioso sapere che frequenti qualcuno! |
+| `da9cfdcf` | Sì! Ho appena avuto un appuntamento con Conrad. |
+| `60cdf456` | Ah sì? Il piccolo draco rosso? |
+| `f6fdf321` | È meraviglioso sapere che frequenti qualcuno! |
+| `556897bf` | Sto bene! Ancora meglio ora che sei qui. |
+| `ef399e26` | Sto bene! |
+| `c35890c8` | Oh. È... meraviglioso! |
+| `79099951` | Anche a me fa piacere essere qui. |
+| `7e2421b6` | Meraviglioso. |
+| `e81426c1` | Comunque, avrei bisogno di una lavata. |
+| `8b3abbf7` | Ci penso io! |
+| `a75bb519` | Vado ad aprirti il cancello. |
+| `1d0abc80` | Non vedo l'ora di fare il lavaggio. |
+| `316bb26e` | Grazie. |
+| `1c856f1c` | Allora, com'è andato il tuo appuntamento? |
+| `8ab5686b` | Benissimo! Ryan è un tesoro. |
+| `681117ec` | È andata benissimo. Conrad è sfrenato. In senso buono. |
+| `e0c8c57b` | È andata bene. Abbiamo fatto sesso. |
+| `30e461f2` | Bene. Ti meriti un uomo perbene. |
+| `a6d46685` | Sono certo che anche lui ti trovi piacevole! |
+| `37c9d915` | Grazie, anche tu sei piacevole! |
+| `44701902` | Grazie! |
+| `a1f9de62` | Grazie. È gentile da parte tua. |
+| `d2401e75` | Ma certo! |
+| `fe21109b` | Ah, sembra il tipo sfrenato. |
+| `5db47405` | Mi fa piacere che ti piaccia. Sono certo che ti trovi piacevole. |
+| `cb847372` | Grazie, anche tu sei piacevole! |
+| `e7e57d9c` | Grazie! |
+| `71d57aeb` | Grazie. È gentile da parte tua. |
+| `76f8c20c` | Ma certo! |
+| `87233429` | Oh. |
+| `1113335e` | ... |
+| `ab423ac7` | Meraviglioso! |
+| `3d723db0` | Dev'essere il segno che siete una bella coppia. |
+
+Positive: Alexander's description and responses track the selected partner; the explicit sex answer remains separate. Negative: do not exchange Ryan's and Conrad's flags, imply an additional relationship or change the rich-text tags. Final package execution and fit remain unverified.
+
+
+## Ryan and Conrad routing: completed author decision
+
+The five pivotal choices retain their original IDs and the four source state variables `$suggested_ryan_to_conrad`, `$ryan_conrad_romanced`, `$ryan_romanced` and `$conrad_romanced`; the captions distinguish unlocking from committing and explicitly retain the Conrad/Ryan hookup. The linked units above now contain wording for all 691 unique direct and forward-scope Yarn IDs in the paired worklist case, including generic shared contexts and the 47 Alexander visit-five rows. Overlapping decisions have one consistent target per ID; the source-bound typography and Yip decisions retain the same wording. This is a conservative text closure, not a claim that every static transfer is reachable in normal play.
+
+Author self-review, positive cases: introduction permits the source's later Ryan/Conrad hookup or Ryan path, the Ryan commitment remains distinct, and the Conrad choice retains its own path and later relationship-specific replies. Negative cases: never change IDs, choice destinations, conditions, state writes or markup; do not turn the unlocked alternatives into a single committed outcome. The paired source/exact-preservation and bounded renderer entry evidence support the adaptation route. The authored package still needs structural validation and the matching initial-state branch executions and final visual fit; those have not been run. The related Ryan unprefixed intimacy positions remain neutral under the coordinator's separate source-routing guidance, rather than being attributed to a speaker.
+
+The five once-state choice rows cited above are repeated here solely for an unambiguous per-ID authoring record:
+
+| ID | Italian wording |
+|---|---|
+| `fc7aaaa0` | Com'è insegnare? |
+| `daa040eb` | Ti piace il viola? |
+| `21c0526b` | Ti piace essere grande? |
+| `838cdf1b` | Cosa pensi di me? |
+| `72a9b5bb` | Sei felice? |
