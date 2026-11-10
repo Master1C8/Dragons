@@ -567,3 +567,14 @@ are exact. Both packaged fonts cover all 111 display code points.
 Verified receipts are under
 `localization/work/uk-ordinary-15-20261110.4eaLvD/`.
 Live scene checks and independent editorial review remain pending.
+
+## Sixteenth ordinary batch
+
+Conrad's third and fourth visits and related relationship choices
+add 145 values. The draft now covers 1,687 of 1,947 IDs with SHA-256
+`5a3f975caef45c6fbf5d1398a7f7ec6a491573e0d3ddf52b8ef1dfa543df822d`.
+The device, the shipping crates, the gate and the choice to go on a
+date remain separate. Both diagnostic packages changed 140 Yarn
+values and preserved five authored pauses, every earlier value,
+the Yarn metadata and the compiled program. Verified receipts are
+under `localization/work/uk-finish-16.IIYf5s/`.
