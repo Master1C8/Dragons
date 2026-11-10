@@ -33,21 +33,32 @@ class PairedLocaleTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
             path = root / 'shared.json'
-            doc = {'schema': 1, 'locale': 'ru', 'sharedInventorySha256': paired_locale.INVENTORY_SHA,
-                   'yarnScopeSha256': 'scope', 'lines': {'both': {
-                       'platforms': {'macos': 'Да', 'windows': 'Хорошо'},
-                   }}}
+            doc = paired_locale.template('uk', 'scope', rows)
+            self.assertEqual(doc['lines'], {'both': {'platforms': {'macos': '', 'windows': ''}}, 'only': ''})
+            path.write_text(json.dumps(doc), encoding='utf-8')
+            self.assertEqual(paired_locale.read(path, 'uk', 'scope', rows, complete=False),
+                             {'both': {}, 'only': {}})
+            with self.assertRaisesRegex(ValueError, 'both: translation must be nonempty'):
+                paired_locale.read(path, 'uk', 'scope', rows)
+
+            doc['lines']['both']['platforms']['windows'] = 'Гаразд'
+            path.write_text(json.dumps(doc), encoding='utf-8')
+            self.assertEqual(paired_locale.read(path, 'uk', 'scope', rows, complete=False)['both'],
+                             {'windows': 'Гаразд'})
+
+            doc['lines']['both']['platforms']['macos'] = 'Так'
+            del doc['lines']['only']
             path.write_text(json.dumps(doc), encoding='utf-8')
             with self.assertRaisesRegex(ValueError, 'missing 1 shared locale IDs: only'):
-                paired_locale.read(path, 'ru', 'scope', rows)
-            doc['lines']['only'] = 'Может быть'
+                paired_locale.read(path, 'uk', 'scope', rows)
+            doc['lines']['only'] = 'Можливо'
             path.write_text(json.dumps(doc), encoding='utf-8')
-            translations = paired_locale.read(path, 'ru', 'scope', rows)
+            translations = paired_locale.read(path, 'uk', 'scope', rows)
             target = root / 'windows'
-            paired_locale.materialize(target, 'windows', 'ru', {
+            paired_locale.materialize(target, 'windows', 'uk', {
                 'sourceFingerprints': {'dialogue.json': 'windows-hash'},
             }, rows, translations)
             self.assertEqual(json.loads((target / 'dialogue.json').read_bytes()), {
-                'schema': 1, 'locale': 'ru', 'sourceObjectSha256': 'windows-hash',
-                'lines': {'win-key': {'source': 'Okay', 'text': 'Хорошо'}},
+                'schema': 1, 'locale': 'uk', 'sourceObjectSha256': 'windows-hash',
+                'lines': {'win-key': {'source': 'Okay', 'text': 'Гаразд'}},
             })

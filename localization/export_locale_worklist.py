@@ -49,7 +49,7 @@ def build(inventory_path, scope_path, data_paths, draft_root, locale, *, locale_
                 raise ValueError(f'{platform}: draft locale, scope or snapshot differs')
         count = 0
         for key, binding in bindings.items():
-            if key in translations:
+            if platform in translations.get(key, {}):
                 binding['draft'] = translations[key][platform]
             elif binding['file'] == 'dialogue.json' and binding['key'] in draft:
                 binding['draft'] = draft[binding['key']]

@@ -77,6 +77,21 @@ def catalog(entries, scope):
     return builds, rows
 
 
+def sources_differ(bindings):
+    return len({row['source'] for row in bindings.values()}) > 1
+
+
+def template(locale, scope_sha, rows):
+    if locale not in dl.site_locales():
+        raise ValueError(f'unsupported target locale: {locale}')
+    lines = {}
+    for key, row in rows.items():
+        bindings = row['builds']
+        lines[key] = {'platforms': dict.fromkeys(bindings, '')} if sources_differ(bindings) else ''
+    return {'schema': 1, 'locale': locale, 'sharedInventorySha256': INVENTORY_SHA,
+            'yarnScopeSha256': scope_sha, 'lines': lines}
+
+
 def read(path, locale, scope_sha, rows, *, complete=True):
     doc = json.loads(path.read_text(encoding='utf-8'), object_pairs_hook=dl.unique_object)
     fields = {'schema', 'locale', 'sharedInventorySha256', 'yarnScopeSha256', 'lines'}
@@ -93,15 +108,16 @@ def read(path, locale, scope_sha, rows, *, complete=True):
         raise ValueError(f'unknown shared locale ID: {min(unknown)}')
     if complete and (missing := rows.keys() - lines.keys()):
         raise ValueError(f'missing {len(missing)} shared locale IDs: {min(missing)}')
-    return {key: resolve(key, rows[key]['builds'], value) for key, value in lines.items()}
+    return {key: resolve(key, rows[key]['builds'], value, allow_blank=not complete)
+            for key, value in lines.items()}
 
 
-def resolve(key, bindings, value):
-    sources_differ = len({row['source'] for row in bindings.values()}) > 1
-    if isinstance(value, str) and not sources_differ:
+def resolve(key, bindings, value, *, allow_blank=False):
+    differs = sources_differ(bindings)
+    if isinstance(value, str) and not differs:
         texts = dict.fromkeys(bindings, value)
     elif isinstance(value, dict) and value.keys() == {'text', 'sharedAcrossSourceVariants'}:
-        if not sources_differ or value['sharedAcrossSourceVariants'] is not True:
+        if not differs or value['sharedAcrossSourceVariants'] is not True:
             raise ValueError(f'{key}: invalid confirmation for shared translation')
         texts = dict.fromkeys(bindings, value['text'])
     elif isinstance(value, dict) and value.keys() == {'platforms'}:
@@ -110,9 +126,10 @@ def resolve(key, bindings, value):
             raise ValueError(f'{key}: platform translations must match source platforms')
     else:
         raise ValueError(f'{key}: expected text, platform translations, or explicit confirmation for differing sources')
-    if any(not isinstance(text, str) or not text.strip() or '\0' in text for text in texts.values()):
+    if any(not isinstance(text, str) or '\0' in text or (not allow_blank and not text.strip())
+           for text in texts.values()):
         raise ValueError(f'{key}: translation must be nonempty text without NUL')
-    return texts
+    return {platform: text for platform, text in texts.items() if text.strip()} if allow_blank else texts
 
 
 def materialize(target, platform, locale, build, rows, translations):

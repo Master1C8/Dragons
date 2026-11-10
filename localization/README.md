@@ -292,10 +292,21 @@ hashes. Its `lines` object uses the IDs from the paired worklist:
 - Use `{"platforms": {"macos": "...", "windows": "..."}}` for different
   translations. Include every platform that owns the row.
 
-Keep the source catalog hashes and worklist IDs when authoring a new
-language for the same builds. Set the target locale and translate the
-values. The builders reject unknown or missing IDs and require an
-explicit decision when sources differ. Original strings, destination
+Generate a template for a supported target locale. Choose a new output
+file in an existing directory.
+
+```sh
+"$PYTHON" localization/generate_locale_template.py \
+  --locale uk --inventory "$shared_inventory" --yarn-scope "$paired_yarn_scope" \
+  --output "$translation_file"
+```
+
+The template starts with empty strings and gives differing sources
+separate platform fields. Use the [paired worklist](#paired-text-authoring-worklist)
+to look up the English source and scene context by ID. Keep the source
+hashes and IDs, and fill every required value. Pass the same filled file
+and locale code to both package commands below. The builders reject
+blank values and unknown or missing IDs. Original strings, destination
 keys and resource fingerprints come from the pinned source data.
 
 ## Complete macOS app
@@ -338,8 +349,9 @@ exact English source, package file, input key and inventory references.
 Yarn rows retain their node, instruction position, choice kind and any
 fixed speaker prefix. The special-scene index links these rows to direct
 and contextual dependencies in the shared inventory. Existing wording
-appears as `draft`. Omit the file for a new locale, or pass `--draft-root`
-for legacy platform dialogue drafts. See the
+appears as `draft`. Empty template fields appear only as source rows.
+Omit the file to export just the source, or pass `--draft-root` for legacy
+platform dialogue drafts. See the
 [verified worklist control](evidence/locale-workload-v42-20261110.md#paired-authoring-worklist).
 
 ## Windows replacement package
