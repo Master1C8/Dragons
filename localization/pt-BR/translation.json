@@ -1844,20 +1844,18 @@
     "yarn:line:e104b8e4": "",
     "yarn:line:f5a81524": "",
     "yarn:line:1d491283": "",
-    "yarn:line:8b7915f4": "",
-    "yarn:line:31281c6d": "",
-    "yarn:line:a7181b1a": "",
-    "yarn:line:3605a48a": "",
-    "yarn:line:a035a3fd": "",
-    "yarn:line:69dd6a73": "",
-    "yarn:line:45bc649d": "",
+    "yarn:line:8b7915f4": "Quem é?",
+    "yarn:line:31281c6d": "É um dragão vermelho MUITO fofo que frequenta o lava-rápido!",
+    "yarn:line:a7181b1a": "É um dragão vermelho. Acho que vocês dois iam se dar bem!",
+    "yarn:line:3605a48a": "Ah! Acho que já vi ele. O baixinho, né?",
+    "yarn:line:a035a3fd": "Ele prefere 'verticalmente desfavorecido'... Mas é.",
+    "yarn:line:69dd6a73": "Uhum! Ele está tentando conhecer gente nova.",
+    "yarn:line:45bc649d": "Ah...",
     "yarn:line:d38c63ea": {
-      "platforms": {
-        "macos": "",
-        "windows": ""
-      }
+      "text": "Que fofo.",
+      "sharedAcrossSourceVariants": true
     },
-    "yarn:line:ffed6d04": "",
+    "yarn:line:ffed6d04": "Ah, maravilha. Parece que somos parecidos.",
     "yarn:line:5c78099a": "",
     "yarn:line:ca480eed": "",
     "yarn:line:e6290003": "",
@@ -1879,24 +1877,20 @@
     "yarn:line:c00d76cd": "",
     "yarn:line:63981253": "",
     "yarn:line:4ff91cbd": "",
-    "yarn:line:d9c91bca": "",
-    "yarn:line:48d4a45a": "",
-    "yarn:line:dee4a32d": "",
-    "yarn:line:b90f527f": "",
-    "yarn:line:2f3f5508": "",
+    "yarn:line:d9c91bca": "E você? Está saindo com alguém?",
+    "yarn:line:48d4a45a": "Tem um dragão vermelho, o Conrad. Ele é... Esquentado, mas fofo.",
+    "yarn:line:dee4a32d": "Sim! O Conrad, ele é uma graça. Mas ia odiar que eu dissesse isso.",
+    "yarn:line:b90f527f": "Ah, sei, é aquele dragão baixinho que vi entrando um tempo atrás, né?",
+    "yarn:line:2f3f5508": "Ei! Ele só é... 'verticalmente desfavorecido'.",
     "yarn:line:a0cb3f78": {
-      "platforms": {
-        "macos": "",
-        "windows": ""
-      }
+      "text": "Uhum! É ele.",
+      "sharedAcrossSourceVariants": true
     },
-    "yarn:line:956e5c91": "",
-    "yarn:line:035e5be6": "",
+    "yarn:line:956e5c91": "Ah, desculpa.",
+    "yarn:line:035e5be6": "Parece ser fofo!",
     "yarn:line:36fb380f": {
-      "platforms": {
-        "macos": "",
-        "windows": ""
-      }
+      "text": "Que maravilha, ele é fofo!",
+      "sharedAcrossSourceVariants": true
     },
     "yarn:line:8caa3196": "",
     "yarn:line:1a9a36e1": "",
