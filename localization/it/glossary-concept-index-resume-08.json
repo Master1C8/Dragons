@@ -1,0 +1,681 @@
+{
+  "schema": "italian-glossary-concept-index-v1",
+  "status": "partial-not-editorially-complete",
+  "worklistSha256": "692c32667546db79d51cab95d4894bb97f7f78b4fda0756465f90c0a5e6319d2",
+  "entryHashIndexSha256": "81ba8ebd79affeab85cf2559a753fbd06498d74daf8358bb0223770a236bf3cf",
+  "method": "Human-reviewed anchor IDs from bounded author receipts. Hashes bind complete paired rows and ordered scene groups. No absence or completeness inference from anchors. Both author layers remain subject to scene-by-scene semantic union and independent review is separate.",
+  "entries": [
+    {
+      "id": "dnw-player",
+      "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+      "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:afcd5586",
+          "group": "Conrad_Intro_3",
+          "rowSha256": "6df6b7900237fa02186e5d9652c3a14a28981f64803c09b86ae3798130a6d9c5",
+          "orderedGroupSha256": "12b2913b5f20787742898fe189e5dcea00cd63da8a5fe9831e7f5b4bec1654fd"
+        },
+        {
+          "id": "yarn:line:c8f8bc22",
+          "group": "Alexander_questions",
+          "rowSha256": "c171c5e48c2f40e6d5de4db2c8e6a961ace9be179053af88edbb07a71646efa9",
+          "orderedGroupSha256": "f994ff2404c87b478fe4f1138de047be0a28dac1ea0228fb54119b952154fe51"
+        },
+        {
+          "id": "yarn:line:61c8781b",
+          "group": "Alexander_3_intro",
+          "rowSha256": "a802ffb57a35214a6e91da9341a70b43641f4cede92db3a52f0c16963913a587",
+          "orderedGroupSha256": "33dc4d27d8ffa538ba471793d51c1ac12cc11064690c0d5ffeccc8b0d5e5409c"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-alexander",
+      "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+      "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:af0c15fd",
+          "group": "Alexander_1_intro",
+          "rowSha256": "8a98c1323c224866d5d45865dd53cee2af81b8004724b688381682ac51145659",
+          "orderedGroupSha256": "1f7bc70270a702a7c293bd63939b771efb2f5e61f2ee67cff6550ea24571f5de"
+        },
+        {
+          "id": "yarn:line:960707b0",
+          "group": "Alexander_questions",
+          "rowSha256": "9b18d13849baa017c41d442b25d07a6a7da0a7ab8b499ee391b24bc5dedf4ecc",
+          "orderedGroupSha256": "f994ff2404c87b478fe4f1138de047be0a28dac1ea0228fb54119b952154fe51"
+        },
+        {
+          "id": "yarn:line:f718a7eb",
+          "group": "Alexander_questions",
+          "rowSha256": "7a6dbbf24ca47df83b066998e69266964eea43ca5ee7c28c1013cf700a1a393c",
+          "orderedGroupSha256": "f994ff2404c87b478fe4f1138de047be0a28dac1ea0228fb54119b952154fe51"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-conrad",
+      "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+      "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:1d4b8528",
+          "group": "Conrad_Intro_1",
+          "rowSha256": "8c65091406d6f630e281f08ea6955f02009d8df25c9f31d4b69e2ce42b74780b",
+          "orderedGroupSha256": "8d5c5c35a7f2454176778d652b2115c0d0683066291e9ffd6c01b1d24614fc99"
+        },
+        {
+          "id": "yarn:line:04b7ce44",
+          "group": "Conrad_required_2",
+          "rowSha256": "f21f76580da9b13915f8f51f6d0189500b40d934c4a3751095495c8566adb0a2",
+          "orderedGroupSha256": "c0ca12f0eb6b38d6baf8b637285de0df9ba44c5e3cfef15c8a57760aa9a06885"
+        },
+        {
+          "id": "yarn:line:3cda84e6",
+          "group": "Ryan_5_Required_conrad_romanced",
+          "rowSha256": "c347b4ef9874f1bcf97f9ecb838c1f1d8a0557297ec2ef277e067194f94eb5df",
+          "orderedGroupSha256": "aa39cfb79e98755c34ce7c09c0690edcdb593cdfb853eaadf159460bd7c9e995"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-ryan",
+      "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+      "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:1fa0fbbe",
+          "group": "Conrad_Intro_4",
+          "rowSha256": "c2cf00983974fe25a03fb4ff3de61ca8ecfc24c7e755dce3b6e760cacfd65e11",
+          "orderedGroupSha256": "3ce16bfcff06090ce46f0f7b60edd8239fe46382b727d2b809a0e7931bee7c42"
+        },
+        {
+          "id": "yarn:line:af3f02c9",
+          "group": "Ryan_4_intro",
+          "rowSha256": "44502912cd94cf6122acd284978cda4bde643a09719673eb60d339bef21936b8",
+          "orderedGroupSha256": "9b5428feec0a1a9deda6d9c69f36ae71d7ae05f244fda6f365ae45dbda5dc699"
+        },
+        {
+          "id": "yarn:line:e2ea4ead",
+          "group": "Ryan_5_intro_ryan_romanced",
+          "rowSha256": "c810dca4e919c1ce124fa294b7ce603086cc6fea2609a73ff4bf41ee433e56a4",
+          "orderedGroupSha256": "626bff861409108ce39ae05fe9cf43c5456fbe7bc96419b0d17b402738d28682"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-franchise-representative",
+      "sourceEntrySha256": "808a4e29680f4310b8f68b8556203cc3c2d98f7af5295c0f9ff3bb9760797e50",
+      "localeFieldsSha256": "b84badfb62b505048bd07d0bc13735dd49adf0071ae80a951da0e389d5303269",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:a99c515c",
+          "group": "Ryan_1_PhoneTutorial",
+          "rowSha256": "3354cfb3db9ef8642b41c3bcf0db42b13bbe3475ca4816a2ba5ffa3916dd1637",
+          "orderedGroupSha256": "bd46a0f6251eaef692855323bb4bb0292a16ec181f56aa5c4cce77857ce2fc35"
+        },
+        {
+          "id": "yarn:line:4183ca7e",
+          "group": "Ryan_1_PhoneTutorial",
+          "rowSha256": "8cc12aa4e8fd6660bc1a157a53fbdc1ae8b0e2d0ee92c6f65cc70fd5e298995b",
+          "orderedGroupSha256": "bd46a0f6251eaef692855323bb4bb0292a16ec181f56aa5c4cce77857ce2fc35"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-igwyx",
+      "sourceEntrySha256": "66ad2b67f8ff6ddf6faf87daf25948de76082040baa5fba50b5a1f24a05b2f3a",
+      "localeFieldsSha256": "098ca2cedf2af074af1e3995e8a787ba4496c7f3ec5b6060d6c77b25fb1ff55e",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:9d7cc63c",
+          "group": "Alexander_1",
+          "rowSha256": "4592ba511f4d074c4c7f1440a3a294ec426004c94ff495ca5a69a4da59a25aa2",
+          "orderedGroupSha256": "7d47ff3b588698c4f2fc946251e1507ed84f63bf86b7625b531b7ca842a66e83"
+        },
+        {
+          "id": "yarn:line:fedbf70c",
+          "group": "Alexander_2_intro",
+          "rowSha256": "a3e202548426fe3a3fd2890d4202cf6f4e8828e3552c1e140b22940b700dd9e0",
+          "orderedGroupSha256": "b68be1b426d5a5a3c14b1d381987d5f0d383eedf233703425ac55f4ad5f53f71"
+        },
+        {
+          "id": "yarn:line:68ebf07b",
+          "group": "Alexander_2_intro",
+          "rowSha256": "f4d8b0488b2a340edc3d30204cb4a71aed00f748265957028df3bcb2a578774e",
+          "orderedGroupSha256": "b68be1b426d5a5a3c14b1d381987d5f0d383eedf233703425ac55f4ad5f53f71"
+        },
+        {
+          "id": "yarn:line:8245fe2b",
+          "group": "Alexander_3_required",
+          "rowSha256": "46c88d69db7304a9289b904e72203c54c60cb803292c39652397dd3e346ab431",
+          "orderedGroupSha256": "46590481d42cd48b9ac5d0c5f236823f0f8ee7f051eddb15a78f92ced3e04d23"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-max",
+      "sourceEntrySha256": "5b0138c5e5650c67dc30df1adb54f064252c3928be7cb8861d7cd468722cc5c2",
+      "localeFieldsSha256": "839e0a302e7607cd703db0ce151c5e2188deb533468ac6cb0cf89e6ea9435c76",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:d7bcbe29",
+          "group": "RyanMuddy_Idle4",
+          "rowSha256": "043c5ceb9fdc5f6606a2b2b635c5a97855361d66e7213f723213c426a5ec069e",
+          "orderedGroupSha256": "1d2626a8e00886c171a539bd97d81454a11d998fc5b4d11968ff6ac5d6a93ab8"
+        },
+        {
+          "id": "yarn:line:7429dab7",
+          "group": "RyanMuddy_Idle4",
+          "rowSha256": "8e00c1304a31ebfd3767f397b2e8a1537bf2b8c4ab627bdc4272e459dcdcade5",
+          "orderedGroupSha256": "1d2626a8e00886c171a539bd97d81454a11d998fc5b4d11968ff6ac5d6a93ab8"
+        },
+        {
+          "id": "yarn:line:01505282",
+          "group": "RyanMuddy_Idle8",
+          "rowSha256": "c8abffe5eb96845dc0c362074d9e60ff8c9e6413cb8d7cf0493905c42ebd61e0",
+          "orderedGroupSha256": "139ce807430f1b868f33cbc545cda9e9b9aab6a74257a09f91d0072cb9ed429f"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-anonymous-dragon-speaker",
+      "sourceEntrySha256": "929136153456556d2889090960049f8981a99affd848ad4f38c17987221a3e0d",
+      "localeFieldsSha256": "c4e6eee5e1358e43351c48d0b9e0175f9da8a4d3086ca614cb2434e5e8fd71c7",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:6d77feef",
+          "group": "DragonConfusedAboutDismissal",
+          "rowSha256": "acb671d0439c4aab58e4b2883c733a20478b5351fbbbb33f46a09bd39142d509",
+          "orderedGroupSha256": "b24587c2a6c51e54fa41ee70b1ce3412679531223fb45b792e8e702cc53cb7df"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-dragn-wash",
+      "sourceEntrySha256": "9a00bf3c920a4f70cb305fc794ea9f0782d034c71e41c2b5cd8aa1f992f4cb3a",
+      "localeFieldsSha256": "3e8be75980cfc0ab841ba8daf94b88dd40d34964a6ff6c7dadf73eb7b6d98208",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:a99c515c",
+          "group": "Ryan_1_PhoneTutorial",
+          "rowSha256": "3354cfb3db9ef8642b41c3bcf0db42b13bbe3475ca4816a2ba5ffa3916dd1637",
+          "orderedGroupSha256": "bd46a0f6251eaef692855323bb4bb0292a16ec181f56aa5c4cce77857ce2fc35"
+        },
+        {
+          "id": "yarn:line:f676b9a8",
+          "group": "Ryan_1_intro",
+          "rowSha256": "f7bc7e42bd16aa0525ee76adad81844b5105b77f3761741da2db39ccb99ca4de",
+          "orderedGroupSha256": "3cfab756ec218c0be2b774f23233298eba6272c4a4f5d9285b103be27eddf721"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-franchise-223",
+      "sourceEntrySha256": "a08fb4bf6c2582215f77580b2d302cdb0a0e19480a1847bc8a079d7ee898ece5",
+      "localeFieldsSha256": "980d16c3abbca5209a27c5179824561efd8c4a307f9e8d3d2164f42c3d2961a0",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:4183ca7e",
+          "group": "Ryan_1_PhoneTutorial",
+          "rowSha256": "8cc12aa4e8fd6660bc1a157a53fbdc1ae8b0e2d0ee92c6f65cc70fd5e298995b",
+          "orderedGroupSha256": "bd46a0f6251eaef692855323bb4bb0292a16ec181f56aa5c4cce77857ce2fc35"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-burnswick-college",
+      "sourceEntrySha256": "3a49dd393f7985a13465547414ed83c845d4e21f6ef20f7f33235fbfd8da18d4",
+      "localeFieldsSha256": "5f15b012ecad866bb8c70b01f8af58cf1cac6232da91de87ccf78da2ad7caccd",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:dd06ed39",
+          "group": "Alexander_2",
+          "rowSha256": "2e764b49e60e85942aca0cd3fe36f847d297fa46d3224909375d11c80daae4a2",
+          "orderedGroupSha256": "8c55a2b36a75043bfa1f2842549b9ea2028bbaaf34978203401da4e3195df67e"
+        },
+        {
+          "id": "yarn:line:607a5c47",
+          "group": "Alexander_2",
+          "rowSha256": "6af30d152022b95f25573e782f652e108d26daceaa71e9ac8839c2f2b9519f2f",
+          "orderedGroupSha256": "8c55a2b36a75043bfa1f2842549b9ea2028bbaaf34978203401da4e3195df67e"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-college-library",
+      "sourceEntrySha256": "bd52ecb4c3629cbc205c3683a0fa4df3aa2a177819332e2c0400ce0101a0744b",
+      "localeFieldsSha256": "4cd4e91eaa17f7df596acb78fbd1d5197c6c19215dadf073a14c61a4caf224fc",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:8c8591ec",
+          "group": "Alexander_5_romance_route",
+          "rowSha256": "99c41f01093a77af1b567bdd2cf0d88fd51e5cf459f9088f69e4d12819bcbaf4",
+          "orderedGroupSha256": "3239d0caa2f70123da57c8f8402c3d67dcf071d0e7f8f998e3ebc78d1c1f61a9"
+        },
+        {
+          "id": "yarn:line:1ab5969b",
+          "group": "Alexander_5_romance_route",
+          "rowSha256": "30a33016f34ef9b0d59a5ac6b5e416b19c1c81ae371f920c28d8cc411efe8e1f",
+          "orderedGroupSha256": "3239d0caa2f70123da57c8f8402c3d67dcf071d0e7f8f998e3ebc78d1c1f61a9"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-wings",
+      "sourceEntrySha256": "3c78fd3362268274dc2ac3cd2e8bc39fffddeca807a1acef1e24454df105aba8",
+      "localeFieldsSha256": "653487a443f6e2de0037759a9adfbfbf166508764e3d4771dbd30cdc94c10764",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:a4a26529",
+          "group": "Ryan_5_Required_ryan_romanced",
+          "rowSha256": "46f3716100b3273399d63410c1d005dad26b668a1bbd2b5321a6ffd7754a00b7",
+          "orderedGroupSha256": "0e4b718dfddc6832a343c17f733e1ae0de08cc39289dc7755693893cd9d95fa6"
+        },
+        {
+          "id": "yarn:line:f4af8b88",
+          "group": "Conrad_Outro_4_Conrad_Romanced",
+          "rowSha256": "98f47cd098b853cbc960f08bfc6542ca6cb55972dfb9529ffb3193cd0f9ffa6b",
+          "orderedGroupSha256": "cc20f2cc17cd2162eba335fb096ceed256180345d5e38a83da37d7e81595be16"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-wingco",
+      "sourceEntrySha256": "00c60b2464c82a74a0078c0da773a3adba7a4b264fda365efd72e0af02fc7e2b",
+      "localeFieldsSha256": "8e3d125fe1c403da1a9ae9872cb95aba3d21e17b82f894f80262d4d1f9fe4668",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:dcc4774b",
+          "group": "Ryan_egg_dialog",
+          "rowSha256": "bbdc1eadc7a722b16f4c81a3afa28531e81157b66861608731b3c075fb65f968",
+          "orderedGroupSha256": "cf306a97ea8a15306966f3818183b809b95a3b9bdab9ea9d1f3df8ca3e028465"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-kobold",
+      "sourceEntrySha256": "655be37c2da8a22f692dbac404a5811b4227a465b44d7c6c85bc35af64f51df3",
+      "localeFieldsSha256": "8a1ac2a388a6bd2ea4517b1b90a93ddd9bb82862e39762fe8fcbf986a3f688b3",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:afcd5586",
+          "group": "Conrad_Intro_3",
+          "rowSha256": "6df6b7900237fa02186e5d9652c3a14a28981f64803c09b86ae3798130a6d9c5",
+          "orderedGroupSha256": "12b2913b5f20787742898fe189e5dcea00cd63da8a5fe9831e7f5b4bec1654fd"
+        },
+        {
+          "id": "yarn:line:61c8781b",
+          "group": "Alexander_3_intro",
+          "rowSha256": "a802ffb57a35214a6e91da9341a70b43641f4cede92db3a52f0c16963913a587",
+          "orderedGroupSha256": "33dc4d27d8ffa538ba471793d51c1ac12cc11064690c0d5ffeccc8b0d5e5409c"
+        },
+        {
+          "id": "yarn:line:5bab2df8",
+          "group": "ryan_food_dialogue",
+          "rowSha256": "07a10bd5beed5061ff83624905c8432c1a1ce4dfb2714e328c5e4ad6cb919df3",
+          "orderedGroupSha256": "e5c95cbd659b423e9d5d7eecdef0e7270429417a71e2ebd9952eadf206bf4fc2"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-dragon",
+      "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+      "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:393c128a",
+          "group": "Alexander_1_intro",
+          "rowSha256": "8bfe6c948d69d661d693c6ae784d9593977b6339e86d17ab78bdd7bd0a51e624",
+          "orderedGroupSha256": "1f7bc70270a702a7c293bd63939b771efb2f5e61f2ee67cff6550ea24571f5de"
+        },
+        {
+          "id": "yarn:line:78cef130",
+          "group": "Alexander_2_required",
+          "rowSha256": "5ebfc506d29043651b58e95e193d830336c0fcd7dbf230535c65fe1372cf8249",
+          "orderedGroupSha256": "a8ea0d7cef86338e7be555b5d6eb25fdde2139251b5c5c7ba81a33040c649339"
+        },
+        {
+          "id": "yarn:line:8ee41fdc",
+          "group": "Alexander_questions",
+          "rowSha256": "7278f8fb684f20d631b745396a6652ae8a5df2a18036c7aac975f90817177411",
+          "orderedGroupSha256": "f994ff2404c87b478fe4f1138de047be0a28dac1ea0228fb54119b952154fe51"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-drake",
+      "sourceEntrySha256": "fc7a676e04843dde8307d6b1843ac34215ca67200d62b1ff1dfe06d21456cdd3",
+      "localeFieldsSha256": "588aaacc0e9b6174fe21464ef2a69488a7e951e8d2422c59ca6dfab4953105e1",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:3112adad",
+          "group": "Conrad_required_2",
+          "rowSha256": "1ebd18ecb1a7761089bf18187740f4eb04c2846bcaf9b5128e59b0012f54686a",
+          "orderedGroupSha256": "c0ca12f0eb6b38d6baf8b637285de0df9ba44c5e3cfef15c8a57760aa9a06885"
+        },
+        {
+          "id": "yarn:line:1d73a343",
+          "group": "Conrad_required_2",
+          "rowSha256": "a80ebcb5f637a5bfdbc5b4ee6ce788101ff40fc81d5a01fab2d16ce1dcda5664",
+          "orderedGroupSha256": "c0ca12f0eb6b38d6baf8b637285de0df9ba44c5e3cfef15c8a57760aa9a06885"
+        },
+        {
+          "id": "yarn:line:3f153aaf",
+          "group": "Alexander_5_intro",
+          "rowSha256": "d5e701436f88bc1e4167d10a08b31932641760ac33ac1bf40f499fa1712307e4",
+          "orderedGroupSha256": "721a280778f5fa964ae68a3aa1f839d21c36463a34508a22babcbdf2d0597852"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-dragon-washer",
+      "sourceEntrySha256": "70f6f7b0f545b32f5a98233380b01eda5a369c67c4d2969c55e02a1782a18aa9",
+      "localeFieldsSha256": "2a85f72db9fb40d18dc57ace708e091d432e3a63aba15051e6b89ea74973f09a",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:c9e7bb1e",
+          "group": "Ryan_1_required",
+          "rowSha256": "cb558e0cc10f352464bb7ade2944a3de3b7058ea049bf1c2c1fb75df71658477",
+          "orderedGroupSha256": "bebfa61fc08f35ff73377024d2af73f42e1bbb8fdde5e85bf6288efd9eaecec0"
+        },
+        {
+          "id": "yarn:line:c8f8bc22",
+          "group": "Alexander_questions",
+          "rowSha256": "c171c5e48c2f40e6d5de4db2c8e6a961ace9be179053af88edbb07a71646efa9",
+          "orderedGroupSha256": "f994ff2404c87b478fe4f1138de047be0a28dac1ea0228fb54119b952154fe51"
+        },
+        {
+          "id": "yarn:line:c570a462",
+          "group": "Alexander_3_intro",
+          "rowSha256": "570feec607f00c3f6e4bd16e21fb81981a123f429093091e1f836e39835befa3",
+          "orderedGroupSha256": "33dc4d27d8ffa538ba471793d51c1ac12cc11064690c0d5ffeccc8b0d5e5409c"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-wash",
+      "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+      "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:a2ba222e",
+          "group": "Alexander_1_intro",
+          "rowSha256": "3b4f3d972962b4a95c54b486d684d32a1ca040fe60ecfb226498fac5d46f44cf",
+          "orderedGroupSha256": "1f7bc70270a702a7c293bd63939b771efb2f5e61f2ee67cff6550ea24571f5de"
+        },
+        {
+          "id": "yarn:line:e2f9c70c",
+          "group": "Alexander_1_required",
+          "rowSha256": "e2f9415fe0d475d218fa9dd70332c74ed97567893e48f0123e07b4b03e06d5ef",
+          "orderedGroupSha256": "e4c0da992215d90362dba2ac2070856e85651781e36ffb88d8e556e3f9138f68"
+        },
+        {
+          "id": "yarn:line:a62e8112",
+          "group": "Alexander_2_intro",
+          "rowSha256": "7fbb1ed8ccfd610f3998f7b3685772784fca048699c88de2a66218c1c63668c3",
+          "orderedGroupSha256": "b68be1b426d5a5a3c14b1d381987d5f0d383eedf233703425ac55f4ad5f53f71"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-yip",
+      "sourceEntrySha256": "732298762db192f5e97009d5a3babdf06857b777d65975115662abe32637b079",
+      "localeFieldsSha256": "649610e6e5ee14c04df3df24b4118f349f79952954c42995d92625488a26e8e9",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:5efde4e2",
+          "group": "Alexander_1_Outro",
+          "rowSha256": "a0d18ce64e8c76750c8f197b6f65be5ca6bff717e52e42b499ca4bff4ae23d2f",
+          "orderedGroupSha256": "99bcd208cef7d4aa7b009f553d50292b98afb0993b22a435fc1cc33de7b5b7ad"
+        },
+        {
+          "id": "yarn:line:c8cde395",
+          "group": "Alexander_1_Outro",
+          "rowSha256": "fe6ea99e04b05c8898aed37d3603acc54a87aae5a5b55624af6cf9c0d8aa96ae",
+          "orderedGroupSha256": "99bcd208cef7d4aa7b009f553d50292b98afb0993b22a435fc1cc33de7b5b7ad"
+        },
+        {
+          "id": "yarn:line:5544e245",
+          "group": "Alexander_3_required",
+          "rowSha256": "48fde72ef011d72f574f68fe26f1a1f765194ee61702c0fc9f063aa7b6024079",
+          "orderedGroupSha256": "46590481d42cd48b9ac5d0c5f236823f0f8ee7f051eddb15a78f92ced3e04d23"
+        },
+        {
+          "id": "yarn:line:c374e532",
+          "group": "Alexander_3_required",
+          "rowSha256": "214d675c79ede8d397fd73096bac6b187dd15685553c31c3b23dcb1e8bbb80d1",
+          "orderedGroupSha256": "46590481d42cd48b9ac5d0c5f236823f0f8ee7f051eddb15a78f92ced3e04d23"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-mount",
+      "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+      "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:c66153d3",
+          "group": "Alexander_4_required",
+          "rowSha256": "292c474407b3b10f582ecd434d953096944052085f3cb62630c01cdc2ecf5ab3",
+          "orderedGroupSha256": "597970a783c4408d8dada7ea3b30cac2b4294f16e7b9739101aea0b86ccd5866"
+        },
+        {
+          "id": "yarn:line:577cec43",
+          "group": "Alexander_4_required",
+          "rowSha256": "50a2060d222e0ec0f5e8bba3db6c6af578a9690fed3f22baae7fe5d03ae0b796",
+          "orderedGroupSha256": "597970a783c4408d8dada7ea3b30cac2b4294f16e7b9739101aea0b86ccd5866"
+        },
+        {
+          "id": "yarn:line:5d34e715",
+          "group": "Conrad_required_1",
+          "rowSha256": "1a6c6134795e235b6f21c7687f0df8138af340a585f9f91633e7327630659da4",
+          "orderedGroupSha256": "5511c0d6f6b153618c23bc4347b4f5e553ba878654e7b3aedd7837e33d403156"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-special-endings",
+      "sourceEntrySha256": "b2dab9f17eac895557320156d6a6089138f749194fc613995baed5c2efa4e55d",
+      "localeFieldsSha256": "ae22ce626d4dad5ecdb291040e1e1910d6aae237af683e80a4aef8eaa867829f",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:6fbc3c1b",
+          "group": "Conrad_required_1",
+          "rowSha256": "cb22c592388e0e23532968507fdf8bf365f5c4025f2271973bd22568b5e73834",
+          "orderedGroupSha256": "5511c0d6f6b153618c23bc4347b4f5e553ba878654e7b3aedd7837e33d403156"
+        },
+        {
+          "id": "yarn:line:a0a0a49c",
+          "group": "Conrad_required_1",
+          "rowSha256": "5b3a2e4f14b194c366b353f7bea9098d4323a01341725f0a7960aec479981772",
+          "orderedGroupSha256": "5511c0d6f6b153618c23bc4347b4f5e553ba878654e7b3aedd7837e33d403156"
+        },
+        {
+          "id": "yarn:line:d5ed3582",
+          "group": "Conrad_required_1",
+          "rowSha256": "58c6cc2b2118cb82499c05ba9ea7e2a22e589d4a22696bf2e50b31f437d966e7",
+          "orderedGroupSha256": "5511c0d6f6b153618c23bc4347b4f5e553ba878654e7b3aedd7837e33d403156"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-phoenix-feather",
+      "sourceEntrySha256": "c4024e659615307ed5c582c44c3c7216aaededde7b2fccea8aa6ebd3c3c705a4",
+      "localeFieldsSha256": "a89364a2fbf971d5ad05417d23472c29385e40bf92b3202d5beff774ee0f4134",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:5a632b75",
+          "group": "Alexander_2_intro",
+          "rowSha256": "19921fc6345a9ffe163b090809df592cda677960c9381c57083563cd28c305ff",
+          "orderedGroupSha256": "b68be1b426d5a5a3c14b1d381987d5f0d383eedf233703425ac55f4ad5f53f71"
+        },
+        {
+          "id": "yarn:line:bfeaec15",
+          "group": "Alexander_2_intro",
+          "rowSha256": "8ecff541c7db9cf4b26a77df1b355c97122db2ccc85743cb1cea2abc20b75b23",
+          "orderedGroupSha256": "b68be1b426d5a5a3c14b1d381987d5f0d383eedf233703425ac55f4ad5f53f71"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-family-crest",
+      "sourceEntrySha256": "6c64b3f010048958681651d5ce643ac55ddaa98900feba2a8e2cc54d24b7e9c9",
+      "localeFieldsSha256": "4c824a83aa2bdbd707b0613ce7015a4d20f7d6c7c1fea3cabbb3641c59ecbc2d",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:1ff9a04c",
+          "group": "Alexander_questions",
+          "rowSha256": "018e4df34acec982ffd9d081126b33e329ad66f9ee617a9bf9a5fdcc4a3204c8",
+          "orderedGroupSha256": "f994ff2404c87b478fe4f1138de047be0a28dac1ea0228fb54119b952154fe51"
+        },
+        {
+          "id": "yarn:line:89c9a73b",
+          "group": "Alexander_questions",
+          "rowSha256": "7d0b27246ee58dd8382762c82569e1fd411534f051d4fe585bc81a5d3bdca175",
+          "orderedGroupSha256": "f994ff2404c87b478fe4f1138de047be0a28dac1ea0228fb54119b952154fe51"
+        },
+        {
+          "id": "yarn:line:18d418ab",
+          "group": "Alexander_questions",
+          "rowSha256": "2b23b8204ab422eab992a6a2f44f9268460b22e26a1e1e12e530a53219d84a9d",
+          "orderedGroupSha256": "f994ff2404c87b478fe4f1138de047be0a28dac1ea0228fb54119b952154fe51"
+        },
+        {
+          "id": "yarn:line:8ee41fdc",
+          "group": "Alexander_questions",
+          "rowSha256": "7278f8fb684f20d631b745396a6652ae8a5df2a18036c7aac975f90817177411",
+          "orderedGroupSha256": "f994ff2404c87b478fe4f1138de047be0a28dac1ea0228fb54119b952154fe51"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-alchemy",
+      "sourceEntrySha256": "c778aac34e4a0a5b96970af09e963be978af86f2b7bf044c8211d932d758e003",
+      "localeFieldsSha256": "d6497069ac81a409bb3e91314f468780aa5faa48c42308a21806c60cafe60def",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:a5979ac9",
+          "group": "Alexander_1_intro",
+          "rowSha256": "3c4d5061d504e09ae1dd4ce9df22dd65bb0b909ba1543e34ee041b1a1e7f5973",
+          "orderedGroupSha256": "1f7bc70270a702a7c293bd63939b771efb2f5e61f2ee67cff6550ea24571f5de"
+        },
+        {
+          "id": "yarn:line:960707b0",
+          "group": "Alexander_questions",
+          "rowSha256": "9b18d13849baa017c41d442b25d07a6a7da0a7ab8b499ee391b24bc5dedf4ecc",
+          "orderedGroupSha256": "f994ff2404c87b478fe4f1138de047be0a28dac1ea0228fb54119b952154fe51"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-yip-man",
+      "sourceEntrySha256": "3a133af8a9b653ada56d688b55629f08bbe27dd7a6fb9e8a483a85ebb03765d3",
+      "localeFieldsSha256": "8e5d34224195431d912fda374ca30d213a4eb4fb38f79799e600847ae2b832bc",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:f1c14f75",
+          "group": "Ryan_5_Required_ryan_romanced",
+          "rowSha256": "3db833decc9fca8e39988e5704eb0f0987df500a1efcf58459a53e1471fadbf7",
+          "orderedGroupSha256": "0e4b718dfddc6832a343c17f733e1ae0de08cc39289dc7755693893cd9d95fa6"
+        },
+        {
+          "id": "yarn:line:4b9046ec",
+          "group": "Ryan_5_Required_ryan_romanced",
+          "rowSha256": "5eaaa652e5c8170c033f76bd08d4f9110e90aedd625bf43ee71af09f3954633a",
+          "orderedGroupSha256": "0e4b718dfddc6832a343c17f733e1ae0de08cc39289dc7755693893cd9d95fa6"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-project-scale-mary",
+      "sourceEntrySha256": "d85beb0bba51dc3fba6377f8fd8a1ccebd704ec72b9d3d300728b965b86d5f30",
+      "localeFieldsSha256": "400d906c88752b90762758c2dced9681b83ed671a216c29f07419e999cd9c375",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:962abe27",
+          "group": "Ryan_5_Required_ryan_romanced",
+          "rowSha256": "93250296b5c577e6217e92b4398529228994bc66833077c25248dbe36ef0222a",
+          "orderedGroupSha256": "0e4b718dfddc6832a343c17f733e1ae0de08cc39289dc7755693893cd9d95fa6"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    },
+    {
+      "id": "dnw-dragons-of-the-galaxy",
+      "sourceEntrySha256": "8cc560bbec93ceaa757b960ada48188f37456e67084f2b2ce7769fa9c7fd2433",
+      "localeFieldsSha256": "7b1e501763f04f322ce1ac5e98766078149fc0a0a00fe9895bacc3df8e629fc5",
+      "scope": "partial source-anchor reconciliation; complete use union and both layer closure pending",
+      "sourceAnchors": [
+        {
+          "id": "yarn:line:7e352505",
+          "group": "Ryan_5_Required_ryan_romanced",
+          "rowSha256": "61e7e14de9a0c507076491d8ab3dcaf91de6ec0f5570a459ebd00861e3aa0848",
+          "orderedGroupSha256": "0e4b718dfddc6832a343c17f733e1ae0de08cc39289dc7755693893cd9d95fa6"
+        },
+        {
+          "id": "yarn:line:e8052272",
+          "group": "Ryan_5_Required_ryan_romanced",
+          "rowSha256": "09daab1f43efcd1f9acc8f968429e0f215e5241169aa1f281af814aafaa493b6",
+          "orderedGroupSha256": "0e4b718dfddc6832a343c17f733e1ae0de08cc39289dc7755693893cd9d95fa6"
+        }
+      ],
+      "receipt": "glossary-review-resume.md"
+    }
+  ]
+}
