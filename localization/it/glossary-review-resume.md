@@ -383,3 +383,7 @@ Both paired builds of `RyanMuddy_SmallTalk`, `Conrad_1` and `Conrad_3_PhoneTutor
 ### Resume 08: Conrad and Ryan conversation rows (author self-reviews)
 
 The paired builds of `Conrad_required_4`, `Conrad_Outro_4`, `Ryan_5_intro_ryan_romanced` and `Ryan_1_required` were read in context: four groups / 28 rows. “Big guy” addresses Conrad and does not establish player gender; Ryan's “both” refers to Ryan and the player. The source difference in `line:fa1a1e76` is retained. The Italian character, wash and dragon-washer fields support these uses; no correction is established. Both layers are author self-reviews, with hashes and individual decisions in the row receipt; independent acceptance remains pending.
+
+### Resume 08: Alexander and Conrad context rows (author self-reviews)
+
+Both paired builds of `Alexander_3_Outro`, `Conrad_Intro_2` and `Mount_Alexander_2_6` were read: three groups / 30 rows. The Yip is a player response whose meaning depends on the branch; Alexander's mount discussion concerns the adult device, and he declines it for now. Conrad asks for a medkit but does not explain the cause in this branch. The bound Italian character, wash, Yip and device fields establish no correction here. Both layers are author self-reviews, not independent acceptance; the row receipt contains the decisions and bindings.

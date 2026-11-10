@@ -6585,6 +6585,426 @@
           "decision": "A pause; this row alone does not identify an individual voice."
         }
       ]
+    },
+    {
+      "group": "Alexander_3_Outro",
+      "orderedRowsSha256": "e840747afed62d2be83ebadc18cab8e2095abef3d63535782afadde29e4f6680",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-wash",
+          "sourceEntrySha256": "e7688fa302d7e21832c5a44ab5afc31efa020e8e57bc36a464aa2108fd31b0d4",
+          "localeFieldsSha256": "aed48bebbf8feb04d6ce491851a951e89001efdb05453d49c0f10d2468a3ecc9"
+        },
+        {
+          "id": "dnw-yip",
+          "sourceEntrySha256": "732298762db192f5e97009d5a3babdf06857b777d65975115662abe32637b079",
+          "localeFieldsSha256": "649610e6e5ee14c04df3df24b4118f349f79952954c42995d92625488a26e8e9"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:04c62f9b",
+          "pairedRowSha256": "0d949d9d238dd873aaeb1b930c61181f56ed93f51017bc5e4438a30f19db3d1c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander says he is spotless; preserve italic emphasis."
+        },
+        {
+          "id": "yarn:line:95db900b",
+          "pairedRowSha256": "8591944cbc85b148367264f40f6c643bb3d7f576f72527e5002a8e7c0c309a58",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "The player may say they never miss a spot."
+        },
+        {
+          "id": "yarn:line:e662501c",
+          "pairedRowSha256": "e4d63a16f29c0180ffe35598d956a228c884346714867f25f11075a57c5508f4",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-yip"
+          ],
+          "decision": "The player may respond with the context-dependent Yip vocalization."
+        },
+        {
+          "id": "yarn:line:03eb977c",
+          "pairedRowSha256": "f7c9c85ebcacb6e90d70706154ba027bd340919bc28caba0e582b6fb31a462e8",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-wash"
+          ],
+          "decision": "Alexander says a deep clean has a distinct feel."
+        },
+        {
+          "id": "yarn:line:7052576b",
+          "pairedRowSha256": "c4bcd6320a561249a6e318cb0caded4102e3bc88d02d1bc9f4118e05ae192e32",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander responds positively to the player."
+        },
+        {
+          "id": "yarn:line:ca035ef2",
+          "pairedRowSha256": "409803c6b5297d9c83af33a6c5dc550c860dd8272e5b83333526d039e1e796ce",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander calls the player a friend and plans to return."
+        },
+        {
+          "id": "yarn:line:5c335985",
+          "pairedRowSha256": "bd9ca8002b644a6673d3890780145aa64fe9dccfcd10fd830b10f1bf1670229f",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "The player may look forward to seeing Alexander."
+        },
+        {
+          "id": "yarn:line:69963a6c",
+          "pairedRowSha256": "b76d82d3438525c899557300a4618f64969456da83ff3d4bc8aa1cacc7328752",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "The player may say they are glad Alexander feels comfortable."
+        },
+        {
+          "id": "yarn:line:ffa63d1b",
+          "pairedRowSha256": "8ac669c832f77db6d0f9bdd27d128aa3d29826a7cf70109d99c2baacdd6163b6",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander agrees with the player."
+        },
+        {
+          "id": "yarn:line:d3c733f5",
+          "pairedRowSha256": "2b5ac4b3454c74186304339ab9e3f16dab400ac9a955ec1f91e4b68959623b06",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander agrees with the player."
+        }
+      ]
+    },
+    {
+      "group": "Conrad_Intro_2",
+      "orderedRowsSha256": "038c0f9af21414b6ae2981da095f71b5bed5ef856dbc3fec55494b375238bdce",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:c0cc0f2d",
+          "pairedRowSha256": "79ecdc3b72edad2a8a12d2f14ba244d665d45fd02df005d90b08c5088ac64f4b",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad asks the player for a medkit."
+        },
+        {
+          "id": "yarn:line:56fc085a",
+          "pairedRowSha256": "5497a4f44d1098c7eef0207aa1e9080f75675d4027406579b8b228a6ccc17efb",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player may ask Conrad what happened."
+        },
+        {
+          "id": "yarn:line:d908622a",
+          "pairedRowSha256": "c28dbdef6a8e8c06e2d471f277caf460de4f73a177b9a3aa3dee439254ec8614",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player may ask by name whether Conrad is okay."
+        },
+        {
+          "id": "yarn:line:f5696cc4",
+          "pairedRowSha256": "ba343dc9f805cbe93ea07c49d768c0f3c29700eaf7033b1439598e094083e895",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad declines to explain; the cause remains unspecified in this branch."
+        },
+        {
+          "id": "yarn:line:63596bb3",
+          "pairedRowSha256": "e71100735a4b23c9be64f778e1ffda2d2524d80ee39e7ad6f1f1243bb0bd5866",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad repeats his medkit request."
+        },
+        {
+          "id": "yarn:line:4f38655d",
+          "pairedRowSha256": "e356eb4f61306e9f1fef66e51584cf9281925dff0996113e333fd46a3d556849",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad answers the player sarcastically."
+        },
+        {
+          "id": "yarn:line:de25dacd",
+          "pairedRowSha256": "fa63007ca674af819ad11d1f75db2f57612b47ddd3f78ece25f802e1e4509522",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad says he is not okay and repeats his request."
+        },
+        {
+          "id": "yarn:line:4815ddba",
+          "pairedRowSha256": "b979da66b5eee853eb5cf50c584557394254acde7e14a7fd85b9f6d1aa8481b5",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player may confirm having a medkit."
+        },
+        {
+          "id": "yarn:line:ad9c1ada",
+          "pairedRowSha256": "f5f12e988994c88f53423a6a9dd2f1384e11d02926838a27184a71f3795621ca",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player",
+            "dnw-conrad"
+          ],
+          "conceptUses": [],
+          "decision": "The player may confirm having one and ask what happened."
+        },
+        {
+          "id": "yarn:line:3bac1dad",
+          "pairedRowSha256": "bbffc5518c0cec1c0cce1642fe23c28b9ba9bb917db8a1e1ca42f51dc5d8e495",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "Conrad asks the player to open the gate."
+        }
+      ]
+    },
+    {
+      "group": "Mount_Alexander_2_6",
+      "orderedRowsSha256": "e72fa15baa7c40b8bd1b00d69b9c34f6937e2ab6523029b52520e9e29460b495",
+      "applicableEntries": [
+        {
+          "id": "dnw-player",
+          "sourceEntrySha256": "499fdfeb0bf0ab831f44c279cf043096b4f0d94b3e65b2fe7d7e77f58ff608cf",
+          "localeFieldsSha256": "71ca09917b0ca8c35658cbfc619af68729327e57c90031b9c379fa21e08fd35e"
+        },
+        {
+          "id": "dnw-alexander",
+          "sourceEntrySha256": "86edfa21873668696d90f718472014ce0ec2f403c9558da9dd2904ef6c800b25",
+          "localeFieldsSha256": "45e14a63067d128e1c05ba03383f96024c2b82e80d979e024e30eb7702323c99"
+        },
+        {
+          "id": "dnw-mount",
+          "sourceEntrySha256": "25c07604bcce9a0723fad01ec563457d76451e84950c706231f24c6afb98ed35",
+          "localeFieldsSha256": "dd5b0c341807bc90766c9064469b9e1636e42322d5661b31f5bedd5f2dafa710"
+        }
+      ],
+      "groupContext": "Bound scene context and row-level referents recorded below; unnamed people are not assigned an identity.",
+      "layer1": "Author source self-review: every paired row in this short scene was read in context; choices and explicit or implicit referents are adjudicated below.",
+      "layer2": "Author Italian glossary-field self-review: the bound applicable entries were checked for this scene; no field correction was established. Neutral or unestablished identities remain unassigned. This is not independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:44b711a0",
+          "pairedRowSha256": "b4ca5b466888a2db69089e6b4a93c6443f7da38bf151c67bb72a3bfef13b8fbd",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Alexander reacts to the adult device."
+        },
+        {
+          "id": "yarn:line:e722753e",
+          "pairedRowSha256": "cc75404c2750c6ac62887d92bb7bb77d5be456852a7658a3ac917540291223b5",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Alexander reacts negatively to it."
+        },
+        {
+          "id": "yarn:line:71127249",
+          "pairedRowSha256": "d90b8b1af2a3e1ac49edb54e0beb4fe86bf5194258dcbdf7e5e743eea924d132",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Alexander politely declines."
+        },
+        {
+          "id": "yarn:line:cb437bd0",
+          "pairedRowSha256": "b3bc70c136b68e92681f2fba1f9c4558b5dfabb929e42395d16614c35dc4b81c",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander",
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Alexander asks whether this device practice is common."
+        },
+        {
+          "id": "yarn:line:5d737ca7",
+          "pairedRowSha256": "990a5a9635d15a8d5d6700dcf8aff50d88f03c39c24cb16d9da530fdec086e1e",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [],
+          "decision": "The player may say yes."
+        },
+        {
+          "id": "yarn:line:5a5ec440",
+          "pairedRowSha256": "c2a7fcab130684dc5ecf8ad3e98d73a75b5fa294e40694fe3b2a24b632fd0b00",
+          "speakerOrKind": "option",
+          "characterReferents": [
+            "dnw-player"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "The player may say they just obtained the device."
+        },
+        {
+          "id": "yarn:line:cc6ec337",
+          "pairedRowSha256": "807fdbe4d25825282e8a753f79a6b9ae019a925c9f68dad09d4c1cd129df3a98",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [],
+          "decision": "Alexander acknowledges the answer."
+        },
+        {
+          "id": "yarn:line:bfd70320",
+          "pairedRowSha256": "12947d0890bf084cb6f5c936becfe53be5a16ec9db7b8cd6b6af481c4daaf15f",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Alexander calls the situation scandalous."
+        },
+        {
+          "id": "yarn:line:29e70457",
+          "pairedRowSha256": "7efec8f408feb26db2025db80792f1245d8767561da9a19b59c65ac1bfe8e479",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Alexander admits curiosity."
+        },
+        {
+          "id": "yarn:line:93b60dce",
+          "pairedRowSha256": "4e2147b934020bbef64b80d1bb98bccd8dd93b978e587a5dbeb2ca2931050ef0",
+          "speakerOrKind": "line",
+          "characterReferents": [
+            "dnw-alexander"
+          ],
+          "conceptUses": [
+            "dnw-mount"
+          ],
+          "decision": "Alexander nonetheless declines for now."
+        }
+      ]
     }
   ]
 }
