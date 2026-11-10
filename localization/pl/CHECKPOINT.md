@@ -305,3 +305,9 @@ Author self-reviewed 25 IDs in `Conrad_Outro_1` and `Conrad_Outro_2`, retaining 
 Author self-reviewed 34 additional IDs in `Conrad_Outro_3`, retaining the previously settled relationship choices, Yip line, source markup and gender-neutral player references. This is author self-review, not independent audit.
 
 `translation.json` now has **1,113 / 1,947 IDs**, SHA-256 `31230366fb1aac68ba363180e41081ce1ac4585c19eb1862fce3528dcfa33e05`. `resume-01/add-conrad-third-outro.py` and `resume-01/conrad-third-outro-map.py` validate the preceding draft and paired readers; macOS accepts 1,113 and Windows 1,107 bindings. The complete guard reports 834 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Conrad's second required conversation — continuation
+
+Author self-reviewed 35 IDs in `Conrad_required_2`, preserving the response choices, emphasis and his change from anger to self-reflection. This is author self-review, not independent audit.
+
+`translation.json` now has **1,148 / 1,947 IDs**, SHA-256 `d85be0e928002f3b287b3a8acb92c7d16269faa8f92f8b0de8db402eb492c1b9`. `resume-01/add-conrad-required-two.py` and `resume-01/conrad-required-two-map.py` validate the preceding draft and paired readers; macOS accepts 1,148 and Windows 1,142 bindings. The complete guard reports 799 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
