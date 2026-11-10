@@ -1,0 +1,11 @@
+# Polish package representative background gameplay
+
+Both runs used fresh copies of the [verified packages](polish-7714bd2-editorial-and-packages-20261110.md) from `7714bd2` and the exact authored SHA-256 `d848a5a5087f7ffa4c4688e3a465016d8efe65806823ab5cd684e7bccb9402a4`. The existing stock-input observer was reused with fresh test identities `P7L7` on macOS and `P8L7` in CrossOver. The verified instrumentation remained outside the deliverable packages.
+
+Both isolated runs loaded a prepared stock save, navigated to Conrad using game input, verified the three actual choices `83ac5b68`, `0b7589ff` and `4d692a01`, and saw two fully revealed Polish lines with their expected 64 pt and 40 pt text sizes. The probe checked the visible text elements and progressed from `WaitingOnIntroDialogue` through the gate to `WaitingOnBeingWashed`. All 234 macOS samples and 338 CrossOver samples showed no window and no foreground ownership. Both wrappers exited successfully. Original profiles and tested original files were unchanged, and the isolated save fixtures remained intact.
+
+The runtime directory is `localization/work/pl-7714bd2-runtime-20261110.MbK1dB/`. The macOS result SHA-256 is `c6425a49a56d0df1653f58257abe18b83b798402b1fac8555c3415bffa87db46`, and the CrossOver result is `7603695bf15ea33d42b59c17fa70f6a6ba093432e2909cf8e1e0bf40e593692f`. Both instrumenter outputs, runtime logs, process receipts, five unmodified PNG originals per platform, and the `native-manifest.json` are retained. The native manifest SHA-256 is `c93f433db37bf98f7cc3320d3e03317b7e02280c4474a3a6327b965e49bf15d3`.
+
+The separate WebP80 review queue has ten pending judgments. No image was sent for review. This run covers the representative intro and gate transition. Native Windows execution, remaining route and edited-exchange scenarios, and independent visual inspection remain open.
+
+After both game processes and wrappers exited, three verified task-owned runtime copies were removed. The original game files, verified packages, test fixtures and evidence were preserved. Measured free space increased by 1,208,184,832 bytes. Cleanup receipt SHA-256 `51babb0dcc7d9bb8987d77353602fb326fa13cc7eb014ef599fe0f7a39705b24`.
