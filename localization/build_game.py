@@ -10,6 +10,7 @@ import subprocess
 import sys
 import tempfile
 
+import complex_text
 import dialogue_locale as dl
 import managed_fallback
 import speaker_contrast
@@ -54,7 +55,8 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
           test_profile_code=None, test_caption_layout=False, test_slot_font=False,
           restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None,
           speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None,
-          improve_speaker_contrast=False, package_receipt=None, preservation_inventory=None, cjk_resource=None):
+          improve_speaker_contrast=False, package_receipt=None, preservation_inventory=None, cjk_resource=None,
+          complex_renderer=None):
     source, destination = bundle_paths(source, destination)
     if (package_receipt is None) != (preservation_inventory is None):
         raise ValueError('complete package receipt and preservation inventory are required together')
@@ -73,7 +75,8 @@ def build(source, locale_file, requested, destination, ui_dir=None, settings_fil
                                     speaker_locale=speaker_locale, speaker_tool=speaker_tool,
                                     speaker_runtime=speaker_runtime, speaker_runtime_sha=speaker_runtime_sha,
                                     improve_speaker_contrast=improve_speaker_contrast,
-                                    package_receipt=package_receipt, cjk_resource=cjk_resource)
+                                    package_receipt=package_receipt, cjk_resource=cjk_resource,
+                                    complex_renderer=complex_renderer)
         if preservation_inventory is not None:
             report['componentPreservation'] = protected.verify(
                 'macos', preservation_inventory, staged_app / ASSET_RELATIVE.parent,
@@ -95,7 +98,8 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
                        test_profile_code=None, test_caption_layout=False, test_slot_font=False,
                        restore_yarn_transitions=False, *, fallback_locale=None, fallback_tool=None, slot_new_locale=None,
                        speaker_locale=None, speaker_tool=None, speaker_runtime=None, speaker_runtime_sha=None,
-                       improve_speaker_contrast=False, package_receipt=None, cjk_resource=None):
+                       improve_speaker_contrast=False, package_receipt=None, cjk_resource=None,
+                       complex_renderer=None):
     source = source.resolve(strict=True)
     destination = destination.absolute()
     if source.suffix != '.app' or destination.suffix != '.app' or not source.is_dir():
@@ -142,6 +146,13 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
             'macos', source / MANAGED_RELATIVE / managed_fallback.ASSEMBLY, speaker_locale, requested,
             speaker_tool, speaker_runtime, speaker_runtime_sha, fallback_locale=fallback_locale,
         )
+    if complex_renderer is not None:
+        if package_receipt is None or speaker_report is None or cjk_resource is not None:
+            raise ValueError('shaped text requires a complete macOS package and speaker patch')
+        renderer_files, renderer_receipt = complex_renderer.patch(
+            source / MANAGED_RELATIVE, speaker_files[complex_text.YARN], speaker_report,
+        )
+        speaker_files.update(renderer_files)
     for assembly, file in ((managed_fallback.ASSEMBLY, standalone_fallback), (managed_fallback.SLOT_ASSEMBLY, slot_new_locale)):
         if file is not None:
             managed_replacements[assembly] = managed_fallback.prepare(
@@ -264,7 +275,7 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
     output_dlls = {name: data for name, (data, _) in managed_replacements.items()} | speaker_files
     for assembly, replacement_dll in output_dlls.items():
         copied_dll = destination / MANAGED_RELATIVE / assembly
-        if assembly == speakers.COMPANION:
+        if assembly in {speakers.COMPANION, complex_text.LAYOUT}:
             with copied_dll.open('xb') as companion:
                 companion.write(replacement_dll)
         else:
@@ -298,6 +309,15 @@ def _build_unpublished(source, locale_file, requested, destination, ui_dir=None,
         )}
         with marker.with_name(cjk.LICENSE).open('xb') as f:
             f.write(cjk_resource.license)
+    if complex_renderer is not None:
+        import cjk_font_fallback as fallback
+        renderer_receipt['fontFallback'] = fallback.add(
+            'macos', source / ASSET_RELATIVE.parent,
+            destination / ASSET_RELATIVE.parent / fallback.ASSET, complex_renderer.font,
+        )
+        package_receipt = {**package_receipt, 'complexText': renderer_receipt}
+        with marker.with_name(complex_text.LICENSE).open('xb') as license_file:
+            license_file.write(complex_renderer.font.license)
     if package_receipt is not None:
         receipt_path = marker.with_name('vn-localization-package.json')
         with receipt_path.open('x', encoding='utf-8') as f:

@@ -12,7 +12,8 @@ import struct
 ASSET_HASH = 'f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8'
 OBJECT_HASH = '9baafe5b3c36e63042cc0d02b2c755580e142447cea13f946d485a342c269853'
 PATH_ID = 10623
-SITE_LOCALES = Path.home() / 'Desktop/SiteForMods/lib/language-data/site-locales.ts'
+SITE_LOCALES = Path(os.environ.get('DRAGONS_SITE_LOCALES') or
+                    Path.home() / 'Desktop/SiteForMods/lib/language-data/site-locales.ts')
 TOKENS = re.compile(r'<[^<>\n]*>|\{[^{}\n]*\}|\[[^\[\]\n]*\]')
 TAGS = re.compile(r'<[^<>\n]*>|\[[^\[\]\n]*\]')
 DIGITS = re.compile(r'[0-9]+')

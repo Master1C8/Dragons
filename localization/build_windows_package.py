@@ -11,6 +11,7 @@ import zipfile
 
 import compare_yarn_versions as versions
 import cjk_font_fallback as cjk
+import complex_text
 import dialogue_locale as dl
 import managed_fallback
 import package_inputs
@@ -37,10 +38,17 @@ def zip_member(name):
 
 
 def archive_payload(archive, payload, manifest, *, font_license=None):
-    if ('cjkFallback' in manifest) != (font_license is not None):
+    license_name, font_receipt = None, None
+    if 'cjkFallback' in manifest:
+        license_name, font_receipt = cjk.LICENSE, manifest['cjkFallback']
+    if 'complexText' in manifest:
+        if license_name is not None:
+            raise ValueError('Windows ZIP cannot combine two fallback fonts')
+        license_name, font_receipt = complex_text.LICENSE, manifest['complexText']['fontFallback']
+    if (license_name is not None) != (font_license is not None):
         raise ValueError('Windows ZIP font receipt and license are required together')
     members = {f'{DATA_FOLDER}/{name}': payload / name for name in manifest['files']}
-    extras = {cjk.LICENSE: font_license} if font_license is not None else {}
+    extras = {license_name: font_license} if license_name is not None else {}
     names = sorted(members.keys() | extras.keys())
     manifest_bytes = (json.dumps(manifest, ensure_ascii=False, sort_keys=True, indent=2) + '\n').encode()
     with zipfile.ZipFile(archive, 'x') as package:
@@ -61,20 +69,24 @@ def archive_payload(archive, payload, manifest, *, font_license=None):
             with package.open(name) as stream:
                 if file_digest(stream) != manifest['files'][relative]['outputSha256']:
                     raise ValueError(f'Windows ZIP member differs from verified output: {name}')
-        if extras and dl.sha(package.read(cjk.LICENSE)) != manifest['cjkFallback']['licenseSha256']:
+        if license_name is not None and dl.sha(package.read(license_name)) != font_receipt['licenseSha256']:
             raise ValueError('Windows ZIP font license differs from verified input')
 
 
 def build(data, inputs, requested, inventory, scope_path, output, *,
-          managed_tool, speaker_tool, speaker_runtime, speaker_runtime_sha, cjk_font=None, cjk_license=None):
+          managed_tool, speaker_tool, speaker_runtime, speaker_runtime_sha, cjk_font=None, cjk_license=None, complex_inputs=None):
     data = Path(data).resolve(strict=True)
     target = assets.safe_output(data, output)
     if target.suffix.lower() != '.zip':
         raise ValueError('Windows output must be a .zip')
     cjk_resource = cjk.prepare(requested, cjk_font, cjk_license)
+    renderer = complex_text.prepare(PLATFORM, requested, inputs, complex_inputs)
     with tempfile.TemporaryDirectory(prefix='.dragons-windows-', dir=target.parent) as temporary:
         stage = Path(temporary)
         local = stage / 'locale'
+        if renderer is not None:
+            inputs = local.with_name('authored.json')
+            inputs.write_bytes(renderer.authored)
         package_inputs.prepare_inputs(inputs, local, ASSET_HASHES, PLATFORM, requested, inventory, scope_path)
         dialogue, speakers = local / 'dialogue.json', local / 'speakers.json'
         receipt, ui_assets = package_inputs.validate(PLATFORM, data, requested, local, inventory, scope_path)
@@ -118,6 +130,19 @@ def build(data, inputs, requested, inventory, scope_path, output, *,
             managed_fallback.SLOT_ASSEMBLY: (slot_report['sourceSha256'], slot_report['outputSha256']),
             speaker_locale.COMPANION: (None, speaker_report['inlineRuntimeSha256']),
         }
+        if renderer is not None:
+            renderer_files, renderer_receipt = renderer.patch(
+                data / 'Managed', patched[complex_text.YARN], speaker_report,
+            )
+            patched.update(renderer_files)
+            managed_digests.update({
+                complex_text.TMP: (renderer_receipt['tmp']['sourceSha256'], renderer_receipt['tmp']['outputSha256']),
+                complex_text.YARN: (speaker_report['sourceSha256'], renderer_receipt['yarn']['outputSha256']),
+                complex_text.LAYOUT: (None, renderer_receipt['layoutSha256']),
+            })
+            renderer_receipt['fontFallback'] = cjk.add(PLATFORM, data, payload / cjk.ASSET, renderer.font)
+            files[cjk.ASSET]['outputSha256'] = renderer_receipt['fontFallback']['assetSha256']
+            manifest['complexText'] = renderer_receipt
         if patched.keys() != managed_digests.keys():
             raise ValueError('unexpected Windows managed replacement paths')
         for name, raw in patched.items():
@@ -126,7 +151,8 @@ def build(data, inputs, requested, inventory, scope_path, output, *,
             files[f'Managed/{name}'] = {'sourceSha256': before, 'outputSha256': after}
         component_preservation = protected.verify(PLATFORM, inventory, payload)
         archive = stage / 'payload.zip'
-        archive_payload(archive, payload, manifest, font_license=cjk_resource.license if cjk_resource else None)
+        font_resource = renderer.font if renderer is not None else cjk_resource
+        archive_payload(archive, payload, manifest, font_license=font_resource.license if font_resource else None)
         with archive.open('rb') as stream:
             digest = file_digest(stream)
         # Keep a competing output intact and publish only the complete verified archive.
@@ -148,12 +174,14 @@ def main():
     parser.add_argument('--speaker-runtime-sha', required=True)
     parser.add_argument('--cjk-font', type=Path)
     parser.add_argument('--cjk-license', type=Path)
+    complex_text.add_arguments(parser)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     print(json.dumps(build(
         args.source_data, args.locale_inputs, args.locale, args.inventory, args.yarn_scope, args.output,
         managed_tool=args.managed_tool, speaker_tool=args.speaker_tool, speaker_runtime=args.speaker_runtime,
         speaker_runtime_sha=args.speaker_runtime_sha, cjk_font=args.cjk_font, cjk_license=args.cjk_license,
+        complex_inputs=complex_text.arguments(args),
     ), ensure_ascii=False))
 
 

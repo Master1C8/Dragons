@@ -13,6 +13,7 @@ import zipfile
 import build_macos_package as macos
 import build_windows_package as windows
 import cjk_font_fallback as cjk
+import complex_text
 import verify_serialized_metadata as serialized
 
 
@@ -64,8 +65,9 @@ def verify(platform, source, inputs, requested, inventory, scope, candidate, **t
     if candidate.is_symlink() or (platform == 'macos' and not candidate.is_dir()) or (
             platform == 'windows' and not candidate.is_file()):
         raise ValueError('expected a real candidate package')
-    # The CJK font adapter intentionally adds four objects to one asset.
-    added_object_asset = cjk.ASSET if tools.get('cjk_font') is not None else None
+    # Both font paths use the same four-object fallback adapter.
+    has_font = tools.get('cjk_font') is not None or tools.get('complex_inputs') is not None
+    added_object_asset = cjk.ASSET if has_font else None
     scratch = Path(__file__).resolve().parent / 'work'
     scratch.mkdir(exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='package-verify-', dir=scratch) as directory:
@@ -106,12 +108,13 @@ def main():
     parser.add_argument('--speaker-runtime-sha', required=True)
     parser.add_argument('--cjk-font', type=Path)
     parser.add_argument('--cjk-license', type=Path)
+    complex_text.add_arguments(parser)
     args = parser.parse_args()
     print(json.dumps(verify(
         args.platform, args.source, args.locale_inputs, args.locale, args.inventory, args.yarn_scope,
         args.candidate, managed_tool=args.managed_tool, speaker_tool=args.speaker_tool,
         speaker_runtime=args.speaker_runtime, speaker_runtime_sha=args.speaker_runtime_sha,
-        cjk_font=args.cjk_font, cjk_license=args.cjk_license,
+        cjk_font=args.cjk_font, cjk_license=args.cjk_license, complex_inputs=complex_text.arguments(args),
     ), ensure_ascii=False, indent=2))
 
 

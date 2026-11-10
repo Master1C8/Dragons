@@ -6,6 +6,7 @@ import tempfile
 
 import build_game
 import cjk_font_fallback as cjk
+import complex_text
 import compare_yarn_versions as versions
 import package_inputs
 import ui_locale
@@ -14,12 +15,16 @@ PLATFORM = 'macos'
 
 
 def build(source, inputs, requested, inventory, scope_path, output, *,
-          managed_tool, speaker_tool, speaker_runtime, speaker_runtime_sha, cjk_font=None, cjk_license=None):
+          managed_tool, speaker_tool, speaker_runtime, speaker_runtime_sha, cjk_font=None, cjk_license=None, complex_inputs=None):
     source, output = build_game.bundle_paths(Path(source), Path(output))
     data = source / build_game.ASSET_RELATIVE.parent
     cjk_resource = cjk.prepare(requested, cjk_font, cjk_license)
+    renderer = complex_text.prepare(PLATFORM, requested, inputs, complex_inputs)
     with tempfile.TemporaryDirectory(prefix='dragons-macos-locale-') as temporary:
         local = Path(temporary) / 'locale'
+        if renderer is not None:
+            inputs = local.with_name('authored.json')
+            inputs.write_bytes(renderer.authored)
         package_inputs.prepare_inputs(inputs, local, ui_locale.ASSETS, PLATFORM, requested, inventory, scope_path)
         receipt, _ = package_inputs.validate(PLATFORM, data, requested, local, inventory, scope_path)
         manifest = {
@@ -34,7 +39,7 @@ def build(source, inputs, requested, inventory, scope_path, output, *,
             fallback_locale=local / 'missing-line.json', slot_new_locale=local / 'slot-new.json',
             fallback_tool=managed_tool, speaker_locale=local / 'speakers.json',
             speaker_tool=speaker_tool, speaker_runtime=speaker_runtime, speaker_runtime_sha=speaker_runtime_sha,
-            package_receipt=manifest, preservation_inventory=inventory, cjk_resource=cjk_resource,
+            package_receipt=manifest, preservation_inventory=inventory, cjk_resource=cjk_resource, complex_renderer=renderer,
         )
 
 
@@ -51,12 +56,13 @@ def main():
     parser.add_argument('--speaker-runtime-sha', required=True)
     parser.add_argument('--cjk-font', type=Path)
     parser.add_argument('--cjk-license', type=Path)
+    complex_text.add_arguments(parser)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     build(args.source_app, args.locale_inputs, args.locale, args.inventory, args.yarn_scope, args.output,
           managed_tool=args.managed_tool, speaker_tool=args.speaker_tool,
           speaker_runtime=args.speaker_runtime, speaker_runtime_sha=args.speaker_runtime_sha,
-          cjk_font=args.cjk_font, cjk_license=args.cjk_license)
+          cjk_font=args.cjk_font, cjk_license=args.cjk_license, complex_inputs=complex_text.arguments(args))
 
 
 if __name__ == '__main__':

@@ -265,6 +265,32 @@ and 1,665 Hindi plans. No existing plan key was dropped. The staged
 `staged-inline-speaker-plans/result.json` SHA-256 is
 `73d128727531f04feb2990e9b369d7da196ca7746254109f695eaa3a428a5ae4`.
 
+### Package builder integration
+
+The macOS and Windows package builders and `verify_locale_package.py`
+accept the same six required options for shaped locales:
+`--complex-plans`, `--complex-report-sha`, `--complex-license`,
+`--complex-tool`, `--complex-layout` and `--complex-layout-sha`.
+Use the generated plan directory, its exact report hash, the matching
+OFL text, the compiled prepared-text patcher, and the companion built
+against the platform's pinned Managed directory. The builders bind the
+report to the same authored JSON bytes that they materialize. For a
+relocated SiteForMods checkout set `DRAGONS_SITE_LOCALES` to its canonical
+`lib/language-data/site-locales.ts`.
+
+Ten local candidates under `localization/work/complex-renderer-20261110.nYJmC2/
+package-candidates-current/` passed the standard rebuild verifier.
+It compared the complete signed app file inventories or ZIP members
+and verified serialized metadata against stock, allowing the four
+intentional font objects. Each build verified 10,973 protected game
+component fields on macOS or 10,936 on Windows. Separate read-back
+verified the font assets, OFL texts and all shaped-text DLL hashes.
+Standalone .NET loaded the TMP and layout DLLs from the ten actual
+packages and checked direction dispatch and every reveal step in all
+8,318 plans per platform. All five source translations retained 1,947
+rows. Native Unity layout and an actual wrap at a shaped cluster remain
+unverified. These outputs are candidates pending renderer validation.
+
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock
 512 × 512 multi-atlas chain admitted 1,536 distinct additional
