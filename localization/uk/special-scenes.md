@@ -589,3 +589,34 @@ remain distinct. Both diagnostic packages changed exactly 128
 Yarn values. The four authored pauses, all earlier values, table
 metadata and compiled programs are exact. Verified receipts are
 under `localization/work/uk-finish-17.8P9tF5/`.
+
+## Complete authored Ukrainian text
+
+The final 128 IDs cover remaining activity dialogue, refusals,
+error messages and the Yarn test node. Two pauses are authored
+as exact source punctuation. A final pass over the player's
+response options corrected a gendered agreement form. The shared
+file covers exactly all 1,947 package IDs with SHA-256
+`ebc1caca30775c3a8c8667412eea52b657efb4bf48603000991705bb2aedfa2a`.
+
+Both standard builders consumed the complete authored file directly.
+Read-back verified all 1,823 ordinary Yarn translations and the
+protected values, metadata and compiled programs. The UI and settings
+assets match the verified Ukrainian control byte for byte. The source
+font covers all 120 display code points. The macOS signature and
+Windows ZIP integrity passed.
+
+The 22 desktop Yarn scenarios passed per platform against the
+packaged programs. The trace IDs resolve to their expected Ukrainian
+values. This verifies the selected desktop routes and package data.
+Complete gameplay, final visual acceptance and independent editorial
+review remain open.
+
+The complete app, Windows ZIP and receipts are under
+`localization/work/uk-finish-18.SbcoRL/reviewed/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| `DragNWash-uk.app` Yarn asset | `6ce245653c9298e35eca4ffdb0ccf34b3167d56daec107da693c2679a71fe572` |
+| `DragNWash-uk-windows.zip` | `642fb2e182f91468f2ad931a38d47e960066844fb972bf0c835bcb71b7c5ffb8` |
+| `route-table-readback.log` | `74405387032afc498febd81512083c10e6aee7f6866552276493177c2c2b5844` |

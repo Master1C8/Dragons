@@ -9,18 +9,12 @@ platform JSON documents by value, including 30 platform-only rows and
 packages rebuilt successfully. The macOS game data and all 12 Windows
 replacement members matched the previously tested artifacts byte-for-byte.
 
-Ukrainian has entered ordinary translation. The
-[Ukrainian draft and checks](localization/uk/special-scenes.md) cover
-1,819 of 1,947 package IDs, including the 27 known special cases,
-Ryan's first three visits and muddy variant, the phone tutorials,
-the fifth-visit relationship routes, Conrad's related scenes,
-the date, picnic and explosion scenes, and Alexander's visits,
-romance, and wash prompts. Conrad's five visits and related
-wash prompts are covered. All 124 non-Yarn package IDs are authored.
-Both normal builders passed a control with English for the
-untouched IDs. Representative Ukrainian
-dialogue and choices passed the paired Unity fixture checks, with the
-remaining scene runs and final visual review tracked separately.
+The [Ukrainian translation and checks](localization/uk/special-scenes.md)
+cover all 1,947 package IDs. Both normal builders produced complete
+packages directly from the authored locale file. Package read-back,
+font coverage and paired desktop Yarn replay passed. The final Unity
+runtime and visual review and the independent editorial audit remain
+separate acceptance checks.
 
 The [multilingual renderer baseline](localization/evidence/multilingual-renderer-baseline-20261110.md)
 covers all 30 target locales on the original TMP font chain. Both
