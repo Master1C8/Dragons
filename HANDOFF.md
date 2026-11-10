@@ -9,6 +9,12 @@ platform JSON documents by value, including 30 platform-only rows and
 packages rebuilt successfully. The macOS game data and all 12 Windows
 replacement members matched the previously tested artifacts byte-for-byte.
 
+Ukrainian is at the special-scene decision gate. The first
+[Ukrainian wording batch](localization/uk/special-scenes.md) contains
+46 of 1,947 package IDs across five of 27 known cases. Both normal
+builders validated this batch in a source-passthrough control.
+The remaining cases still precede ordinary batches.
+
 The [multilingual renderer baseline](localization/evidence/multilingual-renderer-baseline-20261110.md)
 covers all 30 target locales on the original TMP font chain. Both
 players produced the same results in a live save-slot label. Eight
