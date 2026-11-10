@@ -150,3 +150,7 @@ Authored 48 IDs in `Ryan_5_intro` and the final Yip-associated exchange, bringin
 ### Continuation: Alexander relationship-state dialogue
 
 Authored 47 IDs in `Alexander_5_intro` and `Alexander_5_required`, for **795/1,947**. Both platform source readers and in-memory object read-back passed; altered-source negatives were rejected on both. See `special-ryan-relationships.md` and `work/cli-terra-high-20261110.J0KLrx/es/resume-09/alex5/`. Translation SHA-256 `62013be64200d01d5904309019ed5137b2df42457649c3b8c68cc524cfcc93e1`. Remaining relationship-state context reconciliation precedes ordinary batches. Independent audit, packages and final runtime/visual QA remain pending.
+
+### Continuation: Conrad fourth-visit relationship alternatives
+
+Authored 65 IDs across four complete Conrad fourth-visit relationship scenes, for **860/1,947**. Both stock platform source readers and in-memory object read-back passed; altered English was rejected on both. See `special-ryan-relationships.md` and task scratch `work/cli-terra-high-20261110.J0KLrx/es/resume-09/conrad4/`. Translation SHA-256 `82a1c15d2ec5e019d1cf80552bcf7d7d76f956e5cbd8235f9e68408669e2a525`. Reconcile remaining relationship-state context before ordinary batches. Independent audit, packages and final runtime/visual QA remain pending.
