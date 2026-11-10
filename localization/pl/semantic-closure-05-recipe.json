@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "locale": "pl",
+  "beforeSha256": "e9bd6034e2d6ad3f72f3d72265b778acd34d47b82674ab81647283a7f89c2665",
+  "afterSha256": "801bb9f756807ea3a8d530771937dc6ab7103ce2511bac69c95c3aca0ef5fc2f",
+  "edits": {
+    "yarn:line:4d002f47": {
+      "sceneSpans": [
+        {
+          "node": "Ryan_2_Outro",
+          "firstInstruction": 34,
+          "lastInstruction": 95
+        }
+      ],
+      "glossaryReferentSourceIds": [
+        "yarn:line:c2f44537",
+        "yarn:line:78a54cae",
+        "yarn:line:ee954bd9"
+      ],
+      "runtimeSourceIds": [
+        "yarn:line:4d002f47",
+        "yarn:line:db302830",
+        "yarn:line:90444b09",
+        "yarn:line:616121a9",
+        "yarn:line:33d12f97"
+      ],
+      "reason": "Ryan recounts the earlier muddy incident; preserve emphasis and exercise both response targets 58 and 83."
+    }
+  }
+}
