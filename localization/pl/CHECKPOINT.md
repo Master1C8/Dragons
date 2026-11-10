@@ -365,3 +365,9 @@ Author self-reviewed 56 IDs in the four `Conrad_Outro_4` relationship branches, 
 Author self-reviewed 44 IDs across the three fifth-visit relationship introductions; the previously reviewed stylized greeting remains intact. This is author self-review, not independent audit.
 
 `translation.json` now has **1,500 / 1,947 IDs**, SHA-256 `fb8b6a40736d1c6b2dfa27b8e8ace1c9c8a2f23c401d13c9b837816c0326fd1e`. `resume-01/add-conrad-five-intros.py` and its map validate the preceding draft and paired readers; macOS accepts 1,476 and Windows 1,494 bindings. The complete guard reports 447 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Conrad fifth visit: conversations — continuation
+
+Author self-reviewed 43 IDs across the three `Conrad_5_required` relationship branches, preserving dialogue choices and markup. This is author self-review, not independent audit.
+
+`translation.json` now has **1,543 / 1,947 IDs**, SHA-256 `15fb2f1de252fd3f514061f0a2a494e278f6fafb197e3ec5a54a09d22250fac2`. `resume-01/add-conrad-five-required.py` and its map validate the preceding draft and paired readers; macOS accepts 1,519 and Windows 1,537 bindings. The complete guard reports 404 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
