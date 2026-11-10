@@ -267,3 +267,7 @@ Five further groups / 26 paired rows have hash-bound source and Italian-field au
 ### Resume 08: generic dragon service row unit
 
 Three additional groups / 17 paired rows received hash-bound source and Italian author self-reviews, including the anonymous-dragon entry. The row receipt now covers 106 groups / 321 rows; 87 groups / 1,626 rows lack equivalent full row-level receipts, with older scoped evidence retained at its actual binding. Separate unidentified customers are not presumed to be the same individual. Independent acceptance, shared source and exact-preservation gates remain open.
+
+### Resume 08: service and device row unit
+
+Three further complete groups / 20 paired rows received hash-bound source and Italian-field author self-reviews. The row receipt covers 109 groups / 341 rows; 84 groups / 1,606 rows lack equivalent full row-level receipts. Earlier scoped evidence remains reusable only at its exact binding. Independent acceptance and the shared source and exact-preservation gates remain open.

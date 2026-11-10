@@ -375,3 +375,7 @@ The author read both paired builds of `RyanDate_2`, `RyanDate_3`, `RyanDate_Intr
 ### Resume 08: generic dragon service rows (author self-reviews)
 
 The author read both paired builds of `DragonAlmostClean`, `DragonConfusedAboutDismissal` and `DragonSatisfiedAndLeaves`: three complete groups / 17 rows. The row receipt binds the newly added anonymous-dragon entry and the player, kobold, occupation, dragon and wash entry hashes to each scene. The customer is the unidentified dragon role in each group; no same-person identity across groups, gender or pronouns are inferred. Player options and the washing-service references are separately indexed. The English and Italian field checks are author self-reviews; no field correction is established in these scenes. Full dependency closure and independent review remain open.
+
+### Resume 08: service and device rows (author self-reviews)
+
+Both paired builds of `RyanMuddy_SmallTalk`, `Conrad_1` and `Conrad_3_PhoneTutorial` were read: three groups / 20 rows. Ryan's “both” refers to Ryan and the player; Conrad's “mate” does not establish player gender. The phone contact is unidentified: “we” alone establishes neither identity nor number. The bound Italian fields for dragon washer, special endings and the adult device fit these contexts; no correction was established. Source and Italian layers are author self-reviews, not independent acceptance. Row and scene hashes and entry bindings are in the row receipt.
