@@ -415,3 +415,7 @@ Both paired builds of `Ryan_1_PhoneTutorial`, `Ryan_1_intro` and `Ryan_2_intro` 
 ### Resume 08: Conrad route arrival rows (author self-reviews)
 
 Both paired builds of `Conrad_4_Ryan_Conrad_Romanced`, `Conrad_5_intro_conrad_romanced` and `Conrad_5_intro_ryan_conrad_romanced` were read: three groups / 46 rows. Conrad's date with Ryan and the player's separate exchanges with Conrad are indexed without assigning gender to the player. Conrad's joke about a kobold cleaning him implicitly invokes the player and the wash. Some isolated laughter and date-preparation lines do not independently establish voice routing; the receipt preserves that uncertainty. The bound Italian player, Conrad, Ryan, kobold and wash fields establish no correction here. Both layers are author self-reviews, not independent acceptance.
+
+### Resume 08: Conrad route departure rows (author self-reviews)
+
+Both paired builds of `Conrad_5_outro_conrad_romanced`, `Conrad_5_outro_ryan_conrad_romanced` and `Conrad_5_outro_ryan_romanced` were read: three groups / 32 rows. The first route references the player's and Conrad's date; another asks about the player's relationship with Ryan. “Big C” is Conrad's briefly adopted self-reference, not a separate character. The player remains gender-unassigned, and the isolated pause and hesitant response retain unresolved voice routing. The bound Italian player, Conrad, Ryan and wash fields establish no correction here. Both layers are author self-reviews, not independent acceptance.
