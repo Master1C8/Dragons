@@ -1,0 +1,7 @@
+# French independent effective-edit review
+
+Recreated the exact 938-ID export bound to the French handoff at `a535a16` and verified its recorded SHA-256. The coordinator compared all 38 effective changes against both English builds and nearby dialogue. The college references consistently use the established French name, the corrected option register and gender-neutral player phrases fit their branches, and repeated lines preserve consistent wording.
+
+One correction remains in `Ryan_2_Outro`, instruction 48, `yarn:line:c2f44537`. The French appropriately says Ryan's girlfriend was already home before his return. Its second sentence omits that she is a dragon. Both stock builds explicitly identify her as a work-from-home dragon. Proposed `Alors. Ma petite amie était déjà à la maison avant mon retour. C’est une dragonne qui travaille à domicile.` The full paired reader accepts all 1,947 IDs. Both stock Yarn encode/parse checks compared 1,839 ordered values and found exactly this candidate difference. The two stock options at 52 and 53 still target 58 and 83. Author disposition is pending.
+
+Receipt `localization/work/fr-independent-delta-20261110.YXnAH3/review.json` SHA-256 `f4a70c111f983d81cbcb1c11afe742167e1f09413479c8deca76aa1fd0585ce8`. It binds the immutable before and after payloads, 38 reviewed IDs, source programs and validated candidate. The other 900 rows in this export, protected context, regression scope and final in-game acceptance remain pending.
