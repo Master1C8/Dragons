@@ -1,0 +1,31 @@
+# Italian renderer probe — 2026-11-10
+
+Status: **partial; visual feasibility remains needs-review**. Synthetic Italian script samples were used, not game translation. Both supported stock builds were source-bound through the existing adapters. Windows ran under CrossOver, not native Windows. All tests used the cooperative runtime lock from preparation through exit and verification; it was released after all six identified game processes had exited. The original profile/file comparisons in each observer matched. Fresh test identities were macOS `IT01`, `IT03`, `IT05`, Windows `ProbeIT02`, `ProbeIT04`, `ProbeIT06`, with separate private CrossOver bottle IDs. Originals, saves and texture content were not modified.
+
+## Gameplay and settings observations
+
+- The packaged `it` probe carried five synthetic Yarn values bound to `line:83ac5b68`, `line:0b7589ff`, `line:4d692a01`, `line:9d458e88` and `line:78cc49e8`, plus the three existing settings-label bindings. The macOS builder read back and signed its copied app; the Windows adapter read back both changed assets. Source and adapter input hashes appear below. The macOS clone used APFS copy-on-write; Windows test game was cloned from a historical diagnostic copy and reconciled against the stock 287-file inventory, with the original stock assembly and missing Steam settings file restored, new locale assets installed only in the clone, and a source-verified new test identity. The sole extra files were the task-owned companion and the synthetic fixture.
+- On both builds the stock menu loaded the isolated Conrad fixture. The probes observed all three choices as interactable, verified the actual Italian sample glyphs and selected the expected IDs. Both body strings reached full reveal with 64- and 40-unit text. The three choices measured 36 units. Both logs record node completion, dialogue completion and three choice actions. The same checks were repeated in the offscreen capture runs with `isTextOverflowing` and canvas-cull guards; five frames were produced on each platform.
+- The settings observers opened Options through the stock menu, verified all three active synthetic strings and their resolved glyphs at 19.7 units, and produced offscreen frames. The observers did not test settings persistence or every control. The macOS 640×480 and Windows CrossOver 1024×768 previews showed the three samples on one line without apparent clipping or overlap. Small accent placement in the macOS frame remains needs-review. The windows used offscreen camera routing, not a normal-window screenshot.
+- Window/focus observations were `0 0` throughout every run: gameplay macOS 182 samples and Windows 299; settings macOS 18 and Windows 27; capture macOS 187 and Windows 299. All wrappers returned 0; Windows observers reported zero surviving game PIDs. Fixture hashes stayed unchanged where tested; macOS wrapper removed the generated matching Steam file and reverified its signature. Original-profile comparisons and Windows source-file/profile comparisons matched per observer. The observer result strings still say `cyrillic` and the body labels still say `body-uk`/`body-vi`: these are inherited diagnostic identifiers, while the actual bound sample strings and logged glyphs are Italian, as the locale JSON and logs show.
+- The first macOS instrumentation attempt rejected the stock assembly at the supplied historical choice patcher's expected hash (`fcf7...` versus stock `f9c4...`); it did not launch a game. A task-owned copy of the stock-bound `background-input-probe` patcher accepted the actual source hash and verified the changed method bodies before the successful run.
+
+## Evidence bindings
+
+All paths below are relative to `localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/`.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| `macos-dialogue.json` | `7fa52cad67d3f54f90b483585181ceee2f034c7f5d29ae6e9bd158f0a19bb619` |
+| `windows-dialogue.json` | `d73c1a24b681e85a3cb2d8871f748ba84b9c0fae860e51f07d2b8cd29a63be24` |
+| `macos-settings.json` | `805017018844cc0218814ffa875a98a0527e7728e3b8b4fd3c53b02dd2ab1795` |
+| `windows-settings.json` | `b762fe5d042189906de4ca2b9882863fa4814d92c133460014469c06cb0c2551` |
+| Windows `sharedassets0.assets` / `sharedassets1.assets` | `37cad222d4ae421f7e0d3fd774fe00c31119a4e884d669edd452a424460aac02` / `b4713a9ba58cdb4853fd74665cfbcf61e421fd682ee6896b9d495b1a1ba19ae5` |
+| `mac/run/unity.log` / `win/unity.log` | `e8118c52d7488d3afe23318ab04f1707c152292eb383655e9634af32a309202e` / `5d88b0bd1314e0bae083726ddffaa60955875f7e882d528cb76575b5ee1a88ba` |
+| `settings-mac/run/unity.log` / `settings-win/unity.log` | `5bbc57ec397314a91d9f4e78700dcd89ff02d801e6a1fe8be449c156e3f373b2` / `b73e1194fe71fbba7cb5359c1b076ae22d9c4a56d5e64a8605c45fdc1fb4b84f` |
+| `visual-mac/run/unity.log` / `visual-win/unity.log` | `7a9c23cafb794f7ea3eac80ea0e75b19dad2484573fd5acfb4e05e26e64c7d52` / `c6ad7c5a5baee25d27ebd9109cf24d80de34f1adbce74a337bc236c40684d6fe` |
+| `visual-mac/run/frames/previews.jsonl` / `visual-win/frames/previews.jsonl` | `20d003271a3e8c54e68cd06c5024070c48bcc7d8eaf26879126a1e1c4c6fe515` / `0276b3f7c24263266211090ed6e8f89639a6bb0bc8870427ddb7e692f5407e2c` |
+| macOS Options PNG / WebP80 | `0be46f74cc1ba9fb6d524b5d2b07cfd454de4db9e7b0ec9d289712819f945156` / `f6d2b3a1f39ba54e7a409b1acb220e338897e33f92651401d9d240b50af69fcf` |
+| Windows Options PNG / WebP80 | `559c77b15bca17a022ae563762772ea8f3ccc948c29966ac46e33c5deda5ce41` / `5571a4358af2d439675b86dc88dd039f39022fba1c41448f33a2e945e2ec9e8c` |
+
+The preview manifests contain each original SHA-256, dimensions, WebP80 digest and path; originals remain alongside them. The two Options previews above were the only visual inputs in this review context. The ten dialogue/choice originals and compliant previews are **not visually reviewed**. Inspect each required frame in bounded permitted review contexts before a visual pass; do not infer pixel legibility from TMP glyph resolution or overflow flags. Final corpus glyph coverage, other dynamic fields, settings interaction, native Windows, ordinary uninstrumented presentation, and final artifact/runtime/visual acceptance remain open. Free disk at the last check was approximately 1.3 GiB; preserve all unique evidence and recheck before any further copies.
