@@ -159,3 +159,77 @@ Control packages, replay sources and receipts are under
 `localization/work/uk-special-scene-closure-20261110.sbqndo/`.
 The SHA-256 of `route-table-readback.log` is
 `74405387032afc498febd81512083c10e6aee7f6866552276493177c2c2b5844`.
+
+## Alexander display in Unity
+
+The isolated macOS player and Windows player through CrossOver both
+used the fourth-batch package with two RunLine operands redirected
+in the test copy of `Conrad_Intro_3`. Complete object comparison
+confirmed that only the YarnProject changed in the dialogue asset.
+The original English colon-bearing table entry remained exact and
+the packaged Ukrainian managed display adapter supplied the visible
+body. The fixture was reached by the original menu and virtual
+player input. It does not establish entry to the original
+`Alexander_2` scene.
+
+Both live TMP components displayed the authored college introduction
+with 59 visible non-space glyphs, two lines and no visible speaker
+field. Stock choice `line:83ac5b68` advanced to «Александер!» with
+11 visible glyphs. The two first-frame full WebP previews showed
+legible text, the intact colon and no visible clipping or overlap.
+The last two words sit on the second line on both viewports. The
+second frame is retained as progression evidence. It has automated
+glyph checks and awaits pixel review.
+
+All 172 macOS and 268 CrossOver focus/window samples were `0 0`.
+Both test players exited, their original-profile checks passed and
+both fixtures kept their initial save bytes. The macOS wrapper
+removed its generated Steam file and the test signature verified.
+
+Local sources, copied artifacts and receipts are under
+`localization/work/uk-alexander-unity-20261110.Pk2UQe/`.
+
+| Evidence | macOS SHA-256 | Windows SHA-256 |
+| --- | --- | --- |
+| Fixture dialogue asset | `52961ea6b2095ba5417627acbb736f0b193f9722f3890210d68528d05247a3b7` | `204a43a1e4f08413f9a49b5bc99a7dd922fdd5521cab103ab9666860ee3f94f1` |
+| Unity log | `82dbe29b1cfe8e3e520f50906b95534c4c74235f6b6ac576b056cf8da5df1f9a` | `bdf5d19383cf2197cd7a0ddef5d40e627b87cca296f1f24c297b2e55925cef59` |
+| Focus and exit receipt | `b8bc26d59c8851047feb9fe3156d3b9191f0d072177c88606fe10e78c53ae508` | `f979fdd095149649f5d878211da2413ad7cdd8b5039f8ce7d340eef7e06185b0` |
+| First offscreen PNG | `f09cb1a54d160ffbf5737ab028882855b38fbeace844ec1211ab2030846ea566` | `1535a433de6c5bb5b55cd89bb5b728efc3046f7f475aff751cc10f5467c5dad6` |
+| First full WebP80 preview | `dde52b1504d15ae024da0184a19a9d74c97557d3b8d9d63c5ade9f7604258a40` | `bfcc2f816e65bdd213318bc9411ca8ec651192b2b5dadfb2344fc354091bd7fb` |
+
+## Styled choices in Unity
+
+The next fixture also redirected the two AddOption operands in the
+first `Conrad_Intro_3` menu. The displayed values are the authored
+`line:e104b8e4` and `line:36ff6bd9` from the fourth-batch package.
+The fixture retains the original test menu's destinations. The
+romance outcomes remain covered separately by the desktop replay.
+
+The stock option views produced matching measurements on both
+players. The options had 59 and 106 visible non-space glyphs, with
+one and two lines respectively. Both used 36-unit main text and
+25.2-unit captions. The presenter interpreted the gradient and size
+tags, resolved every observed glyph to its original code point and
+reported no TMP overflow. Stock input selected `line:e104b8e4` and
+reached «Александер!». Full-frame choice previews are ready for pixel
+review, including edge padding and caption readability.
+
+The first macOS attempt stopped at the test's waypoint before
+dialogue. The retry raised the window waypoint tolerance from 0.25
+to 0.36 world units after a logged approach to 0.269. It retained
+the same fixture asset and still required the original window
+interaction. The passing macOS and CrossOver runs had 171 and 271
+focus/window samples, all `0 0`. The checked profiles and fixture
+save bytes matched, and both test players exited.
+
+Local sources and receipts are under
+`localization/work/uk-choice-unity-20261110.pFemW7/`.
+The accepted macOS run is `mac-retry/run/` and Windows is `win/`.
+
+| Evidence | macOS SHA-256 | Windows SHA-256 |
+| --- | --- | --- |
+| Fixture dialogue asset | `afa3dab770c1cc064cd1482c143b75708a36dbfca269457d924e93e6e34c4aba` | `27d9192f6cdb448fb17e51a5727162a5f1876b1fb87a6e6821fd8fab08f1765e` |
+| Unity log | `0dcf348367fdf68549486ee0ff917b7ed421881c1ebfba42bcaa4a37fdcc0c59` | `ee797eb22008481e6dced29c7db0f2ee41d2bbb01f37e77d4390092c58535994` |
+| Focus and exit receipt | `6e4acd7154b8edd4a0a2b57a3675890d9ee5630a2dae3eff49f00f8945e75f8c` | `42924adaef3db811ddbe44c2628f46f730d9b2bdc554a9590f2b4d37959365d3` |
+| Option menu offscreen PNG | `7bd23b2b98f0fc7b13c2fd734d0e3f8b77d07eab2f80535c449b7127725cdd0e` | `46b21bfa386eedf4b7dfea0db749cb75c6ff666f70d50a69f37763de0383ad0e` |
+| Option menu full WebP80 preview | `2587381f02f41cd5997936812b94ccdc4edecaccc5dada2f336d573350e5ceba` | `d306d9f33756e88a93208e1d01ab37cb5f1f97b72978b499ab921c22e64b72dd` |
