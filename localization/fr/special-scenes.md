@@ -1,6 +1,6 @@
 # French special-scene decisions
 
-Status: **24 of 27 groups have author-reviewed draft wording; the entry gate for ordinary translation remains open.** Authored input: [translation.json](translation.json), SHA-256 `aeb92f076d7c740f9c28d9a40bb1dfe0d90a718b8b67d907d316c7078fe16ab0`. It contains 245/1,947 package IDs. The bound inventory, Yarn scope and French glossary hashes are in [CHECKPOINT.md](CHECKPOINT.md) and [glossary-review.md](glossary-review.md). The other 3 groups remain unreviewed; the anonymous group also retains the technical boundary below. The English worklist and source registry, not another locale, supplied the wording and context.
+Status: **25 of 27 groups have author-reviewed draft wording; the entry gate for ordinary translation remains open.** Authored input: [translation.json](translation.json), SHA-256 `d153aa24bb50ec84c01ed9c55f43bf23d3ddd6d40b8f2f56499e1412a4118290`. It contains 253/1,947 package IDs. The bound inventory, Yarn scope and French glossary hashes are in [CHECKPOINT.md](CHECKPOINT.md) and [glossary-review.md](glossary-review.md). The other 2 groups remain unreviewed; the anonymous group also retains the technical boundary below. The English worklist and source registry, not another locale, supplied the wording and context.
 
 ## Alexander: the taste of seven
 
@@ -123,3 +123,11 @@ All 24 `conrad-special-endings` IDs were read against the paired English worklis
 Preserve choices, routes, speaker assignment, original conditional state and the ordered size and italic tags. The paired Yarn replacement provides a feasible text path. Scene checks must exercise the alternatives and compare emphasis, progression and visual fit; source coverage does not establish French route reachability. Actual scene playback, fit and independent review remain pending.
 
 The paired validators accepted 245 IDs. Both partial assets were reopened and compared with all 1,839 ordered Yarn values and metadata: 242 authored, 1,597 untouched per platform; three presenter IDs are separate. Diagnostic SHA-256: macOS `0cbf852396f2e4987e6893e5507f942e7647fdbed70e0f76e9b55b407545185f`; Windows `51887c75573a67f5f4e82282cb90f80d99b8ef063070e358993fbc372f36a949`. These are not deliverables.
+
+## Missing named destinations and continuation text
+
+The 15 direct marker IDs remain exact source values, outside the paired authoring list. The eight visible continuation IDs in the case context were compared against their English source and reviewed by the author; their individual voices and expressions of satisfaction, thanks and relief remain distinct. This is an author self-review, not independent acceptance. Preserve the five destination names, original markers, source IDs and commands.
+
+`localization/evidence/yarn-transition-runtime-20261109.md` documents a source-bound opt-in builder route appending five continuation nodes, with controlled VM tests on both builds and instrumented Unity entry on macOS and CrossOver. This establishes a feasible technical candidate, not normal-play completion or French runtime acceptance. The current partial Yarn readbacks below do not enable that repair. Exercise all five transitions in ordinary French play, verify subsequent state and side effects and check fit before accepting the repair. Do not invent or silently change the source nodes.
+
+Paired validators accepted 253 IDs. Both partial assets were reopened and all 1,839 ordered Yarn values and metadata compared: 250 authored and 1,589 untouched on each platform, including the 15 exact markers. SHA-256: macOS `c4e7471a8781ea86e155c28c6ba7cdbd912816fd11a837a7cb32d29201220f78`; Windows `2437546e67b157fc723336521568b0eea3a1bf6fd53fa687c58c7ce2b751ac7e`. These are diagnostic assets, not deliverables.
