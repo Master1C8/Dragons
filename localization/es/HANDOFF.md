@@ -158,3 +158,7 @@ Authored 65 IDs across four complete Conrad fourth-visit relationship scenes, fo
 ### Continuation: Ryan fifth-visit relationship outcomes
 
 Authored 81 IDs across five complete Ryan relationship-state scenes, for **941/1,947**. Both stock platform readers and in-memory object read-back passed; altered-English inputs were rejected on both. See `special-ryan-relationships.md` and task scratch `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ryanroutes/`. Translation SHA-256 `435f904515780984c3fbd3c562831a7fd66815bd535c83b77198652ac4d832d3`. Reconcile remaining relationship-state context before ordinary batches. Independent audit, packages and final runtime/visual QA remain pending.
+
+### Continuation: Conrad fifth-visit relationship dialogue
+
+Authored 75 IDs across five complete Conrad relationship-state scenes, for **1,016/1,947**. Both stock platform readers and in-memory object read-back passed; altered-English inputs were rejected on both. See `special-ryan-relationships.md` and task scratch `work/cli-terra-high-20261110.J0KLrx/es/resume-09/conrad5/`. Translation SHA-256 `eefa4a9cfb6055f3935ddab4cf53cfeb5e8cb8cfa0afe39e54854299a42facf8`. Reconcile remaining relationship-state context before ordinary batches. Independent audit, packages and final runtime/visual QA remain pending.
