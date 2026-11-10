@@ -8,8 +8,14 @@ against the English worklist and the affected exchanges. The exact changes are
 in [the adjudication receipt](receipts/direct-file-adjudication.json).
 The complete authored Yarn validator accepted 1,823 dialogue bindings per
 platform. The previous independent closure was partial. A clean final
-independent delta remains pending. Package verification is tracked separately.
-The current task is file delivery only.
+independent delta remains pending. The macOS app and Windows ZIP were built from `69a83db`.
+Fresh rebuilds matched all 284 app entries and 13
+ZIP members. Strict macOS signature and stock component and serialized metadata
+checks passed. The build receipt is `localization/work/owner-files-20261110/pt-BR/result.json`,
+SHA-256 `82d3f826b8b824fd043d36c6a45918ecd3a36d20eba7abbed27694cd5725fb00`.
+The macOS manifest SHA-256 is `12cc6b8552364283c8a903217b42de298fc4ca016a6e47d3ffcc388e57dae3ef`.
+The Windows ZIP SHA-256 is `7686f27adf3740207a6cb0804d373cfcc41f374b7dbc454fdc0c56185e402f44`.
+Current-payload gameplay and visual checks were outside this file-only task.
 
 Updated 2026-11-10. Standard game-text localization, `pt-BR`; texture lettering excluded. Assigned worker `gpt-6.1-terra`, reasoning `high`, as recorded in `localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/worker.json`. No other model or reviewer was used in this lane. Canonical checkout is `main`; other locale work is concurrent and outside this lane.
 

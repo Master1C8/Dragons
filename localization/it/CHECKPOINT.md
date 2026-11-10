@@ -8,8 +8,14 @@ dialogue and choice rows from the pinned paired English worklist, preserving all
 restored Conrad’s dog greeting in `39fd52f1`, so the immediate kobold correction
 retains its setup. Current translation SHA-256 `b347c4d9f57495e052df3464829ecccafd2f4c6faccd3cf84d14eb9597f72cdb`.
 The complete authored Yarn validator accepted 1,823 dialogue bindings per platform.
-Full semantic and independent editorial acceptance remain pending. Package
-verification is tracked separately. The current task is file delivery only.
+Full semantic and independent editorial acceptance remain pending. The macOS app and Windows ZIP were built from `6f65d89`.
+Fresh rebuilds matched all 284 app entries and 13
+ZIP members. Strict macOS signature and stock component and serialized metadata
+checks passed. The build receipt is `localization/work/owner-files-20261110/it-final/result.json`,
+SHA-256 `af3c8078a69a9877a64b90907252749cd1b062548fda6d791e6d59351cc6c2a8`.
+The macOS manifest SHA-256 is `eba0fd0c13b55cc151330fe4d2daffe933a3089c36304fdd451e38b0aeacf201`.
+The Windows ZIP SHA-256 is `3886e409ff2d5c8527bff17de639e2c9a7b5e60768c4aed4df2ab7282ce22869`.
+Current-payload gameplay and visual checks were outside this file-only task.
 
 ## Historical decision — resume 09 (superseded by resume 11)
 
