@@ -1,0 +1,296 @@
+{
+  "schema": "it-glossary-row-review-v1",
+  "status": "partial-author-self-reviews-not-independent",
+  "worklistSha256": "692c32667546db79d51cab95d4894bb97f7f78b4fda0756465f90c0a5e6319d2",
+  "entryHashIndexSha256": "81ba8ebd79affeab85cf2559a753fbd06498d74daf8358bb0223770a236bf3cf",
+  "scopeNote": "Row-level character and concept use for these complete paired scenes only. Other scenes and full per-entry unions remain open. Participant routing comes from explicit prefixes and these branch contexts; no other names or player participation are inferred.",
+  "groups": [
+    {
+      "group": "Ryan_Conrad_SexScene",
+      "orderedRowsSha256": "73f6ccf52d122ba25a18273c259ba801e0bcdf8bfa519a9d737397f63c663f26",
+      "applicableEntries": [
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        }
+      ],
+      "groupContext": "Conrad and Ryan are the two participants and both are dragon customers; the source does not identify the player as present. No other glossary concept is invoked in this scene.",
+      "layer1": "Author source self-review: explicit speakers, first- and second-person address, and both collective choice referents reconciled against the entire paired scene.",
+      "layer2": "Author Italian glossary-field self-review: the bound Conrad and Ryan names, masculine identity and dragon-customer descriptions, and dragon species field fit these uses; no field defect established by this scene. This is not an independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:f5f5b815",
+          "pairedRowSha256": "ab25eb29ca12a6953a9989a038504e12a69f9e22008a8a2b51ef311bdb4ca520",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "decision": "Ryan speaks of his own first outdoor experience."
+        },
+        {
+          "id": "yarn:line:5660dc8b",
+          "pairedRowSha256": "d040d72a2713efb29d7eea94f42b6436d6dfba2d264f67e51cdaeacf11eef263",
+          "speakerOrKind": "Conrad",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "decision": "Conrad reassures Ryan."
+        },
+        {
+          "id": "yarn:line:c050dbfc",
+          "pairedRowSha256": "6ee217cdb613abb17d9cc2bbe2ce1d043c23582800a24f260250c6c6a044dcf2",
+          "speakerOrKind": "Conrad",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "decision": "Conrad speaks of his own experience."
+        },
+        {
+          "id": "yarn:line:7a01d265",
+          "pairedRowSha256": "2ee2547f20675f814647440004cde7d4fd4a3484f49794664a618d1985550382",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "decision": "Ryan evaluates the experience."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_Conrad_SexScene_Cum",
+      "orderedRowsSha256": "e753a1e5d89290a9efdb38809714d88e5fdf5649ca3ef35fe9dec68274f64fc8",
+      "applicableEntries": [
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        }
+      ],
+      "groupContext": "Conrad and Ryan are the two participants and both are dragon customers; the source does not identify the player as present. No other glossary concept is invoked in this scene.",
+      "layer1": "Author source self-review: explicit speakers, first- and second-person address, and both collective choice referents reconciled against the entire paired scene.",
+      "layer2": "Author Italian glossary-field self-review: the bound Conrad and Ryan names, masculine identity and dragon-customer descriptions, and dragon species field fit these uses; no field defect established by this scene. This is not an independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:194c1381",
+          "pairedRowSha256": "27b2046b6b370d3ffd7b640c1bd5830a1c4578d34075e256015f243969ae4149",
+          "speakerOrKind": "Conrad",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "decision": "Conrad says he is ready."
+        },
+        {
+          "id": "yarn:line:a31d1a18",
+          "pairedRowSha256": "c9b67e435cdd09d1e7da597757ac1df0acb28661b5852598e8d39bc51a7bbecf",
+          "speakerOrKind": "choice",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "decision": "They denotes Ryan and Conrad continuing."
+        },
+        {
+          "id": "yarn:line:352d1d6f",
+          "pairedRowSha256": "6563cbc8ac6c05ed77682a8b0c3bb38fa5f1a482a41a2c392dcd939fc7cfe25b",
+          "speakerOrKind": "choice",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "decision": "They denotes Ryan and Conrad."
+        },
+        {
+          "id": "yarn:line:a430a2ff",
+          "pairedRowSha256": "cf1d36c30150e7a4580dd1a84e7c83db4e24360d6266d52bfd0f63833f7bcba2",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "decision": "Ryan says he is close too."
+        },
+        {
+          "id": "yarn:line:3200a588",
+          "pairedRowSha256": "dff20b90039e71d0d7e7c0105ab881f81dd072a314097db04f9c7c7da9cfbbd8",
+          "speakerOrKind": "choice",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "decision": "They denotes Ryan and Conrad continuing."
+        },
+        {
+          "id": "yarn:line:d78962e8",
+          "pairedRowSha256": "a381e44b9ed416990b32f4088bed04703dd3288fa6788caca598029361872024",
+          "speakerOrKind": "choice",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "decision": "They denotes Ryan and Conrad."
+        },
+        {
+          "id": "yarn:line:41b9659f",
+          "pairedRowSha256": "bfa9c7e3cc5494a62db13742859b37dd50eee146eea06305117b994dc4a16f07",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "decision": "Your and you address Conrad; Ryan is speaking."
+        },
+        {
+          "id": "yarn:line:fbe86c06",
+          "pairedRowSha256": "951734d24f1a6a02fecd52e359e89f5b7e89d6247b3cf16387d806fe528e911e",
+          "speakerOrKind": "Conrad",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "decision": "Conrad answers Ryan."
+        },
+        {
+          "id": "yarn:line:6dd86b71",
+          "pairedRowSha256": "0f6fde4e51e7f13963dd53cc75ab7e34ce707699e331bff74322a7a4bdc85bda",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "decision": "Ryan evaluates the experience."
+        },
+        {
+          "id": "yarn:line:ce4d0fef",
+          "pairedRowSha256": "637a01d77b58fd16cd9386fd1b5ce94f626dabe92c9dac7351b1f66660e45c11",
+          "speakerOrKind": "Conrad",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "decision": "Conrad agrees with Ryan."
+        }
+      ]
+    },
+    {
+      "group": "Ryan_Conrad_SexScene_Loop",
+      "orderedRowsSha256": "88dfae54f1adb305ca95cccbc66e596e02af2fc6100799ec1e4e47ad215af982",
+      "applicableEntries": [
+        {
+          "id": "dnw-conrad",
+          "sourceEntrySha256": "094ff1d0ef7b6ee6f03c11b5b0a040cf856a56b97ef4febdfc4c0ebe6eb05ccf",
+          "localeFieldsSha256": "1ee47b575ae7ddeb550f59d0b9dcc6b87733da1f46c92683a49182bbf4c2627f"
+        },
+        {
+          "id": "dnw-ryan",
+          "sourceEntrySha256": "2fe901ccb0c5cbf9cbfd4f60d971397e2ebe27684b5ff1cdbed5c07e7a71d3f2",
+          "localeFieldsSha256": "0cc8b4cc4f66262991281f4768a4629f8567c81d10918108bf61a325afdcdddb"
+        },
+        {
+          "id": "dnw-dragon",
+          "sourceEntrySha256": "166b2cd5dbfcc7b277b19e47d8f7de8d75545b40c8763895457727f0e9e45671",
+          "localeFieldsSha256": "262f61008124b10b9682793f9583f3328ac27cc278c19def1694a5655b7798f1"
+        }
+      ],
+      "groupContext": "Conrad and Ryan are the two participants and both are dragon customers; the source does not identify the player as present. No other glossary concept is invoked in this scene.",
+      "layer1": "Author source self-review: explicit speakers, first- and second-person address, and both collective choice referents reconciled against the entire paired scene.",
+      "layer2": "Author Italian glossary-field self-review: the bound Conrad and Ryan names, masculine identity and dragon-customer descriptions, and dragon species field fit these uses; no field defect established by this scene. This is not an independent review.",
+      "rows": [
+        {
+          "id": "yarn:line:3bc52918",
+          "pairedRowSha256": "3bd4f03c02c1672a91425084ac0eacbdcdc8bebeec783adda132e0b791accc4a",
+          "speakerOrKind": "Conrad",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "decision": "Conrad asks Ryan about his experience."
+        },
+        {
+          "id": "yarn:line:aad89688",
+          "pairedRowSha256": "6c8efdd02130ea4dc10cce50245d6cf0a4cc8432f5057e46f53d20ac146fda8e",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "decision": "Ryan answers and asks if Conrad worries about him."
+        },
+        {
+          "id": "yarn:line:3ce891ff",
+          "pairedRowSha256": "3ba02213fa702a6151fdbfc872f56dd1b748d10b201ff20580ef7735c5bba2b8",
+          "speakerOrKind": "Conrad",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "decision": "The literal third-person Conrad and himself refer to Conrad; preserve unusual wording rather than silently reroute it."
+        },
+        {
+          "id": "yarn:line:5b0360ad",
+          "pairedRowSha256": "a26899b128a7e167d728f349ffaf12e0ca69041d755d0662aa85761681192f61",
+          "speakerOrKind": "Conrad",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "decision": "Conrad hesitates and qualifies his prior remark."
+        },
+        {
+          "id": "yarn:line:cd3367da",
+          "pairedRowSha256": "d4219405be56e18d5b0c1f2c8acf945cd6e13c755b3d520fb3fc87cb79e4c554",
+          "speakerOrKind": "Conrad",
+          "characterReferents": [
+            "dnw-conrad"
+          ],
+          "decision": "Conrad wants the encounter to go well."
+        },
+        {
+          "id": "yarn:line:77626e43",
+          "pairedRowSha256": "5c9f6427408d3059833035bda038506e8abd97a6d8f7132899835a266fdaaa1a",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "decision": "Ryan evaluates the encounter."
+        },
+        {
+          "id": "yarn:line:e1526934",
+          "pairedRowSha256": "fbea47017f20500009a75f0e7532a6402df9779a6b1c167c5f5133c85293c793",
+          "speakerOrKind": "Ryan",
+          "characterReferents": [
+            "dnw-ryan"
+          ],
+          "decision": "Ryan says he likes the experience."
+        },
+        {
+          "id": "yarn:line:42c70daa",
+          "pairedRowSha256": "8bb0eea8c507aee5e39971d080ae0ab2016a617077d45767006d141dc7a0786f",
+          "speakerOrKind": "Conrad",
+          "characterReferents": [
+            "dnw-conrad",
+            "dnw-ryan"
+          ],
+          "decision": "Conrad addresses Ryan."
+        }
+      ]
+    }
+  ]
+}
