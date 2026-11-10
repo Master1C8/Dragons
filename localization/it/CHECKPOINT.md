@@ -255,3 +255,7 @@ Eight additional complete groups / 21 rows have paired, hash-bound author self-r
 ### Resume 08: Alexander conversation row unit
 
 Four more complete groups / 30 rows received hash-bound paired-source and Italian-field author self-reviews. The receipt now contains 93 groups / 253 rows; 100 groups / 1,694 rows lack equivalent full row-level receipts, with prior scoped evidence retained at its actual binding. Some individual voice routing remains unproven. Independent acceptance and the shared source and exact-preservation gates remain open.
+
+### Resume 08: Conrad introductions row unit
+
+Five more complete groups / 25 rows received paired, hash-bound source and Italian glossary author self-reviews. The row receipt now covers 98 groups / 278 rows; 95 groups / 1,669 rows lack equivalent full row-level receipts, with prior scoped evidence retained at its exact binding. Diagnostic relationship flags are possibilities, not established events. Independent acceptance and the shared source and exact-preservation gates remain open.
