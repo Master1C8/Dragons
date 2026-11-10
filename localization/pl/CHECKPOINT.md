@@ -263,3 +263,9 @@ Author self-reviewed 57 additional IDs in `Ryan_2_intro` and `Ryan_2_Outro`, ret
 Author self-reviewed 52 additional IDs across `Ryan_3_intro`, `Ryan_3_required`, `Ryan_3_Outro` and `Ryan_3_wont_use_mount`, preserving the friendship and breakup dialogue, device refusal, and source markup. Two English pairs differ only in minor grammar or punctuation and have explicit shared targets. This is author self-review, not independent audit.
 
 `translation.json` now has **924 / 1,947 IDs**, SHA-256 `3bee46507bc0e076d15793f2b9aee0e6dbf3111bae2217d9c4d44e2232865612`. `resume-01/add-ryan-third.py` and `resume-01/ryan-third-map.py` validate the preceding draft and paired readers; macOS accepts 924 and Windows 918 bindings. The complete guard reports 1,023 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Injured Conrad encounter — continuation
+
+Author self-reviewed 22 additional IDs across the `ConradBeatup` introduction, idle, conversation and unfinished-wash branches. The emotional context and the explicit reference to his friends are retained. This is author self-review, not independent audit.
+
+`translation.json` now has **946 / 1,947 IDs**, SHA-256 `95f01c0a5c84e7915f4f00ad249d62998adeb1d54b2ce419241067e7cc5471bb`. `resume-01/add-conrad-injured.py` and `resume-01/conrad-injured-map.py` validate the preceding draft and paired readers; macOS accepts 946 and Windows 940 bindings. The complete guard reports 1,001 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
