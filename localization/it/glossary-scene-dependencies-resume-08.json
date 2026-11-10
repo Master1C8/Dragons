@@ -1,0 +1,1247 @@
+{
+  "schema": "italian-glossary-scene-dependencies-v1",
+  "status": "partial-not-editorially-complete",
+  "worklistSha256": "692c32667546db79d51cab95d4894bb97f7f78b4fda0756465f90c0a5e6319d2",
+  "entryHashIndexSha256": "81ba8ebd79affeab85cf2559a753fbd06498d74daf8358bb0223770a236bf3cf",
+  "method": "Scene-by-scene human semantic classification. Membership and ordered complete paired-row digests bind to the scene index. Routed role inferences use the existing source-evidence receipt, not a name match. Pending scenes have bounded reads but no completed index reconciliation.",
+  "groups": [
+    {
+      "group": "Alexander_1",
+      "orderedRowsSha256": "7d47ff3b588698c4f2fc946251e1507ed84f63bf86b7625b531b7ca842a66e83",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_1_Outro",
+      "orderedRowsSha256": "99bcd208cef7d4aa7b009f553d50292b98afb0993b22a435fc1cc33de7b5b7ad",
+      "count": 7,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_1_intro",
+      "orderedRowsSha256": "1f7bc70270a702a7c293bd63939b771efb2f5e61f2ee67cff6550ea24571f5de",
+      "count": 19,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_1_required",
+      "orderedRowsSha256": "e4c0da992215d90362dba2ac2070856e85651781e36ffb88d8e556e3f9138f68",
+      "count": 7,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_2",
+      "orderedRowsSha256": "8c55a2b36a75043bfa1f2842549b9ea2028bbaaf34978203401da4e3195df67e",
+      "count": 11,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_2_Outro",
+      "orderedRowsSha256": "1ed84047386a8b83b2b5a402990f7242ec3dc45b8f9c4bc12c36595fb68479a8",
+      "count": 19,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_2_intro",
+      "orderedRowsSha256": "b68be1b426d5a5a3c14b1d381987d5f0d383eedf233703425ac55f4ad5f53f71",
+      "count": 26,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_2_required",
+      "orderedRowsSha256": "a8ea0d7cef86338e7be555b5d6eb25fdde2139251b5c5c7ba81a33040c649339",
+      "count": 8,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_3",
+      "orderedRowsSha256": "3fef79dabe9d5feb07db4ee66e3e61c63cd329eb39a33a7f184fe68cc52ad1ca",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_3_Cum",
+      "orderedRowsSha256": "9e977c4fa702cb06e938359f9f83d75fbd6d01972e9eaf0c67d3608ee187d83a",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_3_JerkOff_Start",
+      "orderedRowsSha256": "cdb3d307a869f236faddc7cd8e58399ef52d0e42401567a167f92b4a4d844c03",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_3_Outro",
+      "orderedRowsSha256": "e840747afed62d2be83ebadc18cab8e2095abef3d63535782afadde29e4f6680",
+      "count": 10,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_3_intro",
+      "orderedRowsSha256": "33dc4d27d8ffa538ba471793d51c1ac12cc11064690c0d5ffeccc8b0d5e5409c",
+      "count": 35,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_3_required",
+      "orderedRowsSha256": "46590481d42cd48b9ac5d0c5f236823f0f8ee7f051eddb15a78f92ced3e04d23",
+      "count": 21,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_3_required_end",
+      "orderedRowsSha256": "1aff344cfab92fa0d3cf646b24ad8a5c0459e88acf34b6596d692ca49ddcc343",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_4_Cum",
+      "orderedRowsSha256": "e9f343e94834bfb6c59c8d8ec35c2caba2982a02c6c13963b1beabb3d5e2e380",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_4_JerkOff_Start",
+      "orderedRowsSha256": "feb0efc55a66d92bb462a1ec711173dc5852a673fbf0dfb8c505e1e7d893518c",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_4_Mount_Finish",
+      "orderedRowsSha256": "39be10476d1cc0281f64a1330be8a519c9a51e5677718644433cd9d23be96621",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_4_Mount_Start",
+      "orderedRowsSha256": "da67c4cd7383f2d60abf6e19b207908fdb230b82b4c2351f8fed06fc919ca244",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_4_Outro",
+      "orderedRowsSha256": "8403229f1fb372d6b4eb9d494cbba7ef143bbdd4345ebf538c4e562493010120",
+      "count": 19,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_4_intro",
+      "orderedRowsSha256": "553fb49e1cabaf80699904a0eef4c1d5dcfd0fc269797ac23cf11950296d8434",
+      "count": 25,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_4_required",
+      "orderedRowsSha256": "597970a783c4408d8dada7ea3b30cac2b4294f16e7b9739101aea0b86ccd5866",
+      "count": 28,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_5_Cum",
+      "orderedRowsSha256": "5cc38c71bba2895f4a52a558dc55d8863396cfd64dae4d76a7c820844cfa6efa",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_5_JerkOff_Start",
+      "orderedRowsSha256": "21b2e583e37fd05d17550fd02d04494496f6f89e123f0014396d124f97b8a0cc",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_5_Mount_Finish",
+      "orderedRowsSha256": "06ada4310f137727d4deb22ed6eb110e50d9fb8a6252c1c04cb963a0390bd5cf",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_5_Mount_Start",
+      "orderedRowsSha256": "c649c2d1ae0674ecbac5a58294f447b9e3aa17433012ac06f4b44e8a02db0624",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_5_Outro",
+      "orderedRowsSha256": "b72f2bec5259f5a0f55d7c00672d657958de7901c96de1ef15b1391c705b633b",
+      "count": 17,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_5_intro",
+      "orderedRowsSha256": "721a280778f5fa964ae68a3aa1f839d21c36463a34508a22babcbdf2d0597852",
+      "count": 27,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_5_required",
+      "orderedRowsSha256": "ae531bca0aa36ab512a7face4b883782431acda4c13451f1e6ddb554ce36adc6",
+      "count": 20,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_5_romance_route",
+      "orderedRowsSha256": "3239d0caa2f70123da57c8f8402c3d67dcf071d0e7f8f998e3ebc78d1c1f61a9",
+      "count": 24,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_Dirty",
+      "orderedRowsSha256": "da2f43e4bd5a9c99602c4e3f3a07d5253fffecb6afa75a658d5388afc7cfe31c",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_Idle1",
+      "orderedRowsSha256": "55b33bd48a394f4b3c522227f67132f3ed484d12c2eb94abd6fc6b44787534c2",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_Idle2",
+      "orderedRowsSha256": "3dd1213d2cc3273c4b9679708deff19a308f5ff1e3441e640d67495e743dc494",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_Idle3",
+      "orderedRowsSha256": "0523d709950f40bc55abd6b6a21897b3004aec4d5126d4ab1783d79b1e5d9562",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_Intro",
+      "orderedRowsSha256": "41b2d22707802c51c0afd5755e466e0b5c596cd06fe0b9a02319648e99ac2f28",
+      "count": 8,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_Outro",
+      "orderedRowsSha256": "466928a3ac70ec362920c0f0c09c7ddbfddb505428025a54ed6fd1f1a3b74f34",
+      "count": 11,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_SexScene",
+      "orderedRowsSha256": "2605ecde6eb0b51f9682b885a29819e08e3170651c6414e37353ffd549fc344a",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_SexScene_Cum",
+      "orderedRowsSha256": "14ce4c4d7b430216ce54d3a7982a6b2c4a34637c3dec05f6ce053ed81ac5aeae",
+      "count": 18,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_SexScene_Loop",
+      "orderedRowsSha256": "7f57a7a5354c3e555b4938f6658910bffac740f3e9d545488e70b86fe446d2a6",
+      "count": 4,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_Soapy",
+      "orderedRowsSha256": "1a29148b446a1be748473181f3338efcaa07914cf9474cda1dbfabc22237829b",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Alexander_questions",
+      "orderedRowsSha256": "f994ff2404c87b478fe4f1138de047be0a28dac1ea0228fb54119b952154fe51",
+      "count": 77,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "ConradBeatup_1",
+      "orderedRowsSha256": "101c012579dcf7c373069c027371d58fc3d764026a7beaede9801b8ecf84eb5c",
+      "count": 5,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "ConradBeatup_2",
+      "orderedRowsSha256": "81d6be92348863d2c00b6b72816738a6c224821fec5aa9c732cfee327480345c",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "ConradBeatup_Idle1",
+      "orderedRowsSha256": "6b968146d1b54b2632b598a7bd8938fac4af50b5de4199d15b0069fa4949f967",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "ConradBeatup_Idle2",
+      "orderedRowsSha256": "8699ca5d28a8a3c7ff5ab129af18501cebe9a2407fc6f864f18d0d10b4f205ef",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "ConradBeatup_Intro",
+      "orderedRowsSha256": "04b89e7b71a9cb5f8cd351f3e717a61b02e002f121e513b393446f81a07232a5",
+      "count": 5,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "ConradBeatup_OutroDirty",
+      "orderedRowsSha256": "30a9540f83cad1d63c5133375a52c5c7c953b9ae6acb0e74380f4080efca513a",
+      "count": 3,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "ConradBeatup_OutroSoapy",
+      "orderedRowsSha256": "b551f044e57cc3c530dd6b11b22b9e21b478cef201c3f46d78e3745cd09867e9",
+      "count": 3,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_1",
+      "orderedRowsSha256": "b19f1b24f2b8c95050ad57f2dc961332b146a7ac67f458467e3b4807449c8240",
+      "count": 7,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_1_Cum",
+      "orderedRowsSha256": "95d3e0dc3b7090252216d3092024b6efd42cadb53679005bb9868a24b58d8e7e",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_1_JerkOff_Start",
+      "orderedRowsSha256": "1cbc3a8b7b32ae357575303cb50195b0a1afe553acb7c9a25674307b9b5fd785",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_2",
+      "orderedRowsSha256": "0bc524110e3f068321dd7f0e6639f8c8f0968da55895a1c95e25e8e9c56dacce",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_3_PhoneTutorial",
+      "orderedRowsSha256": "f77cf22bd18be9a30ea06b7221ae6481134f8e7f3b6c6b7a9f7108e77e0f7a8a",
+      "count": 6,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_4_Conrad_Romanced",
+      "orderedRowsSha256": "695bd88d7359b4dfc05dce676b7870df0cba722deac92b2c00f6aacb64a1ad7f",
+      "count": 11,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_4_Cum",
+      "orderedRowsSha256": "dc5643593602ce00ea99809da45d1427e330289583779cb100ed140228a9cc53",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_4_JerkOff_Start",
+      "orderedRowsSha256": "3442ffd8b2bc50803c92208d3d3956daeea1676428ed4327275c2f08057e316e",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_4_Mount_Finish",
+      "orderedRowsSha256": "9d182e350a01cdbcfed8bf8371c6c90d24cc1009b35d4df6d7cf33509dce7645",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_4_Mount_Start",
+      "orderedRowsSha256": "60f45c68d410adfea6ae5a3660ed8a386e5ba735ea8a380b4e1c5d52911bf5d8",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_4_Ryan_Conrad_Romanced",
+      "orderedRowsSha256": "95251d6ddb0cb37cbb9d3765e9c6b945569ade9ea2f2177cbc146bc2770f1b9f",
+      "count": 14,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_5_Cum",
+      "orderedRowsSha256": "c2d782d81ac308fdfdea8a65b68cda1d7589ef0a1d72215f66e5b80161a8590a",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_5_JerkOff_Start",
+      "orderedRowsSha256": "928ac7a5e9cfe58b6436a19581c4f0ce4925d75a5663b9da45831b7664ad5a03",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_5_Mount_Finish",
+      "orderedRowsSha256": "255c8b96fc98d83af0defdba073d02c889d43854ea7b7a644c8c3029c4bb996b",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_5_Mount_Start",
+      "orderedRowsSha256": "f1d4fb3de684f40a126eb163110b634c4866e350bda77a52967f3b98a362bc1c",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_5_intro_conrad_romanced",
+      "orderedRowsSha256": "62f93f5434f299cbc88fc25bf44ecdaab83795af7709d744c07e030636934db2",
+      "count": 18,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_5_intro_ryan_conrad_romanced",
+      "orderedRowsSha256": "81e51c077299aa3c33a94a6696289ebc69e141431b442673953f58ff27578575",
+      "count": 14,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_5_intro_ryan_romanced",
+      "orderedRowsSha256": "6dfa2ddd0dcec7b3f5abf095ae1e9b3a5c2cfec56701165654897e0658d06169",
+      "count": 13,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_5_outro_conrad_romanced",
+      "orderedRowsSha256": "b35357b51338e34a1af32e52d65c09e92abd0bd7b1bd7a4c059cd2888e916a85",
+      "count": 9,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_5_outro_ryan_conrad_romanced",
+      "orderedRowsSha256": "a00e79f58b179fe7602fd3828e8eead79e6094bcb5bd44b8cda010d8f578d159",
+      "count": 9,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_5_outro_ryan_romanced",
+      "orderedRowsSha256": "cdda3898b2db6a8a6d77da07632ac35eef5ec91734217d69a2ee34a9c5b1383d",
+      "count": 14,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_5_required_conrad_romanced",
+      "orderedRowsSha256": "2f946da0cbbc4642e4c289ba266fe75e7f2f63c563c1d224047f0f96c732d3cc",
+      "count": 14,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_5_required_ryan_conrad_romanced",
+      "orderedRowsSha256": "cd87a8b1b75f070d41f7e839d5602aaf1902e41a0a3a8cc9a19be6bf28de0f00",
+      "count": 13,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_5_required_ryan_romanced",
+      "orderedRowsSha256": "24a8a6df3f9c3749afd75dd4f48b8f6a01e657a20539e0751aa6cfe642f3da35",
+      "count": 16,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Idle1",
+      "orderedRowsSha256": "b30e0b2225108201d5d9256d248e6e6c76c25adec92c0ecd55b7354edd256567",
+      "count": 5,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Intro",
+      "orderedRowsSha256": "76e1885c5616eac0c64e8709e16e0052cebcfd2903a28c33afaf775d241d58a8",
+      "count": 5,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Intro_1",
+      "orderedRowsSha256": "8d5c5c35a7f2454176778d652b2115c0d0683066291e9ffd6c01b1d24614fc99",
+      "count": 5,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Intro_2",
+      "orderedRowsSha256": "038c0f9af21414b6ae2981da095f71b5bed5ef856dbc3fec55494b375238bdce",
+      "count": 10,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Intro_3",
+      "orderedRowsSha256": "12b2913b5f20787742898fe189e5dcea00cd63da8a5fe9831e7f5b4bec1654fd",
+      "count": 18,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Intro_4",
+      "orderedRowsSha256": "3ce16bfcff06090ce46f0f7b60edd8239fe46382b727d2b809a0e7931bee7c42",
+      "count": 54,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Intro_5",
+      "orderedRowsSha256": "ab23c35628d2f96b822ec9cf77d0973483129e55c6b61b20a15bb066358223b9",
+      "count": 5,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Outro",
+      "orderedRowsSha256": "859434f4636918183f50ada329eeb63140c25e341c8c0810f212472d2d965a22",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_OutroDirty",
+      "orderedRowsSha256": "4b75b0feac3c2e2e76b744518b51d176884d96bb36379dda76b6fa5741943625",
+      "count": 3,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_OutroSoapy",
+      "orderedRowsSha256": "c9999b6070df3536e91a169e18c105d0653cccaaebbfa195320c3bb1b3a27231",
+      "count": 3,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Outro_1",
+      "orderedRowsSha256": "4ba686e8bda7e83e2b958f105394a5e4896537b01c02f1f055d6d0a73af6e091",
+      "count": 12,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Outro_2",
+      "orderedRowsSha256": "f07dea0fedfee337de87b157acfd35a6972aa3ab798f3f459e1f13c252e1f59d",
+      "count": 13,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Outro_3",
+      "orderedRowsSha256": "3c4d4480c660bbf963bff99cd8a6a8c1ad5d253e18c951756870e14dc5872957",
+      "count": 38,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Outro_4",
+      "orderedRowsSha256": "2de008eafcea88e0e0fe315fe6321761eb4d1cbf7e67b26d998c1fa5badbaf59",
+      "count": 6,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Outro_4_Conrad_Romanced",
+      "orderedRowsSha256": "cc20f2cc17cd2162eba335fb096ceed256180345d5e38a83da37d7e81595be16",
+      "count": 18,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Outro_4_Ryan_Conrad_Romanced",
+      "orderedRowsSha256": "ae3b3d91763ac36e30df4426effbcba37544cd548dadb0cf87bc63e3a8d0fd97",
+      "count": 22,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Outro_4_Ryan_Romanced",
+      "orderedRowsSha256": "513374f49be9812ac7635e03c75a5a04ee4ba98d71c7d1de9f3991f7a973698d",
+      "count": 10,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_Ryan_Romanced",
+      "orderedRowsSha256": "1b78134400657805213ff9ea3d2767a0cea1ca76df99daab588340c192499022",
+      "count": 16,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_SexScene",
+      "orderedRowsSha256": "7d38ab6b046ed4496102bc97ef00754067cf4ddd386d9daf1f713506278c8daf",
+      "count": 3,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_SexScene_Cum",
+      "orderedRowsSha256": "28561e16a60b55895b83e0d77f0e5d23e9b8cc069308d19e487e823fba67ed17",
+      "count": 11,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_SexScene_Loop",
+      "orderedRowsSha256": "279ae0dfe720f62e674773f3333d98a20642aa8928c1de5d7d6578ed69c4d5f5",
+      "count": 4,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_finished_jerkoff_3",
+      "orderedRowsSha256": "3251dcc3eb5bf5ea39d8282816f524f42c634c9bae5fac5f8d5d40d3de818e7a",
+      "count": 15,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_finished_mount_3",
+      "orderedRowsSha256": "f27e8fdf0ed7a6a1ebe899511eb1da5e00d7cb8bac124e4d799fb7a544925ac7",
+      "count": 16,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_idle_3_1",
+      "orderedRowsSha256": "e70f4c18b2d5a14c45f59698727f47b38c68d50633c4f9becc01ccf690dd0c37",
+      "count": 3,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_idle_3_2",
+      "orderedRowsSha256": "6cd94ae5bd207be2262a95b9563c74c4332f68432634ab90e24b1b82df5f3704",
+      "count": 3,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_placed_mount_3",
+      "orderedRowsSha256": "21b8ce242ce5d79c2fc998c002619af99547b38a89d15f6cb6e1419d153c6b0d",
+      "count": 12,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_required_1",
+      "orderedRowsSha256": "5511c0d6f6b153618c23bc4347b4f5e553ba878654e7b3aedd7837e33d403156",
+      "count": 17,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_required_2",
+      "orderedRowsSha256": "c0ca12f0eb6b38d6baf8b637285de0df9ba44c5e3cfef15c8a57760aa9a06885",
+      "count": 35,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_required_4",
+      "orderedRowsSha256": "5b404c5cfd70fe1faca973a78a252aaababfdc49171bdcbd8973ff59d1bcbdc2",
+      "count": 7,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Conrad_started_jerkoff_3",
+      "orderedRowsSha256": "e1a264d7bb897bbd4371dae8ff1f11cc9b9a1306a34939d857dcde283cd04c09",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "DragonAlmostClean",
+      "orderedRowsSha256": "88eb5691738478cf142f9a705c60d8607f0777c852c6fef8f5e3f993473da7e5",
+      "count": 5,
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-anonymous-dragon-speaker",
+        "dnw-dragon",
+        "dnw-player",
+        "dnw-kobold",
+        "dnw-dragon-washer",
+        "dnw-wash"
+      ],
+      "sourceIds": [
+        "yarn:line:7d791906",
+        "yarn:line:ec64a696",
+        "yarn:line:7a54a1e1",
+        "yarn:line:1dbf50b3",
+        "yarn:line:8b8f57c4"
+      ],
+      "referents": "The customer speaks of being dirty and requests a further check. The player chooses a reply; identity, gender and pronouns of the customer are not established. Neither choice fixes player gender. Cleaning is the service, not the named establishment.",
+      "layer1": "Bound source-role and concept read: no change to role, player, dragon, kobold, washer or wash fields established.",
+      "layer2": "Separate target-field and referent read: keep both people neutral; the one-of-four role wording does not identify the four customers as the same individual.",
+      "receipt": "glossary-review-resume.md#new-anonymous-role-and-related-closure",
+      "layerIndependence": "same author, not independent"
+    },
+    {
+      "group": "DragonAnnoyedByBuzzing",
+      "orderedRowsSha256": "10aa13f30cfd7d867c534271699ce9e7d9986ffb101b029bfefb4c5161d1bd1d",
+      "count": 3,
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-anonymous-dragon-speaker",
+        "dnw-dragon",
+        "dnw-player",
+        "dnw-kobold",
+        "dnw-dragon-washer",
+        "dnw-wash"
+      ],
+      "sourceIds": [
+        "yarn:line:b965b4dd",
+        "yarn:line:2f55b3aa",
+        "yarn:line:9504ba33"
+      ],
+      "referents": "Customer asks to stop buzzing and indicates the job is not finished; player response options do not establish either person’s gender or identity. The work in progress is a service use in context.",
+      "layer1": "Bound source-role and concept read: no demonstrated entry mismatch.",
+      "layer2": "Separate target-field and referent read: maintain neutral customer and player references; do not identify this customer with another anonymous scene.",
+      "receipt": "glossary-review-resume.md#new-anonymous-role-and-related-closure",
+      "layerIndependence": "same author, not independent"
+    },
+    {
+      "group": "DragonColdBalls",
+      "orderedRowsSha256": "b818045d5abea1b2ac29c4fed18074d8074b5b3d92bbd0fc67b04068bd13ceba",
+      "count": 4,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "DragonConfusedAboutDismissal",
+      "orderedRowsSha256": "b24587c2a6c51e54fa41ee70b1ce3412679531223fb45b792e8e702cc53cb7df",
+      "count": 7,
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-anonymous-dragon-speaker",
+        "dnw-dragon",
+        "dnw-player",
+        "dnw-kobold",
+        "dnw-dragon-washer",
+        "dnw-wash"
+      ],
+      "sourceIds": [
+        "yarn:line:63926ecd",
+        "yarn:line:f28fd15d",
+        "yarn:line:64bfd62a",
+        "yarn:line:4116f001",
+        "yarn:line:d726f776",
+        "yarn:line:fb47f998",
+        "yarn:line:6d77feef"
+      ],
+      "referents": "Customer notices missed spots; player has two replies about the button. In the final line “you” addresses the player, and work remains incomplete. Identity and gender of both people remain unestablished.",
+      "layer1": "Bound source-role and concept read: no demonstrated entry mismatch; the incomplete cleaning is the service.",
+      "layer2": "Separate target-field and referent read: the one-of-four anonymous role does not assert a shared identity, and “you” does not establish player gender.",
+      "receipt": "glossary-review-resume.md#new-anonymous-role-and-related-closure",
+      "layerIndependence": "same author, not independent"
+    },
+    {
+      "group": "DragonSatisfiedAndLeaves",
+      "orderedRowsSha256": "2bc313ff2d48bddbf35e6ba2b61a2b695aa7b03f51edaf3c11457f49cac2e50d",
+      "count": 5,
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-anonymous-dragon-speaker",
+        "dnw-dragon",
+        "dnw-player",
+        "dnw-kobold",
+        "dnw-dragon-washer",
+        "dnw-wash"
+      ],
+      "sourceIds": [
+        "yarn:line:f1946aab",
+        "yarn:line:67a46ddc",
+        "yarn:line:c4310942",
+        "yarn:line:52010e35",
+        "yarn:line:e85007ac"
+      ],
+      "referents": "Customer thanks the player for cleaning and asks about later socializing. Either player response is affirmative. The customer and player are not assigned gender or an identity beyond the routed roles.",
+      "layer1": "Bound source-role and concept read: cleaning is the service and no glossary correction established.",
+      "layer2": "Separate target-field and referent read: preserve neutral references and do not assume this customer is another anonymous speaker.",
+      "receipt": "glossary-review-resume.md#new-anonymous-role-and-related-closure",
+      "layerIndependence": "same author, not independent"
+    },
+    {
+      "group": "ErrorHasOccurred",
+      "orderedRowsSha256": "146598c4954e2a7810a5b170ba49e9cd42c6476aabb9aa08909b78ce9e84b3b8",
+      "count": 3,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Mount_Alexander_2_6",
+      "orderedRowsSha256": "e72fa15baa7c40b8bd1b00d69b9c34f6937e2ab6523029b52520e9e29460b495",
+      "count": 10,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanDate_1",
+      "orderedRowsSha256": "4caa25f8cc9062d3cac7377e0cffc8d12371ec1bed087ca75eea32b3b9f96e1e",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanDate_2",
+      "orderedRowsSha256": "1a19200730eb69a012b58b2afa82b3a43abdde64448c4cbacf5f0cbf69547c9b",
+      "count": 5,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanDate_3",
+      "orderedRowsSha256": "c0674cb122b4bc581251891731751a4f373ea7429fd7e82f7fb9cced1e537bfe",
+      "count": 5,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanDate_Idle1",
+      "orderedRowsSha256": "689e38f15f2e88854d2caf1fa281c93f3e16a007468590f5d90be9eeb0346711",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanDate_Intro",
+      "orderedRowsSha256": "8ea3f44056aeed20f00bec8ee80b10b5cf679e513a530aaa2ae224f2234e873a",
+      "count": 6,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanDate_Outro",
+      "orderedRowsSha256": "14d92bef7089a78762e051fe5593829d5e94f861f670c2c33b472aee02354220",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanExploded_Intro",
+      "orderedRowsSha256": "2d52073edb2d94c1591b6dc3122179947ce0ca52ea727d1cec315d3c0677aeb5",
+      "count": 12,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanExploded_Outro",
+      "orderedRowsSha256": "51b2cde75ee0b3fcf4dcc7ee5041c6e86662f13687f46f03e9d9358122126f5f",
+      "count": 3,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanExploded_OutroDirty",
+      "orderedRowsSha256": "0394b02d0cef76c8719da5a3cd4a44495a490a99e868f64fa51588cdb95c5462",
+      "count": 5,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanExploded_OutroSoapy",
+      "orderedRowsSha256": "c93698104379fadbfc5f008576f76db8871c809f9778e7cd44fbf07f0adc9127",
+      "count": 5,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Dirty",
+      "orderedRowsSha256": "605a3c3c846748bf95dc9b5b51e86f22353178acef347c62e82c9caa3d618380",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Idle1",
+      "orderedRowsSha256": "cd0e99ec60163eda1a36ab76122ca1eeb6403636b988ef4c11c84a17f9b6403e",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Idle2",
+      "orderedRowsSha256": "eecbed44a4888ad713f490a41fa180437fd74a639eb4af602965ea4cf89b2cf3",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Idle3",
+      "orderedRowsSha256": "3a82288f567a00fa550c95229b17d06d4fc7659fa2ef163348b43e1fb074b688",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Idle4",
+      "orderedRowsSha256": "1d2626a8e00886c171a539bd97d81454a11d998fc5b4d11968ff6ac5d6a93ab8",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Idle5",
+      "orderedRowsSha256": "e2c2be246c0f97abfe346d5ddf93304fd5a53fb641b40d7320fe40674dfdbd6d",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Idle7",
+      "orderedRowsSha256": "4523f358c586f5ec98f2663985dace7eefdb9dd4d003f3c373a0ecca40068091",
+      "count": 3,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Idle8",
+      "orderedRowsSha256": "139ce807430f1b868f33cbc545cda9e9b9aab6a74257a09f91d0072cb9ed429f",
+      "count": 3,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Intro",
+      "orderedRowsSha256": "8c88158dd1533447805686145af26456cb9bb88ab0364faccbcf7a3b3dee95d6",
+      "count": 13,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Nag1",
+      "orderedRowsSha256": "854ab7a8aa2d780fcee23b7b446c5a585e66cd1a0a7919c9ca2638a9c07c1c53",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Nag2",
+      "orderedRowsSha256": "0c26654e5f522c4121ad61d0a4143be2562e00602d881c8813d854a829942904",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Nag3",
+      "orderedRowsSha256": "4049ea598618ba90eee51137db9f061569ade07b09a33aa9bd55aba827c98876",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_NaughtyTouch",
+      "orderedRowsSha256": "7a80895db17ce0d4348cf90dc50f7931d032ff3f25db6f6f3aa9d9d2407db696",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Outro",
+      "orderedRowsSha256": "c8032a9e8029c257b028191b622386408b342739bbce3395c3223bce1d11924a",
+      "count": 10,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_SmallTalk",
+      "orderedRowsSha256": "edc35856793f91bb895d0574774b2c4f4bb8533cbcd6f8e4979c5afc4dce71bb",
+      "count": 7,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "RyanMuddy_Soapy",
+      "orderedRowsSha256": "7624e767d2f15cb8bdaef96fb58a200dcb6637917cb18321424a2ce62f46f8e4",
+      "count": 3,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_1_Outro",
+      "orderedRowsSha256": "2da15609d9cecd86d3869cdab5c00791e370c2bdfa92dcceb6ed0170691a1148",
+      "count": 12,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_1_PhoneTutorial",
+      "orderedRowsSha256": "bd46a0f6251eaef692855323bb4bb0292a16ec181f56aa5c4cce77857ce2fc35",
+      "count": 15,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_1_intro",
+      "orderedRowsSha256": "3cfab756ec218c0be2b774f23233298eba6272c4a4f5d9285b103be27eddf721",
+      "count": 17,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_1_nag",
+      "orderedRowsSha256": "3da78ba017df2d75ad9cd155aaa2cc21ef7908a19186693c484b24e91984a34c",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_1_required",
+      "orderedRowsSha256": "bebfa61fc08f35ff73377024d2af73f42e1bbb8fdde5e85bf6288efd9eaecec0",
+      "count": 9,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_2_Outro",
+      "orderedRowsSha256": "ce53357ab09b94af3cbbef8a53a8ab9b08a8990450df6d96a9956fa87f7194d7",
+      "count": 38,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_2_intro",
+      "orderedRowsSha256": "acfd43374d57e580a4f35ed14b4518d1c0dcbe33137cd8304aa3368b5bf71f27",
+      "count": 20,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_2_required",
+      "orderedRowsSha256": "6451cc1db3b541eb1bc660f7d62fa29740eba2c0a60f8420328d54d9ff619931",
+      "count": 23,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_3_Outro",
+      "orderedRowsSha256": "0ffe7ae6e161850e059ac272fa603c470776dec51e09d5a15e00227907e314b6",
+      "count": 16,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_3_intro",
+      "orderedRowsSha256": "1730cd0069791b1ae8155869a2ff6034979067b2fbe22816daff9410654975f9",
+      "count": 17,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_3_required",
+      "orderedRowsSha256": "bd3bf2921565f4352ed124f4d9e798a83bb48d2cab5b182fc798df7019e48438",
+      "count": 17,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_3_wont_use_mount",
+      "orderedRowsSha256": "4d7da95f0bf2db584878fea9979ca6aa949658f5171f3f2604ff2068070f513e",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_4_Cum",
+      "orderedRowsSha256": "99be4e24377c28e03f92b859051961cf1180c341c54da919b4f15d5a836a5e93",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_4_JerkOff_Start",
+      "orderedRowsSha256": "5c47f9c29feb47694b61a978313c6f0126328e7d34ad9c2f78b917c4c2695cb9",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_4_Mount_Finish",
+      "orderedRowsSha256": "8fdeda5272e8170543923de6f7cee393ed2a511802f41c598e8d5f517b3c2ef1",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_4_Mount_Start",
+      "orderedRowsSha256": "79ca02f5e2afc88efb62a4ca4af14dabfad983c5be50e2be06479546f02ed980",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_4_intro",
+      "orderedRowsSha256": "9b5428feec0a1a9deda6d9c69f36ae71d7ae05f244fda6f365ae45dbda5dc699",
+      "count": 11,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_5_Cum",
+      "orderedRowsSha256": "50717a9db10d644fcebe689a3b5aeee5756abda5a00f334b3cce384b3b61279f",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_5_JerkOff_Start",
+      "orderedRowsSha256": "5bdf721bde806b1727ef3a69e8fca7682baaf72db8192813dbe08df6f390314a",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_5_Mount_Finish",
+      "orderedRowsSha256": "d04c7ff56584e1a1360d595b166d3c75be201e182547a1f9cda22ef31253510f",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_5_Mount_Start",
+      "orderedRowsSha256": "19128891611c8e169ae7d6a1523801600bbedd6002ac8202d1945c11488cd04d",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_5_Outro_conrad_romanced",
+      "orderedRowsSha256": "ca518525a9f5b60514cad6c97e91129939fcdfb9ff7c4630c4ba9c27a7e300c5",
+      "count": 14,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_5_Outro_ryan_conrad_romanced",
+      "orderedRowsSha256": "6f209bc67840cee931440ac681263a6f1c44482eeff18abd9818d6d66d91956a",
+      "count": 15,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_5_Outro_ryan_romanced",
+      "orderedRowsSha256": "7938fe4e32d5f39b4e931755eb4a6930c092dfe7943abaf285957a44cf0b0ffa",
+      "count": 13,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_5_Required_conrad_romanced",
+      "orderedRowsSha256": "aa39cfb79e98755c34ce7c09c0690edcdb593cdfb853eaadf159460bd7c9e995",
+      "count": 19,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_5_Required_ryan_conrad_romanced",
+      "orderedRowsSha256": "fda7123bd9ae84334eeb4bd5f6606d0107e3025a28c711e93968fdb78cd22da7",
+      "count": 20,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_5_Required_ryan_romanced",
+      "orderedRowsSha256": "0e4b718dfddc6832a343c17f733e1ae0de08cc39289dc7755693893cd9d95fa6",
+      "count": 45,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_5_intro",
+      "orderedRowsSha256": "fed0216442b401306bfa55fccba91c8b90d747f65f35979029a8cd8268551fa3",
+      "count": 45,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_5_intro_ryan_romanced",
+      "orderedRowsSha256": "626bff861409108ce39ae05fe9cf43c5456fbe7bc96419b0d17b402738d28682",
+      "count": 6,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_Conrad_SexScene",
+      "orderedRowsSha256": "73f6ccf52d122ba25a18273c259ba801e0bcdf8bfa519a9d737397f63c663f26",
+      "count": 4,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_Conrad_SexScene_Cum",
+      "orderedRowsSha256": "e753a1e5d89290a9efdb38809714d88e5fdf5649ca3ef35fe9dec68274f64fc8",
+      "count": 10,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_Conrad_SexScene_Loop",
+      "orderedRowsSha256": "88dfae54f1adb305ca95cccbc66e596e02af2fc6100799ec1e4e47ad215af982",
+      "count": 8,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_SexScene",
+      "orderedRowsSha256": "f2feee0061b9a483210a98cb0a2780ce0f03379283b6d7d2ccc91f6b8c4bb595",
+      "count": 4,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_SexScene_Cum",
+      "orderedRowsSha256": "31cf94fbf5a1d85f63c07ba0b746ce0ede4c08e47e16ef36705ab00896bcf7ee",
+      "count": 14,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_SexScene_Loop",
+      "orderedRowsSha256": "b1bed497f16f9c0826b1ebc522a2c430778ef3b58b3ca39456491c40efd846ee",
+      "count": 4,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_egg_dialog",
+      "orderedRowsSha256": "cf306a97ea8a15306966f3818183b809b95a3b9bdab9ea9d1f3df8ca3e028465",
+      "count": 9,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_grab_basket",
+      "orderedRowsSha256": "e18d083c0aa522f7a424fc00a5d8c7f6499b376625bf5c1e94670d48ead3ed4c",
+      "count": 19,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_grapes_dialog",
+      "orderedRowsSha256": "96238cb0716f2c9979678c0fb58a003b512dc2ed57674736951e32f55b1ce12c",
+      "count": 20,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_ham_dialog",
+      "orderedRowsSha256": "c563468a8073d7e41ff5fffa7d4d353ed29bdad2e0a1ab796bd3f4358805e432",
+      "count": 12,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Ryan_melon_dialog",
+      "orderedRowsSha256": "cf33f1da5920700eb39b17fea6ffde1c61cef25022ba3957bec0ccb5e69c86ea",
+      "count": 18,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Start",
+      "orderedRowsSha256": "77c2bab95ec1c94a9e25388add0b1f38fff57ed2d650bde1c409f4d2fbfd5526",
+      "count": 24,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "alexander_jerk_off_no",
+      "orderedRowsSha256": "1e11b9cded6de99692e279a0ab285a217c5495230b264fcba944e150dbdd787b",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "alexander_mount_no",
+      "orderedRowsSha256": "2fa2ff2baa891c8ac325f13b756cc19ac0b3c9538c7b5024251d6947f0157b21",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "conrad_jerk_off_no",
+      "orderedRowsSha256": "4e0804a6ddeb76c46bb0e98b06de61004d055987cef20dd1dc3c19df583b348b",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "conrad_mount_no",
+      "orderedRowsSha256": "76e58635c6bc53ee2bb3b843308f4fa589503957ef921cdf19a3522943ad3cdd",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "ryan_food_dialogue",
+      "orderedRowsSha256": "e5c95cbd659b423e9d5d7eecdef0e7270429417a71e2ebd9952eadf206bf4fc2",
+      "count": 111,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "ryan_jerk_off_no",
+      "orderedRowsSha256": "34a8bd5cddad27ef9ccbb329f740fe998fbb222bc65bd9ef985c63bd8410092c",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "ryan_mount_no",
+      "orderedRowsSha256": "5d4ef51f5d85b57b9970da5a5ec36f48f0fc48e452fc1b98de96656f5271a946",
+      "count": 1,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "UI/level0",
+      "orderedRowsSha256": "2903aedebf265ac0e12487f4b907cbafbf6f17b022e20efa1c6a8c8cac2c1bd5",
+      "count": 5,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "UI/level1",
+      "orderedRowsSha256": "a444c1f7d65d034903fb516e32fadf1bddbaae46fde6fd3de1fa0ad4c5087d0c",
+      "count": 11,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "UI/level2",
+      "orderedRowsSha256": "97f1296569519db8d340401ab2ef5693595e6a0b397ccae5b71b1e82d81ed49d",
+      "count": 42,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "UI/level3",
+      "orderedRowsSha256": "563b7ca82f127f6580d0c4750381af0a9e7926184c4e62fa34f14e2b561723ed",
+      "count": 6,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "UI/level4",
+      "orderedRowsSha256": "2e45ad227e9c5f8cf097d0b71d9a8d58dbbed5adf4691a5318336d96e901704f",
+      "count": 6,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "UI/level5",
+      "orderedRowsSha256": "56fc06803543d4e66c0f27443ca9781f2957e2fb3aae690022a8a24313aaeb6e",
+      "count": 6,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "UI/level6",
+      "orderedRowsSha256": "553ac99143411953afafaa47f0d79fb660d7b7c7506ad90dd31624f668955458",
+      "count": 6,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Settings",
+      "orderedRowsSha256": "6734a36270d66c171e6ad0d8c87783d6454da826c67ff4a5bc384c01e6616051",
+      "count": 37,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Managed display",
+      "orderedRowsSha256": "f3ff6ae6d0b8ec502ef4b0b7f25a3a1bb22b3bf0ca5f9e133d27bf879f1e1f68",
+      "count": 2,
+      "status": "pending-semantic-union"
+    },
+    {
+      "group": "Speaker labels",
+      "orderedRowsSha256": "7144f55bacbd488d7db762c2322a3e94447d68e50bb0456e38e53a755b14ff0e",
+      "count": 2,
+      "status": "pending-semantic-union"
+    }
+  ]
+}
