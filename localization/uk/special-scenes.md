@@ -463,3 +463,24 @@ table text, metadata and compiled programs are exact. Both fonts
 contain all 93 display code points. Verified receipts are under
 `localization/work/uk-ordinary-10-20261110.e1cKEg/`.
 Live scene checks and independent editorial review remain pending.
+
+## Eleventh ordinary batch
+
+Alexander's third visit and early wash scenes now cover 97 IDs
+across 12 nodes. The draft adds 94 values and reuses three existing
+special-scene values. All 1,062 earlier values are exact. The
+1,156-value draft SHA-256 is
+`abb6a59f128c50589c1b1083ffadb8f2435cb867b82153642f2de6c534c901e6`.
+
+The ink excuse retains both emphasized clues and the reply that
+quotes them. The player's questions, Alexander's request to be
+asked something personal, and the farewell remain distinct. The
+privacy scene retains all three college answers and the glossary's
+full college name.
+
+Each diagnostic package changed exactly 93 Yarn values. The one
+authored pause, other table text, metadata and compiled programs
+are exact. Both packaged fonts cover all 94 display code points.
+Verified receipts are under
+`localization/work/uk-ordinary-11-20261110.oG6iEq/`.
+Live scene checks and independent editorial review remain pending.
