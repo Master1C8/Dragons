@@ -1,0 +1,9 @@
+{
+  "locale": "hi",
+  "translationSha256": "58322c962c04c92d7e6d2940d3588ac963fe6bf361b719d2fe0d49abcace6da0",
+  "selfEditedRows": 1947,
+  "scope": "authored-text-only",
+  "findings": "Author completed one source-to-target semantic self-edit, applied objective wording and syntax corrections, and rechecked changed context. The complete source-bound static verifier passed for macOS and Windows dialogue bindings.",
+  "status": "author-self-edited-static-verified",
+  "limitations": "Author self-edit only; independent editorial and visual/runtime verification were not performed. Display fixes and packages are deferred."
+}
