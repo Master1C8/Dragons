@@ -341,3 +341,9 @@ Author self-reviewed 42 IDs in the three `Ryan_5_Outro` relationship branches, p
 Author self-reviewed the remaining 42 extracted `UI/level2` IDs, including sound attributions, credit roles, pause controls and the placeholder ending text. Newlines and distinct Windows-only controls are retained; no texture content was modified. This is author self-review, not independent audit.
 
 `translation.json` now has **1,331 / 1,947 IDs**, SHA-256 `1f9468b162c18a8331e93b83c487985ec52b250c54226dda6198e2de7143f5f3`. `resume-01/add-ui-level-two.py` and `resume-01/ui-level-two-map.py` validate the preceding draft and paired readers; macOS accepts 1,327 and Windows 1,325 bindings. The complete guard reports 616 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
+
+### Remaining extracted interface text — continuation
+
+Author self-reviewed 37 IDs across `UI/level0`, `UI/level1`, and levels 3–6, including status labels, loading and pause controls. These are extracted text objects; no texture content was modified. This is author self-review, not independent audit. Fit of the authored strings remains subject to final visual testing.
+
+`translation.json` now has **1,368 / 1,947 IDs**, SHA-256 `bbc9ad8a1e42409c884511650ad6add366638cf1fb1b1a26107ffedaa4c7b81d`. `resume-01/add-ui-other-levels.py` and `resume-01/ui-other-levels-map.py` validate the preceding draft and paired readers; macOS accepts 1,344 and Windows 1,362 bindings. The complete guard reports 579 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue translating remaining English-source groups.
