@@ -2400,7 +2400,7 @@
         "yarn:line:d1755010",
         "yarn:line:72e0348e"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Ryan_2_intro",
@@ -2428,7 +2428,7 @@
         "yarn:line:203cc3d2",
         "yarn:line:b60cc4a5"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Ryan_2_required",
@@ -2459,7 +2459,7 @@
         "yarn:line:286fec49",
         "yarn:line:040ee2a7"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Ryan_3_Outro",
