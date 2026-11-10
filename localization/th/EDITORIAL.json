@@ -1,0 +1,13 @@
+{
+  "locale": "th",
+  "translationSha256": "9a0aa5c20f282c735de7666dc3373084346052ba9b343d3e2d59fbbd1b556403",
+  "selfEditedRows": 1947,
+  "scope": "authored-text-only",
+  "review": "Author completed one paired English-to-Thai semantic self-edit; 12 objective corrections and one source-bound delimiter correction were applied and changed context rechecked.",
+  "staticVerification": "Passed source-bound complete verifier for macOS and Windows dialogue bindings.",
+  "findings": "No unresolved findings from the author pass. Film-title separator uses a hyphen to preserve the source speaker-delimiter structure.",
+  "independentEditorial": "Not performed.",
+  "visualRuntimeVerification": "Not performed; renderer gate remains open.",
+  "displayFixes": "Deferred.",
+  "packages": "Deferred."
+}
