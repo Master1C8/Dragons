@@ -29,3 +29,7 @@ Source: paired English worklist and `localization/evidence/special-scenes-ryan-q
 | `yarn:line:040ee2a7` | me too. | eu também. |
 
 Preserve the original destinations, commands, the shared continuation and the ordered italic tags. Check both initial choices and both later responses in each localized build; reachability, fit and complete source coverage remain unverified.
+
+## Author decision after source-gate reconciliation
+
+The author accepts the question-and-answer wording: `Posso fazer uma pergunta?` supports the playful `Já está fazendo`, while `Claro` takes the direct route and the sensitive relationship discussion remains distinct. Ryan's `julgado` describes the established male speaker, not the player. All 23 IDs and drafts match both stock-build entries in the paired readback recorded in the checkpoint, with macOS source and ordered tags verified. The paired source registry `localization/evidence/special-scenes-ryan-question-20261107.json` binds original destinations; the per-ID adapter can preserve them and the dialogue commands. Positive scenarios follow each question response and both later supportive responses. Negative scenarios break the question logic, route the direct answer through the apology, swap later replies or assign gender to the player. Actual localized branch execution and fit remain pending; this is author self-review.
