@@ -164,3 +164,11 @@ Findings pending disposition:
 - `yarn:line:116f0e16`: `To chyba już każde miejsce` is awkward for the wash being complete; preserve the sense of having covered every spot.
 
 Cumulative distinct IDs read: 1,366 / 1,947; 581 remain. Author review only; independent acceptance remains pending.
+
+## Alexander personal questions: 77 IDs read
+
+Compared the questions and responses about his teaching, color, size, tasting, the player, happiness and crest against both English builds and Polish. The crest is a family ornament whose cultural and family ties he respects; the explanation preserves its progressively shrinking size tags and pop-culture reference. Source node membership does not prove live option availability or fit, particularly for the long shrinking-text response.
+
+Finding pending disposition: `yarn:line:8ee41fdc` makes the verb for obeying or following attach awkwardly to family and cultural ties; retain the respect he gives them and the exact size markup.
+
+Cumulative distinct IDs read: 1,443 / 1,947; 504 remain. Author review only; independent acceptance remains pending.
