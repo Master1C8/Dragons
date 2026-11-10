@@ -1,0 +1,1693 @@
+{
+  "schema": 1,
+  "inputs": {
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-11/affected-node-map.json": "fa05fdf1a278a9bd88e3c37d13fe974dff910e6a07bfdf252b365ed20873de42",
+    "localization/work/source-inventory-20261107/yarn-instructions-macos.json": "3e0acd1a2f25811e380de5743e0913535470d931301cc9bc40f5a3c897d73e18",
+    "localization/work/source-inventory-20261107/yarn-instructions-windows.json": "13d34e111e48fcd80105f419f1072717ddc11659300474410f52e7839b88522b",
+    "localization/pt-BR/translation.json": "b1e341f5338fc0c81e4af1e968a5b86acf3447330d726489cbc3ee89032b7311",
+    "localization/pt-BR/receipts/author-audit-referent-delta.json": "e6a02080b993b8f69c03c6098fe26f8bc332451b90619367b535f4cec876ce28"
+  },
+  "limitations": "Static initial path only; conditions, selected-state feasibility, later consumers and actual gameplay are not proven. Stops at branch, dispatch, transfer or termination.",
+  "rows": [
+    {
+      "id": "yarn:line:37c9d915",
+      "node": "Alexander_5_required",
+      "platforms": {
+        "macos": {
+          "destination": 31,
+          "steps": [
+            {
+              "index": 31,
+              "opcode": 11
+            },
+            {
+              "index": 32,
+              "opcode": 13
+            },
+            {
+              "index": 33,
+              "opcode": 4
+            },
+            {
+              "index": 34,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:a1f9de62",
+            "source": "Thanks. That's kind of you to say.",
+            "target": {
+              "platforms": {
+                "macos": "Obrigado. É gentil da sua parte dizer isso.",
+                "windows": "Obrigado. É gentil da sua parte dizer isso."
+              }
+            }
+          }
+        },
+        "windows": {
+          "destination": 31,
+          "steps": [
+            {
+              "index": 31,
+              "opcode": 11
+            },
+            {
+              "index": 32,
+              "opcode": 13
+            },
+            {
+              "index": 33,
+              "opcode": 4
+            },
+            {
+              "index": 34,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:a1f9de62",
+            "source": "Thanks. That's kind of your to say.",
+            "target": {
+              "platforms": {
+                "macos": "Obrigado. É gentil da sua parte dizer isso.",
+                "windows": "Obrigado. É gentil da sua parte dizer isso."
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:44701902",
+      "node": "Alexander_5_required",
+      "platforms": {
+        "macos": {
+          "destination": 36,
+          "steps": [
+            {
+              "index": 36,
+              "opcode": 11
+            },
+            {
+              "index": 37,
+              "opcode": 13
+            },
+            {
+              "index": 38,
+              "opcode": 4
+            },
+            {
+              "index": 39,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:d2401e75",
+            "source": "Of course!",
+            "target": "Claro!"
+          }
+        },
+        "windows": {
+          "destination": 36,
+          "steps": [
+            {
+              "index": 36,
+              "opcode": 11
+            },
+            {
+              "index": 37,
+              "opcode": 13
+            },
+            {
+              "index": 38,
+              "opcode": 4
+            },
+            {
+              "index": 39,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:d2401e75",
+            "source": "Of course!",
+            "target": "Claro!"
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:cb847372",
+      "node": "Alexander_5_required",
+      "platforms": {
+        "macos": {
+          "destination": 55,
+          "steps": [
+            {
+              "index": 55,
+              "opcode": 11
+            },
+            {
+              "index": 56,
+              "opcode": 13
+            },
+            {
+              "index": 57,
+              "opcode": 4
+            },
+            {
+              "index": 58,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:71d57aeb",
+            "source": "Thanks. That's kind of you to say.",
+            "target": {
+              "platforms": {
+                "macos": "Obrigado. É gentil da sua parte dizer isso.",
+                "windows": "Obrigado. É gentil da sua parte dizer isso."
+              }
+            }
+          }
+        },
+        "windows": {
+          "destination": 55,
+          "steps": [
+            {
+              "index": 55,
+              "opcode": 11
+            },
+            {
+              "index": 56,
+              "opcode": 13
+            },
+            {
+              "index": 57,
+              "opcode": 4
+            },
+            {
+              "index": 58,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:71d57aeb",
+            "source": "Thanks. That's kind of your to say.",
+            "target": {
+              "platforms": {
+                "macos": "Obrigado. É gentil da sua parte dizer isso.",
+                "windows": "Obrigado. É gentil da sua parte dizer isso."
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:e7e57d9c",
+      "node": "Alexander_5_required",
+      "platforms": {
+        "macos": {
+          "destination": 60,
+          "steps": [
+            {
+              "index": 60,
+              "opcode": 11
+            },
+            {
+              "index": 61,
+              "opcode": 13
+            },
+            {
+              "index": 62,
+              "opcode": 4
+            },
+            {
+              "index": 63,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:76f8c20c",
+            "source": "Of course!",
+            "target": "Claro!"
+          }
+        },
+        "windows": {
+          "destination": 60,
+          "steps": [
+            {
+              "index": 60,
+              "opcode": 11
+            },
+            {
+              "index": 61,
+              "opcode": 13
+            },
+            {
+              "index": 62,
+              "opcode": 4
+            },
+            {
+              "index": 63,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:76f8c20c",
+            "source": "Of course!",
+            "target": "Claro!"
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:41d5085a",
+      "node": "Alexander_SexScene_Cum",
+      "platforms": {
+        "macos": {
+          "destination": 68,
+          "steps": [
+            {
+              "index": 68,
+              "opcode": 11
+            },
+            {
+              "index": 69,
+              "opcode": 1
+            },
+            {
+              "index": 70,
+              "opcode": 1
+            },
+            {
+              "index": 72,
+              "opcode": 4
+            },
+            {
+              "index": 73,
+              "opcode": 4
+            },
+            {
+              "index": 74,
+              "opcode": 4
+            },
+            {
+              "index": 75,
+              "opcode": 4
+            },
+            {
+              "index": 76,
+              "opcode": 4
+            },
+            {
+              "index": 77,
+              "opcode": 4
+            },
+            {
+              "index": 78,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:fb8401c3",
+            "source": "Huff...",
+            "target": "Ufa..."
+          }
+        },
+        "windows": {
+          "destination": 68,
+          "steps": [
+            {
+              "index": 68,
+              "opcode": 11
+            },
+            {
+              "index": 69,
+              "opcode": 1
+            },
+            {
+              "index": 70,
+              "opcode": 1
+            },
+            {
+              "index": 72,
+              "opcode": 4
+            },
+            {
+              "index": 73,
+              "opcode": 4
+            },
+            {
+              "index": 74,
+              "opcode": 4
+            },
+            {
+              "index": 75,
+              "opcode": 4
+            },
+            {
+              "index": 76,
+              "opcode": 4
+            },
+            {
+              "index": 77,
+              "opcode": 4
+            },
+            {
+              "index": 78,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:fb8401c3",
+            "source": "Huff...",
+            "target": "Ufa..."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:d66b9155",
+      "node": "Conrad_5_intro_conrad_romanced",
+      "platforms": {
+        "macos": {
+          "destination": 30,
+          "steps": [
+            {
+              "index": 30,
+              "opcode": 11
+            },
+            {
+              "index": 31,
+              "opcode": 13
+            },
+            {
+              "index": 32,
+              "opcode": 4
+            },
+            {
+              "index": 33,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:405b9622",
+            "source": "I am too.",
+            "target": "Eu também."
+          }
+        },
+        "windows": {
+          "destination": 30,
+          "steps": [
+            {
+              "index": 30,
+              "opcode": 11
+            },
+            {
+              "index": 31,
+              "opcode": 13
+            },
+            {
+              "index": 32,
+              "opcode": 4
+            },
+            {
+              "index": 33,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:405b9622",
+            "source": "I am too.",
+            "target": "Eu também."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:34cf0601",
+      "node": "Conrad_5_intro_ryan_romanced",
+      "platforms": {
+        "macos": {
+          "destination": 38,
+          "steps": [
+            {
+              "index": 38,
+              "opcode": 11
+            },
+            {
+              "index": 39,
+              "opcode": 1
+            },
+            {
+              "index": 42,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:33e2bee6",
+            "source": "That's good to hear.",
+            "target": "Que bom saber."
+          }
+        },
+        "windows": {
+          "destination": 38,
+          "steps": [
+            {
+              "index": 38,
+              "opcode": 11
+            },
+            {
+              "index": 39,
+              "opcode": 1
+            },
+            {
+              "index": 42,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:33e2bee6",
+            "source": "That's good to hear.",
+            "target": "Que bom saber."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:a0479425",
+      "node": "Conrad_5_required_conrad_romanced",
+      "platforms": {
+        "macos": {
+          "destination": 15,
+          "steps": [
+            {
+              "index": 15,
+              "opcode": 11
+            },
+            {
+              "index": 16,
+              "opcode": 13
+            },
+            {
+              "index": 17,
+              "opcode": 4
+            },
+            {
+              "index": 18,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:36779352",
+            "source": "You should be.",
+            "target": "E deve ficar mesmo."
+          }
+        },
+        "windows": {
+          "destination": 15,
+          "steps": [
+            {
+              "index": 15,
+              "opcode": 11
+            },
+            {
+              "index": 16,
+              "opcode": 13
+            },
+            {
+              "index": 17,
+              "opcode": 4
+            },
+            {
+              "index": 18,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:36779352",
+            "source": "You should be.",
+            "target": "E deve ficar mesmo."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:fa293cde",
+      "node": "Conrad_Intro_4",
+      "platforms": {
+        "macos": {
+          "destination": 101,
+          "steps": [
+            {
+              "index": 101,
+              "opcode": 11
+            },
+            {
+              "index": 102,
+              "opcode": 13
+            },
+            {
+              "index": 103,
+              "opcode": 4
+            },
+            {
+              "index": 104,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:40783547",
+            "source": "Berries.",
+            "target": "Frutas vermelhas."
+          }
+        },
+        "windows": {
+          "destination": 101,
+          "steps": [
+            {
+              "index": 101,
+              "opcode": 11
+            },
+            {
+              "index": 102,
+              "opcode": 13
+            },
+            {
+              "index": 103,
+              "opcode": 4
+            },
+            {
+              "index": 104,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:40783547",
+            "source": "Berries.",
+            "target": "Frutas vermelhas."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:cf8c5f37",
+      "node": "Conrad_Intro_4",
+      "platforms": {
+        "macos": {
+          "destination": 115,
+          "steps": [
+            {
+              "index": 115,
+              "opcode": 11
+            },
+            {
+              "index": 116,
+              "opcode": 13
+            },
+            {
+              "index": 117,
+              "opcode": 4
+            },
+            {
+              "index": 118,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:5e91e0a7",
+            "source": "Haha... Yeah. I'm not really used to complimenting.",
+            "target": "Haha... É. Não estou muito acostumado a fazer elogios."
+          }
+        },
+        "windows": {
+          "destination": 115,
+          "steps": [
+            {
+              "index": 115,
+              "opcode": 11
+            },
+            {
+              "index": 116,
+              "opcode": 13
+            },
+            {
+              "index": 117,
+              "opcode": 4
+            },
+            {
+              "index": 118,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:5e91e0a7",
+            "source": "Haha... Yeah. I'm not really used to complimenting.",
+            "target": "Haha... É. Não estou muito acostumado a fazer elogios."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:94fbdbf0",
+      "node": "Conrad_Outro_4_Ryan_Conrad_Romanced",
+      "platforms": {
+        "macos": {
+          "destination": 71,
+          "steps": [
+            {
+              "index": 71,
+              "opcode": 11
+            },
+            {
+              "index": 72,
+              "opcode": 13
+            },
+            {
+              "index": 73,
+              "opcode": 4
+            },
+            {
+              "index": 74,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:02cbdc87",
+            "source": "Thanks, I'm excited too.",
+            "target": "Obrigado, também estou animado."
+          }
+        },
+        "windows": {
+          "destination": 71,
+          "steps": [
+            {
+              "index": 71,
+              "opcode": 11
+            },
+            {
+              "index": 72,
+              "opcode": 13
+            },
+            {
+              "index": 73,
+              "opcode": 4
+            },
+            {
+              "index": 74,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:02cbdc87",
+            "source": "Thanks, I'm excited too.",
+            "target": "Obrigado, também estou animado."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:9addfb4a",
+      "node": "Conrad_SexScene_Cum",
+      "platforms": {
+        "macos": {
+          "destination": 25,
+          "steps": [
+            {
+              "index": 25,
+              "opcode": 11
+            },
+            {
+              "index": 26,
+              "opcode": 1
+            },
+            {
+              "index": 27,
+              "opcode": 1
+            },
+            {
+              "index": 29,
+              "opcode": 13
+            },
+            {
+              "index": 30,
+              "opcode": 8
+            },
+            {
+              "index": 31,
+              "opcode": 8
+            },
+            {
+              "index": 32,
+              "opcode": 12
+            },
+            {
+              "index": 33,
+              "opcode": 10
+            }
+          ],
+          "firstBoundary": {
+            "kind": "control-boundary",
+            "opcode": 10,
+            "index": 33,
+            "operands": [
+              {
+                "field": 1,
+                "wire": 0,
+                "unsigned": 55
+              }
+            ]
+          }
+        },
+        "windows": {
+          "destination": 25,
+          "steps": [
+            {
+              "index": 25,
+              "opcode": 11
+            },
+            {
+              "index": 26,
+              "opcode": 1
+            },
+            {
+              "index": 27,
+              "opcode": 1
+            },
+            {
+              "index": 29,
+              "opcode": 13
+            },
+            {
+              "index": 30,
+              "opcode": 8
+            },
+            {
+              "index": 31,
+              "opcode": 8
+            },
+            {
+              "index": 32,
+              "opcode": 12
+            },
+            {
+              "index": 33,
+              "opcode": 10
+            }
+          ],
+          "firstBoundary": {
+            "kind": "control-boundary",
+            "opcode": 10,
+            "index": 33,
+            "operands": [
+              {
+                "field": 1,
+                "wire": 0,
+                "unsigned": 55
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:a00f681d",
+      "node": "Ryan_5_Outro_ryan_romanced",
+      "platforms": {
+        "macos": {
+          "destination": 38,
+          "steps": [
+            {
+              "index": 38,
+              "opcode": 11
+            },
+            {
+              "index": 39,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:363f6f6a",
+            "source": "I am too.",
+            "target": "Eu também."
+          }
+        },
+        "windows": {
+          "destination": 38,
+          "steps": [
+            {
+              "index": 38,
+              "opcode": 11
+            },
+            {
+              "index": 39,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:363f6f6a",
+            "source": "I am too.",
+            "target": "Eu também."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:c6202cf2",
+      "node": "Ryan_5_Required_ryan_conrad_romanced",
+      "platforms": {
+        "macos": {
+          "destination": 38,
+          "steps": [
+            {
+              "index": 38,
+              "opcode": 11
+            },
+            {
+              "index": 39,
+              "opcode": 1
+            },
+            {
+              "index": 42,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:8a79f72c",
+            "source": "Oh. And one other thing.",
+            "target": "Ah. E mais uma coisa."
+          }
+        },
+        "windows": {
+          "destination": 38,
+          "steps": [
+            {
+              "index": 38,
+              "opcode": 11
+            },
+            {
+              "index": 39,
+              "opcode": 1
+            },
+            {
+              "index": 42,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:8a79f72c",
+            "source": "Oh. And one other thing.",
+            "target": "Ah. E mais uma coisa."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:e91e2041",
+      "node": "Ryan_5_intro",
+      "platforms": {
+        "macos": {
+          "destination": 88,
+          "steps": [
+            {
+              "index": 88,
+              "opcode": 11
+            },
+            {
+              "index": 89,
+              "opcode": 13
+            },
+            {
+              "index": 90,
+              "opcode": 4
+            },
+            {
+              "index": 91,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:82ba64bf",
+            "source": "Oh, sorry-",
+            "target": "Ah, desculpa-"
+          }
+        },
+        "windows": {
+          "destination": 88,
+          "steps": [
+            {
+              "index": 88,
+              "opcode": 11
+            },
+            {
+              "index": 89,
+              "opcode": 13
+            },
+            {
+              "index": 90,
+              "opcode": 4
+            },
+            {
+              "index": 91,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:82ba64bf",
+            "source": "Oh, sorry-",
+            "target": "Ah, desculpa-"
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:601e1b38",
+      "node": "Ryan_5_intro",
+      "platforms": {
+        "macos": {
+          "destination": 146,
+          "steps": [
+            {
+              "index": 146,
+              "opcode": 11
+            },
+            {
+              "index": 147,
+              "opcode": 13
+            },
+            {
+              "index": 148,
+              "opcode": 4
+            },
+            {
+              "index": 149,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:f103a4a8",
+            "source": "Oh yeah?",
+            "target": "Ah, é?"
+          }
+        },
+        "windows": {
+          "destination": 146,
+          "steps": [
+            {
+              "index": 146,
+              "opcode": 11
+            },
+            {
+              "index": 147,
+              "opcode": 13
+            },
+            {
+              "index": 148,
+              "opcode": 4
+            },
+            {
+              "index": 149,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:f103a4a8",
+            "source": "Oh yeah?",
+            "target": "Ah, é?"
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:822c0718",
+      "node": "Ryan_5_intro_ryan_romanced",
+      "platforms": {
+        "macos": {
+          "destination": 12,
+          "steps": [
+            {
+              "index": 12,
+              "opcode": 11
+            },
+            {
+              "index": 13,
+              "opcode": 13
+            },
+            {
+              "index": 14,
+              "opcode": 4
+            },
+            {
+              "index": 15,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:141c006f",
+            "source": "I am too.",
+            "target": "Eu também."
+          }
+        },
+        "windows": {
+          "destination": 12,
+          "steps": [
+            {
+              "index": 12,
+              "opcode": 11
+            },
+            {
+              "index": 13,
+              "opcode": 13
+            },
+            {
+              "index": 14,
+              "opcode": 4
+            },
+            {
+              "index": 15,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:141c006f",
+            "source": "I am too.",
+            "target": "Eu também."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:07e5fc05",
+      "node": "Start",
+      "platforms": {
+        "macos": {
+          "destination": 15,
+          "steps": [
+            {
+              "index": 15,
+              "opcode": 11
+            },
+            {
+              "index": 16,
+              "opcode": 1
+            },
+            {
+              "index": 17,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:bdb4f59c",
+            "source": "Anyway, time to get writing!",
+            "target": "Enfim, hora de escrever!"
+          }
+        },
+        "windows": {
+          "destination": 15,
+          "steps": [
+            {
+              "index": 15,
+              "opcode": 11
+            },
+            {
+              "index": 16,
+              "opcode": 1
+            },
+            {
+              "index": 17,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:bdb4f59c",
+            "source": "Anyway, time to get writing!",
+            "target": "Enfim, hora de escrever!"
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:a6c1f2f4",
+      "node": "ryan_food_dialogue",
+      "platforms": {
+        "macos": {
+          "destination": 38,
+          "steps": [
+            {
+              "index": 38,
+              "opcode": 11
+            },
+            {
+              "index": 39,
+              "opcode": 13
+            },
+            {
+              "index": 40,
+              "opcode": 4
+            },
+            {
+              "index": 41,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:30f1f583",
+            "source": "Thanks!",
+            "target": "Obrigado!"
+          }
+        },
+        "windows": {
+          "destination": 38,
+          "steps": [
+            {
+              "index": 38,
+              "opcode": 11
+            },
+            {
+              "index": 39,
+              "opcode": 13
+            },
+            {
+              "index": 40,
+              "opcode": 4
+            },
+            {
+              "index": 41,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:30f1f583",
+            "source": "Thanks!",
+            "target": "Obrigado!"
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:e6290003",
+      "node": "ryan_food_dialogue",
+      "platforms": {
+        "macos": {
+          "destination": 175,
+          "steps": [
+            {
+              "index": 175,
+              "opcode": 11
+            },
+            {
+              "index": 176,
+              "opcode": 13
+            },
+            {
+              "index": 177,
+              "opcode": 4
+            },
+            {
+              "index": 178,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:7734bf93",
+            "source": "Me too, thanks!",
+            "target": "Eu também, obrigado!"
+          }
+        },
+        "windows": {
+          "destination": 175,
+          "steps": [
+            {
+              "index": 175,
+              "opcode": 11
+            },
+            {
+              "index": 176,
+              "opcode": 13
+            },
+            {
+              "index": 177,
+              "opcode": 4
+            },
+            {
+              "index": 178,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:7734bf93",
+            "source": "Me too, thanks!",
+            "target": "Eu também, obrigado!"
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:b4990e3d",
+      "node": "ryan_food_dialogue",
+      "platforms": {
+        "macos": {
+          "destination": 203,
+          "steps": [
+            {
+              "index": 203,
+              "opcode": 11
+            },
+            {
+              "index": 204,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:0ec807a4",
+            "source": "Really? Aw, That's really sweet.",
+            "target": "Sério? Ah, que coisa mais fofa."
+          }
+        },
+        "windows": {
+          "destination": 203,
+          "steps": [
+            {
+              "index": 203,
+              "opcode": 11
+            },
+            {
+              "index": 204,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:0ec807a4",
+            "source": "Really? Aw, That's really sweet.",
+            "target": "Sério? Ah, que coisa mais fofa."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:cd9b2a8f",
+      "node": "ryan_food_dialogue",
+      "platforms": {
+        "macos": {
+          "destination": 347,
+          "steps": [
+            {
+              "index": 347,
+              "opcode": 11
+            },
+            {
+              "index": 348,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:5bab2df8",
+            "source": "Yeah... I've never gone on a date with a kobold before.",
+            "target": "É... Nunca saí com um kobold antes."
+          }
+        },
+        "windows": {
+          "destination": 347,
+          "steps": [
+            {
+              "index": 347,
+              "opcode": 11
+            },
+            {
+              "index": 348,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:5bab2df8",
+            "source": "Yeah... I've never gone on a date with a kobold before.",
+            "target": "É... Nunca saí com um kobold antes."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:0d20d327",
+      "node": "ryan_food_dialogue",
+      "platforms": {
+        "macos": {
+          "destination": 388,
+          "steps": [
+            {
+              "index": 388,
+              "opcode": 11
+            },
+            {
+              "index": 389,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:9b10d450",
+            "source": "So this Conrad guy, seems like you like him?",
+            "target": "Esse tal de Conrad, parece que você gosta dele?"
+          }
+        },
+        "windows": {
+          "destination": 388,
+          "steps": [
+            {
+              "index": 388,
+              "opcode": 11
+            },
+            {
+              "index": 389,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:9b10d450",
+            "source": "So this Conrad guy, seems like you like him?",
+            "target": "Esse tal de Conrad, parece que você gosta dele?"
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:f83e4966",
+      "node": "ryan_food_dialogue",
+      "platforms": {
+        "macos": {
+          "destination": 330,
+          "steps": [
+            {
+              "index": 330,
+              "opcode": 11
+            },
+            {
+              "index": 331,
+              "opcode": 1
+            },
+            {
+              "index": 334,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:d45f4788",
+            "source": "This was nice...",
+            "target": "Isso foi bom..."
+          }
+        },
+        "windows": {
+          "destination": 330,
+          "steps": [
+            {
+              "index": 330,
+              "opcode": 11
+            },
+            {
+              "index": 331,
+              "opcode": 1
+            },
+            {
+              "index": 334,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:d45f4788",
+            "source": "This was nice...",
+            "target": "Isso foi bom..."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:77ca2316",
+      "node": "ryan_food_dialogue",
+      "platforms": {
+        "macos": {
+          "destination": 344,
+          "steps": [
+            {
+              "index": 344,
+              "opcode": 11
+            },
+            {
+              "index": 345,
+              "opcode": 1
+            },
+            {
+              "index": 346,
+              "opcode": 1
+            },
+            {
+              "index": 444,
+              "opcode": 13
+            },
+            {
+              "index": 445,
+              "opcode": 8
+            },
+            {
+              "index": 446,
+              "opcode": 8
+            },
+            {
+              "index": 447,
+              "opcode": 12
+            },
+            {
+              "index": 448,
+              "opcode": 10
+            }
+          ],
+          "firstBoundary": {
+            "kind": "control-boundary",
+            "opcode": 10,
+            "index": 448,
+            "operands": [
+              {
+                "field": 1,
+                "wire": 0,
+                "unsigned": 451
+              }
+            ]
+          }
+        },
+        "windows": {
+          "destination": 344,
+          "steps": [
+            {
+              "index": 344,
+              "opcode": 11
+            },
+            {
+              "index": 345,
+              "opcode": 1
+            },
+            {
+              "index": 346,
+              "opcode": 1
+            },
+            {
+              "index": 444,
+              "opcode": 13
+            },
+            {
+              "index": 445,
+              "opcode": 8
+            },
+            {
+              "index": 446,
+              "opcode": 8
+            },
+            {
+              "index": 447,
+              "opcode": 12
+            },
+            {
+              "index": 448,
+              "opcode": 10
+            }
+          ],
+          "firstBoundary": {
+            "kind": "control-boundary",
+            "opcode": 10,
+            "index": 448,
+            "operands": [
+              {
+                "field": 1,
+                "wire": 0,
+                "unsigned": 451
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:b05c6259",
+      "node": "ryan_food_dialogue",
+      "platforms": {
+        "macos": {
+          "destination": 382,
+          "steps": [
+            {
+              "index": 382,
+              "opcode": 11
+            },
+            {
+              "index": 383,
+              "opcode": 1
+            },
+            {
+              "index": 386,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:9c3d6cb7",
+            "source": "Okay! I'll see you soon.",
+            "target": "Certo! Até logo."
+          }
+        },
+        "windows": {
+          "destination": 382,
+          "steps": [
+            {
+              "index": 382,
+              "opcode": 11
+            },
+            {
+              "index": 383,
+              "opcode": 1
+            },
+            {
+              "index": 386,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:9c3d6cb7",
+            "source": "Okay! I'll see you soon.",
+            "target": "Certo! Até logo."
+          }
+        }
+      }
+    },
+    {
+      "id": "yarn:line:a40e531c",
+      "node": "ryan_food_dialogue",
+      "platforms": {
+        "macos": {
+          "destination": 434,
+          "steps": [
+            {
+              "index": 434,
+              "opcode": 11
+            },
+            {
+              "index": 435,
+              "opcode": 1
+            },
+            {
+              "index": 438,
+              "opcode": 13
+            },
+            {
+              "index": 439,
+              "opcode": 4
+            },
+            {
+              "index": 440,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:886f5df2",
+            "source": "Okay, I'll see you later!",
+            "target": "Certo, até mais!"
+          }
+        },
+        "windows": {
+          "destination": 434,
+          "steps": [
+            {
+              "index": 434,
+              "opcode": 11
+            },
+            {
+              "index": 435,
+              "opcode": 1
+            },
+            {
+              "index": 438,
+              "opcode": 13
+            },
+            {
+              "index": 439,
+              "opcode": 4
+            },
+            {
+              "index": 440,
+              "opcode": 3
+            }
+          ],
+          "firstBoundary": {
+            "kind": "line",
+            "id": "yarn:line:886f5df2",
+            "source": "Okay, I'll see you later!",
+            "target": "Certo, até mais!"
+          }
+        }
+      }
+    }
+  ]
+}
