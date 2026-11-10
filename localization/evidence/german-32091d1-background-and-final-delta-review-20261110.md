@@ -1,0 +1,13 @@
+# German background runtime and remaining delta review
+
+## Representative game run
+
+The German packages at `32091d1` completed the same isolated Conrad intro on macOS and on the Windows game build under CrossOver. Both runs verified three real choice IDs, two fully revealed body lines at 64 pt and 40 pt, and the stock transition to `WaitingOnBeingWashed`. The revised macOS observer used the already tested ordinary-input waypoint around x=4.10 and z=-9.15, resolving the previous approach timeout. Every window sample showed the game in the background (239 macOS and 386 CrossOver). Both wrappers exited successfully and preserved the original profiles, stock files and test fixtures.
+
+Results and ten unmodified PNGs are under `localization/work/de-32091d1-runtime-20261110.SIKWQZ/`. macOS result SHA-256 `03084ccdfe308cef1766a3eca404822eae3400ac31be89f63fcd9ce287c1fb8c`. CrossOver result SHA-256 `92df17466d7b1aebeda88674dc5c16eb9836bbcf4968ef246026309abee5fd5f`. Native capture manifest SHA-256 `08bfb61776894f303235fbf56c9e250d5ecd13b21a303a4e499b008f8d17309a`. Ten prepared WebP80 frames are pending independent visual judgment. After both test processes exited, removing only their disposable copies increased free space by 1,208,315,904 bytes. Cleanup receipt SHA-256 `4ae5add63077f8e58a47f8770346c6f5337383dc98c938036f799566843aa4ce`. The verified packages and all evidence were retained.
+
+## Independent remaining text review
+
+The coordinator read all 200 previously unread positions in the German dependency scope, 94 Conrad and 106 Ryan positions. Both source programs confirm the reviewed options, including the three distinct relationship flags, both nickname replies, both picnic gate routes, and the date branches. The two-line finding at `yarn:line:6a671440` and `yarn:line:d0361dd9` concerns the alternative restaurant. The current German can suggest a venue containing equine characters and does not clearly identify the fusion cuisine. The proposed pair explicitly describes the cuisine of the equine-kin. The seafood refusal at instruction 51 leads to 65, followed by the proposal at 66–67, in both builds. The complete paired reader and both full platform input validators accept the candidate, with only `dialogue.json` changed.
+
+The independent receipt is `localization/work/de-independent-remaining-20261110.XrAEX5/review.json`, SHA-256 `cca69b158bdcab127047838987d39712718fdaaccb416ab22fe1d6e8535a004e`. No previously tracked position remains unread. Author disposition, affected-context rereview, artifact rebinding and remaining scenario, visual and native Windows checks are open. The representative run does not exercise the Ryan dinner or Alexander’s self-introduction.
