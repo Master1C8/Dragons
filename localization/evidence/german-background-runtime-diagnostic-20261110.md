@@ -1,0 +1,7 @@
+# German background runtime diagnostic
+
+The representative probe targeted the two [verified German package candidates](german-independent-changes-and-packages-20261110.md) with translation SHA-256 `17cd7c687560565daf6640d0c31fc6f9791453f069686d31fef81da3074af9b2`. The first attempt stopped before launch because the test instrumenter still expected Polish package assemblies. Rebinding its two expected fingerprints to the independently verified German package entries allowed the unchanged structural checks to confirm 2,385 macOS and 2,328 Windows method bodies and the two intended test hooks on each.
+
+The macOS retry stayed in the background in all 175 samples and preserved the original profile. The observer timed out at equipment step 8, before dialogue. The stock selector remained on `crowbar_socket` while forward input near x=3.0, z=-9.894 failed to reach the dragon window. The successful Polish control entered aiming range from around x=4.0 and z=-10.84. Recheck the approach on the corrected German package with stock input and the original target and state assertions. The Windows run was skipped after the macOS guard stopped the sequence.
+
+Both temporary app copies were removed after the task-owned process exited. The package, source files, test code, assemblies and logs are preserved. The diagnostic receipt is `localization/work/de-23e37bb-runtime-20261110.sqB1Nb/diagnostic.json`, SHA-256 `4eeb7e44bb94272879e861684ddfc773662d6f53711c0b6f7d784d5c1efec5cc`.
