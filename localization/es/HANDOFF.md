@@ -78,3 +78,7 @@ Four more special decisions and 33 direct IDs are author self-reviewed in [speci
 ### Ryan and Alexander choice batch
 
 Three additional special decisions and 13 IDs were author self-reviewed and checked against both stock objects in [special-ryan-and-alexander-choices.md](special-ryan-and-alexander-choices.md). One authored `no` is intentionally identical to its English source. Current total: 70/1,947 authored IDs and 11/27 special decisions. The remaining 16 decisions precede ordinary text. Final packages, exact-string visual and runtime checks, and the independent game-text audit remain pending.
+
+### Ryan relationship batch
+
+Two additional special decisions and 28 IDs are author self-reviewed in [special-ryan-relationships.md](special-ryan-relationships.md), with separate stock-source object read-backs. One pause is intentionally unchanged. Current total: 98/1,947 authored IDs and 13/27 special decisions. Fourteen special decisions remain before ordinary translation; final package, runtime/visual and independent editorial audit remain pending.
