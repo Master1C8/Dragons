@@ -612,6 +612,12 @@ values. This verifies the selected desktop routes and package data.
 Complete gameplay, final visual acceptance and independent editorial
 review remain open.
 
+The full localization test suite ran 206 tests with five skips and
+no failures. The final Unity Options smoke observer was prepared
+but did not launch while the shared game test lock was held by the
+active French CLI session. It exited after its bounded wait. The
+observer is under `settings-smoke/` alongside the package receipts.
+
 The complete app, Windows ZIP and receipts are under
 `localization/work/uk-finish-18.SbcoRL/reviewed/`.
 
