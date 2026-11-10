@@ -16,3 +16,15 @@ Options controls are `Música y acción` (ú, ó), `Año, sí` (ñ, í) and `Pin
 The source of both capture companions shows the body screenshot triggers only for `body-uk` (historical name), which is the 64-point `¡Ánimo, pingüino!`. The 40-point `¿Qué año?` control reached fully visible state and was logged on both players, but neither saved body frame is a dedicated capture of it. The three choices were individually logged and activated, but the saved choice frame triggers at `line:83ac5b68`; do not describe it as a separate screenshot for each choice. Determine by visual review what is actually in each frame. Capture any missing representative surface if required by the applicable gate, in an isolated background run with the existing cooperative runtime lock, without altering these originals.
 
 Review at most 1–2 prepared images in a review context. The prior context already consumed two; do not reopen screenshots in it or force compaction. These six surfaces, including the previously inspected but uncertain macOS marks, remain needs-review. CrossOver is not native Windows. Progression and profile-preservation receipts are in [renderer-check.md](renderer-check.md); none are final-package or normal-display evidence.
+
+
+## Imported findings and source-pixel crops
+
+The coordinator-owned ledger now passes the paired dialogue and choice frames and the Spanish labels in CrossOver Options. CrossOver Options layout remains failed on the stock `Target Framerate` row at the bottom boundary; an actual source-matched stock/localized scroll and full-row review remain pending. macOS Options layout passed, while the two small-label mark and content checks remain needs-review.
+
+The original macOS Options image is `mac/settings-run2/options.png`, 640×480, SHA-256 `cec2d873e3f2a17e55467230005f588e0d09517f9ff2c1a557f11308f055e73e`. The following new WebP80 source-pixel crops use origin at top left, no upscaling, and were not opened in this context:
+
+- `mac/settings-run2/options-ping-mark-crop.webp`: bounds `(310,145,110,35)`, SHA-256 `bc6851cec9ed4cfc214c6562c115005a90524e747ffc2c3a830f5b7f283cf401`; expected `Pingüino ¿qué?`.
+- `mac/settings-run2/options-ano-mark-crop.webp`: bounds `(120,390,80,40)`, SHA-256 `663a4a97d3bdaeb856ced4822e4240e87a67f90d42cd9cd419c6f4d82fdee471`; expected `Año, sí`.
+
+These bounds include the reviewer's reported prepared-image regions; prepared image and original are both 640×480. Cropping cannot add native detail. If a reviewer cannot resolve the marks, retain uncertainty and capture a better source rather than infer a pass. The separate 40-point body control also needs a dedicated frame on each build before legibility is assessed.
