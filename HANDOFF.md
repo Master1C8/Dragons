@@ -24,6 +24,14 @@ locales. The isolated Thai font swap resolved the sample glyphs, and
 TMP still emitted the unshaped sequence for `น้ำ` on both players.
 Mixed direction and script shaping require separate handling.
 
+The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
+loaded all four regional Noto faces on both players. The stock
+512 × 512 multi-atlas chain admitted 1,536 distinct additional
+characters per locale, consuming 63–64 pages. For the same Japanese
+input, a 1024 × 1024 diagnostic setting reduced that to 16–17 pages.
+The next acceptance checks are a production fallback chain, full
+corpus coverage, line breaking, typography and runtime cost.
+
 The [paired dialogue and settings controls](localization/evidence/european-text-paths-20261110.md)
 used Ukrainian, Polish and Vietnamese script samples. The live
 Yarn choice and body paths produced NFC for decomposed Vietnamese,
