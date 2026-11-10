@@ -12450,7 +12450,9 @@
           "id": "yarn:line:d8ce8566",
           "pairedRowSha256": "6fbcb75b387f08eeb9bfad88d08191bd8764d6dc71113cea7461cde4d1c964f5",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "Brief question without a named referent."
         },
@@ -12458,7 +12460,9 @@
           "id": "yarn:line:4efe8211",
           "pairedRowSha256": "0951fade11d223c0821aa8135eb607b49382eda77ec9a102b2318a9ab7de1f30",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "Brief follow-up question; no named referent."
         },
@@ -12502,7 +12506,9 @@
           "id": "yarn:line:65b23418",
           "pairedRowSha256": "6dd295b0a1dba47538d8f9db64a0a8d629f12077c00668ee2e3c1ef2b460d925",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "The invitation is accepted."
         },
@@ -12510,7 +12516,9 @@
           "id": "yarn:line:99ff9e7f",
           "pairedRowSha256": "cfa3c9c8f3583fdc823145011bfd9136ca9ee7f45b938b5016a2bddf07cc8809",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "Teasing response to the claim of prominence."
         },
@@ -12646,7 +12654,9 @@
           "id": "yarn:line:877aced7",
           "pairedRowSha256": "375d591ee63efdf11c28acd8bb0f2ec288597f4bb11bffefb73bf226b9d40dbb",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "An affirmative response without a named referent."
         },
@@ -12654,7 +12664,9 @@
           "id": "yarn:line:b2dfad3e",
           "pairedRowSha256": "270bc91e1ca8ece11676878e6e15219817bc4dd4f9aa5c9f2cc3c50dda6d6e5e",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "Hopeful response without a named referent."
         },
@@ -12721,7 +12733,9 @@
           "id": "yarn:line:ea2adb20",
           "pairedRowSha256": "20e25da5c4a7acddd39422d61d586fe7577687c34ed765628cb52548d012399c",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "The interlocutor invites further details."
         },
@@ -12729,7 +12743,9 @@
           "id": "yarn:line:f3eeb627",
           "pairedRowSha256": "2a7f9e271c195109d0346bbdf49051f0279e2c026bce000b51f243f5a80afd7b",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "The interlocutor asks about a first date."
         },
@@ -12803,7 +12819,9 @@
           "id": "yarn:line:d8a2002e",
           "pairedRowSha256": "bbf2314de31465d7430e3e353ef952020077d41b5184032abc6944bedf407459",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "An offer to let the customer out."
         },
@@ -12811,7 +12829,9 @@
           "id": "yarn:line:94fbdbf0",
           "pairedRowSha256": "2b35ae3cf286a0cdef967e3d3a48fbd53d3ee5cb4d7dc26fd69fb9b051b5e3cf",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "An offer to open the gate, expressing excitement for the addressee."
         },
@@ -12903,7 +12923,9 @@
           "id": "yarn:line:2dd518f0",
           "pairedRowSha256": "5a343b9b755bb14bab4d9f4a7267f9b48cded0bb5194edf3effc322d91702ec3",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "A question seeking clarification."
         },
@@ -12986,7 +13008,9 @@
           "id": "yarn:line:59416000",
           "pairedRowSha256": "fa6e0ff521471567f43bd2e2d0f520c6e1c35d3805b51cddc4c69971c969ca38",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "An offer to open the gate."
         },
@@ -13083,7 +13107,9 @@
           "id": "yarn:line:3c2c53dc",
           "pairedRowSha256": "a7f0ae6fde6a9cc964c8ee774735e9aa84465460528b95bdce22baad264e20df",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "A question seeking clarification."
         },
@@ -13177,7 +13203,9 @@
           "id": "yarn:line:6aa7ad03",
           "pairedRowSha256": "46cfe34625cef7df0c7c4c47543e42c2697f30310da87dc603e34e9e25aadd2b",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "An offer to open the gate."
         },
@@ -13258,7 +13286,9 @@
           "id": "yarn:line:7023cc94",
           "pairedRowSha256": "99b7808419ab5cc4202e32284d5d32780e216be529b7fa433d2897ba372c1e1b",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "Excited announcement of date night."
         },
@@ -13266,7 +13296,9 @@
           "id": "yarn:line:039a0c83",
           "pairedRowSha256": "1c326a8693adaccb29cbf0b7ec778374c0cf13f6f1e5a226d5ded49d9133eb65",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "A brief question."
         },
@@ -13308,7 +13340,9 @@
           "id": "yarn:line:8c6e66f3",
           "pairedRowSha256": "e4b1d32e7defc74df0bef9adc989364cc4185c67538bf752b4503bf8c56cdf74",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "Agreement to the plan."
         },
@@ -13316,7 +13350,9 @@
           "id": "yarn:line:a00f681d",
           "pairedRowSha256": "ba0b5629b23276628367854363e728ed0819bb6311a4c05fb658924ca2b2a9fc",
           "speakerOrKind": "option",
-          "characterReferents": [],
+          "characterReferents": [
+            "dnw-player"
+          ],
           "conceptUses": [],
           "decision": "Expression of excitement."
         },
