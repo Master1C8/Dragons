@@ -402,3 +402,24 @@ are exact. Both packaged fonts contain all 90 display code points.
 The verified receipts are under
 `localization/work/uk-ordinary-07-20261110.K1xUBi/reviewed/`.
 Live scene checks and independent editorial review remain pending.
+
+## Eighth ordinary batch
+
+The date, basket handoff and four individual food conversations
+now cover all 99 source IDs in those nodes. The draft adds 96
+values and reuses three special-scene lines. All 839 earlier
+values are exact. The 935-value draft SHA-256 is
+`234d847da5675c8bb33ab915075bd6815aa019e8883713b981eb85ad5c7ac7cc`.
+
+The wording keeps the food-specific responses distinct, including
+the egg, grape stem, bone and watermelon. It preserves the
+branches about Conrad and the joke about dragon-sized portions,
+and uses the glossary spelling WingCo. The two spelling or
+punctuation variants use explicit shared Ukrainian values.
+
+Each diagnostic package changed exactly 95 Yarn values. The one
+authored pause, the other table text, metadata and compiled program
+are exact. Both packaged fonts contain all 92 display code points.
+The verified receipts are under
+`localization/work/uk-ordinary-08-20261110.3WJYKv/`.
+Live scene checks and independent editorial review remain pending.
