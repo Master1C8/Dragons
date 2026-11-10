@@ -31,3 +31,7 @@ Reviewed 126 further IDs in Conrad exit and relationship scenes with their optio
 ### Author semantic review: rows 911–1026
 
 Reviewed 116 IDs in Conrad’s conditional scene loops, mount and injury dialogue, tracing choices and replies. Receipt: `receipts/semantic-audit-09.json`. Cumulative coverage: 1,027/1,947; next zero-based row 1,027, `yarn:line:e7353d24`. Six additional player-gender findings await correction and dependency review, for 16 recorded findings in total. This is author review, not independent audit. Translation bytes remain unchanged.
+
+### Author semantic review: rows 1027–1152
+
+Receipt `receipts/semantic-audit-10.json` binds 126 additional IDs to the unchanged translation, paired worklist and both platform instruction exports. Cumulative author pass: 1,153 / 1,947 IDs; next row 1153. Four new proposed corrections bring pending findings to 20; correction and dependency review remain open. The ambiguous plural in `yarn:line:564a9606` is not classified as an error on current evidence. This is author review, not the independent audit.
