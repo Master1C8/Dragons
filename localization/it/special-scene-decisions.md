@@ -95,7 +95,7 @@ Keep both identical response pairs distinct and preserve `$Yarn.Internal.Once.li
 
 ## Gate status
 
-Twenty-three of 27 cases have author-reviewed wording recorded in this file; the remaining 4 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the twenty-three. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
+Twenty-four of 27 cases have author-reviewed wording recorded in this file; the remaining 3 require complete contextual decisions. The Alexander once-state choices below are partial and are not included in the twenty-four. Several cases overlap: when their complete groups are reviewed, reconcile any shared IDs with the accepted wording here and reopen affected decisions if wording must change. No ordinary translation has begun. Final implementation, package, runtime and visual checks remain separate.
 
 ## Alexander's family crest
 
@@ -436,3 +436,53 @@ Source case `kobold-yip-speech`. Author self-review: retain **Yip** as the audib
 Key contextual callbacks: `c374e532` **In qualche modo mi sembra più sincero di qualsiasi cosa dica chiunque altro.**; `c8281b83` **Mmm, devo intendere che aprirai il cancello?**; `b058318f` **In coboldo significa che stai facendo un buon lavoro.**; `38b3c8c1` **Oh- volevo dire: vado ad aprire il cancello!**; `b8724c64` **Ah... ti piace proprio quel verso.**; `a8b70da7` **Allora dev'essere così! Mi fa piacere.** Preserve each callback's own context and don't promote its interpretation to a universal definition.
 
 Positive: the same sound remains recognizable in distinct scenes, Alexander's two explanatory choices stay different and the film reference remains a film. Negative: change the audio key, merge meanings or choices, change destinations, omit the parenthetical size tag or assign unsupported speaker identity. Both builds' paired source and existing bounded dialogue/choice renderer support this preparation; actual sound playback, branch execution and final fit remain pending.
+
+## Alexander's date decision and outcomes
+
+Source case `alexander-romance-route`, `Alexander_5_romance_route` and `Alexander_5_Outro`. Author self-review: the affirmative and declined options state their respective outcomes explicitly; the refusal does not assert that an earlier state is cleared. Alexander asks about attractiveness before proposing a date at the college library. Keep the alternatives and their corresponding reactions distinct, the library's dragon entrance and Alexander's formal voice. Target wording uses no gender assignment for the player. Preserve the exact gradient, bold and size tag order and `$alexander_romanced` control identity.
+
+| ID | Italian wording |
+|---|---|
+| `1b6c7f75` | Salve. |
+| `8d5c7802` | Che c'è? |
+| `370d719b` | Mh? |
+| `a13d76ec` | Stavo pensando... |
+| `3020c97c` | Mi trovi attraente? |
+| `a610ce0b` | SÌ. |
+| `f9c800f2` | Sì! |
+| `763c6a82` | Penso che tu sia bello. |
+| `4399096b` | Oh. |
+| `d5a90e1c` | Mi fa piacere! |
+| `6ff80785` | Questo... mi fa sentire molto più sicuro di me. |
+| `5a5d646c` | Davvero? |
+| `cc6d631b` | Questo... mi fa sentire molto più sicuro di me. |
+| `e00c6df5` | Grazie. |
+| `7111d265` | Questo mi fa sentire molto più sicuro di me. |
+| `e721d512` | Il che mi porta alla prossima domanda... |
+| `8c8591ec` | Ti andrebbe di raggiungermi alla biblioteca del college questa sera...? |
+| `1ab5969b` | Sarebbe un... appuntamento. Come direbbero molti. |
+| `a0e49f02` | <gradient="gold"><b> Non mi dispiacerebbe! </b></gradient><size=70%> (Porterà a una storia con Alexander!) |
+| `0371fb9c` | <gradient="gold"><b> Stasera avrò da fare. Mi dispiace. </b></gradient><size=70%> (Non porterà a una storia!) |
+| `36d49875` | Magnifico! |
+| `9541fceb` | Da un po' di tempo meditavo di chiedertelo. |
+| `b920f205` | Ah. Non preoccuparti. |
+| `2f10f572` | Molto bene. Non ti interrompo oltre mentre lavori, allora! |
+| `505e150f` | Grazie per il lavaggio. |
+| `c66e1278` | Questa sera, nel campus. La biblioteca è l'edificio con la grande guglia blu. |
+| `23e7d518` | Avvicinati all'ingresso per i draghi e ti farò entrare. |
+| `b5d7d26f` | Non vedo l'ora. |
+| `0f86dbf6` | Anch'io! |
+| `3a23b81f` | Sembra davvero bello. |
+| `99b6dc81` | Mi fa piacere. |
+| `ac13bf68` | È davvero notevole. |
+| `1642b6f1` | Ora mi tolgo dalle tue squame. Grazie per il lavaggio. |
+| `8072b186` | A stasera. |
+| `116f0e16` | Dovrei aver pulito tutti i punti. |
+| `875f0961` | Grazie per il lavaggio! |
+| `5d36d5c8` | Sono felice di averti conosciuto. |
+| `cb06d2bf` | Anch'io. |
+| `7157db26` | Oh, grazie Alexander. |
+| `e767dc51` | Ad ogni modo, ora mi tolgo dalle tue squame. |
+| `44f2b8cf` | Arrivederci! |
+
+Positive: acceptance explicitly leads to Alexander romance and its date continuation; decline explicitly states no romance and retains its own response. Negative: reverse captions, change control identity, imply declining clears an earlier state, or route either response into the other. Both stock strings and tags are source-bound; actual state progression and final layout remain separate runtime checks.
