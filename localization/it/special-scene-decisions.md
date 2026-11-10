@@ -936,3 +936,123 @@ The six state-selected scenes distinguish the player's date with Conrad, Conrad'
 | `d04df8f8` | Bene, ci si vede! |
 
 Positive review: the correct partner and state remain explicit in each branch; the Big C gag reuses its earlier accepted wording. Negative review: do not exchange route scenes or destination IDs, alter formatting, or turn a future date into a completed one. Final branch execution and visual fit remain pending.
+
+### `ryan-conrad-romance-routing` — remaining named relationship follow-ups (partial)
+
+These eight route-selected groups cover Conrad's fifth-visit conversations, his response to the player's Ryan relationship, and Ryan's corresponding visit-five dialogue and exits. Keep the three relationship states and the stock destinations distinct; IDs are `yarn:line:` suffixes. Player wording does not assume gender.
+
+| ID | Italian target |
+|---|---|
+| `b983f922` | Allora. Stasera. |
+| `2fb3fe55` | Sì? |
+| `a0479425` | Non vedo l'ora. |
+| `95e2f7cc` | Già. |
+| `03d2f0bb` | ... |
+| `36779352` | Fai bene. |
+| `8c269acb` | Ti piacerà moltissimo. |
+| `1a169dbc` | Anche le luci della zona sono fantastiche. |
+| `8b0b222c` | Creano proprio l'atmosfera. |
+| `1d3b255b` | Riserva l'atmosfera per stasera! |
+| `6e82e54c` | Ah sì? |
+| `f8b2e23b` | Ah. Va bene. |
+| `d4d3ecd5` | Oh sì. |
+| `42e3eba2` | Una volta pulito andrò a preparare il nostro posto. |
+| `92829935` | Ryan è un drago così gentile. |
+| `04b29e42` | Lo è davvero. |
+| `28d390ac` | Come mai? |
+| `bee397db` | Già, è così premuroso con me. |
+| `b9ce2f3c` | È... premuroso. E anche molto comprensivo. |
+| `2ffe284b` | Quando l'ho conosciuto stavo ricadendo nelle mie vecchie abitudini. |
+| `4815d919` | ...A fare un po' lo stronzo, a dire il vero. |
+| `de25de6e` | Lui... Sapeva cosa dire per farmi smettere. |
+| `6474d7f7` | È davvero bello! |
+| `51d1b41e` | Ryan è un tesoro. |
+| `f244d080` | Già... È davvero fantastico. |
+| `c7e1b369` | Lo è davvero. |
+| `7db0baf0` | Grazie per avermelo presentato. |
+| `85ec0862` | Ehi, scusa se arrivo tardi. |
+| `13dc0f15` | Va bene. Chiudo tra circa un'ora. |
+| `3fbd01fb` | Puoi venire quando vuoi! |
+| `a98d068c` | Ah. Va bene, allora non mi dispiace più. |
+| `aea0be6b` | Oh, grazie. |
+| `3890b91c` | Il tuo appuntamento con Ryan. |
+| `dd197e7c` | ... |
+| `4b29790b` | Com'è stato il sesso? |
+| `f1787092` | Conrad! |
+| `52ed140c` | Oh. Ehm. <size=70%>Bello. |
+| `674877e5` | Ehi, non c'è niente di male a chiedere! |
+| `c4dd137b` | Allora sembra sia stato bello. |
+| `e8bc1d95` | Ah, immagino di sì. |
+| `7e8c1ae2` | Sai proprio usare bene le mani. |
+| `ef91a572` | Sono geloso! |
+| `79a1a205` | ...Ma non in modo strano o cattivo. |
+| `a6d6bf76` | Allora, tu e Ryan, eh? |
+| `30e6b801` | Oh, sì! |
+| `c13d4e24` | È sexy. |
+| `800c553d` | È il drago dei miei sogni. |
+| `570d4953` | Sono felice per te! |
+| `7b6c47bd` | Così sembra. |
+| `ed5c40ca` | Sono felice per te! |
+| `4ec92454` | E tu? C'è qualcuno che ti interessa? |
+| `f3b5952a` | Già, anch'io sono felice. |
+| `d8f92323` | Più o meno! Sto uscendo di più. |
+| `62a82aba` | Ho conosciuto un grifone. Più o meno della mia taglia... |
+| `f4982dcd` | Credo abbia una cotta per me. |
+| `6585925d` | ...<i><size=70%>Io almeno ne ho una per lui. |
+| `163c524a` | Mi fa piacere. |
+| `3a5d5ca4` | Sì, sembra uno che saprebbe come provocarti. |
+| `ac6d5bd3` | Sono felice per te! |
+| `341175f7` | Credo che tu abbia lavato ogni punto. |
+| `a2217280` | Grazie per avermi aiutato. |
+| `18707b19` | Sono sempre felice di lavarti! |
+| `2dd518f0` | Che cosa intendi? |
+| `8e407c6e` | Oh... Non solo per il lavaggio. |
+| `bbe51f87` | Intendo in generale. |
+| `01b4161e` | La rottura che ho vissuto prima è stata dura. |
+| `97841169` | È stata una bella via di fuga. |
+| `0699aef9` | E sono davvero felice per te e Conrad. |
+| `90a9a98e` | Ci vediamo la prossima volta che vengo, d'accordo? |
+| `75206eee` | Mi fa sempre piacere vederti, Ryan. |
+| `59416000` | Vado ad aprirti il cancello. |
+| `e3106999` | Anche a te. Grazie per il lavaggio. |
+| `cf716777` | Grazie. |
+| `770e7473` | Credo che tu abbia lavato ogni punto. |
+| `e613cbe3` | Sai che cosa significa... |
+| `7023cc94` | SERATA ROMANTICA! |
+| `039a0c83` | Sì? |
+| `95aa0bf4` | Puoi scommetterci! |
+| `b9cb051a` | Significa che sono pronto a uscire con un certo coboldo. |
+| `2ffb026d` | So che devi chiudere il negozio. Mi assicurerò che tu abbia l'indirizzo e potremo incontrarci lì, d'accordo? |
+| `8c6e66f3` | Mi sembra un buon piano! |
+| `a00f681d` | Non vedo l'ora. |
+| `1a5e6184` | Non vedo davvero l'ora. |
+| `363f6f6a` | Anch'io. |
+| `a722d0fa` | Bene, vai ad aprire il cancello e io andrò sul posto! |
+| `3112d78d` | A presto. |
+| `3cda84e6` | Allora, raccontami ancora di Conrad! |
+| `aaea8391` | Ultimamente è molto più gentile. |
+| `7deb9fff` | È come... un gran tenerone circondato da punte aguzze. |
+| `4f6344f1` | Ah sì? Sembra un po' una testa calda. |
+| `d9534386` | Ma conosco il tipo... Dentro tendono a essere dei gran teneroni. |
+| `63024a1f` | Già, è migliorato molto. |
+| `7ac62718` | Già. Mi piace. |
+| `f5324d68` | Mi fa molto piacere. |
+| `56a729f6` | Niente è più attraente di un uomo capace di migliorare! |
+| `c0972e81` | Sono felice che tra voi funzioni. |
+| `ecf6206f` | Fantastico. Sono felice che tra voi funzioni. |
+| `ebdb9888` | Ah, sì, quei tipi sono piuttosto carini. |
+| `807fdc76` | Da quello che ho sentito sembra sia migliorato molto ultimamente, sì? |
+| `164fdb01` | Mhm, ci sta provando. |
+| `99bbb171` | Credo fosse in un ambiente nocivo. Ora sta meglio. |
+| `ac1ed298` | Non si può chiedere di più, no? |
+| `3a2ed5ef` | Comunque sono felice che tra voi funzioni. |
+| `0f8bb606` | Mi fa piacere. |
+| `b5dabf9f` | Niente è più attraente di un uomo capace di migliorare! |
+| `e2ea4ead` | ...Un lavaggio per il nostro appuntamento di stasera. |
+| `73f7f13d` | OH. GIUSTO. |
+| `822c0718` | Non vedo davvero l'ora. |
+| `e5c7f64a` | Allora mi fa piacere essere qui a ricordartelo. |
+| `141c006f` | Anch'io. |
+| `ae4d09f6` | Aspetterò al cancello! |
+
+Positive review: the selected scene names and text agree on which pair is together; Ryan's date, Conrad's date and the introduction remain distinct. Negative review: do not swap routes, change choice/flag identities or infer the player's gender. Final runtime and fit are unverified.
