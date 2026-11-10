@@ -2483,7 +2483,7 @@
         "yarn:line:abdb5822",
         "yarn:line:084e3cbc"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Ryan_3_intro",
@@ -2508,7 +2508,7 @@
         "yarn:line:e521db76",
         "yarn:line:96981b61"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Ryan_3_required",
@@ -2533,7 +2533,7 @@
         "yarn:line:972f132f",
         "yarn:line:0632acbf"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Ryan_3_wont_use_mount",
@@ -2543,7 +2543,7 @@
         "yarn:line:ccf87ea9",
         "yarn:line:76a97730"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Ryan_4_Cum",
