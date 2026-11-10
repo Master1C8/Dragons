@@ -3,7 +3,7 @@
   "status": "provisional-derived-index-not-semantic-approval",
   "worklistSha256": "692c32667546db79d51cab95d4894bb97f7f78b4fda0756465f90c0a5e6319d2",
   "entryHashIndexSha256": "81ba8ebd79affeab85cf2559a753fbd06498d74daf8358bb0223770a236bf3cf",
-  "rowReceiptSha256": "8ae2f4ecca53f15711cfab0ec467472be9885b880bfff1bc81ad47285f5e3c6c",
+  "rowReceiptSha256": "212bf6b03ef17c320e8b23bf99ab0b473b68ca0c29f6fc605e053cf19532a031",
   "scopeNote": "Derived only from recorded row tags; omissions and implicit uses remain subject to human reconciliation in both author layers.",
   "entries": [
     {
@@ -3079,6 +3079,67 @@
               "id": "yarn:line:83ac5b68",
               "pairedRowSha256": "13834d0369bfd39d771412220dad18e13f58dcc1e0b6d5f6cfeb457f159639a1",
               "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:9a68366f",
+              "pairedRowSha256": "f1f18c0a59e06ca33a33c403eed4820c3debf986fb17a724d47a91d9a1b65a4f",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:0b7589ff",
+              "pairedRowSha256": "9017f999c70e29c48a1f10cbc1431b575d40e6588e7ec28151a01a5a33713ddc",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:54ad4706",
+              "pairedRowSha256": "0ce3a9f3ba044112b258f7940e00383f850fb42a2289a9da6e8b42978fc4d59b",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:4d692a01",
+              "pairedRowSha256": "a40f4ea4ede2273a61526eaeda6b15ca304089f0b56ad0b770abbf17d5e5cd03",
+              "kind": "characterReferents"
+            }
+          ]
+        },
+        {
+          "group": "Conrad_required_1",
+          "orderedRowsSha256": "5511c0d6f6b153618c23bc4347b4f5e553ba878654e7b3aedd7837e33d403156",
+          "uses": [
+            {
+              "id": "yarn:line:f98c3b6c",
+              "pairedRowSha256": "92e581d837e32f709865a01dfbdac94e4ebf1d351e4fca0078de8c5b73665668",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:a0a0a49c",
+              "pairedRowSha256": "5b3a2e4f14b194c366b353f7bea9098d4323a01341725f0a7960aec479981772",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:7678511c",
+              "pairedRowSha256": "857867f5c45ce4d255a494b91c3a4ca67cca5fb4c90cda439db047de7ec319bc",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:e048566b",
+              "pairedRowSha256": "9e25bab3b638eede83bab3b5f1e49c49d9c25cd0ecd0b741c00ce96529012299",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:cc295885",
+              "pairedRowSha256": "70f8f06345dc5f9287d624a1890c69c6578ca38b8979305097c3bffc7a466796",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:8cc1aa72",
+              "pairedRowSha256": "c1470268d529c0c251cf77a8ecaff61d7876cd448ba28a337934bce9e0fb49c3",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:1af1ad05",
+              "pairedRowSha256": "a3bc7e58c0c70e816a35a263a492ec965409a55753c35987df0a48d2058cacaa",
+              "kind": "characterReferents"
             }
           ]
         },
@@ -3185,6 +3246,21 @@
               "kind": "characterReferents"
             },
             {
+              "id": "yarn:line:af3f02c9",
+              "pairedRowSha256": "44502912cd94cf6122acd284978cda4bde643a09719673eb60d339bef21936b8",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:b6fb6fce",
+              "pairedRowSha256": "931f15e809bf1d2a9793546750f8f0764c58f5f4dfc4d8b3434aee91d646927e",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:0caa6657",
+              "pairedRowSha256": "c8862d68fddf3fc77695c515e6630093a5e334af634a8c37703bad6333dc39c4",
+              "kind": "characterReferents"
+            },
+            {
               "id": "yarn:line:9a9a6120",
               "pairedRowSha256": "1b42b399b1d56ba73ce20c4391142f658d060839cb31264f8bc7e458aeea0a9f",
               "kind": "characterReferents"
@@ -3196,8 +3272,33 @@
           "orderedRowsSha256": "1730cd0069791b1ae8155869a2ff6034979067b2fbe22816daff9410654975f9",
           "uses": [
             {
+              "id": "yarn:line:b76f49cd",
+              "pairedRowSha256": "7b43740ca1b7f0c1c3a2193151072df019d1742cbed344a6eca25fa4fb69b3fa",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:b042f12a",
+              "pairedRowSha256": "906a9d3ed08d5067afd68532684c2d39143ed8f2c8fb9f723ab996425853221e",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:fbc80e96",
+              "pairedRowSha256": "210fd1b2fc04ff5fd685e4f664849fb32aa3c8707c617e7ecaba6e5dc0b3a08b",
+              "kind": "characterReferents"
+            },
+            {
               "id": "yarn:line:ce6d6d7f",
               "pairedRowSha256": "fd8ac428d963f8e1666ee51f28b0224d36bcc2382b45319dc7489addb2848be3",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:7311dc01",
+              "pairedRowSha256": "8e10112f83d3ceac28057b39286723f43c1d481e2ae46dbede4b59332d5123c0",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:00a81c16",
+              "pairedRowSha256": "a6078fa0eb345cab35a3443b165aa4664c486f0a866b4c65b98fdc920a1ebb7d",
               "kind": "characterReferents"
             }
           ]
@@ -3265,6 +3366,26 @@
             {
               "id": "yarn:line:feb8727e",
               "pairedRowSha256": "2d6e53ae4b340867a61206c1e63ce32ae2a3a93011c91e9738970b8bdbdf69cf",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:e77c1f79",
+              "pairedRowSha256": "3340968b889cb6da0d98b046182dbcf4b613a86f8ee1ef1cc1b45d306e67c1dd",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:e051a79e",
+              "pairedRowSha256": "03417aac003fc53a22b13f0e5347c96ef9f0a1cc17c78d52fb57c55d846e0b47",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:3deb5f55",
+              "pairedRowSha256": "bc07e859de4c633e1ae37dbcca2d415428a8a58facacd8ba8c6c04612148d870",
+              "kind": "characterReferents"
+            },
+            {
+              "id": "yarn:line:abdb5822",
+              "pairedRowSha256": "c82d4f574628864ce7486beef4b4035cbc4dc3312abce9949f2acf443e6734cc",
               "kind": "characterReferents"
             }
           ]
