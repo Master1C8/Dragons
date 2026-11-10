@@ -2566,6 +2566,390 @@
     "line:265e14cb": {
       "source": "Let me know when you're finished rinsing.",
       "text": "Дай знать, когда закончишь смывать мыло."
+    },
+    "line:f7f9b0db": {
+      "source": "G'day mate!",
+      "text": "Здорово, дружище!"
+    },
+    "line:61c9b7ac": {
+      "source": "Conrad needs a cleaning, got a slot for 'im?",
+      "text": "Конраду надо помыться. Найдётся для него окошко?"
+    },
+    "line:db98be35": {
+      "source": "Yes right this way.",
+      "text": "Да, проходи."
+    },
+    "line:4da8b942": {
+      "source": "We can make an opening.",
+      "text": "Найдём для тебя время."
+    },
+    "line:dcb506d2": {
+      "source": "Good as!",
+      "text": "Во, отлично!"
+    },
+    "line:a0373456": {
+      "source": "I need to be spotless. Seems that's what you're for. <size=70%> Ha.",
+      "text": "Мне надо отмыться до блеска. Ты ведь для этого тут. <size=70%> Ха."
+    },
+    "line:1a663dcf": {
+      "source": "Mhm, right this way.",
+      "text": "Ага, проходи."
+    },
+    "line:8c563ab8": {
+      "source": "We can make an opening.",
+      "text": "Найдём для тебя время."
+    },
+    "line:1d4b8528": {
+      "source": "Nice. Gotta open the gate though. Let Conrad in!",
+      "text": "Класс. Только ворота открой. Впусти Конрада!"
+    },
+    "line:c0cc0f2d": {
+      "source": "You got a medkit?",
+      "text": "Аптечка есть?"
+    },
+    "line:56fc085a": {
+      "source": "What happened!?",
+      "text": "Что случилось?!"
+    },
+    "line:d908622a": {
+      "source": "Oh no, Conrad. are you okay?",
+      "text": "Ох, Конрад. Ты в порядке?"
+    },
+    "line:f5696cc4": {
+      "source": "I don't need to tell you.",
+      "text": "Я не обязан тебе рассказывать."
+    },
+    "line:63596bb3": {
+      "source": "Now, do you have a medkit or not?",
+      "text": "Так аптечка есть или нет?"
+    },
+    "line:4f38655d": {
+      "source": "Do I look like I'm okay?",
+      "text": "Похож я на того, у кого всё в порядке?"
+    },
+    "line:de25dacd": {
+      "source": "No. I'm not. Do you have a medkit or not?",
+      "text": "Нет. Я не в порядке. Аптечка есть или нет?"
+    },
+    "line:4815ddba": {
+      "source": "Yeah, I've got one.",
+      "text": "Да, есть."
+    },
+    "line:ad9c1ada": {
+      "source": "I do. But, what happened?",
+      "text": "Есть. Но что случилось?"
+    },
+    "line:3bac1dad": {
+      "source": "Just... open the gate.",
+      "text": "Просто... открой ворота."
+    },
+    "line:7fe73572": {
+      "source": "The clean was fine.",
+      "text": "Помыли нормально."
+    },
+    "line:e9d73205": {
+      "source": "Though every other wash I've been to at least has a mount",
+      "text": "Хотя на всех других мойках, где я бывал, хотя бы станок есть."
+    },
+    "line:78ca8d95": {
+      "source": "Sorry...",
+      "text": "Извини..."
+    },
+    "line:b122441b": {
+      "source": "I'll get one ordered I promise!",
+      "text": "Я закажу станок, обещаю!"
+    },
+    "line:eefa8ae2": {
+      "source": "Don't be sorry! Get a mount!",
+      "text": "Не извиняйся! Раздобудь станок!"
+    },
+    "line:0b734d82": {
+      "source": "All self respecting washers know how to please a dragon.",
+      "text": "Все уважающие себя специалисты по мойке знают, как ублажить дракона."
+    },
+    "line:9d434af5": {
+      "source": "Okay. I'll order a mount.",
+      "text": "Ладно. Закажу станок."
+    },
+    "line:2712436c": {
+      "source": "Good. 'Aight, let me out.",
+      "text": "Хорошо. Ну всё, выпускай."
+    },
+    "line:12b72085": {
+      "source": "Good, you better. If I come back and there isn't one...",
+      "text": "Вот и славно. Смотри у меня. Если вернусь, а его нет..."
+    },
+    "line:848727f2": {
+      "source": "Is that a threat...?",
+      "text": "Это угроза?.."
+    },
+    "line:3ed62e6b": {
+      "source": "Uhm, no, I'll just be REALLY upset.",
+      "text": "Эм, нет. Я просто ОЧЕНЬ расстроюсь."
+    },
+    "line:a8e6291c": {
+      "source": "Anyways- Let me out.",
+      "text": "В общем... выпускай."
+    },
+    "line:a051821a": {
+      "source": "I already feel a lot better.",
+      "text": "Мне уже гораздо лучше."
+    },
+    "line:314c3d8a": {
+      "source": "physically or emotionally?",
+      "text": "Физически или душевно?"
+    },
+    "line:42f5fd9d": {
+      "source": "I'm glad.",
+      "text": "Приятно слышать."
+    },
+    "line:a77c3afd": {
+      "source": "Both.",
+      "text": "И так, и так."
+    },
+    "line:d4c5faea": {
+      "source": "I am too.",
+      "text": "Мне тоже."
+    },
+    "line:6e94f373": {
+      "source": "You're... cool.",
+      "text": "С тобой... классно."
+    },
+    "line:f8a4f404": {
+      "source": "I mean it. Really.",
+      "text": "Я серьёзно. Правда."
+    },
+    "line:5b31909a": {
+      "source": "I'm only doing what I think is right.",
+      "text": "Я просто делаю то, что считаю правильным."
+    },
+    "line:77509e74": {
+      "source": "I think you're cool too. Self improvement is hard.",
+      "text": "Ты тоже классный. Меняться к лучшему трудно."
+    },
+    "line:cd0197ed": {
+      "source": "I hope I can learn from that.",
+      "text": "Надеюсь, у меня тоже получится этому научиться."
+    },
+    "line:e1609903": {
+      "source": "Thanks, but I'll be better. I promise.",
+      "text": "Спасибо, но я стану лучше. Обещаю."
+    },
+    "line:707d2693": {
+      "source": "I'll get out of your scales...",
+      "text": "Ладно, не буду больше путаться у тебя под лапами..."
+    },
+    "line:e64d21e4": {
+      "source": "I'll make sure to come back.",
+      "text": "Обязательно вернусь."
+    },
+    "line:77cebc41": {
+      "source": "People tell me I've got a fat cock, is that true?",
+      "text": "Говорят, у меня толстый член. Это правда?"
+    },
+    "line:10254d13": {
+      "source": "Oh my",
+      "text": "Ого."
+    },
+    "line:3c4443fd": {
+      "source": "I've seen bigger",
+      "text": "Бывают и побольше."
+    },
+    "line:86154a64": {
+      "source": "You should feel it and check for me",
+      "text": "Пощупай и проверь."
+    },
+    "line:aa74448a": {
+      "source": "But not in this sized package, right??",
+      "text": "Но не у кого-то моего размера, правда?!"
+    },
+    "line:22929636": {
+      "source": "This place could use a makeover, I know would it could use!",
+      "text": "Тут бы не помешало освежить обстановку. Я знаю, чего тут не хватает!"
+    },
+    "line:b4a29141": {
+      "source": "I've got a guy who can drop a gift by tomorrow that would spruce things up.",
+      "text": "У меня есть знакомый. Завтра он закинет подарок, тут сразу станет повеселее."
+    },
+    "line:5d41b5d6": {
+      "source": "I'm all dirty still!",
+      "text": "Я же всё ещё грязный!"
+    },
+    "line:cb71b2a1": {
+      "source": "Oh my bad",
+      "text": "Ой, моя ошибка."
+    },
+    "line:5a6c0d31": {
+      "source": "Whoops",
+      "text": "Упс."
+    },
+    "line:2f6eb3c3": {
+      "source": "I'm all soapy still!",
+      "text": "Я же ещё весь в мыле!"
+    },
+    "line:8cfbd75d": {
+      "source": "Oh my bad",
+      "text": "Ой, моя ошибка."
+    },
+    "line:1acbd02a": {
+      "source": "Whoops",
+      "text": "Упс."
+    },
+    "line:e48243c0": {
+      "source": "<size=140%> FUCK YEAH!",
+      "text": "<size=140%> ОХРЕНЕННО!"
+    },
+    "line:72b244b7": {
+      "source": "<size=100%> That felt damn good!",
+      "text": "<size=100%> Чертовски приятно!"
+    },
+    "line:9e403ecd": {
+      "source": "Oh fuck yeah.",
+      "text": "Ох, охрененно."
+    },
+    "line:087039ba": {
+      "source": "Keep going.",
+      "text": "Продолжай."
+    },
+    "line:51d4e418": {
+      "source": "I'm such an idiot.",
+      "text": "Ну и идиот же я."
+    },
+    "line:c7e4e36f": {
+      "source": "This is the kind of shit I try to avoid!",
+      "text": "Как раз в такое дерьмо я и стараюсь не вляпываться!"
+    },
+    "line:647187f1": {
+      "source": "Do you want to say what happened...?",
+      "text": "Хочешь рассказать, что случилось?.."
+    },
+    "line:de208e68": {
+      "source": "I'm sorry you got hurt...",
+      "text": "Мне жаль, что тебе досталось..."
+    },
+    "line:f2418086": {
+      "source": "Fuck no! Shit's embarrassing.",
+      "text": "Да ни хрена! Стыдно об этом говорить."
+    },
+    "line:4810891f": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:4f3d31f8": {
+      "source": "I don't want your pitty!",
+      "text": "Не надо меня жалеть!"
+    },
+    "line:d90d368f": {
+      "source": "...",
+      "text": "..."
+    },
+    "line:bee6c7dd": {
+      "source": "It's just that...",
+      "text": "Просто..."
+    },
+    "line:28d6c0aa": {
+      "source": "I hate that I'm always getting into situations like this.",
+      "text": "Бесит, что я постоянно влипаю в такие истории."
+    },
+    "line:9287c933": {
+      "source": "It's starting to feel like it's <i>my</i> fault.",
+      "text": "Начинает казаться, что это <i>моя</i> вина."
+    },
+    "line:04b7ce44": {
+      "source": "<i>This</i> isn't your fault, Conrad.",
+      "text": "<i>В этом</i> ты не виноват, Конрад."
+    },
+    "line:8b43a434": {
+      "source": "I'm really sorry you got hurt. Who did this?",
+      "text": "Мне правда жаль, что тебе досталось. Кто это сделал?"
+    },
+    "line:a722aada": {
+      "source": "I really think it was this time...",
+      "text": "Мне и правда кажется, что в этот раз я виноват..."
+    },
+    "line:3112adad": {
+      "source": "This drake at the bar... I was stupid. Couldn't shut my mouth.",
+      "text": "Один дрейк в баре... Я сглупил. Не смог заткнуться."
+    },
+    "line:1d73a343": {
+      "source": "Just some drake at the bar. Was stupid... Couldn't shut my mouth.",
+      "text": "Какой-то дрейк в баре. Я сглупил... Не смог заткнуться."
+    },
+    "line:8c6e1cd3": {
+      "source": "I don't get it! Why do I have to act this way?",
+      "text": "Не понимаю! Почему я так себя веду?"
+    },
+    "line:1a5e1ba4": {
+      "source": "Act what way?",
+      "text": "Как именно?"
+    },
+    "line:69e7dbb3": {
+      "source": "I think you're pretty cool, Conrad.",
+      "text": "По-моему, ты классный, Конрад."
+    },
+    "line:ffd7dcc4": {
+      "source": "Like... An asshole? I know I'm miserable to be around.",
+      "text": "Ну... Как мудак? Знаю, со мной тяжело."
+    },
+    "line:d3b6d22a": {
+      "source": "You're kind. It's more than I deserve.",
+      "text": "Спасибо за доброту. Я её не заслужил."
+    },
+    "line:4586d55d": {
+      "source": "I'm an asshole. I know I am.",
+      "text": "Я мудак. Сам знаю."
+    },
+    "line:e613b1c3": {
+      "source": "I'm sorry I snapped at you earlier.",
+      "text": "Извини, что раньше на тебя сорвался."
+    },
+    "line:7023b6b4": {
+      "source": "You don't deserve that.",
+      "text": "Так с тобой нельзя."
+    },
+    "line:ca72bf2d": {
+      "source": "You're okay. You're clearly going through a lot.",
+      "text": "Ничего. Видно, что тебе сейчас тяжело."
+    },
+    "line:5b6f00bd": {
+      "source": "It's fine.",
+      "text": "Всё нормально."
+    },
+    "line:5c42b85a": {
+      "source": "Doesn't mean I need to yell at you.",
+      "text": "Это не повод на тебя орать."
+    },
+    "line:cd5f07ca": {
+      "source": "No more excuses.",
+      "text": "Хватит оправданий."
+    },
+    "line:38419d8b": {
+      "source": "No, it's not. No more excuses.",
+      "text": "Нет, не нормально. Хватит оправданий."
+    },
+    "line:ae719afc": {
+      "source": "I need to be better. I <i>want </i>to be better.",
+      "text": "Мне надо стать лучше. Я <i>хочу </i>стать лучше."
+    },
+    "line:14209365": {
+      "source": "Just uhm... Don't tell anyone I'm saying all this.",
+      "text": "Только, эм... Никому не говори, что я тут наговорил."
+    },
+    "line:82109412": {
+      "source": "Your secret's safe with me.",
+      "text": "Твой секрет останется между нами."
+    },
+    "line:2185f08c": {
+      "source": "I won't.",
+      "text": "Не скажу."
+    },
+    "line:b7b5f7fb": {
+      "source": "...Thanks.",
+      "text": "...Спасибо."
+    },
+    "line:0de4fe62": {
+      "source": "And I'm glad you have a medkit... You're very prepared.",
+      "text": "И хорошо, что у тебя есть аптечка... У тебя всё предусмотрено."
     }
   }
 }
