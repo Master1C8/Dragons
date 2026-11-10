@@ -4488,31 +4488,220 @@
       "group": "Ryan_1_Outro",
       "orderedRowsSha256": "2da15609d9cecd86d3869cdab5c00791e370c2bdfa92dcceb6ed0170691a1148",
       "count": 12,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-yip",
+        "dnw-wash",
+        "dnw-dragn-wash"
+      ],
+      "conceptUses": {
+        "dnw-yip": [
+          "yarn:line:3d516ddb",
+          "yarn:line:9ec40945"
+        ],
+        "dnw-wash": [
+          "yarn:line:65a41bc5",
+          "yarn:line:f4b9a455"
+        ],
+        "dnw-dragn-wash": [
+          "yarn:line:87006442",
+          "yarn:line:ab616aac"
+        ]
+      },
+      "referents": "Ryan is clean after the service and refers to the workplace as this place; yip is exchanged conversationally and not treated as a person's name.",
+      "layer1": "Source read: distinguish completed washing, workplace and vocal expression.",
+      "layer2": "Italian field read: keep yip recognizable in its quoted reply; no field correction established.",
+      "sourceIds": [
+        "yarn:line:65a41bc5",
+        "yarn:line:f4b9a455",
+        "yarn:line:6289a322",
+        "yarn:line:11306335",
+        "yarn:line:3d516ddb",
+        "yarn:line:87006442",
+        "yarn:line:ab616aac",
+        "yarn:line:9ec40945",
+        "yarn:line:08f40e32",
+        "yarn:line:b2a507ab",
+        "yarn:line:249500dc",
+        "yarn:line:b588bf4c"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-first-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_1_PhoneTutorial",
       "orderedRowsSha256": "bd46a0f6251eaef692855323bb4bb0292a16ec181f56aa5c4cce77857ce2fc35",
       "count": 15,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-franchise-representative",
+        "dnw-franchise-223",
+        "dnw-dragn-wash",
+        "dnw-player",
+        "dnw-ryan"
+      ],
+      "conceptUses": {
+        "dnw-franchise-223": [
+          "yarn:line:a99c515c",
+          "yarn:line:4183ca7e"
+        ],
+        "dnw-dragn-wash": [
+          "yarn:line:a99c515c",
+          "yarn:line:4183ca7e"
+        ],
+        "dnw-ryan": [
+          "yarn:line:a99c515c",
+          "yarn:line:fcff7b00",
+          "yarn:line:6acf7c77",
+          "yarn:line:1976bc60"
+        ]
+      },
+      "referents": "The caller addresses the franchise and asks the player whether they have met their first customer; in this visit that customer is Ryan. The customer's singular they in a generic instruction supplies no independent gender claim.",
+      "layer1": "Source read: retain numbered franchise versus customer and caller roles; the two builds vary in franchise spelling and tutorial wording.",
+      "layer2": "Italian field read: preserve franchise number and distinguish role from named character; no field correction established.",
+      "sourceIds": [
+        "yarn:line:a99c515c",
+        "yarn:line:ce77a00e",
+        "yarn:line:5847a779",
+        "yarn:line:e216aee0",
+        "yarn:line:7426a997",
+        "yarn:line:d7b3cd09",
+        "yarn:line:4183ca7e",
+        "yarn:line:fbd2c3e7",
+        "yarn:line:8f46bb17",
+        "yarn:line:6de2c490",
+        "yarn:line:fcff7b00",
+        "yarn:line:6acf7c77",
+        "yarn:line:1976bc60",
+        "yarn:line:a327b5f9",
+        "yarn:line:3517b28e"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-first-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_1_intro",
       "orderedRowsSha256": "3cfab756ec218c0be2b774f23233298eba6272c4a4f5d9285b103be27eddf721",
       "count": 17,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-kobold",
+        "dnw-wash",
+        "dnw-dragn-wash",
+        "dnw-yip"
+      ],
+      "conceptUses": {
+        "dnw-ryan": [
+          "yarn:line:f15b014f"
+        ],
+        "dnw-player": [
+          "yarn:line:da17b746"
+        ],
+        "dnw-kobold": [
+          "yarn:line:efb2d4af",
+          "yarn:line:da17b746"
+        ],
+        "dnw-wash": [
+          "yarn:line:efb2d4af"
+        ],
+        "dnw-dragn-wash": [
+          "yarn:line:f676b9a8"
+        ],
+        "dnw-yip": [
+          "yarn:line:14d2c62f"
+        ]
+      },
+      "referents": "Ryan introduces himself to the kobold player, who confirms they can wash him and offers to open the gate. Yip precedes the clarification. The two builds have different capitalization and apostrophe spelling of the business name.",
+      "layer1": "Source read: the player is the kobold and Ryan is the customer; distinguish washing from business name.",
+      "layer2": "Italian field read: names and yip entry fit without assigning player gender; keep both source versions bound.",
+      "sourceIds": [
+        "yarn:line:a8779ebf",
+        "yarn:line:c3d3da41",
+        "yarn:line:55e3dd36",
+        "yarn:line:efb2d4af",
+        "yarn:line:7982d3d8",
+        "yarn:line:da17b746",
+        "yarn:line:f676b9a8",
+        "yarn:line:4c27b031",
+        "yarn:line:6046bedf",
+        "yarn:line:f15b014f",
+        "yarn:line:676b0638",
+        "yarn:line:82e2c158",
+        "yarn:line:14d2c62f",
+        "yarn:line:ae83cfb6",
+        "yarn:line:38b3c8c1",
+        "yarn:line:9b26ac5f",
+        "yarn:line:0d16ab28"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-first-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_1_nag",
       "orderedRowsSha256": "3da78ba017df2d75ad9cd155aaa2cc21ef7908a19186693c484b24e91984a34c",
       "count": 2,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player"
+      ],
+      "conceptUses": {},
+      "referents": "The visiting Ryan asks the player to approach where he can see them. No additional identity or gender is established by these rows.",
+      "layer1": "Source read: preserve request and routed speaker.",
+      "layer2": "Italian field read: no character-field defect established.",
+      "sourceIds": [
+        "yarn:line:71b651dd",
+        "yarn:line:e78656aa"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-first-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_1_required",
       "orderedRowsSha256": "bebfa61fc08f35ff73377024d2af73f42e1bbb8fdde5e85bf6288efd9eaecec0",
       "count": 9,
-      "status": "pending-semantic-union"
+      "status": "two-author-self-reads-reconciled-for-this-scene",
+      "entryIds": [
+        "dnw-ryan",
+        "dnw-player",
+        "dnw-dragon-washer",
+        "dnw-dragon",
+        "dnw-wash"
+      ],
+      "conceptUses": {
+        "dnw-dragon-washer": [
+          "yarn:line:c9e7bb1e",
+          "yarn:line:c70bea2d"
+        ],
+        "dnw-dragon": [
+          "yarn:line:c9e7bb1e"
+        ],
+        "dnw-wash": [
+          "yarn:line:c70bea2d",
+          "yarn:line:7d5ae3b4",
+          "yarn:line:f2ae89c4"
+        ]
+      },
+      "referents": "Ryan asks the player about being a certified dragon washer; the player says they have only cleaned for weeks, while Ryan previously used a hose at home.",
+      "layer1": "Source read: the player's profession and Ryan's previous practice belong to separate participants.",
+      "layer2": "Italian field read: the washer and wash concepts fit; do not assign gender to the player.",
+      "sourceIds": [
+        "yarn:line:c9e7bb1e",
+        "yarn:line:5fd7bc69",
+        "yarn:line:c70bea2d",
+        "yarn:line:eb6ae4c3",
+        "yarn:line:7d5ae3b4",
+        "yarn:line:513bed5a",
+        "yarn:line:f2ae89c4",
+        "yarn:line:649e8eb3",
+        "yarn:line:decf872a"
+      ],
+      "receipt": "glossary-review-resume.md#resume-08-ryan-first-visit",
+      "layerIndependence": "same author, not independent"
     },
     {
       "group": "Ryan_2_Outro",
