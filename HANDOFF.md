@@ -133,6 +133,28 @@ display maps need visual ordering by the lines actually selected during
 layout. Real Thai wraps, dynamic display values and typewriter advancement
 also remain unverified. The staged files are development artifacts.
 
+### RTL corpus and line geometry checkpoint
+
+`probe_complex_fonts.py --rtl-corpus --icu <ICU 78 libicuuc path>` prepares
+1,635 Arabic, 1,652 Persian and 1,640 Hebrew display plans across the two
+pinned source builds. The plans preserve TMP tags and explicit newlines,
+including eight multiline UI values per locale. They carry glyph cluster
+boundaries, UTF-16 offsets and paragraph levels. The generator reported no
+unsupported authored bindings in these three corpora. The staged report
+in `localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-paragraphs/`
+has SHA-256 `6d13a0b3a73d2aeafe2b34fcf3b977a45581383d2859e6ee9f2d35e50ae0ff8f`.
+
+The `prepared-text-layout` prototype reorders clusters within the lines TMP
+already selected. It checks exact prepared text offsets against TMP's
+character table and rejects cluster splits before moving any vertices.
+Standalone verification passed 19 ICU line-order comparisons and synthetic
+two-line mesh, partial cluster reveal, split and offset mismatch tests using
+the actual TMP structs from both pinned assemblies. Both assemblies expose
+a point after `OnPreRenderText` and before upload, in both the canvas and
+world-space renderers. The prototype has yet to be connected at those
+points. These checks did not exercise the game, the actual Yarn reveal
+sequence, dynamic values or the package builders.
+
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock
 512 × 512 multi-atlas chain admitted 1,536 distinct additional

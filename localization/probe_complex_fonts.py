@@ -21,6 +21,7 @@ import cjk_font_fallback as fallback
 import dialogue_locale as dialogue
 import inventory_yarn_bindings as bindings
 import paired_locale
+import rtl_display_plan
 import settings_locale as settings
 
 
@@ -161,6 +162,9 @@ def probe(args):
         raise ValueError('Thai corpus preparation requires ICU 78 for soft line breaks')
     if split_thai and split_thai('ภาษาไทย') != ['ภาษา', 'ไทย']:
         raise ValueError('ICU Thai dictionary line-break control failed')
+    if args.rtl_corpus and not args.icu:
+        raise ValueError('RTL corpus preparation requires ICU 78')
+    bidi = rtl_display_plan.Bidi(args.icu) if args.rtl_corpus else None
     sources = {'macos': args.macos_data, 'windows': args.windows_data}
     stock = {platform: stock_font(platform, data) for platform, data in sources.items()}
     args.output.mkdir()
@@ -196,6 +200,19 @@ def probe(args):
                 display = augmenter.shape_rich_text(logical)
                 shaper.validate_shaped_value(logical, display, augmenter, f'{locale} authored display')
                 mappings[logical] = display
+        rtl_plans, rtl_boundaries = [], defaultdict(set)
+        if bidi and locale in ('ar', 'fa', 'he'):
+            by_text = defaultdict(set)
+            for key in values:
+                for text in authored_display_values({key: values[key]}, rows):
+                    if augmenter.has_script(text):
+                        by_text[text].add(key)
+            for logical, keys in sorted(by_text.items()):
+                try:
+                    rtl_plans.append(rtl_display_plan.prepare(logical, TMP_TAG, bidi, augmenter))
+                except rtl_display_plan.PlanBoundaryError as error:
+                    rtl_boundaries[str(error)].update(keys)
+            (target / 'rtl-plans.json').write_text(json.dumps(rtl_plans, ensure_ascii=False) + '\n')
         prepared = target / 'probe.ttf'
         augmenter.save(prepared)
         with TTFont(prepared) as face:
@@ -215,6 +232,10 @@ def probe(args):
         item['displayMapEntries'] = len(records)
         item['softBreaks'] = sum(text.count('\u200b') - logical.count('\u200b')
                                  for logical, text in mappings.items())
+        if rtl_plans:
+            item['rtlPlans'] = len(rtl_plans)
+            item['rtlPlanSha256'] = dialogue.sha((target / 'rtl-plans.json').read_bytes())
+            item['rtlPlanBoundaries'] = {reason: sorted(keys) for reason, keys in rtl_boundaries.items()}
         item['displayMapScope'] = 'authored LTR strings and synthetic control' if corpus_mappings else 'synthetic only'
         for platform, data in sources.items():
             chars = defaultdict(set)
@@ -251,7 +272,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--ltr-corpus', action='store_true',
                         help='also stage all authored Thai and Hindi strings for offline verification')
-    parser.add_argument('--icu', type=Path, help='ICU 78 library for Thai dictionary breaks')
+    parser.add_argument('--rtl-corpus', action='store_true',
+                        help='stage logical-order glyph plans for authored RTL strings')
+    parser.add_argument('--icu', type=Path, help='ICU 78 library for line breaks and bidi')
     for name in ('macos-data', 'windows-data', 'site-catalog', 'worklist', 'fonts',
                  'hebrew-font', 'shaper', 'output'):
         parser.add_argument('--' + name, required=True, type=Path)
