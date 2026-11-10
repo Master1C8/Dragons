@@ -119,3 +119,11 @@ Compared the three relationship introductions, their conditional recovery choice
 Finding pending disposition: `yarn:line:07bd7f57` uses masculine `Zrobiłeś` for the player, whose gender is not specified in English. It also forms a two-line interrupted question with `yarn:line:6c193ba9`; revise that dependency together without losing the awkward flirtation or the subsequent aside.
 
 Cumulative distinct IDs read: 925 / 1,947; 1,022 remain. Author review only; independent acceptance remains pending.
+
+## Conrad fourth visit: relationship conversations and actions: 45 IDs read
+
+Compared the player/Conrad date plan, Conrad/Ryan date advice, player/Ryan discussion and four action responses against both English builds and Polish. The date partners remain distinct, as do the advice choices and their replies. Conrad's gryphon interest is in the player/Ryan conversation, not the Conrad/Ryan date. The node positions indicate alternatives but do not establish their live routing or whether action responses fire. Actual display fit and gameplay remain unrun.
+
+Finding pending disposition: `yarn:line:3a5d5ca4` uses `potrafi podrażnić` for “he'd push some buttons”. In the conversation about the gryphon Conrad likes, the English idiom may suggest arousal or provoke irritation; inspect scene and idiomatic context before settling this ambiguity.
+
+Cumulative distinct IDs read: 970 / 1,947; 977 remain. Author review only; independent acceptance remains pending.
