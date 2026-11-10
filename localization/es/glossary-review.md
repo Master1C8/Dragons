@@ -1,0 +1,28 @@
+# Spanish glossary review — 2026-11-10
+
+Current source raw hash `24f51ad99f3b78ef06e1ba8ebefb2ab9072c866f4860fe9839055b504ead8baf`; Spanish layer hash `3ddb6805226140429659f75367979afb69e06c55955dbe09c41a7b04bc3cf5cd` (sorted compact UTF-8 JSON without newline). Current source evidence hash `30402197c88a5d081bff7bae5482737424a2e9325ed286fedc66f316bd16815c`; review contract hash `5319d645d57ec7abc0c2b136d42ce4d2b14ce1e7f2e64a621bc64d62d63ef03a`. Game/source and worklist bindings are in `HANDOFF.md`.
+
+## Historical coverage and invalidation
+
+The two historical Spanish author self-reads (`SiteForMods/data/games/dragn-wash/glossary-reviews/es/layer-1.md`, SHA-256 `b8fee44caf7f8c971873fc693d5e9727908afab6a1c87bc61e2e5b591484fbdd`; `layer-2.md`, `23ada427b327e5da7b1d51e121563915da447e1541403ca5509719c838c2ebf8`) each report complete fidelity and separate Spanish-language readings for the old 27 fields. Their per-entry record `entry-hashes.json`, SHA-256 `9b23fc7dc713fb03104924cd11bf229a8f0611ee098a1d057b165ce4a0d9e1e7`, matches all 27 current source and locale entry hashes using sorted compact UTF-8 JSON without newline. The historical source layer's two author self-reads are recorded in `glossary-review.md`, SHA-256 `beec1fca6b83245b140ca18f53893d34e0931bb4296f89c712f4f068342a69d6`.
+
+The source and source-evidence diff from SiteForMods `5561f48f` to `29b0bb56` adds only `dnw-anonymous-dragon-speaker` and its evidence. The new role affects the generic dragon, player-neutrality and Ryan-cold-bark distinction. Both historical layers lack this entry; their old receipts cannot be presented as 28-entry reads. The old 27 hashes match, but the added evidence and full closure must be checked for each source and target layer.
+
+## Finding adjudication
+
+- `dnw-family-crest`: keep `cresta familiar`. The paired source `line:1ff9a04c`, `line:89c9a73b`, `line:18d418ab`, `line:8ee41fdc` describes an ornamental crest around the head which marks family identity. The earlier suggested `escudo familiar` wrongly implies a heraldic shield and is withdrawn.
+- `dnw-phoenix-feather`: keep the existing meaning. `line:5a632b75` says the colleague's physical form is reconstituting, and `line:bfeaec15` refers to the phoenix feather immediately afterward. The contextual specificity `reconstrucción del cuerpo` is supported; the entry does not assert an additional effect.
+
+No shared glossary change was made. No independent reviewer was involved. The new-role closure and receipt reconciliation follow below; the historical records and a structural pass alone do not establish readiness.
+
+## New-role closure: layer 1, author self-review
+
+Read the complete English source term and meaning, Spanish term and meaning, the current evidence paragraph and all 20 English worklist rows in the four named nodes on both builds. Rechecked player, dragon species, profession, Ryan and franchise role fields for scope and neutral-address interactions. The anonymous entry makes no claim that the four speakers are one individual; the evidence explicitly separates Ryan's cold-water barks. The Spanish `dragón` is the species label, not evidence of the speaker's sex. Its definition separately leaves identity, gender and pronouns unestablished and instructs neutral wording. A separate Spanish read found the term and complete meaning grammatical and usable. Source wording is concise, and the English evidence supports the role without establishing reachability. No correction proposed. This is an author self-review, not independent.
+
+## New-role closure: layer 2, author self-review
+
+In a separate read, compared the same complete new English and Spanish fields with all four scene exchanges and the current source-evidence paragraph, then checked source English and Spanish grammar and the neutral-address rule separately. The generic scenes do not establish a shared identity, sex or pronouns; their choices and unlabeled speech do not justify assigning Ryan or a masculine addressee. The Spanish meaning preserves each uncertainty and applies neutrality in each scene. Rechecked the linked player, dragon, washer and Ryan entries and the franchise distinction: no conflict found. Both builds' 20 source values match. No correction proposed. This is a second author self-review, not independent.
+
+The new source-entry digest is `929136153456556d2889090960049f8981a99affd848ad4f38c17987221a3e0d`; Spanish fields digest `7b47bfd772c8a744971b5748caf7a49c071738c7559d1e2a7bac8b7cc082e91a`, using the same sorted compact UTF-8 representation as the 27 historical entry receipts. Exact new-context IDs in source order: `7d791906`, `ec64a696`, `7a54a1e1`, `1dbf50b3`, `8b8f57c4`, `b965b4dd`, `2f55b3aa`, `9504ba33`, `63926ecd`, `f28fd15d`, `64bfd62a`, `4116f001`, `d726f776`, `fb47f998`, `6d77feef`, `f1946aab`, `67a46ddc`, `c4310942`, `52010e35`, `e85007ac` (each prefixed `yarn:line:`). Their actual text and platform bindings are in the pinned worklist. `generic-dragon-entries-20261110.md` SHA-256 `812418f4e2273e8688a75b0a6ecf1a4737824b33b4b65721861114c8b030c585` describes the owner decision and source/runtime search boundaries.
+
+Coverage reconciliation: each source and target author layer consists of its own historical 27-entry baseline plus the new-role closure above, bound to the unchanged 27 digests and explicit evidence diff. No entry was changed. The owner explicitly permits author self-review for this glossary; it does not establish independent review. The separate final game-text independent audit is still required. The source roster remains subject to the game's recorded unverified runtime reachability limits, not a claim that every role has been observed in play.
