@@ -227,3 +227,11 @@ Resume-08 Ryan egg row-level unit: nine paired rows add complete bounded speaker
 Resume-08 Ryan intimacy row-level unit: eight paired rows in two further scenes were read and hash-bound; character voice routing remains unresolved where unprefixed text does not identify the speaker. The row-level file has seven groups / 63 rows, including these two with explicit unresolved referents; 186 groups / 1,884 rows have no such row-level receipt. Earlier scoped receipts still apply. Full glossary author layers, independent acceptance and shared source/exact-preservation gates remain open. No game text was authored.
 
 Resume-08 short-scene row-level unit: ten groups / 25 paired rows add hash-bound referent and concept decisions. The row-level file covers 17 groups / 88 rows, including two intimacy groups with unresolved individual voice routing. Another 176 groups / 1,859 rows have no such row-level receipt; older verified evidence remains valid only at its bounded scope. Complete glossary author layers, independent acceptance and the shared source/exact-preservation gates remain open. No game text was authored.
+
+### Resume 08: Ryan muddy-service row unit
+
+The author performed paired English source and Italian glossary-field self-reviews for 10 more complete scenes (29 rows), including the hypothetical partner and Max referent boundaries. `glossary-row-review-resume-08.json` now holds hash-bound row decisions for 27 groups / 117 rows. This is partial coverage; 166 groups / 1,830 rows still lack these full row-level receipts, and previous scoped reviews must be reconciled at their actual scope. The shared source and exact-preservation gates remain open; no game text was authored and no independent review is claimed.
+
+### Resume 08: Alexander short-scene row unit
+
+The author reviewed another 13 complete groups / 17 rows, including Igwix, an unnamed alchemist and an unnamed apothecary; the latter two are not assigned an identity from these rows alone. The hash-bound row receipt now covers 40 groups / 134 rows; 153 groups / 1,813 rows remain without full row-level receipts, subject to reconciliation of scoped prior reviews. Both layers are author self-reviews, not independent review. Shared source and exact-preservation gates remain open.
