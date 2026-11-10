@@ -17,3 +17,7 @@ Author self-reviewed all 47 IDs in `Alexander_4_required` and `Alexander_4_Outro
 ## Conrad equipment and injury conversations
 
 Author self-reviewed all 53 IDs in `Conrad_Intro_3` and `Conrad_required_2`, retaining the equipment term, emphatic size regions, the different responses to his injury and his change from defensiveness to apology. Both stock readers and object encode/parse passed: macOS SHA-256 `27c939b1d6b75daa3f03d8ee5212658dacb7cb34e1eb3c29b2d8764d376617f2`; Windows `2e353404404e94e4c2f7ddd3dd25038ebf051307317472588d00f10f7f4de594`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary4/`.
+
+## Ryan third visit
+
+Author self-reviewed all 34 IDs in `Ryan_3_intro` and `Ryan_3_required`, preserving dialogue routing and source markup. Both stock source readers and object encode/parse passed: macOS SHA-256 `0b214ddcec9b01cc455ea8bd21d8fc25e45275bcbad8fca1df078f5e8be09366`; Windows `d97bb47b5dbb6e0246c294be4d9a5cc181dfbd6ccc535991f90d0e7b085686d7`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary5/`.
