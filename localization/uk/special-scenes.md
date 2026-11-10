@@ -1,10 +1,10 @@
 # Ukrainian special-scene wording
 
 Authoring input is [translation.json](translation.json). The first
-batch covers 46 of 1,947 package IDs in five of the 27 current
+batch covered 46 of 1,947 package IDs in five of the 27 current
 special-scene groups. It follows the common stage and review protocol
-in [HANDOFF.md](../../HANDOFF.md). Ordinary translation remains gated
-on the other cases and the applicable feasibility checks.
+in [HANDOFF.md](../../HANDOFF.md). The current state follows the
+batch and evidence history below.
 
 | Input | Identity |
 | --- | --- |
@@ -233,3 +233,42 @@ The accepted macOS run is `mac-retry/run/` and Windows is `win/`.
 | Focus and exit receipt | `6e4acd7154b8edd4a0a2b57a3675890d9ee5630a2dae3eff49f00f8945e75f8c` | `42924adaef3db811ddbe44c2628f46f730d9b2bdc554a9590f2b4d37959365d3` |
 | Option menu offscreen PNG | `7bd23b2b98f0fc7b13c2fd734d0e3f8b77d07eab2f80535c449b7127725cdd0e` | `46b21bfa386eedf4b7dfea0db749cb75c6ff666f70d50a69f37763de0383ad0e` |
 | Option menu full WebP80 preview | `2587381f02f41cd5997936812b94ccdc4edecaccc5dada2f336d573350e5ceba` | `d306d9f33756e88a93208e1d01ab37cb5f1f97b72978b499ab921c22e64b72dd` |
+
+Both full option previews were reviewed at their saved dimensions,
+640 × 480 and 1074 × 544. The two options and the complete route
+captions remained readable, with no visible glyph substitution,
+clipping or overlap. The gold lettering is pale on the white panel
+and the longer caption wraps close to the right edge. This review
+covers these two frames and viewports.
+
+The Ukrainian wording decisions and representative technical
+feasibility checks permit ordinary translation. The earlier
+[paired script probes](../evidence/european-text-paths-20261110.md)
+exercise dialogue, choices and settings. The current fixture covers
+the actual protected speaker body and styled choices. Remaining
+scene runs, final visual checks and independent editorial review
+retain their separate acceptance states.
+
+## First ordinary batch
+
+Both phone tutorials and Ryan's first introduction, wash conversation
+and farewell now have all 59 source IDs covered. The draft adds 56
+authored values and reuses three special-scene IDs. It contains
+463 of 1,947 package IDs with SHA-256
+`a54e657aecba9f92fbd97e1b51725489984263fa5fe6b312d9f0c7449e33fda9`.
+All 407 previous values are exact.
+
+Both calls use the glossary's branch name and separate the customer
+window, gate, crowbar and storage instructions. Ryan's washing
+certificate question avoids a gendered player title. Four minor
+source variants explicitly share one Ukrainian value across builds.
+The two authored ellipses preserve visible pauses.
+
+Both complete builders passed the diagnostic control. The two
+packages each changed exactly 54 Yarn values from the fourth-batch
+control. The two pauses, the compiled Yarn program and all other
+table values and metadata are exact. The packaged fonts cover all 88
+display code points used by the draft. This batch's checks are package
+read-back and source review. Its gameplay and final editorial checks
+remain pending. Receipts are under
+`localization/work/uk-ordinary-01-20261110.cvEBPG/`.

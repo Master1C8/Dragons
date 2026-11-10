@@ -9,15 +9,13 @@ platform JSON documents by value, including 30 platform-only rows and
 packages rebuilt successfully. The macOS game data and all 12 Windows
 replacement members matched the previously tested artifacts byte-for-byte.
 
-Ukrainian is at the special-scene decision gate. The
-[Ukrainian wording](localization/uk/special-scenes.md) covers 407 of
-1,947 package IDs, including the responses and follow-ups of the
-27 known cases. Both normal builders validated the draft in a control
-with English for the untouched IDs. The packaged Yarn programs passed
-22 desktop scenarios per platform. Isolated macOS and CrossOver players
-displayed the authored Alexander body and two styled choices, then
-advanced through stock input. Pixel review of the two choice frames
-is the next check at this gate.
+Ukrainian has entered ordinary translation. The
+[Ukrainian draft and checks](localization/uk/special-scenes.md) cover
+463 of 1,947 package IDs, including the 27 known special cases and
+the first Ryan visit and phone tutorials. Both normal builders passed
+a control with English for the untouched IDs. Representative Ukrainian
+dialogue and choices passed the paired Unity fixture checks, with the
+remaining scene runs and final visual review tracked separately.
 
 The [multilingual renderer baseline](localization/evidence/multilingual-renderer-baseline-20261110.md)
 covers all 30 target locales on the original TMP font chain. Both
