@@ -298,3 +298,13 @@ Self-edited 12 `Conrad_Outro_1` IDs, retaining approved `suporte`; 879 authored 
 ## Yarn film-title separator correction
 
 At the 879-ID checkpoint, the canonical dialogue reader rejected the introduced colon at `yarn:line:f1c14f75`. Use the stock dash in the Yarn choice while retaining the established glossary wording and its punctuation. Both platform readers accepted all 873 authored dialogue bindings after this one-ID edit. The authoring count remains 879, with 1,068 remaining. Translation SHA-256 `57c7b182579e619fa3977a87d55942c309fa917033121c81fb5e55a43a3ff681`. The negative and positive receipts are in `localization/work/pt-BR-yip-separator-fix-20261110.JMsduq/`. This is source-bound input verification. Final packages, gameplay, visual and independent editorial acceptance remain open.
+
+## Resume 08: Conrad second visit exit
+
+Self-edited 13 `Conrad_Outro_2` IDs from paired English (identical per platform). Total 892 authored of 1,947, 1,055 blank. Exactly these 13 IDs differ from commit `3dc64b3`; all 1,947 English source bindings are unchanged and each new target was read back on both platforms with ordered markup and placeholders preserved. The corrected `Yip-Man - O Último Yip` remains intact. Translation SHA-256 `98fac3aabd36d8d4a70f4cfdd52b9910f827e2ed66a48047a02ac5667dedbcc4`; source read-back `localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-08/conrad-outro-2-readback.json`, SHA-256 `c6cbb82529a603dfdbfd60e4a21cfd05236a80323e47410efee0cdbc35fa3024`. Package Yarn reader receipt `localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-08/conrad-outro-2-yarn-receipt.json`, SHA-256 `21b29eb815a8139d1ccd783a662f0dffdc832fba297463143f56a0fa4a247a17`, passes 886 dialogue bindings per platform. The validator materialized and reopened its temporary objects under the run-owned `resume-08/tmp` via `TMPDIR`, then removed them; recreate with:
+
+```sh
+TMPDIR="$PWD/localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-08/tmp" PYTHONPATH=localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/deps /private/tmp/dragnwash-unitypy-venv/bin/python localization/verify_authored_yarn.py localization/pt-BR/translation.json --locale pt-BR --inventory localization/work/source-inventory-20261107/combined-provisional-v42-20261110.json --yarn-scope localization/work/yarn-markers-20261110.ridbPA/yarn-scope-v42.json
+```
+
+This is author self-review and source/reader verification, not independent editorial audit or final package, runtime or visual acceptance. Continue remaining English-source scene batches.
