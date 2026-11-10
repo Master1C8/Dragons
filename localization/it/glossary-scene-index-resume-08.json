@@ -938,7 +938,7 @@
         "yarn:line:ccaabca3",
         "yarn:line:5a9abbd4"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_4_Conrad_Romanced",
@@ -966,7 +966,7 @@
       "ids": [
         "yarn:line:8fe11008"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_4_JerkOff_Start",
@@ -975,7 +975,7 @@
       "ids": [
         "yarn:line:6866c2c9"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_4_Mount_Finish",
@@ -984,7 +984,7 @@
       "ids": [
         "yarn:line:88d7e1e2"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_4_Mount_Start",
@@ -993,7 +993,7 @@
       "ids": [
         "yarn:line:f99eb2ff"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_4_Ryan_Conrad_Romanced",
@@ -1024,7 +1024,7 @@
       "ids": [
         "yarn:line:203bce10"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_5_JerkOff_Start",
@@ -1033,7 +1033,7 @@
       "ids": [
         "yarn:line:4d4d9986"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_5_Mount_Finish",
@@ -1042,7 +1042,7 @@
       "ids": [
         "yarn:line:684fb29a"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_5_Mount_Start",
@@ -1051,7 +1051,7 @@
       "ids": [
         "yarn:line:cacbff51"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_5_intro_conrad_romanced",
@@ -1256,7 +1256,7 @@
         "yarn:line:86154a64",
         "yarn:line:aa74448a"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_Intro",
@@ -1326,7 +1326,7 @@
         "yarn:line:f7382398",
         "yarn:line:db592d76"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_Intro_4",
@@ -1401,7 +1401,7 @@
         "yarn:line:f7fd34b2",
         "yarn:line:66e08b22"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_Outro",
@@ -1453,7 +1453,7 @@
         "yarn:line:3ed62e6b",
         "yarn:line:a8e6291c"
       ],
-      "resume08Status": "pending-complete-dependency-index"
+      "resume08Status": "two-author-reads-bounded"
     },
     {
       "group": "Conrad_Outro_2",
