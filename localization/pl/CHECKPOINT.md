@@ -215,3 +215,9 @@ Author self-reviewed 67 additional English-bound IDs across `Alexander_4_intro`,
 Author self-reviewed 47 additional source-bound IDs across `Alexander_5_intro` and `Alexander_5_required`, including diagnostic flag alternatives and both date conversations. Two pairs differ only by the English typo `your` / `you` and explicitly bind a shared Polish target. This is author review, not an independent game-text audit.
 
 `translation.json` now has **603 / 1,947 IDs**, SHA-256 `27a8f0dd81936421f62a071185b29e1991f95f59d620047594f0266a008edf5f`. `resume-01/add-alexander-fifth-visit-intro.py` and `resume-01/fifth-visit-intro-map.py` check the prior draft, English bindings, paired format and each platform reader. macOS accepts 603 and Windows 597 bindings; the complete guard reports 1,344 missing IDs. Complete packaging, authored runtime, final visual fit and independent audit remain unrun. Continue with the fifth visit's relationship choices and departure.
+
+### Alexander fifth visit: relationship and departure — continuation
+
+Author self-reviewed 39 additional IDs in `Alexander_5_romance_route` and `Alexander_5_Outro`, preserving both previously reviewed relationship choice targets and their markup. A source-fidelity review also restored the explicit species reference in `yarn:line:61c8781b` from the earlier third visit; its source says Alexander wants only this kobold to wash him. This is author self-review, not independent audit.
+
+`translation.json` now has **642 / 1,947 IDs**, SHA-256 `2df723d0f267d696f1003e85086fc145d26654a7fae5de5022b6ada7d9ea513f`. `resume-01/add-alexander-fifth-visit-ending.py` and `resume-01/fifth-visit-ending-map.py` validate the preceding draft and paired readers; macOS accepts 642 and Windows 636 bindings. The complete guard reports 1,305 missing IDs. Complete packages, authored runtime, final visual fit and independent audit remain unrun. Continue with the remaining English-source groups.
