@@ -153,3 +153,62 @@ rejects macOS inputs when run as Windows before producing a report.
 With an otherwise valid text entry, either a populated local object
 pointer or a populated Addressables GUID fails the entry check.
 The project suite ran 208 tests with five skips and no failures.
+
+## Text stored outside instructions in managed declarations
+
+The `--declaration-text` mode adds an inventory of nonblank string
+constants, optional parameter defaults and custom attribute values
+in ten game and supporting assemblies. It checks selected reflection
+and binding display API references across all 170 macOS and 172 Windows
+managed assemblies. Attribute decoding resolves dependencies only from
+the validated inventory. The sole version binding is the reference to
+netstandard 2.0.0.0 against the stock 2.1.0.0 facade on both platforms.
+
+| Evidence | macOS | Windows |
+| --- | ---: | ---: |
+| String occurrences in declarations | 3,258 | 2,952 |
+| Input System occurrences | 1,909 | 1,604 |
+| Selected metadata and display API references | 352 | 352 |
+
+The string difference consists of Input System platform layout
+declarations and the older macOS save manager's `savegame.dgn` constant.
+The 352 selected reference records match across builds.
+
+- The game assembly's declaration strings cover Unity inspector and
+  asset menus, graph nodes and ports, Yarn command names, old serialized
+  field names, generated metadata and the save filename. Its selected
+  runtime read of enum names formats the invalid dragon-state diagnostic
+  and sends it to `Debug.LogError`. The graph processor reads the input
+  and output attributes into its node-field and port definitions.
+- The Input System reads interaction and control display names and formats
+  human-readable bindings. All 20 direct references to the selected display
+  APIs are inside the Input System itself. In the pinned managed inventories,
+  no game code calls those APIs directly. The device labels, matching keys
+  and composite format strings stay in the unchanged Input System DLL.
+- Yarn's command dispatcher checks parameter-array metadata when parsing
+  arguments. Its usage-string formatter reads default values and has no
+  direct managed caller in these inventories. Unity Localization's existing
+  missing-translation constant matches the separately traced fallback.
+  The selected runtime assembly references to its display-name attribute
+  are the constructor's own property assignments.
+
+The audited declarations add no authoring IDs to the pinned worklists.
+The packaged managed declaration and untouched DLL comparisons provide
+their separate preservation evidence. This static pass covers the named
+declaration owners and selected reference paths.
+
+```sh
+dotnet "$text_setter_tool" macos "$macos_data/Managed" --declaration-text
+dotnet "$text_setter_tool" windows "$windows_data/Managed" --declaration-text
+```
+
+Both runs reproduce byte for byte. Legacy, extended and resource-route
+outputs match their preceding receipts on each platform. Running the mode
+as Windows against macOS inputs fails the assembly inventory check before
+output. The receipts and the selected IL trace are in
+`localization/work/metadata-text-20261110.pNTP0d/`.
+
+| Receipt | macOS SHA-256 | Windows SHA-256 |
+| --- | --- | --- |
+| Declaration strings and selected reads | `28b4741aeeb10a0dd6a6d81b8c631ff027d4d153ef240cc77c79533276dbb739` | `4585ed7176cf5bfb7f66b1836c36df5e71ca0a5fda8a92b09a5b7795faf4262a` |
+| Selected IL trace, identical on both | `f47f781b504554ec2cf87107436d9b80b49841bcb66e98337a38c86a30a4e471` | `f47f781b504554ec2cf87107436d9b80b49841bcb66e98337a38c86a30a4e471` |

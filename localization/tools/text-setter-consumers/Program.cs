@@ -4,9 +4,9 @@ using System.Text.Json;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 
-if ((args.Length != 2 && !(args.Length == 3 && args[2] is "--extended" or "--resource-routes")) ||
+if ((args.Length != 2 && !(args.Length == 3 && args[2] is "--extended" or "--resource-routes" or "--declaration-text")) ||
     (args[0] != "macos" && args[0] != "windows"))
-    throw new ArgumentException("Usage: text-setter-consumers macos|windows MANAGED_DIR [--extended|--resource-routes]");
+    throw new ArgumentException("Usage: text-setter-consumers macos|windows MANAGED_DIR [--extended|--resource-routes|--declaration-text]");
 bool extended = args.Length == 3 && args[2] == "--extended";
 bool resourceRoutes = args.Length == 3 && args[2] == "--resource-routes";
 string Sha(byte[] bytes) => Convert.ToHexString(SHA256.HashData(bytes)).ToLowerInvariant();
@@ -22,6 +22,11 @@ var files = Directory.GetFiles(args[1]).Where(p => p.EndsWith(".dll", StringComp
 if (files.Any(f => f.name.Any(c => c > 127))) throw new InvalidOperationException("Non-ASCII filename requires ordering review");
 var manifestHash = Sha(Encoding.UTF8.GetBytes(string.Concat(files.Select(f => $"{f.name}|{Sha(f.bytes)}\n"))));
 if (manifestHash != expected[args[0]]) throw new InvalidOperationException("Unsupported managed assembly inventory");
+if (args.Length == 3 && args[2] == "--declaration-text") {
+    Console.WriteLine(JsonSerializer.Serialize(DeclarationText.Scan(args[0], manifestHash, files),
+        new JsonSerializerOptions { WriteIndented = true }));
+    return;
+}
 IEnumerable<TypeDefinition> All(IEnumerable<TypeDefinition> ts) {
     foreach (var t in ts) { yield return t; foreach (var n in All(t.NestedTypes)) yield return n; }
 }
