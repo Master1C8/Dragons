@@ -118,3 +118,7 @@ Completed 15 remaining date-node IDs: all four date options and their continuati
 ### Alexander romance dependency closure
 
 Completed 39 additional context IDs for the invitation, choices and outcomes; all 41 indexed IDs in that group have self-edited wording and paired source-bound object checks. See [the decision and receipt](special-ryan-and-alexander-choices.md). Current authored total: 366/1,947. The broader special-case dependency review continues before ordinary batches; independent audit, packaging and final localized runtime/visual QA remain pending.
+
+### Continuation: Alexander gate and Conrad route closure
+
+Authored 54 additional stable IDs in the complete `Alexander_4_intro` and `Conrad_Outro_3` scenes; total **420/1,947**. All 27 special decisions remain author-reviewed, while their remaining dependent wording still needs reconciliation before ordinary batches. The gate exchange, three Yip meanings, both Conrad route outcomes and follow-ups are now complete. Both stock platform readers accepted all 63 IDs in these two scenes; object encoding/parse and negative English-source mismatch checks passed. Receipt and object hashes are in `special-date-yip.md`; scripts and partials are under `work/cli-terra-high-20261110.J0KLrx/es/resume-09/branch-closure/`. Translation SHA-256 at this checkpoint: `4bba5cd525eea554d02c36e8f2f80d826a312ad49e90622f6011eb8dca2e7015`. These checks are author self-review and in-memory read-back, not the independent game-text audit or final package/runtime/visual QA.
