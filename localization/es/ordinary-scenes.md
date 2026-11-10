@@ -53,3 +53,7 @@ Author self-reviewed 19 IDs in the date introduction, conversation and idle, ret
 ## Ryan muddy wash
 
 Author self-reviewed 27 IDs in the muddy wash, idle remarks and player prompts, preserving equipment references and wash-state distinctions. Both stock source readers and object encode/parse passed: macOS SHA-256 `33342b3eb98abd73ecdb10252032dd9745aeee77d7e830510ae34b75cada7bfd`; Windows `43b80672bc5e97c77a93abeb197cad867f13ecf1920f948a2c71e6524d9b94bf`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary13/`.
+
+## Alexander and Conrad idle wash
+
+Author self-reviewed 34 IDs in Alexander and Conrad idle remarks, wash states and interactions. For `yarn:line:19cedc30`, the Windows source typo has the same intended meaning as the macOS source; each platform field is retained and rendered identically. Both stock source readers and object encode/parse passed: macOS SHA-256 `272f9910f4e8557d6efa378b56380bdb61fe4e10da0cb9fa36dba7df7506653c`; Windows `ea55871b1253e01fb7994442cfafde806a2b3f4143b979b942e74238f87e6d6d`. Altered English was rejected at the source-mismatch guard on both. Scripts and partials: `work/cli-terra-high-20261110.J0KLrx/es/resume-09/ordinary14/`.
