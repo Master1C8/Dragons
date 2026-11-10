@@ -488,3 +488,8 @@ Both author layers now contain paired row-level decisions for `Alexander_5_intro
 ### Resume 09: Conrad injury and unnamed drake
 
 Both author layers now bind the 35 paired rows of `Conrad_required_2`. The complete Conrad, player and drake source and Italian fields were checked in context. Conrad describes an unnamed drake at a bar (`yarn:line:3112adad`, `1d73a343`); neither a specific named character nor the separate anonymous generic-scene speaker is established by those lines. His self-blame and the player’s reassurance are opposing perspectives, not a resolved factual attribution of blame. No new objective Italian field defect was established in this unit. The author self-reviews are not independent.
+
+
+### Resume 09: Conrad choices and yip
+
+Both author layers now bind all 38 paired `Conrad_Outro_3` rows. The applicable full source and Italian character, dragon, kobold and Yip entries were reconciled. The two marked choices have different route effects (`yarn:line:36ff6bd9`, `7e9d40e6`); Ryan is the dragon proposed in one choice, while Conrad is the player’s prospective date in the other. The contextual explanation of the player’s yip (`yarn:line:b058318f`) is one instance of its context-dependent meaning, not a fixed universal translation. The source apostrophe difference at `yarn:line:266836f8` is preserved in the paired binding. No new objective Italian field defect was identified. Both layers are author self-reviews, not independent acceptance.
