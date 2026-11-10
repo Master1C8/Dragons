@@ -183,7 +183,27 @@ unknown string left them unchanged. The test supplies synthetic character
 geometry to the dispatch core. A stock TMP component cannot be initialized
 in standalone .NET because Unity's native profiler calls are unavailable.
 The actual mesh entry point, cluster-split wrapping, RTL right alignment,
-dynamic values and Yarn's logical reveal adapter remain to be verified.
+dynamic values and Yarn's logical reveal path remain to be verified.
+
+### Yarn logical reveal adapter
+
+Use `prepared-text-probe --yarn STOCK_YARN_DLL LAYOUT_DLL NEW_YARN_DLL`
+to patch the pinned Yarn assembly. Both assemblies passed byte read-back
+and semantic comparison of all 717 method bodies after restoring the
+three narrow count, advance and completion edits in the verification
+copy. Callback dispatch and cancellation branches were preserved. The
+adapter uses the logical count only when TMP's measured prepared
+character table matches the exact plan. It then translates each logical
+step to a complete glyph cluster before passing it to TMP. Unmapped
+values retain stock progression.
+
+Use the version 2 TMP plan payload produced by the same patcher with
+this companion. Under `localization/work/complex-renderer-20261110.nYJmC2/
+yarn-reveal-pairs/`, the managed tests compared every logical reveal
+step in all 4,927 RTL plans on each platform against the corresponding
+source and glyph boundaries, including the final step. The game and
+its native Yarn/TMP lifecycle were not run. Thai and Hindi still need
+cluster metadata and the same reveal integration.
 
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)
 loaded all four regional Noto faces on both players. The stock

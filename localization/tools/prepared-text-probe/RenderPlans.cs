@@ -12,7 +12,7 @@ internal static class RenderPlans
     {
         using var stream = new MemoryStream();
         using var writer = new BinaryWriter(stream);
-        writer.Write(1);
+        writer.Write(2);
         writer.Write(rows.GetArrayLength());
         foreach (var row in rows.EnumerateArray())
         {
@@ -39,6 +39,7 @@ internal static class RenderPlans
             for (var i = 0; i < ends.Length; i++)
             {
                 writer.Write(ends[i]);
+                writer.Write(sourceEnds[i]);
                 writer.Write((byte)levels[i]);
                 writer.Write(reset[i]);
             }

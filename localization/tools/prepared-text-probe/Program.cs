@@ -5,8 +5,13 @@ using Mono.Cecil.Cil;
 
 const string HookName = "System.Void TMPro.TMP_Text::PopulateTextBackingArray(System.String,System.Int32,System.Int32)";
 const string HelperName = "Dragons.PreparedTextProbe";
+if (args is ["--yarn", var yarn, var layout, var outputYarn])
+{
+    YarnRevealPatch.Write(yarn, layout, outputYarn, module => Bodies(module));
+    return;
+}
 if (args.Length is not (3 or 4))
-    throw new ArgumentException("Expected STOCK_TMP_DLL DISPLAY_MAP_JSON NEW_TMP_DLL [LAYOUT_DLL]");
+    throw new ArgumentException("Expected STOCK_TMP_DLL DISPLAY_MAP_JSON NEW_TMP_DLL [LAYOUT_DLL] or --yarn STOCK_YARN_DLL LAYOUT_DLL NEW_YARN_DLL");
 var source = File.ReadAllBytes(args[0]);
 var sourceHash = Hash(source);
 if (sourceHash is not ("a25a11167a5a7339d611c364a6525fc172d19fe5caa6aa95d6866fd1d36d0743" or

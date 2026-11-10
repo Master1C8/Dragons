@@ -10,6 +10,12 @@ public static class MeshLayout
         ReadOnlySpan<int> clusterEnds, ReadOnlySpan<byte> levels,
         ReadOnlySpan<bool> trailingReset, byte paragraphLevel, int requestedVisible)
     {
+        return MatchesPrepared(info, preparedText, visibleOffsets) &&
+            TryApply(info, clusterEnds, levels, trailingReset, paragraphLevel, requestedVisible);
+    }
+
+    internal static bool MatchesPrepared(TMP_TextInfo info, string preparedText, ReadOnlySpan<int> visibleOffsets)
+    {
         if (info.characterCount != visibleOffsets.Length || info.characterInfo.Length < visibleOffsets.Length)
             return false;
         var previous = -1;
@@ -22,7 +28,7 @@ public static class MeshLayout
                 return false;
             previous = offset;
         }
-        return TryApply(info, clusterEnds, levels, trailingReset, paragraphLevel, requestedVisible);
+        return true;
     }
 
     // Input must be resolved against this exact TMP character table. Leave the
