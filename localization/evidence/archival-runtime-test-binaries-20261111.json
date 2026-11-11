@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "pointer": {
+    "source": "localization/tools/historical-transition-probe/move-pointer.c",
+    "originalSource": "localization/work/transition-builder-20261109.8zft9T/playthrough-20261109.f7XBcc/move-pointer.c",
+    "sourceSha256": "ebe7e8187fe7b8b52db82dd6e693a4fbcf390996e0e3f237a06b51e0344c135d",
+    "sourceBytes": 1562,
+    "sourceMode": "0o644",
+    "compiler": "x86_64-w64-mingw32-gcc 16.2.0",
+    "linker": "GNU ld 2.47.20260726",
+    "sourceDateEpoch": 1794226971,
+    "path": "localization/work/transition-builder-20261109.8zft9T/playthrough-20261109.f7XBcc/move-pointer.exe",
+    "sha256": "00c70340988a339dfab807a3371b44986acb7ef87e6ac5f07478ba1fb62c6f4e",
+    "bytes": 156694,
+    "mode": "0o755"
+  },
+  "steamLibrary": {
+    "draftRelease": "recovery-inputs-v0.2.1",
+    "patch": "Dragons-legacy-steam-library.zst",
+    "patchSha256": "a5d530db5a23a4c8c2d131aff66c23a76ddb807bde7a2eff507d3bb910d66984",
+    "patchBytes": 1372,
+    "zstd": "1.5.7",
+    "stockMember": "Contents/PlugIns/steam_api.bundle/Contents/MacOS/libsteam_api.dylib",
+    "stockSha256": "83b3b96699eba3885d7bc9393589dc74826cd920692fbf224400b8912aca30dc",
+    "path": "localization/work/installer-discovery.jx49dN/fixture/one/two/Renamed.app/Contents/PlugIns/steam_api.bundle/Contents/MacOS/libsteam_api.dylib",
+    "sha256": "bbd2e4008840a93e17d33fb6ce613471338f57ab2e41275b5c4516f6ca50c29c",
+    "bytes": 393437,
+    "mode": "0o755",
+    "architectures": ["x86_64", "arm64"]
+  }
+}

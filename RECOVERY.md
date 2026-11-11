@@ -665,6 +665,30 @@ uses the same recovery command for the original control frame and both
 logs named in the transition report. The downloaded archive reproduced
 all three files byte for byte.
 
+The [runtime test binary receipt](localization/evidence/archival-runtime-test-binaries-20261111.json)
+pins the Windows pointer test program and a historical macOS Steam library
+from the installer discovery fixture. Build the pointer program from
+the tracked C source with the recorded MinGW GCC and linker versions.
+
+```sh
+SOURCE_DATE_EPOCH=1794226971 x86_64-w64-mingw32-gcc -O2 -municode -mwindows \
+  localization/tools/historical-transition-probe/move-pointer.c -o "$fresh_pointer"
+chmod 755 "$fresh_pointer"
+```
+
+For the library, verify the owned macOS stock member and download the
+patch from the maintainer draft. Verify the patch hash and use
+Zstandard 1.5.7.
+
+```sh
+zstd -q -d --patch-from="$stock_steam_library" "$verified_patch" -o "$fresh_library"
+chmod 755 "$fresh_library"
+lipo -archs "$fresh_library"
+```
+
+Compare both outputs to their recorded sizes and SHA-256 hashes. The
+check matched both historical files byte for byte.
+
 The [rebuilt QA preview receipt](localization/evidence/archival-rebuilt-qa-previews-20261111.json.gz)
 records 31 previews reproduced from the original PNGs. Check the input
 PNG and installed preview helper hashes, then run the helper with the
