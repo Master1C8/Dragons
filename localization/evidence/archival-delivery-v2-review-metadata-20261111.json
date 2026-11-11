@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-delivery-v2-review-metadata.json.gz",
+  "archiveSha256": "b31a1a4c2b1930116d63899fe466106561a383ba0e64ed1691b97a2a823556f2",
+  "directory": "localization/work/screenshot-review.I5EEsi/delivery-v2",
+  "outputs": {
+    "localization/work/screenshot-review.I5EEsi/delivery-v2/manifest.json": {
+      "bytes": 11849,
+      "sha256": "da6f16411cfba30e66f978cc587b8d9b76f60a9e9f086e1878f42330d1046fe1",
+      "mode": "0o644"
+    },
+    "localization/work/screenshot-review.I5EEsi/delivery-v2/native-manifest.json": {
+      "bytes": 37341,
+      "sha256": "5dcb4db3afff07070faf6cc39b7eda5fa49686f60f853e6399eae659d885ab49",
+      "mode": "0o644"
+    },
+    "localization/work/screenshot-review.I5EEsi/delivery-v2/replacement-evidence.json": {
+      "bytes": 4758,
+      "sha256": "f9c6945b95fbbe7006ceda232c467a8da580dd93192e5a57211ccee4d1dc73f3",
+      "mode": "0o644"
+    },
+    "localization/work/screenshot-review.I5EEsi/delivery-v2/review-usage.json": {
+      "bytes": 53952,
+      "sha256": "0c8bad7efc298dd4f1b1aa08e4ef86500d439c1deeacf7f562f7a30a32786a1e",
+      "mode": "0o644"
+    },
+    "localization/work/screenshot-review.I5EEsi/delivery-v2/stock-slider-rounding.json": {
+      "bytes": 1675,
+      "sha256": "2e1784ed2a4e9425c7840c38f61b8bfd4128f6399d80bd3d0130aedff169e107",
+      "mode": "0o644"
+    },
+    "localization/work/screenshot-review.I5EEsi/delivery-v2/visual-review.json": {
+      "bytes": 181280,
+      "sha256": "f9e7c37212160c97a7d7e9feed572b1ba684e6d781005202047578fdde5ee422",
+      "mode": "0o644"
+    }
+  }
+}

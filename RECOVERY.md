@@ -1664,6 +1664,55 @@ All six rebuilt ZIPs matched their recorded SHA-256 values.
 The release card's visual delivery contains 150 published screenshot slots
 across 30 locales. The upload readback matched all 150 hosted files.
 
+The [earlier delivery review receipt](localization/evidence/archival-delivery-v2-review-metadata-20261111.json)
+pins six reports from the second screenshot delivery. Download its
+metadata archive from the maintainer draft. It stores the native
+manifest's image fields once and refers to them from the review report.
+Supply the original checkout path as text and a fresh destination:
+
+```sh
+python3.12 -B - "$metadata_archive" "$original_checkout" "$fresh_reports" <<'PY'
+import gzip, hashlib, json, sys
+from pathlib import Path
+
+receipt = Path("localization/evidence/archival-delivery-v2-review-metadata-20261111.json")
+spec = json.loads(receipt.read_text())
+archive, checkout, destination = map(Path, sys.argv[1:])
+raw = archive.read_bytes()
+assert hashlib.sha256(raw).hexdigest() == spec["archiveSha256"]
+bundle = json.loads(gzip.decompress(raw))
+marker = bundle["rootMarker"]
+
+def expand(value):
+    if isinstance(value, dict):
+        return {key: expand(child) for key, child in value.items()}
+    if isinstance(value, list):
+        return [expand(child) for child in value]
+    if isinstance(value, str) and value.startswith(marker):
+        return str(checkout / value.removeprefix(marker))
+    return value
+
+reports = expand(bundle["reports"])
+native = reports["native-manifest.json"]["images"]
+review = reports["visual-review.json"]
+review["images"] = [{**native[index], **details} for index, details in review["images"]]
+destination.mkdir()
+for name, report in reports.items():
+    relative = Path(spec["directory"]) / name
+    expected = spec["outputs"][relative.as_posix()]
+    data = (json.dumps(report, ensure_ascii=False, indent=2) + "\n").encode()
+    assert len(data) == expected["bytes"] and hashlib.sha256(data).hexdigest() == expected["sha256"]
+    output = destination / relative
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with output.open("xb") as stream:
+        stream.write(data)
+    output.chmod(int(expected["mode"], 8))
+PY
+```
+
+All six reports matched their original bytes and modes using the
+downloaded metadata archive.
+
 The [published gallery receipt](localization/evidence/archival-gallery-copies-20261111.json.gz)
 pins the locale, position and SHA-256 of every accepted screenshot. Run the
 read-only export with the canonical SiteForMods CLI and use a fresh private
