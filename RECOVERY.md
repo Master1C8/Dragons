@@ -425,6 +425,11 @@ Restore them with the same helper and the relevant probe path. The check
 restored and verified every duplicate by SHA-256 and mode.
 If the source is an accepted upload PNG, restore it first from the gallery
 source PNG archive described below.
+For an image whose hash is cited by the historical QA documents, use the
+[referenced QA image receipt](localization/evidence/archival-referenced-qa-images-20261111.json.gz).
+Download its archive from the maintainer draft, verify its SHA-256 and
+pass the archive directory as `--recovery-archives`. The check restored
+all 212 cited image files byte for byte.
 
 The [binary copy receipt](localization/evidence/archival-binary-copies-20261111.json.gz)
 maps historical executable and library copies to exact files in the stock
@@ -683,6 +688,20 @@ Restore it first if rebuilding the previous installer test directory. The
 old complete installers were superseded by the verified 0.2.1 archives.
 The previous Windows script is recoverable from the recorded Git revision.
 
+The [installer delta receipt](localization/evidence/archival-installer-deltas-20261111.json.gz)
+records eight historical installer deltas that can be reproduced from
+existing asset archives. Recover the exact target using `targetReceipt`
+and match `targetSha256`. Select `stockPath` from the verified stock app
+or Windows game directory for the recorded platform. Use the encoder
+from the accepted macOS installer and verify its SHA-256 first.
+
+```sh
+"$verified_encoder" -e "-A$application_header" -s "$stock_file" "$target_file" "$fresh_delta"
+```
+
+Use the receipt's `applicationHeader`, check the generated delta hash
+and apply each destination's recorded mode.
+
 The [French test asset receipt](localization/evidence/archival-french-stock-20261111.json)
 records the stock references used by the original French compaction. The
 [French compaction receipt](localization/evidence/archival-french-compaction-20261111.json.gz)
@@ -812,6 +831,18 @@ python3.12 -B localization/restore_review_diff.py \
 
 The helper uses temporary comparison trees and verifies the original
 SHA-256. All input blobs are reachable from `main`.
+
+The [static discovery report receipt](localization/evidence/archival-discovery-reports-20261111.json.gz)
+pins 12 outputs from the owned stock builds. Restore the stock Data
+directories and use the recorded tool and revision. For `managed`,
+export the recorded tool directory from Git, build its project in
+Release with the pinned .NET SDK and Mono.Cecil, then run the DLL with
+the platform, stock Managed directory and recorded mode. For
+`export_yarn_instructions.py`, supply the platform, stock Data directory
+and `--output`. The other Python reports write JSON to stdout. For
+`candidateStock`, copy the stock `.resS` and `.resource` files into a
+separate directory and pass it as `--candidate-data`. Compare the
+result to the recorded hash and restore each path's mode.
 
 The [final usage evidence receipt](localization/evidence/archival-final-usage-20261111.json)
 pins the private archive with the final Model usage manifest, supporting
