@@ -8,6 +8,7 @@ from pathlib import Path
 import re
 import subprocess
 import tempfile
+from xml.sax.saxutils import escape
 
 from restore_probe_assets import read_receipt, relative_path, sha256
 
@@ -45,7 +46,7 @@ def restore_source(row, build, source_dir=None):
     return destination
 
 
-def build_probe(row, build, historical_checkout, *, source_dir=None, game_managed=None):
+def build_probe(row, build, historical_checkout, *, source_dir=None, game_managed=None, cecil=None):
     project = restore_source(row['project'], build, source_dir)
     for source in row['sources']:
         restore_source(source, build, source_dir)
@@ -55,6 +56,17 @@ def build_probe(row, build, historical_checkout, *, source_dir=None, game_manage
         f"-p:SourceRevisionId={row['sourceRevisionId']}",
         f"-p:AssemblyName={row['assemblyName']}",
     ]
+    if 'cecilSha256' in row:
+        if cecil is None or sha256(cecil) != row['cecilSha256']:
+            raise ValueError('Mono.Cecil reference fingerprint mismatch')
+        if 'cecilHintPath' in row:
+            original = row['cecilHintPath'].encode()
+            data = project.read_bytes()
+            if data.count(original) != 1:
+                raise ValueError('Unexpected Mono.Cecil project hint path')
+            project.write_bytes(data.replace(original, escape(str(cecil)).encode()))
+        else:
+            command.append(f'-p:CecilPath={cecil}')
     if 'gameManaged' in row:
         if game_managed is None:
             raise ValueError('Pass --game-managed for the recorded platform')
@@ -99,6 +111,7 @@ def main():
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--source-dir', type=Path)
     parser.add_argument('--game-managed', type=Path)
+    parser.add_argument('--cecil', type=Path)
     args = parser.parse_args()
     receipt = read_receipt(args.receipt)
     if subprocess.check_output(['dotnet', '--version'], text=True).strip() != receipt['sdk']:
@@ -109,6 +122,7 @@ def main():
         build_probe(
             receipt['builds'][row['build']], build, Path(receipt['historicalCheckout']),
             source_dir=args.source_dir, game_managed=args.game_managed,
+            cecil=args.cecil.resolve(strict=True) if args.cecil else None,
         )
         data = verified_output(build, row)
     with args.output.open('xb') as out:

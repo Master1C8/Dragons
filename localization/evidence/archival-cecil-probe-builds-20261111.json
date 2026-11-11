@@ -1,0 +1,215 @@
+{
+  "schema": 1,
+  "sdk": "8.0.131",
+  "historicalCheckout": "/Users/antonkrutov/Desktop/Dragons",
+  "gameLaunched": false,
+  "builds": [
+    {
+      "project": {
+        "path": "localization/work/level-schema-probe/level-schema-probe.csproj",
+        "archived": true,
+        "sha256": "9e82630ddb02d4d40d791dd9f50318fb03a0b03edff9840a81994e075b613002"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/historical-managed-checks/level-schema/Program.cs",
+          "retained": true,
+          "sha256": "1c07559b599a5f3b60787006acbd8b42f2b759116be92f9139766a3f51d4f869"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "ff5460b7d58f0f7abbb08f84ff5bbc06b466ebaf",
+      "assemblyName": "level-schema-probe",
+      "objectPath": "localization/work/level-schema-probe/obj",
+      "embeddedSources": "all",
+      "cecilSha256": "831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf",
+      "cecilHintPath": "/Users/antonkrutov/.nuget/packages/mono.cecil/0.11.6/lib/netstandard2.0/Mono.Cecil.dll"
+    },
+    {
+      "project": {
+        "path": "localization/work/transition-builder-20261109.8zft9T/inspect/inspect.csproj",
+        "archived": true,
+        "sha256": "2ddc5d79deddf2e132cd1967761bf9c75b62efc0387e80a34f2caa479c4866df"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/historical-managed-checks/transition-inspect/Program.cs",
+          "retained": true,
+          "sha256": "f3da95adaa314d8526f15e68c6a026e85b4a3d883ca79eb7a90afab70469aff6"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "1f28b03e002bfe30df56f3cbda1c5592a11b3704",
+      "assemblyName": "inspect",
+      "objectPath": "localization/work/transition-builder-20261109.8zft9T/inspect/obj",
+      "embeddedSources": "all",
+      "cecilSha256": "831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf"
+    },
+    {
+      "project": {
+        "path": "localization/work/transition-builder-20261109.8zft9T/playthrough-20261109.f7XBcc/inspect/inspect.csproj",
+        "archived": true,
+        "sha256": "2ddc5d79deddf2e132cd1967761bf9c75b62efc0387e80a34f2caa479c4866df"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/historical-managed-checks/transition-playthrough-inspect/Program.cs",
+          "retained": true,
+          "sha256": "e4fa01b401fb6571a5f6db4ef252ea18058813e2b328540734db3ead9554f140"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "6eaf80f2d1d11635984db5117e68169c69b99cb4",
+      "assemblyName": "inspect",
+      "objectPath": "localization/work/transition-builder-20261109.8zft9T/playthrough-20261109.f7XBcc/inspect/obj",
+      "embeddedSources": "all",
+      "cecilSha256": "831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf"
+    },
+    {
+      "project": {
+        "path": "localization/work/yarn-schema-probe/probe.csproj",
+        "archived": true,
+        "sha256": "417ccb2658a7e86688405e2964af10e67829058f3387c1156599be8ce9ffb439"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/historical-managed-checks/yarn-schema/Program.cs",
+          "retained": true,
+          "sha256": "afc544a8db90c0c39405a92475b8a4b1dfd98898fb6bb96f00ffe09bf82e422c"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "4932c363ed85d4b016a57bf18d6f37d9cb8e5ea2",
+      "assemblyName": "probe",
+      "objectPath": "localization/work/yarn-schema-probe/obj",
+      "embeddedSources": "all",
+      "cecilSha256": "831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf",
+      "cecilHintPath": "/Users/antonkrutov/Desktop/Forest/tools/probe/bin/Debug/net8.0/Mono.Cecil.dll"
+    },
+    {
+      "project": {
+        "path": "localization/work/il-dump/probe.csproj",
+        "archived": true,
+        "sha256": "417ccb2658a7e86688405e2964af10e67829058f3387c1156599be8ce9ffb439"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/historical-managed-checks/il-dump/Program.cs",
+          "retained": true,
+          "sha256": "cb90a118dff71776e7a4f400496be546763adba9661a407746b05a6a1d439253"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "1b2d15c818cdd9f4685391f1716223f7c8ccf5dd",
+      "assemblyName": "probe",
+      "objectPath": "localization/work/il-dump/obj",
+      "embeddedSources": "all",
+      "cecilSha256": "831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf",
+      "cecilHintPath": "/Users/antonkrutov/Desktop/Forest/tools/probe/bin/Debug/net8.0/Mono.Cecil.dll"
+    }
+  ],
+  "outputs": {
+    "localization/work/level-schema-probe/bin/Debug/net8.0/level-schema-probe.pdb": {
+      "bytes": 17824,
+      "sha256": "d25716c9020c6ed4b8b0e9624180c786066f3b5dbb7c77660ed9461828b3fd00",
+      "mode": "0o644",
+      "build": 0,
+      "member": "bin/Debug/net8.0/level-schema-probe.pdb"
+    },
+    "localization/work/level-schema-probe/bin/Debug/net8.0/level-schema-probe.dll": {
+      "bytes": 22528,
+      "sha256": "c1aa26a5f65b26ba77376d32e999ff804738d363fc6979c4c94e74b32f57ffcc",
+      "mode": "0o644",
+      "build": 0,
+      "member": "bin/Debug/net8.0/level-schema-probe.dll"
+    },
+    "localization/work/transition-builder-20261109.8zft9T/inspect/bin/Debug/net8.0/inspect.pdb": {
+      "bytes": 11936,
+      "sha256": "ec71fba4b02613157dd6fbb7d6b404ade5817933764ef38f0cdc6403965950b6",
+      "mode": "0o644",
+      "build": 1,
+      "member": "bin/Debug/net8.0/inspect.pdb"
+    },
+    "localization/work/transition-builder-20261109.8zft9T/inspect/bin/Debug/net8.0/inspect.dll": {
+      "bytes": 6656,
+      "sha256": "bdc4e7458c12939b22ff42bd576cebd80d4d7be324ba536e7247ee9cc81e9e42",
+      "mode": "0o644",
+      "build": 1,
+      "member": "bin/Debug/net8.0/inspect.dll"
+    },
+    "localization/work/transition-builder-20261109.8zft9T/playthrough-20261109.f7XBcc/inspect/bin/Debug/net8.0/inspect.pdb": {
+      "bytes": 12452,
+      "sha256": "79a266b8ea0d045b8cd35dfc5f607a019128af4dc9b849109f0f3a1e2a2f40c0",
+      "mode": "0o644",
+      "build": 2,
+      "member": "bin/Debug/net8.0/inspect.pdb"
+    },
+    "localization/work/transition-builder-20261109.8zft9T/playthrough-20261109.f7XBcc/inspect/bin/Debug/net8.0/inspect.dll": {
+      "bytes": 8704,
+      "sha256": "3598f4b1b6ce171240410cb17c9d9c9a765e8423eb9898864b0cf3b38a1d5628",
+      "mode": "0o644",
+      "build": 2,
+      "member": "bin/Debug/net8.0/inspect.dll"
+    },
+    "localization/work/yarn-schema-probe/bin/Debug/net8.0/probe.pdb": {
+      "bytes": 12220,
+      "sha256": "2fb9b404bfd7bdf48cbaece2d9caaa9eefcd82b61efdf624b58627933b4bb2ca",
+      "mode": "0o644",
+      "build": 3,
+      "member": "bin/Debug/net8.0/probe.pdb"
+    },
+    "localization/work/yarn-schema-probe/bin/Debug/net8.0/probe.dll": {
+      "bytes": 7680,
+      "sha256": "d21a75b58b5993d912db44f9fda8cad3898ca4239c6fa539241dc71e1b8fc26f",
+      "mode": "0o644",
+      "build": 3,
+      "member": "bin/Debug/net8.0/probe.dll"
+    },
+    "localization/work/il-dump/bin/Debug/net8.0/probe.pdb": {
+      "bytes": 11896,
+      "sha256": "d588542b004ad9870871b125fa45ec30ca0d38e80f3f5b3e89de9db25fddfea6",
+      "mode": "0o644",
+      "build": 4,
+      "member": "bin/Debug/net8.0/probe.pdb"
+    },
+    "localization/work/il-dump/bin/Debug/net8.0/probe.dll": {
+      "bytes": 6144,
+      "sha256": "49411c440a9546bbaa0e72821a04445fc9d9bc2bdca9d59700debf70396bb235",
+      "mode": "0o644",
+      "build": 4,
+      "member": "bin/Debug/net8.0/probe.dll"
+    }
+  },
+  "sourceCopies": {
+    "localization/work/level-schema-probe/Program.cs": {
+      "bytes": 7713,
+      "sha256": "1c07559b599a5f3b60787006acbd8b42f2b759116be92f9139766a3f51d4f869",
+      "mode": "0o644",
+      "source": "localization/tools/historical-managed-checks/level-schema/Program.cs"
+    },
+    "localization/work/transition-builder-20261109.8zft9T/inspect/Program.cs": {
+      "bytes": 409,
+      "sha256": "f3da95adaa314d8526f15e68c6a026e85b4a3d883ca79eb7a90afab70469aff6",
+      "mode": "0o644",
+      "source": "localization/tools/historical-managed-checks/transition-inspect/Program.cs"
+    },
+    "localization/work/transition-builder-20261109.8zft9T/playthrough-20261109.f7XBcc/inspect/Program.cs": {
+      "bytes": 717,
+      "sha256": "e4fa01b401fb6571a5f6db4ef252ea18058813e2b328540734db3ead9554f140",
+      "mode": "0o644",
+      "source": "localization/tools/historical-managed-checks/transition-playthrough-inspect/Program.cs"
+    },
+    "localization/work/yarn-schema-probe/Program.cs": {
+      "bytes": 790,
+      "sha256": "afc544a8db90c0c39405a92475b8a4b1dfd98898fb6bb96f00ffe09bf82e422c",
+      "mode": "0o644",
+      "source": "localization/tools/historical-managed-checks/yarn-schema/Program.cs"
+    },
+    "localization/work/il-dump/Program.cs": {
+      "bytes": 310,
+      "sha256": "cb90a118dff71776e7a4f400496be546763adba9661a407746b05a6a1d439253",
+      "mode": "0o644",
+      "source": "localization/tools/historical-managed-checks/il-dump/Program.cs"
+    }
+  }
+}

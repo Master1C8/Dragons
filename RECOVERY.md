@@ -988,6 +988,25 @@ later Git snapshots whose bytes match the original PDB checksums.
 The recorded build revision remains the value used by the compiler.
 All 15 outputs and 15 dependent copies matched.
 
+The [Mono.Cecil probe build receipt](localization/evidence/archival-cecil-probe-builds-20261111.json)
+pins five additional DLL and PDB pairs. Restore the project descriptors
+using the historical managed source receipt below. The matching C#
+sources are tracked under `localization/tools/historical-managed-checks`.
+Pass Mono.Cecil 0.11.6 for .NET Standard 2.0 to the same build helper:
+
+```sh
+python3.12 -B localization/restore_historical_dotnet_probe.py \
+  localization/evidence/archival-cecil-probe-builds-20261111.json \
+  "$recorded_path" --source-dir "$restored_sources" \
+  --cecil "$verified_mono_cecil" --output "$fresh_file"
+```
+
+The helper verifies the assembly hash and supplies its current path to
+MSBuild. For projects with a fixed historical hint path it updates only
+the staged project file. The check matched all ten binaries and ten
+dependent entries in the binary copy receipt. Restore the needed source
+binary first when replaying those copies.
+
 The [historical managed source receipt](localization/evidence/archival-historical-managed-source-deltas-20261111.json)
 pins 125 project descriptors required by the generated metadata receipt
 and 22 C# sources used by technical evidence or the text copy receipt.
