@@ -382,6 +382,46 @@ The five rebuilt Windows ZIPs matched the recorded SHA-256. The two rebuilt
 macOS bundles matched the recorded manifest and every surviving file and
 directory. Both passed strict code signature checks.
 
+The [historical control receipt](localization/evidence/archival-historical-controls-20261111.json.gz)
+records Russian and Ukrainian controls, the Arabic and Persian caption
+packages, and two earlier standalone Unity test assets. Download the two
+small archives named in the receipt from the maintainer draft and verify
+their hashes and the hashes of the members you use. Extract each
+`inputPrefix` as its own directory. Pass that directory as the Windows
+synthetic, structure or guard input. For the Ukrainian staged assets, pass
+its `structure-control.json` to the normal builders.
+
+Use the normal build command above with the receipt's builder revision,
+archived v42 inputs, Ukrainian tools and accepted speaker runtime. The
+Russian pair uses the tracked Russian translation at that revision.
+Compare its Windows ZIP directly. On macOS compare the manifest, the
+recorded surviving files and directories, and the strict code signature.
+For the Ukrainian staged assets, recover `sharedassets1.assets` from the
+rebuilt macOS app or Windows ZIP and check its recorded fingerprint.
+
+For the Arabic and Persian captions, use the tracked locale at
+`builderRevision` with the archived `wrap` shaped tools, layout, plans and
+license. Use the builder modules from this receipt's revision. For the
+synthetic, structure and caption ZIPs, verify `basePackageSha256` before
+restoring the historical ZIP from the rebuilt one. Only caption restoration
+requires the object archive. The structure ZIP also has a historical
+manifest timestamp and mode recorded in the receipt.
+
+```sh
+python3.12 -B localization/restore_historical_control.py \
+  localization/evidence/archival-historical-controls-20261111.json.gz "$control_name" \
+  --base "$verified_base" --archive "$verified_archive" --output "$fresh_output"
+```
+
+For `transition`, the base is `windows-choice-probe-v2.assets` restored from
+the historical probe delta receipt. Use the object archive. For
+`speaker-legacy`, the base is stock macOS `sharedassets1.assets` and the
+archive is the control inputs ZIP. This restores a historical synthetic
+test asset containing an intentional speaker delimiter. Verify the final
+hashes before using any of these outputs to restore older duplicates,
+including the Russian Windows duplicates recorded in
+`archival-duplicate-packages-20261111.json`.
+
 The [CLI and CJK package receipt](localization/evidence/archival-cli-cjk-packages-20261111.json.gz)
 records the same rebuild procedure for the two Polish CLI drafts on both
 platforms and the German Windows candidate. Use the exact translation from
