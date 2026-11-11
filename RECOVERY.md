@@ -257,6 +257,20 @@ The helper checks the decoder, stock inputs, delta files and restored asset
 hashes. The archival check restored all 187 distinct release assets before
 removing local copies.
 
+The [stock and ZIP member receipt](localization/evidence/archival-stock-and-zip-members-20261111.json.gz)
+maps remaining byte-identical historical copies to the restored stock macOS
+app, owned Windows game directory, accepted installer resources, or retained
+local test ZIPs. Restore files within an existing historical test directory:
+
+```sh
+python3.12 -B localization/restore_archived_members.py \
+  localization/evidence/archival-stock-and-zip-members-20261111.json.gz \
+  "$probe_path" --macos-stock "$recovery/Stock.app" \
+  --windows-stock "$windows_game_root" --accepted "$recovery/restored"
+```
+
+The recovery check restored 1,148 files and verified their SHA-256 and modes.
+
 The [German batch receipt](localization/evidence/archival-de-partial-20261111.json)
 and the [early German and French batch receipt](localization/evidence/archival-de-fr-early-20261111.json)
 cover 41 intermediate assets whose rebuilds matched byte for byte. Download
