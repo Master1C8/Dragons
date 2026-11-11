@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-cli-event-initial-launch-index.json.gz",
+  "ripgrep": "15.2.0",
+  "outputs": {
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/events.jsonl": {
+      "bytes": 691849,
+      "sha256": "54fd0b5d34ad751e347dd921545e72f2ff8de1450cf8f296205a552b02c86fcd",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/events.jsonl": {
+      "bytes": 571344,
+      "sha256": "f2ec0cca5776e3602ad686ec8ed4e54f5b722fe8c90bffd400f86e3719adcb1a",
+      "mode": "0o644"
+    }
+  },
+  "archiveSha256": "c334a2a27c8cf26b20ca4be711e8f07c24e440e1768fe8fe41917e9d031c4af8",
+  "journalCount": 10
+}

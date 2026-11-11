@@ -153,7 +153,11 @@ def rebuild(
                 '--color', 'never',
                 '-e', source['regex'], '-',
             ], input=text.encode())
-            rendered = ''.join(raw.decode().splitlines(keepends=True)[:source['lines']])
+            label = source.get('label')
+            prefix = f'{relative_path(label)}:' if label else ''
+            rendered = ''.join(
+                prefix + line for line in raw.decode().splitlines(keepends=True)[:source['lines']]
+            )
             if hashlib.sha256(rendered.encode()).hexdigest() != source['renderedSha256']:
                 raise ValueError('CLI output Git search fingerprint mismatch')
             start = source['start']
