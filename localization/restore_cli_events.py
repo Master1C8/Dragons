@@ -176,7 +176,14 @@ def rebuild(
             ])
             if hashlib.sha256(raw).hexdigest() != source['sha256']:
                 raise ValueError('CLI output Git diff fingerprint mismatch')
-            return raw.decode('utf-8')
+            text = raw.decode('utf-8')
+            if 'start' not in source:
+                return text
+            start = source['start']
+            end = start + source['length']
+            if not 0 <= start < end <= len(text):
+                raise ValueError('Unexpected CLI output Git diff range')
+            return text[start:end]
         if part.keys() == {'worklistReadback'}:
             source = part['worklistReadback']
             if worklist is None or sha256(worklist) != source['worklistSha256']:
@@ -221,12 +228,17 @@ def rebuild(
             line = source['line']
             if not 0 < line <= len(lines):
                 raise ValueError('Unexpected CLI output source stream line')
-            text = f"{source['path']}:{line}:{lines[line - 1]}\n"
+            separator = source.get('separator', ':')
+            if separator not in {':', '-'}:
+                raise ValueError('Unexpected CLI output source stream separator')
+            text = f"{source['path']}{separator}{line}{separator}{lines[line - 1]}\n"
             start = source['start']
             end = start + source['length']
             if not 0 <= start < end <= len(text):
                 raise ValueError('Unexpected CLI output source stream range')
             return text[start:end]
+        if part == {'searchSeparator': True}:
+            return '--\n'
         if part.keys() == {'journalSlice'}:
             source = part['journalSlice']
             if slice_records is None:

@@ -2180,6 +2180,15 @@ paths in `requiredStreams` and verify their hashes. Pass
 helper reproduces the numbered search results from those streams and
 reruns the French case-sensitive search against the pinned Git blob.
 
+The [Portuguese search stream receipt](localization/evidence/archival-cli-event-portuguese-search-20261111.json)
+uses the same command for three Brazilian Portuguese continuations.
+Restore `pt-BR/resume-01/events.jsonl` from the main CLI event stream
+receipt into the fresh input root at its checkout-relative path. Then
+restore the three streams in `restoreOrder` into that same root. The
+later streams read numbered lines from the restored `resume-03` stream.
+The helper verifies those source hashes and recreates the pinned Git
+diff range. All three streams matched from the downloaded indexes.
+
 The [Korean worklist stream receipt](localization/evidence/archival-cli-event-korean-worklist-20261111.json)
 uses the same command with `--worklist "$shared_worklist"`. Rebuild
 the source-only `es-419` worklist named `000.json` in the worklist and
