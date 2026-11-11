@@ -1821,6 +1821,12 @@ The helper verifies the journal record hash and the extracted file
 fingerprint before writing the file. The check matched all 438 files
 byte for byte and verified their modes.
 
+Use the same command with the
+[journal text receipt](localization/evidence/archival-journal-text-files-20261111.json.gz)
+to restore 242 historical reports, draft inputs and build logs. The
+check matched every file's bytes and mode. These are the original
+working copies from their recorded runs.
+
 The [visual checklist receipt](localization/evidence/archival-visual-checklists-20261111.json.gz)
 records 126 runtime copies of a shared QA template. Download the exact
 SiteForMods revision in the receipt into a scratch directory and verify
