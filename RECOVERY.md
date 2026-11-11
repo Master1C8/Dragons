@@ -245,6 +245,25 @@ The helper checks the decoder, stock inputs, delta files and restored asset
 hashes. The archival check restored all 187 distinct release assets before
 removing local copies.
 
+The [historical German batch receipt](localization/evidence/archival-de-partial-20261111.json)
+covers 18 intermediate assets whose rebuilds matched byte for byte. Download
+the receipt's input archive from the `recovery-inputs-v0.2.1` maintainer draft,
+check its archive hash and extract the dialogue JSON files. Match each JSON
+and rebuilt asset to the SHA-256 in the receipt. Set `DRAGONS_SITE_LOCALES`
+to the canonical locale catalog and use the stock Data paths described above:
+
+```sh
+python3.12 -B localization/dialogue_locale.py "$macos_stock_data/sharedassets1.assets" \
+  --locale "$macos_batch_json" --output "$macos_batch_output"
+python3.12 -B localization/windows_ui_locale.py "$windows_stock_data" sharedassets1.assets \
+  --requested-locale de --dialogue-locale-file "$windows_batch_json" --output "$windows_batch_output"
+```
+
+The [historical installer receipt](localization/evidence/archival-obsolete-installers-20261111.json)
+records the superseded build outputs. Its intermediate Windows installer
+script can be recreated by extracting the compressed patch and applying it to
+the Git blob named in the receipt. Compare the result to the recorded SHA-256.
+
 The [Windows stock ZIP receipt](localization/evidence/archival-windows-stock-zip-20261111.json)
 lists all 287 files in the old Parallels test fixture. To recreate the
 fixture, ZIP those relative paths from the owned Windows stock game directory

@@ -6,33 +6,38 @@
       "archives": {
         "Dragons-Windows.zip": "a4b517a226b022ce037dcf9439b3307dc8d14cc4eb625f9ba664bc59ce03a524",
         "Dragons-macOS.zip": "03f198d3ca46de962e3b0462c5048b57687323b711405f31bb135f3869c8605b"
-      }
+      },
+      "bundleVerification": "Each staged bundle file matched the corresponding ZIP member by SHA-256."
     },
     {
       "path": "localization/work/installer-discovery.jx49dN/final",
       "archives": {
         "Dragons-Windows.zip": "b9a75af814adb14661ff7458cef07eb0c70d8b8a9eda4799f18fe8724e27ca2a",
         "Dragons-macOS.zip": "9e080be9bbc5ae3b2526c1597e2f6179614103034198504ec6bb3967cd70f0ed"
-      }
+      },
+      "bundleVerification": "Each staged bundle file matched the corresponding ZIP member by SHA-256."
     },
     {
       "path": "localization/work/installer-discovery.jx49dN/universal",
       "archives": {
         "Dragons-Windows.zip": "6b4747281b0241dfafec04da623b593d7d2b71cd7f613ca74297643ba0e7781b",
         "Dragons-macOS.zip": "c68cf7218f3b58dc51af770553425f00305481741b322894daa73f92f609f776"
-      }
+      },
+      "bundleVerification": "Each staged bundle file matched the corresponding ZIP member by SHA-256."
     },
     {
       "path": "localization/work/installer-discovery.jx49dN/previous-dist",
       "archives": {
         "Dragons-Windows.zip": "b3235dcd348a7f1a4773b879b1bee5c1371a7fa4422e33358d389b931e4d8d88",
         "Dragons-macOS.zip": "245a3a8ed5ba957858eff1a6858a9ab01f2523b960fa21a96f730e437f5b06ee"
-      }
+      },
+      "bundleVerification": "Each staged bundle file matched the corresponding ZIP member by SHA-256."
     },
     {
       "path": "localization/work/installer-discovery.jx49dN/unpacked",
       "archives": {},
-      "contents": "extracted macOS installer"
+      "contents": "extracted macOS installer",
+      "retained": "The macOS executable differs from the executable in every verified ZIP."
     }
   ],
   "intermediateWindowsSource": {

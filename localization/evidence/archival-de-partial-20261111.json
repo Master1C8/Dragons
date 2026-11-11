@@ -1,0 +1,152 @@
+{
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-de-partial-build-inputs.zip",
+  "archiveSha256": "ea2c7f079b3bdb7ef21fc20a3ddc144c97467e3db921d59d1b790adbf80f1081",
+  "verifiedBuildRevision": "0dbd135",
+  "outputs": [
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch10.assets",
+      "sha256": "fe8ecf0310c05bceeccecc7bd773633e9d9998f22641e4305b30f632f4c7c82a",
+      "bytes": 105910928,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch10-dialogue.json",
+      "inputSha256": "8138aff10c83e5a2f5fb8eea3c8c9c79acf5aebe8a7ed5ea0179534e57ba18c9",
+      "platform": "macos"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch10.assets",
+      "sha256": "b85cc06c91c07ab057dc028dbdec7b718c5fc764a68a7429dc0e444717bec4d5",
+      "bytes": 106463144,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch10-dialogue.json",
+      "inputSha256": "0a3327ea5fa7aa040bd06b0b2a4f1b879e0e4ad126f25913de2a9af6727ea11c",
+      "platform": "windows"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch11.assets",
+      "sha256": "d692a783be64fa79791f0478decf7e8b4daa5763e9d8894f3f22df3b5882ecc6",
+      "bytes": 105911032,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch11-dialogue.json",
+      "inputSha256": "5ac34e113a36aca7fa31be1512db41432214ea198a76ab02dc12d6ee49170934",
+      "platform": "macos"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch11.assets",
+      "sha256": "d51a8db2de17633c477ea8964f08c9df7780045d06f9501f9470e8aa279a3b06",
+      "bytes": 106463248,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch11-dialogue.json",
+      "inputSha256": "077476920e5ec65a0fc3dde9fa6361d82bc43157d0b3e25474560ddfecdbc6cc",
+      "platform": "windows"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch12.assets",
+      "sha256": "e4b59d5de7f634acf0ed5eab0c4babdfaf1652f33816967553a2ef4edd4080a2",
+      "bytes": 105911232,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch12-dialogue.json",
+      "inputSha256": "58ee216e1130d66c6ee95c28772a751532716448dd1c246228e9d5cfa45648a0",
+      "platform": "macos"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch12.assets",
+      "sha256": "94a68d7e89263de1d3c9e6cf2dab453d40ae786fd2ac5599da015388cebc1ba1",
+      "bytes": 106463448,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch12-dialogue.json",
+      "inputSha256": "8cbd97433b54ea4f9ed28059e6cb0835ed9171453bf748b7a5b443a1901ed137",
+      "platform": "windows"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch13.assets",
+      "sha256": "8abe2832b308e0aeb8518b77bc2d72be9b53c1de3d9944d5f55a695d7fd8acba",
+      "bytes": 105911464,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch13-dialogue.json",
+      "inputSha256": "21a3a3c72e46e8018511f077b74868cd8428ce8d8e1b2dd4d04bf367bffe54ed",
+      "platform": "macos"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch13.assets",
+      "sha256": "3080937fa6008fd6e6696bbb196ad2d54e230c0c59d7d944404b8d4b78c90872",
+      "bytes": 106463680,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch13-dialogue.json",
+      "inputSha256": "e37a41a525db3ceb507370ae2044cf5405cff649981a5cf3167bc489719de5ef",
+      "platform": "windows"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch14.assets",
+      "sha256": "a4f466b68e1b6a2b20667e891bb7225011d5fea40464e505ebbe989c534431b0",
+      "bytes": 105912128,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch14-dialogue.json",
+      "inputSha256": "e892a9b8b6477cee424987bf2ac17375cbad7455e63f870c2c07e0b7d7e8fe76",
+      "platform": "macos"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch14.assets",
+      "sha256": "2c986b3b21798a7a75fdf7888b6afff3ea8a615e0ebff03230cb537f5201d6be",
+      "bytes": 106464344,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch14-dialogue.json",
+      "inputSha256": "e807b99779d3f27a0c3262b891c04f8167ef94ade2b09ac9c35c6ffe9503fe21",
+      "platform": "windows"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch15.assets",
+      "sha256": "dee8fa9ce65d21207d41b4b752c157e297d559f3f6829fe53c7c07e93bb14d4c",
+      "bytes": 105912136,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch15-dialogue.json",
+      "inputSha256": "21fbe582c42c1f47112cbe7bb648708c1d470d59d0a1d41ab2b64767d963b6db",
+      "platform": "macos"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch15.assets",
+      "sha256": "98cef4110aaf5c207f4fedade0c48148ebbc15b9bdc389a371719f3f96750cee",
+      "bytes": 106464352,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch15-dialogue.json",
+      "inputSha256": "56fe445502ae76d05a4b07438d575efa81f3d52e62c6b0f373f9f4805168a581",
+      "platform": "windows"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch16.assets",
+      "sha256": "0d63d031872908a04a4c4aba4722940072a94879fd6c7d8adee7bd34ed09c0e5",
+      "bytes": 105912424,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch16-dialogue.json",
+      "inputSha256": "83661af50960fcb3800037062bf0be95440eb7ad79e5ac1da53e373610d2adbb",
+      "platform": "macos"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch16.assets",
+      "sha256": "a51a787ad25f41abc1a83c685c62728015ad30123b6f5d0639fcab79b8419a8a",
+      "bytes": 106464640,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch16-dialogue.json",
+      "inputSha256": "3cf2f19946c4af20648a75ce8b885a62de4fba3582080735f35fafd107dfb523",
+      "platform": "windows"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch17.assets",
+      "sha256": "115493bad9fc99b82105552f67bf9e11f69194645de70191353526a28f62bac8",
+      "bytes": 105912648,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch17-dialogue.json",
+      "inputSha256": "16d055e0b5ae9f769552e6d7013b5a7c814ccb5f448b0546daa72d3a8a2f2918",
+      "platform": "macos"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch17.assets",
+      "sha256": "fdc2164bd22ec5e4cc31fd54289afa0586a626e15bba1dccf4db871d75bea484",
+      "bytes": 106464864,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch17-dialogue.json",
+      "inputSha256": "1ba710c7de28d3692a73559430adec32beeb759fb8658cb30e4555d44c19b6f8",
+      "platform": "windows"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch18.assets",
+      "sha256": "da2072fbd7b074df3d114578071bfbd56caf0ecdcbd77337273ec701633b60de",
+      "bytes": 105912656,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch18-dialogue.json",
+      "inputSha256": "242b9e1e2a8113b0103e3fc4f6693ac5058d1d0427dcfe4f469ee5896b99e438",
+      "platform": "macos"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch18.assets",
+      "sha256": "8fcfeebac3483dd402b3168e0cace41acd447fa4d6f50ff43967cb60ea7f50d4",
+      "bytes": 106464872,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch18-dialogue.json",
+      "inputSha256": "b595d04adf4bd5afd9da347ad09871165c152cb14635c9859cd5d2a7f86fa477",
+      "platform": "windows"
+    }
+  ]
+}
