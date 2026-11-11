@@ -126,6 +126,29 @@ original path recorded in the `delta` receipt. Copy the corresponding
 verified bytes and apply the recorded mode. The check restored all 16
 snapshots and matched all 67 copies to their recovered sources.
 
+The [early inventory report receipt](localization/evidence/archival-initial-inventory-reports-20261111.json.gz)
+pins 19 reports built from the original game data. Export the listed
+revision and run its tool against the verified stock paths. For
+`map_yarn_context.py`, pass both Data paths as `--macos-data` and
+`--windows-data`. The hierarchy and level tools take platform and Data
+path. The UI exporter takes the macOS Data path, the recorded asset
+and `--export "$base_report"`.
+
+Build the two managed scanners in Release with the pinned SDK and
+Mono.Cecil. Pass platform and the verified stock Managed directory to
+`text-setter-consumers`. Pass platform and the stock
+`Assembly-CSharp.dll` to `managed-strings`. Capture stdout as the base
+report for both scanners and the Python inventory commands. Then run:
+
+```sh
+python3.12 -B localization/restore_initial_inventory_report.py \
+  "$early_inventory_receipt" "$recorded_path" --base "$base_report" \
+  --output "$fresh_report"
+```
+
+The helper verifies both fingerprints and reapplies the early JSON
+layout and fields recorded in the receipt.
+
 For the nine locales with additional font inputs, download
 `Dragons-font-build-inputs.zip` from the same maintainer draft. Verify its
 SHA-256 before extracting it into `$recovery/fonts`:
@@ -996,6 +1019,13 @@ its SHA-256. Create the needed destination parents and restore a selected
 test directory with `restore_archived_members.py` and `--recovery-archives`.
 The archive holds 786 distinct members for 1,015 files. The recovery check
 matched every file to its recorded hash.
+
+The [background input reflection receipt](localization/evidence/archival-background-input-reflection-20261111.json.gz)
+pins the B8I2 Unity log, launcher log and observation result for the
+reflection-failure control. Download its archive from the maintainer
+draft, verify the archive hash and restore the three files using
+`restore_archived_members.py` with `--recovery-archives`. The check
+matched all three original hashes and modes.
 
 The [component scout receipt](localization/evidence/archival-component-scouts-20261111.json.gz)
 records five original scout scripts and 14 outputs. Export `localization`
