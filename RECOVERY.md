@@ -924,6 +924,14 @@ PYTHONPATH="$revision_export/localization" python3.12 -B "$recorded_scout" \
 Verify the selected JSON or stdout hash and apply the recorded file mode.
 All 14 outputs were rebuilt byte for byte.
 
+The [historical text copy receipt](localization/evidence/archival-text-copies-20261111.json.gz)
+records 3,055 byte-identical copies of test reports, local tools and logs.
+Restore a selected directory with `restore_archived_members.py`. For
+`qaTools` rows, pass the installed screenshot review scripts directory
+as `--qa-tools`. For `checkout` rows, the recorded local original is
+the recovery source and must remain available until its replacement is
+verified. The check restored every copy and matched its hash and mode.
+
 The [empty generated directory receipt](localization/evidence/archival-empty-generated-dirs-20261111.json.gz)
 lists blank bundle signature and .NET reference directories left after
 their files were archived or rebuilt. Recreate the recorded path with
