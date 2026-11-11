@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "sceneIndex": {
+    "revision": "6a80a7fa6c02d0b747ec7826442d664fafe5f7d4",
+    "builder": "localization/index_special_scenes.py",
+    "inventoryMember": "combined-provisional-v42-20261110.json",
+    "inventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+    "output": "localization/work/anonymous-glossary-proposal-20261110.SY1yqu/approved-scene-index.json"
+  },
+  "polishTarget": {
+    "revision": "0d34c62e863b9557a5446a9a4054daf7b6cd22d4",
+    "source": "localization/pl/translation.json",
+    "baseSha256": "cb471d50b18d79b659744dcf6360b25ba63d9ba42c2428e95196e040341dda2e",
+    "line": "yarn:line:4b3c70d9",
+    "suffix": "!",
+    "output": "localization/work/pl-editorial-delta-20261110.iLgOIM/extra-target.json"
+  },
+  "outputs": {
+    "localization/work/anonymous-glossary-proposal-20261110.SY1yqu/approved-scene-index.json": {
+      "bytes": 67468,
+      "sha256": "ba45cd13692a0b1a7424f7ea43f7b560f45b73717fb4da41302368f900f57e5b",
+      "mode": "0o644"
+    },
+    "localization/work/pl-editorial-delta-20261110.iLgOIM/extra-target.json": {
+      "bytes": 117631,
+      "sha256": "2a1c3ee798d9983a09a4d687cef7269c1536ff9e77f0cdd1cf866dc0e07eb39e",
+      "mode": "0o644"
+    }
+  },
+  "dependentStreams": "localization/evidence/archival-cli-event-retained-input-gaps-20261111.json"
+}

@@ -75,7 +75,7 @@ def resolve(reference, records):
     return ''.join(parts)
 
 
-def rebuild(row, events, records, *, journal_root=None, slice_records=None):
+def rebuild(row, events, records, *, journal_root=None, slice_records=None, retained_input_root=CHECKOUT):
     git_blobs = {}
     documents = {}
     checkout_files = {}
@@ -132,8 +132,8 @@ def rebuild(row, events, records, *, journal_root=None, slice_records=None):
         if part.keys() == {'checkoutSlice'}:
             source = part['checkoutSlice']
             relative = relative_path(source['path'])
-            path = CHECKOUT / relative
-            if (not path.is_relative_to(CHECKOUT / 'localization/work') or
+            path = retained_input_root / relative
+            if (not path.is_relative_to(retained_input_root / 'localization/work') or
                     path.suffix != '.json' or path.resolve() != path or not path.is_file()):
                 raise ValueError('Unexpected CLI output checkout path')
             key = (path, source['sha256'])
@@ -190,6 +190,7 @@ def main():
     parser.add_argument('recorded_path')
     for option in ('archive', 'journal-root', 'output'):
         parser.add_argument('--' + option, type=Path, required=True)
+    parser.add_argument('--retained-input-root', type=Path, default=CHECKOUT)
     args = parser.parse_args()
     receipt = read_receipt(args.receipt)
     if sha256(args.archive) != receipt['archiveSha256']:
@@ -208,7 +209,10 @@ def main():
         key: read_records(journal_root, index['journals'][key], selected_offsets)
         for key, selected_offsets in slice_offsets.items()
     }
-    data = rebuild(row, stream['events'], records, journal_root=journal_root, slice_records=slice_records)
+    data = rebuild(
+        row, stream['events'], records, journal_root=journal_root, slice_records=slice_records,
+        retained_input_root=args.retained_input_root.resolve(strict=True),
+    )
     with args.output.open('xb') as out:
         out.write(data)
     args.output.chmod(int(row['mode'], 8))

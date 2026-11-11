@@ -2082,11 +2082,52 @@ gap. The complete stream matched after downloading the index.
 
 The [retained input gap receipt](localization/evidence/archival-cli-event-retained-input-gaps-20261111.json)
 uses the same command for the Turkish stream and the third Polish
-continuation. Before running it, check that the two JSON inputs in
-`retainedSources` are present at the recorded paths and match their
-hashes. The helper takes exact ranges from these files, the recorded
-Git blobs and the original journals. Both streams matched after the
-index was downloaded from the maintainer draft.
+continuation. Rebuild the two JSON inputs under a fresh input root,
+keeping their checkout-relative paths. Their recipes and output
+fingerprints are in the [input rebuild receipt](localization/evidence/archival-cli-input-rebuilds-20261111.json).
+
+For the scene index, extract `localization` from the recorded revision
+into `$historical_source` with `git archive`. Restore the v42 inventory
+from the verified ZIP above and check its hash. Create the output's
+parent directory and run the historical builder:
+
+```sh
+python3.12 -B "$historical_source/localization/index_special_scenes.py" \
+  --inventory "$verified_v42_inventory" --output "$fresh_scene_index"
+```
+
+To restore the Polish target, use the recorded translation and apply
+the single historical punctuation change:
+
+```sh
+python3.12 -B - "$fresh_input_root" <<'PY'
+import hashlib, json, subprocess, sys
+from pathlib import Path
+
+receipt = Path("localization/evidence/archival-cli-input-rebuilds-20261111.json")
+recipe = json.loads(receipt.read_text())
+row = recipe["polishTarget"]
+base = subprocess.check_output(["git", "show", row["revision"] + ":" + row["source"]])
+assert hashlib.sha256(base).hexdigest() == row["baseSha256"]
+value = json.loads(base)
+value["lines"][row["line"]] += row["suffix"]
+data = json.dumps(value, ensure_ascii=False).encode()
+expected = recipe["outputs"][row["output"]]
+assert len(data) == expected["bytes"] and hashlib.sha256(data).hexdigest() == expected["sha256"]
+output = Path(sys.argv[1]) / row["output"]
+output.parent.mkdir(parents=True, exist_ok=True)
+with output.open("xb") as stream:
+    stream.write(data)
+output.chmod(int(expected["mode"], 8))
+PY
+```
+
+Verify the rebuilt scene index's hash and mode against the same receipt.
+Then pass `--retained-input-root "$fresh_input_root"` to the stream
+recovery command. The helper verifies and reads exact ranges from the
+rebuilt inputs, Git blobs and original journals. Both inputs and both
+dependent streams matched the recorded hashes and file modes using a
+fresh input root and the downloaded index.
 
 The [CLI report excerpt receipt](localization/evidence/archival-cli-report-excerpts-20261111.json.gz)
 maps 42 historical files to exact byte ranges in retained local command
