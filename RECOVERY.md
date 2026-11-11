@@ -1275,6 +1275,24 @@ PY
 
 The recovered configuration matched the historical file byte for byte.
 
+The [Swift installer test receipt](localization/evidence/archival-swift-installer-tests-20261111.json)
+records two historical arm64 test executables. Export
+`InstallerCore.swift` and `PackageConfig.swift` from the recorded Git
+revision into a fresh directory and verify their hashes. Compile them
+with the recorded test source and flags using Apple Swift 6.4.2 and the
+macOS 27.2 SDK. Keep the output basename `test-macos` for the linker
+signature:
+
+```sh
+swiftc "$source_dir/InstallerCore.swift" "$source_dir/PackageConfig.swift" \
+  "$test_source" -o "$fresh_directory/test-macos"
+codesign --verify --strict "$fresh_directory/test-macos"
+```
+
+Add `-O` for the entry that records it. Both rebuilt files matched the
+original bytes and passed signature verification. The test sources are
+tracked under `localization/tools/historical-installer-checks`.
+
 The [window and Yarn rebuild receipt](localization/evidence/archival-window-and-yarn-rebuilds-20261111.json.gz)
 records 142 copies of two Swift test utilities. Compile the recorded
 `window.swift` with the pinned Swift compiler and name the output

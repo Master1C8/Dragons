@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "swift": [
+    "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)",
+    "Target: arm64-apple-macosx27.2.0"
+  ],
+  "sdk": "27.2",
+  "outputs": {
+    "localization/work/installer.NUdeks/test-macos": {
+      "revision": "5ef520bda89876ba9be9e5edabeef12e47a371cc",
+      "compilerFlags": [],
+      "sources": {
+        "installer/Sources/DragonsInstaller/InstallerCore.swift": "34d83838ae61b5ca268afdc3b3814590701ae148e51e7ba2136ed0678df5fdb5",
+        "installer/Sources/DragonsInstaller/PackageConfig.swift": "fc5b5eff92bc15d331fd7af94108ba60ede390f815c58d8aa9607c893e621dc5"
+      },
+      "harness": "localization/tools/historical-installer-checks/TestMain.swift",
+      "harnessSha256": "b646d2f1869852a93adc81002907c1f2aad6ee73dc9b8b008f9269345d6c6357",
+      "harnessBytes": 1608,
+      "harnessMode": "0o644",
+      "historicalHarness": "localization/work/installer.NUdeks/TestMain.swift",
+      "bytes": 555224,
+      "sha256": "2f164c4cb69dc5e14e49da454d9e710017736efcf88af4800a590bbf9950c189",
+      "mode": "0o755",
+      "architectures": [
+        "arm64"
+      ]
+    },
+    "localization/work/installer-all.Yykv0u/test-macos": {
+      "revision": "8b847d8d9812d73772295d181217949ec204b910",
+      "compilerFlags": [
+        "-O"
+      ],
+      "sources": {
+        "installer/Sources/DragonsInstaller/InstallerCore.swift": "5c0146bee1cf847e7d55a808b6d478245331a301500005d4397897dcad435fc2",
+        "installer/Sources/DragonsInstaller/PackageConfig.swift": "bac4e34281fbba188dd85eb695a99a6baac74882f5bff802bbf4d44cb2237bed"
+      },
+      "harness": "localization/tools/historical-installer-checks/TestMac.swift",
+      "harnessSha256": "f2ec964671de71a80813d63406216b27699cce330da2b11d8f50ad0ae392d6aa",
+      "harnessBytes": 1618,
+      "harnessMode": "0o644",
+      "historicalHarness": "localization/work/installer-all.Yykv0u/TestMac.swift",
+      "bytes": 343080,
+      "sha256": "0a3c226092b09fa87d7051d08026c05ab631e701a86e24f089f04ac6a6f44b8f",
+      "mode": "0o755",
+      "architectures": [
+        "arm64"
+      ]
+    }
+  }
+}
