@@ -212,6 +212,34 @@ def rebuild(
             if hashlib.sha256(text.encode()).hexdigest() != source['sha256']:
                 raise ValueError('CLI output worklist readback fingerprint mismatch')
             return text
+        if part.keys() == {'yarnGroupReadback'}:
+            source = part['yarnGroupReadback']
+            entries = json.loads(checkout_text(source['worklist'], '.json'))['rows']
+            macos = json.loads(checkout_text(source['macos'], '.json'))['nodes']
+            windows = json.loads(checkout_text(source['windows'], '.json'))['nodes']
+            start, stop = source['start'], source['stop']
+            if not 0 <= start < stop <= len(entries):
+                raise ValueError('Unexpected CLI output Yarn worklist range')
+            groups = sorted({entry['group'] for entry in entries[start:stop]})
+            output = [f"different: {[group for group in groups if macos[group] != windows[group]]}\n"]
+            for group in source['macosGroups']:
+                output.append(f'\n {group}\n{json.dumps(macos[group], ensure_ascii=False)}\n')
+            text = ''.join(output)
+            if hashlib.sha256(text.encode()).hexdigest() != source['sha256']:
+                raise ValueError('CLI output Yarn group readback fingerprint mismatch')
+            return text
+        if part.keys() == {'glossaryContextReadback'}:
+            source = part['glossaryContextReadback']
+            terms = ('referent', 'gender', 'species', 'pronoun', 'anonymous', 'uncertain', 'unnamed', 'unidentified')
+            output = []
+            for group in json.loads(git_text(source))['groups']:
+                value = ' '.join((group['groupContext'], str(group['layer1']), str(group['layer2'])))
+                if any(term in value.lower() for term in terms):
+                    output.append(f"{group['group']} {value[:500]}\n")
+            text = ''.join(output)
+            if hashlib.sha256(text.encode()).hexdigest() != source['outputSha256']:
+                raise ValueError('CLI output glossary context fingerprint mismatch')
+            return text
         if part.keys() == {'document'}:
             return document_text(part['document'])
         if part.keys() == {'checkoutSlice'}:

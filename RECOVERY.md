@@ -2189,6 +2189,16 @@ later streams read numbered lines from the restored `resume-03` stream.
 The helper verifies those source hashes and recreates the pinned Git
 diff range. All three streams matched from the downloaded indexes.
 
+The [report readback stream receipt](localization/evidence/archival-cli-event-report-readbacks-20261111.json)
+restores two more streams. For the French stream, rebuild the
+source-only `fr` worklist named `068.json` in the worklist and editorial
+report receipt and both Yarn instruction reports from the static
+discovery report receipt. Place the rebuilt files at the checkout-relative
+paths in `requiredReports` under a fresh input root and pass it as
+`--retained-input-root`. The Italian stream uses the historical glossary
+review, checkpoint and staged diff from Git. Both streams matched
+byte for byte from the downloaded index.
+
 The [Korean worklist stream receipt](localization/evidence/archival-cli-event-korean-worklist-20261111.json)
 uses the same command with `--worklist "$shared_worklist"`. Rebuild
 the source-only `es-419` worklist named `000.json` in the worklist and
