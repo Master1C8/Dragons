@@ -276,6 +276,18 @@ records the superseded build outputs. Its intermediate Windows installer
 script can be recreated by extracting the compressed patch and applying it to
 the Git blob named in the receipt. Compare the result to the recorded SHA-256.
 
+The [French test asset receipt](localization/evidence/archival-french-stock-20261111.json)
+records the stock references for the existing French Zstandard patches. Use
+`sharedassets1.assets` from the restored macOS or verified Windows stock Data
+directory in place of the historical local stock copy in the patch manifest.
+Verify the reference and patch hashes before restoring to a fresh file:
+
+```sh
+zstd -d --patch-from="$stock_sharedassets" "$patch" -o "$fresh_output"
+```
+
+Match the output to `sourceSha256` in the historical patch manifest.
+
 The [Windows stock ZIP receipt](localization/evidence/archival-windows-stock-zip-20261111.json)
 lists all 287 files in the old Parallels test fixture. To recreate the
 fixture, ZIP those relative paths from the owned Windows stock game directory

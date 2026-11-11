@@ -1,0 +1,17 @@
+{
+  "patchDirectory": "localization/work/fr-old-asset-compaction-20261110.Iri1RW",
+  "verification": "All historical patches were decoded from external stock game sources and compared to their original SHA-256.",
+  "restoredAssets": 32,
+  "references": {
+    "macos": {
+      "path": "localization/work/fr-old-asset-compaction-20261110.Iri1RW/macos-stock-sharedassets1.assets",
+      "sha256": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+      "mode": "0o444"
+    },
+    "windows": {
+      "path": "localization/work/fr-old-asset-compaction-20261110.Iri1RW/windows-stock-sharedassets1.assets",
+      "sha256": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+      "mode": "0o444"
+    }
+  }
+}
