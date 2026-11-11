@@ -1231,6 +1231,13 @@ python3.12 -B localization/restore_platform_locale_projection.py \
 The recovery check matched the original bytes and file modes for all
 190 selections.
 
+The [source-text control receipt](localization/evidence/archival-source-text-controls-20261111.json.gz)
+uses the same command for 38 earlier dialogue and UI inputs. The
+`sourceText` keys take their wording from the v42 source bindings. The
+other keys use the recorded translation snapshots. All 38 outputs and
+25 dependent entries in the historical text copy receipt matched.
+Restore any required control before replaying its copies.
+
 The [historical Yarn table receipt](localization/evidence/archival-historical-yarn-tables-20261111.json)
 pins 35 dialogue readback tables for Ukrainian, German and Polish and
 19 Ukrainian structure controls. Restore v42 and, for a dialogue table,

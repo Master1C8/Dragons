@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Restore a historical selection of platform input rows from Git translations."""
+"""Restore historical platform input rows from Git translations and stock text."""
 
 import argparse
 import hashlib
@@ -38,10 +38,14 @@ def rebuild(row, builds, catalog, snapshots):
     overrides = {
         key: int(index) for index, changed in row.get('overrides', {}).items() for key in changed
     }
+    source_text = set(row.get('sourceText', ()))
     lines = {}
     for key in keys:
         authoring_id, source = bindings[key]
-        translation = translations[overrides.get(key, 0)][authoring_id][platform]
+        if key in source_text:
+            translation = source
+        else:
+            translation = translations[overrides.get(key, 0)][authoring_id][platform]
         lines[key] = {'source': source, 'text': translation}
     doc = {'schema': 1, 'locale': row['locale'], 'sourceObjectSha256': source_fingerprint, 'lines': lines}
     indent, ascii_only, suffix = row.get('style', (2, False, '\n'))
