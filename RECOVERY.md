@@ -783,6 +783,23 @@ recorded SHA-256. For `taggedFile`, pass the stock DLL, the recorded tag
 and the SHA-256 in that order. Capture stdout, check the report hash and
 apply the recorded mode. All 18 reports matched byte for byte.
 
+The [stock IL report receipt](localization/evidence/archival-stock-il-reports-20261111.json.gz)
+records the ordered method selections for 27 earlier IL reports. Copy
+`localization/tools/historical-il-reports/{restore.csproj,Program.cs}`
+to a scratch directory and build it in Release with .NET SDK 8.0.131.
+Use the stock `Managed` directories for both platforms.
+
+```sh
+dotnet build "$build_dir/restore.csproj" -c Release --nologo --disable-build-servers \
+  -p:NuGetAudit=false --ignore-failed-sources
+dotnet "$build_dir/bin/Release/net8.0/restore.dll" \
+  localization/evidence/archival-stock-il-reports-20261111.json.gz \
+  "$recorded_path" "$macos_stock_managed" "$windows_stock_managed" "$fresh_report"
+```
+
+The tool verifies Mono.Cecil, the referenced stock assemblies and the
+report fingerprint before writing. All 27 reports matched byte for byte.
+
 The [historical .NET probe build receipt](localization/evidence/archival-historical-dotnet-probe-builds-20261111.json)
 pins 28 managed outputs whose source snapshots are in Git. Build with
 .NET SDK 8.0.131 and access to the recorded NuGet dependencies:
