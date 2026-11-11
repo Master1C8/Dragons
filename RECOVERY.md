@@ -1125,6 +1125,27 @@ Git blob or archive member. Use the pinned scene export, v42 inventory
 and v42 scope with the named exporter. All 16 restored files matched
 their original fingerprints.
 
+The [historical editorial closure receipt](localization/evidence/archival-historical-editorial-closures-20261111.json)
+pins an earlier Spanish export and a provisional Polish export. Restore
+the v42 inventory, scope and paired scenes. Check the locale catalog
+hash and set `DRAGONS_SITE_LOCALES` to that catalog. Use `git show` to
+recover the before and after translations at the receipt's revisions
+and verify their hashes. Download the named metadata asset from the
+maintainer draft and reconstruct the historical recipe:
+
+```sh
+python3.12 -B localization/restore_historical_editorial_recipe.py \
+  localization/evidence/archival-historical-editorial-closures-20261111.json \
+  "$recorded_path" --metadata "$recipe_fields" --output "$fresh_recipe"
+python3.12 -B "$exporter" --inventory "$shared_inventory" \
+  --yarn-scope "$paired_yarn_scope" --paired-scenes "$paired_scenes" \
+  --before "$before" --after "$after" --recipe "$fresh_recipe" \
+  --locale "$locale" --output "$fresh_report"
+```
+
+Use the named exporter at the recorded builder revision. Check the
+report hash and apply its mode. Both reports matched byte for byte.
+
 The [direct editorial export receipt](localization/evidence/archival-direct-editorial-exports-20261111.json)
 pins seven working reports for Italian and Brazilian Portuguese. Recreate
 the two worklists from the report rebuild receipt with no draft argument.

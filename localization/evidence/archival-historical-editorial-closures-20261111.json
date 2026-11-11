@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "metadata": "Dragons-historical-editorial-recipe-fields.json.gz",
+  "metadataSha256": "744e65882c62b84e7a23dd9de8449b6d4fe3318b52b98fbc8c15f18beed6cd32",
+  "builderRevision": "262ff11b365e5b3737617be34bb2de0f703207eb",
+  "catalogSha256": "7394141eacabf515a99e0fbf7788ed613a7c3ae26ef81ad859104fe0bf315463",
+  "outputs": {
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-12/closure/export.json": {
+      "locale": "es",
+      "beforeRevision": "22f211f616a762b2e93826366b7407ac440af1ef",
+      "beforeSha256": "20fc3d75786f81c311f64b5fbd0038c5fda553a77df09864cf799d77051158cf",
+      "afterRevision": "49d5b719c8c57354c7cc27f5edb94d6ca0a6e8a5",
+      "afterSha256": "756de516739d6554b56695eb91624f00d751e2bbc9e8f1f1c190a954c964ef6c",
+      "recipeBaseRevision": "4f9e30a03dc5f0468dbe01eb35d596b1236ec135",
+      "recipeBasePath": "localization/es/editorial-delta-recipe.json",
+      "recipeBaseSha256": "c613249c8283a1a19a227e75b4b8d23446a3830dcb2baf9d75e5e08d5df051db",
+      "recipeSha256": "7d01cee38e389e495bf2e0d1ad540c8bbe99aab3841938043a33e073b67b44e0",
+      "exporter": "export_editorial_delta_with_regressions.py",
+      "exporterSha256": "03f9804df599cc047f82a49e91225354a449f721ec12a12a1b06f4cd749d7b81",
+      "sha256": "5e317e13c5389dcc28a838240103c8600619ed1dc32c5f3ce2f165e7168dc194",
+      "bytes": 720604,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-05/provisional-04.json": {
+      "locale": "pl",
+      "beforeRevision": "3f0fbc58d75f34922452d009822d5520f54a262b",
+      "beforeSha256": "3983cc2a9dc25d31106b7d686fbdde713857d56d78b5f93b63b9a6fd537113b3",
+      "afterRevision": "c779be3cdb52465d6f0f63cc15628720e5dcbf21",
+      "afterSha256": "68f4ec59a5645b109a4357c4993819ae5ec717d47020b1367ff978f637aef41c",
+      "recipeBaseRevision": "3d2a6258b7358fb947a0ceaf877c56f77cd52ec7",
+      "recipeBasePath": "localization/pl/semantic-closure-04-recipe.json",
+      "recipeBaseSha256": "41cc569ca94df9e3ab759f4764fb7db9dfb8fb6c4eda5f0698e34f8f6c87d190",
+      "recipeSha256": "dbe601594d32791d027c62d22b74d1a2585a2dd412de80f42eaf4335be8347ec",
+      "exporter": "export_editorial_delta.py",
+      "exporterSha256": "3a39e4923570d0b46930cf935a719269e3556e305ee563cff90e1f763a783b7c",
+      "sha256": "6e478ba5ec7c37562fdc4d2818f83d330795ab46876f498fa806b052ea104366",
+      "bytes": 437169,
+      "mode": "0o644"
+    }
+  }
+}
