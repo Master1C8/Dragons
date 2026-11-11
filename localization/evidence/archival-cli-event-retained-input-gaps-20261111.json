@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-cli-event-retained-input-gap-index.json.gz",
+  "outputs": {
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/tr/events.jsonl": {
+      "bytes": 423262,
+      "sha256": "666fa737739fbb8c29f72f35f785d29c254d4135cfe34350e100f099af774d8e",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-03/events.jsonl": {
+      "bytes": 2235473,
+      "sha256": "5e32da31305e990a26e78a171ccd66fd8d688031f6103dab5b63459c751d0181",
+      "mode": "0o644"
+    }
+  },
+  "retainedSources": {
+    "localization/work/anonymous-glossary-proposal-20261110.SY1yqu/approved-scene-index.json": "ba45cd13692a0b1a7424f7ea43f7b560f45b73717fb4da41302368f900f57e5b",
+    "localization/work/pl-editorial-delta-20261110.iLgOIM/extra-target.json": "2a1c3ee798d9983a09a4d687cef7269c1536ff9e77f0cdd1cf866dc0e07eb39e"
+  },
+  "archiveSha256": "44ed588643820991d00c33a462156943150acb4383cead0496997823b72cbaab",
+  "journalCount": 3
+}

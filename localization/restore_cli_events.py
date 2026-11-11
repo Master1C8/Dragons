@@ -78,6 +78,7 @@ def resolve(reference, records):
 def rebuild(row, events, records, *, journal_root=None, slice_records=None):
     git_blobs = {}
     documents = {}
+    checkout_files = {}
 
     def output_prefix(source):
         prefix = source.get('prefix', '')
@@ -128,6 +129,25 @@ def rebuild(row, events, records, *, journal_root=None, slice_records=None):
             return git_text(part['git'])
         if part.keys() == {'document'}:
             return document_text(part['document'])
+        if part.keys() == {'checkoutSlice'}:
+            source = part['checkoutSlice']
+            relative = relative_path(source['path'])
+            path = CHECKOUT / relative
+            if (not path.is_relative_to(CHECKOUT / 'localization/work') or
+                    path.suffix != '.json' or path.resolve() != path or not path.is_file()):
+                raise ValueError('Unexpected CLI output checkout path')
+            key = (path, source['sha256'])
+            if key not in checkout_files:
+                raw = path.read_bytes()
+                if hashlib.sha256(raw).hexdigest() != source['sha256']:
+                    raise ValueError('CLI output checkout file fingerprint mismatch')
+                checkout_files[key] = raw.decode('utf-8')
+            text = checkout_files[key]
+            start = source['start']
+            end = start + source['length']
+            if not 0 <= start < end <= len(text):
+                raise ValueError('Unexpected CLI output checkout range')
+            return text[start:end]
         if part.keys() == {'journalSlice'}:
             source = part['journalSlice']
             if slice_records is None:

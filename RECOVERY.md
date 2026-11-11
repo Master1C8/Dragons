@@ -2080,6 +2080,14 @@ uses the same command for one additional stream. The helper verifies the
 recorded Git blob and selects its exact text range to fill the remaining
 gap. The complete stream matched after downloading the index.
 
+The [retained input gap receipt](localization/evidence/archival-cli-event-retained-input-gaps-20261111.json)
+uses the same command for the Turkish stream and the third Polish
+continuation. Before running it, check that the two JSON inputs in
+`retainedSources` are present at the recorded paths and match their
+hashes. The helper takes exact ranges from these files, the recorded
+Git blobs and the original journals. Both streams matched after the
+index was downloaded from the maintainer draft.
+
 The [CLI report excerpt receipt](localization/evidence/archival-cli-report-excerpts-20261111.json.gz)
 maps 42 historical files to exact byte ranges in retained local command
 output. Restore any missing source stream using its stream receipt
