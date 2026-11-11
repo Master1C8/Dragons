@@ -161,10 +161,20 @@ are generated paths. If regenerating the entire installer payload through
 a fresh inventory to point to the verified rebuilt outputs. The installer
 rebuild using accepted payloads does not require these intermediate packages.
 
-The full translation rebuild gate still covers per-locale package inputs,
-including the CJK fonts and shaped-text plans. Retain the working inputs until
-those rebuilds are verified. `textures-with-text` is the owner's working
-directory and stays separate from generated output cleanup.
+The remaining 29 locales rebuilt on both platforms from the recovered
+inputs, including all nine locales that use additional fonts. All 29 Windows
+ZIPs matched the original SHA-256. All macOS bundle files and their modes
+matched. Only an empty `Contents/Resources/VNRevival` directory differed for
+`ar`, `fa`, `fr`, `he`, `ko`. To reproduce the exact directory tree,
+keep that empty directory in the disposable stock source for these locales
+and remove it for the other locales. [Package rebuild evidence](localization/evidence/archival-package-rebuilds-20261111.json).
+
+The per-locale intermediate package paths in `installer/App/LocalePackages.json`
+are historical. Rebuild the packages there when reusing that inventory, or
+make a fresh inventory with the new output paths. For unchanged installer
+payloads, use the archived installer build route above.
+
+`textures-with-text` is the owner's working directory.
 
 [The duplicate-package receipt](localization/evidence/archival-duplicate-packages-20261111.json)
 maps removed work outputs to their retained, byte-identical copies.
