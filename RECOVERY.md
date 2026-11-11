@@ -174,6 +174,24 @@ on both platforms. The regenerated report has SHA-256
 `37b34d1751b3e3b45766c9e6b4aab7eca8a0aabc7c57136b5f97a2a20ce2fb70`.
 Use the frozen plans above for exact 0.2.1 reproduction.
 
+The [historical font output receipt](localization/evidence/archival-historical-font-outputs-20261111.json.gz)
+records exact matches for earlier font probes and their reports.
+Export `localization` from the recorded Git revision and run the same
+probe command from that export. Use the revision entry's `corpusFlags`
+and pass ICU when that entry calls for it. Verify the catalog, source
+archive and reference shaper fingerprints. The recovery check matched
+all 42 files from that recipe.
+
+The [font and signature delta receipt](localization/evidence/archival-font-signature-deltas-20261111.json.gz)
+covers the earlier Persian font and two signed
+libraries from the renamed discovery fixture. Download the receipt's
+archive from the maintainer draft and verify its SHA-256. The Persian
+`basePath` names the rebuilt font under the `fe6b56b` output directory.
+Resolve the other base paths in the verified stock macOS app. Check each
+base and patch hash, then decode with `zstd -d --patch-from="$base"`.
+The decoded outputs matched all three hashes and both libraries passed
+strict code signature verification.
+
 `localization/rebuild_release_packages.py` selects the correct recovered
 runtime, fonts and license for each locale. Build the three .NET tools in
 Release configuration into `managed-fallback`, `speaker-display-probe` and
@@ -753,6 +771,12 @@ from the accepted macOS installer and verify its SHA-256 first.
 
 Use the receipt's `applicationHeader`, check the generated delta hash
 and apply each destination's recorded mode.
+
+The [installer delta copy receipt](localization/evidence/archival-installer-delta-copies-20261111.json.gz)
+maps 49 duplicate VCDIFF files to the retained historical originals.
+Restore a selected directory with `restore_archived_members.py`.
+Keep the recorded sources available until their replacement is verified.
+The recovery check matched every copy and mode.
 
 The [French test asset receipt](localization/evidence/archival-french-stock-20261111.json)
 records the stock references used by the original French compaction. The
