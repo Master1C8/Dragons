@@ -1007,6 +1007,14 @@ the staged project file. The check matched all ten binaries and ten
 dependent entries in the binary copy receipt. Restore the needed source
 binary first when replaying those copies.
 
+The [tracked probe build receipt](localization/evidence/archival-tracked-probe-builds-20261111.json)
+records 16 more DLL and PDB pairs. Use the same build helper with
+.NET SDK 8.0.131. It reads the recorded project and source revisions
+from Git. For a build with `platform`, pass that platform's verified
+stock Managed directory as `--game-managed`. The helper checks the
+stock assembly hashes before compiling. All 32 outputs and 34
+dependent entries in the binary copy receipt matched.
+
 The [historical managed source receipt](localization/evidence/archival-historical-managed-source-deltas-20261111.json)
 pins 125 project descriptors required by the generated metadata receipt
 and 22 C# sources used by technical evidence or the text copy receipt.

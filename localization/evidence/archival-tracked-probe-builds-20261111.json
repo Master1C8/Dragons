@@ -1,0 +1,676 @@
+{
+  "schema": 1,
+  "sdk": "8.0.131",
+  "historicalCheckout": "/Users/antonkrutov/Desktop/Dragons",
+  "gameLaunched": false,
+  "builds": [
+    {
+      "project": {
+        "path": "localization/tools/background-input-probe/gameplay-companion/companion.csproj",
+        "revision": "3e154a87b79581af41f050d74b542a0a274213d8",
+        "sha256": "154546c334c52d799ae6ebbb359809ed4d6ac9bb714bea6abb12af09216fad75"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/background-input-probe/gameplay-companion/Probe.cs",
+          "revision": "b6bcccf41c0d75c79b1d29d32e2bb477cc8b0824",
+          "sha256": "880e7bb0cbb7243a5764a2bfaac56290003201775df667b1f1f196a404e01de9"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "3e154a87b79581af41f050d74b542a0a274213d8",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "objectPath": "localization/work/background-dialogue-20261109.jsmTX8/tracked/obj",
+      "embeddedSources": "generated",
+      "platform": "macos",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec",
+        "UnityEngine.CoreModule.dll": "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937",
+        "UnityEngine.UI.dll": "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4",
+        "UnityEngine.UIModule.dll": "6d43e6d441c4081647824d4e991e16f28a884f0fbda60056348071eb7299f80c"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/background-input-probe/gameplay-companion/companion.csproj",
+        "revision": "10987d4a750958558135528eb243312f29c4a9e1",
+        "sha256": "154546c334c52d799ae6ebbb359809ed4d6ac9bb714bea6abb12af09216fad75"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/background-input-probe/gameplay-companion/Probe.cs",
+          "revision": "3e154a87b79581af41f050d74b542a0a274213d8",
+          "sha256": "c374c8e458caf6cf82c905bb481fd8bb7b157eb92461099aea4fe6e0164a9770"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "10987d4a750958558135528eb243312f29c4a9e1",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "objectPath": "localization/work/background-mount-20261109.yDBnlW/tracked-intro/obj",
+      "embeddedSources": "generated",
+      "platform": "macos",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec",
+        "UnityEngine.CoreModule.dll": "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937",
+        "UnityEngine.UI.dll": "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4",
+        "UnityEngine.UIModule.dll": "6d43e6d441c4081647824d4e991e16f28a884f0fbda60056348071eb7299f80c"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-inline-probe/speaker-inline-probe.csproj",
+        "revision": "dc9056c85b0e2765cda341d83c058fffc63bd887",
+        "sha256": "041dd1deb75b972d2e898bc81c6cdbce79e4472a61fe62b16cf8f2cc2a5015ba"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-inline-probe/InlineSpeakerView.cs",
+          "revision": "5c9b9ddf42429a7a03297a8f68f27f551e8265cb",
+          "sha256": "3b75e685cbbf2bb29caf5946c1962dcc4ff79f222c0f0a28a44b6f0ee6066ec8"
+        },
+        {
+          "path": "localization/tools/speaker-inline-probe/Program.cs",
+          "revision": "5c9b9ddf42429a7a03297a8f68f27f551e8265cb",
+          "sha256": "09f7cfae867366279f42ef2063c5e8d20753443669755a75141bee0b72123954"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "dc9056c85b0e2765cda341d83c058fffc63bd887",
+      "assemblyName": "speaker-inline-probe",
+      "objectPath": "localization/work/speaker-presenter-20261109.TqasB1/macos/speaker-inline-probe/obj",
+      "embeddedSources": "generated",
+      "platform": "macos",
+      "gameManaged": {
+        "YarnSpinner.dll": "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e",
+        "YarnSpinner.Unity.dll": "1b2cbc2dc4490163b011b217dc351a06312ef1fc708110b4f189a58f666e433a"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-inline-probe/speaker-inline-probe.csproj",
+        "revision": "dc9056c85b0e2765cda341d83c058fffc63bd887",
+        "sha256": "041dd1deb75b972d2e898bc81c6cdbce79e4472a61fe62b16cf8f2cc2a5015ba"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-inline-probe/InlineSpeakerView.cs",
+          "revision": "5c9b9ddf42429a7a03297a8f68f27f551e8265cb",
+          "sha256": "3b75e685cbbf2bb29caf5946c1962dcc4ff79f222c0f0a28a44b6f0ee6066ec8"
+        },
+        {
+          "path": "localization/tools/speaker-inline-probe/Program.cs",
+          "revision": "5c9b9ddf42429a7a03297a8f68f27f551e8265cb",
+          "sha256": "09f7cfae867366279f42ef2063c5e8d20753443669755a75141bee0b72123954"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "dc9056c85b0e2765cda341d83c058fffc63bd887",
+      "assemblyName": "speaker-inline-probe",
+      "objectPath": "localization/work/speaker-presenter-20261109.TqasB1/windows/speaker-inline-probe/obj",
+      "embeddedSources": "generated",
+      "platform": "windows",
+      "gameManaged": {
+        "YarnSpinner.dll": "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e",
+        "YarnSpinner.Unity.dll": "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/background-input-probe/gameplay-companion/companion.csproj",
+        "revision": "77e2c921e8f4d3b913ca443afc24cc78444a351f",
+        "sha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/background-input-probe/gameplay-companion/Probe.cs",
+          "revision": "77e2c921e8f4d3b913ca443afc24cc78444a351f",
+          "sha256": "35645a1d827e7da71f1ff25903d2d10d9072defd3ce000b55394558888cf23d5"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "b6bcccf41c0d75c79b1d29d32e2bb477cc8b0824",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "objectPath": "localization/work/background-gate-20261109.Nx18eu/tracked/mac-obj",
+      "embeddedSources": "generated",
+      "platform": "macos",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec",
+        "UnityEngine.CoreModule.dll": "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937",
+        "UnityEngine.UI.dll": "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4",
+        "UnityEngine.UIModule.dll": "6d43e6d441c4081647824d4e991e16f28a884f0fbda60056348071eb7299f80c"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/background-input-probe/gameplay-companion/companion.csproj",
+        "revision": "77e2c921e8f4d3b913ca443afc24cc78444a351f",
+        "sha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/background-input-probe/gameplay-companion/Probe.cs",
+          "revision": "77e2c921e8f4d3b913ca443afc24cc78444a351f",
+          "sha256": "35645a1d827e7da71f1ff25903d2d10d9072defd3ce000b55394558888cf23d5"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "b6bcccf41c0d75c79b1d29d32e2bb477cc8b0824",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "objectPath": "localization/work/background-gate-20261109.Nx18eu/tracked/win-obj",
+      "embeddedSources": "generated",
+      "platform": "windows",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "94d2e9efdbae9d2bf42067c98edb51c829bba57c72ddf49d2fbe99d569ee2c75",
+        "UnityEngine.CoreModule.dll": "d589629ecd4971438643c5d3ce5ee78cf7ee26ac0d98522f802923ca6b55bc79",
+        "UnityEngine.UI.dll": "e31bf1ba3ebcd9e63c1c8530d6be7799b079c4f9a5dcc29a695e4be5b26aa613",
+        "UnityEngine.UIModule.dll": "88f95e40c5d59a7f6625d328d46d33d1037544800aca65e53d81b5f9b3de8eae"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-inline-probe/speaker-inline-probe.csproj",
+        "revision": "8360fa6b5ee3d5e0f41cb559133fc906279d6e8a",
+        "sha256": "041dd1deb75b972d2e898bc81c6cdbce79e4472a61fe62b16cf8f2cc2a5015ba"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-inline-probe/InlineSpeakerView.cs",
+          "revision": "ecc1c57f137fd267484fa9067e692679f8ef3135",
+          "sha256": "f5975b5590274af0c11efcc66eda8b00b2ee6dd24594b7ad8401faf67674b26a"
+        },
+        {
+          "path": "localization/tools/speaker-inline-probe/Program.cs",
+          "revision": "ecc1c57f137fd267484fa9067e692679f8ef3135",
+          "sha256": "8f070c2fc0ef95385cda28c7dad59123a02cd56feec282bf992010bd6f95ba56"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "8360fa6b5ee3d5e0f41cb559133fc906279d6e8a",
+      "assemblyName": "speaker-inline-probe",
+      "objectPath": "localization/work/alexander-body-final-20261110.Vjt7m6/macos/harness/obj",
+      "embeddedSources": "generated",
+      "platform": "macos",
+      "gameManaged": {
+        "YarnSpinner.dll": "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e",
+        "YarnSpinner.Unity.dll": "1b2cbc2dc4490163b011b217dc351a06312ef1fc708110b4f189a58f666e433a"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-inline-probe/speaker-inline-probe.csproj",
+        "revision": "8360fa6b5ee3d5e0f41cb559133fc906279d6e8a",
+        "sha256": "041dd1deb75b972d2e898bc81c6cdbce79e4472a61fe62b16cf8f2cc2a5015ba"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-inline-probe/InlineSpeakerView.cs",
+          "revision": "ecc1c57f137fd267484fa9067e692679f8ef3135",
+          "sha256": "f5975b5590274af0c11efcc66eda8b00b2ee6dd24594b7ad8401faf67674b26a"
+        },
+        {
+          "path": "localization/tools/speaker-inline-probe/Program.cs",
+          "revision": "ecc1c57f137fd267484fa9067e692679f8ef3135",
+          "sha256": "8f070c2fc0ef95385cda28c7dad59123a02cd56feec282bf992010bd6f95ba56"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "8360fa6b5ee3d5e0f41cb559133fc906279d6e8a",
+      "assemblyName": "speaker-inline-probe",
+      "objectPath": "localization/work/alexander-body-final-20261110.Vjt7m6/windows/harness/obj",
+      "embeddedSources": "generated",
+      "platform": "windows",
+      "gameManaged": {
+        "YarnSpinner.dll": "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e",
+        "YarnSpinner.Unity.dll": "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-runtime-log-probe/speaker-runtime-log-probe.csproj",
+        "revision": "fa79d2e52d43f078dbbad5a4e881558b20ba7a55",
+        "sha256": "fc54172211367bc5391f279d3f48265083bd5700b260fa995447cae908f98c91"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-runtime-log-probe/Program.cs",
+          "revision": "fa79d2e52d43f078dbbad5a4e881558b20ba7a55",
+          "sha256": "6ef9436541490a09378680c3762cc3d95476ed8f24aa4f3893e4a42c53b276d6"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "f6e888eeb964e7cc071e46a39a786979fe5adfb3",
+      "assemblyName": "speaker-runtime-log-probe",
+      "objectPath": "localization/work/speaker-runtime-log-verify-obj",
+      "embeddedSources": "generated"
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-inline-probe/speaker-inline-probe.csproj",
+        "revision": "dc9056c85b0e2765cda341d83c058fffc63bd887",
+        "sha256": "041dd1deb75b972d2e898bc81c6cdbce79e4472a61fe62b16cf8f2cc2a5015ba"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-inline-probe/InlineSpeakerView.cs",
+          "revision": "dc9056c85b0e2765cda341d83c058fffc63bd887",
+          "sha256": "49b6bc592e987c4cb46957e6d7971a17d9c681693f177510e64956518b6c4343"
+        },
+        {
+          "path": "localization/tools/speaker-inline-probe/Program.cs",
+          "revision": "dc9056c85b0e2765cda341d83c058fffc63bd887",
+          "sha256": "c346c2200fc128601a3921d93b0145b2f405e1c69b48c53a3950189580b7ffec"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "bb9af8d08711ee20806d5d761b6e8f3924495e50",
+      "assemblyName": "speaker-inline-probe",
+      "objectPath": "localization/work/speaker-inline-20261109.SJXiG2/macos/obj",
+      "embeddedSources": "generated",
+      "platform": "macos",
+      "gameManaged": {
+        "YarnSpinner.dll": "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e",
+        "YarnSpinner.Unity.dll": "1b2cbc2dc4490163b011b217dc351a06312ef1fc708110b4f189a58f666e433a"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-inline-probe/speaker-inline-probe.csproj",
+        "revision": "dc9056c85b0e2765cda341d83c058fffc63bd887",
+        "sha256": "041dd1deb75b972d2e898bc81c6cdbce79e4472a61fe62b16cf8f2cc2a5015ba"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-inline-probe/InlineSpeakerView.cs",
+          "revision": "dc9056c85b0e2765cda341d83c058fffc63bd887",
+          "sha256": "49b6bc592e987c4cb46957e6d7971a17d9c681693f177510e64956518b6c4343"
+        },
+        {
+          "path": "localization/tools/speaker-inline-probe/Program.cs",
+          "revision": "dc9056c85b0e2765cda341d83c058fffc63bd887",
+          "sha256": "c346c2200fc128601a3921d93b0145b2f405e1c69b48c53a3950189580b7ffec"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "bb9af8d08711ee20806d5d761b6e8f3924495e50",
+      "assemblyName": "speaker-inline-probe",
+      "objectPath": "localization/work/speaker-inline-20261109.SJXiG2/windows/obj",
+      "embeddedSources": "generated",
+      "platform": "windows",
+      "gameManaged": {
+        "YarnSpinner.dll": "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e",
+        "YarnSpinner.Unity.dll": "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-display-probe/speaker-display-probe.csproj",
+        "revision": "f6e888eeb964e7cc071e46a39a786979fe5adfb3",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-display-probe/Program.cs",
+          "revision": "f6e888eeb964e7cc071e46a39a786979fe5adfb3",
+          "sha256": "f264ee03a36dd0a314e0efd9c1f6074025c5080e922ff6cec147cec83191d20e"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "ff5460b7d58f0f7abbb08f84ff5bbc06b466ebaf",
+      "assemblyName": "speaker-display-probe",
+      "objectPath": "localization/work/speaker-display-obj",
+      "embeddedSources": "generated"
+    },
+    {
+      "project": {
+        "path": "localization/tools/background-input-probe/gameplay-companion/companion.csproj",
+        "revision": "77e2c921e8f4d3b913ca443afc24cc78444a351f",
+        "sha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/background-input-probe/gameplay-companion/Probe.cs",
+          "revision": "b438df412974e175cea403f91f11556a42136189",
+          "sha256": "0da6c47141370504caef49171b74bdb3e0be1b677b99561cd5756d2fe86d5981"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "77e2c921e8f4d3b913ca443afc24cc78444a351f",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "objectPath": "localization/work/background-performance-20261109.41uqFb/tracked/obj",
+      "embeddedSources": "generated",
+      "platform": "macos",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec",
+        "UnityEngine.CoreModule.dll": "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937",
+        "UnityEngine.UI.dll": "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4",
+        "UnityEngine.UIModule.dll": "6d43e6d441c4081647824d4e991e16f28a884f0fbda60056348071eb7299f80c",
+        "UnityEngine.PhysicsModule.dll": "863e307a3bc79a621d7e22526b2da8b62d0d35039f7d4d9e01e85187c1285b3c"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-inline-probe/speaker-inline-probe.csproj",
+        "revision": "5918c266af6cf216b7e271211317142df5d22c71",
+        "sha256": "041dd1deb75b972d2e898bc81c6cdbce79e4472a61fe62b16cf8f2cc2a5015ba"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-inline-probe/InlineSpeakerView.cs",
+          "revision": "fa63c0f2514373884c0c6f6036469e8c1a6f744a",
+          "sha256": "4f669f2991c541bd35414f45279fb57a9f716fa72f4acfabed99fc886da7305f"
+        },
+        {
+          "path": "localization/tools/speaker-inline-probe/Program.cs",
+          "revision": "fa63c0f2514373884c0c6f6036469e8c1a6f744a",
+          "sha256": "81f567fb535ebdb07f0771c9a946722647d6c45317959672db0a37fe7d8df840"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "5918c266af6cf216b7e271211317142df5d22c71",
+      "assemblyName": "speaker-inline-probe",
+      "objectPath": "localization/work/speaker-locale-final-20261110.osxldd/macos/harness/obj",
+      "embeddedSources": "generated",
+      "platform": "macos",
+      "gameManaged": {
+        "YarnSpinner.dll": "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e",
+        "YarnSpinner.Unity.dll": "1b2cbc2dc4490163b011b217dc351a06312ef1fc708110b4f189a58f666e433a"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-inline-probe/speaker-inline-probe.csproj",
+        "revision": "5918c266af6cf216b7e271211317142df5d22c71",
+        "sha256": "041dd1deb75b972d2e898bc81c6cdbce79e4472a61fe62b16cf8f2cc2a5015ba"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-inline-probe/InlineSpeakerView.cs",
+          "revision": "fa63c0f2514373884c0c6f6036469e8c1a6f744a",
+          "sha256": "4f669f2991c541bd35414f45279fb57a9f716fa72f4acfabed99fc886da7305f"
+        },
+        {
+          "path": "localization/tools/speaker-inline-probe/Program.cs",
+          "revision": "fa63c0f2514373884c0c6f6036469e8c1a6f744a",
+          "sha256": "81f567fb535ebdb07f0771c9a946722647d6c45317959672db0a37fe7d8df840"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "5918c266af6cf216b7e271211317142df5d22c71",
+      "assemblyName": "speaker-inline-probe",
+      "objectPath": "localization/work/speaker-locale-final-20261110.osxldd/windows/harness/obj",
+      "embeddedSources": "generated",
+      "platform": "windows",
+      "gameManaged": {
+        "YarnSpinner.dll": "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e",
+        "YarnSpinner.Unity.dll": "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/background-input-probe/gameplay-companion/companion.csproj",
+        "revision": "10987d4a750958558135528eb243312f29c4a9e1",
+        "sha256": "154546c334c52d799ae6ebbb359809ed4d6ac9bb714bea6abb12af09216fad75"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/background-input-probe/gameplay-companion/Probe.cs",
+          "revision": "10987d4a750958558135528eb243312f29c4a9e1",
+          "sha256": "9421e7ea257e310abf8312d7cb6ec8fff489c220c82b5bf56145fc2a07e3570c"
+        }
+      ],
+      "configuration": "Debug",
+      "sourceRevisionId": "4b4f19fd4a8c2fc10115d6761e8910eb56186498",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "objectPath": "localization/work/background-gameplay-20261109.CDqP5o/tracked/obj",
+      "embeddedSources": "generated",
+      "platform": "macos",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec",
+        "UnityEngine.CoreModule.dll": "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937",
+        "UnityEngine.UI.dll": "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4",
+        "UnityEngine.UIModule.dll": "6d43e6d441c4081647824d4e991e16f28a884f0fbda60056348071eb7299f80c",
+        "UnityEngine.PhysicsModule.dll": "863e307a3bc79a621d7e22526b2da8b62d0d35039f7d4d9e01e85187c1285b3c"
+      },
+      "windowsGameplay": false
+    }
+  ],
+  "outputs": {
+    "localization/work/background-dialogue-20261109.jsmTX8/tracked/bin/Dragons.BackgroundInputProbe.pdb": {
+      "bytes": 13772,
+      "sha256": "405d4648e44e9b8f84198839e44745bf69a9c699fd47326e43b0c3b560f27a83",
+      "mode": "0o644",
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "build": 0
+    },
+    "localization/work/background-dialogue-20261109.jsmTX8/tracked/bin/Dragons.BackgroundInputProbe.dll": {
+      "bytes": 24064,
+      "sha256": "2f2a41701e91fcc365e1094f6eb7acd3b7ad169611ac02f8cb0e4d027633069a",
+      "mode": "0o644",
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "build": 0
+    },
+    "localization/work/background-mount-20261109.yDBnlW/tracked-intro/bin/Dragons.BackgroundInputProbe.pdb": {
+      "bytes": 12376,
+      "sha256": "f4a3d25de3efad108a76a8c9b0b4a3724b40090240343926c1af6f8ce6534629",
+      "mode": "0o644",
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "build": 1
+    },
+    "localization/work/background-mount-20261109.yDBnlW/tracked-intro/bin/Dragons.BackgroundInputProbe.dll": {
+      "bytes": 19456,
+      "sha256": "31152aefb9c838e46c847a841d42aac8d0d907fed4a70aab3960b2be2a9a1519",
+      "mode": "0o644",
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "build": 1
+    },
+    "localization/work/speaker-presenter-20261109.TqasB1/macos/speaker-inline-probe/bin/speaker-inline-probe.pdb": {
+      "bytes": 13888,
+      "sha256": "d883063d01998a2b2589030f3b4fce68e4a6279a4ab57952d522e29fcc4c9c4d",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.pdb",
+      "build": 2
+    },
+    "localization/work/speaker-presenter-20261109.TqasB1/macos/patched/speaker-inline-probe.dll": {
+      "bytes": 20480,
+      "sha256": "10c07c7f2925169ce625decdd0fa784e2874b7756f3be51595205efb5f66178a",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.dll",
+      "build": 2
+    },
+    "localization/work/speaker-presenter-20261109.TqasB1/windows/speaker-inline-probe/bin/speaker-inline-probe.pdb": {
+      "bytes": 13888,
+      "sha256": "acfe1dcaa8b2a3599648cbe1d2c567134235d2dd34238b7ae63cd1dd1f3483e3",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.pdb",
+      "build": 3
+    },
+    "localization/work/speaker-presenter-20261109.TqasB1/windows/patched/speaker-inline-probe.dll": {
+      "bytes": 20480,
+      "sha256": "c57071c64aad07f5635ea73259a02410a730b7978eda0e83f5278368e3e0b88a",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.dll",
+      "build": 3
+    },
+    "localization/work/background-gate-20261109.Nx18eu/tracked/mac-bin/Dragons.BackgroundInputProbe.pdb": {
+      "bytes": 14652,
+      "sha256": "89fef09eb99fb14b99a7ec1fde5141e2e305c57173f450c32dc742be9664bc20",
+      "mode": "0o644",
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "build": 4
+    },
+    "localization/work/background-gate-20261109.Nx18eu/tracked/mac-bin/Dragons.BackgroundInputProbe.dll": {
+      "bytes": 27136,
+      "sha256": "51f96729f71c669c75eebe2461bb063c07d8a5b8db01333094cf18f05882925c",
+      "mode": "0o644",
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "build": 4
+    },
+    "localization/work/background-gate-20261109.Nx18eu/tracked/win-bin/Dragons.BackgroundInputProbe.pdb": {
+      "bytes": 14652,
+      "sha256": "fedc1266a11f1bc1c707e4f8eedf6818fb06ccbbd7be96db5cee8e069681fe22",
+      "mode": "0o644",
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "build": 5
+    },
+    "localization/work/background-gate-20261109.Nx18eu/tracked/win-bin/Dragons.BackgroundInputProbe.dll": {
+      "bytes": 27136,
+      "sha256": "51d69b110db08286cade396bb74bf0878c697b4cc8b7bb06b56f501292ca776e",
+      "mode": "0o644",
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "build": 5
+    },
+    "localization/work/alexander-body-final-20261110.Vjt7m6/macos/harness/bin/speaker-inline-probe.pdb": {
+      "bytes": 14584,
+      "sha256": "0423c09a09dbd51a5a55165af0edca664470b42ec447f2a44e70586afea5bd78",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.pdb",
+      "build": 6
+    },
+    "localization/work/alexander-body-final-20261110.Vjt7m6/macos/harness/bin/speaker-inline-probe.dll": {
+      "bytes": 23552,
+      "sha256": "562f2bd82fa330effa7bdaced67025fe7d0505332611c62230ad29822225767c",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.dll",
+      "build": 6
+    },
+    "localization/work/alexander-body-final-20261110.Vjt7m6/windows/harness/bin/speaker-inline-probe.pdb": {
+      "bytes": 14584,
+      "sha256": "ec714845f13c61ea29df6c7d272bb3d05d5e50ec715a681de86e04d7b2e45705",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.pdb",
+      "build": 7
+    },
+    "localization/work/alexander-body-final-20261110.Vjt7m6/windows/harness/bin/speaker-inline-probe.dll": {
+      "bytes": 23552,
+      "sha256": "ad108d109e83bc96b7b0bb4f03f45bdd15074f066b7e4ccfe0d0a9f5cf9a3a1e",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.dll",
+      "build": 7
+    },
+    "localization/work/speaker-runtime-log-verify-bin/speaker-runtime-log-probe.pdb": {
+      "bytes": 12724,
+      "sha256": "ee02caf1cd44c30926177aaf5d8d30d30c27d24f407266fda6abb846f01807e8",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-runtime-log-probe.pdb",
+      "build": 8
+    },
+    "localization/work/speaker-runtime-log-verify-bin/speaker-runtime-log-probe.dll": {
+      "bytes": 12288,
+      "sha256": "34834d8860cedfef33907786a8cb5958c7f931fd265550026c631b469b27dcdf",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-runtime-log-probe.dll",
+      "build": 8
+    },
+    "localization/work/speaker-inline-20261109.SJXiG2/macos/bin/speaker-inline-probe.pdb": {
+      "bytes": 13592,
+      "sha256": "2d1e110f715ce40b931b0873a06b151d4f2afd5ce9849dfe587c3acd1363045a",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.pdb",
+      "build": 9
+    },
+    "localization/work/speaker-inline-20261109.SJXiG2/macos/bin/speaker-inline-probe.dll": {
+      "bytes": 18432,
+      "sha256": "825351b54e797eab30bec0e027887ae63a4533d266fd92b5eed370e48018b868",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.dll",
+      "build": 9
+    },
+    "localization/work/speaker-inline-20261109.SJXiG2/windows/bin/speaker-inline-probe.pdb": {
+      "bytes": 13592,
+      "sha256": "43589c74b8989fe25deadef39e5febc7c8cf6e034e46b326a421d34c9a8d945c",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.pdb",
+      "build": 10
+    },
+    "localization/work/speaker-inline-20261109.SJXiG2/windows/bin/speaker-inline-probe.dll": {
+      "bytes": 18432,
+      "sha256": "81ccdd8d2d30e74cdcf6855af669b727f7f4d4493e047b6275c7ff39f62b2d51",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.dll",
+      "build": 10
+    },
+    "localization/work/speaker-display-bin/speaker-display-probe.pdb": {
+      "bytes": 15992,
+      "sha256": "e08d5127661d8de9fb43c9bdff183c02d794fdbdf427ebc16f144eef8376e57b",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-display-probe.pdb",
+      "build": 11
+    },
+    "localization/work/speaker-display-bin/speaker-display-probe.dll": {
+      "bytes": 28672,
+      "sha256": "b5ceb806f8beb2a92c0dfc4e367ebe82df6c1c6ac5b88ca6494040d8a4a7889a",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-display-probe.dll",
+      "build": 11
+    },
+    "localization/work/background-performance-20261109.41uqFb/tracked/bin/Dragons.BackgroundInputProbe.pdb": {
+      "bytes": 15056,
+      "sha256": "80eb00cf20004f67ccb7f9dcc0fde2010149d8dbd79a507346d335eb6e88ae6d",
+      "mode": "0o644",
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "build": 12
+    },
+    "localization/work/background-performance-20261109.41uqFb/tracked/bin/Dragons.BackgroundInputProbe.dll": {
+      "bytes": 29184,
+      "sha256": "eba36330205116f197dd6c9796065cb3821b35aec4c0f4d7f4e7d3a9d61db1dc",
+      "mode": "0o644",
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "build": 12
+    },
+    "localization/work/speaker-locale-final-20261110.osxldd/macos/harness/bin/speaker-inline-probe.pdb": {
+      "bytes": 14100,
+      "sha256": "79254ece60beba862e97aa9a15afc21557aad7abd593b46c92add7e5cb974f32",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.pdb",
+      "build": 13
+    },
+    "localization/work/speaker-locale-final-20261110.osxldd/macos/harness/bin/speaker-inline-probe.dll": {
+      "bytes": 21504,
+      "sha256": "ede2bf482aca1bcbdd983d3245d1e7199b8376e4e32c595fbc510f440f22b693",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.dll",
+      "build": 13
+    },
+    "localization/work/speaker-locale-final-20261110.osxldd/windows/harness/bin/speaker-inline-probe.pdb": {
+      "bytes": 14104,
+      "sha256": "da9abf508dea0c476ad441ec4e17b9328f7737b408f6d48b6115a5f8eee71e3a",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.pdb",
+      "build": 14
+    },
+    "localization/work/speaker-locale-final-20261110.osxldd/windows/harness/bin/speaker-inline-probe.dll": {
+      "bytes": 21504,
+      "sha256": "76fe56a54a2c4d84ce0642fa961a68c54b08e030abae78f1121990f8d866f104",
+      "mode": "0o644",
+      "member": "bin/Debug/net8.0/speaker-inline-probe.dll",
+      "build": 14
+    },
+    "localization/work/background-gameplay-20261109.CDqP5o/tracked/bin/Dragons.BackgroundInputProbe.pdb": {
+      "bytes": 11404,
+      "sha256": "f27c8a5296d868e1dcc08fa638e5aa64818c4564f89494dd257982815281d4da",
+      "mode": "0o644",
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "build": 15
+    },
+    "localization/work/background-gameplay-20261109.CDqP5o/tracked/bin/Dragons.BackgroundInputProbe.dll": {
+      "bytes": 14848,
+      "sha256": "e1553a107ad666d7dfeba97ef0583905f97ac920f07dcd3ad653d7f192d5ba54",
+      "mode": "0o644",
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "build": 15
+    }
+  }
+}
