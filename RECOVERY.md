@@ -1854,6 +1854,39 @@ Verify each document hash and use the fresh directory as `--journal-root`.
 The check fetched all 11 exact document versions from GitHub and restored
 all four streams from the downloaded index.
 
+The [journal document receipt](localization/evidence/archival-cli-event-stream-journal-document-20261111.json)
+restores two additional streams. Prepare the GitHub documents and
+`sessions/` prefixes as above, including the journal named in
+`journalDocuments`. In the fresh recovery directory, use that record to
+recreate `instructions/sitefor-mods.md` from its original journal text:
+
+```sh
+PYTHONPATH=localization python3.12 -B - "$stream_index" "$recovery_codex" <<'PY'
+import gzip, hashlib, json, sys
+from pathlib import Path
+from restore_cli_events import read_records, resolve
+
+with gzip.open(sys.argv[1], "rt") as stream:
+    index = json.load(stream)
+root = Path(sys.argv[2]).resolve(strict=True)
+relative = Path("instructions/sitefor-mods.md")
+row = index["journalDocuments"][relative.as_posix()]
+offset = row["offset"]
+records = read_records(root, row["journal"], {offset})
+text = resolve([[offset, *row["fields"]]], records)
+start = row["start"]
+data = text[start:start + row["length"]].encode()
+assert hashlib.sha256(data).hexdigest() == row["sha256"]
+output = root / relative
+output.parent.mkdir(parents=True, exist_ok=True)
+with output.open("xb") as stream:
+    stream.write(data)
+PY
+```
+
+Run the stream recovery command with the same fresh directory as
+`--journal-root`. Both streams matched using the downloaded index.
+
 The [CLI report excerpt receipt](localization/evidence/archival-cli-report-excerpts-20261111.json.gz)
 maps 42 historical files to exact byte ranges in retained local command
 output. Restore any missing source stream using its stream receipt
