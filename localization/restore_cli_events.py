@@ -68,14 +68,7 @@ def resolve(reference, records):
 def rebuild(row, events, records):
     git_blobs = {}
 
-    def field_value(value):
-        if not isinstance(value, dict):
-            return value
-        if value.keys() == {'reference'}:
-            return resolve(value['reference'], records)
-        if value.keys() != {'git'}:
-            return value
-        source = value['git']
+    def git_text(source):
         blob, digest, prefix = source['blob'], source['sha256'], source['prefix']
         if not re.fullmatch(r'[0-9a-f]{40}', blob) or (
             prefix and not re.fullmatch(r'cat: [A-Za-z0-9_.-]+: No such file or directory\n', prefix)
@@ -88,6 +81,16 @@ def rebuild(row, events, records):
                 raise ValueError('CLI output Git blob fingerprint mismatch')
             git_blobs[key] = raw.decode('utf-8')
         return prefix + git_blobs[key]
+
+    def field_value(value):
+        if not isinstance(value, dict):
+            return value
+        if value.keys() == {'reference'}:
+            return resolve(value['reference'], records)
+        if value.keys() == {'git'}:
+            source = value['git']
+            return ''.join(git_text(part) for part in source) if isinstance(source, list) else git_text(source)
+        return value
 
     lines = []
     for event in events:

@@ -1834,10 +1834,15 @@ recorded Git blob for the historical `HANDOFF.md` output and verifies its
 hash before combining it with the journal records. The downloaded index
 reproduced all 11 streams byte for byte.
 
+The [combined Git output receipt](localization/evidence/archival-cli-event-stream-composite-git-20261111.json)
+uses the same command for two streams whose historical command output
+joined two Git files. The helper verifies each file and preserves their
+recorded order. Both streams matched after downloading the index.
+
 The [CLI report excerpt receipt](localization/evidence/archival-cli-report-excerpts-20261111.json.gz)
 maps 42 historical files to exact byte ranges in retained local command
-output. Restore any missing source stream using the Git output stream
-receipt first. Pass a recorded checkout-relative path and a fresh
+output. Restore any missing source stream using its stream receipt
+above first. Pass a recorded checkout-relative path and a fresh
 output file.
 
 ```sh
