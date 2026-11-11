@@ -825,7 +825,8 @@ The `archiveRebuilds` section records two Russian pilot previews.
 Download the named archive from the `recovery-inputs-v0.2.1` maintainer
 draft and verify its SHA-256. Extract each recorded member, verify its
 PNG hash and run the preview helper with that section's tool versions.
-Both outputs matched the original bytes and file modes.
+Both outputs matched the original bytes and file modes. macOS manages
+provenance, quarantine and last-used metadata for the restored copies.
 
 The [binary copy receipt](localization/evidence/archival-binary-copies-20261111.json.gz)
 maps historical executable and library copies to exact files in the stock
