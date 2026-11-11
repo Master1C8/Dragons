@@ -91,6 +91,24 @@ The expected SHA-256 of each extracted file is in
 [the v42 receipt](localization/evidence/yarn-fragment-markers-20261110.md).
 The ZIP and both extracted files were verified after downloading the draft.
 
+For changes to the shared source inventory itself, the
+[inventory reconstruction receipt](localization/evidence/archival-source-inventories-20261111.json.gz)
+pins the discovery exports and the corresponding Git revisions. Download the
+receipt's export archive from the same maintainer draft, verify its SHA-256
+and extract the JSON files. Rebuild v42 or select an earlier name from the
+receipt:
+
+```sh
+python3.12 -B localization/restore_source_inventory.py \
+  localization/evidence/archival-source-inventories-20261111.json.gz \
+  combined-provisional-v42-20261110.json \
+  --exports "$extracted_exports" --output "$recovery/rebuilt-inventory.json"
+```
+
+The tool verifies the exports and uses the recorded assembler and role
+manifests from Git. The archival check reproduced v42 and 30 earlier
+inventories byte for byte using the downloaded exports.
+
 For the nine locales with additional font inputs, download
 `Dragons-font-build-inputs.zip` from the same maintainer draft. Verify its
 SHA-256 before extracting it into `$recovery/fonts`:
