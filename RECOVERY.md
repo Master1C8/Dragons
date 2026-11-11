@@ -1303,6 +1303,30 @@ The restore tool verifies the SDK output, reapplies the historical
 assembly attributes where needed, and checks the restored bytes before
 writing. The check matched all 259 files and their recorded modes.
 
+The [dependency metadata receipt](localization/evidence/archival-dotnet-dependency-metadata-20261111.json)
+pins 45 earlier `.deps.json` files. Build the four template variants with
+.NET SDK 8.0.131. Set `cecil` to the Mono.Cecil 0.11.6 DLL at
+`lib/netstandard2.0/Mono.Cecil.dll` and verify its SHA-256
+`831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf`.
+
+```sh
+for variant in package reference plain standard; do
+  mkdir -p "$build_dir/$variant"
+  cp localization/tools/historical-dotnet-dependencies/{scan.csproj,Program.cs} "$build_dir/$variant/"
+  dotnet build "$build_dir/$variant/scan.csproj" -c Debug \
+    --nologo --disable-build-servers --ignore-failed-sources \
+    -p:NuGetAudit=false -p:Variant="$variant" -p:CecilPath="$cecil"
+done
+python3 -B localization/restore_dotnet_assembly_metadata.py \
+  localization/evidence/archival-dotnet-dependency-metadata-20261111.json \
+  "$build_dir" "$historical_path" "$restored_file"
+```
+
+The helper verifies the selected SDK template and substitutes the
+recorded assembly name. All 45 outputs matched the original bytes and
+modes. Restore the 17 source paths needed by the historical text copy
+receipt before replaying its 281 dependent copies.
+
 To recreate the historical counter snapshot, point the restore tool at the
 original read-only Codex journal directory or an exact copy:
 
@@ -1332,6 +1356,11 @@ python3.12 -B localization/restore_cli_events.py \
 
 The check used the downloaded index and verified all 28 journal prefixes.
 It reproduced all 108 streams byte for byte and checked their file modes.
+The [follow-up receipt](localization/evidence/archival-cli-event-stream-followup-20261111.json)
+uses the same command for the Italian continuation that also recorded
+file-change events. Its archive carries the file names and operation
+types, and the journal supplies the text. The restored stream matched
+the original bytes.
 
 The [renderer acceptance index](localization/evidence/archival-renderer-acceptance-20261111.json)
 pins the static shaping, staged line break, paired runtime and Parallels

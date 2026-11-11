@@ -1,0 +1,340 @@
+{
+  "schema": 1,
+  "sdk": "8.0.131",
+  "gameLaunched": false,
+  "templates": {
+    "plain": {
+      "path": "plain/bin/Debug/net8.0/scan.deps.json",
+      "sha256": "ea5db9e49ed1909082dd4742d82919544d730e347463c2d2176af6cdd4eef6ff"
+    },
+    "standard": {
+      "path": "standard/bin/Debug/netstandard2.1/scan.deps.json",
+      "sha256": "c580d9052e1eaf96b239895e870c8aa78710bd985e0bab2d8be369b958916ae2"
+    },
+    "reference": {
+      "path": "reference/bin/Debug/net8.0/scan.deps.json",
+      "sha256": "511908ed399ed2673a72a94661721286e1ab67ff087afe25decf7fbf9b0d4c40"
+    },
+    "package": {
+      "path": "package/bin/Debug/net8.0/scan.deps.json",
+      "sha256": "8b3a3acd4f70554df35612d729ee9f93302212f64e3cc536d38d1bd527aa1a78"
+    }
+  },
+  "outputs": {
+    "localization/work/addressable-catalog-keys-bin/addressable-catalog-keys.deps.json": {
+      "bytes": 1453,
+      "sha256": "c079275e59f03dc910086bd8e008f42bd1b9e01955de087d58334d5d6694e060",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "addressable-catalog-keys"
+    },
+    "localization/work/addressable-catalog-locations-bin/addressable-catalog-locations.deps.json": {
+      "bytes": 1468,
+      "sha256": "d18f63d3648c7d7b594ef43f1fc58b6f1c3b76f11fc3f261c91e71bddec336ed",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "addressable-catalog-locations"
+    },
+    "localization/work/addressables-bundle-options-20261109.MY028D/callers/bin/Debug/net8.0/callers.deps.json": {
+      "bytes": 1402,
+      "sha256": "4befaddb9bd577a0c2af19a9dfe80ad8b8e1fa9b0c9fd396ccb5f3fb7b09f80a",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "callers"
+    },
+    "localization/work/alexander-speaker-log-probe-bin/alexander-speaker-log-probe.deps.json": {
+      "bytes": 827,
+      "sha256": "66f9b1e89c89acf61989b22e9841b8ff2818ff642403bf1d4c535c32edab55d5",
+      "mode": "0o644",
+      "template": "reference",
+      "assemblyName": "alexander-speaker-log-probe"
+    },
+    "localization/work/background-gameplay-20261109.CDqP5o/il-bin/il.deps.json": {
+      "bytes": 1387,
+      "sha256": "2c023c4b7c189edcd95d4896e46730cfd5cee67812a4de42e04b9a29fc7d9720",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "il"
+    },
+    "localization/work/background-performance-20261109.41uqFb/windows-preflight/eval-bin/eval.deps.json": {
+      "bytes": 1393,
+      "sha256": "bf7d7f246ddf1b6bf469ce07fcadfe85215ffb8ac07bde858fd6129b485214ba",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "eval"
+    },
+    "localization/work/complex-renderer-20261110.nYJmC2/layout-bin/Dragons.PreparedTextLayout.deps.json": {
+      "bytes": 489,
+      "sha256": "10e71291a9a352ca59fd85be7510fde2aac7deb133e82fa4e1c01128187b81a9",
+      "mode": "0o644",
+      "template": "standard",
+      "assemblyName": "Dragons.PreparedTextLayout"
+    },
+    "localization/work/complex-renderer-20261110.nYJmC2/speaker-current-runtime/macos/Dragons.SpeakerPresentation.deps.json": {
+      "bytes": 492,
+      "sha256": "bcac5664aa01fcf858298745b670f8e973e3fad21f396eff39822d7c5a0e7ffc",
+      "mode": "0o644",
+      "template": "standard",
+      "assemblyName": "Dragons.SpeakerPresentation"
+    },
+    "localization/work/complex-renderer-20261110.nYJmC2/wrap-jit/bin/Debug/net8.0/Check.deps.json": {
+      "bytes": 385,
+      "sha256": "ca74c9f7cfa18275a763272b5346336cee4cb3ea5e326d66fea33c9a425c76e4",
+      "mode": "0o644",
+      "template": "plain",
+      "assemblyName": "Check"
+    },
+    "localization/work/conrad-reload-20261110.zcAS1o/patcher-bin/patcher.deps.json": {
+      "bytes": 1402,
+      "sha256": "05747fef515cc817f3b1cf3d7b2d02512b095e2e708a8c84e11bb068033e3750",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "patcher"
+    },
+    "localization/work/display-adapter-20261110.oMiEA1/bin/inspect.deps.json": {
+      "bytes": 1402,
+      "sha256": "6981c2f01c56d56d6307662b48254d7976d0ca94c1b5db7daf24d0ca32a41b80",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "inspect"
+    },
+    "localization/work/game-component-fields-20261109.Ku7FyS/consumers/bin/Debug/net8.0/consumers.deps.json": {
+      "bytes": 1408,
+      "sha256": "d3729ae913bc6a7299b74293a85a2ed4579b24fbb54d2ffe3be3eb0a3f388f3e",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "consumers"
+    },
+    "localization/work/game-component-fields-20261109.Ku7FyS/types/bin/Debug/net8.0/types.deps.json": {
+      "bytes": 1396,
+      "sha256": "64d010fcf1e0d164516878bbee30f9c9de3e6152c21175f7645bd30deb51473f",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "types"
+    },
+    "localization/work/il-dump/bin/Debug/net8.0/probe.deps.json": {
+      "bytes": 761,
+      "sha256": "f6f955ab654d4e6a7b24055a0b51d3429e4e7a72950c48cfe026d462fc1c854c",
+      "mode": "0o644",
+      "template": "reference",
+      "assemblyName": "probe"
+    },
+    "localization/work/input-action-source-bin/input-action-source.deps.json": {
+      "bytes": 1438,
+      "sha256": "1075f0ab81cbb8610d58c8451fcf44059f2bb48b133384334f3d92484530046b",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "input-action-source"
+    },
+    "localization/work/installer-all.Yykv0u/steam-bin/SteamPathFix.deps.json": {
+      "bytes": 1417,
+      "sha256": "c323dd81f4aea6e1a23ee44e7ce37bfdc0abd7632bf223aff2459cd609b3d3a5",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "SteamPathFix"
+    },
+    "localization/work/level-schema-bin/level-schema.deps.json": {
+      "bytes": 1417,
+      "sha256": "546f61ba8691d115eb86f3b27479ea8279ee8fef17e7297396b9c716db41f08d",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "level-schema"
+    },
+    "localization/work/level-schema-probe/bin/Debug/net8.0/level-schema-probe.deps.json": {
+      "bytes": 800,
+      "sha256": "6aed39110ddd7d01b28109597bf00b1122932e9c0a18600da1431ba25c8d2945",
+      "mode": "0o644",
+      "template": "reference",
+      "assemblyName": "level-schema-probe"
+    },
+    "localization/work/managed-game-roles-20261109.8LlHLN/runtime-bin/probe.deps.json": {
+      "bytes": 385,
+      "sha256": "4554b391e086a20fdc44fd5e8849f8eb0c604d9667bd0ca016b842f1c732ec6f",
+      "mode": "0o644",
+      "template": "plain",
+      "assemblyName": "probe"
+    },
+    "localization/work/managed-metadata-20261110.NICDw4/bin/managed-metadata-audit.deps.json": {
+      "bytes": 1447,
+      "sha256": "0ce3649a6849e3bdeb6a2a948b2d676cf39f97189b332c8275e0d1af9c75f23e",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "managed-metadata-audit"
+    },
+    "localization/work/managed-metadata-20261110.NICDw4/mutator-bin/mutate.deps.json": {
+      "bytes": 764,
+      "sha256": "0563c2997b002ec3848998abf2b5d0758d3d83b03dd6a7780591584e1d4ac0d7",
+      "mode": "0o644",
+      "template": "reference",
+      "assemblyName": "mutate"
+    },
+    "localization/work/managed-strings-bin/managed-strings.deps.json": {
+      "bytes": 791,
+      "sha256": "7a506ef302b66ed3a7cf0924f318fca6b691e525502a5bdda5fbbd6edcb928c3",
+      "mode": "0o644",
+      "template": "reference",
+      "assemblyName": "managed-strings"
+    },
+    "localization/work/managed-strings-unity-bin/managed-strings.deps.json": {
+      "bytes": 1426,
+      "sha256": "ba04e31c7833d3cfd63d91bce04dbacc4e7d54e0dd6cdb1effd7fc3eba514e7b",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "managed-strings"
+    },
+    "localization/work/menu-reason-bin/menu-reason-source.deps.json": {
+      "bytes": 1435,
+      "sha256": "3de81263bf2694a3bb5b19a11a7d65eb72e9a7e9add15596920c6f7ce934da92",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "menu-reason-source"
+    },
+    "localization/work/missing-target-patcher/bin-out/probe.deps.json": {
+      "bytes": 1396,
+      "sha256": "e1034dea2eec4f2194197e65f51c2f0067c2397061bf79c216bd1d64f845af24",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "probe"
+    },
+    "localization/work/objective-source-bin/objective-source.deps.json": {
+      "bytes": 1429,
+      "sha256": "1e7b1b789aa681f38925fc52f54146e642bacf159e60d50e16790240694cb9d1",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "objective-source"
+    },
+    "localization/work/ru-ryan-side.BPF6HL/bin/Dragons.BackgroundInputProbe.deps.json": {
+      "bytes": 495,
+      "sha256": "c61ef16ad117a3c75019c75ebafc5eae50938d33fb9940cad2af06d143ce36e0",
+      "mode": "0o644",
+      "template": "standard",
+      "assemblyName": "Dragons.BackgroundInputProbe"
+    },
+    "localization/work/settings-semantics-bin/settings-semantics.deps.json": {
+      "bytes": 1435,
+      "sha256": "f021a6d17bb213a9bde8e5696d06d8787e416c89c5864c5fa3204ae8a10f678e",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "settings-semantics"
+    },
+    "localization/work/slot-code-probe-bin/slot-code-probe.deps.json": {
+      "bytes": 1426,
+      "sha256": "6e5d8d2beb73d917c9edaefb08049893a9ffd158039c33879d1af80f46386c69",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "slot-code-probe"
+    },
+    "localization/work/speaker-consumers-bin/speaker-consumers.deps.json": {
+      "bytes": 1432,
+      "sha256": "fe93e9e550c818c7f41ddf76e0ce92aabb16dddccd19567a35c6e569baa5589b",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "speaker-consumers"
+    },
+    "localization/work/speaker-display-runtime-bin/speaker-display-runtime-test.deps.json": {
+      "bytes": 454,
+      "sha256": "0f413a7497f902bde04c2bf1084fc350cd1bf4363a23ae6b9900030110d04609",
+      "mode": "0o644",
+      "template": "plain",
+      "assemblyName": "speaker-display-runtime-test"
+    },
+    "localization/work/speaker-entry-probe/bin/Debug/net8.0/speaker-entry-probe.deps.json": {
+      "bytes": 803,
+      "sha256": "eddd253bff9284dcb01ef7c56b81682f26716e94be852d0db1b2a8051f2ee58c",
+      "mode": "0o644",
+      "template": "reference",
+      "assemblyName": "speaker-entry-probe"
+    },
+    "localization/work/speaker-graphics-background-20261109.Tvsodq/capture-patch/bin/Debug/net8.0/patch.deps.json": {
+      "bytes": 1396,
+      "sha256": "4bfb834f7db97d97b8b00f51079a53bcb126736a154232baae36e665e5c7e5c3",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "patch"
+    },
+    "localization/work/speaker-line-probe-bin/speaker-line-probe.deps.json": {
+      "bytes": 1435,
+      "sha256": "43660038e005c3b0df91b801beed1986a368293819df71444c058c5c538c3afa",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "speaker-line-probe"
+    },
+    "localization/work/speaker-line-runtime-test-bin/speaker-line-runtime-test.deps.json": {
+      "bytes": 445,
+      "sha256": "978a118adcaabbd23d1205efe2aef7a982560ba01a662189358874415c454d78",
+      "mode": "0o644",
+      "template": "plain",
+      "assemblyName": "speaker-line-runtime-test"
+    },
+    "localization/work/speaker-presentation-flow-bin/speaker-presentation-flow.deps.json": {
+      "bytes": 1456,
+      "sha256": "2d9ba853914e5a383678e05df9cc6cabcc1a1397f11aba7ad12e53326dd5e8f5",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "speaker-presentation-flow"
+    },
+    "localization/work/speaker-presenter-20261109.TqasB1/macos/speaker-inline-runtime/bin/Dragons.SyntheticSpeakerInline.deps.json": {
+      "bytes": 501,
+      "sha256": "599b0f79c10601b01d1232708b3bcbf8993e7d886f23dc72cfa8fd3e559002b7",
+      "mode": "0o644",
+      "template": "standard",
+      "assemblyName": "Dragons.SyntheticSpeakerInline"
+    },
+    "localization/work/speaker-runtime-harness/bin/Debug/net8.0/speaker-runtime-harness.deps.json": {
+      "bytes": 439,
+      "sha256": "ec2a38754c2e90ff56d66b3cea90a60ff1bf1cb4cb4097c0f6fd08cee72f7f9b",
+      "mode": "0o644",
+      "template": "plain",
+      "assemblyName": "speaker-runtime-harness"
+    },
+    "localization/work/speaker-runtime-log-verify-bin/speaker-runtime-log-probe.deps.json": {
+      "bytes": 821,
+      "sha256": "e14060666807d4c864ce375a1f41c5a1f928dc6086362270312667b07c9d99de",
+      "mode": "0o644",
+      "template": "reference",
+      "assemblyName": "speaker-runtime-log-probe"
+    },
+    "localization/work/speaker-unity-background-20261109.X5dcpl/instrument/bin/Debug/net8.0/instrument.deps.json": {
+      "bytes": 1411,
+      "sha256": "586a13c2de499e4f60832b60ae3565e91c929bca3585927b38307e04ed22ab4b",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "instrument"
+    },
+    "localization/work/speaker-unity-background-20261109.X5dcpl/tracked/bin/speaker-inline-unity-probe.deps.json": {
+      "bytes": 1459,
+      "sha256": "165c1c86926dd8fe022aff746024d2e0b7cef80a15734ea2c1d5b99e9212d842",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "speaker-inline-unity-probe"
+    },
+    "localization/work/text-setter-bin/text-setter-consumers.deps.json": {
+      "bytes": 1444,
+      "sha256": "338b3328bb4d21087fe652a4d2364f3b4eef26d46377cd52bfcc46cfb9d34b82",
+      "mode": "0o644",
+      "template": "package",
+      "assemblyName": "text-setter-consumers"
+    },
+    "localization/work/transition-builder-20261109.8zft9T/inspect/bin/Debug/net8.0/inspect.deps.json": {
+      "bytes": 767,
+      "sha256": "ae062cb89957df894dbab845454c6044bba0bed4064869b77fe9094899934096",
+      "mode": "0o644",
+      "template": "reference",
+      "assemblyName": "inspect"
+    },
+    "localization/work/transition-unity-20261109.G2AxDU/tools/bin/Debug/net8.0/patch.deps.json": {
+      "bytes": 761,
+      "sha256": "40a678e47b572053745ac3efb3515678a9794e14c73bb2dbc504b493337a58cc",
+      "mode": "0o644",
+      "template": "reference",
+      "assemblyName": "patch"
+    },
+    "localization/work/yarn-speaker-roster-20261110.EZsFur/bin-control/parser.deps.json": {
+      "bytes": 388,
+      "sha256": "ccfded20d5cc21d4827a8787bdd43594fac76e6a3ef105566d6e0d1ab42f625a",
+      "mode": "0o644",
+      "template": "plain",
+      "assemblyName": "parser"
+    }
+  }
+}

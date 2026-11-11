@@ -2,11 +2,11 @@
 """Restore a historical .NET metadata file from a fresh SDK build."""
 
 import argparse
-import gzip
 import hashlib
-import json
 import re
 from pathlib import Path
+
+from restore_probe_assets import read_receipt
 
 
 ATTRIBUTE = re.compile(
@@ -35,6 +35,11 @@ def restore(receipt, build_dir, historical_path, output):
 
         source = ATTRIBUTE.sub(replace, source)
 
+    if "assemblyName" in record:
+        name = record["assemblyName"].encode("utf-8")
+        source = source.replace(b'"scan/1.0.0"', b'"' + name + b'/1.0.0"')
+        source = source.replace(b'"scan.dll"', b'"' + name + b'.dll"')
+
     if len(source) != record["bytes"] or hashlib.sha256(source).hexdigest() != record["sha256"]:
         raise ValueError("Restored metadata differs from the historical file")
     with output.open("xb") as stream:
@@ -49,8 +54,7 @@ def main():
     parser.add_argument("historical_path")
     parser.add_argument("output", type=Path)
     args = parser.parse_args()
-    with gzip.open(args.receipt, "rt", encoding="utf-8") as stream:
-        receipt = json.load(stream)
+    receipt = read_receipt(args.receipt)
     restore(receipt, args.build_dir, args.historical_path, args.output)
 
 
