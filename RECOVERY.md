@@ -457,6 +457,22 @@ For an image whose hash is cited by the historical QA documents, use the
 Download its archive from the maintainer draft, verify its SHA-256 and
 pass the archive directory as `--recovery-archives`. The check restored
 all 212 cited image files byte for byte.
+The [paired transition control receipt](localization/evidence/archival-transition-paired-control-20261111.json.gz)
+uses the same recovery command for the original control frame and both
+logs named in the transition report. The downloaded archive reproduced
+all three files byte for byte.
+
+The [rebuilt QA preview receipt](localization/evidence/archival-rebuilt-qa-previews-20261111.json.gz)
+records 31 previews reproduced from the original PNGs. Check the input
+PNG and installed preview helper hashes, then run the helper with the
+recorded Pillow and libwebp versions:
+
+```sh
+python3.12 -B ~/.codex/tools/screenshot_preview.py "$original_png" --output "$fresh_webp"
+```
+
+Verify the WebP hash and apply the recorded mode. These PNGs still
+reside at their recorded original paths.
 
 The [binary copy receipt](localization/evidence/archival-binary-copies-20261111.json.gz)
 maps historical executable and library copies to exact files in the stock
@@ -907,6 +923,12 @@ PYTHONPATH="$revision_export/localization" python3.12 -B "$recorded_scout" \
 
 Verify the selected JSON or stdout hash and apply the recorded file mode.
 All 14 outputs were rebuilt byte for byte.
+
+The [empty generated directory receipt](localization/evidence/archival-empty-generated-dirs-20261111.json.gz)
+lists blank bundle signature and .NET reference directories left after
+their files were archived or rebuilt. Recreate the recorded path with
+`mkdir -p` and apply its listed mode if a historical fixture needs it.
+All 537 paths were recreated and verified empty before cleanup.
 To recreate the historical counter snapshot, point the restore tool at the
 original read-only Codex journal directory or an exact copy:
 
