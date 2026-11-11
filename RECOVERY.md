@@ -188,5 +188,11 @@ The helper checks every restored file against the receipt and preserves
 the recorded permissions. These historical probes are separate from the release
 packages and the normal build inputs.
 
+The [Windows stock ZIP receipt](localization/evidence/archival-windows-stock-zip-20261111.json)
+lists all 287 files in the old Parallels test fixture. To recreate the
+fixture, ZIP those relative paths from the owned Windows stock game directory
+and verify each member against the listed SHA-256. The recovery check rebuilt
+the fixture and verified all members without running it.
+
 The release card's visual delivery contains 150 published screenshot slots
 across 30 locales. The upload readback matched all 150 hosted files.

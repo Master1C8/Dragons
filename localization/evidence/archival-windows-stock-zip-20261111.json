@@ -1,0 +1,1155 @@
+{
+  "gameVersion": "9/9/2026_ee944596",
+  "path": "localization/work/parallels-renderer.sUgfkk/stock.zip",
+  "originalArchiveSha256": "41f06c53201e60f3698f46a95e831d4ef5a2960d2c0e19429b55e3f505fd1328",
+  "entries": [
+    {
+      "path": "D3D12/D3D12Core.dll",
+      "sha256": "625bd40005b1c3708695d5256ecf230d278e6b8edba5a88af70f3d91324f3052"
+    },
+    {
+      "path": "DragNWash.exe",
+      "sha256": "5fdfffe386a2f43b77626cd3d70554d84c6588c94d309544924d6fab088ddafc"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Assembly-CSharp.dll",
+      "sha256": "8b1b439e62bff222fbce00869a3343422c77d08e384db7ed323b5e66f44195e2"
+    },
+    {
+      "path": "DragNWash_Data/Managed/GatorDragonGamesExtensions.dll",
+      "sha256": "7a5df7d79d3cca119afcf1d65e6ffc9b217d69a8a6e0348128b1cf4d5ba0704d"
+    },
+    {
+      "path": "DragNWash_Data/Managed/MackySoft.SerializeReferenceExtensions.dll",
+      "sha256": "3a01deb4a5573ea88f147de663daeb736a28b679ddbb242cad0c3a595762ce89"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Microsoft.CSharp.dll",
+      "sha256": "144a06f84d540075afffb3d5206864e2031531a787be5f3b2a3c36f237acb894"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Mono.Security.dll",
+      "sha256": "618009319dbf3ae374f9b5dc0d0522e1e1bdd172200c120a5471747b7991a584"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Naelstrof.Extensions.dll",
+      "sha256": "d82322bfc46665de2cb40970ea49a5cd2918f7bcf737c95d2575f6cb4427559a"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Naelstrof.Splines.dll",
+      "sha256": "63257af1026e0f5cf9db634d182b3839a5c11a3243f393846a67dc0cd183296f"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Naelstrof.UnityScriptableSettings.dll",
+      "sha256": "b6f215bc0eef09035d800a2fab01bed0a8ffeba8f85ba00cfb329ebf009c1f90"
+    },
+    {
+      "path": "DragNWash_Data/Managed/NaelstrofRaliv.DynamicPenetrationForGames.dll",
+      "sha256": "5fb534be453a265f2764a06c1bcaa01e59b65fc987648d835a74dd350d4b198c"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Newtonsoft.Json.dll",
+      "sha256": "a56146202232958f46bd6a28b5a7da166aea123ee0d646735a46e5c341dfbf1f"
+    },
+    {
+      "path": "DragNWash_Data/Managed/RalivIK.dll",
+      "sha256": "97f107c54aef06d048b7c0c421a103e3917816c39ab80b6877ded7183b51ae6e"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.ComponentModel.Composition.dll",
+      "sha256": "0c3e81771a5fe9657bea02887996de72606c3cb247e4fbe413f743f40e2af244"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Configuration.dll",
+      "sha256": "04907729e87a101e62d3a5c93cfa16688bee745d05440d6daa0c541964be27ab"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Core.dll",
+      "sha256": "a5e7d47313da0eca0b92a901a30498f5e970916faf63b70b74dd62b09760ed72"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Data.DataSetExtensions.dll",
+      "sha256": "498f14c37d83f946a47a79e01de777e62f269ee9c3820f2026b59ab1c1b9222f"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Data.dll",
+      "sha256": "427478545ce66b632414ca838088ea073f250ed16b21c70005f48cb571350e47"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Drawing.dll",
+      "sha256": "e182e688223acedb8135227e8fbff17d5ed22f47f81141aa9cb96ef1ab9926fc"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.EnterpriseServices.dll",
+      "sha256": "84af394ad863e31407eb2b9555ca7e96a9f1966630f5d7f0eec54f0011f6babc"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.IO.Compression.FileSystem.dll",
+      "sha256": "2730d2a27f9362259a406ea14727e5f0a71bc21a6825be94f8623a84bd9f9c79"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.IO.Compression.dll",
+      "sha256": "80421a67b4162a5f1b4aad6a8327c6d1fb4b04dedd39dae14a770b812594fae2"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.IO.Hashing.dll",
+      "sha256": "ac7ac3e83805b0b621c48b90543dc733c9a89106835278618357d6187e3da74e"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Memory.dll",
+      "sha256": "c4f030a2cba7da7cdcf493257c24560e203d355904aee490d645a935842f834a"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Net.Http.dll",
+      "sha256": "3cd3ac19050d5031c13644cd87958ad8029b79ce16c7747faf3d0542e7fb45a3"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Numerics.dll",
+      "sha256": "ac9224b32355a09f09b706cab568384f64cf8116825c5911cef1e13221c61c38"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Runtime.CompilerServices.Unsafe.dll",
+      "sha256": "01748200f2400c742aa689f1f5101bd6298efdfd92c00c18f4fa473847235ba9"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Runtime.Serialization.dll",
+      "sha256": "1152ef687dbe39e0ccb6b9a68f6501004415a729072df29abab3bc7c66840217"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Runtime.dll",
+      "sha256": "e0a7334b7ba419aaab6bd3bb6992d693e689341a9178172c9bf99c2aa6a085bd"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Security.dll",
+      "sha256": "2101a4dd4475285f96b1ac3ba1715a52aa8067690709e675cc49a9eb8ed901a4"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.ServiceModel.Internals.dll",
+      "sha256": "888ec94a59c127854871b76afa49fdcefdf723c0f0b6fd78e87f73a8495b63b5"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Transactions.dll",
+      "sha256": "f65dbc257d26a361dcc01edd58bf3e542d186c8ee492a4f7a62b0dd7d59f7050"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Xml.Linq.dll",
+      "sha256": "4f5d6bf313cbf091e7bff83d07dd03ed93d0ecb3ddb025ae786aadd6b5f477fb"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.Xml.dll",
+      "sha256": "79194220adfcf027a334c87b1adcc6d07b9660a4061e04b3d9500c10d30f7d49"
+    },
+    {
+      "path": "DragNWash_Data/Managed/System.dll",
+      "sha256": "7019d6b6dbfa07cf30f62e7d3ccb969f70cbf001fd72112938ffb535c7f75d81"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.AI.Navigation.dll",
+      "sha256": "e07c81eadf41c047bfa1512273600bf36284cb29cdbea07f361c3d8ddcb5650a"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.Addressables.dll",
+      "sha256": "6cefedcd429f8eaafa95a2878afc62ef6ac8e8b5e261ead3a3a7f4493a4c0a8c"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.Burst.Unsafe.dll",
+      "sha256": "9d9c1ff52411decbee5d9f0d1cd61ebeaa222077aa77a52101ea3debafae98e2"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.Burst.dll",
+      "sha256": "53643b74059635ab81381b5f911f403275810c31d148a76d67bb73565551941e"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll",
+      "sha256": "ff50383f807f9692e4913b97e47d86fefcb8faa33d6d48cd3e3fd6fc7ffb448d"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.Collections.dll",
+      "sha256": "7ce88d79d48768dada52fda3de37bd91c06c7304a528f667e6dfd48ed8cb68d3"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.InputSystem.ForUI.dll",
+      "sha256": "88d46945f1e4f06eacdc112c344a82601c79e0a87c4f067041d440be66a8cf72"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.InputSystem.dll",
+      "sha256": "94d2e9efdbae9d2bf42067c98edb51c829bba57c72ddf49d2fbe99d569ee2c75"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.InternalAPIEngineBridge.004.dll",
+      "sha256": "7ee2bc75009aab0723decb55e66d6041e3f6597f469787712d52b56c19f118b3"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.InternalAPIEngineBridge.013.dll",
+      "sha256": "e0ac1a0f5b782d93a253a3e54cf6d522c7197f372329db7b17bd4c76b7cfa94f"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.Localization.dll",
+      "sha256": "67e2174d2c28d435f28430a976dc0b646e9d025ab5068ca1fc32d8c6b33357ad"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.Mathematics.dll",
+      "sha256": "2d0398f42c1440857fb1e8e5cff0647d7656f47f48d0d977c6d6e6fbb47bd4f0"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.MemoryProfiler.dll",
+      "sha256": "0b8e7fb6c7576ddfcb57c28c5d93fc956bba769b302b5d50bff71731650359e5"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.Multiplayer.Center.Common.dll",
+      "sha256": "eb2cfca4217b5722db9e47dad9b03efe4808d56762d69657ee445c48c070635a"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.Profiling.Core.dll",
+      "sha256": "5844bfc7dbff206499c95b2773e181d676ca54f8a36387604a26d1d652b7abed"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
+      "sha256": "0de746d00e8d33fd9a6ba37cb7061829c997037cf39678bd8fa1cdc191121ecf"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.RenderPipelines.Core.Runtime.Shared.dll",
+      "sha256": "4d107d0c787c7e65fdd78bd821fa68e7a53093d9c89a1600168ea098e44fcced"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll",
+      "sha256": "0edf7f466004eb162fb649d749773715729e797bf40805b0cbad1e81f4987017"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll",
+      "sha256": "563bab172661ee80c29a648fa26b79bcf4fcebd345ba7836c82ba68e3e9b5a98"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll",
+      "sha256": "fbbaa95cf90e017022d6935de7ee4b796b68b0ed936b3c0b743c25fd448fb258"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll",
+      "sha256": "39304400aa2a4ee7bdf8ce5b34be8837e4db8665ab1995e66c18d34fbd81373b"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.RenderPipelines.Universal.2D.Runtime.dll",
+      "sha256": "d41de7d0a65fed456b44282799b54d26c906cae01c23d2ace4c96909e42b2aba"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll",
+      "sha256": "c5850cd6e028743a3c45eef80a996f1e11ff6fe1dadbab3c2f0218ed7db2e6fc"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll",
+      "sha256": "be249a2af1956f2eb6113d4a3eb3413198b155e6ee6c01d078441a0b8addb3ab"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll",
+      "sha256": "63375375cff4ba3a2bef2fa881c1fc05252f14a8c47cfd14e2e60b5ae20876e0"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.ResourceManager.dll",
+      "sha256": "40d88ff7037aa41a2b93e7e9bd0753b803f97f98612d81163ebaf07d03b3fd2d"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.ScriptableBuildPipeline.dll",
+      "sha256": "e8997ce53cd4c00ef8275dd9e2febbf85b396bfbf84718b0f0913984ae0cb446"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.TextMeshPro.dll",
+      "sha256": "e22d8f83e97d0a27bed0480cfd52d13a6b26b1e74e3ad67e6a17316090ec3f9f"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.UnifiedRayTracing.Runtime.dll",
+      "sha256": "eade2c95f85f05e0befd2e9fae2698a8aadfcb391078bd7c35314f1f97022679"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Unity.VisualEffectGraph.Runtime.dll",
+      "sha256": "2de1ad5122249edecf6893fba2020eba344464bdd3b46aa4572b53ecf3915aff"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.AIModule.dll",
+      "sha256": "2313d9ddfba0d37e9f58e14210cb6511dfdf7173bd6a56df5764a5090ecba443"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.AMDModule.dll",
+      "sha256": "f310d34e8ac88e2f6823b38f6503f7459f1f9eb8fe00d4024268bfad94f916c6"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.ARModule.dll",
+      "sha256": "76f8902f5e5db7ffa0941da50eeca6479c826baca58163f924654f1cb6b86a53"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.AccessibilityModule.dll",
+      "sha256": "6d5aa9cb445ed6ec7c30c42ad9594a1acd3252c809fb16dd278f43803b4a5c93"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.AdaptivePerformanceModule.dll",
+      "sha256": "c4ccf9093788233e5805751bbb9cc21b32b1f9d94e1577e7dc305576528015d7"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.AndroidJNIModule.dll",
+      "sha256": "37c009f548d7958cb7e29df26623c8ca57510c65e81f7c8c567785913927cd39"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.AnimationModule.dll",
+      "sha256": "ba13f6bc5ae170b7839d8d4f2614ed94db9c46090117e92a6761e281229ff51f"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.AssetBundleModule.dll",
+      "sha256": "aee04c5c675bb7c6a06b843bb82a0c72742c063a007ac79c6501cebea945988f"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.AudioModule.dll",
+      "sha256": "c58ed7b8cbafb10eb193b1feabb57e2ed224e378de9b2d86db06ab3ed008ab45"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.ClothModule.dll",
+      "sha256": "543ab382de959de8765e8be7f70f683da583519e97ff7c863adf6069559c34e4"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.ClusterInputModule.dll",
+      "sha256": "22f9cb311e894028c996facb32c1646f27e62dd8f7e65e52a0b393d1b8826e41"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.ClusterRendererModule.dll",
+      "sha256": "c25e5e2e47a54a53255cadfd33728a3b1a2f2a7df761c79efcb3bc55d2c87b6e"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.ContentLoadModule.dll",
+      "sha256": "1bec811a95b07bef2bdf827163ea9513d0fd44598f4d712539a05f9476f41529"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.CoreModule.dll",
+      "sha256": "d589629ecd4971438643c5d3ce5ee78cf7ee26ac0d98522f802923ca6b55bc79"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.CrashReportingModule.dll",
+      "sha256": "7ef1d566333d55485c349dfc6ae88681c073ad28d2f6ce38137dd6f6e25618e5"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.DSPGraphModule.dll",
+      "sha256": "0f05a807ef41b7b274ae81a20349b716a4b7190ce08001328f5b88ce87ef33fc"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.DirectorModule.dll",
+      "sha256": "d29c1f8cdeb8b7db0debf1be96606495662690578c402c591d73bea9ee341eea"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.GIModule.dll",
+      "sha256": "39c9b8a9795db02ee130050ed5eeae5687e65e16a06cfb85c523d5d1b2bd3cb6"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.GameCenterModule.dll",
+      "sha256": "14d27c18c0225b1ffcb0324c94f7d17743cbeea822601933e62b9a0dc399621c"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll",
+      "sha256": "154ba58cb366176e13cd5c2ae39f692fb3da222554e65ba0c2199dbd13e963f9"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.GridModule.dll",
+      "sha256": "d094f9dae92c6ef8ae36b5912ed41de101e79ccecc846461903deb464554bb6a"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.HierarchyCoreModule.dll",
+      "sha256": "c92e06244fe90709c5bb910c7b158420edbe928455a8edd6483d1cee79a0e521"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.HierarchyModule.dll",
+      "sha256": "5d9201a7f194ea110529cf56e4c8468d8342ed70f33d1540dfbc2b4931f14936"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.HotReloadModule.dll",
+      "sha256": "5b48118d75f955fd053cb059d13d56fff825d16fdc4c8da0fa8074798f178a99"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.IMGUIModule.dll",
+      "sha256": "56647caccd73e7ffa0553028c1183052862475d9d390c85cce281a245139ed62"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.IdentifiersModule.dll",
+      "sha256": "5e9a6e83ee8592d1e6ab9cf272641e67038bd402fe42d4bd95fdff74c5863339"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.ImageConversionModule.dll",
+      "sha256": "3b1153d5a8521754a4a558b78194057ded69ecfe27e4eff5259787ca3b1deba2"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.InputForUIModule.dll",
+      "sha256": "c9d94d3b50c107e79b4e1161a685398d563509947058b3957a750f73fcfc5032"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.InputLegacyModule.dll",
+      "sha256": "55effcd054c1a4dfda360ae4877b8e69efd2099d93b0ede1cd611499309cf325"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.InputModule.dll",
+      "sha256": "d23a92842b3540828ce324fb1a35fa469a1f2c8d298cf734b313f5839f3da010"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.InsightsModule.dll",
+      "sha256": "e8d27b57f2305839b9f2b516893e5dbd0de341f1cb0fba3da2e11f7b096a83f5"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.JSONSerializeModule.dll",
+      "sha256": "c097f19dfba276be236561eb86264c6b8b6f90da14eb3b4aae0fefeadc4e95ce"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.LocalizationModule.dll",
+      "sha256": "639f9874fbb278bfc632a0f851c0c80c9bfe9e62b7e0ba12d71451238bb523bf"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.MarshallingModule.dll",
+      "sha256": "653f14fd7f4cc40c9a81081bf9989eb42c04eedddbd390aeb5a82befdb1b57bc"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.MultiplayerModule.dll",
+      "sha256": "516711f5d59b0077d919cf5a624e8e395aee4a0beb0da37ceff062400148629f"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.NVIDIAModule.dll",
+      "sha256": "2cedd5bfd04d04df96f69fc52d9d0fe1f3b3388321842573c08612f07ac41276"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.ParticleSystemModule.dll",
+      "sha256": "e45c66a301975d50ccd76b3086a28c310c0dcc26f6dddf652a5fa9095536374d"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
+      "sha256": "0cb42037a822d86adc5eb441be01ec04c66f51208968ac17dc4ee7bee5275da9"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.Physics2DModule.dll",
+      "sha256": "c68fd226e5f47e1275117a48b0adedda1a30af109adaf4c059718c3a9a2bb0bf"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.PhysicsBackendPhysXModule.dll",
+      "sha256": "fdb1918575ef1bc7302c5a2eee6d98136c6df5e4dcf27ef8054f3acd95f8ac3b"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.PhysicsModule.dll",
+      "sha256": "d372f6f5a696871ff2cdfe9f3749e55e4e57e561f3359e53787c0cc3825131db"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.PropertiesModule.dll",
+      "sha256": "f4168de65f1b902c443b72b5a341913d71f4093387000d64efb83add00c64743"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.RenderAs2DModule.dll",
+      "sha256": "f3a800e69ef062c22e3a78e84ba06f5e8b46d6b9e615dd91fd0e700d2f0b48ff"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+      "sha256": "a6da189e10da530cda32b887f1b84d67466b5bbedbf224db3604c5fdb055257e"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
+      "sha256": "5ddc9b7ebf63b8ed1a12bfa62a6f2d598e8991c298b80c7a9cac6d76d303ab52"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.ShaderRuntimeModule.dll",
+      "sha256": "e64ddeea01beded7a35002908e882403ea36f17f420f943bf7a3521349aaddf8"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll",
+      "sha256": "5a93dba6711e1b16942a8772f4233474f8f1e466deb3c637a0a0b389b76fee65"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.SharedInternalsModule.dll",
+      "sha256": "66c090aa5dfc1efd0401aca0cc52da0a2643fda735fd2cbded2f1cd8b8159f86"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.SpriteMaskModule.dll",
+      "sha256": "1f245c2eb14185f596553f6f6ed0baf01a58a13960bc3e768305a89d1ffa78f7"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.SpriteShapeModule.dll",
+      "sha256": "f2d912e976e9c187427c7e78d9a8b54ec958f5b59dca7dcd1c5bc7ae5d69101e"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.StreamingModule.dll",
+      "sha256": "b992c58615ea7a6d537e9699f9a220e95a21bb510eb6aa8371c2f16cc48f5776"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.SubstanceModule.dll",
+      "sha256": "96ec4be1407c3835fb8c2a3561c89d58779a0ae5087547fceb239738e932fd09"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.SubsystemsModule.dll",
+      "sha256": "5ec74c98a4b1a65137c9a28a310e87a92d2a217828a6b8658a75dc8193b43397"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.TLSModule.dll",
+      "sha256": "375395a15fdf3732dd8b18a3b58881491a8986807cf6f958b197c521e195ef09"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.TerrainModule.dll",
+      "sha256": "da90310d0c6d3c617b7f1ec0b7d258d3a20e4d1606e24e2d87f37809ec408cd2"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
+      "sha256": "5f8909575e6ed76727acce499a1c57c14e03fd661626944b630b7df57e4792b9"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
+      "sha256": "3fda10f00b9a71eb7563fbcce17f518a2757f924b509bcc240492ad279ff0857"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
+      "sha256": "7a46e1e8cc81697b18aa3f9dba1a89d7b341cdc5881a568af398006cdf4f6ac6"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.TextRenderingModule.dll",
+      "sha256": "197e500615c12b7c0276b348b7c50908aa94a45c33a00e8299ac9b9c00b091bc"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.TilemapModule.dll",
+      "sha256": "df80b8b8075d5e05a186fd09cad3254bde2b89deb5ddd4d4ffe66dd254d788d8"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UI.dll",
+      "sha256": "e31bf1ba3ebcd9e63c1c8530d6be7799b079c4f9a5dcc29a695e4be5b26aa613"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UIElementsModule.dll",
+      "sha256": "bb02b62767ee32d653e8dbb450e7db5d695e947ad47ba4f96d205ae6cbc879bb"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UIModule.dll",
+      "sha256": "88f95e40c5d59a7f6625d328d46d33d1037544800aca65e53d81b5f9b3de8eae"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UmbraModule.dll",
+      "sha256": "4e3c9160e56a26e0d46fbd482c7bfa6bdef1b446d518fb9965f3f0e82f007095"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
+      "sha256": "b95f1bd385ea6a92582a09ad0e472d0ca639725b3d5327d24c8a11f81ec3d70f"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
+      "sha256": "f92fc9e146cbc72254e7ac5aa944b60b789de8c34434dfa8050216f676e9ff7f"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UnityConnectModule.dll",
+      "sha256": "e67850bed2be5b71ac1d75c7de5315960117de33306f5b6b22e86f264a82f002"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UnityConsentModule.dll",
+      "sha256": "f81ebdea250f96d074966de70b7c7e0d6e67daebbac4d26f401da64cd6c7eafd"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UnityCurlModule.dll",
+      "sha256": "0dd49c20ff0cef0ed0667a83bbee0caf460847513d3a13cb0b5c5b73b4757b57"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "sha256": "ed7e4c2cc02f3d243abc2357991a897a4a4647c9e9f8a39cf04ce7f4ba2aa781"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
+      "sha256": "031c8b5f4a951c5846a4d5c4f30ec1d5343ec8d676e4adb99546b9c9c0cbd607"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+      "sha256": "2f5d573fa134f0d883bd8b0005436bea101a9bf2b21211d2f93f08a75f0b2807"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
+      "sha256": "ee1e13dc787eceb2175920f1f45277154c748636fe89b9430f76d7a4671c6cd5"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
+      "sha256": "941a570b9d82a723aed81260479a0539ac97a57618c8178983958d17ffe44ac9"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.VFXModule.dll",
+      "sha256": "77e93b441dd0fc69b929ec7b21f08339203f0efc9199a3f64dcec26b477c0e79"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.VRModule.dll",
+      "sha256": "03786822a71d2a57b68819a52e2e5a709913323f058c2254aedbf53d35c9db2c"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.VectorGraphicsModule.dll",
+      "sha256": "497b54dfd3b9beddfbd69c7b98db3a3d6c652bb7e24695b5a80c4b54b78b3527"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.VehiclesModule.dll",
+      "sha256": "8777e125eb8682f929c82c84072ff06d534914945a4e27071c80b7b221f7d140"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.VideoModule.dll",
+      "sha256": "3103a45d0f29baf3be85ebf20333d4463a69d92930697bf7bd29ac8bcf172160"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
+      "sha256": "405eb116ee7878f4462bfcf37153f67aa4f32585aa3d8dce679b804744fe8f1d"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.WindModule.dll",
+      "sha256": "8ab77400fc6be901ad172bb160096b353f01107c47b5d7c6af7a0e1f1b904651"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.XRModule.dll",
+      "sha256": "453a9841a5ec112e64dd8958395a54a61195b58647b0c33a635e05a8aa0a34e7"
+    },
+    {
+      "path": "DragNWash_Data/Managed/UnityEngine.dll",
+      "sha256": "79ee5cf77e839b6e0453197853bb22fad371a89a989343ede1a26195b0e35cec"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Yarn.Antlr4.Runtime.Standard.dll",
+      "sha256": "0665f957f8d249ec2cc7e2da7abdbe833a32324aba851d50a8d0d67e78fb4a35"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Yarn.CsvHelper.dll",
+      "sha256": "6579323f95990735cd07bd74db09a6337c4fefd6585b082eeca7e1d2f906db58"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Yarn.Google.Protobuf.dll",
+      "sha256": "973d35695c54714c1e9a2c9af4c884c8c60a0b635397d12817e6b2af4788cb82"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Yarn.Microsoft.Bcl.AsyncInterfaces.dll",
+      "sha256": "3cb8115c57fb212ebc07c9cc4dad4019e21f1d3e57fd38be581cb962db1e0d8d"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Yarn.Microsoft.Extensions.FileSystemGlobbing.dll",
+      "sha256": "4c7ed7c1fdb5a1409655aca93e1b833f6521ec984a5873fc32cef3a66c5a27f1"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Yarn.System.Buffers.dll",
+      "sha256": "1ae96df99853d8f51939efe722c4ce307f51880a0dee0f8cb65a323f25ae8efe"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Yarn.System.Memory.dll",
+      "sha256": "b2acb6cbcfe9d873018ad8b37a759aa24e75f81df112fde45422ce3f8e63869e"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Yarn.System.Numerics.Vectors.dll",
+      "sha256": "07f672cd12e084b70f1f2881f7eada4c892a7224562bc49d62a1f59a9fc27a30"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Yarn.System.Reflection.TypeExtensions.dll",
+      "sha256": "06f32d7534b3fca5a6ab91d834d1a6b8abd161db17dec59e966b7e78fed6f506"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Yarn.System.Runtime.CompilerServices.Unsafe.dll",
+      "sha256": "03fd416a516957e205b2aefc9043d3aac7a952908051f7b7085aa87ad8679658"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Yarn.System.Text.Encodings.Web.dll",
+      "sha256": "5a90766fbe2826bc67d31a7950fd412173c92bbb1a2c8751d76fcc08dcd2f6d8"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Yarn.System.Text.Json.dll",
+      "sha256": "82c004512114e44478a65aea43961373fd6688eff0a32457895d5e7d436bc6f0"
+    },
+    {
+      "path": "DragNWash_Data/Managed/Yarn.System.Threading.Tasks.Extensions.dll",
+      "sha256": "6db76f0290fbc588e2d690e23476c116e784efc9f8fdb75379e7c4d5ea9c115f"
+    },
+    {
+      "path": "DragNWash_Data/Managed/YarnSpinner.Compiler.dll",
+      "sha256": "b2b788670d68db66c84b13f22f1acca83ae7d612b67c812faf04a49c7f10fa8e"
+    },
+    {
+      "path": "DragNWash_Data/Managed/YarnSpinner.Unity.dll",
+      "sha256": "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d"
+    },
+    {
+      "path": "DragNWash_Data/Managed/YarnSpinner.dll",
+      "sha256": "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e"
+    },
+    {
+      "path": "DragNWash_Data/Managed/com.alelievr.NodeGraphProcessor.Runtime.dll",
+      "sha256": "a71e074c35d58346895d1fa7dfa75c9a58cd2809d0c5563ca62e4430cd66af82"
+    },
+    {
+      "path": "DragNWash_Data/Managed/com.gator-dragon-games.jigglephysics.dll",
+      "sha256": "5cb1c47499fc05b0187fbb6f6a5c76951e618fec517a069784a5577b7dbe0514"
+    },
+    {
+      "path": "DragNWash_Data/Managed/com.gator-dragon-games.physics-audio.dll",
+      "sha256": "38d7a5758551288910b93e3a2bdab0ae7070f8f7985fd81b613fec4560c6900c"
+    },
+    {
+      "path": "DragNWash_Data/Managed/com.naelstrof-raliv.fluid-rendering-for-games.dll",
+      "sha256": "d172ee2bb0d235ef8843753b8354884a82e2551694f657814042e3501f7fea05"
+    },
+    {
+      "path": "DragNWash_Data/Managed/com.naelstrof.orbitcam.dll",
+      "sha256": "5ee1dfc6d7f62c78ddeb8ba41ef4691ed1b0051b2858871ed42d3299f7f1064e"
+    },
+    {
+      "path": "DragNWash_Data/Managed/com.naelstrof.skinnedmeshdecals.dll",
+      "sha256": "fefa273174484c8f9cb49da83242019ad3aa94a08268e3d17aa7b1983370068c"
+    },
+    {
+      "path": "DragNWash_Data/Managed/com.naelstrof.spherecast.dll",
+      "sha256": "7067efe09b06b12909b9ba97275a240131d5b1e10a5b8e646fc30cbe395f84e0"
+    },
+    {
+      "path": "DragNWash_Data/Managed/com.rlabrecque.steamworks.net.dll",
+      "sha256": "8ce25a712f3ec21ad47009d843c81e4c57501e077e2ce8eb38c5eb3814afc50a"
+    },
+    {
+      "path": "DragNWash_Data/Managed/mscorlib.dll",
+      "sha256": "6c76e06e6d44cf0f39bf59e6a90770968b70093ad4c1572dfbc5e46e431c5fbf"
+    },
+    {
+      "path": "DragNWash_Data/Managed/netstandard.dll",
+      "sha256": "6ae62e082dc494a2433984177f60ca4db5fae69b1f360a8b33754172b310b8c5"
+    },
+    {
+      "path": "DragNWash_Data/Plugins/Steamworks.NET.txt",
+      "sha256": "edf8378ee4ac6db86441a2235f5c576b1f6ffe5508b8bb6dd9b33f086eea72f4"
+    },
+    {
+      "path": "DragNWash_Data/Plugins/x86_64/lib_burst_generated.dll",
+      "sha256": "16b48ebc31922efc4f917fbc9aac21baf9b078dc7391513dd1384457307001c4"
+    },
+    {
+      "path": "DragNWash_Data/Plugins/x86_64/libonigwrap.dll",
+      "sha256": "6d539f2ad6e1b58d3c8836b9c3a1d50c97cbd7a6ca0c5de25d994a7c4b1ecf42"
+    },
+    {
+      "path": "DragNWash_Data/Plugins/x86_64/steam_api64.dll",
+      "sha256": "1bc8731a3a9e9d1a68ee14a815c2525be713141c8e6abb7d40d9ac1dabc79fc9"
+    },
+    {
+      "path": "DragNWash_Data/Plugins/x86_64/steam_settings/branches.json",
+      "sha256": "ed7eab62856b2b3edf9efc1833e1111d59465f84ba022ad168561c612f617f4c"
+    },
+    {
+      "path": "DragNWash_Data/Plugins/x86_64/steam_settings/configs.app.ini",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "DragNWash_Data/Plugins/x86_64/steam_settings/configs.main.ini",
+      "sha256": "a78aa33ac06b354e520885a7214517db3a8e1a5a4c59f4d5d6a535ad4830bda4"
+    },
+    {
+      "path": "DragNWash_Data/Plugins/x86_64/steam_settings/configs.overlay.ini",
+      "sha256": "05965a56b54d8b78f3d2d9fbfd4f08f2e85ec9001bd122eecc12109a4f28a346"
+    },
+    {
+      "path": "DragNWash_Data/Plugins/x86_64/steam_settings/configs.user.ini",
+      "sha256": "31293a3ae7c66def8d2434bb207505b6dde780d582a1a261a653f833feec4fb5"
+    },
+    {
+      "path": "DragNWash_Data/Plugins/x86_64/steam_settings/depots.txt",
+      "sha256": "2d96abb1a0e9cffa6e812368be0aae9637b718b53a1eecd6236c0fe572773b2f"
+    },
+    {
+      "path": "DragNWash_Data/Plugins/x86_64/steam_settings/steam_appid.txt",
+      "sha256": "76f2df4bc0cd3bb799a9029ae2ce94d5e3405e453801880f675e2a78c3a039a1"
+    },
+    {
+      "path": "DragNWash_Data/Plugins/x86_64/steam_settings/steam_interfaces.txt",
+      "sha256": "561c3e07700ff09d7abc737c5366ff7775eaee8c614b294ded819108ab1a09db"
+    },
+    {
+      "path": "DragNWash_Data/Plugins/x86_64/steam_settings/supported_languages.txt",
+      "sha256": "b6234d2ea0d6022be63db80d7b80e221097fe4a469dc44febcd2a9241effdeba"
+    },
+    {
+      "path": "DragNWash_Data/Resources/unity default resources",
+      "sha256": "fb2492cd1ad7c38dda8a4ce5f1a1fb57edcff44e3ae250b263e44beae3660ec4"
+    },
+    {
+      "path": "DragNWash_Data/Resources/unity_builtin_extra",
+      "sha256": "cc7e584091c6ccfb58a91e31fcb75471e68cd05754c7aeab6e0cf513e7998c2b"
+    },
+    {
+      "path": "DragNWash_Data/RuntimeInitializeOnLoads.json",
+      "sha256": "38071b44a250478c5d69fda31abb009bb8aeaaa14265fda1850a2c7fe30931f4"
+    },
+    {
+      "path": "DragNWash_Data/ScriptingAssemblies.json",
+      "sha256": "796b0cc9e75de3116b76946338b7faea5efae10cd5651d73b969fd4c0503ec51"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/5579d3056bf9c86cdb5eefdfe9650c7c.bytes",
+      "sha256": "aadf2d5a14b594ede702314539ac538aebe3a55bfa3e1aff02352b71b84185ed"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/822a06367ab7598d89cedab27d6874fa.bytes",
+      "sha256": "65e1745a24df5e566d1975ef10cbf0b763dba23ed2ce5ef5002eaa55645eec49"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/e9778d016fe7a857da36934976252cc0.bytes",
+      "sha256": "15c9938c032aa793b709c2388117d54fecc0dd78e1dd3bf8fc97a2a53a71786e"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/eef5a004cc6d4aad1987b860d27d047c.bytes",
+      "sha256": "30f14addad064b74030993f484efb9a7e056ee658a3e2a0023b760d2080b983e"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/5192553b64cca9a4b9c396d35a08948c.bytes",
+      "sha256": "0cda71e0b87c9ab1086fbf5e23e87b23312431ade21c497bb84fb9f8e3fa75fe"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/693e8ef14b0412d4e90c94a04dabba76.bytes",
+      "sha256": "ef86b8913089b59b4480618abd1f6b28b126ed4970533d96d88b8115e681b609"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/76e3e3cb369765641bb29c3822cfca26.bytes",
+      "sha256": "36227597bdc61c4018bb27461c11e0d987c432518775c79353ddc3d485efe0f7"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/fd872fa3d525a47488c04a612d257884.bytes",
+      "sha256": "d2b521a6c1898da4d441904097cd6a069117a3ec9432cd234b55e53ce777205c"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/214550b190c771644990476c4001655a/0df5818ebdb28004ca23e5805e2b1bde.bytes",
+      "sha256": "55d4107877216e8129f2f4e576eeb3fdff21811d909dfedd58b4a0fceb87c2bb"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/214550b190c771644990476c4001655a/1647e62895158624ebb69f83c87e205f.bytes",
+      "sha256": "6cd2741512ac9c04fbcf31c795e99143ed711e433cfef93e9c3015d9172ff038"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/214550b190c771644990476c4001655a/b92f0167a5c835f4fb06c2348392367f.bytes",
+      "sha256": "c263185fc5264fd218dc67a869e3f1181747c9decce202220a70582eff3b875b"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/214550b190c771644990476c4001655a/cf36006797e606d468f3294ddce68e9e.bytes",
+      "sha256": "5bf06e43b77d7cef32475c357fb64046efde74263b78a1ed6e104b1567a3e65d"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/340adf393b3fcf94c84ba5624c1f35a3.bytes",
+      "sha256": "4276e47d2da2a0d22a449223fc6d633ab4f07faf524cd72e4e867615b57a9518"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/63e8abce55142164da4510f947d1a32c.bytes",
+      "sha256": "1411e0a88014b91fdf6c55389183bc655aa71ac164aac92be2b1a23c9797339a"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/70cf4bcd2e5b62d4d9e5fe276af69207.bytes",
+      "sha256": "2a4192203b76348a4aca5c1117541d48d5df352eb7fbcafd19116560f94aebc4"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/850dec18f1b14be4a83f8d8b61a3e92f.bytes",
+      "sha256": "3a262724c02d915132caad8fe5c4afd9f39a52261cc667a74ef9362ee143921a"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/3fcaf4ea0a6b7b0438e67691a8d160de.bytes",
+      "sha256": "38bbf23656d7006b85fa100f62bbd0fa7dd6d91f555218d9209ad506eb8fe0a2"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/54cb5137dfccd2c41b2200b1f4b5c228.bytes",
+      "sha256": "46dd9685bd027d7413e9161d100b6c031dafcc7b12a27d0443ea2259cd13bab4"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/6d042fcfdd540ad4a94449e28bf815b2.bytes",
+      "sha256": "339b36476e58bc2f0ee578637e0429dbaefe64360f7eeb67016f89220da5c429"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/97edd8ccc91cdf94faa1b715bf1561ce.bytes",
+      "sha256": "9562cb5349db8e318dc4ad7c3c3ad21090535c00ea102475058570ac84caae26"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/027da7a8773c17aa6bf04626d3f35b2f.bytes",
+      "sha256": "cbf7f93a1f726758ceb27ec0f764abf9308b3304f9aad9bcecef051c5a7d6e4d"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/3dd59bd47a066e21f878bc478b733baa.bytes",
+      "sha256": "aff7968d0317a812fb76aa1fc3e3cf36fa7e77403ff4e99ab7905020d98c1174"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/a3bcfd1a4a5e9c010ad60a6c8d4c5aa3.bytes",
+      "sha256": "42fb968cfe677d199013bb81327adb3d30d2ed3b2ed0350a5118142c62518723"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/a517194473741c2c19b0478abfe4e81e.bytes",
+      "sha256": "182fd72f5e9293f415b98fb27a9e70b954b58abb408b316404b7654e91085328"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/aa/AddressablesLink/link.xml",
+      "sha256": "b78c3cbab27ece6465e4bcc4da74f12b070a6e68b2c9ec36838d6f88cfa9842d"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/aa/StandaloneWindows64/333908e17138c6bc348493caa4a1dab8_monoscripts_e368a6bbd9e65e516f776fec53f7147a.bundle",
+      "sha256": "a900ba604d8f8b3ad8cbf8adc2e0fcf3a3a72f08952ac2653bbd4de096e02ce6"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/aa/StandaloneWindows64/localization-locales_assets_all.bundle",
+      "sha256": "c859f8997d105b84d0ef8cbc3e1849e987f7c30048eea542f031b9124f361723"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/aa/StandaloneWindows64/unifiedraytracing_assets_all_478cdda9ad8977ca6a223e37a17c1e28.bundle",
+      "sha256": "d41a972160df62c90428d9f1e302b4ca14ac09500446af5799f0f73d532c350a"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/aa/catalog.bin",
+      "sha256": "3c384566fa98c6c20ba6d790424c97734532fb0be4403822f3a0b629d8b839fa"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/aa/catalog.hash",
+      "sha256": "6c17d41c27621743ef111e1282db058c7bb799031e4ae2f7a52cae424161add9"
+    },
+    {
+      "path": "DragNWash_Data/StreamingAssets/aa/settings.json",
+      "sha256": "ce0bb681a7e624b7db3df40a631ea89affe0e20387975b264bc2948a1cd376e6"
+    },
+    {
+      "path": "DragNWash_Data/app.info",
+      "sha256": "9cca3c39fc6822a4b24d778b01d835b8052a78e497481089be345f1d117ed750"
+    },
+    {
+      "path": "DragNWash_Data/boot.config",
+      "sha256": "3238daae06e51d8879108182c8fda4612d829376ca53cd86b7221d607726684d"
+    },
+    {
+      "path": "DragNWash_Data/globalgamemanagers",
+      "sha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6"
+    },
+    {
+      "path": "DragNWash_Data/globalgamemanagers.assets",
+      "sha256": "910358d16b824bfd4b8398fea8c0295b5660471bb13a6708655096097bb0f018"
+    },
+    {
+      "path": "DragNWash_Data/globalgamemanagers.assets.resS",
+      "sha256": "4bb13dfe0838d6db46af6b225881932fbb9ce22074c357eba77eb7477112b451"
+    },
+    {
+      "path": "DragNWash_Data/level0",
+      "sha256": "55a296caa23347190faa063efdaab4cf5a37e00bdbffa455729b4aa346cddae0"
+    },
+    {
+      "path": "DragNWash_Data/level0.resS",
+      "sha256": "f043dab27c80bed05cce0be4e8938250ee6c0e370f719e974b68c73586c697fe"
+    },
+    {
+      "path": "DragNWash_Data/level1",
+      "sha256": "203725518656d04df3341248a7d24bc27551ebd6c03e582977869f0acfc5a459"
+    },
+    {
+      "path": "DragNWash_Data/level1.resS",
+      "sha256": "565ed5c90d8c3522c5c8f8a60e877a1f41eba649fa83bd1c7e17294d770225e9"
+    },
+    {
+      "path": "DragNWash_Data/level2",
+      "sha256": "d8b5b6b96a2372e36087edb0a5e3e1fa6ccc2e0d1684698be2221771f02f438e"
+    },
+    {
+      "path": "DragNWash_Data/level3",
+      "sha256": "2443af34e7c6f2136ca58b0aa712a1c35ce13e60567e963ac7224575fa9d4eb1"
+    },
+    {
+      "path": "DragNWash_Data/level3.resS",
+      "sha256": "92e6a3f1506778db2c341d03497a616bbff60f43db662b4932b8033f33caf845"
+    },
+    {
+      "path": "DragNWash_Data/level4",
+      "sha256": "2253e49bca20fa74c12d90eb6c9bd4eadf9ca83f36bcb451f41d7e71fd9bbc28"
+    },
+    {
+      "path": "DragNWash_Data/level4.resS",
+      "sha256": "6482eddb023ce75f80e9f06776b7845ec65bdf114500f5a94687f0413f0a4475"
+    },
+    {
+      "path": "DragNWash_Data/level5",
+      "sha256": "ecbae7085b8126e5a77087e1b60a9fb3568032bbae0818106f22640d0242530e"
+    },
+    {
+      "path": "DragNWash_Data/level5.resS",
+      "sha256": "2f9f11da8eb952e9e9c7c8c59db6b3e0d3a2010e50ef1d5bb5108c0302fdd2a6"
+    },
+    {
+      "path": "DragNWash_Data/level6",
+      "sha256": "7312f5011f3222b623e0f06acc5107bcdc72a8487780d9fd5249446fd42be608"
+    },
+    {
+      "path": "DragNWash_Data/level6.resS",
+      "sha256": "98c8e6be8db89f5239f02151ec6fa0b3a8ee06afecf1a977c85926b7bca7fb19"
+    },
+    {
+      "path": "DragNWash_Data/resources.assets",
+      "sha256": "e48266e661438a4186de78f4aad660707c57b511153dd6199f293b503f958ae8"
+    },
+    {
+      "path": "DragNWash_Data/resources.assets.resS",
+      "sha256": "7fce29e4b168fc5864e521447e2b7bd89832fed6fb6e74fa0da34cbb999e6064"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets0.assets",
+      "sha256": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets0.assets.resS",
+      "sha256": "6b51be2b6aef6aa37af190f034bdfa6ede953d4c81148c7c41284b8faaa158e2"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets0.resource",
+      "sha256": "e5efaaad2b949fb1922a0d2d81d2dfbe67fffa8307a2ad52f2f74dd6bdb17142"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets1.assets",
+      "sha256": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets1.assets.resS",
+      "sha256": "83a3faf9904ee678a1d5bf2b18329ed181ea8490d05f4fe65bfbc94b44a0da6a"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets1.resource",
+      "sha256": "69c42882282a0f9ed62579ca232970fb5c2834b990e09b99a65aa37c1d11f871"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets2.assets",
+      "sha256": "53589194e2754251d918167309117c038e4e0f9acd0e3c571940c979a6d73f7b"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets2.assets.resS",
+      "sha256": "f9c645c2dcb466beb560ea6d49075c899b5636e5b4ee5358c5434eae12aff19f"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets2.resource",
+      "sha256": "d65c1cbd80b69de5cf56f044dcb500733bf490e69f272bd82b3197759ed0ab2d"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets3.assets",
+      "sha256": "87cbffdff5f7018d80f54df3eecf39f4b73f048dcfd4dca6a09a8e64b5d24ded"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets3.assets.resS",
+      "sha256": "e06c71c6df58b15ce21cac6affdad945514cdd3480c066c3c3d254b14b665e41"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets3.resource",
+      "sha256": "44d13be09fcf88541aa21a4d6313557d5b44f861308c60000bd95a847ee4eb23"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets4.assets",
+      "sha256": "0d055aac49c3344a50e68632b197d6c5fce701a8236a55a90d620b38978b8681"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets4.assets.resS",
+      "sha256": "aabbe4c5cd3501a52c3c58a135ea970fab977a36a4dbc4c8e5386273e6bfb365"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets4.resource",
+      "sha256": "1df5cb040f17b7e170c68c906e6bc1d04ed0e5c05f331ec42a8a71a00d67b266"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets5.assets",
+      "sha256": "a95e106be4a3fe2438a7b12e43f14d3d5efa4ce0d32fc20209e634657587c2b9"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets5.assets.resS",
+      "sha256": "7395cfac039d4c091a2912940d9c66046919d928e77db7057e03cfdce1364723"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets6.assets",
+      "sha256": "11becb0784a1fbd113181c918937ecb7df0701bd6422ef4e04f610626aa1a169"
+    },
+    {
+      "path": "DragNWash_Data/sharedassets6.assets.resS",
+      "sha256": "2c72b2cc86c7c26bd96d9e1eabe933eac3240b4377500a75ff526c02616ddd66"
+    },
+    {
+      "path": "MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
+      "sha256": "93bc185d167f818d7de0d7973225ccbbf4dd85f8936799f93b06d0aec11ef93c"
+    },
+    {
+      "path": "MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
+      "sha256": "69dd7ca153d9bd718ed6176c1e6ff065721a9408964384a421602f7d5527a294"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
+      "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
+      "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/2.0/machine.config",
+      "sha256": "e91782a27fa39fc6c1d6ee8b08529f5d35052310d0006034b878eb04b8f2af30"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/2.0/settings.map",
+      "sha256": "49c6160f9d54af4270a3b4e997fc4a8301f79b9e2070118fa46ddbcbbc44f9a2"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/2.0/web.config",
+      "sha256": "cf2b54339e069b9e42f7d6795eecbf562c50c1011f4ca8f65f578fe52d97ff92"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
+      "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
+      "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.0/machine.config",
+      "sha256": "e60aec2c5115d65b3acb3c55ea21576dbd770f579166c017125571e46ae560ed"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.0/settings.map",
+      "sha256": "ce1db1ad8a9512073164e3eccdc193f7eda036e1a9733caec4635de21b2865c8"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.0/web.config",
+      "sha256": "e38bb8cc68fe5b4edecdfd288d094b9e8ced7629039b2a347682aba0d8bd7492"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
+      "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
+      "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.5/machine.config",
+      "sha256": "ee950004b576fb28dc85f4b0435ed04bf96612de2e8b53be84d07afe85a0de6c"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.5/settings.map",
+      "sha256": "ce1db1ad8a9512073164e3eccdc193f7eda036e1a9733caec4635de21b2865c8"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/4.5/web.config",
+      "sha256": "c4cbddd4fd9347b58cc5a72b36dc4ba1ad2bb699e65869d05cd3fb9865f0d824"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/browscap.ini",
+      "sha256": "4ddd50f31fb968f30bedefc253a46dc3f2890192d05cdaa9e0a64a056eee807e"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/config",
+      "sha256": "5776169973a26a387b8b3e5c0f2301a7ab9a6dd7c7d3efa22a96abc47fbf8662"
+    },
+    {
+      "path": "MonoBleedingEdge/etc/mono/mconfig/config.xml",
+      "sha256": "0c56e34c69124510fa8c19e7b4c2ca6c1c4ff460ae19f798dd0ca035809e396d"
+    },
+    {
+      "path": "UnityCrashHandler64.exe",
+      "sha256": "c17c231cc05ad7c3ff1aad7518f83cef6edcc77c489800f9c5e477beca175957"
+    },
+    {
+      "path": "UnityCrashHandler64.pdb",
+      "sha256": "2ae4a84cf193b074d1400843c84ab098286ace769d495493c27e9ae8af8bcd95"
+    },
+    {
+      "path": "UnityPlayer.dll",
+      "sha256": "bbdf3e73522223ea45c3a54049b716f9da3e632994636734c5d53326aa2c36d0"
+    },
+    {
+      "path": "UnityPlayer_Win64_player_mono_x64.pdb",
+      "sha256": "97e42724ae7e86084af1740c5e938860889efc58b6fe4751a22d5fe9c5aa3f82"
+    },
+    {
+      "path": "WindowsPlayer_player_Master_mono_x64.pdb",
+      "sha256": "888839936092a56237b72b139abd363daeea71f204dd02c12be04605bd7cacbc"
+    },
+    {
+      "path": "steam_appid.txt",
+      "sha256": "76f2df4bc0cd3bb799a9029ae2ce94d5e3405e453801880f675e2a78c3a039a1"
+    }
+  ]
+}
