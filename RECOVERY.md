@@ -948,6 +948,42 @@ PYTHONPATH="$revision_export/localization" python3.12 -B "$recorded_scout" \
 Verify the selected JSON or stdout hash and apply the recorded file mode.
 All 14 outputs were rebuilt byte for byte.
 
+The [component and transition report receipt](localization/evidence/archival-component-and-transition-reports-20261111.json)
+pins the first two component exports, the transition IL reports and their
+source files, and the initial v18 inventory.
+
+For a component export, run `inventory_game_components.py` at the
+recorded revision with the verified stock Data directory. Keep the role
+field only on Yarn references and serialize the projected export:
+
+```sh
+python3.12 -B "$component_tool" "$platform" "$stock_data" > "$full_report"
+python3.12 -B - "$full_report" > "$fresh_report" <<'PY'
+import json
+import sys
+
+with open(sys.argv[1], encoding='utf-8') as source:
+    report = json.load(source)
+for component in report['objects']:
+    for field in component['fields']:
+        if field['role'] != 'preserve-exactly-yarn-node-reference':
+            del field['role']
+print(json.dumps(report, ensure_ascii=False, indent=2))
+PY
+```
+
+For the IL reports, copy the recorded `Program.cs` to a fresh directory,
+extract `projectBlob` there as `scan.csproj` with `git cat-file blob`, and
+build it in Debug with the pinned SDK and Mono.Cecil. Pass the platform's
+verified stock Managed directory to `dotnet scan.dll` and capture stdout.
+Both reports matched their original hashes. The original Swift window
+inspection source is also tracked with its byte-for-byte fingerprint.
+
+For the initial v18 inventory, rebuild the verified v17 base with the
+source inventory recipe above. Download the receipt's patch from the
+maintainer draft, verify both hashes and decode with the same Zstandard
+command used for the historical inventory deltas.
+
 The [historical text copy receipt](localization/evidence/archival-text-copies-20261111.json.gz)
 records 3,055 byte-identical copies of test reports, local tools and logs.
 Restore a selected directory with `restore_archived_members.py`. For

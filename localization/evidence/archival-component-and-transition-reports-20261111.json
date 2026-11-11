@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "components": {
+    "revision": "72f5adc0f354d5a4b5361c0fb979e0b8e9359903",
+    "pythonRequirements": "localization/font_probe_requirements.txt",
+    "keepRole": "preserve-exactly-yarn-node-reference",
+    "outputs": [
+      {
+        "path": "localization/work/game-component-fields-20261109.Ku7FyS/macos.json",
+        "sha256": "c31f520360074b2ea8e73a620268b309f0309ca1ec70722cdb85ced5441dab2a",
+        "bytes": 2408035,
+        "mode": "0o644",
+        "platform": "macos"
+      },
+      {
+        "path": "localization/work/game-component-fields-20261109.Ku7FyS/windows.json",
+        "sha256": "4ef7066fcc4ffca1f19cf5861ec40b5f6af98928c84dc60c479ee9b336136600",
+        "bytes": 2392806,
+        "mode": "0o644",
+        "platform": "windows"
+      }
+    ]
+  },
+  "transitionScan": {
+    "projectBlob": "6ea4ef8d955e5aabce54e79b3f14bf9f90de181e",
+    "projectSha256": "4aaedc36db5be19f4978b7f4f70312f2e5c82530bdd260eb7f87d49735c4d990",
+    "sdk": "8.0.131",
+    "monoCecil": "0.11.6",
+    "monoCecilSha256": "831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf",
+    "sources": [
+      {
+        "path": "localization/work/transition-background-20261109.VnR2nY/Program.cs",
+        "sha256": "f5e75d497d16ced5b4448c979ac95339d61a2640726bd1c4da9686ffa3443603",
+        "bytes": 1664,
+        "mode": "0o644",
+        "canonicalPath": "localization/tools/historical-transition-probe/Program.cs"
+      },
+      {
+        "path": "localization/work/transition-background-20261109.VnR2nY/window-state.swift",
+        "sha256": "2423b1f6050c30e7cb8f03b8dfbf3541f71f9d355e437bfff4d9c9d3066df3d5",
+        "bytes": 655,
+        "mode": "0o644",
+        "canonicalPath": "localization/tools/historical-transition-probe/window-state.swift"
+      }
+    ],
+    "outputs": [
+      {
+        "path": "localization/work/transition-background-20261109.VnR2nY/macos.il.txt",
+        "sha256": "ab5928633dac90773702ce80d4a35b46be25272f3f36491997faaac5b02c9a5e",
+        "bytes": 238,
+        "mode": "0o644",
+        "platform": "macos"
+      },
+      {
+        "path": "localization/work/transition-background-20261109.VnR2nY/windows.il.txt",
+        "sha256": "d27bdea0266f1a951123f60cfcfef60c13751b95ff55bbd8daedf66350827054",
+        "bytes": 6051,
+        "mode": "0o644",
+        "platform": "windows"
+      }
+    ]
+  },
+  "initialInventory": {
+    "draftRelease": "recovery-inputs-v0.2.1",
+    "patch": "Dragons-v18-initial-inventory.zst",
+    "patchSha256": "2a891a4cfa248c2e8301dad460e1d96f83e7c678e2872c47e7e3208152e22e35",
+    "patchBytes": 4094,
+    "baseInventory": "combined-provisional-v17-20261109.json",
+    "baseSha256": "62461ab1d2f9d76fd0110b784b206eced511c0dadb83c026a0d0d5d2a8538bd2",
+    "zstd": "1.5.7",
+    "output": {
+      "path": "localization/work/transition-background-20261109.VnR2nY/v18-initial.json",
+      "sha256": "4dc37f1610dfd708992ee36e2f28c99c3b351703459676d5303cbb98a15c073a",
+      "bytes": 3310602,
+      "mode": "0o644"
+    }
+  }
+}
