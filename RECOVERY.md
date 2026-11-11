@@ -2170,6 +2170,16 @@ Spanish search against the recorded `HANDOFF.md` blob. The search was
 verified with ripgrep 15.2.0. The helper checks the command output
 fingerprints before restoring the streams.
 
+The [search readback stream receipt](localization/evidence/archival-cli-event-search-readbacks-20261111.json)
+restores four more streams. Rebuild the Spanish and Polish
+`resume-01/events.jsonl` inputs with the main CLI event stream receipt.
+Rebuild the initial Spanish stream with the Git command output receipt
+above. Write all three under a fresh input root at the checkout-relative
+paths in `requiredStreams` and verify their hashes. Pass
+`--retained-input-root "$fresh_input_root"` to the restore command. The
+helper reproduces the numbered search results from those streams and
+reruns the French case-sensitive search against the pinned Git blob.
+
 The [Korean worklist stream receipt](localization/evidence/archival-cli-event-korean-worklist-20261111.json)
 uses the same command with `--worklist "$shared_worklist"`. Rebuild
 the source-only `es-419` worklist named `000.json` in the worklist and

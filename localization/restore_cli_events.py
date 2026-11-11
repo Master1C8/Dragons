@@ -127,6 +127,20 @@ def rebuild(
             documents[key] = raw.decode('utf-8')
         return prefix + documents[key]
 
+    def checkout_text(source, suffix):
+        relative = relative_path(source['path'])
+        path = retained_input_root / relative
+        if (not path.is_relative_to(retained_input_root / 'localization/work') or
+                path.suffix != suffix or path.resolve() != path or not path.is_file()):
+            raise ValueError('Unexpected CLI output checkout path')
+        key = (path, source['sha256'])
+        if key not in checkout_files:
+            raw = path.read_bytes()
+            if hashlib.sha256(raw).hexdigest() != source['sha256']:
+                raise ValueError('CLI output checkout file fingerprint mismatch')
+            checkout_files[key] = raw.decode('utf-8')
+        return checkout_files[key]
+
     def output_part(part):
         if part.keys() == {'git'}:
             return git_text(part['git'])
@@ -134,7 +148,9 @@ def rebuild(
             source = part['gitGrep']
             text = git_text({'blob': source['blob'], 'sha256': source['sha256']})
             raw = subprocess.check_output([
-                'rg', '--no-config', '-n', '-i', '--color', 'never',
+                'rg', '--no-config', '-n',
+                '--ignore-case' if source.get('ignoreCase', True) else '--case-sensitive',
+                '--color', 'never',
                 '-e', source['regex'], '-',
             ], input=text.encode())
             rendered = ''.join(raw.decode().splitlines(keepends=True)[:source['lines']])
@@ -193,22 +209,23 @@ def rebuild(
             return document_text(part['document'])
         if part.keys() == {'checkoutSlice'}:
             source = part['checkoutSlice']
-            relative = relative_path(source['path'])
-            path = retained_input_root / relative
-            if (not path.is_relative_to(retained_input_root / 'localization/work') or
-                    path.suffix != '.json' or path.resolve() != path or not path.is_file()):
-                raise ValueError('Unexpected CLI output checkout path')
-            key = (path, source['sha256'])
-            if key not in checkout_files:
-                raw = path.read_bytes()
-                if hashlib.sha256(raw).hexdigest() != source['sha256']:
-                    raise ValueError('CLI output checkout file fingerprint mismatch')
-                checkout_files[key] = raw.decode('utf-8')
-            text = checkout_files[key]
+            text = checkout_text(source, '.json')
             start = source['start']
             end = start + source['length']
             if not 0 <= start < end <= len(text):
                 raise ValueError('Unexpected CLI output checkout range')
+            return text[start:end]
+        if part.keys() == {'streamLine'}:
+            source = part['streamLine']
+            lines = checkout_text(source, '.jsonl').split('\n')
+            line = source['line']
+            if not 0 < line <= len(lines):
+                raise ValueError('Unexpected CLI output source stream line')
+            text = f"{source['path']}:{line}:{lines[line - 1]}\n"
+            start = source['start']
+            end = start + source['length']
+            if not 0 <= start < end <= len(text):
+                raise ValueError('Unexpected CLI output source stream range')
             return text[start:end]
         if part.keys() == {'journalSlice'}:
             source = part['journalSlice']

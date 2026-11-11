@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-cli-event-search-readbacks-index.json.gz",
+  "ripgrep": "15.2.0",
+  "requiredStreams": {
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/events.jsonl": "8a4d2a8ed81bc25c72adf502370d806ec1a52a9c996074c015c0403e13e7735d",
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/events.jsonl": "198a039795efae5b4862ce2d569ebc820864c8e471e61f32f836baba5e4e992b",
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/events.jsonl": "5fcf2c5a62c48158adcb39b13227549e88952aae896f0aa73ca09d64ae8b51d6"
+  },
+  "outputs": {
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-07/events.jsonl": {
+      "bytes": 2649782,
+      "sha256": "9b8a119d25f8e4bf42053142a507c9a140568858f72ec0e506abb7fd9b774ffc",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-03/events.jsonl": {
+      "bytes": 629018,
+      "sha256": "3e4390ad76f74633aadcd112e666f87066555637e246f54450e150fc86ded05c",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/events.jsonl": {
+      "bytes": 362359,
+      "sha256": "89ed7132cab03c8d086acb7ce9fc7d70f8baa90d7470916c1e5b7e23be28e3c6",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-02/events.jsonl": {
+      "bytes": 4288992,
+      "sha256": "324102c0b56e52198aaa96ba342771ea94e364e991fb5bbe80293a72a75852ad",
+      "mode": "0o644"
+    }
+  },
+  "archiveSha256": "55c39fa9837036ee92dc674042ad1e6eb670825f45ba0cfc86e4db1dd9a46336",
+  "journalCount": 4
+}
