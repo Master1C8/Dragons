@@ -1899,6 +1899,34 @@ the recorded directories in order with `mkdir -p`, then apply their modes
 from the deepest paths upward. The check recreated the selected trees
 and matched their relative paths, modes and inherited macOS provenance.
 
+The [historical run pointer receipt](localization/evidence/archival-historical-run-pointers-20261111.json.gz)
+records 28 small files that pointed old launch and review scripts at
+their scratch directories. To restore them, supply the original
+checkout path as text and use a fresh output directory:
+
+```sh
+python3.12 -B - "$original_checkout" "$fresh_output" <<'PY'
+import gzip, hashlib, json, sys
+from pathlib import Path
+
+receipt = "localization/evidence/archival-historical-run-pointers-20261111.json.gz"
+with gzip.open(receipt, "rt") as stream:
+    outputs = json.load(stream)["outputs"]
+checkout, destination = map(Path, sys.argv[1:])
+destination.mkdir()
+for relative, row in outputs.items():
+    data = (str(checkout / row["target"]) + "\n").encode()
+    assert len(data) == row["bytes"] and hashlib.sha256(data).hexdigest() == row["sha256"]
+    output = destination / relative
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with output.open("xb") as stream:
+        stream.write(data)
+    output.chmod(int(row["mode"], 8))
+PY
+```
+
+The check recreated all 28 pointer files with matching bytes and modes.
+
 The [test bundle plist receipt](localization/evidence/archival-test-bundle-plists-20261111.json.gz)
 records 351 static bundle files and 159 generated test `Info.plist`
 variants. Use `restore_archived_members.py --macos-stock` for the static
