@@ -23,6 +23,13 @@ def read_receipt(path):
     return json.loads(path.read_text(encoding='utf-8'))
 
 
+def relative_path(name):
+    path = Path(name)
+    if path.is_absolute() or any(part in ('', '.', '..') for part in name.split('/')):
+        raise ValueError(f'Invalid receipt path: {name}')
+    return path
+
+
 def restore(receipt, stock_data, prefix):
     root = Path(__file__).resolve().parents[1]
     work = root / 'localization/work'
@@ -32,11 +39,10 @@ def restore(receipt, stock_data, prefix):
     inventory = read_receipt(receipt)['files']
     count = 0
     for name, record in inventory.items():
-        relative = Path(name)
-        if relative.is_absolute() or any(part in ('', '.', '..') for part in name.split('/')):
-            raise ValueError(f'Invalid stock path: {name}')
+        relative = relative_path(record.get('targetSuffix', name))
+        source_relative = relative_path(record.get('source', name))
         for copy in record['copies']:
-            target = root / copy['path']
+            target = root / relative_path(copy['path'])
             if not target.is_relative_to(prefix):
                 continue
             if target.resolve() != target or target.parts[-len(relative.parts):] != relative.parts:
@@ -45,7 +51,7 @@ def restore(receipt, stock_data, prefix):
                 if not target.is_file() or sha256(target) != record['sha256']:
                     raise FileExistsError(target)
                 continue
-            source = stock_data / relative
+            source = stock_data / source_relative
             with tempfile.TemporaryDirectory(dir=target.parent) as staging:
                 restored = Path(staging) / relative.name
                 shutil.copyfile(source, restored)

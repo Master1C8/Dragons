@@ -225,6 +225,14 @@ and the owned bottle's `drive_c/windows` directory for the
 The CrossOver receipt covers only stock `system32` and `syswow64` files. The
 helper verifies the original bytes before putting each file back.
 
+The [CrossOver application receipt](localization/evidence/archival-crossover-app-stock-20261111.json.gz)
+covers additional historical bottle files identical to the installed CrossOver
+26.3 distribution. For a retained bottle, pass
+`/Applications/CrossOver.app/Contents/SharedSupport/CrossOver` as the stock root
+and the retained bottle directory as the probe path. The receipt maps each
+installed Wine source file to its bottle path. The recovery check restored
+1,709 files into a fresh test directory and verified their bytes and modes.
+
 For smaller stock assets and standalone copies, the same helper accepts
 compressed receipts. Use the stock macOS Data directory for the
 [macOS receipt](localization/evidence/archival-macos-remaining-stock-20261111.json.gz),
