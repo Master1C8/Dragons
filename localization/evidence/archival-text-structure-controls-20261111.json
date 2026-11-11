@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "builderRevision": "edd00fc6f434892c5d5fe2dc30d4dce215cac859",
+  "inventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "scopeSha256": "753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30",
+  "sampleSha256": "7d7592270011b1560785e6d5b98a3a7c08bde3499e80b91f39a0f4e558e75391",
+  "cjk": {
+    "sampleKeys": [
+      "yarn:line:ce77a00e",
+      "settings:MusicVolume:label"
+    ],
+    "outputs": {
+      "ko": {
+        "path": "localization/work/cjk-package-20261110.dgT1p7/ko-synthetic.json",
+        "bytes": 120697,
+        "sha256": "c16234702bd11d840ae9d218e72d69063bf1fa203c9d915aace1e3671461fc14",
+        "mode": "0o644"
+      },
+      "zh": {
+        "path": "localization/work/cjk-package-20261110.dgT1p7/zh-synthetic.json",
+        "bytes": 120705,
+        "sha256": "c96aae1fd1a33fc440919a26f5b13ccfbb143c22b8d0185cd096b310d8ec20c5",
+        "mode": "0o644"
+      },
+      "zh-TW": {
+        "path": "localization/work/cjk-package-20261110.dgT1p7/zh-TW-synthetic.json",
+        "bytes": 120708,
+        "sha256": "7db1268680aac40eb82543da7a06493cd1967b20660718192dca4cfd5795c232",
+        "mode": "0o644"
+      }
+    }
+  },
+  "uk": {
+    "translationPath": "localization/uk/translation.json",
+    "prior": {
+      "revision": "99f6e38720aa0485d89b5e071060bf25d471c948",
+      "sha256": "a54e657aecba9f92fbd97e1b51725489984263fa5fe6b312d9f0c7449e33fda9"
+    },
+    "after": {
+      "revision": "353a207b7c9437744f5f8bb8ebce887d6efb6cbe",
+      "sha256": "fb210988d11568f666a22b9d64ca74136ad215032f5f20de72d4efd40d1fa3d9"
+    },
+    "overrides": {
+      "yarn:line:4d002f47": "Вона... <i>справді</i> розлютилася, що я був увесь у багнюці.",
+      "yarn:line:189d999e": "Дякую, що можу з тобою поговорити."
+    },
+    "groups": [
+      "Ryan_2_intro",
+      "Ryan_2_required",
+      "Ryan_2_Outro"
+    ],
+    "outputs": {
+      "translation": {
+        "path": "localization/work/uk-ordinary-02-20261110.qDsJDf/translation.json",
+        "bytes": 45347,
+        "sha256": "f962b020b40331997ae8112cfbfe93d6edd082ddf6974a648b9256747fa2149f",
+        "mode": "0o644"
+      },
+      "structure-control": {
+        "path": "localization/work/uk-ordinary-02-20261110.qDsJDf/structure-control.json",
+        "bytes": 132146,
+        "sha256": "4ca6ccff70d1d546241f264aed942692b061ec94f30c9db6d2e08b4c3e7c8b76",
+        "mode": "0o644"
+      },
+      "new-ids": {
+        "path": "localization/work/uk-ordinary-02-20261110.qDsJDf/new-ids.json",
+        "bytes": 1371,
+        "sha256": "eedf49ecaa7eaff7db59d656e1e880666c349d807c4945e1a184d0336e4e6f20",
+        "mode": "0o644"
+      },
+      "authored": {
+        "path": "localization/work/uk-ordinary-02-20261110.qDsJDf/authored.json",
+        "bytes": 4154,
+        "sha256": "4d9b2aab9c173cac4b048cb23f238b725c0660ff7050a7f4e54404d437004360",
+        "mode": "0o644"
+      }
+    }
+  }
+}

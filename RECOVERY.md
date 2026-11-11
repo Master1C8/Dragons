@@ -1122,6 +1122,76 @@ The five rebuilt Windows ZIPs matched the recorded SHA-256. The two rebuilt
 macOS bundles matched the recorded manifest and every surviving file and
 directory. Both passed strict code signature checks.
 
+The [text structure control receipt](localization/evidence/archival-text-structure-controls-20261111.json)
+pins three CJK test translations and four Ukrainian staging files.
+Export `localization` from the recorded builder revision. Use the
+verified v42 inputs and the multilingual `samples.json` from the cited
+technical evidence receipt. Run with the historical modules on
+`PYTHONPATH` and a fresh destination:
+
+```sh
+PYTHONPATH="$historical_modules:$python_dependencies" python3.12 -B - \
+  "$v42_inventory" "$v42_scope" "$multilingual_samples" "$fresh_controls" <<'PY'
+import hashlib, json, subprocess, sys
+from pathlib import Path
+
+import paired_locale
+
+receipt = Path("localization/evidence/archival-text-structure-controls-20261111.json")
+spec = json.loads(receipt.read_text())
+inventory_path, scope_path, samples_path, destination = map(Path, sys.argv[1:])
+
+def verified_json(data, expected):
+    assert hashlib.sha256(data).hexdigest() == expected
+    return json.loads(data)
+
+inventory = verified_json(inventory_path.read_bytes(), spec["inventorySha256"])
+scope = verified_json(scope_path.read_bytes(), spec["scopeSha256"])
+samples = verified_json(samples_path.read_bytes(), spec["sampleSha256"])
+_, catalog = paired_locale.catalog(inventory["entries"], scope)
+default = {}
+for key, row in catalog.items():
+    sources = {platform: binding["source"] for platform, binding in row["builds"].items()}
+    default[key] = {"platforms": sources} if len(set(sources.values())) > 1 else next(iter(sources.values()))
+
+destination.mkdir()
+
+def write(row, value):
+    data = (json.dumps(value, ensure_ascii=False, indent=2) + "\n").encode()
+    assert len(data) == row["bytes"] and hashlib.sha256(data).hexdigest() == row["sha256"]
+    output = destination / row["path"]
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with output.open("xb") as stream:
+        stream.write(data)
+    output.chmod(int(row["mode"], 8))
+
+for locale, row in spec["cjk"]["outputs"].items():
+    lines = {**default, **dict.fromkeys(spec["cjk"]["sampleKeys"], samples[locale])}
+    write(row, {"schema": 1, "locale": locale, "sharedInventorySha256": spec["inventorySha256"],
+                "yarnScopeSha256": spec["scopeSha256"], "lines": lines})
+
+uk = spec["uk"]
+
+def draft(row):
+    blob = subprocess.check_output(["git", "show", row["revision"] + ":" + uk["translationPath"]])
+    return verified_json(blob, row["sha256"])
+
+prior, after = draft(uk["prior"]), draft(uk["after"])
+after["lines"].update(uk["overrides"])
+new_ids = [key for key in after["lines"] if key not in prior["lines"]]
+authored = {group: {} for group in uk["groups"]}
+for key in new_ids:
+    authored[catalog[key]["group"]][key.removeprefix("yarn:line:")] = after["lines"][key]
+write(uk["outputs"]["translation"], after)
+write(uk["outputs"]["structure-control"], {**after, "lines": {**default, **after["lines"]}})
+write(uk["outputs"]["new-ids"], new_ids)
+write(uk["outputs"]["authored"], authored)
+PY
+```
+
+The check reproduced all seven files byte for byte and verified their
+modes. The Ukrainian overrides preserve two historical draft values.
+
 The [historical control receipt](localization/evidence/archival-historical-controls-20261111.json.gz)
 records Russian and Ukrainian controls, the Arabic and Persian caption
 packages, and two earlier standalone Unity test assets. Download the two
