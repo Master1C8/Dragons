@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "builderRevision": "edd00fc6f434892c5d5fe2dc30d4dce215cac859",
+  "inventorySha256": "79a38356e74a513bba512f2a23f462d4a6a25bf069519bab03aef96be24f476d",
+  "scopeSha256": "753f54cf058bee240e56ab6ddf67b3c549f6804853e493239de097cebef65b30",
+  "translation": {
+    "path": "localization/pl/translation.json",
+    "revision": "0d34c62e863b9557a5446a9a4054daf7b6cd22d4",
+    "sha256": "cb471d50b18d79b659744dcf6360b25ba63d9ba42c2428e95196e040341dda2e"
+  },
+  "output": {
+    "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/audit-preparation-v1/paired-review-rows.jsonl",
+    "rowCount": 1824,
+    "firstOmittedId": "ui:645a13dc409be75a17b82b62a9b88c5ebb291d34d5ac2201679fd6b8cb53d59b",
+    "bytes": 806491,
+    "sha256": "fc2a39e779a97853dbb319d938a22d71ad11e8c6c4a0b8bd533c910daf59cc45",
+    "mode": "0o644"
+  }
+}

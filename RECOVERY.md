@@ -1620,6 +1620,54 @@ report input archive and `sceneMember` from the source inventory export
 archive. Verify the archive and member hashes. The rebuilt outputs preserve
 the original audit scope and report bytes.
 
+The [early Polish audit export receipt](localization/evidence/archival-polish-audit-prefix-20261111.json)
+pins the 1,824 rows written before the historical exporter reached its
+first non-Yarn row. Export `localization` from the recorded builder
+revision and pass the verified v42 inputs to this command:
+
+```sh
+PYTHONPATH="$historical_modules:$python_dependencies" python3.12 -B - \
+  "$v42_inventory" "$v42_scope" "$fresh_report" <<'PY'
+import hashlib, json, subprocess, sys
+from pathlib import Path
+import paired_locale
+
+receipt = Path("localization/evidence/archival-polish-audit-prefix-20261111.json")
+spec = json.loads(receipt.read_text())
+inventory, scope, destination = map(Path, sys.argv[1:])
+
+def verified_json(data, sha256):
+    assert hashlib.sha256(data).hexdigest() == sha256
+    return json.loads(data)
+
+_, catalog = paired_locale.catalog(
+    verified_json(inventory.read_bytes(), spec["inventorySha256"])["entries"],
+    verified_json(scope.read_bytes(), spec["scopeSha256"]),
+)
+source = spec["translation"]
+draft = subprocess.check_output(["git", "show", source["revision"] + ":" + source["path"]])
+targets = verified_json(draft, source["sha256"])["lines"]
+assert targets.keys() == catalog.keys()
+expected = spec["output"]
+rows = []
+for row in catalog.values():
+    if "kind" not in row:
+        assert row["id"] == expected["firstOmittedId"]
+        break
+    entry = {key: row.get(key) for key in ("id", "group", "kind", "instructionIndex", "preserveExactPrefix", "builds")}
+    entry["target"] = targets[row["id"]]
+    rows.append(json.dumps(entry, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n")
+assert len(rows) == expected["rowCount"]
+data = "".join(rows).encode()
+assert len(data) == expected["bytes"] and hashlib.sha256(data).hexdigest() == expected["sha256"]
+with destination.open("xb") as stream:
+    stream.write(data)
+destination.chmod(int(expected["mode"], 8))
+PY
+```
+
+The check matched the original file's bytes and mode.
+
 The [additional authoring and scope receipt](localization/evidence/archival-authoring-scope-and-editorial-20261111.json.gz)
 pins four templates and worklists, four Yarn scope reports and eight
 editorial exports. Check the downloaded archive and catalog hashes.
