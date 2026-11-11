@@ -1,0 +1,274 @@
+{
+  "schema": 1,
+  "sdk": "8.0.131",
+  "gameLaunched": false,
+  "historicalCheckout": "/Users/antonkrutov/Desktop/Dragons",
+  "builds": [
+    {
+      "project": {
+        "path": "localization/tools/speaker-display-probe/speaker-display-probe.csproj",
+        "revision": "0131963c09d0667a651f9b1002aa92e66f2088d0",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-display-probe/Program.cs",
+          "revision": "0131963c09d0667a651f9b1002aa92e66f2088d0",
+          "sha256": "e70e7b95cba3f8da8a89ba93908fa09cae28ca0ff8ee835b10e2cf2c4d67a12d"
+        }
+      ],
+      "objectPath": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/speaker-tool-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "0131963c09d0667a651f9b1002aa92e66f2088d0",
+      "assemblyName": "speaker-display-probe",
+      "embeddedSources": "generated"
+    },
+    {
+      "project": {
+        "path": "localization/tools/text-setter-consumers/text-setter-consumers.csproj",
+        "revision": "942a4431b3caf67c3cb4d677ac680d1d262a104d",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/text-setter-consumers/Program.cs",
+          "revision": "7ed264fd3d5657e4a3ca0605aec5c8a4e98b4166",
+          "sha256": "a5ca122a4e48a0db0c03ecc41f86aa765a1fa410ecc37daeb9678208c44add91"
+        }
+      ],
+      "objectPath": "localization/work/extended-text-sinks-20261110.ehYdQT/obj-verified",
+      "configuration": "Debug",
+      "sourceRevisionId": "942a4431b3caf67c3cb4d677ac680d1d262a104d",
+      "assemblyName": "text-setter-consumers",
+      "embeddedSources": "generated"
+    },
+    {
+      "project": {
+        "path": "localization/tools/prepared-text-probe/prepared-text-probe.csproj",
+        "revision": "d204073463cdce471efb79ba66c4f1c4051b9556",
+        "sha256": "85b29b67d9e3503a594902982140cf224b6d7c9b2b3527b4622449defd1ac8fc"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/prepared-text-probe/Program.cs",
+          "revision": "397077aa070fb3aa85bcb57b28db2e2baa53822e",
+          "sha256": "d2dadd22444a5c369ee8d8184bb639db8804a20080e0a95d421f0d0fa289bac3"
+        }
+      ],
+      "objectPath": "localization/work/ltr-corpus-display-20261110.YN1VJp/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "d204073463cdce471efb79ba66c4f1c4051b9556",
+      "assemblyName": "prepared-text-probe",
+      "embeddedSources": "generated"
+    },
+    {
+      "project": {
+        "path": "localization/tools/managed-strings/managed-strings.csproj",
+        "revision": "d8b9c6ed717f710bf316772df4b10ee4871352f0",
+        "sha256": "4aaedc36db5be19f4978b7f4f70312f2e5c82530bdd260eb7f87d49735c4d990"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/managed-strings/Program.cs",
+          "revision": "92d02b6a94402f668567c5c28a59cfd9dd2d64c1",
+          "sha256": "b70c593f925b00edd474f01f5685a0e5955253f315aa162f9be9411730034f4f"
+        }
+      ],
+      "objectPath": "localization/work/managed-strings-unity-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "d8b9c6ed717f710bf316772df4b10ee4871352f0",
+      "assemblyName": "managed-strings",
+      "embeddedSources": "generated"
+    },
+    {
+      "project": {
+        "path": "localization/tools/text-setter-consumers/text-setter-consumers.csproj",
+        "revision": "f579152dade5e739b6474dd540ad70cec9cf819c",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/text-setter-consumers/Program.cs",
+          "revision": "e605794007bc0916cdbc8b5d295e5c390a3b9f1f",
+          "sha256": "7c8da51430656e06049e4e06181f85bf59497f1a8966b01c6ced871eeaf682e2"
+        }
+      ],
+      "objectPath": "localization/work/resource-route-audit-20261110.ffbSRj/obj-final",
+      "configuration": "Debug",
+      "sourceRevisionId": "f579152dade5e739b6474dd540ad70cec9cf819c",
+      "assemblyName": "text-setter-consumers",
+      "embeddedSources": "generated"
+    },
+    {
+      "project": {
+        "path": "localization/tools/managed-strings/managed-strings.csproj",
+        "revision": "e8f49708109bf5dc5977a230007ce1da09fcc6b7",
+        "sha256": "4aaedc36db5be19f4978b7f4f70312f2e5c82530bdd260eb7f87d49735c4d990"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/managed-strings/Program.cs",
+          "revision": "303058b1787fad7be47599275b7e7ef192637eed",
+          "sha256": "540545b6cf1a3741a5eda5516707185d295f29ad2438fa7e6e52b6a1a1104194"
+        }
+      ],
+      "objectPath": "localization/work/source-inventory-20261107/managed-context-reproduction-20261109.abYcMX/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "e8f49708109bf5dc5977a230007ce1da09fcc6b7",
+      "assemblyName": "managed-strings",
+      "embeddedSources": "generated"
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-display-probe/speaker-display-probe.csproj",
+        "revision": "5918c266af6cf216b7e271211317142df5d22c71",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-display-probe/Program.cs",
+          "revision": "fa63c0f2514373884c0c6f6036469e8c1a6f744a",
+          "sha256": "c6b8677e7d4994a1377334eda2363dd1c40877f9e239b758c4bd5f69251e08e7"
+        }
+      ],
+      "objectPath": "localization/work/speaker-locale-final-20261110.osxldd/tool/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "5918c266af6cf216b7e271211317142df5d22c71",
+      "assemblyName": "speaker-display-probe",
+      "embeddedSources": "generated"
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-display-probe/speaker-display-probe.csproj",
+        "revision": "dc9056c85b0e2765cda341d83c058fffc63bd887",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-display-probe/Program.cs",
+          "revision": "5c9b9ddf42429a7a03297a8f68f27f551e8265cb",
+          "sha256": "abb7579eeb82a5dbfd36e77b70a240c20c4b1c2811b9068ddcb7fb2b5382a40a"
+        }
+      ],
+      "objectPath": "localization/work/speaker-presenter-20261109.TqasB1/patcher-final/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "dc9056c85b0e2765cda341d83c058fffc63bd887",
+      "assemblyName": "speaker-display-probe",
+      "embeddedSources": "generated"
+    }
+  ],
+  "outputs": {
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/speaker-tool-bin/speaker-display-probe.pdb": {
+      "bytes": 20196,
+      "mode": "0o644",
+      "sha256": "9e0f96c1a827562a5e4e9bf9ebd73aea94dad4e77160288d3f51ff1c7380c369",
+      "member": "bin/Debug/net8.0/speaker-display-probe.pdb",
+      "build": 0
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/speaker-tool-bin/speaker-display-probe.dll": {
+      "bytes": 44544,
+      "mode": "0o644",
+      "sha256": "ed1ed825810a6b3113754d3c2b8fcd96112f52795ee413f79f400d0b7a391c01",
+      "member": "bin/Debug/net8.0/speaker-display-probe.dll",
+      "build": 0
+    },
+    "localization/work/extended-text-sinks-20261110.ehYdQT/bin-verified/text-setter-consumers.pdb": {
+      "bytes": 14524,
+      "mode": "0o644",
+      "sha256": "a32aa4e0dc5ed39fd0cd469ad92147f9e11b448cdcdd28ab76f4010bb6e48f27",
+      "member": "bin/Debug/net8.0/text-setter-consumers.pdb",
+      "build": 1
+    },
+    "localization/work/extended-text-sinks-20261110.ehYdQT/bin-verified/text-setter-consumers.dll": {
+      "bytes": 35328,
+      "mode": "0o644",
+      "sha256": "e467bebc88c1fc3e0ef2c4384a6bcb28c3593e60f8ed07cc5e42ed35d5acae14",
+      "member": "bin/Debug/net8.0/text-setter-consumers.dll",
+      "build": 1
+    },
+    "localization/work/ltr-corpus-display-20261110.YN1VJp/bin/prepared-text-probe.pdb": {
+      "bytes": 14776,
+      "mode": "0o644",
+      "sha256": "c5470aea33aa4b7b8d4ded022ed8d62e89bcf592a466a26fa3b64d9085737b97",
+      "member": "bin/Debug/net8.0/prepared-text-probe.pdb",
+      "build": 2
+    },
+    "localization/work/ltr-corpus-display-20261110.YN1VJp/bin/prepared-text-probe.dll": {
+      "bytes": 25088,
+      "mode": "0o644",
+      "sha256": "a943bd97d58a113a4bc261e3c37743dcc70d1bd1add8140cb76a87b9bc3b5ad5",
+      "member": "bin/Debug/net8.0/prepared-text-probe.dll",
+      "build": 2
+    },
+    "localization/work/managed-strings-unity-bin/managed-strings.pdb": {
+      "bytes": 13004,
+      "mode": "0o644",
+      "sha256": "88f6db49a019517a8fa5fe8b6d079f470d29a0c55aa11c9bf86b55f9e1fe228e",
+      "member": "bin/Debug/net8.0/managed-strings.pdb",
+      "build": 3
+    },
+    "localization/work/managed-strings-unity-bin/managed-strings.dll": {
+      "bytes": 19456,
+      "mode": "0o644",
+      "sha256": "20b90b95592d444394a4db1bcab82613e7301c196cfeab219210c931c5f1dc6c",
+      "member": "bin/Debug/net8.0/managed-strings.dll",
+      "build": 3
+    },
+    "localization/work/resource-route-audit-20261110.ffbSRj/bin-final/text-setter-consumers.pdb": {
+      "bytes": 15236,
+      "mode": "0o644",
+      "sha256": "3683c95cd8d9ab971f2f9858ddddacba2c014db7c1ac6086a33632a5588f3dc1",
+      "member": "bin/Debug/net8.0/text-setter-consumers.pdb",
+      "build": 4
+    },
+    "localization/work/resource-route-audit-20261110.ffbSRj/bin-final/text-setter-consumers.dll": {
+      "bytes": 44032,
+      "mode": "0o644",
+      "sha256": "1747f1d7bb064f0bf23c1eea50f85168c0bb425a3ca13b33beae84825b2b0c61",
+      "member": "bin/Debug/net8.0/text-setter-consumers.dll",
+      "build": 4
+    },
+    "localization/work/source-inventory-20261107/managed-context-reproduction-20261109.abYcMX/bin/managed-strings.pdb": {
+      "bytes": 13260,
+      "mode": "0o644",
+      "sha256": "3daec916b078527c7c4e54c01ca62ce46136fce7b7fe8de54aa9e645edc4a916",
+      "member": "bin/Debug/net8.0/managed-strings.pdb",
+      "build": 5
+    },
+    "localization/work/source-inventory-20261107/managed-context-reproduction-20261109.abYcMX/bin/managed-strings.dll": {
+      "bytes": 23040,
+      "mode": "0o644",
+      "sha256": "1ebf6b8faee2e2c993cae5ca3f5a429263d89e014d622a7bad14a9571e126111",
+      "member": "bin/Debug/net8.0/managed-strings.dll",
+      "build": 5
+    },
+    "localization/work/speaker-locale-final-20261110.osxldd/tool/bin/speaker-display-probe.pdb": {
+      "bytes": 18848,
+      "mode": "0o644",
+      "sha256": "7e6c99408ac5abf69981413a751b9deb430ac709bbee4218b1b1e81d948af39b",
+      "member": "bin/Debug/net8.0/speaker-display-probe.pdb",
+      "build": 6
+    },
+    "localization/work/speaker-locale-final-20261110.osxldd/tool/bin/speaker-display-probe.dll": {
+      "bytes": 39936,
+      "mode": "0o644",
+      "sha256": "a686f028291d48865c3347e1941665ab9d26a44c292bc005f6ae71f860b2ee38",
+      "member": "bin/Debug/net8.0/speaker-display-probe.dll",
+      "build": 6
+    },
+    "localization/work/speaker-presenter-20261109.TqasB1/patcher-final/bin/speaker-display-probe.pdb": {
+      "bytes": 18444,
+      "mode": "0o644",
+      "sha256": "644dba8de318f35ec8d3fd333b4334eb792b1575c40c1885062c45b9805f438f",
+      "member": "bin/Debug/net8.0/speaker-display-probe.pdb",
+      "build": 7
+    },
+    "localization/work/speaker-presenter-20261109.TqasB1/patcher-final/bin/speaker-display-probe.dll": {
+      "bytes": 36864,
+      "mode": "0o644",
+      "sha256": "6035a1067fceff948656f4258da6eb064ec2939d3f92ae87e9f01eef0b96d549",
+      "member": "bin/Debug/net8.0/speaker-display-probe.dll",
+      "build": 7
+    }
+  }
+}

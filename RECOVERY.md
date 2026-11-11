@@ -804,6 +804,12 @@ in the original portable PDBs. The helper reproduces the original
 Source Link setting and verifies the restored bytes. All 88 outputs and
 92 dependent entries in the binary copy receipt matched.
 
+The [additional portable build receipt](localization/evidence/archival-additional-portable-builds-20261111.json)
+uses the same command for eight more DLL and PDB pairs. The source hashes,
+compiler revision and historical object paths come from the matching Git
+snapshots and original PDB records. Rebuild a needed DLL before replaying
+its dependent copies. The recovery command matched all 16 outputs.
+
 The [historical managed source receipt](localization/evidence/archival-historical-managed-source-deltas-20261111.json)
 pins 125 project descriptors required by the generated metadata receipt
 and 22 C# sources used by technical evidence or the text copy receipt.
