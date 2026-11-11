@@ -1316,6 +1316,23 @@ for the snapshot. The check verified each prefix and reproduced the
 original counter file. The private archive stores the prefix manifest
 and the final evidence files.
 
+The [CLI event stream receipt](localization/evidence/archival-cli-event-streams-20261111.json)
+records 108 completed CLI streams. Download the index named in the
+receipt from the maintainer draft and pass the owner's original Codex
+journal directory or an exact copy. The GitHub asset contains references
+and event structure. The command text, command outputs and model replies
+come from the read-only local journals.
+
+```sh
+python3.12 -B localization/restore_cli_events.py \
+  localization/evidence/archival-cli-event-streams-20261111.json \
+  "$recorded_path" --archive "$cli_event_index" \
+  --journal-root "$codex_journal_root" --output "$fresh_log"
+```
+
+The check used the downloaded index and verified all 28 journal prefixes.
+It reproduced all 108 streams byte for byte and checked their file modes.
+
 The [renderer acceptance index](localization/evidence/archival-renderer-acceptance-20261111.json)
 pins the static shaping, staged line break, paired runtime and Parallels
 reports. Download its archive from the `recovery-inputs-v0.2.1` maintainer

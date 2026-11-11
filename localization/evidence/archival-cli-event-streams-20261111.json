@@ -1,0 +1,550 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-cli-event-journal-index.json.gz",
+  "archiveSha256": "f92d813d812dbc043e78750184718de58c1d0197175999cd5e7a7282f8a99b5b",
+  "journalCount": 28,
+  "outputs": {
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/he/continuation-03/events.jsonl": {
+      "sha256": "eb449ac80104cd93a8fd2f3a03c04ca485f3a084426dcc6ead8a4d23a80ea16a",
+      "bytes": 170606,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/he/continuation-04/events.jsonl": {
+      "sha256": "4ca255a8e47c3a89a51875166d6a646c42682174baa1db99abc1619bd015fc6f",
+      "bytes": 169269,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/he/continuation-05/events.jsonl": {
+      "sha256": "f633189f08a80d7783b443f90c2292797a7892132bdfa28370bcae757d018c6c",
+      "bytes": 221013,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/he/continuation-02/events.jsonl": {
+      "sha256": "9672cc199904b985eaa4f74ea9eb2fa7a276176ebb57dafa8d39f7821f0370d4",
+      "bytes": 160236,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/he/continuation-01/events.jsonl": {
+      "sha256": "8313a6df831c20f0121201ab210b3cd01d64cd09aae36de0f6b7333e1434a7e7",
+      "bytes": 146283,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/ar/events.jsonl": {
+      "sha256": "849e17159649da3d5950ec854d0705d4ed0cb1baba0e75deef3c5ad17152a5b2",
+      "bytes": 282997,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/ar/continuation-03/events.jsonl": {
+      "sha256": "776199eab00a8021b4ef24c50293cdf425c0ce121925a6052a1f26d994beefc7",
+      "bytes": 196047,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/ar/continuation-02/events.jsonl": {
+      "sha256": "6592d4c634ef5912eca8c7a8baf90bad219a5977bd0b989bbfcd4dfbdea36016",
+      "bytes": 428893,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/ar/continuation-01/events.jsonl": {
+      "sha256": "817b83917de77909e3c84c79a0f8188f16f2dfb9b53affb215446062160ac1df",
+      "bytes": 195118,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/hi/events.jsonl": {
+      "sha256": "ac936247e06b6f7c51f37c180e1a3ec817133fb83900f7a72a2740a58507aac3",
+      "bytes": 6740,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/hi/continuation-03/events.jsonl": {
+      "sha256": "b7643a9e5c4fe2f2f5f372760db25ba3ff8ebc3f6c3da99d4c835e45f75955a7",
+      "bytes": 364688,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/hi/continuation-02/events.jsonl": {
+      "sha256": "6d65cc732b9798a6da5b241b60d4cf38e117519d5a1a813a65074b4d3d743405",
+      "bytes": 572167,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/fa/events.jsonl": {
+      "sha256": "b40aee9508da150f38d2fd4c20b1a34c6e7323eb4c4579b477c88fbd5b6d9c84",
+      "bytes": 272293,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/fa/continuation-03/events.jsonl": {
+      "sha256": "f242cdbede43607629b5db27e5781aa4afa2c94bfeac1e4420790dbad9fd5544",
+      "bytes": 234284,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/fa/continuation-02/events.jsonl": {
+      "sha256": "9f05443d88b20e83e65ffcd323c011bdf2bd5bc47a8780005532bc9c6f4dc7a6",
+      "bytes": 314016,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/fa/continuation-01/events.jsonl": {
+      "sha256": "1f9081c563ca3f1dab1c9cacd53a2930461df33ed57c8faf794f648b2a462765",
+      "bytes": 163684,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/th/continuation-03/events.jsonl": {
+      "sha256": "856dc9300acdb189f96d5c3939cd50ec9d76c95c820e075d65a51911d8c274bb",
+      "bytes": 192236,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/th/continuation-04/events.jsonl": {
+      "sha256": "e13313138c5d62b376994bbaff9f3d2421e9932718967d772deb7d8ddf6ca2f6",
+      "bytes": 196404,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/th/continuation-05/events.jsonl": {
+      "sha256": "1e2d9d8854a6ad18e483b999d304b0d410af1758aba1ecc71cd19628e07d0d1e",
+      "bytes": 118922,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/th/continuation-02/events.jsonl": {
+      "sha256": "095a3fc5447191c107acccd2f30212d443f2bc79b14925329624d78799b7e6ef",
+      "bytes": 137140,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/th/continuation-01/events.jsonl": {
+      "sha256": "a48d1208d98281d57bb5a9758d2438174d84870288feeeeee35d9a30468fe25f",
+      "bytes": 190233,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/th/continuation-06/events.jsonl": {
+      "sha256": "0457fa0c0851537540196e3e93d1c779e8c1692167490ea02c844e067af79d07",
+      "bytes": 202821,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/sw/continuation-03/events.jsonl": {
+      "sha256": "c183a4ad67f57a07ce1c83e1971b556f69599b35c84516e2c255f56e2f365810",
+      "bytes": 4539,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/sw/continuation-04/events.jsonl": {
+      "sha256": "6e8ed39d2e4bf4bc294003938ecd9502fa9ab15aaa1ea94de7ba648228e0b24f",
+      "bytes": 38798,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/sw/continuation-02/events.jsonl": {
+      "sha256": "aa1d73b2fc0c6ee8efd89fa6c326b36b601097949d96af12add2dddd7a3220f4",
+      "bytes": 184167,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/sw/continuation-01/events.jsonl": {
+      "sha256": "7038767c1aebd084e834fd1d05335f89eefb7d2b521b177a707b991a98b8f005",
+      "bytes": 305685,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/ro/continuation-03/events.jsonl": {
+      "sha256": "def5cc4066ba13854e83edc4e81b90b4731f3b4664f42e0f9f4787866444b924",
+      "bytes": 2779,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/ro/continuation-04/events.jsonl": {
+      "sha256": "da2eea73c32534285e389c659af2bdfd9ea13a6df9f4f694370fa12f88edea0d",
+      "bytes": 32144,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/ro/continuation-02/events.jsonl": {
+      "sha256": "0b7c6b9c0bbb14b0c48eb0f95dd4671b9d5935fa799c5d07311d62aaff3ff9a9",
+      "bytes": 235877,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/ro/continuation-01/events.jsonl": {
+      "sha256": "3db4ab0a813cbdda0db3ce3b94502878e0c2b691bb3ddc1f2fde84607c871ad9",
+      "bytes": 360270,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/sr/continuation-02/events.jsonl": {
+      "sha256": "9441db18e444ccb4232a04f133fa71f7da71be2aabe3fe5ba42d6792ba71265b",
+      "bytes": 408229,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/sr/continuation-01/events.jsonl": {
+      "sha256": "7b1365865df54153682b8a01dd8ed5f30e08a8a06c067aa4f585f6a4675f0036",
+      "bytes": 396414,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/hu/continuation-03/events.jsonl": {
+      "sha256": "a3c67ad86c247af3949c688d658bc400ce500b993c5ff52eb06fcf573bfb76ad",
+      "bytes": 248660,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/hu/continuation-02/events.jsonl": {
+      "sha256": "b39aedad0e9a8601ae196b918714e7274d199044e8d499415159b9beca3a9c12",
+      "bytes": 519803,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/hu/continuation-01/events.jsonl": {
+      "sha256": "b84dc2808a69578eefc9a1a5bd8944a6e71d12a64ad028d0368dadff4549b181",
+      "bytes": 3121,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/bg/continuation-03/events.jsonl": {
+      "sha256": "4f9b5f3109e7d7d796be63e3e24d7328893223e63b3bab612748504ee81c75e5",
+      "bytes": 402011,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/bg/continuation-04/events.jsonl": {
+      "sha256": "15431490cdbc79d345d83f5681b06d65f1e5932f13f9f9cdef69a4f9a81b0e77",
+      "bytes": 293354,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/bg/continuation-02/events.jsonl": {
+      "sha256": "d8a3493a0380c172d2a91e44f180be6660144bef948faa15ce26a2e4612d1f51",
+      "bytes": 196159,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/bg/continuation-01/events.jsonl": {
+      "sha256": "31c854917ada9bfaa9f649c4818fb2e87cf85194a717d4ba4eab54eae34b2701",
+      "bytes": 2212,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/fil/continuation-02/events.jsonl": {
+      "sha256": "319c28258bf872707666d34f3ca2b7e1773ad88c4c61d6c87e3ee2ae097f59bb",
+      "bytes": 252131,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/fil/continuation-01/events.jsonl": {
+      "sha256": "9c57b5a6e7925cca4dd6393b738c4afb99066c1e6c2ac5c3a6cd82c01a0fc85e",
+      "bytes": 391007,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-04/events.jsonl": {
+      "sha256": "4f3ae136323b99f4bcd3fe4e0fc0f78b0e51d4dbf354640060b9d0ba8288b407",
+      "bytes": 286410,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-06/events.jsonl": {
+      "sha256": "6d5aa463fc064596457e37db1e6b077a442f07499271ed36add7da1cf09c7d62",
+      "bytes": 496445,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/events.jsonl": {
+      "sha256": "5fcf2c5a62c48158adcb39b13227549e88952aae896f0aa73ca09d64ae8b51d6",
+      "bytes": 591719,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-07/events.jsonl": {
+      "sha256": "9ec5e3039f75fab7fb8a3bc416c715e2c7c4d66a4215814f4e6fb2c15b528934",
+      "bytes": 128746,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-10/events.jsonl": {
+      "sha256": "e6fdcfc305cfa3edb2f66efec9e28830427a1c47ee2367a5f0f83b2b86d3714d",
+      "bytes": 270382,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-05/events.jsonl": {
+      "sha256": "de38d3c1888c7fd042a77c9a33cf39dfd44722f72602a6980d826ef41b3f38e9",
+      "bytes": 433132,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-04/events.jsonl": {
+      "sha256": "34a4adecbd428d65f397c0b23d0cc508d4f84b99fe3a4aac0a258507684015fc",
+      "bytes": 267061,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-03/events.jsonl": {
+      "sha256": "3d4467c4c2bc5afd3547cd0c123b68e69501a33fa32a239f76ac962ce9798d5d",
+      "bytes": 352964,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-08/events.jsonl": {
+      "sha256": "ab0cdb4c788ab725cd7468a0d94ad48b1bd49716cf8acf6c77a74b20a3f51c3b",
+      "bytes": 2974000,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/events.jsonl": {
+      "sha256": "9bc02813a9fb2810b629e2ef778f354983988b42a366f43441cb1ff9f3ae49ec",
+      "bytes": 1145388,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-07/events.jsonl": {
+      "sha256": "7b66cd75e7c77d12217ea63246979ffebc88dc77b1d07f58194d6660d5c4827a",
+      "bytes": 238935,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-10/events.jsonl": {
+      "sha256": "5f9042048d472ffbb22038285f91b967dab86baa2e00715c0c531053cba683af",
+      "bytes": 759770,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-11/events.jsonl": {
+      "sha256": "0cffd271ae89a5a81b2e59cb2285b451922a06c3ba7bdf072c1f008d5634cc27",
+      "bytes": 858653,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-05/events.jsonl": {
+      "sha256": "09e94ca2577e28c6721d0afeaff0f8ec5ab203fa844c5338d6c1c091c0536e04",
+      "bytes": 529633,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-08/events.jsonl": {
+      "sha256": "f041af73c3724ebd617343b5f82878148f03f46e095619f3ed81226e961cc162",
+      "bytes": 308333,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/events.jsonl": {
+      "sha256": "5281652589d8a782eef7498096c1ae03d75dd2a72d627b9aa5daf7f7af4740da",
+      "bytes": 713780,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-09/events.jsonl": {
+      "sha256": "abd83ee7c7b98e595cd147b8b78355091d5a9b95a87d22117da33c27fe6bff8f",
+      "bytes": 1024539,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-02/events.jsonl": {
+      "sha256": "9e332b1b31202cfecd07bc8c139e3a32246b14c2f16b041ea7aff126a393feff",
+      "bytes": 198515,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-04/events.jsonl": {
+      "sha256": "27c17bd73beb2813202b09c9d80d7aba8b8c510c758520475fc01f8d556fa313",
+      "bytes": 2106051,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-03/events.jsonl": {
+      "sha256": "dddf2af92b4684e8c0b486a98830ae2f4cd1bf0df1068896b5a558facdc9ca7e",
+      "bytes": 873792,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-08/events.jsonl": {
+      "sha256": "2d82a433e30a3d303f666be6859ba2bffa06fce2d50a06a5423db6f0aab60fa6",
+      "bytes": 247347,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/events.jsonl": {
+      "sha256": "a4dfdf1294e9de8fbaf64083444ac8e13c74396a4983906aa49261606a534638",
+      "bytes": 874507,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-07/events.jsonl": {
+      "sha256": "b848d505c130d78f14b0ccb1bfc86c9854b46bb259b5c9800dce49fc17e3e771",
+      "bytes": 141521,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-11/events.jsonl": {
+      "sha256": "b425241c155e216fa068498ebdce694670e2f570da177f03f76506d600d84c21",
+      "bytes": 196456,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-04/events.jsonl": {
+      "sha256": "4c430746e1252c2614cc3ddcd436cf61a218689535ef2b2337b305bfcaa2fdd8",
+      "bytes": 1094320,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-03/events.jsonl": {
+      "sha256": "b3a271de827e7e83e48b300ea945f51f8611b019120273dc75e0417ab41cd815",
+      "bytes": 886695,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-13/events.jsonl": {
+      "sha256": "3eb7453fa68b283050497603f3f8a97781c03c9aaa56ce8581b37963a512b260",
+      "bytes": 288594,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-12/events.jsonl": {
+      "sha256": "f3488532e578377d4cc21e1cb678481a81e68a94e8e9132ecdb7044cf6a0e4f0",
+      "bytes": 140814,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-08/events.jsonl": {
+      "sha256": "3cdb0e0f7dfdb30e73a190c4757d4dd1be02a95bd1b2dddc36ccb68588bc5ded",
+      "bytes": 156397,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-06/events.jsonl": {
+      "sha256": "b7866279bdd36730c45cb54d585da499f3aee0cb4eaa5cf26383c0c15a02c3b5",
+      "bytes": 228934,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/events.jsonl": {
+      "sha256": "5a418205679e2d9d6853182cb64e8a556a4cf16876c467628fe00c8b87b86f39",
+      "bytes": 599775,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-10/events.jsonl": {
+      "sha256": "82c893e9619099ab3c7588c970f9159782c738b05e453295302e37f865962dbb",
+      "bytes": 151442,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-11/events.jsonl": {
+      "sha256": "2fd99fcf0cd4cce420bbd1a4e1c1372a33599450068277f021b3a5673144b1e4",
+      "bytes": 1598621,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-02/events.jsonl": {
+      "sha256": "ebb9c93a9a0663fdcf7640c4834d12453708de364931496af21133c422b85d49",
+      "bytes": 109887,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-05/events.jsonl": {
+      "sha256": "8c8f2cb26f3a4b77b251045f53d1fec9f36eab0857f121de19d51f29b4ec4a3a",
+      "bytes": 272933,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-04/events.jsonl": {
+      "sha256": "7cb052217bc34ed04d7b069e183d67091b5f6018c11a0e5ed64b28dbe414cd51",
+      "bytes": 137434,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-13/events.jsonl": {
+      "sha256": "0dba7413e26db9633896e89b509fd26a5ca8833a0785a7cc6cd5a0ec8135b042",
+      "bytes": 449256,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-12/events.jsonl": {
+      "sha256": "013a650ca061884d22876f713f454c8f7b57f1fbbe79ca951d8e2017a95d1825",
+      "bytes": 455663,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-06/events.jsonl": {
+      "sha256": "97154f9dbf0eaa1d03f2bdf38c53f72495f2a2cbcdf43112b841c65a2a665342",
+      "bytes": 193638,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/events.jsonl": {
+      "sha256": "8a4d2a8ed81bc25c72adf502370d806ec1a52a9c996074c015c0403e13e7735d",
+      "bytes": 630094,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/ja/continuation-02/events.jsonl": {
+      "sha256": "7d7b0fa005610f8d9d17c8380a0b53f90c05d760246a819107371810cf6c85ac",
+      "bytes": 519970,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/ja/continuation-01/events.jsonl": {
+      "sha256": "5face392d8d36b2ac012142c93811a0c36c5c1e8de7bddfb912d763104d434b4",
+      "bytes": 190561,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/el/continuation-02/events.jsonl": {
+      "sha256": "2774725d15cb651e9cbcb68366a7a2790eafb0c006d5b23b7cd66637f164942e",
+      "bytes": 224256,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/el/continuation-01/events.jsonl": {
+      "sha256": "c7b5d15c5b20540e6bf495141f644d8bf5c9aeecce705cdb73a9dfa24d167b40",
+      "bytes": 663939,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/zh/continuation-03/events.jsonl": {
+      "sha256": "c57f6a7263dc9996e4ebd83ce114c57d78ebe243487bca8a2fdc57095c86f302",
+      "bytes": 184942,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/zh/continuation-02/events.jsonl": {
+      "sha256": "61dcb9254de1e3624675ba9f156e80b1d0d133991a12b26f18c7c078d28992ca",
+      "bytes": 323560,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/zh/continuation-01/events.jsonl": {
+      "sha256": "8b283d8a92a9ab21fcbf59e6c4b7e26e2a0848585f6b7cf3bf8a7a82f8298a14",
+      "bytes": 149162,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/zh-TW/events.jsonl": {
+      "sha256": "3cecf46dcfef609ddd4e071fe1f5ee960e92d1a7b6f3e44fbb3a89458353c889",
+      "bytes": 232799,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/zh-TW/continuation-02/events.jsonl": {
+      "sha256": "ff489a0d86e46eb7467a7932ada6e5674240153b46521742c249602dda398aed",
+      "bytes": 415179,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/zh-TW/continuation-01/events.jsonl": {
+      "sha256": "7a1cfdbb9645106ac2063a0268594f7da091a8721b6aec039ed902300f1395dd",
+      "bytes": 254818,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/ko/continuation-03/events.jsonl": {
+      "sha256": "59d3aac720a448ae7a1058633bc291a0d63a134561537d509801368264ebcc40",
+      "bytes": 253936,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/ko/continuation-01/events.jsonl": {
+      "sha256": "77e144f7d13d83f0b81770e519c934511d1688ee87cd15110b366b45c02fbba3",
+      "bytes": 218450,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/vi/continuation-02/events.jsonl": {
+      "sha256": "3d932fc515f0402490dc794d276ddbe0954df899bd760b6198ded3c9edab57db",
+      "bytes": 463690,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/vi/continuation-01/events.jsonl": {
+      "sha256": "7221b73b1d3db6a9e610d0f547b6e37c8e77bef6b04adc5aef26d0fc6db7b264",
+      "bytes": 332225,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/cs/continuation-03/events.jsonl": {
+      "sha256": "9ed8efe2b8a86fb1a672c17ce1a38768169fc04083ba92a40b6acd233450bbd7",
+      "bytes": 228596,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/cs/continuation-04/events.jsonl": {
+      "sha256": "768057e30784f0423918f7e3fb893641f3659dcd62a0729f0e1665fc2977edb4",
+      "bytes": 167066,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/cs/continuation-02/events.jsonl": {
+      "sha256": "76f64f2525209170cd38308b9afdabc15d93177e773761072a24ec5bcf2efa50",
+      "bytes": 241390,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/cs/continuation-01/events.jsonl": {
+      "sha256": "56c09ddd6e1cfd87edbbfe0eed3fd73680e205d55c07d81b3cd0e0d081ecf6d8",
+      "bytes": 198398,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/nl/continuation-01/events.jsonl": {
+      "sha256": "67ab246a1fd6dc067fb67694fe4e38db989c12fab3408b6ff008f35364b42622",
+      "bytes": 594032,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/es-419/continuation-02/events.jsonl": {
+      "sha256": "2a9c46dafe83c8062ba25828e3bebfd87287b03c921aeea05f35b213ba17b2b6",
+      "bytes": 229352,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/es-419/continuation-01/events.jsonl": {
+      "sha256": "02a45de3a30119dbe5c1616e4f4ef5b2d32bd1eba37b5f4d4b9143f9c639c3b0",
+      "bytes": 406957,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/id/continuation-03/events.jsonl": {
+      "sha256": "0e4ba6c9ead433916b0182fe97affbe3e412d181d74a51c26bd7a11541724034",
+      "bytes": 213376,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/id/continuation-02/events.jsonl": {
+      "sha256": "9aa3711c1d2c0f6620b116394a94b84f65f6d1ece650966235241ed7062f78b5",
+      "bytes": 281261,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/id/continuation-01/events.jsonl": {
+      "sha256": "26d71257f7907532091c5ae4606e31bff95ae67c6697652b16ea336dac99c9d5",
+      "bytes": 148656,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/tr/continuation-03/events.jsonl": {
+      "sha256": "213952e0476cfcb6a01877bed75cd9a10d61402e89d050c6b885ae7f479769d1",
+      "bytes": 237982,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/tr/continuation-02/events.jsonl": {
+      "sha256": "50c7211f7ab3e42398458bbe29529e941ec6f3f470e6d8ecf65b633cf22d4d23",
+      "bytes": 257749,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/tr/continuation-01/events.jsonl": {
+      "sha256": "dc97077d0062c9227ff0c45392a4c20119cb266ca04aa7414718db65aa5a9e3b",
+      "bytes": 175918,
+      "mode": "0o644"
+    }
+  }
+}
