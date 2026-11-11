@@ -615,6 +615,24 @@ file. All 147 files and 211 dependent text copies matched. The recovered
 macOS settings probe also compiled with .NET SDK 8.0.131 against the
 verified stock Managed directory.
 
+The [stock-managed probe build receipt](localization/evidence/archival-managed-stock-probe-builds-20261111.json)
+pins 15 DLLs and 15 portable PDBs built against the owned macOS and
+Windows games. Restore each `archived` source with the historical
+managed source receipt, under its recorded checkout-relative path
+inside a disposable `restored_sources` directory. Set `stock_managed`
+to the verified stock Managed directory for the build's platform.
+
+```sh
+python3.12 -B localization/restore_historical_dotnet_probe.py \
+  localization/evidence/archival-managed-stock-probe-builds-20261111.json \
+  "$recorded_path" --source-dir "$restored_sources" \
+  --game-managed "$stock_managed" --output "$fresh_file"
+```
+
+The helper checks each stock reference before compiling. All 30 outputs
+matched their historical fingerprints, and 42 dependent entries in the
+binary copy receipt restored from the resulting files.
+
 The [Windows Yarn preservation input](localization/evidence/windows-yarn-preservation-control-20261107.json)
 recreates the synthetic control in the
 [preservation check](localization/evidence/yarn-preservation-check-20261107.md).

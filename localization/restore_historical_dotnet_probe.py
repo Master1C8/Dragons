@@ -9,16 +9,20 @@ import re
 import subprocess
 import tempfile
 
-from restore_probe_assets import read_receipt, relative_path
+from restore_probe_assets import read_receipt, relative_path, sha256
 
 
 CHECKOUT = Path(__file__).resolve().parents[1]
 
 
-def restore_source(row, build):
+def restore_source(row, build, source_dir=None):
     path = relative_path(row['path'])
     git = ['git', '-C', str(CHECKOUT)]
-    if 'blob' in row:
+    if row.get('archived'):
+        if source_dir is None:
+            raise ValueError('Pass --source-dir with the restored historical sources')
+        data = (source_dir / path).read_bytes()
+    elif 'blob' in row:
         blob = row['blob']
         if not re.fullmatch(r'[0-9a-f]{40}', blob):
             raise ValueError('Expected a full source blob ID')
@@ -36,16 +40,24 @@ def restore_source(row, build):
     return destination
 
 
-def build_probe(row, build, historical_checkout):
-    project = restore_source(row['project'], build)
+def build_probe(row, build, historical_checkout, *, source_dir=None, game_managed=None):
+    project = restore_source(row['project'], build, source_dir)
     for source in row['sources']:
-        restore_source(source, build)
+        restore_source(source, build, source_dir)
     command = [
         'dotnet', 'build', str(project), '-c', row['configuration'], '--nologo',
         '--disable-build-servers', '-p:NuGetAudit=false', '--ignore-failed-sources',
         f"-p:SourceRevisionId={row['sourceRevisionId']}",
         f"-p:AssemblyName={row['assemblyName']}",
     ]
+    if 'gameManaged' in row:
+        if game_managed is None:
+            raise ValueError('Pass --game-managed for the recorded platform')
+        for name, digest in row['gameManaged'].items():
+            if sha256(game_managed / relative_path(name)) != digest:
+                raise ValueError(f'Stock managed reference fingerprint mismatch: {name}')
+        command.append(f'-p:GameManaged={game_managed}')
+        command.append(f"-p:WindowsGameplayProbe={str(row['windowsGameplay']).lower()}")
     if row.get('pathMap', True):
         original_object = historical_checkout / relative_path(row['objectPath'])
         original_project = historical_checkout / relative_path(row['project']['path']).parent
@@ -80,6 +92,8 @@ def main():
     parser.add_argument('receipt', type=Path)
     parser.add_argument('recorded_path')
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--source-dir', type=Path)
+    parser.add_argument('--game-managed', type=Path)
     args = parser.parse_args()
     receipt = read_receipt(args.receipt)
     if subprocess.check_output(['dotnet', '--version'], text=True).strip() != receipt['sdk']:
@@ -87,7 +101,10 @@ def main():
     row = receipt['outputs'][args.recorded_path]
     with tempfile.TemporaryDirectory(prefix='dragons-dotnet-restore-') as scratch:
         build = Path(scratch).resolve()
-        build_probe(receipt['builds'][row['build']], build, Path(receipt['historicalCheckout']))
+        build_probe(
+            receipt['builds'][row['build']], build, Path(receipt['historicalCheckout']),
+            source_dir=args.source_dir, game_managed=args.game_managed,
+        )
         data = verified_output(build, row)
     with args.output.open('xb') as out:
         out.write(data)

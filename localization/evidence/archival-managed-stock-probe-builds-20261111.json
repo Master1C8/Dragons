@@ -1,0 +1,697 @@
+{
+  "schema": 1,
+  "sdk": "8.0.131",
+  "gameLaunched": false,
+  "historicalCheckout": "/Users/antonkrutov/Desktop/Dragons",
+  "builds": [
+    {
+      "project": {
+        "path": "localization/work/speaker-runtime-20261110.O82oIa/companion/companion.csproj",
+        "archived": true,
+        "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058"
+      },
+      "sources": [
+        {
+          "path": "localization/work/speaker-runtime-20261110.O82oIa/companion/Probe.cs",
+          "archived": true,
+          "sha256": "9fa656628e6a1977fea2b4ed70b1d5cf9c8f6c88540c86f9cded608b9f7b0967"
+        }
+      ],
+      "objectPath": "localization/work/speaker-runtime-20261110.O82oIa/mac/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "fa63c0f2514373884c0c6f6036469e8c1a6f744a",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "all",
+      "platform": "macos",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec",
+        "UnityEngine.CoreModule.dll": "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937",
+        "UnityEngine.UI.dll": "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4",
+        "UnityEngine.UIModule.dll": "6d43e6d441c4081647824d4e991e16f28a884f0fbda60056348071eb7299f80c",
+        "UnityEngine.PhysicsModule.dll": "863e307a3bc79a621d7e22526b2da8b62d0d35039f7d4d9e01e85187c1285b3c",
+        "Unity.TextMeshPro.dll": "a25a11167a5a7339d611c364a6525fc172d19fe5caa6aa95d6866fd1d36d0743",
+        "UnityEngine.TextCoreTextEngineModule.dll": "746123b00558b86573317ec8318836caa09ece16a62ef6bac2c13713eea8738a",
+        "UnityEngine.ImageConversionModule.dll": "dc7d930114f8e725e530bfdeb487cfe2d8f03d510fb5d22d01383f3965acce30",
+        "Unity.RenderPipelines.Universal.Runtime.dll": "aa71a0ed287579775196ac4db0d355d4ee54b713f508b9df3e4893f89ccf9e44",
+        "Unity.RenderPipelines.Core.Runtime.dll": "120ab52e9422f673a846702206efe900dfe8230a87f38cf698ff13dd86ae57c6"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/mac-retry/companion.csproj",
+        "archived": true,
+        "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860"
+      },
+      "sources": [
+        {
+          "path": "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/mac-retry/Probe.cs",
+          "archived": true,
+          "sha256": "fbf2f18b1b302cc9164f37b5cf3fb106f35c92fc490cb52fc28bd815e3ff417b"
+        }
+      ],
+      "objectPath": "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/mac-retry/obj",
+      "configuration": "Release",
+      "sourceRevisionId": "8f4686862211937e0c0013add16340e4fa6d5c97",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "all",
+      "platform": "macos",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec",
+        "UnityEngine.CoreModule.dll": "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937",
+        "UnityEngine.UI.dll": "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4",
+        "UnityEngine.UIModule.dll": "6d43e6d441c4081647824d4e991e16f28a884f0fbda60056348071eb7299f80c",
+        "UnityEngine.PhysicsModule.dll": "863e307a3bc79a621d7e22526b2da8b62d0d35039f7d4d9e01e85187c1285b3c",
+        "Unity.TextMeshPro.dll": "a25a11167a5a7339d611c364a6525fc172d19fe5caa6aa95d6866fd1d36d0743",
+        "UnityEngine.ScreenCaptureModule.dll": "d140079566daf5c48954cab3914eb137f30d56b50fe0c380ae83e71cf8cff4da",
+        "UnityEngine.TextCoreTextEngineModule.dll": "746123b00558b86573317ec8318836caa09ece16a62ef6bac2c13713eea8738a",
+        "UnityEngine.ImageConversionModule.dll": "dc7d930114f8e725e530bfdeb487cfe2d8f03d510fb5d22d01383f3965acce30",
+        "Unity.RenderPipelines.Universal.Runtime.dll": "aa71a0ed287579775196ac4db0d355d4ee54b713f508b9df3e4893f89ccf9e44",
+        "Unity.RenderPipelines.Core.Runtime.dll": "120ab52e9422f673a846702206efe900dfe8230a87f38cf698ff13dd86ae57c6"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/settings/companion.csproj",
+        "archived": true,
+        "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860"
+      },
+      "sources": [
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/settings/Probe.cs",
+          "archived": true,
+          "sha256": "7aa383a408798efefa5ecf79511c5f8d79f69ba7c5c63009bbd3db98c884c76d"
+        }
+      ],
+      "objectPath": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/settings/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "4b8aa7dcca11a7989ed7815f5a64d7591c9cd2b6",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "all",
+      "platform": "macos",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec",
+        "UnityEngine.CoreModule.dll": "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937",
+        "UnityEngine.UI.dll": "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4",
+        "UnityEngine.UIModule.dll": "6d43e6d441c4081647824d4e991e16f28a884f0fbda60056348071eb7299f80c",
+        "UnityEngine.PhysicsModule.dll": "863e307a3bc79a621d7e22526b2da8b62d0d35039f7d4d9e01e85187c1285b3c",
+        "Unity.TextMeshPro.dll": "a25a11167a5a7339d611c364a6525fc172d19fe5caa6aa95d6866fd1d36d0743",
+        "UnityEngine.ScreenCaptureModule.dll": "d140079566daf5c48954cab3914eb137f30d56b50fe0c380ae83e71cf8cff4da",
+        "UnityEngine.TextCoreTextEngineModule.dll": "746123b00558b86573317ec8318836caa09ece16a62ef6bac2c13713eea8738a",
+        "UnityEngine.ImageConversionModule.dll": "dc7d930114f8e725e530bfdeb487cfe2d8f03d510fb5d22d01383f3965acce30",
+        "Unity.RenderPipelines.Universal.Runtime.dll": "aa71a0ed287579775196ac4db0d355d4ee54b713f508b9df3e4893f89ccf9e44",
+        "Unity.RenderPipelines.Core.Runtime.dll": "120ab52e9422f673a846702206efe900dfe8230a87f38cf698ff13dd86ae57c6"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-companion/companion.csproj",
+        "archived": true,
+        "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860"
+      },
+      "sources": [
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-companion/Probe.cs",
+          "archived": true,
+          "sha256": "c25a0eeea81b6a2933f8d1afb3b7be0b5027106e9a1209e4beec49e88b5aad2b"
+        }
+      ],
+      "objectPath": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-companion/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "1a6110c2a8be026cfcfc96ff836d1232af221e6a",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "all",
+      "platform": "macos",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec",
+        "UnityEngine.CoreModule.dll": "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937",
+        "UnityEngine.UI.dll": "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4",
+        "UnityEngine.UIModule.dll": "6d43e6d441c4081647824d4e991e16f28a884f0fbda60056348071eb7299f80c",
+        "UnityEngine.PhysicsModule.dll": "863e307a3bc79a621d7e22526b2da8b62d0d35039f7d4d9e01e85187c1285b3c",
+        "Unity.TextMeshPro.dll": "a25a11167a5a7339d611c364a6525fc172d19fe5caa6aa95d6866fd1d36d0743",
+        "UnityEngine.ScreenCaptureModule.dll": "d140079566daf5c48954cab3914eb137f30d56b50fe0c380ae83e71cf8cff4da",
+        "UnityEngine.TextCoreTextEngineModule.dll": "746123b00558b86573317ec8318836caa09ece16a62ef6bac2c13713eea8738a",
+        "UnityEngine.ImageConversionModule.dll": "dc7d930114f8e725e530bfdeb487cfe2d8f03d510fb5d22d01383f3965acce30",
+        "Unity.RenderPipelines.Universal.Runtime.dll": "aa71a0ed287579775196ac4db0d355d4ee54b713f508b9df3e4893f89ccf9e44",
+        "Unity.RenderPipelines.Core.Runtime.dll": "120ab52e9422f673a846702206efe900dfe8230a87f38cf698ff13dd86ae57c6"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/mac-retry/companion.csproj",
+        "archived": true,
+        "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860"
+      },
+      "sources": [
+        {
+          "path": "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/mac-retry/Probe.cs",
+          "archived": true,
+          "sha256": "ea49f59be2ea4077d21426727b9f0bc6239368549d9d2e0450db55f89201ca14"
+        }
+      ],
+      "objectPath": "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/mac-retry/obj",
+      "configuration": "Release",
+      "sourceRevisionId": "f71f44d007a24836e862332113a9f292bae3f2a7",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "all",
+      "platform": "macos",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec",
+        "UnityEngine.CoreModule.dll": "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937",
+        "UnityEngine.UI.dll": "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4",
+        "UnityEngine.UIModule.dll": "6d43e6d441c4081647824d4e991e16f28a884f0fbda60056348071eb7299f80c",
+        "UnityEngine.PhysicsModule.dll": "863e307a3bc79a621d7e22526b2da8b62d0d35039f7d4d9e01e85187c1285b3c",
+        "Unity.TextMeshPro.dll": "a25a11167a5a7339d611c364a6525fc172d19fe5caa6aa95d6866fd1d36d0743",
+        "UnityEngine.ScreenCaptureModule.dll": "d140079566daf5c48954cab3914eb137f30d56b50fe0c380ae83e71cf8cff4da",
+        "UnityEngine.TextCoreTextEngineModule.dll": "746123b00558b86573317ec8318836caa09ece16a62ef6bac2c13713eea8738a",
+        "UnityEngine.ImageConversionModule.dll": "dc7d930114f8e725e530bfdeb487cfe2d8f03d510fb5d22d01383f3965acce30",
+        "Unity.RenderPipelines.Universal.Runtime.dll": "aa71a0ed287579775196ac4db0d355d4ee54b713f508b9df3e4893f89ccf9e44",
+        "Unity.RenderPipelines.Core.Runtime.dll": "120ab52e9422f673a846702206efe900dfe8230a87f38cf698ff13dd86ae57c6"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/tools/background-input-probe/gameplay-companion/companion.csproj",
+        "revision": "409cf9240418408ce6fc2060188516d8712fee79",
+        "sha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/background-input-probe/gameplay-companion/Probe.cs",
+          "revision": "409cf9240418408ce6fc2060188516d8712fee79",
+          "sha256": "4e403979f931f8ebf051f5015bf9768bdc4f1aa6334ab1b63f52174e876fb0d1"
+        }
+      ],
+      "objectPath": "localization/work/background-performance-20261109.41uqFb/windows-preflight/tracked/mac-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "b438df412974e175cea403f91f11556a42136189",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "generated",
+      "platform": "macos",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec",
+        "UnityEngine.CoreModule.dll": "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937",
+        "UnityEngine.UI.dll": "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4",
+        "UnityEngine.UIModule.dll": "6d43e6d441c4081647824d4e991e16f28a884f0fbda60056348071eb7299f80c",
+        "UnityEngine.PhysicsModule.dll": "863e307a3bc79a621d7e22526b2da8b62d0d35039f7d4d9e01e85187c1285b3c"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/work/speaker-runtime-20261110.O82oIa/companion/companion.csproj",
+        "archived": true,
+        "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058"
+      },
+      "sources": [
+        {
+          "path": "localization/work/speaker-runtime-20261110.O82oIa/companion/Probe.cs",
+          "archived": true,
+          "sha256": "9fa656628e6a1977fea2b4ed70b1d5cf9c8f6c88540c86f9cded608b9f7b0967"
+        }
+      ],
+      "objectPath": "localization/work/speaker-runtime-20261110.O82oIa/win/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "fa63c0f2514373884c0c6f6036469e8c1a6f744a",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "all",
+      "platform": "windows",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "94d2e9efdbae9d2bf42067c98edb51c829bba57c72ddf49d2fbe99d569ee2c75",
+        "UnityEngine.CoreModule.dll": "d589629ecd4971438643c5d3ce5ee78cf7ee26ac0d98522f802923ca6b55bc79",
+        "UnityEngine.UI.dll": "e31bf1ba3ebcd9e63c1c8530d6be7799b079c4f9a5dcc29a695e4be5b26aa613",
+        "UnityEngine.UIModule.dll": "88f95e40c5d59a7f6625d328d46d33d1037544800aca65e53d81b5f9b3de8eae",
+        "UnityEngine.PhysicsModule.dll": "d372f6f5a696871ff2cdfe9f3749e55e4e57e561f3359e53787c0cc3825131db",
+        "Unity.TextMeshPro.dll": "e22d8f83e97d0a27bed0480cfd52d13a6b26b1e74e3ad67e6a17316090ec3f9f",
+        "UnityEngine.TextCoreTextEngineModule.dll": "7a46e1e8cc81697b18aa3f9dba1a89d7b341cdc5881a568af398006cdf4f6ac6",
+        "UnityEngine.ImageConversionModule.dll": "3b1153d5a8521754a4a558b78194057ded69ecfe27e4eff5259787ca3b1deba2",
+        "Unity.RenderPipelines.Universal.Runtime.dll": "be249a2af1956f2eb6113d4a3eb3413198b155e6ee6c01d078441a0b8addb3ab",
+        "Unity.RenderPipelines.Core.Runtime.dll": "0edf7f466004eb162fb649d749773715729e797bf40805b0cbad1e81f4987017"
+      },
+      "windowsGameplay": true
+    },
+    {
+      "project": {
+        "path": "localization/tools/background-input-probe/gameplay-companion/companion.csproj",
+        "revision": "409cf9240418408ce6fc2060188516d8712fee79",
+        "sha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/background-input-probe/gameplay-companion/Probe.cs",
+          "revision": "409cf9240418408ce6fc2060188516d8712fee79",
+          "sha256": "4e403979f931f8ebf051f5015bf9768bdc4f1aa6334ab1b63f52174e876fb0d1"
+        }
+      ],
+      "objectPath": "localization/work/background-performance-20261109.41uqFb/windows-preflight/tracked/win-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "b438df412974e175cea403f91f11556a42136189",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "generated",
+      "platform": "windows",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "94d2e9efdbae9d2bf42067c98edb51c829bba57c72ddf49d2fbe99d569ee2c75",
+        "UnityEngine.CoreModule.dll": "d589629ecd4971438643c5d3ce5ee78cf7ee26ac0d98522f802923ca6b55bc79",
+        "UnityEngine.UI.dll": "e31bf1ba3ebcd9e63c1c8530d6be7799b079c4f9a5dcc29a695e4be5b26aa613",
+        "UnityEngine.UIModule.dll": "88f95e40c5d59a7f6625d328d46d33d1037544800aca65e53d81b5f9b3de8eae",
+        "UnityEngine.PhysicsModule.dll": "d372f6f5a696871ff2cdfe9f3749e55e4e57e561f3359e53787c0cc3825131db"
+      },
+      "windowsGameplay": true
+    },
+    {
+      "project": {
+        "path": "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/win-retry/companion.csproj",
+        "archived": true,
+        "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860"
+      },
+      "sources": [
+        {
+          "path": "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/win-retry/Probe.cs",
+          "archived": true,
+          "sha256": "44b33a61c57931f4a81d51ed44cc0e863d50a92c581f72a024e1dd3a92f778a9"
+        }
+      ],
+      "objectPath": "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/win-retry/obj",
+      "configuration": "Release",
+      "sourceRevisionId": "8f4686862211937e0c0013add16340e4fa6d5c97",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "all",
+      "platform": "windows",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "94d2e9efdbae9d2bf42067c98edb51c829bba57c72ddf49d2fbe99d569ee2c75",
+        "UnityEngine.CoreModule.dll": "d589629ecd4971438643c5d3ce5ee78cf7ee26ac0d98522f802923ca6b55bc79",
+        "UnityEngine.UI.dll": "e31bf1ba3ebcd9e63c1c8530d6be7799b079c4f9a5dcc29a695e4be5b26aa613",
+        "UnityEngine.UIModule.dll": "88f95e40c5d59a7f6625d328d46d33d1037544800aca65e53d81b5f9b3de8eae",
+        "UnityEngine.PhysicsModule.dll": "d372f6f5a696871ff2cdfe9f3749e55e4e57e561f3359e53787c0cc3825131db",
+        "Unity.TextMeshPro.dll": "e22d8f83e97d0a27bed0480cfd52d13a6b26b1e74e3ad67e6a17316090ec3f9f",
+        "UnityEngine.ScreenCaptureModule.dll": "5ddc9b7ebf63b8ed1a12bfa62a6f2d598e8991c298b80c7a9cac6d76d303ab52",
+        "UnityEngine.TextCoreTextEngineModule.dll": "7a46e1e8cc81697b18aa3f9dba1a89d7b341cdc5881a568af398006cdf4f6ac6",
+        "UnityEngine.ImageConversionModule.dll": "3b1153d5a8521754a4a558b78194057ded69ecfe27e4eff5259787ca3b1deba2",
+        "Unity.RenderPipelines.Universal.Runtime.dll": "be249a2af1956f2eb6113d4a3eb3413198b155e6ee6c01d078441a0b8addb3ab",
+        "Unity.RenderPipelines.Core.Runtime.dll": "0edf7f466004eb162fb649d749773715729e797bf40805b0cbad1e81f4987017"
+      },
+      "windowsGameplay": true
+    },
+    {
+      "project": {
+        "path": "localization/work/european-text-paths-20261110.QddlnY/mac-settings/companion/companion.csproj",
+        "archived": true,
+        "sha256": "9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271"
+      },
+      "sources": [
+        {
+          "path": "localization/work/european-text-paths-20261110.QddlnY/mac-settings/companion/Probe.cs",
+          "archived": true,
+          "sha256": "98c93818d4367de8d6e9c65ffb89a80e663cac29c91f5694a906cf40c2f49da3"
+        }
+      ],
+      "objectPath": "localization/work/european-text-paths-20261110.QddlnY/mac-settings/companion/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "c5d0590b1d064cb43abfdeb93b8874364428870d",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "all",
+      "platform": "macos",
+      "gameManaged": {
+        "Unity.TextMeshPro.dll": "a25a11167a5a7339d611c364a6525fc172d19fe5caa6aa95d6866fd1d36d0743",
+        "Unity.InputSystem.dll": "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec",
+        "UnityEngine.CoreModule.dll": "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937",
+        "UnityEngine.UI.dll": "34d58694fe13e5b9e49407a541e358277d13b0da4d864d28793ac18094e2bac4",
+        "UnityEngine.UIModule.dll": "6d43e6d441c4081647824d4e991e16f28a884f0fbda60056348071eb7299f80c",
+        "UnityEngine.PhysicsModule.dll": "863e307a3bc79a621d7e22526b2da8b62d0d35039f7d4d9e01e85187c1285b3c"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/work/european-text-paths-20261110.QddlnY/win-settings/companion/companion.csproj",
+        "archived": true,
+        "sha256": "9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271"
+      },
+      "sources": [
+        {
+          "path": "localization/work/european-text-paths-20261110.QddlnY/mac-settings/companion/Probe.cs",
+          "archived": true,
+          "sha256": "98c93818d4367de8d6e9c65ffb89a80e663cac29c91f5694a906cf40c2f49da3"
+        }
+      ],
+      "objectPath": "localization/work/european-text-paths-20261110.QddlnY/win-settings/companion/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "c5d0590b1d064cb43abfdeb93b8874364428870d",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "all",
+      "platform": "windows",
+      "gameManaged": {
+        "Unity.TextMeshPro.dll": "e22d8f83e97d0a27bed0480cfd52d13a6b26b1e74e3ad67e6a17316090ec3f9f",
+        "Unity.InputSystem.dll": "94d2e9efdbae9d2bf42067c98edb51c829bba57c72ddf49d2fbe99d569ee2c75",
+        "UnityEngine.CoreModule.dll": "d589629ecd4971438643c5d3ce5ee78cf7ee26ac0d98522f802923ca6b55bc79",
+        "UnityEngine.UI.dll": "e31bf1ba3ebcd9e63c1c8530d6be7799b079c4f9a5dcc29a695e4be5b26aa613",
+        "UnityEngine.UIModule.dll": "88f95e40c5d59a7f6625d328d46d33d1037544800aca65e53d81b5f9b3de8eae",
+        "UnityEngine.PhysicsModule.dll": "d372f6f5a696871ff2cdfe9f3749e55e4e57e561f3359e53787c0cc3825131db"
+      },
+      "windowsGameplay": true
+    },
+    {
+      "project": {
+        "path": "localization/tools/background-input-probe/companion/companion.csproj",
+        "revision": "409cf9240418408ce6fc2060188516d8712fee79",
+        "sha256": "59ae84dd13ed409ccf31b25ae414b1033fb6a639fc46f8d3adf077a4fe485dcc"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/background-input-probe/companion/Probe.cs",
+          "revision": "409cf9240418408ce6fc2060188516d8712fee79",
+          "sha256": "5d3b310fc377709a88df12b371e97892cc1f1aec14ed3ea1d32189f66741962d"
+        }
+      ],
+      "objectPath": "localization/work/background-input-20261109.UU2LOG/tracked/companion-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "bb18ffb6f0da20f4500ed80828219d1d471c8a79",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "generated",
+      "platform": "macos",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "d4b1240b1c2f464cbdfadde16e53b9a4fa1078e03c2330e019264242fe73c1ec",
+        "UnityEngine.CoreModule.dll": "6f9cca425678bdda653562906343f35624c831747172ce91c156693156997937"
+      },
+      "windowsGameplay": false
+    },
+    {
+      "project": {
+        "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/settings/companion.csproj",
+        "archived": true,
+        "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860"
+      },
+      "sources": [
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/settings/Probe.cs",
+          "archived": true,
+          "sha256": "7aa383a408798efefa5ecf79511c5f8d79f69ba7c5c63009bbd3db98c884c76d"
+        }
+      ],
+      "objectPath": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/settings/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "4b8aa7dcca11a7989ed7815f5a64d7591c9cd2b6",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "all",
+      "platform": "windows",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "94d2e9efdbae9d2bf42067c98edb51c829bba57c72ddf49d2fbe99d569ee2c75",
+        "UnityEngine.CoreModule.dll": "d589629ecd4971438643c5d3ce5ee78cf7ee26ac0d98522f802923ca6b55bc79",
+        "UnityEngine.UI.dll": "e31bf1ba3ebcd9e63c1c8530d6be7799b079c4f9a5dcc29a695e4be5b26aa613",
+        "UnityEngine.UIModule.dll": "88f95e40c5d59a7f6625d328d46d33d1037544800aca65e53d81b5f9b3de8eae",
+        "UnityEngine.PhysicsModule.dll": "d372f6f5a696871ff2cdfe9f3749e55e4e57e561f3359e53787c0cc3825131db",
+        "Unity.TextMeshPro.dll": "e22d8f83e97d0a27bed0480cfd52d13a6b26b1e74e3ad67e6a17316090ec3f9f",
+        "UnityEngine.ScreenCaptureModule.dll": "5ddc9b7ebf63b8ed1a12bfa62a6f2d598e8991c298b80c7a9cac6d76d303ab52",
+        "UnityEngine.TextCoreTextEngineModule.dll": "7a46e1e8cc81697b18aa3f9dba1a89d7b341cdc5881a568af398006cdf4f6ac6",
+        "UnityEngine.ImageConversionModule.dll": "3b1153d5a8521754a4a558b78194057ded69ecfe27e4eff5259787ca3b1deba2",
+        "Unity.RenderPipelines.Universal.Runtime.dll": "be249a2af1956f2eb6113d4a3eb3413198b155e6ee6c01d078441a0b8addb3ab",
+        "Unity.RenderPipelines.Core.Runtime.dll": "0edf7f466004eb162fb649d749773715729e797bf40805b0cbad1e81f4987017"
+      },
+      "windowsGameplay": true
+    },
+    {
+      "project": {
+        "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-win/companion/companion.csproj",
+        "archived": true,
+        "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860"
+      },
+      "sources": [
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-companion/Probe.cs",
+          "archived": true,
+          "sha256": "c25a0eeea81b6a2933f8d1afb3b7be0b5027106e9a1209e4beec49e88b5aad2b"
+        }
+      ],
+      "objectPath": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-win/companion/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "747c7b0b486f6e0a769e225755115d3e6f0bc3f3",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "all",
+      "platform": "windows",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "94d2e9efdbae9d2bf42067c98edb51c829bba57c72ddf49d2fbe99d569ee2c75",
+        "UnityEngine.CoreModule.dll": "d589629ecd4971438643c5d3ce5ee78cf7ee26ac0d98522f802923ca6b55bc79",
+        "UnityEngine.UI.dll": "e31bf1ba3ebcd9e63c1c8530d6be7799b079c4f9a5dcc29a695e4be5b26aa613",
+        "UnityEngine.UIModule.dll": "88f95e40c5d59a7f6625d328d46d33d1037544800aca65e53d81b5f9b3de8eae",
+        "UnityEngine.PhysicsModule.dll": "d372f6f5a696871ff2cdfe9f3749e55e4e57e561f3359e53787c0cc3825131db",
+        "Unity.TextMeshPro.dll": "e22d8f83e97d0a27bed0480cfd52d13a6b26b1e74e3ad67e6a17316090ec3f9f",
+        "UnityEngine.ScreenCaptureModule.dll": "5ddc9b7ebf63b8ed1a12bfa62a6f2d598e8991c298b80c7a9cac6d76d303ab52",
+        "UnityEngine.TextCoreTextEngineModule.dll": "7a46e1e8cc81697b18aa3f9dba1a89d7b341cdc5881a568af398006cdf4f6ac6",
+        "UnityEngine.ImageConversionModule.dll": "3b1153d5a8521754a4a558b78194057ded69ecfe27e4eff5259787ca3b1deba2",
+        "Unity.RenderPipelines.Universal.Runtime.dll": "be249a2af1956f2eb6113d4a3eb3413198b155e6ee6c01d078441a0b8addb3ab",
+        "Unity.RenderPipelines.Core.Runtime.dll": "0edf7f466004eb162fb649d749773715729e797bf40805b0cbad1e81f4987017"
+      },
+      "windowsGameplay": true
+    },
+    {
+      "project": {
+        "path": "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/win-retry/companion.csproj",
+        "archived": true,
+        "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860"
+      },
+      "sources": [
+        {
+          "path": "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/win-retry/Probe.cs",
+          "archived": true,
+          "sha256": "434ff09384da8c55230d3de00b7c121e1b050f6295d4e95aa115397df16eea0b"
+        }
+      ],
+      "objectPath": "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/win-retry/obj",
+      "configuration": "Release",
+      "sourceRevisionId": "f71f44d007a24836e862332113a9f292bae3f2a7",
+      "assemblyName": "Dragons.BackgroundInputProbe",
+      "embeddedSources": "all",
+      "platform": "windows",
+      "gameManaged": {
+        "Unity.InputSystem.dll": "94d2e9efdbae9d2bf42067c98edb51c829bba57c72ddf49d2fbe99d569ee2c75",
+        "UnityEngine.CoreModule.dll": "d589629ecd4971438643c5d3ce5ee78cf7ee26ac0d98522f802923ca6b55bc79",
+        "UnityEngine.UI.dll": "e31bf1ba3ebcd9e63c1c8530d6be7799b079c4f9a5dcc29a695e4be5b26aa613",
+        "UnityEngine.UIModule.dll": "88f95e40c5d59a7f6625d328d46d33d1037544800aca65e53d81b5f9b3de8eae",
+        "UnityEngine.PhysicsModule.dll": "d372f6f5a696871ff2cdfe9f3749e55e4e57e561f3359e53787c0cc3825131db",
+        "Unity.TextMeshPro.dll": "e22d8f83e97d0a27bed0480cfd52d13a6b26b1e74e3ad67e6a17316090ec3f9f",
+        "UnityEngine.ScreenCaptureModule.dll": "5ddc9b7ebf63b8ed1a12bfa62a6f2d598e8991c298b80c7a9cac6d76d303ab52",
+        "UnityEngine.TextCoreTextEngineModule.dll": "7a46e1e8cc81697b18aa3f9dba1a89d7b341cdc5881a568af398006cdf4f6ac6",
+        "UnityEngine.ImageConversionModule.dll": "3b1153d5a8521754a4a558b78194057ded69ecfe27e4eff5259787ca3b1deba2",
+        "Unity.RenderPipelines.Universal.Runtime.dll": "be249a2af1956f2eb6113d4a3eb3413198b155e6ee6c01d078441a0b8addb3ab",
+        "Unity.RenderPipelines.Core.Runtime.dll": "0edf7f466004eb162fb649d749773715729e797bf40805b0cbad1e81f4987017"
+      },
+      "windowsGameplay": true
+    }
+  ],
+  "outputs": {
+    "localization/work/background-input-20261109.UU2LOG/tracked/companion-bin/Dragons.BackgroundInputProbe.dll": {
+      "build": 11,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "fdb4f8cd4ad59444b10850def2bbb444362da609eeb78cb9ccbe68f9b8b7dada",
+      "bytes": 8704,
+      "mode": "0o644"
+    },
+    "localization/work/background-input-20261109.UU2LOG/tracked/companion-bin/Dragons.BackgroundInputProbe.pdb": {
+      "build": 11,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "1ceeaaf1c8591f3a3354f028a75c23259226d6dbc55ab49b0dd7d239d9a40be6",
+      "bytes": 9768,
+      "mode": "0o644"
+    },
+    "localization/work/background-performance-20261109.41uqFb/windows-preflight/tracked/mac-bin/Dragons.BackgroundInputProbe.dll": {
+      "build": 5,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "36610e460eaad1751b00247fbdcc556575f8f814f4621856ce119da461eb183c",
+      "bytes": 29184,
+      "mode": "0o644"
+    },
+    "localization/work/background-performance-20261109.41uqFb/windows-preflight/tracked/mac-bin/Dragons.BackgroundInputProbe.pdb": {
+      "build": 5,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "ef11272eccf0fbe3fec5e50687d40cafb9726836c9a599f80129d859a5579fe7",
+      "bytes": 15088,
+      "mode": "0o644"
+    },
+    "localization/work/background-performance-20261109.41uqFb/windows-preflight/tracked/win-bin/Dragons.BackgroundInputProbe.dll": {
+      "build": 7,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "48546f4b0aa1136a7c0f3f6e5b960b8bbf2de90f7fd5bb37d7661fc1b124660c",
+      "bytes": 31232,
+      "mode": "0o644"
+    },
+    "localization/work/background-performance-20261109.41uqFb/windows-preflight/tracked/win-bin/Dragons.BackgroundInputProbe.pdb": {
+      "build": 7,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "5466cf3d3473019a3cd3c9fb077ce4287dc26ea5ceaafd369482312cecd5c9c8",
+      "bytes": 15500,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-mac/bin/Dragons.BackgroundInputProbe.dll": {
+      "build": 3,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "41ab455dd0effabe825aab6f6f6d9ca3e86d02283866e5e5bef8cd89ab715dee",
+      "bytes": 16384,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-mac/bin/Dragons.BackgroundInputProbe.pdb": {
+      "build": 3,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "cadbcd9e67450d919ec4db92eadaa1eb034740706a2d39be3b6ded6ec39acc2f",
+      "bytes": 15728,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-win/bin/Dragons.BackgroundInputProbe.dll": {
+      "build": 13,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "4472d8e7c43e508389afd68d96b5dd3bb0db00a1ebdf8d8675bc31b9d64078f0",
+      "bytes": 16896,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-win/bin/Dragons.BackgroundInputProbe.pdb": {
+      "build": 13,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "3fa87a46a501394458d8b6556817b4b6ba68493448eb6d47d2a5c379e2571d37",
+      "bytes": 15780,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/settings/bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll": {
+      "build": 2,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "182ad1a33b5882fad468decb540cb14562caf4167935c7677f22c68e429473da",
+      "bytes": 16384,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/settings/bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb": {
+      "build": 2,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "e6b5b3d10a682c7ef73838d403cbfd68b857d7edc9742c8b68ddc51b1810fa13",
+      "bytes": 15724,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/settings/bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll": {
+      "build": 12,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "93158e3aaa0d21d1df16ac8fb7bded94f9fc169f141f3e9c8cbd5baf7fd4eddf",
+      "bytes": 16896,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/settings/bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb": {
+      "build": 12,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "c1304aaa1e83e62bdd693e5757191c9ddf35b3ce0ed1bdd1b0a88e952a0b2c5e",
+      "bytes": 15764,
+      "mode": "0o644"
+    },
+    "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/mac-retry/compiled/Dragons.BackgroundInputProbe.dll": {
+      "build": 1,
+      "member": "bin/Release/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "59748b660d6f29fdd044701960abeb0ca84a96d45cd32f70f805b507fa546181",
+      "bytes": 34304,
+      "mode": "0o644"
+    },
+    "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/mac-retry/compiled/Dragons.BackgroundInputProbe.pdb": {
+      "build": 1,
+      "member": "bin/Release/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "720154212710b22773d97f56c60a870735529504c363946abf45535ffcc56773",
+      "bytes": 23080,
+      "mode": "0o644"
+    },
+    "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/win-retry/compiled/Dragons.BackgroundInputProbe.dll": {
+      "build": 8,
+      "member": "bin/Release/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "a60df5e3773bfd5dedbd4d33423b2a0e2fb7f986f6f9440ac75788f07096fe0a",
+      "bytes": 45056,
+      "mode": "0o644"
+    },
+    "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/win-retry/compiled/Dragons.BackgroundInputProbe.pdb": {
+      "build": 8,
+      "member": "bin/Release/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "869196361eef84dd495882ba461ccd3107421fcc0e3da3158fbc9d2c82d0b433",
+      "bytes": 28440,
+      "mode": "0o644"
+    },
+    "localization/work/european-text-paths-20261110.QddlnY/mac-settings/probe-bin/Dragons.BackgroundInputProbe.dll": {
+      "build": 9,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "e9f11647f2c2d53e6b65f521e76ca46dbbe8dab86c0dbc66478fc0d9d5ed4c8e",
+      "bytes": 13312,
+      "mode": "0o644"
+    },
+    "localization/work/european-text-paths-20261110.QddlnY/mac-settings/probe-bin/Dragons.BackgroundInputProbe.pdb": {
+      "build": 9,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "1ee247333c770dd240c857754391e992a3a31203d516d94743c9ea0091bf84e0",
+      "bytes": 13904,
+      "mode": "0o644"
+    },
+    "localization/work/european-text-paths-20261110.QddlnY/win-settings/probe-bin/Dragons.BackgroundInputProbe.dll": {
+      "build": 10,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "d88190d9196abb9e59c906e571c29dc61e303eea0e0cc784b40569461ce216cb",
+      "bytes": 13824,
+      "mode": "0o644"
+    },
+    "localization/work/european-text-paths-20261110.QddlnY/win-settings/probe-bin/Dragons.BackgroundInputProbe.pdb": {
+      "build": 10,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "e6fc68ccc69690d770ff571185da396d4a0f65a38fb938db645822ad61ee34fd",
+      "bytes": 13948,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/mac-retry/compiled/Dragons.BackgroundInputProbe.dll": {
+      "build": 4,
+      "member": "bin/Release/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "0bcc35159eff8c39e0bd9a25573265e50e1f833efbcc83c73c256a588095ff81",
+      "bytes": 34304,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/mac-retry/compiled/Dragons.BackgroundInputProbe.pdb": {
+      "build": 4,
+      "member": "bin/Release/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "9c0fe878f47d94bb64c66881a8e1d3541589a41fd91c5f726334f416f7e2a45e",
+      "bytes": 23088,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/win-retry/compiled/Dragons.BackgroundInputProbe.dll": {
+      "build": 14,
+      "member": "bin/Release/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "e571cc2b425bf548f02601b70bbe8d0192c70d4b46e479dc34573534a0bc642a",
+      "bytes": 45056,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/win-retry/compiled/Dragons.BackgroundInputProbe.pdb": {
+      "build": 14,
+      "member": "bin/Release/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "c41b9c2601d080b016455dc3007dc92e1235d1cb384d176989adaf123622d97a",
+      "bytes": 28448,
+      "mode": "0o644"
+    },
+    "localization/work/speaker-runtime-20261110.O82oIa/mac/finalbin/Dragons.BackgroundInputProbe.dll": {
+      "build": 0,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "9f1a274797838702fd4ce12d825d9b25402dc321bb8cab4e4d764006ff1decd1",
+      "bytes": 45056,
+      "mode": "0o644"
+    },
+    "localization/work/speaker-runtime-20261110.O82oIa/mac/finalbin/Dragons.BackgroundInputProbe.pdb": {
+      "build": 0,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "c5abaff3c643b82e1d51243c958a9c9fd6caf09855c361ced73c055f62155b49",
+      "bytes": 30288,
+      "mode": "0o644"
+    },
+    "localization/work/speaker-runtime-20261110.O82oIa/win/finalbin/Dragons.BackgroundInputProbe.dll": {
+      "build": 6,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.dll",
+      "sha256": "a7f2bd497d34f1412d266a26818462c9f1b3ed4d6c8e69ce8f39b3f2c65a64df",
+      "bytes": 47104,
+      "mode": "0o644"
+    },
+    "localization/work/speaker-runtime-20261110.O82oIa/win/finalbin/Dragons.BackgroundInputProbe.pdb": {
+      "build": 6,
+      "member": "bin/Debug/netstandard2.1/Dragons.BackgroundInputProbe.pdb",
+      "sha256": "d774e996175e0ce602712cfabb8e12508b96e60788b5dfe503b2108973545e5e",
+      "bytes": 30688,
+      "mode": "0o644"
+    }
+  }
+}
