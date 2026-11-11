@@ -470,6 +470,40 @@ first restore the accepted Russian `sharedassets0.assets` with the release
 asset recipe and pass it as `--base-asset`. The Windows controls use the
 stock asset directly. All ten controls matched byte for byte.
 
+The [remaining CJK control and font receipt](localization/evidence/archival-cjk-remainder-20261111.json.gz)
+records four additive Japanese fallback controls. Use the pinned Japanese
+font and accepted OFL license with the stock Data directory for the
+recorded platform. The command restores the Russian base from the accepted
+installer for macOS and uses the stock base for Windows.
+
+```sh
+python3.12 -B localization/restore_cjk_append_probe.py "$receipt" "$control_name" \
+  --stock "$stock_data" --accepted "$recovery/restored" \
+  --font "$recovery/fonts/cjk/ja.otf" --license "$japanese_ofl" --output "$fresh_output"
+```
+
+For `japanesePackageAssets`, rebuild the Japanese synthetic packages with
+the input recipe above and take the recorded `packageMember`. For
+`koreanPackages`, recover `localization/ko/translation.json` from
+`localeSourceRevision` and verify the input hash. Use
+`rebuild_release_packages.py` at `builderRevision` with `--inputs` set to
+that file, the archived Ukrainian tools with Mono.Cecil, and the same
+stock and release inputs described above. The Windows ZIP matched its
+recorded SHA-256. The macOS package matched the recorded manifest and
+every surviving bundle file and directory, and passed strict signature
+verification.
+
+The receipt also maps `fontCopies` to exact members of the frozen font
+build archive and `upstreamFonts` to the pinned upstream release URLs.
+Verify each restored file's SHA-256 and apply its recorded mode.
+
+To recreate the signed library from the historical installer discovery
+fixture, download the receipt's `discoverySignature.delta` from the
+maintainer draft. Verify its hash and the hash of `stockPath` in the
+restored macOS app. Decode with Zstandard 1.5.7 as above, using the stock
+library as `--patch-from`. The decoded library matched the historical
+SHA-256 and passed strict signature verification.
+
 The [Ukrainian verification receipt](localization/evidence/archival-uk-verification-20261111.json.gz)
 pins three historical structure-control inputs and the two exact .NET tools
 used by those builds and the older German, French and Polish builds above.
