@@ -1717,6 +1717,12 @@ Use `mkdir -p` and the recorded modes to recreate needed paths. The
 check matched each empty directory, its mode and the inherited macOS
 provenance attribute.
 
+The [empty artifact tree receipt](localization/evidence/archival-empty-artifact-trees-20261111.json.gz)
+records directories left after verified artifacts were removed. Create
+the recorded directories in order with `mkdir -p`, then apply their modes
+from the deepest paths upward. The check recreated the selected trees
+and matched their relative paths, modes and inherited macOS provenance.
+
 The [test bundle plist receipt](localization/evidence/archival-test-bundle-plists-20261111.json.gz)
 records 351 static bundle files and 159 generated test `Info.plist`
 variants. Use `restore_archived_members.py --macos-stock` for the static
