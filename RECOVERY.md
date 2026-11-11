@@ -277,6 +277,30 @@ archive, patch and base hashes. All 54 files were restored from the
 downloaded archive and matched the original SHA-256 values. The signed
 library also passed strict signature verification.
 
+The [runtime control delta receipt](localization/evidence/archival-runtime-control-deltas-20261111.json.gz)
+pins 517 distinct generated outputs, including .NET launchers, game
+test executables, assembly controls and test bundle signature resources.
+For `macos` and `windows` bases, resolve `basePath` inside the verified
+stock app or game directory. For `dotnet-host`, download the pinned
+Microsoft host package from the receipt's URL and verify its archive and
+member hashes. Extract `basePath` and use it as the Zstandard base.
+Check each patch and restored SHA-256 and apply each destination's mode.
+The downloaded delta archive reproduced all 953 files.
+
+The [isolated profile receipt](localization/evidence/archival-isolated-profiles-20261111.json.gz)
+records the stock PlayerSettings fingerprint and test identity for 208
+historical assets. Restore into a fresh output with the pinned UnityPy
+version and the stock `globalgamemanagers` file for the recorded platform:
+
+```sh
+python3.12 -B localization/restore_profile_control.py \
+  "$profile_receipt" "$recorded_path" --stock-global "$stock_globalgamemanagers" \
+  --output "$fresh_output"
+```
+
+The helper verifies the exact object changes and file hash. It restores
+asset bytes without creating or loading a game profile.
+
 The stock asset receipts identify replaceable files in old runtime probes
 on [macOS](localization/evidence/archival-macos-stock-copies-20261111.json)
 and [Windows](localization/evidence/archival-windows-stock-copies-20261111.json).
@@ -311,6 +335,12 @@ the stock Windows `DragNWash_Data` directory for the
 [Windows receipt](localization/evidence/archival-windows-remaining-stock-20261111.json.gz),
 and the owned bottle's `drive_c/windows` directory for the
 [CrossOver receipt](localization/evidence/archival-crossover-remaining-stock-20261111.json.gz).
+
+The [CrossOver runtime metadata receipt](localization/evidence/archival-crossover-runtime-metadata-20261111.json.gz)
+covers 1,836 copied WinMD files, Mono machine configurations and services
+tables. Use `restore_archived_members.py` with `--crossover-windows` set
+to the owned bottle's `drive_c/windows` directory. The check reproduced
+every recorded file and verified its size, hash and mode.
 
 The [release asset receipt](localization/evidence/archival-release-probe-assets-20261111.json.gz)
 records which 0.2.1 installer entry restores each matching historical probe
