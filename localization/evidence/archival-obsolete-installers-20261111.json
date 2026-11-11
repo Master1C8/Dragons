@@ -34,5 +34,10 @@
       "archives": {},
       "contents": "extracted macOS installer"
     }
-  ]
+  ],
+  "intermediateWindowsSource": {
+    "base": "90dcdb1:installer/Windows/install.ps1",
+    "patch": "localization/evidence/archival-discovery-intermediate-20261111.patch.gz",
+    "restoredSha256": "61847bfe19b41b71b35430b979a5bc2d66cfbacd84066456bad318a89c5597d8"
+  }
 }
