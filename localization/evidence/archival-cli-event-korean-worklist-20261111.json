@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-cli-event-korean-worklist-index.json.gz",
+  "archiveSha256": "8c2030e1c8274b94cd41e8be1a4e6086cda8c232e821accca9cee7f1e7623f05",
+  "journalCount": 1,
+  "outputs": {
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/ko/continuation-02/events.jsonl": {
+      "bytes": 364426,
+      "sha256": "533814828e4e510295ab1dd4d9f466a86c1c8f028fe26d2abedd6aaddaf5febc",
+      "mode": "0o644"
+    }
+  }
+}

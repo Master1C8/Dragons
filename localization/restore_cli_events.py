@@ -75,7 +75,10 @@ def resolve(reference, records):
     return ''.join(parts)
 
 
-def rebuild(row, events, records, *, journal_root=None, slice_records=None, retained_input_root=CHECKOUT):
+def rebuild(
+    row, events, records, *, journal_root=None, slice_records=None, retained_input_root=CHECKOUT,
+    worklist=None,
+):
     git_blobs = {}
     documents = {}
     checkout_files = {}
@@ -158,6 +161,34 @@ def rebuild(row, events, records, *, journal_root=None, slice_records=None, reta
             if hashlib.sha256(raw).hexdigest() != source['sha256']:
                 raise ValueError('CLI output Git diff fingerprint mismatch')
             return raw.decode('utf-8')
+        if part.keys() == {'worklistReadback'}:
+            source = part['worklistReadback']
+            if worklist is None or sha256(worklist) != source['worklistSha256']:
+                raise ValueError('CLI output worklist fingerprint mismatch')
+            entries = read_receipt(worklist)['rows']
+            if not 0 < source['count'] <= len(entries):
+                raise ValueError('Unexpected CLI output worklist row count')
+            draft = json.loads(git_text(source['draft']))['lines']
+            for key, patch in source['patches'].items():
+                value = draft[key]
+                start, end = patch['start'], patch['end']
+                if (not isinstance(value, str) or not 0 <= start < end <= len(value) or
+                        value[start:end] != patch['old']):
+                    raise ValueError('CLI output worklist draft patch mismatch')
+                draft[key] = value[:start] + patch['replacement'] + value[end:]
+            lines = []
+            for entry in entries[:source['count']]:
+                key = entry['id']
+                value = draft[key]
+                paired = {
+                    platform: [binding['source'], value if isinstance(value, str) else value['platforms'][platform]]
+                    for platform, binding in entry['builds'].items()
+                }
+                lines.append(f'{key} {json.dumps(paired, ensure_ascii=False)}\n')
+            text = ''.join(lines)
+            if hashlib.sha256(text.encode()).hexdigest() != source['sha256']:
+                raise ValueError('CLI output worklist readback fingerprint mismatch')
+            return text
         if part.keys() == {'document'}:
             return document_text(part['document'])
         if part.keys() == {'checkoutSlice'}:
@@ -222,6 +253,7 @@ def main():
     for option in ('archive', 'journal-root', 'output'):
         parser.add_argument('--' + option, type=Path, required=True)
     parser.add_argument('--retained-input-root', type=Path, default=CHECKOUT)
+    parser.add_argument('--worklist', type=Path)
     args = parser.parse_args()
     receipt = read_receipt(args.receipt)
     if sha256(args.archive) != receipt['archiveSha256']:
@@ -243,6 +275,7 @@ def main():
     data = rebuild(
         row, stream['events'], records, journal_root=journal_root, slice_records=slice_records,
         retained_input_root=args.retained_input_root.resolve(strict=True),
+        worklist=args.worklist,
     )
     with args.output.open('xb') as out:
         out.write(data)

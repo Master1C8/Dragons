@@ -2170,6 +2170,15 @@ Spanish search against the recorded `HANDOFF.md` blob. The search was
 verified with ripgrep 15.2.0. The helper checks the command output
 fingerprints before restoring the streams.
 
+The [Korean worklist stream receipt](localization/evidence/archival-cli-event-korean-worklist-20261111.json)
+uses the same command with `--worklist "$shared_worklist"`. Rebuild
+the source-only `es-419` worklist named `000.json` in the worklist and
+editorial report receipt. Use the recorded builder, verified stock Data
+directories and restored v42 inputs. The helper verifies the worklist
+hash, reads the recorded Korean translation blob and applies the
+historical two-character difference in memory. It then verifies the
+400-row command output and the entire restored stream.
+
 The [retained input gap receipt](localization/evidence/archival-cli-event-retained-input-gaps-20261111.json)
 uses the same command for the Turkish stream and the third Polish
 continuation. Rebuild the two JSON inputs under a fresh input root,
