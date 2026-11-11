@@ -772,6 +772,61 @@ PNG hash and pass `--crop X Y WIDTH HEIGHT` only for an entry with a
 recorded crop. Verify the output hash and apply the recorded mode.
 All five outputs matched byte for byte.
 
+The [journal preview receipt](localization/evidence/archival-journal-preview-copies-20261111.json)
+pins six WebP previews from installer and font checks. Point the command
+at the owner's original Codex sessions directory or an exact copy and
+pass a fresh output directory. The command reads the existing journal
+attachments and writes only the six previews identified by their hashes.
+The check restored all six with matching bytes and modes.
+
+```sh
+python3.12 -B - "$codex_sessions" "$fresh_preview_directory" <<'PY'
+import base64, hashlib, json, re, sys
+from pathlib import Path
+
+receipt = Path("localization/evidence/archival-journal-preview-copies-20261111.json")
+record = json.loads(receipt.read_text())
+pending = {row["sha256"]: (path, row) for path, row in record["outputs"].items()}
+out = Path(sys.argv[2])
+out.mkdir()
+journals = Path(sys.argv[1]) / record["journalDay"]
+uri = re.compile(rb"data:image/webp;base64,([A-Za-z0-9+/]+={0,2})")
+for journal in sorted(journals.glob("rollout-*.jsonl")):
+    if not pending:
+        break
+    with journal.open("rb") as stream:
+        for line in stream:
+            for match in uri.finditer(line):
+                data = base64.b64decode(match[1], validate=True)
+                sha = hashlib.sha256(data).hexdigest()
+                if sha not in pending:
+                    continue
+                relative, row = pending.pop(sha)
+                assert len(data) == row["bytes"]
+                path = out / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                with path.open("xb") as output:
+                    output.write(data)
+                path.chmod(int(row["mode"], 8))
+            if not pending:
+                break
+if pending:
+    raise SystemExit("Missing journal previews: " + ", ".join(sorted(pending)))
+PY
+```
+
+The same receipt's `localRebuilds` section records previews regenerated
+from retained PNGs. Verify the helper and the listed PNG hash. Run the
+same preview command used above with Pillow and libwebp at the versions
+in that section. Check the output hash and apply the recorded mode. The
+PNG inputs remain at their listed paths.
+
+The `archiveRebuilds` section records two Russian pilot previews.
+Download the named archive from the `recovery-inputs-v0.2.1` maintainer
+draft and verify its SHA-256. Extract each recorded member, verify its
+PNG hash and run the preview helper with that section's tool versions.
+Both outputs matched the original bytes and file modes.
+
 The [binary copy receipt](localization/evidence/archival-binary-copies-20261111.json.gz)
 maps historical executable and library copies to exact files in the stock
 game, accepted installers, installed CrossOver, owned Windows runtime, or

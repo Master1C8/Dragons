@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "journalDay": "2026/11/10",
+  "outputs": {
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/settings-run/options-combining-crop.webp": {
+      "bytes": 672,
+      "sha256": "f7e2b29a7055922494bbef439e1517139de16a5ac3fe68e5f1fadcb79810e7d8",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/settings-run/options-combining-crop.webp": {
+      "bytes": 972,
+      "sha256": "ba24a42169ed25e3d77bb335213519a5eb2270422c2e4f3ccd03cfbc6fb988b5",
+      "mode": "0o644"
+    },
+    "localization/work/installer-launch.jlVtlR/mac/direct.webp": {
+      "bytes": 128802,
+      "sha256": "76afccdb16f7d2ecfc6d59dc3c80b4e046f819b29a4e09b76944e7ae00290cb7",
+      "mode": "0o644"
+    },
+    "localization/work/installer-launch.jlVtlR/win-after-escape.webp": {
+      "bytes": 33558,
+      "sha256": "cec4fa4941eb4d63ac5f9c06f63a549d8db93306be957ffad8695e69f568c0d4",
+      "mode": "0o644"
+    },
+    "localization/work/installer-launch.jlVtlR/win-keys.webp": {
+      "bytes": 33654,
+      "sha256": "0cbd14b6c3213215db6ffb22072c908308910748521be9146a367e36edb665f7",
+      "mode": "0o644"
+    },
+    "localization/work/installer-launch.jlVtlR/win-now.webp": {
+      "bytes": 30120,
+      "sha256": "fabace6f234db2f75a6aae10fb0530304f5cd6ec7858cf74d493374736054767",
+      "mode": "0o644"
+    }
+  },
+  "localRebuilds": {
+    "helperSha256": "5e87a67ec4f409ad8bd8ecc6f321335f0b521fe14c835d8cf9dabf9f195f97b6",
+    "pillow": "11.3.0",
+    "libwebp": "1.5.0",
+    "outputs": {
+      "localization/work/current-probe-game.webp": {
+        "source": "localization/work/probe-game.png",
+        "sourceSha256": "92f15a78ba92aac2e10567859ba4fed501009d72ec021081998889dec38477d8",
+        "bytes": 88880,
+        "sha256": "632505b6fa262a0383fd66509563488326d8e165f7a8a2ec312366fcaa642790",
+        "mode": "0o644"
+      },
+      "localization/work/current-probe-step.webp": {
+        "source": "localization/work/probe-step.png",
+        "sourceSha256": "c0b51f710fcfa5f2f4ba4a8427a3e00f3422deeaa502b91a1e91363da0037725",
+        "bytes": 82440,
+        "sha256": "157405ffcac8030b962309fd3cd018e8939e5acdcdb5100b4aa2b34e9e454359",
+        "mode": "0o644"
+      },
+      "localization/work/probe-window.webp": {
+        "source": "localization/work/probe-window.png",
+        "sourceSha256": "1137a2c162c94fd00f8ff6f286351af86d7e6d6d18bf4aba28c01047d3770579",
+        "bytes": 93040,
+        "sha256": "65563543491ee8eae6f15153533caa67adf725217f67dfe42f458ef578b5fdaa",
+        "mode": "0o644"
+      },
+      "localization/work/probe-window2.webp": {
+        "source": "localization/work/probe-window2.png",
+        "sourceSha256": "8e2159c5bf3308c2cdd9f2115e256d194dc7607d8002717d872847ffbe18a7a2",
+        "bytes": 105892,
+        "sha256": "3850281af3023adf8568ccd078ff78aa095e2a26ce3feada31b23ba895412d2c",
+        "mode": "0o644"
+      },
+      "localization/work/transition-builder-20261109.8zft9T/conrad-after-load.webp": {
+        "source": "localization/work/transition-builder-20261109.8zft9T/conrad-after-load.png",
+        "sourceSha256": "63b3ed5ccaf3e61d2d3e9ade314af216990b3dc22deb408a412502a78f3c2481",
+        "bytes": 17440,
+        "sha256": "8bba4245fd715e2d2f5c0baf7d5ed83d5fbbe0a7fdcf6578a32c682b5304ca2c",
+        "mode": "0o644"
+      },
+      "localization/work/transition-builder-20261109.8zft9T/menu.webp": {
+        "source": "localization/work/transition-builder-20261109.8zft9T/menu.png",
+        "sourceSha256": "d3c1c6d184de01a61565de42ea850771a470bd6a2a2af86f1b921218b6cefb2d",
+        "bytes": 108842,
+        "sha256": "df7b1bb052ee01bde379b90b80b68ce4bf2ea4d0f65c7adcdc0b8afe99a7a5dc",
+        "mode": "0o644"
+      }
+    }
+  },
+  "archiveRebuilds": {
+    "helperSha256": "5e87a67ec4f409ad8bd8ecc6f321335f0b521fe14c835d8cf9dabf9f195f97b6",
+    "pillow": "13.0.0",
+    "libwebp": "1.6.0",
+    "archive": "Dragons-qa-copy-sources.zip",
+    "archiveSha256": "7df29ec0b31a51d2b50c23334c9cca53edae05f1f473078a56f227a619464d2a",
+    "outputs": {
+      "localization/work/ru-ryan-pilot.uptm5K/review/ru-02-ryan-choices.webp": {
+        "member": "images/756f5918b6dde20decc6950b5297f6fa878e25b3cddc235834a5a32012e71714.png",
+        "sourceSha256": "756f5918b6dde20decc6950b5297f6fa878e25b3cddc235834a5a32012e71714",
+        "bytes": 18520,
+        "sha256": "d1aaf672588d479901822fe9975bcf177ec38be1d62758a1a1d4097edbb81a1a",
+        "mode": "0o644"
+      },
+      "localization/work/ru-screenshot-pilot.JV4y1Y/review/ru-05-styled-dialogue.webp": {
+        "member": "images/f7ffb4dcfece29a8b190c2e4a68cdcb1203a865688fa0cb898e94b5438aad466.png",
+        "sourceSha256": "f7ffb4dcfece29a8b190c2e4a68cdcb1203a865688fa0cb898e94b5438aad466",
+        "bytes": 71666,
+        "sha256": "d3ad64ee8de4806bc1c65d2428fa989ee9e6770b839e0c98681cfca43ce8bbc8",
+        "mode": "0o644"
+      }
+    }
+  }
+}
