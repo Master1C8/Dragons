@@ -922,6 +922,74 @@ the verified stock platform files:
 The recovery check verified the original fingerprints of all twelve
 outputs and nine source files.
 
+The [early managed control receipt](localization/evidence/archival-early-managed-controls-20261111.json)
+pins two earlier synthetic speaker DLLs and one macOS disk-control DLL.
+It records the exact source ranges removed from the later patchers.
+Use the verified stock Managed directories, Mono.Cecil 0.11.6 and a
+fresh recovery directory:
+
+```sh
+python3.12 -B - "$macos_managed" "$windows_managed" "$mono_cecil" "$fresh_controls" <<'PY'
+import hashlib, json, subprocess, sys
+from pathlib import Path
+
+receipt = Path("localization/evidence/archival-early-managed-controls-20261111.json")
+spec = json.loads(receipt.read_text())
+macos, windows, cecil, destination = (Path(value).absolute() for value in sys.argv[1:])
+stock = {"macos": macos, "windows": windows}
+
+def digest(data):
+    return hashlib.sha256(data).hexdigest()
+
+assert subprocess.check_output(["dotnet", "--version"], text=True).strip() == spec["sdk"]
+assert digest(cecil.read_bytes()) == spec["monoCecilSha256"]
+mapping = Path(spec["mapping"]["path"]).resolve()
+assert digest(mapping.read_bytes()) == spec["mapping"]["sha256"]
+destination.mkdir()
+work = destination / "localization/work"
+work.mkdir(parents=True)
+
+def git_blob(oid, expected):
+    data = subprocess.check_output(["git", "cat-file", "blob", oid])
+    assert digest(data) == expected
+    return data
+
+tools = {}
+for tool, row in spec["tools"].items():
+    source = git_blob(row["sourceBlob"], row["sourceSha256"])
+    parts, cursor = [], 0
+    for start, end in row["remove"]:
+        assert cursor <= start < end <= len(source)
+        parts.append(source[cursor:start])
+        cursor = end
+    parts.append(source[cursor:])
+    restored = b"".join(parts)
+    assert digest(restored) == row["restoredSourceSha256"]
+    build = destination / tool
+    build.mkdir()
+    (build / "Program.cs").write_bytes(restored)
+    project = build / row["projectName"]
+    project.write_bytes(git_blob(row["projectBlob"], row["projectSha256"]))
+    subprocess.run(["dotnet", "build", str(project), "-c", "Release", "--nologo",
+                    "--disable-build-servers", "--ignore-failed-sources", "-p:NuGetAudit=false",
+                    f"-p:CecilPath={cecil}"], check=True)
+    tools[tool] = build / "bin/Release/net8.0" / (project.stem + ".dll")
+
+for row in spec["outputs"].values():
+    tool, platform = row["tool"], row["platform"]
+    output = work / row["member"]
+    args = ["dotnet", str(tools[tool]), platform, str(stock[platform] / row["input"])]
+    if tool == "speaker":
+        args.append(str(mapping))
+    subprocess.run([*args, str(output)], cwd=destination, check=True)
+    data = output.read_bytes()
+    assert len(data) == row["bytes"] and digest(data) == row["sha256"]
+    output.chmod(int(row["mode"], 8))
+PY
+```
+
+All three generated DLLs matched their historical bytes and modes.
+
 The [historical managed scan receipt](localization/evidence/archival-historical-managed-scan-outputs-20261111.json)
 pins 18 static reports for settings prefabs, presenter flow, Yarn and
 debug UI. For each scanner, use a separate empty build directory.

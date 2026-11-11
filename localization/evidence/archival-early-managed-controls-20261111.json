@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "sdk": "8.0.131",
+  "monoCecilSha256": "831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf",
+  "mapping": {
+    "path": "localization/tools/historical-managed-probes/speaker-map-synthetic-20261107.json",
+    "sha256": "af931e5cb6ce6ba739dd26d803fc9422b7024998416b8939cfebf482615f5edd"
+  },
+  "tools": {
+    "speaker": {
+      "sourceBlob": "971347bcc0b3b1efeb5913fef3b79d6b52677b12",
+      "sourceSha256": "d3fbda894f53fd250bfcfd9f98d1e0519ea75513e8fa0038e9dbaf6bc5d8490f",
+      "remove": [
+        [
+          3990,
+          4097
+        ],
+        [
+          7376,
+          7665
+        ],
+        [
+          12208,
+          12280
+        ]
+      ],
+      "restoredSourceSha256": "0048c4716c04fd92e7c2d53efd70928ee0bdd4063b57f2ad1695ae36fde70bf4",
+      "projectBlob": "b99f7aa8cd35ecdeabd42b9a7116c0c62626ffaf",
+      "projectSha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a",
+      "projectName": "speaker-line-probe.csproj"
+    },
+    "disk": {
+      "sourceBlob": "5e778a0e10aec21b8e7751371d24f081acb63b23",
+      "sourceSha256": "082f37124d5c26ec204f71d6b095171369da35de10e817f3aabc4418afb23b52",
+      "remove": [
+        [
+          1957,
+          2404
+        ]
+      ],
+      "restoredSourceSha256": "64d47635df65cf1d25d4e1e97f174825200f3a77367eaefeed1ca70002dba97f",
+      "projectBlob": "6ea4ef8d955e5aabce54e79b3f14bf9f90de181e",
+      "projectSha256": "4aaedc36db5be19f4978b7f4f70312f2e5c82530bdd260eb7f87d49735c4d990",
+      "projectName": "patcher.csproj"
+    }
+  },
+  "outputs": {
+    "localization/work/YarnSpeakerLineSyntheticMac-20261107.dll": {
+      "tool": "speaker",
+      "platform": "macos",
+      "input": "YarnSpinner.Unity.dll",
+      "member": "macos-v1.dll",
+      "bytes": 159744,
+      "sha256": "2217f6d1315b3dfe601df48f3559954550c9e9a1fbf34c5f69fa874e2a04935a",
+      "mode": "0o644"
+    },
+    "localization/work/YarnSpeakerLineSyntheticWindows-20261107.dll": {
+      "tool": "speaker",
+      "platform": "windows",
+      "input": "YarnSpinner.Unity.dll",
+      "member": "windows-v1.dll",
+      "bytes": 159744,
+      "sha256": "0fa8a095aae85d3aba1967cbf5a2b1d8ce9a05ce26ee108ac532b36f89b8d9b4",
+      "mode": "0o644"
+    },
+    "localization/work/stock-save-boundary-20261110.1eWIVW/macos-probe.dll": {
+      "tool": "disk",
+      "platform": "macos",
+      "input": "Assembly-CSharp.dll",
+      "member": "early-save-probe.dll",
+      "bytes": 433664,
+      "sha256": "005966c09d6105c241a04350dacbfd9dfb2c127ba877b11834aa2911fda3dd22",
+      "mode": "0o644"
+    }
+  }
+}
