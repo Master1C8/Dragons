@@ -1055,6 +1055,22 @@ python3.12 -B localization/restore_platform_locale_input.py \
 
 The check reproduced all 433 distinct inputs byte for byte.
 
+The [platform projection receipt](localization/evidence/archival-platform-input-projections-20261111.json.gz)
+records 190 earlier per-platform input selections. Use the same v42 inputs
+and locale catalog. The helper verifies each pinned Git translation, binds
+the selected entries to the catalog and restores their historical order
+and JSON formatting.
+
+```sh
+python3.12 -B localization/restore_platform_locale_projection.py \
+  localization/evidence/archival-platform-input-projections-20261111.json.gz \
+  "$recorded_path" --inventory "$shared_inventory" \
+  --yarn-scope "$paired_yarn_scope" --output "$fresh_input"
+```
+
+The recovery check matched the original bytes and file modes for all
+190 selections.
+
 The [Git review diff receipt](localization/evidence/archival-review-diffs-20261111.json.gz)
 records the before and after blobs for 105 historical staged review diffs.
 Restore a recorded path with the same Git checkout:

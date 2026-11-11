@@ -23,21 +23,25 @@ def load_catalog(inventory, scope):
     return paired_locale.catalog(entries, scope_data)
 
 
-def rebuild(row, builds, catalog):
-    revision = row['translationRevision']
+def load_translation(revision, digest, locale, catalog):
     if not re.fullmatch(r'[0-9a-f]{40}', revision):
         raise ValueError('Expected a full translation revision')
-    locale, platform = row['locale'], row['platform']
-    member = relative_path(row['member']).as_posix()
     blob = f'{revision}:localization/{locale}/translation.json'
     raw = subprocess.check_output(['git', '-C', str(CHECKOUT), 'show', blob])
-    if hashlib.sha256(raw).hexdigest() != row['translationSha256']:
+    if hashlib.sha256(raw).hexdigest() != digest:
         raise ValueError('Translation snapshot fingerprint mismatch')
     with tempfile.TemporaryDirectory() as temporary:
-        scratch = Path(temporary)
-        snapshot = scratch / 'translation.json'
+        snapshot = Path(temporary) / 'translation.json'
         snapshot.write_bytes(raw)
-        translations = paired_locale.read(snapshot, locale, package_inputs.YARN_SCOPE_SHA, catalog, complete=False)
+        return paired_locale.read(snapshot, locale, package_inputs.YARN_SCOPE_SHA, catalog, complete=False)
+
+
+def rebuild(row, builds, catalog):
+    locale, platform = row['locale'], row['platform']
+    member = relative_path(row['member']).as_posix()
+    translations = load_translation(row['translationRevision'], row['translationSha256'], locale, catalog)
+    with tempfile.TemporaryDirectory() as temporary:
+        scratch = Path(temporary)
         orders = {'catalog': catalog, 'translation': translations}
         rows = {}
         for key in orders[row['ordering']]:
