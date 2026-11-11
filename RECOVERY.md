@@ -1020,6 +1020,27 @@ Git blob or archive member. Use the pinned scene export, v42 inventory
 and v42 scope with the named exporter. All 16 restored files matched
 their original fingerprints.
 
+The [direct editorial export receipt](localization/evidence/archival-direct-editorial-exports-20261111.json)
+pins seven working reports for Italian and Brazilian Portuguese. Recreate
+the two worklists from the report rebuild receipt with no draft argument.
+In a disposable directory, place the worklists at their recorded paths.
+Restore the two translations and two Portuguese receipts with
+`git show "$revision:$path"`. Restore the independent Portuguese review
+from the cited technical evidence archive using its receipt. Verify all
+seven input hashes before running the export.
+
+```sh
+export_dir="$report_root/localization/work/direct-editorial-20261110"
+mkdir -p "$export_dir"
+cp localization/tools/historical-direct-editorial/export.py "$export_dir/"
+(cd "$report_root" && python3.12 -B localization/work/direct-editorial-20261110/export.py)
+```
+
+Verify each needed output's SHA-256 and apply its recorded mode. The check
+matched the seven reports and the original exporter byte for byte. For the
+two separate scanner project copies in `gitCopies`, run
+`git cat-file blob "$source"` and verify the resulting bytes.
+
 The [platform input receipt](localization/evidence/archival-platform-inputs-20261111.json.gz)
 pins 1,952 materialized dialogue, settings, UI and related JSON inputs.
 Restore v42 first and set `DRAGONS_SITE_LOCALES` to the canonical locale

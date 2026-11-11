@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "worklistBuilderRevision": "edd00fc6f434892c5d5fe2dc30d4dce215cac859",
+  "exporter": "localization/tools/historical-direct-editorial/export.py",
+  "inputs": [
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/worklist.json",
+      "revision": null,
+      "sha256": "692c32667546db79d51cab95d4894bb97f7f78b4fda0756465f90c0a5e6319d2"
+    },
+    {
+      "path": "localization/it/translation.json",
+      "revision": "6f65d89a8ffd7d15a409a7ae0b4b9771a6e78524",
+      "sha256": "b347c4d9f57495e052df3464829ecccafd2f4c6faccd3cf84d14eb9597f72cdb"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/worklist.json",
+      "revision": null,
+      "sha256": "4b161f5aa3c93d1023fa5cad77324dfa4907370713a7986f7528add12378dff1"
+    },
+    {
+      "path": "localization/pt-BR/translation.json",
+      "revision": "69a83db03429d8adc8bf128b43331541be81c4a2",
+      "sha256": "05565dea666e01a89e57c4fe32d83781783042c32b0d8b5f71d09a2d0253d901"
+    },
+    {
+      "path": "localization/pt-BR/receipts/author-audit-callers-delta.json",
+      "revision": "c6225f5bd7bea88746ea3eee08bfc946a7d94f76",
+      "sha256": "60baffadaf7c620ebdb7c286e81aca1a00d9184bd001c3ccdda11bc18d27d786"
+    },
+    {
+      "path": "localization/pt-BR/receipts/direct-file-adjudication.json",
+      "revision": "c6225f5bd7bea88746ea3eee08bfc946a7d94f76",
+      "sha256": "e5ec561b2e041c568f61faba6d27ee5015bdee9e109fe76acdefc0eb2adc5a6c"
+    },
+    {
+      "path": "localization/work/pt-BR-independent-alexander-20261110.iTEmV0/review.json",
+      "sourceReceipt": "archival-cited-technical-evidence-20261111.json.gz",
+      "sha256": "0749c09562e2672d9e88ad11c36db5fe2011991d4ca119acfa5ca8e26da83193"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "localization/work/direct-editorial-20261110/export.py",
+      "bytes": 2663,
+      "mode": "0o644",
+      "sha256": "bb2de0886fa49f756504f83c19443979e9c17d0885daf6eb7d51217aa909c2ae"
+    },
+    {
+      "path": "localization/work/direct-editorial-20261110/it-ids.json",
+      "bytes": 47260,
+      "mode": "0o644",
+      "sha256": "8429d22580db4676aa7da0de728a6c6d05fdcb8690e9437f200fde5ef3d48335"
+    },
+    {
+      "path": "localization/work/direct-editorial-20261110/it-rows.json",
+      "bytes": 402215,
+      "mode": "0o644",
+      "sha256": "e3ba4f2efdf9d62a6c026a543bacc95f0c5855a9d858721b967b45e57856f75d"
+    },
+    {
+      "path": "localization/work/direct-editorial-20261110/it.txt",
+      "bytes": 140743,
+      "mode": "0o644",
+      "sha256": "7f2af6bdfe4accfc5d587e9926b85084e28087f6184d6e347454fccbaab187d4"
+    },
+    {
+      "path": "localization/work/direct-editorial-20261110/pt-BR-pending-ids.json",
+      "bytes": 20231,
+      "mode": "0o644",
+      "sha256": "1085f3f126990880ed624bed17f3257922dd7e470e86d9e6307460cb0edb12a7"
+    },
+    {
+      "path": "localization/work/direct-editorial-20261110/pt-BR-pending.txt",
+      "bytes": 59136,
+      "mode": "0o644",
+      "sha256": "d3d5488ec874d9330daf1138f3e0eceb247e0af018bf5fac19ce3da66bd70571"
+    },
+    {
+      "path": "localization/work/direct-editorial-20261110/pt-BR-rows.json",
+      "bytes": 401843,
+      "mode": "0o644",
+      "sha256": "59555d277d5138f49ae2cea7d00704e7579a6028428d57aa875344712359fb71"
+    },
+    {
+      "path": "localization/work/direct-editorial-20261110/pt-BR.txt",
+      "bytes": 140369,
+      "mode": "0o644",
+      "sha256": "583801e160df17181327436db6db00dcab87a32516aea38711c5d01b3c60ca6b"
+    }
+  ],
+  "gitCopies": [
+    {
+      "path": "localization/work/conrad-exit-save-20261110.OCKyMV/level-il/scan.csproj",
+      "bytes": 363,
+      "mode": "0o644",
+      "sha256": "bb1b2787363a805b10709ab57fbde08f55c2207ca1e2de3908968d7e0f528674",
+      "root": "git",
+      "source": "14f97234506095f1fcdceb3e89bc89f33ed0e1d2"
+    },
+    {
+      "path": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/command-scan/scan.csproj",
+      "bytes": 363,
+      "mode": "0o644",
+      "sha256": "bb1b2787363a805b10709ab57fbde08f55c2207ca1e2de3908968d7e0f528674",
+      "root": "git",
+      "source": "14f97234506095f1fcdceb3e89bc89f33ed0e1d2"
+    }
+  ]
+}
