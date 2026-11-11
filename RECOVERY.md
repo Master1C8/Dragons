@@ -929,6 +929,18 @@ lists blank bundle signature and .NET reference directories left after
 their files were archived or rebuilt. Recreate the recorded path with
 `mkdir -p` and apply its listed mode if a historical fixture needs it.
 All 537 paths were recreated and verified empty before cleanup.
+
+The [.NET generated metadata receipt](localization/evidence/archival-dotnet-generated-metadata-20261111.json.gz)
+lists NuGet restore graphs, generated imports and MSBuild intermediate
+metadata for 419 historical projects. Recover the project descriptor from
+its recorded Git blob or checkout path and use the corresponding project
+sources and dependency pins. Build with .NET SDK 8.0.131 in the needed
+configuration. Supply the pinned stock Managed directory as `GameManaged`
+for projects that require it. Builds of the two named projects from an
+export without intermediates regenerated the listed file types in Debug
+and Release. Paths embedded in the new files reflect the current build
+location. One historical project was excluded because its resolved and
+declared dependencies differed.
 To recreate the historical counter snapshot, point the restore tool at the
 original read-only Codex journal directory or an exact copy:
 
