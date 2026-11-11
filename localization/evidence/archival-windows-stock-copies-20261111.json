@@ -2,7 +2,7 @@
   "platform": "windows",
   "gameVersion": "9/9/2026_ee944596",
   "verification": "Every selected local copy and a fresh restored copy of each stock asset matched SHA-256. Paths are disposable runtime test locations.",
-  "logicalBytes": 13495018080,
+  "logicalBytes": 17700684456,
   "files": {
     "sharedassets4.assets.resS": {
       "sha256": "aabbe4c5cd3501a52c3c58a135ea970fab977a36a4dbc4c8e5386273e6bfb365",
@@ -107,6 +107,50 @@
         {
           "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets4.assets.resS",
           "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-repaired-control/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-original-control/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win-retry/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-localized/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-run/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-stock/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
         }
       ]
     },
@@ -173,6 +217,22 @@
         {
           "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets1.resource",
           "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-repaired-control/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-original-control/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-stock/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
         }
       ]
     },
@@ -238,6 +298,22 @@
         },
         {
           "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-repaired-control/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-original-control/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-stock/DragNWash_Data/sharedassets1.assets.resS",
           "mode": "0o644"
         }
       ]
@@ -345,6 +421,50 @@
         {
           "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets2.assets.resS",
           "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-repaired-control/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-original-control/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win-retry/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-localized/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-run/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-stock/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
         }
       ]
     },
@@ -451,6 +571,50 @@
         {
           "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets5.assets",
           "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-repaired-control/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-original-control/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win-retry/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-localized/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-run/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-stock/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
         }
       ]
     },
@@ -520,6 +684,22 @@
         },
         {
           "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-repaired-control/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-original-control/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-stock/DragNWash_Data/sharedassets0.assets.resS",
           "mode": "0o644"
         }
       ]
@@ -635,6 +815,54 @@
         {
           "path": "localization/work/cjk-fallback-20261110.BAc1J4/ja/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
           "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-repaired-control/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-original-control/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win-retry/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-localized/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-run/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-stock/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/european-text-paths-20261110.QddlnY/win-settings/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
         }
       ]
     },
@@ -701,6 +929,22 @@
         {
           "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets5.assets.resS",
           "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-repaired-control/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-original-control/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-stock/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
         }
       ]
     },
@@ -766,6 +1010,22 @@
         },
         {
           "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-repaired-control/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-original-control/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-stock/DragNWash_Data/sharedassets6.assets.resS",
           "mode": "0o644"
         }
       ]
@@ -872,6 +1132,50 @@
         },
         {
           "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-repaired-control/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-original-control/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win-retry/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-localized/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-run/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-stock/DragNWash_Data/sharedassets4.assets",
           "mode": "0o644"
         }
       ]
@@ -987,6 +1291,54 @@
         {
           "path": "localization/work/cjk-fallback-20261110.BAc1J4/ja/win/game/DragNWash_Data/globalgamemanagers.assets",
           "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-repaired-control/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-original-control/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win-retry/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-localized/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-run/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-stock/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/european-text-paths-20261110.QddlnY/win-settings/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
         }
       ]
     },
@@ -1053,6 +1405,22 @@
         {
           "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets3.assets.resS",
           "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-repaired-control/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-original-control/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-stock/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
         }
       ]
     },
@@ -1074,6 +1442,14 @@
         },
         {
           "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/sharedassets1.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/transition-builder-20261109.8zft9T/windows-original-control/DragNWash_Data/sharedassets1.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-stock/DragNWash_Data/sharedassets1.assets",
           "mode": "0o644"
         }
       ]

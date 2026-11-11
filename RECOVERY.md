@@ -115,6 +115,23 @@ as `--complex-layout` and `--complex-layout-sha`. Pass
 as `--complex-report-sha`. The builder checks that the archived shaping plan
 matches the exact release translation. Regenerate shaping plans for text edits.
 
+`localization/rebuild_release_packages.py` selects the correct recovered
+runtime, fonts and license for each locale. Build the three .NET tools in
+Release configuration into `managed-fallback`, `speaker-display-probe` and
+`prepared-text-probe` subdirectories of the directory passed as `--tools`.
+Set `DRAGONS_SITE_LOCALES` to the actual canonical locale catalog.
+
+```sh
+python3.12 localization/rebuild_release_packages.py windows ja \
+  --stock "$windows_stock_data" --accepted "$recovery/restored" \
+  --v42 "$recovery/v42-inputs" --fonts "$recovery/fonts" \
+  --tools "$tools_dir" --output "$recovery/DragNWash-ja.zip"
+```
+
+For macOS, use `macos`, the restored stock `.app` as `--stock` and a new `.app`
+path as `--output`. `--inputs` selects the preserved historical locale files
+when they are needed to reproduce older package metadata.
+
 For the exact Russian 0.2.1 package inputs, download
 `Dragons-ru-package-inputs.zip` from the same draft. Its SHA-256 is
 `0059dffe0b9b48f3010bf57aad56903b25ba8746637d5fe4f86f92b77dd1b413`.
