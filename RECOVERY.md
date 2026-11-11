@@ -1684,6 +1684,12 @@ the recorded parent directory if needed and use `install -m "${mode#0o}" /dev/nu
 with the recorded mode for a missing file. The check reproduced all
 170 empty files and matched their modes.
 
+The [retired launch lock receipt](localization/evidence/archival-retired-launch-locks-20261111.json.gz)
+records 130 empty lock files for historical macOS test apps whose
+executables were removed. The launcher creates its lock on demand. To
+restore a historical fixture, recreate the recorded empty file with
+`install -m 600 /dev/null "$lock_path"`. All files and modes matched.
+
 The [empty generated directory receipt](localization/evidence/archival-empty-generated-dirs-20261111.json.gz)
 lists blank bundle signature and .NET reference directories left after
 their files were archived or rebuilt. Recreate the recorded path with
