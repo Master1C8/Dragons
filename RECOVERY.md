@@ -82,6 +82,20 @@ The Windows stock Data directory was verified on the external CrossOver
 volume. Both game sources are owner's copies. The archive contains no
 game distribution.
 
+The [unsigned test executable receipt](localization/evidence/archival-unsigned-game-executable-20261111.json)
+records the two identical copies used in an earlier macOS package comparison.
+Verify the installed stock executable against the recorded input hash,
+copy it to a fresh path and remove the signature from the copy.
+
+```sh
+cp -p "$macos_stock_app/Contents/MacOS/DragNWash" "$fresh_executable"
+codesign --remove-signature "$fresh_executable"
+lipo -archs "$fresh_executable"
+```
+
+Verify the output size, SHA-256, mode and architectures. The restored
+executable matched both historical copies byte for byte.
+
 ## Restore the v42 translation build inputs
 
 Both released platform inventories use the same v42 source inventory and

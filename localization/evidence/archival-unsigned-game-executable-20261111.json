@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "stockMember": "Contents/MacOS/DragNWash",
+  "stockSha256": "9cb8364c0e657a204f4fc452c3c9a59d200ce17047ad41cf52f3a986c31ff8d2",
+  "outputSha256": "9fb8ccf9c4a4a14263dc952ffd087d36ffde478404cedc998e1811958302a75a",
+  "outputBytes": 115528,
+  "outputMode": "0o755",
+  "architectures": ["x86_64", "arm64"],
+  "outputs": [
+    "localization/work/de-32091d1-packages-20261110.ubuZNO/previous-unsigned-executable",
+    "localization/work/de-32091d1-packages-20261110.ubuZNO/revised-unsigned-executable"
+  ]
+}
