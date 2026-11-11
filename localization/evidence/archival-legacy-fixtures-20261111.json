@@ -1,0 +1,572 @@
+{
+  "schema": 1,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-legacy-fixture-inputs.zip",
+  "archiveSha256": "617d09efe2eb10dfe4de96920e6fd5bf0c0bd32d9b11a8d64cd49f6173689ef4",
+  "archiveMembers": {
+    "installer/Dragons Installer.exe": "5c89ecde6bc315211ec1cb40159e379c833a838a406b2614070140eeac401547",
+    "companion/live-Dragons.BackgroundInputProbe.dll": "9828ebdb61862a191c54172e5d83fe05f9e4166fce80a7c694125fae9266ad4b",
+    "windowed/ar-globalgamemanagers.zst": "9d712d54bf3628bd21a97d8a5d6e56456316c6704db3ce7d4ee4385abfdef6be",
+    "companion/windowed-Dragons.BackgroundInputProbe.dll": "46cbf194384d43a69133cce6cc6868565f1770a9d3f7b9d203e72d463c7fc1b4",
+    "windowed/control-globalgamemanagers.zst": "368f75e5bae163533c39e58e5bd72ab63fe10bc04ade78300c9728e0e85b54eb",
+    "windowed/fa-globalgamemanagers.zst": "e43e6e98d402161df5caa9b3792261fbdfb3917b45be9bca7ebf04785245de40",
+    "windowed/he-globalgamemanagers.zst": "bce243974788dfd29edd9e0c7f0247981a5efbe411867e00ac7f8db13c18a535",
+    "windowed/hi-globalgamemanagers.zst": "82e2ff3a9f08b9e9291bfcd1886ed2115667d7ab7ddb56873dc64b3426d5fb9a",
+    "windowed/th-globalgamemanagers.zst": "40202bd1c288d261862320938e46489097380c3079551881131ac9037a1c4a7c"
+  },
+  "patches": {
+    "windowed/ar-globalgamemanagers": {
+      "archiveMember": "windowed/ar-globalgamemanagers.zst",
+      "patchSha256": "9d712d54bf3628bd21a97d8a5d6e56456316c6704db3ce7d4ee4385abfdef6be",
+      "baseSha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+      "sha256": "51a55865935ea706690122316d467e90a124c9c7a5acf23a82a7082c61f266d5",
+      "bytes": 223144
+    },
+    "windowed/control-globalgamemanagers": {
+      "archiveMember": "windowed/control-globalgamemanagers.zst",
+      "patchSha256": "368f75e5bae163533c39e58e5bd72ab63fe10bc04ade78300c9728e0e85b54eb",
+      "baseSha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+      "sha256": "65f18001458d502cfaf0c9be09dfb880b5ae3fbc3e4679b3335456a1d0d39656",
+      "bytes": 223144
+    },
+    "windowed/fa-globalgamemanagers": {
+      "archiveMember": "windowed/fa-globalgamemanagers.zst",
+      "patchSha256": "e43e6e98d402161df5caa9b3792261fbdfb3917b45be9bca7ebf04785245de40",
+      "baseSha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+      "sha256": "e2214ff2aff488e6235c924cbd93b97ff68a258422cd8305fbffb13f4ed2357f",
+      "bytes": 223144
+    },
+    "windowed/he-globalgamemanagers": {
+      "archiveMember": "windowed/he-globalgamemanagers.zst",
+      "patchSha256": "bce243974788dfd29edd9e0c7f0247981a5efbe411867e00ac7f8db13c18a535",
+      "baseSha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+      "sha256": "8219bd2c142682399e37a7f6fa354034ddbb73bf09b1053be37fcf56e5eac016",
+      "bytes": 223144
+    },
+    "windowed/hi-globalgamemanagers": {
+      "archiveMember": "windowed/hi-globalgamemanagers.zst",
+      "patchSha256": "82e2ff3a9f08b9e9291bfcd1886ed2115667d7ab7ddb56873dc64b3426d5fb9a",
+      "baseSha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+      "sha256": "6d02e8fe30ed10eacd8dae0941cafb67e46a846a858efd40ad3c31c19679d5ed",
+      "bytes": 223144
+    },
+    "windowed/th-globalgamemanagers": {
+      "archiveMember": "windowed/th-globalgamemanagers.zst",
+      "patchSha256": "40202bd1c288d261862320938e46489097380c3079551881131ac9037a1c4a7c",
+      "baseSha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+      "sha256": "379af956d8ddb5c980ac7a6ab49c374f30ea432bccd2db5fcf583071dfcace3c",
+      "bytes": 223144
+    }
+  },
+  "outputs": [
+    {
+      "path": "localization/work/parallels-renderer.sUgfkk/ar/windowed.zip",
+      "sha256": "5f88ae30ba7c2d3e88b4a0dc1d40241e8c1667135e0c32a3072ae7d5de702c75",
+      "mode": "0o644",
+      "bytes": 239878,
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223144,
+          "sha256": "51a55865935ea706690122316d467e90a124c9c7a5acf23a82a7082c61f266d5",
+          "source": {
+            "root": "components",
+            "path": "windowed/ar-globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            31,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.BackgroundInputProbe.dll",
+          "size": 16384,
+          "sha256": "46cbf194384d43a69133cce6cc6868565f1770a9d3f7b9d203e72d463c7fc1b4",
+          "source": {
+            "root": "components",
+            "path": "companion/windowed-Dragons.BackgroundInputProbe.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            31,
+            28
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "path": "localization/work/parallels-renderer.sUgfkk/control/windowed.zip",
+      "sha256": "2a3e4f96997c302d059778f9a081c357e3e61c96095874c93d138e89aedfbb18",
+      "mode": "0o644",
+      "bytes": 239878,
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223144,
+          "sha256": "65f18001458d502cfaf0c9be09dfb880b5ae3fbc3e4679b3335456a1d0d39656",
+          "source": {
+            "root": "components",
+            "path": "windowed/control-globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            31,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.BackgroundInputProbe.dll",
+          "size": 16384,
+          "sha256": "46cbf194384d43a69133cce6cc6868565f1770a9d3f7b9d203e72d463c7fc1b4",
+          "source": {
+            "root": "components",
+            "path": "companion/windowed-Dragons.BackgroundInputProbe.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            31,
+            28
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "path": "localization/work/parallels-renderer.sUgfkk/fa/windowed.zip",
+      "sha256": "4407cf70eea5624e05c0ad493df1514aebdfd1f60d131b26c7478bd9d33e2814",
+      "mode": "0o644",
+      "bytes": 239878,
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223144,
+          "sha256": "e2214ff2aff488e6235c924cbd93b97ff68a258422cd8305fbffb13f4ed2357f",
+          "source": {
+            "root": "components",
+            "path": "windowed/fa-globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            31,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.BackgroundInputProbe.dll",
+          "size": 16384,
+          "sha256": "46cbf194384d43a69133cce6cc6868565f1770a9d3f7b9d203e72d463c7fc1b4",
+          "source": {
+            "root": "components",
+            "path": "companion/windowed-Dragons.BackgroundInputProbe.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            31,
+            28
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "path": "localization/work/parallels-renderer.sUgfkk/he/windowed.zip",
+      "sha256": "179e7a7ee6359359111eee0916f9c44bb1d96d4a69c084fc37bd7e0192f4c855",
+      "mode": "0o644",
+      "bytes": 239878,
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223144,
+          "sha256": "8219bd2c142682399e37a7f6fa354034ddbb73bf09b1053be37fcf56e5eac016",
+          "source": {
+            "root": "components",
+            "path": "windowed/he-globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            31,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.BackgroundInputProbe.dll",
+          "size": 16384,
+          "sha256": "46cbf194384d43a69133cce6cc6868565f1770a9d3f7b9d203e72d463c7fc1b4",
+          "source": {
+            "root": "components",
+            "path": "companion/windowed-Dragons.BackgroundInputProbe.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            31,
+            28
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "path": "localization/work/parallels-renderer.sUgfkk/hi/windowed.zip",
+      "sha256": "b6896aef8ed72559aa11d6153bb9c24c8fcd6b88b4d0f4c484e65c3623927679",
+      "mode": "0o644",
+      "bytes": 239878,
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223144,
+          "sha256": "6d02e8fe30ed10eacd8dae0941cafb67e46a846a858efd40ad3c31c19679d5ed",
+          "source": {
+            "root": "components",
+            "path": "windowed/hi-globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            31,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.BackgroundInputProbe.dll",
+          "size": 16384,
+          "sha256": "46cbf194384d43a69133cce6cc6868565f1770a9d3f7b9d203e72d463c7fc1b4",
+          "source": {
+            "root": "components",
+            "path": "companion/windowed-Dragons.BackgroundInputProbe.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            31,
+            28
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "path": "localization/work/parallels-renderer.sUgfkk/th/windowed.zip",
+      "sha256": "f090a4f14ab49e71052f89bdb129900cc3a090c201ce3752c74e7deec8a84456",
+      "mode": "0o644",
+      "bytes": 239878,
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223144,
+          "sha256": "379af956d8ddb5c980ac7a6ab49c374f30ea432bccd2db5fcf583071dfcace3c",
+          "source": {
+            "root": "components",
+            "path": "windowed/th-globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            31,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.BackgroundInputProbe.dll",
+          "size": 16384,
+          "sha256": "46cbf194384d43a69133cce6cc6868565f1770a9d3f7b9d203e72d463c7fc1b4",
+          "source": {
+            "root": "components",
+            "path": "companion/windowed-Dragons.BackgroundInputProbe.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            31,
+            28
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    }
+  ],
+  "companion": {
+    "path": "localization/work/live-renderer.O43vkv/companion/batch-bin/Dragons.BackgroundInputProbe.dll",
+    "sha256": "9828ebdb61862a191c54172e5d83fe05f9e4166fce80a7c694125fae9266ad4b",
+    "mode": "0o644",
+    "bytes": 16384,
+    "archiveMember": "companion/live-Dragons.BackgroundInputProbe.dll"
+  },
+  "obsoleteInstallers": {
+    "archives": {
+      "Dragons-macOS.zip": {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons-macOS.zip",
+        "sha256": "83e6822be9b5f85a484fbdd19def92f934adb6f69b28f8295e854a533e8a3533",
+        "bytes": 5085525,
+        "mode": "0o644",
+        "memberCount": 197,
+        "locales": [
+          "ar",
+          "fa",
+          "he",
+          "th",
+          "hi"
+        ],
+        "packageConfigSha256": "bdd2c44d4da3d304b93d01451eded612cc7cf9b1df9f4fe288ce17ac68b34e82"
+      },
+      "Dragons-Windows.zip": {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons-Windows.zip",
+        "sha256": "ddbe79675d96210d0300f02c7e60f0b48e9d027d59d3431e34aa26ee1adc184e",
+        "bytes": 4301592,
+        "mode": "0o644",
+        "memberCount": 82,
+        "locales": [
+          "ar",
+          "fa",
+          "he",
+          "th",
+          "hi"
+        ],
+        "packageConfigSha256": "fc323a95ad49f56e481dd659a2a688fd55ba22013e110d447bb0460f317e01c0"
+      }
+    },
+    "copies": [
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons Windows/install.ps1",
+        "sha256": "a9f8428a95839cc069a688446b4aa3d924afc21950dacf60e7cc00b4a977aa92",
+        "bytes": 23564,
+        "mode": "0o644",
+        "originalArchive": "Dragons-Windows.zip",
+        "originalMember": "Dragons Windows/install.ps1"
+      },
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons Windows/Resources/PackageConfig.json",
+        "sha256": "fc323a95ad49f56e481dd659a2a688fd55ba22013e110d447bb0460f317e01c0",
+        "bytes": 38530,
+        "mode": "0o644",
+        "originalArchive": "Dragons-Windows.zip",
+        "originalMember": "Dragons Windows/Resources/PackageConfig.json"
+      },
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons Windows/Resources/LocalizationPayload/Deltas/c8ce3f2e8f52-4bb6bdd270bbfa3b7d354a8f520653b9bb0f2a93922e01dd28bf64d8b59a8910.vcdiff",
+        "sha256": "b4cf04df01d9da1aa74adc3c0f367edee4a8f5452575af10d0c03909860b1567",
+        "bytes": 102215,
+        "mode": "0o644",
+        "originalArchive": "Dragons-Windows.zip",
+        "originalMember": "Dragons Windows/Resources/LocalizationPayload/Deltas/c8ce3f2e8f52-4bb6bdd270bbfa3b7d354a8f520653b9bb0f2a93922e01dd28bf64d8b59a8910.vcdiff"
+      },
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons Windows/Resources/LocalizationPayload/Deltas/aff0c9a7b017-d57a3c01921894be31846302a8b187533e72fbc5c9b341f8098924db55d878e5.vcdiff",
+        "sha256": "ca8c852b01695067a574b36a2c927e1b776592989b75ec576684c19e95faabe2",
+        "bytes": 120012,
+        "mode": "0o644",
+        "originalArchive": "Dragons-Windows.zip",
+        "originalMember": "Dragons Windows/Resources/LocalizationPayload/Deltas/aff0c9a7b017-d57a3c01921894be31846302a8b187533e72fbc5c9b341f8098924db55d878e5.vcdiff"
+      },
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons Windows/Resources/LocalizationPayload/Deltas/c8ce3f2e8f52-86572b53626c8409c0bd450dc662bb37b027796394401f5dedf2348294fcc903.vcdiff",
+        "sha256": "9f6c20a953deb7670a05dde4a3b52ea77e9df4dd1b0b1a962135079bb670489d",
+        "bytes": 103104,
+        "mode": "0o644",
+        "originalArchive": "Dragons-Windows.zip",
+        "originalMember": "Dragons Windows/Resources/LocalizationPayload/Deltas/c8ce3f2e8f52-86572b53626c8409c0bd450dc662bb37b027796394401f5dedf2348294fcc903.vcdiff"
+      },
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons Windows/Resources/LocalizationPayload/Deltas/aff0c9a7b017-a471f027ab91b8d6e9b80ea97f5a3a1ae657b25d348a339768166466a0990c4c.vcdiff",
+        "sha256": "f3d67c6a30e2606e10adf844ec0620e3d7e2f74dae836afe1b5b37e24e7d7713",
+        "bytes": 121410,
+        "mode": "0o644",
+        "originalArchive": "Dragons-Windows.zip",
+        "originalMember": "Dragons Windows/Resources/LocalizationPayload/Deltas/aff0c9a7b017-a471f027ab91b8d6e9b80ea97f5a3a1ae657b25d348a339768166466a0990c4c.vcdiff"
+      },
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons Windows/Resources/LocalizationPayload/Deltas/aff0c9a7b017-f214ad001afd310945193529f27a6f648c00f1ecf8c2b703ea6eac1286296982.vcdiff",
+        "sha256": "9ca2a5056f7d1199f8d64882d64052a62a658cd698b8fcd0f5262464dfd1d7a3",
+        "bytes": 117411,
+        "mode": "0o644",
+        "originalArchive": "Dragons-Windows.zip",
+        "originalMember": "Dragons Windows/Resources/LocalizationPayload/Deltas/aff0c9a7b017-f214ad001afd310945193529f27a6f648c00f1ecf8c2b703ea6eac1286296982.vcdiff"
+      },
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons \u2014 VN Revival.app/Contents/MacOS/DragonsInstaller",
+        "sha256": "82bd808011545d4d10ef8f18864108f8a68c92739acb0af06caf9b6afb731d2a",
+        "bytes": 1219312,
+        "mode": "0o755",
+        "originalArchive": "Dragons-macOS.zip",
+        "originalMember": "Dragons \u2014 VN Revival.app/Contents/MacOS/DragonsInstaller"
+      },
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/PackageConfig.json",
+        "sha256": "bdd2c44d4da3d304b93d01451eded612cc7cf9b1df9f4fe288ce17ac68b34e82",
+        "bytes": 38531,
+        "mode": "0o644",
+        "originalArchive": "Dragons-macOS.zip",
+        "originalMember": "Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/PackageConfig.json"
+      },
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/40713b00ce12-21fe4067545d3712f32d692832102c6968ca9cd9afc522da2ddab3e3832e0070.vcdiff",
+        "sha256": "51f7c8fc4cb875889b80cdd4d107e765d9030d2e52632cf866da4702f06dd591",
+        "bytes": 102811,
+        "mode": "0o644",
+        "originalArchive": "Dragons-macOS.zip",
+        "originalMember": "Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/40713b00ce12-21fe4067545d3712f32d692832102c6968ca9cd9afc522da2ddab3e3832e0070.vcdiff"
+      },
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/f8c5c51ac1b0-1ae1062b6fc166c61171d1d74d7cc6a4e96791643237d480babaa84ca1be62dd.vcdiff",
+        "sha256": "3d5f304f69aa966bb80bcb4add205d7d97232a2fca99313b7fcf01ee09dd9217",
+        "bytes": 118871,
+        "mode": "0o644",
+        "originalArchive": "Dragons-macOS.zip",
+        "originalMember": "Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/f8c5c51ac1b0-1ae1062b6fc166c61171d1d74d7cc6a4e96791643237d480babaa84ca1be62dd.vcdiff"
+      },
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/f8c5c51ac1b0-06da70f6b9a397a4be79024a6c8325600a51d709cf562ea0c2328b35f0fd3488.vcdiff",
+        "sha256": "5daad8ce6b486d74f119512c9a79878d0ebad2641870ffb3a1468fc48f753dcc",
+        "bytes": 121456,
+        "mode": "0o644",
+        "originalArchive": "Dragons-macOS.zip",
+        "originalMember": "Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/f8c5c51ac1b0-06da70f6b9a397a4be79024a6c8325600a51d709cf562ea0c2328b35f0fd3488.vcdiff"
+      },
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/40713b00ce12-5cfc1c7fd91e2fae944f88008b9377b3e232abc65b4fd25d8bd129a736a0a6d5.vcdiff",
+        "sha256": "e3fde9ec10395a76d3383cff20f86066b313b5f2770a628452e4afd2a6915877",
+        "bytes": 101922,
+        "mode": "0o644",
+        "originalArchive": "Dragons-macOS.zip",
+        "originalMember": "Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/40713b00ce12-5cfc1c7fd91e2fae944f88008b9377b3e232abc65b4fd25d8bd129a736a0a6d5.vcdiff"
+      },
+      {
+        "path": "localization/work/installer-all.Yykv0u/previous-dist/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/f8c5c51ac1b0-5ad9c1ff41b89de40152820b6a9b1d7585de227c10bb5748f464efb31c959100.vcdiff",
+        "sha256": "4375393b770eac75efc35e987d6d38676e1a01086aa667643a2d6fb8e9fa0fab",
+        "bytes": 122925,
+        "mode": "0o644",
+        "originalArchive": "Dragons-macOS.zip",
+        "originalMember": "Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/f8c5c51ac1b0-5ad9c1ff41b89de40152820b6a9b1d7585de227c10bb5748f464efb31c959100.vcdiff"
+      }
+    ],
+    "dependency": {
+      "receipt": "archival-stock-and-zip-members-20261111.json.gz",
+      "historicalZip": "localization/work/installer-all.Yykv0u/previous-dist/Dragons-Windows.zip",
+      "originalMember": "Dragons Windows/Dragons Installer.exe",
+      "sha256": "5c89ecde6bc315211ec1cb40159e379c833a838a406b2614070140eeac401547",
+      "archiveMember": "installer/Dragons Installer.exe"
+    },
+    "windowsScriptRevision": "5ef520bda89876ba9be9e5edabeef12e47a371cc",
+    "windowsScriptSha256": "a9f8428a95839cc069a688446b4aa3d924afc21950dacf60e7cc00b4a977aa92",
+    "replacement": "accepted 0.2.1 installers",
+    "verification": "Both historical ZIP integrity checks and the restored macOS signature passed. All surviving staged files matched their archive members."
+  },
+  "gameLaunched": false
+}

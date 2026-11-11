@@ -414,6 +414,8 @@ The [image copy receipt](localization/evidence/archival-image-copies-20261111.js
 maps duplicate historical screenshots and previews to retained files.
 Restore them with the same helper and the relevant probe path. The check
 restored and verified every duplicate by SHA-256 and mode.
+If the source is an accepted upload PNG, restore it first from the gallery
+source PNG archive described below.
 
 The [binary copy receipt](localization/evidence/archival-binary-copies-20261111.json.gz)
 maps historical executable and library copies to exact files in the stock
@@ -663,6 +665,15 @@ records the superseded build outputs. Its intermediate Windows installer
 script can be recreated by extracting the compressed patch and applying it to
 the Git blob named in the receipt. Compare the result to the recorded SHA-256.
 
+The [legacy fixture receipt](localization/evidence/archival-legacy-fixtures-20261111.json)
+records the retired five-language installer outputs and the exact Windows
+executable used by the stock and ZIP member receipt. Download the fixture
+input archive from the maintainer draft and check its SHA-256. Extract
+`installer/Dragons Installer.exe` and verify the recorded dependency hash.
+Restore it first if rebuilding the previous installer test directory. The
+old complete installers were superseded by the verified 0.2.1 archives.
+The previous Windows script is recoverable from the recorded Git revision.
+
 The [French test asset receipt](localization/evidence/archival-french-stock-20261111.json)
 records the stock references used by the original French compaction. The
 [French compaction receipt](localization/evidence/archival-french-compaction-20261111.json.gz)
@@ -709,6 +720,16 @@ The runtime control and isolated profile receipts cover instrumented
 assembly and PlayerSettings files. The Unity control and binary copy
 receipts cover the remaining archived asset and companion library paths.
 
+The legacy fixture input archive also stores the exact live-renderer
+companion DLL used by the older fixture ZIPs. Restore it to the path in
+`companion` and verify its hash before replaying those fixtures. For the
+six windowed Parallels ZIPs, extract the archive and verify its members.
+Decode each `patches` entry from stock Windows
+`DragNWash_Data/globalgamemanagers` into the specified component path,
+checking the base, patch and output hashes. Pass the resulting component
+directory and the legacy fixture receipt to `restore_fixture_zip.py`.
+All six rebuilt ZIPs matched their recorded SHA-256 values.
+
 The release card's visual delivery contains 150 published screenshot slots
 across 30 locales. The upload readback matched all 150 hosted files.
 
@@ -736,6 +757,14 @@ The helper verifies the private metadata and reconstructs the embedded
 image bytes from the matching published export. Its output matched the
 original capture log byte for byte.
 
+The [gallery source PNG receipt](localization/evidence/archival-gallery-source-pngs-20261111.json.gz)
+maps each accepted published slot to its original upload PNG. Download
+`Dragons-published-gallery-source-pngs.zip` from the maintainer draft and
+verify the archive SHA-256. Extract one member per source hash and verify
+its size and hash. Each `files` entry records the original upload path
+and mode. The archive contains 121 unique sources for the 150 accepted
+slots. Its members retain the original PNG bytes for future gallery edits.
+
 The [worklist and editorial report receipt](localization/evidence/archival-report-rebuilds-20261111.json.gz)
 records 75 exact authoring worklist copies and ten editorial report
 rebuilds. Use the commands in the [localization guide](localization/README.md)
@@ -748,6 +777,18 @@ revisions. Check both hashes. Extract `recipeArchiveMember` from the
 report input archive and `sceneMember` from the source inventory export
 archive. Verify the archive and member hashes. The rebuilt outputs preserve
 the original audit scope and report bytes.
+
+The [Git review diff receipt](localization/evidence/archival-review-diffs-20261111.json.gz)
+records the before and after blobs for 105 historical staged review diffs.
+Restore a recorded path with the same Git checkout:
+
+```sh
+python3.12 -B localization/restore_review_diff.py \
+  "$diff_receipt" "$recorded_path" --output "$fresh_diff"
+```
+
+The helper uses temporary comparison trees and verifies the original
+SHA-256. All input blobs are reachable from `main`.
 
 The [renderer acceptance index](localization/evidence/archival-renderer-acceptance-20261111.json)
 pins the static shaping, staged line break, paired runtime and Parallels
