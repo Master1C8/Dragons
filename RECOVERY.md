@@ -288,6 +288,8 @@ python3.12 -B localization/restore_archived_members.py \
 ```
 
 The recovery check restored 1,148 files and verified their SHA-256 and modes.
+If a ZIP source is listed in the historical locale package receipt below,
+rebuild the ZIP before restoring any member from it.
 
 The [Yarn test asset receipt](localization/evidence/archival-yarn-probes-20261111.json)
 records six synthetic missing-line assets. Restore a recorded path from the
@@ -302,6 +304,37 @@ python3.12 -B localization/restore_yarn_probe_asset.py \
 The check reproduced all six files byte for byte and verified that only the
 intended serialized object changed. Restore these sources first if the
 generated asset duplicate receipt points to one of them.
+
+The [historical locale package receipt](localization/evidence/archival-historical-locale-packages-20261111.json.gz)
+pins seven German, French and Polish test builds. Recover the translation
+from `localeSourceRevision` and check it against `localeInputSha256`. Use
+the builder at `builderRevision` with the recovered v42 inputs and the tools
+and speaker runtime named in the row. Verify their hashes before rebuilding.
+Use the restored stock app for macOS and the verified stock Data directory
+for Windows. Remove the empty `Contents/Resources/VNRevival` directory from
+the disposable macOS stock copy before building.
+
+```sh
+git show "$locale_source_revision:localization/$locale/translation.json" > "$historical_input"
+python3.12 -B "localization/build_${platform}_package.py" "$stock" "$historical_input" \
+  --locale "$locale" \
+  --inventory "$v42/combined-provisional-v42-20261110.json" \
+  --yarn-scope "$v42/yarn-scope-v42.json" \
+  --managed-tool "$managed_tool" --speaker-tool "$speaker_tool" \
+  --speaker-runtime "$speaker_runtime" --speaker-runtime-sha "$speaker_runtime_sha" \
+  --output "$fresh_output"
+```
+
+The five rebuilt Windows ZIPs matched the recorded SHA-256. The two rebuilt
+macOS bundles matched the recorded manifest and every surviving file and
+directory. Both passed strict code signature checks.
+
+The [Python environment receipt](localization/evidence/archival-python-environments-20261111.json)
+pins the Python versions and dependency lists for four retired CLI environments.
+Create a fresh venv with the listed Python and install those exact requirements
+with `pip install --no-deps`. The recovery check installed the dependencies
+and imported UnityPy, TypeTreeGeneratorAPI and fontTools. Its pinned
+`tpk_ar` wheel was built from the source distribution.
 
 The [German batch receipt](localization/evidence/archival-de-partial-20261111.json)
 and the [early German and French batch receipt](localization/evidence/archival-de-fr-early-20261111.json)
