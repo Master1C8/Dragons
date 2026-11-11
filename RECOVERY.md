@@ -1133,6 +1133,24 @@ matched the seven reports and the original exporter byte for byte. For the
 two separate scanner project copies in `gitCopies`, run
 `git cat-file blob "$source"` and verify the resulting bytes.
 
+The [Brazilian worklist readback receipt](localization/evidence/archival-brazilian-worklist-readbacks-20261111.json)
+pins three reports with draft fields. Rebuild the Brazilian Portuguese
+worklist without a draft using the recipe above. Download the receipt's
+compact metadata asset from the maintainer draft, then run:
+
+```sh
+python3.12 -B localization/restore_historical_worklist_readback.py \
+  localization/evidence/archival-brazilian-worklist-readbacks-20261111.json \
+  "$recorded_path" --baseline "$brazilian_worklist" \
+  --metadata "$readback_fields" --output "$fresh_report"
+```
+
+The helper checks the baseline and Git snapshot hashes. The metadata
+preserves the historical selection, original draft fingerprints and
+wording absent from Git. The downloaded data reproduced all three
+reports byte for byte. The fingerprints are report fields and do not
+provide the three original draft files.
+
 The [platform input receipt](localization/evidence/archival-platform-inputs-20261111.json.gz)
 pins 1,952 materialized dialogue, settings, UI and related JSON inputs.
 Restore v42 first and set `DRAGONS_SITE_LOCALES` to the canonical locale

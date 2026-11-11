@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "metadata": "Dragons-brazilian-worklist-readback-fields.json.gz",
+  "metadataSha256": "2897243eb74fabc3a92be1821dcf2d82741cebd6211f197deca1b460baba99d4",
+  "outputs": {
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-04/readback.json": {
+      "baselineSha256": "4b161f5aa3c93d1023fa5cad77324dfa4907370713a7986f7528add12378dff1",
+      "sha256": "c9e868dc6cf49073f51e3ed0bd7b54a37bc392c360aea28038fe4dcd6b87738b",
+      "bytes": 1328666,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-07/readback-ryan-2-outro.json": {
+      "baselineSha256": "4b161f5aa3c93d1023fa5cad77324dfa4907370713a7986f7528add12378dff1",
+      "sha256": "77a8105f255bf20d4c39c984323b25ca674fb041c9e8311fdc45a25de84a8584",
+      "bytes": 1358062,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-07/readback-ryan-3-outro-final.json": {
+      "baselineSha256": "4b161f5aa3c93d1023fa5cad77324dfa4907370713a7986f7528add12378dff1",
+      "sha256": "be4526bf607c8d68039d7a3493c4fe634133f9d1b1a17dc3849e1426a0702efa",
+      "bytes": 1363654,
+      "mode": "0o644"
+    }
+  }
+}
