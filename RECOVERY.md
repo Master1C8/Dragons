@@ -610,6 +610,48 @@ PY
 
 The check matched all four files byte for byte and verified their modes.
 
+The [package cleanup record index](localization/evidence/archival-package-cleanup-records-20261111.json.gz)
+preserves four historical Ukrainian and CJK cleanup records. Supply the
+original checkout path as text and a fresh recovery directory:
+
+```sh
+python3.12 - "$original_checkout" "$fresh_output" <<'PY'
+import gzip, hashlib, json, sys
+from pathlib import Path
+
+with gzip.open("localization/evidence/archival-package-cleanup-records-20261111.json.gz", "rt") as stream:
+    receipt = json.load(stream)
+checkout = Path(sys.argv[1])
+destination = Path(sys.argv[2])
+destination.mkdir()
+marker = receipt["checkoutMarker"]
+
+def expand(value):
+    if isinstance(value, dict):
+        return {key: expand(child) for key, child in value.items()}
+    if isinstance(value, list):
+        return [expand(child) for child in value]
+    if isinstance(value, str) and value.startswith(marker):
+        return str(checkout / value.removeprefix(marker))
+    return value
+
+for relative, row in receipt["outputs"].items():
+    value = expand(row["data"])
+    if row["format"] == "jsonl":
+        data = "".join(json.dumps(entry) + "\n" for entry in value).encode()
+    else:
+        data = json.dumps(value, indent=2).encode()
+    assert len(data) == row["bytes"] and hashlib.sha256(data).hexdigest() == row["sha256"]
+    output = destination / relative
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with output.open("xb") as stream:
+        stream.write(data)
+    output.chmod(int(row["mode"], 8))
+PY
+```
+
+All four restored records matched the original files and modes.
+
 The [Windows test skeleton receipt](localization/evidence/archival-windows-stock-stubs-20261111.json.gz)
 records 86 retired test trees. Each contained directories and a single
 empty stock `configs.app.ini` after the other game files were removed.
