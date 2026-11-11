@@ -222,6 +222,22 @@ and pass ICU when that entry calls for it. Verify the catalog, source
 archive and reference shaper fingerprints. The recovery check matched
 all 42 files from that recipe.
 
+The [earlier font staging receipt](localization/evidence/archival-font-staging-reports-20261111.json)
+pins the report and Thai display map from before Thai soft breaks, plus
+12 TextMeshPro patch reports. Export the receipt's Git revision into a
+disposable directory. For `prebreak`, verify the probe source and patch
+hashes, then apply the [historical source patch](localization/evidence/historical-font-prebreak.patch)
+with `patch -p1` from the exported checkout. Verify the projected source
+hash. Run the font probe above with `--ltr-corpus` and omit the ICU
+argument for this recipe. For `with-breaks`, use the unpatched source
+with `--ltr-corpus` and ICU 78.3.
+
+For `tmpPatch`, build the exported `prepared-text-probe` in Release with
+.NET SDK 8.0.131. Pass the verified platform stock `Unity.TextMeshPro.dll`,
+the generated locale `display-map.json` and a fresh DLL path. Capture
+stdout. Compare the report and DLL hashes and apply the reported file
+mode. All 14 files matched byte for byte.
+
 The [font and signature delta receipt](localization/evidence/archival-font-signature-deltas-20261111.json.gz)
 covers the earlier Persian font and two signed
 libraries from the renamed discovery fixture. Download the receipt's

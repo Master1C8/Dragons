@@ -1,0 +1,11 @@
+--- a/localization/probe_complex_fonts.py
++++ b/localization/probe_complex_fonts.py
+@@ -160,2 +159,0 @@
+-    if args.ltr_corpus and not split_thai:
+-        raise ValueError('Thai corpus preparation requires ICU 78 for soft line breaks')
+@@ -190,2 +187,0 @@
+-        if corpus_mappings and locale == 'th':
+-            preserve_thai_breaks(augmenter, split_thai)
+@@ -216,2 +211,0 @@
+-        item['softBreaks'] = sum(text.count('\u200b') - logical.count('\u200b')
+-                                 for logical, text in mappings.items())
