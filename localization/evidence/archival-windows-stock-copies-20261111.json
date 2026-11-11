@@ -1,0 +1,1082 @@
+{
+  "platform": "windows",
+  "gameVersion": "9/9/2026_ee944596",
+  "verification": "Every selected local copy and a fresh restored copy of each stock asset matched SHA-256. Paths are disposable runtime test locations.",
+  "logicalBytes": 13495018080,
+  "files": {
+    "sharedassets4.assets.resS": {
+      "sha256": "aabbe4c5cd3501a52c3c58a135ea970fab977a36a4dbc4c8e5386273e6bfb365",
+      "bytes": 24338576,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/win-retry/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win-retry/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/thai/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/aligned/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets4.assets.resS",
+          "mode": "0o644"
+        }
+      ]
+    },
+    "sharedassets1.resource": {
+      "sha256": "69c42882282a0f9ed62579ca232970fb5c2834b990e09b99a65aa37c1d11f871",
+      "bytes": 45492384,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/win-retry/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/thai/win/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/win/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/aligned/win/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets1.resource",
+          "mode": "0o644"
+        }
+      ]
+    },
+    "sharedassets1.assets.resS": {
+      "sha256": "83a3faf9904ee678a1d5bf2b18329ed181ea8490d05f4fe65bfbc94b44a0da6a",
+      "bytes": 345814768,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/win-retry/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/thai/win/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/win/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/aligned/win/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets1.assets.resS",
+          "mode": "0o644"
+        }
+      ]
+    },
+    "sharedassets2.assets.resS": {
+      "sha256": "f9c645c2dcb466beb560ea6d49075c899b5636e5b4ee5358c5434eae12aff19f",
+      "bytes": 16855648,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/win-retry/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win-retry/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/thai/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/aligned/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets2.assets.resS",
+          "mode": "0o644"
+        }
+      ]
+    },
+    "sharedassets5.assets": {
+      "sha256": "a95e106be4a3fe2438a7b12e43f14d3d5efa4ce0d32fc20209e634657587c2b9",
+      "bytes": 18395148,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/win-retry/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win-retry/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/thai/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/aligned/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets5.assets",
+          "mode": "0o644"
+        }
+      ]
+    },
+    "sharedassets0.assets.resS": {
+      "sha256": "6b51be2b6aef6aa37af190f034bdfa6ede953d4c81148c7c41284b8faaa158e2",
+      "bytes": 149597856,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/win-retry/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/thai/win/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/win/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/win/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/aligned/win/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets0.assets.resS",
+          "mode": "0o644"
+        }
+      ]
+    },
+    "globalgamemanagers.assets.resS": {
+      "sha256": "4bb13dfe0838d6db46af6b225881932fbb9ce22074c357eba77eb7477112b451",
+      "bytes": 16390352,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/win-retry/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win-retry/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/thai/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/aligned/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/european-text-paths-20261110.QddlnY/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-fallback-20261110.BAc1J4/ja/win/game/DragNWash_Data/globalgamemanagers.assets.resS",
+          "mode": "0o644"
+        }
+      ]
+    },
+    "sharedassets5.assets.resS": {
+      "sha256": "7395cfac039d4c091a2912940d9c66046919d928e77db7057e03cfdce1364723",
+      "bytes": 30191376,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/win-retry/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/thai/win/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/win/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/aligned/win/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets5.assets.resS",
+          "mode": "0o644"
+        }
+      ]
+    },
+    "sharedassets6.assets.resS": {
+      "sha256": "2c72b2cc86c7c26bd96d9e1eabe933eac3240b4377500a75ff526c02616ddd66",
+      "bytes": 39697104,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/win-retry/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/thai/win/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/win/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/aligned/win/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets6.assets.resS",
+          "mode": "0o644"
+        }
+      ]
+    },
+    "sharedassets4.assets": {
+      "sha256": "0d055aac49c3344a50e68632b197d6c5fce701a8236a55a90d620b38978b8681",
+      "bytes": 11067452,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/win-retry/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win-retry/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/thai/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/aligned/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets4.assets",
+          "mode": "0o644"
+        }
+      ]
+    },
+    "globalgamemanagers.assets": {
+      "sha256": "910358d16b824bfd4b8398fea8c0295b5660471bb13a6708655096097bb0f018",
+      "bytes": 33880472,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/win-retry/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win-retry/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/thai/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/aligned/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/european-text-paths-20261110.QddlnY/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-fallback-20261110.BAc1J4/ja/win/game/DragNWash_Data/globalgamemanagers.assets",
+          "mode": "0o644"
+        }
+      ]
+    },
+    "sharedassets3.assets.resS": {
+      "sha256": "e06c71c6df58b15ce21cac6affdad945514cdd3480c066c3c3d254b14b665e41",
+      "bytes": 42250016,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/win-retry/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/thai/win/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/win/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/aligned/win/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets3.assets.resS",
+          "mode": "0o644"
+        }
+      ]
+    },
+    "sharedassets1.assets": {
+      "sha256": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+      "bytes": 106508704,
+      "copies": [
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/thai/win/game/DragNWash_Data/sharedassets1.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/rtl-order-20261110.RoB8ak/win/game/DragNWash_Data/sharedassets1.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/cjk-append-20261110.9tdhZe/aligned/win/game/DragNWash_Data/sharedassets1.assets",
+          "mode": "0o644"
+        },
+        {
+          "path": "localization/work/multilingual-feasibility-20261110.L1v5Yf/win/game/DragNWash_Data/sharedassets1.assets",
+          "mode": "0o644"
+        }
+      ]
+    }
+  }
+}

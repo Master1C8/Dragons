@@ -1,0 +1,1338 @@
+{
+  "platform": "macos",
+  "gameVersion": "9/12/2026_a93aa21a",
+  "verification": "Every selected local copy and a fresh restored copy of each stock asset matched the pinned macOS stock manifest. Paths are disposable runtime test locations.",
+  "logicalBytes": 18717937584,
+  "files": {
+    "sharedassets4.assets.resS": {
+      "sha256": "aabbe4c5cd3501a52c3c58a135ea970fab977a36a4dbc4c8e5386273e6bfb365",
+      "bytes": 24338576,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/mac-retry/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-th.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-hi.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-hi-QRH1/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-th-QRT1/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets.resS",
+          "mode": "0o755"
+        }
+      ]
+    },
+    "sharedassets1.resource": {
+      "sha256": "69c42882282a0f9ed62579ca232970fb5c2834b990e09b99a65aa37c1d11f871",
+      "bytes": 45492384,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/mac-retry/LocaleProbe.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-th.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-hi.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-hi-QRH1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-th-QRT1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.resource",
+          "mode": "0o755"
+        }
+      ]
+    },
+    "sharedassets1.assets.resS": {
+      "sha256": "b70dba4f71b1ca144e994e1ee498205ccc724df7e4a48c92c521ed60c9628c25",
+      "bytes": 346158320,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/mac-retry/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-th.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-hi.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-hi-QRH1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-th-QRT1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets.resS",
+          "mode": "0o755"
+        }
+      ]
+    },
+    "sharedassets2.assets.resS": {
+      "sha256": "f9c645c2dcb466beb560ea6d49075c899b5636e5b4ee5358c5434eae12aff19f",
+      "bytes": 16855648,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/mac-retry/LocaleProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-th.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-hi.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-hi-QRH1/SlotNewProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-th-QRT1/SlotNewProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets2.assets.resS",
+          "mode": "0o755"
+        }
+      ]
+    },
+    "sharedassets5.assets": {
+      "sha256": "ffdfdeeeb4f793e6cc2425810f182a322e8bf41da7dfac32dddda1aab1bbd9a1",
+      "bytes": 18409660,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/mac-retry/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-th.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-hi.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-hi-QRH1/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-th-QRT1/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets",
+          "mode": "0o755"
+        }
+      ]
+    },
+    "sharedassets0.assets.resS": {
+      "sha256": "a03a681118fa91160f4fbdec42cdb79ea4048a2dec794ab78bf5598c618bba3e",
+      "bytes": 149732256,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/mac-retry/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-th.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-hi.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-hi-QRH1/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-th-QRT1/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets.resS",
+          "mode": "0o755"
+        }
+      ]
+    },
+    "globalgamemanagers.assets.resS": {
+      "sha256": "4bb13dfe0838d6db46af6b225881932fbb9ce22074c357eba77eb7477112b451",
+      "bytes": 16390352,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/mac-retry/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-he.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-th.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-hi.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-hi-QRH1/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-th-QRT1/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets.resS",
+          "mode": "0o755"
+        }
+      ]
+    },
+    "sharedassets5.assets.resS": {
+      "sha256": "7395cfac039d4c091a2912940d9c66046919d928e77db7057e03cfdce1364723",
+      "bytes": 30191376,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/mac-retry/LocaleProbe.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-th.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-hi.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-hi-QRH1/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-th-QRT1/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets5.assets.resS",
+          "mode": "0o755"
+        }
+      ]
+    },
+    "sharedassets6.assets.resS": {
+      "sha256": "2c72b2cc86c7c26bd96d9e1eabe933eac3240b4377500a75ff526c02616ddd66",
+      "bytes": 39697104,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/mac-retry/LocaleProbe.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-th.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-hi.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-hi-QRH1/SlotNewProbe.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-th-QRT1/SlotNewProbe.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets6.assets.resS",
+          "mode": "0o755"
+        }
+      ]
+    },
+    "sharedassets4.assets": {
+      "sha256": "00f71e4e71abefa25cd13cb9d99f5678e7b257ece9910c7face27a56d37ad8f7",
+      "bytes": 11067580,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/mac-retry/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-th.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-hi.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-hi-QRH1/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-th-QRT1/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets4.assets",
+          "mode": "0o755"
+        }
+      ]
+    },
+    "globalgamemanagers.assets": {
+      "sha256": "391640e8e7df097a0d377c7a16552975d4821688841ea3460ec99587f4061d9e",
+      "bytes": 70616584,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/mac-retry/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-he.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-th.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-hi.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-hi-QRH1/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-th-QRT1/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/globalgamemanagers.assets",
+          "mode": "0o755"
+        }
+      ]
+    },
+    "sharedassets3.assets.resS": {
+      "sha256": "c69409b5ac57dcdb870e3fbdac7a1ec0c39bd4f33247b7b3b1b4034652cf1d18",
+      "bytes": 42250016,
+      "copies": [
+        {
+          "path": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/es-a76199c-runtime-20261110.RSMRyp/mac-retry/LocaleProbe.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-th.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-hi.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-hi-QRH1/SlotNewProbe.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-th-QRT1/SlotNewProbe.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        },
+        {
+          "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets3.assets.resS",
+          "mode": "0o755"
+        }
+      ]
+    },
+    "sharedassets1.assets": {
+      "sha256": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+      "bytes": 105956608,
+      "copies": [
+        {
+          "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+          "mode": "0o755"
+        }
+      ]
+    }
+  }
+}

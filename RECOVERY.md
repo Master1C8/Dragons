@@ -91,6 +91,30 @@ The expected SHA-256 of each extracted file is in
 [the v42 receipt](localization/evidence/yarn-fragment-markers-20261110.md).
 The ZIP and both extracted files were verified after downloading the draft.
 
+For the nine locales with additional font inputs, download
+`Dragons-font-build-inputs.zip` from the same maintainer draft. Verify its
+SHA-256 before extracting it into `$recovery/fonts`:
+
+```text
+801372ac08bfd35e8c67599ff88ad5c8b455dd4d4972c6cff1e72cc488721e7d
+```
+
+For `ja`, `ko`, `zh` and `zh-TW`, use `cjk/<locale>.otf` as `--cjk-font`.
+Use the license from `LocalizationPayload/Licenses/<locale>/NotoSansCJK-OFL.txt`
+in the recovered platform installer as `--cjk-license`.
+
+For `ar`, `fa`, `he`, `hi` and `th`, use the extracted `shaped` directory as
+`--complex-plans` and the platform installer's
+`LocalizationPayload/Licenses/<locale>/NotoShaped-OFL.txt` as `--complex-license`.
+Build `localization/tools/prepared-text-probe/prepared-text-probe.csproj` with
+.NET 8 in Release configuration. Use its DLL for `--complex-tool`. Resolve
+`Managed/Dragons.PreparedTextLayout.dll` in the platform installer's locale
+record in `PackageConfig.json`, then use its `payloadPath` and `payloadSHA256`
+as `--complex-layout` and `--complex-layout-sha`. Pass
+`73d128727531f04feb2990e9b369d7da196ca7746254109f695eaa3a428a5ae4`
+as `--complex-report-sha`. The builder checks that the archived shaping plan
+matches the exact release translation. Regenerate shaping plans for text edits.
+
 For the exact Russian 0.2.1 package inputs, download
 `Dragons-ru-package-inputs.zip` from the same draft. Its SHA-256 is
 `0059dffe0b9b48f3010bf57aad56903b25ba8746637d5fe4f86f92b77dd1b413`.
@@ -127,6 +151,15 @@ directory and stays separate from generated output cleanup.
 
 [The duplicate-package receipt](localization/evidence/archival-duplicate-packages-20261111.json)
 maps removed work outputs to their retained, byte-identical copies.
+
+The stock asset receipts identify replaceable files in old runtime probes
+on [macOS](localization/evidence/archival-macos-stock-copies-20261111.json)
+and [Windows](localization/evidence/archival-windows-stock-copies-20261111.json).
+For an existing probe directory, run `python3.12 localization/restore_probe_assets.py`
+with its platform receipt, the stock Data directory and the probe path.
+The helper checks every restored file against the receipt and preserves
+the recorded permissions. These historical probes are separate from the release
+packages and the normal build inputs.
 
 The release card's visual delivery contains 150 published screenshot slots
 across 30 locales. The upload readback matched all 150 hosted files.
