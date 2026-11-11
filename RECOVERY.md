@@ -289,6 +289,20 @@ python3.12 -B localization/restore_archived_members.py \
 
 The recovery check restored 1,148 files and verified their SHA-256 and modes.
 
+The [Yarn test asset receipt](localization/evidence/archival-yarn-probes-20261111.json)
+records six synthetic missing-line assets. Restore a recorded path from the
+matching stock Data directory with Python 3.12 and the pinned UnityPy version:
+
+```sh
+python3.12 -B localization/restore_yarn_probe_asset.py \
+  localization/evidence/archival-yarn-probes-20261111.json "$recorded_path" \
+  --stock "$stock_data" --output "$fresh_output"
+```
+
+The check reproduced all six files byte for byte and verified that only the
+intended serialized object changed. Restore these sources first if the
+generated asset duplicate receipt points to one of them.
+
 The [German batch receipt](localization/evidence/archival-de-partial-20261111.json)
 and the [early German and French batch receipt](localization/evidence/archival-de-fr-early-20261111.json)
 cover 41 intermediate assets whose rebuilds matched byte for byte. Download

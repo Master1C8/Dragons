@@ -1,0 +1,58 @@
+{
+  "outputs": [
+    {
+      "path": "localization/work/yarn-missing-line-runtime-20261110.TwuGCW/mac/FallbackProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "platform": "macos",
+      "sourceLine": "line:f57fc630",
+      "node": "Conrad_5_outro_ryan_romanced",
+      "sha256": "129a9c5c43dbd411c0511671f6398c0a7594f51f308972573919321b96e10c1a",
+      "bytes": 105908440,
+      "mode": "0o644"
+    },
+    {
+      "path": "localization/work/yarn-missing-line-runtime-20261110.TwuGCW/win/game/DragNWash_Data/sharedassets1.assets",
+      "platform": "windows",
+      "sourceLine": "line:f57fc630",
+      "node": "Conrad_5_outro_ryan_romanced",
+      "sha256": "7d89c114177ab8f0e9f0dff625d32809036b2da54f209ba7d678cbd657cb5828",
+      "bytes": 106460648,
+      "mode": "0o644"
+    },
+    {
+      "path": "localization/work/yarn-missing-line-runtime-20261110.OCQuzt/mac/FallbackProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "platform": "macos",
+      "sourceLine": "line:3fdb9d01",
+      "node": "ErrorHasOccurred",
+      "sha256": "d1d636abb153aab2f3f19f242dfea2035a3a9cc17d4e8a580e877ea6a940a96e",
+      "bytes": 105908440,
+      "mode": "0o644"
+    },
+    {
+      "path": "localization/work/yarn-missing-line-runtime-20261110.OCQuzt/win/game/DragNWash_Data/sharedassets1.assets",
+      "platform": "windows",
+      "sourceLine": "line:3fdb9d01",
+      "node": "ErrorHasOccurred",
+      "sha256": "7384ddb60a3e16388834ff9272a95dc88c79b7292acf38b7a5d43a8fdb5a27e2",
+      "bytes": 106460648,
+      "mode": "0o644"
+    },
+    {
+      "path": "localization/work/yarn-missing-line-runtime-20261110.INGG7S/mac/FallbackProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "platform": "macos",
+      "sourceLine": "line:737184f5",
+      "node": "Start",
+      "sha256": "d530466e206261d590024985ee34a672be7b7cacf17addc8969871f88ce142db",
+      "bytes": 105908440,
+      "mode": "0o644"
+    },
+    {
+      "path": "localization/work/yarn-missing-line-runtime-20261110.INGG7S/win/game/DragNWash_Data/sharedassets1.assets",
+      "platform": "windows",
+      "sourceLine": "line:737184f5",
+      "node": "Start",
+      "sha256": "4d02712eba13d5665e8c976f1902da59750c0b3b934da1cdd2abc0522e0dab59",
+      "bytes": 106460648,
+      "mode": "0o644"
+    }
+  ]
+}
