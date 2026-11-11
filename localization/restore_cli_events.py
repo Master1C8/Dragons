@@ -5,6 +5,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import re
 import shlex
 
 from restore_probe_assets import read_receipt, relative_path, sha256
@@ -41,7 +42,14 @@ def resolve(reference, records):
         value = json.loads(value) if field is None else value[field]
     if not shell:
         return value
-    prefix, quoting = shell
+    prefix, quoting, *redactions = shell
+    if redactions:
+        (start, end, marker), = redactions
+        if not 0 <= start < end <= len(value) or not re.fullmatch(
+            r'[^a-zA-Z0-9]*REDACTED[_ A-Z]*[^a-zA-Z0-9]*', marker, re.IGNORECASE
+        ):
+            raise ValueError('Unexpected CLI command redaction')
+        value = value[:start] + marker + value[end:]
     if quoting == 'quote':
         return prefix + shlex.quote(value)
     parts = [prefix]

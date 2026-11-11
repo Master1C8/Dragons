@@ -1822,6 +1822,12 @@ file-change events. Its archive carries the file names and operation
 types, and the journal supplies the text. The restored stream matched
 the original bytes.
 
+The [redacted CLI stream receipt](localization/evidence/archival-cli-event-stream-redaction-20261111.json)
+uses the same command for one additional Brazilian Portuguese stream.
+The index records the journal reference and the redaction marker that
+appeared in the original CLI command. The helper reapplies the redaction
+before formatting the command and verifies the stream fingerprint.
+
 The [CLI report excerpt receipt](localization/evidence/archival-cli-report-excerpts-20261111.json.gz)
 maps 42 historical files to exact byte ranges in retained local command
 output. Keep the recorded streams available for this procedure. Pass a
