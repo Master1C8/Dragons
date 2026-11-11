@@ -7,9 +7,13 @@ import json
 from pathlib import Path
 import re
 import shlex
+import subprocess
 
 from restore_probe_assets import read_receipt, relative_path, sha256
 from restore_usage_snapshot import prefix_lines
+
+
+CHECKOUT = Path(__file__).resolve().parents[1]
 
 
 def references(events):
@@ -62,14 +66,33 @@ def resolve(reference, records):
 
 
 def rebuild(row, events, records):
+    git_blobs = {}
+
+    def field_value(value):
+        if not isinstance(value, dict):
+            return value
+        if value.keys() == {'reference'}:
+            return resolve(value['reference'], records)
+        if value.keys() != {'git'}:
+            return value
+        source = value['git']
+        blob, digest, prefix = source['blob'], source['sha256'], source['prefix']
+        if not re.fullmatch(r'[0-9a-f]{40}', blob) or (
+            prefix and not re.fullmatch(r'cat: [A-Za-z0-9_.-]+: No such file or directory\n', prefix)
+        ):
+            raise ValueError('Unexpected CLI output Git reference')
+        key = (blob, digest)
+        if key not in git_blobs:
+            raw = subprocess.check_output(['git', '-C', str(CHECKOUT), 'cat-file', 'blob', blob])
+            if hashlib.sha256(raw).hexdigest() != digest:
+                raise ValueError('CLI output Git blob fingerprint mismatch')
+            git_blobs[key] = raw.decode('utf-8')
+        return prefix + git_blobs[key]
+
     lines = []
     for event in events:
         if 'item' in event:
-            fields = {
-                key: resolve(value['reference'], records)
-                if isinstance(value, dict) and value.keys() == {'reference'} else value
-                for key, value in event['item'].items()
-            }
+            fields = {key: field_value(value) for key, value in event['item'].items()}
             event = {**event, 'item': fields}
         lines.append(json.dumps(event, ensure_ascii=False, separators=(',', ':')))
     raw = ('\n'.join(lines) + '\n').encode('utf-8')

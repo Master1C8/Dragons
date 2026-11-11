@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-cli-event-git-outputs-index.json.gz",
+  "archiveSha256": "b225bff586f6d4318c741786c5422d37e45742781c3925d9758274262cd3a9ad",
+  "journalCount": 11,
+  "outputs": {
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/es-419/events.jsonl": {
+      "bytes": 416146,
+      "sha256": "d6033aa4177e81ab280051870af5a6d0b5101104348ced3cf49744a5d2460342",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/cs/events.jsonl": {
+      "bytes": 384115,
+      "sha256": "f480c94d59c71d5bc7831764cde113f5b2deb034d838c00cced3b625609a1449",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/vi/events.jsonl": {
+      "bytes": 335098,
+      "sha256": "064e55c2f2dcbd7772b6b3af985465d10f7650c6b4af1b5e875a28ec1fc2a70f",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/nl/events.jsonl": {
+      "bytes": 384710,
+      "sha256": "2b41ebe63d634e045a1e0d884839a5a5c04681ec03e0d4652dc3adebd60c6006",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-next-20261110.DKlv9v/id/events.jsonl": {
+      "bytes": 381524,
+      "sha256": "5fda306010e761e2dbcb9f66ba49185cdba3c61dd15c086d93476a9f47a4738e",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/sr/events.jsonl": {
+      "bytes": 347735,
+      "sha256": "1ec32b5f3045fef56af14ffd49e783b7ab8887356a957d82b098980dc333751e",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave3-20261110.71d8AW/hu/events.jsonl": {
+      "bytes": 397695,
+      "sha256": "31fd7fd9d7b281864f218ba9004b945270e21004093973178bd6710ba75d4201",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave4-20261110.82IkRL/ko/events.jsonl": {
+      "bytes": 348797,
+      "sha256": "accad75339ea252ecc9371999de6fff3c6e797f09d12778258c6ac54ff001532",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/hi/continuation-01/events.jsonl": {
+      "bytes": 517704,
+      "sha256": "d016e27261aaf57aadace7e40c19979fa271c3bea1682ce5c20bff9ee5fd1dc0",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/th/events.jsonl": {
+      "bytes": 278953,
+      "sha256": "47fecbba2cce96e676d424c90dbba0244a43898de95c3e17edbbb3fc1568d1f9",
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-wave5-text-20261110.EGOF1B/he/events.jsonl": {
+      "bytes": 361963,
+      "sha256": "6b48de3d8305cc269d6485346923ed6f45de86b01fc993fb87b2cc5986c30475",
+      "mode": "0o644"
+    }
+  }
+}

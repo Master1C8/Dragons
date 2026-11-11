@@ -1828,10 +1828,17 @@ The index records the journal reference and the redaction marker that
 appeared in the original CLI command. The helper reapplies the redaction
 before formatting the command and verifies the stream fingerprint.
 
+The [Git output stream receipt](localization/evidence/archival-cli-event-stream-git-outputs-20261111.json)
+uses the same command for 11 additional streams. The helper reads the
+recorded Git blob for the historical `HANDOFF.md` output and verifies its
+hash before combining it with the journal records. The downloaded index
+reproduced all 11 streams byte for byte.
+
 The [CLI report excerpt receipt](localization/evidence/archival-cli-report-excerpts-20261111.json.gz)
 maps 42 historical files to exact byte ranges in retained local command
-output. Keep the recorded streams available for this procedure. Pass a
-recorded checkout-relative path and a fresh output file.
+output. Restore any missing source stream using the Git output stream
+receipt first. Pass a recorded checkout-relative path and a fresh
+output file.
 
 ```sh
 python3.12 - "$recorded_path" "$fresh_report" <<'PY'
