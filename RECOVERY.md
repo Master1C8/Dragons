@@ -635,14 +635,16 @@ binary copy receipt restored from the resulting files.
 
 The [retained probe build receipt](localization/evidence/archival-retained-probe-builds-20261111.json.gz)
 uses the same build helper for additional historical DLLs and PDBs.
-Sources marked `retained` are still at their checkout-relative paths.
-Keep those inputs in place until they have a verified independent
-recovery path. Restore any `archived` inputs into `restored_sources`
-using the managed source recipe above. Pass `--game-managed` for rows
-that specify a stock platform. The helper verifies each input
-fingerprint before compiling and checks the exact output bytes.
-The check rebuilt 242 portable PDBs and 320 DLLs and restored 679
-dependent copies. The 219 retained source inputs stayed in place.
+Restore its `archived` inputs into `restored_sources`, using the managed
+source recipe above and the receipt that names each path. The
+[probe source delta receipt](localization/evidence/archival-retained-probe-source-deltas-20261111.json.gz)
+supplies the 219 inputs formerly held only in the checkout. The historical
+managed source receipt supplies the other archived inputs. Pass
+`--game-managed` for rows that specify a stock platform. The helper
+verifies each input fingerprint before compiling and checks the exact
+output bytes. The check rebuilt 242 portable PDBs and 320 DLLs and
+restored 679 dependent copies. A separate rebuild using the downloaded
+source archives matched all 562 outputs.
 
 The [Windows Yarn preservation input](localization/evidence/windows-yarn-preservation-control-20261107.json)
 recreates the synthetic control in the
