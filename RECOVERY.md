@@ -257,18 +257,22 @@ The helper checks the decoder, stock inputs, delta files and restored asset
 hashes. The archival check restored all 187 distinct release assets before
 removing local copies.
 
-The [historical German batch receipt](localization/evidence/archival-de-partial-20261111.json)
-covers 18 intermediate assets whose rebuilds matched byte for byte. Download
-the receipt's input archive from the `recovery-inputs-v0.2.1` maintainer draft,
-check its archive hash and extract the dialogue JSON files. Match each JSON
-and rebuilt asset to the SHA-256 in the receipt. Set `DRAGONS_SITE_LOCALES`
-to the canonical locale catalog and use the stock Data paths described above:
+The [German batch receipt](localization/evidence/archival-de-partial-20261111.json)
+and the [early German and French batch receipt](localization/evidence/archival-de-fr-early-20261111.json)
+cover 41 intermediate assets whose rebuilds matched byte for byte. Download
+the corresponding input archive from the `recovery-inputs-v0.2.1` maintainer
+draft, check its archive hash and extract the dialogue JSON files. Match each
+JSON and rebuilt asset to the SHA-256 in the receipt. Set `DRAGONS_SITE_LOCALES`
+to the canonical locale catalog and use the stock Data paths described above.
+Set `batch_locale` to the locale in the receipt, or `de` for the German-only
+receipt.
 
 ```sh
 python3.12 -B localization/dialogue_locale.py "$macos_stock_data/sharedassets1.assets" \
   --locale "$macos_batch_json" --output "$macos_batch_output"
 python3.12 -B localization/windows_ui_locale.py "$windows_stock_data" sharedassets1.assets \
-  --requested-locale de --dialogue-locale-file "$windows_batch_json" --output "$windows_batch_output"
+  --requested-locale "$batch_locale" --dialogue-locale-file "$windows_batch_json" \
+  --output "$windows_batch_output"
 ```
 
 The [historical installer receipt](localization/evidence/archival-obsolete-installers-20261111.json)
@@ -293,6 +297,23 @@ lists all 287 files in the old Parallels test fixture. To recreate the
 fixture, ZIP those relative paths from the owned Windows stock game directory
 and verify each member against the listed SHA-256. The recovery check rebuilt
 the fixture and verified all members without running it.
+
+The [test fixture ZIP receipt](localization/evidence/archival-test-fixture-zips-20261111.json)
+pins eight exact historical ZIPs used for Parallels and installer testing.
+Download the receipt's components archive from the `recovery-inputs-v0.2.1`
+maintainer draft, verify its hash and extract it. Set `windows_game_root`
+to the owned directory that contains `DragNWash.exe`, and select a recorded
+path from the receipt:
+
+```sh
+python3.12 -B localization/restore_fixture_zip.py \
+  localization/evidence/archival-test-fixture-zips-20261111.json "$recorded_path" \
+  --windows-stock "$windows_game_root" --components "$extracted_components"
+```
+
+The restore checks every member and the exact ZIP SHA-256. The receipt
+identifies retained local test components alongside the stock game and the
+small components archive.
 
 The release card's visual delivery contains 150 published screenshot slots
 across 30 locales. The upload readback matched all 150 hosted files.

@@ -1,0 +1,2896 @@
+{
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-test-fixture-components.zip",
+  "archiveSha256": "03a7c12765c1680f73e9f8196a24052967edb1a87236fd5382a0017b147f66a3",
+  "components": {
+    "ef45b4aff23d746fb2bb7e5582695d7d4cdd330c236c84381796dde7a18db0b1-globalgamemanagers": "ef45b4aff23d746fb2bb7e5582695d7d4cdd330c236c84381796dde7a18db0b1",
+    "49a7124e8e8123758281c873e57e1e00193b59270280244219fd5bb3942ad811-globalgamemanagers": "49a7124e8e8123758281c873e57e1e00193b59270280244219fd5bb3942ad811",
+    "6507384c313c4aa4cab8a2a3a277f1bd3e43d095c8bcd4e382004d0a9ded16b2-Unity.TextMeshPro.dll": "6507384c313c4aa4cab8a2a3a277f1bd3e43d095c8bcd4e382004d0a9ded16b2",
+    "3d2c451fef9976b209fdde47d02ad7d041b11032164b3d061c869c260d52b94c-Unity.TextMeshPro.dll": "3d2c451fef9976b209fdde47d02ad7d041b11032164b3d061c869c260d52b94c",
+    "c5c467f5651bab2d479d64cbcedf6ca1f527c72d2d3838e33c6d4e1152f0e05f-DragNWash.exe": "c5c467f5651bab2d479d64cbcedf6ca1f527c72d2d3838e33c6d4e1152f0e05f",
+    "ecff6876e4b9f754dfa223511a12fb709a48347b8055b4ed6ef45ddbaff3e560-ForeignMod.txt": "ecff6876e4b9f754dfa223511a12fb709a48347b8055b4ed6ef45ddbaff3e560"
+  },
+  "outputs": [
+    {
+      "path": "localization/work/parallels-renderer.sUgfkk/ar/overlay-qwa2.zip",
+      "sha256": "21a547a3d0cefd668be6ed406b3d43e68036a8a4a547884ba2984c0df788eb9c",
+      "mode": "0o644",
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash_Data/Managed/Assembly-CSharp.dll",
+          "size": 428032,
+          "sha256": "cea9e97fc02a2ecf650907d94599c97b05c3d3b744665d2ce8a4c03ee9a3cbb3",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/Managed/Assembly-CSharp.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            24
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.BackgroundInputProbe.dll",
+          "size": 16384,
+          "sha256": "9828ebdb61862a191c54172e5d83fe05f9e4166fce80a7c694125fae9266ad4b",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/companion/batch-bin/Dragons.BackgroundInputProbe.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            24
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.PreparedTextLayout.dll",
+          "size": 14848,
+          "sha256": "f483338e732cd25363a42cbdae75b56d9a5108ae42fb0f652519e4558b8a01c7",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/wrap-renderer-pairs/windows/layout/Dragons.PreparedTextLayout.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            24
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.SpeakerPresentation.dll",
+          "size": 8704,
+          "sha256": "ff2e7064440d20d4c2fce940d86237703ce9437e1cf16e8afad1c568eb8cf20c",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/speaker-current-runtime/windows/Dragons.SpeakerPresentation.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            24
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Unity.TextMeshPro.dll",
+          "size": 1591808,
+          "sha256": "22c503ba0e2558eec8f25ed7e37c082cc36e1d1964b30497af42b40a4b6bdceb",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/Managed/Unity.TextMeshPro.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            24
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/YarnSpinner.Unity.dll",
+          "size": 160768,
+          "sha256": "f6d25b00f07bdaadc9c03b47b8403fb04ca93cb0c099a2f37974b6f3cdedb076",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/Managed/YarnSpinner.Unity.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            24
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223144,
+          "sha256": "ef45b4aff23d746fb2bb7e5582695d7d4cdd330c236c84381796dde7a18db0b1",
+          "source": {
+            "root": "components",
+            "path": "ef45b4aff23d746fb2bb7e5582695d7d4cdd330c236c84381796dde7a18db0b1-globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level0",
+          "size": 904016,
+          "sha256": "a211ad46247ecf4b00ff5263c638bf761dee290e55231437090cf29f16d8ffb1",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level0"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level1",
+          "size": 870016,
+          "sha256": "bbe186869d276feba829d051b36e131f154009d3caa4ad374736e2008081db0d",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level1"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level2",
+          "size": 133152,
+          "sha256": "d307938674f3edb88f9dc859c511b0feec5198c670201e8a95b78bcc76875824",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level2"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level3",
+          "size": 548400,
+          "sha256": "25ef10b74ea2e9b3ce0c37d4fa9004cd93eaee1de2fd9d92bbc1ca8f4a660ed8",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level3"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level4",
+          "size": 593232,
+          "sha256": "d55faaf0edac6d8951433bd641c4393c4dc4e34ef3ff10c18df7a48a52ea6890",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level4"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level5",
+          "size": 349400,
+          "sha256": "9d1df54725c1692628ad8f088b8ea129148d9c5b752c5309ddd5182980e00612",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level5"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level6",
+          "size": 474400,
+          "sha256": "29dc312b431dffc5bced796b2e8622285eb3bcf685f2338e33c26ffb5443fd09",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level6"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets0.assets",
+          "size": 2188872,
+          "sha256": "86572b53626c8409c0bd450dc662bb37b027796394401f5dedf2348294fcc903",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets0.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets1.assets",
+          "size": 106488824,
+          "sha256": "d57a3c01921894be31846302a8b187533e72fbc5c9b341f8098924db55d878e5",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets1.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            24,
+            30
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "path": "localization/work/parallels-renderer.sUgfkk/ar/overlay.zip",
+      "sha256": "5761069251ff64a85ad4c41cf7af172b361495baad4449aa7bf7fbe423a6e497",
+      "mode": "0o644",
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash_Data/Managed/Assembly-CSharp.dll",
+          "size": 428032,
+          "sha256": "cea9e97fc02a2ecf650907d94599c97b05c3d3b744665d2ce8a4c03ee9a3cbb3",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/Managed/Assembly-CSharp.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.BackgroundInputProbe.dll",
+          "size": 16384,
+          "sha256": "9828ebdb61862a191c54172e5d83fe05f9e4166fce80a7c694125fae9266ad4b",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/companion/batch-bin/Dragons.BackgroundInputProbe.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.PreparedTextLayout.dll",
+          "size": 14848,
+          "sha256": "f483338e732cd25363a42cbdae75b56d9a5108ae42fb0f652519e4558b8a01c7",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/wrap-renderer-pairs/windows/layout/Dragons.PreparedTextLayout.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.SpeakerPresentation.dll",
+          "size": 8704,
+          "sha256": "ff2e7064440d20d4c2fce940d86237703ce9437e1cf16e8afad1c568eb8cf20c",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/speaker-current-runtime/windows/Dragons.SpeakerPresentation.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Unity.TextMeshPro.dll",
+          "size": 1591808,
+          "sha256": "22c503ba0e2558eec8f25ed7e37c082cc36e1d1964b30497af42b40a4b6bdceb",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/Managed/Unity.TextMeshPro.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/YarnSpinner.Unity.dll",
+          "size": 160768,
+          "sha256": "f6d25b00f07bdaadc9c03b47b8403fb04ca93cb0c099a2f37974b6f3cdedb076",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/Managed/YarnSpinner.Unity.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223144,
+          "sha256": "df60432b3aa6008c3dc4f9c42b362e35391e0e19d4f9a24132a355475eba9a48",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level0",
+          "size": 904016,
+          "sha256": "a211ad46247ecf4b00ff5263c638bf761dee290e55231437090cf29f16d8ffb1",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level0"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level1",
+          "size": 870016,
+          "sha256": "bbe186869d276feba829d051b36e131f154009d3caa4ad374736e2008081db0d",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level1"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level2",
+          "size": 133152,
+          "sha256": "d307938674f3edb88f9dc859c511b0feec5198c670201e8a95b78bcc76875824",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level2"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level3",
+          "size": 548400,
+          "sha256": "25ef10b74ea2e9b3ce0c37d4fa9004cd93eaee1de2fd9d92bbc1ca8f4a660ed8",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level3"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level4",
+          "size": 593232,
+          "sha256": "d55faaf0edac6d8951433bd641c4393c4dc4e34ef3ff10c18df7a48a52ea6890",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level4"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level5",
+          "size": 349400,
+          "sha256": "9d1df54725c1692628ad8f088b8ea129148d9c5b752c5309ddd5182980e00612",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level5"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level6",
+          "size": 474400,
+          "sha256": "29dc312b431dffc5bced796b2e8622285eb3bcf685f2338e33c26ffb5443fd09",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-ar.zip",
+            "member": "DragNWash_Data/level6"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets0.assets",
+          "size": 2188872,
+          "sha256": "86572b53626c8409c0bd450dc662bb37b027796394401f5dedf2348294fcc903",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets0.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets1.assets",
+          "size": 106488824,
+          "sha256": "d57a3c01921894be31846302a8b187533e72fbc5c9b341f8098924db55d878e5",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets1.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            36
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "path": "localization/work/parallels-renderer.sUgfkk/control/overlay.zip",
+      "sha256": "3c932f2a5c4c90892b328702684b613f26c09d094383485659b097c2cac94139",
+      "mode": "0o644",
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223144,
+          "sha256": "49a7124e8e8123758281c873e57e1e00193b59270280244219fd5bb3942ad811",
+          "source": {
+            "root": "components",
+            "path": "49a7124e8e8123758281c873e57e1e00193b59270280244219fd5bb3942ad811-globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            29,
+            54
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Assembly-CSharp.dll",
+          "size": 428032,
+          "sha256": "f6ce02097e9d06c3f27120b9ccff1130c5374661abc8fffe544cafea2139ee08",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/background-combined-20261109.yMvcOH/game/DragNWash_Data/Managed/Assembly-CSharp.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            29,
+            52
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.BackgroundInputProbe.dll",
+          "size": 16384,
+          "sha256": "9828ebdb61862a191c54172e5d83fe05f9e4166fce80a7c694125fae9266ad4b",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/companion/batch-bin/Dragons.BackgroundInputProbe.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            4
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "path": "localization/work/parallels-renderer.sUgfkk/fa/overlay.zip",
+      "sha256": "ab8780c5e6c5a5aa6d1f66b15b466aab4c0216cdd940d9a05bc8eab614c9d67a",
+      "mode": "0o644",
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash_Data/Managed/Assembly-CSharp.dll",
+          "size": 428032,
+          "sha256": "66715dac2385795fb396d6fcbfe60fc8501cb179cbe95f65e24104687de6d156",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/Managed/Assembly-CSharp.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.BackgroundInputProbe.dll",
+          "size": 16384,
+          "sha256": "9828ebdb61862a191c54172e5d83fe05f9e4166fce80a7c694125fae9266ad4b",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/companion/batch-bin/Dragons.BackgroundInputProbe.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.PreparedTextLayout.dll",
+          "size": 14848,
+          "sha256": "f483338e732cd25363a42cbdae75b56d9a5108ae42fb0f652519e4558b8a01c7",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/wrap-renderer-pairs/windows/layout/Dragons.PreparedTextLayout.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.SpeakerPresentation.dll",
+          "size": 8704,
+          "sha256": "ff2e7064440d20d4c2fce940d86237703ce9437e1cf16e8afad1c568eb8cf20c",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/speaker-current-runtime/windows/Dragons.SpeakerPresentation.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Unity.TextMeshPro.dll",
+          "size": 1657344,
+          "sha256": "5d6ac2ec1411e09abdbf8eca12e3585f938f3935a6e9a20241aacd8f12c0e9b0",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/windows/DragNWash-fa.zip",
+            "member": "DragNWash_Data/Managed/Unity.TextMeshPro.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/YarnSpinner.Unity.dll",
+          "size": 160768,
+          "sha256": "644d629d8463d07265f15c62192bdf62a5ec61514a89fd7aa8ba1fd56ca374e4",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-fa.zip",
+            "member": "DragNWash_Data/Managed/YarnSpinner.Unity.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223144,
+          "sha256": "7727140e121df805f13c4d96b7dd0a753d1a575b5ebcb181c76be0390040c713",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level0",
+          "size": 904024,
+          "sha256": "436af4f29ba7c16ca87cca029487e39ab384b7665291e4a7f4e22d9d75b5febd",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-fa.zip",
+            "member": "DragNWash_Data/level0"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level1",
+          "size": 869960,
+          "sha256": "71ff37e95ff6ba379221802e0ddcd7f48f041f3049f5bd6874e0f683ebe5784d",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-fa.zip",
+            "member": "DragNWash_Data/level1"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level2",
+          "size": 133072,
+          "sha256": "1b4798eed8d2f78c1149efdddebdf84e5f30157746221db9b2f31a54f0e37a8a",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-fa.zip",
+            "member": "DragNWash_Data/level2"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level3",
+          "size": 548376,
+          "sha256": "c39c891450efbf0ab646789c310757ab30678178a7a5c7752340e986e160f827",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-fa.zip",
+            "member": "DragNWash_Data/level3"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level4",
+          "size": 593208,
+          "sha256": "6e577903546f873cfb2e8d8245919df44c8479b0f88fca29da6df565e595547e",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-fa.zip",
+            "member": "DragNWash_Data/level4"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level5",
+          "size": 349376,
+          "sha256": "34211d82b23c4d7a497584cef6d9032b19a68fe0b81eb46d5cb897ffb0179dd3",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-fa.zip",
+            "member": "DragNWash_Data/level5"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level6",
+          "size": 474376,
+          "sha256": "b68929cea121638f07ed97a8092b5447a124daf31eacf89e58a78681bce8a165",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-fa.zip",
+            "member": "DragNWash_Data/level6"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets0.assets",
+          "size": 2186352,
+          "sha256": "4bb6bdd270bbfa3b7d354a8f520653b9bb0f2a93922e01dd28bf64d8b59a8910",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/sharedassets0.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets1.assets",
+          "size": 106496984,
+          "sha256": "a471f027ab91b8d6e9b80ea97f5a3a1ae657b25d348a339768166466a0990c4c",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/sharedassets1.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "path": "localization/work/parallels-renderer.sUgfkk/he/overlay.zip",
+      "sha256": "fae2f291ebb54971a140b69e6d894bd072c327c6968bd5d7f944a0c10fd33bff",
+      "mode": "0o644",
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash_Data/Managed/Assembly-CSharp.dll",
+          "size": 428032,
+          "sha256": "db40930cbb4e68fa4495ea5778460789794634d3378910e9317ce5df8bd33c61",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/Managed/Assembly-CSharp.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.BackgroundInputProbe.dll",
+          "size": 16384,
+          "sha256": "9828ebdb61862a191c54172e5d83fe05f9e4166fce80a7c694125fae9266ad4b",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/companion/batch-bin/Dragons.BackgroundInputProbe.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.PreparedTextLayout.dll",
+          "size": 14848,
+          "sha256": "f483338e732cd25363a42cbdae75b56d9a5108ae42fb0f652519e4558b8a01c7",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/wrap-renderer-pairs/windows/layout/Dragons.PreparedTextLayout.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.SpeakerPresentation.dll",
+          "size": 8704,
+          "sha256": "ff2e7064440d20d4c2fce940d86237703ce9437e1cf16e8afad1c568eb8cf20c",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/speaker-current-runtime/windows/Dragons.SpeakerPresentation.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Unity.TextMeshPro.dll",
+          "size": 1419264,
+          "sha256": "60832f25c74d736c9ede2742f2ab8a9ee9eab0d9089a8355e40563d2bc0dc277",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/windows/DragNWash-he.zip",
+            "member": "DragNWash_Data/Managed/Unity.TextMeshPro.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/YarnSpinner.Unity.dll",
+          "size": 160768,
+          "sha256": "ae38743187011bcfbb822b95ad0885c116dd2b7196cb682afe68d1530be58dc5",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-he.zip",
+            "member": "DragNWash_Data/Managed/YarnSpinner.Unity.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223144,
+          "sha256": "419f9841dce7aa26579cf3e03aa69b83b08a674b4bda7d964b0e4315c26c1d1c",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level0",
+          "size": 904000,
+          "sha256": "2b6d7a9f03d8284df4316468a074cc9d96c98060d8ed37635efc718d8807e4a3",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-he.zip",
+            "member": "DragNWash_Data/level0"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level1",
+          "size": 869928,
+          "sha256": "25226bca045fa1075e61ca1d7bb15e7ae086511fa1e9f5be3b60acdbe8fbc46f",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-he.zip",
+            "member": "DragNWash_Data/level1"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level2",
+          "size": 132704,
+          "sha256": "b60a0f7297b724baaea9af556bd9075a5246507cf260d66caa9e7f0427181b08",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-he.zip",
+            "member": "DragNWash_Data/level2"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level3",
+          "size": 548352,
+          "sha256": "d3b93eb4a4c787ccfe049f37ef9389dc0901bdfd986746b8cb381254cd12fd65",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-he.zip",
+            "member": "DragNWash_Data/level3"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level4",
+          "size": 593184,
+          "sha256": "6d70e73c99917236030c2cf4acddeba7213edb530e4665ae54c8eeafd539690a",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-he.zip",
+            "member": "DragNWash_Data/level4"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level5",
+          "size": 349352,
+          "sha256": "66d01677c82330b9b045a2f114057a7d006f7a84c58f74487d2164221d07d802",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-he.zip",
+            "member": "DragNWash_Data/level5"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level6",
+          "size": 474352,
+          "sha256": "a4ab20d21fc86d202d7d75a8dd4259752d4ba681e8ab9e96bb24bf9b16556c89",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-he.zip",
+            "member": "DragNWash_Data/level6"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets0.assets",
+          "size": 2531136,
+          "sha256": "3296d27b51ee41d662e2723f901100b3d3a98d3caa0280d6c124c46266117294",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-he.zip",
+            "member": "DragNWash_Data/sharedassets0.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets1.assets",
+          "size": 106483240,
+          "sha256": "f214ad001afd310945193529f27a6f648c00f1ecf8c2b703ea6eac1286296982",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/sharedassets1.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "path": "localization/work/parallels-renderer.sUgfkk/hi/overlay.zip",
+      "sha256": "cfc4f4ba0f5f171b21f882d3aa8675d2fb3778a608a32b6b4d7052e82624605f",
+      "mode": "0o644",
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash_Data/Managed/Assembly-CSharp.dll",
+          "size": 428032,
+          "sha256": "09382059d1e4f037e48b2c6c9d899558f75023fc583e6ba8e5aaca7b17f0be2b",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/Managed/Assembly-CSharp.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.BackgroundInputProbe.dll",
+          "size": 16384,
+          "sha256": "9828ebdb61862a191c54172e5d83fe05f9e4166fce80a7c694125fae9266ad4b",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/companion/batch-bin/Dragons.BackgroundInputProbe.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.PreparedTextLayout.dll",
+          "size": 14848,
+          "sha256": "f483338e732cd25363a42cbdae75b56d9a5108ae42fb0f652519e4558b8a01c7",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/wrap-renderer-pairs/windows/layout/Dragons.PreparedTextLayout.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.SpeakerPresentation.dll",
+          "size": 8704,
+          "sha256": "ff2e7064440d20d4c2fce940d86237703ce9437e1cf16e8afad1c568eb8cf20c",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/speaker-current-runtime/windows/Dragons.SpeakerPresentation.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Unity.TextMeshPro.dll",
+          "size": 1508864,
+          "sha256": "6507384c313c4aa4cab8a2a3a277f1bd3e43d095c8bcd4e382004d0a9ded16b2",
+          "source": {
+            "root": "components",
+            "path": "6507384c313c4aa4cab8a2a3a277f1bd3e43d095c8bcd4e382004d0a9ded16b2-Unity.TextMeshPro.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/YarnSpinner.Unity.dll",
+          "size": 160768,
+          "sha256": "3a7fdcbc53e7114666fe59c361b66d1f21034971ac77a37510eaaa000d565aca",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-hi.zip",
+            "member": "DragNWash_Data/Managed/YarnSpinner.Unity.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223144,
+          "sha256": "c15d9ae487cfbc4bea9f2651d6f11ed7c41e4dd6b2690e62e08d965406c34d1a",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-hi-QWH1/game/DragNWash_Data/globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level0",
+          "size": 904032,
+          "sha256": "00ea9d029b09fea6dc8510b00f1867715f8ed49f2d38a4452b0bd74a6cefc1e1",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-hi.zip",
+            "member": "DragNWash_Data/level0"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level1",
+          "size": 870056,
+          "sha256": "64cc69be41b6d3a30be3584c1b3eed166abb93dd50aa18be58ccb109e13f4411",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-hi.zip",
+            "member": "DragNWash_Data/level1"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level2",
+          "size": 134096,
+          "sha256": "8e5d356276717f8e0569f42701300b5c62f8a05900970d08a1958cf595758355",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-hi.zip",
+            "member": "DragNWash_Data/level2"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level3",
+          "size": 548448,
+          "sha256": "e6ecbc034e4322ee24aa7b68d424781cf2ed0d074d8a64aa3be7800062f8a68c",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-hi.zip",
+            "member": "DragNWash_Data/level3"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level4",
+          "size": 593280,
+          "sha256": "ef6982f6a83db97500a40db03403313c10502d4117e5dcc88af20b8ea97204d6",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-hi.zip",
+            "member": "DragNWash_Data/level4"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level5",
+          "size": 349448,
+          "sha256": "066fe26241db8cddf8434d986891d498bacdb5078c6ea331f7caf5a1500af7c3",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-hi.zip",
+            "member": "DragNWash_Data/level5"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level6",
+          "size": 474448,
+          "sha256": "34b8e34f12abb65f318c46f780f881d54a3a5034c7a00eec199dbdb6c15fa47e",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-hi.zip",
+            "member": "DragNWash_Data/level6"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets0.assets",
+          "size": 2198816,
+          "sha256": "791a8187e9f2743dad94811365eccae478b0cee6d695ee040b36059c3e7cf843",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-hi.zip",
+            "member": "DragNWash_Data/sharedassets0.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets1.assets",
+          "size": 106544176,
+          "sha256": "88430f3502048affb148f054e7593857d4a7aeba6c02d4659d5c26552782b258",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-hi.zip",
+            "member": "DragNWash_Data/sharedassets1.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "path": "localization/work/parallels-renderer.sUgfkk/th/overlay.zip",
+      "sha256": "ccbb3f517c6aaad96b64686e416ed5cef122ce48e9f509c011ec972af33e89d9",
+      "mode": "0o644",
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash_Data/Managed/Assembly-CSharp.dll",
+          "size": 428032,
+          "sha256": "c90232ab9cc363e3e7c76465a5c1d4e34e44403ebca43dcc37ae13c99ba5aec9",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/Managed/Assembly-CSharp.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.BackgroundInputProbe.dll",
+          "size": 16384,
+          "sha256": "9828ebdb61862a191c54172e5d83fe05f9e4166fce80a7c694125fae9266ad4b",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/companion/batch-bin/Dragons.BackgroundInputProbe.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.PreparedTextLayout.dll",
+          "size": 14848,
+          "sha256": "f483338e732cd25363a42cbdae75b56d9a5108ae42fb0f652519e4558b8a01c7",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/wrap-renderer-pairs/windows/layout/Dragons.PreparedTextLayout.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Dragons.SpeakerPresentation.dll",
+          "size": 8704,
+          "sha256": "ff2e7064440d20d4c2fce940d86237703ce9437e1cf16e8afad1c568eb8cf20c",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/speaker-current-runtime/windows/Dragons.SpeakerPresentation.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Unity.TextMeshPro.dll",
+          "size": 1559552,
+          "sha256": "3d2c451fef9976b209fdde47d02ad7d041b11032164b3d061c869c260d52b94c",
+          "source": {
+            "root": "components",
+            "path": "3d2c451fef9976b209fdde47d02ad7d041b11032164b3d061c869c260d52b94c-Unity.TextMeshPro.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/YarnSpinner.Unity.dll",
+          "size": 160768,
+          "sha256": "58330492a0844acd3ae3ea33b1deb729081c20b328df4741665c209d0aada679",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-th.zip",
+            "member": "DragNWash_Data/Managed/YarnSpinner.Unity.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223144,
+          "sha256": "6f6b91f6220f0d06e35a9ac8037c124e45c1ecdaabedec72154212fb02d6d54f",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/live-renderer.O43vkv/windows-th-QWT1/game/DragNWash_Data/globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level0",
+          "size": 904048,
+          "sha256": "0046c6e110be1b9177d269e529b40d92f3dacb0dc49b3b7ae8f79c73cdb2667e",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-th.zip",
+            "member": "DragNWash_Data/level0"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level1",
+          "size": 870104,
+          "sha256": "7196df2357b7065d5fef14bc5444453deb037efe837ec5d18a1e917478d76daf",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-th.zip",
+            "member": "DragNWash_Data/level1"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level2",
+          "size": 133992,
+          "sha256": "151bfc007bff5d8f640fa268b17592c42bb4bb1c7795b0195093f71cf130b00e",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-th.zip",
+            "member": "DragNWash_Data/level2"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level3",
+          "size": 548448,
+          "sha256": "09738552a8354d13ef2a1c2a81b69de13e2df793b9452ede9d50f4a80b48621a",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-th.zip",
+            "member": "DragNWash_Data/level3"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level4",
+          "size": 593280,
+          "sha256": "5c169bc094dbc55de309a23123c94b664acfd6c58214fb12517a18d478df8ee6",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-th.zip",
+            "member": "DragNWash_Data/level4"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level5",
+          "size": 349448,
+          "sha256": "b3c63ca325983389409fab84e96a709069da706f4f2fed16b9a1045519488d43",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-th.zip",
+            "member": "DragNWash_Data/level5"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level6",
+          "size": 474448,
+          "sha256": "b39138c107e1d4ebfc7f7ebec357c1e8f1ccc99d6c6642a1f25f5570265a4677",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-th.zip",
+            "member": "DragNWash_Data/level6"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets0.assets",
+          "size": 2002456,
+          "sha256": "1cf6962055cef37affcd60e0856212771f056c662a44c103714d316680b39444",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-th.zip",
+            "member": "DragNWash_Data/sharedassets0.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            38
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets1.assets",
+          "size": 106540616,
+          "sha256": "41c5343477ed9f44a3c93c647e443dafbf2ebceeaa5257757f25313eb528dfd1",
+          "source": {
+            "root": "checkout",
+            "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/windows/DragNWash-th.zip",
+            "member": "DragNWash_Data/sharedassets1.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            15,
+            40
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "path": "localization/work/installer.NUdeks/win-fixture.zip",
+      "sha256": "4b922f872c67046f7ceb553092376391bfe8935e465861767de844eb898c72d4",
+      "mode": "0o644",
+      "comment": "",
+      "members": [
+        {
+          "name": "DragNWash.exe",
+          "size": 9,
+          "sha256": "c5c467f5651bab2d479d64cbcedf6ca1f527c72d2d3838e33c6d4e1152f0e05f",
+          "source": {
+            "root": "components",
+            "path": "c5c467f5651bab2d479d64cbcedf6ca1f527c72d2d3838e33c6d4e1152f0e05f-DragNWash.exe"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            47,
+            18
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Assembly-CSharp.dll",
+          "size": 428032,
+          "sha256": "8b1b439e62bff222fbce00869a3343422c77d08e384db7ed323b5e66f44195e2",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/Managed/Assembly-CSharp.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            40
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/Unity.TextMeshPro.dll",
+          "size": 445952,
+          "sha256": "e22d8f83e97d0a27bed0480cfd52d13a6b26b1e74e3ad67e6a17316090ec3f9f",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/Managed/Unity.TextMeshPro.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            40
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/Managed/YarnSpinner.Unity.dll",
+          "size": 160256,
+          "sha256": "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/Managed/YarnSpinner.Unity.dll"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            40
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/globalgamemanagers",
+          "size": 223204,
+          "sha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/globalgamemanagers"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            40
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/globalgamemanagers.assets",
+          "size": 33880472,
+          "sha256": "910358d16b824bfd4b8398fea8c0295b5660471bb13a6708655096097bb0f018",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/globalgamemanagers.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            42
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level0",
+          "size": 941772,
+          "sha256": "55a296caa23347190faa063efdaab4cf5a37e00bdbffa455729b4aa346cddae0",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/level0"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            42
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level1",
+          "size": 889092,
+          "sha256": "203725518656d04df3341248a7d24bc27551ebd6c03e582977869f0acfc5a459",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/level1"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            42
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level2",
+          "size": 135312,
+          "sha256": "d8b5b6b96a2372e36087edb0a5e3e1fa6ccc2e0d1684698be2221771f02f438e",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/level2"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            40
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level3",
+          "size": 555188,
+          "sha256": "2443af34e7c6f2136ca58b0aa712a1c35ce13e60567e963ac7224575fa9d4eb1",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/level3"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            40
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level4",
+          "size": 602320,
+          "sha256": "2253e49bca20fa74c12d90eb6c9bd4eadf9ca83f36bcb451f41d7e71fd9bbc28",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/level4"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            40
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level5",
+          "size": 356680,
+          "sha256": "ecbae7085b8126e5a77087e1b60a9fb3568032bbae0818106f22640d0242530e",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/level5"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            40
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/level6",
+          "size": 481120,
+          "sha256": "7312f5011f3222b623e0f06acc5107bcdc72a8487780d9fd5249446fd42be608",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/level6"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            42
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets0.assets",
+          "size": 1939288,
+          "sha256": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/sharedassets0.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            40
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/sharedassets1.assets",
+          "size": 106508704,
+          "sha256": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+          "source": {
+            "root": "windowsStock",
+            "path": "DragNWash_Data/sharedassets1.assets"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            3,
+            40
+          ],
+          "modeAttributes": 2175008768,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        },
+        {
+          "name": "DragNWash_Data/ForeignMod.txt",
+          "size": 33,
+          "sha256": "ecff6876e4b9f754dfa223511a12fb709a48347b8055b4ed6ef45ddbaff3e560",
+          "source": {
+            "root": "components",
+            "path": "ecff6876e4b9f754dfa223511a12fb709a48347b8055b4ed6ef45ddbaff3e560-ForeignMod.txt"
+          },
+          "date": [
+            2026,
+            11,
+            11,
+            0,
+            47,
+            18
+          ],
+          "modeAttributes": 25165824,
+          "internalAttributes": 0,
+          "createSystem": 3,
+          "createVersion": 20,
+          "extractVersion": 20,
+          "extra": "",
+          "comment": ""
+        }
+      ]
+    }
+  ]
+}

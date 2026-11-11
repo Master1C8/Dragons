@@ -1,0 +1,237 @@
+{
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-de-fr-early-build-inputs.zip",
+  "archiveSha256": "259f6247f2f54abf0720dad1db15942ab371e54665c79156e61c9f591c79a3a3",
+  "outputs": [
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-anonymous.assets",
+      "sha256": "009fac18d0a9c06d663623a25c745dc25a6365d4ed2dd820728616d515e6544d",
+      "bytes": 105908544,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-anonymous-check.json",
+      "inputSha256": "5aa0c7c9049c00e272c4054234dfc040928623af07b1d9ae34be7b5bfcfe55a7",
+      "platform": "macos",
+      "locale": "de",
+      "archiveMember": "de/resume-01/macos-anonymous-check.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch3.assets",
+      "sha256": "2d93b650e3c6596dc479ac51bd124d1000f01d56ba7d838b211c10cab85305fe",
+      "bytes": 105909032,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch3-dialogue.json",
+      "inputSha256": "856ff5edea1df5fe4faff50934bdd63ab941fad4ed6b1567a83b75297247b9c2",
+      "platform": "macos",
+      "locale": "de",
+      "archiveMember": "de/resume-01/macos-batch3-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch4.assets",
+      "sha256": "ba7a87edd3bcc186df2337573cdb03885978756034f3905569a9dc5266f1e544",
+      "bytes": 105909256,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch4-dialogue.json",
+      "inputSha256": "8fc8e5e82d2000cdb276992694f8a9bb358a3bbeadbdec6370ddfd1527b7b413",
+      "platform": "macos",
+      "locale": "de",
+      "archiveMember": "de/resume-01/macos-batch4-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch5.assets",
+      "sha256": "5ea757b74ea2236e4858601bf1cc48cbd1600330e2f07694ab540464a7039a7a",
+      "bytes": 105909736,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch5-dialogue.json",
+      "inputSha256": "49320d404d4150f79db88c91010b12f1c261ece81bba09f4feb1e9b636cfe2f7",
+      "platform": "macos",
+      "locale": "de",
+      "archiveMember": "de/resume-01/macos-batch5-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch6.assets",
+      "sha256": "19a91e57f0552b3665c3d4d34c9e794a3c1e3afd76d5c1c15913469359fc35db",
+      "bytes": 105910008,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch6-dialogue.json",
+      "inputSha256": "73ffe7d8f54989e4d80fd4102d6233182a9624887c3e106217bb213228f2108d",
+      "platform": "macos",
+      "locale": "de",
+      "archiveMember": "de/resume-01/macos-batch6-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch7.assets",
+      "sha256": "6ba61b32c6ffb9f9d40dc1d9c39bb389a965fc6eb59a266ca3ba1f74f67b55fb",
+      "bytes": 105910032,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch7-dialogue.json",
+      "inputSha256": "2e8eed0bd2b4e0d121e1b73427b6330f1b363cda1e5c79244f30e5fd62cd651e",
+      "platform": "macos",
+      "locale": "de",
+      "archiveMember": "de/resume-01/macos-batch7-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-special-batch8.assets",
+      "sha256": "e62e317841cbc2eaded3f0eee1064124f96d040e944b885a4adc3e259240c0ed",
+      "bytes": 105910040,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/macos-batch8-dialogue.json",
+      "inputSha256": "9bd75896b1c72eccb4b774edff5a545ed7de8a8afe9523418c0d803b5136c521",
+      "platform": "macos",
+      "locale": "de",
+      "archiveMember": "de/resume-01/macos-batch8-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch3.assets",
+      "sha256": "6f2a197c7802a2c325f6805d8fc5f608711d0d0dcd2475198e3cc02ff5be2416",
+      "bytes": 106461240,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch3-dialogue.json",
+      "inputSha256": "b8d237ac60c58dbc33adb9c3496b68bb22a8594e22722d5bac3c81d8de86f462",
+      "platform": "windows",
+      "locale": "de",
+      "archiveMember": "de/resume-01/windows-batch3-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch4.assets",
+      "sha256": "3055fa439286067202ddfba1c3a311a53698113516747c17776ab50b1e327274",
+      "bytes": 106461472,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch4-dialogue.json",
+      "inputSha256": "f85ac8037dc108d242fb4ea27a057f986a1e0ba969f3322a66a1afb50ee0cee9",
+      "platform": "windows",
+      "locale": "de",
+      "archiveMember": "de/resume-01/windows-batch4-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch5.assets",
+      "sha256": "6c6273957dd5f1b7d0e463cb4d99d315a70cccb3f357fb17b9768a2417ddc7c7",
+      "bytes": 106461952,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch5-dialogue.json",
+      "inputSha256": "abe1bb50eceeaef4277b71c8bb52debc7adbb14d52dd08c85e0ad79641ec17f4",
+      "platform": "windows",
+      "locale": "de",
+      "archiveMember": "de/resume-01/windows-batch5-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch6.assets",
+      "sha256": "b53190c2e7e4d92af41bf58d58fa90ab8083dad2dca2bc856c06115337f97a3e",
+      "bytes": 106462216,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch6-dialogue.json",
+      "inputSha256": "5ac4bfac5878784f57135c74c53bc3c4f36ce1b16cca944a4fb39ad30016ea90",
+      "platform": "windows",
+      "locale": "de",
+      "archiveMember": "de/resume-01/windows-batch6-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch7.assets",
+      "sha256": "a0e00cad488c131862e85e52697048496f5bdc839c3c3714dd5216327a4ee337",
+      "bytes": 106462248,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch7-dialogue.json",
+      "inputSha256": "a2278ad74db891f2763a809e0bca9fb4e5f8aa826f314f8ec624a4236bda7523",
+      "platform": "windows",
+      "locale": "de",
+      "archiveMember": "de/resume-01/windows-batch7-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-special-batch8.assets",
+      "sha256": "8adbaca73aba277217c14d277b09cf8d4405d7b7c009e797a316f063dcf3c81a",
+      "bytes": 106462248,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/windows-batch8-dialogue.json",
+      "inputSha256": "32a50fdfa18dbc35072fbbb980102570196c78cdf8c81a363b0c7171cc9e2c99",
+      "platform": "windows",
+      "locale": "de",
+      "archiveMember": "de/resume-01/windows-batch8-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/macos-anonymous.assets",
+      "sha256": "616f54c2e35cff2c3337a3a2a796054a7a8dee14945aa681c1f3b436063df56d",
+      "bytes": 105908608,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/macos-anonymous-final.json",
+      "inputSha256": "d085028586ec33e8a708d054a44ef3443327fecbc0c17c62f93b4e74b729289f",
+      "platform": "macos",
+      "locale": "fr",
+      "archiveMember": "fr/resume-01/macos-anonymous-final.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/macos-seven.assets",
+      "sha256": "2c32083db1a086a0bc2ef04df65b4c55b418a68d6cb9f0701d540750f1ce2c4b",
+      "bytes": 105908512,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/macos-seven-batch.json",
+      "inputSha256": "eda981fa123e10d26812b68473b946d12b70fa8dc51d810748483ee492f6bd7a",
+      "platform": "macos",
+      "locale": "fr",
+      "archiveMember": "fr/resume-01/macos-seven-batch.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/windows-anonymous.assets",
+      "sha256": "dd4db0ce29e2f61a9fe9326dc5180e5ff8ea67ed3ab5d92982fa9a4780839885",
+      "bytes": 106460816,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/windows-anonymous-final.json",
+      "inputSha256": "f39781db2ad617ab28a2d5e7da6ec3b5f9548c2966d46b8964dcd58c0c84dc11",
+      "platform": "windows",
+      "locale": "fr",
+      "archiveMember": "fr/resume-01/windows-anonymous-final.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/windows-seven.assets",
+      "sha256": "55b7e1311b6a300299b13a03699c9f801b214e7abb857ad8f75b968f2942b16f",
+      "bytes": 106460720,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/windows-seven-batch.json",
+      "inputSha256": "5535c8cb860b82da42b7091d24864350af285de14c1c6a71b8e17ddf78f2a24b",
+      "platform": "windows",
+      "locale": "fr",
+      "archiveMember": "fr/resume-01/windows-seven-batch.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-02/macos-continuations.assets",
+      "sha256": "c4e7471a8781ea86e155c28c6ba7cdbd912816fd11a837a7cb32d29201220f78",
+      "bytes": 105910112,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-02/macos-continuations-dialogue.json",
+      "inputSha256": "0a039a7dc21d683fb3c2cf96e6709431c174337005e75fa79119649a63b46ec1",
+      "platform": "macos",
+      "locale": "fr",
+      "archiveMember": "fr/resume-02/macos-continuations-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-02/windows-continuations.assets",
+      "sha256": "2437546e67b157fc723336521568b0eea3a1bf6fd53fa687c58c7ce2b751ac7e",
+      "bytes": 106462328,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-02/windows-continuations-dialogue.json",
+      "inputSha256": "4f997f961fdc8a491844aaaaa506e865ce1103af7f767e8142b63ba4b2e9561c",
+      "platform": "windows",
+      "locale": "fr",
+      "archiveMember": "fr/resume-02/windows-continuations-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-03/macos-conrad-outro-four-romance-revised.assets",
+      "sha256": "44eef033d44c73a0f659b52053928941ea9549ff93ffb3e46072155b26a8488d",
+      "bytes": 105915168,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-03/macos-conrad-outro-four-romance-revised-dialogue.json",
+      "inputSha256": "305e9dcd94e8f0c087eec0829c9c7cb4c97ea7ac19418f23c6e93d8547b9e234",
+      "platform": "macos",
+      "locale": "fr",
+      "archiveMember": "fr/resume-03/macos-conrad-outro-four-romance-revised-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-03/macos-conrad-outro-four-romance.assets",
+      "sha256": "1050e5d1aec1ec2defe08fe50a147e06f56d22e08162c0defaf5f2338486828e",
+      "bytes": 105915168,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-03/macos-conrad-outro-four-romance-dialogue.json",
+      "inputSha256": "bfcbf0c7f4d286ea55c29325ed9f81f0a6f7207a13c7447520e91c2d26cd0c96",
+      "platform": "macos",
+      "locale": "fr",
+      "archiveMember": "fr/resume-03/macos-conrad-outro-four-romance-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-03/windows-conrad-outro-four-romance-revised.assets",
+      "sha256": "09d2ccf19fddf60f5057b7670169faffa8ab381e69766d4b656fb05df7d5d1da",
+      "bytes": 106467384,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-03/windows-conrad-outro-four-romance-revised-dialogue.json",
+      "inputSha256": "1f4b49b8a437fdc4e28350c139a1d288372bfee2b63cf0b5b3990f28f9190d05",
+      "platform": "windows",
+      "locale": "fr",
+      "archiveMember": "fr/resume-03/windows-conrad-outro-four-romance-revised-dialogue.json"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-03/windows-conrad-outro-four-romance.assets",
+      "sha256": "3dd1bcd7f479f26d17fcfe66ccd4122147b22597dbe6719cec528c821bd57fe8",
+      "bytes": 106467376,
+      "input": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-03/windows-conrad-outro-four-romance-dialogue.json",
+      "inputSha256": "99419238978a193596cc5f369545ee5f9df14a3d9d850fd4d7a9767d44585f10",
+      "platform": "windows",
+      "locale": "fr",
+      "archiveMember": "fr/resume-03/windows-conrad-outro-four-romance-dialogue.json"
+    }
+  ]
+}
