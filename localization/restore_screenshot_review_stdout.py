@@ -3,6 +3,7 @@
 
 import argparse
 import base64
+from contextlib import ExitStack
 import gzip
 import json
 from pathlib import Path
@@ -19,7 +20,7 @@ CONFIG_NOTICE = (
 )
 
 
-def rebuild(row, evidence, image_rows, archive):
+def rebuild(row, evidence, image_sources):
     events = [{'type': 'thread.started', 'thread_id': evidence['sessionId']}]
 
     def emit(kind, index, item_type, **fields):
@@ -37,7 +38,7 @@ def rebuild(row, evidence, image_rows, archive):
     emit('item.started', call_id, 'mcp_tool_call', **call, result=None, error=None, status='in_progress')
     content = []
     for frame in evidence['frames']:
-        original = image_rows[frame['sha256']]
+        original, archive = image_sources[frame['sha256']]
         data = archive.read(original['member'])
         if len(data) != original['bytes'] or sha(data) != frame['sha256']:
             raise ValueError('Screenshot fingerprint mismatch')
@@ -63,18 +64,29 @@ def main():
     parser.add_argument('recorded_path')
     for option in ('metadata', 'images', 'output'):
         parser.add_argument('--' + option, type=Path, required=True)
+    parser.add_argument('--referenced-images', type=Path)
     args = parser.parse_args()
     receipt = read_receipt(args.receipt)
-    for key, source in (('metadata', args.metadata), ('images', args.images)):
-        if sha256(source) != receipt[key]['sha256']:
-            raise ValueError(f'{key} archive fingerprint mismatch')
-    image_receipt = args.receipt.parent / receipt['images']['receipt']
-    image_rows = {row['sha256']: row for row in read_receipt(image_receipt)['outputs']}
+    if sha256(args.metadata) != receipt['metadata']['sha256']:
+        raise ValueError('metadata archive fingerprint mismatch')
+    archives = [(receipt['images'], args.images)]
+    if 'referencedImages' in receipt:
+        if args.referenced_images is None:
+            parser.error('--referenced-images is required for this receipt')
+        archives.append((receipt['referencedImages'], args.referenced_images))
     row = receipt['outputs'][args.recorded_path]
     with gzip.open(args.metadata, 'rt', encoding='utf-8') as stream:
         evidence = json.load(stream)[args.recorded_path]
-    with zipfile.ZipFile(args.images) as archive:
-        data = rebuild(row, evidence, image_rows, archive)
+    with ExitStack() as opened:
+        image_sources = {}
+        for source, path in archives:
+            if sha256(path) != source['sha256']:
+                raise ValueError(f'{source["name"]} archive fingerprint mismatch')
+            archive = opened.enter_context(zipfile.ZipFile(path))
+            image_receipt = args.receipt.parent / source['receipt']
+            for image in read_receipt(image_receipt)['outputs']:
+                image_sources.setdefault(image['sha256'], (image, archive))
+        data = rebuild(row, evidence, image_sources)
     with args.output.open('xb') as stream:
         stream.write(data)
     args.output.chmod(int(row['mode'], 8))

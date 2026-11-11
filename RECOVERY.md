@@ -1678,6 +1678,13 @@ fields, usage and referenced WebP sources. The downloaded inputs
 reproduced all 73 logs byte for byte. The original review state and
 image archives remain the acceptance sources.
 
+The [renderer review stream receipt](localization/evidence/archival-renderer-review-streams-20261111.json)
+uses the same command for 21 Spanish and Italian review logs. Download
+the recorded metadata and both image archives. Pass the additional
+`Dragons-referenced-qa-images.zip` archive as `--referenced-images`.
+The two archives supplied all 33 distinct embedded previews. The check
+reproduced every log byte for byte.
+
 The [empty test log receipt](localization/evidence/archival-empty-test-logs-20261111.json.gz)
 records 170 zero-byte output files from retired tests and builds. Create
 the recorded parent directory if needed and use `install -m "${mode#0o}" /dev/null "$path"`
