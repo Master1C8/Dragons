@@ -1212,6 +1212,24 @@ as `--qa-tools`. For `checkout` rows, the recorded local original is
 the recovery source and must remain available until its replacement is
 verified. The check restored every copy and matched its hash and mode.
 
+The [screenshot review stream receipt](localization/evidence/archival-screenshot-review-streams-20261111.json)
+pins 73 stdout logs from completed visual review attempts. Download the
+compact review fields and the existing QA copy source ZIP from the
+maintainer draft, then restore a selected log:
+
+```sh
+python3.12 -B localization/restore_screenshot_review_stdout.py \
+  localization/evidence/archival-screenshot-review-streams-20261111.json \
+  "$recorded_path" --metadata "$review_fields" --images "$qa_source_zip" \
+  --output "$fresh_log"
+```
+
+The helper verifies both archive hashes and each embedded image hash.
+It restores the original JSON event stream from the stored review
+fields, usage and referenced WebP sources. The downloaded inputs
+reproduced all 73 logs byte for byte. The original review state and
+image archives remain the acceptance sources.
+
 The [empty generated directory receipt](localization/evidence/archival-empty-generated-dirs-20261111.json.gz)
 lists blank bundle signature and .NET reference directories left after
 their files were archived or rebuilt. Recreate the recorded path with
