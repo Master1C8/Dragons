@@ -520,8 +520,13 @@ recorded Pillow and libwebp versions:
 python3.12 -B ~/.codex/tools/screenshot_preview.py "$original_png" --output "$fresh_webp"
 ```
 
-Verify the WebP hash and apply the recorded mode. These PNGs still
-reside at their recorded original paths.
+Verify the WebP hash and apply the recorded mode. The
+[preview source PNG receipt](localization/evidence/archival-preview-source-pngs-20261111.json.gz)
+pins the 31 originals in the maintainer draft. Download its archive,
+verify its SHA-256 and restore the needed original with
+`restore_archived_members.py --recovery-archives` before generating
+the preview. The check restored every original from the downloaded
+archive and reproduced all 31 WebP hashes.
 
 The [binary copy receipt](localization/evidence/archival-binary-copies-20261111.json.gz)
 maps historical executable and library copies to exact files in the stock
