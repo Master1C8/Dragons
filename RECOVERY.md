@@ -431,6 +431,15 @@ python3.12 -B localization/restore_profile_control.py \
 The helper verifies the exact object changes and file hash. It restores
 asset bytes without creating or loading a game profile.
 
+The [test identity follow-up receipt](localization/evidence/archival-remaining-profile-controls-20261111.json)
+uses the same command for four additional test settings assets. For its
+two plist entries, verify the stock macOS `Contents/Info.plist` against
+`stockPlistSha256`, parse it with `plistlib.loads` and update the keys
+listed in the selected entry. Write the result with
+`plistlib.dumps(info, fmt=plistlib.FMT_XML, sort_keys=True)`. Verify
+the SHA-256 and apply the recorded mode. All six files matched the
+historical copies.
+
 The stock asset receipts identify replaceable files in old runtime probes
 on [macOS](localization/evidence/archival-macos-stock-copies-20261111.json)
 and [Windows](localization/evidence/archival-windows-stock-copies-20261111.json).
@@ -1653,6 +1662,12 @@ the recorded structure, checked each mode and matched the inherited
 macOS provenance attribute on the build host. The selection excluded
 runtime profiles, saves, owner paths and directories carrying ACLs or
 other extended attributes.
+
+The [retired build and review folder receipt](localization/evidence/archival-retired-build-review-folders-20261111.json.gz)
+records 399 additional empty build, review and test bundle directories.
+Use `mkdir -p` and the recorded modes to recreate needed paths. The
+check matched each empty directory, its mode and the inherited macOS
+provenance attribute.
 
 The [test bundle plist receipt](localization/evidence/archival-test-bundle-plists-20261111.json.gz)
 records 351 static bundle files and 159 generated test `Info.plist`

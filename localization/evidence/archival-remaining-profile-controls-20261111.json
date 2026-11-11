@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "outputs": [
+    {
+      "path": "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/removed-test-identity/mac-prelaunch-globalgamemanagers",
+      "platform": "macos",
+      "baseSha256": "2f3813fddc22b6c6285099f173b922d782e2f06d659482d9373849e3bbb9794b",
+      "profile": {
+        "company": "Codex Test Sandbox",
+        "product": "ProbeF7R9"
+      },
+      "sha256": "4676274c37675d670c77a64e0d377b4f8bceccba4684dfec7a8c0ca46dd140bf",
+      "bytes": 223240,
+      "mode": "0o644"
+    },
+    {
+      "path": "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/removed-test-identity/mac-run-globalgamemanagers",
+      "platform": "macos",
+      "baseSha256": "2f3813fddc22b6c6285099f173b922d782e2f06d659482d9373849e3bbb9794b",
+      "profile": {
+        "company": "Codex Test Sandbox",
+        "product": "ProbeF7R9"
+      },
+      "sha256": "4676274c37675d670c77a64e0d377b4f8bceccba4684dfec7a8c0ca46dd140bf",
+      "bytes": 223240,
+      "mode": "0o644"
+    },
+    {
+      "path": "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/removed-test-identity/windows-run-globalgamemanagers",
+      "platform": "windows",
+      "baseSha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+      "profile": {
+        "company": "Codex Test Sandbox",
+        "product": "ProbeF8R9"
+      },
+      "sha256": "5ab3e0ea12e61fc642f1b5fb38b60158db323e46b55d5f133ed44671b774faea",
+      "bytes": 223144,
+      "mode": "0o644"
+    },
+    {
+      "path": "localization/work/installer-launch.jlVtlR/win-isolated.globalgamemanagers",
+      "platform": "windows",
+      "baseSha256": "2111d3179b716d7cea4d7d7b6695c902c2aae3c834676d6376993494ab5279f6",
+      "profile": {
+        "company": "Codex Test Sandbox",
+        "product": "ProbeQWI1"
+      },
+      "sha256": "1bf9343c73f91c66917a83e8473dfffac82a745e90dd65e12d3407eacb37354b",
+      "bytes": 223144,
+      "mode": "0o644"
+    }
+  ],
+  "stockPlistSha256": "b976291899923ee4de4714f8d5ac8a684ca90f641466ff5a19af140888777394",
+  "plists": [
+    {
+      "path": "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/removed-test-identity/mac-prelaunch-Info.plist",
+      "updates": {
+        "CFBundleIdentifier": "com.codex.test.dragnwash.probef7r9"
+      },
+      "bytes": 1410,
+      "mode": "0o644",
+      "sha256": "8a6bba83a1c91fb6bbbc1663895a6eb50f722adce042c515f99cd18c770bf7e8"
+    },
+    {
+      "path": "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/removed-test-identity/mac-run-Info.plist",
+      "updates": {
+        "CFBundleIdentifier": "com.codex.test.dragnwash.probef7r9",
+        "LSBackgroundOnly": true
+      },
+      "bytes": 1448,
+      "mode": "0o644",
+      "sha256": "33f7f9a513b1ef8f5092da0d0feba011e44b0ca9c354c18f8ee5061c8db31a6b"
+    }
+  ]
+}
