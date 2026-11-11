@@ -222,6 +222,29 @@ and the owned bottle's `drive_c/windows` directory for the
 The CrossOver receipt covers only stock `system32` and `syswow64` files. The
 helper verifies the original bytes before putting each file back.
 
+For smaller stock assets and standalone copies, the same helper accepts
+compressed receipts. Use the stock macOS Data directory for the
+[macOS receipt](localization/evidence/archival-macos-remaining-stock-20261111.json.gz),
+the stock Windows `DragNWash_Data` directory for the
+[Windows receipt](localization/evidence/archival-windows-remaining-stock-20261111.json.gz),
+and the owned bottle's `drive_c/windows` directory for the
+[CrossOver receipt](localization/evidence/archival-crossover-remaining-stock-20261111.json.gz).
+
+The [release asset receipt](localization/evidence/archival-release-probe-assets-20261111.json.gz)
+records which 0.2.1 installer entry restores each matching historical probe
+file. Use the verified, extracted installer archives and both stock Data
+directories:
+
+```sh
+python3.12 -B localization/restore_release_probe_assets.py \
+  localization/evidence/archival-release-probe-assets-20261111.json.gz \
+  "$recovery/restored" "$macos_stock_data" "$windows_stock_data" "$probe_path"
+```
+
+The helper checks the decoder, stock inputs, delta files and restored asset
+hashes. The archival check restored all 187 distinct release assets before
+removing local copies.
+
 The [Windows stock ZIP receipt](localization/evidence/archival-windows-stock-zip-20261111.json)
 lists all 287 files in the old Parallels test fixture. To recreate the
 fixture, ZIP those relative paths from the owned Windows stock game directory

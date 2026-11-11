@@ -2,6 +2,7 @@
 """Restore archived stock assets in a retained Dragons test copy."""
 
 import argparse
+import gzip
 import hashlib
 import json
 import os
@@ -15,13 +16,20 @@ def sha256(path):
         return hashlib.file_digest(stream, 'sha256').hexdigest()
 
 
+def read_receipt(path):
+    if path.suffix == '.gz':
+        with gzip.open(path, 'rt', encoding='utf-8') as stream:
+            return json.load(stream)
+    return json.loads(path.read_text(encoding='utf-8'))
+
+
 def restore(receipt, stock_data, prefix):
     root = Path(__file__).resolve().parents[1]
     work = root / 'localization/work'
     prefix = (root / prefix).resolve(strict=True)
     if not prefix.is_relative_to(work):
         raise ValueError('Select a retained test directory within localization/work')
-    inventory = json.loads(receipt.read_text())['files']
+    inventory = read_receipt(receipt)['files']
     count = 0
     for name, record in inventory.items():
         relative = Path(name)
