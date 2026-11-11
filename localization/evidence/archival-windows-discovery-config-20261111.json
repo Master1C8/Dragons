@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "base": {
+    "draftRelease": "recovery-inputs-v0.2.1",
+    "archive": "Dragons-legacy-installer-recovery-inputs.zip",
+    "archiveSha256": "9fd742d048d0974de1fced7f9cb965b83ed106dbc0a4d375426385ebf4438f74",
+    "member": "json/770a7809bd7a871a6e1375d24c3e0e2d18bf8a6924c2966915395bbf9edcad42.json",
+    "sha256": "770a7809bd7a871a6e1375d24c3e0e2d18bf8a6924c2966915395bbf9edcad42"
+  },
+  "template": {
+    "revision": "90dcdb138f88da077b9dd2ec91aa9335873e711e",
+    "path": "installer/App/ConfigTemplate.json",
+    "sha256": "88b454689102da12488377f5f38ebddd4e3f9edca5b56d434d0b464e91be79d4"
+  },
+  "output": {
+    "path": "localization/work/installer-discovery.jx49dN/win-payload/PackageConfig.json",
+    "bytes": 196101,
+    "mode": "0o644",
+    "sha256": "1fa99eb91dd8daab6f83d9989543c295b97e1caa53eae6db29c262d7b46e362f"
+  }
+}

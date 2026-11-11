@@ -1120,6 +1120,38 @@ all 19 restored files. Each delta decoded to its recorded target hash
 using the verified stock file and the accepted Xdelta executable. All
 15 also re-encoded byte for byte using their original headers.
 
+The [Windows discovery configuration receipt](localization/evidence/archival-windows-discovery-config-20261111.json)
+pins the previous Windows configuration and the Git template with the
+revised installer messages. Download the archive named in the receipt
+and pass it to the recovery command with a fresh output path.
+
+```sh
+python3.12 - "$legacy_installer_inputs" "$fresh_config" <<'PY'
+import hashlib, json, subprocess, sys, zipfile
+from pathlib import Path
+
+receipt = json.loads(Path("localization/evidence/archival-windows-discovery-config-20261111.json").read_bytes())
+base, template, expected = (receipt[key] for key in ("base", "template", "output"))
+archive = Path(sys.argv[1])
+assert hashlib.sha256(archive.read_bytes()).hexdigest() == base["archiveSha256"]
+with zipfile.ZipFile(archive) as files:
+    original = files.read(base["member"])
+updated = subprocess.check_output(["git", "show", f'{template["revision"]}:{template["path"]}'])
+assert hashlib.sha256(original).hexdigest() == base["sha256"]
+assert hashlib.sha256(updated).hexdigest() == template["sha256"]
+config = json.loads(original)
+config["copy"].update(json.loads(updated)["copy"])
+data = (json.dumps(config, ensure_ascii=False, indent=2) + "\n").encode()
+assert len(data) == expected["bytes"] and hashlib.sha256(data).hexdigest() == expected["sha256"]
+output = Path(sys.argv[2])
+with output.open("xb") as stream:
+    stream.write(data)
+output.chmod(int(expected["mode"], 8))
+PY
+```
+
+The recovered configuration matched the historical file byte for byte.
+
 The [window and Yarn rebuild receipt](localization/evidence/archival-window-and-yarn-rebuilds-20261111.json.gz)
 records 142 copies of two Swift test utilities. Compile the recorded
 `window.swift` with the pinned Swift compiler and name the output
@@ -1564,6 +1596,12 @@ It restores the original JSON event stream from the stored review
 fields, usage and referenced WebP sources. The downloaded inputs
 reproduced all 73 logs byte for byte. The original review state and
 image archives remain the acceptance sources.
+
+The [empty test log receipt](localization/evidence/archival-empty-test-logs-20261111.json.gz)
+records 170 zero-byte output files from retired tests and builds. Create
+the recorded parent directory if needed and use `install -m "${mode#0o}" /dev/null "$path"`
+with the recorded mode for a missing file. The check reproduced all
+170 empty files and matched their modes.
 
 The [empty generated directory receipt](localization/evidence/archival-empty-generated-dirs-20261111.json.gz)
 lists blank bundle signature and .NET reference directories left after
