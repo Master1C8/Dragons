@@ -1409,6 +1409,23 @@ as `--qa-tools`. For `checkout` rows, the recorded local original is
 the recovery source and must remain available until its replacement is
 verified. The check restored every copy and matched its hash and mode.
 
+The [visual checklist receipt](localization/evidence/archival-visual-checklists-20261111.json.gz)
+records 126 runtime copies of a shared QA template. Download the exact
+SiteForMods revision in the receipt into a scratch directory and verify
+the template SHA-256.
+
+```sh
+gh api -H 'Accept: application/vnd.github.raw+json' \
+  'repos/Master1C8/SiteForMods/contents/tools/codex-skills/screenshot-common/references/VISUAL-CHECKS.md?ref=2e4046fd999bf1d0c000a5c974c6c96734dc2941' \
+  > "$qa_reference_dir/VISUAL-CHECKS.md"
+python3.12 -B localization/restore_archived_members.py \
+  localization/evidence/archival-visual-checklists-20261111.json.gz \
+  "$historical_runtime_directory" --qa-tools "$qa_reference_dir"
+```
+
+Create the selected historical runtime directory before restoring it. The
+check matched all 126 copies and their file modes using the downloaded template.
+
 The [screenshot review stream receipt](localization/evidence/archival-screenshot-review-streams-20261111.json)
 pins 73 stdout logs from completed visual review attempts. Download the
 compact review fields and the existing QA copy source ZIP from the
