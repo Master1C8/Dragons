@@ -1,0 +1,131 @@
+{
+  "outputs": [
+    {
+      "path": "localization/work/cjk-fallback-20261110.BAc1J4/ja/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "locale": "ja",
+      "platform": "macos",
+      "fontSha256": "68a3fc98800b2a27b371f2fb79991daf3633bd89309d4ffaa6946fd587f375b5",
+      "fontObject": 300,
+      "sha256": "60682bf0cd94c3b020f88522ec52060b66518d4828f70a73aa26939695816e5e",
+      "bytes": 20544192,
+      "mode": "0o644",
+      "rebuildName": "cjk-fallback-ja-macos.assets",
+      "baseAssetSha256": "053892ad870b4d137593daf89a1d3c1938d530e93a0a22ddeb727fda6b6ef736",
+      "baseReleaseLocale": "ru"
+    },
+    {
+      "path": "localization/work/cjk-fallback-20261110.BAc1J4/ja/win/game/DragNWash_Data/sharedassets0.assets",
+      "locale": "ja",
+      "platform": "windows",
+      "fontSha256": "68a3fc98800b2a27b371f2fb79991daf3633bd89309d4ffaa6946fd587f375b5",
+      "fontObject": 299,
+      "sha256": "ea51188f0795826309b0c7a6d2a06b5e5f7ceaaad251aecaf58c832a575cfcb7",
+      "bytes": 18054528,
+      "mode": "0o644",
+      "rebuildName": "cjk-fallback-ja-windows.assets",
+      "baseAssetSha256": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3"
+    },
+    {
+      "path": "localization/work/cjk-fallback-20261110.BAc1J4/ko/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "locale": "ko",
+      "platform": "macos",
+      "fontSha256": "6bcb2a0703aa137e874fc2dffa85f6c21ba9a67fa329e81b8c801663af7e992a",
+      "fontObject": 300,
+      "sha256": "ad12224f448137dd947e63b823782170994bc88ac0b2828ef2506096e67b8d13",
+      "bytes": 20509568,
+      "mode": "0o644",
+      "rebuildName": "cjk-fallback-ko-macos.assets",
+      "baseAssetSha256": "053892ad870b4d137593daf89a1d3c1938d530e93a0a22ddeb727fda6b6ef736",
+      "baseReleaseLocale": "ru"
+    },
+    {
+      "path": "localization/work/cjk-fallback-20261110.BAc1J4/ko/win/game/DragNWash_Data/sharedassets0.assets",
+      "locale": "ko",
+      "platform": "windows",
+      "fontSha256": "6bcb2a0703aa137e874fc2dffa85f6c21ba9a67fa329e81b8c801663af7e992a",
+      "fontObject": 299,
+      "sha256": "807f03bd37213f772c0e5fdb9c55df9ba828bfa72b6b1b7eb8892db580e2ff24",
+      "bytes": 18019904,
+      "mode": "0o644",
+      "rebuildName": "cjk-fallback-ko-windows.assets",
+      "baseAssetSha256": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3"
+    },
+    {
+      "path": "localization/work/cjk-fallback-20261110.BAc1J4/zh/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "locale": "zh",
+      "platform": "macos",
+      "fontSha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "fontObject": 300,
+      "sha256": "184b9d4be9674609c4fd3a90dc762393da941863fc5ccd5ee3c60b5fc23ff1e4",
+      "bytes": 20513824,
+      "mode": "0o644",
+      "rebuildName": "cjk-fallback-zh-macos.assets",
+      "baseAssetSha256": "053892ad870b4d137593daf89a1d3c1938d530e93a0a22ddeb727fda6b6ef736",
+      "baseReleaseLocale": "ru"
+    },
+    {
+      "path": "localization/work/cjk-fallback-20261110.BAc1J4/zh/win/game/DragNWash_Data/sharedassets0.assets",
+      "locale": "zh",
+      "platform": "windows",
+      "fontSha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "fontObject": 299,
+      "sha256": "ed3f262d2785c5504d7329cffb1d229f1dc4ac49de94046b42c256053d6f4ffc",
+      "bytes": 18024160,
+      "mode": "0o644",
+      "rebuildName": "cjk-fallback-zh-windows.assets",
+      "baseAssetSha256": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3"
+    },
+    {
+      "path": "localization/work/cjk-fallback-20261110.BAc1J4/zh-TW/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "locale": "zh-TW",
+      "platform": "macos",
+      "fontSha256": "dce08bd4fd91aa8aa76ed8fea4b694c2dfb8550f67871e326843212ddbeb88b4",
+      "fontObject": 300,
+      "sha256": "cf9acd527839c3904a11dbe240d9b17f2d3bec77d9b5a5b88e92317637d9e336",
+      "bytes": 20512344,
+      "mode": "0o644",
+      "rebuildName": "cjk-fallback-zh-TW-macos.assets",
+      "baseAssetSha256": "053892ad870b4d137593daf89a1d3c1938d530e93a0a22ddeb727fda6b6ef736",
+      "baseReleaseLocale": "ru"
+    },
+    {
+      "path": "localization/work/cjk-fallback-20261110.BAc1J4/zh-TW/win/game/DragNWash_Data/sharedassets0.assets",
+      "locale": "zh-TW",
+      "platform": "windows",
+      "fontSha256": "dce08bd4fd91aa8aa76ed8fea4b694c2dfb8550f67871e326843212ddbeb88b4",
+      "fontObject": 299,
+      "sha256": "fb3e446d50db6d6004e0dd8b8755675771e3b19a2899878a761f52a81ba5b423",
+      "bytes": 18022680,
+      "mode": "0o644",
+      "rebuildName": "cjk-fallback-zh-TW-windows.assets",
+      "baseAssetSha256": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3"
+    },
+    {
+      "path": "localization/work/cjk-fallback-20261110.BAc1J4/ja-atlas1024/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "locale": "ja",
+      "platform": "macos",
+      "fontSha256": "68a3fc98800b2a27b371f2fb79991daf3633bd89309d4ffaa6946fd587f375b5",
+      "fontObject": 300,
+      "sha256": "2df1e9b3de7b6acb764790abd70f6bead51c48ef2a04a98c75ba9b2e6076c237",
+      "bytes": 20544192,
+      "mode": "0o644",
+      "rebuildName": "cjk-fallback-ja-atlas1024-macos.assets",
+      "atlasObject": 626,
+      "baseAssetSha256": "053892ad870b4d137593daf89a1d3c1938d530e93a0a22ddeb727fda6b6ef736",
+      "baseReleaseLocale": "ru"
+    },
+    {
+      "path": "localization/work/cjk-fallback-20261110.BAc1J4/ja-atlas1024/win/game/DragNWash_Data/sharedassets0.assets",
+      "locale": "ja",
+      "platform": "windows",
+      "fontSha256": "68a3fc98800b2a27b371f2fb79991daf3633bd89309d4ffaa6946fd587f375b5",
+      "fontObject": 299,
+      "sha256": "60fbde705d0c1f87b05fad6feb9477acdd1803b662ce07a1d760bece75494c76",
+      "bytes": 18054528,
+      "mode": "0o644",
+      "rebuildName": "cjk-fallback-ja-atlas1024-windows.assets",
+      "atlasObject": 621,
+      "baseAssetSha256": "c8ce3f2e8f52bb5d191c773e6f5f2a4e23d6c6c6ee8893aa7ac7a784cb1c7ac3"
+    }
+  ]
+}

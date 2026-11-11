@@ -4,7 +4,9 @@
 import argparse
 import os
 from pathlib import Path
+import re
 import shutil
+import subprocess
 import tempfile
 import zipfile
 
@@ -12,18 +14,28 @@ from restore_probe_assets import read_receipt, relative_path, sha256
 
 
 def stage(row, roots, destination):
-    source_root = roots[row['root']]
-    if source_root is None:
-        raise ValueError(f"Supply the {row['root']} recovery directory")
-    source = source_root / relative_path(row['source'])
-    if source.resolve() != source or not source.is_file():
-        raise ValueError(f'Unexpected recovery source: {source}')
-    if 'member' in row:
-        with zipfile.ZipFile(source) as archive, archive.open(row['member']) as member:
-            with destination.open('xb') as stream:
-                shutil.copyfileobj(member, stream)
+    if row['root'] == 'git':
+        source = row['source']
+        if not re.fullmatch(r'[0-9a-f]{40}|[0-9a-f]{64}', source):
+            raise ValueError('Expected a full Git blob ID')
+        with destination.open('xb') as stream:
+            subprocess.run(
+                ['git', '-C', str(roots['checkout']), 'cat-file', 'blob', source],
+                stdout=stream, check=True,
+            )
     else:
-        shutil.copyfile(source, destination)
+        source_root = roots[row['root']]
+        if source_root is None:
+            raise ValueError(f"Supply the {row['root']} recovery directory")
+        source = source_root / relative_path(row['source'])
+        if source.resolve() != source or not source.is_file():
+            raise ValueError(f'Unexpected recovery source: {source}')
+        if 'member' in row:
+            with zipfile.ZipFile(source) as archive, archive.open(row['member']) as member:
+                with destination.open('xb') as stream:
+                    shutil.copyfileobj(member, stream)
+        else:
+            shutil.copyfile(source, destination)
     if destination.stat().st_size != row['bytes'] or sha256(destination) != row['sha256']:
         raise ValueError(f'Recovery source fingerprint mismatch: {source}')
 

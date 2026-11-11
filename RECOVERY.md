@@ -291,6 +291,12 @@ The recovery check restored 1,148 files and verified their SHA-256 and modes.
 If a ZIP source is listed in the historical locale, Ukrainian or shaped
 package receipts below, rebuild the ZIP before restoring any member from it.
 
+The [source copy receipt](localization/evidence/archival-git-source-copies-20261111.json.gz)
+maps retired local snapshots to byte-identical blobs reachable from its
+recorded Git revision. Use `restore_archived_members.py` with the receipt
+and a retained test directory. The Polish staged asset in that receipt
+comes from the rebuilt `draft-v2` Windows package described below.
+
 The [Yarn test asset receipt](localization/evidence/archival-yarn-probes-20261111.json)
 records six synthetic missing-line assets. Restore a recorded path from the
 matching stock Data directory with Python 3.12 and the pinned UnityPy version:
@@ -328,6 +334,30 @@ python3.12 -B "localization/build_${platform}_package.py" "$stock" "$historical_
 The five rebuilt Windows ZIPs matched the recorded SHA-256. The two rebuilt
 macOS bundles matched the recorded manifest and every surviving file and
 directory. Both passed strict code signature checks.
+
+The [CLI and CJK package receipt](localization/evidence/archival-cli-cjk-packages-20261111.json.gz)
+records the same rebuild procedure for the two Polish CLI drafts on both
+platforms and the German Windows candidate. Use the exact translation from
+each row's `localeSourceRevision`. Use the tool archive and Mono.Cecil
+dependencies described in the Ukrainian receipt below. The three Windows
+ZIPs and all surviving files of the two macOS bundles matched.
+
+For the Japanese diagnostic builds in the same receipt, create a locale
+template with `paired_locale.catalog` and `paired_locale.template` from v42.
+For each ID, use its bound source text, with a `platforms` mapping when the
+sources differ. Apply the two `syntheticInput.replacements` and serialize as
+UTF-8 JSON with two-space indentation, unescaped Unicode and a final newline.
+Verify the resulting input hash. Use the usual CJK flags with the recovered
+Japanese font and license, then take `sharedassets1.assets` from the rebuilt
+package. Both diagnostic staging files matched their recorded SHA-256.
+
+The [CJK font control receipt](localization/evidence/archival-cjk-font-probes-20261111.json)
+pins the ten earlier replacement-font controls. Invoke
+`restore_cjk_font_probe.py` with the receipt, recorded path, `--stock` Data
+directory, archived regional `--font` and fresh `--output`. For macOS,
+first restore the accepted Russian `sharedassets0.assets` with the release
+asset recipe and pass it as `--base-asset`. The Windows controls use the
+stock asset directly. All ten controls matched byte for byte.
 
 The [Ukrainian verification receipt](localization/evidence/archival-uk-verification-20261111.json.gz)
 pins three historical structure-control inputs and the two exact .NET tools
@@ -384,9 +414,12 @@ and imported UnityPy, TypeTreeGeneratorAPI and fontTools. Its pinned
 
 The [German batch receipt](localization/evidence/archival-de-partial-20261111.json)
 and the [early German and French batch receipt](localization/evidence/archival-de-fr-early-20261111.json)
-cover 41 intermediate assets whose rebuilds matched byte for byte. Download
+cover 41 intermediate assets whose rebuilds matched byte for byte. The
+[dialogue probe receipt](localization/evidence/archival-dialogue-probes-20261111.json.gz)
+adds 19 exact matches with the same rebuild commands. Download
 the corresponding input archive from the `recovery-inputs-v0.2.1` maintainer
-draft, check its archive hash and extract the dialogue JSON files. Match each
+draft, check its archive hash and extract the dialogue JSON files. Use the
+recorded `archiveMember` when present. Match each
 JSON and rebuilt asset to the SHA-256 in the receipt. Set `DRAGONS_SITE_LOCALES`
 to the canonical locale catalog and use the stock Data paths described above.
 Set `batch_locale` to the locale in the receipt, or `de` for the German-only
