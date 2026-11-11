@@ -1,0 +1,275 @@
+{
+  "schema": 1,
+  "sdk": "8.0.131",
+  "historicalCheckout": "/Users/antonkrutov/Desktop/Dragons",
+  "gameLaunched": false,
+  "builds": [
+    {
+      "project": {
+        "path": "localization/tools/addressable-catalog-locations/addressable-catalog-locations.csproj",
+        "revision": "0acf210282f880564ac43128d45b40d102c8d39e",
+        "sha256": "3db8bb5512fe30d125fe0f0fe86e5d696ef8a57b55feb6a35d9ff4f76926c9e9"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/addressable-catalog-locations/Program.cs",
+          "revision": "0acf210282f880564ac43128d45b40d102c8d39e",
+          "sha256": "661e6f5f5024cc00b95e1f3086994bed1e571e1bfee381479fd4ed361bb36a45"
+        }
+      ],
+      "objectPath": "localization/work/addressable-catalog-locations-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "c61db128597cd5218feefab3420bfb5641df3100",
+      "assemblyName": "addressable-catalog-locations",
+      "pathMap": true,
+      "embeddedSources": "generated"
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-display-probe/speaker-display-probe.csproj",
+        "revision": "0131963c09d0667a651f9b1002aa92e66f2088d0",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-display-probe/Program.cs",
+          "revision": "0131963c09d0667a651f9b1002aa92e66f2088d0",
+          "sha256": "e70e7b95cba3f8da8a89ba93908fa09cae28ca0ff8ee835b10e2cf2c4d67a12d"
+        }
+      ],
+      "objectPath": "localization/work/alexander-body-final-20261110.Vjt7m6/tool/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "8360fa6b5ee3d5e0f41cb559133fc906279d6e8a",
+      "assemblyName": "speaker-display-probe",
+      "embeddedSources": "generated",
+      "pathMap": true
+    },
+    {
+      "project": {
+        "path": "localization/tools/background-input-probe/patcher/patcher.csproj",
+        "revision": "4b4f19fd4a8c2fc10115d6761e8910eb56186498",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/background-input-probe/patcher/Program.cs",
+          "revision": "4b4f19fd4a8c2fc10115d6761e8910eb56186498",
+          "sha256": "6ada5885eeaf38f38ea2b3c41fa8f42b9835ad1ca9f6cc03a813eaec357052a1"
+        }
+      ],
+      "objectPath": "localization/work/background-input-20261109.UU2LOG/tracked/patcher-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "bb18ffb6f0da20f4500ed80828219d1d471c8a79",
+      "assemblyName": "patcher",
+      "pathMap": true,
+      "embeddedSources": "generated"
+    },
+    {
+      "project": {
+        "path": "localization/tools/prepared-text-probe/prepared-text-probe.csproj",
+        "revision": "d204073463cdce471efb79ba66c4f1c4051b9556",
+        "sha256": "85b29b67d9e3503a594902982140cf224b6d7c9b2b3527b4622449defd1ac8fc"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/prepared-text-probe/Program.cs",
+          "revision": "d204073463cdce471efb79ba66c4f1c4051b9556",
+          "sha256": "a0de1e986b5c24a0b95ae177664fc49d30653fc2f128b49f2a770dccff27955f"
+        }
+      ],
+      "objectPath": "localization/work/display-adapter-20261110.oMiEA1/patch-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "f3312bfcb48736d568df6af1e19b80ed08bf01e2",
+      "assemblyName": "prepared-text-probe",
+      "pathMap": true,
+      "embeddedSources": "generated"
+    },
+    {
+      "project": {
+        "path": "localization/tools/managed-fallback/managed-fallback.csproj",
+        "revision": "03fb192780056b0e65e3648bdaefc6de976004fb",
+        "sha256": "85b29b67d9e3503a594902982140cf224b6d7c9b2b3527b4622449defd1ac8fc"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/managed-fallback/Program.cs",
+          "revision": "03fb192780056b0e65e3648bdaefc6de976004fb",
+          "sha256": "29bc2ccc16e1f38f2329f383dc4b2f424f00fdee596c4dd49758924c20a0c534"
+        }
+      ],
+      "objectPath": "localization/work/managed-fallback-final-20261110.tigL9H/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "43de9787756b5d89df17b75a406e7e511abd66f7",
+      "assemblyName": "managed-fallback",
+      "pathMap": true,
+      "embeddedSources": "generated"
+    },
+    {
+      "project": {
+        "path": "localization/tools/managed-metadata-audit/managed-metadata-audit.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "1458e6076e669d64faf33a8cf5e4b104546a8b476ee57e423238760a7054028d"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/managed-metadata-audit/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "e8a8800bb4c587f84fc75c1f59ad959419ae79d88590e5c9605bd9ad219f31d0"
+        }
+      ],
+      "objectPath": "localization/work/managed-metadata-20261110.NICDw4/obj-final",
+      "configuration": "Debug",
+      "sourceRevisionId": "3049b138939b94f81b2f5d068c72d3681e6ff7c7",
+      "assemblyName": "managed-metadata-audit",
+      "embeddedSources": "generated",
+      "pathMap": true
+    },
+    {
+      "project": {
+        "path": "localization/tools/managed-strings/managed-strings.csproj",
+        "revision": "d8b9c6ed717f710bf316772df4b10ee4871352f0",
+        "sha256": "4aaedc36db5be19f4978b7f4f70312f2e5c82530bdd260eb7f87d49735c4d990"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/managed-strings/Program.cs",
+          "revision": "d8b9c6ed717f710bf316772df4b10ee4871352f0",
+          "sha256": "4671a63885e4ea44b6ea958648e1163f82c1989d9378513ae8b5187c9551e3e8"
+        }
+      ],
+      "objectPath": "localization/work/managed-strings-package-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "765eca71e4527a46589990aec6ab7d1c12421651",
+      "assemblyName": "managed-strings",
+      "embeddedSources": "generated",
+      "pathMap": true
+    },
+    {
+      "project": {
+        "path": "localization/tools/text-setter-consumers/text-setter-consumers.csproj",
+        "revision": "7303ba57577121dffdfca14d1b4610de8c8ffe1f",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/text-setter-consumers/Program.cs",
+          "revision": "7303ba57577121dffdfca14d1b4610de8c8ffe1f",
+          "sha256": "29542c5bee97bc1cbeac8146d2c81611968a49c509fc409d9ac14651ff20ab19"
+        }
+      ],
+      "objectPath": "localization/work/text-setter-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "fa79d2e52d43f078dbbad5a4e881558b20ba7a55",
+      "assemblyName": "text-setter-consumers",
+      "pathMap": true,
+      "embeddedSources": "generated"
+    }
+  ],
+  "outputs": {
+    "localization/work/addressable-catalog-locations-bin/addressable-catalog-locations.pdb": {
+      "build": 0,
+      "member": "bin/Debug/net8.0/addressable-catalog-locations.pdb",
+      "sha256": "4862f2e0d9a2457906367bf3b1ac678cdaca526be5e040347ce7b18663a4e3e2",
+      "bytes": 14660,
+      "mode": "0o644"
+    },
+    "localization/work/addressable-catalog-locations-bin/addressable-catalog-locations.dll": {
+      "build": 0,
+      "member": "bin/Debug/net8.0/addressable-catalog-locations.dll",
+      "sha256": "8ebe6aed4818d369797b60e8a6e32eb8deb37c262547614d741879f628acb98a",
+      "bytes": 27648,
+      "mode": "0o644"
+    },
+    "localization/work/alexander-body-final-20261110.Vjt7m6/tool/bin/speaker-display-probe.pdb": {
+      "build": 1,
+      "member": "bin/Debug/net8.0/speaker-display-probe.pdb",
+      "sha256": "5347d8312964109c9fb85d40dc062dd0aef9535add0f5d8fef238bac5a204bc4",
+      "bytes": 20176,
+      "mode": "0o644"
+    },
+    "localization/work/background-input-20261109.UU2LOG/tracked/patcher-bin/patcher.pdb": {
+      "build": 2,
+      "member": "bin/Debug/net8.0/patcher.pdb",
+      "sha256": "7d260b8693df3cb753e46fc0e265343a6845b07701675153970768c153b0da5d",
+      "bytes": 13244,
+      "mode": "0o644"
+    },
+    "localization/work/background-input-20261109.UU2LOG/tracked/patcher-bin/patcher.dll": {
+      "build": 2,
+      "member": "bin/Debug/net8.0/patcher.dll",
+      "sha256": "787ab274092e865a0f6dfdf139c7cb2897c4425de545715d3f9da1a67d1093c0",
+      "bytes": 13312,
+      "mode": "0o644"
+    },
+    "localization/work/display-adapter-20261110.oMiEA1/patch-bin/prepared-text-probe.pdb": {
+      "build": 3,
+      "member": "bin/Debug/net8.0/prepared-text-probe.pdb",
+      "sha256": "aaa238b80eaac3a92e140135a69da207fb3ba48bf30784c1d1f323d70efe95e6",
+      "bytes": 14396,
+      "mode": "0o644"
+    },
+    "localization/work/display-adapter-20261110.oMiEA1/patch-bin/prepared-text-probe.dll": {
+      "build": 3,
+      "member": "bin/Debug/net8.0/prepared-text-probe.dll",
+      "sha256": "cf9d652f386639f5fbcbfe5659e126ca712117476b2e8f168adb9c5c27f72050",
+      "bytes": 23552,
+      "mode": "0o644"
+    },
+    "localization/work/managed-fallback-final-20261110.tigL9H/bin/managed-fallback.pdb": {
+      "build": 4,
+      "member": "bin/Debug/net8.0/managed-fallback.pdb",
+      "sha256": "89c53af8e5be83d983779cd8c6927b4b742d80487a85762039326f83e3bbabad",
+      "bytes": 13588,
+      "mode": "0o644"
+    },
+    "localization/work/managed-fallback-final-20261110.tigL9H/bin/managed-fallback.dll": {
+      "build": 4,
+      "member": "bin/Debug/net8.0/managed-fallback.dll",
+      "sha256": "a7e9b9b2ae98d1b737e5afa125432c501fd9326cedc3c6dea8c8a767bb71a5bd",
+      "bytes": 20992,
+      "mode": "0o644"
+    },
+    "localization/work/managed-metadata-20261110.NICDw4/bin-final/managed-metadata-audit.pdb": {
+      "build": 5,
+      "member": "bin/Debug/net8.0/managed-metadata-audit.pdb",
+      "sha256": "d526e13471f536c13aecc84411ab2e58b6f0fd7a3881920917e5ea47e866e7ec",
+      "bytes": 15308,
+      "mode": "0o644"
+    },
+    "localization/work/managed-metadata-20261110.NICDw4/bin-final/managed-metadata-audit.dll": {
+      "build": 5,
+      "member": "bin/Debug/net8.0/managed-metadata-audit.dll",
+      "sha256": "a7c589a7b430cdbb4b99496f4b6b52507e95e72b2eb9555da818ea07d5da1ce6",
+      "bytes": 66560,
+      "mode": "0o644"
+    },
+    "localization/work/managed-strings-package-bin/managed-strings.pdb": {
+      "build": 6,
+      "member": "bin/Debug/net8.0/managed-strings.pdb",
+      "sha256": "c7b0bea241b58e62e65d131b1ed091b3d5fdf1630a001fd433e80b18542de7eb",
+      "bytes": 13008,
+      "mode": "0o644"
+    },
+    "localization/work/managed-strings-package-bin/managed-strings.dll": {
+      "build": 6,
+      "member": "bin/Debug/net8.0/managed-strings.dll",
+      "sha256": "953fb61c95fc16cf374592e10909720981e24e98a89fd0d654d1d82ed3b8a8ba",
+      "bytes": 18432,
+      "mode": "0o644"
+    },
+    "localization/work/text-setter-bin/text-setter-consumers.pdb": {
+      "build": 7,
+      "member": "bin/Debug/net8.0/text-setter-consumers.pdb",
+      "sha256": "f4ac2b840794a09ed636b10ecf3cea78db7a978eaab98e87ad3f1c8e8b5c34c4",
+      "bytes": 13404,
+      "mode": "0o644"
+    },
+    "localization/work/text-setter-bin/text-setter-consumers.dll": {
+      "build": 7,
+      "member": "bin/Debug/net8.0/text-setter-consumers.dll",
+      "sha256": "c1541394c18438c3229661fda97716bf7af7080b369e4bebfd5e786237c24e28",
+      "bytes": 26112,
+      "mode": "0o644"
+    }
+  }
+}

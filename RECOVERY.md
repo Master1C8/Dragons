@@ -810,6 +810,12 @@ compiler revision and historical object paths come from the matching Git
 snapshots and original PDB records. Rebuild a needed DLL before replaying
 its dependent copies. The recovery command matched all 16 outputs.
 
+The [portable build follow-up receipt](localization/evidence/archival-followup-portable-builds-20261111.json)
+uses the same command for 15 more files. Some sources are pinned to
+later Git snapshots whose bytes match the original PDB checksums.
+The recorded build revision remains the value used by the compiler.
+All 15 outputs and 15 dependent copies matched.
+
 The [historical managed source receipt](localization/evidence/archival-historical-managed-source-deltas-20261111.json)
 pins 125 project descriptors required by the generated metadata receipt
 and 22 C# sources used by technical evidence or the text copy receipt.
