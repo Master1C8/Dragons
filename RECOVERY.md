@@ -127,7 +127,7 @@ verified bytes and apply the recorded mode. The check restored all 16
 snapshots and matched all 67 copies to their recovered sources.
 
 The [early inventory report receipt](localization/evidence/archival-initial-inventory-reports-20261111.json.gz)
-pins 19 reports built from the original game data. Export the listed
+pins 21 reports built from the original game data. Export the listed
 revision and run its tool against the verified stock paths. For
 `map_yarn_context.py`, pass both Data paths as `--macos-data` and
 `--windows-data`. The hierarchy and level tools take platform and Data
@@ -136,7 +136,8 @@ and `--export "$base_report"`.
 
 Build the two managed scanners in Release with the pinned SDK and
 Mono.Cecil. Pass platform and the verified stock Managed directory to
-`text-setter-consumers`. Pass platform and the stock
+`text-setter-consumers`, with the optional recorded `argument`.
+Pass platform and the stock
 `Assembly-CSharp.dll` to `managed-strings`. Capture stdout as the base
 report for both scanners and the Python inventory commands. Then run:
 
@@ -147,7 +148,8 @@ python3.12 -B localization/restore_initial_inventory_report.py \
 ```
 
 The helper verifies both fingerprints and reapplies the early JSON
-layout and fields recorded in the receipt.
+layout and fields recorded in the receipt. For the earlier resource-route
+reports it omits the two categories added by the later scanner.
 
 For the nine locales with additional font inputs, download
 `Dragons-font-build-inputs.zip` from the same maintainer draft. Verify its
@@ -835,10 +837,16 @@ Use the receipt's `applicationHeader`, check the generated delta hash
 and apply each destination's recorded mode.
 
 The [installer delta copy receipt](localization/evidence/archival-installer-delta-copies-20261111.json.gz)
-maps 49 duplicate VCDIFF files to the retained historical originals.
-Restore a selected directory with `restore_archived_members.py`.
-Keep the recorded sources available until their replacement is verified.
-The recovery check matched every copy and mode.
+maps 49 duplicate VCDIFF files to their historical originals.
+Restore those sources first from the
+[legacy installer input receipt](localization/evidence/archival-legacy-installer-inputs-20261111.json.gz).
+It pins 15 original deltas and four configuration files used by the
+installer delta and historical text copy receipts. Download and verify
+the archive from the maintainer draft, then restore the needed originals
+with `restore_archived_members.py --recovery-archives`. The check matched
+all 19 restored files. Each delta decoded to its recorded target hash
+using the verified stock file and the accepted Xdelta executable. All
+15 also re-encoded byte for byte using their original headers.
 
 The [window and Yarn rebuild receipt](localization/evidence/archival-window-and-yarn-rebuilds-20261111.json.gz)
 records 142 copies of two Swift test utilities. Compile the recorded

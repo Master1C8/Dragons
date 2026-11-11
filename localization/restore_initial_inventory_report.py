@@ -25,6 +25,14 @@ def project(text, row):
             if result.count(before) != 1:
                 raise ValueError('Expected one historical limitations field')
             result = result.replace(before, after, 1)
+        if categories := row.get('omitResourceCategories'):
+            prefix, opening, remainder = result.partition('  "resourceSites": [\n')
+            records, closing, suffix = remainder.partition('\n  ]')
+            if not opening or not closing:
+                raise ValueError('Missing historical resource sites array')
+            entries = re.split(r',\n(?=    \{)', records)
+            kept = [entry for entry in entries if json.loads(entry)['category'] not in categories]
+            result = prefix + opening + ',\n'.join(kept) + closing + suffix
         return result
 
     document = json.loads(text)
