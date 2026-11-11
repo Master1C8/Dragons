@@ -883,6 +883,30 @@ result to the recorded hash and restore each path's mode.
 The [final usage evidence receipt](localization/evidence/archival-final-usage-20261111.json)
 pins the private archive with the final Model usage manifest, supporting
 evidence and readback. Verify its SHA-256 and the individual member hashes.
+
+The [cited technical evidence receipt](localization/evidence/archival-cited-technical-evidence-20261111.json.gz)
+links historical read-backs, editorial reports and runtime logs to the
+tracked documents that record their SHA-256 values. Download
+`Dragons-cited-technical-evidence.zip` from the maintainer draft and verify
+its SHA-256. Create the needed destination parents and restore a selected
+test directory with `restore_archived_members.py` and `--recovery-archives`.
+The archive holds 786 distinct members for 1,015 files. The recovery check
+matched every file to its recorded hash.
+
+The [component scout receipt](localization/evidence/archival-component-scouts-20261111.json.gz)
+records five original scout scripts and 14 outputs. Export `localization`
+from the receipt's `importRevision` into a temporary directory, then use
+that directory for imports. Run the recorded scout from the canonical
+checkout with Python 3.12, the pinned Unity dependencies and the
+corresponding verified stock Data path.
+
+```sh
+PYTHONPATH="$revision_export/localization" python3.12 -B "$recorded_scout" \
+  "$platform" "$stock_data" "$fresh_json" > "$fresh_stdout"
+```
+
+Verify the selected JSON or stdout hash and apply the recorded file mode.
+All 14 outputs were rebuilt byte for byte.
 To recreate the historical counter snapshot, point the restore tool at the
 original read-only Codex journal directory or an exact copy:
 
