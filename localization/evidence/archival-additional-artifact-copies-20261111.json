@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "outputs": {
+    "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/attempt-02.JpURzi/mac-retry/companion.csproj": {
+      "recipe": "managedSource",
+      "receipt": "archival-historical-managed-source-deltas-20261111.json",
+      "recordedPath": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/settings-companion/companion.csproj",
+      "draftRelease": "recovery-inputs-v0.2.1",
+      "archive": "Dragons-historical-managed-source-deltas.zip",
+      "bytes": 2216,
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "mode": "0o644"
+    },
+    "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/attempt-02.JpURzi/win-retry/companion.csproj": {
+      "recipe": "managedSource",
+      "receipt": "archival-historical-managed-source-deltas-20261111.json",
+      "recordedPath": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/settings-companion/companion.csproj",
+      "draftRelease": "recovery-inputs-v0.2.1",
+      "archive": "Dragons-historical-managed-source-deltas.zip",
+      "bytes": 2216,
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/mac-retry/companion.csproj": {
+      "recipe": "managedSource",
+      "receipt": "archival-historical-managed-source-deltas-20261111.json",
+      "recordedPath": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/settings-companion/companion.csproj",
+      "draftRelease": "recovery-inputs-v0.2.1",
+      "archive": "Dragons-historical-managed-source-deltas.zip",
+      "bytes": 2216,
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/win-retry/companion.csproj": {
+      "recipe": "managedSource",
+      "receipt": "archival-historical-managed-source-deltas-20261111.json",
+      "recordedPath": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/settings-companion/companion.csproj",
+      "draftRelease": "recovery-inputs-v0.2.1",
+      "archive": "Dragons-historical-managed-source-deltas.zip",
+      "bytes": 2216,
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "mode": "0o644"
+    },
+    "localization/work/uk-finish-18.SbcoRL/reviewed/settings-smoke/companion/companion.csproj": {
+      "recipe": "managedSource",
+      "receipt": "archival-historical-managed-source-deltas-20261111.json",
+      "recordedPath": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/settings-companion/companion.csproj",
+      "draftRelease": "recovery-inputs-v0.2.1",
+      "archive": "Dragons-historical-managed-source-deltas.zip",
+      "bytes": 2216,
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "mode": "0o644"
+    },
+    "localization/work/presenter-template-flow-20261109.FIRHil/Program-with-typewriter.cs": {
+      "recipe": "managedSource",
+      "receipt": "archival-retained-probe-source-deltas-20261111.json.gz",
+      "recordedPath": "localization/work/presenter-template-flow-20261109.FIRHil/expanded/Program.cs",
+      "draftRelease": "recovery-inputs-v0.2.1",
+      "archive": "Dragons-retained-probe-source-deltas.zip",
+      "bytes": 1892,
+      "sha256": "b16a080ae1c018f9ea9b79aadf4a88a937660ba397c817633c34c5fa288f14d4",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/win-payload/PackageConfig.json": {
+      "recipe": "localeSelection",
+      "draftRelease": "recovery-inputs-v0.2.1",
+      "archive": "Dragons-legacy-installer-recovery-inputs.zip",
+      "archiveSha256": "9fd742d048d0974de1fced7f9cb965b83ed106dbc0a4d375426385ebf4438f74",
+      "member": "json/770a7809bd7a871a6e1375d24c3e0e2d18bf8a6924c2966915395bbf9edcad42.json",
+      "memberSha256": "770a7809bd7a871a6e1375d24c3e0e2d18bf8a6924c2966915395bbf9edcad42",
+      "locales": [
+        "ar",
+        "fa",
+        "he",
+        "th",
+        "hi"
+      ],
+      "bytes": 38530,
+      "sha256": "fc323a95ad49f56e481dd659a2a688fd55ba22013e110d447bb0460f317e01c0",
+      "mode": "0o644"
+    },
+    "localization/work/installer-all.Yykv0u/prior-generated-resources/PackageConfig.json": {
+      "recipe": "localeSelection",
+      "draftRelease": "recovery-inputs-v0.2.1",
+      "archive": "Dragons-legacy-installer-recovery-inputs.zip",
+      "archiveSha256": "9fd742d048d0974de1fced7f9cb965b83ed106dbc0a4d375426385ebf4438f74",
+      "member": "json/27849177ffe163a904e3138988933fc183b45a97c180a5e388ced7cba34bf7e3.json",
+      "memberSha256": "27849177ffe163a904e3138988933fc183b45a97c180a5e388ced7cba34bf7e3",
+      "locales": [
+        "ar",
+        "fa",
+        "he",
+        "th",
+        "hi"
+      ],
+      "bytes": 38531,
+      "sha256": "bdd2c44d4da3d304b93d01451eded612cc7cf9b1df9f4fe288ce17ac68b34e82",
+      "mode": "0o644"
+    },
+    "localization/work/rtl-order-20261110.RoB8ak/fonts/cjk-OFL.txt": {
+      "recipe": "archiveMember",
+      "draftRelease": "archive-v0.2.1",
+      "archive": "Dragons-Windows.zip",
+      "archiveSha256": "35070df451dc3f239e1d491bfb94fb2de8fc52e15916a42c70c2e1cf29c29f0a",
+      "member": "Dragons Windows/Resources/LocalizationPayload/Licenses/ja/NotoSansCJK-OFL.txt",
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "mode": "0o644"
+    }
+  }
+}

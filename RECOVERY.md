@@ -821,6 +821,15 @@ file. All 147 files and 211 dependent text copies matched. The recovered
 macOS settings probe also compiled with .NET SDK 8.0.131 against the
 verified stock Managed directory.
 
+The [additional artifact receipt](localization/evidence/archival-additional-artifact-copies-20261111.json)
+uses the same helper for six source copies. For each remaining entry,
+download the named archive from its maintainer draft, verify the archive
+hash and extract the recorded member. For a locale selection, verify the
+member hash, parse the JSON and keep the listed `siteLocale` entries of
+the `languages` array in the recorded order. Serialize with two-space
+indentation, UTF-8 text and a final newline. Verify the output hash and
+apply the mode for each entry. All nine recovered files matched exactly.
+
 The [stock-managed probe build receipt](localization/evidence/archival-managed-stock-probe-builds-20261111.json)
 pins 15 DLLs and 15 portable PDBs built against the owned macOS and
 Windows games. Restore each `archived` source with the historical
