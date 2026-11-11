@@ -267,6 +267,16 @@ and the Windows speaker control. Here each row names the stock file as
 directory. Check the archive, patch and base fingerprints before decoding.
 The three rebuilt files matched the original assets byte for byte.
 
+The [Unity control delta receipt](localization/evidence/archival-unity-control-deltas-20261111.json.gz)
+uses the same procedure for 53 earlier Unity controls and the signed Mono
+library from the installer discovery fixture. For `stock-macos` or
+`stock-windows`, resolve `basePath` inside the verified stock app or game
+directory. For `release-ru-macos`, restore the accepted Russian
+`sharedassets0.assets` with the release asset recipe below. Verify the
+archive, patch and base hashes. All 54 files were restored from the
+downloaded archive and matched the original SHA-256 values. The signed
+library also passed strict signature verification.
+
 The stock asset receipts identify replaceable files in old runtime probes
 on [macOS](localization/evidence/archival-macos-stock-copies-20261111.json)
 and [Windows](localization/evidence/archival-windows-stock-copies-20261111.json).
@@ -332,6 +342,12 @@ python3.12 -B localization/restore_archived_members.py \
 The recovery check restored 1,148 files and verified their SHA-256 and modes.
 If a ZIP source is listed in the historical locale, Ukrainian or shaped
 package receipts below, rebuild the ZIP before restoring any member from it.
+
+The [remaining stock runtime copy receipt](localization/evidence/archival-stock-runtime-copies-20261111.json.gz)
+uses the same helper with the macOS and Windows stock roots. It covers
+11,191 exact copies, including Unity streaming data and Mono configuration
+files. The recovery check copied every recorded file and verified its
+size, SHA-256 and mode.
 
 The [installer copy receipt](localization/evidence/archival-installer-resource-copies-20261111.json.gz)
 maps generated payload copies in old installer work directories to identical
