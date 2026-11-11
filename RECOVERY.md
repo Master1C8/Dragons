@@ -315,6 +315,29 @@ files in the accepted 0.2.1 installer archives. Use the same helper and
 `--accepted "$recovery/restored"`. The recovery check restored 3,086 files
 and verified their hashes and modes.
 
+The [image copy receipt](localization/evidence/archival-image-copies-20261111.json.gz)
+maps duplicate historical screenshots and previews to retained files.
+Restore them with the same helper and the relevant probe path. The check
+restored and verified every duplicate by SHA-256 and mode.
+
+The [binary copy receipt](localization/evidence/archival-binary-copies-20261111.json.gz)
+maps historical executable and library copies to exact files in the stock
+game, accepted installers, installed CrossOver, owned Windows runtime, or
+Mono.Cecil 0.11.6. Rows with a checkout source identify a retained test file.
+For CrossOver application files, pass
+`--crossover-app /Applications/CrossOver.app/Contents/SharedSupport/CrossOver/lib/wine`.
+For the owned Windows runtime, pass `--crossover-windows` with the bottle's
+`drive_c/windows` directory. For Mono.Cecil, pass `--mono-cecil` with the
+NuGet package's `lib/netstandard2.0` directory. Only the source roots needed
+by the selected rows are required. The check restored 42,207 binaries and
+verified their hashes and modes.
+
+The [Windows Yarn preservation input](localization/evidence/windows-yarn-preservation-control-20261107.json)
+recreates the synthetic control in the
+[preservation check](localization/evidence/yarn-preservation-check-20261107.md).
+Use the Windows dialogue command below with locale `ru`. The rebuilt
+asset matched the historical digest and passed the independent verifier.
+
 The [source copy receipt](localization/evidence/archival-git-source-copies-20261111.json.gz)
 maps retired local snapshots to byte-identical blobs reachable from its
 recorded Git revision. Use `restore_archived_members.py` with the receipt

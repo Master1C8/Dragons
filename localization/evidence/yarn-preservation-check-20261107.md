@@ -22,7 +22,8 @@ asset SHA-256 was
 the locale JSON SHA-256
 `d01f3bbd41e3a9c21492005efa3b9b6861cdf1c2f66d0f80b1e30f9cded58b92`;
 11,381 objects matched. Each input replaces one source entry with artificial
-glyphs and is not a translation. Both candidates are local work artifacts.
+glyphs. The [Windows control input](windows-yarn-preservation-control-20261107.json)
+recreates the historical Windows asset with the command in [recovery](../../RECOVERY.md).
 
 The focused tests include a real macOS candidate copied in memory and saved to a
 disposable file with one changed byte in the compiled project object. The check
