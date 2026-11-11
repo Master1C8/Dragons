@@ -284,3 +284,10 @@ the fixture and verified all members without running it.
 
 The release card's visual delivery contains 150 published screenshot slots
 across 30 locales. The upload readback matched all 150 hosted files.
+
+The [renderer acceptance index](localization/evidence/archival-renderer-acceptance-20261111.json)
+pins the static shaping, staged line break, paired runtime and Parallels
+reports. Download its archive from the `recovery-inputs-v0.2.1` maintainer
+draft, verify the archive SHA-256, then verify each report against its entry
+in the index. All four report hashes matched on download. The reports retain
+the scope of the earlier tests.

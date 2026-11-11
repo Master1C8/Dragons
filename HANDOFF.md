@@ -57,7 +57,7 @@ and verified the original objects outside the intended fallback-chain edit.
 Two runs produced identical receipts. A changed reference shaper was rejected
 before writing assets.
 
-The [static receipt](localization/work/complex-font-static-20261110.54U84Z/verified/result.json)
+The [archived static receipt](localization/evidence/archival-renderer-acceptance-20261111.json)
 pins the locale and resource hashes. Its SHA-256 is
 `c52651f71d6241c258ea798a2b0d3e03307949b06e09eb7ee5128f7fb9014f12`.
 The probe accepts explicit stock Data paths, canonical locale catalog,
@@ -124,7 +124,7 @@ that already prepared strings, unknown strings and sliced writes are
 unchanged. The lookup partitions the ordinal key space into small methods.
 Both platform pairs passed static read-back and all mapping controls.
 
-The [staged report](localization/work/ltr-corpus-display-20261110.YN1VJp/staged-breaks/result.json)
+The [archived staged report](localization/evidence/archival-renderer-acceptance-20261111.json)
 has SHA-256 `1790070907ffcd72829054aa2e0b0be0cedcea3ac7c0b09da6a7c1eaca52f901`.
 It also enumerates authored IDs with mixed RTL and LTR/number content.
 The macOS/Windows counts are Arabic 48/48, Persian 47/47 and Hebrew 48/47.
@@ -357,9 +357,10 @@ protected source profiles remained unchanged. The runtime copies'
 TMP, layout, Yarn and speaker DLLs matched the local package bytes.
 The ten tested packages are the signed apps and ZIPs in
 `localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/`.
-The live report and scripts are in
-`localization/work/live-renderer.O43vkv/`. The `live-report.json`
-SHA-256 is `6c623c58a7f1e2b47839dbaa6157109badb26147dbb3b392a29298926c81971a`.
+The live scripts are in `localization/work/live-renderer.O43vkv/`.
+The [acceptance archive](localization/evidence/archival-renderer-acceptance-20261111.json)
+contains `live-report.json` with SHA-256
+`6c623c58a7f1e2b47839dbaa6157109badb26147dbb3b392a29298926c81971a`.
 No authored translation, package payload or installed game changed
 during runtime verification.
 
@@ -383,9 +384,10 @@ Batch-mode startup under Parallels remains unverified.
 
 The wrappers stopped all five game processes and verified unchanged
 original save files and registry settings. The four managed DLL
-hashes and each ZIP hash match the verified packages. Logs and
-`parallels-report.json` are in
-`localization/work/parallels-renderer.sUgfkk/`. The report SHA-256 is
+hashes and each ZIP hash match the verified packages. Logs are in
+`localization/work/parallels-renderer.sUgfkk/`.
+The [acceptance archive](localization/evidence/archival-renderer-acceptance-20261111.json)
+contains `parallels-report.json` with SHA-256
 `8d9a942d6983e1c83d1d2d2ab845a03bb9d59bcf81f1c6de58eca761f119f5e9`.
 
 The [CJK runtime controls](localization/evidence/cjk-fallback-runtime-20261110.md)

@@ -1,0 +1,23 @@
+{
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-renderer-acceptance-reports.zip",
+  "archiveSha256": "869d987825d6fc8cfd49dd81cfee2e0c92335c11f9c6deded6b8de2c76d23de0",
+  "reports": {
+    "complex-font-static-20261110.54U84Z/verified/result.json": {
+      "path": "localization/work/complex-font-static-20261110.54U84Z/verified/result.json",
+      "sha256": "c52651f71d6241c258ea798a2b0d3e03307949b06e09eb7ee5128f7fb9014f12"
+    },
+    "ltr-corpus-display-20261110.YN1VJp/staged-breaks/result.json": {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged-breaks/result.json",
+      "sha256": "1790070907ffcd72829054aa2e0b0be0cedcea3ac7c0b09da6a7c1eaca52f901"
+    },
+    "live-renderer.O43vkv/live-report.json": {
+      "path": "localization/work/live-renderer.O43vkv/live-report.json",
+      "sha256": "6c623c58a7f1e2b47839dbaa6157109badb26147dbb3b392a29298926c81971a"
+    },
+    "parallels-renderer.sUgfkk/parallels-report.json": {
+      "path": "localization/work/parallels-renderer.sUgfkk/parallels-report.json",
+      "sha256": "8d9a942d6983e1c83d1d2d2ab845a03bb9d59bcf81f1c6de58eca761f119f5e9"
+    }
+  }
+}
