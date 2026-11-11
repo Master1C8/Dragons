@@ -630,6 +630,43 @@ small components archive.
 The release card's visual delivery contains 150 published screenshot slots
 across 30 locales. The upload readback matched all 150 hosted files.
 
+The [published gallery receipt](localization/evidence/archival-gallery-copies-20261111.json.gz)
+pins the locale, position and SHA-256 of every accepted screenshot. Run the
+read-only export with the canonical SiteForMods CLI and use a fresh private
+output directory:
+
+```sh
+"$site_cli" game screenshots export "$fresh_export" --game dragn-wash --all-locales
+```
+
+Match each slot and the hash of each downloaded file. The export reproduced
+all 150 slots and the exact bytes of 121 historical local WebP copies.
+The original delivery PNGs are separate inputs. To restore the historical
+capture log, download the receipt's metadata archive from the maintainer
+draft and run:
+
+```sh
+python3.12 -B localization/restore_gallery_capture.py \
+  "$gallery_receipt" "$metadata_archive" "$fresh_export" "$fresh_log"
+```
+
+The helper verifies the private metadata and reconstructs the embedded
+image bytes from the matching published export. Its output matched the
+original capture log byte for byte.
+
+The [worklist and editorial report receipt](localization/evidence/archival-report-rebuilds-20261111.json.gz)
+records 75 exact authoring worklist copies and ten editorial report
+rebuilds. Use the commands in the [localization guide](localization/README.md)
+at the recorded `builderRevision` with the verified stock Data and v42
+inputs. For a worklist with `draftRevision`, use the tracked translation
+from that revision and verify `draftSha256`. Omit the locale file argument
+when that revision is absent. For an editorial report, use the recorded
+exporter and retrieve the before and after translations from their Git
+revisions. Check both hashes. Extract `recipeArchiveMember` from the
+report input archive and `sceneMember` from the source inventory export
+archive. Verify the archive and member hashes. The rebuilt outputs preserve
+the original audit scope and report bytes.
+
 The [renderer acceptance index](localization/evidence/archival-renderer-acceptance-20261111.json)
 pins the static shaping, staged line break, paired runtime and Parallels
 reports. Download its archive from the `recovery-inputs-v0.2.1` maintainer
