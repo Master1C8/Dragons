@@ -115,6 +115,30 @@ as `--complex-layout` and `--complex-layout-sha`. Pass
 as `--complex-report-sha`. The builder checks that the archived shaping plan
 matches the exact release translation. Regenerate shaping plans for text edits.
 
+For regenerating plans, the maintainer draft also contains
+`Dragons-shaping-source-inputs.zip` (SHA-256
+`d2bde546b9d160ef605731636c7051ac5b1a1b4212881bce7d15a8de8b60690b`). It holds
+the pinned Arabic, Hebrew, Hindi and Thai source fonts and licenses, plus the
+paired source worklist. Use Python 3.12 with `font_probe_requirements.txt` and
+`uharfbuzz==0.51.7`, ICU 78 and the pinned [reference shaper](https://github.com/Master1C8/the-murder-of-sonic-the-hedgehog-localization/blob/d9213cfbc4b650f73be80e46c54a340f26fd941a/Scripts/prepare-complex-script-fonts.py).
+The reference shaper's SHA-256 is
+`30c13e3ba4a7650528840bbbe09ad3c73ccd4029a0f778b9387ca7cb3485cbb8`.
+
+```sh
+python3.12 -B localization/probe_complex_fonts.py --rtl-corpus --ltr-corpus \
+  --icu "$icu_library" --macos-data "$macos_stock_data" \
+  --windows-data "$windows_stock_data" --site-catalog "$site_catalog" \
+  --worklist "$shaping_inputs/shared-worklist.json" --fonts "$shaping_inputs/fonts" \
+  --hebrew-font "$shaping_inputs/fonts/NotoSansHebrewLatin-Regular.ttf" \
+  --shaper "$reference_shaper" --output "$recovery/shaping-probe"
+```
+
+The downloaded sources were used to regenerate all five locales' plans.
+The offline check found zero plan boundary failures and zero uncovered glyphs
+on both platforms. The regenerated report has SHA-256
+`37b34d1751b3e3b45766c9e6b4aab7eca8a0aabc7c57136b5f97a2a20ce2fb70`.
+Use the frozen plans above for exact 0.2.1 reproduction.
+
 `localization/rebuild_release_packages.py` selects the correct recovered
 runtime, fonts and license for each locale. Build the three .NET tools in
 Release configuration into `managed-fallback`, `speaker-display-probe` and
