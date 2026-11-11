@@ -1,0 +1,47 @@
+{
+  "outputs": [
+    {
+      "path": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "mode": "0o644",
+      "sha256": "5ad9c1ff41b89de40152820b6a9b1d7585de227c10bb5748f464efb31c959100",
+      "bytes": 105944760,
+      "root": "checkout",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets1.assets"
+    },
+    {
+      "path": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "mode": "0o644",
+      "sha256": "1ae1062b6fc166c61171d1d74d7cc6a4e96791643237d480babaa84ca1be62dd",
+      "bytes": 105931016,
+      "root": "checkout",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets1.assets"
+    },
+    {
+      "path": "localization/work/live-renderer.O43vkv/windows-fa-QWF1/game/DragNWash_Data/sharedassets1.assets",
+      "mode": "0o644",
+      "sha256": "a471f027ab91b8d6e9b80ea97f5a3a1ae657b25d348a339768166466a0990c4c",
+      "bytes": 106496984,
+      "root": "checkout",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/windows/DragNWash-fa.zip",
+      "member": "DragNWash_Data/sharedassets1.assets"
+    },
+    {
+      "path": "localization/work/live-renderer.O43vkv/windows-ar-QWA1/game/DragNWash_Data/sharedassets1.assets",
+      "mode": "0o644",
+      "sha256": "d57a3c01921894be31846302a8b187533e72fbc5c9b341f8098924db55d878e5",
+      "bytes": 106488824,
+      "root": "checkout",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/windows/DragNWash-ar.zip",
+      "member": "DragNWash_Data/sharedassets1.assets"
+    },
+    {
+      "path": "localization/work/live-renderer.O43vkv/windows-he-QWE1/game/DragNWash_Data/sharedassets1.assets",
+      "mode": "0o644",
+      "sha256": "f214ad001afd310945193529f27a6f648c00f1ecf8c2b703ea6eac1286296982",
+      "bytes": 106483240,
+      "root": "checkout",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/windows/DragNWash-he.zip",
+      "member": "DragNWash_Data/sharedassets1.assets"
+    }
+  ]
+}

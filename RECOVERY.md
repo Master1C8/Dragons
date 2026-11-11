@@ -288,8 +288,8 @@ python3.12 -B localization/restore_archived_members.py \
 ```
 
 The recovery check restored 1,148 files and verified their SHA-256 and modes.
-If a ZIP source is listed in the historical locale package receipt below,
-rebuild the ZIP before restoring any member from it.
+If a ZIP source is listed in the historical locale, Ukrainian or shaped
+package receipts below, rebuild the ZIP before restoring any member from it.
 
 The [Yarn test asset receipt](localization/evidence/archival-yarn-probes-20261111.json)
 records six synthetic missing-line assets. Restore a recorded path from the
@@ -346,6 +346,34 @@ use the Ukrainian closure package's `sharedassets1.assets` from the stock
 platform's Data layout within the rebuilt package. Pass it as
 `--base-asset` to `restore_yarn_probe_asset.py` with the fixture receipt.
 The four rebuilt fixture files matched their recorded SHA-256 values.
+
+The [shaped verification receipt](localization/evidence/archival-shaped-verification-20261111.json.gz)
+pins the earlier renderer builds used by the Parallels fixtures. Download its
+tool archive from the maintainer draft and verify its archive and member
+hashes. Copy the Mono.Cecil DLLs from the Ukrainian receipt into each tool
+directory. Use the archived v42 inputs, shaped plans and licenses described
+above. The `current` variant uses the prepared-text project from its recorded
+Git revision, built with .NET 8 in Release configuration. The `wrap` variant
+uses the archived prepared-text tool.
+
+Use the stock and locale inputs and normal package command above. Supply
+`--complex-plans`, `--complex-report-sha`, `--complex-tool`,
+`--complex-license`, `--complex-layout` and `--complex-layout-sha` from the
+receipt and recovered inputs. Before invoking the builder, extract the five
+recorded historical Python modules from `builderRevision` into a temporary
+directory and place that directory ahead of `localization` in Python's module
+search path. The verification invoked the package entry point through
+`runpy.run_path` with this search order and preserved the normal arguments.
+Remove the empty `Contents/Resources/VNRevival` directory from the disposable
+stock macOS copy.
+
+The rebuilt Windows ZIPs match their recorded SHA-256 values. The rebuilt
+macOS packages pass strict code signature verification and match the surviving
+bundle files and directories. The [staged renderer asset receipt](localization/evidence/archival-shaped-staged-assets-20261111.json)
+maps five test files to exact members of those rebuilt packages. Restore
+them using `restore_archived_members.py` after rebuilding the referenced
+package. Restore the package and staged sources before restoring any older
+fixture ZIP that references them.
 
 The [Python environment receipt](localization/evidence/archival-python-environments-20261111.json)
 pins the Python versions and dependency lists for four retired CLI environments.
