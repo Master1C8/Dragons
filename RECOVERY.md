@@ -652,6 +652,53 @@ PY
 
 All four restored records matched the original files and modes.
 
+The [retired cleanup log index](localization/evidence/archival-retired-cleanup-logs-20261111.json.gz)
+records six additional cleanup files. Supply the original checkout
+and the macOS and Windows stock Data directory paths as text. The
+recorded CJK plan and its deletion log share one copy of their rows.
+
+```sh
+python3.12 -B - "$original_checkout" "$original_macos_data" "$original_windows_data" "$fresh_output" <<'PY'
+import gzip, hashlib, json, sys
+from pathlib import Path
+
+receipt = "localization/evidence/archival-retired-cleanup-logs-20261111.json.gz"
+with gzip.open(receipt, "rt") as stream:
+    groups = json.load(stream)["groups"]
+roots = dict(zip(("checkout", "macosData", "windowsData"), map(Path, sys.argv[1:4])))
+destination = Path(sys.argv[4])
+destination.mkdir()
+
+def expand(value):
+    if isinstance(value, dict):
+        if value.keys() == {"$root", "path"}:
+            return str(roots[value["$root"]] / value["path"])
+        return {key: expand(child) for key, child in value.items()}
+    if isinstance(value, list):
+        return [expand(child) for child in value]
+    return value
+
+for group in groups.values():
+    value = expand(group["data"])
+    for relative, row in group["outputs"].items():
+        if row["format"] == "jsonl":
+            content = "".join(json.dumps(entry) + "\n" for entry in value)
+        else:
+            content = json.dumps(value, indent=2)
+            if row["format"] == "json-newline":
+                content += "\n"
+        data = content.encode()
+        assert len(data) == row["bytes"] and hashlib.sha256(data).hexdigest() == row["sha256"]
+        output = destination / relative
+        output.parent.mkdir(parents=True, exist_ok=True)
+        with output.open("xb") as stream:
+            stream.write(data)
+        output.chmod(int(row["mode"], 8))
+PY
+```
+
+The restoration matched the bytes and modes of all six files.
+
 The [Windows test skeleton receipt](localization/evidence/archival-windows-stock-stubs-20261111.json.gz)
 records 86 retired test trees. Each contained directories and a single
 empty stock `configs.app.ini` after the other game files were removed.
