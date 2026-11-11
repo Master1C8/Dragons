@@ -39,10 +39,13 @@ def rebuild(row, builds, catalog, snapshots):
         key: int(index) for index, changed in row.get('overrides', {}).items() for key in changed
     }
     source_text = set(row.get('sourceText', ()))
+    historical_text = row.get('historicalText', {})
     lines = {}
     for key in keys:
         authoring_id, source = bindings[key]
-        if key in source_text:
+        if key in historical_text:
+            translation = historical_text[key]
+        elif key in source_text:
             translation = source
         else:
             translation = translations[overrides.get(key, 0)][authoring_id][platform]

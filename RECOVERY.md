@@ -1760,6 +1760,13 @@ uses the same command for 38 earlier dialogue and UI inputs. The
 `sourceText` keys take their wording from the v42 source bindings. The
 other keys use the recorded translation snapshots. All 38 outputs and
 25 dependent entries in the historical text copy receipt matched.
+
+The [historical platform text receipt](localization/evidence/archival-historical-platform-text-20261111.json.gz)
+uses the same command for 71 earlier dialogue, settings and UI inputs.
+Verify the locale catalog hash in the receipt. Each `historicalText`
+entry preserves between one and five test strings or draft values absent
+from the pinned translations. All 71 inputs and 20 dependent entries in
+the historical text copy receipt matched byte for byte.
 Restore any required control before replaying its copies.
 
 The [historical Yarn table receipt](localization/evidence/archival-historical-yarn-tables-20261111.json)
