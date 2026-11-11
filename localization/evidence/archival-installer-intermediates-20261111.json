@@ -1,0 +1,234 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "builderRevision": "e8f31174d6ca38a9cd2e807297435d8ef0beaa29",
+  "upstreamRepository": "jmacd/xdelta",
+  "upstreamRelease": "v3.2.2",
+  "acceptedDraftRelease": "archive-v0.2.1",
+  "acceptedArchives": {
+    "Dragons-macOS.zip": "acda5664d2e283a84a2e51ecad4ceaa5c25bc7866c83c15a075875a9fdb758bb",
+    "Dragons-Windows.zip": "35070df451dc3f239e1d491bfb94fb2de8fc52e15916a42c70c2e1cf29c29f0a"
+  },
+  "upstreamArchives": {
+    "xdelta3-3.2.2-macos-arm64.tar.gz": "27dcf763beb075ed28061ef136613f4bc6ea3999cb424f23a7d59f18ca2d7c8b",
+    "xdelta3-3.2.2-macos-x86_64.tar.gz": "e217f4d0f92357ee890f9d8b5571f7eb836a86ff87e8834bed0b9d9b38630f86",
+    "xdelta3-3.2.2-windows-x86_64.zip": "d48f7651d86b78fdca397057b46601f89131f37219675df736db70af44ec3379"
+  },
+  "windowsResourceInputs": {
+    "Dragons-macOS.zip": {
+      "icon.icns": {
+        "member": "Dragons \u2014 VN Revival.app/Contents/Resources/App.icns",
+        "sha256": "b4adccae876bef12afaaf476d56f0dff39d6763c547e9d93ca7e3642ec77b24d"
+      },
+      "mac-config.json": {
+        "member": "Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/PackageConfig.json",
+        "sha256": "fc4e4317cff710507cb64b3976dbefc73183fb3a682c0105a451e1e1985f03a6"
+      }
+    },
+    "Dragons-Windows.zip": {
+      "win-config.json": {
+        "member": "Dragons Windows/Resources/PackageConfig.json",
+        "sha256": "4c27dbf56a8a340e1a1959f31fcaee89bfd73633fb01253f2da4a7d7423742f6"
+      }
+    }
+  },
+  "tools": {
+    "imageMagick": "Version: ImageMagick 7.1.2-32 Q16-HDRI aarch64 68f8d115a:20260926 https://imagemagick.org",
+    "windres": "GNU windres (GNU Binutils) 2.47.20260726"
+  },
+  "outputs": {
+    "localization/work/installer.NUdeks/tools/xdelta3-3.2.2-macos-arm64.tar.gz": {
+      "source": {
+        "kind": "upstreamArchive",
+        "archive": "xdelta3-3.2.2-macos-arm64.tar.gz"
+      },
+      "bytes": 201279,
+      "sha256": "27dcf763beb075ed28061ef136613f4bc6ea3999cb424f23a7d59f18ca2d7c8b",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/tools/macos-arm64/xdelta3-3.2.2-macos-arm64/xdelta3decode": {
+      "source": {
+        "kind": "upstreamMember",
+        "archive": "xdelta3-3.2.2-macos-arm64.tar.gz",
+        "member": "xdelta3-3.2.2-macos-arm64/xdelta3decode"
+      },
+      "bytes": 87792,
+      "sha256": "aa32e831fc5433807560b3d5962230f894d4ccfd0f7e75714e213dd24e0aa1be",
+      "mode": "0o755"
+    },
+    "localization/work/installer.NUdeks/tools/macos-arm64/xdelta3-3.2.2-macos-arm64/xdelta3.1": {
+      "source": {
+        "kind": "upstreamMember",
+        "archive": "xdelta3-3.2.2-macos-arm64.tar.gz",
+        "member": "xdelta3-3.2.2-macos-arm64/xdelta3.1"
+      },
+      "bytes": 11040,
+      "sha256": "7a599bacc2864acc9d9d2da674699caab77feabb35900a8a51b10aef18f9677f",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/tools/macos-arm64/xdelta3-3.2.2-macos-arm64/README.md": {
+      "source": {
+        "kind": "upstreamMember",
+        "archive": "xdelta3-3.2.2-macos-arm64.tar.gz",
+        "member": "xdelta3-3.2.2-macos-arm64/README.md"
+      },
+      "bytes": 2593,
+      "sha256": "ac5b344c884a8e77764d239ff0c7ab68cbfbb0b4763f6dbf79556ecc83322d6c",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/tools/macos-arm64/xdelta3-3.2.2-macos-arm64/NEWS": {
+      "source": {
+        "kind": "upstreamMember",
+        "archive": "xdelta3-3.2.2-macos-arm64.tar.gz",
+        "member": "xdelta3-3.2.2-macos-arm64/NEWS"
+      },
+      "bytes": 1154,
+      "sha256": "98fbb5e1baec90420675cea078058c01ea31d910641799c81afd45a36b82b20f",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/tools/macos-arm64/xdelta3-3.2.2-macos-arm64/xdelta3": {
+      "source": {
+        "kind": "upstreamMember",
+        "archive": "xdelta3-3.2.2-macos-arm64.tar.gz",
+        "member": "xdelta3-3.2.2-macos-arm64/xdelta3"
+      },
+      "bytes": 374600,
+      "sha256": "3fdddeb62484b36397535ad2a0eb1aa4630353a5b0fd374b17cca5bab3704610",
+      "mode": "0o755"
+    },
+    "localization/work/installer.NUdeks/tools/xdelta3-3.2.2-macos-x86_64.tar.gz": {
+      "source": {
+        "kind": "upstreamArchive",
+        "archive": "xdelta3-3.2.2-macos-x86_64.tar.gz"
+      },
+      "bytes": 228367,
+      "sha256": "e217f4d0f92357ee890f9d8b5571f7eb836a86ff87e8834bed0b9d9b38630f86",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/tools/macos-x86_64/xdelta3-3.2.2-macos-x86_64/xdelta3decode": {
+      "source": {
+        "kind": "upstreamMember",
+        "archive": "xdelta3-3.2.2-macos-x86_64.tar.gz",
+        "member": "xdelta3-3.2.2-macos-x86_64/xdelta3decode"
+      },
+      "bytes": 63512,
+      "sha256": "9999dae7d9d6fc87e21f6a8b7c375d4dba1e6f6f48d1b560c7ee34d8f90b3432",
+      "mode": "0o755"
+    },
+    "localization/work/installer.NUdeks/tools/macos-x86_64/xdelta3-3.2.2-macos-x86_64/xdelta3.1": {
+      "source": {
+        "kind": "upstreamMember",
+        "archive": "xdelta3-3.2.2-macos-x86_64.tar.gz",
+        "member": "xdelta3-3.2.2-macos-x86_64/xdelta3.1"
+      },
+      "bytes": 11040,
+      "sha256": "7a599bacc2864acc9d9d2da674699caab77feabb35900a8a51b10aef18f9677f",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/tools/macos-x86_64/xdelta3-3.2.2-macos-x86_64/README.md": {
+      "source": {
+        "kind": "upstreamMember",
+        "archive": "xdelta3-3.2.2-macos-x86_64.tar.gz",
+        "member": "xdelta3-3.2.2-macos-x86_64/README.md"
+      },
+      "bytes": 2593,
+      "sha256": "ac5b344c884a8e77764d239ff0c7ab68cbfbb0b4763f6dbf79556ecc83322d6c",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/tools/macos-x86_64/xdelta3-3.2.2-macos-x86_64/NEWS": {
+      "source": {
+        "kind": "upstreamMember",
+        "archive": "xdelta3-3.2.2-macos-x86_64.tar.gz",
+        "member": "xdelta3-3.2.2-macos-x86_64/NEWS"
+      },
+      "bytes": 1154,
+      "sha256": "98fbb5e1baec90420675cea078058c01ea31d910641799c81afd45a36b82b20f",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/tools/macos-x86_64/xdelta3-3.2.2-macos-x86_64/xdelta3": {
+      "source": {
+        "kind": "upstreamMember",
+        "archive": "xdelta3-3.2.2-macos-x86_64.tar.gz",
+        "member": "xdelta3-3.2.2-macos-x86_64/xdelta3"
+      },
+      "bytes": 450672,
+      "sha256": "4fbffa4353ddf163ae94b96dc45b1791937945741f1e17917e0dc8792a479b98",
+      "mode": "0o755"
+    },
+    "localization/work/installer.NUdeks/tools/xdelta3-3.2.2-windows-x86_64.zip": {
+      "source": {
+        "kind": "upstreamArchive",
+        "archive": "xdelta3-3.2.2-windows-x86_64.zip"
+      },
+      "bytes": 188145,
+      "sha256": "d48f7651d86b78fdca397057b46601f89131f37219675df736db70af44ec3379",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/tools/windows-x86_64/xdelta3-3.2.2-windows-x86_64/README.md": {
+      "source": {
+        "kind": "upstreamMember",
+        "archive": "xdelta3-3.2.2-windows-x86_64.zip",
+        "member": "xdelta3-3.2.2-windows-x86_64/README.md"
+      },
+      "bytes": 2662,
+      "sha256": "763369f4b6d4dda98fe3480aa14ee6511b7d29bb467a227a07abbf05c76b914e",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/tools/windows-x86_64/xdelta3-3.2.2-windows-x86_64/NEWS": {
+      "source": {
+        "kind": "upstreamMember",
+        "archive": "xdelta3-3.2.2-windows-x86_64.zip",
+        "member": "xdelta3-3.2.2-windows-x86_64/NEWS"
+      },
+      "bytes": 1191,
+      "sha256": "20ac9ff5b2dd4d43ea87825bf41f53870853b4fc1e6155a4cb70683e0052b5d1",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/tools/windows-x86_64/xdelta3-3.2.2-windows-x86_64/xdelta3decode.exe": {
+      "source": {
+        "kind": "upstreamMember",
+        "archive": "xdelta3-3.2.2-windows-x86_64.zip",
+        "member": "xdelta3-3.2.2-windows-x86_64/xdelta3decode.exe"
+      },
+      "bytes": 48128,
+      "sha256": "67f84255bd009a65b1252784f8b3ebc72b5907766bc366c571e8b85fa7002a06",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/windows-build/Game.png": {
+      "source": {
+        "kind": "windowsBuildResource",
+        "member": "Game.png"
+      },
+      "bytes": 184715,
+      "sha256": "3ff3c296bbd69477cf9f5e259907b4f66884a51ecd38f2c32e627fbf23891e60",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/windows-build/Game.ico": {
+      "source": {
+        "kind": "windowsBuildResource",
+        "member": "Game.ico"
+      },
+      "bytes": 370070,
+      "sha256": "83f09d2a243369f20c561d8f1ce4e6229647c71ce74f4ebea7fe762ca074eb7a",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/windows-build/InstallerLanguages.h": {
+      "source": {
+        "kind": "windowsBuildResource",
+        "member": "InstallerLanguages.h"
+      },
+      "bytes": 814,
+      "sha256": "ce2425ff10de79236d59b0cd60b9e0296148b96364fb09fcdd7bcf1a2c912ce2",
+      "mode": "0o644"
+    },
+    "localization/work/installer.NUdeks/windows-build/InstallerResources.o": {
+      "source": {
+        "kind": "windowsBuildResource",
+        "member": "InstallerResources.o"
+      },
+      "bytes": 371706,
+      "sha256": "2578e47a4ba9af700e0d3b43de03f7ff08bee474874a741fbcc75bcf8abf5d5b",
+      "mode": "0o644"
+    }
+  }
+}

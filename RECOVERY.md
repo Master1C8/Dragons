@@ -43,6 +43,21 @@ resources byte for byte. The rebuilt macOS app passed strict code signature
 verification and contains arm64 and x86-64 executables. The rebuilt Windows
 GUI is x86-64. Both rebuilt ZIPs passed integrity checks.
 
+The [installer intermediate receipt](localization/evidence/archival-installer-intermediates-20261111.json)
+pins four Windows build resources and sixteen xdelta3 downloads or
+extracted members. Download the three named assets from the
+[upstream xdelta3 release](https://github.com/jmacd/xdelta/releases/tag/v3.2.2)
+and verify their recorded SHA-256 values. For an extracted copy, read
+the named member with `tar -xOf` or `unzip -p` and apply the recorded mode.
+
+For the Windows build resources, restore the icon and both
+`PackageConfig.json` files from the accepted ZIPs. Use the installer
+builder at the recorded revision. Its header-generation block, `sips`,
+ImageMagick and MinGW `windres` produce the files in `windows-build`.
+The check ran these same build steps with the verified release inputs
+and matched all four resource files. The downloaded xdelta3 archives
+and their thirteen selected members also matched byte for byte.
+
 ## Edit translations and rebuild game patches
 
 The editable locale JSON files and their hashes are tracked. The recorded
