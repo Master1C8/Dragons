@@ -1071,6 +1071,25 @@ python3.12 -B localization/restore_platform_locale_projection.py \
 The recovery check matched the original bytes and file modes for all
 190 selections.
 
+The [historical Yarn table receipt](localization/evidence/archival-historical-yarn-tables-20261111.json)
+pins 35 dialogue readback tables for Ukrainian, German and Polish and
+19 Ukrainian structure controls. Restore v42 and, for a dialogue table,
+supply the stock Data directory for the platform named in the receipt.
+Omit `--stock-data` for a structure control.
+
+```sh
+python3.12 -B localization/restore_historical_yarn_table.py \
+  localization/evidence/archival-historical-yarn-tables-20261111.json \
+  "$recorded_path" --inventory "$shared_inventory" \
+  --yarn-scope "$paired_yarn_scope" --stock-data "$stock_data" \
+  --output "$fresh_input"
+```
+
+The helper verifies stock assets, the Git translation snapshot and the
+projected output. All 54 restored files matched the original bytes and
+file modes. The check also confirmed that stock data from the wrong
+platform is rejected before creating an output.
+
 The [Git review diff receipt](localization/evidence/archival-review-diffs-20261111.json.gz)
 records the before and after blobs for 105 historical staged review diffs.
 Restore a recorded path with the same Git checkout:
