@@ -1123,6 +1123,20 @@ their files were archived or rebuilt. Recreate the recorded path with
 `mkdir -p` and apply its listed mode if a historical fixture needs it.
 All 537 paths were recreated and verified empty before cleanup.
 
+The [empty bundle and build tree receipt](localization/evidence/archival-empty-bundle-and-build-trees-20261111.json.gz)
+lists 5,914 directories left by retired macOS bundles and .NET builds.
+Recreate needed paths from the top down with `mkdir -p` and apply their
+recorded modes. The recovery check recreated the full recorded structure.
+
+The [test bundle plist receipt](localization/evidence/archival-test-bundle-plists-20261111.json.gz)
+records 351 static bundle files and 159 generated test `Info.plist`
+variants. Use `restore_archived_members.py --macos-stock` for the static
+rows. For a projected row, verify the stock `Contents/Info.plist` hash,
+load it with Python's `plistlib.loads`, and apply the recorded `updates`
+and `remove` entries. Serialize with the recorded `format` and
+`sortKeys` arguments to `plistlib.dumps`. Verify the output hash and
+restore its mode. The check matched all 510 files.
+
 The [.NET generated metadata receipt](localization/evidence/archival-dotnet-generated-metadata-20261111.json.gz)
 lists NuGet restore graphs, generated imports and MSBuild intermediate
 metadata for 419 historical projects. Recover the project descriptor from
