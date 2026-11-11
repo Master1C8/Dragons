@@ -1174,6 +1174,15 @@ recorded source bottles. To restore a historical test tree, recreate the
 recorded directories from the top down and apply their modes. The check
 recreated the selected trees and verified their structure and modes.
 
+The [retired test directory receipt](localization/evidence/archival-empty-retired-test-dirs-20261111.json.gz)
+lists 1,625 empty directories and directory-only subtrees from earlier
+builds and test runs. Recreate the needed paths from the top down with
+`mkdir -p` and apply their recorded modes. The verification recreated
+the recorded structure, checked each mode and matched the inherited
+macOS provenance attribute on the build host. The selection excluded
+runtime profiles, saves, owner paths and directories carrying ACLs or
+other extended attributes.
+
 The [test bundle plist receipt](localization/evidence/archival-test-bundle-plists-20261111.json.gz)
 records 351 static bundle files and 159 generated test `Info.plist`
 variants. Use `restore_archived_members.py --macos-stock` for the static
