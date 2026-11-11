@@ -799,6 +799,9 @@ dotnet "$build_dir/bin/Release/net8.0/restore.dll" \
 
 The tool verifies Mono.Cecil, the referenced stock assemblies and the
 report fingerprint before writing. All 27 reports matched byte for byte.
+The [IL report follow-up receipt](localization/evidence/archival-stock-il-followup-20261111.json.gz)
+uses the same command for nine reports with additional headers and
+instruction prefixes. All nine reports matched byte for byte.
 
 The [historical .NET probe build receipt](localization/evidence/archival-historical-dotnet-probe-builds-20261111.json)
 pins 28 managed outputs whose source snapshots are in Git. Build with

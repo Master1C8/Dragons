@@ -61,14 +61,19 @@ foreach (var section in row.GetProperty("sections").EnumerateArray())
     int count = section.GetProperty("count").GetInt32();
     var instructions = methods[methodName].ElementAt(ordinal)[start..checked(start + count)];
     string header = section.GetProperty("header").GetString()!;
-    lines.Add(header switch
+    if (header != "none")
     {
-        "method" => $"METHOD {methodName}",
-        "name" => methodName,
-        "context" => $"{methodName} @ {instructions[0]}",
-        _ => throw new InvalidDataException("Unexpected method header"),
-    });
-    lines.AddRange(header == "context" ? instructions.Skip(1) : instructions);
+        lines.Add(header switch
+        {
+            "method" => $"METHOD {methodName}",
+            "name" => methodName,
+            "context" => $"{methodName} @ {instructions[0]}",
+            _ => throw new InvalidDataException("Unexpected method header"),
+        });
+    }
+    string prefix = section.TryGetProperty("instructionPrefix", out var prefixValue) ? prefixValue.GetString()! : "";
+    var body = header == "context" ? instructions.Skip(1) : instructions;
+    lines.AddRange(body.Select(instruction => prefix + instruction));
 }
 
 string text = string.Join("\n", lines) + (row.GetProperty("finalNewline").GetBoolean() ? "\n" : "");
