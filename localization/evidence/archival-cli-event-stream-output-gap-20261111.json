@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-cli-event-output-gap-index.json.gz",
+  "archiveSha256": "c18be28ec3008514340258c0ed0ccdb64608704b59a818b807449ad5ef5e1cc4",
+  "journalCount": 1,
+  "outputs": {
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-09/events.jsonl": {
+      "bytes": 282948,
+      "sha256": "629af0631bb17b2511809d629e8359e2e4a9e6df5c12d6ddf3fd3304d149937f",
+      "mode": "0o644"
+    }
+  }
+}

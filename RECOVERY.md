@@ -1893,6 +1893,11 @@ text in the original Codex journal records. The helper verifies each
 journal prefix before joining the ranges in their recorded order.
 All five streams matched byte for byte using the downloaded index.
 
+The [output gap receipt](localization/evidence/archival-cli-event-stream-output-gap-20261111.json)
+uses the same command for one additional stream. The helper verifies the
+recorded Git blob and selects its exact text range to fill the remaining
+gap. The complete stream matched after downloading the index.
+
 The [CLI report excerpt receipt](localization/evidence/archival-cli-report-excerpts-20261111.json.gz)
 maps 42 historical files to exact byte ranges in retained local command
 output. Restore any missing source stream using its stream receipt

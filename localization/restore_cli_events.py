@@ -96,7 +96,14 @@ def rebuild(row, events, records, *, journal_root=None, slice_records=None):
             if hashlib.sha256(raw).hexdigest() != digest:
                 raise ValueError('CLI output Git blob fingerprint mismatch')
             git_blobs[key] = raw.decode('utf-8')
-        return prefix + git_blobs[key]
+        text = git_blobs[key]
+        if 'start' in source:
+            start = source['start']
+            end = start + source['length']
+            if not 0 <= start < end <= len(text):
+                raise ValueError('Unexpected CLI output Git range')
+            text = text[start:end]
+        return prefix + text
 
     def document_text(source):
         if journal_root is None:
