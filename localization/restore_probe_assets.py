@@ -24,21 +24,22 @@ def restore(receipt, stock_data, prefix):
     inventory = json.loads(receipt.read_text())['files']
     count = 0
     for name, record in inventory.items():
-        if Path(name).name != name or name in ('.', '..'):
-            raise ValueError(f'Invalid stock filename: {name}')
+        relative = Path(name)
+        if relative.is_absolute() or any(part in ('', '.', '..') for part in name.split('/')):
+            raise ValueError(f'Invalid stock path: {name}')
         for copy in record['copies']:
             target = root / copy['path']
             if not target.is_relative_to(prefix):
                 continue
-            if target.resolve() != target or target.name != name:
+            if target.resolve() != target or target.parts[-len(relative.parts):] != relative.parts:
                 raise ValueError(f'Unexpected target path: {target}')
             if target.exists():
                 if not target.is_file() or sha256(target) != record['sha256']:
                     raise FileExistsError(target)
                 continue
-            source = stock_data / name
+            source = stock_data / relative
             with tempfile.TemporaryDirectory(dir=target.parent) as staging:
-                restored = Path(staging) / name
+                restored = Path(staging) / relative.name
                 shutil.copyfile(source, restored)
                 if sha256(restored) != record['sha256']:
                     raise ValueError(f'Stock asset fingerprint mismatch: {name}')

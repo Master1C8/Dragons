@@ -188,6 +188,16 @@ The helper checks every restored file against the receipt and preserves
 the recorded permissions. These historical probes are separate from the release
 packages and the normal build inputs.
 
+The nested stock receipts use the same helper with a different source root.
+Use the entire restored stock `.app` for the
+[macOS receipt](localization/evidence/archival-macos-nested-stock-20261111.json),
+the owned Windows game directory containing `DragNWash.exe` for the
+[Windows receipt](localization/evidence/archival-windows-nested-stock-20261111.json),
+and the owned bottle's `drive_c/windows` directory for the
+[CrossOver receipt](localization/evidence/archival-crossover-nested-stock-20261111.json).
+The CrossOver receipt covers only stock `system32` and `syswow64` files. The
+helper verifies the original bytes before putting each file back.
+
 The [Windows stock ZIP receipt](localization/evidence/archival-windows-stock-zip-20261111.json)
 lists all 287 files in the old Parallels test fixture. To recreate the
 fixture, ZIP those relative paths from the owned Windows stock game directory
