@@ -562,6 +562,45 @@ PY
 
 The check reproduced the original log byte for byte and matched its mode.
 
+The [earlier cleanup record index](localization/evidence/archival-cleanup-records-20261111.json.gz)
+stores one copy of the 479 rows shared by two historical cleanup plans
+and their deletion logs. To reproduce the four files, pass the original
+checkout, macOS stock app and Windows stock game paths as text, followed
+by a fresh destination.
+
+```sh
+python3.12 - "$original_checkout" "$original_macos_app" "$original_windows_game" "$fresh_output" <<'PY'
+import gzip, hashlib, json, sys
+from pathlib import Path
+
+with gzip.open("localization/evidence/archival-cleanup-records-20261111.json.gz", "rt") as stream:
+    receipt = json.load(stream)
+roots = dict(zip(("checkout", "macosStock", "windowsStock"), map(Path, sys.argv[1:4])))
+destination = Path(sys.argv[4])
+destination.mkdir()
+for run in receipt["runs"]:
+    rows = [
+        {field: str(roots[value[0]] / value[1]) if field in {"path", "source", "retained"} else value
+         for field, value in row.items()}
+        for row in run["rows"]
+    ]
+    plan = dict(rows=rows, allocatedByFolder=run["allocatedByFolder"]) if "allocatedByFolder" in run else rows
+    files = {"plan.json": json.dumps(plan, indent=2), "deleted.jsonl": "".join(json.dumps(row) + "\n" for row in rows)}
+    directory = destination / run["directory"]
+    directory.mkdir(parents=True)
+    for name, content in files.items():
+        expected = run["outputs"][name]
+        data = content.encode()
+        assert len(data) == expected["bytes"] and hashlib.sha256(data).hexdigest() == expected["sha256"]
+        output = directory / name
+        with output.open("xb") as stream:
+            stream.write(data)
+        output.chmod(int(expected["mode"], 8))
+PY
+```
+
+The check matched all four files byte for byte and verified their modes.
+
 The [Windows test skeleton receipt](localization/evidence/archival-windows-stock-stubs-20261111.json.gz)
 records 86 retired test trees. Each contained directories and a single
 empty stock `configs.app.ini` after the other game files were removed.
