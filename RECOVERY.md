@@ -1128,6 +1128,13 @@ lists 5,914 directories left by retired macOS bundles and .NET builds.
 Recreate needed paths from the top down with `mkdir -p` and apply their
 recorded modes. The recovery check recreated the full recorded structure.
 
+The [empty CrossOver system tree receipt](localization/evidence/archival-empty-crossover-system-trees-20261111.json.gz)
+lists 7,956 empty directories from the system and Program Files trees
+of 68 historical test bottles. Each relative directory existed in both
+recorded source bottles. To restore a historical test tree, recreate the
+recorded directories from the top down and apply their modes. The check
+recreated the selected trees and verified their structure and modes.
+
 The [test bundle plist receipt](localization/evidence/archival-test-bundle-plists-20261111.json.gz)
 records 351 static bundle files and 159 generated test `Info.plist`
 variants. Use `restore_archived_members.py --macos-stock` for the static
