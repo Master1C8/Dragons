@@ -1192,6 +1192,95 @@ PY
 The check reproduced all seven files byte for byte and verified their
 modes. The Ukrainian overrides preserve two historical draft values.
 
+The [shared draft recovery receipt](localization/evidence/archival-shared-drafts-20261111.json.gz)
+pins 13 additional drafts, controls and templates. Use the historical
+modules and verified v42 inputs as above. Provide verified macOS stock
+Data for the Ukrainian Yarn table:
+
+```sh
+PYTHONPATH="$historical_modules:$python_dependencies" python3.12 -B - \
+  "$v42_inventory" "$v42_scope" "$macos_stock_data" "$fresh_drafts" <<'PY'
+import gzip, hashlib, json, subprocess, sys
+from pathlib import Path
+
+import compare_yarn_versions
+import paired_locale
+
+receipt = "localization/evidence/archival-shared-drafts-20261111.json.gz"
+with gzip.open(receipt, "rt") as stream:
+    spec = json.load(stream)
+inventory, scope, macos_data, destination = map(Path, sys.argv[1:])
+
+def verified_json(data, digest):
+    assert hashlib.sha256(data).hexdigest() == digest
+    return json.loads(data)
+
+_, catalog = paired_locale.catalog(
+    verified_json(inventory.read_bytes(), spec["inventorySha256"])["entries"],
+    verified_json(scope.read_bytes(), spec["scopeSha256"]),
+)
+stock, blank = {}, {}
+for key, entry in catalog.items():
+    values = {platform: binding["source"] for platform, binding in entry["builds"].items()}
+    if len(set(values.values())) == 1:
+        stock[key], blank[key] = next(iter(values.values())), ""
+    else:
+        stock[key] = {"platforms": values}
+        blank[key] = {"platforms": dict.fromkeys(values, "")}
+
+def source(row):
+    if row["kind"] == "stock":
+        return stock
+    if row["kind"] == "blank":
+        return blank
+    assert row["kind"] == "git"
+    data = subprocess.check_output(["git", "show", row["revision"] + ":" + row["path"]])
+    return verified_json(data, row["sha256"])["lines"]
+
+destination.mkdir()
+
+def write(name, row, doc):
+    indent, ascii_only, suffix = row.get("style", (2, False, "\n"))
+    data = (json.dumps(doc, ensure_ascii=ascii_only, indent=indent) + suffix).encode()
+    assert len(data) == row["bytes"] and hashlib.sha256(data).hexdigest() == row["sha256"]
+    path = destination / name
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("xb") as stream:
+        stream.write(data)
+    path.chmod(int(row["mode"], 8))
+
+for name, row in spec["outputs"].items():
+    snapshots = [source(entry) for entry in row["sources"]]
+    base = snapshots[0]
+    keys = row.get("keys", catalog if row.get("order") == "catalog" else base)
+    lines = base.copy()
+    for index, selected in row.get("overrides", {}).items():
+        lines.update({key: snapshots[int(index)][key] for key in selected})
+    lines.update(row.get("historicalText", {}))
+    doc = {"schema": 1, "locale": row["locale"], "sharedInventorySha256": spec["inventorySha256"],
+           "yarnScopeSha256": spec["scopeSha256"], "lines": {key: lines[key] for key in keys}}
+    write(name, row, doc)
+
+row = spec["yarnTable"]
+platform = row["platform"]
+keys, values, *_ = compare_yarn_versions.load(macos_data, compare_yarn_versions.BUILDS[platform])
+table = dict(zip(keys, values))
+draft_name = row["draft"]
+draft = verified_json((destination / draft_name).read_bytes(), spec["outputs"][draft_name]["sha256"])
+for key, value in draft["lines"].items():
+    binding = catalog[key]["builds"].get(platform)
+    if binding and binding["file"] == "dialogue.json":
+        assert table[binding["key"]] == binding["source"]
+        table[binding["key"]] = paired_locale.resolve(key, catalog[key]["builds"], value)[platform]
+assert len(table) == row["rows"]
+write(row["path"], row, table)
+PY
+```
+
+All 14 files and the dependent entry in the historical text copy
+receipt matched their original bytes and modes. The receipt preserves
+the few historical values absent from the recorded revisions.
+
 The [historical control receipt](localization/evidence/archival-historical-controls-20261111.json.gz)
 records Russian and Ukrainian controls, the Arabic and Persian caption
 packages, and two earlier standalone Unity test assets. Download the two
