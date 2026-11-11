@@ -243,6 +243,13 @@ before restoring the dependent duplicate or fixture. The recovery check
 decoded every patch from the downloaded archive and matched all 26 files
 byte for byte.
 
+The [staged asset delta receipt](localization/evidence/archival-staged-asset-deltas-20261111.json)
+uses the same procedure for the Alexander body controls on both platforms
+and the Windows speaker control. Here each row names the stock file as
+`basePath`, relative to the verified stock macOS app or Windows game
+directory. Check the archive, patch and base fingerprints before decoding.
+The three rebuilt files matched the original assets byte for byte.
+
 The stock asset receipts identify replaceable files in old runtime probes
 on [macOS](localization/evidence/archival-macos-stock-copies-20261111.json)
 and [Windows](localization/evidence/archival-windows-stock-copies-20261111.json).

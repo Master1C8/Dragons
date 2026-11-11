@@ -1,0 +1,48 @@
+{
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-staged-asset-deltas.zip",
+  "archiveSha256": "af64c6cec67c3a07775273ecda26608f80762954c199a96c687cc68986b8cbf6",
+  "codec": "zstd 1.5.7 patch-from",
+  "gameLaunched": false,
+  "outputs": [
+    {
+      "name": "alexander-windows",
+      "platform": "windows",
+      "path": "localization/work/alexander-body-20261110.TV8tMJ/win/game/DragNWash_Data/sharedassets1.assets",
+      "sha256": "7dfe01af2fa2d0b31c0c4acb2dbba1c2a77371f20f661aadd898bc259c4bcdbd",
+      "mode": "0o644",
+      "bytes": 106462232,
+      "basePath": "DragNWash_Data/sharedassets1.assets",
+      "baseSha256": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+      "archiveMember": "alexander-windows.zst",
+      "patchSha256": "a0d50cb1cf744e38cc3e1e731c18610dab4830a3739d3653c0ef229f0cae0526",
+      "patchBytes": 144567
+    },
+    {
+      "name": "alexander-macos",
+      "platform": "macos",
+      "path": "localization/work/alexander-body-20261110.TV8tMJ/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "7e57f4b36ea4d7e765bb368456a4f9717af0c694def93273203de0bc9b15bccf",
+      "mode": "0o644",
+      "bytes": 105910024,
+      "basePath": "Contents/Resources/Data/sharedassets1.assets",
+      "baseSha256": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+      "archiveMember": "alexander-macos.zst",
+      "patchSha256": "f034291fdf1cabec6ebe751301e4dd87e2f2f1301e9aff527c1bf5c6c464583c",
+      "patchBytes": 151993
+    },
+    {
+      "name": "speaker-windows",
+      "platform": "windows",
+      "path": "localization/work/speaker-runtime-20261110.O82oIa/win/prepared.assets",
+      "sha256": "27fc81d5b6371abdca0cac582c0d9c1be90c3913f219c234105cae68876b699e",
+      "mode": "0o644",
+      "bytes": 106462232,
+      "basePath": "DragNWash_Data/sharedassets1.assets",
+      "baseSha256": "aff0c9a7b017a4b8cd5fa7ee069fa49331703c54bff9e7a2e398fa04b646d231",
+      "archiveMember": "speaker-windows.zst",
+      "patchSha256": "a4078e661cc83c496622766a4a7023bb4efd62bdb116725729a8515307dd39c3",
+      "patchBytes": 144441
+    }
+  ]
+}
