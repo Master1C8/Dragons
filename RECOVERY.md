@@ -1198,6 +1198,28 @@ The historical static probe receipt also lists 216 empty
 `CopyComplete` markers. Fresh Debug and Release builds emitted that
 marker. The check copied the generated empty file and verified each
 recorded mode.
+
+The [assembly metadata receipt](localization/evidence/archival-dotnet-assembly-metadata-20261111.json.gz)
+pins four outputs from .NET SDK 8.0.131. Use a disposable build directory
+and set `historical_path` to a checkout-relative key from the receipt.
+The restored file is written to a new path.
+
+```sh
+mkdir -p "$build_dir"
+git cat-file blob b99f7aa8cd35ecdeabd42b9a7116c0c62626ffaf > "$build_dir/scan.csproj"
+printf '%s\n' 'System.Console.WriteLine("Assembly metadata");' > "$build_dir/Program.cs"
+DOTNET_CLI_UI_LANGUAGE=ru dotnet build "$build_dir/scan.csproj" -c Debug \
+  --nologo --disable-build-servers -p:NuGetAudit=false --ignore-failed-sources \
+  -p:SourceRevisionId=b9768e3654135662bafbaf14ee283be0036e5a58
+python3 -B localization/restore_dotnet_assembly_metadata.py \
+  localization/evidence/archival-dotnet-assembly-metadata-20261111.json.gz \
+  "$build_dir" "$historical_path" "$restored_file"
+```
+
+The restore tool verifies the SDK output, reapplies the historical
+assembly attributes where needed, and checks the restored bytes before
+writing. The check matched all 259 files and their recorded modes.
+
 To recreate the historical counter snapshot, point the restore tool at the
 original read-only Codex journal directory or an exact copy:
 
