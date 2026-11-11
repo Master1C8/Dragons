@@ -882,6 +882,51 @@ report input archive and `sceneMember` from the source inventory export
 archive. Verify the archive and member hashes. The rebuilt outputs preserve
 the original audit scope and report bytes.
 
+The [additional authoring and scope receipt](localization/evidence/archival-authoring-scope-and-editorial-20261111.json.gz)
+pins four templates and worklists, four Yarn scope reports and eight
+editorial exports. Check the downloaded archive and catalog hashes.
+Use the receipt's Git revisions with the normal commands in the
+[localization guide](localization/README.md).
+
+The early worklist and template commands load the locale catalog from
+its former Desktop path. Export their `localization` directory into the
+recovery workspace and run the recorded module with the verified catalog
+assigned at import time. Pass the normal module arguments after its name.
+
+```sh
+python3.12 -B -c '
+import runpy
+import sys
+from pathlib import Path
+sys.path.insert(0, sys.argv.pop(1))
+import dialogue_locale
+dialogue_locale.SITE_LOCALES = Path(sys.argv.pop(1))
+runpy.run_module(sys.argv.pop(1), run_name="__main__", alter_sys=True)
+' "$revision_export/localization" "$verified_site_catalog" "$module" "$@"
+```
+
+For the early Russian worklist, export its tracked platform drafts and
+pass them as `--draft-root`. Verify the base worklist hash. For each
+platform entry without a `draft`, read its recorded file and line key
+from that platform's draft directory. When the line exists, check its
+source against the worklist and append its text as `draft`. Set each
+build's `draftSha256` to null and recalculate its `draftCount` from the
+entries with a draft. Write UTF-8 JSON with two-space indentation,
+literal Unicode and a trailing newline. The Ukrainian worklist uses the
+verified generated Ukrainian template as `--locale-file`.
+
+For a Yarn scope report, restore the named inventory and run
+`inventory_yarn_scope.py` from the recorded revision with both verified
+stock Data directories. The two earlier v40 variants use the verified
+scope as a base. Remove `scopePolicy` for the first variant. For the
+structure control, append the receipt's `localeCoverage` block to the
+unmodified v40 scope and serialize it in the same JSON format.
+
+For the eight editorial exports, recover each input from its recorded
+Git blob or archive member. Use the pinned scene export, v42 inventory
+and v42 scope with the named exporter. All 16 restored files matched
+their original fingerprints.
+
 The [platform input receipt](localization/evidence/archival-platform-inputs-20261111.json.gz)
 pins 1,952 materialized dialogue, settings, UI and related JSON inputs.
 Restore v42 first and set `DRAGONS_SITE_LOCALES` to the canonical locale
