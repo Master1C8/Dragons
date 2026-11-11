@@ -1806,6 +1806,21 @@ as `--qa-tools`. For `checkout` rows, the recorded local original is
 the recovery source and must remain available until its replacement is
 verified. The check restored every copy and matched its hash and mode.
 
+The [journal helper receipt](localization/evidence/archival-journal-helper-sources-20261111.json.gz)
+records 438 historical scripts used by retired builds, tests and
+editorial runs. Pass the owner's original Codex sessions directory or
+an exact copy and a fresh destination:
+
+```sh
+python3.12 -B localization/restore_journal_helpers.py \
+  localization/evidence/archival-journal-helper-sources-20261111.json.gz \
+  "$codex_sessions" "$fresh_helpers"
+```
+
+The helper verifies the journal record hash and the extracted file
+fingerprint before writing the file. The check matched all 438 files
+byte for byte and verified their modes.
+
 The [visual checklist receipt](localization/evidence/archival-visual-checklists-20261111.json.gz)
 records 126 runtime copies of a shared QA template. Download the exact
 SiteForMods revision in the receipt into a scratch directory and verify
