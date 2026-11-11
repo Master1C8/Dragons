@@ -312,6 +312,23 @@ The restore verifies the archive and each base, patch and output hash.
 The downloaded archive reproduced all 93 distinct assemblies, including
 the renderer sources referenced by historical binary copy receipts.
 
+The [embedded display plan receipt](localization/evidence/archival-embedded-display-plans-20261111.json.gz)
+records 16 historical plan and map files from those TMP assemblies.
+Restore the file named in `assemblyPath` with the renderer assembly
+command. Install the receipt's two Python package pins in a disposable
+Python 3.12 environment, then run:
+
+```sh
+python3.12 -B localization/restore_embedded_display_plan.py \
+  "$embedded_plan_receipt" "$recorded_path" --assembly "$restored_tmp_dll" \
+  --output "$fresh_plan"
+```
+
+The helper decodes the embedded resource without loading the assembly
+into Unity. For the early RTL plans, it applies the recorded single-line
+selection and Persian glyph index mapping. The recovery check matched
+all 16 output hashes and modes.
+
 The [isolated profile receipt](localization/evidence/archival-isolated-profiles-20261111.json.gz)
 records the stock PlayerSettings fingerprint and test identity for 208
 historical assets. Restore into a fresh output with the pinned UnityPy
