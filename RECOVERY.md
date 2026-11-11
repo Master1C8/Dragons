@@ -2179,6 +2179,13 @@ The helper verifies the journal record hash and the extracted file
 fingerprint before writing the file. The check matched all 438 files
 byte for byte and verified their modes.
 
+The [Italian row audit receipt](localization/evidence/archival-italian-row-audit-20261111.json.gz)
+uses the same command with Python 3.12. It restores the historical
+`record-row-unit.py` from 198 text ranges in 66 original Codex journal
+records. The check matched all 179,121 bytes and the file mode. The
+recovery command reads the journal text without running the historical
+editorial script. This audit is independent of the normal package build.
+
 Use the same command with the
 [journal text receipt](localization/evidence/archival-journal-text-files-20261111.json.gz)
 to restore 242 historical reports, draft inputs and build logs. The
