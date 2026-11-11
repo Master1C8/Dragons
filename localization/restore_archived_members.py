@@ -42,7 +42,7 @@ def stage(row, roots, destination):
 
 def restore(
     receipt, prefix, macos_stock, windows_stock, accepted, *,
-    crossover_app=None, crossover_windows=None, mono_cecil=None,
+    crossover_app=None, crossover_windows=None, mono_cecil=None, recovery_archives=None,
 ):
     checkout = Path(__file__).resolve().parents[1]
     work = checkout / 'localization/work'
@@ -57,6 +57,7 @@ def restore(
         'crossoverApp': crossover_app,
         'crossoverWindows': crossover_windows,
         'monoCecil': mono_cecil,
+        'recoveryArchives': recovery_archives,
     }
     roots = {name: path.resolve(strict=True) if path else None for name, path in roots.items()}
     count = 0
@@ -89,10 +90,12 @@ if __name__ == '__main__':
     parser.add_argument('--crossover-app', type=Path)
     parser.add_argument('--crossover-windows', type=Path)
     parser.add_argument('--mono-cecil', type=Path)
+    parser.add_argument('--recovery-archives', type=Path)
     args = parser.parse_args()
     restore(
         args.receipt, args.prefix, args.macos_stock, args.windows_stock, args.accepted,
         crossover_app=args.crossover_app,
         crossover_windows=args.crossover_windows,
         mono_cecil=args.mono_cecil,
+        recovery_archives=args.recovery_archives,
     )

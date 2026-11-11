@@ -398,6 +398,15 @@ The recovery check restored 1,148 files and verified their SHA-256 and modes.
 If a ZIP source is listed in the historical locale, Ukrainian or shaped
 package receipts below, rebuild the ZIP before restoring any member from it.
 
+The [remaining input copy receipt](localization/evidence/archival-input-copies-20261111.json.gz)
+covers additional copies from Git, the owned CrossOver Windows system
+directories and previously verified recovery archives. Download the listed
+archives from the maintainer draft and check their SHA-256 values. Pass
+their directory as `--recovery-archives` to `restore_archived_members.py`.
+Pass the owned bottle's `drive_c/windows` directory as
+`--crossover-windows` for the system copies. The helper verifies the
+size and hash of each restored member and applies its recorded mode.
+
 The [remaining stock runtime copy receipt](localization/evidence/archival-stock-runtime-copies-20261111.json.gz)
 uses the same helper with the macOS and Windows stock roots. It covers
 11,191 exact copies, including Unity streaming data and Mono configuration
@@ -778,6 +787,20 @@ report input archive and `sceneMember` from the source inventory export
 archive. Verify the archive and member hashes. The rebuilt outputs preserve
 the original audit scope and report bytes.
 
+The [platform input receipt](localization/evidence/archival-platform-inputs-20261111.json.gz)
+pins 1,952 materialized dialogue, settings, UI and related JSON inputs.
+Restore v42 first and set `DRAGONS_SITE_LOCALES` to the canonical locale
+catalog. The helper reads the recorded Git translation revision and runs
+the normal paired input materializer for the selected platform and member:
+
+```sh
+python3.12 -B localization/restore_platform_locale_input.py \
+  "$platform_input_receipt" "$recorded_path" --inventory "$shared_inventory" \
+  --yarn-scope "$paired_yarn_scope" --output "$fresh_input"
+```
+
+The check reproduced all 433 distinct inputs byte for byte.
+
 The [Git review diff receipt](localization/evidence/archival-review-diffs-20261111.json.gz)
 records the before and after blobs for 105 historical staged review diffs.
 Restore a recorded path with the same Git checkout:
@@ -789,6 +812,22 @@ python3.12 -B localization/restore_review_diff.py \
 
 The helper uses temporary comparison trees and verifies the original
 SHA-256. All input blobs are reachable from `main`.
+
+The [final usage evidence receipt](localization/evidence/archival-final-usage-20261111.json)
+pins the private archive with the final Model usage manifest, supporting
+evidence and readback. Verify its SHA-256 and the individual member hashes.
+To recreate the historical counter snapshot, point the restore tool at the
+original read-only Codex journal directory or an exact copy:
+
+```sh
+python3.12 -B localization/restore_usage_snapshot.py \
+  "$usage_receipt" "$usage_archive" "$codex_journal_root" "$fresh_snapshot"
+```
+
+The downloaded manifest identifies the 56 exact journal prefixes used
+for the snapshot. The check verified each prefix and reproduced the
+original counter file. The private archive stores the prefix manifest
+and the final evidence files.
 
 The [renderer acceptance index](localization/evidence/archival-renderer-acceptance-20261111.json)
 pins the static shaping, staged line break, paired runtime and Parallels

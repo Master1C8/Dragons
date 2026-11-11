@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-final-usage-evidence.zip",
+  "archiveSha256": "3e83a2ea5cff908c428cf67cf2829e80dcea3c9dd4f3645fb98fe16e844c09df",
+  "prefixManifest": "counter-prefixes.json",
+  "prefixCount": 56,
+  "snapshot": {
+    "path": "localization/work/installer-upload.ms8mti/journal-counters.json",
+    "sha256": "a06f637e88718f20e19ac1c22dc72ebb66ae22870d3525a8bfcba48c0db727b2",
+    "bytes": 8339341,
+    "mode": "0o644"
+  },
+  "outputs": [
+    {
+      "path": "localization/work/installer-upload.ms8mti/audit-journal.py",
+      "sha256": "a5d9bbe5a6bd2b756fabe8e615a01c1e10658c2b88142b043204864a10aba13d",
+      "bytes": 1861,
+      "mode": "0o644",
+      "archiveMember": "usage/audit-journal.py"
+    },
+    {
+      "path": "localization/work/installer-upload.ms8mti/model-usage-final-evidence.json",
+      "sha256": "dc2caece4fd1cf6cb8567675069e9f48e57f31cb8aadc668352afe4244e880ab",
+      "bytes": 45119,
+      "mode": "0o644",
+      "archiveMember": "usage/model-usage-final-evidence.json"
+    },
+    {
+      "path": "localization/work/installer-upload.ms8mti/model-usage-final.json",
+      "sha256": "927288e0d4cd8e42b9ad3745bc1e0d7a3d507b0a5ab013bbca33b97910be5ab8",
+      "bytes": 26710,
+      "mode": "0o644",
+      "archiveMember": "usage/model-usage-final.json"
+    },
+    {
+      "path": "localization/work/installer-upload.ms8mti/model-usage-final-readback.log",
+      "sha256": "558eb970cc40340c1b32a96e7fb4c3e93f21d64922ebdd4cb81eb1e3768788f0",
+      "bytes": 3124,
+      "mode": "0o644",
+      "archiveMember": "usage/model-usage-final-readback.log"
+    }
+  ]
+}
