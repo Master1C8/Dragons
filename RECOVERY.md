@@ -221,9 +221,27 @@ payloads, use the archived installer build route above.
 [The duplicate-package receipt](localization/evidence/archival-duplicate-packages-20261111.json)
 maps removed work outputs to their retained, byte-identical copies.
 The [historical CLI asset receipt](localization/evidence/archival-duplicate-cli-assets-20261111.json)
-maps duplicate Unity assets to one remaining local copy per hash. Copy the
-recorded source to the former path, restore its mode and verify its SHA-256.
+maps duplicate Unity assets to a source path per hash. Recover the recorded
+source if it has been archived, then copy it to the former path, restore
+its mode and verify its SHA-256.
 Use the same procedure for the [remaining generated asset duplicates](localization/evidence/archival-duplicate-generated-assets-20261111.json).
+
+The [historical probe delta receipt](localization/evidence/archival-probe-deltas-20261111.json.gz)
+preserves 26 source files referenced by earlier duplicate and fixture
+recovery records. Download the receipt's archive from the maintainer draft
+and verify its SHA-256. For each requested source path, select the stock
+`sharedassets1.assets` for its recorded platform and verify `baseSha256`.
+Verify the extracted patch member against `patchSha256`, then decode it
+with Zstandard 1.5.7.
+
+```sh
+zstd -q -d --patch-from="$stock_sharedassets1" "$verified_patch" -o "$fresh_output"
+```
+
+Verify the output against the row's `sha256` and apply its recorded mode
+before restoring the dependent duplicate or fixture. The recovery check
+decoded every patch from the downloaded archive and matched all 26 files
+byte for byte.
 
 The stock asset receipts identify replaceable files in old runtime probes
 on [macOS](localization/evidence/archival-macos-stock-copies-20261111.json)
@@ -290,6 +308,12 @@ python3.12 -B localization/restore_archived_members.py \
 The recovery check restored 1,148 files and verified their SHA-256 and modes.
 If a ZIP source is listed in the historical locale, Ukrainian or shaped
 package receipts below, rebuild the ZIP before restoring any member from it.
+
+The [installer copy receipt](localization/evidence/archival-installer-resource-copies-20261111.json.gz)
+maps generated payload copies in old installer work directories to identical
+files in the accepted 0.2.1 installer archives. Use the same helper and
+`--accepted "$recovery/restored"`. The recovery check restored 3,086 files
+and verified their hashes and modes.
 
 The [source copy receipt](localization/evidence/archival-git-source-copies-20261111.json.gz)
 maps retired local snapshots to byte-identical blobs reachable from its
