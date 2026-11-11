@@ -1954,6 +1954,11 @@ the recorded directories in order with `mkdir -p`, then apply their modes
 from the deepest paths upward. The check recreated the selected trees
 and matched their relative paths, modes and inherited macOS provenance.
 
+The [empty working directory follow-up](localization/evidence/archival-empty-after-cleanup-20261111.json.gz)
+uses the same steps for 74 directories left after later cleanup.
+The check recreated their structure and matched their modes and
+inherited macOS provenance.
+
 The [historical run pointer receipt](localization/evidence/archival-historical-run-pointers-20261111.json.gz)
 records 28 small files that pointed old launch and review scripts at
 their scratch directories. To restore them, supply the original
