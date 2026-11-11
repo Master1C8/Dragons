@@ -549,6 +549,32 @@ Restore a checkout source before running the binary copy receipt for
 its dependent paths. The recovery check verified all 31 files and the
 52 references in the binary copy receipt.
 
+The [managed probe rebuild receipt](localization/evidence/archival-historical-managed-probe-rebuilds-20261111.json.gz)
+records twelve early DLLs and IL reports. Restore the named sources,
+using `git cat-file blob` for the listed project descriptors. Build in
+Release with the recorded .NET SDK and Mono.Cecil. Run each tool against
+the verified stock platform files:
+
+- `stock-scan` takes platform and `Assembly-CSharp.dll`. For the earlier
+  Windows report, verify `unfilteredSha256`, then omit the recorded
+  `METHOD` header and its instructions up to the next `METHOD` header
+  or end of file.
+- `disk-patcher` takes platform, `Assembly-CSharp.dll` and a fresh DLL
+  path. The `speaker-line-probe` takes platform, `YarnSpinner.Unity.dll`,
+  the recorded synthetic map and a fresh DLL directly in the recovery
+  project's `localization/work`.
+- `fallback` and `fallback-full` take the stock Managed directory.
+  `wrap-inspect` takes the stock macOS `Unity.TextMeshPro.dll`. Capture
+  stdout as the report.
+- For `metadata`, restore the named control DLL with
+  `restore_renderer_assembly.py`. Place the pinned Mono.Cecil DLL at
+  `bin-final/Mono.Cecil.dll` next to the `mutate` directory. Run the
+  built mutator with the control DLL, a fresh output path and
+  `parameter`.
+
+The recovery check verified the original fingerprints of all twelve
+outputs and nine source files.
+
 The [Windows Yarn preservation input](localization/evidence/windows-yarn-preservation-control-20261107.json)
 recreates the synthetic control in the
 [preservation check](localization/evidence/yarn-preservation-check-20261107.md).
