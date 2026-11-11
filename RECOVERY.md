@@ -591,6 +591,23 @@ The helper verifies each Git source and rebuilt output. The check matched
 all 28 original DLLs and verified the 28 dependent entries in the binary
 copy receipt. Restore a needed source DLL before replaying its copies.
 
+The [historical managed source receipt](localization/evidence/archival-historical-managed-source-deltas-20261111.json)
+pins 125 project descriptors required by the generated metadata receipt
+and 22 C# sources used by technical evidence or the text copy receipt.
+Download its delta archive from the maintainer draft and use
+Zstandard 1.5.7 with the canonical Git checkout:
+
+```sh
+python3.12 -B localization/restore_managed_probe_source.py \
+  localization/evidence/archival-historical-managed-source-deltas-20261111.json \
+  "$recorded_path" --archive "$source_delta_zip" --output "$fresh_source"
+```
+
+The helper verifies the archive, the base Git blob and the restored
+file. All 147 files and 211 dependent text copies matched. The recovered
+macOS settings probe also compiled with .NET SDK 8.0.131 against the
+verified stock Managed directory.
+
 The [Windows Yarn preservation input](localization/evidence/windows-yarn-preservation-control-20261107.json)
 recreates the synthetic control in the
 [preservation check](localization/evidence/yarn-preservation-check-20261107.md).

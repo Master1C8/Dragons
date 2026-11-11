@@ -1,0 +1,1921 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-historical-managed-source-deltas.zip",
+  "archiveSha256": "4197f83dadb0d3414f6d0f776ec958a0b29142a0ea38c49b1fd84cb3baaae6ac",
+  "zstd": "1.5.7",
+  "outputs": {
+    "localization/work/alexander-body-20261110.TV8tMJ/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/anonymous-dragon-choices-20261110.nMBD1r/romance-route-runtime-test.csproj": {
+      "base": "git",
+      "basePath": "ff3aae59d13b41f8a32a9d8d11e9440fef278194",
+      "baseSha256": "ad7165bb33ce916ac71308bcfe116b63c3a372760f7ffc236ccb87c30fa4ac5e",
+      "archiveMember": "patches/11dad6478e95a5577efd7668eca3de0ace5d8e765db4d41ad026adffde27a3a8.zst",
+      "patchSha256": "3da4c2e6ebb6b427d28cd4d874c7b18bddeffe44366561918e5af2ec1ecda9ae",
+      "sha256": "11dad6478e95a5577efd7668eca3de0ace5d8e765db4d41ad026adffde27a3a8",
+      "bytes": 1145,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/anonymous-dragon-unity-20261110.I3LFs1/fixture/mac/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9.zst",
+      "patchSha256": "295de46e20318c1259607a0e5cbed3d16231ecb90e221b7d5bed6ae8f64e5aa0",
+      "sha256": "d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9",
+      "bytes": 1530,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/anonymous-dragon-unity-20261110.I3LFs1/fixture/win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9.zst",
+      "patchSha256": "295de46e20318c1259607a0e5cbed3d16231ecb90e221b7d5bed6ae8f64e5aa0",
+      "sha256": "d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9",
+      "bytes": 1530,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/anonymous-dragon-unity-20261110.I3LFs1/fresh/mac/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9.zst",
+      "patchSha256": "295de46e20318c1259607a0e5cbed3d16231ecb90e221b7d5bed6ae8f64e5aa0",
+      "sha256": "d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9",
+      "bytes": 1530,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/anonymous-dragon-unity-20261110.I3LFs1/fresh/win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9.zst",
+      "patchSha256": "295de46e20318c1259607a0e5cbed3d16231ecb90e221b7d5bed6ae8f64e5aa0",
+      "sha256": "d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9",
+      "bytes": 1530,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/anonymous-dragon-unity-20261110.I3LFs1/input/mac/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9.zst",
+      "patchSha256": "295de46e20318c1259607a0e5cbed3d16231ecb90e221b7d5bed6ae8f64e5aa0",
+      "sha256": "d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9",
+      "bytes": 1530,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/anonymous-dragon-unity-20261110.I3LFs1/input/win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9.zst",
+      "patchSha256": "295de46e20318c1259607a0e5cbed3d16231ecb90e221b7d5bed6ae8f64e5aa0",
+      "sha256": "d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9",
+      "bytes": 1530,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/anonymous-dragon-unity-20261110.I3LFs1/mac/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9.zst",
+      "patchSha256": "295de46e20318c1259607a0e5cbed3d16231ecb90e221b7d5bed6ae8f64e5aa0",
+      "sha256": "d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9",
+      "bytes": 1530,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/anonymous-dragon-unity-20261110.I3LFs1/retry/mac/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9.zst",
+      "patchSha256": "295de46e20318c1259607a0e5cbed3d16231ecb90e221b7d5bed6ae8f64e5aa0",
+      "sha256": "d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9",
+      "bytes": 1530,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/anonymous-dragon-unity-20261110.I3LFs1/retry/win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9.zst",
+      "patchSha256": "295de46e20318c1259607a0e5cbed3d16231ecb90e221b7d5bed6ae8f64e5aa0",
+      "sha256": "d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9",
+      "bytes": 1530,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/anonymous-dragon-unity-20261110.I3LFs1/win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9.zst",
+      "patchSha256": "295de46e20318c1259607a0e5cbed3d16231ecb90e221b7d5bed6ae8f64e5aa0",
+      "sha256": "d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9",
+      "bytes": 1530,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/background-cyrillic-20261109.hWyvEA/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed.zst",
+      "patchSha256": "80304f2320fe066ecacf586ead1461bfea6ec52316ee4d7f01283ad38d3bff0f",
+      "sha256": "9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed",
+      "bytes": 1529,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/background-cyrillic-offscreen-20261109.w6zvmR/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2.zst",
+      "patchSha256": "a9a7d43594bcef88b156bebfb5f29095dc6cde70cecc23e91cccacd5020cc70a",
+      "sha256": "8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2",
+      "bytes": 2050,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/background-dialogue-20261109.jsmTX8/companion/Probe.cs": {
+      "base": "git",
+      "basePath": "8f8a6dfea7a52c7b8a12a6a4c90f1fda5983353f",
+      "baseSha256": "880e7bb0cbb7243a5764a2bfaac56290003201775df667b1f1f196a404e01de9",
+      "archiveMember": "patches/78fd8946a433378199c8d25b0491367c084972c7fbd6f5e955a9e74502f9676d.zst",
+      "patchSha256": "d5bfae9d2fb464ee31ca597dd058756ca5687bed15be33b57477215ea95e205c",
+      "sha256": "78fd8946a433378199c8d25b0491367c084972c7fbd6f5e955a9e74502f9676d",
+      "bytes": 18224,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/camera-schema-20261110.9Z7wXW/consumers/scan.csproj": {
+      "base": "git",
+      "basePath": "a3323f0c9d542ceb759056a2c5add0bbf297989b",
+      "baseSha256": "cd242c77c6ca1934b0a5f27ec6e9902cd0166f21ccb8c1e5f9db14000f602361",
+      "archiveMember": "patches/5deae592ed356f2f403ed029d0d5fd30797d72c0cb8aba359e84aee625fe29cb.zst",
+      "patchSha256": "0a4e5d491baebc8050a680ff5826a698576244f3021fdbf8c90f9dbf5a0cbe01",
+      "sha256": "5deae592ed356f2f403ed029d0d5fd30797d72c0cb8aba359e84aee625fe29cb",
+      "bytes": 269,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/camera-schema-20261110.9Z7wXW/render-consumers/scan.csproj": {
+      "base": "git",
+      "basePath": "a3323f0c9d542ceb759056a2c5add0bbf297989b",
+      "baseSha256": "cd242c77c6ca1934b0a5f27ec6e9902cd0166f21ccb8c1e5f9db14000f602361",
+      "archiveMember": "patches/5deae592ed356f2f403ed029d0d5fd30797d72c0cb8aba359e84aee625fe29cb.zst",
+      "patchSha256": "0a4e5d491baebc8050a680ff5826a698576244f3021fdbf8c90f9dbf5a0cbe01",
+      "sha256": "5deae592ed356f2f403ed029d0d5fd30797d72c0cb8aba359e84aee625fe29cb",
+      "bytes": 269,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cjk-append-20261110.9tdhZe/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271.zst",
+      "patchSha256": "4e268ee659fac806594d1a601c11c64bb62b515f21aee5dfcc42b4c23337068d",
+      "sha256": "9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271",
+      "bytes": 1355,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cjk-fallback-20261110.BAc1J4/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271.zst",
+      "patchSha256": "4e268ee659fac806594d1a601c11c64bb62b515f21aee5dfcc42b4c23337068d",
+      "sha256": "9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271",
+      "bytes": 1355,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271.zst",
+      "patchSha256": "4e268ee659fac806594d1a601c11c64bb62b515f21aee5dfcc42b4c23337068d",
+      "sha256": "9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271",
+      "bytes": 1355,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/mac/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed.zst",
+      "patchSha256": "80304f2320fe066ecacf586ead1461bfea6ec52316ee4d7f01283ad38d3bff0f",
+      "sha256": "9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed",
+      "bytes": 1529,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/mac/continuation-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed.zst",
+      "patchSha256": "80304f2320fe066ecacf586ead1461bfea6ec52316ee4d7f01283ad38d3bff0f",
+      "sha256": "9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed",
+      "bytes": 1529,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/mac/visual-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2.zst",
+      "patchSha256": "a9a7d43594bcef88b156bebfb5f29095dc6cde70cecc23e91cccacd5020cc70a",
+      "sha256": "8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2",
+      "bytes": 2050,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/settings-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/win/continuation-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/win/visual-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/9f63d32fe56f335607c954edc907c2f56cd2e0dd13ad551667d119d741c2c95e.zst",
+      "patchSha256": "2f28a89eefdead32dcedfc102bef3bb4a6e7860fba1f9555a529dec5862ab80a",
+      "sha256": "9f63d32fe56f335607c954edc907c2f56cd2e0dd13ad551667d119d741c2c95e",
+      "bytes": 2572,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-mac/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2.zst",
+      "patchSha256": "a9a7d43594bcef88b156bebfb5f29095dc6cde70cecc23e91cccacd5020cc70a",
+      "sha256": "8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2",
+      "bytes": 2050,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/9f63d32fe56f335607c954edc907c2f56cd2e0dd13ad551667d119d741c2c95e.zst",
+      "patchSha256": "2f28a89eefdead32dcedfc102bef3bb4a6e7860fba1f9555a529dec5862ab80a",
+      "sha256": "9f63d32fe56f335607c954edc907c2f56cd2e0dd13ad551667d119d741c2c95e",
+      "bytes": 2572,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/mac/capture-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2.zst",
+      "patchSha256": "a9a7d43594bcef88b156bebfb5f29095dc6cde70cecc23e91cccacd5020cc70a",
+      "sha256": "8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2",
+      "bytes": 2050,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/mac/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed.zst",
+      "patchSha256": "80304f2320fe066ecacf586ead1461bfea6ec52316ee4d7f01283ad38d3bff0f",
+      "sha256": "9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed",
+      "bytes": 1529,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/mac/settings-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-preparation/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/capture-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/9f63d32fe56f335607c954edc907c2f56cd2e0dd13ad551667d119d741c2c95e.zst",
+      "patchSha256": "2f28a89eefdead32dcedfc102bef3bb4a6e7860fba1f9555a529dec5862ab80a",
+      "sha256": "9f63d32fe56f335607c954edc907c2f56cd2e0dd13ad551667d119d741c2c95e",
+      "bytes": 2572,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win-settings/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-04/higher-settings/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2.zst",
+      "patchSha256": "a9a7d43594bcef88b156bebfb5f29095dc6cde70cecc23e91cccacd5020cc70a",
+      "sha256": "8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2",
+      "bytes": 2050,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed.zst",
+      "patchSha256": "80304f2320fe066ecacf586ead1461bfea6ec52316ee4d7f01283ad38d3bff0f",
+      "sha256": "9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed",
+      "bytes": 1529,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-companion/Probe.cs": {
+      "base": "git",
+      "basePath": "584ab781f0013a957fe3a4d878b99f1a7b033f66",
+      "baseSha256": "9421e7ea257e310abf8312d7cb6ec8fff489c220c82b5bf56145fc2a07e3570c",
+      "archiveMember": "patches/c25a0eeea81b6a2933f8d1afb3b7be0b5027106e9a1209e4beec49e88b5aad2b.zst",
+      "patchSha256": "7103e090482f488f1739bc3438472bfe40d804e9efc48b2f00d8f9a2aeaa4e4d",
+      "sha256": "c25a0eeea81b6a2933f8d1afb3b7be0b5027106e9a1209e4beec49e88b5aad2b",
+      "bytes": 10611,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2.zst",
+      "patchSha256": "a9a7d43594bcef88b156bebfb5f29095dc6cde70cecc23e91cccacd5020cc70a",
+      "sha256": "8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2",
+      "bytes": 2050,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2.zst",
+      "patchSha256": "a9a7d43594bcef88b156bebfb5f29095dc6cde70cecc23e91cccacd5020cc70a",
+      "sha256": "8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2",
+      "bytes": 2050,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win-retry/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/win-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-02/english-control/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9.zst",
+      "patchSha256": "295de46e20318c1259607a0e5cbed3d16231ecb90e221b7d5bed6ae8f64e5aa0",
+      "sha256": "d80fb86d217ba63b659254e627f1ca522fbaa0dd530694682dd24f8e62968ae9",
+      "bytes": 1530,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/mac/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed.zst",
+      "patchSha256": "80304f2320fe066ecacf586ead1461bfea6ec52316ee4d7f01283ad38d3bff0f",
+      "sha256": "9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed",
+      "bytes": 1529,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-mac/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-mac/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-05/higher-settings/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/mac/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/mac-retry/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win-retry/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/mac/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/settings/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/settings-large/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/win/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/dialogue/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2.zst",
+      "patchSha256": "a9a7d43594bcef88b156bebfb5f29095dc6cde70cecc23e91cccacd5020cc70a",
+      "sha256": "8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2",
+      "bytes": 2050,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/reveal/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2.zst",
+      "patchSha256": "a9a7d43594bcef88b156bebfb5f29095dc6cde70cecc23e91cccacd5020cc70a",
+      "sha256": "8e22229208b15019608cd379d31514d220750e45b7138ceb0e7cd01a61b38ce2",
+      "bytes": 2050,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/settings/Probe.cs": {
+      "base": "git",
+      "basePath": "584ab781f0013a957fe3a4d878b99f1a7b033f66",
+      "baseSha256": "9421e7ea257e310abf8312d7cb6ec8fff489c220c82b5bf56145fc2a07e3570c",
+      "archiveMember": "patches/7aa383a408798efefa5ecf79511c5f8d79f69ba7c5c63009bbd3db98c884c76d.zst",
+      "patchSha256": "9ad154f6ccbcb9245212a1890d17ca8f6bf349d8ed6c5e9750cd245f4af8fe27",
+      "sha256": "7aa383a408798efefa5ecf79511c5f8d79f69ba7c5c63009bbd3db98c884c76d",
+      "bytes": 10604,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/mac/settings/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/dialogue/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/reveal/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/settings/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-06/yarn-unity/tools/patch.csproj": {
+      "base": "git",
+      "basePath": "fe2e0667cbc89ef47627401b6a8c2c22f6695459",
+      "baseSha256": "75690a11cdf9bc8d45689e99ce0310049243c2b3ab210055b7fc9c06b92b5b72",
+      "archiveMember": "patches/2ddc5d79deddf2e132cd1967761bf9c75b62efc0387e80a34f2caa479c4866df.zst",
+      "patchSha256": "99b6726122b75e50123f2fa2c636269ece58d4253a3e0a900524978e86a8b2c6",
+      "sha256": "2ddc5d79deddf2e132cd1967761bf9c75b62efc0387e80a34f2caa479c4866df",
+      "bytes": 320,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/complex-renderer-20261110.nYJmC2/geometry/geometry.csproj": {
+      "base": "git",
+      "basePath": "a3323f0c9d542ceb759056a2c5add0bbf297989b",
+      "baseSha256": "cd242c77c6ca1934b0a5f27ec6e9902cd0166f21ccb8c1e5f9db14000f602361",
+      "archiveMember": "patches/f418d117c19b25083b9e6dc004faf2395186d0337bf31b99c93435d85531223d.zst",
+      "patchSha256": "b2ddc30f321fdf5d2707f0fa202e798cdac74a607df8f3bcfa04115ffc107d8d",
+      "sha256": "f418d117c19b25083b9e6dc004faf2395186d0337bf31b99c93435d85531223d",
+      "bytes": 572,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/complex-renderer-20261110.nYJmC2/hook-verify/hook-verify.csproj": {
+      "base": "git",
+      "basePath": "c4c589424f5890a92a87ba1b61137172dcba3679",
+      "baseSha256": "54ef12b5ec48ebf575230ba2985fa193d9fcde1eaf58b48c139fe34f6abf1d30",
+      "archiveMember": "patches/a20778cb8f57494e4adc5fd71101d687aaa251daf6feadc5571caf86c5c73d7d.zst",
+      "patchSha256": "08217d40087b49b192c51a3f15dc03be9237e2d394b557345b3a86613642de7e",
+      "sha256": "a20778cb8f57494e4adc5fd71101d687aaa251daf6feadc5571caf86c5c73d7d",
+      "bytes": 681,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/complex-renderer-20261110.nYJmC2/inline-plan-verify/Verify.csproj": {
+      "base": "git",
+      "basePath": "b88dceb55f93a71374a7c7356414f06d4221e3dd",
+      "baseSha256": "14be763a637642095743e6cff6e98c7aa853e2498f9cacdbf437bca85dd4520b",
+      "archiveMember": "patches/1a9202b4b97adb61c6edd8ec06b539b090b63a149fdcf94c2377027c5befa1b1.zst",
+      "patchSha256": "dedb82686bba3418630d506f82b0dfe72fae24e0417e2629a08e9595407c2882",
+      "sha256": "1a9202b4b97adb61c6edd8ec06b539b090b63a149fdcf94c2377027c5befa1b1",
+      "bytes": 563,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/complex-renderer-20261110.nYJmC2/layout-obj/Debug/netstandard2.1/.NETStandard,Version=v2.1.AssemblyAttributes.cs": {
+      "base": "git",
+      "basePath": "cf4935657f5fa81717d99f00ed2a2b8074cfe680",
+      "baseSha256": "5d3b310fc377709a88df12b371e97892cc1f1aec14ed3ea1d32189f66741962d",
+      "archiveMember": "patches/df351ab8cda38d16370d8aa74d934a81faf0e44ecc9a079bb1c5cc7a1f1575af.zst",
+      "patchSha256": "9d231af3a24ca42a405b2a2a3b8d9b895e8e7feb665da1a67b0bb3da78dfad10",
+      "sha256": "df351ab8cda38d16370d8aa74d934a81faf0e44ecc9a079bb1c5cc7a1f1575af",
+      "bytes": 204,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/complex-renderer-20261110.nYJmC2/speaker-mark-test/Test.csproj": {
+      "base": "git",
+      "basePath": "b88dceb55f93a71374a7c7356414f06d4221e3dd",
+      "baseSha256": "14be763a637642095743e6cff6e98c7aa853e2498f9cacdbf437bca85dd4520b",
+      "archiveMember": "patches/fb60b9480056dddf8079cbf357b31946b719d3a2af17e903e7e1a30bfb619651.zst",
+      "patchSha256": "275e5664aa384502b78fb8d5cb8f1f564375b8a6a6f274feb0e9def0ceb6d841",
+      "sha256": "fb60b9480056dddf8079cbf357b31946b719d3a2af17e903e7e1a30bfb619651",
+      "bytes": 566,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/complex-renderer-20261110.nYJmC2/verify/verify.csproj": {
+      "base": "git",
+      "basePath": "a3323f0c9d542ceb759056a2c5add0bbf297989b",
+      "baseSha256": "cd242c77c6ca1934b0a5f27ec6e9902cd0166f21ccb8c1e5f9db14000f602361",
+      "archiveMember": "patches/c6db89eddb350a421f42f2ea29337664ed5ed9abcf5d0196e9ad70f6b906e277.zst",
+      "patchSha256": "b12649aa2b94b540fe3693de37ae6976ed13ae81f795261904791ebe14eefcf1",
+      "sha256": "c6db89eddb350a421f42f2ea29337664ed5ed9abcf5d0196e9ad70f6b906e277",
+      "bytes": 336,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/mac-retry/Probe.cs": {
+      "base": "git",
+      "basePath": "8738f4da8fd4509ff996cbccb3ed6e226401aa69",
+      "baseSha256": "0da6c47141370504caef49171b74bdb3e0be1b677b99561cd5756d2fe86d5981",
+      "archiveMember": "patches/fbf2f18b1b302cc9164f37b5cf3fb106f35c92fc490cb52fc28bd815e3ff417b.zst",
+      "patchSha256": "907c6c64be4ab1bb03252cad141a5528c72401b0766ed0daacc7cd3ddf732d2b",
+      "sha256": "fbf2f18b1b302cc9164f37b5cf3fb106f35c92fc490cb52fc28bd815e3ff417b",
+      "bytes": 36552,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/mac-retry/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/win-retry/Probe.cs": {
+      "base": "git",
+      "basePath": "e71e68243f8b5f3a447892fcdb638e360d9494f5",
+      "baseSha256": "4e403979f931f8ebf051f5015bf9768bdc4f1aa6334ab1b63f52174e876fb0d1",
+      "archiveMember": "patches/44b33a61c57931f4a81d51ed44cc0e863d50a92c581f72a024e1dd3a92f778a9.zst",
+      "patchSha256": "ac192f9ef2451b88a9f37890ca8c8250ec622d681b9f2517f64499fa7f9523a3",
+      "sha256": "44b33a61c57931f4a81d51ed44cc0e863d50a92c581f72a024e1dd3a92f778a9",
+      "bytes": 52896,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/de-23e37bb-runtime-20261110.sqB1Nb/win-retry/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/de-32091d1-runtime-20261110.SIKWQZ/mac-retry/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/de-32091d1-runtime-20261110.SIKWQZ/win-retry/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/es-a76199c-runtime-20261110.RSMRyp/mac-retry/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/es-a76199c-runtime-20261110.RSMRyp/win-retry/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/european-settings-visual-20261110.Q6lrkb/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/european-text-paths-20261110.QddlnY/mac/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed.zst",
+      "patchSha256": "80304f2320fe066ecacf586ead1461bfea6ec52316ee4d7f01283ad38d3bff0f",
+      "sha256": "9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed",
+      "bytes": 1529,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/european-text-paths-20261110.QddlnY/mac/nfc-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed.zst",
+      "patchSha256": "80304f2320fe066ecacf586ead1461bfea6ec52316ee4d7f01283ad38d3bff0f",
+      "sha256": "9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed",
+      "bytes": 1529,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/european-text-paths-20261110.QddlnY/mac-settings/companion/Probe.cs": {
+      "base": "git",
+      "basePath": "584ab781f0013a957fe3a4d878b99f1a7b033f66",
+      "baseSha256": "9421e7ea257e310abf8312d7cb6ec8fff489c220c82b5bf56145fc2a07e3570c",
+      "archiveMember": "patches/98c93818d4367de8d6e9c65ffb89a80e663cac29c91f5694a906cf40c2f49da3.zst",
+      "patchSha256": "7eb5f5a03ff16415d7f8714c7551977f9bf4f4cee870ac81a3b8db3705567983",
+      "sha256": "98c93818d4367de8d6e9c65ffb89a80e663cac29c91f5694a906cf40c2f49da3",
+      "bytes": 7336,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/european-text-paths-20261110.QddlnY/mac-settings/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271.zst",
+      "patchSha256": "4e268ee659fac806594d1a601c11c64bb62b515f21aee5dfcc42b4c23337068d",
+      "sha256": "9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271",
+      "bytes": 1355,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/european-text-paths-20261110.QddlnY/win/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/european-text-paths-20261110.QddlnY/win/nfc-companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/european-text-paths-20261110.QddlnY/win-settings/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271.zst",
+      "patchSha256": "4e268ee659fac806594d1a601c11c64bb62b515f21aee5dfcc42b4c23337068d",
+      "sha256": "9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271",
+      "bytes": 1355,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/mac-retry/Probe.cs": {
+      "base": "git",
+      "basePath": "8738f4da8fd4509ff996cbccb3ed6e226401aa69",
+      "baseSha256": "0da6c47141370504caef49171b74bdb3e0be1b677b99561cd5756d2fe86d5981",
+      "archiveMember": "patches/ea49f59be2ea4077d21426727b9f0bc6239368549d9d2e0450db55f89201ca14.zst",
+      "patchSha256": "e8fd2bccb0118f2e5d51d86eed057d02d9fa4b9d4d99ac7c9cd5220ac7dc1bc3",
+      "sha256": "ea49f59be2ea4077d21426727b9f0bc6239368549d9d2e0450db55f89201ca14",
+      "bytes": 36547,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/mac-retry/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/win-retry/Probe.cs": {
+      "base": "git",
+      "basePath": "e71e68243f8b5f3a447892fcdb638e360d9494f5",
+      "baseSha256": "4e403979f931f8ebf051f5015bf9768bdc4f1aa6334ab1b63f52174e876fb0d1",
+      "archiveMember": "patches/434ff09384da8c55230d3de00b7c121e1b050f6295d4e95aa115397df16eea0b.zst",
+      "patchSha256": "ddfedfa5c8ddd9c3609ed037119eae8e15bebb109b17fa7c876a5c2b96847e2f",
+      "sha256": "434ff09384da8c55230d3de00b7c121e1b050f6295d4e95aa115397df16eea0b",
+      "bytes": 52891,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/win-retry/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/il-dump/probe.csproj": {
+      "base": "git",
+      "basePath": "da97ced2398a107121934c15cd5a5c1f79a3582b",
+      "baseSha256": "85b29b67d9e3503a594902982140cf224b6d7c9b2b3527b4622449defd1ac8fc",
+      "archiveMember": "patches/417ccb2658a7e86688405e2964af10e67829058f3387c1156599be8ce9ffb439.zst",
+      "patchSha256": "8b5fb76c13c5769e6fbe99e118dc7e2e38f1edbfbf85417817bf2d0ed2d9122c",
+      "sha256": "417ccb2658a7e86688405e2964af10e67829058f3387c1156599be8ce9ffb439",
+      "bytes": 469,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/level-schema-probe/level-schema-probe.csproj": {
+      "base": "git",
+      "basePath": "5a54f2c934df426d16522677d574ba0ba140bade",
+      "baseSha256": "3db8bb5512fe30d125fe0f0fe86e5d696ef8a57b55feb6a35d9ff4f76926c9e9",
+      "archiveMember": "patches/9e82630ddb02d4d40d791dd9f50318fb03a0b03edff9840a81994e075b613002.zst",
+      "patchSha256": "74174ae4714fc01f84d15514450bf7e6bf1033ce322030e2b86ebff56d53584e",
+      "sha256": "9e82630ddb02d4d40d791dd9f50318fb03a0b03edff9840a81994e075b613002",
+      "bytes": 318,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/live-renderer.O43vkv/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/d60ddf6e687a6b34767c8e0a5bf4db39689b4205c4cf4cd115b5ac13229d85ee.zst",
+      "patchSha256": "5fb77a1a2c367682483b1a388fbd2ae33994399852e01216a47d847a1522e68e",
+      "sha256": "d60ddf6e687a6b34767c8e0a5bf4db39689b4205c4cf4cd115b5ac13229d85ee",
+      "bytes": 1617,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/macos-conrad-contact-20261109.ck4zOH/companion/Probe.cs": {
+      "base": "git",
+      "basePath": "e71e68243f8b5f3a447892fcdb638e360d9494f5",
+      "baseSha256": "4e403979f931f8ebf051f5015bf9768bdc4f1aa6334ab1b63f52174e876fb0d1",
+      "archiveMember": "patches/2d66aadbdf42f082b53784a27e3111ecba1778921fd6228f77080ef0bf9d2522.zst",
+      "patchSha256": "e73e39a44769a94118d2b969b78931fdea236191c65f4808439910f3be94c042",
+      "sha256": "2d66aadbdf42f082b53784a27e3111ecba1778921fd6228f77080ef0bf9d2522",
+      "bytes": 47786,
+      "mode": "0o644",
+      "referencedBy": [
+        "background-performance-20261109.md"
+      ]
+    },
+    "localization/work/managed-game-roles-20261109.8LlHLN/runtime/probe.csproj": {
+      "base": "git",
+      "basePath": "da97ced2398a107121934c15cd5a5c1f79a3582b",
+      "baseSha256": "85b29b67d9e3503a594902982140cf224b6d7c9b2b3527b4622449defd1ac8fc",
+      "archiveMember": "patches/a21e0405d90001d9ec77079c815a04861238f390588774cac073ebd3860faac2.zst",
+      "patchSha256": "c7097a60cbffaf80f255e3eb3c611d3712f68521f94075787648d0fa373b6307",
+      "sha256": "a21e0405d90001d9ec77079c815a04861238f390588774cac073ebd3860faac2",
+      "bytes": 303,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/multilingual-feasibility-20261110.L1v5Yf/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271.zst",
+      "patchSha256": "4e268ee659fac806594d1a601c11c64bb62b515f21aee5dfcc42b4c23337068d",
+      "sha256": "9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271",
+      "bytes": 1355,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/parallels-renderer.sUgfkk/windowed/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/d60ddf6e687a6b34767c8e0a5bf4db39689b4205c4cf4cd115b5ac13229d85ee.zst",
+      "patchSha256": "5fb77a1a2c367682483b1a388fbd2ae33994399852e01216a47d847a1522e68e",
+      "sha256": "d60ddf6e687a6b34767c8e0a5bf4db39689b4205c4cf4cd115b5ac13229d85ee",
+      "bytes": 1617,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/pl-7714bd2-runtime-20261110.MbK1dB/mac-retry/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/pl-7714bd2-runtime-20261110.MbK1dB/win-retry/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/rtl-caption-probe.ZOUQUe/source/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/rtl-choice-probe.2Whkos/source/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/rtl-order-20261110.RoB8ak/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271.zst",
+      "patchSha256": "4e268ee659fac806594d1a601c11c64bb62b515f21aee5dfcc42b4c23337068d",
+      "sha256": "9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271",
+      "bytes": 1355,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/rtl-order-20261110.RoB8ak/thai/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271.zst",
+      "patchSha256": "4e268ee659fac806594d1a601c11c64bb62b515f21aee5dfcc42b4c23337068d",
+      "sha256": "9f0c95f9d30ec16ee657e99f28037e0e6f043b30ba3bec26a8ee37a7b0105271",
+      "bytes": 1355,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/ru-ryan-pilot.uptm5K/source/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/ru-ryan-side.BPF6HL/source/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/ru-ryan-visible.KAk0nV/source/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/ru-ryan-wash.Axd7AS/source/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/ru-screenshot-pilot.JV4y1Y/dialogue-source/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/ru-screenshot-pilot.JV4y1Y/source/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/a3b77ee92381145c51227aaf86f4e110607832159a08a88cbc5ca2dfeb0c3d0d.zst",
+      "patchSha256": "7efb0b66577373a5691d457f769858ae12a943cfc5c61a134abb2e23cb1610d0",
+      "sha256": "a3b77ee92381145c51227aaf86f4e110607832159a08a88cbc5ca2dfeb0c3d0d",
+      "bytes": 1383,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/screenshot-batch.B7ouXK/source/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/screenshot-review.I5EEsi/source/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860.zst",
+      "patchSha256": "83055208090e354551c3d9adf5025ec414e593df5387a70616db88984a7aff6b",
+      "sha256": "40a400015ceb8cd344848652a1b52e1af91fb83839620868339a0c346bf08860",
+      "bytes": 2216,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/settings-stock-runtime-20261109.pOHuxf/companion/Probe.cs": {
+      "base": "git",
+      "basePath": "584ab781f0013a957fe3a4d878b99f1a7b033f66",
+      "baseSha256": "9421e7ea257e310abf8312d7cb6ec8fff489c220c82b5bf56145fc2a07e3570c",
+      "archiveMember": "patches/8c1ed835d78f9a2e02757a0ed84cdfbf37ec2ddbe708642e85ed558f208d652d.zst",
+      "patchSha256": "9aec64bcfbbd677720382095ae0cde1ede026fe82685517db11fe1cedcbb85d5",
+      "sha256": "8c1ed835d78f9a2e02757a0ed84cdfbf37ec2ddbe708642e85ed558f208d652d",
+      "bytes": 6042,
+      "mode": "0o644",
+      "referencedBy": [
+        "settings-semantics-20261107.md"
+      ]
+    },
+    "localization/work/speaker-contrast-20261110.8i848J/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/speaker-runtime-20261110.O82oIa/companion/Probe.cs": {
+      "base": "git",
+      "basePath": "e71e68243f8b5f3a447892fcdb638e360d9494f5",
+      "baseSha256": "4e403979f931f8ebf051f5015bf9768bdc4f1aa6334ab1b63f52174e876fb0d1",
+      "archiveMember": "patches/9fa656628e6a1977fea2b4ed70b1d5cf9c8f6c88540c86f9cded608b9f7b0967.zst",
+      "patchSha256": "dbad7763f859407cc3ab52a085fa5aa4a8101faa085a8c25d024ac4c380d3ae1",
+      "sha256": "9fa656628e6a1977fea2b4ed70b1d5cf9c8f6c88540c86f9cded608b9f7b0967",
+      "bytes": 52382,
+      "mode": "0o644",
+      "referencedBy": [
+        "speaker-locale-runtime-20261110.md"
+      ]
+    },
+    "localization/work/speaker-runtime-20261110.O82oIa/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/speaker-runtime-harness/speaker-runtime-harness.csproj": {
+      "base": "git",
+      "basePath": "5a54f2c934df426d16522677d574ba0ba140bade",
+      "baseSha256": "3db8bb5512fe30d125fe0f0fe86e5d696ef8a57b55feb6a35d9ff4f76926c9e9",
+      "archiveMember": "patches/a97188977e5780c5c56749661a730c6050baf63fa4b8ce22614468c9d5fe6fa3.zst",
+      "patchSha256": "2d5ce3d7ccdbac5c49764396025c086701a1850f53e85ea774233f271ddd719d",
+      "sha256": "a97188977e5780c5c56749661a730c6050baf63fa4b8ce22614468c9d5fe6fa3",
+      "bytes": 183,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/styled-cyrillic-options-20261110.ZptivL/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/c356c33af6c7ffdd6c1d4691239b9971b7239161959b7480c88fd44ef067521e.zst",
+      "patchSha256": "874a09cb489cab2fcd1fa27426f5be0527a855697b48f94fe615749d677d469f",
+      "sha256": "c356c33af6c7ffdd6c1d4691239b9971b7239161959b7480c88fd44ef067521e",
+      "bytes": 1820,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/styled-cyrillic-options-20261110.ZptivL/windows/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/c3620f290f4ec6af86fe2b746722d5da428a817d09b1deaacc34fa2a9c3b027e.zst",
+      "patchSha256": "4102b373c028e4e474d3e2b22bc0b79284b84ceea230a9f52c54051f4ab0e55f",
+      "sha256": "c3620f290f4ec6af86fe2b746722d5da428a817d09b1deaacc34fa2a9c3b027e",
+      "bytes": 2342,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/styled-cyrillic-runtime-20261110.yAjNaW/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "71960073b5a4d0d877ad840d362aec62b6ef479c",
+      "baseSha256": "a08d3f8ad4f266504a81753d5697c5a0bb541f0c7fc1ed6db93f2a779fe7a670",
+      "archiveMember": "patches/9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed.zst",
+      "patchSha256": "80304f2320fe066ecacf586ead1461bfea6ec52316ee4d7f01283ad38d3bff0f",
+      "sha256": "9bbf9accfd078ac011408d5d83994674d5115008a4e2aa7e97e89b9876c285ed",
+      "bytes": 1529,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/styled-cyrillic-runtime-20261110.yAjNaW/windows/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/styled-cyrillic-runtime-20261110.yAjNaW/windows-waypoint/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/transition-builder-20261109.8zft9T/inspect/inspect.csproj": {
+      "base": "git",
+      "basePath": "fe2e0667cbc89ef47627401b6a8c2c22f6695459",
+      "baseSha256": "75690a11cdf9bc8d45689e99ce0310049243c2b3ab210055b7fc9c06b92b5b72",
+      "archiveMember": "patches/2ddc5d79deddf2e132cd1967761bf9c75b62efc0387e80a34f2caa479c4866df.zst",
+      "patchSha256": "99b6726122b75e50123f2fa2c636269ece58d4253a3e0a900524978e86a8b2c6",
+      "sha256": "2ddc5d79deddf2e132cd1967761bf9c75b62efc0387e80a34f2caa479c4866df",
+      "bytes": 320,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/transition-builder-20261109.8zft9T/playthrough-20261109.f7XBcc/inspect/inspect.csproj": {
+      "base": "git",
+      "basePath": "fe2e0667cbc89ef47627401b6a8c2c22f6695459",
+      "baseSha256": "75690a11cdf9bc8d45689e99ce0310049243c2b3ab210055b7fc9c06b92b5b72",
+      "archiveMember": "patches/2ddc5d79deddf2e132cd1967761bf9c75b62efc0387e80a34f2caa479c4866df.zst",
+      "patchSha256": "99b6726122b75e50123f2fa2c636269ece58d4253a3e0a900524978e86a8b2c6",
+      "sha256": "2ddc5d79deddf2e132cd1967761bf9c75b62efc0387e80a34f2caa479c4866df",
+      "bytes": 320,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/transition-unity-20261109.G2AxDU/conrad-route-probe.cs": {
+      "base": "git",
+      "basePath": "ec0f08df82847d934f6acd0de4c246e2a2647354",
+      "baseSha256": "e25f2f3a5e94ee13ec50cd14862ca643bec9296f23bd1a3deec880f6ba8517c3",
+      "archiveMember": "patches/61e80c7bfe5e6db6e7e6bbbfc3a65e001bf9a09339bdbb71bafc7f408df9d8d6.zst",
+      "patchSha256": "ff26b6c5735a4673cc77f6496ff467d3ffc99b678bb84e4d348f4c19b476e2fb",
+      "sha256": "61e80c7bfe5e6db6e7e6bbbfc3a65e001bf9a09339bdbb71bafc7f408df9d8d6",
+      "bytes": 2131,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/transition-unity-20261109.G2AxDU/repair-probe.cs": {
+      "base": "git",
+      "basePath": "ec0f08df82847d934f6acd0de4c246e2a2647354",
+      "baseSha256": "e25f2f3a5e94ee13ec50cd14862ca643bec9296f23bd1a3deec880f6ba8517c3",
+      "archiveMember": "patches/383db474cabda761ccb3329e2ab617bdb53b24aaabfb4ab13912ce31ad125100.zst",
+      "patchSha256": "6afaee85cfc6036ee77c4a93d4ad5432edd36aa836e02e0b918c27423eb5049b",
+      "sha256": "383db474cabda761ccb3329e2ab617bdb53b24aaabfb4ab13912ce31ad125100",
+      "bytes": 3978,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/transition-unity-20261109.G2AxDU/tools/patch.csproj": {
+      "base": "git",
+      "basePath": "fe2e0667cbc89ef47627401b6a8c2c22f6695459",
+      "baseSha256": "75690a11cdf9bc8d45689e99ce0310049243c2b3ab210055b7fc9c06b92b5b72",
+      "archiveMember": "patches/2ddc5d79deddf2e132cd1967761bf9c75b62efc0387e80a34f2caa479c4866df.zst",
+      "patchSha256": "99b6726122b75e50123f2fa2c636269ece58d4253a3e0a900524978e86a8b2c6",
+      "sha256": "2ddc5d79deddf2e132cd1967761bf9c75b62efc0387e80a34f2caa479c4866df",
+      "bytes": 320,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/uk-alexander-unity-20261110.Pk2UQe/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/uk-choice-unity-20261110.pFemW7/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/uk-choice-unity-20261110.pFemW7/patcher/Program.cs": {
+      "base": "git",
+      "basePath": "3be6738b852c654082e8f6c4a009abfea7422676",
+      "baseSha256": "13180671158a95c5e3b47754df1b8bbb1dcdf8ce835de19b94f0b63c33bd9d3e",
+      "archiveMember": "patches/598e9a9cb2ff954f58b4a2f4c463e891f2e72593e5b56b80290e442213c02715.zst",
+      "patchSha256": "1053b693b83fddaa3ce2fc8d0181b9813904e2f1a5de063ab5b0f430cad1d7cd",
+      "sha256": "598e9a9cb2ff954f58b4a2f4c463e891f2e72593e5b56b80290e442213c02715",
+      "bytes": 4708,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/uk-special-scene-closure-20261110.sbqndo/alexander-question-runtime-test/Program.cs": {
+      "base": "git",
+      "basePath": "cecdc833840a426684661f4a11b187764baedc24",
+      "baseSha256": "d1c5981ad99dad3106d25a328e63eeb776c72306481370991d71cde4a6a25ae9",
+      "archiveMember": "patches/c2ed0e9bc3cbc13d99e83e8a2489154f64a1b283aec260923976fd20dfa6cd05.zst",
+      "patchSha256": "b8ece630c6ae0f05cda5a681e6b0cd1a735c6598a77dffeaf0e8668f4a8a14e3",
+      "sha256": "c2ed0e9bc3cbc13d99e83e8a2489154f64a1b283aec260923976fd20dfa6cd05",
+      "bytes": 8105,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/uk-special-scene-closure-20261110.sbqndo/romance-route-runtime-test/Program.cs": {
+      "base": "git",
+      "basePath": "ec0f08df82847d934f6acd0de4c246e2a2647354",
+      "baseSha256": "e25f2f3a5e94ee13ec50cd14862ca643bec9296f23bd1a3deec880f6ba8517c3",
+      "archiveMember": "patches/fe9ae969af0c8c9c7295a53253d73aff35ace558bc11f3aa2c23a8891bb1f89c.zst",
+      "patchSha256": "8ee6ad955ef3fb4945b3f5be3daeb9f32e42a0b182dfe00aff8f3547ba2c42b9",
+      "sha256": "fe9ae969af0c8c9c7295a53253d73aff35ace558bc11f3aa2c23a8891bb1f89c",
+      "bytes": 6514,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/uk-special-scene-closure-20261110.sbqndo/transition-tail/Program.cs": {
+      "base": "git",
+      "basePath": "c6e5ab7e564d671895ef5d7c941d21ad2d01a20b",
+      "baseSha256": "dc2bfe7e16628f2529353f05c24e89d330c4d23f1899ab5368dd73a575bb02ea",
+      "archiveMember": "patches/6408cbc6bbf3e161c479b6b753583ca6bf482f55b213a2e8ccc27db7d29c2a74.zst",
+      "patchSha256": "4d10510d648c0aa01136d9995607424338841dff9af3af362f3fab4f8c409d51",
+      "sha256": "6408cbc6bbf3e161c479b6b753583ca6bf482f55b213a2e8ccc27db7d29c2a74",
+      "bytes": 3162,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-text-copies-20261111.json.gz"
+      ]
+    },
+    "localization/work/version-ui-activate-20261109.G47qP7/companion/Probe.cs": {
+      "base": "git",
+      "basePath": "cf4935657f5fa81717d99f00ed2a2b8074cfe680",
+      "baseSha256": "5d3b310fc377709a88df12b371e97892cc1f1aec14ed3ea1d32189f66741962d",
+      "archiveMember": "patches/e0917dd0cd265e0d8463283bd3783260a94ab90d1acfb09e5f780910d71484c1.zst",
+      "patchSha256": "d5fafe657fda8715187d511ec30307b0478f46c83039c3897ca747e3b1dca9c9",
+      "sha256": "e0917dd0cd265e0d8463283bd3783260a94ab90d1acfb09e5f780910d71484c1",
+      "bytes": 4879,
+      "mode": "0o644",
+      "referencedBy": [
+        "ui-reading-version-consumers-20261107.md"
+      ]
+    },
+    "localization/work/version-ui-runtime-20261109.vpXR5H/companion/Probe.cs": {
+      "base": "git",
+      "basePath": "cf4935657f5fa81717d99f00ed2a2b8074cfe680",
+      "baseSha256": "5d3b310fc377709a88df12b371e97892cc1f1aec14ed3ea1d32189f66741962d",
+      "archiveMember": "patches/9aff04d9da543117a9308552537bd58368ec4a9f34996d4e502a180c4bac7c2c.zst",
+      "patchSha256": "19af736d3145e7a065bcefa4aa3be8332f7338c4dd2a49d46c3c598db556ae1e",
+      "sha256": "9aff04d9da543117a9308552537bd58368ec4a9f34996d4e502a180c4bac7c2c",
+      "bytes": 3653,
+      "mode": "0o644",
+      "referencedBy": [
+        "ui-reading-version-consumers-20261107.md"
+      ]
+    },
+    "localization/work/windows-conrad-window-20261109.HmhUQt/companion/Probe.cs": {
+      "base": "git",
+      "basePath": "e71e68243f8b5f3a447892fcdb638e360d9494f5",
+      "baseSha256": "4e403979f931f8ebf051f5015bf9768bdc4f1aa6334ab1b63f52174e876fb0d1",
+      "archiveMember": "patches/ba37fcc9a3efbd47e1d2761d4d74e7bf432d26d4d178ac656867b30d94607755.zst",
+      "patchSha256": "d749107b3f18fe2c94deb11fb8121bf3910c5dc68065f02cb00c96181246c0aa",
+      "sha256": "ba37fcc9a3efbd47e1d2761d4d74e7bf432d26d4d178ac656867b30d94607755",
+      "bytes": 46990,
+      "mode": "0o644",
+      "referencedBy": [
+        "background-performance-20261109.md"
+      ]
+    },
+    "localization/work/windows-cyrillic-offscreen-20261109.eRMrOI/companion/companion.csproj": {
+      "base": "git",
+      "basePath": "aef7fcc0701e97f5ba9c6ba8a6f560db27210561",
+      "baseSha256": "d3f56e573d5bd4a781d59fa809544766bbd0b7d253c98a66787f2bf6aa4b89cd",
+      "archiveMember": "patches/5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058.zst",
+      "patchSha256": "fbbd92e3b746f1311c42db4830511f7ff7a5a9290fc05b00257d549d8aeaf019",
+      "sha256": "5364a72552008e537aa99e21480c500633116aabaf1506c2f758543a56cfc058",
+      "bytes": 2051,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/windows-version-ui-20261109.AaCv9x/companion/Probe.cs": {
+      "base": "git",
+      "basePath": "cf4935657f5fa81717d99f00ed2a2b8074cfe680",
+      "baseSha256": "5d3b310fc377709a88df12b371e97892cc1f1aec14ed3ea1d32189f66741962d",
+      "archiveMember": "patches/8b4e036aeb16846962ff84c36f850c7455da68e16098fb88fe7957e20c58ab52.zst",
+      "patchSha256": "c91e57cff5d69812fc55e4042644c0898f7e4b669d75a30cec41849aa6e02049",
+      "sha256": "8b4e036aeb16846962ff84c36f850c7455da68e16098fb88fe7957e20c58ab52",
+      "bytes": 5165,
+      "mode": "0o644",
+      "referencedBy": [
+        "ui-reading-version-consumers-20261107.md"
+      ]
+    },
+    "localization/work/yarn-schema-probe/probe.csproj": {
+      "base": "git",
+      "basePath": "da97ced2398a107121934c15cd5a5c1f79a3582b",
+      "baseSha256": "85b29b67d9e3503a594902982140cf224b6d7c9b2b3527b4622449defd1ac8fc",
+      "archiveMember": "patches/417ccb2658a7e86688405e2964af10e67829058f3387c1156599be8ce9ffb439.zst",
+      "patchSha256": "8b5fb76c13c5769e6fbe99e118dc7e2e38f1edbfbf85417817bf2d0ed2d9122c",
+      "sha256": "417ccb2658a7e86688405e2964af10e67829058f3387c1156599be8ce9ffb439",
+      "bytes": 469,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    },
+    "localization/work/yarn-speaker-roster-20261110.EZsFur/parser.csproj": {
+      "base": "git",
+      "basePath": "da97ced2398a107121934c15cd5a5c1f79a3582b",
+      "baseSha256": "85b29b67d9e3503a594902982140cf224b6d7c9b2b3527b4622449defd1ac8fc",
+      "archiveMember": "patches/2bd22a93f91330450f504600f1fcdb70e6ae3525ba465c2a885869321f341020.zst",
+      "patchSha256": "21fd34b4185915b60b4620ba2041fad7aa293d7fc5150d2c390d2d0e7d763526",
+      "sha256": "2bd22a93f91330450f504600f1fcdb70e6ae3525ba465c2a885869321f341020",
+      "bytes": 272,
+      "mode": "0o644",
+      "referencedBy": [
+        "archival-dotnet-generated-metadata-20261111.json.gz"
+      ]
+    }
+  }
+}
