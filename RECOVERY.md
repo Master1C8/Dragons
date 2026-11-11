@@ -243,6 +243,14 @@ source if it has been archived, then copy it to the former path, restore
 its mode and verify its SHA-256.
 Use the same procedure for the [remaining generated asset duplicates](localization/evidence/archival-duplicate-generated-assets-20261111.json).
 
+For the Windows slot-case source in that receipt, use the tracked
+[synthetic input](localization/evidence/windows-slot-case-control-20261106.json)
+with `windows_slot_ui_probe.py` and the verified Windows stock Data
+directory. Pass it as `--locale-file` and select a fresh `.assets` output
+directly in `localization/work`. The output must match SHA-256
+`050d4c3450ab7aed852678d3a607375e1f91f18824cd0102ff68aa8843f8dc0e`
+before using it to restore the recorded copies.
+
 The [historical probe delta receipt](localization/evidence/archival-probe-deltas-20261111.json.gz)
 preserves 26 source files referenced by earlier duplicate and fixture
 recovery records. Download the receipt's archive from the maintainer draft
@@ -286,6 +294,23 @@ Microsoft host package from the receipt's URL and verify its archive and
 member hashes. Extract `basePath` and use it as the Zstandard base.
 Check each patch and restored SHA-256 and apply each destination's mode.
 The downloaded delta archive reproduced all 953 files.
+
+The [renderer assembly receipt](localization/evidence/archival-renderer-assemblies-20261111.json.gz)
+maps 93 distinct TextMeshPro and Yarn assemblies to compact deltas from
+verified stock assemblies or an earlier output in the same family.
+Download its archive from the maintainer draft and restore a recorded
+path into a fresh output:
+
+```sh
+python3.12 -B localization/restore_renderer_assembly.py \
+  "$renderer_receipt" "$recorded_path" --archive "$verified_archive" \
+  --macos-stock "$recovery/Stock.app" --windows-stock "$windows_game_root" \
+  --output "$fresh_output"
+```
+
+The restore verifies the archive and each base, patch and output hash.
+The downloaded archive reproduced all 93 distinct assemblies, including
+the renderer sources referenced by historical binary copy receipts.
 
 The [isolated profile receipt](localization/evidence/archival-isolated-profiles-20261111.json.gz)
 records the stock PlayerSettings fingerprint and test identity for 208
@@ -639,16 +664,21 @@ script can be recreated by extracting the compressed patch and applying it to
 the Git blob named in the receipt. Compare the result to the recorded SHA-256.
 
 The [French test asset receipt](localization/evidence/archival-french-stock-20261111.json)
-records the stock references for the existing French Zstandard patches. Use
+records the stock references used by the original French compaction. The
+[French compaction receipt](localization/evidence/archival-french-compaction-20261111.json.gz)
+pins both sets of patches and their original manifests in the maintainer
+draft. Verify the archive and extract each row's `patchMember`. Use
 `sharedassets1.assets` from the restored macOS or verified Windows stock Data
-directory in place of the historical local stock copy in the patch manifest.
+directory for the platform recorded in the row.
 Verify the reference and patch hashes before restoring to a fresh file:
 
 ```sh
 zstd -d --patch-from="$stock_sharedassets" "$patch" -o "$fresh_output"
 ```
 
-Match the output to `sourceSha256` in the historical patch manifest.
+Match the output to `sha256` in the compaction receipt and apply the
+recorded mode. All 74 assets decoded from the downloaded archive matched
+their recorded size and hash.
 
 The [Windows stock ZIP receipt](localization/evidence/archival-windows-stock-zip-20261111.json)
 lists all 287 files in the old Parallels test fixture. To recreate the
@@ -672,6 +702,12 @@ python3.12 -B localization/restore_fixture_zip.py \
 The restore checks every member and the exact ZIP SHA-256. The receipt
 identifies retained local test components alongside the stock game and the
 small components archive.
+When a checkout path has already been cleaned up, rebuild it from its
+recorded source before running the fixture command. The shaped package and
+staged asset receipts cover the earlier renderer ZIPs and their staged data.
+The runtime control and isolated profile receipts cover instrumented
+assembly and PlayerSettings files. The Unity control and binary copy
+receipts cover the remaining archived asset and companion library paths.
 
 The release card's visual delivery contains 150 published screenshot slots
 across 30 locales. The upload readback matched all 150 hosted files.
