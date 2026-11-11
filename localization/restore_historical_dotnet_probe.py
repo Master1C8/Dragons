@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild a historical .NET probe output from pinned Git sources."""
+"""Rebuild a historical .NET probe output from pinned sources."""
 
 import argparse
 import hashlib
@@ -22,6 +22,11 @@ def restore_source(row, build, source_dir=None):
         if source_dir is None:
             raise ValueError('Pass --source-dir with the restored historical sources')
         data = (source_dir / path).read_bytes()
+    elif row.get('retained'):
+        source = CHECKOUT / path
+        if source.resolve() != source:
+            raise ValueError(f'Unexpected retained source path: {path}')
+        data = source.read_bytes()
     elif 'blob' in row:
         blob = row['blob']
         if not re.fullmatch(r'[0-9a-f]{40}', blob):
