@@ -468,6 +468,14 @@ The [additional system copy receipt](localization/evidence/archival-runtime-syst
 uses the same option. All 272 copies matched files restored independently
 from the owned Steam and GOG Galaxy bottles.
 
+The [installer and Windows runtime copy receipt](localization/evidence/archival-installer-and-windows-runtime-copies-20261111.json.gz)
+records 204 test bottle copies of the Windows installer cache and
+system INI files. Restore those rows with the owned Steam bottle's
+`drive_c/windows` directory as `--crossover-windows`. The GOG Galaxy
+bottle matched the same bytes at each `alternateSource`. Restore the
+remaining two rows with `--accepted` after restoring the accepted
+installers. The check matched all 206 files and modes.
+
 The [remaining stock runtime copy receipt](localization/evidence/archival-stock-runtime-copies-20261111.json.gz)
 uses the same helper with the macOS and Windows stock roots. It covers
 11,191 exact copies, including Unity streaming data and Mono configuration
@@ -800,6 +808,29 @@ maps 49 duplicate VCDIFF files to the retained historical originals.
 Restore a selected directory with `restore_archived_members.py`.
 Keep the recorded sources available until their replacement is verified.
 The recovery check matched every copy and mode.
+
+The [window and Yarn rebuild receipt](localization/evidence/archival-window-and-yarn-rebuilds-20261111.json.gz)
+records 142 copies of two Swift test utilities. Compile the recorded
+`window.swift` with the pinned Swift compiler and name the output
+`window`. For `discovery`, export the two installer sources from the
+recorded revision and pass them and `Discovery.swift` to `swiftc` in
+the listed order, with `-o discovery`. Check the executable hash before
+restoring the recorded copies.
+
+For the 52 Yarn binaries, use `compare_yarn_versions.load` at
+`stockImportRevision` with the verified stock Data directory and
+platform spec. Its fourth return value is the stock program. For a
+repaired variant, read the spec's `project` object from
+`sharedassets1.assets` with UnityPy. Pass its raw bytes and platform
+to `repair_project` from `repairRevision`. Read the little-endian
+program length at `PROGRAM_SIZE_OFFSET` in the returned bytes and
+extract that many bytes from `PROGRAM_OFFSET`. Verify the output hash.
+
+The same receipt pins the signed Burst plug-in from the renamed
+discovery fixture. Download its patch from the maintainer draft.
+Verify the patch and stock plug-in hashes, then decode with the
+recorded stock base and Zstandard. The decoded file matched the
+original fingerprint and passed strict signature verification.
 
 The [French test asset receipt](localization/evidence/archival-french-stock-20261111.json)
 records the stock references used by the original French compaction. The
