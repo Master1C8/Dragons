@@ -1,0 +1,2476 @@
+{
+  "verification": "Byte-identical generated assets and archives; one or more local sources are retained for each hash.",
+  "outputs": [
+    {
+      "path": "localization/work/DragNWash-IsolatedBuilderProbe2.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/DragNWash-IsolatedBuilderProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "006b056e2508d256c19221e8878c8c16876367cdefaed5edb286112b9bcb9afc",
+      "mode": "0o644",
+      "bytes": 4426152
+    },
+    {
+      "path": "localization/work/DragNWash-SettingsBuilderProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/DragNWash-IsolatedBuilderProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "006b056e2508d256c19221e8878c8c16876367cdefaed5edb286112b9bcb9afc",
+      "mode": "0o644",
+      "bytes": 4426152
+    },
+    {
+      "path": "localization/work/WindowsSlotGame/DragNWash_Data/level0",
+      "source": "localization/work/windows-slot-case-probe.assets",
+      "sha256": "050d4c3450ab7aed852678d3a607375e1f91f18824cd0102ff68aa8843f8dc0e",
+      "mode": "0o644",
+      "bytes": 903976
+    },
+    {
+      "path": "localization/work/european-text-paths-20261110.QddlnY/mac-settings/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "06cbc83510904bbb63daeb43d44eeead6133d4230052bd250e5d8abada13fec4",
+      "mode": "0o644",
+      "bytes": 4426168
+    },
+    {
+      "path": "localization/work/european-text-paths-20261110.QddlnY/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "06cbc83510904bbb63daeb43d44eeead6133d4230052bd250e5d8abada13fec4",
+      "mode": "0o644",
+      "bytes": 4426168
+    },
+    {
+      "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "06da70f6b9a397a4be79024a6c8325600a51d709cf562ea0c2328b35f0fd3488",
+      "mode": "0o644",
+      "bytes": 105936600
+    },
+    {
+      "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "06da70f6b9a397a4be79024a6c8325600a51d709cf562ea0c2328b35f0fd3488",
+      "mode": "0o644",
+      "bytes": 105936600
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "06da70f6b9a397a4be79024a6c8325600a51d709cf562ea0c2328b35f0fd3488",
+      "mode": "0o644",
+      "bytes": 105936600
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "06da70f6b9a397a4be79024a6c8325600a51d709cf562ea0c2328b35f0fd3488",
+      "mode": "0o644",
+      "bytes": 105936600
+    },
+    {
+      "path": "localization/work/screenshot-review.I5EEsi/rtl-caption-packages/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "06da70f6b9a397a4be79024a6c8325600a51d709cf562ea0c2328b35f0fd3488",
+      "mode": "0o644",
+      "bytes": 105936600
+    },
+    {
+      "path": "localization/work/DragNWash-CodeProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-dialogue-cyrillic.assets",
+      "sha256": "0f888c562942fed6cd27488802123cc05af867f208bd5deb013412415d38b2f2",
+      "mode": "0o755",
+      "bytes": 105908520
+    },
+    {
+      "path": "localization/work/DragNWash-CodeProbe2.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-dialogue-cyrillic.assets",
+      "sha256": "0f888c562942fed6cd27488802123cc05af867f208bd5deb013412415d38b2f2",
+      "mode": "0o755",
+      "bytes": 105908520
+    },
+    {
+      "path": "localization/work/DragNWash-CodeProbe3.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-dialogue-cyrillic.assets",
+      "sha256": "0f888c562942fed6cd27488802123cc05af867f208bd5deb013412415d38b2f2",
+      "mode": "0o755",
+      "bytes": 105908520
+    },
+    {
+      "path": "localization/work/DragNWash-DialogueBridge.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-dialogue-cyrillic.assets",
+      "sha256": "0f888c562942fed6cd27488802123cc05af867f208bd5deb013412415d38b2f2",
+      "mode": "0o755",
+      "bytes": 105908520
+    },
+    {
+      "path": "localization/work/DragNWash-DialogueBridge2.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-dialogue-cyrillic.assets",
+      "sha256": "0f888c562942fed6cd27488802123cc05af867f208bd5deb013412415d38b2f2",
+      "mode": "0o755",
+      "bytes": 105908520
+    },
+    {
+      "path": "localization/work/DragNWash-DialogueBridge3.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-dialogue-cyrillic.assets",
+      "sha256": "0f888c562942fed6cd27488802123cc05af867f208bd5deb013412415d38b2f2",
+      "mode": "0o755",
+      "bytes": 105908520
+    },
+    {
+      "path": "localization/work/DragNWash-DialogueBridge4.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-dialogue-cyrillic.assets",
+      "sha256": "0f888c562942fed6cd27488802123cc05af867f208bd5deb013412415d38b2f2",
+      "mode": "0o755",
+      "bytes": 105908520
+    },
+    {
+      "path": "localization/work/DragNWash-GlyphOption.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-dialogue-cyrillic.assets",
+      "sha256": "0f888c562942fed6cd27488802123cc05af867f208bd5deb013412415d38b2f2",
+      "mode": "0o755",
+      "bytes": 105908520
+    },
+    {
+      "path": "localization/work/DragNWash-GlyphOptionLayout.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-dialogue-cyrillic.assets",
+      "sha256": "0f888c562942fed6cd27488802123cc05af867f208bd5deb013412415d38b2f2",
+      "mode": "0o755",
+      "bytes": 105908520
+    },
+    {
+      "path": "localization/work/DragNWash-ScrollProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-dialogue-cyrillic.assets",
+      "sha256": "0f888c562942fed6cd27488802123cc05af867f208bd5deb013412415d38b2f2",
+      "mode": "0o755",
+      "bytes": 105908520
+    },
+    {
+      "path": "localization/work/DragNWash-SettingsOptionProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-dialogue-cyrillic.assets",
+      "sha256": "0f888c562942fed6cd27488802123cc05af867f208bd5deb013412415d38b2f2",
+      "mode": "0o755",
+      "bytes": 105908520
+    },
+    {
+      "path": "localization/work/DragNWash-SettingsProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-dialogue-cyrillic.assets",
+      "sha256": "0f888c562942fed6cd27488802123cc05af867f208bd5deb013412415d38b2f2",
+      "mode": "0o755",
+      "bytes": 105908520
+    },
+    {
+      "path": "localization/work/DragNWash-ChoiceAdvanceProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o755",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-ChoiceAdvanceProbe2.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o755",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-ChoiceProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o755",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-ChoiceTraceProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o755",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-InputChoiceProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-InputProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-MissingTargetBackgroundProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-MissingTargetDirectProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-MissingTargetProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-MissingTargetReadyProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-NaturalDialogueProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-SaveProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-SaveReadProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-SlotCaseProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-SlotCaseSmallProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-SlotFont18Probe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-SlotFont24Probe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-SlotFontBuilderProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-SlotGlyphProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-SlotHighResProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-SlotShortProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-SlotVisibilityProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-SlotWidthProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/choice-probe.assets",
+      "sha256": "112b6019a6fe6ebb7e6e8ffb58e38a5624e1bcdb533104714f1cdf49afc681e3",
+      "mode": "0o644",
+      "bytes": 105908360
+    },
+    {
+      "path": "localization/work/DragNWash-ReleaseCheck.app/Contents/Resources/Data/level0",
+      "source": "localization/work/DragNWash-MultiProbe.app/Contents/Resources/Data/level0",
+      "sha256": "123e11200aaf64f5267aee79400e64467ccd6770103b8f6ccb74546601da5b1c",
+      "mode": "0o644",
+      "bytes": 907040
+    },
+    {
+      "path": "localization/work/DragNWash-UIProbe.app/Contents/Resources/Data/level0",
+      "source": "localization/work/DragNWash-MultiProbe.app/Contents/Resources/Data/level0",
+      "sha256": "123e11200aaf64f5267aee79400e64467ccd6770103b8f6ccb74546601da5b1c",
+      "mode": "0o644",
+      "bytes": 907040
+    },
+    {
+      "path": "localization/work/installer-discovery.jx49dN/win-payload/LocalizationPayload/Deltas/c8ce3f2e8f52-0bfb7fe4f4bf309631dff1b34305aadb0fd0bb68b1485b0ff9e8fba6c1cbc410.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/win-payload/LocalizationPayload/Deltas/c8ce3f2e8f52-0bfb7fe4f4bf309631dff1b34305aadb0fd0bb68b1485b0ff9e8fba6c1cbc410.vcdiff",
+      "sha256": "1320f46d347173a5f411c0955cdb7ab8a8a7ecb447cb39708a4a587db27de3c7",
+      "mode": "0o644",
+      "bytes": 13091321
+    },
+    {
+      "path": "localization/work/installer-all.Yykv0u/win-fixture-dist/Resources/LocalizationPayload/Deltas/c8ce3f2e8f52-0bfb7fe4f4bf309631dff1b34305aadb0fd0bb68b1485b0ff9e8fba6c1cbc410.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/win-payload/LocalizationPayload/Deltas/c8ce3f2e8f52-0bfb7fe4f4bf309631dff1b34305aadb0fd0bb68b1485b0ff9e8fba6c1cbc410.vcdiff",
+      "sha256": "1320f46d347173a5f411c0955cdb7ab8a8a7ecb447cb39708a4a587db27de3c7",
+      "mode": "0o644",
+      "bytes": 13091321
+    },
+    {
+      "path": "localization/work/complex-font-static-20261110.54U84Z/verified/he/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/he/macos/sharedassets0.assets",
+      "sha256": "1614b3ab0d6bb4eb5665ae27b6fdbce3ae9d4535897da75957eb129b51c88234",
+      "mode": "0o644",
+      "bytes": 5012664
+    },
+    {
+      "path": "localization/work/display-adapter-20261110.oMiEA1/staged/he/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/he/macos/sharedassets0.assets",
+      "sha256": "1614b3ab0d6bb4eb5665ae27b6fdbce3ae9d4535897da75957eb129b51c88234",
+      "mode": "0o644",
+      "bytes": 5012664
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged-breaks/he/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/he/macos/sharedassets0.assets",
+      "sha256": "1614b3ab0d6bb4eb5665ae27b6fdbce3ae9d4535897da75957eb129b51c88234",
+      "mode": "0o644",
+      "bytes": 5012664
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged/he/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/he/macos/sharedassets0.assets",
+      "sha256": "1614b3ab0d6bb4eb5665ae27b6fdbce3ae9d4535897da75957eb129b51c88234",
+      "mode": "0o644",
+      "bytes": 5012664
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "1ae1062b6fc166c61171d1d74d7cc6a4e96791643237d480babaa84ca1be62dd",
+      "mode": "0o644",
+      "bytes": 105931016
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-he.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/live-renderer.O43vkv/macos-he-QRE1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "1ae1062b6fc166c61171d1d74d7cc6a4e96791643237d480babaa84ca1be62dd",
+      "mode": "0o644",
+      "bytes": 105931016
+    },
+    {
+      "path": "localization/work/speaker-contrast-20261110.8i848J/mac/ContrastBuild.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/managed-integrity-20261109.eAbhRe/ManagedGuard.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "1cb0b8fbdd42b5fe39d46c3018cb30dca2b664235fc0e93c8f52e6ce9a106886",
+      "mode": "0o644",
+      "bytes": 105910024
+    },
+    {
+      "path": "localization/work/speaker-locale-20261110.jgtHXC/macos/SpeakerLocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/managed-integrity-20261109.eAbhRe/ManagedGuard.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "1cb0b8fbdd42b5fe39d46c3018cb30dca2b664235fc0e93c8f52e6ce9a106886",
+      "mode": "0o644",
+      "bytes": 105910024
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-inline-speaker-plans/hi/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/hi/macos/sharedassets0.assets",
+      "sha256": "2085c9b77cdc50702e6809ee04bce70b82b06750938e833847766fe70831d319",
+      "mode": "0o644",
+      "bytes": 4687376
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged-breaks/hi/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/hi/macos/sharedassets0.assets",
+      "sha256": "2085c9b77cdc50702e6809ee04bce70b82b06750938e833847766fe70831d319",
+      "mode": "0o644",
+      "bytes": 4687376
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged/hi/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/hi/macos/sharedassets0.assets",
+      "sha256": "2085c9b77cdc50702e6809ee04bce70b82b06750938e833847766fe70831d319",
+      "mode": "0o644",
+      "bytes": 4687376
+    },
+    {
+      "path": "localization/work/live-renderer.O43vkv/macos-ar-QRA2/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "21fe4067545d3712f32d692832102c6968ca9cd9afc522da2ddab3e3832e0070",
+      "mode": "0o644",
+      "bytes": 4678112
+    },
+    {
+      "path": "localization/work/live-renderer.O43vkv/macos-ar/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "21fe4067545d3712f32d692832102c6968ca9cd9afc522da2ddab3e3832e0070",
+      "mode": "0o644",
+      "bytes": 4678112
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "21fe4067545d3712f32d692832102c6968ca9cd9afc522da2ddab3e3832e0070",
+      "mode": "0o644",
+      "bytes": 4678112
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-ar.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "21fe4067545d3712f32d692832102c6968ca9cd9afc522da2ddab3e3832e0070",
+      "mode": "0o644",
+      "bytes": 4678112
+    },
+    {
+      "path": "localization/work/complex-font-static-20261110.54U84Z/verified/ar/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/ar/windows/sharedassets0.assets",
+      "sha256": "2639e9c162bb2c381ae1170f090efb6f162a59d0758aed13a464e9db73e2f011",
+      "mode": "0o644",
+      "bytes": 2176912
+    },
+    {
+      "path": "localization/work/display-adapter-20261110.oMiEA1/staged/ar/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/ar/windows/sharedassets0.assets",
+      "sha256": "2639e9c162bb2c381ae1170f090efb6f162a59d0758aed13a464e9db73e2f011",
+      "mode": "0o644",
+      "bytes": 2176912
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged-breaks/ar/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/ar/windows/sharedassets0.assets",
+      "sha256": "2639e9c162bb2c381ae1170f090efb6f162a59d0758aed13a464e9db73e2f011",
+      "mode": "0o644",
+      "bytes": 2176912
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged/ar/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/ar/windows/sharedassets0.assets",
+      "sha256": "2639e9c162bb2c381ae1170f090efb6f162a59d0758aed13a464e9db73e2f011",
+      "mode": "0o644",
+      "bytes": 2176912
+    },
+    {
+      "path": "localization/work/european-text-paths-20261110.QddlnY/mac-settings/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "28ced557fb11e649b24d2c965f0a87974418fa9528378e7a192e2383dc4aec62",
+      "mode": "0o644",
+      "bytes": 105908432
+    },
+    {
+      "path": "localization/work/european-text-paths-20261110.QddlnY/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/european-settings-visual-20261110.Q6lrkb/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "28ced557fb11e649b24d2c965f0a87974418fa9528378e7a192e2383dc4aec62",
+      "mode": "0o644",
+      "bytes": 105908432
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-inline-speaker-plans/ar/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/ar/macos/sharedassets0.assets",
+      "sha256": "2953fd5593b0ab3522cc16604ed2e5e6d1e2e7056e1ab4a67a1f1610bb4a1271",
+      "mode": "0o644",
+      "bytes": 4677696
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-paragraphs/ar/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/ar/macos/sharedassets0.assets",
+      "sha256": "2953fd5593b0ab3522cc16604ed2e5e6d1e2e7056e1ab4a67a1f1610bb4a1271",
+      "mode": "0o644",
+      "bytes": 4677696
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-reveal/ar/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/ar/macos/sharedassets0.assets",
+      "sha256": "2953fd5593b0ab3522cc16604ed2e5e6d1e2e7056e1ab4a67a1f1610bb4a1271",
+      "mode": "0o644",
+      "bytes": 4677696
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl/ar/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/ar/macos/sharedassets0.assets",
+      "sha256": "2953fd5593b0ab3522cc16604ed2e5e6d1e2e7056e1ab4a67a1f1610bb4a1271",
+      "mode": "0o644",
+      "bytes": 4677696
+    },
+    {
+      "path": "localization/work/complex-font-static-20261110.54U84Z/verified/fa/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/fa/windows/sharedassets0.assets",
+      "sha256": "2f26d191077d68107e3cc6f7e98b8a781dcb71cfc6cac075c135477ea2785a51",
+      "mode": "0o644",
+      "bytes": 2176928
+    },
+    {
+      "path": "localization/work/display-adapter-20261110.oMiEA1/staged/fa/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/fa/windows/sharedassets0.assets",
+      "sha256": "2f26d191077d68107e3cc6f7e98b8a781dcb71cfc6cac075c135477ea2785a51",
+      "mode": "0o644",
+      "bytes": 2176928
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged-breaks/fa/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/fa/windows/sharedassets0.assets",
+      "sha256": "2f26d191077d68107e3cc6f7e98b8a781dcb71cfc6cac075c135477ea2785a51",
+      "mode": "0o644",
+      "bytes": 2176928
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged/fa/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/fa/windows/sharedassets0.assets",
+      "sha256": "2f26d191077d68107e3cc6f7e98b8a781dcb71cfc6cac075c135477ea2785a51",
+      "mode": "0o644",
+      "bytes": 2176928
+    },
+    {
+      "path": "localization/work/installer.NUdeks/mac-control/Drag'N Wash.app/Contents/Resources/VNRevival/dragons-vnrevival/original-backup/level3",
+      "source": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/VNRevival/dragons-vnrevival/original-backup/level3",
+      "sha256": "32805c0339b0b67b4cc1dd27f8e150419e3f7374132d630921700281a14b833e",
+      "mode": "0o755",
+      "bytes": 559512
+    },
+    {
+      "path": "localization/work/complex-font-static-20261110.54U84Z/verified/th/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/th/windows/sharedassets0.assets",
+      "sha256": "33f33a16bdb4a9044966741040357244396df5ce9ff6aa080c25fdf09ed982e8",
+      "mode": "0o644",
+      "bytes": 1981272
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-paragraphs/th/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/th/windows/sharedassets0.assets",
+      "sha256": "33f33a16bdb4a9044966741040357244396df5ce9ff6aa080c25fdf09ed982e8",
+      "mode": "0o644",
+      "bytes": 1981272
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-reveal/th/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/th/windows/sharedassets0.assets",
+      "sha256": "33f33a16bdb4a9044966741040357244396df5ce9ff6aa080c25fdf09ed982e8",
+      "mode": "0o644",
+      "bytes": 1981272
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl/th/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/th/windows/sharedassets0.assets",
+      "sha256": "33f33a16bdb4a9044966741040357244396df5ce9ff6aa080c25fdf09ed982e8",
+      "mode": "0o644",
+      "bytes": 1981272
+    },
+    {
+      "path": "localization/work/display-adapter-20261110.oMiEA1/staged/th/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/th/windows/sharedassets0.assets",
+      "sha256": "33f33a16bdb4a9044966741040357244396df5ce9ff6aa080c25fdf09ed982e8",
+      "mode": "0o644",
+      "bytes": 1981272
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/sharedassets0.assets",
+      "sha256": "37cad222d4ae421f7e0d3fd774fe00c31119a4e884d669edd452a424460aac02",
+      "mode": "0o644",
+      "bytes": 1937008
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/sharedassets0.assets",
+      "sha256": "37cad222d4ae421f7e0d3fd774fe00c31119a4e884d669edd452a424460aac02",
+      "mode": "0o644",
+      "bytes": 1937008
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/sharedassets0.assets",
+      "sha256": "37cad222d4ae421f7e0d3fd774fe00c31119a4e884d669edd452a424460aac02",
+      "mode": "0o644",
+      "bytes": 1937008
+    },
+    {
+      "path": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogueInspect.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundGate.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundGateRoute.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-gameplay-20261109.CDqP5o/BackgroundEquipment.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-gameplay-20261109.CDqP5o/BackgroundEquipmentCheck.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-gameplay-20261109.CDqP5o/BackgroundEquipmentPlap.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-gameplay-20261109.CDqP5o/BackgroundGameplay.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-gameplay-20261109.CDqP5o/BackgroundLook.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-gate-20261109.Nx18eu/BackgroundHand.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-gate-20261109.Nx18eu/BackgroundPerformance.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-input-20261109.UU2LOG/BackgroundInputDiagnostic.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-input-20261109.UU2LOG/BackgroundInputProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-input-20261109.UU2LOG/BackgroundInputState.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-input-20261109.UU2LOG/BackgroundInputTransport.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-mount-20261109.yDBnlW/BackgroundAssembly.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-mount-20261109.yDBnlW/BackgroundIntro.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-mount-20261109.yDBnlW/BackgroundMount.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-mount-20261109.yDBnlW/BackgroundWindow.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/background-performance-20261109.41uqFb/BackgroundPerformanceComplete.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/conrad-exit-save-20261110.OCKyMV/ConradExit.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/macos-conrad-combined-20261109.96SW2q/ConradCombined.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/macos-conrad-contact-20261109.ck4zOH/ConradCombined.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/transition-unity-20261109.G2AxDU/QW37.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/alexander-question-unity-20261110.oOxHYv/mac/AlexanderQuestion.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/conrad-reload-20261110.zcAS1o/mac/ConradReload.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-06/yarn-unity/P6B2.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-dialogue-20261109.jsmTX8/BackgroundDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "380d627217c1c40239fd34bff314c62b8e8230fd70443733c71979440e6f89c5",
+      "mode": "0o644",
+      "bytes": 105910064
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-inline-speaker-plans/fa/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/fa/macos/sharedassets0.assets",
+      "sha256": "381ebcc3d8a6dc70e477ed8c203497125dff30de71f7881c699bf0dd88889579",
+      "mode": "0o644",
+      "bytes": 4675208
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-paragraphs/fa/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/fa/macos/sharedassets0.assets",
+      "sha256": "381ebcc3d8a6dc70e477ed8c203497125dff30de71f7881c699bf0dd88889579",
+      "mode": "0o644",
+      "bytes": 4675208
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-reveal/fa/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/fa/macos/sharedassets0.assets",
+      "sha256": "381ebcc3d8a6dc70e477ed8c203497125dff30de71f7881c699bf0dd88889579",
+      "mode": "0o644",
+      "bytes": 4675208
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "3e8d4b34d2478c2fc26f35ee040a171cf6464d565ccf1150b2d37f1fd2c7335a",
+      "mode": "0o644",
+      "bytes": 4426152
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "3e8d4b34d2478c2fc26f35ee040a171cf6464d565ccf1150b2d37f1fd2c7335a",
+      "mode": "0o644",
+      "bytes": 4426152
+    },
+    {
+      "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "3e8d4b34d2478c2fc26f35ee040a171cf6464d565ccf1150b2d37f1fd2c7335a",
+      "mode": "0o644",
+      "bytes": 4426152
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/sharedassets0.assets",
+      "sha256": "402aaef88aa9aab97506608ed43237e0f9a2c9680eaffde9927fcb05b75a7b89",
+      "mode": "0o644",
+      "bytes": 1936992
+    },
+    {
+      "path": "localization/work/installer.NUdeks/mac-control/Drag'N Wash.app/Contents/Resources/VNRevival/dragons-vnrevival/original-backup/sharedassets0.assets",
+      "source": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/VNRevival/dragons-vnrevival/original-backup/sharedassets0.assets",
+      "sha256": "40713b00ce12582eebc427c0104e59becf438eb15803725b2248be3471a96aeb",
+      "mode": "0o755",
+      "bytes": 4428440
+    },
+    {
+      "path": "localization/work/DragNWash-BuilderProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-sharedassets1.assets",
+      "sha256": "44077789eea58546f4c93119753b0964319f889653a1fa49bfcab6332111efc3",
+      "mode": "0o644",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/DragNWash-CyrillicDistinct.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-sharedassets1.assets",
+      "sha256": "44077789eea58546f4c93119753b0964319f889653a1fa49bfcab6332111efc3",
+      "mode": "0o644",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/DragNWash-CyrillicProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-sharedassets1.assets",
+      "sha256": "44077789eea58546f4c93119753b0964319f889653a1fa49bfcab6332111efc3",
+      "mode": "0o644",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/DragNWash-IsolatedBuilderProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-sharedassets1.assets",
+      "sha256": "44077789eea58546f4c93119753b0964319f889653a1fa49bfcab6332111efc3",
+      "mode": "0o644",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/DragNWash-IsolatedBuilderProbe2.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-sharedassets1.assets",
+      "sha256": "44077789eea58546f4c93119753b0964319f889653a1fa49bfcab6332111efc3",
+      "mode": "0o644",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/DragNWash-LayoutBuilderProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-sharedassets1.assets",
+      "sha256": "44077789eea58546f4c93119753b0964319f889653a1fa49bfcab6332111efc3",
+      "mode": "0o644",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/DragNWash-Probe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-sharedassets1.assets",
+      "sha256": "44077789eea58546f4c93119753b0964319f889653a1fa49bfcab6332111efc3",
+      "mode": "0o755",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/DragNWash-SettingsBuilderProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-sharedassets1.assets",
+      "sha256": "44077789eea58546f4c93119753b0964319f889653a1fa49bfcab6332111efc3",
+      "mode": "0o644",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/DragNWash-UIProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-sharedassets1.assets",
+      "sha256": "44077789eea58546f4c93119753b0964319f889653a1fa49bfcab6332111efc3",
+      "mode": "0o644",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/SteamLauncherProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/probe-sharedassets1.assets",
+      "sha256": "44077789eea58546f4c93119753b0964319f889653a1fa49bfcab6332111efc3",
+      "mode": "0o644",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-inline-speaker-plans/he/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/he/macos/sharedassets0.assets",
+      "sha256": "4436471911c358d06e9a9da8307521f23270d3a25db8bc89378a70f1b89c5550",
+      "mode": "0o644",
+      "bytes": 5020088
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-paragraphs/he/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/he/macos/sharedassets0.assets",
+      "sha256": "4436471911c358d06e9a9da8307521f23270d3a25db8bc89378a70f1b89c5550",
+      "mode": "0o644",
+      "bytes": 5020088
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-reveal/he/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/he/macos/sharedassets0.assets",
+      "sha256": "4436471911c358d06e9a9da8307521f23270d3a25db8bc89378a70f1b89c5550",
+      "mode": "0o644",
+      "bytes": 5020088
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl/he/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/he/macos/sharedassets0.assets",
+      "sha256": "4436471911c358d06e9a9da8307521f23270d3a25db8bc89378a70f1b89c5550",
+      "mode": "0o644",
+      "bytes": 5020088
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-inline-speaker-plans/th/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/th/macos/sharedassets0.assets",
+      "sha256": "445617eb14c20b81ca080bbd92640fd0384e2127b8be86639bacd6bde84da362",
+      "mode": "0o644",
+      "bytes": 4490984
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged-breaks/th/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/th/macos/sharedassets0.assets",
+      "sha256": "445617eb14c20b81ca080bbd92640fd0384e2127b8be86639bacd6bde84da362",
+      "mode": "0o644",
+      "bytes": 4490984
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged/th/macos/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/th/macos/sharedassets0.assets",
+      "sha256": "445617eb14c20b81ca080bbd92640fd0384e2127b8be86639bacd6bde84da362",
+      "mode": "0o644",
+      "bytes": 4490984
+    },
+    {
+      "path": "localization/work/DragNWash-SettingsProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/settings-adapter-probe.assets",
+      "sha256": "4a8a8c6bafdfd9a671d48d0a7acde8f8da3f08bbd8dc7da43cc9b38ecfdcb622",
+      "mode": "0o644",
+      "bytes": 4426152
+    },
+    {
+      "path": "localization/work/installer.NUdeks/mac-control/Drag'N Wash.app/Contents/Resources/VNRevival/dragons-vnrevival/original-backup/level0",
+      "source": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/VNRevival/dragons-vnrevival/original-backup/level0",
+      "sha256": "4cabf35993c6726ab29e5cb24a1ce74a0fdf3d8061b0de3437415e56bcfa72f7",
+      "mode": "0o755",
+      "bytes": 944924
+    },
+    {
+      "path": "localization/work/speaker-contrast-20261110.8i848J/mac/ContrastBuild.app/Contents/Resources/Data/level3",
+      "source": "localization/work/alexander-body-20261110.TV8tMJ/mac/CyrillicDialogue.app/Contents/Resources/Data/level3",
+      "sha256": "52862745dcaee0c95b5a155e67139a13a27ad1f0bb72497b0d67f2fc5e0a06a6",
+      "mode": "0o644",
+      "bytes": 552288
+    },
+    {
+      "path": "localization/work/speaker-contrast-20261110.8i848J/mac/CyrillicDialogue.app/Contents/Resources/Data/level3",
+      "source": "localization/work/alexander-body-20261110.TV8tMJ/mac/CyrillicDialogue.app/Contents/Resources/Data/level3",
+      "sha256": "52862745dcaee0c95b5a155e67139a13a27ad1f0bb72497b0d67f2fc5e0a06a6",
+      "mode": "0o644",
+      "bytes": 552288
+    },
+    {
+      "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/level3",
+      "source": "localization/work/alexander-body-20261110.TV8tMJ/mac/CyrillicDialogue.app/Contents/Resources/Data/level3",
+      "sha256": "52862745dcaee0c95b5a155e67139a13a27ad1f0bb72497b0d67f2fc5e0a06a6",
+      "mode": "0o644",
+      "bytes": 552288
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/level3",
+      "source": "localization/work/alexander-body-20261110.TV8tMJ/mac/CyrillicDialogue.app/Contents/Resources/Data/level3",
+      "sha256": "52862745dcaee0c95b5a155e67139a13a27ad1f0bb72497b0d67f2fc5e0a06a6",
+      "mode": "0o644",
+      "bytes": 552288
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/level3",
+      "source": "localization/work/alexander-body-20261110.TV8tMJ/mac/CyrillicDialogue.app/Contents/Resources/Data/level3",
+      "sha256": "52862745dcaee0c95b5a155e67139a13a27ad1f0bb72497b0d67f2fc5e0a06a6",
+      "mode": "0o644",
+      "bytes": 552288
+    },
+    {
+      "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/level3",
+      "source": "localization/work/alexander-body-20261110.TV8tMJ/mac/CyrillicDialogue.app/Contents/Resources/Data/level3",
+      "sha256": "52862745dcaee0c95b5a155e67139a13a27ad1f0bb72497b0d67f2fc5e0a06a6",
+      "mode": "0o644",
+      "bytes": 552288
+    },
+    {
+      "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/level3",
+      "source": "localization/work/alexander-body-20261110.TV8tMJ/mac/CyrillicDialogue.app/Contents/Resources/Data/level3",
+      "sha256": "52862745dcaee0c95b5a155e67139a13a27ad1f0bb72497b0d67f2fc5e0a06a6",
+      "mode": "0o644",
+      "bytes": 552288
+    },
+    {
+      "path": "localization/work/complex-font-static-20261110.54U84Z/verified/hi/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/hi/macos/sharedassets0.assets",
+      "sha256": "52c2ccda26407832428b4f11f3aae69f2b9315a13e62e57d253e9c1e57e64219",
+      "mode": "0o644",
+      "bytes": 4675008
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-paragraphs/hi/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/hi/macos/sharedassets0.assets",
+      "sha256": "52c2ccda26407832428b4f11f3aae69f2b9315a13e62e57d253e9c1e57e64219",
+      "mode": "0o644",
+      "bytes": 4675008
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-reveal/hi/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/hi/macos/sharedassets0.assets",
+      "sha256": "52c2ccda26407832428b4f11f3aae69f2b9315a13e62e57d253e9c1e57e64219",
+      "mode": "0o644",
+      "bytes": 4675008
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl/hi/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/hi/macos/sharedassets0.assets",
+      "sha256": "52c2ccda26407832428b4f11f3aae69f2b9315a13e62e57d253e9c1e57e64219",
+      "mode": "0o644",
+      "bytes": 4675008
+    },
+    {
+      "path": "localization/work/display-adapter-20261110.oMiEA1/staged/hi/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/hi/macos/sharedassets0.assets",
+      "sha256": "52c2ccda26407832428b4f11f3aae69f2b9315a13e62e57d253e9c1e57e64219",
+      "mode": "0o644",
+      "bytes": 4675008
+    },
+    {
+      "path": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/win/sharedassets1.assets",
+      "sha256": "5350829e1bec4099a19f434bab1d7fe5e8742fee602738d16eeaef4ce815b9b3",
+      "mode": "0o644",
+      "bytes": 106461096
+    },
+    {
+      "path": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/fixture/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/win/sharedassets1.assets",
+      "sha256": "5350829e1bec4099a19f434bab1d7fe5e8742fee602738d16eeaef4ce815b9b3",
+      "mode": "0o644",
+      "bytes": 106461096
+    },
+    {
+      "path": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/fresh/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/win/sharedassets1.assets",
+      "sha256": "5350829e1bec4099a19f434bab1d7fe5e8742fee602738d16eeaef4ce815b9b3",
+      "mode": "0o644",
+      "bytes": 106461096
+    },
+    {
+      "path": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/input/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/win/sharedassets1.assets",
+      "sha256": "5350829e1bec4099a19f434bab1d7fe5e8742fee602738d16eeaef4ce815b9b3",
+      "mode": "0o644",
+      "bytes": 106461096
+    },
+    {
+      "path": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/retry/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/win/sharedassets1.assets",
+      "sha256": "5350829e1bec4099a19f434bab1d7fe5e8742fee602738d16eeaef4ce815b9b3",
+      "mode": "0o644",
+      "bytes": 106461096
+    },
+    {
+      "path": "localization/work/DragNWash-SlotFontBuilderProbe.app/Contents/Resources/Data/level0",
+      "source": "localization/work/DragNWash-SlotFont18Probe.app/Contents/Resources/Data/level0",
+      "sha256": "57198148633e8919609fd45428a6824d1f5ed89defb319f6fc1efd4875b74cb3",
+      "mode": "0o644",
+      "bytes": 907016
+    },
+    {
+      "path": "localization/work/DragNWash-SlotHighResProbe.app/Contents/Resources/Data/level0",
+      "source": "localization/work/DragNWash-SlotFont18Probe.app/Contents/Resources/Data/level0",
+      "sha256": "57198148633e8919609fd45428a6824d1f5ed89defb319f6fc1efd4875b74cb3",
+      "mode": "0o644",
+      "bytes": 907016
+    },
+    {
+      "path": "localization/work/styled-cyrillic-options-20261110.ZptivL/windows/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/styled-cyrillic-runtime-20261110.yAjNaW/windows/styled.assets",
+      "sha256": "573a61319c12b2528a547e4ac1be303ef9d43fe908b5baac24c1ed95ab656b83",
+      "mode": "0o644",
+      "bytes": 106462264
+    },
+    {
+      "path": "localization/work/styled-cyrillic-runtime-20261110.yAjNaW/windows-waypoint/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/styled-cyrillic-runtime-20261110.yAjNaW/windows/styled.assets",
+      "sha256": "573a61319c12b2528a547e4ac1be303ef9d43fe908b5baac24c1ed95ab656b83",
+      "mode": "0o644",
+      "bytes": 106462264
+    },
+    {
+      "path": "localization/work/styled-cyrillic-runtime-20261110.yAjNaW/windows/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/styled-cyrillic-runtime-20261110.yAjNaW/windows/styled.assets",
+      "sha256": "573a61319c12b2528a547e4ac1be303ef9d43fe908b5baac24c1ed95ab656b83",
+      "mode": "0o644",
+      "bytes": 106462264
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/sharedassets0.assets",
+      "sha256": "578f764b51aaf877ea936fc7648cae13708070725ead499b6835eeaa6a57b910",
+      "mode": "0o644",
+      "bytes": 1937024
+    },
+    {
+      "path": "localization/work/windows-conrad-done-20261109.PredoR/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-conrad-done-20261109.PredoR/windows-tracked-builder.assets",
+      "sha256": "59ccbdabf4579e47f0e7f8c353b7f697fcd54368423484c341c4f13803a5d335",
+      "mode": "0o644",
+      "bytes": 106462272
+    },
+    {
+      "path": "localization/work/windows-conrad-window-20261109.HmhUQt/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-conrad-done-20261109.PredoR/windows-tracked-builder.assets",
+      "sha256": "59ccbdabf4579e47f0e7f8c353b7f697fcd54368423484c341c4f13803a5d335",
+      "mode": "0o644",
+      "bytes": 106462272
+    },
+    {
+      "path": "localization/work/alexander-question-unity-20261110.oOxHYv/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-conrad-done-20261109.PredoR/windows-tracked-builder.assets",
+      "sha256": "59ccbdabf4579e47f0e7f8c353b7f697fcd54368423484c341c4f13803a5d335",
+      "mode": "0o644",
+      "bytes": 106462272
+    },
+    {
+      "path": "localization/work/conrad-exit-save-20261110.OCKyMV/windows/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-conrad-done-20261109.PredoR/windows-tracked-builder.assets",
+      "sha256": "59ccbdabf4579e47f0e7f8c353b7f697fcd54368423484c341c4f13803a5d335",
+      "mode": "0o644",
+      "bytes": 106462272
+    },
+    {
+      "path": "localization/work/conrad-reload-20261110.zcAS1o/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-conrad-done-20261109.PredoR/windows-tracked-builder.assets",
+      "sha256": "59ccbdabf4579e47f0e7f8c353b7f697fcd54368423484c341c4f13803a5d335",
+      "mode": "0o644",
+      "bytes": 106462272
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "5ad9c1ff41b89de40152820b6a9b1d7585de227c10bb5748f464efb31c959100",
+      "mode": "0o644",
+      "bytes": 105944760
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "5ad9c1ff41b89de40152820b6a9b1d7585de227c10bb5748f464efb31c959100",
+      "mode": "0o644",
+      "bytes": 105944760
+    },
+    {
+      "path": "localization/work/screenshot-review.I5EEsi/rtl-caption-packages/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "5ad9c1ff41b89de40152820b6a9b1d7585de227c10bb5748f464efb31c959100",
+      "mode": "0o644",
+      "bytes": 105944760
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-current/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "5cfc1c7fd91e2fae944f88008b9377b3e232abc65b4fd25d8bd129a736a0a6d5",
+      "mode": "0o644",
+      "bytes": 4675568
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/package-candidates-wrap/macos/DragNWash-fa.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/live-renderer.O43vkv/macos-fa-QRF1/SlotNewProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "5cfc1c7fd91e2fae944f88008b9377b3e232abc65b4fd25d8bd129a736a0a6d5",
+      "mode": "0o644",
+      "bytes": 4675568
+    },
+    {
+      "path": "localization/work/alexander-body-20261110.TV8tMJ/win/game/DragNWash_Data/level3",
+      "source": "localization/work/speaker-contrast-20261110.8i848J/win/assets/level3",
+      "sha256": "601b1ff42658ca2baa27a699f8059f240e314d98fc6088bab7a4e6e89ee0e023",
+      "mode": "0o644",
+      "bytes": 548304
+    },
+    {
+      "path": "localization/work/speaker-contrast-20261110.8i848J/win/game/DragNWash_Data/level3",
+      "source": "localization/work/speaker-contrast-20261110.8i848J/win/assets/level3",
+      "sha256": "601b1ff42658ca2baa27a699f8059f240e314d98fc6088bab7a4e6e89ee0e023",
+      "mode": "0o644",
+      "bytes": 548304
+    },
+    {
+      "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/level3",
+      "source": "localization/work/speaker-contrast-20261110.8i848J/win/assets/level3",
+      "sha256": "601b1ff42658ca2baa27a699f8059f240e314d98fc6088bab7a4e6e89ee0e023",
+      "mode": "0o644",
+      "bytes": 548304
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/level3",
+      "source": "localization/work/speaker-contrast-20261110.8i848J/win/assets/level3",
+      "sha256": "601b1ff42658ca2baa27a699f8059f240e314d98fc6088bab7a4e6e89ee0e023",
+      "mode": "0o644",
+      "bytes": 548304
+    },
+    {
+      "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/level3",
+      "source": "localization/work/speaker-contrast-20261110.8i848J/win/assets/level3",
+      "sha256": "601b1ff42658ca2baa27a699f8059f240e314d98fc6088bab7a4e6e89ee0e023",
+      "mode": "0o644",
+      "bytes": 548304
+    },
+    {
+      "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/level3",
+      "source": "localization/work/speaker-contrast-20261110.8i848J/win/assets/level3",
+      "sha256": "601b1ff42658ca2baa27a699f8059f240e314d98fc6088bab7a4e6e89ee0e023",
+      "mode": "0o644",
+      "bytes": 548304
+    },
+    {
+      "path": "localization/work/transition-builder-20261109.8zft9T/asset/repaired-noop.assets",
+      "source": "localization/work/background-performance-20261109.41uqFb/windows-preflight/sharedassets1.assets",
+      "sha256": "62e922ea6ee759b0d083695aa24580061989166c942a042cec95992924333065",
+      "mode": "0o644",
+      "bytes": 106462272
+    },
+    {
+      "path": "localization/work/transition-builder-20261109.8zft9T/windows-repaired-control/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/background-performance-20261109.41uqFb/windows-preflight/sharedassets1.assets",
+      "sha256": "62e922ea6ee759b0d083695aa24580061989166c942a042cec95992924333065",
+      "mode": "0o644",
+      "bytes": 106462272
+    },
+    {
+      "path": "localization/work/background-combined-20261109.yMvcOH/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/background-performance-20261109.41uqFb/windows-preflight/sharedassets1.assets",
+      "sha256": "62e922ea6ee759b0d083695aa24580061989166c942a042cec95992924333065",
+      "mode": "0o644",
+      "bytes": 106462272
+    },
+    {
+      "path": "localization/work/background-contact-20261109.JXkGpp/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/background-performance-20261109.41uqFb/windows-preflight/sharedassets1.assets",
+      "sha256": "62e922ea6ee759b0d083695aa24580061989166c942a042cec95992924333065",
+      "mode": "0o644",
+      "bytes": 106462272
+    },
+    {
+      "path": "localization/work/background-crouch-20261109.6ZBUGv/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/background-performance-20261109.41uqFb/windows-preflight/sharedassets1.assets",
+      "sha256": "62e922ea6ee759b0d083695aa24580061989166c942a042cec95992924333065",
+      "mode": "0o644",
+      "bytes": 106462272
+    },
+    {
+      "path": "localization/work/background-crouch-20261109.ky4HUP/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/background-performance-20261109.41uqFb/windows-preflight/sharedassets1.assets",
+      "sha256": "62e922ea6ee759b0d083695aa24580061989166c942a042cec95992924333065",
+      "mode": "0o644",
+      "bytes": 106462272
+    },
+    {
+      "path": "localization/work/background-hand-aim-20261109.Fo5uLh/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/background-performance-20261109.41uqFb/windows-preflight/sharedassets1.assets",
+      "sha256": "62e922ea6ee759b0d083695aa24580061989166c942a042cec95992924333065",
+      "mode": "0o644",
+      "bytes": 106462272
+    },
+    {
+      "path": "localization/work/background-performance-20261109.41uqFb/windows-preflight/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/background-performance-20261109.41uqFb/windows-preflight/sharedassets1.assets",
+      "sha256": "62e922ea6ee759b0d083695aa24580061989166c942a042cec95992924333065",
+      "mode": "0o644",
+      "bytes": 106462272
+    },
+    {
+      "path": "localization/work/installer.NUdeks/mac-control/Drag'N Wash.app/Contents/Resources/VNRevival/dragons-vnrevival/original-backup/level1",
+      "source": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/VNRevival/dragons-vnrevival/original-backup/level1",
+      "sha256": "6af2815f16cba00e935fe110023ec91421c7d4107c5d8d31f55b70039b17d618",
+      "mode": "0o755",
+      "bytes": 893924
+    },
+    {
+      "path": "localization/work/DragNWash-GlyphDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/glyph-dialogue-probe.assets",
+      "sha256": "6d20dc9d658c45658babcc121b65e7b780e3399f2872d06044f1c2032a75b9c0",
+      "mode": "0o755",
+      "bytes": 105908424
+    },
+    {
+      "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/european-text-paths-20261110.QddlnY/sharedassets1.assets",
+      "sha256": "6d49b3d9848f0a9663af5a82e522808fe1f444ddf2ac918918c6abf2a74f8dd3",
+      "mode": "0o644",
+      "bytes": 106460640
+    },
+    {
+      "path": "localization/work/european-text-paths-20261110.QddlnY/win-settings/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/european-text-paths-20261110.QddlnY/sharedassets1.assets",
+      "sha256": "6d49b3d9848f0a9663af5a82e522808fe1f444ddf2ac918918c6abf2a74f8dd3",
+      "mode": "0o644",
+      "bytes": 106460640
+    },
+    {
+      "path": "localization/work/european-text-paths-20261110.QddlnY/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/european-text-paths-20261110.QddlnY/sharedassets1.assets",
+      "sha256": "6d49b3d9848f0a9663af5a82e522808fe1f444ddf2ac918918c6abf2a74f8dd3",
+      "mode": "0o644",
+      "bytes": 106460640
+    },
+    {
+      "path": "localization/work/yarn-missing-line-runtime-20261110.hg9ID0/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/yarn-missing-line-runtime-20261110.OCQuzt/win/game/DragNWash_Data/sharedassets1.assets",
+      "sha256": "7384ddb60a3e16388834ff9272a95dc88c79b7292acf38b7a5d43a8fdb5a27e2",
+      "mode": "0o644",
+      "bytes": 106460648
+    },
+    {
+      "path": "localization/work/DragNWash-MultiProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/DragNWash-FinalProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "74dea206328d532fc1ea32e846aaa39dcbecc78ec410c67a08611fa8ca261ab7",
+      "mode": "0o644",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/DragNWash-ReleaseCheck.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/DragNWash-FinalProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "74dea206328d532fc1ea32e846aaa39dcbecc78ec410c67a08611fa8ca261ab7",
+      "mode": "0o644",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/WindowsCombinedGame/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-combined-synthetic.assets",
+      "sha256": "76e0c052055ccd19f98d92fce7d7531fac1668742fa1981377b4778ddc51653b",
+      "mode": "0o644",
+      "bytes": 106460568
+    },
+    {
+      "path": "localization/work/complex-font-static-20261110.54U84Z/verified/fa/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/fa/macos/sharedassets0.assets",
+      "sha256": "79a2991dea705710e0c5c609f63e0770512df325d874eb1b6a4d074d88a3ff1e",
+      "mode": "0o644",
+      "bytes": 4666088
+    },
+    {
+      "path": "localization/work/display-adapter-20261110.oMiEA1/staged/fa/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/fa/macos/sharedassets0.assets",
+      "sha256": "79a2991dea705710e0c5c609f63e0770512df325d874eb1b6a4d074d88a3ff1e",
+      "mode": "0o644",
+      "bytes": 4666088
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged-breaks/fa/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/fa/macos/sharedassets0.assets",
+      "sha256": "79a2991dea705710e0c5c609f63e0770512df325d874eb1b6a4d074d88a3ff1e",
+      "mode": "0o644",
+      "bytes": 4666088
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged/fa/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/fa/macos/sharedassets0.assets",
+      "sha256": "79a2991dea705710e0c5c609f63e0770512df325d874eb1b6a4d074d88a3ff1e",
+      "mode": "0o644",
+      "bytes": 4666088
+    },
+    {
+      "path": "localization/work/european-settings-visual-20261110.Q6lrkb/win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/european-text-paths-20261110.QddlnY/sharedassets0.assets",
+      "sha256": "7a9d7f61af1899f19ec536783380907582b711b2308b443552b053769a53e6fc",
+      "mode": "0o644",
+      "bytes": 1937008
+    },
+    {
+      "path": "localization/work/european-text-paths-20261110.QddlnY/win-settings/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/european-text-paths-20261110.QddlnY/sharedassets0.assets",
+      "sha256": "7a9d7f61af1899f19ec536783380907582b711b2308b443552b053769a53e6fc",
+      "mode": "0o644",
+      "bytes": 1937008
+    },
+    {
+      "path": "localization/work/european-text-paths-20261110.QddlnY/win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/european-text-paths-20261110.QddlnY/sharedassets0.assets",
+      "sha256": "7a9d7f61af1899f19ec536783380907582b711b2308b443552b053769a53e6fc",
+      "mode": "0o644",
+      "bytes": 1937008
+    },
+    {
+      "path": "localization/work/alexander-body-20261110.TV8tMJ/win/game/DragNWash_Data/level1",
+      "source": "localization/work/speaker-contrast-20261110.8i848J/win/assets/level1",
+      "sha256": "7f299d17c0a91b0843bf0296a47a16cfb129bbd184339c2e6472f9c006eede0e",
+      "mode": "0o644",
+      "bytes": 869864
+    },
+    {
+      "path": "localization/work/speaker-contrast-20261110.8i848J/win/game/DragNWash_Data/level1",
+      "source": "localization/work/speaker-contrast-20261110.8i848J/win/assets/level1",
+      "sha256": "7f299d17c0a91b0843bf0296a47a16cfb129bbd184339c2e6472f9c006eede0e",
+      "mode": "0o644",
+      "bytes": 869864
+    },
+    {
+      "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/level1",
+      "source": "localization/work/speaker-contrast-20261110.8i848J/win/assets/level1",
+      "sha256": "7f299d17c0a91b0843bf0296a47a16cfb129bbd184339c2e6472f9c006eede0e",
+      "mode": "0o644",
+      "bytes": 869864
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/level1",
+      "source": "localization/work/speaker-contrast-20261110.8i848J/win/assets/level1",
+      "sha256": "7f299d17c0a91b0843bf0296a47a16cfb129bbd184339c2e6472f9c006eede0e",
+      "mode": "0o644",
+      "bytes": 869864
+    },
+    {
+      "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/win/game/DragNWash_Data/level1",
+      "source": "localization/work/speaker-contrast-20261110.8i848J/win/assets/level1",
+      "sha256": "7f299d17c0a91b0843bf0296a47a16cfb129bbd184339c2e6472f9c006eede0e",
+      "mode": "0o644",
+      "bytes": 869864
+    },
+    {
+      "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/level1",
+      "source": "localization/work/speaker-contrast-20261110.8i848J/win/assets/level1",
+      "sha256": "7f299d17c0a91b0843bf0296a47a16cfb129bbd184339c2e6472f9c006eede0e",
+      "mode": "0o644",
+      "bytes": 869864
+    },
+    {
+      "path": "localization/work/SteamLauncherProbe.app/Contents/Resources/Data/level0",
+      "source": "localization/work/DragNWash-CyrillicDistinct.app/Contents/Resources/Data/level0",
+      "sha256": "80091ef71fc2c16e20f7fb6212512df7fc8c34b594855013be12986eb8198baf",
+      "mode": "0o644",
+      "bytes": 907040
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/level0",
+      "source": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/level0",
+      "sha256": "80cc81f742d3426502f8fa7c8a4b9ef304221392f1c9ed3808ab83e79960b00d",
+      "mode": "0o644",
+      "bytes": 903976
+    },
+    {
+      "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/level0",
+      "source": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/level0",
+      "sha256": "80cc81f742d3426502f8fa7c8a4b9ef304221392f1c9ed3808ab83e79960b00d",
+      "mode": "0o644",
+      "bytes": 903976
+    },
+    {
+      "path": "localization/work/background-cyrillic-offscreen-20261109.w6zvmR/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/background-cyrillic-20261109.hWyvEA/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "820371cb7cf412747fed239fa8852224578dd2e1bb32dea253331489085d82b0",
+      "mode": "0o644",
+      "bytes": 105910088
+    },
+    {
+      "path": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/mac/AnonymousDragon.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/mac/sharedassets1.assets",
+      "sha256": "84ebda546a2d5fec51362dea4a6658821ccf49368d03e342e7a7ec67595dfe60",
+      "mode": "0o644",
+      "bytes": 105908888
+    },
+    {
+      "path": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/fixture/mac/AnonymousDragon.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/mac/sharedassets1.assets",
+      "sha256": "84ebda546a2d5fec51362dea4a6658821ccf49368d03e342e7a7ec67595dfe60",
+      "mode": "0o644",
+      "bytes": 105908888
+    },
+    {
+      "path": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/fresh/mac/AnonymousDragon.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/mac/sharedassets1.assets",
+      "sha256": "84ebda546a2d5fec51362dea4a6658821ccf49368d03e342e7a7ec67595dfe60",
+      "mode": "0o644",
+      "bytes": 105908888
+    },
+    {
+      "path": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/input/mac/AnonymousDragon.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/mac/sharedassets1.assets",
+      "sha256": "84ebda546a2d5fec51362dea4a6658821ccf49368d03e342e7a7ec67595dfe60",
+      "mode": "0o644",
+      "bytes": 105908888
+    },
+    {
+      "path": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/retry/mac/AnonymousDragon.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/anonymous-dragon-unity-20261110.I3LFs1/mac/sharedassets1.assets",
+      "sha256": "84ebda546a2d5fec51362dea4a6658821ccf49368d03e342e7a7ec67595dfe60",
+      "mode": "0o644",
+      "bytes": 105908888
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-05/higher-settings/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "87c4cab63edbb20271f33094c752f6e5e86ad7b4799bcfc6608b3e233cb4c506",
+      "mode": "0o644",
+      "bytes": 4426168
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-05/higher-settings/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "87c4cab63edbb20271f33094c752f6e5e86ad7b4799bcfc6608b3e233cb4c506",
+      "mode": "0o644",
+      "bytes": 4426168
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-05/higher-settings/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "87c4cab63edbb20271f33094c752f6e5e86ad7b4799bcfc6608b3e233cb4c506",
+      "mode": "0o644",
+      "bytes": 4426168
+    },
+    {
+      "path": "localization/work/speaker-contrast-20261110.8i848J/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/speaker-runtime-20261110.O82oIa/win/fixture.assets",
+      "sha256": "8b8b10a1fd52f56ae83abe5a90e929180225185f303553ffdc0b84adc19f8753",
+      "mode": "0o644",
+      "bytes": 106462232
+    },
+    {
+      "path": "localization/work/speaker-runtime-20261110.O82oIa/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/speaker-runtime-20261110.O82oIa/win/fixture.assets",
+      "sha256": "8b8b10a1fd52f56ae83abe5a90e929180225185f303553ffdc0b84adc19f8753",
+      "mode": "0o644",
+      "bytes": 106462232
+    },
+    {
+      "path": "localization/work/DragNWash-AtomicPublishProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/settings-option-probe.assets",
+      "sha256": "8d42bd11daf40e5ddf0b8fd310b31d27f2201ff2da49b81dbfe22afbf87b96e1",
+      "mode": "0o644",
+      "bytes": 4426160
+    },
+    {
+      "path": "localization/work/DragNWash-SettingsOptionProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/settings-option-probe.assets",
+      "sha256": "8d42bd11daf40e5ddf0b8fd310b31d27f2201ff2da49b81dbfe22afbf87b96e1",
+      "mode": "0o644",
+      "bytes": 4426160
+    },
+    {
+      "path": "localization/work/alexander-body-20261110.TV8tMJ/mac/CyrillicDialogue.app/Contents/Resources/Data/level1",
+      "source": "localization/work/DragNWash-AlexanderBlackProbe.app/Contents/Resources/Data/level1",
+      "sha256": "91ca8ca2efbe236ccd7b0e2db65c243f9a0e3aa36cae991c3f1a8b6ebb8febd6",
+      "mode": "0o644",
+      "bytes": 874352
+    },
+    {
+      "path": "localization/work/speaker-contrast-20261110.8i848J/mac/ContrastBuild.app/Contents/Resources/Data/level1",
+      "source": "localization/work/DragNWash-AlexanderBlackProbe.app/Contents/Resources/Data/level1",
+      "sha256": "91ca8ca2efbe236ccd7b0e2db65c243f9a0e3aa36cae991c3f1a8b6ebb8febd6",
+      "mode": "0o644",
+      "bytes": 874352
+    },
+    {
+      "path": "localization/work/speaker-contrast-20261110.8i848J/mac/CyrillicDialogue.app/Contents/Resources/Data/level1",
+      "source": "localization/work/DragNWash-AlexanderBlackProbe.app/Contents/Resources/Data/level1",
+      "sha256": "91ca8ca2efbe236ccd7b0e2db65c243f9a0e3aa36cae991c3f1a8b6ebb8febd6",
+      "mode": "0o644",
+      "bytes": 874352
+    },
+    {
+      "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/level1",
+      "source": "localization/work/DragNWash-AlexanderBlackProbe.app/Contents/Resources/Data/level1",
+      "sha256": "91ca8ca2efbe236ccd7b0e2db65c243f9a0e3aa36cae991c3f1a8b6ebb8febd6",
+      "mode": "0o644",
+      "bytes": 874352
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/level1",
+      "source": "localization/work/DragNWash-AlexanderBlackProbe.app/Contents/Resources/Data/level1",
+      "sha256": "91ca8ca2efbe236ccd7b0e2db65c243f9a0e3aa36cae991c3f1a8b6ebb8febd6",
+      "mode": "0o644",
+      "bytes": 874352
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/level1",
+      "source": "localization/work/DragNWash-AlexanderBlackProbe.app/Contents/Resources/Data/level1",
+      "sha256": "91ca8ca2efbe236ccd7b0e2db65c243f9a0e3aa36cae991c3f1a8b6ebb8febd6",
+      "mode": "0o644",
+      "bytes": 874352
+    },
+    {
+      "path": "localization/work/cjk-package-20261110.dgT1p7/runtime-ja/mac/SlotNewProbe.app/Contents/Resources/Data/level1",
+      "source": "localization/work/DragNWash-AlexanderBlackProbe.app/Contents/Resources/Data/level1",
+      "sha256": "91ca8ca2efbe236ccd7b0e2db65c243f9a0e3aa36cae991c3f1a8b6ebb8febd6",
+      "mode": "0o644",
+      "bytes": 874352
+    },
+    {
+      "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/level1",
+      "source": "localization/work/DragNWash-AlexanderBlackProbe.app/Contents/Resources/Data/level1",
+      "sha256": "91ca8ca2efbe236ccd7b0e2db65c243f9a0e3aa36cae991c3f1a8b6ebb8febd6",
+      "mode": "0o644",
+      "bytes": 874352
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/sharedassets0.assets",
+      "sha256": "92e2ad73065eb118261a3d3138c385091bf2a567dc4ea59860ace3b281c89466",
+      "mode": "0o644",
+      "bytes": 1937000
+    },
+    {
+      "path": "localization/work/complex-font-static-20261110.54U84Z/verified/hi/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/hi/windows/sharedassets0.assets",
+      "sha256": "93490024905e538983d0232bd8cd1e87620ced285b53f780e53aeaece8c89694",
+      "mode": "0o644",
+      "bytes": 2185848
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-paragraphs/hi/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/hi/windows/sharedassets0.assets",
+      "sha256": "93490024905e538983d0232bd8cd1e87620ced285b53f780e53aeaece8c89694",
+      "mode": "0o644",
+      "bytes": 2185848
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-reveal/hi/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/hi/windows/sharedassets0.assets",
+      "sha256": "93490024905e538983d0232bd8cd1e87620ced285b53f780e53aeaece8c89694",
+      "mode": "0o644",
+      "bytes": 2185848
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl/hi/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/hi/windows/sharedassets0.assets",
+      "sha256": "93490024905e538983d0232bd8cd1e87620ced285b53f780e53aeaece8c89694",
+      "mode": "0o644",
+      "bytes": 2185848
+    },
+    {
+      "path": "localization/work/display-adapter-20261110.oMiEA1/staged/hi/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/hi/windows/sharedassets0.assets",
+      "sha256": "93490024905e538983d0232bd8cd1e87620ced285b53f780e53aeaece8c89694",
+      "mode": "0o644",
+      "bytes": 2185848
+    },
+    {
+      "path": "localization/work/windows-cyrillic-offscreen-20261109.eRMrOI/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-cyrillic-offscreen-20261109.eRMrOI/cyrillic-probe.assets",
+      "sha256": "946119a439fa0fe61423bb86aa7416fb1cc9a4502e554be3255ce2525ce2d9a1",
+      "mode": "0o644",
+      "bytes": 106462296
+    },
+    {
+      "path": "localization/work/windows-version-ui-20261109.AaCv9x/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-cyrillic-offscreen-20261109.eRMrOI/cyrillic-probe.assets",
+      "sha256": "946119a439fa0fe61423bb86aa7416fb1cc9a4502e554be3255ce2525ce2d9a1",
+      "mode": "0o644",
+      "bytes": 106462296
+    },
+    {
+      "path": "localization/work/managed-slot-runtime-20261110.eIsBTK/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-cyrillic-offscreen-20261109.eRMrOI/cyrillic-probe.assets",
+      "sha256": "946119a439fa0fe61423bb86aa7416fb1cc9a4502e554be3255ce2525ce2d9a1",
+      "mode": "0o644",
+      "bytes": 106462296
+    },
+    {
+      "path": "localization/work/pause-cheat-runtime-20261109.Jzhgxf/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-cyrillic-offscreen-20261109.eRMrOI/cyrillic-probe.assets",
+      "sha256": "946119a439fa0fe61423bb86aa7416fb1cc9a4502e554be3255ce2525ce2d9a1",
+      "mode": "0o644",
+      "bytes": 106462296
+    },
+    {
+      "path": "localization/work/settings-stock-runtime-20261109.pOHuxf/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-cyrillic-offscreen-20261109.eRMrOI/cyrillic-probe.assets",
+      "sha256": "946119a439fa0fe61423bb86aa7416fb1cc9a4502e554be3255ce2525ce2d9a1",
+      "mode": "0o644",
+      "bytes": 106462296
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/level0",
+      "source": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/level0",
+      "sha256": "94b62d36a678391e7cbba6ca23f13dab8c75e5e47d95240954b1da72f4ae711e",
+      "mode": "0o644",
+      "bytes": 907016
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/level0",
+      "source": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/level0",
+      "sha256": "94b62d36a678391e7cbba6ca23f13dab8c75e5e47d95240954b1da72f4ae711e",
+      "mode": "0o644",
+      "bytes": 907016
+    },
+    {
+      "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/mac/SlotNewProbe.app/Contents/Resources/Data/level0",
+      "source": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/level0",
+      "sha256": "94b62d36a678391e7cbba6ca23f13dab8c75e5e47d95240954b1da72f4ae711e",
+      "mode": "0o644",
+      "bytes": 907016
+    },
+    {
+      "path": "localization/work/DragNWash-SlotCaseSmallProbe.app/Contents/Resources/Data/level0",
+      "source": "localization/work/DragNWash-SlotCaseProbe.app/Contents/Resources/Data/level0",
+      "sha256": "95482097044b8726bea3fcf80d8eb750b805c92b4305099a6dff77cf3c0d8110",
+      "mode": "0o644",
+      "bytes": 907016
+    },
+    {
+      "path": "localization/work/DragNWash-GlyphOption.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/glyph-option-probe.assets",
+      "sha256": "96e3f29e601a64f575be6ee60e706eabd8afb47f6b2c6803116a773518ae52fd",
+      "mode": "0o644",
+      "bytes": 4426168
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/sharedassets0.assets",
+      "sha256": "978ecb28cfe4cf3d9f038f9829aa3d9988c482f7a142419a6cd3efce0c31e7f3",
+      "mode": "0o644",
+      "bytes": 1936992
+    },
+    {
+      "path": "localization/work/uk-special-scenes-20261110.pE2LiD/runtime/win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/sharedassets0.assets",
+      "sha256": "978ecb28cfe4cf3d9f038f9829aa3d9988c482f7a142419a6cd3efce0c31e7f3",
+      "mode": "0o644",
+      "bytes": 1936992
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/sharedassets0.assets",
+      "sha256": "97adcd5546c2934bcd59045c3d12ad038024c473eb7d13089ee61dc0bc142e85",
+      "mode": "0o644",
+      "bytes": 1937000
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/sharedassets0.assets",
+      "sha256": "97adcd5546c2934bcd59045c3d12ad038024c473eb7d13089ee61dc0bc142e85",
+      "mode": "0o644",
+      "bytes": 1937000
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win-retry/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/sharedassets0.assets",
+      "sha256": "97adcd5546c2934bcd59045c3d12ad038024c473eb7d13089ee61dc0bc142e85",
+      "mode": "0o644",
+      "bytes": 1937000
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/sharedassets0.assets",
+      "sha256": "97adcd5546c2934bcd59045c3d12ad038024c473eb7d13089ee61dc0bc142e85",
+      "mode": "0o644",
+      "bytes": 1937000
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/sharedassets0.assets",
+      "sha256": "97adcd5546c2934bcd59045c3d12ad038024c473eb7d13089ee61dc0bc142e85",
+      "mode": "0o644",
+      "bytes": 1937000
+    },
+    {
+      "path": "localization/work/DragNWash-SpeakerMappingProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/DragNWash-AtomicPublishProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "99f4c8d831010c12948e1fb5ba9c4abcb5868b60332263de733f587ff1f11ea3",
+      "mode": "0o644",
+      "bytes": 105908424
+    },
+    {
+      "path": "localization/work/DragNWash-SpeakerRuntimeLogProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/DragNWash-AtomicPublishProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "99f4c8d831010c12948e1fb5ba9c4abcb5868b60332263de733f587ff1f11ea3",
+      "mode": "0o644",
+      "bytes": 105908424
+    },
+    {
+      "path": "localization/work/installer-discovery.jx49dN/win-payload/LocalizationPayload/Deltas/c8ce3f2e8f52-df2ea959c900dee54a536c6459f938dd588d8152d7d590764bab468121b0e3e9.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/win-payload/LocalizationPayload/Deltas/c8ce3f2e8f52-df2ea959c900dee54a536c6459f938dd588d8152d7d590764bab468121b0e3e9.vcdiff",
+      "sha256": "9c8fd8106e50fc5ff0bccfd4aa3cfd5eba899e8448ed346cbfefbc9134591dbc",
+      "mode": "0o644",
+      "bytes": 13088259
+    },
+    {
+      "path": "localization/work/installer-all.Yykv0u/win-fixture-dist/Resources/LocalizationPayload/Deltas/c8ce3f2e8f52-df2ea959c900dee54a536c6459f938dd588d8152d7d590764bab468121b0e3e9.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/win-payload/LocalizationPayload/Deltas/c8ce3f2e8f52-df2ea959c900dee54a536c6459f938dd588d8152d7d590764bab468121b0e3e9.vcdiff",
+      "sha256": "9c8fd8106e50fc5ff0bccfd4aa3cfd5eba899e8448ed346cbfefbc9134591dbc",
+      "mode": "0o644",
+      "bytes": 13088259
+    },
+    {
+      "path": "localization/work/WindowsSettingsGame/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/windows-settings-probe.assets",
+      "sha256": "a057e84687993682f91a850f62c0e5b81d21c0d76a6fd8afde55959e49a10f1c",
+      "mode": "0o644",
+      "bytes": 1937000
+    },
+    {
+      "path": "localization/work/DragNWash-LayoutBuilderProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/DragNWash-GlyphOptionLayout.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "a06067fa117624a04a5ccb4b2bbfb912d9f0a63ac543f730c2be974acf52ffdf",
+      "mode": "0o644",
+      "bytes": 4426168
+    },
+    {
+      "path": "localization/work/DragNWash-ScrollProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/DragNWash-GlyphOptionLayout.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "a06067fa117624a04a5ccb4b2bbfb912d9f0a63ac543f730c2be974acf52ffdf",
+      "mode": "0o644",
+      "bytes": 4426168
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/sharedassets0.assets",
+      "sha256": "a64dfec469b5892dd4a318d9464dd13917153321f19fe0ba23bf7286cad5cdc0",
+      "mode": "0o644",
+      "bytes": 1937000
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-localized/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/sharedassets0.assets",
+      "sha256": "a64dfec469b5892dd4a318d9464dd13917153321f19fe0ba23bf7286cad5cdc0",
+      "mode": "0o644",
+      "bytes": 1937000
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/sharedassets0.assets",
+      "sha256": "a64dfec469b5892dd4a318d9464dd13917153321f19fe0ba23bf7286cad5cdc0",
+      "mode": "0o644",
+      "bytes": 1937000
+    },
+    {
+      "path": "localization/work/transition-builder-20261109.8zft9T/windows-game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/transition-builder-20261109.8zft9T/asset/sharedassets1.assets",
+      "sha256": "a902f2bde63aaeabb074600e3726a11e6ad1ba83ffa9ccd23158fb6923b48c27",
+      "mode": "0o644",
+      "bytes": 106462616
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "ad99b7202c1307267a89507e0cffdd3a758b41ce784a4cc2d077cdaeb82105df",
+      "mode": "0o644",
+      "bytes": 4426160
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-04/higher-settings/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "ad99b7202c1307267a89507e0cffdd3a758b41ce784a4cc2d077cdaeb82105df",
+      "mode": "0o644",
+      "bytes": 4426160
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "afa3dab770c1cc064cd1482c143b75708a36dbfca269457d924e93e6e34c4aba",
+      "mode": "0o644",
+      "bytes": 105919736
+    },
+    {
+      "path": "localization/work/version-ui-runtime-20261109.vpXR5H/VersionProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/version-ui-activate-20261109.G47qP7/VersionProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "b30b77e20bcaa9b8e5e2cd62de3ed1f6b01005a6cbcc4227a63969c4b3e565fd",
+      "mode": "0o644",
+      "bytes": 105908440
+    },
+    {
+      "path": "localization/work/managed-slot-runtime-20261110.eIsBTK/mac/SlotNewProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/version-ui-activate-20261109.G47qP7/VersionProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "b30b77e20bcaa9b8e5e2cd62de3ed1f6b01005a6cbcc4227a63969c4b3e565fd",
+      "mode": "0o644",
+      "bytes": 105908440
+    },
+    {
+      "path": "localization/work/pause-cheat-runtime-20261109.Jzhgxf/mac/PauseProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/version-ui-activate-20261109.G47qP7/VersionProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "b30b77e20bcaa9b8e5e2cd62de3ed1f6b01005a6cbcc4227a63969c4b3e565fd",
+      "mode": "0o644",
+      "bytes": 105908440
+    },
+    {
+      "path": "localization/work/settings-stock-runtime-20261109.pOHuxf/mac/SettingsProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/version-ui-activate-20261109.G47qP7/VersionProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "b30b77e20bcaa9b8e5e2cd62de3ed1f6b01005a6cbcc4227a63969c4b3e565fd",
+      "mode": "0o644",
+      "bytes": 105908440
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-06/yarn-unity/P6B1.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/version-ui-activate-20261109.G47qP7/VersionProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "b30b77e20bcaa9b8e5e2cd62de3ed1f6b01005a6cbcc4227a63969c4b3e565fd",
+      "mode": "0o644",
+      "bytes": 105908440
+    },
+    {
+      "path": "localization/work/complex-font-static-20261110.54U84Z/verified/he/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/he/windows/sharedassets0.assets",
+      "sha256": "b356de30878b33db49e3d670118b26d8c2b7bf71938a7249bb131de53473d1c7",
+      "mode": "0o644",
+      "bytes": 2523504
+    },
+    {
+      "path": "localization/work/display-adapter-20261110.oMiEA1/staged/he/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/he/windows/sharedassets0.assets",
+      "sha256": "b356de30878b33db49e3d670118b26d8c2b7bf71938a7249bb131de53473d1c7",
+      "mode": "0o644",
+      "bytes": 2523504
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged-breaks/he/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/he/windows/sharedassets0.assets",
+      "sha256": "b356de30878b33db49e3d670118b26d8c2b7bf71938a7249bb131de53473d1c7",
+      "mode": "0o644",
+      "bytes": 2523504
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged/he/windows/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/he/windows/sharedassets0.assets",
+      "sha256": "b356de30878b33db49e3d670118b26d8c2b7bf71938a7249bb131de53473d1c7",
+      "mode": "0o644",
+      "bytes": 2523504
+    },
+    {
+      "path": "localization/work/installer-discovery.jx49dN/mac-payload/LocalizationPayload/Deltas/40713b00ce12-147a4d467a3c60050e724c572257708d4bcd315023a4c33e0f074eff1a7f0a3e.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-147a4d467a3c60050e724c572257708d4bcd315023a4c33e0f074eff1a7f0a3e.vcdiff",
+      "sha256": "b37d29b4dd8db512cf9ae227f5ecc0d18083d077c4d41d0e2cbc25ab46c9ea5a",
+      "mode": "0o644",
+      "bytes": 13108508
+    },
+    {
+      "path": "localization/work/installer-upload.ms8mti/prior-generated-resources/LocalizationPayload/Deltas/40713b00ce12-147a4d467a3c60050e724c572257708d4bcd315023a4c33e0f074eff1a7f0a3e.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-147a4d467a3c60050e724c572257708d4bcd315023a4c33e0f074eff1a7f0a3e.vcdiff",
+      "sha256": "b37d29b4dd8db512cf9ae227f5ecc0d18083d077c4d41d0e2cbc25ab46c9ea5a",
+      "mode": "0o644",
+      "bytes": 13108508
+    },
+    {
+      "path": "localization/work/installer-all.Yykv0u/readback/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/40713b00ce12-147a4d467a3c60050e724c572257708d4bcd315023a4c33e0f074eff1a7f0a3e.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-147a4d467a3c60050e724c572257708d4bcd315023a4c33e0f074eff1a7f0a3e.vcdiff",
+      "sha256": "b37d29b4dd8db512cf9ae227f5ecc0d18083d077c4d41d0e2cbc25ab46c9ea5a",
+      "mode": "0o644",
+      "bytes": 13108508
+    },
+    {
+      "path": "localization/work/installer-discovery.jx49dN/unpacked/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/40713b00ce12-147a4d467a3c60050e724c572257708d4bcd315023a4c33e0f074eff1a7f0a3e.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-147a4d467a3c60050e724c572257708d4bcd315023a4c33e0f074eff1a7f0a3e.vcdiff",
+      "sha256": "b37d29b4dd8db512cf9ae227f5ecc0d18083d077c4d41d0e2cbc25ab46c9ea5a",
+      "mode": "0o644",
+      "bytes": 13108508
+    },
+    {
+      "path": "localization/work/DragNWash-AlexanderIDProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/DragNWash-AlexanderBlackProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "b4b3df1d590d7de606773ef9190d81e863a18e01528a1673a53e9d5ca80c3854",
+      "mode": "0o644",
+      "bytes": 105908424
+    },
+    {
+      "path": "localization/work/DragNWash-AlexanderWhiteProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/DragNWash-AlexanderBlackProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "b4b3df1d590d7de606773ef9190d81e863a18e01528a1673a53e9d5ca80c3854",
+      "mode": "0o644",
+      "bytes": 105908424
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-inline-speaker-plans/th/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/th/windows/sharedassets0.assets",
+      "sha256": "b583150b9cd04b7a3be001fb337c7b50808b7abd6126b28ec5a50b48bcf61988",
+      "mode": "0o644",
+      "bytes": 2001824
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged-breaks/th/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/th/windows/sharedassets0.assets",
+      "sha256": "b583150b9cd04b7a3be001fb337c7b50808b7abd6126b28ec5a50b48bcf61988",
+      "mode": "0o644",
+      "bytes": 2001824
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged/th/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/th/windows/sharedassets0.assets",
+      "sha256": "b583150b9cd04b7a3be001fb337c7b50808b7abd6126b28ec5a50b48bcf61988",
+      "mode": "0o644",
+      "bytes": 2001824
+    },
+    {
+      "path": "localization/work/complex-font-static-20261110.54U84Z/verified/th/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/th/macos/sharedassets0.assets",
+      "sha256": "b6814e19f197cf832e98db73393d564ab185920b260b1df66b09c5c53a2da8ae",
+      "mode": "0o644",
+      "bytes": 4470432
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-paragraphs/th/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/th/macos/sharedassets0.assets",
+      "sha256": "b6814e19f197cf832e98db73393d564ab185920b260b1df66b09c5c53a2da8ae",
+      "mode": "0o644",
+      "bytes": 4470432
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-reveal/th/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/th/macos/sharedassets0.assets",
+      "sha256": "b6814e19f197cf832e98db73393d564ab185920b260b1df66b09c5c53a2da8ae",
+      "mode": "0o644",
+      "bytes": 4470432
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl/th/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/th/macos/sharedassets0.assets",
+      "sha256": "b6814e19f197cf832e98db73393d564ab185920b260b1df66b09c5c53a2da8ae",
+      "mode": "0o644",
+      "bytes": 4470432
+    },
+    {
+      "path": "localization/work/display-adapter-20261110.oMiEA1/staged/th/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/th/macos/sharedassets0.assets",
+      "sha256": "b6814e19f197cf832e98db73393d564ab185920b260b1df66b09c5c53a2da8ae",
+      "mode": "0o644",
+      "bytes": 4470432
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win/game/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win-retry/game/DragNWash_Data/sharedassets0.assets",
+      "sha256": "baea1c20441e756128f12d511ce850c625b5b5daea05fb3dde621a1e341106bc",
+      "mode": "0o644",
+      "bytes": 1937176
+    },
+    {
+      "path": "localization/work/DragNWash-WrapProbe2.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/DragNWash-WrapProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "bf5649bde8390ed042ee627244f0c23babc4234fdd4685ea1c6a6229bc94541e",
+      "mode": "0o644",
+      "bytes": 105908616
+    },
+    {
+      "path": "localization/work/speaker-contrast-20261110.8i848J/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/speaker-runtime-20261110.O82oIa/mac/fixture.assets",
+      "sha256": "c085c75f47105124cfb7b7961aaf92ce69ca523b0d9f4c10a0a156bd95c3ad0f",
+      "mode": "0o644",
+      "bytes": 105910024
+    },
+    {
+      "path": "localization/work/speaker-runtime-20261110.O82oIa/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/speaker-runtime-20261110.O82oIa/mac/fixture.assets",
+      "sha256": "c085c75f47105124cfb7b7961aaf92ce69ca523b0d9f4c10a0a156bd95c3ad0f",
+      "mode": "0o644",
+      "bytes": 105910024
+    },
+    {
+      "path": "localization/work/complex-font-static-20261110.54U84Z/verified/ar/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/ar/macos/sharedassets0.assets",
+      "sha256": "c27b6afd88129e19d77b2b23fc105b9384a523707df60c5d1b275fd8b13af62f",
+      "mode": "0o644",
+      "bytes": 4666072
+    },
+    {
+      "path": "localization/work/display-adapter-20261110.oMiEA1/staged/ar/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/ar/macos/sharedassets0.assets",
+      "sha256": "c27b6afd88129e19d77b2b23fc105b9384a523707df60c5d1b275fd8b13af62f",
+      "mode": "0o644",
+      "bytes": 4666072
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged-breaks/ar/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/ar/macos/sharedassets0.assets",
+      "sha256": "c27b6afd88129e19d77b2b23fc105b9384a523707df60c5d1b275fd8b13af62f",
+      "mode": "0o644",
+      "bytes": 4666072
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged/ar/macos/sharedassets0.assets",
+      "source": "localization/work/complex-font-static-20261110.54U84Z/probes/ar/macos/sharedassets0.assets",
+      "sha256": "c27b6afd88129e19d77b2b23fc105b9384a523707df60c5d1b275fd8b13af62f",
+      "mode": "0o644",
+      "bytes": 4666072
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-inline-speaker-plans/hi/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/hi/windows/sharedassets0.assets",
+      "sha256": "c39ab24782c300bb7ad6a53873756dcdcb0de4ebf22f791a542ff2813daac641",
+      "mode": "0o644",
+      "bytes": 2198216
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged-breaks/hi/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/hi/windows/sharedassets0.assets",
+      "sha256": "c39ab24782c300bb7ad6a53873756dcdcb0de4ebf22f791a542ff2813daac641",
+      "mode": "0o644",
+      "bytes": 2198216
+    },
+    {
+      "path": "localization/work/ltr-corpus-display-20261110.YN1VJp/staged/hi/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/hi/windows/sharedassets0.assets",
+      "sha256": "c39ab24782c300bb7ad6a53873756dcdcb0de4ebf22f791a542ff2813daac641",
+      "mode": "0o644",
+      "bytes": 2198216
+    },
+    {
+      "path": "localization/work/uk-ordinary-14-20261110.70neUL/macos-sharedassets0.assets",
+      "source": "localization/work/uk-ordinary-14-20261110.70neUL/macos-checked-sharedassets0.assets",
+      "sha256": "c5698a381fc2d4a68d4421526031bb402376a589092afc8e095a3d5faa03568d",
+      "mode": "0o644",
+      "bytes": 4426648
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-inline-speaker-plans/fa/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/fa/windows/sharedassets0.assets",
+      "sha256": "c64c2d377845c6710f45a16c1733b52031f70d436d839de794cd4daa6aff4a92",
+      "mode": "0o644",
+      "bytes": 2186048
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-paragraphs/fa/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/fa/windows/sharedassets0.assets",
+      "sha256": "c64c2d377845c6710f45a16c1733b52031f70d436d839de794cd4daa6aff4a92",
+      "mode": "0o644",
+      "bytes": 2186048
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-reveal/fa/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/fa/windows/sharedassets0.assets",
+      "sha256": "c64c2d377845c6710f45a16c1733b52031f70d436d839de794cd4daa6aff4a92",
+      "mode": "0o644",
+      "bytes": 2186048
+    },
+    {
+      "path": "localization/work/installer-discovery.jx49dN/win-payload/LocalizationPayload/Deltas/c8ce3f2e8f52-df0b16dcb8e922ad4023b0c590b7da94640f2cfe445a1407c8efed1c76cf97de.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/win-payload/LocalizationPayload/Deltas/c8ce3f2e8f52-df0b16dcb8e922ad4023b0c590b7da94640f2cfe445a1407c8efed1c76cf97de.vcdiff",
+      "sha256": "c979cb69851107a606634c03ba41335d908c800e77cd175c8c03ef7c3d835034",
+      "mode": "0o644",
+      "bytes": 13112190
+    },
+    {
+      "path": "localization/work/installer-all.Yykv0u/win-fixture-dist/Resources/LocalizationPayload/Deltas/c8ce3f2e8f52-df0b16dcb8e922ad4023b0c590b7da94640f2cfe445a1407c8efed1c76cf97de.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/win-payload/LocalizationPayload/Deltas/c8ce3f2e8f52-df0b16dcb8e922ad4023b0c590b7da94640f2cfe445a1407c8efed1c76cf97de.vcdiff",
+      "sha256": "c979cb69851107a606634c03ba41335d908c800e77cd175c8c03ef7c3d835034",
+      "mode": "0o644",
+      "bytes": 13112190
+    },
+    {
+      "path": "localization/work/installer-discovery.jx49dN/mac-payload/LocalizationPayload/Deltas/40713b00ce12-16934338bf1f1a7246b5cb8f2056c3dc84c4e14f69540ab28b1d1c6815702725.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-16934338bf1f1a7246b5cb8f2056c3dc84c4e14f69540ab28b1d1c6815702725.vcdiff",
+      "sha256": "cb5a26f32ab7072d76c4e992069edbb31ba93bc80d219cecd6ff288f9df38db6",
+      "mode": "0o644",
+      "bytes": 13128481
+    },
+    {
+      "path": "localization/work/installer-upload.ms8mti/prior-generated-resources/LocalizationPayload/Deltas/40713b00ce12-16934338bf1f1a7246b5cb8f2056c3dc84c4e14f69540ab28b1d1c6815702725.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-16934338bf1f1a7246b5cb8f2056c3dc84c4e14f69540ab28b1d1c6815702725.vcdiff",
+      "sha256": "cb5a26f32ab7072d76c4e992069edbb31ba93bc80d219cecd6ff288f9df38db6",
+      "mode": "0o644",
+      "bytes": 13128481
+    },
+    {
+      "path": "localization/work/installer-all.Yykv0u/readback/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/40713b00ce12-16934338bf1f1a7246b5cb8f2056c3dc84c4e14f69540ab28b1d1c6815702725.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-16934338bf1f1a7246b5cb8f2056c3dc84c4e14f69540ab28b1d1c6815702725.vcdiff",
+      "sha256": "cb5a26f32ab7072d76c4e992069edbb31ba93bc80d219cecd6ff288f9df38db6",
+      "mode": "0o644",
+      "bytes": 13128481
+    },
+    {
+      "path": "localization/work/installer-discovery.jx49dN/unpacked/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/40713b00ce12-16934338bf1f1a7246b5cb8f2056c3dc84c4e14f69540ab28b1d1c6815702725.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-16934338bf1f1a7246b5cb8f2056c3dc84c4e14f69540ab28b1d1c6815702725.vcdiff",
+      "sha256": "cb5a26f32ab7072d76c4e992069edbb31ba93bc80d219cecd6ff288f9df38db6",
+      "mode": "0o644",
+      "bytes": 13128481
+    },
+    {
+      "path": "localization/work/yarn-missing-line-runtime-20261110.hg9ID0/mac/FallbackProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/yarn-missing-line-runtime-20261110.OCQuzt/mac/FallbackProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "d1d636abb153aab2f3f19f242dfea2035a3a9cc17d4e8a580e877ea6a940a96e",
+      "mode": "0o644",
+      "bytes": 105908440
+    },
+    {
+      "path": "localization/work/installer-discovery.jx49dN/mac-payload/LocalizationPayload/Deltas/40713b00ce12-8e8d85531e805fea0c83e01c45d4a7a944dd50e65389ceb61dc1bf62dfbcd796.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-8e8d85531e805fea0c83e01c45d4a7a944dd50e65389ceb61dc1bf62dfbcd796.vcdiff",
+      "sha256": "d329cceb31301c0cc72ef8a828b26701ed87ca791de5c793b24d677afc75e0f3",
+      "mode": "0o644",
+      "bytes": 13105050
+    },
+    {
+      "path": "localization/work/installer-upload.ms8mti/prior-generated-resources/LocalizationPayload/Deltas/40713b00ce12-8e8d85531e805fea0c83e01c45d4a7a944dd50e65389ceb61dc1bf62dfbcd796.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-8e8d85531e805fea0c83e01c45d4a7a944dd50e65389ceb61dc1bf62dfbcd796.vcdiff",
+      "sha256": "d329cceb31301c0cc72ef8a828b26701ed87ca791de5c793b24d677afc75e0f3",
+      "mode": "0o644",
+      "bytes": 13105050
+    },
+    {
+      "path": "localization/work/installer-all.Yykv0u/readback/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/40713b00ce12-8e8d85531e805fea0c83e01c45d4a7a944dd50e65389ceb61dc1bf62dfbcd796.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-8e8d85531e805fea0c83e01c45d4a7a944dd50e65389ceb61dc1bf62dfbcd796.vcdiff",
+      "sha256": "d329cceb31301c0cc72ef8a828b26701ed87ca791de5c793b24d677afc75e0f3",
+      "mode": "0o644",
+      "bytes": 13105050
+    },
+    {
+      "path": "localization/work/installer-discovery.jx49dN/unpacked/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/40713b00ce12-8e8d85531e805fea0c83e01c45d4a7a944dd50e65389ceb61dc1bf62dfbcd796.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-8e8d85531e805fea0c83e01c45d4a7a944dd50e65389ceb61dc1bf62dfbcd796.vcdiff",
+      "sha256": "d329cceb31301c0cc72ef8a828b26701ed87ca791de5c793b24d677afc75e0f3",
+      "mode": "0o644",
+      "bytes": 13105050
+    },
+    {
+      "path": "localization/work/installer-discovery.jx49dN/win-payload/LocalizationPayload/Deltas/c8ce3f2e8f52-1c354240dcd01d83b23ea8c923c7642ff91a60df8c87c3e9ebb90866ea19dbd7.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/win-payload/LocalizationPayload/Deltas/c8ce3f2e8f52-1c354240dcd01d83b23ea8c923c7642ff91a60df8c87c3e9ebb90866ea19dbd7.vcdiff",
+      "sha256": "df406a80333589becb87ee9d968f56edf4b9d3fdccc210976d999094ab30069a",
+      "mode": "0o644",
+      "bytes": 13088078
+    },
+    {
+      "path": "localization/work/installer-all.Yykv0u/win-fixture-dist/Resources/LocalizationPayload/Deltas/c8ce3f2e8f52-1c354240dcd01d83b23ea8c923c7642ff91a60df8c87c3e9ebb90866ea19dbd7.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/win-payload/LocalizationPayload/Deltas/c8ce3f2e8f52-1c354240dcd01d83b23ea8c923c7642ff91a60df8c87c3e9ebb90866ea19dbd7.vcdiff",
+      "sha256": "df406a80333589becb87ee9d968f56edf4b9d3fdccc210976d999094ab30069a",
+      "mode": "0o644",
+      "bytes": 13088078
+    },
+    {
+      "path": "localization/work/WindowsDialogueGame/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-choice-probe-v2.assets",
+      "sha256": "e1c8e1b2139ecf2db53b03ca2497ddd1d024a4ef24d17c5675c5f6c1732e6c09",
+      "mode": "0o644",
+      "bytes": 106460568
+    },
+    {
+      "path": "localization/work/WindowsGameProbe/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-choice-probe-v2.assets",
+      "sha256": "e1c8e1b2139ecf2db53b03ca2497ddd1d024a4ef24d17c5675c5f6c1732e6c09",
+      "mode": "0o644",
+      "bytes": 106460568
+    },
+    {
+      "path": "localization/work/WindowsPauseUIGame/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-choice-probe-v2.assets",
+      "sha256": "e1c8e1b2139ecf2db53b03ca2497ddd1d024a4ef24d17c5675c5f6c1732e6c09",
+      "mode": "0o644",
+      "bytes": 106460568
+    },
+    {
+      "path": "localization/work/WindowsSettingsCombinedGame/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-choice-probe-v2.assets",
+      "sha256": "e1c8e1b2139ecf2db53b03ca2497ddd1d024a4ef24d17c5675c5f6c1732e6c09",
+      "mode": "0o644",
+      "bytes": 106460568
+    },
+    {
+      "path": "localization/work/WindowsSettingsGame/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-choice-probe-v2.assets",
+      "sha256": "e1c8e1b2139ecf2db53b03ca2497ddd1d024a4ef24d17c5675c5f6c1732e6c09",
+      "mode": "0o644",
+      "bytes": 106460568
+    },
+    {
+      "path": "localization/work/WindowsSlotGame/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-choice-probe-v2.assets",
+      "sha256": "e1c8e1b2139ecf2db53b03ca2497ddd1d024a4ef24d17c5675c5f6c1732e6c09",
+      "mode": "0o644",
+      "bytes": 106460568
+    },
+    {
+      "path": "localization/work/transition-unity-20261109.G2AxDU/win-conrad-game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-choice-probe-v2.assets",
+      "sha256": "e1c8e1b2139ecf2db53b03ca2497ddd1d024a4ef24d17c5675c5f6c1732e6c09",
+      "mode": "0o644",
+      "bytes": 106460568
+    },
+    {
+      "path": "localization/work/WindowsSettingsCombinedGame/DragNWash_Data/sharedassets0.assets",
+      "source": "localization/work/windows-settings-ui-combined.assets",
+      "sha256": "e479937dc88454838fa9995f06312b72bae88d9f6aa8adfeadc829ebb20e55a0",
+      "mode": "0o644",
+      "bytes": 1936992
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-inline-speaker-plans/ar/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/ar/windows/sharedassets0.assets",
+      "sha256": "e64665560ba633c222675cb7333a55d6c60f3659e6dfb114833205baf435d4ce",
+      "mode": "0o644",
+      "bytes": 2188536
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-paragraphs/ar/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/ar/windows/sharedassets0.assets",
+      "sha256": "e64665560ba633c222675cb7333a55d6c60f3659e6dfb114833205baf435d4ce",
+      "mode": "0o644",
+      "bytes": 2188536
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-reveal/ar/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/ar/windows/sharedassets0.assets",
+      "sha256": "e64665560ba633c222675cb7333a55d6c60f3659e6dfb114833205baf435d4ce",
+      "mode": "0o644",
+      "bytes": 2188536
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl/ar/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/ar/windows/sharedassets0.assets",
+      "sha256": "e64665560ba633c222675cb7333a55d6c60f3659e6dfb114833205baf435d4ce",
+      "mode": "0o644",
+      "bytes": 2188536
+    },
+    {
+      "path": "localization/work/WindowsWrapGame/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/windows-wrap-probe.assets",
+      "sha256": "e6605e17a5e8b44507dc72f157514649295ca7bfd4585831a83368e125dc7c32",
+      "mode": "0o644",
+      "bytes": 106460824
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-inline-speaker-plans/he/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/he/windows/sharedassets0.assets",
+      "sha256": "e809ac025e54def6c0076d495b25db0f0b2359396a972807db3cd5a04bed8937",
+      "mode": "0o644",
+      "bytes": 2530928
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-paragraphs/he/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/he/windows/sharedassets0.assets",
+      "sha256": "e809ac025e54def6c0076d495b25db0f0b2359396a972807db3cd5a04bed8937",
+      "mode": "0o644",
+      "bytes": 2530928
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl-reveal/he/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/he/windows/sharedassets0.assets",
+      "sha256": "e809ac025e54def6c0076d495b25db0f0b2359396a972807db3cd5a04bed8937",
+      "mode": "0o644",
+      "bytes": 2530928
+    },
+    {
+      "path": "localization/work/complex-renderer-20261110.nYJmC2/staged-rtl/he/windows/sharedassets0.assets",
+      "source": "localization/work/complex-renderer-20261110.nYJmC2/staged-all-plans/he/windows/sharedassets0.assets",
+      "sha256": "e809ac025e54def6c0076d495b25db0f0b2359396a972807db3cd5a04bed8937",
+      "mode": "0o644",
+      "bytes": 2530928
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/DragNWash-pl-draft.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/DragNWash-pl-draft-v2.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "ed90ab14e25253ec970cca6af72c30e42df5052f6330916f7bd1f4e1193c853f",
+      "mode": "0o644",
+      "bytes": 4426368
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/mac-retry/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/DragNWash-pl-draft-v2.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "ed90ab14e25253ec970cca6af72c30e42df5052f6330916f7bd1f4e1193c853f",
+      "mode": "0o644",
+      "bytes": 4426368
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/DragNWash-pl-draft-v2.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "ed90ab14e25253ec970cca6af72c30e42df5052f6330916f7bd1f4e1193c853f",
+      "mode": "0o644",
+      "bytes": 4426368
+    },
+    {
+      "path": "localization/work/installer-discovery.jx49dN/mac-payload/LocalizationPayload/Deltas/40713b00ce12-190b3765f0923a894318305eec31c83290f3b0a6adfec8e8aa4de4a52903bb99.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-190b3765f0923a894318305eec31c83290f3b0a6adfec8e8aa4de4a52903bb99.vcdiff",
+      "sha256": "f19e4a54b0a32e8b0c37c159b1b0570a257d1c3dd70d3919b631af86fb695f8d",
+      "mode": "0o644",
+      "bytes": 13105153
+    },
+    {
+      "path": "localization/work/installer-upload.ms8mti/prior-generated-resources/LocalizationPayload/Deltas/40713b00ce12-190b3765f0923a894318305eec31c83290f3b0a6adfec8e8aa4de4a52903bb99.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-190b3765f0923a894318305eec31c83290f3b0a6adfec8e8aa4de4a52903bb99.vcdiff",
+      "sha256": "f19e4a54b0a32e8b0c37c159b1b0570a257d1c3dd70d3919b631af86fb695f8d",
+      "mode": "0o644",
+      "bytes": 13105153
+    },
+    {
+      "path": "localization/work/installer-all.Yykv0u/readback/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/40713b00ce12-190b3765f0923a894318305eec31c83290f3b0a6adfec8e8aa4de4a52903bb99.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-190b3765f0923a894318305eec31c83290f3b0a6adfec8e8aa4de4a52903bb99.vcdiff",
+      "sha256": "f19e4a54b0a32e8b0c37c159b1b0570a257d1c3dd70d3919b631af86fb695f8d",
+      "mode": "0o644",
+      "bytes": 13105153
+    },
+    {
+      "path": "localization/work/installer-discovery.jx49dN/unpacked/Dragons \u2014 VN Revival.app/Contents/Resources/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources/LocalizationPayload/Deltas/40713b00ce12-190b3765f0923a894318305eec31c83290f3b0a6adfec8e8aa4de4a52903bb99.vcdiff",
+      "source": "localization/work/installer-all.Yykv0u/mac-payload/LocalizationPayload/Deltas/40713b00ce12-190b3765f0923a894318305eec31c83290f3b0a6adfec8e8aa4de4a52903bb99.vcdiff",
+      "sha256": "f19e4a54b0a32e8b0c37c159b1b0570a257d1c3dd70d3919b631af86fb695f8d",
+      "mode": "0o644",
+      "bytes": 13105153
+    },
+    {
+      "path": "localization/work/speaker-unity-background-20261109.X5dcpl/InlineSpeakerProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/speaker-graphics-background-20261109.Tvsodq/InlineSpeakerProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "f2833c739fe394a515eb6f0db51e294950704139b4944fe5d96e781bdfc7189e",
+      "mode": "0o644",
+      "bytes": 105908400
+    },
+    {
+      "path": "localization/work/DragNWash-SlotGlyphProbe.app/Contents/Resources/Data/level0",
+      "source": "localization/work/DragNWash-AtomicPublishProbe.app/Contents/Resources/Data/level0",
+      "sha256": "f5999a3a27e1144bf3083c9c622d9f20fae6cb7d0e5b261bb0c48b6e7d80eb62",
+      "mode": "0o644",
+      "bytes": 907040
+    },
+    {
+      "path": "localization/work/installer-all.Yykv0u/mac-fixture/Drag'N Wash.app/Contents/Resources/VNRevival/dragons-vnrevival/original-backup/sharedassets1.assets",
+      "source": "localization/work/fr-old-asset-compaction-20261110.Iri1RW/macos-stock-sharedassets1.assets",
+      "sha256": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+      "mode": "0o755",
+      "bytes": 105956608
+    },
+    {
+      "path": "localization/work/installer.NUdeks/mac-control/Drag'N Wash.app/Contents/Resources/VNRevival/dragons-vnrevival/original-backup/sharedassets1.assets",
+      "source": "localization/work/fr-old-asset-compaction-20261110.Iri1RW/macos-stock-sharedassets1.assets",
+      "sha256": "f8c5c51ac1b0cf151177c05ee1805e032cf62baf384bb664337a71b923bee7b8",
+      "mode": "0o755",
+      "bytes": 105956608
+    },
+    {
+      "path": "localization/work/DragNWash-SpeakerProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/speaker-probe2.assets",
+      "sha256": "fa1cffdd70ebdc89fd414fef00fd05a4f3bbea6c900dde01cbb0a34c60cb1d10",
+      "mode": "0o755",
+      "bytes": 105908424
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "fcf9dea5d26b845eb3d76af0256e19bb48b5240f0b8ceb190fda5829f2263a38",
+      "mode": "0o644",
+      "bytes": 4426160
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "fcf9dea5d26b845eb3d76af0256e19bb48b5240f0b8ceb190fda5829f2263a38",
+      "mode": "0o755",
+      "bytes": 4426160
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets0.assets",
+      "sha256": "fcf9dea5d26b845eb3d76af0256e19bb48b5240f0b8ceb190fda5829f2263a38",
+      "mode": "0o755",
+      "bytes": 4426160
+    }
+  ]
+}
