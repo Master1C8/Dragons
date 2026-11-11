@@ -600,6 +600,19 @@ the verified stock platform files:
 The recovery check verified the original fingerprints of all twelve
 outputs and nine source files.
 
+The [historical managed scan receipt](localization/evidence/archival-historical-managed-scan-outputs-20261111.json)
+pins 18 static reports for settings prefabs, presenter flow, Yarn and
+debug UI. For each scanner, use a separate empty build directory.
+Restore its `toolSource` as `Program.cs` from the probe source delta
+receipt below. Write `projectBlob` from Git to `scan.csproj` and check
+its hash. Build in Release with the recorded .NET SDK and Mono.Cecil.
+
+Run the compiled `scan.dll` with the verified stock Managed directory
+for `managed`. For `hashedFile`, pass the named stock DLL and its
+recorded SHA-256. For `taggedFile`, pass the stock DLL, the recorded tag
+and the SHA-256 in that order. Capture stdout, check the report hash and
+apply the recorded mode. All 18 reports matched byte for byte.
+
 The [historical .NET probe build receipt](localization/evidence/archival-historical-dotnet-probe-builds-20261111.json)
 pins 28 managed outputs whose source snapshots are in Git. Build with
 .NET SDK 8.0.131 and access to the recorded NuGet dependencies:

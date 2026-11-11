@@ -1,0 +1,213 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "sdk": "8.0.131",
+  "configuration": "Release",
+  "monoCecil": "0.11.6",
+  "monoCecilSha256": "831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf",
+  "projectBlob": "b99f7aa8cd35ecdeabd42b9a7116c0c62626ffaf",
+  "projectSha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a",
+  "sourceReceipt": "archival-retained-probe-source-deltas-20261111.json.gz",
+  "outputs": {
+    "localization/work/debug-ui-reachability-20261109.1GiwmL/macos-Assembly-CSharp.il": {
+      "toolSource": "localization/work/debug-ui-reachability-20261109.1GiwmL/probe/Program.cs",
+      "platform": "macos",
+      "args": {
+        "kind": "hashedFile",
+        "name": "Assembly-CSharp.dll",
+        "sha256": "f9c4ccc1b10f95270d6d0d63a5e150865a070eca353a6c16fa74930f993f7bcb"
+      },
+      "sha256": "968fbb252ada87d3fe069be1dd9f3f83322ee08fafe8114de9c1dc775a449c9e",
+      "bytes": 62344,
+      "mode": "0o644"
+    },
+    "localization/work/debug-ui-reachability-20261109.1GiwmL/macos-Unity.RenderPipelines.Core.Runtime-updater.il": {
+      "toolSource": "localization/work/debug-ui-reachability-20261109.1GiwmL/probe/Program.cs",
+      "platform": "macos",
+      "args": {
+        "kind": "hashedFile",
+        "name": "Unity.RenderPipelines.Core.Runtime.dll",
+        "sha256": "120ab52e9422f673a846702206efe900dfe8230a87f38cf698ff13dd86ae57c6"
+      },
+      "sha256": "842ee06a3dd028ee6b673f97a2d206abb5e4d0207f3af5e2241859a0ee7d1144",
+      "bytes": 106187,
+      "mode": "0o644"
+    },
+    "localization/work/debug-ui-reachability-20261109.1GiwmL/windows-Assembly-CSharp.il": {
+      "toolSource": "localization/work/debug-ui-reachability-20261109.1GiwmL/probe/Program.cs",
+      "platform": "windows",
+      "args": {
+        "kind": "hashedFile",
+        "name": "Assembly-CSharp.dll",
+        "sha256": "8b1b439e62bff222fbce00869a3343422c77d08e384db7ed323b5e66f44195e2"
+      },
+      "sha256": "af62abcd4e57e22af01dc1f3100a598e893779d4948ee8dbb19416e352df1664",
+      "bytes": 61887,
+      "mode": "0o644"
+    },
+    "localization/work/debug-ui-reachability-20261109.1GiwmL/windows-Unity.RenderPipelines.Core.Runtime-updater.il": {
+      "toolSource": "localization/work/debug-ui-reachability-20261109.1GiwmL/probe/Program.cs",
+      "platform": "windows",
+      "args": {
+        "kind": "hashedFile",
+        "name": "Unity.RenderPipelines.Core.Runtime.dll",
+        "sha256": "0edf7f466004eb162fb649d749773715729e797bf40805b0cbad1e81f4987017"
+      },
+      "sha256": "0686e308645ccd9fd03fc5a97d5e7cfe1f516ebf1999d228b96cef2511b4b96d",
+      "bytes": 106187,
+      "mode": "0o644"
+    },
+    "localization/work/presenter-template-flow-20261109.FIRHil/macos.txt": {
+      "toolSource": "localization/work/presenter-template-flow-20261109.FIRHil/Program.cs",
+      "platform": "macos",
+      "args": {
+        "kind": "managed"
+      },
+      "sha256": "54b94a090a8fd13bd84886b3065becd63e80f0d9e29e299eec711f520371b222",
+      "bytes": 214383,
+      "mode": "0o644"
+    },
+    "localization/work/presenter-template-flow-20261109.FIRHil/windows.txt": {
+      "toolSource": "localization/work/presenter-template-flow-20261109.FIRHil/Program.cs",
+      "platform": "windows",
+      "args": {
+        "kind": "managed"
+      },
+      "sha256": "64d718c834848687821ddf9096887cd4402339cb97f5a267e2bbaef01cff0576",
+      "bytes": 214580,
+      "mode": "0o644"
+    },
+    "localization/work/settings-prefab-flow-20261109.v8WmsL/macos-expanded.txt": {
+      "toolSource": "localization/work/settings-prefab-flow-20261109.v8WmsL/expanded/Program.cs",
+      "platform": "macos",
+      "args": {
+        "kind": "managed"
+      },
+      "sha256": "576167d91519cea865bf1237e86edc126ce587298fbe6a2d367ca58303d3a2d9",
+      "bytes": 337846,
+      "mode": "0o644"
+    },
+    "localization/work/settings-prefab-flow-20261109.v8WmsL/macos-menu.txt": {
+      "toolSource": "localization/work/settings-prefab-flow-20261109.v8WmsL/menu/Program.cs",
+      "platform": "macos",
+      "args": {
+        "kind": "managed"
+      },
+      "sha256": "19c4af2a624c71cdccaf4478fdd63bc07284fc78e5a825882a6eb62b46feeec5",
+      "bytes": 399607,
+      "mode": "0o644"
+    },
+    "localization/work/settings-prefab-flow-20261109.v8WmsL/macos.txt": {
+      "toolSource": "localization/work/settings-prefab-flow-20261109.v8WmsL/Program.cs",
+      "platform": "macos",
+      "args": {
+        "kind": "managed"
+      },
+      "sha256": "4e4578ced2122434d87427a5c1a067ca1bd00640b7258e7bdd2626b7647f6ed0",
+      "bytes": 193766,
+      "mode": "0o644"
+    },
+    "localization/work/settings-prefab-flow-20261109.v8WmsL/windows-expanded.txt": {
+      "toolSource": "localization/work/settings-prefab-flow-20261109.v8WmsL/expanded/Program.cs",
+      "platform": "windows",
+      "args": {
+        "kind": "managed"
+      },
+      "sha256": "53945345e4615c6899c05800b960e961adf6c340b0683463aa735635917842be",
+      "bytes": 338043,
+      "mode": "0o644"
+    },
+    "localization/work/settings-prefab-flow-20261109.v8WmsL/windows-menu.txt": {
+      "toolSource": "localization/work/settings-prefab-flow-20261109.v8WmsL/menu/Program.cs",
+      "platform": "windows",
+      "args": {
+        "kind": "managed"
+      },
+      "sha256": "01b12ee87acf5013aee8006a64d043fbb7cccbba0acb3377c99ecd14b4c6368a",
+      "bytes": 399029,
+      "mode": "0o644"
+    },
+    "localization/work/settings-prefab-flow-20261109.v8WmsL/windows.txt": {
+      "toolSource": "localization/work/settings-prefab-flow-20261109.v8WmsL/Program.cs",
+      "platform": "windows",
+      "args": {
+        "kind": "managed"
+      },
+      "sha256": "80b0f1cda6c4862fb628e181634f44ac75386ed12a05f64196962bc28fb49702",
+      "bytes": 193963,
+      "mode": "0o644"
+    },
+    "localization/work/yarn-command-diagnostics-20261109.sCmtxy/macos.txt": {
+      "toolSource": "localization/work/yarn-command-diagnostics-20261109.sCmtxy/Program.cs",
+      "platform": "macos",
+      "args": {
+        "kind": "managed"
+      },
+      "sha256": "7c4a9cccb9970b36b0da5ff0798c6fd4ef45de6337d482a827c66c5f35563e99",
+      "bytes": 203170,
+      "mode": "0o644"
+    },
+    "localization/work/yarn-command-diagnostics-20261109.sCmtxy/windows.txt": {
+      "toolSource": "localization/work/yarn-command-diagnostics-20261109.sCmtxy/Program.cs",
+      "platform": "windows",
+      "args": {
+        "kind": "managed"
+      },
+      "sha256": "b9bd7b6867faadfca794cf8622b575ffa5d5aca9602f626d747fbd16e94b7eb8",
+      "bytes": 203367,
+      "mode": "0o644"
+    },
+    "localization/work/yarn-save-boundary-20261110.bDCIbl/macos-game-v2.il": {
+      "toolSource": "localization/work/yarn-save-boundary-20261110.bDCIbl/Program.cs",
+      "platform": "macos",
+      "args": {
+        "kind": "taggedFile",
+        "name": "Assembly-CSharp.dll",
+        "tag": "game",
+        "sha256": "f9c4ccc1b10f95270d6d0d63a5e150865a070eca353a6c16fa74930f993f7bcb"
+      },
+      "sha256": "ba5084a18ee4e0a7b231339bfaf4a7b6846e5305d5ef189f0f279bf38aa59db4",
+      "bytes": 101958,
+      "mode": "0o644"
+    },
+    "localization/work/yarn-save-boundary-20261110.bDCIbl/macos-yarn.il": {
+      "toolSource": "localization/work/yarn-save-boundary-20261110.bDCIbl/Program.cs",
+      "platform": "macos",
+      "args": {
+        "kind": "taggedFile",
+        "name": "YarnSpinner.Unity.dll",
+        "tag": "yarn",
+        "sha256": "54953f9c071aa3ca5b52eb8b12b8e0bedc73f7665a506c61acbef0c58ac340ef"
+      },
+      "sha256": "f845fa4127389c15ad621719d6dd302aefa8a1a170d312e6e093a1d3cea0bb06",
+      "bytes": 54671,
+      "mode": "0o644"
+    },
+    "localization/work/yarn-save-boundary-20261110.bDCIbl/windows-game-v2.il": {
+      "toolSource": "localization/work/yarn-save-boundary-20261110.bDCIbl/Program.cs",
+      "platform": "windows",
+      "args": {
+        "kind": "taggedFile",
+        "name": "Assembly-CSharp.dll",
+        "tag": "game",
+        "sha256": "8b1b439e62bff222fbce00869a3343422c77d08e384db7ed323b5e66f44195e2"
+      },
+      "sha256": "7bc77a23eac6d6af6cd3305a8f64c11b4e7a5d272225795712cb74591809e116",
+      "bytes": 113807,
+      "mode": "0o644"
+    },
+    "localization/work/yarn-save-boundary-20261110.bDCIbl/windows-yarn.il": {
+      "toolSource": "localization/work/yarn-save-boundary-20261110.bDCIbl/Program.cs",
+      "platform": "windows",
+      "args": {
+        "kind": "taggedFile",
+        "name": "YarnSpinner.Unity.dll",
+        "tag": "yarn",
+        "sha256": "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d"
+      },
+      "sha256": "6e784a6198bc87d98477138000c8394e4a6eb050f432794adc0b36e4e6affdd5",
+      "bytes": 54671,
+      "mode": "0o644"
+    }
+  }
+}
