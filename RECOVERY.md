@@ -515,6 +515,39 @@ uses the same helper with the macOS and Windows stock roots. It covers
 files. The recovery check copied every recorded file and verified its
 size, SHA-256 and mode.
 
+The [historical stock cleanup index](localization/evidence/archival-stock-cleanup-log-20261111.json.gz)
+retains the earlier 3,867 removal records with paths relative to their
+recorded source roots. To reproduce the exact workstation log, pass the
+original macOS stock app, Windows stock game and historical Russian build
+directory paths in that order, then a fresh output file. The paths are
+used as text, so reproducing the log does not require those directories
+to exist.
+
+```sh
+python3.12 - "$original_macos_app" "$original_windows_game" \
+  "$original_russian_build" "$fresh_log" <<'PY'
+import gzip, hashlib, json, sys
+from pathlib import Path
+
+with gzip.open("localization/evidence/archival-stock-cleanup-log-20261111.json.gz", "rt") as stream:
+    receipt = json.load(stream)
+roots = dict(zip(("macosStock", "windowsStock", "historicalRussianBuild"), map(Path, sys.argv[1:4])))
+lines = (
+    json.dumps(dict(removed=target, source=str(roots[kind] / source), sha256=digest, bytes=size))
+    for target, kind, source, digest, size in receipt["rows"]
+)
+data = ("\n".join(lines) + "\n").encode()
+expected = receipt["sourceLog"]
+assert len(data) == expected["bytes"] and hashlib.sha256(data).hexdigest() == expected["sha256"]
+output = Path(sys.argv[4])
+with output.open("xb") as stream:
+    stream.write(data)
+output.chmod(int(expected["mode"], 8))
+PY
+```
+
+The check reproduced the original log byte for byte and matched its mode.
+
 The [installer copy receipt](localization/evidence/archival-installer-resource-copies-20261111.json.gz)
 maps generated payload copies in old installer work directories to identical
 files in the accepted 0.2.1 installer archives. Use the same helper and
