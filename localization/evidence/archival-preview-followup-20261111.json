@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "helper": "~/.codex/tools/screenshot_preview.py",
+  "helperSha256": "5e87a67ec4f409ad8bd8ecc6f321335f0b521fe14c835d8cf9dabf9f195f97b6",
+  "pillow": "13.0.0",
+  "libwebp": "1.6.0",
+  "archives": {
+    "Dragons-qa-copy-sources.zip": {
+      "sha256": "7df29ec0b31a51d2b50c23334c9cca53edae05f1f473078a56f227a619464d2a",
+      "draftRelease": "recovery-inputs-v0.2.1"
+    }
+  },
+  "outputs": {
+    "localization/work/ru-ryan-pilot.uptm5K/review/ru-01-ryan-dialogue.webp": {
+      "source": {
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/0d1710121ebadde28a8f21e850036029ed71b6275954f51502f7339013d77a76.png",
+        "sha256": "0d1710121ebadde28a8f21e850036029ed71b6275954f51502f7339013d77a76",
+        "path": "localization/work/ru-ryan-pilot.uptm5K/choice/capture-ryan-dialogue.png"
+      },
+      "crop": null,
+      "sha256": "279b69cde20f4ce7e6441a20fe4f86f7ab1920f06b2e6c28680f95b5e0e7e514",
+      "bytes": 18592,
+      "mode": "0o644",
+      "dimensions": [
+        1280,
+        800
+      ]
+    },
+    "localization/work/ru-ryan-wash.Axd7AS/review/ru-05-ryan-wash.webp": {
+      "source": {
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/5a8448b322eb618637b4b78d92f8bf2b337529ec15a44cb8e985b5a3f19a0de4.png",
+        "sha256": "5a8448b322eb618637b4b78d92f8bf2b337529ec15a44cb8e985b5a3f19a0de4",
+        "path": "localization/work/ru-ryan-wash.Axd7AS/clean/capture-ryan-wash.png"
+      },
+      "crop": null,
+      "sha256": "5cd2c0d90ea58a2b3a647f82128d870fdcbbe253f3823adcf4b6970e44ceb976",
+      "bytes": 81164,
+      "mode": "0o644",
+      "dimensions": [
+        1280,
+        800
+      ]
+    },
+    "localization/work/ru-ryan-wash.Axd7AS/run/wash-with-hud.webp": {
+      "source": {
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/b49cf661298f972ba8c5013b2871e40a29bac0ca87dde2530783a7c9feeb2d80.png",
+        "sha256": "b49cf661298f972ba8c5013b2871e40a29bac0ca87dde2530783a7c9feeb2d80",
+        "path": "localization/work/ru-ryan-wash.Axd7AS/run/capture-ryan-wash.png"
+      },
+      "crop": null,
+      "sha256": "00d6a532ad1a951de43632fa7c3e01b7e6bd8d7b791aa0f818467aa1b2c76a47",
+      "bytes": 64570,
+      "mode": "0o644",
+      "dimensions": [
+        1280,
+        800
+      ]
+    },
+    "localization/work/ru-screenshot-pilot.JV4y1Y/review/ru-03-dialogue.webp": {
+      "source": {
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/b3ceccb072eeb994b0ef019c7ce0be2a8113d30e78cae15db10175dec8cb12ac.png",
+        "sha256": "b3ceccb072eeb994b0ef019c7ce0be2a8113d30e78cae15db10175dec8cb12ac",
+        "path": "localization/work/ru-screenshot-pilot.JV4y1Y/dialogue-run/capture-long.png"
+      },
+      "crop": null,
+      "sha256": "2adae6153e0ec3e6b2ce7bcf4db79fb2dc50eec112da7547cb32c1e3be52d8e2",
+      "bytes": 74030,
+      "mode": "0o644",
+      "dimensions": [
+        1280,
+        800
+      ]
+    },
+    "localization/work/screenshot-review.I5EEsi/final/ar-settings-dropdowns.webp": {
+      "source": {
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/b570bb3c321c24b2364e6b6b34e625fbaec93d24a8de09462d9afffbbcf39195.png",
+        "sha256": "b570bb3c321c24b2364e6b6b34e625fbaec93d24a8de09462d9afffbbcf39195",
+        "path": "localization/work/screenshot-batch.B7ouXK/png/ar-01-settings.png"
+      },
+      "crop": [
+        900,
+        426,
+        156,
+        275
+      ],
+      "sha256": "12f266db56ab4bba22d6beebc9ba5c04d7a76ebef4862bfba5ce22e8b82917d3",
+      "bytes": 1632,
+      "mode": "0o644",
+      "dimensions": [
+        156,
+        275
+      ]
+    }
+  }
+}

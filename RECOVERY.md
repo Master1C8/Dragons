@@ -723,6 +723,13 @@ preview helper with the recorded Pillow and libwebp versions. Check
 the output hash and apply its recorded mode. All 30 previews matched
 byte for byte from the downloaded source archive.
 
+The [preview follow-up receipt](localization/evidence/archival-preview-followup-20261111.json)
+uses the same helper for five additional WebP files. Download the named
+archive, verify its hash and extract the recorded PNG member. Verify the
+PNG hash and pass `--crop X Y WIDTH HEIGHT` only for an entry with a
+recorded crop. Verify the output hash and apply the recorded mode.
+All five outputs matched byte for byte.
+
 The [binary copy receipt](localization/evidence/archival-binary-copies-20261111.json.gz)
 maps historical executable and library copies to exact files in the stock
 game, accepted installers, installed CrossOver, owned Windows runtime, or
