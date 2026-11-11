@@ -1887,6 +1887,12 @@ PY
 Run the stream recovery command with the same fresh directory as
 `--journal-root`. Both streams matched using the downloaded index.
 
+The [split output receipt](localization/evidence/archival-cli-event-stream-split-output-20261111.json)
+uses the same command for five more streams. The index pins ranges of
+text in the original Codex journal records. The helper verifies each
+journal prefix before joining the ranges in their recorded order.
+All five streams matched byte for byte using the downloaded index.
+
 The [CLI report excerpt receipt](localization/evidence/archival-cli-report-excerpts-20261111.json.gz)
 maps 42 historical files to exact byte ranges in retained local command
 output. Restore any missing source stream using its stream receipt

@@ -23,6 +23,16 @@ def references(events):
                 yield value['reference']
 
 
+def journal_slices(events):
+    for event in events:
+        for value in event.get('item', {}).values():
+            if isinstance(value, dict) and value.keys() == {'outputParts'}:
+                for part in value['outputParts']:
+                    if part.keys() == {'journalSlice'}:
+                        yield part['journalSlice']
+
+
+
 def read_records(journal_root, journal, offsets):
     path = journal_root / relative_path(journal['path'])
     if path.resolve() != path or not path.is_relative_to(journal_root / 'sessions'):
@@ -65,7 +75,7 @@ def resolve(reference, records):
     return ''.join(parts)
 
 
-def rebuild(row, events, records, *, journal_root=None):
+def rebuild(row, events, records, *, journal_root=None, slice_records=None):
     git_blobs = {}
     documents = {}
 
@@ -111,6 +121,16 @@ def rebuild(row, events, records, *, journal_root=None):
             return git_text(part['git'])
         if part.keys() == {'document'}:
             return document_text(part['document'])
+        if part.keys() == {'journalSlice'}:
+            source = part['journalSlice']
+            if slice_records is None:
+                raise ValueError('Supply the records for CLI journal output ranges')
+            text = resolve([[source['offset'], *source['fields']]], slice_records[source['journal']])
+            start = source['start']
+            end = start + source['length']
+            if not isinstance(text, str) or not 0 <= start < end <= len(text):
+                raise ValueError('Unexpected CLI journal output range')
+            return text[start:end]
         raise ValueError('Unexpected CLI output source')
 
     def field_value(value):
@@ -154,7 +174,14 @@ def main():
     journal = index['journals'][stream['journal']]
     journal_root = args.journal_root.resolve(strict=True)
     records = read_records(journal_root, journal, offsets)
-    data = rebuild(row, stream['events'], records, journal_root=journal_root)
+    slice_offsets = {}
+    for source in journal_slices(stream['events']):
+        slice_offsets.setdefault(source['journal'], set()).add(source['offset'])
+    slice_records = {
+        key: read_records(journal_root, index['journals'][key], selected_offsets)
+        for key, selected_offsets in slice_offsets.items()
+    }
+    data = rebuild(row, stream['events'], records, journal_root=journal_root, slice_records=slice_records)
     with args.output.open('xb') as out:
         out.write(data)
     args.output.chmod(int(row['mode'], 8))
