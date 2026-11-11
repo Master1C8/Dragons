@@ -406,6 +406,9 @@ their directory as `--recovery-archives` to `restore_archived_members.py`.
 Pass the owned bottle's `drive_c/windows` directory as
 `--crossover-windows` for the system copies. The helper verifies the
 size and hash of each restored member and applies its recorded mode.
+The [additional system copy receipt](localization/evidence/archival-runtime-system-copies-20261111.json.gz)
+uses the same option. All 272 copies matched files restored independently
+from the owned Steam and GOG Galaxy bottles.
 
 The [remaining stock runtime copy receipt](localization/evidence/archival-stock-runtime-copies-20261111.json.gz)
 uses the same helper with the macOS and Windows stock roots. It covers
@@ -425,6 +428,13 @@ Restore them with the same helper and the relevant probe path. The check
 restored and verified every duplicate by SHA-256 and mode.
 If the source is an accepted upload PNG, restore it first from the gallery
 source PNG archive described below.
+The [QA copy source receipt](localization/evidence/archival-qa-copy-sources-20261111.json.gz)
+maps 213 source files used by 371 rows in the image copy receipt.
+Download `Dragons-qa-copy-sources.zip` from the maintainer draft and check
+the archive SHA-256. Create the recorded parent directories for the needed
+source paths. Restore those sources first with `restore_archived_members.py`
+and `--recovery-archives`, then run the image copy receipt for the
+dependent paths. The recovery check verified all 213 source hashes and modes.
 For an image whose hash is cited by the historical QA documents, use the
 [referenced QA image receipt](localization/evidence/archival-referenced-qa-images-20261111.json.gz).
 Download its archive from the maintainer draft, verify its SHA-256 and
