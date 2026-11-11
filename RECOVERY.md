@@ -530,6 +530,14 @@ verify its SHA-256 and restore the needed original with
 the preview. The check restored every original from the downloaded
 archive and reproduced all 31 WebP hashes.
 
+The [review queue preview receipt](localization/evidence/archival-review-preview-projections-20261111.json)
+pins 30 additional WebP previews. Download the QA copy source ZIP from
+the maintainer draft and check its hash against the receipt. Extract the
+recorded `source.member`, verify `source.sha256`, and run the same
+preview helper with the recorded Pillow and libwebp versions. Check
+the output hash and apply its recorded mode. All 30 previews matched
+byte for byte from the downloaded source archive.
+
 The [binary copy receipt](localization/evidence/archival-binary-copies-20261111.json.gz)
 maps historical executable and library copies to exact files in the stock
 game, accepted installers, installed CrossOver, owned Windows runtime, or

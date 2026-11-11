@@ -1,0 +1,343 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "helper": "~/.codex/tools/screenshot_preview.py",
+  "helperSha256": "5e87a67ec4f409ad8bd8ecc6f321335f0b521fe14c835d8cf9dabf9f195f97b6",
+  "pillow": "13.0.0",
+  "libwebp": "1.6.0",
+  "archiveSha256": {
+    "Dragons-qa-copy-sources.zip": "7df29ec0b31a51d2b50c23334c9cca53edae05f1f473078a56f227a619464d2a"
+  },
+  "outputs": {
+    "localization/work/de-32091d1-runtime-20261110.SIKWQZ/review-queue.previews/images/1e2d98f47873fe58e2941a5080001b00401880f9a9e4575c358efd3b1424a916.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/1e2d98f47873fe58e2941a5080001b00401880f9a9e4575c358efd3b1424a916.png",
+        "sha256": "1e2d98f47873fe58e2941a5080001b00401880f9a9e4575c358efd3b1424a916"
+      },
+      "sha256": "17015ef8b4577c73f4eefef93a0a9412b10242d9688122b8ea67772e31d8a2a8",
+      "bytes": 29882,
+      "mode": "0o644"
+    },
+    "localization/work/de-32091d1-runtime-20261110.SIKWQZ/review-queue.previews/images/2c444a1997388095939bc08e89a375bd97603da2b549f0737811803cbb7d9a2b.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/2c444a1997388095939bc08e89a375bd97603da2b549f0737811803cbb7d9a2b.png",
+        "sha256": "2c444a1997388095939bc08e89a375bd97603da2b549f0737811803cbb7d9a2b"
+      },
+      "sha256": "bba37796a986d31a424ea6155fa4e4b442bc9dbfc73330ab3b9be3f19f295740",
+      "bytes": 58728,
+      "mode": "0o644"
+    },
+    "localization/work/de-32091d1-runtime-20261110.SIKWQZ/review-queue.previews/images/31aabdacc70ec212d6f3f5c93d65244ba209c782d6bb702c1e4a4a9164323bd5.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/31aabdacc70ec212d6f3f5c93d65244ba209c782d6bb702c1e4a4a9164323bd5.png",
+        "sha256": "31aabdacc70ec212d6f3f5c93d65244ba209c782d6bb702c1e4a4a9164323bd5"
+      },
+      "sha256": "009e07c094a5b13fe9745c6e2f2cb7907c6209c5d67f01745bf90f54468c4ebf",
+      "bytes": 28096,
+      "mode": "0o644"
+    },
+    "localization/work/de-32091d1-runtime-20261110.SIKWQZ/review-queue.previews/images/4212a2f79c07b06604c0f85407532a76942cb41b68f50a330d287bc57d98afc4.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/4212a2f79c07b06604c0f85407532a76942cb41b68f50a330d287bc57d98afc4.png",
+        "sha256": "4212a2f79c07b06604c0f85407532a76942cb41b68f50a330d287bc57d98afc4"
+      },
+      "sha256": "8e7003454120d41badd660a4f713481e456309314643b7a9dd84336a6c1fb0a9",
+      "bytes": 56092,
+      "mode": "0o644"
+    },
+    "localization/work/de-32091d1-runtime-20261110.SIKWQZ/review-queue.previews/images/65839b797d69872f625d9d884f07b2a18080456428944aa7e6c85fc586ce561a.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/65839b797d69872f625d9d884f07b2a18080456428944aa7e6c85fc586ce561a.png",
+        "sha256": "65839b797d69872f625d9d884f07b2a18080456428944aa7e6c85fc586ce561a"
+      },
+      "sha256": "05019b47c953a406e9f610bc82dd1e2a24d81fa7347a1bb1171a58fcbb8c61c9",
+      "bytes": 56186,
+      "mode": "0o644"
+    },
+    "localization/work/de-32091d1-runtime-20261110.SIKWQZ/review-queue.previews/images/6750893c33097ef5854376da22385e5fd15a328884183489d8dc91e5107728e9.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/6750893c33097ef5854376da22385e5fd15a328884183489d8dc91e5107728e9.png",
+        "sha256": "6750893c33097ef5854376da22385e5fd15a328884183489d8dc91e5107728e9"
+      },
+      "sha256": "f74e0ec299ac688242d99a4a9b3399a64565fc099673d60edb563b6e53095e45",
+      "bytes": 57720,
+      "mode": "0o644"
+    },
+    "localization/work/de-32091d1-runtime-20261110.SIKWQZ/review-queue.previews/images/895847a60cf52c787a29e96a8a734c311afc6d8c7969a84605672336d768fff3.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/895847a60cf52c787a29e96a8a734c311afc6d8c7969a84605672336d768fff3.png",
+        "sha256": "895847a60cf52c787a29e96a8a734c311afc6d8c7969a84605672336d768fff3"
+      },
+      "sha256": "80417f22b2de2abe2313e78032eec495d872cb33df3cb2a9d8fba3812694f64c",
+      "bytes": 29340,
+      "mode": "0o644"
+    },
+    "localization/work/de-32091d1-runtime-20261110.SIKWQZ/review-queue.previews/images/b5bf96973a27529e3fb0218825379f89f035644c23b5bffe85740764c7a9c366.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/b5bf96973a27529e3fb0218825379f89f035644c23b5bffe85740764c7a9c366.png",
+        "sha256": "b5bf96973a27529e3fb0218825379f89f035644c23b5bffe85740764c7a9c366"
+      },
+      "sha256": "1d5a7d965d38ffa8c58828c2cb924d51669039248f0bcabb3b41b0fe4453244f",
+      "bytes": 29222,
+      "mode": "0o644"
+    },
+    "localization/work/de-32091d1-runtime-20261110.SIKWQZ/review-queue.previews/images/c35a2d6c91923cca22032854a55e41afc90b54900c7ee37359b1582218db0a0f.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/c35a2d6c91923cca22032854a55e41afc90b54900c7ee37359b1582218db0a0f.png",
+        "sha256": "c35a2d6c91923cca22032854a55e41afc90b54900c7ee37359b1582218db0a0f"
+      },
+      "sha256": "7ed705307733b736c951287f5e6a047bbb08f7e66aa57ed74252afd697377834",
+      "bytes": 56522,
+      "mode": "0o644"
+    },
+    "localization/work/de-32091d1-runtime-20261110.SIKWQZ/review-queue.previews/images/c877a80a49b6d25a81b4e9c0df5f73c46742ab72041f7653fef236c27654c811.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/c877a80a49b6d25a81b4e9c0df5f73c46742ab72041f7653fef236c27654c811.png",
+        "sha256": "c877a80a49b6d25a81b4e9c0df5f73c46742ab72041f7653fef236c27654c811"
+      },
+      "sha256": "b6521178ab2676d46d7da1d96891dc5fc62569b9111ad4751eb510c4ae5de352",
+      "bytes": 29098,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/review-prepared/images/4fcf9ad83a0e3265e966837c3efd4711e0b711734f7dbf92217bbac16befc98c.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/4fcf9ad83a0e3265e966837c3efd4711e0b711734f7dbf92217bbac16befc98c.png",
+        "sha256": "4fcf9ad83a0e3265e966837c3efd4711e0b711734f7dbf92217bbac16befc98c"
+      },
+      "sha256": "0cbc31e28f561c0a082baeffe4cd006d7aa4533d19fddb9ffed9f7725cfd7140",
+      "bytes": 56108,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/review-prepared/images/55188142dc9b697853ee69caa9087b72058a96399ca94a4f375c73a18ef64e64.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/55188142dc9b697853ee69caa9087b72058a96399ca94a4f375c73a18ef64e64.png",
+        "sha256": "55188142dc9b697853ee69caa9087b72058a96399ca94a4f375c73a18ef64e64"
+      },
+      "sha256": "f549a0efbe17212a49a459186f2971a36ab1043307e312a7ee06b5f98cb51b98",
+      "bytes": 57312,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/review-prepared/images/560e85eca3b59f0fb8ecbe7b7f38fb0fe316811dbebe9b813fbdc1072875326e.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/560e85eca3b59f0fb8ecbe7b7f38fb0fe316811dbebe9b813fbdc1072875326e.png",
+        "sha256": "560e85eca3b59f0fb8ecbe7b7f38fb0fe316811dbebe9b813fbdc1072875326e"
+      },
+      "sha256": "24412eac63ab8e27f4caf3ab0c63fd31edb05bcca60b22722b1fc9e35d101c39",
+      "bytes": 29658,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/review-prepared/images/5e7c2b33abb1924381da3afc1c583d79caf09c2293340f7313b43ce0440c0f75.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/5e7c2b33abb1924381da3afc1c583d79caf09c2293340f7313b43ce0440c0f75.png",
+        "sha256": "5e7c2b33abb1924381da3afc1c583d79caf09c2293340f7313b43ce0440c0f75"
+      },
+      "sha256": "d0cebf4fc221a5ed5cc4911b6fabeef3e73cdf3a07ac494a38d3942070a7a1c5",
+      "bytes": 29638,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/review-prepared/images/7751c28de04add64661b0284d01f26ef23ac372d45d99715ee6f0132eba8de19.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/7751c28de04add64661b0284d01f26ef23ac372d45d99715ee6f0132eba8de19.png",
+        "sha256": "7751c28de04add64661b0284d01f26ef23ac372d45d99715ee6f0132eba8de19"
+      },
+      "sha256": "7fb994b441fb40408e4de1f96247d22638314c521cfc368b38f6a09f0eb61724",
+      "bytes": 29842,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/review-prepared/images/c5ad4f3e76b673f1c21930c7f0c37fce6d3a09a8be33fe96d235c7094ef17a32.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/c5ad4f3e76b673f1c21930c7f0c37fce6d3a09a8be33fe96d235c7094ef17a32.png",
+        "sha256": "c5ad4f3e76b673f1c21930c7f0c37fce6d3a09a8be33fe96d235c7094ef17a32"
+      },
+      "sha256": "73000bbd49f33e95fe9bca95f7c01dfa3b84dfefdb4d023f688f46414f46d8f3",
+      "bytes": 29954,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/review-prepared/images/ca32b32096220f765987bdadb78b6c76fa91c4cece211d721d49584ed84f7a3d.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/ca32b32096220f765987bdadb78b6c76fa91c4cece211d721d49584ed84f7a3d.png",
+        "sha256": "ca32b32096220f765987bdadb78b6c76fa91c4cece211d721d49584ed84f7a3d"
+      },
+      "sha256": "6a396131cde07a6eb7ef26f6fb581e1fd257a79b7f46ff8769cbbf21f9a56056",
+      "bytes": 56502,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/review-prepared/images/dbf4bf1be259365f2433fb039d8f8a96e05019099227ba40384e7c909a4ecb6c.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/dbf4bf1be259365f2433fb039d8f8a96e05019099227ba40384e7c909a4ecb6c.png",
+        "sha256": "dbf4bf1be259365f2433fb039d8f8a96e05019099227ba40384e7c909a4ecb6c"
+      },
+      "sha256": "3dd7a4d6cfabf473747d9dc737914b0fa341744b0dc30f34b5bdc8450e59d0a9",
+      "bytes": 56352,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/review-prepared/images/e7a0f592d0b9e0b4c1f93a9f38650032355a3a6d2b5454bcb83261d10161e339.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/e7a0f592d0b9e0b4c1f93a9f38650032355a3a6d2b5454bcb83261d10161e339.png",
+        "sha256": "e7a0f592d0b9e0b4c1f93a9f38650032355a3a6d2b5454bcb83261d10161e339"
+      },
+      "sha256": "f19bf6ad7c5fc5e27525c17bdd4a860c7daecab0f181a7bbdc7fc84de9f93619",
+      "bytes": 30180,
+      "mode": "0o644"
+    },
+    "localization/work/fr-75f0df0-runtime-20261110.l2vjQe/retry.03sd5t/review-prepared/images/fac88995fd3a6f3603bcc1eaf9860f4120f6de97db7a6d2022706d1a0018bec7.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/fac88995fd3a6f3603bcc1eaf9860f4120f6de97db7a6d2022706d1a0018bec7.png",
+        "sha256": "fac88995fd3a6f3603bcc1eaf9860f4120f6de97db7a6d2022706d1a0018bec7"
+      },
+      "sha256": "f91700d0f33df0bee2ccd99224dcc318280f680157e0660109bd08fa01a23787",
+      "bytes": 56686,
+      "mode": "0o644"
+    },
+    "localization/work/pl-7714bd2-runtime-20261110.MbK1dB/review-queue.previews/images/032106d66cb16054a3cfdb3e42063ae2f4f4754d90e91d2b2fe13dea6ceccbff.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/032106d66cb16054a3cfdb3e42063ae2f4f4754d90e91d2b2fe13dea6ceccbff.png",
+        "sha256": "032106d66cb16054a3cfdb3e42063ae2f4f4754d90e91d2b2fe13dea6ceccbff"
+      },
+      "sha256": "7745b77b5ddbc477da94ece48de607e365f27a984f31051961a74eeec53afe84",
+      "bytes": 55566,
+      "mode": "0o644"
+    },
+    "localization/work/pl-7714bd2-runtime-20261110.MbK1dB/review-queue.previews/images/035719a9cb8c031dcd53b8d076fcd8283aaaef3fbb1ea720c7c2faf81fbe6b6a.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/035719a9cb8c031dcd53b8d076fcd8283aaaef3fbb1ea720c7c2faf81fbe6b6a.png",
+        "sha256": "035719a9cb8c031dcd53b8d076fcd8283aaaef3fbb1ea720c7c2faf81fbe6b6a"
+      },
+      "sha256": "b597b33ace93194bcc05b4bfe35aef35e9d580f84936329042d1bef254346f00",
+      "bytes": 53548,
+      "mode": "0o644"
+    },
+    "localization/work/pl-7714bd2-runtime-20261110.MbK1dB/review-queue.previews/images/05552840a8031029ce2f30adfb95d55411e9f5e0758d0593fa31496948b40bff.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/05552840a8031029ce2f30adfb95d55411e9f5e0758d0593fa31496948b40bff.png",
+        "sha256": "05552840a8031029ce2f30adfb95d55411e9f5e0758d0593fa31496948b40bff"
+      },
+      "sha256": "9603fdfc8b67d431152e195325032c4ccd48a65c0386093c02d74f6c176503c7",
+      "bytes": 53680,
+      "mode": "0o644"
+    },
+    "localization/work/pl-7714bd2-runtime-20261110.MbK1dB/review-queue.previews/images/12080f405f0355d8c580029e43e9ec0088f808a77a5a087c4583db83107cd3e2.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/12080f405f0355d8c580029e43e9ec0088f808a77a5a087c4583db83107cd3e2.png",
+        "sha256": "12080f405f0355d8c580029e43e9ec0088f808a77a5a087c4583db83107cd3e2"
+      },
+      "sha256": "a9c4bb84bfe6724d596d1f419f7ea88cde1b15b0c7f3bc13a5d79424687f52b1",
+      "bytes": 53736,
+      "mode": "0o644"
+    },
+    "localization/work/pl-7714bd2-runtime-20261110.MbK1dB/review-queue.previews/images/1233599d46e4dbdd1cbedc49a870ca9431800cd68d6bb58db3ad0f0fb493d69b.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/1233599d46e4dbdd1cbedc49a870ca9431800cd68d6bb58db3ad0f0fb493d69b.png",
+        "sha256": "1233599d46e4dbdd1cbedc49a870ca9431800cd68d6bb58db3ad0f0fb493d69b"
+      },
+      "sha256": "ad7b7ca246b6d0a137cd09838e9e3cdaf77be72337e1d1820f55cb3e3b2d2142",
+      "bytes": 25848,
+      "mode": "0o644"
+    },
+    "localization/work/pl-7714bd2-runtime-20261110.MbK1dB/review-queue.previews/images/2f2e2951b51d009209d94552446954265182dd95facda2ea0a05398f3a86e046.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/2f2e2951b51d009209d94552446954265182dd95facda2ea0a05398f3a86e046.png",
+        "sha256": "2f2e2951b51d009209d94552446954265182dd95facda2ea0a05398f3a86e046"
+      },
+      "sha256": "6b6b6ff442b1e8b58b7500f4d26c2d0a4f6847cc653b0287c89dacf53dcdca3f",
+      "bytes": 27044,
+      "mode": "0o644"
+    },
+    "localization/work/pl-7714bd2-runtime-20261110.MbK1dB/review-queue.previews/images/4093119ad884a4b937bb7cf35bd9a87d91ac24e69e8d09d3de99c32d4f4781ec.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/4093119ad884a4b937bb7cf35bd9a87d91ac24e69e8d09d3de99c32d4f4781ec.png",
+        "sha256": "4093119ad884a4b937bb7cf35bd9a87d91ac24e69e8d09d3de99c32d4f4781ec"
+      },
+      "sha256": "e1494286fa9ec3e30f8706542b297be8a07be350102318beb07fbab8cc575d40",
+      "bytes": 25226,
+      "mode": "0o644"
+    },
+    "localization/work/pl-7714bd2-runtime-20261110.MbK1dB/review-queue.previews/images/6ff73f95ab40a8c4970f60a8c97bc3b823c0e08b6e927b15c3289c3e9ceb0c0c.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/6ff73f95ab40a8c4970f60a8c97bc3b823c0e08b6e927b15c3289c3e9ceb0c0c.png",
+        "sha256": "6ff73f95ab40a8c4970f60a8c97bc3b823c0e08b6e927b15c3289c3e9ceb0c0c"
+      },
+      "sha256": "069184c9c8fffffb86ddb47ce4ac65baabbff2788734f0d44dc4183f01efc046",
+      "bytes": 53356,
+      "mode": "0o644"
+    },
+    "localization/work/pl-7714bd2-runtime-20261110.MbK1dB/review-queue.previews/images/7b3cee0eee12a1712da662406e54fdb375c5167a2190a614fe95937ab73febc4.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/7b3cee0eee12a1712da662406e54fdb375c5167a2190a614fe95937ab73febc4.png",
+        "sha256": "7b3cee0eee12a1712da662406e54fdb375c5167a2190a614fe95937ab73febc4"
+      },
+      "sha256": "2787cc5fcdbe4279c671d95dcec1b8d8a126d23305c0301d394e7fa55a30a526",
+      "bytes": 25396,
+      "mode": "0o644"
+    },
+    "localization/work/pl-7714bd2-runtime-20261110.MbK1dB/review-queue.previews/images/8a78eb4e264d4ee644ec84fa22a1319b0ccb71f827405385fe4a576b23a90c56.webp": {
+      "source": {
+        "root": "recoveryArchives",
+        "archive": "Dragons-qa-copy-sources.zip",
+        "member": "images/8a78eb4e264d4ee644ec84fa22a1319b0ccb71f827405385fe4a576b23a90c56.png",
+        "sha256": "8a78eb4e264d4ee644ec84fa22a1319b0ccb71f827405385fe4a576b23a90c56"
+      },
+      "sha256": "e6dbd7a911cb6c5d0d822beb979450959ce65335f276ed30c960c75ac4c0cc89",
+      "bytes": 25836,
+      "mode": "0o644"
+    }
+  }
+}
