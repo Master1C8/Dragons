@@ -329,6 +329,24 @@ The five rebuilt Windows ZIPs matched the recorded SHA-256. The two rebuilt
 macOS bundles matched the recorded manifest and every surviving file and
 directory. Both passed strict code signature checks.
 
+The [Ukrainian verification receipt](localization/evidence/archival-uk-verification-20261111.json.gz)
+pins three historical structure-control inputs and the two exact .NET tools
+used by those builds and the older German, French and Polish builds above.
+Download the receipt's archive from the maintainer draft and verify its
+archive and member hashes. Copy the fingerprinted `netstandard2.0` DLLs
+from Mono.Cecil 0.11.6 into both tool directories. For Ukrainian, use the
+corresponding `uk/<variant>/structure-control.json` as the historical input
+and the accepted installer speaker runtime with the recorded platform hash.
+The normal builders reproduced all three Windows ZIP hashes and the
+surviving files of the two retained macOS bundles. The rebuilt closure
+package also supplied the exact Yarn asset for both fixture variants.
+
+To rebuild an [Alexander or choice fixture](localization/evidence/archival-uk-yarn-fixtures-20261111.json),
+use the Ukrainian closure package's `sharedassets1.assets` from the stock
+platform's Data layout within the rebuilt package. Pass it as
+`--base-asset` to `restore_yarn_probe_asset.py` with the fixture receipt.
+The four rebuilt fixture files matched their recorded SHA-256 values.
+
 The [Python environment receipt](localization/evidence/archival-python-environments-20261111.json)
 pins the Python versions and dependency lists for four retired CLI environments.
 Create a fresh venv with the listed Python and install those exact requirements

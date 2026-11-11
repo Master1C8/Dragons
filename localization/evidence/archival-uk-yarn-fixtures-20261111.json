@@ -1,0 +1,104 @@
+{
+  "outputs": [
+    {
+      "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/mac/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "platform": "macos",
+      "node": "Conrad_Intro_3",
+      "lineSwaps": [
+        [
+          "line:39fd52f1",
+          "line:4b36ea4e"
+        ],
+        [
+          "line:20393ff6",
+          "line:f167e3d7"
+        ]
+      ],
+      "baseAssetSha256": "de72f6e18d2030c30da148e928335aadf51c6f42cdc360fc31c646e82d4d7dc2",
+      "programSha256": "e100d042d9ab93bde129be094d61c309a67484b47842e6ff0fd2dfa83e0b8809",
+      "sha256": "52961ea6b2095ba5417627acbb736f0b193f9722f3890210d68528d05247a3b7",
+      "bytes": 105919736,
+      "mode": "0o644",
+      "rebuildName": "uk-alexander-unity-20261110.Pk2UQe-macos.assets"
+    },
+    {
+      "path": "localization/work/uk-alexander-unity-20261110.Pk2UQe/win/game/DragNWash_Data/sharedassets1.assets",
+      "platform": "windows",
+      "node": "Conrad_Intro_3",
+      "lineSwaps": [
+        [
+          "line:39fd52f1",
+          "line:4b36ea4e"
+        ],
+        [
+          "line:20393ff6",
+          "line:f167e3d7"
+        ]
+      ],
+      "baseAssetSha256": "2199880021c94a0b3818608311aced4e485a2d5ef8d5397a7f82b24bc63bc713",
+      "programSha256": "66221195f8e0dadc487f7c9f17a3e8da3dcecdaf9b5c0c40a594e304e5bfc5e7",
+      "sha256": "204a43a1e4f08413f9a49b5bc99a7dd922fdd5521cab103ab9666860ee3f94f1",
+      "bytes": 106471952,
+      "mode": "0o644",
+      "rebuildName": "uk-alexander-unity-20261110.Pk2UQe-windows.assets"
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/mac-retry/CyrillicDialogue.app/Contents/Resources/Data/sharedassets1.assets",
+      "platform": "macos",
+      "node": "Conrad_Intro_3",
+      "lineSwaps": [
+        [
+          "line:39fd52f1",
+          "line:4b36ea4e"
+        ],
+        [
+          "line:20393ff6",
+          "line:f167e3d7"
+        ],
+        [
+          "line:83ac5b68",
+          "line:e104b8e4"
+        ],
+        [
+          "line:afcd5586",
+          "line:36ff6bd9"
+        ]
+      ],
+      "baseAssetSha256": "de72f6e18d2030c30da148e928335aadf51c6f42cdc360fc31c646e82d4d7dc2",
+      "programSha256": "24bce538004552f2667ea565a72d433e7e1623fc507a0afa2a55794037ec58f9",
+      "sha256": "afa3dab770c1cc064cd1482c143b75708a36dbfca269457d924e93e6e34c4aba",
+      "bytes": 105919736,
+      "mode": "0o644",
+      "rebuildName": "uk-choice-unity-20261110.pFemW7-macos.assets"
+    },
+    {
+      "path": "localization/work/uk-choice-unity-20261110.pFemW7/win/game/DragNWash_Data/sharedassets1.assets",
+      "platform": "windows",
+      "node": "Conrad_Intro_3",
+      "lineSwaps": [
+        [
+          "line:39fd52f1",
+          "line:4b36ea4e"
+        ],
+        [
+          "line:20393ff6",
+          "line:f167e3d7"
+        ],
+        [
+          "line:83ac5b68",
+          "line:e104b8e4"
+        ],
+        [
+          "line:afcd5586",
+          "line:36ff6bd9"
+        ]
+      ],
+      "baseAssetSha256": "2199880021c94a0b3818608311aced4e485a2d5ef8d5397a7f82b24bc63bc713",
+      "programSha256": "d603539964b754f1af2ba97e7ecf1130b80014a7c77fe17aaca9fb1670a369c9",
+      "sha256": "27d9192f6cdb448fb17e51a5727162a5f1876b1fb87a6e6821fd8fab08f1765e",
+      "bytes": 106471952,
+      "mode": "0o644",
+      "rebuildName": "uk-choice-unity-20261110.pFemW7-windows.assets"
+    }
+  ]
+}
