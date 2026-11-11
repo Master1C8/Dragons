@@ -920,6 +920,25 @@ and `--output`. The other Python reports write JSON to stdout. For
 separate directory and pass it as `--candidate-data`. Compare the
 result to the recorded hash and restore each path's mode.
 
+The [historical static probe receipt](localization/evidence/archival-static-probe-reports-20261111.json.gz)
+records four original sources and 15 reports. For `initial` and `native`,
+copy the recorded `Program.cs` and project file into a fresh directory and
+build in Release with the pinned SDK. Run the DLL with the verified stock
+Managed directory as its sole argument. For the two Python probes, set
+`PYTHONPATH` to `localization` exported from `pythonImportRevision` and
+use the pinned Python requirements. The `stream` script takes platform
+and stock Data directory. The `settings` script takes the stock Data
+directory and platform in that order. Capture stdout in each case.
+
+The [historical static scanner receipt](localization/evidence/archival-historical-static-scanners-20261111.json.gz)
+pins the archive of four earlier scanner binaries. Verify the downloaded
+archive and restore the named scanner with `restore_archived_members.py`.
+Supply the runtime configuration, dependency manifest and pinned
+Mono.Cecil DLL from the Release build above. Run the scanner with
+platform, stock Managed directory and the report's optional `argument`.
+All eight reports from the downloaded scanners and seven reports built
+from source matched their original fingerprints.
+
 The [final usage evidence receipt](localization/evidence/archival-final-usage-20261111.json)
 pins the private archive with the final Model usage manifest, supporting
 evidence and readback. Verify its SHA-256 and the individual member hashes.
@@ -1009,6 +1028,10 @@ export without intermediates regenerated the listed file types in Debug
 and Release. Paths embedded in the new files reflect the current build
 location. One historical project was excluded because its resolved and
 declared dependencies differed.
+The historical static probe receipt also lists 216 empty
+`CopyComplete` markers. Fresh Debug and Release builds emitted that
+marker. The check copied the generated empty file and verified each
+recorded mode.
 To recreate the historical counter snapshot, point the restore tool at the
 original read-only Codex journal directory or an exact copy:
 
