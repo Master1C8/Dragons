@@ -591,6 +591,13 @@ The helper verifies each Git source and rebuilt output. The check matched
 all 28 original DLLs and verified the 28 dependent entries in the binary
 copy receipt. Restore a needed source DLL before replaying its copies.
 
+The [historical symbol and assembly receipt](localization/evidence/archival-historical-dotnet-symbols-20261111.json)
+uses the same command for 38 portable PDBs and 50 DLLs. The builds pin
+the Git inputs, compiler paths and embedded-source selection observed
+in the original portable PDBs. The helper reproduces the original
+Source Link setting and verifies the restored bytes. All 88 outputs and
+92 dependent entries in the binary copy receipt matched.
+
 The [historical managed source receipt](localization/evidence/archival-historical-managed-source-deltas-20261111.json)
 pins 125 project descriptors required by the generated metadata receipt
 and 22 C# sources used by technical evidence or the text copy receipt.

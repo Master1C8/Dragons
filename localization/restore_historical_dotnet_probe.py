@@ -16,13 +16,18 @@ CHECKOUT = Path(__file__).resolve().parents[1]
 
 
 def restore_source(row, build):
-    revision = row['revision']
-    if not re.fullmatch(r'[0-9a-f]{40}', revision):
-        raise ValueError('Expected a full source revision')
     path = relative_path(row['path'])
-    data = subprocess.check_output(
-        ['git', '-C', str(CHECKOUT), 'show', f'{revision}:{path.as_posix()}'],
-    )
+    git = ['git', '-C', str(CHECKOUT)]
+    if 'blob' in row:
+        blob = row['blob']
+        if not re.fullmatch(r'[0-9a-f]{40}', blob):
+            raise ValueError('Expected a full source blob ID')
+        data = subprocess.check_output([*git, 'cat-file', 'blob', blob])
+    else:
+        revision = row['revision']
+        if not re.fullmatch(r'[0-9a-f]{40}', revision):
+            raise ValueError('Expected a full source revision')
+        data = subprocess.check_output([*git, 'show', f'{revision}:{path.as_posix()}'])
     if hashlib.sha256(data).hexdigest() != row['sha256']:
         raise ValueError(f'Probe source fingerprint mismatch: {path}')
     destination = build / path.name
@@ -45,6 +50,21 @@ def build_probe(row, build, historical_checkout):
         original_object = historical_checkout / relative_path(row['objectPath'])
         original_project = historical_checkout / relative_path(row['project']['path']).parent
         command.append(f'-p:PathMap={build}/obj={original_object}%2C{build}={original_project}')
+    if 'embeddedSources' in row:
+        command.extend(('-p:EnableSourceLink=false', '-p:EmbedUntrackedSources=false'))
+        if row['embeddedSources'] == 'all':
+            command.append('-p:EmbedAllSources=true')
+        elif row['embeddedSources'] == 'generated':
+            targets = build / 'EmbedHistoricalGeneratedSource.targets'
+            targets.write_text(
+                '<Project><Target Name="EmbedHistoricalGeneratedSource" BeforeTargets="CoreCompile">'
+                '<ItemGroup><EmbeddedFiles Include="$(IntermediateOutputPath)*.cs" /></ItemGroup>'
+                '</Target></Project>\n',
+                encoding='utf-8',
+            )
+            command.append(f'-p:CustomAfterMicrosoftCommonTargets={targets}')
+        else:
+            raise ValueError('Unexpected embedded source selection')
     subprocess.run(command, env={**os.environ, 'DOTNET_CLI_UI_LANGUAGE': 'ru'}, check=True)
 
 
