@@ -934,6 +934,36 @@ records the superseded build outputs. Its intermediate Windows installer
 script can be recreated by extracting the compressed patch and applying it to
 the Git blob named in the receipt. Compare the result to the recorded SHA-256.
 
+The [legacy macOS executable receipt](localization/evidence/archival-legacy-macos-installer-deltas-20261111.json)
+records three historical universal installer executables. Download
+`Dragons-macOS.zip` from the `archive-v0.2.1` maintainer draft and
+`Dragons-legacy-macos-installer-deltas.zip` from the `recovery-inputs-v0.2.1`
+maintainer draft. Verify both archive hashes, extract the accepted executable
+and the selected patch, and verify their member hashes. When using Python's
+`zipfile` to read the accepted archive, set `metadata_encoding='utf-8'`.
+Apply the patch with Zstandard 1.5.7 and restore the recorded mode.
+
+```sh
+zstd -q -d --patch-from="$accepted_executable" "$patch" -o "$fresh_executable"
+chmod 755 "$fresh_executable"
+lipo -archs "$fresh_executable"
+```
+
+Compare the resulting SHA-256, size and architectures to the receipt.
+All three executables matched after downloading the patch archive. To
+recover the recorded SteamPathFix runtime configuration, copy the tracked
+`localization/tools/historical-dotnet-dependencies/{scan.csproj,Program.cs}`
+template into a scratch directory and build it with .NET SDK 8.0.131.
+
+```sh
+dotnet build "$build_dir/scan.csproj" -c Release \
+  --nologo --disable-build-servers --ignore-failed-sources \
+  -p:NuGetAudit=false -p:Variant=plain
+```
+
+Use the verified `bin/Release/net8.0/scan.runtimeconfig.json` as
+`SteamPathFix.runtimeconfig.json` with the recorded mode.
+
 The [legacy fixture receipt](localization/evidence/archival-legacy-fixtures-20261111.json)
 records the retired five-language installer outputs and the exact Windows
 executable used by the stock and ZIP member receipt. Download the fixture

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "gameLaunched": false,
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-legacy-macos-installer-deltas.zip",
+  "archiveSha256": "83559df3255b77d8b7ea056a66c2bddcb16d9d894c649058cb1c7a8f43d94814",
+  "zstd": "1.5.7",
+  "acceptedBase": {
+    "draftRelease": "archive-v0.2.1",
+    "archive": "Dragons-macOS.zip",
+    "archiveSha256": "acda5664d2e283a84a2e51ecad4ceaa5c25bc7866c83c15a075875a9fdb758bb",
+    "member": "Dragons \u2014 VN Revival.app/Contents/MacOS/DragonsInstaller",
+    "sha256": "ba57978c3d322024d0fd834fc607a0bce40acd94385c816a2ac2d597d9eb03b6"
+  },
+  "outputs": {
+    "localization/work/installer.NUdeks/mac-archive-read-back/Dragons \u2014 VN Revival.app/Contents/MacOS/DragonsInstaller": {
+      "archiveMember": "patches/ebce1bb0565975283b9f9db6830736cc9f783f872af08361425abc276b4d369b.zst",
+      "patchSha256": "9eaaf17ed9c7fec93046dfe5d30994151fa2a725598c55192a50f90407fa6367",
+      "bytes": 1219136,
+      "sha256": "ebce1bb0565975283b9f9db6830736cc9f783f872af08361425abc276b4d369b",
+      "mode": "0o755",
+      "architectures": [
+        "x86_64",
+        "arm64"
+      ]
+    },
+    "localization/work/installer-all.Yykv0u/readback/Dragons \u2014 VN Revival.app/Contents/MacOS/DragonsInstaller": {
+      "archiveMember": "patches/4f06f794cb8a0371fb43f0239f451937937999d163eb162f086bdb7dd4b94f6e.zst",
+      "patchSha256": "b3e25748ee442650768fd856f7ef63aad4094bc3229d6ce1d6dd14d756bbf3c3",
+      "bytes": 1202496,
+      "sha256": "4f06f794cb8a0371fb43f0239f451937937999d163eb162f086bdb7dd4b94f6e",
+      "mode": "0o755",
+      "architectures": [
+        "x86_64",
+        "arm64"
+      ]
+    },
+    "localization/work/installer-discovery.jx49dN/unpacked/Dragons \u2014 VN Revival.app/Contents/MacOS/DragonsInstaller": {
+      "archiveMember": "patches/9571b9e452fac1d4ea006c29f5695020bb5fddbc143f8dcc5f4872cf5574da62.zst",
+      "patchSha256": "6e8e269d2aa40692ff10bfcf364828d82b05b735795ffac1c4f8df65441fe3f7",
+      "bytes": 1258800,
+      "sha256": "9571b9e452fac1d4ea006c29f5695020bb5fddbc143f8dcc5f4872cf5574da62",
+      "mode": "0o755",
+      "architectures": [
+        "x86_64",
+        "arm64"
+      ]
+    }
+  },
+  "runtimeConfig": {
+    "path": "localization/work/installer-all.Yykv0u/steam-bin/SteamPathFix.runtimeconfig.json",
+    "sdk": "8.0.131",
+    "sha256": "97c9700542b659150b230c3578b29530fd76ab01ec66a92cd16945e0245713df",
+    "bytes": 328,
+    "mode": "0o644"
+  }
+}
