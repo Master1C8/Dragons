@@ -1,0 +1,740 @@
+{
+  "schema": 1,
+  "sdk": "8.0.131",
+  "gameLaunched": false,
+  "historicalCheckout": "/Users/antonkrutov/Desktop/Dragons",
+  "builds": [
+    {
+      "project": {
+        "path": "localization/tools/input-action-source/input-action-source.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/input-action-source/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "b4363a526adca32e8e90f204b38ae23fa4fd415094244a3b1b0764f123294f31"
+        }
+      ],
+      "objectPath": "localization/work/input-action-source-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "173e0e1d0727c00a28e37a6fb1fa127a8e70317b",
+      "assemblyName": "input-action-source"
+    },
+    {
+      "project": {
+        "path": "localization/tools/addressable-catalog-keys/addressable-catalog-keys.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3db8bb5512fe30d125fe0f0fe86e5d696ef8a57b55feb6a35d9ff4f76926c9e9"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/addressable-catalog-keys/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "d84c2e964db1e0b8a8a11fa1850fed40d62a3aa4ffc7e9dd948d02a10caac576"
+        }
+      ],
+      "objectPath": "localization/work/addressable-catalog-keys-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "c703b8f36ae265f6e7c1532cd27196bd17633316",
+      "assemblyName": "addressable-catalog-keys"
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-display-runtime-test/speaker-display-runtime-test.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "75690a11cdf9bc8d45689e99ce0310049243c2b3ab210055b7fc9c06b92b5b72"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-display-runtime-test/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "bbe153e42e4391920265bca0aaec5328c25e93d8d23a4638009d1da14b5bcbc3"
+        }
+      ],
+      "objectPath": "localization/work/speaker-display-runtime-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "a424cb3f9c9848b5cd697c4bad19f29a4e5e2248",
+      "assemblyName": "speaker-display-runtime-test"
+    },
+    {
+      "project": {
+        "path": "localization/tools/slot-code-probe/slot-code-probe.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/slot-code-probe/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "0d00bacd3456e9daa068dace44cc06e7998cb55dff65723ed7321fe1d8783cd8"
+        }
+      ],
+      "objectPath": "localization/work/slot-code-probe-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "92d02b6a94402f668567c5c28a59cfd9dd2d64c1",
+      "assemblyName": "slot-code-probe"
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-consumers/speaker-consumers.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-consumers/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "e30ae8c331ca375b754721cacb26a1e7a713d0fc6b13f58a35a07d58c25bafad"
+        }
+      ],
+      "objectPath": "localization/work/speaker-consumers-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "3be4d43abe9e4ce78e7f5eb7378a8b4ea2bb5101",
+      "assemblyName": "speaker-consumers"
+    },
+    {
+      "project": {
+        "path": "localization/tools/text-setter-consumers/text-setter-consumers.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/text-setter-consumers/DeclarationText.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "8a1149b687bb819de528c83a096d31c3fde223b83c879521b88be47c00b8ef14"
+        },
+        {
+          "path": "localization/tools/text-setter-consumers/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "8b80ec63378afdec6da5a2e064da14262748ca9d4ce289041578df7a8d4f94d1"
+        }
+      ],
+      "objectPath": "localization/work/metadata-text-20261110.pNTP0d/obj-final-verified",
+      "configuration": "Debug",
+      "sourceRevisionId": "dd0aa56bda2a63c4d1d682fafa99aa9ef488188a",
+      "assemblyName": "text-setter-consumers"
+    },
+    {
+      "project": {
+        "path": "localization/tools/text-setter-consumers/text-setter-consumers.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/text-setter-consumers/DeclarationText.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "8a1149b687bb819de528c83a096d31c3fde223b83c879521b88be47c00b8ef14"
+        },
+        {
+          "path": "localization/tools/text-setter-consumers/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "8b80ec63378afdec6da5a2e064da14262748ca9d4ce289041578df7a8d4f94d1"
+        }
+      ],
+      "objectPath": "localization/work/metadata-text-20261110.pNTP0d/obj-final",
+      "configuration": "Debug",
+      "sourceRevisionId": "9fed67290d80bf45485c2447b69bd8f6084960f7",
+      "assemblyName": "text-setter-consumers"
+    },
+    {
+      "project": {
+        "path": "localization/tools/text-setter-consumers/text-setter-consumers.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/text-setter-consumers/DeclarationText.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "8a1149b687bb819de528c83a096d31c3fde223b83c879521b88be47c00b8ef14"
+        },
+        {
+          "path": "localization/tools/text-setter-consumers/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "8b80ec63378afdec6da5a2e064da14262748ca9d4ce289041578df7a8d4f94d1"
+        }
+      ],
+      "objectPath": "localization/work/metadata-text-20261110.pNTP0d/obj-display",
+      "configuration": "Debug",
+      "sourceRevisionId": "8cf5fc15f20b16b3845f5b237c456a7eb97f982b",
+      "assemblyName": "text-setter-consumers"
+    },
+    {
+      "project": {
+        "path": "installer/Scripts/SteamPathFix/SteamPathFix.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "85b29b67d9e3503a594902982140cf224b6d7c9b2b3527b4622449defd1ac8fc"
+      },
+      "sources": [
+        {
+          "path": "installer/Scripts/SteamPathFix/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "012e5fca91cc4bd099873af25e6a901e8bac9d2b55e85a64bbd3aa5b0b9fea7e"
+        }
+      ],
+      "objectPath": "localization/work/installer-all.Yykv0u/steam-obj",
+      "configuration": "Release",
+      "sourceRevisionId": "811cd68ae1604a74e23f5c14804b5f63788642e4",
+      "assemblyName": "SteamPathFix"
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-presentation-flow/speaker-presentation-flow.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-presentation-flow/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "dc2bfe7e16628f2529353f05c24e89d330c4d23f1899ab5368dd73a575bb02ea"
+        }
+      ],
+      "objectPath": "localization/work/speaker-presentation-flow-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "2593d747ebb5ab5265a2630f17309aa8898f8921",
+      "assemblyName": "speaker-presentation-flow"
+    },
+    {
+      "project": {
+        "path": "localization/tools/managed-fallback/managed-fallback.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "85b29b67d9e3503a594902982140cf224b6d7c9b2b3527b4622449defd1ac8fc"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/managed-fallback/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "ebf3351562e2abbaa46b86bb5c3f659091e737e6fb8cd644a23ba4f522d09f3c"
+        }
+      ],
+      "objectPath": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/managed-tool-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "a2a5d0e5af8696d7271253cce5b8627964044d3d",
+      "assemblyName": "managed-fallback"
+    },
+    {
+      "project": {
+        "path": "localization/tools/menu-reason-source/menu-reason-source.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/menu-reason-source/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "f05fd9555e958ff5903991199e2646b429260325d00ccb4be60f1151a00119a9"
+        }
+      ],
+      "objectPath": "localization/work/menu-reason-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "14df1a9474a465ea671f1a2fc29368999d5419fe",
+      "assemblyName": "menu-reason-source"
+    },
+    {
+      "project": {
+        "path": "localization/tools/prepared-text-probe/prepared-text-probe.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "85b29b67d9e3503a594902982140cf224b6d7c9b2b3527b4622449defd1ac8fc"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/prepared-text-probe/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "a7290bfdc8ff0453ed6f173b3f623450fffefc18224ec0c9107f094afbd8ceb0"
+        },
+        {
+          "path": "localization/tools/prepared-text-probe/RenderPlans.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "413590a49677b2d6cacc4106db3e14c172339af6178c38ea8392febad448682c"
+        },
+        {
+          "path": "localization/tools/prepared-text-probe/WrapHooks.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "4d3cd8902ab9d3c91d995961376b6a7c4a04a9e03bfa34b333b225e4a62a5a48"
+        },
+        {
+          "path": "localization/tools/prepared-text-probe/YarnRevealPatch.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "5de4d68769127a8b07a4f318344069246c2e5dd7d070b82d836a997409d452c9"
+        }
+      ],
+      "objectPath": "localization/work/complex-renderer-20261110.nYJmC2/patch-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "7904e50f469ad3929047426eddf502f8732e34c8",
+      "assemblyName": "prepared-text-probe"
+    },
+    {
+      "project": {
+        "path": "localization/tools/managed-fallback/managed-fallback.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "85b29b67d9e3503a594902982140cf224b6d7c9b2b3527b4622449defd1ac8fc"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/managed-fallback/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "ebf3351562e2abbaa46b86bb5c3f659091e737e6fb8cd644a23ba4f522d09f3c"
+        }
+      ],
+      "objectPath": "localization/work/complex-renderer-20261110.nYJmC2/managed-current-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "bdd064feeede6568ad4a2d23a878f44c48c19c87",
+      "assemblyName": "managed-fallback"
+    },
+    {
+      "project": {
+        "path": "localization/tools/managed-strings/managed-strings.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "4aaedc36db5be19f4978b7f4f70312f2e5c82530bdd260eb7f87d49735c4d990"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/managed-strings/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "540545b6cf1a3741a5eda5516707185d295f29ad2438fa7e6e52b6a1a1104194"
+        }
+      ],
+      "objectPath": "localization/work/source-inventory-20261107/managed-context-20261109.LgAZeN/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "e8f49708109bf5dc5977a230007ce1da09fcc6b7",
+      "assemblyName": "managed-strings"
+    },
+    {
+      "project": {
+        "path": "localization/tools/background-input-probe/patcher/patcher.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/background-input-probe/patcher/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "13180671158a95c5e3b47754df1b8bbb1dcdf8ce835de19b94f0b63c33bd9d3e"
+        }
+      ],
+      "objectPath": "localization/work/styled-cyrillic-runtime-20261110.yAjNaW/windows/patcher-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "192afe39aa2df14522db1bb8f0a8bc3782fddb6c",
+      "assemblyName": "patcher"
+    },
+    {
+      "project": {
+        "path": "localization/tools/managed-fallback/managed-fallback.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "85b29b67d9e3503a594902982140cf224b6d7c9b2b3527b4622449defd1ac8fc"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/managed-fallback/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "ebf3351562e2abbaa46b86bb5c3f659091e737e6fb8cd644a23ba4f522d09f3c"
+        }
+      ],
+      "objectPath": "localization/work/managed-slot-new-20261110.PVMLcL/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "03fb192780056b0e65e3648bdaefc6de976004fb",
+      "assemblyName": "managed-fallback"
+    },
+    {
+      "project": {
+        "path": "localization/tools/managed-metadata-audit/managed-metadata-audit.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "1458e6076e669d64faf33a8cf5e4b104546a8b476ee57e423238760a7054028d"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/managed-metadata-audit/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "e8a8800bb4c587f84fc75c1f59ad959419ae79d88590e5c9605bd9ad219f31d0"
+        }
+      ],
+      "objectPath": "localization/work/managed-metadata-20261110.NICDw4/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "3049b138939b94f81b2f5d068c72d3681e6ff7c7",
+      "assemblyName": "managed-metadata-audit"
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-line-probe/speaker-line-probe.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-line-probe/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "d3fbda894f53fd250bfcfd9f98d1e0519ea75513e8fa0038e9dbaf6bc5d8490f"
+        }
+      ],
+      "objectPath": "localization/work/speaker-line-probe-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "0acf210282f880564ac43128d45b40d102c8d39e",
+      "assemblyName": "speaker-line-probe"
+    },
+    {
+      "project": {
+        "path": "localization/tools/objective-source/objective-source.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/objective-source/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "56783d12d107bd5c6d4f1f010a9d98952533fe9eeb3c4aad4d2abe0ba9616c2d"
+        }
+      ],
+      "objectPath": "localization/work/objective-source-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "de4617d7e879589ed8d38944ca97b2c89991e204",
+      "assemblyName": "objective-source"
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-inline-unity-probe/speaker-inline-unity-probe.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-inline-unity-probe/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "61521609c506f24d59a55cb4ebdaf67da1f8d51c358afd445f70f85ef854bde3"
+        }
+      ],
+      "objectPath": "localization/work/speaker-unity-background-20261109.X5dcpl/tracked/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "5c9b9ddf42429a7a03297a8f68f27f551e8265cb",
+      "assemblyName": "speaker-inline-unity-probe"
+    },
+    {
+      "project": {
+        "path": "localization/tools/alexander-question-save-test/patcher/patcher.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "4aaedc36db5be19f4978b7f4f70312f2e5c82530bdd260eb7f87d49735c4d990"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/alexander-question-save-test/patcher/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "435eb36ce65f50883edf28de4fbc9b49e9fc8b18385ec913f39f22d263e00823"
+        }
+      ],
+      "objectPath": "localization/work/yarn-save-boundary-20261110.bDCIbl/final-patcher-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "5c3dfe4608c2897c329ae50e7fba360be9331937",
+      "assemblyName": "patcher"
+    },
+    {
+      "project": {
+        "path": "localization/tools/speaker-line-runtime-test/speaker-line-runtime-test.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "75690a11cdf9bc8d45689e99ce0310049243c2b3ab210055b7fc9c06b92b5b72"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/speaker-line-runtime-test/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "a85b8c3d4ecac505235555c75bb4e2bf61c93aae45910d57011a7e7928fcc786"
+        }
+      ],
+      "objectPath": "localization/work/speaker-line-runtime-test-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "0acf210282f880564ac43128d45b40d102c8d39e",
+      "assemblyName": "speaker-line-runtime-test"
+    },
+    {
+      "project": {
+        "path": "localization/tools/background-input-probe/patcher/patcher.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/background-input-probe/patcher/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "13180671158a95c5e3b47754df1b8bbb1dcdf8ce835de19b94f0b63c33bd9d3e"
+        }
+      ],
+      "objectPath": "localization/work/background-performance-20261109.41uqFb/windows-preflight/tracked/patcher-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "b438df412974e175cea403f91f11556a42136189",
+      "assemblyName": "patcher"
+    },
+    {
+      "project": {
+        "path": "localization/tools/settings-semantics/settings-semantics.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/settings-semantics/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "a2c57022c98fc2049bb982f27b3a97c8bfb7cce9c8697ecb987ea5444a7d2b98"
+        }
+      ],
+      "objectPath": "localization/work/settings-semantics-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "18d1e8147c5e8017fbb0468298929ab0a63e183d",
+      "assemblyName": "settings-semantics"
+    },
+    {
+      "project": {
+        "path": "localization/tools/addressable-catalog-locations/addressable-catalog-locations.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3db8bb5512fe30d125fe0f0fe86e5d696ef8a57b55feb6a35d9ff4f76926c9e9"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/addressable-catalog-locations/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "ef871d303272c895498929658cf57e374e0bcbb6ef614e68e43654688ca6e55a"
+        }
+      ],
+      "objectPath": "localization/work/addressables-bundle-options-20261109.MY028D/tool/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "a2baca173e647bdfd1b7efba49d1f3ca3867acdc",
+      "assemblyName": "addressable-catalog-locations"
+    },
+    {
+      "project": {
+        "path": "localization/tools/level-schema/level-schema.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "3676c94793f3c67a5a6e7a3af1cc8554c185c21b9c07cb2c53f1e2e5a68bc00a"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/level-schema/Program.cs",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "sha256": "a575e9024e566d87905a565a0e8e967af6eb2cf8e0901f43b60de4977c1fdbe8"
+        }
+      ],
+      "objectPath": "localization/work/level-schema-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "bffff01b4e751107a6ea2c98d28a334ce9f78109",
+      "assemblyName": "level-schema"
+    },
+    {
+      "project": {
+        "path": "localization/tools/managed-strings/managed-strings.csproj",
+        "revision": "d8b9c6ed717f710bf316772df4b10ee4871352f0",
+        "sha256": "4aaedc36db5be19f4978b7f4f70312f2e5c82530bdd260eb7f87d49735c4d990"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/managed-strings/Program.cs",
+          "revision": "d8b9c6ed717f710bf316772df4b10ee4871352f0",
+          "sha256": "4671a63885e4ea44b6ea958648e1163f82c1989d9378513ae8b5187c9551e3e8"
+        }
+      ],
+      "objectPath": "localization/work/managed-strings-unity-obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "d8b9c6ed717f710bf316772df4b10ee4871352f0",
+      "assemblyName": "managed-strings"
+    }
+  ],
+  "outputs": {
+    "localization/work/addressable-catalog-keys-obj/Debug/net8.0/ref/addressable-catalog-keys.dll": {
+      "build": 1,
+      "member": "obj/Debug/net8.0/ref/addressable-catalog-keys.dll",
+      "sha256": "78725a98953212587e00c676201b99633ae211441223fee9c501b07ddfd37b6a",
+      "bytes": 8192,
+      "mode": "0o644"
+    },
+    "localization/work/addressables-bundle-options-20261109.MY028D/tool/obj/Debug/net8.0/ref/addressable-catalog-locations.dll": {
+      "build": 25,
+      "member": "obj/Debug/net8.0/ref/addressable-catalog-locations.dll",
+      "sha256": "88e162562d7d47aceb2563c500de7e504fee79ab33ed9101175335a2602dd8fa",
+      "bytes": 8704,
+      "mode": "0o644"
+    },
+    "localization/work/background-performance-20261109.41uqFb/windows-preflight/tracked/patcher-obj/Debug/net8.0/ref/patcher.dll": {
+      "build": 23,
+      "member": "obj/Debug/net8.0/ref/patcher.dll",
+      "sha256": "1a4b5c7b9fad28faa050b27304ee9276c80dd0fddde453e17aa5e3c570118830",
+      "bytes": 6144,
+      "mode": "0o644"
+    },
+    "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/managed-tool-obj/Debug/net8.0/ref/managed-fallback.dll": {
+      "build": 10,
+      "member": "obj/Debug/net8.0/ref/managed-fallback.dll",
+      "sha256": "2108fbc89b6fa23dc9adc9d29c87595033a6f8de6417acae369688ab90ce742d",
+      "bytes": 7168,
+      "mode": "0o644"
+    },
+    "localization/work/complex-renderer-20261110.nYJmC2/managed-current-obj/Debug/net8.0/ref/managed-fallback.dll": {
+      "build": 13,
+      "member": "obj/Debug/net8.0/ref/managed-fallback.dll",
+      "sha256": "02f31e049dc6bc7cca4e37e56810e5c546527bc503baf727b8c40dbce7a37146",
+      "bytes": 7168,
+      "mode": "0o644"
+    },
+    "localization/work/complex-renderer-20261110.nYJmC2/patch-obj/Debug/net8.0/ref/prepared-text-probe.dll": {
+      "build": 12,
+      "member": "obj/Debug/net8.0/ref/prepared-text-probe.dll",
+      "sha256": "48a69ba4c6d3fd9623ad9514632b588fefb853ed3bace4f59f05d395cafe52fb",
+      "bytes": 9216,
+      "mode": "0o644"
+    },
+    "localization/work/input-action-source-obj/Debug/net8.0/ref/input-action-source.dll": {
+      "build": 0,
+      "member": "obj/Debug/net8.0/ref/input-action-source.dll",
+      "sha256": "ee06f6f950d422402c42b266cffc9e149ec0a633714cefc18cb9f9fd7cf81f1d",
+      "bytes": 6144,
+      "mode": "0o644"
+    },
+    "localization/work/installer-all.Yykv0u/steam-obj/Release/net8.0/ref/SteamPathFix.dll": {
+      "build": 8,
+      "member": "obj/Release/net8.0/ref/SteamPathFix.dll",
+      "sha256": "230dad6672307a9a9836f3ecedf6ba267e6d1eac38c584276137218c86784845",
+      "bytes": 6144,
+      "mode": "0o644"
+    },
+    "localization/work/level-schema-obj/Debug/net8.0/ref/level-schema.dll": {
+      "build": 26,
+      "member": "obj/Debug/net8.0/ref/level-schema.dll",
+      "sha256": "6ac7a634dc1c6cfa2f2888269bff35ba93ef9e6afae0cb4a992b8b6fb26d1373",
+      "bytes": 5632,
+      "mode": "0o644"
+    },
+    "localization/work/managed-metadata-20261110.NICDw4/obj-final/Debug/net8.0/ref/managed-metadata-audit.dll": {
+      "build": 17,
+      "member": "obj/Debug/net8.0/ref/managed-metadata-audit.dll",
+      "sha256": "490176bf9df721b665eafda41b52a35531c5df2fb30240febf5634d7c9bb51df",
+      "bytes": 8192,
+      "mode": "0o644"
+    },
+    "localization/work/managed-slot-new-20261110.PVMLcL/obj/Debug/net8.0/ref/managed-fallback.dll": {
+      "build": 16,
+      "member": "obj/Debug/net8.0/ref/managed-fallback.dll",
+      "sha256": "6123d5bdf0cc00d20fed329e624e0ed87a363cae79e6be296364514fb59f4690",
+      "bytes": 7168,
+      "mode": "0o644"
+    },
+    "localization/work/managed-strings-unity-obj/Debug/net8.0/ref/managed-strings.dll": {
+      "build": 27,
+      "member": "obj/Debug/net8.0/ref/managed-strings.dll",
+      "sha256": "ae8a042bec639ca5d2303023fb993204391442557f415dd42a7ae097bcabebb1",
+      "bytes": 6656,
+      "mode": "0o644"
+    },
+    "localization/work/menu-reason-obj/Debug/net8.0/ref/menu-reason-source.dll": {
+      "build": 11,
+      "member": "obj/Debug/net8.0/ref/menu-reason-source.dll",
+      "sha256": "e14b81c0fa9cc62000fe01bb090520363ce5e3f57886092c9a8847348604c58b",
+      "bytes": 7168,
+      "mode": "0o644"
+    },
+    "localization/work/metadata-text-20261110.pNTP0d/obj-display/Debug/net8.0/ref/text-setter-consumers.dll": {
+      "build": 7,
+      "member": "obj/Debug/net8.0/ref/text-setter-consumers.dll",
+      "sha256": "7be6e3762768d7ba58d63c83a8300abcd1c395fb5cf69a4a11b63b31e533c14b",
+      "bytes": 8704,
+      "mode": "0o644"
+    },
+    "localization/work/metadata-text-20261110.pNTP0d/obj-final-verified/Debug/net8.0/ref/text-setter-consumers.dll": {
+      "build": 5,
+      "member": "obj/Debug/net8.0/ref/text-setter-consumers.dll",
+      "sha256": "964e1fed0d254f75aac661e948d5461a7508f134b0d7bc06c86a32ea9f955dda",
+      "bytes": 8704,
+      "mode": "0o644"
+    },
+    "localization/work/metadata-text-20261110.pNTP0d/obj-validated/Debug/net8.0/ref/text-setter-consumers.dll": {
+      "build": 6,
+      "member": "obj/Debug/net8.0/ref/text-setter-consumers.dll",
+      "sha256": "b7ee938e7c2ef2da70e36220968a169ed6da32c031b7dc849560197225c2839b",
+      "bytes": 8704,
+      "mode": "0o644"
+    },
+    "localization/work/objective-source-obj/Debug/net8.0/ref/objective-source.dll": {
+      "build": 19,
+      "member": "obj/Debug/net8.0/ref/objective-source.dll",
+      "sha256": "2d312370d2a1f75eebd512ace9cee3c8e1c9ee4fc1dfdf01d42c54956a348b3a",
+      "bytes": 6144,
+      "mode": "0o644"
+    },
+    "localization/work/settings-semantics-obj/Debug/net8.0/ref/settings-semantics.dll": {
+      "build": 24,
+      "member": "obj/Debug/net8.0/ref/settings-semantics.dll",
+      "sha256": "d0348b4d24b41e6b2c95cd955ecc64a9078c156878541db687f74b32f0458b89",
+      "bytes": 6144,
+      "mode": "0o644"
+    },
+    "localization/work/slot-code-probe-obj/Debug/net8.0/ref/slot-code-probe.dll": {
+      "build": 3,
+      "member": "obj/Debug/net8.0/ref/slot-code-probe.dll",
+      "sha256": "673643431f9744039c5848b432df4865cac1075a24a8313ae718c83d7702a4bc",
+      "bytes": 7680,
+      "mode": "0o644"
+    },
+    "localization/work/source-inventory-20261107/managed-context-reproduction-20261109.abYcMX/obj/Debug/net8.0/ref/managed-strings.dll": {
+      "build": 14,
+      "member": "obj/Debug/net8.0/ref/managed-strings.dll",
+      "sha256": "a4fd93c08729c09cf6740b0bb2dcfe2e536bc92664f42b7fcd4b14078175a718",
+      "bytes": 7168,
+      "mode": "0o644"
+    },
+    "localization/work/speaker-consumers-obj/Debug/net8.0/ref/speaker-consumers.dll": {
+      "build": 4,
+      "member": "obj/Debug/net8.0/ref/speaker-consumers.dll",
+      "sha256": "ac2821db6339a453ba82377ac2066bf6e81393ea531112115127cd2ba8e9f2d8",
+      "bytes": 7168,
+      "mode": "0o644"
+    },
+    "localization/work/speaker-display-runtime-obj/Debug/net8.0/ref/speaker-display-runtime-test.dll": {
+      "build": 2,
+      "member": "obj/Debug/net8.0/ref/speaker-display-runtime-test.dll",
+      "sha256": "24168d71f8bd44a5f8b3f9d8c02cbe466d9af3879f129c9806a6365599ea7e08",
+      "bytes": 6144,
+      "mode": "0o644"
+    },
+    "localization/work/speaker-line-probe-obj/Debug/net8.0/ref/speaker-line-probe.dll": {
+      "build": 18,
+      "member": "obj/Debug/net8.0/ref/speaker-line-probe.dll",
+      "sha256": "d8ca7c34f8aeb2a3938beedb89d45dfcf11aff880d0c313a7642d3ced1a6f0af",
+      "bytes": 8192,
+      "mode": "0o644"
+    },
+    "localization/work/speaker-line-runtime-test-obj/Debug/net8.0/ref/speaker-line-runtime-test.dll": {
+      "build": 22,
+      "member": "obj/Debug/net8.0/ref/speaker-line-runtime-test.dll",
+      "sha256": "3201b9b81110260f1adb5121662533d135b1fc63950f659a111a5e60069ea8b4",
+      "bytes": 6144,
+      "mode": "0o644"
+    },
+    "localization/work/speaker-presentation-flow-obj/Debug/net8.0/ref/speaker-presentation-flow.dll": {
+      "build": 9,
+      "member": "obj/Debug/net8.0/ref/speaker-presentation-flow.dll",
+      "sha256": "6aa46701f7421750ea562395c430dfc6d372b3bbd72ee4b139805f59b8e16b6e",
+      "bytes": 6144,
+      "mode": "0o644"
+    },
+    "localization/work/speaker-unity-background-20261109.X5dcpl/tracked/obj/Debug/net8.0/ref/speaker-inline-unity-probe.dll": {
+      "build": 20,
+      "member": "obj/Debug/net8.0/ref/speaker-inline-unity-probe.dll",
+      "sha256": "a8fa0e3325e72c82169e93bc2f1643b778e3e07fa7814b75d1c407de1faca7ff",
+      "bytes": 7168,
+      "mode": "0o644"
+    },
+    "localization/work/styled-cyrillic-runtime-20261110.yAjNaW/windows/patcher-obj/Debug/net8.0/ref/patcher.dll": {
+      "build": 15,
+      "member": "obj/Debug/net8.0/ref/patcher.dll",
+      "sha256": "b631f7f53d4e983d7c08ea3b66fdea8c71f8b077ad1a85f727c8945ddc5856e2",
+      "bytes": 6144,
+      "mode": "0o644"
+    },
+    "localization/work/yarn-save-boundary-20261110.bDCIbl/final-patcher-obj/Debug/net8.0/ref/patcher.dll": {
+      "build": 21,
+      "member": "obj/Debug/net8.0/ref/patcher.dll",
+      "sha256": "8a28bd9cb5934d36dd2b2847de15ab10c94cfe20a97c6ca21a21a6a6762a8e88",
+      "bytes": 5632,
+      "mode": "0o644"
+    }
+  }
+}

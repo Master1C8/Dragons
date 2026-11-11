@@ -577,6 +577,20 @@ the verified stock platform files:
 The recovery check verified the original fingerprints of all twelve
 outputs and nine source files.
 
+The [historical .NET probe build receipt](localization/evidence/archival-historical-dotnet-probe-builds-20261111.json)
+pins 28 managed outputs whose source snapshots are in Git. Build with
+.NET SDK 8.0.131 and access to the recorded NuGet dependencies:
+
+```sh
+python3.12 -B localization/restore_historical_dotnet_probe.py \
+  localization/evidence/archival-historical-dotnet-probe-builds-20261111.json \
+  "$recorded_path" --output "$fresh_dll"
+```
+
+The helper verifies each Git source and rebuilt output. The check matched
+all 28 original DLLs and verified the 28 dependent entries in the binary
+copy receipt. Restore a needed source DLL before replaying its copies.
+
 The [Windows Yarn preservation input](localization/evidence/windows-yarn-preservation-control-20261107.json)
 recreates the synthetic control in the
 [preservation check](localization/evidence/yarn-preservation-check-20261107.md).
