@@ -202,6 +202,9 @@ payloads, use the archived installer build route above.
 
 [The duplicate-package receipt](localization/evidence/archival-duplicate-packages-20261111.json)
 maps removed work outputs to their retained, byte-identical copies.
+The [historical CLI asset receipt](localization/evidence/archival-duplicate-cli-assets-20261111.json)
+maps duplicate Unity assets to one remaining local copy per hash. Copy the
+recorded source to the former path, restore its mode and verify its SHA-256.
 
 The stock asset receipts identify replaceable files in old runtime probes
 on [macOS](localization/evidence/archival-macos-stock-copies-20261111.json)

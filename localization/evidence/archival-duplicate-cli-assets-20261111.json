@@ -1,0 +1,187 @@
+{
+  "verification": "Matching file bytes by SHA-256. The retained source of every row remains local. Copy it to the named path, restore the recorded mode, and verify SHA-256.",
+  "outputs": [
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/probe-source/sharedassets1.assets",
+      "sha256": "5fe988da9667694482500def41fea41ffe4a63af6ac965a6494fc1075dc759f2",
+      "mode": "0o644",
+      "bytes": 106460680
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/mac-retry/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/DragNWash-pl-draft-v2.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "8a08618e2a7d931011822675d86a2115564db1a5f9bde78b3ac53fc75e9cbcb6",
+      "mode": "0o644",
+      "bytes": 105916000
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/DragNWash-pl-draft-v2.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "8a08618e2a7d931011822675d86a2115564db1a5f9bde78b3ac53fc75e9cbcb6",
+      "mode": "0o644",
+      "bytes": 105916000
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/pl/resume-01/payload-probe/win-retry/game/DragNWash_Data/sharedassets1.assets",
+      "sha256": "77e3566dd84446c690545b60a0131871809130c26531783e07a6bda187d96936",
+      "mode": "0o644",
+      "bytes": 106468224
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-05/higher-settings/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "186d3f80253b5e9ab9917ca84af341c1b0dce9ab8845962efbe68c092a95d1e8",
+      "mode": "0o644",
+      "bytes": 105908440
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-05/higher-settings/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "186d3f80253b5e9ab9917ca84af341c1b0dce9ab8845962efbe68c092a95d1e8",
+      "mode": "0o644",
+      "bytes": 105908440
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-05/higher-settings/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "186d3f80253b5e9ab9917ca84af341c1b0dce9ab8845962efbe68c092a95d1e8",
+      "mode": "0o644",
+      "bytes": 105908440
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "ff57892f6f91290e09614f87041f1212058eeb84c65dd5c316696c098bc214f6",
+      "mode": "0o644",
+      "bytes": 105908440
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "ff57892f6f91290e09614f87041f1212058eeb84c65dd5c316696c098bc214f6",
+      "mode": "0o755",
+      "bytes": 105908440
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/settings-win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/sharedassets1.assets",
+      "sha256": "b4713a9ba58cdb4853fd74665cfbcf61e421fd682ee6896b9d495b1a1ba19ae5",
+      "mode": "0o644",
+      "bytes": 106460648
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/visual-win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/sharedassets1.assets",
+      "sha256": "b4713a9ba58cdb4853fd74665cfbcf61e421fd682ee6896b9d495b1a1ba19ae5",
+      "mode": "0o644",
+      "bytes": 106460648
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/it/resume-01/probe/sharedassets1.assets",
+      "sha256": "b4713a9ba58cdb4853fd74665cfbcf61e421fd682ee6896b9d495b1a1ba19ae5",
+      "mode": "0o644",
+      "bytes": 106460648
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/body-win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/sharedassets1.assets",
+      "sha256": "3f8ab143ef50df117a786785798b4b3cf60c817a1cf13d2600945f678d4badc7",
+      "mode": "0o644",
+      "bytes": 106460648
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/settings-win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/sharedassets1.assets",
+      "sha256": "3f8ab143ef50df117a786785798b4b3cf60c817a1cf13d2600945f678d4badc7",
+      "mode": "0o644",
+      "bytes": 106460648
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win-retry/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/sharedassets1.assets",
+      "sha256": "3f8ab143ef50df117a786785798b4b3cf60c817a1cf13d2600945f678d4badc7",
+      "mode": "0o644",
+      "bytes": 106460648
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/visual-win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/sharedassets1.assets",
+      "sha256": "3f8ab143ef50df117a786785798b4b3cf60c817a1cf13d2600945f678d4badc7",
+      "mode": "0o644",
+      "bytes": 106460648
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/fr/resume-01/probe/sharedassets1.assets",
+      "sha256": "3f8ab143ef50df117a786785798b4b3cf60c817a1cf13d2600945f678d4badc7",
+      "mode": "0o644",
+      "bytes": 106460648
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/resume-01/probe-prep/sharedassets1.assets",
+      "sha256": "ea864421f33d1f0a971f5217e26f3a6b2f832d05363bd2bc432655b72c0239db",
+      "mode": "0o644",
+      "bytes": 106460640
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/windows-sharedassets1-v2.assets",
+      "sha256": "5c11e371c03e9121f28c6f7069eb7394f37b920fd52776d763dc401974788376",
+      "mode": "0o644",
+      "bytes": 106460640
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/de/resume-01/probe/macos-sharedassets1-v2.assets",
+      "sha256": "f2e812c99184a71cfb11fbaf5036c256d3786aaa9e602de19ba767bdd0368f4c",
+      "mode": "0o644",
+      "bytes": 105908432
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "6ca9cdab497a3e3b3329a9279b4b7ec82fa461985d7ccf610d014c7a1a898130",
+      "mode": "0o644",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-04/higher-settings/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-mac/LocaleProbe.app/Contents/Resources/Data/sharedassets1.assets",
+      "sha256": "6ca9cdab497a3e3b3329a9279b4b7ec82fa461985d7ccf610d014c7a1a898130",
+      "mode": "0o644",
+      "bytes": 105908408
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/body40-win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/sharedassets1.assets",
+      "sha256": "03121693de68d774cc953797b34fc6abbff98215de615982726474ee4af64649",
+      "mode": "0o644",
+      "bytes": 106460616
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-localized/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/sharedassets1.assets",
+      "sha256": "03121693de68d774cc953797b34fc6abbff98215de615982726474ee4af64649",
+      "mode": "0o644",
+      "bytes": 106460616
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/scroll-run/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/sharedassets1.assets",
+      "sha256": "03121693de68d774cc953797b34fc6abbff98215de615982726474ee4af64649",
+      "mode": "0o644",
+      "bytes": 106460616
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/game/DragNWash_Data/sharedassets1.assets",
+      "source": "localization/work/cli-terra-high-20261110.J0KLrx/es/resume-01/win/sharedassets1.assets",
+      "sha256": "03121693de68d774cc953797b34fc6abbff98215de615982726474ee4af64649",
+      "mode": "0o644",
+      "bytes": 106460616
+    }
+  ]
+}
