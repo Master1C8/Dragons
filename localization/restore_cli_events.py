@@ -65,15 +65,21 @@ def resolve(reference, records):
     return ''.join(parts)
 
 
-def rebuild(row, events, records):
+def rebuild(row, events, records, *, journal_root=None):
     git_blobs = {}
+    documents = {}
+
+    def output_prefix(source):
+        prefix = source.get('prefix', '')
+        if prefix and not re.fullmatch(r'cat: [A-Za-z0-9_.-]+: No such file or directory\n', prefix):
+            raise ValueError('Unexpected CLI output prefix')
+        return prefix
 
     def git_text(source):
-        blob, digest, prefix = source['blob'], source['sha256'], source['prefix']
-        if not re.fullmatch(r'[0-9a-f]{40}', blob) or (
-            prefix and not re.fullmatch(r'cat: [A-Za-z0-9_.-]+: No such file or directory\n', prefix)
-        ):
+        blob, digest = source['blob'], source['sha256']
+        if not re.fullmatch(r'[0-9a-f]{40}', blob):
             raise ValueError('Unexpected CLI output Git reference')
+        prefix = output_prefix(source)
         key = (blob, digest)
         if key not in git_blobs:
             raw = subprocess.check_output(['git', '-C', str(CHECKOUT), 'cat-file', 'blob', blob])
@@ -81,6 +87,31 @@ def rebuild(row, events, records):
                 raise ValueError('CLI output Git blob fingerprint mismatch')
             git_blobs[key] = raw.decode('utf-8')
         return prefix + git_blobs[key]
+
+    def document_text(source):
+        if journal_root is None:
+            raise ValueError('Supply the Codex root for CLI output documents')
+        prefix = output_prefix(source)
+        relative = relative_path(source['path'])
+        if len(relative.parts) < 2 or relative.parts[0] not in {'instructions', 'skills'} or relative.suffix != '.md':
+            raise ValueError('Unexpected CLI output document path')
+        path = journal_root / relative
+        if path.resolve() != path:
+            raise ValueError('Unexpected CLI output document path')
+        key = (path, source['sha256'])
+        if key not in documents:
+            raw = path.read_bytes()
+            if hashlib.sha256(raw).hexdigest() != source['sha256']:
+                raise ValueError('CLI output document fingerprint mismatch')
+            documents[key] = raw.decode('utf-8')
+        return prefix + documents[key]
+
+    def output_part(part):
+        if part.keys() == {'git'}:
+            return git_text(part['git'])
+        if part.keys() == {'document'}:
+            return document_text(part['document'])
+        raise ValueError('Unexpected CLI output source')
 
     def field_value(value):
         if not isinstance(value, dict):
@@ -90,6 +121,8 @@ def rebuild(row, events, records):
         if value.keys() == {'git'}:
             source = value['git']
             return ''.join(git_text(part) for part in source) if isinstance(source, list) else git_text(source)
+        if value.keys() == {'outputParts'}:
+            return ''.join(output_part(part) for part in value['outputParts'])
         return value
 
     lines = []
@@ -119,8 +152,9 @@ def main():
     row = receipt['outputs'][args.recorded_path]
     offsets = {ref[0][0] for ref in references(stream['events'])}
     journal = index['journals'][stream['journal']]
-    records = read_records(args.journal_root.resolve(strict=True), journal, offsets)
-    data = rebuild(row, stream['events'], records)
+    journal_root = args.journal_root.resolve(strict=True)
+    records = read_records(journal_root, journal, offsets)
+    data = rebuild(row, stream['events'], records, journal_root=journal_root)
     with args.output.open('xb') as out:
         out.write(data)
     args.output.chmod(int(row['mode'], 8))

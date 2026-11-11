@@ -1839,6 +1839,21 @@ uses the same command for two streams whose historical command output
 joined two Git files. The helper verifies each file and preserves their
 recorded order. Both streams matched after downloading the index.
 
+The [document output receipt](localization/evidence/archival-cli-event-stream-document-outputs-20261111.json)
+uses the same command for four additional streams. The index's
+`documents` table pins the GitHub repository, blob and SHA-256 of each
+historical Codex instruction or skill document. In a fresh recovery
+directory, recreate the recorded `sessions/` journal prefixes and
+document paths. Fetch a document with its recorded repository and blob:
+
+```sh
+gh api "repos/$repository/git/blobs/$blob" --jq .content | base64 -D > "$fresh_document"
+```
+
+Verify each document hash and use the fresh directory as `--journal-root`.
+The check fetched all 11 exact document versions from GitHub and restored
+all four streams from the downloaded index.
+
 The [CLI report excerpt receipt](localization/evidence/archival-cli-report-excerpts-20261111.json.gz)
 maps 42 historical files to exact byte ranges in retained local command
 output. Restore any missing source stream using its stream receipt
