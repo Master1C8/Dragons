@@ -453,6 +453,15 @@ NuGet package's `lib/netstandard2.0` directory. Only the source roots needed
 by the selected rows are required. The check restored 42,207 binaries and
 verified their hashes and modes.
 
+The [historical probe binary receipt](localization/evidence/archival-historical-probe-binaries-20261111.json.gz)
+records 17 patched Assembly-CSharp and YarnSpinner.Unity assemblies and
+their byte-identical aliases. Download its delta archive from the
+maintainer draft and use the same `restore_renderer_assembly.py` command
+with this receipt, the verified stock roots and the recorded path.
+Restore a checkout source before running the binary copy receipt for
+its dependent paths. The recovery check verified all 31 files and the
+52 references in the binary copy receipt.
+
 The [Windows Yarn preservation input](localization/evidence/windows-yarn-preservation-control-20261107.json)
 recreates the synthetic control in the
 [preservation check](localization/evidence/yarn-preservation-check-20261107.md).
