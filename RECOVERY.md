@@ -1827,6 +1827,13 @@ to restore 242 historical reports, draft inputs and build logs. The
 check matched every file's bytes and mode. These are the original
 working copies from their recorded runs.
 
+The [journal copy source receipt](localization/evidence/archival-journal-copy-sources-20261111.json.gz)
+restores 33 more files with the same command. When the historical text
+copy receipt names one of these as its `checkout` source, restore it
+first and place the verified file at its recorded checkout-relative
+path. The check reproduced all 33 files and used the restored versions
+to verify the bytes and modes of all 83 dependent copies.
+
 The [visual checklist receipt](localization/evidence/archival-visual-checklists-20261111.json.gz)
 records 126 runtime copies of a shared QA template. Download the exact
 SiteForMods revision in the receipt into a scratch directory and verify
