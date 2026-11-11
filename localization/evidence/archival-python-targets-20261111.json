@@ -1,0 +1,82 @@
+{
+  "verification": "Reinstalled pinned wheel targets with pip and compared all surviving payload files. Rebuilt and checked generated Python bytecode, console entry points and metadata.",
+  "targets": [
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/it/python-deps",
+      "pythonVersion": "Python 3.9.6",
+      "pipVersion": "21.2.4",
+      "requirements": [
+        "fonttools==4.60.1",
+        "TypeTreeGeneratorAPI==0.0.10"
+      ],
+      "imports": [
+        "fontTools",
+        "TypeTreeGeneratorAPI"
+      ],
+      "verificationCounts": {
+        "exact": 364,
+        "generatedConsoleScript": 4,
+        "generatedMetadata": 2
+      },
+      "bytes": 37383514,
+      "installedTreeSha256": "ec07a6f3626e9aa3915d8a97ef65c539fd619411aff228440d966eee163c563a"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pl/python-deps",
+      "pythonVersion": "Python 3.9.6",
+      "pipVersion": "21.2.4",
+      "requirements": [
+        "fonttools==4.60.2",
+        "TypeTreeGeneratorAPI==0.0.10"
+      ],
+      "imports": [
+        "fontTools",
+        "TypeTreeGeneratorAPI"
+      ],
+      "verificationCounts": {
+        "exact": 362,
+        "generatedConsoleScript": 4,
+        "generatedMetadata": 2
+      },
+      "bytes": 12553893,
+      "installedTreeSha256": "8e84205bbf9aa3be633b41208106492a0195a537891b46d69086f62fc197c61c"
+    },
+    {
+      "path": "localization/work/cli-terra-high-20261110.J0KLrx/pt-BR/deps",
+      "pythonVersion": "Python 3.9.6",
+      "pipVersion": "21.2.4",
+      "requirements": [
+        "fonttools==4.60.1",
+        "TypeTreeGeneratorAPI==0.0.10"
+      ],
+      "imports": [
+        "fontTools",
+        "TypeTreeGeneratorAPI"
+      ],
+      "verificationCounts": {
+        "exact": 356,
+        "generatedConsoleScript": 4,
+        "generatedMetadata": 2
+      },
+      "bytes": 9844698,
+      "installedTreeSha256": "f6ba05f00d0d2cb2025a39414ed1c3fad64b75d5a9ba77b9a944d75675542263"
+    },
+    {
+      "path": "localization/work/complex-font-static-20261110.54U84Z/deps",
+      "pythonVersion": "Python 3.14.6",
+      "pipVersion": "26.3",
+      "requirements": [
+        "uharfbuzz==0.51.7"
+      ],
+      "imports": [
+        "uharfbuzz"
+      ],
+      "verificationCounts": {
+        "exact": 11,
+        "generatedBytecode": 2
+      },
+      "bytes": 3693962,
+      "installedTreeSha256": "e8a9d7292c1d75de6a17c6ff2f239eed8ccf81e51c73ceb21d0f74d48cc5aff8"
+    }
+  ]
+}

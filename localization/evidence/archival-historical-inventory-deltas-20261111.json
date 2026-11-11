@@ -1,0 +1,185 @@
+{
+  "draftRelease": "recovery-inputs-v0.2.1",
+  "archive": "Dragons-historical-inventory-deltas.zip",
+  "archiveSha256": "f8f3e27b2a39e5e93dc6fbfbd03902aa91a32166d01f7c4ced0e770d9bf33ac8",
+  "codec": "zstd 1.5.7 patch-from",
+  "baseReceipt": "localization/evidence/archival-source-inventories-20261111.json.gz",
+  "outputs": [
+    {
+      "path": "localization/work/source-inventory-20261107/combined-provisional-20261107.json",
+      "baseInventory": "combined-provisional-v2-20261107.json",
+      "baseSha256": "6fa14564a75d6e87ecadb700de4234b10e5ab1d1099d404760a5fe0c0e85fbea",
+      "sha256": "0da42e4fab484069e73f92992d7ef24270666660b22973ebbaf8b93b3cf24e8b",
+      "mode": "0o644",
+      "bytes": 2217979,
+      "archiveMember": "00-v2.zst",
+      "patchSha256": "f5ce61ade8416374c23ef009f5c0fa5b3e5d8a6c7742b3c7ebc43b97a4a0da36",
+      "patchBytes": 7532
+    },
+    {
+      "path": "localization/work/source-inventory-20261107/combined-provisional-v7-20261107.json",
+      "baseInventory": "combined-provisional-v8-20261107.json",
+      "baseSha256": "52103dbf23391d57a907b889e1d06056b1ac7ca0c7907d89c5269e5b4b40e5d0",
+      "sha256": "4af08d5fb84cad7a52e591040a0e82eb28f123f1f741a62cb938c88804d7e283",
+      "mode": "0o644",
+      "bytes": 3174954,
+      "archiveMember": "01-v8.zst",
+      "patchSha256": "aba6900dc913d8e81a824a5280a72615adfe3bb2b9bc6fb0f27a3303a4a4ac17",
+      "patchBytes": 744
+    },
+    {
+      "path": "localization/work/source-inventory-20261107/combined-provisional-v18-20261109.json",
+      "baseInventory": "combined-provisional-v17-20261109.json",
+      "baseSha256": "62461ab1d2f9d76fd0110b784b206eced511c0dadb83c026a0d0d5d2a8538bd2",
+      "sha256": "1dd1a48c1a7d1dadecb7df91eeef7cd8838a4a766017406b3d9c4552d12ed099",
+      "mode": "0o644",
+      "bytes": 3321736,
+      "archiveMember": "02-v17.zst",
+      "patchSha256": "77aeaf8d96a938357507d5d1ac3a40bffa88052f7f7e2b451553b0b7b570fc77",
+      "patchBytes": 5628
+    },
+    {
+      "path": "localization/work/source-inventory-20261107/combined-provisional-v19-20261109.json",
+      "baseInventory": "combined-provisional-v20-20261109.json",
+      "baseSha256": "50b7d42c7b02f42e88c0133c25544a7022f1f00b7d71a0ada19d2e420303d197",
+      "sha256": "2e73b75c9d94da31b51974bd3ebac09c7c87eb4ccdbaf5450ecdcb4008e5ea73",
+      "mode": "0o644",
+      "bytes": 3354734,
+      "archiveMember": "03-v20.zst",
+      "patchSha256": "abb4c1e844af62974b0f89430d861b5d109ff30879119b8eee413a50c0364950",
+      "patchBytes": 447
+    },
+    {
+      "path": "localization/work/source-inventory-20261107/combined-provisional-v23-20261109.json",
+      "baseInventory": "combined-provisional-v22-20261109.json",
+      "baseSha256": "9c7a2fd726edaae4dedb6e9438b52a6be8c2b6abe1177557f468a019e28e58e3",
+      "sha256": "9cf6b953bdcd4678a135e42648edc7b60810a9099c7569734f2d6737f36f0d27",
+      "mode": "0o644",
+      "bytes": 16436956,
+      "archiveMember": "04-v22.zst",
+      "patchSha256": "625370fa93c3f9f62d2b8437b9eb7c44bd0f5ee521d00f36aa9b7efc57626b50",
+      "patchBytes": 4512
+    },
+    {
+      "path": "localization/work/source-inventory-20261107/combined-provisional-v24-20261109.json",
+      "baseInventory": "combined-provisional-v22-20261109.json",
+      "baseSha256": "9c7a2fd726edaae4dedb6e9438b52a6be8c2b6abe1177557f468a019e28e58e3",
+      "sha256": "59af0e359fc365866c1c095684f880f98ac8067fa5ab0e10b55738cee9e82bb5",
+      "mode": "0o644",
+      "bytes": 16442192,
+      "archiveMember": "05-v22.zst",
+      "patchSha256": "41f58557b7f0353d9af5c4fb7e2b7e588143d97c0603fc31dce688630b4afd92",
+      "patchBytes": 5666
+    },
+    {
+      "path": "localization/work/source-inventory-20261107/combined-provisional-v26-20261109.json",
+      "baseInventory": "combined-provisional-v28-20261109.json",
+      "baseSha256": "617fa1c7da80ada8128d2a371d83ff8d5424140feea5c4a7ec248d9a57a8f389",
+      "sha256": "87a274c406453b1bd38bb6b73a4658a5a8f0f18ff3c564c4246c647c9635ebc3",
+      "mode": "0o644",
+      "bytes": 16528530,
+      "archiveMember": "06-v28.zst",
+      "patchSha256": "1c7de5fe168993ba35517e14640469f8356537eefa46713d08a667589be3c79e",
+      "patchBytes": 11196
+    },
+    {
+      "path": "localization/work/source-inventory-20261107/combined-provisional-v26-final-20261109.json",
+      "baseInventory": "combined-provisional-v28-20261109.json",
+      "baseSha256": "617fa1c7da80ada8128d2a371d83ff8d5424140feea5c4a7ec248d9a57a8f389",
+      "sha256": "8a62a0c9783795e53fbe4b7aa0e5b699e650cbda8bf07bb5b309d9558781b45f",
+      "mode": "0o644",
+      "bytes": 16530190,
+      "archiveMember": "07-v28.zst",
+      "patchSha256": "224565ebf758f39b34c43b8f8a752b739ac9d7818fe2ac7ce4baaa2afc60a249",
+      "patchBytes": 10719
+    },
+    {
+      "path": "localization/work/source-inventory-20261107/combined-provisional-v27-20261109.json",
+      "baseInventory": "combined-provisional-v28-20261109.json",
+      "baseSha256": "617fa1c7da80ada8128d2a371d83ff8d5424140feea5c4a7ec248d9a57a8f389",
+      "sha256": "b116e6b3f8e7d7d59dfef2d18fb076599955db2b4cab906d4952f045a2cda368",
+      "mode": "0o644",
+      "bytes": 16531829,
+      "archiveMember": "08-v28.zst",
+      "patchSha256": "115f415dfb46c2244c544468c7f0bcce8347a2bb038d072ed946f0f6aec9fca2",
+      "patchBytes": 9400
+    },
+    {
+      "path": "localization/work/source-inventory-20261107/combined-provisional-v30-20261109.json",
+      "baseInventory": "combined-provisional-v29-20261109.json",
+      "baseSha256": "077047106fd61bdb35fbf43a12210fc18d80208de40bb74567c84bdc1178a119",
+      "sha256": "1f67fe32a06ab326c7b67ad9d263997bf00fd30d983fef0e489016a0856cce86",
+      "mode": "0o644",
+      "bytes": 16518567,
+      "archiveMember": "09-v29.zst",
+      "patchSha256": "1ee10e707f7264ac5ff23feae6fcf74c748f448dabcafcaa530414bbf46b71bd",
+      "patchBytes": 2850
+    },
+    {
+      "path": "localization/work/source-inventory-20261107/combined-provisional-v31-20261109.json",
+      "baseInventory": "combined-provisional-v29-20261109.json",
+      "baseSha256": "077047106fd61bdb35fbf43a12210fc18d80208de40bb74567c84bdc1178a119",
+      "sha256": "b8a635bab364087f078a6ff4b4a76a0441f9824cbe46c118ecfc373f692edb43",
+      "mode": "0o644",
+      "bytes": 16518279,
+      "archiveMember": "10-v29.zst",
+      "patchSha256": "64ed9eef24d9fd95f39619ecf540022f051e4d26fc2d5b1340e847907bace1b7",
+      "patchBytes": 3030
+    },
+    {
+      "path": "localization/work/source-inventory-20261107/combined-provisional-v32-20261109.json",
+      "baseInventory": "combined-provisional-v33-20261109.json",
+      "baseSha256": "6d8549ddc0e3a8406ef80ee64c0f1496e1158d9a24f83ec0bc42eafde4895a45",
+      "sha256": "e2137d9a08f72e137c0220c5070067dfb9b755d15d3f96ce5733cfb6aebb7fb6",
+      "mode": "0o644",
+      "bytes": 16518053,
+      "archiveMember": "11-v33.zst",
+      "patchSha256": "80f3d4358cf1d2c9e3283fb5853ce589e83a575d73736a5370ffdb9bc591f081",
+      "patchBytes": 2216
+    },
+    {
+      "path": "localization/work/managed-game-roles-20261109.8LlHLN/v22-first.json",
+      "baseInventory": "combined-provisional-v22-20261109.json",
+      "baseSha256": "9c7a2fd726edaae4dedb6e9438b52a6be8c2b6abe1177557f468a019e28e58e3",
+      "sha256": "9c7a2fd726edaae4dedb6e9438b52a6be8c2b6abe1177557f468a019e28e58e3",
+      "mode": "0o644",
+      "bytes": 16430878,
+      "archiveMember": "12-v22.zst",
+      "patchSha256": "3f6cf29fdf477559327ad99495afc5981c9fcb0d5a57e74e8c56990caadf59e8",
+      "patchBytes": 2062
+    },
+    {
+      "path": "localization/work/managed-game-roles-20261109.8LlHLN/candidate.json",
+      "baseInventory": "combined-provisional-v22-20261109.json",
+      "baseSha256": "9c7a2fd726edaae4dedb6e9438b52a6be8c2b6abe1177557f468a019e28e58e3",
+      "sha256": "f6ef19c95a40bbd2f7c7570e4e0eae0a0119a6d072f0e75bffbd1d20faf57256",
+      "mode": "0o644",
+      "bytes": 16430873,
+      "archiveMember": "13-v22.zst",
+      "patchSha256": "c4dde7df7aaca692ce96210c6cefae2c048bc6e054aadae8a48eb2954eae56c9",
+      "patchBytes": 2142
+    },
+    {
+      "path": "localization/work/game-component-fields-20261109.Ku7FyS/v20-first.json",
+      "baseInventory": "combined-provisional-v20-20261109.json",
+      "baseSha256": "50b7d42c7b02f42e88c0133c25544a7022f1f00b7d71a0ada19d2e420303d197",
+      "sha256": "50b7d42c7b02f42e88c0133c25544a7022f1f00b7d71a0ada19d2e420303d197",
+      "mode": "0o644",
+      "bytes": 16411658,
+      "archiveMember": "14-v20.zst",
+      "patchSha256": "ae53d58df27bc36c118129fb6df47993ee410e533dffbcce932cba963d13d445",
+      "patchBytes": 2123
+    },
+    {
+      "path": "localization/work/game-component-consumers-20261109.Crtz9a/v21-first.json",
+      "baseInventory": "combined-provisional-v21-20261109.json",
+      "baseSha256": "6810d69351e46169a7a54c2bab43f438d518d9046bc4ab2ee2ae4634c9037bdb",
+      "sha256": "6810d69351e46169a7a54c2bab43f438d518d9046bc4ab2ee2ae4634c9037bdb",
+      "mode": "0o644",
+      "bytes": 16407378,
+      "archiveMember": "15-v21.zst",
+      "patchSha256": "fa9fc796d5d2f1ef00badb53cb935c1c6c5a47d69335fefb25a16abaf74ede7f",
+      "patchBytes": 2101
+    }
+  ]
+}

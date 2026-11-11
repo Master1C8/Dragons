@@ -109,6 +109,23 @@ The tool verifies the exports and uses the recorded assembler and role
 manifests from Git. The archival check reproduced v42 and 30 earlier
 inventories byte for byte using the downloaded exports.
 
+The [historical inventory delta receipt](localization/evidence/archival-historical-inventory-deltas-20261111.json)
+pins 16 earlier inventory snapshots and comparison inputs. Download its
+archive from the same draft and verify the archive and patch hashes. Rebuild
+each row's `baseInventory` with the command above, verify its SHA-256 and
+decode the matching patch with Zstandard 1.5.7.
+
+```sh
+zstd -q -d --patch-from="$verified_base_inventory" "$verified_patch" -o "$fresh_output"
+```
+
+Verify the decoded file's SHA-256 and restore its recorded mode. The
+[inventory copy receipt](localization/evidence/archival-inventory-copies-20261111.json.gz)
+maps old paths to an extracted `export`, a rebuilt `inventory` or the
+original path recorded in the `delta` receipt. Copy the corresponding
+verified bytes and apply the recorded mode. The check restored all 16
+snapshots and matched all 67 copies to their recovered sources.
+
 For the nine locales with additional font inputs, download
 `Dragons-font-build-inputs.zip` from the same maintainer draft. Verify its
 SHA-256 before extracting it into `$recovery/fonts`:
@@ -505,6 +522,15 @@ Create a fresh venv with the listed Python and install those exact requirements
 with `pip install --no-deps`. The recovery check installed the dependencies
 and imported UnityPy, TypeTreeGeneratorAPI and fontTools. Its pinned
 `tpk_ar` wheel was built from the source distribution.
+
+The [Python target receipt](localization/evidence/archival-python-targets-20261111.json)
+records the separate wheel installs used by three CLI locales and the
+static shaping check. Use each recorded Python and pip version to install
+its requirements into a fresh directory with
+`python -m pip install --no-deps --target "$target" ...`.
+The check imported the recorded modules and matched all surviving
+package files. It also compared the generated script bodies, installation
+records and compiled Python code.
 
 The [German batch receipt](localization/evidence/archival-de-partial-20261111.json)
 and the [early German and French batch receipt](localization/evidence/archival-de-fr-early-20261111.json)
