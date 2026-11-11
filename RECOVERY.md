@@ -1037,6 +1037,14 @@ The helper verifies each Git source and rebuilt output. The check matched
 all 28 original DLLs and verified the 28 dependent entries in the binary
 copy receipt. Restore a needed source DLL before replaying its copies.
 
+The [early metadata audit receipt](localization/evidence/archival-early-metadata-audit-builds-20261111.json)
+uses the same command to restore the audit and its negative-test mutator.
+Pass `--cecil "$verified_mono_cecil"` for the mutator, using Mono.Cecil
+0.11.6 for .NET Standard 2.0. The audit's source is reconstructed from the
+pinned Git revision and four recorded edits. The check rebuilt all six
+DLL and PDB outputs byte for byte and restored the six dependent entries
+in the binary copy receipt.
+
 The [historical symbol and assembly receipt](localization/evidence/archival-historical-dotnet-symbols-20261111.json)
 uses the same command for 38 portable PDBs and 50 DLLs. The builds pin
 the Git inputs, compiler paths and embedded-source selection observed

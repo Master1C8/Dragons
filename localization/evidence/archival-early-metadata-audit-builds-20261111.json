@@ -1,0 +1,115 @@
+{
+  "sdk": "8.0.131",
+  "historicalCheckout": "/Users/antonkrutov/Desktop/Dragons",
+  "builds": [
+    {
+      "project": {
+        "path": "localization/tools/managed-metadata-audit/managed-metadata-audit.csproj",
+        "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+        "sha256": "1458e6076e669d64faf33a8cf5e4b104546a8b476ee57e423238760a7054028d"
+      },
+      "sources": [
+        {
+          "path": "localization/tools/managed-metadata-audit/Program.cs",
+          "sha256": "b41430636920450cd348672d5076882de2a24ff78f4d7909342f6adfaf98fe2b",
+          "revision": "ed21dd05be63061ca169926d707e01192efd6a16",
+          "baseSha256": "e8a8800bb4c587f84fc75c1f59ad959419ae79d88590e5c9605bd9ad219f31d0",
+          "edits": [
+            [
+              2768,
+              3485,
+              ""
+            ],
+            [
+              5350,
+              5700,
+              ""
+            ],
+            [
+              9690,
+              9831,
+              "        returns = new { m.MethodReturnType.Attributes, m.MethodReturnType.HasConstant, m.MethodReturnType.Constant,\n"
+            ],
+            [
+              10203,
+              10438,
+              "        custom = Attributes(p), get = MethodIdentity(p.GetMethod), set = MethodIdentity(p.SetMethod), other = p.OtherMethods.Select(MethodIdentity) }),\n"
+            ]
+          ]
+        }
+      ],
+      "objectPath": "localization/work/managed-metadata-20261110.NICDw4/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "3049b138939b94f81b2f5d068c72d3681e6ff7c7",
+      "assemblyName": "managed-metadata-audit",
+      "embeddedSources": "generated",
+      "pathMap": true
+    },
+    {
+      "project": {
+        "path": "localization/work/managed-metadata-20261110.NICDw4/mutate/mutate.csproj",
+        "blob": "a3323f0c9d542ceb759056a2c5add0bbf297989b",
+        "sha256": "cd242c77c6ca1934b0a5f27ec6e9902cd0166f21ccb8c1e5f9db14000f602361"
+      },
+      "sources": [
+        {
+          "path": "localization/work/managed-metadata-20261110.NICDw4/mutate/Program.cs",
+          "blob": "6bc2829f4702759bd8f7a8d8a0a41cee0b20986a",
+          "sha256": "56bc6b7789b89eed3f078cf6a391b75e3f556cef8ba552197333f4f081c58486"
+        }
+      ],
+      "objectPath": "localization/work/managed-metadata-20261110.NICDw4/mutate/obj",
+      "configuration": "Debug",
+      "sourceRevisionId": "3049b138939b94f81b2f5d068c72d3681e6ff7c7",
+      "assemblyName": "mutate",
+      "embeddedSources": "all",
+      "pathMap": true,
+      "cecilSha256": "831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf",
+      "cecilHintPath": "../bin-final/Mono.Cecil.dll"
+    }
+  ],
+  "outputs": {
+    "localization/work/managed-metadata-20261110.NICDw4/bin/managed-metadata-audit.dll": {
+      "build": 0,
+      "member": "bin/Debug/net8.0/managed-metadata-audit.dll",
+      "sha256": "ca901b526102b593fcded08482fa51fa6eed47e2c918117dda6b03358195a3a0",
+      "bytes": 66560,
+      "mode": "0o644"
+    },
+    "localization/work/managed-metadata-20261110.NICDw4/bin/managed-metadata-audit.pdb": {
+      "build": 0,
+      "member": "bin/Debug/net8.0/managed-metadata-audit.pdb",
+      "sha256": "49f7b54709986d9f03637ef303a4960ad27d6aad36384e008e420e9190b4c078",
+      "bytes": 15064,
+      "mode": "0o644"
+    },
+    "localization/work/managed-metadata-20261110.NICDw4/obj/Debug/net8.0/ref/managed-metadata-audit.dll": {
+      "build": 0,
+      "member": "obj/Debug/net8.0/ref/managed-metadata-audit.dll",
+      "sha256": "04a9ac2f03f23a99836f3c2fc0904daab030423e0914343fce1b35ab21352365",
+      "bytes": 8192,
+      "mode": "0o644"
+    },
+    "localization/work/managed-metadata-20261110.NICDw4/mutator-bin/mutate.dll": {
+      "build": 1,
+      "member": "bin/Debug/net8.0/mutate.dll",
+      "sha256": "b5cd1d157e70939458f8c77fbc911fd94b3393344702274590a6659fc929348f",
+      "bytes": 5632,
+      "mode": "0o644"
+    },
+    "localization/work/managed-metadata-20261110.NICDw4/mutator-bin/mutate.pdb": {
+      "build": 1,
+      "member": "bin/Debug/net8.0/mutate.pdb",
+      "sha256": "e9c4df783fb57559cac26dcb62b2a9a188ef52f1cdf0e016dbf7c61a639780e3",
+      "bytes": 11756,
+      "mode": "0o644"
+    },
+    "localization/work/managed-metadata-20261110.NICDw4/mutate/obj/Debug/net8.0/ref/mutate.dll": {
+      "build": 1,
+      "member": "obj/Debug/net8.0/ref/mutate.dll",
+      "sha256": "f01c56da57d2a4302574c220195e4949dd4810c1bce98cd353946a4e96f0bcfc",
+      "bytes": 5632,
+      "mode": "0o644"
+    }
+  }
+}

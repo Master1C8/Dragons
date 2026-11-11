@@ -38,6 +38,17 @@ def restore_source(row, build, source_dir=None):
         if not re.fullmatch(r'[0-9a-f]{40}', revision):
             raise ValueError('Expected a full source revision')
         data = subprocess.check_output([*git, 'show', f'{revision}:{path.as_posix()}'])
+    if 'edits' in row:
+        if hashlib.sha256(data).hexdigest() != row['baseSha256']:
+            raise ValueError(f'Probe base source fingerprint mismatch: {path}')
+        pieces = []
+        position = 0
+        for start, end, replacement in row['edits']:
+            if not position <= start <= end <= len(data):
+                raise ValueError(f'Invalid probe source edit: {path}')
+            pieces.extend((data[position:start], replacement.encode('utf-8')))
+            position = end
+        data = b''.join([*pieces, data[position:]])
     if hashlib.sha256(data).hexdigest() != row['sha256']:
         raise ValueError(f'Probe source fingerprint mismatch: {path}')
     destination = build / path.name
