@@ -1822,6 +1822,40 @@ file-change events. Its archive carries the file names and operation
 types, and the journal supplies the text. The restored stream matched
 the original bytes.
 
+The [CLI report excerpt receipt](localization/evidence/archival-cli-report-excerpts-20261111.json.gz)
+maps 42 historical files to exact byte ranges in retained local command
+output. Keep the recorded streams available for this procedure. Pass a
+recorded checkout-relative path and a fresh output file.
+
+```sh
+python3.12 - "$recorded_path" "$fresh_report" <<'PY'
+import gzip, hashlib, json, sys
+from pathlib import Path
+
+with gzip.open("localization/evidence/archival-cli-report-excerpts-20261111.json.gz", "rt") as stream:
+    receipt = json.load(stream)
+row = receipt["outputs"][sys.argv[1]]
+expected = receipt["streams"][row["stream"]]
+raw = Path(row["stream"]).read_bytes()
+assert len(raw) == expected["bytes"] and hashlib.sha256(raw).hexdigest() == expected["sha256"]
+offset = row["eventOffset"]
+event = raw[offset:offset + row["eventBytes"]]
+assert hashlib.sha256(event).hexdigest() == row["eventSha256"]
+item = json.loads(event)
+assert item["type"] == "item.completed" and item["item"]["type"] == "command_execution"
+body = item["item"]["aggregated_output"].encode("utf-8")
+offset = row["outputOffset"]
+data = body[offset:offset + row["bytes"]]
+assert len(data) == row["bytes"] and hashlib.sha256(data).hexdigest() == row["sha256"]
+output = Path(sys.argv[2])
+with output.open("xb") as stream:
+    stream.write(data)
+output.chmod(int(row["mode"], 8))
+PY
+```
+
+The command reproduced all 42 files byte for byte.
+
 The [renderer acceptance index](localization/evidence/archival-renderer-acceptance-20261111.json)
 pins the static shaping, staged line break, paired runtime and Parallels
 reports. Download its archive from the `recovery-inputs-v0.2.1` maintainer
