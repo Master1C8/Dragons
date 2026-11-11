@@ -562,6 +562,41 @@ PY
 
 The check reproduced the original log byte for byte and matched its mode.
 
+The [Windows test skeleton receipt](localization/evidence/archival-windows-stock-stubs-20261111.json.gz)
+records 86 retired test trees. Each contained directories and a single
+empty stock `configs.app.ini` after the other game files were removed.
+To reproduce the remaining structure, provide the owned Windows stock
+game directory and a fresh output directory.
+
+```sh
+python3.12 - "$windows_stock_game" "$fresh_tree_output" <<'PY'
+import gzip, hashlib, json, subprocess, sys
+from pathlib import Path
+
+with gzip.open("localization/evidence/archival-windows-stock-stubs-20261111.json.gz", "rt") as stream:
+    receipt = json.load(stream)
+stock = Path(sys.argv[1]) / receipt["stockMember"]
+data = stock.read_bytes()
+assert len(data) == receipt["stockBytes"] and hashlib.sha256(data).hexdigest() == receipt["stockSha256"]
+output = Path(sys.argv[2])
+output.mkdir()
+for tree in receipt["trees"]:
+    destination = output / tree["path"]
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    for relative, mode in tree["directories"]:
+        (destination / relative).mkdir()
+    config = destination / receipt["stockMember"]
+    subprocess.run(["/bin/cp", "-p", stock, config], check=True)
+    config.chmod(int(tree["configMode"], 8))
+    for relative, mode in reversed(tree["directories"]):
+        (destination / relative).chmod(int(mode, 8))
+PY
+```
+
+The check matched every relative path, mode and configuration file.
+The copied configuration inherits metadata from the stock file. Newly
+created directories receive filesystem metadata from the current host.
+
 The [installer copy receipt](localization/evidence/archival-installer-resource-copies-20261111.json.gz)
 maps generated payload copies in old installer work directories to identical
 files in the accepted 0.2.1 installer archives. Use the same helper and
