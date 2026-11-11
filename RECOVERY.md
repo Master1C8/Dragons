@@ -2163,6 +2163,13 @@ uses the same command for one additional stream. The helper verifies the
 recorded Git blob and selects its exact text range to fill the remaining
 gap. The complete stream matched after downloading the index.
 
+The [Git command output receipt](localization/evidence/archival-cli-event-git-commands-20261111.json)
+uses the same command for two more CLI streams. The helper reproduces
+the French staged diff from its committed revision and reruns the
+Spanish search against the recorded `HANDOFF.md` blob. The search was
+verified with ripgrep 15.2.0. The helper checks the command output
+fingerprints before restoring the streams.
+
 The [retained input gap receipt](localization/evidence/archival-cli-event-retained-input-gaps-20261111.json)
 uses the same command for the Turkish stream and the third Polish
 continuation. Rebuild the two JSON inputs under a fresh input root,

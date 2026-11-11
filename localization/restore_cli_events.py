@@ -127,6 +127,37 @@ def rebuild(row, events, records, *, journal_root=None, slice_records=None, reta
     def output_part(part):
         if part.keys() == {'git'}:
             return git_text(part['git'])
+        if part.keys() == {'gitGrep'}:
+            source = part['gitGrep']
+            text = git_text({'blob': source['blob'], 'sha256': source['sha256']})
+            raw = subprocess.check_output([
+                'rg', '--no-config', '-n', '-i', '--color', 'never',
+                '-e', source['regex'], '-',
+            ], input=text.encode())
+            rendered = ''.join(raw.decode().splitlines(keepends=True)[:source['lines']])
+            if hashlib.sha256(rendered.encode()).hexdigest() != source['renderedSha256']:
+                raise ValueError('CLI output Git search fingerprint mismatch')
+            start = source['start']
+            end = start + source['length']
+            if not 0 <= start < end <= len(rendered):
+                raise ValueError('Unexpected CLI output Git search range')
+            return rendered[start:end]
+        if part.keys() == {'gitDiff'}:
+            source = part['gitDiff']
+            revision = source['revision']
+            if not re.fullmatch(r'[0-9a-f]{40}', revision):
+                raise ValueError('Unexpected CLI diff Git revision')
+            paths = [relative_path(name) for name in source['paths']]
+            raw = subprocess.check_output([
+                'git', '-C', str(CHECKOUT), '--literal-pathspecs', 'diff',
+                '--no-ext-diff', '--no-textconv', '--no-color', '--no-renames',
+                '--abbrev=7', '--diff-algorithm=myers', '--indent-heuristic',
+                '--unified=3', '--src-prefix=a/', '--dst-prefix=b/',
+                revision + '^', revision, '--', *map(str, paths),
+            ])
+            if hashlib.sha256(raw).hexdigest() != source['sha256']:
+                raise ValueError('CLI output Git diff fingerprint mismatch')
+            return raw.decode('utf-8')
         if part.keys() == {'document'}:
             return document_text(part['document'])
         if part.keys() == {'checkoutSlice'}:
