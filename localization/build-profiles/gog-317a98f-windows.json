@@ -1,0 +1,5389 @@
+{
+  "schemaVersion": 1,
+  "platform": "windows",
+  "store": "gog",
+  "storeId": "1405554601",
+  "buildId": "60193676705807870",
+  "gameVersion": "11/4/2026_317a98f0",
+  "unityVersion": "6000.3.14f1",
+  "files": {
+    "Managed/Assembly-CSharp.dll": {
+      "sha256": "8610c137ec3d8d5993129a91c0c25a480d2c478b8fe5f3a2c7d1bd20686bb10e",
+      "size": 449536
+    },
+    "Managed/GatorDragonGamesExtensions.dll": {
+      "sha256": "7a5df7d79d3cca119afcf1d65e6ffc9b217d69a8a6e0348128b1cf4d5ba0704d",
+      "size": 18944
+    },
+    "Managed/MackySoft.SerializeReferenceExtensions.dll": {
+      "sha256": "3a01deb4a5573ea88f147de663daeb736a28b679ddbb242cad0c3a595762ce89",
+      "size": 6144
+    },
+    "Managed/Microsoft.CSharp.dll": {
+      "sha256": "144a06f84d540075afffb3d5206864e2031531a787be5f3b2a3c36f237acb894",
+      "size": 301568
+    },
+    "Managed/Mono.Security.dll": {
+      "sha256": "618009319dbf3ae374f9b5dc0d0522e1e1bdd172200c120a5471747b7991a584",
+      "size": 241152
+    },
+    "Managed/Naelstrof.Extensions.dll": {
+      "sha256": "d82322bfc46665de2cb40970ea49a5cd2918f7bcf737c95d2575f6cb4427559a",
+      "size": 11264
+    },
+    "Managed/Naelstrof.Splines.dll": {
+      "sha256": "63257af1026e0f5cf9db634d182b3839a5c11a3243f393846a67dc0cd183296f",
+      "size": 17408
+    },
+    "Managed/Naelstrof.UnityScriptableSettings.dll": {
+      "sha256": "d33e4704a8007849038f385da6597496730d6c365309cab438f9435c0f04e1d3",
+      "size": 40448
+    },
+    "Managed/NaelstrofRaliv.DynamicPenetrationForGames.dll": {
+      "sha256": "5fb534be453a265f2764a06c1bcaa01e59b65fc987648d835a74dd350d4b198c",
+      "size": 52224
+    },
+    "Managed/Newtonsoft.Json.dll": {
+      "sha256": "a56146202232958f46bd6a28b5a7da166aea123ee0d646735a46e5c341dfbf1f",
+      "size": 691712
+    },
+    "Managed/RalivIK.dll": {
+      "sha256": "97f107c54aef06d048b7c0c421a103e3917816c39ab80b6877ded7183b51ae6e",
+      "size": 19456
+    },
+    "Managed/System.ComponentModel.Composition.dll": {
+      "sha256": "0c3e81771a5fe9657bea02887996de72606c3cb247e4fbe413f743f40e2af244",
+      "size": 257024
+    },
+    "Managed/System.Configuration.dll": {
+      "sha256": "04907729e87a101e62d3a5c93cfa16688bee745d05440d6daa0c541964be27ab",
+      "size": 124928
+    },
+    "Managed/System.Core.dll": {
+      "sha256": "a5e7d47313da0eca0b92a901a30498f5e970916faf63b70b74dd62b09760ed72",
+      "size": 1113088
+    },
+    "Managed/System.Data.DataSetExtensions.dll": {
+      "sha256": "498f14c37d83f946a47a79e01de777e62f269ee9c3820f2026b59ab1c1b9222f",
+      "size": 29696
+    },
+    "Managed/System.Data.dll": {
+      "sha256": "427478545ce66b632414ca838088ea073f250ed16b21c70005f48cb571350e47",
+      "size": 2125312
+    },
+    "Managed/System.Drawing.dll": {
+      "sha256": "e182e688223acedb8135227e8fbff17d5ed22f47f81141aa9cb96ef1ab9926fc",
+      "size": 489984
+    },
+    "Managed/System.EnterpriseServices.dll": {
+      "sha256": "84af394ad863e31407eb2b9555ca7e96a9f1966630f5d7f0eec54f0011f6babc",
+      "size": 44544
+    },
+    "Managed/System.IO.Compression.FileSystem.dll": {
+      "sha256": "2730d2a27f9362259a406ea14727e5f0a71bc21a6825be94f8623a84bd9f9c79",
+      "size": 18432
+    },
+    "Managed/System.IO.Compression.dll": {
+      "sha256": "80421a67b4162a5f1b4aad6a8327c6d1fb4b04dedd39dae14a770b812594fae2",
+      "size": 114688
+    },
+    "Managed/System.IO.Hashing.dll": {
+      "sha256": "ac7ac3e83805b0b621c48b90543dc733c9a89106835278618357d6187e3da74e",
+      "size": 50488
+    },
+    "Managed/System.Memory.dll": {
+      "sha256": "c4f030a2cba7da7cdcf493257c24560e203d355904aee490d645a935842f834a",
+      "size": 4608
+    },
+    "Managed/System.Net.Http.dll": {
+      "sha256": "3cd3ac19050d5031c13644cd87958ad8029b79ce16c7747faf3d0542e7fb45a3",
+      "size": 122880
+    },
+    "Managed/System.Numerics.dll": {
+      "sha256": "ac9224b32355a09f09b706cab568384f64cf8116825c5911cef1e13221c61c38",
+      "size": 119296
+    },
+    "Managed/System.Runtime.CompilerServices.Unsafe.dll": {
+      "sha256": "01748200f2400c742aa689f1f5101bd6298efdfd92c00c18f4fa473847235ba9",
+      "size": 18024
+    },
+    "Managed/System.Runtime.Serialization.dll": {
+      "sha256": "1152ef687dbe39e0ccb6b9a68f6501004415a729072df29abab3bc7c66840217",
+      "size": 934400
+    },
+    "Managed/System.Runtime.dll": {
+      "sha256": "e0a7334b7ba419aaab6bd3bb6992d693e689341a9178172c9bf99c2aa6a085bd",
+      "size": 12288
+    },
+    "Managed/System.Security.dll": {
+      "sha256": "2101a4dd4475285f96b1ac3ba1715a52aa8067690709e675cc49a9eb8ed901a4",
+      "size": 320000
+    },
+    "Managed/System.ServiceModel.Internals.dll": {
+      "sha256": "888ec94a59c127854871b76afa49fdcefdf723c0f0b6fd78e87f73a8495b63b5",
+      "size": 215040
+    },
+    "Managed/System.Transactions.dll": {
+      "sha256": "f65dbc257d26a361dcc01edd58bf3e542d186c8ee492a4f7a62b0dd7d59f7050",
+      "size": 35328
+    },
+    "Managed/System.Xml.Linq.dll": {
+      "sha256": "4f5d6bf313cbf091e7bff83d07dd03ed93d0ecb3ddb025ae786aadd6b5f477fb",
+      "size": 136704
+    },
+    "Managed/System.Xml.dll": {
+      "sha256": "79194220adfcf027a334c87b1adcc6d07b9660a4061e04b3d9500c10d30f7d49",
+      "size": 3160064
+    },
+    "Managed/System.dll": {
+      "sha256": "7019d6b6dbfa07cf30f62e7d3ccb969f70cbf001fd72112938ffb535c7f75d81",
+      "size": 2641920
+    },
+    "Managed/Unity.AI.Navigation.dll": {
+      "sha256": "e07c81eadf41c047bfa1512273600bf36284cb29cdbea07f361c3d8ddcb5650a",
+      "size": 24576
+    },
+    "Managed/Unity.Addressables.dll": {
+      "sha256": "6cefedcd429f8eaafa95a2878afc62ef6ac8e8b5e261ead3a3a7f4493a4c0a8c",
+      "size": 116736
+    },
+    "Managed/Unity.Burst.Unsafe.dll": {
+      "sha256": "9d9c1ff52411decbee5d9f0d1cd61ebeaa222077aa77a52101ea3debafae98e2",
+      "size": 5632
+    },
+    "Managed/Unity.Burst.dll": {
+      "sha256": "53643b74059635ab81381b5f911f403275810c31d148a76d67bb73565551941e",
+      "size": 304640
+    },
+    "Managed/Unity.Collections.LowLevel.ILSupport.dll": {
+      "sha256": "ff50383f807f9692e4913b97e47d86fefcb8faa33d6d48cd3e3fd6fc7ffb448d",
+      "size": 5120
+    },
+    "Managed/Unity.Collections.dll": {
+      "sha256": "7ce88d79d48768dada52fda3de37bd91c06c7304a528f667e6dfd48ed8cb68d3",
+      "size": 453632
+    },
+    "Managed/Unity.InputSystem.ForUI.dll": {
+      "sha256": "88d46945f1e4f06eacdc112c344a82601c79e0a87c4f067041d440be66a8cf72",
+      "size": 16384
+    },
+    "Managed/Unity.InputSystem.dll": {
+      "sha256": "94d2e9efdbae9d2bf42067c98edb51c829bba57c72ddf49d2fbe99d569ee2c75",
+      "size": 1137152
+    },
+    "Managed/Unity.InternalAPIEngineBridge.004.dll": {
+      "sha256": "7ee2bc75009aab0723decb55e66d6041e3f6597f469787712d52b56c19f118b3",
+      "size": 4608
+    },
+    "Managed/Unity.InternalAPIEngineBridge.013.dll": {
+      "sha256": "e0ac1a0f5b782d93a253a3e54cf6d522c7197f372329db7b17bd4c76b7cfa94f",
+      "size": 5632
+    },
+    "Managed/Unity.Localization.dll": {
+      "sha256": "67e2174d2c28d435f28430a976dc0b646e9d025ab5068ca1fc32d8c6b33357ad",
+      "size": 314880
+    },
+    "Managed/Unity.Mathematics.dll": {
+      "sha256": "2d0398f42c1440857fb1e8e5cff0647d7656f47f48d0d977c6d6e6fbb47bd4f0",
+      "size": 752640
+    },
+    "Managed/Unity.MemoryProfiler.dll": {
+      "sha256": "0b8e7fb6c7576ddfcb57c28c5d93fc956bba769b302b5d50bff71731650359e5",
+      "size": 7168
+    },
+    "Managed/Unity.Multiplayer.Center.Common.dll": {
+      "sha256": "eb2cfca4217b5722db9e47dad9b03efe4808d56762d69657ee445c48c070635a",
+      "size": 10752
+    },
+    "Managed/Unity.Profiling.Core.dll": {
+      "sha256": "5844bfc7dbff206499c95b2773e181d676ca54f8a36387604a26d1d652b7abed",
+      "size": 10240
+    },
+    "Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll": {
+      "sha256": "0de746d00e8d33fd9a6ba37cb7061829c997037cf39678bd8fa1cdc191121ecf",
+      "size": 9216
+    },
+    "Managed/Unity.RenderPipelines.Core.Runtime.Shared.dll": {
+      "sha256": "4d107d0c787c7e65fdd78bd821fa68e7a53093d9c89a1600168ea098e44fcced",
+      "size": 5632
+    },
+    "Managed/Unity.RenderPipelines.Core.Runtime.dll": {
+      "sha256": "0edf7f466004eb162fb649d749773715729e797bf40805b0cbad1e81f4987017",
+      "size": 1201152
+    },
+    "Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll": {
+      "sha256": "563bab172661ee80c29a648fa26b79bcf4fcebd345ba7836c82ba68e3e9b5a98",
+      "size": 4608
+    },
+    "Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll": {
+      "sha256": "fbbaa95cf90e017022d6935de7ee4b796b68b0ed936b3c0b743c25fd448fb258",
+      "size": 235008
+    },
+    "Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll": {
+      "sha256": "39304400aa2a4ee7bdf8ce5b34be8837e4db8665ab1995e66c18d34fbd81373b",
+      "size": 4608
+    },
+    "Managed/Unity.RenderPipelines.Universal.2D.Runtime.dll": {
+      "sha256": "d41de7d0a65fed456b44282799b54d26c906cae01c23d2ace4c96909e42b2aba",
+      "size": 232960
+    },
+    "Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll": {
+      "sha256": "c5850cd6e028743a3c45eef80a996f1e11ff6fe1dadbab3c2f0218ed7db2e6fc",
+      "size": 5632
+    },
+    "Managed/Unity.RenderPipelines.Universal.Runtime.dll": {
+      "sha256": "be249a2af1956f2eb6113d4a3eb3413198b155e6ee6c01d078441a0b8addb3ab",
+      "size": 765952
+    },
+    "Managed/Unity.RenderPipelines.Universal.Shaders.dll": {
+      "sha256": "63375375cff4ba3a2bef2fa881c1fc05252f14a8c47cfd14e2e60b5ae20876e0",
+      "size": 4608
+    },
+    "Managed/Unity.ResourceManager.dll": {
+      "sha256": "40d88ff7037aa41a2b93e7e9bd0753b803f97f98612d81163ebaf07d03b3fd2d",
+      "size": 143360
+    },
+    "Managed/Unity.ScriptableBuildPipeline.dll": {
+      "sha256": "e8997ce53cd4c00ef8275dd9e2febbf85b396bfbf84718b0f0913984ae0cb446",
+      "size": 9216
+    },
+    "Managed/Unity.TextMeshPro.dll": {
+      "sha256": "e22d8f83e97d0a27bed0480cfd52d13a6b26b1e74e3ad67e6a17316090ec3f9f",
+      "size": 445952
+    },
+    "Managed/Unity.UnifiedRayTracing.Runtime.dll": {
+      "sha256": "eade2c95f85f05e0befd2e9fae2698a8aadfcb391078bd7c35314f1f97022679",
+      "size": 101376
+    },
+    "Managed/Unity.VisualEffectGraph.Runtime.dll": {
+      "sha256": "2de1ad5122249edecf6893fba2020eba344464bdd3b46aa4572b53ecf3915aff",
+      "size": 78848
+    },
+    "Managed/UnityEngine.AIModule.dll": {
+      "sha256": "2313d9ddfba0d37e9f58e14210cb6511dfdf7173bd6a56df5764a5090ecba443",
+      "size": 77224
+    },
+    "Managed/UnityEngine.AMDModule.dll": {
+      "sha256": "f310d34e8ac88e2f6823b38f6503f7459f1f9eb8fe00d4024268bfad94f916c6",
+      "size": 21936
+    },
+    "Managed/UnityEngine.ARModule.dll": {
+      "sha256": "76f8902f5e5db7ffa0941da50eeca6479c826baca58163f924654f1cb6b86a53",
+      "size": 25520
+    },
+    "Managed/UnityEngine.AccessibilityModule.dll": {
+      "sha256": "6d5aa9cb445ed6ec7c30c42ad9594a1acd3252c809fb16dd278f43803b4a5c93",
+      "size": 50088
+    },
+    "Managed/UnityEngine.AdaptivePerformanceModule.dll": {
+      "sha256": "c4ccf9093788233e5805751bbb9cc21b32b1f9d94e1577e7dc305576528015d7",
+      "size": 124840
+    },
+    "Managed/UnityEngine.AndroidJNIModule.dll": {
+      "sha256": "37c009f548d7958cb7e29df26623c8ca57510c65e81f7c8c567785913927cd39",
+      "size": 121256
+    },
+    "Managed/UnityEngine.AnimationModule.dll": {
+      "sha256": "ba13f6bc5ae170b7839d8d4f2614ed94db9c46090117e92a6761e281229ff51f",
+      "size": 225200
+    },
+    "Managed/UnityEngine.AssetBundleModule.dll": {
+      "sha256": "aee04c5c675bb7c6a06b843bb82a0c72742c063a007ac79c6501cebea945988f",
+      "size": 41904
+    },
+    "Managed/UnityEngine.AudioModule.dll": {
+      "sha256": "c58ed7b8cbafb10eb193b1feabb57e2ed224e378de9b2d86db06ab3ed008ab45",
+      "size": 142768
+    },
+    "Managed/UnityEngine.ClothModule.dll": {
+      "sha256": "543ab382de959de8765e8be7f70f683da583519e97ff7c863adf6069559c34e4",
+      "size": 36264
+    },
+    "Managed/UnityEngine.ClusterInputModule.dll": {
+      "sha256": "22f9cb311e894028c996facb32c1646f27e62dd8f7e65e52a0b393d1b8826e41",
+      "size": 28072
+    },
+    "Managed/UnityEngine.ClusterRendererModule.dll": {
+      "sha256": "c25e5e2e47a54a53255cadfd33728a3b1a2f2a7df761c79efcb3bc55d2c87b6e",
+      "size": 26536
+    },
+    "Managed/UnityEngine.ContentLoadModule.dll": {
+      "sha256": "1bec811a95b07bef2bdf827163ea9513d0fd44598f4d712539a05f9476f41529",
+      "size": 32688
+    },
+    "Managed/UnityEngine.CoreModule.dll": {
+      "sha256": "d589629ecd4971438643c5d3ce5ee78cf7ee26ac0d98522f802923ca6b55bc79",
+      "size": 1983920
+    },
+    "Managed/UnityEngine.CrashReportingModule.dll": {
+      "sha256": "7ef1d566333d55485c349dfc6ae88681c073ad28d2f6ce38137dd6f6e25618e5",
+      "size": 26544
+    },
+    "Managed/UnityEngine.DSPGraphModule.dll": {
+      "sha256": "0f05a807ef41b7b274ae81a20349b716a4b7190ce08001328f5b88ce87ef33fc",
+      "size": 31664
+    },
+    "Managed/UnityEngine.DirectorModule.dll": {
+      "sha256": "d29c1f8cdeb8b7db0debf1be96606495662690578c402c591d73bea9ee341eea",
+      "size": 41384
+    },
+    "Managed/UnityEngine.GIModule.dll": {
+      "sha256": "39c9b8a9795db02ee130050ed5eeae5687e65e16a06cfb85c523d5d1b2bd3cb6",
+      "size": 24496
+    },
+    "Managed/UnityEngine.GameCenterModule.dll": {
+      "sha256": "14d27c18c0225b1ffcb0324c94f7d17743cbeea822601933e62b9a0dc399621c",
+      "size": 45488
+    },
+    "Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll": {
+      "sha256": "154ba58cb366176e13cd5c2ae39f692fb3da222554e65ba0c2199dbd13e963f9",
+      "size": 14248
+    },
+    "Managed/UnityEngine.GridModule.dll": {
+      "sha256": "d094f9dae92c6ef8ae36b5912ed41de101e79ccecc846461903deb464554bb6a",
+      "size": 30120
+    },
+    "Managed/UnityEngine.HierarchyCoreModule.dll": {
+      "sha256": "c92e06244fe90709c5bb910c7b158420edbe928455a8edd6483d1cee79a0e521",
+      "size": 109480
+    },
+    "Managed/UnityEngine.HierarchyModule.dll": {
+      "sha256": "5d9201a7f194ea110529cf56e4c8468d8342ed70f33d1540dfbc2b4931f14936",
+      "size": 102320
+    },
+    "Managed/UnityEngine.HotReloadModule.dll": {
+      "sha256": "5b48118d75f955fd053cb059d13d56fff825d16fdc4c8da0fa8074798f178a99",
+      "size": 24488
+    },
+    "Managed/UnityEngine.IMGUIModule.dll": {
+      "sha256": "56647caccd73e7ffa0553028c1183052862475d9d390c85cce281a245139ed62",
+      "size": 214448
+    },
+    "Managed/UnityEngine.IdentifiersModule.dll": {
+      "sha256": "5e9a6e83ee8592d1e6ab9cf272641e67038bd402fe42d4bd95fdff74c5863339",
+      "size": 14760
+    },
+    "Managed/UnityEngine.ImageConversionModule.dll": {
+      "sha256": "3b1153d5a8521754a4a558b78194057ded69ecfe27e4eff5259787ca3b1deba2",
+      "size": 31152
+    },
+    "Managed/UnityEngine.InputForUIModule.dll": {
+      "sha256": "c9d94d3b50c107e79b4e1161a685398d563509947058b3957a750f73fcfc5032",
+      "size": 57776
+    },
+    "Managed/UnityEngine.InputLegacyModule.dll": {
+      "sha256": "55effcd054c1a4dfda360ae4877b8e69efd2099d93b0ede1cd611499309cf325",
+      "size": 45488
+    },
+    "Managed/UnityEngine.InputModule.dll": {
+      "sha256": "d23a92842b3540828ce324fb1a35fa469a1f2c8d298cf734b313f5839f3da010",
+      "size": 28080
+    },
+    "Managed/UnityEngine.InsightsModule.dll": {
+      "sha256": "e8d27b57f2305839b9f2b516893e5dbd0de341f1cb0fba3da2e11f7b096a83f5",
+      "size": 14248
+    },
+    "Managed/UnityEngine.JSONSerializeModule.dll": {
+      "sha256": "c097f19dfba276be236561eb86264c6b8b6f90da14eb3b4aae0fefeadc4e95ce",
+      "size": 27056
+    },
+    "Managed/UnityEngine.LocalizationModule.dll": {
+      "sha256": "639f9874fbb278bfc632a0f851c0c80c9bfe9e62b7e0ba12d71451238bb523bf",
+      "size": 27056
+    },
+    "Managed/UnityEngine.MarshallingModule.dll": {
+      "sha256": "653f14fd7f4cc40c9a81081bf9989eb42c04eedddbd390aeb5a82befdb1b57bc",
+      "size": 83376
+    },
+    "Managed/UnityEngine.MultiplayerModule.dll": {
+      "sha256": "516711f5d59b0077d919cf5a624e8e395aee4a0beb0da37ceff062400148629f",
+      "size": 17832
+    },
+    "Managed/UnityEngine.NVIDIAModule.dll": {
+      "sha256": "2cedd5bfd04d04df96f69fc52d9d0fe1f3b3388321842573c08612f07ac41276",
+      "size": 40360
+    },
+    "Managed/UnityEngine.ParticleSystemModule.dll": {
+      "sha256": "e45c66a301975d50ccd76b3086a28c310c0dcc26f6dddf652a5fa9095536374d",
+      "size": 171432
+    },
+    "Managed/UnityEngine.PerformanceReportingModule.dll": {
+      "sha256": "0cb42037a822d86adc5eb441be01ec04c66f51208968ac17dc4ee7bee5275da9",
+      "size": 25000
+    },
+    "Managed/UnityEngine.Physics2DModule.dll": {
+      "sha256": "c68fd226e5f47e1275117a48b0adedda1a30af109adaf4c059718c3a9a2bb0bf",
+      "size": 584112
+    },
+    "Managed/UnityEngine.PhysicsBackendPhysXModule.dll": {
+      "sha256": "fdb1918575ef1bc7302c5a2eee6d98136c6df5e4dcf27ef8054f3acd95f8ac3b",
+      "size": 14248
+    },
+    "Managed/UnityEngine.PhysicsModule.dll": {
+      "sha256": "d372f6f5a696871ff2cdfe9f3749e55e4e57e561f3359e53787c0cc3825131db",
+      "size": 182192
+    },
+    "Managed/UnityEngine.PropertiesModule.dll": {
+      "sha256": "f4168de65f1b902c443b72b5a341913d71f4093387000d64efb83add00c64743",
+      "size": 133032
+    },
+    "Managed/UnityEngine.RenderAs2DModule.dll": {
+      "sha256": "f3a800e69ef062c22e3a78e84ba06f5e8b46d6b9e615dd91fd0e700d2f0b48ff",
+      "size": 25512
+    },
+    "Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll": {
+      "sha256": "a6da189e10da530cda32b887f1b84d67466b5bbedbf224db3604c5fdb055257e",
+      "size": 24496
+    },
+    "Managed/UnityEngine.ScreenCaptureModule.dll": {
+      "sha256": "5ddc9b7ebf63b8ed1a12bfa62a6f2d598e8991c298b80c7a9cac6d76d303ab52",
+      "size": 26032
+    },
+    "Managed/UnityEngine.ShaderRuntimeModule.dll": {
+      "sha256": "e64ddeea01beded7a35002908e882403ea36f17f420f943bf7a3521349aaddf8",
+      "size": 25520
+    },
+    "Managed/UnityEngine.ShaderVariantAnalyticsModule.dll": {
+      "sha256": "5a93dba6711e1b16942a8772f4233474f8f1e466deb3c637a0a0b389b76fee65",
+      "size": 24488
+    },
+    "Managed/UnityEngine.SharedInternalsModule.dll": {
+      "sha256": "66c090aa5dfc1efd0401aca0cc52da0a2643fda735fd2cbded2f1cd8b8159f86",
+      "size": 37800
+    },
+    "Managed/UnityEngine.SpriteMaskModule.dll": {
+      "sha256": "1f245c2eb14185f596553f6f6ed0baf01a58a13960bc3e768305a89d1ffa78f7",
+      "size": 28584
+    },
+    "Managed/UnityEngine.SpriteShapeModule.dll": {
+      "sha256": "f2d912e976e9c187427c7e78d9a8b54ec958f5b59dca7dcd1c5bc7ae5d69101e",
+      "size": 32176
+    },
+    "Managed/UnityEngine.StreamingModule.dll": {
+      "sha256": "b992c58615ea7a6d537e9699f9a220e95a21bb510eb6aa8371c2f16cc48f5776",
+      "size": 25512
+    },
+    "Managed/UnityEngine.SubstanceModule.dll": {
+      "sha256": "96ec4be1407c3835fb8c2a3561c89d58779a0ae5087547fceb239738e932fd09",
+      "size": 29104
+    },
+    "Managed/UnityEngine.SubsystemsModule.dll": {
+      "sha256": "5ec74c98a4b1a65137c9a28a310e87a92d2a217828a6b8658a75dc8193b43397",
+      "size": 41896
+    },
+    "Managed/UnityEngine.TLSModule.dll": {
+      "sha256": "375395a15fdf3732dd8b18a3b58881491a8986807cf6f958b197c521e195ef09",
+      "size": 31152
+    },
+    "Managed/UnityEngine.TerrainModule.dll": {
+      "sha256": "da90310d0c6d3c617b7f1ec0b7d258d3a20e4d1606e24e2d87f37809ec408cd2",
+      "size": 133552
+    },
+    "Managed/UnityEngine.TerrainPhysicsModule.dll": {
+      "sha256": "5f8909575e6ed76727acce499a1c57c14e03fd661626944b630b7df57e4792b9",
+      "size": 25520
+    },
+    "Managed/UnityEngine.TextCoreFontEngineModule.dll": {
+      "sha256": "3fda10f00b9a71eb7563fbcce17f518a2757f924b509bcc240492ad279ff0857",
+      "size": 81840
+    },
+    "Managed/UnityEngine.TextCoreTextEngineModule.dll": {
+      "sha256": "7a46e1e8cc81697b18aa3f9dba1a89d7b341cdc5881a568af398006cdf4f6ac6",
+      "size": 332712
+    },
+    "Managed/UnityEngine.TextRenderingModule.dll": {
+      "sha256": "197e500615c12b7c0276b348b7c50908aa94a45c33a00e8299ac9b9c00b091bc",
+      "size": 39336
+    },
+    "Managed/UnityEngine.TilemapModule.dll": {
+      "sha256": "df80b8b8075d5e05a186fd09cad3254bde2b89deb5ddd4d4ffe66dd254d788d8",
+      "size": 58800
+    },
+    "Managed/UnityEngine.UI.dll": {
+      "sha256": "e31bf1ba3ebcd9e63c1c8530d6be7799b079c4f9a5dcc29a695e4be5b26aa613",
+      "size": 276480
+    },
+    "Managed/UnityEngine.UIElementsModule.dll": {
+      "sha256": "bb02b62767ee32d653e8dbb450e7db5d695e947ad47ba4f96d205ae6cbc879bb",
+      "size": 2448808
+    },
+    "Managed/UnityEngine.UIModule.dll": {
+      "sha256": "88f95e40c5d59a7f6625d328d46d33d1037544800aca65e53d81b5f9b3de8eae",
+      "size": 49576
+    },
+    "Managed/UnityEngine.UmbraModule.dll": {
+      "sha256": "4e3c9160e56a26e0d46fbd482c7bfa6bdef1b446d518fb9965f3f0e82f007095",
+      "size": 24488
+    },
+    "Managed/UnityEngine.UnityAnalyticsCommonModule.dll": {
+      "sha256": "b95f1bd385ea6a92582a09ad0e472d0ca639725b3d5327d24c8a11f81ec3d70f",
+      "size": 35760
+    },
+    "Managed/UnityEngine.UnityAnalyticsModule.dll": {
+      "sha256": "f92fc9e146cbc72254e7ac5aa944b60b789de8c34434dfa8050216f676e9ff7f",
+      "size": 60848
+    },
+    "Managed/UnityEngine.UnityConnectModule.dll": {
+      "sha256": "e67850bed2be5b71ac1d75c7de5315960117de33306f5b6b22e86f264a82f002",
+      "size": 27568
+    },
+    "Managed/UnityEngine.UnityConsentModule.dll": {
+      "sha256": "f81ebdea250f96d074966de70b7c7e0d6e67daebbac4d26f401da64cd6c7eafd",
+      "size": 16296
+    },
+    "Managed/UnityEngine.UnityCurlModule.dll": {
+      "sha256": "0dd49c20ff0cef0ed0667a83bbee0caf460847513d3a13cb0b5c5b73b4757b57",
+      "size": 26024
+    },
+    "Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll": {
+      "sha256": "ed7e4c2cc02f3d243abc2357991a897a4a4647c9e9f8a39cf04ce7f4ba2aa781",
+      "size": 28584
+    },
+    "Managed/UnityEngine.UnityWebRequestAudioModule.dll": {
+      "sha256": "031c8b5f4a951c5846a4d5c4f30ec1d5343ec8d676e4adb99546b9c9c0cbd607",
+      "size": 28072
+    },
+    "Managed/UnityEngine.UnityWebRequestModule.dll": {
+      "sha256": "2f5d573fa134f0d883bd8b0005436bea101a9bf2b21211d2f93f08a75f0b2807",
+      "size": 70056
+    },
+    "Managed/UnityEngine.UnityWebRequestTextureModule.dll": {
+      "sha256": "ee1e13dc787eceb2175920f1f45277154c748636fe89b9430f76d7a4671c6cd5",
+      "size": 27568
+    },
+    "Managed/UnityEngine.UnityWebRequestWWWModule.dll": {
+      "sha256": "941a570b9d82a723aed81260479a0539ac97a57618c8178983958d17ffe44ac9",
+      "size": 36272
+    },
+    "Managed/UnityEngine.VFXModule.dll": {
+      "sha256": "77e93b441dd0fc69b929ec7b21f08339203f0efc9199a3f64dcec26b477c0e79",
+      "size": 78256
+    },
+    "Managed/UnityEngine.VRModule.dll": {
+      "sha256": "03786822a71d2a57b68819a52e2e5a709913323f058c2254aedbf53d35c9db2c",
+      "size": 31664
+    },
+    "Managed/UnityEngine.VectorGraphicsModule.dll": {
+      "sha256": "497b54dfd3b9beddfbd69c7b98db3a3d6c652bb7e24695b5a80c4b54b78b3527",
+      "size": 253360
+    },
+    "Managed/UnityEngine.VehiclesModule.dll": {
+      "sha256": "8777e125eb8682f929c82c84072ff06d534914945a4e27071c80b7b221f7d140",
+      "size": 31152
+    },
+    "Managed/UnityEngine.VideoModule.dll": {
+      "sha256": "3103a45d0f29baf3be85ebf20333d4463a69d92930697bf7bd29ac8bcf172160",
+      "size": 49064
+    },
+    "Managed/UnityEngine.VirtualTexturingModule.dll": {
+      "sha256": "405eb116ee7878f4462bfcf37153f67aa4f32585aa3d8dce679b804744fe8f1d",
+      "size": 42928
+    },
+    "Managed/UnityEngine.WindModule.dll": {
+      "sha256": "8ab77400fc6be901ad172bb160096b353f01107c47b5d7c6af7a0e1f1b904651",
+      "size": 26544
+    },
+    "Managed/UnityEngine.XRModule.dll": {
+      "sha256": "453a9841a5ec112e64dd8958395a54a61195b58647b0c33a635e05a8aa0a34e7",
+      "size": 88488
+    },
+    "Managed/UnityEngine.dll": {
+      "sha256": "79ee5cf77e839b6e0453197853bb22fad371a89a989343ede1a26195b0e35cec",
+      "size": 197032
+    },
+    "Managed/Yarn.Antlr4.Runtime.Standard.dll": {
+      "sha256": "0665f957f8d249ec2cc7e2da7abdbe833a32324aba851d50a8d0d67e78fb4a35",
+      "size": 190976
+    },
+    "Managed/Yarn.CsvHelper.dll": {
+      "sha256": "6579323f95990735cd07bd74db09a6337c4fefd6585b082eeca7e1d2f906db58",
+      "size": 146432
+    },
+    "Managed/Yarn.Google.Protobuf.dll": {
+      "sha256": "973d35695c54714c1e9a2c9af4c884c8c60a0b635397d12817e6b2af4788cb82",
+      "size": 458752
+    },
+    "Managed/Yarn.Microsoft.Bcl.AsyncInterfaces.dll": {
+      "sha256": "3cb8115c57fb212ebc07c9cc4dad4019e21f1d3e57fd38be581cb962db1e0d8d",
+      "size": 16384
+    },
+    "Managed/Yarn.Microsoft.Extensions.FileSystemGlobbing.dll": {
+      "sha256": "4c7ed7c1fdb5a1409655aca93e1b833f6521ec984a5873fc32cef3a66c5a27f1",
+      "size": 38400
+    },
+    "Managed/Yarn.System.Buffers.dll": {
+      "sha256": "1ae96df99853d8f51939efe722c4ce307f51880a0dee0f8cb65a323f25ae8efe",
+      "size": 11776
+    },
+    "Managed/Yarn.System.Memory.dll": {
+      "sha256": "b2acb6cbcfe9d873018ad8b37a759aa24e75f81df112fde45422ce3f8e63869e",
+      "size": 132096
+    },
+    "Managed/Yarn.System.Numerics.Vectors.dll": {
+      "sha256": "07f672cd12e084b70f1f2881f7eada4c892a7224562bc49d62a1f59a9fc27a30",
+      "size": 147456
+    },
+    "Managed/Yarn.System.Reflection.TypeExtensions.dll": {
+      "sha256": "06f32d7534b3fca5a6ab91d834d1a6b8abd161db17dec59e966b7e78fed6f506",
+      "size": 13824
+    },
+    "Managed/Yarn.System.Runtime.CompilerServices.Unsafe.dll": {
+      "sha256": "03fd416a516957e205b2aefc9043d3aac7a952908051f7b7085aa87ad8679658",
+      "size": 8704
+    },
+    "Managed/Yarn.System.Text.Encodings.Web.dll": {
+      "sha256": "5a90766fbe2826bc67d31a7950fd412173c92bbb1a2c8751d76fcc08dcd2f6d8",
+      "size": 68608
+    },
+    "Managed/Yarn.System.Text.Json.dll": {
+      "sha256": "82c004512114e44478a65aea43961373fd6688eff0a32457895d5e7d436bc6f0",
+      "size": 595456
+    },
+    "Managed/Yarn.System.Threading.Tasks.Extensions.dll": {
+      "sha256": "6db76f0290fbc588e2d690e23476c116e784efc9f8fdb75379e7c4d5ea9c115f",
+      "size": 16896
+    },
+    "Managed/YarnSpinner.Compiler.dll": {
+      "sha256": "b2b788670d68db66c84b13f22f1acca83ae7d612b67c812faf04a49c7f10fa8e",
+      "size": 318976
+    },
+    "Managed/YarnSpinner.Unity.dll": {
+      "sha256": "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d",
+      "size": 160256
+    },
+    "Managed/YarnSpinner.dll": {
+      "sha256": "d10c640b1b0b3664241b19137d3f0c27ffa8ba75e0fcf5dac183bbcc89b78f7e",
+      "size": 188416
+    },
+    "Managed/com.alelievr.NodeGraphProcessor.Runtime.dll": {
+      "sha256": "a71e074c35d58346895d1fa7dfa75c9a58cd2809d0c5563ca62e4430cd66af82",
+      "size": 83968
+    },
+    "Managed/com.gator-dragon-games.jigglephysics.dll": {
+      "sha256": "5cb1c47499fc05b0187fbb6f6a5c76951e618fec517a069784a5577b7dbe0514",
+      "size": 82432
+    },
+    "Managed/com.gator-dragon-games.physics-audio.dll": {
+      "sha256": "38d7a5758551288910b93e3a2bdab0ae7070f8f7985fd81b613fec4560c6900c",
+      "size": 16896
+    },
+    "Managed/com.naelstrof-raliv.fluid-rendering-for-games.dll": {
+      "sha256": "13180f24daa27226d87a34b97b45a95604d053e40283d371dc61377932751c15",
+      "size": 30208
+    },
+    "Managed/com.naelstrof.orbitcam.dll": {
+      "sha256": "5ee1dfc6d7f62c78ddeb8ba41ef4691ed1b0051b2858871ed42d3299f7f1064e",
+      "size": 17408
+    },
+    "Managed/com.naelstrof.skinnedmeshdecals.dll": {
+      "sha256": "fefa273174484c8f9cb49da83242019ad3aa94a08268e3d17aa7b1983370068c",
+      "size": 40448
+    },
+    "Managed/com.naelstrof.spherecast.dll": {
+      "sha256": "7067efe09b06b12909b9ba97275a240131d5b1e10a5b8e646fc30cbe395f84e0",
+      "size": 8192
+    },
+    "Managed/com.rlabrecque.steamworks.net.dll": {
+      "sha256": "8ce25a712f3ec21ad47009d843c81e4c57501e077e2ce8eb38c5eb3814afc50a",
+      "size": 425984
+    },
+    "Managed/mscorlib.dll": {
+      "sha256": "6c76e06e6d44cf0f39bf59e6a90770968b70093ad4c1572dfbc5e46e431c5fbf",
+      "size": 4632064
+    },
+    "Managed/netstandard.dll": {
+      "sha256": "6ae62e082dc494a2433984177f60ca4db5fae69b1f360a8b33754172b310b8c5",
+      "size": 90112
+    },
+    "Plugins/Steamworks.NET.txt": {
+      "sha256": "edf8378ee4ac6db86441a2235f5c576b1f6ffe5508b8bb6dd9b33f086eea72f4",
+      "size": 243
+    },
+    "Plugins/x86_64/lib_burst_generated.dll": {
+      "sha256": "a16906224b3963c8c0e11fe86db57fa1d8f0469b975e109aea7394716a8536f8",
+      "size": 559104
+    },
+    "Plugins/x86_64/libonigwrap.dll": {
+      "sha256": "6d539f2ad6e1b58d3c8836b9c3a1d50c97cbd7a6ca0c5de25d994a7c4b1ecf42",
+      "size": 551336
+    },
+    "Plugins/x86_64/steam_api64.dll": {
+      "sha256": "eb17909a76668cf9ae0b92a618a34a50f6c73d3a6787cb4dd8ce36a8b10bfb75",
+      "size": 317080
+    },
+    "Resources/unity default resources": {
+      "sha256": "fb2492cd1ad7c38dda8a4ce5f1a1fb57edcff44e3ae250b263e44beae3660ec4",
+      "size": 5923140
+    },
+    "Resources/unity_builtin_extra": {
+      "sha256": "cc7e584091c6ccfb58a91e31fcb75471e68cd05754c7aeab6e0cf513e7998c2b",
+      "size": 476532
+    },
+    "RuntimeInitializeOnLoads.json": {
+      "sha256": "476424ba0cb1406f160e3b65f3d4325214d1aa7b914e15ebcbf7110fd97f3029",
+      "size": 11323
+    },
+    "ScriptingAssemblies.json": {
+      "sha256": "796b0cc9e75de3116b76946338b7faea5efae10cd5651d73b969fd4c0503ec51",
+      "size": 5639
+    },
+    "StreamingAssets/APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/5579d3056bf9c86cdb5eefdfe9650c7c.bytes": {
+      "sha256": "aadf2d5a14b594ede702314539ac538aebe3a55bfa3e1aff02352b71b84185ed",
+      "size": 343856
+    },
+    "StreamingAssets/APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/822a06367ab7598d89cedab27d6874fa.bytes": {
+      "sha256": "65e1745a24df5e566d1975ef10cbf0b763dba23ed2ce5ef5002eaa55645eec49",
+      "size": 1523712
+    },
+    "StreamingAssets/APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/e9778d016fe7a857da36934976252cc0.bytes": {
+      "sha256": "15c9938c032aa793b709c2388117d54fecc0dd78e1dd3bf8fc97a2a53a71786e",
+      "size": 6094848
+    },
+    "StreamingAssets/APVStreamingAssets/11fb3962e86a4deeaa560fec39105ea0/eef5a004cc6d4aad1987b860d27d047c.bytes": {
+      "sha256": "30f14addad064b74030993f484efb9a7e056ee658a3e2a0023b760d2080b983e",
+      "size": 24379392
+    },
+    "StreamingAssets/APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/5192553b64cca9a4b9c396d35a08948c.bytes": {
+      "sha256": "0cda71e0b87c9ab1086fbf5e23e87b23312431ade21c497bb84fb9f8e3fa75fe",
+      "size": 425984
+    },
+    "StreamingAssets/APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/693e8ef14b0412d4e90c94a04dabba76.bytes": {
+      "sha256": "ef86b8913089b59b4480618abd1f6b28b126ed4970533d96d88b8115e681b609",
+      "size": 6815744
+    },
+    "StreamingAssets/APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/76e3e3cb369765641bb29c3822cfca26.bytes": {
+      "sha256": "36227597bdc61c4018bb27461c11e0d987c432518775c79353ddc3d485efe0f7",
+      "size": 1703936
+    },
+    "StreamingAssets/APVStreamingAssets/142c82644ee4b2e4a9a35c288f52061c/fd872fa3d525a47488c04a612d257884.bytes": {
+      "sha256": "d2b521a6c1898da4d441904097cd6a069117a3ec9432cd234b55e53ce777205c",
+      "size": 100448
+    },
+    "StreamingAssets/APVStreamingAssets/214550b190c771644990476c4001655a/0df5818ebdb28004ca23e5805e2b1bde.bytes": {
+      "sha256": "55d4107877216e8129f2f4e576eeb3fdff21811d909dfedd58b4a0fceb87c2bb",
+      "size": 393216
+    },
+    "StreamingAssets/APVStreamingAssets/214550b190c771644990476c4001655a/1647e62895158624ebb69f83c87e205f.bytes": {
+      "sha256": "6cd2741512ac9c04fbcf31c795e99143ed711e433cfef93e9c3015d9172ff038",
+      "size": 98304
+    },
+    "StreamingAssets/APVStreamingAssets/214550b190c771644990476c4001655a/b92f0167a5c835f4fb06c2348392367f.bytes": {
+      "sha256": "c263185fc5264fd218dc67a869e3f1181747c9decce202220a70582eff3b875b",
+      "size": 1572864
+    },
+    "StreamingAssets/APVStreamingAssets/214550b190c771644990476c4001655a/cf36006797e606d468f3294ddce68e9e.bytes": {
+      "sha256": "5bf06e43b77d7cef32475c357fb64046efde74263b78a1ed6e104b1567a3e65d",
+      "size": 12240
+    },
+    "StreamingAssets/APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/340adf393b3fcf94c84ba5624c1f35a3.bytes": {
+      "sha256": "4276e47d2da2a0d22a449223fc6d633ab4f07faf524cd72e4e867615b57a9518",
+      "size": 65536
+    },
+    "StreamingAssets/APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/63e8abce55142164da4510f947d1a32c.bytes": {
+      "sha256": "1411e0a88014b91fdf6c55389183bc655aa71ac164aac92be2b1a23c9797339a",
+      "size": 1048576
+    },
+    "StreamingAssets/APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/70cf4bcd2e5b62d4d9e5fe276af69207.bytes": {
+      "sha256": "2a4192203b76348a4aca5c1117541d48d5df352eb7fbcafd19116560f94aebc4",
+      "size": 13072
+    },
+    "StreamingAssets/APVStreamingAssets/560aa81b195c6e743bf43c43f6ed99e6/850dec18f1b14be4a83f8d8b61a3e92f.bytes": {
+      "sha256": "3a262724c02d915132caad8fe5c4afd9f39a52261cc667a74ef9362ee143921a",
+      "size": 262144
+    },
+    "StreamingAssets/APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/3fcaf4ea0a6b7b0438e67691a8d160de.bytes": {
+      "sha256": "38bbf23656d7006b85fa100f62bbd0fa7dd6d91f555218d9209ad506eb8fe0a2",
+      "size": 65536
+    },
+    "StreamingAssets/APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/54cb5137dfccd2c41b2200b1f4b5c228.bytes": {
+      "sha256": "46dd9685bd027d7413e9161d100b6c031dafcc7b12a27d0443ea2259cd13bab4",
+      "size": 4896
+    },
+    "StreamingAssets/APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/6d042fcfdd540ad4a94449e28bf815b2.bytes": {
+      "sha256": "339b36476e58bc2f0ee578637e0429dbaefe64360f7eeb67016f89220da5c429",
+      "size": 262144
+    },
+    "StreamingAssets/APVStreamingAssets/9067e3aaf62ff85438914365e3bf8911/97edd8ccc91cdf94faa1b715bf1561ce.bytes": {
+      "sha256": "9562cb5349db8e318dc4ad7c3c3ad21090535c00ea102475058570ac84caae26",
+      "size": 1048576
+    },
+    "StreamingAssets/APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/027da7a8773c17aa6bf04626d3f35b2f.bytes": {
+      "sha256": "cbf7f93a1f726758ceb27ec0f764abf9308b3304f9aad9bcecef051c5a7d6e4d",
+      "size": 409600
+    },
+    "StreamingAssets/APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/3dd59bd47a066e21f878bc478b733baa.bytes": {
+      "sha256": "aff7968d0317a812fb76aa1fc3e3cf36fa7e77403ff4e99ab7905020d98c1174",
+      "size": 94592
+    },
+    "StreamingAssets/APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/a3bcfd1a4a5e9c010ad60a6c8d4c5aa3.bytes": {
+      "sha256": "42fb968cfe677d199013bb81327adb3d30d2ed3b2ed0350a5118142c62518723",
+      "size": 1638400
+    },
+    "StreamingAssets/APVStreamingAssets/e9a91d619301fef3d9a419e3417aeea2/a517194473741c2c19b0478abfe4e81e.bytes": {
+      "sha256": "182fd72f5e9293f415b98fb27a9e70b954b58abb408b316404b7654e91085328",
+      "size": 6553600
+    },
+    "StreamingAssets/aa/AddressablesLink/link.xml": {
+      "sha256": "b78c3cbab27ece6465e4bcc4da74f12b070a6e68b2c9ec36838d6f88cfa9842d",
+      "size": 1439
+    },
+    "StreamingAssets/aa/StandaloneWindows64/333908e17138c6bc348493caa4a1dab8_monoscripts_e368a6bbd9e65e516f776fec53f7147a.bundle": {
+      "sha256": "a900ba604d8f8b3ad8cbf8adc2e0fcf3a3a72f08952ac2653bbd4de096e02ce6",
+      "size": 1594
+    },
+    "StreamingAssets/aa/StandaloneWindows64/localization-locales_assets_all.bundle": {
+      "sha256": "c859f8997d105b84d0ef8cbc3e1849e987f7c30048eea542f031b9124f361723",
+      "size": 2007
+    },
+    "StreamingAssets/aa/StandaloneWindows64/unifiedraytracing_assets_all_478cdda9ad8977ca6a223e37a17c1e28.bundle": {
+      "sha256": "d41a972160df62c90428d9f1e302b4ca14ac09500446af5799f0f73d532c350a",
+      "size": 26181
+    },
+    "StreamingAssets/aa/catalog.bin": {
+      "sha256": "3c384566fa98c6c20ba6d790424c97734532fb0be4403822f3a0b629d8b839fa",
+      "size": 4389
+    },
+    "StreamingAssets/aa/catalog.hash": {
+      "sha256": "6c17d41c27621743ef111e1282db058c7bb799031e4ae2f7a52cae424161add9",
+      "size": 32
+    },
+    "StreamingAssets/aa/settings.json": {
+      "sha256": "ce0bb681a7e624b7db3df40a631ea89affe0e20387975b264bc2948a1cd376e6",
+      "size": 864
+    },
+    "app.info": {
+      "sha256": "9cca3c39fc6822a4b24d778b01d835b8052a78e497481089be345f1d117ed750",
+      "size": 28
+    },
+    "boot.config": {
+      "sha256": "a7bdc721db311bf151302affbd661195b82d61b2e821f1662fc0218ad17b4952",
+      "size": 156
+    },
+    "globalgamemanagers": {
+      "sha256": "4b21ad9ef1569c24b18c4207aed157ce3d3621bdb2c6acae92656c61fd9111f5",
+      "size": 224228
+    },
+    "globalgamemanagers.assets": {
+      "sha256": "cd088b5d8eb9f2c51bb3d14cd4213f564c6f16b0d3884f901f12ffb794c7710e",
+      "size": 26853624
+    },
+    "globalgamemanagers.assets.resS": {
+      "sha256": "8c99599b46e945bc1c49ecba1cc880bd32f395d3a3206a38af74015aa82b45b9",
+      "size": 16390352
+    },
+    "level0": {
+      "sha256": "d66d3c0914280911f2783c4116368b0760172910689cdf16e57c460070b8567a",
+      "size": 155564
+    },
+    "level0.resS": {
+      "sha256": "a46ff4f8379bc0dc30d6740c4a8bdbb9e6a3e75aef2a9e9da644cd1352be7dd5",
+      "size": 1156544
+    },
+    "level1": {
+      "sha256": "4e63b5b6a30e25a5012a3bdbd259bb52186008a718c86e1d92c764eb9afb4872",
+      "size": 961048
+    },
+    "level1.resS": {
+      "sha256": "f043dab27c80bed05cce0be4e8938250ee6c0e370f719e974b68c73586c697fe",
+      "size": 3127264
+    },
+    "level2": {
+      "sha256": "89c40f4aa236345f9cdc748cd49173e646f4cd3c367f54b23b4e1f2c6cf28d11",
+      "size": 949732
+    },
+    "level2.resS": {
+      "sha256": "88d99bc577ed6479ee778f41ef37f117c3dbdec903aaeb665ddcb9b2d39bf308",
+      "size": 4016240
+    },
+    "level3": {
+      "sha256": "8993198cb683e3e72265550b5027d79c9ef631113a0ea0b75c03ed637d0042da",
+      "size": 171872
+    },
+    "level4": {
+      "sha256": "d06b97d390e2c3e16c8db5ac72f7fbb321037c3eea9bcb0be28912cbb6380f0c",
+      "size": 579116
+    },
+    "level4.resS": {
+      "sha256": "92e6a3f1506778db2c341d03497a616bbff60f43db662b4932b8033f33caf845",
+      "size": 3426624
+    },
+    "level5": {
+      "sha256": "cd5bd4410bf52d46b8f326b126af86634b58df91a43c0a93b382c51520952372",
+      "size": 621288
+    },
+    "level5.resS": {
+      "sha256": "6482eddb023ce75f80e9f06776b7845ec65bdf114500f5a94687f0413f0a4475",
+      "size": 2944960
+    },
+    "level6": {
+      "sha256": "395e088a09894a5e894770d0cbb4753424d6d311bc42deccb87d33faf36f7edc",
+      "size": 381216
+    },
+    "level6.resS": {
+      "sha256": "2f9f11da8eb952e9e9c7c8c59db6b3e0d3a2010e50ef1d5bb5108c0302fdd2a6",
+      "size": 1232352
+    },
+    "level7": {
+      "sha256": "38555147c031ebbf5a269d66c908afd95dc4c59e74a833347929f5b481f9f825",
+      "size": 498792
+    },
+    "level7.resS": {
+      "sha256": "98c8e6be8db89f5239f02151ec6fa0b3a8ee06afecf1a977c85926b7bca7fb19",
+      "size": 1389744
+    },
+    "resources.assets": {
+      "sha256": "dbf7ecc8e5c53204ea316db85012116732d4087447c4b5c72151c4efca40c1ee",
+      "size": 795528
+    },
+    "resources.assets.resS": {
+      "sha256": "6d83702828212aff7da5f1c58f6e3697f77b30c1a7292b529b355668ebd55a74",
+      "size": 2453936
+    },
+    "sharedassets0.assets": {
+      "sha256": "0e0ff18fad2baca48a6da0b85a5f9a43c34811a3f382bccc08dbb95797a41587",
+      "size": 31189916
+    },
+    "sharedassets0.assets.resS": {
+      "sha256": "e85b8518f5664824d95eae2a91d2586d3e3146a9e80640690e3e375d70d25ea1",
+      "size": 165792432
+    },
+    "sharedassets0.resource": {
+      "sha256": "c668885f7bf95ad0e2edd5b5053e592c94c80e8df299348ebed9cb843420fc45",
+      "size": 6271168
+    },
+    "sharedassets1.assets": {
+      "sha256": "dc0854928dac68edd652675508a3d9d3fa05450ac9d3f2017bfefbf597801d1e",
+      "size": 459416
+    },
+    "sharedassets1.assets.resS": {
+      "sha256": "88d16a9bd47f28e10c1d279e177376298470e56d41f8ded7487e9c1891e4ca74",
+      "size": 35940144
+    },
+    "sharedassets1.resource": {
+      "sha256": "87a49e446d8bb389a28f529ed11e179ca89ed876a2003234f589b40dfafb6fa9",
+      "size": 8670624
+    },
+    "sharedassets2.assets": {
+      "sha256": "4ee33962e7aa5b570b9ca1dde5883b198eb5b051aa868e4f2c4a9a735252abeb",
+      "size": 94183584
+    },
+    "sharedassets2.assets.resS": {
+      "sha256": "5e458874a1247d475b2bc7a92a9b0436720b7fcee6ab4eba96c65d45c97bd881",
+      "size": 346722784
+    },
+    "sharedassets2.resource": {
+      "sha256": "5f65072b0f96fbfb409c623ac8d9128717e0cf659aa52dc898db77d77f909421",
+      "size": 40674400
+    },
+    "sharedassets3.assets": {
+      "sha256": "367fb28505484c8e5877937d04681f9c403a6b2b209de98e5c9fd6726ed7aaf7",
+      "size": 121680
+    },
+    "sharedassets3.assets.resS": {
+      "sha256": "0c3145dc8b4dcd8340fdd769af9932c992fe0081b444d83af33b41797d4f04f1",
+      "size": 19093872
+    },
+    "sharedassets3.resource": {
+      "sha256": "d65c1cbd80b69de5cf56f044dcb500733bf490e69f272bd82b3197759ed0ab2d",
+      "size": 4490592
+    },
+    "sharedassets4.assets": {
+      "sha256": "d1a0851442eb38a2ebcd3cfa9841aa43bc9fbc59fa8159b16c93082a8d710d09",
+      "size": 2058044
+    },
+    "sharedassets4.assets.resS": {
+      "sha256": "27db064be9859b2439854a61f17ab2934d66c607f4c8b5a9ee37d20b7348f0ca",
+      "size": 42118944
+    },
+    "sharedassets4.resource": {
+      "sha256": "44d13be09fcf88541aa21a4d6313557d5b44f861308c60000bd95a847ee4eb23",
+      "size": 8319104
+    },
+    "sharedassets5.assets": {
+      "sha256": "1c9b54b2303c0b687b8df08498e1bdb43aafed287e36861944a6dfe27e18f326",
+      "size": 11070588
+    },
+    "sharedassets5.assets.resS": {
+      "sha256": "aabbe4c5cd3501a52c3c58a135ea970fab977a36a4dbc4c8e5386273e6bfb365",
+      "size": 24338576
+    },
+    "sharedassets5.resource": {
+      "sha256": "1df5cb040f17b7e170c68c906e6bc1d04ed0e5c05f331ec42a8a71a00d67b266",
+      "size": 5062816
+    },
+    "sharedassets6.assets": {
+      "sha256": "f0bf8b0779ae64bd8f4e13c683cb6057d38f397b7307e692e7220ea69f2fb8d3",
+      "size": 18398508
+    },
+    "sharedassets6.assets.resS": {
+      "sha256": "7395cfac039d4c091a2912940d9c66046919d928e77db7057e03cfdce1364723",
+      "size": 30191376
+    },
+    "sharedassets6.resource": {
+      "sha256": "02cbb8dfeca45076390b4fb2ae3b8c12f0f8a11a69f38916c213265cc3cd4148",
+      "size": 2600960
+    },
+    "sharedassets7.assets": {
+      "sha256": "c32c9853b149181887e20e021bcd8a61b8ae0e04329faca0e80f9905f76bfe60",
+      "size": 1174172
+    },
+    "sharedassets7.assets.resS": {
+      "sha256": "2c72b2cc86c7c26bd96d9e1eabe933eac3240b4377500a75ff526c02616ddd66",
+      "size": 39697104
+    }
+  },
+  "acceptedConfigSha256": "4c27dbf56a8a340e1a1959f31fcaee89bfd73633fb01253f2da4a7d7423742f6",
+  "oldAssets": {
+    "level0": "level1",
+    "level1": "level2",
+    "level2": "level3",
+    "level3": "level4",
+    "level4": "level5",
+    "level5": "level6",
+    "level6": "level7",
+    "sharedassets0.assets": "sharedassets1.assets",
+    "sharedassets1.assets": "sharedassets2.assets"
+  },
+  "retiredUiIds": [],
+  "ui": {
+    "level0#322": {
+      "source": "3",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_IntroSettings",
+        "Container",
+        "Options",
+        "Brightness",
+        "Slider",
+        "Max"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level0#323": {
+      "source": "Quit",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_IntroSettings",
+        "Container",
+        "Quit",
+        "Quit",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level0#324": {
+      "source": "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_AdultWarning",
+        "Container",
+        "Question",
+        "Accept",
+        "EULA"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level0#325": {
+      "source": "Select",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_AdultWarning",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level0#326": {
+      "source": "0",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_IntroSettings",
+        "Container",
+        "Options",
+        "Master Volume",
+        "Slider",
+        "Min"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level0#327": {
+      "source": "Continue?",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_AdultWarning",
+        "Container",
+        "Question",
+        "Accept",
+        "AcceptButton",
+        "Text (TMP)"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level0#328": {
+      "source": "Quit",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_AdultWarning",
+        "Container",
+        "Quit",
+        "Quit",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level0#329": {
+      "source": "LABEL",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_IntroSettings",
+        "Container",
+        "Options",
+        "Master Volume",
+        "Slider",
+        "Label"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level0#330": {
+      "source": "32",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_IntroSettings",
+        "Container",
+        "Options",
+        "Brightness",
+        "Slider",
+        "Handle Slide Area",
+        "Handle",
+        "Panel",
+        "Amount"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level0#331": {
+      "source": "Quit",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_AdultWarning",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level0#332": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_IntroSettings",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level0#333": {
+      "source": "Accept",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_IntroSettings",
+        "Container",
+        "Options",
+        "Accept",
+        "Accept",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level0#334": {
+      "source": "32",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_IntroSettings",
+        "Container",
+        "Options",
+        "Master Volume",
+        "Slider",
+        "Handle Slide Area",
+        "Handle",
+        "Panel",
+        "Amount"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level0#335": {
+      "source": "Select",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_IntroSettings",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level0#336": {
+      "source": "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_AdultWarning",
+        "Container",
+        "Question",
+        "Accept",
+        "EXPLICIT CONTENT"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level0#337": {
+      "source": "LABEL",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_IntroSettings",
+        "Container",
+        "Options",
+        "Brightness",
+        "Slider",
+        "Label"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level0#338": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_AdultWarning",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level0#339": {
+      "source": "Quit",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_IntroSettings",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level0#340": {
+      "source": "-3",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_IntroSettings",
+        "Container",
+        "Options",
+        "Brightness",
+        "Slider",
+        "Min"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level0#341": {
+      "source": "1",
+      "hierarchy": [
+        "Menu_AdultWarning",
+        "Menu_IntroSettings",
+        "Container",
+        "Options",
+        "Master Volume",
+        "Slider",
+        "Max"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level1#5251": {
+      "source": "Select",
+      "hierarchy": [
+        "Menu",
+        "Menu_DeleteSave",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5252": {
+      "source": "0/14",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsLoad",
+        "Container",
+        "LoadSlotSelect",
+        "LoadSlot1",
+        "LoadSlot1",
+        "Images",
+        "SlotProgress"
+      ],
+      "policy": "preserve",
+      "reason": "slot-progress-runtime-replaced",
+      "oldId": "level0#5181"
+    },
+    "level1#5253": {
+      "source": "Back",
+      "hierarchy": [
+        "Menu",
+        "Menu_Gallery",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5254": {
+      "source": "Save Slots",
+      "hierarchy": [
+        "Menu",
+        "Menu_Main",
+        "Container",
+        "MainSelect",
+        "SaveSlots",
+        "SaveSlots",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5255": {
+      "source": "Back",
+      "hierarchy": [
+        "Menu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5256": {
+      "source": "Slot 1",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsLoad",
+        "Container",
+        "LoadSlotSelect",
+        "LoadSlot1",
+        "LoadSlot1",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5257": {
+      "source": "Select",
+      "hierarchy": [
+        "Menu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5258": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "Menu",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5259": {
+      "source": "Back",
+      "hierarchy": [
+        "Menu",
+        "Menu_Gallery",
+        "Container",
+        "GallerySelect",
+        "Back",
+        "Back",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5260": {
+      "source": "Select",
+      "hierarchy": [
+        "Menu",
+        "Menu_Gallery",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5261": {
+      "source": "Save",
+      "hierarchy": [
+        "Menu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Save",
+        "Save",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5262": {
+      "source": "New Game",
+      "hierarchy": [
+        "Menu",
+        "Menu_Main",
+        "Container",
+        "MainSelect",
+        "Continue",
+        "Continue",
+        "Images",
+        "NewGame"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5263": {
+      "source": "Back",
+      "hierarchy": [
+        "Menu",
+        "Menu_DeleteSave",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5264": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsLoad",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5265": {
+      "source": "Options",
+      "hierarchy": [
+        "Menu",
+        "Menu_Main",
+        "Container",
+        "MainSelect",
+        "Options",
+        "Options",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5266": {
+      "source": "Slot 2",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsLoad",
+        "Container",
+        "LoadSlotSelect",
+        "LoadSlot2",
+        "LoadSlot2",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5267": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "Menu",
+        "Menu_Gallery",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5268": {
+      "source": "Select",
+      "hierarchy": [
+        "Menu",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5269": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "Menu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5270": {
+      "source": "Continue",
+      "hierarchy": [
+        "Menu",
+        "Menu_Main",
+        "Container",
+        "MainSelect",
+        "Continue",
+        "Continue",
+        "Images",
+        "Continue"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5271": {
+      "source": "Quit\n",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsLoad",
+        "Container",
+        "Quit",
+        "Quit",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5272": {
+      "source": "Slot 3",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsLoad",
+        "Container",
+        "LoadSlotSelect",
+        "LoadSlot3",
+        "LoadSlot3",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5273": {
+      "source": "Select",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsLoad",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5274": {
+      "source": "Quit",
+      "hierarchy": [
+        "Menu",
+        "Menu_Main",
+        "Container",
+        "MainSelect",
+        "Quit",
+        "Quit",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5275": {
+      "source": "Delete",
+      "hierarchy": [
+        "Menu",
+        "Menu_DeleteSave",
+        "Container",
+        "LoadSlotSelect",
+        "YesDelete",
+        "YesDelete",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5276": {
+      "source": "Back",
+      "hierarchy": [
+        "Menu",
+        "Menu_DeleteSave",
+        "Container",
+        "LoadSlotSelect",
+        "Back",
+        "Back",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5277": {
+      "source": "Set Default",
+      "hierarchy": [
+        "Menu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "ResetToDefaults",
+        "ResetToDefaults",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5278": {
+      "source": "0/14",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsLoad",
+        "Container",
+        "LoadSlotSelect",
+        "LoadSlot3",
+        "LoadSlot3",
+        "Images",
+        "SlotProgress"
+      ],
+      "policy": "preserve",
+      "reason": "slot-progress-runtime-replaced",
+      "oldId": "level0#5185"
+    },
+    "level1#5279": {
+      "source": "OPTIONS",
+      "hierarchy": [
+        "Menu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "TitlePlaque",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5280": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "Menu",
+        "Menu_DeleteSave",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5281": {
+      "source": "Quit",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsLoad",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5282": {
+      "source": "Gallery",
+      "hierarchy": [
+        "Menu",
+        "Menu_Main",
+        "Container",
+        "MainSelect",
+        "Gallery",
+        "Gallery",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5283": {
+      "source": "Credits",
+      "hierarchy": [
+        "Menu",
+        "Menu_Main",
+        "Container",
+        "MainSelect",
+        "Credits",
+        "Credits",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5284": {
+      "source": "Are you sure?",
+      "hierarchy": [
+        "Menu",
+        "Menu_DeleteSave",
+        "Container",
+        "LoadSlotSelect",
+        "Question",
+        "Text (TMP)"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5285": {
+      "source": "Back",
+      "hierarchy": [
+        "Menu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Back",
+        "Back",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5286": {
+      "source": "0/14",
+      "hierarchy": [
+        "Menu",
+        "Menu_SlotsLoad",
+        "Container",
+        "LoadSlotSelect",
+        "LoadSlot2",
+        "LoadSlot2",
+        "Images",
+        "SlotProgress"
+      ],
+      "policy": "preserve",
+      "reason": "slot-progress-runtime-replaced",
+      "oldId": "level0#5188"
+    },
+    "level1#5287": {
+      "source": "Version\n",
+      "hierarchy": [
+        "Menu",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "policy": "preserve",
+      "reason": "version-display-needs-consumer-review",
+      "oldId": "level0#5190"
+    },
+    "level1#5288": {
+      "source": "No unlocks yet",
+      "hierarchy": [
+        "Menu",
+        "Menu_Gallery",
+        "Container",
+        "GallerySelect",
+        "Question",
+        "Text (TMP)"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level1#5289": {
+      "source": "Quit",
+      "hierarchy": [
+        "Menu",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4307": {
+      "source": "DELETE SAVE",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "DELETE SAVE CHEAT",
+        "Text (TMP)"
+      ],
+      "policy": "preserve",
+      "reason": "cheat-menu-text-needs-visibility-review",
+      "oldId": "level1#3846"
+    },
+    "level2#4308": {
+      "source": "CHEAT: Instant Clean",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "INSTANT CLEAN CHEAT",
+        "Text (TMP)"
+      ],
+      "policy": "preserve",
+      "reason": "cheat-menu-text-needs-visibility-review",
+      "oldId": "level1#3847"
+    },
+    "level2#4309": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4310": {
+      "source": "SOAPY",
+      "hierarchy": [
+        "FPSCanvas",
+        "ProgressBars",
+        "HorizontalGroup",
+        "ProgressBarSoapy",
+        "Panel",
+        "Text (TMP) (2)"
+      ],
+      "policy": "inherited",
+      "reason": "gameplay-indicator-translate-candidate",
+      "oldId": "level1#3848"
+    },
+    "level2#4311": {
+      "source": "Unstick\\n   Kobold",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Unstick",
+        "Unstick",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4312": {
+      "source": "CHEAT: Instant Skip",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "INSTANT SKIP LEVEL CHEAT",
+        "Text (TMP)"
+      ],
+      "policy": "preserve",
+      "reason": "cheat-menu-text-needs-visibility-review",
+      "oldId": "level1#3850"
+    },
+    "level2#4313": {
+      "source": "Here's a big long line of dialogue, ready to be shown to the player.",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Text"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level1#3851"
+    },
+    "level2#4314": {
+      "source": "Character Name",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Character Name"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level1#3852",
+      "speakerContrast": true
+    },
+    "level2#4315": {
+      "source": "Select",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4316": {
+      "source": "NEEDS TALK",
+      "hierarchy": [
+        "FPSCanvas",
+        "ProgressBars",
+        "HorizontalGroup",
+        "ProgressBarNeedsTalk",
+        "Panel",
+        "Text (TMP) (1)"
+      ],
+      "policy": "inherited",
+      "reason": "gameplay-indicator-translate-candidate",
+      "oldId": "level1#3853"
+    },
+    "level2#4317": {
+      "source": "Resume",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Resume",
+        "Resume",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4318": {
+      "source": "Quit",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Quit",
+        "Quit",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4319": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4320": {
+      "source": "Set Default",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "ResetToDefaults",
+        "ResetToDefaults",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4321": {
+      "source": "OPTIONS",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "TitlePlaque",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4322": {
+      "source": "NEEDS HANDJOB",
+      "hierarchy": [
+        "FPSCanvas",
+        "ProgressBars",
+        "HorizontalGroup",
+        "ProgressBarNeedsHandjob",
+        "Panel",
+        "Text (TMP)"
+      ],
+      "policy": "inherited",
+      "reason": "gameplay-indicator-translate-candidate",
+      "oldId": "level1#3855"
+    },
+    "level2#4323": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Back",
+        "Back",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4324": {
+      "source": "LEGACY SAVE",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "SAVE LEGACY CHEAT",
+        "Text (TMP)"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level2#4325": {
+      "source": "CLEAN",
+      "hierarchy": [
+        "FPSCanvas",
+        "ProgressBars",
+        "ProgressBarClean",
+        "Panel",
+        "Text (TMP) (3)"
+      ],
+      "policy": "inherited",
+      "reason": "gameplay-indicator-translate-candidate",
+      "oldId": "level1#3857"
+    },
+    "level2#4326": {
+      "source": "Version\n",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "policy": "preserve",
+      "reason": "version-display-needs-consumer-review",
+      "oldId": "level1#3858"
+    },
+    "level2#4327": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4328": {
+      "source": "Last line",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Options Presenter",
+        "Last Line"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level1#3859"
+    },
+    "level2#4329": {
+      "source": "Select",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4330": {
+      "source": "PAUSE",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "TitlePlaque",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4331": {
+      "source": "NEEDS BANDAGES",
+      "hierarchy": [
+        "FPSCanvas",
+        "ProgressBars",
+        "HorizontalGroup",
+        "ProgressBarNeedsBandages",
+        "Panel",
+        "Text (TMP)"
+      ],
+      "policy": "inherited",
+      "reason": "gameplay-indicator-translate-candidate",
+      "oldId": "level1#3860"
+    },
+    "level2#4332": {
+      "source": "Options\n",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Options",
+        "Options",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4333": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level2#4334": {
+      "source": "DEBRIS",
+      "hierarchy": [
+        "FPSCanvas",
+        "ProgressBars",
+        "HorizontalGroup",
+        "ProgressBarBoots",
+        "Panel",
+        "Text (TMP)"
+      ],
+      "policy": "inherited",
+      "reason": "gameplay-indicator-translate-candidate",
+      "oldId": "level1#3861"
+    },
+    "level2#4335": {
+      "source": "Save",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Save",
+        "Save",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#842": {
+      "source": "You and the dragon get married and have hot sex forever!\nmaybe credit roll here\nThanks for playing !!!",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "GameOver!"
+      ],
+      "policy": "inherited",
+      "reason": "ending-text-translate-candidate",
+      "oldId": "level2#645"
+    },
+    "level3#843": {
+      "source": "Sound Attributions\n",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Spacer",
+        "Text (TMP)"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#844": {
+      "source": "Art Attributions\n",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Spacer (1)",
+        "Text (TMP)"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#845": {
+      "source": "Save",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Save",
+        "Save",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#846": {
+      "source": "Jigglebonez",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (1)",
+        "Panel",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#649"
+    },
+    "level3#847": {
+      "source": "Leo",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (3)",
+        "Panel",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#650"
+    },
+    "level3#848": {
+      "source": "Sarah",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (6)",
+        "Panel",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#651"
+    },
+    "level3#849": {
+      "source": "Raliv",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (5)",
+        "Panel",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#652"
+    },
+    "level3#850": {
+      "source": "Naelstrof",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (4)",
+        "Panel",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#653"
+    },
+    "level3#851": {
+      "source": "Hopfel",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (2)",
+        "Panel",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#654"
+    },
+    "level3#852": {
+      "source": "hannagreen",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#655"
+    },
+    "level3#853": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#854": {
+      "source": "Options\n",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Options",
+        "Options",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#855": {
+      "source": "PAUSE",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "TitlePlaque",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#856": {
+      "source": "Carpet impacts",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#656"
+    },
+    "level3#857": {
+      "source": "Writing\nEnvironment Design\nEnvironment Modeling\nEnvironment Animation",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit",
+        "Panel",
+        "Contributions"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#657"
+    },
+    "level3#858": {
+      "source": "Select",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#859": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#860": {
+      "source": "GatorDragonGames logo",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions (1)",
+        "SoundAttribution (29)",
+        "SFX"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#861": {
+      "source": "Carpet paw sfx",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (19)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#658"
+    },
+    "level3#862": {
+      "source": "door open sfx",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (10)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#659"
+    },
+    "level3#863": {
+      "source": "Wood impacts",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (4)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#660"
+    },
+    "level3#864": {
+      "source": "rain and thunder",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (14)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#661"
+    },
+    "level3#865": {
+      "source": "Various recordings",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (16)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#662"
+    },
+    "level3#866": {
+      "source": "Wood Steps",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (5)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#663"
+    },
+    "level3#867": {
+      "source": "GDC Bundle Part 4",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (15)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#664"
+    },
+    "level3#868": {
+      "source": "Additional wood Impacts",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (6)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#665"
+    },
+    "level3#869": {
+      "source": "Steam artwork",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions (1)",
+        "SoundAttribution (28)",
+        "SFX"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#870": {
+      "source": "Various recordings",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (17)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#666"
+    },
+    "level3#871": {
+      "source": "Various recordings",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (23)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#667"
+    },
+    "level3#872": {
+      "source": "Deepthroat Choke",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (26)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#668"
+    },
+    "level3#873": {
+      "source": "number station recording",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (11)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#669"
+    },
+    "level3#874": {
+      "source": "Ceramic impacts",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (1)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#670"
+    },
+    "level3#875": {
+      "source": "rain on windows",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (13)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#671"
+    },
+    "level3#876": {
+      "source": "Snow steps",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (8)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#672"
+    },
+    "level3#877": {
+      "source": "thunder",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (18)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#673"
+    },
+    "level3#878": {
+      "source": "Various recordings",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (22)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#674"
+    },
+    "level3#879": {
+      "source": "Glass impacts",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (2)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#675"
+    },
+    "level3#880": {
+      "source": "Thunder",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (20)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#676"
+    },
+    "level3#881": {
+      "source": "Slime sfx",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (9)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#677"
+    },
+    "level3#882": {
+      "source": "Grass steps",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (7)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#678"
+    },
+    "level3#883": {
+      "source": "Ragdoll impacts",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (3)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#679"
+    },
+    "level3#884": {
+      "source": "Cardboard impacts",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (21)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#680"
+    },
+    "level3#885": {
+      "source": "Weirdly accurate open/close sound",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (24)",
+        "SFX"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#886": {
+      "source": "City ambience",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (25)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#682"
+    },
+    "level3#887": {
+      "source": "Wiener consultant",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions (1)",
+        "SoundAttribution (27)",
+        "SFX"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#888": {
+      "source": "knot pop sfx",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (12)",
+        "SFX"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#683"
+    },
+    "level3#889": {
+      "source": "nox",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (1)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#684"
+    },
+    "level3#890": {
+      "source": "mallement",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (8)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#685"
+    },
+    "level3#891": {
+      "source": "inspectorj",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (13)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#686"
+    },
+    "level3#892": {
+      "source": "poyekhai",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (11)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#687"
+    },
+    "level3#893": {
+      "source": "EvilZorak(OpenNSFW)",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (26)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#688"
+    },
+    "level3#894": {
+      "source": "Hopfel",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (23)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#689"
+    },
+    "level3#895": {
+      "source": "BigCozyOrca",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions (1)",
+        "SoundAttribution (28)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "Contributor or attributed-work name"
+    },
+    "level3#896": {
+      "source": "Naelstrof",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (17)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#690"
+    },
+    "level3#897": {
+      "source": "profispiesser",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (6)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#691"
+    },
+    "level3#898": {
+      "source": "Soniss Game Audio",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (15)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#692"
+    },
+    "level3#899": {
+      "source": "lamamakesmusic",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (5)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#693"
+    },
+    "level3#900": {
+      "source": "sagamusix",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (14)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#694"
+    },
+    "level3#901": {
+      "source": "Jigglebonez",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (16)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#695"
+    },
+    "level3#902": {
+      "source": "worthahep",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (4)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#696"
+    },
+    "level3#903": {
+      "source": "Archival",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (19)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#697"
+    },
+    "level3#904": {
+      "source": "BigCozyOrca",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions (1)",
+        "SoundAttribution (29)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "Contributor or attributed-work name"
+    },
+    "level3#905": {
+      "source": "simpsi",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (10)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#698"
+    },
+    "level3#906": {
+      "source": "sforsman",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (12)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#699"
+    },
+    "level3#907": {
+      "source": "CoffeeSoda",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions (1)",
+        "SoundAttribution (27)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "Contributor or attributed-work name"
+    },
+    "level3#908": {
+      "source": "Master of Dreams",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (25)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#700"
+    },
+    "level3#909": {
+      "source": "Ahze's Faucet",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (24)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "Contributor or attributed-work name"
+    },
+    "level3#910": {
+      "source": "Bendrain",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (21)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#702"
+    },
+    "level3#911": {
+      "source": "leafs67",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (7)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#703"
+    },
+    "level3#912": {
+      "source": "stephensaldanha",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (9)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#704"
+    },
+    "level3#913": {
+      "source": "launemax",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (3)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#705"
+    },
+    "level3#914": {
+      "source": "ZapSplat",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (20)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#706"
+    },
+    "level3#915": {
+      "source": "hokstnator",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (18)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#707"
+    },
+    "level3#916": {
+      "source": "stinkhorn",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (2)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#708"
+    },
+    "level3#917": {
+      "source": "Raliv",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Attributions",
+        "SoundAttribution (22)",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#709"
+    },
+    "level3#918": {
+      "source": "Version\n",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "policy": "preserve",
+      "reason": "version-display-needs-consumer-review",
+      "oldId": "level2#710"
+    },
+    "level3#919": {
+      "source": "LEGACY SAVE",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "SAVE LEGACY CHEAT",
+        "Text (TMP)"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level3#920": {
+      "source": "Ahze",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit",
+        "Panel",
+        "Name"
+      ],
+      "policy": "preserve",
+      "reason": "credit-name-preserve-candidate",
+      "oldId": "level2#711"
+    },
+    "level3#921": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Back",
+        "Back",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#922": {
+      "source": "Set Default",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "ResetToDefaults",
+        "ResetToDefaults",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#923": {
+      "source": "Dragon Designs\nDragon Models\nDragon Textures",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (3)",
+        "Panel",
+        "Contributions"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#714"
+    },
+    "level3#924": {
+      "source": "Character Themes\nGame Soundtrack",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (6)",
+        "Panel",
+        "Contributions"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#925": {
+      "source": "Dragon Animations\nScene Animations\nDragon Rigging",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (1)",
+        "Panel",
+        "Contributions"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#716"
+    },
+    "level3#926": {
+      "source": "Programming\nDragon Animations\nUser Interface\nBuild Integration",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (4)",
+        "Panel",
+        "Contributions"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#717"
+    },
+    "level3#927": {
+      "source": "Programming\nIllustrations\nUser Interface",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (2)",
+        "Panel",
+        "Contributions"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#928": {
+      "source": "Programming\nDragon Textures\nUser Interface",
+      "hierarchy": [
+        "Canvas",
+        "Panel",
+        "CreditScroll",
+        "Panel",
+        "Credit (5)",
+        "Panel",
+        "Contributions"
+      ],
+      "policy": "inherited",
+      "reason": "credit-description-translate-candidate",
+      "oldId": "level2#719"
+    },
+    "level3#929": {
+      "source": "OPTIONS",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "TitlePlaque",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#930": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#931": {
+      "source": "Quit",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Quit",
+        "Quit",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#932": {
+      "source": "Select",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#933": {
+      "source": "CHEAT: Instant Skip",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "INSTANT SKIP LEVEL CHEAT",
+        "Text (TMP)"
+      ],
+      "policy": "preserve",
+      "reason": "cheat-menu-text-needs-visibility-review",
+      "oldId": "level2#720"
+    },
+    "level3#934": {
+      "source": "Resume",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Resume",
+        "Resume",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#935": {
+      "source": "Unstick\\n   Kobold",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Unstick",
+        "Unstick",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#936": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level3#937": {
+      "source": "DELETE SAVE",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "DELETE SAVE CHEAT",
+        "Text (TMP)"
+      ],
+      "policy": "preserve",
+      "reason": "cheat-menu-text-needs-visibility-review",
+      "oldId": "level2#722"
+    },
+    "level3#938": {
+      "source": "CHEAT: Instant Clean",
+      "hierarchy": [
+        "GameMenu",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "INSTANT CLEAN CHEAT",
+        "Text (TMP)"
+      ],
+      "policy": "preserve",
+      "reason": "cheat-menu-text-needs-visibility-review",
+      "oldId": "level2#723"
+    },
+    "level4#1578": {
+      "source": "Select",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1579": {
+      "source": "PAUSE",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "TitlePlaque",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1580": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1581": {
+      "source": "Options\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Options",
+        "Options",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1582": {
+      "source": "Character Name",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Character Name"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level3#1449",
+      "speakerContrast": true
+    },
+    "level4#1583": {
+      "source": "Here's a big long line of dialogue, ready to be shown to the player.",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Text"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level3#1450"
+    },
+    "level4#1584": {
+      "source": "Save",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Save",
+        "Save",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1585": {
+      "source": "Version\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "policy": "preserve",
+      "reason": "version-display-needs-consumer-review",
+      "oldId": "level3#1453"
+    },
+    "level4#1586": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1587": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1588": {
+      "source": "Quit",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Quit",
+        "Quit",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1589": {
+      "source": "Set Default",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "ResetToDefaults",
+        "ResetToDefaults",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1590": {
+      "source": "OPTIONS",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "TitlePlaque",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1591": {
+      "source": "LEGACY SAVE",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "SAVE LEGACY CHEAT",
+        "Text (TMP)"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level4#1592": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Back",
+        "Back",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1593": {
+      "source": "Last line",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Options Presenter",
+        "Last Line"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level3#1455"
+    },
+    "level4#1594": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1595": {
+      "source": "Unstick\\n   Kobold",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Unstick",
+        "Unstick",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1596": {
+      "source": "Select",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level4#1597": {
+      "source": "Resume",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Resume",
+        "Resume",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2038": {
+      "source": "Select",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2039": {
+      "source": "PAUSE",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "TitlePlaque",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2040": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2041": {
+      "source": "Options\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Options",
+        "Options",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2042": {
+      "source": "Character Name",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Character Name"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level4#1913"
+    },
+    "level5#2043": {
+      "source": "Here's a big long line of dialogue, ready to be shown to the player.",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Text"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level4#1914"
+    },
+    "level5#2044": {
+      "source": "Save",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Save",
+        "Save",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2045": {
+      "source": "Version\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "policy": "preserve",
+      "reason": "version-display-needs-consumer-review",
+      "oldId": "level4#1917"
+    },
+    "level5#2046": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2047": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2048": {
+      "source": "Quit",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Quit",
+        "Quit",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2049": {
+      "source": "Set Default",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "ResetToDefaults",
+        "ResetToDefaults",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2050": {
+      "source": "OPTIONS",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "TitlePlaque",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2051": {
+      "source": "LEGACY SAVE",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "SAVE LEGACY CHEAT",
+        "Text (TMP)"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level5#2052": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Back",
+        "Back",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2053": {
+      "source": "Last line",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Options Presenter",
+        "Last Line"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level4#1919"
+    },
+    "level5#2054": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2055": {
+      "source": "Unstick\\n   Kobold",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Unstick",
+        "Unstick",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2056": {
+      "source": "Select",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level5#2057": {
+      "source": "Resume",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Resume",
+        "Resume",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1610": {
+      "source": "Select",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1611": {
+      "source": "PAUSE",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "TitlePlaque",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1612": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1613": {
+      "source": "Options\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Options",
+        "Options",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1614": {
+      "source": "Character Name",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Character Name"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level5#1474",
+      "speakerContrast": true
+    },
+    "level6#1615": {
+      "source": "Here's a big long line of dialogue, ready to be shown to the player.",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Text"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level5#1475"
+    },
+    "level6#1616": {
+      "source": "Save",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Save",
+        "Save",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1617": {
+      "source": "Version\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "policy": "preserve",
+      "reason": "version-display-needs-consumer-review",
+      "oldId": "level5#1478"
+    },
+    "level6#1618": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1619": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1620": {
+      "source": "Quit",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Quit",
+        "Quit",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1621": {
+      "source": "Set Default",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "ResetToDefaults",
+        "ResetToDefaults",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1622": {
+      "source": "OPTIONS",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "TitlePlaque",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1623": {
+      "source": "LEGACY SAVE",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "SAVE LEGACY CHEAT",
+        "Text (TMP)"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level6#1624": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Back",
+        "Back",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1625": {
+      "source": "Last line",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Options Presenter",
+        "Last Line"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level5#1480"
+    },
+    "level6#1626": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1627": {
+      "source": "Unstick\\n   Kobold",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Unstick",
+        "Unstick",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1628": {
+      "source": "Select",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level6#1629": {
+      "source": "Resume",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Resume",
+        "Resume",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1571": {
+      "source": "Select",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1572": {
+      "source": "PAUSE",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "TitlePlaque",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1573": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1574": {
+      "source": "Options\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Options",
+        "Options",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1575": {
+      "source": "Character Name",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Character Name"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level6#1446",
+      "speakerContrast": true
+    },
+    "level7#1576": {
+      "source": "Here's a big long line of dialogue, ready to be shown to the player.",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Line Presenter",
+        "Text"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level6#1447"
+    },
+    "level7#1577": {
+      "source": "Save",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Save",
+        "Save",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1578": {
+      "source": "Version\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "VersionDisplay",
+        "VersionText"
+      ],
+      "policy": "preserve",
+      "reason": "version-display-needs-consumer-review",
+      "oldId": "level6#1450"
+    },
+    "level7#1579": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1580": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Escape",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1581": {
+      "source": "Quit",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Quit",
+        "Quit",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1582": {
+      "source": "Set Default",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "ResetToDefaults",
+        "ResetToDefaults",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1583": {
+      "source": "OPTIONS",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "TitlePlaque",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1584": {
+      "source": "LEGACY SAVE",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "SAVE LEGACY CHEAT",
+        "Text (TMP)"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "level7#1585": {
+      "source": "Back",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "LeftButtons",
+        "Back",
+        "Back",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1586": {
+      "source": "Last line",
+      "hierarchy": [
+        "GDG Dialogue System",
+        "Canvas",
+        "Options Presenter",
+        "Last Line"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-presenter-template-needs-consumer-review",
+      "oldId": "level6#1452"
+    },
+    "level7#1587": {
+      "source": "Navigate\n",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Options",
+        "Container",
+        "Panel",
+        "OptionLayout",
+        "WidthLimitedGroup",
+        "MenuButtonPrompts",
+        "Container",
+        "Navigate",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1588": {
+      "source": "Unstick\\n   Kobold",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Unstick",
+        "Unstick",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1589": {
+      "source": "Select",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "MenuButtonPrompts",
+        "Container",
+        "Submit",
+        "Label"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "level7#1590": {
+      "source": "Resume",
+      "hierarchy": [
+        "GameMenuSexVariant",
+        "Menu_Main",
+        "Container",
+        "Panel",
+        "Resume",
+        "Resume",
+        "Images",
+        "Title"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "sharedassets1.assets#327": {
+      "source": "LABEL",
+      "hierarchy": [
+        "SliderPrefab",
+        "Slider",
+        "Label"
+      ],
+      "policy": "preserve",
+      "reason": "settings-prefab-template-needs-consumer-review",
+      "oldId": "sharedassets0.assets#645"
+    },
+    "sharedassets1.assets#328": {
+      "source": "LABEL",
+      "hierarchy": [
+        "TogglePrefab",
+        "Label"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "sharedassets1.assets#330": {
+      "source": "LABEL",
+      "hierarchy": [
+        "DropDownPrefab",
+        "Label"
+      ],
+      "policy": "preserve",
+      "reason": "settings-prefab-template-needs-consumer-review",
+      "oldId": "sharedassets0.assets#647"
+    },
+    "sharedassets1.assets#331": {
+      "source": "LABEL",
+      "hierarchy": [
+        "TextInput",
+        "Label"
+      ],
+      "policy": "preserve",
+      "reason": "settings-prefab-template-needs-consumer-review",
+      "oldId": "sharedassets0.assets#648"
+    },
+    "sharedassets1.assets#332": {
+      "source": "LABEL",
+      "hierarchy": [
+        "TitlePrefab",
+        "Label"
+      ],
+      "policy": "preserve",
+      "reason": "settings-prefab-template-needs-consumer-review",
+      "oldId": "sharedassets0.assets#649"
+    },
+    "sharedassets1.assets#333": {
+      "source": "Option A",
+      "hierarchy": [
+        "DropDownPrefab",
+        "Dropdown",
+        "Template",
+        "Border",
+        "Viewport",
+        "Content",
+        "Item",
+        "Item Label"
+      ],
+      "policy": "preserve",
+      "reason": "Numeric value, runtime-populated template, or development-only legacy-save control"
+    },
+    "sharedassets1.assets#341": {
+      "source": "0",
+      "hierarchy": [
+        "SliderPrefab",
+        "Slider",
+        "Min"
+      ],
+      "policy": "preserve",
+      "reason": "settings-prefab-template-needs-consumer-review",
+      "oldId": "sharedassets0.assets#658"
+    },
+    "sharedassets1.assets#345": {
+      "source": "Off",
+      "hierarchy": [
+        "TogglePrefab",
+        "Switch",
+        "Off"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "sharedassets1.assets#346": {
+      "source": "Enter text...",
+      "hierarchy": [
+        "TextInput",
+        "TextInput",
+        "Text Area",
+        "Placeholder"
+      ],
+      "policy": "preserve",
+      "reason": "settings-prefab-template-needs-consumer-review",
+      "oldId": "sharedassets0.assets#661"
+    },
+    "sharedassets1.assets#352": {
+      "source": "​",
+      "hierarchy": [
+        "TextInput",
+        "TextInput",
+        "Text Area",
+        "Text"
+      ],
+      "policy": "preserve",
+      "reason": "settings-prefab-template-needs-consumer-review",
+      "oldId": "sharedassets0.assets#670"
+    },
+    "sharedassets1.assets#353": {
+      "source": "1",
+      "hierarchy": [
+        "SliderPrefab",
+        "Slider",
+        "Max"
+      ],
+      "policy": "preserve",
+      "reason": "settings-prefab-template-needs-consumer-review",
+      "oldId": "sharedassets0.assets#671"
+    },
+    "sharedassets1.assets#354": {
+      "source": "On\n",
+      "hierarchy": [
+        "TogglePrefab",
+        "Switch",
+        "On"
+      ],
+      "policy": "delta",
+      "reason": "New or revised visible interface text"
+    },
+    "sharedassets1.assets#361": {
+      "source": "",
+      "hierarchy": [
+        "DropDownPrefab",
+        "Dropdown",
+        "OtherLabel"
+      ],
+      "policy": "preserve",
+      "reason": "settings-prefab-template-needs-consumer-review",
+      "oldId": "sharedassets0.assets#677"
+    },
+    "sharedassets1.assets#365": {
+      "source": "32",
+      "hierarchy": [
+        "SliderPrefab",
+        "Slider",
+        "Handle Slide Area",
+        "Handle",
+        "Panel",
+        "Amount"
+      ],
+      "policy": "preserve",
+      "reason": "settings-prefab-template-needs-consumer-review",
+      "oldId": "sharedassets0.assets#681"
+    },
+    "sharedassets2.assets#11195": {
+      "source": "Option Text",
+      "hierarchy": [
+        "Option Item"
+      ],
+      "policy": "preserve",
+      "reason": "dialogue-option-template-runtime-replaced",
+      "oldId": "sharedassets1.assets#11105"
+    }
+  },
+  "settings": [
+    {
+      "asset": "sharedassets0.assets",
+      "id": 529,
+      "name": "AmbienceVolume",
+      "class": "SettingAudio",
+      "label": "Ambience Volume",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 530,
+      "name": "AntiAliasing",
+      "class": "SettingDropdown",
+      "label": "Anti-aliasing",
+      "options": [
+        "Disabled",
+        "Enabled"
+      ]
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 531,
+      "name": "Audio",
+      "class": "SettingGroup",
+      "label": "Audio",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 532,
+      "name": "CameraFOV",
+      "class": "SettingFloatClamped",
+      "label": "Camera FOV",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 533,
+      "name": "CrouchControl",
+      "class": "SettingDropdown",
+      "label": "Crouch Control",
+      "options": [
+        "Tap/Hold",
+        "Toggle",
+        "Hold"
+      ]
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 534,
+      "name": "Gameplay",
+      "class": "SettingGroup",
+      "label": "Gameplay",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 535,
+      "name": "Graphics",
+      "class": "SettingGroup",
+      "label": "Graphics",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 536,
+      "name": "HintGlyphType",
+      "class": "SettingDropdown",
+      "label": "Hint Glyph Type",
+      "options": [
+        "Auto",
+        "Xbox",
+        "DualShock",
+        "Keyboard"
+      ]
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 537,
+      "name": "LookInvertY",
+      "class": "SettingBool",
+      "label": "Invert Look Y",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 538,
+      "name": "MasterVolume",
+      "class": "SettingAudio",
+      "label": "Master Volume",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 539,
+      "name": "MouseSensitivity",
+      "class": "SettingFloatClamped",
+      "label": "Mouse Sensitivity",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 540,
+      "name": "MusicVolume",
+      "class": "SettingAudio",
+      "label": "Music Volume",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 541,
+      "name": "Resolution",
+      "class": "SettingResolution",
+      "label": "Resolution",
+      "options": [
+        "640x480_60",
+        "720x480_60",
+        "768x480_60",
+        "800x480_60",
+        "854x480_60",
+        "960x540_60",
+        "1024x576_60",
+        "800x600_60",
+        "1024x600_60",
+        "960x640_60",
+        "1024x640_60",
+        "1136x640_60",
+        "960x720_60",
+        "1152x720_60",
+        "1280x720_60",
+        "1024x768_60",
+        "1152x768_60",
+        "1280x768_60",
+        "1366x768_60",
+        "1280x800_60",
+        "1152x864_60",
+        "1280x864_60",
+        "1440x900_60",
+        "1600x900_60",
+        "1280x960_60",
+        "1440x960_60",
+        "1280x1024_60",
+        "1600x1024_60",
+        "1400x1050_60",
+        "1680x1050_60",
+        "1920x1080_60",
+        "2560x1080_60",
+        "2048x1152_60",
+        "1600x1200_60",
+        "1920x1200_60",
+        "1792x1344_60",
+        "1856x1392_60",
+        "1920x1440_60",
+        "2160x1440_60",
+        "2304x1440_60",
+        "2560x1440_60",
+        "3440x1440_60"
+      ]
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 542,
+      "name": "ScreenBrightness",
+      "class": "SettingFloatClamped",
+      "label": "Screen Brightness",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 543,
+      "name": "ScreenGamma",
+      "class": "SettingFloatClamped",
+      "label": "Gamma",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 544,
+      "name": "SoundEffectsVolume",
+      "class": "SettingAudio",
+      "label": "Sound Effects",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 545,
+      "name": "SprayerReduceMotionSick",
+      "class": "SettingBool",
+      "label": "Sprayer Reduce Motion",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 546,
+      "name": "TargetFramerate",
+      "class": "SettingFramerateTarget",
+      "label": "Target Framerate",
+      "options": []
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 547,
+      "name": "VSync",
+      "class": "SettingVSync",
+      "label": "VSync",
+      "options": [
+        "Disabled",
+        "Enabled"
+      ]
+    },
+    {
+      "asset": "sharedassets0.assets",
+      "id": 548,
+      "name": "WindowMode",
+      "class": "SettingFullscreenMode",
+      "label": "Window Mode",
+      "options": [
+        "Exclusive",
+        "Fullscreen",
+        "Maxed Window",
+        "Windowed"
+      ]
+    }
+  ],
+  "yarn": {
+    "asset": "sharedassets2.assets",
+    "localization": 10690,
+    "project": 10787,
+    "programSha256": "a67bbfc37dca0b29b1be740e36b570e9d524a46ef2fdf5574e0f58278c0ff1e6",
+    "oldAsset": "sharedassets1.assets",
+    "oldLocalization": 10623,
+    "oldProject": 10719,
+    "sourceTextChanges": [
+      "line:8440a3f4",
+      "line:73e4789c",
+      "line:9b9567ec",
+      "line:a1f9de62",
+      "line:71d57aeb",
+      "line:a0373456",
+      "line:266836f8",
+      "line:fa1a1e76",
+      "line:507bd2b9",
+      "line:aeae4744",
+      "line:19cedc30",
+      "line:43dd32f5",
+      "line:5a195ff2",
+      "line:a99c515c",
+      "line:4183ca7e",
+      "line:6acf7c77",
+      "line:f676b9a8",
+      "line:866cd495",
+      "line:81416c72",
+      "line:d2d97c90",
+      "line:e77c1f79",
+      "line:b17360a0",
+      "line:f5462edf",
+      "line:d38c63ea",
+      "line:a0cb3f78",
+      "line:36fb380f",
+      "line:52f81dde",
+      "line:2bfa396c"
+    ],
+    "transitionSourcePlatform": "macos",
+    "sharedSourcePlatform": "macos"
+  },
+  "sourceSnapshotSha256": "e271c7b94fcdcc84fc2a6067f68d96750064077ebf728930a5f59cf78dd06716",
+  "sharedSettingsWith": {
+    "path": "localization/build-profiles/gog-317a98f-macos.json",
+    "sha256": "93da052e5534dea0ebe0e22743a695dd8100495760d8e9f081c7171b039728ab"
+  }
+}

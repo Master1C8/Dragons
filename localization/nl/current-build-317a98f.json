@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "nl",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "Afsluiten",
+    "Quit\n": "Afsluiten\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "Door op ‘Doorgaan’ te drukken bevestig je dat je minstens 18 jaar oud bent\nen dat je verantwoordelijk bent voor wie je scherm kan zien.",
+    "Select": "Selecteren",
+    "Continue?": "Doorgaan?",
+    "Navigate\n": "Navigeren\n",
+    "Accept": "Bevestigen",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "Dit spel bevat\n<color=red>expliciete seksuele inhoud</color>",
+    "Back": "Terug",
+    "Save Slots": "Opslagplaatsen",
+    "Slot 1": "Plaats 1",
+    "Slot 2": "Plaats 2",
+    "Slot 3": "Plaats 3",
+    "Save": "Opslaan",
+    "New Game": "Nieuw spel",
+    "Options": "Opties",
+    "Options\n": "Opties\n",
+    "OPTIONS": "OPTIES",
+    "Continue": "Doorgaan",
+    "Delete": "Verwijderen",
+    "Set Default": "Standaardwaarden herstellen",
+    "Gallery": "Galerij",
+    "Credits": "Medewerkers",
+    "Are you sure?": "Weet je het zeker?",
+    "No unlocks yet": "Nog niets ontgrendeld",
+    "Unstick\\n   Kobold": "Vastzittende kobold\\n   bevrijden",
+    "Resume": "Hervatten",
+    "PAUSE": "PAUZE",
+    "Sound Attributions\n": "Geluidsvermelding\n",
+    "Art Attributions\n": "Beeldverantwoording\n",
+    "GatorDragonGames logo": "Logo van GatorDragonGames",
+    "Steam artwork": "Illustraties voor Steam",
+    "Weirdly accurate open/close sound": "Vreemd realistisch open- en dichtgeluid",
+    "Wiener consultant": "Worstadviseur",
+    "Character Themes\nGame Soundtrack": "Personagethema’s\nSoundtrack van het spel",
+    "Programming\nIllustrations\nUser Interface": "Programmering\nIllustraties\nGebruikersinterface",
+    "Off": "Uit",
+    "On\n": "Aan\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "Hoofdvolume"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "Gamma"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "Ik voel me behoorlijk schoon!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "Wat is er?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "Dat doe je al. Wat is er?"
+    }
+  }
+}

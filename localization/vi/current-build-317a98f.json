@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "vi",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "Thoát",
+    "Quit\n": "Thoát\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "Khi nhấn «Tiếp tục», bạn xác nhận mình đủ 18 tuổi\nvà chịu trách nhiệm về việc ai có thể nhìn thấy màn hình của bạn.",
+    "Select": "Chọn",
+    "Continue?": "Tiếp tục chứ?",
+    "Navigate\n": "Điều hướng\n",
+    "Accept": "Xác nhận",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "Trò chơi này có\n<color=red>NỘI DUNG TÌNH DỤC TRỰC DIỆN</color>",
+    "Back": "Quay lại",
+    "Save Slots": "Ô lưu",
+    "Slot 1": "Ô 1",
+    "Slot 2": "Ô 2",
+    "Slot 3": "Ô 3",
+    "Save": "Lưu",
+    "New Game": "Trò chơi mới",
+    "Options": "Tùy chọn",
+    "Options\n": "Tùy chọn\n",
+    "OPTIONS": "TÙY CHỌN",
+    "Continue": "Tiếp tục",
+    "Delete": "Xóa",
+    "Set Default": "Khôi phục mặc định",
+    "Gallery": "Thư viện",
+    "Credits": "Đội ngũ thực hiện",
+    "Are you sure?": "Bạn có chắc không?",
+    "No unlocks yet": "Chưa mở khóa nội dung nào",
+    "Unstick\\n   Kobold": "Gỡ\\n   kobold bị mắc kẹt",
+    "Resume": "Tiếp tục",
+    "PAUSE": "TẠM DỪNG",
+    "Sound Attributions\n": "Ghi nhận âm thanh\n",
+    "Art Attributions\n": "Nguồn hình minh họa\n",
+    "GatorDragonGames logo": "Logo GatorDragonGames",
+    "Steam artwork": "Hình minh họa cho Steam",
+    "Weirdly accurate open/close sound": "Tiếng mở đóng chân thực đến lạ",
+    "Wiener consultant": "Cố vấn xúc xích",
+    "Character Themes\nGame Soundtrack": "Nhạc chủ đề nhân vật\nNhạc nền trò chơi",
+    "Programming\nIllustrations\nUser Interface": "Lập trình\nMinh họa\nGiao diện người dùng",
+    "Off": "Tắt",
+    "On\n": "Bật\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "Âm lượng tổng"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "Gamma"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "Tôi thấy mình khá sạch sẽ rồi!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "Có chuyện gì?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "Anh vừa hỏi rồi đấy, có chuyện gì?"
+    }
+  }
+}

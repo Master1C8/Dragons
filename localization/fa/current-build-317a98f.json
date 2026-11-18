@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "fa",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "خروج",
+    "Quit\n": "خروج\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "با زدن «ادامه» تأیید می‌کنید که دست‌کم ۱۸ سال دارید\nو مسئولیت اینکه چه کسی صفحه‌تان را می‌بیند با شماست.",
+    "Select": "انتخاب",
+    "Continue?": "ادامه می‌دهید؟",
+    "Navigate\n": "پیمایش\n",
+    "Accept": "تأیید",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "این بازی حاوی\n<color=red>محتوای جنسی صریح</color> است",
+    "Back": "بازگشت",
+    "Save Slots": "جایگاه‌های ذخیره",
+    "Slot 1": "جایگاه 1",
+    "Slot 2": "جایگاه 2",
+    "Slot 3": "جایگاه 3",
+    "Save": "ذخیره",
+    "New Game": "بازی جدید",
+    "Options": "تنظیمات",
+    "Options\n": "تنظیمات\n",
+    "OPTIONS": "تنظیمات",
+    "Continue": "ادامه",
+    "Delete": "حذف",
+    "Set Default": "بازگرداندن پیش‌فرض",
+    "Gallery": "گالری",
+    "Credits": "سازندگان",
+    "Are you sure?": "مطمئن هستید؟",
+    "No unlocks yet": "هنوز چیزی باز نشده",
+    "Unstick\\n   Kobold": "کوبولد گیرکرده را\\n   آزاد کن",
+    "Resume": "ادامه",
+    "PAUSE": "مکث",
+    "Sound Attributions\n": "منابع صدا\n",
+    "Art Attributions\n": "منابع آثار هنری\n",
+    "GatorDragonGames logo": "نشان GatorDragonGames",
+    "Steam artwork": "تصاویر Steam",
+    "Weirdly accurate open/close sound": "صدای باز و بسته شدن که به طرز عجیبی دقیق است",
+    "Wiener consultant": "مشاور سوسیس",
+    "Character Themes\nGame Soundtrack": "تم شخصیت‌ها\nموسیقی متن بازی",
+    "Programming\nIllustrations\nUser Interface": "برنامه‌نویسی\nتصویرسازی\nرابط کاربری",
+    "Off": "خاموش",
+    "On\n": "روشن\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "بلندی صدای کلی"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "گاما"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "حس می‌کنم حسابی تمیز شده‌ام!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "چی شده؟"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "همین حالاش هم داری می‌پرسی، چی شده؟"
+    }
+  }
+}

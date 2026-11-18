@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "sr",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "Изађи",
+    "Quit\n": "Изађи\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "Притиском на „Настави“ потврђујеш да имаш најмање 18 година\nи да сносиш одговорност за то ко може да види твој екран.",
+    "Select": "Изабери",
+    "Continue?": "Наставити?",
+    "Navigate\n": "Кретање\n",
+    "Accept": "Потврди",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "Ова игра садржи\n<color=red>ЕКСПЛИЦИТАН СЕКСУАЛНИ САДРЖАЈ</color>",
+    "Back": "Назад",
+    "Save Slots": "Места за чување",
+    "Slot 1": "Место 1",
+    "Slot 2": "Место 2",
+    "Slot 3": "Место 3",
+    "Save": "Сачувај",
+    "New Game": "Нова игра",
+    "Options": "Опције",
+    "Options\n": "Опције\n",
+    "OPTIONS": "ОПЦИЈЕ",
+    "Continue": "Настави",
+    "Delete": "Избриши",
+    "Set Default": "Врати подразумевана подешавања",
+    "Gallery": "Галерија",
+    "Credits": "Аутори",
+    "Are you sure?": "Желиш ли да наставиш?",
+    "No unlocks yet": "Још ништа није откључано",
+    "Unstick\\n   Kobold": "Ослободи\\n   заглављеног коболда",
+    "Resume": "Настави",
+    "PAUSE": "ПАУЗА",
+    "Sound Attributions\n": "Извори звука\n",
+    "Art Attributions\n": "Извори илустрација\n",
+    "GatorDragonGames logo": "Лого GatorDragonGames",
+    "Steam artwork": "Илустрације за Steam",
+    "Weirdly accurate open/close sound": "Необично верно отварање и затварање",
+    "Wiener consultant": "Саветник за кобасице",
+    "Character Themes\nGame Soundtrack": "Музичке теме ликова\nМузика из игре",
+    "Programming\nIllustrations\nUser Interface": "Програмирање\nИлустрације\nКориснички интерфејс",
+    "Off": "Искључено",
+    "On\n": "Укључено\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "Укупна јачина звука"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "Гама"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "Осећам се прилично чисто!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "Шта има?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "Већ питаш, шта има?"
+    }
+  }
+}

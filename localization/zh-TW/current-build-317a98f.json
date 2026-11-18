@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "zh-TW",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "離開",
+    "Quit\n": "離開\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "按下「繼續」即表示你已年滿18歲，\n並對誰能看到你的螢幕負責。",
+    "Select": "選擇",
+    "Continue?": "要繼續嗎？",
+    "Navigate\n": "移動\n",
+    "Accept": "確認",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "本遊戲含有\n<color=red>露骨的性內容</color>",
+    "Back": "返回",
+    "Save Slots": "存檔欄位",
+    "Slot 1": "欄位1",
+    "Slot 2": "欄位2",
+    "Slot 3": "欄位3",
+    "Save": "儲存",
+    "New Game": "新遊戲",
+    "Options": "選項",
+    "Options\n": "選項\n",
+    "OPTIONS": "選項",
+    "Continue": "繼續",
+    "Delete": "刪除",
+    "Set Default": "恢復預設值",
+    "Gallery": "藝廊",
+    "Credits": "製作人員",
+    "Are you sure?": "確定嗎？",
+    "No unlocks yet": "尚未解鎖任何內容",
+    "Unstick\\n   Kobold": "救出卡住的\\n   狗頭人",
+    "Resume": "繼續",
+    "PAUSE": "暫停",
+    "Sound Attributions\n": "音效來源\n",
+    "Art Attributions\n": "美術素材來源\n",
+    "GatorDragonGames logo": "GatorDragonGames 標誌",
+    "Steam artwork": "Steam 宣傳圖",
+    "Weirdly accurate open/close sound": "異常逼真的開闔音效",
+    "Wiener consultant": "香腸顧問",
+    "Character Themes\nGame Soundtrack": "角色主題曲\n遊戲原聲帶",
+    "Programming\nIllustrations\nUser Interface": "程式設計\n插畫\n使用者介面",
+    "Off": "關閉",
+    "On\n": "開啟\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "主音量"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "伽瑪"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "感覺乾淨多了！"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "怎麼了？"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "你已經問了啊，怎麼啦？"
+    }
+  }
+}

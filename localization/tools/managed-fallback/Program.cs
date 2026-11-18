@@ -8,28 +8,34 @@ if (args.Length != 3)
     throw new ArgumentException("Expected SOURCE_DLL OUTPUT_DLL REPLACEMENT");
 var bytes = File.ReadAllBytes(args[0]);
 var sourceHash = Hash(bytes);
+var currentSlot = sourceHash is
+    "8d626ba9a9c7829dd84a652a233fdfd22edbdc9ca824673193d9a15e82815377" or
+    "8610c137ec3d8d5993129a91c0c25a480d2c478b8fe5f3a2c7d1bd20686bb10e";
 var slot = sourceHash switch
 {
     "54953f9c071aa3ca5b52eb8b12b8e0bedc73f7665a506c61acbef0c58ac340ef" or
     "3d5def40f51540e79dbb6a897993fe006022cf1f16933a1b47a69334085ad89d" => false,
     "f9c4ccc1b10f95270d6d0d63a5e150865a070eca353a6c16fa74930f993f7bcb" or
-    "8b1b439e62bff222fbce00869a3343422c77d08e384db7ed323b5e66f44195e2" => true,
+    "8b1b439e62bff222fbce00869a3343422c77d08e384db7ed323b5e66f44195e2" or
+    "8d626ba9a9c7829dd84a652a233fdfd22edbdc9ca824673193d9a15e82815377" or
+    "8610c137ec3d8d5993129a91c0c25a480d2c478b8fe5f3a2c7d1bd20686bb10e" => true,
     _ => throw new InvalidOperationException("Unsupported managed source assembly"),
 };
 if (Hash(File.ReadAllBytes(typeof(ModuleDefinition).Assembly.Location)) !=
     "831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf")
     throw new InvalidOperationException("Unsupported Cecil assembly");
 
-var originalText = slot ? "NEW" : "!! ERROR: Missing line!";
-var methodName = slot ? "System.Void MenuSlotsNew::OnShow(MenuResponseTransition)" :
+var slotType = currentSlot ? "MenuSlotsLoad" : "MenuSlotsNew";
+var originalText = slot ? (currentSlot ? "New" : "NEW") : "!! ERROR: Missing line!";
+var methodName = slot ? $"System.Void {slotType}::OnShow(MenuResponseTransition)" :
     "System.Void Yarn.Unity.LocalizedLine::.cctor()";
 var replacement = args[2];
 if (string.IsNullOrWhiteSpace(replacement) || replacement.IndexOfAny(new[] { '<', '>', '\r', '\n', '\0' }) >= 0)
     throw new ArgumentException("Expected a single plain-text replacement");
 using var original = ModuleDefinition.ReadModule(new MemoryStream(bytes));
 using var edited = ModuleDefinition.ReadModule(new MemoryStream(bytes));
-var method = edited.GetType(slot ? "MenuSlotsNew" : "Yarn.Unity.LocalizedLine").Methods.Single(m => m.FullName == methodName);
-var offsets = slot ? new[] { 0x85, 0x101, 0x17c } : new[] { 0x18, 0x39 };
+var method = edited.GetType(slot ? slotType : "Yarn.Unity.LocalizedLine").Methods.Single(m => m.FullName == methodName);
+var offsets = slot ? (currentSlot ? new[] { 0x52, 0xac, 0x105 } : new[] { 0x85, 0x101, 0x17c }) : new[] { 0x18, 0x39 };
 var instructions = offsets.Select(offset => method.Body.Instructions.Single(i => i.Offset == offset)).ToArray();
 if (slot)
 {
@@ -37,7 +43,7 @@ if (slot)
     {
         var instruction = instructions[n];
         if (instruction.OpCode.Code != Code.Ldstr || !Equals(instruction.Operand, originalText) ||
-            instruction.Previous.Operand?.ToString() != $"TMPro.TextMeshProUGUI MenuSlotsNew::slot{n + 1}Progress" ||
+            instruction.Previous.Operand?.ToString() != $"TMPro.TextMeshProUGUI {slotType}::slot{n + 1}Progress" ||
             instruction.Next.OpCode.Code != Code.Callvirt ||
             instruction.Next.Operand?.ToString() != "System.Void TMPro.TMP_Text::set_text(System.String)")
             throw new InvalidOperationException("Unexpected new-slot text binding");

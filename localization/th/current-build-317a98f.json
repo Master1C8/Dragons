@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "th",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "ออก",
+    "Quit\n": "ออก\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "เมื่อกดดำเนินการต่อ คุณยืนยันว่ามีอายุอย่างน้อย 18 ปี\nและรับผิดชอบว่าใครบ้างที่มองเห็นหน้าจอของคุณ",
+    "Select": "เลือก",
+    "Continue?": "ดำเนินการต่อไหม?",
+    "Navigate\n": "เลื่อนตัวเลือก\n",
+    "Accept": "ยืนยัน",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "เกมนี้มี\n<color=red>เนื้อหาทางเพศอย่างโจ่งแจ้ง</color>",
+    "Back": "ย้อนกลับ",
+    "Save Slots": "ช่องบันทึก",
+    "Slot 1": "ช่อง 1",
+    "Slot 2": "ช่อง 2",
+    "Slot 3": "ช่อง 3",
+    "Save": "บันทึก",
+    "New Game": "เกมใหม่",
+    "Options": "ตัวเลือก",
+    "Options\n": "ตัวเลือก\n",
+    "OPTIONS": "ตัวเลือก",
+    "Continue": "เล่นต่อ",
+    "Delete": "ลบ",
+    "Set Default": "คืนค่าเริ่มต้น",
+    "Gallery": "แกลเลอรี",
+    "Credits": "รายชื่อผู้สร้าง",
+    "Are you sure?": "แน่ใจหรือไม่?",
+    "No unlocks yet": "ยังไม่มีอะไรปลดล็อก",
+    "Unstick\\n   Kobold": "ช่วยโคโบลด์\\n   ที่ติดอยู่",
+    "Resume": "เล่นต่อ",
+    "PAUSE": "หยุดชั่วคราว",
+    "Sound Attributions\n": "เครดิตเสียง\n",
+    "Art Attributions\n": "ที่มาของภาพประกอบ\n",
+    "GatorDragonGames logo": "โลโก้ GatorDragonGames",
+    "Steam artwork": "ภาพประกอบสำหรับ Steam",
+    "Weirdly accurate open/close sound": "เสียงเปิดปิดที่สมจริงอย่างประหลาด",
+    "Wiener consultant": "ที่ปรึกษาเรื่องไส้กรอก",
+    "Character Themes\nGame Soundtrack": "เพลงประจำตัวละคร\nเพลงประกอบเกม",
+    "Programming\nIllustrations\nUser Interface": "เขียนโปรแกรม\nภาพประกอบ\nส่วนติดต่อผู้ใช้",
+    "Off": "ปิด",
+    "On\n": "เปิด\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "ระดับเสียงรวม"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "แกมมา"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "ผมรู้สึกสะอาดขึ้นทีเดียวครับ!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "มีอะไรเหรอ?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "ก็ถามไปแล้วนี่ มีอะไรเหรอ?"
+    }
+  }
+}

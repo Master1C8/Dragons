@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "he",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "יציאה",
+    "Quit\n": "יציאה\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "בלחיצה על ״המשך״ אתם מאשרים שמלאו לכם 18 שנים,\nושאתם אחראים למי שיכול לראות את המסך שלכם.",
+    "Select": "בחירה",
+    "Continue?": "להמשיך?",
+    "Navigate\n": "ניווט\n",
+    "Accept": "אישור",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "המשחק כולל\n<color=red>תוכן מיני מפורש</color>",
+    "Back": "חזרה",
+    "Save Slots": "משבצות שמירה",
+    "Slot 1": "משבצת 1",
+    "Slot 2": "משבצת 2",
+    "Slot 3": "משבצת 3",
+    "Save": "שמירה",
+    "New Game": "משחק חדש",
+    "Options": "אפשרויות",
+    "Options\n": "אפשרויות\n",
+    "OPTIONS": "אפשרויות",
+    "Continue": "המשך",
+    "Delete": "מחיקה",
+    "Set Default": "שחזור ברירת המחדל",
+    "Gallery": "גלריה",
+    "Credits": "קרדיטים",
+    "Are you sure?": "להמשיך בפעולה?",
+    "No unlocks yet": "עדיין לא נפתח דבר",
+    "Unstick\\n   Kobold": "שחרור\\n   הקובולד שנתקע",
+    "Resume": "המשך",
+    "PAUSE": "השהיה",
+    "Sound Attributions\n": "קרדיטים לצלילים\n",
+    "Art Attributions\n": "מקורות האיורים\n",
+    "GatorDragonGames logo": "סמל GatorDragonGames",
+    "Steam artwork": "איורים ל־Steam",
+    "Weirdly accurate open/close sound": "צליל פתיחה וסגירה מדויק להפליא",
+    "Wiener consultant": "יועץ נקניקיות",
+    "Character Themes\nGame Soundtrack": "נעימות הדמויות\nפסקול המשחק",
+    "Programming\nIllustrations\nUser Interface": "תכנות\nאיורים\nממשק משתמש",
+    "Off": "כבוי",
+    "On\n": "פעיל\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "עוצמת קול כללית"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "גאמה"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "אני מרגיש נקי למדי!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "מה קורה?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "כבר שאלת, מה קורה?"
+    }
+  }
+}

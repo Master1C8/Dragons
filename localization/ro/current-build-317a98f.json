@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "ro",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "Ieșire",
+    "Quit\n": "Ieșire\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "Apăsând „Continuă”, confirmi că ai cel puțin 18 ani\nși că răspunzi de cine îți poate vedea ecranul.",
+    "Select": "Selectează",
+    "Continue?": "Continui?",
+    "Navigate\n": "Navigare\n",
+    "Accept": "Confirmă",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "Acest joc conține\n<color=red>conținut sexual explicit</color>",
+    "Back": "Înapoi",
+    "Save Slots": "Sloturi de salvare",
+    "Slot 1": "Slotul 1",
+    "Slot 2": "Slotul 2",
+    "Slot 3": "Slotul 3",
+    "Save": "Salvează",
+    "New Game": "Joc nou",
+    "Options": "Opțiuni",
+    "Options\n": "Opțiuni\n",
+    "OPTIONS": "OPȚIUNI",
+    "Continue": "Continuă",
+    "Delete": "Șterge",
+    "Set Default": "Restabilește setările implicite",
+    "Gallery": "Galerie",
+    "Credits": "Echipa jocului",
+    "Are you sure?": "Sigur vrei să continui?",
+    "No unlocks yet": "Încă nu ai deblocat nimic",
+    "Unstick\\n   Kobold": "Eliberează\\n   koboldul blocat",
+    "Resume": "Continuă",
+    "PAUSE": "PAUZĂ",
+    "Sound Attributions\n": "Atribuirea sunetelor\n",
+    "Art Attributions\n": "Sursele ilustrațiilor\n",
+    "GatorDragonGames logo": "Sigla GatorDragonGames",
+    "Steam artwork": "Ilustrații pentru Steam",
+    "Weirdly accurate open/close sound": "Sunet de deschidere și închidere ciudat de realist",
+    "Wiener consultant": "Consultant în materie de cârnați",
+    "Character Themes\nGame Soundtrack": "Temele personajelor\nColoana sonoră a jocului",
+    "Programming\nIllustrations\nUser Interface": "Programare\nIlustrații\nInterfață",
+    "Off": "Dezactivat",
+    "On\n": "Activat\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "Volum general"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "Gamma"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "Mă simt destul de curat!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "Ce e?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "Tocmai ai pus una. Ce e?"
+    }
+  }
+}

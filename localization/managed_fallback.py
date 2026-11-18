@@ -20,10 +20,19 @@ SLOT_SOURCES = {
     'windows': '8b1b439e62bff222fbce00869a3343422c77d08e384db7ed323b5e66f44195e2',
 }
 SLOT = {'slot-new': 'NEW'}
+CURRENT_SLOT_SOURCES = {
+    'macos': '8d626ba9a9c7829dd84a652a233fdfd22edbdc9ca824673193d9a15e82815377',
+    'windows': '8610c137ec3d8d5993129a91c0c25a480d2c478b8fe5f3a2c7d1bd20686bb10e',
+}
+CURRENT_SLOT = {'slot-new': 'New'}
 
 
-def source_digest(platform, source, *, slot_new=False):
+def source_digest(platform, source, *, slot_new=False, current_build=False):
+    if current_build and not slot_new:
+        raise ValueError('current-build mode applies only to the moved save-slot caption')
     assembly, sources = (SLOT_ASSEMBLY, SLOT_SOURCES) if slot_new else (ASSEMBLY, SOURCES)
+    if current_build:
+        sources = CURRENT_SLOT_SOURCES
     expected = sources[platform]
     source = Path(source)
     if source.name != assembly or source.is_symlink() or dl.sha(source.read_bytes()) != expected:
@@ -32,8 +41,12 @@ def source_digest(platform, source, *, slot_new=False):
     return expected
 
 
-def read_replacement(locale_file, requested, expected, *, slot_new=False):
+def read_replacement(locale_file, requested, expected, *, slot_new=False, current_build=False):
     lines = SLOT if slot_new else FALLBACK
+    if current_build:
+        if not slot_new:
+            raise ValueError('current-build mode requires the save-slot caption')
+        lines = CURRENT_SLOT
     locale, values = dl.read_locale(locale_file, list(lines), list(lines.values()),
                                     expected, yarn_semantics=False)
     if locale != requested:
@@ -44,10 +57,12 @@ def read_replacement(locale_file, requested, expected, *, slot_new=False):
     return replacement
 
 
-def prepare(platform, source, locale_file, requested, tool, *, slot_new=False):
-    expected = source_digest(platform, source, slot_new=slot_new)
-    replacement = read_replacement(locale_file, requested, expected, slot_new=slot_new)
+def prepare(platform, source, locale_file, requested, tool, *, slot_new=False, current_build=False):
+    expected = source_digest(platform, source, slot_new=slot_new, current_build=current_build)
+    replacement = read_replacement(locale_file, requested, expected, slot_new=slot_new, current_build=current_build)
     assembly, offsets = (SLOT_ASSEMBLY, [0x85, 0x101, 0x17c]) if slot_new else (ASSEMBLY, [0x18, 0x39])
+    if current_build:
+        offsets = [0x52, 0xac, 0x105]
     tool = Path(tool).resolve(strict=True)
     with tempfile.TemporaryDirectory(prefix='dragons-managed-fallback-') as folder:
         output = Path(folder) / assembly

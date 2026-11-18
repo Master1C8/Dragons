@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "sw",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "Toka",
+    "Quit\n": "Toka\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "Ukibonyeza “Endelea”, unathibitisha kuwa una miaka 18 au zaidi\nna kwamba unawajibika kwa anayoweza kuona skrini yako.",
+    "Select": "Chagua",
+    "Continue?": "Uendelee?",
+    "Navigate\n": "Sogeza uteuzi\n",
+    "Accept": "Thibitisha",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "Mchezo huu una\n<color=red>maudhui ya wazi ya ngono</color>",
+    "Back": "Rudi",
+    "Save Slots": "Nafasi za kuhifadhi mchezo",
+    "Slot 1": "Nafasi ya 1",
+    "Slot 2": "Nafasi ya 2",
+    "Slot 3": "Nafasi ya 3",
+    "Save": "Hifadhi",
+    "New Game": "Mchezo mpya",
+    "Options": "Mipangilio",
+    "Options\n": "Mipangilio\n",
+    "OPTIONS": "MIPANGILIO",
+    "Continue": "Endelea",
+    "Delete": "Futa",
+    "Set Default": "Rejesha mipangilio ya awali",
+    "Gallery": "Matunzio",
+    "Credits": "Wachangiaji",
+    "Are you sure?": "Una uhakika?",
+    "No unlocks yet": "Bado hakuna kilichofunguliwa",
+    "Unstick\\n   Kobold": "Mwokoe\\n   kobold aliyekwama",
+    "Resume": "Endelea",
+    "PAUSE": "SITISHA",
+    "Sound Attributions\n": "Shukrani za sauti\n",
+    "Art Attributions\n": "Vyanzo vya vielelezo\n",
+    "GatorDragonGames logo": "Nembo ya GatorDragonGames",
+    "Steam artwork": "Vielelezo vya Steam",
+    "Weirdly accurate open/close sound": "Sauti halisi isivyo kawaida ya kufungua na kufunga",
+    "Wiener consultant": "Mshauri wa soseji",
+    "Character Themes\nGame Soundtrack": "Muziki wa wahusika\nMuziki wa mchezo",
+    "Programming\nIllustrations\nUser Interface": "Upangaji programu\nMichoro\nKiolesura",
+    "Off": "Zima",
+    "On\n": "Washa\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "Kiwango cha jumla cha sauti"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "Gama"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "Najisikia msafi kweli!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "Kuna nini?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "Tayari unauliza, kuna nini?"
+    }
+  }
+}

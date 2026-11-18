@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "id",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "Keluar",
+    "Quit\n": "Keluar\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "Dengan menekan “Lanjut”, kamu menyatakan usiamu minimal 18 tahun\ndan bertanggung jawab atas siapa yang bisa melihat layarmu.",
+    "Select": "Pilih",
+    "Continue?": "Lanjut?",
+    "Navigate\n": "Navigasi\n",
+    "Accept": "Konfirmasi",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "Game ini memuat\n<color=red>konten seksual eksplisit</color>",
+    "Back": "Kembali",
+    "Save Slots": "Slot simpan",
+    "Slot 1": "Slot 1",
+    "Slot 2": "Slot 2",
+    "Slot 3": "Slot 3",
+    "Save": "Simpan",
+    "New Game": "Game baru",
+    "Options": "Opsi",
+    "Options\n": "Opsi\n",
+    "OPTIONS": "OPSI",
+    "Continue": "Lanjut",
+    "Delete": "Hapus",
+    "Set Default": "Pulihkan setelan bawaan",
+    "Gallery": "Galeri",
+    "Credits": "Kredit",
+    "Are you sure?": "Kamu yakin?",
+    "No unlocks yet": "Belum ada yang terbuka",
+    "Unstick\\n   Kobold": "Bebaskan\\n   kobold yang tersangkut",
+    "Resume": "Lanjutkan",
+    "PAUSE": "JEDA",
+    "Sound Attributions\n": "Atribusi suara\n",
+    "Art Attributions\n": "Sumber ilustrasi\n",
+    "GatorDragonGames logo": "Logo GatorDragonGames",
+    "Steam artwork": "Ilustrasi untuk Steam",
+    "Weirdly accurate open/close sound": "Suara buka tutup yang anehnya realistis",
+    "Wiener consultant": "Konsultan sosis",
+    "Character Themes\nGame Soundtrack": "Tema karakter\nMusik game",
+    "Programming\nIllustrations\nUser Interface": "Pemrograman\nIlustrasi\nAntarmuka pengguna",
+    "Off": "Mati",
+    "On\n": "Nyala\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "Volume keseluruhan"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "Gamma"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "Rasanya saya cukup bersih sekarang!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "Ada apa?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "Kau sudah bertanya. Ada apa?"
+    }
+  }
+}

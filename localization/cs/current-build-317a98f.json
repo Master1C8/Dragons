@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "cs",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "Ukončit",
+    "Quit\n": "Ukončit\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "Stisknutím tlačítka „Pokračovat“ potvrzujete, že vám je alespoň 18 let\na že zodpovídáte za to, kdo může vidět vaši obrazovku.",
+    "Select": "Vybrat",
+    "Continue?": "Pokračovat?",
+    "Navigate\n": "Pohyb v nabídce\n",
+    "Accept": "Potvrdit",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "Tato hra obsahuje\n<color=red>sexuálně explicitní obsah</color>",
+    "Back": "Zpět",
+    "Save Slots": "Pozice pro uložení",
+    "Slot 1": "Pozice 1",
+    "Slot 2": "Pozice 2",
+    "Slot 3": "Pozice 3",
+    "Save": "Uložit",
+    "New Game": "Nová hra",
+    "Options": "Nastavení",
+    "Options\n": "Nastavení\n",
+    "OPTIONS": "NASTAVENÍ",
+    "Continue": "Pokračovat",
+    "Delete": "Smazat",
+    "Set Default": "Obnovit výchozí nastavení",
+    "Gallery": "Galerie",
+    "Credits": "Tvůrci",
+    "Are you sure?": "Opravdu pokračovat?",
+    "No unlocks yet": "Zatím se nic neodemklo",
+    "Unstick\\n   Kobold": "Uvolnit\\n   zaseknutého kobolda",
+    "Resume": "Pokračovat",
+    "PAUSE": "PAUZA",
+    "Sound Attributions\n": "Autoři zvuků\n",
+    "Art Attributions\n": "Zdroje grafiky\n",
+    "GatorDragonGames logo": "Logo GatorDragonGames",
+    "Steam artwork": "Grafika pro Steam",
+    "Weirdly accurate open/close sound": "Podivně věrný zvuk otevírání a zavírání",
+    "Wiener consultant": "Poradce pro párky",
+    "Character Themes\nGame Soundtrack": "Motivy postav\nHudba ze hry",
+    "Programming\nIllustrations\nUser Interface": "Programování\nIlustrace\nUživatelské rozhraní",
+    "Off": "Vypnuto",
+    "On\n": "Zapnuto\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "Celková hlasitost"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "Gama"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "Cítím se docela čistý!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "Co se děje?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "Vždyť už se ptáš, co se děje?"
+    }
+  }
+}

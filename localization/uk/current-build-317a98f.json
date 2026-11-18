@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "uk",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "Вийти",
+    "Quit\n": "Вийти\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "Натискаючи «Продовжити», ви підтверджуєте, що вам уже є 18 років\nі що ви відповідаєте за те, хто бачить ваш екран.",
+    "Select": "Вибір",
+    "Continue?": "Продовжити?",
+    "Navigate\n": "Навігація\n",
+    "Accept": "Підтвердити",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "Ця гра містить\n<color=red>ВІДВЕРТИЙ СЕКСУАЛЬНИЙ ВМІСТ</color>",
+    "Back": "Назад",
+    "Save Slots": "Збереження",
+    "Slot 1": "Комірка 1",
+    "Slot 2": "Комірка 2",
+    "Slot 3": "Комірка 3",
+    "Save": "Зберегти",
+    "New Game": "Нова гра",
+    "Options": "Налаштування",
+    "Options\n": "Налаштування\n",
+    "OPTIONS": "НАЛАШТУВАННЯ",
+    "Continue": "Продовжити",
+    "Delete": "Видалити",
+    "Set Default": "Відновити типові налаштування",
+    "Gallery": "Галерея",
+    "Credits": "Автори",
+    "Are you sure?": "Ви впевнені?",
+    "No unlocks yet": "Поки нічого не відкрито",
+    "Unstick\\n   Kobold": "Вивільнити\\n   кобольда",
+    "Resume": "Продовжити",
+    "PAUSE": "ПАУЗА",
+    "Sound Attributions\n": "Джерела звуків\n",
+    "Art Attributions\n": "Джерела ілюстрацій\n",
+    "GatorDragonGames logo": "Логотип GatorDragonGames",
+    "Steam artwork": "Ілюстрації для Steam",
+    "Weirdly accurate open/close sound": "Напрочуд реалістичний звук відкривання й закривання",
+    "Wiener consultant": "Консультант із сосисок",
+    "Character Themes\nGame Soundtrack": "Музичні теми персонажів\nСаундтрек гри",
+    "Programming\nIllustrations\nUser Interface": "Програмування\nІлюстрації\nІнтерфейс користувача",
+    "Off": "Вимк.",
+    "On\n": "Увімк.\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "Загальна гучність"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "Гама"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "Почуваюся доволі чистим!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "Що таке?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "Ти вже питаєш. Що таке?"
+    }
+  }
+}

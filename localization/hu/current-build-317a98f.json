@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "hu",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "Kilépés",
+    "Quit\n": "Kilépés\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "A „Folytatás” megnyomásával kijelented, hogy elmúltál 18 éves,\nés te felelsz azért, hogy ki láthatja a képernyődet.",
+    "Select": "Kiválasztás",
+    "Continue?": "Folytatod?",
+    "Navigate\n": "Navigálás\n",
+    "Accept": "Megerősítés",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "A játék\n<color=red>nyílt szexuális tartalmat</color> tartalmaz",
+    "Back": "Vissza",
+    "Save Slots": "Mentési helyek",
+    "Slot 1": "1. hely",
+    "Slot 2": "2. hely",
+    "Slot 3": "3. hely",
+    "Save": "Mentés",
+    "New Game": "Új játék",
+    "Options": "Beállítások",
+    "Options\n": "Beállítások\n",
+    "OPTIONS": "BEÁLLÍTÁSOK",
+    "Continue": "Folytatás",
+    "Delete": "Törlés",
+    "Set Default": "Alapértékek visszaállítása",
+    "Gallery": "Galéria",
+    "Credits": "Készítők",
+    "Are you sure?": "Biztos vagy benne?",
+    "No unlocks yet": "Még semmi sem érhető el",
+    "Unstick\\n   Kobold": "Szabadítsd ki\\n   a beszorult koboldot",
+    "Resume": "Folytatás",
+    "PAUSE": "SZÜNET",
+    "Sound Attributions\n": "Hangforrások\n",
+    "Art Attributions\n": "Képi források\n",
+    "GatorDragonGames logo": "A GatorDragonGames logója",
+    "Steam artwork": "Illusztrációk a Steamhez",
+    "Weirdly accurate open/close sound": "Furcsán élethű nyitási és zárási hang",
+    "Wiener consultant": "Virsliügyi tanácsadó",
+    "Character Themes\nGame Soundtrack": "A szereplők zenei témái\nA játék zenéje",
+    "Programming\nIllustrations\nUser Interface": "Programozás\nIllusztrációk\nFelhasználói felület",
+    "Off": "Ki",
+    "On\n": "Be\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "Fő hangerő"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "Gamma"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "Egész tisztának érzem magam!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "Mi az?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "Máris kérdeztél. Mi az?"
+    }
+  }
+}

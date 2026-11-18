@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "el",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "Έξοδος",
+    "Quit\n": "Έξοδος\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "Πατώντας «Συνέχεια», δηλώνεις ότι είσαι τουλάχιστον 18 ετών\nκαι ότι έχεις την ευθύνη για το ποιος βλέπει την οθόνη σου.",
+    "Select": "Επιλογή",
+    "Continue?": "Συνέχεια;",
+    "Navigate\n": "Πλοήγηση\n",
+    "Accept": "Επιβεβαίωση",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "Αυτό το παιχνίδι περιέχει\n<color=red>ρητό σεξουαλικό περιεχόμενο</color>",
+    "Back": "Πίσω",
+    "Save Slots": "Θέσεις αποθήκευσης",
+    "Slot 1": "Θέση 1",
+    "Slot 2": "Θέση 2",
+    "Slot 3": "Θέση 3",
+    "Save": "Αποθήκευση",
+    "New Game": "Νέο παιχνίδι",
+    "Options": "Επιλογές",
+    "Options\n": "Επιλογές\n",
+    "OPTIONS": "ΕΠΙΛΟΓΈΣ",
+    "Continue": "Συνέχεια",
+    "Delete": "Διαγραφή",
+    "Set Default": "Επαναφορά προεπιλογών",
+    "Gallery": "Συλλογή",
+    "Credits": "Συντελεστές",
+    "Are you sure?": "Είσαι σίγουρος;",
+    "No unlocks yet": "Δεν έχει ξεκλειδωθεί τίποτα ακόμα",
+    "Unstick\\n   Kobold": "Ελευθέρωσε\\n   το κομπόλντ που κόλλησε",
+    "Resume": "Συνέχεια",
+    "PAUSE": "ΠΑΥΣΗ",
+    "Sound Attributions\n": "Αναφορές ήχου\n",
+    "Art Attributions\n": "Πηγές εικονογράφησης\n",
+    "GatorDragonGames logo": "Λογότυπο της GatorDragonGames",
+    "Steam artwork": "Εικονογράφηση για το Steam",
+    "Weirdly accurate open/close sound": "Παράξενα ρεαλιστικός ήχος ανοίγματος και κλεισίματος",
+    "Wiener consultant": "Σύμβουλος λουκάνικων",
+    "Character Themes\nGame Soundtrack": "Μουσικά θέματα χαρακτήρων\nΜουσική του παιχνιδιού",
+    "Programming\nIllustrations\nUser Interface": "Προγραμματισμός\nΕικονογράφηση\nΔιεπαφή χρήστη",
+    "Off": "Ανενεργό",
+    "On\n": "Ενεργό\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "Γενική ένταση"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "Γάμμα"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "Νιώθω αρκετά καθαρός!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "Τι συμβαίνει;"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "Ήδη μου κάνεις μία, τι συμβαίνει;"
+    }
+  }
+}

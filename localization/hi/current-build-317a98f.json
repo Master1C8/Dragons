@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "hi",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "बाहर जाएँ",
+    "Quit\n": "बाहर जाएँ\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "जारी रखें दबाकर आप पुष्टि करते हैं कि आपकी उम्र कम से कम 18 साल है\nऔर आपकी स्क्रीन कौन देख सकता है, इसकी ज़िम्मेदारी आपकी है।",
+    "Select": "चुनें",
+    "Continue?": "जारी रखें?",
+    "Navigate\n": "नेविगेट करें\n",
+    "Accept": "स्वीकार करें",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "इस गेम में\n<color=red>स्पष्ट यौन सामग्री</color> है",
+    "Back": "वापस",
+    "Save Slots": "सेव स्लॉट",
+    "Slot 1": "स्लॉट 1",
+    "Slot 2": "स्लॉट 2",
+    "Slot 3": "स्लॉट 3",
+    "Save": "सेव करें",
+    "New Game": "नया गेम",
+    "Options": "विकल्प",
+    "Options\n": "विकल्प\n",
+    "OPTIONS": "विकल्प",
+    "Continue": "जारी रखें",
+    "Delete": "मिटाएँ",
+    "Set Default": "डिफ़ॉल्ट बहाल करें",
+    "Gallery": "गैलरी",
+    "Credits": "निर्माता",
+    "Are you sure?": "क्या आप वाकई ऐसा करना चाहते हैं?",
+    "No unlocks yet": "अभी कुछ भी अनलॉक नहीं हुआ",
+    "Unstick\\n   Kobold": "फँसे हुए\\n   कोबोल्ड को छुड़ाएँ",
+    "Resume": "फिर शुरू करें",
+    "PAUSE": "विराम",
+    "Sound Attributions\n": "ध्वनि श्रेय\n",
+    "Art Attributions\n": "चित्रों के स्रोत\n",
+    "GatorDragonGames logo": "GatorDragonGames का लोगो",
+    "Steam artwork": "Steam के लिए चित्र",
+    "Weirdly accurate open/close sound": "खुलने और बंद होने की हैरतअंगेज़ ढंग से सटीक आवाज़",
+    "Wiener consultant": "सॉसेज सलाहकार",
+    "Character Themes\nGame Soundtrack": "पात्रों की धुनें\nगेम का साउंडट्रैक",
+    "Programming\nIllustrations\nUser Interface": "प्रोग्रामिंग\nचित्रांकन\nउपयोगकर्ता इंटरफ़ेस",
+    "Off": "बंद",
+    "On\n": "चालू\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "कुल ध्वनि स्तर"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "गामा"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "अब मैं काफ़ी साफ़ महसूस कर रहा हूँ!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "क्या बात है?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "अभी तो एक सवाल पूछ ही लिया, क्या बात है?"
+    }
+  }
+}

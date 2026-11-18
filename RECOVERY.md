@@ -1,5 +1,56 @@
 # Dragons recovery
 
+## Rebuilding for GOG 317a98f
+
+Mod 0.2.2 targets the Windows GOG build `60193676705807870` and the
+macOS GOG build `60193681046937687`. Both report
+`11/4/2026_317a98f0`. Use clean installed Data directories. The two
+profiles in `localization/build-profiles/` pin the full file inventories.
+Historical 0.2.1 recipes below use their original inputs.
+
+Use the 0.2.1 recovery archives and extracted installer resources listed
+below. The new builder reuses the reviewed translations and pairs them with
+each locale's `current-build-317a98f.json` and the current asset bindings.
+Use the historical macOS Data directory for the Yarn transition input on
+both platforms. Use the appropriate platform's accepted installer resources
+to supply the speaker and layout runtimes and the redistribution licenses.
+
+Build the managed fallback, speaker display, and prepared text tools in
+Release, and prepare the pinned Python, ICU, and reference shaper inputs as
+described below. For each platform and each locale listed in
+`installer/App/LocalePackages.json`, run:
+
+```sh
+python3.12 localization/rebuild_current_package.py --locale "$locale" \
+  --source "$current_data" --old-source "$historical_macos_data" \
+  --profile "localization/build-profiles/gog-317a98f-$platform.json" \
+  --delta "localization/$locale/current-build-317a98f.json" \
+  --accepted "$accepted_platform_resources" \
+  --inventory "$v42/combined-provisional-v42-20261110.json" \
+  --scope "$v42/yarn-scope-v42.json" --speaker-tool "$speaker_tool" \
+  --slot-tool "$managed_fallback_tool" --fonts "$recovered_font_inputs" \
+  --shaping-source "$recovered_shaping_inputs" --shaper "$reference_shaper" \
+  --icu "$icu_library" --shaping-tool "$prepared_text_tool" \
+  --output "$packages/$platform/$locale"
+```
+
+After both rosters complete:
+
+```sh
+python3.12 installer/Scripts/current-inventory.py "$packages" "$inventory"
+```
+
+Pass that inventory to `installer/Scripts/prepare-payload.py` for each
+platform with the clean Data directory, verified xdelta encoder and
+platform decoder from the accepted installers, and their license.
+For macOS also supply the compiled `SteamPathFix.dll`. The preparer
+verifies source and replacement hashes, then decodes every generated delta
+and compares it with the intended replacement. Give the resulting resource
+directories and the current stock `PlayerIcon.icns` to
+`installer/Scripts/build.sh` to assemble the two installer ZIPs.
+
+## Rebuilding the accepted 0.2.1 release
+
 The accepted VN Revival release is 0.2.1 with 30 languages on each platform.
 The GitHub draft `archive-v0.2.1` stores the two accepted archives for the
 maintainer. Its target is the source revision present at archival review,

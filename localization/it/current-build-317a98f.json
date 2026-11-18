@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "it",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "Esci",
+    "Quit\n": "Esci\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "Premendo «Continua» dichiari di avere almeno 18 anni\ne di essere responsabile di chi può vedere il tuo schermo.",
+    "Select": "Seleziona",
+    "Continue?": "Continuare?",
+    "Navigate\n": "Naviga\n",
+    "Accept": "Conferma",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "Questo gioco contiene\n<color=red>contenuti sessualmente espliciti</color>",
+    "Back": "Indietro",
+    "Save Slots": "Slot di salvataggio",
+    "Slot 1": "Slot 1",
+    "Slot 2": "Slot 2",
+    "Slot 3": "Slot 3",
+    "Save": "Salva",
+    "New Game": "Nuova partita",
+    "Options": "Opzioni",
+    "Options\n": "Opzioni\n",
+    "OPTIONS": "OPZIONI",
+    "Continue": "Continua",
+    "Delete": "Elimina",
+    "Set Default": "Ripristina valori predefiniti",
+    "Gallery": "Galleria",
+    "Credits": "Riconoscimenti",
+    "Are you sure?": "Vuoi procedere?",
+    "No unlocks yet": "Non hai ancora sbloccato nulla",
+    "Unstick\\n   Kobold": "Libera\\n   il coboldo bloccato",
+    "Resume": "Riprendi",
+    "PAUSE": "PAUSA",
+    "Sound Attributions\n": "Attribuzione dei suoni\n",
+    "Art Attributions\n": "Crediti delle illustrazioni\n",
+    "GatorDragonGames logo": "Logo di GatorDragonGames",
+    "Steam artwork": "Illustrazioni per Steam",
+    "Weirdly accurate open/close sound": "Suono di apertura e chiusura insolitamente realistico",
+    "Wiener consultant": "Consulente per le salsicce",
+    "Character Themes\nGame Soundtrack": "Temi dei personaggi\nColonna sonora del gioco",
+    "Programming\nIllustrations\nUser Interface": "Programmazione\nIllustrazioni\nInterfaccia utente",
+    "Off": "Disattivato",
+    "On\n": "Attivato\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "Volume generale"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "Gamma"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "Mi sento davvero pulito!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "Che succede?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "Me ne stai già facendo una, dimmi."
+    }
+  }
+}

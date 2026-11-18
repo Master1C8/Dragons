@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "ar",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "خروج",
+    "Quit\n": "خروج\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "بالضغط على «متابعة»، تؤكد أن عمرك 18 سنة على الأقل،\nوأنك مسؤول عمّن يمكنه رؤية شاشتك.",
+    "Select": "اختيار",
+    "Continue?": "هل تريد المتابعة؟",
+    "Navigate\n": "تنقّل\n",
+    "Accept": "تأكيد",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "تتضمن هذه اللعبة\n<color=red>محتوى جنسيًا صريحًا</color>",
+    "Back": "رجوع",
+    "Save Slots": "خانات الحفظ",
+    "Slot 1": "الخانة 1",
+    "Slot 2": "الخانة 2",
+    "Slot 3": "الخانة 3",
+    "Save": "حفظ",
+    "New Game": "لعبة جديدة",
+    "Options": "الخيارات",
+    "Options\n": "الخيارات\n",
+    "OPTIONS": "الخيارات",
+    "Continue": "متابعة",
+    "Delete": "حذف",
+    "Set Default": "استعادة الإعدادات الافتراضية",
+    "Gallery": "المعرض",
+    "Credits": "فريق العمل",
+    "Are you sure?": "هل أنت متأكد؟",
+    "No unlocks yet": "لم يُفتح أي محتوى بعد",
+    "Unstick\\n   Kobold": "حرّر\\n   الكوبولد العالق",
+    "Resume": "استئناف",
+    "PAUSE": "إيقاف مؤقت",
+    "Sound Attributions\n": "نسب الأصوات\n",
+    "Art Attributions\n": "مصادر الرسوم\n",
+    "GatorDragonGames logo": "شعار GatorDragonGames",
+    "Steam artwork": "رسوم Steam",
+    "Weirdly accurate open/close sound": "صوت فتح وإغلاق دقيق على نحو غريب",
+    "Wiener consultant": "مستشار النقانق",
+    "Character Themes\nGame Soundtrack": "ألحان الشخصيات\nالموسيقى التصويرية للعبة",
+    "Programming\nIllustrations\nUser Interface": "البرمجة\nالرسوم التوضيحية\nواجهة المستخدم",
+    "Off": "إيقاف",
+    "On\n": "تشغيل\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "مستوى الصوت العام"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "غاما"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "أشعر بأنني نظيف تمامًا!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "ما الأمر؟"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "لقد فعلت ذلك بالفعل، ما الأمر؟"
+    }
+  }
+}

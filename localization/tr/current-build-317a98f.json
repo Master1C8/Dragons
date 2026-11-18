@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "tr",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "Çık",
+    "Quit\n": "Çık\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "“Devam Et”e basarak 18 yaşını doldurduğunu\nve ekranını kimlerin görebileceğinden sorumlu olduğunu onaylıyorsun.",
+    "Select": "Seç",
+    "Continue?": "Devam edilsin mi?",
+    "Navigate\n": "Gezin\n",
+    "Accept": "Onayla",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "Bu oyun\n<color=red>AÇIK CİNSEL İÇERİK</color> barındırır",
+    "Back": "Geri",
+    "Save Slots": "Kayıt yuvaları",
+    "Slot 1": "Yuva 1",
+    "Slot 2": "Yuva 2",
+    "Slot 3": "Yuva 3",
+    "Save": "Kaydet",
+    "New Game": "Yeni oyun",
+    "Options": "Seçenekler",
+    "Options\n": "Seçenekler\n",
+    "OPTIONS": "SEÇENEKLER",
+    "Continue": "Devam et",
+    "Delete": "Sil",
+    "Set Default": "Varsayılana dön",
+    "Gallery": "Galeri",
+    "Credits": "Emeği geçenler",
+    "Are you sure?": "Emin misin?",
+    "No unlocks yet": "Henüz hiçbir şey açılmadı",
+    "Unstick\\n   Kobold": "Sıkışan koboldu\\n   kurtar",
+    "Resume": "Devam Et",
+    "PAUSE": "DURAKLATILDI",
+    "Sound Attributions\n": "Ses Kaynakları\n",
+    "Art Attributions\n": "Çizim kaynakları\n",
+    "GatorDragonGames logo": "GatorDragonGames logosu",
+    "Steam artwork": "Steam çizimleri",
+    "Weirdly accurate open/close sound": "Tuhaf derecede gerçekçi açılıp kapanma sesi",
+    "Wiener consultant": "Sosis danışmanı",
+    "Character Themes\nGame Soundtrack": "Karakter temaları\nOyun müzikleri",
+    "Programming\nIllustrations\nUser Interface": "Programlama\nİllüstrasyonlar\nKullanıcı Arayüzü",
+    "Off": "Kapalı",
+    "On\n": "Açık\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "Genel ses düzeyi"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "Gama"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "Kendimi epey temiz hissediyorum!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "Ne oldu?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "Zaten soruyorsun, ne oldu?"
+    }
+  }
+}

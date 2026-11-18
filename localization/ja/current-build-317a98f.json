@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "ja",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "終了",
+    "Quit\n": "終了\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "続行すると、18歳以上であることと、\n誰に画面が見えるかはご自身の責任であることを確認したものとみなされます。",
+    "Select": "選択",
+    "Continue?": "続行しますか？",
+    "Navigate\n": "移動\n",
+    "Accept": "確定",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "このゲームには\n<color=red>露骨な性的描写</color>が含まれます",
+    "Back": "戻る",
+    "Save Slots": "セーブスロット",
+    "Slot 1": "スロット1",
+    "Slot 2": "スロット2",
+    "Slot 3": "スロット3",
+    "Save": "保存",
+    "New Game": "はじめから",
+    "Options": "設定",
+    "Options\n": "設定\n",
+    "OPTIONS": "設定",
+    "Continue": "続きから",
+    "Delete": "削除",
+    "Set Default": "初期設定に戻す",
+    "Gallery": "ギャラリー",
+    "Credits": "クレジット",
+    "Are you sure?": "よろしいですか？",
+    "No unlocks yet": "まだ何も解放されていません",
+    "Unstick\\n   Kobold": "コボルドの\\n   引っかかりを解消",
+    "Resume": "再開",
+    "PAUSE": "一時停止",
+    "Sound Attributions\n": "音源クレジット\n",
+    "Art Attributions\n": "イラスト素材の出典\n",
+    "GatorDragonGames logo": "GatorDragonGamesのロゴ",
+    "Steam artwork": "Steam用イラスト",
+    "Weirdly accurate open/close sound": "妙にリアルな開閉音",
+    "Wiener consultant": "ソーセージ顧問",
+    "Character Themes\nGame Soundtrack": "キャラクターテーマ\nゲームのサウンドトラック",
+    "Programming\nIllustrations\nUser Interface": "プログラミング\nイラスト\nユーザーインターフェース",
+    "Off": "オフ",
+    "On\n": "オン\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "マスター音量"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "ガンマ"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "ずいぶんすっきりしました！"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "どうしたの？"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "もうしてるよ。どうしたの？"
+    }
+  }
+}

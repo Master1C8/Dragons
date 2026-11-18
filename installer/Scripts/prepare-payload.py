@@ -71,7 +71,31 @@ def prepare(args):
             package = ROOT.parent / entry[args.platform]['path']
             expected = entry[args.platform]['sha256']
             licenses = {}
-            if args.platform == 'macos':
+            if entry[args.platform].get('format') == 'verified-replacements':
+                manifest = package / 'manifest.json'
+                require(sha(manifest) == expected, f'{lang} replacement manifest checksum mismatch')
+                meta = json.loads(manifest.read_bytes())
+                require(meta['kind'] == 'current-build-localization-replacements' and
+                        meta['authoringSha256'] == entry['translationSha256'],
+                        f'{lang} replacement authoring mismatch')
+                delta = ROOT.parent / 'localization' / lang / 'current-build-317a98f.json'
+                profile = ROOT.parent / 'localization' / 'build-profiles' / f'gog-317a98f-{args.platform}.json'
+                require(sha(delta) == meta['deltaSha256'] and sha(profile) == meta['buildProfileSha256'],
+                        f'{lang} current build input changed since verification')
+                replacements, hashes = {}, {}
+                for name, row in meta['files'].items():
+                    require('\\' not in name and ':' not in name and
+                            all(part not in ('', '.', '..') for part in name.split('/')),
+                            f'Unsafe package path: {name}')
+                    path = package / name
+                    require(path.resolve().is_relative_to(package.resolve()) and
+                            row['sourceSha256'] == original_hashes.get(name) and
+                            sha(path) == row['outputSha256'], f'{name} replacement checksum mismatch')
+                    replacements[name], hashes[name] = path, row['outputSha256']
+                for name in ('NotoShaped-OFL.txt', 'NotoSansCJK-OFL.txt'):
+                    if (package / name).is_file():
+                        licenses[name] = (package / name).read_bytes()
+            elif args.platform == 'macos':
                 resources = package / 'Contents/Resources'
                 manifest = resources / 'vn-localization-package.json'
                 require(sha(manifest) == expected, f'{lang} macOS manifest checksum mismatch')
@@ -115,7 +139,10 @@ def prepare(args):
             if args.platform == 'macos':
                 assembly = 'Managed/Assembly-CSharp.dll'
                 patched = staging / f'{lang}-steam.dll'
-                subprocess.run(['dotnet', str(args.steam_path_fix), str(replacements[assembly]), str(patched)], check=True)
+                # New game builds may no longer need the historical save-slot
+                # DLL edit. The App ID path fix is still required in that case.
+                source_assembly = replacements.get(assembly, originals[assembly])
+                subprocess.run(['dotnet', str(args.steam_path_fix), str(source_assembly), str(patched)], check=True)
                 replacements[assembly] = patched
                 hashes[assembly] = sha(patched)
             require(config['gameVersion'] in ('', meta['build']), f'{lang} game build mismatch')

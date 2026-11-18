@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "locale": "fil",
+  "gameVersion": "11/4/2026_317a98f0",
+  "ui": {
+    "Quit": "Lumabas",
+    "Quit\n": "Lumabas\n",
+    "By pressing continue you are stating that you are 18+\nand that you are responsible for who can see your screen.": "Sa pagpindot sa “Magpatuloy,” kinukumpirma mong 18 taong gulang ka na o higit pa\nat responsibilidad mo kung sino ang makakakita sa screen mo.",
+    "Select": "Pumili",
+    "Continue?": "Magpatuloy?",
+    "Navigate\n": "Maglipat ng pinili\n",
+    "Accept": "Kumpirmahin",
+    "This game contains\n<color=red>SEXUALLY EXPLICIT CONTENT</color>": "Naglalaman ang larong ito ng\n<color=red>tahasang seksuwal na nilalaman</color>",
+    "Back": "Bumalik",
+    "Save Slots": "Mga puwesto ng save",
+    "Slot 1": "Puwesto 1",
+    "Slot 2": "Puwesto 2",
+    "Slot 3": "Puwesto 3",
+    "Save": "I-save",
+    "New Game": "Bagong laro",
+    "Options": "Mga opsyon",
+    "Options\n": "Mga opsyon\n",
+    "OPTIONS": "MGA OPSYON",
+    "Continue": "Magpatuloy",
+    "Delete": "Burahin",
+    "Set Default": "Ibalik ang default",
+    "Gallery": "Galeriya",
+    "Credits": "Mga gumawa",
+    "Are you sure?": "Sigurado ka ba?",
+    "No unlocks yet": "Wala pang naa-unlock",
+    "Unstick\\n   Kobold": "Alisin sa pagkakaipit\\n   ang kobold",
+    "Resume": "Magpatuloy",
+    "PAUSE": "NAKA-PAUSE",
+    "Sound Attributions\n": "Pagkilala sa mga tunog\n",
+    "Art Attributions\n": "Mga pinagmulan ng ilustrasyon\n",
+    "GatorDragonGames logo": "Logo ng GatorDragonGames",
+    "Steam artwork": "Ilustrasyon para sa Steam",
+    "Weirdly accurate open/close sound": "Katunog na katunog ng pagbukas at pagsara",
+    "Wiener consultant": "Konsultant sa sausage",
+    "Character Themes\nGame Soundtrack": "Mga tema ng tauhan\nSoundtrack ng laro",
+    "Programming\nIllustrations\nUser Interface": "Pagprograma\nMga ilustrasyon\nInterface ng gumagamit",
+    "Off": "Patay",
+    "On\n": "Bukas\n"
+  },
+  "settings": {
+    "MasterVolume:label": {
+      "source": "Master Volume",
+      "text": "Kabuuang lakas ng tunog"
+    },
+    "ScreenGamma:label": {
+      "source": "Gamma",
+      "text": "Gamma"
+    }
+  },
+  "yarn": {
+    "line:9b9567ec": {
+      "source": "I feel rather clean!",
+      "text": "Pakiramdam ko, malinis na malinis na ako!"
+    },
+    "line:866cd495": {
+      "source": "What's up?",
+      "text": "Ano iyon?"
+    },
+    "line:81416c72": {
+      "source": "You already are, what's up?",
+      "text": "Nagtatanong ka na, ano iyon?"
+    }
+  }
+}
