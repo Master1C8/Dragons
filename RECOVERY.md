@@ -32,6 +32,14 @@ extracting and checks the macOS code signature. Freshly linked and signed
 installers can differ byte for byte from the accepted archives. Compare the
 embedded resources and each platform's architecture instead.
 
+On November 19, 2026, the recovery check downloaded both draft assets,
+matched their accepted SHA-256 values, and ran the normal build at
+`9fc25b2` with empty generated resources and fresh build directories.
+Both rebuilt ZIPs passed integrity checks. Both installers contained
+byte-identical recovered payloads and the original icon. The macOS app
+passed strict signature verification and contains arm64 and x86-64;
+the Windows GUI executable is x86-64.
+
 The [0.2.3 plaque acceptance matrix](localization/evidence/plaque-render-results-0.2.3.csv)
 captures the measured line counts and text bounds on macOS for all 30 locales.
 The approved Windows assets use the same layout controls. This is a focused
@@ -59,7 +67,9 @@ Verify the full archive hashes first. Extract the Windows ZIP into a fresh
 directory and use its `DragNWash_Data` directory. On macOS, verify the GOG
 signature with `pkgutil --check-signature`, expand the package into a fresh
 directory with `pkgutil --expand-full`, and use
-`DragNWash.app/Contents/Resources/Data` from the expanded package.
+`package.pkg/Scripts/payload/Contents/Resources/Data` from the expanded
+package. The archival check restored all 250 macOS and 256 Windows Data
+files and matched their profile hashes.
 The package builder verifies the complete Data inventory against each
 platform's profile. Keep the original game data on the licensed recovery
 drive and the localization sources and installers in GitHub.
