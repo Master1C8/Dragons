@@ -112,6 +112,11 @@ def build(args):
                     list(actual[key]['hierarchy']) != row['hierarchy'] for key, row in binding.items()):
                 raise ValueError(f'Current UI inventory differs from its reviewed binding: {name}')
             edits = {}
+            slot_labels = {key for key, row in binding.items()
+                           if row['hierarchy'][1:4] == ['Menu_SlotsLoad', 'Container', 'LoadSlotSelect']
+                           and row['hierarchy'][-1] == 'SlotProgress'}
+            if name == 'level1' and len(slot_labels) != 3:
+                raise ValueError('Unexpected save-slot plaque inventory')
             for path_id, row in binding.items():
                 policy = row['policy']
                 if policy == 'delta':
@@ -129,7 +134,12 @@ def build(args):
                 validate_overlay(stage / 'ui-check.json', locale, profile['files'][name]['sha256'],
                                  sources, edits, yarn=False)
                 for key, target in edits.items():
-                    asset.text(int(key), sources[key], target)
+                    row = binding[int(key)]
+                    title = row['hierarchy'][1:] == ['Menu_Options', 'Container', 'Panel', 'TitlePlaque', 'Title']
+                    asset.text(int(key), sources[key], target, fit_width=80.0 if title else None)
+            for path_id in sorted(slot_labels):
+                source = binding[path_id]['source']
+                asset.text(path_id, source, source, fit_width=24.0)
             for path_id, row in binding.items():
                 if row.get('speakerContrast'):
                     asset.speaker_colour(path_id)

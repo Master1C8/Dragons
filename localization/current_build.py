@@ -169,7 +169,7 @@ class Asset:
         obj.set_raw_data(raw)
         self.changed[obj.path_id] = raw
 
-    def text(self, path_id, source, target):
+    def text(self, path_id, source, target, *, fit_width=None):
         obj = self.objects[path_id]
         _, script = self.build.script(obj)
         if script.m_ClassName != 'TextMeshProUGUI':
@@ -180,7 +180,17 @@ class Asset:
             raise ValueError(f'TMP source text changed: {path_id}')
         if not isinstance(target, str) or not target.strip() or '\0' in target:
             raise ValueError('TMP target must be explicit nonempty text')
-        self.set(obj, raw[:88] + dialogue.write_string(target) + raw[end:])
+        if fit_width is None:
+            self.set(obj, raw[:88] + dialogue.write_string(target) + raw[end:])
+            return
+        tree, nodes = self.build.schema(obj)
+        if (tree['m_text'] != source or tree['m_TextWrappingMode'] != 1
+                or tree['m_enableAutoSizing'] != 0
+                or tree['m_fontSize'] != fit_width):
+            raise ValueError(f'Unexpected plaque layout: {self.name}#{path_id}')
+        tree.update(m_text=target, m_TextWrappingMode=0, m_enableAutoSizing=1,
+                    m_fontSizeMin=10.0, m_fontSizeMax=fit_width)
+        self.set(obj, obj.save_typetree(tree, nodes=nodes))
 
     def setting(self, path_id, name, edits):
         obj = self.objects[path_id]
