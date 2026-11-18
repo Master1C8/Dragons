@@ -103,20 +103,22 @@ for platform in windows macos; do
   if [ "$platform" = macos ]; then target_archive="$mac_archive"; fi
   provenance="$work/$platform-provenance"
   mkdir -p "$provenance"
-  python3 - "$provenance/vnrevival-release.json" "$platform" "$mod_version" "$source_commit" <<'PYTHON'
+  python3 - "$provenance/build-receipt.json" "$target_archive" "$platform" "$mod_version" "$source_commit" <<'PYTHON'
+import hashlib
 import json
 from pathlib import Path
 import sys
 
-output, platform, version, commit = sys.argv[1:]
+output, archive, platform, version, commit = sys.argv[1:]
+archive = Path(archive)
 receipt = {
     "schemaVersion": 1, "gameSlug": "dragn-wash", "platform": platform,
-    "version": version, "repositoryUrl": "https://github.com/Master1C8/Dragons",
+    "version": version,
     "sourceCommit": commit, "sourceTreeClean": True,
+    "archive": archive.name, "sha256": hashlib.sha256(archive.read_bytes()).hexdigest(),
 }
 Path(output).write_text(json.dumps(receipt, indent=2) + "\n")
 PYTHON
-  zip -qj "$target_archive" "$provenance/vnrevival-release.json"
 done
 du -sh "$app" "$archive" "$mac_archive"
 python3 - "$app" "$archive" <<'PY'
