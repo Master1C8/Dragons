@@ -46,8 +46,9 @@ platform decoder from the accepted installers, and their license.
 For macOS also supply the compiled `SteamPathFix.dll`. The preparer
 verifies source and replacement hashes, then decodes every generated delta
 and compares it with the intended replacement. Give the resulting resource
-directories and the current stock `PlayerIcon.icns` to
-`installer/Scripts/build.sh` to assemble the two installer ZIPs.
+directories and the original game glove icon to `installer/Scripts/build.sh`
+to assemble the two installer ZIPs. Use `Contents/Resources/App.icns` from
+the accepted 0.2.1 macOS installer. The builder pins its SHA-256 for 317a98f.
 
 ## Rebuilding the accepted 0.2.1 release
 

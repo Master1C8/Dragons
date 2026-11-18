@@ -75,7 +75,8 @@ when preparing the macOS payload. The patch keeps the App ID file
 inside the signed app when the game starts.
 
 Run `Scripts/build.sh MAC_PAYLOAD WINDOWS_PAYLOAD GAME_ICON BUILD_SCRATCH DIST`
-with absolute paths. Supply the original game's `PlayerIcon.icns`.
+with absolute paths. For GOG 317a98f use the game glove icon
+(`Contents/Resources/App.icns` from the accepted 0.2.1 installer).
 The build uses SwiftPM, macOS signing tools, MinGW-w64 and ImageMagick.
 Generated SwiftPM resources are ignored by Git. When switching payload
 inputs, clear only those generated resource files before building.

@@ -21,7 +21,8 @@ for target in "$app" "$win" "$archive" "$mac_archive"; do
 done
 mkdir -p "$work/windows-build"
 python3 - "$mac_payload/PackageConfig.json" "$win_payload/PackageConfig.json" \
-  "$work/windows-build/InstallerLanguages.h" <<'PYTHON'
+  "$work/windows-build/InstallerLanguages.h" "$icon" <<'PYTHON'
+import hashlib
 import json
 from pathlib import Path
 import re
@@ -36,6 +37,11 @@ def roster(path):
 mac, win = map(roster, sys.argv[1:3])
 if not mac or mac != win:
     raise SystemExit("Installer language lists differ")
+game_version = json.loads(Path(sys.argv[1]).read_bytes())["gameVersion"]
+if game_version == "11/4/2026_317a98f0":
+    game_icon_sha = "b4adccae876bef12afaaf476d56f0dff39d6763c547e9d93ca7e3642ec77b24d"
+    if hashlib.sha256(Path(sys.argv[4]).read_bytes()).hexdigest() != game_icon_sha:
+        raise SystemExit("Use the original Drag’N Wash glove icon from the accepted 0.2.1 installer")
 for _, runtime, name in win:
     if not re.fullmatch(r"[a-zA-Z0-9-]{1,15}", runtime) or not name.isprintable():
         raise SystemExit(f"Invalid installer language entry: {runtime}")
