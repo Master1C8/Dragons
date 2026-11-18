@@ -1,5 +1,43 @@
 # Dragons recovery
 
+## Restore and rebuild the accepted 0.2.3 installers
+
+The maintainer-only GitHub draft `archive-v0.2.3` contains the exact accepted
+Windows and macOS ZIPs. Each contains all 30 target locales and the original
+game glove icon. These same ZIPs carry the frozen locale payloads and platform
+xdelta tools used for repackaging. An additional binary input archive is
+unnecessary. Keep the 0.2.1 recovery drafts for the editable asset rebuild
+described below.
+
+```sh
+cd /Users/antonkrutov/Desktop/Dragons
+recovery="$PWD/localization/work/archive-recovery-0.2.3"
+mkdir -p "$recovery/downloads"
+gh release download archive-v0.2.3 --repo Master1C8/Dragons \
+  --dir "$recovery/downloads"
+bash installer/Scripts/restore-release-inputs.sh \
+  "$recovery/downloads" "$recovery/restored" 0.2.3
+mac="$recovery/restored/macos/Dragons — VN Revival.app/Contents/Resources"
+win="$recovery/restored/windows/Dragons Windows/Resources"
+bash installer/Scripts/build.sh \
+  "$mac/DragonsInstaller_DragonsInstaller.bundle/Contents/Resources" \
+  "$win" "$mac/App.icns" "$recovery/build" "$recovery/dist"
+```
+
+Use a clean committed source tree, Xcode Command Line Tools, ImageMagick
+and an x86-64 MinGW toolchain. The generated installer resources directory
+must have neither PackageConfig.json nor LocalizationPayload before a fresh
+build. The restoration script verifies both accepted archive hashes before
+extracting and checks the macOS code signature. Freshly linked and signed
+installers can differ byte for byte from the accepted archives. Compare the
+embedded resources and each platform's architecture instead.
+
+The [0.2.3 plaque acceptance matrix](localization/evidence/plaque-render-results-0.2.3.csv)
+captures the measured line counts and text bounds on macOS for all 30 locales.
+The approved Windows assets use the same layout controls. This is a focused
+layout result for four controls per locale, separate from full gameplay or
+whole-gallery visual QA.
+
 ## Rebuilding for GOG 317a98f
 
 Mod 0.2.3 targets the Windows GOG build `60193676705807870` and the
@@ -7,6 +45,24 @@ macOS GOG build `60193681046937687`. Both report
 `11/4/2026_317a98f0`. Use clean installed Data directories. The two
 profiles in `localization/build-profiles/` pin the full file inventories.
 Historical 0.2.1 recipes below use their original inputs.
+
+Licensed stock recovery inputs are on the owner's external drive, in
+`/Volumes/KINGSTONMAC/VNRevival-Recovery/Dragons/317a98f`. They are
+only needed to rebuild the localization assets after edits.
+
+| Stock input | SHA-256 |
+| --- | --- |
+| `windows-stock-current.zip` | `e271c7b94fcdcc84fc2a6067f68d96750064077ebf728930a5f59cf78dd06716` |
+| `drag_n_wash_enUS_317a98f_.pkg` | `b3de8ab53f5e4d00adc3898462fed0332a57261a9634c089303691fdf0ae7a9c` |
+
+Verify the full archive hashes first. Extract the Windows ZIP into a fresh
+directory and use its `DragNWash_Data` directory. On macOS, verify the GOG
+signature with `pkgutil --check-signature`, expand the package into a fresh
+directory with `pkgutil --expand-full`, and use
+`DragNWash.app/Contents/Resources/Data` from the expanded package.
+The package builder verifies the complete Data inventory against each
+platform's profile. Keep the original game data on the licensed recovery
+drive and the localization sources and installers in GitHub.
 
 Use the 0.2.1 recovery archives and extracted installer resources listed
 below. The new builder reuses the reviewed translations and pairs them with
