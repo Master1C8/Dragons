@@ -5,3 +5,5 @@
 /installer/dist/
 /installer/Scripts/SteamPathFix/bin/
 /installer/Scripts/SteamPathFix/obj/
+.DS_Store
+/localization/tools/*/obj/
