@@ -2,7 +2,7 @@
 
 ## Rebuilding for GOG 317a98f
 
-Mod 0.2.2 targets the Windows GOG build `60193676705807870` and the
+Mod 0.2.3 targets the Windows GOG build `60193676705807870` and the
 macOS GOG build `60193681046937687`. Both report
 `11/4/2026_317a98f0`. Use clean installed Data directories. The two
 profiles in `localization/build-profiles/` pin the full file inventories.
@@ -48,7 +48,8 @@ verifies source and replacement hashes, then decodes every generated delta
 and compares it with the intended replacement. Give the resulting resource
 directories and the original game glove icon to `installer/Scripts/build.sh`
 to assemble the two installer ZIPs. Use `Contents/Resources/App.icns` from
-the accepted 0.2.1 macOS installer. The builder pins its SHA-256 for 317a98f.
+the accepted 0.2.1 macOS installer. The builder pins its SHA-256 for 317a98f
+and puts the clean committed source identity at the root of each ZIP.
 
 ## Rebuilding the accepted 0.2.1 release
 

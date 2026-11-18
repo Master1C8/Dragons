@@ -5,6 +5,12 @@ if [ "$#" != 5 ]; then
   exit 2
 fi
 project=$(cd "$(dirname "$0")/.." && pwd)
+source_commit=$(git -C "$project" rev-parse HEAD)
+git -C "$project" diff --quiet HEAD -- || {
+  echo "Commit the installer and localization source before building release archives." >&2
+  exit 1
+}
+mod_version=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' "$project/App/Info.plist")
 mac_payload=$1
 win_payload=$2
 icon=$3
@@ -92,6 +98,26 @@ x86_64-w64-mingw32-gcc -std=c11 -O2 -Wall -Wextra -Werror -municode -mwindows \
   -o "$win/Dragons Installer.exe" -lcomctl32 -lcomdlg32 -lshell32 -lole32
 (cd "$dist" && zip -qr "$archive" 'Dragons Windows')
 ditto -c -k --sequesterRsrc --keepParent "$app" "$mac_archive"
+for platform in windows macos; do
+  target_archive="$archive"
+  if [ "$platform" = macos ]; then target_archive="$mac_archive"; fi
+  provenance="$work/$platform-provenance"
+  mkdir -p "$provenance"
+  python3 - "$provenance/vnrevival-release.json" "$platform" "$mod_version" "$source_commit" <<'PYTHON'
+import json
+from pathlib import Path
+import sys
+
+output, platform, version, commit = sys.argv[1:]
+receipt = {
+    "schemaVersion": 1, "gameSlug": "dragn-wash", "platform": platform,
+    "version": version, "repositoryUrl": "https://github.com/Master1C8/Dragons",
+    "sourceCommit": commit, "sourceTreeClean": True,
+}
+Path(output).write_text(json.dumps(receipt, indent=2) + "\n")
+PYTHON
+  zip -qj "$target_archive" "$provenance/vnrevival-release.json"
+done
 du -sh "$app" "$archive" "$mac_archive"
 python3 - "$app" "$archive" <<'PY'
 from pathlib import Path

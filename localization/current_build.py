@@ -23,6 +23,21 @@ def digest(raw):
     return hashlib.sha256(raw).hexdigest()
 
 
+OPTIONS_TITLE_SIZES = (80.0, 42.0)
+
+
+def align_options_title(tree):
+    """Center visible glyph geometry within the settings plaque."""
+    stock, maximum = OPTIONS_TITLE_SIZES
+    if (tree['m_fontSize'] != stock or tree['m_fontSizeBase'] != stock or
+            tree['m_VerticalAlignment'] != 512 or tree['m_TextWrappingMode'] != 0 or
+            tree['m_enableAutoSizing'] != 1):
+        raise ValueError('Unexpected options title geometry')
+    tree.update(m_fontSize=maximum, m_fontSizeBase=maximum, m_fontSizeMax=maximum,
+                m_VerticalAlignment=4096)
+    tree['m_margin'].update(y=6.0, w=2.0)
+
+
 def relative_path(value):
     path = PurePosixPath(value)
     if (not value or not path.parts or path.is_absolute() or str(path) != value or
@@ -169,7 +184,7 @@ class Asset:
         obj.set_raw_data(raw)
         self.changed[obj.path_id] = raw
 
-    def text(self, path_id, source, target, *, fit_width=None):
+    def text(self, path_id, source, target, *, fit_sizes=None):
         obj = self.objects[path_id]
         _, script = self.build.script(obj)
         if script.m_ClassName != 'TextMeshProUGUI':
@@ -180,16 +195,19 @@ class Asset:
             raise ValueError(f'TMP source text changed: {path_id}')
         if not isinstance(target, str) or not target.strip() or '\0' in target:
             raise ValueError('TMP target must be explicit nonempty text')
-        if fit_width is None:
+        if fit_sizes is None:
             self.set(obj, raw[:88] + dialogue.write_string(target) + raw[end:])
             return
         tree, nodes = self.build.schema(obj)
+        stock_size, maximum = fit_sizes
         if (tree['m_text'] != source or tree['m_TextWrappingMode'] != 1
                 or tree['m_enableAutoSizing'] != 0
-                or tree['m_fontSize'] != fit_width):
+                or tree['m_fontSize'] != stock_size):
             raise ValueError(f'Unexpected plaque layout: {self.name}#{path_id}')
         tree.update(m_text=target, m_TextWrappingMode=0, m_enableAutoSizing=1,
-                    m_fontSizeMin=10.0, m_fontSizeMax=fit_width)
+                    m_fontSizeMin=10.0, m_fontSizeMax=maximum)
+        if fit_sizes == OPTIONS_TITLE_SIZES:
+            align_options_title(tree)
         self.set(obj, obj.save_typetree(tree, nodes=nodes))
 
     def setting(self, path_id, name, edits):

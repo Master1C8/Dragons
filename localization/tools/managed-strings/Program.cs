@@ -5,6 +5,7 @@ using Mono.Cecil.Cil;
 
 const string CecilSha = "831dca77470d85cb6ffbea3072daa7a3df5b7c9fcfd9c3f43674a9be99d4bfcf";
 var builds = new Dictionary<string, string> {
+    ["macos-317a98f"] = "8d626ba9a9c7829dd84a652a233fdfd22edbdc9ca824673193d9a15e82815377",
     ["macos"] = "f9c4ccc1b10f95270d6d0d63a5e150865a070eca353a6c16fa74930f993f7bcb",
     ["windows"] = "8b1b439e62bff222fbce00869a3343422c77d08e384db7ed323b5e66f44195e2",
     ["macos-settings"] = "a16b7a3a94bd62e059694a311f68dec012aa66696a6eff9880ceb9087e6c915d",

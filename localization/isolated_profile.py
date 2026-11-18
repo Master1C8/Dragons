@@ -36,7 +36,25 @@ def identity(code, home=None):
     return {'code': code, 'bundle': bundle, 'company': TEST_COMPANY, 'product': product}
 
 
-def prepare(source, code, home=None):
+def _current_pins(source, qa_profile, *, verify_all):
+    from current_build import Build, relative_path
+    root = Path(__file__).resolve().parents[1]
+    qa = json.loads(Path(qa_profile).read_text(), object_pairs_hook=dl.unique_object)
+    if qa.get('schemaVersion') != 1:
+        raise ValueError('unsupported current-build QA profile')
+    reference = root / relative_path(qa['dataProfile'])
+    if dl.sha(reference.read_bytes()) != qa['dataProfileSha256']:
+        raise ValueError('QA source build profile changed')
+    build = Build(Path(source) / GLOBAL_REL.parent, reference)
+    if build.profile['platform'] != 'macos':
+        raise ValueError('expected a macOS QA build profile')
+    if verify_all:
+        build.verify()
+    build.read('globalgamemanagers')
+    return build.profile['files']['globalgamemanagers']['sha256'], qa['infoPlistSha256']
+
+
+def prepare(source, code, home=None, *, qa_profile=None):
     import UnityPy
     if UnityPy.__version__ != '1.25.4':
         raise ValueError('UnityPy 1.25.4 is required')
@@ -44,7 +62,8 @@ def prepare(source, code, home=None):
     source = Path(source)
     global_file, plist_file = source / GLOBAL_REL, source / PLIST_REL
     original_global, original_plist = global_file.read_bytes(), plist_file.read_bytes()
-    if dl.sha(original_global) != GLOBAL_HASH or dl.sha(original_plist) != PLIST_HASH:
+    pins = _current_pins(source, qa_profile, verify_all=True) if qa_profile else (GLOBAL_HASH, PLIST_HASH)
+    if dl.sha(original_global) != pins[0] or dl.sha(original_plist) != pins[1]:
         raise ValueError('unsupported test-profile source game')
     info = plistlib.loads(original_plist)
     if info.get('CFBundleIdentifier') != ORIGINAL_BUNDLE:
@@ -93,22 +112,33 @@ def _verify_global(source, profile, before, player_raw):
         raise ValueError('test-profile player identity read-back failed')
 
 
-def prepare_windows_gameplay(source_data):
+def prepare_windows_gameplay(source_data, *, build_profile=None, code=None):
     """Return verified settings bytes for the disposable Windows gameplay probe."""
     import UnityPy
     from compare_yarn_versions import BUILDS
     if UnityPy.__version__ != '1.25.4':
         raise ValueError('UnityPy 1.25.4 is required')
     source = (Path(source_data) / 'globalgamemanagers').read_bytes()
-    if dl.sha(source) != BUILDS['windows']['globalSha256']:
-        raise ValueError('unsupported Windows test-profile source game')
+    expected = BUILDS['windows']['globalSha256']
     profile = {'company': TEST_COMPANY, 'product': WINDOWS_GAMEPLAY_PRODUCT}
+    if build_profile is not None:
+        from current_build import Build
+        current = Build(source_data, build_profile)
+        if current.profile['platform'] != 'windows' or code is None:
+            raise ValueError('current Windows QA requires its build profile and a fresh code')
+        current.verify()
+        expected = current.profile['files']['globalgamemanagers']['sha256']
+        profile = identity(code)
+    elif code is not None:
+        raise ValueError('a current Windows QA code requires a pinned build profile')
+    if dl.sha(source) != expected:
+        raise ValueError('unsupported Windows test-profile source game')
     result, before, player_raw = _prepare_global(source, profile)
     _verify_global(result, profile, before, player_raw)
     return result
 
 
-def apply(destination, prepared):
+def apply(destination, prepared, *, qa_profile=None):
     profile, global_bytes, plist_bytes, before, player_raw = prepared
     destination = Path(destination)
     target = destination / GLOBAL_REL
@@ -116,7 +146,8 @@ def apply(destination, prepared):
     for path in (target, plist):
         if path.is_symlink() or not path.is_file() or destination.resolve() not in path.resolve().parents:
             raise ValueError('unsafe test-profile destination')
-    if dl.sha(target.read_bytes()) != GLOBAL_HASH or dl.sha(plist.read_bytes()) != PLIST_HASH:
+    pins = _current_pins(destination, qa_profile, verify_all=False) if qa_profile else (GLOBAL_HASH, PLIST_HASH)
+    if dl.sha(target.read_bytes()) != pins[0] or dl.sha(plist.read_bytes()) != pins[1]:
         raise ValueError('copied test-profile source changed')
     # Recheck before mutation in case another process claimed the identity.
     identity(profile['code'])

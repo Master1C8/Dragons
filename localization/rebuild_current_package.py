@@ -7,7 +7,7 @@ import struct
 import tempfile
 
 from assemble_source_inventory import INVENTORY_SHA, load_pinned
-from current_build import Build, digest, relative_path
+from current_build import Build, OPTIONS_TITLE_SIZES, digest, relative_path
 import dialogue_locale as dialogue
 import package_inputs
 import paired_locale
@@ -136,10 +136,10 @@ def build(args):
                 for key, target in edits.items():
                     row = binding[int(key)]
                     title = row['hierarchy'][1:] == ['Menu_Options', 'Container', 'Panel', 'TitlePlaque', 'Title']
-                    asset.text(int(key), sources[key], target, fit_width=80.0 if title else None)
+                    asset.text(int(key), sources[key], target, fit_sizes=OPTIONS_TITLE_SIZES if title else None)
             for path_id in sorted(slot_labels):
                 source = binding[path_id]['source']
-                asset.text(path_id, source, source, fit_width=24.0)
+                asset.text(path_id, source, source, fit_sizes=(24.0, 24.0))
             for path_id, row in binding.items():
                 if row.get('speakerContrast'):
                     asset.speaker_colour(path_id)

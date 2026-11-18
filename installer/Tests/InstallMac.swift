@@ -7,7 +7,9 @@ struct TestInstaller {
         let payload = URL(fileURLWithPath: CommandLine.arguments[2])
         let config = try PackageConfig.load(from: payload.appendingPathComponent("PackageConfig.json"))
         let core = InstallerCore()
-        for lang in ["ar", "th", "th", "he", "fa", "hi"] {
+        let requested = Array(CommandLine.arguments.dropFirst(3))
+        let locales = requested.isEmpty ? ["ar", "th", "th", "he", "fa", "hi"] : requested
+        for lang in locales {
             guard let game = core.resolveInstallation(root, appID: config.steamAppID) else {
                 throw InstallerError.invalidGameFolder
             }
